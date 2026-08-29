@@ -46,6 +46,15 @@ def test_cagr_3y_matches_manual_formula():
     assert math.isclose(cagr_3y(target_price=133.1, current_price=100), 0.10, abs_tol=1e-6)
 
 
+def test_cagr_3y_negative_target_price_returns_real_negative_number():
+    # target_price negativo (posible en escenarios extremos) no debe devolver un
+    # numero complejo -- eso hacia crashear el dashboard al formatearlo como "%".
+    result = cagr_3y(target_price=-50, current_price=100)
+    assert isinstance(result, float)
+    assert math.isclose(result, -(0.5 ** (1 / 3)) - 1, abs_tol=1e-9)
+    assert f"{result:+.1%}"  # no debe lanzar ValueError al formatear
+
+
 def test_buy_price_tiers_are_percentages_of_base():
     tiers = buy_price_tiers(200)
     assert tiers.value_max == pytest.approx(140) and tiers.value_min == pytest.approx(130)

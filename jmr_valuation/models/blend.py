@@ -112,10 +112,18 @@ def weighted_target_price(
 
 
 def cagr_3y(target_price: float, current_price: float) -> float:
-    """Fila 13: CAGR implicito a 3 anios entre el precio actual y el objetivo ponderado."""
+    """Fila 13: CAGR implicito a 3 anios entre el precio actual y el objetivo ponderado.
+
+    Si el precio objetivo pondera negativo (puede pasar en escenarios extremos
+    con inputs poco realistas), `ratio ** (1/3)` en Python devuelve un numero
+    COMPLEJO en vez de fallar -- no explota aca, sino mas tarde al intentar
+    formatearlo como porcentaje. Se calcula la raiz cubica real (que si existe
+    para numeros negativos) en su lugar."""
     if current_price <= 0:
         return 0.0
-    return (target_price / current_price) ** (1 / 3) - 1
+    ratio = target_price / current_price
+    cube_root = -((-ratio) ** (1 / 3)) if ratio < 0 else ratio ** (1 / 3)
+    return cube_root - 1
 
 
 def buy_price_tiers(weighted_base_price: float) -> BuyPriceTiers:
