@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jmr-dashboard",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "streamlit", "run", "jmr_valuation/report/dashboard.py", "--server.headless", "true"],
+      "port": 8501
+    }
+  ]
+}

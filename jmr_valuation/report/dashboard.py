@@ -17,6 +17,8 @@ if str(_PROJECT_ROOT) not in sys.path:
 import pandas as pd
 import streamlit as st
 
+from jmr_valuation.io.company_store import list_saved_companies, load_saved_company, save_company
+from jmr_valuation.io.description_fetch import fetch_company_description_es
 from jmr_valuation.io.excel_loader import load_company_inputs_from_excel
 from jmr_valuation.io.inputs import CompanyInputs, load_company_inputs, save_company_inputs
 from jmr_valuation.io.sec_edgar_client import SecEdgarError
@@ -43,6 +45,11 @@ MULTIPLE_FIELD_PREFIX = {
 }
 
 DATA_DIR = _PROJECT_ROOT / "data"
+
+QUALITATIVE_TEXT_FIELDS = {
+    "qual_business_model", "qual_competitive_advantages", "qual_key_risks",
+    "qual_management_quality", "qual_growth_catalysts",
+}
 
 # --- Como se agrupan y etiquetan los campos de CompanyInputs en el formulario ---
 LABELS: dict[str, str] = {
@@ -110,10 +117,13 @@ LABELS: dict[str, str] = {
     "rd_expense_year_minus_9": "Gasto en I+D (anio -9)",
     "ebit_margin_ltm": "Margen EBIT LTM (sin ajustar)", "ebit_margin_avg_3y": "Margen EBIT promedio 3 anios",
     "ebit_margin_avg_5y": "Margen EBIT promedio 5 anios", "ebit_margin_avg_10y": "Margen EBIT promedio 10 anios",
+    "qual_business_model": "Modelo de negocio", "qual_competitive_advantages": "Ventajas competitivas (moat)",
+    "qual_key_risks": "Riesgos principales", "qual_management_quality": "Equipo directivo y gobierno corporativo",
+    "qual_growth_catalysts": "Catalizadores de crecimiento",
 }
 
 GROUPS: list[tuple[str, list[str]]] = [
-    ("Identificacion", ["ticker", "company_name", "company_description", "country_of_incorporation",
+    ("Identificacion", ["ticker", "company_name", "country_of_incorporation",
                          "industry_us", "industry_global", "current_price"]),
     ("Estados financieros", ["revenue_ltm", "revenue_prior_10k", "years_since_last_10k",
                               "ebit_ltm", "ebit_prior_10k", "interest_expense_ltm", "interest_expense_prior_10k",
@@ -151,6 +161,41 @@ GROUPS: list[tuple[str, list[str]]] = [
 FIELD_TYPES = {f.name: f.type for f in fields(CompanyInputs)}
 
 
+def _save_and_notify(inputs: CompanyInputs) -> None:
+    """Persiste la empresa recien cargada en data/saved_companies/ para poder
+    volver a abrirla despues. No debe tumbar el dashboard si falla (ej. disco
+    de solo lectura) -- en ese caso el usuario igual puede seguir trabajando
+    y descargar el CSV a mano."""
+    try:
+        path = save_company(inputs)
+    except OSError as exc:
+        st.warning(f"No se pudo guardar la empresa en disco: {exc}")
+        return
+    st.toast(f"Guardado como '{path.stem}' -- vas a poder volver a abrirla en 'empresa guardada antes'.")
+
+
+def _fetch_description_callback() -> None:
+    """Callback de 'Buscar en Wikipedia' -- corre antes del rerun, asi el
+    text_area de company_description ya arranca con el valor nuevo."""
+    company_name = st.session_state.get("company_name", "")
+    if not company_name.strip():
+        st.session_state["_wikipedia_fetch_error"] = "Completa 'Nombre de la empresa' antes de buscar."
+        return
+    try:
+        description = fetch_company_description_es(company_name)
+    except Exception as exc:  # noqa: BLE001 -- se muestra al usuario, no se traga silenciosamente
+        st.session_state["_wikipedia_fetch_error"] = f"No se pudo buscar en Wikipedia: {exc}"
+        return
+    if description:
+        st.session_state["company_description"] = description
+        st.session_state["_wikipedia_fetch_error"] = None
+    else:
+        st.session_state["_wikipedia_fetch_error"] = (
+            f"No se encontro un articulo en Wikipedia en espanol para '{company_name}'. "
+            "Proba con el nombre completo de la empresa, o escribi la descripcion a mano."
+        )
+
+
 def _init_session_state(inputs: CompanyInputs) -> None:
     for field in fields(CompanyInputs):
         value = getattr(inputs, field.name)
@@ -169,7 +214,11 @@ def _render_field(name: str) -> None:
         st.checkbox(label, key=name)
     elif name == "company_description":
         st.text_area(label, key=name, height=100,
-                      help="Texto libre, en espanol. No viene de ningun API -- la escribis vos.")
+                      help="Texto libre, en espanol. Se puede autocompletar desde Wikipedia con el "
+                           "boton de al lado, o escribirlo a mano.")
+    elif name in QUALITATIVE_TEXT_FIELDS:
+        st.text_area(label, key=name, height=140,
+                      help="Texto libre, con tu propio criterio -- no viene de ningun API.")
     elif ftype == "str":
         st.text_input(label, key=name)
     elif ftype == "int":
@@ -441,6 +490,15 @@ def main() -> None:
         options = [f.name for f in csv_files]
         chosen = st.selectbox("Cargar desde data/", options) if options else None
 
+        saved_paths = list_saved_companies()
+        saved_options = [p.stem for p in saved_paths]
+        saved_chosen = (
+            st.selectbox("...o abrir una empresa guardada antes", saved_options,
+                         help="Cada empresa que subis (Excel, CSV o SEC EDGAR) se guarda aca "
+                              "automaticamente para poder volver a abrirla despues.")
+            if saved_options else None
+        )
+
         uploaded_excel = st.file_uploader(
             "...o subir el Excel del modelo (.xlsx)", type="xlsx",
             help="Tiene que estar recalculado y guardado en Excel al menos una vez -- "
@@ -459,11 +517,13 @@ def main() -> None:
                 st.stop()
             _init_session_state(inputs)
             st.session_state.loaded_source = f"xlsx:{uploaded_excel.name}"
+            _save_and_notify(inputs)
         elif (uploaded_excel is None and uploaded_csv is not None
               and st.session_state.loaded_source != f"upload:{uploaded_csv.name}"):
             inputs = load_company_inputs(io.StringIO(uploaded_csv.getvalue().decode("utf-8")))
             _init_session_state(inputs)
             st.session_state.loaded_source = f"upload:{uploaded_csv.name}"
+            _save_and_notify(inputs)
         elif (uploaded_excel is None and uploaded_csv is None and chosen
               and chosen != st.session_state.get("prev_chosen")):
             # 'chosen' nunca es None (el selectbox siempre tiene algo seleccionado),
@@ -475,7 +535,17 @@ def main() -> None:
             inputs = load_company_inputs(DATA_DIR / chosen)
             _init_session_state(inputs)
             st.session_state.loaded_source = f"file:{chosen}"
+        elif (uploaded_excel is None and uploaded_csv is None and saved_chosen
+              and saved_chosen != st.session_state.get("prev_saved_chosen")):
+            # mismo motivo que con 'chosen': comparar contra el valor anterior de
+            # este selectbox, no contra loaded_source, para no reengancharse en
+            # reruns posteriores a otra fuente de carga.
+            saved_path = next(p for p in saved_paths if p.stem == saved_chosen)
+            inputs = load_saved_company(saved_path)
+            _init_session_state(inputs)
+            st.session_state.loaded_source = f"saved:{saved_chosen}"
         st.session_state.prev_chosen = chosen
+        st.session_state.prev_saved_chosen = saved_chosen
 
         with st.expander("...o buscar una empresa en SEC EDGAR (solo EE.UU., 10-K/10-Q)"):
             st.caption(
@@ -503,6 +573,7 @@ def main() -> None:
                         st.stop()
                     _init_session_state(edgar_inputs)
                     st.session_state.loaded_source = f"edgar:{edgar_ticker.upper()}"
+                    _save_and_notify(edgar_inputs)
                     st.success(
                         f"Cargado {edgar_inputs.company_name} desde SEC EDGAR. Revisa 'Multiplos ancla' "
                         "(en 0 -- no vienen de EDGAR) y los supuestos de crecimiento/margen antes de "
@@ -525,10 +596,17 @@ def main() -> None:
 
         st.divider()
         current_inputs = _inputs_from_session_state()
-        buffer = io.StringIO()
-        save_company_inputs(current_inputs, buffer)
-        st.download_button("Descargar inputs editados (.csv)", buffer.getvalue(),
-                            file_name=f"{current_inputs.ticker or 'empresa'}.csv", mime="text/csv")
+        save_col, download_col = st.columns(2)
+        with save_col:
+            if st.button("Guardar cambios", width="stretch",
+                         help="Actualiza la version guardada de esta empresa con los valores actuales."):
+                _save_and_notify(current_inputs)
+        with download_col:
+            buffer = io.StringIO()
+            save_company_inputs(current_inputs, buffer)
+            st.download_button("Descargar .csv", buffer.getvalue(),
+                                file_name=f"{current_inputs.ticker or 'empresa'}.csv", mime="text/csv",
+                                width="stretch")
 
     inputs = _inputs_from_session_state()
     try:
@@ -584,8 +662,9 @@ def main() -> None:
         width="stretch",
     )
 
-    tab_relativa, tab_detalle, tab_sensibilidad, tab_dcf = st.tabs(
-        ["Valoracion relativa", "Detalle completo (todos los anios)", "Sensibilidad", "Detalle del DCF (Base)"]
+    tab_relativa, tab_detalle, tab_sensibilidad, tab_dcf, tab_cualitativo = st.tabs(
+        ["Valoracion relativa", "Detalle completo (todos los anios)", "Sensibilidad", "Detalle del DCF (Base)",
+         "Analisis cualitativo"]
     )
 
     with tab_relativa:
@@ -639,6 +718,46 @@ def main() -> None:
             f"PV(valor terminal): {report.scenarios['Base'].dcf.pv_terminal_value:,.0f}  |  "
             f"PV(10 anios explicitos): {report.scenarios['Base'].dcf.pv_explicit_years:,.0f}"
         )
+
+    with tab_cualitativo:
+        st.markdown("#### Descripcion del negocio")
+        desc_col, btn_col = st.columns([5, 1])
+        with desc_col:
+            _render_field("company_description")
+        with btn_col:
+            st.write("")  # alinea el boton con el text_area
+            st.button("Buscar en Wikipedia", key="fetch_wikipedia_btn", width="stretch",
+                      on_click=_fetch_description_callback,
+                      help="Busca el nombre de la empresa en Wikipedia en espanol y trae el resumen del articulo.")
+        wiki_error = st.session_state.get("_wikipedia_fetch_error")
+        if wiki_error:
+            st.warning(wiki_error)
+
+        st.divider()
+        st.markdown("#### Marco cualitativo")
+        st.caption("Texto libre, con tu propio criterio -- no viene de ningun API. Se guarda junto con la "
+                     "empresa (Guardar cambios, en la barra lateral).")
+        qual_col1, qual_col2 = st.columns(2)
+        with qual_col1:
+            _render_field("qual_business_model")
+            _render_field("qual_competitive_advantages")
+            _render_field("qual_management_quality")
+        with qual_col2:
+            _render_field("qual_key_risks")
+            _render_field("qual_growth_catalysts")
+
+        st.divider()
+        st.markdown("#### Datos estructurales")
+        struct_df = pd.DataFrame({
+            "Campo": ["Tipo de empresa (pesos del blend)", "Industria (US)", "Industria (Global)",
+                      "Pais de incorporacion", "Capitaliza I+D", "Tiene leasing operativo",
+                      "Tiene opciones para empleados"],
+            "Valor": [inputs.company_type, inputs.industry_us, inputs.industry_global,
+                      inputs.country_of_incorporation, "Si" if inputs.capitalize_rd else "No",
+                      "Si" if inputs.has_operating_leases else "No",
+                      "Si" if inputs.has_employee_options else "No"],
+        }).set_index("Campo")
+        st.dataframe(struct_df, width="stretch")
 
 
 if __name__ == "__main__":

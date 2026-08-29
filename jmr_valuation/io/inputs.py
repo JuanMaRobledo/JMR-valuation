@@ -186,7 +186,15 @@ class CompanyInputs:
     include_p_fcfe: bool = True
     include_p_ocf: bool = True
 
-    company_description: str = ""  # en espanol, la llena el usuario (no viene de ningun API)
+    company_description: str = ""  # en espanol -- se puede autocompletar desde Wikipedia (ver description_fetch.py)
+
+    # Marco cualitativo tipo Damodaran -- texto libre, criterio del usuario, no
+    # viene de ningun API. Se guarda junto con el resto de la empresa.
+    qual_business_model: str = ""
+    qual_competitive_advantages: str = ""
+    qual_key_risks: str = ""
+    qual_management_quality: str = ""
+    qual_growth_catalysts: str = ""
 
 
 def load_company_inputs(csv_source) -> CompanyInputs:
