@@ -34,13 +34,16 @@ from __future__ import annotations
 import argparse
 import sys
 
+from dataclasses import replace
+
 from jmr_valuation.io.comps_loader import load_comps_table
+from jmr_valuation.io.sec_edgar_client import SecEdgarError
 from jmr_valuation.io.sec_edgar_loader import (
     load_annual_series_from_sec_edgar,
     load_company_inputs_from_sec_edgar,
 )
 from jmr_valuation.io.sheets_auth import get_gspread_client, open_target_sheet
-from jmr_valuation.io.yfinance_client import get_market_snapshot, get_peer_multiples
+from jmr_valuation.io.yfinance_client import PeerMultiples, get_market_snapshot, get_peer_multiples
 
 _M = 1_000_000  # SEC EDGAR devuelve $ crudos; este Sheet trabaja en millones
 
@@ -105,10 +108,44 @@ def refresh_balance_sheet(sh, series, company_inputs) -> None:
     ws.update(values=[[round(company_inputs.book_value_equity_ltm, 1)]], range_name="L35")
 
 
+_SECTOR_MAX_ROWS = 10  # filas 2-11: el rango mas ancho que usan Promedio/Mediana (p.ej. C2:C11)
+
+
+def _fill_revenue_cagr_gaps_from_edgar(p: PeerMultiples) -> PeerMultiples:
+    """yfinance solo trae ~4 años de historico anual -- alcanza para CAGR 3y,
+    no para 5y/10y (quedan en None, ver yfinance_client.py). Si se dejan en
+    blanco, 'Sector'!Promedio/Mediana (AVERAGE/MEDIAN sobre TODA la columna)
+    da #DIV/0!/#NUM! cuando TODOS los peers los tienen en blanco -- lo que
+    a su vez rompe los cuartiles de industria de 'Crecimiento y Márgenes'.
+    SEC EDGAR si tiene 10 años reales para cualquier ticker (ya lo usamos
+    para la empresa principal) -- se completa el hueco con eso, no se
+    inventa nada."""
+    if p.revenue_cagr_5y is not None and p.revenue_cagr_10y is not None:
+        return p
+    try:
+        series = load_annual_series_from_sec_edgar(p.ticker)
+    except SecEdgarError:
+        return p  # sin historico de EDGAR (p.ej. ADR que no presenta 10-K) -- queda en blanco, no se inventa
+
+    revenue = series.revenue
+    def _cagr(n: int) -> float | None:
+        n = min(n, len(revenue) - 1)
+        if n < 1 or revenue[-1 - n] <= 0:
+            return None
+        return (revenue[-1] / revenue[-1 - n]) ** (1 / n) - 1
+
+    return replace(
+        p,
+        revenue_cagr_5y=p.revenue_cagr_5y if p.revenue_cagr_5y is not None else _cagr(5),
+        revenue_cagr_10y=p.revenue_cagr_10y if p.revenue_cagr_10y is not None else _cagr(len(revenue) - 1),
+    )
+
+
 def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
     ws = sh.worksheet("Sector")
-    own = get_peer_multiples(ticker)
+    own = _fill_revenue_cagr_gaps_from_edgar(get_peer_multiples(ticker))
     comps = load_comps_table(peer_tickers)
+    peers = [_fill_revenue_cagr_gaps_from_edgar(p) for p in comps.peers]
 
     def _row(p) -> list:
         return [
@@ -118,7 +155,21 @@ def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
             p.revenue_cagr_3y, p.revenue_cagr_5y, p.revenue_cagr_10y,
         ]
 
-    rows = [_row(own)] + [_row(p) for p in comps.peers]
+    rows = [_row(own)] + [_row(p) for p in peers]
+    if len(rows) > _SECTOR_MAX_ROWS:
+        raise ValueError(
+            f"Se pasaron {len(rows) - 1} peers + la empresa -- el rango de 'Promedio'/'Mediana' "
+            f"de esta hoja solo cubre {_SECTOR_MAX_ROWS} filas (2-{1 + _SECTOR_MAX_ROWS}). Reduci la lista de peers."
+        )
+
+    # Limpia TODO el rango de filas antes de escribir (solo VALORES, con
+    # batch_clear -- no pisa el formato de porcentaje/numero de las celdas,
+    # a diferencia de escribir strings vacios con update()). Si la corrida
+    # anterior tenia mas peers que esta (p.ej. veniamos de 8 filas y ahora
+    # son 6), las filas sobrantes quedaban con datos VIEJOS y contaminaban
+    # Promedio/Mediana (confirmado: quedo un SAP duplicado y un NOW que ya
+    # no eran peers de la empresa nueva, mezclados en los promedios).
+    ws.batch_clear([f"A2:N{1 + _SECTOR_MAX_ROWS}"])
     ws.update(values=rows, range_name="A2")
 
 
