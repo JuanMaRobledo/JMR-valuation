@@ -1,23 +1,33 @@
 #!/usr/bin/env python
-"""Refresca los datos EN VIVO del modelo nativo del usuario (Income Statement/
-Balance Sheet/Cash Flow Statement columna LTM + pestaña Sector) sin tocar
-ninguna formula ni pestaña de calculo (Motor de Supuestos v2, DCF v2,
-Valuation output, EV/FCFF, etc.) -- esas siguen leyendo de las celdas que este
-script actualiza, exactamente como ya lo hacian con los datos pegados a mano.
+"""Repuebla el modelo nativo del usuario (Income Statement/Balance Sheet/Cash
+Flow Statement/Sector/Input sheet) con los datos REALES de la empresa que se
+pida, sin tocar ninguna formula ni pestaña de calculo (Motor de Supuestos v2,
+DCF v2, Valuation output, Crecimiento y Márgenes, EV/FCFF, etc.) -- esas
+siguen leyendo de las celdas que este script actualiza, exactamente como ya
+lo hacian con los datos pegados a mano de ADBE.
 
 Uso:
-    python scripts/refresh_native_model.py ADBE --sheet-id <id> \
-        --peers INTU MSFT ORCL ADSK CRM SAP NOW
+    python scripts/refresh_native_model.py MSFT --sheet-id <id> \
+        --industry-us "Software (System & Application)" \
+        --industry-global "Software (System & Application)" \
+        --peers ADBE ORCL CRM SAP GOOGL
 
-Que SI toca (todo columna 'LTM', la que cambia cada vez que corre):
-  - Income Statement: Revenue, EBIT, Interest Expense, Net Income, Shares
-    Outstanding, Effective Tax Rate.
-  - Cash Flow Statement: D&A, CapEx.
-  - Balance Sheet: Cash, Deuda corto/largo plazo, Equity.
+Que SI toca (repuebla, no solo refresca LTM -- pensado para cambiar de
+empresa, no solo actualizar la misma):
+  - Input sheet: ticker (A1), nombre, pais, industria US/Global.
+  - Income Statement: Revenue y EBIT, historico completo (10 años) + LTM.
+  - Cash Flow Statement: D&A, historico completo + LTM.
+  - Balance Sheet: Caja y deuda (corto/largo plazo), historico completo + LTM.
+  - Solo columna LTM (no hay serie de 10 años limpia todavia): Interest
+    Expense, Tasa impositiva efectiva, Equity (Income Statement L15/L29,
+    Balance Sheet L35).
   - Sector: la fila de la empresa + cada peer (multiplos, margenes, CAGR).
 
-Que NO toca: el historico anual (columnas B:K, ya cargado con datos reales),
-cualquier formula, y todas las hojas de calculo/proyeccion.
+Que NO toca: ninguna formula, ni las hojas de calculo/proyeccion. Tampoco
+reescribe rotulos de texto sueltos en otras pestañas (p.ej. el titulo de
+'Cualitativo' o 'Motor de Supuestos v2' A1) -- esos quedan con el nombre de
+la empresa anterior hasta que se editen a mano; no afecta ningun calculo,
+son solo etiquetas visuales.
 """
 from __future__ import annotations
 
@@ -35,27 +45,63 @@ from jmr_valuation.io.yfinance_client import get_market_snapshot, get_peer_multi
 _M = 1_000_000  # SEC EDGAR devuelve $ crudos; este Sheet trabaja en millones
 
 
+def _history_row(values_raw: list[float], ltm_raw: float, *, scale: float = _M, decimals: int = 1) -> list[float]:
+    """Arma B:L (10 años + LTM) a partir de una serie de hasta 10 años (la mas
+    vieja primero) -- si hay menos de 10, se alinea a la derecha (terminando
+    en K, el año mas reciente) y se dejan en blanco las columnas mas viejas
+    que no tienen dato, en vez de desalinear el historico existente."""
+    values = [round(v / scale, decimals) for v in values_raw]
+    padded = [""] * (10 - len(values)) + values if len(values) < 10 else values[-10:]
+    return padded + [round(ltm_raw / scale, decimals)]
+
+
+def refresh_input_sheet(sh, ticker: str, company_inputs, industry_us: str, industry_global: str) -> None:
+    ws = sh.worksheet("Input sheet")
+    ws.update(values=[[ticker]], range_name="A1")
+    ws.update(values=[[company_inputs.company_name]], range_name="B5")
+    ws.update(values=[[company_inputs.country_of_incorporation]], range_name="B8")
+    ws.update(values=[[industry_us]], range_name="B9")
+    ws.update(values=[[industry_global]], range_name="B10")
+
+
 def refresh_income_statement(sh, series, company_inputs) -> None:
+    """OJO: 'Operating Margin' (fila 13) y 'EBITDA' (fila 28) de esta hoja NO
+    son formulas -- son valores pegados de cuando se cargo ADBE. Si no se
+    reescriben aca, 'Crecimiento y Márgenes' (que lee la mediana de la fila
+    13) queda mostrando el margen de la empresa VIEJA aunque Revenue/EBIT ya
+    se hayan actualizado -- confirmado corriendo esto con MSFT antes de este
+    fix (el margen 'actual' recalculaba bien via 'Valuation output', pero el
+    'mediano historico' seguia en el numero de ADBE)."""
     ws = sh.worksheet("Income Statement")
-    ws.update(values=[[
-        round(series.ltm_revenue / _M, 1)],
-    ], range_name="L3")
-    ws.update(values=[[round(series.ltm_ebit / _M, 1)]], range_name="L12")
-    # Interest Expense en esta hoja se guarda en NEGATIVO (fila 15, ver B15:K15).
+    ws.update(values=[_history_row(series.revenue, series.ltm_revenue)], range_name="B3")
+    ws.update(values=[_history_row(series.ebit, series.ltm_ebit)], range_name="B12")
+
+    margins = [e / r for e, r in zip(series.ebit, series.revenue) if r]
+    ltm_margin = series.ltm_ebit / series.ltm_revenue if series.ltm_revenue else margins[-1]
+    ws.update(values=[_history_row(margins, ltm_margin, scale=1, decimals=4)], range_name="B13")
+
+    ebitda = [e + d for e, d in zip(series.ebit, series.da)]
+    ws.update(values=[_history_row(ebitda, series.ltm_ebit + series.ltm_da)], range_name="B28")
+
+    # Interest Expense en esta hoja se guarda en NEGATIVO (fila 15, ver B15:K15) -- solo LTM, sin serie de 10y limpia.
     ws.update(values=[[-round(company_inputs.interest_expense_ltm, 1)]], range_name="L15")
     ws.update(values=[[round(company_inputs.effective_tax_rate, 4)]], range_name="L29")
+    # Shares Outstanding LTM (fila 27) -- 'Input sheet'!B22 y de ahi todo el bridge de equity
+    # (incluido DCF v2!B32) leen de esta celda. Sin esto, el valor por accion queda dividido
+    # por las acciones de la empresa ANTERIOR -- confirmado corriendo esto con MSFT.
+    ws.update(values=[[round(company_inputs.shares_outstanding, 1)]], range_name="L27")
 
 
 def refresh_cash_flow_statement(sh, series) -> None:
     ws = sh.worksheet("Cash Flow Statement")
-    ws.update(values=[[round(series.ltm_da / _M, 1)]], range_name="L4")
+    ws.update(values=[_history_row(series.da, series.ltm_da)], range_name="B4")
 
 
 def refresh_balance_sheet(sh, series, company_inputs) -> None:
     ws = sh.worksheet("Balance Sheet")
-    ws.update(values=[[round(company_inputs.cash_ltm, 1)]], range_name="L5")
-    ws.update(values=[[round(series.current_debt[-1] / _M, 1)]], range_name="L20")
-    ws.update(values=[[round(series.long_term_debt[-1] / _M, 1)]], range_name="L25")
+    ws.update(values=[_history_row(series.cash, company_inputs.cash_ltm * _M)], range_name="B5")
+    ws.update(values=[_history_row(series.current_debt, series.current_debt[-1])], range_name="B20")
+    ws.update(values=[_history_row(series.long_term_debt, series.long_term_debt[-1])], range_name="B25")
     ws.update(values=[[round(company_inputs.book_value_equity_ltm, 1)]], range_name="L35")
 
 
@@ -76,8 +122,10 @@ def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
     ws.update(values=rows, range_name="A2")
 
 
-def run(ticker: str, *, sheet_id: str, peer_tickers: list[str]) -> None:
-    print(f"[1/4] Descargando historico + LTM de {ticker} desde SEC EDGAR...")
+def run(
+    ticker: str, *, sheet_id: str, peer_tickers: list[str], industry_us: str, industry_global: str,
+) -> None:
+    print(f"[1/5] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
     series = load_annual_series_from_sec_edgar(ticker)
     market = get_market_snapshot(ticker)
     company_inputs = load_company_inputs_from_sec_edgar(
@@ -87,15 +135,18 @@ def run(ticker: str, *, sheet_id: str, peer_tickers: list[str]) -> None:
     client = get_gspread_client()
     sh = open_target_sheet(client, sheet_id)
 
-    print("[2/4] Refrescando columna LTM de Income Statement / Cash Flow Statement / Balance Sheet...")
+    print(f"[2/5] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
+    refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
+
+    print("[3/5] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
     refresh_cash_flow_statement(sh, series)
     refresh_balance_sheet(sh, series, company_inputs)
 
-    print(f"[3/4] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
+    print(f"[4/5] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print(f"[4/4] Listo: {sh.url}")
+    print(f"[5/5] Listo: {sh.url}")
 
 
 def main(argv: list[str]) -> int:
@@ -103,8 +154,13 @@ def main(argv: list[str]) -> int:
     parser.add_argument("ticker")
     parser.add_argument("--sheet-id", required=True)
     parser.add_argument("--peers", nargs="+", required=True)
+    parser.add_argument("--industry-us", required=True)
+    parser.add_argument("--industry-global", required=True)
     args = parser.parse_args(argv)
-    run(args.ticker.upper(), sheet_id=args.sheet_id, peer_tickers=args.peers)
+    run(
+        args.ticker.upper(), sheet_id=args.sheet_id, peer_tickers=args.peers,
+        industry_us=args.industry_us, industry_global=args.industry_global,
+    )
     return 0
 
 
