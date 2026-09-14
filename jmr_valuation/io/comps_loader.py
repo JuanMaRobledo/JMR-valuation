@@ -20,11 +20,23 @@ class CompsTable:
     peers: list[PeerMultiples]
     average: dict[str, float | None]
     median: dict[str, float | None]
+    q1: dict[str, float | None]   # primer cuartil -- ver assumptions_engine.run_growth_engine (escenario Conservador)
+    q3: dict[str, float | None]   # tercer cuartil -- escenario Optimista
 
 
 def _agg(peers: list[PeerMultiples], field: str, fn) -> float | None:
     values = [v for p in peers if (v := getattr(p, field)) is not None]
     return fn(values) if values else None
+
+
+def _quartile(values: list[float], which: int) -> float:
+    """QUARTILE.INC de Excel (metodo 'inclusive') -- mismo criterio que usa
+    'Crecimiento y Márgenes'!C13:C15 (=QUARTILE(Sector!...,1/2/3)) para los
+    cuartiles de industria basados en los peers reales, no en una tabla
+    agregada de Damodaran."""
+    if len(values) == 1:
+        return values[0]
+    return statistics.quantiles(sorted(values), n=4, method="inclusive")[which - 1]
 
 
 def load_comps_table(peer_tickers: list[str]) -> CompsTable:
@@ -34,5 +46,7 @@ def load_comps_table(peer_tickers: list[str]) -> CompsTable:
     peers = [get_peer_multiples(ticker) for ticker in peer_tickers]
     average = {field: _agg(peers, field, lambda vs: sum(vs) / len(vs)) for field in _NUMERIC_FIELDS}
     median = {field: _agg(peers, field, statistics.median) for field in _NUMERIC_FIELDS}
+    q1 = {field: _agg(peers, field, lambda vs: _quartile(vs, 1)) for field in _NUMERIC_FIELDS}
+    q3 = {field: _agg(peers, field, lambda vs: _quartile(vs, 3)) for field in _NUMERIC_FIELDS}
 
-    return CompsTable(peers=peers, average=average, median=median)
+    return CompsTable(peers=peers, average=average, median=median, q1=q1, q3=q3)

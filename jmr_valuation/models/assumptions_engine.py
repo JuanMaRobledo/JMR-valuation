@@ -79,10 +79,16 @@ class ScenarioWeights:
     margin_convergence_years: int     # fila 16
 
 
+# growth_convergence_years=10 fijo en los 3 escenarios (asi lo hace 'DCF v2':
+# el crecimiento SIEMPRE converge a estable en el año 10, no varia por
+# escenario -- lo que cambia por escenario es la velocidad de convergencia del
+# MARGEN). margin_convergence_years: Conservador converge rapido (3 años) a su
+# margen objetivo (bajo); Optimista se toma mas tiempo (7 años) para llegar al
+# suyo (alto) -- coincide con 'Motor de Supuestos v2' (fila 29-32, columna D).
 SCENARIO_WEIGHTS: dict[str, ScenarioWeights] = {
-    "Conservador": ScenarioWeights(growth_convergence_years=5, margin_convergence_years=7),
-    "Base": ScenarioWeights(growth_convergence_years=7, margin_convergence_years=5),
-    "Optimista": ScenarioWeights(growth_convergence_years=10, margin_convergence_years=3),
+    "Conservador": ScenarioWeights(growth_convergence_years=10, margin_convergence_years=3),
+    "Base": ScenarioWeights(growth_convergence_years=10, margin_convergence_years=5),
+    "Optimista": ScenarioWeights(growth_convergence_years=10, margin_convergence_years=7),
 }
 
 
@@ -185,6 +191,25 @@ def fundamental_growth_rate(inputs: FundamentalGrowthInputs) -> FundamentalGrowt
 
 
 @dataclass(frozen=True)
+class PeerGrowthBenchmark:
+    """Cuartiles de crecimiento de los PEERS reales (no de la tabla agregada
+    de industria de Damodaran) -- mismo criterio que 'Crecimiento y Márgenes'!
+    C13:C15 (=QUARTILE(Sector!L2:L7,1/2/3)) en 'Modelo JMR - Motor de
+    Supuestos v2'. Se arma con `comps_loader.CompsTable.q1/median/q3`."""
+
+    q1: float
+    median: float
+    q3: float
+
+
+def peer_growth_benchmark(comps, field: str = "revenue_cagr_3y") -> PeerGrowthBenchmark | None:
+    q1, median, q3 = comps.q1.get(field), comps.median.get(field), comps.q3.get(field)
+    if q1 is None or median is None or q3 is None:
+        return None
+    return PeerGrowthBenchmark(q1=q1, median=median, q3=q3)
+
+
+@dataclass(frozen=True)
 class GrowthEngineResult:
     ltm_growth: float
     cagr_3y: float
@@ -193,15 +218,32 @@ class GrowthEngineResult:
     cagr_long_years: int          # N intervalos usados (fila 34: "9 años" si hay 10 FY)
     industry_growth_us: float
     industry_growth_global: float
-    combined_historical: float    # mezcla de Base (LTM/CAGR3/CAGR5/CAGRlargo)
+    combined_historical: float    # mezcla de Base (LTM/CAGR3/CAGR5/CAGRlargo) -- solo se usa sin peers
+    peer_growth: PeerGrowthBenchmark | None   # cuartiles de peers usados, si se paso `comps`
     fundamental: FundamentalGrowthResult | None   # None si no se pudo calcular (ver fundamental_growth_rate)
-    growth_year1: float           # resultado para el escenario pedido: min/blend/max
+    growth_year1: float           # resultado para el escenario pedido
 
 
 def run_growth_engine(
     series: AnnualSeries, scenario: str, *, industry_us: str, industry_global: str,
     fundamental_inputs: FundamentalGrowthInputs | None = None,
+    peer_growth: PeerGrowthBenchmark | None = None,
 ) -> GrowthEngineResult:
+    """Formula de 'Modelo JMR - Motor de Supuestos v2' (hoja de referencia del
+    usuario): cada escenario combina el CAGR propio de un horizonte distinto
+    con el cuartil de crecimiento de los PEERS reales que le corresponde --
+    Conservador = AVG(CAGR 3y, Q1 peers), Base = AVG(CAGR 5y, mediana peers),
+    Optimista = AVG(CAGR largo plazo, Q3 peers). Sin `peer_growth` (no se
+    pasaron peers), cae al criterio anterior -- min/blend/max de
+    LTM/CAGR3/CAGR5/CAGRlargo/industria Damodaran/fundamental -- que sigue
+    siendo matematicamente monotono por construccion.
+
+    Salvaguarda: la formula de peers NO garantiza Conservador<=Base<=Optimista
+    por si sola (solo si CAGR_3y<=CAGR_5y<=CAGR_largo, que no vale para toda
+    empresa -- ver docstring del modulo). Se aplica un clamp final que nunca
+    baja Base por debajo de Conservador ni Optimista por debajo de Base --
+    no-op cuando ya viene ordenado (el caso normal), red de seguridad cuando
+    no (empresa con historia erratica)."""
     revenue = series.revenue
     if len(revenue) < 2:
         raise ValueError("Se necesitan al menos 2 anios de historico de revenue para el motor de crecimiento")
@@ -221,41 +263,53 @@ def run_growth_engine(
 
     fundamental = fundamental_growth_rate(fundamental_inputs) if fundamental_inputs is not None else None
 
-    w = BASE_BLEND_WEIGHTS
-    combined_historical = (
-        ltm_growth * w.weight_ltm + cagr_3y * w.weight_cagr3
-        + cagr_5y * w.weight_cagr5 + cagr_long * w.weight_cagr_long
-    )
-    candidates = [ltm_growth, cagr_3y, cagr_5y, cagr_long, industry_avg]
-    if fundamental is not None:
-        candidates.append(fundamental.fundamental_growth)
-        base_blend = (
-            combined_historical * (1 - w.industry_growth_weight - w.fundamental_growth_weight)
-            + industry_avg * w.industry_growth_weight
-            + fundamental.fundamental_growth * w.fundamental_growth_weight
+    if peer_growth is not None:
+        raw = {
+            "Conservador": (cagr_3y + peer_growth.q1) / 2,
+            "Base": (cagr_5y + peer_growth.median) / 2,
+            "Optimista": (cagr_long + peer_growth.q3) / 2,
+        }
+        combined_historical = raw["Base"]
+    else:
+        w = BASE_BLEND_WEIGHTS
+        combined_historical = (
+            ltm_growth * w.weight_ltm + cagr_3y * w.weight_cagr3
+            + cagr_5y * w.weight_cagr5 + cagr_long * w.weight_cagr_long
         )
-    else:
-        # Sin fundamental (EBIT(1-t) o capital invertido no positivos): se
-        # reparte su peso proporcionalmente entre historico e industria, no
-        # se inventa un tercer numero.
-        total = (1 - w.fundamental_growth_weight)
-        hist_share = (1 - w.industry_growth_weight - w.fundamental_growth_weight) / total
-        industry_share = w.industry_growth_weight / total
-        base_blend = combined_historical * hist_share + industry_avg * industry_share
+        candidates = [ltm_growth, cagr_3y, cagr_5y, cagr_long, industry_avg]
+        if fundamental is not None:
+            candidates.append(fundamental.fundamental_growth)
+            base_blend = (
+                combined_historical * (1 - w.industry_growth_weight - w.fundamental_growth_weight)
+                + industry_avg * w.industry_growth_weight
+                + fundamental.fundamental_growth * w.fundamental_growth_weight
+            )
+        else:
+            # Sin fundamental (EBIT(1-t) o capital invertido no positivos): se
+            # reparte su peso proporcionalmente entre historico e industria, no
+            # se inventa un tercer numero.
+            total = (1 - w.fundamental_growth_weight)
+            hist_share = (1 - w.industry_growth_weight - w.fundamental_growth_weight) / total
+            industry_share = w.industry_growth_weight / total
+            base_blend = combined_historical * hist_share + industry_avg * industry_share
+        raw = {"Conservador": min(candidates), "Base": base_blend, "Optimista": max(candidates)}
 
-    if scenario == "Conservador":
-        growth_year1 = min(candidates)
-    elif scenario == "Optimista":
-        growth_year1 = max(candidates)
-    else:
-        growth_year1 = base_blend
+    # Clamp de seguridad (ver docstring): no-op si ya viene ordenado.
+    conservador, base, optimista = raw["Conservador"], raw["Base"], raw["Optimista"]
+    base = max(base, conservador)
+    optimista = max(optimista, base)
+    growth_year1 = {"Conservador": conservador, "Base": base, "Optimista": optimista}[scenario]
 
     return GrowthEngineResult(
         ltm_growth=ltm_growth, cagr_3y=cagr_3y, cagr_5y=cagr_5y, cagr_long=cagr_long,
         cagr_long_years=n_long, industry_growth_us=industry_growth_us,
         industry_growth_global=industry_growth_global, combined_historical=combined_historical,
-        fundamental=fundamental, growth_year1=growth_year1,
+        peer_growth=peer_growth, fundamental=fundamental, growth_year1=growth_year1,
     )
+
+
+def peer_margin_benchmark(comps, field: str = "operating_margin") -> float | None:
+    return comps.median.get(field)
 
 
 @dataclass(frozen=True)
@@ -264,10 +318,23 @@ class MarginEngineResult:
     ebit_margin_median_5y: float     # mediana ultimos 5 FY
     industry_margin_us: float
     industry_margin_global: float
+    peer_margin_median: float | None   # mediana de operating margin de los PEERS reales, si se paso `comps`
     target_ebit_margin: float        # resultado para el escenario pedido: min/blend/max
 
 
-def run_margin_engine(series: AnnualSeries, scenario: str, *, industry_us: str, industry_global: str) -> MarginEngineResult:
+def run_margin_engine(
+    series: AnnualSeries, scenario: str, *, industry_us: str, industry_global: str,
+    peer_margin_median: float | None = None,
+) -> MarginEngineResult:
+    """Min/blend/max de (margen actual, mediana historica 5y, benchmark de
+    industria) -- Conservador=min, Base=AVERAGE(mediana historica, benchmark),
+    Optimista=max. Con `peer_margin_median` (mediana de Operating Margin de
+    los PEERS reales, igual que 'Crecimiento y Márgenes'!E14 en 'Modelo JMR -
+    Motor de Supuestos v2'), el benchmark es esa mediana; sin peers, cae al
+    promedio de industria Damodaran (US+Global). Base = AVERAGE(mediana
+    historica, benchmark) siempre cae dentro de [min,max] del conjunto de 3 --
+    no hace falta un clamp de seguridad aca (a diferencia del crecimiento,
+    ver run_growth_engine)."""
     margins = [e / r for e, r in zip(series.ebit, series.revenue) if r]
     if not margins:
         raise ValueError("No hay margenes EBIT historicos (revenue/ebit vacios)")
@@ -279,11 +346,10 @@ def run_margin_engine(series: AnnualSeries, scenario: str, *, industry_us: str, 
     industry_margin_global = ref.get_industry_average(industry_global, global_=True).pretax_operating_margin
     industry_avg = (industry_margin_us + industry_margin_global) / 2
 
-    w = BASE_BLEND_WEIGHTS
-    best_historical = max(ebit_margin_actual, ebit_margin_median_5y)
-    base_blend = best_historical * (1 - w.industry_margin_weight) + industry_avg * w.industry_margin_weight
+    benchmark = peer_margin_median if peer_margin_median is not None else industry_avg
+    base_blend = (ebit_margin_median_5y + benchmark) / 2
 
-    candidates = [ebit_margin_actual, ebit_margin_median_5y, industry_margin_us, industry_margin_global]
+    candidates = [ebit_margin_actual, ebit_margin_median_5y, benchmark]
     if scenario == "Conservador":
         target_ebit_margin = min(candidates)
     elif scenario == "Optimista":
@@ -294,7 +360,7 @@ def run_margin_engine(series: AnnualSeries, scenario: str, *, industry_us: str, 
     return MarginEngineResult(
         ebit_margin_actual=ebit_margin_actual, ebit_margin_median_5y=ebit_margin_median_5y,
         industry_margin_us=industry_margin_us, industry_margin_global=industry_margin_global,
-        target_ebit_margin=target_ebit_margin,
+        peer_margin_median=peer_margin_median, target_ebit_margin=target_ebit_margin,
     )
 
 
@@ -345,15 +411,21 @@ def run_assumptions_engine(
     industry_global: str,
     sales_to_capital: SalesToCapital,
     fundamental_inputs: FundamentalGrowthInputs | None = None,
+    comps=None,   # comps_loader.CompsTable | None -- si se pasa, ancla growth/margen en los peers reales
 ) -> AssumptionsEngineResult:
     if scenario not in SCENARIO_WEIGHTS:
         raise ValueError(f"Escenario desconocido: {scenario!r}. Opciones: {SCENARIOS}")
     weights = SCENARIO_WEIGHTS[scenario]
+    peer_growth_bench = peer_growth_benchmark(comps) if comps is not None else None
+    peer_margin_med = peer_margin_benchmark(comps) if comps is not None else None
     growth = run_growth_engine(
         series, scenario, industry_us=industry_us, industry_global=industry_global,
-        fundamental_inputs=fundamental_inputs,
+        fundamental_inputs=fundamental_inputs, peer_growth=peer_growth_bench,
     )
-    margin = run_margin_engine(series, scenario, industry_us=industry_us, industry_global=industry_global)
+    margin = run_margin_engine(
+        series, scenario, industry_us=industry_us, industry_global=industry_global,
+        peer_margin_median=peer_margin_med,
+    )
     stc = sales_to_capital.for_scenario(scenario)
 
     return AssumptionsEngineResult(

@@ -103,6 +103,11 @@ def write_supuestos_tab(
         [f"CAGR largo plazo"] + [_pct(s.assumptions.growth.cagr_long) for s in scenarios],
         ["Crecimiento industria (US)"] + [_pct(s.assumptions.growth.industry_growth_us) for s in scenarios],
         ["Crecimiento industria (Global)"] + [_pct(s.assumptions.growth.industry_growth_global) for s in scenarios],
+        ["Crecimiento peers Q1/mediana/Q3"] + [
+            (f"{_pct(s.assumptions.growth.peer_growth.q1)} / {_pct(s.assumptions.growth.peer_growth.median)} / "
+             f"{_pct(s.assumptions.growth.peer_growth.q3)}") if s.assumptions.growth.peer_growth else "sin peers"
+            for s in scenarios
+        ],
         ["Crecimiento historico combinado"] + [_pct(s.assumptions.growth.combined_historical) for s in scenarios],
         ["Reinvestment Rate LTM (Damodaran)"] + [
             _pct(s.assumptions.growth.fundamental.reinvestment_rate) if s.assumptions.growth.fundamental else "n/d"
@@ -127,6 +132,10 @@ def write_supuestos_tab(
         ["Mediana margen EBIT (5y)"] + [_pct(s.assumptions.margin.ebit_margin_median_5y) for s in scenarios],
         ["Margen industria (US)"] + [_pct(s.assumptions.margin.industry_margin_us) for s in scenarios],
         ["Margen industria (Global)"] + [_pct(s.assumptions.margin.industry_margin_global) for s in scenarios],
+        ["Margen mediana peers"] + [
+            _pct(s.assumptions.margin.peer_margin_median) if s.assumptions.margin.peer_margin_median is not None else "sin peers"
+            for s in scenarios
+        ],
         ["Margen objetivo (usado en el DCF)"] + [_pct(s.assumptions.margin.target_ebit_margin) for s in scenarios],
         ["Años convergencia margen"] + [s.assumptions.weights.margin_convergence_years for s in scenarios],
         ["-- Reinversión --"],

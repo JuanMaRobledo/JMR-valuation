@@ -165,7 +165,7 @@ def run(
     for scenario in SCENARIOS:
         assumptions = run_assumptions_engine(
             series, scenario, industry_us=industry_us, industry_global=industry_global, sales_to_capital=stc,
-            fundamental_inputs=fundamental_inputs,
+            fundamental_inputs=fundamental_inputs, comps=comps,
         )
         growth_path = growth_and_margin_path(assumptions)
         terminal = terminal_assumptions(assumptions, riskfree_rate=riskfree_rate, wacc_current=wacc)

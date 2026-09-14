@@ -66,8 +66,8 @@ def _relative_result(metric_name: str, scenario: str, target_price: float) -> Re
 
 
 def _scenario(name: str, *, with_relative: bool = False) -> ScenarioOutput:
-    growth = GrowthEngineResult(0.1, 0.11, 0.12, 0.13, 9, 0.15, 0.14, 0.115, None, 0.13)
-    margin = MarginEngineResult(0.36, 0.34, 0.33, 0.27, 0.34)
+    growth = GrowthEngineResult(0.1, 0.11, 0.12, 0.13, 9, 0.15, 0.14, 0.115, None, None, 0.13)
+    margin = MarginEngineResult(0.36, 0.34, 0.33, 0.27, None, 0.34)
     assumptions = AssumptionsEngineResult(
         scenario=name, weights=SCENARIO_WEIGHTS["Base"], growth=growth, margin=margin,
         sales_to_capital_1_5=1.5, sales_to_capital_6_10=1.5,
@@ -102,6 +102,8 @@ def test_write_full_valuation_creates_all_three_tabs_and_clears_existing():
         median={"market_cap": 100.0, "gross_margin": 0.8, "forward_pe": 10.0, "pe": 12.0, "ev_fcf": 8.0,
                 "p_fcf": 9.0, "ev_ebitda": 11.0, "p_ocf": 7.0, "operating_margin": 0.3,
                 "revenue_cagr_3y": 0.1, "revenue_cagr_5y": None, "revenue_cagr_10y": None},
+        q1={"revenue_cagr_3y": 0.08, "operating_margin": 0.25},
+        q3={"revenue_cagr_3y": 0.12, "operating_margin": 0.35},
     )
     scenarios = [_scenario(s) for s in ("Conservador", "Base", "Optimista")]
 
