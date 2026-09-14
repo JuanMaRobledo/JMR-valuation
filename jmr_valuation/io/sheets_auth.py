@@ -65,6 +65,6 @@ def open_target_sheet(client: gspread.Client, sheet_id: str | None = None) -> gs
 
 def _service_account_email(client: gspread.Client) -> str:
     try:
-        return client.auth.service_account_email  # type: ignore[union-attr]
+        return client.http_client.auth.service_account_email  # type: ignore[union-attr]
     except AttributeError:
         return "<no disponible>"
