@@ -126,7 +126,11 @@ def write_supuestos_tab(
         ["Sales-to-Capital años 1-5"] + [_num(s.assumptions.sales_to_capital_1_5) for s in scenarios],
         ["Sales-to-Capital años 6-10"] + [_num(s.assumptions.sales_to_capital_6_10) for s in scenarios],
         ["-- Resultado DCF --"],
-        ["Enterprise Value ($mm)"] + [_num(s.dcf.value_of_operating_assets) for s in scenarios],
+        # OJO: value_of_operating_assets esta en $ crudos, no en millones -- el
+        # pipeline corre todo en $ (series.ltm_revenue/ltm_ebit de AnnualSeries
+        # NO estan en millones, a diferencia de CompanyInputs). "Valor por
+        # accion" da bien igual (EV $ / shares crudas = $/accion correcto).
+        ["Enterprise Value ($)"] + [_num(s.dcf.value_of_operating_assets) for s in scenarios],
         ["Valor por acción"] + [_num(s.bridge.value_per_share) for s in scenarios],
     ]
     ws.update(values=rows, range_name="A1")
