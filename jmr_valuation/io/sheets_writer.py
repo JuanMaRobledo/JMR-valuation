@@ -97,6 +97,22 @@ def write_supuestos_tab(
         ["Crecimiento industria (US)"] + [_pct(s.assumptions.growth.industry_growth_us) for s in scenarios],
         ["Crecimiento industria (Global)"] + [_pct(s.assumptions.growth.industry_growth_global) for s in scenarios],
         ["Crecimiento historico combinado"] + [_pct(s.assumptions.growth.combined_historical) for s in scenarios],
+        ["Reinvestment Rate LTM (Damodaran)"] + [
+            _pct(s.assumptions.growth.fundamental.reinvestment_rate) if s.assumptions.growth.fundamental else "n/d"
+            for s in scenarios
+        ],
+        ["ROIC LTM (Damodaran)"] + [
+            _pct(s.assumptions.growth.fundamental.roic) if s.assumptions.growth.fundamental else "n/d"
+            for s in scenarios
+        ],
+        ["Crecimiento fundamental = RR x ROIC"] + [
+            _pct(s.assumptions.growth.fundamental.fundamental_growth) if s.assumptions.growth.fundamental else "n/d"
+            for s in scenarios
+        ],
+        ["  (I+D capitalizado en el calculo)"] + [
+            ("Si" if s.assumptions.growth.fundamental.rd_adjusted else "No") if s.assumptions.growth.fundamental else "n/d"
+            for s in scenarios
+        ],
         ["Crecimiento Año 1 (usado en el DCF)"] + [_pct(s.assumptions.growth.growth_year1) for s in scenarios],
         ["Años convergencia crecimiento"] + [s.assumptions.weights.growth_convergence_years for s in scenarios],
         ["-- Margen EBIT --"],

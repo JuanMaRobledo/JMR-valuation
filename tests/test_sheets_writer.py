@@ -57,7 +57,7 @@ def _year(year=1) -> YearProjection:
 
 
 def _scenario(name: str) -> ScenarioOutput:
-    growth = GrowthEngineResult(0.1, 0.11, 0.12, 0.13, 9, 0.15, 0.14, 0.115, 0.13)
+    growth = GrowthEngineResult(0.1, 0.11, 0.12, 0.13, 9, 0.15, 0.14, 0.115, None, 0.13)
     margin = MarginEngineResult(0.36, 0.34, 0.33, 0.27, 0.34)
     assumptions = AssumptionsEngineResult(
         scenario=name, weights=SCENARIO_WEIGHTS["Base"], growth=growth, margin=margin,

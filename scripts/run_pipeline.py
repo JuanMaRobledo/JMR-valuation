@@ -27,6 +27,7 @@ from jmr_valuation.io.sheets_writer import ScenarioOutput, write_full_valuation
 from jmr_valuation.io.yfinance_client import get_market_snapshot
 from jmr_valuation.models.assumptions_engine import (
     SCENARIOS,
+    FundamentalGrowthInputs,
     growth_and_margin_path,
     resolve_sales_to_capital,
     run_assumptions_engine,
@@ -57,6 +58,25 @@ def run(
     effective_tax_rate = tax_rate if tax_rate is not None else company_inputs.effective_tax_rate
     minority_interests = company_inputs.minority_interests * 1_000_000  # esa funcion trabaja en millones
 
+    # Crecimiento fundamental de Damodaran (g = Reinvestment Rate x ROIC),
+    # usando los mismos numeros ya parseados de EDGAR -- ver assumptions_engine.
+    fundamental_inputs = FundamentalGrowthInputs(
+        ebit_ltm=company_inputs.ebit_ltm, effective_tax_rate=effective_tax_rate,
+        revenue_ltm=company_inputs.revenue_ltm, book_value_equity_ltm=company_inputs.book_value_equity_ltm,
+        book_value_debt_ltm=company_inputs.book_value_debt_ltm, cash_ltm=company_inputs.cash_ltm,
+        hist_capex_pct_of_revenue=company_inputs.hist_capex_pct_of_revenue,
+        hist_da_pct_of_revenue=company_inputs.hist_da_pct_of_revenue,
+        capitalize_rd=company_inputs.capitalize_rd, rd_amortization_years=company_inputs.rd_amortization_years,
+        rd_expense_current_year=company_inputs.rd_expense_current_year,
+        rd_expense_past_years=(
+            company_inputs.rd_expense_year_minus_1, company_inputs.rd_expense_year_minus_2,
+            company_inputs.rd_expense_year_minus_3, company_inputs.rd_expense_year_minus_4,
+            company_inputs.rd_expense_year_minus_5, company_inputs.rd_expense_year_minus_6,
+            company_inputs.rd_expense_year_minus_7, company_inputs.rd_expense_year_minus_8,
+            company_inputs.rd_expense_year_minus_9,
+        ),
+    )
+
     comps = None
     if peer_tickers:
         print(f"[3/5] Armando tabla de comparables ({', '.join(peer_tickers)})...")
@@ -81,6 +101,7 @@ def run(
     for scenario in SCENARIOS:
         assumptions = run_assumptions_engine(
             series, scenario, industry_us=industry_us, industry_global=industry_global, sales_to_capital=stc,
+            fundamental_inputs=fundamental_inputs,
         )
         growth_path = growth_and_margin_path(assumptions)
         terminal = terminal_assumptions(assumptions, riskfree_rate=riskfree_rate, wacc_current=wacc)
