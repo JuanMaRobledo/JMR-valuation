@@ -46,7 +46,7 @@ Uso tipico:
 """
 from __future__ import annotations
 
-from dataclasses import replace
+from dataclasses import dataclass, replace
 from datetime import date
 
 from jmr_valuation.io.inputs import CompanyInputs
@@ -516,3 +516,85 @@ def load_company_inputs_from_sec_edgar(
     if overrides:
         inputs = replace(inputs, **overrides)
     return inputs
+
+
+@dataclass(frozen=True)
+class AnnualSeries:
+    """Historico anual (hasta 10 FY, el mas viejo primero) + LTM -- alimenta
+    'Motor de Supuestos v2' (CAGR 3/5/Ny, mediana de margen, etc.), que
+    necesita la SERIE completa y no solo LTM/prior_10k como
+    `load_company_inputs_from_sec_edgar`."""
+
+    ticker: str
+    company_name: str
+    fiscal_year_ends: list[str]      # ISO date, mas viejo primero, hasta 10
+    revenue: list[float]             # $ (no millones -- se convierte al armar la hoja "Datos")
+    ebit: list[float]
+    da: list[float]
+    shares_outstanding: list[float]
+    long_term_debt: list[float]
+    current_debt: list[float]
+    cash: list[float]
+    ltm_revenue: float
+    ltm_ebit: float
+    ltm_da: float
+
+
+def load_annual_series_from_sec_edgar(
+    ticker: str, *, years: int = 10, client: SecEdgarClient | None = None,
+) -> AnnualSeries:
+    """Arma hasta `years` FY de historico real desde SEC EDGAR (companyfacts),
+    reusando el mismo mapeo de tags/dedupe que `load_company_inputs_from_sec_edgar`
+    -- ver docstring de ese modulo para por que EDGAR (y no yfinance, que solo
+    trae ~4-5 anios de anual) es la fuente para esta serie larga."""
+    client = client or SecEdgarClient()
+    ticker = ticker.upper()
+
+    facts_json = client.company_facts(ticker)
+    submissions = client.company_submissions(ticker)
+    gaap = facts_json.get("facts", {}).get("us-gaap", {})
+    dei = facts_json.get("facts", {}).get("dei", {})
+
+    def rows(key: str, units: tuple[str, ...] = ("USD",)) -> list[dict] | None:
+        return _concept_rows(gaap, key, units)
+
+    revenue_rows = rows("revenue")
+    revenue_annual = _annual_rows(revenue_rows)
+    if not revenue_annual:
+        raise SecEdgarError(
+            f"No se encontraron ingresos anuales (10-K) para {ticker} en SEC EDGAR."
+        )
+    revenue_annual = revenue_annual[-years:]
+    ends = [r["end"] for r in revenue_annual]
+
+    ebit_by_end = {r["end"]: r["val"] for r in _annual_rows(rows("ebit"))}
+    da_by_end = {r["end"]: r["val"] for r in _annual_rows(rows("da"))}
+
+    shares_rows = _concept_rows(gaap, "shares_outstanding", units=("shares",), extra=dei)
+    shares_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(shares_rows)}
+    lt_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("long_term_debt"))}
+    cur_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_debt"))}
+    cash_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("cash"))}
+
+    def _series_at(by_end: dict[str, float]) -> list[float]:
+        return [by_end.get(end, 0.0) for end in ends]
+
+    ltm_revenue = _ltm_value(revenue_rows) or revenue_annual[-1]["val"]
+    ltm_ebit = _ltm_value(rows("ebit")) or ebit_by_end.get(ends[-1], 0.0)
+    ltm_da = _ltm_value(rows("da")) or da_by_end.get(ends[-1], 0.0)
+
+    return AnnualSeries(
+        ticker=ticker,
+        company_name=submissions.get("name") or ticker,
+        fiscal_year_ends=ends,
+        revenue=[r["val"] for r in revenue_annual],
+        ebit=_series_at(ebit_by_end),
+        da=_series_at(da_by_end),
+        shares_outstanding=_series_at(shares_by_end),
+        long_term_debt=_series_at(lt_debt_by_end),
+        current_debt=_series_at(cur_debt_by_end),
+        cash=_series_at(cash_by_end),
+        ltm_revenue=ltm_revenue,
+        ltm_ebit=ltm_ebit,
+        ltm_da=ltm_da,
+    )

@@ -1,7 +1,12 @@
 import pytest
 
 from jmr_valuation.io.sec_edgar_client import SecEdgarError
-from jmr_valuation.io.sec_edgar_loader import _annual_rows, _ltm_value, load_company_inputs_from_sec_edgar
+from jmr_valuation.io.sec_edgar_loader import (
+    _annual_rows,
+    _ltm_value,
+    load_annual_series_from_sec_edgar,
+    load_company_inputs_from_sec_edgar,
+)
 
 M = 1_000_000  # los valores de SEC EDGAR vienen en USD/acciones crudos, no en millones
 
@@ -157,6 +162,27 @@ def test_loads_core_financials_from_ltm_and_last_10k(fake_client):
 
     assert inputs.effective_tax_rate == pytest.approx(0.2)
     assert inputs.dividend_per_share_ltm == pytest.approx(0.6)
+
+
+def test_annual_series_returns_full_history_and_ltm(fake_client):
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+
+    assert series.ticker == "TEST"
+    assert series.company_name == "TEST CORP"
+    assert series.fiscal_year_ends == ["2023-12-31", "2024-12-31"]
+    assert series.revenue == pytest.approx([900.0 * M, 1000.0 * M])
+    assert series.ebit == pytest.approx([300.0 * M, 360.0 * M])
+    assert series.long_term_debt == pytest.approx([200.0 * M, 220.0 * M])
+    assert series.current_debt == pytest.approx([30.0 * M, 35.0 * M])
+    assert series.cash == pytest.approx([100.0 * M, 120.0 * M])
+    assert series.ltm_revenue == pytest.approx(1100.0 * M)  # suma de los 4 trimestres
+    assert series.ltm_ebit == pytest.approx(390.0 * M)
+
+
+def test_annual_series_truncates_to_requested_years(fake_client):
+    series = load_annual_series_from_sec_edgar("TEST", years=1, client=fake_client)
+    assert series.fiscal_year_ends == ["2024-12-31"]
+    assert series.revenue == pytest.approx([1000.0 * M])
 
 
 def test_computes_historical_margins_and_ratios(fake_client):
