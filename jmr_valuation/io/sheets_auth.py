@@ -10,6 +10,7 @@ Uso tipico:
 """
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
@@ -32,13 +33,32 @@ class SheetsAuthError(RuntimeError):
 
 
 def get_gspread_client(credentials_path: str | Path | None = None) -> gspread.Client:
+    """Busca la credencial en este orden: 1) `credentials_path` explicito,
+    2) el JSON completo en la variable de entorno GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT
+    (para corridas programadas/sin sesion, donde no hay un archivo local
+    persistente -- ver una Cloud Environment con esta variable seteada en vez
+    de un archivo en disco), 3) el archivo en GOOGLE_SERVICE_ACCOUNT_JSON."""
     load_dotenv()
+
+    json_content = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT")
+    if credentials_path is None and json_content:
+        try:
+            info = json.loads(json_content)
+        except json.JSONDecodeError as exc:
+            raise SheetsAuthError(
+                "GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT no es JSON valido -- "
+                "tiene que ser el contenido completo del archivo de la service account, en una sola linea."
+            ) from exc
+        credentials = Credentials.from_service_account_info(info, scopes=_SCOPES)
+        return gspread.authorize(credentials)
+
     path = Path(credentials_path or os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON", ""))
     if not path or not path.exists():
         raise SheetsAuthError(
-            f"No se encontro el JSON de la service account en {path!s}. "
-            "Copia el archivo descargado de Google Cloud Console a esa ruta, o "
-            "seteá GOOGLE_SERVICE_ACCOUNT_JSON en tu .env apuntando al lugar correcto."
+            f"No se encontro el JSON de la service account en {path!s}, ni "
+            "GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT en el entorno. Copia el archivo "
+            "descargado de Google Cloud Console a esa ruta, o seteá "
+            "GOOGLE_SERVICE_ACCOUNT_JSON en tu .env apuntando al lugar correcto."
         )
 
     credentials = Credentials.from_service_account_file(str(path), scopes=_SCOPES)
