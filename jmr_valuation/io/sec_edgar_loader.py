@@ -46,7 +46,7 @@ Uso tipico:
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from datetime import date
 
 from jmr_valuation.io.inputs import CompanyInputs
@@ -81,7 +81,29 @@ _TAGS: dict[str, list[str]] = {
     # combina todos los candidatos) inflaria la serie con un numero mas alto
     # que no es el que corresponde.
     "shares_outstanding": ["CommonStockSharesOutstanding", "EntityCommonStockSharesOutstanding"],
+    # Promedio ponderado de acciones DILUIDAS del periodo (para EPS/FCFF per
+    # share historico) -- concepto DISTINTO de 'shares_outstanding' arriba
+    # (que es un instantaneo a una fecha de balance, para el bridge de valor
+    # por accion). Mezclarlos no es intercambiable: el promedio ponderado
+    # diluido es sistematicamente mas alto que las acciones en circulacion a
+    # cierre cuando hay recompras activas durante el año.
+    "diluted_shares_avg": ["WeightedAverageNumberOfDilutedSharesOutstanding"],
+    "basic_shares_avg": ["WeightedAverageNumberOfSharesOutstandingBasic"],
+    "net_income": ["NetIncomeLoss", "ProfitLoss"],
     "tax_expense": ["IncomeTaxExpenseBenefit"],
+    "operating_cash_flow": ["NetCashProvidedByUsedInOperatingActivities",
+                             "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"],
+    "buybacks": ["PaymentsForRepurchaseOfCommonStock"],
+    "dividends_paid": ["PaymentsOfDividendsCommonStock", "PaymentsOfDividends"],
+    "cogs": ["CostOfRevenue", "CostOfGoodsAndServicesSold", "CostOfServices", "CostOfGoodsSold"],
+    # Totales de balance ya agregados por la propia empresa (no hace falta
+    # sumar Cuentas por Cobrar + Otros Activos Corrientes a mano) -- se
+    # necesitan para el Cambio en Capital de Trabajo de 'Financials
+    # Multiples' (filas historicas de FCFF/FCFE), que referencia
+    # 'Balance Sheet'!fila 10 (Total Current Assets) y fila 24 (Total
+    # Current Liabilities) directamente.
+    "current_assets": ["AssetsCurrent"],
+    "current_liabilities": ["LiabilitiesCurrent"],
     "pretax_income": [
         "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
         "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
@@ -275,6 +297,29 @@ def _ltm_value(rows: list[dict] | None) -> float | None:
         last_four = quarters[-4:]
         if _quarters_are_contiguous(last_four):
             return sum(r["val"] for r in last_four)
+    annual = _annual_rows(rows)
+    return annual[-1]["val"] if annual else None
+
+
+def _ltm_average_value(rows: list[dict] | None) -> float | None:
+    """Como _ltm_value, pero PROMEDIA (no suma) los ultimos 4 trimestres --
+    para un promedio ponderado por periodo (acciones diluidas promedio),
+    sumar 4 trimestres da ~4x el valor real en vez de un LTM comparable.
+
+    OJO: a diferencia de _ltm_value, esto usa _quarterly_rows (duracion
+    propia de ~90 dias tal cual reportada) y NO _derive_discrete_quarters.
+    _derive_discrete_quarters resta 'acumulado - acumulado anterior', que
+    solo tiene sentido para un FLUJO que se acumula desde el inicio del
+    ejercicio (ingresos, EBIT). El promedio ponderado de acciones diluidas
+    NUNCA se reporta acumulado -- cada trimestre ya es su propio promedio
+    independiente -- asi que restarlos como si fueran acumulados da un
+    numero sin sentido (confirmado con MSFT: daba ~1.860M en vez de ~7.450M
+    acciones)."""
+    quarters = _quarterly_rows(rows)
+    if len(quarters) >= 4:
+        last_four = quarters[-4:]
+        if _quarters_are_contiguous(last_four):
+            return sum(r["val"] for r in last_four) / 4
     annual = _annual_rows(rows)
     return annual[-1]["val"] if annual else None
 
@@ -538,6 +583,31 @@ class AnnualSeries:
     ltm_revenue: float
     ltm_ebit: float
     ltm_da: float
+    # --- Agregado para refrescar Income Statement (taxes/net income/EPS/
+    # acciones diluidas), Cash Flow Statement (OCF/CapEx/buybacks/dividendos)
+    # y Trailing/Forward Valuation (multiplos historicos reales) -- ver
+    # docstring de refresh_native_model.py para el mapeo completo a celdas.
+    # Con default (lista vacia/0.0) para no romper fixtures de test
+    # existentes (test_assumptions_engine.py, test_sheets_writer.py) que
+    # arman un AnnualSeries a mano sin estos campos, que no les interesan. ---
+    tax_expense: list[float] = field(default_factory=list)
+    net_income: list[float] = field(default_factory=list)
+    diluted_shares_avg: list[float] = field(default_factory=list)  # promedio ponderado diluido, no instantaneo
+    operating_cash_flow: list[float] = field(default_factory=list)
+    capex: list[float] = field(default_factory=list)          # signo tal cual XBRL lo reporta (positivo = salida de caja)
+    buybacks: list[float] = field(default_factory=list)       # idem, positivo = salida de caja
+    dividends_paid: list[float] = field(default_factory=list)  # idem, positivo = salida de caja
+    cogs: list[float] = field(default_factory=list)            # costo de ventas -- Gross Profit = revenue - cogs
+    current_assets: list[float] = field(default_factory=list)       # AssetsCurrent, ya agregado por la empresa
+    current_liabilities: list[float] = field(default_factory=list)  # LiabilitiesCurrent, idem
+    ltm_tax_expense: float = 0.0
+    ltm_net_income: float = 0.0
+    ltm_diluted_shares_avg: float = 0.0
+    ltm_operating_cash_flow: float = 0.0
+    ltm_capex: float = 0.0
+    ltm_buybacks: float = 0.0
+    ltm_dividends_paid: float = 0.0
+    ltm_cogs: float = 0.0
 
 
 def load_annual_series_from_sec_edgar(
@@ -575,6 +645,30 @@ def load_annual_series_from_sec_edgar(
     lt_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("long_term_debt"))}
     cur_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_debt"))}
     cash_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("cash"))}
+    current_assets_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_assets"))}
+    current_liabilities_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_liabilities"))}
+
+    tax_rows, ni_rows = rows("tax_expense"), rows("net_income")
+    ocf_rows, capex_rows = rows("operating_cash_flow"), rows("capex")
+    buyback_rows, dividend_rows = rows("buybacks"), rows("dividends_paid")
+    cogs_rows = rows("cogs")
+    tax_by_end = {r["end"]: r["val"] for r in _annual_rows(tax_rows)}
+    ni_by_end = {r["end"]: r["val"] for r in _annual_rows(ni_rows)}
+    ocf_by_end = {r["end"]: r["val"] for r in _annual_rows(ocf_rows)}
+    capex_by_end = {r["end"]: r["val"] for r in _annual_rows(capex_rows)}
+    buyback_by_end = {r["end"]: r["val"] for r in _annual_rows(buyback_rows)}
+    dividend_by_end = {r["end"]: r["val"] for r in _annual_rows(dividend_rows)}
+    cogs_by_end = {r["end"]: r["val"] for r in _annual_rows(cogs_rows)}
+
+    # Acciones diluidas promedio: si una empresa solo reporta el promedio
+    # BASICO (no diluido) para algun anio, se completa con ese -- mejor
+    # aproximacion real que dejar el anio en 0 (que arruinaria EPS/FCFF per
+    # share de ese punto especifico en las hojas de multiplos).
+    diluted_rows = rows("diluted_shares_avg", units=("shares",))
+    basic_rows = rows("basic_shares_avg", units=("shares",))
+    diluted_by_end = {r["end"]: r["val"] for r in _annual_rows(diluted_rows)}
+    basic_by_end = {r["end"]: r["val"] for r in _annual_rows(basic_rows)}
+    diluted_shares_by_end = {**basic_by_end, **diluted_by_end}
 
     def _series_at(by_end: dict[str, float]) -> list[float]:
         return [by_end.get(end, 0.0) for end in ends]
@@ -582,6 +676,17 @@ def load_annual_series_from_sec_edgar(
     ltm_revenue = _ltm_value(revenue_rows) or revenue_annual[-1]["val"]
     ltm_ebit = _ltm_value(rows("ebit")) or ebit_by_end.get(ends[-1], 0.0)
     ltm_da = _ltm_value(rows("da")) or da_by_end.get(ends[-1], 0.0)
+    ltm_tax_expense = _ltm_value(tax_rows) or tax_by_end.get(ends[-1], 0.0)
+    ltm_net_income = _ltm_value(ni_rows) or ni_by_end.get(ends[-1], 0.0)
+    ltm_operating_cash_flow = _ltm_value(ocf_rows) or ocf_by_end.get(ends[-1], 0.0)
+    ltm_capex = _ltm_value(capex_rows) or capex_by_end.get(ends[-1], 0.0)
+    ltm_buybacks = _ltm_value(buyback_rows) or buyback_by_end.get(ends[-1], 0.0)
+    ltm_dividends_paid = _ltm_value(dividend_rows) or dividend_by_end.get(ends[-1], 0.0)
+    ltm_cogs = _ltm_value(cogs_rows) or cogs_by_end.get(ends[-1], 0.0)
+    ltm_diluted_shares_avg = (
+        _ltm_average_value(diluted_rows) or _ltm_average_value(basic_rows)
+        or diluted_shares_by_end.get(ends[-1], 0.0)
+    )
 
     return AnnualSeries(
         ticker=ticker,
@@ -597,4 +702,22 @@ def load_annual_series_from_sec_edgar(
         ltm_revenue=ltm_revenue,
         ltm_ebit=ltm_ebit,
         ltm_da=ltm_da,
+        tax_expense=_series_at(tax_by_end),
+        net_income=_series_at(ni_by_end),
+        diluted_shares_avg=_series_at(diluted_shares_by_end),
+        operating_cash_flow=_series_at(ocf_by_end),
+        capex=_series_at(capex_by_end),
+        buybacks=_series_at(buyback_by_end),
+        dividends_paid=_series_at(dividend_by_end),
+        cogs=_series_at(cogs_by_end),
+        current_assets=_series_at(current_assets_by_end),
+        current_liabilities=_series_at(current_liabilities_by_end),
+        ltm_tax_expense=ltm_tax_expense,
+        ltm_net_income=ltm_net_income,
+        ltm_diluted_shares_avg=ltm_diluted_shares_avg,
+        ltm_operating_cash_flow=ltm_operating_cash_flow,
+        ltm_capex=ltm_capex,
+        ltm_buybacks=ltm_buybacks,
+        ltm_dividends_paid=ltm_dividends_paid,
+        ltm_cogs=ltm_cogs,
     )

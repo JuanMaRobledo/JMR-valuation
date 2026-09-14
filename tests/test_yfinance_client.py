@@ -3,15 +3,20 @@ import pytest
 
 from jmr_valuation.io.yfinance_client import (
     YFinanceError,
+    get_historical_close_prices,
     get_market_snapshot,
     get_peer_multiples,
 )
 
 
 class _FakeTicker:
-    def __init__(self, info, financials=None):
+    def __init__(self, info, financials=None, history_df=None):
         self.info = info
         self.financials = financials if financials is not None else pd.DataFrame()
+        self._history_df = history_df if history_df is not None else pd.DataFrame()
+
+    def history(self, start=None, end=None, auto_adjust=None):
+        return self._history_df
 
 
 def test_get_market_snapshot_reads_price_and_market_cap(monkeypatch):
@@ -68,3 +73,48 @@ def test_get_peer_multiples_handles_missing_financials_gracefully(monkeypatch):
     result = get_peer_multiples("X")
     assert result.revenue_cagr_3y is None
     assert result.ev_ebitda is None
+
+
+def _history_df(rows: dict[str, float]) -> pd.DataFrame:
+    """rows: {'YYYY-MM-DD': close} -- dias HABILES simulados (no todos los
+    dias del calendario, igual que el historico real de yfinance)."""
+    index = pd.to_datetime(list(rows.keys()))
+    return pd.DataFrame({"Close": list(rows.values())}, index=index)
+
+
+def test_get_historical_close_prices_picks_last_trading_day_on_or_before_target(monkeypatch):
+    """Un fin de ejercicio fiscal (p.ej. 30/6, sabado en algunos años) casi
+    nunca cae en un dia habil de bolsa exacto -- se usa el cierre del ultimo
+    dia habil ANTERIOR, nunca uno posterior (no se inventa un precio que el
+    mercado todavia no habia fijado a esa fecha)."""
+    fake = _FakeTicker({}, history_df=_history_df({
+        "2024-06-27": 445.0, "2024-06-28": 447.0,  # 6/29-30 son fin de semana
+        "2024-07-01": 450.0,
+    }))
+    monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
+
+    prices = get_historical_close_prices("MSFT", ["2024-06-30"])
+    assert prices == pytest.approx([447.0])
+
+
+def test_get_historical_close_prices_returns_none_before_earliest_available_data(monkeypatch):
+    """Una fecha anterior a la primera cotizacion disponible (empresa recien
+    salida a bolsa, o ticker sin ese historico) queda en None -- no se
+    extrapola hacia atras."""
+    fake = _FakeTicker({}, history_df=_history_df({"2020-01-02": 50.0, "2020-01-03": 51.0}))
+    monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
+
+    prices = get_historical_close_prices("MSFT", ["2019-06-30", "2020-01-03"])
+    assert prices == [None, pytest.approx(51.0)]
+
+
+def test_get_historical_close_prices_returns_all_none_when_history_is_empty(monkeypatch):
+    fake = _FakeTicker({}, history_df=pd.DataFrame())
+    monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
+
+    assert get_historical_close_prices("MSFT", ["2020-01-01", "2021-01-01"]) == [None, None]
+
+
+def test_get_historical_close_prices_returns_empty_list_for_no_dates(monkeypatch):
+    monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: _FakeTicker({}))
+    assert get_historical_close_prices("MSFT", []) == []

@@ -36,6 +36,13 @@ def _shares_node(rows):
     return {"units": {"shares": rows}}
 
 
+def _quarterly_shares(start, end, val):
+    """Acciones diluidas promedio de UN trimestre -- a diferencia de
+    ingresos/EBIT, este concepto NUNCA se reporta acumulado desde el inicio
+    del ejercicio, asi que cada trimestre ya es discreto tal cual viene."""
+    return {"start": start, "end": end, "val": val, "form": "10-Q", "fp": "Q1", "filed": end}
+
+
 def _per_share_node(rows):
     return {"units": {"USD/shares": rows}}
 
@@ -106,6 +113,24 @@ def _build_facts() -> dict:
             _annual("2023-12-31", 10 * M), _annual("2024-12-31", 20 * M),
         ]),
         "DeferredTaxAssetsOperatingLossCarryforwards": _usd_node([_instant("2024-12-31", 30 * M)]),
+        "NetIncomeLoss": _usd_node([_annual("2023-12-31", 240 * M), _annual("2024-12-31", 300 * M)]),
+        "NetCashProvidedByUsedInOperatingActivities": _usd_node([
+            _annual("2023-12-31", 350 * M), _annual("2024-12-31", 400 * M),
+        ]),
+        "PaymentsForRepurchaseOfCommonStock": _usd_node([
+            _annual("2023-12-31", 30 * M), _annual("2024-12-31", 40 * M),
+        ]),
+        "PaymentsOfDividendsCommonStock": _usd_node([
+            _annual("2023-12-31", 15 * M), _annual("2024-12-31", 18 * M),
+        ]),
+        "CostOfRevenue": _usd_node([_annual("2023-12-31", 300 * M), _annual("2024-12-31", 330 * M)]),
+        "WeightedAverageNumberOfDilutedSharesOutstanding": _shares_node([
+            _annual("2023-12-31", 98 * M), _annual("2024-12-31", 103 * M),
+            _quarterly_shares("2025-01-01", "2025-03-31", 106 * M),
+            _quarterly_shares("2025-04-01", "2025-06-30", 106.5 * M),
+            _quarterly_shares("2025-07-01", "2025-09-30", 107 * M),
+            _quarterly_shares("2025-10-01", "2025-12-30", 107.5 * M),
+        ]),
     }
     return {"cik": 1, "entityName": "TEST CORP", "facts": {"us-gaap": gaap}}
 
@@ -177,6 +202,35 @@ def test_annual_series_returns_full_history_and_ltm(fake_client):
     assert series.cash == pytest.approx([100.0 * M, 120.0 * M])
     assert series.ltm_revenue == pytest.approx(1100.0 * M)  # suma de los 4 trimestres
     assert series.ltm_ebit == pytest.approx(390.0 * M)
+
+
+def test_annual_series_includes_income_statement_and_cash_flow_extras(fake_client):
+    """Regresion: estos campos alimentan Income Statement (taxes/net income/
+    EPS/acciones diluidas), Cash Flow Statement (OCF/CapEx/buybacks/
+    dividendos) y Trailing/Forward Valuation (multiplos historicos reales)
+    en refresh_native_model.py -- ver docstring de AnnualSeries."""
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+
+    assert series.net_income == pytest.approx([240.0 * M, 300.0 * M])
+    assert series.tax_expense == pytest.approx([0.0, 60.0 * M])  # solo 2024 en el fixture
+    assert series.operating_cash_flow == pytest.approx([350.0 * M, 400.0 * M])
+    assert series.buybacks == pytest.approx([30.0 * M, 40.0 * M])
+    assert series.dividends_paid == pytest.approx([15.0 * M, 18.0 * M])
+    assert series.cogs == pytest.approx([300.0 * M, 330.0 * M])
+    assert series.diluted_shares_avg == pytest.approx([98.0 * M, 103.0 * M])
+
+    assert series.ltm_net_income == pytest.approx(300.0 * M)  # sin trimestres -> ultimo 10-K
+    assert series.ltm_tax_expense == pytest.approx(60.0 * M)
+    assert series.ltm_operating_cash_flow == pytest.approx(400.0 * M)
+    assert series.ltm_capex == pytest.approx(25.0 * M)  # ya existia como campo "capex"
+    assert series.ltm_buybacks == pytest.approx(40.0 * M)
+    assert series.ltm_dividends_paid == pytest.approx(18.0 * M)
+    assert series.ltm_cogs == pytest.approx(330.0 * M)
+
+    # Acciones diluidas promedio LTM: PROMEDIA (no suma) los ultimos 4
+    # trimestres discretos si son contiguos -- ver docstring de
+    # _ltm_average_value (sumarlos daria ~4x el valor real).
+    assert series.ltm_diluted_shares_avg == pytest.approx((106 + 106.5 + 107 + 107.5) / 4 * M)
 
 
 def test_annual_series_truncates_to_requested_years(fake_client):

@@ -10,6 +10,7 @@ alcanza, se deja en None en vez de inventar un numero (ver comps_loader.py).
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date, timedelta
 
 import yfinance as yf
 
@@ -48,6 +49,36 @@ def get_market_snapshot(ticker: str) -> MarketSnapshot:
         total_cash=info.get("totalCash"),
         beta=info.get("beta"),
     )
+
+
+def get_historical_close_prices(ticker: str, dates: list[str]) -> list[float | None]:
+    """Precio de cierre (no ajustado por dividendos -- 'Trailing Valuation'
+    calcula su propio Dividend Yield por separado, asi que mezclar un precio
+    ya ajustado lo dejaria contado dos veces) para cada fecha ISO en `dates`
+    (tipicamente cierres de ejercicio fiscal) -- usado para reconstruir
+    Market Cap/TEV historico real en 'Trailing Valuation', que antes de este
+    fix tenia precios de ADBE pegados a mano y nunca actualizados.
+
+    Toma el cierre del ULTIMO dia HABIL <= la fecha pedida (no inventa un
+    precio para un feriado/fin de semana -- el cierre de ejercicio de una
+    empresa casi nunca cae en dia habil exacto de bolsa). None si no hay
+    ningun precio disponible hasta ~2 semanas antes (empresa recien salida a
+    bolsa en esa fecha, o ticker sin ese historico en Yahoo)."""
+    if not dates:
+        return []
+    start = (date.fromisoformat(min(dates)) - timedelta(days=14)).isoformat()
+    end = (date.fromisoformat(max(dates)) + timedelta(days=3)).isoformat()
+    hist = yf.Ticker(ticker).history(start=start, end=end, auto_adjust=False)
+    if hist.empty:
+        return [None] * len(dates)
+
+    trading_days = [(ts.date(), float(close)) for ts, close in zip(hist.index, hist["Close"])]
+    results: list[float | None] = []
+    for iso_date in dates:
+        target = date.fromisoformat(iso_date)
+        on_or_before = [close for day, close in trading_days if day <= target]
+        results.append(on_or_before[-1] if on_or_before else None)
+    return results
 
 
 @dataclass(frozen=True)
