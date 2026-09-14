@@ -3,12 +3,18 @@
 yfinance (precio, comps) -> Motor de Supuestos v2 -> DCF (3 escenarios) ->
 Google Sheets.
 
-Uso:
+Uso minimo (risk-free rate y WACC se auto-derivan de datos de mercado reales
+-- Treasury 10y y CAPM+synthetic rating, ver mas abajo):
     python scripts/run_pipeline.py ADBE \
         --industry-us "Software (System & Application)" \
         --industry-global "Software (System & Application)" \
-        --peers INTU MSFT ORCL ADSK CRM SAP NOW \
-        --riskfree-rate 0.0462 --wacc 0.0938
+        --peers INTU MSFT ORCL ADSK CRM SAP NOW
+
+Lo unico que NO se auto-deriva (y no deberia, ver docstrings de
+comps_loader.py y assumptions_engine.py): la industria Damodaran (--industry-us/
+--industry-global, tiene que coincidir con un nombre exacto de
+reference/industry_averages_*.csv) y el set de peers (--peers). Pasa
+--riskfree-rate/--wacc para pisar el valor automatico.
 
 El sheet destino se toma de GOOGLE_SHEET_ID en .env, salvo --sheet-id.
 """
@@ -17,14 +23,16 @@ from __future__ import annotations
 import argparse
 import sys
 
+from jmr_valuation.io import reference_data as ref
 from jmr_valuation.io.comps_loader import load_comps_table
+from jmr_valuation.io.market_data import current_riskfree_rate
 from jmr_valuation.io.sec_edgar_loader import (
     load_annual_series_from_sec_edgar,
     load_company_inputs_from_sec_edgar,
 )
 from jmr_valuation.io.sheets_auth import get_gspread_client, open_target_sheet
 from jmr_valuation.io.sheets_writer import ScenarioOutput, write_full_valuation
-from jmr_valuation.io.yfinance_client import get_market_snapshot
+from jmr_valuation.io.yfinance_client import YFinanceError, get_market_snapshot
 from jmr_valuation.models.assumptions_engine import (
     SCENARIOS,
     FundamentalGrowthInputs,
@@ -33,6 +41,7 @@ from jmr_valuation.models.assumptions_engine import (
     run_assumptions_engine,
     terminal_assumptions,
 )
+from jmr_valuation.models.cost_of_capital import cost_of_debt_synthetic_rating, cost_of_equity, wacc as compute_wacc
 from jmr_valuation.models.dcf import equity_value_bridge, run_dcf
 from jmr_valuation.models.financials_multiples import HistoricalRatios, project_financials_multiples
 from jmr_valuation.models.relative import ScenarioMultipleInputs, project_target_prices
@@ -52,7 +61,7 @@ RELATIVE_METRICS = {
 
 def run(
     ticker: str, *, industry_us: str, industry_global: str, peer_tickers: list[str] | None,
-    riskfree_rate: float, wacc: float, tax_rate: float | None, sheet_id: str | None,
+    riskfree_rate: float | None, wacc: float | None, tax_rate: float | None, sheet_id: str | None,
 ) -> None:
     print(f"[1/5] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
     series = load_annual_series_from_sec_edgar(ticker)
@@ -63,14 +72,43 @@ def run(
     market = get_market_snapshot(ticker)
     print(f"      Precio actual: {market.current_price:,.2f}")
 
+    if riskfree_rate is None:
+        riskfree_rate = current_riskfree_rate()
+        print(f"      Risk-free rate (10y Treasury, auto): {riskfree_rate:.2%}")
+
     # Tasa impositiva efectiva y minority interests reales (no se inventan):
     # mismo loader que ya calcula esto desde IncomeTaxExpenseBenefit/pretax
-    # income de SEC EDGAR -- se reusa en vez de duplicar el parseo XBRL.
+    # income de SEC EDGAR -- se reusa en vez de duplicar el parseo XBRL. El
+    # placeholder de wacc aca abajo no se usa para nada mas que completar el
+    # dataclass -- el WACC real (auto o manual) se resuelve despues, porque
+    # el enfoque automatico necesita ebit_ltm/interest_expense_ltm que recien
+    # entrega este mismo loader (dependencia circular resuelta con un valor
+    # provisorio que nunca se lee).
     company_inputs = load_company_inputs_from_sec_edgar(
-        ticker, current_price=market.current_price, riskfree_rate=riskfree_rate, initial_cost_of_capital=wacc,
+        ticker, current_price=market.current_price, riskfree_rate=riskfree_rate,
+        initial_cost_of_capital=wacc if wacc is not None else riskfree_rate + 0.05,
     )
     effective_tax_rate = tax_rate if tax_rate is not None else company_inputs.effective_tax_rate
     minority_interests = company_inputs.minority_interests * 1_000_000  # esa funcion trabaja en millones
+
+    if wacc is None:
+        if market.beta is None:
+            raise YFinanceError(
+                f"yfinance no trae beta para {ticker!r} -- no se puede calcular el WACC "
+                "automaticamente. Pasa --wacc manualmente."
+            )
+        cost_of_debt = cost_of_debt_synthetic_rating(
+            ebit=company_inputs.ebit_ltm, interest_expense=company_inputs.interest_expense_ltm,
+            riskfree_rate=riskfree_rate,
+        )
+        coe = cost_of_equity(riskfree_rate, market.beta, ref.mature_market_erp())
+        debt_for_wacc = company_inputs.book_value_debt_ltm * 1_000_000  # a $ crudos, ver nota de unidades abajo
+        wacc = compute_wacc(
+            market_value_equity=market.market_cap, market_value_debt=debt_for_wacc,
+            cost_of_equity_=coe, cost_of_debt_pretax=cost_of_debt, tax_rate=effective_tax_rate,
+        ).wacc
+        print(f"      WACC (auto: CAPM + synthetic rating): {wacc:.2%} "
+              f"(beta={market.beta:.2f}, Ke={coe:.2%}, Kd={cost_of_debt:.2%})")
 
     # Crecimiento fundamental de Damodaran (g = Reinvestment Rate x ROIC),
     # usando los mismos numeros ya parseados de EDGAR -- ver assumptions_engine.
@@ -138,6 +176,7 @@ def run(
             terminal=terminal, initial_tax_rate=effective_tax_rate, marginal_tax_rate=0.25,
             tax_rate_converges_to_marginal=True, sales_to_capital_years_1_5=assumptions.sales_to_capital_1_5,
             sales_to_capital_years_6_10=assumptions.sales_to_capital_6_10, invested_capital_base=invested_capital_base,
+            growth_convergence_years=assumptions.weights.growth_convergence_years,
         )
         bridge = equity_value_bridge(
             dcf_result, book_value_debt=debt_ltm, minority_interests=minority_interests, cash=cash_ltm,
@@ -185,8 +224,11 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--industry-us", required=True)
     parser.add_argument("--industry-global", required=True)
     parser.add_argument("--peers", nargs="*", default=None)
-    parser.add_argument("--riskfree-rate", type=float, required=True)
-    parser.add_argument("--wacc", type=float, required=True)
+    parser.add_argument("--riskfree-rate", type=float, default=None,
+                         help="Si se omite, se toma el rendimiento actual del Treasury 10y (yfinance ^TNX).")
+    parser.add_argument("--wacc", type=float, default=None,
+                         help="Si se omite, se calcula via CAPM (beta de yfinance) + costo de deuda por "
+                              "synthetic rating -- ver models/cost_of_capital.py.")
     parser.add_argument("--tax-rate", type=float, default=None)
     parser.add_argument("--sheet-id", default=None)
     args = parser.parse_args(argv)

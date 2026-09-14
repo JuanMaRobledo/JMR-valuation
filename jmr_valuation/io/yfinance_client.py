@@ -27,6 +27,7 @@ class MarketSnapshot:
     enterprise_value: float | None
     total_debt: float | None
     total_cash: float | None
+    beta: float | None = None   # beta apalancado (regresion de Yahoo contra el mercado) -- para WACC automatico
 
 
 def get_market_snapshot(ticker: str) -> MarketSnapshot:
@@ -45,6 +46,7 @@ def get_market_snapshot(ticker: str) -> MarketSnapshot:
         enterprise_value=info.get("enterpriseValue"),
         total_debt=info.get("totalDebt"),
         total_cash=info.get("totalCash"),
+        beta=info.get("beta"),
     )
 
 

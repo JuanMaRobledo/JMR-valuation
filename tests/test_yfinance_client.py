@@ -18,11 +18,13 @@ def test_get_market_snapshot_reads_price_and_market_cap(monkeypatch):
     fake = _FakeTicker({
         "currentPrice": 263.5, "marketCap": 104_741_249_024, "sharesOutstanding": 397_500_000,
         "enterpriseValue": 100_360_921_088, "totalDebt": 7_077_000_192, "totalCash": 5_625_999_872,
+        "beta": 1.417,
     })
     monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
 
     snap = get_market_snapshot("ADBE")
     assert snap.ticker == "ADBE"
+    assert snap.beta == pytest.approx(1.417)
     assert snap.current_price == pytest.approx(263.5)
     assert snap.market_cap == pytest.approx(104_741_249_024)
     assert snap.shares_outstanding == pytest.approx(397_500_000)

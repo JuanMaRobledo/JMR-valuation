@@ -363,20 +363,16 @@ def run_assumptions_engine(
 
 
 def growth_and_margin_path(result: AssumptionsEngineResult) -> GrowthAndMarginPath:
-    """Arma el input que espera `dcf.run_dcf` (Año1 = growth_year1, Años2-5
-    tambien = growth_year1 -- 'Motor de Supuestos v2' no distingue Año1 de 2-5
-    como si hace 'Valuation output' original, converge directo desde Año1
-    hacia el crecimiento estable).
-
-    Simplificacion consciente: el Excel converge linealmente desde Año1 hacia
-    el crecimiento estable durante exactamente `weights.growth_convergence_years`
-    (5/7/10 segun escenario). `dcf.run_dcf` (reusado tal cual, sin tocar, por
-    ser el motor ya validado de 'Valuation output') tiene ese numero fijo en 5
-    y siempre a partir del año 6 -- coincide exacto para Conservador (5 años) y
-    difiere unos años para Base/Optimista (7/10). `weights.growth_convergence_years`
-    igual se expone en `AssumptionsEngineResult` para mostrarlo en la hoja de
-    supuestos, aunque no mueva el DCF -- si hace falta la convergencia exacta,
-    es el proximo paso natural (parametrizar `run_dcf`)."""
+    """Arma el input que espera `dcf.run_dcf`. `years_2_to_5_growth` queda
+    igual a `year1_growth` -- es el valor que usaria `run_dcf` con
+    `growth_convergence_years=None` (motor original), pero esta funcion se usa
+    siempre junto con `run_dcf(..., growth_convergence_years=result.weights.growth_convergence_years)`
+    (ver `run_pipeline.py`), que ignora `years_2_to_5_growth` y en cambio
+    converge linealmente desde `year1_growth` hacia el crecimiento estable a
+    lo largo de esos N años -- la curva continua de 'Motor de Supuestos v2',
+    con el N propio de cada escenario (Conservador converge rapido en 5 años,
+    Optimista se toma 10 -- la historia que cuenta cada escenario, no un
+    ajuste cosmetico)."""
     return GrowthAndMarginPath(
         year1_growth=result.growth.growth_year1,
         years_2_to_5_growth=result.growth.growth_year1,
