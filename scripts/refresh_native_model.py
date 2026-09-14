@@ -115,6 +115,18 @@ def refresh_input_sheet(sh, ticker: str, company_inputs, industry_us: str, indus
     ])
 
 
+def refresh_resumen_valoracion(sh, market) -> None:
+    """'Resumen de Valoración'!C25 ('Precio al Día del Análisis') es un VALOR
+    ESTATICO a proposito, no una formula -- 'Precio de Hoy' (B24) ya esta
+    siempre vivo via GOOGLEFINANCE ('Input sheet'!D1), asi que si esta celda
+    tambien fuera una formula ambas mostrarian siempre el mismo numero. Al
+    quedar congelada con el precio de mercado del momento exacto en que se
+    corre este script, el usuario puede volver dias despues y comparar el
+    precio de HOY contra el que habia cuando se hizo el analisis."""
+    ws = sh.worksheet("Resumen de Valoración")
+    _apply(ws, [("C25", [[round(market.current_price, 2)]])])
+
+
 def refresh_income_statement(sh, series, company_inputs) -> None:
     """OJO: 'Operating Margin' (fila 13) y 'EBITDA' (fila 28) de esta hoja NO
     son formulas -- son valores pegados de cuando se cargo ADBE. Si no se
@@ -501,22 +513,25 @@ def run(
     client = get_gspread_client()
     sh = open_target_sheet(client, sheet_id)
 
-    print(f"[2/6] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
+    print(f"[2/7] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
     refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
 
-    print("[3/6] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
+    print("[3/7] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
     refresh_cash_flow_statement(sh, series)
     refresh_balance_sheet(sh, series, company_inputs)
 
-    print("[4/6] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
+    print("[4/7] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
     computed = refresh_trailing_valuation(sh, series, company_inputs)
     refresh_forward_valuation(sh, series, computed)
 
-    print(f"[5/6] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
+    print(f"[5/7] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print(f"[6/6] Listo: {sh.url}")
+    print("[6/7] Congelando precio del día del análisis en 'Resumen de Valoración'...")
+    refresh_resumen_valoracion(sh, market)
+
+    print(f"[7/7] Listo: {sh.url}")
 
 
 def main(argv: list[str]) -> int:
