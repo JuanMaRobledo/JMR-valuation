@@ -14,10 +14,16 @@ from jmr_valuation.io.sec_edgar_loader import AnnualSeries
 from jmr_valuation.io.yfinance_client import MarketSnapshot
 from jmr_valuation.models.assumptions_engine import AssumptionsEngineResult
 from jmr_valuation.models.dcf import DcfResult, EquityBridgeResult
+from jmr_valuation.models.relative import RelativeValuationResult
 
 _TAB_DATOS = "Datos"
 _TAB_SUPUESTOS = "Supuestos"
+_TAB_MULTIPLOS = "Multiplos"
 _TAB_RESUMEN = "Resumen"
+
+# Orden de presentacion de los 5 metodos de valoracion relativa (mismos 5 que
+# las hojas EV/FCFF, P/OCF, P/E, P/FCFE, EV/EBITDA del Excel original).
+RELATIVE_METRIC_ORDER = ("EV/FCFF", "P/OCF", "P/E", "P/FCFE", "EV/EBITDA")
 
 
 @dataclass(frozen=True)
@@ -26,6 +32,7 @@ class ScenarioOutput:
     assumptions: AssumptionsEngineResult
     dcf: DcfResult
     bridge: EquityBridgeResult
+    relative: dict[str, RelativeValuationResult] | None = None  # metrica -> resultado (None si no hay comps)
 
 
 def _get_or_create_worksheet(sh: gspread.Spreadsheet, title: str, rows: int = 200, cols: int = 20) -> gspread.Worksheet:
@@ -136,21 +143,74 @@ def write_supuestos_tab(
     ws.update(values=rows, range_name="A1")
 
 
+def write_multiplos_tab(
+    sh: gspread.Spreadsheet, ticker: str, company_name: str, scenarios: list[ScenarioOutput],
+) -> None:
+    """Valoracion relativa por multiplos de comparables (equivalente a las 5
+    hojas EV/FCFF, P/OCF, P/E, P/FCFE, EV/EBITDA del Excel): el multiplo ancla
+    es la MEDIANA de los peers (no el propio historico de la empresa, que no
+    tenemos con precios historicos reales) x el ajuste +/-10% por escenario
+    que ya trae `models.relative` (Conservador=0.9x, Base=1.0x, Optimista=1.1x
+    la mediana). Se omite si no se paso una lista de peers al pipeline."""
+    ws = _get_or_create_worksheet(sh, _TAB_MULTIPLOS)
+    if not any(s.relative for s in scenarios):
+        ws.update(values=[
+            [f"Valoración relativa por múltiplos -- {company_name} ({ticker})"],
+            ["Sin datos: no se paso una lista de peers al pipeline (--peers)."],
+        ], range_name="A1")
+        return
+
+    rows: list[list] = [
+        [f"Valoración relativa por múltiplos -- {company_name} ({ticker})"],
+        ["Múltiplo ancla = mediana de los peers, ajustado +/-10% por escenario. "
+         "Precio objetivo FY+3 (mismo horizonte que el resto del pipeline)."],
+        [],
+    ]
+    for metric in RELATIVE_METRIC_ORDER:
+        if not scenarios[0].relative or metric not in scenarios[0].relative:
+            continue
+        rows.append([metric])
+        rows.append(["Escenario", "Múltiplo ancla (peers, x escenario)", "Métrica FY+3", "Precio objetivo FY+3", "Retorno total FY+3"])
+        for s in scenarios:
+            result = s.relative[metric]
+            fy3 = result.years[-1]
+            rows.append([
+                s.scenario, _num(result.multiple_fy1), _num(fy3.metric), _num(fy3.total_target_price), _pct(fy3.total_return),
+            ])
+        rows.append([])
+
+    ws.update(values=rows, range_name="A1")
+
+
+def _average_relative_price(scenario: ScenarioOutput) -> float | None:
+    if not scenario.relative:
+        return None
+    fy3_prices = [result.years[-1].total_target_price for result in scenario.relative.values()]
+    return sum(fy3_prices) / len(fy3_prices) if fy3_prices else None
+
+
 def write_resumen_tab(
     sh: gspread.Spreadsheet, ticker: str, company_name: str, current_price: float, scenarios: list[ScenarioOutput],
 ) -> None:
     ws = _get_or_create_worksheet(sh, _TAB_RESUMEN)
+    has_relative = any(s.relative for s in scenarios)
+    header = ["Escenario", "Valor/acción (DCF)", "Upside DCF"]
+    if has_relative:
+        header += ["Precio objetivo (múltiplos, prom. 5 métodos)", "Upside múltiplos"]
     rows: list[list] = [
         [f"Resumen de Valoración -- {company_name} ({ticker})"],
         ["Precio actual (mercado)", _num(current_price)],
         [],
-        ["Escenario", "Valor por acción", "Precio / Valor", "Upside / (Downside)"],
+        header,
     ]
     for s in scenarios:
-        upside = (s.bridge.value_per_share / current_price - 1) if current_price else None
-        rows.append([
-            s.scenario, _num(s.bridge.value_per_share), _pct(s.bridge.price_as_pct_of_value), _pct(upside),
-        ])
+        upside_dcf = (s.bridge.value_per_share / current_price - 1) if current_price else None
+        row = [s.scenario, _num(s.bridge.value_per_share), _pct(upside_dcf)]
+        if has_relative:
+            avg_relative = _average_relative_price(s)
+            upside_relative = (avg_relative / current_price - 1) if (avg_relative and current_price) else None
+            row += [_num(avg_relative), _pct(upside_relative)]
+        rows.append(row)
     ws.update(values=rows, range_name="A1")
 
 
@@ -160,4 +220,5 @@ def write_full_valuation(
 ) -> None:
     write_datos_tab(sh, series, comps)
     write_supuestos_tab(sh, ticker, company_name, scenarios)
+    write_multiplos_tab(sh, ticker, company_name, scenarios)
     write_resumen_tab(sh, ticker, company_name, current_price, scenarios)

@@ -34,6 +34,20 @@ from jmr_valuation.models.assumptions_engine import (
     terminal_assumptions,
 )
 from jmr_valuation.models.dcf import equity_value_bridge, run_dcf
+from jmr_valuation.models.financials_multiples import HistoricalRatios, project_financials_multiples
+from jmr_valuation.models.relative import ScenarioMultipleInputs, project_target_prices
+
+# metrica -> (atributo de MultiplesYear a usar, campo de PeerMultiples/CompsTable
+# con el multiplo ancla). Mismos 5 metodos que las hojas EV/FCFF, P/OCF, P/E,
+# P/FCFE, EV/EBITDA del Excel original -- el ancla ahora es la mediana de los
+# PEERS (no el propio historico de precios de la empresa, que no tenemos).
+RELATIVE_METRICS = {
+    "EV/FCFF": ("fcff", "ev_fcf"),
+    "P/OCF": ("ocf", "p_ocf"),
+    "P/E": ("net_income", "pe"),
+    "P/FCFE": ("fcfe", "p_fcf"),
+    "EV/EBITDA": ("ebitda", "ev_ebitda"),
+}
 
 
 def run(
@@ -97,6 +111,18 @@ def run(
     # como semilla de ROIC año 1, que es menos sensible que el resto de los supuestos.
     invested_capital_base = debt_ltm + market.market_cap - cash_ltm
 
+    # Ratios historicos reales para proyectar FCFF/OCF/FCFE/EBITDA (mismo
+    # loader que ya parseo esto de EDGAR -- ver load_company_inputs_from_sec_edgar).
+    historical_ratios = HistoricalRatios(
+        interest_pct_of_ebit=company_inputs.hist_interest_pct_of_ebit,
+        da_pct_of_revenue=company_inputs.hist_da_pct_of_revenue,
+        capex_pct_of_revenue=company_inputs.hist_capex_pct_of_revenue,
+        nwc_change_pct_of_revenue_growth=company_inputs.hist_nwc_pct_of_revenue_growth,
+        net_borrowing_pct_of_revenue=company_inputs.hist_net_borrowing_pct_of_revenue,
+        shares_growth_rate=company_inputs.hist_shares_growth_rate,
+        dividend_growth_rate=company_inputs.hist_dividend_growth_rate,
+    )
+
     scenarios: list[ScenarioOutput] = []
     for scenario in SCENARIOS:
         assumptions = run_assumptions_engine(
@@ -117,8 +143,31 @@ def run(
             dcf_result, book_value_debt=debt_ltm, minority_interests=minority_interests, cash=cash_ltm,
             non_operating_assets=0.0, shares_outstanding=market.shares_outstanding, current_price=market.current_price,
         )
-        scenarios.append(ScenarioOutput(scenario=scenario, assumptions=assumptions, dcf=dcf_result, bridge=bridge))
-        print(f"      {scenario:<12} valor/accion = {bridge.value_per_share:>10,.2f}")
+
+        relative = None
+        if comps is not None:
+            fm_years = project_financials_multiples(
+                base_year_revenue=series.revenue[-1], base_year_shares_diluted=market.shares_outstanding,
+                base_year_dividend_per_share=company_inputs.dividend_per_share_ltm,
+                year_projections=dcf_result.years[:3], ratios=historical_ratios,
+            )
+            relative = {}
+            for metric_name, (attr, comps_field) in RELATIVE_METRICS.items():
+                anchor = comps.median.get(comps_field)
+                if anchor is None:
+                    continue  # peers no traen este multiplo (yfinance no lo devolvio) -- no se inventa
+                scenario_inputs = ScenarioMultipleInputs(
+                    scenario=scenario, historical_median_multiple=anchor,
+                    metric_fy1=getattr(fm_years[0], attr), metric_fy2=getattr(fm_years[1], attr),
+                    metric_fy3=getattr(fm_years[2], attr), shares_or_ev_divisor=market.shares_outstanding,
+                    cumulative_dividends_fy1=fm_years[0].cumulative_dividends_per_share,
+                    cumulative_dividends_fy2=fm_years[1].cumulative_dividends_per_share,
+                    cumulative_dividends_fy3=fm_years[2].cumulative_dividends_per_share,
+                )
+                relative[metric_name] = project_target_prices(metric_name, market.current_price, scenario_inputs)
+
+        scenarios.append(ScenarioOutput(scenario=scenario, assumptions=assumptions, dcf=dcf_result, bridge=bridge, relative=relative))
+        print(f"      {scenario:<12} valor/accion (DCF) = {bridge.value_per_share:>10,.2f}")
 
     print("[5/5] Escribiendo a Google Sheets...")
     client = get_gspread_client()
