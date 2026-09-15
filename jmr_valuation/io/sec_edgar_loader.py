@@ -146,6 +146,17 @@ _TAGS: dict[str, list[str]] = {
              "CommonStockIncludingAdditionalPaidInCapital", "CommonStocksIncludingAdditionalPaidInCapital"],
     "retained_earnings": ["RetainedEarningsAccumulatedDeficit"],
     "aoci": ["AccumulatedOtherComprehensiveIncomeLossNetOfTax"],
+    # --- Tercera tanda: conceptos que MSFT (y otras empresas grandes) SI
+    # taggean, pero con nombres que no habiamos probado todavia. ---
+    "short_term_investments": ["ShortTermInvestments"],
+    "intangibles_net": ["FiniteLivedIntangibleAssetsNet", "IntangibleAssetsNetExcludingGoodwill"],
+    "long_term_investments": ["LongTermInvestments"],
+    "lease_liability_noncurrent": ["OperatingLeaseLiabilityNoncurrent", "FinanceLeaseLiabilityNoncurrent"],
+    "unearned_revenue_current": ["ContractWithCustomerLiabilityCurrent", "DeferredRevenueCurrent"],
+    "interest_investment_income": ["InvestmentIncomeInterestAndDividend", "InvestmentIncomeInterest",
+                                    "InvestmentIncomeNet"],
+    "business_acquisitions": ["PaymentsToAcquireBusinessesNetOfCashAcquired"],
+    "stock_issuance": ["ProceedsFromIssuanceOfCommonStock"],
 }
 
 
@@ -675,6 +686,20 @@ class AnnualSeries:
     ltm_financing_cash_flow: float = 0.0
     interest_expense: list[float] = field(default_factory=list)  # historico completo -- company_inputs solo trae LTM/prior_10k
     ltm_interest_expense: float = 0.0
+    # --- Tercera tanda (ver _TAGS) ---
+    short_term_investments: list[float] = field(default_factory=list)
+    intangibles_net: list[float] = field(default_factory=list)
+    long_term_investments: list[float] = field(default_factory=list)
+    lease_liability_noncurrent: list[float] = field(default_factory=list)
+    unearned_revenue_current: list[float] = field(default_factory=list)
+    basic_shares_avg: list[float] = field(default_factory=list)  # promedio ponderado BASICO como serie propia (no solo fallback de diluido)
+    interest_investment_income: list[float] = field(default_factory=list)
+    business_acquisitions: list[float] = field(default_factory=list)
+    stock_issuance: list[float] = field(default_factory=list)
+    ltm_basic_shares_avg: float = 0.0
+    ltm_interest_investment_income: float = 0.0
+    ltm_business_acquisitions: float = 0.0
+    ltm_stock_issuance: float = 0.0
 
 
 def load_annual_series_from_sec_edgar(
@@ -788,6 +813,24 @@ def load_annual_series_from_sec_edgar(
     interest_by_end = {r["end"]: r["val"] for r in _annual_rows(interest_rows)}
     ltm_interest_expense = _ltm_value(interest_rows) or interest_by_end.get(ends[-1], 0.0)
 
+    # --- Tercera tanda (ver _TAGS) ---
+    sti_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("short_term_investments"))}
+    intangibles_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("intangibles_net"))}
+    lti_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("long_term_investments"))}
+    lease_nc_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("lease_liability_noncurrent"))}
+    unearned_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("unearned_revenue_current"))}
+
+    ii_rows = rows("interest_investment_income")
+    acq_rows = rows("business_acquisitions")
+    issuance_rows = rows("stock_issuance")
+    ii_by_end = {r["end"]: r["val"] for r in _annual_rows(ii_rows)}
+    acq_by_end = {r["end"]: r["val"] for r in _annual_rows(acq_rows)}
+    issuance_by_end = {r["end"]: r["val"] for r in _annual_rows(issuance_rows)}
+    ltm_interest_investment_income = _ltm_value(ii_rows) or ii_by_end.get(ends[-1], 0.0)
+    ltm_business_acquisitions = _ltm_value(acq_rows) or acq_by_end.get(ends[-1], 0.0)
+    ltm_stock_issuance = _ltm_value(issuance_rows) or issuance_by_end.get(ends[-1], 0.0)
+    ltm_basic_shares_avg = _ltm_average_value(basic_rows) or basic_by_end.get(ends[-1], 0.0)
+
     ltm_rd = _ltm_value(rd_rows) or rd_by_end.get(ends[-1], 0.0)
     ltm_sga = _ltm_value(sga_rows) or sga_by_end.get(ends[-1], 0.0)
     ltm_pretax_income = _ltm_value(pretax_rows) or pretax_by_end.get(ends[-1], 0.0)
@@ -851,4 +894,17 @@ def load_annual_series_from_sec_edgar(
         ltm_financing_cash_flow=ltm_financing_cash_flow,
         interest_expense=_series_at(interest_by_end),
         ltm_interest_expense=ltm_interest_expense,
+        short_term_investments=_series_at(sti_by_end),
+        intangibles_net=_series_at(intangibles_by_end),
+        long_term_investments=_series_at(lti_by_end),
+        lease_liability_noncurrent=_series_at(lease_nc_by_end),
+        unearned_revenue_current=_series_at(unearned_by_end),
+        basic_shares_avg=_series_at(basic_by_end),
+        interest_investment_income=_series_at(ii_by_end),
+        business_acquisitions=_series_at(acq_by_end),
+        stock_issuance=_series_at(issuance_by_end),
+        ltm_basic_shares_avg=ltm_basic_shares_avg,
+        ltm_interest_investment_income=ltm_interest_investment_income,
+        ltm_business_acquisitions=ltm_business_acquisitions,
+        ltm_stock_issuance=ltm_stock_issuance,
     )
