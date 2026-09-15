@@ -72,8 +72,12 @@ def _apply(ws, updates: list[tuple[str, list]]) -> None:
     """Aplica todas las escrituras de una hoja en UNA sola llamada a la API
     (ver docstring del modulo -- fila por fila se pegaba contra el limite de
     'Write requests per minute' con las ~35 filas nuevas de Trailing/Forward
-    Valuation)."""
-    ws.batch_update([{"range": r, "values": v} for r, v in updates])
+    Valuation). USER_ENTERED (no RAW, el default de gspread) porque desde
+    que 'Trailing Valuation'/'Eficiencia de capital' pasaron a formulas
+    (ver refresh_eficiencia_capital), con RAW quedaban como TEXTO literal
+    ("=IFERROR(...)") en vez de evaluarse -- para los valores numericos que
+    escribe el resto de este script no cambia nada."""
+    ws.batch_update([{"range": r, "values": v} for r, v in updates], value_input_option="USER_ENTERED")
 
 
 def _history_row(values_raw: list[float], ltm_raw: float, *, scale: float = _M, decimals: int = 1) -> list[float]:
@@ -606,6 +610,101 @@ class _TrailingComputed:
     ltm_fcf: float
 
 
+_COLS = ("B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L")
+
+
+def _iferror_formula_row(template: str, *, cols: tuple[str, ...] = _COLS,
+                          prev_cols: tuple[str, ...] | None = None) -> list[str]:
+    """Arma una fila B:L de formulas '=IFERROR(<template con {c}/{p}>;"")' --
+    el IFERROR es para que la plantilla EN BLANCO (sin ticker todavia)
+    muestre celdas vacias en vez de #DIV/0! (denominadores en 0), sin
+    afectar el valor real una vez cargado un ticker. `prev_cols`, si se
+    pasa, deja en blanco la primera columna (no hay año anterior con el que
+    promediar) y usa {p} para la columna anterior en el resto."""
+    if prev_cols is not None:
+        out = [""]
+        for c, p in zip(cols[1:], prev_cols[:-1]):
+            out.append(f'=IFERROR({template.format(c=c, p=p)[1:]};"")')
+        return out
+    return [f'=IFERROR({template.format(c=c)[1:]};"")' for c in cols]
+
+
+# 'Trailing Valuation' filas 4-24 (todo excepto Stock Price, fila 3, que es
+# el unico dato genuinamente externo -- precio de cierre real, yfinance) --
+# formulas en vez de valores pegados: TODO lo que alimentan (Income
+# Statement/Balance Sheet/Cash Flow Statement) ya vive en el propio libro,
+# asi que una formula se auto-actualiza si esas hojas cambian y es
+# auditable (clic en la celda, se ve de donde sale el numero) en vez de una
+# caja negra de Python. De paso permite llenar P/B (fila 18), antes en
+# blanco por no tener Book Value historico completo -- ahora si lo hay
+# (Balance Sheet fila 35).
+_TRAILING_VALUATION_ROWS: dict[int, str] = {
+    4: "='Income Statement'!{c}27",
+    5: "={c}3*{c}4",
+    6: "={c}5+('Balance Sheet'!{c}20+'Balance Sheet'!{c}21+'Balance Sheet'!{c}25+'Balance Sheet'!{c}26)-'Balance Sheet'!{c}5",
+    7: "=-'Cash Flow Statement'!{c}32/{c}5",
+    8: "=-'Cash Flow Statement'!{c}30/{c}5",
+    9: "=-'Cash Flow Statement'!{c}28/{c}5",
+    10: "={c}7+{c}8+{c}9",
+    11: "={c}5/'Income Statement'!{c}3",
+    12: "={c}5/'Income Statement'!{c}6",
+    13: "={c}3/'Income Statement'!{c}24",
+    14: "='Income Statement'!{c}22/{c}5",
+    15: "={c}5/'Cash Flow Statement'!{c}13",
+    16: "={c}5/'Cash Flow Statement'!{c}36",
+    17: "='Cash Flow Statement'!{c}36/{c}5",
+    18: "={c}5/'Balance Sheet'!{c}35",
+    19: "={c}6/'Income Statement'!{c}3",
+    20: "={c}6/'Income Statement'!{c}6",
+    21: "={c}6/'Income Statement'!{c}28",
+    22: "={c}6/'Income Statement'!{c}12",
+    23: "={c}6/'Cash Flow Statement'!{c}13",
+    24: "={c}6/'Cash Flow Statement'!{c}36",
+}
+
+# 'Eficiencia de capital' -- ninguna fila tenia formula (ni siquiera un
+# refresh_* propio: quedaba con los valores pegados de ADBE originales).
+# Las filas de retorno/rotacion usan balance PROMEDIO (inicio+fin de
+# ejercicio, practica estandar) -- por eso la primera columna del historico
+# (sin año anterior en la ventana de 10) queda en blanco.
+_EFICIENCIA_AVG_ROWS: dict[int, str] = {
+    3: "='Cash Flow Statement'!{c}37/((('Balance Sheet'!{c}20+'Balance Sheet'!{c}21+'Balance Sheet'!{c}25+'Balance Sheet'!{c}26+'Balance Sheet'!{c}35-'Balance Sheet'!{c}5)+('Balance Sheet'!{p}20+'Balance Sheet'!{p}21+'Balance Sheet'!{p}25+'Balance Sheet'!{p}26+'Balance Sheet'!{p}35-'Balance Sheet'!{p}5))/2)",
+    4: "='Income Statement'!{c}22/(('Balance Sheet'!{c}16+'Balance Sheet'!{p}16)/2)",
+    5: "='Income Statement'!{c}22/(('Balance Sheet'!{c}35+'Balance Sheet'!{p}35)/2)",
+    6: "='Cash Flow Statement'!{c}37/((('Balance Sheet'!{c}20+'Balance Sheet'!{c}21+'Balance Sheet'!{c}25+'Balance Sheet'!{c}26+'Balance Sheet'!{c}35)+('Balance Sheet'!{p}20+'Balance Sheet'!{p}21+'Balance Sheet'!{p}25+'Balance Sheet'!{p}26+'Balance Sheet'!{p}35))/2)",
+    7: "='Income Statement'!{c}12/((('Balance Sheet'!{c}16-'Balance Sheet'!{c}24)+('Balance Sheet'!{p}16-'Balance Sheet'!{p}24))/2)",
+    8: "='Income Statement'!{c}22/((('Balance Sheet'!{c}16-'Balance Sheet'!{c}13-'Balance Sheet'!{c}12)+('Balance Sheet'!{p}16-'Balance Sheet'!{p}13-'Balance Sheet'!{p}12))/2)",
+    9: "='Income Statement'!{c}3/(('Balance Sheet'!{c}8+'Balance Sheet'!{p}8)/2)",
+    11: "='Income Statement'!{c}5/(('Balance Sheet'!{c}18+'Balance Sheet'!{p}18)/2)",
+    16: "='Income Statement'!{c}3/(('Balance Sheet'!{c}16+'Balance Sheet'!{p}16)/2)",
+    17: "='Income Statement'!{c}3/(('Balance Sheet'!{c}11+'Balance Sheet'!{p}11)/2)",
+}
+# Derivadas de las filas de arriba (heredan su columna B en blanco). Filas
+# 13-14 (Inventory Turnover/Days Inventory Outstanding) quedan sin formula:
+# esta plantilla no tiene fila de Inventario (Damodaran no la incluye en el
+# Ginzu generico) -- no hay celda de la que derivarlas, no se inventa una.
+_EFICIENCIA_DERIVED_ROWS: dict[int, str] = {
+    10: "=365/{c}9",
+    12: "=365/{c}11",
+    15: "={c}10-{c}12",
+    18: "={c}10",
+}
+# Flujo/flujo del mismo año -- no necesitan balance promedio, se llenan
+# completas (incluida la primera columna).
+_EFICIENCIA_FLOW_ROWS: dict[int, str] = {
+    19: "=-'Cash Flow Statement'!{c}15/'Cash Flow Statement'!{c}13",
+    20: "=-'Cash Flow Statement'!{c}15/'Income Statement'!{c}3",
+    21: "=-'Cash Flow Statement'!{c}15/'Cash Flow Statement'!{c}4",
+}
+_EFICIENCIA_PCT_FORMAT = {"numberFormat": {"type": "PERCENT", "pattern": "0.00%"}}
+_EFICIENCIA_RATIO_FORMAT = {"numberFormat": {"type": "NUMBER", "pattern": '0.00"x"'}}
+_EFICIENCIA_DAYS_FORMAT = {"numberFormat": {"type": "NUMBER", "pattern": "0.0"}}
+_TRAILING_PCT_ROWS = ("B7:L10", "B14:L14", "B17:L17")
+_TRAILING_MULTIPLE_FORMAT = {"numberFormat": {"type": "NUMBER", "pattern": '0.00"x"'}}
+_TRAILING_MULTIPLE_ROWS = ("B11:L13", "B15:L16", "B18:L24")
+_TRAILING_THOUSANDS_FORMAT = {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.00"}}
+
+
 def refresh_trailing_valuation(sh, series, company_inputs) -> _TrailingComputed:
     """'Trailing Valuation' (y 'Forward Valuation', ver refresh_forward_valuation)
     eran tablas ENTERAMENTE de valores pegados a mano de ADBE -- precio
@@ -623,13 +722,15 @@ def refresh_trailing_valuation(sh, series, company_inputs) -> _TrailingComputed:
     -19% a -37% en las 5 hojas, enteramente por precio/acciones/EV de ADBE
     de hace años en vez de MSFT actual.
 
-    Se recalculan TODOS los multiplos en Python (no formulas -- la hoja ya
-    era de valores pegados, este fix mantiene esa misma convencion) a partir
-    de: precio de cierre real en cada fin de ejercicio fiscal (nuevo,
-    yfinance .history()), acciones/deuda/caja/ingresos/EBIT ya refrescados
-    (SEC EDGAR), y Net Income/OCF/CapEx/Buybacks/Dividendos/COGS (nuevos
-    campos de AnnualSeries). Book Value historico (para P/B, fila 18) NO
-    esta disponible como serie completa -- esa fila queda sin tocar."""
+    Filas 4-24 ahora son FORMULAS (ver _TRAILING_VALUATION_ROWS) en vez de
+    valores pegados -- todo lo que alimentan ya vive en Income
+    Statement/Balance Sheet/Cash Flow Statement, asi que se auto-actualizan
+    solas. Solo fila 3 (Stock Price) sigue siendo un valor real pegado:
+    precio de cierre historico (yfinance .history()), el unico dato de esta
+    tabla que es genuinamente externo al libro. Este metodo sigue calculando
+    mktcap/tev/fcf/ebitda en Python (no solo el precio) porque
+    'Forward Valuation' (ver refresh_forward_valuation) los reusa para sus
+    propios multiplos con desfase de un año, que si necesitan Python."""
     ws = sh.worksheet("Trailing Valuation")
 
     prices = get_historical_close_prices(series.ticker, series.fiscal_year_ends)
@@ -654,86 +755,49 @@ def refresh_trailing_valuation(sh, series, company_inputs) -> _TrailingComputed:
     fcf = [ocf - cpx for ocf, cpx in zip(series.operating_cash_flow, series.capex)]
     ltm_fcf = series.ltm_operating_cash_flow - series.ltm_capex
 
-    updates: list[tuple[str, list]] = [
-        ("B3", [_ratio_row(prices, ltm_price)]),
-        ("B4", [_ratio_row(shares, ltm_shares, scale=_M, decimals=1)]),
-        ("B5", [_ratio_row(mktcap, ltm_mktcap, scale=_M, decimals=1)]),
-        ("B6", [_ratio_row(tev, ltm_tev, scale=_M, decimals=1)]),
-    ]
-
-    dividend_yield = [_safe_div(d, mc) for d, mc in zip(series.dividends_paid, mktcap)]
-    ltm_dividend_yield = _safe_div(series.ltm_dividends_paid, ltm_mktcap)
-    updates.append(("B7", [_ratio_row(dividend_yield, ltm_dividend_yield, decimals=4)]))
-
-    buyback_yield = [_safe_div(b, mc) for b, mc in zip(series.buybacks, mktcap)]
-    ltm_buyback_yield = _safe_div(series.ltm_buybacks, ltm_mktcap)
-    updates.append(("B8", [_ratio_row(buyback_yield, ltm_buyback_yield, decimals=4)]))
-
-    debt_paydown_yield: list[float | None] = [None]
-    for i in range(1, len(debt)):
-        debt_paydown_yield.append(_safe_div(debt[i - 1] - debt[i], mktcap[i]))
-    ltm_debt_paydown_yield = _safe_div(debt[-1] - ltm_debt, ltm_mktcap) if debt else None
-    updates.append(("B9", [_ratio_row(debt_paydown_yield, ltm_debt_paydown_yield, decimals=4)]))
-
-    def _sum_optional(*vals: float | None) -> float | None:
-        present = [v for v in vals if v is not None]
-        return sum(present) if present else None
-
-    shareholder_yield = [_sum_optional(dy, by, dp) for dy, by, dp in zip(dividend_yield, buyback_yield, debt_paydown_yield)]
-    ltm_shareholder_yield = _sum_optional(ltm_dividend_yield, ltm_buyback_yield, ltm_debt_paydown_yield)
-    updates.append(("B10", [_ratio_row(shareholder_yield, ltm_shareholder_yield, decimals=4)]))
-
-    updates.append(("B11", [_ratio_row(
-        [_safe_div(mc, r) for mc, r in zip(mktcap, series.revenue)], _safe_div(ltm_mktcap, series.ltm_revenue),
-    )]))
-    updates.append(("B12", [_ratio_row(
-        [_safe_div(mc, g) for mc, g in zip(mktcap, gross_profit)], _safe_div(ltm_mktcap, ltm_gross_profit),
-    )]))
-    updates.append(("B13", [_ratio_row(
-        [_safe_div(mc, ni) for mc, ni in zip(mktcap, series.net_income)], _safe_div(ltm_mktcap, series.ltm_net_income),
-    )]))
-    updates.append(("B14", [_ratio_row(
-        [_safe_div(ni, mc) for ni, mc in zip(series.net_income, mktcap)],
-        _safe_div(series.ltm_net_income, ltm_mktcap), decimals=4,
-    )]))
-    updates.append(("B15", [_ratio_row(
-        [_safe_div(mc, o) for mc, o in zip(mktcap, series.operating_cash_flow)],
-        _safe_div(ltm_mktcap, series.ltm_operating_cash_flow),
-    )]))
-    updates.append(("B16", [_ratio_row(
-        [_safe_div(mc, f) for mc, f in zip(mktcap, fcf)], _safe_div(ltm_mktcap, ltm_fcf),
-    )]))
-    updates.append(("B17", [_ratio_row(
-        [_safe_div(f, mc) for f, mc in zip(fcf, mktcap)], _safe_div(ltm_fcf, ltm_mktcap), decimals=4,
-    )]))
-    # B18 (P/B) queda sin tocar -- no hay serie de Book Value historico completa en AnnualSeries.
-    updates.append(("B19", [_ratio_row(
-        [_safe_div(t, r) for t, r in zip(tev, series.revenue)], _safe_div(ltm_tev, series.ltm_revenue),
-    )]))
-    updates.append(("B20", [_ratio_row(
-        [_safe_div(t, g) for t, g in zip(tev, gross_profit)], _safe_div(ltm_tev, ltm_gross_profit),
-    )]))
-    updates.append(("B21", [_ratio_row(
-        [_safe_div(t, e) for t, e in zip(tev, ebitda)], _safe_div(ltm_tev, ltm_ebitda),
-    )]))
-    updates.append(("B22", [_ratio_row(
-        [_safe_div(t, e) for t, e in zip(tev, series.ebit)], _safe_div(ltm_tev, series.ltm_ebit),
-    )]))
-    updates.append(("B23", [_ratio_row(
-        [_safe_div(t, o) for t, o in zip(tev, series.operating_cash_flow)],
-        _safe_div(ltm_tev, series.ltm_operating_cash_flow),
-    )]))
-    updates.append(("B24", [_ratio_row(
-        [_safe_div(t, f) for t, f in zip(tev, fcf)], _safe_div(ltm_tev, ltm_fcf),
-    )]))
-
+    updates: list[tuple[str, list]] = [("B3", [_ratio_row(prices, ltm_price)])]
+    for row, template in _TRAILING_VALUATION_ROWS.items():
+        updates.append((f"B{row}:L{row}", [_iferror_formula_row(template)]))
     _apply(ws, updates)
+    for rng in _TRAILING_PCT_ROWS:
+        ws.format(rng, _EFICIENCIA_PCT_FORMAT)
+    for rng in _TRAILING_MULTIPLE_ROWS:
+        ws.format(rng, _TRAILING_MULTIPLE_FORMAT)
+    ws.format("B4:L6", _TRAILING_THOUSANDS_FORMAT)
 
     return _TrailingComputed(
         mktcap=mktcap, tev=tev, gross_profit=gross_profit, ebitda=ebitda, fcf=fcf,
         ltm_mktcap=ltm_mktcap, ltm_tev=ltm_tev, ltm_gross_profit=ltm_gross_profit,
         ltm_ebitda=ltm_ebitda, ltm_fcf=ltm_fcf,
     )
+
+
+def refresh_eficiencia_capital(sh) -> None:
+    """'Eficiencia de capital' (ROIC/ROA/ROE/rotaciones) nunca tuvo un
+    refresh_* propio -- quedaba con los valores pegados de ADBE originales
+    sin ningun mecanismo para refrescarla. Todo lo que necesita ya vive en
+    Income Statement/Balance Sheet/Cash Flow Statement, asi que se llena
+    enteramente con formulas (no necesita `series` ni una llamada a SEC
+    EDGAR) -- ver _EFICIENCIA_*_ROWS."""
+    ws = sh.worksheet("Eficiencia de capital")
+    updates: list[tuple[str, list]] = []
+    for row, template in _EFICIENCIA_AVG_ROWS.items():
+        updates.append((f"B{row}:L{row}", [_iferror_formula_row(template, prev_cols=_COLS)]))
+    for row, template in _EFICIENCIA_DERIVED_ROWS.items():
+        updates.append((f"B{row}:L{row}", [[""] + _iferror_formula_row(template, cols=_COLS[1:])]))
+    for row, template in _EFICIENCIA_FLOW_ROWS.items():
+        updates.append((f"B{row}:L{row}", [_iferror_formula_row(template)]))
+    _apply(ws, updates)
+
+    ws.format("B3:L8", _EFICIENCIA_PCT_FORMAT)
+    ws.format("B9:L9", _EFICIENCIA_RATIO_FORMAT)
+    ws.format("B10:L10", _EFICIENCIA_DAYS_FORMAT)
+    ws.format("B11:L11", _EFICIENCIA_RATIO_FORMAT)
+    ws.format("B12:L12", _EFICIENCIA_DAYS_FORMAT)
+    ws.format("B15:L15", _EFICIENCIA_DAYS_FORMAT)
+    ws.format("B16:L17", _EFICIENCIA_RATIO_FORMAT)
+    ws.format("B18:L18", _EFICIENCIA_DAYS_FORMAT)
+    ws.format("B19:L21", _EFICIENCIA_PCT_FORMAT)
 
 
 def refresh_forward_valuation(sh, series, computed: _TrailingComputed) -> None:
@@ -847,7 +911,7 @@ def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
 def run(
     ticker: str, *, sheet_id: str, peer_tickers: list[str], industry_us: str, industry_global: str,
 ) -> None:
-    print(f"[1/8] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
+    print(f"[1/9] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
     series = load_annual_series_from_sec_edgar(ticker)
     market = get_market_snapshot(ticker)
     company_inputs = load_company_inputs_from_sec_edgar(
@@ -857,28 +921,31 @@ def run(
     client = get_gspread_client()
     sh = open_target_sheet(client, sheet_id)
 
-    print(f"[2/8] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
+    print(f"[2/9] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
     refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
 
-    print("[3/8] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
+    print("[3/9] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
     refresh_cash_flow_statement(sh, series)
     refresh_balance_sheet(sh, series, company_inputs)
 
-    print("[4/8] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
+    print("[4/9] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
     refresh_period_headers(sh, series)
 
-    print("[5/8] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
+    print("[5/9] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
     computed = refresh_trailing_valuation(sh, series, company_inputs)
     refresh_forward_valuation(sh, series, computed)
 
-    print(f"[6/8] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
+    print("[6/9] Escribiendo formulas de 'Eficiencia de capital' (ROIC/ROA/ROE/rotaciones)...")
+    refresh_eficiencia_capital(sh)
+
+    print(f"[7/9] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print("[7/8] Congelando precio del día del análisis en 'Resumen de Valoración'...")
+    print("[8/9] Congelando precio del día del análisis en 'Resumen de Valoración'...")
     refresh_resumen_valoracion(sh, market)
 
-    print(f"[8/8] Listo: {sh.url}")
+    print(f"[9/9] Listo: {sh.url}")
 
 
 def main(argv: list[str]) -> int:
