@@ -889,6 +889,45 @@ def refresh_salud_financiera(sh) -> None:
         ws.format(rng, _TRAILING_MULTIPLE_FORMAT)
 
 
+# 'Por acción' -- items de FLUJO (Revenue/OCF/FCF/CapEx per share) dividen por
+# acciones diluidas PROMEDIO ponderadas (Income Statement fila 26, el
+# denominador correcto para un flujo del periodo); items de BALANCE (Book
+# Value/Tangible Book Value/Cash per share) dividen por acciones en
+# circulacion a fin de periodo (fila 27) -- misma convencion que ya usa esta
+# plantilla para EPS (weighted avg) vs. Book Value (point-in-time).
+_POR_ACCION_ROWS: dict[int, str] = {
+    3: "='Income Statement'!{c}3/'Income Statement'!{c}26",
+    4: "='Income Statement'!{c}23",
+    5: "='Income Statement'!{c}24",
+    6: "='Balance Sheet'!{c}35/'Income Statement'!{c}27",
+    7: "=('Balance Sheet'!{c}35-'Balance Sheet'!{c}12-'Balance Sheet'!{c}13)/'Income Statement'!{c}27",
+    8: "='Balance Sheet'!{c}5/'Income Statement'!{c}27",
+    9: "='Cash Flow Statement'!{c}13/'Income Statement'!{c}26",
+    10: "='Cash Flow Statement'!{c}36/'Income Statement'!{c}26",
+    11: "=-'Cash Flow Statement'!{c}15/'Income Statement'!{c}26",
+    12: "='Income Statement'!{c}25",
+    13: "='Income Statement'!{c}26",
+}
+_POR_ACCION_DOLLAR_ROWS = ("B3:L11",)
+_POR_ACCION_SHARE_COUNT_FORMAT = {"numberFormat": {"type": "NUMBER", "pattern": "#,##0.00"}}
+
+
+def refresh_por_accion(sh) -> None:
+    """'Por acción' tampoco tenia refresh_* propio, y sus valores pegados
+    eran de la escala de ADBE (~450-500M acciones) en vez de MSFT
+    (~7.400-7.700M) -- el mismo patron que 'Salud Financiera': no solo
+    estaba sin formula, los numeros eran de otra empresa. Se llena entera
+    via formula sobre Income Statement/Balance Sheet/Cash Flow Statement."""
+    ws = sh.worksheet("Por acción")
+    updates: list[tuple[str, list]] = [
+        (f"B{row}:L{row}", [_iferror_formula_row(template)]) for row, template in _POR_ACCION_ROWS.items()
+    ]
+    _apply(ws, updates)
+    for rng in _POR_ACCION_DOLLAR_ROWS:
+        ws.format(rng, _TRAILING_THOUSANDS_FORMAT)
+    ws.format("B12:L13", _POR_ACCION_SHARE_COUNT_FORMAT)
+
+
 def refresh_forward_valuation(sh, series, computed: _TrailingComputed) -> None:
     """Multiplos FORWARD = precio/EV del año T dividido por el resultado REAL
     del año T+1 (asi se define un multiplo forward reconstruido en
@@ -1000,7 +1039,7 @@ def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
 def run(
     ticker: str, *, sheet_id: str, peer_tickers: list[str], industry_us: str, industry_global: str,
 ) -> None:
-    print(f"[1/11] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
+    print(f"[1/12] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
     series = load_annual_series_from_sec_edgar(ticker)
     market = get_market_snapshot(ticker)
     company_inputs = load_company_inputs_from_sec_edgar(
@@ -1010,37 +1049,40 @@ def run(
     client = get_gspread_client()
     sh = open_target_sheet(client, sheet_id)
 
-    print(f"[2/11] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
+    print(f"[2/12] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
     refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
 
-    print("[3/11] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
+    print("[3/12] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
     refresh_cash_flow_statement(sh, series)
     refresh_balance_sheet(sh, series, company_inputs)
 
-    print("[4/11] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
+    print("[4/12] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
     refresh_period_headers(sh, series)
 
-    print("[5/11] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
+    print("[5/12] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
     computed = refresh_trailing_valuation(sh, series, company_inputs)
     refresh_forward_valuation(sh, series, computed)
 
-    print("[6/11] Escribiendo formulas de 'Eficiencia de capital' (ROIC/ROA/ROE/rotaciones)...")
+    print("[6/12] Escribiendo formulas de 'Eficiencia de capital' (ROIC/ROA/ROE/rotaciones)...")
     refresh_eficiencia_capital(sh)
 
-    print("[7/11] Escribiendo formulas de 'Márgenes' (Gross/Operating/EBITDA/Net margin, FCF conversion)...")
+    print("[7/12] Escribiendo formulas de 'Márgenes' (Gross/Operating/EBITDA/Net margin, FCF conversion)...")
     refresh_margenes(sh)
 
-    print("[8/11] Escribiendo formulas de 'Salud Financiera' (deuda, liquidez, cobertura de intereses)...")
+    print("[8/12] Escribiendo formulas de 'Salud Financiera' (deuda, liquidez, cobertura de intereses)...")
     refresh_salud_financiera(sh)
 
-    print(f"[9/11] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
+    print("[9/12] Escribiendo formulas de 'Por acción' (Revenue/EPS/Book Value/OCF/FCF per share)...")
+    refresh_por_accion(sh)
+
+    print(f"[10/12] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print("[10/11] Congelando precio del día del análisis en 'Resumen de Valoración'...")
+    print("[11/12] Congelando precio del día del análisis en 'Resumen de Valoración'...")
     refresh_resumen_valoracion(sh, market)
 
-    print(f"[11/11] Listo: {sh.url}")
+    print(f"[12/12] Listo: {sh.url}")
 
 
 def main(argv: list[str]) -> int:
