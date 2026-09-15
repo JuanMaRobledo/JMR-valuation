@@ -144,6 +144,17 @@ def refresh_income_statement(sh, series, company_inputs) -> None:
     ltm_margin = series.ltm_ebit / series.ltm_revenue if series.ltm_revenue else margins[-1]
     updates.append(("B13", [_history_row(margins, ltm_margin, scale=1, decimals=4)]))
 
+    # Total Revenues %Chg (fila 4) -- MISMO bug que Operating Margin/EBITDA:
+    # valor pegado de ADBE, nunca refrescado. 'Input sheet'!B27 (crecimiento
+    # para el proximo año, el driver #1 del escenario Base) y 'Valuation
+    # output' (filas 49/100/151, candidatos de crecimiento Conservador/
+    # Optimista) leen esta fila directo -- en blanco, ambos quedan en 0 o en
+    # #DIV/0!, degenerando los 3 escenarios (confirmado con MSFT: el precio
+    # objetivo Conservador salia MAS ALTO que el Base).
+    growth = [r2 / r1 - 1 for r1, r2 in zip(series.revenue, series.revenue[1:]) if r1]
+    ltm_growth = series.ltm_revenue / series.revenue[-1] - 1 if series.revenue[-1] else 0.0
+    updates.append(("B4", [_history_row(growth, ltm_growth, scale=1, decimals=4)]))
+
     ebitda = [e + d for e, d in zip(series.ebit, series.da)]
     updates.append(("B28", [_history_row(ebitda, series.ltm_ebit + series.ltm_da)]))
 
