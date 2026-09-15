@@ -323,6 +323,39 @@ def test_sga_prefers_combined_tag_over_summing_parts_when_both_present():
     assert series.sga == pytest.approx([250.0 * M, 275.0 * M])
 
 
+def test_da_sums_depreciation_and_amortization_when_company_reports_them_separately():
+    """Regresion real: MSFT NO reporta NINGUNO de los tags combinados de D&A
+    ('DepreciationDepletionAndAmortization', etc.) -- reporta 'Depreciation'
+    y 'AmortizationOfIntangibleAssets' como dos lineas separadas. Sin este
+    fallback, 'da' quedaba en 0.0 para MSFT: EBITDA terminaba IGUAL a EBIT
+    en todo el modelo (Income Statement, Financials Multiples, EV/EBITDA), y
+    sobre todo, FCFF/FCFE perdian el resello de D&A (~$39.000M/año para
+    MSFT), lo que llevo el precio objetivo de 'EV/FCFF'/'P/FCFE' a numeros
+    profundamente negativos en la hoja en vivo."""
+    facts = _build_facts()
+    del facts["facts"]["us-gaap"]["DepreciationDepletionAndAmortization"]
+    facts["facts"]["us-gaap"]["Depreciation"] = _usd_node([
+        _annual("2023-12-31", 30 * M), _annual("2024-12-31", 35 * M),
+    ])
+    facts["facts"]["us-gaap"]["AmortizationOfIntangibleAssets"] = _usd_node([
+        _annual("2023-12-31", 10 * M), _annual("2024-12-31", 12 * M),
+    ])
+    client = _FakeClient(facts, _build_submissions())
+
+    series = load_annual_series_from_sec_edgar("TEST", client=client)
+
+    assert series.da == pytest.approx([40.0 * M, 47.0 * M])
+    assert series.ltm_da == pytest.approx(47.0 * M)
+
+
+def test_da_prefers_combined_tag_over_summing_parts_when_both_present(fake_client):
+    """Si la empresa SI reporta un tag combinado de D&A (el fixture base usa
+    'DepreciationDepletionAndAmortization'), se usa ese directo -- no se
+    suma ademas con Depreciation/AmortizationOfIntangibleAssets."""
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+    assert series.da == pytest.approx([40.0 * M, 45.0 * M])  # valores del fixture base, sin sumar nada mas
+
+
 def test_annual_series_truncates_to_requested_years(fake_client):
     series = load_annual_series_from_sec_edgar("TEST", years=1, client=fake_client)
     assert series.fiscal_year_ends == ["2024-12-31"]

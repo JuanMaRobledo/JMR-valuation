@@ -112,6 +112,17 @@ _TAGS: dict[str, list[str]] = {
     "dividend_per_share": ["CommonStockDividendsPerShareDeclared", "CommonStockDividendsPerShareCashPaid"],
     "da": ["DepreciationDepletionAndAmortization", "DepreciationAmortizationAndAccretionNet",
            "DepreciationAndAmortization"],
+    # Fallback si la empresa NO reporta ninguno de los tags combinados de
+    # arriba (MSFT, por ejemplo, reporta 'Depreciation' y
+    # 'AmortizationOfIntangibleAssets' como dos lineas separadas, igual que
+    # el caso de SG&A -- ver _sum_two_series). Sin este fallback, "da"
+    # quedaba en 0 para MSFT: EBITDA terminaba IGUAL a EBIT en todo el
+    # modelo (Income Statement fila 28, 'Financials Multiples' fila 18-20,
+    # EV/EBITDA), entendiendo mal el multiplo real y, mas grave, dejando
+    # FCFF/FCFE sin el resello de D&A (~$39.000M/año) -- eso fue lo que
+    # tumbo 'EV/FCFF'/'P/FCFE' a precios objetivo profundamente negativos.
+    "da_depreciation": ["Depreciation"],
+    "da_amortization": ["AmortizationOfIntangibleAssets", "AmortizationOfIntangibleAssetsAndOtherAssets"],
     "capex": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsForCapitalImprovements"],
     "rd": ["ResearchAndDevelopmentExpense",
            "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
@@ -393,6 +404,16 @@ def _avg_net_ratio(pos_rows, neg_rows, denominator_annual: list[dict], n: int = 
     return sum(tail) / len(tail) if tail else 0.0
 
 
+def _da_rows(rows) -> list[dict] | None:
+    """D&A con fallback: si la empresa no reporta un tag combinado de D&A,
+    suma Depreciation + AmortizationOfIntangibleAssets (MSFT es el caso que
+    motivo este fallback -- reporta ambos por separado, nunca un tag
+    combinado, asi que 'da' quedaba vacio y EBITDA terminaba IGUAL a EBIT
+    en todo el modelo). `rows` es la clausura local `rows(key, units)` de
+    cada funcion que arma un AnnualSeries/CompanyInputs."""
+    return rows("da") or _sum_two_series(_annual_rows(rows("da_depreciation")), _annual_rows(rows("da_amortization")))
+
+
 def _sum_two_series(rows_a: list[dict] | None, rows_b: list[dict] | None) -> list[dict] | None:
     """Suma dos series de hechos DURATION por fecha de cierre -- para
     reconstruir un concepto combinado (p.ej. SG&A) cuando una empresa lo
@@ -529,7 +550,7 @@ def load_company_inputs_from_sec_edgar(
     # --- Ratios historicos para proyectar FCFF/OCF/FCFE/EBITDA (promedio de
     # hasta 5 anios anuales -- mismo horizonte que financials_multiples). ---
     hist_interest_pct_of_ebit = _avg_ratio(interest_rows, ebit_annual)
-    hist_da_pct_of_revenue = _avg_ratio(rows("da"), revenue_annual)
+    hist_da_pct_of_revenue = _avg_ratio(_da_rows(rows), revenue_annual)
     hist_capex_pct_of_revenue = _avg_ratio(rows("capex"), revenue_annual)
     hist_net_borrowing_pct_of_revenue = _avg_net_ratio(
         rows("proceeds_debt"), rows("repayments_debt"), revenue_annual,
@@ -730,7 +751,8 @@ def load_annual_series_from_sec_edgar(
     ends = [r["end"] for r in revenue_annual]
 
     ebit_by_end = {r["end"]: r["val"] for r in _annual_rows(rows("ebit"))}
-    da_by_end = {r["end"]: r["val"] for r in _annual_rows(rows("da"))}
+    da_rows = _da_rows(rows)
+    da_by_end = {r["end"]: r["val"] for r in _annual_rows(da_rows)}
 
     shares_rows = _concept_rows(gaap, "shares_outstanding", units=("shares",), extra=dei)
     shares_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(shares_rows)}
@@ -767,7 +789,7 @@ def load_annual_series_from_sec_edgar(
 
     ltm_revenue = _ltm_value(revenue_rows) or revenue_annual[-1]["val"]
     ltm_ebit = _ltm_value(rows("ebit")) or ebit_by_end.get(ends[-1], 0.0)
-    ltm_da = _ltm_value(rows("da")) or da_by_end.get(ends[-1], 0.0)
+    ltm_da = _ltm_value(da_rows) or da_by_end.get(ends[-1], 0.0)
     ltm_tax_expense = _ltm_value(tax_rows) or tax_by_end.get(ends[-1], 0.0)
     ltm_net_income = _ltm_value(ni_rows) or ni_by_end.get(ends[-1], 0.0)
     ltm_operating_cash_flow = _ltm_value(ocf_rows) or ocf_by_end.get(ends[-1], 0.0)
