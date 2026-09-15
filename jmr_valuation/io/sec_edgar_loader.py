@@ -121,6 +121,31 @@ _TAGS: dict[str, list[str]] = {
     "proceeds_debt": ["ProceedsFromIssuanceOfLongTermDebt"],
     "repayments_debt": ["RepaymentsOfLongTermDebt"],
     "nol": ["DeferredTaxAssetsOperatingLossCarryforwards"],
+    # --- Agregado para terminar de poblar Income Statement/Balance Sheet/
+    # Cash Flow Statement fila por fila (antes solo se llenaban las filas
+    # que alimentan la valoracion; el resto quedaba en blanco en la
+    # plantilla -- ver refresh_native_model.py). ---
+    "sga": ["SellingGeneralAndAdministrativeExpense"],
+    # Fallback si la empresa NO reporta el tag combinado de arriba (MSFT,
+    # por ejemplo, reporta 'GeneralAndAdministrativeExpense' y
+    # 'SellingAndMarketingExpense' como dos lineas separadas) -- estas DOS
+    # series se SUMAN (no se combinan como candidatos intercambiables, ver
+    # _sga_from_parts) para reconstruir el equivalente de SG&A combinado.
+    "sga_admin": ["GeneralAndAdministrativeExpense"],
+    "sga_selling": ["SellingAndMarketingExpense", "MarketingExpense", "SellingExpense"],
+    "total_assets": ["Assets"],
+    "total_liabilities": ["Liabilities"],
+    "share_based_comp": ["ShareBasedCompensation"],
+    "investing_cash_flow": ["NetCashProvidedByUsedInInvestingActivities"],
+    "financing_cash_flow": ["NetCashProvidedByUsedInFinancingActivities"],
+    "receivables": ["AccountsReceivableNetCurrent", "ReceivablesNetCurrent"],
+    "ppe_net": ["PropertyPlantAndEquipmentNet"],
+    "goodwill": ["Goodwill"],
+    "accounts_payable": ["AccountsPayableCurrent"],
+    "apic": ["AdditionalPaidInCapital", "AdditionalPaidInCapitalCommonStock",
+             "CommonStockIncludingAdditionalPaidInCapital", "CommonStocksIncludingAdditionalPaidInCapital"],
+    "retained_earnings": ["RetainedEarningsAccumulatedDeficit"],
+    "aoci": ["AccumulatedOtherComprehensiveIncomeLossNetOfTax"],
 }
 
 
@@ -355,6 +380,21 @@ def _avg_net_ratio(pos_rows, neg_rows, denominator_annual: list[dict], n: int = 
     ratios = [(pos_annual[e] - neg_annual[e]) / denom_by_end[e] for e in ends if denom_by_end[e]]
     tail = ratios[-n:]
     return sum(tail) / len(tail) if tail else 0.0
+
+
+def _sum_two_series(rows_a: list[dict] | None, rows_b: list[dict] | None) -> list[dict] | None:
+    """Suma dos series de hechos DURATION por fecha de cierre -- para
+    reconstruir un concepto combinado (p.ej. SG&A) cuando una empresa lo
+    reporta como dos lineas separadas (MSFT: 'GeneralAndAdministrativeExpense'
+    + 'SellingAndMarketingExpense') en vez del tag combinado estandar. Solo
+    suma los años donde AMBAS series tienen dato -- un año con solo una de
+    las dos no se incluye (evita subestimar el total)."""
+    a_by_end = {r["end"]: r for r in (rows_a or [])}
+    b_by_end = {r["end"]: r for r in (rows_b or [])}
+    common_ends = set(a_by_end) & set(b_by_end)
+    if not common_ends:
+        return None
+    return [{**a_by_end[end], "val": a_by_end[end]["val"] + b_by_end[end]["val"]} for end in common_ends]
 
 
 def _cagr(values: list[float], years: int) -> float:
@@ -608,6 +648,33 @@ class AnnualSeries:
     ltm_buybacks: float = 0.0
     ltm_dividends_paid: float = 0.0
     ltm_cogs: float = 0.0
+    # --- Segunda tanda: termina de poblar filas de Income Statement/Balance
+    # Sheet/Cash Flow Statement que antes quedaban en blanco en la plantilla
+    # (solo se llenaban las filas que alimentan la valoracion). ---
+    rd: list[float] = field(default_factory=list)
+    sga: list[float] = field(default_factory=list)
+    pretax_income: list[float] = field(default_factory=list)
+    total_assets: list[float] = field(default_factory=list)
+    total_liabilities: list[float] = field(default_factory=list)
+    equity: list[float] = field(default_factory=list)               # historico completo (distinto de company_inputs, que solo trae LTM/prior_10k)
+    share_based_comp: list[float] = field(default_factory=list)
+    investing_cash_flow: list[float] = field(default_factory=list)
+    financing_cash_flow: list[float] = field(default_factory=list)
+    receivables: list[float] = field(default_factory=list)
+    ppe_net: list[float] = field(default_factory=list)
+    goodwill: list[float] = field(default_factory=list)
+    accounts_payable: list[float] = field(default_factory=list)
+    apic: list[float] = field(default_factory=list)
+    retained_earnings: list[float] = field(default_factory=list)
+    aoci: list[float] = field(default_factory=list)
+    ltm_rd: float = 0.0
+    ltm_sga: float = 0.0
+    ltm_pretax_income: float = 0.0
+    ltm_share_based_comp: float = 0.0
+    ltm_investing_cash_flow: float = 0.0
+    ltm_financing_cash_flow: float = 0.0
+    interest_expense: list[float] = field(default_factory=list)  # historico completo -- company_inputs solo trae LTM/prior_10k
+    ltm_interest_expense: float = 0.0
 
 
 def load_annual_series_from_sec_edgar(
@@ -688,6 +755,46 @@ def load_annual_series_from_sec_edgar(
         or diluted_shares_by_end.get(ends[-1], 0.0)
     )
 
+    # --- Segunda tanda de conceptos (ver docstring de AnnualSeries) --
+    # duration (flujo, se les aplica _annual_rows/_ltm_value) o instant
+    # (balance, _annual_instant_rows, sin LTM propio -- se reusa el ultimo
+    # anual, igual que ya se hace con current_assets/current_debt). ---
+    rd_rows, pretax_rows = rows("rd"), rows("pretax_income")
+    # _sum_two_series recibe filas YA filtradas a anuales (_annual_rows) --
+    # sumar filas crudas (sin filtrar duracion) arriesgaria sumar un hecho
+    # anual de una serie con uno trimestral de la otra que comparta 'end'.
+    sga_rows = rows("sga") or _sum_two_series(_annual_rows(rows("sga_admin")), _annual_rows(rows("sga_selling")))
+    sbc_rows = rows("share_based_comp")
+    icf_rows, fcf_rows = rows("investing_cash_flow"), rows("financing_cash_flow")
+    rd_by_end = {r["end"]: r["val"] for r in _annual_rows(rd_rows)}
+    sga_by_end = {r["end"]: r["val"] for r in _annual_rows(sga_rows)}
+    pretax_by_end = {r["end"]: r["val"] for r in _annual_rows(pretax_rows)}
+    sbc_by_end = {r["end"]: r["val"] for r in _annual_rows(sbc_rows)}
+    icf_by_end = {r["end"]: r["val"] for r in _annual_rows(icf_rows)}
+    fcf_by_end = {r["end"]: r["val"] for r in _annual_rows(fcf_rows)}
+
+    total_assets_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("total_assets"))}
+    total_liabilities_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("total_liabilities"))}
+    equity_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("equity"))}
+    receivables_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("receivables"))}
+    ppe_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("ppe_net"))}
+    goodwill_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("goodwill"))}
+    ap_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("accounts_payable"))}
+    apic_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("apic"))}
+    re_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("retained_earnings"))}
+    aoci_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("aoci"))}
+
+    interest_rows = rows("interest_expense")
+    interest_by_end = {r["end"]: r["val"] for r in _annual_rows(interest_rows)}
+    ltm_interest_expense = _ltm_value(interest_rows) or interest_by_end.get(ends[-1], 0.0)
+
+    ltm_rd = _ltm_value(rd_rows) or rd_by_end.get(ends[-1], 0.0)
+    ltm_sga = _ltm_value(sga_rows) or sga_by_end.get(ends[-1], 0.0)
+    ltm_pretax_income = _ltm_value(pretax_rows) or pretax_by_end.get(ends[-1], 0.0)
+    ltm_share_based_comp = _ltm_value(sbc_rows) or sbc_by_end.get(ends[-1], 0.0)
+    ltm_investing_cash_flow = _ltm_value(icf_rows) or icf_by_end.get(ends[-1], 0.0)
+    ltm_financing_cash_flow = _ltm_value(fcf_rows) or fcf_by_end.get(ends[-1], 0.0)
+
     return AnnualSeries(
         ticker=ticker,
         company_name=submissions.get("name") or ticker,
@@ -720,4 +827,28 @@ def load_annual_series_from_sec_edgar(
         ltm_buybacks=ltm_buybacks,
         ltm_dividends_paid=ltm_dividends_paid,
         ltm_cogs=ltm_cogs,
+        rd=_series_at(rd_by_end),
+        sga=_series_at(sga_by_end),
+        pretax_income=_series_at(pretax_by_end),
+        total_assets=_series_at(total_assets_by_end),
+        total_liabilities=_series_at(total_liabilities_by_end),
+        equity=_series_at(equity_by_end),
+        share_based_comp=_series_at(sbc_by_end),
+        investing_cash_flow=_series_at(icf_by_end),
+        financing_cash_flow=_series_at(fcf_by_end),
+        receivables=_series_at(receivables_by_end),
+        ppe_net=_series_at(ppe_by_end),
+        goodwill=_series_at(goodwill_by_end),
+        accounts_payable=_series_at(ap_by_end),
+        apic=_series_at(apic_by_end),
+        retained_earnings=_series_at(re_by_end),
+        aoci=_series_at(aoci_by_end),
+        ltm_rd=ltm_rd,
+        ltm_sga=ltm_sga,
+        ltm_pretax_income=ltm_pretax_income,
+        ltm_share_based_comp=ltm_share_based_comp,
+        ltm_investing_cash_flow=ltm_investing_cash_flow,
+        ltm_financing_cash_flow=ltm_financing_cash_flow,
+        interest_expense=_series_at(interest_by_end),
+        ltm_interest_expense=ltm_interest_expense,
     )

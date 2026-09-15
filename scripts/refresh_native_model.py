@@ -158,9 +158,73 @@ def refresh_income_statement(sh, series, company_inputs) -> None:
     ebitda = [e + d for e, d in zip(series.ebit, series.da)]
     updates.append(("B28", [_history_row(ebitda, series.ltm_ebit + series.ltm_da)]))
 
-    # Interest Expense en esta hoja se guarda en NEGATIVO (fila 15, ver B15:K15) -- solo LTM, sin serie de 10y limpia.
-    updates.append(("L15", [[-round(company_inputs.interest_expense_ltm, 1)]]))
-    updates.append(("L29", [[round(company_inputs.effective_tax_rate, 4)]]))
+    # Cost of Sales / Gross Profit / Gross Margin (filas 5-7), SG&A (fila 8),
+    # D&A dentro de opex (fila 9) y R&D (fila 10) -- filas que quedaban
+    # completamente en blanco en la plantilla (nunca se tocaban, solo se
+    # rellenaban las filas que alimentan la valoracion). COGS/SG&A/R&D vienen
+    # de SEC EDGAR real; la fila de D&A "dentro de opex" reusa el mismo D&A
+    # total de la fila 4 de Cash Flow Statement (no hay un tag XBRL separado
+    # para "D&A que vive en el estado de resultados" vs. "D&A total del cash
+    # flow" -- son el mismo numero real, no un valor inventado).
+    updates.append(("B5", [_history_row(series.cogs, series.ltm_cogs)]))
+    gross_profit = [r - c for r, c in zip(series.revenue, series.cogs)]
+    ltm_gross_profit = series.ltm_revenue - series.ltm_cogs
+    updates.append(("B6", [_history_row(gross_profit, ltm_gross_profit)]))
+    gross_margin = [g / r for g, r in zip(gross_profit, series.revenue) if r]
+    ltm_gross_margin = ltm_gross_profit / series.ltm_revenue if series.ltm_revenue else gross_margin[-1]
+    updates.append(("B7", [_history_row(gross_margin, ltm_gross_margin, scale=1, decimals=4)]))
+    updates.append(("B8", [_history_row(series.sga, series.ltm_sga)]))
+    updates.append(("B9", [_history_row(series.da, series.ltm_da)]))
+    updates.append(("B10", [_history_row(series.rd, series.ltm_rd)]))
+
+    # Other Operating Expenses (fila 11) -- no hay un tag XBRL limpio para
+    # "otros gastos operativos" (es tipicamente un residuo, no una linea que
+    # las empresas taggeen aparte). Se calcula como el remanente para que
+    # Revenue - COGS - SG&A - D&A - R&D - Other Opex = EBIT REAL (el EBIT de
+    # 'OperatingIncomeLoss', ya validado), en vez de dejar la identidad
+    # contable rota o inventar un numero.
+    other_opex = [
+        r - c - s - d - rd - e
+        for r, c, s, d, rd, e in zip(series.revenue, series.cogs, series.sga, series.da, series.rd, series.ebit)
+    ]
+    ltm_other_opex = (
+        series.ltm_revenue - series.ltm_cogs - series.ltm_sga - series.ltm_da - series.ltm_rd - series.ltm_ebit
+    )
+    updates.append(("B11", [_history_row(other_opex, ltm_other_opex)]))
+
+    # Interest Expense (fila 15, se guarda en NEGATIVO) e Interest and
+    # Investment Income (fila 14) -- antes solo se escribia la columna LTM.
+    # No hay tag confiable de "interest income" separado del expense para
+    # todas las empresas, asi que la fila 14 queda en 0 (Damodaran deja lo
+    # mismo por defecto para muchas empresas en su plantilla original) y el
+    # neto completo vive en la fila 15, tal como ya lo leia esta hoja.
+    interest_expense_negated = [-v for v in series.interest_expense]
+    updates.append(("B15", [_history_row(interest_expense_negated, -series.ltm_interest_expense)]))
+    updates.append(("B14", [_history_row([0.0] * len(series.revenue), 0.0)]))
+
+    # Income Before Provision for Income Taxes (fila 19) = pretax_income REAL
+    # de SEC EDGAR. Total Non-Operating Income (fila 18) = pretax real -
+    # EBIT (la brecha REAL entre resultado operativo y pretax, sea cual sea
+    # su causa). Non-Operating Income (fila 17) resta el efecto de intereses
+    # (ya capturado en las filas 14-16) para no duplicarlo -- lo que queda
+    # es "todo lo demas" (ganancias/perdidas de inversiones, FX, etc.), sin
+    # inventar un desglose que EDGAR no da linea por linea.
+    updates.append(("B19", [_history_row(series.pretax_income, series.ltm_pretax_income)]))
+    total_non_operating = [p - e for p, e in zip(series.pretax_income, series.ebit)]
+    ltm_total_non_operating = series.ltm_pretax_income - series.ltm_ebit
+    non_operating = [tno + ie for tno, ie in zip(total_non_operating, series.interest_expense)]
+    ltm_non_operating = ltm_total_non_operating + series.ltm_interest_expense
+    updates.append(("B17", [_history_row(non_operating, ltm_non_operating)]))
+    updates.append(("B18", [_history_row(total_non_operating, ltm_total_non_operating)]))
+
+    # Effective Tax Rate (fila 29) -- ahora con serie completa (antes solo
+    # LTM) porque ya tenemos tax_expense y pretax_income año a año.
+    tax_rates = [t / p for t, p in zip(series.tax_expense, series.pretax_income) if p]
+    ltm_tax_rate = (
+        series.ltm_tax_expense / series.ltm_pretax_income
+        if series.ltm_pretax_income else company_inputs.effective_tax_rate
+    )
+    updates.append(("B29", [_history_row(tax_rates, ltm_tax_rate, scale=1, decimals=4)]))
 
     # Shares Outstanding puntuales (fila 27, a cierre de cada ejercicio) --
     # 'Input sheet'!B22 y de ahi todo el bridge de equity (incluido DCF
@@ -229,6 +293,81 @@ def refresh_cash_flow_statement(sh, series) -> None:
     ltm_fcf = series.ltm_operating_cash_flow + (-series.ltm_capex)
     updates.append(("B36", [_history_row(fcf, ltm_fcf)]))
 
+    # Share-Based Compensation (fila 5) -- dato real de SEC EDGAR, antes en blanco.
+    updates.append(("B5", [_history_row(series.share_based_comp, series.ltm_share_based_comp)]))
+
+    # Other Adjustments (fila 6) -- plug para que Operating Activities sume
+    # al OCF REAL: no tenemos desglosados los cambios de capital de trabajo
+    # linea por linea (filas 7-12, quedan en blanco -- no se inventan), asi
+    # que esta fila absorbe TODOS esos cambios juntos con la comp. en
+    # acciones y cualquier otro ajuste no-monetario.
+    other_adj = [
+        ocf - ni - da - sbc
+        for ocf, ni, da, sbc in zip(
+            series.operating_cash_flow, series.net_income, series.da, series.share_based_comp,
+        )
+    ]
+    ltm_other_adj = (
+        series.ltm_operating_cash_flow - series.ltm_net_income - series.ltm_da - series.ltm_share_based_comp
+    )
+    updates.append(("B6", [_history_row(other_adj, ltm_other_adj)]))
+
+    # Cash from Investing Activities (fila 22) = total REAL de SEC EDGAR.
+    # Other Investing Activities (fila 21) absorbe todo lo que no es CapEx
+    # (compra/venta de inversiones, adquisiciones, etc. -- no desglosadas
+    # linea por linea, filas 16-20 quedan en blanco) como plug contra ese
+    # total, para no inventar un desglose que EDGAR no da de forma limpia.
+    updates.append(("B22", [_history_row(series.investing_cash_flow, series.ltm_investing_cash_flow)]))
+    other_investing = [icf + cpx for icf, cpx in zip(series.investing_cash_flow, series.capex)]
+    ltm_other_investing = series.ltm_investing_cash_flow + series.ltm_capex
+    updates.append(("B21", [_history_row(other_investing, ltm_other_investing)]))
+
+    # Cash from Financing Activities (fila 34) = total REAL. Net Issuance/
+    # (Repayments) of Long-Term Debt (fila 28) = cambio interanual del saldo
+    # de deuda de largo plazo (aproximacion estandar del efecto de caja,
+    # ignora ajustes no-monetarios como FX -- no hay series de emision/pago
+    # bruto por separado). Net Issuance/(Repurchases) of Common Shares
+    # (fila 31) ~= -Recompras (ignora emisiones menores por stock comp,
+    # tipicamente chicas frente a las recompras). Other Financing Activities
+    # (fila 33) absorbe el resto contra el total real.
+    net_lt_debt = [0.0] + [d2 - d1 for d1, d2 in zip(series.long_term_debt, series.long_term_debt[1:])]
+    updates.append(("B28", [_history_row(net_lt_debt, net_lt_debt[-1] if net_lt_debt else 0.0)]))
+    net_share_issuance = [-v for v in series.buybacks]
+    updates.append(("B31", [_history_row(net_share_issuance, -series.ltm_buybacks)]))
+    updates.append(("B34", [_history_row(series.financing_cash_flow, series.ltm_financing_cash_flow)]))
+    other_financing = [
+        fcf_total - lt - sh - div
+        for fcf_total, lt, sh, div in zip(series.financing_cash_flow, net_lt_debt, net_share_issuance, dividends_negated)
+    ]
+    ltm_other_financing = (
+        series.ltm_financing_cash_flow - (net_lt_debt[-1] if net_lt_debt else 0.0) - (-series.ltm_buybacks)
+        - (-series.ltm_dividends_paid)
+    )
+    updates.append(("B33", [_history_row(other_financing, ltm_other_financing)]))
+
+    # NOPAT (fila 37) = EBIT * (1 - tasa efectiva real). Levered/Unlevered
+    # Free Cash Flow (filas 38-39) -- definiciones estandar a partir de
+    # datos ya reales (Net Income/NOPAT + D&A - CapEx); no incluyen el
+    # cambio en capital de trabajo (no tenemos esa serie limpia) asi que son
+    # una aproximacion, no identicas al FCFF de 'Valuation output'.
+    nopat = [
+        e * (1 - t / p) if p else e
+        for e, t, p in zip(series.ebit, series.tax_expense, series.pretax_income)
+    ]
+    ltm_nopat = (
+        series.ltm_ebit * (1 - series.ltm_tax_expense / series.ltm_pretax_income)
+        if series.ltm_pretax_income else series.ltm_ebit
+    )
+    updates.append(("B37", [_history_row(nopat, ltm_nopat)]))
+    levered_fcf = [
+        ni + da - cpx for ni, da, cpx in zip(series.net_income, series.da, series.capex)
+    ]
+    ltm_levered_fcf = series.ltm_net_income + series.ltm_da - series.ltm_capex
+    updates.append(("B38", [_history_row(levered_fcf, ltm_levered_fcf)]))
+    unlevered_fcf = [n + da - cpx for n, da, cpx in zip(nopat, series.da, series.capex)]
+    ltm_unlevered_fcf = ltm_nopat + series.ltm_da - series.ltm_capex
+    updates.append(("B39", [_history_row(unlevered_fcf, ltm_unlevered_fcf)]))
+
     _apply(ws, updates)
 
 
@@ -236,9 +375,9 @@ def refresh_balance_sheet(sh, series, company_inputs) -> None:
     ws = sh.worksheet("Balance Sheet")
     updates: list[tuple[str, list]] = [
         ("B5", [_history_row(series.cash, company_inputs.cash_ltm * _M)]),
+        ("B3", [_history_row(series.cash, company_inputs.cash_ltm * _M)]),  # Cash and Cash Equivalents -- no hay tag separado de Short-Term Investments (fila 4, queda en blanco)
         ("B20", [_history_row(series.current_debt, series.current_debt[-1])]),
         ("B25", [_history_row(series.long_term_debt, series.long_term_debt[-1])]),
-        ("L35", [[round(company_inputs.book_value_equity_ltm, 1)]]),
     ]
     # Total Current Assets / Total Current Liabilities (filas 10, 24) --
     # mismo bug que el resto: valores pegados de ADBE (~$5-11B), nunca
@@ -253,6 +392,72 @@ def refresh_balance_sheet(sh, series, company_inputs) -> None:
         updates.append(("B10", [_history_row(series.current_assets, series.current_assets[-1])]))
     if series.current_liabilities:
         updates.append(("B24", [_history_row(series.current_liabilities, series.current_liabilities[-1])]))
+
+    # Receivables (filas 6, 8 -- no hay 'Other Receivables' separado, fila 7
+    # queda en blanco), PP&E neto (11), Goodwill (13), Total Assets (16),
+    # Accounts Payable (18), Total Liabilities (29), y los 3 componentes de
+    # Equity + su total (31-35) -- todas filas que quedaban en blanco.
+    if series.receivables:
+        updates.append(("B6", [_history_row(series.receivables, series.receivables[-1])]))
+        updates.append(("B8", [_history_row(series.receivables, series.receivables[-1])]))
+    if series.ppe_net:
+        updates.append(("B11", [_history_row(series.ppe_net, series.ppe_net[-1])]))
+    if series.goodwill:
+        updates.append(("B13", [_history_row(series.goodwill, series.goodwill[-1])]))
+    if series.total_assets:
+        updates.append(("B16", [_history_row(series.total_assets, series.total_assets[-1])]))
+        updates.append(("B36", [_history_row(series.total_assets, series.total_assets[-1])]))  # Total L+E == Total Assets, por identidad contable
+    if series.accounts_payable:
+        updates.append(("B18", [_history_row(series.accounts_payable, series.accounts_payable[-1])]))
+    if series.total_liabilities:
+        updates.append(("B29", [_history_row(series.total_liabilities, series.total_liabilities[-1])]))
+    if series.apic:
+        updates.append(("B31", [_history_row(series.apic, series.apic[-1])]))
+    if series.aoci:
+        updates.append(("B32", [_history_row(series.aoci, series.aoci[-1])]))
+    if series.retained_earnings:
+        updates.append(("B33", [_history_row(series.retained_earnings, series.retained_earnings[-1])]))
+    if series.equity:
+        # 'Total Common Shareholders Equity' y 'Total Shareholders Equity'
+        # -- se asume interes minoritario nulo/inmaterial (razonable para la
+        # gran mayoria de empresas; si el ticker tiene uno grande, ambas
+        # filas quedarian iguales en vez de diferir en ese monto).
+        updates.append(("B34", [_history_row(series.equity, series.equity[-1])]))
+        updates.append(("B35", [_history_row(series.equity, series.equity[-1])]))
+    else:
+        updates.append(("L35", [[round(company_inputs.book_value_equity_ltm, 1)]]))
+
+    # Other Current Assets (9) / Other Long-Term Assets (15) / Other Current
+    # Liabilities (23) / Other Long-Term Liabilities (27) -- se calculan
+    # como el REMANENTE contra los totales reales (Total Current Assets,
+    # Total Assets, Total Current Liabilities, Total Liabilities), no se
+    # inventan: "Other" es, por definicion, todo lo que no cae en las lineas
+    # ya identificadas (Cash/Receivables/PP&E/Goodwill para activos;
+    # AP/Deuda de corto plazo para pasivos corrientes; Deuda de largo plazo
+    # para pasivos de largo plazo).
+    if series.current_assets and series.receivables:
+        other_ca = [ca - c - r for ca, c, r in zip(series.current_assets, series.cash, series.receivables)]
+        updates.append(("B9", [_history_row(other_ca, other_ca[-1])]))
+    if series.total_assets and series.ppe_net and series.goodwill and series.current_assets:
+        other_lt_assets = [
+            ta - ca - ppe - gw
+            for ta, ca, ppe, gw in zip(series.total_assets, series.current_assets, series.ppe_net, series.goodwill)
+        ]
+        updates.append(("B15", [_history_row(other_lt_assets, other_lt_assets[-1])]))
+    if series.current_liabilities and series.accounts_payable:
+        other_cl = [
+            cl - ap - cd for cl, ap, cd in zip(series.current_liabilities, series.accounts_payable, series.current_debt)
+        ]
+        updates.append(("B23", [_history_row(other_cl, other_cl[-1])]))
+    if series.total_liabilities and series.current_liabilities:
+        other_lt_liab = [
+            tl - cl - ltd
+            for tl, cl, ltd in zip(series.total_liabilities, series.current_liabilities, series.long_term_debt)
+        ]
+        updates.append(("B27", [_history_row(other_lt_liab, other_lt_liab[-1])]))
+        total_lt_liab = [ltd + o for ltd, o in zip(series.long_term_debt, other_lt_liab)]
+        updates.append(("B28", [_history_row(total_lt_liab, total_lt_liab[-1])]))
+
     _apply(ws, updates)
 
 

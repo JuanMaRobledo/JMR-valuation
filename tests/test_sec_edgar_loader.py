@@ -124,6 +124,26 @@ def _build_facts() -> dict:
             _annual("2023-12-31", 15 * M), _annual("2024-12-31", 18 * M),
         ]),
         "CostOfRevenue": _usd_node([_annual("2023-12-31", 300 * M), _annual("2024-12-31", 330 * M)]),
+        "Assets": _usd_node([_instant("2023-12-31", 900 * M), _instant("2024-12-31", 1000 * M)]),
+        "Liabilities": _usd_node([_instant("2023-12-31", 400 * M), _instant("2024-12-31", 430 * M)]),
+        "ShareBasedCompensation": _usd_node([_annual("2023-12-31", 25 * M), _annual("2024-12-31", 28 * M)]),
+        "NetCashProvidedByUsedInInvestingActivities": _usd_node([
+            _annual("2023-12-31", -80 * M), _annual("2024-12-31", -90 * M),
+        ]),
+        "NetCashProvidedByUsedInFinancingActivities": _usd_node([
+            _annual("2023-12-31", -60 * M), _annual("2024-12-31", -70 * M),
+        ]),
+        "AccountsReceivableNetCurrent": _usd_node([_instant("2023-12-31", 70 * M), _instant("2024-12-31", 80 * M)]),
+        "PropertyPlantAndEquipmentNet": _usd_node([_instant("2023-12-31", 150 * M), _instant("2024-12-31", 170 * M)]),
+        "Goodwill": _usd_node([_instant("2023-12-31", 200 * M), _instant("2024-12-31", 200 * M)]),
+        "AccountsPayableCurrent": _usd_node([_instant("2023-12-31", 40 * M), _instant("2024-12-31", 45 * M)]),
+        "AdditionalPaidInCapital": _usd_node([_instant("2023-12-31", 300 * M), _instant("2024-12-31", 320 * M)]),
+        "RetainedEarningsAccumulatedDeficit": _usd_node([
+            _instant("2023-12-31", 250 * M), _instant("2024-12-31", 290 * M),
+        ]),
+        "AccumulatedOtherComprehensiveIncomeLossNetOfTax": _usd_node([
+            _instant("2023-12-31", -5 * M), _instant("2024-12-31", -4 * M),
+        ]),
         "WeightedAverageNumberOfDilutedSharesOutstanding": _shares_node([
             _annual("2023-12-31", 98 * M), _annual("2024-12-31", 103 * M),
             _quarterly_shares("2025-01-01", "2025-03-31", 106 * M),
@@ -231,6 +251,76 @@ def test_annual_series_includes_income_statement_and_cash_flow_extras(fake_clien
     # trimestres discretos si son contiguos -- ver docstring de
     # _ltm_average_value (sumarlos daria ~4x el valor real).
     assert series.ltm_diluted_shares_avg == pytest.approx((106 + 106.5 + 107 + 107.5) / 4 * M)
+
+
+def test_annual_series_includes_balance_sheet_and_cash_flow_detail(fake_client):
+    """Regresion: estas filas (Income Statement COGS/SG&A/R&D/pretax,
+    Balance Sheet Total Assets/Liabilities/Equity/Receivables/PP&E/Goodwill/
+    AP/equity components, Cash Flow SBC/investing/financing) quedaban en
+    blanco en la plantilla -- ver refresh_native_model.py."""
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+
+    assert series.rd == pytest.approx([190.0 * M, 210.0 * M])
+    assert series.total_assets == pytest.approx([900.0 * M, 1000.0 * M])
+    assert series.total_liabilities == pytest.approx([400.0 * M, 430.0 * M])
+    assert series.equity == pytest.approx([500.0 * M, 600.0 * M])  # StockholdersEquity, ya en el fixture base
+    assert series.share_based_comp == pytest.approx([25.0 * M, 28.0 * M])
+    assert series.investing_cash_flow == pytest.approx([-80.0 * M, -90.0 * M])
+    assert series.financing_cash_flow == pytest.approx([-60.0 * M, -70.0 * M])
+    assert series.receivables == pytest.approx([70.0 * M, 80.0 * M])
+    assert series.ppe_net == pytest.approx([150.0 * M, 170.0 * M])
+    assert series.goodwill == pytest.approx([200.0 * M, 200.0 * M])
+    assert series.accounts_payable == pytest.approx([40.0 * M, 45.0 * M])
+    assert series.apic == pytest.approx([300.0 * M, 320.0 * M])
+    assert series.retained_earnings == pytest.approx([250.0 * M, 290.0 * M])
+    assert series.aoci == pytest.approx([-5.0 * M, -4.0 * M])
+    assert series.interest_expense == pytest.approx([10.0 * M, 12.0 * M])  # InterestExpense, ya en el fixture base
+
+    assert series.ltm_share_based_comp == pytest.approx(28.0 * M)  # sin trimestres -> ultimo 10-K
+    assert series.ltm_investing_cash_flow == pytest.approx(-90.0 * M)
+    assert series.ltm_financing_cash_flow == pytest.approx(-70.0 * M)
+
+
+def test_sga_sums_admin_and_selling_expense_when_company_reports_them_separately():
+    """Regresion: MSFT (y varias empresas mas) NO reporta el tag combinado
+    'SellingGeneralAndAdministrativeExpense' -- reporta
+    'GeneralAndAdministrativeExpense' y 'SellingAndMarketingExpense' como
+    DOS lineas separadas. Sin este fallback, la fila de SG&A quedaba en
+    blanco (0.0) para esas empresas en vez de sumar ambas."""
+    facts = _build_facts()
+    facts["facts"]["us-gaap"]["GeneralAndAdministrativeExpense"] = _usd_node([
+        _annual("2023-12-31", 80 * M), _annual("2024-12-31", 90 * M),
+    ])
+    facts["facts"]["us-gaap"]["SellingAndMarketingExpense"] = _usd_node([
+        _annual("2023-12-31", 120 * M), _annual("2024-12-31", 130 * M),
+    ])
+    client = _FakeClient(facts, _build_submissions())
+
+    series = load_annual_series_from_sec_edgar("TEST", client=client)
+
+    assert series.sga == pytest.approx([200.0 * M, 220.0 * M])
+    assert series.ltm_sga == pytest.approx(220.0 * M)
+
+
+def test_sga_prefers_combined_tag_over_summing_parts_when_both_present():
+    """Si la empresa SI reporta el tag combinado, se usa ese directo -- no
+    se suma ademas con admin/selling (evitaria doble conteo si algunas
+    empresas reportan ambos por transicion de un tag al otro)."""
+    facts = _build_facts()
+    facts["facts"]["us-gaap"]["SellingGeneralAndAdministrativeExpense"] = _usd_node([
+        _annual("2023-12-31", 250 * M), _annual("2024-12-31", 275 * M),
+    ])
+    facts["facts"]["us-gaap"]["GeneralAndAdministrativeExpense"] = _usd_node([
+        _annual("2023-12-31", 80 * M), _annual("2024-12-31", 90 * M),
+    ])
+    facts["facts"]["us-gaap"]["SellingAndMarketingExpense"] = _usd_node([
+        _annual("2023-12-31", 120 * M), _annual("2024-12-31", 130 * M),
+    ])
+    client = _FakeClient(facts, _build_submissions())
+
+    series = load_annual_series_from_sec_edgar("TEST", client=client)
+
+    assert series.sga == pytest.approx([250.0 * M, 275.0 * M])
 
 
 def test_annual_series_truncates_to_requested_years(fake_client):
