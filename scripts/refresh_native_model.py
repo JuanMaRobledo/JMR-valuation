@@ -838,6 +838,57 @@ def refresh_margenes(sh) -> None:
     ws.format("B3:L14", _EFICIENCIA_PCT_FORMAT)
 
 
+# 'Salud Financiera' -- ratios de deuda/liquidez/cobertura, todos a saldo de
+# FIN de ejercicio (no promedio: es la practica estandar para liquidez y
+# apalancamiento, a diferencia de los retornos/rotaciones de 'Eficiencia de
+# capital'), asi que se llenan completos incluida la primera columna.
+# 'Total Debt' (fila 3) usa la MISMA definicion de deuda que ya usa Input
+# sheet/TEV/ROIC (deuda corto+largo plazo+leases) para consistencia en todo
+# el libro.
+_SALUD_FINANCIERA_ROWS: dict[int, str] = {
+    3: "='Balance Sheet'!{c}20+'Balance Sheet'!{c}21+'Balance Sheet'!{c}25+'Balance Sheet'!{c}26",
+    4: "={c}3-'Balance Sheet'!{c}5",
+    5: "='Balance Sheet'!{c}10/'Balance Sheet'!{c}24",
+    6: "=('Balance Sheet'!{c}5+'Balance Sheet'!{c}8)/'Balance Sheet'!{c}24",
+    7: "='Balance Sheet'!{c}5/'Balance Sheet'!{c}24",
+    8: "={c}3/'Balance Sheet'!{c}16",
+    9: "='Balance Sheet'!{c}16/'Balance Sheet'!{c}35",
+    10: "='Cash Flow Statement'!{c}13/{c}3",
+    11: "=('Balance Sheet'!{c}25+'Balance Sheet'!{c}26)/'Balance Sheet'!{c}16",
+    12: "=('Balance Sheet'!{c}12+'Balance Sheet'!{c}13)/'Balance Sheet'!{c}16",
+    13: "='Balance Sheet'!{c}10-'Balance Sheet'!{c}29",
+    14: "='Balance Sheet'!{c}13/'Balance Sheet'!{c}16",
+    15: "={c}3/'Balance Sheet'!{c}35",
+    16: "={c}3/({c}3+'Balance Sheet'!{c}35)",
+    17: "=('Balance Sheet'!{c}25+'Balance Sheet'!{c}26)/(('Balance Sheet'!{c}25+'Balance Sheet'!{c}26)+'Balance Sheet'!{c}35)",
+    18: "=('Balance Sheet'!{c}25+'Balance Sheet'!{c}26)/'Balance Sheet'!{c}35",
+    19: "={c}4/'Income Statement'!{c}28",
+    20: "='Income Statement'!{c}12/(-'Income Statement'!{c}15)",
+    21: "='Income Statement'!{c}28/(-'Income Statement'!{c}15)",
+    22: "=('Income Statement'!{c}28+'Cash Flow Statement'!{c}15)/(-'Income Statement'!{c}15)",
+}
+_SALUD_FINANCIERA_RATIO_ROWS = ("B5:L12", "B14:L22")
+
+
+def refresh_salud_financiera(sh) -> None:
+    """'Salud Financiera' (deuda, liquidez, cobertura de intereses) tampoco
+    tenia refresh_* propio -- ademas de estar sin formula, las 3 filas de
+    cobertura (20-22) mostraban $0 en LTM porque leian el Interest Expense
+    que en ese momento tenia el bug de tag faltante para FY2025/26 (ver fix
+    anterior en sec_edgar_loader.py). Todo lo que necesita ya vive en
+    Balance Sheet/Income Statement/Cash Flow Statement -- se llena entero
+    via formula, sin necesidad de ninguna fuente externa."""
+    ws = sh.worksheet("Salud Financiera")
+    updates: list[tuple[str, list]] = [
+        (f"B{row}:L{row}", [_iferror_formula_row(template)]) for row, template in _SALUD_FINANCIERA_ROWS.items()
+    ]
+    _apply(ws, updates)
+    ws.format("B3:L4", _TRAILING_THOUSANDS_FORMAT)
+    ws.format("B13:L13", _TRAILING_THOUSANDS_FORMAT)
+    for rng in _SALUD_FINANCIERA_RATIO_ROWS:
+        ws.format(rng, _TRAILING_MULTIPLE_FORMAT)
+
+
 def refresh_forward_valuation(sh, series, computed: _TrailingComputed) -> None:
     """Multiplos FORWARD = precio/EV del año T dividido por el resultado REAL
     del año T+1 (asi se define un multiplo forward reconstruido en
@@ -949,7 +1000,7 @@ def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
 def run(
     ticker: str, *, sheet_id: str, peer_tickers: list[str], industry_us: str, industry_global: str,
 ) -> None:
-    print(f"[1/10] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
+    print(f"[1/11] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
     series = load_annual_series_from_sec_edgar(ticker)
     market = get_market_snapshot(ticker)
     company_inputs = load_company_inputs_from_sec_edgar(
@@ -959,34 +1010,37 @@ def run(
     client = get_gspread_client()
     sh = open_target_sheet(client, sheet_id)
 
-    print(f"[2/10] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
+    print(f"[2/11] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
     refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
 
-    print("[3/10] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
+    print("[3/11] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
     refresh_cash_flow_statement(sh, series)
     refresh_balance_sheet(sh, series, company_inputs)
 
-    print("[4/10] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
+    print("[4/11] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
     refresh_period_headers(sh, series)
 
-    print("[5/10] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
+    print("[5/11] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
     computed = refresh_trailing_valuation(sh, series, company_inputs)
     refresh_forward_valuation(sh, series, computed)
 
-    print("[6/10] Escribiendo formulas de 'Eficiencia de capital' (ROIC/ROA/ROE/rotaciones)...")
+    print("[6/11] Escribiendo formulas de 'Eficiencia de capital' (ROIC/ROA/ROE/rotaciones)...")
     refresh_eficiencia_capital(sh)
 
-    print("[7/10] Escribiendo formulas de 'Márgenes' (Gross/Operating/EBITDA/Net margin, FCF conversion)...")
+    print("[7/11] Escribiendo formulas de 'Márgenes' (Gross/Operating/EBITDA/Net margin, FCF conversion)...")
     refresh_margenes(sh)
 
-    print(f"[8/10] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
+    print("[8/11] Escribiendo formulas de 'Salud Financiera' (deuda, liquidez, cobertura de intereses)...")
+    refresh_salud_financiera(sh)
+
+    print(f"[9/11] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print("[9/10] Congelando precio del día del análisis en 'Resumen de Valoración'...")
+    print("[10/11] Congelando precio del día del análisis en 'Resumen de Valoración'...")
     refresh_resumen_valoracion(sh, market)
 
-    print(f"[10/10] Listo: {sh.url}")
+    print(f"[11/11] Listo: {sh.url}")
 
 
 def main(argv: list[str]) -> int:
