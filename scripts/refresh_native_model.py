@@ -504,6 +504,56 @@ def refresh_balance_sheet(sh, series, company_inputs) -> None:
     _apply(ws, updates)
 
 
+def _fiscal_year_label(iso_date: str) -> str:
+    """Convierte 'YYYY-MM-DD' (cierre de ejercicio REAL, de
+    series.fiscal_year_ends) al formato corto que ya traia la plantilla
+    original de Damodaran (p.ej. "Jun '26")."""
+    year, month, _ = iso_date.split("-")
+    month_abbr = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")[int(month) - 1]
+    return f"{month_abbr} '{year[-2:]}"
+
+
+_HEADER_10Y_SHEETS = (
+    "Income Statement", "Balance Sheet", "Cash Flow Statement",
+    "Trailing Valuation", "Forward Valuation",
+    "Márgenes", "Eficiencia de capital", "Salud Financiera", "Por acción",
+)
+_HEADER_4Y_SHEETS_ROWS = {
+    "EVFCFF": (6, 17, 28), "PE": (6, 17, 28), "EVEBITDA": (6, 17, 28),
+}
+
+
+def refresh_period_headers(sh, series) -> None:
+    """Reescribe los rotulos de columna (B:K, "Dec '16"..."Nov '25") con las
+    fechas REALES de cierre de ejercicio de la empresa (series.fiscal_year_ends)
+    en vez de las fechas de ejemplo que trae la plantilla original de
+    Damodaran y que ningun refresh anterior habia tocado.
+
+    Ese desfase es lo que hacia parecer un bug la columna LTM: para MSFT
+    (cierre 30/jun) la ultima columna anual quedaba rotulada "Nov '25" -- una
+    fecha que no es ningun cierre real de MSFT -- y como ademas coincidia en
+    VALOR con LTM (correcto: el ultimo 10-K ya es el periodo mas reciente
+    disponible, sin 10-Q posterior todavia), el rotulo equivocado hacia
+    pensar que LTM estaba mal calculado cuando el numero siempre fue correcto.
+
+    Solo se reescriben las celdas que son TEXTO literal -- las que ya son
+    formula (p.ej. POCF/PFCFE/Financials Multiples, que leen
+    ='Income Statement'!I2) se corrigen solas en cuanto se arregla Income
+    Statement, y no hace falta (ni conviene) tocarlas aca."""
+    labels = [_fiscal_year_label(d) for d in series.fiscal_year_ends]
+    labels_10y = [""] * (10 - len(labels)) + labels if len(labels) < 10 else labels[-10:]
+    labels_4y = labels_10y[-4:]
+
+    for name in _HEADER_10Y_SHEETS:
+        ws = sh.worksheet(name)
+        _apply(ws, [("B2:K2", [labels_10y])])
+
+    for name, rows in _HEADER_4Y_SHEETS_ROWS.items():
+        ws = sh.worksheet(name)
+        _apply(ws, [(f"B{row}:E{row}", [labels_4y]) for row in rows])
+
+
 @dataclass
 class _TrailingComputed:
     """Series intermedias de 'Trailing Valuation' que 'Forward Valuation'
@@ -762,7 +812,7 @@ def refresh_sector(sh, ticker: str, peer_tickers: list[str]) -> None:
 def run(
     ticker: str, *, sheet_id: str, peer_tickers: list[str], industry_us: str, industry_global: str,
 ) -> None:
-    print(f"[1/6] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
+    print(f"[1/8] Descargando historico de 10y de {ticker} desde SEC EDGAR...")
     series = load_annual_series_from_sec_edgar(ticker)
     market = get_market_snapshot(ticker)
     company_inputs = load_company_inputs_from_sec_edgar(
@@ -772,25 +822,28 @@ def run(
     client = get_gspread_client()
     sh = open_target_sheet(client, sheet_id)
 
-    print(f"[2/7] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
+    print(f"[2/8] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
     refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
 
-    print("[3/7] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
+    print("[3/8] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
     refresh_cash_flow_statement(sh, series)
     refresh_balance_sheet(sh, series, company_inputs)
 
-    print("[4/7] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
+    print("[4/8] Corrigiendo rotulos de columna (B:K) a los cierres de ejercicio reales...")
+    refresh_period_headers(sh, series)
+
+    print("[5/8] Recalculando Trailing Valuation / Forward Valuation (precio historico real + multiplos)...")
     computed = refresh_trailing_valuation(sh, series, company_inputs)
     refresh_forward_valuation(sh, series, computed)
 
-    print(f"[5/7] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
+    print(f"[6/8] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print("[6/7] Congelando precio del día del análisis en 'Resumen de Valoración'...")
+    print("[7/8] Congelando precio del día del análisis en 'Resumen de Valoración'...")
     refresh_resumen_valoracion(sh, market)
 
-    print(f"[7/7] Listo: {sh.url}")
+    print(f"[8/8] Listo: {sh.url}")
 
 
 def main(argv: list[str]) -> int:
