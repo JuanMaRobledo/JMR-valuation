@@ -169,6 +169,27 @@ _TAGS: dict[str, list[str]] = {
                                     "InvestmentIncomeNet"],
     "business_acquisitions": ["PaymentsToAcquireBusinessesNetOfCashAcquired"],
     "stock_issuance": ["ProceedsFromIssuanceOfCommonStock"],
+    # --- Cuarta tanda: desglose linea por linea de capital de trabajo (Cash
+    # Flow Statement filas 7-11) e inversiones (filas 17-18), que antes
+    # quedaban en blanco absorbidas enteras dentro de un solo plug (Other
+    # Adjustments/Other Investing Activities). Signo tal cual XBRL (positivo
+    # = el activo/pasivo AUMENTO en el periodo) -- se ajusta el signo para
+    # caja en refresh_cash_flow_statement, no aca. ---
+    "cf_receivables_change": ["IncreaseDecreaseInAccountsReceivable"],
+    "cf_payables_change": ["IncreaseDecreaseInAccountsPayable"],
+    "cf_income_tax_payable_change": ["IncreaseDecreaseInAccruedIncomeTaxesPayable"],
+    # OJO: 'IncreaseDecreaseInDeferredRevenue' existe tambien para MSFT pero
+    # con magnitudes que no son comparables (parece taggear el SALDO, no el
+    # cambio, en los anios viejos) -- no se agrega como fallback para no
+    # arriesgar mezclar dos series no comparables bajo el mismo 'end'.
+    "cf_unearned_revenue_change": ["IncreaseDecreaseInContractWithCustomerLiability"],
+    "purchases_of_investments": ["PaymentsToAcquireInvestments"],
+    # Idem: 'ProceedsFromSaleOfAvailableForSaleSecurities' tambien existe
+    # para MSFT pero solo hasta 2018 (despues deja de reportarse separado de
+    # 'maturities/calls') -- no se suma como fallback porque en los anios
+    # donde coexisten ambas SON dos flujos de caja reales distintos, no un
+    # cambio de tag (el merge estandar asume lo segundo).
+    "proceeds_from_investments": ["ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities"],
 }
 
 
@@ -722,6 +743,19 @@ class AnnualSeries:
     ltm_interest_investment_income: float = 0.0
     ltm_business_acquisitions: float = 0.0
     ltm_stock_issuance: float = 0.0
+    # --- Cuarta tanda (ver _TAGS) ---
+    cf_receivables_change: list[float] = field(default_factory=list)
+    cf_payables_change: list[float] = field(default_factory=list)
+    cf_income_tax_payable_change: list[float] = field(default_factory=list)
+    cf_unearned_revenue_change: list[float] = field(default_factory=list)
+    purchases_of_investments: list[float] = field(default_factory=list)
+    proceeds_from_investments: list[float] = field(default_factory=list)
+    ltm_cf_receivables_change: float = 0.0
+    ltm_cf_payables_change: float = 0.0
+    ltm_cf_income_tax_payable_change: float = 0.0
+    ltm_cf_unearned_revenue_change: float = 0.0
+    ltm_purchases_of_investments: float = 0.0
+    ltm_proceeds_from_investments: float = 0.0
 
 
 def load_annual_series_from_sec_edgar(
@@ -861,6 +895,26 @@ def load_annual_series_from_sec_edgar(
     ltm_investing_cash_flow = _ltm_value(icf_rows) or icf_by_end.get(ends[-1], 0.0)
     ltm_financing_cash_flow = _ltm_value(fcf_rows) or fcf_by_end.get(ends[-1], 0.0)
 
+    # --- Cuarta tanda (ver _TAGS) ---
+    cf_recv_rows = rows("cf_receivables_change")
+    cf_pay_rows = rows("cf_payables_change")
+    cf_tax_rows = rows("cf_income_tax_payable_change")
+    cf_unearned_rows = rows("cf_unearned_revenue_change")
+    purch_inv_rows = rows("purchases_of_investments")
+    proceeds_inv_rows = rows("proceeds_from_investments")
+    cf_recv_by_end = {r["end"]: r["val"] for r in _annual_rows(cf_recv_rows)}
+    cf_pay_by_end = {r["end"]: r["val"] for r in _annual_rows(cf_pay_rows)}
+    cf_tax_by_end = {r["end"]: r["val"] for r in _annual_rows(cf_tax_rows)}
+    cf_unearned_by_end = {r["end"]: r["val"] for r in _annual_rows(cf_unearned_rows)}
+    purch_inv_by_end = {r["end"]: r["val"] for r in _annual_rows(purch_inv_rows)}
+    proceeds_inv_by_end = {r["end"]: r["val"] for r in _annual_rows(proceeds_inv_rows)}
+    ltm_cf_receivables_change = _ltm_value(cf_recv_rows) or cf_recv_by_end.get(ends[-1], 0.0)
+    ltm_cf_payables_change = _ltm_value(cf_pay_rows) or cf_pay_by_end.get(ends[-1], 0.0)
+    ltm_cf_income_tax_payable_change = _ltm_value(cf_tax_rows) or cf_tax_by_end.get(ends[-1], 0.0)
+    ltm_cf_unearned_revenue_change = _ltm_value(cf_unearned_rows) or cf_unearned_by_end.get(ends[-1], 0.0)
+    ltm_purchases_of_investments = _ltm_value(purch_inv_rows) or purch_inv_by_end.get(ends[-1], 0.0)
+    ltm_proceeds_from_investments = _ltm_value(proceeds_inv_rows) or proceeds_inv_by_end.get(ends[-1], 0.0)
+
     return AnnualSeries(
         ticker=ticker,
         company_name=submissions.get("name") or ticker,
@@ -930,4 +984,16 @@ def load_annual_series_from_sec_edgar(
         ltm_interest_investment_income=ltm_interest_investment_income,
         ltm_business_acquisitions=ltm_business_acquisitions,
         ltm_stock_issuance=ltm_stock_issuance,
+        cf_receivables_change=_series_at(cf_recv_by_end),
+        cf_payables_change=_series_at(cf_pay_by_end),
+        cf_income_tax_payable_change=_series_at(cf_tax_by_end),
+        cf_unearned_revenue_change=_series_at(cf_unearned_by_end),
+        purchases_of_investments=_series_at(purch_inv_by_end),
+        proceeds_from_investments=_series_at(proceeds_inv_by_end),
+        ltm_cf_receivables_change=ltm_cf_receivables_change,
+        ltm_cf_payables_change=ltm_cf_payables_change,
+        ltm_cf_income_tax_payable_change=ltm_cf_income_tax_payable_change,
+        ltm_cf_unearned_revenue_change=ltm_cf_unearned_revenue_change,
+        ltm_purchases_of_investments=ltm_purchases_of_investments,
+        ltm_proceeds_from_investments=ltm_proceeds_from_investments,
     )

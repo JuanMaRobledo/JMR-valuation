@@ -299,30 +299,65 @@ def refresh_cash_flow_statement(sh, series) -> None:
     # Share-Based Compensation (fila 5) -- dato real de SEC EDGAR, antes en blanco.
     updates.append(("B5", [_history_row(series.share_based_comp, series.ltm_share_based_comp)]))
 
+    # Cambios de capital de trabajo (filas 7,8,10,11) -- dato real de SEC
+    # EDGAR, antes absorbidos enteros dentro de "Other Adjustments" (fila 6)
+    # por no tener el desglose. Signo XBRL = cuanto AUMENTO el activo/pasivo
+    # en el periodo; se ajusta a impacto de caja aca (activo que sube = usa
+    # caja, pasivo que sube = genera caja). Fila 9 (Accrued Expenses) no
+    # tiene tag propio en SEC EDGAR -- queda absorbida en "Other Adjustments"
+    # junto con cualquier otro ajuste no-monetario, no se inventa.
+    recv_change_cf = [-v for v in series.cf_receivables_change]
+    updates.append(("B7", [_history_row(recv_change_cf, -series.ltm_cf_receivables_change)]))
+    updates.append(("B8", [_history_row(series.cf_payables_change, series.ltm_cf_payables_change)]))
+    updates.append(("B10", [_history_row(series.cf_income_tax_payable_change, series.ltm_cf_income_tax_payable_change)]))
+    updates.append(("B11", [_history_row(series.cf_unearned_revenue_change, series.ltm_cf_unearned_revenue_change)]))
+
     # Other Adjustments (fila 6) -- plug para que Operating Activities sume
-    # al OCF REAL: no tenemos desglosados los cambios de capital de trabajo
-    # linea por linea (filas 7-12, quedan en blanco -- no se inventan), asi
-    # que esta fila absorbe TODOS esos cambios juntos con la comp. en
-    # acciones y cualquier otro ajuste no-monetario.
+    # al OCF REAL: resta las filas 7,8,10,11 (ya explicitas arriba) para no
+    # duplicarlas, y sigue absorbiendo el resto (Accrued Expenses sin tag,
+    # comp. en acciones ya en fila 5, y cualquier otro ajuste no-monetario).
     other_adj = [
-        ocf - ni - da - sbc
-        for ocf, ni, da, sbc in zip(
+        ocf - ni - da - sbc - recv - pay - tax - unearned
+        for ocf, ni, da, sbc, recv, pay, tax, unearned in zip(
             series.operating_cash_flow, series.net_income, series.da, series.share_based_comp,
+            recv_change_cf, series.cf_payables_change, series.cf_income_tax_payable_change,
+            series.cf_unearned_revenue_change,
         )
     ]
     ltm_other_adj = (
         series.ltm_operating_cash_flow - series.ltm_net_income - series.ltm_da - series.ltm_share_based_comp
+        - (-series.ltm_cf_receivables_change) - series.ltm_cf_payables_change
+        - series.ltm_cf_income_tax_payable_change - series.ltm_cf_unearned_revenue_change
     )
     updates.append(("B6", [_history_row(other_adj, ltm_other_adj)]))
 
+    # Compra/venta de inversiones (filas 17-18) -- dato real de SEC EDGAR
+    # ('PaymentsToAcquireInvestments'/'ProceedsFromMaturities...'), antes
+    # absorbidas enteras en "Other Investing Activities" (fila 21). Filas
+    # 16,19,20 (venta de PP&E, adquisiciones de negocios, desinversiones)
+    # siguen sin tag utilizable para el rango de anios de esta empresa --
+    # quedan en blanco, no se inventan.
+    purchases_inv_cf = [-v for v in series.purchases_of_investments]
+    updates.append(("B17", [_history_row(purchases_inv_cf, -series.ltm_purchases_of_investments)]))
+    updates.append(("B18", [_history_row(series.proceeds_from_investments, series.ltm_proceeds_from_investments)]))
+
     # Cash from Investing Activities (fila 22) = total REAL de SEC EDGAR.
-    # Other Investing Activities (fila 21) absorbe todo lo que no es CapEx
-    # (compra/venta de inversiones, adquisiciones, etc. -- no desglosadas
-    # linea por linea, filas 16-20 quedan en blanco) como plug contra ese
-    # total, para no inventar un desglose que EDGAR no da de forma limpia.
+    # Other Investing Activities (fila 21) resta CapEx y las filas 17-18
+    # (ya explicitas arriba) del total real como plug -- absorbe solo lo que
+    # de verdad no tiene desglose (adquisiciones de negocios, venta de
+    # PP&E, etc.).
     updates.append(("B22", [_history_row(series.investing_cash_flow, series.ltm_investing_cash_flow)]))
-    other_investing = [icf + cpx for icf, cpx in zip(series.investing_cash_flow, series.capex)]
-    ltm_other_investing = series.ltm_investing_cash_flow + series.ltm_capex
+    other_investing = [
+        icf + cpx + pinv - rinv
+        for icf, cpx, pinv, rinv in zip(
+            series.investing_cash_flow, series.capex, series.purchases_of_investments,
+            series.proceeds_from_investments,
+        )
+    ]
+    ltm_other_investing = (
+        series.ltm_investing_cash_flow + series.ltm_capex + series.ltm_purchases_of_investments
+        - series.ltm_proceeds_from_investments
+    )
     updates.append(("B21", [_history_row(other_investing, ltm_other_investing)]))
 
     # Cash from Financing Activities (fila 34) = total REAL. Net Issuance/
