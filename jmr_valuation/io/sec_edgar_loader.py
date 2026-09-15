@@ -403,6 +403,40 @@ def _instant_as_of(rows: list[dict] | None, as_of_date: str) -> float | None:
     return instants[-1]["val"] if instants else None
 
 
+def _latest_shares_outstanding(shares_rows: list[dict] | None, diluted_rows: list[dict] | None) -> float | None:
+    """Como _latest_instant, pero con fallback al promedio diluido del año
+    mas reciente cuando ese dato es MAS NUEVO que el ultimo instantaneo de
+    acciones (empresas de clase dual que dejan de taggear el conteo puntual
+    combinado -- ver docstring de _shares_outstanding_by_end). Usa
+    _instant_rows (CUALQUIER fecha, no solo cierres de ejercicio) para no
+    perder un 10-Q reciente frente a un 10-K viejo."""
+    instants = _instant_rows(shares_rows)
+    diluted_annual = _annual_rows(diluted_rows)
+    if not instants:
+        return diluted_annual[-1]["val"] if diluted_annual else None
+    if diluted_annual and diluted_annual[-1]["end"] > instants[-1]["end"]:
+        return diluted_annual[-1]["val"]
+    return instants[-1]["val"]
+
+
+def _shares_outstanding_by_end(shares_rows: list[dict] | None, diluted_rows: list[dict] | None) -> dict[str, float]:
+    """Acciones en circulacion PUNTUALES (CommonStockSharesOutstanding /
+    EntityCommonStockSharesOutstanding), con fallback al promedio ponderado
+    diluido de ESE año para los cierres donde el conteo puntual no esta
+    disponible. Empresas con clases duales de accion (DUOL confirmado:
+    Class A/Class B) a veces dejan de taggear el conteo puntual combinado
+    despues del IPO -- el dato pasa a reportarse solo en el cover page
+    (dei:EntityCommonStockSharesOutstanding) desglosado POR CLASE, que la
+    API de companyfacts no expone sin dimensiones XBRL que este loader no
+    parsea. El promedio diluido del año es la mejor aproximacion real
+    disponible al conteo actual (no una invencion), y sigue reportandose
+    todos los años aunque el conteo puntual haya dejado de aparecer."""
+    by_end = {r["end"]: r["val"] for r in _annual_instant_rows(shares_rows)}
+    for r in _annual_rows(diluted_rows):
+        by_end.setdefault(r["end"], r["val"])
+    return by_end
+
+
 def _avg_ratio(numerator_rows: list[dict] | None, denominator_annual: list[dict], n: int = 5) -> float:
     numerator_annual = _annual_rows(numerator_rows)
     if not numerator_annual or not denominator_annual:
@@ -541,7 +575,8 @@ def load_company_inputs_from_sec_edgar(
     minority_interests = _latest_instant(rows("minority_interest")) or 0.0
 
     shares_rows = _concept_rows(gaap, "shares_outstanding", units=("shares",), extra=dei)
-    shares_outstanding = _to_millions(_latest_instant(shares_rows))
+    diluted_rows_for_shares = rows("diluted_shares_avg", units=("shares",))
+    shares_outstanding = _to_millions(_latest_shares_outstanding(shares_rows, diluted_rows_for_shares))
     shares_annual = _annual_instant_rows(shares_rows)
 
     tax_annual = _annual_rows(rows("tax_expense"))
@@ -790,7 +825,8 @@ def load_annual_series_from_sec_edgar(
     da_by_end = {r["end"]: r["val"] for r in _annual_rows(da_rows)}
 
     shares_rows = _concept_rows(gaap, "shares_outstanding", units=("shares",), extra=dei)
-    shares_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(shares_rows)}
+    diluted_rows = rows("diluted_shares_avg", units=("shares",))
+    shares_by_end = _shares_outstanding_by_end(shares_rows, diluted_rows)
     lt_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("long_term_debt"))}
     cur_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_debt"))}
     cash_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("cash"))}
@@ -813,7 +849,6 @@ def load_annual_series_from_sec_edgar(
     # BASICO (no diluido) para algun anio, se completa con ese -- mejor
     # aproximacion real que dejar el anio en 0 (que arruinaria EPS/FCFF per
     # share de ese punto especifico en las hojas de multiplos).
-    diluted_rows = rows("diluted_shares_avg", units=("shares",))
     basic_rows = rows("basic_shares_avg", units=("shares",))
     diluted_by_end = {r["end"]: r["val"] for r in _annual_rows(diluted_rows)}
     basic_by_end = {r["end"]: r["val"] for r in _annual_rows(basic_rows)}
