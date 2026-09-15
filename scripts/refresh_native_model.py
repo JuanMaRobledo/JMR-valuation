@@ -579,9 +579,17 @@ def refresh_period_headers(sh, series) -> None:
     Solo se reescriben las celdas que son TEXTO literal -- las que ya son
     formula (p.ej. POCF/PFCFE/Financials Multiples, que leen
     ='Income Statement'!I2) se corrigen solas en cuanto se arregla Income
-    Statement, y no hace falta (ni conviene) tocarlas aca."""
+    Statement, y no hace falta (ni conviene) tocarlas aca.
+
+    Empresas con menos de 10 años de historico (p.ej. DUOL, IPO 2021: solo
+    6 años) rellenan las columnas mas viejas -- OJO: NO se puede escribir
+    "" (string vacio) ahi. Al menos 'Income Statement' y 'Trailing
+    Valuation' tienen ese rango configurado como Tabla de Sheets, que
+    autogenera "Columna 2", "Columna 3"... para cualquier celda de
+    encabezado vacia (confirmado: ni siquiera un clear() explicito lo
+    saca, hay que escribir algo no-vacio). Se usa "—" como placeholder."""
     labels = [_fiscal_year_label(d) for d in series.fiscal_year_ends]
-    labels_10y = [""] * (10 - len(labels)) + labels if len(labels) < 10 else labels[-10:]
+    labels_10y = ["—"] * (10 - len(labels)) + labels if len(labels) < 10 else labels[-10:]
     labels_4y = labels_10y[-4:]
 
     for name in _HEADER_10Y_SHEETS:
