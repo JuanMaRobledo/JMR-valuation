@@ -48,6 +48,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import date, timedelta
 
 from dataclasses import dataclass, replace
 
@@ -108,10 +109,16 @@ def _safe_div(a: float | None, b: float | None) -> float | None:
     return a / b if (a is not None and b) else None
 
 
-def refresh_input_sheet(sh, ticker: str, company_inputs, industry_us: str, industry_global: str) -> None:
+def refresh_input_sheet(sh, ticker: str, company_inputs, industry_us: str, industry_global: str, market) -> None:
+    """A1 lleva 'Nombre (BOLSA:TICKER)' -- no solo el ticker crudo -- porque
+    el visor (Modelo-JMR, docs/visor.html) parsea esa celda con un regex para
+    mostrar nombre/ticker/bolsa por separado; si A1 fuera solo el ticker, el
+    visor cae a mostrarlo como nombre plano sin reconocer bolsa/ticker. D1
+    (GOOGLEFINANCE) extrae el ticker de A1 con REGEXEXTRACT, asi que sigue
+    funcionando igual con este formato."""
     ws = sh.worksheet("Input sheet")
     _apply(ws, [
-        ("A1", [[ticker]]),
+        ("A1", [[f"{company_inputs.company_name} ({market.exchange}:{ticker})"]]),
         ("B5", [[company_inputs.company_name]]),
         ("B8", [[company_inputs.country_of_incorporation]]),
         ("B9", [[industry_us]]),
@@ -119,16 +126,39 @@ def refresh_input_sheet(sh, ticker: str, company_inputs, industry_us: str, indus
     ])
 
 
-def refresh_resumen_valoracion(sh, market) -> None:
+def refresh_resumen_valoracion(sh, ticker: str, market) -> None:
     """'Resumen de Valoración'!C25 ('Precio al Día del Análisis') es un VALOR
     ESTATICO a proposito, no una formula -- 'Precio de Hoy' (B24) ya esta
     siempre vivo via GOOGLEFINANCE ('Input sheet'!D1), asi que si esta celda
-    tambien fuera una formula ambas mostrarian siempre el mismo numero. Al
-    quedar congelada con el precio de mercado del momento exacto en que se
-    corre este script, el usuario puede volver dias despues y comparar el
-    precio de HOY contra el que habia cuando se hizo el analisis."""
+    tambien fuera una formula ambas mostrarian siempre el mismo numero.
+
+    El precio que se congela ahi tiene que ser el cierre real del dia que el
+    analista fijo como 'Date of valuation' ('Input sheet'!B4) -- no el precio
+    de mercado del momento exacto en que se corre este script (que puede caer
+    cualquier dia despues de esa fecha). Se lee B4 (serial de fecha de Google
+    Sheets, epoch 30-dic-1899) y se pide el cierre real via
+    get_historical_close_prices; si esa fecha es muy reciente para tener
+    cierre disponible (o B4 esta vacio), cae de vuelta al precio actual como
+    mejor aproximacion disponible."""
     ws = sh.worksheet("Resumen de Valoración")
-    _apply(ws, [("C25", [[round(market.current_price, 2)]])])
+    input_ws = sh.worksheet("Input sheet")
+    b4_serial = input_ws.acell("B4", value_render_option="UNFORMATTED_VALUE").value
+
+    price = market.current_price
+    if isinstance(b4_serial, (int, float)):
+        valuation_date = (date(1899, 12, 30) + timedelta(days=int(b4_serial))).isoformat()
+        historical = get_historical_close_prices(ticker, [valuation_date])[0]
+        if historical is not None:
+            price = historical
+        else:
+            print(
+                f"  (sin cierre historico para {ticker} en o antes de {valuation_date} -- "
+                "uso el precio actual como aproximacion)"
+            )
+    else:
+        print("  (Input sheet!B4 esta vacio o no es una fecha -- uso el precio actual)")
+
+    _apply(ws, [("C25", [[round(price, 2)]])])
 
 
 def refresh_income_statement(sh, series, company_inputs) -> None:
@@ -1058,7 +1088,7 @@ def run(
     sh = open_target_sheet(client, sheet_id)
 
     print(f"[2/12] Actualizando Input sheet (ticker={ticker}, industria={industry_us})...")
-    refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global)
+    refresh_input_sheet(sh, ticker, company_inputs, industry_us, industry_global, market)
 
     print("[3/12] Repoblando historico completo de Income Statement / Cash Flow Statement / Balance Sheet...")
     refresh_income_statement(sh, series, company_inputs)
@@ -1087,8 +1117,8 @@ def run(
     print(f"[10/12] Refrescando pestaña Sector ({ticker} + {', '.join(peer_tickers)})...")
     refresh_sector(sh, ticker, peer_tickers)
 
-    print("[11/12] Congelando precio del día del análisis en 'Resumen de Valoración'...")
-    refresh_resumen_valoracion(sh, market)
+    print("[11/12] Congelando precio del día del análisis (cierre real en Input sheet!B4) en 'Resumen de Valoración'...")
+    refresh_resumen_valoracion(sh, ticker, market)
 
     print(f"[12/12] Listo: {sh.url}")
 

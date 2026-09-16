@@ -29,6 +29,27 @@ class MarketSnapshot:
     total_debt: float | None
     total_cash: float | None
     beta: float | None = None   # beta apalancado (regresion de Yahoo contra el mercado) -- para WACC automatico
+    exchange: str = "NASDAQ"    # bolsa legible (NASDAQ/NYSE/...) -- ver _display_exchange
+
+
+# yfinance da el codigo corto de MIC/Yahoo en info["exchange"] (ej. "NMS" para
+# Nasdaq Global Select) -- no el nombre legible. Mapeo pragmatico de los casos
+# mas comunes para EE.UU.; lo que no matchea cae al propio codigo devuelto por
+# yfinance en vez de inventar un nombre.
+_EXCHANGE_MAP = {
+    "NMS": "NASDAQ", "NGM": "NASDAQ", "NCM": "NASDAQ",
+    "NYQ": "NYSE", "ASE": "NYSE American", "PCX": "NYSE Arca", "PNK": "OTC",
+}
+
+
+def _display_exchange(info: dict) -> str:
+    full = info.get("fullExchangeName") or ""
+    if "nasdaq" in full.lower():
+        return "NASDAQ"
+    if "new york stock exchange" in full.lower() or full.upper() == "NYSE":
+        return "NYSE"
+    code = info.get("exchange") or ""
+    return _EXCHANGE_MAP.get(code, code or "NASDAQ")
 
 
 def get_market_snapshot(ticker: str) -> MarketSnapshot:
@@ -48,6 +69,7 @@ def get_market_snapshot(ticker: str) -> MarketSnapshot:
         total_debt=info.get("totalDebt"),
         total_cash=info.get("totalCash"),
         beta=info.get("beta"),
+        exchange=_display_exchange(info),
     )
 
 
