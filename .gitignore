@@ -4,3 +4,4 @@ __pycache__/
 .env
 data/saved_companies/
 credentials/
+.venv/
