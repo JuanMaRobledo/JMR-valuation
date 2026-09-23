@@ -24,7 +24,11 @@ Backup de cada formula pisada: reference/backups/plantilla_maestra_formula_backu
 (y el estado completo previo en plantilla_maestra_pre_fix_formulas.json.gz).
 
 Uso:
-    PYTHONPATH=.:scripts python scripts/fix_master_template.py
+    PYTHONPATH=.:scripts python scripts/fix_master_template.py [--sheet-id ID --backup NOMBRE]
+
+Con --sheet-id se aplica a otra copia EN BLANCO de la plantilla (no a una
+valoracion ya hecha: estos fixes pisan formulas de escenarios que en una
+valoracion suelen estar personalizadas).
 """
 from __future__ import annotations
 
@@ -42,8 +46,16 @@ MASTER_SHEET_ID = "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g"
 BACKUP_PATH = _ROOT / "reference" / "backups" / "plantilla_maestra_formula_backup.json"
 
 
-def main() -> int:
-    sh = ms.open_sheet(MASTER_SHEET_ID)
+def main(argv: list[str]) -> int:
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--sheet-id", default=MASTER_SHEET_ID)
+    parser.add_argument("--backup", default=None, help="nombre del archivo de backup en reference/backups/")
+    args = parser.parse_args(argv)
+    global BACKUP_PATH
+    if args.backup:
+        BACKUP_PATH = BACKUP_PATH.parent / args.backup
+    sh = ms.open_sheet(args.sheet_id)
     ms.fix_template_bugs(sh, BACKUP_PATH)
     ms.fix_nwc_projection(sh, BACKUP_PATH)
     ms.write_with_backup(sh, "Input sheet", {"B20": "='Balance Sheet'!L14"},
@@ -57,4 +69,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(main(sys.argv[1:]))
