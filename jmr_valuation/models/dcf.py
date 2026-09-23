@@ -126,8 +126,25 @@ def run_dcf(
     sales_to_capital_years_6_10: float,
     invested_capital_base: float,  # ya incluye ajustes de leasing/I+D
     nol_carryforward: float = 0.0,
+    growth_convergence_years: int | None = None,
 ) -> DcfResult:
-    """Proyecta 10 anios + terminal y descuenta a valor presente (filas 3-42 de 'Valuation output')."""
+    """Proyecta 10 anios + terminal y descuenta a valor presente (filas 3-42 de 'Valuation output').
+
+    growth_convergence_years=None (default): comportamiento original de
+    'Valuation output' -- Año1 explicito, Años2-5 planos, Años6-10 convergen
+    linealmente a crecimiento estable en exactamente 5 años. No lo usa
+    valuation.py (motor original), no cambia nada para ese caller.
+
+    growth_convergence_years=N: crecimiento converge linealmente desde
+    year1_growth hacia crecimiento estable a lo largo de N años (empieza a
+    converger desde el Año1, no recien en el Año6), igual que ya hace el
+    margen EBIT con year_of_margin_convergence -- una curva continua en vez
+    de "plano 4 años + caida brusca", mas parecido a como una empresa real
+    desacelera. Es la formula de 'Motor de Supuestos v2' (fila 67 del Excel),
+    usada por assumptions_engine.py con el N propio de cada escenario
+    (Conservador=5, Base=7, Optimista=10 años -- mas años de crecimiento
+    elevado en el caso optimista, consistente con la historia que cuenta ese
+    escenario, no solo con un numero mas alto)."""
 
     terminal_growth = terminal.terminal_growth()
     terminal_wacc = terminal.terminal_wacc()
@@ -146,7 +163,15 @@ def run_dcf(
 
     for year in range(1, N_EXPLICIT_YEARS + 1):
         # --- crecimiento de ingresos (fila 4) ---
-        if year == 1:
+        if growth_convergence_years is not None:
+            if year <= growth_convergence_years:
+                growth = _converge_linear(
+                    growth_path.year1_growth, terminal_growth,
+                    max(growth_convergence_years - 1, 1), year - 1,
+                )
+            else:
+                growth = terminal_growth
+        elif year == 1:
             growth = growth_path.year1_growth
         elif 2 <= year <= 5:
             growth = growth_path.years_2_to_5_growth

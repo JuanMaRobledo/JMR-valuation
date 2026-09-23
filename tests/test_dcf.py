@@ -35,6 +35,48 @@ def test_flat_scenario_terminal_value_matches_perpetuity_formula():
     assert growth_rates == {0.05}
 
 
+def test_growth_convergence_years_fades_smoothly_from_year1_matching_excel_formula():
+    """growth_convergence_years=N replica la formula de 'Motor de Supuestos v2'
+    (fila 67): converge linealmente desde year1_growth hacia el crecimiento
+    estable a lo largo de N años EMPEZANDO EN EL AÑO 1 (no recien en el año 6
+    como el motor original), y queda plano en el crecimiento estable despues."""
+    growth = GrowthAndMarginPath(year1_growth=0.20, years_2_to_5_growth=0.20, target_ebit_margin=0.30)
+    terminal = TerminalAssumptions(riskfree_rate=0.05, terminal_growth_override=0.05)
+    result = run_dcf(
+        base_revenue=1000, base_ebit=300, growth_path=growth,
+        initial_ebit_margin=0.30, initial_cost_of_capital=0.09, terminal=terminal,
+        initial_tax_rate=0.25, marginal_tax_rate=0.25, tax_rate_converges_to_marginal=False,
+        sales_to_capital_years_1_5=2.0, sales_to_capital_years_6_10=2.0,
+        invested_capital_base=1500, growth_convergence_years=5,
+    )
+    growth_rates = [y.revenue_growth for y in result.years]
+    # formula excel: g_year1 - ((g_year1-g_estable)/(N-1))*(year-1)
+    expected = [0.20 - ((0.20 - 0.05) / 4) * (year - 1) for year in range(1, 6)] + [0.05] * 5
+    for actual, exp in zip(growth_rates, expected):
+        assert math.isclose(actual, exp, rel_tol=1e-9)
+    assert math.isclose(growth_rates[0], 0.20, rel_tol=1e-9)   # año 1 = crecimiento inicial exacto
+    assert math.isclose(growth_rates[4], 0.05, rel_tol=1e-9)   # año 5 (=N) = crecimiento estable exacto
+    assert math.isclose(growth_rates[9], 0.05, rel_tol=1e-9)   # se mantiene plano despues
+
+
+def test_growth_convergence_years_none_keeps_original_behavior():
+    """Sin el parametro (o en None), run_dcf no cambia -- el motor original
+    (valuation.py) nunca lo pasa, no debe verse afectado por este cambio."""
+    growth = GrowthAndMarginPath(year1_growth=0.20, years_2_to_5_growth=0.15, target_ebit_margin=0.30)
+    terminal = TerminalAssumptions(riskfree_rate=0.05, terminal_growth_override=0.05)
+    kwargs = dict(
+        base_revenue=1000, base_ebit=300, growth_path=growth,
+        initial_ebit_margin=0.30, initial_cost_of_capital=0.09, terminal=terminal,
+        initial_tax_rate=0.25, marginal_tax_rate=0.25, tax_rate_converges_to_marginal=False,
+        sales_to_capital_years_1_5=2.0, sales_to_capital_years_6_10=2.0, invested_capital_base=1500,
+    )
+    default_result = run_dcf(**kwargs)
+    explicit_none_result = run_dcf(**kwargs, growth_convergence_years=None)
+    assert [y.revenue for y in default_result.years] == [y.revenue for y in explicit_none_result.years]
+    assert default_result.years[0].revenue_growth == 0.20
+    assert default_result.years[1].revenue_growth == 0.15  # Año2-5 plano, distinto del Año1 -- comportamiento original
+
+
 def test_revenue_compounds_at_the_given_growth_rate():
     growth = GrowthAndMarginPath(year1_growth=0.10, years_2_to_5_growth=0.10, target_ebit_margin=0.20)
     terminal = TerminalAssumptions(riskfree_rate=0.04)

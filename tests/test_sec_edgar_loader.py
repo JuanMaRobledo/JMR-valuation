@@ -1,7 +1,12 @@
 import pytest
 
 from jmr_valuation.io.sec_edgar_client import SecEdgarError
-from jmr_valuation.io.sec_edgar_loader import _annual_rows, _ltm_value, load_company_inputs_from_sec_edgar
+from jmr_valuation.io.sec_edgar_loader import (
+    _annual_rows,
+    _ltm_value,
+    load_annual_series_from_sec_edgar,
+    load_company_inputs_from_sec_edgar,
+)
 
 M = 1_000_000  # los valores de SEC EDGAR vienen en USD/acciones crudos, no en millones
 
@@ -29,6 +34,13 @@ def _usd_node(rows):
 
 def _shares_node(rows):
     return {"units": {"shares": rows}}
+
+
+def _quarterly_shares(start, end, val):
+    """Acciones diluidas promedio de UN trimestre -- a diferencia de
+    ingresos/EBIT, este concepto NUNCA se reporta acumulado desde el inicio
+    del ejercicio, asi que cada trimestre ya es discreto tal cual viene."""
+    return {"start": start, "end": end, "val": val, "form": "10-Q", "fp": "Q1", "filed": end}
 
 
 def _per_share_node(rows):
@@ -101,6 +113,44 @@ def _build_facts() -> dict:
             _annual("2023-12-31", 10 * M), _annual("2024-12-31", 20 * M),
         ]),
         "DeferredTaxAssetsOperatingLossCarryforwards": _usd_node([_instant("2024-12-31", 30 * M)]),
+        "NetIncomeLoss": _usd_node([_annual("2023-12-31", 240 * M), _annual("2024-12-31", 300 * M)]),
+        "NetCashProvidedByUsedInOperatingActivities": _usd_node([
+            _annual("2023-12-31", 350 * M), _annual("2024-12-31", 400 * M),
+        ]),
+        "PaymentsForRepurchaseOfCommonStock": _usd_node([
+            _annual("2023-12-31", 30 * M), _annual("2024-12-31", 40 * M),
+        ]),
+        "PaymentsOfDividendsCommonStock": _usd_node([
+            _annual("2023-12-31", 15 * M), _annual("2024-12-31", 18 * M),
+        ]),
+        "CostOfRevenue": _usd_node([_annual("2023-12-31", 300 * M), _annual("2024-12-31", 330 * M)]),
+        "Assets": _usd_node([_instant("2023-12-31", 900 * M), _instant("2024-12-31", 1000 * M)]),
+        "Liabilities": _usd_node([_instant("2023-12-31", 400 * M), _instant("2024-12-31", 430 * M)]),
+        "ShareBasedCompensation": _usd_node([_annual("2023-12-31", 25 * M), _annual("2024-12-31", 28 * M)]),
+        "NetCashProvidedByUsedInInvestingActivities": _usd_node([
+            _annual("2023-12-31", -80 * M), _annual("2024-12-31", -90 * M),
+        ]),
+        "NetCashProvidedByUsedInFinancingActivities": _usd_node([
+            _annual("2023-12-31", -60 * M), _annual("2024-12-31", -70 * M),
+        ]),
+        "AccountsReceivableNetCurrent": _usd_node([_instant("2023-12-31", 70 * M), _instant("2024-12-31", 80 * M)]),
+        "PropertyPlantAndEquipmentNet": _usd_node([_instant("2023-12-31", 150 * M), _instant("2024-12-31", 170 * M)]),
+        "Goodwill": _usd_node([_instant("2023-12-31", 200 * M), _instant("2024-12-31", 200 * M)]),
+        "AccountsPayableCurrent": _usd_node([_instant("2023-12-31", 40 * M), _instant("2024-12-31", 45 * M)]),
+        "AdditionalPaidInCapital": _usd_node([_instant("2023-12-31", 300 * M), _instant("2024-12-31", 320 * M)]),
+        "RetainedEarningsAccumulatedDeficit": _usd_node([
+            _instant("2023-12-31", 250 * M), _instant("2024-12-31", 290 * M),
+        ]),
+        "AccumulatedOtherComprehensiveIncomeLossNetOfTax": _usd_node([
+            _instant("2023-12-31", -5 * M), _instant("2024-12-31", -4 * M),
+        ]),
+        "WeightedAverageNumberOfDilutedSharesOutstanding": _shares_node([
+            _annual("2023-12-31", 98 * M), _annual("2024-12-31", 103 * M),
+            _quarterly_shares("2025-01-01", "2025-03-31", 106 * M),
+            _quarterly_shares("2025-04-01", "2025-06-30", 106.5 * M),
+            _quarterly_shares("2025-07-01", "2025-09-30", 107 * M),
+            _quarterly_shares("2025-10-01", "2025-12-30", 107.5 * M),
+        ]),
     }
     return {"cik": 1, "entityName": "TEST CORP", "facts": {"us-gaap": gaap}}
 
@@ -157,6 +207,159 @@ def test_loads_core_financials_from_ltm_and_last_10k(fake_client):
 
     assert inputs.effective_tax_rate == pytest.approx(0.2)
     assert inputs.dividend_per_share_ltm == pytest.approx(0.6)
+
+
+def test_annual_series_returns_full_history_and_ltm(fake_client):
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+
+    assert series.ticker == "TEST"
+    assert series.company_name == "TEST CORP"
+    assert series.fiscal_year_ends == ["2023-12-31", "2024-12-31"]
+    assert series.revenue == pytest.approx([900.0 * M, 1000.0 * M])
+    assert series.ebit == pytest.approx([300.0 * M, 360.0 * M])
+    assert series.long_term_debt == pytest.approx([200.0 * M, 220.0 * M])
+    assert series.current_debt == pytest.approx([30.0 * M, 35.0 * M])
+    assert series.cash == pytest.approx([100.0 * M, 120.0 * M])
+    assert series.ltm_revenue == pytest.approx(1100.0 * M)  # suma de los 4 trimestres
+    assert series.ltm_ebit == pytest.approx(390.0 * M)
+
+
+def test_annual_series_includes_income_statement_and_cash_flow_extras(fake_client):
+    """Regresion: estos campos alimentan Income Statement (taxes/net income/
+    EPS/acciones diluidas), Cash Flow Statement (OCF/CapEx/buybacks/
+    dividendos) y Trailing/Forward Valuation (multiplos historicos reales)
+    en refresh_native_model.py -- ver docstring de AnnualSeries."""
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+
+    assert series.net_income == pytest.approx([240.0 * M, 300.0 * M])
+    assert series.tax_expense == pytest.approx([0.0, 60.0 * M])  # solo 2024 en el fixture
+    assert series.operating_cash_flow == pytest.approx([350.0 * M, 400.0 * M])
+    assert series.buybacks == pytest.approx([30.0 * M, 40.0 * M])
+    assert series.dividends_paid == pytest.approx([15.0 * M, 18.0 * M])
+    assert series.cogs == pytest.approx([300.0 * M, 330.0 * M])
+    assert series.diluted_shares_avg == pytest.approx([98.0 * M, 103.0 * M])
+
+    assert series.ltm_net_income == pytest.approx(300.0 * M)  # sin trimestres -> ultimo 10-K
+    assert series.ltm_tax_expense == pytest.approx(60.0 * M)
+    assert series.ltm_operating_cash_flow == pytest.approx(400.0 * M)
+    assert series.ltm_capex == pytest.approx(25.0 * M)  # ya existia como campo "capex"
+    assert series.ltm_buybacks == pytest.approx(40.0 * M)
+    assert series.ltm_dividends_paid == pytest.approx(18.0 * M)
+    assert series.ltm_cogs == pytest.approx(330.0 * M)
+
+    # Acciones diluidas promedio LTM: PROMEDIA (no suma) los ultimos 4
+    # trimestres discretos si son contiguos -- ver docstring de
+    # _ltm_average_value (sumarlos daria ~4x el valor real).
+    assert series.ltm_diluted_shares_avg == pytest.approx((106 + 106.5 + 107 + 107.5) / 4 * M)
+
+
+def test_annual_series_includes_balance_sheet_and_cash_flow_detail(fake_client):
+    """Regresion: estas filas (Income Statement COGS/SG&A/R&D/pretax,
+    Balance Sheet Total Assets/Liabilities/Equity/Receivables/PP&E/Goodwill/
+    AP/equity components, Cash Flow SBC/investing/financing) quedaban en
+    blanco en la plantilla -- ver refresh_native_model.py."""
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+
+    assert series.rd == pytest.approx([190.0 * M, 210.0 * M])
+    assert series.total_assets == pytest.approx([900.0 * M, 1000.0 * M])
+    assert series.total_liabilities == pytest.approx([400.0 * M, 430.0 * M])
+    assert series.equity == pytest.approx([500.0 * M, 600.0 * M])  # StockholdersEquity, ya en el fixture base
+    assert series.share_based_comp == pytest.approx([25.0 * M, 28.0 * M])
+    assert series.investing_cash_flow == pytest.approx([-80.0 * M, -90.0 * M])
+    assert series.financing_cash_flow == pytest.approx([-60.0 * M, -70.0 * M])
+    assert series.receivables == pytest.approx([70.0 * M, 80.0 * M])
+    assert series.ppe_net == pytest.approx([150.0 * M, 170.0 * M])
+    assert series.goodwill == pytest.approx([200.0 * M, 200.0 * M])
+    assert series.accounts_payable == pytest.approx([40.0 * M, 45.0 * M])
+    assert series.apic == pytest.approx([300.0 * M, 320.0 * M])
+    assert series.retained_earnings == pytest.approx([250.0 * M, 290.0 * M])
+    assert series.aoci == pytest.approx([-5.0 * M, -4.0 * M])
+    assert series.interest_expense == pytest.approx([10.0 * M, 12.0 * M])  # InterestExpense, ya en el fixture base
+
+    assert series.ltm_share_based_comp == pytest.approx(28.0 * M)  # sin trimestres -> ultimo 10-K
+    assert series.ltm_investing_cash_flow == pytest.approx(-90.0 * M)
+    assert series.ltm_financing_cash_flow == pytest.approx(-70.0 * M)
+
+
+def test_sga_sums_admin_and_selling_expense_when_company_reports_them_separately():
+    """Regresion: MSFT (y varias empresas mas) NO reporta el tag combinado
+    'SellingGeneralAndAdministrativeExpense' -- reporta
+    'GeneralAndAdministrativeExpense' y 'SellingAndMarketingExpense' como
+    DOS lineas separadas. Sin este fallback, la fila de SG&A quedaba en
+    blanco (0.0) para esas empresas en vez de sumar ambas."""
+    facts = _build_facts()
+    facts["facts"]["us-gaap"]["GeneralAndAdministrativeExpense"] = _usd_node([
+        _annual("2023-12-31", 80 * M), _annual("2024-12-31", 90 * M),
+    ])
+    facts["facts"]["us-gaap"]["SellingAndMarketingExpense"] = _usd_node([
+        _annual("2023-12-31", 120 * M), _annual("2024-12-31", 130 * M),
+    ])
+    client = _FakeClient(facts, _build_submissions())
+
+    series = load_annual_series_from_sec_edgar("TEST", client=client)
+
+    assert series.sga == pytest.approx([200.0 * M, 220.0 * M])
+    assert series.ltm_sga == pytest.approx(220.0 * M)
+
+
+def test_sga_prefers_combined_tag_over_summing_parts_when_both_present():
+    """Si la empresa SI reporta el tag combinado, se usa ese directo -- no
+    se suma ademas con admin/selling (evitaria doble conteo si algunas
+    empresas reportan ambos por transicion de un tag al otro)."""
+    facts = _build_facts()
+    facts["facts"]["us-gaap"]["SellingGeneralAndAdministrativeExpense"] = _usd_node([
+        _annual("2023-12-31", 250 * M), _annual("2024-12-31", 275 * M),
+    ])
+    facts["facts"]["us-gaap"]["GeneralAndAdministrativeExpense"] = _usd_node([
+        _annual("2023-12-31", 80 * M), _annual("2024-12-31", 90 * M),
+    ])
+    facts["facts"]["us-gaap"]["SellingAndMarketingExpense"] = _usd_node([
+        _annual("2023-12-31", 120 * M), _annual("2024-12-31", 130 * M),
+    ])
+    client = _FakeClient(facts, _build_submissions())
+
+    series = load_annual_series_from_sec_edgar("TEST", client=client)
+
+    assert series.sga == pytest.approx([250.0 * M, 275.0 * M])
+
+
+def test_da_sums_depreciation_and_amortization_when_company_reports_them_separately():
+    """Regresion real: MSFT NO reporta NINGUNO de los tags combinados de D&A
+    ('DepreciationDepletionAndAmortization', etc.) -- reporta 'Depreciation'
+    y 'AmortizationOfIntangibleAssets' como dos lineas separadas. Sin este
+    fallback, 'da' quedaba en 0.0 para MSFT: EBITDA terminaba IGUAL a EBIT
+    en todo el modelo (Income Statement, Financials Multiples, EV/EBITDA), y
+    sobre todo, FCFF/FCFE perdian el resello de D&A (~$39.000M/año para
+    MSFT), lo que llevo el precio objetivo de 'EV/FCFF'/'P/FCFE' a numeros
+    profundamente negativos en la hoja en vivo."""
+    facts = _build_facts()
+    del facts["facts"]["us-gaap"]["DepreciationDepletionAndAmortization"]
+    facts["facts"]["us-gaap"]["Depreciation"] = _usd_node([
+        _annual("2023-12-31", 30 * M), _annual("2024-12-31", 35 * M),
+    ])
+    facts["facts"]["us-gaap"]["AmortizationOfIntangibleAssets"] = _usd_node([
+        _annual("2023-12-31", 10 * M), _annual("2024-12-31", 12 * M),
+    ])
+    client = _FakeClient(facts, _build_submissions())
+
+    series = load_annual_series_from_sec_edgar("TEST", client=client)
+
+    assert series.da == pytest.approx([40.0 * M, 47.0 * M])
+    assert series.ltm_da == pytest.approx(47.0 * M)
+
+
+def test_da_prefers_combined_tag_over_summing_parts_when_both_present(fake_client):
+    """Si la empresa SI reporta un tag combinado de D&A (el fixture base usa
+    'DepreciationDepletionAndAmortization'), se usa ese directo -- no se
+    suma ademas con Depreciation/AmortizationOfIntangibleAssets."""
+    series = load_annual_series_from_sec_edgar("TEST", client=fake_client)
+    assert series.da == pytest.approx([40.0 * M, 45.0 * M])  # valores del fixture base, sin sumar nada mas
+
+
+def test_annual_series_truncates_to_requested_years(fake_client):
+    series = load_annual_series_from_sec_edgar("TEST", years=1, client=fake_client)
+    assert series.fiscal_year_ends == ["2024-12-31"]
+    assert series.revenue == pytest.approx([1000.0 * M])
 
 
 def test_computes_historical_margins_and_ratios(fake_client):
@@ -422,3 +625,57 @@ def test_loader_ignores_quarterly_footnote_when_computing_prior_10k_revenue(fake
     # (el trimestre) como base en vez de 900M (el anio real 2023).
     assert inputs.revenue_prior_10k == pytest.approx(1000.0)
     assert inputs.revenue_growth_next_year == pytest.approx(1000 / 900 - 1)
+
+
+def test_ltm_when_10q_reports_both_discrete_quarter_and_ytd_with_same_end():
+    """Regresion PYPL: cada 10-Q trae el trimestre (3M) Y el acumulado (6M/9M)
+    con la MISMA fecha de cierre. Deduplicar solo por 'end' se quedaba con
+    uno cualquiera; si sobrevivia el 3M de Q3, no habia 9M para derivar
+    Q4 = anual - 9M y el LTM caia al ultimo 10-K."""
+    from jmr_valuation.io.sec_edgar_loader import _concept_rows
+
+    rows = [
+        {"start": "2025-01-01", "end": "2025-03-31", "val": 731 * M, "form": "10-Q", "fp": "Q1", "filed": "2025-04-29"},
+        {"start": "2025-04-01", "end": "2025-06-30", "val": 767 * M, "form": "10-Q", "fp": "Q2", "filed": "2025-07-29"},
+        {"start": "2025-01-01", "end": "2025-06-30", "val": 1498 * M, "form": "10-Q", "fp": "Q2", "filed": "2025-07-29"},
+        {"start": "2025-07-01", "end": "2025-09-30", "val": 801 * M, "form": "10-Q", "fp": "Q3", "filed": "2025-10-28"},
+        {"start": "2025-01-01", "end": "2025-09-30", "val": 2299 * M, "form": "10-Q", "fp": "Q3", "filed": "2025-10-28"},
+        {"start": "2025-01-01", "end": "2025-12-31", "val": 3103 * M, "form": "10-K", "fp": "FY", "filed": "2026-02-03"},
+        {"start": "2026-01-01", "end": "2026-03-31", "val": 793 * M, "form": "10-Q", "fp": "Q1", "filed": "2026-05-05"},
+        {"start": "2026-04-01", "end": "2026-06-30", "val": 849 * M, "form": "10-Q", "fp": "Q2", "filed": "2026-07-28"},
+        {"start": "2026-01-01", "end": "2026-06-30", "val": 1642 * M, "form": "10-Q", "fp": "Q2", "filed": "2026-07-28"},
+    ]
+    merged = _concept_rows({"ResearchAndDevelopmentExpense": {"units": {"USD": rows}}}, "rd")
+
+    # Q3-25 (801) + Q4-25 (3103-2299=804) + Q1-26 (793) + Q2-26 (849) = 3247
+    assert _ltm_value(merged) == pytest.approx(3247 * M)
+
+
+def test_pretax_income_synthesized_from_net_income_plus_tax_when_total_tag_missing():
+    """Regresion PYPL: desde 2023 solo taggea el desglose Domestic/Foreign del
+    resultado antes de impuestos. El tag Domestic (~US$1.000M) se usaba como
+    total y la tasa efectiva daba >100%."""
+    from jmr_valuation.io.sec_edgar_loader import _pretax_rows
+
+    gaap = {
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic": {"units": {"USD": [_annual("2025-12-31", 1453 * M)]}},
+        "NetIncomeLoss": {"units": {"USD": [{**_annual("2025-12-31", 5233 * M), "accn": "a"}]}},
+        "IncomeTaxExpenseBenefit": {"units": {"USD": [{**_annual("2025-12-31", 1059 * M), "accn": "a"}]}},
+    }
+
+    annual = _annual_rows(_pretax_rows(gaap))
+
+    assert annual[-1]["val"] == pytest.approx(6292 * M)
+
+
+def test_pretax_income_prefers_reported_total_over_synthesized():
+    from jmr_valuation.io.sec_edgar_loader import _pretax_rows
+
+    gaap = {
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest": {
+            "units": {"USD": [{**_annual("2022-12-31", 3366 * M), "accn": "a"}]}},
+        "NetIncomeLoss": {"units": {"USD": [{**_annual("2022-12-31", 2419 * M), "accn": "a"}]}},
+        "IncomeTaxExpenseBenefit": {"units": {"USD": [{**_annual("2022-12-31", 900 * M), "accn": "a"}]}},
+    }
+
+    assert _annual_rows(_pretax_rows(gaap))[-1]["val"] == pytest.approx(3366 * M)

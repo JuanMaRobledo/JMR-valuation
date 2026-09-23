@@ -3,3 +3,7 @@ pandas==2.3.3
 openpyxl==3.1.5
 requests==2.32.5
 matplotlib==3.10.8
+yfinance==0.2.66
+gspread==6.2.1
+google-auth==2.41.1
+google-api-python-client==2.187.0
