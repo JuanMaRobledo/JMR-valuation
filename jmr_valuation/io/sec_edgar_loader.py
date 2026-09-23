@@ -233,6 +233,38 @@ def _concept_rows(gaap: dict, key: str, units: tuple[str, ...] = ("USD",),
     return _dedupe_by_period(combined) if combined else None
 
 
+def _raw_rows(gaap: dict, key: str) -> list[dict]:
+    out: list[dict] = []
+    for tag in _TAGS[key]:
+        out.extend(gaap.get(tag, {}).get("units", {}).get("USD", []))
+    return out
+
+
+def _period_key(r: dict) -> tuple:
+    return (r.get("start"), r["end"], r.get("accn"))
+
+
+def _ebit_rows(gaap: dict) -> list[dict] | None:
+    """Resultado operativo. Si la empresa no taggea OperatingIncomeLoss
+    (Nike no lo reporta nunca: su estado de resultados va de Gross Profit a
+    Income Before Taxes sin subtotal operativo), se completa con
+    Gross Profit - SG&A - I+D (I+D solo si la empresa lo reporta aparte en
+    ese mismo periodo), emparejando periodo y presentacion como _pretax_rows.
+    Sin esto el EBIT quedaba en 0 y el margen/DCF de NKE no tenian sentido.
+    'Other (income) expense' queda afuera a proposito: es no operativo."""
+    reported = _concept_rows(gaap, "ebit") or []
+    sga_by_key = {_period_key(r): r["val"] for r in _raw_rows(gaap, "sga") if "start" in r}
+    rd_by_key = {_period_key(r): r["val"] for r in _raw_rows(gaap, "rd") if "start" in r}
+    synthesized = [
+        {**r, "val": r["val"] - sga_by_key[_period_key(r)] - rd_by_key.get(_period_key(r), 0)}
+        for r in gaap.get("GrossProfit", {}).get("units", {}).get("USD", [])
+        if "start" in r and _period_key(r) in sga_by_key
+    ]
+    reported_periods = {(r.get("start"), r["end"]) for r in reported}
+    combined = reported + [r for r in synthesized if (r["start"], r["end"]) not in reported_periods]
+    return _dedupe_by_period(combined) if combined else None
+
+
 def _pretax_rows(gaap: dict) -> list[dict] | None:
     """Resultado antes de impuestos. Si la empresa dejo de taggear el total
     (PYPL desde 2023 solo taggea el desglose Domestic/Foreign), se completa
@@ -594,7 +626,7 @@ def load_company_inputs_from_sec_edgar(
     revenue_prior_10k = revenue_annual[-1]["val"]
     revenue_ltm = _ltm_value(revenue_rows) or revenue_prior_10k
 
-    ebit_rows = rows("ebit")
+    ebit_rows = _ebit_rows(gaap)
     ebit_annual = _annual_rows(ebit_rows)
     ebit_prior_10k = ebit_annual[-1]["val"] if ebit_annual else 0.0
     ebit_ltm = _ltm_value(ebit_rows) or ebit_prior_10k
@@ -870,7 +902,7 @@ def load_annual_series_from_sec_edgar(
     revenue_annual = revenue_annual[-years:]
     ends = [r["end"] for r in revenue_annual]
 
-    ebit_by_end = {r["end"]: r["val"] for r in _annual_rows(rows("ebit"))}
+    ebit_by_end = {r["end"]: r["val"] for r in _annual_rows(_ebit_rows(gaap))}
     da_rows = _da_rows(rows)
     da_by_end = {r["end"]: r["val"] for r in _annual_rows(da_rows)}
 
@@ -908,7 +940,7 @@ def load_annual_series_from_sec_edgar(
         return [by_end.get(end, 0.0) for end in ends]
 
     ltm_revenue = _ltm_value(revenue_rows) or revenue_annual[-1]["val"]
-    ltm_ebit = _ltm_value(rows("ebit")) or ebit_by_end.get(ends[-1], 0.0)
+    ltm_ebit = _ltm_value(_ebit_rows(gaap)) or ebit_by_end.get(ends[-1], 0.0)
     ltm_da = _ltm_value(da_rows) or da_by_end.get(ends[-1], 0.0)
     ltm_tax_expense = _ltm_value(tax_rows) or tax_by_end.get(ends[-1], 0.0)
     ltm_net_income = _ltm_value(ni_rows) or ni_by_end.get(ends[-1], 0.0)

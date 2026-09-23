@@ -679,3 +679,34 @@ def test_pretax_income_prefers_reported_total_over_synthesized():
     }
 
     assert _annual_rows(_pretax_rows(gaap))[-1]["val"] == pytest.approx(3366 * M)
+
+
+def test_ebit_synthesized_from_gross_profit_minus_sga_when_operating_income_missing():
+    """Regresion NKE: nunca taggea OperatingIncomeLoss; el EBIT quedaba en 0.
+    FY2024: Gross Profit 22.887 - SG&A 16.576 = 6.311."""
+    from jmr_valuation.io.sec_edgar_loader import _ebit_rows
+
+    fy = {"start": "2023-06-01", "end": "2024-05-31", "form": "10-K", "fp": "FY", "filed": "2024-07-25", "accn": "a"}
+    gaap = {
+        "GrossProfit": {"units": {"USD": [{**fy, "val": 22887 * M}]}},
+        "SellingGeneralAndAdministrativeExpense": {"units": {"USD": [{**fy, "val": 16576 * M}]}},
+    }
+
+    assert _annual_rows(_ebit_rows(gaap))[-1]["val"] == pytest.approx(6311 * M)
+
+
+def test_ebit_fallback_subtracts_rd_and_prefers_reported_operating_income():
+    from jmr_valuation.io.sec_edgar_loader import _ebit_rows
+
+    gaap = {
+        "GrossProfit": {"units": {"USD": [{**_annual("2023-12-31", 100 * M), "accn": "a"},
+                                          {**_annual("2024-12-31", 120 * M), "accn": "b"}]}},
+        "SellingGeneralAndAdministrativeExpense": {"units": {"USD": [{**_annual("2023-12-31", 40 * M), "accn": "a"},
+                                                                     {**_annual("2024-12-31", 45 * M), "accn": "b"}]}},
+        "ResearchAndDevelopmentExpense": {"units": {"USD": [{**_annual("2024-12-31", 25 * M), "accn": "b"}]}},
+        "OperatingIncomeLoss": {"units": {"USD": [{**_annual("2023-12-31", 58 * M), "accn": "a"}]}},
+    }
+
+    annual = {r["end"]: r["val"] for r in _annual_rows(_ebit_rows(gaap))}
+
+    assert annual == {"2023-12-31": pytest.approx(58 * M), "2024-12-31": pytest.approx(50 * M)}
