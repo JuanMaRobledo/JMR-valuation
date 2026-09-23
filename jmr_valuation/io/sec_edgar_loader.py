@@ -150,6 +150,7 @@ _TAGS: dict[str, list[str]] = {
     "sga_selling": ["SellingAndMarketingExpense", "MarketingExpense", "SellingExpense"],
     "total_assets": ["Assets"],
     "total_liabilities": ["Liabilities"],
+    "equity_incl_nci": ["StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest", "StockholdersEquity"],
     "share_based_comp": ["ShareBasedCompensation"],
     "investing_cash_flow": ["NetCashProvidedByUsedInInvestingActivities"],
     "financing_cash_flow": ["NetCashProvidedByUsedInFinancingActivities"],
@@ -163,7 +164,10 @@ _TAGS: dict[str, list[str]] = {
     "aoci": ["AccumulatedOtherComprehensiveIncomeLossNetOfTax"],
     # --- Tercera tanda: conceptos que MSFT (y otras empresas grandes) SI
     # taggean, pero con nombres que no habiamos probado todavia. ---
-    "short_term_investments": ["ShortTermInvestments"],
+    # Fallbacks: NKE taggea sus inversiones de corto plazo solo como titulos de
+    # deuda disponibles para la venta (corrientes), nunca 'ShortTermInvestments'.
+    "short_term_investments": ["ShortTermInvestments", "DebtSecuritiesAvailableForSaleExcludingAccruedInterestCurrent",
+                               "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
     "intangibles_net": ["FiniteLivedIntangibleAssetsNet", "IntangibleAssetsNetExcludingGoodwill"],
     "long_term_investments": ["LongTermInvestments"],
     "lease_liability_noncurrent": ["OperatingLeaseLiabilityNoncurrent", "FinanceLeaseLiabilityNoncurrent"],
@@ -549,7 +553,17 @@ def _da_rows(rows) -> list[dict] | None:
     combinado, asi que 'da' quedaba vacio y EBITDA terminaba IGUAL a EBIT
     en todo el modelo). `rows` es la clausura local `rows(key, units)` de
     cada funcion que arma un AnnualSeries/CompanyInputs."""
-    return rows("da") or _sum_two_series(_annual_rows(rows("da_depreciation")), _annual_rows(rows("da_amortization")))
+    combined = rows("da") or []
+    dep_annual = _annual_rows(rows("da_depreciation"))
+    parts = _sum_two_series(dep_annual, _annual_rows(rows("da_amortization"))) or []
+    # Años sin tag combinado NI amortizacion separada: al menos la
+    # depreciacion (NKE: 'Depreciation' 2008-2024, tag combinado recien desde
+    # 2023 -- sin esto el D&A 2017-2022 quedaba en 0 y EBITDA = EBIT).
+    parts_ends = {r["end"] for r in parts}
+    fallback = parts + [r for r in dep_annual if r["end"] not in parts_ends]
+    combined_periods = {(r.get("start"), r["end"]) for r in combined}
+    merged = combined + [r for r in fallback if (r.get("start"), r["end"]) not in combined_periods]
+    return _dedupe_by_period(merged) if merged else None
 
 
 def _sum_two_series(rows_a: list[dict] | None, rows_b: list[dict] | None) -> list[dict] | None:
@@ -974,6 +988,14 @@ def load_annual_series_from_sec_edgar(
 
     total_assets_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("total_assets"))}
     total_liabilities_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("total_liabilities"))}
+    # NKE (y otras) no taggean el total de pasivos: se deriva de
+    # (Pasivo + Patrimonio) - Patrimonio total (incluye interes minoritario).
+    liab_and_equity = {r["end"]: r["val"] for r in _annual_instant_rows(
+        gaap.get("LiabilitiesAndStockholdersEquity", {}).get("units", {}).get("USD"))}
+    equity_total = {r["end"]: r["val"] for r in _annual_instant_rows(_concept_rows(gaap, "equity_incl_nci"))}
+    for end, total in liab_and_equity.items():
+        if end not in total_liabilities_by_end and end in equity_total:
+            total_liabilities_by_end[end] = total - equity_total[end]
     equity_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("equity"))}
     receivables_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("receivables"))}
     ppe_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("ppe_net"))}
