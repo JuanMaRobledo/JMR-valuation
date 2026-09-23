@@ -1,0 +1,1198 @@
+{
+ "Input sheet!B1": {
+  "before": "",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!I29",
+  "after": "='Income Statement'!L29",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Option value!B18": {
+  "before": "=(B16*D17+B29*D16)/(D17+D16)",
+  "after": "=IFERROR((B16*D17+B29*D16)/(D17+D16);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B23": {
+  "before": "=(LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5))",
+  "after": "=IFERROR((LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5));0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B24": {
+  "before": "=NORMSDIST(B23)",
+  "after": "=IFERROR(NORMSDIST(B23);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B26": {
+  "before": "=B23-((D19^0,5)*(B20^(0,5)))",
+  "after": "=IFERROR(B23-((D19^0,5)*(B20^(0,5)));0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B27": {
+  "before": "=NORMSDIST(B26)",
+  "after": "=IFERROR(NORMSDIST(B26);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B29": {
+  "before": "=((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27)",
+  "after": "=IFERROR(((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B30": {
+  "before": "=B29*B11",
+  "after": "=IFERROR(B29*B11;0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65)))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Cost of capital worksheet!K65": {
+  "before": "=K53*(J53/J65)+K54*J54/J65+K55*J55/J65+K56*J56/J65+K57*J57/J65+K58*J58/J65+K59*J59/J65+K60*J60/J65+K61*J61/J65+K62*J62/J65+K63*J63/J65+K64*J64/J65",
+  "after": "=IFERROR(K53*(J53/J65)+K54*J54/J65+K55*J55/J65+K56*J56/J65+K57*J57/J65+K58*J58/J65+K59*J59/J65+K60*J60/J65+K61*J61/J65+K62*J62/J65+K63*J63/J65+K64*J64/J65;\"\")",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Cost of capital worksheet!L65": {
+  "before": "=L53*(J53/J65)+L54*J54/J65+L55*J55/J65+L56*J56/J65+L57*J57/J65+L58*J58/J65+L59*J59/J65+L60*J60/J65+L61*J61/J65+L62*J62/J65+L63*J63/J65+L64*J64/J65",
+  "after": "=IFERROR(L53*(J53/J65)+L54*J54/J65+L55*J55/J65+L56*J56/J65+L57*J57/J65+L58*J58/J65+L59*J59/J65+L60*J60/J65+L61*J61/J65+L62*J62/J65+L63*J63/J65+L64*J64/J65;\"\")",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!B36": {
+  "before": "=(B35/ Dividendos!G4)-1",
+  "after": "=IFERROR((B35/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!C36": {
+  "before": "=(C35/ Dividendos!H4)-1",
+  "after": "=IFERROR((C35/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!D36": {
+  "before": "=(D35/ Dividendos!I4)-1",
+  "after": "=IFERROR((D35/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E36": {
+  "before": "=(E35/ Dividendos!J4)-1",
+  "after": "=IFERROR((E35/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!B75": {
+  "before": "=(B74/ Dividendos!G4)-1",
+  "after": "=IFERROR((B74/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!C75": {
+  "before": "=(C74/ Dividendos!H4)-1",
+  "after": "=IFERROR((C74/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!D75": {
+  "before": "=(D74/ Dividendos!I4)-1",
+  "after": "=IFERROR((D74/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E75": {
+  "before": "=(E74/ Dividendos!J4)-1",
+  "after": "=IFERROR((E74/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!B115": {
+  "before": "=(B114/ Dividendos!G4)-1",
+  "after": "=IFERROR((B114/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!C115": {
+  "before": "=(C114/ Dividendos!H4)-1",
+  "after": "=IFERROR((C114/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!D115": {
+  "before": "=(D114/ Dividendos!I4)-1",
+  "after": "=IFERROR((D114/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E115": {
+  "before": "=(E114/ Dividendos!J4)-1",
+  "after": "=IFERROR((E114/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Income Statement!B15": {
+  "before": 0,
+  "after": -59,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!C15": {
+  "before": 0,
+  "after": -54,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!D15": {
+  "before": 0,
+  "after": -49,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!E15": {
+  "before": 0,
+  "after": -89,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!F15": {
+  "before": 0,
+  "after": -262,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!G15": {
+  "before": 0,
+  "after": -299,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!H15": {
+  "before": 0,
+  "after": -291,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!I15": {
+  "before": 0,
+  "after": -269,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!J15": {
+  "before": 0,
+  "after": -297,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!K15": {
+  "before": 0,
+  "after": -228,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!L15": {
+  "before": 0,
+  "after": -228,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!B16": {
+  "before": "=B14-B15",
+  "after": 59,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!C16": {
+  "before": "=C14-C15",
+  "after": 54,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!D16": {
+  "before": "=D14-D15",
+  "after": 49,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!E16": {
+  "before": "=E14-E15",
+  "after": 89,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!F16": {
+  "before": "=F14-F15",
+  "after": 262,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!G16": {
+  "before": "=G14-G15",
+  "after": 299,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!H16": {
+  "before": "=H14-H15",
+  "after": 291,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!I16": {
+  "before": "=I14-I15",
+  "after": 269,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!J16": {
+  "before": "=J14-J15",
+  "after": 297,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!K16": {
+  "before": "=K14-K15",
+  "after": 228,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Income Statement!L16": {
+  "before": "=L14-L15",
+  "after": 228,
+  "reason": "Gasto por intereses bruto (ingreso por intereses - neto); el pipeline ponia el INGRESO como gasto"
+ },
+ "Balance Sheet!K21": {
+  "before": "",
+  "after": 502,
+  "reason": "Porcion corriente de arrendamientos operativos (31-may-2026)"
+ },
+ "Balance Sheet!L21": {
+  "before": "",
+  "after": 478,
+  "reason": "Porcion corriente de arrendamientos operativos (31-may-2026)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46287,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B13": {
+  "before": "='Income Statement'!L12",
+  "after": "='Income Statement'!L12-986",
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B20": {
+  "before": "='Balance Sheet'!L14+'Balance Sheet'!L15",
+  "after": "='Balance Sheet'!L14+684",
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": -0.02,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.065,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.035,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.11,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 7,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.1,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.1,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0496,
+  "reason": "Supuestos NKE (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Updated September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Cost of capital NKE"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 9,
+  "reason": "Cost of capital NKE"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Cost of capital NKE"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "A2/A",
+  "reason": "Cost of capital NKE"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": "='Input sheet'!B28",
+  "reason": "Escenarios NKE: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": "=AVERAGE('Income Statement'!F13:I13)",
+  "reason": "Escenarios NKE: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=AVERAGE('Input sheet'!B27;'Input sheet'!B35)",
+  "after": "='Input sheet'!B27-0,01",
+  "reason": "Escenarios NKE: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "='Input sheet'!B27*1,3",
+  "after": "='Input sheet'!B29+0,01",
+  "reason": "Escenarios NKE: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa NKE"
+ },
+ "Financials Multiples!E22": {
+  "before": "=AVERAGE(B22/(B4-'Income Statement'!H3);C22/(C4-$B4); D22/(D4-C4))*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=AVERAGE(B22/($B4-'Income Statement'!H3);$C22/($C4-$B4); $D22/($D4-$C4))*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=AVERAGE(B22/($B4-'Income Statement'!H3);$C22/($C4-$B4); $D22/($D4-$C4))*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=AVERAGE($C22/($C4-$B4); $D22/($D4-$C4))*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "PFCFE!J8": {
+  "before": "",
+  "after": "='Valuation output'!B84/'Financials Multiples'!E29",
+  "reason": "P/FCFE objetivo implicito del DCF (FCFE FY2026 negativo)"
+ },
+ "PFCFE!J19": {
+  "before": "=MIN(B19:E19)",
+  "after": "='Valuation output'!B33/'Financials Multiples'!E68",
+  "reason": "P/FCFE objetivo implicito del DCF (FCFE FY2026 negativo)"
+ },
+ "PFCFE!J30": {
+  "before": "",
+  "after": "='Valuation output'!B135/'Financials Multiples'!E108",
+  "reason": "P/FCFE objetivo implicito del DCF (FCFE FY2026 negativo)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "NIKE, Inc.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Elliott Hill (CEO desde oct-2024). CFO: David Denton desde el 17-ago-2026 (reemplazó a Matthew Friend).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Calzado e indumentaria deportiva (Damodaran: Shoe)",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://about.nike.com  |  IR: https://investors.nike.com",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "La mayor marca deportiva del mundo: ingresos FY2026 (a may-2026) de US$46.400M, planos (−2% sin efecto cambiario). Vende calzado, indumentaria y equipamiento bajo NIKE, Jordan y Converse, a través de mayoristas (US$27.500M, +6%) y de venta directa NIKE Direct (US$17.700M, −6%). Tiene ~73.000 empleados.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "NIKE Brand (calzado, indumentaria, Jordan)",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "US$45.200M en FY2026 (+1%, −1% sin efecto cambiario), el 97% de los ingresos. El plan \"Win Now\" de Hill reorienta la marca al deporte (running, básquet, fútbol) después de años de depender de franquicias de estilo de vida (Dunk, Air Force 1) que se saturaron.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Converse",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "US$1.200M en FY2026 (−31%; −32% sin efecto cambiario); en el Q4 cayó 32%. Es la marca en peor momento del grupo y un candidato natural a reestructuración o venta.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Geografías",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Norteamérica es la región que crece. Greater China cayó 12% en el Q4 FY2026 y EMEA también está en baja. Las ventas internacionales tardan más en recuperarse de lo previsto.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia de Distribución\ny Comercialización",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Revierte la apuesta de 2020-2023 por la venta directa: vuelve al canal mayorista (Foot Locker, Dick's, JD), que crece 6% mientras NIKE Direct cae 6% y el digital 12%. Menos promociones y liquidación de inventario antiguo (inventario de US$7.500M, plano).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "El reseteo mayorista funciona",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Mayoristas +6% en FY2026 (+4% sin efecto cambiario) y +4% en el Q4; Norteamérica creciendo. La empresa espera que el margen bruto empiece a expandirse desde el Q1 FY2027, antes de lo previsto, por acciones de costos en la cadena de suministro.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Balance y dividendo",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Caja e inversiones de corto plazo de US$9.000M y deuda de US$7.900M; rating A2 (Moody's) / A+ (S&P). Dividendo de US$1,64 por año (~4,5% de rendimiento) que sigue creciendo (+5% en FY2026).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Valuación deprimida",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Cotiza cerca de mínimos de 12 años, ~45% debajo del máximo de 52 semanas (más de US$64). A ~17x la utilidad LTM, contra 22-62x históricos. Si el margen vuelve al 13-15% de FY2021-FY2024, la acción tiene recorrido.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Pérdida de relevancia frente a nuevas marcas",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "On, Hoka (Deckers) y otras le ganan cuota en running. En sep-2026 Kylian Mbappé dejó Nike por On tras 20 años. NIKE Direct −8% y digital −12% sin efecto cambiario en FY2026.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Márgenes subyacentes en caída",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Sin el reembolso único de aranceles de US$986M, el margen bruto FY2026 fue 40,8% (−190pb) y el EPS US$1,58 (−27%). FCF de US$2.180M (−33%). Los aranceles pasan de 10% a 15% desde agosto de 2026.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Guía débil y presión de mercado",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Guía H1 FY2027: ingresos con caída de un dígito bajo a medio y utilidades planas. En sep-2026, bajas de recomendación de Baird (a Neutral, precio objetivo de US$70 a US$44), UBS (US$42), Telsey (US$44) y Stifel (US$40); salida del S&P 100 el 21-sep-2026.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-K FY2026 de NIKE (SEC EDGAR, XBRL, cierre 31-may-2026); comunicado de resultados Q4 FY2026 (30-jun-2026) y llamada con inversores; CNBC, Yahoo Finance, Motley Fool, ad-hoc-news e Investing.com (jun-sep 2026); Moody's (baja a A2, nov-2025); Damodaran Online (indname.xls ene-2026, ERPbymonth sep-2026); UST 10 años al 22-sep-2026; consenso de analistas vía yfinance (22-sep-2026).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 30 de junio de 2026 – 22 de septiembre de 2026",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "Q4 FY2026: ingresos −1% y reembolso de aranceles de US$986M",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ingresos de US$11.000M (−4% sin efecto cambiario); margen bruto de 49,2% con +900pb del reembolso IEEPA; EPS de US$0,72 (US$0,20 sin el reembolso).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "H1 FY2027: ingresos con caída de un dígito bajo a medio",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Utilidades planas en el H1; margen bruto levemente positivo en el Q1; aranceles de 15% desde agosto. Resultados del Q1 FY2027 el 1-oct-2026.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Gestión",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Cambio de CFO: David Denton reemplaza a Matthew Friend",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Efectivo desde el 17-ago-2026.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Marketing / Deportes",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Kylian Mbappé deja Nike y firma con On",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Fin de una relación de 20 años (sep-2026); una señal de la competencia de las marcas nuevas en fútbol y running.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Mercado / Wall St.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Salida del S&P 100 y ola de bajas de recomendación",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Salió del S&P 100 el 21-sep-2026 (sigue en el S&P 500). Baird, UBS, Telsey y Stifel recortaron; el consenso es Mantener con precio objetivo de ~US$48.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "El reembolso de aranceles distorsiona FY2026",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "Los US$986M de recupero de aranceles IEEPA se registraron en el Q4 FY2026 y explican casi todo el EBIT reportado de más: sin ellos, el EBIT es ~US$2.811M (6,1%) contra US$3.797M (8,2%). Al 31-may se habían cobrado solo US$302M. Impacto: el modelo usa el EBIT normalizado como base (Input!B13) y suma los US$684M pendientes como activo no operativo.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Guía FY2027 y aranceles",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "La empresa espera que los ingresos caigan un dígito bajo a medio en el H1 FY2027, con utilidades planas. Asume aranceles incrementales de 10% hasta julio y 15% después, y adelantó la expansión del margen bruto al Q1 por ahorros en la cadena de suministro. El consenso FY2027 es de ingresos −1,9% (US$45.500M) y EPS de US$1,69. Es el ancla del Año 1 del Base (−2%, margen 6,5%).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Competencia y marca",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "La salida de Mbappé a On (sep-2026) simboliza la pérdida de relevancia frente a marcas nuevas. NIKE Direct y el digital siguen cayendo (−8% y −12% sin efecto cambiario) y Converse −32%. El reseteo mayorista compensa en volumen pero con menor margen: ancla del margen objetivo Base (11%), por debajo del promedio histórico.",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Presión de mercado",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "La acción perdió ~45% desde su máximo de 52 semanas, salió del S&P 100 y recibió 4 bajas de precio objetivo la semana del 18-sep antes del Q1 FY2027 (1-oct). El consenso de 36 analistas es Mantener, con precio objetivo medio de US$47,7 (rango US$23-94).",
+  "reason": "Contenido cualitativo NKE"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 73000,
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "='Input sheet'!D1/1,84",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=E13/16,4",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "=(47134/46398)^(1/2)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "=('Financials Multiples'!F57/'Income Statement'!K28)^(1/2)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "=(2,14/1,58)^(1/2)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": 0.164,
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=1,64/'Input sheet'!D1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=1,64/'Income Statement'!L24",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 1.64,
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=(1,64/1,18)^(1/3)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "=(1,64/0,98)^(1/5)-1",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadisticas NKE (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Nike: la marca más grande del deporte en medio de un reseteo que el mercado todavía no sabe si funciona",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Nike vende US$46.400M por año, pero sus ingresos no crecen desde FY2023 y su margen operativo subyacente cayó de ~13% a ~6% (sin el reembolso de aranceles de FY2026). El nuevo CEO revirtió la estrategia de venta directa, volvió a los mayoristas y reorientó la marca al deporte, mientras On y Hoka le ganan cuota y los aranceles suben. La tesis Base: un FY2027 todavía en caída (−2%), una recuperación gradual (3,5% por año) y un margen que sube a 11% en 7 años, por debajo de su historia por aranceles y competencia, con costo de capital de 8,6%.",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Guía H1 FY2027 con caída de un dígito bajo a medio; consenso FY2027 −1,9% y FY2028 +3,5% -> Año 1 −2%, años 2-5 +3,5%.",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 6,5% (subyacente FY2026 6,1% + expansión de margen bruto guiada desde el Q1). Converge a 11% en 7 años.",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva FY2026 de 20,3% que converge a la marginal de 25%.",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,1x: relación marginal FY2020-FY2026 (ΔIngresos US$9.000M / ΔCapital invertido US$4.400M).",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC actual ~17% (sobre el EBIT normalizado); la marca sostiene retornos sobre el costo de capital.",
+  "reason": "Historia NKE"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "8,6%: beta de industria Shoe (desapalancada 0,89, relevered ~1,0), rating A2/A, ERP de 4,09% (sep-2026).",
+  "reason": "Historia NKE"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": -0.02,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Consenso FY2027 −1,9% y guía H1 FY2027 de caída de un dígito bajo a medio.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.065,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "EBIT subyacente FY2026 6,1% (sin los US$986M de aranceles) + expansión de margen bruto guiada desde el Q1 FY2027.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.035,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Consenso FY2028 +3,5%; CAGR de 10 años de Nike 3,4%.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.11,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Por debajo del promedio FY2017-FY2024 (12,5%) por aranceles de 15% y más competencia; comparables: Lululemon 13%, Deckers 15%, Adidas ~8,5%.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 7,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "El turnaround recién empieza y la mejora de margen no está demostrada.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.1,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Bottom-up FY2020-FY2026: ΔIngresos / ΔCapital invertido.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.1,
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Modelo con activos propios (tiendas y centros de distribución) estable.",
+  "reason": "Recomendaciones NKE"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación NKE: P/E, EV/EBITDA, EV/FCFF y P/OCF fueron positivos los 4 años, así que el mecanismo nativo (MIN de 4 años) funciona. OJO: esos 4 años (may-2023 a may-2026) son ANTERIORES al derrumbe de 2026, así que el MIN (P/E 22x, EV/EBITDA 15,5x) queda por encima del múltiplo de hoy (P/E LTM 17x, EV/EBITDA 12x) y los múltiplos dan precios mayores que el DCF. P/FCFE: el FCFE de FY2026 fue NEGATIVO (−US$734M) y el MIN de 4 años daba −93x -> se reemplazó (J8/J19/J30 de la hoja PFCFE) por el múltiplo implícito del DCF de cada escenario (equity / FCFE FY+1). Además, el NWC proyectado de 'Financials Multiples' se recalculó con intensidad de NWC (ver log de la Tesis).",
+  "reason": "Evaluacion de multiplos NKE"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ([$XX,XX])"
+   ],
+   [
+    "Conservador",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Base",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Optimista",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

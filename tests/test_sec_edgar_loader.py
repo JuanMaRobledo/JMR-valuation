@@ -710,3 +710,20 @@ def test_ebit_fallback_subtracts_rd_and_prefers_reported_operating_income():
     annual = {r["end"]: r["val"] for r in _annual_rows(_ebit_rows(gaap))}
 
     assert annual == {"2023-12-31": pytest.approx(58 * M), "2024-12-31": pytest.approx(50 * M)}
+
+
+def test_da_falls_back_to_depreciation_for_years_before_combined_tag():
+    """Regresion NKE: tag combinado de D&A recien desde FY2023; antes solo
+    'Depreciation' -> D&A 2017-2022 quedaba en 0 (EBITDA = EBIT)."""
+    from jmr_valuation.io.sec_edgar_loader import _concept_rows, _da_rows
+
+    fy = lambda y, v: {"start": f"{y-1}-06-01", "end": f"{y}-05-31", "val": v * M, "form": "10-K", "fp": "FY", "filed": f"{y}-07-20"}
+    gaap = {
+        "DepreciationDepletionAndAmortization": {"units": {"USD": [fy(2023, 703), fy(2024, 796)]}},
+        "Depreciation": {"units": {"USD": [fy(2021, 744), fy(2022, 717), fy(2023, 703)]}},
+    }
+    rows = lambda key, units=("USD",): _concept_rows(gaap, key, units)
+
+    annual = {r["end"]: r["val"] for r in _annual_rows(_da_rows(rows))}
+
+    assert annual == {"2021-05-31": 744 * M, "2022-05-31": 717 * M, "2023-05-31": 703 * M, "2024-05-31": 796 * M}
