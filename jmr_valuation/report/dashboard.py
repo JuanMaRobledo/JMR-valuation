@@ -23,6 +23,7 @@ from jmr_valuation.io.excel_loader import load_company_inputs_from_excel
 from jmr_valuation.io.inputs import CompanyInputs, load_company_inputs, save_company_inputs
 from jmr_valuation.io.sec_edgar_client import SecEdgarError
 from jmr_valuation.io.sec_edgar_loader import load_company_inputs_from_sec_edgar
+from jmr_valuation.io.sec_xbrl_instance import AugmentedSecEdgarClient
 from jmr_valuation.models.blend import COMPANY_TYPES
 from jmr_valuation.models.relative import SENSITIVITY_DELTAS, resolve_anchor_multiple
 from jmr_valuation.valuation import RELATIVE_METRICS, SCENARIOS, run_valuation
@@ -564,8 +565,11 @@ def main() -> None:
                     st.warning("Escribi un ticker primero.")
                 else:
                     try:
+                        # AugmentedSecEdgarClient: suma el ultimo 10-Q/10-K que la API
+                        # companyfacts todavia no incorporo (puede tardar semanas), para
+                        # que el LTM no quede un trimestre atrasado.
                         edgar_inputs = load_company_inputs_from_sec_edgar(
-                            edgar_ticker, current_price=edgar_price,
+                            edgar_ticker, client=AugmentedSecEdgarClient(), current_price=edgar_price,
                             riskfree_rate=edgar_rf_pct / 100, initial_cost_of_capital=edgar_wacc_pct / 100,
                         )
                     except SecEdgarError as exc:

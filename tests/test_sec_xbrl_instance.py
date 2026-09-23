@@ -44,3 +44,23 @@ def test_instance_filename_prefers_inline_extracted_instance():
     assert _instance_filename(items) == "pypl-20260630_htm.xml"
     legacy = [{"name": n} for n in ("FilingSummary.xml", "pypl-20181231.xml", "pypl-20181231_lab.xml")]
     assert _instance_filename(legacy) == "pypl-20181231.xml"
+
+
+def test_company_facts_keeps_companyfacts_data_when_a_filing_cannot_be_fetched(monkeypatch):
+    from jmr_valuation.io import sec_xbrl_instance as mod
+    from jmr_valuation.io.sec_edgar_client import SecEdgarClient
+
+    base = {"cik": 1, "facts": {"us-gaap": {"Revenues": {"units": {"USD": [
+        {"start": "2025-01-01", "end": "2025-12-31", "val": 1, "form": "10-K", "filed": "2026-02-01"}]}}}}}
+    monkeypatch.setattr(SecEdgarClient, "company_facts", lambda self, t: base)
+    monkeypatch.setattr(SecEdgarClient, "company_submissions", lambda self, t: {"filings": {"recent": {
+        "form": ["10-Q"], "filingDate": ["2026-05-01"], "accessionNumber": ["0001-26-000001"]}}})
+
+    def boom(self, cik, accn):
+        raise RuntimeError("503")
+
+    monkeypatch.setattr(mod.AugmentedSecEdgarClient, "_filing_instance", boom)
+
+    facts = mod.AugmentedSecEdgarClient(user_agent="test x@y.z").company_facts("ABC")
+
+    assert facts["facts"]["us-gaap"]["Revenues"]["units"]["USD"][0]["val"] == 1

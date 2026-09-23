@@ -24,6 +24,7 @@ que companyfacts -- los desgloses por segmento/clase quedan afuera.
 from __future__ import annotations
 
 import hashlib
+import logging
 import json
 import re
 import tempfile
@@ -38,6 +39,7 @@ from jmr_valuation.io.sec_edgar_client import SecEdgarClient
 _ARCHIVES = "https://www.sec.gov/Archives/edgar/data"
 _XBRLI = "{http://www.xbrl.org/2003/instance}"
 _LINKBASE_SUFFIXES = ("_cal.xml", "_def.xml", "_lab.xml", "_pre.xml")
+logger = logging.getLogger(__name__)
 _CACHE_DIR = Path(tempfile.gettempdir()) / "jmr_sec_xbrl_cache"
 
 
@@ -194,10 +196,17 @@ class AugmentedSecEdgarClient(SecEdgarClient):
             if accn in seen_accn:
                 continue
             seen_accn.add(accn)
-            xml = self._filing_instance(cik, accn)
-            if not xml:
+            # Best-effort: si una presentacion no se puede bajar o parsear
+            # (503 persistente, instancia con formato raro), se sigue con lo
+            # que ya trae companyfacts en vez de tumbar toda la carga.
+            try:
+                xml = self._filing_instance(cik, accn)
+                if not xml:
+                    continue
+                parsed = parse_instance(xml, accn=accn, form=form, filed=filed)
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("No se pudo leer la instancia XBRL %s (%s): %s", accn, form, exc)
                 continue
-            parsed = parse_instance(xml, accn=accn, form=form, filed=filed)
             for prefix, tags in parsed.items():
                 for tag, node in tags.items():
                     if filed > latest_filed and prefix in ("us-gaap", "dei"):
