@@ -1,0 +1,207 @@
+{
+ "Input sheet!B1": {
+  "before": "",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!I29",
+  "after": "='Income Statement'!L29",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Option value!B18": {
+  "before": "=(B16*D17+B29*D16)/(D17+D16)",
+  "after": "=IFERROR((B16*D17+B29*D16)/(D17+D16);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B23": {
+  "before": "=(LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5))",
+  "after": "=IFERROR((LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5));0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B24": {
+  "before": "=NORMSDIST(B23)",
+  "after": "=IFERROR(NORMSDIST(B23);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B26": {
+  "before": "=B23-((D19^0,5)*(B20^(0,5)))",
+  "after": "=IFERROR(B23-((D19^0,5)*(B20^(0,5)));0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B27": {
+  "before": "=NORMSDIST(B26)",
+  "after": "=IFERROR(NORMSDIST(B26);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B29": {
+  "before": "=((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27)",
+  "after": "=IFERROR(((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Option value!B30": {
+  "before": "=B29*B11",
+  "after": "=IFERROR(B29*B11;0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65)))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Cost of capital worksheet!K65": {
+  "before": "=K53*(J53/J65)+K54*J54/J65+K55*J55/J65+K56*J56/J65+K57*J57/J65+K58*J58/J65+K59*J59/J65+K60*J60/J65+K61*J61/J65+K62*J62/J65+K63*J63/J65+K64*J64/J65",
+  "after": "=IFERROR(K53*(J53/J65)+K54*J54/J65+K55*J55/J65+K56*J56/J65+K57*J57/J65+K58*J58/J65+K59*J59/J65+K60*J60/J65+K61*J61/J65+K62*J62/J65+K63*J63/J65+K64*J64/J65;\"\")",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Cost of capital worksheet!L65": {
+  "before": "=L53*(J53/J65)+L54*J54/J65+L55*J55/J65+L56*J56/J65+L57*J57/J65+L58*J58/J65+L59*J59/J65+L60*J60/J65+L61*J61/J65+L62*J62/J65+L63*J63/J65+L64*J64/J65",
+  "after": "=IFERROR(L53*(J53/J65)+L54*J54/J65+L55*J55/J65+L56*J56/J65+L57*J57/J65+L58*J58/J65+L59*J59/J65+L60*J60/J65+L61*J61/J65+L62*J62/J65+L63*J63/J65+L64*J64/J65;\"\")",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!B36": {
+  "before": "=(B35/ Dividendos!G4)-1",
+  "after": "=IFERROR((B35/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!C36": {
+  "before": "=(C35/ Dividendos!H4)-1",
+  "after": "=IFERROR((C35/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!D36": {
+  "before": "=(D35/ Dividendos!I4)-1",
+  "after": "=IFERROR((D35/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E36": {
+  "before": "=(E35/ Dividendos!J4)-1",
+  "after": "=IFERROR((E35/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!B75": {
+  "before": "=(B74/ Dividendos!G4)-1",
+  "after": "=IFERROR((B74/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!C75": {
+  "before": "=(C74/ Dividendos!H4)-1",
+  "after": "=IFERROR((C74/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!D75": {
+  "before": "=(D74/ Dividendos!I4)-1",
+  "after": "=IFERROR((D74/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E75": {
+  "before": "=(E74/ Dividendos!J4)-1",
+  "after": "=IFERROR((E74/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!B115": {
+  "before": "=(B114/ Dividendos!G4)-1",
+  "after": "=IFERROR((B114/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!C115": {
+  "before": "=(C114/ Dividendos!H4)-1",
+  "after": "=IFERROR((C114/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!D115": {
+  "before": "=(D114/ Dividendos!I4)-1",
+  "after": "=IFERROR((D114/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E115": {
+  "before": "=(E114/ Dividendos!J4)-1",
+  "after": "=IFERROR((E114/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base"
+ },
+ "Financials Multiples!E22": {
+  "before": "=AVERAGE(B22/(B4-'Income Statement'!H3);C22/(C4-$B4); D22/(D4-C4))*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=AVERAGE(B22/($B4-'Income Statement'!H3);$C22/($C4-$B4); $D22/($D4-$C4))*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=AVERAGE(B22/($B4-'Income Statement'!H3);$C22/($C4-$B4); $D22/($D4-$C4))*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=AVERAGE($C22/($C4-$B4); $D22/($D4-$C4))*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=AVERAGE(B61/(B43-'Income Statement'!H42);C61/(C43-$B43); D61/(D43-C43))*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=AVERAGE(B101/(B83-'Income Statement'!H82);C101/(C83-$B83); D101/(D83-C83))*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Input sheet!B20": {
+  "before": "='Balance Sheet'!L14+'Balance Sheet'!L15",
+  "after": "='Balance Sheet'!L14",
+  "reason": "Other Long-Term Assets es operativo, no activo no operativo"
+ },
+ "Valuation output!C55": {
+  "before": "=AVERAGE('Input sheet'!B27;'Input sheet'!B35)",
+  "after": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "reason": "Bugs #10/#11: crecimiento Conservador < Base < Optimista siempre"
+ },
+ "Valuation output!C106": {
+  "before": "='Input sheet'!B27*1,3",
+  "after": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "reason": "Bugs #10/#11: crecimiento Conservador < Base < Optimista siempre"
+ },
+ "Input sheet!D1": {
+  "before": "=GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\")",
+  "after": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "reason": "Alinear con la plantilla maestra"
+ },
+ "Resumen de Valoración!C25": {
+  "before": "=IFERROR(INDEX(GOOGLEFINANCE('Input sheet'!A1;\"close\";'Input sheet'!B4);2;2);'Input sheet'!D1)",
+  "after": "='Input sheet'!D1",
+  "reason": "Alinear con la plantilla maestra"
+ }
+}
