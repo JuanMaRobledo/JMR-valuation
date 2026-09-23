@@ -1,0 +1,1138 @@
+{
+ "Balance Sheet!L3": {
+  "before": 8306,
+  "after": 8306,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L4": {
+  "before": 2373,
+  "after": 2950,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L5": {
+  "before": 10679,
+  "after": 11256,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L6": {
+  "before": 840,
+  "after": 763,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L8": {
+  "before": 840,
+  "after": 763,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L9": {
+  "before": 48497,
+  "after": 50327,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L10": {
+  "before": 59759,
+  "after": 62346,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L11": {
+  "before": 1700,
+  "after": 1731,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L12": {
+  "before": 208,
+  "after": 178,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L13": {
+  "before": 10864,
+  "after": 10929,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L14": {
+  "before": 4330,
+  "after": 4009,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L15": {
+  "before": 3312,
+  "after": 3544,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L16": {
+  "before": 80173,
+  "after": 82737,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L18": {
+  "before": 240,
+  "after": 208,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L20": {
+  "before": 0,
+  "after": 2505,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L21": {
+  "before": "",
+  "after": 142,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L23": {
+  "before": 46203,
+  "after": 45551,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L24": {
+  "before": 46443,
+  "after": 48406,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L25": {
+  "before": 9987,
+  "after": 10895,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L26": {
+  "before": 548,
+  "after": 668,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L27": {
+  "before": 2939,
+  "after": 2948,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L28": {
+  "before": 13474,
+  "after": 14511,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L29": {
+  "before": 59917,
+  "after": 62917,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L31": {
+  "before": 21582,
+  "after": 22056,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L32": {
+  "before": -658,
+  "after": -503,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L33": {
+  "before": 32470,
+  "after": 34432,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L34": {
+  "before": 20256,
+  "after": 19820,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L35": {
+  "before": 20256,
+  "after": 19820,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Balance Sheet!L36": {
+  "before": 80173,
+  "after": 82737,
+  "reason": "LTM = balance real al 30-jun-2026 (10-Q Q2 2026)"
+ },
+ "Input sheet!B1": {
+  "before": "",
+  "after": "=A1",
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46287,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!I29",
+  "after": "='Income Statement'!L29",
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B20": {
+  "before": "='Balance Sheet'!L14+'Balance Sheet'!L15",
+  "after": "='Balance Sheet'!L14",
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.04,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": "='Valuation output'!B6-0,008",
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.035,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.195,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 6,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.6,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.6,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0496,
+  "reason": "Supuestos PYPL (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro actualizado"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Updated September 1, 2026",
+  "reason": "ERP de mercado maduro actualizado"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Cost of capital PYPL"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.29,
+  "reason": "Cost of capital PYPL"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 6,
+  "reason": "Cost of capital PYPL"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Cost of capital PYPL"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "A3/A-",
+  "reason": "Cost of capital PYPL"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": "='Input sheet'!B28",
+  "reason": "Escenarios: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": "='Input sheet'!B30+1500/'Input sheet'!B12",
+  "reason": "Escenarios: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=AVERAGE('Input sheet'!B27;'Input sheet'!B35)",
+  "after": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "reason": "Escenarios: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa PYPL"
+ },
+ "Financials Multiples!B36": {
+  "before": "=(B35/ Dividendos!G4)-1",
+  "after": "=IFERROR((B35/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!C36": {
+  "before": "=(C35/ Dividendos!H4)-1",
+  "after": "=IFERROR((C35/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!D36": {
+  "before": "=(D35/ Dividendos!I4)-1",
+  "after": "=IFERROR((D35/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!E36": {
+  "before": "=(E35/ Dividendos!J4)-1",
+  "after": "=IFERROR((E35/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!B75": {
+  "before": "=(B74/ Dividendos!G4)-1",
+  "after": "=IFERROR((B74/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!C75": {
+  "before": "=(C74/ Dividendos!H4)-1",
+  "after": "=IFERROR((C74/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!D75": {
+  "before": "=(D74/ Dividendos!I4)-1",
+  "after": "=IFERROR((D74/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!E75": {
+  "before": "=(E74/ Dividendos!J4)-1",
+  "after": "=IFERROR((E74/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!B115": {
+  "before": "=(B114/ Dividendos!G4)-1",
+  "after": "=IFERROR((B114/ Dividendos!G4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!C115": {
+  "before": "=(C114/ Dividendos!H4)-1",
+  "after": "=IFERROR((C114/ Dividendos!H4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!D115": {
+  "before": "=(D114/ Dividendos!I4)-1",
+  "after": "=IFERROR((D114/ Dividendos!I4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Financials Multiples!E115": {
+  "before": "=(E114/ Dividendos!J4)-1",
+  "after": "=IFERROR((E114/ Dividendos!J4)-1;\"\")",
+  "reason": "Crecimiento de dividendo sin año base (dividendo iniciado en 2025)"
+ },
+ "Option value!B18": {
+  "before": "=(B16*D17+B29*D16)/(D17+D16)",
+  "after": "=IFERROR((B16*D17+B29*D16)/(D17+D16);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Option value!B23": {
+  "before": "=(LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5))",
+  "after": "=IFERROR((LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5));0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Option value!B24": {
+  "before": "=NORMSDIST(B23)",
+  "after": "=IFERROR(NORMSDIST(B23);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Option value!B26": {
+  "before": "=B23-((D19^0,5)*(B20^(0,5)))",
+  "after": "=IFERROR(B23-((D19^0,5)*(B20^(0,5)));0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Option value!B27": {
+  "before": "=NORMSDIST(B26)",
+  "after": "=IFERROR(NORMSDIST(B26);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Option value!B29": {
+  "before": "=((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27)",
+  "after": "=IFERROR(((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27);0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Option value!B30": {
+  "before": "=B29*B11",
+  "after": "=IFERROR(B29*B11;0)",
+  "reason": "Bug #5: IFERROR en la cadena de Option value (sin opciones de empleados)"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65)))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "Beta Direct Input: B24 muestra beta desapalancada implicita; tabla multibusiness vacia con IFERROR"
+ },
+ "Cost of capital worksheet!K65": {
+  "before": "=K53*(J53/J65)+K54*J54/J65+K55*J55/J65+K56*J56/J65+K57*J57/J65+K58*J58/J65+K59*J59/J65+K60*J60/J65+K61*J61/J65+K62*J62/J65+K63*J63/J65+K64*J64/J65",
+  "after": "=IFERROR(K53*(J53/J65)+K54*J54/J65+K55*J55/J65+K56*J56/J65+K57*J57/J65+K58*J58/J65+K59*J59/J65+K60*J60/J65+K61*J61/J65+K62*J62/J65+K63*J63/J65+K64*J64/J65;\"\")",
+  "reason": "Beta Direct Input: B24 muestra beta desapalancada implicita; tabla multibusiness vacia con IFERROR"
+ },
+ "Cost of capital worksheet!L65": {
+  "before": "=L53*(J53/J65)+L54*J54/J65+L55*J55/J65+L56*J56/J65+L57*J57/J65+L58*J58/J65+L59*J59/J65+L60*J60/J65+L61*J61/J65+L62*J62/J65+L63*J63/J65+L64*J64/J65",
+  "after": "=IFERROR(L53*(J53/J65)+L54*J54/J65+L55*J55/J65+L56*J56/J65+L57*J57/J65+L58*J58/J65+L59*J59/J65+L60*J60/J65+L61*J61/J65+L62*J62/J65+L63*J63/J65+L64*J64/J65;\"\")",
+  "reason": "Beta Direct Input: B24 muestra beta desapalancada implicita; tabla multibusiness vacia con IFERROR"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "PayPal Holdings, Inc.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Enrique Lores (desde el 1-mar-2026; reemplazó a Alex Chriss). Presidente independiente del directorio: David W. Dorman.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Servicios financieros no bancarios / pagos digitales (Damodaran: Financial Svcs. (Non-bank & Insurance))",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.paypal.com  |  IR: https://investor.pypl.com",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Red de pagos digitales de dos lados: 439 millones de cuentas activas (Q2 2026) y millones de comercios. Ingresos LTM de US$34.128M, TPV de US$486.400M en el Q2 2026 (+9% sin efecto cambiario) y take rate de transacción de 1,61%. Desde el 2-jun-2026 opera en tres negocios.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Checkout Solutions & PayPal",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "Checkout de marca (botón PayPal), PayPal wallet y soluciones para comercios del ecosistema propio. Es el negocio de mayor margen, pero crece solo +2% sin efecto cambiario (Q2 2026), presionado por Apple Pay, Shop Pay y la competencia en Europa. Lo dirige Frank Keller.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Consumer Financial Services & Venmo",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "Venmo (TPV +14% interanual en el Q2 2026; las cuentas activas mensuales de la tarjeta de débito Venmo crecen más de 50%), BNPL y crédito al consumidor. Es la apuesta de crecimiento: convertir Venmo en una plataforma financiera completa. Líder interina: Alexis Sowa.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Payment Services & Crypto",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Procesamiento no de marca (Braintree, con TPV creciendo en torno al 15%), procesamiento para PyMEs, servicios de valor agregado y cripto (stablecoin PYUSD). Tiene alto volumen y bajo margen: es lo que diluye el take rate. Líder interino: Jeff Pomeroy.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia de Distribución\ny Comercialización",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Efecto red: consumidores y comercios se atraen mutuamente, sin sucursales físicas. El plan de Lores apunta a acercarse al consumidor, simplificar la organización, generar al menos US$1.500M de ahorro bruto en 2-3 años (reinvertido en su mayoría en producto) y dar metas de ingresos por negocio.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Escala y generación de caja",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "FCF ajustado de al menos US$6.000M en 2026 (guía) sobre una capitalización de ~US$45.000M (~13% de FCF yield). Recompró US$6.053M de acciones en los últimos 12 meses: las acciones bajaron de 1.172M (2020) a 855M.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Valor estratégico confirmado",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Stripe y Advent ofrecieron US$60,50 por acción (15-jul-2026, más de US$53.000M, financiamiento comprometido de ~US$50.000M) y el directorio lo rechazó por bajo: pedía cerca de US$70. Un comprador estratégico le puso un piso de valor muy por encima del precio actual.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Palancas de crecimiento fuera del checkout",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Venmo (TPV +14%), Braintree (~15%) y BNPL crecen a doble dígito, y el TPV total crece 9% sin efecto cambiario. El directorio y el nuevo CEO apuntan a crecimiento de EPS de doble dígito en el tiempo.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Erosión del checkout de marca",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "El negocio más rentable crece solo 2% sin efecto cambiario y el take rate cayó 7pb interanual, a 1,61%. Los transaction margin dollars crecen ~1% (guía 2026: ~US$15.600M vs US$15.500M en 2025) mientras los ingresos crecen ~4-5%.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Compresión de márgenes por reinversión",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Margen operativo GAAP del Q2 2026 de 16,4% (−171pb) y non-GAAP de 17,4% (−248pb); guía de EPS GAAP 2026 con caída de un dígito medio. Si los ahorros se reinvierten sin retorno, el margen no vuelve al 18% de 2025.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Ejecución e incertidumbre corporativa",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Tercer CEO en 3 años, una reorganización en curso, despidos (~600 personas en sep-2026) y una oferta de compra caída el 27-ago-2026. El consenso es Mantener (36 de 46 analistas), con precio objetivo promedio de US$56 (18-sep-2026).",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-K 2025 y 10-Q Q2 2026 (SEC EDGAR, XBRL); comunicado de resultados Q2 2026 (8-K, 28-jul-2026); comunicados de PayPal del 3-feb-2026 (nuevo CEO) y 29-abr-2026 (reorganización); Bloomberg, Axios, Fortune, Yahoo Finance y TipRanks (jun-sep 2026); Damodaran Online (indname.xls ene-2026, ERPbymonth sep-2026); UST 10 años al 22-sep-2026 (CNBC/Trading Economics); consenso de analistas vía yfinance (22-sep-2026).",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 28 de julio de 2026 – 22 de septiembre de 2026 (con contexto desde febrero de 2026)",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "M&A / Estratégico",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "Stripe y Advent abandonan la oferta de US$60,50 por acción",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Oferta del 15-jul, rechazada por el directorio (pedía ~US$70); el consorcio se retiró el 27-ago-2026.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "Q2 2026 supera expectativas y sube la guía anual",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ingresos de US$8.680M (+5%) y EPS non-GAAP de US$1,38 (vs US$1,28 esperado); guía de EPS 2026 ~US$5,38 y TM$ ~US$15.600M.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Gestión / Gobierno",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Enrique Lores (ex CEO de HP) asume como CEO el 1-mar-2026",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Reemplaza a Alex Chriss porque el directorio pedía ejecución más rápida; David Dorman pasa a presidente independiente.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Reestructuración",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Reorganización en 3 negocios, cierre de PayPal Ventures y despidos",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Nuevo modelo operativo desde el 2-jun; PayPal Ventures cerrada en jun-2026; ~600 despidos en sep-2026 (164 en Irlanda).",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Análisis de Wall St.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Consenso Mantener, precio objetivo promedio de ~US$56",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "RBC sube a US$70 (Outperform); Truist baja a US$53; Piper Sandler a US$59; Cantor a US$60; Morgan Stanley en US$45.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "Oferta de Stripe / Advent",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "El 15-jul-2026 Stripe y Advent International ofrecieron US$60,50 por acción (28% de prima), más de US$53.000M, con ~US$50.000M de financiamiento comprometido por JPMorgan y Morgan Stanley. El directorio la consideró baja y pidió cerca de US$70. El consorcio se retiró el 27-ago porque su precio se basaba en el valor previo a los rumores. Impacto: la acción volvió a ~US$52, pero el rango US$60-70 funciona como referencia de valor de control, coherente con el DCF Conservador de este modelo.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Resultados Q2 2026 (28-jul-2026)",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "Ingresos de US$8.700M (+5%, +3% sin efecto cambiario), TPV de US$486.400M (+10%), TM$ +1% (+3% sin intereses sobre saldos) y EPS GAAP de US$1,25 (−3%). Margen operativo GAAP de 16,4% (−171pb). FCF de US$1.800M y recompras por US$1.500M (33 millones de acciones). Guía 2026: EPS non-GAAP ~US$5,38 (antes: de leve caída a leve suba), EPS GAAP con caída de un dígito medio y FCF ajustado de al menos US$6.000M. Es el ancla del margen del Año 1 (B28).",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Nuevo CEO y reorganización",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Lores (en el directorio desde 2021 y presidente desde jul-2024) llegó el 1-mar-2026 para acelerar la ejecución. Reorganizó la empresa en tres negocios (Checkout Solutions & PayPal; Consumer Financial Services & Venmo; Payment Services & Crypto), va a reportar metas de ingresos por negocio y busca al menos US$1.500M de ahorro bruto en 2-3 años, reinvertido en su mayoría. Es el ancla de la diferencia de margen entre Base y Optimista.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Recortes y foco",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "PayPal cerró su brazo de venture capital (PayPal Ventures, jun-2026) y en sep-2026 despidió a ~600 personas en varias geografías (12% de la plantilla en Irlanda). La plantilla era de ~23.800 empleados a dic-2025. Refuerza la tesis de disciplina de costos, pero con riesgo de ejecución durante la transición.",
+  "reason": "Contenido cualitativo PYPL (reemplaza el heredado de Adobe)"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 23800,
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "='Input sheet'!D1/5,69",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=E13/7,3",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "=(36210/33172)^(1/2)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "=('Financials Multiples'!F57/'Income Statement'!K28)^(1/2)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "=(5,79/5,31)^(1/2)-1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": 0.073,
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=0,56/'Input sheet'!D1",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=0,56/'Income Statement'!L24",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0.56,
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "— (dividendo iniciado a fines de 2025)",
+  "reason": "Estadisticas PYPL (formulas vivas en vez de valores de otra empresa)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "PayPal: una red de pagos madura, con caja abundante, que el mercado valúa como si se estuviera achicando",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "PayPal ya no es una historia de crecimiento: los ingresos crecen ~4-5%, el checkout de marca +2% y el take rate cae. Pero es una red de 439M de cuentas que genera ~US$6.000M de FCF por año y recompra ~13% de su capitalización. A US$52,5 cotiza a ~9x utilidades futuras, como si los márgenes fueran a erosionarse para siempre. El nuevo CEO reinvierte los ahorros en 2026 (el margen baja) para relanzar Venmo, BNPL y Braintree. La tesis Base: crecimiento de un dígito medio, margen que vuelve a ~19,5% y costo de capital de 9,2%.",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "TPV +10%, pero el take rate baja (1,61%, −7pb): ingresos +4% en el Año 1 (consenso 2026: +4,8%) y 3,5% en los años 2-5.",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Baja a 17,3% en el Año 1 por la reinversión (margen GAAP del Q2 de 16,4%) y sube a 19,5% en 6 años con escala en Venmo/BNPL.",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva LTM de 16,4% que converge a la marginal de 25%.",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,6x: relación marginal real 2020-2025 (ΔIngresos / ΔCapital invertido, con I+D capitalizado). CapEx ~2,6% de ingresos, por debajo de D&A.",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC actual ~18% (con US$10.900M de goodwill); la red de dos lados sostiene retornos sobre el WACC hasta el año 10.",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "9,2%: beta 1,29 (entre las redes V/MA ~0,7 y el fintech ~1,7-2,7), rating A3/A-, ERP de 4,09% (sep-2026).",
+  "reason": "Historia PYPL (reemplaza la de Amazon)"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.04,
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Entre el crecimiento del Q2 2026 (+5% nominal, +3% sin efecto cambiario) y el consenso FY2026 (+4,8%); la empresa no da guía de ingresos, solo de TM$ (+~1%).",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": "='Input sheet'!B28",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Base ajustada por I+D ('Valuation output'!B6 = 18,1%) menos 0,8pp: el margen GAAP del Q2 2026 fue 16,4% (−171pb) y la guía de EPS GAAP 2026 es de caída de un dígito medio.",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.035,
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Desacelera: consenso FY2027 +4,2% y TM$ creciendo ~1%. Categoría madura con take rate en baja.",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.195,
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Algo por encima del máximo GAAP de 10 años de PYPL (18,3% en 2025, ~19% ajustado por I+D) y de la mediana de comparables (16,5%: GPN 16,1%, AFRM 12,6%, XYZ 7,0%). No V/MA (61-66%): son redes puras sin costo de transacción.",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 6,
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Reinversión deliberada en 2026: el ahorro de US$1.500M se ejecuta en 2-3 años y el margen tarda en recuperarse.",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.6,
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Bottom-up: ΔIngresos 2020-25 (+US$11.718M) / ΔCapital invertido con I+D capitalizado (~+US$4.550M).",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.6,
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Mismo modelo asset-light; el CapEx (~2,6% de ingresos) no escala más rápido que los ingresos.",
+  "reason": "Recomendaciones PYPL"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación PYPL: la utilidad neta, el EBITDA y el FCF fueron POSITIVOS los 10 años (no hay cambio de signo), así que el mecanismo nativo (Base = MIN de los últimos 4 años) funciona sin reemplazos. Además es el ancla correcta: PayPal pasó de P/E de 50-66x (2017-2021) a ~10-11x (2025-LTM) y el mínimo de 4 años captura el múltiplo de hoy, no el de la burbuja de 2021. Resultado: P/E Base ~10,3x, EV/EBITDA ~7,7x y EV/FCFF ~10,5x. Contraste: V/MA cotizan a ~22x EV/EBITDA y Adyen a ~13x, por eso el rango x0,9 / x1,1 es conservador.",
+  "reason": "Evaluacion de multiplos PYPL"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ([$XX,XX])"
+   ],
+   [
+    "Conservador",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Base",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Optimista",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

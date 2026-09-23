@@ -625,3 +625,57 @@ def test_loader_ignores_quarterly_footnote_when_computing_prior_10k_revenue(fake
     # (el trimestre) como base en vez de 900M (el anio real 2023).
     assert inputs.revenue_prior_10k == pytest.approx(1000.0)
     assert inputs.revenue_growth_next_year == pytest.approx(1000 / 900 - 1)
+
+
+def test_ltm_when_10q_reports_both_discrete_quarter_and_ytd_with_same_end():
+    """Regresion PYPL: cada 10-Q trae el trimestre (3M) Y el acumulado (6M/9M)
+    con la MISMA fecha de cierre. Deduplicar solo por 'end' se quedaba con
+    uno cualquiera; si sobrevivia el 3M de Q3, no habia 9M para derivar
+    Q4 = anual - 9M y el LTM caia al ultimo 10-K."""
+    from jmr_valuation.io.sec_edgar_loader import _concept_rows
+
+    rows = [
+        {"start": "2025-01-01", "end": "2025-03-31", "val": 731 * M, "form": "10-Q", "fp": "Q1", "filed": "2025-04-29"},
+        {"start": "2025-04-01", "end": "2025-06-30", "val": 767 * M, "form": "10-Q", "fp": "Q2", "filed": "2025-07-29"},
+        {"start": "2025-01-01", "end": "2025-06-30", "val": 1498 * M, "form": "10-Q", "fp": "Q2", "filed": "2025-07-29"},
+        {"start": "2025-07-01", "end": "2025-09-30", "val": 801 * M, "form": "10-Q", "fp": "Q3", "filed": "2025-10-28"},
+        {"start": "2025-01-01", "end": "2025-09-30", "val": 2299 * M, "form": "10-Q", "fp": "Q3", "filed": "2025-10-28"},
+        {"start": "2025-01-01", "end": "2025-12-31", "val": 3103 * M, "form": "10-K", "fp": "FY", "filed": "2026-02-03"},
+        {"start": "2026-01-01", "end": "2026-03-31", "val": 793 * M, "form": "10-Q", "fp": "Q1", "filed": "2026-05-05"},
+        {"start": "2026-04-01", "end": "2026-06-30", "val": 849 * M, "form": "10-Q", "fp": "Q2", "filed": "2026-07-28"},
+        {"start": "2026-01-01", "end": "2026-06-30", "val": 1642 * M, "form": "10-Q", "fp": "Q2", "filed": "2026-07-28"},
+    ]
+    merged = _concept_rows({"ResearchAndDevelopmentExpense": {"units": {"USD": rows}}}, "rd")
+
+    # Q3-25 (801) + Q4-25 (3103-2299=804) + Q1-26 (793) + Q2-26 (849) = 3247
+    assert _ltm_value(merged) == pytest.approx(3247 * M)
+
+
+def test_pretax_income_synthesized_from_net_income_plus_tax_when_total_tag_missing():
+    """Regresion PYPL: desde 2023 solo taggea el desglose Domestic/Foreign del
+    resultado antes de impuestos. El tag Domestic (~US$1.000M) se usaba como
+    total y la tasa efectiva daba >100%."""
+    from jmr_valuation.io.sec_edgar_loader import _pretax_rows
+
+    gaap = {
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic": {"units": {"USD": [_annual("2025-12-31", 1453 * M)]}},
+        "NetIncomeLoss": {"units": {"USD": [{**_annual("2025-12-31", 5233 * M), "accn": "a"}]}},
+        "IncomeTaxExpenseBenefit": {"units": {"USD": [{**_annual("2025-12-31", 1059 * M), "accn": "a"}]}},
+    }
+
+    annual = _annual_rows(_pretax_rows(gaap))
+
+    assert annual[-1]["val"] == pytest.approx(6292 * M)
+
+
+def test_pretax_income_prefers_reported_total_over_synthesized():
+    from jmr_valuation.io.sec_edgar_loader import _pretax_rows
+
+    gaap = {
+        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest": {
+            "units": {"USD": [{**_annual("2022-12-31", 3366 * M), "accn": "a"}]}},
+        "NetIncomeLoss": {"units": {"USD": [{**_annual("2022-12-31", 2419 * M), "accn": "a"}]}},
+        "IncomeTaxExpenseBenefit": {"units": {"USD": [{**_annual("2022-12-31", 900 * M), "accn": "a"}]}},
+    }
+
+    assert _annual_rows(_pretax_rows(gaap))[-1]["val"] == pytest.approx(3366 * M)

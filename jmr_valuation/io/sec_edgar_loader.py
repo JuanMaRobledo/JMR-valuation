@@ -108,7 +108,10 @@ _TAGS: dict[str, list[str]] = {
     "pretax_income": [
         "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
         "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
-        "IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic",
+        # 'IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic' NO va
+        # aca: es solo la parte DOMESTICA del resultado antes de impuestos
+        # (PYPL: ~$1.000M de ~$5.400M en 2023-2025) -- usarla como total
+        # disparaba la tasa efectiva a >100%. Ver _pretax_rows.
     ],
     "dividend_per_share": ["CommonStockDividendsPerShareDeclared", "CommonStockDividendsPerShareCashPaid"],
     "da": ["DepreciationDepletionAndAmortization", "DepreciationAmortizationAndAccretionNet",
@@ -227,7 +230,33 @@ def _concept_rows(gaap: dict, key: str, units: tuple[str, ...] = ("USD",),
                 if candidate_rows:
                     combined.extend(candidate_rows)
                     break
-    return _dedupe_by_end(combined) if combined else None
+    return _dedupe_by_period(combined) if combined else None
+
+
+def _pretax_rows(gaap: dict) -> list[dict] | None:
+    """Resultado antes de impuestos. Si la empresa dejo de taggear el total
+    (PYPL desde 2023 solo taggea el desglose Domestic/Foreign), se completa
+    con la identidad Net Income + Income Tax Expense, emparejando filas del
+    MISMO periodo (start/end) y la MISMA presentacion (accn) antes de
+    deduplicar -- asi no se mezcla un trimestre de un concepto con un
+    acumulado del otro que comparta fecha de cierre."""
+    reported = _concept_rows(gaap, "pretax_income") or []
+
+    def _raw(key: str) -> list[dict]:
+        out: list[dict] = []
+        for tag in _TAGS[key]:
+            out.extend(gaap.get(tag, {}).get("units", {}).get("USD", []))
+        return out
+
+    tax_by_key = {(r.get("start"), r["end"], r.get("accn")): r["val"] for r in _raw("tax_expense") if "start" in r}
+    synthesized = [
+        {**r, "val": r["val"] + tax_by_key[(r["start"], r["end"], r.get("accn"))]}
+        for r in _raw("net_income")
+        if "start" in r and (r["start"], r["end"], r.get("accn")) in tax_by_key
+    ]
+    reported_ends = {(r.get("start"), r["end"]) for r in reported}
+    combined = reported + [r for r in synthesized if (r["start"], r["end"]) not in reported_ends]
+    return _dedupe_by_period(combined) if combined else None
 
 
 def _duration_days(row: dict) -> int:
@@ -244,6 +273,25 @@ def _dedupe_by_end(rows: list[dict]) -> list[dict]:
         if prev is None or row["filed"] < prev["filed"]:
             by_end[row["end"]] = row
     return sorted(by_end.values(), key=lambda r: r["end"])
+
+
+def _dedupe_by_period(rows: list[dict]) -> list[dict]:
+    """Como _dedupe_by_end, pero la clave es el PERIODO completo (start, end)
+    y no solo la fecha de cierre. Un 10-Q de Q3 trae dos hechos que cierran
+    el mismo dia -- el trimestre (jul-sep) y el acumulado de 9 meses
+    (ene-sep); deduplicar solo por 'end' se quedaba con uno cualquiera y, si
+    sobrevivia el trimestral, _derive_discrete_quarters ya no podia sacar
+    Q4 = anual - 9M acumulado (PYPL: el LTM de I+D, SG&A y D&A caia al
+    ultimo 10-K). Los filtros posteriores (_annual_rows, _quarterly_rows,
+    _instant_rows) siguen deduplicando por 'end' despues de filtrar por
+    duracion, asi que para ellos no cambia nada."""
+    by_period: dict[tuple, dict] = {}
+    for row in rows:
+        key = (row.get("start"), row["end"])
+        prev = by_period.get(key)
+        if prev is None or row["filed"] < prev["filed"]:
+            by_period[key] = row
+    return sorted(by_period.values(), key=lambda r: (r["end"], r.get("start") or ""))
 
 
 def _annual_rows(rows: list[dict] | None) -> list[dict]:
@@ -313,7 +361,7 @@ def _derive_discrete_quarters(rows: list[dict] | None) -> list[dict]:
     trimestre tal cual estaba reportado -- no cambia nada para ese caso."""
     if not rows:
         return []
-    duration_rows = _dedupe_by_end([r for r in rows if "start" in r])
+    duration_rows = _dedupe_by_period([r for r in rows if "start" in r])
     groups: dict[str, list[dict]] = {}
     for r in duration_rows:
         groups.setdefault(r["start"], []).append(r)
@@ -327,7 +375,9 @@ def _derive_discrete_quarters(rows: list[dict] | None) -> list[dict]:
             if 55 <= gap_days <= 105:
                 discrete.append({**r, "start": prev_end, "val": r["val"] - prev_val})
             prev_val, prev_end = r["val"], r["end"]
-    return sorted(discrete, key=lambda r: r["end"])
+    # Un mismo trimestre puede salir dos veces (reportado discreto Y derivado
+    # de restar acumulados, ver _dedupe_by_period) -- uno por cierre.
+    return _dedupe_by_end(discrete)
 
 
 def _instant_rows(rows: list[dict] | None) -> list[dict]:
@@ -580,7 +630,7 @@ def load_company_inputs_from_sec_edgar(
     shares_annual = _annual_instant_rows(shares_rows)
 
     tax_annual = _annual_rows(rows("tax_expense"))
-    pretax_annual = _annual_rows(rows("pretax_income"))
+    pretax_annual = _annual_rows(_pretax_rows(gaap))
     effective_tax_rate = 0.0
     if tax_annual and pretax_annual:
         pretax_by_end = {r["end"]: r["val"] for r in pretax_annual}
@@ -876,7 +926,7 @@ def load_annual_series_from_sec_edgar(
     # duration (flujo, se les aplica _annual_rows/_ltm_value) o instant
     # (balance, _annual_instant_rows, sin LTM propio -- se reusa el ultimo
     # anual, igual que ya se hace con current_assets/current_debt). ---
-    rd_rows, pretax_rows = rows("rd"), rows("pretax_income")
+    rd_rows, pretax_rows = rows("rd"), _pretax_rows(gaap)
     # _sum_two_series recibe filas YA filtradas a anuales (_annual_rows) --
     # sumar filas crudas (sin filtrar duracion) arriesgaria sumar un hecho
     # anual de una serie con uno trimestral de la otra que comparta 'end'.
