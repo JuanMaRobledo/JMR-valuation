@@ -331,7 +331,7 @@ def step_assumptions() -> None:
         "B29": 0.045,      # CMD 21-sep-2026: CAGR 2026-30 "en linea con pares" (~5-6%), con descuento por erosion de semaglutida
         "B30": 0.40,       # margen LP (basis ajustado por I+D): premium sobre big pharma madura tras la expiracion de semaglutida (2031-32)
         "B31": 7,          # convergencia hacia 2032-33 (patente de semaglutida en EE.UU.)
-        "B32": 0.7,        # marginal 2020-25: +DKK 182 mil M de ventas con +~DKK 250 mil M de capital (capex pico)
+        "B32": 0.45,       # anclado al FCF real (auditoria 24-sep): con 0,7 el FCFF del Año 1 superaba FY2025/LTM/guia
         "B33": 1.1,        # capex en baja segun la empresa; ~promedio de la industria (1,07)
         "B35": UST_10Y,
         "B68": "Yes", "B69": 0.035,  # g perpetuo 3,5% < rf 5,1%: cliff de patentes de GLP-1 despues de 2032
@@ -439,7 +439,36 @@ def step_content() -> None:
     nc.write_tesis(sh, bk)
 
 
-STEPS = {"refresh": step_refresh, "assumptions": step_assumptions, "content": step_content}
+def step_audit() -> None:
+    """Correcciones de la auditoria del 24-sep-2026 (ver log de la Tesis)."""
+    sh = ms.open_sheet(SHEET_ID)
+    bk = BACKUP_PATH
+    ms.write_with_backup(sh, "Input sheet", {"B32": 0.45},
+                         "S2C años 1-5 anclado al FCF real (FY2025 US$9,0 mil M, LTM 11,6, guia 2026 6,9-8,4)", bk)
+    # Bug #15: los multiplos EV daban valor de EMPRESA por accion (sin restar deuda neta).
+    net_debt = "('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20)"
+    for name in ("EVEBITDA", "EVFCFF"):
+        upd = {}
+        for price_row, mult_row, fm_shares in ((10, 8, 31), (21, 19, 70), (32, 30, 110)):
+            for c, fmc in zip("FGH", "EFG"):
+                upd[f"{c}{price_row}"] = (f"=({c}{mult_row}*{c}{mult_row + 1}-{net_debt})"
+                                          f"/'Financials Multiples'!{fmc}{fm_shares}")
+        ms.write_with_backup(sh, name, upd, "Bug #15: precio implicito = (EV - deuda neta) / acciones", bk)
+    # Bug #16: DPS proyectado sumaba la TASA de crecimiento y el "acumulado" era un solo año.
+    fm = {}
+    for r in (35, 74, 114):
+        for c, p in zip("FGH", "EFG"):
+            fm[f"{c}{r}"] = f"={p}{r}*(1+{c}{r + 1})"
+    ms.write_with_backup(sh, "Financials Multiples", fm, "Bug #16: DPS = DPS previo x (1 + crecimiento)", bk)
+    for name in ("EVFCFF", "PE", "EVEBITDA", "POCF", "PFCFE"):
+        upd = {}
+        for div_row, fm_row in ((11, 35), (22, 74), (33, 114)):
+            upd[f"G{div_row}"] = f"=SUM('Financials Multiples'!E{fm_row}:F{fm_row})"
+            upd[f"H{div_row}"] = f"=SUM('Financials Multiples'!E{fm_row}:G{fm_row})"
+        ms.write_with_backup(sh, name, upd, "Bug #16: dividendos ACUMULADOS FY+1..FY+n", bk)
+
+
+STEPS = {"refresh": step_refresh, "assumptions": step_assumptions, "audit": step_audit, "content": step_content}
 
 
 def main(argv: list[str]) -> int:

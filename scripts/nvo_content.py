@@ -143,9 +143,9 @@ STORIES = {
     "G10": "Guía 2026 0% a −6% (tipo de cambio constante, −1pp FX) y consenso 2027 +1,3% -> Año 1 −3%; CMD \"en línea con pares\" -> años 2-5 4,5%.",
     "G11": "Año 1 = base ajustada −1,5pp (más I+D y promoción en el 2S26, WAC más bajo en 2027). Converge a 40% en 7 años (patente 2032).",
     "G12": "Tasa efectiva LTM 21,7% (guía 21-23%) que converge a la corporativa danesa de 22%.",
-    "G13": "0,7x (años 1-5): relación marginal 2020-2025 con capex récord; 1,1x (años 6-10): capex en baja, promedio de la industria 1,07x.",
+    "G13": "0,45x (años 1-5): capex guiado ~DKK 55.000M en 2026 y en baja; con 0,45x el FCFF del Año 1 (~US$11.100M) queda entre el FCF de FY2025 (US$9.000M) y el LTM (US$11.600M). 1,1x (años 6-10): capacidad ya construida, industria 1,07x.",
     "G14": "ROIC actual ~24% (basis ajustado por I+D); converge al costo de capital después del año 10.",
-    "G15": "9,0%: rf 5,11% (UST, 23-sep-2026) + beta desapalancada 1,00 de farma global (relevered ~1,10) x ERP 4,09%; Kd 5,66% (AA).",
+    "G15": "9,0%: rf 5,11% (UST, 23-sep-2026) + beta desapalancada 1,00 de farma global (relevered 1,09) x ERP 4,09% = Ke 9,55%; Kd 5,66% (AA); D/(D+E) 10% a valor de mercado.",
 }
 
 SUPUESTOS_RECOMENDADOS = {
@@ -154,7 +154,7 @@ SUPUESTOS_RECOMENDADOS = {
     "C8": 0.045, "D8": "CMD 21-sep-2026: CAGR 2026-30 en línea con 14 grandes farmacéuticas (~5-6%), con descuento por la erosión de semaglutida.",
     "C9": 0.40, "D9": "Basis ajustado por I+D. Premium sobre big pharma madura (Novartis/Amgen ~35% GAAP) tras la expiración de semaglutida; el promedio de Damodaran (23%) incluye empresas chicas.",
     "C10": 7, "D10": "Hasta 2032-33, la expiración de la patente de semaglutida en EE.UU.",
-    "C11": 0.7, "D11": "Marginal 2020-2025: +DKK 182.000M de ventas con +~DKK 250.000M de capital (capex pico).",
+    "C11": 0.45, "D11": "Anclado al flujo de caja real: con 0,45x el FCFF del Año 1 (~US$11.100M) queda entre el FCF de FY2025 (US$9.000M) y el LTM (US$11.600M); la guía 2026 es DKK 45.000-55.000M (US$6.900-8.400M) con capex de ~DKK 55.000M. El marginal histórico 2020-25 (0,7x) subestimaba la reinversión con un crecimiento más bajo.",
     "C12": 1.1, "D12": "La empresa guía capex en baja; promedio de la industria 1,07x.",
 }
 
@@ -208,6 +208,9 @@ LOG = [
     ["Sector fila 2 (NVO)", "EV/EBITDA 1,5x y P/OCF 1,3x (yfinance mezcla US$ y DKK)", "Fórmulas contra las cifras LTM del libro (7,6x / 8,4x)", "Solo referencia visual."],
     ["Cost of capital worksheet", "A1/A+ · vencimiento 3 · ERP 4,23% (ene-2026) · rf 4,99%", "Aa2/AA · 7 años · 4,09% (sep-2026) · 5,11%", "S&P AA / Moody's Aa3; UST al 23-sep-2026."],
     ["Income Statement!B30:D30 / Valuation output!B52", "#DIV/0! (años sin dato) -> cascada en Crecimiento y Márgenes", "IFERROR", "Barrido de errores (paso 8). Industry Averages(US) F/S/Y/Z 19/30/79 son preexistentes de la plantilla."],
+    ["Input sheet!B32 (auditoría 24-sep)", "0,7x (marginal 2020-25): FCFF Año 1 US$12.700M, sobre el FCF real", "0,45x: FCFF Año 1 US$11.100M", "FCF real: FY2025 US$9.000M, LTM US$11.600M, guía 2026 US$6.900-8.400M; el capex sigue en ~DKK 55.000M."],
+    ["EVEBITDA / EVFCFF filas 10/21/32 (bug #15)", "Precio = múltiplo EV × métrica / acciones (valor de EMPRESA por acción)", "(EV implícito − deuda neta) / acciones", "Sobrevaluaba US$3,3 por acción (deuda neta US$14.571M)."],
+    ["Financials Multiples filas 35/74/114 + 5 hojas de múltiplos filas 11/22/33 (bug #16)", "DPS = DPS previo + tasa de crecimiento; \"Dividendos acumulados\" a FY+3 = un solo año de dividendo", "DPS × (1 + crecimiento); acumulado = SUMA de FY+1..FY+n", "Subestimaba ~US$3,6 por acción el precio a FY+3 de cada múltiplo."],
     ["Resumen de Valoración!C25", "yfinance devolvió NaN para el cierre del 23-sep", "US$38,17 (cierre real, −3,12% vs. US$39,40)", "Precio congelado del día del análisis."],
 ]
 
@@ -256,9 +259,9 @@ def tesis_rows() -> tuple[list[list], dict]:
         ["Años de convergencia de margen", f"={INP}!B31", f"={INP}!B31", f"={INP}!B31",
          "7 años: hasta 2032-33, la expiración de la patente de semaglutida en EE.UU."],
         ["Sales-to-Capital (años 1-5 / 6-10)", f"={INP}!B32", f"={INP}!B32", f"={INP}!B32",
-         "0,7x bottom-up 2020-2025 (capex récord: DKK 60.100M en 2025, 17% de ventas) y 1,1x en los años 6-10 (capex en baja; industria 1,07x)."],
+         "0,45x en los años 1-5, anclado al FCF: con 0,7x (marginal 2020-25) el FCFF del Año 1 daba US$12.700M, por encima del FCF de FY2025 (US$9.000M), del LTM (US$11.600M) y de la guía 2026 (US$6.900-8.400M), porque el capex sigue en ~DKK 55.000M con un crecimiento mucho menor. 1,1x en los años 6-10 (capex en baja; industria 1,07x)."],
         ["Costo de capital (WACC)", f"={COC}!B14", f"={COC}!B14", f"={COC}!B14",
-         "rf 5,11% (UST 10 años, 23-sep-2026) + beta 1,10 (Damodaran Drugs (Pharmaceutical) global desapalancada 1,00, D/E 13%) x ERP 4,09% (Damodaran, 1-sep-2026; Dinamarca Aaa sin prima país) = Ke 9,6%. Kd 5,66% (AA). D/(D+E) 11%."],
+         "rf 5,11% (UST 10 años, 23-sep-2026) + beta 1,09 (Damodaran Drugs (Pharmaceutical) global desapalancada 1,00, D/E 11% a mercado) x ERP 4,09% (Damodaran, 1-sep-2026; Dinamarca Aaa sin prima país) = Ke 9,55%. Kd 5,66% (AA). D/(D+E) 10%."],
         ["Referencia: margen base ajustado (B6)", f"={VO}!B6", f"={VO}!B6", f"={VO}!B6",
          "EBIT LTM reportado US$21.762M − reversión 340B US$4.098M + deterioros US$969M = US$18.633M, + ajuste de I+D capitalizado US$2.590M."],
     ]

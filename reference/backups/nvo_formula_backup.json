@@ -131,8 +131,8 @@
  },
  "Input sheet!B32": {
   "before": "=K28",
-  "after": 0.7,
-  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+  "after": 0.45,
+  "reason": "S2C años 1-5 anclado al FCF real (FY2025 US$9,0 mil M, LTM 11,6, guia 2026 6,9-8,4)"
  },
  "Input sheet!B33": {
   "before": "=B32",
@@ -861,7 +861,7 @@
  },
  "Stories to Numbers!G13": {
   "before": "Maintained at Amazon's current level",
-  "after": "0,7x (años 1-5): relación marginal 2020-2025 con capex récord; 1,1x (años 6-10): capex en baja, promedio de la industria 1,07x.",
+  "after": "0,45x (años 1-5): capex guiado ~DKK 55.000M en 2026 y en baja; con 0,45x el FCFF del Año 1 (~US$11.100M) queda entre el FCF de FY2025 (US$9.000M) y el LTM (US$11.600M). 1,1x (años 6-10): capacidad ya construida, industria 1,07x.",
   "reason": "Historia NVO"
  },
  "Stories to Numbers!G14": {
@@ -871,7 +871,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "Cost of capital close to median company",
-  "after": "9,0%: rf 5,11% (UST, 23-sep-2026) + beta desapalancada 1,00 de farma global (relevered ~1,10) x ERP 4,09%; Kd 5,66% (AA).",
+  "after": "9,0%: rf 5,11% (UST, 23-sep-2026) + beta desapalancada 1,00 de farma global (relevered 1,09) x ERP 4,09% = Ke 9,55%; Kd 5,66% (AA); D/(D+E) 10% a valor de mercado.",
   "reason": "Historia NVO"
  },
  "Supuestos Recomendados!C6": {
@@ -926,12 +926,12 @@
  },
  "Supuestos Recomendados!C11": {
   "before": "",
-  "after": 0.7,
+  "after": 0.45,
   "reason": "Recomendaciones NVO"
  },
  "Supuestos Recomendados!D11": {
   "before": "",
-  "after": "Marginal 2020-2025: +DKK 182.000M de ventas con +~DKK 250.000M de capital (capex pico).",
+  "after": "Anclado al flujo de caja real: con 0,45x el FCFF del Año 1 (~US$11.100M) queda entre el FCF de FY2025 (US$9.000M) y el LTM (US$11.600M); la guía 2026 es DKK 45.000-55.000M (US$6.900-8.400M) con capex de ~DKK 55.000M. El marginal histórico 2020-25 (0,7x) subestimaba la reinversión con un crecimiento más bajo.",
   "reason": "Recomendaciones NVO"
  },
  "Supuestos Recomendados!C12": {
@@ -1109,5 +1109,290 @@
    ]
   ],
   "reason": "Plantilla de placeholders reemplazada"
+ },
+ "EVEBITDA!F10": {
+  "before": "=F8*(F9/'Financials Multiples'!E31)",
+  "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E31",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!G10": {
+  "before": "=G8*(G9/'Financials Multiples'!F31)",
+  "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F31",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!H10": {
+  "before": "=H8*(H9/'Financials Multiples'!G31)",
+  "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G31",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!F21": {
+  "before": "=F19*(F20/'Financials Multiples'!E70)",
+  "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E70",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!G21": {
+  "before": "=G19*(G20/'Financials Multiples'!F70)",
+  "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F70",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!H21": {
+  "before": "=H19*(H20/'Financials Multiples'!G70)",
+  "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G70",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!F32": {
+  "before": "=F30*(F31/'Financials Multiples'!E110)",
+  "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E110",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!G32": {
+  "before": "=G30*(G31/'Financials Multiples'!F110)",
+  "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F110",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVEBITDA!H32": {
+  "before": "=H30*(H31/'Financials Multiples'!G110)",
+  "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G110",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!F10": {
+  "before": "=F8*(F9/'Financials Multiples'!E31)",
+  "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E31",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!G10": {
+  "before": "=G8*(G9/'Financials Multiples'!F31)",
+  "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F31",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!H10": {
+  "before": "=H8*(H9/'Financials Multiples'!G31)",
+  "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G31",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!F21": {
+  "before": "=F19*(F20/'Financials Multiples'!E70)",
+  "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E70",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!G21": {
+  "before": "=G19*(G20/'Financials Multiples'!F70)",
+  "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F70",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!H21": {
+  "before": "=H19*(H20/'Financials Multiples'!G70)",
+  "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G70",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!F32": {
+  "before": "=F30*(F31/'Financials Multiples'!E110)",
+  "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E110",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!G32": {
+  "before": "=G30*(G31/'Financials Multiples'!F110)",
+  "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F110",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "EVFCFF!H32": {
+  "before": "=H30*(H31/'Financials Multiples'!G110)",
+  "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G110",
+  "reason": "Bug #15: precio implicito = (EV - deuda neta) / acciones"
+ },
+ "Financials Multiples!F35": {
+  "before": "=E35+F36",
+  "after": "=E35*(1+F36)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!G35": {
+  "before": "=F35+G36",
+  "after": "=F35*(1+G36)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!H35": {
+  "before": "=G35+H36",
+  "after": "=G35*(1+H36)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!F74": {
+  "before": "=E74+F75",
+  "after": "=E74*(1+F75)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!G74": {
+  "before": "=F74+G75",
+  "after": "=F74*(1+G75)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!H74": {
+  "before": "=G74+H75",
+  "after": "=G74*(1+H75)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!F114": {
+  "before": "=E114+F115",
+  "after": "=E114*(1+F115)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!G114": {
+  "before": "=F114+G115",
+  "after": "=F114*(1+G115)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "Financials Multiples!H114": {
+  "before": "=G114+H115",
+  "after": "=G114*(1+H115)",
+  "reason": "Bug #16: DPS = DPS previo x (1 + crecimiento)"
+ },
+ "EVFCFF!G11": {
+  "before": "='Financials Multiples'!F35",
+  "after": "=SUM('Financials Multiples'!E35:F35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVFCFF!H11": {
+  "before": "='Financials Multiples'!G35",
+  "after": "=SUM('Financials Multiples'!E35:G35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVFCFF!G22": {
+  "before": "='Financials Multiples'!F74",
+  "after": "=SUM('Financials Multiples'!E74:F74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVFCFF!H22": {
+  "before": "='Financials Multiples'!G74",
+  "after": "=SUM('Financials Multiples'!E74:G74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVFCFF!G33": {
+  "before": "='Financials Multiples'!F114",
+  "after": "=SUM('Financials Multiples'!E114:F114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVFCFF!H33": {
+  "before": "='Financials Multiples'!G114",
+  "after": "=SUM('Financials Multiples'!E114:G114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PE!G11": {
+  "before": "='Financials Multiples'!F35",
+  "after": "=SUM('Financials Multiples'!E35:F35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PE!H11": {
+  "before": "='Financials Multiples'!G35",
+  "after": "=SUM('Financials Multiples'!E35:G35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PE!G22": {
+  "before": "='Financials Multiples'!F74",
+  "after": "=SUM('Financials Multiples'!E74:F74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PE!H22": {
+  "before": "='Financials Multiples'!G74",
+  "after": "=SUM('Financials Multiples'!E74:G74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PE!G33": {
+  "before": "='Financials Multiples'!F114",
+  "after": "=SUM('Financials Multiples'!E114:F114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PE!H33": {
+  "before": "='Financials Multiples'!G114",
+  "after": "=SUM('Financials Multiples'!E114:G114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVEBITDA!G11": {
+  "before": "='Financials Multiples'!F35",
+  "after": "=SUM('Financials Multiples'!E35:F35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVEBITDA!H11": {
+  "before": "='Financials Multiples'!G35",
+  "after": "=SUM('Financials Multiples'!E35:G35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVEBITDA!G22": {
+  "before": "='Financials Multiples'!F74",
+  "after": "=SUM('Financials Multiples'!E74:F74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVEBITDA!H22": {
+  "before": "='Financials Multiples'!G74",
+  "after": "=SUM('Financials Multiples'!E74:G74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVEBITDA!G33": {
+  "before": "='Financials Multiples'!F114",
+  "after": "=SUM('Financials Multiples'!E114:F114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "EVEBITDA!H33": {
+  "before": "='Financials Multiples'!G114",
+  "after": "=SUM('Financials Multiples'!E114:G114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "POCF!G11": {
+  "before": "='Financials Multiples'!F35",
+  "after": "=SUM('Financials Multiples'!E35:F35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "POCF!H11": {
+  "before": "='Financials Multiples'!G35",
+  "after": "=SUM('Financials Multiples'!E35:G35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "POCF!G22": {
+  "before": "='Financials Multiples'!F74",
+  "after": "=SUM('Financials Multiples'!E74:F74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "POCF!H22": {
+  "before": "='Financials Multiples'!G74",
+  "after": "=SUM('Financials Multiples'!E74:G74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "POCF!G33": {
+  "before": "='Financials Multiples'!F114",
+  "after": "=SUM('Financials Multiples'!E114:F114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "POCF!H33": {
+  "before": "='Financials Multiples'!G114",
+  "after": "=SUM('Financials Multiples'!E114:G114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PFCFE!G11": {
+  "before": "='Financials Multiples'!F35",
+  "after": "=SUM('Financials Multiples'!E35:F35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PFCFE!H11": {
+  "before": "='Financials Multiples'!G35",
+  "after": "=SUM('Financials Multiples'!E35:G35)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PFCFE!G22": {
+  "before": "='Financials Multiples'!F74",
+  "after": "=SUM('Financials Multiples'!E74:F74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PFCFE!H22": {
+  "before": "='Financials Multiples'!G74",
+  "after": "=SUM('Financials Multiples'!E74:G74)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PFCFE!G33": {
+  "before": "='Financials Multiples'!F114",
+  "after": "=SUM('Financials Multiples'!E114:F114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
+ },
+ "PFCFE!H33": {
+  "before": "='Financials Multiples'!G114",
+  "after": "=SUM('Financials Multiples'!E114:G114)",
+  "reason": "Bug #16: dividendos ACUMULADOS FY+1..FY+n"
  }
 }
