@@ -1,0 +1,1113 @@
+{
+ "Input sheet!B1": {
+  "before": "=A1",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!L29",
+  "after": "='Income Statement'!L29",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!E22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46288,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B12": {
+  "before": "='Income Statement'!L3",
+  "after": "='Income Statement'!L3-4098,2",
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B13": {
+  "before": "='Income Statement'!L12",
+  "after": "='Income Statement'!L12-4098,2+969,1",
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "Yes",
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.22,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": -0.03,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": "='Valuation output'!B6-0,015",
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.045,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.4,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 7,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 0.7,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.1,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0511,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B68": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B69": {
+  "before": -0.05,
+  "after": 0.035,
+  "reason": "Supuestos NVO (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "R& D converter!F7": {
+  "before": 3,
+  "after": 5,
+  "reason": "I+D NVO: 5 años de amortizacion, LTM sin deterioros"
+ },
+ "R& D converter!F8": {
+  "before": "='Income Statement'!L10",
+  "after": "='Income Statement'!L10-969,1",
+  "reason": "I+D NVO: 5 años de amortizacion, LTM sin deterioros"
+ },
+ "R& D converter!B15": {
+  "before": "",
+  "after": "='Income Statement'!H10",
+  "reason": "I+D NVO: 5 años de amortizacion, LTM sin deterioros"
+ },
+ "R& D converter!B16": {
+  "before": "",
+  "after": "='Income Statement'!G10",
+  "reason": "I+D NVO: 5 años de amortizacion, LTM sin deterioros"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Updated September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Cost of capital NVO"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 7,
+  "reason": "Cost of capital NVO"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Cost of capital NVO"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Aa2/AA",
+  "reason": "Cost of capital NVO"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.35,
+  "reason": "Escenarios NVO: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": "='Input sheet'!B30+0,05",
+  "reason": "Escenarios NVO: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": "='Input sheet'!B27-0,04",
+  "reason": "Escenarios NVO: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!D55": {
+  "before": "=C55",
+  "after": 0.01,
+  "reason": "Escenarios NVO: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": "='Input sheet'!B27+0,02",
+  "reason": "Escenarios NVO: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!D106": {
+  "before": "=C106",
+  "after": 0.07,
+  "reason": "Escenarios NVO: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa NVO"
+ },
+ "Financials Multiples!E8": {
+  "before": "=IFERROR(IF(J8<>\"\";J8;'Valuation output'!C57);\"\")",
+  "after": "=IFERROR(IF(J8<>\"\";J8;'Valuation output'!C57-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!F8": {
+  "before": "=IFERROR(IF(K8<>\"\";K8;'Valuation output'!D57);\"\")",
+  "after": "=IFERROR(IF(K8<>\"\";K8;'Valuation output'!D57-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!G8": {
+  "before": "=IFERROR(IF(L8<>\"\";L8;'Valuation output'!E57);\"\")",
+  "after": "=IFERROR(IF(L8<>\"\";L8;'Valuation output'!E57-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!H8": {
+  "before": "=IFERROR(IF(M8<>\"\";M8;'Valuation output'!F57);\"\")",
+  "after": "=IFERROR(IF(M8<>\"\";M8;'Valuation output'!F57-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!E47": {
+  "before": "=IFERROR(IF(J47<>\"\";J47;'Valuation output'!C6);\"\")",
+  "after": "=IFERROR(IF(J47<>\"\";J47;'Valuation output'!C6-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!F47": {
+  "before": "=IFERROR(IF(K47<>\"\";K47;'Valuation output'!D6);\"\")",
+  "after": "=IFERROR(IF(K47<>\"\";K47;'Valuation output'!D6-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!G47": {
+  "before": "=IFERROR(IF(L47<>\"\";L47;'Valuation output'!E6);\"\")",
+  "after": "=IFERROR(IF(L47<>\"\";L47;'Valuation output'!E6-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!H47": {
+  "before": "=IFERROR(IF(M47<>\"\";M47;'Valuation output'!F6);\"\")",
+  "after": "=IFERROR(IF(M47<>\"\";M47;'Valuation output'!F6-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!E87": {
+  "before": "=IFERROR(IF(J87<>\"\";J87;'Valuation output'!C108);\"\")",
+  "after": "=IFERROR(IF(J87<>\"\";J87;'Valuation output'!C108-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!F87": {
+  "before": "=IFERROR(IF(K87<>\"\";K87;'Valuation output'!D108);\"\")",
+  "after": "=IFERROR(IF(K87<>\"\";K87;'Valuation output'!D108-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!G87": {
+  "before": "=IFERROR(IF(L87<>\"\";L87;'Valuation output'!E108);\"\")",
+  "after": "=IFERROR(IF(L87<>\"\";L87;'Valuation output'!E108-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "Financials Multiples!H87": {
+  "before": "=IFERROR(IF(M87<>\"\";M87;'Valuation output'!F108);\"\")",
+  "after": "=IFERROR(IF(M87<>\"\";M87;'Valuation output'!F108-IF('Input sheet'!$B$17=\"Yes\";'R& D converter'!$D$40/'Input sheet'!$B$12;0));\"\")",
+  "reason": "Bug #14: margen proyectado en basis contable (sin el ajuste de I+D capitalizado)"
+ },
+ "EVFCFF!J8": {
+  "before": "",
+  "after": "='Valuation output'!B77/'Financials Multiples'!E24",
+  "reason": "EV/FCFF objetivo implicito del DCF (FCFF deprimido por capex record)"
+ },
+ "EVFCFF!J19": {
+  "before": "=MIN(B19:E19)",
+  "after": "='Valuation output'!B26/'Financials Multiples'!E63",
+  "reason": "EV/FCFF objetivo implicito del DCF (FCFF deprimido por capex record)"
+ },
+ "EVFCFF!J30": {
+  "before": "",
+  "after": "='Valuation output'!B128/'Financials Multiples'!E103",
+  "reason": "EV/FCFF objetivo implicito del DCF (FCFF deprimido por capex record)"
+ },
+ "Income Statement!B30": {
+  "before": "=B28/B3",
+  "after": "=IFERROR(B28/B3;\"\")",
+  "reason": "#DIV/0! del margen EBITDA en años sin dato (B-D)"
+ },
+ "Income Statement!C30": {
+  "before": "=C28/C3",
+  "after": "=IFERROR(C28/C3;\"\")",
+  "reason": "#DIV/0! del margen EBITDA en años sin dato (B-D)"
+ },
+ "Income Statement!D30": {
+  "before": "=D28/D3",
+  "after": "=IFERROR(D28/D3;\"\")",
+  "reason": "#DIV/0! del margen EBITDA en años sin dato (B-D)"
+ },
+ "Valuation output!B52": {
+  "before": "=('Income Statement'!K3/'Income Statement'!B3)^(1/10)-1",
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/10)-1;\"\")",
+  "reason": "#DIV/0! del CAGR 10Y (historico de 7 años)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Novo Nordisk A/S (ADR NVO en NYSE; acciones B en Nasdaq Copenhague)",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Mike Doustdar (CEO desde ago-2025). CFO: Karsten Munk Knudsen.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Farmacéutica: diabetes, obesidad y enfermedades raras (Damodaran: Drugs (Pharmaceutical))",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.novonordisk.com  |  IR: https://www.novonordisk.com/investors.html",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Líder mundial en GLP-1 (semaglutida: Ozempic, Wegovy, Rybelsus) e insulinas. Ventas 2025 de DKK 309.100M (US$47.300M, +10% a tipo de cambio constante) con margen operativo de 41%. En el H1 2026 las ventas ajustadas (sin la reversión 340B) crecieron 2% a tipo de cambio constante. 68.794 empleados a dic-2025 (−10% tras el recorte de ~9.000 puestos de sep-2025).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Obesidad (Wegovy inyectable, Wegovy pill, Wegovy HD)",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "DKK 44.100M en el H1 2026 (+19% a tipo de cambio constante), 30% de las ventas ajustadas. Wegovy pill (lanzada en EE.UU. el 5-ene-2026) facturó DKK 5.500M en el semestre y superó 265.000 recetas semanales: el mejor lanzamiento de un GLP-1 en volumen. Wegovy HD (7,2 mg) se lanzó en EE.UU. en abril.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Diabetes (Ozempic, Rybelsus/Ozempic pill, insulinas)",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "DKK 95.400M en el H1 2026 (−5% a tipo de cambio constante), 64% de las ventas ajustadas. Ozempic DKK 59.200M (−2%), Rybelsus DKK 9.800M (−9%). Presión de precios en EE.UU. (acuerdo MFN) y genéricos de semaglutida en Canadá, China y otros mercados internacionales desde 2026.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Enfermedades raras y geografías",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Enfermedades raras (hemofilia, hormona de crecimiento): DKK 9.100M en el H1 2026 (+2%). Por geografía, EE.UU. cae 4% (ajustado) y las Operaciones Internacionales crecen 8% (EUCAN +20%, China 0%).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia de Distribución\ny Comercialización",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Bajar el precio para ganar volumen: en EE.UU., acuerdo \"Most Favoured Nations\" con el gobierno (nov-2025), cobertura de Medicare para obesidad vía el programa Bridge (desde el 1-jul-2026), canal de autopago (NovoCare Pharmacy, telemedicina) a US$149-299 por mes, y recorte del precio de lista (WAC) de Wegovy y Ozempic desde el 1-ene-2027. Fuera de EE.UU., lanzamientos de Wegovy en ~60 países.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Wegovy pill y el volumen de GLP-1",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Más de 5 millones de recetas de Wegovy pill desde enero. El Q2 2026 mostró reaceleración: ventas ajustadas +7% y EBIT ajustado +11% (a tipo de cambio constante), y la guía 2026 se subió dos veces (de −5%/−13% en feb a 0%/−6% en ago).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Caja y retorno al accionista",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Flujo de caja libre guiado de DKK 45.000-55.000M en 2026 con un capex récord (~DKK 55.000M) que la empresa espera que baje en los próximos años. Dividendo de ~US$1,85 por ADR (~4,9%) y recompra de hasta DKK 15.000M. Rating AA (S&P) / Aa3 (Moody's).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Valuación deprimida",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "A US$38 el ADR cotiza a ~11x la utilidad estimada y ~7,6x EV/EBITDA LTM, contra 25-36x P/E en 2022-2024 y ~15x-25x de sus pares. Está ~40% debajo del máximo de 52 semanas (US$64).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Pérdida de cuota frente a Eli Lilly",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Lilly (tirzepatida: Mounjaro/Zepbound, y orforglipron oral) tenía ~61% del mercado de obesidad contra 39% de Novo en el Q2 2026. CagriSema solo fue no inferior a tirzepatida en peso (REIMAGINE 4) y no en HbA1c.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Precios y expiración de patentes",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Precio realizado en baja (MFN, WAC más bajo desde 2027, cobertura Medicaid reducida). La patente de semaglutida vence en 2032 en EE.UU. (más de la mitad de las ventas) y ya venció en Canadá, China, Brasil e India. Margen bruto ajustado H1 2026: 79,3% contra 83,1%.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Crecimiento solo \"en línea con los pares\"",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "En el Capital Markets Day (21-sep-2026) la empresa apuntó a un crecimiento 2026-2030 en línea con 14 grandes farmacéuticas y a un margen \"ampliamente estable\": la acción cayó 7,9%. Fracasos recientes: ZEUS (ziltivekimab) y deterioros de DKK 6.300M (monlunabant) en el Q2 2026.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 20-F 2019-2025 de Novo Nordisk (SEC EDGAR, XBRL ifrs-full); 6-K del 4-ago-2026 (informe financiero H1 2026) y del 4-feb-2026 (resultados 2025 y guía 2026); comunicados del Capital Markets Day (21-sep-2026); Rio Times, 24/7 Wall St., Yahoo Finance, Investing.com, TipRanks y BioSpace (ago-sep 2026); S&P (AA, may-2025) y Moody's (Aa3, ene-2025); Damodaran Online (indname ene-2026, ERP sep-2026); UST 10 años y DKK/USD al 23-sep-2026; consenso de analistas vía yfinance (23-sep-2026). Cifras en DKK convertidas a US$ a 6,5297 DKK/US$.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 4 de agosto de 2026 – 23 de septiembre de 2026",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "H1 2026: ventas ajustadas +2% y EBIT ajustado +2% (tipo de cambio constante)",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Q2: ventas DKK 78.500M (+7% ajustado) y EBIT ajustado DKK 33.400M (+11%). Reportado H1: ventas DKK 175.300M y EBIT DKK 86.700M, inflados por la reversión 340B de DKK 26.800M (Q1, sin caja).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "Guía 2026 mejorada: ventas y EBIT ajustados de 0% a −6% (tipo de cambio constante)",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Antes −4%/−12%. FCF DKK 45.000-55.000M, capex ~DKK 55.000M, tasa efectiva 21-23%. El efecto cambiario resta ~1-2pp en DKK.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Estrategia",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Capital Markets Day: metas 2030 decepcionan",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Crecimiento 2026-30 en línea con los pares, margen estable, >5 lanzamientos multi-blockbuster y >DKK 150.000M de ventas de pipeline (ajustadas por riesgo) a 2035.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Pipeline / Legal",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "ZEUS falla; demanda contra Lilly por publicidad; ANDA de Cipla",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "ZEUS (ziltivekimab) sin el objetivo primario (posible deterioro en Q3); Novo demandó a Lilly por publicidad engañosa (21-jul); Cipla pidió un genérico de Ozempic (Paragraph IV).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Mercado / Wall St.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Caída de 7,9% en el CMD y bajas de recomendación",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Deutsche Bank bajó a Mantener (precio objetivo DKK 400 -> 275); Kepler también a Mantener. Consenso: 3 Comprar / 10 Mantener / 1 Vender, objetivo medio US$46.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "La reversión 340B distorsiona el LTM",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "La reversión de la provisión 340B (US$4.200M = DKK 26.800M, Q1 2026) es no recurrente y sin caja; además hubo DKK 6.300M de deterioros en el Q2. Impacto: el modelo usa como base las ventas y el EBIT \"ajustados\" de la propia empresa (Input!B12/B13): US$46.353M de ventas y 40,2% de margen LTM.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Guía 2026-2027 y precio",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "La guía de ago-2026 (0% a −6% en ventas y EBIT ajustados) y el consenso (ventas 2026 DKK 300.200M, −2,9%; 2027 DKK 304.100M, +1,3%) anclan el Año 1 del Base en −3%. El recorte de WAC de ene-2027 y el MFN pesan sobre el precio; el volumen (Wegovy pill, Medicare Bridge) compensa.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Metas 2030 y patente 2032",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "El CMD fija el techo del Base: crecimiento en línea con los pares (años 2-5 de 4,5%, debajo del ~5-6% del grupo) y margen estable hasta 2030. La expiración de semaglutida en EE.UU. (2032) justifica converger a 40% (basis ajustado por I+D) en 7 años y un crecimiento perpetuo de 3,5%.",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Presión de mercado",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "El ADR cayó de US$43,24 (18-sep) a US$38,17 (23-sep): −12% en tres ruedas. El consenso de 14 analistas es Mantener, con precio objetivo medio de US$46,3 (rango US$39,7-62,8).",
+  "reason": "Contenido cualitativo NVO"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 68794,
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "='Input sheet'!D1/(22,2/6,5297)",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "='Input sheet'!B16/'Input sheet'!B15",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!E3)^(1/6)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=('Income Statement'!K24/'Income Statement'!E24)^(1/6)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "=(304116/309064)^(1/2)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "=('Financials Multiples'!F57/'Income Statement'!K28)^(1/2)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "=(22,04/23,03)^(1/2)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "—",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=1,854/'Input sheet'!D1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 1.854,
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=(Dividendos!K4/Dividendos!H4)^(1/3)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "=(Dividendos!K4/Dividendos!F4)^(1/5)-1",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadisticas NVO (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Novo Nordisk: el pionero de los GLP-1 pasa del hipercrecimiento a crecer como una farmacéutica más",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Novo creó el mercado de GLP-1 y triplicó sus ventas entre 2019 y 2025, pero en 2026 perdió el liderazgo en obesidad frente a Lilly, baja precios en EE.UU. (MFN, WAC desde 2027) y enfrenta genéricos de semaglutida fuera de EE.UU. El CMD de sep-2026 reseteó la ambición: crecer en línea con los pares con margen estable. La tesis Base: un Año 1 en caída (−3%), 4,5% anual en los años 2-5 (Wegovy pill/HD, CagriSema, zenagamtide) y un margen que baja de 45,8% a 40% (basis ajustado por I+D) hacia la expiración de la patente de semaglutida en EE.UU. (2032), con un costo de capital de 9,0%.",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Guía 2026 0% a −6% (tipo de cambio constante, −1pp FX) y consenso 2027 +1,3% -> Año 1 −3%; CMD \"en línea con pares\" -> años 2-5 4,5%.",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 = base ajustada −1,5pp (más I+D y promoción en el 2S26, WAC más bajo en 2027). Converge a 40% en 7 años (patente 2032).",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva LTM 21,7% (guía 21-23%) que converge a la corporativa danesa de 22%.",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "0,7x (años 1-5): relación marginal 2020-2025 con capex récord; 1,1x (años 6-10): capex en baja, promedio de la industria 1,07x.",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC actual ~24% (basis ajustado por I+D); converge al costo de capital después del año 10.",
+  "reason": "Historia NVO"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "9,0%: rf 5,11% (UST, 23-sep-2026) + beta desapalancada 1,00 de farma global (relevered ~1,10) x ERP 4,09%; Kd 5,66% (AA).",
+  "reason": "Historia NVO"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": -0.03,
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Guía 2026 (ago): ventas ajustadas 0% a −6% a tipo de cambio constante (~−1pp FX); consenso 2026 −2,9% y 2027 +1,3%.",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": "='Valuation output'!B6-0,015",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Base ajustada por I+D ('Valuation output'!B6) −1,5pp: guía de más I+D y promoción en el 2S26 y WAC más bajo desde ene-2027.",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.045,
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "CMD 21-sep-2026: CAGR 2026-30 en línea con 14 grandes farmacéuticas (~5-6%), con descuento por la erosión de semaglutida.",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.4,
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Basis ajustado por I+D. Premium sobre big pharma madura (Novartis/Amgen ~35% GAAP) tras la expiración de semaglutida; el promedio de Damodaran (23%) incluye empresas chicas.",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 7,
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Hasta 2032-33, la expiración de la patente de semaglutida en EE.UU.",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 0.7,
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Marginal 2020-2025: +DKK 182.000M de ventas con +~DKK 250.000M de capital (capex pico).",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.1,
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "La empresa guía capex en baja; promedio de la industria 1,07x.",
+  "reason": "Recomendaciones NVO"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación NVO: P/E, EV/EBITDA, P/OCF y P/FCFE fueron positivos todos los años (sin cambios de signo), así que el mecanismo nativo funciona; como la mediana de 5 años cae en dic-2025 (después del derrumbe de 2025), el múltiplo Base ya es el deprimido (P/E 14,4x, EV/EBITDA 11,1x, P/OCF 13,9x) y no el de la burbuja 2022-24 (P/E 36x). EV/FCFF: el FCFF está deprimido por el capex récord (17% de ventas contra D&A 4,5%) y el múltiplo histórico era 30-36x -> se reemplazó (J8/J19/J30 de EVFCFF) por el múltiplo implícito del DCF de cada escenario (EV / FCFF FY+1). Además, 'Financials Multiples' proyectaba el EBIT contable con el margen ajustado por I+D del DCF (5,6pp más alto): se corrigió (bug #14).",
+  "reason": "Evaluacion de multiplos NVO"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ([$XX,XX])"
+   ],
+   [
+    "Conservador",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Base",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Optimista",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}
