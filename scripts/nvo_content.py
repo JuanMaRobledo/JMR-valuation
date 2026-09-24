@@ -81,7 +81,7 @@ CUALITATIVO = {
     "D42": "ZEUS (ziltivekimab) sin el objetivo primario (posible deterioro en Q3); Novo demandó a Lilly por publicidad engañosa (21-jul); Cipla pidió un genérico de Ozempic (Paragraph IV).",
     "A43": "Mercado / Wall St.",
     "B43": "Caída de 7,9% en el CMD y bajas de recomendación",
-    "D43": "Deutsche Bank bajó a Mantener (precio objetivo DKK 400 -> 275); Kepler también a Mantener. Consenso: 3 Comprar / 10 Mantener / 1 Vender, objetivo medio US$46.",
+    "D43": "Deutsche Bank pasó de Mantener a Vender el 27-ago-2026 (objetivo DKK 265; ya había bajado de Comprar a Mantener el 23-feb tras REDEFINE 4). Consenso (yfinance): 3 Comprar / 10 Mantener / 1 Vender, objetivo medio US$46.",
     "B46": "Análisis e impacto en la valoración",
     "A47": "La reversión 340B distorsiona el LTM",
     "B47": ("La reversión de la provisión 340B (US$4.200M = DKK 26.800M, Q1 2026) es no recurrente y sin caja; "
@@ -160,7 +160,7 @@ SUPUESTOS_RECOMENDADOS = {
 
 MULTIPLOS_EVALUACION = (
     "Evaluación NVO: P/E, EV/EBITDA, P/OCF y P/FCFE fueron positivos todos los años (sin cambios de signo), así que el "
-    "mecanismo nativo funciona; como la mediana de 5 años cae en dic-2025 (después del derrumbe de 2025), el múltiplo Base "
+    "mecanismo nativo funciona; el ancla Base es el MIN de los 4 cierres dic-22 a dic-25 (J19 =MIN(B19:E19)), que cae en dic-2025 (dic-2024 en P/FCFE), después del derrumbe de 2025, así que el múltiplo Base "
     "ya es el deprimido (P/E 14,4x, EV/EBITDA 11,1x, P/OCF 13,9x) y no el de la burbuja 2022-24 (P/E 36x). EV/FCFF: el FCFF "
     "está deprimido por el capex récord (17% de ventas contra D&A 4,5%) y el múltiplo histórico era 30-36x -> se reemplazó "
     "(J8/J19/J30 de EVFCFF) por el múltiplo implícito del DCF de cada escenario (EV / FCFF FY+1). Además, 'Financials "
@@ -188,7 +188,7 @@ BEAR = [
     "Lilly con ~61% del mercado de obesidad (Q2 2026); CagriSema no superó a tirzepatida (REIMAGINE 4).",
     "Precio en baja: MFN, WAC más bajo desde 2027, genéricos de semaglutida en Canadá, China, Brasil e India.",
     "Patente de semaglutida en EE.UU. en 2032, más de la mitad de las ventas en EE.UU.; ZEUS falló y hubo DKK 6.300M de deterioros.",
-    "CMD 2030: crecimiento \"en línea con pares\" y margen estable; Deutsche Bank y Kepler bajaron a Mantener.",
+    "CMD 2030: crecimiento \"en línea con pares\" y margen estable; Deutsche Bank pasó a Vender (27-ago-2026, objetivo DKK 265).",
 ]
 
 LOG = [

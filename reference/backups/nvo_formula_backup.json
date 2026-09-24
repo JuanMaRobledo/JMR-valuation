@@ -561,7 +561,7 @@
  },
  "Cualitativo!D43": {
   "before": "Ver sección detallada abajo",
-  "after": "Deutsche Bank bajó a Mantener (precio objetivo DKK 400 -> 275); Kepler también a Mantener. Consenso: 3 Comprar / 10 Mantener / 1 Vender, objetivo medio US$46.",
+  "after": "Deutsche Bank pasó de Mantener a Vender el 27-ago-2026 (objetivo DKK 265; ya había bajado de Comprar a Mantener el 23-feb tras REDEFINE 4). Consenso (yfinance): 3 Comprar / 10 Mantener / 1 Vender, objetivo medio US$46.",
   "reason": "Contenido cualitativo NVO"
  },
  "Cualitativo!B46": {
@@ -946,7 +946,7 @@
  },
  "Supuestos de los Múltiplos!A12": {
   "before": "Evaluación: (completar al analizar el ticker)",
-  "after": "Evaluación NVO: P/E, EV/EBITDA, P/OCF y P/FCFE fueron positivos todos los años (sin cambios de signo), así que el mecanismo nativo funciona; como la mediana de 5 años cae en dic-2025 (después del derrumbe de 2025), el múltiplo Base ya es el deprimido (P/E 14,4x, EV/EBITDA 11,1x, P/OCF 13,9x) y no el de la burbuja 2022-24 (P/E 36x). EV/FCFF: el FCFF está deprimido por el capex récord (17% de ventas contra D&A 4,5%) y el múltiplo histórico era 30-36x -> se reemplazó (J8/J19/J30 de EVFCFF) por el múltiplo implícito del DCF de cada escenario (EV / FCFF FY+1). Además, 'Financials Multiples' proyectaba el EBIT contable con el margen ajustado por I+D del DCF (5,6pp más alto): se corrigió (bug #14).",
+  "after": "Evaluación NVO: P/E, EV/EBITDA, P/OCF y P/FCFE fueron positivos todos los años (sin cambios de signo), así que el mecanismo nativo funciona; el ancla Base es el MIN de los 4 cierres dic-22 a dic-25 (J19 =MIN(B19:E19)), que cae en dic-2025 (dic-2024 en P/FCFE), después del derrumbe de 2025, así que el múltiplo Base ya es el deprimido (P/E 14,4x, EV/EBITDA 11,1x, P/OCF 13,9x) y no el de la burbuja 2022-24 (P/E 36x). EV/FCFF: el FCFF está deprimido por el capex récord (17% de ventas contra D&A 4,5%) y el múltiplo histórico era 30-36x -> se reemplazó (J8/J19/J30 de EVFCFF) por el múltiplo implícito del DCF de cada escenario (EV / FCFF FY+1). Además, 'Financials Multiples' proyectaba el EBIT contable con el margen ajustado por I+D del DCF (5,6pp más alto): se corrigió (bug #14).",
   "reason": "Evaluacion de multiplos NVO"
  },
  "Tesis de Inversión y Supuestos!A1:H120": {
