@@ -5,3 +5,5 @@ __pycache__/
 data/saved_companies/
 credentials/
 .venv/
+data/screener_cache/
+data/screener/
