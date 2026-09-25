@@ -152,6 +152,9 @@ def to_flat_rows(results: list[ScreenResult]) -> list[dict]:
                     row[f"{name}"] = snap["current"]
                     row[f"{name}_hist"] = snap["median_hist"]
                     row[f"{name}_vs_hist"] = snap["vs_hist"]
+            elif k == "ltm":
+                for name, value in v.items():
+                    row[f"ltm_{name}"] = value
             else:
                 row[f"val_{k}"] = v
         row["failed_filters"] = " | ".join(r.quality.get("failed_filters", []))

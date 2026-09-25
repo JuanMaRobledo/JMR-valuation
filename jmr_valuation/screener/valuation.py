@@ -57,6 +57,14 @@ class ValuationSnapshot:
     label: str
     peg: float | None = None      # P/E / (crecimiento anual del EPS en %)
     multiples: dict[str, MultipleSnapshot] = field(default_factory=dict)
+    # Lo necesario para que la pagina recalcule todo con el precio del dia
+    # (screener.html + api/quotes.js de Modelo-JMR) sin volver a la SEC:
+    # market cap = precio x shares; EV = market cap + net_debt; cada multiplo
+    # = numerador / ltm[denominador] (ver MULTIPLES).
+    shares: float | None = None
+    net_debt: float | None = None
+    ltm: dict[str, float | None] = field(default_factory=dict)
+    eps_growth: float | None = None
 
     def as_dict(self) -> dict:
         return asdict(self)
@@ -223,4 +231,8 @@ def value_snapshot(s: AnnualSeries, prices: list[tuple[str, float]],
         label=_label(p_fcf.vs_hist if p_fcf.vs_hist is not None else pe.vs_hist),
         peg=(pe.current / (eps_growth * 100)) if pe.current and eps_growth and eps_growth > 0 else None,
         multiples=multiples,
+        shares=shares,
+        net_debt=ltm["net_debt"],
+        ltm={k: v for k, v in ltm.items() if k != "net_debt"},
+        eps_growth=eps_growth,
     )

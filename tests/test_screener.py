@@ -171,6 +171,12 @@ def test_model_multiples_and_peg():
     assert mult["p_fcfe"].current == pytest.approx(mc / (ocf - capex))
     assert mult["p_ocf"].hist_years == 10 and mult["p_ocf"].vs_hist < 0
     assert v.peg == pytest.approx(v.pe / 12)
+    # la pagina recalcula con el precio del dia a partir de shares/net_debt/ltm
+    assert v.shares * 100.0 == pytest.approx(mc)
+    assert v.net_debt == pytest.approx(net_debt)
+    for name, (kind, den) in {"pe": ("mcap", "net_income"), "ev_fcff": ("ev", "fcff")}.items():
+        numerator = mc if kind == "mcap" else mc + v.net_debt
+        assert numerator / v.ltm[den] == pytest.approx(mult[name].current)
 
 
 def test_peg_needs_positive_growth():
