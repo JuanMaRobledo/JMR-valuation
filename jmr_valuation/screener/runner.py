@@ -81,7 +81,8 @@ def attach_valuation(res: ScreenResult, series) -> None:
     history = fetch_price_history(res.ticker)
     if history is None:
         return
-    snap = value_snapshot(series, history.prices, history.splits)
+    snap = value_snapshot(series, history.prices, history.splits,
+                          eps_growth=res.metrics.get("eps_cagr_5y"))
     res.valuation = snap.as_dict() if snap else None
 
 
@@ -146,7 +147,13 @@ def to_flat_rows(results: list[ScreenResult]) -> list[dict]:
         row = {"ticker": r.ticker, "name": r.name, "sector": r.sector, "tier": r.tier, "score": r.score}
         row.update({k: v for k, v in r.metrics.items()})
         for k, v in (r.valuation or {}).items():
-            row[f"val_{k}"] = v
+            if k == "multiples":
+                for name, snap in v.items():
+                    row[f"{name}"] = snap["current"]
+                    row[f"{name}_hist"] = snap["median_hist"]
+                    row[f"{name}_vs_hist"] = snap["vs_hist"]
+            else:
+                row[f"val_{k}"] = v
         row["failed_filters"] = " | ".join(r.quality.get("failed_filters", []))
         row["flags"] = " | ".join(r.quality.get("flags", []))
         row["error"] = r.error or ""

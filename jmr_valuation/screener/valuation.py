@@ -12,11 +12,33 @@ Modulo puro: recibe la serie SEC y los precios ya descargados.
 from __future__ import annotations
 
 import statistics
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import date
 
 from jmr_valuation.io.sec_edgar_loader import AnnualSeries
 from jmr_valuation.screener.metrics import share_counts
+
+
+# Multiplos del Modelo JMR (EV/EBITDA, EV/FCFF, P/E, P/FCFE, P/OCF -- ver
+# models/relative.py) + P/FCF (el "favorito transversal" de la metodologia,
+# base del FCF yield) + EV/EBIT. Cada uno: (numerador, denominador).
+MULTIPLES: dict[str, tuple[str, str]] = {
+    "pe": ("mcap", "net_income"),
+    "p_fcf": ("mcap", "fcf"),
+    "p_fcfe": ("mcap", "fcfe"),
+    "p_ocf": ("mcap", "ocf"),
+    "ev_ebitda": ("ev", "ebitda"),
+    "ev_fcff": ("ev", "fcff"),
+    "ev_ebit": ("ev", "ebit"),
+}
+
+
+@dataclass(frozen=True)
+class MultipleSnapshot:
+    current: float | None
+    median_hist: float | None
+    vs_hist: float | None   # -0.25 = 25% por debajo de su mediana historica
+    hist_years: int
 
 
 @dataclass(frozen=True)
@@ -33,6 +55,8 @@ class ValuationSnapshot:
     pe_vs_hist: float | None
     hist_years: int
     label: str
+    peg: float | None = None      # P/E / (crecimiento anual del EPS en %)
+    multiples: dict[str, MultipleSnapshot] = field(default_factory=dict)
 
     def as_dict(self) -> dict:
         return asdict(self)
@@ -87,8 +111,63 @@ def _pending_split_factor(s: AnnualSeries, splits: list[tuple[str, float]]) -> f
     return factor
 
 
+def _at(values: list[float], i: int) -> float:
+    return values[i] if -len(values) <= i < len(values) else 0.0
+
+
+def _tax_rate(tax: float, pretax: float) -> float:
+    rate = tax / pretax if pretax > 0 else 0.21
+    return rate if 0.0 <= rate <= 0.5 else 0.21
+
+
+def _denominators(s: AnnualSeries, i: int | None) -> dict[str, float | None]:
+    """Utilidad, flujos y EBITDA de un FY (i) o del LTM (i=None), con las
+    mismas definiciones que 'Financials Multiples' del modelo:
+    - FCFF = OCF - CapEx + intereses x (1 - t)  (equivale a EBIT(1-t) + D&A - CapEx - dNWC)
+    - FCFE = OCF - CapEx + endeudamiento neto   (cambio de la deuda financiera en el anio)
+    - OCF  = flujo de caja operativo reportado
+    """
+    last = len(s.revenue) - 1
+    j = last if i is None else i
+    debt_now = _at(s.long_term_debt, j) + _at(s.current_debt, j)
+    debt_prev = _at(s.long_term_debt, j - 1) + _at(s.current_debt, j - 1) if j > 0 else None
+    if i is None:
+        ocf, capex, ebit = s.ltm_operating_cash_flow, s.ltm_capex, s.ltm_ebit
+        ni, interest = s.ltm_net_income, s.ltm_interest_expense
+        last_da = _at(s.da, last)
+        da = s.ltm_da if s.ltm_da >= 0.6 * last_da else last_da  # ver metrics.compute_metrics
+        t = _tax_rate(s.ltm_tax_expense, s.ltm_pretax_income)
+    else:
+        ocf, capex, ebit = _at(s.operating_cash_flow, i), _at(s.capex, i), _at(s.ebit, i)
+        ni, interest, da = _at(s.net_income, i), _at(s.interest_expense, i), _at(s.da, i)
+        t = _tax_rate(_at(s.tax_expense, i), _at(s.pretax_income, i))
+    has_ocf = bool(ocf)
+    fcf = ocf - capex if has_ocf else None
+    return {
+        "net_income": ni or None,
+        "ocf": ocf if has_ocf else None,
+        "fcf": fcf,
+        "fcff": fcf + abs(interest) * (1 - t) if fcf is not None else None,
+        "fcfe": fcf + (debt_now - debt_prev) if fcf is not None and debt_prev is not None else None,
+        "ebit": ebit or None,
+        "ebitda": (ebit + da) if ebit else None,
+        "net_debt": debt_now - _at(s.cash, j) - _at(s.short_term_investments, j),
+    }
+
+
+def _multiple(kind: str, denom_key: str, mcap: float, d: dict[str, float | None]) -> float | None:
+    denom = d[denom_key]
+    if denom is None or denom <= 0:
+        return None
+    numerator = mcap if kind == "mcap" else mcap + (d["net_debt"] or 0.0)
+    return numerator / denom if numerator > 0 else None
+
+
 def value_snapshot(s: AnnualSeries, prices: list[tuple[str, float]],
-                   splits: list[tuple[str, float]] = ()) -> ValuationSnapshot | None:
+                   splits: list[tuple[str, float]] = (),
+                   eps_growth: float | None = None) -> ValuationSnapshot | None:
+    """`eps_growth`: crecimiento anual del EPS (0.12 = 12%) para el PEG --
+    el screener pasa el CAGR 5 anios de metrics.compute_metrics."""
     if not prices:
         return None
     price = prices[-1][1]
@@ -101,48 +180,47 @@ def value_snapshot(s: AnnualSeries, prices: list[tuple[str, float]],
         return None
     market_cap = price * shares
 
-    ltm_fcf = s.ltm_operating_cash_flow - s.ltm_capex
-    ltm_ni = s.ltm_net_income
-    debt = (s.long_term_debt[-1] if s.long_term_debt else 0.0) + (s.current_debt[-1] if s.current_debt else 0.0)
-    cash = (s.cash[-1] if s.cash else 0.0) + (s.short_term_investments[-1] if s.short_term_investments else 0.0)
-    ev = market_cap + debt - cash
+    ltm = _denominators(s, None)
+    current = {k: _multiple(kind, den, market_cap, ltm) for k, (kind, den) in MULTIPLES.items()}
 
-    p_fcf = market_cap / ltm_fcf if ltm_fcf > 0 else None
-    pe = market_cap / ltm_ni if ltm_ni > 0 else None
-
-    hist_p_fcf: list[float] = []
-    hist_pe: list[float] = []
+    history: dict[str, list[float]] = {k: [] for k in MULTIPLES}
     for i, end in enumerate(s.fiscal_year_ends):
         close = _close_on_or_before(prices, end)
         sh = hist_shares[i] if i < len(hist_shares) else None
         if close is None or not sh:
             continue
-        mcap = close * sh
-        ocf = s.operating_cash_flow[i] if i < len(s.operating_cash_flow) else 0.0
-        fcf = ocf - (s.capex[i] if i < len(s.capex) else 0.0) if ocf else 0.0
-        ni = s.net_income[i] if i < len(s.net_income) else 0.0
-        if fcf > 0:
-            hist_p_fcf.append(mcap / fcf)
-        if ni > 0:
-            hist_pe.append(mcap / ni)
+        d = _denominators(s, i)
+        for k, (kind, den) in MULTIPLES.items():
+            value = _multiple(kind, den, close * sh, d)
+            if value is not None:
+                history[k].append(value)
 
-    p_fcf_med = statistics.median(hist_p_fcf) if len(hist_p_fcf) >= 3 else None
-    pe_med = statistics.median(hist_pe) if len(hist_pe) >= 3 else None
-    p_fcf_vs = (p_fcf / p_fcf_med - 1) if p_fcf and p_fcf_med else None
-    pe_vs = (pe / pe_med - 1) if pe and pe_med else None
+    multiples: dict[str, MultipleSnapshot] = {}
+    for k in MULTIPLES:
+        med = statistics.median(history[k]) if len(history[k]) >= 3 else None
+        cur = current[k]
+        multiples[k] = MultipleSnapshot(
+            current=cur, median_hist=med,
+            vs_hist=(cur / med - 1) if cur and med else None,
+            hist_years=len(history[k]),
+        )
 
+    pe, p_fcf = multiples["pe"], multiples["p_fcf"]
+    ltm_fcf = ltm["fcf"]
     return ValuationSnapshot(
         price=round(price, 2),
         market_cap=market_cap,
-        fcf_yield=(ltm_fcf / market_cap) if market_cap else None,
-        pe=pe,
-        ev_ebit=(ev / s.ltm_ebit) if s.ltm_ebit > 0 else None,
-        p_fcf=p_fcf,
-        p_fcf_median_hist=p_fcf_med,
-        pe_median_hist=pe_med,
-        p_fcf_vs_hist=p_fcf_vs,
-        pe_vs_hist=pe_vs,
-        hist_years=max(len(hist_p_fcf), len(hist_pe)),
+        fcf_yield=(ltm_fcf / market_cap) if ltm_fcf is not None else None,
+        pe=pe.current,
+        ev_ebit=multiples["ev_ebit"].current,
+        p_fcf=p_fcf.current,
+        p_fcf_median_hist=p_fcf.median_hist,
+        pe_median_hist=pe.median_hist,
+        p_fcf_vs_hist=p_fcf.vs_hist,
+        pe_vs_hist=pe.vs_hist,
+        hist_years=max(p_fcf.hist_years, pe.hist_years),
         # FCF es el multiplo "favorito transversal" de la metodologia; P/E de respaldo.
-        label=_label(p_fcf_vs if p_fcf_vs is not None else pe_vs),
+        label=_label(p_fcf.vs_hist if p_fcf.vs_hist is not None else pe.vs_hist),
+        peg=(pe.current / (eps_growth * 100)) if pe.current and eps_growth and eps_growth > 0 else None,
+        multiples=multiples,
     )

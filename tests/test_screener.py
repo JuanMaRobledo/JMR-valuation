@@ -151,3 +151,29 @@ def test_valuation_vs_own_history():
 
 def test_valuation_without_prices_is_none():
     assert value_snapshot(_series(), []) is None
+
+
+def test_model_multiples_and_peg():
+    s = _series()
+    prices = [(f"{2016 + i}-12-30", 100.0) for i in range(10)] + [("2026-09-20", 100.0)]
+    v = value_snapshot(s, prices, eps_growth=0.12)
+    mc = v.market_cap
+    ni, ocf, capex = s.ltm_net_income, s.ltm_operating_cash_flow, s.ltm_capex
+    ebitda = s.ltm_ebit + s.ltm_da
+    net_debt = -2 * B  # sin deuda, 2B de caja
+    mult = v.multiples
+    assert set(mult) == {"pe", "p_fcf", "p_fcfe", "p_ocf", "ev_ebitda", "ev_fcff", "ev_ebit"}
+    assert mult["pe"].current == pytest.approx(mc / ni)
+    assert mult["p_ocf"].current == pytest.approx(mc / ocf)
+    assert mult["ev_ebitda"].current == pytest.approx((mc + net_debt) / ebitda)
+    # sin intereses ni cambio de deuda, FCFF = FCFE = FCF
+    assert mult["ev_fcff"].current == pytest.approx((mc + net_debt) / (ocf - capex))
+    assert mult["p_fcfe"].current == pytest.approx(mc / (ocf - capex))
+    assert mult["p_ocf"].hist_years == 10 and mult["p_ocf"].vs_hist < 0
+    assert v.peg == pytest.approx(v.pe / 12)
+
+
+def test_peg_needs_positive_growth():
+    prices = [(f"{2016 + i}-12-30", 100.0) for i in range(10)] + [("2026-09-20", 100.0)]
+    assert value_snapshot(_series(), prices, eps_growth=-0.05).peg is None
+    assert value_snapshot(_series(), prices).peg is None
