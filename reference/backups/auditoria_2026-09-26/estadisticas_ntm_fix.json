@@ -1,0 +1,12 @@
+{
+ "Estadísticas!E13": {
+  "before": "='Input sheet'!D1/1,84",
+  "after": "=PE!F19",
+  "reason": "P/E Estimado (NTM) y PEG con formula viva, como en las demas hojas (antes divisores fijos obsoletos 5,69 y 7,3)"
+ },
+ "Estadísticas!E14": {
+  "before": "=E13/16,4",
+  "after": "=E4/('Input sheet'!B29*100)",
+  "reason": "P/E Estimado (NTM) y PEG con formula viva, como en las demas hojas (antes divisores fijos obsoletos 5,69 y 7,3)"
+ }
+}
