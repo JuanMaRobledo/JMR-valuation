@@ -95,3 +95,8 @@ def test_hoja_origen_formulas_balanceadas():
 def test_alto_de_fila_crece_con_el_texto():
     assert mp._lines("x" * 10, 300) == 1
     assert mp._lines("x" * 400, 300) > 3
+
+
+def test_reset_from_master_apunta_a_la_plantilla_auditada():
+    import reset_from_master as rfm
+    assert rfm.MASTER_ID == "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g"

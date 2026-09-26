@@ -293,7 +293,12 @@ def _retry(fn, tries=6):
 def step_reset() -> None:
     """La hoja 'Modelo JMR - AFYA' era una copia de la valoracion de LULU.
     Se respalda su contenido y se reemplaza por el de la plantilla maestra
-    (auditada), hoja por hoja (misma estructura: 44 hojas + Origen)."""
+    (auditada), hoja por hoja (misma estructura: 44 hojas + Origen).
+
+    Generalizado en scripts/reset_from_master.py (ver modelo/METODOLOGIA.md,
+    'Contaminacion entre empresas por copiar una valoracion ya llena'): usar
+    ese script para cualquier empresa NUEVA en vez de escribir este paso a
+    medida cada vez."""
     sh = ms.open_sheet(SHEET_ID)
     master = ms.open_sheet(MASTER_ID)
     titles = [w.title for w in sh.worksheets()]
