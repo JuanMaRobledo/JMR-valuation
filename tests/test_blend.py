@@ -77,6 +77,10 @@ def test_run_blend_end_to_end():
     assert result.weighted_price_by_scenario["Base"] < result.weighted_price_by_scenario["Optimista"]
     assert result.mos_price == pytest.approx(result.weighted_price_by_scenario["Base"] * 0.65)
     assert result.buy_price_tiers.value_max == pytest.approx(result.weighted_price_by_scenario["Base"] * 0.70)
+    assert result.method_base_values["DCF Damodaran"] == 360
+    assert result.method_mos_price["P/E"] == pytest.approx(330 * 0.65)
+    assert result.method_mos_vs_current["P/E"] == pytest.approx(1 - 276.27 / 330)
+    assert result.method_mos_vs_current["DCF Damodaran"] == pytest.approx(1 - 276.27 / 360)
 
 
 def test_renormalize_weights_none_returns_original():
