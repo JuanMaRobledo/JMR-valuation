@@ -12,7 +12,7 @@
 | Horizonte | El DCF proyectaba desde LTM y los múltiplos desde el último FY cerrado. | Ambas proyecciones usan ingresos LTM; los múltiplos muestran explícitamente su objetivo FY+3. |
 | Pares Yahoo | `EV/freeCashflow` se llamaba EV/FCFF y `P/FCF` se usaba como P/FCFE. | El primero suma interés después de impuestos cuando hay datos; de lo contrario se omite. P/FCFE se omite del pipeline de pares si falta endeudamiento neto comparable. |
 | Precio de mercado | Se mostraba sin día verificable. | La obtención automática exige `regularMarketTime` y escribe la fecha del precio. |
-| Margen de seguridad | Se aplicaba al promedio de DCF presente y objetivos FY+3. | Se aplica al DCF Base de hoy. Los pesos por tipo de empresa y su promedio siguen disponibles como criterio exploratorio propio del Modelo JMR, **no** como parámetro de Damodaran. |
+| Margen de seguridad | La mezcla de DCF presente y múltiplos FY+3 no se distinguía al interpretarla. | Por elección del usuario, el umbral principal se calcula desde el **ponderado Base**. Se muestran aparte el MOS y el precio de compra de cada método. Los pesos y el descuento son reglas del Modelo JMR, **no** parámetros de Damodaran. La mezcla conserva un límite de comparabilidad temporal. |
 
 ## De dónde salen los supuestos
 
@@ -24,10 +24,14 @@
 
 ## Prueba de dirección, no valoración actual de Adobe
 
-El archivo `data/example_adbe.csv` es una muestra estática con precio **USD 276,27**, sin corte verificable del mercado. Con los cambios anteriores, su DCF Base pasa de **USD 366,36 a USD 370,50**. El promedio mixto pasa de **USD 410,69 a USD 446,88**: usar ingresos LTM aumenta la proyección de esta muestra, aun después de corregir el puente de EV. El precio con margen de seguridad del 35 % pasa de **USD 266,95** (aplicado antes al promedio mixto) a **USD 240,82** (aplicado al DCF Base). La dirección neta no permite llamar al modelo universalmente estricto ni laxo.
+El archivo `data/example_adbe.csv` es una muestra estática con precio **USD 276,27**, sin corte verificable del mercado. Con los cambios anteriores, su DCF Base pasa de **USD 366,36 a USD 370,50**. El promedio mixto pasa de **USD 410,69 a USD 446,88**: usar ingresos LTM aumenta la proyección de esta muestra, aun después de corregir el puente de EV. Con el criterio solicitado de ponderado Base, el precio de compra con margen del 35 % sería **USD 290,47** (446,88 × 0,65), frente a **USD 240,82** si se usara solo el DCF Base. El valor anterior del modelo era **USD 266,95** sobre el promedio mixto antiguo. Esta comparación muestra cómo los múltiplos FY+3 pueden elevar el umbral frente al DCF presente; no demuestra un sesgo universal del modelo.
 
 En la misma muestra, DCF Base = USD 370,50. Una variación de **±1 punto porcentual del WACC inicial** da aproximadamente **USD 391,56 / USD 350,83**; una variación de **±2 puntos del crecimiento de ingresos del primer año** da **USD 363,96 / USD 377,04**. El valor terminal representa alrededor del **57 %** del valor de activos operativos. Son pruebas de sensibilidad sobre entradas de ejemplo, no precios objetivo actuales.
 
+## Hojas de LULU y UNH revisadas
+
+La fecha del análisis se toma de `Input sheet!B4`; `Input sheet!B23` consulta el último cierre disponible hasta esa fecha y `Input sheet!D1` mantiene la cotización actual. En `Resumen de Valoración!F5:H12` aparecen el MOS frente al cierre del análisis, el MOS frente a la cotización actual y el precio de compra por método. La fila 12, y el umbral de `B19`, usan el ponderado Base. LULU: cierre de análisis USD 95,98 (16-sep-2026) y precio actual observado USD 101,30; UNH: USD 371,29 (23-sep-2026) y USD 376,59. Son lecturas observadas al revisar las hojas, no promesas de cotización futura.
+
 ## Límite pendiente antes de considerar el modelo validado
 
-Falta fechar y cotejar los CSV de industrias y volver a exportar las primas por país. La exposición geográfica real, el tratamiento de I+D, arrendamientos, opciones, NOL, impuestos y acciones diluidas deben revisarse por compañía. La hoja Excel/Google Sheets original aún requiere auditoría de fórmulas y recálculo: los cambios de este repositorio Python no cambian por sí solos esa hoja. No existe un backtest representativo que demuestre sesgo general de exigencia o laxitud.
+Falta fechar y cotejar los CSV de industrias y volver a exportar las primas por país. La exposición geográfica real, el tratamiento de I+D, arrendamientos, opciones, NOL, impuestos y acciones diluidas deben revisarse por compañía. Se corrigieron fecha/precio y se añadió la comparación de MOS en las hojas LULU y UNH; la plantilla maestra UBER y otras fórmulas del libro aún requieren auditoría y recálculo integral. Los cambios del repositorio Python no se sincronizan automáticamente con las hojas. No existe un backtest representativo que demuestre sesgo general de exigencia o laxitud.
