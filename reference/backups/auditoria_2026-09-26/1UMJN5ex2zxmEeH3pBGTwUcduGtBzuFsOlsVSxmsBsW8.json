@@ -1,0 +1,926 @@
+{
+ "sheet_id": "1UMJN5ex2zxmEeH3pBGTwUcduGtBzuFsOlsVSxmsBsW8",
+ "title": "Modelo_JMR_Plantilla_Maestra — copia en blanco (actualizada 2026-09-23)",
+ "cells": {
+  "EVEBITDA!F10": {
+   "before": "=F8*(F9/'Financials Multiples'!E31)",
+   "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E31",
+   "fix": "A1"
+  },
+  "EVEBITDA!G10": {
+   "before": "=G8*(G9/'Financials Multiples'!F31)",
+   "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F31",
+   "fix": "A1"
+  },
+  "EVEBITDA!H10": {
+   "before": "=H8*(H9/'Financials Multiples'!G31)",
+   "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G31",
+   "fix": "A1"
+  },
+  "EVEBITDA!F21": {
+   "before": "=F19*(F20/'Financials Multiples'!E70)",
+   "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E70",
+   "fix": "A1"
+  },
+  "EVEBITDA!G21": {
+   "before": "=G19*(G20/'Financials Multiples'!F70)",
+   "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F70",
+   "fix": "A1"
+  },
+  "EVEBITDA!H21": {
+   "before": "=H19*(H20/'Financials Multiples'!G70)",
+   "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G70",
+   "fix": "A1"
+  },
+  "EVEBITDA!F32": {
+   "before": "=F30*(F31/'Financials Multiples'!E110)",
+   "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E110",
+   "fix": "A1"
+  },
+  "EVEBITDA!G32": {
+   "before": "=G30*(G31/'Financials Multiples'!F110)",
+   "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F110",
+   "fix": "A1"
+  },
+  "EVEBITDA!H32": {
+   "before": "=H30*(H31/'Financials Multiples'!G110)",
+   "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G110",
+   "fix": "A1"
+  },
+  "EVFCFF!F10": {
+   "before": "=F8*(F9/'Financials Multiples'!E31)",
+   "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E31",
+   "fix": "A1"
+  },
+  "EVFCFF!G10": {
+   "before": "=G8*(G9/'Financials Multiples'!F31)",
+   "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F31",
+   "fix": "A1"
+  },
+  "EVFCFF!H10": {
+   "before": "=H8*(H9/'Financials Multiples'!G31)",
+   "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G31",
+   "fix": "A1"
+  },
+  "EVFCFF!F21": {
+   "before": "=F19*(F20/'Financials Multiples'!E70)",
+   "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E70",
+   "fix": "A1"
+  },
+  "EVFCFF!G21": {
+   "before": "=G19*(G20/'Financials Multiples'!F70)",
+   "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F70",
+   "fix": "A1"
+  },
+  "EVFCFF!H21": {
+   "before": "=H19*(H20/'Financials Multiples'!G70)",
+   "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G70",
+   "fix": "A1"
+  },
+  "EVFCFF!F32": {
+   "before": "=F30*(F31/'Financials Multiples'!E110)",
+   "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E110",
+   "fix": "A1"
+  },
+  "EVFCFF!G32": {
+   "before": "=G30*(G31/'Financials Multiples'!F110)",
+   "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F110",
+   "fix": "A1"
+  },
+  "EVFCFF!H32": {
+   "before": "=H30*(H31/'Financials Multiples'!G110)",
+   "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G110",
+   "fix": "A1"
+  },
+  "EVEBITDA!G11": {
+   "before": "='Financials Multiples'!F35",
+   "after": "=SUM('Financials Multiples'!E35:F35)",
+   "fix": "A2"
+  },
+  "EVEBITDA!H11": {
+   "before": "='Financials Multiples'!G35",
+   "after": "=SUM('Financials Multiples'!E35:G35)",
+   "fix": "A2"
+  },
+  "EVEBITDA!G22": {
+   "before": "='Financials Multiples'!F74",
+   "after": "=SUM('Financials Multiples'!E74:F74)",
+   "fix": "A2"
+  },
+  "EVEBITDA!H22": {
+   "before": "='Financials Multiples'!G74",
+   "after": "=SUM('Financials Multiples'!E74:G74)",
+   "fix": "A2"
+  },
+  "EVEBITDA!G33": {
+   "before": "='Financials Multiples'!F114",
+   "after": "=SUM('Financials Multiples'!E114:F114)",
+   "fix": "A2"
+  },
+  "EVEBITDA!H33": {
+   "before": "='Financials Multiples'!G114",
+   "after": "=SUM('Financials Multiples'!E114:G114)",
+   "fix": "A2"
+  },
+  "EVEBITDA!J19": {
+   "before": "=MIN(B19:E19)",
+   "after": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+   "fix": "A7"
+  },
+  "EVEBITDA!A8": {
+   "before": "NTM EV/EBITDA Multiple",
+   "after": "Múltiplo EV/EBITDA (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "EVEBITDA!A19": {
+   "before": "NTM EV/EBITDA Multiple",
+   "after": "Múltiplo EV/EBITDA (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "EVEBITDA!A30": {
+   "before": "NTM EV/EBITDA Multiple",
+   "after": "Múltiplo EV/EBITDA (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "EVFCFF!G11": {
+   "before": "='Financials Multiples'!F35",
+   "after": "=SUM('Financials Multiples'!E35:F35)",
+   "fix": "A2"
+  },
+  "EVFCFF!H11": {
+   "before": "='Financials Multiples'!G35",
+   "after": "=SUM('Financials Multiples'!E35:G35)",
+   "fix": "A2"
+  },
+  "EVFCFF!G22": {
+   "before": "='Financials Multiples'!F74",
+   "after": "=SUM('Financials Multiples'!E74:F74)",
+   "fix": "A2"
+  },
+  "EVFCFF!H22": {
+   "before": "='Financials Multiples'!G74",
+   "after": "=SUM('Financials Multiples'!E74:G74)",
+   "fix": "A2"
+  },
+  "EVFCFF!G33": {
+   "before": "='Financials Multiples'!F114",
+   "after": "=SUM('Financials Multiples'!E114:F114)",
+   "fix": "A2"
+  },
+  "EVFCFF!H33": {
+   "before": "='Financials Multiples'!G114",
+   "after": "=SUM('Financials Multiples'!E114:G114)",
+   "fix": "A2"
+  },
+  "EVFCFF!J19": {
+   "before": "=MIN(B19:E19)",
+   "after": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+   "fix": "A7"
+  },
+  "EVFCFF!A8": {
+   "before": "NTM EV/FCFF Multiple",
+   "after": "Múltiplo EV/FCFF (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "EVFCFF!A19": {
+   "before": "NTM EV/FCFF Multiple",
+   "after": "Múltiplo EV/FCFF (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "EVFCFF!A30": {
+   "before": "NTM EV/FCFF Multiple",
+   "after": "Múltiplo EV/FCFF (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "PE!G11": {
+   "before": "='Financials Multiples'!F35",
+   "after": "=SUM('Financials Multiples'!E35:F35)",
+   "fix": "A2"
+  },
+  "PE!H11": {
+   "before": "='Financials Multiples'!G35",
+   "after": "=SUM('Financials Multiples'!E35:G35)",
+   "fix": "A2"
+  },
+  "PE!G22": {
+   "before": "='Financials Multiples'!F74",
+   "after": "=SUM('Financials Multiples'!E74:F74)",
+   "fix": "A2"
+  },
+  "PE!H22": {
+   "before": "='Financials Multiples'!G74",
+   "after": "=SUM('Financials Multiples'!E74:G74)",
+   "fix": "A2"
+  },
+  "PE!G33": {
+   "before": "='Financials Multiples'!F114",
+   "after": "=SUM('Financials Multiples'!E114:F114)",
+   "fix": "A2"
+  },
+  "PE!H33": {
+   "before": "='Financials Multiples'!G114",
+   "after": "=SUM('Financials Multiples'!E114:G114)",
+   "fix": "A2"
+  },
+  "PE!J19": {
+   "before": "=MIN(B19:E19)",
+   "after": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+   "fix": "A7"
+  },
+  "PE!A8": {
+   "before": "NTM P/E Multiple",
+   "after": "Múltiplo P/E (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "PE!A19": {
+   "before": "NTM P/E Multiple",
+   "after": "Múltiplo P/E (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "PE!A30": {
+   "before": "NTM P/E Multiple",
+   "after": "Múltiplo P/E (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "PFCFE!G11": {
+   "before": "='Financials Multiples'!F35",
+   "after": "=SUM('Financials Multiples'!E35:F35)",
+   "fix": "A2"
+  },
+  "PFCFE!H11": {
+   "before": "='Financials Multiples'!G35",
+   "after": "=SUM('Financials Multiples'!E35:G35)",
+   "fix": "A2"
+  },
+  "PFCFE!G22": {
+   "before": "='Financials Multiples'!F74",
+   "after": "=SUM('Financials Multiples'!E74:F74)",
+   "fix": "A2"
+  },
+  "PFCFE!H22": {
+   "before": "='Financials Multiples'!G74",
+   "after": "=SUM('Financials Multiples'!E74:G74)",
+   "fix": "A2"
+  },
+  "PFCFE!G33": {
+   "before": "='Financials Multiples'!F114",
+   "after": "=SUM('Financials Multiples'!E114:F114)",
+   "fix": "A2"
+  },
+  "PFCFE!H33": {
+   "before": "='Financials Multiples'!G114",
+   "after": "=SUM('Financials Multiples'!E114:G114)",
+   "fix": "A2"
+  },
+  "PFCFE!J19": {
+   "before": "=MIN(B19:E19)",
+   "after": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+   "fix": "A7"
+  },
+  "PFCFE!A8": {
+   "before": "NTM P/FCFE Multiple",
+   "after": "Múltiplo P/FCFE (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "PFCFE!A19": {
+   "before": "NTM P/FCFE Multiple",
+   "after": "Múltiplo P/FCFE (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "PFCFE!A30": {
+   "before": "NTM P/FCFE Multiple",
+   "after": "Múltiplo P/FCFE (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "POCF!G11": {
+   "before": "='Financials Multiples'!F35",
+   "after": "=SUM('Financials Multiples'!E35:F35)",
+   "fix": "A2"
+  },
+  "POCF!H11": {
+   "before": "='Financials Multiples'!G35",
+   "after": "=SUM('Financials Multiples'!E35:G35)",
+   "fix": "A2"
+  },
+  "POCF!G22": {
+   "before": "='Financials Multiples'!F74",
+   "after": "=SUM('Financials Multiples'!E74:F74)",
+   "fix": "A2"
+  },
+  "POCF!H22": {
+   "before": "='Financials Multiples'!G74",
+   "after": "=SUM('Financials Multiples'!E74:G74)",
+   "fix": "A2"
+  },
+  "POCF!G33": {
+   "before": "='Financials Multiples'!F114",
+   "after": "=SUM('Financials Multiples'!E114:F114)",
+   "fix": "A2"
+  },
+  "POCF!H33": {
+   "before": "='Financials Multiples'!G114",
+   "after": "=SUM('Financials Multiples'!E114:G114)",
+   "fix": "A2"
+  },
+  "POCF!J19": {
+   "before": "=MIN(B19:E19)",
+   "after": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+   "fix": "A7"
+  },
+  "POCF!A8": {
+   "before": "NTM P/OCF Multiple",
+   "after": "Múltiplo P/OCF (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "POCF!A19": {
+   "before": "NTM P/OCF Multiple",
+   "after": "Múltiplo P/OCF (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "POCF!A30": {
+   "before": "NTM P/OCF Multiple",
+   "after": "Múltiplo P/OCF (histórico al cierre fiscal · objetivo FY+1..FY+3)",
+   "fix": "A9"
+  },
+  "Financials Multiples!B35": {
+   "before": "=Dividendos!H$4",
+   "after": "=Dividendos!I$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!B36": {
+   "before": "=IFERROR((B35/ Dividendos!G4)-1;\"\")",
+   "after": "=IFERROR(B35/Dividendos!H4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!C35": {
+   "before": "=Dividendos!I$4",
+   "after": "=Dividendos!J$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!C36": {
+   "before": "=IFERROR((C35/ Dividendos!H4)-1;\"\")",
+   "after": "=IFERROR(C35/Dividendos!I4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!D35": {
+   "before": "=Dividendos!J$4",
+   "after": "=Dividendos!K$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!D36": {
+   "before": "=IFERROR((D35/ Dividendos!I4)-1;\"\")",
+   "after": "=IFERROR(D35/Dividendos!J4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!E35": {
+   "before": "=Dividendos!K$4",
+   "after": "=N(Dividendos!$L$4)*(1+E36)",
+   "fix": "A2"
+  },
+  "Financials Multiples!E36": {
+   "before": "=IFERROR((E35/ Dividendos!J4)-1;\"\")",
+   "after": "=IFERROR(MIN(MAX((Dividendos!$K$4/Dividendos!$F$4)^(1/5)-1;0);0,15);0)",
+   "fix": "A2"
+  },
+  "Financials Multiples!F35": {
+   "before": "=E35+F36",
+   "after": "=E35*(1+F36)",
+   "fix": "A2"
+  },
+  "Financials Multiples!F36": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$36",
+   "fix": "A2"
+  },
+  "Financials Multiples!G35": {
+   "before": "=F35+G36",
+   "after": "=F35*(1+G36)",
+   "fix": "A2"
+  },
+  "Financials Multiples!G36": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$36",
+   "fix": "A2"
+  },
+  "Financials Multiples!H35": {
+   "before": "=G35+H36",
+   "after": "=G35*(1+H36)",
+   "fix": "A2"
+  },
+  "Financials Multiples!H36": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$36",
+   "fix": "A2"
+  },
+  "Financials Multiples!B74": {
+   "before": "=Dividendos!H$4",
+   "after": "=Dividendos!I$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!B75": {
+   "before": "=IFERROR((B74/ Dividendos!G4)-1;\"\")",
+   "after": "=IFERROR(B74/Dividendos!H4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!C74": {
+   "before": "=Dividendos!I$4",
+   "after": "=Dividendos!J$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!C75": {
+   "before": "=IFERROR((C74/ Dividendos!H4)-1;\"\")",
+   "after": "=IFERROR(C74/Dividendos!I4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!D74": {
+   "before": "=Dividendos!J$4",
+   "after": "=Dividendos!K$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!D75": {
+   "before": "=IFERROR((D74/ Dividendos!I4)-1;\"\")",
+   "after": "=IFERROR(D74/Dividendos!J4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!E74": {
+   "before": "=Dividendos!K$4",
+   "after": "=N(Dividendos!$L$4)*(1+E75)",
+   "fix": "A2"
+  },
+  "Financials Multiples!E75": {
+   "before": "=IFERROR((E74/ Dividendos!J4)-1;\"\")",
+   "after": "=IFERROR(MIN(MAX((Dividendos!$K$4/Dividendos!$F$4)^(1/5)-1;0);0,15);0)",
+   "fix": "A2"
+  },
+  "Financials Multiples!F74": {
+   "before": "=E74+F75",
+   "after": "=E74*(1+F75)",
+   "fix": "A2"
+  },
+  "Financials Multiples!F75": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$75",
+   "fix": "A2"
+  },
+  "Financials Multiples!G74": {
+   "before": "=F74+G75",
+   "after": "=F74*(1+G75)",
+   "fix": "A2"
+  },
+  "Financials Multiples!G75": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$75",
+   "fix": "A2"
+  },
+  "Financials Multiples!H74": {
+   "before": "=G74+H75",
+   "after": "=G74*(1+H75)",
+   "fix": "A2"
+  },
+  "Financials Multiples!H75": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$75",
+   "fix": "A2"
+  },
+  "Financials Multiples!B114": {
+   "before": "=Dividendos!H$4",
+   "after": "=Dividendos!I$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!B115": {
+   "before": "=IFERROR((B114/ Dividendos!G4)-1;\"\")",
+   "after": "=IFERROR(B114/Dividendos!H4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!C114": {
+   "before": "=Dividendos!I$4",
+   "after": "=Dividendos!J$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!C115": {
+   "before": "=IFERROR((C114/ Dividendos!H4)-1;\"\")",
+   "after": "=IFERROR(C114/Dividendos!I4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!D114": {
+   "before": "=Dividendos!J$4",
+   "after": "=Dividendos!K$4",
+   "fix": "A2"
+  },
+  "Financials Multiples!D115": {
+   "before": "=IFERROR((D114/ Dividendos!I4)-1;\"\")",
+   "after": "=IFERROR(D114/Dividendos!J4-1;\"\")",
+   "fix": "A2"
+  },
+  "Financials Multiples!E114": {
+   "before": "=Dividendos!K$4",
+   "after": "=N(Dividendos!$L$4)*(1+E115)",
+   "fix": "A2"
+  },
+  "Financials Multiples!E115": {
+   "before": "=IFERROR((E114/ Dividendos!J4)-1;\"\")",
+   "after": "=IFERROR(MIN(MAX((Dividendos!$K$4/Dividendos!$F$4)^(1/5)-1;0);0,15);0)",
+   "fix": "A2"
+  },
+  "Financials Multiples!F114": {
+   "before": "=E114+F115",
+   "after": "=E114*(1+F115)",
+   "fix": "A2"
+  },
+  "Financials Multiples!F115": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$115",
+   "fix": "A2"
+  },
+  "Financials Multiples!G114": {
+   "before": "=F114+G115",
+   "after": "=F114*(1+G115)",
+   "fix": "A2"
+  },
+  "Financials Multiples!G115": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$115",
+   "fix": "A2"
+  },
+  "Financials Multiples!H114": {
+   "before": "=G114+H115",
+   "after": "=G114*(1+H115)",
+   "fix": "A2"
+  },
+  "Financials Multiples!H115": {
+   "before": "=IFERROR((Dividendos!J4/Dividendos!B4)^(1/9)-1;\"0\")",
+   "after": "=$E$115",
+   "fix": "A2"
+  },
+  "Resumen de Valoración!C6": {
+   "before": "='Valuation output'!B86",
+   "after": "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "fix": "A3"
+  },
+  "Resumen de Valoración!D6": {
+   "before": "='Valuation output'!B35",
+   "after": "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "fix": "A3"
+  },
+  "Resumen de Valoración!E6": {
+   "before": "='Valuation output'!B137",
+   "after": "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "fix": "A3"
+  },
+  "Crecimiento y Márgenes!C7": {
+   "before": "=IFERROR(('Income Statement'!K3 / 'Income Statement'!I3)^(1/3) - 1;\"\")",
+   "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\")",
+   "fix": "A4"
+  },
+  "Crecimiento y Márgenes!C8": {
+   "before": "=IFERROR(('Income Statement'!K3 / 'Income Statement'!G3)^(1/5) - 1;\"\")",
+   "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\")",
+   "fix": "A4"
+  },
+  "Crecimiento y Márgenes!C9": {
+   "before": "=IFERROR(('Income Statement'!K3 / 'Income Statement'!B3)^(1/10) - 1;\"\")",
+   "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\")",
+   "fix": "A4"
+  },
+  "Crecimiento y Márgenes!E7": {
+   "before": "=AVERAGE('Income Statement'!I13:M13)",
+   "after": "=AVERAGE('Income Statement'!I30:K30)",
+   "fix": "A5"
+  },
+  "Crecimiento y Márgenes!E8": {
+   "before": "=AVERAGE('Income Statement'!G13:M13)",
+   "after": "=AVERAGE('Income Statement'!G30:K30)",
+   "fix": "A5"
+  },
+  "Crecimiento y Márgenes!E9": {
+   "before": "=AVERAGE('Income Statement'!B13:M13)",
+   "after": "=AVERAGE('Income Statement'!B30:K30)",
+   "fix": "A5"
+  },
+  "Crecimiento y Márgenes!B6": {
+   "before": "LTM",
+   "after": "Último año fiscal",
+   "fix": "A9"
+  },
+  "Crecimiento y Márgenes!F14": {
+   "before": "Margen EBITDA",
+   "after": "CAGR 10Y",
+   "fix": "A6"
+  },
+  "Valuation output!B50": {
+   "before": "=('Income Statement'!K3/'Income Statement'!I3)^(1/3)-1",
+   "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\")",
+   "fix": "A4"
+  },
+  "Valuation output!B51": {
+   "before": "=('Income Statement'!K3/'Income Statement'!G3)^(1/5)-1",
+   "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\")",
+   "fix": "A4"
+  },
+  "Valuation output!B52": {
+   "before": "=('Income Statement'!K3/'Income Statement'!B3)^(1/10)-1",
+   "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\")",
+   "fix": "A4"
+  },
+  "Crecimiento y Márgenes!C15": {
+   "before": "=MIN(Sector!L2:L7)",
+   "after": "=IF(COUNT(Sector!L3:L11)>=3;MIN(Sector!L3:L11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!C16": {
+   "before": "=QUARTILE(Sector!L2:L7;1)",
+   "after": "=IF(COUNT(Sector!L3:L11)>=3;QUARTILE(Sector!L3:L11;1);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!C17": {
+   "before": "=QUARTILE(Sector!L2:L7;2)",
+   "after": "=IF(COUNT(Sector!L3:L11)>=3;QUARTILE(Sector!L3:L11;2);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!C18": {
+   "before": "=QUARTILE(Sector!L2:L7;3)",
+   "after": "=IF(COUNT(Sector!L3:L11)>=3;QUARTILE(Sector!L3:L11;3);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!C19": {
+   "before": "=QUARTILE(Sector!L2:L7;4)",
+   "after": "=IF(COUNT(Sector!L3:L11)>=3;QUARTILE(Sector!L3:L11;4);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!C20": {
+   "before": "=AVERAGE(Sector!L2:L7)",
+   "after": "=IF(COUNT(Sector!L3:L11)>=3;AVERAGE(Sector!L3:L11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!D15": {
+   "before": "=MIN(Sector!M2:M7)",
+   "after": "=IF(COUNT(Sector!M3:M11)>=3;MIN(Sector!M3:M11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!D16": {
+   "before": "=QUARTILE(Sector!M2:M7;1)",
+   "after": "=IF(COUNT(Sector!M3:M11)>=3;QUARTILE(Sector!M3:M11;1);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!D17": {
+   "before": "=QUARTILE(Sector!M2:M7;2)",
+   "after": "=IF(COUNT(Sector!M3:M11)>=3;QUARTILE(Sector!M3:M11;2);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!D18": {
+   "before": "=QUARTILE(Sector!M2:M7;3)",
+   "after": "=IF(COUNT(Sector!M3:M11)>=3;QUARTILE(Sector!M3:M11;3);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!D19": {
+   "before": "=QUARTILE(Sector!M2:M7;4)",
+   "after": "=IF(COUNT(Sector!M3:M11)>=3;QUARTILE(Sector!M3:M11;4);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!D20": {
+   "before": "=AVERAGE(Sector!M2:M7)",
+   "after": "=IF(COUNT(Sector!M3:M11)>=3;AVERAGE(Sector!M3:M11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!E15": {
+   "before": "=MIN(Sector!K2:K11)",
+   "after": "=IF(COUNT(Sector!K3:K11)>=3;MIN(Sector!K3:K11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!E16": {
+   "before": "=QUARTILE(Sector!K2:K11;1)",
+   "after": "=IF(COUNT(Sector!K3:K11)>=3;QUARTILE(Sector!K3:K11;1);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!E17": {
+   "before": "=QUARTILE(Sector!K2:K11;2)",
+   "after": "=IF(COUNT(Sector!K3:K11)>=3;QUARTILE(Sector!K3:K11;2);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!E18": {
+   "before": "=QUARTILE(Sector!K2:K11;3)",
+   "after": "=IF(COUNT(Sector!K3:K11)>=3;QUARTILE(Sector!K3:K11;3);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!E19": {
+   "before": "=QUARTILE(Sector!K2:K11;4)",
+   "after": "=IF(COUNT(Sector!K3:K11)>=3;QUARTILE(Sector!K3:K11;4);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!E20": {
+   "before": "=AVERAGE(Sector!K2:K11)",
+   "after": "=IF(COUNT(Sector!K3:K11)>=3;AVERAGE(Sector!K3:K11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!F15": {
+   "before": "",
+   "after": "=IF(COUNT(Sector!N3:N11)>=3;MIN(Sector!N3:N11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!F16": {
+   "before": "=QUARTILE(Sector!N2:N7;1)",
+   "after": "=IF(COUNT(Sector!N3:N11)>=3;QUARTILE(Sector!N3:N11;1);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!F17": {
+   "before": "=QUARTILE(Sector!N2:N7;2)",
+   "after": "=IF(COUNT(Sector!N3:N11)>=3;QUARTILE(Sector!N3:N11;2);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!F18": {
+   "before": "=QUARTILE(Sector!N2:N7;3)",
+   "after": "=IF(COUNT(Sector!N3:N11)>=3;QUARTILE(Sector!N3:N11;3);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!F19": {
+   "before": "=QUARTILE(Sector!N2:N7;4)",
+   "after": "=IF(COUNT(Sector!N3:N11)>=3;QUARTILE(Sector!N3:N11;4);\"N/D\")",
+   "fix": "A6"
+  },
+  "Crecimiento y Márgenes!F20": {
+   "before": "",
+   "after": "=IF(COUNT(Sector!N3:N11)>=3;AVERAGE(Sector!N3:N11);\"N/D\")",
+   "fix": "A6"
+  },
+  "Sector!C13": {
+   "before": "=AVERAGE(C2:C7)",
+   "after": "=IFERROR(AVERAGE(C3:C11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!C14": {
+   "before": "",
+   "after": "=IFERROR(MEDIAN(C3:C11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!D13": {
+   "before": "=AVERAGE(D2:D7)",
+   "after": "=IFERROR(AVERAGE(D3:D11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!D14": {
+   "before": "=MEDIAN(D2:D7)",
+   "after": "=IFERROR(MEDIAN(D3:D11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!E13": {
+   "before": "=AVERAGE(E2:E11)",
+   "after": "=IFERROR(AVERAGE(E3:E11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!E14": {
+   "before": "=MEDIAN(E2:E11)",
+   "after": "=IFERROR(MEDIAN(E3:E11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!F13": {
+   "before": "=AVERAGE(F2:F11)",
+   "after": "=IFERROR(AVERAGE(F3:F11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!F14": {
+   "before": "=MEDIAN(F2:F11)",
+   "after": "=IFERROR(MEDIAN(F3:F11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!G13": {
+   "before": "=AVERAGE(G2:G11)",
+   "after": "=IFERROR(AVERAGE(G3:G11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!G14": {
+   "before": "=MEDIAN(G2:G11)",
+   "after": "=IFERROR(MEDIAN(G3:G11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!H13": {
+   "before": "=AVERAGE(H2:H11)",
+   "after": "=IFERROR(AVERAGE(H3:H11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!H14": {
+   "before": "=MEDIAN(H2:H11)",
+   "after": "=IFERROR(MEDIAN(H3:H11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!I13": {
+   "before": "=AVERAGE(I2:I11)",
+   "after": "=IFERROR(AVERAGE(I3:I11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!I14": {
+   "before": "=MEDIAN(I2:I11)",
+   "after": "=IFERROR(MEDIAN(I3:I11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!J13": {
+   "before": "=AVERAGE(J2:J11)",
+   "after": "=IFERROR(AVERAGE(J3:J11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!J14": {
+   "before": "=MEDIAN(J2:J11)",
+   "after": "=IFERROR(MEDIAN(J3:J11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!K13": {
+   "before": "=AVERAGE(K2:K11)",
+   "after": "=IFERROR(AVERAGE(K3:K11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!K14": {
+   "before": "=MEDIAN(K2:K11)",
+   "after": "=IFERROR(MEDIAN(K3:K11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!L13": {
+   "before": "=AVERAGE(L2:L7)",
+   "after": "=IFERROR(AVERAGE(L3:L11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!L14": {
+   "before": "=MEDIAN(L2:L7)",
+   "after": "=IFERROR(MEDIAN(L3:L11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!M13": {
+   "before": "=AVERAGE(M2:M7)",
+   "after": "=IFERROR(AVERAGE(M3:M11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!M14": {
+   "before": "=MEDIAN(M2:M7)",
+   "after": "=IFERROR(MEDIAN(M3:M11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!N13": {
+   "before": "=AVERAGE(N2:N7)",
+   "after": "=IFERROR(AVERAGE(N3:N11);\"\")",
+   "fix": "A6"
+  },
+  "Sector!N14": {
+   "before": "=MEDIAN(N2:N7)",
+   "after": "=IFERROR(MEDIAN(N3:N11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!L6": {
+   "before": "=AVERAGE(Sector!G2:G7)",
+   "after": "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!M6": {
+   "before": "=MEDIAN(Sector!G2:G7)",
+   "after": "=IFERROR(MEDIAN(Sector!G3:G11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!L7": {
+   "before": "=AVERAGE(Sector!J2:J7)",
+   "after": "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!M7": {
+   "before": "=MEDIAN(Sector!J2:J7)",
+   "after": "=IFERROR(MEDIAN(Sector!J3:J11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!L8": {
+   "before": "=AVERAGE(Sector!F2:F7)",
+   "after": "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!M8": {
+   "before": "=MEDIAN(Sector!F2:F7)",
+   "after": "=IFERROR(MEDIAN(Sector!F3:F11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!L9": {
+   "before": "=AVERAGE(Sector!H2:H7)",
+   "after": "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!M9": {
+   "before": "=MEDIAN(Sector!H2:H7)",
+   "after": "=IFERROR(MEDIAN(Sector!H3:H11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!L10": {
+   "before": "=AVERAGE(Sector!I2:I7)",
+   "after": "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+   "fix": "A6"
+  },
+  "Supuestos de los Múltiplos!M10": {
+   "before": "=MEDIAN(Sector!I2:I7)",
+   "after": "=IFERROR(MEDIAN(Sector!I3:I11);\"\")",
+   "fix": "A6"
+  },
+  "Forward Valuation!M2:N13": {
+   "before": "valores de PYPL",
+   "after": "(vacío)",
+   "fix": "A8"
+  },
+  "Dividendos!A2:L5": {
+   "before": "(vacío)",
+   "after": "DPS/dividendos/rendimiento/payout vivos",
+   "fix": "A2"
+  }
+ }
+}

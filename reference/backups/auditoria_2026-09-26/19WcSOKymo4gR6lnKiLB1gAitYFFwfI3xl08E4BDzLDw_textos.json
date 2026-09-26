@@ -1,0 +1,1059 @@
+{
+ "title": "Modelo_JMR_Plantilla_Maestra ADBE",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "ADOBE INC. (ADBE) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: $265,60 (14-sept-2026) | WACC: 10,79%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Adobe es el líder global de software creativo (Creative Cloud), documental (Acrobat/Document Cloud) y de experiencia de cliente empresarial (GenStudio), con un modelo de suscripción extremadamente rentable (margen operativo LTM de 36,1%, ARR de US$27.500M). La tensión central de la tesis: el ARR \"AI-first\" ya supera los US$650M y crece +150% interanual — una monetización de IA generativa ya real y no especulativa — ¿pero es suficiente para compensar la presión competitiva de herramientas de IA más baratas (Figma, con su modelo de créditos de IA, ya tiene 59% de adopción entre equipos de diseño vs. 42,4% de Adobe) antes de que erosionen el poder de fijación de precios del negocio histórico de Creative Cloud? A esto se suma una transición de CEO en diciembre de 2026, justo en medio de esta apuesta estratégica."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "ARR \"AI-first\" >US$650M, +150% i.a. — monetización de IA ya real dentro de la base de suscripción existente (Firefly, Acrobat AI, GenStudio), no solo narrativa.",
+    "Figma lanzó un modelo de créditos de IA dirigido directamente a la audiencia de Creative Cloud — ya 59% de adopción entre equipos de diseño vs. 42,4% de Adobe."
+   ],
+   [
+    "Q3 FY2026: ingresos +13% i.a., EPS no-GAAP +15% i.a., ambos por encima de consenso; guía FY2026 elevada a US$26.576-26.626M de ingresos.",
+    "Consenso de ~40 analistas se mantiene en \"Hold\" con precio objetivo promedio de US$275 pese a la guía elevada — el mercado no está convencido de que la IA sostenga el múltiplo histórico."
+   ],
+   [
+    "Máquina de caja extremadamente rentable (margen FCF ~41%, deuda neta de solo ~US$488M) — financia la inversión en IA sin dilución ni deuda adicional.",
+    "Transición de CEO el 1-dic-2026 (Narayen → Chakravarthy) tras 18 años, justo en medio del pivot estratégico más importante de la empresa en una década."
+   ],
+   [
+    "Crecimiento diversificado y de doble dígito en ambos grupos de clientes: Creative & Marketing (+13% i.a.) y Business Professionals & Consumers (+16% i.a.).",
+    "Acuerdo de US$150M con el DOJ/FTC (marzo 2026) por prácticas de cancelación de suscripción — antecedente de riesgo regulatorio/reputacional sobre la economía de retención."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    0.06,
+    0.12,
+    0.16,
+    "Base = guía oficial FY2026 (~11,9% implícito) y el crecimiento real de Q3 FY2026 (+13% i.a.), redondeado. Conservador = retorno al patrón de crecimiento más lento de 2023-2024 si la competencia de IA de bajo costo (Figma/Canva) erosiona el take-rate de Creative Cloud. Optimista = la monetización de IA (ARR AI-first +150% i.a.) sostiene el ritmo actual de +13-16% en vez de desacelerar."
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "6,0% (flat)",
+    0.1,
+    "16,0% (flat)",
+    "Base modera desde el 12% del año 1 — Adobe ya factura ~US$25.200M anuales (LTM), un crecimiento de doble dígito sostenido es razonable dado el impulso de IA, sin asumir que el pico reciente se mantiene indefinidamente."
+   ],
+   [
+    "Margen Operativo — Año 1",
+    0.385,
+    0.385,
+    0.385,
+    "Paso adelante modesto desde el nivel actual ajustado (38,42%, basis con I+D capitalizado), coherente con la mejora ya demostrada (margen GAAP LTM 36,1%, en expansión constante)."
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "38,42% (nivel actual)",
+    0.4,
+    0.45,
+    "Conservador = la mejora de margen se estanca donde ya está hoy (la competencia de IA impide más expansión). Base = leve mejora adicional por mix hacia productos de IA de alto margen. Optimista = Base + 5pp, apalancamiento operativo best-in-class si el mix de IA escala sin presión de precio."
+   ],
+   [
+    "Años de convergencia de margen",
+    3,
+    3,
+    3,
+    "Mucho más corto que el default genérico (7 años) porque la brecha entre el margen actual (38,4%) y el objetivo es pequeña — no es una transformación de modelo de negocio, es apalancamiento operativo incremental sobre una base ya madura y rentable desde hace más de una década."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x",
+    "Más alto que una empresa intensiva en capital: CapEx LTM de solo ~0,8% de los ingresos (US$201M sobre US$25.200M) — Adobe es un negocio de software extremadamente asset-light, y el crecimiento del ingreso diferido incluso reduce la necesidad de capital de trabajo incremental."
+   ],
+   [
+    "Costo de Capital (WACC)",
+    0.1079,
+    0.1079,
+    0.1079,
+    "Beta de industria Software (Single Business Global). Costo de deuda vía Synthetic Rating: cobertura de intereses real de 29,9x → rating estimado Aaa/AAA → spread mínimo (0,40%) — Adobe tiene deuda real pero muy poco apalancada frente a su generación de caja."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ($265,60)"
+   ],
+   [
+    "Conservador",
+    "$289,67",
+    "$305,55",
+    0.1504
+   ],
+   [
+    "Base",
+    "$373,44",
+    "$421,47",
+    0.5868
+   ],
+   [
+    "Optimista",
+    "$555,11",
+    "$724,47",
+    1.7276
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF (40%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"Madura\" (Adobe tiene utilidades positivas y estables desde hace más de una década, sin el patrón de signo cambiante de una empresa en transición a la rentabilidad)."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA ADBE (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Supuestos de crecimiento/margen (Input sheet B27-B33) recalibrados de los valores heredados de UBER a datos reales de ADBE.",
+    "Año 1: 12% (guía FY2026 + Q3 real). Margen objetivo 40% con convergencia en solo 3 años, dado que Adobe ya opera muy cerca de ese nivel (38,4% actual ajustado)."
+   ],
+   [
+    2,
+    "Crecimiento Conservador y Optimista (Valuation output C55/C106) recalibrados de 8%/18% (UBER) a 6%/16% (ADBE).",
+    "Conservador anclado en el patrón real de desaceleración 2023-2024 de Adobe; Optimista anclado en el crecimiento real de Q3 FY2026 (+13% i.a.) sosteniéndose vía monetización de IA."
+   ],
+   [
+    3,
+    "Sales-to-capital (B32/B33) recalibrado de 3,0x/3,5x (UBER, negocio intensivo en capital por su apuesta en flota de AV) a 4,0x/4,5x (ADBE, software puro).",
+    "Bottoms-up con datos reales: CapEx LTM de ADBE es solo ~0,8% de los ingresos, muy por debajo de la intensidad de capital de UBER."
+   ],
+   [
+    4,
+    "Múltiplos objetivo (J8/J19/J30 en EVFCFF/POCF/PE/PFCFE/EVEBITDA) recalculados como implícitos del propio DCF, reemplazando los valores heredados de UBER.",
+    "Igual que en UBER: mantiene el múltiplo objetivo consistente con los supuestos de crecimiento/margen que alimentan el DCF. El historial de utilidades de ADBE no tiene el problema de signo cambiante, pero se mantuvo el mismo método por consistencia y porque el DCF-implícito evita anclar en los múltiplos de pico de mercado de 2022-2023 (hasta 51x P/E)."
+   ],
+   [
+    5,
+    "Cost of Capital worksheet (Synthetic Rating, beta Single Business Global) verificado sin cambios.",
+    "Adobe tiene deuda real con cobertura de intereses de 29,9x (rating estimado Aaa/AAA) — el enfoque \"Synthetic Rating\" heredado de UBER también es apropiado para ADBE, a diferencia de una empresa sin deuda relevante que necesitaría \"Direct Input\"."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Al precio actual ($265,60), el modelo sugiere que Adobe cotiza con un margen de seguridad considerable incluso en el caso Conservador (+15%), y un potencial muy grande en el caso Base (+59%) si la monetización de IA sigue escalando al ritmo actual sin que la competencia erosione el negocio histórico. A diferencia de UBER/DUOL, aquí no hay una transición de pérdidas a utilidades en juego — Adobe ya es rentable y madura; la variable clave es si su poder de fijación de precios sobre Creative Cloud resiste el avance de Figma y herramientas de IA más baratas el tiempo suficiente para que el ARR \"AI-first\" (hoy solo ~2,4% del ARR total) se vuelva lo bastante grande como para ser la historia dominante en vez de un complemento. La transición de CEO en diciembre de 2026 es la señal de ejecución más importante a monitorear en el corto plazo."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla. Conservador y Optimista ('Valuation output' C55/C106) se recalibraron a mano con datos reales de ADBE: Conservador ancla el crecimiento en el patron de desaceleracion 2023-2024 (riesgo de que la competencia de IA de bajo costo -- Figma, Canva -- erosione el poder de fijacion de precios), y Optimista en que la monetizacion de IA (ARR AI-first +150% i.a.) siga sosteniendo el crecimiento actual (+13% i.a. en Q3 FY2026) -- ambos por fuera del mecanismo automatico nativo (ver hoja 'Tesis de Inversion y Supuestos', seccion 4)."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    0.12,
+    "Guía oficial FY2026 (10-Q/earnings call, sept-2026) implica ~11,9% de crecimiento de ingresos vs. FY2025, y el trimestre más reciente (Q3 FY2026) mostró +13% interanual -- 12% redondea ambas señales sin asumir que el ritmo de +13% se sostiene indefinidamente.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.385,
+    "El margen operativo ajustado actual (basis con I+D capitalizado, \"Valuation output\"!B6) ya es 38,42% -- un paso adelante modesto es coherente con la mejora ya demostrada (margen GAAP LTM 36,1%, en expansión), sin sobre-extrapolar un salto grande en un solo año sobre una base que ya es alta.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.1,
+    "Desacelera desde el 12% del año 1 -- Adobe ya factura ~US$25.200M anuales (LTM); un crecimiento de doble dígito sostenido es razonable dado el impulso de monetización de IA, pero se modera respecto al pico de Q3 FY2026 a medida que el ARR \"AI-first\" pasa de adopción temprana a escala.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.4,
+    "Adobe ya opera con margen operativo ajustado de 38,4% -- muy cerca del objetivo. 40% asume una leve expansión adicional por el mix hacia productos de IA de alto margen (Firefly, GenStudio), sin asumir un salto irreal para una empresa que ya está entre las más rentables del software empresarial.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    "3 años",
+    "Mucho más corto que el default genérico (7 años) porque la brecha entre el margen actual (38,4%) y el objetivo (40%) es pequeña -- no es una transformación de modelo de negocio como la de una empresa que recién se vuelve rentable, es apalancamiento operativo incremental sobre una base ya madura."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    "4,0x",
+    "Más alto que el de una empresa intensiva en capital porque Adobe es un negocio de software extremadamente asset-light: CapEx LTM de solo ~0,8% de los ingresos (US$201M sobre US$25.200M), muy por debajo del 3,0x-3,5x usado para empresas con inversión física relevante."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    "4,5x",
+    "Asume una leve mejora adicional de eficiencia de capital en la segunda mitad del horizonte, a medida que la infraestructura de IA (cómputo para Firefly/GenStudio) ya esté mayormente construida y el negocio escale sobre esa base sin requerir el mismo nivel de inversión marginal."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico; hoy estan todas en el modo automatico (MIN de los ultimos 4 años)."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: al igual que UBER (y a diferencia de DUOL), el historial de utilidades/EBITDA de ADBE NO tiene el problema de signo cambiante -- Adobe viene reportando utilidades positivas y estables cada año desde 2016, sin cruzar por cero en ningún momento del historial de 10 años. El ancla automática MIN-de-4-años nativa hubiera funcionado razonablemente acá también (los múltiplos históricos de Adobe son altos pero consistentes: 18x-51x de P/E en los últimos 4 años). Aun así, sobrescribí las 5 celdas Base (columna J) con el múltiplo IMPLÍCITO del propio DCF (Valor de Equity o Enterprise Value del escenario Base, dividido por la métrica proyectada FY+1: Utilidad Neta, EBITDA, FCFF, OCF o FCFE según corresponda) en vez del MIN histórico -- por consistencia metodológica con DUOL/UBER, y para mantener el múltiplo objetivo atado a los supuestos de crecimiento/margen que realmente alimentan el DCF en lugar de a un promedio retrospectivo que incluye años de múltiplos de pico de mercado (2022-2023, 40x-51x) no representativos del perfil de crecimiento actual de la empresa."
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "Adobe Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Shantanu Narayen (hasta 30-nov-2026) → Anil Chakravarthy asume como Presidente y CEO el 1-dic-2026; Narayen pasa a Executive Chair"
+   ],
+   [
+    "Sector Industrial",
+    "Software Empresarial / Creatividad Digital y Productividad Documental (SaaS)"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.adobe.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área"
+   ],
+   [
+    "Visión General de la Empresa",
+    "Adobe es el líder global en software de creatividad digital (Creative Cloud), gestión documental (Acrobat/Document Cloud) y experiencia de cliente empresarial (Experience Cloud/GenStudio), operando un modelo casi enteramente de suscripción con ARR de US$27.500 millones. Tras reestructurar su reporte de segmentos en 2026 (fusionando Digital Media, Digital Experience y Publishing/Advertising en un único segmento operativo), la empresa ahora divide su negocio por grupos de clientes. El motor de crecimiento actual es la monetización de IA generativa (Firefly, Acrobat AI, GenStudio): el ARR \"AI-first\" ya supera los US$650 millones y crece más de 150% interanual, aunque todavía representa solo ~2,4% del ARR total."
+   ],
+   [
+    "Creative & Marketing Professionals",
+    "Creative Cloud (Photoshop, Illustrator, Premiere) + Firefly (generación de imagen/video con IA) + GenStudio (producción de contenido de marketing con IA). US$4.700M en Q3 FY2026, +13% i.a. Es el segmento históricamente más grande y el más expuesto a la competencia de Figma/Canva."
+   ],
+   [
+    "Business Professionals & Consumers",
+    "Acrobat/Document Cloud (PDF, firma electrónica) + Acrobat AI Assistant + Adobe Express. US$1.900M en Q3 FY2026, +16% i.a. -- el segmento de mayor crecimiento reciente, impulsado por la funcionalidad de IA dentro de Acrobat."
+   ],
+   [
+    "Digital Experience (Enterprise)",
+    "GenStudio, Marketo Engage, Adobe Analytics, Real-Time CDP -- plataforma de marketing y experiencia de cliente para grandes empresas. Compite con Salesforce, HubSpot y Adobe la posiciona como la capa de orquestación de contenido con IA para equipos de marketing corporativos."
+   ],
+   [
+    "Estrategia de Producto y Distribución",
+    "Integrar la IA generativa (Firefly) en todo el stack de producto en vez de venderla como un add-on aislado, apostando a que los usuarios paguen más por la misma suscripción en lugar de migrar a herramientas nativas de IA más baratas. Complementa esto con GenStudio (orquestación de contenido con IA para marketing empresarial) y alianzas de distribución, mientras defiende su base histórica de suscriptores de Creative Cloud frente a alternativas de menor costo como Figma (modelo de créditos de IA) y Canva."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema"
+   ],
+   [
+    "Monetización de IA Ya Real, No Solo Narrativa",
+    "ARR \"AI-first\" superó los US$650 millones en Q3 FY2026 y crece +150% interanual -- a diferencia de muchos competidores que todavía no monetizan IA generativa de forma directa, Adobe ya lo está haciendo dentro de su base de suscripción existente (Firefly, Acrobat AI, GenStudio)."
+   ],
+   [
+    "Resultados Consistentemente Por Encima de Guía, con Guía Elevada",
+    "Ingresos Q3 FY2026 de US$6.760M (+13% i.a.) y EPS no-GAAP de US$6,13 (+15% i.a.) superaron el consenso; Adobe elevó la guía de ingresos FY2026 a US$26.576-26.626M y de EPS no-GAAP a US$24,45-24,50, señal de que la demanda de IA se está traduciendo en resultados reales, no solo en promesas."
+   ],
+   [
+    "Máquina de Caja Extremadamente Rentable, Financia la Apuesta de IA Sin Dilución",
+    "Margen operativo GAAP LTM de 36,1% y margen de FCF de ~41%, con deuda neta mínima (~US$488M vs. una capitalización de mercado de ~US$100.000M) -- Adobe puede invertir agresivamente en I+D e infraestructura de IA sin necesidad de deuda adicional ni dilución de accionistas."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo"
+   ],
+   [
+    "Competencia de IA Generativa de Bajo Costo (Figma, Canva)",
+    "Figma lanzó un modelo de monetización de IA basado en créditos dirigido directamente a la audiencia central de Adobe, y ya tiene 59% de adopción entre equipos de diseño (vs. 42,4% de Adobe), aunque el gasto promedio por comprador de Adobe (US$7.558) sigue siendo mayor al de Figma (US$5.344). El riesgo es que el uso de herramientas de IA más baratas erosione gradualmente el poder de fijación de precios de Adobe."
+   ],
+   [
+    "Transición de CEO en Medio de un Pivot Estratégico Hacia IA",
+    "Shantanu Narayen deja el cargo de CEO tras 18 años el 30 de noviembre de 2026, entregándoselo a Anil Chakravarthy (hasta ahora a cargo del negocio de Customer Experience Orchestration). Cualquier transición de liderazgo de esta magnitud conlleva riesgo de ejecución, más aún en medio de la apuesta estratégica más importante de la empresa en una década."
+   ],
+   [
+    "Consenso de Wall Street Escéptico Pese a la Guía Elevada",
+    "A pesar de superar y elevar la guía, el consenso de ~40 analistas mantiene una calificación \"Hold\" con precio objetivo promedio de US$275 -- señal de que el mercado todavía no está convencido de que la monetización de IA sea suficiente para sostener el múltiplo histórico de Adobe frente a la amenaza competitiva."
+   ],
+   [
+    "Antecedente Regulatorio: Acuerdo de US$150M con el DOJ/FTC",
+    "En marzo de 2026 Adobe acordó pagar US$150 millones (US$75M de multa civil + US$75M en servicios gratuitos) para resolver una demanda del Departamento de Justicia/FTC por dificultar la cancelación de suscripciones -- ya resuelto, pero es un antecedente de riesgo reputacional y de posible presión regulatoria futura sobre la economía de retención de suscriptores."
+   ],
+   [
+    "Fuente: Yahoo Finance, Investor Relations de Uber (8-K Q2 2026), TechCrunch, Electrek, SEC EDGAR -- septiembre 2026"
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: Agosto – Septiembre 2026"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados Financieros Q3 FY2026",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Transición de CEO",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Monetización de IA (Firefly/GenStudio)",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Revisiones de Analistas de Wall St.",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Competencia (Figma/Canva) y Antecedente Regulatorio",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados del Tercer Trimestre Fiscal 2026: Ingresos +13% Interanual, Guía Elevada",
+    "Adobe reportó ingresos de US$6.760 millones (+13% interanual) y EPS no-GAAP de US$6,13 (+15% interanual), superando el consenso. El ARR total alcanzó US$27.500 millones. Por grupo de clientes: Creative & Marketing Professionals US$4.700M (+13%) y Business Professionals & Consumers US$1.900M (+16%). Adobe elevó su guía de ingresos FY2026 a US$26.576-26.626M y de EPS no-GAAP a US$24,45-24,50, y proyectó ingresos de Q4 de US$6.800-6.850M."
+   ],
+   [
+    "ARR \"AI-First\" Supera los US$650 Millones, Crece +150% Interanual",
+    "El ARR de productos \"AI-first\" (Firefly como app independiente, Acrobat AI Assistant, GenStudio, funcionalidad de IA generativa embebida en Creative Cloud) superó los US$650 millones en Q3 FY2026, creciendo más de 150% interanual -- todavía una fracción pequeña (~2,4%) del ARR total de US$27.500M, pero la línea de crecimiento más rápida de la compañía y el principal argumento de la tesis alcista."
+   ],
+   [
+    "Anuncio de Transición de CEO: Anil Chakravarthy Asume el 1 de Diciembre de 2026",
+    "Adobe anunció que Anil Chakravarthy, hasta ahora presidente del negocio de Customer Experience Orchestration y de las operaciones globales de campo, se convertirá en Presidente y CEO a partir del 1 de diciembre de 2026, uniéndose también al Directorio. Shantanu Narayen, quien había anunciado en marzo su intención de dejar el cargo tras 18 años, pasará a Executive Chair para acompañar la transición."
+   ],
+   [
+    "Analistas Elevan Precios Objetivo Tras los Resultados, pero Consenso Sigue en \"Hold\"",
+    "Tras los resultados de Q3, varias casas elevaron sus precios objetivo: UBS a US$255 (desde US$225), BMO Capital a US$270 (desde US$230), Evercore ISI a US$250 (desde US$225), Piper Sandler a US$250 (manteniendo calificación neutral) y DA Davidson a US$290. Aun así, el consenso de ~40 analistas se mantiene en \"Hold\" con precio objetivo promedio de US$275, con un rango entre US$190 y US$380."
+   ],
+   [
+    "Figma Lanza Modelo de Créditos de IA, Intensificando la Competencia Directa por el Cliente de Diseño",
+    "Figma introdujo un modelo de monetización basado en créditos de IA dirigido directamente a diseñadores, la audiencia central de Creative Cloud. Figma ya alcanza 59% de adopción entre equipos de diseño (vs. 42,4% de Adobe), aunque el gasto promedio por comprador de Adobe (US$7.558/año) sigue siendo mayor al de Figma (US$5.344/año) -- la brecha de adopción crece más rápido que la brecha de gasto, lo que analistas citan como una señal de alerta temprana sobre el poder de fijación de precios de Adobe a mediano plazo."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "Monetización Real de IA vs. Competencia de Bajo Costo en el Corazón de Creative Cloud"
+   ],
+   [
+    "Adobe es el líder global de software creativo (Creative Cloud), documental (Acrobat/Document Cloud) y de experiencia de cliente empresarial (GenStudio), con un modelo casi enteramente de suscripción (ARR de US$27.500M). La tensión central de la tesis: el ARR \"AI-first\" ya supera los US$650M y crece +150% interanual -- una monetización de IA generativa ya real, no especulativa -- mientras compite directamente con Figma (modelo de créditos de IA, 59% de adopción entre equipos de diseño vs. 42,4% de Adobe) y herramientas gratuitas/baratas que amenazan con comoditizar el extremo bajo de su base de suscriptores. A esto se suma una transición de CEO en diciembre de 2026, justo en medio de esta apuesta estratégica.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Guía FY2026 elevada a US$26.576-26.626M (+~12% vs. FY2025) tras un Q3 FY2026 de +13% i.a. -- el crecimiento converge hacia el punto medio de esa guía y se modera hacia el mediano plazo a medida que el ARR \"AI-first\" (hoy solo ~2,4% del ARR total) pasa de una fase de adopción temprana a una de escala.",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo ajustado actual (basis con I+D capitalizado) es 38,4% -- ya muy cerca del objetivo de largo plazo. Un paso adelante modesto en el año 1 y una convergencia corta (3 años) reflejan que la mejora de margen ya está mayormente lograda, no es una promesa a futuro; el objetivo de 40% asume que el mix hacia productos de IA de alto margen compensa la inversión continua en I+D para defender la posición competitiva."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Sales-to-capital más alto que el de una empresa intensiva en capital (4,0x-4,5x) porque Adobe es un negocio de software extremadamente asset-light: CapEx LTM de solo US$201M sobre ingresos de US$25.200M (~0,8% de intensidad de capital), y el crecimiento del ingreso diferido (unearned revenue) incluso reduce la necesidad de capital de trabajo incremental."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Madura"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    265.6
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

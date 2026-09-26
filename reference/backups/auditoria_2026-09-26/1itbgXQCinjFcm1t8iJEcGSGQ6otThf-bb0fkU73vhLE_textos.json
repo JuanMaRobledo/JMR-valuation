@@ -1,0 +1,1054 @@
+{
+ "title": "Copia de Modelo_JMR_Plantilla_Maestra UBER",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "UBER TECHNOLOGIES (UBER) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: $71,43 (sept-2026) | WACC: 8,22%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Uber es la plataforma de movilidad y delivery más grande de Occidente, que en los últimos 3 años pasó de quemar caja de forma masiva a generar márgenes operativos crecientes y consistentes (de -60,8% en 2019 a +12,1% LTM). La tensión central de la tesis: ¿la mejora de margen ya demostrada (apalancamiento operativo real, no una promesa) continúa escalando mientras Uber se consolida como la capa de demanda dominante del transporte — o el ascenso de los vehículos autónomos (liderado por Waymo, que ya opera sin necesitar la plataforma de Uber) amenaza con volver irrelevante su modelo de marketplace, obligándola a una costosa carrera de capital hacia su propia flota?"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "Márgenes en mejora consistente y demostrada, no especulativa: +1,8pp interanual en Operating Margin en Q2 2026 (13,3% vs 11,5%).",
+    "Uber rompió su partnership con Waymo en Phoenix — Waymo ya escala a 400.000 viajes/semana sin necesitar la plataforma de Uber."
+   ],
+   [
+    "Bookings creciendo +24% i.a. (Q2 2026), muy por encima del crecimiento de ingresos (+12%) — margen de mejora en el take-rate.",
+    "Uber respondió invirtiendo USD 10.000M+ en flota propia de AV (Lucid, Nuro, Rivian) — pasa de asset-light a intensivo en capital."
+   ],
+   [
+    "Deuda con calificación crediticia real (~A3/A-, cobertura de intereses 5,6x) y balance mucho más sólido que un growth-tech típico.",
+    "Guía de bookings para Q3 2026 (punto medio USD 59.250M) quedó por debajo del consenso — señal de desaceleración secuencial."
+   ],
+   [
+    "Múltiples líneas de negocio (Mobility, Delivery, Freight, publicidad) diversifican el riesgo de disrupción en cualquiera sola.",
+    "El costo de construir/operar una flota autónoma propia es sustancialmente mayor al modelo actual de conductores independientes."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    0.08,
+    0.13,
+    0.18,
+    "Base = crecimiento real de ingresos en Q2 2026 (+12% i.a.), redondeado. Conservador = compresión adicional del take-rate por presión competitiva de AVs / Waymo, sin acompañar el crecimiento de bookings. Optimista = el crecimiento de ingresos converge hacia el de bookings (+24% i.a.), el take-rate deja de comprimirse."
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "8,0% (flat)",
+    0.11,
+    "18,0% (flat)",
+    "Base modera algo más — Uber ya factura ~USD 55.000M anuales, crecimiento de doble dígito bajo es razonable para una plataforma de este tamaño."
+   ],
+   [
+    "Margen Operativo — Año 1",
+    0.14,
+    0.14,
+    0.14,
+    "Paso adelante modesto desde el nivel actual ajustado (13,07%), coherente con la mejora ya demostrada (+1,8pp i.a. en Q2 2026)."
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "13,07% (nivel actual)",
+    0.26,
+    0.31,
+    "Conservador = la mejora de margen se estanca donde ya está hoy (riesgo AV limita más apalancamiento). Base = comparables de marketplace maduro y rentable (Airbnb ~20-23%, Booking Holdings/Match Group ~30%), no el promedio de industria \"Transportation\" (distorsionado por aerolíneas/logística de alto capex) ni un techo de software puro. Optimista = Base + 5pp, ejecución best-in-class del apalancamiento operativo del marketplace."
+   ],
+   [
+    "Años de convergencia de margen",
+    5,
+    5,
+    5,
+    "A diferencia de una empresa que promete mejorar margen, Uber YA viene mejorando su margen operativo cada año desde 2021 (-22%→-6%→+3%→+6%→+11%→+12% LTM) — el \"story\" está en marcha, no es especulativo, por eso la convergencia es más corta que en una empresa que recién empieza esa transición."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "Más conservador que un software puro: Uber está invirtiendo activamente USD 10.000M+ en flota propia de vehículos autónomos (Lucid/Nuro/Rivian), lo que aumenta la intensidad de capital futura frente a su modelo histórico asset-light de conductores independientes."
+   ],
+   [
+    "Costo de Capital (WACC)",
+    0.0822,
+    0.0822,
+    0.0822,
+    "Beta de industria \"Transportation\" (menor que software). Costo de deuda vía Synthetic Rating (no Direct Input): cobertura de intereses real 5,57x → rating estimado A3/A- → spread 0,89% — Uber tiene deuda real con calificación crediticia, a diferencia de una empresa sin deuda relevante."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ($71,43)"
+   ],
+   [
+    "Conservador",
+    "$65,80",
+    "$92,77",
+    "+29,9%"
+   ],
+   [
+    "Base",
+    "$132,62",
+    "$179,71",
+    "+151,6%"
+   ],
+   [
+    "Optimista",
+    "$212,87",
+    "$272,85",
+    "+282%"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF (40%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"Madura\" (Uber ya tiene utilidades estables y en mejora consistente, a diferencia de un perfil de alto crecimiento puro)."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA UBER (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Costo de deuda: de \"Direct Input\" (heredado) a \"Synthetic Rating\"",
+    "Uber tiene deuda real con cobertura de intereses de 5,57x -- a diferencia de una empresa sin deuda relevante, corresponde usar el rating sintético calculado (A3/A-) en vez de un spread genérico"
+   ],
+   [
+    2,
+    "Categoría de ponderación: de \"Software\" (heredada) a \"Madura\"",
+    "El historial de utilidades de Uber es positivo y consistente desde 2023, sin el patrón de signo cambiante que justificaba dar menos peso a EV/EBITDA y P/E"
+   ],
+   [
+    3,
+    "Crecimiento Conservador y Optimista recalibrados con datos reales (eran valores heredados de la corrida anterior)",
+    "Conservador anclado en riesgo de compresión de take-rate por competencia de AVs; Optimista anclado en el crecimiento real de bookings (+24% i.a.)"
+   ],
+   [
+    4,
+    "Nota: \"Cost of Sales\" del Income Statement quedó en $0 (Gross Margin muestra 100%)",
+    "Limitación conocida del mapeo XBRL de Uber -- no afecta el DCF (que usa Operating Margin, no Gross Margin), pero sí distorsiona la fila de Gross Profit Margin visualmente"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Al precio actual ($71,43), el modelo sugiere que Uber cotiza con un margen de seguridad considerable incluso en el caso Conservador (+30%), y un potencial muy grande en el caso Base (+152%) si la mejora de margen ya demostrada continúa. La variable clave a monitorear no es si Uber puede mejorar su rentabilidad -- eso ya lo viene haciendo consistentemente hace 3 años -- sino si logra defender su posición de capa de demanda del transporte a medida que los vehículos autónomos escalan, y a qué costo de capital. La ruptura con Waymo y la apuesta de USD 10.000M+ en flota propia son la señal más importante para seguir trimestre a trimestre."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla. Conservador y Optimista ('Valuation output' C55/C106) se recalibraron a mano con datos reales de UBER: Conservador ancla el crecimiento en el riesgo de compresion de take-rate por la competencia de vehiculos autonomos, y Optimista en el crecimiento real de Gross Bookings (+24% i.a., Q2 2026) -- ambos por fuera del mecanismo automatico nativo, que para UBER quedaba mal calibrado (ver hoja 'Tesis de Inversion y Supuestos', seccion 4)."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    0.13,
+    "Q2 2026 (10-Q real) mostro revenue +12% YoY, con Gross Bookings +24% YoY (24% i.a.) -- una brecha grande entre el crecimiento de la demanda subyacente y el revenue reconocido, por compresion del take-rate. 13% redondea el dato real de revenue del ultimo trimestre reportado, sin asumir que el take-rate mejora de inmediato.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.14,
+    "Margen operativo ajustado actual (basis R&D-capitalizado) = 13,07%. Q2 2026 mostro el margen GAAP mejorando a 13,3% desde 11,5% el año anterior -- un paso adelante modesto desde el nivel actual es coherente con esa mejora ya demostrada, sin sobre-extrapolar un salto grande en un solo año.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.11,
+    "Desacelera desde el 13% del año 1 -- Uber ya factura ~USD 55.000 millones anuales, un crecimiento de doble digito bajo sostenido es razonable para una plataforma de este tamaño, sin asumir que el ritmo actual de bookings (+24%) se traduzca integramente en revenue de forma permanente.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.26,
+    "Uber ya tiene margen operativo LTM de 12,1% y viene mejorando consistentemente cada año desde 2021 (no es una promesa, es un patron demostrado). 26% ancla en comparables de marketplace maduro y rentable (Airbnb ~20-23%, Booking Holdings/Match Group ~30%), no en el promedio de industria \"Transportation\" (distorsionado por aerolineas/logistica de alto capex) ni en un techo de software puro.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    "5 años",
+    "Mas corto que el default generico de 7 años porque la mejora de margen de Uber YA esta en marcha con una trayectoria consistente demostrada desde 2021 -- el \"story\" no es especulativo, es una continuacion de un patron real."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    3,
+    "Mas bajo que un software puro (4,0x) porque Uber esta invirtiendo activamente USD 10.000M+ en flota propia de vehiculos autonomos (Lucid, Nuro, Rivian), lo que aumenta la intensidad de capital futura frente a su modelo historico asset-light de conductores independientes."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    3.5,
+    "Asume una leve mejora de eficiencia de capital en la segunda mitad del horizonte, a medida que la inversion inicial en la flota de AV ya este realizada y el negocio escale sobre esa base sin requerir el mismo nivel de inversion marginal -- sigue por debajo de un software puro dado el perfil mas intensivo en capital de la estrategia de AV."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico; hoy estan todas en el modo automatico (MIN de los ultimos 4 años)."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: a diferencia de DUOL, el historial de utilidades/EBITDA de UBER NO tiene el problema de signo cambiante -- viene mejorando de forma consistente desde 2021 sin cruzar por cero en los ultimos años (positivo desde 2023). El ancla automatica MIN-de-4-años nativa hubiera funcionado razonablemente aca. Aun asi, sobrescribi las 5 celdas Base (columna J) con el multiplo IMPLICITO del propio DCF (Valor de Equity o Enterprise Value del escenario Base, dividido por la metrica proyectada FY+1: Utilidad Neta, EBITDA, FCFF, OCF o FCFE segun corresponda) en vez del MIN historico -- para mantener el multiplo objetivo consistente con los supuestos de crecimiento/margen que realmente alimentan el DCF, en vez de anclarlo a un promedio puramente retrospectivo de un negocio que crecio mucho mas rapido en 2021-2022 (post-COVID) de lo que crece o se espera que crezca hoy."
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "Uber Technologies, Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Dara Khosrowshahi"
+   ],
+   [
+    "Sector Industrial",
+    "Transporte / Marketplace Tecnológico (Mobility & Delivery)"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.uber.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área"
+   ],
+   [
+    "Visión General de la Empresa",
+    "Uber es la plataforma de movilidad y delivery más grande de Occidente, operando un modelo de marketplace de dos lados que conecta conductores/repartidores independientes con pasajeros y consumidores. Tras años de pérdidas masivas mientras escalaba, pasó a generar utilidad operativa GAAP positiva y creciente desde 2023, con margen operativo LTM de 12,1% (vs -60,8% en 2019). El negocio se organiza en tres segmentos: Mobility (viajes), Delivery (Uber Eats) y Freight (logística de carga), y está invirtiendo activamente en vehículos autónomos como la próxima frontera competitiva."
+   ],
+   [
+    "Core: Mobility (viajes)",
+    "Segmento original y de mayor margen -- conecta pasajeros con conductores independientes. Gross Bookings +24% i.a. en Q2 2026, con Trips +18% i.a. a 3.900 millones en el trimestre."
+   ],
+   [
+    "Delivery (Uber Eats)",
+    "Segundo pilar de ingresos, delivery de comida y retail. Diversifica el riesgo de depender solo de movilidad y comparte la misma base de usuarios/infraestructura de matching en tiempo real."
+   ],
+   [
+    "Freight",
+    "Segmento de logística de carga B2B -- el más pequeño y cíclico de los tres, expuesto a la actividad industrial/manufacturera en EE.UU."
+   ],
+   [
+    "Estrategia de Producto y Distribución",
+    "Escala de red (más conductores atraen más pasajeros y viceversa) como principal ventaja competitiva, combinada con Uber One (membresía cross-segmento tipo Amazon Prime) para aumentar la frecuencia de uso y el ARPU. La estrategia de vehículos autónomos (AV) es ahora la apuesta central de largo plazo: Uber invierte USD 10.000M+ en flota propia (Lucid, Nuro, Rivian) mientras compite y coopera selectivamente con operadores de AV como Waymo."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema"
+   ],
+   [
+    "Apalancamiento Operativo Ya Demostrado, No Especulativo",
+    "A diferencia de una empresa que promete mejorar márgenes, Uber ya lo viene haciendo consistentemente: margen operativo GAAP de 13,3% en Q2 2026 (vs 11,5% un año antes), Adjusted EBITDA margin sobre bookings subiendo de 4,5% a 4,9%. El apalancamiento de la red (más escala, mismo costo fijo de plataforma) sigue materializándose trimestre a trimestre."
+   ],
+   [
+    "Bookings Creciendo Más Rápido que Revenue",
+    "Gross Bookings +24% i.a. en Q2 2026 vs. Revenue +12% i.a. -- si el take-rate (la porción de bookings que Uber retiene como ingreso) deja de comprimirse, hay un margen de aceleración de ingresos ya visible en el crecimiento subyacente de la demanda de la plataforma."
+   ],
+   [
+    "Balance con Grado de Inversión Real",
+    "A diferencia de la mayoría de las plataformas tecnológicas de crecimiento, Uber tiene deuda real con cobertura de intereses de 5,6x (rating sintético estimado A3/A-) -- un perfil crediticio mucho más sólido, que reduce el riesgo de refinanciamiento y de dilución forzada."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo"
+   ],
+   [
+    "Disrupción por Vehículos Autónomos (el riesgo central)",
+    "Uber rompió su partnership piloto con Waymo en Phoenix en 2026, mientras Waymo demuestra que puede escalar de forma independiente (400.000 viajes/semana) sin necesitar la capa de demanda de Uber. Si los operadores de AV pueden construir su propia demanda directamente, el rol de \"marketplace\" de Uber -- su ventaja competitiva central -- se erosiona."
+   ],
+   [
+    "Pivot Forzado hacia un Modelo Intensivo en Capital",
+    "La respuesta de Uber a ese riesgo -- invertir USD 10.000M+ en flota propia de AV (Lucid, Nuro, Rivian) -- cambia su perfil de negocio de \"marketplace asset-light\" (sin poseer vehículos) hacia uno mucho más intensivo en capital, con menor retorno sobre capital invertido si la ejecución no es perfecta."
+   ],
+   [
+    "Desaceleración Secuencial de Bookings",
+    "La guía de bookings para Q3 2026 (punto medio USD 59.250M) quedó por debajo del consenso de analistas -- señal de que el crecimiento de +24% i.a. de Q2 podría no sostenerse al mismo ritmo."
+   ],
+   [
+    "Regulación Laboral y Competencia",
+    "El estatus de los conductores como contratistas independientes sigue bajo presión regulatoria en múltiples jurisdicciones (riesgo de reclasificación a empleados, que subiría estructuralmente los costos), y la competencia local (Lyft en EE.UU., DiDi/Grab en otras regiones) presiona el take-rate en mercados específicos."
+   ],
+   [
+    "Fuente: Yahoo Finance, Investor Relations de Uber (8-K Q2 2026), TechCrunch, Electrek, SEC EDGAR -- septiembre 2026"
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: Agosto – Septiembre 2026"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados Financieros",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Estrategia de Vehículos Autónomos",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Guía y Reacción del Mercado",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Revisiones de Analistas de Wall St.",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Competencia y Regulación",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados del Segundo Trimestre 2026: Bookings +24% Interanual, Revenue +12%",
+    "Uber reportó Gross Bookings de US$58.000 millones (+24% interanual, +22% en moneda constante) e ingresos de US$14.190 millones (+12% interanual). Trips creció 18% a 3.900 millones. Adjusted EBITDA fue de US$2.820 millones (+33% interanual, margen de 4,9% sobre bookings vs 4,5% el año anterior). El margen operativo GAAP mejoró a 13,3% desde 11,5% en el mismo trimestre de 2025."
+   ],
+   [
+    "Ruptura del Piloto con Waymo en Phoenix y Apuesta de US$10.000M+ en Flota Propia de AV",
+    "Uber y Waymo terminaron su partnership piloto en Phoenix en 2026, mientras Waymo demuestra capacidad de escalar de forma independiente (~400.000 viajes/semana). En respuesta, Uber está invirtiendo más de US$10.000 millones para construir su propia flota de vehículos autónomos junto a Lucid, Nuro y Rivian, con planes de desplegar robotaxis Lucid-Nuro en San Francisco (mercado de origen de Waymo) a fines de 2026."
+   ],
+   [
+    "Guía de Q3 2026 Ligeramente Por Debajo del Consenso",
+    "La guía de bookings para el tercer trimestre de 2026 (rango US$58.250-60.250 millones, punto medio US$59.250 millones) quedó por debajo del consenso de analistas de US$59.330 millones, y la guía de EPS ajustado (US$0,84-0,88) también quedó debajo del promedio de analistas de US$0,89 -- señal de posible desaceleración secuencial en el crecimiento de bookings."
+   ],
+   [
+    "Precio Objetivo de Consenso de Wall Street Muy por Encima del Precio Actual",
+    "El precio objetivo promedio de ~50 analistas se ubica en torno a US$102-107 (vs. precio de mercado de US$71,43), implicando un upside de consenso de ~45%. UBS mantiene recomendación Buy con precio objetivo de US$122, mientras otras casas ajustaron sus targets tras la guía de Q3 más débil de lo esperado."
+   ],
+   [
+    "Monthly Active Platform Consumers (MAPC) a 206 Millones, +16% Interanual",
+    "La base de usuarios activos mensuales de la plataforma creció a ~206 millones en Q2 2026 desde 180 millones un año antes, confirmando que el crecimiento de la base de usuarios sigue acelerando incluso mientras el crecimiento de revenue se modera -- consistente con la narrativa de compresión de take-rate más que de desaceleración de demanda subyacente."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "La Mejora de Margen Ya Demostrada vs. el Riesgo Existencial de los Vehículos Autónomos"
+   ],
+   [
+    "Uber domina la movilidad y el delivery globales con un modelo de marketplace de dos lados (Mobility, Delivery, Freight). Tras años quemando caja, viene mejorando su margen operativo de forma consistente y ya demostrada durante 3 años seguidos (de -22% en 2021 a +12,1% LTM), con Gross Bookings creciendo +24% interanual en Q2 2026 -- muy por encima del +12% de revenue, dejando margen para que el ingreso acelere si el take-rate deja de comprimirse. El riesgo central no es de ejecución sino existencial: Uber rompió su piloto con Waymo en Phoenix mientras el líder de robotaxis demuestra que puede escalar sin necesitar la plataforma de Uber (400.000 viajes/semana), obligando a Uber a invertir USD 10.000M+ en flota propia de vehículos autónomos -- un pivot de un modelo asset-light hacia uno intensivo en capital que, si no se ejecuta bien, podría comprimir el retorno sobre capital invertido que hoy es sólido (ROIC 15,9%).",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Bookings creciendo +24% i.a. (Q2 2026) muy por encima del revenue (+12%) -- el crecimiento converge parcialmente hacia esa brecha a medida que el take-rate se estabiliza, y modera con la madurez del mercado en años posteriores.",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo mejora desde 13% (año 1) hasta comparables de marketplace maduro y rentable (Airbnb, Booking, Match Group ~20-30%) -- apalancamiento operativo ya en marcha, no una promesa: +1,8pp interanual demostrado en Q2 2026."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Sales-to-capital más bajo que un software puro (3,0x-3,5x) porque Uber está invirtiendo activamente USD 10.000M+ en flota propia de vehículos autónomos, aumentando la intensidad de capital frente a su histórico modelo asset-light de conductores independientes."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Madura"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    72.63
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}
