@@ -113,6 +113,14 @@ INTEREST_PAID = {"2019": 72.4, "2020": 98.3, "2021": 118.0, "2022": 201.6,
 # Recompras (caja). 2021-2022 por variacion de la reserva de acciones en tesoreria.
 BUYBACKS = {"2019": 0.0, "2020": 0.0, "2021": 152.6, "2022": 152.3, "2023": 12.369, "2024": 0.0, "2025": 77.002}
 DEBT_PROCEEDS = {"2019": 7.4, "2020": 0.0, "2021": 809.5, "2022": 496.9, "2023": 5.288, "2024": 491.593, "2025": 1494.881}
+# Dividendos pagados a los accionistas de Afya (sin los de minoritarios de CCSI/IESVAP/etc.).
+# El tag DividendsPaidClassifiedAsFinancingActivities suma ambos. 2021-2024: todo fue a
+# minoritarios (= DividendsPaidToNoncontrollingInterests). 2020 sin desglose: R$13,0M, en
+# linea con la utilidad de minoritarios (R$15,9M) -> minoritarios. 2019: distribucion previa
+# a la salida a bolsa (sin desglose; se deja). 2025 y H1: comunicado del 2T26 ("dividends
+# paid to the Company's shareholders", R$134,5M en abr-2025 y R$313,2M en abr-2026).
+DIVIDENDS_PARENT = {"2019": 51.8, "2020": 0.0, "2021": 0.0, "2022": 0.0, "2023": 0.0, "2024": 0.0, "2025": 134.488}
+DIVIDENDS_PARENT_H1 = {"H1_26": 313.161, "H1_25": 134.488}
 DEBT_REPAID = {"2019": 75.1, "2020": 155.1, "2021": 107.8, "2022": 1.8, "2023": 112.630, "2024": 128.696, "2025": 1624.911}
 
 # Relacion de canje de la fusion con Yduqs (6-K del 23-sep-2026).
@@ -177,6 +185,8 @@ def build_raw(ifrs: dict) -> dict:
     s["int_paid"] = [INTEREST_PAID[y] for y in FY]
     s["ocf"] = [o - i for o, i in zip(s["ocf_rep"], s["int_paid"])]
     s["buyback"] = [BUYBACKS[y] for y in FY]
+    s["div_total"] = s["div"]
+    s["div"] = [DIVIDENDS_PARENT[y] for y in FY]
     b = {k: g(t, instant=True) for k, t in dict(
         cash="CashAndCashEquivalents", loans_c="ShorttermBorrowings", loans_nc="LongtermBorrowings",
         sellers_c="TradeAndOtherCurrentPayablesToRelatedParties", sellers_nc="NoncurrentPayablesToRelatedParties",
@@ -189,6 +199,8 @@ def build_raw(ifrs: dict) -> dict:
     ltm = {k: s[k][-1] - H1_25[k] + H1_26[k] for k in
            ("revenue", "cogs", "sga", "ebit", "pretax", "tax", "ni", "ni_total", "da", "sbc", "capex", "acq",
             "int_paid", "div", "buyback", "fin_exp", "fin_inc", "icf")}
+    ltm["div"] = s["div"][-1] - DIVIDENDS_PARENT_H1["H1_25"] + DIVIDENDS_PARENT_H1["H1_26"]
+    ltm["div_total"] = s["div_total"][-1] - H1_25["div"] + H1_26["div"]
     ltm["ocf_rep"] = s["ocf_rep"][-1] - H1_25["ocf"] + H1_26["ocf"]
     ltm["ocf"] = ltm["ocf_rep"] - ltm["int_paid"]
     ltm["fcf_fin"] = s["fcf_fin"][-1] - H1_25["fcf"] + H1_26["fcf"]
@@ -398,15 +410,37 @@ def dry() -> None:
           "tax LTM", round(raw["ltm"]["tax"] / raw["ltm"]["pretax"], 4))
 
 
+def step_dividends() -> None:
+    """Fila 32 del Cash Flow = solo dividendos al accionista de Afya; los de
+    minoritarios pasan a 'Other Financing Activities' (fila 33) para que el
+    total de financiamiento (fila 34) no cambie."""
+    ifrs = _facts()
+    _FACTS_CACHE.update(ifrs)
+    raw = build_raw(ifrs)
+    s, lt = raw["fy"], raw["ltm"]
+    sh = ms.open_sheet(SHEET_ID)
+    ws = sh.worksheet("Cash Flow Statement")
+    cur = ws.get("E32:L33", value_render_option="UNFORMATTED_VALUE")
+    new32 = [round(-v / FX_AVG[y], 1) for y, v in zip(FY, s["div"])] + [round(-lt["div"] / FX_LTM_AVG, 1)]
+    new33 = [round(o33 + o32 - n32, 1) for o32, o33, n32 in zip(cur[0], cur[1], new32)]
+    ms.write_with_backup(sh, "Cash Flow Statement",
+                         {**{f"{c}32": v for c, v in zip("EFGHIJKL", new32)}, **{f"{c}33": v for c, v in zip("EFGHIJKL", new33)}},
+                         "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)", BACKUP_PATH)
+    print("fila 32:", new32, "\nfila 33:", new33)
+
+
 STEPS = {"reset": step_reset, "refresh": step_refresh}
 
 
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--step", choices=[*STEPS, "all", "dry", "assumptions", "content"], default="dry")
+    parser.add_argument("--step", choices=[*STEPS, "all", "dry", "assumptions", "content", "dividends"], default="dry")
     args = parser.parse_args(argv)
     if args.step == "dry":
         dry()
+        return 0
+    if args.step == "dividends":
+        step_dividends()
         return 0
     extra = {}
     try:

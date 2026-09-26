@@ -963,5 +963,85 @@
    ]
   ],
   "reason": "Plantilla de placeholders reemplazada"
+ },
+ "Cash Flow Statement!E32": {
+  "before": -13.1,
+  "after": -13.1,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!F32": {
+  "before": -2.5,
+  "after": -0.0,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!G32": {
+  "before": -3.5,
+  "after": -0.0,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!H32": {
+  "before": -3.8,
+  "after": -0.0,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!I32": {
+  "before": -3.8,
+  "after": -0.0,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!J32": {
+  "before": -3.4,
+  "after": -0.0,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!K32": {
+  "before": -26.3,
+  "after": -24.1,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!L32": {
+  "before": -61.1,
+  "after": -59.2,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!E33": {
+  "before": 246.9,
+  "after": 246.9,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!F33": {
+  "before": 31.2,
+  "after": 28.7,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!G33": {
+  "before": -41.5,
+  "after": -45.0,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!H33": {
+  "before": -25.3,
+  "after": -29.1,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!I33": {
+  "before": -80.7,
+  "after": -84.5,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!J33": {
+  "before": 33.7,
+  "after": 30.3,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!K33": {
+  "before": -176.5,
+  "after": -178.7,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
+ },
+ "Cash Flow Statement!L33": {
+  "before": -200.3,
+  "after": -202.2,
+  "reason": "Dividendos solo al accionista (los de minoritarios pasan a Other Financing)"
  }
 }
