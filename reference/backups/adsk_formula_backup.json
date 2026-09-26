@@ -1,0 +1,1243 @@
+{
+ "Input sheet!B1": {
+  "before": "=A1",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!L29",
+  "after": "='Income Statement'!L29",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!E22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Income Statement!B15": {
+  "before": 0,
+  "after": -47.6,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!C15": {
+  "before": 0,
+  "after": -54.6,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!D15": {
+  "before": 0,
+  "after": -59,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!E15": {
+  "before": 0,
+  "after": -67.8,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!F15": {
+  "before": 0,
+  "after": -63,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!G15": {
+  "before": 0,
+  "after": -58,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!H15": {
+  "before": -83,
+  "after": -83,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!I15": {
+  "before": -71,
+  "after": -71,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!J15": {
+  "before": -71,
+  "after": -71,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!K15": {
+  "before": -80,
+  "after": -80,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!L15": {
+  "before": -83,
+  "after": -86,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!B16": {
+  "before": "=B14-B15",
+  "after": 47.6,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!C16": {
+  "before": "=C14-C15",
+  "after": 54.6,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!D16": {
+  "before": "=D14-D15",
+  "after": 59,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!E16": {
+  "before": "=E14-E15",
+  "after": 67.8,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!F16": {
+  "before": "=F14-F15",
+  "after": 63,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!G16": {
+  "before": "=G14-G15",
+  "after": 58,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!H16": {
+  "before": "=H14-H15",
+  "after": 83,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!I16": {
+  "before": "=I14-I15",
+  "after": 71,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!J16": {
+  "before": "=J14-J15",
+  "after": 71,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!K16": {
+  "before": "=K14-K15",
+  "after": 80,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!L16": {
+  "before": "=L14-L15",
+  "after": 86,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!L8": {
+  "before": 3066,
+  "after": 3161,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Income Statement!L11": {
+  "before": 79,
+  "after": -16,
+  "reason": "Intereses brutos (fila 16 sumaba ingreso+gasto) y SG&A LTM (quedaba igual a FY2026)"
+ },
+ "Balance Sheet!L3": {
+  "before": 4098,
+  "after": 4098,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L4": {
+  "before": 0,
+  "after": 57,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L5": {
+  "before": 4098,
+  "after": 4155,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L6": {
+  "before": 1439,
+  "after": 684,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L8": {
+  "before": 1439,
+  "after": 684,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L9": {
+  "before": 1254,
+  "after": 831,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L10": {
+  "before": 4942,
+  "after": 5670,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L11": {
+  "before": 121,
+  "after": 124,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L12": {
+  "before": 467,
+  "after": 423,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L13": {
+  "before": 4295,
+  "after": 4331,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L14": {
+  "before": 0,
+  "after": 594,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L15": {
+  "before": 2642,
+  "after": 1841,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L16": {
+  "before": 12467,
+  "after": 12983,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L18": {
+  "before": 422,
+  "after": 457,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L20": {
+  "before": 0,
+  "after": 1493,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L21": {
+  "before": "",
+  "after": 52,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L22": {
+  "before": 4406,
+  "after": 4036,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L23": {
+  "before": 980,
+  "after": 590,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L24": {
+  "before": 5808,
+  "after": 6628,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L25": {
+  "before": 2500,
+  "after": 1985,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L26": {
+  "before": 199,
+  "after": 175,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L27": {
+  "before": 915,
+  "after": 812,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L28": {
+  "before": 3614,
+  "after": 2972,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L29": {
+  "before": 9422,
+  "after": 9600,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L31": {
+  "before": 4709,
+  "after": 4846,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L32": {
+  "before": -232,
+  "after": -233,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L33": {
+  "before": -1432,
+  "after": -1230,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L34": {
+  "before": 3045,
+  "after": 3383,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L35": {
+  "before": 3045,
+  "after": 3383,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!L36": {
+  "before": 12467,
+  "after": 12983,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Balance Sheet!K21": {
+  "before": "",
+  "after": 52,
+  "reason": "Balance LTM real al 31-jul-2026 (el pipeline dejaba el de ene-2026)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B19": {
+  "before": "='Balance Sheet'!L5",
+  "after": "='Balance Sheet'!L5-3530",
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B20": {
+  "before": "='Balance Sheet'!L14",
+  "after": "='Balance Sheet'!L14",
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "Yes",
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.13,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.295,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.1,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.335,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.5,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.5,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0517,
+  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Updated September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Cost of capital ADSK"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 5,
+  "reason": "Cost of capital ADSK"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "Cost of capital ADSK"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": "='Input sheet'!B35+0,01",
+  "reason": "Cost of capital ADSK"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": "=MIN('Valuation output'!B6;'Input sheet'!B28)",
+  "reason": "Escenarios ADSK: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": "='Input sheet'!B30+0,03",
+  "reason": "Escenarios ADSK: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Software",
+  "reason": "Tipo de empresa ADSK"
+ },
+ "Input sheet!B49": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "ROIC terminal 15% (foso: estándar AutoCAD/Revit; ROIC actual ~36%)"
+ },
+ "Input sheet!B50": {
+  "before": 0.2,
+  "after": 0.15,
+  "reason": "ROIC terminal 15% (foso: estándar AutoCAD/Revit; ROIC actual ~36%)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Autodesk, Inc.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Andrew Anagnost (CEO desde 2017). CFO: Janesh Moorjani.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Software de diseño e ingeniería (Damodaran: Software (System & Application))",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.autodesk.com  |  IR: https://investors.autodesk.com",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Líder mundial en software de diseño y construcción (AutoCAD, Revit, Fusion, Maya). Ingresos FY2026 (a ene-2026) de US$7.206M (+18%) y LTM a jul-2026 de US$7.790M, casi todo por suscripción, con margen bruto de 91%. ~14.300 empleados. En ago-2026 compró MaintainX (mantenimiento y operaciones) por US$3.530M, su mayor adquisición.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "AECO (arquitectura, ingeniería, construcción y operaciones)",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "US$1.029M en el Q2 FY2027 (+17%), el 50% de los ingresos. Revit, Civil 3D, Autodesk Construction Cloud y ahora MaintainX: la apuesta es conectar diseño, obra y operación del activo en una sola plataforma.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "AutoCAD / AutoCAD LT y Manufactura (MFG)",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "AutoCAD US$500M (+14%) y MFG US$385M (+15%) en el Q2 FY2027. AutoCAD/DWG es el estándar de dibujo técnico; en manufactura Fusion (nube) compite con Dassault, PTC y Siemens. Make (Fusion, Build, Flow) crece 26%.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Medios y Entretenimiento (M&E) y Otros",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "M&E US$92M (+15%; Maya, 3ds Max, Flow) y Otros US$40M en el Q2 FY2027. Por geografía: Américas US$898M (+14%), EMEA US$804M (+19%) y APAC US$344M (+14%).",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia de Distribución\ny Comercialización",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Pasó al 'nuevo modelo de transacción' (venta directa y facturación anual en lugar de multianual por canales), que infló el crecimiento reportado de FY2025-FY2026. En ene-2026 reorganizó ventas y despidió ~1.000 personas (7%) para redirigir gasto a IA y a la nube de industria.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Estándar de la industria y crecimiento de doble dígito",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Ingresos del Q2 FY2027 +16% (+14% sin efecto cambiario), billings +10%, cRPO +12% y FCF del Q2 +24%. Guía FY2027 elevada: ingresos US$8.295-8.345M (+15-16%) y FCF de US$2.725-2.750M.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Expansión de márgenes con meta explícita",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Margen operativo non-GAAP de 41% en el Q2 (+2pp) y ~39% guiado para FY2027. Meta del Investor Day: 41% non-GAAP en FY2029. Margen GAAP del Q2 de 29% (+4pp).",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Valuación en mínimos de varios años",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "A ~US$209, cotiza a ~17x la utilidad non-GAAP proyectada (promedio histórico ~28x) y a ~15x el FCF LTM. 36 analistas: 30 compra, 6 mantener y ningún vender; precio objetivo medio de ~US$315-321.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "IA generativa y el modelo por usuario (seat)",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Si la IA reduce la cantidad de diseñadores o dibujantes, el cobro por usuario pierde base. El 4-sep-2026 la acción cayó 8% (a US$218) en una venta del sector software tras el cambio de CEO de Adobe.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "MaintainX: precio alto y dilución",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "US$3.530M por ~US$135M de ARR (~26x ingresos), financiado con caja y US$2.000M de deuda nueva. Diluye el margen FY2027 y deja la deuda neta en ~US$3.100M (antes, caja neta).",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Desaceleración subyacente y tasas altas",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Billings +10% contra ingresos +16%: el empuje del cambio de modelo de transacción se agota y el RPO total crece solo 2%. La guía del Q3 quedó debajo del consenso de EPS. UST 10 años de 5,17%, máximo desde 2007, que castiga a los múltiplos de crecimiento.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-K FY2026 y 10-Q Q2 FY2027 de Autodesk (SEC EDGAR, XBRL, cierre 31-jul-2026); comunicado de resultados Q2 FY2027 (27-ago-2026); 8-K de la emisión de notas (10-sep-2026); Bloomberg, Construction Dive y AEC Magazine (MaintainX, may-ago 2026); CG Channel (despidos, ene-2026); TIKR (caída del 4-sep-2026 y consenso de 36 analistas); Investor Day 2025 de Autodesk (meta de margen FY2029); Damodaran Online (indname.xls ene-2026, ERP sep-2026); CNBC (UST 10 años al 25-sep-2026).",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 28 de mayo de 2026 – 25 de septiembre de 2026",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "M&A / Estratégico",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "Compra de MaintainX por US$3.530M (cerrada el 3-ago-2026)",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Anunciada el 28-may; la mayor adquisición de su historia. Suma ~US$135M de ARR que crece >50%.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "Q2 FY2027: ingresos +16% y guía FY2027 elevada",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ingresos US$2.046M, margen non-GAAP 41%, EPS non-GAAP US$3,30 (consenso US$3,12). FY2027: ingresos de US$8.295-8.345M.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Financiamiento",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Emisión de US$1.000M en notas para repagar el préstamo puente",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "10-sep-2026: US$500M al 5,05% (2029) y US$500M al 5,65% (2033). Ratings A3 (Moody's) / BBB+ (S&P).",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Mercado / Sector",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Caída de 8% el 4-sep por el temor a la IA en el software",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "La venta del sector siguió al cambio de CEO de Adobe; ADSK cerró en US$218 y llegó a US$209 el 25-sep.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Análisis de Wall St.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Consenso de compra con precio objetivo ~50% arriba",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "36 analistas (24 compra, 6 sobreponderar, 6 mantener); precio objetivo medio de US$315-321 (rango US$276-355).",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "MaintainX cambia el balance",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "El pago de US$3.530M se hizo el 3-ago, después del cierre del Q2 (31-jul): el balance del 10-Q todavía muestra US$4.098M de caja. Impacto: el modelo usa caja pro forma de US$625M (Input!B19) y deuda de US$3.705M (notas, préstamo puente y arrendamientos). Los ingresos de MaintainX entran en el crecimiento del Año 1.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Guía FY2027 y Año 1 del modelo",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "La guía implica +14% en el segundo semestre FY2027 con MaintainX (~+12% orgánico). Con billings creciendo 10-11%, el Base usa +13% para los próximos 12 meses (≈11% orgánico + ~2pp de MaintainX) y 10% anual en los años 2-5.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Margen: la meta de 41% non-GAAP",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "41% non-GAAP en FY2029 menos compensación en acciones (~8,5% de ingresos) y amortización de intangibles (~1,5%, más con MaintainX) da ~31% GAAP, más ~2,5pp del ajuste por capitalizar I+D: margen objetivo Base de 33,5% en 5 años. Año 1 de 29,5%: la mejora subyacente compensa la dilución de MaintainX.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "IA y tasas: el castigo del múltiplo",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "El mercado paga ~17x la utilidad non-GAAP proyectada por temor a que la IA erosione el cobro por usuario, con el UST 10 años en 5,17%. Los múltiplos históricos del modelo (P/E ~48-60x GAAP en 2023-2026) son de otro régimen: el DCF es la lectura principal.",
+  "reason": "Contenido cualitativo ADSK"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 14300,
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "='Input sheet'!D1/12,8",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=E13/15",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Input sheet'!B19",
+  "reason": "Caja y deuda neta pro forma MaintainX"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "=('Valuation output'!D5/'Valuation output'!B5)^(1/2)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "=('Financials Multiples'!F57/'Income Statement'!K28)^(1/2)-1",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": 0.19,
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Autodesk: el estándar del diseño y la construcción que el mercado castiga por miedo a la IA",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Autodesk vende US$7.800M por año con margen bruto de 91%, crece 14-16% y tiene una meta explícita de 41% de margen non-GAAP en FY2029. Acaba de pagar US$3.530M por MaintainX para extender la plataforma de diseño y obra a la operación de los activos. El mercado la valora a ~17x la utilidad non-GAAP proyectada por temor a que la IA reduzca los usuarios que pagan y con tasas de 5,17%. La tesis Base: +13% el próximo año (incluye MaintainX), 10% anual en los años 2-5, margen GAAP ajustado que sube de 29% a 33,5% en 5 años, ROIC perpetuo de 15% y costo de capital de 10,8%.",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Guía FY2027 (+15-16%) implica ~14% en el H2 con MaintainX; billings +10-11% -> Año 1 13%, años 2-5 10%.",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 29,5% (base ajustada 29,0%): mejora subyacente menos dilución de MaintainX. Converge a 33,5% (meta 41% non-GAAP FY2029).",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva LTM de 22% que converge a la marginal de 25%.",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,5x: bottom-up FY2022-FY2026 con adquisiciones (~1,3x) y orgánico muy superior (poco capex, capital de trabajo negativo).",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC actual ~36% (ajustado por I+D); en perpetuidad 15%, por encima del costo de capital por el foso de estándar (DWG/Revit).",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "10,8%: beta global de Software desapalancada 1,33 (1,40 reapalancada), UST 5,17%, ERP 4,32%, Kd 6,17% (A3/BBB+).",
+  "reason": "Historia ADSK"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.13,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Guía FY2027 (+15-16%, con MaintainX) implica ~14% en el H2 FY2027; billings +10-11% anticipan desaceleración.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.295,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Base ajustada por I+D de 29,0% ('Valuation output'!B6); margen GAAP del Q2 de 29% (+4pp) menos la dilución de MaintainX.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.1,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Billings y cRPO crecen 10-12%; el empuje del cambio de modelo de transacción se agota.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.335,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Meta de 41% non-GAAP FY2029 − SBC (~8,5%) − amortización (~1,5%) ≈ 31% GAAP + ~2,5pp de ajuste por I+D. Comparables: Adobe ~36%, Cadence ~30%, PTC ~30% (GAAP).",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "La meta de la empresa es a FY2029 (~2,5 años); se da más plazo por MaintainX y la inversión en IA.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.5,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Bottom-up FY2022-FY2026 incluyendo adquisiciones (~1,3x); el crecimiento orgánico requiere mucho menos capital.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.5,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Se mantiene: las adquisiciones siguen siendo parte del crecimiento.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación ADSK: P/E, EV/EBITDA, EV/FCFF, P/FCFE y P/OCF fueron positivos los 4 años (ene-2023 a ene-2026), así que el mecanismo nativo (MIN de 4 años) no se rompe por cambios de signo. PERO esos años son de otro régimen de valuación: P/E GAAP de 48-60x y EV/EBITDA de 30-44x, contra ~24x y ~20x hoy. Por eso los múltiplos dan precios muy superiores al DCF (P/E Base ~US$557) y se leen como techo si vuelve la valuación histórica. La categoría 'Software' les da solo 40% del peso (DCF 60%). Además, el EV de 'Trailing Valuation' usa la caja del 31-jul, antes del pago de MaintainX.",
+  "reason": "Evaluacion de multiplos ADSK"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ([$XX,XX])"
+   ],
+   [
+    "Conservador",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Base",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "Optimista",
+    "[$XX,XX]",
+    "[$XX,XX]",
+    "[X%]"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Caja y deuda neta pro forma MaintainX"
+ }
+}
