@@ -10,11 +10,16 @@
 
 ## Resultado
 
+*(Actualizado tras la 2ª auditoría del modelo del 26-sep-2026: correcciones A10-A18, ver
+`modelo/METODOLOGIA.md` en Modelo-JMR. Lo que más movió a AFYA fue A11 (endeudamiento neto del
+FCFE, antes proyectado como % plano de las ventas) y A1/A12 (tope de acciones en los precios de
+EV/EBITDA y EV/FCFF).)*
+
 | Escenario | DCF hoy / acción | DCF vs. precio | Precio objetivo ponderado (3 años) | CAGR a 3 años |
 |---|---|---|---|---|
-| Conservador | US$17,65 | +35,8% | US$20,04 | 15,5% |
-| **Base** | **US$22,43** | **+72,5%** | **US$25,27** | **24,8%** |
-| Optimista | US$27,23 | +109,5% | US$30,60 | 33,0% |
+| Conservador | US$17,65 | +35,8% | US$19,62 | 14,7% |
+| **Base** | **US$22,43** | **+72,5%** | **US$24,89** | **24,2%** |
+| Optimista | US$27,23 | +109,5% | US$30,29 | 32,6% |
 | **Valor de la relación de canje con Yduqs** (6,408347 × YDUQ3 ÷ R$ por US$, 25-sep-2026) | **US$13,71** | +5,5% | — | — |
 
 Valores por método en US$ por acción (Conservador / Base / Optimista), todos a 3 años:
@@ -22,13 +27,13 @@ Valores por método en US$ por acción (Conservador / Base / Optimista), todos a
 | Método | Conservador | Base | Optimista |
 |---|---|---|---|
 | DCF | 26,14 | 33,21 | 40,33 |
-| EV/EBITDA | 16,51 | 21,11 | 25,88 |
-| EV/FCFF | 16,65 | 21,69 | 26,88 |
-| P/E | 15,61 | 19,01 | 22,54 |
-| P/FCFE | 13,05 | 15,68 | 18,39 |
-| P/OCF | 16,91 | 20,14 | 23,48 |
+| EV/EBITDA | 15,72 | 20,30 | 25,06 |
+| EV/FCFF | 15,86 | 20,88 | 26,05 |
+| P/E | 14,82 | 18,21 | 21,73 |
+| P/FCFE | 13,33 | 16,97 | 21,22 |
+| P/OCF | 16,12 | 19,34 | 22,66 |
 
-Zonas de compra (sobre el Base): Value US$16,42–17,69; Deep Value US$13,90–15,16; Valoración histórica US$11,37–12,63.
+Zonas de compra (sobre el Base): Value US$16,18–17,42; Deep Value US$13,69–14,93; Valoración histórica US$11,20–12,45.
 
 **Lectura.** El negocio standalone vale bastante más que el precio: el DCF Base da US$22,43 y hasta el Conservador supera el precio en 36%. El mercado paga ~5x EBITDA LTM por un negocio con margen EBIT de 33% que crece con la inflación. Pero desde el 23-sep-2026 la acción ya no sigue al valor standalone sino a la relación de canje con Yduqs (hoy US$13,71): la diferencia entre ambos valores es lo que el accionista de Afya cede en la fusión. La cede salvo que las sinergias (R$2.000-2.200M de valor presente, según las empresas) y la revalorización de la empresa combinada la compensen. Si la fusión fracasa (CADE o asambleas), vuelve a mandar el valor standalone.
 
@@ -51,3 +56,4 @@ Zonas de compra (sobre el Base): Value US$16,42–17,69; Deep Value US$13,90–1
 - **Flujo operativo:** Afya reporta el OCF antes de intereses; el del libro resta los intereses pagados (R$445M en 2025).
 - **Deuda:** incluye préstamos, cuentas por pagar a vendedores de empresas compradas y arrendamientos IFRS 16. Acciones: 88,92M (en circulación al 30-jun-2026 más dilución).
 - **Múltiplo Base:** el mínimo positivo de los últimos 4 cierres cae en dic-2025 (P/E 10,4x, EV/EBITDA 6,5x). Son los múltiplos post-derrumbe del sector.
+- **Dividendos:** el dato de la SEC (`DividendsPaidClassifiedAsFinancingActivities`) suma los dividendos a minoritarios de las filiales (CCSI/IESVAP). De 2021 a 2024 todo fue a minoritarios; se separó con el comunicado del 2T26 para que el DPS y su crecimiento reflejen solo al accionista de Afya (`scripts/run_afya.py --step dividends`).

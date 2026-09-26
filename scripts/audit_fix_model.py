@@ -41,6 +41,37 @@ Correcciones (ver modelo/METODOLOGIA.md de Modelo-JMR, seccion Auditoria):
   A9  Etiquetas: "NTM ... Multiple" eran multiplos trailing al cierre
       fiscal; 'Crecimiento y Márgenes' B6 decia LTM y era el ultimo año
       fiscal.
+  A10 Multiplo historico del año FY-3 (columna B de las hojas de multiplos)
+      salia de 'Trailing Valuation' con OTRA definicion (EV/FCF apalancado,
+      OCF reportado, precio/EPS diluido) que los años C-E (EV o market cap
+      sobre las metricas de 'Financials Multiples'). Ahora B usa la misma
+      definicion que C-E, calculada con las columnas H (y G) de los estados.
+  A11 Endeudamiento neto del FCFE: se proyectaba como el % promedio de las
+      ventas de los ultimos 3 años, para siempre (NKE -933/año). Ahora la
+      deuda crece con las ventas: (deuda / ventas LTM) x aumento de ventas.
+  A12 Acciones: la mediana del cambio anual incluia E32 (LTM vs ultimo año
+      fiscal, un periodo parcial): se excluye. Ademas (integrado en A1) el
+      precio de EV/EBITDA y EV/FCFF usaba las acciones proyectadas (menos
+      acciones por recompras) con la deuda neta de hoy (la caja que paga esas
+      recompras no se restaba): ahora se divide por MAX(acciones de hoy;
+      proyectadas), asi la dilucion cuenta y la recompra no se cuenta dos veces.
+  A13 Escenarios Conservador y Optimista: la trayectoria del margen
+      convergia desde el margen del Año 1 del Base ($C$6), no desde el del
+      propio escenario (C57 / C108).
+  A14 'Income Statement' fila 30 (margen EBITDA): #DIV/0! en los años sin
+      datos (empresas con menos de 10 años de historia).
+  A15 'Resumen de Valoración': B2 "Fecha del análisis" era =TODAY() (ahora la
+      fecha de valoracion de 'Input sheet'!B4) y etiquetas que decian
+      "Precio Actual" usando el precio del analisis (B3).
+  A16 'Valuation output': la columna "Growth" de la tabla de escenarios
+      (B45:B47) mostraba la tasa libre de riesgo, el promedio de la industria
+      y el CAGR 3Y, no el crecimiento que usa cada escenario. Las tablas de
+      las filas 95-102 y 146-153 no alimentan nada: quedan marcadas como
+      referencia.
+  A17 'Stories to Numbers' F13 ("Sales to capital" despues del año 10)
+      calculaba g/ROIC (tasa de reinversion). Ahora ROIC / (margen x (1-t)).
+  A18 'Input sheet' C20 (año anterior) sumaba Other LT Assets (fila 15) y
+      B20 (LTM) no: misma definicion en ambas.
 
 Uso:
     PYTHONPATH=.:scripts python scripts/audit_fix_model.py --sheet-id ID [--dry-run]
@@ -112,12 +143,14 @@ def _fixes_multiples() -> list[Fix]:
             for c, fc in _FY.items():
                 out.append(Fix(
                     "A1", sheet, f"{c}{price}",
-                    f"=({c}{m}*{c}{met}-({_NET_DEBT}+'Input sheet'!$B$21))/{FM}!{fc}{shares}",
+                    f"=({c}{m}*{c}{met}-({_NET_DEBT}+'Input sheet'!$B$21))/MAX({FM}!$E${shares};{FM}!{fc}{shares})",
                     old=(f"={c}{m}*({c}{met}/{FM}!{fc}{shares})",
                          # primera version de este script (signo de la caja invertido)
                          f"=({c}{m}*{c}{met}-{_NET_DEBT}-'Input sheet'!$B$21)/{FM}!{fc}{shares}",
                          # variante manual (NVO) sin minoritarios
-                         f"=({c}{m}*{c}{met}-({_NET_DEBT}))/{FM}!{fc}{shares}"),
+                         f"=({c}{m}*{c}{met}-({_NET_DEBT}))/{FM}!{fc}{shares}",
+                         # segunda version de este script (sin el tope de MAX en las acciones)
+                         f"=({c}{m}*{c}{met}-({_NET_DEBT}+'Input sheet'!$B$21))/{FM}!{fc}{shares}"),
                 ))
     for sheet, label in _MULT_SHEETS.items():
         for m, _met, _price, div, _shares, dps in _BLOCKS:
@@ -208,11 +241,99 @@ def _fixes_growth() -> list[Fix]:
     return out
 
 
+# ---------------------------------------------------------------------------
+# Segunda ronda (A10-A18)
+# ---------------------------------------------------------------------------
+
+_IS, _CF, _BS = "'Income Statement'", "'Cash Flow Statement'", "'Balance Sheet'"
+
+
+def _fy3_metrics() -> dict[str, str]:
+    """Metricas del año FY-3 (columna H de los estados; G = año anterior)
+    con la MISMA definicion que 'Financials Multiples' usa para B..D."""
+    ni = f"({_IS}!$H$12+{_IS}!$H$18-{_IS}!$H$20)"
+    da = f"{_CF}!$H$4"
+    capex = f"{_CF}!$H$15"
+    def nwc(c: str) -> str:
+        return f"(({_BS}!${c}$10-{_BS}!${c}$5)-({_BS}!${c}$24-{_BS}!${c}$20-{_BS}!${c}$21))"
+    dnwc = f"({nwc('H')}-{nwc('G')})"
+    tax = f"({_IS}!$H$20/({_IS}!$H$12+{_IS}!$H$18))"
+    return {
+        "EVEBITDA": f"({_IS}!$H$12+{da})",
+        "EVFCFF": f"({_IS}!$H$12*(1-{tax})+{da}+{capex}-{dnwc})",
+        "PE": ni,
+        "POCF": f"({ni}+{da}-{dnwc})",
+        "PFCFE": f"({ni}+{da}+{capex}-{dnwc}+{_CF}!$H$25+{_CF}!$H$28)",
+    }
+
+
+_TV_ROW = {"EVEBITDA": 21, "EVFCFF": 24, "PE": 13, "POCF": 15, "PFCFE": 16}
+_FM_BLOCK_OFFSETS = (0, 39, 79)  # bloques Conservador / Base / Optimista de 'Financials Multiples'
+
+
+def _fixes_round2() -> list[Fix]:
+    out: list[Fix] = []
+    # A10
+    for sheet, metric in _fy3_metrics().items():
+        out.append(Fix("A10", sheet, "B8", f'=IFERROR(B7/{metric};"")', old=(f"='Trailing Valuation'!H{_TV_ROW[sheet]}",)))
+    for off in _FM_BLOCK_OFFSETS:
+        rev, nb, sh, chg = 4 + off, 28 + off, 31 + off, 32 + off
+        # A11
+        for c, p in zip("EFGH", "DEFG"):
+            out.append(Fix("A11", "Financials Multiples", f"{c}{nb}",
+                           f"=IFERROR('Input sheet'!$B$16/{_IS}!$L$3;0)*({c}{rev}-{p}{rev})",
+                           old=(f"=AVERAGE((B{nb}/B{rev});(C{nb}/C{rev});(D{nb}/D{rev}))*{c}{rev}",)))
+        # A12: mediana del cambio de acciones sin el periodo parcial (E = LTM vs
+        # ultimo año fiscal). El tope de acciones (MAX contra hoy) en los precios
+        # de EV/EBITDA y EV/FCFF esta integrado directamente en la formula de A1.
+        for c in "FGH":
+            out.append(Fix("A12", "Financials Multiples", f"{c}{chg}", f"=MEDIAN(B{chg}:D{chg})",
+                           old=(f"=MEDIAN(B{chg}:E{chg})",)))
+    # A13
+    for row, tgt, cols in ((57, "$C$45", "DEFGHIJKL"), (108, "$C$47", "DEFGHIJKLM")):
+        for c in cols:
+            f = "=IF({c}3>'Input sheet'!$B$31;{t};{t}-(({t}-{a})/'Input sheet'!$B$31)*('Input sheet'!$B$31-{c}3))"
+            out.append(Fix("A13", "Valuation output", f"{c}{row}", f.format(c=c, t=tgt, a=f"$C${row}"),
+                           old=(f.format(c=c, t=tgt, a="$C$6"),)))
+    # A14
+    for c in COLS_HIST:
+        out.append(Fix("A14", "Income Statement", f"{c}30", f'=IFERROR({c}28/{c}3;"")', old=(f"={c}28/{c}3",)))
+    # A15
+    R = "Resumen de Valoración"
+    out += [
+        Fix("A15", R, "B2", "='Input sheet'!B4", old=("=TODAY()",)),
+        Fix("A15", R, "A13", "CAGR a 3 años (desde el precio del análisis)", old=("CAGR a 3 años",)),
+        Fix("A15", R, "A14", "MOS vs precio del análisis", old=("MOS vs Precio Actual",)),
+        Fix("A15", R, "A26", "Potencial vs. Precio Objetivo Base (precio de hoy)", old=("Potencial vs. Precio Objetivo Base",)),
+    ]
+    # A16
+    V = "Valuation output"
+    out += [
+        Fix("A16", V, "B44", "Crecimiento años 2-5", old=("Growth",)),
+        Fix("A16", V, "C44", "Margen EBIT objetivo", old=("EBIT margin",)),
+        Fix("A16", V, "B45", "=$C$55", old=("='Input sheet'!B35",)),
+        Fix("A16", V, "B46", "=$C$4", old=("='Input sheet'!J26",)),
+        Fix("A16", V, "B47", "=$C$106", old=("=B50",)),
+        Fix("A16", V, "A49", "Histórico (referencia) · LTM", old=("LTM",)),
+    ]
+    for r in (95, 146):
+        out.append(Fix("A16", V, f"A{r}", "Referencia histórica (no alimenta el DCF)", old=("",)))
+    # A17
+    out.append(Fix("A17", "Stories to Numbers", "F13",
+                   '=IFERROR(\'Valuation output\'!M42/(\'Valuation output\'!M6*(1-\'Valuation output\'!M8));"")',
+                   old=("='Valuation output'!M4/'Valuation output'!M42",)))
+    # A18
+    out.append(Fix("A18", "Input sheet", "C20",
+                   f"=IF({_BS}!L14={_BS}!K14;{_BS}!J14;{_BS}!K14)",
+                   old=(f"=IF({_BS}!L14+{_BS}!L15={_BS}!K14+{_BS}!K15;{_BS}!J14+{_BS}!J15;{_BS}!K14+{_BS}!K15)",)))
+    return out
+
+
 _FWD_STALE = {"M3": "3", "N3": "2.8", "M4": "7.9", "N4": "7"}
 
 
 def all_fixes() -> list[Fix]:
-    return _fixes_multiples() + _fixes_dividends() + _fixes_resumen() + _fixes_growth()
+    return _fixes_multiples() + _fixes_dividends() + _fixes_resumen() + _fixes_growth() + _fixes_round2()
 
 
 # ---------------------------------------------------------------------------

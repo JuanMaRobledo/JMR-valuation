@@ -4,93 +4,93 @@
  "cells": {
   "EVEBITDA!F10": {
    "before": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E31",
-   "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E31",
+   "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$31;'Financials Multiples'!E31)",
    "fix": "A1"
   },
   "EVEBITDA!G10": {
    "before": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F31",
-   "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F31",
-   "fix": "A1"
+   "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$31;'Financials Multiples'!F31)",
+   "fix": "A12"
   },
   "EVEBITDA!H10": {
    "before": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G31",
-   "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G31",
-   "fix": "A1"
+   "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$31;'Financials Multiples'!G31)",
+   "fix": "A12"
   },
   "EVEBITDA!F21": {
    "before": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E70",
-   "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E70",
+   "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$70;'Financials Multiples'!E70)",
    "fix": "A1"
   },
   "EVEBITDA!G21": {
    "before": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F70",
-   "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F70",
-   "fix": "A1"
+   "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$70;'Financials Multiples'!F70)",
+   "fix": "A12"
   },
   "EVEBITDA!H21": {
    "before": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G70",
-   "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G70",
-   "fix": "A1"
+   "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$70;'Financials Multiples'!G70)",
+   "fix": "A12"
   },
   "EVEBITDA!F32": {
    "before": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E110",
-   "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E110",
+   "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$110;'Financials Multiples'!E110)",
    "fix": "A1"
   },
   "EVEBITDA!G32": {
    "before": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F110",
-   "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F110",
-   "fix": "A1"
+   "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$110;'Financials Multiples'!F110)",
+   "fix": "A12"
   },
   "EVEBITDA!H32": {
    "before": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G110",
-   "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G110",
-   "fix": "A1"
+   "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$110;'Financials Multiples'!G110)",
+   "fix": "A12"
   },
   "EVFCFF!F10": {
    "before": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E31",
-   "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E31",
+   "after": "=(F8*F9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$31;'Financials Multiples'!E31)",
    "fix": "A1"
   },
   "EVFCFF!G10": {
    "before": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F31",
-   "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F31",
-   "fix": "A1"
+   "after": "=(G8*G9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$31;'Financials Multiples'!F31)",
+   "fix": "A12"
   },
   "EVFCFF!H10": {
    "before": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G31",
-   "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G31",
-   "fix": "A1"
+   "after": "=(H8*H9-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$31;'Financials Multiples'!G31)",
+   "fix": "A12"
   },
   "EVFCFF!F21": {
    "before": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E70",
-   "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E70",
+   "after": "=(F19*F20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$70;'Financials Multiples'!E70)",
    "fix": "A1"
   },
   "EVFCFF!G21": {
    "before": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F70",
-   "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F70",
-   "fix": "A1"
+   "after": "=(G19*G20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$70;'Financials Multiples'!F70)",
+   "fix": "A12"
   },
   "EVFCFF!H21": {
    "before": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G70",
-   "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G70",
-   "fix": "A1"
+   "after": "=(H19*H20-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$70;'Financials Multiples'!G70)",
+   "fix": "A12"
   },
   "EVFCFF!F32": {
    "before": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!E110",
-   "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!E110",
+   "after": "=(F30*F31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$110;'Financials Multiples'!E110)",
    "fix": "A1"
   },
   "EVFCFF!G32": {
    "before": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!F110",
-   "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!F110",
-   "fix": "A1"
+   "after": "=(G30*G31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$110;'Financials Multiples'!F110)",
+   "fix": "A12"
   },
   "EVFCFF!H32": {
    "before": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))/'Financials Multiples'!G110",
-   "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/'Financials Multiples'!G110",
-   "fix": "A1"
+   "after": "=(H30*H31-('Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Input sheet'!$B$21))/MAX('Financials Multiples'!$E$110;'Financials Multiples'!G110)",
+   "fix": "A12"
   },
   "EVEBITDA!J19": {
    "before": "=MIN(B19:E19)",
@@ -716,6 +716,331 @@
    "before": "valores de PYPL",
    "after": "(vacío)",
    "fix": "A8"
+  },
+  "EVEBITDA!B8": {
+   "before": "='Trailing Valuation'!H21",
+   "after": "=IFERROR(B7/('Income Statement'!$H$12+'Cash Flow Statement'!$H$4);\"\")",
+   "fix": "A10"
+  },
+  "EVFCFF!B8": {
+   "before": "='Trailing Valuation'!H24",
+   "after": "=IFERROR(B7/('Income Statement'!$H$12*(1-('Income Statement'!$H$20/('Income Statement'!$H$12+'Income Statement'!$H$18)))+'Cash Flow Statement'!$H$4+'Cash Flow Statement'!$H$15-((('Balance Sheet'!$H$10-'Balance Sheet'!$H$5)-('Balance Sheet'!$H$24-'Balance Sheet'!$H$20-'Balance Sheet'!$H$21))-(('Balance Sheet'!$G$10-'Balance Sheet'!$G$5)-('Balance Sheet'!$G$24-'Balance Sheet'!$G$20-'Balance Sheet'!$G$21))));\"\")",
+   "fix": "A10"
+  },
+  "PE!B8": {
+   "before": "='Trailing Valuation'!H13",
+   "after": "=IFERROR(B7/('Income Statement'!$H$12+'Income Statement'!$H$18-'Income Statement'!$H$20);\"\")",
+   "fix": "A10"
+  },
+  "POCF!B8": {
+   "before": "='Trailing Valuation'!H15",
+   "after": "=IFERROR(B7/(('Income Statement'!$H$12+'Income Statement'!$H$18-'Income Statement'!$H$20)+'Cash Flow Statement'!$H$4-((('Balance Sheet'!$H$10-'Balance Sheet'!$H$5)-('Balance Sheet'!$H$24-'Balance Sheet'!$H$20-'Balance Sheet'!$H$21))-(('Balance Sheet'!$G$10-'Balance Sheet'!$G$5)-('Balance Sheet'!$G$24-'Balance Sheet'!$G$20-'Balance Sheet'!$G$21))));\"\")",
+   "fix": "A10"
+  },
+  "PFCFE!B8": {
+   "before": "='Trailing Valuation'!H16",
+   "after": "=IFERROR(B7/(('Income Statement'!$H$12+'Income Statement'!$H$18-'Income Statement'!$H$20)+'Cash Flow Statement'!$H$4+'Cash Flow Statement'!$H$15-((('Balance Sheet'!$H$10-'Balance Sheet'!$H$5)-('Balance Sheet'!$H$24-'Balance Sheet'!$H$20-'Balance Sheet'!$H$21))-(('Balance Sheet'!$G$10-'Balance Sheet'!$G$5)-('Balance Sheet'!$G$24-'Balance Sheet'!$G$20-'Balance Sheet'!$G$21)))+'Cash Flow Statement'!$H$25+'Cash Flow Statement'!$H$28);\"\")",
+   "fix": "A10"
+  },
+  "Financials Multiples!E28": {
+   "before": "=AVERAGE((B28/B4);(C28/C4);(D28/D4))*E4",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(E4-D4)",
+   "fix": "A11"
+  },
+  "Financials Multiples!F28": {
+   "before": "=AVERAGE((B28/B4);(C28/C4);(D28/D4))*F4",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(F4-E4)",
+   "fix": "A11"
+  },
+  "Financials Multiples!G28": {
+   "before": "=AVERAGE((B28/B4);(C28/C4);(D28/D4))*G4",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(G4-F4)",
+   "fix": "A11"
+  },
+  "Financials Multiples!H28": {
+   "before": "=AVERAGE((B28/B4);(C28/C4);(D28/D4))*H4",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(H4-G4)",
+   "fix": "A11"
+  },
+  "Financials Multiples!F32": {
+   "before": "=MEDIAN(B32:E32)",
+   "after": "=MEDIAN(B32:D32)",
+   "fix": "A12"
+  },
+  "Financials Multiples!G32": {
+   "before": "=MEDIAN(B32:E32)",
+   "after": "=MEDIAN(B32:D32)",
+   "fix": "A12"
+  },
+  "Financials Multiples!H32": {
+   "before": "=MEDIAN(B32:E32)",
+   "after": "=MEDIAN(B32:D32)",
+   "fix": "A12"
+  },
+  "Financials Multiples!E67": {
+   "before": "=AVERAGE((B67/B43);(C67/C43);(D67/D43))*E43",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(E43-D43)",
+   "fix": "A11"
+  },
+  "Financials Multiples!F67": {
+   "before": "=AVERAGE((B67/B43);(C67/C43);(D67/D43))*F43",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(F43-E43)",
+   "fix": "A11"
+  },
+  "Financials Multiples!G67": {
+   "before": "=AVERAGE((B67/B43);(C67/C43);(D67/D43))*G43",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(G43-F43)",
+   "fix": "A11"
+  },
+  "Financials Multiples!H67": {
+   "before": "=AVERAGE((B67/B43);(C67/C43);(D67/D43))*H43",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(H43-G43)",
+   "fix": "A11"
+  },
+  "Financials Multiples!F71": {
+   "before": "=MEDIAN(B71:E71)",
+   "after": "=MEDIAN(B71:D71)",
+   "fix": "A12"
+  },
+  "Financials Multiples!G71": {
+   "before": "=MEDIAN(B71:E71)",
+   "after": "=MEDIAN(B71:D71)",
+   "fix": "A12"
+  },
+  "Financials Multiples!H71": {
+   "before": "=MEDIAN(B71:E71)",
+   "after": "=MEDIAN(B71:D71)",
+   "fix": "A12"
+  },
+  "Financials Multiples!E107": {
+   "before": "=AVERAGE((B107/B83);(C107/C83);(D107/D83))*E83",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(E83-D83)",
+   "fix": "A11"
+  },
+  "Financials Multiples!F107": {
+   "before": "=AVERAGE((B107/B83);(C107/C83);(D107/D83))*F83",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(F83-E83)",
+   "fix": "A11"
+  },
+  "Financials Multiples!G107": {
+   "before": "=AVERAGE((B107/B83);(C107/C83);(D107/D83))*G83",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(G83-F83)",
+   "fix": "A11"
+  },
+  "Financials Multiples!H107": {
+   "before": "=AVERAGE((B107/B83);(C107/C83);(D107/D83))*H83",
+   "after": "=IFERROR('Input sheet'!$B$16/'Income Statement'!$L$3;0)*(H83-G83)",
+   "fix": "A11"
+  },
+  "Financials Multiples!F111": {
+   "before": "=MEDIAN(B111:E111)",
+   "after": "=MEDIAN(B111:D111)",
+   "fix": "A12"
+  },
+  "Financials Multiples!G111": {
+   "before": "=MEDIAN(B111:E111)",
+   "after": "=MEDIAN(B111:D111)",
+   "fix": "A12"
+  },
+  "Financials Multiples!H111": {
+   "before": "=MEDIAN(B111:E111)",
+   "after": "=MEDIAN(B111:D111)",
+   "fix": "A12"
+  },
+  "Valuation output!D57": {
+   "before": "=IF(D3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-D3))",
+   "after": "=IF(D3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-D3))",
+   "fix": "A13"
+  },
+  "Valuation output!E57": {
+   "before": "=IF(E3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-E3))",
+   "after": "=IF(E3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-E3))",
+   "fix": "A13"
+  },
+  "Valuation output!F57": {
+   "before": "=IF(F3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-F3))",
+   "after": "=IF(F3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-F3))",
+   "fix": "A13"
+  },
+  "Valuation output!G57": {
+   "before": "=IF(G3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-G3))",
+   "after": "=IF(G3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-G3))",
+   "fix": "A13"
+  },
+  "Valuation output!H57": {
+   "before": "=IF(H3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-H3))",
+   "after": "=IF(H3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-H3))",
+   "fix": "A13"
+  },
+  "Valuation output!I57": {
+   "before": "=IF(I3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-I3))",
+   "after": "=IF(I3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-I3))",
+   "fix": "A13"
+  },
+  "Valuation output!J57": {
+   "before": "=IF(J3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-J3))",
+   "after": "=IF(J3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-J3))",
+   "fix": "A13"
+  },
+  "Valuation output!K57": {
+   "before": "=IF(K3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-K3))",
+   "after": "=IF(K3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-K3))",
+   "fix": "A13"
+  },
+  "Valuation output!L57": {
+   "before": "=IF(L3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-L3))",
+   "after": "=IF(L3>'Input sheet'!$B$31;$C$45;$C$45-(($C$45-$C$57)/'Input sheet'!$B$31)*('Input sheet'!$B$31-L3))",
+   "fix": "A13"
+  },
+  "Valuation output!D108": {
+   "before": "=IF(D3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-D3))",
+   "after": "=IF(D3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-D3))",
+   "fix": "A13"
+  },
+  "Valuation output!E108": {
+   "before": "=IF(E3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-E3))",
+   "after": "=IF(E3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-E3))",
+   "fix": "A13"
+  },
+  "Valuation output!F108": {
+   "before": "=IF(F3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-F3))",
+   "after": "=IF(F3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-F3))",
+   "fix": "A13"
+  },
+  "Valuation output!G108": {
+   "before": "=IF(G3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-G3))",
+   "after": "=IF(G3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-G3))",
+   "fix": "A13"
+  },
+  "Valuation output!H108": {
+   "before": "=IF(H3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-H3))",
+   "after": "=IF(H3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-H3))",
+   "fix": "A13"
+  },
+  "Valuation output!I108": {
+   "before": "=IF(I3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-I3))",
+   "after": "=IF(I3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-I3))",
+   "fix": "A13"
+  },
+  "Valuation output!J108": {
+   "before": "=IF(J3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-J3))",
+   "after": "=IF(J3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-J3))",
+   "fix": "A13"
+  },
+  "Valuation output!K108": {
+   "before": "=IF(K3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-K3))",
+   "after": "=IF(K3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-K3))",
+   "fix": "A13"
+  },
+  "Valuation output!L108": {
+   "before": "=IF(L3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-L3))",
+   "after": "=IF(L3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-L3))",
+   "fix": "A13"
+  },
+  "Valuation output!M108": {
+   "before": "=IF(M3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$6)/'Input sheet'!$B$31)*('Input sheet'!$B$31-M3))",
+   "after": "=IF(M3>'Input sheet'!$B$31;$C$47;$C$47-(($C$47-$C$108)/'Input sheet'!$B$31)*('Input sheet'!$B$31-M3))",
+   "fix": "A13"
+  },
+  "Income Statement!E30": {
+   "before": "=E28/E3",
+   "after": "=IFERROR(E28/E3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!F30": {
+   "before": "=F28/F3",
+   "after": "=IFERROR(F28/F3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!G30": {
+   "before": "=G28/G3",
+   "after": "=IFERROR(G28/G3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!H30": {
+   "before": "=H28/H3",
+   "after": "=IFERROR(H28/H3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!I30": {
+   "before": "=I28/I3",
+   "after": "=IFERROR(I28/I3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!J30": {
+   "before": "=J28/J3",
+   "after": "=IFERROR(J28/J3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!K30": {
+   "before": "=K28/K3",
+   "after": "=IFERROR(K28/K3;\"\")",
+   "fix": "A14"
+  },
+  "Income Statement!L30": {
+   "before": "=L28/L3",
+   "after": "=IFERROR(L28/L3;\"\")",
+   "fix": "A14"
+  },
+  "Resumen de Valoración!A13": {
+   "before": "CAGR a 3 años",
+   "after": "CAGR a 3 años (desde el precio del análisis)",
+   "fix": "A15"
+  },
+  "Resumen de Valoración!A26": {
+   "before": "Potencial vs. Precio Objetivo Base",
+   "after": "Potencial vs. Precio Objetivo Base (precio de hoy)",
+   "fix": "A15"
+  },
+  "Valuation output!B44": {
+   "before": "Growth",
+   "after": "Crecimiento años 2-5",
+   "fix": "A16"
+  },
+  "Valuation output!C44": {
+   "before": "EBIT margin",
+   "after": "Margen EBIT objetivo",
+   "fix": "A16"
+  },
+  "Valuation output!B45": {
+   "before": "='Input sheet'!B35",
+   "after": "=$C$55",
+   "fix": "A16"
+  },
+  "Valuation output!B46": {
+   "before": "='Input sheet'!J26",
+   "after": "=$C$4",
+   "fix": "A16"
+  },
+  "Valuation output!B47": {
+   "before": "=B50",
+   "after": "=$C$106",
+   "fix": "A16"
+  },
+  "Valuation output!A49": {
+   "before": "LTM",
+   "after": "Histórico (referencia) · LTM",
+   "fix": "A16"
+  },
+  "Valuation output!A95": {
+   "before": "",
+   "after": "Referencia histórica (no alimenta el DCF)",
+   "fix": "A16"
+  },
+  "Valuation output!A146": {
+   "before": "",
+   "after": "Referencia histórica (no alimenta el DCF)",
+   "fix": "A16"
+  },
+  "Stories to Numbers!F13": {
+   "before": "='Valuation output'!M4/'Valuation output'!M42",
+   "after": "=IFERROR('Valuation output'!M42/('Valuation output'!M6*(1-'Valuation output'!M8));\"\")",
+   "fix": "A17"
+  },
+  "Input sheet!C20": {
+   "before": "=IF('Balance Sheet'!L14+'Balance Sheet'!L15='Balance Sheet'!K14+'Balance Sheet'!K15;'Balance Sheet'!J14+'Balance Sheet'!J15;'Balance Sheet'!K14+'Balance Sheet'!K15)",
+   "after": "=IF('Balance Sheet'!L14='Balance Sheet'!K14;'Balance Sheet'!J14;'Balance Sheet'!K14)",
+   "fix": "A18"
   }
  }
 }
