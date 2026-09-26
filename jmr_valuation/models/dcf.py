@@ -148,6 +148,13 @@ def run_dcf(
 
     terminal_growth = terminal.terminal_growth()
     terminal_wacc = terminal.terminal_wacc()
+    if terminal_wacc <= terminal_growth:
+        raise ValueError(
+            f"WACC terminal ({terminal_wacc:.2%}) debe superar el crecimiento estable "
+            f"({terminal_growth:.2%}); revisa moneda, tasa libre de riesgo y supuestos."
+        )
+    if sales_to_capital_years_1_5 <= 0 or sales_to_capital_years_6_10 <= 0:
+        raise ValueError("Sales-to-capital debe ser positivo en ambos periodos")
 
     years: list[YearProjection] = []
 
@@ -271,7 +278,9 @@ def run_dcf(
         cum_discount_prev = cum_discount
 
     terminal_roic = terminal.terminal_roic(final_years[-1].cost_of_capital)
-    terminal_reinvestment = terminal_ebit_after_tax * (terminal_growth / terminal_roic) if terminal_roic else 0.0
+    if terminal_roic <= 0:
+        raise ValueError("ROIC terminal debe ser positivo para justificar el crecimiento estable")
+    terminal_reinvestment = terminal_ebit_after_tax * (terminal_growth / terminal_roic)
     terminal_fcff = terminal_ebit_after_tax - terminal_reinvestment
 
     terminal_year = YearProjection(

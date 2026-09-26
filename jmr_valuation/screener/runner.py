@@ -116,6 +116,8 @@ def criteria_meta() -> dict:
     return {
         "hard_filters": {
             "min_years": scoring.MIN_YEARS,
+            "min_roic_observations_5y": scoring.MIN_ROIC_OBSERVATIONS_5Y,
+            "min_fcf_observations_5y": scoring.MIN_FCF_OBSERVATIONS_5Y,
             "min_roic_median_5y": scoring.MIN_ROIC_MEDIAN_5Y,
             "min_fcf_positive_last_5y": scoring.MIN_FCF_POSITIVE_LAST_5Y,
             "max_net_debt_to_ebitda": scoring.MAX_NET_DEBT_TO_EBITDA,
@@ -126,6 +128,7 @@ def criteria_meta() -> dict:
             for m, w, b, g, grp in scoring.CRITERIA
         ],
         "tiers": [{"min_score": t, "label": label} for t, label in scoring.TIERS],
+        "min_top_tier_coverage": scoring.MIN_TOP_TIER_COVERAGE,
     }
 
 
@@ -157,6 +160,7 @@ def to_flat_rows(results: list[ScreenResult]) -> list[dict]:
                     row[f"ltm_{name}"] = value
             else:
                 row[f"val_{k}"] = v
+        row["coverage"] = r.quality.get("coverage")
         row["failed_filters"] = " | ".join(r.quality.get("failed_filters", []))
         row["flags"] = " | ".join(r.quality.get("flags", []))
         row["error"] = r.error or ""

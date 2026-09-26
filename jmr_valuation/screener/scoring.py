@@ -42,9 +42,12 @@ CRITERIA: list[tuple[str, float, float, float, str]] = [
     ("sbc_pct_revenue",            2, 0.10, 0.02, "Capital"),
 ]
 MIN_WEIGHT_COVERAGE = 0.70
+MIN_TOP_TIER_COVERAGE = 0.90
 
 # Filtros duros
-MIN_YEARS = 5
+MIN_YEARS = 6  # cinco intervalos anuales requieren seis cierres fiscales
+MIN_ROIC_OBSERVATIONS_5Y = 4
+MIN_FCF_OBSERVATIONS_5Y = 5
 MIN_ROIC_MEDIAN_5Y = 0.12
 MIN_FCF_POSITIVE_LAST_5Y = 4
 MAX_NET_DEBT_TO_EBITDA = 3.0
@@ -91,16 +94,22 @@ def _hard_filters(m: QualityMetrics) -> list[str]:
     failed: list[str] = []
     if m.years < MIN_YEARS:
         failed.append(f"Historia insuficiente ({m.years} FY < {MIN_YEARS})")
+    if m.roic_observations_5y < MIN_ROIC_OBSERVATIONS_5Y:
+        failed.append(f"ROIC con datos en {m.roic_observations_5y} de los ultimos 5 FY")
+    if m.fcf_observations_5y < MIN_FCF_OBSERVATIONS_5Y:
+        failed.append(f"FCF con datos en {m.fcf_observations_5y} de los ultimos 5 FY")
     if m.roic_median_5y is None or m.roic_median_5y < MIN_ROIC_MEDIAN_5Y:
         shown = "s/d" if m.roic_median_5y is None else f"{m.roic_median_5y:.0%}"
         failed.append(f"ROIC mediano 5a {shown} < {MIN_ROIC_MEDIAN_5Y:.0%}")
     if m.fcf_positive_last_5y is None or m.fcf_positive_last_5y < MIN_FCF_POSITIVE_LAST_5Y:
         failed.append(f"FCF positivo en {m.fcf_positive_last_5y or 0} de los ultimos 5 FY")
-    if m.net_debt_to_ebitda is None and (m.fcf_ltm is None or m.fcf_ltm <= 0):
+    if m.net_debt_to_ebitda is None:
         failed.append("EBITDA LTM <= 0")
     elif m.net_debt_to_ebitda is not None and m.net_debt_to_ebitda > MAX_NET_DEBT_TO_EBITDA:
         failed.append(f"Deuda neta/EBITDA {m.net_debt_to_ebitda:.1f}x > {MAX_NET_DEBT_TO_EBITDA:.0f}x")
-    if m.revenue_cagr_5y is not None and m.revenue_cagr_5y < MIN_REVENUE_CAGR_5Y:
+    if m.revenue_cagr_5y is None:
+        failed.append("Crecimiento de ingresos 5a sin datos")
+    elif m.revenue_cagr_5y < MIN_REVENUE_CAGR_5Y:
         failed.append(f"Ingresos cayendo (CAGR 5a {m.revenue_cagr_5y:.1%})")
     return failed
 
@@ -157,8 +166,9 @@ def score_metrics(m: QualityMetrics) -> QualityScore:
     tier = NOT_PASSING
     if not failed:
         tier = next(label for threshold, label in TIERS if score >= threshold)
-        if tier == "Maravillosa" and coverage < MIN_WEIGHT_COVERAGE:
-            tier = "Muy buena"  # no se corona con datos a medias
+        if tier == "Maravillosa" and coverage < MIN_TOP_TIER_COVERAGE:
+            tier = "Muy buena"
+            flags.append(f"Cobertura insuficiente para clase Maravillosa ({coverage:.0%} < {MIN_TOP_TIER_COVERAGE:.0%})")
 
     return QualityScore(
         score=round(score, 1),

@@ -36,6 +36,7 @@ WIKI_UNIVERSES = {
     "sp400": "https://en.wikipedia.org/wiki/List_of_S%26P_400_companies",
     "sp600": "https://en.wikipedia.org/wiki/List_of_S%26P_600_companies",
 }
+UNIVERSES = (*WIKI_UNIVERSES, "sp1500")
 _BROWSER_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 
 
@@ -79,6 +80,15 @@ class CachedSecEdgarClient(SecEdgarClient):
 def load_universe(name: str) -> list[dict]:
     """[{ticker, name, sector, industry}] de una lista S&P de Wikipedia.
     Los tickers se normalizan al formato de SEC/Yahoo (BRK.B -> BRK-B)."""
+    if name == "sp1500":
+        # Una sola fila por ticker; se conserva el sector del primer índice.
+        combined: dict[str, dict] = {}
+        for universe in WIKI_UNIVERSES:
+            for company in load_universe(universe):
+                combined.setdefault(company["ticker"], company)
+        return list(combined.values())
+    if name not in WIKI_UNIVERSES:
+        raise ValueError(f"Universo desconocido: {name}")
     import pandas as pd
 
     url = WIKI_UNIVERSES[name]

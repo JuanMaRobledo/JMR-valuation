@@ -44,6 +44,7 @@ class MultipleSnapshot:
 @dataclass(frozen=True)
 class ValuationSnapshot:
     price: float
+    price_as_of: str  # fecha de la cotización, no de la generación del reporte
     market_cap: float
     fcf_yield: float | None
     pe: float | None
@@ -217,6 +218,7 @@ def value_snapshot(s: AnnualSeries, prices: list[tuple[str, float]],
     ltm_fcf = ltm["fcf"]
     return ValuationSnapshot(
         price=round(price, 2),
+        price_as_of=prices[-1][0],
         market_cap=market_cap,
         fcf_yield=(ltm_fcf / market_cap) if ltm_fcf is not None else None,
         pe=pe.current,

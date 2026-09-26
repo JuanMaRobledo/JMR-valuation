@@ -632,7 +632,7 @@ def main() -> None:
     col4.metric("Ajuste EBIT (leasing/I+D)", f"{report.ebit_adjustment:+,.1f}")
 
     st.markdown(f"#### Precio objetivo ponderado -- tipo *{report.blend.company_type}* "
-                "(DCF + los 5 multiplos, pesados segun el tipo de empresa)")
+                "(combina DCF de hoy y precios por múltiplos a 3 años; los pesos son criterios del modelo JMR)")
     blend = report.blend
     bcol1, bcol2, bcol3, bcol4 = st.columns(4)
     bcol1.metric("Ponderado -- Conservador", f"{blend.weighted_price_by_scenario['Conservador']:,.2f}",
@@ -641,7 +641,31 @@ def main() -> None:
                  delta=f"CAGR 3a {blend.cagr_3y_by_scenario['Base']:+.1%}")
     bcol3.metric("Ponderado -- Optimista", f"{blend.weighted_price_by_scenario['Optimista']:,.2f}",
                  delta=f"CAGR 3a {blend.cagr_3y_by_scenario['Optimista']:+.1%}")
-    bcol4.metric(f"Precio con MOS ({inputs.margin_of_safety:.0%})", f"{blend.mos_price:,.2f}")
+    bcol4.metric(f"MOS sobre ponderado Base (horizontes mixtos) ({inputs.margin_of_safety:.0%})", f"{blend.mos_price:,.2f}")
+
+    st.markdown("##### Análisis individual por método (escenario Base)")
+    st.caption("El ponderado Base determina el umbral principal. El DCF es valor presente; "
+               "los múltiplos son objetivos FY+3. Los márgenes individuales usan la cotización disponible.")
+    per_method = [{
+        "Método": "Ponderado Base (principal)", "Peso": 1.0,
+        "Valor base": blend.weighted_price_by_scenario["Base"],
+        "MOS vs precio actual": (1 - inputs.current_price / blend.weighted_price_by_scenario["Base"]
+                                 if inputs.current_price > 0 else None),
+        "Compra con MOS": blend.mos_price,
+        "Horizonte": "Mixto",
+    }]
+    for method, value in blend.method_base_values.items():
+        per_method.append({
+            "Método": method, "Peso": blend.weights[method], "Valor base": value,
+            "MOS vs precio actual": blend.method_mos_vs_current[method],
+            "Compra con MOS": blend.method_mos_price[method],
+            "Horizonte": "Presente" if method == "DCF Damodaran" else "FY+3",
+        })
+    individual_df = pd.DataFrame(per_method).set_index("Método")
+    st.dataframe(individual_df.style.format({
+        "Peso": "{:.0%}", "Valor base": "{:,.2f}",
+        "MOS vs precio actual": "{:.1%}", "Compra con MOS": "{:,.2f}",
+    }, na_rep="—"), width="stretch")
 
     with st.expander("Pesos usados y bandas de precio de compra"):
         st.caption("Si excluiste algun metodo (en 'Precio objetivo ponderado' de la barra lateral), "

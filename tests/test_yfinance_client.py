@@ -23,7 +23,7 @@ def test_get_market_snapshot_reads_price_and_market_cap(monkeypatch):
     fake = _FakeTicker({
         "currentPrice": 263.5, "marketCap": 104_741_249_024, "sharesOutstanding": 397_500_000,
         "enterpriseValue": 100_360_921_088, "totalDebt": 7_077_000_192, "totalCash": 5_625_999_872,
-        "beta": 1.417,
+        "beta": 1.417, "regularMarketTime": 1758902400,
     })
     monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
 
@@ -33,6 +33,14 @@ def test_get_market_snapshot_reads_price_and_market_cap(monkeypatch):
     assert snap.current_price == pytest.approx(263.5)
     assert snap.market_cap == pytest.approx(104_741_249_024)
     assert snap.shares_outstanding == pytest.approx(397_500_000)
+    assert snap.price_as_of == "2025-09-26"
+
+
+def test_market_snapshot_rejects_price_without_market_date(monkeypatch):
+    fake = _FakeTicker({"currentPrice": 100, "marketCap": 1000, "sharesOutstanding": 10})
+    monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
+    with pytest.raises(YFinanceError, match="fecha verificable"):
+        get_market_snapshot("TEST")
 
 
 def test_get_market_snapshot_raises_clear_error_without_price(monkeypatch):
@@ -47,6 +55,7 @@ def test_get_peer_multiples_computes_ratios_from_market_cap_and_ev(monkeypatch):
         "shortName": "Adobe Inc.", "marketCap": 1000.0, "enterpriseValue": 950.0,
         "ebitda": 100.0, "freeCashflow": 80.0, "operatingCashflow": 90.0,
         "grossMargins": 0.9, "forwardPE": 10.0, "trailingPE": 12.0, "operatingMargins": 0.35,
+        "interestExpense": 10.0, "effectiveTaxRate": 0.25,
     }
     financials = pd.DataFrame(
         {pd.Timestamp("2025-01-01"): [280.0], pd.Timestamp("2024-01-01"): [240.0],
@@ -59,7 +68,7 @@ def test_get_peer_multiples_computes_ratios_from_market_cap_and_ev(monkeypatch):
     result = get_peer_multiples("ADBE")
     assert result.company_name == "Adobe Inc."
     assert result.ev_ebitda == pytest.approx(950.0 / 100.0)
-    assert result.ev_fcf == pytest.approx(950.0 / 80.0)
+    assert result.ev_fcf == pytest.approx(950.0 / (80.0 + 10.0 * 0.75))
     assert result.p_fcf == pytest.approx(1000.0 / 80.0)
     assert result.p_ocf == pytest.approx(1000.0 / 90.0)
     assert result.revenue_cagr_3y == pytest.approx((280.0 / 160.0) ** (1 / 3) - 1)
@@ -73,6 +82,12 @@ def test_get_peer_multiples_handles_missing_financials_gracefully(monkeypatch):
     result = get_peer_multiples("X")
     assert result.revenue_cagr_3y is None
     assert result.ev_ebitda is None
+
+
+def test_peer_ev_fcff_is_unavailable_without_interest_or_tax(monkeypatch):
+    fake = _FakeTicker({"enterpriseValue": 1000, "freeCashflow": 100, "totalDebt": 300})
+    monkeypatch.setattr("jmr_valuation.io.yfinance_client.yf.Ticker", lambda ticker: fake)
+    assert get_peer_multiples("TEST").ev_fcf is None
 
 
 def _history_df(rows: dict[str, float]) -> pd.DataFrame:

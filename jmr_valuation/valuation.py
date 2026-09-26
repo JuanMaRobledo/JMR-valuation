@@ -110,13 +110,20 @@ class ValuationReport:
                          f"target FY+3={fy3.total_target_price:>10,.2f}  "
                          f"retorno total={fy3.total_return:+.1%}")
         lines.append("")
-        lines.append(f"Precio objetivo ponderado (tipo: {self.blend.company_type}):")
+        lines.append(f"Precio objetivo ponderado DCF hoy + múltiplos FY+3 (tipo: {self.blend.company_type}):")
         for scenario in SCENARIOS:
             price = self.blend.weighted_price_by_scenario[scenario]
             cagr = self.blend.cagr_3y_by_scenario[scenario]
-            lines.append(f"  {scenario:<12} ponderado = {price:>10,.2f}   CAGR 3a = {cagr:+.1%}")
-        lines.append(f"  Precio con margen de seguridad ({self.inputs.margin_of_safety:.0%}): "
+            lines.append(f"  {scenario:<12} promedio mixto = {price:>10,.2f}   CAGR ilustrativo = {cagr:+.1%}")
+        lines.append(f"  Precio con margen de seguridad sobre ponderado Base (DCF hoy + múltiplos FY+3) ({self.inputs.margin_of_safety:.0%}): "
                      f"{self.blend.mos_price:,.2f}")
+        lines.append("  Análisis por método (valor Base, MOS frente a precio actual, compra con MOS):")
+        for method, value in self.blend.method_base_values.items():
+            mos = self.blend.method_mos_vs_current[method]
+            mos_text = f"{mos:+.1%}" if mos is not None else "no disponible"
+            horizon = "presente" if method == "DCF Damodaran" else "FY+3"
+            lines.append(f"    {method:<14} {value:>10,.2f}   MOS={mos_text:>12}   "
+                         f"compra={self.blend.method_mos_price[method]:>10,.2f}   {horizon}")
         tiers = self.blend.buy_price_tiers
         lines.append(f"  Bandas de compra -- Value: {tiers.value_min:,.2f}-{tiers.value_max:,.2f}  "
                      f"Deep Value: {tiers.deep_value_min:,.2f}-{tiers.deep_value_max:,.2f}  "
@@ -259,19 +266,19 @@ def run_valuation(inputs: CompanyInputs) -> ValuationReport:
         )
         scenarios[scenario] = ScenarioResult(scenario=scenario, dcf=dcf_result, equity_bridge=bridge)
 
-        # 'Financials Multiples' arranca del ultimo anio fiscal CERRADO (Income
-        # Statement!K3), no del LTM -- a diferencia del DCF ('Valuation output'),
-        # que si usa LTM. Es una decision de diseño del modelo (comparar contra
-        # periodos auditados completos en vez de LTM), no un desprolijo -- ver
-        # conversacion. Msmo criterio de crecimiento/margen igual se reusa del DCF.
+        # Los múltiplos y el DCF parten de la misma fecha y base LTM.
+        # Proyectar desde el último FY cerrado daba ventas FY+1 distintas
+        # para el mismo crecimiento y mezclaba horizontes al ponderarlos.
         multiples_by_scenario[scenario] = project_financials_multiples(
-            base_year_revenue=inputs.revenue_prior_10k, base_year_shares_diluted=inputs.shares_outstanding,
+            base_year_revenue=inputs.revenue_ltm, base_year_shares_diluted=inputs.shares_outstanding,
             base_year_dividend_per_share=inputs.dividend_per_share_ltm,
             year_projections=dcf_result.years[:3], ratios=ratios,
         )
 
     relative: dict[str, dict[str, object]] = {}
     anchor_multiples: dict[str, float] = {}
+    ev_bridge = (inputs.book_value_debt_ltm + inputs.minority_interests + value_of_options
+                 - inputs.cash_ltm - inputs.cross_holdings_ltm)
     for metric_name, (attr, field_prefix) in RELATIVE_METRICS.items():
         anchor_multiple = _anchor_multiple(inputs, field_prefix)
         anchor_multiples[metric_name] = anchor_multiple
@@ -282,6 +289,8 @@ def run_valuation(inputs: CompanyInputs) -> ValuationReport:
                 scenario=scenario, historical_median_multiple=anchor_multiple,
                 metric_fy1=getattr(fm_years[0], attr), metric_fy2=getattr(fm_years[1], attr),
                 metric_fy3=getattr(fm_years[2], attr), shares_or_ev_divisor=inputs.shares_outstanding,
+                projected_shares=tuple(y.shares_diluted for y in fm_years),
+                ev_to_equity_adjustment=ev_bridge if metric_name.startswith("EV/") else 0.0,
                 cumulative_dividends_fy1=fm_years[0].cumulative_dividends_per_share,
                 cumulative_dividends_fy2=fm_years[1].cumulative_dividends_per_share,
                 cumulative_dividends_fy3=fm_years[2].cumulative_dividends_per_share,
@@ -294,7 +303,8 @@ def run_valuation(inputs: CompanyInputs) -> ValuationReport:
         fy3_base = by_scenario["Base"].years[-1]
         sensitivity[metric_name] = sensitivity_matrix(
             base_multiple_fy3=fy3_base.multiple, base_metric_fy3=fy3_base.metric,
-            shares_or_ev_divisor=inputs.shares_outstanding,
+            shares_or_ev_divisor=multiples_by_scenario["Base"][2].shares_diluted,
+            ev_to_equity_adjustment=ev_bridge if metric_name.startswith("EV/") else 0.0,
         )
 
     values_by_scenario = {

@@ -1,10 +1,11 @@
-"""Combina el DCF y los 5 multiplos en un precio objetivo ponderado por tipo de empresa.
+"""Precio ponderado que combina DCF presente y 5 precios por múltiplos FY+3.
 
 Replica la hoja 'Resumen de Valoracion' (filas 5-19): cada metodo pesa distinto
-segun el tipo de negocio -- una financiera no se valora igual que un REIT o una
-empresa de software -- y el resultado final tambien fija bandas de precio de
-compra (Value / Deep Value / Valoracion historica) y un precio con margen de
-seguridad.
+segun el tipo de negocio. Los pesos son heurísticos del Modelo JMR, no una
+tabla publicada por Damodaran; el promedio mezcla horizontes temporales y
+se usa por decisión del usuario como referencia para el margen de seguridad. Las bandas
+de compra y ese margen parten del ponderado Base. Se muestran por separado los
+márgenes del DCF y de cada múltiplo, ya que mezclan horizontes temporales.
 """
 from __future__ import annotations
 
@@ -98,8 +99,11 @@ class BlendResult:
     weights: dict[str, float]
     weighted_price_by_scenario: dict[str, float]   # Conservador / Base / Optimista
     cagr_3y_by_scenario: dict[str, float]
-    mos_price: float                                # precio ponderado Base con margen de seguridad
-    buy_price_tiers: BuyPriceTiers                   # basadas en el ponderado Base (D12 en el Excel)
+    mos_price: float                                # ponderado Base con margen de seguridad
+    buy_price_tiers: BuyPriceTiers                   # basadas en el ponderado Base
+    method_base_values: dict[str, float]             # valor de cada método en escenario Base
+    method_mos_price: dict[str, float]               # precio de compra por método
+    method_mos_vs_current: dict[str, float | None]   # margen implícito frente a cotización disponible
 
 
 def weighted_target_price(
@@ -155,10 +159,21 @@ def run_blend(
     cagr_by_scenario = {
         scenario: cagr_3y(price, current_price) for scenario, price in weighted_by_scenario.items()
     }
+    # El ponderado Base es la referencia de compra elegida por el usuario.
+    # DCF presente y multiples FY+3 mezclan horizontes: mostrar ese limite.
     base_price = weighted_by_scenario["Base"]
+    if base_price <= 0:
+        raise ValueError("El ponderado Base debe ser positivo para calcular margen de seguridad")
 
+    method_values = values_by_scenario["Base"].as_dict()
     return BlendResult(
         company_type=company_type, weights=weights, weighted_price_by_scenario=weighted_by_scenario,
         cagr_3y_by_scenario=cagr_by_scenario, mos_price=margin_of_safety_price(base_price, margin_of_safety),
         buy_price_tiers=buy_price_tiers(base_price),
+        method_base_values=method_values,
+        method_mos_price={m: margin_of_safety_price(v, margin_of_safety) for m, v in method_values.items()},
+        method_mos_vs_current={
+            m: (1 - current_price / v if v > 0 and current_price > 0 else None)
+            for m, v in method_values.items()
+        },
     )

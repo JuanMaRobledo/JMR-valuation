@@ -30,15 +30,12 @@ Criterios de crecimiento (Damodaran, "Estimating growth"): el propio
 Damodaran advierte que el crecimiento historico es un mal predictor
 justamente para empresas jovenes/de alto crecimiento -- la volatilidad de su
 historia (ADBE desacelerando de 17% a 6% es un caso de manual) lo vuelve poco
-confiable. Sin acceso a estimados de analistas (fuente que no tenemos), su
-alternativa es el CRECIMIENTO FUNDAMENTAL: g = Reinvestment Rate x ROIC (la
-misma formula que ya usamos para el crecimiento terminal, aca aplicada
-tambien al crecimiento del negocio real). Por eso el conjunto de candidatos
-para growth_year1 combina TRES fuentes, cada una un metodo valido segun
-Damodaran, no una sola:
+confiable. El crecimiento fundamental g = Reinvestment Rate x ROIC de
+Damodaran corresponde a EBIT operativo; no se mezcla directamente con una
+tasa de crecimiento de ingresos. Por eso growth_year1 de revenue usa:
   1. Historico combinado (LTM/CAGR 3y/5y/largo plazo, pesos de siempre).
   2. Promedio de industria (US + Global).
-  3. Crecimiento fundamental = Reinvestment Rate LTM x ROIC LTM, con
+Por separado se informa crecimiento fundamental = Reinvestment Rate LTM x ROIC LTM, con
      Reinvestment Rate = Net CapEx (CapEx - D&A) / EBIT(1-t) y
      ROIC = EBIT(1-t) / Capital Invertido (equity + deuda - caja, book value).
      Sin datos confiables de capital de trabajo (mismo motivo que
@@ -50,8 +47,8 @@ Damodaran, no una sola:
      CapEx ~0 o negativo) puede dar un crecimiento fundamental negativo que
      no refleja que en realidad reinvierte fuerte, solo que lo hace via I+D
      y no via CapEx (ver `FundamentalGrowthInputs`).
-Base mezcla las 3 fuentes; Conservador/Optimista toman el minimo/maximo del
-conjunto completo (los 4 numeros historicos + industria + fundamental, ver
+Base mezcla las fuentes de ingresos; Conservador/Optimista toman el minimo/maximo del
+conjunto (los 4 numeros historicos + industria, ver
 `run_growth_engine`).
 """
 from __future__ import annotations
@@ -220,7 +217,7 @@ class GrowthEngineResult:
     industry_growth_global: float
     combined_historical: float    # mezcla de Base (LTM/CAGR3/CAGR5/CAGRlargo) -- solo se usa sin peers
     peer_growth: PeerGrowthBenchmark | None   # cuartiles de peers usados, si se paso `comps`
-    fundamental: FundamentalGrowthResult | None   # None si no se pudo calcular (ver fundamental_growth_rate)
+    fundamental: FundamentalGrowthResult | None   # diagnostico EBIT, no tasa de crecimiento de revenue
     growth_year1: float           # resultado para el escenario pedido
 
 
@@ -235,7 +232,7 @@ def run_growth_engine(
     Conservador = AVG(CAGR 3y, Q1 peers), Base = AVG(CAGR 5y, mediana peers),
     Optimista = AVG(CAGR largo plazo, Q3 peers). Sin `peer_growth` (no se
     pasaron peers), cae al criterio anterior -- min/blend/max de
-    LTM/CAGR3/CAGR5/CAGRlargo/industria Damodaran/fundamental -- que sigue
+    LTM/CAGR3/CAGR5/CAGRlargo/industria Damodaran -- que sigue
     siendo matematicamente monotono por construccion.
 
     Salvaguarda: la formula de peers NO garantiza Conservador<=Base<=Optimista
@@ -276,22 +273,15 @@ def run_growth_engine(
             ltm_growth * w.weight_ltm + cagr_3y * w.weight_cagr3
             + cagr_5y * w.weight_cagr5 + cagr_long * w.weight_cagr_long
         )
+        # El crecimiento fundamental = reinversion x ROIC es crecimiento de
+        # EBIT operativo, NO de ingresos. Se conserva en el resultado como
+        # control economico; no debe mezclarse con tasas de revenue. El DCF
+        # respalda el crecimiento de revenue con reinversion / sales-to-capital.
         candidates = [ltm_growth, cagr_3y, cagr_5y, cagr_long, industry_avg]
-        if fundamental is not None:
-            candidates.append(fundamental.fundamental_growth)
-            base_blend = (
-                combined_historical * (1 - w.industry_growth_weight - w.fundamental_growth_weight)
-                + industry_avg * w.industry_growth_weight
-                + fundamental.fundamental_growth * w.fundamental_growth_weight
-            )
-        else:
-            # Sin fundamental (EBIT(1-t) o capital invertido no positivos): se
-            # reparte su peso proporcionalmente entre historico e industria, no
-            # se inventa un tercer numero.
-            total = (1 - w.fundamental_growth_weight)
-            hist_share = (1 - w.industry_growth_weight - w.fundamental_growth_weight) / total
-            industry_share = w.industry_growth_weight / total
-            base_blend = combined_historical * hist_share + industry_avg * industry_share
+        total = 1 - w.fundamental_growth_weight
+        hist_share = (1 - w.industry_growth_weight - w.fundamental_growth_weight) / total
+        industry_share = w.industry_growth_weight / total
+        base_blend = combined_historical * hist_share + industry_avg * industry_share
         raw = {"Conservador": min(candidates), "Base": base_blend, "Optimista": max(candidates)}
 
     # Clamp de seguridad (ver docstring): no-op si ya viene ordenado.

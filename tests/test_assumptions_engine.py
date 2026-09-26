@@ -134,7 +134,7 @@ def test_fundamental_growth_rate_capitalizes_rd_and_can_turn_negative_net_capex_
     assert result.reinvestment_rate == pytest.approx(net_capex / ebit_after_tax)
 
 
-def test_growth_engine_includes_fundamental_growth_as_a_third_candidate():
+def test_fundamental_ebit_growth_is_reported_but_not_blended_into_sales_growth():
     series = _series()
     fundamental_inputs = _fundamental_inputs()
     result = run_growth_engine(
@@ -146,15 +146,15 @@ def test_growth_engine_includes_fundamental_growth_as_a_third_candidate():
 
     w = BASE_BLEND_WEIGHTS
     industry_avg = (result.industry_growth_us + result.industry_growth_global) / 2
+    total = 1 - w.fundamental_growth_weight
     expected_base = (
-        result.combined_historical * (1 - w.industry_growth_weight - w.fundamental_growth_weight)
-        + industry_avg * w.industry_growth_weight
-        + result.fundamental.fundamental_growth * w.fundamental_growth_weight
+        result.combined_historical * (1 - w.industry_growth_weight - w.fundamental_growth_weight) / total
+        + industry_avg * w.industry_growth_weight / total
     )
     assert result.growth_year1 == pytest.approx(expected_base)
 
 
-def test_growth_engine_conservador_and_optimista_are_min_and_max_including_fundamental():
+def test_revenue_scenarios_ignore_fundamental_ebit_growth():
     series = _series()
     fundamental_inputs = _fundamental_inputs()
     conservador = run_growth_engine(
@@ -166,7 +166,7 @@ def test_growth_engine_conservador_and_optimista_are_min_and_max_including_funda
     industry_avg = (conservador.industry_growth_us + conservador.industry_growth_global) / 2
     candidates = [
         conservador.ltm_growth, conservador.cagr_3y, conservador.cagr_5y, conservador.cagr_long,
-        industry_avg, conservador.fundamental.fundamental_growth,
+        industry_avg,
     ]
     assert conservador.growth_year1 == pytest.approx(min(candidates))
     assert optimista.growth_year1 == pytest.approx(max(candidates))

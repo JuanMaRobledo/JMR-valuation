@@ -50,11 +50,12 @@ from jmr_valuation.models.relative import ScenarioMultipleInputs, project_target
 # con el multiplo ancla). Mismos 5 metodos que las hojas EV/FCFF, P/OCF, P/E,
 # P/FCFE, EV/EBITDA del Excel original -- el ancla ahora es la mediana de los
 # PEERS (no el propio historico de precios de la empresa, que no tenemos).
+# P/FCFE se omite: Yahoo P/FCF no incorpora endeudamiento neto y no puede
+# presentarse honestamente como múltiplo del FCFE proyectado.
 RELATIVE_METRICS = {
     "EV/FCFF": ("fcff", "ev_fcf"),
     "P/OCF": ("ocf", "p_ocf"),
     "P/E": ("net_income", "pe"),
-    "P/FCFE": ("fcfe", "p_fcf"),
     "EV/EBITDA": ("ebitda", "ev_ebitda"),
 }
 
@@ -70,7 +71,7 @@ def run(
 
     print(f"[2/5] Consultando precio/market cap de {ticker} en yfinance...")
     market = get_market_snapshot(ticker)
-    print(f"      Precio actual: {market.current_price:,.2f}")
+    print(f"      Precio de mercado al {market.price_as_of}: {market.current_price:,.2f}")
 
     if riskfree_rate is None:
         riskfree_rate = current_riskfree_rate()
@@ -186,7 +187,7 @@ def run(
         relative = None
         if comps is not None:
             fm_years = project_financials_multiples(
-                base_year_revenue=series.revenue[-1], base_year_shares_diluted=market.shares_outstanding,
+                base_year_revenue=series.ltm_revenue, base_year_shares_diluted=market.shares_outstanding,
                 base_year_dividend_per_share=company_inputs.dividend_per_share_ltm,
                 year_projections=dcf_result.years[:3], ratios=historical_ratios,
             )
@@ -199,6 +200,11 @@ def run(
                     scenario=scenario, historical_median_multiple=anchor,
                     metric_fy1=getattr(fm_years[0], attr), metric_fy2=getattr(fm_years[1], attr),
                     metric_fy3=getattr(fm_years[2], attr), shares_or_ev_divisor=market.shares_outstanding,
+                    projected_shares=tuple(y.shares_diluted for y in fm_years),
+                    ev_to_equity_adjustment=(
+                        debt_ltm + minority_interests - cash_ltm
+                        if metric_name.startswith("EV/") else 0.0
+                    ),
                     cumulative_dividends_fy1=fm_years[0].cumulative_dividends_per_share,
                     cumulative_dividends_fy2=fm_years[1].cumulative_dividends_per_share,
                     cumulative_dividends_fy3=fm_years[2].cumulative_dividends_per_share,
@@ -213,7 +219,7 @@ def run(
     sh = open_target_sheet(client, sheet_id)
     write_full_valuation(
         sh, ticker=ticker, company_name=series.company_name, current_price=market.current_price,
-        series=series, comps=comps, scenarios=scenarios,
+        series=series, comps=comps, scenarios=scenarios, price_as_of=market.price_as_of,
     )
     print(f"      Listo: {sh.url}")
 
