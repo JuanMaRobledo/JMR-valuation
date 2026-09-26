@@ -2,9 +2,9 @@
 
 Replica la hoja 'Resumen de Valoracion' (filas 5-19): cada metodo pesa distinto
 segun el tipo de negocio. Los pesos son heurísticos del Modelo JMR, no una
-tabla publicada por Damodaran; el promedio mezcla horizontes temporales y no
+tabla publicada por Damodaran; el promedio mezcla horizontes temporales y
 se usa por decisión del usuario como referencia para el margen de seguridad. Las bandas
-de compra y ese margen parten del ponderado Base. Mostrar por separado los
+de compra y ese margen parten del ponderado Base. Se muestran por separado los
 márgenes del DCF y de cada múltiplo, ya que mezclan horizontes temporales.
 """
 from __future__ import annotations
