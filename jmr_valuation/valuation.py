@@ -117,6 +117,13 @@ class ValuationReport:
             lines.append(f"  {scenario:<12} promedio mixto = {price:>10,.2f}   CAGR ilustrativo = {cagr:+.1%}")
         lines.append(f"  Precio con margen de seguridad sobre ponderado Base (DCF hoy + múltiplos FY+3) ({self.inputs.margin_of_safety:.0%}): "
                      f"{self.blend.mos_price:,.2f}")
+        lines.append("  Análisis por método (valor Base, MOS frente a precio actual, compra con MOS):")
+        for method, value in self.blend.method_base_values.items():
+            mos = self.blend.method_mos_vs_current[method]
+            mos_text = f"{mos:+.1%}" if mos is not None else "no disponible"
+            horizon = "presente" if method == "DCF Damodaran" else "FY+3"
+            lines.append(f"    {method:<14} {value:>10,.2f}   MOS={mos_text:>12}   "
+                         f"compra={self.blend.method_mos_price[method]:>10,.2f}   {horizon}")
         tiers = self.blend.buy_price_tiers
         lines.append(f"  Bandas de compra -- Value: {tiers.value_min:,.2f}-{tiers.value_max:,.2f}  "
                      f"Deep Value: {tiers.deep_value_min:,.2f}-{tiers.deep_value_max:,.2f}  "
