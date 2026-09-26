@@ -97,6 +97,8 @@ def weighted_average_erp(country_revenue_weights: dict[str, float]) -> float:
     """K19/K33: ERP ponderado por ingresos entre paises/regiones (G6:K19).
 
     country_revenue_weights: {nombre_de_pais: ingresos_en_ese_pais}.
+    Usa la tabla de países de enero de 2026, cuyo ERP total ya incorpora
+    la prima de mercado de esa fecha; no se suma la prima de septiembre.
     """
     total_revenue = sum(country_revenue_weights.values())
     if total_revenue == 0:

@@ -1,193 +1,179 @@
 country,rating,default_spread,total_erp
-Abu Dhabi,Aa2,0.0042,=$B$2+E6
-Albania,Ba3,0.0306,=$B$2+E7
-Algeria,NR,0.0383,=$B$2+E8
-Andorra (Principality of),Baa1,0.0136,=$B$2+E9
-Angola,B3,0.0552,=$B$2+E10
-Anguilla,NR,0.04915183026184869,=$B$2+E11
-Antigua & Barbuda,NR,0.02778594186678078,=$B$2+E12
-Argentina,Caa1,0.0637,=$B$2+E13
-Armenia,Ba3,0.0306,=$B$2+E14
-Aruba,Baa3,0.0187,=$B$2+E15
-Australia,Aaa,0,=$B$2+E16
-Austria,Aa1,0.0023,=$B$2+E17
-Azerbaijan,Baa3,0.0187,=$B$2+E18
-Bahamas,B1,0.0383,=$B$2+E19
-Bahrain,B2,0.0467,=$B$2+E20
-Bangladesh,B2,0.0467,=$B$2+E21
-Barbados,B2,0.0467,=$B$2+E22
-Belarus,C,0.175,=$B$2+E23
-Belgium,Aa3,0.0051,=$B$2+E24
-Belize,Caa1,0.0637,=$B$2+E25
-Benin,B1,0.0383,=$B$2+E26
-Bermuda,A2,0.0072,=$B$2+E27
-Bolivia,Ca,0.102,=$B$2+E28
-Bosnia and Herzegovina,B3,0.0552,=$B$2+E29
-Botswana,Baa1,0.0136,=$B$2+E30
-Brazil,Ba1,0.0213,=$B$2+E31
-British Virgin Islands,NR,0.04915183026184869,=$B$2+E32
-Brunei,NR,0.0051,=$B$2+E33
-Bulgaria,Baa1,0.0136,=$B$2+E34
-Burkina Faso,Caa1,0.0637,=$B$2+E35
-Cambodia,B2,0.0467,=$B$2+E36
-Cameroon,Caa1,0.0637,=$B$2+E37
-Canada,Aaa,0,=$B$2+E38
-Cape Verde,B2,0.0467,=$B$2+E39
-Cayman Islands,NR,0.0051,=$B$2+E40
-Channel Islands,NR,0.006804264459189996,=$B$2+E41
-Chile,A2,0.0072,=$B$2+E42
-China,A1,0.006,=$B$2+E43
-Colombia,Baa3,0.0187,=$B$2+E44
-Congo (Democratic Republic of),B3,0.0552,=$B$2+E45
-Congo (Republic of),Caa2,0.0765,=$B$2+E46
-Cook Islands,B1,0.0383,=$B$2+E47
-Costa Rica,Ba2,0.0256,=$B$2+E48
-Croatia,A3,0.0102,=$B$2+E49
-Cuba,Ca,0.102,=$B$2+E50
-Curaçao,NR,0.02778594186678078,=$B$2+E51
-Cyprus,A3,0.0102,=$B$2+E52
-Czech Republic,Aa3,0.0051,=$B$2+E53
-Denmark,Aaa,0,=$B$2+E54
-Dominican Republic,Ba2,0.0256,=$B$2+E55
-Ecuador,Caa3,0.085,=$B$2+E56
-Egypt,Caa1,0.0637,=$B$2+E57
-El Salvador,B3,0.0552,=$B$2+E58
-Estonia,A1,0.006,=$B$2+E59
-Ethiopia,Caa2,0.0765,=$B$2+E60
-Falkland Islands,NR,0.02778594186678078,=$B$2+E61
-Fiji,B1,0.0383,=$B$2+E62
-Finland,Aa1,0.0023,=$B$2+E63
-France,Aa3,0.0051,=$B$2+E64
-French Guiana,NR,0.02778594186678078,=$B$2+E65
-Gabon,Caa2,0.0765,=$B$2+E66
-Gambia,NR,0.0467,=$B$2+E67
-Georgia,Ba2,0.0256,=$B$2+E68
-Germany,Aaa,0,=$B$2+E69
-Ghana,Caa1,0.0637,=$B$2+E70
-Gibraltar,NR,0.006804264459189996,=$B$2+E71
-Greece,Baa3,0.0187,=$B$2+E72
-Greenland,Aaa,0,=$B$2+E73
-Guatemala,Ba1,0.0213,=$B$2+E74
-Guernsey (States of),A1,0.006,=$B$2+E75
-Guinea,NR,0.0765,=$B$2+E76
-Guinea-Bissau,NR,0.0637,=$B$2+E77
-Guyana,NR,0.0136,=$B$2+E78
-Haiti,NR,0.085,=$B$2+E79
-Honduras,B1,0.0383,=$B$2+E80
-Hong Kong,Aa3,0.0051,=$B$2+E81
-Hungary,Baa2,0.0162,=$B$2+E82
-Iceland,A1,0.006,=$B$2+E83
-India,Baa3,0.0187,=$B$2+E84
-Indonesia,Baa2,0.0162,=$B$2+E85
-Iran,NR,0.0637,=$B$2+E86
-Iraq,Caa1,0.0637,=$B$2+E87
-Ireland,Aa3,0.0051,=$B$2+E88
-Isle of Man,Aa3,0.0051,=$B$2+E89
-Israel,Baa1,0.0136,=$B$2+E90
-Italy,Baa2,0.0162,=$B$2+E91
-Ivory Coast,Ba2,0.0256,=$B$2+E92
-Jamaica,Ba3,0.0306,=$B$2+E93
-Japan,A1,0.006,=$B$2+E94
-Jersey (States of),Aa3,0.0051,=$B$2+E95
-Jordan,Ba3,0.0306,=$B$2+E96
-Kazakhstan,Baa1,0.0136,=$B$2+E97
-Kenya,Caa1,0.0637,=$B$2+E98
-"Korea, D.P.R.",NR,0.102,=$B$2+E99
-Kuwait,A1,0.006,=$B$2+E100
-Kyrgyzstan,B3,0.0552,=$B$2+E101
-Laos,Caa2,0.0765,=$B$2+E102
-Latvia,A3,0.0102,=$B$2+E103
-Lebanon,C,0.175,=$B$2+E104
-Liberia,NR,0.0765,=$B$2+E105
-Libya,NR,0.0256,=$B$2+E106
-Liechtenstein,Aaa,0,=$B$2+E107
-Lithuania,A2,0.0072,=$B$2+E108
-Luxembourg,Aaa,0,=$B$2+E109
-Macau,Aa3,0.0051,=$B$2+E110
-Macedonia,Ba3,0.0306,=$B$2+E111
-Madagascar,NR,0.0552,=$B$2+E112
-Malawi,NR,0.085,=$B$2+E113
-Malaysia,A3,0.0102,=$B$2+E114
-Maldives,Caa2,0.0765,=$B$2+E115
-Mali,Caa2,0.0765,=$B$2+E116
-Malta,A2,0.0072,=$B$2+E117
-Martinique,NR,0.04915183026184869,=$B$2+E118
-Mauritius,Baa3,0.0187,=$B$2+E119
-Mexico,Baa2,0.0162,=$B$2+E120
-Moldova,B3,0.0552,=$B$2+E121
-Monaco,NR,0,=$B$2+E122
-Mongolia,B1,0.0383,=$B$2+E123
-Montenegro,B1,0.0383,=$B$2+E124
-Montserrat,Baa3,0.0187,=$B$2+E125
-Morocco,Ba1,0.0213,=$B$2+E126
-Mozambique,Caa3,0.085,=$B$2+E127
-Myanmar,NR,0.102,=$B$2+E128
-Namibia,B1,0.0383,=$B$2+E129
-Nepal,Ba3,0.0306,=$B$2+E130
-Netherlands,Aaa,0,=$B$2+E131
-Netherlands Antilles,NR,0.04915183026184869,=$B$2+E132
-New Zealand,Aaa,0,=$B$2+E133
-Nicaragua,B2,0.0467,=$B$2+E134
-Niger,Caa3,0.085,=$B$2+E135
-Nigeria,B3,0.0552,=$B$2+E136
-Norway,Aaa,0,=$B$2+E137
-Oman,Baa3,0.0187,=$B$2+E138
-Pakistan,Caa1,0.0637,=$B$2+E139
-Palestinian Authority,NR,0.01317260894535964,=$B$2+E140
-Panama,Baa3,0.0187,=$B$2+E141
-Papua New Guinea,B2,0.0467,=$B$2+E142
-Paraguay,Baa3,0.0187,=$B$2+E143
-Peru,Baa1,0.0136,=$B$2+E144
-Philippines,Baa2,0.0162,=$B$2+E145
-Poland,A2,0.0072,=$B$2+E146
-Portugal,A3,0.0102,=$B$2+E147
-Qatar,Aa2,0.0042,=$B$2+E148
-Ras Al Khaimah (Emirate of),A3,0.0102,=$B$2+E149
-Reunion,NR,0.05067230446817149,=$B$2+E150
-Romania,Baa3,0.0187,=$B$2+E151
-Russia,NR,0.0256,=$B$2+E152
-Rwanda,B2,0.0467,=$B$2+E153
-Saint Lucia,NR,0.04915183026184869,=$B$2+E154
-Saudi Arabia,Aa3,0.0051,=$B$2+E155
-Senegal,Caa1,0.0637,=$B$2+E156
-Serbia,Ba2,0.0256,=$B$2+E157
-Sharjah,Ba1,0.0213,=$B$2+E158
-Sierra Leone,NR,0.0552,=$B$2+E159
-Singapore,Aaa,0,=$B$2+E160
-Slovakia,A3,0.0102,=$B$2+E161
-Slovenia,A3,0.0102,=$B$2+E162
-Solomon Islands,Caa1,0.0637,=$B$2+E163
-Somalia,NR,0.085,=$B$2+E164
-South Africa,Ba2,0.0256,=$B$2+E165
-South Korea,Aa2,0.0042,=$B$2+E166
-Spain,A3,0.0102,=$B$2+E167
-Sri Lanka,Ca,0.102,=$B$2+E168
-St. Maarten,Ba2,0.0256,=$B$2+E169
-St. Vincent & the Grenadines,B3,0.0552,=$B$2+E170
-Sudan,NR,0.175,=$B$2+E171
-Suriname,Caa1,0.0637,=$B$2+E172
-Swaziland,B2,0.0467,=$B$2+E173
-Sweden,Aaa,0,=$B$2+E174
-Switzerland,Aaa,0,=$B$2+E175
-Syria,NR,0.102,=$B$2+E176
-Taiwan,Aa3,0.0051,=$B$2+E177
-Tajikistan,B3,0.0552,=$B$2+E178
-Tanzania,B1,0.0383,=$B$2+E179
-Thailand,Baa1,0.0136,=$B$2+E180
-Togo,B3,0.0552,=$B$2+E181
-Trinidad &' Tobago,Ba2,0.0256,=$B$2+E182
-Tunisia,Caa1,0.0637,=$B$2+E183
-Turkey,Ba3,0.0306,=$B$2+E184
-Turks & Caicos Islands,NR,0.04915183026184869,=$B$2+E185
-Uganda,B3,0.0552,=$B$2+E186
-Ukraine,Ca,0.102,=$B$2+E187
-United Arab Emirates,Aa2,0.0042,=$B$2+E188
-United Kingdom,Aa3,0.0051,=$B$2+E189
-United States,Aa1,0.0023,=$B$2+E190
-Uruguay,Baa1,0.0136,=$B$2+E191
-Uzbekistan,Ba3,0.0306,=$B$2+E192
-Venezuela,C,0.175,=$B$2+E193
-Vietnam,Ba2,0.0256,=$B$2+E194
-Yemen,NR,0.102,=$B$2+E195
-Zambia,Caa2,0.0765,=$B$2+E196
-Zimbabwe,NR,0.0765,=$B$2+E197
+"Abu Dhabi","Aa2",0.0042,0.0487
+"Albania","Ba3",0.0306,0.0889
+"Algeria","NR",0.0383,0.1006
+"Andorra (Principality of)","Baa1",0.0136,0.0630
+"Angola","B3",0.0552,0.1264
+"Argentina","Caa1",0.0637,0.1394
+"Armenia","Ba3",0.0306,0.0889
+"Aruba","Baa3",0.0187,0.0708
+"Australia","Aaa",0.0000,0.0423
+"Austria","Aa1",0.0023,0.0459
+"Azerbaijan","Baa3",0.0187,0.0708
+"Bahamas","B1",0.0383,0.1006
+"Bahrain","B2",0.0467,0.1135
+"Bangladesh","B2",0.0467,0.1135
+"Barbados","B2",0.0467,0.1135
+"Belarus","C",0.1750,0.3089
+"Belgium","Aa3",0.0051,0.0501
+"Belize","Caa1",0.0637,0.1394
+"Benin","B1",0.0383,0.1006
+"Bermuda","A2",0.0072,0.0533
+"Bolivia","Ca",0.1020,0.1977
+"Bosnia and Herzegovina","B3",0.0552,0.1264
+"Botswana","Baa1",0.0136,0.0630
+"Brazil","Ba1",0.0213,0.0747
+"Brunei","NR",0.0051,0.0501
+"Bulgaria","Baa1",0.0136,0.0630
+"Burkina Faso","Caa1",0.0637,0.1394
+"Cambodia","B2",0.0467,0.1135
+"Cameroon","Caa1",0.0637,0.1394
+"Canada","Aaa",0.0000,0.0423
+"Cape Verde","B2",0.0467,0.1135
+"Cayman Islands","Aa3",0.0051,0.0501
+"Chile","A2",0.0072,0.0533
+"China","A1",0.0060,0.0514
+"Colombia","Baa3",0.0187,0.0708
+"Congo (Democratic Republic of)","B3",0.0552,0.1264
+"Congo (Republic of)","Caa2",0.0765,0.1589
+"Cook Islands","B1",0.0383,0.1006
+"Costa Rica","Ba2",0.0256,0.0813
+"Côte d'Ivoire","Ba2",0.0256,0.0813
+"Croatia","A3",0.0102,0.0578
+"Cuba","Ca",0.1020,0.1977
+"Curacao","Baa3",0.0187,0.0708
+"Cyprus","A3",0.0102,0.0578
+"Czech Republic","Aa3",0.0051,0.0501
+"Denmark","Aaa",0.0000,0.0423
+"Dominican Republic","Ba2",0.0256,0.0813
+"Ecuador","Caa3",0.0850,0.1718
+"Egypt","Caa1",0.0637,0.1394
+"El Salvador","B3",0.0552,0.1264
+"Estonia","A1",0.0060,0.0514
+"Ethiopia","Caa2",0.0765,0.1589
+"Fiji","B1",0.0383,0.1006
+"Finland","Aa1",0.0023,0.0459
+"France","Aa3",0.0051,0.0501
+"Gabon","Caa2",0.0765,0.1589
+"Gambia","NR",0.0467,0.1135
+"Georgia","Ba2",0.0256,0.0813
+"Germany","Aaa",0.0000,0.0423
+"Ghana","Caa1",0.0637,0.1394
+"Greece","Baa3",0.0187,0.0708
+"Guatemala","Ba1",0.0213,0.0747
+"Guernsey (States of)","A1",0.0060,0.0514
+"Guinea","NR",0.0765,0.1589
+"Guinea-Bissau","NR",0.0637,0.1394
+"Guyana","NR",0.0136,0.0630
+"Haiti","NR",0.0850,0.1718
+"Honduras","B1",0.0383,0.1006
+"Hong Kong","Aa3",0.0051,0.0501
+"Hungary","Baa2",0.0162,0.0669
+"Iceland","A1",0.0060,0.0514
+"India","Baa3",0.0187,0.0708
+"Indonesia","Baa2",0.0162,0.0669
+"Iran","NR",0.0637,0.1394
+"Iraq","Caa1",0.0637,0.1394
+"Ireland","Aa3",0.0051,0.0501
+"Isle of Man","Aa3",0.0051,0.0501
+"Israel","Baa1",0.0136,0.0630
+"Italy","Baa2",0.0162,0.0669
+"Jamaica","Ba3",0.0306,0.0889
+"Japan","A1",0.0060,0.0514
+"Jersey (States of)","Aa3",0.0051,0.0501
+"Jordan","Ba3",0.0306,0.0889
+"Kazakhstan","Baa1",0.0136,0.0630
+"Kenya","Caa1",0.0637,0.1394
+"Korea","Aa2",0.0042,0.0487
+"Korea, D.P.R.","NR",0.1020,0.1977
+"Kuwait","A1",0.0060,0.0514
+"Kyrgyzstan","B3",0.0552,0.1264
+"Laos","Caa2",0.0765,0.1589
+"Latvia","A3",0.0102,0.0578
+"Lebanon","C",0.1750,0.3089
+"Liberia","NR",0.0765,0.1589
+"Libya","NR",0.0256,0.0813
+"Liechtenstein","Aaa",0.0000,0.0423
+"Lithuania","A2",0.0072,0.0533
+"Luxembourg","Aaa",0.0000,0.0423
+"Macao","Aa3",0.0051,0.0501
+"Macedonia","Ba3",0.0306,0.0889
+"Madagascar","NR",0.0552,0.1264
+"Malawi","NR",0.0850,0.1718
+"Malaysia","A3",0.0102,0.0578
+"Maldives","Caa2",0.0765,0.1589
+"Mali","Caa2",0.0765,0.1589
+"Malta","A2",0.0072,0.0533
+"Mauritius","Baa3",0.0187,0.0708
+"Mexico","Baa2",0.0162,0.0669
+"Moldova","B3",0.0552,0.1264
+"Mongolia","B1",0.0383,0.1006
+"Montenegro","B1",0.0383,0.1006
+"Montserrat","Baa3",0.0187,0.0708
+"Morocco","Ba1",0.0213,0.0747
+"Mozambique","Caa3",0.0850,0.1718
+"Myanmar","NR",0.1020,0.1977
+"Namibia","B1",0.0383,0.1006
+"Nepal","Ba3",0.0306,0.0889
+"Netherlands","Aaa",0.0000,0.0423
+"New Zealand","Aaa",0.0000,0.0423
+"Nicaragua","B2",0.0467,0.1135
+"Niger","Caa3",0.0850,0.1718
+"Nigeria","B3",0.0552,0.1264
+"Norway","Aaa",0.0000,0.0423
+"Oman","Baa3",0.0187,0.0708
+"Pakistan","Caa1",0.0637,0.1394
+"Panama","Baa3",0.0187,0.0708
+"Papua New Guinea","B2",0.0467,0.1135
+"Paraguay","Baa3",0.0187,0.0708
+"Peru","Baa1",0.0136,0.0630
+"Philippines","Baa2",0.0162,0.0669
+"Poland","A2",0.0072,0.0533
+"Portugal","A3",0.0102,0.0578
+"Qatar","Aa2",0.0042,0.0487
+"Ras Al Khaimah (Emirate of)","A3",0.0102,0.0578
+"Romania","Baa3",0.0187,0.0708
+"Russia","NR",0.0256,0.0813
+"Rwanda","B2",0.0467,0.1135
+"Saudi Arabia","Aa3",0.0051,0.0501
+"Senegal","Caa1",0.0637,0.1394
+"Serbia","Ba2",0.0256,0.0813
+"Sharjah","Ba1",0.0213,0.0747
+"Sierra Leone","NR",0.0552,0.1264
+"Singapore","Aaa",0.0000,0.0423
+"Slovakia","A3",0.0102,0.0578
+"Slovenia","A3",0.0102,0.0578
+"Solomon Islands","Caa1",0.0637,0.1394
+"Somalia","NR",0.0850,0.1718
+"South Africa","Ba2",0.0256,0.0813
+"Spain","A3",0.0102,0.0578
+"Sri Lanka","Ca",0.1020,0.1977
+"St. Maarten","Ba2",0.0256,0.0813
+"St. Vincent & the Grenadines","B3",0.0552,0.1264
+"Sudan","NR",0.1750,0.3089
+"Suriname","Caa1",0.0637,0.1394
+"Swaziland","B2",0.0467,0.1135
+"Sweden","Aaa",0.0000,0.0423
+"Switzerland","Aaa",0.0000,0.0423
+"Syria","NR",0.1020,0.1977
+"Taiwan","Aa3",0.0051,0.0501
+"Tajikistan","B3",0.0552,0.1264
+"Tanzania","B1",0.0383,0.1006
+"Thailand","Baa1",0.0136,0.0630
+"Togo","B3",0.0552,0.1264
+"Trinidad and Tobago","Ba2",0.0256,0.0813
+"Tunisia","Caa1",0.0637,0.1394
+"Turkey (updated February 2026)","Ba3",0.0306,0.0889
+"Turks and Caicos Islands","Baa1",0.0136,0.0630
+"Uganda","B3",0.0552,0.1264
+"Ukraine","Ca",0.1020,0.1977
+"United Arab Emirates","Aa2",0.0042,0.0487
+"United Kingdom","Aa3",0.0051,0.0501
+"United States","Aa1",0.0023,0.0446
+"Uruguay","Baa1",0.0136,0.0630
+"Uzbekistan","Ba3",0.0306,0.0889
+"Venezuela","C",0.1750,0.3089
+"Vietnam","Ba2",0.0256,0.0813
+"Yemen, Republic","NR",0.1020,0.1977
+"Zambia","Caa2",0.0765,0.1589
+"Zimbabwe","NR",0.0765,0.1589
