@@ -4,8 +4,9 @@ las ordena por calidad de negocio (ROIC alto y sostenido, margenes, caja,
 crecimiento, balance, uso del capital) y por precio vs su propia historia.
 
 Uso:
-    python scripts/run_screener.py                      # S&P 500
+    python scripts/run_screener.py                      # S&P 1500
     python scripts/run_screener.py --universe sp400     # mid caps
+    python scripts/run_screener.py --universe sp1500    # 500 + 400 + 600
     python scripts/run_screener.py --tickers AAPL MSFT V MA ADBE
     python scripts/run_screener.py --tickers-file mis_tickers.txt
     python scripts/run_screener.py --json-out ../Modelo-JMR/docs/screener/resultados.json
@@ -22,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from jmr_valuation.screener.data import DEFAULT_CACHE_DIR, WIKI_UNIVERSES, CachedSecEdgarClient, load_universe  # noqa: E402
+from jmr_valuation.screener.data import DEFAULT_CACHE_DIR, UNIVERSES, CachedSecEdgarClient, load_universe  # noqa: E402
 from jmr_valuation.screener.runner import markdown_summary, run_screen, write_csv, write_json  # noqa: E402
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "data" / "screener"
@@ -31,7 +32,7 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "data" / "screener"
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     src = p.add_mutually_exclusive_group()
-    src.add_argument("--universe", choices=sorted(WIKI_UNIVERSES), default="sp500")
+    src.add_argument("--universe", choices=sorted(UNIVERSES), default="sp1500")
     src.add_argument("--tickers", nargs="+", help="lista de tickers (formato SEC/Yahoo: BRK-B)")
     src.add_argument("--tickers-file", type=Path, help="archivo con un ticker por linea")
     p.add_argument("--no-prices", action="store_true", help="solo calidad, sin precio vs historia")
@@ -51,7 +52,7 @@ def main(argv: list[str] | None = None) -> int:
         universe_label = "lista propia"
     else:
         companies = load_universe(args.universe)
-        universe_label = {"sp500": "S&P 500", "sp400": "S&P 400", "sp600": "S&P 600"}[args.universe]
+        universe_label = {"sp500": "S&P 500", "sp400": "S&P 400", "sp600": "S&P 600", "sp1500": "S&P 1500 (500 + 400 + 600)"}[args.universe]
     if args.limit:
         companies = companies[: args.limit]
 

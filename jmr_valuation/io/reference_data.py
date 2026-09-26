@@ -67,6 +67,12 @@ def country_risk_premiums() -> dict[str, CountryRiskPremium]:
     out = {}
     with open(REFERENCE_DIR / "country_risk_premiums.csv", newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
+            if row["total_erp"].startswith("="):
+                raise ValueError(
+                    "country_risk_premiums.csv contiene formulas de Excel sin evaluar; "
+                    "exporta los valores calculados desde la tabla original de Damodaran "
+                    "antes de usar primas por pais."
+                )
             out[row["country"]] = CountryRiskPremium(
                 country=row["country"],
                 rating=row["rating"],

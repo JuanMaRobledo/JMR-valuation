@@ -155,8 +155,9 @@ def write_supuestos_tab(
 def write_multiplos_tab(
     sh: gspread.Spreadsheet, ticker: str, company_name: str, scenarios: list[ScenarioOutput],
 ) -> None:
-    """Valoracion relativa por multiplos de comparables (equivalente a las 5
-    hojas EV/FCFF, P/OCF, P/E, P/FCFE, EV/EBITDA del Excel): el multiplo ancla
+    """Valoracion relativa por multiplos de comparables disponibles (EV/FCFF,
+    P/OCF, P/E, EV/EBITDA). P/FCFE requiere deuda neta proyectada comparable.
+    El multiplo ancla
     es la MEDIANA de los peers (no el propio historico de la empresa, que no
     tenemos con precios historicos reales) x el ajuste +/-10% por escenario
     que ya trae `models.relative` (Conservador=0.9x, Base=1.0x, Optimista=1.1x
@@ -172,7 +173,7 @@ def write_multiplos_tab(
     rows: list[list] = [
         [f"Valoración relativa por múltiplos -- {company_name} ({ticker})"],
         ["Múltiplo ancla = mediana de los peers, ajustado +/-10% por escenario. "
-         "Precio objetivo FY+3 (mismo horizonte que el resto del pipeline)."],
+         "Precio objetivo a tres años desde LTM; comparar con el DCF como referencia de otro horizonte."],
         [],
     ]
     for metric in RELATIVE_METRIC_ORDER:
@@ -200,15 +201,16 @@ def _average_relative_price(scenario: ScenarioOutput) -> float | None:
 
 def write_resumen_tab(
     sh: gspread.Spreadsheet, ticker: str, company_name: str, current_price: float, scenarios: list[ScenarioOutput],
+    price_as_of: str | None = None,
 ) -> None:
     ws = _get_or_create_worksheet(sh, _TAB_RESUMEN)
     has_relative = any(s.relative for s in scenarios)
     header = ["Escenario", "Valor/acción (DCF)", "Upside DCF"]
     if has_relative:
-        header += ["Precio objetivo (múltiplos, prom. 5 métodos)", "Upside múltiplos"]
+        header += ["Precio objetivo FY+3 (promedio de múltiplos disponibles)", "Upside múltiplos FY+3"]
     rows: list[list] = [
         [f"Resumen de Valoración -- {company_name} ({ticker})"],
-        ["Precio actual (mercado)", _num(current_price)],
+        [f"Precio de mercado al {price_as_of}" if price_as_of else "Precio de mercado (fecha no indicada)", _num(current_price)],
         [],
         header,
     ]
@@ -226,8 +228,9 @@ def write_resumen_tab(
 def write_full_valuation(
     sh: gspread.Spreadsheet, *, ticker: str, company_name: str, current_price: float,
     series: AnnualSeries, comps: CompsTable | None, scenarios: list[ScenarioOutput],
+    price_as_of: str | None = None,
 ) -> None:
     write_datos_tab(sh, series, comps)
     write_supuestos_tab(sh, ticker, company_name, scenarios)
     write_multiplos_tab(sh, ticker, company_name, scenarios)
-    write_resumen_tab(sh, ticker, company_name, current_price, scenarios)
+    write_resumen_tab(sh, ticker, company_name, current_price, scenarios, price_as_of)

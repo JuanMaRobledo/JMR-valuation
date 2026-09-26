@@ -1,5 +1,6 @@
 import math
 from pathlib import Path
+import pytest
 
 from jmr_valuation.io.inputs import load_company_inputs
 from jmr_valuation.models.dcf import (
@@ -10,6 +11,20 @@ from jmr_valuation.models.dcf import (
 )
 
 EXAMPLE_CSV = Path(__file__).resolve().parent.parent / "data" / "example_adbe.csv"
+
+
+def test_dcf_rejects_terminal_growth_at_or_above_wacc():
+    with pytest.raises(ValueError, match="WACC terminal"):
+        run_dcf(
+            base_revenue=100, base_ebit=20,
+            growth_path=GrowthAndMarginPath(0.05, 0.05, 0.20),
+            initial_ebit_margin=0.20, initial_cost_of_capital=0.05,
+            terminal=TerminalAssumptions(riskfree_rate=0.05, terminal_wacc_override=0.04),
+            initial_tax_rate=0.25, marginal_tax_rate=0.25,
+            tax_rate_converges_to_marginal=False,
+            sales_to_capital_years_1_5=2, sales_to_capital_years_6_10=2,
+            invested_capital_base=100,
+        )
 
 
 def test_flat_scenario_terminal_value_matches_perpetuity_formula():

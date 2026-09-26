@@ -10,7 +10,7 @@ alcanza, se deja en None en vez de inventar un numero (ver comps_loader.py).
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 import yfinance as yf
 
@@ -30,6 +30,7 @@ class MarketSnapshot:
     total_cash: float | None
     beta: float | None = None   # beta apalancado (regresion de Yahoo contra el mercado) -- para WACC automatico
     exchange: str = "NASDAQ"    # bolsa legible (NASDAQ/NYSE/...) -- ver _display_exchange
+    price_as_of: str | None = None  # día de la cotización, no fecha de consulta
 
 
 # yfinance da el codigo corto de MIC/Yahoo en info["exchange"] (ej. "NMS" para
@@ -60,6 +61,14 @@ def get_market_snapshot(ticker: str) -> MarketSnapshot:
             f"yfinance no devolvio precio actual para {ticker!r} -- revisa que el "
             "ticker sea correcto (o que Yahoo Finance lo tenga listado)."
         )
+    if not info.get("marketCap") or not info.get("sharesOutstanding"):
+        raise YFinanceError(
+            f"yfinance no devolvio capitalizacion y acciones validas para {ticker!r}; "
+            "el WACC y el valor por accion requieren ambos datos."
+        )
+    market_time = info.get("regularMarketTime")
+    if not isinstance(market_time, (int, float)) or market_time <= 0:
+        raise YFinanceError(f"yfinance no devolvio fecha verificable de cotizacion para {ticker!r}")
     return MarketSnapshot(
         ticker=ticker.upper(),
         current_price=float(price),
@@ -70,6 +79,7 @@ def get_market_snapshot(ticker: str) -> MarketSnapshot:
         total_cash=info.get("totalCash"),
         beta=info.get("beta"),
         exchange=_display_exchange(info),
+        price_as_of=datetime.fromtimestamp(market_time, timezone.utc).date().isoformat(),
     )
 
 
@@ -147,7 +157,17 @@ def get_peer_multiples(ticker: str, company_name: str | None = None) -> PeerMult
     operating_cash_flow = info.get("operatingCashflow")
 
     ev_ebitda = (ev / ebitda) if ev and ebitda else None
-    ev_fcf = (ev / free_cash_flow) if ev and free_cash_flow else None
+    # Yahoo freeCashflow = OCF - CapEx: es flujo para el accionista antes de
+    # endeudamiento neto, no FCFF. EV/FCFF requiere sumar intereses después
+    # de impuestos. Sin interés e impuesto verificables se deja sin dato.
+    interest = info.get("interestExpense")
+    tax_rate = info.get("effectiveTaxRate")
+    if interest is None and info.get("totalDebt") == 0:
+        interest = 0.0
+    fcff = (free_cash_flow + abs(interest) * (1 - tax_rate)
+            if free_cash_flow is not None and interest is not None
+            and isinstance(tax_rate, (int, float)) and 0 <= tax_rate <= 1 else None)
+    ev_fcf = (ev / fcff) if ev and fcff and fcff > 0 else None
     p_fcf = (market_cap / free_cash_flow) if market_cap and free_cash_flow else None
     p_ocf = (market_cap / operating_cash_flow) if market_cap and operating_cash_flow else None
 

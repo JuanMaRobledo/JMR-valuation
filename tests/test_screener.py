@@ -91,7 +91,8 @@ def test_missing_gross_margin_is_skipped_not_penalised():
     full = scoring.score_metrics(compute_metrics(_series()))
     no_cogs = scoring.score_metrics(compute_metrics(_series(cogs=[0.0] * 10)))
     assert no_cogs.coverage < full.coverage
-    assert no_cogs.tier == "Maravillosa"
+    assert no_cogs.tier == "Muy buena"  # Cobertura insuficiente para el escalon superior.
+    assert no_cogs.passes_filters  # La falta de COGS no invalida el negocio.
 
 
 def test_stock_split_is_not_read_as_dilution():

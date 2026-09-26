@@ -631,8 +631,8 @@ def main() -> None:
                 f"{base_bridge.price_as_pct_of_value:.1%}" if base_bridge.price_as_pct_of_value else "—")
     col4.metric("Ajuste EBIT (leasing/I+D)", f"{report.ebit_adjustment:+,.1f}")
 
-    st.markdown(f"#### Precio objetivo ponderado -- tipo *{report.blend.company_type}* "
-                "(DCF + los 5 multiplos, pesados segun el tipo de empresa)")
+    st.markdown(f"#### Comparación exploratoria -- tipo *{report.blend.company_type}* "
+                "(combina DCF de hoy y precios por múltiplos a 3 años; los pesos son criterios del modelo JMR)")
     blend = report.blend
     bcol1, bcol2, bcol3, bcol4 = st.columns(4)
     bcol1.metric("Ponderado -- Conservador", f"{blend.weighted_price_by_scenario['Conservador']:,.2f}",
@@ -641,7 +641,7 @@ def main() -> None:
                  delta=f"CAGR 3a {blend.cagr_3y_by_scenario['Base']:+.1%}")
     bcol3.metric("Ponderado -- Optimista", f"{blend.weighted_price_by_scenario['Optimista']:,.2f}",
                  delta=f"CAGR 3a {blend.cagr_3y_by_scenario['Optimista']:+.1%}")
-    bcol4.metric(f"Precio con MOS ({inputs.margin_of_safety:.0%})", f"{blend.mos_price:,.2f}")
+    bcol4.metric(f"MOS sobre DCF Base de hoy ({inputs.margin_of_safety:.0%})", f"{blend.mos_price:,.2f}")
 
     with st.expander("Pesos usados y bandas de precio de compra"):
         st.caption("Si excluiste algun metodo (en 'Precio objetivo ponderado' de la barra lateral), "

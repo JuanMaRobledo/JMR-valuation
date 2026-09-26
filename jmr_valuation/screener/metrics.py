@@ -33,6 +33,8 @@ class QualityMetrics:
     years: int
     last_fiscal_year_end: str
     ltm_revenue: float
+    roic_observations_5y: int
+    fcf_observations_5y: int
     # Rentabilidad sobre el capital
     roic_last: float | None
     roic_median_5y: float | None
@@ -272,6 +274,8 @@ def compute_metrics(s: AnnualSeries) -> QualityMetrics:
         years=n,
         last_fiscal_year_end=s.fiscal_year_ends[last] if s.fiscal_year_ends else "",
         ltm_revenue=ltm_revenue,
+        roic_observations_5y=sum(roic[i] is not None for i in idx_5y),
+        fcf_observations_5y=sum(fcf[i] is not None for i in idx_5y),
         roic_last=roic[last],
         roic_median_5y=_median([roic[i] for i in idx_5y]),
         roic_min_5y=min((roic[i] for i in idx_5y if roic[i] is not None), default=None),

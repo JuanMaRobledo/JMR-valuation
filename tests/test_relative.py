@@ -1,4 +1,5 @@
 import math
+import pytest
 
 from jmr_valuation.models.relative import (
     ScenarioMultipleInputs,
@@ -45,3 +46,23 @@ def test_sensitivity_matrix_center_cell_equals_base_case():
     assert len(matrix) == 5 and all(len(row) == 5 for row in matrix)
     center = matrix[2][2]  # delta 1.0 x delta 1.0
     assert math.isclose(center, 20.0 * (100.0 / 10))
+
+
+def test_enterprise_multiple_converts_ev_to_equity_and_uses_projected_shares():
+    inputs = ScenarioMultipleInputs(
+        "Base", 20.0, 100, 110, 120, 10,
+        projected_shares=(10, 11, 12), ev_to_equity_adjustment=250,
+    )
+    result = project_target_prices("EV/EBITDA", 100, inputs)
+    assert result.years[0].implied_target_price == 175  # (2000 - 250) / 10
+    assert result.years[2].implied_target_price == pytest.approx((2400 - 250) / 12)
+    matrix = sensitivity_matrix(20, 120, 12, ev_to_equity_adjustment=250)
+    assert matrix[2][2] == pytest.approx(result.years[2].implied_target_price)
+
+
+def test_equity_multiple_does_not_subtract_debt():
+    inputs = ScenarioMultipleInputs(
+        "Base", 20.0, 100, 110, 120, 10,
+        projected_shares=(10, 11, 12), ev_to_equity_adjustment=250,
+    )
+    assert project_target_prices("P/E", 100, inputs).years[2].implied_target_price == 200

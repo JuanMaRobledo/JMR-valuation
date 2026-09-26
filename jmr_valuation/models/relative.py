@@ -53,6 +53,10 @@ class ScenarioMultipleInputs:
     cumulative_dividends_fy2: float = 0.0
     cumulative_dividends_fy3: float = 0.0
     manual_multiple_override: float | None = None  # celda J del Excel, si el usuario fija el multiplo a mano
+    projected_shares: tuple[float, float, float] | None = None
+    # Para EV/FCFF y EV/EBITDA: deuda + minoritarios + opciones - caja - inversiones.
+    # El múltiplo produce valor de EMPRESA; hay que convertirlo a equity.
+    ev_to_equity_adjustment: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -91,9 +95,18 @@ def project_target_prices(
     dividends = [inputs.cumulative_dividends_fy1, inputs.cumulative_dividends_fy2, inputs.cumulative_dividends_fy3]
     labels = ["FY+1", "FY+2", "FY+3"]
 
+    if current_price <= 0 or inputs.shares_or_ev_divisor <= 0:
+        raise ValueError("Precio y acciones deben ser positivos")
+    if inputs.projected_shares is not None and any(s <= 0 for s in inputs.projected_shares):
+        raise ValueError("Las acciones proyectadas deben ser positivas")
+
     years = []
     for n, (label, metric, div) in enumerate(zip(labels, metrics, dividends), start=1):
-        implied_price = multiple_fy1 * (metric / inputs.shares_or_ev_divisor)
+        shares = inputs.projected_shares[n - 1] if inputs.projected_shares else inputs.shares_or_ev_divisor
+        enterprise_value = multiple_fy1 * metric
+        equity_value = (enterprise_value - inputs.ev_to_equity_adjustment
+                        if metric_name.startswith("EV/") else enterprise_value)
+        implied_price = equity_value / shares
         total_target = implied_price + div
         total_return = (total_target - current_price) / current_price
         annualized_return = (total_target / current_price) ** (1 / n) - 1
@@ -114,11 +127,12 @@ def sensitivity_matrix(
     base_multiple_fy3: float,
     base_metric_fy3: float,
     shares_or_ev_divisor: float,
+    ev_to_equity_adjustment: float = 0.0,
 ) -> list[list[float]]:
     """Replica la matriz A46:F51: precio objetivo FY+3 variando multiplo x metrica +/-10%."""
     multiples = [base_multiple_fy3 * d for d in SENSITIVITY_DELTAS]
     metrics = [base_metric_fy3 * d for d in SENSITIVITY_DELTAS]
     return [
-        [m * (metric / shares_or_ev_divisor) for metric in metrics]
+        [(m * metric - ev_to_equity_adjustment) / shares_or_ev_divisor for metric in metrics]
         for m in multiples
     ]
