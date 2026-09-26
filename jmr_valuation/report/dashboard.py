@@ -641,7 +641,7 @@ def main() -> None:
                  delta=f"CAGR 3a {blend.cagr_3y_by_scenario['Base']:+.1%}")
     bcol3.metric("Ponderado -- Optimista", f"{blend.weighted_price_by_scenario['Optimista']:,.2f}",
                  delta=f"CAGR 3a {blend.cagr_3y_by_scenario['Optimista']:+.1%}")
-    bcol4.metric(f"MOS sobre DCF Base de hoy ({inputs.margin_of_safety:.0%})", f"{blend.mos_price:,.2f}")
+    bcol4.metric(f"MOS sobre ponderado Base (horizontes mixtos) ({inputs.margin_of_safety:.0%})", f"{blend.mos_price:,.2f}")
 
     with st.expander("Pesos usados y bandas de precio de compra"):
         st.caption("Si excluiste algun metodo (en 'Precio objetivo ponderado' de la barra lateral), "
