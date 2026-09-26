@@ -356,8 +356,8 @@
  },
  "Input sheet!B19": {
   "before": "='Balance Sheet'!L5",
-  "after": "='Balance Sheet'!L5-3530",
-  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+  "after": "='Balance Sheet'!L5-3530+1000",
+  "reason": "Auditoria: deuda/caja brutas pro forma (prestamo 3-ago), RSU y sales-to-capital bottom-up"
  },
  "Input sheet!B20": {
   "before": "='Balance Sheet'!L14",
@@ -401,13 +401,13 @@
  },
  "Input sheet!B32": {
   "before": "=K28",
-  "after": 1.5,
-  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+  "after": "=('Income Statement'!L3-'Income Statement'!F3)/(('Valuation output'!B41-3530)-2981)",
+  "reason": "Auditoria: deuda/caja brutas pro forma (prestamo 3-ago), RSU y sales-to-capital bottom-up"
  },
  "Input sheet!B33": {
   "before": "=B32",
-  "after": 1.5,
-  "reason": "Supuestos ADSK (ver hoja Tesis de Inversión y Supuestos)"
+  "after": "=B32",
+  "reason": "Auditoria: deuda/caja brutas pro forma (prestamo 3-ago), RSU y sales-to-capital bottom-up"
  },
  "Input sheet!B35": {
   "before": 0.0499,
@@ -596,7 +596,7 @@
  },
  "Cualitativo!B29": {
   "before": "",
-  "after": "US$3.530M por ~US$135M de ARR (~26x ingresos), financiado con caja y US$2.000M de deuda nueva. Diluye el margen FY2027 y deja la deuda neta en ~US$3.100M (antes, caja neta).",
+  "after": "US$3.530M por ~US$135M de ARR (~26x ingresos), financiado con caja, papel comercial y un préstamo de US$1.000M (refinanciado con notas en sep-2026). Diluye el margen FY2027 y deja la deuda neta en ~US$3.100M (antes, caja neta).",
   "reason": "Contenido cualitativo ADSK"
  },
  "Cualitativo!A30": {
@@ -661,7 +661,7 @@
  },
  "Cualitativo!B41": {
   "before": "",
-  "after": "Emisión de US$1.000M en notas para repagar el préstamo puente",
+  "after": "Emisión de US$1.000M en notas para repagar el préstamo de MaintainX",
   "reason": "Contenido cualitativo ADSK"
  },
  "Cualitativo!D41": {
@@ -711,7 +711,7 @@
  },
  "Cualitativo!B47": {
   "before": "",
-  "after": "El pago de US$3.530M se hizo el 3-ago, después del cierre del Q2 (31-jul): el balance del 10-Q todavía muestra US$4.098M de caja. Impacto: el modelo usa caja pro forma de US$625M (Input!B19) y deuda de US$3.705M (notas, préstamo puente y arrendamientos). Los ingresos de MaintainX entran en el crecimiento del Año 1.",
+  "after": "El pago de US$3.530M se hizo el 3-ago, después del cierre del Q2 (31-jul): el balance del 10-Q todavía muestra US$4.098M de caja. Ese día también tomó un préstamo de US$1.000M. Impacto: el modelo usa caja pro forma de US$1.625M (Input!B19) y deuda de US$4.705M (notas, papel comercial, préstamo y arrendamientos); la deuda neta es US$3.080M. Los ingresos de MaintainX entran en el crecimiento del Año 1.",
   "reason": "Contenido cualitativo ADSK"
  },
  "Cualitativo!A48": {
@@ -857,7 +857,7 @@
  "Estadísticas!E20": {
   "before": "",
   "after": "='Input sheet'!B19",
-  "reason": "Caja y deuda neta pro forma MaintainX"
+  "reason": "Estadisticas ADSK (formulas vivas)"
  },
  "Estadísticas!E23": {
   "before": "",
@@ -966,7 +966,7 @@
  },
  "Stories to Numbers!A4": {
   "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
-  "after": "Autodesk vende US$7.800M por año con margen bruto de 91%, crece 14-16% y tiene una meta explícita de 41% de margen non-GAAP en FY2029. Acaba de pagar US$3.530M por MaintainX para extender la plataforma de diseño y obra a la operación de los activos. El mercado la valora a ~17x la utilidad non-GAAP proyectada por temor a que la IA reduzca los usuarios que pagan y con tasas de 5,17%. La tesis Base: +13% el próximo año (incluye MaintainX), 10% anual en los años 2-5, margen GAAP ajustado que sube de 29% a 33,5% en 5 años, ROIC perpetuo de 15% y costo de capital de 10,8%.",
+  "after": "Autodesk vende US$7.800M por año con margen bruto de 91%, crece 14-16% y tiene una meta explícita de 41% de margen non-GAAP en FY2029. Acaba de pagar US$3.530M por MaintainX para extender la plataforma de diseño y obra a la operación de los activos. El mercado la valora a ~17x la utilidad non-GAAP proyectada por temor a que la IA reduzca los usuarios que pagan y con tasas de 5,17%. La tesis Base: +13% el próximo año (incluye MaintainX), 10% anual en los años 2-5, margen GAAP ajustado que sube de 29% a 33,5% en 5 años, ROIC perpetuo de 15% y costo de capital de 10,76%.",
   "reason": "Historia ADSK"
  },
  "Stories to Numbers!G10": {
@@ -986,17 +986,17 @@
  },
  "Stories to Numbers!G13": {
   "before": "Maintained at Amazon's current level",
-  "after": "1,5x: bottom-up FY2022-FY2026 con adquisiciones (~1,3x) y orgánico muy superior (poco capex, capital de trabajo negativo).",
+  "after": "1,23x: marginal FY2021-LTM (ΔIngresos US$4.000M / ΔCapital invertido con I+D US$3.263M, sin MaintainX), incluye las compras previas.",
   "reason": "Historia ADSK"
  },
  "Stories to Numbers!G14": {
   "before": "Strong competitive edges",
-  "after": "ROIC actual ~36% (ajustado por I+D); en perpetuidad 15%, por encima del costo de capital por el foso de estándar (DWG/Revit).",
+  "after": "ROIC actual 18% (con I+D capitalizada y el goodwill de MaintainX); en perpetuidad 15%, sobre el costo de capital por el foso de estándar (DWG/Revit).",
   "reason": "Historia ADSK"
  },
  "Stories to Numbers!G15": {
   "before": "Cost of capital close to median company",
-  "after": "10,8%: beta global de Software desapalancada 1,33 (1,40 reapalancada), UST 5,17%, ERP 4,32%, Kd 6,17% (A3/BBB+).",
+  "after": "10,76%: beta global de Software desapalancada 1,33 (1,41 reapalancada), UST 5,17%, ERP 4,32%, Kd 6,17% (A3/BBB+), D/(D+E) 7,9%.",
   "reason": "Historia ADSK"
  },
  "Supuestos Recomendados!C6": {
@@ -1051,27 +1051,27 @@
  },
  "Supuestos Recomendados!C11": {
   "before": "",
-  "after": 1.5,
+  "after": "='Input sheet'!B32",
   "reason": "Recomendaciones ADSK"
  },
  "Supuestos Recomendados!D11": {
   "before": "",
-  "after": "Bottom-up FY2022-FY2026 incluyendo adquisiciones (~1,3x); el crecimiento orgánico requiere mucho menos capital.",
+  "after": "Marginal FY2021-LTM con I+D capitalizada y adquisiciones previas, sin MaintainX (ya pagada en la caja): 1,23x. Fórmula viva en Input!B32.",
   "reason": "Recomendaciones ADSK"
  },
  "Supuestos Recomendados!C12": {
   "before": "",
-  "after": 1.5,
+  "after": "='Input sheet'!B33",
   "reason": "Recomendaciones ADSK"
  },
  "Supuestos Recomendados!D12": {
   "before": "",
-  "after": "Se mantiene: las adquisiciones siguen siendo parte del crecimiento.",
+  "after": "Igual a los años 1-5: las adquisiciones siguen siendo parte del crecimiento.",
   "reason": "Recomendaciones ADSK"
  },
  "Supuestos de los Múltiplos!A12": {
   "before": "Evaluación: (completar al analizar el ticker)",
-  "after": "Evaluación ADSK: P/E, EV/EBITDA, EV/FCFF, P/FCFE y P/OCF fueron positivos los 4 años (ene-2023 a ene-2026), así que el mecanismo nativo (MIN de 4 años) no se rompe por cambios de signo. PERO esos años son de otro régimen de valuación: P/E GAAP de 48-60x y EV/EBITDA de 30-44x, contra ~24x y ~20x hoy. Por eso los múltiplos dan precios muy superiores al DCF (P/E Base ~US$557) y se leen como techo si vuelve la valuación histórica. La categoría 'Software' les da solo 40% del peso (DCF 60%). Además, el EV de 'Trailing Valuation' usa la caja del 31-jul, antes del pago de MaintainX.",
+  "after": "Evaluación ADSK: P/E, EV/EBITDA, EV/FCFF, P/FCFE y P/OCF fueron positivos los 4 años (ene-2023 a ene-2026), así que el mecanismo nativo (MIN de 4 años) no se rompe por cambios de signo. PERO esos años son de otro régimen de valuación: P/E GAAP de 48-60x y EV/EBITDA de 30-44x, contra ~24x y ~20x hoy. Por eso los múltiplos dan precios muy superiores al DCF y se leen como techo si vuelve la valuación histórica. Correcciones de la auditoría (26-sep-2026): (1) la historia de EV/FCFF, P/FCFE y P/OCF usa ahora los múltiplos reportados de 'Trailing Valuation' en los 4 años (antes mezclaba el FCF reportado de ene-2023 con un FCFF del modelo sin SBC); (2) el rótulo 'NTM' era trailing; (3) en el Resumen, los precios FY+3 se traen a valor presente con Ke y los de EV restan la deuda neta por acción, para promediarlos con el DCF. La categoría 'Software' les da 40% del peso (DCF 60%).",
   "reason": "Evaluacion de multiplos ADSK"
  },
  "Tesis de Inversión y Supuestos!A1:H120": {
@@ -1238,6 +1238,396 @@
  "Estadísticas!E21": {
   "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
   "after": "='Input sheet'!B16-'Input sheet'!B19",
-  "reason": "Caja y deuda neta pro forma MaintainX"
+  "reason": "Estadisticas ADSK (formulas vivas)"
+ },
+ "Input sheet!B16": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+  "after": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26+1000",
+  "reason": "Auditoria: deuda/caja brutas pro forma (prestamo 3-ago), RSU y sales-to-capital bottom-up"
+ },
+ "Input sheet!B22": {
+  "before": "='Income Statement'!L27",
+  "after": "='Income Statement'!L27+5,413",
+  "reason": "Auditoria: RSU no consolidadas en el conteo de acciones"
+ },
+ "Trailing Valuation!L6": {
+  "before": "=IFERROR(L5+('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)-'Balance Sheet'!L5;\"\")",
+  "after": "=L5+'Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Auditoria: EV LTM con caja y deuda pro forma MaintainX"
+ },
+ "Salud Financiera!L3": {
+  "before": "=IFERROR('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26;\"\")",
+  "after": "='Input sheet'!B16",
+  "reason": "Auditoria: deuda y deuda neta LTM pro forma MaintainX"
+ },
+ "Salud Financiera!L4": {
+  "before": "=IFERROR(L3-'Balance Sheet'!L5;\"\")",
+  "after": "=L3-'Input sheet'!B19",
+  "reason": "Auditoria: deuda y deuda neta LTM pro forma MaintainX"
+ },
+ "Income Statement!L4": {
+  "before": 0.081,
+  "after": "=L3/(J3-2922+3396)-1",
+  "reason": "Auditoria: crecimiento LTM contra el LTM previo (antes contra FY2026, meses solapados)"
+ },
+ "Crecimiento y Márgenes!C6": {
+  "before": "='Income Statement'!K3 / 'Income Statement'!J3 - 1",
+  "after": "='Income Statement'!L4",
+  "reason": "Auditoria: 'LTM' era el crecimiento de FY2026; exponentes de CAGR para 3, 5 y 9 intervalos"
+ },
+ "Crecimiento y Márgenes!C7": {
+  "before": "=IFERROR(('Income Statement'!K3 / 'Income Statement'!I3)^(1/3) - 1;\"\")",
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\")",
+  "reason": "Auditoria: 'LTM' era el crecimiento de FY2026; exponentes de CAGR para 3, 5 y 9 intervalos"
+ },
+ "Crecimiento y Márgenes!C8": {
+  "before": "=IFERROR(('Income Statement'!K3 / 'Income Statement'!G3)^(1/5) - 1;\"\")",
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\")",
+  "reason": "Auditoria: 'LTM' era el crecimiento de FY2026; exponentes de CAGR para 3, 5 y 9 intervalos"
+ },
+ "Crecimiento y Márgenes!C9": {
+  "before": "=IFERROR(('Income Statement'!K3 / 'Income Statement'!B3)^(1/10) - 1;\"\")",
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\")",
+  "reason": "Auditoria: 'LTM' era el crecimiento de FY2026; exponentes de CAGR para 3, 5 y 9 intervalos"
+ },
+ "Valuation output!B50": {
+  "before": "=('Income Statement'!K3/'Income Statement'!I3)^(1/3)-1",
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Auditoria: exponentes de CAGR (antes 1/3, 1/5 y 1/10 para 2, 4 y 9 intervalos)"
+ },
+ "Valuation output!B51": {
+  "before": "=('Income Statement'!K3/'Income Statement'!G3)^(1/5)-1",
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Auditoria: exponentes de CAGR (antes 1/3, 1/5 y 1/10 para 2, 4 y 9 intervalos)"
+ },
+ "Valuation output!A52": {
+  "before": "CAGR 10Y",
+  "after": "CAGR 9Y",
+  "reason": "Auditoria: exponentes de CAGR (antes 1/3, 1/5 y 1/10 para 2, 4 y 9 intervalos)"
+ },
+ "Valuation output!B52": {
+  "before": "=('Income Statement'!K3/'Income Statement'!B3)^(1/10)-1",
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Auditoria: exponentes de CAGR (antes 1/3, 1/5 y 1/10 para 2, 4 y 9 intervalos)"
+ },
+ "EVFCFF!A8": {
+  "before": "NTM EV/FCFF Multiple",
+  "after": "Múltiplo EV/FCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVFCFF!A19": {
+  "before": "NTM EV/FCFF Multiple",
+  "after": "Múltiplo EV/FCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVFCFF!A30": {
+  "before": "NTM EV/FCFF Multiple",
+  "after": "Múltiplo EV/FCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVFCFF!C8": {
+  "before": "=C7/C9",
+  "after": "='Trailing Valuation'!I24",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVFCFF!D8": {
+  "before": "=D7/D9",
+  "after": "='Trailing Valuation'!J24",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVFCFF!E8": {
+  "before": "=E7/E9",
+  "after": "='Trailing Valuation'!K24",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PFCFE!A8": {
+  "before": "NTM P/FCFE Multiple",
+  "after": "Múltiplo P/FCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PFCFE!A19": {
+  "before": "NTM P/FCFE Multiple",
+  "after": "Múltiplo P/FCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PFCFE!A30": {
+  "before": "NTM P/FCFE Multiple",
+  "after": "Múltiplo P/FCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PFCFE!C8": {
+  "before": "=C7/C9",
+  "after": "='Trailing Valuation'!I16",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PFCFE!D8": {
+  "before": "=D7/D9",
+  "after": "='Trailing Valuation'!J16",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PFCFE!E8": {
+  "before": "=E7/E9",
+  "after": "='Trailing Valuation'!K16",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "POCF!A8": {
+  "before": "NTM P/OCF Multiple",
+  "after": "Múltiplo P/OCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "POCF!A19": {
+  "before": "NTM P/OCF Multiple",
+  "after": "Múltiplo P/OCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "POCF!A30": {
+  "before": "NTM P/OCF Multiple",
+  "after": "Múltiplo P/OCF trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "POCF!C8": {
+  "before": "=C7/C9",
+  "after": "='Trailing Valuation'!I15",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "POCF!D8": {
+  "before": "=D7/D9",
+  "after": "='Trailing Valuation'!J15",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "POCF!E8": {
+  "before": "=E7/E9",
+  "after": "='Trailing Valuation'!K15",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVEBITDA!A8": {
+  "before": "NTM EV/EBITDA Multiple",
+  "after": "Múltiplo EV/EBITDA trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVEBITDA!A19": {
+  "before": "NTM EV/EBITDA Multiple",
+  "after": "Múltiplo EV/EBITDA trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "EVEBITDA!A30": {
+  "before": "NTM EV/EBITDA Multiple",
+  "after": "Múltiplo EV/EBITDA trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PE!A8": {
+  "before": "NTM P/E Multiple",
+  "after": "Múltiplo P/E trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PE!A19": {
+  "before": "NTM P/E Multiple",
+  "after": "Múltiplo P/E trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "PE!A30": {
+  "before": "NTM P/E Multiple",
+  "after": "Múltiplo P/E trailing (cierre fiscal)",
+  "reason": "Auditoria: rotulo NTM -> trailing; historia de flujo con FCF/OCF reportados"
+ },
+ "Resumen de Valoración!C7": {
+  "before": "=EVEBITDA!$H$12",
+  "after": "=(EVEBITDA!$H$12-('Input sheet'!$B$16-'Input sheet'!$B$19)/'Input sheet'!$B$22)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!C8": {
+  "before": "=EVFCFF!H12",
+  "after": "=(EVFCFF!$H$12-('Input sheet'!$B$16-'Input sheet'!$B$19)/'Input sheet'!$B$22)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!C9": {
+  "before": "=PE!$H$12",
+  "after": "=(PE!$H$12)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!C10": {
+  "before": "=PFCFE!$H$12",
+  "after": "=(PFCFE!$H$12)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!C11": {
+  "before": "=POCF!$H$12",
+  "after": "=(POCF!$H$12)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!D7": {
+  "before": "=EVEBITDA!$H$23",
+  "after": "=(EVEBITDA!$H$23-('Input sheet'!$B$16-'Input sheet'!$B$19)/'Input sheet'!$B$22)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!D8": {
+  "before": "=EVFCFF!H23",
+  "after": "=(EVFCFF!$H$23-('Input sheet'!$B$16-'Input sheet'!$B$19)/'Input sheet'!$B$22)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!D9": {
+  "before": "=PE!H23",
+  "after": "=(PE!$H$23)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!D10": {
+  "before": "=PFCFE!$H$23",
+  "after": "=(PFCFE!$H$23)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!D11": {
+  "before": "=POCF!H23",
+  "after": "=(POCF!$H$23)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!E7": {
+  "before": "=EVEBITDA!$H$34",
+  "after": "=(EVEBITDA!$H$34-('Input sheet'!$B$16-'Input sheet'!$B$19)/'Input sheet'!$B$22)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!E8": {
+  "before": "=EVFCFF!H34",
+  "after": "=(EVFCFF!$H$34-('Input sheet'!$B$16-'Input sheet'!$B$19)/'Input sheet'!$B$22)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!E9": {
+  "before": "=PE!$H$34",
+  "after": "=(PE!$H$34)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!E10": {
+  "before": "=PFCFE!$H$34",
+  "after": "=(PFCFE!$H$34)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!E11": {
+  "before": "=POCF!$H$34",
+  "after": "=(POCF!$H$34)/(1+'Cost of capital worksheet'!$B$63)^3",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Resumen de Valoración!A13": {
+  "before": "CAGR a 3 años",
+  "after": "Retorno anual si el precio converge al valor en 3 años",
+  "reason": "Auditoria: multiplos FY+3 a valor presente (Ke) y EV menos deuda neta"
+ },
+ "Forward Valuation!M3": {
+  "before": 3,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M4": {
+  "before": 7.9,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M5": {
+  "before": 0.126,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M6": {
+  "before": 7.5,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M7": {
+  "before": 7.7,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M8": {
+  "before": 0.129,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M9": {
+  "before": 3.1,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M10": {
+  "before": 6.5,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M11": {
+  "before": 6.8,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M12": {
+  "before": 7.7,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M13": {
+  "before": 7.9,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!M14": {
+  "before": "",
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N3": {
+  "before": 2.8,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N4": {
+  "before": 7,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N5": {
+  "before": 0.143,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N6": {
+  "before": 6.8,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N7": {
+  "before": 7.1,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N8": {
+  "before": 0.14,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N9": {
+  "before": 2.8,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N10": {
+  "before": 6.1,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N11": {
+  "before": 6.3,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N12": {
+  "before": 6.9,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N13": {
+  "before": 7.2,
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
+ },
+ "Forward Valuation!N14": {
+  "before": "",
+  "after": "",
+  "reason": "Auditoria: columnas FY2027/FY2028 con valores fijos de otra empresa"
  }
 }

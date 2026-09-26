@@ -52,7 +52,7 @@ CUALITATIVO = {
     "B28": ("Si la IA reduce la cantidad de diseñadores o dibujantes, el cobro por usuario pierde base. El 4-sep-2026 "
             "la acción cayó 8% (a US$218) en una venta del sector software tras el cambio de CEO de Adobe."),
     "A29": "MaintainX: precio alto y dilución",
-    "B29": ("US$3.530M por ~US$135M de ARR (~26x ingresos), financiado con caja y US$2.000M de deuda nueva. Diluye el "
+    "B29": ("US$3.530M por ~US$135M de ARR (~26x ingresos), financiado con caja, papel comercial y un préstamo de US$1.000M (refinanciado con notas en sep-2026). Diluye el "
             "margen FY2027 y deja la deuda neta en ~US$3.100M (antes, caja neta)."),
     "A30": "Desaceleración subyacente y tasas altas",
     "B30": ("Billings +10% contra ingresos +16%: el empuje del cambio de modelo de transacción se agota y el RPO "
@@ -68,7 +68,7 @@ CUALITATIVO = {
     "B40": "Q2 FY2027: ingresos +16% y guía FY2027 elevada",
     "D40": "Ingresos US$2.046M, margen non-GAAP 41%, EPS non-GAAP US$3,30 (consenso US$3,12). FY2027: ingresos de US$8.295-8.345M.",
     "A41": "Financiamiento",
-    "B41": "Emisión de US$1.000M en notas para repagar el préstamo puente",
+    "B41": "Emisión de US$1.000M en notas para repagar el préstamo de MaintainX",
     "D41": "10-sep-2026: US$500M al 5,05% (2029) y US$500M al 5,65% (2033). Ratings A3 (Moody's) / BBB+ (S&P).",
     "A42": "Mercado / Sector",
     "B42": "Caída de 8% el 4-sep por el temor a la IA en el software",
@@ -79,8 +79,9 @@ CUALITATIVO = {
     "B46": "Análisis e impacto en la valoración",
     "A47": "MaintainX cambia el balance",
     "B47": ("El pago de US$3.530M se hizo el 3-ago, después del cierre del Q2 (31-jul): el balance del 10-Q todavía "
-            "muestra US$4.098M de caja. Impacto: el modelo usa caja pro forma de US$625M (Input!B19) y deuda de "
-            "US$3.705M (notas, préstamo puente y arrendamientos). Los ingresos de MaintainX entran en el crecimiento "
+            "muestra US$4.098M de caja. Ese día también tomó un préstamo de US$1.000M. Impacto: el modelo usa caja pro forma "
+            "de US$1.625M (Input!B19) y deuda de US$4.705M (notas, papel comercial, préstamo y arrendamientos); la "
+            "deuda neta es US$3.080M. Los ingresos de MaintainX entran en el crecimiento "
             "del Año 1."),
     "A48": "Guía FY2027 y Año 1 del modelo",
     "B48": ("La guía implica +14% en el segundo semestre FY2027 con MaintainX (~+12% orgánico). Con billings "
@@ -133,13 +134,13 @@ STORIES = {
            "obra a la operación de los activos. El mercado la valora a ~17x la utilidad non-GAAP proyectada por temor a "
            "que la IA reduzca los usuarios que pagan y con tasas de 5,17%. La tesis Base: +13% el próximo año (incluye "
            "MaintainX), 10% anual en los años 2-5, margen GAAP ajustado que sube de 29% a 33,5% en 5 años, ROIC "
-           "perpetuo de 15% y costo de capital de 10,8%."),
+           "perpetuo de 15% y costo de capital de 10,76%."),
     "G10": "Guía FY2027 (+15-16%) implica ~14% en el H2 con MaintainX; billings +10-11% -> Año 1 13%, años 2-5 10%.",
     "G11": "Año 1 29,5% (base ajustada 29,0%): mejora subyacente menos dilución de MaintainX. Converge a 33,5% (meta 41% non-GAAP FY2029).",
     "G12": "Tasa efectiva LTM de 22% que converge a la marginal de 25%.",
-    "G13": "1,5x: bottom-up FY2022-FY2026 con adquisiciones (~1,3x) y orgánico muy superior (poco capex, capital de trabajo negativo).",
-    "G14": "ROIC actual ~36% (ajustado por I+D); en perpetuidad 15%, por encima del costo de capital por el foso de estándar (DWG/Revit).",
-    "G15": "10,8%: beta global de Software desapalancada 1,33 (1,40 reapalancada), UST 5,17%, ERP 4,32%, Kd 6,17% (A3/BBB+).",
+    "G13": "1,23x: marginal FY2021-LTM (ΔIngresos US$4.000M / ΔCapital invertido con I+D US$3.263M, sin MaintainX), incluye las compras previas.",
+    "G14": "ROIC actual 18% (con I+D capitalizada y el goodwill de MaintainX); en perpetuidad 15%, sobre el costo de capital por el foso de estándar (DWG/Revit).",
+    "G15": "10,76%: beta global de Software desapalancada 1,33 (1,41 reapalancada), UST 5,17%, ERP 4,32%, Kd 6,17% (A3/BBB+), D/(D+E) 7,9%.",
 }
 
 SUPUESTOS_RECOMENDADOS = {
@@ -148,17 +149,19 @@ SUPUESTOS_RECOMENDADOS = {
     "C8": 0.10, "D8": "Billings y cRPO crecen 10-12%; el empuje del cambio de modelo de transacción se agota.",
     "C9": 0.335, "D9": "Meta de 41% non-GAAP FY2029 − SBC (~8,5%) − amortización (~1,5%) ≈ 31% GAAP + ~2,5pp de ajuste por I+D. Comparables: Adobe ~36%, Cadence ~30%, PTC ~30% (GAAP).",
     "C10": 5, "D10": "La meta de la empresa es a FY2029 (~2,5 años); se da más plazo por MaintainX y la inversión en IA.",
-    "C11": 1.5, "D11": "Bottom-up FY2022-FY2026 incluyendo adquisiciones (~1,3x); el crecimiento orgánico requiere mucho menos capital.",
-    "C12": 1.5, "D12": "Se mantiene: las adquisiciones siguen siendo parte del crecimiento.",
+    "C11": "='Input sheet'!B32", "D11": "Marginal FY2021-LTM con I+D capitalizada y adquisiciones previas, sin MaintainX (ya pagada en la caja): 1,23x. Fórmula viva en Input!B32.",
+    "C12": "='Input sheet'!B33", "D12": "Igual a los años 1-5: las adquisiciones siguen siendo parte del crecimiento.",
 }
 
 MULTIPLOS_EVALUACION = (
     "Evaluación ADSK: P/E, EV/EBITDA, EV/FCFF, P/FCFE y P/OCF fueron positivos los 4 años (ene-2023 a ene-2026), así que "
     "el mecanismo nativo (MIN de 4 años) no se rompe por cambios de signo. PERO esos años son de otro régimen de "
     "valuación: P/E GAAP de 48-60x y EV/EBITDA de 30-44x, contra ~24x y ~20x hoy. Por eso los múltiplos dan precios muy "
-    "superiores al DCF (P/E Base ~US$557) y se leen como techo si vuelve la valuación histórica. La categoría 'Software' "
-    "les da solo 40% del peso (DCF 60%). Además, el EV de 'Trailing Valuation' usa la caja del 31-jul, antes del pago de "
-    "MaintainX."
+    "superiores al DCF y se leen como techo si vuelve la valuación histórica. Correcciones de la auditoría (26-sep-2026): "
+    "(1) la historia de EV/FCFF, P/FCFE y P/OCF usa ahora los múltiplos reportados de 'Trailing Valuation' en los 4 "
+    "años (antes mezclaba el FCF reportado de ene-2023 con un FCFF del modelo sin SBC); (2) el rótulo 'NTM' era "
+    "trailing; (3) en el Resumen, los precios FY+3 se traen a valor presente con Ke y los de EV restan la deuda neta "
+    "por acción, para promediarlos con el DCF. La categoría 'Software' les da 40% del peso (DCF 60%)."
 )
 
 VO, INP, COC, RES = "'Valuation output'", "'Input sheet'", "'Cost of capital worksheet'", "'Resumen de Valoración'"
@@ -173,8 +176,8 @@ TESIS_ROWS: list[list] = [
      "mercado teme que la IA reduzca la cantidad de usuarios que pagan y porque el UST 10 años llegó a 5,17%. En "
      "agosto pagó US$3.530M por MaintainX: pasa de caja neta a deuda neta de ~US$3.100M. La pregunta es si el foso "
      "del estándar sostiene crecimiento de doble dígito y la meta de 41% de margen non-GAAP. Con 13% el próximo año, "
-     "10% en los años 2-5 y margen que converge a 33,5%, el DCF Base queda cerca del precio actual: la acción no está "
-     "cara, pero el DCF tampoco da margen de seguridad."],
+     "10% en los años 2-5 y margen que converge a 33,5%, el DCF Base queda ~10% por debajo del precio actual: el "
+     "mercado paga algo más que el caso Base y el DCF no da margen de seguridad."],
     [],
     ["Caso alcista (Bull)", "Caso bajista (Bear)"],
     ["Ingresos del Q2 FY2027 +16% (+14% sin efecto cambiario), cRPO +12% y FCF +24%; guía FY2027 elevada a +15-16%.",
@@ -199,9 +202,9 @@ TESIS_ROWS: list[list] = [
     ["Años de convergencia de margen", f"={INP}!B31", f"={INP}!B31", f"={INP}!B31",
      "5 años: la meta de la empresa es FY2029 (~2,5 años); se da más plazo por MaintainX y la inversión en IA."],
     ["Sales-to-Capital (años 1-5 / 6-10)", f"={INP}!B32", f"={INP}!B32", f"={INP}!B32",
-     "1,5x: bottom-up FY2022-FY2026 con adquisiciones (~1,3x); el crecimiento orgánico casi no requiere capital (capex ~1% de ingresos, capital de trabajo negativo)."],
+     "1,23x (fórmula viva en Input!B32): ΔIngresos FY2021-LTM (US$4.000M) / ΔCapital invertido con I+D capitalizada (US$3.263M, sin MaintainX, cuya compra ya reduce la caja). Incluye Innovyze y las compras de FY2025."],
     ["Costo de capital (WACC)", f"={COC}!B14", f"={COC}!B14", f"={COC}!B14",
-     "UST 10 años 5,17% (25-sep-2026) + beta 1,40 (Damodaran Software global desapalancada 1,33) × ERP 4,32% (1-sep-2026) = Ke 11,2%. Kd 6,17% (rating A3/BBB+; notas 2033 al 5,65%). D/(D+E) 6,6%. ROIC perpetuo 15%."],
+     "UST 10 años 5,17% (25-sep-2026) + beta 1,41 (Damodaran Software global desapalancada 1,33) × ERP 4,32% (1-sep-2026) = Ke 11,3%. Kd 6,17% (rating A3/BBB+; notas 2033 al 5,65%). D/(D+E) 7,9% con la deuda pro forma de US$4.705M. ROIC perpetuo 15%."],
     ["Referencia: margen base ajustado (B6)", f"={VO}!B6", f"={VO}!B6", f"={VO}!B6",
      "EBIT LTM US$2.041M + ajuste por capitalizar I+D (US$221M) = US$2.262M sobre ingresos de US$7.790M."],
     [],
@@ -212,29 +215,35 @@ TESIS_ROWS: list[list] = [
     ["Optimista", f"={VO}!B137", f"={RES}!E12", f"=B28/{INP}!$B$23-1", f"=C28/{INP}!$B$23-1"],
     ["Precio actual (GOOGLEFINANCE)", f"={INP}!B23", "Precio al día del análisis", f"={RES}!C25"],
     [f'=IF(AND(B26<B27;B27<B28;C26<C27;C27<C28;{VO}!C55<{INP}!B27;{INP}!B27<{VO}!C106;{VO}!C45<{VO}!C46;{VO}!C46<{VO}!C47);"✔ Orden verificado: Conservador < Base < Optimista en crecimiento, margen objetivo, valor DCF y precio ponderado";"✖ REVISAR: el orden Conservador < Base < Optimista no se cumple")'],
-    ["*El Precio Objetivo Ponderado combina el DCF (60%) con 5 múltiplos (EV/FCFF 15%, EV/EBITDA 10%, P/E 5%, P/FCFE 5%, P/OCF 5%) según la categoría 'Software'. Los múltiplos dan precios muy superiores al DCF porque su ancla (MIN de 4 años, ene-2023 a ene-2026) es de antes de la caída del software: P/E GAAP de ~48x contra ~24x hoy. Tomar el DCF como la lectura principal y los múltiplos como techo si vuelve la valuación histórica."],
+    ["*El Precio Objetivo Ponderado combina el DCF (60%) con 5 múltiplos (EV/FCFF 15%, EV/EBITDA 10%, P/E 5%, P/FCFE 5%, P/OCF 5%) según la categoría 'Software'. Todos están en valor presente: los precios por múltiplos de FY+3 se descuentan 3 años al costo del capital propio (Ke) y los de EV restan la deuda neta por acción. Aun así quedan por encima del DCF porque su ancla (MIN de 4 cierres fiscales, ene-2023 a ene-2026) es de antes de la caída del software: P/E GAAP de ~48x contra ~27x hoy. Tomar el DCF como la lectura principal y los múltiplos como techo si vuelve la valuación histórica."],
     [],
     ["4. LOG DE CORRECCIONES ESTRUCTURALES Y AJUSTES (backup de cada fórmula en reference/backups/adsk_formula_backup.json del repo JMR-valuation)"],
     ["#", "Celda / componente", "Antes", "Después", "Razón"],
     [1, "Copia nueva de la plantilla maestra", "—", "Modelo_JMR_ADSK en AAA Finanzas › Análisis › ADSK", "Pedido del usuario: hoja nueva y carpeta propia (la plantilla maestra no se tocó)."],
     [2, "Balance Sheet columna L (LTM)", "Cierre de ene-2026 (salvo la caja)", "Balance real al 31-jul-2026 (10-Q Q2 FY2027)", "El pipeline solo actualiza la caja en la columna LTM."],
-    [3, "Balance Sheet L20/L21/K21 (deuda y arrendamientos corrientes)", "0 / vacío", "1.493 (préstamo puente 994 + notas 2027 499) / 52", "Deuda de corto plazo y arrendamientos corrientes no taggeados en los tags del pipeline."],
+    [3, "Balance Sheet L20/L21/K21 (deuda y arrendamientos corrientes)", "0 / vacío", "1.493 (papel comercial 994 al 4,17% + notas 2027 499) / 52", "Deuda de corto plazo y arrendamientos corrientes no taggeados en los tags del pipeline."],
     [4, "Income Statement filas 15-16 (intereses)", "Fila 16 = ingreso + gasto (FY2026: 163); FY2017-FY2022 en 0", "Gasto bruto: FY2026 80, LTM 86 (Q2 estimado); FY2017-FY2022 = intereses pagados", "Input!B14 tomaba el ingreso por intereses como gasto."],
     [5, "Income Statement L8 / L11 (SG&A LTM)", "3.066 (= FY2026) / 79", "3.161 / −16", "SG&A LTM = FY2026 + H1 FY2027 − H1 FY2026."],
-    [6, "Input sheet!B19 (caja)", "=L5 -> 4.155 (31-jul-2026)", "=L5 − 3.530 -> 625", "Pro forma: MaintainX se pagó el 3-ago-2026, después del cierre del Q2."],
+    [6, "Input sheet!B16/B19 (deuda y caja)", "3.705 / 4.155 (31-jul-2026)", "4.705 / 1.625 (deuda neta 3.080)", "Pro forma: MaintainX se pagó el 3-ago-2026 (−3.530) con un préstamo de 1.000 tomado ese día; corregido tras la auditoría (antes caja 625 sin el préstamo)."],
     [7, "Input sheet!B20 (activos no operativos)", "0", "594 (títulos negociables LP 202 + inversiones estratégicas 392)", "Autodesk no usa el tag 'LongTermInvestments'."],
     [8, "Input sheet!B4 y Resumen C25 (fecha y precio del análisis)", "14-sep-2026 · US$228,93 (fecha heredada de la plantilla)", "25-sep-2026 · US$209,40", "La fecha de la plantilla no era la del análisis."],
-    [9, "Input sheet!B27-B33 (supuestos Base)", "Fórmulas por defecto: 8,1% LTM · B6−2pp · 8,1% · 33,0% · 5 · 1,54 · 1,54", "13% · 29,5% · 10% · 33,5% · 5 · 1,5 · 1,5", "Anclados a la guía FY2027, a la meta de margen FY2029 y a datos bottom-up (paso 4)."],
-    [10, "Input sheet!B49/B50 (ROIC en crecimiento estable)", "No (ROIC = WACC 9,3%) -> DCF Base ~US$152", "Sí, 15% -> DCF Base ~US$197", "Foso de estándar (DWG/Revit) y ROIC actual ~36%: sigue por encima del costo de capital en perpetuidad."],
+    [9, "Input sheet!B27-B33 (supuestos Base)", "Fórmulas por defecto: 8,1% LTM · B6−2pp · 8,1% · 33,0% · 5 · 1,54 · 1,54", "13% · 29,5% · 10% · 33,5% · 5 · 1,23 · 1,23", "Anclados a la guía FY2027, a la meta de margen FY2029 y a datos bottom-up (paso 4)."],
+    [10, "Input sheet!B49/B50 (ROIC en crecimiento estable)", "No (ROIC = WACC 9,3%) -> DCF Base ~US$144", "Sí, 15% -> DCF Base ~US$188", "Foso de estándar (DWG/Revit) y ROIC actual de 18% (con I+D y MaintainX; antes se citaba ~36% sin ellos): sigue por encima del costo de capital en perpetuidad."],
     [11, "Cost of capital worksheet", "Rating A1/A+ heredado · rf 4,99% · ERP 4,23% · vencimiento 3", "Direct Input rf + 1,0% = 6,17% · 5,17% · 4,09% · 5 años", "Rating partido A3/BBB+ (sin fila exacta en la tabla); datos de mercado de sep-2026."],
     [12, "Valuation output!C45 (margen Conservador)", "=B6", "=MIN(B6; Input!B28)", "El Conservador se estanca en el margen actual; nunca por encima del Año 1."],
     [13, "Valuation output!C47 (margen Optimista)", "=B30 + 5pp (38,5%)", "=B30 + 3pp (36,5%)", "Nivel de Adobe (~36% GAAP), el comparable maduro más rentable."],
     [14, "Resumen de Valoración!G3 (tipo de empresa)", "Genérico", "Software (DCF 60%)", "Utilidades GAAP deprimidas por SBC: más peso a DCF y flujo de caja."],
     [15, "Barrido de errores (paso 8)", "12 #DIV/0! en 'Industry Averages(US)'", "Sin cambios", "Preexistentes del dataset de Damodaran (industrias chicas); no dependen de ADSK."],
+    [16, "Input sheet!B22 (acciones)", "209,0 (portada 10-Q)", "214,4 (+5,413 RSU no consolidadas)", "Auditoría: las RSU pendientes no se restaban del valor por acción (Damodaran las suma a las acciones)."],
+    [17, "Input sheet!B32/B33 (sales-to-capital)", "1,5x manual (el bottom-up no estaba en el libro; Diagnostics mostraba 0,80x de nivel)", "1,23x, fórmula viva: ΔIngresos FY2021-LTM / ΔCapital invertido con I+D, sin MaintainX", "Auditoría: supuesto documentado en el propio libro."],
+    [18, "Resumen de Valoración!C7:E11 (múltiplos)", "Precio FY+3 sin descontar; EV sin restar deuda neta", "Valor presente a Ke (3 años); EV − deuda neta por acción", "Auditoría: se promediaba un valor presente (DCF) con precios futuros. La fila 13 pasa a leerse como retorno anual si el precio converge al valor."],
+    [19, "EVFCFF/PFCFE/POCF!C8:E8 y rótulos 'NTM'", "Ene-2024 a ene-2026 con FCFF/OCF del modelo (sin SBC: OCF FY2026 1.114 vs 2.452 reportado); rótulo NTM", "Múltiplos reportados de 'Trailing Valuation' en los 4 años; rótulo trailing (cierre fiscal)", "Auditoría: definiciones mezcladas en la historia del múltiplo."],
+    [20, "Trailing Valuation!L6 y Salud Financiera!L3/L4", "EV LTM 43.315 y deuda neta −450 (caja previa al pago de MaintainX)", "EV 46.845 y deuda neta 3.080 (pro forma)", "Auditoría: período incongruente con la valoración."],
+    [21, "Income Statement!L4, Crecimiento y Márgenes!C6:C9, Valuation output!B50:B52; Forward Valuation M:N", "«LTM» 8,1% (contra FY2026); CAGR con exponentes 1/3, 1/5, 1/10 para 2, 4 y 9 intervalos; valores fijos de otra empresa", "LTM interanual 17,9%; exponentes 1/3, 1/5, 1/9 sobre 3, 5 y 9 intervalos; columnas vacías", "Auditoría: etiquetas y cálculos informativos (no alimentan los escenarios)."],
     [f'="Resultado: DCF Base US$"&TEXT({VO}!B35;"0.00")&" (Conservador US$"&TEXT({VO}!B86;"0.00")&", Optimista US$"&TEXT({VO}!B137;"0.00")&"); precio ponderado Base US$"&TEXT({RES}!D12;"0.00")&"."'],
     [],
     ["5. CONCLUSIÓN"],
-    [f'="A US$"&TEXT({INP}!B23;"0.00")&", Autodesk cotiza "&TEXT({INP}!B23/{VO}!B35-1;"+0%;-0%")&" contra su DCF Base (US$"&TEXT({VO}!B35;"0.00")&"), entre el Conservador (US$"&TEXT({VO}!B86;"0.00")&") y el Optimista (US$"&TEXT({VO}!B137;"0.00")&"). El precio ya descuenta un escenario cercano al Base: no hay margen de seguridad en el DCF, pero tampoco un castigo exagerado considerando tasas de 5,17% y la deuda de MaintainX. El precio ponderado Base (US$"&TEXT({RES}!D12;"0.00")&") es mayor solo por los múltiplos históricos de 2023-2026."'],
+    [f'="A US$"&TEXT({INP}!B23;"0.00")&", Autodesk cotiza "&TEXT({INP}!B23/{VO}!B35-1;"+0%;-0%")&" contra su DCF Base (US$"&TEXT({VO}!B35;"0.00")&"), entre el Conservador (US$"&TEXT({VO}!B86;"0.00")&") y el Optimista (US$"&TEXT({VO}!B137;"0.00")&"). El precio descuenta algo más que el caso Base: no hay margen de seguridad en el DCF, aunque tampoco exige el escenario Optimista. El precio ponderado Base (US$"&TEXT({RES}!D12;"0.00")&") es mayor solo por los múltiplos históricos de 2023-2026."'],
     ["Variable clave a monitorear: el crecimiento de billings y de cRPO (10% y 12% en el Q2 FY2027). Si se sostienen en doble dígito mientras la IA se monetiza (sin caída de usuarios), el caso se mueve hacia el Optimista; si caen a un dígito medio, confirman el Conservador. Próximo dato: resultados del Q3 FY2027 (fines de nov-2026)."],
     [],
     [SOURCES],
@@ -244,13 +253,13 @@ TESIS_ROWS: list[list] = [
 def write_tesis(sh, backup_path) -> None:
     pct = {"numberFormat": {"type": "PERCENT", "pattern": "0.0%"}}
     ms.write_tesis(
-        sh, TESIS_ROWS, backup_path, text_rows=range(34, 49),
-        merges=[f"A{r}:E{r}" for r in (1, 2, 5, 30, 31, 33, 50, 53, 54, 56)] + [f"B{r}:E{r}" for r in range(7, 12)],
-        bold_rows=(4, 13, 24, 33, 52), head_rows=(7, 14, 25, 34),
+        sh, TESIS_ROWS, backup_path, text_rows=range(34, 55),
+        merges=[f"A{r}:E{r}" for r in (1, 2, 5, 30, 31, 33, 56, 59, 60, 62)] + [f"B{r}:E{r}" for r in range(7, 12)],
+        bold_rows=(4, 13, 24, 33, 58), head_rows=(7, 14, 25, 34),
         formats=[
             {"range": "B15:D18", "format": pct}, {"range": "B22:D22", "format": pct},
             {"range": "B19:D19", "format": {"numberFormat": {"type": "NUMBER", "pattern": "0"}}},
-            {"range": "B20:D20", "format": {"numberFormat": {"type": "NUMBER", "pattern": "0.0\"x\""}}},
+            {"range": "B20:D20", "format": {"numberFormat": {"type": "NUMBER", "pattern": "0.00\"x\""}}},
             {"range": "B21:D21", "format": {"numberFormat": {"type": "PERCENT", "pattern": "0.00%"}}},
             {"range": "B26:C29", "format": {"numberFormat": {"type": "CURRENCY", "pattern": "$0.00"}}},
             {"range": "D29", "format": {"numberFormat": {"type": "CURRENCY", "pattern": "$0.00"}}},
