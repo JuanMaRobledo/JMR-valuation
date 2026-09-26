@@ -110,7 +110,7 @@ class ValuationReport:
                          f"target FY+3={fy3.total_target_price:>10,.2f}  "
                          f"retorno total={fy3.total_return:+.1%}")
         lines.append("")
-        lines.append(f"Indicador exploratorio mixto DCF hoy + múltiplos FY+3 (tipo: {self.blend.company_type}):")
+        lines.append(f"Precio objetivo ponderado DCF hoy + múltiplos FY+3 (tipo: {self.blend.company_type}):")
         for scenario in SCENARIOS:
             price = self.blend.weighted_price_by_scenario[scenario]
             cagr = self.blend.cagr_3y_by_scenario[scenario]
