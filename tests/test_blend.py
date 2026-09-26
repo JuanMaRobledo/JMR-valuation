@@ -75,8 +75,8 @@ def test_run_blend_end_to_end():
     result = run_blend("Generico", current_price=276.27, values_by_scenario=values_by_scenario)
     assert result.weighted_price_by_scenario["Conservador"] < result.weighted_price_by_scenario["Base"]
     assert result.weighted_price_by_scenario["Base"] < result.weighted_price_by_scenario["Optimista"]
-    assert result.mos_price == pytest.approx(values_by_scenario["Base"].dcf_damodaran * 0.65)
-    assert result.buy_price_tiers.value_max == pytest.approx(values_by_scenario["Base"].dcf_damodaran * 0.70)
+    assert result.mos_price == pytest.approx(result.weighted_price_by_scenario["Base"] * 0.65)
+    assert result.buy_price_tiers.value_max == pytest.approx(result.weighted_price_by_scenario["Base"] * 0.70)
 
 
 def test_renormalize_weights_none_returns_original():
