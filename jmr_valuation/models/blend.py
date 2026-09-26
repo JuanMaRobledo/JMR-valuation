@@ -1,10 +1,11 @@
-"""Indicador exploratorio que combina DCF presente y 5 precios por múltiplos FY+3.
+"""Precio ponderado que combina DCF presente y 5 precios por múltiplos FY+3.
 
 Replica la hoja 'Resumen de Valoracion' (filas 5-19): cada metodo pesa distinto
 segun el tipo de negocio. Los pesos son heurísticos del Modelo JMR, no una
 tabla publicada por Damodaran; el promedio mezcla horizontes temporales y no
-se usa como valor intrínseco para aplicar el margen de seguridad. Las bandas
-de compra y ese margen parten únicamente del DCF Base expresado a valor de hoy.
+se usa por decisión del usuario como referencia para el margen de seguridad. Las bandas
+de compra y ese margen parten del ponderado Base. Mostrar por separado los
+márgenes del DCF y de cada múltiplo, ya que mezclan horizontes temporales.
 """
 from __future__ import annotations
 
@@ -98,8 +99,8 @@ class BlendResult:
     weights: dict[str, float]
     weighted_price_by_scenario: dict[str, float]   # Conservador / Base / Optimista
     cagr_3y_by_scenario: dict[str, float]
-    mos_price: float                                # valor intrínseco DCF Base de hoy con margen de seguridad
-    buy_price_tiers: BuyPriceTiers                   # basadas en el DCF Base de hoy
+    mos_price: float                                # ponderado Base con margen de seguridad
+    buy_price_tiers: BuyPriceTiers                   # basadas en el ponderado Base
 
 
 def weighted_target_price(
@@ -155,12 +156,11 @@ def run_blend(
     cagr_by_scenario = {
         scenario: cagr_3y(price, current_price) for scenario, price in weighted_by_scenario.items()
     }
-    # El DCF expresa valor presente y los múltiplos precios FY+3. El promedio
-    # mixto se conserva solo como diagnóstico del modelo original; usarlo como
-    # base del margen de seguridad mezclaría dos horizontes temporales.
-    base_price = values_by_scenario["Base"].dcf_damodaran
+    # El ponderado Base es la referencia de compra elegida por el usuario.
+    # DCF presente y multiples FY+3 mezclan horizontes: mostrar ese limite.
+    base_price = weighted_by_scenario["Base"]
     if base_price <= 0:
-        raise ValueError("El DCF Base debe ser positivo para calcular margen de seguridad")
+        raise ValueError("El ponderado Base debe ser positivo para calcular margen de seguridad")
 
     return BlendResult(
         company_type=company_type, weights=weights, weighted_price_by_scenario=weighted_by_scenario,
