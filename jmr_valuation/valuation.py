@@ -115,7 +115,7 @@ class ValuationReport:
             price = self.blend.weighted_price_by_scenario[scenario]
             cagr = self.blend.cagr_3y_by_scenario[scenario]
             lines.append(f"  {scenario:<12} promedio mixto = {price:>10,.2f}   CAGR ilustrativo = {cagr:+.1%}")
-        lines.append(f"  Precio con margen de seguridad sobre DCF Base de hoy ({self.inputs.margin_of_safety:.0%}): "
+        lines.append(f"  Precio con margen de seguridad sobre ponderado Base (DCF hoy + múltiplos FY+3) ({self.inputs.margin_of_safety:.0%}): "
                      f"{self.blend.mos_price:,.2f}")
         tiers = self.blend.buy_price_tiers
         lines.append(f"  Bandas de compra -- Value: {tiers.value_min:,.2f}-{tiers.value_max:,.2f}  "
