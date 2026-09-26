@@ -896,6 +896,21 @@
    "before": "(vacío)",
    "after": "DPS/dividendos/rendimiento/payout vivos",
    "fix": "A2"
+  },
+  "Input sheet!B4": {
+   "before": 46212,
+   "after": 46281,
+   "fix": "D1 fecha/precio del análisis"
+  },
+  "Resumen de Valoración!C25": {
+   "before": 333.08,
+   "after": 490.3,
+   "fix": "D1 fecha/precio del análisis"
+  },
+  "Resumen de Valoración!B3": {
+   "before": "='Input sheet'!B23",
+   "after": "=C25",
+   "fix": "D1 fecha/precio del análisis"
   }
  }
 }

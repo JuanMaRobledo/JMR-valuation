@@ -896,6 +896,11 @@
    "before": "(vacío)",
    "after": "DPS/dividendos/rendimiento/payout vivos",
    "fix": "A2"
+  },
+  "Tesis de Inversión y Supuestos!A40": {
+   "before": "Al precio de análisis de $95,98, el modelo arroja un valor ponderado base de aproximadamente $155 por acción (+62%). El caso conservador ronda $97, prácticamente en línea con mercado, mientras el optimista se aproxima a $227. La asimetría es atractiva, pero depende de que la caída de ventas de FY2026 se estabilice, el margen operativo se recupere gradualmente y la marca no siga perdiendo participación frente a competidores. Deben vigilarse comparables en Norteamérica, presión arancelaria, inventarios, promociones y la ejecución del equipo directivo.",
+   "after": "=\"Al precio de análisis de $\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\", el modelo arroja un precio objetivo ponderado Base de $\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\" por acción (\"&TEXT('Resumen de Valoración'!D12/'Resumen de Valoración'!C25-1;\"+0%;-0%\")&\"). El caso conservador da $\"&TEXT('Resumen de Valoración'!C12;\"0.00\")&\" (\"&TEXT('Resumen de Valoración'!C12/'Resumen de Valoración'!C25-1;\"+0%;-0%\")&\") y el optimista $\"&TEXT('Resumen de Valoración'!E12;\"0.00\")&\" (\"&TEXT('Resumen de Valoración'!E12/'Resumen de Valoración'!C25-1;\"+0%;-0%\")&\"). La asimetría es atractiva, pero depende de que la caída de ventas de FY2026 se estabilice, el margen operativo se recupere gradualmente y la marca no siga perdiendo participación frente a competidores. Deben vigilarse comparables en Norteamérica, presión arancelaria, inventarios, promociones y la ejecución del equipo directivo.\"",
+   "fix": "Conclusión con cifras vivas"
   }
  }
 }

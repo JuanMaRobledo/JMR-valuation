@@ -891,6 +891,16 @@
    "before": "valores de PYPL",
    "after": "(vacío)",
    "fix": "A8"
+  },
+  "Input sheet!B4": {
+   "before": "sep-26",
+   "after": 46281,
+   "fix": "D1 fecha/precio del análisis"
+  },
+  "Resumen de Valoración!B3": {
+   "before": "='Input sheet'!B23",
+   "after": "=C25",
+   "fix": "D1 fecha/precio del análisis"
   }
  }
 }
