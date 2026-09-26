@@ -1,0 +1,967 @@
+{
+ "Income Statement!E16": {
+  "before": "=E14-E15",
+  "after": "=-E15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!F16": {
+  "before": "=F14-F15",
+  "after": "=-F15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!G16": {
+  "before": "=G14-G15",
+  "after": "=-G15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!H16": {
+  "before": "=H14-H15",
+  "after": "=-H15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!I16": {
+  "before": "=I14-I15",
+  "after": "=-I15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!J16": {
+  "before": "=J14-J15",
+  "after": "=-J15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!K16": {
+  "before": "=K14-K15",
+  "after": "=-K15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Income Statement!L16": {
+  "before": "=L14-L15",
+  "after": "=-L15",
+  "reason": "Gasto financiero bruto (fila 16 = ingreso - (-gasto) sumaba ambos)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B21": {
+  "before": 0,
+  "after": 7.8,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.15,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.06,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.315,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.05,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.33,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.5,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.2,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0518,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.11,
+  "reason": "Supuestos AFYA (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Updated September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Cost of capital AFYA"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Cost of capital AFYA"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 4,
+  "reason": "Cost of capital AFYA"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "Cost of capital AFYA"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": 0.0869,
+  "reason": "Cost of capital AFYA"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.29,
+  "reason": "Escenarios AFYA: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": "='Input sheet'!B30+0,03",
+  "reason": "Escenarios AFYA: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa y precio del analisis (cierre 25-sep-2026)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": "='Input sheet'!D1",
+  "after": 13.0,
+  "reason": "Tipo de empresa y precio del analisis (cierre 25-sep-2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Afya Limited (Nasdaq: AFYA; B3: A2FY34)",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Virgilio Gibbon (CEO desde 2016). CFO: Luis André Blanco. Controlador: Bertelsmann (84% de los votos).",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Educación médica y soluciones para médicos en Brasil (Damodaran: Education)",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.afya.com.br  |  IR: https://ir.afya.com.br",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Mayor grupo de educación médica de Brasil: 3.785 plazas de medicina aprobadas (18-sep-2026), 62 campus y ocupación cercana a 100%. Ingresos 2025 de R$3.697M (+11,9%) y LTM a jun-2026 de R$3.826M; 9.395 empleados. Fusión con Yduqs firmada el 23-sep-2026 (Afya se incorpora a Yduqs y sale de Nasdaq).",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Undergraduate (medicina y salud)",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "R$1.762M en el H1 2026 (+7,4%), el 89% de los ingresos. Medicina R$1.499M (+6,5%): 26.421 alumnos (+2,7%) y cuota neta de R$9.443/mes (+3,9%). Otras carreras de salud +12,9%.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Continuing Education",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "R$144M en el H1 2026 (+4,6%): preparación para la residencia, posgrados y cursos cortos; alumnos +23,6% (56.237) con una cuota promedio menor.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Medical Practice Solutions",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "R$85M en el H1 2026 (+1,5%): Afya Whitebook (decisión clínica) e iClinic (gestión de consultorios). Pagadores planos (200.547) y usuarios activos −7,9%: el ciclo de inversión de 2026 todavía no rinde.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia de Distribución\ny Comercialización",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Escuelas de medicina en ciudades medianas del Norte y Nordeste con pocas alternativas; costo de adquisición de R$1.190 por alumno (2025). Dejó de comprar escuelas a gran escala (R$144M en 2025) y devuelve caja: R$448M en el H1 2026 (106% del flujo de caja libre para el accionista).",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Activo escaso y regulado",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "La plaza de medicina requiere autorización del MEC; ocupación ~100% y alumnos cautivos 6 años. Margen EBIT de 32,8% en 2025, contra 17-26% de los grupos educativos de B3.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Caja y disciplina de capital",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Caja operativa de R$1.532M en 2025 (antes de intereses); deuda neta sin arrendamientos de 0,8x el EBITDA ajustado; dividendo de R$3,45 por acción (40% de la utilidad) y recompras de 3% de las acciones en el H1.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Fusión con Yduqs",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Crea el lider nacional (~5.900 plazas, ~17% del país) con sinergias estimadas de R$2.000-2.200M de valor presente; Gibbon sería el CEO de la empresa combinada.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Exceso de oferta de plazas",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "El MEC autorizó 77 cursos nuevos (4.412 plazas) entre 2024 y 2025 y hubo ~5.400 plazas abiertas por vía judicial: el país supero las 50.000 plazas anuales. Presiona la cuota real y la ocupación.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Regulación de calidad (ENAMED) y fiscal",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Algunos programás de Afya sacaron nota 2 en el primer ENAMED y quedaron bajo supervisión del MEC (mar-2026). El Pilar Dos (mínimo de 15%) sube el impuesto: R$133M corrientes en 2025 contra R$24M en 2024.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Canje fijo con Yduqs",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "6,408347 acciones YDUQ3 por acción: el accionista queda expuesto a Yduqs, al real y al CADE. JPMorgan e Itaú BBA ven la relación favorable a Yduqs; el estadounidense no calificado recibe efectivo, no acciones.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 20-F 2025 de Afya (SEC EDGAR, 31-mar-2026) y XBRL ifrs-full; 6-K de resultados 2T26 y estados financieros al 30-jun-2026 (13-ago-2026); 6-K de la fusión con Yduqs (23-sep-2026) y de las conversaciones (24-ago-2026); MEC (ENAMED, ene/mar-2026); APM y Agencia Brasil (plazas de medicina); Bloomberg Línea, Exame y Brazil Journal (23/24-sep-2026); Damodaran Online (Education, ene-2026; ERP y prima país de Brasil, sep-2026); UST 10 años y cotizaciones de AFYA, YDUQ3 y BRL=X al 25-sep-2026 (yfinance).",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Período del Reporte: 13 de agosto de 2026 – 25 de septiembre de 2026",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T26: ingresos +5,7%, EBITDA ajustado +1,4% (margen −180pb) y utilidad neta +14%",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "H1 2026: ingresos R$1.985M (+7,0%), EBITDA ajustado R$918M (46,2%), utilidad R$463M; R$448M devueltos al accionista.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "Guía 2026 reafirmada",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ingresos R$3.950-4.100M, EBITDA ajustado R$1.700-1.800M y capex R$340-380M; supone una buena captación en el 2S26.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "M&A",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Acuerdo vinculante de fusión con Yduqs (23-sep-2026)",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Afya 69,0% / Yduqs 31,0%; Bertelsmann 47,4% de la combinada; salida de Nasdaq; cierre a más tardar el 31-mar-2028.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Regulación",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "MEC: +17 plazas en Cruzeiro do Sul; supervisión por ENAMED",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "3.785 plazas aprobadas (18-sep-2026). Las medidas cautelares por ENAMED no afectan 2026 según la empresa.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Mercado / Wall St.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "El canje favorece a Yduqs según JPMorgan e Itaú BBA",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "JPMorgan: canje justo 6,08 (paridad US$12,76 por AFYA). La acción cerró en US$13,00 el 25-sep (−5,3%), cerca del mínimo de 52 semanas.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "Valor standalone contra valor del canje",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "El modelo valúa el negocio de Afya solo (DCF + múltiplos). Desde el 23-sep la acción sigue a la relación de canje (6,408347 x YDUQ3 / R$ por US$): la Tesis compara ambos valores con fórmulas vivas.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Moneda y riesgo país",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "Todo en US$: cada año convertido a su tipo de cambio (flujos al promedio, saldos al cierre). El crecimiento en US$ descuenta ~1,5pp de diferencial de inflación; el costo de capital suma la prima país de Brasil (3,24%).",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Impuestos",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "PROUNI deja la tasa efectiva en ~11%; el modelo la lleva al 15% del Pilar Dos (Afya es parte del grupo Bertelsmann), no a la corporativa de 34%.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Múltiplos deprimidos",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "P/E de 25,8x en 2023 contra 10,4x en 2025 y 7,9x LTM: el ancla Base (mínimo positivo de 4 cierres) ya es el múltiplo post-derrumbe del sector, no el de la euforia post-IPO.",
+  "reason": "Contenido cualitativo AFYA"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 9395,
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=IFERROR('Input sheet'!D1/'Financials Multiples'!E72;\"\")",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "='Input sheet'!B16/'Input sheet'!B15",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!E3)^(1/6)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=('Income Statement'!K24/'Income Statement'!E24)^(1/6)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "=(4025/3697,3)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "=(1750/1680,3)-1",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=IFERROR(Dividendos!L4/'Input sheet'!D1;\"\")",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=Dividendos!L4",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadisticas AFYA (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Afya: el dueño de las plazas de medicina de Brasil, en la antesala de su fusión con Yduqs",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Afya compró durante una década escuelas de medicina en el interior de Brasil y hoy tiene 3.785 plazas con ocupación cercana a 100%, cuotas que suben con la inflación y un margen operativo de 33%. El problema es que el Estado abrió más de 5.000 plazas en dos años y empezó a medir la calidad con el ENAMED, y la empresa entra en una etapa de crecimiento de un dígito medio con un ciclo de inversión digital que todavía no rinde. El 23-sep-2026 acordó fusionarse con Yduqs: el modelo valúa el negocio standalone en US$ y lo compara con el valor de la relación de canje.",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Guía 2026 R$3.950-4.100M (+7% a +11%) y H1 +7% -> ~7,5% en R$; −1,5pp de diferencial de inflación -> Año 1 6% en US$. Años 2-5: ticket ~inflación + maduracion de plazas -> 5%.",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 31,5% (LTM 32,6% menos el ciclo de inversión: EBITDA ajustado −190pb en el H1 2026). Converge a 33% en 5 años (FY2025 32,8%).",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva LTM 10,6% (PROUNI) que converge al 15% del Pilar Dos.",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,5x (años 1-5): crecimiento orgánico con poco capital nuevo; con 1,5x el FCFF del Año 1 (~US$190M) queda en linea con el FCFF real LTM. 1,2x (años 6-10): el crecimiento vuelve a requerir plazas nuevas.",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC actual ~15% (EBIT después de impuestos sobre capital con los intangibles de las compras); converge al costo de capital después del año 10.",
+  "reason": "Historia AFYA"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "11,2%: rf 5,18% (UST) + beta 1,20 (Education global 0,74 reapalancada con D/E de mercado 72%) x ERP 7,33% (4,09% maduro + 3,24% Brasil) = Ke 14%; Kd 8,7% en US$. Terminal 11% (se mantiene el riesgo país).",
+  "reason": "Historia AFYA"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.06,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Guía 2026: ingresos R$3.950-4.100M (+7% a +11%); H1 +7,0%. En US$ se resta ~1,5pp de diferencial de inflación Brasil-EE.UU.",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.315,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen EBIT LTM 32,6% menos el ciclo de inversión 2026 (EBITDA ajustado −190pb en el H1).",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.05,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Cuota neta de medicina ~inflación (+3,9% en el H1) + maduracion de plazas + salud +13%; sin compras. ~6,5% en R$ -> 5% en US$.",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.33,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "FY2025 32,8% y H1 2026 34,8% (estacional). Sin expansion adicional: la oferta de plazas nuevas limita la cuota real.",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "La mejora de margen ya esta en los numeros: 5 años.",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.5,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Crecimiento orgánico (guía sin compras): con 1,5x el FCFF del Año 1 (~US$190M) coincide con el FCFF real LTM. El marginal histórico (0,7x) incluye R$4.400M de compras.",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.2,
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Despues del año 5 el crecimiento requiere plazas nuevas (compradas o construidas).",
+  "reason": "Recomendaciones AFYA"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación AFYA: P/E, EV/EBITDA, EV/FCFF, P/OCF y P/FCFE fueron positivos todos los años, así que el mecanismo nativo funciona: el ancla Base es el mínimo positivo de los cierres dic-22 a dic-25, que cae en dic-2025 (P/E 10,4x, EV/EBITDA 6,5x). Son los múltiplos del sector educativo brasileño después del derrumbe, no los de 2019-2020 (P/E 40-53x). Los múltiplos en US$ se calcularon con el tipo de cambio de cada año (el real pasó de 3,94 a 6,18). Para comparar: los pares de B3 (Yduqs, Cogna, Ser, Cruzeiro do Sul, Ânima) cotizan a EV/EBITDA de 4,5-5,2x.",
+  "reason": "Evaluacion de multiplos AFYA"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

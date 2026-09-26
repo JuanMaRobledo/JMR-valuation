@@ -137,6 +137,10 @@ def write_tesis(sh, rows: list[list], backup_path: Path, *, text_rows: range, me
     backup.setdefault("Tesis de Inversión y Supuestos!A1:H120", {"before": old, "reason": "Plantilla de placeholders reemplazada"})
     backup_path.write_text(json.dumps(backup, ensure_ascii=False, indent=1))
     ws.batch_clear(["A1:H120"])
+    # Descombinar ANTES de escribir: un valor escrito en una celda cubierta por
+    # una combinacion anterior (p.ej. formato de model_presentation.py) se pierde.
+    sh.batch_update({"requests": [{"unmergeCells": {"range": {
+        "sheetId": ws.id, "startRowIndex": 0, "endRowIndex": 120, "startColumnIndex": 0, "endColumnIndex": 8}}}]})
     rows = [r + [""] * (5 - len(r)) for r in rows]
     for i in text_rows:
         rows[i] = ["'" + x if isinstance(x, str) and x[:1] in ("=", "#", "+", "-") else x for x in rows[i]]
