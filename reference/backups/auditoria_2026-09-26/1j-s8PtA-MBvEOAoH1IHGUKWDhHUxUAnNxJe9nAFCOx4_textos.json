@@ -1,0 +1,1059 @@
+{
+ "title": "Modelo_JMR_Plantilla_Maestra AAPL",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "APPLE INC. (AAPL) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: $333,08 (14-sept-2026) | WACC: 11,49%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Apple es la mayor empresa de tecnología de consumo del mundo, con un modelo dual de hardware de alto margen (iPhone, Mac, Wearables) y Servicios de margen aún mayor y creciente participación en el mix (App Store, iCloud, AppleCare). Tras un estancamiento de ingresos en 2022-2024 (incluida una caída real de -2,8% en FY2023), 2026 muestra una reaceleración real y ya demostrada: +17% y +16% interanual en los últimos dos trimestres reportados, impulsada por el superciclo del iPhone 17. La tensión central: a un P/E trailing de ~39x, el mercado ya paga una prima histórica alta que exige que este ritmo se sostenga por años, mientras Apple enfrenta aranceles reales sobre su manufactura concentrada en China (~90%), presión regulatoria creciente sobre Services (la UE confirmó las reglas de la DMA contra Apple) y una estrategia de IA más cautelosa que la de sus pares, apoyada en el modelo Gemini de Google en vez de un modelo propio de frontera."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "Reaceleración ya demostrada, no proyectada: ingresos +17% i.a. (trimestre de marzo) y +16% i.a. (trimestre de junio) de FY2026, con récords en iPhone, Mac y Services.",
+    "Valuación exige ejecución casi perfecta: a ~39x P/E trailing, el mercado ya paga una prima histórica alta -- cualquier desaceleración del superciclo golpearía el múltiplo, no solo las utilidades."
+   ],
+   [
+    "Services en récord constante y alto margen: US$30.740M en el trimestre de junio (+12% i.a.), empujando el margen operativo consolidado de 24,15% (2020) a 33,17% LTM.",
+    "Exposición real a aranceles: ~90% de la manufactura en China bajo un arancel plano del 10% (antes hasta 145%) -- un costo estructural que persiste pese al traslado parcial de producción a India."
+   ],
+   [
+    "Generación de caja excepcional financia recompras masivas: OCF LTM de US$146.724M, acciones en circulación cayeron de ~16.400M (2022) a ~14.600M (hoy), sosteniendo el crecimiento de EPS.",
+    "Riesgo regulatorio creciente sobre Services: la UE confirmó las reglas de la DMA (multa de €500M en 2025), e ingresos de comisión del App Store en EE.UU. cayeron 18% en 2026 por desarrolladores evitando la comisión del 30%."
+   ],
+   [
+    "Ecosistema y silicio propio (Apple Silicon) como ventaja de costo y diferenciación, con nuevos catalizadores de producto (Vision Pro 2, iPhone plegable, Siri renovada) para 2026-2027.",
+    "Estrategia de IA más cautelosa y dependiente de un socio externo: revamp de Siri retrasada a 2026, apoyada en el modelo Gemini de Google, con capex de IA (~US$14.000M) muy por debajo de los hyperscalers (US$700.000M+)."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    0.03,
+    0.12,
+    0.15,
+    "Base = crecimiento LTM real (+12,17% i.a., Income Statement). Conservador = retorno al patrón de estancamiento 2022-2024 (que incluyó una caída real de -2,8% en FY2023) si los vientos regulatorios/arancelarios pesan más que el superciclo. Optimista = el ritmo real de los últimos dos trimestres reportados (+17%/+16% i.a.) se sostiene."
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "3,0% (flat)",
+    0.08,
+    "15,0% (flat)",
+    "Base desacelera desde el 12% del año 1, pero muy por encima del CAGR 3-5 años histórico (2,6%-2,8%, distorsionado por el estancamiento 2022-2024) -- el superciclo de producto y Services deberían sostener un ritmo mayor al de esos años estancados."
+   ],
+   [
+    "Margen Operativo — Año 1",
+    0.36,
+    0.36,
+    0.36,
+    "Paso adelante modesto desde el nivel actual ajustado (35,52%, basis con I+D capitalizado), coherente con el apalancamiento operativo ya demostrado (EPS +29% i.a. vs. ingresos +16% i.a. en el último trimestre)."
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "35,52% (nivel actual)",
+    0.38,
+    0.43,
+    "Conservador = la mejora de margen se estanca donde ya está (aranceles y presión regulatoria sobre Services impiden más expansión). Base = continuación moderada de la tendencia de 6 años (24,15%→33,17%) vía mix hacia Services. Optimista = Base + 5pp, si el mix de Services escala sin que la regulación lo frene."
+   ],
+   [
+    "Años de convergencia de margen",
+    4,
+    4,
+    4,
+    "Más corto que el default genérico (7 años) porque la brecha entre el margen actual (35,5%) y el objetivo es pequeña, y la tendencia de mejora ya lleva 6 años consecutivos documentados (2020-LTM) -- no es una transformación de modelo de negocio."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "Más bajo que un software puro (Adobe usa 4,0x) porque Apple tiene manufactura real: CapEx LTM de ~2,15% de los ingresos (US$10.041M sobre US$466.823M), aunque eficiente por su capital de trabajo negativo (cuentas por pagar mayores que por cobrar)."
+   ],
+   [
+    "Costo de Capital (WACC)",
+    0.1149,
+    0.1149,
+    0.1149,
+    "Beta de industria Computers/Peripherals (Single Business Global), más alto que el de software (1,47 desapalancado). Costo de deuda vía Synthetic Rating: cobertura de intereses real de ~20x → rating estimado Aaa/AAA → spread mínimo (0,40%)."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ($333,08)"
+   ],
+   [
+    "Conservador",
+    "$117,88",
+    "$124,68",
+    -0.6256
+   ],
+   [
+    "Base",
+    "$163,67",
+    "$185,95",
+    -0.4417
+   ],
+   [
+    "Optimista",
+    "$248,70",
+    "$329,64",
+    -0.0103
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF (40%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"Madura\" (Apple tiene utilidades positivas y estables desde hace más de una década)."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA AAPL (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Supuestos de crecimiento/margen (Input sheet B27-B33) recalibrados de los valores heredados de ADBE a datos reales de AAPL.",
+    "Año 1: 12% (crecimiento LTM real). Margen objetivo 38% con convergencia en 4 años. Primer intento (10%/35,5%/37%) se revisó al alza tras notar que quedaba por debajo del propio crecimiento LTM real (+12,17%) -- corregido para respetar la regla de anclar al dato trailing, no redondear hacia abajo."
+   ],
+   [
+    2,
+    "Crecimiento Conservador y Optimista (Valuation output C55/C106) recalibrados de 6%/16% (ADBE) a 3%/15% (AAPL).",
+    "Conservador anclado en el patrón real de estancamiento 2022-2024 de Apple (incluida una caída real); Optimista anclado en el ritmo real de los últimos dos trimestres reportados (+17%/+16% i.a.)."
+   ],
+   [
+    3,
+    "Sales-to-capital (B32/B33) recalibrado de 4,0x/4,5x (ADBE, software puro) a 3,0x/3,5x (AAPL, manufactura real).",
+    "Bottoms-up con datos reales: CapEx LTM de AAPL es ~2,15% de los ingresos, más alto que el ~0,8% de Adobe, por la manufactura física y la red de retail."
+   ],
+   [
+    4,
+    "Múltiplos objetivo (J8/J19/J30 en EVFCFF/POCF/PE/PFCFE/EVEBITDA) recalculados como implícitos del propio DCF, reemplazando los valores heredados de ADBE.",
+    "Mismo método que ADBE/UBER: mantiene el múltiplo objetivo consistente con los supuestos de crecimiento/margen del DCF, en vez de anclar en los múltiplos históricos realizados de AAPL (24,6x-36,7x de P/E), que ya reflejan la re-rating del mercado hacia un múltiplo de \"quality compounder\"."
+   ],
+   [
+    5,
+    "Cost of Capital worksheet (Synthetic Rating tipo \"1\" - empresa grande, beta Single Business Global) verificado sin cambios.",
+    "Apple tiene deuda real (US$101.589M) con cobertura de intereses de ~20x (rating estimado Aaa/AAA) -- el enfoque heredado de ADBE también es apropiado para AAPL."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "A diferencia de UBER/ADBE/DUOL, aquí el hallazgo central no es un margen de seguridad, sino lo contrario: al precio actual ($333,08), el modelo sugiere que Apple cotiza por ENCIMA del valor intrínseco incluso en el caso Optimista (-1,0%), y con una brecha grande en el caso Base (-44,2%). Esto no es un error del modelo -- refleja que el mercado, a ~39x P/E trailing, ya está pagando una prima que exige que la reaceleración de crecimiento reciente (+16-17% i.a.) y la expansión de margen se sostengan durante varios años seguidos, no solo dos trimestres. La variable clave a monitorear es precisamente esa: si el superciclo del iPhone 17 y el crecimiento de Services mantienen este ritmo hacia 2027 (con Vision Pro 2, iPhone plegable y una Siri renovada como catalizadores), o si vuelve el patrón de estancamiento 2022-2024 una vez que se agote el efecto del ciclo de producto actual -- en cuyo caso la brecha entre precio y valor intrínseco se ampliaría, no se cerraría."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla. Conservador y Optimista ('Valuation output' C55/C106) se recalibraron a mano con datos reales de AAPL: Conservador ancla el crecimiento en el patron de estancamiento 2022-2024 (incluida una caida real de -2,8% en FY2023) si los vientos regulatorios/arancelarios pesan mas que el superciclo actual, y Optimista en que el ritmo real de los ultimos dos trimestres (+17%/+16% i.a.) se sostenga -- ambos por fuera del mecanismo automatico nativo (ver hoja 'Tesis de Inversion y Supuestos', seccion 4)."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    0.12,
+    "Crecimiento LTM real (Income Statement, cierre sept-2026) de +12,17% i.a. -- ya incorpora los dos trimestres mas recientes de +17%/+16% i.a. del superciclo del iPhone 17, sin extrapolar ese pico trimestral hacia adelante de forma indefinida.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.36,
+    "El margen operativo ajustado actual (basis con I+D capitalizado, \"Valuation output\"!B6) ya es 35,52%. Un paso adelante modesto es coherente con el apalancamiento operativo ya demostrado (EPS +29% i.a. vs. ingresos +16% i.a. en el ultimo trimestre reportado).",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.08,
+    "Desacelera desde el 12% del año 1 -- muy por encima del CAGR 3-5 años historico (2,6%-2,8%, distorsionado por el estancamiento 2022-2024), reflejando que el superciclo actual de producto (iPhone 17, foldable e iPhone e IA en 2026-2027) y el crecimiento de Services deberian sostener un ritmo mayor al de esos años estancados, aunque moderandose respecto al pico reciente.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.38,
+    "El margen operativo ha subido de forma sostenida de 24,15% (2020) a 33,17% LTM, impulsado por el mix creciente hacia Services de alto margen. 38% asume que esa tendencia continua de forma moderada, sin asumir que los vientos en contra (aranceles, presion regulatoria sobre Services) la detengan del todo.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    "4 años",
+    "Mas corto que el default generico (7 años) porque la brecha entre el margen actual (35,5%) y el objetivo (38%) es pequeña, y la tendencia de mejora ya lleva 6 años consecutivos documentados (2020-LTM) -- no es una transformacion de modelo de negocio."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    "3,0x",
+    "Mas bajo que el de una empresa de software puro (Adobe usa 4,0x) porque Apple tiene manufactura real: CapEx LTM de ~2,15% de los ingresos (US$10.041M sobre US$466.823M), aunque sigue siendo eficiente por su capital de trabajo negativo (cuentas por pagar mayores que por cobrar)."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    "3,5x",
+    "Asume una leve mejora de eficiencia de capital en la segunda mitad del horizonte, a medida que la diversificacion de la cadena de suministro hacia India ya este mayormente construida."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico; hoy estan todas en el modo automatico (MIN de los ultimos 4 años)."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: al igual que ADBE y UBER (y a diferencia de DUOL), el historial de utilidades/EBITDA de AAPL NO tiene el problema de signo cambiante -- Apple viene reportando utilidades positivas y estables cada año desde 2016. Los múltiplos históricos realizados de AAPL son altos y crecientes (P/E de 24,6x en FY2022 a 33,7x en FY2025), reflejando la re-rating del mercado hacia un múltiplo de \"quality compounder\". Sobrescribí las 5 celdas Base (columna J) con el múltiplo IMPLÍCITO del propio DCF (Valor de Equity o Enterprise Value del escenario Base, dividido por la métrica proyectada FY+1) en vez del MIN histórico -- por consistencia metodológica con ADBE/UBER/DUOL, y porque el MIN histórico (24,6x de P/E) sigue implicando una prima sobre los flujos de caja reales que el DCF, con supuestos de crecimiento/margen ancorados a datos duros, no logra justificar del todo: los múltiplos DCF-implícitos resultantes (13,1x/16,7x/24,7x de P/E para Conservador/Base/Optimista) son notablemente más bajos que el múltiplo de mercado actual (~38,8x LTM) -- ver la conclusión de la hoja \"Tesis de Inversión y Supuestos\" para el detalle de esta brecha."
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "Apple Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Tim Cook"
+   ],
+   [
+    "Sector Industrial",
+    "Hardware de Consumo / Ecosistema de Dispositivos y Servicios Digitales"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.apple.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área"
+   ],
+   [
+    "Visión General de la Empresa",
+    "Apple es la mayor empresa de tecnología de consumo del mundo por capitalización de mercado, con un modelo de negocio dual: hardware de alto margen (iPhone, Mac, iPad, Wearables) que alimenta un ecosistema de Servicios (App Store, iCloud, Apple Music, AppleCare, publicidad) de margen aún mayor y creciente participación en el mix. Tras un período de crecimiento estancado en 2022-2024 (ingresos prácticamente planos, incluso con una caída de -2,8% en FY2023), la compañía muestra en 2026 una reaceleración real y ya demostrada: +17% interanual en el trimestre de marzo y +16% en el de junio, impulsada por el superciclo del iPhone 17 y récords sucesivos en Servicios. El desafío estructural es la dependencia de manufactura en China (~90% de la producción) frente a los aranceles de EE.UU., y una estrategia de IA más cautelosa que la de sus pares (Apple Intelligence/Siri, apoyada en el modelo Gemini de Google) que todavía no se traduce en un producto claramente diferenciado."
+   ],
+   [
+    "iPhone",
+    "El producto insignia y la mayor fuente de ingresos. El superciclo del iPhone 17 impulsó récords de ingresos en los trimestres de marzo y junio de FY2026 -- el primer signo claro de reaceleración de la demanda tras varios años de estancamiento."
+   ],
+   [
+    "Services",
+    "App Store, iCloud, Apple Music, AppleCare, publicidad, Apple Pay. US$30.740M en el trimestre de junio de FY2026 (+12% i.a.), el segmento de mayor margen y el motor estructural de la expansión de márgenes de la compañía -- pero también el más expuesto a riesgo regulatorio (DMA en la UE, presión antitrust en EE.UU.)."
+   ],
+   [
+    "Mac / iPad / Wearables",
+    "Mac e iPad se benefician del ecosistema y de los chips propios de Apple (Apple Silicon); Wearables (Watch, AirPods, Vision Pro) es la categoría de crecimiento más especulativo, con Vision Pro 2 y un iPhone plegable como próximos catalizadores de producto para 2026-2027."
+   ],
+   [
+    "Estrategia de Producto y Distribución",
+    "Integración vertical hardware-software-servicios con silicio propio (Apple Silicon) como ventaja de costo y diferenciación, y un enfoque de IA \"on-device\" centrado en privacidad -- más cauteloso y con mucho menor gasto de capital (~US$14.000M) que los hyperscalers (más de US$700.000M combinados en 2026), apostando a que la base instalada de dispositivos y el ecosistema de Servicios compensen no ser el líder en modelos de IA de frontera."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema"
+   ],
+   [
+    "Reaceleración de Crecimiento Ya Demostrada, No Solo un Nuevo Ciclo de Producto Prometido",
+    "Ingresos +17% i.a. en el trimestre de marzo de FY2026 y +16% en el de junio -- métricas reales ya reportadas, no guía -- impulsadas por demanda récord del iPhone 17 y nuevos récords en Mac, Services y el propio trimestre de junio."
+   ],
+   [
+    "Servicios en Récord Constante, Alto Margen y Alta Recurrencia",
+    "Services alcanzó US$30.740M en el trimestre de junio (+12% i.a.), con márgenes estructuralmente más altos que el hardware -- a medida que gana peso en el mix, empuja el margen operativo consolidado hacia arriba de forma sostenida (33,17% LTM vs. 24,15% en 2020)."
+   ],
+   [
+    "Balance y Generación de Caja Excepcionales, con Retorno de Capital Masivo",
+    "OCF LTM de US$146.724M sobre ingresos de US$466.823M -- una máquina de generación de caja que financia recompras de acciones muy agresivas (acciones en circulación cayeron de ~16.400M en 2022 a ~14.600M hoy), sosteniendo el crecimiento de EPS incluso con ingresos más moderados."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo"
+   ],
+   [
+    "Valuación de Mercado Exige una Ejecución Casi Perfecta",
+    "A un P/E trailing de ~39x (precio US$332,89 sobre EPS LTM de US$8,59), el mercado ya paga una prima histórica alta para Apple -- que requiere que el crecimiento de doble dígito reciente y la expansión de margen continúen sostenidos por varios años, no solo un trimestre o dos."
+   ],
+   [
+    "Exposición a Aranceles de EE.UU.-China (~90% de la Manufactura en China)",
+    "Un arancel plano del 10% sobre productos fabricados en China (reducido desde un régimen recíproco de hasta 145% en 2025) sigue siendo un costo estructural real; Apple está duplicando la producción de iPhones en India para fin de 2026, pero migrar la cadena de suministro completa tomaría años y costaría miles de millones."
+   ],
+   [
+    "Riesgo Regulatorio Creciente Sobre el Negocio de Servicios (DMA/App Store)",
+    "Una corte de la UE confirmó las reglas de la Digital Markets Act contra Apple (tras una multa de €500M en 2025 por incumplimiento), y los ingresos por comisión del App Store en EE.UU. cayeron 18% en lo que va de 2026 a medida que desarrolladores grandes evitan la comisión del 30% -- analistas estiman que un cambio del 50% de los grandes desarrolladores podría recortar el EPS en ~3%."
+   ],
+   [
+    "Estrategia de IA Más Cautelosa y Dependiente de un Socio Externo (Google)",
+    "La revamp de Siri con capacidades conversacionales avanzadas se retrasó a 2026 y se apoya en el modelo Gemini de Google en vez de un modelo propio de frontera -- mientras competidores como Amazon y Google siguen mejorando sus asistentes de IA, y el gasto de capital de Apple en infraestructura de IA (~US$14.000M) es una fracción del de los hyperscalers (US$700.000M+ combinados)."
+   ],
+   [
+    "Fuente: Yahoo Finance, Investor Relations de Uber (8-K Q2 2026), TechCrunch, Electrek, SEC EDGAR -- septiembre 2026"
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: Agosto – Septiembre 2026"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados del Trimestre de Junio FY2026",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Superciclo del iPhone 17",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Regulación: DMA y App Store",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Analistas de Wall Street",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Aranceles y Cadena de Suministro",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados del Tercer Trimestre Fiscal 2026 (Junio): Ingresos +16% Interanual, Récords en Todas las Categorías",
+    "Apple reportó ingresos de US$109.400 millones (+16% interanual) y EPS diluido de US$2,02 (+29% interanual, incluyendo un beneficio de US$0,11 por reembolsos de aranceles), con nuevos récords de trimestre de junio en ingresos totales, EPS, iPhone, Mac y Services. Services alcanzó US$30.740 millones (+12% i.a.). El trimestre de marzo de FY2026 ya había mostrado +17% interanual, impulsado por demanda extraordinaria del iPhone 17."
+   ],
+   [
+    "Duplicando la Producción de iPhones en India Ante los Aranceles a China",
+    "Con ~90% de la manufactura de Apple concentrada en China, el arancel plano del 10% sobre productos chinos (reducido desde un régimen recíproco de hasta 145% en 2025) sigue siendo un costo real. Apple planea duplicar su producción anual de iPhones en India para fines de 2026 como cobertura parcial, aunque migrar la cadena de suministro completa tomaría años."
+   ],
+   [
+    "Corte de la UE Confirma las Reglas de la DMA Contra Apple; Ingresos de Comisión del App Store en EE.UU. Caen 18%",
+    "Una corte de la Unión Europea confirmó las reglas de la Digital Markets Act aplicadas a Apple, tras una multa de €500 millones en mayo de 2025 por incumplimiento -- Apple puede apelar ante la corte más alta de la UE. En paralelo, los ingresos de comisión del App Store en EE.UU. cayeron 18% en lo que va de 2026, mientras el gasto total de consumidores en la tienda solo subió 3% interanual -- señal de que desarrolladores grandes están evitando la comisión del 30% a través de canales de pago alternativos."
+   ],
+   [
+    "Analistas Mantienen Calificación \"Buy\" con Precio Objetivo Cerca del Precio Actual",
+    "El consenso de 45 analistas de Wall Street tiene un precio objetivo mediano de US$335 (rango US$215-US$400), prácticamente en línea con el precio de mercado de ~US$333 -- reflejando expectativas de un mejor ciclo de producto en 2026-2027 (Siri renovado, iPhone plegable, Vision Pro 2), pero sin mucho margen de re-rating adicional al múltiplo actual."
+   ],
+   [
+    "Apple Intelligence: Revamp de Siri Retrasada a 2026, Apoyada en el Modelo Gemini de Google",
+    "Pruebas internas revelaron problemas sustanciales con las mejoras de Siri, generando temor de que algunas funciones deban reconstruirse desde cero -- Apple posterga la revamp conversacional de Siri a 2026 y se apoya en el modelo Gemini de Google (tras haber evaluado también a OpenAI) en vez de desarrollar un modelo propio de frontera, mientras el gasto de capital de Apple en infraestructura de IA (~US$14.000M) es una fracción del de los hyperscalers (US$700.000M+ combinados en 2026)."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "Reaceleración Real del Superciclo del iPhone vs. una Valuación que Ya Exige Perfección"
+   ],
+   [
+    "Apple es la mayor empresa de tecnología de consumo del mundo, con un modelo dual de hardware de alto margen (iPhone, Mac, Wearables) y Servicios de margen aún mayor (App Store, iCloud, AppleCare). Tras un estancamiento de ingresos en 2022-2024, 2026 muestra una reaceleración real y ya demostrada: +17% y +16% interanual en los últimos dos trimestres reportados, impulsada por el superciclo del iPhone 17 y récords en Services. La tensión central: a un P/E trailing de ~39x, el mercado ya paga una prima que exige que este ritmo se sostenga por años, mientras la empresa enfrenta aranceles reales sobre su manufactura en China (~90% de la producción), presión regulatoria creciente sobre Services (DMA/App Store) y una estrategia de IA más cautelosa que la de sus pares, apoyada en el modelo Gemini de Google en vez de un modelo propio.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "LTM real (Income Statement) +12,17% i.a., y los últimos dos trimestres reportados +17% y +16% -- un superciclo de producto ya en marcha (iPhone 17), no una proyección. Se modera en años 2-5 a medida que el efecto supercycle se normaliza sobre una base de ingresos ya muy grande (~US$467.000M).",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo ajustado actual (basis con I+D capitalizado) es 35,5% -- ya en una trayectoria de mejora sostenida desde 24,15% en 2020. Un leve paso adelante en año 1 es coherente con el apalancamiento operativo ya demostrado (EPS +29% i.a. en el trimestre de junio, muy por encima del +16% de ingresos), impulsado por el mix creciente hacia Services de alto margen."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Más bajo que el de una empresa de software puro (3,0x) porque Apple, a diferencia de Adobe, tiene manufactura real: CapEx LTM de ~2,15% de los ingresos (US$10.041M sobre US$466.823M) por tooling, data centers y retail -- aun así muy eficiente gracias a un capital de trabajo negativo (cuentas por pagar mucho mayores que por cobrar), reflejo de la cadena de suministro histórica de Apple."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Madura"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    333.08
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

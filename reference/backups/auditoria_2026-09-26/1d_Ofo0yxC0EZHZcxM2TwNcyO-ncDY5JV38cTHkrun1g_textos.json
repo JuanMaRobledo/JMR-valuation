@@ -1,0 +1,1168 @@
+{
+ "title": "Copia de Modelo_JMR_Plantilla_Maestra NKE (automático)",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "NKE (NIKE, Inc.) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\" (22-sep-2026) | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Nike está en el peor momento de su historia reciente: ingresos planos por 3 años, margen operativo subyacente de ~6% (contra 13-15% en FY2021-FY2024), la acción en mínimos de 12 años y fuera del S&P 100. La pregunta es si el reseteo de Elliott Hill (volver a los mayoristas, al deporte y a menos promociones) recupera márgenes cerca de su historia, o si aranceles de 15% y marcas como On y Hoka dejaron a Nike en un nivel estructuralmente más bajo. El reembolso único de aranceles de US$986M hace que FY2026 parezca mejor de lo que fue: el modelo parte del EBIT normalizado (6,1%). Con una recuperación gradual a 11%, el DCF vale menos que el precio actual: el mercado ya descuenta una recuperación más fuerte que la del caso Base."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "Mayoristas +6% en FY2026 (+4% sin efecto cambiario) y +4% en el Q4, con Norteamérica creciendo: el reseteo con los retailers funciona.",
+    "NIKE Direct −8% y digital −12% sin efecto cambiario (FY2026); Greater China −12% y Converse −32% en el Q4."
+   ],
+   [
+    "Expansión de margen bruto adelantada al Q1 FY2027 por ahorros en la cadena de suministro (guía del 30-jun-2026).",
+    "Sin el reembolso de aranceles: margen bruto FY2026 de 40,8% (−190pb), EPS de US$1,58 (−27%) y FCF de US$2.180M (−33%). Los aranceles suben a 15% desde agosto."
+   ],
+   [
+    "Balance sólido (caja e inversiones de corto plazo de US$9.000M, A2/A+) y dividendo de US$1,64 (~4,5%) que sigue creciendo.",
+    "Guía H1 FY2027: ingresos con caída de un dígito bajo a medio y utilidades planas. On y Hoka ganan cuota; Mbappé se fue a On (sep-2026)."
+   ],
+   [
+    "Acción ~45% debajo del máximo de 52 semanas y a ~17x la utilidad LTM, contra 22-62x históricos: si vuelve el margen de 13%, hay recorrido.",
+    "Bajas de Baird, UBS, Telsey y Stifel (sep-2026) antes del Q1 FY2027 (1-oct) y salida del S&P 100: el mercado desconfía del ritmo del turnaround."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS (fórmulas vivas del modelo)"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación y fuente (dato real)"
+   ],
+   [
+    "Crecimiento de ingresos — Año 1",
+    "='Valuation output'!C55",
+    "='Input sheet'!B27",
+    "='Valuation output'!C106",
+    "Base −2%: consenso FY2027 −1,9% y guía H1 FY2027 de caída de un dígito bajo a medio. Conservador −3%: la caída del H1 se extiende. Optimista +4,5%: recuperación inmediata (CAGR Base +1pp)."
+   ],
+   [
+    "Crecimiento de ingresos — Años 2-5",
+    "='Valuation output'!D55",
+    "='Input sheet'!B29",
+    "='Valuation output'!D106",
+    "Base 3,5%: consenso FY2028 +3,5% y CAGR de 10 años de Nike (3,4%). No desacelera respecto del Año 1 porque el Año 1 es de contracción (turnaround). Desde el año 6 convergen a la tasa libre de riesgo."
+   ],
+   [
+    "Margen operativo — Año 1",
+    "='Valuation output'!C57",
+    "='Valuation output'!C6",
+    "='Valuation output'!C108",
+    "6,5% contra una base normalizada de 6,1% ('Valuation output'!B6, EBIT FY2026 sin los US$986M de aranceles): la guía adelanta la expansión de margen bruto al Q1 FY2027."
+   ],
+   [
+    "Margen objetivo (convergencia)",
+    "='Valuation output'!C45",
+    "='Valuation output'!C46",
+    "='Valuation output'!C47",
+    "Base 11%: por debajo del promedio FY2017-FY2024 (12,5%) por aranceles de 15% y más competencia; comparables Lululemon 13%, Deckers 15%, Adidas ~8,5%. Conservador: se estanca en el Año 1 (6,5%). Optimista: vuelve al promedio FY2021-FY2024 (13,4%)."
+   ],
+   [
+    "Años de convergencia de margen",
+    "='Input sheet'!B31",
+    "='Input sheet'!B31",
+    "='Input sheet'!B31",
+    "7 años: el turnaround recién empieza y la mejora todavía no se ve en los resultados."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "2,1x bottom-up: ΔIngresos FY2020-FY2026 (+US$9.000M) / ΔCapital invertido (+US$4.400M)."
+   ],
+   [
+    "Costo de capital (WACC)",
+    "='Cost of capital worksheet'!B14",
+    "='Cost of capital worksheet'!B14",
+    "='Cost of capital worksheet'!B14",
+    "Tasa libre de riesgo 4,96% (UST 10 años, 22-sep-2026) + beta ~1,0 (Damodaran Shoe desapalancada 0,89 relevered; comparables 0,76-2,0, mediana 1,06) x ERP 4,32% (1-sep-2026) = Ke 9,3%. Kd 5,74% (A2/A). D/(D+E) 13%."
+   ],
+   [
+    "Referencia: margen base normalizado (B6)",
+    "='Valuation output'!B6",
+    "='Valuation output'!B6",
+    "='Valuation output'!B6",
+    "EBIT FY2026 reportado US$3.797M − reembolso único de aranceles US$986M = US$2.811M."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "DCF vs. precio actual",
+    "Ponderado vs. precio actual"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B26/'Input sheet'!$B$23-1",
+    "=C26/'Input sheet'!$B$23-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B27/'Input sheet'!$B$23-1",
+    "=C27/'Input sheet'!$B$23-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B28/'Input sheet'!$B$23-1",
+    "=C28/'Input sheet'!$B$23-1"
+   ],
+   [
+    "Precio actual (GOOGLEFINANCE)",
+    "='Input sheet'!B23",
+    "Precio al día del análisis",
+    "='Resumen de Valoración'!C25"
+   ],
+   [
+    "=IF(AND(B26<B27;B27<B28;C26<C27;C27<C28;'Valuation output'!C55<'Input sheet'!B27;'Input sheet'!B27<'Valuation output'!C106;'Valuation output'!C45<'Valuation output'!C46;'Valuation output'!C46<'Valuation output'!C47);\"✔ Orden verificado: Conservador < Base < Optimista en crecimiento, margen objetivo, valor DCF y precio ponderado\";\"✖ REVISAR: el orden Conservador < Base < Optimista no se cumple\")"
+   ],
+   [
+    "*El Precio Objetivo Ponderado combina el DCF (40%) con 5 múltiplos (EV/EBITDA 20%, P/E 20%, EV/FCFF 10%, P/FCFE 5%, P/OCF 5%) según la categoría 'Madura'. Los múltiplos dan precios muy superiores al DCF porque su ancla (MIN de 4 años) es de may-2023 a may-2026, antes del derrumbe de la acción: P/E 22x contra 17x hoy. Tomar el DCF como la lectura más confiable y los múltiplos como techo si vuelve la valuación histórica."
+   ],
+   [],
+   [
+    "4. LOG DE CORRECCIONES ESTRUCTURALES Y AJUSTES (backup de cada fórmula en reference/backups/nke_formula_backup.json del repo JMR-valuation)"
+   ],
+   [
+    "#",
+    "Celda / componente",
+    "Antes",
+    "Después",
+    "Razón"
+   ],
+   [
+    1,
+    "Loader SEC: EBIT",
+    "0 (Nike nunca taggea OperatingIncomeLoss)",
+    "Gross Profit − SG&A: FY2026 US$3.797M",
+    "Arreglado en el loader antes de esta hoja (PR #2)."
+   ],
+   [
+    2,
+    "Loader SEC: pasivos totales (Balance Sheet fila 29)",
+    "0 y 'Otros pasivos LP' negativos",
+    "(Pasivo + Patrimonio) − Patrimonio: US$23.545M",
+    "Nike no taggea 'Liabilities'."
+   ],
+   [
+    3,
+    "Loader SEC: D&A FY2017-FY2022",
+    "0 (EBITDA = EBIT)",
+    "706 … 717 (tag 'Depreciation')",
+    "El tag combinado de D&A recién existe desde FY2023."
+   ],
+   [
+    4,
+    "Loader SEC: inversiones de corto plazo",
+    0,
+    "US$1.464M (títulos de deuda disponibles para la venta, corrientes)",
+    "Nike no usa 'ShortTermInvestments'."
+   ],
+   [
+    5,
+    "Income Statement filas 15-16 (intereses)",
+    "El INGRESO por intereses (278) figuraba como gasto",
+    "Gasto bruto = ingreso − neto: FY2026 US$228M",
+    "Nike solo taggea el ingreso y el neto."
+   ],
+   [
+    6,
+    "Input sheet!B13 (EBIT base)",
+    "=L12 (US$3.797M, 8,2%)",
+    "=L12 − 986 (US$2.811M, 6,1%)",
+    "Reembolso único de aranceles IEEPA registrado en el Q4 FY2026."
+   ],
+   [
+    7,
+    "Input sheet!B20 (activos no operativos)",
+    "=L14+L15 -> 8.512 (activos LP operativos)",
+    "=L14 + 684 (reembolso de aranceles por cobrar)",
+    "Other LT Assets es operativo; los US$684M se cobran en FY2027."
+   ],
+   [
+    8,
+    "Input sheet!B24 / B1 / B17",
+    "Tasa efectiva de Dec '23 · TICKER vacío · I+D = Yes",
+    "LTM 20,3% · =A1 · No",
+    "Bugs de la plantilla; Nike no reporta I+D por separado."
+   ],
+   [
+    9,
+    "Valuation output!C106 (crecimiento Optimista)",
+    "=B27×1,3 -> −2,6% (MENOR que el Base −2%)",
+    "=B29+1pp -> 4,5%",
+    "Bug #11 del apéndice: con crecimiento negativo, multiplicar por 1,3 lo empeora."
+   ],
+   [
+    10,
+    "Valuation output!C55 (crecimiento Conservador)",
+    "=PROMEDIO(B27;rf) -> +1,5% (MAYOR que el Base)",
+    "=B27−1pp -> −3%",
+    "Bug #10 del apéndice."
+   ],
+   [
+    11,
+    "Valuation output!C45 / C47 (márgenes de escenario)",
+    "=B6 (8,2% con el reembolso) / =B30+5%",
+    "=B28 (6,5%) / =PROMEDIO(FY2021-FY2024) 13,4%",
+    "Anclas reales: estancamiento en el Año 1 / regreso a márgenes previos al deterioro."
+   ],
+   [
+    12,
+    "Financials Multiples: NWC proyectado (filas 22/61/101)",
+    "PROMEDIO(ΔNWC/ΔIngresos): con FY2026 casi plano (+US$89M) el ratio daba 21x -> NWC +US$11.000M/año; H42/H82 vacías",
+    "Intensidad de NWC (NWC/Ingresos, promedio de 3 años) × ΔIngresos",
+    "FCFF/FCFE/OCF proyectados daban negativos y precios objetivo de −US$130 a +US$924."
+   ],
+   [
+    13,
+    "PFCFE!J8/J19/J30",
+    "MIN de 4 años = −93x (FCFE FY2026 −US$734M)",
+    "Implícito del DCF: equity / FCFE FY+1 (13,6x / 25,4x / 38,1x)",
+    "Paso 6: el múltiplo cambia de signo."
+   ],
+   [
+    14,
+    "Cost of capital worksheet",
+    "Rating A1/A+ · rf 4,99% · ERP 4,23% · vencimiento 3",
+    "A2/A · 4,96% · 4,09% · 9 años",
+    "Moody's bajó a A2 (nov-2025); datos de mercado de sep-2026."
+   ],
+   [
+    15,
+    "Option value / Cost of capital B24 / Financials Multiples",
+    "#DIV/0! (bug #5 y tablas vacías)",
+    "IFERROR",
+    "Barrido de errores (paso 8)."
+   ],
+   [
+    "=\"Resultado: DCF Base US$\"&TEXT('Valuation output'!B35;\"0.00\")&\" (Conservador US$\"&TEXT('Valuation output'!B86;\"0.00\")&\", Optimista US$\"&TEXT('Valuation output'!B137;\"0.00\")&\"); precio ponderado Base US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\".\""
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "=\"A US$\"&TEXT('Input sheet'!B23;\"0.00\")&\", Nike cotiza por ENCIMA de su DCF Base (US$\"&TEXT('Valuation output'!B35;\"0.00\")&\", \"&TEXT('Valuation output'!B35/'Input sheet'!B23-1;\"+0%;-0%\")&\") y cerca del Optimista (US$\"&TEXT('Valuation output'!B137;\"0.00\")&\"): el mercado ya paga por una recuperación del margen hacia ~13%. El precio ponderado Base (US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\") es mayor solo porque los múltiplos históricos son de antes del derrumbe. No hay margen de seguridad en el DCF: la tesis alcista necesita que el turnaround sea más rápido y profundo que el caso Base.\""
+   ],
+   [
+    "Variable clave a monitorear: el margen bruto sin aranceles extraordinarios (40,8% en FY2026). Si el Q1 FY2027 (1-oct-2026) confirma la expansión guiada y NIKE Direct deja de caer, el caso se mueve hacia el Optimista (margen de 13%); si el margen bruto sigue bajo presión por aranceles de 15% y promociones, se mueve al Conservador (margen de ~6,5% permanente)."
+   ],
+   [],
+   [
+    "Fuentes: 10-K FY2026 de NIKE (SEC EDGAR, XBRL, cierre 31-may-2026); comunicado de resultados Q4 FY2026 (30-jun-2026) y llamada con inversores; CNBC, Yahoo Finance, Motley Fool, ad-hoc-news e Investing.com (jun-sep 2026); Moody's (baja a A2, nov-2025); Damodaran Online (indname.xls ene-2026, ERPbymonth sep-2026); UST 10 años al 22-sep-2026; consenso de analistas vía yfinance (22-sep-2026)."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla -- Conservador y Optimista se derivan AUTOMATICAMENTE del historico real de la empresa. Esta hoja se completa (columnas Recomendación/Justificación) al analizar cada ticker, con la data real de 'Crecimiento y Margenes', 'Cualitativo' y 'Eficiencia de capital' como respaldo."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    -0.02,
+    "Consenso FY2027 −1,9% y guía H1 FY2027 de caída de un dígito bajo a medio.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.065,
+    "EBIT subyacente FY2026 6,1% (sin los US$986M de aranceles) + expansión de margen bruto guiada desde el Q1 FY2027.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.035,
+    "Consenso FY2028 +3,5%; CAGR de 10 años de Nike 3,4%.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.11,
+    "Por debajo del promedio FY2017-FY2024 (12,5%) por aranceles de 15% y más competencia; comparables: Lululemon 13%, Deckers 15%, Adidas ~8,5%.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    7,
+    "El turnaround recién empieza y la mejora de margen no está demostrada."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    2.1,
+    "Bottom-up FY2020-FY2026: ΔIngresos / ΔCapital invertido."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    2.1,
+    "Modelo con activos propios (tiendas y centros de distribución) estable."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico. La fila de evaluación (abajo) se completa al analizar cada ticker."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación NKE: P/E, EV/EBITDA, EV/FCFF y P/OCF fueron positivos los 4 años, así que el mecanismo nativo (MIN de 4 años) funciona. OJO: esos 4 años (may-2023 a may-2026) son ANTERIORES al derrumbe de 2026, así que el MIN (P/E 22x, EV/EBITDA 15,5x) queda por encima del múltiplo de hoy (P/E LTM 17x, EV/EBITDA 12x) y los múltiplos dan precios mayores que el DCF. P/FCFE: el FCFE de FY2026 fue NEGATIVO (−US$734M) y el MIN de 4 años daba −93x -> se reemplazó (J8/J19/J30 de la hoja PFCFE) por el múltiplo implícito del DCF de cada escenario (equity / FCFE FY+1). Además, el NWC proyectado de 'Financials Multiples' se recalculó con intensidad de NWC (ver log de la Tesis)."
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "NIKE, Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Elliott Hill (CEO desde oct-2024). CFO: David Denton desde el 17-ago-2026 (reemplazó a Matthew Friend)."
+   ],
+   [
+    "Sector Industrial",
+    "Calzado e indumentaria deportiva (Damodaran: Shoe)"
+   ],
+   [
+    "Sitio Web Oficial",
+    "https://about.nike.com  |  IR: https://investors.nike.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área",
+    "Descripción"
+   ],
+   [
+    "Visión General de la Empresa",
+    "La mayor marca deportiva del mundo: ingresos FY2026 (a may-2026) de US$46.400M, planos (−2% sin efecto cambiario). Vende calzado, indumentaria y equipamiento bajo NIKE, Jordan y Converse, a través de mayoristas (US$27.500M, +6%) y de venta directa NIKE Direct (US$17.700M, −6%). Tiene ~73.000 empleados."
+   ],
+   [
+    "NIKE Brand (calzado, indumentaria, Jordan)",
+    "US$45.200M en FY2026 (+1%, −1% sin efecto cambiario), el 97% de los ingresos. El plan \"Win Now\" de Hill reorienta la marca al deporte (running, básquet, fútbol) después de años de depender de franquicias de estilo de vida (Dunk, Air Force 1) que se saturaron."
+   ],
+   [
+    "Converse",
+    "US$1.200M en FY2026 (−31%; −32% sin efecto cambiario); en el Q4 cayó 32%. Es la marca en peor momento del grupo y un candidato natural a reestructuración o venta."
+   ],
+   [
+    "Geografías",
+    "Norteamérica es la región que crece. Greater China cayó 12% en el Q4 FY2026 y EMEA también está en baja. Las ventas internacionales tardan más en recuperarse de lo previsto."
+   ],
+   [
+    "Estrategia de Distribución\ny Comercialización",
+    "Revierte la apuesta de 2020-2023 por la venta directa: vuelve al canal mayorista (Foot Locker, Dick's, JD), que crece 6% mientras NIKE Direct cae 6% y el digital 12%. Menos promociones y liquidación de inventario antiguo (inventario de US$7.500M, plano)."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema",
+    "Argumento"
+   ],
+   [
+    "El reseteo mayorista funciona",
+    "Mayoristas +6% en FY2026 (+4% sin efecto cambiario) y +4% en el Q4; Norteamérica creciendo. La empresa espera que el margen bruto empiece a expandirse desde el Q1 FY2027, antes de lo previsto, por acciones de costos en la cadena de suministro."
+   ],
+   [
+    "Balance y dividendo",
+    "Caja e inversiones de corto plazo de US$9.000M y deuda de US$7.900M; rating A2 (Moody's) / A+ (S&P). Dividendo de US$1,64 por año (~4,5% de rendimiento) que sigue creciendo (+5% en FY2026)."
+   ],
+   [
+    "Valuación deprimida",
+    "Cotiza cerca de mínimos de 12 años, ~45% debajo del máximo de 52 semanas (más de US$64). A ~17x la utilidad LTM, contra 22-62x históricos. Si el margen vuelve al 13-15% de FY2021-FY2024, la acción tiene recorrido."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo",
+    "Riesgo"
+   ],
+   [
+    "Pérdida de relevancia frente a nuevas marcas",
+    "On, Hoka (Deckers) y otras le ganan cuota en running. En sep-2026 Kylian Mbappé dejó Nike por On tras 20 años. NIKE Direct −8% y digital −12% sin efecto cambiario en FY2026."
+   ],
+   [
+    "Márgenes subyacentes en caída",
+    "Sin el reembolso único de aranceles de US$986M, el margen bruto FY2026 fue 40,8% (−190pb) y el EPS US$1,58 (−27%). FCF de US$2.180M (−33%). Los aranceles pasan de 10% a 15% desde agosto de 2026."
+   ],
+   [
+    "Guía débil y presión de mercado",
+    "Guía H1 FY2027: ingresos con caída de un dígito bajo a medio y utilidades planas. En sep-2026, bajas de recomendación de Baird (a Neutral, precio objetivo de US$70 a US$44), UBS (US$42), Telsey (US$44) y Stifel (US$40); salida del S&P 100 el 21-sep-2026."
+   ],
+   [],
+   [
+    "Fuentes: 10-K FY2026 de NIKE (SEC EDGAR, XBRL, cierre 31-may-2026); comunicado de resultados Q4 FY2026 (30-jun-2026) y llamada con inversores; CNBC, Yahoo Finance, Motley Fool, ad-hoc-news e Investing.com (jun-sep 2026); Moody's (baja a A2, nov-2025); Damodaran Online (indname.xls ene-2026, ERPbymonth sep-2026); UST 10 años al 22-sep-2026; consenso de analistas vía yfinance (22-sep-2026)."
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: 30 de junio de 2026 – 22 de septiembre de 2026"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "Titular",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados",
+    "Q4 FY2026: ingresos −1% y reembolso de aranceles de US$986M",
+    "",
+    "Ingresos de US$11.000M (−4% sin efecto cambiario); margen bruto de 49,2% con +900pb del reembolso IEEPA; EPS de US$0,72 (US$0,20 sin el reembolso)."
+   ],
+   [
+    "Guía",
+    "H1 FY2027: ingresos con caída de un dígito bajo a medio",
+    "",
+    "Utilidades planas en el H1; margen bruto levemente positivo en el Q1; aranceles de 15% desde agosto. Resultados del Q1 FY2027 el 1-oct-2026."
+   ],
+   [
+    "Gestión",
+    "Cambio de CFO: David Denton reemplaza a Matthew Friend",
+    "",
+    "Efectivo desde el 17-ago-2026."
+   ],
+   [
+    "Marketing / Deportes",
+    "Kylian Mbappé deja Nike y firma con On",
+    "",
+    "Fin de una relación de 20 años (sep-2026); una señal de la competencia de las marcas nuevas en fútbol y running."
+   ],
+   [
+    "Mercado / Wall St.",
+    "Salida del S&P 100 y ola de bajas de recomendación",
+    "",
+    "Salió del S&P 100 el 21-sep-2026 (sigue en el S&P 500). Baird, UBS, Telsey y Stifel recortaron; el consenso es Mantener con precio objetivo de ~US$48."
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia",
+    "Análisis e impacto en la valoración"
+   ],
+   [
+    "El reembolso de aranceles distorsiona FY2026",
+    "Los US$986M de recupero de aranceles IEEPA se registraron en el Q4 FY2026 y explican casi todo el EBIT reportado de más: sin ellos, el EBIT es ~US$2.811M (6,1%) contra US$3.797M (8,2%). Al 31-may se habían cobrado solo US$302M. Impacto: el modelo usa el EBIT normalizado como base (Input!B13) y suma los US$684M pendientes como activo no operativo."
+   ],
+   [
+    "Guía FY2027 y aranceles",
+    "La empresa espera que los ingresos caigan un dígito bajo a medio en el H1 FY2027, con utilidades planas. Asume aranceles incrementales de 10% hasta julio y 15% después, y adelantó la expansión del margen bruto al Q1 por ahorros en la cadena de suministro. El consenso FY2027 es de ingresos −1,9% (US$45.500M) y EPS de US$1,69. Es el ancla del Año 1 del Base (−2%, margen 6,5%)."
+   ],
+   [
+    "Competencia y marca",
+    "La salida de Mbappé a On (sep-2026) simboliza la pérdida de relevancia frente a marcas nuevas. NIKE Direct y el digital siguen cayendo (−8% y −12% sin efecto cambiario) y Converse −32%. El reseteo mayorista compensa en volumen pero con menor margen: ancla del margen objetivo Base (11%), por debajo del promedio histórico."
+   ],
+   [
+    "Presión de mercado",
+    "La acción perdió ~45% desde su máximo de 52 semanas, salió del S&P 100 y recibió 4 bajas de precio objetivo la semana del 18-sep antes del Q1 FY2027 (1-oct). El consenso de 36 analistas es Mantener, con precio objetivo medio de US$47,7 (rango US$23-94)."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "Nike: la marca más grande del deporte en medio de un reseteo que el mercado todavía no sabe si funciona"
+   ],
+   [
+    "Nike vende US$46.400M por año, pero sus ingresos no crecen desde FY2023 y su margen operativo subyacente cayó de ~13% a ~6% (sin el reembolso de aranceles de FY2026). El nuevo CEO revirtió la estrategia de venta directa, volvió a los mayoristas y reorientó la marca al deporte, mientras On y Hoka le ganan cuota y los aranceles suben. La tesis Base: un FY2027 todavía en caída (−2%), una recuperación gradual (3,5% por año) y un margen que sube a 11% en 7 años, por debajo de su historia por aranceles y competencia, con costo de capital de 8,6%.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Guía H1 FY2027 con caída de un dígito bajo a medio; consenso FY2027 −1,9% y FY2028 +3,5% -> Año 1 −2%, años 2-5 +3,5%.",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "Año 1 6,5% (subyacente FY2026 6,1% + expansión de margen bruto guiada desde el Q1). Converge a 11% en 7 años."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Tasa efectiva FY2026 de 20,3% que converge a la marginal de 25%."
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "2,1x: relación marginal FY2020-FY2026 (ΔIngresos US$9.000M / ΔCapital invertido US$4.400M)."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "ROIC actual ~17% (sobre el EBIT normalizado); la marca sostiene retornos sobre el costo de capital."
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "8,6%: beta de industria Shoe (desapalancada 0,89, relevered ~1,0), rating A2/A, ERP de 4,09% (sep-2026)."
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Madura"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    36.1
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

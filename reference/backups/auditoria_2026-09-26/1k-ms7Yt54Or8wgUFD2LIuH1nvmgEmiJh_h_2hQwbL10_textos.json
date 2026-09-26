@@ -1,0 +1,1099 @@
+{
+ "title": "DUOL análisis maestro",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "DUOLINGO (DUOL) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: $153,92 (14-sep-2026) | WACC: 10,94%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Duolingo es una plataforma de aprendizaje de idiomas freemium/suscripción en transición desde \"empresa de crecimiento que quema caja\" hacia \"empresa de crecimiento rentable\" (primer año realmente rentable: FY2025). La tensión central de la tesis: ¿logra convertir su ventaja de contenido nativo de IA y su base de usuarios en expansión (58,7M DAU, +23% interanual) en apalancamiento operativo sostenido — o la desaceleración de bookings y el riesgo de disrupción por asistentes de idioma con IA generativa limitan de forma permanente su poder de fijación de precios?"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "DAU acelerando (+23% i.a.) mientras la monetización todavía no alcanzó a esa base — upside si el gap se cierra.",
+    "Ingresos crecen más lento que DAU — la monetización no está alcanzando al crecimiento de usuarios."
+   ],
+   [
+    "Moat de contenido propio + IA (Duolingo Max) difícil de replicar; margen bruto ~72,7% típico de software.",
+    "Riesgo de disintermediación: IA generativa gratuita puede sustituir la propuesta de valor central."
+   ],
+   [
+    "Negocio extremadamente liviano en capital (CapEx/Revenue ~2%) — cada dólar de crecimiento requiere poco capital.",
+    "Múltiplo actual (EV/EBITDA LTM ~50x) deja poco margen de error si la desaceleración de bookings continúa."
+   ],
+   [
+    "Management reinvierte deliberadamente en marketing/producto en vez de maximizar margen de corto plazo.",
+    "Esa misma reinversión pospone la expansión de margen — Adj. EBITDA guiado a BAJAR de 26,5% a ~25% en 2027."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    0.15,
+    0.19,
+    0.23,
+    "Conservador = extremo bajo de la guía propia de la empresa para FY2026 (15%-18%, earnings call ago-2026). Base = entre esa guía y el crecimiento trailing (21,8%), ponderando el momentum de DAU. Optimista = tasa de crecimiento de DAU real (+23%) — \"la monetización alcanza al crecimiento de usuarios\"."
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "15,0% (flat)",
+    0.16,
+    "23,0% (flat)",
+    "Conservador y Optimista mantienen el ritmo del año 1 (sin desaceleración adicional en el horizonte cercano); Base modera hacia la madurez de mercado."
+   ],
+   [
+    "Margen Operativo — Año 1",
+    0.2,
+    0.2,
+    0.2,
+    "Compresión leve desde el nivel actual ajustado por capitalización de I+D (21,76%) — coherente con la guía de la propia empresa de que el margen retrocede en 2027 por mayor gasto en marketing."
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    0.2176,
+    0.3,
+    0.35,
+    "Conservador = la historia de mejora de margen se estanca justo donde ya está hoy (nivel actual ajustado). Base = comparables maduros de suscripción/contenido (Netflix ~33%, Match Group ~32%), no el promedio de industria (3,7%, distorsionado por empresas no rentables) ni el nivel de MSFT (46%, monopolio de infraestructura). Optimista = ejecución best-in-class, por encima de esos comparables."
+   ],
+   [
+    "Años de convergencia de margen",
+    7,
+    7,
+    7,
+    "La empresa guió que el margen NO se expande en 2027 (retrocede levemente) por decisión propia de reinvertir más en marketing — la expansión de margen se posterga, no ocurre en apenas 5 años."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x",
+    "Igual en los tres escenarios: negocio liviano en capital (CapEx/Revenue ~2%), app móvil sin datacenters propios."
+   ],
+   [
+    "Costo de Capital (WACC)",
+    0.1094,
+    0.1094,
+    0.1094,
+    "Igual en los tres escenarios: beta de industria \"Software (Internet)\", sin deuda calificada — costo de deuda directo del 7% dado que el interés real pagado es prácticamente nulo."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual ($153,92)"
+   ],
+   [
+    "Conservador",
+    "$125,17",
+    "$144,31",
+    -0.067
+   ],
+   [
+    "Base",
+    "$167,58",
+    "$192,13",
+    "+24,8%"
+   ],
+   [
+    "Optimista",
+    "$250,94",
+    "$278,31",
+    "+80,8%"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF (60%) con 5 múltiplos de mercado (EV/EBITDA, EV/FCFF, P/E, P/FCFE, P/OCF) derivados de forma consistente con cada escenario del DCF, usando la ponderación revisada para la categoría \"Software\"."
+   ],
+   [],
+   [
+    "4. CORRECCIONES METODOLÓGICAS APLICADAS EN ESTA SESIÓN"
+   ],
+   [
+    "#",
+    "Problema encontrado",
+    "Corrección aplicada"
+   ],
+   [
+    1,
+    "Encabezados \"Columna 2/3/4\" en empresas con <10 años de historial",
+    "Padding con \"—\" en vez de celda vacía (Google Sheets Tables autogenera texto en celdas vacías)"
+   ],
+   [
+    2,
+    "Acciones en circulación desactualizadas (empresa dual-class, IPO reciente)",
+    "Fallback a acciones diluidas promedio ponderado cuando el dato puntual está obsoleto"
+   ],
+   [
+    3,
+    "CAGR9Y dividía por columna vacía → #DIV/0! se propagaba a toda la cadena de escenarios",
+    "IFERROR en Crecimiento y Márgenes!C7:C9"
+   ],
+   [
+    4,
+    "P/E y EV/EBITDA rotos por historial de utilidades que cruza de negativo a positivo",
+    "Múltiplos objetivo recalculados como implícitos del propio DCF (Valor DCF ÷ métrica proyectada), no anclados a historial"
+   ],
+   [
+    5,
+    "Referencia circular en Option value (Black-Scholes con dilución)",
+    "Cálculo iterativo habilitado + IFERROR en la cadena de fórmulas"
+   ],
+   [
+    6,
+    "\"Cambio % Dividendos\" en #DIV/0! (DUOL no paga dividendos)",
+    "IFERROR(...;\"0\")"
+   ],
+   [
+    7,
+    "Encabezado de ticker inconsistente entre hojas (algunas mostraban \"TICKER\" en blanco)",
+    "Input sheet!B1 corregido para reflejar el ticker real"
+   ],
+   [
+    8,
+    "Ponderación DCF vs. múltiplos usaba un preset genérico de \"Software\" no calibrado al historial real de DUOL",
+    "Rediseño completo de las 12 categorías del selector, con 2 categorías nuevas (Hyper-Crecimiento/Pre-Rentable, Biotech/Farma)"
+   ],
+   [
+    9,
+    "Margen objetivo del caso Base (30%) no estaba conectado a ningún cálculo real — el DCF convergía al margen LTM fijo (13,72%) sin importar el input",
+    "Valuation output!C46 reconectado a Input sheet!B30"
+   ],
+   [
+    10,
+    "Margen del caso Conservador colapsaba a -5,42% (arrastrado por años de pérdidas 2021-2022 en el promedio de 10 años)",
+    "Reemplazado por el margen actual ajustado por I+D (21,76%) — \"la historia de mejora se estanca donde ya está\""
+   ],
+   [
+    11,
+    "Crecimiento del caso Conservador (25%) resultaba MÁS ALTO que el del Base (19%) — desconectado del input real",
+    "Reconectado a la guía real de la empresa (extremo bajo, 15%)"
+   ],
+   [
+    12,
+    "Margen del Año 1 (B28=15%) comparado contra la base sin ajustar (13,72%) en vez de la base ajustada por I+D (21,76%) — resultaba una caída, no un avance",
+    "Recalibrado a 20% (compresión leve desde el nivel actual, coherente con la guía de la empresa)"
+   ],
+   [
+    13,
+    "Crecimiento y margen del caso Optimista usaban un dato \"LTM\" obsoleto (38,72%, en realidad el crecimiento de FY2025 completo) y un margen (21,76%) más bajo que el del Base (30%)",
+    "Crecimiento → 23% (tasa real de DAU); Margen → 35% (Base + 5pp)"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Al precio actual ($153,92), el caso Base (DCF $167,58 / objetivo ponderado $192,13) implica un potencial de ~10-25%, con el caso Conservador prácticamente en línea con el precio de hoy (-7%) y el Optimista mostrando un upside considerable (+81%) si la monetización termina alcanzando al crecimiento real de usuarios. El perfil de riesgo/retorno está sesgado favorablemente a la baja limitada — el propio caso \"conservador\" (sin mejora de margen más allá de lo ya logrado, crecimiento en el piso de la guía de la empresa) no implica una caída severa, mientras el upside del caso base y optimista depende de que la aceleración de DAU (+23%) se traduzca en ingresos — la variable clave a monitorear en los próximos 2-3 trimestres."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla -- Conservador y Optimista se derivan AUTOMATICAMENTE del historico real de la empresa ('Valuation output' lee el CAGR 3Y de 'Crecimiento y Margenes' para Conservador, y el crecimiento LTM para Optimista). Para DUOL, la CAGR 9Y no existe (la empresa solo tiene 6 años de historico publico desde su IPO en 2021) -- la formula nativa ya se corrigio para no romper el MIN/MAX cuando falta ese dato."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    0.22,
+    "LTM real = 38,72% y CAGR 3Y = 25,01%, pero el trimestre mas reciente reportado (Q2 2026, 10-Q) mostro revenue creciendo solo 18% YoY, con bookings (medida mas cercana al flujo de caja futuro) creciendo apenas 8% -- una señal de desaceleracion real, no solo conservadurismo del analista. Management ademas anuncio un pivot estrategico explicito hacia crecimiento de usuarios (meta 100M DAU a 2028) por sobre monetizacion de corto plazo. 22% reconoce la desaceleracion visible sin caer al piso del ultimo trimestre.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.13,
+    "LTM = 13,72%, pero el Q2 2026 mostro el ingreso neto cayendo 26% YoY por mayor gasto operativo del pivot a crecimiento -- el margen esta bajo presion de CORTO plazo, no en expansion, a diferencia de lo que sugeriria la tendencia 2022-2025 (de -17,6% a 13,07%). 13% mantiene el nivel LTM sin asumir la continuidad automatica de la expansion pasada.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.18,
+    "Consistente con el 18% YoY real del ultimo trimestre reportado -- desacelera desde el 22% del año 1 hacia un nivel mas sostenible una vez que el pivot a crecimiento de usuarios madure y la conversion a pago normalice. La industria (mediana CAGR 5Y ~20,47%) no es una referencia muy util aca: son pocos comparables directos (COUR, CHGG) con modelos de negocio distintos.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.29,
+    "Duolingo tiene margen bruto ~72,7% (tipico de software por suscripcion), pero su margen operativo LTM es solo 13,72% -- todavia lejos de la eficiencia operativa de una plataforma madura. 29% asume que alcanza un nivel tipico de SaaS/subscription escalado (25-35%), muy por debajo del margen de MSFT (46%) porque Duolingo es una empresa mucho mas chica, con mas gasto de marketing/producto relativo a ingresos y sin el apalancamiento operativo de una megacap establecida.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    "5 años",
+    "Default estandar de Damodaran. Podria argumentarse una convergencia MAS LARGA dado que Duolingo recien esta entrando en su fase de rentabilidad sostenida (2025 fue su primer año de ganancias reales) y el pivot a crecimiento de usuarios probablemente retrasa, no acelera, la expansion de margen -- 5 años es razonable pero conservador en cuanto a velocidad."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    4,
+    "Duolingo es un negocio extremadamente liviano en capital: CapEx/Revenue ronda apenas 2% (vs. ~35% de MSFT en su ciclo de datacenters de IA) -- es una app movil, no requiere infraestructura fisica propia significativa. 4,0x es sustancialmente mas alto que el 1,3x de MSFT, reflejando que cada dolar de crecimiento de Duolingo necesita mucho menos capital reinvertido, consistente con comparables de software por suscripcion sin capex pesado."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    4.5,
+    "Asume una leve mejora adicional de eficiencia de capital en la segunda mitad del horizonte de proyeccion, a medida que la base de usuarios y la infraestructura de producto (incluida la IA conversacional de Duolingo Max) ya esten construidas y escalen sin requerir el mismo nivel de inversion marginal -- direccionalmente razonable, mismo caveat que para MSFT: es el supuesto mas dificil de anclar a un dato historico concreto."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico; hoy estan todas en el modo automatico (MIN de los ultimos 4 años)."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: el ancla automatica MIN-de-4-años NO funciona para DUOL en P/E y EV/EBITDA, y las tuve que sobrescribir manualmente (columna J, marcado \"Sí — revisar\" arriba). Duolingo tuvo ganancias/EBITDA NEGATIVOS hasta 2022-2023 y recien 2025 fue su primer año de rentabilidad real -- eso hace que el P/E historico oscile entre -47x y +648x, y el EV/EBITDA entre -1.584x y +198x (el denominador cruzo por cero), volviendo inutilizable cualquier estadistica sobre esa serie (promedio, mediana, min, max quedan todos distorsionados, ver columnas de la derecha). Reemplace el ancla Base de esos dos metodos por el multiplo LTM actual (P/E=18,11x, EV/EBITDA=36,71x), que es la unica lectura confiable dado que la empresa ya es rentable HOY. EV/FCFF, P/OCF y P/FCFE no tuvieron este problema porque el flujo de caja de Duolingo fue positivo durante toda su historia aunque la utilidad contable no lo fuera (patron tipico de negocios de suscripcion con ingresos diferidos) -- esos tres quedaron en modo automatico sin necesidad de ajuste."
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "Duolingo, Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Luis von Ahn"
+   ],
+   [
+    "Sector Industrial",
+    "Software - EdTech / Aplicaciones de Consumo"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.duolingo.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área"
+   ],
+   [
+    "Visión General de la Empresa",
+    "Duolingo es la app de aprendizaje de idiomas mas descargada del mundo, con un modelo freemium (gratis + suscripcion Super/Max) monetizado por publicidad y suscripciones. Expandio agresivamente mas alla de idiomas hacia Matematica, Musica, DuolingoABC (alfabetizacion infantil) y el Duolingo English Test, y esta pivoteando su producto core hacia IA conversacional (Duolingo Max, con GPT). En 2026 la compañia anuncio un giro estrategico explicito: priorizar crecimiento de usuarios sobre monetizacion de corto plazo, con meta de 100 millones de usuarios activos diarios (DAU) para fines de 2028."
+   ],
+   [
+    "Core: Idiomas (app + Super/Max)",
+    "Producto original y principal fuente de usuarios/ingresos -- suscripciones Super (sin publicidad, vidas ilimitadas) y Max (tutor conversacional con IA). Modelo freemium con conversion de usuario gratis a pago como palanca clave de monetizacion."
+   ],
+   [
+    "Verticales nuevas\n(Math, Music, English Test)",
+    "Expansion mas alla de idiomas para ampliar el TAM total direccionable mas alla de \"aprender un idioma\" hacia \"aprender cualquier cosa\" -- aun una fraccion menor de ingresos totales, pero parte central de la tesis de crecimiento de largo plazo."
+   ],
+   [
+    "Publicidad",
+    "Ingresos publicitarios sobre la base masiva de usuarios gratuitos (140,6M MAU al Q2 2026) -- fuente de monetizacion complementaria a las suscripciones, relevante mientras la compañia prioriza crecer DAU/MAU por sobre conversion inmediata a pago."
+   ],
+   [
+    "Estrategia de Producto y Distribucion",
+    "Crecimiento casi enteramente organico/viral (gamificacion, rachas -\"streaks\"-, notificaciones), con gasto de marketing pago creciente como palanca adicional. Duolingo Max (IA conversacional) es la apuesta central para subir el ARPU y diferenciarse de competidores que podrian ser reemplazados por asistentes de IA genericos (riesgo de desintermediacion, ver seccion bajista)."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema"
+   ],
+   [
+    "Posicionamiento Nativo de IA",
+    "Duolingo Max (tutor conversacional con GPT) posiciona a la empresa como \"IA-nativa\" en vez de amenazada por la IA -- el mercado interpreto la desaceleracion de usuarios de 2025 como presion competitiva de ChatGPT, pero el reaceleramiento del DAU (+23% YoY en Q2 2026, a 58,7M) sugiere que fue un ajuste temporal, no un cambio estructural. Los costos de IA cayeron mas rapido de lo esperado, mejorando la economia unitaria del producto conversacional."
+   ],
+   [
+    "TAM Enorme y Retencion de Plataforma",
+    "La expansion mas alla de idiomas (Matematica, Musica, alfabetizacion) apunta a un TAM mucho mayor que \"aprender un idioma\" -- toda la educacion informal/habito diario. La gamificacion (rachas, streaks) genera retencion de plataforma dificil de replicar, y el crecimiento organico/viral mantiene el costo de adquisicion de usuarios bajo comparado con la mayoria de apps de consumo."
+   ],
+   [
+    "Decision Deliberada de Priorizar Usuarios sobre Monetizacion",
+    "El pivot a \"crecimiento antes que monetizacion\" (meta: 100M DAU para 2028) es una apuesta de management de que expandir la base de usuarios ahora genera mas valor de largo plazo que maximizar ARPU hoy -- consistente con como escalaron otras plataformas de consumo exitosas (Spotify, Netflix en sus primeros años). Si la ejecucion es correcta, el FCF por accion deberia acelerar una vez la base de usuarios madure."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo"
+   ],
+   [
+    "Riesgo de Desintermediacion por IA",
+    "El riesgo bajista opuesto al argumento alcista: si asistentes de IA de proposito general (ChatGPT y similares) pueden enseñar un idioma igual de bien que Duolingo Max, el foso competitivo de la app se erosiona -- el usuario podria simplemente \"practicar frances con ChatGPT\" sin pagar una suscripcion aparte."
+   ],
+   [
+    "Desaceleracion de Bookings y Presion de Margen",
+    "Bookings crecieron solo 8% YoY en Q2 2026 (vs 18% de revenue reportado) -- una brecha que sugiere que el crecimiento de ingresos reconocidos se esta desacelerando mas rapido de lo que aparenta el revenue GAAP. Net income cayo 26% YoY en el mismo trimestre por mayor gasto operativo del pivot a crecimiento -- el \"techo de margen\" es un riesgo real si la conversion a usuarios pagos no acompaña el crecimiento de DAU/MAU."
+   ],
+   [
+    "Critica del Modelo de \"Juego Movil\"",
+    "Algunos criticos argumentan que Duolingo funciona mas como un juego movil gamificado (con contenido de ajedrez, musica, etc. sin relacion directa con idiomas) que como una herramienta educativa seria -- un riesgo reputacional/de posicionamiento si la percepcion de \"app de entretenimiento\" en vez de \"producto educativo serio\" limita el poder de fijacion de precios de las suscripciones premium."
+   ],
+   [
+    "Multiplo Elevado con Deceleracion de Crecimiento",
+    "Varios analistas recortaron el precio objetivo hacia ~US$160 citando riesgos de ejecucion y de tendencia de usuarios -- la accion cotiza a multiplos altos (EV/EBITDA LTM ~37x, P/E LTM ~18x aunque distorsionado por un beneficio impositivo puntual) que dejan poco margen de error si la desaceleracion de bookings continua."
+   ],
+   [
+    "Fuente: Yahoo Finance, Finance Charts, TIKR, SEC EDGAR (10-K FY2025, 8-K Q2 2026) -- septiembre 2026"
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: Agosto – Septiembre 2026"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados Financieros",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Reacción del Mercado tras Guía Q3",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Revisiones de Analistas de Wall St.",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Gobierno Corporativo y M&A",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Eventos Corporativos",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados del Segundo Trimestre 2026: Ingresos +18,3% Interanual, DAU +23%",
+    "Duolingo reportó ingresos de US$298,5 millones (+18,3% interanual, superando el consenso de US$297,3M) y EPS ajustado de US$0,66 (vs. US$0,61 esperado). Usuarios activos diarios (DAU) crecieron 23% interanual a 58,7 millones -- una aceleración respecto al Q1 -- y suscriptores pagos crecieron 17% a 12,7 millones. La compañía guió para el Q3 2026 ingresos de ~US$302M y para el año completo 2026 un crecimiento de ingresos de 15%-18% interanual."
+   ],
+   [
+    "Caída de ~15% en la Acción pese al Beat, por Guía de Q3 Débil",
+    "A pesar de superar expectativas de ingresos y EPS, la acción cayó aproximadamente 15% el 6 de agosto de 2026 luego de que la guía de ingresos para el Q3 resultara algo por debajo de lo esperado por el mercado, reflejando la sensibilidad del múltiplo de la acción a cualquier señal de desaceleración de bookings."
+   ],
+   [
+    "Revisiones de Precio Objetivo de Wall Street: Mixtas pero Mayormente al Alza",
+    "Tras el reporte, UBS elevó su precio objetivo de US$125 a US$150 (Buy), Citi a US$140 (Neutral), DA Davidson a US$130 y luego a US$175 el 1 de septiembre, Truist a US$120 y Barclays a US$115. A fines de agosto, Evercore subió su recomendación a Outperform y duplicó su precio objetivo. El consenso de ~24 analistas se ubica en rating 'Hold' con precio objetivo promedio de ~US$134."
+   ],
+   [
+    "Incorporación de Sallie Krawcheck al Directorio y Adquisición de Animade",
+    "El 5 de agosto de 2026, Duolingo anunció la incorporación de Sallie Krawcheck a su Directorio. El 10 de agosto, la compañía anunció la adquisición de Animade, un estudio de diseño de motion graphics, para reforzar sus capacidades de producción de contenido audiovisual."
+   ],
+   [
+    "Participación en la Conferencia Citi 2026 Global TMT",
+    "El CEO y co-fundador Luis von Ahn participó de una fireside chat en la Citi 2026 Global TMT Conference el 9 de septiembre de 2026, confirmada como parte del calendario de relaciones con inversores de la compañía."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "El Giro Estrategico: Usuarios Antes que Monetizacion"
+   ],
+   [
+    "Duolingo domina el aprendizaje de idiomas por app con un modelo freemium viral (58,7M DAU, +23% YoY) y esta expandiendose mas alla de idiomas (Matematica, Musica, alfabetizacion) para ampliar su mercado direccionable. En 2026 la compañia anuncio un giro estrategico explicito: priorizar el crecimiento de usuarios (meta de 100M DAU para 2028) por sobre la monetizacion de corto plazo, apostando a que Duolingo Max (tutor conversacional con IA) sea la palanca que suba el ARPU una vez la base de usuarios madure. La evidencia reciente es mixta: el revenue crecio 18% interanual en el segundo trimestre de 2026, pero los bookings (una medida mas cercana al flujo de caja futuro) crecieron solo 8%, y el ingreso neto cayo 26% por el mayor gasto del pivot -- el modelo asume que el crecimiento de usuarios (22% el proximo año, moderando a 18% en años 2-5) sostiene el negocio mientras el margen operativo se recupera gradualmente desde el 13% actual. El riesgo central no es regulatorio como en las megacaps de IA, sino de foso competitivo: si un asistente de IA generico puede enseñar un idioma igual de bien que Duolingo Max, la ventaja de plataforma se erosiona.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Aceleración de usuarios activos diarios (+23% interanual) y suscriptores pagos (+17%) impulsan ingresos; el crecimiento converge gradualmente hacia el CAGR histórico a medida que la base de usuarios madura.",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo mejora desde niveles bajos (13,7% LTM) a medida que el negocio escala -- apalancamiento operativo tipico de un SaaS de suscripcion, sin necesidad de inversion intensiva en infraestructura fisica."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Sales-to-capital se mantiene alto (4,0x-4,5x) porque Duolingo es un negocio liviano en capital (CapEx/Revenue ~2%) -- una app movil sin datacenters propios; converge al promedio de la industria de software en el largo plazo."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Software"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    111.25
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

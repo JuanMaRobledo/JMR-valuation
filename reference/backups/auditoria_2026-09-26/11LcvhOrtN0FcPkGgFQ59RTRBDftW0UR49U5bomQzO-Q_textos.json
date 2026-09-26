@@ -1,0 +1,1095 @@
+{
+ "title": " Modelo JMR - NIKE (NKE) - 2026-09-16",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "NIKE, INC. (NKE) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran | Datos FY2026 (31-may-2026) | Precio al análisis: US$35,78 (16-sept-2026) | WACC: 8,86%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Nike sigue siendo la mayor plataforma global de calzado y ropa deportiva, con una marca de primer nivel y una red de innovación, atletas, distribución mayorista y venta directa difícil de replicar. La tesis, sin embargo, es de recuperación: FY2026 cerró con US$46.398M de ventas, margen operativo de 8,2% y beneficio neto de US$3.108M. El valor depende de estabilizar NIKE Direct, recuperar producto y tráfico digital, normalizar China y absorber aranceles sin sacrificar la fortaleza del canal mayorista."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "La estrategia Win Now acelera innovación, marketing deportivo y disciplina de distribución.",
+    "La marca perdió impulso en franquicias clave y la recuperación de producto puede tardar más de lo previsto."
+   ],
+   [
+    "El canal mayorista volvió a crecer; la mejora de inventarios facilita nuevos lanzamientos.",
+    "NIKE Direct cayó y el negocio digital sigue débil, con presión promocional sobre el margen."
+   ],
+   [
+    "Caja e inversiones de ~US$9.027M y ROIC cercano a 18% sostienen inversión y dividendos.",
+    "Aranceles, divisas y costos de la cadena de suministro pueden limitar la recuperación de margen."
+   ],
+   [
+    "La escala global y el portafolio de atletas conservan poder de marca y distribución.",
+    "Greater China continúa débil y enfrenta competencia local más rápida y relevante."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación"
+   ],
+   [
+    "Crecimiento ingresos — Año 1",
+    -0.08,
+    -0.04,
+    0.02,
+    "FY2027 parte con presión en Direct/China y efecto arancelario; el optimista asume estabilización más rápida."
+   ],
+   [
+    "Crecimiento ingresos — Años 2-5",
+    0.01,
+    0.04,
+    0.07,
+    "Base: recuperación gradual, sin extrapolar la expansión histórica de la marca."
+   ],
+   [
+    "Margen operativo — Año 1",
+    0.06,
+    0.075,
+    0.09,
+    "Rango consistente con menor absorción de costos, promociones y recuperación desigual por canal."
+   ],
+   [
+    "Margen objetivo",
+    0.07,
+    0.13,
+    0.16,
+    "Base recupera parcialmente el margen histórico; optimista exige plena normalización de mix y pricing."
+   ],
+   [
+    "Convergencia de margen",
+    "7 años",
+    "7 años",
+    "7 años",
+    "La recuperación de producto, canal y geografía requiere varios ciclos de innovación."
+   ],
+   [
+    "Sales-to-Capital años 1-5",
+    "2,5x",
+    "2,5x",
+    "2,5x",
+    "Negocio eficiente en capital, moderado por inventarios, tiendas y reinversión de marca."
+   ],
+   [
+    "Sales-to-Capital años 6-10",
+    "2,8x",
+    "2,8x",
+    "2,8x",
+    "Mejora gradual tras normalizar inventarios y productividad comercial."
+   ],
+   [
+    "Costo de capital",
+    0.0886,
+    0.0886,
+    0.0886,
+    "Treasury 10Y 5,01%, ERP 4,14%, beta 1,11 y deuda valorizada a mercado."
+   ],
+   [],
+   [
+    "3. RESULTADO POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio objetivo ponderado",
+    "vs. precio actual"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "-45,9%"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "12,9%"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "80,8%"
+   ],
+   [
+    "*Ponderación específica para empresa madura en recuperación: DCF 50%; EV/EBITDA 25%; P/E 25%. Los múltiplos de flujo reciben 0% porque la proyección automática de la plantilla no representa bien el cambio de capital de trabajo en el turnaround."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA NKE"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Estados financieros 2017–FY2026 sustituidos y reconciliados.",
+    "Fuentes primarias: 10-K de Nike 2026, 2023, 2020 y 2017; importes en US$ millones."
+   ],
+   [
+    2,
+    "I+D no capitalizado y arrendamientos no reconvertidos.",
+    "Nike no reporta I+D separada; la deuda del modelo ya incluye pasivos por arrendamiento para evitar doble conteo."
+   ],
+   [
+    3,
+    "Costo de capital con beta directa y ERP explícita.",
+    "Evita distorsiones del rating sintético; WACC resultante 8,86%."
+   ],
+   [
+    4,
+    "Escenarios ordenados en crecimiento y margen.",
+    "Conservador queda por debajo del Base y Optimista por encima en todas las dimensiones críticas."
+   ],
+   [
+    5,
+    "Múltiplos de salida normalizados.",
+    "EV/EBITDA 7x/10x/14x y P/E 12x/18x/24x; se descartan múltiplos históricos contaminados por el pico y la caída de utilidades."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Nike ofrece una recuperación plausible, no una ganga inequívoca. El DCF base de US$34,89 está cerca del precio de US$35,78; el caso optimista requiere volver a crecer y recuperar margen operativo hacia 16%, mientras el conservador refleja deterioro adicional. La señal decisiva será una mejora simultánea de ventas comparables, margen bruto, China y conversión de caja sin depender de descuentos."
+   ],
+   [],
+   [
+    "Fuentes: Nike FY2026 Results y Form 10-K 2026; Nike 10-K 2023, 2020 y 2017; NYU Stern (ERP e industria Shoe); U.S. Treasury H.15; cotización Google Finance al 16-sept-2026."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Escenarios Nike: Año 1 = -8% / -4% / +2%; Años 2-5 = +1% / +4% / +7%; margen objetivo = 7% / 13% / 16%. El marco evita confundir una recuperación cíclica con crecimiento estructural."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual",
+    "Recomendación",
+    "Justificación",
+    "Mín histórico",
+    "Máx histórico",
+    "Industria mediana",
+    "Industria promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    -0.04,
+    -0.04,
+    "Presión inicial en Direct, digital y China; recuperación gradual desde FY2028.",
+    "",
+    "",
+    "",
+    0.2614
+   ],
+   [
+    "Operating margin - año 1",
+    0.075,
+    0.075,
+    "Por debajo del 8,2% FY2026 para reflejar promociones, aranceles y costos de turnaround.",
+    "",
+    "",
+    "",
+    0.0872
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    0.04,
+    0.04,
+    "Recuperación moderada apoyada en innovación y canal mayorista.",
+    "",
+    "",
+    "",
+    0.2614
+   ],
+   [
+    "Target pre-tax operating margin",
+    0.13,
+    0.13,
+    "Recuperación parcial hacia niveles históricos, sin asumir retorno inmediato al pico.",
+    "",
+    "",
+    "",
+    0.0872
+   ],
+   [
+    "Year of convergence for margin",
+    7,
+    "7 años",
+    "Turnaround de producto, canal y geografía a través de varios ciclos."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "2,50x",
+    "2,50x",
+    "Eficiencia alta, moderada por inventarios, tiendas y capital de trabajo."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "2,80x",
+    "2,80x",
+    "Mejora tras normalización operativa."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Los múltiplos de salida se fijan por escenario para una empresa madura en recuperación. Se usan anclas normalizadas —no los extremos históricos afectados por el pico de utilidades y el posterior deterioro—: EV/EBITDA 7x/10x/14x y P/E 12x/18x/24x. Los múltiplos de flujo conservan visibilidad, pero reciben peso 0% por la sensibilidad de las proyecciones automáticas al capital de trabajo."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación NKE: negocio rentable y maduro, pero en turnaround. Se priorizan DCF, EV/EBITDA y P/E; los múltiplos de flujo no se ponderan hasta que la conversión de caja normalice."
+   ]
+  ],
+  "Cualitativo": [
+   [
+    "NKE — Análisis Cualitativo y Puente a la Valoración"
+   ],
+   [
+    "Fecha: 16-sept-2026 | Precio: US$35,78 | WACC: 8,86%"
+   ],
+   [],
+   [
+    "1. NEGOCIO Y VENTAJA COMPETITIVA"
+   ],
+   [
+    "Nike diseña, comercializa y distribuye calzado, ropa y equipamiento deportivo globalmente. Su ventaja combina marca, innovación, atletas, escala de marketing y una red omnicanal; el reto actual es renovar el portafolio y reequilibrar Direct con mayoristas.",
+    "NIKE, Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Elliott Hill"
+   ],
+   [
+    "Fortalezas",
+    "Riesgos"
+   ],
+   [
+    "Marca global y ecosistema deportivo difíciles de replicar.",
+    "Debilidad de NIKE Direct y digital; presión promocional."
+   ],
+   [
+    "Wholesale FY2026 creció 6% reportado, señal de normalización del canal.",
+    "Greater China cayó 13% en moneda constante y enfrenta competidores locales."
+   ],
+   [
+    "Caja e inversiones ~US$9.027M; ROIC del modelo ~18%.",
+    "Aranceles, divisas y costos logísticos pueden frenar el margen."
+   ],
+   [
+    "Escala de innovación, atletas y distribución mundial.",
+    "Recuperación de producto más lenta o pérdida estructural de relevancia."
+   ],
+   [
+    "Visión General de la Empresa",
+    "Ingresos FY2026 US$46.398M; margen bruto 42,9%; margen operativo 8,2%; beneficio neto US$3.108M."
+   ],
+   [
+    "2. CATALIZADORES Y SEÑALES A MONITOREAR"
+   ],
+   [
+    "Catalizador / señal",
+    "Lectura para la tesis"
+   ],
+   [
+    "Nuevas franquicias de running, basketball y sportswear",
+    "Valida si la innovación vuelve a impulsar precio completo y tráfico."
+   ],
+   [
+    "Recuperación de NIKE Direct y digital",
+    "Clave para mezcla, datos de clientes y margen."
+   ],
+   [
+    "Crecimiento de wholesale sin descuentos excesivos",
+    "Confirma una distribución más sana y mejor sell-through."
+   ],
+   [
+    "Ventas y margen en Greater China",
+    "Distingue un problema cíclico de una pérdida estructural de cuota."
+   ],
+   [
+    "Margen bruto y SG&A",
+    "Miden absorción de aranceles, promociones y retorno del marketing."
+   ],
+   [
+    "Inventarios y flujo de caja libre",
+    "Señalan disciplina operativa durante el turnaround."
+   ],
+   [
+    "3. SUPUESTOS Y RESULTADOS"
+   ],
+   [
+    "Supuesto / resultado",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "Crecimiento Año 1",
+    -0.08,
+    -0.04,
+    0.02
+   ],
+   [
+    "Crecimiento Años 2-5",
+    0.01,
+    0.04,
+    0.07
+   ],
+   [
+    "Margen objetivo",
+    0.07,
+    0.13,
+    0.16
+   ],
+   [
+    "Sales-to-Capital 1-5 / 6-10",
+    "2,5x / 2,8x",
+    "2,5x / 2,8x",
+    "2,5x / 2,8x"
+   ],
+   [
+    "WACC",
+    0.0886,
+    0.0886,
+    0.0886
+   ],
+   [
+    "DCF por acción",
+    "='Valuation output'!B86",
+    "='Valuation output'!B35",
+    "='Valuation output'!B137"
+   ],
+   [
+    "Objetivo ponderado",
+    "='Resumen de Valoración'!C12",
+    "='Resumen de Valoración'!D12",
+    "='Resumen de Valoración'!E12"
+   ],
+   [
+    "Upside / downside",
+    "-45,9%",
+    "12,9%",
+    "80,8%"
+   ],
+   [
+    "Monitoreo trimestral",
+    "Ventas comparables, margen bruto, NIKE Direct/digital, Greater China, inventario, FCF y recompras."
+   ],
+   [
+    "4. DICTAMEN"
+   ],
+   [
+    "Turnaround con valoración razonable, pero sin margen de seguridad en el caso base. El precio actual está aproximadamente en línea con el DCF base; el retorno atractivo depende de una recuperación verificable de crecimiento y margen."
+   ],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Fuentes: Nike IR FY2026; SEC 10-K 2026; NYU Stern; U.S. Treasury; Google Finance."
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados FY2026",
+    "",
+    "",
+    "Ingresos planos; margen operativo y utilidad todavía deprimidos."
+   ],
+   [
+    "Turnaround Win Now",
+    "",
+    "",
+    "Reenfoque en deporte, producto, socios mayoristas y marketing."
+   ],
+   [
+    "Aranceles",
+    "",
+    "",
+    "Recuperación IEEPA de US$986M compensa en gran parte costos de FY2026, pero persiste incertidumbre."
+   ],
+   [
+    "Greater China",
+    "",
+    "",
+    "Caída de doble dígito y competencia local siguen siendo el principal riesgo geográfico."
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados FY2026",
+    "Ingresos US$46.398M, gross margin 42,9%, operating income US$3.797M y net income US$3.108M."
+   ],
+   [
+    "Reequilibrio de canales",
+    "Wholesale creció mientras Direct y digital retrocedieron; el mix debe mejorar sin destruir precio."
+   ],
+   [
+    "Aranceles y cadena de suministro",
+    "Pueden elevar COGS y capital de trabajo; el escenario base no asume una recuperación inmediata del margen."
+   ],
+   [
+    "China y competencia",
+    "La tesis requiere estabilización, pero el escenario conservador contempla crecimiento casi nulo y margen 7%."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "La Recuperación de Nike: Marca Excepcional, Ejecución por Demostrar"
+   ],
+   [
+    "Nike entra en un turnaround de producto y canales: el valor depende de estabilizar Direct y China, recuperar crecimiento y llevar el margen operativo desde 8,2% hacia 13% sin perder disciplina de capital.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "LTM real (Income Statement) +12,17% i.a., y los últimos dos trimestres reportados +17% y +16% -- un superciclo de producto ya en marcha (iPhone 17), no una proyección. Se modera en años 2-5 a medida que el efecto supercycle se normaliza sobre una base de ingresos ya muy grande (~US$467.000M).",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo ajustado actual (basis con I+D capitalizado) es 35,5% -- ya en una trayectoria de mejora sostenida desde 24,15% en 2020. Un leve paso adelante en año 1 es coherente con el apalancamiento operativo ya demostrado (EPS +29% i.a. en el trimestre de junio, muy por encima del +16% de ingresos), impulsado por el mix creciente hacia Services de alto margen."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Negocio de software asset-light: capex LTM inferior a 1% de ventas, con una eficiencia moderada por SBC y compromisos de infraestructura cloud."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "='Input sheet'!B23",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Madura"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    0.5,
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    0.25,
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    0,
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    0.25,
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    0,
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    0,
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    35.78
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,1104 @@
+{
+ "title": "Modelo JMR - AFYA",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "LULULEMON ATHLETICA (LULU) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: $98,06 (19-sept-2026) | WACC: 8,98%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "lululemon es la marca líder de indumentaria athleisure premium, con márgenes de retail excepcionales (Gross Margin ~56-59%) y más de una década de crecimiento de doble dígito. En 2026 sufre su peor crisis reciente: el trimestre de junio mostró ingresos -4% interanual y comparables -10% (Norteamérica -12%), obligando a un recorte severo de la guía anual (de US$11.000-11.150M a US$10.350-10.500M, -5% a -7% para el año completo) y una caída de ~20% en la acción. La tensión central: ¿es esto una corrección temporal de un producto que se desaceleró más de lo esperado (leggings) combinada con ruido de redes sociales y aranceles transitorios sobre Vietnam/Camboya, o es evidencia de una pérdida ESTRUCTURAL de participación de mercado frente a Alo Yoga (que multiplicó su foot traffic share x5) y Vuori — agravada por la ausencia de un CEO permanente justo cuando más se necesita liderazgo estable?"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "Balance y caja siguen sólidos: OCF LTM de US$1.982M, sin deuda financiera real, ~US$1.390M en caja — la compañía puede atravesar el ciclo de recuperación sin presión de liquidez.",
+    "Pérdida de share estructural: Alo Yoga multiplicó su foot traffic share x5 (1,4%→8,6%) y Vuori (valuada en US$5.500M) también gana terreno — ambas atacando directo al comprador premium de lululemon."
+   ],
+   [
+    "La marca aún domina con 77,5% de foot traffic share (vs. 8,6% Alo Yoga y 9,2% Vuori) — la base de marca y comunidad no ha colapsado, solo se erosionó.",
+    "Presión de márgenes estructural, no transitoria: ~40% de la producción en Vietnam (arancel 20%) y ~9% en Camboya (arancel 49%) generan un impacto neto de ~US$320M sobre el margen 2026."
+   ],
+   [
+    "Guía ya recortada con severidad (-5% a -7%) y la acción ya cayó ~20% — gran parte de las malas noticias ya está en el precio, con margen para sorpresa positiva.",
+    "Vacío de liderazgo en el peor momento: CEO interina mientras se busca reemplazo permanente, justo en medio de la crisis de marca y márgenes más seria de la historia reciente de la compañía."
+   ],
+   [
+    "",
+    "Debilidad de producto reconocida por la propia compañía: desaceleración \"mayor a la esperada\" en categorías core (leggings), no solo un problema macro o de aranceles."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "-10,0%",
+    "-6,0%",
+    "-3,0%",
+    "Base = guía oficial de la compañía para FY2026 (rango -5% a -7%, punto medio -6%). Conservador = la pérdida de share frente a Alo/Vuori se profundiza y el trimestre de junio (comparables -10%) se repite o empeora. Optimista = la guía recién recortada resulta conservadora (patrón común de un reset de guía con liderazgo nuevo) y la marca estabiliza más rápido de lo temido."
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "0,0%",
+    "4,0%",
+    "7,0%",
+    "Base recupera gradualmente desde el -6% del año 1 a medida que se resuelve la búsqueda de CEO permanente y las acciones de pricing/cadena de suministro maduran, sin asumir un regreso a la hipercrecimiento histórica (+42% en FY2022)."
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "13,0%",
+    "14,0%",
+    "15,5%",
+    "Por debajo del nivel actual ajustado (17,84% LTM, ya en caída desde el pico de 23,67% en FY2025) — refleja el impacto neto de ~US$320M en aranceles que la propia compañía proyecta para 2026, antes de que la estabilización comience."
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "15,0%",
+    "18,5%",
+    "21,0%",
+    "Conservador = el margen se estanca donde ya está hoy (la presión arancelaria y competitiva no ceden). Base = recuperación parcial (no total) hacia el pico histórico de 23,67%, asumiendo que pricing y eficiencia compensan buena parte —no todo— del impacto arancelario. Optimista = recuperación casi completa al pico histórico si la marca se estabiliza y los aranceles se mitigan."
+   ],
+   [
+    "Años de convergencia de margen",
+    6,
+    6,
+    6,
+    "Más largo que el de una empresa ya estable (Adobe/Apple usan 3-4 años) porque esto es una crisis real y en curso: requiere resolver el vacío de liderazgo, estabilizar la marca, y diversificar manufactura fuera de Vietnam/Camboya — procesos de años, no de trimestres."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "2,0x / 2,5x",
+    "2,0x / 2,5x",
+    "2,0x / 2,5x",
+    "Más bajo que Apple (3,0x) o Adobe (4,0x) porque lululemon es un negocio de retail físico real: CapEx LTM de ~5,7% de los ingresos (US$628M sobre US$11.094M) por apertura y renovación de tiendas y centros de distribución."
+   ],
+   [
+    "Costo de Capital (WACC)",
+    0.0898,
+    0.0898,
+    0.0898,
+    "Beta de industria \"Apparel\" (Single Business Global, corregido de un beta directo de Palantir de 1,62 heredado de la copia original). Costo de deuda vía Direct Input: lululemon no tiene deuda financiera real (Interest Expense = US$0) — el \"Book Value of Straight Debt\" que aparece es la deuda de leases operativos (ASC 842), no deuda financiera."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "vs. Precio Actual ($98,06)",
+    "vs. Precio Actual ($97,68)"
+   ],
+   [
+    "Conservador",
+    "$105,72",
+    "$96,22",
+    -0.0188
+   ],
+   [
+    "Base",
+    "$155,16",
+    "$154,62",
+    0.5771
+   ],
+   [
+    "Optimista",
+    "$204,69",
+    "$226,10",
+    1.306
+   ],
+   [
+    "*Precio Objetivo Ponderado: DCF 40%, EV/EBITDA 25%, EV/FCFF 15%, P/FCFE 10%, P/E 5% y P/OCF 5%, según la categoría Cíclica/Commodity."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA LULU"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Input sheet'!B4 (fecha de análisis) estaba en blanco como texto libre (\"sep-26\") en vez de una fecha real -- el precio congelado en 'Resumen de Valoración' quedó usando el precio en vivo en lugar del cierre histórico real.",
+    "Corregido a una fecha real (16-sept-2026); re-ejecutado el paso de congelamiento de precio, que ahora sí usa el cierre histórico real ($97,68)."
+   ],
+   [
+    2,
+    "Cost of capital worksheet: beta directo normalizado a 1,20 y ERP implícita de Damodaran de 4,14%.",
+    "La combinación de tasa libre de riesgo de 4,75%, beta 1,20 y deuda por arrendamientos produce un WACC inicial de 8,84%, coherente con una marca global de consumo discrecional en fase de desaceleración."
+   ],
+   [
+    "3 (superado por el ajuste #2 -- ver nota)",
+    "Este ajuste describía un cambio a beta por industria (Single Business Global) que ya NO refleja el estado actual del libro: el beta volvió a \"Direct Input\" = 1,20 (ver ajuste #2). Se deja esta nota para que el historial no quede contradictorio -- el enfoque vigente es el de la fila 2, no este.",
+    "Un beta de 1,62 es propio de una acción especulativa de alto crecimiento como Palantir, no de un retailer establecido como lululemon -- el enfoque basado en la industria da un beta desapalancado de 0,71, mucho más representativo."
+   ],
+   [
+    4,
+    "Input sheet!B9/B10 (industria) corregido de \"Retail (Apparel and Accessories)\" a \"Apparel\" -- el nombre exacto que usan las tablas de referencia de Damodaran en este libro.",
+    "El nombre aproximado causaba errores #N/A en la comparación de percentiles de industria (Input sheet, columnas L-N) por falla de VLOOKUP; con el nombre exacto, cero errores en todo el libro."
+   ],
+   [
+    5,
+    "Múltiplos de salida conectados a los overrides manuales J8/J19/J30 en EVFCFF, POCF, PE, PFCFE y EVEBITDA.",
+    "Se aplican rangos prudentes por escenario: EV/EBITDA 6x–11x y P/E 10x–20x, evitando múltiplos heredados de otras compañías y manteniendo Conservador < Base < Optimista."
+   ],
+   [
+    6,
+    "Categoría de ponderación cambiada de \"Crecimiento\" (heredada de Palantir) a \"Cíclica/Commodity\".",
+    "lululemon ya no es una historia de crecimiento puro -- está en un ciclo de compresión de utilidades real, por lo que una categoría que da más peso a EV/EBITDA (normalización de utilidades) y menos a P/E es más apropiada."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Al precio de análisis de $95,98, el modelo arroja un valor ponderado base de aproximadamente $155 por acción (+62%). El caso conservador ronda $97, prácticamente en línea con mercado, mientras el optimista se aproxima a $227. La asimetría es atractiva, pero depende de que la caída de ventas de FY2026 se estabilice, el margen operativo se recupere gradualmente y la marca no siga perdiendo participación frente a competidores. Deben vigilarse comparables en Norteamérica, presión arancelaria, inventarios, promociones y la ejecución del equipo directivo."
+   ],
+   [
+    "Fuentes principales: lululemon 10-K FY2025 (ejercicio terminado el 1-feb-2026); 10-Q y resultados Q2 FY2026 al 2-ago-2026; NYU Stern/Damodaran (ERP implícita, 1-sept-2026); GOOGLEFINANCE (precio de análisis, 16-sept-2026)."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "El modelo Base usa la guía FY2026 y una recuperación gradual; los escenarios Conservador y Optimista se calibran por separado en Valuation output. Se corrigieron acciones económicas, arrendamientos, tasa fiscal LTM, opciones y crecimiento perpetuo."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual",
+    "Recomendación",
+    "Justificación",
+    "Mín histórico",
+    "Máx histórico",
+    "Industria mediana",
+    "Industria promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    -0.06,
+    "Guía FY2026: ingresos de US$10.350–10.500M, equivalente a una caída aproximada de 5%–7%; se usa el punto medio (-6%).",
+    0.1675,
+    0.5618,
+    0.27,
+    0.2614
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.14,
+    "Margen operativo inicial prudente por debilidad en Norteamérica, promociones y presión arancelaria; queda por debajo del 17,8% LTM.",
+    -1.0742,
+    0.428,
+    0.0644,
+    0.0872
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.04,
+    "Recuperación moderada en años 2–5, sin asumir retorno inmediato al crecimiento histórico de doble dígito.",
+    0.1675,
+    0.5618,
+    0.27,
+    0.2614
+   ],
+   [
+    "Target pre-tax operating margin",
+    "='Input sheet'!B30",
+    0.185,
+    "Recuperación parcial hacia 18,5%, aún por debajo de máximos históricos y consistente con una marca madura bajo mayor competencia.",
+    -1.0742,
+    0.428,
+    0.0644,
+    0.0872
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    6,
+    "Convergencia gradual durante seis años para reflejar que la normalización de producto, liderazgo y abastecimiento no será inmediata."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    2,
+    "Retail físico intensivo en inventario y capex: se usa 2,0x de ventas por capital en años 1–5."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    2.5,
+    "La eficiencia mejora a 2,5x en años 6–10 conforme se modera la expansión y madura la red."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Los múltiplos de salida se fijan manualmente por escenario y ahora sí alimentan las fórmulas de cada hoja. Rangos usados: EV/FCFF 12x–25x; P/OCF 8x–16x; P/E 10x–20x; P/FCFE 10x–20x; EV/EBITDA 6x–11x."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J19;EVFCFF!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J19;POCF!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J19;PE!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J19;PFCFE!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J19;EVEBITDA!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: los múltiplos heredados fueron sustituidos por rangos explícitos y prudentes para LULU. El escenario base combina 8x EV/EBITDA y 15x P/E; el conservador refleja una compresión adicional y el optimista una recuperación sin volver a valoraciones de hipercrecimiento."
+   ]
+  ],
+  "Cualitativo": [
+   [
+    "PLTR — Análisis Cualitativo y Puente a la Valoración"
+   ],
+   [
+    "Fecha: 16-sept-2026 | Precio: US$172,11 | WACC: 12,23%"
+   ],
+   [],
+   [
+    "1. NEGOCIO Y VENTAJA COMPETITIVA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "lululemon athletica inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Meghan Frank (CEO Interina desde 2026, tras la salida de Calvin McDonald) — búsqueda de CEO permanente en curso"
+   ],
+   [
+    "Sector Industrial",
+    "Retail de Indumentaria Deportiva / Athleisure (Apparel)"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.lululemon.com"
+   ],
+   [
+    "Margen operativo GAAP Q2 de 47% y FCF LTM ~US$3.358M.",
+    "El consenso necesita una desaceleración ordenada; pequeños desvíos pueden tener gran impacto.",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Caja e inversiones ~US$9.409M; sin deuda financiera material.",
+    "SBC LTM ~US$836M y riesgo de dilución."
+   ],
+   [
+    "Productos profundamente integrados en operaciones críticas y reguladas.",
+    "Contratos públicos sujetos a presupuesto, renovación, cancelación y escrutinio político."
+   ],
+   [
+    "Visión General de la Empresa",
+    "lululemon es una marca premium de indumentaria \"athleisure\" (ropa deportiva/casual), históricamente reconocida por márgenes de retail excepcionales (Gross Margin ~56-59%) y un crecimiento de doble dígito sostenido durante más de una década. En 2026 la empresa enfrenta la crisis más seria de su historia reciente: el trimestre de junio mostró una caída de ingresos de -4% interanual (comparables -10%, Norteamérica -12%), obligando a un recorte drástico de la guía anual (de US$11.000-11.150M a US$10.350-10.500M, es decir, una caída de -5% a -7% para el año completo). La compañía atribuye parte de la debilidad a \"comentarios negativos en redes sociales\" y a una desaceleración mayor a la esperada en categorías core como las leggings, mientras enfrenta pérdida de participación de mercado frente a competidores como Alo Yoga y Vuori, y presión de márgenes por aranceles sobre su manufactura concentrada en Vietnam y Camboya. La compañía además transita sin CEO permanente."
+   ],
+   [
+    "Core: Ropa de Mujer (Leggings/Yoga)",
+    "El producto histórico insignia de la marca (leggings tipo Align) -- la categoría que management identificó explícitamente como con \"desaceleración mayor a la esperada\" en el trimestre de junio de 2026, el núcleo de la debilidad actual."
+   ],
+   [
+    "Ropa de Hombre y Calzado",
+    "Categorías de diversificación y crecimiento más reciente, con menor exposición directa a la competencia frontal de Alo Yoga/Vuori (más enfocadas en el segmento femenino), pero de menor escala relativa dentro del negocio total."
+   ],
+   [
+    "Internacional (China y resto del mundo)",
+    "El segmento de mayor crecimiento relativo en años recientes, parcialmente compensando la debilidad de Norteamérica (-12% de comparables en el trimestre de junio) -- clave para la tesis de que la marca retiene fortaleza fuera de su mercado de origen ya saturado."
+   ],
+   [
+    "Margen operativo GAAP y conversión a FCF",
+    "Modelo de retail premium verticalmente integrado (diseño, marketing de comunidad/fitness y tiendas propias) con manufactura tercerizada concentrada en Vietnam (~40% de la producción, arancel del 20%) y Camboya (~9%, arancel del 49%) -- una estructura de costos ahora bajo presión estructural por la política arancelaria de EE.UU., que management estima en un impacto neto de ~US$320M sobre el margen de 2026 pese a acciones de mitigación (pricing, eficiencia de cadena de suministro)."
+   ],
+   [
+    "SBC y acciones diluidas",
+    "Mide cuánto del valor económico llega al accionista."
+   ],
+   [
+    "Contratos de defensa y alianzas industriales",
+    "Expanden el moat, pero elevan exposición política y reputacional."
+   ],
+   [
+    "Internacional comercial",
+    "Es la principal oportunidad no reflejada en el mix actual y también el área con fricción de soberanía."
+   ],
+   [
+    "Compromisos cloud e infraestructura",
+    "Pueden sostener escala, pero reducen flexibilidad si la demanda desacelera."
+   ],
+   [
+    "3. SUPUESTOS Y RESULTADOS"
+   ],
+   [
+    "Balance y Generación de Caja Siguen Sólidos Pese a la Crisis",
+    "OCF LTM de US$1.982M sobre ingresos de US$11.094M, sin deuda financiera real (Interest Expense = US$0) y con Cash de ~US$1.390M -- la compañía tiene el balance para atravesar el ciclo de reinversión/recuperación sin presión de liquidez.",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "Marca Retiene Posición Dominante Pese a la Pérdida de Share",
+    "lululemon aún concentra ~77,5% del foot traffic share en su categoría (aunque cayó desde 86,5%), muy por encima de Alo Yoga (8,6%) y Vuori (9,2%) -- la base de marca y comunidad sigue siendo la más grande del segmento, no ha colapsado.",
+    0.82,
+    0.95
+   ],
+   [
+    "Guía Ya Fue Recortada de Forma Severa — Piso Potencialmente Ya Incorporado",
+    "El recorte de guía de -5% a -7% para el año completo (desde un crecimiento previamente esperado) y la caída de -20% en la acción tras el anuncio sugieren que gran parte de las malas noticias ya está reflejada en el precio, con margen de sorpresa positiva si la estabilización llega antes de lo temido.",
+    0.4,
+    0.5
+   ],
+   [
+    "Margen objetivo",
+    0.4525,
+    0.5,
+    0.55
+   ],
+   [
+    "Sales-to-Capital 1-5 / 6-10",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x"
+   ],
+   [
+    "WACC",
+    0.1223,
+    0.1223,
+    0.1223
+   ],
+   [
+    "Pérdida de Participación de Mercado Estructural, No Solo Cíclica",
+    "Alo Yoga multiplicó su foot traffic share por 5 (de 1,4% a 8,6%) en el último período, mientras Vuori (valuada en US$5.500M) también gana terreno -- ambas atacando directamente al comprador premium de lululemon, un fenómeno de sustitución de marca que el pricing por sí solo no revierte.",
+    "US$105,73",
+    "US$180,31"
+   ],
+   [
+    "Presión de Márgenes Estructural por Aranceles, No Transitoria",
+    "Con ~40% de la producción en Vietnam (arancel del 20%) y ~9% en Camboya (arancel del 49%), management proyecta un impacto neto de ~US$320M en el margen de 2026 pese a acciones de mitigación -- diversificar la cadena de suministro fuera de esos países tomaría años.",
+    "US$133,06",
+    "US$254,19"
+   ],
+   [
+    "Vacío de Liderazgo en el Peor Momento",
+    "La compañía opera con una CEO interina (Meghan Frank) mientras busca un reemplazo permanente, justo en medio de la crisis de marca y de márgenes más seria de su historia -- la ausencia de liderazgo estable añade incertidumbre de ejecución sobre cualquier plan de recuperación.",
+    -0.227,
+    "=+47,7%"
+   ],
+   [
+    "Debilidad de Producto Reconocida por la Propia Compañía",
+    "Management admitió una desaceleración \"mayor a la esperada\" en categorías core (leggings) y atribuyó parte de la debilidad a comentarios negativos en redes sociales -- señal de que el problema no es solo macro/competitivo sino también de ejecución de producto y percepción de marca."
+   ],
+   [
+    "4. DICTAMEN"
+   ],
+   [
+    "Negocio sobresaliente, acción exigente. A US$172,11, el caso base no ofrece margen de seguridad; el precio se justifica principalmente si la compañía sostiene crecimiento cercano a 50% durante varios años y márgenes de 55%. La decisión debe centrarse en la persistencia de AIP, no en extrapolar un solo trimestre."
+   ],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Fuentes: Palantir IR Q2 2026; SEC 10-Q Q2 2026; Palantir 10-K 2025; U.S. Treasury; StockAnalysis, datos al 16-sept-2026."
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados del Trimestre de Junio FY2026 y Recorte de Guía",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Pérdida de Participación de Mercado (Alo Yoga/Vuori)",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Impacto de Aranceles en el Margen",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Transición de Liderazgo",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Reacción del Mercado",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados del Segundo Trimestre Fiscal 2026: Ingresos -4% Interanual, Comparables -10%, Guía Anual Recortada",
+    "lululemon reportó una caída de ingresos de 4% interanual (5% en moneda constante) a US$2.400 millones, con ventas comparables cayendo 10% (Norteamérica -12%). La compañía recortó su guía de ingresos para el año completo de US$11.000-11.150 millones a US$10.350-10.500 millones (una caída de 5% a 7%), y su guía de EPS de US$10,95-11,15 a US$9,48-9,73. La CEO interina Meghan Frank atribuyó parte de la debilidad a \"comentarios negativos en redes sociales\" y a una desaceleración mayor a la esperada en categorías core como las leggings."
+   ],
+   [
+    "Alo Yoga y Vuori Ganan Terreno Significativo a Costa de lululemon",
+    "lululemon todavía domina con 77,5% de foot traffic share en su categoría, pero perdió 9 puntos porcentuales frente al período anterior (86,5%). Alo Yoga multiplicó su participación por más de 5 veces (de 1,4% a 8,6%), mientras Vuori se mantuvo relativamente estable en 9,2%. Vuori alcanzó una valuación de US$5.500 millones, construida en buena parte atrayendo compradores premium que antes elegían lululemon."
+   ],
+   [
+    "Aranceles sobre Vietnam y Camboya Generan un Impacto Neto de ~US$320M en el Margen 2026",
+    "Con aproximadamente 40% de la producción concentrada en Vietnam (arancel del 20%) y 9% en Camboya (arancel del 49%), management proyecta un impacto neto de ~US$320 millones sobre el margen de 2026 pese a acciones de mitigación (ajustes de precio, negociación con proveedores, eficiencias en centros de distribución). El margen bruto del trimestre de junio se sostuvo en parte gracias a reembolsos de aranceles previamente cobrados de forma indebida (declarados ilegales por la justicia), un beneficio no recurrente."
+   ],
+   [
+    "Búsqueda de CEO Permanente en Curso Tras la Salida de Calvin McDonald",
+    "lululemon opera con Meghan Frank como CEO interina mientras el directorio busca un reemplazo permanente -- la transición de liderazgo llega en el peor momento posible, en medio de la crisis de crecimiento y márgenes más severa de la historia reciente de la compañía."
+   ],
+   [
+    "La Acción Cae ~20% Tras el Recorte de Guía",
+    "Las acciones de lululemon cayeron aproximadamente 20% en la sesión posterior al anuncio de resultados y guía recortada del trimestre de junio de FY2026, ampliando una tendencia bajista que ya venía de trimestres anteriores de resultados decepcionantes -- la acción cotiza muy por debajo de sus máximos históricos."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "¿Crisis de Marca Temporal o Pérdida Estructural de Participación de Mercado?"
+   ],
+   [
+    "lululemon es la marca líder de indumentaria athleisure premium, con márgenes de retail excepcionales y más de una década de crecimiento de doble dígito. En 2026 sufre su peor crisis reciente: ingresos -4% interanual y comparables -10% en el trimestre de junio, guía anual recortada de +crecimiento a una caída de -5% a -7%, y la acción cayó ~20% tras el anuncio. La tensión central: ¿es esto una corrección temporal de un producto que se desaceleró más de lo esperado (leggings) combinada con ruido de redes sociales y aranceles transitorios, o es evidencia de una pérdida ESTRUCTURAL de participación de mercado frente a Alo Yoga (que multiplicó su share x5) y Vuori -- agravada por la ausencia de un CEO permanente justo quando más se necesita liderazgo estable?",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Año 1 = guía oficial de la compañía para el año fiscal 2026 (caída de -5% a -7%, punto medio -6%) -- el dato más reciente y autorizado disponible. Años 2-5 asumen una estabilización gradual (no una recuperación inmediata) a medida que se resuelve la búsqueda de CEO y las acciones de pricing/cadena de suministro maduran.",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo ajustado actual (17,84%, LTM) ya refleja compresión real desde el pico de 23,67% (FY2025) -- el impacto neto de aranceles de ~US$320M proyectado por la compañía para 2026 sugiere más presión antes de estabilizar, por eso el año 1 sigue por debajo del nivel actual."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Más bajo que el de una empresa de software (Adobe usa 4,0x) y similar al de Apple: lululemon tiene CapEx real de tiendas y distribución (~5,7% de los ingresos, US$628M sobre US$11.094M) -- un negocio de retail físico, no asset-light."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "='Input sheet'!B23",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Cíclica/Commodity"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.3
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

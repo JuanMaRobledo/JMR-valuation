@@ -1,0 +1,757 @@
+{
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.11,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.325,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.07,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.335,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.5,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.0,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.16,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.09,
+  "reason": "Supuestos GOOG Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital GOOG (beta observado, sin deuda financiera material, calificacion real)"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.05,
+  "reason": "Costo de capital GOOG (beta observado, sin deuda financiera material, calificacion real)"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital GOOG (beta observado, sin deuda financiera material, calificacion real)"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 10,
+  "reason": "Costo de capital GOOG (beta observado, sin deuda financiera material, calificacion real)"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Aa2/AA",
+  "reason": "Costo de capital GOOG (beta observado, sin deuda financiera material, calificacion real)"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.325,
+  "reason": "Escenarios GOOG: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.335,
+  "reason": "Escenarios GOOG: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.37,
+  "reason": "Escenarios GOOG: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": 0.06,
+  "reason": "Escenarios GOOG: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.16,
+  "reason": "Escenarios GOOG: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa GOOG (mega-cap diversificada y madura, igual que MSFT)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Alphabet Inc.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Sundar Pichai (CEO de Alphabet y Google desde 2015/2019). Presidente: John Hennessy.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Software / Internet — publicidad digital, nube y otras apuestas (Damodaran: Software (Internet))",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://abc.xyz  |  IR: https://abc.xyz/investor",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Alphabet es la matriz de Google. Reporta en tres segmentos: Google Services (Búsqueda, YouTube ads, Google Network, Play, dispositivos y suscripciones), Google Cloud (infraestructura, plataforma de datos e IA para empresas) y Other Bets (Waymo, Verily y otras apuestas de etapa temprana). Ingresos LTM de US$445.866M con un margen operativo de 33,1%.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Google Services (Search, YouTube, Network, Play, dispositivos)",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "El negocio principal: la publicidad de Búsqueda y YouTube financia casi todo el resto del grupo. Genera la enorme mayoría del EBIT consolidado; su moat es la escala de datos y distribución (acuerdos con fabricantes de dispositivos y navegadores) que sostiene su participación en búsqueda, además de los efectos de red de YouTube como la plataforma de video más grande.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Google Cloud",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "El segmento de mayor crecimiento: infraestructura (Compute, Storage), plataforma de datos y, cada vez más, servicios de IA generativa (modelos Gemini, Vertex AI) para empresas. Compite directamente con AWS y Azure; a diferencia de esos dos rivales, llegó más tarde a la escala rentable, pero ya aporta una porción relevante y creciente del EBIT del grupo.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Other Bets",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Apuestas de etapa temprana fuera del negocio central, la más conocida Waymo (conducción autónoma). Consumen capital sin ingresos materiales todavía; son opcionalidad de largo plazo, no un impulsor de la valoración de corto/mediano plazo del modelo.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estructura accionaria (3 clases)",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Alphabet cotiza en tres clases: A (GOOGL, 1 voto), B (10 votos, en manos de los fundadores e insiders, no cotiza) y C (GOOG, sin voto, ticker de esta valoración). Las tres clases tienen los MISMOS derechos económicos (utilidad y dividendo por acción idénticos): el valor por acción del DCF y de los múltiplos aplica igual a las tres; la única diferencia de precio entre A y C en el mercado es la prima/descuento por el voto, no por el negocio.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Cloud como segundo motor de crecimiento",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Google Cloud pasó de ser una apuesta deficitaria a un negocio con escala rentable, compitiendo de igual a igual con AWS y Azure en la ola de infraestructura de IA generativa (Gemini, TPUs propios, Vertex AI). Es la principal fuente de crecimiento incremental fuera de la publicidad.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Balance excepcional y recompras",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Caja e inversiones de US$55.911M contra una deuda financiera de US$61.287M (deuda neta prácticamente nula, calificación real Aa2/AA): financia el capex de IA casi sin apalancamiento. Recompra acciones de forma sostenida (el conteo combinado de las 3 clases bajó de acciones más viejas) y paga dividendo desde 2024 (payout todavía bajo, ~4-8% de la utilidad).",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "TPUs propios (ventaja de costo en IA)",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "A diferencia de la mayoría de sus competidores, que dependen casi enteramente de GPUs de Nvidia, Alphabet diseña sus propios aceleradores de IA (TPU) para entrenar e inferir sus modelos Gemini, lo que le da una ventaja de costo estructural en la carrera de infraestructura de IA.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Capex de IA presiona el flujo de caja libre",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "El capex (centros de datos, TPUs, redes) creció mucho más rápido que los ingresos en los últimos años, comprimiendo el FCFF y el FCFE reportados (ver 'Supuestos de los Múltiplos' para el detalle del impacto en el múltiplo EV/FCFF). El caso de inversión depende de que ese capex empiece a traducirse en ingresos de Cloud e IA antes de que el mercado pierda paciencia.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Riesgo antimonopolio (EE.UU. y UE)",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Alphabet enfrenta litigios antimonopolio en EE.UU. sobre distribución de Búsqueda (acuerdos de posición por defecto con fabricantes de dispositivos y navegadores) y sobre su negocio de tecnología publicitaria (ad-tech), además de escrutinio regulatorio en la Unión Europea (Digital Markets Act). Un remedio estructural (separar activos, prohibir ciertos acuerdos de distribución) es el riesgo de cola más citado sobre la tesis.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Competencia en IA generativa",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "OpenAI/Microsoft, Anthropic y otros compiten directamente por la sustitución de la búsqueda tradicional con asistentes de IA generativa. Alphabet responde integrando IA (AI Overviews, modo IA) dentro de Búsqueda, pero el riesgo de que un cambio de hábito de los usuarios erosione el modelo de negocio publicitario central sigue siendo el argumento bajista de más largo plazo.",
+  "reason": "Contenido cualitativo GOOG"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 190000,
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=E4/('Input sheet'!B29*100)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=IFERROR(Dividendos!L4/'Input sheet'!D1;\"\")",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=Dividendos!L4",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=IFERROR(MIN(MAX((Dividendos!$K$4/Dividendos!$J$4)^(1/1)-1;0);2);\"N/D (2 años de historia)\")",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "N/D (menos de 5 años de historia de dividendo)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "N/D (menos de 10 años de historia de dividendo)",
+  "reason": "Estadisticas GOOG (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Alphabet: el negocio publicitario más rentable del mundo, financiando una carrera de infraestructura de IA sin apalancarse",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Alphabet genera US$445.866M de ingresos LTM con un margen operativo de 33,1%, casi sin deuda financiera neta. El negocio central (Búsqueda + YouTube) sostiene un capex de IA que creció mucho más rápido que los ingresos, comprimiendo el flujo de caja libre reportado en los últimos ejercicios (ver 'Supuestos de los Múltiplos'). La tesis Base asume que ese capex se traduce gradualmente en crecimiento de Cloud e IA (11% el Año 1, convergiendo a 7%) con una expansión de margen moderada (32,5% a 33,5%), sin apostar a que la operación de la nube alcance la escala rentable de forma acelerada. Riesgo antimonopolio en EE.UU. y UE, y la sustitución de la búsqueda tradicional por asistentes de IA generativa, son los dos riesgos estructurales de más largo plazo.",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 en línea con el crecimiento LTM real (10,7%); años 2-5 convergen hacia el crecimiento nominal de EE.UU. más una prima de Cloud/IA.",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen Año 1 apenas por debajo del LTM real (33,1%) por la presión de depreciación del capex de IA; converge a una expansión moderada, no al 36% que sale del promedio histórico (incluye años de menor inversión).",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal de largo plazo 16%: corporativa de EE.UU. (21%) neta de la tasa efectiva real más baja por ingresos en el exterior.",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,5x: negocio de software/servicios, requiere relativamente poco capital nuevo por dólar de ingreso incremental frente a un negocio intensivo en activos físicos.",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC muy por encima del costo de capital: el negocio de Búsqueda/YouTube genera retornos excepcionales sobre el capital operativo.",
+  "reason": "Historia GOOG"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "9,6%: beta observado ~1,05 (Directo, no la canasta de industria 'Software (Internet)' de Damodaran, dominada por empresas mucho más chicas y de un solo producto) x ERP de mercado maduro de EE.UU., calificación real Aa2/AA, deuda financiera neta casi nula.",
+  "reason": "Historia GOOG"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.11,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "En línea con el crecimiento LTM real (10,7%): Búsqueda y YouTube maduros, Cloud como motor incremental.",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.325,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Levemente por debajo del EBIT LTM real (33,1%) por la depreciación creciente del capex de IA.",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.07,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Converge hacia el crecimiento nominal de EE.UU. más una prima moderada de Cloud/IA.",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.335,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Expansión moderada sobre el margen Año 1, no el ~36% que sale de promediar la historia completa (incluye años de mucho menor inversión en capex).",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.5,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Negocio de software/servicios: relativamente poco capital nuevo por dólar de ingreso incremental.",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.0,
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Años 6-10: algo más de intensidad de capital por la maduración de Cloud e infraestructura de IA propia.",
+  "reason": "Recomendaciones GOOG"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación GOOG: los 4 últimos cierres fiscales dieron múltiplos positivos en las 5 hojas, así que el mecanismo nativo (mínimo positivo de 4 años) se aplicó sin ajuste manual. OJO con EV/FCFF: el FCFF reportado se desplomó en los últimos 2 cierres porque el capex de infraestructura de IA (centros de datos, TPUs) creció mucho más rápido que los ingresos -- el múltiplo trailing de EV/FCFF llegó a superar 250x en el año más reciente. El mínimo de 4 años (~15x, del cierre más antiguo del rango, previo al capex-supercycle) termina siendo la base del múltiplo, y el precio resultante por EV/FCFF queda muy por debajo de los otros 5 métodos (DCF, EV/EBITDA, P/E, P/FCFE, P/OCF). Esto refleja una distorsión real y conocida (el FCF de Alphabet está genuinamente comprimido por el ciclo de inversión en IA), no un error del modelo: conviene leer el precio de EV/FCFF como un piso muy conservador y no promediarlo con el mismo peso que el resto.",
+  "reason": "Evaluacion de multiplos GOOG"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

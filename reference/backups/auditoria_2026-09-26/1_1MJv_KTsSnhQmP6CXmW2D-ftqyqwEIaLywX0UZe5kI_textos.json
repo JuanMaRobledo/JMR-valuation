@@ -1,0 +1,1154 @@
+{
+ "title": "Modelo JMR - UNH",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "UNITEDHEALTH GROUP (UNH) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "=\"Metodología Damodaran / enfoque financiero | Precio: US$\"&TEXT('Input sheet'!D1;\"0.00\")&\" (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\") | WACC inicial: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "UnitedHealth Group combina UnitedHealthcare, el mayor negocio asegurador y de beneficios de salud del grupo, con Optum, que integra prestación de salud, analítica, tecnología y servicios farmacéuticos. La tesis depende de si la mejora observada en 2026 puede sostenerse tras un 2025 débil, normalizando el ratio de costos médicos y recuperando márgenes sin deteriorar el crecimiento ni el capital regulatorio. El principal contrapeso es el riesgo de ejecución y regulación: pequeñas desviaciones en utilización médica, tarifas de Medicare Advantage, reservas o reembolsos pueden mover de forma material el beneficio."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "La escala, los datos clínicos y la integración UnitedHealthcare–Optum permiten coordinar atención, negociar costos y generar eficiencias difíciles de replicar.",
+    "El ratio de costos médicos puede permanecer elevado y comprimir márgenes, especialmente en Medicare Advantage y negocios de riesgo."
+   ],
+   [
+    "Q2 2026 mostró ingresos de US$112.032M, EBIT de US$7.991M y EPS ajustado de US$6,38; la guía anual fue elevada.",
+    "La regulación, auditorías, presión política sobre precios y prácticas de integración vertical pueden elevar costos o limitar retornos."
+   ],
+   [
+    "La generación de caja se recuperó: OCF LTM estimado de US$27.017M y FCF de US$23.617M.",
+    "Deuda bruta de US$73.328M y participaciones no controladoras reducen el valor atribuible al accionista."
+   ],
+   [
+    "Optum aporta diversificación y palancas de productividad además del negocio asegurador.",
+    "Change Healthcare mantiene riesgo operacional, reputacional y de ciberseguridad; la remediación puede extenderse."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación"
+   ],
+   [
+    "Crecimiento ingresos — Año 1",
+    "1,0%",
+    "4,0%",
+    "6,0%",
+    "El año 1 representa la normalización posterior al LTM Q2 2026; el caso base queda por debajo del crecimiento histórico de doble dígito."
+   ],
+   [
+    "Crecimiento ingresos — Años 2-5",
+    "3,0%",
+    "6,0%",
+    "8,0%",
+    "La escala de UHC y Optum permite crecer, pero el tamaño del grupo y la regulación limitan una extrapolación agresiva."
+   ],
+   [
+    "Margen operativo — Año 1",
+    "4,5%",
+    "5,8%",
+    "6,0%",
+    "El caso base se alinea con la guía 2026 de EBIT superior a US$25.450M sobre ingresos superiores a US$439.000M."
+   ],
+   [
+    "Margen objetivo",
+    "5,2%",
+    "6,5%",
+    "7,2%",
+    "Recuperación parcial frente a 2023-2024; no se asume volver rápidamente al máximo histórico."
+   ],
+   [
+    "Años de convergencia",
+    6,
+    6,
+    6,
+    "La mejora de pricing, reservas, productividad y mezcla de negocio requiere varios ciclos de renovación."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "Ajuste aproximado para un grupo mixto de seguros y servicios; la métrica es menos limpia en aseguradoras."
+   ],
+   [
+    "Costo de capital (WACC)",
+    "7,22%",
+    "7,22%",
+    "7,22%",
+    "Beta multinegocio de seguros y soporte sanitario; tasa libre de riesgo 4,96%, ERP 4,17% y rating A+."
+   ],
+   [],
+   [
+    "3. RESULTADOS DE VALORACIÓN"
+   ],
+   [
+    "Escenario",
+    "DCF / acción",
+    "Objetivo ponderado",
+    "vs. precio actual",
+    "Lectura"
+   ],
+   [
+    "Conservador",
+    "US$226,17",
+    "US$246,67",
+    "-33,9%",
+    "Costos médicos persistentemente altos y recuperación limitada."
+   ],
+   [
+    "Base",
+    "US$339,01",
+    "US$381,66",
+    "+2,3%",
+    "Mejora operativa gradual; valoración cercana al mercado."
+   ],
+   [
+    "Optimista",
+    "US$419,12",
+    "US$505,54",
+    "+35,5%",
+    "Normalización fuerte de márgenes y crecimiento sostenido."
+   ],
+   [
+    "*Ponderación financiera: DCF 40%, P/E 35%, P/FCFE 20% y P/OCF 5%; EV/EBITDA y EV/FCFF se muestran como referencia, pero no reciben peso por el carácter asegurador del grupo."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA UNH"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Estados financieros 2016-2025 y LTM Q2 2026 reemplazados por datos de UnitedHealth Group en millones de USD.",
+    "Sustituye por completo los históricos y márgenes del modelo anterior por los de UNH."
+   ],
+   [
+    2,
+    "Categoría cambiada a “Financiera”.",
+    "En una aseguradora, deuda, inversiones y reservas forman parte del modelo operativo; P/E y FCFE son más informativos que EV/EBITDA."
+   ],
+   [
+    3,
+    "Costo de capital recalculado con beta multinegocio, ERP 4,17%, Treasury 10Y 4,96% y deuda A+.",
+    "Alinea el descuento con el riesgo actual de seguros y servicios sanitarios."
+   ],
+   [
+    4,
+    "Participaciones no controladoras de US$7.502M y opciones de empleados incorporadas.",
+    "Ajusta el valor económico atribuible a los accionistas comunes."
+   ],
+   [
+    5,
+    "Múltiplos de salida normalizados: P/E 14x–22x, P/FCFE 12x–20x, P/OCF 10x–16x y EV/EBITDA 8x–12x.",
+    "Rangos prudentes ante la volatilidad de utilidades y la incertidumbre regulatoria."
+   ],
+   [
+    6,
+    "Crecimiento perpetuo fijado en 3,0%.",
+    "Permanece por debajo de la tasa libre de riesgo y evita que el valor terminal dependa de una hipótesis extrema."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "=\"Al precio de US$\"&TEXT('Input sheet'!D1;\"0.00\")&\", el objetivo ponderado base de US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\" implica un potencial aproximado de \"&TEXT('Resumen de Valoración'!D12/'Input sheet'!D1-1;\"0.0%\")&\", insuficiente para el margen de seguridad del \"&TEXT('Resumen de Valoración'!G4;\"0%\")&\" configurado. El DCF base es menor, US$\"&TEXT('Valuation output'!B35;\"0.00\")&\". La tesis necesita evidencia sostenida de normalización del ratio de costos médicos, recuperación de márgenes y disciplina de capital; el escenario optimista sí ofrece asimetría, pero exige ejecución claramente superior al caso base.\""
+   ],
+   [
+    "Fuentes principales: UnitedHealth Group 10-K 2025; 10-Q y resultados Q2 2026; comunicados de guía 2026; SEC; U.S. Federal Reserve; NYU Stern/Damodaran; precio de mercado al 23-sept-2026."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "El modelo base utiliza LTM Q2 2026, guía FY2026 y una recuperación gradual. La valoración se pondera como empresa financiera para no sobrerrepresentar EV/EBITDA o EV/FCFF."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual",
+    "Recomendación",
+    "Justificación",
+    "Mín histórico",
+    "Máx histórico",
+    "Industria mediana",
+    "Industria promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    0.04,
+    "El 4% es una hipótesis para el año siguiente al LTM: US$450.129M × 1,04 = US$468.134M. No se deriva de la guía FY2026 y exige cotejar calendario y fuente.",
+    0.0057,
+    0.1464
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.058,
+    "El 5,8% es una recuperación asumida desde 4,82% LTM. Sobre US$468.134M proyectados produce EBIT de US$27.152M; no equivale mecánicamente a la guía FY2026 citada antes.",
+    0.0424,
+    0.0871
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.06,
+    "El 6% anual para años 2–5 es una hipótesis de normalización de UHC y Optum; implica US$591.009M en el año 5 y debe contrastarse con primas, costos médicos y regulación.",
+    0.0057,
+    0.1464
+   ],
+   [
+    "Target pre-tax operating margin",
+    "='Input sheet'!B30",
+    0.065,
+    "El 6,5% es un supuesto de recuperación desde 4,82% LTM, con convergencia en 6 años; exige validar siniestralidad y capital regulatorio.",
+    0.0424,
+    0.0871
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    6,
+    "Permite varios ciclos de pricing, reservas y productividad."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    3,
+    "Aproximación para un grupo mixto de seguros y servicios; usar con cautela por el capital regulatorio."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    3.5,
+    "Mejora gradual de eficiencia sin asumir un negocio puramente asset-light."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Los múltiplos de salida están calibrados para UNH y alimentan los escenarios: EV/FCFF 10x–18x; P/OCF 10x–16x; P/E 14x–22x; P/FCFE 12x–20x; EV/EBITDA 8x–12x. La ponderación financiera da prioridad a DCF, P/E, P/FCFE y P/OCF."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (manual)",
+    "Base (supuesto manual)",
+    "Optimista (manual)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J19;EVFCFF!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J19;POCF!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J19;PE!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J19;PFCFE!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J19;EVEBITDA!J30)>0;\"Sí — manual\";\"No\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: el caso base usa 18x P/E, 16x P/FCFE, 13x P/OCF y 10x EV/EBITDA. Los rangos reflejan la recuperación esperada de márgenes, pero conservan descuento por incertidumbre en costos médicos, regulación y ejecución."
+   ],
+   [],
+   [
+    "Trazabilidad del múltiplo Base"
+   ],
+   [
+    "Método",
+    "Base manual",
+    "Hist. 3 años",
+    "Sector mediana",
+    "Lógica y límites"
+   ],
+   [
+    "=A6",
+    "=C6",
+    "=F6",
+    "=M6",
+    "14× EV/FCFF: bajo 20,72× histórico y 20,50× sector; peso 0% por clasificación financiera, solo diagnóstico."
+   ],
+   [
+    "=A7",
+    "=C7",
+    "=F7",
+    "=M7",
+    "13× P/OCF: bajo 17,01× histórico y próximo a 12,51× sector; peso 5%, sujeto a calidad del flujo operativo."
+   ],
+   [
+    "=A8",
+    "=C8",
+    "=F8",
+    "=M8",
+    "18× P/E: bajo 26,54× histórico y 20,40× sector; peso 35% por recuperación incierta del resultado."
+   ],
+   [
+    "=A9",
+    "=C9",
+    "=F9",
+    "=M9",
+    "16× P/FCFE: bajo 18,63× histórico y 18,24× sector; peso 20%, exige FCFE y deuda neta comparables."
+   ],
+   [
+    "=A10",
+    "=C10",
+    "=F10",
+    "=M10",
+    "10× EV/EBITDA: bajo 14,44× histórico y 14,63× sector; peso 0% por clasificación financiera."
+   ],
+   [
+    "Bases manuales; referencias históricas y sectoriales sin fecha ni pares verificados. Damodaran no fija estos números."
+   ],
+   [
+    "Marco de Damodaran: https://pages.stern.nyu.edu/~adamodar/pdfiles/papers/multiples.pdf"
+   ]
+  ],
+  "Cualitativo": [
+   [
+    "UNH — Análisis Cualitativo y Puente a la Valoración"
+   ],
+   [
+    "=\"Fecha: \"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\" | Precio: US$\"&TEXT('Input sheet'!D1;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")"
+   ],
+   [],
+   [
+    "1. NEGOCIO Y VENTAJA COMPETITIVA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "UnitedHealth Group Incorporated"
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Stephen J. Hemsley — presidente y CEO"
+   ],
+   [
+    "Sector Industrial",
+    "Seguros de salud, beneficios y servicios sanitarios integrados"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.unitedhealthgroup.com"
+   ],
+   [
+    "Escala e integración",
+    "UnitedHealthcare y Optum conectan financiación, prestación, farmacia, datos y tecnología.",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Generación de caja",
+    "OCF LTM estimado de US$27.017M y FCF de US$23.617M."
+   ],
+   [
+    "Ventaja de datos y red",
+    "La profundidad de datos clínicos, red de proveedores y relaciones con empleadores y gobiernos elevan barreras de entrada."
+   ],
+   [
+    "Visión General de la Empresa",
+    "UnitedHealth Group opera dos plataformas complementarias: UnitedHealthcare ofrece planes y beneficios médicos; Optum presta atención, servicios tecnológicos, analítica y gestión farmacéutica. La escala permite coordinar atención y administrar costos, pero también aumenta la exposición a regulación, escrutinio político, reservas médicas y riesgo operacional."
+   ],
+   [
+    "UnitedHealthcare",
+    "Principal motor de primas y membresía; muy sensible a utilización médica, pricing y tasas de Medicare Advantage/Medicaid."
+   ],
+   [
+    "Optum Health",
+    "Atención y modelos de riesgo basados en valor; oportunidad de productividad, pero requiere control clínico y ejecución."
+   ],
+   [
+    "Optum Insight y Optum Rx",
+    "Tecnología, analítica y farmacia diversifican ingresos; expuestos a regulación, ciberseguridad y presión sobre intermediarios."
+   ],
+   [
+    "Capital regulatorio",
+    "Parte de la caja e inversiones respalda obligaciones aseguradoras y no debe tratarse íntegramente como activo no operativo."
+   ],
+   [
+    "Ratio de costos médicos (MCR)",
+    "La variable operativa crítica: cambios pequeños en utilización o severidad tienen gran impacto en margen."
+   ],
+   [
+    "Ciberseguridad y continuidad",
+    "Change Healthcare evidenció la importancia de resiliencia, remediación y confianza de clientes y proveedores."
+   ],
+   [
+    "Integración vertical",
+    "Puede mejorar coordinación y eficiencia, pero eleva riesgo antimonopolio y conflicto de interés percibido."
+   ],
+   [
+    "Asignación de capital",
+    "Dividendos, recompras y adquisiciones deben equilibrarse con deuda y capital regulatorio."
+   ],
+   [
+    "3. SUPUESTOS Y RESULTADOS"
+   ],
+   [
+    "Escenario",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "Crecimiento año 1",
+    "1,0%",
+    "4,0%",
+    "6,0%"
+   ],
+   [
+    "Crecimiento años 2-5",
+    "3,0%",
+    "6,0%",
+    "8,0%"
+   ],
+   [
+    "Margen objetivo",
+    "5,2%",
+    "6,5%",
+    "7,2%"
+   ],
+   [
+    "Sales-to-Capital",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x",
+    "3,0x / 3,5x"
+   ],
+   [
+    "WACC",
+    "7,22%",
+    "7,22%",
+    "7,22%"
+   ],
+   [
+    "DCF / acción",
+    "US$226,17",
+    "US$339,01",
+    "US$419,12"
+   ],
+   [
+    "Objetivo ponderado",
+    "US$246,67",
+    "US$381,66",
+    "US$505,54"
+   ],
+   [
+    "=\"Potencial vs. US$\"&TEXT('Input sheet'!D1;\"0.00\")",
+    "-33,9%",
+    "+2,3%",
+    "+35,5%"
+   ],
+   [
+    "Riesgo principal",
+    "Persistencia del MCR alto",
+    "Normalización gradual",
+    "Ejecución mejor a la prevista"
+   ],
+   [
+    "4. DICTAMEN"
+   ],
+   [
+    "Negocio de gran escala y ventajas reales, pero la acción no presenta un margen de seguridad amplio en el caso base. El valor depende más de la normalización de márgenes y reservas que de acelerar ingresos. La disciplina adecuada es esperar confirmación operativa o un precio que compense mejor el riesgo."
+   ],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Fuentes: UnitedHealth Group Q2 2026, 10-Q Q2 2026, 10-K 2025, SEC, Federal Reserve y NYU Stern/Damodaran; datos al 23-sept-2026."
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados Q2 2026",
+    "",
+    "",
+    "Ingresos US$112.032M; EBIT US$7.991M; EPS ajustado US$6,38."
+   ],
+   [
+    "Guía FY2026",
+    "",
+    "",
+    "EPS GAAP US$18,45–18,95; EPS ajustado US$19,50–20,00; OCF aproximado US$24.000M."
+   ],
+   [
+    "Costos médicos",
+    "",
+    "",
+    "MCR Q2 de 86,7%; la normalización es el catalizador central."
+   ],
+   [
+    "Liderazgo",
+    "",
+    "",
+    "Stephen Hemsley lidera el reajuste operativo y la simplificación del grupo."
+   ],
+   [
+    "Riesgo regulatorio y ciber",
+    "",
+    "",
+    "Escrutinio sobre Medicare Advantage, PBM, integración vertical y resiliencia tecnológica."
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Q2 2026: mejora de resultados",
+    "Los ingresos crecieron hasta US$112.032M y el EBIT alcanzó US$7.991M. El avance respalda una recuperación desde el débil segundo semestre de 2025, aunque todavía no elimina la volatilidad de costos médicos."
+   ],
+   [
+    "Guía 2026 elevada",
+    "La compañía elevó su guía a EPS GAAP de US$18,45–18,95 y EPS ajustado de US$19,50–20,00. El caso base usa una recuperación moderada y no capitaliza por completo el extremo superior."
+   ],
+   [
+    "MCR y pricing",
+    "El MCR de 86,7% sigue siendo la métrica clave. La tesis mejora si pricing, reservas y gestión clínica compensan utilización; empeora si la intensidad médica permanece alta."
+   ],
+   [
+    "Capital y deuda",
+    "La deuda bruta de US$73.328M y las participaciones no controladoras de US$7.502M se deducen en la valoración; caja y equivalentes de US$31.468M se agregan."
+   ],
+   [
+    "Lectura de valoración",
+    "El objetivo ponderado base de US$381,66 está apenas por encima del mercado. La oportunidad depende de un mejor punto de entrada o evidencia operativa que acerque los resultados al escenario optimista."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "¿Normalización operativa o deterioro estructural de márgenes?"
+   ],
+   [
+    "UnitedHealth Group combina UnitedHealthcare y Optum. Tras el deterioro de márgenes de 2025, la tesis depende de si el grupo puede normalizar costes médicos, pricing, reservas y productividad sin comprometer el crecimiento. La recuperación observada en 2026 debe analizarse frente a riesgos regulatorios, de ejecución y ciberseguridad; no como una simple extrapolación del crecimiento histórico.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Año 1 representa 2027 después del LTM Q2 2026. El 4% es prudente frente a la escala del grupo y la guía 2026; el 6% en años 2-5 supone normalización sin extrapolar crecimiento de doble dígito.",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo LTM es 4,82%. El 5,80% del año 1 y el 6,50% objetivo suponen recuperación gradual por pricing, reservas, productividad y mezcla UnitedHealthcare/Optum, todavía por debajo del máximo histórico."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "3,0x en años 1-5 y 3,5x en años 6-10 son aproximaciones para un grupo mixto de seguros y servicios. Deben interpretarse con cautela porque el capital regulatorio, las reservas y las adquisiciones hacen menos limpia la relación ventas-capital."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "='Input sheet'!B4"
+   ],
+   [
+    "Precio al día del análisis",
+    "='Input sheet'!B23",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Financiera"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.3
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "MOS vs análisis",
+    "MOS vs actual",
+    "Compra con MOS",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "=IFERROR(1-$B$3/D6;\"\")",
+    "=IFERROR(1-$D$1/D6;\"\")",
+    "=IFERROR(D6*(1-$G$4);\"\")",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "=IFERROR(1-$B$3/D7;\"\")",
+    "=IFERROR(1-$D$1/D7;\"\")",
+    "=IFERROR(D7*(1-$G$4);\"\")",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "=IFERROR(1-$B$3/D8;\"\")",
+    "=IFERROR(1-$D$1/D8;\"\")",
+    "=IFERROR(D8*(1-$G$4);\"\")",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "=IFERROR(1-$B$3/D9;\"\")",
+    "=IFERROR(1-$D$1/D9;\"\")",
+    "=IFERROR(D9*(1-$G$4);\"\")",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "=IFERROR(1-$B$3/D10;\"\")",
+    "=IFERROR(1-$D$1/D10;\"\")",
+    "=IFERROR(D10*(1-$G$4);\"\")",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "=IFERROR(1-$B$3/D11;\"\")",
+    "=IFERROR(1-$D$1/D11;\"\")",
+    "=IFERROR(D11*(1-$G$4);\"\")",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "=IFERROR(1-$B$3/D12;\"\")",
+    "=IFERROR(1-$D$1/D12;\"\")",
+    "=IFERROR(D12*(1-$G$4);\"\")",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs precio del análisis",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    "=$B$3"
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

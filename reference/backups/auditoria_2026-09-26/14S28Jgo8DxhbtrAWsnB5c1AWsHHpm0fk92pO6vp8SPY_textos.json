@@ -1,0 +1,888 @@
+{
+ "title": "Valoración Microsoft finalizada",
+ "sheets": {
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla -- Conservador y Optimista se derivan AUTOMATICAMENTE del historico real de la empresa ('Valuation output' lee el CAGR 3Y de 'Crecimiento y Margenes' para Conservador, y el crecimiento LTM para Optimista), no son un input manual aparte. Esta hoja documenta que valores recomiendo para el Modelo Base y por que, con la data real del propio libro como respaldo -- no reemplaza el juicio del analista, es un punto de partida razonado."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    0.14,
+    "LTM real = 17,79% (impulsado por el ramp-up de Azure/IA), pero incluye un año excepcional que no es la base recurrente -- CAGR 3Y = 10,62%, CAGR 5Y = 10,85%. 14% queda entre el CAGR reciente y el LTM, reconociendo el backlog de Azure (~US$80.000M sin poder atenderse por capacidad) sin extrapolar todo el pico del año.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    0.455,
+    "LTM real = 46,78%. Un leve retroceso vs. LTM es razonable: el capex de IA (~US$190.000M anualizados) ya esta elevando D&A con fuerza (fila 'Depreciation & Amortization' de Income Statement paso de US$28.000M en jun'25 a US$39.000M en jun'26), lo que presiona el margen operativo aunque el negocio siga creciendo.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    "10,5%-11%",
+    "CAGR 3Y = 10,62%, CAGR 5Y = 10,85%, mediana de la industria (CAGR 5Y) = 14,34% -- MSFT converge hacia SU propio historico reciente, no hacia el numero de la industria (que incluye empresas mas chicas con mas espacio para crecer). Sostener >10% por 4 años mas en una compañia de US$3,7 billones de capitalizacion ya es una proyeccion exigente.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.46,
+    "LTM real = 46,78%, YA por encima del cuartil 4 (el mas alto) de la industria en 'Crecimiento y Margenes' (45,11%) -- MSFT ya es el mejor margen de su propio grupo de comparables. Fijar el objetivo de largo plazo apenas debajo del LTM (no por encima) es la lectura conservadora correcta: dificilmente hay mas espacio estructural para subir margen.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    "5 años",
+    "Default estandar de Damodaran para una empresa madura y estable como MSFT (no es una historia de cambio rapido de margen en ninguna direccion) -- ni el caso alcista (Copilot/Azure escalando) ni el bajista (presion de capex) justifican acelerar o extender la convergencia."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    "1,2-1,3",
+    "CapEx/Revenue ('Eficiencia de capital') paso de ~9% en 2017 a ~35% en el ultimo año -- el crecimiento de MSFT se volvio MUCHO mas intensivo en capital (datacenters de IA), no menos. 1,3 ya es bajo para una empresa de software (tipico 2-3x), lo cual es correcto dado el capex; si algo, el riesgo esta sesgado hacia necesitar un numero AUN mas bajo (mas capital por dolar de crecimiento) mientras dure el ciclo de inversion en IA."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    "1,5-1,6",
+    "Supone que la eficiencia de capital mejora una vez que el ciclo de inversion en infraestructura de IA madura y los ingresos alcanzan la capacidad ya instalada (el backlog de Azure se empieza a monetizar sin requerir el mismo capex marginal) -- direccionalmente razonable, aunque es el supuesto mas dificil de anclar a un dato historico concreto."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico; hoy estan todas en el modo automatico (MIN de los ultimos 4 años)."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: el ancla MIN-de-4-años es razonable para MSFT precisamente porque sus multiplos vienen en una tendencia ascendente marcada por la historia de IA/Azure (ej. EV/EBITDA paso de ~18x a ~26x en el mismo periodo) -- usar el minimo evita pagar el multiplo mas inflado por el entusiasmo reciente del mercado, sin ser tan conservador como para ignorar la reclasificacion estructural que tuvo la accion. El caso a vigilar es P/FCFE: los ultimos años el FCFE viene comprimido por el capex de IA (ver 'Márgenes'!Free Cash Flow Margin, cayendo de ~34% a ~20%), asi que el multiplo P/FCFE esta inflado por un DENOMINADOR temporalmente bajo, no solo por optimismo del mercado -- este metodo especifico pesa solo 10% en el Resumen de Valoración, lo cual mitiga el riesgo, pero vale la pena tenerlo presente."
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "Microsoft Corporation"
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Satya Nadella"
+   ],
+   [
+    "Sector Industrial",
+    "Software - Infraestructura / Tecnología"
+   ],
+   [
+    "Sitio Web Oficial",
+    "www.microsoft.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área"
+   ],
+   [
+    "Visión General de la Empresa",
+    "Microsoft opera como la mayor plataforma de nube e IA empresarial del mundo, organizada en tres segmentos: Productividad y Procesos de Negocio (Office 365, LinkedIn, Dynamics 365), Nube Inteligente (Azure, Windows Server, GitHub) y Computación Personal (Windows, Xbox, Surface, Bing/Búsqueda). Está en medio del mayor ciclo de inversión en infraestructura de IA de su historia, con un capex anualizado que supera los US$190.000 millones."
+   ],
+   [
+    "Productividad y Procesos de Negocio\n(Productivity & Business Processes)",
+    "Office 365/Microsoft 365, LinkedIn, Dynamics 365 y Copilot para productividad. Modelo de ingresos recurrentes por suscripción con adopción creciente de Copilot como capa de monetización de IA sobre la base instalada existente."
+   ],
+   [
+    "Nube Inteligente\n(Intelligent Cloud)",
+    "Azure (infraestructura y plataforma en la nube), Windows Server, SQL Server, GitHub y servicios de consultoría. Es el motor de crecimiento principal: Azure creció con fuerza de dos dígitos y sostiene un backlog de pedidos de ~US$80.000 millones que la compañía aún no puede satisfacer por restricciones de capacidad/energía."
+   ],
+   [
+    "Computación Personal\n(More Personal Computing)",
+    "Windows, dispositivos Surface, Xbox/gaming y publicidad de búsqueda (Bing). Segmento más maduro y cíclico, generador estable de caja que financia parcialmente la expansión de Azure/IA."
+   ],
+   [
+    "Estrategia de Distribución\ny Comercialización",
+    "Combina licenciamiento empresarial directo (grandes cuentas y gobierno), venta directa en la nube vía Azure, y una extensa red de partners/OEM para Windows y dispositivos. La monetización de IA se apalanca principalmente en el acuerdo de Azure con OpenAI (compromiso de ~US$250.000 millones hasta 2030)."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema"
+   ],
+   [
+    "Liderazgo en Nube e IA Empresarial",
+    "Azure, junto con AWS y Google Cloud, concentra ~67% del mercado global de nube pública, y Microsoft reportó ~US$49.000M de ingresos de nube en un solo trimestre. La demanda de capacidad IA supera la oferta (backlog de ~US$80.000M), lo que sugiere años de crecimiento visible por delante."
+   ],
+   [
+    "Monetización de OpenAI y Copilot",
+    "El compromiso de Azure con OpenAI (~US$250.000M a 2030) y la expansión de Copilot sobre la base instalada de Office/Windows dan a Microsoft una vía de monetización de IA con menor riesgo de ejecución que competidores que dependen de productos de IA nuevos y no probados."
+   ],
+   [
+    "Diversificación y Generación de Caja",
+    "A diferencia de jugadores de IA \"puros\", Microsoft financia su capex masivo con flujo de caja de negocios maduros y rentables (Windows, Office, Gaming), reduciendo el riesgo financiero del ciclo de inversión en infraestructura."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo"
+   ],
+   [
+    "Capex Masivo en IA Presiona el Flujo de Caja Libre",
+    "El capex anualizado en IA llegó a ~US$190.000M (capex trimestral +66% interanual), con ~US$25.000M adicionales solo por inflación de componentes (GPUs/memoria). Esto comprime el flujo de caja libre en el corto plazo aunque el negocio subyacente siga creciendo con fuerza."
+   ],
+   [
+    "Escrutinio Antimonopolio (UE y FTC)",
+    "La Comisión Europea investiga a Azure y AWS bajo la Digital Markets Act (resolución esperada para noviembre 2026), y la FTC en EE.UU. envió requerimientos a competidores sobre las prácticas de licenciamiento de Microsoft. Un fallo adverso podría forzar cambios costosos en el modelo de negocio."
+   ],
+   [
+    "Intensificación de la Competencia en la Nube",
+    "AWS y Google Cloud compiten agresivamente por la misma demanda de IA, y Google ha presentado quejas regulatorias formales contra las practicas de licenciamiento de Microsoft. Cualquier cambio forzado en esas prácticas reduciría una ventaja competitiva clave de Azure."
+   ],
+   [],
+   [
+    "Fuente / Fuente original: CNBC, Forbes, Bloomberg, CFO Dive, Global Data Center Hub — septiembre 2026"
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: Agosto – Septiembre 2026"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Alianzas Estratégicas / IA",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Análisis de Wall St.",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Alianzas / Clientes",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Regulatorio / Antimonopolio",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Resultados Financieros",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Compromiso de Azure con OpenAI (~US$250.000M) y Aceleración de Capex en IA",
+    "Microsoft duplicó su capex de IA a un ritmo anualizado de ~US$190.000 millones en el año fiscal 2026 y aseguró un compromiso de Azure de ~US$250.000 millones de OpenAI hasta 2030. El capex trimestral llegó a US$37.500M (+66% interanual). La compañía reconoce un backlog de pedidos de Azure de ~US$80.000M que no puede satisfacer por restricciones de energía y capacidad de datacenters."
+   ],
+   [
+    "Consenso Alcista de Wall Street",
+    "El consenso de ~97 analistas sigue siendo mayoritariamente \"Strong Buy\"/\"Buy\", con price targets promedio entre US$589 y US$592 (~14% de upside implícito sobre el precio de mercado actual). El optimismo se apoya en el crecimiento de Azure y la monetización de Copilot/OpenAI."
+   ],
+   [
+    "Estándar Nacional de Seguridad y Privacidad de IA para Escuelas",
+    "El 9 de septiembre de 2026, AFT, UFT y Microsoft anunciaron un \"National AI Safety & Privacy Standard\" para proteger a estudiantes, familias y educadores, que Microsoft pondrá a disposición de todos los distritos escolares de EE.UU. Refuerza el posicionamiento de Microsoft como proveedor responsable de IA en el sector educativo/gobierno."
+   ],
+   [
+    "Investigaciones Antimonopolio de la FTC y la Comisión Europea",
+    "La Comisión Europea avanza una investigación de mercado sobre Azure bajo la Digital Markets Act (conclusión esperada en noviembre 2026), evaluando si Azure y AWS cumplen los umbrales para ser designados \"gatekeepers\". En EE.UU., la FTC envió requerimientos de información a al menos 6 competidores sobre las prácticas de licenciamiento e interoperabilidad de Microsoft en la nube y productos de IA."
+   ],
+   [
+    "Resultados del Segundo Trimestre Fiscal 2026: Ingresos +17% Interanual",
+    "Microsoft superó expectativas en su reporte de Q2 FY2026, con ingresos de US$81.300 millones (+17% interanual) y utilidad ajustada por acción de US$4,14, impulsados principalmente por el crecimiento de Azure y la nube inteligente."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "El Ciclo de Capex de IA: Apostando el Balance a Azure y OpenAI"
+   ],
+   [
+    "Microsoft es la plataforma de nube e IA empresarial dominante, monetizando su apuesta en OpenAI/Copilot sobre una base instalada de Office/Windows/Azure sin equivalente entre sus pares. Está en medio del mayor ciclo de capex de su historia (~US$190.000M anualizados) para satisfacer una demanda de Azure que hoy supera la oferta (backlog de ~US$80.000M sin poder atenderse por restricciones de energía y datacenters). Esa misma inversión comprime el margen de flujo de caja libre en el corto plazo -- el crecimiento de ingresos (14% el próximo año, moderando a ~11% en años 2-5) y el margen operativo (45,5% en transición al 46,78% de largo plazo) siguen siendo sólidos, pero el sales-to-capital cae a 1,30x mientras dura la fase intensiva de construcción, antes de normalizarse hacia el promedio de la industria (1,54x). El riesgo principal no es de demanda sino regulatorio: investigaciones antimonopolio de la Comisión Europea (bajo la Digital Markets Act) y de la FTC en EE.UU. sobre las prácticas de licenciamiento de Azure podrían forzar cambios costosos al modelo de negocio.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Azure con demanda que excede la oferta (backlog ~US$80.000M); crecimiento modera hacia el CAGR 5Y histórico",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "Margins improve, aided by cloud business & continued economies of scale."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Cae mientras dura el ciclo de capex de IA (~US$190.000M/año); converge al promedio de la industria de software (1,54x) en el largo plazo"
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Software"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$S$11; MATCH($G$3; $I$5:$S$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$S$11; MATCH($G$3; $I$5:$S$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$S$11; MATCH($G$3; $I$5:$S$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$S$11; MATCH($G$3; $I$5:$S$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$S$11; MATCH($G$3; $I$5:$S$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.1,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$S$11; MATCH($G$3; $I$5:$S$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    "=IFERROR(INDEX(GOOGLEFINANCE('Input sheet'!A1;\"close\";'Input sheet'!B4);2;2);'Input sheet'!D1)"
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

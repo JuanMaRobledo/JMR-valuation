@@ -1,0 +1,87 @@
+{
+ "Estadísticas!E13": {
+  "before": "='Input sheet'!D1/1,84",
+  "after": "=PE!F19",
+  "reason": "P/E Estimado (NTM) y PEG con formula viva, como en las demas hojas (antes divisores fijos obsoletos 5,69 y 7,3)"
+ },
+ "Estadísticas!E14": {
+  "before": "=E13/16,4",
+  "after": "=E4/('Input sheet'!B29*100)",
+  "reason": "P/E Estimado (NTM) y PEG con formula viva, como en las demas hojas (antes divisores fijos obsoletos 5,69 y 7,3)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\")",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\")",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!D3)^(1/7)-1;\"\")",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadísticas PLTR: resguardo 'N/A (base negativa)' en crecimiento de EPS y FCF cuando el año base tuvo perdidas (evita potencias fraccionarias de numeros negativos)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadísticas PLTR: resguardo 'N/A (base negativa)' en crecimiento de EPS y FCF cuando el año base tuvo perdidas (evita potencias fraccionarias de numeros negativos)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!D24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!D24)^(1/7)-1;\"\"))",
+  "reason": "Estadísticas PLTR: resguardo 'N/A (base negativa)' en crecimiento de EPS y FCF cuando el año base tuvo perdidas (evita potencias fraccionarias de numeros negativos)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadísticas PLTR: resguardo 'N/A (base negativa)' en crecimiento de EPS y FCF cuando el año base tuvo perdidas (evita potencias fraccionarias de numeros negativos)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\")",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadísticas PLTR: crecimiento historico con formula viva (era el bloque de otra empresa copiado y pegado); guia externa (Fwd 2Y / LT growth) marcada N/D en vez de la cifra ajena"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=IFERROR(Dividendos!L4/'Input sheet'!D1;\"\")",
+  "reason": "MSFT paga dividendo (DPS US$3,56): bloque de dividendos con formula viva en vez de '—'"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "MSFT paga dividendo (DPS US$3,56): bloque de dividendos con formula viva en vez de '—'"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=Dividendos!L4",
+  "reason": "MSFT paga dividendo (DPS US$3,56): bloque de dividendos con formula viva en vez de '—'"
+ }
+}

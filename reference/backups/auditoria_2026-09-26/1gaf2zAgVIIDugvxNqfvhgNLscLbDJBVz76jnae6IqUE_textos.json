@@ -1,0 +1,1106 @@
+{
+ "title": "Modelo_JMR_Plantilla_Maestra PLTR 16.09.26",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "PALANTIR TECHNOLOGIES INC. (PLTR) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al análisis: US$172,11 (16-sept-2026) | WACC: 12,23%"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Palantir convirtió sus plataformas Gotham, Foundry, Apollo y AIP en una capa operativa de IA para gobiernos y grandes empresas. La tesis combina crecimiento excepcional y expansión rápida de márgenes con una valoración que ya descuenta una ejecución extraordinaria: Q2 2026 creció 93% interanual, el negocio comercial de EE.UU. 149% y el gubernamental de EE.UU. 90%, mientras el margen operativo GAAP alcanzó 47%. El debate no es la calidad del negocio, sino cuánto de esa aceleración puede sostenerse durante una década."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "Crecimiento respaldado por AIP: guía FY2026 de US$8.150–8.158M, aproximadamente +82% interanual.",
+    "La cotización exige ejecución casi perfecta: ~148x P/E trailing y ~152x EV/EBITDA."
+   ],
+   [
+    "Economía unitaria sobresaliente: margen bruto LTM 84,8%, margen operativo 42,8% y FCF LTM ~US$3.358M.",
+    "Una desaceleración del crecimiento puede comprimir simultáneamente utilidades y múltiplo."
+   ],
+   [
+    "Balance excepcional: ~US$9.409M de caja e inversiones y sin deuda financiera material.",
+    "SBC LTM ~US$836M, dilución potencial y compromisos importantes de infraestructura cloud."
+   ],
+   [
+    "Gotham/Foundry/AIP crean altos costos de cambio y una posición diferenciada en entornos regulados y de misión crítica.",
+    "Riesgos de concentración en contratos públicos, ciclos de venta largos, escrutinio político, privacidad y soberanía de datos."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación"
+   ],
+   [
+    "Crecimiento ingresos — Año 1",
+    0.6,
+    0.82,
+    0.95,
+    "Base anclado en la guía oficial FY2026; extremos reflejan desaceleración o continuidad del impulso de AIP."
+   ],
+   [
+    "Crecimiento ingresos — Años 2-5",
+    0.3,
+    0.4,
+    0.5,
+    "Desaceleración explícita desde 2026; aun así, superior a software maduro por la fase de adopción de IA."
+   ],
+   [
+    "Margen operativo — Año 1",
+    0.48,
+    0.48,
+    0.48,
+    "Punto de partida por encima del 42,8% LTM y cercano al 47% GAAP de Q2."
+   ],
+   [
+    "Margen objetivo",
+    0.4525,
+    0.5,
+    0.55,
+    "Conservador mantiene el margen ajustado actual; base y optimista capturan apalancamiento de software."
+   ],
+   [
+    "Convergencia de margen",
+    "5 años",
+    "5 años",
+    "5 años",
+    "La expansión ya está ocurriendo, pero la escala exige inversión comercial y de producto."
+   ],
+   [
+    "Sales-to-Capital años 1-5",
+    "4,0x",
+    "4,0x",
+    "4,0x",
+    "Negocio asset-light; capex LTM inferior a 1% de ingresos, moderado por SBC y compromisos cloud."
+   ],
+   [
+    "Sales-to-Capital años 6-10",
+    "4,5x",
+    "4,5x",
+    "4,5x",
+    "Mejora gradual de eficiencia a medida que madura la plataforma."
+   ],
+   [
+    "Costo de capital",
+    0.1223,
+    0.1223,
+    0.1223,
+    "Treasury 10Y 5,00%, ERP 4,46% y beta directa 1,62; deuda financiera nula."
+   ],
+   [
+    "3. RESULTADO POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio objetivo ponderado*",
+    "vs. precio actual"
+   ],
+   [
+    "Conservador",
+    "US$58,58",
+    "US$65,44",
+    -0.62
+   ],
+   [
+    "Base",
+    "US$105,73",
+    "US$133,06",
+    -0.227
+   ],
+   [
+    "Optimista",
+    "US$180,31",
+    "US$254,19",
+    "=+47,7%"
+   ],
+   [
+    "*Ponderación “Crecimiento”: DCF 60%; EV/FCFF 15%; EV/EBITDA 10%; P/E, P/FCFE y P/OCF 5% cada uno."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS PARA PLTR"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Estados financieros 2018–LTM sustituidos y reconciliados.",
+    "Fuentes primarias: 10-K 2025, 10-Q Q2 2026 y 10-K histórico; LTM = FY2025 + H1 2026 − H1 2025."
+   ],
+   [
+    2,
+    "I+D capitalizado a tres años.",
+    "La I+D es una inversión económica en plataforma; evita penalizar artificialmente el margen operativo."
+   ],
+   [
+    3,
+    "Costo de capital con beta directa 1,62 y costo de deuda directo.",
+    "PLTR no tiene deuda financiera material; evita el error de rating sintético con interés cero."
+   ],
+   [
+    4,
+    "Escenarios recalibrados en dos tramos.",
+    "Año 1 usa 60%/82%/95%; años 2-5 usan 30%/40%/50%, evitando repetir 95% durante cinco años."
+   ],
+   [
+    5,
+    "Múltiplos objetivo reemplazados por múltiplos implícitos del DCF.",
+    "Los años históricos con pérdidas hacían inválido usar mínimos mecánicos; cada múltiplo quedó consistente con su escenario."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Palantir presenta una combinación excepcional de crecimiento, margen y balance, pero el precio actual ya incorpora una parte sustancial del caso alcista. El valor base ponderado de US$133,06 implica aproximadamente 22,7% de downside frente a US$172,11; sólo el escenario optimista ofrece margen de seguridad positivo. La variable crítica es la persistencia del crecimiento después de FY2026: si los ingresos pueden sostener ~40% anual en 2027-2030 y el margen converge hacia 50%, la valoración se acerca al precio; si el crecimiento normaliza hacia 30%, el riesgo de compresión es material."
+   ],
+   [],
+   [
+    "Fuentes principales: Palantir Q2 2026 Earnings Release; SEC 10-Q al 30-jun-2026; Palantir 10-K 2025; U.S. Treasury Daily Rates; StockAnalysis (precio y comparables, 16-sept-2026)."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: el escenario Base se fija por juicio analítico. Los escenarios Conservador y Optimista se ajustaron manualmente en dos tramos para PLTR: Año 1 = 60% / 82% / 95% y Años 2-5 = 30% / 40% / 50%. Esto evita extrapolar el crecimiento excepcional de FY2026 durante todo el horizonte."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual",
+    "Recomendación",
+    "Justificación",
+    "Mín histórico",
+    "Máx histórico",
+    "Industria mediana",
+    "Industria promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    0.82,
+    0.82,
+    "Punto medio de la guía oficial FY2026: US$8.150–8.158M, aproximadamente +82% interanual.",
+    0.1675,
+    0.5618,
+    0.27,
+    0.2614
+   ],
+   [
+    "Operating margin - año 1",
+    0.48,
+    0.48,
+    "Cercano al 47% GAAP de Q2 y superior al 42,8% LTM por apalancamiento operativo.",
+    -1.0742,
+    0.428,
+    0.0644,
+    0.0872
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    0.4,
+    0.4,
+    "Desacelera con fuerza desde FY2026, pero mantiene una prima por la fase temprana de adopción de AIP.",
+    0.1675,
+    0.5618,
+    0.27,
+    0.2614
+   ],
+   [
+    "Target pre-tax operating margin",
+    0.5,
+    0.5,
+    "El LTM ya está en 42,8% y Q2 en 47%; 50% base asume escala sin llegar al 55% optimista.",
+    -1.0742,
+    0.428,
+    0.0644,
+    0.0872
+   ],
+   [
+    "Year of convergence for margin",
+    5,
+    "5 años",
+    "Equilibra la rápida expansión observada con reinversión comercial, I+D y capacidad cloud."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "4,00x",
+    "4,00x",
+    "Asset-light y capex LTM inferior a 1% de ventas; se modera por SBC y compromisos cloud."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "4,50x",
+    "4,50x",
+    "Mejora gradual de eficiencia tras la fase de expansión acelerada."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico; hoy estan todas en el modo automatico (MIN de los ultimos 4 años)."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación PLTR: el historial cambia de pérdidas a beneficios, por lo que los mínimos históricos de P/E, EV/EBITDA y múltiplos de flujo no son económicamente comparables. Se reemplazaron por múltiplos implícitos en cada escenario DCF."
+   ]
+  ],
+  "Cualitativo": [
+   [
+    "PLTR — Análisis Cualitativo y Puente a la Valoración"
+   ],
+   [
+    "Fecha: 16-sept-2026 | Precio: US$172,11 | WACC: 12,23%"
+   ],
+   [],
+   [
+    "1. NEGOCIO Y VENTAJA COMPETITIVA"
+   ],
+   [
+    "Palantir ofrece Gotham, Foundry, Apollo y AIP para integrar datos, desplegar software y operar modelos de IA en entornos complejos. Su ventaja radica en despliegues de misión crítica, seguridad, ontología de datos y altos costos de cambio; la expansión comercial de AIP amplía el mercado más allá del gobierno.",
+    "Palantir Technologies Inc."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Tim Cook"
+   ],
+   [
+    "Fortalezas",
+    "Riesgos"
+   ],
+   [
+    "Crecimiento Q2 2026 de 93%; EE.UU. comercial +149% y gobierno +90%.",
+    "Valoración extrema: ~148x P/E y ~152x EV/EBITDA trailing."
+   ],
+   [
+    "Margen operativo GAAP Q2 de 47% y FCF LTM ~US$3.358M.",
+    "El consenso necesita una desaceleración ordenada; pequeños desvíos pueden tener gran impacto.",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Caja e inversiones ~US$9.409M; sin deuda financiera material.",
+    "SBC LTM ~US$836M y riesgo de dilución."
+   ],
+   [
+    "Productos profundamente integrados en operaciones críticas y reguladas.",
+    "Contratos públicos sujetos a presupuesto, renovación, cancelación y escrutinio político."
+   ],
+   [
+    "Visión General de la Empresa",
+    "Plataformas: Gotham, Foundry, Apollo y AIP. Posicionamiento central: convertir datos y modelos de IA en decisiones operativas dentro de organizaciones complejas y reguladas."
+   ],
+   [
+    "2. CATALIZADORES Y SEÑALES A MONITOREAR",
+    "El producto insignia y la mayor fuente de ingresos. El superciclo del iPhone 17 impulsó récords de ingresos en los trimestres de marzo y junio de FY2026 -- el primer signo claro de reaceleración de la demanda tras varios años de estancamiento."
+   ],
+   [
+    "Catalizador / señal",
+    "Lectura para la tesis"
+   ],
+   [
+    "Crecimiento de clientes y TCV en EE.UU. comercial",
+    "Confirma si AIP amplía el mercado sin depender del gasto gubernamental."
+   ],
+   [
+    "Margen operativo GAAP y conversión a FCF",
+    "Valida que el crecimiento no requiera reinversión desproporcionada."
+   ],
+   [
+    "SBC y acciones diluidas",
+    "Mide cuánto del valor económico llega al accionista."
+   ],
+   [
+    "Contratos de defensa y alianzas industriales",
+    "Expanden el moat, pero elevan exposición política y reputacional."
+   ],
+   [
+    "Internacional comercial",
+    "Es la principal oportunidad no reflejada en el mix actual y también el área con fricción de soberanía."
+   ],
+   [
+    "Compromisos cloud e infraestructura",
+    "Pueden sostener escala, pero reducen flexibilidad si la demanda desacelera."
+   ],
+   [
+    "3. SUPUESTOS Y RESULTADOS"
+   ],
+   [
+    "Supuesto / resultado",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "Crecimiento Año 1",
+    0.6,
+    0.82,
+    0.95
+   ],
+   [
+    "Crecimiento Años 2-5",
+    0.3,
+    0.4,
+    0.5
+   ],
+   [
+    "Margen objetivo",
+    0.4525,
+    0.5,
+    0.55
+   ],
+   [
+    "Sales-to-Capital 1-5 / 6-10",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x",
+    "4,0x / 4,5x"
+   ],
+   [
+    "WACC",
+    0.1223,
+    0.1223,
+    0.1223
+   ],
+   [
+    "DCF por acción",
+    "US$58,58",
+    "US$105,73",
+    "US$180,31"
+   ],
+   [
+    "Objetivo ponderado",
+    "US$65,44",
+    "US$133,06",
+    "US$254,19"
+   ],
+   [
+    "Upside / downside",
+    -0.62,
+    -0.227,
+    "=+47,7%"
+   ],
+   [
+    "Estrategia de IA Más Cautelosa y Dependiente de un Socio Externo (Google)",
+    "Monitorear crecimiento comercial de EE.UU., expansión internacional, margen GAAP, conversión de caja, SBC y acciones diluidas."
+   ],
+   [
+    "4. DICTAMEN"
+   ],
+   [
+    "Negocio sobresaliente, acción exigente. A US$172,11, el caso base no ofrece margen de seguridad; el precio se justifica principalmente si la compañía sostiene crecimiento cercano a 50% durante varios años y márgenes de 55%. La decisión debe centrarse en la persistencia de AIP, no en extrapolar un solo trimestre."
+   ],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Fuentes: Palantir IR Q2 2026; SEC 10-Q Q2 2026; Palantir 10-K 2025; U.S. Treasury; StockAnalysis, datos al 16-sept-2026."
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "Resultados del Trimestre de Junio FY2026",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Superciclo del iPhone 17",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Regulación: DMA y App Store",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Analistas de Wall Street",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [
+    "Aranceles y Cadena de Suministro",
+    "",
+    "",
+    "Ver sección detallada abajo"
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "Resultados del Tercer Trimestre Fiscal 2026 (Junio): Ingresos +16% Interanual, Récords en Todas las Categorías",
+    "Q2 2026: ingresos US$1.935M (+93% interanual), margen operativo GAAP 47% y FCF ajustado US$1.220M."
+   ],
+   [
+    "Duplicando la Producción de iPhones en India Ante los Aranceles a China",
+    "A junio de 2026: caja e inversiones US$9.409M, sin deuda financiera material; balance permite invertir sin depender de financiación externa."
+   ],
+   [
+    "Riesgo de soberanía, privacidad y contratación pública",
+    "La adopción internacional puede enfrentar preferencia por proveedores nacionales, restricciones de datos y escrutinio político. Los contratos públicos también están sujetos a presupuesto, opción y terminación."
+   ],
+   [
+    "Analistas Mantienen Calificación \"Buy\" con Precio Objetivo Cerca del Precio Actual",
+    "El consenso de 45 analistas de Wall Street tiene un precio objetivo mediano de US$335 (rango US$215-US$400), prácticamente en línea con el precio de mercado de ~US$333 -- reflejando expectativas de un mejor ciclo de producto en 2026-2027 (Siri renovado, iPhone plegable, Vision Pro 2), pero sin mucho margen de re-rating adicional al múltiplo actual."
+   ],
+   [
+    "Guía FY2026 y persistencia del crecimiento",
+    "La guía oficial de US$8.150–8.158M implica ~82% de crecimiento. El punto decisivo para la valoración es cuánto desacelera el negocio a partir de 2027."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "Reaceleración Real del Superciclo del iPhone vs. una Valuación que Ya Exige Perfección"
+   ],
+   [
+    "Palantir opera Gotham, Foundry, Apollo y AIP como plataformas de datos e inteligencia artificial para gobiernos y grandes empresas; el crecimiento excepcional debe evaluarse frente a una valoración que ya descuenta una ejecución muy exigente.",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "LTM real (Income Statement) +12,17% i.a., y los últimos dos trimestres reportados +17% y +16% -- un superciclo de producto ya en marcha (iPhone 17), no una proyección. Se modera en años 2-5 a medida que el efecto supercycle se normaliza sobre una base de ingresos ya muy grande (~US$467.000M).",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "El margen operativo ajustado actual (basis con I+D capitalizado) es 35,5% -- ya en una trayectoria de mejora sostenida desde 24,15% en 2020. Un leve paso adelante en año 1 es coherente con el apalancamiento operativo ya demostrado (EPS +29% i.a. en el trimestre de junio, muy por encima del +16% de ingresos), impulsado por el mix creciente hacia Services de alto margen."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Negocio de software asset-light: capex LTM inferior a 1% de ventas, con una eficiencia moderada por SBC y compromisos de infraestructura cloud."
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "='Input sheet'!B23",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Crecimiento"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    333.08
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}

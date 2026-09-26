@@ -1,0 +1,517 @@
+{
+ "Cualitativo!A1": {
+  "before": "",
+  "after": "='Input sheet'!A1&\" — Análisis Cualitativo y Puente a la Valoración\"",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A2": {
+  "before": "",
+  "after": "=\"Fecha: \"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\" | Precio: US$\"&TEXT('Input sheet'!D1;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A4": {
+  "before": "",
+  "after": "1. NEGOCIO Y VENTAJA COMPETITIVA",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A5": {
+  "before": "",
+  "after": "Nombre de la Empresa",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Palantir Technologies Inc.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A6": {
+  "before": "",
+  "after": "Director Ejecutivo (CEO)",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Alex Karp (cofundador y CEO desde 2003)",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A7": {
+  "before": "",
+  "after": "Sector Industrial",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Software / Análisis de Datos e Inteligencia Artificial para gobierno y empresas (Nasdaq: PLTR)",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A8": {
+  "before": "",
+  "after": "Sitio Web Oficial",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "www.palantir.com",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A9": {
+  "before": "",
+  "after": "Fortalezas",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B9": {
+  "before": "",
+  "after": "Riesgos",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A10": {
+  "before": "",
+  "after": "Plataformas Gotham (gobierno/defensa), Foundry (empresas) y Apollo (despliegue continuo), con AIP ampliando el mercado hacia la adopción comercial de IA generativa sobre datos propios del cliente.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B10": {
+  "before": "",
+  "after": "Valoración muy exigente en relación con su historia de rentabilidad: múltiplos de EV/EBITDA y P/E muy por encima del promedio del sector de software.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A11": {
+  "before": "",
+  "after": "Ingresos LTM de ~US$6.156M con margen operativo (EBIT) LTM de ~42,8% y crecimiento entre los de mayor aceleración del sector de software.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Alta concentración de ingresos en contratos gubernamentales (EE.UU. y aliados), sujetos a ciclos presupuestarios, renovación y escrutinio político.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A12": {
+  "before": "",
+  "after": "Altos costos de cambio: los despliegues de Gotham/Foundry quedan integrados en operaciones críticas y reguladas del cliente, generando contratos de varios años.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Historial de dilución significativa por compensación basada en acciones (SBC), que erosiona el valor por acción pese al crecimiento del negocio.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A13": {
+  "before": "",
+  "after": "Expansión comercial de AIP amplía el mercado direccionable más allá del gobierno hacia grandes empresas privadas.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "El crecimiento comercial en EE.UU. es todavía relativamente reciente; sostenerlo sin depender del gasto gubernamental es el punto central no probado de la tesis.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A15": {
+  "before": "",
+  "after": "Visión General de la Empresa",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Palantir ofrece tres plataformas centrales: Gotham (inteligencia y operaciones para gobierno y defensa), Foundry (integración y análisis de datos para empresas) y Apollo (despliegue y actualización continua del software en cualquier entorno, incluidos los aislados/clasificados). Su Artificial Intelligence Platform (AIP), pensada para acelerar la adopción de IA generativa sobre los datos ya integrados del cliente, es el principal motor de la aceleración comercial de los últimos años. El moat combina despliegues de misión crítica en entornos altamente regulados, una ontología de datos propia que estructura la información del cliente de forma difícil de replicar, y costos de cambio elevados una vez que Gotham/Foundry quedan integrados en las operaciones diarias.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A17": {
+  "before": "",
+  "after": "2. CATALIZADORES Y SEÑALES A MONITOREAR",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A18": {
+  "before": "",
+  "after": "Catalizador / señal",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B18": {
+  "before": "",
+  "after": "Lectura para la tesis",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A19": {
+  "before": "",
+  "after": "Crecimiento de clientes comerciales y TCV (valor total contratado) en EE.UU.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B19": {
+  "before": "",
+  "after": "Confirma si AIP amplía el mercado sin depender del gasto gubernamental.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A20": {
+  "before": "",
+  "after": "Margen operativo y conversión a FCF",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B20": {
+  "before": "",
+  "after": "Valida que el crecimiento no exige reinversión desproporcionada.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A21": {
+  "before": "",
+  "after": "Renovación y expansión de contratos de defensa/gobierno (EE.UU. y aliados)",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Sostiene la base histórica del negocio, pero eleva la exposición política y presupuestaria.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A22": {
+  "before": "",
+  "after": "SBC y acciones diluidas",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Mide cuánto del valor económico creado llega efectivamente al accionista.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A23": {
+  "before": "",
+  "after": "Expansión internacional comercial",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Principal oportunidad no reflejada todavía en el mix de ingresos actual, y también el área con mayor fricción regulatoria/de soberanía de datos.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A25": {
+  "before": "",
+  "after": "3. SUPUESTOS Y RESULTADOS",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A26": {
+  "before": "",
+  "after": "Supuesto / resultado",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B26": {
+  "before": "",
+  "after": "Conservador",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C26": {
+  "before": "",
+  "after": "Base",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D26": {
+  "before": "",
+  "after": "Optimista",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A27": {
+  "before": "",
+  "after": "Crecimiento Año 1",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "='Valuation output'!C55",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C27": {
+  "before": "",
+  "after": "='Input sheet'!B27",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D27": {
+  "before": "",
+  "after": "='Valuation output'!C106",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A28": {
+  "before": "",
+  "after": "Crecimiento Años 2-5",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "='Valuation output'!D55",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C28": {
+  "before": "",
+  "after": "='Input sheet'!B29",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D28": {
+  "before": "",
+  "after": "='Valuation output'!D106",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A29": {
+  "before": "",
+  "after": "Margen objetivo",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "='Valuation output'!C45",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C29": {
+  "before": "",
+  "after": "='Valuation output'!C46",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D29": {
+  "before": "",
+  "after": "='Valuation output'!C47",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A30": {
+  "before": "",
+  "after": "Sales-to-Capital 1-5 / 6-10",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "=TEXT('Input sheet'!B32;\"0.0\")&\"x / \"&TEXT('Input sheet'!B33;\"0.0\")&\"x\"",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C30": {
+  "before": "",
+  "after": "=TEXT('Input sheet'!B32;\"0.0\")&\"x / \"&TEXT('Input sheet'!B33;\"0.0\")&\"x\"",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D30": {
+  "before": "",
+  "after": "=TEXT('Input sheet'!B32;\"0.0\")&\"x / \"&TEXT('Input sheet'!B33;\"0.0\")&\"x\"",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A31": {
+  "before": "",
+  "after": "WACC",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B31": {
+  "before": "",
+  "after": "='Cost of capital worksheet'!B14",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C31": {
+  "before": "",
+  "after": "='Cost of capital worksheet'!B14",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D31": {
+  "before": "",
+  "after": "='Cost of capital worksheet'!B14",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A32": {
+  "before": "",
+  "after": "DCF por acción (hoy)",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B32": {
+  "before": "",
+  "after": "='Valuation output'!B86",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C32": {
+  "before": "",
+  "after": "='Valuation output'!B35",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D32": {
+  "before": "",
+  "after": "='Valuation output'!B137",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A33": {
+  "before": "",
+  "after": "Precio objetivo ponderado (3 años)",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B33": {
+  "before": "",
+  "after": "='Resumen de Valoración'!C12",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C33": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D33": {
+  "before": "",
+  "after": "='Resumen de Valoración'!E12",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A34": {
+  "before": "",
+  "after": "Potencial vs. precio de hoy",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!B34": {
+  "before": "",
+  "after": "='Resumen de Valoración'!C12/'Input sheet'!D1-1",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!C34": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12/'Input sheet'!D1-1",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!D34": {
+  "before": "",
+  "after": "='Resumen de Valoración'!E12/'Input sheet'!D1-1",
+  "reason": "Cualitativo LULU: recuperar la tabla de supuestos (quedo con basura de una prueba de diagnostico sobre la misma celda)"
+ },
+ "Cualitativo!A36": {
+  "before": "",
+  "after": "4. DICTAMEN",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A37": {
+  "before": "",
+  "after": "Negocio con crecimiento y estructura de márgenes sobresalientes dentro del software, pero la acción cotiza con una valoración que exige que ese ritmo se sostenga por varios años y que la expansión comercial (AIP) se confirme como estructural y no como un pico ligado a un tramo puntual de gasto en IA. El margen de seguridad depende casi enteramente de esa persistencia, no de un trimestre puntual.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A39": {
+  "before": "",
+  "after": "ACONTECIMIENTOS Y NOTICIAS RECIENTES",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A40": {
+  "before": "",
+  "after": "Fuentes: estados financieros del modelo (SEC EDGAR, 10-K/10-Q de Palantir). No se citan titulares de prensa de trimestres específicos por no tener una fuente verificada al momento de escribir esta hoja — actualizar en la próxima revisión con los datos del trimestre más reciente.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A42": {
+  "before": "",
+  "after": "1. TEMAS ESTRUCTURALES A SEGUIR",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A43": {
+  "before": "",
+  "after": "Categoría / Tema",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A44": {
+  "before": "",
+  "after": "Crecimiento comercial en EE.UU. y expansión internacional",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B44": {
+  "before": "",
+  "after": "",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A45": {
+  "before": "",
+  "after": "Renovaciones de contratos de gobierno/defensa",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B45": {
+  "before": "",
+  "after": "",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A46": {
+  "before": "",
+  "after": "Margen operativo y SBC/dilución",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A47": {
+  "before": "",
+  "after": "Adopción de AIP fuera de clientes ya existentes",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A48": {
+  "before": "",
+  "after": "Sostenibilidad del múltiplo de valoración",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A50": {
+  "before": "",
+  "after": "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A51": {
+  "before": "",
+  "after": "Evento / Noticia",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A52": {
+  "before": "",
+  "after": "Resultados del segundo trimestre fiscal 2026: ingresos -4% interanual, comparables -10%, guía anual recortada",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B52": {
+  "before": "",
+  "after": "lululemon reportó una caída de ingresos de 4% interanual (5% en moneda constante) a US$2.400M, con comparables cayendo 10% (Norteamérica -12%). Recortó su guía anual de US$11.000-11.150M a US$10.350-10.500M y la de EPS de US$10,95-11,15 a US$9,48-9,73. La CEO interina Meghan Frank atribuyó parte de la debilidad a comentarios negativos en redes sociales y a una desaceleración mayor a la esperada en categorías core.",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A53": {
+  "before": "",
+  "after": "Alo Yoga y Vuori ganan terreno significativo",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B53": {
+  "before": "",
+  "after": "lululemon domina con 77,5% de foot traffic share en su categoría, pero perdió 9 puntos frente al período anterior (86,5%). Alo Yoga multiplicó su participación más de 5 veces (de 1,4% a 8,6%); Vuori se mantuvo en 9,2% con una valuación de US$5.500M, construida en buena parte atrayendo compradores premium que antes elegían lululemon.",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A54": {
+  "before": "",
+  "after": "Aranceles sobre Vietnam y Camboya generan un impacto neto de ~US$320M en el margen 2026",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B54": {
+  "before": "",
+  "after": "Con ~40% de la producción en Vietnam (arancel 20%) y ~9% en Camboya (arancel 49%), management proyecta un impacto neto de ~US$320M sobre el margen de 2026 pese a mitigación (pricing, negociación con proveedores, eficiencias logísticas).",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A55": {
+  "before": "",
+  "after": "Búsqueda de CEO permanente en curso tras la salida de Calvin McDonald",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B55": {
+  "before": "",
+  "after": "lululemon opera con Meghan Frank como CEO interina mientras el directorio busca reemplazo permanente, en medio de la crisis de crecimiento y márgenes más severa de su historia reciente.",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A56": {
+  "before": "",
+  "after": "La acción cae ~20% tras el recorte de guía",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B56": {
+  "before": "",
+  "after": "Las acciones cayeron aproximadamente 20% en la sesión posterior al anuncio, ampliando una tendencia bajista de trimestres previos de resultados decepcionantes.",
+  "reason": "Cualitativo LULU: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!A14": {
+  "before": "",
+  "after": "Balance sólido, con caja e inversiones muy por encima de la deuda financiera.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "Competencia de proveedores de nube (Microsoft/Azure, AWS, Google Cloud) que también empaquetan herramientas de IA generativa sobre sus propias plataformas de datos.",
+  "reason": "Cualitativo PLTR: reescrito (estaba contaminado con contenido de otra empresa); tabla de supuestos con formulas vivas"
+ }
+}

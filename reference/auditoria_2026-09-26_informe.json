@@ -1,0 +1,3384 @@
+{
+ "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra PYPL (automático)",
+  "aplicadas": 6,
+  "ya_ok": 246,
+  "personalizadas": [],
+  "antes": {
+   "DCF Damodaran": [
+    96.0904564864204,
+    114.47720518017847,
+    148.19321110286594
+   ],
+   "EV/EBITDA": [
+    52.648557144416586,
+    64.38215210020708,
+    81.16517767311481
+   ],
+   "EV/FCFF": [
+    53.66948006167784,
+    65.75938219146084,
+    83.46322538310069
+   ],
+   "P/E": [
+    57.692161356997694,
+    71.48095144305304,
+    91.85579050766184
+   ],
+   "P/FCFE": [
+    74.62838800477198,
+    94.70694953631168,
+    123.7037162575856
+   ],
+   "P/OCF": [
+    65.0100621831496,
+    79.46807882974784,
+    100.08196866698773
+   ],
+   "Precio Objetivo Ponderado": [
+    72.85319681041487,
+    88.24819241817248,
+    113.41708486184044
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.11264942750565177,
+    0.18607117252700878,
+    0.2895404548316649
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    96.0904564864204,
+    114.47720518017847,
+    148.19321110286594
+   ],
+   "EV/EBITDA": [
+    52.648557144416586,
+    64.38215210020708,
+    81.16517767311481
+   ],
+   "EV/FCFF": [
+    53.66948006167784,
+    65.75938219146084,
+    83.46322538310069
+   ],
+   "P/E": [
+    57.692161356997694,
+    71.48095144305304,
+    91.85579050766184
+   ],
+   "P/FCFE": [
+    74.62838800477198,
+    94.70694953631168,
+    123.7037162575856
+   ],
+   "P/OCF": [
+    65.0100621831496,
+    79.46807882974784,
+    100.08196866698773
+   ],
+   "Precio Objetivo Ponderado": [
+    72.85319681041487,
+    88.24819241817248,
+    113.41708486184044
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.11264942750565177,
+    0.18607117252700878,
+    0.2895404548316649
+   ]
+  }
+ },
+ "1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g": {
+  "nombre": "Modelo JMR - LULU - 2026-09-16 (Valoración completa)",
+  "aplicadas": 6,
+  "ya_ok": 230,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "8"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "18"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "15"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "15"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "12"
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    "-1.0236"
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    "-0.7598"
+   ],
+   [
+    "A14",
+    "Income Statement!F30",
+    "-1.0615"
+   ],
+   [
+    "A14",
+    "Income Statement!G30",
+    "-0.2569"
+   ],
+   [
+    "A14",
+    "Income Statement!H30",
+    "-0.0728"
+   ],
+   [
+    "A14",
+    "Income Statement!I30",
+    "0.0689"
+   ],
+   [
+    "A14",
+    "Income Statement!J30",
+    "0.1193"
+   ],
+   [
+    "A14",
+    "Income Statement!K30",
+    "0.3218"
+   ],
+   [
+    "A14",
+    "Income Statement!L30",
+    "0.4325"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    138.66291989755638,
+    205.10785123965894,
+    272.5864066770905
+   ],
+   "EV/EBITDA": [
+    85.94301886883767,
+    149.70357398670154,
+    250.78557459732792
+   ],
+   "EV/FCFF": [
+    71.59080285606363,
+    136.69160128597844,
+    230.05973864807444
+   ],
+   "P/E": [
+    89.04424980641046,
+    175.1356226811454,
+    286.4623090926141
+   ],
+   "P/FCFE": [
+    70.0917764515491,
+    140.006005137974,
+    232.22183025464636
+   ],
+   "P/OCF": [
+    101.79057764093918,
+    180.58863483422488,
+    276.59419344475117
+   ],
+   "Precio Objetivo Ponderado": [
+    104.2404621221639,
+    171.75958757500163,
+    257.6149252697123
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.027902354413885666,
+    0.21407844233390771,
+    0.3897289089800149
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    138.66291989755638,
+    205.10785123965894,
+    272.5864066770905
+   ],
+   "EV/EBITDA": [
+    85.94301886883767,
+    149.70357398670154,
+    250.78557459732792
+   ],
+   "EV/FCFF": [
+    71.59080285606363,
+    136.69160128597844,
+    230.05973864807444
+   ],
+   "P/E": [
+    89.04424980641046,
+    175.1356226811454,
+    286.4623090926141
+   ],
+   "P/FCFE": [
+    70.0917764515491,
+    140.006005137974,
+    232.22183025464636
+   ],
+   "P/OCF": [
+    101.79057764093918,
+    180.58863483422488,
+    276.59419344475117
+   ],
+   "Precio Objetivo Ponderado": [
+    104.2404621221639,
+    171.75958757500163,
+    257.6149252697123
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.027902354413885666,
+    0.21407844233390771,
+    0.3897289089800149
+   ]
+  }
+ },
+ "1_1MJv_KTsSnhQmP6CXmW2D-ftqyqwEIaLywX0UZe5kI": {
+  "nombre": "Modelo JMR - UNH",
+  "aplicadas": 6,
+  "ya_ok": 229,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "10"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "14"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "18"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "16"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "13"
+   ],
+   [
+    "A9",
+    "Crecimiento y Márgenes!B6",
+    "LTM vs FY2025"
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    "0.08107011469378922"
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    "0.0867671841677479"
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    "0.08739121402714732"
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    "0.09252338378311412"
+   ],
+   [
+    "A14",
+    "Income Statement!F30",
+    "0.09837404381253864"
+   ],
+   [
+    "A14",
+    "Income Statement!G30",
+    "0.09413519612513344"
+   ],
+   [
+    "A14",
+    "Income Statement!H30",
+    "0.09820706930485375"
+   ],
+   [
+    "A14",
+    "Income Statement!I30",
+    "0.09776062773463358"
+   ],
+   [
+    "A14",
+    "Income Statement!J30",
+    "0.09090182323285317"
+   ],
+   [
+    "A14",
+    "Income Statement!K30",
+    "0.05211510231987613"
+   ],
+   [
+    "A14",
+    "Income Statement!L30",
+    "0.057674577732161225"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    273.2850266538643,
+    424.79402895269556,
+    526.9687935462218
+   ],
+   "EV/EBITDA": [
+    193.29529865299784,
+    358.332689422057,
+    502.6372409313822
+   ],
+   "EV/FCFF": [
+    171.35135607211893,
+    376.05090439255304,
+    571.2027124782194
+   ],
+   "P/E": [
+    241.28935972043695,
+    429.0078749244986,
+    595.3777028758556
+   ],
+   "P/FCFE": [
+    245.51775654507426,
+    475.2130974490702,
+    698.4496447219335
+   ],
+   "P/OCF": [
+    225.7936490178027,
+    381.7036263295542,
+    524.4923679479151
+   ],
+   "Precio Objetivo Ponderado": [
+    254.15852032360363,
+    434.1981686109445,
+    585.0842607668205
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.11868639664089597,
+    0.05355750454268948,
+    0.16368397655954547
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    273.2850266538643,
+    424.79402895269556,
+    526.9687935462218
+   ],
+   "EV/EBITDA": [
+    193.29529865299784,
+    358.332689422057,
+    502.6372409313822
+   ],
+   "EV/FCFF": [
+    171.35135607211893,
+    376.05090439255304,
+    571.2027124782194
+   ],
+   "P/E": [
+    241.28935972043695,
+    429.0078749244986,
+    595.3777028758556
+   ],
+   "P/FCFE": [
+    245.51775654507426,
+    475.2130974490702,
+    698.4496447219335
+   ],
+   "P/OCF": [
+    225.7936490178027,
+    381.7036263295542,
+    524.4923679479151
+   ],
+   "Precio Objetivo Ponderado": [
+    254.15852032360363,
+    434.1981686109445,
+    585.0842607668205
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.11868639664089597,
+    0.05355750454268948,
+    0.16368397655954547
+   ]
+  }
+ },
+ "17eku40NKWd72OBZEQ85diKEaNNSH1zuJrnhG6ucmJok": {
+  "nombre": "Modelo_JMR_ADSK",
+  "aplicadas": 0,
+  "ya_ok": 215,
+  "personalizadas": [
+   [
+    "A9",
+    "EVEBITDA!A8",
+    "Múltiplo EV/EBITDA trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "EVEBITDA!A19",
+    "Múltiplo EV/EBITDA trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "EVEBITDA!A30",
+    "Múltiplo EV/EBITDA trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "EVFCFF!A8",
+    "Múltiplo EV/FCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "EVFCFF!A19",
+    "Múltiplo EV/FCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "EVFCFF!A30",
+    "Múltiplo EV/FCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "PE!A8",
+    "Múltiplo P/E trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "PE!A19",
+    "Múltiplo P/E trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "PE!A30",
+    "Múltiplo P/E trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "PFCFE!A8",
+    "Múltiplo P/FCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "PFCFE!A19",
+    "Múltiplo P/FCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "PFCFE!A30",
+    "Múltiplo P/FCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "POCF!A8",
+    "Múltiplo P/OCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "POCF!A19",
+    "Múltiplo P/OCF trailing (cierre fiscal)"
+   ],
+   [
+    "A9",
+    "POCF!A30",
+    "Múltiplo P/OCF trailing (cierre fiscal)"
+   ],
+   [
+    "A15",
+    "Resumen de Valoración!A13",
+    "Retorno anual si el precio converge al valor en 3 años"
+   ],
+   [
+    "A1/A3",
+    "Resumen de Valoración!C7:E11",
+    "horizonte ya resuelto a mano en el Resumen (múltiplos a valor presente): A1 y A3 no se aplican"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    144.56265466219904,
+    187.79997113525835,
+    247.08804284057285
+   ],
+   "EV/EBITDA": [
+    267.2936751249149,
+    347.5980019021298,
+    438.47997526453827
+   ],
+   "EV/FCFF": [
+    173.09107717729444,
+    228.35103791919184,
+    300.8119652779985
+   ],
+   "P/E": [
+    314.15921656396125,
+    407.93953904819017,
+    513.6631893718284
+   ],
+   "P/FCFE": [
+    213.96144684612892,
+    280.75608717147,
+    378.5221540563856
+   ],
+   "P/OCF": [
+    184.51665235776574,
+    239.65304759133156,
+    311.7592080659072
+   ],
+   "Precio Objetivo Ponderado": [
+    175.06248767479786,
+    228.10987224979635,
+    297.41984559720345
+   ],
+   "Retorno anual si el precio converge al valor en 3 años": [
+    -0.05795393589122044,
+    0.0289378296022178,
+    0.12408138401892854
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    144.56265466219904,
+    187.79997113525835,
+    247.08804284057285
+   ],
+   "EV/EBITDA": [
+    267.2936751249149,
+    347.5980019021298,
+    438.47997526453827
+   ],
+   "EV/FCFF": [
+    173.09107717729444,
+    228.35103791919184,
+    300.8119652779985
+   ],
+   "P/E": [
+    314.15921656396125,
+    407.93953904819017,
+    513.6631893718284
+   ],
+   "P/FCFE": [
+    213.96144684612892,
+    280.75608717147,
+    378.5221540563856
+   ],
+   "P/OCF": [
+    184.51665235776574,
+    239.65304759133156,
+    311.7592080659072
+   ],
+   "Precio Objetivo Ponderado": [
+    175.06248767479786,
+    228.10987224979635,
+    297.41984559720345
+   ],
+   "Retorno anual si el precio converge al valor en 3 años": [
+    -0.05795393589122044,
+    0.0289378296022178,
+    0.12408138401892854
+   ]
+  }
+ },
+ "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw": {
+  "nombre": "NVO_Modelo_JMR_Valoracion_2026-09-24",
+  "aplicadas": 6,
+  "ya_ok": 245,
+  "personalizadas": [
+   [
+    "A7",
+    "EVFCFF!J19",
+    "='Valuation output'!B26/'Financials Multiples'!E63"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    39.103261110869845,
+    49.97782189607687,
+    61.52344493636504
+   ],
+   "EV/EBITDA": [
+    43.16899475560244,
+    55.29262450151063,
+    67.54612190415308
+   ],
+   "EV/FCFF": [
+    35.81744488373127,
+    50.39168808136918,
+    68.35918684247409
+   ],
+   "P/E": [
+    43.77250244659572,
+    55.38414282130606,
+    67.2204918345312
+   ],
+   "P/FCFE": [
+    33.17123568708523,
+    46.89783663830386,
+    61.12701888883731
+   ],
+   "P/OCF": [
+    47.93102299813722,
+    61.60070670730276,
+    75.33841394241192
+   ],
+   "Precio Objetivo Ponderado": [
+    40.66646130742182,
+    52.590578198411336,
+    65.22189104809274
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.02134250830025297,
+    0.11274400173641319,
+    0.19552063225488636
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    39.103261110869845,
+    49.97782189607687,
+    61.52344493636504
+   ],
+   "EV/EBITDA": [
+    43.16899475560244,
+    55.29262450151063,
+    67.54612190415308
+   ],
+   "EV/FCFF": [
+    35.81744488373127,
+    50.39168808136918,
+    68.35918684247409
+   ],
+   "P/E": [
+    43.77250244659572,
+    55.38414282130606,
+    67.2204918345312
+   ],
+   "P/FCFE": [
+    33.17123568708523,
+    46.89783663830386,
+    61.12701888883731
+   ],
+   "P/OCF": [
+    47.93102299813722,
+    61.60070670730276,
+    75.33841394241192
+   ],
+   "Precio Objetivo Ponderado": [
+    40.66646130742182,
+    52.590578198411336,
+    65.22189104809274
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.02134250830025297,
+    0.11274400173641319,
+    0.19552063225488636
+   ]
+  }
+ },
+ "1d_Ofo0yxC0EZHZcxM2TwNcyO-ncDY5JV38cTHkrun1g": {
+  "nombre": "Copia de Modelo_JMR_Plantilla_Maestra NKE (automático)",
+  "aplicadas": 6,
+  "ya_ok": 245,
+  "personalizadas": [
+   [
+    "A7",
+    "PFCFE!J19",
+    "='Valuation output'!B33/'Financials Multiples'!E68"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    21.12675150688232,
+    38.83063026100842,
+    52.587657310421996
+   ],
+   "EV/EBITDA": [
+    37.41250724474181,
+    56.264247371102265,
+    72.64504751658696
+   ],
+   "EV/FCFF": [
+    38.551420845452924,
+    54.82646304381513,
+    71.192249495163
+   ],
+   "P/E": [
+    38.2451829463044,
+    59.50634385977438,
+    77.91192303058838
+   ],
+   "P/FCFE": [
+    21.960777595403634,
+    54.35955296443941,
+    70.43498910517351
+   ],
+   "P/OCF": [
+    44.072959774833166,
+    61.37445634843476,
+    78.45428401141088
+   ],
+   "Precio Objetivo Ponderado": [
+    30.739067594019307,
+    49.955717120603914,
+    65.71014563894938
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.05217572063958109,
+    0.11436124170256834,
+    0.22097960400524275
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    21.12675150688232,
+    38.83063026100842,
+    52.587657310421996
+   ],
+   "EV/EBITDA": [
+    37.41250724474181,
+    56.264247371102265,
+    72.64504751658696
+   ],
+   "EV/FCFF": [
+    38.551420845452924,
+    54.82646304381513,
+    71.192249495163
+   ],
+   "P/E": [
+    38.2451829463044,
+    59.50634385977438,
+    77.91192303058838
+   ],
+   "P/FCFE": [
+    21.960777595403634,
+    54.35955296443941,
+    70.43498910517351
+   ],
+   "P/OCF": [
+    44.072959774833166,
+    61.37445634843476,
+    78.45428401141088
+   ],
+   "Precio Objetivo Ponderado": [
+    30.739067594019307,
+    49.955717120603914,
+    65.71014563894938
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.05217572063958109,
+    0.11436124170256834,
+    0.22097960400524275
+   ]
+  }
+ },
+ "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra ADBE",
+  "aplicadas": 6,
+  "ya_ok": 237,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "13.17"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "15.43"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "17.82"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "13.77"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "14.69"
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    ""
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    398.1318660773969,
+    513.2516186426351,
+    762.9295384535291
+   ],
+   "EV/EBITDA": [
+    310.5965470603244,
+    443.020661893346,
+    807.9954524083483
+   ],
+   "EV/FCFF": [
+    308.6019579916244,
+    438.5585824884443,
+    802.6010578359464
+   ],
+   "P/E": [
+    318.169740263468,
+    459.7671152401166,
+    855.1727285859268
+   ],
+   "P/FCFE": [
+    296.93783305005746,
+    435.96299736729674,
+    823.0867671280337
+   ],
+   "P/OCF": [
+    314.68141040810525,
+    450.89337863952073,
+    830.8418412729941
+   ],
+   "Precio Objetivo Ponderado": [
+    346.4471618677878,
+    474.0568799329319,
+    800.7619877839129
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.0926212576354497,
+    0.21301860225218783,
+    0.4446360873128026
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    398.1318660773969,
+    513.2516186426351,
+    762.9295384535291
+   ],
+   "EV/EBITDA": [
+    310.5965470603244,
+    443.020661893346,
+    807.9954524083483
+   ],
+   "EV/FCFF": [
+    308.6019579916244,
+    438.5585824884443,
+    802.6010578359464
+   ],
+   "P/E": [
+    318.169740263468,
+    459.7671152401166,
+    855.1727285859268
+   ],
+   "P/FCFE": [
+    296.93783305005746,
+    435.96299736729674,
+    823.0867671280337
+   ],
+   "P/OCF": [
+    314.68141040810525,
+    450.89337863952073,
+    830.8418412729941
+   ],
+   "Precio Objetivo Ponderado": [
+    346.4471618677878,
+    474.0568799329319,
+    800.7619877839129
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.0926212576354497,
+    0.21301860225218783,
+    0.4446360873128026
+   ]
+  }
+ },
+ "1j-s8PtA-MBvEOAoH1IHGUKWDhHUxUAnNxJe9nAFCOx4": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra AAPL",
+  "aplicadas": 6,
+  "ya_ok": 237,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "13.51"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "13.13"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "16.72"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "13.39"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "11.98"
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    ""
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    164.04709532689304,
+    227.77629157799547,
+    346.10994836481564
+   ],
+   "EV/EBITDA": [
+    134.91732620394228,
+    207.76321467910233,
+    379.0146897294246
+   ],
+   "EV/FCFF": [
+    123.54686847633312,
+    165.84419257127962,
+    291.9202801184632
+   ],
+   "P/E": [
+    130.55386069487437,
+    207.46999299853752,
+    390.13266851410503
+   ],
+   "P/FCFE": [
+    127.5649837094856,
+    178.9190418333927,
+    331.85439881425134
+   ],
+   "P/OCF": [
+    119.899537290363,
+    165.7814956203076,
+    298.43484790534586
+   ],
+   "Precio Objetivo Ponderado": [
+    143.44098840814632,
+    207.97660429653916,
+    352.9799413424584
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.24483549077157207,
+    -0.1452837209169897,
+    0.019531128345904314
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    164.04709532689304,
+    227.77629157799547,
+    346.10994836481564
+   ],
+   "EV/EBITDA": [
+    134.91732620394228,
+    207.76321467910233,
+    379.0146897294246
+   ],
+   "EV/FCFF": [
+    123.54686847633312,
+    165.84419257127962,
+    291.9202801184632
+   ],
+   "P/E": [
+    130.55386069487437,
+    207.46999299853752,
+    390.13266851410503
+   ],
+   "P/FCFE": [
+    127.5649837094856,
+    178.9190418333927,
+    331.85439881425134
+   ],
+   "P/OCF": [
+    119.899537290363,
+    165.7814956203076,
+    298.43484790534586
+   ],
+   "Precio Objetivo Ponderado": [
+    143.44098840814632,
+    207.97660429653916,
+    352.9799413424584
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.24483549077157207,
+    -0.1452837209169897,
+    0.019531128345904314
+   ]
+  }
+ },
+ "10iDf0Ld-mnLcP8QQjL7xdSwH8jpmKT3kP31ocM0Wl2A": {
+  "nombre": "Copia de Modelo_JMR_Plantilla_Maestra UBER",
+  "aplicadas": 179,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "25.96"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "27.03"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "23.6"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "20.35"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "20.46"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    65.80701335794905,
+    132.633190814199,
+    212.89622671778608
+   ],
+   "EV/EBITDA": [
+    105.37726787196179,
+    196.36809459046736,
+    288.4402058427021
+   ],
+   "EV/FCFF": [
+    101.19234199790048,
+    189.62767808138867,
+    283.5083671070441
+   ],
+   "P/E": [
+    119.68966641620725,
+    231.8544250112385,
+    343.5652258520486
+   ],
+   "P/FCFE": [
+    116.15940774651385,
+    217.39444386815882,
+    323.0823281111888
+   ],
+   "P/OCF": [
+    116.16160574166139,
+    217.7155490782989,
+    323.850245106541
+   ],
+   "Precio Objetivo Ponderado": [
+    93.07147707501224,
+    179.41604770148254,
+    272.2570423976555
+   ],
+   "CAGR a 3 años": [
+    0.08617596236279534,
+    0.3518082122209236,
+    0.5534157092215959
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    84.1833190204959,
+    169.67039902395607,
+    272.3465183651024
+   ],
+   "EV/EBITDA": [
+    119.50325279818513,
+    210.49407951669068,
+    302.5661907689255
+   ],
+   "EV/FCFF": [
+    115.31832692412382,
+    203.753663007612,
+    297.6343520332674
+   ],
+   "P/E": [
+    119.68966641620725,
+    231.8544250112385,
+    343.5652258520486
+   ],
+   "P/FCFE": [
+    116.15940774651385,
+    217.39444386815882,
+    323.0823281111888
+   ],
+   "P/OCF": [
+    116.16160574166139,
+    217.7155490782989,
+    323.850245106541
+   ],
+   "Precio Objetivo Ponderado": [
+    104.65979481789799,
+    198.46872646325238,
+    300.274954534449
+   ],
+   "CAGR a 3 años": [
+    0.12950444650495507,
+    0.39805850629331885,
+    0.6049728439847031
+   ]
+  }
+ },
+ "1itbgXQCinjFcm1t8iJEcGSGQ6otThf-bb0fkU73vhLE": {
+  "nombre": "Copia de Modelo_JMR_Plantilla_Maestra UBER",
+  "aplicadas": 179,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "25.96"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "27.03"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "23.6"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "20.35"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "20.46"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    65.80701335794905,
+    132.633190814199,
+    212.89622671778608
+   ],
+   "EV/EBITDA": [
+    105.37726787196179,
+    196.36809459046736,
+    288.4402058427021
+   ],
+   "EV/FCFF": [
+    101.19234199790048,
+    189.62767808138867,
+    283.5083671070441
+   ],
+   "P/E": [
+    119.68966641620725,
+    231.8544250112385,
+    343.5652258520486
+   ],
+   "P/FCFE": [
+    116.15940774651385,
+    217.39444386815882,
+    323.0823281111888
+   ],
+   "P/OCF": [
+    116.16160574166139,
+    217.7155490782989,
+    323.850245106541
+   ],
+   "Precio Objetivo Ponderado": [
+    93.07147707501224,
+    179.41604770148254,
+    272.2570423976555
+   ],
+   "CAGR a 3 años": [
+    0.08617596236279534,
+    0.3518082122209236,
+    0.5534157092215959
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    84.1833190204959,
+    169.67039902395607,
+    272.3465183651024
+   ],
+   "EV/EBITDA": [
+    119.50325279818513,
+    210.49407951669068,
+    302.5661907689255
+   ],
+   "EV/FCFF": [
+    115.31832692412382,
+    203.753663007612,
+    297.6343520332674
+   ],
+   "P/E": [
+    119.68966641620725,
+    231.8544250112385,
+    343.5652258520486
+   ],
+   "P/FCFE": [
+    116.15940774651385,
+    217.39444386815882,
+    323.0823281111888
+   ],
+   "P/OCF": [
+    116.16160574166139,
+    217.7155490782989,
+    323.850245106541
+   ],
+   "Precio Objetivo Ponderado": [
+    104.65979481789799,
+    198.46872646325238,
+    300.274954534449
+   ],
+   "CAGR a 3 años": [
+    0.12950444650495507,
+    0.39805850629331885,
+    0.6049728439847031
+   ]
+  }
+ },
+ "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw": {
+  "nombre": "UBER plantilla maestra",
+  "aplicadas": 6,
+  "ya_ok": 237,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    ""
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    ""
+   ],
+   [
+    "A7",
+    "PE!J19",
+    ""
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    ""
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    ""
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    61.365389359477575,
+    142.5640016802986,
+    240.77852311401952
+   ],
+   "EV/EBITDA": [
+    149.7218970327368,
+    278.14295924786285,
+    408.2014514326137
+   ],
+   "EV/FCFF": [
+    60.15549064553611,
+    111.16889797755015,
+    166.10683580809763
+   ],
+   "P/E": [
+    70.2401058103502,
+    136.06420531540616,
+    201.62189885873912
+   ],
+   "P/FCFE": [
+    92.75095327609966,
+    172.5420179555801,
+    265.57101232271657
+   ],
+   "P/OCF": [
+    83.14475088192648,
+    154.9124960288751,
+    230.61790307366766
+   ],
+   "Precio Objetivo Ponderado": [
+    83.34889058486334,
+    167.35664908175104,
+    259.69620865450736
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.04695478575968015,
+    0.3208159632718903,
+    0.5291491760887042
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    61.365389359477575,
+    142.5640016802986,
+    240.77852311401952
+   ],
+   "EV/EBITDA": [
+    149.7218970327368,
+    278.14295924786285,
+    408.2014514326137
+   ],
+   "EV/FCFF": [
+    60.15549064553611,
+    111.16889797755015,
+    166.10683580809763
+   ],
+   "P/E": [
+    70.2401058103502,
+    136.06420531540616,
+    201.62189885873912
+   ],
+   "P/FCFE": [
+    92.75095327609966,
+    172.5420179555801,
+    265.57101232271657
+   ],
+   "P/OCF": [
+    83.14475088192648,
+    154.9124960288751,
+    230.61790307366766
+   ],
+   "Precio Objetivo Ponderado": [
+    83.34889058486334,
+    167.35664908175104,
+    259.69620865450736
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.04695478575968015,
+    0.3208159632718903,
+    0.5291491760887042
+   ]
+  }
+ },
+ "1gaf2zAgVIIDugvxNqfvhgNLscLbDJBVz76jnae6IqUE": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra PLTR 16.09.26",
+  "aplicadas": 179,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "61.25"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "65.38"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "41.82"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "42.62"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "42.26"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    58.577031675437276,
+    105.7343166246045,
+    180.30846986798255
+   ],
+   "EV/EBITDA": [
+    74.27538975897896,
+    170.06068028567213,
+    358.4179044786007
+   ],
+   "EV/FCFF": [
+    74.15874286973649,
+    184.7088949250836,
+    392.5272577674818
+   ],
+   "P/E": [
+    79.82125574287868,
+    177.32453815399583,
+    368.34810186127635
+   ],
+   "P/FCFE": [
+    79.55224913393975,
+    186.36836737245824,
+    388.9660199433173
+   ],
+   "P/OCF": [
+    79.56602183854167,
+    186.26072969909316,
+    388.467553313655
+   ],
+   "Precio Objetivo Ponderado": [
+    65.64454574738873,
+    135.65067400336983,
+    260.1950447896843
+   ],
+   "CAGR a 3 años": [
+    -0.2978983380320692,
+    -0.10571810740020049,
+    0.11113490954199468
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    82.79393511095758,
+    149.44697433840392,
+    254.85155746575063
+   ],
+   "EV/EBITDA": [
+    77.50613608424628,
+    173.29142661093942,
+    361.64865080386795
+   ],
+   "EV/FCFF": [
+    77.3894891950038,
+    187.93964125035092,
+    395.7580040927491
+   ],
+   "P/E": [
+    79.82125574287868,
+    177.32453815399583,
+    368.34810186127635
+   ],
+   "P/FCFE": [
+    79.55224913393975,
+    186.36836737245824,
+    388.9660199433173
+   ],
+   "P/OCF": [
+    79.56602183854167,
+    186.26072969909316,
+    388.467553313655
+   ],
+   "Precio Objetivo Ponderado": [
+    80.98237439001774,
+    162.6859552129663,
+    305.7285839296619
+   ],
+   "CAGR a 3 años": [
+    -0.2469959929195772,
+    -0.04986830489659777,
+    0.17249896183736646
+   ]
+  }
+ },
+ "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra PLTR",
+  "aplicadas": 6,
+  "ya_ok": 230,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "61.25"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "65.38"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "41.82"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "42.62"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "42.26"
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    "-1.0236"
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    "-0.7598"
+   ],
+   [
+    "A14",
+    "Income Statement!F30",
+    "-1.0615"
+   ],
+   [
+    "A14",
+    "Income Statement!G30",
+    "-0.2569"
+   ],
+   [
+    "A14",
+    "Income Statement!H30",
+    "-0.0728"
+   ],
+   [
+    "A14",
+    "Income Statement!I30",
+    "0.0689"
+   ],
+   [
+    "A14",
+    "Income Statement!J30",
+    "0.1193"
+   ],
+   [
+    "A14",
+    "Income Statement!K30",
+    "0.3218"
+   ],
+   [
+    "A14",
+    "Income Statement!L30",
+    "0.4325"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    82.79393511095758,
+    149.44697433840392,
+    254.85155746575063
+   ],
+   "EV/EBITDA": [
+    76.06927778017003,
+    170.07883935100298,
+    354.94417689614164
+   ],
+   "EV/FCFF": [
+    75.9547933655382,
+    184.45549602213114,
+    388.4211891860272
+   ],
+   "P/E": [
+    78.34147827040495,
+    174.03718249371482,
+    361.51942924657124
+   ],
+   "P/FCFE": [
+    78.07745867797122,
+    182.91335142397668,
+    381.7551191811949
+   ],
+   "P/OCF": [
+    78.0909760553697,
+    182.8077092066183,
+    381.2658934446067
+   ],
+   "Precio Objetivo Ponderado": [
+    80.40200349960956,
+    161.3323050976778,
+    302.8955526405872
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.22739660938846307,
+    -0.025515881236398252,
+    0.20216833642200638
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    82.79393511095758,
+    149.44697433840392,
+    254.85155746575063
+   ],
+   "EV/EBITDA": [
+    76.06927778017003,
+    170.07883935100298,
+    354.94417689614164
+   ],
+   "EV/FCFF": [
+    75.9547933655382,
+    184.45549602213114,
+    388.4211891860272
+   ],
+   "P/E": [
+    78.34147827040495,
+    174.03718249371482,
+    361.51942924657124
+   ],
+   "P/FCFE": [
+    78.07745867797122,
+    182.91335142397668,
+    381.7551191811949
+   ],
+   "P/OCF": [
+    78.0909760553697,
+    182.8077092066183,
+    381.2658934446067
+   ],
+   "Precio Objetivo Ponderado": [
+    80.40200349960956,
+    161.3323050976778,
+    302.8955526405872
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.22739660938846307,
+    -0.025515881236398252,
+    0.20216833642200638
+   ]
+  }
+ },
+ "1kwurKc8xTwVU5rGa6DIk2-h5eMck30JxQueL1DIRYd0": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra LULU",
+  "aplicadas": 179,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "10.34"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "13.74"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "12.83"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "13.39"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "9.52"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    153.57718338413432,
+    210.5389972608463,
+    354.7900638944775
+   ],
+   "EV/EBITDA": [
+    139.24187578582624,
+    220.23638894534557,
+    452.431433936734
+   ],
+   "EV/FCFF": [
+    138.5985784403071,
+    222.4018297948455,
+    484.89199914118444
+   ],
+   "P/E": [
+    137.72424695131224,
+    220.07732638066813,
+    0
+   ],
+   "P/FCFE": [
+    136.76007207045905,
+    220.2127417617382,
+    0
+   ],
+   "P/OCF": [
+    135.41413141344208,
+    215.39451490717664,
+    0
+   ],
+   "Precio Objetivo Ponderado": [
+    144.36405519143997,
+    216.42983685046778,
+    327.75768391315216
+   ],
+   "CAGR a 3 años": [
+    0.12533858293300493,
+    0.2879605540600676,
+    0.4790441756102275
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    195.74610663613262,
+    268.34838418545695,
+    452.2076271370353
+   ],
+   "EV/EBITDA": [
+    137.32774051848725,
+    218.32225367800655,
+    450.517298669395
+   ],
+   "EV/FCFF": [
+    136.68444317296812,
+    220.48769452750653,
+    482.9778638738454
+   ],
+   "P/E": [
+    137.72424695131224,
+    220.07732638066813,
+    0
+   ],
+   "P/FCFE": [
+    136.76007207045905,
+    220.2127417617382,
+    0
+   ],
+   "P/OCF": [
+    135.41413141344208,
+    215.39451490717664,
+    0
+   ],
+   "Precio Objetivo Ponderado": [
+    160.4659703853037,
+    238.7879375133765,
+    365.9590551032397
+   ],
+   "CAGR a 3 años": [
+    0.1657117314629657,
+    0.33086594746540965,
+    0.5344085768826332
+   ]
+  }
+ },
+ "12XSQOaPBT7XVPYfKXTKYKb5lK6lQXg2mOcxS6TvYDZk": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra — actualizada 2026-09-23",
+  "aplicadas": 6,
+  "ya_ok": 246,
+  "personalizadas": [],
+  "antes": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ]
+  }
+ },
+ "1UMJN5ex2zxmEeH3pBGTwUcduGtBzuFsOlsVSxmsBsW8": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra — copia en blanco (actualizada 2026-09-23)",
+  "aplicadas": 6,
+  "ya_ok": 246,
+  "personalizadas": [],
+  "antes": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ]
+  }
+ },
+ "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra",
+  "aplicadas": 6,
+  "ya_ok": 246,
+  "personalizadas": [],
+  "antes": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "#N/A (Did not find value '' in VLOOKUP evaluation.)"
+   ]
+  }
+ },
+ "1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4": {
+  "nombre": "Modelo_JMR_Plantilla_Maestra NKE (automático)",
+  "aplicadas": 6,
+  "ya_ok": 245,
+  "personalizadas": [
+   [
+    "A7",
+    "PFCFE!J19",
+    "='Valuation output'!B33/'Financials Multiples'!E68"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    21.122297052379086,
+    38.82182342109522,
+    52.575651757601854
+   ],
+   "EV/EBITDA": [
+    37.41250724474181,
+    56.264247371102265,
+    72.64504751658696
+   ],
+   "EV/FCFF": [
+    38.551420845452924,
+    54.82646304381513,
+    71.192249495163
+   ],
+   "P/E": [
+    38.2451829463044,
+    59.50634385977438,
+    77.91192303058838
+   ],
+   "P/FCFE": [
+    21.95931936012026,
+    54.35438025239987,
+    70.42800409334026
+   ],
+   "P/OCF": [
+    44.072959774833166,
+    61.37445634843476,
+    78.45428401141088
+   ],
+   "Precio Objetivo Ponderado": [
+    30.737212900453837,
+    49.95193574903666,
+    65.70499416722967
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.05219478388262078,
+    0.11433312399830808,
+    0.22094769616607812
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    21.122297052379086,
+    38.82182342109522,
+    52.575651757601854
+   ],
+   "EV/EBITDA": [
+    37.41250724474181,
+    56.264247371102265,
+    72.64504751658696
+   ],
+   "EV/FCFF": [
+    38.551420845452924,
+    54.82646304381513,
+    71.192249495163
+   ],
+   "P/E": [
+    38.2451829463044,
+    59.50634385977438,
+    77.91192303058838
+   ],
+   "P/FCFE": [
+    21.95931936012026,
+    54.35438025239987,
+    70.42800409334026
+   ],
+   "P/OCF": [
+    44.072959774833166,
+    61.37445634843476,
+    78.45428401141088
+   ],
+   "Precio Objetivo Ponderado": [
+    30.737212900453837,
+    49.95193574903666,
+    65.70499416722967
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.05219478388262078,
+    0.11433312399830808,
+    0.22094769616607812
+   ]
+  }
+ },
+ "1Hp9uwPxZsh4RH5keAIatc4hXV4pVVeP8ubRDWtE9kVI": {
+  "nombre": "Modelo_JMR_NVO_2026-09-23",
+  "aplicadas": 173,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A2",
+    "Financials Multiples!B36",
+    "=(B35/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C36",
+    "=(C35/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D36",
+    "=(D35/ Dividendos!I4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!B75",
+    "=(B74/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C75",
+    "=(C74/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D75",
+    "=(D74/ Dividendos!I4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!B115",
+    "=(B114/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C115",
+    "=(C114/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D115",
+    "=(D114/ Dividendos!I4)-1"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    45.5299679700762,
+    44.096163911319216,
+    35.685421926318064
+   ],
+   "EV/EBITDA": [
+    59.77465271872502,
+    63.88709872837144,
+    61.62285862499772
+   ],
+   "EV/FCFF": [
+    81.4643763083329,
+    85.44844515333456,
+    83.12806880981587
+   ],
+   "P/E": [
+    58.14479465845609,
+    61.72774511707485,
+    59.98274842073078
+   ],
+   "P/FCFE": [
+    69.89607662114456,
+    74.66845601319417,
+    71.42386186065427
+   ],
+   "P/OCF": [
+    57.33478127365472,
+    61.54332873351573,
+    58.601973215258674
+   ],
+   "Precio Objetivo Ponderado": [
+    57.08667673986474,
+    58.16733341216001,
+    52.4053610205529
+   ],
+   "CAGR a 3 años": [
+    0.13736801793070597,
+    0.144500033465651,
+    0.10538779194357861
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    61.579994259269334,
+    59.64075182964141,
+    48.265091660212576
+   ],
+   "EV/EBITDA": [
+    55.51583495129428,
+    59.6282809609407,
+    57.364040857566984
+   ],
+   "EV/FCFF": [
+    77.20555854090216,
+    81.18962738590382,
+    78.86925104238514
+   ],
+   "P/E": [
+    56.060891933447735,
+    59.643842392066496,
+    57.89884569572242
+   ],
+   "P/FCFE": [
+    67.8121738961362,
+    72.58455328818582,
+    69.33995913564591
+   ],
+   "P/OCF": [
+    55.25087854864636,
+    59.45942600850737,
+    56.51807049025032
+   ],
+   "Precio Objetivo Ponderado": [
+    64.4327062120616,
+    65.23537178037786,
+    57.84269438733553
+   ],
+   "CAGR a 3 años": [
+    0.18419952420935326,
+    0.18909660384874716,
+    0.1423668616602991
+   ]
+  }
+ },
+ "1vLA5xglt1EYPu6UsroLvFv1yhQQM6795k36cV93WKD0": {
+  "nombre": "Modelo_JMR_NVO",
+  "aplicadas": 175,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A2",
+    "Financials Multiples!B36",
+    "=(B35/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C36",
+    "=(C35/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D36",
+    "=(D35/ Dividendos!I4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!B75",
+    "=(B74/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C75",
+    "=(C74/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D75",
+    "=(D74/ Dividendos!I4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!B115",
+    "=(B114/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C115",
+    "=(C114/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D115",
+    "=(D114/ Dividendos!I4)-1"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    0,
+    0,
+    0
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "CAGR a 3 años": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/EBITDA": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "EV/FCFF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/E": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/FCFE": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "P/OCF": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "Precio Objetivo Ponderado": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ],
+   "CAGR a 3 años": [
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+   ]
+  }
+ },
+ "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ": {
+  "nombre": "Modelo JMR - AFYA",
+  "aplicadas": 6,
+  "ya_ok": 246,
+  "personalizadas": [],
+  "antes": {
+   "DCF Damodaran": [
+    26.138561326587798,
+    33.21354429285109,
+    40.334632574435766
+   ],
+   "EV/EBITDA": [
+    15.71855024616198,
+    20.29823238925226,
+    25.05566862481712
+   ],
+   "EV/FCFF": [
+    15.85714770861362,
+    20.877937802847203,
+    26.05215026970839
+   ],
+   "P/E": [
+    14.816218165076574,
+    18.211399755360834,
+    21.73203684494246
+   ],
+   "P/FCFE": [
+    13.32697350734115,
+    16.965728051547632,
+    21.221000617430374
+   ],
+   "P/OCF": [
+    16.118704356662303,
+    19.33841988391536,
+    22.663232144126756
+   ],
+   "Precio Objetivo Ponderado": [
+    19.620376876944366,
+    24.89034532312093,
+    30.29082078877492
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.14706491854415393,
+    0.24173576456690538,
+    0.3257324797933596
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    26.138561326587798,
+    33.21354429285109,
+    40.334632574435766
+   ],
+   "EV/EBITDA": [
+    15.71855024616198,
+    20.29823238925226,
+    25.05566862481712
+   ],
+   "EV/FCFF": [
+    15.85714770861362,
+    20.877937802847203,
+    26.05215026970839
+   ],
+   "P/E": [
+    14.816218165076574,
+    18.211399755360834,
+    21.73203684494246
+   ],
+   "P/FCFE": [
+    13.32697350734115,
+    16.965728051547632,
+    21.221000617430374
+   ],
+   "P/OCF": [
+    16.118704356662303,
+    19.33841988391536,
+    22.663232144126756
+   ],
+   "Precio Objetivo Ponderado": [
+    19.620376876944366,
+    24.89034532312093,
+    30.29082078877492
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.14706491854415393,
+    0.24173576456690538,
+    0.3257324797933596
+   ]
+  }
+ },
+ "1_Np8bycSe2tCPAsPr8Y6jLgWxA_H1lbYzdtQPRDVn94": {
+  "nombre": "Modelo JMR - sura - 2026-09-16 (Valoración completa)",
+  "aplicadas": 6,
+  "ya_ok": 230,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    ""
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    ""
+   ],
+   [
+    "A7",
+    "PE!J19",
+    ""
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    ""
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    "-1.0236"
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    "-0.7598"
+   ],
+   [
+    "A14",
+    "Income Statement!F30",
+    "-1.0615"
+   ],
+   [
+    "A14",
+    "Income Statement!G30",
+    "-0.2569"
+   ],
+   [
+    "A14",
+    "Income Statement!H30",
+    "-0.0728"
+   ],
+   [
+    "A14",
+    "Income Statement!I30",
+    "0.0689"
+   ],
+   [
+    "A14",
+    "Income Statement!J30",
+    "0.1193"
+   ],
+   [
+    "A14",
+    "Income Statement!K30",
+    "0.3218"
+   ],
+   [
+    "A14",
+    "Income Statement!L30",
+    "0.4325"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    70568.61012257011,
+    122026.1702257155,
+    165897.21560936072
+   ],
+   "EV/EBITDA": [
+    70229.51656175542,
+    116455.18955920015,
+    157492.39982583752
+   ],
+   "EV/FCFF": [
+    77291.25724582875,
+    102875.84850194202,
+    132015.86906829826
+   ],
+   "P/E": [
+    87277.41249604548,
+    149372.46265959815,
+    205419.92835242712
+   ],
+   "P/FCFE": [
+    94695.49950019341,
+    132716.29157009735,
+    171553.3326851595
+   ],
+   "P/OCF": [
+    92479.15149150327,
+    136474.37505327558,
+    178416.30268112416
+   ],
+   "Precio Objetivo Ponderado": [
+    82337.59589725781,
+    134457.8070878288,
+    181487.34283818188
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.13068787205258126,
+    0.3314923669578582,
+    0.47149498791598643
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    70568.61012257011,
+    122026.1702257155,
+    165897.21560936072
+   ],
+   "EV/EBITDA": [
+    70229.51656175542,
+    116455.18955920015,
+    157492.39982583752
+   ],
+   "EV/FCFF": [
+    77291.25724582875,
+    102875.84850194202,
+    132015.86906829826
+   ],
+   "P/E": [
+    87277.41249604548,
+    149372.46265959815,
+    205419.92835242712
+   ],
+   "P/FCFE": [
+    94695.49950019341,
+    132716.29157009735,
+    171553.3326851595
+   ],
+   "P/OCF": [
+    92479.15149150327,
+    136474.37505327558,
+    178416.30268112416
+   ],
+   "Precio Objetivo Ponderado": [
+    82337.59589725781,
+    134457.8070878288,
+    181487.34283818188
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.13068787205258126,
+    0.3314923669578582,
+    0.47149498791598643
+   ]
+  }
+ },
+ "11LcvhOrtN0FcPkGgFQ59RTRBDftW0UR49U5bomQzO-Q": {
+  "nombre": " Modelo JMR - NIKE (NKE) - 2026-09-16",
+  "aplicadas": 178,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "10"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "15"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "18"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "15"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "12"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    16.400830745976954,
+    34.893954709167446,
+    51.83007833898338
+   ],
+   "EV/EBITDA": [
+    20.72384722965299,
+    40.309575780691226,
+    69.20113281316486
+   ],
+   "EV/FCFF": [
+    -26.29126438029785,
+    -257.63010433758694,
+    -695.3096937142751
+   ],
+   "P/E": [
+    23.923460393423703,
+    51.42708903932977,
+    85.90022996667614
+   ],
+   "P/FCFE": [
+    -25.480769999821742,
+    -255.81028817254963,
+    -692.2247902195558
+   ],
+   "P/OCF": [
+    -16.797859206217773,
+    -198.9381511833708,
+    -545.4007572309768
+   ],
+   "Precio Objetivo Ponderado": [
+    19.36224227875765,
+    40.38114355958898,
+    64.69037986445194
+   ],
+   "CAGR a 3 años": [
+    -0.18487064287573607,
+    0.04143984405063761,
+    0.2185814191220612
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    21.59542228425434,
+    45.94582425630805,
+    68.24608131700133
+   ],
+   "EV/EBITDA": [
+    23.324373406759683,
+    42.91010195779792,
+    71.80165899027156
+   ],
+   "EV/FCFF": [
+    -23.69073820319116,
+    -255.0295781604803,
+    -692.7091675371684
+   ],
+   "P/E": [
+    27.920017943517593,
+    55.42364658942366,
+    89.89678751677003
+   ],
+   "P/FCFE": [
+    -21.484212449727856,
+    -251.81373062245575,
+    -688.2282326694618
+   ],
+   "P/OCF": [
+    -12.801301656123885,
+    -194.9415936332769,
+    -541.4041996808828
+   ],
+   "Precio Objetivo Ponderado": [
+    23.60880897969649,
+    47.55634926495942,
+    74.54765228526107
+   ],
+   "CAGR a 3 años": [
+    -0.12917141291898282,
+    0.09979266943311527,
+    0.2775737353712133
+   ]
+  }
+ },
+ "1ilKNz9G-aNuxyvp9gOLcdN7OZt5hcTM3zeB_HQ-1mnY": {
+  "nombre": "Modelo JMR - NIKE (NKE) - 2026-09-16",
+  "aplicadas": 178,
+  "ya_ok": 0,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "10"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "15"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "18"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "15"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "12"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    16.400830745976954,
+    34.893954709167446,
+    51.83007833898338
+   ],
+   "EV/EBITDA": [
+    20.72384722965299,
+    40.309575780691226,
+    69.20113281316486
+   ],
+   "EV/FCFF": [
+    -26.29126438029785,
+    -257.63010433758694,
+    -695.3096937142751
+   ],
+   "P/E": [
+    23.923460393423703,
+    51.42708903932977,
+    85.90022996667614
+   ],
+   "P/FCFE": [
+    -25.480769999821742,
+    -255.81028817254963,
+    -692.2247902195558
+   ],
+   "P/OCF": [
+    -16.797859206217773,
+    -198.9381511833708,
+    -545.4007572309768
+   ],
+   "Precio Objetivo Ponderado": [
+    19.36224227875765,
+    40.38114355958898,
+    64.69037986445194
+   ],
+   "CAGR a 3 años": [
+    -0.18487064287573607,
+    0.04143984405063761,
+    0.2185814191220612
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    21.59542228425434,
+    45.94582425630805,
+    68.24608131700133
+   ],
+   "EV/EBITDA": [
+    23.324373406759683,
+    42.91010195779792,
+    71.80165899027156
+   ],
+   "EV/FCFF": [
+    -23.69073820319116,
+    -255.0295781604803,
+    -692.7091675371684
+   ],
+   "P/E": [
+    27.920017943517593,
+    55.42364658942366,
+    89.89678751677003
+   ],
+   "P/FCFE": [
+    -21.484212449727856,
+    -251.81373062245575,
+    -688.2282326694618
+   ],
+   "P/OCF": [
+    -12.801301656123885,
+    -194.9415936332769,
+    -541.4041996808828
+   ],
+   "Precio Objetivo Ponderado": [
+    23.60880897969649,
+    47.55634926495942,
+    74.54765228526107
+   ],
+   "CAGR a 3 años": [
+    -0.12917141291898282,
+    0.09979266943311527,
+    0.2775737353712133
+   ]
+  }
+ },
+ "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY": {
+  "nombre": "Modelo JMR - Valoración MSFT - 2026-09-16",
+  "aplicadas": 6,
+  "ya_ok": 238,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    ""
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    ""
+   ],
+   [
+    "A7",
+    "PE!J19",
+    ""
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    ""
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    ""
+   ],
+   [
+    "A16",
+    "Valuation output!B45",
+    "0.08"
+   ],
+   [
+    "A16",
+    "Valuation output!B46",
+    "='Input sheet'!B29"
+   ],
+   [
+    "A16",
+    "Valuation output!B47",
+    "0.14"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    352.7168735821022,
+    441.2672562103856,
+    517.5233360417712
+   ],
+   "EV/EBITDA": [
+    705.0927510607003,
+    888.599623457035,
+    1067.3825069718002
+   ],
+   "EV/FCFF": [
+    453.42648695417023,
+    567.1065580955573,
+    704.8536437792671
+   ],
+   "P/E": [
+    677.6577223027876,
+    862.3083689267277,
+    1044.283674253442
+   ],
+   "P/FCFE": [
+    488.2797895897561,
+    627.6651433391178,
+    786.5614233200337
+   ],
+   "P/OCF": [
+    664.900709341968,
+    820.9247270500422,
+    985.0118115756634
+   ],
+   "Precio Objetivo Ponderado": [
+    441.69528336018243,
+    554.2312117520628,
+    663.7731443465899
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.03420054466668776,
+    0.04170087458810556,
+    0.10624824487791695
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    352.7168735821022,
+    441.2672562103856,
+    517.5233360417712
+   ],
+   "EV/EBITDA": [
+    705.0927510607003,
+    888.599623457035,
+    1067.3825069718002
+   ],
+   "EV/FCFF": [
+    453.42648695417023,
+    567.1065580955573,
+    704.8536437792671
+   ],
+   "P/E": [
+    677.6577223027876,
+    862.3083689267277,
+    1044.283674253442
+   ],
+   "P/FCFE": [
+    488.2797895897561,
+    627.6651433391178,
+    786.5614233200337
+   ],
+   "P/OCF": [
+    664.900709341968,
+    820.9247270500422,
+    985.0118115756634
+   ],
+   "Precio Objetivo Ponderado": [
+    441.69528336018243,
+    554.2312117520628,
+    663.7731443465899
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    -0.03420054466668776,
+    0.04170087458810556,
+    0.10624824487791695
+   ]
+  }
+ },
+ "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10": {
+  "nombre": "DUOL análisis maestro",
+  "aplicadas": 6,
+  "ya_ok": 237,
+  "personalizadas": [
+   [
+    "A7",
+    "EVEBITDA!J19",
+    "24.8"
+   ],
+   [
+    "A7",
+    "EVFCFF!J19",
+    "28.22"
+   ],
+   [
+    "A7",
+    "PE!J19",
+    "66"
+   ],
+   [
+    "A7",
+    "PFCFE!J19",
+    "61.51"
+   ],
+   [
+    "A7",
+    "POCF!J19",
+    "54.72"
+   ],
+   [
+    "A14",
+    "Income Statement!B30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!C30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!D30",
+    ""
+   ],
+   [
+    "A14",
+    "Income Statement!E30",
+    ""
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    171.29422266312727,
+    229.33955945224582,
+    343.4293129599272
+   ],
+   "EV/EBITDA": [
+    184.00017685965707,
+    238.73508597323328,
+    318.95026936384784
+   ],
+   "EV/FCFF": [
+    188.2995404069839,
+    238.90330261997553,
+    322.1430909987471
+   ],
+   "P/E": [
+    190.22486601279954,
+    260.39089783817013,
+    362.23773174556226
+   ],
+   "P/FCFE": [
+    217.22370646562942,
+    278.2909701818817,
+    398.6077285122195
+   ],
+   "P/OCF": [
+    197.12009553084405,
+    250.9999432805622,
+    349.7867950910032
+   ],
+   "Precio Objetivo Ponderado": [
+    179.6499157453533,
+    236.79683022669786,
+    341.8056911295924
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.173209756823957,
+    0.28634843255046416,
+    0.45376125469075723
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    171.29422266312727,
+    229.33955945224582,
+    343.4293129599272
+   ],
+   "EV/EBITDA": [
+    184.00017685965707,
+    238.73508597323328,
+    318.95026936384784
+   ],
+   "EV/FCFF": [
+    188.2995404069839,
+    238.90330261997553,
+    322.1430909987471
+   ],
+   "P/E": [
+    190.22486601279954,
+    260.39089783817013,
+    362.23773174556226
+   ],
+   "P/FCFE": [
+    217.22370646562942,
+    278.2909701818817,
+    398.6077285122195
+   ],
+   "P/OCF": [
+    197.12009553084405,
+    250.9999432805622,
+    349.7867950910032
+   ],
+   "Precio Objetivo Ponderado": [
+    179.6499157453533,
+    236.79683022669786,
+    341.8056911295924
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.173209756823957,
+    0.28634843255046416,
+    0.45376125469075723
+   ]
+  }
+ },
+ "14S28Jgo8DxhbtrAWsnB5c1AWsHHpm0fk92pO6vp8SPY": {
+  "nombre": "Valoración Microsoft finalizada",
+  "aplicadas": 6,
+  "ya_ok": 237,
+  "personalizadas": [
+   [
+    "A2",
+    "Financials Multiples!B36",
+    "=(B35/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C36",
+    "=(C35/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D36",
+    "=(D35/ Dividendos!I4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!B75",
+    "=(B74/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C75",
+    "=(C74/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D75",
+    "=(D74/ Dividendos!I4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!B115",
+    "=(B114/ Dividendos!G4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!C115",
+    "=(C114/ Dividendos!H4)-1"
+   ],
+   [
+    "A2",
+    "Financials Multiples!D115",
+    "=(D114/ Dividendos!I4)-1"
+   ]
+  ],
+  "antes": {
+   "DCF Damodaran": [
+    420.65449300516445,
+    435.9265495938279,
+    590.9091862946383
+   ],
+   "EV/EBITDA": [
+    475.86592759892574,
+    533.9348802365423,
+    681.4668156540615
+   ],
+   "EV/FCFF": [
+    548.8790477753704,
+    634.779827972975,
+    812.0350568934024
+   ],
+   "P/E": [
+    440.4552818373921,
+    506.18986965992497,
+    651.709908336013
+   ],
+   "P/FCFE": [
+    601.294324862004,
+    678.3019469244632,
+    903.0317784950007
+   ],
+   "P/OCF": [
+    492.3737593791854,
+    537.7763938283898,
+    687.8241254920143
+   ],
+   "Precio Objetivo Ponderado": [
+    454.47657374526943,
+    491.09572425502853,
+    648.096799836388
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.057444962135330346,
+    0.08511555581615249,
+    0.19023823521962058
+   ]
+  },
+  "despues": {
+   "DCF Damodaran": [
+    420.65449300516445,
+    435.9265495938279,
+    590.9091862946383
+   ],
+   "EV/EBITDA": [
+    475.86592759892574,
+    533.9348802365423,
+    681.4668156540615
+   ],
+   "EV/FCFF": [
+    548.8790477753704,
+    634.779827972975,
+    812.0350568934024
+   ],
+   "P/E": [
+    440.4552818373921,
+    506.18986965992497,
+    651.709908336013
+   ],
+   "P/FCFE": [
+    601.294324862004,
+    678.3019469244632,
+    903.0317784950007
+   ],
+   "P/OCF": [
+    492.3737593791854,
+    537.7763938283898,
+    687.8241254920143
+   ],
+   "Precio Objetivo Ponderado": [
+    454.47657374526943,
+    491.09572425502853,
+    648.096799836388
+   ],
+   "CAGR a 3 años (desde el precio del análisis)": [
+    0.057444962135330346,
+    0.08511555581615249,
+    0.19023823521962058
+   ]
+  }
+ }
+}

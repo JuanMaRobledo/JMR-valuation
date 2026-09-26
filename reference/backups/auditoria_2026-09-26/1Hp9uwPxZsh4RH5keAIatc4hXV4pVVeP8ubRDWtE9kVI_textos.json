@@ -1,0 +1,1043 @@
+{
+ "title": "Modelo_JMR_NVO_2026-09-23",
+ "sheets": {
+  "Tesis de Inversión y Supuestos": [
+   [
+    "NVO (Novo Nordisk A/S) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: USD 39,40 (cierre NYSE 22-sep-2026) | WACC: 10,04% | Cifras en USD millones convertidas desde DKK (tipos BCE)"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "Novo Nordisk pasó de crecer 25-31% anual en ventas (2022-2024, en DKK) a una fase de normalización: las ventas IFRS 2025 crecieron 6,4% en DKK y la guía de agosto de 2026 prevé ventas ajustadas de 0% a -6% a tipo de cambio constante (TCC) para 2026. Lo ya demostrado en los datos es que el volumen de GLP-1 sigue creciendo (Obesity care ajustado +19% TCC en H1 2026; Wegovy® pill >5 millones de recetas en EE. UU. desde su lanzamiento en enero de 2026) mientras el precio realizado cae (acuerdo MFN con el Gobierno de EE. UU., recorte de precio de lista a USD 675 desde el 1-ene-2027, pérdida de exclusividad de semaglutida en algunos mercados de International Operations). El margen operativo ajustado sigue alto (44,6% en H1 2026) pero la rentabilidad sobre capital cayó de 88,5% (2023) a 39,3% (2025) por la ola de capex (DKK 60,1 mil M en 2025) y la compra de plantas de Catalent. La tensión central: un negocio de altísima calidad cuyo precio unitario se está reajustando; el mercado (EV/EBITDA LTM ajustado ~8,5x) descuenta que la erosión de precio y la competencia de Eli Lilly pesen más que la expansión de volumen. Base del LTM: IFRS jul-25/jun-26 excluyendo la reversión no recurrente y sin efecto caja de la provisión 340B (DKK 26,8 mil M) y el deterioro de activos de pipeline (DKK 6,3 mil M)."
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "Volumen: Obesity care ajustado creció 19% a TCC en H1 2026 y 40% en International Operations; pacientes con productos de obesidad +69% interanual a 4,9 millones (informe H1 2026, 4-ago-2026).",
+    "Precio: la guía 2026 prevé ventas ajustadas de 0% a -6% a TCC; en EE. UU. las ventas ajustadas H1 2026 cayeron 4% a TCC por menores precios realizados (informe H1 2026)."
+   ],
+   [
+    "Nuevo formato oral: Wegovy® pill superó 265.000 recetas semanales (semana al 17-jul-2026) y fue aprobado por la EMA en julio de 2026; Wegovy® HD (7,2 mg) lanzado en EE. UU. en abril de 2026.",
+    "Reinicio de precio: desde el 1-ene-2027 el precio de lista de Wegovy®/Ozempic® en EE. UU. baja a USD 675 (≈-50% y -35%), con impacto esperado en el flujo de caja de 2027 (informe H1 2026)."
+   ],
+   [
+    "Caja: flujo de caja libre H1 2026 de DKK 55,3 mil M (+44%) y guía 2026 elevada a DKK 45-55 mil M; recompras 2026 de hasta DKK 15 mil M y dividendo 2025 de DKK 11,70/acción.",
+    "Intensidad de capital: capex PP&E DKK 60,1 mil M en 2025 y ~55 mil M en 2026; ROIC reportado cayó de 88,5% (2023) a 39,3% (2025) (Five-year overview AR2025)."
+   ],
+   [
+    "Pipeline y plazos: patente de compuesto de semaglutida en EE. UU. hasta 2032; objetivos CMD (21-sep-2026) de >5 multi-blockbusters a 2030 y >DKK 150 mil M de ventas de pipeline ajustadas por riesgo en 2035.",
+    "Ejecución de I+D: ZEUS (ziltivekimab) no alcanzó su objetivo primario (31-jul-2026); monlunabant terminado con deterioro de DKK 4,0 mil M; CagriSema no demostró no-inferioridad en HbA1c frente a tirzepatida (REIMAGINE 4)."
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    0.0048,
+    -0.04,
+    -0.052,
+    "Base -4%: guía 2026 ventas ajustadas 0% a -6% TCC (≈-1 pp adicional en DKK) y recorte de precio de lista EE. UU. en 2027; LTM en USD convertido a 6,405 DKK/USD vs spot 6,55. Conservador y optimista NO son supuestos del analista: la plantilla los deriva de B27 (conservador = promedio(B27; Rf) = 0,48%; optimista = 1,3×B27 = -5,2%), por lo que con crecimiento negativo el orden económico se invierte."
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    0.0048,
+    0.035,
+    -0.052,
+    "Base 3,5%: el CMD (21-sep-2026) apunta a una TCAC 2026-30 \"en línea con pares\"; la mediana de crecimiento de consenso a 3 años de los pares (LLY, AZN, SNY, MRK, AMGN, PFE) es ~4,6% (stockanalysis, 23-sep-2026). Se aplica un descuento por reajuste de precio y expiración de semaglutida (EE. UU. 2032). Conservador/optimista replican C55/C106 de Valuation output."
+   ],
+   [
+    "Margen Operativo — Año 1",
+    0.475,
+    0.475,
+    0.475,
+    "Margen año 1 = 'Valuation output'!B6 - 2 pp = 47,5% (valor predeterminado de la plantilla). B6 = 49,5% es el margen LTM ajustado con I+D capitalizada (vida 10 años); el margen EBIT IFRS ajustado LTM es 40,2%. Los -2 pp reflejan el recorte de precios de 2027 y el aumento de I+D y promoción previsto para H2 2026."
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    0.495,
+    0.45,
+    0.5,
+    "Base 45%: el CMD fija \"margen operativo ampliamente estable\"; se deja 2,5 pp bajo el año 1 por erosión de precio. Conservador = margen actual B6 (49,5%) y optimista = B30+5 pp (50%) por diseño de la plantilla: el conservador supera al base porque el margen actual excede el objetivo base (incongruencia de diseño documentada)."
+   ],
+   [
+    "Años de convergencia de margen",
+    5,
+    5,
+    5,
+    "Cinco años: el recorte de precios de lista en EE. UU. (ene-2027) y la expiración de semaglutida en 2031-32 concentran la presión dentro del horizonte; se mantiene el valor predeterminado."
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "0,80x / 1,07x",
+    "0,80x / 1,07x",
+    "0,80x / 1,07x",
+    "0,80x años 1-5 (entrada manual): refleja capex de DKK 60 mil M (2025) y ~55 mil M (2026) en API y llenado, con guía de descenso posterior; ingresos/capital invertido actual (con I+D capitalizada) = 0,61x. 1,07x años 6-10 = mediana global de farmacéuticas (Damodaran, K28)."
+   ],
+   [
+    "Costo de Capital (WACC)",
+    0.1004,
+    0.1004,
+    0.1004,
+    "Método \"Detailed\": Rf 4,96% (UST 10 años, 22-sep-2026); beta desapalancada global Drugs (Pharmaceutical) 0,999 → apalancada 1,07; ERP por regiones operativas 5,25% (ventas ajustadas H1 2026); Kd = Rf + spread de rating real Aa3/AA (tabla \"Aa2/AA\", 0,55%); D/(D+E) 8,6%. El WACC no cambia entre escenarios en esta plantilla."
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF / acción",
+    "Precio Objetivo Ponderado*",
+    "vs. Precio Actual (USD 39,40)"
+   ],
+   [
+    "Conservador",
+    45.52,
+    57.08,
+    0.449
+   ],
+   [
+    "Base",
+    44.09,
+    58.16,
+    0.476
+   ],
+   [
+    "Optimista",
+    35.68,
+    52.4,
+    0.33
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF (55%) con EV/FCFF (20%), P/FCFE (10%), EV/EBITDA (5%), P/E (5%) y P/OCF (5%), ponderación \"Biotech/Farma\" de la hoja Resumen de Valoración. Los múltiplos usan por defecto el MÍNIMO de 2022-2025 (años de hipercrecimiento): EV/EBITDA 10,8x, EV/FCFF 27,4x, P/E 14,7x. Sensibilidad (no incorporada al archivo): con los múltiplos LTM actuales en las celdas J19 (EV/EBITDA 8,5x, EV/FCF 15,9x, P/E 11,2x, P/FCF 14,7x, P/OCF 8,5x) el precio ponderado base sería USD 47,91 en lugar de 58,16. Resultados con precio de prueba USD 39,40; en Google Sheets se recalculan con GOOGLEFINANCE."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "Datos: LTM jun-26 ajustado (excluye reversión 340B de DKK 26,8 mil M y deterioros mayores de DKK 6,3 mil M); estados en USD (flujos a tipo medio, balance a tipo de cierre BCE).",
+    "Sin ajuste, el LTM incluiría ingresos no recurrentes y sin efecto caja equivalentes al 8,8% de las ventas ajustadas, inflando la base del DCF."
+   ],
+   [
+    2,
+    "Categoría de ponderación en Resumen de Valoración!G3: \"Genérico\" → \"Biotech/Farma\"; I+D capitalizada a 10 años (R&D converter F7: 3 → 10); costo de capital con ERP por regiones operativas y rating real.",
+    "Perfil farmacéutico: vida económica de la I+D según la tabla de Damodaran para \"Drug\" (10 años); 51% de las ventas ajustadas H1 2026 se generan en EE. UU. y rating Aa3/AA (Moody's/S&P)."
+   ],
+   [
+    3,
+    "Supuestos base recalibrados: B27 -4%, B29 3,5%, B30 45%, B32 0,80x (B33 = K28); se mantienen B28 (B6-2 pp) y B31 (5 años) por defecto. Múltiplos: sin override (mínimo 4 años por defecto).",
+    "Guía 2026 (4-ago-2026), objetivos CMD (21-sep-2026) y capex guiado. Advertencia: con B27 negativo las fórmulas automáticas invierten los escenarios (optimista < base < conservador en DCF)."
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "Con el precio de USD 39,40 (22-sep-2026), el DCF del Modelo JMR entrega USD 44,09 por ADR en el escenario base (precio = 89% del valor) y el precio objetivo ponderado base es USD 58,16 (+47,6%), pero esta cifra depende mucho de múltiplos anclados en 2022-2025: con múltiplos LTM el ponderado base baja a ~USD 47,9 y el DCF solo deja un margen de ~11%, inferior al MOS de 35% exigido. Los escenarios automáticos no son interpretables como rango (el optimista da USD 35,68 porque multiplica un crecimiento negativo). La variable que más mueve el valor es el precio neto por paciente en EE. UU. tras 2027 (define si el crecimiento de volumen de Wegovy® pill y de International Operations compensa el reajuste de precio y sostiene el margen del 45%); le sigue la intensidad de capital (ingresos/capital 0,8x) que determina si el ROIC se estabiliza por encima del WACC de 10%."
+   ]
+  ],
+  "Supuestos Recomendados": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos Recomendados (Modelo Base)"
+   ],
+   [
+    "Nota: 'Modelo Base' (Input sheet B27-B33) es el UNICO escenario que se fija por juicio del analista en esta plantilla -- Conservador y Optimista se derivan AUTOMATICAMENTE del historico real de la empresa. Esta hoja se completa (columnas Recomendación/Justificación) al analizar cada ticker, con la data real de 'Crecimiento y Margenes', 'Cualitativo' y 'Eficiencia de capital' como respaldo."
+   ],
+   [],
+   [
+    "Supuesto",
+    "Valor actual (Input sheet)",
+    "Recomendación",
+    "Justificación",
+    "Mín (10Y)",
+    "Máx (10Y)",
+    "Industria Mediana",
+    "Industria Promedio"
+   ],
+   [
+    "Revenue growth rate - año 1",
+    "='Input sheet'!B27",
+    -0.04,
+    "Guía 2026 ventas ajustadas 0% a -6% TCC (4-ago-2026) + recorte de precio de lista EE. UU. ene-2027; LTM ajustado en USD a tipo medio 6,405.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Operating margin - año 1",
+    "='Input sheet'!B28",
+    "='Valuation output'!B6-0,02",
+    "Predeterminado (B6-2 pp = 47,5% con I+D capitalizada). Margen EBIT IFRS ajustado LTM 40,2%; margen ajustado H1 2026 de la compañía 44,6%.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Revenue growth rate - años 2-5",
+    "='Input sheet'!B29",
+    0.035,
+    "CMD 21-sep-2026: TCAC 2026-30 en línea con pares (mediana de consenso 3 años de pares ~4,6%); descuento por reajuste de precio y patente EE. UU. 2032.",
+    "='Crecimiento y Márgenes'!C10",
+    "='Crecimiento y Márgenes'!C11",
+    "='Crecimiento y Márgenes'!C17",
+    "='Crecimiento y Márgenes'!C20"
+   ],
+   [
+    "Target pre-tax operating margin (largo plazo)",
+    "='Input sheet'!B30",
+    0.45,
+    "CMD: margen operativo \"ampliamente estable\". Objetivo 2,5 pp bajo el año 1 por erosión de precio; sin expansión.",
+    "='Crecimiento y Márgenes'!D10",
+    "='Crecimiento y Márgenes'!D11",
+    "='Crecimiento y Márgenes'!E17",
+    "='Crecimiento y Márgenes'!E20"
+   ],
+   [
+    "Year of convergence for margin",
+    "='Input sheet'!B31",
+    5,
+    "Predeterminado; la presión de precio (2027) y la expiración de patente (2031-32) caen dentro de 5-6 años."
+   ],
+   [
+    "Sales to capital ratio - años 1-5",
+    "='Input sheet'!B32",
+    0.8,
+    "Entrada manual: capex 2025-26 de DKK 55-60 mil M/año; ingresos/capital invertido actual 0,61x (con I+D capitalizada)."
+   ],
+   [
+    "Sales to capital ratio - años 6-10",
+    "='Input sheet'!B33",
+    "='Input sheet'!K28",
+    "Mediana global Drugs (Pharmaceutical) de Damodaran (1,07x) al normalizarse el capex."
+   ]
+  ],
+  "Supuestos de los Múltiplos": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Supuestos de los Múltiplos (Salida FY+3)"
+   ],
+   [
+    "Como se fija el multiplo de salida en cada una de las 5 hojas de multiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MINIMO de los ultimos 4 años realizados de ese multiplo (celda J de cada bloque, ='MIN(B:E)') -- un ancla conservadora que evita extrapolar un multiplo de pico de mercado. Conservador = Base x 0,9 y Optimista = Base x 1,1. Cada bloque tiene una celda de override manual (columna J) -- si se escribe un numero ahi a mano, reemplaza el calculo automatico. La fila de evaluación (abajo) se completa al analizar cada ticker."
+   ],
+   [],
+   [
+    "Método",
+    "Conservador (x0,9)",
+    "Base (MIN últimos 4Y)",
+    "Optimista (x1,1)",
+    "Override manual activo (columna J)",
+    "Promedio 3Y",
+    "Promedio 5Y",
+    "Promedio 10Y",
+    "Mediana (10Y)",
+    "Mínimo (10Y)",
+    "Máximo (10Y)",
+    "Industria Promedio",
+    "Industria Mediana"
+   ],
+   [
+    "EV/FCFF",
+    "=EVFCFF!F8",
+    "=EVFCFF!F19",
+    "=EVFCFF!F30",
+    "=IF(COUNTA(EVFCFF!J8;EVFCFF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I24:K24)",
+    "=AVERAGE('Trailing Valuation'!G24:K24)",
+    "=AVERAGE('Trailing Valuation'!B24:K24)",
+    "=MEDIAN('Trailing Valuation'!B24:K24)",
+    "=MIN('Trailing Valuation'!B24:K24)",
+    "=MAX('Trailing Valuation'!B24:K24)",
+    "=IFERROR(AVERAGE(Sector!G3:G11);\"\")",
+    "=IFERROR(MEDIAN(Sector!G3:G11);\"\")"
+   ],
+   [
+    "P/OCF",
+    "=POCF!F8",
+    "=POCF!F19",
+    "=POCF!F30",
+    "=IF(COUNTA(POCF!J8;POCF!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I15:K15)",
+    "=AVERAGE('Trailing Valuation'!G15:K15)",
+    "=AVERAGE('Trailing Valuation'!B15:K15)",
+    "=MEDIAN('Trailing Valuation'!B15:K15)",
+    "=MIN('Trailing Valuation'!B15:K15)",
+    "=MAX('Trailing Valuation'!B15:K15)",
+    "=IFERROR(AVERAGE(Sector!J3:J11);\"\")",
+    "=IFERROR(MEDIAN(Sector!J3:J11);\"\")"
+   ],
+   [
+    "P/E",
+    "=PE!F8",
+    "=PE!F19",
+    "=PE!F30",
+    "=IF(COUNTA(PE!J8;PE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I13:K13)",
+    "=AVERAGE('Trailing Valuation'!G13:K13)",
+    "=AVERAGE('Trailing Valuation'!B13:K13)",
+    "=MEDIAN('Trailing Valuation'!B13:K13)",
+    "=MIN('Trailing Valuation'!B13:K13)",
+    "=MAX('Trailing Valuation'!B13:K13)",
+    "=IFERROR(AVERAGE(Sector!F3:F11);\"\")",
+    "=IFERROR(MEDIAN(Sector!F3:F11);\"\")"
+   ],
+   [
+    "P/FCFE",
+    "=PFCFE!F8",
+    "=PFCFE!F19",
+    "=PFCFE!F30",
+    "=IF(COUNTA(PFCFE!J8;PFCFE!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I16:K16)",
+    "=AVERAGE('Trailing Valuation'!G16:K16)",
+    "=AVERAGE('Trailing Valuation'!B16:K16)",
+    "=MEDIAN('Trailing Valuation'!B16:K16)",
+    "=MIN('Trailing Valuation'!B16:K16)",
+    "=MAX('Trailing Valuation'!B16:K16)",
+    "=IFERROR(AVERAGE(Sector!H3:H11);\"\")",
+    "=IFERROR(MEDIAN(Sector!H3:H11);\"\")"
+   ],
+   [
+    "EV/EBITDA",
+    "=EVEBITDA!F8",
+    "=EVEBITDA!F19",
+    "=EVEBITDA!F30",
+    "=IF(COUNTA(EVEBITDA!J8;EVEBITDA!J30)>0;\"Sí — revisar\";\"No (automático)\")",
+    "=AVERAGE('Trailing Valuation'!I21:K21)",
+    "=AVERAGE('Trailing Valuation'!G21:K21)",
+    "=AVERAGE('Trailing Valuation'!B21:K21)",
+    "=MEDIAN('Trailing Valuation'!B21:K21)",
+    "=MIN('Trailing Valuation'!B21:K21)",
+    "=MAX('Trailing Valuation'!B21:K21)",
+    "=IFERROR(AVERAGE(Sector!I3:I11);\"\")",
+    "=IFERROR(MEDIAN(Sector!I3:I11);\"\")"
+   ],
+   [],
+   [
+    "Evaluación: (completar al analizar el ticker)"
+   ]
+  ],
+  "Cualitativo": [
+   [],
+   [
+    "PERFIL CORPORATIVO & RESUMEN DE NEGOCIO"
+   ],
+   [],
+   [
+    "  1. DATOS GENERALES DE LA EMPRESA"
+   ],
+   [
+    "Nombre de la Empresa",
+    "Novo Nordisk A/S (CVR 24256790), Bagsværd, Dinamarca. Controlada por la Novo Nordisk Foundation vía Novo Holdings A/S (100% acciones A; 76,02% + 1,26% de los votos al 31-dic-2025)."
+   ],
+   [
+    "Director Ejecutivo (CEO)",
+    "Maziar Mike Doustdar (presidente y CEO desde el 7-ago-2025). CFO: Karsten Munk Knudsen. Presidente del Consejo: Lars Rebien Sørensen (desde el 14-nov-2025)."
+   ],
+   [
+    "Sector Industrial",
+    "Salud – Farmacéutica (diabetes, obesidad y enfermedades raras). Damodaran: Drugs (Pharmaceutical)."
+   ],
+   [
+    "Sitio Web Oficial",
+    "https://www.novonordisk.com"
+   ],
+   [
+    "Ticker",
+    "='Input sheet'!A1",
+    "='Input sheet'!D1"
+   ],
+   [
+    "  2. DESCRIPCIÓN OPERATIVA Y SEGMENTOS DE NEGOCIO"
+   ],
+   [
+    "Segmento / Área",
+    "Descripción (fuente: informe H1 2026 del 4-ago-2026 y 20-F 2025)"
+   ],
+   [
+    "Visión General de la Empresa",
+    "Empresa farmacéutica fundada en 1923, líder en GLP-1 (semaglutida: Ozempic®, Wegovy®, Rybelsus®/Ozempic® pill) e insulinas. Ventas IFRS 2025: DKK 309.064 M (+6,4% DKK); margen operativo 41,3%; ~66.700 empleados y ventas en ~170 países. Reporta dos segmentos: Obesity & Diabetes care (94% de ventas ajustadas H1 2026) y Rare disease (6%)."
+   ],
+   [
+    "Obesity care\n(Wegovy®, Wegovy® pill, Saxenda®)",
+    "Ventas ajustadas H1 2026 DKK 44.064 M (+19% TCC; 30% del total). Wegovy® inyectable 37.719 M (+7%), Wegovy® pill 5.474 M (lanzado en EE. UU. el 5-ene-2026). EE. UU. +6% TCC con precios a la baja; International Operations +40% TCC. Pacientes con productos de obesidad: 4,9 M (+69%)."
+   ],
+   [
+    "Diabetes care\n(GLP-1 e insulinas)",
+    "Ventas ajustadas H1 2026 DKK 95.365 M (-5% TCC; 64% del total). GLP-1 diabetes 69.515 M (-5%; Ozempic® 59.200 M, -2%); insulinas 24.586 M (-7%) con pérdida de cuota en EE. UU. Patente de compuesto de semaglutida en EE. UU. hasta 2032; ANDAs de genéricos presentadas y litigadas."
+   ],
+   [
+    "Rare disease\n(hemofilia, hormona de crecimiento)",
+    "Ventas ajustadas H1 2026 DKK 9.122 M (+2% TCC). NovoSeven®, Alhemo®, Norditropin®, Sogroya®. Margen operativo del segmento H1 2026: 3,1% (afectado por deterioros de pipeline). Catalizadores: CHMP positivo para FREHEMGO® (denecimig) el 17-sep-2026; decisiones EE. UU./UE de denecimig en Q4 2026."
+   ],
+   [
+    "Estrategia de Distribución\ny Comercialización",
+    "Dos unidades: US Operations (51% de ventas ajustadas H1 2026) e International Operations (EUCAN, Emerging Markets, APAC, Region China). En EE. UU. amplía el canal de autopago (NovoCare® Pharmacy, telemedicina), Medicare Part D vía programa Bridge (desde 1-jul-2026) y acuerdo MFN con la Administración; precio de lista de Wegovy®/Ozempic® a USD 675 desde 1-ene-2027."
+   ],
+   [],
+   [
+    "ANÁLISIS DE PERSPECTIVAS: BULLS VS. BEARS"
+   ],
+   [],
+   [
+    "PERSPECTIVA ALCISTA (BULLS SAY) - ARGUMENTOS A FAVOR"
+   ],
+   [
+    "Pilar / Tema"
+   ],
+   [
+    "Liderazgo en volumen de GLP-1 y nuevo formato oral",
+    "Wegovy® sigue siendo líder en nuevos pacientes entre medicamentos de marca para obesidad en EE. UU.; Wegovy® pill superó 265.000 recetas semanales y 5 M de recetas acumuladas; aprobado por la EMA en julio de 2026 y lanzado en Reino Unido y EAU (informe H1 2026)."
+   ],
+   [
+    "Escala de manufactura, balance y caja",
+    "Capacidad de API y llenado ampliada (capex 2025 DKK 60,1 mil M; plantas de Catalent); FCF H1 2026 DKK 55,3 mil M y guía 2026 DKK 45-55 mil M; ratings Aa3/AA; deuda neta DKK 86,5 mil M (≈0,6x EBITDA LTM ajustado)."
+   ],
+   [
+    "Opcionalidad de pipeline y mercado subpenetrado",
+    "Mercado global de obesidad de marca creció 81% en volumen (MAT mayo-2026, IQVIA citado por la compañía). Pipeline: CagriSema (decisión EE. UU. Q4 2026), zenagamtide (fase 3), Wegovy® HD; objetivo CMD de >5 multi-blockbusters a 2030 y >DKK 150 mil M de ventas de pipeline en 2035 (ajustado por riesgo)."
+   ],
+   [],
+   [
+    "PERSPECTIVA BAJISTA (BEARS SAY) - RIESGOS Y DESAFÍOS"
+   ],
+   [
+    "Pilar de Riesgo"
+   ],
+   [
+    "Precio neto en EE. UU. en caída estructural",
+    "Ventas ajustadas en EE. UU. -4% TCC en H1 2026 por menores precios realizados; acuerdo MFN, cobertura Medicaid reducida y precio de lista de USD 675 desde 2027 (≈-50% Wegovy®, -35% Ozempic®)."
+   ],
+   [
+    "Competencia de Eli Lilly y ejecución del pipeline",
+    "Tirzepatida superó a CagriSema en HbA1c (REIMAGINE 4); ZEUS falló su objetivo primario (31-jul-2026); monlunabant terminado (deterioro DKK 4,0 mil M). Novo demandó a Lilly por publicidad comparativa (21-jul-2026)."
+   ],
+   [
+    "Genéricos de semaglutida y retornos decrecientes sobre capital",
+    "Expiración de la patente de semaglutida en algunos mercados de International Operations desde 2026 y en EE. UU. en 2032; demanda de Sandoz en el UPC contra la patente de la dosis de 1 mg (30-jun-2026). ROIC reportado 88,5% (2023) → 39,3% (2025) por capex y adquisiciones."
+   ],
+   [],
+   [
+    "Fuente: elaboración propia con documentos primarios de Novo Nordisk (informe H1 2026 del 4-ago-2026, 20-F 2025, Five-year overview AR2025, anuncios 6-K jul-sep 2026). No se usó informe de terceros para esta tabla."
+   ],
+   [],
+   [
+    "ACONTECIMIENTOS Y NOTICIAS RECIENTES"
+   ],
+   [
+    "Periodo del Reporte: 25 de junio de 2026 – 23 de septiembre de 2026 (90 días previos al corte)"
+   ],
+   [],
+   [
+    "1. RESUMEN DE TITULARES Y NOTICIAS CLAVE"
+   ],
+   [
+    "Categoría / Tema",
+    "Titular",
+    "",
+    "Detalle Corto"
+   ],
+   [
+    "I+D / Pipeline",
+    "ZEUS (ziltivekimab) no cumple el objetivo primario de MACE — 31-jul-2026",
+    "",
+    "Posible deterioro no monetario en Q3 2026; reduce opcionalidad cardiovascular."
+   ],
+   [
+    "Resultados",
+    "Resultados H1 2026 y guía elevada — 4-ago-2026",
+    "",
+    "Ventas ajustadas 2026: 0% a -6% TCC (antes -4% a -12%); FCF DKK 45-55 mil M."
+   ],
+   [
+    "Regulatorio",
+    "Aprobaciones EMA de Wegovy® pill y Wegovy® 7,2 mg — julio 2026",
+    "",
+    "Amplía el formato oral y la dosis alta fuera de EE. UU."
+   ],
+   [
+    "Estrategia",
+    "Capital Markets Day: objetivos 2030 — 21-sep-2026",
+    "",
+    "TCAC 2026-30 \"en línea con pares\", margen estable; el ADR cayó 7,96% ese día (USD 43,24 → 39,80)."
+   ],
+   [
+    "Legal / Patentes",
+    "Litigios: Sandoz (UPC, 30-jun), demanda contra Lilly (21-jul), ANDA de Cipla",
+    "",
+    "Defensa de exclusividad de semaglutida y disputa comercial con Lilly."
+   ],
+   [],
+   [
+    "2. ANÁLISIS Y DESARROLLO DETALLADO DE LOS EVENTOS"
+   ],
+   [
+    "Evento / Noticia"
+   ],
+   [
+    "ZEUS y terminación de monlunabant",
+    "Ziltivekimab no redujo MACE vs placebo en >6.300 pacientes con ASCVD, ERC e inflamación (anuncio 31-jul-2026). En Q2 2026 se registraron deterioros de DKK 6,3 mil M en activos de pipeline, incluido monlunabant (DKK 4,0 mil M). Impacto negativo: reduce la diversificación fuera de GLP-1."
+   ],
+   [
+    "Guía 2026 elevada (H1 2026)",
+    "Ventas ajustadas Q2 2026 +7% TCC y beneficio operativo ajustado +11% TCC. Guía de ventas y beneficio operativo ajustados elevada a 0% a -6% TCC; FCF DKK 45-55 mil M; capex ~DKK 55 mil M; tasa fiscal 21-23%. Dividendo interino DKK 3,75. Impacto positivo moderado."
+   ],
+   [
+    "Capital Markets Day 2026",
+    "Metas: >5 multi-blockbusters a 2030, >DKK 150 mil M en ventas de pipeline en 2035 (ajustado por riesgo), atender >60 M de pacientes en 2030, TCAC de ingresos 2026-30 en línea con pares y margen operativo ampliamente estable (GlobeNewswire, 21-sep-2026). El ADR cayó 7,96% ese día (stockanalysis). Impacto: aclara que no se espera expansión de margen."
+   ],
+   [
+    "Recompra de acciones en curso",
+    "Programa de hasta DKK 15 mil M (4-feb-2026 a 3-feb-2027): 34,17 M de acciones B recompradas a un promedio de DKK 281,79 hasta el 18-sep-2026; autocartera 48,2 M; 4.465 M de acciones totales (anuncio 21-sep-2026). Reducción neta de acciones ~1% anual."
+   ]
+  ],
+  "Stories to Numbers": [
+   [
+    "TICKER",
+    "='Input sheet'!B1",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "='Input sheet'!B5",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "='Input sheet'!B4"
+   ],
+   [
+    "[Escribe aquí el titulo de tu historia de inversion]"
+   ],
+   [
+    "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Tell your story about the company. Keep it focuses on the company's businesses and tie it into the three key levers of value: cash flows, growth and risk"
+   ],
+   [],
+   [],
+   [],
+   [
+    "The Assumptions"
+   ],
+   [
+    "",
+    "Base year",
+    "Next year",
+    "Years 2-5",
+    "Years 6-10",
+    "After year 10",
+    "Link to story"
+   ],
+   [
+    "Revenues (a)",
+    "='Valuation output'!B5",
+    "='Input sheet'!B27",
+    "='Input sheet'!B29",
+    "Changes to",
+    "='Valuation output'!M4",
+    "Disruption platform in multiple businesses",
+    "Tie each assumption to the part of your story that relates to it."
+   ],
+   [
+    "Operating margin (b)",
+    "='Valuation output'!B6",
+    "='Input sheet'!B28",
+    "Moves to",
+    "='Valuation output'!G6",
+    "='Valuation output'!M6",
+    "Margins improve, aided by cloud business & continued economies of scale."
+   ],
+   [
+    "Tax rate",
+    "='Valuation output'!B8",
+    "",
+    "=B12",
+    "Changes to",
+    "='Valuation output'!M8",
+    "Global/US marginal tax rate over time"
+   ],
+   [
+    "Sales to Capital  (c )",
+    "",
+    "='Input sheet'!B32",
+    "='Input sheet'!B32",
+    "='Input sheet'!B33",
+    "='Valuation output'!M4/'Valuation output'!M42",
+    "Maintained at Amazon's current level"
+   ],
+   [
+    "Return on capital",
+    "='Valuation output'!B42",
+    "Marginal ROIC =",
+    "=Diagnostics!C28",
+    "",
+    "='Valuation output'!M42",
+    "Strong competitive edges"
+   ],
+   [
+    "Cost of capital (d)",
+    "",
+    "",
+    "='Valuation output'!C14",
+    "",
+    "='Valuation output'!M14",
+    "Cost of capital close to median company"
+   ],
+   [
+    "The Cash Flows"
+   ],
+   [
+    "",
+    "Revenues",
+    "Operating Margin",
+    "EBIT",
+    "EBIT (1-t)",
+    "Reinvestment ",
+    "FCFF",
+    "These are the numbers that come from your assumptions. The revenues over time reflect your revenue growth, the operating margins evolve towards your target margin and your tax rate will change, if you have set it to. The reinvestment is estimated using the sales to capital ratio for the first 10 years and based on a reinvestment rate in stable growth (g/ ROC)."
+   ],
+   [
+    1,
+    "='Valuation output'!C5",
+    "='Valuation output'!C6",
+    "=B18*C18",
+    "='Valuation output'!C9",
+    "='Valuation output'!C10",
+    "=E18-F18"
+   ],
+   [
+    2,
+    "='Valuation output'!D5",
+    "='Valuation output'!D6",
+    "=B19*C19",
+    "='Valuation output'!D9",
+    "='Valuation output'!D10",
+    "=E19-F19"
+   ],
+   [
+    3,
+    "='Valuation output'!E5",
+    "='Valuation output'!E6",
+    "=B20*C20",
+    "='Valuation output'!E9",
+    "='Valuation output'!E10",
+    "=E20-F20"
+   ],
+   [
+    4,
+    "='Valuation output'!F5",
+    "='Valuation output'!F6",
+    "=B21*C21",
+    "='Valuation output'!F9",
+    "='Valuation output'!F10",
+    "=E21-F21"
+   ],
+   [
+    5,
+    "='Valuation output'!G5",
+    "='Valuation output'!G6",
+    "=B22*C22",
+    "='Valuation output'!G9",
+    "='Valuation output'!G10",
+    "=E22-F22"
+   ],
+   [
+    6,
+    "='Valuation output'!H5",
+    "='Valuation output'!H6",
+    "=B23*C23",
+    "='Valuation output'!H9",
+    "='Valuation output'!H10",
+    "=E23-F23"
+   ],
+   [
+    7,
+    "='Valuation output'!I5",
+    "='Valuation output'!I6",
+    "=B24*C24",
+    "='Valuation output'!I9",
+    "='Valuation output'!I10",
+    "=E24-F24"
+   ],
+   [
+    8,
+    "='Valuation output'!J5",
+    "='Valuation output'!J6",
+    "=B25*C25",
+    "='Valuation output'!J9",
+    "='Valuation output'!J10",
+    "=E25-F25"
+   ],
+   [
+    9,
+    "='Valuation output'!K5",
+    "='Valuation output'!K6",
+    "=B26*C26",
+    "='Valuation output'!K9",
+    "='Valuation output'!K10",
+    "=E26-F26"
+   ],
+   [
+    10,
+    "='Valuation output'!L5",
+    "='Valuation output'!L6",
+    "=B27*C27",
+    "='Valuation output'!L9",
+    "='Valuation output'!L10",
+    "=E27-F27"
+   ],
+   [
+    "Terminal year",
+    "='Valuation output'!M5",
+    "='Valuation output'!M6",
+    "=B28*C28",
+    "='Valuation output'!M9",
+    "='Valuation output'!M10",
+    "=E28-F28"
+   ],
+   [
+    "The Value"
+   ],
+   [
+    "Terminal value",
+    "",
+    "",
+    "='Valuation output'!B20",
+    "",
+    "",
+    "",
+    "This is the output from your valuation. It reflects your cash flows being discounted back at the cost of capital to get to your operating asset value, which then gets adjusted for the likelihood that your firm will not make it. We add cash and non-operating assets, subtract out debt and minority interests to get to value of equity."
+   ],
+   [
+    "PV(Terminal value)",
+    "",
+    "",
+    "='Valuation output'!B21"
+   ],
+   [
+    "PV (CF over next 10 years)",
+    "",
+    "",
+    "='Valuation output'!B22"
+   ],
+   [
+    "Value of operating assets =",
+    "",
+    "",
+    "='Valuation output'!B23"
+   ],
+   [
+    "Adjustment for distress",
+    "",
+    "",
+    "=D33-'Valuation output'!B26",
+    "Probability of failure =",
+    "",
+    "='Valuation output'!B24"
+   ],
+   [
+    " - Debt & Minority Interests",
+    "",
+    "",
+    "='Valuation output'!B27+'Valuation output'!B28"
+   ],
+   [
+    " + Cash & Other Non-operating assets",
+    "",
+    "",
+    "='Valuation output'!B29+'Valuation output'!B30"
+   ],
+   [
+    "Value of equity",
+    "",
+    "",
+    "=D33-D34-D35+D36"
+   ],
+   [
+    " - Value of equity options",
+    "",
+    "",
+    "='Valuation output'!B32"
+   ],
+   [
+    "Number of shares",
+    "",
+    "",
+    "='Valuation output'!B34"
+   ],
+   [
+    "Value per share",
+    "",
+    "",
+    "=(D37-D38)/D39",
+    "Stock was trading at =",
+    "",
+    "='Input sheet'!B23"
+   ]
+  ],
+  "Resumen de Valoración": [
+   [
+    "='Input sheet'!A1",
+    "",
+    "Precio",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Fecha del análisis",
+    "=TODAY()"
+   ],
+   [
+    "Precio al día del análisis",
+    "=C25",
+    "",
+    "",
+    "",
+    "Tipo de Empresa",
+    "Biotech/Farma"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Margen de Seguridad (MOS)",
+    0.35
+   ],
+   [
+    "Método",
+    "Peso",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "",
+    "",
+    "",
+    "Método",
+    "Crecimiento",
+    "Madura",
+    "Genérico",
+    "Defensiva"
+   ],
+   [
+    "DCF Damodaran",
+    "=VLOOKUP(A6; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+    "",
+    "",
+    "",
+    "DCF Damodaran",
+    0.6,
+    0.4,
+    0.5,
+    0.3
+   ],
+   [
+    "EV/EBITDA",
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVEBITDA!$H$12",
+    "=EVEBITDA!$H$23",
+    "=EVEBITDA!$H$34",
+    "",
+    "",
+    "",
+    "EV/EBITDA",
+    0.1,
+    0.2,
+    0.1,
+    0.2
+   ],
+   [
+    "EV/FCFF",
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=EVFCFF!H12",
+    "=EVFCFF!H23",
+    "=EVFCFF!H34",
+    "",
+    "",
+    "",
+    "EV/FCFF",
+    0.15,
+    0.1,
+    0.1,
+    0.1
+   ],
+   [
+    "P/E",
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PE!$H$12",
+    "=PE!H23",
+    "=PE!$H$34",
+    "",
+    "",
+    "",
+    "P/E",
+    0.05,
+    0.2,
+    0.1,
+    0.25
+   ],
+   [
+    "P/FCFE",
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=PFCFE!$H$12",
+    "=PFCFE!$H$23",
+    "=PFCFE!$H$34",
+    "",
+    "",
+    "",
+    "P/FCFE",
+    0.05,
+    0.05,
+    0.1,
+    0.1
+   ],
+   [
+    "P/OCF",
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+    "=POCF!$H$12",
+    "=POCF!H23",
+    "=POCF!$H$34",
+    "",
+    "",
+    "",
+    "P/OCF",
+    0.05,
+    0.05,
+    0.1,
+    0.05
+   ],
+   [
+    "Precio Objetivo Ponderado",
+    "=SUM(B6:B11)",
+    "=SUMPRODUCT($B6:$B11; C6:C11)",
+    "=SUMPRODUCT($B6:$B11; D6:D11)",
+    "=SUMPRODUCT($B6:$B11; E6:E11)",
+    "",
+    "",
+    "",
+    "Total",
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    "CAGR a 3 años",
+    "",
+    "=(C12 / $B$3) ^ (1 / 3) - 1",
+    "=(D12 / $B$3) ^ (1 / 3) - 1",
+    "=(E12 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "MOS vs Precio Actual",
+    "",
+    "=(C12-$B$3)/C12",
+    "=(D12-$B$3)/D12",
+    "=(E12-$B$3)/E12"
+   ],
+   [
+    "Valores de compra",
+    "Max",
+    "Min",
+    "CAGR Max",
+    "CAGR Min"
+   ],
+   [
+    "Value",
+    "=$D$12 * 0,7",
+    "=$D$12 * 0,65",
+    "=(B16 / $B$3) ^ (1 / 3) - 1",
+    "=(C16 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Deep Value",
+    "=$D$12 * 0,6",
+    "=$D$12 * 0,55",
+    "=(B17 / $B$3) ^ (1 / 3) - 1",
+    "=(C17 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Valoración histórica",
+    "=$D$12 * 0,5",
+    "=$D$12 * 0,45",
+    "=(B18 / $B$3) ^ (1 / 3) - 1",
+    "=(C18 / $B$3) ^ (1 / 3) - 1"
+   ],
+   [
+    "Precio con MOS",
+    "=D12 * (1 - $G$4)",
+    "=C12 * (1 - $G$4)"
+   ],
+   [],
+   [
+    "RESUMEN RÁPIDO"
+   ],
+   [
+    "Precio Objetivo (Base)",
+    "=D12"
+   ],
+   [
+    "Rango Objetivo (Conservador – Optimista)",
+    "=C12",
+    "=E12"
+   ],
+   [
+    "Precio de Hoy",
+    "='Input sheet'!D1"
+   ],
+   [
+    "=\"Precio al Día del Análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+    "",
+    "='Input sheet'!D1"
+   ],
+   [
+    "Potencial vs. Precio Objetivo Base",
+    "=(D12-B24)/B24"
+   ]
+  ]
+ }
+}
