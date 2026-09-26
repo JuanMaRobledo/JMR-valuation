@@ -101,6 +101,9 @@ class BlendResult:
     cagr_3y_by_scenario: dict[str, float]
     mos_price: float                                # ponderado Base con margen de seguridad
     buy_price_tiers: BuyPriceTiers                   # basadas en el ponderado Base
+    method_base_values: dict[str, float]             # valor de cada método en escenario Base
+    method_mos_price: dict[str, float]               # precio de compra por método
+    method_mos_vs_current: dict[str, float | None]   # margen implícito frente a cotización disponible
 
 
 def weighted_target_price(
@@ -162,8 +165,15 @@ def run_blend(
     if base_price <= 0:
         raise ValueError("El ponderado Base debe ser positivo para calcular margen de seguridad")
 
+    method_values = values_by_scenario["Base"].as_dict()
     return BlendResult(
         company_type=company_type, weights=weights, weighted_price_by_scenario=weighted_by_scenario,
         cagr_3y_by_scenario=cagr_by_scenario, mos_price=margin_of_safety_price(base_price, margin_of_safety),
         buy_price_tiers=buy_price_tiers(base_price),
+        method_base_values=method_values,
+        method_mos_price={m: margin_of_safety_price(v, margin_of_safety) for m, v in method_values.items()},
+        method_mos_vs_current={
+            m: (1 - current_price / v if v > 0 and current_price > 0 else None)
+            for m, v in method_values.items()
+        },
     )
