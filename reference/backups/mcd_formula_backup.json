@@ -1,0 +1,852 @@
+{
+ "Input sheet!B4": {
+  "before": "",
+  "after": 46290,
+  "reason": "Fecha de valoracion MCD"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 236.5,
+  "after": "=$B$3",
+  "reason": "Precio del analisis vivo desde el cierre historico de B4 (plantilla vigente)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": -0.02,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.475,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.02,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.53,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.0,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.2,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0518,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Updated September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Costo de capital MCD (rating real Baa1/BBB+)"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital MCD (rating real Baa1/BBB+)"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 10,
+  "reason": "Costo de capital MCD (rating real Baa1/BBB+)"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital MCD (rating real Baa1/BBB+)"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Baa1/BBB+",
+  "reason": "Costo de capital MCD (rating real Baa1/BBB+)"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": "='Input sheet'!B27-0,015",
+  "reason": "Escenarios MCD: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!D55": {
+  "before": "=C55",
+  "after": "='Input sheet'!B29-0,015",
+  "reason": "Escenarios MCD: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": "='Input sheet'!B28",
+  "reason": "Escenarios MCD: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": "='Input sheet'!B27+0,01",
+  "reason": "Escenarios MCD: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!D106": {
+  "before": "=C106",
+  "after": "='Input sheet'!B29+0,01",
+  "reason": "Escenarios MCD: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": "='Input sheet'!B30+0,03",
+  "reason": "Escenarios MCD: orden Conservador < Base < Optimista"
+ },
+ "PE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "=0,78*MEDIAN(B19:E19)",
+  "reason": "Multiplo Base MCD: 0,78 x mediana 4 cierres (regla Calculadora)"
+ },
+ "EVEBITDA!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "=0,78*MEDIAN(B19:E19)",
+  "reason": "Multiplo Base MCD: 0,78 x mediana 4 cierres (regla Calculadora)"
+ },
+ "EVFCFF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "=0,78*MEDIAN(B19:E19)",
+  "reason": "Multiplo Base MCD: 0,78 x mediana 4 cierres (regla Calculadora)"
+ },
+ "PFCFE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "=0,78*MEDIAN(B19:E19)",
+  "reason": "Multiplo Base MCD: 0,78 x mediana 4 cierres (regla Calculadora)"
+ },
+ "POCF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "=0,78*MEDIAN(B19:E19)",
+  "reason": "Multiplo Base MCD: 0,78 x mediana 4 cierres (regla Calculadora)"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Defensiva",
+  "reason": "Tipo de empresa MCD; MOS 25% (hipotesis Estandar: moat claro, deuda investment grade)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.0825,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B49": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B50": {
+  "before": 0.2,
+  "after": 0.12,
+  "reason": "Supuestos MCD Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Resumen de Valoración!G4": {
+  "before": 0.35,
+  "after": 0.25,
+  "reason": "Tipo de empresa MCD; MOS 25% (hipotesis Estandar: moat claro, deuda investment grade)"
+ },
+ "Control de valoración!E5": {
+  "before": "",
+  "after": "Yahoo Finance / GOOGLEFINANCE (cierre NYSE 25-sep-2026)",
+  "reason": "Control de valoracion MCD"
+ },
+ "Control de valoración!E6": {
+  "before": "",
+  "after": "USD (millones; acciones en millones)",
+  "reason": "Control de valoracion MCD"
+ },
+ "Control de valoración!E7": {
+  "before": "",
+  "after": 46203,
+  "reason": "Control de valoracion MCD"
+ },
+ "Control de valoración!E8": {
+  "before": "",
+  "after": "SEC EDGAR: 10-K FY2025 y 10-Q 2T2026 (CIK 0000063908)",
+  "reason": "Control de valoracion MCD"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "McDonald's Corporation",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Chris Kempczinski — Presidente del Directorio y CEO (CEO desde nov-2019). CFO: Ian Borden.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Restaurantes de servicio rápido — franquiciador global (Damodaran: Restaurant/Dining)",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://corporate.mcdonalds.com  |  IR: https://investor.mcdonalds.com",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "McDonald's es la mayor cadena de restaurantes del mundo: más de 46.000 locales en más de 100 países, ~95% operados por franquiciados independientes. Su negocio real es inmobiliario y de marca: es dueña o arrendataria de largo plazo del terreno y el local, y cobra al franquiciado renta y regalías como porcentaje de sus ventas. Ingresos 2025: US$26.885M (US$16.548M de ingresos por franquicias y US$9.690M de ventas de locales propios); LTM a jun-2026: US$27.702M con margen operativo de 46,2%. Ventas del sistema del 2T2026: US$37.000M en el trimestre.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Estados Unidos",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "El mercado más grande y el más rentable (US$7.371M de ingresos por franquicias en 2025). Es también el foco del problema actual: ventas comparables de solo +0,8% en el 2T2026, con menos tráfico de clientes de bajos ingresos, presión de precios de la competencia y una estrategia de valor (McValue) que no logró recuperar visitas.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Mercados Internacionales Operados (IOM)",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "Reino Unido, Alemania, Francia, Canadá, Australia, Japón y otros mercados donde McDonald's opera o franquicia directamente (US$7.279M de ingresos por franquicias en 2025). Comparables +1,5% en el 2T2026. Aquí se concentra la mayoría de los locales propios que se van a refranquiciar.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Mercados de Licencia para el Desarrollo (IDL)",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "China, Medio Oriente, Latinoamérica (Arcos Dorados) y otros, operados por licenciatarios que ponen el capital y pagan regalías (US$1.898M de ingresos en 2025). Comparables +1,9% en el 2T2026. Es el motor de nuevas aperturas con poca inversión propia.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia: McDonald's > NEXT (Investor Day 23-sep-2026)",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Cuatro pilares (Menu, Consumer, Restaurant y People > NEXT): ganar 1,5pp de cuota en pollo y bebidas a 2030, ~250pb de eficiencia a nivel restaurante (~US$100.000 de caja anual por local en EE.UU.), subir la mezcla franquiciada de ~95% a ~98% a fines de 2028 y llevar el margen operativo ajustado a 'low-to-mid 50%' en 2030. Lo financia con ~US$8.500M de apoyo a franquiciados hasta 2036 (~US$5.000M a 2030) en rebajas de renta y capital.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Modelo de franquicia + inmueble propio",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "McDonald's cobra renta y regalías sobre las ventas del sistema, no sobre su propia operación: margen operativo de 46,2% (LTM) y flujo de caja libre de US$7.761M con un capex de US$3.586M. El inmueble le da control sobre la ubicación y un flujo parecido al de un REIT con reajuste por inflación.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Escala y datos imposibles de replicar",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Más de 70 millones de clientes al día, 17 productos que venden más de US$1.000M cada uno y cerca de 220 millones de miembros activos de su programa de lealtad en 70 mercados. Esa escala abarata compras, publicidad y tecnología frente a cualquier competidor.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Palancas propias para crecer el margen",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Refranquiciar (98% a fines de 2028), bajar el G&A de 2,2% a ~1,9% de las ventas del sistema en 2030 con IA (ArchIQ) y 2.100 aperturas netas previstas en 2026: el margen puede subir aunque las ventas comparables crezcan poco. Dividendo creciente 50 años seguidos, con payout objetivo de 50-60%.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Tráfico débil en EE.UU. y consumidor de menores ingresos",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Las comparables globales bajaron de +3,8% en el 1T2026 a +1,3% en el 2T2026 (EE.UU. +0,8%). La gerencia advirtió que el tráfico puede quedar plano si la inflación sigue alta. A esto se suman la guerra de precios del sector y el efecto de los fármacos GLP-1 en la frecuencia de visita.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Costo del apoyo a franquiciados",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "US$8.500M de rebajas de renta y capital hasta 2036 (US$5.000M a 2030). Se amortiza en ~10 años (plazo restante de cada contrato), así que el golpe al resultado es gradual, pero BMO estima una baja del EPS de ~1% en 2027-28 y de 2-3% en 2030, y el capex sube US$600-900M por año en 2027-28.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Apalancamiento y patrimonio negativo",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Deuda financiera de US$43.027M (incluye arrendamientos financieros) contra caja de US$822M, más ~US$14.700M de pasivos por arrendamientos operativos; patrimonio contable negativo (US$-1.791M) por décadas de recompras financiadas con deuda. Deuda neta/EBITDA de 2,8x (sin arrendamientos operativos), en la zona de cautela de la metodología.",
+  "reason": "Contenido cualitativo MCD"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": "N/D",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "N/D (patrimonio negativo)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "N/D (patrimonio negativo)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=E4/('Input sheet'!B29*100)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (sin guía de ingresos; el refranquiciamiento 2027-28 baja los ingresos contables)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (sin guía de EBITDA)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (sin guía de EPS; BMO estima -1% de EPS en 2027-28 por el apoyo a franquiciados)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (sin guía de EPS de largo plazo)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "='Trailing Valuation'!L7",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=-'Cash Flow Statement'!L32/'Income Statement'!L22",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=-'Cash Flow Statement'!L32/'Income Statement'!L26",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=IFERROR(((-'Cash Flow Statement'!K32/'Income Statement'!K26)/(-'Cash Flow Statement'!H32/'Income Statement'!H26))^(1/3)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "=IFERROR(((-'Cash Flow Statement'!K32/'Income Statement'!K26)/(-'Cash Flow Statement'!F32/'Income Statement'!F26))^(1/5)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "=IFERROR(((-'Cash Flow Statement'!K32/'Income Statement'!K26)/(-'Cash Flow Statement'!B32/'Income Statement'!B26))^(1/9)-1;\"\")",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "N/D (payout objetivo 50-60% del EPS, Investor Day)",
+  "reason": "Estadisticas MCD (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "McDonald's: un dueño de inmuebles y marca que sacrifica crecimiento contable de corto plazo para recuperar tráfico y subir el margen a 2030",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "McDonald's genera US$27.702M de ingresos LTM con un margen operativo de 46,2% porque cobra renta y regalías sobre ~US$140.000M de ventas del sistema. La acción cayó de US$305,63 (cierre 2025) a US$236,50 por tráfico débil en EE.UU. (comparables +0,8% en el 2T2026) y por el costo del plan NEXT anunciado en el Investor Day del 23-sep-2026: US$8.500M de apoyo a franquiciados hasta 2036. La historia Base: los ingresos contables caen en 2027-28 porque refranquicia el ~60% de sus locales propios (95% a 98% de mezcla franquiciada), el margen sube a 53% (algo por debajo del rango 'low-to-mid 50%' que guió la empresa, por la amortización del apoyo) y el EBIT crece ~4% anual, en línea con ventas del sistema de +4-5% (unidades ~2,5% + comparables bajas).",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 Base -2%: ventas del sistema +4-5% menos la baja contable del refranquiciamiento (ventas de locales propios que pasan a renta + regalías). Años 2-5 +2%: 2028 todavía refranquicia, 2029-30 ~+4,5%.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen Año 1 47,5% (LTM 46,2%, guía 2026 'mid-to-high 40%') que converge a 53% en 5 años: mezcla 98% franquiciada + G&A de 2,2% a 1,9% de las ventas del sistema, menos la amortización del apoyo a franquiciados.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva LTM 21,4% que converge a la marginal de 25% (EE.UU. federal + estatal, convención de Damodaran).",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,0x (años 1-5): capex ~US$3.000M/año + US$1.500-2.000M de apoyo NEXT frente a D&A ~US$2.300M. 1,2x (años 6-10): termina el capex extraordinario.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC ~25% hoy (NOPAT US$10.060M). Perpetuidad con ROIC de 12%: el moat de marca e inmueble se desvanece a la mitad, pero sigue por encima del costo de capital.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "WACC 7,9%: beta desapalancada global de Restaurant/Dining (0,66) reapalancada, ERP maduro 4,09%, UST 5,18%, deuda Baa1/BBB+. WACC terminal 8,25% (no rf + ERP = 9,27%: MCD ya es una empresa madura de bajo riesgo).",
+  "reason": "Historia MCD"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": -0.02,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Ventas del sistema +4-5% (unidades ~2,5% + comparables ~1,5-2%) menos la baja contable del refranquiciamiento de 95% a 98% a fines de 2028.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.475,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "LTM 46,2%; guía 2026 'mid-to-high 40%'; el G&A empieza a bajar en 2027 (Investor Day).",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.02,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "2028 todavía refranquicia (~-4%); 2029-2030 vuelve a ~+4,5% (unidades + comparables).",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.53,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Rango 'low-to-mid 50%' a 2030 (Investor Day), menos la amortización del apoyo a franquiciados (~10 años por contrato).",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "La meta de margen es a 2030.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.0,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Capex ~US$3.000M/año + US$1.500-2.000M de apoyo NEXT 2027-2030 frente a D&A de ~US$2.300M.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.2,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Termina el capex extraordinario de NEXT; el crecimiento vuelve a venir de aperturas financiadas en parte por licenciatarios.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos de los Múltiplos!C5": {
+  "before": "Base (mín. positivo 4 cierres)",
+  "after": "Base (0,78 × mediana 4 cierres, fijado a mano)",
+  "reason": "Evaluacion de multiplos MCD"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación MCD: los 4 últimos cierres (2022-2025) dieron múltiplos positivos, pero la regla nativa (mínimo positivo de 4 cierres) fijaba el Base en P/E 25,5x y EV/EBITDA 17,9x, muy por encima de lo que el mercado paga hoy (P/E LTM 19,2x; EV/EBITDA LTM 13,9x) y de la mediana de los peers (YUM, QSR, DPZ, CMG, WEN, SBUX: P/E ~18x, EV/EBITDA ~15x). Usarla suponía que la acción vuelve a los múltiplos de 2022-2025, justo cuando el crecimiento de tráfico se frenó y el plan NEXT recorta el EPS de 2027-2030. Por eso se fijó a mano (J19 de cada hoja) la regla de la Calculadora del Paso 5: Base = 0,78 × mediana de los 4 cierres (misma definición de cada hoja): P/E 20,0x, EV/EBITDA 14,2x, EV/FCFF 24,6x, P/FCFE 20,0x, P/OCF 16,7x, cerca de los múltiplos actuales. Conservador y Optimista quedan en ×0,9 y ×1,1. Con la regla nativa el precio objetivo ponderado Base sería ~20% más alto.",
+  "reason": "Evaluacion de multiplos MCD"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}
