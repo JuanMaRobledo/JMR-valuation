@@ -1,0 +1,757 @@
+{
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.5,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.6,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.14,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.58,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 3.0,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.5,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.16,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.09,
+  "reason": "Supuestos NVDA Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital NVDA (beta observado, calificacion real Aa1/AA)"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.9,
+  "reason": "Costo de capital NVDA (beta observado, calificacion real Aa1/AA)"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital NVDA (beta observado, calificacion real Aa1/AA)"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 10,
+  "reason": "Costo de capital NVDA (beta observado, calificacion real Aa1/AA)"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Aa1/AA",
+  "reason": "Costo de capital NVDA (beta observado, calificacion real Aa1/AA)"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.5,
+  "reason": "Escenarios NVDA: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.58,
+  "reason": "Escenarios NVDA: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.65,
+  "reason": "Escenarios NVDA: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": 0.06,
+  "reason": "Escenarios NVDA: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.22,
+  "reason": "Escenarios NVDA: orden Conservador < Base < Optimista"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "NVIDIA Corporation",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Jen-Hsun (Jensen) Huang — Fundador, Presidente y CEO desde 1993, miembro del Directorio desde entonces.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Semiconductores / Cómputo acelerado — diseño fabless de GPUs y sistemas para IA (Damodaran: Semiconductor)",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.nvidia.com  |  IR: https://investor.nvidia.com",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Nvidia diseña unidades de procesamiento gráfico (GPU) y sistemas completos de cómputo acelerado, con un modelo fabless (no fabrica sus propios chips: TSMC los produce). Reporta en dos segmentos contables (Compute & Networking y Graphics) que se desglosan por línea de producto en Data Center (GPUs e infraestructura de red para entrenar e inferir modelos de IA), Gaming (GeForce), Professional Visualization (Quadro/RTX profesional) y Automotive (plataformas de conducción asistida/autónoma). Ingresos LTM de US$302.970M con un margen operativo de 65,2%.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Data Center (GPUs e infraestructura de IA)",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "El segmento dominante: entrenamiento e inferencia de modelos de IA para hiperescaladores de nube, laboratorios de IA y empresas. Su moat central es CUDA, la plataforma de software propietaria que corre solo sobre GPUs de Nvidia y que casi todo el ecosistema de IA (frameworks, librerías, investigadores) usa como estándar de facto, generando altísimos costos de cambio para el cliente.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Gaming (GeForce)",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "El negocio histórico de Nvidia: GPUs para videojuegos en PC. Crece con normalidad de mercado maduro (un dígito alto), muy por debajo del ritmo de Data Center, pero sigue siendo una fuente de caja estable y de escala relevante en términos absolutos.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Professional Visualization y Automotive",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Segmentos más chicos: estaciones de trabajo profesionales (diseño, renderizado) y plataformas de conducción asistida/autónoma para fabricantes de autos. Crecimiento de doble dígito pero de escala menor frente a Data Center; opcionalidad de largo plazo más que motor de valoración actual.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Concentración de clientes e hiperescaladores",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Una porción muy significativa de los ingresos de Data Center proviene de un número reducido de hiperescaladores (los mismos que están construyendo sus propios ASICs de IA: TPU de Google, Trainium de Amazon, Maia de Microsoft, MTIA de Meta). Esta concentración de clientes es, a la vez, la fuente de la escala actual del negocio y su mayor riesgo estructural de mediano plazo.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "CUDA como foso de software, no solo de hardware",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "A diferencia de un fabricante de commodities, Nvidia vende una plataforma de software (CUDA) que lleva casi dos décadas siendo el estándar de la industria para computación paralela e IA. Migrar a un ASIC propio o a un competidor implica reescribir y revalidar software, un costo de cambio real que sostiene el poder de fijación de precios de Nvidia incluso frente a chips de la competencia con especificaciones técnicas competitivas.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Balance neto de caja y recompras",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Caja e inversiones de US$22.443M contra una deuda financiera total (corto plazo + largo plazo + arrendamientos) de US$11.040M: posición de caja neta positiva, calificación crediticia real Aa1/AA (muy sólida). Nvidia no paga un dividendo material y prioriza la recompra de acciones como mecanismo de retorno de capital.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Demanda de cómputo de IA con oferta restringida",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "La compañía describe su propio crecimiento reciente como 'limitado por la oferta' (supply-constrained), no por la demanda: la capacidad de fabricación de TSMC y de empaquetado avanzado (CoWoS/HBM) es hoy la restricción principal, no la cantidad de clientes dispuestos a comprar. Esto sostiene un poder de fijación de precios inusual para un fabricante de semiconductores.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "ASICs propios de los hiperescaladores",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Google (TPU), Amazon (Trainium), Microsoft (Maia) y Meta (MTIA) desarrollan sus propios aceleradores de IA para reducir su dependencia de Nvidia, con una tasa de crecimiento del mercado de ASICs a medida muy superior a la del mercado de GPUs de propósito general. El riesgo de cola de la tesis es que la sustitución de GPUs por ASICs propios en cargas de trabajo de inferencia erosione la cuota de mercado y el margen de Nvidia más rápido de lo que el crecimiento total del mercado de IA puede compensar.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Controles de exportación a China",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "El gobierno de EE.UU. restringe la venta de los chips de IA más avanzados de Nvidia a China desde 2022, con episodios adicionales de restricción/autorización parcial (H20) durante 2025-2026 que ya le costaron a la compañía miles de millones de dólares en ingresos no reconocidos y cargos por inventario. La política sigue siendo cambiante y es un riesgo regulatorio genuino, no solo coyuntural.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Concentración de clientes",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Una proporción muy alta de los ingresos de Data Center proviene de un puñado de hiperescaladores. Si alguno de ellos redujera de forma material sus compras (por migración a ASICs propios, por un recorte de capex de IA, o por saturación de capacidad), el impacto sobre los ingresos consolidados sería desproporcionado frente a un negocio con una base de clientes más diversificada.",
+  "reason": "Contenido cualitativo NVDA"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 40000,
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=E4/('Input sheet'!B29*100)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Income Statement'!L12/'Income Statement'!L16",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "N/D (Nvidia no paga un dividendo material; prioriza recompra de acciones)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "N/D (sin dividendo material)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "N/D (sin dividendo material)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "N/D (sin dividendo material)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "N/D (sin dividendo material)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "N/D (sin dividendo material)",
+  "reason": "Estadisticas NVDA (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Nvidia: el proveedor casi monopólico de cómputo de IA, con CUDA como foso de software y la concentración de clientes como principal riesgo",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Nvidia genera US$302.970M de ingresos LTM con un margen operativo de 65,2% y una posición de caja neta positiva (US$22.443M de caja e inversiones contra US$11.040M de deuda financiera total). El crecimiento se desaceleró de +65% (año fiscal 2026 completo) a +40% (LTM) a medida que la base de comparación crece, aunque Data Center siguió acelerando en el trimestre más reciente reportado en la hoja. La tesis Base asume una desaceleración deliberada frente al ritmo actual y frente a la propia guía de la compañía (que apunta a un crecimiento de ~70% para el próximo año fiscal, calificado por la propia empresa como 'limitado por la oferta'): no tomamos esa guía como caso central porque asume que la única restricción es la capacidad de fabricación, sin ceder nada de cuota a los ASICs propios de los hiperescaladores. El riesgo estructural de más largo plazo es que esa cesión de cuota sea más rápida de lo que el crecimiento total del mercado de cómputo de IA puede compensar.",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 Base 50%: desaceleración deliberada frente al crecimiento reciente de Data Center (+117% i.a. en el trimestre más reciente) y frente a la mitad de la propia guía de la compañía para el próximo año fiscal (~70%, 'limitado por la oferta').",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen operativo Año 1 en línea con el margen GAAP LTM real (65,2%), con el margen objetivo Base cediendo levemente (58%) por presión de precio de los ASICs propios de los hiperescaladores y mezcla de producto.",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal de largo plazo 16%: corporativa de EE.UU. (21%) neta de la tasa efectiva histórica más baja de Nvidia (créditos fiscales, mezcla geográfica).",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "3,0x: diseño fabless de chips (TSMC fabrica), relativamente liviano en capital fijo propio frente a un fabricante integrado.",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC muy por encima del costo de capital: el negocio de Data Center genera retornos excepcionales sobre el capital operativo mientras dure el poder de fijación de precios de CUDA.",
+  "reason": "Historia NVDA"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "13,4%: beta observado ~1,90 (Directo, muy por encima del beta de industria 'Semiconductor' de Damodaran, que promedia fabricantes mucho más diversificados y de menor crecimiento) x ERP de mercado maduro de EE.UU., calificación real Aa1/AA, deuda financiera neta negativa (posición de caja neta).",
+  "reason": "Historia NVDA"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.5,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Desaceleración deliberada frente al crecimiento reciente de Data Center (+117% i.a.) y frente a la mitad de la guía propia de la compañía para el próximo año fiscal (~70%).",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.6,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "En línea con el margen operativo GAAP LTM real (65,2%), sin asumir mayor expansión en el Año 1.",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.14,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "La demanda de cómputo de IA se mantiene fuerte, pero los ASICs propios de los hiperescaladores empiezan a restar crecimiento incremental.",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.58,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Leve compresión desde el margen LTM real (65,2%) por presión de precio de los ASICs propios de los hiperescaladores y mezcla hacia productos de menor margen relativo.",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 3.0,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Diseño fabless de chips (TSMC fabrica): relativamente liviano en capital fijo propio por dólar de ingreso incremental.",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.5,
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Años 6-10: algo más de intensidad de capital por inversión creciente en capacidad de empaquetado, redes propias y acuerdos de suministro estratégicos.",
+  "reason": "Recomendaciones NVDA"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación NVDA: los 4 últimos cierres fiscales dieron múltiplos positivos en las 5 hojas (utilidad positiva y creciente desde hace varios años, sin el patrón de signo cambiante de una empresa en transición a la rentabilidad), así que el mecanismo nativo (mínimo positivo de 4 años) se aplicó sin ajuste manual. OJO con la lectura de estos múltiplos: el mínimo de los últimos 4 cierres fiscales cae en el cierre de enero-2024 (EV/EBITDA 4,46x, P/E 5,05x), un punto donde el mercado todavía no había re-valuado la acción al ritmo en que creció la utilidad ese año (EBITDA +6,0x interanual en FY2024, muy por delante de la suba del precio de mercado de ese momento). Los cierres siguientes (FY2025 y FY2026) muestran múltiplos mucho más altos (EV/EBITDA 41,9x y 34,2x; P/E 47,9x y 38,0x), así que el mínimo de 4,46x/5,05x es un caso atípico del rango, no la norma. Usar ese mínimo como múltiplo objetivo para los próximos 3 años produce un precio implícito por EV/EBITDA, P/E, EV/FCFF, P/FCFE y P/OCF sistemáticamente muy por debajo del DCF (ver 'Resumen de Valoración': DCF Base US$237,60 vs. precio objetivo ponderado Base US$120,41, con el 60% del peso puesto en estos 5 múltiplos). Para NVDA, dado lo atípico de ese mínimo, el DCF es la lectura más confiable de las 6 metodologías; el precio objetivo ponderado debe leerse con ese sesgo a la baja en mente, no como un promedio neutral entre 6 métodos igualmente representativos.",
+  "reason": "Evaluacion de multiplos NVDA (actualizada)"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "NVDA: tipo de empresa Madura (utilidad positiva y creciente desde hace años, sin patron de signo cambiante)"
+ }
+}
