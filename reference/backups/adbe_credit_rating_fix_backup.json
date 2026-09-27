@@ -1,0 +1,12 @@
+{
+ "Cost of capital worksheet!B34": {
+  "before": "Synthetic Rating",
+  "after": "Actual Rating",
+  "reason": "Costo de deuda ADBE: calificacion real (Moody's A2 / S&P A+) en vez de la sintetica Aaa/AAA por cobertura de intereses (ver auditoria research v4)"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "Aaa/AAA",
+  "after": "A2/A+",
+  "reason": "Costo de deuda ADBE: calificacion real (Moody's A2 / S&P A+) en vez de la sintetica Aaa/AAA por cobertura de intereses (ver auditoria research v4)"
+ }
+}
