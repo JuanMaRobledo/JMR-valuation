@@ -1,0 +1,822 @@
+{
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Fecha del analisis 2026-09-25"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.05,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.125,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.06,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.14,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.4,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.4,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.25,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.12,
+  "reason": "Supuestos PAGS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital PAGS"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.3,
+  "reason": "Costo de capital PAGS"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital PAGS"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 3,
+  "reason": "Costo de capital PAGS"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital PAGS"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Ba1/BB+",
+  "reason": "Costo de capital PAGS"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.11,
+  "reason": "Escenarios PAGS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.14,
+  "reason": "Escenarios PAGS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.16,
+  "reason": "Escenarios PAGS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": 0.02,
+  "reason": "Escenarios PAGS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.09,
+  "reason": "Escenarios PAGS: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Financiera",
+  "reason": "Tipo de empresa PAGS"
+ },
+ "EVFCFF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L24",
+  "reason": "Ancla de multiplo EVFCFF = LTM (PAGS re-valuada en 2026)"
+ },
+ "POCF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L15",
+  "reason": "Ancla de multiplo POCF = LTM (PAGS re-valuada en 2026)"
+ },
+ "PE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Ancla de multiplo PE = LTM (PAGS re-valuada en 2026)"
+ },
+ "PFCFE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Ancla de multiplo PFCFE = LTM (PAGS re-valuada en 2026)"
+ },
+ "EVEBITDA!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Ancla de multiplo EVEBITDA = LTM (PAGS re-valuada en 2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "PagSeguro Digital Ltd.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Alexandre Magnani — CEO de PagBank; el fundador Luis Frias dejó la presidencia del Directorio el 21-ago-2026.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Pagos y banca digital para micro y pequeños comercios en Brasil (Damodaran: Financial Svcs. (Non-bank & Insurance))",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.pagbank.com.br  |  IR: https://investors.pagbank.com",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "PagSeguro (marca PagBank) procesa pagos con tarjeta para micro, pequeños y medianos comercios en Brasil y opera un banco digital con depósitos, crédito y servicios financieros. Ingresos y rendimientos de R$20.411M en 2025 (+8,5%), utilidad neta de R$2.118M, patrimonio de R$15.016M (jun-2026), ROAE de 15,6% y un índice de Basilea de 22,5% en el 2T 2026.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 20-F 2025 de PagSeguro Digital (presentado el 29-abr-2026, https://www.sec.gov/Archives/edgar/data/1712807/000155485526000826/pags-20251231.htm; instancia XBRL IFRS), estados interinos del 1S 2026 (6-K del 11-ago-2026, https://www.sec.gov/Archives/edgar/data/1712807/000155485526001791/MainDocument.htm) y comunicado de resultados del 2T 2026 (https://www.sec.gov/Archives/edgar/data/1712807/000155485526001793/MainDocument.htm); metas de dividendos 2027-2028 y recompra de US$150M (6-K del 01-sep-2026, https://www.sec.gov/Archives/edgar/data/1712807/000155485526001939/MainDocument.htm). R$ convertidos a US$ al promedio de cada año (flujos) y al cierre (saldos), yfinance BRL=X. Damodaran Online (ERP de Brasil 7,47%); UST 10 años y precio de PAGS vía yfinance (cierre del 25-sep-2026). Tratamiento de banco: EBIT = utilidad antes de impuestos, sin deuda financiera ni caja excedente (ver pos_pags.py).",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Pagos (adquirencia)",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "Terminales POS, tap-on-phone y pagos en línea para comercios chicos; ingresos por tasa de descuento y por anticipación de cobros (el comercio cobra antes a cambio de un costo financiero).",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Banca digital (PagBank)",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "Cuentas, tarjetas, inversiones y crédito para comercios y personas; depósitos de clientes de R$28.428M a fin de 2025 que fondean la operación a menor costo que la deuda mayorista.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Crédito",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Cartera en expansión disciplinada (préstamos con garantía de cobros, consignado, tarjetas); el gasto por pérdidas crediticias subió a R$129,6M en el 1S 2026 (R$48,9M un año antes).",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Capital y retorno al accionista",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Basilea 22,5% (rango objetivo 18-22%): dividendos (US$0,28/acción en sep-2026; meta de R$1.000M/año en 2027-2028) y recompras (R$1.330M en 2025; nuevo programa de US$150M).",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Ecosistema de pagos + banco con fondeo propio",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Los depósitos de clientes abaratan el fondeo de la anticipación de cobros: el costo financiero bajó en el 2T 2026 y el beneficio bruto creció 3%.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Retorno de capital muy alto frente a la valuación",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Dividendos, recompras (acciones promedio de 319,5M en 2024 a ~278M en el 1S 2026) y un P/E LTM de ~6x con P/VL ~0,9x.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Capital holgado",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Basilea 22,5%, por encima del rango objetivo: margen para crecer el crédito y seguir distribuyendo.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Competencia feroz en adquirencia y banca digital",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Stone, Nubank, Mercado Pago, Cielo, Rede y el PIX (pagos instantáneos gratuitos del Banco Central) presionan las tasas de descuento; los ingresos por transacciones cayeron de R$9.183M (2024) a R$8.159M (2025).",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Riesgo macro y de tasas en Brasil",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Tasas altas encarecen el fondeo y elevan la morosidad; el real volátil afecta el valor en US$.",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Riesgo de crédito y de gobierno",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Crédito en expansión en un ciclo difícil y salida del fundador y accionista controlador indirecto de la presidencia del Directorio (ago-2026).",
+  "reason": "Contenido cualitativo PAGS"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 8000,
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=IFERROR(E4/('Input sheet'!B29*100);\"\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "=IFERROR('Input sheet'!B16/'Input sheet'!B15;\"\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "=IFERROR('Income Statement'!L12/'Income Statement'!L16;\"\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<=0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "N/D",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=IFERROR(Dividendos!L4/'Input sheet'!D1;\"\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=Dividendos!L4",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!H4)^(1/3)-1;\"N/D\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!F4)^(1/5)-1;\"N/D\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!B4)^(1/9)-1;\"N/D\")",
+  "reason": "Estadisticas PAGS (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "PagBank: un banco digital de pagos rentable, con crecimiento bajo y valuado como si no creciera",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "PagSeguro gana ~R$2.100M por año con ROAE de ~15-16% y devuelve casi todo al accionista, pero su negocio original de adquirencia se achica por la competencia y el PIX, mientras el banco y el crédito crecen. La acción cotiza a ~US$9 (P/E ~6x, P/VL ~0,9x). El caso Base asume crecimiento de 5-6% (en US$) y un margen antes de impuestos de 14% sobre ingresos, con costo de capital de mercado brasileño.",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 5%, años 2-5 6%: banca y crédito compensan la caída de ingresos de adquirencia.",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen antes de impuestos 12,5% (LTM 12,6%); objetivo 14% con fondeo más barato vía depósitos.",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal 25% (efectiva LTM 17,3% por incentivos; nominal Brasil 34%).",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,4x: ingresos / patrimonio; crecer exige retener capital regulatorio (Basilea 18-22%).",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROAE ~15,6% (2T 2026), cercano al costo del capital propio en Brasil.",
+  "reason": "Historia PAGS"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Costo del capital propio: beta 1,3 x ERP de Brasil 7,47% + UST; sin deuda financiera (fondeo operativo).",
+  "reason": "Historia PAGS"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.05,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Ingresos 1S 2026 +1,8% en R$; en US$ el real más fuerte suma crecimiento.",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.125,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Utilidad antes de impuestos / ingresos LTM 12,6%.",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.06,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "6%: crecimiento nominal de Brasil con banca y crédito en expansión.",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.14,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "14%: ROAE objetivo de ~16% con fondeo de depósitos.",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.4,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "1,4x: ingresos por real de patrimonio (2025: R$20.411M / R$14.640M).",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.4,
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "1,4x.",
+  "reason": "Recomendaciones PAGS"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación PAGS (financiera): solo pesan P/E (35%), P/FCFE (20%) y P/OCF (5%) junto al DCF (40%); los múltiplos de EV no aplican a un banco. El flujo operativo de un banco incluye movimientos de depósitos y cartera (2024: -R$3.416M; 2025: +R$7.562M), así que P/OCF y P/FCFE son ruidosos. Se activó el override manual del bloque Base (columna J) = múltiplo LTM vivo (P/E ~6x), coherente con cómo el mercado valora hoy a las adquirentes brasileñas. OJO: P/FCFE da US$2,2-2,7 y se ordena al revés (Conservador > Optimista) porque el FCFE proyectado descuenta capex y capital de trabajo que en un banco son cartera; leerlo como no significativo (pesa 20% en el ponderado y lo sesga a la baja).",
+  "reason": "Evaluacion de multiplos PAGS"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

@@ -1,0 +1,822 @@
+{
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Fecha del analisis 2026-09-25"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.02,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.36,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.05,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.36,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.0,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.0,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.2,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.09,
+  "reason": "Supuestos ZTS Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital ZTS"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 0.9,
+  "reason": "Costo de capital ZTS"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital ZTS"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 8,
+  "reason": "Costo de capital ZTS"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital ZTS"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Baa2/BBB",
+  "reason": "Costo de capital ZTS"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.33,
+  "reason": "Escenarios ZTS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.36,
+  "reason": "Escenarios ZTS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.38,
+  "reason": "Escenarios ZTS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": -0.01,
+  "reason": "Escenarios ZTS: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.06,
+  "reason": "Escenarios ZTS: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa ZTS"
+ },
+ "EVFCFF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L24",
+  "reason": "Ancla de multiplo EVFCFF = LTM (ZTS re-valuada en 2026)"
+ },
+ "POCF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L15",
+  "reason": "Ancla de multiplo POCF = LTM (ZTS re-valuada en 2026)"
+ },
+ "PE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Ancla de multiplo PE = LTM (ZTS re-valuada en 2026)"
+ },
+ "PFCFE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Ancla de multiplo PFCFE = LTM (ZTS re-valuada en 2026)"
+ },
+ "EVEBITDA!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Ancla de multiplo EVEBITDA = LTM (ZTS re-valuada en 2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Zoetis Inc.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Kristin Peck — CEO desde enero de 2020.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Salud animal: medicamentos, vacunas y diagnósticos veterinarios (Damodaran: Drugs (Pharmaceutical))",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.zoetis.com  |  IR: https://investor.zoetis.com",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Zoetis es la mayor compañía de salud animal del mundo: vende medicamentos, vacunas y diagnósticos para mascotas (perros y gatos) y animales de producción (ganado, aves, cerdos, peces) en más de 100 países. Ingresos LTM de US$9.517M (2T 2026: US$2.468M, -0,2%), margen operativo de ~37% y flujo de caja libre de US$2.366M LTM, destinado a recompras (US$3.644M LTM) y dividendos (US$889M en 2025).",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: estados financieros del modelo (SEC EDGAR, XBRL, CIK 0001555280: 10-K 2025 presentado el 12-feb-2026, https://www.sec.gov/Archives/edgar/data/1555280/000155528026000011/zts-20251231.htm; 10-Q del 2T 2026 presentado el 06-ago-2026, https://www.sec.gov/Archives/edgar/data/1555280/000155528026000040/zts-20260630.htm); ingresos por segmento y especie, competencia en dermatología y parasiticidas, genéricos de Cerenia y Convenia y demanda colectiva del mismo 10-Q. EBIT reconstruido como utilidad antes de impuestos + intereses (Zoetis no reporta 'Operating income' en XBRL). Damodaran Online (industria 'Drugs (Pharmaceutical)'); UST 10 años y precio de ZTS vía yfinance (cierre del 25-sep-2026).",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Mascotas (Companion animal)",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "~68% de los ingresos: parasiticidas (Simparica Trio), dermatología (Apoquel, Cytopoint), dolor osteoartrítico (Librela, Solensia). En el 2T 2026 cayó 4,6% (US$1.708M) y 11% en EE.UU. por demanda más débil, competencia en dermatología y parasiticidas, genéricos de Cerenia y Convenia y menores ventas de Librela.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Animales de producción (Livestock)",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "US$731M en el 2T 2026 (+12%): vacunas y medicamentos para ganado bovino (demanda elevada por el brote del gusano barrenador del Nuevo Mundo), cerdos, aves y peces.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Segmento EE.UU.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "US$1.266M en el 2T 2026 (-7%): mascotas -US$132M, producción +US$42M; ganancia del segmento -10%.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Segmento Internacional",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "US$1.173M en el 2T 2026 (+8%; +5% operativo) por parasiticidas para mascotas y ganado.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Líder global con marcas veterinarias y relación directa con veterinarios",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Escala en I+D (US$722M LTM), fabricación y fuerza de ventas veterinaria; márgenes operativos de ~37% y brutos de ~72%.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Tendencia estructural de gasto en mascotas",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Más mascotas, que viven más y reciben más tratamientos; el gasto veterinario es menos sensible al ciclo que otros consumos.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Retorno al accionista a precios deprimidos",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Recompras de US$3.644M LTM (acciones de 448M a fines de 2024 a 413M) y dividendo creciente.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Competencia en sus franquicias clave",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Dermatología (Apoquel/Cytopoint) y Simparica Trio enfrentan competidores nuevos y sensibilidad de precio; Librela cae tras reportes de eventos adversos.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Genéricos y concentración en mascotas de EE.UU.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Cerenia y Convenia ya tienen competencia genérica; el segmento EE.UU. de mascotas cayó 11% en el 2T 2026.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Más deuda para recomprar",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Deuda de US$9.042M (US$6.570M en 2024) y demanda colectiva de accionistas sobre las declaraciones de desempeño y competencia de sus productos de mascotas.",
+  "reason": "Contenido cualitativo ZTS"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 13800,
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=IFERROR(E4/('Input sheet'!B29*100);\"\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "=IFERROR('Input sheet'!B16/'Input sheet'!B15;\"\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "=IFERROR('Income Statement'!L12/'Income Statement'!L16;\"\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<=0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "N/D",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=IFERROR(Dividendos!L4/'Input sheet'!D1;\"\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=Dividendos!L4",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!H4)^(1/3)-1;\"N/D\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!F4)^(1/5)-1;\"N/D\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!B4)^(1/9)-1;\"N/D\")",
+  "reason": "Estadisticas ZTS (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Zoetis: el líder de la salud animal pierde crecimiento en mascotas de EE.UU. y el mercado lo re-valúa a la mitad",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Zoetis creció 8% anual durante una década con márgenes de ~37%, y el mercado le pagaba 30-57x utilidad. En 2025-2026 la competencia en dermatología y parasiticidas, los genéricos y la debilidad de Librela frenaron el crecimiento (LTM +0,5%) y la acción cayó a ~US$71 (P/E ~12x). El caso Base asume un año de estancamiento (2%) y recuperación a 5% en los años 2-5 por nuevos productos y crecimiento internacional, con margen estable de 36%.",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 2% (LTM +0,5%; 2T -0,2%), años 2-5 5%: estabilización de mascotas en EE.UU. y crecimiento internacional.",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen operativo 36% (LTM 36,9%), estable.",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal 20% (efectiva ~20%).",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,0x: capex neto de depreciación bajo; I+D va como gasto.",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC alto (>20%) incluso con goodwill.",
+  "reason": "Historia ZTS"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Beta 0,9 (Direct Input), ERP maduro, deuda Baa2/BBB a 8 años.",
+  "reason": "Historia ZTS"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.02,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "LTM +0,5%; 2T 2026 -0,2% (mascotas -4,6%, producción +12%).",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.36,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen operativo LTM 36,9% (EBIT reconstruido).",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.05,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "5%: mercado de salud animal de un dígito medio; Zoetis pierde algo de participación en dermatología.",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.36,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "36%: se mantiene; la presión de precio compensa el apalancamiento operativo.",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.0,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "2,0x: capex de US$521M LTM con D&A de ~US$480M.",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.0,
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "2,0x.",
+  "reason": "Recomendaciones ZTS"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación ZTS: tras reconstruir el EBIT (antes era 0), los cierres 2021-2025 dan P/E de 21-57x y EV/EBITDA de 15-38x. Con la acción en ~US$71 (P/E LTM ~12x, EV/EBITDA ~9x) se activó el override manual del bloque Base (columna J) = múltiplo LTM vivo: supone que el mercado no vuelve a pagar la prima de 'compounder defensivo' mientras no se estabilice el negocio de mascotas en EE.UU.",
+  "reason": "Evaluacion de multiplos ZTS"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

@@ -1,0 +1,842 @@
+{
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Fecha del analisis 2026-09-25"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.13,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.045,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.11,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.08,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.4,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.6,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.25,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.09,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B16": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+  "after": 248,
+  "reason": "Supuestos SHAK Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital SHAK"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.6,
+  "reason": "Costo de capital SHAK"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital SHAK"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 2,
+  "reason": "Costo de capital SHAK"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital SHAK"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Ba1/BB+",
+  "reason": "Costo de capital SHAK"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.06,
+  "reason": "Escenarios SHAK: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.08,
+  "reason": "Escenarios SHAK: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.1,
+  "reason": "Escenarios SHAK: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": 0.09,
+  "reason": "Escenarios SHAK: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.16,
+  "reason": "Escenarios SHAK: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Crecimiento",
+  "reason": "Tipo de empresa SHAK"
+ },
+ "PE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": 35,
+  "reason": "Multiplo Base PE manual (SHAK)"
+ },
+ "EVEBITDA!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": 15,
+  "reason": "Multiplo Base EVEBITDA manual (SHAK)"
+ },
+ "POCF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": 12,
+  "reason": "Multiplo Base POCF manual (SHAK)"
+ },
+ "PFCFE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": 30,
+  "reason": "Multiplo Base PFCFE manual (SHAK)"
+ },
+ "EVFCFF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": 30,
+  "reason": "Multiplo Base EVFCFF manual (SHAK)"
+ },
+ "Financials Multiples!E11": {
+  "before": "=AVERAGE(B11:D11)",
+  "after": "=D11",
+  "reason": "Ajuste puntual Financials Multiples (SHAK, ver pos_shak.py)"
+ },
+ "Financials Multiples!E50": {
+  "before": "=AVERAGE(B50:D50)",
+  "after": "=D50",
+  "reason": "Ajuste puntual Financials Multiples (SHAK, ver pos_shak.py)"
+ },
+ "Financials Multiples!E90": {
+  "before": "=AVERAGE(B90:D90)",
+  "after": "=D90",
+  "reason": "Ajuste puntual Financials Multiples (SHAK, ver pos_shak.py)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Shake Shack Inc.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Rob Lynch — CEO desde mayo de 2024 (antes CEO de Papa John's).",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Restaurantes 'fine casual' de hamburguesas (Damodaran: Restaurant/Dining)",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.shakeshack.com  |  IR: https://investor.shakeshack.com",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Shake Shack opera hamburgueserías 'fine casual': al 1-jul-2026 tenía 703 Shacks, 406 propios y 297 licenciados (aeropuertos, estadios y socios internacionales). Ingresos LTM US$1.552M; en el 2T 2026 facturó US$417,6M (+17,2%) con ventas same-Shack +3,5% y 61 Shacks propios nuevos en 12 meses. El margen operativo GAAP es bajo (3,6% LTM) por preaperturas y gastos generales.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: estados financieros del modelo (SEC EDGAR, XBRL, CIK 0001620533: 10-K 2025 presentado el 26-feb-2026, https://www.sec.gov/Archives/edgar/data/1620533/000162053326000018/shak-20251231.htm; 10-Q del 2T 2026 presentado el 05-ago-2026, https://www.sec.gov/Archives/edgar/data/1620533/000162053326000034/shak-20260701.htm); ingresos, ventas same-Shack, aperturas, número de Shacks y notas convertibles del mismo 10-Q; Damodaran Online (industria 'Restaurant/Dining'); UST 10 años y precio de SHAK vía yfinance (cierre del 25-sep-2026).",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Shacks propios (Company-operated)",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "~97% de los ingresos: US$757,5M de ventas en el 1S 2026 (+16,0%). El crecimiento viene de aperturas (61 nuevas en 12 meses, US$47,2M de aporte) y de ventas same-Shack (+3,5%).",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Licencias",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "297 Shacks operados por licenciatarios en EE.UU. (aeropuertos, estadios, rutas) y en el exterior (Asia, Medio Oriente, Europa); Shake Shack cobra un % de sus ventas: US$25,7M en el 1S 2026, casi todo margen.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Canales digitales y drive-thru",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Pedidos por app/kiosco y formatos con drive-thru para acercarse a la conveniencia de la comida rápida tradicional.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Financiamiento",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Notas convertibles de US$250M al 0% con vencimiento el 1-mar-2028 y ~US$308M de caja; sin dividendos ni recompras.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Crecimiento de unidades de doble dígito",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "~15% de crecimiento anual de Shacks propios con una marca premium reconocida; los ingresos crecieron 15-21% por año desde 2022.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Apalancamiento operativo en marcha",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Margen operativo GAAP de 0,2% (2024) a 4,3% (2025) bajo la nueva gerencia: más eficiencia laboral y menos gasto general por Shack.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Regalías de licencias con capital ajeno",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Casi 300 Shacks licenciados aportan ingresos de alto margen sin capex propio.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Rentabilidad todavía baja",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Margen operativo GAAP de 3,6% LTM y flujo de caja libre negativo LTM (capex de US$203M vs flujo operativo de US$192M): el crecimiento consume toda la caja.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Precio premium frente a un consumidor presionado",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Ticket alto frente a la comida rápida tradicional; una recesión golpearía el tráfico.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Escala y dilución potencial",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Empresa chica frente a los líderes; las convertibles 2028 pueden diluir o requerir refinanciamiento.",
+  "reason": "Contenido cualitativo SHAK"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 12800,
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=IFERROR(E4/('Input sheet'!B29*100);\"\")",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "=IFERROR('Input sheet'!B16/'Input sheet'!B15;\"\")",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "=IFERROR('Income Statement'!L12/'Income Statement'!L16;\"\")",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<=0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "N/D",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "N/D (Shake Shack no paga dividendo)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "N/D (Shake Shack no paga dividendo)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "N/D (Shake Shack no paga dividendo)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "N/D (Shake Shack no paga dividendo)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "N/D (Shake Shack no paga dividendo)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "N/D (Shake Shack no paga dividendo)",
+  "reason": "Estadisticas SHAK (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Shake Shack: marca premium con crecimiento de unidades de doble dígito que recién empieza a ganar margen",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Shake Shack crece 15-17% por año abriendo Shacks propios y licenciados, pero durante años su margen operativo GAAP fue casi nulo. Desde 2024 la nueva gerencia lo llevó a 4,3% (2025). El caso Base asume crecimiento de 13% el Año 1 y 11% en los años 2-5 (aperturas + same-Shack de un dígito bajo) y que el margen operativo GAAP converge a 8% a medida que el gasto general se diluye y maduran los Shacks nuevos.",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 13% (2T 2026 +17,2%), años 2-5 11%: aperturas de ~12-14% anual + same-Shack de un dígito bajo.",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen GAAP Año 1 4,5% (LTM 3,6%; 2025 4,3%); objetivo 8% por dilución de gastos generales y preaperturas.",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal 25% (federal + estatal).",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,4x / 1,6x: cada Shack nuevo requiere capex propio (US$203M LTM); el alquiler va como gasto operativo.",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC bajo hoy (margen chico), creciente si el margen converge.",
+  "reason": "Historia SHAK"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Beta 1,6 (Direct Input), ERP maduro, convertibles como deuda (Ba1/BB+).",
+  "reason": "Historia SHAK"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.13,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "2T 2026: ingresos +17,2%; same-Shack +3,5%; 61 aperturas propias en 12 meses.",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.045,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen operativo GAAP LTM 3,6%; 2025 4,3%.",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.11,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "11%: aperturas de doble dígito bajo sobre una base más grande.",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.08,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "8%: margen a nivel Shack ~20% menos gastos generales, preaperturas y D&A.",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.4,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "1,4x: capex de construcción de Shacks nuevos.",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.6,
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "1,6x: mayor peso de licencias (sin capex propio).",
+  "reason": "Recomendaciones SHAK"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación SHAK: la utilidad GAAP fue negativa o casi nula entre 2020 y 2024, así que los múltiplos históricos (P/E de -319x a 574x, EV/FCFF > 200x) no tienen sentido como ancla; el mecanismo nativo daba precios de US$750-1.900 por acción. Se activó un override manual en el bloque Base (columna J): P/E 35x, EV/EBITDA 15x, P/OCF 12x, P/FCFE 30x, EV/FCFF 30x (múltiplos de una cadena de fast-casual en crecimiento de doble dígito, por debajo de CMG y descontados por el margen todavía bajo). Además, en 'Financials Multiples' el % de 'Interest / Other' sobre EBIT usa solo 2025 (16%) en vez del promedio 2023-2025 (193%, distorsionado por EBIT casi nulo).",
+  "reason": "Evaluacion de multiplos SHAK"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

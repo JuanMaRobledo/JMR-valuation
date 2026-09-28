@@ -1,0 +1,797 @@
+{
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Fecha del analisis 2026-09-25"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.11,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.28,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.09,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.32,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.5,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.0,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.23,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.09,
+  "reason": "Supuestos INTU Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital INTU"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.2,
+  "reason": "Costo de capital INTU"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital INTU"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 7,
+  "reason": "Costo de capital INTU"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital INTU"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "A3/A-",
+  "reason": "Costo de capital INTU"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.28,
+  "reason": "Escenarios INTU: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.32,
+  "reason": "Escenarios INTU: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.36,
+  "reason": "Escenarios INTU: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": 0.06,
+  "reason": "Escenarios INTU: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.14,
+  "reason": "Escenarios INTU: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Software",
+  "reason": "Tipo de empresa INTU"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Intuit Inc.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Sasan K. Goodarzi — Presidente y CEO desde enero de 2019.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Software de gestión financiera para consumidores, pymes y contadores (Damodaran: Software (System & Application))",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.intuit.com  |  IR: https://investors.intuit.com",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Intuit es una plataforma de tecnología financiera que atiende a ~93 millones de consumidores, pequeñas y medianas empresas y contadores con TurboTax, Credit Karma, QuickBooks, Mailchimp, Intuit Enterprise Suite e Intuit Accountant Suite. En el año fiscal 2026 (cerrado el 31-jul-2026) facturó US$21.448M (+14%), con un margen operativo GAAP de 27,4% y un flujo de caja libre de US$8.663M (10-K FY2026).",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: estados financieros del modelo (SEC EDGAR, XBRL, CIK 0000896878: 10-K del año fiscal 2026 cerrado el 31-jul-2026, presentado el 09-sep-2026, https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm); segmentos, empleados y plan de reestructuración 2026 del mismo 10-K; Damodaran Online (industria 'Software (System & Application)', ERP de mercado maduro); UST 10 años y precio de INTU vía yfinance (cierre del 25-sep-2026). Sin guía cuantitativa FY2027 verificada en esta hoja.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Global Business Solutions (QuickBooks, Mailchimp)",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "US$12.864M de ingresos FY2026 (+16%), 60% del total. El Online Ecosystem creció 19% (QuickBooks Online Accounting +23% por precio, clientes y mezcla; servicios de pagos, nómina y dinero +16%). Desde el 1-ago-2026 Mailchimp se reporta como segmento separado.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Consumer: TurboTax",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "US$5.296M (+7%): preparación de impuestos en EE.UU. y Canadá, hazlo-tú-mismo y asistida por expertos, más productos de dinero (adelanto de reembolso). Creció por el segmento asistido pese a menos declaraciones federales (unidades) que el año anterior.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Consumer: Credit Karma",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "US$2.641M (+20%): plataforma de finanzas personales que cobra por acción/clic a bancos y aseguradoras (préstamos personales, tarjetas, seguros). Es el negocio más cíclico del grupo: depende del apetito de crédito de sus socios financieros.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Consumer: ProTax y márgenes por segmento",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "ProTax (software para contadores: Lacerte, ProSeries, ProConnect) US$647M (+4%). Margen de segmento (antes de corporativo y compensación en acciones): 77% en Global Business Solutions y 73% en Consumer.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Datos y costos de cambio en el flujo financiero de la pyme",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "QuickBooks concentra la contabilidad, la nómina y los pagos de millones de pequeñas empresas y sus contadores; migrar implica rehacer años de historia contable y procesos. Eso sostiene aumentos de precio efectivos (QuickBooks Online Accounting +23% en FY2026) con baja pérdida de clientes.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Motor de caja y retorno al accionista",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Flujo de caja libre de US$8.663M en FY2026 (40% de los ingresos) y recompras de US$5.412M más US$1.347M de dividendos; el Directorio sumó US$8.000M de autorización de recompra en mayo de 2026.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Monetización de IA sobre una base de datos propia",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "La compañía integra agentes de IA en QuickBooks, TurboTax y Credit Karma sobre datos financieros propios de sus usuarios; si esa capa eleva el ingreso promedio por cliente (pagos, nómina, mid-market con Intuit Enterprise Suite), el crecimiento de doble dígito puede sostenerse varios años.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Desintermediación por IA generativa",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "El mercado re-valuó con fuerza al software en 2026 (la acción pasó de ~US$785 al cierre fiscal 2025 a ~US$276): el temor es que asistentes de IA de propósito general abaraten la preparación de impuestos y la contabilidad básica y erosionen el poder de precio de TurboTax y QuickBooks.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Ciclicidad de Credit Karma y regulación del crédito",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Credit Karma depende de la originación de préstamos y tarjetas de terceros; una recesión o un endurecimiento del crédito lo afecta directamente (en FY2023 cayó 11%). Además, programas públicos de declaración gratuita (IRS Direct File) y la regulación de datos de consumidores son riesgos recurrentes.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Compensación en acciones y adquisiciones costosas",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "La compensación en acciones fue US$2.056M (9,6% de los ingresos) y el balance carga US$18.623M de goodwill e intangibles (Credit Karma, Mailchimp). El retorno sobre el capital invertido total es mucho menor que el de los segmentos orgánicos.",
+  "reason": "Contenido cualitativo INTU"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 18600,
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=IFERROR(E4/('Input sheet'!B29*100);\"\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "=IFERROR('Input sheet'!B16/'Input sheet'!B15;\"\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "=IFERROR('Income Statement'!L12/'Income Statement'!L16;\"\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<=0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "N/D",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "=IFERROR(Dividendos!L4/'Input sheet'!D1;\"\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "=Dividendos!L5",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "=Dividendos!L4",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!H4)^(1/3)-1;\"N/D\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!F4)^(1/5)-1;\"N/D\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "=IFERROR((Dividendos!K4/Dividendos!B4)^(1/9)-1;\"N/D\")",
+  "reason": "Estadisticas INTU (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Intuit: el sistema operativo financiero de la pyme y del contribuyente, re-valuado por el temor a la IA",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Intuit creció 14% en FY2026 (US$21.448M) con un margen operativo GAAP de 27,4% y un flujo de caja libre de US$8.663M, mientras la acción caía a ~US$276 (P/E LTM ~17x, frente a 57x al cierre de FY2025). El caso Base asume que la desaceleración es gradual (11% el Año 1, 9% en los años 2-5, por debajo del 14% reciente y del 15-16% de GBS) y que el margen GAAP sube a 32% a medida que se diluye la compensación en acciones y maduran los ahorros del plan de reestructuración 2026. La historia no depende de expansión múltiple sino de que la IA sea una herramienta de monetización para Intuit y no un sustituto de sus productos.",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 11% (FY2026 +14%; GBS +16%, Consumer +11%), años 2-5 9%: desaceleración gradual por la base más grande y la competencia de IA.",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen GAAP Año 1 28% (FY2026 27,4% con US$293M de cargos de reestructuración); objetivo 32% por menor peso de la compensación en acciones.",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal 23%: federal 21% + estatal neta; la efectiva FY2026 fue 24,1%.",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,5x: software, poco capital operativo por dólar incremental (el capital invertido contable está inflado por el goodwill de adquisiciones).",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC operativo muy alto en los segmentos orgánicos; el ROIC sobre capital total incluye ~US$18.600M de goodwill/intangibles.",
+  "reason": "Historia INTU"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Beta observado 1,2 (Direct Input) x ERP de mercado maduro; deuda con calificación real A3/A-; deuda neta ~US$1.100M.",
+  "reason": "Historia INTU"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.11,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "FY2026 +14%; se asume desaceleración a 11% por base más grande y competencia de asistentes de IA.",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.28,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen operativo GAAP FY2026 27,4% (incluye US$293M de reestructuración no recurrente).",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.09,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Converge desde el 11% del Año 1 hacia un dígito alto: GBS sigue creciendo por precio/mezcla; TurboTax madura.",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.32,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "32% GAAP: el margen de segmentos (77% GBS, 73% Consumer) deja espacio si la compensación en acciones y el gasto corporativo crecen menos que los ingresos.",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.5,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "2,5x: negocio de software, bajo capex (US$175M en FY2026) y capital de trabajo negativo.",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.0,
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "2,0x: algo más de inversión en infraestructura de IA y adquisiciones selectivas.",
+  "reason": "Recomendaciones INTU"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación INTU: el ancla nativa (mínimo positivo de los últimos 4 cierres fiscales) cae en el cierre de FY2026 (jul-2026), después del derrumbe de la acción: P/E ~19x, EV/EBITDA ~13x y P/FCF ~10x, contra 57x/40x/36x un año antes. Es el múltiplo más bajo de toda la historia disponible (10 años), así que los 5 métodos de múltiplos suponen que la re-valuación de 2026 es permanente. Es una lectura conservadora pero coherente con el cambio de percepción del mercado sobre el software frente a la IA; no se ajustó a mano.",
+  "reason": "Evaluacion de multiplos INTU"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

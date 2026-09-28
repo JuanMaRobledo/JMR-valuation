@@ -1,0 +1,822 @@
+{
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46290,
+  "reason": "Fecha del analisis 2026-09-25"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.05,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.105,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.05,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.125,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 3.5,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 3.0,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.24,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B46": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Input sheet!B47": {
+  "before": "=B36",
+  "after": 0.09,
+  "reason": "Supuestos EPAM Base (ver hoja Tesis de Inversión y Supuestos)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital EPAM"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.3,
+  "reason": "Costo de capital EPAM"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Country of Incorporation",
+  "reason": "Costo de capital EPAM"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 5,
+  "reason": "Costo de capital EPAM"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital EPAM"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "A2/A",
+  "reason": "Costo de capital EPAM"
+ },
+ "Valuation output!C45": {
+  "before": "=B6",
+  "after": 0.095,
+  "reason": "Escenarios EPAM: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C46": {
+  "before": "='Input sheet'!B30",
+  "after": 0.125,
+  "reason": "Escenarios EPAM: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C47": {
+  "before": "='Input sheet'!B30+0,05",
+  "after": 0.15,
+  "reason": "Escenarios EPAM: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C55": {
+  "before": "=MIN('Input sheet'!B27;'Input sheet'!B29)-0,015",
+  "after": 0.01,
+  "reason": "Escenarios EPAM: orden Conservador < Base < Optimista"
+ },
+ "Valuation output!C106": {
+  "before": "=MAX('Input sheet'!B27;'Input sheet'!B29)+0,01",
+  "after": 0.09,
+  "reason": "Escenarios EPAM: orden Conservador < Base < Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa EPAM"
+ },
+ "EVFCFF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L24",
+  "reason": "Ancla de multiplo EVFCFF = LTM (EPAM re-valuada en 2026)"
+ },
+ "POCF!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L15",
+  "reason": "Ancla de multiplo POCF = LTM (EPAM re-valuada en 2026)"
+ },
+ "PE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Ancla de multiplo PE = LTM (EPAM re-valuada en 2026)"
+ },
+ "PFCFE!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Ancla de multiplo PFCFE = LTM (EPAM re-valuada en 2026)"
+ },
+ "EVEBITDA!J19": {
+  "before": "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Ancla de multiplo EVEBITDA = LTM (EPAM re-valuada en 2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "EPAM Systems, Inc.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Balazs Fejes — CEO y Presidente desde septiembre de 2025 (sucedió al fundador Arkadiy Dobkin).",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Servicios de ingeniería de software y consultoría digital (Damodaran: Computer Services)",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.epam.com  |  IR: https://investors.epam.com",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "EPAM presta servicios de ingeniería de software, nube, datos e IA a grandes empresas, con centros de entrega en Europa Central y del Este, Asia y América Latina. Ingresos LTM de US$5.617M (2T 2026: US$1.415M, +4,5%), margen operativo GAAP de 10,0% y caja neta: sin deuda financiera material y US$789M de caja.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: estados financieros del modelo (SEC EDGAR, XBRL, CIK 0001352010: 10-K 2025 presentado el 26-feb-2026, https://www.sec.gov/Archives/edgar/data/1352010/000135201026000015/epam-20251231.htm; 10-Q del 2T 2026 presentado el 06-ago-2026, https://www.sec.gov/Archives/edgar/data/1352010/000135201026000046/epam-20260630.htm); ingresos trimestrales, segmento Europa, programa de recompra de US$1.000M (oct-2025) y exposición a Ucrania del mismo 10-Q; Damodaran Online (industria 'Computer Services'); UST 10 años y precio de EPAM vía yfinance (cierre del 25-sep-2026).",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Norteamérica",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "Aproximadamente la mitad de los ingresos: servicios de ingeniería para software, servicios financieros, salud y retail. Fue la región más afectada por el recorte de proyectos discrecionales desde 2023.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Europa",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "US$622,5M en el 2T 2026 (+10,0% i.a.; US$1.227M en el 1S, +12,5%), con aporte de adquisiciones y moneda más fuerte.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Mercados de crecimiento y entrega",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Centros de entrega fuera de Rusia/Bielorrusia tras 2022; Ucrania sigue siendo una base relevante de profesionales (10-Q: activos operativos y compromiso humanitario de US$100M).",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Adquisiciones recientes",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Goodwill de US$1.182M-1.211M tras las compras de 2024-2025 (NEORIS en América Latina, First Derivative en servicios financieros), que explican parte del +15,4% de 2025.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Ingeniería de alto valor y demanda de IA aplicada",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "EPAM se posiciona como integrador de IA generativa y agentes para grandes empresas; los proyectos de modernización de datos y nube son prerrequisito para usar IA.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Balance sin deuda y recompras",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Caja neta y un programa de recompra de US$1.000M (oct-2025): US$715M recomprados LTM, reduciendo las acciones de 57M (2024) a 52M.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Valuación comprimida",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "P/E LTM ~15x y EV/EBITDA ~7x, frente a 30-80x de utilidad en los cierres de 2019-2025.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Deflación de horas facturables por IA",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Si la IA generativa reduce las horas de programación necesarias por proyecto, el modelo de facturación por tiempo y materiales pierde volumen y precio.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Márgenes en baja",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Margen bruto de 36,5% (2016) a 29,4% LTM y margen operativo GAAP de 14,4% (2021) a 10,0%: presión de precios y costos de reubicación de talento.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Riesgo geopolítico y de ejecución",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Exposición a Ucrania y a Europa del Este, y un nuevo CEO tras la salida del fundador en 2025.",
+  "reason": "Contenido cualitativo EPAM"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 61000,
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L5",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "=PE!F19",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "=IFERROR(E4/('Input sheet'!B29*100);\"\")",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E57;\"\")",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "N/D",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "='Input sheet'!B16-'Input sheet'!B19",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "=IFERROR('Input sheet'!B16/'Input sheet'!B15;\"\")",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "=IFERROR('Income Statement'!L12/'Income Statement'!L16;\"\")",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=IF('Income Statement'!H3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=IF('Income Statement'!F3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=IF('Income Statement'!B3<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "=IF('Income Statement'!H24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!H24)^(1/3)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "=IF('Income Statement'!F24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!F24)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "=IF('Income Statement'!B24<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K24/'Income Statement'!B24)^(1/9)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "=IF('Cash Flow Statement'!F36<=0;\"N/A (base negativa)\";IFERROR(('Cash Flow Statement'!K36/'Cash Flow Statement'!F36)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=IF('Income Statement'!F26<=0;\"N/A (base negativa)\";IFERROR(('Income Statement'!K26/'Income Statement'!F26)^(1/5)-1;\"\"))",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "N/D (guía externa; sin dato verificado para esta empresa)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "N/D",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": "N/D (EPAM no paga dividendo)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": "N/D (EPAM no paga dividendo)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": "N/D (EPAM no paga dividendo)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "N/D (EPAM no paga dividendo)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "N/D (EPAM no paga dividendo)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "N/D (EPAM no paga dividendo)",
+  "reason": "Estadisticas EPAM (formulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "EPAM: ingeniería de software de primera línea frente a la deflación de horas por IA",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "EPAM creció a más de 20% anual durante una década hasta 2022; desde entonces la salida de Rusia/Bielorrusia, el recorte de proyectos discrecionales y la llegada de la IA generativa bajaron su crecimiento a un dígito y su margen operativo GAAP a 10%. La acción cayó de US$668 (2021) a ~US$108. El caso Base asume crecimiento de 5% y una leve recuperación del margen a 12,5%, con la IA como fuente de proyectos nuevos que compensa la menor intensidad de horas.",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "5% años 1-5: 1S 2026 +6% (con adquisiciones), 2T +4,5%.",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Margen GAAP Año 1 10,5% (LTM 10,0%); objetivo 12,5% (sin volver al 14% de 2020-2021).",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa marginal 24% (efectiva LTM 26,8%).",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "3,5x / 3,0x: servicios profesionales, poco capital fijo; el capital es talento y capital de trabajo.",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC operativo alto (poco capital), menor con el goodwill de las compras recientes.",
+  "reason": "Historia EPAM"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Beta 1,3 (Direct Input), ERP maduro; sin deuda financiera material.",
+  "reason": "Historia EPAM"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.05,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Ingresos 2T 2026 +4,5% i.a.; 1S +6,0% (US$2.815M).",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.105,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen operativo GAAP LTM 10,0%.",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.05,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "5%: gasto en servicios de TI de un dígito medio, con la IA como fuente de proyectos y de deflación de horas.",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.125,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "12,5%: recuperación parcial con utilización y precios estables; sin volver a 14%.",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Horizonte estándar de convergencia del modelo.",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 3.5,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "3,5x: bajo capex (US$56M LTM).",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 3.0,
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "3,0x: más inversión en adquisiciones pequeñas y plataformas de IA.",
+  "reason": "Recomendaciones EPAM"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Evaluación: (completar al analizar el ticker)",
+  "after": "Evaluación EPAM: los cierres 2021-2025 dan P/E de 30-82x y EV/EBITDA de 15-59x, múltiplos de una empresa de crecimiento de 20%+. Con la acción en ~US$108 (P/E LTM ~15x, EV/EBITDA ~7x) se activó el override manual del bloque Base (columna J) = múltiplo LTM vivo: supone que el mercado sigue descontando el riesgo de la IA sobre el modelo de horas facturables.",
+  "reason": "Evaluacion de multiplos EPAM"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}
