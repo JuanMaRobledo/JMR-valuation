@@ -78,7 +78,7 @@ CUALI = dict(
          "contabilidad básica y erosionen el poder de precio de TurboTax y QuickBooks."),
         ("Ciclicidad de Credit Karma y regulación del crédito",
          "Credit Karma depende de la originación de préstamos y tarjetas de terceros; una recesión o un endurecimiento "
-         "del crédito lo afecta directamente (en FY2023 cayó 11%). Además, programas públicos de declaración gratuita "
+         "del crédito lo afecta directamente. Además, programas públicos de declaración gratuita "
          "(IRS Direct File) y la regulación de datos de consumidores son riesgos recurrentes."),
         ("Compensación en acciones y adquisiciones costosas",
          "La compensación en acciones fue US$2.056M (9,6% de los ingresos) y el balance carga US$18.623M de goodwill e "
