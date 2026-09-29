@@ -86,6 +86,28 @@ def mapping(old_rec: dict, new_lv: dict, old_rows: dict[str, list[str]]) -> dict
     return {a: b for a, b in out.items() if a != b}
 
 
+def fy3_mapping(old_rec: dict, new_rec: dict) -> dict[str, str]:
+    """Cifras FY+3: precio por método y escenario, ponderado, zonas y precio con MOS."""
+    out: dict[str, str] = {}
+
+    def add(o, n):
+        if isinstance(o, (int, float)) and isinstance(n, (int, float)) and es_money(o) != es_money(n):
+            out[es_money(o)] = es_money(n)
+
+    nm = {m["nombre"]: m for m in new_rec.get("metodos") or []}
+    for m in old_rec.get("metodos") or []:
+        for k in SCEN:
+            add(m.get(k), (nm.get(m["nombre"]) or {}).get(k))
+    for k in SCEN:
+        add(old_rec["objetivoPonderado"][k], new_rec["objetivoPonderado"][k])
+    for z in ("value", "deepValue", "historica", "conMOS"):
+        for b in ("max", "min"):
+            add(((old_rec.get("zonas") or {}).get(z) or {}).get(b), ((new_rec.get("zonas") or {}).get(z) or {}).get(b))
+    add(old_rec.get("precioMOS"), new_rec.get("precioMOS"))
+    add(old_rec.get("precioMOSMax"), new_rec.get("precioMOSMax"))
+    return out
+
+
 def substitute(text: str, table: dict[str, str]) -> tuple[str, int]:
     if not table:
         return text, 0
@@ -104,6 +126,9 @@ def main() -> int:
     ap.add_argument("datos")
     ap.add_argument("--old-rev", default="HEAD", help="revision de git con las valoraciones anteriores")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--tickers", nargs="*", help="solo estos tickers")
+    ap.add_argument("--incluir-fy3", action="store_true",
+                    help="también reemplaza las cifras FY+3 (precio por método y ponderado), p. ej. tras cambiar múltiplos")
     args = ap.parse_args()
     root = Path(args.datos)
     for f in sorted((root / "analisis").glob("*.json")):
@@ -113,15 +138,26 @@ def main() -> int:
         if dm.get("version") != 2 or H3 not in (d.get("html") or ""):
             print(f"{f.name}: se omite (sin valoración v2 vinculada o sin la tabla)")
             continue
+        if args.tickers and d.get("ticker") not in args.tickers:
+            continue
         old_rec = json.loads(subprocess.check_output(["git", "-C", str(root), "show", f"{args.old_rev}:{lv['sourcePath']}"]))
-        if (old_rec.get("descuentoMultiples") or {}).get("version") == 2:
+        new_rec = json.loads((root / lv["sourcePath"]).read_text())
+        for k in ("metodos", "objetivoPonderado", "zonas", "cagr", "precioMOS", "precioMOSMax", "valorPresentePonderado",
+                  "descuentoMultiples", "precioMOSHoy"):
+            if k in new_rec:
+                lv[k] = new_rec[k]
+        if (old_rec.get("descuentoMultiples") or {}).get("version") == 2 and not args.incluir_fy3:
             print(f"{f.name}: la revisión {args.old_rev} ya tiene v2; se omite")
             continue
         h = d["html"]
         s = h.index(H3)
         e = h.index("</p>", h.index("</table>", s)) + len("</p>")
         old_rows = _old_rows(h[s:e])
+        if (old_rec.get("descuentoMultiples") or {}).get("version") == 2:
+            old_rows = {m["nombre"]: ["", *(es_money(m[k]["consolidado"]) for k in SCEN)] for m in old_rec["descuentoMultiples"]["metodos"]}
         table = mapping(old_rec, lv, old_rows)
+        if args.incluir_fy3:
+            table.update(fy3_mapping(old_rec, new_rec))
         h = h[:s] + new_block(lv) + h[e:]
         h, n1 = substitute(h, table)
         vh, n2 = substitute(d.get("valuationHtml") or "", table)
