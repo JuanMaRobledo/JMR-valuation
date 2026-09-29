@@ -13,7 +13,7 @@
   "ajuste_motivo": "Ajuste +5%: margen operativo de Adobe 35-39% frente a ~21% de mediana de los peers y conversión de caja superior (+10%), compensado en parte por un crecimiento algo menor (10-12% vs ~13% de mediana, -5%).",
   "lambda": 0.25,
   "lambda_motivo": "λ = 0,25: la Adobe de FY+3 del escenario Base (crecimiento ~10%, margen 40%) es parecida a la de hoy, así que el Base se acerca solo un 25% al múltiplo justificado.",
-  "evaluacion": "Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF. La brecha refleja que el mercado paga por Adobe (LTM P/E ~14x) bastante menos que sus peers ajustados (~22x) y que su propio múltiplo justificado (~21x): los múltiplos suponen una re-valoración parcial hacia esos niveles, mientras que el DCF depende de sostener un margen de 40% con un WACC de 10,8%. Para Adobe el DCF es la referencia más confiable, porque no depende de que el mercado cambie de opinión."
+  "evaluacion": "Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe."
  },
  "resultado": {
   "EV/EBITDA": {
@@ -28,7 +28,7 @@
    "B_mediana": 16.9,
    "B_ajustada": 17.75,
    "B_n": 5,
-   "B_peers": "ADSK 18,7x, INTU 10,7x, CRM 16,9x, WDAY 28,9x, PTC 12,9x",
+   "B_peers": "ADSK 18,4x, INTU 10,7x, CRM 16,9x, WDAY 28,9x, PTC 12,9x",
    "B_excluidos": [
     "NOW"
    ],
@@ -41,9 +41,9 @@
    "lambda": 0.25,
    "conservador": 13.9,
    "base": 19.57,
-   "optimista": 28.65,
+   "optimista": 28.51,
    "factor_cons": 0.71,
-   "factor_opt": 1.464,
+   "factor_opt": 1.457,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
@@ -51,25 +51,25 @@
     21.79
    ],
    "antes": {
-    "J8": 10.81,
-    "J19": 13.17,
-    "J30": 18.88
+    "J8": 13.9,
+    "J19": 19.57,
+    "J30": 28.65
    },
    "nota": ""
   },
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 21.04,
-   "A_desc": "mediana Dec '23, Nov '24, Nov '25, LTM (etapa actual) = 21,0x",
-   "A_p25": 12.41,
-   "A_p75": 31.39,
+   "A": 21.1,
+   "A_desc": "mediana Dec '23, Nov '24, Nov '25, LTM (etapa actual) = 21,1x",
+   "A_p25": 12.44,
+   "A_p75": 31.47,
    "A_max": 42.79,
    "A_excluidos": [],
-   "B_mediana": 15.28,
-   "B_ajustada": 16.05,
+   "B_mediana": 14.98,
+   "B_ajustada": 15.73,
    "B_n": 5,
-   "B_peers": "ADSK 15,3x, INTU 8,5x, CRM 14,4x, WDAY 16,1x, PTC 17,5x",
+   "B_peers": "ADSK 15,0x, INTU 8,3x, CRM 13,8x, WDAY 15,6x, PTC 16,6x",
    "B_excluidos": [
     "NOW"
    ],
@@ -78,23 +78,23 @@
     "Base": 28.75,
     "Optimista": 54.41
    },
-   "mercado": 18.54,
+   "mercado": 18.41,
    "lambda": 0.25,
-   "conservador": 16.08,
-   "base": 21.1,
-   "optimista": 31.21,
-   "factor_cons": 0.762,
-   "factor_opt": 1.48,
+   "conservador": 15.87,
+   "base": 21.0,
+   "optimista": 30.99,
+   "factor_cons": 0.756,
+   "factor_opt": 1.476,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    16.05,
+    15.73,
     28.75
    ],
    "antes": {
-    "J8": 13.02,
-    "J19": 15.43,
-    "J30": 21.66
+    "J8": 16.08,
+    "J19": 21.1,
+    "J30": 31.21
    },
    "nota": ""
   },
@@ -133,9 +133,9 @@
     30.46
    ],
    "antes": {
-    "J8": 14.61,
-    "J19": 17.82,
-    "J30": 25.58
+    "J8": 17.94,
+    "J19": 24.73,
+    "J30": 35.57
    },
    "nota": ""
   },
@@ -174,9 +174,9 @@
     22.26
    ],
    "antes": {
-    "J8": 11.57,
-    "J19": 13.77,
-    "J30": 19.39
+    "J8": 14.22,
+    "J19": 19.46,
+    "J30": 26.83
    },
    "nota": ""
   },
@@ -215,9 +215,9 @@
     21.42
    ],
    "antes": {
-    "J8": 12.37,
-    "J19": 14.69,
-    "J30": 20.66
+    "J8": 13.78,
+    "J19": 18.89,
+    "J30": 25.7
    },
    "nota": ""
   }
@@ -229,16 +229,16 @@
    568.2043510626165
   ],
   "multiplos_hoy": [
-   319.4462796589546,
-   487.18315330682157,
-   815.0225061301396
+   318.83427500638885,
+   486.86885523003133,
+   812.6859178407295
   ],
   "ponderado_hoy": [
-   308.6977791650733,
-   443.4842410514668,
-   716.2952441031305
+   308.33057637353386,
+   443.29566220539266,
+   714.8932911294844
   ],
-  "brecha_base": 0.2890630092005855,
+  "brecha_base": 0.28823139172386614,
   "fila_origen": 42
  }
 }

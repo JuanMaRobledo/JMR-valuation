@@ -1,0 +1,436 @@
+{
+ "fcf_a_fcff": 0.948396249834477,
+ "empresa": "BOSTON SCIENTIFIC CORP (NYSE:BSX)",
+ "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+ "fecha": "2026-09-29",
+ "ke": 0.0945,
+ "categoria": "Crecimiento",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Dec '16": 27.67,
+     "Dec '17": 18.54,
+     "Dec '18": 23.27,
+     "Dec '19": 28.92,
+     "Dec '20": 55.93,
+     "Dec '21": 29.86,
+     "Dec '22": 26.92,
+     "Dec '23": 26.34,
+     "Dec '24": 37.05,
+     "Dec '25": 30.6,
+     "LTM": 13.48
+    },
+    "mediana_5a": 29.86,
+    "mediana_10a": 28.29,
+    "p25": 24.81,
+    "p75": 30.23,
+    "min": 13.48,
+    "max": 55.93,
+    "ultimo_cierre": 30.6,
+    "ltm": 13.48,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 16.64,
+    "p25": 13.67,
+    "p75": 21.84
+   },
+   "justificado": {
+    "Conservador": 19.42,
+    "Base": 24.78,
+    "Optimista": 33.71
+   },
+   "actual_J": {
+    "J8": 14.92,
+    "J19": 17.18,
+    "J30": 21.03
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Dec '16": 58.58,
+     "Dec '17": 35.66,
+     "Dec '18": -9306.96,
+     "Dec '19": 53.2,
+     "Dec '20": 51.54,
+     "Dec '21": 52.0,
+     "Dec '22": 79.92,
+     "Dec '23": 52.03,
+     "Dec '24": 54.24,
+     "Dec '25": 41.67,
+     "LTM": 20.69
+    },
+    "mediana_5a": 52.03,
+    "mediana_10a": 52.03,
+    "p25": 51.54,
+    "p75": 54.24,
+    "min": 35.66,
+    "max": 79.92,
+    "ultimo_cierre": 41.67,
+    "ltm": 20.69,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      -9306.96,
+      "métrica negativa o ~0"
+     ],
+     [
+      "LTM",
+      20.69,
+      "< 0,4x la mediana (52.0x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 25.06,
+    "p25": 21.0,
+    "p75": 30.95
+   },
+   "justificado": {
+    "Conservador": 24.97,
+    "Base": 31.65,
+    "Optimista": 42.94
+   },
+   "actual_J": {
+    "J8": 22.13,
+    "J19": 25.01,
+    "J30": 29.58
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Dec '16": 86.52,
+     "Dec '17": 354.14,
+     "Dec '18": 29.7,
+     "Dec '19": 13.58,
+     "Dec '20": -599.17,
+     "Dec '21": 58.19,
+     "Dec '22": 96.4,
+     "Dec '23": 53.04,
+     "Dec '24": 72.03,
+     "Dec '25": 49.15,
+     "LTM": 17.93
+    },
+    "mediana_5a": 58.19,
+    "mediana_10a": 58.19,
+    "p25": 51.09,
+    "p75": 79.28,
+    "min": 29.7,
+    "max": 96.4,
+    "ultimo_cierre": 49.15,
+    "ltm": 17.93,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '20",
+      -599.17,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      354.14,
+      "> 2,5x la mediana (55.6x)"
+     ],
+     [
+      "Dec '19",
+      13.58,
+      "< 0,4x la mediana (55.6x), caída puntual"
+     ],
+     [
+      "LTM",
+      17.93,
+      "< 0,4x la mediana (55.6x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 30.76,
+    "p25": 23.84,
+    "p75": 43.66
+   },
+   "justificado": {
+    "Conservador": 15.46,
+    "Base": 19.27,
+    "Optimista": 25.1
+   },
+   "actual_J": {
+    "J8": 19.33,
+    "J19": 22.5,
+    "J30": 27.91
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Dec '16": 49.43,
+     "Dec '17": 30.76,
+     "Dec '18": -8155.29,
+     "Dec '19": 45.87,
+     "Dec '20": 44.99,
+     "Dec '21": 46.28,
+     "Dec '22": 71.02,
+     "Dec '23": 47.21,
+     "Dec '24": 50.18,
+     "Dec '25": 38.96,
+     "LTM": 17.56
+    },
+    "mediana_5a": 47.21,
+    "mediana_10a": 46.28,
+    "p25": 44.99,
+    "p75": 49.43,
+    "min": 30.76,
+    "max": 71.02,
+    "ultimo_cierre": 38.96,
+    "ltm": 17.56,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      -8155.29,
+      "métrica negativa o ~0"
+     ],
+     [
+      "LTM",
+      17.56,
+      "< 0,4x la mediana (46.1x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 23.21,
+    "p25": 19.31,
+    "p75": 32.48
+   },
+   "justificado": {
+    "Conservador": 22.08,
+    "Base": 27.17,
+    "Optimista": 35.14
+   },
+   "actual_J": {
+    "J8": 19.08,
+    "J19": 21.65,
+    "J30": 26.64
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Dec '16": 30.31,
+     "Dec '17": 23.88,
+     "Dec '18": 157.84,
+     "Dec '19": 34.36,
+     "Dec '20": 33.77,
+     "Dec '21": 32.57,
+     "Dec '22": 43.65,
+     "Dec '23": 33.8,
+     "Dec '24": 38.64,
+     "Dec '25": 31.43,
+     "LTM": 14.05
+    },
+    "mediana_5a": 33.8,
+    "mediana_10a": 33.77,
+    "p25": 30.59,
+    "p75": 34.22,
+    "min": 14.05,
+    "max": 43.65,
+    "ultimo_cierre": 31.43,
+    "ltm": 14.05,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      157.84,
+      "> 2,5x la mediana (33.8x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 18.91,
+    "p25": 15.01,
+    "p75": 26.97
+   },
+   "justificado": {
+    "Conservador": 19.74,
+    "Base": 26.11,
+    "Optimista": 35.73
+   },
+   "actual_J": {
+    "J8": 15.75,
+    "J19": 18.53,
+    "J30": 23.44
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.04707142857142857,
+   "g_años_4_10": 0.044242857142857146,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08899650551494535,
+   "ke": 0.0945,
+   "roe_fy3": 0.1570247195943927,
+   "fcff_ebitda": 0.7777456502434096,
+   "fcfe_ocf": 0.8940456158696701,
+   "multiplos": {
+    "EV/FCFF": 24.974824255709464,
+    "P/FCFE": 22.076807228915662,
+    "P/E": 15.458824676579932,
+    "EV/EBITDA": 19.424060930471637,
+    "P/OCF": 19.73767271541189
+   }
+  },
+  "Base": {
+   "g": 0.05564285714285715,
+   "g_años_4_10": 0.06138571428571429,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08899650551494535,
+   "ke": 0.0945,
+   "roe_fy3": 0.19153024507318445,
+   "fcff_ebitda": 0.7830736062829525,
+   "fcfe_ocf": 0.9612133683347813,
+   "multiplos": {
+    "EV/FCFF": 31.649996587067974,
+    "P/FCFE": 27.167279411764707,
+    "P/E": 19.27471368831307,
+    "EV/EBITDA": 24.78427696627846,
+    "P/OCF": 26.11355215187451
+   }
+  },
+  "Optimista": {
+   "g": 0.06421428571428572,
+   "g_años_4_10": 0.07852857142857143,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08899650551494535,
+   "ke": 0.0945,
+   "roe_fy3": 0.22481818349059574,
+   "fcff_ebitda": 0.7849481694989434,
+   "fcfe_ocf": 1.0169306215363594,
+   "multiplos": {
+    "EV/FCFF": 42.94265381690947,
+    "P/FCFE": 35.13915094339624,
+    "P/E": 25.102438416844546,
+    "EV/EBITDA": 33.7077575070099,
+    "P/OCF": 35.734078609127884
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "MDT",
+   "nombre": "Medtronic plc.",
+   "precio": 87.09,
+   "pe": 21.450739,
+   "ev_ebitda": 12.916,
+   "crec_ingresos": 0.137,
+   "margen_operativo": 0.19332,
+   "roe": 0.106479995,
+   "p_ocf": 13.864357961916614,
+   "p_fcf": 18.167011778212654,
+   "ev_fcf": 21.92348998303979,
+   "ocf_ttm": 8035000000.0,
+   "fcf_ttm": 6132000000.0,
+   "interest_ttm": 724000000.0,
+   "ev_fcff": 20.053049328456613
+  },
+  {
+   "ticker": "SYK",
+   "nombre": "Stryker Corporation",
+   "precio": 278.77,
+   "pe": 28.858177,
+   "ev_ebitda": 15.94,
+   "crec_ingresos": 0.094,
+   "margen_operativo": 0.27015,
+   "roe": 0.16508,
+   "p_ocf": 19.35360370678733,
+   "p_fcf": 22.741101760952787,
+   "ev_fcf": 25.004571222458527,
+   "ocf_ttm": 5525000000.0,
+   "fcf_ttm": 4702000000.0,
+   "interest_ttm": 289000000.0,
+   "ev_fcff": 23.846673715851537
+  },
+  {
+   "ticker": "ABT",
+   "nombre": "Abbott Laboratories",
+   "precio": 100.95,
+   "pe": 32.669903,
+   "ev_ebitda": 17.336,
+   "crec_ingresos": 0.13,
+   "margen_operativo": 0.14706999,
+   "roe": 0.10576,
+   "p_ocf": 18.457543736263737,
+   "p_fcf": 23.676090257522365,
+   "ev_fcf": 27.446884068311196,
+   "ocf_ttm": 9464000000.0,
+   "fcf_ttm": 7378000000.0,
+   "interest_ttm": 415000000.0,
+   "ev_fcff": 26.27913995938151
+  },
+  {
+   "ticker": "EW",
+   "nombre": "Edwards Lifesciences Corporatio",
+   "precio": 88.08,
+   "pe": 52.428574,
+   "ev_ebitda": 23.341,
+   "crec_ingresos": 0.136,
+   "margen_operativo": 0.29839,
+   "roe": 0.09175,
+   "p_ocf": 29.511895478695575,
+   "p_fcf": 35.41386285714286,
+   "ev_fcf": 32.51075142857143,
+   "ocf_ttm": 1720300000.0,
+   "fcf_ttm": 1433600000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 32.51075142857143
+  },
+  {
+   "ticker": "ISRG",
+   "nombre": "Intuitive Surgical, Inc.",
+   "precio": 412.18,
+   "pe": 47.322617,
+   "ev_ebitda": 33.833,
+   "crec_ingresos": 0.185,
+   "margen_operativo": 0.33603,
+   "roe": 0.17423001,
+   "p_ocf": 39.84325428879775,
+   "p_fcf": 45.82481154843915,
+   "ev_fcf": 43.89291190963818,
+   "ocf_ttm": 3706400000.0,
+   "fcf_ttm": 3222600000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 43.89291190963818
+  },
+  {
+   "ticker": "ZBH",
+   "nombre": "Zimmer Biomet Holdings, Inc.",
+   "precio": 91.34,
+   "pe": 22.169903,
+   "ev_ebitda": 9.751,
+   "crec_ingresos": 0.048,
+   "margen_operativo": 0.17959999,
+   "roe": 0.06413,
+   "p_ocf": 9.993678453507716,
+   "p_fcf": 12.428291944642602,
+   "ev_fcf": 17.564051522328434,
+   "ocf_ttm": 1743300000.0,
+   "fcf_ttm": 1401800000.0,
+   "interest_ttm": 289000000.0,
+   "ev_fcff": 15.104065016471282
+  }
+ ]
+}

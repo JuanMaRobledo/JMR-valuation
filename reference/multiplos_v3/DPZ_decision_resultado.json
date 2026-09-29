@@ -1,0 +1,244 @@
+{
+ "decision": {
+  "etapa_desde": null,
+  "etapa_motivo": "A: Domino's es un franquiciador maduro desde hace una década con múltiplos estables (EV/EBITDA 18-30x); no hubo cambio de etapa del negocio, así que A usa los últimos cinco cierres y el LTM.",
+  "peers_excluir": {
+   "*": [
+    "PZZA"
+   ]
+  },
+  "peers_motivo": "B: franquiciadores y cadenas de restaurantes (Yum!, McDonald's, Restaurant Brands, Wingstop, Darden), datos de yfinance al 29-sep-2026. Se excluye Papa John's (ingresos −9%, reestructuración).",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Ajuste 0%: modelo de franquicia asset-light y crecimiento similares a Yum! y Restaurant Brands.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Domino's de FY+3 es la misma empresa madura de hoy. El P/E justificado no se calcula porque el patrimonio es negativo (recompras con deuda), así que el P/E se ancla en historia y peers.",
+  "evaluacion": "Los múltiplos (US$422,49 hoy) quedan 86% por encima del DCF (US$226,68). Domino's cotizó durante una década a 25-30x utilidades y hoy los franquiciadores comparables cotizan a ~19x; incluso el ancla más baja implica un valor mayor que el del DCF, que queda por debajo del precio actual (US$292). La brecha sugiere que los supuestos del DCF (crecimiento y margen de largo plazo) son más conservadores que cualquier referencia de mercado para un franquiciador de flujos estables: conviene revisarlos antes de dar más peso a uno de los dos métodos.",
+  "ticker": "DPZ"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 20.46,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 20,5x",
+   "A_p25": 19.89,
+   "A_p75": 22.23,
+   "A_max": 29.86,
+   "A_excluidos": [],
+   "B_mediana": 14.67,
+   "B_ajustada": 14.67,
+   "B_n": 5,
+   "B_peers": "YUM 16,4x, MCD 14,7x, QSR 14,0x, WING 16,7x, DRI 14,3x",
+   "B_excluidos": [
+    "PZZA"
+   ],
+   "C": {
+    "Conservador": 17.18,
+    "Base": 20.95,
+    "Optimista": 25.39
+   },
+   "mercado": 17.57,
+   "lambda": 0.25,
+   "conservador": 17.0,
+   "base": 18.41,
+   "optimista": 20.99,
+   "factor_cons": 0.923,
+   "factor_opt": 1.14,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    14.67,
+    20.95
+   ],
+   "antes": {
+    "J8": 17,
+    "J19": 18.41,
+    "J30": 20.99
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 31.56,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 31,6x (EV/FCF × 0,81 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 30.41,
+   "A_p75": 36.22,
+   "A_max": 50.14,
+   "A_excluidos": [],
+   "B_mediana": 24.22,
+   "B_ajustada": 24.22,
+   "B_n": 5,
+   "B_peers": "YUM 24,2x, MCD 24,2x, QSR 20,2x, WING 24,7x, DRI 28,2x",
+   "B_excluidos": [
+    "PZZA"
+   ],
+   "C": {
+    "Conservador": 25.36,
+    "Base": 30.91,
+    "Optimista": 37.38
+   },
+   "mercado": 27.89,
+   "lambda": 0.25,
+   "conservador": 26.58,
+   "base": 28.65,
+   "optimista": 32.25,
+   "factor_cons": 0.928,
+   "factor_opt": 1.126,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    24.22,
+    31.56
+   ],
+   "antes": {
+    "J8": 30.63,
+    "J19": 33.02,
+    "J30": 37.65
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 26.7,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 26,7x",
+   "A_p25": 26.7,
+   "A_p75": 31.68,
+   "A_max": 41.68,
+   "A_excluidos": [],
+   "B_mediana": 19.01,
+   "B_ajustada": 19.01,
+   "B_n": 5,
+   "B_peers": "YUM 17,3x, MCD 19,0x, QSR 18,0x, WING 25,7x, DRI 19,2x",
+   "B_excluidos": [
+    "PZZA"
+   ],
+   "C": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "mercado": 22.85,
+   "lambda": 0.25,
+   "conservador": 22.17,
+   "base": 22.85,
+   "optimista": 25.09,
+   "factor_cons": 0.97,
+   "factor_opt": 1.098,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    19.01,
+    26.7
+   ],
+   "antes": {
+    "J8": 22.17,
+    "J19": 22.85,
+    "J30": 25.09
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 29.12,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 29,1x",
+   "A_p25": 28.21,
+   "A_p75": 33.03,
+   "A_max": 37.36,
+   "A_excluidos": [],
+   "B_mediana": 21.33,
+   "B_ajustada": 21.33,
+   "B_n": 5,
+   "B_peers": "YUM 22,4x, MCD 21,3x, QSR 20,1x, WING 23,0x, DRI 20,4x",
+   "B_excluidos": [
+    "PZZA"
+   ],
+   "C": {
+    "Conservador": 21.39,
+    "Base": 25.24,
+    "Optimista": 29.43
+   },
+   "mercado": 25.23,
+   "lambda": 0.25,
+   "conservador": 23.3,
+   "base": 25.23,
+   "optimista": 28.17,
+   "factor_cons": 0.924,
+   "factor_opt": 1.116,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    21.33,
+    29.12
+   ],
+   "antes": {
+    "J8": 23.3,
+    "J19": 25.23,
+    "J30": 28.17
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 23.89,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 23,9x",
+   "A_p25": 23.23,
+   "A_p75": 25.9,
+   "A_max": 31.14,
+   "A_excluidos": [],
+   "B_mediana": 15.62,
+   "B_ajustada": 15.62,
+   "B_n": 5,
+   "B_peers": "YUM 18,0x, MCD 14,6x, QSR 17,2x, WING 15,6x, DRI 12,0x",
+   "B_excluidos": [
+    "PZZA"
+   ],
+   "C": {
+    "Conservador": 20.61,
+    "Base": 28.49,
+    "Optimista": 36.57
+   },
+   "mercado": 19.76,
+   "lambda": 0.25,
+   "conservador": 19.24,
+   "base": 21.94,
+   "optimista": 25.37,
+   "factor_cons": 0.877,
+   "factor_opt": 1.156,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    15.62,
+    28.49
+   ],
+   "antes": {
+    "J8": 19.24,
+    "J19": 21.94,
+    "J30": 25.37
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   156.63725652523942,
+   226.68096734863386,
+   305.1762507591815
+  ],
+  "multiplos_hoy": [
+   355.8105268981082,
+   422.487850321865,
+   526.0357584869372
+  ],
+  "ponderado_hoy": [
+   276.14121874896074,
+   344.16509713257255,
+   437.69195539583495
+  ],
+  "brecha_base": 0.8637993972916191,
+  "fila_origen": 40
+ }
+}

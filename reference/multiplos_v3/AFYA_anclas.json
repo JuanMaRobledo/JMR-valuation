@@ -1,0 +1,413 @@
+{
+ "fcf_a_fcff": 0.7002162595779391,
+ "empresa": "Afya Limited (NASDAQ:AFYA)",
+ "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+ "fecha": "2026-09-29",
+ "ke": 0.13986231178384562,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 33.41,
+     "Dec '20": 26.82,
+     "Dec '21": 16.39,
+     "Dec '22": 10.67,
+     "Dec '23": 11.94,
+     "Dec '24": 7.54,
+     "Dec '25": 6.45,
+     "LTM": 5.34
+    },
+    "mediana_5a": 10.67,
+    "mediana_10a": 11.3,
+    "p25": 7.0,
+    "p75": 14.16,
+    "min": 5.34,
+    "max": 26.82,
+    "ultimo_cierre": 6.45,
+    "ltm": 5.34,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '19",
+      33.41,
+      "> 2,5x la mediana (11.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 5.16,
+    "p25": 4.64,
+    "p75": 5.19
+   },
+   "justificado": {
+    "Conservador": 10.84,
+    "Base": 11.86,
+    "Optimista": 13.32
+   },
+   "actual_J": {
+    "J8": 6.83,
+    "J19": 7.51,
+    "J30": 8.04
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 88.33,
+     "Dec '20": 93.5,
+     "Dec '21": 41.28,
+     "Dec '22": 26.9,
+     "Dec '23": 28.22,
+     "Dec '24": 15.1,
+     "Dec '25": 14.15,
+     "LTM": 11.45
+    },
+    "mediana_5a": 26.9,
+    "mediana_10a": 26.9,
+    "p25": 14.39,
+    "p75": 27.89,
+    "min": 11.45,
+    "max": 41.28,
+    "ultimo_cierre": 14.15,
+    "ltm": 11.45,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '19",
+      88.33,
+      "> 2,5x la mediana (27.6x)"
+     ],
+     [
+      "Dec '20",
+      93.5,
+      "> 2,5x la mediana (27.6x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 5.65,
+    "p25": 5.28,
+    "p75": 5.66
+   },
+   "justificado": {
+    "Conservador": 16.29,
+    "Base": 17.53,
+    "Optimista": 19.48
+   },
+   "actual_J": {
+    "J8": 12.28,
+    "J19": 13.65,
+    "J30": 17.58
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 53.18,
+     "Dec '20": 41.48,
+     "Dec '21": 35.7,
+     "Dec '22": 19.52,
+     "Dec '23": 25.8,
+     "Dec '24": 12.31,
+     "Dec '25": 10.41,
+     "LTM": 7.88
+    },
+    "mediana_5a": 19.52,
+    "mediana_10a": 25.8,
+    "p25": 11.84,
+    "p75": 37.15,
+    "min": 7.88,
+    "max": 53.18,
+    "ultimo_cierre": 10.41,
+    "ltm": 7.88,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 6.98,
+    "p25": 6.33,
+    "p75": 17.37
+   },
+   "justificado": {
+    "Conservador": 7.31,
+    "Base": 7.87,
+    "Optimista": 8.44
+   },
+   "actual_J": {
+    "J8": 7.9,
+    "J19": 8.61,
+    "J30": 10.35
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 91.11,
+     "Dec '20": 89.56,
+     "Dec '21": 33.0,
+     "Dec '22": 20.99,
+     "Dec '23": 22.03,
+     "Dec '24": 11.48,
+     "Dec '25": 10.71,
+     "LTM": 8.11
+    },
+    "mediana_5a": 20.99,
+    "mediana_10a": 20.99,
+    "p25": 10.91,
+    "p75": 21.77,
+    "min": 8.11,
+    "max": 33.0,
+    "ultimo_cierre": 10.71,
+    "ltm": 8.11,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '19",
+      91.11,
+      "> 2,5x la mediana (21.5x)"
+     ],
+     [
+      "Dec '20",
+      89.56,
+      "> 2,5x la mediana (21.5x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 4.4,
+    "p25": 3.1,
+    "p75": 4.95
+   },
+   "justificado": {
+    "Conservador": 11.27,
+    "Base": 11.87,
+    "Optimista": 12.76
+   },
+   "actual_J": {
+    "J8": 7.42,
+    "J19": 8.8,
+    "J30": 9.49
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 42.31,
+     "Dec '20": 44.36,
+     "Dec '21": 15.2,
+     "Dec '22": 11.29,
+     "Dec '23": 14.22,
+     "Dec '24": 7.25,
+     "Dec '25": 7.13,
+     "LTM": 5.81
+    },
+    "mediana_5a": 11.29,
+    "mediana_10a": 11.29,
+    "p25": 7.16,
+    "p75": 13.49,
+    "min": 5.81,
+    "max": 15.2,
+    "ultimo_cierre": 7.13,
+    "ltm": 5.81,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '19",
+      42.31,
+      "> 2,5x la mediana (12.8x)"
+     ],
+     [
+      "Dec '20",
+      44.36,
+      "> 2,5x la mediana (12.8x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 2.86,
+    "p25": 2.01,
+    "p75": 3.88
+   },
+   "justificado": {
+    "Conservador": 8.4,
+    "Base": 9.51,
+    "Optimista": 11.02
+   },
+   "actual_J": {
+    "J8": 5.18,
+    "J19": 6.23,
+    "J30": 7.32
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.047,
+   "g_años_4_10": 0.0422,
+   "g_perpetuidad": 0.0518,
+   "wacc_4_10": 0.111254562118413,
+   "ke": 0.13986231178384562,
+   "roe_fy3": 0.13359999987646978,
+   "fcff_ebitda": 0.6653144201986061,
+   "fcfe_ocf": 0.7451104974675105,
+   "multiplos": {
+    "EV/FCFF": 16.29456283696264,
+    "P/FCFE": 11.274757001926552,
+    "P/E": 7.308337993090321,
+    "EV/EBITDA": 10.841007626263552,
+    "P/OCF": 8.400939798530791
+   }
+  },
+  "Base": {
+   "g": 0.05128571428571428,
+   "g_años_4_10": 0.05077142857142857,
+   "g_perpetuidad": 0.0518,
+   "wacc_4_10": 0.111254562118413,
+   "ke": 0.13986231178384562,
+   "roe_fy3": 0.15208753718712012,
+   "fcff_ebitda": 0.6767431845962928,
+   "fcfe_ocf": 0.8016445687202399,
+   "multiplos": {
+    "EV/FCFF": 17.53053047173083,
+    "P/FCFE": 11.868662197234354,
+    "P/E": 7.866409089196206,
+    "EV/EBITDA": 11.863667019101474,
+    "P/OCF": 9.514448588388149
+   }
+  },
+  "Optimista": {
+   "g": 0.056999999999999995,
+   "g_años_4_10": 0.06219999999999999,
+   "g_perpetuidad": 0.0518,
+   "wacc_4_10": 0.111254562118413,
+   "ke": 0.13986231178384562,
+   "roe_fy3": 0.1682835219910962,
+   "fcff_ebitda": 0.6837339719394939,
+   "fcfe_ocf": 0.8639047738266816,
+   "multiplos": {
+    "EV/FCFF": 19.482232622079785,
+    "P/FCFE": 12.756100780259269,
+    "P/E": 8.43542971352673,
+    "EV/EBITDA": 13.320664292943793,
+    "P/OCF": 11.020056359480241
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "COGN3.SA",
+   "nombre": "COGNA ON    ON      NM",
+   "precio": 2.2,
+   "pe": 6.111111,
+   "ev_ebitda": 5.186,
+   "crec_ingresos": 0.178,
+   "margen_operativo": 0.17608,
+   "roe": 0.04926,
+   "p_ocf": 2.8644423569398914,
+   "p_fcf": 4.404350403198015,
+   "ev_fcf": 9.6084105397849,
+   "ocf_ttm": 1539318000.0,
+   "fcf_ttm": 1001121000.0,
+   "interest_ttm": 886527000.0,
+   "ev_fcff": 5.6534291691091765
+  },
+  {
+   "ticker": "YDUQ3.SA",
+   "nombre": "YDUQS PART  ON      NM",
+   "precio": 10.41,
+   "pe": 24.785715,
+   "ev_ebitda": 5.164,
+   "crec_ingresos": 0.01,
+   "margen_operativo": 0.16569,
+   "roe": 0.03751,
+   "p_ocf": 2.014503824991159,
+   "p_fcf": 3.095872513051985,
+   "ev_fcf": 8.30563050523774,
+   "ocf_ttm": 1314905000.0,
+   "fcf_ttm": 855617000.0,
+   "interest_ttm": 761956000.0,
+   "ev_fcff": 4.875564460286787
+  },
+  {
+   "ticker": "SEER3.SA",
+   "nombre": "SER EDUCA   ON      NM",
+   "precio": 13.41,
+   "pe": 6.325472,
+   "ev_ebitda": 4.426,
+   "crec_ingresos": 0.056,
+   "margen_operativo": 0.26444,
+   "roe": 0.19143999,
+   "p_ocf": 3.879874001798683,
+   "p_fcf": 4.952031171138433,
+   "ev_fcf": 8.036022299707843,
+   "ocf_ttm": 442546000.0,
+   "fcf_ttm": 346731000.0,
+   "interest_ttm": 184383000.0,
+   "ev_fcff": 5.658762050852939
+  },
+  {
+   "ticker": "ANIM3.SA",
+   "nombre": "ANIMA       ON      NM",
+   "precio": 2.86,
+   "pe": 6.97561,
+   "ev_ebitda": 4.636,
+   "crec_ingresos": 0.044,
+   "margen_operativo": 0.26252002,
+   "roe": 0.09607001,
+   "p_ocf": 1.871252385644059,
+   "p_fcf": 3.040768672780018,
+   "ev_fcf": 16.520353925328575,
+   "ocf_ttm": 577517000.0,
+   "fcf_ttm": 355397000.0,
+   "interest_ttm": 957546000.0,
+   "ev_fcff": 5.280604563347522
+  },
+  {
+   "ticker": "LAUR",
+   "nombre": "Laureate Education, Inc.",
+   "precio": 38.38,
+   "pe": 17.366516,
+   "ev_ebitda": 10.989,
+   "crec_ingresos": 0.175,
+   "margen_operativo": 0.36278,
+   "roe": 0.29318002,
+   "p_ocf": 12.98162903740663,
+   "p_fcf": 18.448231366199543,
+   "ev_fcf": 20.4457542292446,
+   "ocf_ttm": 407254000.0,
+   "fcf_ttm": 286576000.0,
+   "interest_ttm": 12457000.0,
+   "ev_fcff": 19.76695625079301
+  },
+  {
+   "ticker": "CRUZ3.SA",
+   "nombre": null,
+   "precio": null,
+   "pe": null,
+   "ev_ebitda": null,
+   "crec_ingresos": null,
+   "margen_operativo": null,
+   "roe": null,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "error_cashflow": ""
+  }
+ ]
+}

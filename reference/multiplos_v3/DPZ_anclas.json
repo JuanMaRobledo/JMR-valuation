@@ -1,0 +1,387 @@
+{
+ "fcf_a_fcff": 0.8053531406131682,
+ "empresa": "DOMINOS PIZZA INC (NASDAQ:DPZ)",
+ "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+ "fecha": "2026-09-29",
+ "ke": 0.09004000000000001,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Jan '17": 19.92,
+     "Dec '17": 19.85,
+     "Dec '18": 21.99,
+     "Dec '19": 22.48,
+     "Jan '21": 24.12,
+     "Jan '22": 29.86,
+     "Jan '23": 20.54,
+     "Dec '23": 21.51,
+     "Dec '24": 20.39,
+     "Dec '25": 18.39,
+     "LTM": 13.91
+    },
+    "mediana_5a": 20.54,
+    "mediana_10a": 21.02,
+    "p25": 19.88,
+    "p75": 22.24,
+    "min": 13.91,
+    "max": 29.86,
+    "ultimo_cierre": 18.39,
+    "ltm": 13.91,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 14.51,
+    "p25": 14.1,
+    "p75": 16.01
+   },
+   "justificado": {
+    "Conservador": 17.18,
+    "Base": 20.95,
+    "Optimista": 25.39
+   },
+   "actual_J": {
+    "J8": 17,
+    "J19": 18.41,
+    "J30": 20.99
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Jan '17": 42.87,
+     "Dec '17": 45.08,
+     "Dec '18": 50.14,
+     "Dec '19": 37.67,
+     "Jan '21": 37.84,
+     "Jan '22": 45.5,
+     "Jan '23": 44.88,
+     "Dec '23": 39.88,
+     "Dec '24": 38.49,
+     "Dec '25": 28.55,
+     "LTM": 21.6
+    },
+    "mediana_5a": 39.88,
+    "mediana_10a": 41.37,
+    "p25": 37.75,
+    "p75": 44.98,
+    "min": 21.6,
+    "max": 50.14,
+    "ultimo_cierre": 28.55,
+    "ltm": 21.6,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 24.47,
+    "p25": 24.22,
+    "p75": 27.37
+   },
+   "justificado": {
+    "Conservador": 25.36,
+    "Base": 30.91,
+    "Optimista": 37.38
+   },
+   "actual_J": {
+    "J8": 30.63,
+    "J19": 33.02,
+    "J30": 37.65
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Jan '17": 37.03,
+     "Dec '17": 32.41,
+     "Dec '18": 29.93,
+     "Dec '19": 30.58,
+     "Jan '21": 30.95,
+     "Jan '22": 41.68,
+     "Jan '23": 27.65,
+     "Dec '23": 28.12,
+     "Dec '24": 25.74,
+     "Dec '25": 24.22,
+     "LTM": 16.63
+    },
+    "mediana_5a": 27.65,
+    "mediana_10a": 30.26,
+    "p25": 26.69,
+    "p75": 31.68,
+    "min": 16.63,
+    "max": 41.68,
+    "ultimo_cierre": 24.22,
+    "ltm": 16.63,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 19.1,
+    "p25": 18.22,
+    "p75": 23.86
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": 22.17,
+    "J19": 22.85,
+    "J30": 25.09
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Jan '17": 33.49,
+     "Dec '17": 32.56,
+     "Dec '18": 37.36,
+     "Dec '19": 27.64,
+     "Jan '21": 29.6,
+     "Jan '22": 36.38,
+     "Jan '23": 31.6,
+     "Dec '23": 29.46,
+     "Dec '24": 28.78,
+     "Dec '25": 21.29,
+     "LTM": 14.4
+    },
+    "mediana_5a": 29.46,
+    "mediana_10a": 30.6,
+    "p25": 28.21,
+    "p75": 33.02,
+    "min": 14.4,
+    "max": 37.36,
+    "ultimo_cierre": 21.29,
+    "ltm": 14.4,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 21.86,
+    "p25": 20.61,
+    "p75": 22.87
+   },
+   "justificado": {
+    "Conservador": 21.39,
+    "Base": 25.24,
+    "Optimista": 29.43
+   },
+   "actual_J": {
+    "J8": 23.3,
+    "J19": 25.23,
+    "J30": 28.17
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Jan '17": 26.66,
+     "Dec '17": 23.91,
+     "Dec '18": 26.0,
+     "Dec '19": 22.88,
+     "Jan '21": 25.16,
+     "Jan '22": 31.14,
+     "Jan '23": 25.8,
+     "Dec '23": 24.21,
+     "Dec '24": 23.58,
+     "Dec '25": 18.05,
+     "LTM": 12.21
+    },
+    "mediana_5a": 24.21,
+    "mediana_10a": 24.69,
+    "p25": 23.23,
+    "p75": 25.9,
+    "min": 12.21,
+    "max": 31.14,
+    "ultimo_cierre": 18.05,
+    "ltm": 12.21,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 15.11,
+    "p25": 12.64,
+    "p75": 16.8
+   },
+   "justificado": {
+    "Conservador": 20.61,
+    "Base": 28.49,
+    "Optimista": 36.57
+   },
+   "actual_J": {
+    "J8": 19.24,
+    "J19": 21.94,
+    "J30": 25.37
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.041357142857142856,
+   "g_años_4_10": 0.03281428571428571,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08241861175944895,
+   "ke": 0.09004000000000001,
+   "roe_fy3": null,
+   "fcff_ebitda": 0.677323567848102,
+   "fcfe_ocf": 0.963570643371906,
+   "multiplos": {
+    "EV/FCFF": 25.360932540790284,
+    "P/FCFE": 21.39063325312518,
+    "P/E": null,
+    "EV/EBITDA": 17.177557312483106,
+    "P/OCF": 20.61138624584632
+   }
+  },
+  "Base": {
+   "g": 0.0485,
+   "g_años_4_10": 0.047099999999999996,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08241861175944895,
+   "ke": 0.09004000000000001,
+   "roe_fy3": null,
+   "fcff_ebitda": 0.6776984527984035,
+   "fcfe_ocf": 1.1288573068085113,
+   "multiplos": {
+    "EV/FCFF": 30.912232123058864,
+    "P/FCFE": 25.240731824747225,
+    "P/E": null,
+    "EV/EBITDA": 20.9491718823421,
+    "P/OCF": 28.493184549560034
+   }
+  },
+  "Optimista": {
+   "g": 0.054214285714285715,
+   "g_años_4_10": 0.05852857142857143,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08241861175944895,
+   "ke": 0.09004000000000001,
+   "roe_fy3": null,
+   "fcff_ebitda": 0.6792380184266786,
+   "fcfe_ocf": 1.2426157565041245,
+   "multiplos": {
+    "EV/FCFF": 37.37775134304523,
+    "P/FCFE": 29.426190286306717,
+    "P/E": null,
+    "EV/EBITDA": 25.38838975549517,
+    "P/OCF": 36.56544770365334
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "YUM",
+   "nombre": "Yum! Brands, Inc.",
+   "precio": 137.73,
+   "pe": 17.346348,
+   "ev_ebitda": 16.45,
+   "crec_ingresos": 0.122,
+   "margen_operativo": 0.32779998,
+   "roe": null,
+   "p_ocf": 18.044486544407103,
+   "p_fcf": 22.38634036450268,
+   "ev_fcf": 30.058226430017868,
+   "ocf_ttm": 2083000000.0,
+   "fcf_ttm": 1679000000.0,
+   "interest_ttm": 513000000.0,
+   "ev_fcff": 24.213639392209263
+  },
+  {
+   "ticker": "MCD",
+   "nombre": "McDonald's Corporation",
+   "precio": 233.98,
+   "pe": 19.00731,
+   "ev_ebitda": 14.674,
+   "crec_ingresos": 0.037,
+   "margen_operativo": 0.46485,
+   "roe": null,
+   "p_ocf": 14.595730595204513,
+   "p_fcf": 21.334102289911094,
+   "ev_fcf": 28.229230897049348,
+   "ocf_ttm": 11344000000.0,
+   "fcf_ttm": 7761000000.0,
+   "interest_ttm": 1625000000.0,
+   "ev_fcff": 24.22256679200641
+  },
+  {
+   "ticker": "PZZA",
+   "nombre": "Papa John's International, Inc.",
+   "precio": 20.33,
+   "pe": 25.4125,
+   "ev_ebitda": 8.103,
+   "crec_ingresos": -0.088,
+   "margen_operativo": 0.057439998,
+   "roe": null,
+   "p_ocf": 7.046353845344002,
+   "p_fcf": 27.158656062327545,
+   "ev_fcf": 64.44676903100147,
+   "ocf_ttm": 94985000.0,
+   "fcf_ttm": 24644000.0,
+   "interest_ttm": 39305000.0,
+   "ev_fcff": 28.516520366747795
+  },
+  {
+   "ticker": "QSR",
+   "nombre": "Restaurant Brands International",
+   "precio": 71.48,
+   "pe": 17.959799,
+   "ev_ebitda": 14.024,
+   "crec_ingresos": 0.046,
+   "margen_operativo": 0.27738002,
+   "roe": 0.34792998,
+   "p_ocf": 17.198411294117648,
+   "p_fcf": 20.064813176470587,
+   "ev_fcf": 25.12609631372549,
+   "ocf_ttm": 1904000000.0,
+   "fcf_ttm": 1632000000.0,
+   "interest_ttm": 505000000.0,
+   "ev_fcff": 20.190447418203306
+  },
+  {
+   "ticker": "WING",
+   "nombre": "Wingstop Inc.",
+   "precio": 108.62,
+   "pe": 25.678488,
+   "ev_ebitda": 16.743,
+   "crec_ingresos": 0.064,
+   "margen_operativo": 0.29759002,
+   "roe": null,
+   "p_ocf": 15.616049986806692,
+   "p_fcf": 23.028976543651844,
+   "ev_fcf": 30.494117764253584,
+   "ocf_ttm": 189490000.0,
+   "fcf_ttm": 128494000.0,
+   "interest_ttm": 37982000.0,
+   "ev_fcff": 24.721240420649163
+  },
+  {
+   "ticker": "DRI",
+   "nombre": "Darden Restaurants, Inc.",
+   "precio": 195.11,
+   "pe": 19.184856,
+   "ev_ebitda": 14.345,
+   "crec_ingresos": 0.051,
+   "margen_operativo": 0.09854999,
+   "roe": 0.55431,
+   "p_ocf": 11.985679831196235,
+   "p_fcf": 20.363206206452798,
+   "ev_fcf": 28.24916960750069,
+   "ocf_ttm": 1848300000.0,
+   "fcf_ttm": 1087900000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 28.24916960750069
+  }
+ ]
+}

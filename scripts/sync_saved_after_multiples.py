@@ -62,7 +62,8 @@ def main(paths: list[str]) -> int:
                                                 "(historia de la etapa actual, peers de hoy ajustados y múltiplo justificado), "
                                                 "traídos a hoy en 1, 2 y 3 años.")
             aud = old.setdefault("auditoria", {})
-            aud["multiplosV3"] = {"fecha": "2026-09-29", "antes": before,
+            prev = aud.get("multiplosV3") or {}
+            aud["multiplosV3"] = {"fecha": "2026-09-29", "antes": prev.get("antes") or before,
                                   "detalle": "reference/multiplos_v3/ en JMR-valuation (anclas, decisión y respaldo de J8/J19/J30)"}
             Path(path).write_text(json.dumps(old, ensure_ascii=False, indent=2) + "\n")
             print(f"{old['ticker']:5s} {status[:18]} FY+3 base {before['objetivoPonderado']['base']:.2f} -> {old['objetivoPonderado']['base']:.2f} | "

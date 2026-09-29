@@ -1,0 +1,16 @@
+{
+ "etapa_desde": null,
+ "etapa_motivo": "A: Domino's es un franquiciador maduro desde hace una década con múltiplos estables (EV/EBITDA 18-30x); no hubo cambio de etapa del negocio, así que A usa los últimos cinco cierres y el LTM.",
+ "peers_excluir": {
+  "*": [
+   "PZZA"
+  ]
+ },
+ "peers_motivo": "B: franquiciadores y cadenas de restaurantes (Yum!, McDonald's, Restaurant Brands, Wingstop, Darden), datos de yfinance al 29-sep-2026. Se excluye Papa John's (ingresos −9%, reestructuración).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Ajuste 0%: modelo de franquicia asset-light y crecimiento similares a Yum! y Restaurant Brands.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Domino's de FY+3 es la misma empresa madura de hoy. El P/E justificado no se calcula porque el patrimonio es negativo (recompras con deuda), así que el P/E se ancla en historia y peers.",
+ "evaluacion": "Los múltiplos (US$422,49 hoy) quedan 86% por encima del DCF (US$226,68). Domino's cotizó durante una década a 25-30x utilidades y hoy los franquiciadores comparables cotizan a ~19x; incluso el ancla más baja implica un valor mayor que el del DCF, que queda por debajo del precio actual (US$292). La brecha sugiere que los supuestos del DCF (crecimiento y margen de largo plazo) son más conservadores que cualquier referencia de mercado para un franquiciador de flujos estables: conviene revisarlos antes de dar más peso a uno de los dos métodos.",
+ "ticker": "DPZ"
+}

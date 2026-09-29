@@ -1,0 +1,268 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '25",
+  "etapa_motivo": "A: Chipotle cotizó a 40-110x utilidades mientras abría tiendas y crecía en ventas comparables de dos dígitos; en 2025-2026 las ventas comparables se estancaron y la acción cayó de ~US$43 a ~US$32. La etapa actual es FY25 y el LTM.",
+  "peers_excluir": {
+   "*": [
+    "CAVA",
+    "SBUX"
+   ]
+  },
+  "peers_motivo": "B: restaurantes de servicio rápido y casual (McDonald's, Texas Roadhouse, Yum!, Wingstop), datos de yfinance al 29-sep-2026. Se excluyen Cava (crece 31% con margen de 8%, P/E 95x) y Starbucks (reestructuración, P/E 55x distorsionado).",
+  "ajuste_peers": 0.1,
+  "ajuste_motivo": "Ajuste +10%: Chipotle todavía abre ~8-10% de tiendas nuevas al año con retornos por tienda altos y sin deuda financiera, más crecimiento que McDonald's y Yum!.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Chipotle de FY+3 del escenario Base sigue siendo una cadena en expansión de unidades, parecida a la de hoy.",
+  "evaluacion": "Los múltiplos (US$26,41 hoy) quedan 29% por encima del DCF (US$20,52): los múltiplos suponen que Chipotle conserva a FY+3 una prima parecida a la de hoy frente a otros restaurantes (~27x utilidad), mientras que el DCF refleja un crecimiento de ventas comparables más bajo. El DCF es más confiable hasta que las ventas comparables vuelvan a crecer; los múltiplos indican lo que pagaría el mercado si Chipotle recupera su historia de crecimiento de unidades.",
+  "ticker": "CMG"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 21.83,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 21,8x",
+   "A_p25": 20.96,
+   "A_p75": 22.69,
+   "A_max": 78.95,
+   "A_excluidos": [],
+   "B_mediana": 16.24,
+   "B_ajustada": 17.86,
+   "B_n": 4,
+   "B_peers": "MCD 14,7x, TXRH 16,0x, YUM 16,4x, WING 16,7x",
+   "B_excluidos": [
+    "CAVA",
+    "SBUX"
+   ],
+   "C": {
+    "Conservador": 11.31,
+    "Base": 14.83,
+    "Optimista": 20.35
+   },
+   "mercado": 19.84,
+   "lambda": 0.25,
+   "conservador": 16.67,
+   "base": 18.59,
+   "optimista": 21.25,
+   "factor_cons": 0.896,
+   "factor_opt": 1.143,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    14.83,
+    21.83
+   ],
+   "antes": {
+    "J8": 16.67,
+    "J19": 18.59,
+    "J30": 21.25
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 34.43,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 34,4x (EV/FCF × 1,05 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 32.01,
+   "A_p75": 36.85,
+   "A_max": 123.34,
+   "A_excluidos": [
+    [
+     "Dec '20",
+     143.69,
+     "> 2,5x la mediana (54.5x)"
+    ]
+   ],
+   "B_mediana": 24.47,
+   "B_ajustada": 26.92,
+   "B_n": 4,
+   "B_peers": "MCD 24,2x, TXRH 28,2x, YUM 24,2x, WING 24,7x",
+   "B_excluidos": [
+    "CAVA",
+    "SBUX"
+   ],
+   "C": {
+    "Conservador": 23.23,
+    "Base": 28.9,
+    "Optimista": 38.04
+   },
+   "mercado": 30.67,
+   "lambda": 0.25,
+   "conservador": 27.44,
+   "base": 30.23,
+   "optimista": 34.59,
+   "factor_cons": 0.908,
+   "factor_opt": 1.144,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    26.92,
+    34.43
+   ],
+   "antes": {
+    "J8": 28.41,
+    "J19": 31.54,
+    "J30": 35.97
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 31.01,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 31,0x",
+   "A_p25": 30.29,
+   "A_p75": 31.73,
+   "A_max": 110.92,
+   "A_excluidos": [
+    [
+     "Dec '16",
+     377.5,
+     "> 2,5x la mediana (54.3x)"
+    ]
+   ],
+   "B_mediana": 22.1,
+   "B_ajustada": 24.31,
+   "B_n": 4,
+   "B_peers": "MCD 19,0x, TXRH 25,2x, YUM 17,3x, WING 25,7x",
+   "B_excluidos": [
+    "CAVA",
+    "SBUX"
+   ],
+   "C": {
+    "Conservador": 19.49,
+    "Base": 23.91,
+    "Optimista": 30.73
+   },
+   "mercado": 27.66,
+   "lambda": 0.25,
+   "conservador": 23.45,
+   "base": 26.72,
+   "optimista": 30.77,
+   "factor_cons": 0.878,
+   "factor_opt": 1.151,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    23.91,
+    31.01
+   ],
+   "antes": {
+    "J8": 23.45,
+    "J19": 26.72,
+    "J30": 30.77
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 29.8,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 29,8x",
+   "A_p25": 27.53,
+   "A_p75": 32.06,
+   "A_max": 124.32,
+   "A_excluidos": [
+    [
+     "Dec '20",
+     135.62,
+     "> 2,5x la mediana (51.8x)"
+    ]
+   ],
+   "B_mediana": 22.71,
+   "B_ajustada": 24.98,
+   "B_n": 4,
+   "B_peers": "MCD 21,3x, TXRH 25,8x, YUM 22,4x, WING 23,0x",
+   "B_excluidos": [
+    "CAVA",
+    "SBUX"
+   ],
+   "C": {
+    "Conservador": 21.41,
+    "Base": 26.16,
+    "Optimista": 33.46
+   },
+   "mercado": 27.39,
+   "lambda": 0.25,
+   "conservador": 24.52,
+   "base": 27.08,
+   "optimista": 30.68,
+   "factor_cons": 0.906,
+   "factor_opt": 1.133,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    24.98,
+    29.8
+   ],
+   "antes": {
+    "J8": 24.52,
+    "J19": 27.08,
+    "J30": 30.68
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 20.27,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 20,3x",
+   "A_p25": 18.65,
+   "A_p75": 21.88,
+   "A_max": 59.35,
+   "A_excluidos": [],
+   "B_mediana": 15.11,
+   "B_ajustada": 16.62,
+   "B_n": 4,
+   "B_peers": "MCD 14,6x, TXRH 12,8x, YUM 18,0x, WING 15,6x",
+   "B_excluidos": [
+    "CAVA",
+    "SBUX"
+   ],
+   "C": {
+    "Conservador": 13.26,
+    "Base": 17.11,
+    "Optimista": 22.84
+   },
+   "mercado": 18.44,
+   "lambda": 0.25,
+   "conservador": 15.89,
+   "base": 18.11,
+   "optimista": 21.06,
+   "factor_cons": 0.877,
+   "factor_opt": 1.163,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    16.62,
+    20.27
+   ],
+   "antes": {
+    "J8": 15.89,
+    "J19": 18.11,
+    "J30": 21.06
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   14.960443232253978,
+   20.517786444077338,
+   27.759401180467282
+  ],
+  "multiplos_hoy": [
+   20.9324639571384,
+   26.408699433084575,
+   34.11612723434475
+  ],
+  "ponderado_hoy": [
+   17.349251522207744,
+   22.874151639680232,
+   30.30209160201827
+  ],
+  "brecha_base": 0.28711250139303934,
+  "fila_origen": 40
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "etapa_desde": "Dec '24",
+ "etapa_motivo": "A: entre 2019 y 2021 Afya cotizaba a 30-90x por el crecimiento de sus facultades de medicina tras la salida a bolsa; desde 2024 la educación privada brasileña se re-valoró (tasas altas, madurez de plazas), así que A usa FY24, FY25 y el LTM.",
+ "peers_excluir": {
+  "P/E": [
+   "YDUQ3.SA"
+  ],
+  "*": [
+   "CRUZ3.SA"
+  ]
+ },
+ "peers_motivo": "B: educación superior en Brasil (Cogna, Yduqs, Ser Educacional, Ânima) y Laureate (México y Perú), con datos de yfinance al 29-sep-2026. Se excluye Yduqs del P/E porque su utilidad está deprimida (P/E 24,8x frente a 6-7x del sector); Cruzeiro do Sul no tiene cotización disponible.",
+ "ajuste_peers": 0.1,
+ "ajuste_motivo": "Ajuste +10%: Afya tiene margen EBIT de ~33% frente a 17-26% de las otras educadoras brasileñas y un nicho regulado (plazas de medicina limitadas por el MEC) con demanda más estable.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Afya de FY+3 del escenario Base se parece a la de hoy (crecimiento de un dígito medio en reales).",
+ "evaluacion": "Los múltiplos (US$14,08 hoy) quedan 37% por debajo del DCF (US$22,43): el mercado brasileño paga hoy ~5-6x EBITDA por las educadoras, con tasas locales altas, mientras que el DCF supone que Afya sostiene su margen EBIT de ~33% y descuenta con un Ke de 14% que ya incluye el riesgo país. Para el valor standalone de Afya el DCF es más confiable; los múltiplos reflejan el descuento que hoy aplica el mercado local y, además, la acción sigue la relación de canje de la fusión con Yduqs.",
+ "ticker": "AFYA"
+}

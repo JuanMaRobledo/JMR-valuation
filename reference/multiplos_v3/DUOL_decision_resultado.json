@@ -30,7 +30,7 @@
   "notas": {
    "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
   },
-  "evaluacion": "Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente y hacían que el valor por múltiplos coincidiera casi exactamente con el DCF. Ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Para Duolingo el DCF es más informativo que los múltiplos, porque la empresa sigue en crecimiento y su historia de múltiplos es corta y ruidosa; los múltiplos muestran cuánto paga hoy el mercado por negocios de suscripción comparables.",
+  "evaluacion": "Los múltiplos (US$150,14 hoy) quedan 10% por debajo del DCF (US$167,58). Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente y hacían que el valor por múltiplos coincidiera casi exactamente con el DCF. Ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Para Duolingo el DCF es más informativo, porque la empresa sigue en crecimiento y su historia de múltiplos es corta y ruidosa.",
   "fuentes": [
    "[Duolingo, Form 10-Q del 3T25 (30-sep-2025)](https://www.sec.gov/Archives/edgar/data/1562088/000162828025049743/duol-20250930.htm): liberación de la reserva de valuación, beneficio tributario único de US$222,7 millones.",
    "[Duolingo, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): beneficio tributario de US$231,7 millones en 2025."
@@ -72,10 +72,10 @@
      "> 2,5x la mediana (50.2x)"
     ]
    ],
-   "B_mediana": 30.89,
-   "B_ajustada": 30.89,
+   "B_mediana": 31.44,
+   "B_ajustada": 31.44,
    "B_n": 3,
-   "B_peers": "SPOT 35,7x, NFLX 20,1x, RDDT 30,9x",
+   "B_peers": "SPOT 35,4x, NFLX 20,1x, RDDT 31,4x",
    "B_excluidos": [
     "BMBL",
     "MTCH",
@@ -86,33 +86,33 @@
     "Base": 46.0,
     "Optimista": null
    },
-   "mercado": 37.18,
+   "mercado": 37.46,
    "lambda": 0.15,
-   "conservador": 33.98,
-   "base": 38.51,
-   "optimista": 41.5,
-   "factor_cons": 0.882,
-   "factor_opt": 1.078,
+   "conservador": 34.11,
+   "base": 38.74,
+   "optimista": 41.46,
+   "factor_cons": 0.881,
+   "factor_opt": 1.07,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    30.89,
+    31.44,
     46.0
    ],
    "antes": {
-    "J8": 22.32,
-    "J19": 24.8,
-    "J30": 27.28
+    "J8": 33.98,
+    "J19": 38.51,
+    "J30": 41.5
    },
    "nota": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
   },
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 17.97,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 18,0x",
-   "A_p25": 16.77,
-   "A_p75": 19.18,
+   "A": 23.45,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 23,4x (EV/FCF × 1,30 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 21.87,
+   "A_p75": 25.02,
    "A_max": 65.31,
    "A_excluidos": [
     [
@@ -126,10 +126,10 @@
      "> 2,5x la mediana (49.7x)"
     ]
    ],
-   "B_mediana": 25.42,
-   "B_ajustada": 25.42,
+   "B_mediana": 24.88,
+   "B_ajustada": 24.88,
    "B_n": 4,
-   "B_peers": "SPOT 29,3x, NFLX 26,5x, PINS 8,1x, RDDT 24,3x",
+   "B_peers": "SPOT 28,9x, NFLX 25,0x, PINS 8,1x, RDDT 24,7x",
    "B_excluidos": [
     "BMBL",
     "MTCH"
@@ -139,23 +139,23 @@
     "Base": 52.31,
     "Optimista": null
    },
-   "mercado": 21.69,
+   "mercado": 24.16,
    "lambda": 0.15,
-   "conservador": 22.83,
-   "base": 26.29,
-   "optimista": 28.1,
-   "factor_cons": 0.869,
-   "factor_opt": 1.069,
+   "conservador": 24.94,
+   "base": 28.39,
+   "optimista": 29.97,
+   "factor_cons": 0.879,
+   "factor_opt": 1.056,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    17.97,
+    23.45,
     52.31
    ],
    "antes": {
-    "J8": 25.4,
-    "J19": 28.22,
-    "J30": 31.04
+    "J8": 22.83,
+    "J19": 26.29,
+    "J30": 28.1
    },
    "nota": ""
   },
@@ -217,9 +217,9 @@
     27.26
    ],
    "antes": {
-    "J8": 59.4,
-    "J19": 66,
-    "J30": 72.6
+    "J8": 20.66,
+    "J19": 25.74,
+    "J30": 28.79
    },
    "nota": ""
   },
@@ -270,9 +270,9 @@
     37.75
    ],
    "antes": {
-    "J8": 55.36,
-    "J19": 61.51,
-    "J30": 67.66
+    "J8": 22.89,
+    "J19": 25.82,
+    "J30": 27.28
    },
    "nota": ""
   },
@@ -323,9 +323,9 @@
     37.24
    ],
    "antes": {
-    "J8": 49.25,
-    "J19": 54.72,
-    "J30": 60.19
+    "J8": 21.8,
+    "J19": 24.89,
+    "J30": 26.67
    },
    "nota": ""
   }
@@ -337,16 +337,16 @@
    250.9404393429077
   ],
   "multiplos_hoy": [
-   117.23739322030204,
-   145.94931842093976,
-   179.04616356088664
+   120.90451798227781,
+   150.13862746139907,
+   183.01144157809088
   ],
   "ponderado_hoy": [
-   121.99605963506306,
-   158.92777128840876,
-   222.18272903009927
+   123.46290953985337,
+   160.60349490459248,
+   223.76884023698096
   ],
-  "brecha_base": -0.12907712931532433,
+  "brecha_base": -0.10407827974770201,
   "fila_origen": 50
  }
 }

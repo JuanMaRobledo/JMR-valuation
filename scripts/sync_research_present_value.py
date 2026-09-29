@@ -108,6 +108,31 @@ def fy3_mapping(old_rec: dict, new_rec: dict) -> dict[str, str]:
     return out
 
 
+def _pct_es(v: float) -> str:
+    return f"{v * 100:.1f}".replace(".", ",")
+
+
+def derived_percentages(text: str, old_rec: dict, new_rec: dict) -> tuple[str, int]:
+    """Porcentajes que dependen de las cifras cambiadas: CAGR citado y diferencia valor hoy vs precio."""
+    n = 0
+    for k in SCEN:
+        o, w = (old_rec.get("cagr") or {}).get(k), (new_rec.get("cagr") or {}).get(k)
+        if isinstance(o, (int, float)) and isinstance(w, (int, float)) and _pct_es(o) != _pct_es(w):
+            pat = re.compile(r"(CAGR[^.%<]{0,80}?)" + re.escape(_pct_es(o)) + "%")
+            text, c = pat.subn(lambda m: m.group(1) + _pct_es(w) + "%", text)
+            n += c
+
+    def diff(m):
+        nonlocal n
+        val = float(m.group(1).replace(".", "").replace(",", "."))
+        ref = float(m.group(2).replace(".", "").replace(",", "."))
+        n += 1
+        return m.group(0)[: m.start(3) - m.start(0)] + _pct_es(val / ref - 1) + "%"
+    text = re.sub(r"valor presente ponderado de US\$([\d.,]+) por acción frente a US\$([\d.,]+) de referencia, una diferencia de (−?-?\d+,\d)%",
+                  diff, text)
+    return text, n
+
+
 def substitute(text: str, table: dict[str, str]) -> tuple[str, int]:
     if not table:
         return text, 0
@@ -160,6 +185,9 @@ def main() -> int:
             table.update(fy3_mapping(old_rec, new_rec))
         h = h[:s] + new_block(lv) + h[e:]
         h, n1 = substitute(h, table)
+        if args.incluir_fy3:
+            h, n3 = derived_percentages(h, old_rec, new_rec)
+            n1 += n3
         vh, n2 = substitute(d.get("valuationHtml") or "", table)
         print(f"{d.get('ticker', f.name):5s} tabla rehecha, {n1 + n2} cifras del puente anterior reemplazadas en el texto")
         if not args.dry_run:

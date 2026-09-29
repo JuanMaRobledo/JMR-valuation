@@ -47,7 +47,7 @@ sys.path.insert(0, str(_ROOT))
 from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 
 OUT = _ROOT / "reference" / "multiplos_v3"
-PEER_KEY = {"EV/EBITDA": "ev_ebitda", "EV/FCFF": "ev_fcf", "P/E": "pe", "P/FCFE": "p_fcf", "P/OCF": "p_ocf"}
+PEER_KEY = {"EV/EBITDA": "ev_ebitda", "EV/FCFF": "ev_fcff", "P/E": "pe", "P/FCFE": "p_fcf", "P/OCF": "p_ocf"}
 TV_LABEL = {"EV/EBITDA": "EV/EBITDA", "EV/FCFF": "EV/FCF", "P/E": "P/E", "P/FCFE": "P/FCF", "P/OCF": "P/OCF"}
 
 
@@ -78,10 +78,17 @@ def decide(anc: dict, dec: dict) -> dict:
         hist = d["historia"]
         serie = hist["serie"]
         labels = list(serie)
-        excl = {e[0] for e in hist["excluidos"]} | set(dec.get("historia_excluir", {}).get(m, []))
+        manual = set(dec.get("historia_excluir", {}).get(m, [])) | set(dec.get("historia_excluir", {}).get("*", []))
+        # con una etapa declarada, sus cierres no se filtran contra la mediana de TODA la historia
+        # (eso descartaría justamente el régimen actual); solo se quitan los que el analista marca
+        excl = manual if dec.get("etapa_desde") else {e[0] for e in hist["excluidos"]} | manual
         start = dec.get("etapa_desde")
         idx = labels.index(start) if start in labels else 0
         stage = [(lab, v) for lab, v in list(serie.items())[idx:] if isinstance(v, (int, float)) and v > 0.5 and lab not in excl]
+        # EV/FCFF: la historia es EV / FCF después de intereses; se convierte a EV / FCFF
+        conv = anc.get("fcf_a_fcff") if m == "EV/FCFF" else None
+        if conv and 0.3 < conv < 1.5:
+            stage = [(lab, v * conv) for lab, v in stage]
         a_vals = [v for _, v in stage]
         if not a_vals:
             a = a_p25 = a_p75 = a_max = None
@@ -89,9 +96,13 @@ def decide(anc: dict, dec: dict) -> dict:
         elif start:
             a = st.median(a_vals)
             a_desc = f"mediana {', '.join(lab for lab, _ in stage)} (etapa actual) = {fx(a)}"
+            if conv and 0.3 < conv < 1.5 and abs(conv - 1) > 0.02:
+                a_desc += f" (EV/FCF × {es(conv)} = FCF después de intereses ÷ FCFF)"
         else:
             a = st.median(a_vals[-6:])
             a_desc = f"mediana de los últimos 5 cierres + LTM depurados = {fx(a)}"
+            if conv and 0.3 < conv < 1.5 and abs(conv - 1) > 0.02:
+                a_desc += f" (EV/FCF × {es(conv)} = FCF después de intereses ÷ FCFF)"
         if a_vals:
             a_p25, a_p75 = pct(a_vals, .25), pct(a_vals, .75)
         a_max = hist.get("max")  # tope del Optimista: máximo de toda la historia depurada

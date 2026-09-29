@@ -1,0 +1,17 @@
+{
+ "etapa_desde": "LTM",
+ "etapa_motivo": "A: Boston Scientific cotizaba a 25-55x EBITDA mientras crecía 12-20% orgánico. En 2026 la empresa bajó su guía de crecimiento orgánico a 6,5-8% (desde 10-11%, frente a 19,5% en 2025), las ventas de Watchman se estancaron y un ciberataque en agosto la llevó a retirar su guía; la acción cayó ~50% en el año. La etapa actual es solo el LTM.",
+ "peers_excluir": {},
+ "peers_motivo": "B: medtech diversificada de gran capitalización (Medtronic, Stryker, Abbott, Edwards, Intuitive Surgical, Zimmer Biomet), datos de yfinance al 29-sep-2026.",
+ "ajuste_peers": -0.05,
+ "ajuste_motivo": "Ajuste −5%: tras la baja de guía, Boston Scientific crece como la mediana de los peers, pero con más incertidumbre de ejecución (Watchman, electrofisiología en EE. UU. y los efectos del ciberataque).",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la BSX de FY+3 del escenario Base es una medtech de crecimiento de un dígito alto, parecida a la de hoy.",
+ "fuentes": [
+  "[Motley Fool, 29-may-2026: por qué caía Boston Scientific](https://www.fool.com/investing/2026/05/29/why-boston-scientific-stock-was-sliding-this-week/)",
+  "[Nasdaq: ciberataque y guía 2026 débil](https://www.nasdaq.com/articles/cyberattack-weak-2026-outlook-weigh-bsx-stock-sell)",
+  "[TIKR: BSX cae tras el impacto del ciberataque](https://www.tikr.com/blog/boston-scientific-bsx-stock-falls-cyberattack-sales-profit-impact)"
+ ],
+ "evaluacion": "Los múltiplos (US$59,06 hoy) quedan 51% por encima del DCF (US$39,12). Los múltiplos suponen que, a FY+3, el mercado vuelve a pagar por Boston Scientific algo parecido a sus peers de medtech (~16x EBITDA, ~22x utilidad); el DCF ya incorpora la desaceleración de 2026 y da un valor incluso menor que el precio. Mientras no se confirme que el crecimiento se recupera (Watchman, electrofisiología) y que el ciberataque fue puntual, el DCF es la referencia más prudente; los múltiplos muestran el potencial si la empresa vuelve a cotizar como sus peers.",
+ "ticker": "BSX"
+}

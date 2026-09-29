@@ -29,7 +29,7 @@
  "notas": {
   "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
  },
- "evaluacion": "Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente y hacían que el valor por múltiplos coincidiera casi exactamente con el DCF. Ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Para Duolingo el DCF es más informativo que los múltiplos, porque la empresa sigue en crecimiento y su historia de múltiplos es corta y ruidosa; los múltiplos muestran cuánto paga hoy el mercado por negocios de suscripción comparables.",
+ "evaluacion": "Los múltiplos (US$150,14 hoy) quedan 10% por debajo del DCF (US$167,58). Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente y hacían que el valor por múltiplos coincidiera casi exactamente con el DCF. Ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Para Duolingo el DCF es más informativo, porque la empresa sigue en crecimiento y su historia de múltiplos es corta y ruidosa.",
  "fuentes": [
   "[Duolingo, Form 10-Q del 3T25 (30-sep-2025)](https://www.sec.gov/Archives/edgar/data/1562088/000162828025049743/duol-20250930.htm): liberación de la reserva de valuación, beneficio tributario único de US$222,7 millones.",
   "[Duolingo, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): beneficio tributario de US$231,7 millones en 2025."

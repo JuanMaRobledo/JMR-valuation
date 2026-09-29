@@ -114,12 +114,21 @@ def peer_multiples(ticker):
         fcf = ocf + capex  # capex viene negativo
         out.update(p_ocf=mcap / ocf if mcap and ocf > 0 else None, p_fcf=mcap / fcf if mcap and fcf > 0 else None,
                    ev_fcf=ev / fcf if ev and fcf > 0 else None, ocf_ttm=ocf, fcf_ttm=fcf)
+        # EV/FCFF: el FCF de yfinance es después de intereses; se suma el interés después de impuestos (21%)
+        try:
+            qi = t.quarterly_income_stmt
+            irow = next(i for i in qi.index if str(i).lower() in ("interest expense", "interest expense non operating"))
+            interest = abs(float(qi.loc[irow].iloc[:4].sum()))
+        except Exception:  # noqa: BLE001
+            interest = 0.0
+        fcff = fcf + interest * (1 - 0.21)
+        out.update(interest_ttm=interest, ev_fcff=ev / fcff if ev and fcff > 0 else None)
     except Exception as exc:  # noqa: BLE001
         out.update(p_ocf=None, p_fcf=None, ev_fcf=None, error_cashflow=str(exc)[:80])
     return out
 
 
-PEER_KEY = {"EV/EBITDA": "ev_ebitda", "EV/FCFF": "ev_fcf", "P/E": "pe", "P/FCFE": "p_fcf", "P/OCF": "p_ocf"}
+PEER_KEY = {"EV/EBITDA": "ev_ebitda", "EV/FCFF": "ev_fcff", "P/E": "pe", "P/FCFE": "p_fcf", "P/OCF": "p_ocf"}
 
 
 def main():
@@ -148,7 +157,15 @@ def main():
     def vo_row(r):
         return vo[r - 1] if r - 1 < len(vo) else []
 
-    anchors = {"empresa": name, "sheet_id": a.sheet_id, "fecha": dt.date.today().isoformat(), "ke": ke,
+    # FCF después de intereses / FCFF del último cierre: convierte el EV/FCF histórico en EV/FCFF.
+    # En 'Financials Multiples' el interés neto de impuestos es positivo cuando es un gasto.
+    fm_rows = {str(r[0]).strip(): r for r in fm[:40] if r}
+    try:
+        fcff_last, int_last = fm_rows["FCFF"][3], fm_rows["Interest (Net of Tax)"][3]
+        fcf_ratio = (fcff_last - int_last) / fcff_last if fcff_last else None
+    except (KeyError, IndexError, TypeError):
+        fcf_ratio = None
+    anchors = {"fcf_a_fcff": fcf_ratio, "empresa": name, "sheet_id": a.sheet_id, "fecha": dt.date.today().isoformat(), "ke": ke,
                "categoria": vr[6]["values"][0][0], "metodos": {}, "justificado": {}}
     # C: multiplo justificado por escenario
     for scen in FM_START:

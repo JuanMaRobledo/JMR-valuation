@@ -1,0 +1,557 @@
+{
+ "fcf_a_fcff": 0.958998490238406,
+ "empresa": "Celsius Holdings, Inc. (NASDAQ:CELH)",
+ "sheet_id": "1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o",
+ "fecha": "2026-09-29",
+ "ke": 0.1168,
+ "categoria": "Crecimiento",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Dec '16": -7.54,
+     "Dec '17": -8.12,
+     "Dec '18": -5.51,
+     "Dec '19": -69.02,
+     "Dec '20": 136.02,
+     "Dec '21": -659.43,
+     "Dec '22": -13.06,
+     "Dec '23": 44.08,
+     "Dec '24": 32.62,
+     "Dec '25": 70.63,
+     "LTM": 36.19
+    },
+    "mediana_5a": 44.08,
+    "mediana_10a": 44.08,
+    "p25": 35.3,
+    "p75": 50.71,
+    "min": 32.62,
+    "max": 70.63,
+    "ultimo_cierre": 70.63,
+    "ltm": 36.19,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '16",
+      -7.54,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      -8.12,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      -5.51,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      -69.02,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -659.43,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -13.06,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      136.02,
+      "> 2,5x la mediana (44.1x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 19.82,
+    "p25": 13.0,
+    "p75": 23.45
+   },
+   "justificado": {
+    "Conservador": 10.96,
+    "Base": 12.07,
+    "Optimista": 15.27
+   },
+   "actual_J": {
+    "J8": 21.18,
+    "J19": 23.03,
+    "J30": 25.58
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Dec '16": -8.79,
+     "Dec '17": -7.74,
+     "Dec '18": -4.95,
+     "Dec '19": 96.63,
+     "Dec '20": 417.78,
+     "Dec '21": -18.52,
+     "Dec '22": 20.38,
+     "Dec '23": 95.98,
+     "Dec '24": 22.2,
+     "Dec '25": 37.24,
+     "LTM": 15.43
+    },
+    "mediana_5a": 22.2,
+    "mediana_10a": 22.2,
+    "p25": 19.14,
+    "p75": 25.96,
+    "min": 15.43,
+    "max": 37.24,
+    "ultimo_cierre": 37.24,
+    "ltm": 15.43,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '16",
+      -8.79,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      -7.74,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      -4.95,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -18.52,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      96.63,
+      "> 2,5x la mediana (37.2x)"
+     ],
+     [
+      "Dec '20",
+      417.78,
+      "> 2,5x la mediana (37.2x)"
+     ],
+     [
+      "Dec '23",
+      95.98,
+      "> 2,5x la mediana (37.2x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 25.28,
+    "p25": 22.19,
+    "p75": 28.96
+   },
+   "justificado": {
+    "Conservador": 17.11,
+    "Base": 21.29,
+    "Optimista": 33.12
+   },
+   "actual_J": {
+    "J8": 20.46,
+    "J19": 22.56,
+    "J30": 27.96
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Dec '16": "",
+     "Dec '17": "",
+     "Dec '18": -5.27,
+     "Dec '19": 10.06,
+     "Dec '20": 152.45,
+     "Dec '21": 497.2,
+     "Dec '22": -13.98,
+     "Dec '23": 56.79,
+     "Dec '24": 43.18,
+     "Dec '25": 108.9,
+     "LTM": 54.88
+    },
+    "mediana_5a": 56.79,
+    "mediana_10a": 56.79,
+    "p25": 51.96,
+    "p75": 69.82,
+    "min": 43.18,
+    "max": 108.9,
+    "ultimo_cierre": 108.9,
+    "ltm": 54.88,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      -5.27,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -13.98,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      10.06,
+      "< 0,4x la mediana (56.8x), caída puntual"
+     ],
+     [
+      "Dec '20",
+      152.45,
+      "> 2,5x la mediana (56.8x)"
+     ],
+     [
+      "Dec '21",
+      497.2,
+      "> 2,5x la mediana (56.8x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 28.66,
+    "p25": 19.17,
+    "p75": 31.32
+   },
+   "justificado": {
+    "Conservador": 11.08,
+    "Base": 13.67,
+    "Optimista": 19.06
+   },
+   "actual_J": {
+    "J8": 25.77,
+    "J19": 29.28,
+    "J30": 34.64
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Dec '16": -13.67,
+     "Dec '17": -9.41,
+     "Dec '18": -5.6,
+     "Dec '19": 110.93,
+     "Dec '20": 433.03,
+     "Dec '21": -18.68,
+     "Dec '22": 26.52,
+     "Dec '23": 102.08,
+     "Dec '24": 25.85,
+     "Dec '25": 36.34,
+     "LTM": 15.3
+    },
+    "mediana_5a": 26.52,
+    "mediana_10a": 26.52,
+    "p25": 23.21,
+    "p75": 28.98,
+    "min": 15.3,
+    "max": 36.34,
+    "ultimo_cierre": 36.34,
+    "ltm": 15.3,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '16",
+      -13.67,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      -9.41,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      -5.6,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -18.68,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      110.93,
+      "> 2,5x la mediana (36.3x)"
+     ],
+     [
+      "Dec '20",
+      433.03,
+      "> 2,5x la mediana (36.3x)"
+     ],
+     [
+      "Dec '23",
+      102.08,
+      "> 2,5x la mediana (36.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 23.81,
+    "p25": 19.58,
+    "p75": 26.26
+   },
+   "justificado": {
+    "Conservador": 13.8,
+    "Base": 16.45,
+    "Optimista": 22.83
+   },
+   "actual_J": {
+    "J8": 20.9,
+    "J19": 22.65,
+    "J30": 26.54
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Dec '16": -13.67,
+     "Dec '17": -9.52,
+     "Dec '18": -5.7,
+     "Dec '19": 110.93,
+     "Dec '20": 356.61,
+     "Dec '21": -19.28,
+     "Dec '22": 24.49,
+     "Dec '23": 89.5,
+     "Dec '24": 23.54,
+     "Dec '25": 32.69,
+     "LTM": 13.92
+    },
+    "mediana_5a": 24.49,
+    "mediana_10a": 24.49,
+    "p25": 21.14,
+    "p75": 26.54,
+    "min": 13.92,
+    "max": 32.69,
+    "ultimo_cierre": 32.69,
+    "ltm": 13.92,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '16",
+      -13.67,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      -9.52,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      -5.7,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -19.28,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      110.93,
+      "> 2,5x la mediana (32.7x)"
+     ],
+     [
+      "Dec '20",
+      356.61,
+      "> 2,5x la mediana (32.7x)"
+     ],
+     [
+      "Dec '23",
+      89.5,
+      "> 2,5x la mediana (32.7x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 19.79,
+    "p25": 13.98,
+    "p75": 24.35
+   },
+   "justificado": {
+    "Conservador": 11.33,
+    "Base": 13.77,
+    "Optimista": 18.76
+   },
+   "actual_J": {
+    "J8": 18.14,
+    "J19": 20.32,
+    "J30": 23.89
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.041357142857142856,
+   "g_años_4_10": 0.03281428571428571,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.10223051363305852,
+   "ke": 0.1168,
+   "roe_fy3": 0.2094740240032282,
+   "fcff_ebitda": 0.6408820866930124,
+   "fcfe_ocf": 0.821076825285546,
+   "multiplos": {
+    "EV/FCFF": 17.106940680031347,
+    "P/FCFE": 13.803256958909298,
+    "P/E": 11.078034714003813,
+    "EV/EBITDA": 10.96353183995207,
+    "P/OCF": 11.333534402421867
+   }
+  },
+  "Base": {
+   "g": 0.05278571428571428,
+   "g_años_4_10": 0.05567142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.10223051363305852,
+   "ke": 0.1168,
+   "roe_fy3": 0.31225656380316874,
+   "fcff_ebitda": 0.5670867416827372,
+   "fcfe_ocf": 0.8370258542585262,
+   "multiplos": {
+    "EV/FCFF": 21.292142514119863,
+    "P/FCFE": 16.44610577995983,
+    "P/E": 13.665957845709153,
+    "EV/EBITDA": 12.074491721776718,
+    "P/OCF": 13.765815739696961
+   }
+  },
+  "Optimista": {
+   "g": 0.06992857142857142,
+   "g_años_4_10": 0.08995714285714286,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.10223051363305852,
+   "ke": 0.1168,
+   "roe_fy3": 0.42328036719273116,
+   "fcff_ebitda": 0.4610689065122997,
+   "fcfe_ocf": 0.8216760464498187,
+   "multiplos": {
+    "EV/FCFF": 33.12273189814408,
+    "P/FCFE": 22.826882048156044,
+    "P/E": 19.055737966084223,
+    "EV/EBITDA": 15.27186177697736,
+    "P/OCF": 18.7563021941052
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "MNST",
+   "nombre": "Monster Beverage Corporation",
+   "precio": 41.74,
+   "pe": 38.648148,
+   "ev_ebitda": 26.823,
+   "crec_ingresos": 0.202,
+   "margen_operativo": 0.2918,
+   "roe": 0.25704,
+   "p_ocf": 36.525018595098544,
+   "p_fcf": 39.284679023816544,
+   "ev_fcf": 37.79957120798811,
+   "ocf_ttm": 2238762000.0,
+   "fcf_ttm": 2081494000.0,
+   "interest_ttm": 1400000.0,
+   "ev_fcff": 37.779497105541154
+  },
+  {
+   "ticker": "KDP",
+   "nombre": "Keurig Dr Pepper Inc.",
+   "precio": 31.03,
+   "pe": 31.343435,
+   "ev_ebitda": 17.355,
+   "crec_ingresos": 0.756,
+   "margen_operativo": 0.12888,
+   "roe": 0.051,
+   "p_ocf": 16.710102869806093,
+   "p_fcf": 21.489277329262087,
+   "ev_fcf": 42.45678887735369,
+   "ocf_ttm": 2527000000.0,
+   "fcf_ttm": 1965000000.0,
+   "interest_ttm": 1043000000.0,
+   "ev_fcff": 29.913405358967648
+  },
+  {
+   "ticker": "PEP",
+   "nombre": "Pepsico, Inc.",
+   "precio": 128.69,
+   "pe": 16.866318,
+   "ev_ebitda": 11.548,
+   "crec_ingresos": 0.064,
+   "margen_operativo": 0.16836001,
+   "roe": 0.51508,
+   "p_ocf": 13.064100680142687,
+   "p_fcf": 18.938864334410688,
+   "ev_fcf": 23.49262785778927,
+   "ocf_ttm": 13456000000.0,
+   "fcf_ttm": 9282000000.0,
+   "interest_ttm": 1128000000.0,
+   "ev_fcff": 21.434778295744078
+  },
+  {
+   "ticker": "KO",
+   "nombre": "Coca-Cola Company (The)",
+   "precio": 86.84,
+   "pe": 26.078077,
+   "ev_ebitda": 23.835,
+   "crec_ingresos": 0.067,
+   "margen_operativo": 0.34873,
+   "roe": 0.42054,
+   "p_ocf": 22.863379738098153,
+   "p_fcf": 26.133689003287405,
+   "ev_fcf": 28.338200495208785,
+   "ocf_ttm": 16342000000.0,
+   "fcf_ttm": 14297000000.0,
+   "interest_ttm": 1566000000.0,
+   "ev_fcff": 26.081344218604958
+  },
+  {
+   "ticker": "BRBR",
+   "nombre": "BellRing Brands, Inc.",
+   "precio": 7.75,
+   "pe": 5.4577465,
+   "ev_ebitda": 6.094,
+   "crec_ingresos": 0.042,
+   "margen_operativo": 0.114659995,
+   "roe": null,
+   "p_ocf": 3.8494488167449807,
+   "p_fcf": 4.005137635555555,
+   "ev_fcf": 8.989747768888888,
+   "ocf_ttm": 234100000.0,
+   "fcf_ttm": 225000000.0,
+   "interest_ttm": 79100000.0,
+   "ev_fcff": 7.035723968569232
+  },
+  {
+   "ticker": "COCO",
+   "nombre": "The Vita Coco Company, Inc.",
+   "precio": 56.55,
+   "pe": 31.243095,
+   "ev_ebitda": 22.29,
+   "crec_ingresos": 0.281,
+   "margen_operativo": 0.29209998,
+   "roe": 0.31370002,
+   "p_ocf": 24.847318050313987,
+   "p_fcf": 26.295546898103503,
+   "ev_fcf": 24.46912349726776,
+   "ocf_ttm": 131693000.0,
+   "fcf_ttm": 124440000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 24.46912349726776
+  }
+ ]
+}
