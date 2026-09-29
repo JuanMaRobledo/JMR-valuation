@@ -45,8 +45,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
 
 _ROOT = Path(__file__).resolve().parent.parent
@@ -79,6 +81,118 @@ CHK_TITLE, CHK_HDR, CHK_NOM, CHK_PV, CHK_OK = 45, 46, 47, 48, 49
 NOTE_ROW = 51
 NCOL = 11
 
+@dataclass(frozen=True)
+class Layout:
+    """Donde esta cada cosa en una hoja concreta. DEFAULT = plantilla maestra actual; las
+    versiones anteriores (jul-ago 2026) nombran las hojas 'EV/EBITDA' o 'EV∕EBITDA', usan
+    ',' como separador (locale es_MX) o tienen todo una fila mas arriba."""
+    sheets: tuple[str, ...] = tuple(s for s, _ in METHODS)        # nombre real de cada hoja de multiplo
+    src_rows: tuple[int, int, int] = (12, 23, 34)                  # "Total Target Price + Dividends"
+    res_dcf_row: int = 6
+    res_rows: tuple[int, ...] = tuple(r for _, r in METHODS)        # filas de los 5 multiplos en el Resumen
+    dcf_refs: tuple[str, str, str] = ("B86", "B35", "B137")         # DCF hoy en 'Valuation output'
+    ke_expr: str = "IFERROR('Cost of capital worksheet'!B63;'Input sheet'!B36)"
+    ke_label: str = "'Cost of capital worksheet'!B63"
+    mos_ref: str = "G4"
+    price_ref: str = "'Input sheet'!D1"
+    title_expr: str = "'Input sheet'!A1"
+    sep: str = ";"
+
+    def q(self, i: int) -> str:
+        return "'" + self.sheets[i].replace("'", "''") + "'" if not self.sheets[i].isalnum() else self.sheets[i]
+
+
+DEFAULT = Layout()
+
+
+def _localize(rows: list[list[str]], sep: str) -> list[list[str]]:
+    """Las formulas se escriben con ';' (locale es_CO); en hojas con ',' como separador
+    (es_MX, en_US) se cambia fuera de los textos entre comillas, y el formato de TEXT()."""
+    if sep == ";":
+        return rows
+
+    def conv(v: str) -> str:
+        if not v.startswith("="):
+            return v
+        parts = v.split('"')
+        for i in range(0, len(parts), 2):
+            parts[i] = parts[i].replace(";", ",")
+        return '"'.join(parts).replace('"0,00%"', '"0.00%"')
+    return [[conv(v) for v in row] for row in rows]
+
+
+_NORM = lambda t: re.sub(r"[/∕ ]", "", t).upper()  # noqa: E731
+
+
+def detect_layout(sh) -> tuple[Layout | None, str]:
+    """Ubica hojas, filas y celdas por sus rotulos. Devuelve (None, motivo) si no es el modelo."""
+    titles = [w.title for w in sh.worksheets()]
+    names = []
+    for key, _ in METHODS:
+        found = [t for t in titles if _NORM(t) == key]
+        if not found:
+            return None, f"falta la hoja {key}"
+        names.append(found[0])
+    for t in (RES, "Valuation output"):
+        if t not in titles:
+            return None, f"falta la hoja {t}"
+    quoted = ["'" + n + "'" for n in names]
+    ranges = [f"{q}!A1:A60" for q in quoted] + [f"{R}!A1:G26"]
+    has_coc = "Cost of capital worksheet" in titles
+    if has_coc:
+        ranges.append("'Cost of capital worksheet'!A50:A80")
+    vr = sh.values_batch_get(ranges, params={"valueRenderOption": "FORMULA"})["valueRanges"]
+    src = None
+    for v in vr[:5]:
+        rows = tuple(i + 1 for i, r in enumerate(v.get("values", [])) if r and "Total Target Price" in str(r[0]))
+        if len(rows) != 3 or (src and rows != src):
+            return None, f"filas 'Total Target Price' no reconocidas en {names}: {rows}"
+        src = rows
+    res = [r + [""] * (7 - len(r)) for r in vr[5].get("values", [])]
+    col_a = [str(r[0]).strip() for r in res]
+    if "DCF Damodaran" not in col_a:
+        return None, "Resumen sin fila 'DCF Damodaran'"
+    dcf_row = col_a.index("DCF Damodaran") + 1
+    labels = ["EV/EBITDA", "EV/FCFF", "P/E", "P/FCFE", "P/OCF"]
+    if col_a[dcf_row:dcf_row + 5] != labels:
+        return None, f"Resumen: multiplos no siguen al DCF ({col_a[dcf_row:dcf_row + 5]})"
+    refs = []
+    for c in (2, 3, 4):
+        m = re.search(r"'Valuation output'!\$?B\$?(\d+)", str(res[dcf_row - 1][c]))
+        if not m:
+            return None, f"DCF del Resumen sin referencia a 'Valuation output': {res[dcf_row - 1][c]}"
+        refs.append(f"B{m.group(1)}")
+    sep = ";" if ";" in str(res[dcf_row - 1][1]) else ","
+    mos = next((f"G{i + 1}" for i, r in enumerate(res) if str(r[5]).startswith("Margen de Seguridad")), None)
+    if not mos:
+        return None, "Resumen sin 'Margen de Seguridad (MOS)'"
+    ke_expr, ke_label = "'Input sheet'!B36", "'Input sheet'!B36"
+    if has_coc:
+        coc = [str(r[0]).strip() if r else "" for r in vr[6].get("values", [])]
+        if "Cost of Component" in coc:
+            cell = f"'Cost of capital worksheet'!B{50 + coc.index('Cost of Component')}"
+            ke_expr, ke_label = f"IFERROR({cell};'Input sheet'!B36)", cell
+    a1, c1, d1 = str(res[0][0]), str(res[0][2]).strip(), str(res[0][3])
+    if a1 == "='Input sheet'!A1":
+        title = "'Input sheet'!A1"
+    elif a1.strip().upper() == "TICKER":
+        title = f"{R}!B1"
+    else:
+        title = '"' + sh.title.replace('"', "'") + '"'
+    if d1 == "='Input sheet'!D1" or (c1 == "Precio" and "Input sheet" in d1):
+        price = "'Input sheet'!D1"
+    elif c1 == "Precio":
+        price = f"{R}!D1"
+    else:
+        row = next((i + 1 for i, a in enumerate(col_a) if a.startswith("Precio al día del análisis")), None)
+        if not row:
+            return None, "Resumen sin precio de referencia"
+        price = f"{R}!B{row}"
+    return Layout(sheets=tuple(names), src_rows=src, res_dcf_row=dcf_row,
+                  res_rows=tuple(range(dcf_row + 1, dcf_row + 6)), dcf_refs=tuple(refs), ke_expr=ke_expr,
+                  ke_label=ke_label, mos_ref=mos, price_ref=price, title_expr=title, sep=sep), ""
+
+
 HEADERS = ["Método", "Peso total", "Peso en múltiplos", "Precio + div. FY+1", "Precio + div. FY+2",
            "Precio + div. FY+3", "VP 1 año", "VP 2 años", "VP 3 años", "Consolidado hoy", "Chequeo VP3 < FY+3"]
 
@@ -108,7 +222,7 @@ def _total_row(r: int, first: int) -> list[str]:
     return row
 
 
-def sheet_values() -> list[list[str]]:
+def sheet_values(lay: Layout = DEFAULT) -> list[list[str]]:
     """Contenido completo de la hoja (filas 1..NOTE_ROW+3, columnas A:K)."""
     rows: list[list[str]] = [[""] * NCOL for _ in range(NOTE_ROW + 3)]
 
@@ -116,35 +230,35 @@ def sheet_values() -> list[list[str]]:
         for i, v in enumerate(values):
             rows[r - 1][c0 + i] = v
 
-    put(1, [f"='Input sheet'!A1&\" · Múltiplos a valor presente (1, 2 y 3 años)\""])
+    put(1, [f"={lay.title_expr}&\" · Múltiplos a valor presente (1, 2 y 3 años)\""])
     put(2, ["Cada múltiplo da un precio objetivo al cierre de FY+1, FY+2 y FY+3 (múltiplo × métrica proyectada ÷ acciones). "
             "Se le suman los dividendos por acción acumulados hasta ese año, sin descontarlos uno a uno, y el total se trae a hoy "
             "con el costo del patrimonio: VP = (Precio FY+n + Dividendos FY+1..FY+n) ÷ (1 + Ke)^n."])
     put(4, ["Parámetro", "Valor usado", "Entrada manual", "Automático"])
     put(5, ["Tasa de descuento: Ke (costo del patrimonio del DCF)", "=IF(ISNUMBER(C5);C5;D5)", "",
-            "=IFERROR('Cost of capital worksheet'!B63;'Input sheet'!B36)"])
+            f"={lay.ke_expr}"])
     put(6, ["Criterio para consolidar cada método", f'=IF(C6="{ONLY3}";"{ONLY3}";"{DEFAULT_CRIT}")', "", DEFAULT_CRIT])
     put(7, ["Factor de descuento a 1, 2 y 3 años", "=1/(1+B5)", "=1/(1+B5)^2", "=1/(1+B5)^3"])
 
-    for name, src_row, _dcf, _col in SCENARIOS:
+    for k, (name, *_rest) in enumerate(SCENARIOS):
         first = FIRST_ROW[name]
         put(first - 2, [name.upper()])
         put(first - 1, HEADERS)
-        for i, (sheet, res_row) in enumerate(METHODS):
-            put(first + i, _method_row(sheet, res_row, first + i, first, src_row))
+        for i in range(len(METHODS)):
+            put(first + i, _method_row(lay.q(i), lay.res_rows[i], first + i, first, lay.src_rows[k]))
         put(first + len(METHODS), _total_row(first + len(METHODS), first))
 
     put(SUM_TITLE, ["VALOR INTRÍNSECO HOY · DCF + MÚLTIPLOS DESCONTADOS"])
     put(SUM_HDR, ["Concepto", "Peso", "Conservador", "Base", "Optimista"])
-    put(SUM_DCF, ["DCF (valor presente)", f"={R}!B6"] + [f"='Valuation output'!{d}" for _n, _s, d, _c in SCENARIOS])
-    put(SUM_MULT, ["Múltiplos consolidados (valor presente)", f"=SUM({R}!B7:B11)"]
+    put(SUM_DCF, ["DCF (valor presente)", f"={R}!B{lay.res_dcf_row}"] + [f"='Valuation output'!{d}" for d in lay.dcf_refs])
+    put(SUM_MULT, ["Múltiplos consolidados (valor presente)", f"=SUM({R}!B{lay.res_rows[0]}:B{lay.res_rows[-1]})"]
         + [f"=J{FIRST_ROW[n] + len(METHODS)}" for n, *_ in SCENARIOS])
     put(SUM_W, ["Valor intrínseco ponderado", f"=B{SUM_DCF}+B{SUM_MULT}"]
         + [f'=IFERROR({c}{SUM_DCF}*$B${SUM_DCF}+{c}{SUM_MULT}*$B${SUM_MULT};"")' for c in "CDE"])
-    put(SUM_PRICE, ["Precio de referencia de la hoja", "='Input sheet'!D1"])
+    put(SUM_PRICE, ["Precio de referencia de la hoja", f"={lay.price_ref}"])
     put(SUM_DISC, ["Descuento del precio frente al ponderado", ""]
         + [f'=IFERROR(1-$B${SUM_PRICE}/{c}{SUM_W};"")' for c in "CDE"])
-    put(SUM_MOS, ["Precio de compra con MOS", f"={R}!G4"]
+    put(SUM_MOS, ["Precio de compra con MOS", f"={R}!{lay.mos_ref}"]
         + [f'=IFERROR({c}{SUM_W}*(1-$B${SUM_MOS});"")' for c in "CDE"])
 
     put(CHK_TITLE, ["CHEQUEO MATEMÁTICO · MÚLTIPLOS A 3 AÑOS"])
@@ -157,19 +271,19 @@ def sheet_values() -> list[list[str]]:
         + [f'=IF(NOT(ISNUMBER({c}{CHK_PV}));"";IF({c}{CHK_NOM}<=0;"n/a (≤ 0)";IF({c}{CHK_PV}<{c}{CHK_NOM};"OK";"REVISAR")))'
            for c in "CDE"])
 
-    put(NOTE_ROW, ["Fuentes: precio + dividendos de cada horizonte = filas 12, 23 y 34 (columnas F:H) de EVEBITDA, EVFCFF, PE, "
-                   "PFCFE y POCF; dividendos por acción de «Financials Multiples». Ke = 'Cost of capital worksheet'!B63 "
+    put(NOTE_ROW, [f"Fuentes: precio + dividendos de cada horizonte = filas {', '.join(map(str, lay.src_rows))} (columnas F:H) "
+                   f"de {', '.join(lay.sheets)}; dividendos por acción de «Financials Multiples». Ke = {lay.ke_label} "
                    "(C5 lo reemplaza). C6 = «Solo 3 años» usa solo el VP a 3 años; vacío = promedio simple de 1, 2 y 3 años."])
     put(NOTE_ROW + 1, ["Los pesos salen de la categoría de empresa del Resumen (I5:U11): el DCF conserva su peso y el de los "
                        "múltiplos se reparte entre los 5 métodos en la misma proporción. Resumen C32:E47 muestra DCF, múltiplos "
                        "consolidados, ponderado y cada método por separado."])
-    return rows
+    return _localize(rows, lay.sep)
 
 
 RES_FIRST, RES_LAST = 28, 50
 
 
-def resumen_values() -> list[list[str]]:
+def resumen_values(lay: Layout = DEFAULT) -> list[list[str]]:
     """'Resumen de Valoración' A28:E50."""
     rows = [[""] * 5 for _ in range(RES_LAST - RES_FIRST + 1)]
 
@@ -182,8 +296,9 @@ def resumen_values() -> list[list[str]]:
              "Detalle en «Descuento de múltiplos»."])
     put(30, ["VALOR POR ACCIÓN HOY | DCF + MÚLTIPLOS DESCONTADOS"])
     put(31, ["Método", "Peso", "Conservador", "Base", "Optimista"])
-    for r, label, src, w in ((32, "DCF hoy (valor presente)", SUM_DCF, "=B6"),
-                             (33, "Múltiplos consolidados hoy", SUM_MULT, "=SUM(B7:B11)"),
+    d, m0, m1 = lay.res_dcf_row, lay.res_rows[0], lay.res_rows[-1]
+    for r, label, src, w in ((32, "DCF hoy (valor presente)", SUM_DCF, f"=B{d}"),
+                             (33, "Múltiplos consolidados hoy", SUM_MULT, f"=SUM(B{m0}:B{m1})"),
                              (34, "Valor intrínseco ponderado hoy", SUM_W, "=SUM(B32:B33)")):
         put(r, [label, w] + [f"={Q}!{c}{src}" for c in "CDE"])
     put(35, ["Descuento del precio frente al ponderado", ""] + [f"={Q}!{c}{SUM_DISC}" for c in "CDE"])
@@ -191,11 +306,11 @@ def resumen_values() -> list[list[str]]:
     put(37, ["Chequeo: múltiplos VP 3 años < FY+3", ""] + [f"={Q}!{c}{CHK_OK}" for c in "CDE"])
     put(39, ["CADA MÉTODO A VALOR HOY"])
     put(40, ["Método", "Peso", "Conservador", "Base", "Optimista"])
-    put(41, ["DCF Damodaran", "=B6"] + [f"={Q}!{c}{SUM_DCF}" for c in "CDE"])
-    for i, (_sheet, res_row) in enumerate(METHODS):
+    put(41, ["DCF Damodaran", f"=B{d}"] + [f"={Q}!{c}{SUM_DCF}" for c in "CDE"])
+    for i, res_row in enumerate(lay.res_rows):
         put(42 + i, [f"=A{res_row}", f"=B{res_row}"] + [f"={Q}!J{FIRST_ROW[n] + i}" for n, *_ in SCENARIOS])
     put(47, [f'={Q}!B6&" · Ke "&TEXT({Q}!B5;"0,00%")'])
-    return rows
+    return _localize(rows, lay.sep)
 
 
 def _format_sheet(ws) -> list[dict]:
@@ -299,12 +414,9 @@ def _known_resumen_block(block: list[list[str]]) -> bool:
 def apply(client, sheet_id: str, *, dry_run: bool) -> dict:
     sh = _open(client, sheet_id)
     titles = {ws.title for ws in sh.worksheets()}
-    missing = [s for s, _ in METHODS if s not in titles] + [s for s in (RES, "Valuation output", "Input sheet") if s not in titles]
-    if missing:
-        return {"estado": "omitida", "motivo": f"faltan hojas {missing}"}
-    labels = sh.values_get(f"{R}!A7:A11")["values"]
-    if [x[0] for x in labels] != ["EV/EBITDA", "EV/FCFF", "P/E", "P/FCFE", "P/OCF"]:
-        return {"estado": "omitida", "motivo": f"Resumen A7:A11 distinto: {labels}"}
+    lay, why = detect_layout(sh)
+    if lay is None:
+        return {"estado": "omitida", "motivo": why}
     got = sh.values_batch_get([f"{R}!A29:H{RES_LAST}", f"{R}!A28:E{RES_LAST}"], params={"valueRenderOption": "FORMULA"})
     block = got["valueRanges"][0].get("values", [])
     if not _known_resumen_block(block):
@@ -314,7 +426,7 @@ def apply(client, sheet_id: str, *, dry_run: bool) -> dict:
     if SHEET in titles:
         backup["descuento"] = sh.worksheet(SHEET).get_all_values(value_render_option="FORMULA")
     if dry_run:
-        return {"estado": "dry-run", "hoja_existia": SHEET in titles}
+        return {"estado": "dry-run", "hoja_existia": SHEET in titles, "layout": lay.__dict__}
 
     BACKUP_DIR.mkdir(parents=True, exist_ok=True)
     backup_path = BACKUP_DIR / f"{sheet_id}.json"
@@ -331,19 +443,20 @@ def apply(client, sheet_id: str, *, dry_run: bool) -> dict:
         ws = sh.add_worksheet(SHEET, rows=80, cols=NCOL + 2, index=res_index + 1)
     if ws.col_count < NCOL:
         ws.add_cols(NCOL - ws.col_count)
-    values = sheet_values()
+    values = sheet_values(lay)
     ws.update(values=values, range_name=f"A1:K{len(values)}", value_input_option="USER_ENTERED")
     res = sh.worksheet(RES)
     res.batch_clear([f"A29:H{RES_LAST}"])
     sh.batch_update({"requests": _format_sheet(ws) + _format_resumen(res) + _move_charts(sh, res.id)})
-    res.update(values=resumen_values(), range_name=f"A{RES_FIRST}:E{RES_LAST}", value_input_option="USER_ENTERED")
+    res.update(values=resumen_values(lay), range_name=f"A{RES_FIRST}:E{RES_LAST}", value_input_option="USER_ENTERED")
     time.sleep(2)
-    return {"estado": "aplicada", **check(sh)}
+    return {"estado": "aplicada", **check(sh, lay)}
 
 
-def check(sh) -> dict:
+def check(sh, lay: Layout | None = None) -> dict:
     """Lee los resultados y verifica VP3 < FY+3 y que las columnas FY+3 coincidan con el Resumen."""
-    vr = sh.values_batch_get([f"{Q}!A11:K34", f"{Q}!C{SUM_DCF}:E{CHK_OK}", f"{R}!C7:E11"],
+    lay = lay or detect_layout(sh)[0] or DEFAULT
+    vr = sh.values_batch_get([f"{Q}!A11:K34", f"{Q}!C{SUM_DCF}:E{CHK_OK}", f"{R}!C{lay.res_rows[0]}:E{lay.res_rows[-1]}"],
                              params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
     grid = vr[0].get("values", [])
     summ = vr[1].get("values", [])
