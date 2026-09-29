@@ -1,0 +1,31 @@
+{
+ "etapa_desde": "Dec '23",
+ "etapa_motivo": "A: Uber es rentable desde 2023; los cierres anteriores tienen EBITDA y utilidad negativos. La etapa actual es Dec '23 a LTM. En P/E se quita Dec '24: la utilidad de 2024 incluye la liberación de ~US$6.400 millones de la reserva de impuestos diferidos, que baja el P/E a 13x. La utilidad del LTM incluye revaluaciones de sus participaciones (Didi, Grab, Aurora) que se compensan entre trimestres (−US$1.500 millones en el 1T26, +US$1.600 millones en el 2T26). Se excluye la columna sin fecha de la hoja.",
+ "historia_excluir": {
+  "*": [
+   "—"
+  ],
+  "P/E": [
+   "Dec '24"
+  ]
+ },
+ "peers_excluir": {
+  "*": [
+   "LYFT"
+  ],
+  "P/E": [
+   "DASH"
+  ]
+ },
+ "peers_motivo": "B: plataformas de movilidad, reparto y viajes (DoorDash, Airbnb, Booking, Grab, Expedia), datos de yfinance al 29-sep-2026. Se excluye Lyft (P/E de 2x por la liberación de su reserva de impuestos; EV/EBITDA de 112x) y, en P/E, DoorDash (98x con margen de 4%).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: Uber crece ~15-18% con margen creciente, en la mitad del grupo (más que Booking y Expedia, menos que DoorDash).",
+ "lambda": 0.1,
+ "lambda_motivo": "λ = 0,10: C es inestable. Con un Ke de 8,6% y g de 6,7%, Ke − g es de apenas 1,9 pp y el justificado se dispara (P/E de 51x, EV/EBITDA de 43x); se le da poco peso.",
+ "fuentes": [
+  "[Uber: resultados 2T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm)",
+  "[Uber: resultados 1T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000019/uberq126earningspressrelea.htm)"
+ ],
+ "evaluacion": "PENDIENTE",
+ "ticker": "UBER"
+}

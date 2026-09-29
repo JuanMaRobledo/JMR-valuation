@@ -1,0 +1,29 @@
+{
+ "etapa_desde": "Dec '25",
+ "etapa_motivo": "A: Zoetis cotizó a 18-38x EBITDA y 29-57x utilidades como líder de salud animal con crecimiento estable. En 2026 recortó dos veces su guía (ingresos de US$9.680-9.960 millones) por las dudas de seguridad de Librela, la caída de sus anticuerpos para osteoartritis canina (−24%) y menos visitas a veterinarios; la acción cae ~25% en el año. La etapa actual es Dec '25 y el LTM.",
+ "peers_excluir": {
+  "*": [
+   "NEOG"
+  ],
+  "P/E": [
+   "MRK"
+  ],
+  "P/FCFE": [
+   "PAHC"
+  ],
+  "EV/FCFF": [
+   "PAHC"
+  ]
+ },
+ "peers_motivo": "B: salud animal y diagnóstico (IDEXX, Elanco, Phibro, Merck, Abbott), datos de yfinance al 29-sep-2026. Se excluye Neogen (margen casi cero), Merck en P/E (119x por cargos puntuales) y Phibro en los múltiplos de flujo libre (P/FCF de 146x por un año de capex alto).",
+ "ajuste_peers": -0.15,
+ "ajuste_motivo": "Ajuste −15%: Zoetis crece ~2-5% en 2026 (la mitad de IDEXX y Abbott) y tiene el riesgo de Librela; conserva los márgenes más altos del grupo.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Zoetis de FY+3 del escenario Base es una empresa de salud animal de crecimiento medio, parecida a la de hoy.",
+ "fuentes": [
+  "[Yahoo Finance: Zoetis recorta su guía por las dudas sobre Librela](https://finance.yahoo.com/news/zoetis-cuts-guidance-librela-safety-010955054.html)",
+  "[Zacks/TradingView: Zoetis cae 24,8% en el año](https://www.tradingview.com/news/zacks:c838081a4094b:0-zoetis-stock-plummets-24-8-ytd-here-s-what-you-need-to-know/)"
+ ],
+ "evaluacion": "Los múltiplos (US$111,20 hoy) quedan 30% por encima del DCF (US$85,57); el precio (US$71,43) está por debajo de ambos. Los múltiplos suponen que, a FY+3, Zoetis cotiza entre su valoración actual y la de sus peers ajustados (~14x EBITDA, ~23x utilidad), cerca de su múltiplo justificado (~25x utilidad), es decir que el mercado deja atrás las dudas sobre Librela. El DCF y el precio de hoy reflejan que la presión dura más. Si Librela se estabiliza, los múltiplos son razonables; si no, el DCF es la referencia más prudente.",
+ "ticker": "ZTS"
+}

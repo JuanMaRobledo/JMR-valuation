@@ -1,0 +1,393 @@
+{
+ "fcf_a_fcff": 0.9273695179778821,
+ "empresa": "Zoetis Inc. (NYSE:ZTS)",
+ "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+ "fecha": "2026-09-29",
+ "ke": 0.09004000000000001,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Dec '16": 18.44,
+     "Dec '17": 19.78,
+     "Dec '18": 20.77,
+     "Dec '19": 27.75,
+     "Dec '20": 30.89,
+     "Dec '21": 37.53,
+     "Dec '22": 21.69,
+     "Dec '23": 25.96,
+     "Dec '24": 20.19,
+     "Dec '25": 14.84,
+     "LTM": 9.3
+    },
+    "mediana_5a": 21.69,
+    "mediana_10a": 21.23,
+    "p25": 19.11,
+    "p75": 26.86,
+    "min": 9.3,
+    "max": 37.53,
+    "ultimo_cierre": 14.84,
+    "ltm": 9.3,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 16.08,
+    "p25": 14.49,
+    "p75": 24.19
+   },
+   "justificado": {
+    "Conservador": 12.68,
+    "Base": 18.33,
+    "Optimista": 19.99
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 9.296233408464813,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Dec '16": 60.62,
+     "Dec '17": 34.23,
+     "Dec '18": 31.52,
+     "Dec '19": 50.64,
+     "Dec '20": 49.26,
+     "Dec '21": 68.31,
+     "Dec '22": 54.66,
+     "Dec '23": 58.72,
+     "Dec '24": 33.87,
+     "Dec '25": 26.45,
+     "LTM": 15.69
+    },
+    "mediana_5a": 54.66,
+    "mediana_10a": 49.95,
+    "p25": 32.69,
+    "p75": 56.69,
+    "min": 15.69,
+    "max": 68.31,
+    "ultimo_cierre": 26.45,
+    "ltm": 15.69,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 30.08,
+    "p25": 26.03,
+    "p75": 40.94
+   },
+   "justificado": {
+    "Conservador": 19.66,
+    "Base": 29.66,
+    "Optimista": 32.35
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 15.688867286559594,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Dec '16": 32.44,
+     "Dec '17": 41.17,
+     "Dec '18": 29.19,
+     "Dec '19": 42.56,
+     "Dec '20": 48.39,
+     "Dec '21": 57.15,
+     "Dec '22": 32.64,
+     "Dec '23": 38.93,
+     "Dec '24": 29.79,
+     "Dec '25": 20.9,
+     "LTM": 12.06
+    },
+    "mediana_5a": 32.64,
+    "mediana_10a": 35.78,
+    "p25": 30.45,
+    "p75": 42.21,
+    "min": 20.9,
+    "max": 57.15,
+    "ultimo_cierre": 20.9,
+    "ltm": 12.06,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "LTM",
+      12.06,
+      "< 0,4x la mediana (32.6x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 35.08,
+    "p25": 28.15,
+    "p75": 57.97
+   },
+   "justificado": {
+    "Conservador": 17.2,
+    "Base": 24.65,
+    "Optimista": 26.67
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 12.062818336162989,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Dec '16": 53.09,
+     "Dec '17": 31.21,
+     "Dec '18": 28.25,
+     "Dec '19": 47.14,
+     "Dec '20": 47.02,
+     "Dec '21": 66.43,
+     "Dec '22": 51.26,
+     "Dec '23": 55.81,
+     "Dec '24": 31.8,
+     "Dec '25": 23.42,
+     "LTM": 12.41
+    },
+    "mediana_5a": 51.26,
+    "mediana_10a": 47.08,
+    "p25": 29.73,
+    "p75": 52.17,
+    "min": 12.41,
+    "max": 66.43,
+    "ultimo_cierre": 23.42,
+    "ltm": 12.41,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 31.88,
+    "p25": 25.21,
+    "p75": 73.77
+   },
+   "justificado": {
+    "Conservador": 18.04,
+    "Base": 26.18,
+    "Optimista": 28.26
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 12.408224852071005,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Dec '16": 37.01,
+     "Dec '17": 26.02,
+     "Dec '18": 22.92,
+     "Dec '19": 35.06,
+     "Dec '20": 37.0,
+     "Dec '21": 52.11,
+     "Dec '22": 35.55,
+     "Dec '23": 38.45,
+     "Dec '24": 24.75,
+     "Dec '25": 18.41,
+     "LTM": 10.17
+    },
+    "mediana_5a": 35.55,
+    "mediana_10a": 35.3,
+    "p25": 23.83,
+    "p75": 37.0,
+    "min": 10.17,
+    "max": 52.11,
+    "ultimo_cierre": 18.41,
+    "ltm": 10.17,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 19.67,
+    "p25": 18.45,
+    "p75": 28.2
+   },
+   "justificado": {
+    "Conservador": 13.16,
+    "Base": 23.83,
+    "Optimista": 26.56
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 10.168985105645998,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.032785714285714286,
+   "g_años_4_10": 0.015671428571428572,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.085330676235806,
+   "ke": 0.09004000000000001,
+   "roe_fy3": 0.7026903689346374,
+   "fcff_ebitda": 0.6451488014517669,
+   "fcfe_ocf": 0.7297775140344944,
+   "multiplos": {
+    "EV/FCFF": 19.65527570971838,
+    "P/FCFE": 18.038574779180593,
+    "P/E": 17.1969415578112,
+    "EV/EBITDA": 12.680577566328841,
+    "P/OCF": 13.164146259075743
+   }
+  },
+  "Base": {
+   "g": 0.04992857142857143,
+   "g_años_4_10": 0.04995714285714286,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.085330676235806,
+   "ke": 0.09004000000000001,
+   "roe_fy3": 0.8572620174816937,
+   "fcff_ebitda": 0.6180354726712552,
+   "fcfe_ocf": 0.9102471068876735,
+   "multiplos": {
+    "EV/FCFF": 29.657235837966745,
+    "P/FCFE": 26.175297385853693,
+    "P/E": 24.65079824960029,
+    "EV/EBITDA": 18.329223769240667,
+    "P/OCF": 23.825988717397806
+   }
+  },
+  "Optimista": {
+   "g": 0.05278571428571428,
+   "g_años_4_10": 0.05567142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.085330676235806,
+   "ke": 0.09004000000000001,
+   "roe_fy3": 0.9381944229366499,
+   "fcff_ebitda": 0.6180410941542787,
+   "fcfe_ocf": 0.9397324739797006,
+   "multiplos": {
+    "EV/FCFF": 32.348654022093505,
+    "P/FCFE": 28.259452411994776,
+    "P/E": 26.66948838703167,
+    "EV/EBITDA": 19.992797526232877,
+    "P/OCF": 26.556325128435468
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "IDXX",
+   "nombre": "IDEXX Laboratories, Inc.",
+   "precio": 533.44,
+   "pe": 37.487,
+   "ev_ebitda": 26.469,
+   "crec_ingresos": 0.097,
+   "margen_operativo": 0.3498,
+   "roe": 0.74211,
+   "p_ocf": 30.641410532916275,
+   "p_fcf": 33.97085172461179,
+   "ev_fcf": 34.69767493715089,
+   "ocf_ttm": 1371510000.0,
+   "fcf_ttm": 1237090000.0,
+   "interest_ttm": 37788000.0,
+   "ev_fcff": 33.8801058535789
+  },
+  {
+   "ticker": "ELAN",
+   "nombre": "Elanco Animal Health Incorporat",
+   "precio": 22.61,
+   "pe": null,
+   "ev_ebitda": 14.816,
+   "crec_ingresos": 0.102,
+   "margen_operativo": 0.086260006,
+   "roe": -0.029779999,
+   "p_ocf": 18.302358612641815,
+   "p_fcf": 29.79566032717678,
+   "ev_fcf": 39.36546178364116,
+   "ocf_ttm": 617000000.0,
+   "fcf_ttm": 379000000.0,
+   "interest_ttm": 248000000.0,
+   "ev_fcff": 25.950584456967928
+  },
+  {
+   "ticker": "PAHC",
+   "nombre": "Phibro Animal Health Corporatio",
+   "precio": 35.45,
+   "pe": 14.588477,
+   "ev_ebitda": 8.816,
+   "crec_ingresos": 0.048,
+   "margen_operativo": 0.106429994,
+   "roe": 0.29716,
+   "p_ocf": 20.873725208109754,
+   "p_fcf": 145.8875783498885,
+   "ev_fcf": 218.22642935333468,
+   "ocf_ttm": 68954000.0,
+   "fcf_ttm": 9866000.0,
+   "interest_ttm": 44034000.0,
+   "ev_fcff": 48.21688805599462
+  },
+  {
+   "ticker": "MRK",
+   "nombre": "Merck & Company, Inc.",
+   "precio": 149.28,
+   "pe": 119.423996,
+   "ev_ebitda": 14.378,
+   "crec_ingresos": 0.051,
+   "margen_operativo": -0.00241,
+   "roe": 0.06961,
+   "p_ocf": 18.445403748184503,
+   "p_fcf": 22.928430345514535,
+   "ev_fcf": 25.84326664956733,
+   "ocf_ttm": 19967000000.0,
+   "fcf_ttm": 16063000000.0,
+   "interest_ttm": 1742000000.0,
+   "ev_fcff": 23.80389400143814
+  },
+  {
+   "ticker": "NEOG",
+   "nombre": "Neogen Corporation",
+   "precio": 12.73,
+   "pe": null,
+   "ev_ebitda": 35.923,
+   "crec_ingresos": -0.001,
+   "margen_operativo": 0.0137600005,
+   "roe": -0.00379,
+   "p_ocf": 33.37126461538462,
+   "p_fcf": 87.0372794984326,
+   "ev_fcf": 106.64147059561128,
+   "ocf_ttm": 83200000.0,
+   "fcf_ttm": 31900000.0,
+   "interest_ttm": 59090000.0,
+   "ev_fcff": 43.291108319939525
+  },
+  {
+   "ticker": "ABT",
+   "nombre": "Abbott Laboratories",
+   "precio": 100.95,
+   "pe": 32.669903,
+   "ev_ebitda": 17.336,
+   "crec_ingresos": 0.13,
+   "margen_operativo": 0.14706999,
+   "roe": 0.10576,
+   "p_ocf": 18.457543736263737,
+   "p_fcf": 23.676090257522365,
+   "ev_fcf": 27.446884068311196,
+   "ocf_ttm": 9464000000.0,
+   "fcf_ttm": 7378000000.0,
+   "interest_ttm": 415000000.0,
+   "ev_fcff": 26.27913995938151
+  }
+ ]
+}

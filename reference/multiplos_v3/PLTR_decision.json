@@ -1,0 +1,42 @@
+{
+ "etapa_motivo": "A: Palantir es rentable desde 2023 y cotiza como la plataforma de IA de mayor crecimiento del software (ingresos 2026 +82% según su guía), a 150-500x EBITDA. Ese múltiplo no se usa como ancla: el Base de la hoja lleva el crecimiento de 82% a 40% en FY+3, y el múltiplo de FY+3 tiene que ser el de una empresa que crece 40%, no 80%. El ancla es B (peers ajustados).",
+ "historia_excluir": {
+  "*": [
+   "—",
+   "Dec '18",
+   "Dec '19",
+   "Dec '20",
+   "Dec '21",
+   "Dec '22",
+   "Dec '23",
+   "Dec '24",
+   "Dec '25",
+   "LTM"
+  ]
+ },
+ "peers_excluir": {
+  "*": [
+   "CRWD",
+   "NET",
+   "SNOW"
+  ],
+  "P/E": [
+   "AXON",
+   "PANW",
+   "MDB",
+   "DDOG"
+  ]
+ },
+ "peers_motivo": "B: software de crecimiento alto y rentable (ServiceNow, Fortinet, AppLovin, Datadog, MongoDB, Axon, Palo Alto), datos de yfinance al 29-sep-2026. Se excluyen CrowdStrike, Cloudflare y Snowflake (margen operativo GAAP negativo: sus múltiplos de utilidad y EBITDA no tienen sentido) y, en P/E, Axon, Palo Alto, MongoDB y Datadog (P/E de 170-1.000x por compensación en acciones y utilidad casi cero).",
+ "ajuste_peers": 0.25,
+ "ajuste_motivo": "Ajuste +25%: en FY+3 el escenario Base todavía crece 40%, frente a 25-35% de la mediana de los peers hoy, con márgenes más altos.",
+ "lambda": 0.0,
+ "lambda_motivo": "λ no aplica: el múltiplo justificado C no se puede calcular en ningún escenario porque el crecimiento de los años 4-10 (19-31%) supera al WACC (10,9%); la fórmula de Gordon exige g al menos 1 pp por debajo. Sin A ni C, el Base es B.",
+ "fuentes": [
+  "[Seeking Alpha: Palantir guía ingresos 2026 de US$8.150 millones](https://seekingalpha.com/news/4624208-palantir-outlines-2026-revenue-of-8_15b-8_158b-as-u-s-commercial-guidance-rises-above-3_424b)",
+  "[I/O Fund: ¿es sostenible la valoración de Palantir?](https://io-fund.com/ai-stocks/palantir-stock-2026-forecast-valuation)"
+ ],
+ "evaluacion": "Los múltiplos (US$137,05 hoy) quedan 30% por encima del DCF (US$105,73); el precio (US$187,48) está por encima de ambos. Los múltiplos suponen que a FY+3 Palantir cotiza como el software de crecimiento alto de hoy con una prima de 25% (~60x EBITDA, ~78x utilidad), mientras que el DCF lleva el crecimiento de 40% en FY+3 a 5% en el año 10 con un WACC de 10,9%. El mercado paga por un crecimiento alto más largo que ambos. Ojo: P/E da US$196 porque la utilidad normalizada de FY+3 de la hoja (US$12.204 millones) supera al EBITDA (US$7.991 millones); conviene revisar esa proyección. Mientras tanto, el DCF y los múltiplos de flujo son la referencia más prudente.",
+ "ticker": "PLTR",
+ "historia_motivo": "la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza"
+}

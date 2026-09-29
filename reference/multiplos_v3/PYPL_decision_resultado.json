@@ -1,0 +1,280 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '23",
+  "etapa_motivo": "A: PayPal cotizó a 18-60x EBITDA mientras crecía 15-20%. Desde 2023 es una procesadora de crecimiento bajo (~5%): en febrero de 2026 decepcionó con resultados y una guía de utilidad por acción plana, cambió de CEO (Enrique Lores reemplazó a Alex Chriss) y la acción cayó ~20%. La etapa actual es Dec '23 a LTM.",
+  "peers_excluir": {
+   "*": [
+    "FI"
+   ],
+   "P/E": [
+    "XYZ"
+   ]
+  },
+  "peers_motivo": "B: pagos (Visa, Mastercard, Global Payments, Block, Adyen), datos de yfinance al 29-sep-2026. Fiserv (FI) no devolvió datos. En P/E se excluye Block (132x: utilidad deprimida por cargos puntuales).",
+  "ajuste_peers": -0.3,
+  "ajuste_motivo": "Ajuste −30%: PayPal crece ~5% con margen operativo de ~17%, frente a ~14% de crecimiento y márgenes de 44-66% de Visa, Mastercard y Adyen.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la PayPal de FY+3 del escenario Base es una procesadora madura de crecimiento bajo, parecida a la de hoy.",
+  "fuentes": [
+   "[CNBC, 3-feb-2026: PayPal cae ~20% por la salida del CEO y la guía 2026](https://www.cnbc.com/2026/02/03/paypal-pypl-earnings-q4-2025.html)"
+  ],
+  "evaluacion": "Los múltiplos (US$85,26 hoy) quedan 1% por encima del DCF (US$84,77): ambos métodos coinciden. Los dos quedan muy por encima del precio (US$54,28): el mercado descuenta que la utilidad no crece (guía 2026 plana) y un riesgo de ejecución con el nuevo CEO que el escenario Base no incorpora del todo. Los múltiplos ya usan la valoración de la etapa de bajo crecimiento (~9x EBITDA, ~13x utilidad), subida por peers ajustados −30% y por el justificado.",
+  "ticker": "PYPL"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 8.9,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 8,9x",
+   "A_p25": 7.48,
+   "A_p75": 10.93,
+   "A_max": 39.7,
+   "A_excluidos": [
+    [
+     "Dec '20",
+     60.51,
+     "> 2,5x la mediana (18.5x)"
+    ]
+   ],
+   "B_mediana": 21.97,
+   "B_ajustada": 15.38,
+   "B_n": 5,
+   "B_peers": "V 22,0x, MA 22,8x, GPN 9,2x, XYZ 29,0x, ADYEY 14,8x",
+   "B_excluidos": [
+    "FI"
+   ],
+   "C": {
+    "Conservador": 15.42,
+    "Base": 16.96,
+    "Optimista": 19.18
+   },
+   "mercado": 12.14,
+   "lambda": 0.25,
+   "conservador": 10.77,
+   "base": 13.34,
+   "optimista": 15.11,
+   "factor_cons": 0.807,
+   "factor_opt": 1.132,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    8.9,
+    16.96
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 7.658309618668185,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 11.58,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 11,6x (EV/FCF × 1,05 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 9.48,
+   "A_p75": 13.62,
+   "A_max": 40.4,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     44.34,
+     "> 2,5x la mediana (17.1x)"
+    ],
+    [
+     "Dec '20",
+     54.33,
+     "> 2,5x la mediana (17.1x)"
+    ]
+   ],
+   "B_mediana": 28.9,
+   "B_ajustada": 20.23,
+   "B_n": 4,
+   "B_peers": "V 31,6x, MA 30,6x, GPN 27,2x, XYZ 11,4x",
+   "B_excluidos": [
+    "FI"
+   ],
+   "C": {
+    "Conservador": 20.71,
+    "Base": 22.73,
+    "Optimista": 25.53
+   },
+   "mercado": 15.9,
+   "lambda": 0.25,
+   "conservador": 14.88,
+   "base": 17.61,
+   "optimista": 19.76,
+   "factor_cons": 0.845,
+   "factor_opt": 1.122,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    11.58,
+    22.73
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 10.486300841846221,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 13.39,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 13,4x",
+   "A_p25": 10.69,
+   "A_p75": 17.34,
+   "A_max": 66.16,
+   "A_excluidos": [],
+   "B_mediana": 31.04,
+   "B_ajustada": 21.73,
+   "B_n": 4,
+   "B_peers": "V 31,1x, MA 31,0x, GPN 39,5x, ADYEY 24,5x",
+   "B_excluidos": [
+    "FI",
+    "XYZ"
+   ],
+   "C": {
+    "Conservador": 13.72,
+    "Base": 14.79,
+    "Optimista": 16.33
+   },
+   "mercado": 17.56,
+   "lambda": 0.25,
+   "conservador": 15.02,
+   "base": 16.87,
+   "optimista": 19.5,
+   "factor_cons": 0.891,
+   "factor_opt": 1.156,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    13.39,
+    21.73
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 10.263634626409326,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 11.09,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 11,1x",
+   "A_p25": 8.94,
+   "A_p75": 13.29,
+   "A_max": 47.39,
+   "A_excluidos": [
+    [
+     "Dec '20",
+     55.03,
+     "> 2,5x la mediana (19.1x)"
+    ]
+   ],
+   "B_mediana": 28.85,
+   "B_ajustada": 20.2,
+   "B_n": 4,
+   "B_peers": "V 32,7x, MA 30,9x, GPN 26,8x, XYZ 11,5x",
+   "B_excluidos": [
+    "FI"
+   ],
+   "C": {
+    "Conservador": 16.22,
+    "Base": 17.45,
+    "Optimista": 19.08
+   },
+   "mercado": 15.64,
+   "lambda": 0.25,
+   "conservador": 13.58,
+   "base": 16.09,
+   "optimista": 18.13,
+   "factor_cons": 0.844,
+   "factor_opt": 1.126,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    11.09,
+    20.2
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 12.059263601392194,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 9.88,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 9,9x",
+   "A_p25": 7.78,
+   "A_p75": 11.93,
+   "A_max": 34.9,
+   "A_excluidos": [
+    [
+     "Dec '20",
+     46.89,
+     "> 2,5x la mediana (15.1x)"
+    ]
+   ],
+   "B_mediana": 20.81,
+   "B_ajustada": 14.57,
+   "B_n": 4,
+   "B_peers": "V 30,4x, MA 28,3x, GPN 13,3x, XYZ 11,0x",
+   "B_excluidos": [
+    "FI"
+   ],
+   "C": {
+    "Conservador": 14.91,
+    "Base": 16.66,
+    "Optimista": 18.89
+   },
+   "mercado": 12.22,
+   "lambda": 0.25,
+   "conservador": 10.19,
+   "base": 13.33,
+   "optimista": 16.57,
+   "factor_cons": 0.765,
+   "factor_opt": 1.243,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    9.88,
+    16.66
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 9.648471346914846,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   71.1552160444808,
+   84.7706480394867,
+   109.73743218547378
+  ],
+  "multiplos_hoy": [
+   67.21695519040347,
+   85.2646753884459,
+   106.75000244183794
+  ],
+  "ponderado_hoy": [
+   68.79225953203441,
+   85.06706444886223,
+   107.94497433929229
+  ],
+  "brecha_base": 0.005827811399165883,
+  "fila_origen": 62
+ }
+}

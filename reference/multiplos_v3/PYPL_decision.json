@@ -1,0 +1,22 @@
+{
+ "etapa_desde": "Dec '23",
+ "etapa_motivo": "A: PayPal cotizó a 18-60x EBITDA mientras crecía 15-20%. Desde 2023 es una procesadora de crecimiento bajo (~5%): en febrero de 2026 decepcionó con resultados y una guía de utilidad por acción plana, cambió de CEO (Enrique Lores reemplazó a Alex Chriss) y la acción cayó ~20%. La etapa actual es Dec '23 a LTM.",
+ "peers_excluir": {
+  "*": [
+   "FI"
+  ],
+  "P/E": [
+   "XYZ"
+  ]
+ },
+ "peers_motivo": "B: pagos (Visa, Mastercard, Global Payments, Block, Adyen), datos de yfinance al 29-sep-2026. Fiserv (FI) no devolvió datos. En P/E se excluye Block (132x: utilidad deprimida por cargos puntuales).",
+ "ajuste_peers": -0.3,
+ "ajuste_motivo": "Ajuste −30%: PayPal crece ~5% con margen operativo de ~17%, frente a ~14% de crecimiento y márgenes de 44-66% de Visa, Mastercard y Adyen.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la PayPal de FY+3 del escenario Base es una procesadora madura de crecimiento bajo, parecida a la de hoy.",
+ "fuentes": [
+  "[CNBC, 3-feb-2026: PayPal cae ~20% por la salida del CEO y la guía 2026](https://www.cnbc.com/2026/02/03/paypal-pypl-earnings-q4-2025.html)"
+ ],
+ "evaluacion": "Los múltiplos (US$85,26 hoy) quedan 1% por encima del DCF (US$84,77): ambos métodos coinciden. Los dos quedan muy por encima del precio (US$54,28): el mercado descuenta que la utilidad no crece (guía 2026 plana) y un riesgo de ejecución con el nuevo CEO que el escenario Base no incorpora del todo. Los múltiplos ya usan la valoración de la etapa de bajo crecimiento (~9x EBITDA, ~13x utilidad), subida por peers ajustados −30% y por el justificado.",
+ "ticker": "PYPL"
+}

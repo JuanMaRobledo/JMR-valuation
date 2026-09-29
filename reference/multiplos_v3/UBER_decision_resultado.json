@@ -1,0 +1,406 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '23",
+  "etapa_motivo": "A: Uber es rentable desde 2023; los cierres anteriores tienen EBITDA y utilidad negativos. La etapa actual es Dec '23 a LTM. En P/E se quita Dec '24: la utilidad de 2024 incluye la liberación de ~US$6.400 millones de la reserva de impuestos diferidos, que baja el P/E a 13x. La utilidad del LTM incluye revaluaciones de sus participaciones (Didi, Grab, Aurora) que se compensan entre trimestres (−US$1.500 millones en el 1T26, +US$1.600 millones en el 2T26). Se excluye la columna sin fecha de la hoja.",
+  "historia_excluir": {
+   "*": [
+    "—"
+   ],
+   "P/E": [
+    "Dec '24"
+   ]
+  },
+  "peers_excluir": {
+   "*": [
+    "LYFT"
+   ],
+   "P/E": [
+    "DASH"
+   ]
+  },
+  "peers_motivo": "B: plataformas de movilidad, reparto y viajes (DoorDash, Airbnb, Booking, Grab, Expedia), datos de yfinance al 29-sep-2026. Se excluye Lyft (P/E de 2x por la liberación de su reserva de impuestos; EV/EBITDA de 112x) y, en P/E, DoorDash (98x con margen de 4%).",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Sin ajuste: Uber crece ~15-18% con margen creciente, en la mitad del grupo (más que Booking y Expedia, menos que DoorDash).",
+  "lambda": 0.1,
+  "lambda_motivo": "λ = 0,10: C es inestable. Con un Ke de 8,6% y g de 6,7%, Ke − g es de apenas 1,9 pp y el justificado se dispara (P/E de 51x, EV/EBITDA de 43x); se le da poco peso.",
+  "fuentes": [
+   "[Uber: resultados 2T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm)",
+   "[Uber: resultados 1T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000019/uberq126earningspressrelea.htm)"
+  ],
+  "evaluacion": "PENDIENTE",
+  "ticker": "UBER"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 32.64,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 32,6x",
+   "A_p25": 25.77,
+   "A_p75": 45.57,
+   "A_max": 37.67,
+   "A_excluidos": [
+    [
+     "Dec '18",
+     -0.18,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -5.84,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -22.81,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -30.15,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -63.68,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     1.23,
+     "< 0,4x la mediana (27.6x), caída puntual"
+    ],
+    [
+     "Dec '23",
+     69.26,
+     "> 2,5x la mediana (27.6x)"
+    ]
+   ],
+   "B_mediana": 25.26,
+   "B_ajustada": 25.26,
+   "B_n": 5,
+   "B_peers": "DASH 52,4x, ABNB 29,9x, BKNG 12,2x, GRAB 25,3x, EXPE 10,9x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 29.77,
+    "Base": 43.35,
+    "Optimista": null
+   },
+   "mercado": 28.95,
+   "lambda": 0.1,
+   "conservador": 19.84,
+   "base": 30.39,
+   "optimista": 37.67,
+   "factor_cons": 0.653,
+   "factor_opt": 1.289,
+   "opt_tope_historico": 39.17709544942327,
+   "base_en_rango": true,
+   "rango": [
+    25.26,
+    43.35
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 19.11,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 19,1x (EV/FCF × 1,03 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 17.63,
+   "A_p75": 25.18,
+   "A_max": 39.82,
+   "A_excluidos": [
+    [
+     "Dec '18",
+     -0.22,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -9.66,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -29.11,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -118.96,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     1.96,
+     "< 0,4x la mediana (18.5x), caída puntual"
+    ],
+    [
+     "Dec '22",
+     144.49,
+     "> 2,5x la mediana (18.5x)"
+    ]
+   ],
+   "B_mediana": 12.18,
+   "B_ajustada": 12.18,
+   "B_n": 3,
+   "B_peers": "DASH 35,2x, BKNG 12,2x, EXPE 6,7x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 38.08,
+    "Base": 55.5,
+    "Optimista": null
+   },
+   "mercado": 15.65,
+   "lambda": 0.1,
+   "conservador": 15.59,
+   "base": 19.63,
+   "optimista": 32.02,
+   "factor_cons": 0.794,
+   "factor_opt": 1.631,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.18,
+    55.5
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 17.24,
+   "A_desc": "mediana Dec '23, Dec '25, LTM (etapa actual) = 17,2x",
+   "A_p25": 16.29,
+   "A_p75": 42.83,
+   "A_max": 17.24,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -4.37,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -13.21,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -161.27,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -5.34,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '23",
+     68.41,
+     "> 2,5x la mediana (16.3x)"
+    ]
+   ],
+   "B_mediana": 23.2,
+   "B_ajustada": 23.2,
+   "B_n": 4,
+   "B_peers": "ABNB 35,8x, BKNG 18,0x, GRAB 28,4x, EXPE 16,7x",
+   "B_excluidos": [
+    "DASH",
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 32.75,
+    "Base": 51.55,
+    "Optimista": null
+   },
+   "mercado": 20.22,
+   "lambda": 0.1,
+   "conservador": 18.25,
+   "base": 23.35,
+   "optimista": 24.05,
+   "factor_cons": 0.781,
+   "factor_opt": 1.893,
+   "opt_tope_historico": 44.21036492497784,
+   "base_en_rango": true,
+   "rango": [
+    17.24,
+    51.55
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 17.88,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,9x",
+   "A_p25": 16.48,
+   "A_p75": 23.31,
+   "A_max": 37.93,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -10.4,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -28.07,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -110.01,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     127.17,
+     "> 2,5x la mediana (18.4x)"
+    ]
+   ],
+   "B_mediana": 12.79,
+   "B_ajustada": 12.79,
+   "B_n": 3,
+   "B_peers": "DASH 37,9x, BKNG 12,8x, EXPE 7,2x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 39.12,
+    "Base": 57.73,
+    "Optimista": null
+   },
+   "mercado": 15.33,
+   "lambda": 0.1,
+   "conservador": 15.53,
+   "base": 19.57,
+   "optimista": 32.16,
+   "factor_cons": 0.793,
+   "factor_opt": 1.643,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.79,
+    57.73
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 17.27,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,3x",
+   "A_p25": 15.94,
+   "A_p75": 22.26,
+   "A_max": 35.57,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -11.82,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -34.37,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -183.67,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     77.25,
+     "> 2,5x la mediana (17.8x)"
+    ]
+   ],
+   "B_mediana": 12.37,
+   "B_ajustada": 12.37,
+   "B_n": 3,
+   "B_peers": "DASH 28,6x, BKNG 12,4x, EXPE 6,1x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 42.16,
+    "Base": 62.12,
+    "Optimista": null
+   },
+   "mercado": 14.82,
+   "lambda": 0.1,
+   "conservador": 15.31,
+   "base": 19.55,
+   "optimista": 28.8,
+   "factor_cons": 0.783,
+   "factor_opt": 1.473,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.37,
+    62.12
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  }
+ }
+}

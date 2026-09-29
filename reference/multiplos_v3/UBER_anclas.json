@@ -1,0 +1,549 @@
+{
+ "fcf_a_fcff": 1.034444152471256,
+ "empresa": "Uber Technologies, Inc (NYSE:UBER)",
+ "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+ "fecha": "2026-09-29",
+ "ke": 0.08555648921601675,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '17": 1.23,
+     "Dec '18": -0.18,
+     "Dec '19": -5.84,
+     "Dec '20": -22.81,
+     "Dec '21": -30.15,
+     "Dec '22": -63.68,
+     "Dec '23": 69.26,
+     "Dec '24": 37.67,
+     "Dec '25": 27.6,
+     "LTM": 20.26
+    },
+    "mediana_5a": 32.63,
+    "mediana_10a": 32.63,
+    "p25": 23.93,
+    "p75": 32.63,
+    "min": 20.26,
+    "max": 37.67,
+    "ultimo_cierre": 27.6,
+    "ltm": 20.26,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      -0.18,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      -5.84,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -22.81,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -30.15,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -63.68,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      1.23,
+      "< 0,4x la mediana (27.6x), caída puntual"
+     ],
+     [
+      "Dec '23",
+      69.26,
+      "> 2,5x la mediana (27.6x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 27.56,
+    "p25": 15.45,
+    "p75": 46.78
+   },
+   "justificado": {
+    "Conservador": 29.77,
+    "Base": 43.35,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '17": 1.96,
+     "Dec '18": -0.22,
+     "Dec '19": -9.66,
+     "Dec '20": -29.11,
+     "Dec '21": -118.96,
+     "Dec '22": 144.49,
+     "Dec '23": 39.82,
+     "Dec '24": 19.18,
+     "Dec '25": 17.76,
+     "LTM": 14.91
+    },
+    "mediana_5a": 19.18,
+    "mediana_10a": 19.18,
+    "p25": 17.05,
+    "p75": 24.34,
+    "min": 14.91,
+    "max": 39.82,
+    "ultimo_cierre": 17.76,
+    "ltm": 14.91,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      -0.22,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      -9.66,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -29.11,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -118.96,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '17",
+      1.96,
+      "< 0,4x la mediana (18.5x), caída puntual"
+     ],
+     [
+      "Dec '22",
+      144.49,
+      "> 2,5x la mediana (18.5x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 9.42,
+    "p25": 6.14,
+    "p75": 17.93
+   },
+   "justificado": {
+    "Conservador": 38.08,
+    "Base": 55.5,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '17": 0,
+     "Dec '18": 0,
+     "Dec '19": -4.37,
+     "Dec '20": -13.21,
+     "Dec '21": -161.27,
+     "Dec '22": -5.34,
+     "Dec '23": 68.41,
+     "Dec '24": 13.17,
+     "Dec '25": 17.24,
+     "LTM": 15.35
+    },
+    "mediana_5a": 15.2,
+    "mediana_10a": 15.2,
+    "p25": 14.26,
+    "p75": 16.29,
+    "min": 13.17,
+    "max": 17.24,
+    "ultimo_cierre": 17.24,
+    "ltm": 15.35,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '17",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      -4.37,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -13.21,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -161.27,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -5.34,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '23",
+      68.41,
+      "> 2,5x la mediana (16.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 23.2,
+    "p25": 17.06,
+    "p75": 33.91
+   },
+   "justificado": {
+    "Conservador": 32.75,
+    "Base": 51.55,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '17": 0,
+     "Dec '18": 0,
+     "Dec '19": -10.4,
+     "Dec '20": -28.07,
+     "Dec '21": -110.01,
+     "Dec '22": 127.17,
+     "Dec '23": 37.93,
+     "Dec '24": 18.44,
+     "Dec '25": 17.31,
+     "LTM": 13.99
+    },
+    "mediana_5a": 18.44,
+    "mediana_10a": 18.44,
+    "p25": 16.48,
+    "p75": 23.31,
+    "min": 13.99,
+    "max": 37.93,
+    "ultimo_cierre": 17.31,
+    "ltm": 13.99,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '17",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      -10.4,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -28.07,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -110.01,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      127.17,
+      "> 2,5x la mediana (18.4x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 9.98,
+    "p25": 6.66,
+    "p75": 19.07
+   },
+   "justificado": {
+    "Conservador": 39.12,
+    "Base": 57.73,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '17": 0,
+     "Dec '18": 0,
+     "Dec '19": -11.82,
+     "Dec '20": -34.37,
+     "Dec '21": -183.67,
+     "Dec '22": 77.25,
+     "Dec '23": 35.57,
+     "Dec '24": 17.82,
+     "Dec '25": 16.73,
+     "LTM": 13.57
+    },
+    "mediana_5a": 17.82,
+    "mediana_10a": 17.82,
+    "p25": 15.94,
+    "p75": 22.25,
+    "min": 13.57,
+    "max": 35.57,
+    "ultimo_cierre": 16.73,
+    "ltm": 13.57,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '17",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      -11.82,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -34.37,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -183.67,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      77.25,
+      "> 2,5x la mediana (17.8x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 9.25,
+    "p25": 5.79,
+    "p75": 16.44
+   },
+   "justificado": {
+    "Conservador": 42.16,
+    "Base": 62.12,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.0585,
+   "g_años_4_10": 0.0671,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08629789700290338,
+   "ke": 0.08555648921601675,
+   "roe_fy3": 0.3594323278472429,
+   "fcff_ebitda": 0.7818191688185122,
+   "fcfe_ocf": 1.0777105126189577,
+   "multiplos": {
+    "EV/FCFF": 38.07842010096821,
+    "P/FCFE": 39.121853228961996,
+    "P/E": 32.75451162782774,
+    "EV/EBITDA": 29.770438753261093,
+    "P/OCF": 42.16203249798826
+   }
+  },
+  "Base": {
+   "g": 0.06707142857142857,
+   "g_años_4_10": 0.08424285714285715,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08629789700290338,
+   "ke": 0.08555648921601675,
+   "roe_fy3": 0.6266403807352412,
+   "fcff_ebitda": 0.7811267115836216,
+   "fcfe_ocf": 1.0760364801620526,
+   "multiplos": {
+    "EV/FCFF": 55.500126420750924,
+    "P/FCFE": 57.72615243671557,
+    "P/E": 51.54752809507997,
+    "EV/EBITDA": 43.35263124351644,
+    "P/OCF": 62.11544588130152
+   }
+  },
+  "Optimista": {
+   "g": 0.08707142857142858,
+   "g_años_4_10": 0.12424285714285714,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.08629789700290338,
+   "ke": 0.08555648921601675,
+   "roe_fy3": 0.8441497638594925,
+   "fcff_ebitda": 0.7966628136415542,
+   "fcfe_ocf": 1.1125158930125023,
+   "multiplos": {
+    "EV/FCFF": null,
+    "P/FCFE": null,
+    "P/E": null,
+    "EV/EBITDA": null,
+    "P/OCF": null
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "LYFT",
+   "nombre": "Lyft, Inc.",
+   "precio": 15.07,
+   "pe": 2.1935954,
+   "ev_ebitda": 111.652,
+   "crec_ingresos": 0.161,
+   "margen_operativo": 0.025799999,
+   "roe": 1.52579,
+   "p_ocf": 4.773405629748636,
+   "p_fcf": 5.128533901032611,
+   "ev_fcf": 4.67698466816383,
+   "ocf_ttm": 1195080000.0,
+   "fcf_ttm": 1112326000.0,
+   "interest_ttm": 20269000.0,
+   "ev_fcff": 4.610612508474961
+  },
+  {
+   "ticker": "DASH",
+   "nombre": "DoorDash, Inc.",
+   "precio": 187.1,
+   "pe": 97.95812,
+   "ev_ebitda": 52.413,
+   "crec_ingresos": 0.356,
+   "margen_operativo": 0.03862,
+   "roe": 0.088870004,
+   "p_ocf": 28.646659799293285,
+   "p_fcf": 37.900910346891074,
+   "ev_fcf": 35.18682300140252,
+   "ocf_ttm": 2830000000.0,
+   "fcf_ttm": 2139000000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 35.18682300140252
+  },
+  {
+   "ticker": "ABNB",
+   "nombre": "Airbnb, Inc.",
+   "precio": 156.96,
+   "pe": 35.75399,
+   "ev_ebitda": 29.862,
+   "crec_ingresos": 0.165,
+   "margen_operativo": 0.21009001,
+   "roe": 0.34542,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "error_cashflow": ""
+  },
+  {
+   "ticker": "BKNG",
+   "nombre": "Booking Holdings Inc. Common St",
+   "precio": 162.34,
+   "pe": 18.037777,
+   "ev_ebitda": 12.181,
+   "crec_ingresos": 0.081,
+   "margen_operativo": 0.34412,
+   "roe": null,
+   "p_ocf": 12.372360400040572,
+   "p_fcf": 12.787409705839186,
+   "ev_fcf": 13.296856951881749,
+   "ocf_ttm": 9859000000.0,
+   "fcf_ttm": 9539000000.0,
+   "interest_ttm": 1103000000.0,
+   "ev_fcff": 12.183881885466127
+  },
+  {
+   "ticker": "GRAB",
+   "nombre": "Grab Holdings Limited",
+   "precio": 3.12,
+   "pe": 28.363636,
+   "ev_ebitda": 25.258,
+   "crec_ingresos": 0.219,
+   "margen_operativo": 0.02104,
+   "roe": 0.077410005,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": -61000000.0,
+   "fcf_ttm": -186000000.0,
+   "interest_ttm": 113000000.0,
+   "ev_fcff": null
+  },
+  {
+   "ticker": "EXPE",
+   "nombre": "Expedia Group, Inc.",
+   "precio": 266.33,
+   "pe": 16.739786,
+   "ev_ebitda": 10.913,
+   "crec_ingresos": 0.14,
+   "margen_operativo": 0.1898,
+   "roe": 0.89489,
+   "p_ocf": 6.128351018404908,
+   "p_fcf": 7.1687550823054496,
+   "ev_fcf": 7.072821507961426,
+   "ocf_ttm": 5216000000.0,
+   "fcf_ttm": 4459000000.0,
+   "interest_ttm": 355000000.0,
+   "ev_fcff": 6.654297672514743
+  }
+ ]
+}
