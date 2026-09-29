@@ -1,0 +1,242 @@
+{
+ "decision": {
+  "historia_excluir": {
+   "*": [
+    "—"
+   ]
+  },
+  "fcf_a_fcff": 0.98,
+  "peers_excluir": {},
+  "peers_motivo": "B: grandes plataformas tecnológicas y de software (Alphabet, Apple, Amazon, Oracle, Meta, Salesforce), datos de yfinance al 29-sep-2026. Amazon y Oracle no tienen flujo de caja libre positivo y no entran en los múltiplos de flujo.",
+  "ajuste_peers": 0.05,
+  "ajuste_motivo": "Ajuste +5%: Microsoft tiene el margen operativo más alto del grupo (45% frente a ~33%) y Azure acelera (~40%) con una cartera de US$678 mil millones.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Microsoft de FY+3 del escenario Base es una plataforma de crecimiento de dos dígitos, parecida a la de hoy.",
+  "fuentes": [
+   "[CNBC, 29-jul-2026: resultados 4T FY26 de Microsoft](https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html)",
+   "[CNBC, 29-abr-2026: Microsoft proyecta US$190 mil millones de capex](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html)"
+  ],
+  "evaluacion": "Los múltiplos (US$437,36 hoy) quedan 33% por encima del DCF (US$329,42). Los múltiplos suponen que Microsoft conserva a FY+3 una valoración parecida a la de sus últimos cinco años (~22x EBITDA, ~32x utilidad, ajustada por los peers), mientras que el DCF carga el capex de US$190 mil millones de 2026 contra el flujo de caja y usa un WACC de ~9,4%. El precio (US$509,22) está por encima de ambos. El DCF parece conservador frente a la aceleración de Azure (~40%) y conviene revisar su crecimiento y su reinversión; los múltiplos están más cerca de lo que paga el mercado.",
+  "ticker": "MSFT",
+  "etapa_motivo": "A: Sin cambio de etapa: Microsoft sigue creciendo a doble dígito y cotiza por debajo de su promedio de cinco años; se usa la mediana de los últimos 5 cierres + LTM. Se excluye la columna sin fecha de la hoja.",
+  "notas": {
+   "EV/FCFF": "EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 0,98 (mediana de los tres cierres reales); el último cierre da 1,28 porque 'Interest / Other' incluye partidas no operativas."
+  }
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 22.09,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 22,1x",
+   "A_p25": 19.52,
+   "A_p75": 24.91,
+   "A_max": 27.12,
+   "A_excluidos": [],
+   "B_mediana": 17.14,
+   "B_ajustada": 17.99,
+   "B_n": 6,
+   "B_peers": "GOOG 23,2x, AAPL 28,8x, AMZN 16,5x, ORCL 15,6x, META 17,4x, CRM 16,9x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 9.42,
+    "Base": 13.12,
+    "Optimista": 16.94
+   },
+   "mercado": 20.04,
+   "lambda": 0.25,
+   "conservador": 15.69,
+   "base": 18.31,
+   "optimista": 22.51,
+   "factor_cons": 0.857,
+   "factor_opt": 1.23,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    13.12,
+    22.09
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 42.79,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 42,8x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 31.96,
+   "A_p75": 44.72,
+   "A_max": 56.13,
+   "A_excluidos": [],
+   "B_mediana": 40.03,
+   "B_ajustada": 42.03,
+   "B_n": 4,
+   "B_peers": "GOOG 73,1x, AAPL 35,3x, META 44,7x, CRM 13,8x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 25.53,
+    "Base": 35.69,
+    "Optimista": 44.39
+   },
+   "mercado": 42.41,
+   "lambda": 0.25,
+   "conservador": 30.01,
+   "base": 40.73,
+   "optimista": 48.65,
+   "factor_cons": 0.737,
+   "factor_opt": 1.194,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    35.69,
+    42.79
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": "EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 0,98 (mediana de los tres cierres reales); el último cierre da 1,28 porque 'Interest / Other' incluye partidas no operativas."
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 31.77,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 31,8x",
+   "A_p25": 26.81,
+   "A_p75": 35.33,
+   "A_max": 46.95,
+   "A_excluidos": [],
+   "B_mediana": 21.11,
+   "B_ajustada": 22.16,
+   "B_n": 6,
+   "B_peers": "GOOG 16,9x, AAPL 37,7x, AMZN 19,8x, ORCL 21,6x, META 27,8x, CRM 20,6x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 18.21,
+    "Base": 23.74,
+    "Optimista": 28.21
+   },
+   "mercado": 26.96,
+   "lambda": 0.25,
+   "conservador": 22.32,
+   "base": 26.16,
+   "optimista": 30.91,
+   "factor_cons": 0.853,
+   "factor_opt": 1.182,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    22.16,
+    31.77
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 44.2,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 44,2x",
+   "A_p25": 34.06,
+   "A_p75": 45.84,
+   "A_max": 56.43,
+   "A_excluidos": [],
+   "B_mediana": 40.55,
+   "B_ajustada": 42.58,
+   "B_n": 4,
+   "B_peers": "GOOG 77,4x, AAPL 35,2x, META 45,9x, CRM 12,2x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 21.44,
+    "Base": 28.24,
+    "Optimista": 33.46
+   },
+   "mercado": 43.39,
+   "lambda": 0.25,
+   "conservador": 29.78,
+   "base": 39.6,
+   "optimista": 46.85,
+   "factor_cons": 0.752,
+   "factor_opt": 1.183,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    28.24,
+    44.2
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 24.34,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 24,3x",
+   "A_p25": 20.66,
+   "A_p75": 27.16,
+   "A_max": 28.9,
+   "A_excluidos": [],
+   "B_mediana": 16.18,
+   "B_ajustada": 16.99,
+   "B_n": 6,
+   "B_peers": "GOOG 22,2x, AAPL 32,8x, AMZN 17,9x, ORCL 8,9x, META 14,4x, CRM 11,8x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 9.97,
+    "Base": 13.71,
+    "Optimista": 16.99
+   },
+   "mercado": 20.67,
+   "lambda": 0.25,
+   "conservador": 14.79,
+   "base": 18.93,
+   "optimista": 23.1,
+   "factor_cons": 0.782,
+   "factor_opt": 1.221,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    13.71,
+    24.34
+   ],
+   "antes": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   263.312827824239,
+   329.4181190681076,
+   386.3453758088295
+  ],
+  "multiplos_hoy": [
+   322.7965626485593,
+   437.3595968749554,
+   569.8591092998153
+  ],
+  "ponderado_hoy": [
+   287.1063217539671,
+   372.59471019084674,
+   459.7508692052238
+  ],
+  "brecha_base": 0.3276731653747642,
+  "fila_origen": 37
+ }
+}

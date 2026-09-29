@@ -1,0 +1,362 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '22",
+  "etapa_motivo": "A: los cierres 2016-2021 de la hoja dan múltiplos de ~1x porque el precio no está ajustado por el split 20:1 de julio de 2022; no son representativos y se usa la historia desde Dec '22. En P/E se quita el LTM: la utilidad del primer semestre de 2026 incluye US$135,9 mil millones de ganancias en acciones de otras empresas, que bajan el P/E a 17x. En EV/FCFF y P/FCFE se quita el LTM: el capex de 2026 (US$195-205 mil millones) deja el flujo de caja en mínimos y el múltiplo en ~78x, un pico transitorio frente al flujo de FY+3.",
+  "historia_excluir": {
+   "*": [
+    "Dec '16",
+    "Dec '17",
+    "Dec '18",
+    "Dec '19",
+    "Dec '20",
+    "Dec '21"
+   ],
+   "P/E": [
+    "LTM"
+   ],
+   "EV/FCFF": [
+    "LTM"
+   ],
+   "P/FCFE": [
+    "LTM"
+   ]
+  },
+  "max_sin_exclusiones_auto": true,
+  "fcf_a_fcff": 1.09,
+  "peers_excluir": {},
+  "peers_motivo": "B: grandes plataformas tecnológicas (Meta, Microsoft, Amazon, Apple, Netflix), datos de yfinance al 29-sep-2026. Amazon no tiene flujo de caja libre positivo y no entra en los múltiplos de flujo.",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Sin ajuste: Alphabet crece 24% con margen operativo de 34%, en línea con Meta y Microsoft.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Alphabet de FY+3 del escenario Base sigue siendo una plataforma de crecimiento alto con fuerte inversión en IA, parecida a la de hoy.",
+  "notas": {
+   "EV/FCFF": "EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 1,09 (mediana de los tres cierres reales); el último cierre da 2,70 porque 'Interest / Other' incluye ganancias en inversiones, no intereses."
+  },
+  "fuentes": [
+   "[Alphabet, 8-K 2T26: ganancias en acciones y capex](https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000066/googexhibit991q22026.htm)",
+   "[Yahoo Finance: Alphabet sube el capex a US$205 mil millones y el flujo de caja se vuelve negativo](https://finance.yahoo.com/markets/stocks/articles/alphabet-lifts-capex-205-billion-123356486.html)"
+  ],
+  "evaluacion": "Los múltiplos (US$209,76 hoy) quedan 20% por encima del DCF (US$174,29), dentro del rango de ±25%: ambos métodos coinciden razonablemente. Los dos quedan muy por debajo del precio (US$339,16): el mercado descuenta más crecimiento de Cloud e IA que el escenario Base, y además las participaciones de Alphabet en otras empresas (que generaron US$135,9 mil millones de ganancias en el 1S26) no están en los múltiplos operativos; conviene revisar que la hoja las incluya a valor actual como activos no operativos.",
+  "ticker": "GOOG"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 18.29,
+   "A_desc": "mediana Dec '22, Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 18,3x",
+   "A_p25": 18.21,
+   "A_p75": 24.75,
+   "A_max": 25.46,
+   "A_excluidos": [
+    [
+     "Dec '22",
+     12.98,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "Dec '23",
+     18.29,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "Dec '24",
+     18.21,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "Dec '25",
+     25.46,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "LTM",
+     24.75,
+     "> 2,5x la mediana (1.5x)"
+    ]
+   ],
+   "B_mediana": 19.73,
+   "B_ajustada": 19.73,
+   "B_n": 5,
+   "B_peers": "META 17,4x, MSFT 19,7x, AMZN 16,5x, AAPL 28,8x, NFLX 20,1x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 9.87,
+    "Base": 10.71,
+    "Optimista": 33.29
+   },
+   "mercado": 19.01,
+   "lambda": 0.25,
+   "conservador": 15.79,
+   "base": 16.93,
+   "optimista": 25.46,
+   "factor_cons": 0.933,
+   "factor_opt": 1.827,
+   "opt_tope_historico": 30.929817021749557,
+   "base_en_rango": true,
+   "rango": [
+    10.71,
+    19.73
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 12.976276028397704,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 31.22,
+   "A_desc": "mediana Dec '22, Dec '23, Dec '24, Dec '25 (etapa actual) = 31,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 25.91,
+   "A_p75": 40.35,
+   "A_max": 52.19,
+   "A_excluidos": [
+    [
+     "Dec '22",
+     19.1,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "Dec '23",
+     25.33,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "Dec '24",
+     31.96,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "Dec '25",
+     52.19,
+     "> 2,5x la mediana (1.5x)"
+    ],
+    [
+     "LTM",
+     78.4,
+     "> 2,5x la mediana (1.5x)"
+    ]
+   ],
+   "B_mediana": 40.03,
+   "B_ajustada": 40.03,
+   "B_n": 4,
+   "B_peers": "META 44,7x, MSFT 55,2x, AAPL 35,3x, NFLX 25,0x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 25.87,
+    "Base": 27.9,
+    "Optimista": 89.17
+   },
+   "mercado": 35.63,
+   "lambda": 0.25,
+   "conservador": 28.93,
+   "base": 33.7,
+   "optimista": 52.19,
+   "factor_cons": 0.858,
+   "factor_opt": 1.89,
+   "opt_tope_historico": 63.69760976524917,
+   "base_en_rango": true,
+   "rango": [
+    27.9,
+    40.03
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 15.435825062546684,
+    "J30": null
+   },
+   "nota": "EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 1,09 (mediana de los tres cierres reales); el último cierre da 2,70 porque 'Interest / Other' incluye ganancias en inversiones, no intereses."
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 24.0,
+   "A_desc": "mediana Dec '22, Dec '23, Dec '24, Dec '25 (etapa actual) = 24,0x",
+   "A_p25": 22.63,
+   "A_p75": 25.48,
+   "A_max": 29.03,
+   "A_excluidos": [],
+   "B_mediana": 27.83,
+   "B_ajustada": 27.83,
+   "B_n": 5,
+   "B_peers": "META 27,8x, MSFT 28,4x, AMZN 19,8x, AAPL 37,7x, NFLX 22,1x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 20.22,
+    "Base": 21.81,
+    "Optimista": 58.43
+   },
+   "mercado": 25.91,
+   "lambda": 0.25,
+   "conservador": 22.1,
+   "base": 24.89,
+   "optimista": 29.03,
+   "factor_cons": 0.888,
+   "factor_opt": 1.587,
+   "opt_tope_historico": 39.49925780612735,
+   "base_en_rango": true,
+   "rango": [
+    21.81,
+    27.83
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 19.010401020476223,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 28.62,
+   "A_desc": "mediana Dec '22, Dec '23, Dec '24, Dec '25 (etapa actual) = 28,6x",
+   "A_p25": 23.7,
+   "A_p75": 36.91,
+   "A_max": 51.77,
+   "A_excluidos": [
+    [
+     "Dec '22",
+     19.0,
+     "> 2,5x la mediana (1.6x)"
+    ],
+    [
+     "Dec '23",
+     25.27,
+     "> 2,5x la mediana (1.6x)"
+    ],
+    [
+     "Dec '24",
+     31.96,
+     "> 2,5x la mediana (1.6x)"
+    ],
+    [
+     "Dec '25",
+     51.77,
+     "> 2,5x la mediana (1.6x)"
+    ],
+    [
+     "LTM",
+     78.3,
+     "> 2,5x la mediana (1.6x)"
+    ]
+   ],
+   "B_mediana": 40.55,
+   "B_ajustada": 40.55,
+   "B_n": 4,
+   "B_peers": "META 45,9x, MSFT 56,4x, AAPL 35,2x, NFLX 26,2x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 23.96,
+    "Base": 25.69,
+    "Optimista": 70.34
+   },
+   "mercado": 34.58,
+   "lambda": 0.25,
+   "conservador": 27.76,
+   "base": 32.36,
+   "optimista": 51.77,
+   "factor_cons": 0.858,
+   "factor_opt": 1.742,
+   "opt_tope_historico": 56.36353539313113,
+   "base_en_rango": true,
+   "rango": [
+    25.69,
+    40.55
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 16.02107543351789,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 18.56,
+   "A_desc": "mediana Dec '22, Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 18,6x",
+   "A_p25": 17.26,
+   "A_p75": 22.47,
+   "A_max": 23.03,
+   "A_excluidos": [
+    [
+     "Dec '22",
+     12.46,
+     "> 2,5x la mediana (1.0x)"
+    ],
+    [
+     "Dec '23",
+     17.26,
+     "> 2,5x la mediana (1.0x)"
+    ],
+    [
+     "Dec '24",
+     18.56,
+     "> 2,5x la mediana (1.0x)"
+    ],
+    [
+     "Dec '25",
+     23.03,
+     "> 2,5x la mediana (1.0x)"
+    ],
+    [
+     "LTM",
+     22.47,
+     "> 2,5x la mediana (1.0x)"
+    ]
+   ],
+   "B_mediana": 20.66,
+   "B_ajustada": 20.66,
+   "B_n": 5,
+   "B_peers": "META 14,4x, MSFT 20,7x, AMZN 17,9x, AAPL 32,8x, NFLX 24,5x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 12.88,
+    "Base": 14.04,
+    "Optimista": 41.03
+   },
+   "mercado": 19.61,
+   "lambda": 0.25,
+   "conservador": 16.48,
+   "base": 18.22,
+   "optimista": 23.03,
+   "factor_cons": 0.905,
+   "factor_opt": 1.772,
+   "opt_tope_historico": 32.28502695164981,
+   "base_en_rango": true,
+   "rango": [
+    14.04,
+    20.66
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 11.093084602286549,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   155.28773572877654,
+   174.2905607337319,
+   292.41188998150056
+  ],
+  "multiplos_hoy": [
+   177.21576123031338,
+   209.7630462908533,
+   333.27654221053484
+  ],
+  "ponderado_hoy": [
+   168.44455102969866,
+   195.57405206800476,
+   316.9306813189212
+  ],
+  "brecha_base": 0.20352499531695023,
+  "fila_origen": 40
+ }
+}

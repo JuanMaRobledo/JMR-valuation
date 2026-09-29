@@ -1,0 +1,387 @@
+{
+ "fcf_a_fcff": 1.0203890004995535,
+ "empresa": "INTUIT INC. (NASDAQ:INTU)",
+ "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+ "fecha": "2026-09-29",
+ "ke": 0.10342,
+ "categoria": "Software",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Jul '17": 21.6,
+     "Jul '18": 29.77,
+     "Jul '19": 33.93,
+     "Jul '20": 32.36,
+     "Jul '21": 50.97,
+     "Jul '22": 41.83,
+     "Jul '23": 38.69,
+     "Jul '24": 43.04,
+     "Jul '25": 39.66,
+     "Jul '26": 13.11,
+     "LTM": 11.41
+    },
+    "mediana_5a": 39.66,
+    "mediana_10a": 36.31,
+    "p25": 25.69,
+    "p75": 40.75,
+    "min": 11.41,
+    "max": 50.97,
+    "ultimo_cierre": 13.11,
+    "ltm": 11.41,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 16.66,
+    "p25": 13.62,
+    "p75": 18.01
+   },
+   "justificado": {
+    "Conservador": 19.29,
+    "Base": 24.56,
+    "Optimista": 43.84
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 13.113054911531421,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Jul '17": 23.24,
+     "Jul '18": 24.85,
+     "Jul '19": 31.07,
+     "Jul '20": 32.58,
+     "Jul '21": 44.83,
+     "Jul '22": 35.58,
+     "Jul '23": 30.28,
+     "Jul '24": 39.18,
+     "Jul '25": 36.12,
+     "Jul '26": 9.92,
+     "LTM": 8.64
+    },
+    "mediana_5a": 35.58,
+    "mediana_10a": 31.82,
+    "p25": 24.05,
+    "p75": 35.85,
+    "min": 8.64,
+    "max": 44.83,
+    "ultimo_cierre": 9.92,
+    "ltm": 8.64,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 15.19,
+    "p25": 14.11,
+    "p75": 15.61
+   },
+   "justificado": {
+    "Conservador": 25.12,
+    "Base": 31.83,
+    "Optimista": 56.44
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 17.367256744620512,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Jul '17": 36.88,
+     "Jul '18": 44.02,
+     "Jul '19": 47.0,
+     "Jul '20": 44.27,
+     "Jul '21": 70.19,
+     "Jul '22": 62.75,
+     "Jul '23": 60.77,
+     "Jul '24": 62.07,
+     "Jul '25": 57.43,
+     "Jul '26": 19.18,
+     "LTM": 16.73
+    },
+    "mediana_5a": 60.77,
+    "mediana_10a": 52.22,
+    "p25": 40.45,
+    "p75": 61.42,
+    "min": 16.73,
+    "max": 70.19,
+    "ultimo_cierre": 19.18,
+    "ltm": 16.73,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 22.27,
+    "p25": 19.93,
+    "p75": 25.7
+   },
+   "justificado": {
+    "Conservador": 17.13,
+    "Base": 20.84,
+    "Optimista": 31.96
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 18.579322820849757,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Jul '17": 23.44,
+     "Jul '18": 25.47,
+     "Jul '19": 32.1,
+     "Jul '20": 34.05,
+     "Jul '21": 45.29,
+     "Jul '22": 34.46,
+     "Jul '23": 29.67,
+     "Jul '24": 38.66,
+     "Jul '25": 35.79,
+     "Jul '26": 9.79,
+     "LTM": 8.51
+    },
+    "mediana_5a": 34.46,
+    "mediana_10a": 33.07,
+    "p25": 24.45,
+    "p75": 35.12,
+    "min": 8.51,
+    "max": 45.29,
+    "ultimo_cierre": 9.79,
+    "ltm": 8.51,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 15.19,
+    "p25": 12.96,
+    "p75": 15.83
+   },
+   "justificado": {
+    "Conservador": 20.79,
+    "Base": 25.23,
+    "Optimista": 38.72
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 15.429826846125863,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Jul '17": 21.94,
+     "Jul '18": 25.01,
+     "Jul '19": 31.05,
+     "Jul '20": 33.21,
+     "Jul '21": 44.55,
+     "Jul '22": 33.07,
+     "Jul '23": 28.43,
+     "Jul '24": 37.15,
+     "Jul '25": 35.3,
+     "Jul '26": 9.6,
+     "LTM": 8.34
+    },
+    "mediana_5a": 33.07,
+    "mediana_10a": 32.06,
+    "p25": 23.47,
+    "p75": 34.26,
+    "min": 8.34,
+    "max": 44.55,
+    "ultimo_cierre": 9.6,
+    "ltm": 8.34,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 14.25,
+    "p25": 12.29,
+    "p75": 14.76
+   },
+   "justificado": {
+    "Conservador": 21.91,
+    "Base": 27.4,
+    "Optimista": 43.85
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 16.23291006505932,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.05278571428571428,
+   "g_años_4_10": 0.05567142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.0946997489248277,
+   "ke": 0.10342,
+   "roe_fy3": 0.2996862099115872,
+   "fcff_ebitda": 0.7681396206453099,
+   "fcfe_ocf": 1.0535343344255343,
+   "multiplos": {
+    "EV/FCFF": 25.117737372466493,
+    "P/FCFE": 20.79195350411917,
+    "P/E": 17.12972921480643,
+    "EV/EBITDA": 19.293929256754936,
+    "P/OCF": 21.90503689636885
+   }
+  },
+  "Base": {
+   "g": 0.06135714285714285,
+   "g_años_4_10": 0.0728142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.0946997489248277,
+   "ke": 0.10342,
+   "roe_fy3": 0.3525955039678861,
+   "fcff_ebitda": 0.7715758712373727,
+   "fcfe_ocf": 1.085969428995384,
+   "multiplos": {
+    "EV/FCFF": 31.831859234476404,
+    "P/FCFE": 25.23264502105692,
+    "P/E": 20.84176939219022,
+    "EV/EBITDA": 24.56069452194654,
+    "P/OCF": 27.401881105560406
+   }
+  },
+  "Optimista": {
+   "g": 0.07564285714285715,
+   "g_años_4_10": 0.1013857142857143,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.0946997489248277,
+   "ke": 0.10342,
+   "roe_fy3": 0.4333733343682643,
+   "fcff_ebitda": 0.7766699846393622,
+   "fcfe_ocf": 1.1323957051815696,
+   "multiplos": {
+    "EV/FCFF": 56.44377212450287,
+    "P/FCFE": 38.72402797778236,
+    "P/E": 31.964968561749455,
+    "EV/EBITDA": 43.83818362892531,
+    "P/OCF": 43.85092296937169
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "ADBE",
+   "nombre": "Adobe Inc.",
+   "precio": 233.17,
+   "pe": 13.0262575,
+   "ev_ebitda": 9.266,
+   "crec_ingresos": 0.129,
+   "margen_operativo": 0.34822,
+   "roe": 0.61902,
+   "p_ocf": 8.577186232833611,
+   "p_fcf": 8.750479081570997,
+   "ev_fcf": 8.67586552265861,
+   "ocf_ttm": 10806000000.0,
+   "fcf_ttm": 10592000000.0,
+   "interest_ttm": 260000000.0,
+   "ev_fcff": 8.510823681256598
+  },
+  {
+   "ticker": "ADSK",
+   "nombre": "Autodesk, Inc.",
+   "precio": 203.18,
+   "pe": 26.284605,
+   "ev_ebitda": 18.379,
+   "crec_ingresos": 0.161,
+   "margen_operativo": 0.29228002,
+   "roe": 0.53854,
+   "p_ocf": 14.663196287292818,
+   "p_fcf": 15.144299731811698,
+   "ev_fcf": 14.983816582025678,
+   "ocf_ttm": 2896000000.0,
+   "fcf_ttm": 2804000000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 14.983816582025678
+  },
+  {
+   "ticker": "CRM",
+   "nombre": "Salesforce, Inc.",
+   "precio": 225.31,
+   "pe": 20.613905,
+   "ev_ebitda": 16.902,
+   "crec_ingresos": 0.108,
+   "margen_operativo": 0.21375,
+   "roe": 0.19381,
+   "p_ocf": 11.773341630984127,
+   "p_fcf": 12.23638185878316,
+   "ev_fcf": 14.386709961198363,
+   "ocf_ttm": 15750000000.0,
+   "fcf_ttm": 15154000000.0,
+   "interest_ttm": 790000000.0,
+   "ev_fcff": 13.817646152071543
+  },
+  {
+   "ticker": "WDAY",
+   "nombre": "Workday, Inc.",
+   "precio": 189.17,
+   "pe": 38.843945,
+   "ev_ebitda": 28.978,
+   "crec_ingresos": 0.128,
+   "margen_operativo": 0.11816,
+   "roe": 0.16006,
+   "p_ocf": 14.79713435378124,
+   "p_fcf": 16.03022888326301,
+   "ev_fcf": 16.15997587623066,
+   "ocf_ttm": 3081000000.0,
+   "fcf_ttm": 2844000000.0,
+   "interest_ttm": 111000000.0,
+   "ev_fcff": 15.67661362285917
+  },
+  {
+   "ticker": "ADP",
+   "nombre": "Automatic Data Processing, Inc.",
+   "precio": 261.8,
+   "pe": 23.93053,
+   "ev_ebitda": 16.423,
+   "crec_ingresos": 0.068,
+   "margen_operativo": 0.23459,
+   "roe": 0.72239,
+   "p_ocf": 19.065400044107918,
+   "p_fcf": 21.72036907099935,
+   "ev_fcf": 22.04476101924164,
+   "ocf_ttm": 5441200000.0,
+   "fcf_ttm": 4776100000.0,
+   "interest_ttm": 459200000.0,
+   "ev_fcff": 20.488555671015483
+  },
+  {
+   "ticker": "PAYX",
+   "nombre": "Paychex, Inc.",
+   "precio": 99.31,
+   "pe": 19.704365,
+   "ev_ebitda": 12.682,
+   "crec_ingresos": 0.059,
+   "margen_operativo": 0.38504001,
+   "roe": 0.47055,
+   "p_ocf": 13.827363535807878,
+   "p_fcf": 15.226298713067449,
+   "ev_fcf": 16.81262810578,
+   "ocf_ttm": 2556700000.0,
+   "fcf_ttm": 2321800000.0,
+   "interest_ttm": 269500000.0,
+   "ev_fcff": 15.400435133871595
+  }
+ ]
+}

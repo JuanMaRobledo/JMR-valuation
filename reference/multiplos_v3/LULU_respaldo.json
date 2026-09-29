@@ -1,0 +1,187 @@
+{
+ "EVEBITDA!J8:J30": [
+  [
+   6
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   8
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   11
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [
+   12
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   18
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   25
+  ]
+ ],
+ "PE!J8:J30": [
+  [
+   10
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   15
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   20
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [
+   10
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   15
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   20
+  ]
+ ],
+ "POCF!J8:J30": [
+  [
+   8
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   12
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   16
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Los múltiplos de salida se fijan manualmente por escenario y ahora sí alimentan las fórmulas de cada hoja. Rangos usados: EV/FCFF 12x–25x; P/OCF 8x–16x; P/E 10x–20x; P/FCFE 10x–20x; EV/EBITDA 6x–11x."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación: los múltiplos heredados fueron sustituidos por rangos explícitos y prudentes para LULU. El escenario base combina 8x EV/EBITDA y 15x P/E; el conservador refleja una compresión adicional y el optimista una recuperación sin volver a valoraciones de hipercrecimiento."
+  ]
+ ]
+}

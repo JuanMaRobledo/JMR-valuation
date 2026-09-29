@@ -1,0 +1,474 @@
+{
+ "fcf_a_fcff": 2.696377775215727,
+ "empresa": "Alphabet Inc. (NASDAQ:GOOG)",
+ "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+ "fecha": "2026-09-29",
+ "ke": 0.09673000000000001,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Dec '16": 0.75,
+     "Dec '17": 1.13,
+     "Dec '18": 0.88,
+     "Dec '19": 1.22,
+     "Dec '20": 1.46,
+     "Dec '21": 1.14,
+     "Dec '22": 12.98,
+     "Dec '23": 18.29,
+     "Dec '24": 18.21,
+     "Dec '25": 25.46,
+     "LTM": 24.75
+    },
+    "mediana_5a": 1.14,
+    "mediana_10a": 1.14,
+    "p25": 0.95,
+    "p75": 1.2,
+    "min": 0.75,
+    "max": 1.46,
+    "ultimo_cierre": 25.46,
+    "ltm": 24.75,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '22",
+      12.98,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "Dec '23",
+      18.29,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "Dec '24",
+      18.21,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "Dec '25",
+      25.46,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "LTM",
+      24.75,
+      "> 2,5x la mediana (1.5x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 19.73,
+    "p25": 17.37,
+    "p75": 20.09
+   },
+   "justificado": {
+    "Conservador": 9.87,
+    "Base": 10.71,
+    "Optimista": 33.29
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 12.976276028397704,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Dec '16": 0.69,
+     "Dec '17": 1.24,
+     "Dec '18": 1.02,
+     "Dec '19": 1.35,
+     "Dec '20": 1.4,
+     "Dec '21": 1.52,
+     "Dec '22": 19.1,
+     "Dec '23": 25.33,
+     "Dec '24": 31.96,
+     "Dec '25": 52.19,
+     "LTM": 78.4
+    },
+    "mediana_5a": 1.35,
+    "mediana_10a": 1.29,
+    "p25": 1.07,
+    "p75": 1.39,
+    "min": 0.69,
+    "max": 1.52,
+    "ultimo_cierre": 52.19,
+    "ltm": 78.4,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '22",
+      19.1,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "Dec '23",
+      25.33,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "Dec '24",
+      31.96,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "Dec '25",
+      52.19,
+      "> 2,5x la mediana (1.5x)"
+     ],
+     [
+      "LTM",
+      78.4,
+      "> 2,5x la mediana (1.5x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 40.03,
+    "p25": 32.75,
+    "p75": 47.35
+   },
+   "justificado": {
+    "Conservador": 25.87,
+    "Base": 27.9,
+    "Optimista": 89.17
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 15.435825062546684,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Dec '16": "",
+     "Dec '17": "",
+     "Dec '18": "",
+     "Dec '19": "",
+     "Dec '20": "",
+     "Dec '21": "",
+     "Dec '22": 19.46,
+     "Dec '23": 24.3,
+     "Dec '24": 23.69,
+     "Dec '25": 29.03,
+     "LTM": 17.08
+    },
+    "mediana_5a": 23.99,
+    "mediana_10a": 23.99,
+    "p25": 19.46,
+    "p75": 24.3,
+    "min": 17.08,
+    "max": 29.03,
+    "ultimo_cierre": 29.03,
+    "ltm": 17.08,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 27.83,
+    "p25": 22.11,
+    "p75": 28.4
+   },
+   "justificado": {
+    "Conservador": 20.22,
+    "Base": 21.81,
+    "Optimista": 58.43
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 19.010401020476223,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Dec '16": 1.03,
+     "Dec '17": 1.52,
+     "Dec '18": 1.58,
+     "Dec '19": 1.49,
+     "Dec '20": 1.38,
+     "Dec '21": 1.43,
+     "Dec '22": 19.0,
+     "Dec '23": 25.27,
+     "Dec '24": 31.96,
+     "Dec '25": 51.77,
+     "LTM": 78.3
+    },
+    "mediana_5a": 1.49,
+    "mediana_10a": 1.46,
+    "p25": 1.39,
+    "p75": 1.51,
+    "min": 1.03,
+    "max": 1.58,
+    "ultimo_cierre": 51.77,
+    "ltm": 78.3,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '22",
+      19.0,
+      "> 2,5x la mediana (1.6x)"
+     ],
+     [
+      "Dec '23",
+      25.27,
+      "> 2,5x la mediana (1.6x)"
+     ],
+     [
+      "Dec '24",
+      31.96,
+      "> 2,5x la mediana (1.6x)"
+     ],
+     [
+      "Dec '25",
+      51.77,
+      "> 2,5x la mediana (1.6x)"
+     ],
+     [
+      "LTM",
+      78.3,
+      "> 2,5x la mediana (1.6x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 40.55,
+    "p25": 32.94,
+    "p75": 48.55
+   },
+   "justificado": {
+    "Conservador": 23.96,
+    "Base": 25.69,
+    "Optimista": 70.34
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 16.02107543351789,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Dec '16": 0.74,
+     "Dec '17": 0.98,
+     "Dec '18": 0.75,
+     "Dec '19": 0.84,
+     "Dec '20": 0.91,
+     "Dec '21": 1.05,
+     "Dec '22": 12.46,
+     "Dec '23": 17.26,
+     "Dec '24": 18.56,
+     "Dec '25": 23.03,
+     "LTM": 22.47
+    },
+    "mediana_5a": 0.91,
+    "mediana_10a": 0.88,
+    "p25": 0.77,
+    "p75": 0.96,
+    "min": 0.74,
+    "max": 1.05,
+    "ultimo_cierre": 23.03,
+    "ltm": 22.47,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '22",
+      12.46,
+      "> 2,5x la mediana (1.0x)"
+     ],
+     [
+      "Dec '23",
+      17.26,
+      "> 2,5x la mediana (1.0x)"
+     ],
+     [
+      "Dec '24",
+      18.56,
+      "> 2,5x la mediana (1.0x)"
+     ],
+     [
+      "Dec '25",
+      23.03,
+      "> 2,5x la mediana (1.0x)"
+     ],
+     [
+      "LTM",
+      22.47,
+      "> 2,5x la mediana (1.0x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 20.66,
+    "p25": 17.91,
+    "p75": 24.45
+   },
+   "justificado": {
+    "Conservador": 12.88,
+    "Base": 14.04,
+    "Optimista": 41.03
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 11.093084602286549,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.05278571428571428,
+   "g_años_4_10": 0.05567142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.0934840855259039,
+   "ke": 0.09673000000000001,
+   "roe_fy3": 0.33845308479444425,
+   "fcff_ebitda": 0.381367918545805,
+   "fcfe_ocf": 0.537720279390865,
+   "multiplos": {
+    "EV/FCFF": 25.86800607013209,
+    "P/FCFE": 23.957283573355863,
+    "P/E": 20.220865196395167,
+    "EV/EBITDA": 9.865227631896524,
+    "P/OCF": 12.882317216511094
+   }
+  },
+  "Base": {
+   "g": 0.05564285714285715,
+   "g_años_4_10": 0.06138571428571429,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.0934840855259039,
+   "ke": 0.09673000000000001,
+   "roe_fy3": 0.36780366116057017,
+   "fcff_ebitda": 0.38397515253409764,
+   "fcfe_ocf": 0.5465790793652353,
+   "multiplos": {
+    "EV/FCFF": 27.896632912048798,
+    "P/FCFE": 25.69277841521504,
+    "P/E": 21.805868767687713,
+    "EV/EBITDA": 10.711613877591665,
+    "P/OCF": 14.043135172523227
+   }
+  },
+  "Optimista": {
+   "g": 0.08135714285714285,
+   "g_años_4_10": 0.11281428571428571,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.0934840855259039,
+   "ke": 0.09673000000000001,
+   "roe_fy3": 0.48041233655879256,
+   "fcff_ebitda": 0.3733711325189872,
+   "fcfe_ocf": 0.5833635206835082,
+   "multiplos": {
+    "EV/FCFF": 89.16980746043389,
+    "P/FCFE": 70.3419756528203,
+    "P/E": 58.429662569786444,
+    "EV/EBITDA": 33.293431998002234,
+    "P/OCF": 41.03494256866286
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "META",
+   "nombre": "Meta Platforms, Inc.",
+   "precio": 738.79,
+   "pe": 27.826365,
+   "ev_ebitda": 17.369,
+   "crec_ingresos": 0.28,
+   "margen_operativo": 0.34827,
+   "roe": 0.29848,
+   "p_ocf": 14.444033607109692,
+   "p_fcf": 45.931082171026944,
+   "ev_fcf": 46.4802532510738,
+   "ocf_ttm": 130301000000.0,
+   "fcf_ttm": 40976000000.0,
+   "interest_ttm": 2028000000.0,
+   "ev_fcff": 44.73130465168495
+  },
+  {
+   "ticker": "MSFT",
+   "nombre": "Microsoft Corporation",
+   "precio": 508.96,
+   "pe": 28.401785,
+   "ev_ebitda": 19.725,
+   "crec_ingresos": 0.177,
+   "margen_operativo": 0.45111,
+   "roe": 0.34039003,
+   "p_ocf": 20.65928154048159,
+   "p_fcf": 56.41849416465882,
+   "ev_fcf": 57.19431705566752,
+   "ocf_ttm": 182935000000.0,
+   "fcf_ttm": 66987000000.0,
+   "interest_ttm": 3051000000.0,
+   "ev_fcff": 55.207857779576116
+  },
+  {
+   "ticker": "AMZN",
+   "nombre": "Amazon.com, Inc.",
+   "precio": 246.67,
+   "pe": 19.84473,
+   "ev_ebitda": 16.513,
+   "crec_ingresos": 0.196,
+   "margen_operativo": 0.13689,
+   "roe": 0.30558002,
+   "p_ocf": 17.913162155563484,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": 148531000000.0,
+   "fcf_ttm": -2472000000.0,
+   "interest_ttm": 2017000000.0,
+   "ev_fcff": null
+  },
+  {
+   "ticker": "AAPL",
+   "nombre": "Apple Inc.",
+   "precio": 329.4,
+   "pe": 37.73196,
+   "ev_ebitda": 28.753,
+   "crec_ingresos": 0.164,
+   "margen_operativo": 0.32623002,
+   "roe": 1.4875101,
+   "p_ocf": 32.764394546277366,
+   "p_fcf": 35.17133092928894,
+   "ev_fcf": 35.331885810408025,
+   "ocf_ttm": 146724000000.0,
+   "fcf_ttm": 136683000000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 35.331885810408025
+  },
+  {
+   "ticker": "NFLX",
+   "nombre": "Netflix, Inc.",
+   "precio": 70.3,
+   "pe": 22.106918,
+   "ev_ebitda": 20.085,
+   "crec_ingresos": 0.134,
+   "margen_operativo": 0.33381,
+   "roe": 0.49541,
+   "p_ocf": 24.453182612772228,
+   "p_fcf": 26.248640076470554,
+   "ev_fcf": 26.52404747092563,
+   "ocf_ttm": 11970833000.0,
+   "fcf_ttm": 11152005000.0,
+   "interest_ttm": 847451000.0,
+   "ev_fcff": 25.021911598092462
+  }
+ ]
+}

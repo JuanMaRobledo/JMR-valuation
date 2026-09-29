@@ -1,0 +1,24 @@
+{
+ "historia_excluir": {
+  "*": [
+   "—"
+  ]
+ },
+ "fcf_a_fcff": 0.98,
+ "peers_excluir": {},
+ "peers_motivo": "B: grandes plataformas tecnológicas y de software (Alphabet, Apple, Amazon, Oracle, Meta, Salesforce), datos de yfinance al 29-sep-2026. Amazon y Oracle no tienen flujo de caja libre positivo y no entran en los múltiplos de flujo.",
+ "ajuste_peers": 0.05,
+ "ajuste_motivo": "Ajuste +5%: Microsoft tiene el margen operativo más alto del grupo (45% frente a ~33%) y Azure acelera (~40%) con una cartera de US$678 mil millones.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Microsoft de FY+3 del escenario Base es una plataforma de crecimiento de dos dígitos, parecida a la de hoy.",
+ "fuentes": [
+  "[CNBC, 29-jul-2026: resultados 4T FY26 de Microsoft](https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html)",
+  "[CNBC, 29-abr-2026: Microsoft proyecta US$190 mil millones de capex](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html)"
+ ],
+ "evaluacion": "Los múltiplos (US$437,36 hoy) quedan 33% por encima del DCF (US$329,42). Los múltiplos suponen que Microsoft conserva a FY+3 una valoración parecida a la de sus últimos cinco años (~22x EBITDA, ~32x utilidad, ajustada por los peers), mientras que el DCF carga el capex de US$190 mil millones de 2026 contra el flujo de caja y usa un WACC de ~9,4%. El precio (US$509,22) está por encima de ambos. El DCF parece conservador frente a la aceleración de Azure (~40%) y conviene revisar su crecimiento y su reinversión; los múltiplos están más cerca de lo que paga el mercado.",
+ "ticker": "MSFT",
+ "etapa_motivo": "A: Sin cambio de etapa: Microsoft sigue creciendo a doble dígito y cotiza por debajo de su promedio de cinco años; se usa la mediana de los últimos 5 cierres + LTM. Se excluye la columna sin fecha de la hoja.",
+ "notas": {
+  "EV/FCFF": "EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 0,98 (mediana de los tres cierres reales); el último cierre da 1,28 porque 'Interest / Other' incluye partidas no operativas."
+ }
+}

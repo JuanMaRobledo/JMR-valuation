@@ -1,0 +1,27 @@
+{
+ "etapa_desde": "LTM",
+ "etapa_motivo": "A: EPAM cotizó a 15-59x EBITDA mientras crecía 15-25% al año como proveedor de ingeniería de software. En febrero de 2026 guió un crecimiento orgánico de solo 3-6% y luego lo bajó a 3,2-4,2%; el mercado lo lee como presión estructural de los asistentes de código con IA sobre la subcontratación tradicional, y la acción cayó a mínimos. La etapa actual es solo el LTM.",
+ "peers_excluir": {
+  "*": [
+   "WIT"
+  ],
+  "EV/EBITDA": [
+   "INFY"
+  ],
+  "EV/FCFF": [
+   "INFY"
+  ]
+ },
+ "peers_motivo": "B: servicios de TI y consultoría (Accenture, Globant, Cognizant, Infosys, ExlService), datos de yfinance al 29-sep-2026. Se excluye Wipro (sus cifras mezclan rupias y dólares: EV/EBITDA negativo) y, en los múltiplos de EV, Infosys (EV/EBITDA de 18,8x incoherente con su P/E de 13x).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: EPAM crece como Accenture y Cognizant (3-6%), con menor margen operativo pero sin deuda y con recompras; las diferencias se compensan.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la EPAM de FY+3 del escenario Base es una empresa de servicios de TI de crecimiento bajo, parecida a la de hoy.",
+ "fuentes": [
+  "[Trefis, 20-feb-2026: EPAM −17% por una guía 2026 cauta](https://www.trefis.com/stock/epam/articles/591182/epam-stock-17-cautious-2026-guidance-ignites-investor-revolt/2026-02-20)",
+  "[Finimize: EPAM recorta su guía 2026](https://finimize.com/content/epam-cuts-its-2026-revenue-outlook-as-ai-fears-linger)",
+  "[Morningstar: EPAM vulnerable a la disrupción de la IA](https://www.morningstar.com/company-reports/1450663-no-moat-epam-systems-is-vulnerable-to-ais-potential-disruption)"
+ ],
+ "evaluacion": "Los múltiplos (US$109,37 hoy) quedan 26% por debajo del DCF (US$148,70). Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA, ~13-15x utilidad), mientras que el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente; si el crecimiento orgánico vuelve a ~5-8% con los ingresos de IA, el DCF se acerca más al valor.",
+ "ticker": "EPAM"
+}

@@ -86,7 +86,9 @@ def decide(anc: dict, dec: dict) -> dict:
         idx = labels.index(start) if start in labels else 0
         stage = [(lab, v) for lab, v in list(serie.items())[idx:] if isinstance(v, (int, float)) and v > 0.5 and lab not in excl]
         # EV/FCFF: la historia es EV / FCF después de intereses; se convierte a EV / FCFF
-        conv = anc.get("fcf_a_fcff") if m == "EV/FCFF" else None
+        # (el analista puede fijar la razón en la decisión cuando el último cierre trae partidas no
+        # operativas atípicas dentro de 'Interest / Other', p. ej. ganancias en inversiones)
+        conv = dec.get("fcf_a_fcff", anc.get("fcf_a_fcff")) if m == "EV/FCFF" else None
         if conv and 0.3 < conv < 1.5:
             stage = [(lab, v * conv) for lab, v in stage]
         a_vals = [v for _, v in stage]
@@ -106,6 +108,11 @@ def decide(anc: dict, dec: dict) -> dict:
         if a_vals:
             a_p25, a_p75 = pct(a_vals, .25), pct(a_vals, .75)
         a_max = hist.get("max")  # tope del Optimista: máximo de toda la historia depurada
+        if dec.get("max_sin_exclusiones_auto"):
+            # la depuración automática descartó los cierres buenos (p. ej. historia vieja mal ajustada
+            # por un split): el tope sale de la historia sin las exclusiones manuales
+            vals = [v for lab, v in serie.items() if isinstance(v, (int, float)) and v > 0.5 and lab not in manual]
+            a_max = max(vals) if vals else a_max
         skip = set(dec.get("peers_excluir", {}).get(m, [])) | set(dec.get("peers_excluir", {}).get("*", []))
         pv = [(p["ticker"], p.get(PEER_KEY[m])) for p in anc["peers"]]
         pv = [(t, v) for t, v in pv if isinstance(v, (int, float)) and 0 < v < 200 and t not in skip]
