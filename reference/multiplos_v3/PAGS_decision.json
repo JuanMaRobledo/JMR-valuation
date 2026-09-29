@@ -1,0 +1,36 @@
+{
+ "etapa_motivo": "A: PagSeguro cotiza a 5-12x utilidades desde 2022; no hay un cambio de etapa. Se usa la mediana de los últimos cierres depurados, sin la columna sin fecha.",
+ "historia_excluir": {
+  "*": [
+   "—"
+  ]
+ },
+ "no_aplica": {
+  "EV/EBITDA": "PagSeguro es una entidad financiera (PagBank): la deuda es materia prima del negocio, no financiación, y el valor empresa no tiene sentido; su peso en la categoría Financiera es 0%.",
+  "EV/FCFF": "Igual que EV/EBITDA: para una financiera el FCFF no se puede separar de la financiación; peso 0%."
+ },
+ "peers_excluir": {
+  "P/E": [
+   "FOUR"
+  ],
+  "P/FCFE": [
+   "STNE"
+  ],
+  "P/OCF": [
+   "STNE"
+  ]
+ },
+ "peers_motivo": "B: pagos y banca digital (StoneCo, Nu, dLocal, PayPal, Adyen), datos de yfinance al 29-sep-2026. Se excluye en P/E a Shift4 (58x por amortización y deuda) y, en los múltiplos de flujo, StoneCo (su flujo incluye los fondos de clientes: P/FCF de 0,6x).",
+ "ajuste_peers": -0.3,
+ "ajuste_motivo": "Ajuste −30%: PagSeguro crece ~5% y opera en Brasil con Selic alta (costo de patrimonio de 14,7%), frente a Nu, dLocal y Adyen que crecen 20-50%.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la PagSeguro de FY+3 del escenario Base es un banco digital de crecimiento moderado, parecida a la de hoy.",
+ "fuentes": [
+  "[Nasdaq: puntos del 1T26 de PagSeguro](https://www.nasdaq.com/articles/pagseguro-digital-q1-earnings-call-highlights)"
+ ],
+ "evaluacion": "Los múltiplos (US$8,36 hoy) quedan 33% por debajo del DCF (US$12,53). La diferencia viene casi toda de P/FCFE (US$2,8, peso 20%): en la proyección Base el crédito que otorga PagBank absorbe caja (cambio en capital de trabajo de ~US$215-240 millones al año), y el FCFE de FY+3 queda en US$0,41 por acción frente a una utilidad de US$1,77. P/E, el método más confiable para una financiera, da US$11,9, cerca del DCF. Queda a tu decisión: revisar el supuesto de capital de trabajo o mover el peso de P/FCFE a P/E en la categoría Financiera (el prompt v3 pide hacerlo en la tabla compartida y registrarlo).",
+ "ticker": "PAGS",
+ "notas": {
+  "P/FCFE": "Aplicable con cautela: el FCFE proyectado es positivo pero bajo frente a la utilidad porque el crecimiento de la cartera de crédito consume caja."
+ }
+}

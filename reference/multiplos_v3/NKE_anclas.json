@@ -1,0 +1,405 @@
+{
+ "fcf_a_fcff": 1.0682366964404473,
+ "empresa": "NIKE, Inc. (NYSE:NKE)",
+ "sheet_id": "1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4",
+ "fecha": "2026-09-29",
+ "ke": 0.0926806193325744,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "May '17": 16.38,
+     "May '18": 22.6,
+     "May '19": 22.58,
+     "May '20": 41.82,
+     "May '21": 28.45,
+     "May '22": 25.79,
+     "May '23": 25.12,
+     "May '24": 20.44,
+     "May '25": 20.44,
+     "May '26": 15.51,
+     "LTM": 12.19
+    },
+    "mediana_5a": 20.44,
+    "mediana_10a": 22.59,
+    "p25": 18.41,
+    "p75": 25.46,
+    "min": 12.19,
+    "max": 41.82,
+    "ultimo_cierre": 15.51,
+    "ltm": 12.19,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 11.9,
+    "p25": 8.13,
+    "p75": 15.38
+   },
+   "justificado": {
+    "Conservador": 11.92,
+    "Base": 16.37,
+    "Optimista": 17.72
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 15.514223151408448,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "May '17": 35.24,
+     "May '18": 29.88,
+     "May '19": 25.85,
+     "May '20": 114.68,
+     "May '21": 36.65,
+     "May '22": 43.03,
+     "May '23": 34.13,
+     "May '24": 21.96,
+     "May '25": 28.0,
+     "May '26": 32.28,
+     "LTM": 25.36
+    },
+    "mediana_5a": 32.28,
+    "mediana_10a": 32.28,
+    "p25": 26.38,
+    "p75": 34.96,
+    "min": 21.96,
+    "max": 43.03,
+    "ultimo_cierre": 32.28,
+    "ltm": 25.36,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "May '20",
+      114.68,
+      "> 2,5x la mediana (32.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 14.18,
+    "p25": 8.78,
+    "p75": 17.96
+   },
+   "justificado": {
+    "Conservador": 16.81,
+    "Base": 24.58,
+    "Optimista": 26.43
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 22.640429068504428,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "May '17": 21.11,
+     "May '18": 61.37,
+     "May '19": 30.98,
+     "May '20": 61.61,
+     "May '21": 38.33,
+     "May '22": 31.69,
+     "May '23": 32.59,
+     "May '24": 25.48,
+     "May '25": 28.05,
+     "May '26": 22.01,
+     "LTM": 17.17
+    },
+    "mediana_5a": 28.05,
+    "mediana_10a": 31.34,
+    "p25": 23.75,
+    "p75": 35.46,
+    "min": 17.17,
+    "max": 61.61,
+    "ultimo_cierre": 22.01,
+    "ltm": 17.17,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 18.64,
+    "p25": 11.05,
+    "p75": 20.81
+   },
+   "justificado": {
+    "Conservador": 12.89,
+    "Base": 17.76,
+    "Optimista": 19.56
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 22.029160231660228,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "May '17": 35.37,
+     "May '18": 30.33,
+     "May '19": 26.1,
+     "May '20": 112.15,
+     "May '21": 36.84,
+     "May '22": 43.22,
+     "May '23": 33.92,
+     "May '24": 21.97,
+     "May '25": 27.58,
+     "May '26": 31.35,
+     "LTM": 24.45
+    },
+    "mediana_5a": 31.35,
+    "mediana_10a": 31.35,
+    "p25": 26.47,
+    "p75": 35.01,
+    "min": 21.97,
+    "max": 43.22,
+    "ultimo_cierre": 31.35,
+    "ltm": 24.45,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "May '20",
+      112.15,
+      "> 2,5x la mediana (31.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 9.82,
+    "p25": 9.46,
+    "p75": 15.8
+   },
+   "justificado": {
+    "Conservador": 15.6,
+    "Base": 22.12,
+    "Optimista": 23.61
+   },
+   "actual_J": {
+    "J8": 10.139017661948193,
+    "J19": 17.926274021731736,
+    "J30": 19.464962472870045
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "May '17": 24.63,
+     "May '18": 24.04,
+     "May '19": 21.15,
+     "May '20": 63.14,
+     "May '21": 32.99,
+     "May '22": 36.9,
+     "May '23": 28.29,
+     "May '24": 19.57,
+     "May '25": 24.37,
+     "May '26": 23.87,
+     "LTM": 18.62
+    },
+    "mediana_5a": 24.37,
+    "mediana_10a": 24.37,
+    "p25": 21.83,
+    "p75": 27.37,
+    "min": 18.62,
+    "max": 36.9,
+    "ultimo_cierre": 23.87,
+    "ltm": 18.62,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "May '20",
+      63.14,
+      "> 2,5x la mediana (24.4x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 8.86,
+    "p25": 7.56,
+    "p75": 12.54
+   },
+   "justificado": {
+    "Conservador": 11.21,
+    "Base": 20.73,
+    "Optimista": 22.82
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 19.232537698412695,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.026857142857142857,
+   "g_años_4_10": 0.004114285714285715,
+   "g_perpetuidad": 0.0496,
+   "wacc_4_10": 0.08795283036569816,
+   "ke": 0.0926806193325744,
+   "roe_fy3": 0.1543568104434575,
+   "fcff_ebitda": 0.7093255033022423,
+   "fcfe_ocf": 0.7182972931930248,
+   "multiplos": {
+    "EV/FCFF": 16.80735882894109,
+    "P/FCFE": 15.60016574391076,
+    "P/E": 12.885832124450587,
+    "EV/EBITDA": 11.921888260520024,
+    "P/OCF": 11.205556827213648
+   }
+  },
+  "Base": {
+   "g": 0.04542857142857143,
+   "g_años_4_10": 0.04125714285714286,
+   "g_perpetuidad": 0.0496,
+   "wacc_4_10": 0.08795283036569816,
+   "ke": 0.0926806193325744,
+   "roe_fy3": 0.23022791656997352,
+   "fcff_ebitda": 0.6660239265240399,
+   "fcfe_ocf": 0.9371090867460279,
+   "multiplos": {
+    "EV/FCFF": 24.58428665327868,
+    "P/FCFE": 22.124513493096824,
+    "P/E": 17.758904593369564,
+    "EV/EBITDA": 16.373723127609214,
+    "P/OCF": 20.733082634216135
+   }
+  },
+  "Optimista": {
+   "g": 0.048285714285714286,
+   "g_años_4_10": 0.046971428571428574,
+   "g_perpetuidad": 0.0496,
+   "wacc_4_10": 0.08795283036569816,
+   "ke": 0.0926806193325744,
+   "roe_fy3": 0.28115573607473776,
+   "fcff_ebitda": 0.670526467297505,
+   "fcfe_ocf": 0.9666366132777651,
+   "multiplos": {
+    "EV/FCFF": 26.427071536331873,
+    "P/FCFE": 23.612748201155473,
+    "P/E": 19.557492459055208,
+    "EV/EBITDA": 17.720050918275057,
+    "P/OCF": 22.824946951345567
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "ADDYY",
+   "nombre": "adidas AG",
+   "precio": 82.75,
+   "pe": 18.637386,
+   "ev_ebitda": 12.67,
+   "crec_ingresos": 0.133,
+   "margen_operativo": 0.08513,
+   "roe": 0.24324,
+   "p_ocf": 12.53695651060147,
+   "p_fcf": 15.79765894002181,
+   "ev_fcf": 18.403705439476553,
+   "ocf_ttm": 2311000000.0,
+   "fcf_ttm": 1834000000.0,
+   "interest_ttm": 58000000.0,
+   "ev_fcff": 17.95512111585152
+  },
+  {
+   "ticker": "LULU",
+   "nombre": "lululemon athletica inc.",
+   "precio": 96.87,
+   "pe": 7.97284,
+   "ev_ebitda": 4.986,
+   "crec_ingresos": -0.043,
+   "margen_operativo": 0.13212,
+   "roe": 0.30898002,
+   "p_ocf": 5.410848356207994,
+   "p_fcf": 7.9186258062991755,
+   "ev_fcf": 8.77670259669683,
+   "ocf_ttm": 1982033000.0,
+   "fcf_ttm": 1354336000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 8.77670259669683
+  },
+  {
+   "ticker": "DECK",
+   "nombre": "Deckers Outdoor Corporation",
+   "precio": 77.68,
+   "pe": 11.049787,
+   "ev_ebitda": 7.134,
+   "crec_ingresos": 0.057,
+   "margen_operativo": 0.15233,
+   "roe": 0.42558,
+   "p_ocf": 8.861935074846299,
+   "p_fcf": 9.463706740334654,
+   "ev_fcf": 8.468718949944892,
+   "ocf_ttm": 1193713000.0,
+   "fcf_ttm": 1117808000.0,
+   "interest_ttm": 3822000.0,
+   "ev_fcff": 8.445905195499417
+  },
+  {
+   "ticker": "ONON",
+   "nombre": "On Holding AG",
+   "precio": 29.55,
+   "pe": 20.809858,
+   "ev_ebitda": 19.065,
+   "crec_ingresos": 0.135,
+   "margen_operativo": 0.14019,
+   "roe": 0.23951,
+   "p_ocf": 18.797190285496765,
+   "p_fcf": 23.015716094150548,
+   "ev_fcf": 21.78872259147052,
+   "ocf_ttm": 525400000.0,
+   "fcf_ttm": 429100000.0,
+   "interest_ttm": 22800000.0,
+   "ev_fcff": 20.91095936588595
+  },
+  {
+   "ticker": "UAA",
+   "nombre": "Under Armour, Inc.",
+   "precio": 4.27,
+   "pe": null,
+   "ev_ebitda": 16.289,
+   "crec_ingresos": -0.032,
+   "margen_operativo": -0.01604,
+   "roe": -0.29825002,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": -14803000.0,
+   "fcf_ttm": -81116000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": null
+  },
+  {
+   "ticker": "VFC",
+   "nombre": "V.F. Corporation",
+   "precio": 14.5,
+   "pe": 21.014492,
+   "ev_ebitda": 11.134,
+   "crec_ingresos": -0.052,
+   "margen_operativo": -0.05529,
+   "roe": 0.17938,
+   "p_ocf": 7.557894627425296,
+   "p_fcf": 9.818884056772772,
+   "ev_fcf": 17.14313683340223,
+   "ocf_ttm": 754238000.0,
+   "fcf_ttm": 580560000.0,
+   "interest_ttm": 153551000.0,
+   "ev_fcff": 14.180241795402077
+  }
+ ]
+}

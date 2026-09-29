@@ -1,0 +1,21 @@
+{
+ "etapa_desde": "May '25",
+ "etapa_motivo": "A: Nike cotizó a 20-42x EBITDA mientras crecía y ganaba margen con la venta directa. Desde FY25 está en reestructuración: las ventas cayeron ~10% en FY25 y quedaron planas en FY26 (US$46.400 millones, −2% sin efecto cambiario), China cae 12% y el CEO Elliott Hill reconoce que la recuperación toma más de lo esperado. La etapa actual es May '25, May '26 y el LTM.",
+ "peers_excluir": {
+  "*": [
+   "UAA",
+   "VFC"
+  ]
+ },
+ "peers_motivo": "B: ropa y calzado deportivo (Adidas, Lululemon, Deckers, On Holding), datos de yfinance al 29-sep-2026. Se excluyen Under Armour y VF Corp (margen operativo negativo; sus múltiplos no comparan).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: Nike es la marca más grande del sector, pero hoy no crece; queda entre On/Adidas (crecen) y Lululemon (decrece).",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Nike de FY+3 del escenario Base es una marca madura en recuperación lenta, parecida a la de hoy.",
+ "fuentes": [
+  "[Nike: resultados FY26](https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2026-fourth-quarter-and-full-year-results)",
+  "[CNBC, 30-jun-2026: Nike supera estimados pero China cae 12%](https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html)"
+ ],
+ "evaluacion": "Los múltiplos (US$36,79 hoy) quedan 24% por encima del DCF (US$29,76), en el límite del rango de ±25%. Los múltiplos suponen que a FY+3 el mercado sigue pagando por Nike cerca de lo que paga hoy en plena reestructuración (~15x EBITDA, ~22x utilidad), mientras que el DCF refleja una recuperación lenta de ventas y márgenes. Si la recuperación se demora más (China, inventarios), el DCF es la referencia más prudente.",
+ "ticker": "NKE"
+}

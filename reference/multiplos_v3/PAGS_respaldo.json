@@ -1,0 +1,102 @@
+{
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L13"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L16"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L15"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Cómo se fija el múltiplo de salida en las 5 hojas de múltiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MENOR múltiplo POSITIVO de los últimos 4 cierres fiscales (celda J19 de cada hoja; si no hay ninguno positivo, la mediana de 5 años). Es un ancla conservadora: no extrapola múltiplos de pico. Conservador = Base × 0,9 y Optimista = Base × 1,1. Si se escribe un número en J8/J19/J30, reemplaza el cálculo automático (columna E). El precio sale al cierre FY+3, con la deuda neta restada en los múltiplos EV y los dividendos acumulados sumados. Detalle: hoja «Origen de los Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación PAGS (financiera): solo pesan P/E (35%), P/FCFE (20%) y P/OCF (5%) junto al DCF (40%); los múltiplos de EV no aplican a un banco. El flujo operativo de un banco incluye movimientos de depósitos y cartera (2024: -R$3.416M; 2025: +R$7.562M), así que P/OCF y P/FCFE son ruidosos. Se activó el override manual del bloque Base (columna J) = múltiplo LTM vivo (P/E ~6x), coherente con cómo el mercado valora hoy a las adquirentes brasileñas. OJO: P/FCFE da US$2,2-2,7 y se ordena al revés (Conservador > Optimista) porque el FCFE proyectado descuenta capex y capital de trabajo que en un banco son cartera; leerlo como no significativo (pesa 20% en el ponderado y lo sesga a la baja)."
+  ]
+ ]
+}

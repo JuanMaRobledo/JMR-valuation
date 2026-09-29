@@ -1,0 +1,288 @@
+{
+ "decision": {
+  "etapa_desde": "LTM",
+  "etapa_motivo": "A: On cotizó a 24-48x EBITDA y 64-96x utilidades como marca de hipercrecimiento. En agosto de 2026 bajó su guía de crecimiento a ~20% (desde ≥23%) tras ventas por debajo de lo esperado en EE. UU., y la acción cayó 22% en un día hasta mínimos de dos años. La etapa actual es solo el LTM.",
+  "fcf_a_fcff": 1.0,
+  "peers_excluir": {},
+  "peers_motivo": "B: ropa y calzado deportivo (Deckers, Nike, Lululemon, Birkenstock, Adidas, Crocs), datos de yfinance al 29-sep-2026.",
+  "ajuste_peers": 0.3,
+  "ajuste_motivo": "Ajuste +30%: On crece ~20% al año frente a 0-13% de los peers, con margen parecido y sin deuda.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la On de FY+3 del escenario Base sigue creciendo más que el sector, pero ya como marca establecida.",
+  "notas": {
+   "EV/FCFF": "La razón FCF después de intereses ÷ FCFF se fija en 1,0: On casi no tiene deuda y su 'Interest / Other' es sobre todo diferencia cambiaria (francos suizos), no intereses."
+  },
+  "fuentes": [
+   "[Yahoo Finance: On cae 22% tras el 2T y baja su guía](https://finance.yahoo.com/markets/stocks/articles/holding-shares-fall-sharply-q2-094135863.html)",
+   "[Trefis, 23-sep-2026: On confirma su guía y recompra US$1.000 millones](https://www.trefis.com/stock/onon/articles/616301/why-did-on-holding-stock-jump-if-its-near-term-guidance-did-not-change/2026-09-23)"
+  ],
+  "evaluacion": "Los múltiplos (US$34,52 hoy) quedan 11% por debajo del DCF (US$38,92), dentro del rango de ±25%: ambos métodos coinciden. Los dos quedan por encima del precio (US$30,00): el mercado descuenta, tras el recorte de la guía, un crecimiento menor que el escenario Base. P/E, P/FCFE y P/OCF dan menos que los múltiplos de EV porque la proyección mantiene 'Interest / Other' en −25% del EBIT (trata como recurrentes las pérdidas cambiarias de 2023 y 2025); conviene revisar ese supuesto.",
+  "ticker": "ONON"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 12.37,
+   "A_desc": "mediana LTM (etapa actual) = 12,4x",
+   "A_p25": 12.37,
+   "A_p75": 12.37,
+   "A_max": 47.59,
+   "A_excluidos": [
+    [
+     "Dec '21",
+     -92.16,
+     "métrica negativa o ~0"
+    ]
+   ],
+   "B_mediana": 9.49,
+   "B_ajustada": 12.33,
+   "B_n": 6,
+   "B_peers": "DECK 7,1x, NKE 11,2x, LULU 5,0x, BIRK 11,0x, ADDYY 12,7x, CROX 8,0x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 21.04,
+    "Base": 31.22,
+    "Optimista": null
+   },
+   "mercado": 12.35,
+   "lambda": 0.25,
+   "conservador": 13.93,
+   "base": 17.07,
+   "optimista": 18.56,
+   "factor_cons": 0.816,
+   "factor_opt": 1.087,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.33,
+    31.22
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 12.365128623928136,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 16.8,
+   "A_desc": "mediana LTM (etapa actual) = 16,8x",
+   "A_p25": 16.8,
+   "A_p75": 16.8,
+   "A_max": 43.55,
+   "A_excluidos": [
+    [
+     "Dec '21",
+     -524.13,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -16.02,
+     "métrica negativa o ~0"
+    ]
+   ],
+   "B_mediana": 13.78,
+   "B_ajustada": 17.91,
+   "B_n": 6,
+   "B_peers": "DECK 8,4x, NKE 25,3x, LULU 8,8x, BIRK 19,5x, ADDYY 18,0x, CROX 9,6x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 29.53,
+    "Base": 43.7,
+    "Optimista": null
+   },
+   "mercado": 17.36,
+   "lambda": 0.25,
+   "conservador": 18.58,
+   "base": 23.94,
+   "optimista": 28.59,
+   "factor_cons": 0.776,
+   "factor_opt": 1.194,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    16.8,
+    43.7
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 16.798557692307696,
+    "J30": null
+   },
+   "nota": "La razón FCF después de intereses ÷ FCFF se fija en 1,0: On casi no tiene deuda y su 'Interest / Other' es sobre todo diferencia cambiaria (francos suizos), no intereses."
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 19.84,
+   "A_desc": "mediana LTM (etapa actual) = 19,8x",
+   "A_p25": 19.84,
+   "A_p75": 19.84,
+   "A_max": 96.32,
+   "A_excluidos": [
+    [
+     "Dec '21",
+     -60.98,
+     "métrica negativa o ~0"
+    ],
+    [
+     "LTM",
+     19.84,
+     "< 0,4x la mediana (65.2x), caída puntual"
+    ]
+   ],
+   "B_mediana": 13.62,
+   "B_ajustada": 17.71,
+   "B_n": 6,
+   "B_peers": "DECK 11,0x, NKE 17,1x, LULU 8,0x, BIRK 16,2x, ADDYY 18,6x, CROX 10,9x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 15.23,
+    "Base": 21.19,
+    "Optimista": null
+   },
+   "mercado": 18.77,
+   "lambda": 0.25,
+   "conservador": 16.28,
+   "base": 19.38,
+   "optimista": 21.67,
+   "factor_cons": 0.84,
+   "factor_opt": 1.118,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    17.71,
+    21.19
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 19.841059602649008,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 18.34,
+   "A_desc": "mediana LTM (etapa actual) = 18,3x",
+   "A_p25": 18.34,
+   "A_p75": 18.34,
+   "A_max": 45.41,
+   "A_excluidos": [
+    [
+     "Dec '21",
+     -558.01,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -16.73,
+     "métrica negativa o ~0"
+    ]
+   ],
+   "B_mediana": 12.63,
+   "B_ajustada": 16.42,
+   "B_n": 6,
+   "B_peers": "DECK 9,5x, NKE 24,3x, LULU 7,9x, BIRK 18,7x, ADDYY 15,8x, CROX 8,3x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 21.66,
+    "Base": 28.53,
+    "Optimista": null
+   },
+   "mercado": 17.38,
+   "lambda": 0.25,
+   "conservador": 16.42,
+   "base": 20.17,
+   "optimista": 24.45,
+   "factor_cons": 0.814,
+   "factor_opt": 1.212,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    16.42,
+    28.53
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 18.337204142011835,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 14.98,
+   "A_desc": "mediana LTM (etapa actual) = 15,0x",
+   "A_p25": 14.98,
+   "A_p75": 14.98,
+   "A_max": 35.48,
+   "A_excluidos": [
+    [
+     "Dec '22",
+     -22.85,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     636.43,
+     "> 2,5x la mediana (33.3x)"
+    ]
+   ],
+   "B_mediana": 10.7,
+   "B_ajustada": 13.91,
+   "B_n": 6,
+   "B_peers": "DECK 8,9x, NKE 18,5x, LULU 5,4x, BIRK 13,6x, ADDYY 12,5x, CROX 7,7x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 19.51,
+    "Base": 27.05,
+    "Optimista": null
+   },
+   "mercado": 14.44,
+   "lambda": 0.25,
+   "conservador": 14.48,
+   "base": 17.6,
+   "optimista": 19.78,
+   "factor_cons": 0.823,
+   "factor_opt": 1.124,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    13.91,
+    27.05
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 14.975475687103593,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   24.798592698994778,
+   38.91828305533593,
+   63.64887726465742
+  ],
+  "multiplos_hoy": [
+   23.848807231520347,
+   34.52151252108337,
+   45.41232354346167
+  ],
+  "ponderado_hoy": [
+   24.418678512005002,
+   37.15957484163491,
+   56.354255776179116
+  ],
+  "brecha_base": -0.11297442202167574,
+  "fila_origen": 40
+ }
+}

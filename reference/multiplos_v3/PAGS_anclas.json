@@ -1,0 +1,409 @@
+{
+ "fcf_a_fcff": 1.0,
+ "empresa": "PagSeguro Digital Ltd. (NYSE:PAGS)",
+ "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+ "fecha": "2026-09-29",
+ "ke": 0.14700999999999997,
+ "categoria": "Financiera",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": 20.65,
+     "Dec '22": 5.09,
+     "Dec '23": 5.98,
+     "Dec '24": 2.71,
+     "Dec '25": 3.6,
+     "LTM": 3.01
+    },
+    "mediana_5a": 4.35,
+    "mediana_10a": 4.35,
+    "p25": 3.01,
+    "p75": 5.09,
+    "min": 2.71,
+    "max": 5.98,
+    "ultimo_cierre": 3.6,
+    "ltm": 3.01,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      20.65,
+      "> 2,5x la mediana (4.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 9.09,
+    "p25": 7.6,
+    "p75": 13.41
+   },
+   "justificado": {
+    "Conservador": 2.46,
+    "Base": 1.46,
+    "Optimista": 0.68
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 3.0147605904236174,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -54.57,
+     "Dec '22": 10.42,
+     "Dec '23": 10.02,
+     "Dec '24": -1.88,
+     "Dec '25": 2.97,
+     "LTM": 2.51
+    },
+    "mediana_5a": 10.02,
+    "mediana_10a": 10.02,
+    "p25": 2.86,
+    "p75": 10.12,
+    "min": 2.51,
+    "max": 10.42,
+    "ultimo_cierre": 2.97,
+    "ltm": 2.51,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '21",
+      -54.57,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '24",
+      -1.88,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 8.15,
+    "p25": 7.06,
+    "p75": 16.93
+   },
+   "justificado": {
+    "Conservador": 11.1,
+    "Base": 12.78,
+    "Optimista": 14.38
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 2.5144630167150437,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": 39.73,
+     "Dec '22": 9.82,
+     "Dec '23": 12.11,
+     "Dec '24": 5.09,
+     "Dec '25": 7.59,
+     "LTM": 6.16
+    },
+    "mediana_5a": 8.71,
+    "mediana_10a": 8.71,
+    "p25": 6.16,
+    "p75": 9.82,
+    "min": 5.09,
+    "max": 12.11,
+    "ultimo_cierre": 7.59,
+    "ltm": 6.16,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      39.73,
+      "> 2,5x la mediana (8.7x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 18.53,
+    "p25": 11.87,
+    "p75": 23.41
+   },
+   "justificado": {
+    "Conservador": 6.93,
+    "Base": 7.87,
+    "Optimista": 8.83
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 6.1564625850340144,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -54.49,
+     "Dec '22": 10.38,
+     "Dec '23": 9.97,
+     "Dec '24": -1.87,
+     "Dec '25": 2.96,
+     "LTM": 2.5
+    },
+    "mediana_5a": 9.97,
+    "mediana_10a": 9.97,
+    "p25": 2.84,
+    "p75": 10.07,
+    "min": 2.5,
+    "max": 10.38,
+    "ultimo_cierre": 2.96,
+    "ltm": 2.5,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '21",
+      -54.49,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '24",
+      -1.87,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 8.57,
+    "p25": 5.4,
+    "p75": 10.19
+   },
+   "justificado": {
+    "Conservador": 9.86,
+    "Base": 11.17,
+    "Optimista": 12.39
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 2.5000500450405365,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": 51.81,
+     "Dec '22": 4.13,
+     "Dec '23": 5.01,
+     "Dec '24": -3.13,
+     "Dec '25": 2.07,
+     "LTM": 1.75
+    },
+    "mediana_5a": 4.13,
+    "mediana_10a": 4.13,
+    "p25": 1.99,
+    "p75": 4.35,
+    "min": 1.75,
+    "max": 5.01,
+    "ultimo_cierre": 2.07,
+    "ltm": 1.75,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '24",
+      -3.13,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      51.81,
+      "> 2,5x la mediana (4.1x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 5.55,
+    "p25": 3.82,
+    "p75": 6.97
+   },
+   "justificado": {
+    "Conservador": 2.69,
+    "Base": 1.97,
+    "Optimista": 1.08
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 1.7474464810409962,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.041357142857142856,
+   "g_años_4_10": 0.03281428571428571,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.13515639126751586,
+   "ke": 0.14700999999999997,
+   "roe_fy3": 0.13910102182703443,
+   "fcff_ebitda": 0.22117765431822817,
+   "fcfe_ocf": 0.2730828340870128,
+   "multiplos": {
+    "EV/FCFF": 11.101977473222291,
+    "P/FCFE": 9.856403045012645,
+    "P/E": 6.925923718289669,
+    "EV/EBITDA": 2.455509335821116,
+    "P/OCF": 2.6916144774359156
+   }
+  },
+  "Base": {
+   "g": 0.05278571428571428,
+   "g_años_4_10": 0.05567142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.13515639126751586,
+   "ke": 0.14700999999999997,
+   "roe_fy3": 0.17863956139157894,
+   "fcff_ebitda": 0.11454723644205107,
+   "fcfe_ocf": 0.1759037780626891,
+   "multiplos": {
+    "EV/FCFF": 12.781073955702825,
+    "P/FCFE": 11.173188592567888,
+    "P/E": 7.87165372474049,
+    "EV/EBITDA": 1.4640367003872325,
+    "P/OCF": 1.9654060864396312
+   }
+  },
+  "Optimista": {
+   "g": 0.06135714285714285,
+   "g_años_4_10": 0.0728142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.13515639126751586,
+   "ke": 0.14700999999999997,
+   "roe_fy3": 0.21365062390969908,
+   "fcff_ebitda": 0.04740576603962487,
+   "fcfe_ocf": 0.08675535942853523,
+   "multiplos": {
+    "EV/FCFF": 14.381679566101946,
+    "P/FCFE": 12.391380489350706,
+    "P/E": 8.832768354411892,
+    "EV/EBITDA": 0.6817745367674826,
+    "P/OCF": 1.0750186681693592
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "STNE",
+   "nombre": "StoneCo Ltd.",
+   "precio": 9.28,
+   "pe": 3.5285168,
+   "ev_ebitda": 1.605,
+   "crec_ingresos": 0.016,
+   "margen_operativo": 0.39575002,
+   "roe": 0.33968,
+   "p_ocf": 0.454794820858958,
+   "p_fcf": 0.5961187519969959,
+   "ev_fcf": 3.0490352382201964,
+   "ocf_ttm": 4705259000.0,
+   "fcf_ttm": 3589767000.0,
+   "interest_ttm": 2830458000.0,
+   "ev_fcff": 1.8787586141262558
+  },
+  {
+   "ticker": "NU",
+   "nombre": "Nu Holdings Ltd.",
+   "precio": 12.35,
+   "pe": 16.917809,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.521,
+   "margen_operativo": 0.50154,
+   "roe": 0.31628,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": -1381616000.0,
+   "fcf_ttm": -1669966000.0,
+   "interest_ttm": 5478321000.0,
+   "ev_fcff": 18.95735853480143
+  },
+  {
+   "ticker": "DLO",
+   "nombre": "DLocal Limited",
+   "precio": 13.69,
+   "pe": 20.132353,
+   "ev_ebitda": 13.406,
+   "crec_ingresos": 0.558,
+   "margen_operativo": 0.16054001,
+   "roe": 0.41294,
+   "p_ocf": 9.392954501154142,
+   "p_fcf": 10.372072965450833,
+   "ev_fcf": 8.337375107813276,
+   "ocf_ttm": 428890000.0,
+   "fcf_ttm": 388403000.0,
+   "interest_ttm": 11545000.0,
+   "ev_fcff": 8.146087204141741
+  },
+  {
+   "ticker": "FOUR",
+   "nombre": "Shift4 Payments, Inc.",
+   "precio": 37.08,
+   "pe": 57.937504,
+   "ev_ebitda": 9.094,
+   "crec_ingresos": 0.341,
+   "margen_operativo": 0.0749,
+   "roe": 0.064899996,
+   "p_ocf": 4.9373377403035414,
+   "p_fcf": 10.130938685121107,
+   "ev_fcf": 28.60498646366782,
+   "ocf_ttm": 593000000.0,
+   "fcf_ttm": 289000000.0,
+   "interest_ttm": 252100000.0,
+   "ev_fcff": 16.934730462820514
+  },
+  {
+   "ticker": "PYPL",
+   "nombre": "PayPal Holdings, Inc.",
+   "precio": 53.89,
+   "pe": 10.187145,
+   "ev_ebitda": 7.601,
+   "crec_ingresos": 0.048,
+   "margen_operativo": 0.16966,
+   "roe": 0.24497,
+   "p_ocf": 6.167329391304348,
+   "p_fcf": 6.999815851806863,
+   "ev_fcf": 7.4513118493774675,
+   "ocf_ttm": 7475000000.0,
+   "fcf_ttm": 6586000000.0,
+   "interest_ttm": 461000000.0,
+   "ev_fcff": 7.060863061297605
+  },
+  {
+   "ticker": "ADYEY",
+   "nombre": "Adyen N.V.",
+   "precio": 9.8,
+   "pe": 24.5,
+   "ev_ebitda": 14.75,
+   "crec_ingresos": 0.189,
+   "margen_operativo": 0.43617,
+   "roe": 0.21271,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "error_cashflow": ""
+  }
+ ]
+}

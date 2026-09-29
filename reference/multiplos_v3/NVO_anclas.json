@@ -1,0 +1,374 @@
+{
+ "fcf_a_fcff": 1.0516012895149294,
+ "empresa": "Novo Nordisk A/S (NYSE:NVO)",
+ "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+ "fecha": "2026-09-29",
+ "ke": 0.09552440096209469,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 15.68,
+     "Dec '20": 17.97,
+     "Dec '21": 26.5,
+     "Dec '22": 24.47,
+     "Dec '23": 27.38,
+     "Dec '24": 18.78,
+     "Dec '25": 11.1,
+     "LTM": 7.63
+    },
+    "mediana_5a": 24.47,
+    "mediana_10a": 18.78,
+    "p25": 14.53,
+    "p75": 24.97,
+    "min": 7.63,
+    "max": 27.38,
+    "ultimo_cierre": 11.1,
+    "ltm": 7.63,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 13.99,
+    "p25": 9.83,
+    "p75": 14.29
+   },
+   "justificado": {
+    "Conservador": 6.64,
+    "Base": 8.7,
+    "Optimista": 10.76
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 11.10446771026408,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 23.68,
+     "Dec '20": 23.19,
+     "Dec '21": 34.9,
+     "Dec '22": 29.83,
+     "Dec '23": 36.2,
+     "Dec '24": 34.83,
+     "Dec '25": 26.8,
+     "LTM": 15.78
+    },
+    "mediana_5a": 34.83,
+    "mediana_10a": 29.83,
+    "p25": 23.56,
+    "p75": 34.85,
+    "min": 15.78,
+    "max": 36.2,
+    "ultimo_cierre": 26.8,
+    "ltm": 15.78,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 23.72,
+    "p25": 19.83,
+    "p75": 38.01
+   },
+   "justificado": {
+    "Conservador": 16.26,
+    "Base": 19.51,
+    "Optimista": 22.69
+   },
+   "actual_J": {
+    "J8": 19.880669019266854,
+    "J19": 22.5297318160481,
+    "J30": 26.100467466220852
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 23.15,
+     "Dec '20": 25.3,
+     "Dec '21": 35.22,
+     "Dec '22": 36.19,
+     "Dec '23": 36.3,
+     "Dec '24": 24.79,
+     "Dec '25": 14.41,
+     "LTM": 9.5
+    },
+    "mediana_5a": 35.22,
+    "mediana_10a": 25.3,
+    "p25": 20.97,
+    "p75": 35.46,
+    "min": 9.5,
+    "max": 36.3,
+    "ultimo_cierre": 14.41,
+    "ltm": 9.5,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 31.19,
+    "p25": 22.75,
+    "p75": 39.32
+   },
+   "justificado": {
+    "Conservador": 14.03,
+    "Base": 16.42,
+    "Optimista": 18.78
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 14.413432350597606,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 23.96,
+     "Dec '20": 23.23,
+     "Dec '21": 34.71,
+     "Dec '22": 29.79,
+     "Dec '23": 36.24,
+     "Dec '24": 33.8,
+     "Dec '25": 25.04,
+     "LTM": 14.53
+    },
+    "mediana_5a": 33.8,
+    "mediana_10a": 29.79,
+    "p25": 23.78,
+    "p75": 34.03,
+    "min": 14.53,
+    "max": 36.24,
+    "ultimo_cierre": 25.04,
+    "ltm": 14.53,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 22.93,
+    "p25": 18.49,
+    "p75": 42.14
+   },
+   "justificado": {
+    "Conservador": 15.19,
+    "Base": 18.0,
+    "Optimista": 20.68
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 16.99490261675757,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '19": 19.39,
+     "Dec '20": 20.63,
+     "Dec '21": 30.72,
+     "Dec '22": 25.21,
+     "Dec '23": 27.65,
+     "Dec '24": 20.62,
+     "Dec '25": 12.4,
+     "LTM": 8.35
+    },
+    "mediana_5a": 25.21,
+    "mediana_10a": 20.63,
+    "p25": 17.64,
+    "p75": 25.82,
+    "min": 8.35,
+    "max": 30.72,
+    "ultimo_cierre": 12.4,
+    "ltm": 8.35,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 18.45,
+    "p25": 15.06,
+    "p75": 18.59
+   },
+   "justificado": {
+    "Conservador": 7.92,
+    "Base": 10.74,
+    "Optimista": 13.39
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 13.89834100646018,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.027857142857142858,
+   "g_años_4_10": 0.020714285714285716,
+   "g_perpetuidad": 0.035,
+   "wacc_4_10": 0.09105224930084373,
+   "ke": 0.09552440096209469,
+   "roe_fy3": 0.36421000350605887,
+   "fcff_ebitda": 0.40844625913848004,
+   "fcfe_ocf": 0.5217095470140614,
+   "multiplos": {
+    "EV/FCFF": 16.26482176705942,
+    "P/FCFE": 15.189874270698802,
+    "P/E": 14.028054184848644,
+    "EV/EBITDA": 6.643305606309543,
+    "P/OCF": 7.924702424966817
+   }
+  },
+  "Base": {
+   "g": 0.03785714285714286,
+   "g_años_4_10": 0.04071428571428572,
+   "g_perpetuidad": 0.035,
+   "wacc_4_10": 0.09105224930084373,
+   "ke": 0.09552440096209469,
+   "roe_fy3": 0.4317588380187309,
+   "fcff_ebitda": 0.4458234188295361,
+   "fcfe_ocf": 0.5969151511380114,
+   "multiplos": {
+    "EV/FCFF": 19.510387557087807,
+    "P/FCFE": 17.99733812501176,
+    "P/E": 16.419309511692866,
+    "EV/EBITDA": 8.698187683390126,
+    "P/OCF": 10.742883806973289
+   }
+  },
+  "Optimista": {
+   "g": 0.045000000000000005,
+   "g_años_4_10": 0.05500000000000001,
+   "g_perpetuidad": 0.035,
+   "wacc_4_10": 0.09105224930084373,
+   "ke": 0.09552440096209469,
+   "roe_fy3": 0.4888551806219259,
+   "fcff_ebitda": 0.4739801737266411,
+   "fcfe_ocf": 0.6473198350893824,
+   "multiplos": {
+    "EV/FCFF": 22.69161693218,
+    "P/FCFE": 20.683075506110374,
+    "P/E": 18.779161147279453,
+    "EV/EBITDA": 10.755376535653067,
+    "P/OCF": 13.388565025756611
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "LLY",
+   "nombre": "Eli Lilly and Company",
+   "precio": 1184.63,
+   "pe": 39.832886,
+   "ev_ebitda": 26.423,
+   "crec_ingresos": 0.477,
+   "margen_operativo": 0.54222,
+   "roe": 1.02286,
+   "p_ocf": 37.61647850386355,
+   "p_fcf": 77.904392759882,
+   "ev_fcf": 81.26991767787611,
+   "ocf_ttm": 28083000000.0,
+   "fcf_ttm": 13560000000.0,
+   "interest_ttm": 179600000.0,
+   "ev_fcff": 80.4283618013406
+  },
+  {
+   "ticker": "AZN",
+   "nombre": "AstraZeneca PLC",
+   "precio": 164.21,
+   "pe": 24.582336,
+   "ev_ebitda": 14.175,
+   "crec_ingresos": 0.064,
+   "margen_operativo": 0.23459,
+   "roe": 0.21965,
+   "p_ocf": 18.589242151240875,
+   "p_fcf": 42.136435716743875,
+   "ev_fcf": 46.68211471078756,
+   "ocf_ttm": 13700000000.0,
+   "fcf_ttm": 6044000000.0,
+   "interest_ttm": 1746000000.0,
+   "ev_fcff": 38.008053155587646
+  },
+  {
+   "ticker": "NVS",
+   "nombre": "Novartis AG",
+   "precio": 145.71,
+   "pe": 22.010576,
+   "ev_ebitda": 13.8,
+   "crec_ingresos": 0.008,
+   "margen_operativo": 0.3462,
+   "roe": 0.3035,
+   "p_ocf": 15.057531121622356,
+   "p_fcf": 18.488195588785047,
+   "ev_fcf": 21.27858109692924,
+   "ocf_ttm": 18393000000.0,
+   "fcf_ttm": 14980000000.0,
+   "interest_ttm": 1390000000.0,
+   "ev_fcff": 19.82529930974431
+  },
+  {
+   "ticker": "SNY",
+   "nombre": "Sanofi",
+   "precio": 40.74,
+   "pe": 22.141304,
+   "ev_ebitda": 8.507,
+   "crec_ingresos": 0.146,
+   "margen_operativo": 0.21033001,
+   "roe": 0.05709,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "error_cashflow": ""
+  },
+  {
+   "ticker": "MRK",
+   "nombre": "Merck & Company, Inc.",
+   "precio": 149.28,
+   "pe": 119.423996,
+   "ev_ebitda": 14.328,
+   "crec_ingresos": 0.051,
+   "margen_operativo": -0.00241,
+   "roe": 0.06961,
+   "p_ocf": 18.445403748184503,
+   "p_fcf": 22.928430345514535,
+   "ev_fcf": 25.752645167652368,
+   "ocf_ttm": 19967000000.0,
+   "fcf_ttm": 16063000000.0,
+   "interest_ttm": 1742000000.0,
+   "ev_fcff": 23.72042374285947
+  },
+  {
+   "ticker": "PFE",
+   "nombre": "Pfizer, Inc.",
+   "precio": 28.72,
+   "pe": 37.789474,
+   "ev_ebitda": 8.501,
+   "crec_ingresos": 0.026,
+   "margen_operativo": 0.27877,
+   "roe": 0.05014,
+   "p_ocf": 12.215105198716513,
+   "p_fcf": 14.901649956121984,
+   "ev_fcf": 19.64247855657715,
+   "ocf_ttm": 13401000000.0,
+   "fcf_ttm": 10985000000.0,
+   "interest_ttm": 2698000000.0,
+   "ev_fcff": 16.450573170423027
+  }
+ ]
+}

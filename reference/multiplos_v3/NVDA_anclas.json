@@ -1,0 +1,655 @@
+{
+ "fcf_a_fcff": 1.1129039656370883,
+ "empresa": "NVIDIA CORP (NASDAQ:NVDA)",
+ "sheet_id": "1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg",
+ "fecha": "2026-09-29",
+ "ke": 0.13463999999999998,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Jan '17": 0.87,
+     "Jan '18": 0.49,
+     "Jan '19": 0.89,
+     "Jan '20": -1.4,
+     "Jan '21": 2.63,
+     "Jan '22": 5.97,
+     "Jan '23": 10.17,
+     "Jan '24": 4.46,
+     "Jan '25": 41.92,
+     "Jan '26": 34.24,
+     "LTM": 26.89
+    },
+    "mediana_5a": 5.22,
+    "mediana_10a": 5.22,
+    "p25": 4.01,
+    "p75": 7.02,
+    "min": 2.63,
+    "max": 10.17,
+    "ultimo_cierre": 34.24,
+    "ltm": 26.89,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '18",
+      0.49,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '20",
+      -1.4,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '17",
+      0.87,
+      "< 0,4x la mediana (6.0x), caída puntual"
+     ],
+     [
+      "Jan '19",
+      0.89,
+      "< 0,4x la mediana (6.0x), caída puntual"
+     ],
+     [
+      "Jan '25",
+      41.92,
+      "> 2,5x la mediana (6.0x)"
+     ],
+     [
+      "Jan '26",
+      34.24,
+      "> 2,5x la mediana (6.0x)"
+     ],
+     [
+      "LTM",
+      26.89,
+      "> 2,5x la mediana (6.0x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 9,
+    "mediana": 32.61,
+    "p25": 27.44,
+    "p75": 46.73
+   },
+   "justificado": {
+    "Conservador": 13.5,
+    "Base": 20.59,
+    "Optimista": 47.57
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 4.464208816705336,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Jan '17": 1.11,
+     "Jan '18": 0.48,
+     "Jan '19": 0.97,
+     "Jan '20": -0.95,
+     "Jan '21": 2.54,
+     "Jan '22": 7.35,
+     "Jan '23": 10.4,
+     "Jan '24": 5.48,
+     "Jan '25": 54.49,
+     "Jan '26": 44.41,
+     "LTM": 40.33
+    },
+    "mediana_5a": 7.35,
+    "mediana_10a": 7.35,
+    "p25": 6.41,
+    "p75": 8.88,
+    "min": 5.48,
+    "max": 10.4,
+    "ultimo_cierre": 44.41,
+    "ltm": 40.33,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '18",
+      0.48,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '20",
+      -0.95,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '17",
+      1.11,
+      "< 0,4x la mediana (7.3x), caída puntual"
+     ],
+     [
+      "Jan '19",
+      0.97,
+      "< 0,4x la mediana (7.3x), caída puntual"
+     ],
+     [
+      "Jan '21",
+      2.54,
+      "< 0,4x la mediana (7.3x), caída puntual"
+     ],
+     [
+      "Jan '25",
+      54.49,
+      "> 2,5x la mediana (7.3x)"
+     ],
+     [
+      "Jan '26",
+      44.41,
+      "> 2,5x la mediana (7.3x)"
+     ],
+     [
+      "LTM",
+      40.33,
+      "> 2,5x la mediana (7.3x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 9,
+    "mediana": 45.03,
+    "p25": 38.06,
+    "p75": 80.51
+   },
+   "justificado": {
+    "Conservador": 16.85,
+    "Base": 27.14,
+    "Optimista": 65.48
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 4.164235607728804,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Jan '17": 1.09,
+     "Jan '18": 1.26,
+     "Jan '19": 0.6,
+     "Jan '20": 1.38,
+     "Jan '21": 1.88,
+     "Jan '22": 5.93,
+     "Jan '23": 11.7,
+     "Jan '24": 5.12,
+     "Jan '25": 48.51,
+     "Jan '26": 38.3,
+     "LTM": 28.6
+    },
+    "mediana_5a": 5.93,
+    "mediana_10a": 5.93,
+    "p25": 5.52,
+    "p75": 8.82,
+    "min": 5.12,
+    "max": 11.7,
+    "ultimo_cierre": 38.3,
+    "ltm": 28.6,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '17",
+      1.09,
+      "< 0,4x la mediana (5.1x), caída puntual"
+     ],
+     [
+      "Jan '18",
+      1.26,
+      "< 0,4x la mediana (5.1x), caída puntual"
+     ],
+     [
+      "Jan '19",
+      0.6,
+      "< 0,4x la mediana (5.1x), caída puntual"
+     ],
+     [
+      "Jan '20",
+      1.38,
+      "< 0,4x la mediana (5.1x), caída puntual"
+     ],
+     [
+      "Jan '21",
+      1.88,
+      "< 0,4x la mediana (5.1x), caída puntual"
+     ],
+     [
+      "Jan '25",
+      48.51,
+      "> 2,5x la mediana (5.1x)"
+     ],
+     [
+      "Jan '26",
+      38.3,
+      "> 2,5x la mediana (5.1x)"
+     ],
+     [
+      "LTM",
+      28.6,
+      "> 2,5x la mediana (5.1x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 10,
+    "mediana": 50.57,
+    "p25": 43.6,
+    "p75": 61.74
+   },
+   "justificado": {
+    "Conservador": 11.99,
+    "Base": 17.24,
+    "Optimista": 28.23
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 5.0530215053763445,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Jan '17": 0.98,
+     "Jan '18": 1.05,
+     "Jan '19": 0.65,
+     "Jan '20": 0.8,
+     "Jan '21": 1.38,
+     "Jan '22": 6.28,
+     "Jan '23": 8.9,
+     "Jan '24": 5.35,
+     "Jan '25": 54.47,
+     "Jan '26": 44.4,
+     "LTM": 40.41
+    },
+    "mediana_5a": 6.28,
+    "mediana_10a": 6.28,
+    "p25": 5.82,
+    "p75": 7.59,
+    "min": 5.35,
+    "max": 8.9,
+    "ultimo_cierre": 44.4,
+    "ltm": 40.41,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '17",
+      0.98,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '18",
+      1.05,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '19",
+      0.65,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '20",
+      0.8,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '21",
+      1.38,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '25",
+      54.47,
+      "> 2,5x la mediana (5.4x)"
+     ],
+     [
+      "Jan '26",
+      44.4,
+      "> 2,5x la mediana (5.4x)"
+     ],
+     [
+      "LTM",
+      40.41,
+      "> 2,5x la mediana (5.4x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 10,
+    "mediana": 58.06,
+    "p25": 40.07,
+    "p75": 81.95
+   },
+   "justificado": {
+    "Conservador": 12.86,
+    "Base": 18.23,
+    "Optimista": 30.4
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 3.9218684580534293,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Jan '17": 0.98,
+     "Jan '18": 1.05,
+     "Jan '19": 0.65,
+     "Jan '20": 0.8,
+     "Jan '21": 1.38,
+     "Jan '22": 6.28,
+     "Jan '23": 8.9,
+     "Jan '24": 5.35,
+     "Jan '25": 54.47,
+     "Jan '26": 44.4,
+     "LTM": 40.37
+    },
+    "mediana_5a": 6.28,
+    "mediana_10a": 6.28,
+    "p25": 5.82,
+    "p75": 7.59,
+    "min": 5.35,
+    "max": 8.9,
+    "ultimo_cierre": 44.4,
+    "ltm": 40.37,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '17",
+      0.98,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '18",
+      1.05,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '19",
+      0.65,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '20",
+      0.8,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '21",
+      1.38,
+      "< 0,4x la mediana (5.4x), caída puntual"
+     ],
+     [
+      "Jan '25",
+      54.47,
+      "> 2,5x la mediana (5.4x)"
+     ],
+     [
+      "Jan '26",
+      44.4,
+      "> 2,5x la mediana (5.4x)"
+     ],
+     [
+      "LTM",
+      40.37,
+      "> 2,5x la mediana (5.4x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 10,
+    "mediana": 51.8,
+    "p25": 30.96,
+    "p75": 68.62
+   },
+   "justificado": {
+    "Conservador": 12.92,
+    "Base": 18.4,
+    "Optimista": 30.8
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 3.5747782128871486,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.05278571428571428,
+   "g_años_4_10": 0.05567142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.11527677557982433,
+   "ke": 0.13463999999999998,
+   "roe_fy3": 0.7763359503906143,
+   "fcff_ebitda": 0.8013174091937987,
+   "fcfe_ocf": 1.0044229409715568,
+   "multiplos": {
+    "EV/FCFF": 16.846980871885787,
+    "P/FCFE": 12.861705469649902,
+    "P/E": 11.987194493047117,
+    "EV/EBITDA": 13.499779064997002,
+    "P/OCF": 12.918592033735713
+   }
+  },
+  "Base": {
+   "g": 0.07564285714285715,
+   "g_años_4_10": 0.1013857142857143,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.11527677557982433,
+   "ke": 0.13463999999999998,
+   "roe_fy3": 1.383619359584715,
+   "fcff_ebitda": 0.7585298794686216,
+   "fcfe_ocf": 1.009305369414639,
+   "multiplos": {
+    "EV/FCFF": 27.139452760734056,
+    "P/FCFE": 18.23211777810064,
+    "P/E": 17.235362802863413,
+    "EV/EBITDA": 20.586085831443953,
+    "P/OCF": 18.401774369237074
+   }
+  },
+  "Optimista": {
+   "g": 0.0985,
+   "g_años_4_10": 0.1471,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.11527677557982433,
+   "ke": 0.13463999999999998,
+   "roe_fy3": 1.3808877714369177,
+   "fcff_ebitda": 0.7265768328944582,
+   "fcfe_ocf": 1.0133065537569879,
+   "multiplos": {
+    "EV/FCFF": 65.47742113931902,
+    "P/FCFE": 30.395683453237428,
+    "P/E": 28.22753128180613,
+    "EV/EBITDA": 47.57437727750306,
+    "P/OCF": 30.800145249088317
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "AVGO",
+   "nombre": "Broadcom Inc.",
+   "precio": 355.1,
+   "pe": 45.760307,
+   "ev_ebitda": 32.609,
+   "crec_ingresos": 0.855,
+   "margen_operativo": 0.54307,
+   "roe": 0.44245,
+   "p_ocf": 41.69719415659361,
+   "p_fcf": 43.01997396259168,
+   "ev_fcf": 43.24954539136614,
+   "ocf_ttm": 40653000000.0,
+   "fcf_ttm": 39403000000.0,
+   "interest_ttm": 3116000000.0,
+   "ev_fcff": 40.70647298187683
+  },
+  {
+   "ticker": "QCOM",
+   "nombre": "QUALCOMM Incorporated",
+   "precio": 184.1,
+   "pe": 21.015982,
+   "ev_ebitda": 16.704,
+   "crec_ingresos": -0.04,
+   "margen_operativo": 0.18528,
+   "roe": 0.33754003,
+   "p_ocf": 15.855974371099105,
+   "p_fcf": 18.87768223655914,
+   "ev_fcf": 19.24247161904762,
+   "ocf_ttm": 12401000000.0,
+   "fcf_ttm": 10416000000.0,
+   "interest_ttm": 689000000.0,
+   "ev_fcff": 18.28685360030875
+  },
+  {
+   "ticker": "TSM",
+   "nombre": "Taiwan Semiconductor Manufactur",
+   "precio": 456.94,
+   "pe": 33.973236,
+   "ev_ebitda": 5.172,
+   "crec_ingresos": 0.36,
+   "margen_operativo": 0.60344005,
+   "roe": 0.39969003,
+   "p_ocf": 0.8995051201751958,
+   "p_fcf": 2.107208142259098,
+   "ev_fcf": 14.56724938428238,
+   "ocf_ttm": 2634679085000.0,
+   "fcf_ttm": 1124666937000.0,
+   "interest_ttm": 11803942000.0,
+   "ev_fcff": 14.447459070359443
+  },
+  {
+   "ticker": "AMD",
+   "nombre": "Advanced Micro Devices, Inc.",
+   "precio": 607.57,
+   "pe": 156.18765,
+   "ev_ebitda": 102.804,
+   "crec_ingresos": 0.501,
+   "margen_operativo": 0.1725,
+   "roe": 0.10196,
+   "p_ocf": 98.39710923174603,
+   "p_fcf": 118.03437594382959,
+   "ev_fcf": 116.98296886350113,
+   "ocf_ttm": 10080000000.0,
+   "fcf_ttm": 8403000000.0,
+   "interest_ttm": 147000000.0,
+   "ev_fcff": 115.38829520854829
+  },
+  {
+   "ticker": "MRVL",
+   "nombre": "Marvell Technology, Inc.",
+   "precio": 263.27,
+   "pe": 87.17549,
+   "ev_ebitda": 81.47,
+   "crec_ingresos": 0.365,
+   "margen_operativo": 0.16679001,
+   "roe": 0.16523,
+   "p_ocf": 107.53168503931282,
+   "p_fcf": 137.33571313675412,
+   "ev_fcf": 134.78915566287438,
+   "ocf_ttm": 2200300000.0,
+   "fcf_ttm": 1722800000.0,
+   "interest_ttm": 439500000.0,
+   "ev_fcff": 112.18077124258154
+  },
+  {
+   "ticker": "ASML",
+   "nombre": "ASML Holding N.V. - New York Re",
+   "precio": 1834.39,
+   "pe": 63.539658,
+   "ev_ebitda": 2901.623,
+   "crec_ingresos": 0.213,
+   "margen_operativo": 0.37057,
+   "roe": 0.53942,
+   "p_ocf": 66.90302439424583,
+   "p_fcf": 79.21627988172466,
+   "ev_fcf": 4400.275001477317,
+   "ocf_ttm": 10531500000.0,
+   "fcf_ttm": 8894500000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 4400.275001477317
+  },
+  {
+   "ticker": "KLAC",
+   "nombre": "KLA Corporation",
+   "precio": 196.53,
+   "pe": 53.843834,
+   "ev_ebitda": 42.615,
+   "crec_ingresos": 0.152,
+   "margen_operativo": 0.42486,
+   "roe": 0.87496,
+   "p_ocf": 61.90394249301063,
+   "p_fcf": 68.08170990466492,
+   "ev_fcf": 68.49370043964457,
+   "ocf_ttm": 4143079000.0,
+   "fcf_ttm": 3767134000.0,
+   "interest_ttm": 284440000.0,
+   "ev_fcff": 64.63807274116287
+  },
+  {
+   "ticker": "LRCX",
+   "nombre": "Lam Research Corporation",
+   "precio": 323.86,
+   "pe": 56.323475,
+   "ev_ebitda": 46.728,
+   "crec_ingresos": 0.3,
+   "margen_operativo": 0.37390998,
+   "roe": 0.65066004,
+   "p_ocf": 69.18914668578239,
+   "p_fcf": 82.85941705886346,
+   "ev_fcf": 82.55457178162156,
+   "ocf_ttm": 5857657000.0,
+   "fcf_ttm": 4891252000.0,
+   "interest_ttm": 156884000.0,
+   "ev_fcff": 80.5144342190034
+  },
+  {
+   "ticker": "TXN",
+   "nombre": "Texas Instruments Incorporated",
+   "precio": 281.69,
+   "pe": 42.87519,
+   "ev_ebitda": 27.439,
+   "crec_ingresos": 0.228,
+   "margen_operativo": 0.42576998,
+   "roe": 0.35176,
+   "p_ocf": 29.681866507903543,
+   "p_fcf": 48.03972680186742,
+   "ev_fcf": 48.78001130009337,
+   "ocf_ttm": 8667000000.0,
+   "fcf_ttm": 5355000000.0,
+   "interest_ttm": 564000000.0,
+   "ev_fcff": 45.033058965341276
+  },
+  {
+   "ticker": "ADI",
+   "nombre": "Analog Devices, Inc.",
+   "precio": 398.22,
+   "pe": 47.294537,
+   "ev_ebitda": 28.667,
+   "crec_ingresos": 0.396,
+   "margen_operativo": 0.39503,
+   "roe": 0.12227,
+   "p_ocf": 34.79753805737265,
+   "p_fcf": 39.08128671077135,
+   "ev_fcf": 40.192619118804174,
+   "ocf_ttm": 5545325000.0,
+   "fcf_ttm": 4937495000.0,
+   "interest_ttm": 350849000.0,
+   "ev_fcff": 38.05629487532385
+  }
+ ]
+}
