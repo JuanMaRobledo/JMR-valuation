@@ -116,7 +116,8 @@ def main():
     pond = [cell("Descuento de múltiplos", c + "40") for c in "CDE"]
     w_dcf, w_mult = cell("Descuento de múltiplos", "B38"), cell("Descuento de múltiplos", "B39")
     op = rec["objetivoPonderado"]
-    mos = rec.get("precioMOSHoy") or {}
+    mos_pct = float(rec.get("mos") or 0)
+    mos = {k: dcf[i] * (1 - mos_pct) for i, k in enumerate(SCEN)}  # MOS sobre el DCF
 
     # --- sensibilidad de múltiplos (Base) ---
     nd = cell("Input sheet", "B16") - cell("Input sheet", "B19") - (cell("Input sheet", "B20") or 0) + (cell("Input sheet", "B21") or 0)
@@ -189,12 +190,12 @@ def main():
       f"(rango {money(dcf[0])}–{money(dcf[2])}). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos "
       f"a valor presente en 1, 2 y 3 años, dan {money(mult[1])} ({'+' if gap >= 0 else '−'}{es(abs(gap) * 100, 0)}% frente al DCF). "
       f"Con los pesos de la categoría «{cell('Resumen de Valoración', 'G3')}» ({pct(w_dcf, 0)} DCF, {pct(w_mult, 0)} múltiplos), "
-      f"el valor intrínseco ponderado hoy es {money(pond[1])}, frente a un precio de referencia de {money(price)} "
-      f"({'+' if pond[1] >= price else '−'}{es(abs(pond[1] / price - 1) * 100, 0)}%).")
+      f"el ponderado hoy (lectura secundaria) es {money(pond[1])}. El valor intrínseco es el DCF: {money(dcf[1])} frente a un "
+      f"precio de referencia de {money(price)} ({'+' if dcf[1] >= price else '−'}{es(abs(dcf[1] / price - 1) * 100, 0)}%).")
     w("")
     w(dec.get("evaluacion", ""))
     w("")
-    w("| Escenario | DCF hoy | Múltiplos consolidados hoy | Valor intrínseco ponderado hoy | Compra con MOS hoy | Precio objetivo FY+3 ponderado |")
+    w("| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |")
     w("|---|---:|---:|---:|---:|---:|")
     for i, k in enumerate(SCEN):
         w(f"| {k.capitalize()} | {money(dcf[i])} | {money(mult[i])} | {money(pond[i])} | {money(mos.get(k))} | {money(op[k])} |")
@@ -315,7 +316,7 @@ def main():
           "crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el "
           "crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).")
         w("")
-    w("## 7. Sensibilidad del valor ponderado hoy (Base)")
+    w("## 7. Sensibilidad del valor ponderado hoy (Base, lectura secundaria)")
     w("")
     w("| Cambio | Valor ponderado hoy | Variación |")
     w("|---|---:|---:|")

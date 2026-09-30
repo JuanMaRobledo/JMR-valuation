@@ -7,7 +7,7 @@ descontados aparte). Este script:
 
 1. Rehace esa tabla y su parrafo con la valoracion vinculada ya actualizada
    (linkedValuation.descuentoMultiples v2): DCF hoy, cada multiplo consolidado hoy,
-   multiplos consolidados y valor intrinseco ponderado.
+   multiplos consolidados y ponderado (lecturas secundarias; el valor intrinseco es el DCF).
 2. En el resto del texto (html y valuationHtml) cambia cada cifra "US$x" que era un
    valor del puente anterior (ponderado hoy, multiplos hoy, cada metodo descontado y el
    precio con MOS de hoy) por la cifra nueva equivalente. Las demas cifras no se tocan.

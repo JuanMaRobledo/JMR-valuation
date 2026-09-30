@@ -18,7 +18,8 @@ maestra y en cada valoracion:
      solo el de 3 años (celda C6, lista desplegable).
    - Multiplos consolidados = promedio de los 5 metodos con sus pesos del
      Resumen reescalados a 100% dentro de los multiplos.
-   - Valor intrinseco ponderado = DCF x peso DCF + multiplos x peso multiplos
+   - Ponderado (lectura secundaria) = DCF x peso DCF + multiplos x peso multiplos;
+     el valor intrinseco es el DCF
      (pesos de la categoria de empresa, 'Resumen de Valoración' I5:U11).
    - Chequeo: VP a 3 años < precio FY+3 sin descontar, por metodo y total.
    Ke = 'Cost of capital worksheet'!B63 (costo del patrimonio del DCF, el
@@ -250,17 +251,17 @@ def sheet_values(lay: Layout = DEFAULT) -> list[list[str]]:
             put(first + i, _method_row(lay.q(i), lay.res_rows[i], first + i, first, lay.src_rows[k]))
         put(first + len(METHODS), _total_row(first + len(METHODS), first))
 
-    put(SUM_TITLE, ["VALOR INTRÍNSECO HOY · DCF + MÚLTIPLOS DESCONTADOS"])
+    put(SUM_TITLE, ["VALOR HOY · DCF (VALOR INTRÍNSECO) + MÚLTIPLOS DESCONTADOS (SECUNDARIO)"])
     put(SUM_HDR, ["Concepto", "Peso", "Conservador", "Base", "Optimista"])
-    put(SUM_DCF, ["DCF (valor presente)", f"={R}!B{lay.res_dcf_row}"] + [f"='Valuation output'!{d}" for d in lay.dcf_refs])
+    put(SUM_DCF, ["DCF · valor intrínseco (valor presente)", f"={R}!B{lay.res_dcf_row}"] + [f"='Valuation output'!{d}" for d in lay.dcf_refs])
     put(SUM_MULT, ["Múltiplos consolidados (valor presente)", f"=SUM({R}!B{lay.res_rows[0]}:B{lay.res_rows[-1]})"]
         + [f"=J{FIRST_ROW[n] + len(METHODS)}" for n, *_ in SCENARIOS])
-    put(SUM_W, ["Valor intrínseco ponderado", f"=B{SUM_DCF}+B{SUM_MULT}"]
+    put(SUM_W, ["Ponderado DCF + múltiplos (secundario)", f"=B{SUM_DCF}+B{SUM_MULT}"]
         + [f'=IFERROR({c}{SUM_DCF}*$B${SUM_DCF}+{c}{SUM_MULT}*$B${SUM_MULT};"")' for c in "CDE"])
     put(SUM_PRICE, ["Precio de referencia de la hoja", f"={lay.price_ref}"])
     put(SUM_DISC, ["Descuento del precio frente al ponderado", ""]
         + [f'=IFERROR(1-$B${SUM_PRICE}/{c}{SUM_W};"")' for c in "CDE"])
-    put(SUM_MOS, ["Precio de compra con MOS", f"={R}!{lay.mos_ref}"]
+    put(SUM_MOS, ["Compra con MOS sobre el ponderado (secundario)", f"={R}!{lay.mos_ref}"]
         + [f'=IFERROR({c}{SUM_W}*(1-$B${SUM_MOS});"")' for c in "CDE"])
 
     put(CHK_TITLE, ["CHEQUEO MATEMÁTICO · MÚLTIPLOS A 3 AÑOS"])
@@ -296,15 +297,15 @@ def resumen_values(lay: Layout = DEFAULT) -> list[list[str]]:
     put(28, ["Arriba: precio al cierre FY+3 (DCF × (1 + Ke)³ y múltiplos con dividendos). Abajo: valor por acción HOY — "
              "cada múltiplo se trae a valor presente en 1, 2 y 3 años y se consolida; el DCF ya está en valor presente. "
              "Detalle en «Descuento de múltiplos»."])
-    put(30, ["VALOR POR ACCIÓN HOY | DCF + MÚLTIPLOS DESCONTADOS"])
+    put(30, ["VALOR POR ACCIÓN HOY | DCF = VALOR INTRÍNSECO · MÚLTIPLOS Y PONDERADO = SECUNDARIOS"])
     put(31, ["Método", "Peso", "Conservador", "Base", "Optimista"])
     d, m0, m1 = lay.res_dcf_row, lay.res_rows[0], lay.res_rows[-1]
-    for r, label, src, w in ((32, "DCF hoy (valor presente)", SUM_DCF, f"=B{d}"),
-                             (33, "Múltiplos consolidados hoy", SUM_MULT, f"=SUM(B{m0}:B{m1})"),
-                             (34, "Valor intrínseco ponderado hoy", SUM_W, "=SUM(B32:B33)")):
+    for r, label, src, w in ((32, "DCF hoy · valor intrínseco", SUM_DCF, f"=B{d}"),
+                             (33, "Múltiplos consolidados hoy (secundario)", SUM_MULT, f"=SUM(B{m0}:B{m1})"),
+                             (34, "Ponderado hoy (secundario)", SUM_W, "=SUM(B32:B33)")):
         put(r, [label, w] + [f"={Q}!{c}{src}" for c in "CDE"])
     put(35, ["Descuento del precio frente al ponderado", ""] + [f"={Q}!{c}{SUM_DISC}" for c in "CDE"])
-    put(36, ["Compra con MOS", ""] + [f"={Q}!{c}{SUM_MOS}" for c in "CDE"])
+    put(36, ["Compra con MOS sobre el ponderado", ""] + [f"={Q}!{c}{SUM_MOS}" for c in "CDE"])
     put(37, ["Chequeo: múltiplos VP 3 años < FY+3", ""] + [f"={Q}!{c}{CHK_OK}" for c in "CDE"])
     put(39, ["CADA MÉTODO A VALOR HOY"])
     put(40, ["Método", "Peso", "Conservador", "Base", "Optimista"])

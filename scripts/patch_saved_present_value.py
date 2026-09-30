@@ -56,12 +56,12 @@ def summaries(rec: dict, cur: str) -> tuple[str, str]:
     trio = lambda t: [_money((t or {}).get(k), cur) for k in SCEN]  # noqa: E731
     fy3 = [[f"{m['nombre']} ({_pct(m.get('peso'))})"] + trio(m) for m in rec.get("metodos") or []]
     fy3.append(["Combinado FY+3"] + trio(rec.get("objetivoPonderado")))
-    today = [[f"DCF hoy, valor presente ({_pct(dm.get('pesoDcf'))})"] + trio(dm["dcfHoy"])]
+    today = [[f"DCF hoy · valor intrínseco ({_pct(dm.get('pesoDcf'))})"] + trio(dm["dcfHoy"])]
     today += [[f"&nbsp;&nbsp;{m['nombre']} · VP consolidado ({_pct(m.get('peso'))})"] + [_money(m[k]["consolidado"], cur) for k in SCEN]
               for m in dm.get("metodos") or []]
-    today += [[f"Múltiplos consolidados hoy ({_pct(dm.get('pesoMultiplos'))})"] + trio(dm["multiplesHoy"]),
-              ["Valor intrínseco ponderado hoy"] + trio(rec.get("valorPresentePonderado")),
-              ["Precio de compra con MOS"] + trio(rec.get("precioMOSHoy"))]
+    today += [[f"Múltiplos consolidados hoy · secundario ({_pct(dm.get('pesoMultiplos'))})"] + trio(dm["multiplesHoy"]),
+              ["Ponderado hoy (secundario)"] + trio(rec.get("valorPresentePonderado")),
+              ["Compra con MOS sobre el ponderado"] + trio(rec.get("precioMOSHoy"))]
     ke = dm.get("costoPatrimonio")
     a = f'<a href="{link}" target="_blank" rel="noopener noreferrer">Abrir hoja con fórmulas</a>' if link else ""
     note = (f"<p>Precio de referencia de la hoja: {_money(rec.get('precio'), cur)}. Tasa de descuento (Ke): "
