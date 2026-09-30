@@ -34,7 +34,7 @@ def _renumber(html: str, first: int, last: int) -> str:
 
 
 def insert(html: str, section: str) -> tuple[str, str]:
-    m = re.search(rf"<h2>(\d+)\. {TITLE}</h2>", html)
+    m = re.search(rf"<h2[^>]*>(\d+)\. {TITLE}</h2>", html)
     if m:  # ya existe: reemplaza el cuerpo hasta el siguiente h2
         start = m.end()
         nxt = html.find("<h2", start)
@@ -51,12 +51,16 @@ def insert(html: str, section: str) -> tuple[str, str]:
             html = html[:qc] + f"<tr>\n<td>12. {TITLE}</td>\n<td>Sí</td>\n<td>{QC_NOTE}</td>\n</tr>\n" + html[qc:]
         return html, "insertada (12)"
 
-    nums = [int(x) for x in re.findall(r"<h2>(\d+)\. ", html)]
+    nums = [int(x) for x in re.findall(r"<h2[^>]*>(\d+)\. ", html)]
     n = (max(nums) + 1) if nums else 1
-    pos = html.find("<h2>Fuentes")
-    if pos < 0:
-        pos = len(html)
-    return html[:pos] + f"<h2>{n}. {TITLE}</h2>\n{section}\n" + html[pos:], f"insertada ({n})"
+    fm = re.search(r"<h2[^>]*>Fuentes", html)
+    pos = fm.start() if fm else len(html)
+    ids = re.findall(r'<h2 id="([a-z]+)-', html)
+    attr = f' id="{ids[0]}-damodaran"' if ids else ""
+    html = html[:pos] + f"<h2{attr}>{n}. {TITLE}</h2>\n{section}\n" + html[pos:]
+    if ids:  # índice propio del documento (nav): agrega la entrada antes de Fuentes
+        html = re.sub(rf'(<li><a href="#{ids[0]}-fuentes">)', rf'<li><a href="#{ids[0]}-damodaran">{TITLE}</a></li>\1', html, count=1)
+    return html, f"insertada ({n})"
 
 
 def main(argv: list[str]) -> int:
