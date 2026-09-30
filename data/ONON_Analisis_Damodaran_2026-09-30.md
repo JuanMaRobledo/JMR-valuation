@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # On Holding AG (ONON) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$49,88 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$38,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,37 +49,37 @@ Para empresas de US$3.000-4.500 millones, crecer 15% anual cinco años (historia
 
 **Márgenes.** El margen operativo subió a 13,8% LTM con margen bruto en alza pese a los aranceles. La hoja supone 14% el próximo año y 17% de objetivo, por debajo de la meta de EBITDA ajustado de ≥22% (que excluye depreciación y compensación en acciones). Las historias van de 10% (pasa la moda) a 20% (marca global).
 
-**Reinversión y retorno.** Poco capital: producción tercerizada en Vietnam e Indonesia, capex de ~US$50-95 millones y tiendas propias. La hoja usa un sales-to-capital de 2,5 y 2,2. On tiene CHF 1.206 millones de caja sin deuda financiera y anunció su primera recompra (hasta US$1.000 millones hasta 2029). Moat estrecho (marca y tecnología (CloudTec), joven; amenaza: ciclo de moda: historias B y D suman 40%): el ROIC después del año 10 es 15,0%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (20,9%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
+**Reinversión y retorno.** Poco capital: producción tercerizada en Vietnam e Indonesia, capex de ~US$50-95 millones y tiendas propias. La hoja usa un sales-to-capital de 2,5 y 2,2. On tiene CHF 1.206 millones de caja sin deuda financiera y anunció su primera recompra (hasta US$1.000 millones hasta 2029). Sin moat para el ROIC terminal: la ventaja es una marca joven en un sector de modas, sin fuente estructural (costos de cambio, red, escala o licencias); el ROIC después del año 10 es igual al costo de capital (revisión del 30-sep-2026).
 
-**Riesgo.** La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF Base sube de US$49,88 a US$54,77. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y D que en la beta.
+**Riesgo.** La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF Base sube de US$38,92 a US$42,57. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y D que en la beta.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,50 | 11,3% | 10,8% | US$49,88 |
-| Bottom-up del sector (Shoe, reapalancada) | 1,07 | 9,5% | 9,1% | US$54,77 |
+| Hoja (regresión o la cargada en el libro) | 1,50 | 11,3% | 10,8% | US$38,92 |
+| Bottom-up del sector (Shoe, reapalancada) | 1,07 | 9,5% | 9,1% | US$42,57 |
 
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,50) | Valor/acción (beta 1,07) |
-|---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Marca premium que cumple sus metas 2029** | 40% | Mayoristas: 14%, 13%, 12%, 11%, 10%; Directo al consumidor: 22%, 20%, 18%, 16%, 14% | 14,9% | 17% | 2,5 | 15,0% | US$48,95 | US$53,74 |
-| **B · El ciclo de moda se enfría** | 30% | Mayoristas: 8%, 5%, 4%, 4%, 4%; Directo al consumidor: 12%, 8%, 7%, 6%, 5% | 6,2% | 14% | 2,5 | = costo de capital | US$22,96 | US$24,83 |
-| **C · On se vuelve una marca deportiva global** | 20% | Mayoristas: 18%, 17%, 16%, 15%, 13%; Directo al consumidor: 26%, 24%, 22%, 20%, 18% | 18,8% | 20% | 2,5 | 15,0% | US$69,10 | US$76,11 |
-| **D · Pasa la moda: las ventas caen** | 10% | Mayoristas: 0%, -5%, -2%, 2%, 3%; Directo al consumidor: 5%, 0%, 0%, 3%, 3% | 0,8% | 10% | 2,5 | = costo de capital | US$15,05 | US$16,08 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$41,79** | **US$45,77** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,50) | Valor/acción (beta 1,07) |
+|---|---:|---|---:|---:|---:|---:|---:|
+| **A · Marca premium que cumple sus metas 2029** | 40% | Mayoristas: 14%, 13%, 12%, 11%, 10%; Directo al consumidor: 22%, 20%, 18%, 16%, 14% | 14,9% | 17% | 2,5 | US$38,33 | US$41,92 |
+| **B · El ciclo de moda se enfría** | 30% | Mayoristas: 8%, 5%, 4%, 4%, 4%; Directo al consumidor: 12%, 8%, 7%, 6%, 5% | 6,2% | 14% | 2,5 | US$22,96 | US$24,83 |
+| **C · On se vuelve una marca deportiva global** | 20% | Mayoristas: 18%, 17%, 16%, 15%, 13%; Directo al consumidor: 26%, 24%, 22%, 20%, 18% | 18,8% | 20% | 2,5 | US$53,37 | US$58,60 |
+| **D · Pasa la moda: las ventas caen** | 10% | Mayoristas: 0%, -5%, -2%, 2%, 3%; Directo al consumidor: 5%, 0%, 0%, 3%, 3% | 0,8% | 10% | 2,5 | US$15,05 | US$16,08 |
+| **Valor esperado** | 100% |  |  |  |  | **US$34,40** | **US$37,55** |
 
-A (40%) es la historia de la empresa: crecimiento high-teens con márgenes en alza hasta 2029. B (30%) es el enfriamiento del ciclo de marca. C (20%) es On como marca deportiva global. D (10%) es la caída de una moda. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (40%) es la historia de la empresa: crecimiento high-teens con márgenes en alza hasta 2029. B (30%) es el enfriamiento del ciclo de marca. C (20%) es On como marca deportiva global. D (10%) es la caída de una moda. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,50; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
 | Crecimiento \ Margen | 13,0% | 15,0% | 17,0% | 19,0% | 21,0% |
 |---|---:|---:|---:|---:|---:|
-| 10,8% | 32,02 | 36,69 | 41,35 | 46,02 | 50,69 |
-| 12,8% | 34,91 | 40,16 | 45,41 | 50,65 | 55,90 |
-| 14,8% | 38,11 | 43,99 | 49,88 | 55,77 | 61,66 |
-| 16,8% | 41,62 | 48,22 | 54,82 | 61,42 | 68,02 |
-| 18,8% | 45,50 | 52,89 | 60,27 | 67,66 | 75,04 |
+| 10,8% | 25,50 | 29,16 | 32,83 | 36,49 | 40,15 |
+| 12,8% | 27,51 | 31,62 | 35,73 | 39,83 | 43,94 |
+| 14,8% | 29,72 | 34,32 | 38,92 | 43,52 | 48,11 |
+| 16,8% | 32,15 | 37,29 | 42,43 | 47,57 | 52,71 |
+| 18,8% | 34,81 | 40,55 | 46,29 | 52,03 | 57,77 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 14% | Margen 17% | Margen 20% |
 |---|---:|---:|---:|
-| Beta 1,50 | 7,8% (46% de las empresas) | 3,8% (71% de las empresas) | 0,8% (84% de las empresas) |
-| Beta 1,07 | 5,8% (59% de las empresas) | 2,0% (81% de las empresas) | -1,0% (89% de las empresas) |
+| Beta 1,50 | 13,2% (21% de las empresas) | 8,8% (41% de las empresas) | 5,2% (62% de las empresas) |
+| Beta 1,07 | 11,2% (29% de las empresas) | 6,8% (52% de las empresas) | 3,4% (74% de las empresas) |
 
-Frente al valor esperado de las historias (US$41,79 con la beta de la hoja; US$45,77 con la propuesta), el precio está por debajo en 28% y por debajo en 34%, respectivamente. El precio (US$30,00) está 28% por debajo del valor esperado (US$41,80; 34% con la beta bottom-up). El DCF inverso pide 9% anual con margen de 17% (lo logró ~41% de las empresas de este tamaño) o 5% con margen de 20%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de ciclo de moda y el efecto del franco. Si crees que On es una marca duradera, el precio parece bajo; si crees que es una moda, está cerca del valor.
+Frente al valor esperado de las historias (US$34,40 con la beta de la hoja; US$37,55 con la propuesta), el precio está por debajo en 13% y por debajo en 20%, respectivamente. El precio (US$30,00) está 13% por debajo del valor esperado (US$34,40; 20% con la beta bottom-up). El DCF inverso pide 9% anual con margen de 17% (lo logró ~41% de las empresas de este tamaño) o 5% con margen de 20%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de ciclo de moda y el efecto del franco. Si crees que On es una marca duradera, el precio parece bajo; si crees que es una moda, está cerca del valor.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$41,79 con la beta de la hoja; US$4
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Marca premium de calzado deportivo en expansión, con el riesgo de todo ciclo de moda |  |
 | Probabilidades | A 40% / B 30% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$41,79 / US$45,77 |  |
-| Rango (historia más débil a más fuerte) | US$15,05 a US$76,11 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$34,40 / US$37,55 |  |
+| Rango (historia más débil a más fuerte) | US$15,05 a US$58,60 |  |
 | Confianza | Media: la ejecución es excelente; la duración de la marca es incierta |  |
 | Qué cambiaría la opinión | Crecimiento a tipo constante y margen bruto sin descuentos |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

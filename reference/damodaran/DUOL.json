@@ -11,7 +11,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$153,07 frente a US$145,69) es menor que la que producen las historias."
+  "texto": "La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$125,77 frente a US$120,25) es menor que la que producen las historias."
  },
  "historias": [
   {
@@ -152,8 +152,7 @@
      0,
      0
     ]
-   },
-   "roic_terminal": "costo_capital"
+   }
   }
  ],
  "margenes_inverso": [
@@ -242,9 +241,9 @@
   "texto": "El margen operativo de la hoja (ajustado por capitalización de I+D, *21,8% LTM) no coincide con el GAAP ni con el EBITDA ajustado (26,5% guía 2026). La hoja supone 20% el próximo año y 27% a siete años (antes 30%). El margen bruto es alto (72,6%) y la IA bajó su costo por unidad, pero la compensación en acciones (~15% de los ingresos, dilución bruta de 3,5-4% al año) es un costo real. Las historias van de 15% a 32%."
  },
  "reinversion": {
-  "texto": "Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Moat estrecho (marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos; amenaza: IA generalista (D, 10%) y costos de cambio bajos): el ROIC después del año 10 es 17,4%, el punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual y el de la industria (25,6%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
+  "texto": "Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Sin moat para el ROIC terminal: la marca y el hábito de uso no bastan porque los costos de cambio son bajos (cualquier app o IA enseña idiomas); el ROIC después del año 10 es igual al costo de capital (revisión del 30-sep-2026)."
  },
- "prob_texto": "A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). D (10%) es el riesgo de sustitución por asistentes generalistas. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
+ "prob_texto": "A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). D (10%) es el riesgo de sustitución por asistentes generalistas.",
  "premortem": [
   "Las reservas siguen en ~8-10%: los usuarios nuevos (atraídos por campañas como la recuperación de rachas) pagan menos.",
   "Los asistentes de IA generalistas ofrecen práctica conversacional gratis y erosionan el valor de Max.",
@@ -285,7 +284,7 @@
    "≥ 17%"
   ]
  ],
- "precio_lectura": "Con el DCF revisado (US$153,07: US$167,58 antes de la revisión de supuestos y US$125,77 antes del ROIC terminal por moat), el precio (US$134,30) queda 6% por debajo del valor esperado (US$143,06) y 12% por debajo del DCF. El DCF inverso pide 11-16% anual en los años 1-5 según el margen (lo logró 17-40% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Probablemente está viendo lo mismo que las historias (reservas en desaceleración) y le pone algo de peso a la IA. La revisión ya bajó el crecimiento de la hoja hacia lo que muestran las reservas; lo que decide ahora es si las reservas reaceleran.",
+ "precio_lectura": "Con el DCF revisado (US$125,77; US$167,58 antes de la revisión de supuestos), el precio (US$134,30) queda 13% por encima del valor esperado (US$119,07) y 7% por encima del DCF: valor esperado, DCF y precio quedan cerca. El DCF inverso pide 11-16% anual en los años 1-5 según el margen (lo logró 17-40% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Probablemente está viendo lo mismo que las historias (reservas en desaceleración) y le pone algo de peso a la IA. La revisión ya bajó el crecimiento de la hoja hacia lo que muestran las reservas; lo que decide ahora es si las reservas reaceleran.",
  "frase": "Hábito de aprendizaje global con audiencia en alza y monetización en desaceleración",
  "confianza": "Media-baja: la monetización y el efecto de la IA son muy inciertos",
  "cambiaria": "Crecimiento de reservas y suscriptores frente a DAU; margen y SBC",
