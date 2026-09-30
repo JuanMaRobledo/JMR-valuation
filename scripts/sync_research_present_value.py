@@ -84,8 +84,15 @@ def current_block(ticker: str, lv: dict, rec: dict) -> str:
     rows = tr("Valor intrínseco hoy · DCF", [dcf[k] for k in SCEN], "total")
     if dcf_fy3:
         rows += tr("DCF llevado a FY+3 (× (1 + Ke)³)", [dcf_fy3[k] for k in SCEN])
+    ve = (lv.get("valorEsperado") or rec.get("valorEsperado") or {}).get("valor")
+    if isinstance(ve, (int, float)):
+        # Valor esperado: promedio de las historias de la sección Damodaran (una sola cifra, en la columna Base).
+        rows += tr("Valor esperado de las historias (promedio ponderado)", [None, ve, None], "total")
     if isinstance(mos, (int, float)):
-        rows += tr(f"Precio con MOS sobre el DCF ({round(mos * 100)}%)", [dcf[k] * (1 - mos) for k in SCEN])
+        if isinstance(ve, (int, float)):
+            rows += tr(f"Precio con MOS sobre el valor esperado ({round(mos * 100)}%)", [None, ve * (1 - mos), None])
+        else:
+            rows += tr(f"Precio con MOS sobre el DCF ({round(mos * 100)}%)", [dcf[k] * (1 - mos) for k in SCEN])
     t1 = f'<div style="overflow-x:auto"><table>{head(["", "Conservador", "Base", "Optimista"])}<tbody>{rows}</tbody></table></div>'
     fy3 = {m["nombre"]: m for m in lv.get("metodos") or []}
     rows2 = ""
@@ -111,7 +118,10 @@ def current_block(ticker: str, lv: dict, rec: dict) -> str:
             'supuestos</a>.</p>\n<h3>Valor intrínseco: DCF</h3>\n' + t1 +
             '\n<p>Con criterio Damodaran, el valor intrínseco es el DCF: lo que vale la acción según sus flujos de caja, '
             'crecimiento, reinversión y riesgo. El DCF ya está a valor presente; llevado a FY+3 se capitaliza con el costo del '
-            f'patrimonio ({ke}).</p>\n<h3>Lecturas secundarias: múltiplos y ponderado</h3>\n' + t2 +
+            f'patrimonio ({ke}).' + (' El DCF Base valora la historia central; el valor esperado promedia las historias de la sección '
+            '«Valor con criterio Damodaran», cada una un DCF completo, según su probabilidad. El margen de seguridad se aplica sobre '
+            'el valor esperado, que ya incorpora lo que puede salir mal.' if isinstance(ve, (int, float)) else '') +
+            '</p>\n<h3>Lecturas secundarias: múltiplos y ponderado</h3>\n' + t2 +
             '\n<p>Los múltiplos son precio relativo: lo que pagaría el mercado por empresas parecidas. Cada uno da un precio al '
             'cierre de FY+1, FY+2 y FY+3, más los dividendos acumulados, traído a hoy con el costo del patrimonio; se consolidan '
             'con los pesos del tipo de empresa. El ponderado mezcla el DCF con los múltiplos y es opcional: sirve como contraste, '
@@ -262,7 +272,7 @@ def main() -> int:
         old_rec = json.loads(subprocess.check_output(["git", "-C", str(root), "show", f"{args.old_rev}:{lv['sourcePath']}"]))
         new_rec = json.loads((root / lv["sourcePath"]).read_text())
         for k in ("metodos", "objetivoPonderado", "zonas", "cagr", "precioMOS", "precioMOSMax", "valorPresentePonderado",
-                  "descuentoMultiples", "precioMOSHoy"):
+                  "descuentoMultiples", "precioMOSHoy", "valorEsperado"):
             if k in new_rec:
                 lv[k] = new_rec[k]
         if (old_rec.get("descuentoMultiples") or {}).get("version") == 2 and not args.incluir_fy3:
