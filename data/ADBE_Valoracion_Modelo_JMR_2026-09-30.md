@@ -10,24 +10,33 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 # ADOBE INC. (ADBE) — Valoración Modelo JMR · prompt v3
 
 > Estimación condicionada a los supuestos declarados; no es asesoría financiera ni una recomendación.
-> Alcance de esta actualización: se aplicaron los pasos nuevos del prompt v3 (selección razonada de los múltiplos, valor presente de los múltiplos, ponderación y documentación) sobre la valoración existente. Los supuestos del DCF no se modificaron; se verificó que Conservador < Base < Optimista.
+> Actualización vigente: los cuatro escenarios DCF son las historias A–D. Las probabilidades y supuestos económicos de esas historias se mantienen; cambia su integración y presentación.
 
-## 1. Resumen
+## 1. Resumen vigente: escenarios e historias
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$536,48 en el escenario Base (rango US$408,85–US$823,06). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$486,87 (−9% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$506,71. El valor intrínseco es el DCF: US$536,48 frente a un precio de referencia de US$240,24 (+123%).
+Valor intrínseco principal: **US$366,64**, promedio probabilístico de cuatro DCF completos.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$536,48 por acción y los múltiplos, US$486,87 hoy: 9% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
+| Escenario / historia | Probabilidad | DCF USD/acción | Margen objetivo | ROIC terminal |
+|---|---:|---:|---:|---|
+| A · La IA se cobra dentro de la suscripción | 40% | 465.71 | 40% | 0.293 |
+| B · Erosión gradual frente a Figma y Canva | 35% | 267.97 | 37% | costo_capital |
+| C · La IA generativa comoditiza la creatividad | 15% | 187.85 | 32% | costo_capital |
+| D · La IA amplía el mercado de Adobe | 10% | 583.92 | 43% | 0.293 |
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
-|---|---:|---:|---:|---:|---:|
-| Conservador | US$408,85 | US$318,83 | US$354,84 | US$239,07 | US$475,99 |
-| Base | US$536,48 | US$486,87 | US$506,71 | US$239,07 | US$698,88 |
-| Optimista | US$823,06 | US$812,69 | US$816,83 | US$239,07 | US$1.197,71 |
+Historia central A: US$465,71. Rango: US$187,85–583,92. MOS 35% sobre el esperado: US$238,32.
+
+Los casos C/B/O antiguos (408,85 / 536,48 / 823,06) quedan como referencia técnica para calibrar el motor y como supuestos auxiliares de múltiplos; no forman una segunda familia activa de escenarios DCF. Los múltiplos no se recalibran para coincidir con historias. Las sensibilidades cambian un supuesto dentro de cada historia; no son historias adicionales.
+
+La unificación no mejora por sí sola la evidencia económica: persisten las salvedades sobre ventas/capital, duración del ROIC terminal y dilución. Las probabilidades son juicio del analista, suman 100% y no se modificaron.
+
+## Referencia técnica anterior
+
+Las secciones 2–10 documentan la calibración anterior C/B/O y los múltiplos auxiliares. Su Base de US$536,48 no es la historia central A ni el valor principal vigente.
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo_JMR_Plantilla_Maestra ADBE](https://docs.google.com/spreadsheets/d/19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw/edit).
-- Revisión de datos y modelo: 28 de septiembre de 2026 (precio del análisis: 14 de septiembre de 2026). Precio de referencia de la hoja: US$240,24.
+- Revisión de datos y modelo: 28 de septiembre de 2026 (precio del análisis: 14 de septiembre de 2026). Precio de referencia de la hoja: US$231,01.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -104,11 +113,11 @@ Múltiplos consolidados hoy: US$318,83 / US$486,87 / US$812,69 · DCF hoy: US$40
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ADBE la diferencia es de −9% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$536,48 por acción y los múltiplos, US$486,87 hoy: 9% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ADBE la diferencia es de −9% (múltiplos por debajo del DCF). Revisión del 30-sep-2026 (ROIC terminal según el moat): moat ancho (costos de cambio y estándar, sin erosión visible), ROIC después del año 10 de 29,3%; el DCF da US$536,48 y los múltiplos US$486,87 hoy (9% por debajo, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 29,3% el DCF pasa de US$377,94 a US$536,48. Los múltiplos (US$486,87 hoy) quedan 9% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$231,01) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$239,66 supone que los ingresos crecen -4,0% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 10,4% (−14,4 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$231,01 supone que los ingresos crecen -4,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 10,4% (−15,0 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$737,73 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,2%, WACC de los años 4-10 10,1%, ROE de FY+3 95,6% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -129,15 +138,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$506,71 | — |
 | Múltiplos Base +20% | US$565,28 | +11,6% |
 | Múltiplos Base −20% | US$448,15 | −11,6% |
-| Crecimiento años 2-5 +2 pp | US$527,46 | +4,1% |
-| Crecimiento años 2-5 −2 pp | US$487,73 | −3,7% |
-| Margen objetivo +3 pp | US$522,45 | +3,1% |
-| Margen objetivo −3 pp | US$490,97 | −3,1% |
-| WACC +1 pp | US$494,98 | −2,3% |
-| WACC −1 pp | US$519,28 | +2,5% |
+| Crecimiento años 1-5 +2 pp | US$531,56 | +4,9% |
+| Crecimiento años 1-5 −2 pp | US$484,30 | −4,4% |
+| Margen objetivo +3 pp | US$522,07 | +3,0% |
+| Margen objetivo −3 pp | US$491,36 | −3,0% |
+| WACC +1 pp | US$494,88 | −2,3% |
+| WACC −1 pp | US$519,39 | +2,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Crecimiento años 2-5 +2 pp.
+Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Crecimiento años 1-5 +2 pp.
 
 ## 8. Log de cambios en la hoja
 
