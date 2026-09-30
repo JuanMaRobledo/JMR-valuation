@@ -150,9 +150,11 @@ def detect_layout(sh) -> tuple[Layout | None, str]:
         src = rows
     res = [r + [""] * (7 - len(r)) for r in vr[5].get("values", [])]
     col_a = [str(r[0]).strip() for r in res]
-    if "DCF Damodaran" not in col_a:
+    # el rótulo puede ser "DCF Damodaran" o "DCF Damodaran (llevado a FY+3)"
+    dcf_rows = [i for i, v in enumerate(col_a) if v.startswith("DCF Damodaran")]
+    if not dcf_rows:
         return None, "Resumen sin fila 'DCF Damodaran'"
-    dcf_row = col_a.index("DCF Damodaran") + 1
+    dcf_row = dcf_rows[0] + 1
     labels = ["EV/EBITDA", "EV/FCFF", "P/E", "P/FCFE", "P/OCF"]
     if col_a[dcf_row:dcf_row + 5] != labels:
         return None, f"Resumen: multiplos no siguen al DCF ({col_a[dcf_row:dcf_row + 5]})"
