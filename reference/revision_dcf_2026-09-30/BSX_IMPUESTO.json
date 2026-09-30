@@ -1,0 +1,14 @@
+{
+ "ticker": "BSX_IMPUESTO",
+ "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B24",
+   "antes": "='Income Statement'!L29",
+   "despues": 0.178,
+   "motivo": "Tasa efectiva de los años 1-5 = promedio 2023-2025 (19,8%, 19,1% y 14,6%). La del LTM (5%) refleja beneficios fiscales de una vez y no es sostenible."
+  }
+ ]
+}

@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Boston Scientific Corporation (BSX) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$39,13 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$36,40 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -47,7 +47,7 @@ Para empresas de US$12.000-25.000 millones, crecer 6,5% anual cinco años (histo
 | Margen operativo GAAP | 16,5% | 15,5% | 18,0% | 19,8% |
 | FCFF (hoja) | 2.166 | 1.947 | 3.775 | — |
 
-**Márgenes.** El margen GAAP subió de 4,9% (2016) a 19,8% LTM, pero sigue cargado por amortización de intangibles (~US$930 millones al año), litigios y reestructuración. La hoja supone 20% el próximo año y 24% de objetivo. Si la empresa deja de comprar, la amortización baja y el margen sube; si compra Penumbra y otras, el GAAP se queda cerca de 20%. Por eso las historias van de 20% a 26%.
+**Márgenes.** El margen GAAP subió de 4,9% (2016) a 19,8% LTM, pero sigue cargado por amortización de intangibles (~US$930 millones al año), litigios y reestructuración. La hoja supone 20% el próximo año y 24% de objetivo. Si la empresa deja de comprar, la amortización baja y el margen sube; si compra Penumbra y otras, el GAAP se queda cerca de 20%. Por eso las historias van de 20% a 26%. La tasa efectiva de los años 1-5 es 17,8% (promedio 2023-2025); la del LTM, 5%, refleja beneficios fiscales de una vez.
 
 **Reinversión y retorno.** La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un sales-to-capital de 1,3 (años 1-5) y 1,2 (años 6-10), que ya asume que parte del crecimiento se compra. Con Penumbra, el capital invertido sube ~US$14.500 millones: el retorno de esa compra decide si el crecimiento crea valor. El ROIC después del año 10 es igual al costo de capital: incluida la plusvalía de las compras, el ROIC estuvo por debajo del costo de capital hasta 2025, así que no cumple la regla del ROIC terminal (se aplicó 11,1% y se revirtió el 30-sep-2026).
 
@@ -55,19 +55,19 @@ Para empresas de US$12.000-25.000 millones, crecer 6,5% anual cinco años (histo
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$39,13 |
-| Bottom-up del sector (Healthcare Products, reapalancada) | 0,97 | 9,3% | 8,7% | US$39,46 |
+| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$36,40 |
+| Bottom-up del sector (Healthcare Products, reapalancada) | 0,97 | 9,3% | 8,7% | US$36,71 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,00) | Valor/acción (beta 0,97) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · La cartera diversificada sostiene ~7%** | 45% | Electrofisiología: 10%, 10%, 9%, 8%, 8%; Watchman: 8%, 9%, 9%, 8%, 8%; Resto de Cardiovascular: 6%, 6%, 6%, 5%, 5%; MedSurg: 6%, 6%, 6%, 6%, 5% | 6,5% | 24% | 1,3 | US$38,23 | US$38,55 |
-| **B · El campo pulsado se vuelve commodity** | 30% | Electrofisiología: 2%, 3%, 3%, 3%, 3%; Watchman: 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular: 5%, 5%, 4%, 4%, 4%; MedSurg: 5%, 5%, 5%, 4%, 4% | 4,1% | 22% | 1,3 | US$30,42 | US$30,68 |
-| **C · Electrofisiología y Watchman vuelven a doble dígito** | 20% | Electrofisiología: 15%, 15%, 13%, 12%, 10%; Watchman: 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular: 7%, 7%, 7%, 6%, 6%; MedSurg: 7%, 7%, 6%, 6%, 6% | 8,3% | 26% | 1,3 | US$46,05 | US$46,43 |
-| **D · Pierde participación y precio** | 5% | Electrofisiología: -5%, -3%, 0%, 2%, 2%; Watchman: 0%, 0%, 2%, 2%, 2%; Resto de Cardiovascular: 3%, 3%, 3%, 3%, 3%; MedSurg: 3%, 3%, 3%, 3%, 3% | 2,2% | 20% | 1,3 | US$24,60 | US$24,80 |
-| **Valor esperado** | 100% |  |  |  |  | **US$36,77** | **US$37,08** |
+| **A · La cartera diversificada sostiene ~7%** | 45% | Electrofisiología: 10%, 10%, 9%, 8%, 8%; Watchman: 8%, 9%, 9%, 8%, 8%; Resto de Cardiovascular: 6%, 6%, 6%, 5%, 5%; MedSurg: 6%, 6%, 6%, 6%, 5% | 6,5% | 24% | 1,3 | US$35,54 | US$35,84 |
+| **B · El campo pulsado se vuelve commodity** | 30% | Electrofisiología: 2%, 3%, 3%, 3%, 3%; Watchman: 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular: 5%, 5%, 4%, 4%, 4%; MedSurg: 5%, 5%, 5%, 4%, 4% | 4,1% | 22% | 1,3 | US$28,11 | US$28,35 |
+| **C · Electrofisiología y Watchman vuelven a doble dígito** | 20% | Electrofisiología: 15%, 15%, 13%, 12%, 10%; Watchman: 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular: 7%, 7%, 7%, 6%, 6%; MedSurg: 7%, 7%, 6%, 6%, 6% | 8,3% | 26% | 1,3 | US$43,00 | US$43,37 |
+| **D · Pierde participación y precio** | 5% | Electrofisiología: -5%, -3%, 0%, 2%, 2%; Watchman: 0%, 0%, 2%, 2%, 2%; Resto de Cardiovascular: 3%, 3%, 3%, 3%, 3%; MedSurg: 3%, 3%, 3%, 3%, 3% | 2,2% | 20% | 1,3 | US$22,57 | US$22,77 |
+| **Valor esperado** | 100% |  |  |  |  | **US$34,15** | **US$34,45** |
 
 A (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. B (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. C (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). D (5%) es un tropiezo clínico o de producto. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,00; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 20,0% | 22,0% | 24,0% | 26,0% | 28,0% |
 |---|---:|---:|---:|---:|---:|
-| 3,0% | 25,59 | 28,70 | 31,81 | 34,92 | 38,03 |
-| 5,0% | 28,28 | 31,78 | 35,29 | 38,80 | 42,31 |
-| 7,0% | 31,23 | 35,18 | 39,13 | 43,08 | 47,03 |
-| 9,0% | 34,48 | 38,93 | 43,37 | 47,81 | 52,25 |
-| 11,0% | 38,05 | 43,04 | 48,03 | 53,02 | 58,01 |
+| 3,0% | 23,50 | 26,47 | 29,45 | 32,42 | 35,40 |
+| 5,0% | 26,03 | 29,39 | 32,75 | 36,11 | 39,47 |
+| 7,0% | 28,82 | 32,61 | 36,40 | 40,18 | 43,97 |
+| 9,0% | 31,89 | 36,15 | 40,42 | 44,68 | 48,94 |
+| 11,0% | 35,27 | 40,06 | 44,85 | 49,64 | 54,44 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 22% | Margen 24% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 1,00 | 11,6% (19% de las empresas) | 9,4% (28% de las empresas) | 7,6% (36% de las empresas) |
-| Beta 0,97 | 11,4% (20% de las empresas) | 9,2% (29% de las empresas) | 7,4% (37% de las empresas) |
+| Beta 1,00 | 13,0% (14% de las empresas) | 10,8% (22% de las empresas) | 8,8% (31% de las empresas) |
+| Beta 0,97 | 12,8% (15% de las empresas) | 10,6% (23% de las empresas) | 8,6% (31% de las empresas) |
 
-Frente al valor esperado de las historias (US$36,77 con la beta de la hoja; US$37,08 con la propuesta), el precio está por encima en 20% y por encima en 19%, respectivamente. El precio (US$44,11) está 20% por encima del valor esperado (US$36,77) y entre las historias A (US$38,23) y C (US$46,05). El DCF inverso pide 9,4% anual en los años 1-5 con margen de 24% (lo logró ~28% de las empresas de este tamaño), o 7,6% con margen de 26%: más de lo que muestra la guía orgánica de 6,5-8%. ¿Qué sabe el mercado que yo no? Puede estar pagando por Penumbra y por la cartera futura (nuevas indicaciones de Watchman, catéteres de nueva generación), que la hoja no incluye, o por retornos sobre las compras mejores que los de los últimos años. Si no crees en la historia C, el precio ya pide más de lo que muestran los datos.
+Frente al valor esperado de las historias (US$34,15 con la beta de la hoja; US$34,45 con la propuesta), el precio está por encima en 29% y por encima en 28%, respectivamente. El precio (US$44,11) está 29% por encima del valor esperado (US$34,15) y cerca de la historia C (US$43,00). El DCF inverso pide 10,8% anual en los años 1-5 con margen de 24% (lo logró ~22% de las empresas de este tamaño), o 8,8% con margen de 26%: más de lo que muestra la guía orgánica de 6,5-8%. ¿Qué sabe el mercado que yo no? Puede estar pagando por Penumbra y por la cartera futura (nuevas indicaciones de Watchman, catéteres de nueva generación), que la hoja no incluye, o por retornos sobre las compras mejores que los de los últimos años. Valoradores que usan el margen ajustado y un múltiplo de salida alto (Alpha Spread, ~US$100-112) llegan a la conclusión contraria; la diferencia está en esos supuestos, no en los datos. Si no crees en la historia C, el precio ya pide más de lo que muestran los datos.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$36,77 con la beta de la hoja; US$3
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Cartera cardiovascular diversificada que pierde su ciclo de producto excepcional |  |
 | Probabilidades | A 45% / B 30% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$36,77 / US$37,08 |  |
-| Rango (historia más débil a más fuerte) | US$24,60 a US$46,43 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$34,15 / US$34,45 |  |
+| Rango (historia más débil a más fuerte) | US$22,57 a US$43,37 |  |
 | Confianza | Media: la diversificación da piso; la duración de la competencia en campo pulsado es incierta |  |
 | Qué cambiaría la opinión | Electrofisiología y Watchman en EE.UU. en los próximos dos trimestres; cierre y precio de Penumbra |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |
