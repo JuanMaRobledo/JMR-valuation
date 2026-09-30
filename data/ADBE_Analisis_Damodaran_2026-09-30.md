@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Adobe Inc. (ADBE) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$377,94 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$536,48 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Entre las empresas de más de US$25.000 millones, solo ~29% creció 8% anual dur
 
 **Márgenes.** El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado).
 
-**Reinversión y retorno.** Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF.
+**Reinversión y retorno.** Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 29,3% (el de Software (System & Application); el actual es 36,3%); antes era igual al costo de capital.
 
 **Riesgo.** La hoja usa una beta de 1,39. La beta bottom-up del sector (Software System & Application, 309 empresas, desapalancada y corregida por caja 1,25) reapalancada con la estructura de Adobe da 1,31, casi igual. El riesgo de Adobe no está en la tasa de descuento sino en los flujos (precio y retención de Creative Cloud), y eso se trata en las historias, no subiendo la beta.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,39 | 11,2% | 10,8% | US$377,94 |
-| Bottom-up del sector (Software (System & Application), reapalancada) | 1,31 | 10,8% | 10,4% | US$385,27 |
+| Hoja (regresión o la cargada en el libro) | 1,39 | 11,2% | 10,8% | US$536,48 |
+| Bottom-up del sector (Software (System & Application), reapalancada) | 1,31 | 10,8% | 10,4% | US$547,44 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,39) | Valor/acción (beta 1,31) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · La IA se cobra dentro de la suscripción** | 40% | Creative & Marketing Professionals: 10%, 8%, 7%, 6%, 6%; Business Professionals & Consumers: 14%, 12%, 10%, 9%, 8%; Otros: 0%, 0%, 0%, 0%, 0% | 8,2% | 40% | 4,0 | US$336,83 | US$343,28 |
-| **B · Erosión gradual frente a Figma y Canva** | 35% | Creative & Marketing Professionals: 8%, 5%, 4%, 3%, 3%; Business Professionals & Consumers: 12%, 9%, 7%, 6%, 5%; Otros: 0%, 0%, 0%, 0%, 0% | 5,4% | 37% | 4,0 | US$272,40 | US$277,49 |
-| **C · La IA generativa comoditiza la creatividad** | 15% | Creative & Marketing Professionals: 5%, 1%, -2%, -3%, -3%; Business Professionals & Consumers: 9%, 5%, 3%, 2%, 2%; Otros: 0%, 0%, 0%, 0%, 0% | 0,9% | 32% | 4,0 | US$191,54 | US$194,94 |
-| **D · La IA amplía el mercado de Adobe** | 10% | Creative & Marketing Professionals: 12%, 12%, 11%, 10%, 9%; Business Professionals & Consumers: 16%, 14%, 12%, 11%, 10%; Otros: 0%, 0%, 0%, 0%, 0% | 11,1% | 43% | 4,0 | US$419,13 | US$427,34 |
-| **Valor esperado** | 100% |  |  |  |  | **US$300,72** | **US$306,41** |
+| **A · La IA se cobra dentro de la suscripción** | 40% | Creative & Marketing Professionals: 10%, 8%, 7%, 6%, 6%; Business Professionals & Consumers: 14%, 12%, 10%, 9%, 8%; Otros: 0%, 0%, 0%, 0%, 0% | 8,2% | 40% | 4,0 | US$474,22 | US$483,80 |
+| **B · Erosión gradual frente a Figma y Canva** | 35% | Creative & Marketing Professionals: 8%, 5%, 4%, 3%, 3%; Business Professionals & Consumers: 12%, 9%, 7%, 6%, 5%; Otros: 0%, 0%, 0%, 0%, 0% | 5,4% | 37% | 4,0 | US$378,43 | US$385,94 |
+| **C · La IA generativa comoditiza la creatividad** | 15% | Creative & Marketing Professionals: 5%, 1%, -2%, -3%, -3%; Business Professionals & Consumers: 9%, 5%, 3%, 2%, 2%; Otros: 0%, 0%, 0%, 0%, 0% | 0,9% | 32% | 4,0 | US$259,23 | US$264,18 |
+| **D · La IA amplía el mercado de Adobe** | 10% | Creative & Marketing Professionals: 12%, 12%, 11%, 10%, 9%; Business Professionals & Consumers: 16%, 14%, 12%, 11%, 10%; Otros: 0%, 0%, 0%, 0%, 0% | 11,1% | 43% | 4,0 | US$597,32 | US$609,59 |
+| **Valor esperado** | 100% |  |  |  |  | **US$420,75** | **US$429,18** |
 
 A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,39; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 36,0% | 38,0% | 40,0% | 42,0% | 44,0% |
 |---|---:|---:|---:|---:|---:|
-| 6,4% | 279,52 | 293,35 | 307,19 | 321,02 | 334,85 |
-| 8,4% | 309,64 | 325,21 | 340,77 | 356,34 | 371,90 |
-| 10,4% | 342,96 | 360,45 | 377,94 | 395,43 | 412,91 |
-| 12,4% | 379,77 | 399,39 | 419,02 | 438,64 | 458,27 |
-| 14,4% | 420,41 | 442,40 | 464,39 | 486,38 | 508,37 |
+| 6,4% | 389,59 | 409,54 | 429,49 | 449,44 | 469,39 |
+| 8,4% | 435,09 | 457,63 | 480,17 | 502,71 | 525,25 |
+| 10,4% | 485,64 | 511,06 | 536,48 | 561,90 | 587,32 |
+| 12,4% | 541,72 | 570,35 | 598,97 | 627,60 | 656,22 |
+| 14,4% | 603,86 | 636,05 | 668,23 | 700,42 | 732,60 |
 
 
 ### Pre-mortem
@@ -115,10 +115,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 35% | Margen 38% | Margen 40% |
 |---|---:|---:|---:|
-| Beta 1,39 | 3,2% (60% de las empresas) | 1,8% (67% de las empresas) | 1,0% (71% de las empresas) |
-| Beta 1,31 | 2,8% (62% de las empresas) | 1,6% (68% de las empresas) | 0,6% (72% de las empresas) |
+| Beta 1,39 | -2,4% (85% de las empresas) | -3,6% (88% de las empresas) | -4,4% (89% de las empresas) |
+| Beta 1,31 | -2,8% (86% de las empresas) | -4,0% (88% de las empresas) | -4,8% (89% de las empresas) |
 
-Frente al valor esperado de las historias (US$300,72 con la beta de la hoja; US$306,41 con la propuesta), el precio está por debajo en 23% y 25%, respectivamente. El DCF inverso muestra que el precio se justifica con un crecimiento de apenas 1-3% anual en los años 1-5 y márgenes de 35-40%: el mercado valora algo cercano a la historia C. ¿Qué sabe el mercado que yo no? Probablemente nada nuevo sobre las cifras, pero le da mucho más peso a la disrupción por IA. Si la historia C tiene solo 15% de probabilidad, el precio parece bajo; si la IA termina cobrándose poco y Figma sigue ganando, el precio es razonable.
+Frente al valor esperado de las historias (US$420,75 con la beta de la hoja; US$429,18 con la propuesta), el precio está por debajo en 45% y por debajo en 46%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$231,01) queda muy por debajo del valor esperado (US$420,75) e incluso por debajo de la historia C (US$259,23). El DCF inverso muestra que el precio se justifica con ingresos cayendo 2-4% al año en los años 1-5 con márgenes de 35-40%: el mercado valora algo peor que la historia C. ¿Qué sabe el mercado que yo no? Le da mucho más peso a la disrupción por IA que las historias, y probablemente no cree que Adobe conserve retornos por encima de su costo de capital después del año 10. Sin ese supuesto el DCF Base sería US$377,94, todavía muy por encima del precio.
 
 
 ### Registro de decisión
@@ -128,8 +128,8 @@ Frente al valor esperado de las historias (US$300,72 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Suite creativa y documental por suscripción que defiende su precio con IA frente a Figma y Canva |  |
 | Probabilidades | A 40% / B 35% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$300,72 / US$306,41 |  |
-| Rango (historia más débil a más fuerte) | US$191,54 a US$427,34 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$420,75 / US$429,18 |  |
+| Rango (historia más débil a más fuerte) | US$259,23 a US$609,59 |  |
 | Confianza | Media: la base es muy rentable y recurrente; lo incierto es el precio de Creative Cloud en la era de la IA |  |
 | Qué cambiaría la opinión | Crecimiento de Creative & Marketing Professionals, peso del ARR «AI-first» y adopción frente a Figma |  |
 | Revisión | Resultados del 4T FY26 (dic-2026) y primeros meses del nuevo CEO |  |

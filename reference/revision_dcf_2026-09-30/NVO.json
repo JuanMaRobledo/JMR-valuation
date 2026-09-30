@@ -1,0 +1,21 @@
+{
+ "ticker": "NVO",
+ "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: franquicia de I+D en diabetes y obesidad, con patentes que se renuevan con nuevas moléculas."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.169,
+   "motivo": "ROIC terminal 16,9%: el menor entre el actual (23,8%) y el de Drugs (Pharmaceutical) según Damodaran (16,9%); costo de capital terminal 9,2%."
+  }
+ ]
+}

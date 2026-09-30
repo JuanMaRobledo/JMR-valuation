@@ -65,6 +65,20 @@
    "antes": 0.37,
    "despues": 0.38,
    "motivo": "Optimista: margen de 38% con Cloud a escala (antes 37%)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: efectos de red y escala en búsqueda, YouTube y Android."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.286,
+   "motivo": "ROIC terminal 28,6%: el menor entre el actual (28,6%) y el de Software (System & Application) según Damodaran (29,3%); el de Software (Internet) (3,4%) no es representativo porque agrega muchas empresas con pérdidas; costo de capital terminal 9,0%."
   }
  ]
 }

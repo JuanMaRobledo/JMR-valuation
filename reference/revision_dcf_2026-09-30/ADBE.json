@@ -1,0 +1,21 @@
+{
+ "ticker": "ADBE",
+ "sheet_id": "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: costos de cambio: Creative Cloud y Acrobat son el estándar de la industria creativa y documental."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.293,
+   "motivo": "ROIC terminal 29,3%: el menor entre el actual (36,3%) y el de Software (System & Application) según Damodaran (29,3%); costo de capital terminal 9,2%."
+  }
+ ]
+}

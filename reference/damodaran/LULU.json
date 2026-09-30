@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$155,29 a US$165,02. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
+  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$174,31 a US$185,62. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
  },
  "historias": [
   {
@@ -212,7 +212,7 @@
   "texto": "El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles (40% de la producción en Vietnam, 9% en Camboya). La hoja supone 14% el próximo año y 18,5% de objetivo. Las historias van de 10% (declive de marca) a 21% (recuperación); volver a 23% no está en ninguna."
  },
  "reinversion": {
-  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica."
+  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 15,8% (el de Apparel; el actual es 25%); antes era igual al costo de capital."
  },
  "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (30%) es la pérdida estructural frente a Alo y Vuori. C (20%) es una recuperación de producto y marca, como la de 2018-2019. D (10%) es el declive de una marca de moda.",
  "premortem": [
@@ -255,7 +255,7 @@
    "Sigue subiendo"
   ]
  ],
- "precio_lectura": "El precio está por debajo del valor esperado. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 4-9% al año durante cinco años, y solo con margen de 12% supone ~1% de crecimiento: el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede repetir la recuperación de 2018, el precio parece bajo.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$100,58) queda por debajo del valor esperado (US$162,49). El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída: el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede repetir la recuperación de 2018, el precio parece bajo.",
  "frase": "Marca premium de ropa técnica que pierde Norteamérica y crece afuera, con nueva CEO",
  "confianza": "Baja-media: la duración de la caída en Norteamérica es muy incierta",
  "cambiaria": "Comparables de Norteamérica, margen bruto y respuesta a Alo y Vuori",

@@ -1,0 +1,21 @@
+{
+ "ticker": "CMG",
+ "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: marca y economía por local: 30 años de retornos altos sin franquiciar."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.184,
+   "motivo": "ROIC terminal 18,4%: el menor entre el actual (53,1%) y el de Restaurant/Dining según Damodaran (18,4%); costo de capital terminal 9,0%."
+  }
+ ]
+}

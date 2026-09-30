@@ -183,7 +183,7 @@
   "texto": "El margen operativo (54-65%) es de monopolio temporal: precio altísimo por escasez, poco capital (fabless) y software propio. La hoja supone 60% el próximo año y 58% de objetivo. Las fuerzas en contra son la competencia (AMD MI400, TPU, Trainium) y el poder de negociación de cinco clientes enormes; a favor, la escala y el ecosistema CUDA. Las historias van de 40% (corrección fuerte) a 60%."
  },
  "reinversion": {
-  "texto": "Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir."
+  "texto": "Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 27,2% (el de Semiconductor; el actual supera 100%); antes era igual al costo de capital."
  },
  "prob_texto": "A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). D (10%) combina corrección fuerte y pérdida de participación frente a chips propios.",
  "premortem": [
@@ -226,7 +226,7 @@
    "Nuevas restricciones o problemas en Taiwán"
   ]
  ],
- "precio_lectura": "El precio está muy por encima del valor esperado de las historias y del DCF de la hoja. El DCF inverso pide 25-29% anual en los años 1-5, algo que prácticamente ninguna empresa de este tamaño logró. ¿Qué sabe el mercado que yo no? Paga por la historia C o algo mejor, y probablemente con un costo de capital aún más bajo que el de la hoja. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$228,86) queda 23% por encima del valor esperado de las historias (US$186,68) pero por debajo del DCF Base (US$259,30). El DCF inverso pide 18-22% anual en los años 1-5, algo que logró ~1-3% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por algo entre las historias A y C. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.",
  "frase": "Proveedor dominante de la infraestructura de IA en la cima de un ciclo de inversión",
  "confianza": "Baja: el valor depende de la duración del ciclo, que nadie puede prever",
  "cambiaria": "Capex de los hiperescaladores y participación de NVIDIA en inferencia",

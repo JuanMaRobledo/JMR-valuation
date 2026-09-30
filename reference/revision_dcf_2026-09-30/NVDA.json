@@ -9,6 +9,20 @@
    "antes": 1.9,
    "despues": 1.51,
    "motivo": "Beta bottom-up de Semiconductor (Damodaran, ene-2026) en lugar de la de regresión (1,90)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: ecosistema CUDA y escala en cómputo acelerado."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.272,
+   "motivo": "ROIC terminal 27,2%: el menor entre el actual (113,7%) y el de Semiconductor según Damodaran (27,2%); costo de capital terminal 9,0%."
   }
  ]
 }

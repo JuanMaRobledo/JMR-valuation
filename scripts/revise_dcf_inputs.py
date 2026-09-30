@@ -82,6 +82,44 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: marca global con poder de precio."),
         (IS, "B50", 0.133, "ROIC terminal 13,3%: el menor entre el actual (13,3%, con el margen deprimido) y el de su industria según Damodaran (20,9%)."),
     ],
+    # Tercera ronda (regla del prompt de valoración v4): ventaja durable, ROIC sostenido por encima del
+    # costo de capital y sin amenaza directa en la historia Base -> menor entre ROIC actual e industria.
+    "ADBE": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: costos de cambio: Creative Cloud y Acrobat son el estándar de la industria creativa y documental."),
+        (IS, "B50", 0.293, "ROIC terminal 29,3%: el menor entre el actual (36,3%) y el de Software (System & Application) según Damodaran (29,3%); costo de capital terminal 9,2%."),
+    ],
+    "AFYA": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: licencias reguladas: los cupos de medicina en Brasil los fija el gobierno y Afya tiene la red más grande."),
+        (IS, "B50", 0.148, "ROIC terminal 14,8%: el menor entre el actual (14,8%) y el de Education según Damodaran (15,9%); costo de capital terminal 11,0%."),
+    ],
+    "CMG": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: marca y economía por local: 30 años de retornos altos sin franquiciar."),
+        (IS, "B50", 0.184, "ROIC terminal 18,4%: el menor entre el actual (53,1%) y el de Restaurant/Dining según Damodaran (18,4%); costo de capital terminal 9,0%."),
+    ],
+    "GOOG": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: efectos de red y escala en búsqueda, YouTube y Android."),
+        (IS, "B50", 0.286, "ROIC terminal 28,6%: el menor entre el actual (28,6%) y el de Software (System & Application) según Damodaran (29,3%); el de Software (Internet) (3,4%) no es representativo porque agrega muchas empresas con pérdidas; costo de capital terminal 9,0%."),
+    ],
+    "INTU": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: costos de cambio: TurboTax y QuickBooks guardan los datos contables y fiscales del cliente."),
+        (IS, "B50", 0.222, "ROIC terminal 22,2%: el menor entre el actual (22,2%) y el de Software (System & Application) según Damodaran (29,3%); costo de capital terminal 9,0%."),
+    ],
+    "LULU": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: marca premium en ropa deportiva, con márgenes altos durante más de una década."),
+        (IS, "B50", 0.158, "ROIC terminal 15,8%: el menor entre el actual (25,2%) y el de Apparel según Damodaran (15,8%); costo de capital terminal 9,0%."),
+    ],
+    "NVDA": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: ecosistema CUDA y escala en cómputo acelerado."),
+        (IS, "B50", 0.272, "ROIC terminal 27,2%: el menor entre el actual (113,7%) y el de Semiconductor según Damodaran (27,2%); costo de capital terminal 9,0%."),
+    ],
+    "NVO": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: franquicia de I+D en diabetes y obesidad, con patentes que se renuevan con nuevas moléculas."),
+        (IS, "B50", 0.169, "ROIC terminal 16,9%: el menor entre el actual (23,8%) y el de Drugs (Pharmaceutical) según Damodaran (16,9%); costo de capital terminal 9,2%."),
+    ],
+    "ZTS": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: líder en salud animal: marcas, relación con veterinarios y cartera diversificada de patentes."),
+        (IS, "B50", 0.169, "ROIC terminal 16,9%: el menor entre el actual (25,3%) y el de Drugs (Pharmaceutical) según Damodaran (16,9%); costo de capital terminal 9,0%."),
+    ],
 }
 
 
@@ -109,8 +147,11 @@ def main(argv: list[str]) -> int:
             print(f"{tk:5s} {h[:24]:24s} {c:4s} {old!s:>28} -> {new}")
         if dry:
             continue
-        if not bk_path.exists():  # el respaldo guarda siempre el estado original
-            bk_path.write_text(json.dumps({"ticker": tk, "sheet_id": sid, "fecha": "2026-09-30", "cambios": cambios}, ensure_ascii=False, indent=1))
+        # El respaldo guarda siempre el estado original: en una ronda posterior solo se agregan las celdas nuevas.
+        bk = json.loads(bk_path.read_text()) if bk_path.exists() else {"ticker": tk, "sheet_id": sid, "fecha": "2026-09-30", "cambios": []}
+        vistas = {(c["hoja"], c["celda"]) for c in bk["cambios"]}
+        bk["cambios"] += [c for c in cambios if (c["hoja"], c["celda"]) not in vistas]
+        bk_path.write_text(json.dumps(bk, ensure_ascii=False, indent=1))
         sh.values_batch_update({"valueInputOption": "RAW", "data": [{"range": f"'{c['hoja']}'!{c['celda']}", "values": [[c["despues"]]]} for c in cambios]})
         for c in cambios:
             sh.worksheet(c["hoja"]).insert_note(c["celda"], f"Revisión 30-sep-2026: antes {c['antes']}, ahora {c['despues']}. {c['motivo']}")

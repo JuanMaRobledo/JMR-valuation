@@ -1,0 +1,21 @@
+{
+ "ticker": "AFYA",
+ "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: licencias reguladas: los cupos de medicina en Brasil los fija el gobierno y Afya tiene la red más grande."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.148,
+   "motivo": "ROIC terminal 14,8%: el menor entre el actual (14,8%) y el de Education según Damodaran (15,9%); costo de capital terminal 11,0%."
+  }
+ ]
+}
