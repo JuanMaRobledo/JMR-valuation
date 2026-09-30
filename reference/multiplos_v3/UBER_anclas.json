@@ -2,7 +2,7 @@
  "fcf_a_fcff": 1.034444152471256,
  "empresa": "Uber Technologies, Inc (NYSE:UBER)",
  "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
- "fecha": "2026-09-29",
+ "fecha": "2026-09-30",
  "ke": 0.08555648921601675,
  "categoria": "Madura",
  "metodos": {
@@ -71,19 +71,19 @@
    },
    "peers": {
     "n": 6,
-    "mediana": 27.56,
-    "p25": 15.45,
-    "p75": 46.78
+    "mediana": 27.65,
+    "p25": 15.37,
+    "p75": 48.79
    },
    "justificado": {
     "Conservador": 29.77,
-    "Base": 43.35,
+    "Base": 43.61,
     "Optimista": null
    },
    "actual_J": {
-    "J8": null,
-    "J19": null,
-    "J30": null
+    "J8": 19.84,
+    "J19": 30.39,
+    "J30": 37.67
    }
   },
   "EV/FCFF": {
@@ -146,9 +146,9 @@
    },
    "peers": {
     "n": 4,
-    "mediana": 9.42,
-    "p25": 6.14,
-    "p75": 17.93
+    "mediana": 9.39,
+    "p25": 6.18,
+    "p75": 18.29
    },
    "justificado": {
     "Conservador": 38.08,
@@ -156,9 +156,9 @@
     "Optimista": null
    },
    "actual_J": {
-    "J8": null,
-    "J19": null,
-    "J30": null
+    "J8": 15.59,
+    "J19": 19.63,
+    "J30": 32.02
    }
   },
   "P/E": {
@@ -226,19 +226,19 @@
    },
    "peers": {
     "n": 6,
-    "mediana": 23.2,
-    "p25": 17.06,
-    "p75": 33.91
+    "mediana": 23.19,
+    "p25": 16.96,
+    "p75": 33.97
    },
    "justificado": {
     "Conservador": 32.75,
-    "Base": 51.55,
+    "Base": 50.53,
     "Optimista": null
    },
    "actual_J": {
-    "J8": null,
-    "J19": null,
-    "J30": null
+    "J8": 18.25,
+    "J19": 23.35,
+    "J30": 24.05
    }
   },
   "P/FCFE": {
@@ -311,9 +311,9 @@
     "Optimista": null
    },
    "actual_J": {
-    "J8": null,
-    "J19": null,
-    "J30": null
+    "J8": 15.53,
+    "J19": 19.57,
+    "J30": 32.16
    }
   },
   "P/OCF": {
@@ -382,13 +382,13 @@
    },
    "justificado": {
     "Conservador": 42.16,
-    "Base": 62.12,
+    "Base": 62.76,
     "Optimista": null
    },
    "actual_J": {
-    "J8": null,
-    "J19": null,
-    "J30": null
+    "J8": 15.31,
+    "J19": 19.55,
+    "J30": 28.8
    }
   }
  },
@@ -416,15 +416,15 @@
    "g_perpetuidad": 0.0499,
    "wacc_4_10": 0.08629789700290338,
    "ke": 0.08555648921601675,
-   "roe_fy3": 0.6266403807352412,
-   "fcff_ebitda": 0.7811267115836216,
-   "fcfe_ocf": 1.0760364801620526,
+   "roe_fy3": 0.5379648551594995,
+   "fcff_ebitda": 0.7858511596834806,
+   "fcfe_ocf": 1.087243652335877,
    "multiplos": {
     "EV/FCFF": 55.500126420750924,
     "P/FCFE": 57.72615243671557,
-    "P/E": 51.54752809507997,
-    "EV/EBITDA": 43.35263124351644,
-    "P/OCF": 62.11544588130152
+    "P/E": 50.5290735332719,
+    "EV/EBITDA": 43.61483871032689,
+    "P/OCF": 62.76239281059223
    }
   },
   "Optimista": {
@@ -433,9 +433,9 @@
    "g_perpetuidad": 0.0499,
    "wacc_4_10": 0.08629789700290338,
    "ke": 0.08555648921601675,
-   "roe_fy3": 0.8441497638594925,
-   "fcff_ebitda": 0.7966628136415542,
-   "fcfe_ocf": 1.1125158930125023,
+   "roe_fy3": 0.7395030989182331,
+   "fcff_ebitda": 0.8028120161552038,
+   "fcfe_ocf": 1.1267089974660012,
    "multiplos": {
     "EV/FCFF": null,
     "P/FCFE": null,
@@ -468,24 +468,24 @@
    "nombre": "DoorDash, Inc.",
    "precio": 187.1,
    "pe": 97.95812,
-   "ev_ebitda": 52.413,
+   "ev_ebitda": 55.041,
    "crec_ingresos": 0.356,
    "margen_operativo": 0.03862,
    "roe": 0.088870004,
    "p_ocf": 28.646659799293285,
    "p_fcf": 37.900910346891074,
-   "ev_fcf": 35.18682300140252,
+   "ev_fcf": 36.9512013314633,
    "ocf_ttm": 2830000000.0,
    "fcf_ttm": 2139000000.0,
    "interest_ttm": 0.0,
-   "ev_fcff": 35.18682300140252
+   "ev_fcff": 36.9512013314633
   },
   {
    "ticker": "ABNB",
    "nombre": "Airbnb, Inc.",
    "precio": 156.96,
-   "pe": 35.75399,
-   "ev_ebitda": 29.862,
+   "pe": 35.835617,
+   "ev_ebitda": 30.05,
    "crec_ingresos": 0.165,
    "margen_operativo": 0.21009001,
    "roe": 0.34542,
@@ -498,18 +498,18 @@
    "ticker": "BKNG",
    "nombre": "Booking Holdings Inc. Common St",
    "precio": 162.34,
-   "pe": 18.037777,
-   "ev_ebitda": 12.181,
+   "pe": 18.017757,
+   "ev_ebitda": 12.07,
    "crec_ingresos": 0.081,
    "margen_operativo": 0.34412,
    "roe": null,
    "p_ocf": 12.372360400040572,
    "p_fcf": 12.787409705839186,
-   "ev_fcf": 13.296856951881749,
+   "ev_fcf": 13.176340342593564,
    "ocf_ttm": 9859000000.0,
    "fcf_ttm": 9539000000.0,
    "interest_ttm": 1103000000.0,
-   "ev_fcff": 12.183881885466127
+   "ev_fcff": 12.073452771419268
   },
   {
    "ticker": "GRAB",
@@ -532,18 +532,18 @@
    "ticker": "EXPE",
    "nombre": "Expedia Group, Inc.",
    "precio": 266.33,
-   "pe": 16.739786,
-   "ev_ebitda": 10.913,
+   "pe": 16.604113,
+   "ev_ebitda": 11.0,
    "crec_ingresos": 0.14,
    "margen_operativo": 0.1898,
    "roe": 0.89489,
    "p_ocf": 6.128351018404908,
    "p_fcf": 7.1687550823054496,
-   "ev_fcf": 7.072821507961426,
+   "ev_fcf": 7.129345664947298,
    "ocf_ttm": 5216000000.0,
    "fcf_ttm": 4459000000.0,
    "interest_ttm": 355000000.0,
-   "ev_fcff": 6.654297672514743
+   "ev_fcff": 6.707477095443564
   }
  ]
 }

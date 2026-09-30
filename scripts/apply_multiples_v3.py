@@ -16,12 +16,16 @@ Entrada:
         "lambda": 0.25,                     # cuanto acercar el Base al justificado (0 = nada, 1 = todo)
         "lambda_motivo": "...",
         "no_aplica": {"P/FCFE": "motivo"},  # metodos no aplicables (no se escriben)
-        "notas": {"P/E": "..."}             # texto extra por metodo
+        "notas": {"P/E": "..."},            # texto extra por metodo
+        "peers_crecimiento": {"g": 0.11, "motivo": "..."}  # opcional: B = regresión múltiplo ~ crecimiento
+                                            # de los peers evaluada en el crecimiento de la empresa en FY+3
       }
 
 Regla (prompt v3, 6.3):
   A = mediana de los cierres de la etapa actual (+ LTM) o mediana 5A depurada.
-  B = mediana de peers (sin excluidos) x (1 + ajuste).
+  B = mediana de peers (sin excluidos) x (1 + ajuste); con "peers_crecimiento", la recta
+      múltiplo = a + b x crecimiento de ingresos de los peers evaluada en el crecimiento de la
+      empresa en FY+3 (Damodaran: el precio relativo se compara controlando por crecimiento).
   C = justificado del escenario.
   Base = (1 - lambda) x promedio(A, B) + lambda x C_base; debe quedar en [min(A,B,C); max(A,B,C)].
   Conservador = Base x promedio(P25/mediana de A, P25/mediana de peers, C_cons/C_base)  (tope 0,97).
@@ -121,6 +125,20 @@ def decide(anc: dict, dec: dict) -> dict:
         vals = [v for _, v in pv]
         b_med = st.median(vals)
         b = b_med * adj
+        b_reg = None
+        pc = dec.get("peers_crecimiento")
+        if pc:
+            gx = {p["ticker"]: p.get("crec_ingresos") for p in anc["peers"]}
+            pts = [(gx[t], v) for t, v in pv if isinstance(gx.get(t), (int, float))]
+            n = len(pts)
+            mx, my = sum(x for x, _ in pts) / n, sum(y for _, y in pts) / n
+            sxx = sum((x - mx) ** 2 for x, _ in pts)
+            slope = sum((x - mx) * (y - my) for x, y in pts) / sxx
+            icpt = my - slope * mx
+            sst = sum((y - my) ** 2 for _, y in pts)
+            r2 = 1 - sum((y - (icpt + slope * x)) ** 2 for x, y in pts) / sst if sst else 0
+            b_reg = {"a": round(icpt, 2), "b": round(slope, 2), "r2": round(r2, 2), "g": pc["g"], "n": n}
+            b = max(icpt + slope * pc["g"], 0.5) * adj
         b_p25, b_p75 = pct(vals, .25) * adj, pct(vals, .75) * adj
         cj = d["justificado"]
         c_base, c_cons, c_opt = cj["Base"], cj["Conservador"], cj["Optimista"]
@@ -145,7 +163,7 @@ def decide(anc: dict, dec: dict) -> dict:
             "A": round(a, 2) if a is not None else None, "A_desc": a_desc,
             "A_p25": round(a_p25, 2) if a_p25 else None, "A_p75": round(a_p75, 2) if a_p75 else None, "A_max": a_max,
             "A_excluidos": hist["excluidos"],
-            "B_mediana": round(b_med, 2), "B_ajustada": round(b, 2), "B_n": len(vals),
+            "B_mediana": round(b_med, 2), "B_ajustada": round(b, 2), "B_n": len(vals), "B_regresion": b_reg,
             "B_peers": ", ".join(f"{t} {fx(v)}" for t, v in pv), "B_excluidos": sorted(skip),
             "C": {k: round(v, 2) if v else None for k, v in cj.items()},
             "mercado": round(market, 2), "lambda": lam,
@@ -168,7 +186,9 @@ def origin_rows(tk: str, anc: dict, dec: dict, res: dict) -> list[list[str]]:
         c = r["C"]
         rows.append([
             m, "Sí", r["A_desc"],
-            f"mediana {fx(r['B_mediana'])} (n={r['B_n']}: {r['B_peers']}) × {es(1 + dec.get('ajuste_peers', 0))} = {fx(r['B_ajustada'])}",
+            (f"recta de peers {es(r['B_regresion']['a'])} + {es(r['B_regresion']['b'], 1)} × g (n={r['B_n']}, R² {es(r['B_regresion']['r2'])}; {r['B_peers']}) "
+             f"en g = {es(r['B_regresion']['g'] * 100, 0)}% (FY+3) = {fx(r['B_ajustada'])}" if r.get("B_regresion") else
+             f"mediana {fx(r['B_mediana'])} (n={r['B_n']}: {r['B_peers']}) × {es(1 + dec.get('ajuste_peers', 0))} = {fx(r['B_ajustada'])}"),
             f"{fx(c['Conservador'])} / {fx(c['Base'])} / {fx(c['Optimista'])}",
             r["conservador"], r["base"], r["optimista"],
             (f"Base = {es(1 - r['lambda'])} × {'promedio(A,B)' if r['A'] is not None else 'B'} {fx(r['mercado'])} + {es(r['lambda'])} × C. "
@@ -176,6 +196,7 @@ def origin_rows(tk: str, anc: dict, dec: dict, res: dict) -> list[list[str]]:
              f"Rango de anclas {fx(r['rango'][0])}-{fx(r['rango'][1])}: {'dentro' if r['base_en_rango'] else 'FUERA, ver nota'}. {r['nota']}"),
             f"{r['hoja']}!J8/J19/J30"])
     rows.append(["Criterios: " + " ".join(x for x in (dec.get("etapa_motivo", ""), dec.get("historia_motivo", ""), dec.get("peers_motivo", ""),
+                                                        (dec.get("peers_crecimiento") or {}).get("motivo", ""),
                                                         dec.get("ajuste_motivo", ""), dec.get("lambda_motivo", "")) if x)])
     return rows
 
@@ -215,8 +236,10 @@ def main():
     applied = [m for m, r in res.items() if r["aplica"]]
     synth = (f"Múltiplos de salida fijados el {anc['fecha']} con el prompt de valoración v3 (J8/J19/J30 explícitos; los rótulos "
              f"«x0,9» y «mín. positivo 4 cierres» de la fila 5 ya no describen la regla). Cada Base = promedio de A (historia "
-             f"{'de la etapa actual desde ' + dec['etapa_desde'] if dec.get('etapa_desde') else 'depurada 5 años'}) y B (mediana de "
-             f"peers de hoy × {es(1 + dec.get('ajuste_peers', 0))}), acercado un {es(dec.get('lambda', 0) * 100, 0)}% al múltiplo justificado C. "
+             f"{'de la etapa actual desde ' + dec['etapa_desde'] if dec.get('etapa_desde') else 'depurada 5 años'}) y B ("
+             + (f"peers de hoy ajustados por crecimiento: recta múltiplo ~ crecimiento en g = {es(dec['peers_crecimiento']['g'] * 100, 0)}% de FY+3"
+                if dec.get("peers_crecimiento") else f"mediana de peers de hoy × {es(1 + dec.get('ajuste_peers', 0))}") +
+             f"), acercado un {es(dec.get('lambda', 0) * 100, 0)}% al múltiplo justificado C. "
              f"Base: " + "; ".join(f"{m} {fx(res[m]['base'])}" for m in applied) + ". Detalle en «Tesis de Inversión y Supuestos».")
     data.append({"range": "'Supuestos de los Múltiplos'!A3", "values": [[synth]]})
     sh.values_batch_update({"valueInputOption": "USER_ENTERED", "data": data})

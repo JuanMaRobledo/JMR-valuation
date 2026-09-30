@@ -1,0 +1,187 @@
+{
+ "EVEBITDA!J8:J30": [
+  [
+   19.84
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   30.39
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   37.67
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [
+   15.59
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   19.63
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   32.02
+  ]
+ ],
+ "PE!J8:J30": [
+  [
+   18.25
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   23.35
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   24.05
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [
+   15.53
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   19.57
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   32.16
+  ]
+ ],
+ "POCF!J8:J30": [
+  [
+   15.31
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   19.55
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   28.8
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Múltiplos de salida fijados el 2026-09-29 con el prompt de valoración v3 (J8/J19/J30 explícitos; los rótulos «x0,9» y «mín. positivo 4 cierres» de la fila 5 ya no describen la regla). Cada Base = promedio de A (historia de la etapa actual desde Dec '23) y B (mediana de peers de hoy × 1,00), acercado un 10% al múltiplo justificado C. Base: EV/EBITDA 30,4x; EV/FCFF 19,6x; P/E 23,4x; P/FCFE 19,6x; P/OCF 19,6x. Detalle en «Tesis de Inversión y Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Chequeo de independencia (2026-09-29): múltiplos consolidados hoy (Base) 124,94 frente a DCF hoy 111,44 (+12%). Los múltiplos (US$124,94 hoy) quedan 12% por encima del DCF (US$111,44), dentro del rango de ±25%: ambos métodos coinciden. Los dos quedan muy por encima del precio (US$68,16): el mercado descuenta riesgos que el escenario Base no incorpora del todo, sobre todo la competencia de los robotaxis. Dentro de los múltiplos hay dispersión: EV/EBITDA da US$152 y EV/FCFF US$78, porque el EBITDA de FY+3 de la hoja crece más que el flujo de caja; los métodos de flujo son la referencia más prudente."
+  ]
+ ]
+}

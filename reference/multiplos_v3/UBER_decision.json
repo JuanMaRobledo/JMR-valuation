@@ -1,12 +1,15 @@
 {
  "etapa_desde": "Dec '23",
- "etapa_motivo": "A: Uber es rentable desde 2023; los cierres anteriores tienen EBITDA y utilidad negativos. La etapa actual es Dec '23 a LTM. En P/E se quita Dec '24: la utilidad de 2024 incluye la liberación de ~US$6.400 millones de la reserva de impuestos diferidos, que baja el P/E a 13x. La utilidad del LTM incluye revaluaciones de sus participaciones (Didi, Grab, Aurora) que se compensan entre trimestres (−US$1.500 millones en el 1T26, +US$1.600 millones en el 2T26). Se excluye la columna sin fecha de la hoja.",
+ "etapa_motivo": "A: Uber es rentable desde 2023; los cierres anteriores tienen EBITDA y utilidad negativos. La etapa actual es Dec '23 a LTM. En P/E se quita Dec '24: la utilidad de 2024 incluye la liberación de ~US$6.400 millones de la reserva de impuestos diferidos, que baja el P/E a 13x. La utilidad del LTM incluye revaluaciones de sus participaciones (Didi, Grab, Aurora) que se compensan entre trimestres (−US$1.500 millones en el 1T26, +US$1.600 millones en el 2T26). Se excluye la columna sin fecha de la hoja. En EV/EBITDA se quita también Dec '23 (69x): fue el primer año con EBITDA positivo (US$1.933 millones) y el múltiplo no es representativo.",
  "historia_excluir": {
   "*": [
    "—"
   ],
   "P/E": [
    "Dec '24"
+  ],
+  "EV/EBITDA": [
+   "Dec '23"
   ]
  },
  "peers_excluir": {
@@ -20,12 +23,16 @@
  "peers_motivo": "B: plataformas de movilidad, reparto y viajes (DoorDash, Airbnb, Booking, Grab, Expedia), datos de yfinance al 29-sep-2026. Se excluye Lyft (P/E de 2x por la liberación de su reserva de impuestos; EV/EBITDA de 112x) y, en P/E, DoorDash (98x con margen de 4%).",
  "ajuste_peers": 0.0,
  "ajuste_motivo": "Sin ajuste: Uber crece ~15-18% con margen creciente, en la mitad del grupo (más que Booking y Expedia, menos que DoorDash).",
- "lambda": 0.1,
- "lambda_motivo": "λ = 0,10: C es inestable. Con un Ke de 8,6% y g de 6,7%, Ke − g es de apenas 1,9 pp y el justificado se dispara (P/E de 51x, EV/EBITDA de 43x); se le da poco peso.",
+ "lambda": 0.0,
+ "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C usa g perpetuo de 6,7% con un ROE de 54% para siempre y Ke − g de apenas 1,9 pp, mientras el DCF supone que después del año 10 el retorno sobre el capital iguala al costo de capital; no es coherente con el DCF y se deja fuera del Base (se conserva como referencia en la tabla).",
  "fuentes": [
   "[Uber: resultados 2T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm)",
   "[Uber: resultados 1T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000019/uberq126earningspressrelea.htm)"
  ],
- "evaluacion": "Tras la revisión del DCF del 30-sep-2026 (margen objetivo 21% en lugar de 26% y sales-to-capital 2,5), el DCF da US$88,85 y los múltiplos US$114,26 hoy: 29% por encima, fuera del rango de ±25%, y el chequeo de crecimiento implícito marca que los múltiplos suponen otra historia que el DCF. Los múltiplos de salida se eligieron con el margen anterior; conviene revisarlos con el nuevo margen antes de usarlos. Los dos métodos quedan por encima del precio (US$68,16): el mercado descuenta sobre todo la competencia de los robotaxis. Dentro de los múltiplos, EV/EBITDA da US$139 y EV/FCFF US$72, porque el EBITDA de FY+3 crece más que el flujo de caja; los métodos de flujo son la referencia más prudente.",
- "ticker": "UBER"
+ "evaluacion": "Revisión del 30-sep-2026: con el margen objetivo de 21% se revisaron también los múltiplos de salida. Los anteriores (EV/EBITDA 30,4x, P/E 23,4x) superaban lo que el mercado paga hoy por Uber (20,3x EBITDA y 15,4x utilidad LTM) aunque en FY+3 crecerá menos (~11%). Ahora la referencia de peers se ajusta por crecimiento (recta múltiplo ~ crecimiento evaluada en el 11% de FY+3), se deja fuera el justificado (supone un ROE de 54% para siempre, incoherente con el DCF) y el EV/EBITDA de 2023. El DCF da US$88,85 y los múltiplos US$83,89 hoy (6% por debajo): los dos métodos coinciden y quedan por encima del precio (US$68,16); el mercado descuenta sobre todo la competencia de los robotaxis. El chequeo de crecimiento implícito marca que los múltiplos suponen menos crecimiento perpetuo que el DCF; es un efecto de la fórmula (usa el ROE de FY+3 para siempre), no de los múltiplos: el propio DCF implica en FY+3 unos 17x EBITDA y 17x utilidad.",
+ "ticker": "UBER",
+ "peers_crecimiento": {
+  "g": 0.11,
+  "motivo": "B ajustado por crecimiento (30-sep-2026): con el margen revisado a 21%, la hoja supone que en FY+3 Uber crece ~11% (13% el año 1 y 11% los años 2-5). Los peers de hoy crecen entre 8% (Booking) y 36% (DoorDash) y su múltiplo sube con el crecimiento (R² 0,8-0,9 en EV/EBITDA y flujos). Pagar en FY+3 la mediana de hoy, sesgada por DoorDash y Airbnb, supone que Uber seguirá creciendo como hoy; la recta evaluada en 11% da el precio relativo coherente con la historia del DCF."
+ }
 }

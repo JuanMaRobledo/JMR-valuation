@@ -17,56 +17,56 @@
  "parametros": {
   "ke": 0.08555648921601675,
   "wacc": 0.08629789700290338,
-  "roe": 0.6266403807352412,
-  "fcffEbitda": 0.7811267115836216,
-  "fcfeOcf": 1.0760364801620526
+  "roe": 0.5379648551594995,
+  "fcffEbitda": 0.7858511596834806,
+  "fcfeOcf": 1.087243652335877
  },
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
-   "multiplo": 30.39,
-   "gImplicito": 0.059076028767683204,
+   "multiplo": 20.55,
+   "gImplicito": 0.04628691006207951,
    "gDcf": 0.06707142857142857,
-   "dif": -0.007995399803745369,
+   "dif": -0.020784518509349065,
    "aplica": true,
-   "lectura": "Coherente con el DCF."
+   "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF."
   },
   {
    "metodo": "EV/FCFF",
-   "multiplo": 19.63,
-   "gImplicito": 0.03364167320247181,
+   "multiplo": 14.57,
+   "gImplicito": 0.016529245942986666,
    "gDcf": 0.06707142857142857,
-   "dif": -0.033429755368956766,
+   "dif": -0.05054218262844191,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF."
   },
   {
    "metodo": "P/E",
-   "multiplo": 23.35,
-   "gImplicito": 0.04398448847178304,
+   "multiplo": 18.96,
+   "gImplicito": 0.03449299634472536,
    "gDcf": 0.06707142857142857,
-   "dif": -0.023086940099645535,
+   "dif": -0.032578432226703216,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF."
   },
   {
    "metodo": "P/FCFE",
-   "multiplo": 19.57,
-   "gImplicito": 0.03278271725607427,
+   "multiplo": 14.26,
+   "gImplicito": 0.014419104601598868,
    "gDcf": 0.06707142857142857,
-   "dif": -0.034288711315354305,
+   "dif": -0.052652323969829704,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF."
   },
   {
    "metodo": "P/OCF",
-   "multiplo": 19.55,
-   "gImplicito": 0.0289242620405948,
+   "multiplo": 13.56,
+   "gImplicito": 0.004977205484096928,
    "gDcf": 0.06707142857142857,
-   "dif": -0.038147166530833776,
+   "dif": -0.062094223087331646,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF."
   }
  ],
- "alertas": 4
+ "alertas": 5
 }
