@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Zoetis Inc. (ZTS) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$106,45 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$117,29 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Para empresas de US$7.000-12.000 millones, crecer 4,5% anual cinco años (histor
 
 **Márgenes.** El margen operativo se mantuvo en 36-38% con ventas planas: es un negocio con poder de precio y costos flexibles. La hoja supone 36% estable. Si la competencia obliga a bajar precios en mascotas, el margen cae rápido porque la mezcla de mascotas es la más rentable. Las historias van de 29% a 38%.
 
-**Reinversión y retorno.** Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Moat estrecho (marcas, relación con veterinarios y cartera de patentes; amenaza: erosión de franquicias y genéricos: historias B y D suman 45%): el ROIC después del año 10 es 13,0%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (17,0%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
+**Reinversión y retorno.** Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Moat ancho (cartera de patentes que se renueva, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%): el ROIC después del año 10 es 16,9%, el menor entre el ROIC actual (25,3%) y el de la industria (17,0%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026).
 
-**Riesgo.** La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$106,44 a US$101,49. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo.
+**Riesgo.** La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$106,44 a US$111,84. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 8,2% | US$106,45 |
-| Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,10 | 9,9% | 8,9% | US$101,49 |
+| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 8,2% | US$117,29 |
+| Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,10 | 9,9% | 8,9% | US$111,84 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 0,90) | Valor/acción (beta 1,10) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Tropiezo temporal; vuelve a crecer con innovación** | 40% | Animales de compañía: 1%, 5%, 6%, 6%, 6%; Animales de producción: 3%, 4%, 4%, 4%, 4% | 4,5% | 36% | 2,0 | 13,0% | US$107,19 | US$102,20 |
-| **B · Erosión prolongada de franquicias clave** | 35% | Animales de compañía: -4%, 0%, 2%, 3%, 3%; Animales de producción: 2%, 3%, 3%, 3%, 3% | 1,5% | 33% | 2,0 | = costo de capital | US$65,08 | US$61,95 |
-| **C · Recuperación fuerte con nuevos productos** | 15% | Animales de compañía: 4%, 8%, 8%, 8%, 7%; Animales de producción: 4%, 4%, 4%, 4%, 4% | 6,0% | 38% | 2,0 | 13,0% | US$124,07 | US$118,35 |
-| **D · Genéricos y competencia generalizada** | 10% | Animales de compañía: -8%, -4%, 0%, 1%, 2%; Animales de producción: 0%, 2%, 2%, 2%, 2% | -0,7% | 29% | 2,0 | = costo de capital | US$49,26 | US$46,80 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$89,19** | **US$85,00** |
+| **A · Tropiezo temporal; vuelve a crecer con innovación** | 40% | Animales de compañía: 1%, 5%, 6%, 6%, 6%; Animales de producción: 3%, 4%, 4%, 4%, 4% | 4,5% | 36% | 2,0 | 16,9% | US$118,14 | US$112,64 |
+| **B · Erosión prolongada de franquicias clave** | 35% | Animales de compañía: -4%, 0%, 2%, 3%, 3%; Animales de producción: 2%, 3%, 3%, 3%, 3% | 1,5% | 33% | 2,0 | = costo de capital | US$65,08 | US$61,96 |
+| **C · Recuperación fuerte con nuevos productos** | 15% | Animales de compañía: 4%, 8%, 8%, 8%, 7%; Animales de producción: 4%, 4%, 4%, 4%, 4% | 6,0% | 38% | 2,0 | 16,9% | US$136,71 | US$130,40 |
+| **D · Genéricos y competencia generalizada** | 10% | Animales de compañía: -8%, -4%, 0%, 1%, 2%; Animales de producción: 0%, 2%, 2%, 2%, 2% | -0,7% | 29% | 2,0 | = costo de capital | US$49,27 | US$46,80 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$95,47** | **US$90,98** |
 
 A (40%, antes 45%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%, antes 30%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 0,90; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 32,0% | 34,0% | 36,0% | 38,0% | 40,0% |
 |---|---:|---:|---:|---:|---:|
-| 0,4% | 72,58 | 77,60 | 82,61 | 87,63 | 92,65 |
-| 2,4% | 82,51 | 88,20 | 93,89 | 99,58 | 105,27 |
-| 4,4% | 93,56 | 100,00 | 106,45 | 112,89 | 119,34 |
-| 6,4% | 105,83 | 113,12 | 120,40 | 127,69 | 134,98 |
-| 8,4% | 119,45 | 127,68 | 135,91 | 144,14 | 152,36 |
+| 0,4% | 79,92 | 85,40 | 90,87 | 96,35 | 101,82 |
+| 2,4% | 90,93 | 97,15 | 103,37 | 109,59 | 115,80 |
+| 4,4% | 103,20 | 110,25 | 117,29 | 124,34 | 131,39 |
+| 6,4% | 116,84 | 124,82 | 132,79 | 140,77 | 148,75 |
+| 8,4% | 132,00 | 141,01 | 150,02 | 159,04 | 168,05 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 32% | Margen 36% | Margen 38% |
 |---|---:|---:|---:|
-| Beta 0,90 | 0,2% (81% de las empresas) | -1,8% (88% de las empresas) | -2,6% (90% de las empresas) |
-| Beta 1,10 | 1,0% (78% de las empresas) | -1,0% (85% de las empresas) | -1,8% (88% de las empresas) |
+| Beta 0,90 | -1,2% (86% de las empresas) | -3,2% (91% de las empresas) | -4,0% (92% de las empresas) |
+| Beta 1,10 | -0,4% (83% de las empresas) | -2,4% (90% de las empresas) | -3,2% (91% de las empresas) |
 
-Frente al valor esperado de las historias (US$89,19 con la beta de la hoja; US$85,00 con la propuesta), el precio está por debajo en 20% y por debajo en 16%, respectivamente. El precio (US$71,43) queda entre la historia B (US$65,07) y la A (US$107,18), por debajo del valor esperado (US$89,18): el mercado valora algo cercano a B, una erosión que no es temporal. El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Descuenta que la caída de 2026 es un cambio de régimen y no un tropiezo. Los resultados del 3T (mascotas en EE.UU. y Librela) dirán cuál de las dos historias pesa más.
+Frente al valor esperado de las historias (US$95,47 con la beta de la hoja; US$90,98 con la propuesta), el precio está por debajo en 25% y por debajo en 21%, respectivamente. El precio (US$71,43) queda entre la historia B (US$65,08) y la A (US$118,14), 25% por debajo del valor esperado (US$95,47): el mercado valora algo cercano a B, una erosión que no es temporal. El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Descuenta que la caída de 2026 es un cambio de régimen y no un tropiezo. Los resultados del 3T (mascotas en EE.UU. y Librela) dirán cuál de las dos historias pesa más.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$89,19 con la beta de la hoja; US$8
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez |  |
 | Probabilidades | A 40% / B 35% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$89,19 / US$85,00 |  |
-| Rango (historia más débil a más fuerte) | US$46,80 a US$124,07 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$95,47 / US$90,98 |  |
+| Rango (historia más débil a más fuerte) | US$46,80 a US$136,71 |  |
 | Confianza | Media: la calidad del negocio es alta; la duración de la presión competitiva no |  |
 | Qué cambiaría la opinión | Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |
