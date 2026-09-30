@@ -6,13 +6,13 @@
  "ajuste_peers": -0.05,
  "ajuste_motivo": "Ajuste −5%: tras la baja de guía, Boston Scientific crece como la mediana de los peers, pero con más incertidumbre de ejecución (Watchman, electrofisiología en EE. UU. y los efectos del ciberataque).",
  "lambda": 0.0,
- "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 11,1% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
+ "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF supone que después del año 10 el retorno sobre el capital baja al costo de capital (BSX no cumple la regla del ROIC terminal). C se deja fuera del Base y se conserva como referencia en la tabla.",
  "fuentes": [
   "[Motley Fool, 29-may-2026: por qué caía Boston Scientific](https://www.fool.com/investing/2026/05/29/why-boston-scientific-stock-was-sliding-this-week/)",
   "[Nasdaq: ciberataque y guía 2026 débil](https://www.nasdaq.com/articles/cyberattack-weak-2026-outlook-weigh-bsx-stock-sell)",
   "[TIKR: BSX cae tras el impacto del ciberataque](https://www.tikr.com/blog/boston-scientific-bsx-stock-falls-cyberattack-sales-profit-impact)"
  ],
- "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$59,06 hoy) quedaban 51% por encima del DCF (US$39,12). Había dos razones. Los múltiplos pagaban en FY+3 la mediana de peers que hoy crecen más que Boston Scientific y además se acercaban al justificado, que supone el ROE actual para siempre. El DCF suponía que después del año 10 el ROIC baja al costo de capital. Ahora el DCF usa un ROIC terminal de 11,1% (el actual, menor que el de la industria) y da US$45,27. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 5% por debajo del DCF. Los dos métodos coinciden alrededor del precio (US$44,11); el mercado ya descuenta la desaceleración de 2026.",
+ "evaluacion": "Revisión del 30-sep-2026: el ROIC terminal de 11,1% se revirtió porque BSX no cumple la regla del prompt. Incluida la plusvalía de sus compras, su ROIC estuvo por debajo del costo de capital hasta 2025, así que el DCF vuelve a suponer que después del año 10 gana solo su costo de capital: US$39,13. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 9% por encima del DCF, dentro del rango de ±25%. Los dos métodos rodean el precio (~US$44): el mercado ya descuenta la desaceleración de 2026 y paga algo por la recuperación de Watchman y electrofisiología.",
  "ticker": "BSX",
  "peers_crecimiento": {
   "g": 0.07,

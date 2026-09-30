@@ -39,7 +39,7 @@
   "ajuste_motivo": "Sin ajuste: NVIDIA crece más que la mediana de los peers, pero ellos ya cotizan a múltiplos de ciclo alto de semiconductores (40-55x utilidades); se toma la mediana tal cual.",
   "lambda": 0.25,
   "lambda_motivo": "λ = 0,25: la NVIDIA de FY+3 del escenario Base sigue creciendo por encima del mercado, pero con un costo de patrimonio alto (13,5%) que baja el múltiplo justificado.",
-  "evaluacion": "Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 27,2% el DCF pasa de US$178,38 a US$259,30. Los múltiplos (US$219,02 hoy) quedan 16% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$228,86) está entre los dos. Lectura anterior, con el DCF sin ROIC terminal: Tras la revisión del DCF del 30-sep-2026 (beta bottom-up de Semiconductor de 1,51 en lugar de la de regresión de 1,90; costo del patrimonio 11,7% en lugar de 13,5%), el DCF da US$178,38 y los múltiplos US$219,02 hoy (23% por encima); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras el DCF usa un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia.",
+  "evaluacion": "Revisión del 30-sep-2026 (múltiplo justificado): el C justificado se había calculado el 29-sep con los supuestos anteriores del DCF; ahora se recalcula con los vigentes (crecimiento, WACC y cifras de FY+3) y se mantiene λ. El C anterior usaba el costo del patrimonio con la beta de regresión (13,5%); con la bottom-up (11,7%) sube a 27,4x EBITDA y 24,4x utilidad. Con un ROIC después del año 10 de 27,2%, el DCF da US$259,29 y los múltiplos US$230,76 hoy (11% por debajo), dentro del rango de ±25%; el precio (US$228,86) queda en línea con los múltiplos. Lectura anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 27,2% el DCF pasa de US$178,38 a US$259,30. Los múltiplos (US$219,02 hoy) quedan 16% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$228,86) está entre los dos. Lectura anterior, con el DCF sin ROIC terminal: Tras la revisión del DCF del 30-sep-2026 (beta bottom-up de Semiconductor de 1,51 en lugar de la de regresión de 1,90; costo del patrimonio 11,7% en lugar de 13,5%), el DCF da US$178,38 y los múltiplos US$219,02 hoy (23% por encima); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras el DCF usa un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia.",
   "ticker": "NVDA"
  },
  "resultado": {
@@ -91,6 +91,7 @@
    "B_mediana": 30.64,
    "B_ajustada": 30.64,
    "B_n": 6,
+   "B_regresion": null,
    "B_peers": "AVGO 32,6x, QCOM 16,7x, KLAC 42,6x, LRCX 46,7x, TXN 27,4x, ADI 28,7x",
    "B_excluidos": [
     "AMD",
@@ -99,21 +100,21 @@
     "TSM"
    ],
    "C": {
-    "Conservador": 13.5,
-    "Base": 20.59,
-    "Optimista": 47.57
+    "Conservador": 16.04,
+    "Base": 27.43,
+    "Optimista": null
    },
    "mercado": 32.44,
    "lambda": 0.25,
-   "conservador": 24.11,
-   "base": 29.48,
-   "optimista": 41.92,
-   "factor_cons": 0.818,
-   "factor_opt": 1.577,
-   "opt_tope_historico": 46.49237253254272,
+   "conservador": 24.77,
+   "base": 31.19,
+   "optimista": 37.76,
+   "factor_cons": 0.794,
+   "factor_opt": 1.211,
+   "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    20.59,
+    27.43,
     34.24
    ],
    "antes": {
@@ -176,6 +177,7 @@
    "B_mediana": 42.87,
    "B_ajustada": 42.87,
    "B_n": 6,
+   "B_regresion": null,
    "B_peers": "AVGO 40,7x, QCOM 18,3x, KLAC 64,6x, LRCX 80,5x, TXN 45,0x, ADI 38,1x",
    "B_excluidos": [
     "AMD",
@@ -184,21 +186,21 @@
     "TSM"
    ],
    "C": {
-    "Conservador": 16.85,
-    "Base": 27.14,
-    "Optimista": 65.48
+    "Conservador": 20.01,
+    "Base": 36.16,
+    "Optimista": null
    },
    "mercado": 46.15,
    "lambda": 0.25,
-   "conservador": 34.19,
-   "base": 41.4,
+   "conservador": 35.07,
+   "base": 43.65,
    "optimista": 54.49,
-   "factor_cons": 0.826,
-   "factor_opt": 1.64,
-   "opt_tope_historico": 67.88274769133895,
+   "factor_cons": 0.804,
+   "factor_opt": 1.253,
+   "opt_tope_historico": 54.71412623761722,
    "base_en_rango": true,
    "rango": [
-    27.14,
+    36.16,
     49.42
    ],
    "antes": {
@@ -261,6 +263,7 @@
    "B_mediana": 45.76,
    "B_ajustada": 45.76,
    "B_n": 7,
+   "B_regresion": null,
    "B_peers": "AVGO 45,8x, QCOM 21,0x, TSM 34,0x, KLAC 53,8x, LRCX 56,3x, TXN 42,9x, ADI 47,3x",
    "B_excluidos": [
     "AMD",
@@ -268,21 +271,21 @@
     "MRVL"
    ],
    "C": {
-    "Conservador": 11.99,
-    "Base": 17.24,
-    "Optimista": 28.23
+    "Conservador": 15.22,
+    "Base": 24.44,
+    "Optimista": null
    },
    "mercado": 42.03,
    "lambda": 0.25,
-   "conservador": 28.77,
-   "base": 35.83,
-   "optimista": 46.29,
-   "factor_cons": 0.803,
-   "factor_opt": 1.292,
+   "conservador": 29.3,
+   "base": 37.63,
+   "optimista": 42.12,
+   "factor_cons": 0.779,
+   "factor_opt": 1.119,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    17.24,
+    24.44,
     45.76
    ],
    "antes": {
@@ -345,6 +348,7 @@
    "B_mediana": 45.53,
    "B_ajustada": 45.53,
    "B_n": 6,
+   "B_regresion": null,
    "B_peers": "AVGO 43,0x, QCOM 18,9x, KLAC 68,1x, LRCX 82,9x, TXN 48,0x, ADI 39,1x",
    "B_excluidos": [
     "AMD",
@@ -353,21 +357,21 @@
     "TSM"
    ],
    "C": {
-    "Conservador": 12.86,
-    "Base": 18.23,
-    "Optimista": 30.4
+    "Conservador": 16.33,
+    "Base": 25.85,
+    "Optimista": null
    },
    "mercado": 44.96,
    "lambda": 0.25,
-   "conservador": 32.42,
-   "base": 38.28,
-   "optimista": 53.16,
-   "factor_cons": 0.847,
-   "factor_opt": 1.389,
+   "conservador": 33.04,
+   "base": 40.19,
+   "optimista": 50.21,
+   "factor_cons": 0.822,
+   "factor_opt": 1.249,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    18.23,
+    25.85,
     45.53
    ],
    "antes": {
@@ -430,6 +434,7 @@
    "B_mediana": 38.25,
    "B_ajustada": 38.25,
    "B_n": 6,
+   "B_regresion": null,
    "B_peers": "AVGO 41,7x, QCOM 15,9x, KLAC 61,9x, LRCX 69,2x, TXN 29,7x, ADI 34,8x",
    "B_excluidos": [
     "AMD",
@@ -438,21 +443,21 @@
     "TSM"
    ],
    "C": {
-    "Conservador": 12.92,
-    "Base": 18.4,
-    "Optimista": 30.8
+    "Conservador": 16.4,
+    "Base": 26.1,
+    "Optimista": null
    },
    "mercado": 41.32,
    "lambda": 0.25,
-   "conservador": 29.26,
-   "base": 35.59,
-   "optimista": 50.7,
-   "factor_cons": 0.822,
-   "factor_opt": 1.425,
+   "conservador": 29.92,
+   "base": 37.52,
+   "optimista": 48.77,
+   "factor_cons": 0.797,
+   "factor_opt": 1.3,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    18.4,
+    26.1,
     44.4
    ],
    "antes": {
@@ -465,21 +470,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   72.62477517933243,
-   162.65094647491398,
-   206.1475149984452
+   110.9221166751758,
+   259.29422676183793,
+   338.49257018579556
   ],
   "multiplos_hoy": [
-   113.97292715301029,
-   212.28165719750058,
-   262.51251249437115
+   120.10296767536721,
+   230.76230289157684,
+   251.70727427535658
   ],
   "ponderado_hoy": [
-   97.43366636353915,
-   192.42937290846595,
-   239.9665134960008
+   116.43062727529066,
+   242.1750724396813,
+   286.4213926395322
   ],
-  "brecha_base": 0.3051363167458805,
+  "brecha_base": -0.11003686517273559,
   "fila_origen": 40
  }
 }

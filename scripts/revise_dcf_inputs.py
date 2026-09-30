@@ -66,6 +66,8 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
     # capital (sin retornos excedentes). Damodaran lo acepta solo sin ventajas
     # duraderas; con marca, escala o red se fija el menor entre el ROIC actual y el
     # de la industria (Damodaran, ene-2026).
+    # BSX se revirtió el 30-sep-2026 (--revert BSX): no cumple la regla del prompt (ROIC sostenido por encima
+    # del costo de capital); se conserva aquí como registro de lo que se aplicó y se deshizo.
     "BSX": [
         (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: Boston Scientific tiene ventajas duraderas (patentes, relación con médicos)."),
         (IS, "B50", 0.111, "ROIC terminal 11,1%: el menor entre el actual (11,1%, recortado por las compras de empresas) y el de su industria según Damodaran (17,0%)."),

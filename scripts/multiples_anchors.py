@@ -24,6 +24,8 @@ decida los multiplos (ver apply_multiples.py).
 
 Uso:
     python scripts/multiples_anchors.py --sheet-id ID --peers ADSK INTU CRM NOW --out anclas.json
+    python scripts/multiples_anchors.py --solo-justificado reference/multiplos_v3/GOOG_anclas.json ...
+        (recalcula solo C con los supuestos vigentes de la hoja, sin volver a bajar peers)
 """
 from __future__ import annotations
 
@@ -131,25 +133,8 @@ def peer_multiples(ticker):
 PEER_KEY = {"EV/EBITDA": "ev_ebitda", "EV/FCFF": "ev_fcff", "P/E": "pe", "P/FCFE": "p_fcf", "P/OCF": "p_ocf"}
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--sheet-id", required=True)
-    ap.add_argument("--peers", nargs="+", required=True)
-    ap.add_argument("--out", required=True)
-    a = ap.parse_args()
-    c = get_gspread_client()
-    sh = c.open_by_key(a.sheet_id)
-    rng = ["'Trailing Valuation'!A2:L24", "'Financials Multiples'!A1:H120", "'Valuation output'!A1:M140",
-           "'Cost of capital worksheet'!B63", "'Balance Sheet'!A35:L35", "'Input sheet'!A1:D1",
-           "'Resumen de Valoración'!G3", "'Descuento de múltiplos'!B5"]
-    vr = sh.values_batch_get(rng, params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
-    tv, fm, vo = (v.get("values", []) for v in vr[:3])
-    ke = vr[3]["values"][0][0]
-    equity = [x for x in vr[4]["values"][0][1:] if isinstance(x, (int, float))][-1]
-    name = vr[5]["values"][0][0]
-    labels = [str(x).strip() for x in tv[0][1:]]
-    rows_tv = {r[0]: r[1:] for r in tv if r}
-
+def justified(vo, fm, ke, equity):
+    """C: múltiplo justificado por escenario con el crecimiento, el WACC y las cifras FY+3 vigentes de la hoja."""
     def fm_val(scen, key, col=6):  # col 6 = G = FY+3
         r = FM_START[scen] + FM_OFF[key] - 1
         return fm[r][col] if r < len(fm) and col < len(fm[r]) else None
@@ -157,17 +142,7 @@ def main():
     def vo_row(r):
         return vo[r - 1] if r - 1 < len(vo) else []
 
-    # FCF después de intereses / FCFF del último cierre: convierte el EV/FCF histórico en EV/FCFF.
-    # En 'Financials Multiples' el interés neto de impuestos es positivo cuando es un gasto.
-    fm_rows = {str(r[0]).strip(): r for r in fm[:40] if r}
-    try:
-        fcff_last, int_last = fm_rows["FCFF"][3], fm_rows["Interest (Net of Tax)"][3]
-        fcf_ratio = (fcff_last - int_last) / fcff_last if fcff_last else None
-    except (KeyError, IndexError, TypeError):
-        fcf_ratio = None
-    anchors = {"fcf_a_fcff": fcf_ratio, "empresa": name, "sheet_id": a.sheet_id, "fecha": dt.date.today().isoformat(), "ke": ke,
-               "categoria": vr[6]["values"][0][0], "metodos": {}, "justificado": {}}
-    # C: multiplo justificado por escenario
+    out = {}
     for scen in FM_START:
         g_row = vo_row(VO_GROWTH_ROW[scen])
         w_row = vo_row(VO_WACC_ROW[scen])
@@ -190,7 +165,64 @@ def main():
             "EV/EBITDA": evfcff * just["fcff_ebitda"] if evfcff and just["fcff_ebitda"] else None,
             "P/OCF": pfcfe * just["fcfe_ocf"] if pfcfe and just["fcfe_ocf"] else None,
         }
-        anchors["justificado"][scen] = just
+        out[scen] = just
+    return out
+
+
+def refresh_justified(path):
+    """Recalcula solo C en un archivo de anclas existente (tras cambiar supuestos del DCF)."""
+    anchors = json.loads(Path(path).read_text())
+    sh = get_gspread_client().open_by_key(anchors["sheet_id"])
+    vr = sh.values_batch_get(["'Financials Multiples'!A1:H120", "'Valuation output'!A1:M140", "'Cost of capital worksheet'!B63",
+                              "'Balance Sheet'!A35:L35"], params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
+    fm, vo = (v.get("values", []) for v in vr[:2])
+    ke = vr[2]["values"][0][0]
+    equity = [x for x in vr[3]["values"][0][1:] if isinstance(x, (int, float))][-1]
+    anchors["ke"] = ke
+    anchors["justificado"] = justified(vo, fm, ke, equity)
+    anchors["justificado_recalculado"] = dt.date.today().isoformat()
+    for m in anchors["metodos"]:
+        anchors["metodos"][m]["justificado"] = {s: (round(anchors["justificado"][s]["multiplos"][m], 2)
+                                                    if anchors["justificado"][s]["multiplos"][m] else None) for s in FM_START}
+    Path(path).write_text(json.dumps(anchors, ensure_ascii=False, indent=1, default=str))
+    return anchors
+
+
+def main():
+    if len(sys.argv) > 2 and sys.argv[1] == "--solo-justificado":
+        for path in sys.argv[2:]:
+            a = refresh_justified(path)
+            print(path, {m: d["justificado"]["Base"] for m, d in a["metodos"].items()})
+        return
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--sheet-id", required=True)
+    ap.add_argument("--peers", nargs="+", required=True)
+    ap.add_argument("--out", required=True)
+    a = ap.parse_args()
+    c = get_gspread_client()
+    sh = c.open_by_key(a.sheet_id)
+    rng = ["'Trailing Valuation'!A2:L24", "'Financials Multiples'!A1:H120", "'Valuation output'!A1:M140",
+           "'Cost of capital worksheet'!B63", "'Balance Sheet'!A35:L35", "'Input sheet'!A1:D1",
+           "'Resumen de Valoración'!G3", "'Descuento de múltiplos'!B5"]
+    vr = sh.values_batch_get(rng, params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
+    tv, fm, vo = (v.get("values", []) for v in vr[:3])
+    ke = vr[3]["values"][0][0]
+    equity = [x for x in vr[4]["values"][0][1:] if isinstance(x, (int, float))][-1]
+    name = vr[5]["values"][0][0]
+    labels = [str(x).strip() for x in tv[0][1:]]
+    rows_tv = {r[0]: r[1:] for r in tv if r}
+
+    # FCF después de intereses / FCFF del último cierre: convierte el EV/FCF histórico en EV/FCFF.
+    # En 'Financials Multiples' el interés neto de impuestos es positivo cuando es un gasto.
+    fm_rows = {str(r[0]).strip(): r for r in fm[:40] if r}
+    try:
+        fcff_last, int_last = fm_rows["FCFF"][3], fm_rows["Interest (Net of Tax)"][3]
+        fcf_ratio = (fcff_last - int_last) / fcff_last if fcff_last else None
+    except (KeyError, IndexError, TypeError):
+        fcf_ratio = None
+    anchors = {"fcf_a_fcff": fcf_ratio, "empresa": name, "sheet_id": a.sheet_id, "fecha": dt.date.today().isoformat(), "ke": ke,
+               "categoria": vr[6]["values"][0][0], "metodos": {}, "justificado": {}}
+    anchors["justificado"] = justified(vo, fm, ke, equity)
     # B: peers
     peers = []
     for p in a.peers:

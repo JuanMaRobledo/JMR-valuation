@@ -36,7 +36,7 @@
    "[Alphabet, 8-K 2T26: ganancias en acciones y capex](https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000066/googexhibit991q22026.htm)",
    "[Yahoo Finance: Alphabet sube el capex a US$205 mil millones y el flujo de caja se vuelve negativo](https://finance.yahoo.com/markets/stocks/articles/alphabet-lifts-capex-205-billion-123356486.html)"
   ],
-  "evaluacion": "Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 28,6% el DCF pasa de US$206,14 a US$311,58. Los múltiplos (US$228,88 hoy) quedan 27% por debajo del DCF, fuera del rango de ±25%; el precio (US$339,16) está por encima de ambos. Lectura anterior, con el DCF sin ROIC terminal: Tras la revisión del DCF del 30-sep-2026 (crecimiento 18% / 11%, sales-to-capital 1,2 por el capex de IA de US$195-205 mil millones, margen 35%, beta 1,07), el DCF da US$206,14 y los múltiplos US$228,88 hoy: 11% por encima, dentro del rango de ±25%, así que ambos métodos coinciden. Los dos quedan muy por debajo del precio (US$339,16): el mercado descuenta más crecimiento de Cloud e IA, y más duración, que el escenario Base. Además, las participaciones de Alphabet en otras empresas (que generaron US$135,9 mil millones de ganancias en el 1S26) no están en los múltiplos operativos; conviene revisar que la hoja las incluya a valor actual como activos no operativos.",
+  "evaluacion": "Revisión del 30-sep-2026 (múltiplo justificado): el C justificado se había calculado el 29-sep con los supuestos anteriores del DCF; ahora se recalcula con los vigentes (crecimiento, WACC y cifras de FY+3) y se mantiene λ. El C anterior usaba un crecimiento de 6,1% en los años 4-10, el de la hoja antes de la revisión, y daba 10,7x EBITDA; con el crecimiento revisado da 14,6x EBITDA y 29,4x utilidad. Con un ROIC después del año 10 de 28,6%, el DCF da US$311,54 y los múltiplos US$244,87 hoy: 21% por debajo, dentro del rango de ±25%. El precio (US$339,16) queda por encima de ambos: el mercado paga por Alphabet como ganador de la IA. Lectura anterior: Tras la revisión del DCF del 30-sep-2026 (crecimiento 18% / 11%, sales-to-capital 1,2 por el capex de IA de US$195-205 mil millones, margen 35%, beta 1,07), el DCF da US$206,14 y los múltiplos US$228,88 hoy: 11% por encima, dentro del rango de ±25%, así que ambos métodos coinciden. Los dos quedan muy por debajo del precio (US$339,16): el mercado descuenta más crecimiento de Cloud e IA, y más duración, que el escenario Base. Además, las participaciones de Alphabet en otras empresas (que generaron US$135,9 mil millones de ganancias en el 1S26) no están en los múltiplos operativos; conviene revisar que la hoja las incluya a valor actual como activos no operativos.",
   "ticker": "GOOG"
  },
  "resultado": {
@@ -78,24 +78,25 @@
    "B_mediana": 19.73,
    "B_ajustada": 19.73,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "META 17,4x, MSFT 19,7x, AMZN 16,5x, AAPL 28,8x, NFLX 20,1x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 9.87,
-    "Base": 10.71,
-    "Optimista": 33.29
+    "Conservador": 11.63,
+    "Base": 14.57,
+    "Optimista": 32.5
    },
    "mercado": 19.01,
    "lambda": 0.25,
-   "conservador": 15.79,
-   "base": 16.93,
+   "conservador": 15.96,
+   "base": 17.9,
    "optimista": 25.46,
-   "factor_cons": 0.933,
-   "factor_opt": 1.827,
-   "opt_tope_historico": 30.929817021749557,
+   "factor_cons": 0.891,
+   "factor_opt": 1.534,
+   "opt_tope_historico": 27.45608328681643,
    "base_en_rango": true,
    "rango": [
-    10.71,
+    14.57,
     19.73
    ],
    "antes": {
@@ -143,24 +144,25 @@
    "B_mediana": 40.03,
    "B_ajustada": 40.03,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "META 44,7x, MSFT 55,2x, AAPL 35,3x, NFLX 25,0x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 25.87,
-    "Base": 27.9,
-    "Optimista": 89.17
+    "Conservador": 32.52,
+    "Base": 39.63,
+    "Optimista": 85.55
    },
    "mercado": 35.63,
    "lambda": 0.25,
-   "conservador": 28.93,
-   "base": 33.7,
+   "conservador": 30.14,
+   "base": 36.63,
    "optimista": 52.19,
-   "factor_cons": 0.858,
-   "factor_opt": 1.89,
-   "opt_tope_historico": 63.69760976524917,
+   "factor_cons": 0.823,
+   "factor_opt": 1.545,
+   "opt_tope_historico": 56.5759601059613,
    "base_en_rango": true,
    "rango": [
-    27.9,
+    31.22,
     40.03
    ],
    "antes": {
@@ -182,25 +184,26 @@
    "B_mediana": 27.83,
    "B_ajustada": 27.83,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "META 27,8x, MSFT 28,4x, AMZN 19,8x, AAPL 37,7x, NFLX 22,1x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 20.22,
-    "Base": 21.81,
-    "Optimista": 58.43
+    "Conservador": 24.25,
+    "Base": 29.36,
+    "Optimista": 55.41
    },
    "mercado": 25.91,
    "lambda": 0.25,
-   "conservador": 22.1,
-   "base": 24.89,
+   "conservador": 22.88,
+   "base": 26.77,
    "optimista": 29.03,
-   "factor_cons": 0.888,
-   "factor_opt": 1.587,
-   "opt_tope_historico": 39.49925780612735,
+   "factor_cons": 0.855,
+   "factor_opt": 1.323,
+   "opt_tope_historico": 35.429017651883846,
    "base_en_rango": true,
    "rango": [
-    21.81,
-    27.83
+    24.0,
+    29.36
    ],
    "antes": {
     "J8": null,
@@ -247,24 +250,25 @@
    "B_mediana": 40.55,
    "B_ajustada": 40.55,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "META 45,9x, MSFT 56,4x, AAPL 35,2x, NFLX 26,2x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 23.96,
-    "Base": 25.69,
-    "Optimista": 70.34
+    "Conservador": 29.27,
+    "Base": 34.93,
+    "Optimista": 66.48
    },
    "mercado": 34.58,
    "lambda": 0.25,
-   "conservador": 27.76,
-   "base": 32.36,
-   "optimista": 51.77,
-   "factor_cons": 0.858,
-   "factor_opt": 1.742,
-   "opt_tope_historico": 56.36353539313113,
+   "conservador": 28.64,
+   "base": 34.67,
+   "optimista": 50.74,
+   "factor_cons": 0.826,
+   "factor_opt": 1.464,
+   "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    25.69,
+    28.62,
     40.55
    ],
    "antes": {
@@ -312,24 +316,25 @@
    "B_mediana": 20.66,
    "B_ajustada": 20.66,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "META 14,4x, MSFT 20,7x, AMZN 17,9x, AAPL 32,8x, NFLX 24,5x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 12.88,
-    "Base": 14.04,
-    "Optimista": 41.03
+    "Conservador": 15.52,
+    "Base": 19.29,
+    "Optimista": 39.22
    },
    "mercado": 19.61,
    "lambda": 0.25,
-   "conservador": 16.48,
-   "base": 18.22,
+   "conservador": 16.94,
+   "base": 19.53,
    "optimista": 23.03,
-   "factor_cons": 0.905,
-   "factor_opt": 1.772,
-   "opt_tope_historico": 32.28502695164981,
+   "factor_cons": 0.867,
+   "factor_opt": 1.476,
+   "opt_tope_historico": 28.822545336119486,
    "base_en_rango": true,
    "rango": [
-    14.04,
+    18.56,
     20.66
    ],
    "antes": {
@@ -342,21 +347,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   155.28773572877654,
-   174.2905607337319,
-   292.41188998150056
+   244.11381972343437,
+   311.5440221695589,
+   434.58116830254335
   ],
   "multiplos_hoy": [
-   177.21576123031338,
-   209.7630462908533,
-   333.27654221053484
+   187.64115614918836,
+   244.86787318930126,
+   335.959609883529
   ],
   "ponderado_hoy": [
-   168.44455102969866,
-   195.57405206800476,
-   316.9306813189212
+   210.23022157888678,
+   271.53833278140434,
+   375.4082332511348
   ],
-  "brecha_base": 0.20352499531695023,
+  "brecha_base": -0.21401838660209926,
   "fila_origen": 40
  }
 }
