@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Domino's Pizza, Inc. (DPZ) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$349,60 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$309,32 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Para empresas de US$4.500-7.000 millones, crecer 4,5% anual cinco años (histori
 
 **Márgenes.** El margen operativo sube lento (18,3% → 19,3%) porque la cadena de suministro diluye el margen de las regalías. La hoja supone 19% el próximo año y 20% de objetivo, un paso pequeño y creíble. El riesgo está en la rentabilidad de los franquiciados: si sus márgenes caen, Domino's tiene que subsidiar promociones o bajar el precio de los insumos. Las historias van de 17% a 21%.
 
-**Reinversión y retorno.** Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 18,4%, el de la industria. Antes era igual al costo de capital, lo que borraba el valor de la franquicia.
+**Reinversión y retorno.** Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Moat estrecho (una sola fuente estructural: densidad y escala logística en reparto; la marca no cuenta en consumo discrecional y la franquicia con poco capital explica el ROIC alto, no su duración): el ROIC después del año 10 es 13,7%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (18,4%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026; antes, moat ancho con 18,4%).
 
 **Riesgo.** La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,05, y el DCF Base baja de US$349,63 a US$337,02. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización).
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 7,7% | US$349,60 |
-| Bottom-up del sector (Restaurant/Dining, reapalancada) | 1,05 | 9,7% | 8,1% | US$336,99 |
+| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 7,7% | US$309,32 |
+| Bottom-up del sector (Restaurant/Dining, reapalancada) | 1,05 | 9,7% | 8,1% | US$297,81 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 0,90) | Valor/acción (beta 1,05) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Crece por tiendas con ventas mismas tiendas bajas** | 50% | Cadena de suministro: 4%, 4%, 4%, 4%, 4%; Regalías, tiendas propias y fondo de publicidad: 4%, 4%, 5%, 5%, 5% | 4,5% | 20% | 3,0 | 18,4% | US$351,93 | US$339,25 |
-| **B · Los agregadores erosionan la ventaja** | 25% | Cadena de suministro: 2%, 2%, 2%, 2%, 2%; Regalías, tiendas propias y fondo de publicidad: 2%, 3%, 3%, 3%, 3% | 2,5% | 18% | 3,0 | = costo de capital | US$172,11 | US$164,61 |
-| **C · Agregadores e internacional aceleran** | 20% | Cadena de suministro: 6%, 6%, 6%, 6%, 6%; Regalías, tiendas propias y fondo de publicidad: 7%, 7%, 7%, 6%, 6% | 6,2% | 21% | 3,0 | 18,4% | US$420,64 | US$406,03 |
-| **D · El sistema de franquicias se debilita** | 5% | Cadena de suministro: 0%, 0%, 1%, 1%, 1%; Regalías, tiendas propias y fondo de publicidad: 0%, 1%, 1%, 1%, 1% | 0,7% | 17% | 3,0 | = costo de capital | US$125,22 | US$119,02 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$309,38** | **US$297,93** |
+| **A · Crece por tiendas con ventas mismas tiendas bajas** | 50% | Cadena de suministro: 4%, 4%, 4%, 4%, 4%; Regalías, tiendas propias y fondo de publicidad: 4%, 4%, 5%, 5%, 5% | 4,5% | 20% | 3,0 | 13,7% | US$311,37 | US$299,81 |
+| **B · Los agregadores erosionan la ventaja** | 25% | Cadena de suministro: 2%, 2%, 2%, 2%, 2%; Regalías, tiendas propias y fondo de publicidad: 2%, 3%, 3%, 3%, 3% | 2,5% | 18% | 3,0 | = costo de capital | US$172,18 | US$164,63 |
+| **C · Agregadores e internacional aceleran** | 20% | Cadena de suministro: 6%, 6%, 6%, 6%, 6%; Regalías, tiendas propias y fondo de publicidad: 7%, 7%, 7%, 6%, 6% | 6,2% | 21% | 3,0 | 13,7% | US$373,58 | US$360,26 |
+| **D · El sistema de franquicias se debilita** | 5% | Cadena de suministro: 0%, 0%, 1%, 1%, 1%; Regalías, tiendas propias y fondo de publicidad: 0%, 1%, 1%, 1%, 1% | 0,7% | 17% | 3,0 | = costo de capital | US$125,28 | US$119,03 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$279,71** | **US$269,06** |
 
 A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 0,90; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 16,0% | 18,0% | 20,0% | 22,0% | 24,0% |
 |---|---:|---:|---:|---:|---:|
-| 0,4% | 183,25 | 219,25 | 255,24 | 291,24 | 327,23 |
-| 2,4% | 218,09 | 258,98 | 299,87 | 340,76 | 381,64 |
-| 4,4% | 256,87 | 303,23 | 349,60 | 395,96 | 442,32 |
-| 6,4% | 299,98 | 352,46 | 404,95 | 457,43 | 509,92 |
-| 8,4% | 347,86 | 407,17 | 466,49 | 525,80 | 585,12 |
+| 0,4% | 158,73 | 191,65 | 224,58 | 257,51 | 290,44 |
+| 2,4% | 189,95 | 227,32 | 264,68 | 302,05 | 339,42 |
+| 4,4% | 224,65 | 266,98 | 309,32 | 351,65 | 393,98 |
+| 6,4% | 263,18 | 311,06 | 358,94 | 406,82 | 454,70 |
+| 8,4% | 305,92 | 359,99 | 414,05 | 468,12 | 522,19 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 19% | Margen 20% | Margen 21% |
 |---|---:|---:|---:|
-| Beta 0,90 | 3,0% (74% de las empresas) | 2,2% (78% de las empresas) | 1,4% (81% de las empresas) |
-| Beta 1,05 | 3,6% (70% de las empresas) | 2,6% (76% de las empresas) | 1,8% (79% de las empresas) |
+| Beta 0,90 | 4,6% (63% de las empresas) | 3,8% (68% de las empresas) | 2,8% (75% de las empresas) |
+| Beta 1,05 | 5,2% (59% de las empresas) | 4,2% (66% de las empresas) | 3,4% (71% de las empresas) |
 
-Frente al valor esperado de las historias (US$309,38 con la beta de la hoja; US$297,93 con la propuesta), el precio está por debajo en 6% y por debajo en 2%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$292,27) queda por debajo del valor esperado (US$309,39), entre las historias B y A. El DCF inverso pide solo 2,2% anual en los años 1-5 con margen de 20% (lo logró ~78% de las empresas de este tamaño), o 3,0% con margen de 19%: menos de lo que muestran los últimos trimestres. ¿Qué sabe el mercado que yo no? Puede estar descontando que los agregadores y la competencia de precios erosionen el retorno de la franquicia más rápido de lo que supone la hoja. Si crees en la historia A, hay margen de seguridad; con B, el precio es justo.
+Frente al valor esperado de las historias (US$279,71 con la beta de la hoja; US$269,06 con la propuesta), el precio está por encima en 4% y por encima en 9%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$292,27) queda 4% por encima del valor esperado (US$279,71) y 6% por debajo del DCF (US$309,32), entre las historias B y A. El DCF inverso pide solo 2,2% anual en los años 1-5 con margen de 20% (lo logró ~78% de las empresas de este tamaño), o 3,0% con margen de 19%: menos de lo que muestran los últimos trimestres. ¿Qué sabe el mercado que yo no? Puede estar descontando que los agregadores y la competencia de precios erosionen el retorno de la franquicia más rápido de lo que supone la hoja. Si crees en la historia A, el precio es justo; con B, queda alto.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$309,38 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Compuesto de franquicias maduro que crece por tiendas nuevas, con ventas por tienda planas |  |
 | Probabilidades | A 50% / B 25% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$309,38 / US$297,93 |  |
-| Rango (historia más débil a más fuerte) | US$119,02 a US$420,64 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$279,71 / US$269,06 |  |
+| Rango (historia más débil a más fuerte) | US$119,03 a US$373,58 |  |
 | Confianza | Media-alta en el negocio; media en el crecimiento por tienda |  |
 | Qué cambiaría la opinión | Ventas mismas tiendas en EE.UU. y aperturas internacionales netas |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |
