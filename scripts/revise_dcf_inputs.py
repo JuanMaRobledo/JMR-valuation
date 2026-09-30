@@ -136,8 +136,9 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
 # Quinta ronda (30-sep-2026): ROIC después del año 10 según el moat (reference/moat_2026-09-30.json). Ancho: menor
 # entre el ROIC actual y el de la industria; estrecho: punto medio entre el costo de capital terminal y ese valor;
 # sin moat: costo de capital. Solo entran las empresas cuyo valor cambia; clave <T>_MOAT con respaldo propio.
-# Regla estricta (30-sep-2026): DUOL, ONON, CMG y LULU pasaron a sin moat (--revert <T>_MOAT y B49 = "No"); GOOG y DPZ
-# pasaron de ancho a estrecho (nuevo <T>_MOAT sobre el B50 anterior).
+# Criterio corregido (30-sep-2026): marca probada cuenta como fuente; la erosión visible baja un nivel y la probabilidad de
+# erosión va solo a las historias. GOOG, DPZ, ADBE y ZTS volvieron a ancho (--revert <T>_MOAT); CMG, estrecho (B49 = "Yes");
+# DUOL, ONON y LULU, sin moat (B49 = "No").
 _MOAT = json.loads((_ROOT / "reference" / "moat_2026-09-30.json").read_text())["empresas"]
 _p = lambda x: f"{x * 100:.1f}".replace(".", ",") + "%"  # noqa: E731
 for _t, _m in _MOAT.items():

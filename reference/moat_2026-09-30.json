@@ -1,6 +1,6 @@
 {
  "fecha": "2026-09-30",
- "regla": "Ancho: dos o más fuentes estructurales (o efectos de red / costos de cambio fuertes), ROIC sobre el costo de capital los últimos 5 años e historias de erosión < 40% → menor entre el ROIC actual y el de la industria. Estrecho: al menos una fuente ESTRUCTURAL (costos de cambio, efectos de red, escala o ventaja de costos, licencias o regulación, patentes que se renuevan) y ROIC sobre el costo de capital al menos 3 años seguidos → punto medio entre el costo de capital terminal y ese valor. La marca sola no alcanza en consumo discrecional, moda o apps de consumo con costos de cambio bajos. Sin moat → costo de capital.",
+ "regla": "Ancho: dos o más fuentes estructurales (o efectos de red / costos de cambio muy fuertes), ROIC sobre el costo de capital en cada uno de los últimos 5 años y sin erosión visible hoy → menor entre el ROIC actual y el de la industria. Estrecho: una fuente estructural con ROIC sobre el costo de capital al menos 3 años seguidos, o un moat ancho con erosión visible → punto medio entre el costo de capital terminal y ese valor. Sin moat: sin fuente, ROIC no sostenido, o un moat estrecho con erosión visible → costo de capital. Fuentes estructurales: costos de cambio, efectos de red, escala o ventaja de costos, licencias o regulación, patentes que se renuevan y marca probada (20 años o más de liderazgo con retornos sobre el costo de capital a lo largo de al menos un ciclo o una crisis). No cuenta la marca joven, la de moda sin esa trayectoria ni la de un producto fácil de sustituir con costos de cambio bajos. Erosión visible = evidencia de hoy (pérdida sostenida de participación, comparables negativas o recortes de precio, ROIC en caída por competencia y no por inversión). La probabilidad de erosión futura no baja el nivel: va a las historias, donde las de erosión usan ROIC = costo de capital; bajarlo también contaría el riesgo dos veces.",
  "empresas": {
   "MSFT": {
    "moat": "ancho",
@@ -15,7 +15,7 @@
    "roic_terminal_antes": 0.259
   },
   "GOOG": {
-   "moat": "estrecho",
+   "moat": "ancho",
    "fuentes": "Escala y efectos de red en búsqueda, YouTube y Android; datos",
    "evidencia": "ROIC 24-31% en 2021-2026",
    "amenaza": "IA conversacional y remedios antimonopolio (B y D, 40% con la erosión de Search)",
@@ -23,9 +23,9 @@
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.188,
+   "roic_terminal": 0.286,
    "roic_terminal_antes": 0.286,
-   "nota": "Ajuste del 30-sep-2026: tiene fuentes estructurales fuertes (escala y efectos de red), pero las historias de erosión suman 40% (B 25% + D 15%) y el moat ancho exige menos de 40%. Antes se clasificó como ancho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): escala y efectos de red en búsqueda, YouTube y Android, sin erosión visible (Search +17%, ROIC estable 24-31%). El riesgo de IA y antimonopolio queda en las historias B y D, no en el nivel del moat."
   },
   "INTU": {
    "moat": "ancho",
@@ -52,20 +52,20 @@
    "roic_terminal_antes": 0.272
   },
   "DPZ": {
-   "moat": "estrecho",
-   "fuentes": "Escala logística en reparto, marca y sistema de franquicias con muy poco capital",
+   "moat": "ancho",
+   "fuentes": "Marca probada (más de 60 años, se recuperó de la crisis de 2008-2010) y densidad y escala logística en reparto; franquicias con muy poco capital",
    "evidencia": "ROIC 65-78% en 2021-2026",
    "amenaza": "Agregadores (B y D, 30%)",
    "roic_actual": 0.9924,
    "roic_industria": 0.1836,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.137,
+   "roic_terminal": 0.184,
    "roic_terminal_antes": 0.184,
-   "nota": "Ajuste del 30-sep-2026: una sola fuente estructural (densidad y escala logística en reparto); la marca no cuenta en consumo discrecional y el sistema de franquicias con poco capital explica el ROIC alto, no su duración. El moat ancho exige dos fuentes estructurales. Antes se clasificó como ancho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): dos fuentes estructurales (marca probada y escala logística), ROIC 65-78% en cada uno de los últimos 5 años y sin erosión visible (ventas mismas tiendas planas, no negativas)."
   },
   "ADBE": {
-   "moat": "estrecho",
+   "moat": "ancho",
    "fuentes": "Costos de cambio y estándar de la industria creativa y documental",
    "evidencia": "ROIC 37-60% en 2021-2026",
    "amenaza": "Figma, Canva e IA generativa: las historias de erosión (B y C) suman 50%",
@@ -73,8 +73,9 @@
    "roic_industria": 0.2932,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0922,
-   "roic_terminal": 0.193,
-   "roic_terminal_antes": 0.293
+   "roic_terminal": 0.293,
+   "roic_terminal_antes": 0.293,
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): costos de cambio y estándar de la industria, ROIC en alza (38% → 59%) y ingresos creciendo ~10%: sin erosión visible hoy. Figma, Canva y la IA quedan en las historias de erosión (B y C, 50%)."
   },
   "NVO": {
    "moat": "estrecho",
@@ -86,32 +87,34 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.092,
    "roic_terminal": 0.131,
-   "roic_terminal_antes": 0.169
+   "roic_terminal_antes": 0.169,
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): patentes y escala (ancho por fuentes), pero con erosión visible: pérdida de participación frente a Lilly, recortes de precio y ROIC de 87% a 36% → estrecho."
   },
   "ZTS": {
-   "moat": "estrecho",
-   "fuentes": "Marcas, relación con veterinarios y cartera de patentes",
+   "moat": "ancho",
+   "fuentes": "Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal",
    "evidencia": "ROIC 26-29% en 2021-2026",
    "amenaza": "Erosión de franquicias y genéricos: historias B y D suman 45%",
    "roic_actual": 0.253,
    "roic_industria": 0.1695,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.13,
-   "roic_terminal_antes": 0.169
+   "roic_terminal": 0.169,
+   "roic_terminal_antes": 0.169,
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): dos o más fuentes estructurales, ROIC estable 26-29% y sin erosión visible. Los genéricos y la erosión de franquicias quedan en las historias B y D."
   },
   "CMG": {
-   "moat": "sin moat",
-   "fuentes": "Marca y economía por local (una sola fuente en un sector competitivo)",
+   "moat": "estrecho",
+   "fuentes": "Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior",
    "evidencia": "ROIC 15-22% en 2021-2026",
-   "amenaza": "Tráfico débil; la marca es la única barrera",
+   "amenaza": "Tráfico débil (historia B) y saturación (D)",
    "roic_actual": 0.531,
    "roic_industria": 0.1836,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": null,
-   "roic_terminal_antes": null,
-   "nota": "Ajuste del 30-sep-2026: La marca es la única barrera; la economía por local depende de ella y no es una ventaja de costo frente a otras cadenas. Restaurantes = consumo discrecional. Antes se clasificó como estrecho."
+   "roic_terminal": 0.137,
+   "roic_terminal_antes": 0.184,
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca cuenta como fuente estructural porque está probada (30 años y una crisis superada, ROIC 15-22%); una sola fuente → estrecho."
   },
   "NKE": {
    "moat": "estrecho",
@@ -123,7 +126,8 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.0905,
    "roic_terminal": 0.112,
-   "roic_terminal_antes": 0.133
+   "roic_terminal_antes": 0.133,
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca probada y escala (ancho por fuentes), pero con erosión visible: ventas cayendo, descuentos y ROIC de 47% a 18% → estrecho."
   },
   "LULU": {
    "moat": "sin moat",
@@ -136,7 +140,7 @@
    "costo_capital_terminal": 0.0898,
    "roic_terminal": null,
    "roic_terminal_antes": null,
-   "nota": "Ajuste del 30-sep-2026: Marca premium como única fuente, en moda (Alo y Vuori le quitan participación). Antes se clasificó como estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca (27 años) cuenta como fuente, pero con erosión visible (comparables de −10% a −12% en Norteamérica, rebajas, ROIC de 52% a 27%) baja un nivel → sin moat."
   },
   "AFYA": {
    "moat": "estrecho",
@@ -160,7 +164,8 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.0905,
    "roic_terminal": 0.134,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): red de dos lados (fuente fuerte), pero con erosión visible: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas → estrecho."
   },
   "DUOL": {
    "moat": "sin moat",
@@ -173,7 +178,7 @@
    "costo_capital_terminal": 0.0922,
    "roic_terminal": null,
    "roic_terminal_antes": null,
-   "nota": "Ajuste del 30-sep-2026: La marca y el hábito de uso no bastan: costos de cambio bajos (cualquier app o IA enseña idiomas). Antes se clasificó como estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca joven y producto fácil de sustituir (costos de cambio bajos): no cuenta como fuente estructural."
   },
   "ONON": {
    "moat": "sin moat",
@@ -186,7 +191,7 @@
    "costo_capital_terminal": 0.09,
    "roic_terminal": null,
    "roic_terminal_antes": null,
-   "nota": "Ajuste del 30-sep-2026: Marca joven en un sector de modas (4 años de retornos altos); sin fuente estructural. Antes se clasificó como estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca de 4 años en un sector de modas: no cuenta como fuente estructural."
   },
   "BSX": {
    "moat": "sin moat",
