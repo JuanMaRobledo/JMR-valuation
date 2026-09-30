@@ -26,6 +26,9 @@ from pathlib import Path
 
 SCEN = ("conservador", "base", "optimista")
 H3 = "<h3>DCF y múltiplos descontados al presente</h3>"
+START = "<!-- JMR-CURRENT-VALUATION-START -->"
+END = "<!-- JMR-CURRENT-VALUATION-END -->"
+LECTURA = "<p><strong>Lectura de la valoración vigente:</strong>"
 
 
 def es_money(v: float) -> str:
@@ -61,6 +64,79 @@ def new_block(lv: dict) -> str:
             f"de {ke}: VP = (precio FY+n + dividendos) ÷ (1 + Ke)^n. Cada método se consolida con {crit}; los múltiplos "
             f"consolidados son su promedio con los pesos de la categoría, y el valor intrínseco ponderado es DCF × peso DCF "
             f"+ múltiplos × peso de los múltiplos. Los objetivos FY+3 no se suman de nuevo a esa cifra.</p>")
+
+
+def current_block(ticker: str, lv: dict, rec: dict) -> str:
+    """Bloque «Valoración vigente» con criterio Damodaran: el DCF es el valor intrínseco y va primero;
+    múltiplos y ponderado van aparte como lecturas secundarias."""
+    dm = lv["descuentoMultiples"]
+    money = lambda v: es_money(v) if isinstance(v, (int, float)) else "—"  # noqa: E731
+    pct = lambda w: f"{round(w * 100):.0f}%" if isinstance(w, (int, float)) else "—"  # noqa: E731
+
+    def tr(label, vals, cls="", w=None):
+        wcell = f"<td>{pct(w)}</td>" if w is not None or cls == "w" else ""
+        return (f'<tr class="{cls}"><th scope="row">{label}</th>{wcell}'
+                + "".join(f"<td>{money(v)}</td>" for v in vals) + "</tr>")
+    head = lambda cols: "<thead><tr>" + "".join(f"<th>{c}</th>" for c in cols) + "</tr></thead>"  # noqa: E731
+    dcf_fy3 = next(({k: m.get(k) for k in SCEN} for m in lv.get("metodos") or [] if "DCF" in (m.get("nombre") or "")), None)
+    mos = rec.get("mos")
+    dcf = dm["dcfHoy"]
+    rows = tr("Valor intrínseco hoy · DCF", [dcf[k] for k in SCEN], "total")
+    if dcf_fy3:
+        rows += tr("DCF llevado a FY+3 (× (1 + Ke)³)", [dcf_fy3[k] for k in SCEN])
+    if isinstance(mos, (int, float)):
+        rows += tr(f"Precio con MOS sobre el DCF ({round(mos * 100)}%)", [dcf[k] * (1 - mos) for k in SCEN])
+    t1 = f'<div style="overflow-x:auto"><table>{head(["", "Conservador", "Base", "Optimista"])}<tbody>{rows}</tbody></table></div>'
+    fy3 = {m["nombre"]: m for m in lv.get("metodos") or []}
+    rows2 = ""
+    for m in dm["metodos"]:
+        f = fy3.get(m["nombre"], {})
+        rows2 += (f'<tr><th scope="row">{m["nombre"]}</th><td>{pct(m.get("peso"))}</td>'
+                  + "".join(f"<td>{money(m[k]['consolidado'])}</td>" for k in SCEN)
+                  + "".join(f"<td>{money(f.get(k))}</td>" for k in SCEN) + "</tr>")
+    op, vp = lv.get("objetivoPonderado") or {}, lv.get("valorPresentePonderado") or {}
+    rows2 += (f'<tr><th scope="row">Múltiplos consolidados</th><td>{pct(dm.get("pesoMultiplos"))}</td>'
+              + "".join(f"<td>{money(dm['multiplesHoy'][k])}</td>" for k in SCEN) + "<td>—</td>" * 3 + "</tr>")
+    rows2 += (f'<tr class="total"><th scope="row">Ponderado DCF + múltiplos</th><td>100%</td>'
+              + "".join(f"<td>{money(vp.get(k))}</td>" for k in SCEN) + "".join(f"<td>{money(op.get(k))}</td>" for k in SCEN) + "</tr>")
+    t2 = ('<div style="overflow-x:auto"><table><thead><tr><th rowspan="2">Método</th><th rowspan="2">Peso</th>'
+          '<th colspan="3">Hoy (valor presente)</th><th colspan="3">Al cierre FY+3</th></tr><tr><th>Cons.</th><th>Base</th>'
+          f'<th>Opt.</th><th>Cons.</th><th>Base</th><th>Opt.</th></tr></thead><tbody>{rows2}</tbody></table></div>')
+    ke = f"{dm['costoPatrimonio'] * 100:.2f}%".replace(".", ",")
+    saved = (rec.get("savedAt") or lv.get("fecha") or "")[:10]
+    link = f"https://github.com/JuanMaRobledo/Modelo-JMR-datos/blob/main/{lv.get('sourcePath', '')}"
+    return (f'{START}\n<section class="jmr-valuation-current" style="margin:1.5rem 0;padding:1.25rem;border:1px solid #dfd2b6;'
+            f'border-radius:14px;background:#fffaf0;color:#24332d">\n<h2>Valoración vigente · {ticker}</h2>\n'
+            f'<p>Resultados de la valoración guardada el {saved}. Los importes son por acción. <a href="{link}">Consultar datos y '
+            'supuestos</a>.</p>\n<h3>Valor intrínseco: DCF</h3>\n' + t1 +
+            '\n<p>Con criterio Damodaran, el valor intrínseco es el DCF: lo que vale la acción según sus flujos de caja, '
+            'crecimiento, reinversión y riesgo. El DCF ya está a valor presente; llevado a FY+3 se capitaliza con el costo del '
+            f'patrimonio ({ke}).</p>\n<h3>Lecturas secundarias: múltiplos y ponderado</h3>\n' + t2 +
+            '\n<p>Los múltiplos son precio relativo: lo que pagaría el mercado por empresas parecidas. Cada uno da un precio al '
+            'cierre de FY+1, FY+2 y FY+3, más los dividendos acumulados, traído a hoy con el costo del patrimonio; se consolidan '
+            'con los pesos del tipo de empresa. El ponderado mezcla el DCF con los múltiplos y es opcional: sirve como contraste, '
+            'no reemplaza al DCF.</p>\n<p><strong>Contexto del informe:</strong> el análisis fundamental que sigue conserva sus '
+            'fuentes, fecha y cálculos originales. Las tablas anteriores contienen las cifras vigentes; las referencias fechadas a '
+            'versiones anteriores del modelo en el estudio de negocio son antecedentes históricos.</p>\n</section>\n' + END)
+
+
+def lectura(lv: dict) -> str:
+    dm = lv["descuentoMultiples"]
+    d, mh, vp = dm["dcfHoy"], dm["multiplesHoy"], lv.get("valorPresentePonderado") or {}
+    return (f"{LECTURA} el valor intrínseco Base (DCF) hoy es {es_money(d['base'])}, con un rango de {es_money(d['conservador'])} "
+            f"(Conservador) a {es_money(d['optimista'])} (Optimista). Los múltiplos ({es_money(mh['base'])} hoy) y el ponderado "
+            f"({es_money(vp.get('base'))}) son lecturas secundarias. La comparación con el precio va al final de la sección "
+            "«Valor con criterio Damodaran».</p>")
+
+
+def replace_block(h: str, ticker: str, lv: dict, rec: dict) -> str:
+    s, e = h.index(START), h.index(END) + len(END)
+    h = h[:s] + current_block(ticker, lv, rec) + h[e:]
+    i = h.find(LECTURA)
+    if i != -1:
+        j = h.index("</p>", i) + len("</p>")
+        h = h[:i] + lectura(lv) + h[j:]
+    return h
 
 
 def mapping(old_rec: dict, new_lv: dict, old_rows: dict[str, list[str]]) -> dict[str, str]:
@@ -160,8 +236,8 @@ def main() -> int:
         d = json.loads(f.read_text())
         lv = d.get("linkedValuation") or {}
         dm = lv.get("descuentoMultiples") or {}
-        if dm.get("version") != 2 or H3 not in (d.get("html") or ""):
-            print(f"{f.name}: se omite (sin valoración v2 vinculada o sin la tabla)")
+        if dm.get("version") != 2 or START not in (d.get("html") or ""):
+            print(f"{f.name}: se omite (sin valoración v2 vinculada o sin el bloque de valoración vigente)")
             continue
         if args.tickers and d.get("ticker") not in args.tickers:
             continue
@@ -175,16 +251,19 @@ def main() -> int:
             print(f"{f.name}: la revisión {args.old_rev} ya tiene v2; se omite")
             continue
         h = d["html"]
-        s = h.index(H3)
-        e = h.index("</p>", h.index("</table>", s)) + len("</p>")
-        old_rows = _old_rows(h[s:e])
+        old_rows = {}
+        if H3 in h:
+            s = h.index(H3)
+            e = h.index("</p>", h.index("</table>", s)) + len("</p>")
+            old_rows = _old_rows(h[s:e])
         if (old_rec.get("descuentoMultiples") or {}).get("version") == 2:
             old_rows = {m["nombre"]: ["", *(es_money(m[k]["consolidado"]) for k in SCEN)] for m in old_rec["descuentoMultiples"]["metodos"]}
         table = mapping(old_rec, lv, old_rows)
         if args.incluir_fy3:
             table.update(fy3_mapping(old_rec, new_rec))
-        h = h[:s] + new_block(lv) + h[e:]
+        # el texto fuera del bloque se actualiza por sustitución; el bloque se rehace entero (DCF primero)
         h, n1 = substitute(h, table)
+        h = replace_block(h, d.get("ticker") or "", lv, new_rec)
         if args.incluir_fy3:
             h, n3 = derived_percentages(h, old_rec, new_rec)
             n1 += n3
