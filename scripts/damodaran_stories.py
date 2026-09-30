@@ -4,7 +4,9 @@ sección 12; prompt de valoración v4, paso 5B).
 A partir de una ficha escrita por el analista (reference/damodaran/<T>.json: historia, filtro
 posible/plausible/probable, piezas del valor, 3-4 historias por segmento con probabilidades,
 pre-mortem, indicadores y fuentes) calcula con el motor del Modelo JMR (docs/jmr_engine.js),
-calibrado para que el escenario Base reproduzca exactamente el DCF de la hoja:
+que reproduce la hoja: cada historia es un DCF completo con los insumos de la hoja (insumosDesdeHoja)
+y su propio crecimiento año a año, margen, reinversión y ROIC terminal; el valor esperado es el promedio
+ponderado por probabilidad. Las tablas de sensibilidad y DCF inverso se calibran contra el DCF de la hoja:
 
 - el valor por acción de cada historia con la beta de la hoja y con la beta propuesta
   (bottom-up del sector de Damodaran, reapalancada, más el ajuste que justifique la ficha);
@@ -65,16 +67,23 @@ def usd(v):
 
 
 # ---------------------------------------------------------------- motor
-def run(cases):
-    if len(cases) > 40:
-        out = []
-        for k in range(0, len(cases), 40):
-            out += run(cases[k:k + 40])
-        return out
+def run_exact(grid, cases):
+    """Valor por acción con el motor exacto (reproduce 'Valuation output'): insumos leídos de la hoja con
+    insumosDesdeHoja y, por caso, cambios opcionales: anios (crecimiento de cada año 1-5), g (el mismo para
+    los años 1-5), m (margen objetivo), wacc, s2c (años 1-5) y roic (ROIC después del año 10; 0 = costo de capital)."""
     js = ("const fs=require('fs'),vm=require('vm');const c={};vm.createContext(c);"
-          f"vm.runInContext(fs.readFileSync({json.dumps(str(ENGINE))},'utf8'),c);c.cases={json.dumps(cases)};"
-          "console.log(JSON.stringify(vm.runInContext('cases.map(function(k){return runDCF(k.inp,k.g,k.m);})',c)));")
-    return json.loads(subprocess.check_output(["node", "-e", js]))
+          f"vm.runInContext(fs.readFileSync({json.dumps(str(ENGINE))},'utf8'),c);"
+          "const G=JSON.parse(fs.readFileSync(0,'utf8'));"
+          "const col=a=>{let n=0;for(const ch of a)n=n*26+ch.charCodeAt(0)-64;return n-1;};"
+          "const celda=(h,a)=>{const g=G.grid[h];if(!g)return null;const m=a.match(/^([A-Z]+)(\\d+)$/);const r=g[+m[2]-1];"
+          "if(!r)return null;const v=r[col(m[1])];return (v===undefined||v==='')?null:v;};"
+          "const base=c.insumosDesdeHoja(celda);"
+          "const out=G.cases.map(k=>{const i=JSON.parse(JSON.stringify(base));"
+          "if(k.anios)i.crecimientoAnios=k.anios;else if(k.g!=null)i.crecimientoAnios=[k.g,k.g,k.g,k.g,k.g];"
+          "if(k.wacc!=null)i.wacc=k.wacc;if(k.s2c!=null)i.salesToCapital=k.s2c;if(k.roic!=null)i.roicTerminal=k.roic;"
+          "return c.runDCFDetalle(i,i.growthBase,k.m!=null?k.m:i.marginBase,i.growthY1Base,i.marginY1Base).valuePerShare;});"
+          "console.log(JSON.stringify(out));")
+    return json.loads(subprocess.check_output(["node", "-e", js], input=json.dumps({"grid": grid, "cases": cases}), text=True))
 
 
 # ---------------------------------------------------------------- tasas base
@@ -101,8 +110,9 @@ def frac_at_least(br: dict, g_nominal: float) -> float:
 # ---------------------------------------------------------------- hoja
 def load_sheet(sid: str):
     sh = get_gspread_client().open_by_key(sid)
-    rng = ["'Input sheet'!A1:D70", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
-           "'Resumen de Valoración'!A1:U20", "'Cost of capital worksheet'!A1:C70", "'Descuento de múltiplos'!A1:E40"]
+    rng = ["'Input sheet'!A1:D75", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
+           "'Resumen de Valoración'!A1:U20", "'Cost of capital worksheet'!A1:C70", "'Descuento de múltiplos'!A1:E40",
+           "EVEBITDA!A1:J30", "EVFCFF!A1:J30", "PE!A1:J30", "PFCFE!A1:J30", "POCF!A1:J30"]
     vr = sh.values_batch_get(rng, params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
     grid = {r.split("!")[0].strip("'"): v.get("values", []) for r, v in zip(rng, vr)}
 
@@ -134,7 +144,9 @@ def compute(tk: str) -> dict:
     s2c = cell("Input sheet", "B32")
     wacc0 = cell("Input sheet", "B36")
     inp["salesToCapital"] = s2c
-    ref = run([{"inp": inp, "g": g_ref, "m": m_base}])[0]
+    # Referencia de las tablas de sensibilidad y DCF inverso (crecimiento igual en los años 1-5): se calibran contra
+    # el DCF de la hoja. Las historias y la tabla de betas no se calibran: el motor reproduce la hoja exactamente.
+    ref = run_exact(grid, [{"g": g_ref, "m": m_base}])[0]
 
     # riesgo
     rf = cell("Input sheet", "B35")
@@ -157,15 +169,19 @@ def compute(tk: str) -> dict:
         # desplaza el WACC de la hoja por el cambio en el costo del patrimonio
         return wacc0 + e_w * (beta - beta_hoja) * erp
 
-    def value(g, m, beta=None, s2c_=None, roic=None):
-        i = dict(inp)
+    def value(g, m, beta=None, s2c_=None, roic=None, anios=None):
+        k = {"m": m}
+        if anios is not None:
+            k["anios"] = anios
+        elif g is not None:
+            k["g"] = g
         if roic is not None:  # ROIC después del año 10 propio de la historia (0 = igual al costo de capital)
-            i["roicTerminal"] = roic
+            k["roic"] = roic
         if beta is not None:
-            i["wacc"] = wacc_for(beta)
+            k["wacc"] = wacc_for(beta)
         if s2c_ is not None:
-            i["salesToCapital"] = s2c_
-        return {"inp": i, "g": g, "m": m}
+            k["s2c"] = s2c_
+        return k
 
     br = base_rates(cell("Input sheet", "B12"))
 
@@ -177,12 +193,15 @@ def compute(tk: str) -> dict:
     cases = []
     for h in spec["historias"]:
         revs = {k: v * scale for k, v in segs.items()}
+        anios, prev = [], rev0
         for y in range(5):
             for k in revs:
                 revs[k] *= 1 + h["crec"].get(k, [0] * 5)[y]
+            anios.append(sum(revs.values()) / prev - 1)
+            prev = sum(revs.values())
         rev5 = sum(revs.values())
         cagr = (rev5 / rev0) ** (1 / 5) - 1
-        s2 = h.get("s2c", s2c)
+        s2 = h.get("s2c")  # sin s2c propio, la historia usa los de la hoja (años 1-5 y 6-10)
         # Una historia en la que la ventaja se erosiona no conserva retornos excedentes: "costo_capital" lleva el ROIC
         # después del año 10 al costo de capital aunque la hoja (escenario Base) use un ROIC terminal mayor.
         rt = h.get("roic_terminal")
@@ -190,8 +209,10 @@ def compute(tk: str) -> dict:
         historias.append({**h, "cagr": cagr, "rev5": rev5, "mix5": {k: v / rev5 for k, v in revs.items()},
                           "tasa_base": frac_at_least(br, cagr),
                           "roic_terminal_usado": roic if roic is not None else inp.get("roicTerminal", 0)})
-        cases += [value(cagr, h["margen"], beta_hoja, s2, roic), value(cagr, h["margen"], beta_prop, s2, roic)]
-    vals = [dcf * v / ref for v in run(cases)]
+        # Cada historia es un DCF completo con la estructura de la hoja (crecimiento año a año, convergencia del
+        # margen, impuestos, sales-to-capital por tramo, deuda y caja): el valor esperado es su promedio ponderado.
+        cases += [value(None, h["margen"], None, s2, roic, anios), value(None, h["margen"], beta_prop, s2, roic, anios)]
+    vals = run_exact(grid, cases)
     for i, h in enumerate(historias):
         h["valor_beta_hoja"], h["valor_beta_prop"] = vals[2 * i], vals[2 * i + 1]
     ev_h = sum(h["prob"] * h["valor_beta_hoja"] for h in historias)
@@ -203,14 +224,14 @@ def compute(tk: str) -> dict:
         beta_rows.append((f"Bottom-up del sector ({industria}, reapalancada)", beta_bu))
     if spec.get("riesgo", {}).get("beta_propuesta"):
         beta_rows.append(("Propuesta (sector ajustado por riesgo propio)", beta_prop))
-    bv = run([value(g_ref, m_base, b) for _, b in beta_rows])
-    betas_tab = [{"enfoque": n, "beta": b, "ke": rf + b * erp, "wacc": wacc_for(b), "dcf_base": dcf * v / ref}
+    bv = run_exact(grid, [{"wacc": wacc_for(b)} for _, b in beta_rows])
+    betas_tab = [{"enfoque": n, "beta": b, "ke": rf + b * erp, "wacc": wacc_for(b), "dcf_base": v}
                  for (n, b), v in zip(beta_rows, bv)]
 
     # sensibilidad
     gs = [g_ref + d for d in (-0.04, -0.02, 0, 0.02, 0.04)]
     ms = [m_base + d for d in (-0.04, -0.02, 0, 0.02, 0.04)]
-    sv = run([value(g, m) for g in gs for m in ms])
+    sv = run_exact(grid, [value(g, m) for g in gs for m in ms])
     sens = {"g": gs, "m": ms, "v": [[dcf * sv[i * 5 + j] / ref for j in range(5)] for i in range(5)]}
 
     # DCF inverso
@@ -219,7 +240,7 @@ def compute(tk: str) -> dict:
     inverso = []
     for b in (beta_hoja, beta_prop):
         for m in inv_m:
-            vv = [dcf * x / ref for x in run([value(g, m, b) for g in grid_g])]
+            vv = [dcf * x / ref for x in run_exact(grid, [value(g, m, b) for g in grid_g])]
             gi = next((grid_g[k] for k in range(len(grid_g)) if vv[k] >= price), None) if price else None
             inverso.append({"beta": b, "margen": m, "g": gi, "tasa_base": frac_at_least(br, gi) if gi is not None else None})
 
@@ -273,10 +294,12 @@ def render(r: dict) -> tuple[str, str]:
         ht.append("<ol>" + "".join(f"<li>{inline_html(x)}</li>" for x in items) + "</ol>")
 
     p("Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, "
-      "piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del "
-      f"Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja ({usd(r['dcf_base'])} por acción); "
-      "la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras "
-      "secciones.")
+      "piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el "
+      f"motor del Modelo JMR, que reproduce la hoja (DCF Base de {usd(r['dcf_base'])} por acción): solo cambian el "
+      "crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa "
+      "de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las "
+      "historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan "
+      "en otras secciones.")
 
     h3("La historia en un párrafo")
     p(sp["historia"])

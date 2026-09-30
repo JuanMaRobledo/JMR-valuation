@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Uber Technologies, Inc. (UBER) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$88,85 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$88,85 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -63,11 +63,11 @@ Para empresas de más de US$50.000 millones, crecer 11% anual cinco años (histo
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 0,80) | Valor/acción (beta 0,76) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22% | 2,5 | US$91,18 | US$92,05 |
-| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16% | 2,5 | US$54,10 | US$54,59 |
-| **C · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26% | 2,5 | US$124,88 | US$126,09 |
-| **D · Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10% | 2,5 | US$28,97 | US$29,21 |
-| **Valor esperado** | 100% |  |  |  |  | **US$82,43** | **US$83,21** |
+| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22% | 2,5 | US$89,63 | US$90,48 |
+| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16% | 2,5 | US$53,68 | US$54,16 |
+| **C · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26% | 2,5 | US$122,08 | US$123,26 |
+| **D · Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10% | 2,5 | US$29,76 | US$29,99 |
+| **Valor esperado** | 100% |  |  |  |  | **US$81,15** | **US$81,91** |
 
 A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. B (25%) es la presión de los robotaxis y la regulación sobre Movilidad. C (20%) es Uber como la red preferida de los vehículos autónomos. D (10%) es la desintermediación por Waymo y Tesla. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 0,80; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 17,0% | 19,0% | 21,0% | 23,0% | 25,0% |
 |---|---:|---:|---:|---:|---:|
-| 7,4% | 59,30 | 66,25 | 73,20 | 80,16 | 87,11 |
-| 9,4% | 64,98 | 72,81 | 80,64 | 88,46 | 96,29 |
-| 11,4% | 71,26 | 80,06 | 88,85 | 97,65 | 106,45 |
-| 13,4% | 78,19 | 88,06 | 97,93 | 107,81 | 117,68 |
-| 15,4% | 85,82 | 96,89 | 107,95 | 119,02 | 130,09 |
+| 7,4% | 59,42 | 66,24 | 73,07 | 79,90 | 86,73 |
+| 9,4% | 65,19 | 72,88 | 80,56 | 88,25 | 95,93 |
+| 11,4% | 71,58 | 80,22 | 88,85 | 97,49 | 106,13 |
+| 13,4% | 78,64 | 88,33 | 98,03 | 107,72 | 117,42 |
+| 15,4% | 86,43 | 97,29 | 108,16 | 119,03 | 129,89 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 16% | Margen 22% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 0,80 | 12,0% (12% de las empresas) | 5,0% (44% de las empresas) | 1,8% (64% de las empresas) |
-| Beta 0,76 | 11,8% (13% de las empresas) | 4,8% (46% de las empresas) | 1,6% (65% de las empresas) |
+| Beta 0,80 | 11,8% (13% de las empresas) | 5,2% (43% de las empresas) | 2,0% (63% de las empresas) |
+| Beta 0,76 | 11,6% (13% de las empresas) | 5,0% (44% de las empresas) | 1,8% (64% de las empresas) |
 
-Frente al valor esperado de las historias (US$82,43 con la beta de la hoja; US$83,21 con la propuesta), el precio está por debajo en 17% y por debajo en 18%, respectivamente. El precio está ~18% por debajo del valor esperado. El DCF inverso pide 5% anual con margen de 22% (lo logró ~44-46% de las empresas de este tamaño) o 2% con margen de 26%, y 11-12% solo si el margen se queda en 16%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de los robotaxis y el cambio a un modelo más intensivo en capital. Si crees que Uber será la red de los autónomos, el precio parece bajo.
+Frente al valor esperado de las historias (US$81,15 con la beta de la hoja; US$81,91 con la propuesta), el precio está por debajo en 16% y por debajo en 17%, respectivamente. El precio está ~16% por debajo del valor esperado. El DCF inverso pide 5% anual con margen de 22% (lo logró ~44-46% de las empresas de este tamaño) o 2% con margen de 26%, y 11-12% solo si el margen se queda en 16%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de los robotaxis y el cambio a un modelo más intensivo en capital. Si crees que Uber será la red de los autónomos, el precio parece bajo.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$82,43 con la beta de la hoja; US$8
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Red de movilidad y entrega ya rentable que enfrenta a los robotaxis y se vuelve intensiva en capital |  |
 | Probabilidades | A 45% / B 25% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$82,43 / US$83,21 |  |
-| Rango (historia más débil a más fuerte) | US$28,97 a US$126,09 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$81,15 / US$81,91 |  |
+| Rango (historia más débil a más fuerte) | US$29,76 a US$123,26 |  |
 | Confianza | Media: la red y los márgenes son sólidos; los autónomos y las compras son inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de viajes frente a la expansión de Waymo y Tesla; precio y cierre de Delivery Hero |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

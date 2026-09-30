@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Intuit Inc. (INTU) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$496,41 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$496,44 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -55,19 +55,19 @@ Para empresas de US$12.000-25.000 millones, crecer 9,8% anual cinco años (histo
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,20 | 10,3% | 9,8% | US$496,41 |
-| Bottom-up del sector (Software (System & Application), reapalancada) | 1,34 | 11,0% | 10,4% | US$480,07 |
+| Hoja (regresión o la cargada en el libro) | 1,20 | 10,3% | 9,8% | US$496,44 |
+| Bottom-up del sector (Software (System & Application), reapalancada) | 1,34 | 11,0% | 10,4% | US$480,22 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,20) | Valor/acción (beta 1,34) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · La IA es palanca de monetización** | 45% | Global Business Solutions: 14%, 13%, 12%, 11%, 10%; Consumer (TurboTax y ProTax): 7%, 6%, 6%, 5%, 5%; Credit Karma: 10%, 8%, 7%, 7%, 6% | 9,8% | 32% | 2,5 | 22,2% | US$519,01 | US$501,87 |
-| **B · La IA erosiona impuestos y contabilidad básica** | 25% | Global Business Solutions: 10%, 8%, 7%, 6%, 6%; Consumer (TurboTax y ProTax): 2%, 0%, -2%, -2%, -2%; Credit Karma: 5%, 4%, 4%, 3%, 3% | 4,9% | 29% | 2,5 | = costo de capital | US$258,74 | US$250,84 |
-| **C · Plataforma financiera de la pyme** | 20% | Global Business Solutions: 17%, 16%, 15%, 14%, 12%; Consumer (TurboTax y ProTax): 8%, 8%, 7%, 7%, 6%; Credit Karma: 12%, 10%, 10%, 8%, 8% | 12,2% | 35% | 2,5 | 22,2% | US$645,81 | US$624,23 |
-| **D · Recesión y declaración gratuita del Estado** | 10% | Global Business Solutions: 6%, 5%, 5%, 5%, 5%; Consumer (TurboTax y ProTax): -3%, -5%, -3%, -2%, 0%; Credit Karma: -10%, 0%, 3%, 3%, 3% | 2,5% | 26% | 2,5 | = costo de capital | US$208,68 | US$202,49 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$448,27** | **US$433,65** |
+| **A · La IA es palanca de monetización** | 45% | Global Business Solutions: 14%, 13%, 12%, 11%, 10%; Consumer (TurboTax y ProTax): 7%, 6%, 6%, 5%, 5%; Credit Karma: 10%, 8%, 7%, 7%, 6% | 9,8% | 32% | 2,5 | 22,2% | US$509,93 | US$493,27 |
+| **B · La IA erosiona impuestos y contabilidad básica** | 25% | Global Business Solutions: 10%, 8%, 7%, 6%, 6%; Consumer (TurboTax y ProTax): 2%, 0%, -2%, -2%, -2%; Credit Karma: 5%, 4%, 4%, 3%, 3% | 4,9% | 29% | 2,5 | = costo de capital | US$259,80 | US$252,03 |
+| **C · Plataforma financiera de la pyme** | 20% | Global Business Solutions: 17%, 16%, 15%, 14%, 12%; Consumer (TurboTax y ProTax): 8%, 8%, 7%, 7%, 6%; Credit Karma: 12%, 10%, 10%, 8%, 8% | 12,2% | 35% | 2,5 | 22,2% | US$628,05 | US$607,26 |
+| **D · Recesión y declaración gratuita del Estado** | 10% | Global Business Solutions: 6%, 5%, 5%, 5%, 5%; Consumer (TurboTax y ProTax): -3%, -5%, -3%, -2%, 0%; Credit Karma: -10%, 0%, 3%, 3%, 3% | 2,5% | 26% | 2,5 | = costo de capital | US$212,68 | US$206,43 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$441,30** | **US$427,07** |
 
 A (45%) es la continuación de FY24-FY26: la pyme crece a doble dígito y el consumidor a un dígito medio. B (25%) es la sustitución parcial por IA en impuestos y contabilidad simples. C (20%) es Intuit como plataforma financiera completa de la pyme (pagos, nómina, capital, mid-market). D (10%) combina recesión (Credit Karma) y expansión de la declaración gratuita del Estado. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,20; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 28,0% | 30,0% | 32,0% | 34,0% | 36,0% |
 |---|---:|---:|---:|---:|---:|
-| 5,0% | 350,54 | 374,30 | 398,07 | 421,83 | 445,59 |
-| 7,0% | 390,85 | 417,73 | 444,62 | 471,51 | 498,40 |
-| 9,0% | 435,66 | 466,03 | 496,41 | 526,79 | 557,16 |
-| 11,0% | 485,42 | 519,68 | 553,94 | 588,20 | 622,46 |
-| 13,0% | 540,63 | 579,20 | 617,78 | 656,36 | 694,94 |
+| 5,0% | 352,00 | 375,59 | 399,18 | 422,77 | 446,35 |
+| 7,0% | 391,85 | 418,55 | 445,24 | 471,93 | 498,63 |
+| 9,0% | 436,13 | 466,29 | 496,44 | 526,60 | 556,75 |
+| 11,0% | 485,26 | 519,27 | 553,29 | 587,30 | 621,31 |
+| 13,0% | 539,72 | 578,02 | 616,32 | 654,62 | 692,92 |
 
 
 ### Pre-mortem
@@ -115,9 +115,9 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 |  | Margen 28% | Margen 32% | Margen 35% |
 |---|---:|---:|---:|
 | Beta 1,20 | 0,2% (78% de las empresas) | -2,0% (87% de las empresas) | -3,4% (90% de las empresas) |
-| Beta 1,34 | 0,8% (76% de las empresas) | -1,4% (85% de las empresas) | -2,8% (89% de las empresas) |
+| Beta 1,34 | 0,8% (76% de las empresas) | -1,4% (85% de las empresas) | -3,0% (90% de las empresas) |
 
-Frente al valor esperado de las historias (US$448,27 con la beta de la hoja; US$433,65 con la propuesta), el precio está por debajo en 40% y por debajo en 38%, respectivamente. El precio (US$269,40) queda cerca de la historia B (US$258,74), en la que la IA erosiona impuestos y contabilidad simples y la ventaja se pierde, y por debajo del valor esperado (US$448,27). El DCF inverso pide ingresos casi planos (entre −3% y +1% anual en los años 1-5 según el margen), muy por debajo del 13-16% de los últimos años. ¿Qué sabe el mercado que yo no? Que la IA puede cambiar muy rápido el extremo simple de los impuestos y de la contabilidad. Hoy el precio supone que B ya es la historia central; los resultados de FY26 (+14%, QuickBooks +23%) todavía apuntan a A.
+Frente al valor esperado de las historias (US$441,30 con la beta de la hoja; US$427,07 con la propuesta), el precio está por debajo en 39% y por debajo en 37%, respectivamente. El precio (US$269,40) queda cerca de la historia B (US$259,80), en la que la IA erosiona impuestos y contabilidad simples y la ventaja se pierde, y por debajo del valor esperado (US$441,29). El DCF inverso pide ingresos casi planos (entre −3% y +1% anual en los años 1-5 según el margen), muy por debajo del 13-16% de los últimos años. ¿Qué sabe el mercado que yo no? Que la IA puede cambiar muy rápido el extremo simple de los impuestos y de la contabilidad. Hoy el precio supone que B ya es la historia central; los resultados de FY26 (+14%, QuickBooks +23%) todavía apuntan a A.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$448,27 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Sistema financiero de la pyme y del contribuyente que usa la IA para cobrar más |  |
 | Probabilidades | A 45% / B 25% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$448,27 / US$433,65 |  |
-| Rango (historia más débil a más fuerte) | US$202,49 a US$645,81 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$441,30 / US$427,07 |  |
+| Rango (historia más débil a más fuerte) | US$206,43 a US$628,05 |  |
 | Confianza | Media-alta en GBS; media en Consumer por IA y regulación |  |
 | Qué cambiaría la opinión | Unidades de TurboTax en la temporada 2027 y crecimiento del Online Ecosystem |  |
 | Revisión | Resultados del 1T FY27 (nov-2026) y temporada de impuestos 2027 |  |

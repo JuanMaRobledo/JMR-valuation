@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # NVIDIA Corporation (NVDA) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$259,29 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$259,29 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -56,18 +56,18 @@ Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (histo
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,51 | 11,7% | 11,7% | US$259,29 |
-| Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 11,7% | 11,7% | US$259,57 |
+| Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 11,7% | 11,7% | US$259,56 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,51) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Ciclo de IA largo que desacelera con la escala** | 40% | Data Center: 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz: 10%, 8%, 7%, 6%, 6% | 17,1% | 58% | 3,0 | 27,2% | US$207,92 |
-| **B · Ciclo de semiconductores: el capex se corrige** | 30% | Data Center: 35%, -10%, 0%, 8%, 8%; Gaming, visualización y automotriz: 5%, 5%, 5%, 5%, 5% | 7,0% | 50% | 3,0 | 27,2% | US$105,33 |
-| **C · La IA es infraestructura permanente** | 20% | Data Center: 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz: 12%, 12%, 10%, 10%, 8% | 25,3% | 60% | 3,0 | 27,2% | US$331,78 |
-| **D · Chips propios de los clientes y corrección fuerte** | 10% | Data Center: 25%, -25%, -10%, 5%, 5%; Gaming, visualización y automotriz: 0%, 0%, 0%, 0%, 0% | -1,3% | 40% | 3,0 | = costo de capital | US$41,88 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$185,31** |
+| **A · Ciclo de IA largo que desacelera con la escala** | 40% | Data Center: 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz: 10%, 8%, 7%, 6%, 6% | 17,1% | 58% | 3,0 | 27,2% | US$204,91 |
+| **B · Ciclo de semiconductores: el capex se corrige** | 30% | Data Center: 35%, -10%, 0%, 8%, 8%; Gaming, visualización y automotriz: 5%, 5%, 5%, 5%, 5% | 7,0% | 50% | 3,0 | 27,2% | US$121,20 |
+| **C · La IA es infraestructura permanente** | 20% | Data Center: 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz: 12%, 12%, 10%, 10%, 8% | 25,3% | 60% | 3,0 | 27,2% | US$313,47 |
+| **D · Chips propios de los clientes y corrección fuerte** | 10% | Data Center: 25%, -25%, -10%, 5%, 5%; Gaming, visualización y automotriz: 0%, 0%, 0%, 0%, 0% | -1,3% | 40% | 3,0 | = costo de capital | US$50,61 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$186,08** |
 
 A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). D (10%) combina corrección fuerte y pérdida de participación frente a chips propios. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,51; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 54,0% | 56,0% | 58,0% | 60,0% | 62,0% |
 |---|---:|---:|---:|---:|---:|
-| 17,2% | 195,76 | 202,65 | 209,55 | 216,44 | 223,33 |
-| 19,2% | 217,74 | 225,47 | 233,19 | 240,92 | 248,64 |
-| 21,2% | 242,00 | 250,65 | 259,29 | 267,94 | 276,58 |
-| 23,2% | 268,75 | 278,41 | 288,07 | 297,74 | 307,40 |
-| 25,2% | 298,21 | 308,99 | 319,77 | 330,55 | 341,33 |
+| 17,2% | 195,55 | 202,49 | 209,43 | 216,37 | 223,32 |
+| 19,2% | 217,57 | 225,35 | 233,13 | 240,91 | 248,69 |
+| 21,2% | 241,88 | 250,59 | 259,29 | 268,00 | 276,71 |
+| 23,2% | 268,68 | 278,41 | 288,14 | 297,87 | 307,60 |
+| 25,2% | 298,20 | 309,05 | 319,91 | 330,77 | 341,62 |
 
 
 ### Pre-mortem
@@ -117,7 +117,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,51 | 21,6% (1% de las empresas) | 19,0% (3% de las empresas) | 17,8% (3% de las empresas) |
 | Beta 1,51 | 21,6% (1% de las empresas) | 19,0% (3% de las empresas) | 17,8% (3% de las empresas) |
 
-Frente al valor esperado de las historias (US$185,31), el precio está por encima en 24%. Con el ROIC terminal revisado (30-sep-2026), el precio (US$228,86) queda 24% por encima del valor esperado de las historias (US$185,31) pero por debajo del DCF Base (US$259,30). El DCF inverso pide 18-22% anual en los años 1-5, algo que logró ~1-3% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por algo entre las historias A y C. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.
+Frente al valor esperado de las historias (US$186,08), el precio está por encima en 23%. Con el ROIC terminal revisado (30-sep-2026), el precio (US$228,86) queda 23% por encima del valor esperado de las historias (US$186,08) pero por debajo del DCF Base (US$259,29). El DCF inverso pide 18-22% anual en los años 1-5, algo que logró ~1-3% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por algo entre las historias A y C. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$185,31), el precio está por encim
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Proveedor dominante de la infraestructura de IA en la cima de un ciclo de inversión |  |
 | Probabilidades | A 40% / B 30% / C 20% / D 10% |  |
-| Valor esperado | US$185,31 |  |
-| Rango (historia más débil a más fuerte) | US$41,88 a US$332,13 |  |
+| Valor esperado | US$186,08 |  |
+| Rango (historia más débil a más fuerte) | US$50,61 a US$313,79 |  |
 | Confianza | Baja: el valor depende de la duración del ciclo, que nadie puede prever |  |
 | Qué cambiaría la opinión | Capex de los hiperescaladores y participación de NVIDIA en inferencia |  |
 | Revisión | Resultados del 3T FY27 (nov-2026) |  |

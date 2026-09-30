@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # PagSeguro Digital Ltd. (PAGS) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$12,53 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$12,53 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -51,24 +51,24 @@ Para empresas de US$3.000-4.500 millones, crecer 5,6% anual cinco años (histori
 
 **Reinversión y retorno.** En un banco, reinvertir es retener capital para crecer la cartera. La hoja usa un sales-to-capital de 1,4. El flujo libre de la hoja es volátil (negativo en 2023-2024 por el crecimiento del crédito y la anticipación). La empresa comprometió dividendos de R$1.000 millones por año en 2027-2028 y recompró R$1.330 millones en 2025: devuelve capital porque tiene exceso (Basilea 22,5%).
 
-**Riesgo.** La hoja usa una beta de 1,30 con prima de riesgo de Brasil (costo del patrimonio ~14,7%). La bottom-up desapalancada de Financial Services (0,33) no sirve: en financieras la deuda es materia prima y Damodaran recomienda usar la beta del patrimonio del sector (0,97). Con 0,97 y la misma prima de país, el costo del patrimonio es ~12,2% y el DCF Base sube de US$12,53 a US$14,19.
+**Riesgo.** La hoja usa una beta de 1,30 con prima de riesgo de Brasil (costo del patrimonio ~14,7%). La bottom-up desapalancada de Financial Services (0,33) no sirve: en financieras la deuda es materia prima y Damodaran recomienda usar la beta del patrimonio del sector (0,97). Con 0,97 y la misma prima de país, el costo del patrimonio es ~12,2% y el DCF Base sube de US$12,53 a US$14,20.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,30 | 14,7% | 14,7% | US$12,53 |
-| Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,33 | 7,5% | 7,5% | US$18,26 |
-| Propuesta (sector ajustado por riesgo propio) | 0,97 | 12,2% | 12,2% | US$14,19 |
+| Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,33 | 7,5% | 7,5% | US$18,30 |
+| Propuesta (sector ajustado por riesgo propio) | 0,97 | 12,2% | 12,2% | US$14,20 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,30) | Valor/acción (beta 0,97) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Banco digital estable con ROAE de ~15%** | 45% | Transacciones (adquirencia): -3%, -2%, 0%, 1%, 1%; Ingresos financieros y banca: 10%, 10%, 9%, 8%, 8% | 5,6% | 14% | 1,4 | US$12,48 | US$14,12 |
-| **B · El PIX y la competencia erosionan** | 30% | Transacciones (adquirencia): -8%, -6%, -5%, -4%, -3%; Ingresos financieros y banca: 5%, 5%, 5%, 5%, 5% | 1,4% | 12% | 1,4 | US$10,12 | US$11,30 |
-| **C · Crece el banco: crédito y depósitos** | 15% | Transacciones (adquirencia): 0%, 2%, 3%, 3%, 3%; Ingresos financieros y banca: 15%, 14%, 13%, 12%, 10% | 9,0% | 16% | 1,4 | US$15,61 | US$17,82 |
-| **D · Crisis de crédito en Brasil** | 10% | Transacciones (adquirencia): -10%, -5%, -3%, 0%, 0%; Ingresos financieros y banca: -5%, 0%, 3%, 5%, 5% | -0,4% | 8% | 1,4 | US$7,24 | US$7,98 |
-| **Valor esperado** | 100% |  |  |  |  | **US$11,72** | **US$13,22** |
+| **A · Banco digital estable con ROAE de ~15%** | 45% | Transacciones (adquirencia): -3%, -2%, 0%, 1%, 1%; Ingresos financieros y banca: 10%, 10%, 9%, 8%, 8% | 5,6% | 14% | 1,4 | US$12,49 | US$14,14 |
+| **B · El PIX y la competencia erosionan** | 30% | Transacciones (adquirencia): -8%, -6%, -5%, -4%, -3%; Ingresos financieros y banca: 5%, 5%, 5%, 5%, 5% | 1,4% | 12% | 1,4 | US$10,03 | US$11,21 |
+| **C · Crece el banco: crédito y depósitos** | 15% | Transacciones (adquirencia): 0%, 2%, 3%, 3%, 3%; Ingresos financieros y banca: 15%, 14%, 13%, 12%, 10% | 9,0% | 16% | 1,4 | US$15,63 | US$17,85 |
+| **D · Crisis de crédito en Brasil** | 10% | Transacciones (adquirencia): -10%, -5%, -3%, 0%, 0%; Ingresos financieros y banca: -5%, 0%, 3%, 5%, 5% | -0,4% | 8% | 1,4 | US$6,54 | US$7,23 |
+| **Valor esperado** | 100% |  |  |  |  | **US$11,63** | **US$13,12** |
 
 A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (15%) es un banco digital que crece a doble dígito. D (10%) es una crisis de crédito con morosidad en alza. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -76,11 +76,11 @@ Sensibilidad del DCF Base (beta 1,30; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 10,0% | 12,0% | 14,0% | 16,0% | 18,0% |
 |---|---:|---:|---:|---:|---:|
-| 1,8% | 8,64 | 10,17 | 11,70 | 13,23 | 14,76 |
-| 3,8% | 8,67 | 10,38 | 12,10 | 13,82 | 15,54 |
-| 5,8% | 8,68 | 10,61 | 12,53 | 14,46 | 16,39 |
-| 7,8% | 8,67 | 10,83 | 12,99 | 15,15 | 17,32 |
-| 9,8% | 8,64 | 11,06 | 13,48 | 15,90 | 18,32 |
+| 1,8% | 8,63 | 10,16 | 11,70 | 13,23 | 14,76 |
+| 3,8% | 8,66 | 10,38 | 12,10 | 13,83 | 15,55 |
+| 5,8% | 8,67 | 10,60 | 12,53 | 14,47 | 16,40 |
+| 7,8% | 8,66 | 10,82 | 12,99 | 15,16 | 17,33 |
+| 9,8% | 8,63 | 11,05 | 13,48 | 15,90 | 18,33 |
 
 
 ### Pre-mortem
@@ -118,7 +118,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,30 | ninguno entre −10% y 60% | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
 | Beta 0,97 | -9,4% (98% de las empresas) | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
 
-Frente al valor esperado de las historias (US$11,72 con la beta de la hoja; US$13,22 con la propuesta), el precio está por debajo en 24% y 33%, respectivamente. El precio está por debajo del valor esperado (24-33%). El DCF inverso llega al piso de la búsqueda: el precio supone que los ingresos caen más de 10% al año durante cinco años, algo que no aparece en ninguna historia con datos de 2023-2026. ¿Qué sabe el mercado que yo no? Descuenta Brasil (tasas, moneda, regulación) y el riesgo de que el PIX y los bancos digitales grandes vacíen el negocio. Con ROAE de 15% y P/VL de ~0,9, el mercado dice que PagBank no gana su costo de capital; si crees que sí, el precio parece bajo.
+Frente al valor esperado de las historias (US$11,63 con la beta de la hoja; US$13,12 con la propuesta), el precio está por debajo en 23% y por debajo en 32%, respectivamente. El precio está por debajo del valor esperado (23-32%). El DCF inverso llega al piso de la búsqueda: el precio supone que los ingresos caen más de 10% al año durante cinco años, algo que no aparece en ninguna historia con datos de 2023-2026. ¿Qué sabe el mercado que yo no? Descuenta Brasil (tasas, moneda, regulación) y el riesgo de que el PIX y los bancos digitales grandes vacíen el negocio. Con ROAE de 15% y P/VL de ~0,9, el mercado dice que PagBank no gana su costo de capital; si crees que sí, el precio parece bajo.
 
 
 ### Registro de decisión
@@ -128,8 +128,8 @@ Frente al valor esperado de las historias (US$11,72 con la beta de la hoja; US$1
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Adquirente en declive que se convierte en banco digital rentable en Brasil |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$11,72 / US$13,22 |  |
-| Rango (historia más débil a más fuerte) | US$7,24 a US$17,82 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$11,63 / US$13,12 |  |
+| Rango (historia más débil a más fuerte) | US$6,54 a US$17,85 |  |
 | Confianza | Media-baja: país, tasas y competencia dominan el resultado |  |
 | Qué cambiaría la opinión | ROAE, morosidad y crecimiento de depósitos y crédito |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

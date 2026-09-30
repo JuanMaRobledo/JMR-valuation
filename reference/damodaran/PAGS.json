@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": 0.97,
-  "texto": "La hoja usa una beta de 1,30 con prima de riesgo de Brasil (costo del patrimonio ~14,7%). La bottom-up desapalancada de Financial Services (0,33) no sirve: en financieras la deuda es materia prima y Damodaran recomienda usar la beta del patrimonio del sector (0,97). Con 0,97 y la misma prima de país, el costo del patrimonio es ~12,2% y el DCF Base sube de US$12,53 a US$14,19."
+  "texto": "La hoja usa una beta de 1,30 con prima de riesgo de Brasil (costo del patrimonio ~14,7%). La bottom-up desapalancada de Financial Services (0,33) no sirve: en financieras la deuda es materia prima y Damodaran recomienda usar la beta del patrimonio del sector (0,97). Con 0,97 y la misma prima de país, el costo del patrimonio es ~12,2% y el DCF Base sube de US$12,53 a US$14,20."
  },
  "historias": [
   {
@@ -226,7 +226,7 @@
    "< 16%"
   ]
  ],
- "precio_lectura": "El precio está por debajo del valor esperado (24-33%). El DCF inverso llega al piso de la búsqueda: el precio supone que los ingresos caen más de 10% al año durante cinco años, algo que no aparece en ninguna historia con datos de 2023-2026. ¿Qué sabe el mercado que yo no? Descuenta Brasil (tasas, moneda, regulación) y el riesgo de que el PIX y los bancos digitales grandes vacíen el negocio. Con ROAE de 15% y P/VL de ~0,9, el mercado dice que PagBank no gana su costo de capital; si crees que sí, el precio parece bajo.",
+ "precio_lectura": "El precio está por debajo del valor esperado (23-32%). El DCF inverso llega al piso de la búsqueda: el precio supone que los ingresos caen más de 10% al año durante cinco años, algo que no aparece en ninguna historia con datos de 2023-2026. ¿Qué sabe el mercado que yo no? Descuenta Brasil (tasas, moneda, regulación) y el riesgo de que el PIX y los bancos digitales grandes vacíen el negocio. Con ROAE de 15% y P/VL de ~0,9, el mercado dice que PagBank no gana su costo de capital; si crees que sí, el precio parece bajo.",
  "frase": "Adquirente en declive que se convierte en banco digital rentable en Brasil",
  "confianza": "Media-baja: país, tasas y competencia dominan el resultado",
  "cambiaria": "ROAE, morosidad y crecimiento de depósitos y crédito",

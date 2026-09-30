@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$117,28 a US$111,86. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo."
+  "texto": "La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$117,29 a US$111,83. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo."
  },
  "historias": [
   {
@@ -228,7 +228,7 @@
    "> 2,5x"
   ]
  ],
- "precio_lectura": "El precio (US$71,43) queda entre la historia B (US$65,03) y la A (US$117,71), por debajo del valor esperado (US$95,39): el mercado valora algo cercano a B, una erosión que no es temporal. El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Descuenta que la caída de 2026 es un cambio de régimen y no un tropiezo. Los resultados del 3T (mascotas en EE.UU. y Librela) dirán cuál de las dos historias pesa más.",
+ "precio_lectura": "El precio (US$71,43) queda entre la historia B (US$65,08) y la A (US$118,14), por debajo del valor esperado (US$95,47): el mercado valora algo cercano a B, una erosión que no es temporal. El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Descuenta que la caída de 2026 es un cambio de régimen y no un tropiezo. Los resultados del 3T (mascotas en EE.UU. y Librela) dirán cuál de las dos historias pesa más.",
  "frase": "Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez",
  "confianza": "Media: la calidad del negocio es alta; la duración de la presión competitiva no",
  "cambiaria": "Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres",

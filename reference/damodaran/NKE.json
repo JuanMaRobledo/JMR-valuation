@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$36,76 a US$35,83. Diferencia menor: el riesgo está en el margen."
+  "texto": "La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$36,76 a US$35,81. Diferencia menor: el riesgo está en el margen."
  },
  "historias": [
   {
@@ -251,7 +251,7 @@
    "Caídas de doble dígito"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda 6% por encima del valor esperado (US$34,41), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda 6% por encima del valor esperado (US$34,30), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.",
  "frase": "Marca deportiva líder que reconstruye producto y canal con márgenes en mínimos",
  "confianza": "Media: la marca da piso; el margen y la duración de la recuperación son inciertos",
  "cambiaria": "Margen bruto y crecimiento sin divisas en FY27; participación en running",

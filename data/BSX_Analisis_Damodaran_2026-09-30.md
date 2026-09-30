@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Boston Scientific Corporation (BSX) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$36,40 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$36,39 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -55,19 +55,19 @@ Para empresas de US$12.000-25.000 millones, crecer 6,5% anual cinco años (histo
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$36,40 |
-| Bottom-up del sector (Healthcare Products, reapalancada) | 0,97 | 9,3% | 8,7% | US$36,71 |
+| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$36,39 |
+| Bottom-up del sector (Healthcare Products, reapalancada) | 0,97 | 9,3% | 8,7% | US$36,70 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,00) | Valor/acción (beta 0,97) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · La cartera diversificada sostiene ~7%** | 45% | Electrofisiología: 10%, 10%, 9%, 8%, 8%; Watchman: 8%, 9%, 9%, 8%, 8%; Resto de Cardiovascular: 6%, 6%, 6%, 5%, 5%; MedSurg: 6%, 6%, 6%, 6%, 5% | 6,5% | 24% | 1,3 | US$35,54 | US$35,84 |
-| **B · El campo pulsado se vuelve commodity** | 30% | Electrofisiología: 2%, 3%, 3%, 3%, 3%; Watchman: 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular: 5%, 5%, 4%, 4%, 4%; MedSurg: 5%, 5%, 5%, 4%, 4% | 4,1% | 22% | 1,3 | US$28,11 | US$28,35 |
-| **C · Electrofisiología y Watchman vuelven a doble dígito** | 20% | Electrofisiología: 15%, 15%, 13%, 12%, 10%; Watchman: 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular: 7%, 7%, 7%, 6%, 6%; MedSurg: 7%, 7%, 6%, 6%, 6% | 8,3% | 26% | 1,3 | US$43,00 | US$43,37 |
-| **D · Pierde participación y precio** | 5% | Electrofisiología: -5%, -3%, 0%, 2%, 2%; Watchman: 0%, 0%, 2%, 2%, 2%; Resto de Cardiovascular: 3%, 3%, 3%, 3%, 3%; MedSurg: 3%, 3%, 3%, 3%, 3% | 2,2% | 20% | 1,3 | US$22,57 | US$22,77 |
-| **Valor esperado** | 100% |  |  |  |  | **US$34,15** | **US$34,45** |
+| **A · La cartera diversificada sostiene ~7%** | 45% | Electrofisiología: 10%, 10%, 9%, 8%, 8%; Watchman: 8%, 9%, 9%, 8%, 8%; Resto de Cardiovascular: 6%, 6%, 6%, 5%, 5%; MedSurg: 6%, 6%, 6%, 6%, 5% | 6,5% | 24% | 1,3 | US$35,34 | US$35,65 |
+| **B · El campo pulsado se vuelve commodity** | 30% | Electrofisiología: 2%, 3%, 3%, 3%, 3%; Watchman: 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular: 5%, 5%, 4%, 4%, 4%; MedSurg: 5%, 5%, 5%, 4%, 4% | 4,1% | 22% | 1,3 | US$28,07 | US$28,31 |
+| **C · Electrofisiología y Watchman vuelven a doble dígito** | 20% | Electrofisiología: 15%, 15%, 13%, 12%, 10%; Watchman: 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular: 7%, 7%, 7%, 6%, 6%; MedSurg: 7%, 7%, 6%, 6%, 6% | 8,3% | 26% | 1,3 | US$42,65 | US$43,01 |
+| **D · Pierde participación y precio** | 5% | Electrofisiología: -5%, -3%, 0%, 2%, 2%; Watchman: 0%, 0%, 2%, 2%, 2%; Resto de Cardiovascular: 3%, 3%, 3%, 3%, 3%; MedSurg: 3%, 3%, 3%, 3%, 3% | 2,2% | 20% | 1,3 | US$22,58 | US$22,78 |
+| **Valor esperado** | 100% |  |  |  |  | **US$33,98** | **US$34,28** |
 
 A (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. B (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. C (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). D (5%) es un tropiezo clínico o de producto. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,00; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 20,0% | 22,0% | 24,0% | 26,0% | 28,0% |
 |---|---:|---:|---:|---:|---:|
-| 3,0% | 23,50 | 26,47 | 29,45 | 32,42 | 35,40 |
-| 5,0% | 26,03 | 29,39 | 32,75 | 36,11 | 39,47 |
-| 7,0% | 28,82 | 32,61 | 36,40 | 40,18 | 43,97 |
-| 9,0% | 31,89 | 36,15 | 40,42 | 44,68 | 48,94 |
-| 11,0% | 35,27 | 40,06 | 44,85 | 49,64 | 54,44 |
+| 3,0% | 23,52 | 26,50 | 29,49 | 32,48 | 35,46 |
+| 5,0% | 26,03 | 29,40 | 32,77 | 36,14 | 39,52 |
+| 7,0% | 28,79 | 32,59 | 36,39 | 40,19 | 43,99 |
+| 9,0% | 31,82 | 36,10 | 40,38 | 44,66 | 48,94 |
+| 11,0% | 35,15 | 39,97 | 44,78 | 49,59 | 54,40 |
 
 
 ### Pre-mortem
@@ -115,9 +115,9 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 |  | Margen 22% | Margen 24% | Margen 26% |
 |---|---:|---:|---:|
 | Beta 1,00 | 13,0% (14% de las empresas) | 10,8% (22% de las empresas) | 8,8% (31% de las empresas) |
-| Beta 0,97 | 12,8% (15% de las empresas) | 10,6% (23% de las empresas) | 8,6% (31% de las empresas) |
+| Beta 0,97 | 12,8% (15% de las empresas) | 10,6% (23% de las empresas) | 8,8% (31% de las empresas) |
 
-Frente al valor esperado de las historias (US$34,15 con la beta de la hoja; US$34,45 con la propuesta), el precio está por encima en 29% y por encima en 28%, respectivamente. El precio (US$44,11) está 29% por encima del valor esperado (US$34,15) y cerca de la historia C (US$43,00). El DCF inverso pide 10,8% anual en los años 1-5 con margen de 24% (lo logró ~22% de las empresas de este tamaño), o 8,8% con margen de 26%: más de lo que muestra la guía orgánica de 6,5-8%. ¿Qué sabe el mercado que yo no? Puede estar pagando por Penumbra y por la cartera futura (nuevas indicaciones de Watchman, catéteres de nueva generación), que la hoja no incluye, o por retornos sobre las compras mejores que los de los últimos años. Valoradores que usan el margen ajustado y un múltiplo de salida alto (Alpha Spread, ~US$100-112) llegan a la conclusión contraria; la diferencia está en esos supuestos, no en los datos. Si no crees en la historia C, el precio ya pide más de lo que muestran los datos.
+Frente al valor esperado de las historias (US$33,98 con la beta de la hoja; US$34,28 con la propuesta), el precio está por encima en 30% y por encima en 29%, respectivamente. El precio (US$44,11) está 30% por encima del valor esperado (US$33,98) y cerca de la historia C (US$42,65). El DCF inverso pide 10,8% anual en los años 1-5 con margen de 24% (lo logró ~22% de las empresas de este tamaño), o 8,8% con margen de 26%: más de lo que muestra la guía orgánica de 6,5-8%. ¿Qué sabe el mercado que yo no? Puede estar pagando por Penumbra y por la cartera futura (nuevas indicaciones de Watchman, catéteres de nueva generación), que la hoja no incluye, o por retornos sobre las compras mejores que los de los últimos años. Valoradores que usan el margen ajustado y un múltiplo de salida alto (Alpha Spread, ~US$100-112) llegan a la conclusión contraria; la diferencia está en esos supuestos, no en los datos. Si no crees en la historia C, el precio ya pide más de lo que muestran los datos.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$34,15 con la beta de la hoja; US$3
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Cartera cardiovascular diversificada que pierde su ciclo de producto excepcional |  |
 | Probabilidades | A 45% / B 30% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$34,15 / US$34,45 |  |
-| Rango (historia más débil a más fuerte) | US$22,57 a US$43,37 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$33,98 / US$34,28 |  |
+| Rango (historia más débil a más fuerte) | US$22,58 a US$43,01 |  |
 | Confianza | Media: la diversificación da piso; la duración de la competencia en campo pulsado es incierta |  |
 | Qué cambiaría la opinión | Electrofisiología y Watchman en EE.UU. en los próximos dos trimestres; cierre y precio de Penumbra |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |

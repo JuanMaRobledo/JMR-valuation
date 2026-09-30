@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Celsius Holdings, Inc. (CELH) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$18,11 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$18,12 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -60,20 +60,20 @@ Para Celsius hay evidencia que justifica estar algo por encima de la tasa base (
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,50 | 11,7% | 11,1% | US$18,11 |
-| Bottom-up del sector (Beverage (Soft), reapalancada) | 0,62 | 7,8% | 7,5% | US$22,28 |
-| Propuesta (sector ajustado por riesgo propio) | 1,00 | 9,4% | 9,1% | US$20,36 |
+| Hoja (regresión o la cargada en el libro) | 1,50 | 11,7% | 11,1% | US$18,12 |
+| Bottom-up del sector (Beverage (Soft), reapalancada) | 0,62 | 7,8% | 7,5% | US$22,18 |
+| Propuesta (sector ajustado por riesgo propio) | 1,00 | 9,4% | 9,1% | US$20,30 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,50) | Valor/acción (beta 1,00) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Alani lidera y Celsius se estabiliza** | 40% | Celsius: 0%, 2%, 3%, 3%, 3%; Alani Nu: 25%, 18%, 14%, 10%, 8%; Rockstar: -5%, -5%, -5%, -5%, -5% | 8,6% | 19% | 2,5 | US$22,87 | US$25,75 |
-| **B · Alani crece, Celsius sigue cediendo** | 35% | Celsius: -6%, -4%, -2%, 0%, 0%; Alani Nu: 18%, 12%, 9%, 7%, 6%; Rockstar: -8%, -8%, -8%, -8%, -8% | 4,1% | 16% | 2,5 | US$15,41 | US$17,29 |
-| **C · La moda se desgasta** | 15% | Celsius: -10%, -8%, -5%, -3%, -2%; Alani Nu: 8%, 3%, 0%, 0%, 0%; Rockstar: -10%, -10%, -10%, -10%, -10% | -1,9% | 12% | 2,5 | US$8,97 | US$9,97 |
-| **D · Plataforma multimarca** | 10% | Celsius: 3%, 5%, 5%, 4%, 4%; Alani Nu: 35%, 25%, 18%, 12%, 10%; Rockstar: -3%, -3%, -3%, -3%, -3% | 12,2% | 22% | 1,5 | US$29,49 | US$33,40 |
-| **Valor esperado** | 100% |  |  |  |  | **US$18,84** | **US$21,19** |
+| **A · Alani lidera y Celsius se estabiliza** | 40% | Celsius: 0%, 2%, 3%, 3%, 3%; Alani Nu: 25%, 18%, 14%, 10%, 8%; Rockstar: -5%, -5%, -5%, -5%, -5% | 8,6% | 19% | 2,5 | US$22,22 | US$24,95 |
+| **B · Alani crece, Celsius sigue cediendo** | 35% | Celsius: -6%, -4%, -2%, 0%, 0%; Alani Nu: 18%, 12%, 9%, 7%, 6%; Rockstar: -8%, -8%, -8%, -8%, -8% | 4,1% | 16% | 2,5 | US$15,48 | US$17,30 |
+| **C · La moda se desgasta** | 15% | Celsius: -10%, -8%, -5%, -3%, -2%; Alani Nu: 8%, 3%, 0%, 0%, 0%; Rockstar: -10%, -10%, -10%, -10%, -10% | -1,9% | 12% | 2,5 | US$9,39 | US$10,39 |
+| **D · Plataforma multimarca** | 10% | Celsius: 3%, 5%, 5%, 4%, 4%; Alani Nu: 35%, 25%, 18%, 12%, 10%; Rockstar: -3%, -3%, -3%, -3%, -3% | 12,2% | 22% | 1,5 | US$28,84 | US$32,57 |
+| **Valor esperado** | 100% |  |  |  |  | **US$18,60** | **US$20,85** |
 
 A es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). B (35%) es la continuación de lo que muestra la factura. C (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). D (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -81,11 +81,11 @@ Sensibilidad del DCF Base (beta 1,50; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 13,0% | 15,0% | 17,0% | 19,0% | 21,0% |
 |---|---:|---:|---:|---:|---:|
-| 2,2% | 11,45 | 13,23 | 15,01 | 16,79 | 18,57 |
-| 4,2% | 12,47 | 14,48 | 16,48 | 18,49 | 20,50 |
-| 6,2% | 13,59 | 15,85 | 18,11 | 20,37 | 22,63 |
-| 8,2% | 14,83 | 17,37 | 19,91 | 22,45 | 25,00 |
-| 10,2% | 16,20 | 19,05 | 21,91 | 24,76 | 27,61 |
+| 2,2% | 11,73 | 13,43 | 15,14 | 16,85 | 18,56 |
+| 4,2% | 12,70 | 14,63 | 16,56 | 18,49 | 20,42 |
+| 6,2% | 13,76 | 15,94 | 18,12 | 20,29 | 22,47 |
+| 8,2% | 14,94 | 17,39 | 19,84 | 22,29 | 24,74 |
+| 10,2% | 16,23 | 18,98 | 21,74 | 24,49 | 27,25 |
 
 
 ### Pre-mortem
@@ -123,10 +123,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 17% | Margen 19% | Margen 22% |
 |---|---:|---:|---:|
-| Beta 1,50 | 15,4% (16% de las empresas) | 12,8% (22% de las empresas) | 9,6% (37% de las empresas) |
-| Beta 1,00 | 12,8% (22% de las empresas) | 10,4% (33% de las empresas) | 7,2% (50% de las empresas) |
+| Beta 1,50 | 15,8% (15% de las empresas) | 13,2% (21% de las empresas) | 9,8% (36% de las empresas) |
+| Beta 1,00 | 13,2% (21% de las empresas) | 10,6% (32% de las empresas) | 7,4% (49% de las empresas) |
 
-Frente al valor esperado de las historias (US$18,84 con la beta de la hoja; US$21,19 con la propuesta), el precio está por encima en 49% y 32%, respectivamente. ¿Qué sabe el mercado que yo no? Puede estar viendo los datos al consumidor de Alani y confiar en que el crecimiento dure, asumir que el margen vuelve a ~22% al terminar los cargos, o usar un costo de capital más bajo que el de la hoja. Si ninguna de esas razones se sostiene con evidencia, el valor no se ajusta al precio: el precio queda como una apuesta por las historias A y D.
+Frente al valor esperado de las historias (US$18,60 con la beta de la hoja; US$20,85 con la propuesta), el precio está por encima en 51% y por encima en 34%, respectivamente. ¿Qué sabe el mercado que yo no? Puede estar viendo los datos al consumidor de Alani y confiar en que el crecimiento dure, asumir que el margen vuelve a ~22% al terminar los cargos, o usar un costo de capital más bajo que el de la hoja. Si ninguna de esas razones se sostiene con evidencia, el valor no se ajusta al precio: el precio queda como una apuesta por las historias A y D.
 
 
 ### Registro de decisión
@@ -136,8 +136,8 @@ Frente al valor esperado de las historias (US$18,84 con la beta de la hoja; US$2
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Portafolio liderado por Alani Nu; la marca Celsius se estanca |  |
 | Probabilidades | A 40% / B 35% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$18,84 / US$21,19 |  |
-| Rango (historia más débil a más fuerte) | US$8,97 a US$33,40 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$18,60 / US$20,85 |  |
+| Rango (historia más débil a más fuerte) | US$9,39 a US$32,57 |  |
 | Confianza | Media-baja: el margen y la duración de Alani son muy inciertos |  |
 | Qué cambiaría la opinión | Los indicadores de la tabla anterior, en especial Celsius y Alani al consumidor |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

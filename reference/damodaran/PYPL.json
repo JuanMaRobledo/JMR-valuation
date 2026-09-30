@@ -11,7 +11,7 @@
  },
  "riesgo": {
   "beta_propuesta": 0.97,
-  "texto": "La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$84,77 a US$89,70."
+  "texto": "La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$84,77 a US$89,72."
  },
  "historias": [
   {
