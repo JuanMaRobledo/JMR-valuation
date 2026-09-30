@@ -1,0 +1,21 @@
+{
+ "ticker": "LULU",
+ "sheet_id": "1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: marca premium en ropa deportiva, con márgenes altos durante más de una década."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.158,
+   "motivo": "ROIC terminal 15,8%: el menor entre el actual (25,2%) y el de Apparel según Damodaran (15,8%); costo de capital terminal 9,0%."
+  }
+ ]
+}

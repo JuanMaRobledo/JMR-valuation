@@ -1,0 +1,21 @@
+{
+ "ticker": "ZTS",
+ "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: líder en salud animal: marcas, relación con veterinarios y cartera diversificada de patentes."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.169,
+   "motivo": "ROIC terminal 16,9%: el menor entre el actual (25,3%) y el de Drugs (Pharmaceutical) según Damodaran (16,9%); costo de capital terminal 9,0%."
+  }
+ ]
+}

@@ -184,7 +184,7 @@
   "texto": "El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado)."
  },
  "reinversion": {
-  "texto": "Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF."
+  "texto": "Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 29,3% (el de Software (System & Application); el actual es 36,3%); antes era igual al costo de capital."
  },
  "prob_texto": "A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base.",
  "premortem": [
@@ -233,7 +233,7 @@
    "Salida de ejecutivos clave"
   ]
  ],
- "precio_lectura": "El DCF inverso muestra que el precio se justifica con un crecimiento de apenas 1-3% anual en los años 1-5 y márgenes de 35-40%: el mercado valora algo cercano a la historia C. ¿Qué sabe el mercado que yo no? Probablemente nada nuevo sobre las cifras, pero le da mucho más peso a la disrupción por IA. Si la historia C tiene solo 15% de probabilidad, el precio parece bajo; si la IA termina cobrándose poco y Figma sigue ganando, el precio es razonable.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$231,01) queda muy por debajo del valor esperado (US$420,75) e incluso por debajo de la historia C (US$259,23). El DCF inverso muestra que el precio se justifica con ingresos cayendo 2-4% al año en los años 1-5 con márgenes de 35-40%: el mercado valora algo peor que la historia C. ¿Qué sabe el mercado que yo no? Le da mucho más peso a la disrupción por IA que las historias, y probablemente no cree que Adobe conserve retornos por encima de su costo de capital después del año 10. Sin ese supuesto el DCF Base sería US$377,94, todavía muy por encima del precio.",
  "frase": "Suite creativa y documental por suscripción que defiende su precio con IA frente a Figma y Canva",
  "confianza": "Media: la base es muy rentable y recurrente; lo incierto es el precio de Creative Cloud en la era de la IA",
  "cambiaria": "Crecimiento de Creative & Marketing Professionals, peso del ARR «AI-first» y adopción frente a Figma",

@@ -1,0 +1,21 @@
+{
+ "ticker": "INTU",
+ "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: costos de cambio: TurboTax y QuickBooks guardan los datos contables y fiscales del cliente."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.222,
+   "motivo": "ROIC terminal 22,2%: el menor entre el actual (22,2%) y el de Software (System & Application) según Damodaran (29,3%); costo de capital terminal 9,0%."
+  }
+ ]
+}

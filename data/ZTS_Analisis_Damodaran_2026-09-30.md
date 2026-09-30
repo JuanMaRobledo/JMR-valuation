@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Zoetis Inc. (ZTS) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$85,57 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$117,28 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Para empresas de US$7.000-12.000 millones, crecer 4,5% anual cinco años (histor
 
 **Márgenes.** El margen operativo se mantuvo en 36-38% con ventas planas: es un negocio con poder de precio y costos flexibles. La hoja supone 36% estable. Si la competencia obliga a bajar precios en mascotas, el margen cae rápido porque la mezcla de mascotas es la más rentable. Las historias van de 29% a 38%.
 
-**Reinversión y retorno.** Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal.
+**Reinversión y retorno.** Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 16,9% (el de Drugs (Pharmaceutical); el actual es 25%); antes era igual al costo de capital.
 
-**Riesgo.** La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$85,57 a US$81,61. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo.
+**Riesgo.** La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$117,28 a US$111,86. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 8,2% | US$85,57 |
-| Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,10 | 9,9% | 8,9% | US$81,61 |
+| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 8,2% | US$117,28 |
+| Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,10 | 9,9% | 8,9% | US$111,86 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 0,90) | Valor/acción (beta 1,10) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Tropiezo temporal; vuelve a crecer con innovación** | 45% | Animales de compañía: 1%, 5%, 6%, 6%, 6%; Animales de producción: 3%, 4%, 4%, 4%, 4% | 4,5% | 36% | 2,0 | US$85,88 | US$81,90 |
-| **B · Erosión prolongada de franquicias clave** | 30% | Animales de compañía: -4%, 0%, 2%, 3%, 3%; Animales de producción: 2%, 3%, 3%, 3%, 3% | 1,5% | 33% | 2,0 | US$64,79 | US$61,72 |
-| **C · Recuperación fuerte con nuevos productos** | 15% | Animales de compañía: 4%, 8%, 8%, 8%, 7%; Animales de producción: 4%, 4%, 4%, 4%, 4% | 6,0% | 38% | 2,0 | US$100,24 | US$95,64 |
-| **D · Genéricos y competencia generalizada** | 10% | Animales de compañía: -8%, -4%, 0%, 1%, 2%; Animales de producción: 0%, 2%, 2%, 2%, 2% | -0,7% | 29% | 2,0 | US$48,92 | US$46,53 |
-| **Valor esperado** | 100% |  |  |  |  | **US$78,01** | **US$74,37** |
+| **A · Tropiezo temporal; vuelve a crecer con innovación** | 45% | Animales de compañía: 1%, 5%, 6%, 6%, 6%; Animales de producción: 3%, 4%, 4%, 4%, 4% | 4,5% | 36% | 2,0 | US$117,71 | US$112,28 |
+| **B · Erosión prolongada de franquicias clave** | 30% | Animales de compañía: -4%, 0%, 2%, 3%, 3%; Animales de producción: 2%, 3%, 3%, 3%, 3% | 1,5% | 33% | 2,0 | US$88,60 | US$84,44 |
+| **C · Recuperación fuerte con nuevos productos** | 15% | Animales de compañía: 4%, 8%, 8%, 8%, 7%; Animales de producción: 4%, 4%, 4%, 4%, 4% | 6,0% | 38% | 2,0 | US$137,54 | US$131,23 |
+| **D · Genéricos y competencia generalizada** | 10% | Animales de compañía: -8%, -4%, 0%, 1%, 2%; Animales de producción: 0%, 2%, 2%, 2%, 2% | -0,7% | 29% | 2,0 | US$66,98 | US$63,76 |
+| **Valor esperado** | 100% |  |  |  |  | **US$106,88** | **US$101,92** |
 
 A (45%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (30%) es una erosión prolongada de dermatología, dolor y parasiticidas. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 0,90; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 32,0% | 34,0% | 36,0% | 38,0% | 40,0% |
 |---|---:|---:|---:|---:|---:|
-| 0,4% | 58,54 | 62,65 | 66,77 | 70,89 | 75,00 |
-| 2,4% | 66,37 | 71,03 | 75,68 | 80,34 | 85,00 |
-| 4,4% | 75,05 | 80,31 | 85,57 | 90,84 | 96,10 |
-| 6,4% | 84,66 | 90,60 | 96,54 | 102,48 | 108,42 |
-| 8,4% | 95,30 | 101,99 | 108,68 | 115,37 | 122,06 |
+| 0,4% | 80,00 | 85,46 | 90,92 | 96,37 | 101,83 |
+| 2,4% | 90,99 | 97,19 | 103,39 | 109,58 | 115,78 |
+| 4,4% | 103,23 | 110,25 | 117,28 | 124,31 | 131,34 |
+| 6,4% | 116,84 | 124,79 | 132,75 | 140,70 | 148,65 |
+| 8,4% | 131,97 | 140,95 | 149,94 | 158,93 | 167,91 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 32% | Margen 36% | Margen 38% |
 |---|---:|---:|---:|
-| Beta 0,90 | 3,6% (65% de las empresas) | 1,6% (76% de las empresas) | 0,6% (79% de las empresas) |
-| Beta 1,10 | 4,4% (60% de las empresas) | 2,4% (73% de las empresas) | 1,4% (76% de las empresas) |
+| Beta 0,90 | -1,2% (86% de las empresas) | -3,2% (91% de las empresas) | -4,0% (92% de las empresas) |
+| Beta 1,10 | -0,4% (83% de las empresas) | -2,4% (90% de las empresas) | -3,2% (91% de las empresas) |
 
-Frente al valor esperado de las historias (US$78,01 con la beta de la hoja; US$74,37 con la propuesta), el precio está por debajo en 8% y 4%, respectivamente. El precio está 4-8% por debajo del valor esperado. El DCF inverso pide 1,6-2,4% anual con margen de 36% (lo logró ~73-76% de las empresas de este tamaño): el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta que la erosión de franquicias no es temporal. Es un caso donde precio, valor esperado y DCF están cerca: la decisión depende de si crees que 2026 es un tropiezo o un cambio de régimen.
+Frente al valor esperado de las historias (US$106,88 con la beta de la hoja; US$101,92 con la propuesta), el precio está por debajo en 33% y por debajo en 30%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$71,43) queda 33% por debajo del valor esperado (US$106,88) y cerca de la historia D (US$66,98). El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño): el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Descuenta que la erosión de franquicias no es temporal y quizá que Zoetis no conserve retornos por encima de su costo de capital. La decisión depende de si 2026 es un tropiezo o un cambio de régimen.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$78,01 con la beta de la hoja; US$7
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$78,01 / US$74,37 |  |
-| Rango (historia más débil a más fuerte) | US$48,92 a US$95,64 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$106,88 / US$101,92 |  |
+| Rango (historia más débil a más fuerte) | US$63,76 a US$137,54 |  |
 | Confianza | Media: la calidad del negocio es alta; la duración de la presión competitiva no |  |
 | Qué cambiaría la opinión | Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |
