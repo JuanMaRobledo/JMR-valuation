@@ -157,8 +157,10 @@ def compute(tk: str) -> dict:
         # desplaza el WACC de la hoja por el cambio en el costo del patrimonio
         return wacc0 + e_w * (beta - beta_hoja) * erp
 
-    def value(g, m, beta=None, s2c_=None):
+    def value(g, m, beta=None, s2c_=None, roic=None):
         i = dict(inp)
+        if roic is not None:  # ROIC después del año 10 propio de la historia (0 = igual al costo de capital)
+            i["roicTerminal"] = roic
         if beta is not None:
             i["wacc"] = wacc_for(beta)
         if s2c_ is not None:
@@ -181,9 +183,14 @@ def compute(tk: str) -> dict:
         rev5 = sum(revs.values())
         cagr = (rev5 / rev0) ** (1 / 5) - 1
         s2 = h.get("s2c", s2c)
+        # Una historia en la que la ventaja se erosiona no conserva retornos excedentes: "costo_capital" lleva el ROIC
+        # después del año 10 al costo de capital aunque la hoja (escenario Base) use un ROIC terminal mayor.
+        rt = h.get("roic_terminal")
+        roic = 0.0 if rt == "costo_capital" else (rt if isinstance(rt, (int, float)) else None)
         historias.append({**h, "cagr": cagr, "rev5": rev5, "mix5": {k: v / rev5 for k, v in revs.items()},
-                          "tasa_base": frac_at_least(br, cagr)})
-        cases += [value(cagr, h["margen"], beta_hoja, s2), value(cagr, h["margen"], beta_prop, s2)]
+                          "tasa_base": frac_at_least(br, cagr),
+                          "roic_terminal_usado": roic if roic is not None else inp.get("roicTerminal", 0)})
+        cases += [value(cagr, h["margen"], beta_hoja, s2, roic), value(cagr, h["margen"], beta_prop, s2, roic)]
     vals = [dcf * v / ref for v in run(cases)]
     for i, h in enumerate(historias):
         h["valor_beta_hoja"], h["valor_beta_prop"] = vals[2 * i], vals[2 * i + 1]
@@ -302,17 +309,21 @@ def render(r: dict) -> tuple[str, str]:
     h3("Historias cuantificadas y valor esperado")
     segs = list(sp["segmentos"].keys())
     same = abs(r["beta_prop"] - r["beta_hoja"]) < 0.005  # la hoja ya usa la beta propuesta: una sola columna
+    con_roic = any((h.get("roic_terminal_usado") or 0) > 0 for h in r["historias"])
+    roic_txt = lambda h: (pct(h["roic_terminal_usado"]) if (h.get("roic_terminal_usado") or 0) > 0 else "= costo de capital")  # noqa: E731
     rows = []
     for h in r["historias"]:
         crec = "; ".join(f"{k}: " + ", ".join(es(x * 100, 0) + "%" for x in h["crec"].get(k, [0] * 5)) for k in segs) if len(segs) > 1 else \
             ", ".join(es(x * 100, 0) + "%" for x in h["crec"][segs[0]])
         rows.append([f"**{h['nombre']}**", pct(h["prob"], 0), crec, pct(h["cagr"]), pct(h["margen"], 0),
-                     es(h.get("s2c", r["s2c"]), 1), usd(h["valor_beta_hoja"])] + ([] if same else [usd(h["valor_beta_prop"])]))
-    rows.append(["**Valor esperado**", "100%", "", "", "", "", f"**{usd(r['valor_esperado_beta_hoja'])}**"] +
+                     es(h.get("s2c", r["s2c"]), 1)] + ([roic_txt(h)] if con_roic else []) +
+                    [usd(h["valor_beta_hoja"])] + ([] if same else [usd(h["valor_beta_prop"])]))
+    rows.append(["**Valor esperado**", "100%", "", "", "", ""] + ([""] if con_roic else []) + [f"**{usd(r['valor_esperado_beta_hoja'])}**"] +
                 ([] if same else [f"**{usd(r['valor_esperado_beta_prop'])}**"]))
     tab(["Historia", "Probabilidad", "Crecimiento por segmento (años 1-5)", "Crecimiento anual del grupo",
-         "Margen objetivo", "Sales-to-capital", f"Valor/acción (beta {es(r['beta_hoja'])})"] +
-        ([] if same else [f"Valor/acción (beta {es(r['beta_prop'])})"]), rows, ["l", "r", "l", "r", "r", "r", "r"] + ([] if same else ["r"]))
+         "Margen objetivo", "Sales-to-capital"] + (["ROIC después del año 10"] if con_roic else []) + [f"Valor/acción (beta {es(r['beta_hoja'])})"] +
+        ([] if same else [f"Valor/acción (beta {es(r['beta_prop'])})"]), rows,
+        ["l", "r", "l", "r", "r", "r"] + (["r"] if con_roic else []) + ["r"] + ([] if same else ["r"]))
     p(sp["prob_texto"] + " **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**")
     s = r["sensibilidad"]
     p(f"Sensibilidad del DCF Base (beta {es(r['beta_hoja'])}; US$ por acción; filas = crecimiento de los años 1-5, "

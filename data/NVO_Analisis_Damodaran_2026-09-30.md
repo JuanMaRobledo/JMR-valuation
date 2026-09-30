@@ -62,15 +62,15 @@ Para empresas de más de US$25.000 millones, crecer 0,8% anual cinco años (hist
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,09) | Valor/acción (beta 1,00) |
-|---|---:|---|---:|---:|---:|---:|---:|
-| **A · El volumen compensa la caída de precio** | 40% | Obesidad (Wegovy, Saxenda): 5%, 10%, 10%, 8%, 7%; Diabetes GLP-1 (Ozempic, Rybelsus): -8%, -2%, 0%, 0%, 0%; Insulinas y otros de diabetes: -5%, -5%, -5%, -5%, -5%; Enfermedades raras: 2%, 2%, 2%, 2%, 2% | 0,8% | 40% | 0,5 | US$40,48 | US$41,21 |
-| **B · Guerra de precios con Lilly y genéricos** | 30% | Obesidad (Wegovy, Saxenda): -2%, 4%, 5%, 5%, 4%; Diabetes GLP-1 (Ozempic, Rybelsus): -12%, -6%, -4%, -3%, -3%; Insulinas y otros de diabetes: -7%, -7%, -7%, -7%, -7%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | -2,8% | 35% | 0,5 | US$31,25 | US$31,78 |
-| **C · La nueva generación recupera el liderazgo** | 20% | Obesidad (Wegovy, Saxenda): 10%, 15%, 15%, 12%, 10%; Diabetes GLP-1 (Ozempic, Rybelsus): -4%, 0%, 2%, 2%, 2%; Insulinas y otros de diabetes: -4%, -4%, -4%, -4%, -4%; Enfermedades raras: 3%, 3%, 3%, 3%, 3% | 3,7% | 43% | 0,5 | US$48,84 | US$49,76 |
-| **D · Novo pierde relevancia frente a Lilly** | 10% | Obesidad (Wegovy, Saxenda): -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus): -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes: -8%, -8%, -8%, -8%, -8%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | -6,0% | 30% | 0,5 | US$24,96 | US$25,35 |
-| **Valor esperado** | 100% |  |  |  |  | **US$37,83** | **US$38,51** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,09) | Valor/acción (beta 1,00) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| **A · El volumen compensa la caída de precio** | 40% | Obesidad (Wegovy, Saxenda): 5%, 10%, 10%, 8%, 7%; Diabetes GLP-1 (Ozempic, Rybelsus): -8%, -2%, 0%, 0%, 0%; Insulinas y otros de diabetes: -5%, -5%, -5%, -5%, -5%; Enfermedades raras: 2%, 2%, 2%, 2%, 2% | 0,8% | 40% | 0,5 | 16,9% | US$40,48 | US$41,21 |
+| **B · Guerra de precios con Lilly y genéricos** | 30% | Obesidad (Wegovy, Saxenda): -2%, 4%, 5%, 5%, 4%; Diabetes GLP-1 (Ozempic, Rybelsus): -12%, -6%, -4%, -3%, -3%; Insulinas y otros de diabetes: -7%, -7%, -7%, -7%, -7%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | -2,8% | 35% | 0,5 | = costo de capital | US$24,82 | US$25,22 |
+| **C · La nueva generación recupera el liderazgo** | 20% | Obesidad (Wegovy, Saxenda): 10%, 15%, 15%, 12%, 10%; Diabetes GLP-1 (Ozempic, Rybelsus): -4%, 0%, 2%, 2%, 2%; Insulinas y otros de diabetes: -4%, -4%, -4%, -4%, -4%; Enfermedades raras: 3%, 3%, 3%, 3%, 3% | 3,7% | 43% | 0,5 | 16,9% | US$48,84 | US$49,76 |
+| **D · Novo pierde relevancia frente a Lilly** | 10% | Obesidad (Wegovy, Saxenda): -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus): -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes: -8%, -8%, -8%, -8%, -8%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | -6,0% | 30% | 0,5 | = costo de capital | US$20,56 | US$20,87 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$35,46** | **US$36,09** |
 
-A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,09; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
@@ -118,7 +118,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,09 | 3,4% (59% de las empresas) | -0,2% (76% de las empresas) | -2,6% (86% de las empresas) |
 | Beta 1,00 | 2,8% (62% de las empresas) | -0,6% (78% de las empresas) | -3,0% (87% de las empresas) |
 
-Frente al valor esperado de las historias (US$37,83 con la beta de la hoja; US$38,51 con la propuesta), el precio está por encima en 2% y por encima en 1%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$38,71) queda prácticamente en el valor esperado de las historias (US$37,83) y 12% por debajo del DCF (US$44,06). El DCF inverso pide ingresos planos con margen de 40%, o 3,4% anual con margen de 35% (lo logró ~59-76% de las empresas de este tamaño): el mercado valora algo cercano a la historia A. ¿Qué sabe el mercado que yo no? Probablemente le da más peso a la guerra de precios de los GLP-1 (historia B). La decisión depende de cuánto peso le das a B.
+Frente al valor esperado de las historias (US$35,46 con la beta de la hoja; US$36,09 con la propuesta), el precio está por encima en 9% y por encima en 7%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$38,71) queda 9% por encima del valor esperado de las historias (US$35,46) y 12% por debajo del DCF (US$44,06). El DCF inverso pide ingresos planos con margen de 40%, o 3,4% anual con margen de 35% (lo logró ~59-76% de las empresas de este tamaño): el mercado valora algo cercano a la historia A. ¿Qué sabe el mercado que yo no? Probablemente le da más peso a la guerra de precios de los GLP-1 (historia B). La decisión depende de cuánto peso le das a B.
 
 
 ### Registro de decisión
@@ -128,8 +128,8 @@ Frente al valor esperado de las historias (US$37,83 con la beta de la hoja; US$3
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Pionera de los GLP-1 en transición: volumen en alza, precio en baja y Lilly adelante |  |
 | Probabilidades | A 40% / B 30% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$37,83 / US$38,51 |  |
-| Rango (historia más débil a más fuerte) | US$24,96 a US$49,76 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$35,46 / US$36,09 |  |
+| Rango (historia más débil a más fuerte) | US$20,56 a US$49,76 |  |
 | Confianza | Media: el mercado de obesidad crecerá; la participación y el precio de Novo son inciertos |  |
 | Qué cambiaría la opinión | Ventas a tipo de cambio constante, participación frente a Lilly y datos de CagriSema |  |
 | Revisión | Resultados de 9M26 (nov-2026) |  |

@@ -91,6 +91,7 @@
     "Equipamiento y otros": 0.04733616549519248
    },
    "tasa_base": 0.6052553462561275,
+   "roic_terminal_usado": 0.133,
    "valor_beta_hoja": 37.859267957733394,
    "valor_beta_prop": 36.889134130351444
   },
@@ -121,6 +122,7 @@
      0
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": 0.005343306120183966,
    "rev5": 47650.9116152048,
    "mix5": {
@@ -129,8 +131,9 @@
     "Equipamiento y otros": 0.049589817275310984
    },
    "tasa_base": 0.7277375159280165,
-   "valor_beta_hoja": 26.25375767139983,
-   "valor_beta_prop": 25.607058659449123
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 21.70622295808722,
+   "valor_beta_prop": 21.18735489198029
   },
   {
    "nombre": "C · Vuelve la Nike de márgenes históricos",
@@ -167,6 +170,7 @@
     "Equipamiento y otros": 0.046952342824999785
    },
    "tasa_base": 0.5013147314474191,
+   "roic_terminal_usado": 0.133,
    "valor_beta_hoja": 50.55660936259059,
    "valor_beta_prop": 49.240470395459994
   },
@@ -197,6 +201,7 @@
      -0.02
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": -0.012846224373016968,
    "rev5": 43493.3956154384,
    "mix5": {
@@ -205,12 +210,13 @@
     "Equipamiento y otros": 0.049110096202289115
    },
    "tasa_base": 0.8052249158290523,
-   "valor_beta_hoja": 17.747282433376196,
-   "valor_beta_prop": 17.333212969740476
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 14.920239202084527,
+   "valor_beta_prop": 14.585637765188514
   }
  ],
- "valor_esperado_beta_hoja": 35.91148387658691,
- "valor_esperado_beta_prop": 34.99698268407191,
+ "valor_esperado_beta_hoja": 34.40587130102854,
+ "valor_esperado_beta_prop": 33.53369279360367,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
@@ -246,7 +252,7 @@
    [
     20.320705242302502,
     25.724148888829284,
-    31.127592535356072,
+    31.12759253535608,
     36.53103618188286,
     41.93447982840964
    ],
@@ -272,10 +278,10 @@
     55.78699199487437
    ],
    [
-    25.856975301727246,
+    25.85697530172725,
     34.75799938964071,
     43.65902347755418,
-    52.56004756546765,
+    52.56004756546766,
     61.46107165338112
    ]
   ]

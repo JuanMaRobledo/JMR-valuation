@@ -82,7 +82,8 @@
      0,
      0
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   },
   {
    "nombre": "C · La nueva generación recupera el liderazgo",
@@ -152,7 +153,8 @@
      0,
      0
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   }
  ],
  "margenes_inverso": [
@@ -250,7 +252,7 @@
  "reinversion": {
   "texto": "Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 16,9% (el de Drugs (Pharmaceutical); el actual es 24%); antes era igual al costo de capital."
  },
- "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales.",
+ "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "Lilly (tirzepatida y orforglipron oral) gana también fuera de EE.UU. y Novo queda como segundo jugador con precio más bajo.",
   "CagriSema decepciona frente a la competencia y la cartera nueva no llega a tiempo.",
@@ -291,7 +293,7 @@
    "≤ 36%"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$38,71) queda prácticamente en el valor esperado de las historias (US$37,83) y 12% por debajo del DCF (US$44,06). El DCF inverso pide ingresos planos con margen de 40%, o 3,4% anual con margen de 35% (lo logró ~59-76% de las empresas de este tamaño): el mercado valora algo cercano a la historia A. ¿Qué sabe el mercado que yo no? Probablemente le da más peso a la guerra de precios de los GLP-1 (historia B). La decisión depende de cuánto peso le das a B.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$38,71) queda 9% por encima del valor esperado de las historias (US$35,46) y 12% por debajo del DCF (US$44,06). El DCF inverso pide ingresos planos con margen de 40%, o 3,4% anual con margen de 35% (lo logró ~59-76% de las empresas de este tamaño): el mercado valora algo cercano a la historia A. ¿Qué sabe el mercado que yo no? Probablemente le da más peso a la guerra de precios de los GLP-1 (historia B). La decisión depende de cuánto peso le das a B.",
  "frase": "Pionera de los GLP-1 en transición: volumen en alza, precio en baja y Lilly adelante",
  "confianza": "Media: el mercado de obesidad crecerá; la participación y el precio de Novo son inciertos",
  "cambiaria": "Ventas a tipo de cambio constante, participación frente a Lilly y datos de CagriSema",

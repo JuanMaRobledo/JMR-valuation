@@ -43,7 +43,7 @@
   },
   {
    "nombre": "B · Pérdida estructural frente a Alo y Vuori",
-   "prob": 0.3,
+   "prob": 0.35,
    "margen": 0.14,
    "crec": {
     "Américas": [
@@ -67,11 +67,12 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   },
   {
    "nombre": "C · La marca se recupera",
-   "prob": 0.2,
+   "prob": 0.15,
    "margen": 0.21,
    "crec": {
     "Américas": [
@@ -123,7 +124,8 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   }
  ],
  "margenes_inverso": [
@@ -214,7 +216,7 @@
  "reinversion": {
   "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 15,8% (el de Apparel; el actual es 25%); antes era igual al costo de capital."
  },
- "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (30%) es la pérdida estructural frente a Alo y Vuori. C (20%) es una recuperación de producto y marca, como la de 2018-2019. D (10%) es el declive de una marca de moda.",
+ "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%, antes 30%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (15%, antes 20%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. D (10%) es el declive de una marca de moda. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "Alo y Vuori siguen ganando a la clienta joven y lululemon queda como marca de «generación anterior».",
   "Los aranceles se quedan y lululemon no puede trasladarlos a precio sin perder volumen.",
@@ -255,7 +257,7 @@
    "Sigue subiendo"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$100,58) queda por debajo del valor esperado (US$162,49). El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída: el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede repetir la recuperación de 2018, el precio parece bajo.",
+ "precio_lectura": "El precio (US$100,58) queda entre la historia B (US$95,68) y la A (US$178,03), por debajo del valor esperado (US$147,15): el mercado valora algo muy cercano a B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.",
  "frase": "Marca premium de ropa técnica que pierde Norteamérica y crece afuera, con nueva CEO",
  "confianza": "Baja-media: la duración de la caída en Norteamérica es muy incierta",
  "cambiaria": "Comparables de Norteamérica, margen bruto y respuesta a Alo y Vuori",

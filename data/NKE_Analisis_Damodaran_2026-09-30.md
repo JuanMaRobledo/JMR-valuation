@@ -61,15 +61,15 @@ Para empresas de más de US$25.000 millones, crecer 3,1% anual cinco años (hist
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,00) | Valor/acción (beta 1,12) |
-|---|---:|---|---:|---:|---:|---:|---:|
-| **A · Recuperación lenta con la vuelta a los mayoristas** | 45% | Calzado: -2%, 4%, 5%, 5%, 4%; Indumentaria: 0%, 4%, 4%, 4%, 4%; Equipamiento y otros: 0%, 2%, 2%, 2%, 2% | 3,1% | 11% | 2,1 | US$37,86 | US$36,89 |
-| **B · Pérdida de relevancia prolongada** | 30% | Calzado: -4%, 0%, 2%, 2%, 2%; Indumentaria: -2%, 1%, 2%, 2%, 2%; Equipamiento y otros: 0%, 0%, 0%, 0%, 0% | 0,5% | 8% | 2,1 | US$26,25 | US$25,61 |
-| **C · Vuelve la Nike de márgenes históricos** | 20% | Calzado: 0%, 6%, 7%, 6%, 5%; Indumentaria: 2%, 6%, 6%, 5%, 5%; Equipamiento y otros: 3%, 3%, 3%, 3%, 3% | 4,7% | 14% | 2,1 | US$50,56 | US$49,24 |
-| **D · Aranceles y competencia estructural** | 5% | Calzado: -6%, -3%, 0%, 1%, 1%; Indumentaria: -4%, -2%, 0%, 1%, 1%; Equipamiento y otros: -2%, -2%, -2%, -2%, -2% | -1,3% | 6% | 2,1 | US$17,75 | US$17,33 |
-| **Valor esperado** | 100% |  |  |  |  | **US$35,91** | **US$35,00** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,00) | Valor/acción (beta 1,12) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| **A · Recuperación lenta con la vuelta a los mayoristas** | 45% | Calzado: -2%, 4%, 5%, 5%, 4%; Indumentaria: 0%, 4%, 4%, 4%, 4%; Equipamiento y otros: 0%, 2%, 2%, 2%, 2% | 3,1% | 11% | 2,1 | 13,3% | US$37,86 | US$36,89 |
+| **B · Pérdida de relevancia prolongada** | 30% | Calzado: -4%, 0%, 2%, 2%, 2%; Indumentaria: -2%, 1%, 2%, 2%, 2%; Equipamiento y otros: 0%, 0%, 0%, 0%, 0% | 0,5% | 8% | 2,1 | = costo de capital | US$21,71 | US$21,19 |
+| **C · Vuelve la Nike de márgenes históricos** | 20% | Calzado: 0%, 6%, 7%, 6%, 5%; Indumentaria: 2%, 6%, 6%, 5%, 5%; Equipamiento y otros: 3%, 3%, 3%, 3%, 3% | 4,7% | 14% | 2,1 | 13,3% | US$50,56 | US$49,24 |
+| **D · Aranceles y competencia estructural** | 5% | Calzado: -6%, -3%, 0%, 1%, 1%; Indumentaria: -4%, -2%, 0%, 1%, 1%; Equipamiento y otros: -2%, -2%, -2%, -2%, -2% | -1,3% | 6% | 2,1 | = costo de capital | US$14,92 | US$14,59 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$34,41** | **US$33,53** |
 
-A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,00; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
@@ -117,7 +117,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,00 | 7,6% (31% de las empresas) | 2,2% (66% de las empresas) | -1,6% (82% de las empresas) |
 | Beta 1,12 | 8,4% (29% de las empresas) | 2,8% (62% de las empresas) | -1,0% (79% de las empresas) |
 
-Frente al valor esperado de las historias (US$35,91 con la beta de la hoja; US$35,00 con la propuesta), el precio está por encima en 1% y por encima en 4%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda prácticamente en el valor esperado (US$35,91), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.
+Frente al valor esperado de las historias (US$34,41 con la beta de la hoja; US$33,53 con la propuesta), el precio está por encima en 6% y por encima en 9%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda 6% por encima del valor esperado (US$34,41), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$35,91 con la beta de la hoja; US$3
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Marca deportiva líder que reconstruye producto y canal con márgenes en mínimos |  |
 | Probabilidades | A 45% / B 30% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$35,91 / US$35,00 |  |
-| Rango (historia más débil a más fuerte) | US$17,33 a US$50,56 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$34,41 / US$33,53 |  |
+| Rango (historia más débil a más fuerte) | US$14,59 a US$50,56 |  |
 | Confianza | Media: la marca da piso; el margen y la duración de la recuperación son inciertos |  |
 | Qué cambiaría la opinión | Margen bruto y crecimiento sin divisas en FY27; participación en running |  |
 | Revisión | Resultados del 2T FY27 (dic-2026) |  |

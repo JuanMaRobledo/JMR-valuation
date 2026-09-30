@@ -91,6 +91,7 @@
     "More Personal Computing": 0.09410667538074706
    },
    "tasa_base": 0.09643877482672882,
+   "roic_terminal_usado": 0.259,
    "valor_beta_hoja": 467.91738689443815,
    "valor_beta_prop": 477.9567593959708
   },
@@ -121,6 +122,7 @@
      0.01
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": 0.08014774766420296,
    "rev5": 487913.9641784892,
    "mix5": {
@@ -129,8 +131,9 @@
     "More Personal Computing": 0.10983516564935378
    },
    "tasa_base": 0.254600612894994,
-   "valor_beta_hoja": 328.8889765659143,
-   "valor_beta_prop": 335.6143196858818
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 237.14469491236412,
+   "valor_beta_prop": 241.73888253972333
   },
   {
    "nombre": "C · Microsoft gana la plataforma empresarial de IA",
@@ -168,6 +171,7 @@
     "More Personal Computing": 0.08265105065569592
    },
    "tasa_base": 0.0328008938037265,
+   "roic_terminal_usado": 0.259,
    "valor_beta_hoja": 617.1172766079355,
    "valor_beta_prop": 630.8329960433267
   },
@@ -206,12 +210,13 @@
     "More Personal Computing": 0.12045178623372947
    },
    "tasa_base": 0.44355681430418087,
+   "roic_terminal_usado": 0.259,
    "valor_beta_hoja": 266.57169854275793,
    "valor_beta_prop": 271.8071346243851
   }
  ],
- "valor_esperado_beta_hoja": 442.86569341983864,
- "valor_esperado_beta_prop": 452.33143432076116,
+ "valor_esperado_beta_hoja": 419.92962300645115,
+ "valor_esperado_beta_prop": 428.86257503422155,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
@@ -276,7 +281,7 @@
     510.56764256937913,
     538.0689706752684,
     565.5702987811576,
-    593.0716268870467,
+    593.0716268870468,
     620.5729549929363
    ]
   ]

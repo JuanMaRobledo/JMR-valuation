@@ -84,6 +84,7 @@
     "Otros": 0.016116515676587503
    },
    "tasa_base": 0.29353963473838196,
+   "roic_terminal_usado": 0.293,
    "valor_beta_hoja": 474.2156627751833,
    "valor_beta_prop": 483.8010221099031
   },
@@ -107,6 +108,7 @@
      0.05
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": 0.05422366658381561,
    "rev5": 33817.052957600004,
    "mix5": {
@@ -115,8 +117,9 @@
     "Otros": 0.018333945325672205
    },
    "tasa_base": 0.4534616938735223,
-   "valor_beta_hoja": 378.42914739747255,
-   "valor_beta_prop": 385.93733700684635
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 271.7959219940727,
+   "valor_beta_prop": 276.87275575988224
   },
   {
    "nombre": "C · La IA generativa comoditiza la creatividad",
@@ -138,6 +141,7 @@
      0.02
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": 0.009473581880143467,
    "rev5": 27223.67421425,
    "mix5": {
@@ -146,8 +150,9 @@
     "Otros": 0.022774295457718426
    },
    "tasa_base": 0.710142541190589,
-   "valor_beta_hoja": 259.2339871755276,
-   "valor_beta_prop": 264.17616077817434
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 191.11925211537113,
+   "valor_beta_prop": 194.50833418866736
   },
   {
    "nombre": "D · La IA amplía el mercado de Adobe",
@@ -177,12 +182,13 @@
     "Otros": 0.014105243037896351
    },
    "tasa_base": 0.1877376530590391,
+   "roic_terminal_usado": 0.293,
    "valor_beta_hoja": 597.3238777308591,
    "valor_beta_prop": 609.5923799605991
   }
  ],
- "valor_esperado_beta_hoja": 420.7539525486038,
- "valor_esperado_beta_prop": 429.18413890914354,
+ "valor_esperado_beta_hoja": 373.2151133983904,
+ "valor_esperado_beta_prop": 380.5613614842801,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
