@@ -1,6 +1,6 @@
 {
  "fecha": "2026-09-30",
- "regla": "Ancho: menor entre ROIC actual e industria; estrecho: punto medio entre el costo de capital terminal y ese valor; sin moat: costo de capital.",
+ "regla": "Ancho: dos o más fuentes estructurales (o efectos de red / costos de cambio fuertes), ROIC sobre el costo de capital los últimos 5 años e historias de erosión < 40% → menor entre el ROIC actual y el de la industria. Estrecho: al menos una fuente ESTRUCTURAL (costos de cambio, efectos de red, escala o ventaja de costos, licencias o regulación, patentes que se renuevan) y ROIC sobre el costo de capital al menos 3 años seguidos → punto medio entre el costo de capital terminal y ese valor. La marca sola no alcanza en consumo discrecional, moda o apps de consumo con costos de cambio bajos. Sin moat → costo de capital.",
  "empresas": {
   "MSFT": {
    "moat": "ancho",
@@ -159,7 +159,7 @@
    "roic_terminal_antes": null
   },
   "DUOL": {
-   "moat": "estrecho",
+   "moat": "sin moat",
    "fuentes": "Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos",
    "evidencia": "ROIC por encima del costo de capital en 2021-2026 (serie volátil)",
    "amenaza": "IA generalista (D, 10%) y costos de cambio bajos",
@@ -167,11 +167,12 @@
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
    "costo_capital_terminal": 0.0922,
-   "roic_terminal": 0.174,
-   "roic_terminal_antes": null
+   "roic_terminal": null,
+   "roic_terminal_antes": null,
+   "nota": "Ajuste del 30-sep-2026: La marca y el hábito de uso no bastan: costos de cambio bajos (cualquier app o IA enseña idiomas). Antes se clasificó como estrecho."
   },
   "ONON": {
-   "moat": "estrecho",
+   "moat": "sin moat",
    "fuentes": "Marca y tecnología (CloudTec), joven",
    "evidencia": "ROIC 13-39% desde 2022 (4 años)",
    "amenaza": "Ciclo de moda: historias B y D suman 40%",
@@ -179,8 +180,9 @@
    "roic_industria": 0.2093,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.15,
-   "roic_terminal_antes": null
+   "roic_terminal": null,
+   "roic_terminal_antes": null,
+   "nota": "Ajuste del 30-sep-2026: Marca joven en un sector de modas (4 años de retornos altos); sin fuente estructural. Antes se clasificó como estrecho."
   },
   "BSX": {
    "moat": "sin moat",
