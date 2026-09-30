@@ -95,7 +95,8 @@
      0.0,
      0.0
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   },
   {
    "nombre": "D · Maduran los campus y crece lo digital",
@@ -214,7 +215,7 @@
  "reinversion": {
   "texto": "Crecer exige capital: campus, hospitales-escuela y compras de plazas (con earn-outs). El capex fue US$49-73 millones al año (~10% de las ventas) y la hoja usa un sales-to-capital de 1,5 (años 1-5) y 1,2 (años 6-10), prudente para educación presencial. Si el crecimiento viene de comprar plazas, cada punto de crecimiento cuesta más que en el DCF. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 14,8% (el actual, por debajo del de Education (15,9%)); antes era igual al costo de capital."
  },
- "prob_texto": "A (45%) es la continuación de 2024-2026: crecimiento de un dígito medio y margen estable. B (30%) refleja que el precio real de la matrícula no puede subir para siempre y que el 1S26 ya estuvo en el rango bajo de la guía. C (15%) es el riesgo regulatorio: poco probable, pero es el que rompe la tesis. D (10%) necesita que la madurez de los campus nuevos y lo digital aceleren.",
+ "prob_texto": "A (45%) es la continuación de 2024-2026: crecimiento de un dígito medio y margen estable. B (30%) refleja que el precio real de la matrícula no puede subir para siempre y que el 1S26 ya estuvo en el rango bajo de la guía. C (15%) es el riesgo regulatorio: poco probable, pero es el que rompe la tesis. D (10%) necesita que la madurez de los campus nuevos y lo digital aceleren. En las historias donde la ventaja se erosiona (C), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "CADE bloquea o condiciona la fusión y la acción queda atrapada entre el valor de canje y el standalone durante meses.",
   "Un cambio de política (o una nueva ronda de Mais Médicos) abre plazas y baja el precio de la matrícula.",
@@ -255,7 +256,7 @@
    "Nueva depreciación fuerte"
   ]
  ],
- "precio_lectura": "El DCF inverso da un resultado extremo: el precio solo se justifica si los ingresos caen 3-8% al año durante cinco años con márgenes de 26-33%. Eso no se parece a ninguna historia con datos de 2024-2026. ¿Qué sabe el mercado que yo no? Probablemente dos cosas que el DCF standalone no captura: que el precio está anclado a la relación de canje con Yduqs (US$13,71 según el modelo) y un descuento por gobierno corporativo y país (controlador con 72% de los votos, real volátil). Antes de concluir que es una ganga, decide qué historia vale si se cierra la fusión.",
+ "precio_lectura": "El precio (US$12,04) sigue por debajo incluso de la historia C (US$13,24), en la que se liberan plazas y la ventaja regulatoria se pierde. El DCF inverso pide ingresos cayendo 3-8% al año durante cinco años con márgenes de 26-33%, algo que no se parece a ninguna historia con datos de 2024-2026. ¿Qué sabe el mercado que yo no? Probablemente dos cosas que el DCF standalone no captura: que el precio está anclado a la relación de canje con Yduqs (US$13,71 según el modelo) y un descuento por gobierno corporativo y país (controlador con 72% de los votos, real volátil). Antes de concluir que es una ganga, decide qué historia vale si se cierra la fusión.",
  "frase": "Escasez regulada de plazas de Medicina en Brasil; la fusión con Yduqs está por decidirse",
  "confianza": "Media: el negocio standalone es claro; la fusión y la moneda dominan el resultado",
  "cambiaria": "Resolución de CADE y asambleas sobre la fusión; crecimiento de grado y margen en 2027",

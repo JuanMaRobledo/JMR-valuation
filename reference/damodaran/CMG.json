@@ -65,7 +65,8 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   }
  ],
  "margenes_inverso": [
@@ -156,7 +157,7 @@
  "reinversion": {
   "texto": "Todo el crecimiento es propio: cada local nuevo se paga con caja (capex de US$560-670 millones al año). La hoja usa un sales-to-capital de 2,6 (años 1-5) y 2,2 (años 6-10). El retorno sobre el capital es alto (los locales se pagan en 2-3 años), así que el crecimiento crea valor mientras la economía unitaria se sostenga. La empresa además recompró US$2.783 millones LTM. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 18,4% (el de Restaurant/Dining; el actual, 53%, no se sostiene para siempre); antes era igual al costo de capital."
  },
- "prob_texto": "A (45%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (30%) extiende la debilidad del consumidor y los costos. C (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. D (5%) es saturación: canibalización y tráfico negativo.",
+ "prob_texto": "A (45%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (30%) extiende la debilidad del consumidor y los costos. C (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. D (5%) es saturación: canibalización y tráfico negativo. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "Las comparables siguen planas o negativas: la marca perdió frescura frente a Cava, Sweetgreen y cadenas más baratas.",
   "El margen no vuelve: alimentos, aranceles y salarios suben más rápido que el precio que el cliente acepta.",
@@ -197,7 +198,7 @@
    "Caída"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$31,85) sigue por encima del valor esperado (US$24,73) y del DCF (US$27,91), cerca de la historia C (US$33,05). El DCF inverso pide 9-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-31% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$31,85) sigue por encima del valor esperado (US$24,55) y del DCF (US$27,91), cerca de la historia C (US$33,05). El DCF inverso pide 9-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-31% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha.",
  "frase": "Cadena de restaurantes propios con gran economía unitaria y tráfico débil",
  "confianza": "Media: las aperturas son predecibles; el tráfico y el margen no",
  "cambiaria": "Comparables y tráfico de los próximos dos trimestres; margen operativo",

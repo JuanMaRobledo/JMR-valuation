@@ -67,7 +67,8 @@
      0,
      0
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   },
   {
    "nombre": "C · Vuelve la Nike de márgenes históricos",
@@ -123,7 +124,8 @@
      -0.02,
      -0.02
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   }
  ],
  "margenes_inverso": [
@@ -208,7 +210,7 @@
  "reinversion": {
   "texto": "Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 13,3%, el actual con el margen deprimido (antes igual al costo de capital): la marca sigue ganando por encima de su costo."
  },
- "prob_texto": "A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia.",
+ "prob_texto": "A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "On, Hoka, Adidas y marcas chinas siguen ganando en running y básquet; los productos nuevos de Nike no rotan.",
   "Los aranceles suben o se quedan y Nike no puede trasladarlos a precio.",
@@ -249,7 +251,7 @@
    "Caídas de doble dígito"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda prácticamente en el valor esperado (US$35,91), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda 6% por encima del valor esperado (US$34,41), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.",
  "frase": "Marca deportiva líder que reconstruye producto y canal con márgenes en mínimos",
  "confianza": "Media: la marca da piso; el margen y la duración de la recuperación son inciertos",
  "cambiaria": "Margen bruto y crecimiento sin divisas en FY27; participación en running",

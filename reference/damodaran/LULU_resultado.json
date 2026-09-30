@@ -91,12 +91,13 @@
     "Resto del mundo": 0.19918290619141238
    },
    "tasa_base": 0.6951316701214652,
+   "roic_terminal_usado": 0.158,
    "valor_beta_hoja": 178.02917677533753,
    "valor_beta_prop": 189.66502125401973
   },
   {
    "nombre": "B · Pérdida estructural frente a Alo y Vuori",
-   "prob": 0.3,
+   "prob": 0.35,
    "margen": 0.14,
    "crec": {
     "Américas": [
@@ -121,6 +122,7 @@
      0.05
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": -0.006385513542655374,
    "rev5": 10744.290325125,
    "mix5": {
@@ -129,12 +131,13 @@
     "Resto del mundo": 0.19739224750521867
    },
    "tasa_base": 0.8361047179409999,
-   "valor_beta_hoja": 118.48020839470229,
-   "valor_beta_prop": 125.84341037267336
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 95.68035413387673,
+   "valor_beta_prop": 101.37135327866666
   },
   {
    "nombre": "C · La marca se recupera",
-   "prob": 0.2,
+   "prob": 0.15,
    "margen": 0.21,
    "crec": {
     "Américas": [
@@ -167,6 +170,7 @@
     "Resto del mundo": 0.19242799639700084
    },
    "tasa_base": 0.5152596199360575,
+   "roic_terminal_usado": 0.158,
    "valor_beta_hoja": 239.2535410871873,
    "valor_beta_prop": 255.29616616345703
   },
@@ -197,6 +201,7 @@
      0.02
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": -0.03527493594186737,
    "rev5": 9270.56003904,
    "mix5": {
@@ -205,12 +210,13 @@
     "Resto del mundo": 0.19779172685557414
    },
    "tasa_base": 0.9149464192867528,
-   "valor_beta_hoja": 78.8684405904778,
-   "valor_beta_prop": 83.4214621629292
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 65.60072741263818,
+   "valor_beta_prop": 69.18065909986439
   }
  ],
- "valor_esperado_beta_hoja": 162.49328550503094,
- "valor_esperado_beta_prop": 173.02041106239423,
+ "valor_esperado_beta_hoja": 147.14789856133376,
+ "valor_esperado_beta_prop": 156.55847298364623,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",

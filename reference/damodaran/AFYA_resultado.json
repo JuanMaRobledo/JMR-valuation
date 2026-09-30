@@ -91,6 +91,7 @@
     "Soluciones para la práctica médica": 0.04571054375941404
    },
    "tasa_base": 0.6788248871113169,
+   "roic_terminal_usado": 0.148,
    "valor_beta_hoja": 26.183769098652263,
    "valor_beta_prop": 26.460073480781872
   },
@@ -129,6 +130,7 @@
     "Soluciones para la práctica médica": 0.03988202291671839
    },
    "tasa_base": 0.8034457344423269,
+   "roic_terminal_usado": 0.148,
    "valor_beta_hoja": 20.699390032176243,
    "valor_beta_prop": 20.919906322528373
   },
@@ -159,6 +161,7 @@
      0.0
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": 0.003498183775823449,
    "rev5": 735.8364813720609,
    "mix5": {
@@ -167,8 +170,9 @@
     "Soluciones para la práctica médica": 0.04213475204758585
    },
    "tasa_base": 0.8938431965545509,
-   "valor_beta_hoja": 14.844871734615955,
-   "valor_beta_prop": 15.006157209915775
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 13.240119508618564,
+   "valor_beta_prop": 13.384247334377193
   },
   {
    "nombre": "D · Maduran los campus y crece lo digital",
@@ -205,12 +209,13 @@
     "Soluciones para la práctica médica": 0.049192981535439724
    },
    "tasa_base": 0.5954673074787761,
+   "roic_terminal_usado": 0.148,
    "valor_beta_hoja": 30.465811628262646,
    "valor_beta_prop": 30.785823176269393
   }
  ],
- "valor_esperado_beta_hoja": 23.26582502706505,
- "valor_esperado_beta_prop": 23.512510862224662,
+ "valor_esperado_beta_hoja": 23.02511219316544,
+ "valor_esperado_beta_prop": 23.269224380893874,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",

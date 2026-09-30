@@ -14,7 +14,7 @@
  "historias": [
   {
    "nombre": "A · Tropiezo temporal; vuelve a crecer con innovación",
-   "prob": 0.45,
+   "prob": 0.4,
    "margen": 0.36,
    "crec": {
     "Animales de compañía": [
@@ -35,7 +35,7 @@
   },
   {
    "nombre": "B · Erosión prolongada de franquicias clave",
-   "prob": 0.3,
+   "prob": 0.35,
    "margen": 0.33,
    "crec": {
     "Animales de compañía": [
@@ -52,7 +52,8 @@
      0.03,
      0.03
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   },
   {
    "nombre": "C · Recuperación fuerte con nuevos productos",
@@ -94,7 +95,8 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   }
  ],
  "margenes_inverso": [
@@ -185,7 +187,7 @@
  "reinversion": {
   "texto": "Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 16,9% (el de Drugs (Pharmaceutical); el actual es 25%); antes era igual al costo de capital."
  },
- "prob_texto": "A (45%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (30%) es una erosión prolongada de dermatología, dolor y parasiticidas. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados.",
+ "prob_texto": "A (40%, antes 45%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%, antes 30%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "Los competidores en dermatología (nuevos inhibidores de JAK y anticuerpos) le quitan participación a Apoquel y Cytopoint.",
   "Las dudas de seguridad sobre Librela reducen su uso de forma permanente.",
@@ -226,7 +228,7 @@
    "> 2,5x"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$71,43) queda 33% por debajo del valor esperado (US$106,88) y cerca de la historia D (US$66,98). El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño): el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Descuenta que la erosión de franquicias no es temporal y quizá que Zoetis no conserve retornos por encima de su costo de capital. La decisión depende de si 2026 es un tropiezo o un cambio de régimen.",
+ "precio_lectura": "El precio (US$71,43) queda entre la historia B (US$65,03) y la A (US$117,71), por debajo del valor esperado (US$95,39): el mercado valora algo cercano a B, una erosión que no es temporal. El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Descuenta que la caída de 2026 es un cambio de régimen y no un tropiezo. Los resultados del 3T (mascotas en EE.UU. y Librela) dirán cuál de las dos historias pesa más.",
  "frase": "Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez",
  "confianza": "Media: la calidad del negocio es alta; la duración de la presión competitiva no",
  "cambiaria": "Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres",

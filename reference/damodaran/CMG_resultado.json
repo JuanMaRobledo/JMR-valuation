@@ -75,6 +75,7 @@
     "Chipotle": 1.0
    },
    "tasa_base": 0.3811542391433775,
+   "roic_terminal_usado": 0.184,
    "valor_beta_hoja": 25.25933331932106,
    "valor_beta_prop": 27.39952630604021
   },
@@ -97,6 +98,7 @@
     "Chipotle": 1.0
    },
    "tasa_base": 0.5276268617456333,
+   "roic_terminal_usado": 0.184,
    "valor_beta_hoja": 19.94585052843723,
    "valor_beta_prop": 21.588636327404803
   },
@@ -119,6 +121,7 @@
     "Chipotle": 1.0
    },
    "tasa_base": 0.24716739337560983,
+   "roic_terminal_usado": 0.184,
    "valor_beta_hoja": 33.05009231019794,
    "valor_beta_prop": 35.92617109690341
   },
@@ -135,18 +138,20 @@
      0.02
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": 0.02598828880504489,
    "rev5": 14124.28489938504,
    "mix5": {
     "Chipotle": 1.0
    },
    "tasa_base": 0.687417996558401,
-   "valor_beta_hoja": 15.471903657107598,
-   "valor_beta_prop": 16.695486140914944
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 11.84141913392762,
+   "valor_beta_prop": 12.717058769732756
   }
  ],
- "valor_esperado_beta_hoja": 24.734068797120614,
- "valor_esperado_beta_prop": 26.82638626236597,
+ "valor_esperado_beta_hoja": 24.552544570961615,
+ "valor_esperado_beta_prop": 26.62746489380686,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",

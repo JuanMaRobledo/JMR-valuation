@@ -99,6 +99,7 @@
     "Enfermedades raras": 0.06678485036715869
    },
    "tasa_base": 0.7148946655129816,
+   "roic_terminal_usado": 0.169,
    "valor_beta_hoja": 40.475734047295305,
    "valor_beta_prop": 41.211575747661136
   },
@@ -136,6 +137,7 @@
      0
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": -0.028317103394146836,
    "rev5": 40151.395052044,
    "mix5": {
@@ -145,8 +147,9 @@
     "Enfermedades raras": 0.07279946303761613
    },
    "tasa_base": 0.862440049566401,
-   "valor_beta_hoja": 31.247896553387143,
-   "valor_beta_prop": 31.78172799541061
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 24.817974282594218,
+   "valor_beta_prop": 25.2203212745707
   },
   {
    "nombre": "C · La nueva generación recupera el liderazgo",
@@ -191,6 +194,7 @@
     "Enfermedades raras": 0.06105303648853781
    },
    "tasa_base": 0.5678270302015944,
+   "roic_terminal_usado": 0.169,
    "valor_beta_hoja": 48.84108187375289,
    "valor_beta_prop": 49.76193746501309
   },
@@ -228,6 +232,7 @@
      0
     ]
    },
+   "roic_terminal": "costo_capital",
    "cagr": -0.05959356572762853,
    "rev5": 34092.261172096005,
    "mix5": {
@@ -237,12 +242,13 @@
     "Enfermedades raras": 0.08573793287704926
    },
    "tasa_base": 0.9137334477933108,
-   "valor_beta_hoja": 24.957890013381157,
-   "valor_beta_prop": 25.35489958940319
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 20.563741357386736,
+   "valor_beta_prop": 20.870895691754825
   }
  ],
- "valor_esperado_beta_hoja": 37.828667961022965,
- "valor_esperado_beta_prop": 38.507026149630576,
+ "valor_esperado_beta_hoja": 35.460276414185635,
+ "valor_esperado_beta_prop": 36.09020374361376,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",

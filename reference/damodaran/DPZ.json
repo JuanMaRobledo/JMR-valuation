@@ -52,7 +52,8 @@
      0.03,
      0.03
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   },
   {
    "nombre": "C · Agregadores e internacional aceleran",
@@ -94,7 +95,8 @@
      0.01,
      0.01
     ]
-   }
+   },
+   "roic_terminal": "costo_capital"
   }
  ],
  "margenes_inverso": [
@@ -179,7 +181,7 @@
  "reinversion": {
   "texto": "Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 18,4%, el de la industria. Antes era igual al costo de capital, lo que borraba el valor de la franquicia."
  },
- "prob_texto": "A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades).",
+ "prob_texto": "A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
  "premortem": [
   "Las ventas mismas tiendas de EE.UU. son negativas varios trimestres: los agregadores hacen irrelevante la logística propia.",
   "Grandes franquiciados internacionales (como Domino's Pizza Enterprises o Jubilant) cierran tiendas o reducen aperturas.",
@@ -220,7 +222,7 @@
    "> 5,5x"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$292,27) queda por debajo del valor esperado (US$338,82), entre las historias B y A. El DCF inverso pide solo 2,2% anual en los años 1-5 con margen de 20% (lo logró ~78% de las empresas de este tamaño), o 3,0% con margen de 19%: menos de lo que muestran los últimos trimestres. ¿Qué sabe el mercado que yo no? Puede estar descontando que los agregadores y la competencia de precios erosionen el retorno de la franquicia más rápido de lo que supone la hoja. Si crees en la historia A, hay margen de seguridad; con B, el precio es justo.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$292,27) queda por debajo del valor esperado (US$309,85), entre las historias B y A. El DCF inverso pide solo 2,2% anual en los años 1-5 con margen de 20% (lo logró ~78% de las empresas de este tamaño), o 3,0% con margen de 19%: menos de lo que muestran los últimos trimestres. ¿Qué sabe el mercado que yo no? Puede estar descontando que los agregadores y la competencia de precios erosionen el retorno de la franquicia más rápido de lo que supone la hoja. Si crees en la historia A, hay margen de seguridad; con B, el precio es justo.",
  "frase": "Compuesto de franquicias maduro que crece por tiendas nuevas, con ventas por tienda planas",
  "confianza": "Media-alta en el negocio; media en el crecimiento por tienda",
  "cambiaria": "Ventas mismas tiendas en EE.UU. y aperturas internacionales netas",
