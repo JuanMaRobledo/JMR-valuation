@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Afya Limited"
 ticker: "AFYA"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$11,63 / US$14,08 / US$16,59 · DCF hoy: US$17,65
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para AFYA la diferencia es de −37% (múltiplos por debajo del DCF). Los múltiplos (US$14,08 hoy) quedan 37% por debajo del DCF (US$22,43): el mercado brasileño paga hoy ~5-6x EBITDA por las educadoras, con tasas locales altas, mientras que el DCF supone que Afya sostiene su margen EBIT de ~33% y descuenta con un Ke de 14% que ya incluye el riesgo país. Para el valor standalone de Afya el DCF es más confiable; los múltiplos reflejan el descuento que hoy aplica el mercado local y, además, la acción sigue la relación de canje de la fusión con Yduqs.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$12,04 supone que los ingresos crecen -6,0% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,2% (−11,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 14,0%, WACC de los años 4-10 11,1% y ROE de FY+3 15,2%, frente al crecimiento del DCF (5,1%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 7,5x | 1,9% | −3,2 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| EV/FCFF | 10,4x | 1,4% | −3,7 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/E | 8,6x | 8,2% | +3,0 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/FCFE | 8,8x | 2,4% | −2,8 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/OCF | 6,2x | 1,0% | −4,1 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

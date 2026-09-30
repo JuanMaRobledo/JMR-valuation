@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Palantir Technologies Inc."
 ticker: "PLTR"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$76,96 / US$137,05 / US$221,90 · DCF hoy: US$58,
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PLTR la diferencia es de +30% (múltiplos por encima del DCF). Los múltiplos (US$137,05 hoy) quedan 30% por encima del DCF (US$105,73); el precio (US$187,48) está por encima de ambos. Los múltiplos suponen que a FY+3 Palantir cotiza como el software de crecimiento alto de hoy con una prima de 25% (~60x EBITDA, ~78x utilidad), mientras que el DCF lleva el crecimiento de 40% en FY+3 a 5% en el año 10 con un WACC de 10,9%. El mercado paga por un crecimiento alto más largo que ambos. Ojo: P/E da US$196 porque la utilidad normalizada de FY+3 de la hoja (US$12.204 millones) supera al EBITDA (US$7.991 millones); conviene revisar esa proyección. Mientras tanto, el DCF y los múltiplos de flujo son la referencia más prudente.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$187,48 supone que los ingresos crecen 61,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 48,4% (+13,5 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 12,2%, WACC de los años 4-10 10,9% y ROE de FY+3 123,5%, frente al crecimiento del DCF (15,0%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 59,6x | 9,1% | — | No comparable: el DCF supone después de FY+3 un crecimiento cercano o mayor al costo de capital (Gordon no aplica). |
+| EV/FCFF | 73,7x | 9,5% | — | No comparable: el DCF supone después de FY+3 un crecimiento cercano o mayor al costo de capital (Gordon no aplica). |
+| P/E | 78,0x | 10,9% | — | No comparable: el DCF supone después de FY+3 un crecimiento cercano o mayor al costo de capital (Gordon no aplica). |
+| P/FCFE | 51,8x | 10,1% | — | No comparable: el DCF supone después de FY+3 un crecimiento cercano o mayor al costo de capital (Gordon no aplica). |
+| P/OCF | 69,0x | 10,6% | — | No comparable: el DCF supone después de FY+3 un crecimiento cercano o mayor al costo de capital (Gordon no aplica). |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

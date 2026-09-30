@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de BOSTON SCIENTIFIC CORP"
 ticker: "BSX"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$45,19 / US$59,06 / US$80,58 · DCF hoy: US$26,90
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para BSX la diferencia es de +51% (múltiplos por encima del DCF). Los múltiplos (US$59,06 hoy) quedan 51% por encima del DCF (US$39,12). Los múltiplos suponen que, a FY+3, el mercado vuelve a pagar por Boston Scientific algo parecido a sus peers de medtech (~16x EBITDA, ~22x utilidad); el DCF ya incorpora la desaceleración de 2026 y da un valor incluso menor que el precio. Mientras no se confirme que el crecimiento se recupera (Watchman, electrofisiología) y que el ciberataque fue puntual, el DCF es la referencia más prudente; los múltiplos muestran el potencial si la empresa vuelve a cotizar como sus peers.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$44,11 supone que los ingresos crecen 9,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 7,0% (+2,3 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,4%, WACC de los años 4-10 8,9% y ROE de FY+3 19,2%, frente al crecimiento del DCF (5,6%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 17,2x | 4,2% | −1,4 pp | Coherente con el DCF. |
+| EV/FCFF | 24,2x | 4,6% | −1,0 pp | Coherente con el DCF. |
+| P/E | 22,5x | 6,3% | +0,7 pp | Coherente con el DCF. |
+| P/FCFE | 21,6x | 4,6% | −0,9 pp | Coherente con el DCF. |
+| P/OCF | 18,5x | 4,1% | −1,5 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

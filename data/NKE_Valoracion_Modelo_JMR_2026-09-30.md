@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de NIKE, Inc."
 ticker: "NKE"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$24,07 / US$36,79 / US$49,21 · DCF hoy: US$16,19
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NKE la diferencia es de +24% (múltiplos por encima del DCF). Los múltiplos (US$36,79 hoy) quedan 24% por encima del DCF (US$29,76), en el límite del rango de ±25%. Los múltiplos suponen que a FY+3 el mercado sigue pagando por Nike cerca de lo que paga hoy en plena reestructuración (~15x EBITDA, ~22x utilidad), mientras que el DCF refleja una recuperación lenta de ventas y márgenes. Si la recuperación se demora más (China, inventarios), el DCF es la referencia más prudente.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$36,39 supone que los ingresos crecen 8,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 2,4% (+5,9 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,3%, WACC de los años 4-10 8,8% y ROE de FY+3 23,0%, frente al crecimiento del DCF (4,5%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 13,6x | 3,7% | −0,8 pp | Coherente con el DCF. |
+| EV/FCFF | 22,4x | 4,1% | −0,4 pp | Coherente con el DCF. |
+| P/E | 18,3x | 4,7% | +0,2 pp | Coherente con el DCF. |
+| P/FCFE | 20,6x | 4,2% | −0,3 pp | Coherente con el DCF. |
+| P/OCF | 18,1x | 3,9% | −0,6 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de ADOBE INC."
 ticker: "ADBE"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$318,83 / US$486,87 / US$812,69 · DCF hoy: US$29
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ADBE la diferencia es de +29% (múltiplos por encima del DCF). Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$231,01 supone que los ingresos crecen 0,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 10,4% (−9,5 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 11,2%, WACC de los años 4-10 10,1% y ROE de FY+3 95,6%, frente al crecimiento del DCF (6,4%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 19,6x | 6,5% | +0,1 pp | Coherente con el DCF. |
+| EV/FCFF | 21,0x | 5,1% | −1,3 pp | Coherente con el DCF. |
+| P/E | 24,7x | 7,2% | +0,8 pp | Coherente con el DCF. |
+| P/FCFE | 19,5x | 5,8% | −0,7 pp | Coherente con el DCF. |
+| P/OCF | 18,9x | 5,8% | −0,6 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

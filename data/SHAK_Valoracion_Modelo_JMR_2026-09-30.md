@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Shake Shack Inc."
 ticker: "SHAK"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$30,96 / US$49,99 / US$93,17 · DCF hoy: US$12,31
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para SHAK la diferencia es de +139% (múltiplos por encima del DCF). Los múltiplos (US$49,99 hoy) quedan 139% por encima del DCF (US$20,96); el precio (US$57,52) está más cerca de los múltiplos. Los múltiplos (~18x EBITDA, igual a la historia actual y a los peers) aplicados al EBITDA de FY+3 de la hoja (US$288 millones) dan un valor parecido al del mercado. El DCF queda muy por debajo del precio y de su propia proyección de EBITDA: el capex de expansión (60-65 locales al año) absorbe casi todo el flujo de caja. Conviene revisar los supuestos de reinversión (sales-to-capital) y de margen del DCF; hasta entonces, el DCF subestima el valor y los múltiplos son la mejor referencia.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$57,52 supone que los ingresos crecen — al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,4% (—). Ningún crecimiento entre −20% y 80% justifica el precio con estos márgenes.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 12,1%, WACC de los años 4-10 10,4% y ROE de FY+3 19,6%, frente al crecimiento del DCF (6,7%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 18,2x | 9,9% | +3,2 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| EV/FCFF | 47,6x | 8,2% | +1,5 pp | Coherente con el DCF. |
+| P/E | 44,9x | 11,0% | +4,3 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/FCFE | 41,7x | 9,5% | +2,8 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/OCF | 14,8x | 10,2% | +3,5 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Microsoft Corporation"
 ticker: "MSFT"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$322,80 / US$437,36 / US$569,86 · DCF hoy: US$26
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para MSFT la diferencia es de +33% (múltiplos por encima del DCF). Los múltiplos (US$437,36 hoy) quedan 33% por encima del DCF (US$329,42). Los múltiplos suponen que Microsoft conserva a FY+3 una valoración parecida a la de sus últimos cinco años (~22x EBITDA, ~32x utilidad, ajustada por los peers), mientras que el DCF carga el capex de US$190 mil millones de 2026 contra el flujo de caja y usa un WACC de ~9,4%. El precio (US$509,22) está por encima de ambos. El DCF parece conservador frente a la aceleración de Azure (~40%) y conviene revisar su crecimiento y su reinversión; los múltiplos están más cerca de lo que paga el mercado.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$509,22 supone que los ingresos crecen 23,1% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,9% (+10,2 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 10,2%, WACC de los años 4-10 9,4% y ROE de FY+3 40,6%, frente al crecimiento del DCF (6,5%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 18,3x | 7,3% | +0,8 pp | Coherente con el DCF. |
+| EV/FCFF | 40,7x | 6,8% | +0,4 pp | Coherente con el DCF. |
+| P/E | 26,2x | 6,8% | +0,4 pp | Coherente con el DCF. |
+| P/FCFE | 39,6x | 7,5% | +1,1 pp | Coherente con el DCF. |
+| P/OCF | 18,9x | 7,5% | +1,0 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

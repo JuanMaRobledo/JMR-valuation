@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de DOMINOS PIZZA INC"
 ticker: "DPZ"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$355,81 / US$422,49 / US$526,04 · DCF hoy: US$15
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para DPZ la diferencia es de +86% (múltiplos por encima del DCF). Los múltiplos (US$422,49 hoy) quedan 86% por encima del DCF (US$226,68). Domino's cotizó durante una década a 25-30x utilidades y hoy los franquiciadores comparables cotizan a ~19x; incluso el ancla más baja implica un valor mayor que el del DCF, que queda por debajo del precio actual (US$292). La brecha sugiere que los supuestos del DCF (crecimiento y margen de largo plazo) son más conservadores que cualquier referencia de mercado para un franquiciador de flujos estables: conviene revisarlos antes de dar más peso a uno de los dos métodos.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$292,27 supone que los ingresos crecen 7,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,4% (+3,4 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,0%, WACC de los años 4-10 8,2% y ROE de FY+3 —, frente al crecimiento del DCF (4,9%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 18,4x | 4,4% | −0,5 pp | Coherente con el DCF. |
+| EV/FCFF | 28,6x | 4,6% | −0,3 pp | Coherente con el DCF. |
+| P/E | 22,9x | — | — | No se puede calcular (métrica o supuestos no aptos). |
+| P/FCFE | 25,2x | 4,8% | −0,0 pp | Coherente con el DCF. |
+| P/OCF | 21,9x | 3,7% | −1,2 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

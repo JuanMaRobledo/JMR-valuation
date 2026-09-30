@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Novo Nordisk A/S"
 ticker: "NVO"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$32,14 / US$42,59 / US$52,70 · DCF hoy: US$29,74
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVO la diferencia es de +12% (múltiplos por encima del DCF). Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$38,71 supone que los ingresos crecen 3,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 3,0% (+0,6 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,6%, WACC de los años 4-10 9,1% y ROE de FY+3 43,2%, frente al crecimiento del DCF (3,8%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 10,6x | 4,7% | +0,9 pp | Coherente con el DCF. |
+| EV/FCFF | 21,0x | 4,2% | +0,4 pp | Coherente con el DCF. |
+| P/E | 16,9x | 4,0% | +0,2 pp | Coherente con el DCF. |
+| P/FCFE | 19,3x | 4,2% | +0,4 pp | Coherente con el DCF. |
+| P/OCF | 12,5x | 4,6% | +0,8 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

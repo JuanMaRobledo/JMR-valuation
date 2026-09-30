@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Duolingo, Inc."
 ticker: "DUOL"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$120,90 / US$150,14 / US$183,01 · DCF hoy: US$12
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para DUOL la diferencia es de −10% (múltiplos por debajo del DCF). Los múltiplos (US$150,14 hoy) quedan 10% por debajo del DCF (US$167,58). Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente y hacían que el valor por múltiplos coincidiera casi exactamente con el DCF. Ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Para Duolingo el DCF es más informativo, porque la empresa sigue en crecimiento y su historia de múltiplos es corta y ruidosa.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$134,30 supone que los ingresos crecen 10,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 16,6% (−5,7 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 11,0%, WACC de los años 4-10 10,2% y ROE de FY+3 14,9%, frente al crecimiento del DCF (8,1%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 38,7x | 7,8% | −0,4 pp | Coherente con el DCF. |
+| EV/FCFF | 28,4x | 6,5% | −1,7 pp | Coherente con el DCF. |
+| P/E | 25,7x | 9,4% | +1,3 pp | Coherente con el DCF. |
+| P/FCFE | 25,8x | 6,9% | −1,3 pp | Coherente con el DCF. |
+| P/OCF | 24,9x | 6,8% | −1,4 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

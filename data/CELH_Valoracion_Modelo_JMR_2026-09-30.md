@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Celsius Holdings, Inc."
 ticker: "CELH"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$16,75 / US$21,32 / US$26,53 · DCF hoy: US$9,94 
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CELH la diferencia es de +18% (múltiplos por encima del DCF). Los múltiplos (US$21,32 hoy) quedan 18% por encima del DCF (US$18,11). Con la historia distorsionada por la compra de Alani Nu, los múltiplos se anclan en FY24, en los peers de bebidas y en los fundamentales; el DCF es más confiable mientras no haya uno o dos años limpios después de integrar Alani Nu.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$28,00 supone que los ingresos crecen 15,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,2% (+9,1 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 11,7%, WACC de los años 4-10 10,2% y ROE de FY+3 31,2%, frente al crecimiento del DCF (5,3%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 23,0x | 7,6% | +2,3 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| EV/FCFF | 21,8x | 5,4% | +0,1 pp | Coherente con el DCF. |
+| P/E | 29,3x | 9,0% | +3,8 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/FCFE | 22,6x | 7,0% | +1,7 pp | Coherente con el DCF. |
+| P/OCF | 20,3x | 7,3% | +2,0 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

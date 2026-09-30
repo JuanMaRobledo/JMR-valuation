@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de lululemon athletica inc."
 ticker: "LULU"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$76,37 / US$107,52 / US$143,08 · DCF hoy: US$104
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para LULU la diferencia es de −31% (múltiplos por debajo del DCF). Los múltiplos (US$107,52 hoy) quedan 31% por debajo del DCF (US$155,29). Los múltiplos reflejan la valoración actual de una marca que decrece (~6x EBITDA, ~11x utilidad) y peers ajustados −10%, mientras que el DCF supone que las ventas y los márgenes se recuperan en el horizonte. Mientras las ventas caigan y la nueva CEO no muestre un plan, los múltiplos son la referencia más prudente; el DCF muestra el valor si Lululemon vuelve a crecer.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$100,58 supone que los ingresos crecen -8,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 2,0% (−10,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,7%, WACC de los años 4-10 9,0% y ROE de FY+3 27,6%, frente al crecimiento del DCF (3,3%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 7,8x | 3,5% | +0,3 pp | Coherente con el DCF. |
+| EV/FCFF | 16,5x | 2,7% | −0,5 pp | Coherente con el DCF. |
+| P/E | 13,2x | 2,7% | −0,6 pp | Coherente con el DCF. |
+| P/FCFE | 15,3x | 3,0% | −0,3 pp | Coherente con el DCF. |
+| P/OCF | 10,2x | 3,4% | +0,1 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

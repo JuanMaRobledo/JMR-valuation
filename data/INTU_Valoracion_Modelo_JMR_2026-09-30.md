@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de INTUIT INC."
 ticker: "INTU"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$309,33 / US$386,84 / US$557,16 · DCF hoy: US$26
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para INTU la diferencia es de +10% (múltiplos por encima del DCF). Los múltiplos (US$386,84 hoy) quedan 10% por encima del DCF (US$351,86), dentro del rango de ±25%: ambos métodos coinciden. Los múltiplos ya usan la valoración de la etapa actual (~12x EBITDA, ~18x utilidad), con el temor a la IA agéntica incorporado, y los peers de software lo suben un poco.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$269,40 supone que los ingresos crecen 3,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 9,0% (−5,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 10,3%, WACC de los años 4-10 9,5% y ROE de FY+3 35,3%, frente al crecimiento del DCF (6,1%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 17,0x | 4,7% | −1,4 pp | Coherente con el DCF. |
+| EV/FCFF | 17,2x | 3,5% | −2,7 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/E | 20,3x | 6,0% | −0,1 pp | Coherente con el DCF. |
+| P/FCFE | 15,4x | 3,6% | −2,5 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/OCF | 15,6x | 3,1% | −3,0 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

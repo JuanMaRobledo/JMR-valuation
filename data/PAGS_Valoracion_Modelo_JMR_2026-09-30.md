@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de PagSeguro Digital Ltd."
 ticker: "PAGS"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -103,6 +103,22 @@ Múltiplos consolidados hoy: US$6,42 / US$8,36 / US$10,01 · DCF hoy: US$9,47 / 
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PAGS la diferencia es de −33% (múltiplos por debajo del DCF). Los múltiplos (US$8,36 hoy) quedan 33% por debajo del DCF (US$12,53). La diferencia viene casi toda de P/FCFE (US$2,8, peso 20%): en la proyección Base el crédito que otorga PagBank absorbe caja (cambio en capital de trabajo de ~US$215-240 millones al año), y el FCFE de FY+3 queda en US$0,41 por acción frente a una utilidad de US$1,77. P/E, el método más confiable para una financiera, da US$11,9, cerca del DCF. Queda a tu decisión: revisar el supuesto de capital de trabajo o mover el peso de P/FCFE a P/E en la categoría Financiera (el prompt v3 pide hacerlo en la tabla compartida y registrarlo).
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$8,90 supone que los ingresos crecen -15,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,8% (−21,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 14,7%, WACC de los años 4-10 13,5% y ROE de FY+3 17,9%, frente al crecimiento del DCF (5,3%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 3,0x | — | — | No aplica: PagSeguro es una entidad financiera (PagBank): la deuda es materia prima del negocio, no financiación, y el valor empres |
+| EV/FCFF | 2,5x | — | — | No aplica: Igual que EV/EBITDA: para una financiera el FCFF no se puede separar de la financiación; peso 0%. |
+| P/E | 9,2x | 8,6% | +3,4 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/FCFE | 7,9x | 1,8% | −3,5 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/OCF | 3,3x | 8,8% | +3,6 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

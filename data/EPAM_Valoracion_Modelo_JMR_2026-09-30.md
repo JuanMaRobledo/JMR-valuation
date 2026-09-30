@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de EPAM Systems, Inc."
 ticker: "EPAM"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$86,29 / US$109,37 / US$143,99 · DCF hoy: US$101
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para EPAM la diferencia es de −26% (múltiplos por debajo del DCF). Los múltiplos (US$109,37 hoy) quedan 26% por debajo del DCF (US$148,70). Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA, ~13-15x utilidad), mientras que el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente; si el crecimiento orgánico vuelve a ~5-8% con los ingresos de IA, el DCF se acerca más al valor.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$107,55 supone que los ingresos crecen -3,2% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,0% (−8,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 10,8%, WACC de los años 4-10 10,0% y ROE de FY+3 15,3%, frente al crecimiento del DCF (5,0%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 9,2x | 2,2% | −2,8 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| EV/FCFF | 12,5x | 1,8% | −3,2 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/E | 13,7x | 6,2% | +1,2 pp | Coherente con el DCF. |
+| P/FCFE | 12,6x | 2,6% | −2,4 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/OCF | 11,5x | 2,4% | −2,6 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

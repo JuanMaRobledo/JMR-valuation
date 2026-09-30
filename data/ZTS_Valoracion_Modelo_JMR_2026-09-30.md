@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Zoetis Inc."
 ticker: "ZTS"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$79,61 / US$111,20 / US$132,48 · DCF hoy: US$55,
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ZTS la diferencia es de +30% (múltiplos por encima del DCF). Los múltiplos (US$111,20 hoy) quedan 30% por encima del DCF (US$85,57); el precio (US$71,43) está por debajo de ambos. Los múltiplos suponen que, a FY+3, Zoetis cotiza entre su valoración actual y la de sus peers ajustados (~14x EBITDA, ~23x utilidad), cerca de su múltiplo justificado (~25x utilidad), es decir que el mercado deja atrás las dudas sobre Librela. El DCF y el precio de hoy reflejan que la presión dura más. Si Librela se estabiliza, los múltiplos son razonables; si no, el DCF es la referencia más prudente.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$71,43 supone que los ingresos crecen 1,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,4% (−2,9 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,0%, WACC de los años 4-10 8,5% y ROE de FY+3 85,7%, frente al crecimiento del DCF (5,0%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 13,8x | 3,9% | −1,1 pp | Coherente con el DCF. |
+| EV/FCFF | 23,1x | 4,0% | −1,0 pp | Coherente con el DCF. |
+| P/E | 22,8x | 4,7% | −0,3 pp | Coherente con el DCF. |
+| P/FCFE | 21,8x | 4,2% | −0,8 pp | Coherente con el DCF. |
+| P/OCF | 17,2x | 3,5% | −1,5 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

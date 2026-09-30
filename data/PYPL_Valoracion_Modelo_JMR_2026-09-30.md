@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de PayPal Holdings, Inc."
 ticker: "PYPL"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$67,22 / US$85,26 / US$106,75 · DCF hoy: US$71,1
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PYPL la diferencia es de +1% (múltiplos por encima del DCF). Los múltiplos (US$85,26 hoy) quedan 1% por encima del DCF (US$84,77): ambos métodos coinciden. Los dos quedan muy por encima del precio (US$54,28): el mercado descuenta que la utilidad no crece (guía 2026 plana) y un riesgo de ejecución con el nuevo CEO que el escenario Base no incorpora del todo. Los múltiplos ya usan la valoración de la etapa de bajo crecimiento (~9x EBITDA, ~13x utilidad), subida por peers ajustados −30% y por el justificado.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$54,28 supone que los ingresos crecen -6,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 3,6% (−10,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 10,5%, WACC de los años 4-10 9,1% y ROE de FY+3 29,8%, frente al crecimiento del DCF (4,5%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 13,3x | 3,4% | −1,2 pp | Coherente con el DCF. |
+| EV/FCFF | 17,6x | 3,3% | −1,3 pp | Coherente con el DCF. |
+| P/E | 16,9x | 5,4% | +0,9 pp | Coherente con el DCF. |
+| P/FCFE | 16,1x | 4,1% | −0,5 pp | Coherente con el DCF. |
+| P/OCF | 13,3x | 3,1% | −1,4 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

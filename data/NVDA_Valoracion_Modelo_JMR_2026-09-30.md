@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de NVIDIA CORP"
 ticker: "NVDA"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$113,97 / US$212,28 / US$262,51 · DCF hoy: US$72
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVDA la diferencia es de +31% (múltiplos por encima del DCF). Los múltiplos (US$212,28 hoy) quedan 31% por encima del DCF (US$162,65); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras que el DCF usa un costo de patrimonio de 13,5% y un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia. Antes los múltiplos daban ~4-5x porque la historia de la hoja no estaba ajustada por los splits; esa cifra era un error y queda corregida.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$228,86 supone que los ingresos crecen 28,1% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 21,2% (+6,9 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 13,5%, WACC de los años 4-10 11,5% y ROE de FY+3 138,4%, frente al crecimiento del DCF (7,6%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 29,5x | 8,7% | +1,2 pp | Coherente con el DCF. |
+| EV/FCFF | 41,4x | 8,9% | +1,3 pp | Coherente con el DCF. |
+| P/E | 35,8x | 10,6% | +3,0 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/FCFE | 38,3x | 10,6% | +3,0 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+| P/OCF | 35,6x | 10,3% | +2,8 pp | Revisar: el múltiplo supone más crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

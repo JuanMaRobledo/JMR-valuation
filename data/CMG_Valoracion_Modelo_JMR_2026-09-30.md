@@ -2,7 +2,7 @@
 schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de CHIPOTLE MEXICAN GRILL INC"
 ticker: "CMG"
-analysis_date: "2026-09-29"
+analysis_date: "2026-09-30"
 sheet: "https://docs.google.com/spreadsheets/d/1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
@@ -105,6 +105,22 @@ Múltiplos consolidados hoy: US$20,93 / US$26,41 / US$34,12 · DCF hoy: US$14,96
 ## 6. DCF frente a múltiplos
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CMG la diferencia es de +29% (múltiplos por encima del DCF). Los múltiplos (US$26,41 hoy) quedan 29% por encima del DCF (US$20,52): los múltiplos suponen que Chipotle conserva a FY+3 una prima parecida a la de hoy frente a otros restaurantes (~27x utilidad), mientras que el DCF refleja un crecimiento de ventas comparables más bajo. El DCF es más confiable hasta que las ventas comparables vuelvan a crecer; los múltiplos indican lo que pagaría el mercado si Chipotle recupera su historia de crecimiento de unidades.
+
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$31,85 supone que los ingresos crecen 17,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 8,0% (+9,5 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,9%, WACC de los años 4-10 9,5% y ROE de FY+3 68,0%, frente al crecimiento del DCF (5,9%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 18,6x | 6,6% | +0,7 pp | Coherente con el DCF. |
+| EV/FCFF | 30,2x | 6,0% | +0,2 pp | Coherente con el DCF. |
+| P/E | 26,7x | 6,3% | +0,4 pp | Coherente con el DCF. |
+| P/FCFE | 27,1x | 6,0% | +0,1 pp | Coherente con el DCF. |
+| P/OCF | 18,1x | 6,1% | +0,2 pp | Coherente con el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 

@@ -106,6 +106,22 @@ Múltiplos consolidados hoy: US$65,81 / US$124,94 / US$194,20 · DCF hoy: US$47,
 
 En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para UBER la diferencia es de +12% (múltiplos por encima del DCF). Los múltiplos (US$124,94 hoy) quedan 12% por encima del DCF (US$111,44), dentro del rango de ±25%: ambos métodos coinciden. Los dos quedan muy por encima del precio (US$68,16): el mercado descuenta riesgos que el escenario Base no incorpora del todo, sobre todo la competencia de los robotaxis. Dentro de los múltiplos hay dispersión: EV/EBITDA da US$152 y EV/FCFF US$78, porque el EBITDA de FY+3 de la hoja crece más que el flujo de caja; los métodos de flujo son la referencia más prudente.
 
+### 6.1 Coherencia del crecimiento (criterio Damodaran)
+
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$68,16 supone que los ingresos crecen 1,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,4% (−9,6 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+
+Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 8,6%, WACC de los años 4-10 8,6% y ROE de FY+3 62,7%, frente al crecimiento del DCF (6,7%: punto medio entre los años 4-10 y la perpetuidad):
+
+| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
+|---|---:|---:|---:|---|
+| EV/EBITDA | 30,4x | 5,9% | −0,8 pp | Coherente con el DCF. |
+| EV/FCFF | 19,6x | 3,4% | −3,3 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/E | 23,4x | 4,4% | −2,3 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/FCFE | 19,6x | 3,3% | −3,4 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| P/OCF | 19,6x | 2,9% | −3,8 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+
+Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
+
 ## 7. Sensibilidad del valor ponderado hoy (Base)
 
 | Cambio | Valor ponderado hoy | Variación |
