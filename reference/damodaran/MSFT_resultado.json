@@ -1,0 +1,323 @@
+{
+ "ticker": "MSFT",
+ "fecha": "2026-09-30",
+ "precio": 509.22,
+ "dcf_base": 329.4181190681076,
+ "g_ref": 0.129,
+ "m_base": 0.45,
+ "s2c": 0.65,
+ "wacc": 0.10172200840536959,
+ "beta_hoja": 1.3418466752964637,
+ "beta_bu": 1.2602336848378197,
+ "beta_prop": 1.2602336848378197,
+ "industria": "Software (System & Application)",
+ "bu_sector": 1.25,
+ "rf": 0.0425,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": ">$50,000 Mn",
+  "<(25)": 1.6,
+  "(25)-(20)": 1.0,
+  "(20)-(15)": 1.5,
+  "(15)-(10)": 2.7,
+  "(10)-(5)": 9.3,
+  "(5)-0": 22.8,
+  "0-5": 34.0,
+  "5-10": 16.9,
+  "10-15": 7.0,
+  "15-20": 2.3,
+  "20-25": 0.6,
+  "25-30": 0.3,
+  "30-35": 0.1,
+  "35-40": 0.0,
+  "40-45": 0.0,
+  ">45": 0.0,
+  "Mean": 1.0,
+  "Median": 1.5,
+  "StDev": 8.3,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Azure y Copilot sostienen el doble dígito",
+   "prob": 0.45,
+   "margen": 0.45,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.14,
+     0.12,
+     0.11,
+     0.1,
+     0.09
+    ],
+    "Intelligent Cloud": [
+     0.25,
+     0.2,
+     0.17,
+     0.15,
+     0.13
+    ],
+    "More Personal Computing": [
+     0,
+     0.01,
+     0.02,
+     0.02,
+     0.02
+    ]
+   },
+   "cagr": 0.1296865894094794,
+   "rev5": 610544.4562339513,
+   "mix5": {
+    "Productivity and Business Processes": 0.3899751405467818,
+    "Intelligent Cloud": 0.5159181840724713,
+    "More Personal Computing": 0.09410667538074706
+   },
+   "tasa_base": 0.09643877482672882,
+   "valor_beta_hoja": 330.36295696056146,
+   "valor_beta_prop": 337.1968350784186
+  },
+  {
+   "nombre": "B · El capex de IA rinde menos de lo esperado",
+   "prob": 0.25,
+   "margen": 0.4,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
+    ],
+    "Intelligent Cloud": [
+     0.18,
+     0.12,
+     0.1,
+     0.08,
+     0.08
+    ],
+    "More Personal Computing": [
+     -0.02,
+     0,
+     0,
+     0.01,
+     0.01
+    ]
+   },
+   "cagr": 0.08014774766420296,
+   "rev5": 487913.9641784892,
+   "mix5": {
+    "Productivity and Business Processes": 0.4101643218354745,
+    "Intelligent Cloud": 0.48000051251517173,
+    "More Personal Computing": 0.10983516564935378
+   },
+   "tasa_base": 0.254600612894994,
+   "valor_beta_hoja": 240.05926857707593,
+   "valor_beta_prop": 244.70992003667223
+  },
+  {
+   "nombre": "C · Microsoft gana la plataforma empresarial de IA",
+   "prob": 0.2,
+   "margen": 0.48,
+   "s2c": 0.6,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.17,
+     0.16,
+     0.15,
+     0.13,
+     0.12
+    ],
+    "Intelligent Cloud": [
+     0.32,
+     0.28,
+     0.24,
+     0.2,
+     0.17
+    ],
+    "More Personal Computing": [
+     0.02,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "cagr": 0.1754328395571163,
+   "rev5": 744588.8455053816,
+   "mix5": {
+    "Productivity and Business Processes": 0.3717156200278294,
+    "Intelligent Cloud": 0.5456333293164747,
+    "More Personal Computing": 0.08265105065569592
+   },
+   "tasa_base": 0.0328008938037265,
+   "valor_beta_hoja": 422.23647936069176,
+   "valor_beta_prop": 431.41764056468236
+  },
+  {
+   "nombre": "D · La demanda de cómputo para IA se corrige",
+   "prob": 0.1,
+   "margen": 0.37,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.08,
+     0.06,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Intelligent Cloud": [
+     0.1,
+     0.04,
+     0.05,
+     0.06,
+     0.06
+    ],
+    "More Personal Computing": [
+     -0.03,
+     -0.02,
+     0,
+     0,
+     0
+    ]
+   },
+   "cagr": 0.049771056719973394,
+   "rev5": 423058.47464160883,
+   "mix5": {
+    "Productivity and Business Processes": 0.4389209376811484,
+    "Intelligent Cloud": 0.4406272760851221,
+    "More Personal Computing": 0.12045178623372947
+   },
+   "tasa_base": 0.44355681430418087,
+   "valor_beta_hoja": 199.5252315605387,
+   "valor_beta_prop": 203.19146530654098
+  }
+ ],
+ "valor_esperado_beta_hoja": 313.07796680471387,
+ "valor_esperado_beta_prop": 319.518730438047,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.3418466752964637,
+   "ke": 0.10234636171822228,
+   "wacc": 0.10172200840536959,
+   "dcf_base": 329.4181190681076
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
+   "beta": 1.2602336848378197,
+   "ke": 0.09870642234376677,
+   "wacc": 0.09811940363528096,
+   "dcf_base": 336.2276970411326
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.089,
+   0.109,
+   0.129,
+   0.149,
+   0.169
+  ],
+  "m": [
+   0.41000000000000003,
+   0.43,
+   0.45,
+   0.47000000000000003,
+   0.49
+  ],
+  "v": [
+   [
+    254.51846005456818,
+    266.96919925262785,
+    279.4199384506875,
+    291.8706776487471,
+    304.3214168468067
+   ],
+   [
+    275.22048230935127,
+    289.21866463194084,
+    303.2168469545304,
+    317.21502927712,
+    331.21321159970955
+   ],
+   [
+    297.98706450821965,
+    313.70259178816366,
+    329.4181190681076,
+    345.1336463480516,
+    360.8491736279956
+   ],
+   [
+    323.0125197740281,
+    340.6313389431153,
+    358.2501581122024,
+    375.8689772812896,
+    393.4877964503768
+   ],
+   [
+    350.5064982616982,
+    370.23186617934095,
+    389.9572340969837,
+    409.6826020146265,
+    429.4079699322693
+   ]
+  ]
+ },
+ "inverso": [
+  {
+   "beta": 1.3418466752964637,
+   "margen": 0.4,
+   "g": 0.266,
+   "tasa_base": 0.005079999999999998
+  },
+  {
+   "beta": 1.3418466752964637,
+   "margen": 0.45,
+   "g": 0.232,
+   "tasa_base": 0.009159999999999996
+  },
+  {
+   "beta": 1.3418466752964637,
+   "margen": 0.48,
+   "g": 0.214,
+   "tasa_base": 0.015060000000000007
+  },
+  {
+   "beta": 1.2602336848378197,
+   "margen": 0.4,
+   "g": 0.262,
+   "tasa_base": 0.005559999999999996
+  },
+  {
+   "beta": 1.2602336848378197,
+   "margen": 0.45,
+   "g": 0.226,
+   "tasa_base": 0.009879999999999998
+  },
+  {
+   "beta": 1.2602336848378197,
+   "margen": 0.48,
+   "g": 0.21,
+   "tasa_base": 0.016900000000000002
+  }
+ ],
+ "ingresos_ltm": 331839
+}
