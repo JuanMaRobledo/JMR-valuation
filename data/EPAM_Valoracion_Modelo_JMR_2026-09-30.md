@@ -110,17 +110,17 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 DCF inverso: con el resto de supuestos del escenario Base, el precio de US$107,55 supone que los ingresos crecen -3,2% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,0% (−8,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
-Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 10,8%, WACC de los años 4-10 10,0% y ROE de FY+3 15,3%, frente al crecimiento del DCF (5,0%: punto medio entre los años 4-10 y la perpetuidad):
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$202,20 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 10,8%, WACC de los años 4-10 10,0%, ROE de FY+3 15,3% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
-| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |
-|---|---:|---:|---:|---|
-| EV/EBITDA | 9,2x | 2,2% | −2,8 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
-| EV/FCFF | 12,5x | 1,8% | −3,2 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
-| P/E | 13,7x | 6,2% | +1,2 pp | Coherente con el DCF. |
-| P/FCFE | 12,6x | 2,6% | −2,4 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
-| P/OCF | 11,5x | 2,4% | −2,6 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. |
+| Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
+|---|---:|---:|---:|---:|---:|---:|---|
+| EV/EBITDA | 9,2x | 12,2x | −23% | 2,2% | 4,0% | −1,8 pp | Coherente con el DCF. |
+| EV/FCFF | 12,5x | 17,4x | −26% | 1,8% | 4,0% | −2,2 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 26% por debajo del DCF en FY+3. |
+| P/E | 13,7x | 19,5x | −30% | 6,2% | 8,2% | −2,0 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 30% por debajo del DCF en FY+3. |
+| P/FCFE | 12,6x | 17,1x | −27% | 2,6% | 4,7% | −2,0 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 27% por debajo del DCF en FY+3. |
+| P/OCF | 11,5x | 16,1x | −29% | 2,4% | 4,7% | −2,3 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 29% por debajo del DCF en FY+3. |
 
-Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
+Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
 ## 7. Sensibilidad del valor ponderado hoy (Base, lectura secundaria)
 

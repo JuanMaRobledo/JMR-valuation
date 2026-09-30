@@ -302,19 +302,25 @@ def main():
           f"ingresos crecen {pct(di['gImplicito'])} al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone "
           f"{pct(di['gDcf'])} ({pp_(di['dif'])}). {di['lectura']}")
         w("")
-        w("Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke "
-          f"{pct(ci['parametros']['ke'])}, WACC de los años 4-10 {pct(ci['parametros']['wacc'])} y ROE de FY+3 "
-          f"{pct(ci['parametros']['roe'])}, frente al crecimiento del DCF ({pct(ci['gDcf']['puntoMedio'])}: punto medio entre "
-          f"los años 4-10 y la perpetuidad):")
+        vtx = lambda x: "—" if x is None else ("+" if x >= 0 else "−") + es(abs(x) * 100, 0) + "%"  # noqa: E731
+        w(f"Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 ({money(ci.get('dcfFy3'), cur)} por "
+          "acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula "
+          f"de crecimiento perpetuo (Ke {pct(ci['parametros']['ke'])}, WACC de los años 4-10 {pct(ci['parametros']['wacc'])}, "
+          f"ROE de FY+3 {pct(ci['parametros']['roe'])} y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el "
+          "ROE de FY+3 para siempre) se cancela:")
         w("")
-        w("| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |")
-        w("|---|---:|---:|---:|---|")
+        w("| Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | "
+          "Crecimiento implícito del DCF | Diferencia | Lectura |")
+        w("|---|---:|---:|---:|---:|---:|---:|---|")
         for x in ci["multiplos"]:
-            w(f"| {x['metodo']} | {xm(x['multiplo'])} | {pct(x['gImplicito'])} | {pp_(x['dif'])} | {x['lectura']} |")
+            w(f"| {x['metodo']} | {xm(x['multiplo'])} | {xm(x.get('multiploDcf'))} | {vtx(x.get('difValor'))} | "
+              f"{pct(x['gImplicito'])} | {pct(x.get('gDcf'))} | {pp_(x['dif'])} | {x['lectura']} |")
         w("")
-        w(f"Más de {int(ci['umbral'] * 100)} pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de "
-          "crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el "
-          "crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).")
+        w(f"Alerta: más de {int(ci['umbral'] * 100)} pp de diferencia en crecimiento implícito o más de 25% en valor. Significa "
+          "que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y "
+          "alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). "
+          "Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue "
+          "diferencias grandes; por eso también se mira la diferencia de valor.")
         w("")
     w("## 7. Sensibilidad del valor ponderado hoy (Base, lectura secundaria)")
     w("")

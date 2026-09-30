@@ -25,48 +25,60 @@
   {
    "metodo": "EV/EBITDA",
    "multiplo": 16.93,
+   "multiploDcf": 14.899089979025426,
    "gImplicito": 0.06923369156181389,
-   "gDcf": 0.05564285714285715,
-   "dif": 0.01359083441895674,
+   "gDcf": 0.066011146366181,
+   "dif": 0.003222545195632892,
+   "difValor": 0.1352849732218533,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "EV/FCFF",
    "multiplo": 33.7,
+   "multiploDcf": 40.52361247268954,
    "gImplicito": 0.06197157585656949,
-   "gDcf": 0.05564285714285715,
-   "dif": 0.006328718713712343,
+   "gDcf": 0.0671500548284279,
+   "dif": -0.0051784789718584065,
+   "difValor": -0.1671186125111216,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "P/E",
    "multiplo": 24.89,
+   "multiploDcf": 18.097013939992888,
    "gImplicito": 0.06118765599522,
-   "gDcf": 0.05564285714285715,
-   "dif": 0.0055447988523628505,
+   "gDcf": 0.04617865781720714,
+   "dif": 0.015008998178012857,
+   "difValor": 0.371934299145942,
    "aplica": true,
-   "lectura": "Coherente con el DCF."
+   "lectura": "Revisar: el múltiplo vale 37% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
   },
   {
    "metodo": "P/FCFE",
    "multiplo": 32.36,
+   "multiploDcf": 29.782416995343734,
    "gImplicito": 0.06385440047961632,
-   "gDcf": 0.05564285714285715,
-   "dif": 0.008211543336759178,
+   "gDcf": 0.06110154365864463,
+   "dif": 0.0027528568209716914,
+   "difValor": 0.08575612470564309,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "P/OCF",
    "multiplo": 18.22,
+   "multiploDcf": 16.443982097918486,
    "gImplicito": 0.0647875947711558,
-   "gDcf": 0.05564285714285715,
-   "dif": 0.00914473762829865,
+   "gDcf": 0.06144866541325928,
+   "dif": 0.0033389293578965154,
+   "difValor": 0.10701699980294932,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   }
  ],
- "alertas": 0
+ "dcfFy3": 272.6015036611498,
+ "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
+ "alertas": 1
 }
