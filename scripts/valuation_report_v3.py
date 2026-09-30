@@ -66,7 +66,7 @@ def engine_inputs(cell, fm, price) -> dict:
         "revenue0": c_("B12"), "ebit0": cell("Valuation output", "B7"), "taxEffective": c_("B24"), "taxMarginal": c_("B25"),
         "shares0": c_("B22"), "cash": c_("B19"), "debt": c_("B16"), "nonOperatingAssets": c_("B20") or 0,
         "minorityInterests": c_("B21") or 0, "probFailure": c_("B53") if c_("B52") in ("Yes", "Sí") else 0,
-        "recoveryPct": c_("B55") or 0, "wacc": cell("Input sheet", "B36"), "riskFreeRate": c_("B35"),
+        "recoveryPct": c_("B55") or 0, "roicTerminal": c_("B50") if c_("B49") in ("Yes", "Sí") else 0, "wacc": cell("Input sheet", "B36"), "riskFreeRate": c_("B35"),
         "matureMarketERP": cell("Valuation output", "M14") - c_("B35"), "salesToCapital": c_("B32"),
         "growthCons": cell("Valuation output", "C55"), "marginCons": cell("Valuation output", "G57"),
         "growthBase": cell("Valuation output", "C4"), "marginBase": cell("Valuation output", "G6"),

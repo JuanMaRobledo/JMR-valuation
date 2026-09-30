@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$329,42 a US$336,23. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa."
+  "texto": "La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$466,38 a US$476,38. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa."
  },
  "historias": [
   {
@@ -213,7 +213,7 @@
   "texto": "El margen operativo subió a 46,8% pese al capex porque la depreciación todavía no refleja toda la inversión. La hoja supone 46,3% el próximo año y 45% de objetivo. La depreciación de los centros de datos de IA (vidas útiles de 5-6 años) y los márgenes menores de la infraestructura de IA frente al software empujan hacia abajo; Copilot y el precio de Microsoft 365 empujan hacia arriba. Las historias van de 37% a 48%."
  },
  "reinversion": {
-  "texto": "La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia C se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%."
+  "texto": "La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia C se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 25,9% (antes igual al costo de capital). Es el actual, que ya descuenta el capex de IA, y queda por debajo del de Software."
  },
  "prob_texto": "A (45%) es la continuación de FY24-FY26 con desaceleración gradual. B (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. C (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). D (10%) es una corrección de la demanda de cómputo.",
  "premortem": [
@@ -256,7 +256,7 @@
    "Pérdida de cargas de OpenAI"
   ]
  ],
- "precio_lectura": "El precio está muy por encima del valor esperado. El DCF inverso pide 21-27% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~1-2% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años; además, puede estar usando una tasa de descuento menor (beta ~1 y prima de mercado baja). Con los supuestos de la hoja, incluso la historia C queda lejos del precio.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$509,22) queda 15% por encima del valor esperado (US$442,87), entre las historias A y C. El DCF inverso pide 13-18% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~3-9% de las empresas de este tamaño. Microsoft ya lo ha hecho, pero no es la norma. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años. El precio es alcanzable si el capex de IA rinde como en la historia A o mejor; no deja margen de seguridad.",
  "frase": "Plataforma de software empresarial que apuesta su capital a la infraestructura de IA",
  "confianza": "Media: el negocio es excepcional; el retorno del capex de IA no está probado",
  "cambiaria": "Crecimiento de Azure frente al capex; adopción pagada de Copilot",

@@ -1,0 +1,21 @@
+{
+ "ticker": "BSX",
+ "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: Boston Scientific tiene ventajas duraderas (patentes, relación con médicos)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.111,
+   "motivo": "ROIC terminal 11,1%: el menor entre el actual (11,1%, recortado por las compras de empresas) y el de su industria según Damodaran (17,0%)."
+  }
+ ]
+}

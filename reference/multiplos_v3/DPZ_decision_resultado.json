@@ -10,9 +10,9 @@
   "peers_motivo": "B: franquiciadores y cadenas de restaurantes (Yum!, McDonald's, Restaurant Brands, Wingstop, Darden), datos de yfinance al 29-sep-2026. Se excluye Papa John's (ingresos −9%, reestructuración).",
   "ajuste_peers": 0.0,
   "ajuste_motivo": "Ajuste 0%: modelo de franquicia asset-light y crecimiento similares a Yum! y Restaurant Brands.",
-  "lambda": 0.25,
-  "lambda_motivo": "λ = 0,25: la Domino's de FY+3 es la misma empresa madura de hoy. El P/E justificado no se calcula porque el patrimonio es negativo (recompras con deuda), así que el P/E se ancla en historia y peers.",
-  "evaluacion": "Los múltiplos (US$422,49 hoy) quedan 86% por encima del DCF (US$226,68). Domino's cotizó durante una década a 25-30x utilidades y hoy los franquiciadores comparables cotizan a ~19x; incluso el ancla más baja implica un valor mayor que el del DCF, que queda por debajo del precio actual (US$292). La brecha sugiere que los supuestos del DCF (crecimiento y margen de largo plazo) son más conservadores que cualquier referencia de mercado para un franquiciador de flujos estables: conviene revisarlos antes de dar más peso a uno de los dos métodos.",
+  "lambda": 0.0,
+  "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 18,4% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
+  "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$422,49 hoy) quedaban 86% por encima del DCF (US$226,68). La brecha venía sobre todo del DCF, que suponía que después del año 10 Domino's gana solo su costo de capital. Eso es incoherente con una franquicia de marca que opera con muy poco capital (ROIC actual de 99%). Ahora el DCF usa el ROIC de la industria (18,4%) y da US$349,63. Los múltiplos dejan fuera el justificado y dan US$408,88, 17% por encima del DCF, dentro del rango de ±25%. La recta de peers por crecimiento no se usa porque su R² va de 0 a 0,5. Los dos métodos quedan por encima del precio (US$292,27).",
   "ticker": "DPZ"
  },
  "resultado": {
@@ -28,6 +28,7 @@
    "B_mediana": 14.67,
    "B_ajustada": 14.67,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "YUM 16,4x, MCD 14,7x, QSR 14,0x, WING 16,7x, DRI 14,3x",
    "B_excluidos": [
     "PZZA"
@@ -38,10 +39,10 @@
     "Optimista": 25.39
    },
    "mercado": 17.57,
-   "lambda": 0.25,
-   "conservador": 17.0,
-   "base": 18.41,
-   "optimista": 20.99,
+   "lambda": 0.0,
+   "conservador": 16.22,
+   "base": 17.57,
+   "optimista": 20.03,
    "factor_cons": 0.923,
    "factor_opt": 1.14,
    "opt_tope_historico": null,
@@ -69,6 +70,7 @@
    "B_mediana": 24.22,
    "B_ajustada": 24.22,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "YUM 24,2x, MCD 24,2x, QSR 20,2x, WING 24,7x, DRI 28,2x",
    "B_excluidos": [
     "PZZA"
@@ -79,10 +81,10 @@
     "Optimista": 37.38
    },
    "mercado": 27.89,
-   "lambda": 0.25,
-   "conservador": 26.58,
-   "base": 28.65,
-   "optimista": 32.25,
+   "lambda": 0.0,
+   "conservador": 25.88,
+   "base": 27.89,
+   "optimista": 31.4,
    "factor_cons": 0.928,
    "factor_opt": 1.126,
    "opt_tope_historico": null,
@@ -110,6 +112,7 @@
    "B_mediana": 19.01,
    "B_ajustada": 19.01,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "YUM 17,3x, MCD 19,0x, QSR 18,0x, WING 25,7x, DRI 19,2x",
    "B_excluidos": [
     "PZZA"
@@ -120,7 +123,7 @@
     "Optimista": null
    },
    "mercado": 22.85,
-   "lambda": 0.25,
+   "lambda": 0.0,
    "conservador": 22.17,
    "base": 22.85,
    "optimista": 25.09,
@@ -151,6 +154,7 @@
    "B_mediana": 21.33,
    "B_ajustada": 21.33,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "YUM 22,4x, MCD 21,3x, QSR 20,1x, WING 23,0x, DRI 20,4x",
    "B_excluidos": [
     "PZZA"
@@ -161,7 +165,7 @@
     "Optimista": 29.43
    },
    "mercado": 25.23,
-   "lambda": 0.25,
+   "lambda": 0.0,
    "conservador": 23.3,
    "base": 25.23,
    "optimista": 28.17,
@@ -192,6 +196,7 @@
    "B_mediana": 15.62,
    "B_ajustada": 15.62,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "YUM 18,0x, MCD 14,6x, QSR 17,2x, WING 15,6x, DRI 12,0x",
    "B_excluidos": [
     "PZZA"
@@ -202,10 +207,10 @@
     "Optimista": 36.57
    },
    "mercado": 19.76,
-   "lambda": 0.25,
-   "conservador": 19.24,
-   "base": 21.94,
-   "optimista": 25.37,
+   "lambda": 0.0,
+   "conservador": 17.32,
+   "base": 19.76,
+   "optimista": 22.84,
    "factor_cons": 0.877,
    "factor_opt": 1.156,
    "opt_tope_historico": null,
@@ -224,21 +229,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   156.63725652523942,
-   226.68096734863386,
-   305.1762507591815
+   250.5151497673821,
+   349.62557793386236,
+   460.3613345904858
   ],
   "multiplos_hoy": [
-   355.8105268981082,
-   422.487850321865,
-   526.0357584869372
+   344.21113152873124,
+   408.88105398248985,
+   509.34077092835884
   ],
   "ponderado_hoy": [
-   276.14121874896074,
-   344.16509713257255,
-   437.69195539583495
+   306.73273882419164,
+   385.17886356303893,
+   489.74899639320967
   ],
-  "brecha_base": 0.8637993972916191,
+  "brecha_base": 0.16948266885621477,
   "fila_origen": 40
  }
 }

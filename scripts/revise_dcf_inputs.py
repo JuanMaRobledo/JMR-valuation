@@ -1,5 +1,6 @@
-"""Revisión de supuestos del DCF (30-sep-2026) aprobada por el usuario para
-GOOG, DUOL, UBER, NVDA y PLTR.
+"""Revisión de supuestos del DCF (30-sep-2026) para GOOG, DUOL, UBER, NVDA y PLTR
+(aprobada por el usuario) y, en una segunda ronda, BSX, DPZ, MSFT y NKE (retorno
+sobre el capital después del año 10, 'Input sheet'!B49/B50).
 
 Cambia solo celdas de supuestos (no fórmulas): crecimiento y margen del escenario
 Base ('Input sheet'), crecimiento fijo y margen objetivo de los escenarios
@@ -60,6 +61,26 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (COC, "B23", 1.25, "Beta bottom-up de Software (System & Application) en lugar de la de regresión (1,62)."),
         (VO, "C55", 0.35, "Conservador: 35% anual (antes 60%)."),
         (VO, "C106", 0.60, "Optimista: 60% anual (antes 95%, que multiplicaba los ingresos por 28 en cinco años)."),
+    ],
+    # Segunda ronda: el DCF suponía que después del año 10 el ROIC iguala al costo de
+    # capital (sin retornos excedentes). Damodaran lo acepta solo sin ventajas
+    # duraderas; con marca, escala o red se fija el menor entre el ROIC actual y el
+    # de la industria (Damodaran, ene-2026).
+    "BSX": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: Boston Scientific tiene ventajas duraderas (patentes, relación con médicos)."),
+        (IS, "B50", 0.111, "ROIC terminal 11,1%: el menor entre el actual (11,1%, recortado por las compras de empresas) y el de su industria según Damodaran (17,0%)."),
+    ],
+    "DPZ": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: franquicia con marca y logística propias, muy poco capital."),
+        (IS, "B50", 0.184, "ROIC terminal 18,4%: el de su industria según Damodaran (el actual, 99%, refleja el modelo de franquicia y no se sostiene para siempre)."),
+    ],
+    "MSFT": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: efectos de red y costos de cambio en Office, Azure y Windows."),
+        (IS, "B50", 0.259, "ROIC terminal 25,9%: el menor entre el actual (25,9%, que ya descuenta el capex de IA) y el de su industria según Damodaran (29,3%)."),
+    ],
+    "NKE": [
+        (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: marca global con poder de precio."),
+        (IS, "B50", 0.133, "ROIC terminal 13,3%: el menor entre el actual (13,3%, con el margen deprimido) y el de su industria según Damodaran (20,9%)."),
     ],
 }
 

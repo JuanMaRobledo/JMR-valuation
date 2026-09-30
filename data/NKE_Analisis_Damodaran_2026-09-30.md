@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # NIKE, Inc. (NKE) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$29,76 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$36,76 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Para empresas de más de US$25.000 millones, crecer 3,1% anual cinco años (hist
 
 **Márgenes.** El margen operativo cayó de 12,3% a ~8% (6,1% en el EBIT LTM de la hoja) por rebajas para limpiar inventario, desapalancamiento y aranceles; el margen bruto subyacente fue 40,8% en FY26 frente a 43-46% histórico. La hoja supone 6,5% el próximo año y 11% en siete años. Las historias van de 6% a 13,5%.
 
-**Reinversión y retorno.** Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más.
+**Reinversión y retorno.** Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 13,3%, el actual con el margen deprimido (antes igual al costo de capital): la marca sigue ganando por encima de su costo.
 
-**Riesgo.** La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$29,76 a US$29,02. Diferencia menor: el riesgo está en el margen.
+**Riesgo.** La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$36,76 a US$35,83. Diferencia menor: el riesgo está en el margen.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,00 | 9,3% | 8,6% | US$29,76 |
-| Bottom-up del sector (Shoe, reapalancada) | 1,12 | 9,8% | 9,0% | US$29,02 |
+| Hoja (regresión o la cargada en el libro) | 1,00 | 9,3% | 8,6% | US$36,76 |
+| Bottom-up del sector (Shoe, reapalancada) | 1,12 | 9,8% | 9,0% | US$35,83 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,00) | Valor/acción (beta 1,12) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Recuperación lenta con la vuelta a los mayoristas** | 45% | Calzado: -2%, 4%, 5%, 5%, 4%; Indumentaria: 0%, 4%, 4%, 4%, 4%; Equipamiento y otros: 0%, 2%, 2%, 2%, 2% | 3,1% | 11% | 2,1 | US$30,53 | US$29,76 |
-| **B · Pérdida de relevancia prolongada** | 30% | Calzado: -4%, 0%, 2%, 2%, 2%; Indumentaria: -2%, 1%, 2%, 2%, 2%; Equipamiento y otros: 0%, 0%, 0%, 0%, 0% | 0,5% | 8% | 2,1 | US$21,48 | US$20,97 |
-| **C · Vuelve la Nike de márgenes históricos** | 20% | Calzado: 0%, 6%, 7%, 6%, 5%; Indumentaria: 2%, 6%, 6%, 5%, 5%; Equipamiento y otros: 3%, 3%, 3%, 3%, 3% | 4,7% | 14% | 2,1 | US$40,55 | US$39,51 |
-| **D · Aranceles y competencia estructural** | 5% | Calzado: -6%, -3%, 0%, 1%, 1%; Indumentaria: -4%, -2%, 0%, 1%, 1%; Equipamiento y otros: -2%, -2%, -2%, -2%, -2% | -1,3% | 6% | 2,1 | US$14,77 | US$14,43 |
-| **Valor esperado** | 100% |  |  |  |  | **US$29,03** | **US$28,31** |
+| **A · Recuperación lenta con la vuelta a los mayoristas** | 45% | Calzado: -2%, 4%, 5%, 5%, 4%; Indumentaria: 0%, 4%, 4%, 4%, 4%; Equipamiento y otros: 0%, 2%, 2%, 2%, 2% | 3,1% | 11% | 2,1 | US$37,86 | US$36,89 |
+| **B · Pérdida de relevancia prolongada** | 30% | Calzado: -4%, 0%, 2%, 2%, 2%; Indumentaria: -2%, 1%, 2%, 2%, 2%; Equipamiento y otros: 0%, 0%, 0%, 0%, 0% | 0,5% | 8% | 2,1 | US$26,25 | US$25,61 |
+| **C · Vuelve la Nike de márgenes históricos** | 20% | Calzado: 0%, 6%, 7%, 6%, 5%; Indumentaria: 2%, 6%, 6%, 5%, 5%; Equipamiento y otros: 3%, 3%, 3%, 3%, 3% | 4,7% | 14% | 2,1 | US$50,56 | US$49,24 |
+| **D · Aranceles y competencia estructural** | 5% | Calzado: -6%, -3%, 0%, 1%, 1%; Indumentaria: -4%, -2%, 0%, 1%, 1%; Equipamiento y otros: -2%, -2%, -2%, -2%, -2% | -1,3% | 6% | 2,1 | US$17,75 | US$17,33 |
+| **Valor esperado** | 100% |  |  |  |  | **US$35,91** | **US$35,00** |
 
 A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,00; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 7,0% | 9,0% | 11,0% | 13,0% | 15,0% |
 |---|---:|---:|---:|---:|---:|
-| -1,6% | 16,92 | 21,35 | 25,79 | 30,22 | 34,66 |
-| 0,4% | 17,63 | 22,66 | 27,68 | 32,70 | 37,73 |
-| 2,4% | 18,39 | 24,08 | 29,76 | 35,44 | 41,12 |
-| 4,4% | 19,21 | 25,62 | 32,04 | 38,46 | 44,87 |
-| 6,4% | 20,08 | 27,32 | 34,55 | 41,78 | 49,02 |
+| -1,6% | 20,32 | 25,72 | 31,13 | 36,53 | 41,93 |
+| 0,4% | 21,53 | 27,66 | 33,80 | 39,94 | 46,07 |
+| 2,4% | 22,84 | 29,80 | 36,76 | 43,72 | 50,68 |
+| 4,4% | 24,28 | 32,16 | 40,04 | 47,91 | 55,79 |
+| 6,4% | 25,86 | 34,76 | 43,66 | 52,56 | 61,46 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 9% | Margen 11% | Margen 13% |
 |---|---:|---:|---:|
-| Beta 1,00 | 15,0% (9% de las empresas) | 7,8% (31% de las empresas) | 3,2% (60% de las empresas) |
-| Beta 1,12 | 15,8% (8% de las empresas) | 8,6% (28% de las empresas) | 3,8% (56% de las empresas) |
+| Beta 1,00 | 7,6% (31% de las empresas) | 2,2% (66% de las empresas) | -1,6% (82% de las empresas) |
+| Beta 1,12 | 8,4% (29% de las empresas) | 2,8% (62% de las empresas) | -1,0% (79% de las empresas) |
 
-Frente al valor esperado de las historias (US$29,03 con la beta de la hoja; US$28,31 con la propuesta), el precio está por encima en 25% y 29%, respectivamente. El precio está por encima del valor esperado. El DCF inverso pide 7,8% anual con margen de 11% (lo logró ~31% de las empresas de este tamaño) o 3,2% con margen de 13%: el mercado apuesta a una recuperación del margen cercana a la historia C. ¿Qué sabe el mercado que yo no? Probablemente nada: confía en que la marca Nike vuelve, como volvió otras veces. Si crees que el margen de 13% es alcanzable, el precio es razonable; si no, está caro.
+Frente al valor esperado de las historias (US$35,91 con la beta de la hoja; US$35,00 con la propuesta), el precio está por encima en 1% y por encima en 4%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda prácticamente en el valor esperado (US$35,91), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$29,03 con la beta de la hoja; US$2
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Marca deportiva líder que reconstruye producto y canal con márgenes en mínimos |  |
 | Probabilidades | A 45% / B 30% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$29,03 / US$28,31 |  |
-| Rango (historia más débil a más fuerte) | US$14,77 a US$39,51 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$35,91 / US$35,00 |  |
+| Rango (historia más débil a más fuerte) | US$17,33 a US$50,56 |  |
 | Confianza | Media: la marca da piso; el margen y la duración de la recuperación son inciertos |  |
 | Qué cambiaría la opinión | Margen bruto y crecimiento sin divisas en FY27; participación en running |  |
 | Revisión | Resultados del 2T FY27 (dic-2026) |  |

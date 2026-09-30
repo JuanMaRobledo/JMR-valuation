@@ -9,8 +9,8 @@
  "peers_motivo": "B: franquiciadores y cadenas de restaurantes (Yum!, McDonald's, Restaurant Brands, Wingstop, Darden), datos de yfinance al 29-sep-2026. Se excluye Papa John's (ingresos −9%, reestructuración).",
  "ajuste_peers": 0.0,
  "ajuste_motivo": "Ajuste 0%: modelo de franquicia asset-light y crecimiento similares a Yum! y Restaurant Brands.",
- "lambda": 0.25,
- "lambda_motivo": "λ = 0,25: la Domino's de FY+3 es la misma empresa madura de hoy. El P/E justificado no se calcula porque el patrimonio es negativo (recompras con deuda), así que el P/E se ancla en historia y peers.",
- "evaluacion": "Los múltiplos (US$422,49 hoy) quedan 86% por encima del DCF (US$226,68). Domino's cotizó durante una década a 25-30x utilidades y hoy los franquiciadores comparables cotizan a ~19x; incluso el ancla más baja implica un valor mayor que el del DCF, que queda por debajo del precio actual (US$292). La brecha sugiere que los supuestos del DCF (crecimiento y margen de largo plazo) son más conservadores que cualquier referencia de mercado para un franquiciador de flujos estables: conviene revisarlos antes de dar más peso a uno de los dos métodos.",
+ "lambda": 0.0,
+ "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 18,4% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
+ "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$422,49 hoy) quedaban 86% por encima del DCF (US$226,68). La brecha venía sobre todo del DCF, que suponía que después del año 10 Domino's gana solo su costo de capital. Eso es incoherente con una franquicia de marca que opera con muy poco capital (ROIC actual de 99%). Ahora el DCF usa el ROIC de la industria (18,4%) y da US$349,63. Los múltiplos dejan fuera el justificado y dan US$408,88, 17% por encima del DCF, dentro del rango de ±25%. La recta de peers por crecimiento no se usa porque su R² va de 0 a 0,5. Los dos métodos quedan por encima del precio (US$292,27).",
  "ticker": "DPZ"
 }

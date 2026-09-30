@@ -6,15 +6,19 @@
   "peers_motivo": "B: medtech diversificada de gran capitalización (Medtronic, Stryker, Abbott, Edwards, Intuitive Surgical, Zimmer Biomet), datos de yfinance al 29-sep-2026.",
   "ajuste_peers": -0.05,
   "ajuste_motivo": "Ajuste −5%: tras la baja de guía, Boston Scientific crece como la mediana de los peers, pero con más incertidumbre de ejecución (Watchman, electrofisiología en EE. UU. y los efectos del ciberataque).",
-  "lambda": 0.25,
-  "lambda_motivo": "λ = 0,25: la BSX de FY+3 del escenario Base es una medtech de crecimiento de un dígito alto, parecida a la de hoy.",
+  "lambda": 0.0,
+  "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 11,1% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
   "fuentes": [
    "[Motley Fool, 29-may-2026: por qué caía Boston Scientific](https://www.fool.com/investing/2026/05/29/why-boston-scientific-stock-was-sliding-this-week/)",
    "[Nasdaq: ciberataque y guía 2026 débil](https://www.nasdaq.com/articles/cyberattack-weak-2026-outlook-weigh-bsx-stock-sell)",
    "[TIKR: BSX cae tras el impacto del ciberataque](https://www.tikr.com/blog/boston-scientific-bsx-stock-falls-cyberattack-sales-profit-impact)"
   ],
-  "evaluacion": "Los múltiplos (US$59,06 hoy) quedan 51% por encima del DCF (US$39,12). Los múltiplos suponen que, a FY+3, el mercado vuelve a pagar por Boston Scientific algo parecido a sus peers de medtech (~16x EBITDA, ~22x utilidad); el DCF ya incorpora la desaceleración de 2026 y da un valor incluso menor que el precio. Mientras no se confirme que el crecimiento se recupera (Watchman, electrofisiología) y que el ciberataque fue puntual, el DCF es la referencia más prudente; los múltiplos muestran el potencial si la empresa vuelve a cotizar como sus peers.",
-  "ticker": "BSX"
+  "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$59,06 hoy) quedaban 51% por encima del DCF (US$39,12). Había dos razones. Los múltiplos pagaban en FY+3 la mediana de peers que hoy crecen más que Boston Scientific y además se acercaban al justificado, que supone el ROE actual para siempre. El DCF suponía que después del año 10 el ROIC baja al costo de capital. Ahora el DCF usa un ROIC terminal de 11,1% (el actual, menor que el de la industria) y da US$45,27. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 5% por debajo del DCF. Los dos métodos coinciden alrededor del precio (US$44,11); el mercado ya descuenta la desaceleración de 2026.",
+  "ticker": "BSX",
+  "peers_crecimiento": {
+   "g": 0.07,
+   "motivo": "B ajustado por crecimiento (30-sep-2026): la hoja supone que Boston Scientific crece 7% anual en los años 1-5, en línea con su nueva guía orgánica de 6,5-8%. Los peers de hoy crecen a ritmos muy distintos (Intuitive Surgical, ~20%; Medtronic, ~4%) y su múltiplo sube con el crecimiento (R² de 0,4 a 0,7). Pagar en FY+3 la mediana de hoy supondría que BSX vuelve a crecer como antes. La recta evaluada en 7% da el precio relativo coherente con la historia del DCF."
+  }
  },
  "resultado": {
   "EV/EBITDA": {
@@ -27,8 +31,15 @@
    "A_max": 55.93,
    "A_excluidos": [],
    "B_mediana": 16.64,
-   "B_ajustada": 15.81,
+   "B_ajustada": 10.3,
    "B_n": 6,
+   "B_regresion": {
+    "a": -0.0,
+    "b": 154.99,
+    "r2": 0.69,
+    "g": 0.07,
+    "n": 6
+   },
    "B_peers": "MDT 12,9x, SYK 15,9x, ABT 17,3x, EW 23,3x, ISRG 33,8x, ZBH 9,8x",
    "B_excluidos": [],
    "C": {
@@ -36,17 +47,17 @@
     "Base": 24.78,
     "Optimista": 33.71
    },
-   "mercado": 14.64,
-   "lambda": 0.25,
-   "conservador": 14.92,
-   "base": 17.18,
-   "optimista": 21.03,
+   "mercado": 11.89,
+   "lambda": 0.0,
+   "conservador": 10.33,
+   "base": 11.89,
+   "optimista": 14.56,
    "factor_cons": 0.868,
    "factor_opt": 1.224,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    13.48,
+    10.3,
     24.78
    ],
    "antes": {
@@ -77,8 +88,15 @@
     ]
    ],
    "B_mediana": 25.06,
-   "B_ajustada": 23.81,
+   "B_ajustada": 16.44,
    "B_n": 6,
+   "B_regresion": {
+    "a": 4.24,
+    "b": 186.68,
+    "r2": 0.72,
+    "g": 0.07,
+    "n": 6
+   },
    "B_peers": "MDT 20,1x, SYK 23,8x, ABT 26,3x, EW 32,5x, ISRG 43,9x, ZBH 15,1x",
    "B_excluidos": [],
    "C": {
@@ -86,17 +104,17 @@
     "Base": 31.65,
     "Optimista": 42.94
    },
-   "mercado": 21.72,
-   "lambda": 0.25,
-   "conservador": 21.19,
-   "base": 24.2,
-   "optimista": 28.97,
+   "mercado": 18.03,
+   "lambda": 0.0,
+   "conservador": 15.79,
+   "base": 18.03,
+   "optimista": 21.59,
    "factor_cons": 0.876,
    "factor_opt": 1.197,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    19.62,
+    16.44,
     31.65
    ],
    "antes": {
@@ -137,8 +155,15 @@
     ]
    ],
    "B_mediana": 30.76,
-   "B_ajustada": 29.23,
+   "B_ajustada": 23.65,
    "B_n": 6,
+   "B_regresion": {
+    "a": 12.37,
+    "b": 179.04,
+    "r2": 0.41,
+    "g": 0.07,
+    "n": 6
+   },
    "B_peers": "MDT 21,5x, SYK 28,9x, ABT 32,7x, EW 52,4x, ISRG 47,3x, ZBH 22,2x",
    "B_excluidos": [],
    "C": {
@@ -146,18 +171,18 @@
     "Base": 19.27,
     "Optimista": 25.1
    },
-   "mercado": 23.58,
-   "lambda": 0.25,
-   "conservador": 19.33,
-   "base": 22.5,
-   "optimista": 27.91,
+   "mercado": 20.79,
+   "lambda": 0.0,
+   "conservador": 17.86,
+   "base": 20.79,
+   "optimista": 25.79,
    "factor_cons": 0.859,
    "factor_opt": 1.241,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     17.93,
-    29.23
+    23.65
    ],
    "antes": {
     "J8": 19.33,
@@ -187,8 +212,15 @@
     ]
    ],
    "B_mediana": 23.21,
-   "B_ajustada": 22.05,
+   "B_ajustada": 14.33,
    "B_n": 6,
+   "B_regresion": {
+    "a": -0.21,
+    "b": 218.51,
+    "r2": 0.69,
+    "g": 0.07,
+    "n": 6
+   },
    "B_peers": "MDT 18,2x, SYK 22,7x, ABT 23,7x, EW 35,4x, ISRG 45,8x, ZBH 12,4x",
    "B_excluidos": [],
    "C": {
@@ -196,17 +228,17 @@
     "Base": 27.17,
     "Optimista": 35.14
    },
-   "mercado": 19.8,
-   "lambda": 0.25,
-   "conservador": 19.08,
-   "base": 21.65,
-   "optimista": 26.64,
+   "mercado": 15.95,
+   "lambda": 0.0,
+   "conservador": 14.06,
+   "base": 15.95,
+   "optimista": 19.63,
    "factor_cons": 0.882,
    "factor_opt": 1.231,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    17.56,
+    14.33,
     27.17
    ],
    "antes": {
@@ -232,8 +264,15 @@
     ]
    ],
    "B_mediana": 18.91,
-   "B_ajustada": 17.96,
+   "B_ajustada": 11.39,
    "B_n": 6,
+   "B_regresion": {
+    "a": -1.34,
+    "b": 190.53,
+    "r2": 0.64,
+    "g": 0.07,
+    "n": 6
+   },
    "B_peers": "MDT 13,9x, SYK 19,4x, ABT 18,5x, EW 29,5x, ISRG 39,8x, ZBH 10,0x",
    "B_excluidos": [],
    "C": {
@@ -241,17 +280,17 @@
     "Base": 26.11,
     "Optimista": 35.73
    },
-   "mercado": 16.01,
-   "lambda": 0.25,
-   "conservador": 15.75,
-   "base": 18.53,
-   "optimista": 23.44,
+   "mercado": 12.72,
+   "lambda": 0.0,
+   "conservador": 10.81,
+   "base": 12.72,
+   "optimista": 16.09,
    "factor_cons": 0.85,
    "factor_opt": 1.265,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    14.05,
+    11.39,
     26.11
    ],
    "antes": {
@@ -264,21 +303,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   26.90456849206441,
-   39.124909508910356,
-   52.671003731684365
+   31.098393942931867,
+   45.266651174351146,
+   61.062152410330675
   ],
   "multiplos_hoy": [
-   45.1917738110855,
-   59.05944740647164,
-   80.57627286063853
+   32.521687440381214,
+   42.8287051485671,
+   58.835731808824264
   ],
   "ponderado_hoy": [
-   34.21945061967284,
-   47.09872466793487,
-   63.83311138326603
+   31.667711341911605,
+   44.29147276403753,
+   60.171584169728106
   ],
-  "brecha_base": 0.5095101342795787,
+  "brecha_base": -0.05385744168248574,
   "fila_origen": 40
  }
 }

@@ -1,0 +1,21 @@
+{
+ "ticker": "MSFT",
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: efectos de red y costos de cambio en Office, Azure y Windows."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.259,
+   "motivo": "ROIC terminal 25,9%: el menor entre el actual (25,9%, que ya descuenta el capex de IA) y el de su industria según Damodaran (29,3%)."
+  }
+ ]
+}

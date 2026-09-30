@@ -11,14 +11,18 @@
   "peers_motivo": "B: ropa y calzado deportivo (Adidas, Lululemon, Deckers, On Holding), datos de yfinance al 29-sep-2026. Se excluyen Under Armour y VF Corp (margen operativo negativo; sus múltiplos no comparan).",
   "ajuste_peers": 0.0,
   "ajuste_motivo": "Sin ajuste: Nike es la marca más grande del sector, pero hoy no crece; queda entre On/Adidas (crecen) y Lululemon (decrece).",
-  "lambda": 0.25,
-  "lambda_motivo": "λ = 0,25: la Nike de FY+3 del escenario Base es una marca madura en recuperación lenta, parecida a la de hoy.",
+  "lambda": 0.0,
+  "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 13,3% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
   "fuentes": [
    "[Nike: resultados FY26](https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2026-fourth-quarter-and-full-year-results)",
    "[CNBC, 30-jun-2026: Nike supera estimados pero China cae 12%](https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html)"
   ],
-  "evaluacion": "Los múltiplos (US$36,79 hoy) quedan 24% por encima del DCF (US$29,76), en el límite del rango de ±25%. Los múltiplos suponen que a FY+3 el mercado sigue pagando por Nike cerca de lo que paga hoy en plena reestructuración (~15x EBITDA, ~22x utilidad), mientras que el DCF refleja una recuperación lenta de ventas y márgenes. Si la recuperación se demora más (China, inventarios), el DCF es la referencia más prudente.",
-  "ticker": "NKE"
+  "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$36,79 hoy) quedaban 24% por encima del DCF (US$29,76). Los múltiplos pagaban en FY+3 la historia de Nike cuando crecía y además se acercaban al justificado. El DCF suponía que después del año 10 el ROIC baja al costo de capital. Ahora el DCF usa un ROIC terminal de 13,3% (el actual, con el margen deprimido y por debajo del de la industria) y da US$36,76. Los múltiplos ajustan los peers por el crecimiento de ~3,5% de FY+3 y dejan fuera el justificado: dan US$34,03, 7% por debajo del DCF. Los dos métodos coinciden con el precio (US$36,39); el mercado ya descuenta una recuperación lenta.",
+  "ticker": "NKE",
+  "peers_crecimiento": {
+   "g": 0.035,
+   "motivo": "B ajustado por crecimiento (30-sep-2026): la hoja supone que Nike crece ~3,5% en FY+3. Entre los peers, On y Deckers crecen más y cotizan más caros, mientras que Lululemon decrece y cotiza más barato. El múltiplo sube con el crecimiento (R² de 0,7 a 0,9, aunque con solo cuatro peers). Por eso la mediana de hoy se corrige con la recta evaluada en 3,5%."
+  }
  },
  "resultado": {
   "EV/EBITDA": {
@@ -31,8 +35,15 @@
    "A_max": 41.82,
    "A_excluidos": [],
    "B_mediana": 9.9,
-   "B_ajustada": 9.9,
+   "B_ajustada": 8.68,
    "B_n": 4,
+   "B_regresion": {
+    "a": 6.43,
+    "b": 64.33,
+    "r2": 0.74,
+    "g": 0.035,
+    "n": 4
+   },
    "B_peers": "ADDYY 12,7x, LULU 5,0x, DECK 7,1x, ONON 19,1x",
    "B_excluidos": [
     "UAA",
@@ -43,17 +54,17 @@
     "Base": 16.37,
     "Optimista": 17.72
    },
-   "mercado": 12.71,
-   "lambda": 0.25,
-   "conservador": 10.39,
-   "base": 13.62,
-   "optimista": 16.72,
+   "mercado": 12.1,
+   "lambda": 0.0,
+   "conservador": 9.22,
+   "base": 12.1,
+   "optimista": 14.85,
    "factor_cons": 0.762,
    "factor_opt": 1.227,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    9.9,
+    8.68,
     16.37
    ],
    "antes": {
@@ -79,8 +90,15 @@
     ]
    ],
    "B_mediana": 13.37,
-   "B_ajustada": 13.37,
+   "B_ajustada": 11.74,
    "B_n": 4,
+   "B_regresion": {
+    "a": 9.48,
+    "b": 64.4,
+    "r2": 0.72,
+    "g": 0.035,
+    "n": 4
+   },
    "B_peers": "ADDYY 18,0x, LULU 8,8x, DECK 8,4x, ONON 20,9x",
    "B_excluidos": [
     "UAA",
@@ -91,17 +109,17 @@
     "Base": 24.58,
     "Optimista": 26.43
    },
-   "mercado": 21.64,
-   "lambda": 0.25,
-   "conservador": 17.06,
-   "base": 22.37,
-   "optimista": 26.48,
+   "mercado": 20.82,
+   "lambda": 0.0,
+   "conservador": 15.88,
+   "base": 20.82,
+   "optimista": 24.64,
    "factor_cons": 0.762,
    "factor_opt": 1.183,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    13.37,
+    11.74,
     29.91
    ],
    "antes": {
@@ -121,8 +139,15 @@
    "A_max": 61.61,
    "A_excluidos": [],
    "B_mediana": 14.84,
-   "B_ajustada": 14.84,
+   "B_ajustada": 12.18,
    "B_n": 4,
+   "B_regresion": {
+    "a": 9.77,
+    "b": 68.76,
+    "r2": 0.9,
+    "g": 0.035,
+    "n": 4
+   },
    "B_peers": "ADDYY 18,6x, LULU 8,0x, DECK 11,0x, ONON 20,8x",
    "B_excluidos": [
     "UAA",
@@ -133,17 +158,17 @@
     "Base": 17.76,
     "Optimista": 19.56
    },
-   "mercado": 18.43,
-   "lambda": 0.25,
-   "conservador": 14.05,
-   "base": 18.26,
-   "optimista": 21.49,
+   "mercado": 17.09,
+   "lambda": 0.0,
+   "conservador": 13.15,
+   "base": 17.09,
+   "optimista": 20.12,
    "factor_cons": 0.769,
    "factor_opt": 1.177,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    14.84,
+    12.18,
     22.01
    ],
    "antes": {
@@ -169,8 +194,15 @@
     ]
    ],
    "B_mediana": 12.63,
-   "B_ajustada": 12.63,
+   "B_ajustada": 11.62,
    "B_n": 4,
+   "B_regresion": {
+    "a": 9.23,
+    "b": 68.4,
+    "r2": 0.7,
+    "g": 0.035,
+    "n": 4
+   },
    "B_peers": "ADDYY 15,8x, LULU 7,9x, DECK 9,5x, ONON 23,0x",
    "B_excluidos": [
     "UAA",
@@ -181,17 +213,17 @@
     "Base": 22.12,
     "Optimista": 23.61
    },
-   "mercado": 20.11,
-   "lambda": 0.25,
-   "conservador": 16.26,
-   "base": 20.61,
-   "optimista": 24.25,
+   "mercado": 19.6,
+   "lambda": 0.0,
+   "conservador": 15.47,
+   "base": 19.6,
+   "optimista": 23.06,
    "factor_cons": 0.789,
    "factor_opt": 1.176,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    12.63,
+    11.62,
     27.58
    ],
    "antes": {
@@ -217,8 +249,15 @@
     ]
    ],
    "B_mediana": 10.7,
-   "B_ajustada": 10.7,
+   "B_ajustada": 9.28,
    "B_n": 4,
+   "B_regresion": {
+    "a": 7.19,
+    "b": 59.73,
+    "r2": 0.77,
+    "g": 0.035,
+    "n": 4
+   },
    "B_peers": "ADDYY 12,5x, LULU 5,4x, DECK 8,9x, ONON 18,8x",
    "B_excluidos": [
     "UAA",
@@ -229,17 +268,17 @@
     "Base": 20.73,
     "Optimista": 22.82
    },
-   "mercado": 17.28,
-   "lambda": 0.25,
-   "conservador": 13.18,
-   "base": 18.15,
-   "optimista": 20.74,
+   "mercado": 16.58,
+   "lambda": 0.0,
+   "conservador": 12.04,
+   "base": 16.58,
+   "optimista": 18.95,
    "factor_cons": 0.726,
    "factor_opt": 1.143,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    10.7,
+    9.28,
     23.87
    ],
    "antes": {
@@ -252,21 +291,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   16.190543416035364,
-   29.75748404779229,
-   40.2999905879996
+   18.972409458075976,
+   36.759695783506785,
+   49.955003053704736
   ],
   "multiplos_hoy": [
-   24.065258534051825,
-   36.79247086787303,
-   49.212811914861085
+   22.32077197104597,
+   34.027259518987655,
+   45.43091515200851
   ],
   "ponderado_hoy": [
-   20.915372486845243,
-   33.97847613984074,
-   45.6476833841165
+   20.981426965857978,
+   35.12023402479531,
+   47.240550312687006
   ],
-  "brecha_base": 0.2364106726490094,
+  "brecha_base": -0.07433239601904185,
   "fila_origen": 59
  }
 }

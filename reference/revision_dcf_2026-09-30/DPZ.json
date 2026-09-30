@@ -1,0 +1,21 @@
+{
+ "ticker": "DPZ",
+ "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: franquicia con marca y logística propias, muy poco capital."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.184,
+   "motivo": "ROIC terminal 18,4%: el de su industria según Damodaran (el actual, 99%, refleja el modelo de franquicia y no se sostiene para siempre)."
+  }
+ ]
+}

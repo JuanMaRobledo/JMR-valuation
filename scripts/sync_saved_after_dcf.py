@@ -64,7 +64,7 @@ def main(paths: list[str]) -> int:
             aud = old.setdefault("auditoria", {})
             aud["revisionDCF"] = {"fecha": "2026-09-30", "antes": {"dcfHoy": before["dcfHoy"], "objetivoPonderado": before["objetivoPonderado"],
                                   "valorPresentePonderado": before["valorPresentePonderado"]},
-                                  "detalle": "Supuestos del DCF revisados (crecimiento, margen, sales-to-capital y/o beta). Celdas, valores anteriores y motivos: "
+                                  "detalle": "Supuestos del DCF revisados (crecimiento, margen, sales-to-capital, beta y/o ROIC después del año 10). Celdas, valores anteriores y motivos: "
                                              "reference/revision_dcf_2026-09-30/ en JMR-valuation; cada celda cambiada tiene una nota en la hoja."}
             Path(path).write_text(json.dumps(old, ensure_ascii=False, indent=2) + "\n")
             print(f"{old['ticker']:5s} {status[:18]} DCF hoy base {(before['dcfHoy'] or {}).get('base', 0):.2f} -> {old['descuentoMultiples']['dcfHoy']['base']:.2f} | FY+3 base {before['objetivoPonderado']['base']:.2f} -> {old['objetivoPonderado']['base']:.2f} | "
