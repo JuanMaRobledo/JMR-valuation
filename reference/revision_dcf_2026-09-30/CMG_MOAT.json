@@ -1,0 +1,14 @@
+{
+ "ticker": "CMG_MOAT",
+ "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.184,
+   "despues": 0.137,
+   "motivo": "Moat estrecho: Marca y economía por local (una sola fuente en un sector competitivo). Evidencia: ROIC 15-22% en 2021-2026. Amenaza: Tráfico débil; la marca es la única barrera. ROIC terminal 13,7% = punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual (53,1%) y el de la industria (18,4%): 18,4%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

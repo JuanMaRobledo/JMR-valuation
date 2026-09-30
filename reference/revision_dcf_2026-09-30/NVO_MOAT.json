@@ -1,0 +1,14 @@
+{
+ "ticker": "NVO_MOAT",
+ "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.169,
+   "despues": 0.131,
+   "motivo": "Moat estrecho: Patentes y escala de manufactura en diabetes y obesidad. Evidencia: ROIC 36-87% en 2021-2026. Amenaza: Guerra de precios de los GLP-1 y Lilly: historias B y D suman 40%; las patentes vencen. ROIC terminal 13,1% = punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual (23,8%) y el de la industria (17,0%): 17,0%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

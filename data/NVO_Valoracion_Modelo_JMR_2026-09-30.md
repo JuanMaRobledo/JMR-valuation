@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$44,06 en el escenario Base (rango US$33,87–US$54,79). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$42,59 (−3% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$43,17. El valor intrínseco es el DCF: US$44,06 frente a un precio de referencia de US$38,71 (+14%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$41,96 en el escenario Base (rango US$32,44–US$52,02). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$42,59 (+1% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$42,34. El valor intrínseco es el DCF: US$41,96 frente a un precio de referencia de US$38,71 (+8%).
 
-Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 16,9% el DCF pasa de US$38,01 a US$44,06. Los múltiplos (US$42,59 hoy) quedan 3% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$38,71) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.
+Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho, ROIC después del año 10 de 13,1%; el DCF da US$41,96 y los múltiplos US$42,59 hoy (1% por encima, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 16,9% el DCF pasa de US$38,01 a US$44,06. Los múltiplos (US$42,59 hoy) quedan 3% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$38,71) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.
 
 | Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$33,87 | US$32,14 | US$32,83 | US$22,02 | US$42,07 |
-| Base | US$44,06 | US$42,59 | US$43,17 | US$28,64 | US$56,67 |
-| Optimista | US$54,79 | US$52,70 | US$53,54 | US$35,62 | US$71,90 |
+| Conservador | US$32,44 | US$32,14 | US$32,26 | US$21,09 | US$41,32 |
+| Base | US$41,96 | US$42,59 | US$42,34 | US$27,27 | US$55,57 |
+| Optimista | US$52,02 | US$52,70 | US$52,43 | US$33,81 | US$70,44 |
 
 ## 2. Datos
 
@@ -40,7 +40,7 @@ Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 1
 | Margen EBIT objetivo | 35,0% | 40,0% | 45,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 7 | 7 | 7 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 0,45 / 1,10 | — | Input B32/B33 |
-| DCF por acción hoy | US$33,87 | US$44,06 | US$54,79 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$32,44 | US$41,96 | US$52,02 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 5,11%, beta apalancada 1,09, ERP 4,09%, Ke 9,55%, costo de la deuda después de impuestos 4,42%, peso del patrimonio 89,9%, WACC inicial 9,03% y terminal 9,20%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 19,3x: promedio de historia y peers 19,7x, acercado 25% al justificado (18,0x); rango de anclas 18,0x–19,8x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 12,5x: promedio de historia y peers 13,1x, acercado 25% al justificado (10,7x); rango de anclas 10,4x–15,9x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$42,59 frente a US$44,06 del DCF (−3%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$42,59 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$42,59 frente a US$41,96 del DCF (+1%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$42,59 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,13 +72,13 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$44,54 | US$57,93 | US$72,04 |
+| DCF Damodaran | 40% | US$42,66 | US$55,17 | US$68,40 |
 | EV/EBITDA | 20% | US$35,66 | US$52,96 | US$65,70 |
 | EV/FCFF | 10% | US$32,90 | US$47,30 | US$65,30 |
 | P/E | 20% | US$50,09 | US$63,74 | US$80,61 |
 | P/FCFE | 5% | US$35,17 | US$52,29 | US$74,39 |
 | P/OCF | 5% | US$41,19 | US$56,28 | US$71,42 |
-| **Ponderado FY+3** | 100% | US$42,07 | US$56,67 | US$71,90 |
+| **Ponderado FY+3** | 100% | US$41,32 | US$55,57 | US$70,44 |
 
 Valor presente (Ke 9,55%; consolidado por método: Promedio 1-3 años):
 
@@ -100,25 +100,25 @@ Valor presente (Ke 9,55%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$41,65 | US$42,82 | US$42,80 | US$42,43 | OK |
 | P/OCF | Optimista | US$49,16 | US$52,89 | US$54,32 | US$52,12 | OK |
 
-Múltiplos consolidados hoy: US$32,14 / US$42,59 / US$52,70 · DCF hoy: US$33,87 / US$44,06 / US$54,79 · Ponderado hoy: US$32,83 / US$43,17 / US$53,54 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$32,14 / US$42,59 / US$52,70 · DCF hoy: US$32,44 / US$41,96 / US$52,02 · Ponderado hoy: US$32,26 / US$42,34 / US$52,43 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVO la diferencia es de −3% (múltiplos por debajo del DCF). Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 16,9% el DCF pasa de US$38,01 a US$44,06. Los múltiplos (US$42,59 hoy) quedan 3% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$38,71) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVO la diferencia es de +1% (múltiplos por encima del DCF). Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho, ROIC después del año 10 de 13,1%; el DCF da US$41,96 y los múltiplos US$42,59 hoy (1% por encima, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 16,9% el DCF pasa de US$38,01 a US$44,06. Los múltiplos (US$42,59 hoy) quedan 3% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$38,71) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$38,71 supone que los ingresos crecen -0,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 3,0% (−3,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$38,71 supone que los ingresos crecen 0,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 3,0% (−2,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$57,93 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,6%, WACC de los años 4-10 9,1%, ROE de FY+3 43,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$55,17 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,6%, WACC de los años 4-10 9,1%, ROE de FY+3 43,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 10,6x | 11,7x | −9% | 4,7% | 5,1% | −0,4 pp | Coherente con el DCF. |
-| EV/FCFF | 21,0x | 26,2x | −18% | 4,2% | 5,1% | −0,9 pp | Coherente con el DCF. |
-| P/E | 16,9x | 15,2x | +10% | 4,0% | 3,3% | +0,7 pp | Coherente con el DCF. |
-| P/FCFE | 19,3x | 21,7x | −10% | 4,2% | 4,7% | −0,6 pp | Coherente con el DCF. |
-| P/OCF | 12,5x | 13,0x | −3% | 4,6% | 4,7% | −0,2 pp | Coherente con el DCF. |
+| EV/EBITDA | 10,6x | 11,1x | −4% | 4,7% | 4,9% | −0,2 pp | Coherente con el DCF. |
+| EV/FCFF | 21,0x | 24,8x | −14% | 4,2% | 4,9% | −0,7 pp | Coherente con el DCF. |
+| P/E | 16,9x | 14,3x | +16% | 4,0% | 2,9% | +1,1 pp | Coherente con el DCF. |
+| P/FCFE | 19,3x | 20,5x | −5% | 4,2% | 4,5% | −0,3 pp | Coherente con el DCF. |
+| P/OCF | 12,5x | 12,3x | +2% | 4,6% | 4,5% | +0,1 pp | Coherente con el DCF. |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -126,15 +126,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$43,17 | — |
-| Múltiplos Base +20% | US$48,00 | +11,2% |
-| Múltiplos Base −20% | US$38,34 | −11,2% |
-| Crecimiento años 1-5 +2 pp | US$44,58 | +3,3% |
-| Crecimiento años 1-5 −2 pp | US$41,90 | −2,9% |
-| Margen objetivo +3 pp | US$44,33 | +2,7% |
-| Margen objetivo −3 pp | US$42,02 | −2,7% |
-| WACC +1 pp | US$42,25 | −2,1% |
-| WACC −1 pp | US$44,16 | +2,3% |
+| Vigente | US$42,34 | — |
+| Múltiplos Base +20% | US$47,17 | +11,4% |
+| Múltiplos Base −20% | US$37,51 | −11,4% |
+| Crecimiento años 1-5 +2 pp | US$43,58 | +2,9% |
+| Crecimiento años 1-5 −2 pp | US$41,21 | −2,7% |
+| Margen objetivo +3 pp | US$43,42 | +2,6% |
+| Margen objetivo −3 pp | US$41,25 | −2,6% |
+| WACC +1 pp | US$41,47 | −2,1% |
+| WACC −1 pp | US$43,26 | +2,2% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 1-5 +2 pp.

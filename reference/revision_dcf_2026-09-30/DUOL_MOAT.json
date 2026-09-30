@@ -1,0 +1,21 @@
+{
+ "ticker": "DUOL_MOAT",
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital (moat estrecho)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.174,
+   "motivo": "Moat estrecho: Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos. Evidencia: ROIC por encima del costo de capital en 2021-2026 (serie volátil). Amenaza: IA generalista (D, 10%) y costos de cambio bajos. ROIC terminal 17,4% = punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual (25,6%) y el de la industria (29,3%, Software (System & Application)): 25,6%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

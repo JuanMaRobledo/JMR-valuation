@@ -133,6 +133,22 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
     ],
 }
 
+# Quinta ronda (30-sep-2026): ROIC después del año 10 según el moat (reference/moat_2026-09-30.json). Ancho: menor
+# entre el ROIC actual y el de la industria; estrecho: punto medio entre el costo de capital terminal y ese valor;
+# sin moat: costo de capital. Solo entran las empresas cuyo valor cambia; clave <T>_MOAT con respaldo propio.
+_MOAT = json.loads((_ROOT / "reference" / "moat_2026-09-30.json").read_text())["empresas"]
+_p = lambda x: f"{x * 100:.1f}".replace(".", ",") + "%"  # noqa: E731
+for _t, _m in _MOAT.items():
+    if _m["roic_terminal"] is None or _m["roic_terminal"] == _m["roic_terminal_antes"]:
+        continue
+    _ref = min(_m["roic_actual"], _m["roic_industria"]) if _m["roic_industria"] else _m["roic_actual"]
+    _why = (f"Moat {_m['moat']}: {_m['fuentes']}. Evidencia: {_m['evidencia']}. Amenaza: {_m['amenaza']}. ROIC terminal "
+            f"{_p(_m['roic_terminal'])} = punto medio entre el costo de capital terminal ({_p(_m['costo_capital_terminal'])}) y el menor "
+            f"entre el ROIC actual ({_p(_m['roic_actual'])}) y el de la industria ({_p(_m['roic_industria']) if _m['roic_industria'] else 'sin dato'}"
+            f"{', ' + _m['industria_proxy'] if _m['industria_proxy'] else ''}): {_p(_ref)}. Un moat estrecho conserva solo parte de los retornos excedentes.")
+    CHANGES[f"{_t}_MOAT"] = ([] if _m["roic_terminal_antes"] else [(IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital (moat estrecho).")]) + \
+        [(IS, "B50", _m["roic_terminal"], _why)]
+
 
 def main(argv: list[str]) -> int:
     dry, revert = "--dry-run" in argv, "--revert" in argv

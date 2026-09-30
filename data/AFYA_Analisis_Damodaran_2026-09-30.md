@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Afya Limited (AFYA) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$25,29 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$24,07 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Para empresas de US$700-1.250 millones, crecer ~6% anual cinco años (historia A
 
 **Márgenes.** El margen EBIT subió de 26,7% a 32,8% en dos años al madurar las plazas compradas. La hoja supone 31,5% el próximo año y 33% de objetivo, prácticamente el nivel actual. El piso lo pone la mezcla: más peso de educación continua y digital (menor margen) y la inversión en producto del 2026. Las historias van de 26% (caída de precio) a 35% (campus maduros).
 
-**Reinversión y retorno.** Crecer exige capital: campus, hospitales-escuela y compras de plazas (con earn-outs). El capex fue US$49-73 millones al año (~10% de las ventas) y la hoja usa un sales-to-capital de 1,5 (años 1-5) y 1,2 (años 6-10), prudente para educación presencial. Si el crecimiento viene de comprar plazas, cada punto de crecimiento cuesta más que en el DCF. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 14,8% (el actual, por debajo del de Education (15,9%)); antes era igual al costo de capital.
+**Reinversión y retorno.** Crecer exige capital: campus, hospitales-escuela y compras de plazas (con earn-outs). El capex fue US$49-73 millones al año (~10% de las ventas) y la hoja usa un sales-to-capital de 1,5 (años 1-5) y 1,2 (años 6-10), prudente para educación presencial. Si el crecimiento viene de comprar plazas, cada punto de crecimiento cuesta más que en el DCF. Moat estrecho (licencias reguladas de Medicina (una sola fuente, depende de la política); amenaza: liberación de plazas (C, 15%)): el ROIC después del año 10 es 12,9%, el punto medio entre el costo de capital terminal (11,0%) y el menor entre el ROIC actual y el de la industria (14,8%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
 
 **Riesgo.** La hoja usa una beta de 1,20 con prima de riesgo país de Brasil incluida (costo del patrimonio ~14%). La beta bottom-up de Educación (32 empresas, 0,72 desapalancada y corregida por caja) reapalancada con la deuda de Afya (42% de la estructura) da 1,16: casi la misma. El riesgo relevante es el país y la moneda, y ya está en la tasa; no conviene sumarlo otra vez recortando los flujos.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,20 | 14,0% | 11,2% | US$25,29 |
-| Bottom-up del sector (Education, reapalancada) | 1,16 | 13,7% | 11,1% | US$25,56 |
+| Hoja (regresión o la cargada en el libro) | 1,20 | 14,0% | 11,2% | US$24,07 |
+| Bottom-up del sector (Education, reapalancada) | 1,16 | 13,7% | 11,1% | US$24,32 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,20) | Valor/acción (beta 1,16) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · La escasez de plazas sostiene precio y margen** | 45% | Grado (Medicina): 7%, 6%, 6%, 5%, 5%; Educación continua: 6%, 6%, 5%, 5%, 5%; Soluciones para la práctica médica: 5%, 8%, 8%, 8%, 7% | 5,8% | 33% | 1,5 | 14,8% | US$26,06 | US$26,33 |
-| **B · Madurez: precio real plano** | 30% | Grado (Medicina): 5%, 4%, 3%, 3%, 3%; Educación continua: 3%, 3%, 3%, 3%, 3%; Soluciones para la práctica médica: 2%, 2%, 2%, 2%, 2% | 3,5% | 30% | 1,5 | 14,8% | US$20,67 | US$20,89 |
+| **A · La escasez de plazas sostiene precio y margen** | 45% | Grado (Medicina): 7%, 6%, 6%, 5%, 5%; Educación continua: 6%, 6%, 5%, 5%, 5%; Soluciones para la práctica médica: 5%, 8%, 8%, 8%, 7% | 5,8% | 33% | 1,5 | 12,9% | US$24,80 | US$25,06 |
+| **B · Madurez: precio real plano** | 30% | Grado (Medicina): 5%, 4%, 3%, 3%, 3%; Educación continua: 3%, 3%, 3%, 3%, 3%; Soluciones para la práctica médica: 2%, 2%, 2%, 2%, 2% | 3,5% | 30% | 1,5 | 12,9% | US$19,69 | US$19,90 |
 | **C · Se liberan plazas y cae el precio** | 15% | Grado (Medicina): 2%, 0%, -1%, 0%, 1%; Educación continua: 0%, 0%, 0%, 0%, 0%; Soluciones para la práctica médica: 0%, 0%, 0%, 0%, 0% | 0,3% | 26% | 1,5 | = costo de capital | US$13,34 | US$13,48 |
-| **D · Maduran los campus y crece lo digital** | 10% | Grado (Medicina): 9%, 8%, 7%, 6%, 6%; Educación continua: 8%, 8%, 8%, 8%, 8%; Soluciones para la práctica médica: 12%, 12%, 10%, 10%, 8% | 7,4% | 35% | 1,5 | 14,8% | US$30,25 | US$30,56 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$22,95** | **US$23,20** |
+| **D · Maduran los campus y crece lo digital** | 10% | Grado (Medicina): 9%, 8%, 7%, 6%, 6%; Educación continua: 8%, 8%, 8%, 8%, 8%; Soluciones para la práctica médica: 12%, 12%, 10%, 10%, 8% | 7,4% | 35% | 1,5 | 12,9% | US$28,78 | US$29,08 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$21,94** | **US$22,18** |
 
 A (45%) es la continuación de 2024-2026: crecimiento de un dígito medio y margen estable. B (30%) refleja que el precio real de la matrícula no puede subir para siempre y que el 1S26 ya estuvo en el rango bajo de la guía. C (15%) es el riesgo regulatorio: poco probable, pero es el que rompe la tesis. D (10%) necesita que la madurez de los campus nuevos y lo digital aceleren. En las historias donde la ventaja se erosiona (C), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,20; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 29,0% | 31,0% | 33,0% | 35,0% | 37,0% |
 |---|---:|---:|---:|---:|---:|
-| 1,2% | 17,54 | 18,89 | 20,24 | 21,59 | 22,95 |
-| 3,2% | 19,59 | 21,11 | 22,64 | 24,17 | 25,69 |
-| 5,2% | 21,85 | 23,57 | 25,29 | 27,01 | 28,73 |
-| 7,2% | 24,34 | 26,27 | 28,21 | 30,15 | 32,09 |
-| 9,2% | 27,08 | 29,26 | 31,44 | 33,62 | 35,79 |
+| 1,2% | 16,72 | 18,02 | 19,31 | 20,61 | 21,90 |
+| 3,2% | 18,65 | 20,11 | 21,57 | 23,04 | 24,50 |
+| 5,2% | 20,77 | 22,42 | 24,07 | 25,72 | 27,36 |
+| 7,2% | 23,11 | 24,97 | 26,82 | 28,67 | 30,53 |
+| 9,2% | 25,69 | 27,77 | 29,85 | 31,93 | 34,02 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 26% | Margen 30% | Margen 33% |
 |---|---:|---:|---:|
-| Beta 1,20 | -3,2% (95% de las empresas) | -6,0% (97% de las empresas) | -7,6% (98% de las empresas) |
-| Beta 1,16 | -3,4% (95% de las empresas) | -6,2% (97% de las empresas) | -7,8% (98% de las empresas) |
+| Beta 1,20 | -2,4% (94% de las empresas) | -5,2% (96% de las empresas) | -7,0% (97% de las empresas) |
+| Beta 1,16 | -2,6% (94% de las empresas) | -5,4% (96% de las empresas) | -7,2% (98% de las empresas) |
 
-Frente al valor esperado de las historias (US$22,95 con la beta de la hoja; US$23,20 con la propuesta), el precio está por debajo en 48% y por debajo en 48%, respectivamente. El precio (US$12,04) sigue por debajo incluso de la historia C (US$13,34), en la que se liberan plazas y la ventaja regulatoria se pierde. El DCF inverso pide ingresos cayendo 3-8% al año durante cinco años con márgenes de 26-33%, algo que no se parece a ninguna historia con datos de 2024-2026. ¿Qué sabe el mercado que yo no? Probablemente dos cosas que el DCF standalone no captura: que el precio está anclado a la relación de canje con Yduqs (US$13,71 según el modelo) y un descuento por gobierno corporativo y país (controlador con 72% de los votos, real volátil). Antes de concluir que es una ganga, decide qué historia vale si se cierra la fusión.
+Frente al valor esperado de las historias (US$21,94 con la beta de la hoja; US$22,18 con la propuesta), el precio está por debajo en 45% y por debajo en 46%, respectivamente. El precio (US$12,04) sigue por debajo incluso de la historia C (US$13,34), en la que se liberan plazas y la ventaja regulatoria se pierde. El DCF inverso pide ingresos cayendo 3-8% al año durante cinco años con márgenes de 26-33%, algo que no se parece a ninguna historia con datos de 2024-2026. ¿Qué sabe el mercado que yo no? Probablemente dos cosas que el DCF standalone no captura: que el precio está anclado a la relación de canje con Yduqs (US$13,71 según el modelo) y un descuento por gobierno corporativo y país (controlador con 72% de los votos, real volátil). Antes de concluir que es una ganga, decide qué historia vale si se cierra la fusión.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$22,95 con la beta de la hoja; US$2
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Escasez regulada de plazas de Medicina en Brasil; la fusión con Yduqs está por decidirse |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$22,95 / US$23,20 |  |
-| Rango (historia más débil a más fuerte) | US$13,34 a US$30,56 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$21,94 / US$22,18 |  |
+| Rango (historia más débil a más fuerte) | US$13,34 a US$29,08 |  |
 | Confianza | Media: el negocio standalone es claro; la fusión y la moneda dominan el resultado |  |
 | Qué cambiaría la opinión | Resolución de CADE y asambleas sobre la fusión; crecimiento de grado y margen en 2027 |  |
 | Revisión | Resultados del 3T26 (nov-2026) y cada hito de la fusión |  |
