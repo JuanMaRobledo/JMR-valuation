@@ -201,7 +201,7 @@ def main():
     w("")
     w(dec.get("evaluacion", ""))
     w("")
-    w("| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |")
+    w("| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |")
     w("|---|---:|---:|---:|---:|---:|")
     for i, k in enumerate(SCEN):
         w(f"| {k.capitalize()} | {money(dcf[i])} | {money(mult[i])} | {money(pond[i])} | {money(mos.get(k))} | {money(op[k])} |")

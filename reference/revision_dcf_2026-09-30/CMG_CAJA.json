@@ -1,0 +1,28 @@
+{
+ "ticker": "CMG_CAJA",
+ "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B19",
+   "antes": "='Balance Sheet'!L5",
+   "despues": 677.9,
+   "motivo": "Caja e inversiones negociables al 30-jun-2026 = efectivo US$228,2M + inversiones de corto plazo US$449,7M (10-Q 2T26). Antes solo el efectivo."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B20",
+   "antes": "='Balance Sheet'!L14",
+   "despues": 97.1,
+   "motivo": "Inversiones de largo plazo al 30-jun-2026 (10-Q 2T26); antes US$197,1M, el saldo de dic-2025."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B15",
+   "antes": "='Balance Sheet'!L35",
+   "despues": 2199.8,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q 2T26); antes US$2.830,6M, el saldo de dic-2025. Bajó por recompras de US$1.355M en el semestre."
+  }
+ ]
+}

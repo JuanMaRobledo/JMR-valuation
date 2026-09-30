@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$25,48 en el escenario Base (rango US$18,32–US$34,84). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$26,41 (+4% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$25,85. El valor intrínseco es el DCF: US$25,48 frente a un precio de referencia de US$31,85 (−20%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$25,76 en el escenario Base (rango US$18,59–US$35,12). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$26,54 (+3% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$26,07. El valor intrínseco es el DCF: US$25,76 frente a un precio de referencia de US$31,90 (−19%).
 
-Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho (marca probada de 30 años, una sola fuente), ROIC después del año 10 de 13,7%; el DCF da US$25,48 y los múltiplos US$26,41 hoy (4% por encima, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 18,4% el DCF pasa de US$20,52 a US$27,91. Los múltiplos (US$26,41 hoy) quedan 5% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$31,85) está por encima de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$26,41 hoy) quedan 29% por encima del DCF (US$20,52): los múltiplos suponen que Chipotle conserva a FY+3 una prima parecida a la de hoy frente a otros restaurantes (~27x utilidad), mientras que el DCF refleja un crecimiento de ventas comparables más bajo. El DCF es más confiable hasta que las ventas comparables vuelvan a crecer; los múltiplos indican lo que pagaría el mercado si Chipotle recupera su historia de crecimiento de unidades.
+Revisión del 30-sep-2026 (ROIC terminal según el moat) y revaloración con el balance al 30-jun-2026: moat estrecho (marca probada de 30 años, una sola fuente), ROIC después del año 10 de 13,7%; el DCF da US$25,76 y los múltiplos US$26,54 hoy (3% por encima, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 18,4% el DCF pasa de US$20,52 a US$27,91. Los múltiplos (US$26,41 hoy) quedan 5% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$31,85) está por encima de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$26,41 hoy) quedan 29% por encima del DCF (US$20,52): los múltiplos suponen que Chipotle conserva a FY+3 una prima parecida a la de hoy frente a otros restaurantes (~27x utilidad), mientras que el DCF refleja un crecimiento de ventas comparables más bajo. El DCF es más confiable hasta que las ventas comparables vuelvan a crecer; los múltiplos indican lo que pagaría el mercado si Chipotle recupera su historia de crecimiento de unidades.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$18,32 | US$20,93 | US$19,36 | US$11,91 | US$25,03 |
-| Base | US$25,48 | US$26,41 | US$25,85 | US$16,56 | US$34,62 |
-| Optimista | US$34,84 | US$34,12 | US$34,55 | US$22,65 | US$47,62 |
+| Conservador | US$18,59 | US$21,07 | US$19,58 | US$14,50 | US$25,32 |
+| Base | US$25,76 | US$26,54 | US$26,07 | US$14,50 | US$34,90 |
+| Optimista | US$35,12 | US$34,25 | US$34,77 | US$14,50 | US$47,90 |
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - CMG](https://docs.google.com/spreadsheets/d/1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU/edit).
-- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$31,85.
+- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$31,90.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -40,7 +40,7 @@ Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho (marca p
 | Margen EBIT objetivo | 14,0% | 17,0% | 20,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,60 / 2,20 | — | Input B32/B33 |
-| DCF por acción hoy | US$18,32 | US$25,48 | US$34,84 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$18,59 | US$25,76 | US$35,12 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,10, ERP 4,46%, Ke 9,90%, costo de la deuda después de impuestos 4,35%, peso del patrimonio 100,0%, WACC inicial 9,90% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 27,1x: promedio de historia y peers 27,4x, acercado 25% al justificado (26,2x); rango de anclas 25,0x–29,8x. Atípicos excluidos de la historia: Dec '20 (135,6x: > 2,5x la mediana (51.8x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 18,1x: promedio de historia y peers 18,4x, acercado 25% al justificado (17,1x); rango de anclas 16,6x–20,3x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$26,41 frente a US$25,48 del DCF (+4%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$26,41 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$26,54 frente a US$25,76 del DCF (+3%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$26,54 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,24 +72,24 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$24,31 | US$33,82 | US$46,25 |
-| EV/EBITDA | 10% | US$30,22 | US$40,34 | US$54,64 |
-| EV/FCFF | 15% | US$24,28 | US$33,72 | US$47,60 |
+| DCF Damodaran | 60% | US$24,68 | US$34,19 | US$46,61 |
+| EV/EBITDA | 10% | US$30,48 | US$40,60 | US$54,90 |
+| EV/FCFF | 15% | US$24,55 | US$33,98 | US$47,87 |
 | P/E | 5% | US$28,18 | US$39,31 | US$54,61 |
 | P/FCFE | 5% | US$23,16 | US$32,31 | US$45,23 |
 | P/OCF | 5% | US$24,24 | US$33,05 | US$45,49 |
-| **Ponderado FY+3** | 100% | US$25,03 | US$34,62 | US$47,62 |
+| **Ponderado FY+3** | 100% | US$25,32 | US$34,90 | US$47,90 |
 
 Valor presente (Ke 9,90%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$25,86 | US$24,08 | US$22,77 | US$24,24 | OK |
-| EV/EBITDA | Base | US$29,62 | US$30,28 | US$30,40 | US$30,10 | OK |
-| EV/EBITDA | Optimista | US$34,75 | US$38,82 | US$41,17 | US$38,24 | OK |
-| EV/FCFF | Conservador | US$21,21 | US$19,46 | US$18,30 | US$19,65 | OK |
-| EV/FCFF | Base | US$24,03 | US$25,03 | US$25,40 | US$24,82 | OK |
-| EV/FCFF | Optimista | US$28,25 | US$33,09 | US$35,87 | US$32,40 | OK |
+| EV/EBITDA | Conservador | US$26,10 | US$24,30 | US$22,96 | US$24,45 | OK |
+| EV/EBITDA | Base | US$29,86 | US$30,50 | US$30,59 | US$30,32 | OK |
+| EV/EBITDA | Optimista | US$34,99 | US$39,03 | US$41,36 | US$38,46 | OK |
+| EV/FCFF | Conservador | US$21,44 | US$19,67 | US$18,49 | US$19,87 | OK |
+| EV/FCFF | Base | US$24,27 | US$25,25 | US$25,60 | US$25,04 | OK |
+| EV/FCFF | Optimista | US$28,48 | US$33,31 | US$36,06 | US$32,62 | OK |
 | P/E | Conservador | US$23,63 | US$22,25 | US$21,23 | US$22,37 | OK |
 | P/E | Base | US$27,69 | US$29,03 | US$29,62 | US$28,78 | OK |
 | P/E | Optimista | US$32,77 | US$37,99 | US$41,15 | US$37,30 | OK |
@@ -100,15 +100,15 @@ Valor presente (Ke 9,90%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$23,69 | US$24,49 | US$24,90 | US$24,36 | OK |
 | P/OCF | Optimista | US$28,34 | US$31,94 | US$34,28 | US$31,52 | OK |
 
-Múltiplos consolidados hoy: US$20,93 / US$26,41 / US$34,12 · DCF hoy: US$18,32 / US$25,48 / US$34,84 · Ponderado hoy: US$19,36 / US$25,85 / US$34,55 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$21,07 / US$26,54 / US$34,25 · DCF hoy: US$18,59 / US$25,76 / US$35,12 · Ponderado hoy: US$19,58 / US$26,07 / US$34,77 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CMG la diferencia es de +4% (múltiplos por encima del DCF). Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho (marca probada de 30 años, una sola fuente), ROIC después del año 10 de 13,7%; el DCF da US$25,48 y los múltiplos US$26,41 hoy (4% por encima, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 18,4% el DCF pasa de US$20,52 a US$27,91. Los múltiplos (US$26,41 hoy) quedan 5% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$31,85) está por encima de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$26,41 hoy) quedan 29% por encima del DCF (US$20,52): los múltiplos suponen que Chipotle conserva a FY+3 una prima parecida a la de hoy frente a otros restaurantes (~27x utilidad), mientras que el DCF refleja un crecimiento de ventas comparables más bajo. El DCF es más confiable hasta que las ventas comparables vuelvan a crecer; los múltiplos indican lo que pagaría el mercado si Chipotle recupera su historia de crecimiento de unidades.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CMG la diferencia es de +3% (múltiplos por encima del DCF). Revisión del 30-sep-2026 (ROIC terminal según el moat) y revaloración con el balance al 30-jun-2026: moat estrecho (marca probada de 30 años, una sola fuente), ROIC después del año 10 de 13,7%; el DCF da US$25,76 y los múltiplos US$26,54 hoy (3% por encima, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 18,4% el DCF pasa de US$20,52 a US$27,91. Los múltiplos (US$26,41 hoy) quedan 5% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$31,85) está por encima de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$26,41 hoy) quedan 29% por encima del DCF (US$20,52): los múltiplos suponen que Chipotle conserva a FY+3 una prima parecida a la de hoy frente a otros restaurantes (~27x utilidad), mientras que el DCF refleja un crecimiento de ventas comparables más bajo. El DCF es más confiable hasta que las ventas comparables vuelvan a crecer; los múltiplos indican lo que pagaría el mercado si Chipotle recupera su historia de crecimiento de unidades.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$31,85 supone que los ingresos crecen 12,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 8,0% (+4,5 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$31,77 supone que los ingresos crecen 12,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 8,0% (+4,5 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$33,82 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,9%, WACC de los años 4-10 9,5%, ROE de FY+3 68,0% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -126,15 +126,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$25,85 | — |
-| Múltiplos Base +20% | US$27,95 | +8,1% |
-| Múltiplos Base −20% | US$23,75 | −8,1% |
-| Crecimiento años 1-5 +2 pp | US$27,44 | +6,1% |
-| Crecimiento años 1-5 −2 pp | US$24,43 | −5,5% |
-| Margen objetivo +3 pp | US$28,52 | +10,3% |
-| Margen objetivo −3 pp | US$23,19 | −10,3% |
-| WACC +1 pp | US$25,02 | −3,2% |
-| WACC −1 pp | US$26,75 | +3,5% |
+| Vigente | US$26,07 | — |
+| Múltiplos Base +20% | US$28,17 | +8,1% |
+| Múltiplos Base −20% | US$23,97 | −8,1% |
+| Crecimiento años 2-5 +2 pp | US$27,34 | +4,9% |
+| Crecimiento años 2-5 −2 pp | US$24,92 | −4,4% |
+| Margen objetivo +3 pp | US$28,75 | +10,3% |
+| Margen objetivo −3 pp | US$23,40 | −10,3% |
+| WACC +1 pp | US$25,24 | −3,2% |
+| WACC −1 pp | US$26,96 | +3,4% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Margen objetivo −3 pp, Margen objetivo +3 pp, Múltiplos Base +20%.
