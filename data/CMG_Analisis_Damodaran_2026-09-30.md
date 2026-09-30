@@ -73,6 +73,8 @@ A (40%, antes 45%) es lo que muestran 2025-2026: unidades nuevas y comparables d
 
 Sensibilidad del DCF Base (beta 1,10; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 13,0% | 15,0% | 17,0% | 19,0% | 21,0% |
 |---|---:|---:|---:|---:|---:|
 | 4,0% | 16,62 | 18,94 | 21,27 | 23,60 | 25,93 |
@@ -110,16 +112,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$31,85**.
+Precio de referencia de la valoración guardada: **US$31,90**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 15% | Margen 17% | Margen 19% |
 |---|---:|---:|---:|
-| Beta 1,10 | 15,2% (11% de las empresas) | 12,4% (15% de las empresas) | 10,2% (25% de las empresas) |
-| Beta 0,78 | 13,4% (14% de las empresas) | 10,8% (22% de las empresas) | 8,6% (31% de las empresas) |
+| Beta 1,10 | 15,1% (11% de las empresas) | 12,4% (15% de las empresas) | 10,1% (25% de las empresas) |
+| Beta 0,78 | 13,4% (14% de las empresas) | 10,7% (22% de las empresas) | 8,5% (32% de las empresas) |
 
-Frente al valor esperado de las historias (US$22,31 con la beta de la hoja; US$24,14 con la propuesta), el precio está por encima en 43% y por encima en 32%, respectivamente. El precio de la valoración (US$31,85, cierre del 28 de septiembre de 2026; US$31,76 al 30 de septiembre) queda 24% por encima del DCF Base (US$25,76) e incluso por encima de la historia C (US$29,98), la más optimista. El DCF inverso pide 9-15% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 11-31% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).
+Frente al valor esperado de las historias (US$22,31 con la beta de la hoja; US$24,14 con la propuesta), el precio está por encima en 43% y por encima en 32%, respectivamente. El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 24% por encima del DCF Base (US$25,76) e incluso por encima de la historia C (US$29,98), la más optimista. El DCF inverso pide 9-15% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 11-32% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).
 
 
 ### Registro de decisión

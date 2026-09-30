@@ -15,7 +15,7 @@ generator: "Claude Code (Modelo JMR)"
 
 > Alcance: análisis fundamental cualitativo con fines informativos; no constituye asesoramiento financiero ni recomendación de compra o venta.
 
-Fechas de referencia: informe y corte de información del 30 de septiembre de 2026. La última información financiera es el Form 10-Q del segundo trimestre de 2026 (cerrado el 30 de junio y presentado el 31 de julio de 2026). La hoja del Modelo JMR se revisó el 30 de septiembre de 2026. La cotización de referencia de la valoración es el cierre del 28 de septiembre de 2026 (US$31,85); el cierre del 30 de septiembre fue US$31,76 [Yahoo Finance, 30 de septiembre de 2026](https://finance.yahoo.com/quote/CMG/history). Las acciones y cifras por acción anteriores a junio de 2024 se reescalan por el split 50:1. Unidades: US$ millones, salvo indicación.
+Fechas de referencia: informe y corte de información del 30 de septiembre de 2026. La última información financiera es el Form 10-Q del segundo trimestre de 2026 (cerrado el 30 de junio y presentado el 31 de julio de 2026). La hoja del Modelo JMR se revisó el 30 de septiembre de 2026. La cotización de referencia de la valoración es la de la hoja de Google al 30 de septiembre de 2026 (US$31,90); el cierre de ese día fue US$31,76 [Yahoo Finance, 30 de septiembre de 2026](https://finance.yahoo.com/quote/CMG/history). Las acciones y cifras por acción anteriores a junio de 2024 se reescalan por el split 50:1. Unidades: US$ millones, salvo indicación.
 
 ## 1. Resumen ejecutivo
 
