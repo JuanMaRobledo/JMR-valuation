@@ -30,7 +30,7 @@
    "[Uber: resultados 2T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm)",
    "[Uber: resultados 1T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000019/uberq126earningspressrelea.htm)"
   ],
-  "evaluacion": "Revisión del 30-sep-2026: con el margen objetivo de 21% se revisaron también los múltiplos de salida. Los anteriores (EV/EBITDA 30,4x, P/E 23,4x) superaban lo que el mercado paga hoy por Uber (20,3x EBITDA y 15,4x utilidad LTM) aunque en FY+3 crecerá menos (~11%). Ahora la referencia de peers se ajusta por crecimiento (recta múltiplo ~ crecimiento evaluada en el 11% de FY+3), se deja fuera el justificado (supone un ROE de 54% para siempre, incoherente con el DCF) y el EV/EBITDA de 2023. El DCF da US$88,85 y los múltiplos US$83,89 hoy (6% por debajo): los dos métodos coinciden y quedan por encima del precio (US$68,16); el mercado descuenta sobre todo la competencia de los robotaxis. El chequeo de crecimiento implícito marca que los múltiplos suponen menos crecimiento perpetuo que el DCF; es un efecto de la fórmula (usa el ROE de FY+3 para siempre), no de los múltiplos: el propio DCF implica en FY+3 unos 17x EBITDA y 17x utilidad.",
+  "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.",
   "ticker": "UBER",
   "peers_crecimiento": {
    "g": 0.11,

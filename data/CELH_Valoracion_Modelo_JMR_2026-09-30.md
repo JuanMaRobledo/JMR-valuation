@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$18,11 en el escenario Base (rango US$9,94–US$29,71). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$21,32 (+18% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$19,40. El valor intrínseco es el DCF: US$18,11 frente a un precio de referencia de US$28,00 (−35%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$18,12 en el escenario Base (rango US$9,94–US$29,72). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$21,32 (+18% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$19,40. El valor intrínseco es el DCF: US$18,12 frente a un precio de referencia de US$27,42 (−34%).
 
-Los múltiplos (US$21,32 hoy) quedan 18% por encima del DCF (US$18,11). Con la historia distorsionada por la compra de Alani Nu, los múltiplos se anclan en FY24, en los peers de bebidas y en los fundamentales; el DCF es más confiable mientras no haya uno o dos años limpios después de integrar Alani Nu.
+Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$18,12 por acción y los múltiplos, US$21,32 hoy: 18% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$9,94 | US$16,75 | US$12,66 | US$6,46 | US$16,62 |
-| Base | US$18,11 | US$21,32 | US$19,40 | US$11,77 | US$27,72 |
-| Optimista | US$29,71 | US$26,53 | US$28,44 | US$19,31 | US$42,74 |
+| Conservador | US$9,94 | US$16,75 | US$12,66 | US$12,09 | US$16,62 |
+| Base | US$18,12 | US$21,32 | US$19,40 | US$12,09 | US$27,72 |
+| Optimista | US$29,72 | US$26,53 | US$28,44 | US$12,09 | US$42,74 |
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - CELH](https://docs.google.com/spreadsheets/d/1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o/edit).
-- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$28,00.
+- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$27,42.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -40,9 +40,9 @@ Los múltiplos (US$21,32 hoy) quedan 18% por encima del DCF (US$18,11). Con la h
 | Margen EBIT objetivo | 11,0% | 17,0% | 21,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,50 / 2,00 | — | Input B32/B33 |
-| DCF por acción hoy | US$9,94 | US$18,11 | US$29,71 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$9,94 | US$18,12 | US$29,72 | Valuation output B86/B35/B137 |
 
-Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,50, ERP 4,46%, Ke 11,68%, costo de la deuda después de impuestos 5,19%, peso del patrimonio 91,7%, WACC inicial 11,14% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
+Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,50, ERP 4,46%, Ke 11,68%, costo de la deuda después de impuestos 5,19%, peso del patrimonio 91,6%, WACC inicial 11,13% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
 ## 4. Múltiplos: selección y origen
 
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 22,6x: promedio de historia y peers 24,7x, acercado 25% al justificado (16,4x); rango de anclas 16,4x–25,9x. Atípicos excluidos de la historia: Dec '16 (-13,7x: métrica negativa o ~0); Dec '17 (-9,4x: métrica negativa o ~0); Dec '18 (-5,6x: métrica negativa o ~0); Dec '21 (-18,7x: métrica negativa o ~0); Dec '19 (110,9x: > 2,5x la mediana (36.3x)); Dec '20 (433,0x: > 2,5x la mediana (36.3x)); Dec '23 (102,1x: > 2,5x la mediana (36.3x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 20,3x: promedio de historia y peers 22,5x, acercado 25% al justificado (13,8x); rango de anclas 13,8x–23,5x. Atípicos excluidos de la historia: Dec '16 (-13,7x: métrica negativa o ~0); Dec '17 (-9,5x: métrica negativa o ~0); Dec '18 (-5,7x: métrica negativa o ~0); Dec '21 (-19,3x: métrica negativa o ~0); Dec '19 (110,9x: > 2,5x la mediana (32.7x)); Dec '20 (356,6x: > 2,5x la mediana (32.7x)); Dec '23 (89,5x: > 2,5x la mediana (32.7x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$21,32 frente a US$18,11 del DCF (+18%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$21,32 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$21,32 frente a US$18,12 del DCF (+18%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$21,32 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,7 +72,7 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$13,84 | US$25,23 | US$41,38 |
+| DCF Damodaran | 60% | US$13,85 | US$25,24 | US$41,40 |
 | EV/EBITDA | 10% | US$29,13 | US$46,53 | US$69,63 |
 | EV/FCFF | 15% | US$17,51 | US$24,93 | US$33,73 |
 | P/E | 5% | US$22,26 | US$37,70 | US$60,47 |
@@ -100,15 +100,15 @@ Valor presente (Ke 11,68%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$14,80 | US$16,69 | US$17,09 | US$16,20 | OK |
 | P/OCF | Optimista | US$12,10 | US$18,31 | US$21,46 | US$17,29 | OK |
 
-Múltiplos consolidados hoy: US$16,75 / US$21,32 / US$26,53 · DCF hoy: US$9,94 / US$18,11 / US$29,71 · Ponderado hoy: US$12,66 / US$19,40 / US$28,44 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$16,75 / US$21,32 / US$26,53 · DCF hoy: US$9,94 / US$18,12 / US$29,72 · Ponderado hoy: US$12,66 / US$19,40 / US$28,44 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CELH la diferencia es de +18% (múltiplos por encima del DCF). Los múltiplos (US$21,32 hoy) quedan 18% por encima del DCF (US$18,11). Con la historia distorsionada por la compra de Alani Nu, los múltiplos se anclan en FY24, en los peers de bebidas y en los fundamentales; el DCF es más confiable mientras no haya uno o dos años limpios después de integrar Alani Nu.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CELH la diferencia es de +18% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$18,12 por acción y los múltiplos, US$21,32 hoy: 18% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$28,00 supone que los ingresos crecen 15,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,2% (+9,1 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$27,46 supone que los ingresos crecen 15,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,2% (+9,1 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$25,23 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,7%, WACC de los años 4-10 10,2%, ROE de FY+3 31,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -128,16 +128,16 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 |---|---:|---:|
 | Vigente | US$19,40 | — |
 | Múltiplos Base +20% | US$21,11 | +8,8% |
-| Múltiplos Base −20% | US$17,68 | −8,8% |
-| Crecimiento años 1-5 +2 pp | US$20,48 | +5,6% |
-| Crecimiento años 1-5 −2 pp | US$18,42 | −5,1% |
-| Margen objetivo +3 pp | US$21,45 | +10,6% |
-| Margen objetivo −3 pp | US$17,34 | −10,6% |
-| WACC +1 pp | US$18,80 | −3,1% |
-| WACC −1 pp | US$20,04 | +3,3% |
+| Múltiplos Base −20% | US$17,69 | −8,8% |
+| Crecimiento años 2-5 +2 pp | US$20,21 | +4,2% |
+| Crecimiento años 2-5 −2 pp | US$18,66 | −3,8% |
+| Margen objetivo +3 pp | US$21,35 | +10,1% |
+| Margen objetivo −3 pp | US$17,45 | −10,1% |
+| WACC +1 pp | US$18,82 | −3,0% |
+| WACC −1 pp | US$20,02 | +3,2% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo −3 pp, Margen objetivo +3 pp, Múltiplos Base −20%.
+Supuestos más frágiles: Margen objetivo +3 pp, Margen objetivo −3 pp, Múltiplos Base −20%.
 
 ## 8. Log de cambios en la hoja
 

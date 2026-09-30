@@ -1,9 +1,8 @@
 {
  "fecha": "2026-09-30",
- "regla": "Ancho: dos o más fuentes estructurales (o efectos de red / costos de cambio muy fuertes), ROIC sobre el costo de capital en cada uno de los últimos 5 años y sin erosión visible hoy → menor entre el ROIC actual y el de la industria. Estrecho: una fuente estructural con ROIC sobre el costo de capital al menos 3 años seguidos, o un moat ancho con erosión visible → punto medio entre el costo de capital terminal y ese valor. Sin moat: sin fuente, ROIC no sostenido, o un moat estrecho con erosión visible → costo de capital. Fuentes estructurales: costos de cambio, efectos de red, escala o ventaja de costos, licencias o regulación, patentes que se renuevan y marca probada (20 años o más de liderazgo con retornos sobre el costo de capital a lo largo de al menos un ciclo o una crisis). No cuenta la marca joven, la de moda sin esa trayectoria ni la de un producto fácil de sustituir con costos de cambio bajos. Erosión visible = evidencia de hoy (pérdida sostenida de participación, comparables negativas o recortes de precio, ROIC en caída por competencia y no por inversión). La probabilidad de erosión futura no baja el nivel: va a las historias, donde las de erosión usan ROIC = costo de capital; bajarlo también contaría el riesgo dos veces.",
+ "regla": "Criterio Damodaran para el ROIC después del año 10 (30-sep-2026). Tres preguntas con la evidencia de la sección 6: (1) ¿gana hoy por encima de su costo de capital de forma sostenida (al menos los últimos 3 años, con plusvalía y arrendamientos cuando son materiales)? (2) ¿tiene una ventaja competitiva identificable (costos de cambio, efectos de red, escala o costo, licencias o regulación, patentes, marca probada de 20 años o más que superó un ciclo o una crisis)? (3) ¿la ventaja se desvanece de forma visible hoy (ROIC en caída por competencia, pérdida de participación, precios a la baja)? Si (1) o (2) fallan: sin ventaja defendible → ROIC terminal = costo de capital (supuesto por defecto de Damodaran). Si (1) y (2) se cumplen y (3) no: ventaja durable → promedio de la industria (Damodaran), sin superar el ROIC actual ni bajar del costo de capital terminal. Si (3) se cumple: ventaja que se desvanece → punto medio entre el costo de capital terminal y ese valor (convención del modelo para 'ser más conservador'). La probabilidad de perder la ventaja en el futuro va a las historias (las de erosión usan el costo de capital), no a este valor. Fuente: Damodaran, Investment Valuation (3.ª ed.), cap. 12, y hoja Ginzu (B48-B50).",
  "empresas": {
   "MSFT": {
-   "moat": "ancho",
    "fuentes": "Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn)",
    "evidencia": "ROIC 30-72% en 2021-2026",
    "amenaza": "Retorno del capex de IA (historia B, 25%)",
@@ -12,10 +11,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.0848,
    "roic_terminal": 0.259,
-   "roic_terminal_antes": 0.259
+   "roic_terminal_antes": 0.259,
+   "ventaja": "ventaja durable",
+   "referencia": 0.2591
   },
   "GOOG": {
-   "moat": "ancho",
    "fuentes": "Escala y efectos de red en búsqueda, YouTube y Android; datos",
    "evidencia": "ROIC 24-31% en 2021-2026",
    "amenaza": "IA conversacional y remedios antimonopolio (B y D, 40% con la erosión de Search)",
@@ -25,10 +25,11 @@
    "costo_capital_terminal": 0.09,
    "roic_terminal": 0.286,
    "roic_terminal_antes": 0.286,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): escala y efectos de red en búsqueda, YouTube y Android, sin erosión visible (Search +17%, ROIC estable 24-31%). El riesgo de IA y antimonopolio queda en las historias B y D, no en el nivel del moat."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): escala y efectos de red en búsqueda, YouTube y Android, sin erosión visible (Search +17%, ROIC estable 24-31%). El riesgo de IA y antimonopolio queda en las historias B y D, no en el nivel del moat.",
+   "ventaja": "ventaja durable",
+   "referencia": 0.2864
   },
   "INTU": {
-   "moat": "ancho",
    "fuentes": "Costos de cambio y datos del cliente (QuickBooks, TurboTax), escala en pyme",
    "evidencia": "ROIC 12-22%, siempre por encima del costo de capital",
    "amenaza": "IA en impuestos y contabilidad simples (B y D, 35%)",
@@ -37,10 +38,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
    "roic_terminal": 0.222,
-   "roic_terminal_antes": 0.222
+   "roic_terminal_antes": 0.222,
+   "ventaja": "ventaja durable",
+   "referencia": 0.2218
   },
   "NVDA": {
-   "moat": "ancho",
    "fuentes": "Ecosistema CUDA (costos de cambio) y escala en cómputo acelerado",
    "evidencia": "ROIC 13-111%, siempre por encima del costo de capital",
    "amenaza": "Chips propios de los clientes (D, 10%)",
@@ -49,10 +51,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
    "roic_terminal": 0.272,
-   "roic_terminal_antes": 0.272
+   "roic_terminal_antes": 0.272,
+   "ventaja": "ventaja durable",
+   "referencia": 0.2723
   },
   "DPZ": {
-   "moat": "ancho",
    "fuentes": "Marca probada (más de 60 años, se recuperó de la crisis de 2008-2010) y densidad y escala logística en reparto; franquicias con muy poco capital",
    "evidencia": "ROIC 65-78% en 2021-2026",
    "amenaza": "Agregadores (B y D, 30%)",
@@ -62,10 +65,11 @@
    "costo_capital_terminal": 0.09,
    "roic_terminal": 0.184,
    "roic_terminal_antes": 0.184,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): dos fuentes estructurales (marca probada y escala logística), ROIC 65-78% en cada uno de los últimos 5 años y sin erosión visible (ventas mismas tiendas planas, no negativas)."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): dos fuentes estructurales (marca probada y escala logística), ROIC 65-78% en cada uno de los últimos 5 años y sin erosión visible (ventas mismas tiendas planas, no negativas).",
+   "ventaja": "ventaja durable",
+   "referencia": 0.1836
   },
   "ADBE": {
-   "moat": "ancho",
    "fuentes": "Costos de cambio y estándar de la industria creativa y documental",
    "evidencia": "ROIC 37-60% en 2021-2026",
    "amenaza": "Figma, Canva e IA generativa: las historias de erosión (B y C) suman 50%",
@@ -75,10 +79,11 @@
    "costo_capital_terminal": 0.0922,
    "roic_terminal": 0.293,
    "roic_terminal_antes": 0.293,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): costos de cambio y estándar de la industria, ROIC en alza (38% → 59%) y ingresos creciendo ~10%: sin erosión visible hoy. Figma, Canva y la IA quedan en las historias de erosión (B y C, 50%)."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): costos de cambio y estándar de la industria, ROIC en alza (38% → 59%) y ingresos creciendo ~10%: sin erosión visible hoy. Figma, Canva y la IA quedan en las historias de erosión (B y C, 50%).",
+   "ventaja": "ventaja durable",
+   "referencia": 0.2932
   },
   "NVO": {
-   "moat": "estrecho",
    "fuentes": "Patentes y escala de manufactura en diabetes y obesidad",
    "evidencia": "ROIC 36-87% en 2021-2026",
    "amenaza": "Guerra de precios de los GLP-1 y Lilly: historias B y D suman 40%; las patentes vencen",
@@ -88,10 +93,11 @@
    "costo_capital_terminal": 0.092,
    "roic_terminal": 0.131,
    "roic_terminal_antes": 0.169,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): patentes y escala (ancho por fuentes), pero con erosión visible: pérdida de participación frente a Lilly, recortes de precio y ROIC de 87% a 36% → estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): patentes y escala (ancho por fuentes), pero con erosión visible: pérdida de participación frente a Lilly, recortes de precio y ROIC de 87% a 36% → estrecho.",
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.1695
   },
   "ZTS": {
-   "moat": "ancho",
    "fuentes": "Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal",
    "evidencia": "ROIC 26-29% en 2021-2026",
    "amenaza": "Erosión de franquicias y genéricos: historias B y D suman 45%",
@@ -101,10 +107,11 @@
    "costo_capital_terminal": 0.09,
    "roic_terminal": 0.169,
    "roic_terminal_antes": 0.169,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): dos o más fuentes estructurales, ROIC estable 26-29% y sin erosión visible. Los genéricos y la erosión de franquicias quedan en las historias B y D."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): dos o más fuentes estructurales, ROIC estable 26-29% y sin erosión visible. Los genéricos y la erosión de franquicias quedan en las historias B y D.",
+   "ventaja": "ventaja durable",
+   "referencia": 0.1695
   },
   "CMG": {
-   "moat": "estrecho",
    "fuentes": "Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior",
    "evidencia": "ROIC 15-22% en 2021-2026",
    "amenaza": "Tráfico débil (historia B) y saturación (D)",
@@ -112,12 +119,13 @@
    "roic_industria": 0.1836,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.137,
+   "roic_terminal": 0.184,
    "roic_terminal_antes": 0.184,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca cuenta como fuente estructural porque está probada (30 años y una crisis superada, ROIC 15-22%); una sola fuente → estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca cuenta como fuente estructural porque está probada (30 años y una crisis superada, ROIC 15-22%); una sola fuente → estrecho.",
+   "ventaja": "ventaja durable",
+   "referencia": 0.1836
   },
   "NKE": {
-   "moat": "estrecho",
    "fuentes": "Marca global y escala de distribución, hoy bajo presión",
    "evidencia": "ROIC 18-47% en 2021-2026, en descenso",
    "amenaza": "Pérdida de relevancia y competencia: historias B y D suman 35%, con el ROIC cayendo cinco años",
@@ -127,35 +135,38 @@
    "costo_capital_terminal": 0.0905,
    "roic_terminal": 0.112,
    "roic_terminal_antes": 0.133,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca probada y escala (ancho por fuentes), pero con erosión visible: ventas cayendo, descuentos y ROIC de 47% a 18% → estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca probada y escala (ancho por fuentes), pero con erosión visible: ventas cayendo, descuentos y ROIC de 47% a 18% → estrecho.",
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.1328
   },
   "LULU": {
-   "moat": "sin moat",
-   "fuentes": "Marca premium (una sola fuente)",
+   "fuentes": "Marca premium de 27 años",
    "evidencia": "ROIC 27-52% en 2021-2026, en descenso",
    "amenaza": "Alo y Vuori: historias B y D suman 45%",
    "roic_actual": 0.2521,
    "roic_industria": 0.1577,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0898,
-   "roic_terminal": null,
+   "roic_terminal": 0.124,
    "roic_terminal_antes": null,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca (27 años) cuenta como fuente, pero con erosión visible (comparables de −10% a −12% en Norteamérica, rebajas, ROIC de 52% a 27%) baja un nivel → sin moat."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca (27 años) cuenta como fuente, pero con erosión visible (comparables de −10% a −12% en Norteamérica, rebajas, ROIC de 52% a 27%) baja un nivel → sin moat.",
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.1577
   },
   "AFYA": {
-   "moat": "estrecho",
-   "fuentes": "Licencias reguladas de Medicina (una sola fuente, depende de la política)",
+   "fuentes": "Licencias reguladas de Medicina (plazas limitadas)",
    "evidencia": "ROIC 12-16%, apenas 1-5 pp sobre el costo de capital desde 2022",
    "amenaza": "Liberación de plazas (C, 15%)",
    "roic_actual": 0.1476,
    "roic_industria": 0.1594,
    "industria_proxy": null,
    "costo_capital_terminal": 0.11,
-   "roic_terminal": 0.129,
-   "roic_terminal_antes": 0.148
+   "roic_terminal": 0.148,
+   "roic_terminal_antes": 0.148,
+   "ventaja": "ventaja durable",
+   "referencia": 0.1476
   },
   "PYPL": {
-   "moat": "estrecho",
    "fuentes": "Red de dos lados (comercios y usuarios) y marca en el checkout",
    "evidencia": "ROIC 13-25% en 2021-2026",
    "amenaza": "Billeteras nativas: historias B y D suman 40%",
@@ -165,10 +176,11 @@
    "costo_capital_terminal": 0.0905,
    "roic_terminal": 0.134,
    "roic_terminal_antes": null,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): red de dos lados (fuente fuerte), pero con erosión visible: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas → estrecho."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): red de dos lados (fuente fuerte), pero con erosión visible: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas → estrecho.",
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.1775
   },
   "DUOL": {
-   "moat": "sin moat",
    "fuentes": "Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos",
    "evidencia": "ROIC por encima del costo de capital en 2021-2026 (serie volátil)",
    "amenaza": "IA generalista (D, 10%) y costos de cambio bajos",
@@ -178,10 +190,11 @@
    "costo_capital_terminal": 0.0922,
    "roic_terminal": null,
    "roic_terminal_antes": null,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca joven y producto fácil de sustituir (costos de cambio bajos): no cuenta como fuente estructural."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca joven y producto fácil de sustituir (costos de cambio bajos): no cuenta como fuente estructural.",
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.2559
   },
   "ONON": {
-   "moat": "sin moat",
    "fuentes": "Marca y tecnología (CloudTec), joven",
    "evidencia": "ROIC 13-39% desde 2022 (4 años)",
    "amenaza": "Ciclo de moda: historias B y D suman 40%",
@@ -191,10 +204,11 @@
    "costo_capital_terminal": 0.09,
    "roic_terminal": null,
    "roic_terminal_antes": null,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca de 4 años en un sector de modas: no cuenta como fuente estructural."
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): marca de 4 años en un sector de modas: no cuenta como fuente estructural.",
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.2093
   },
   "BSX": {
-   "moat": "sin moat",
    "fuentes": "Patentes y relación con médicos, pero el crecimiento se compra",
    "evidencia": "ROIC (con plusvalía) 4-9% en 2021-2025, bajo el costo de capital hasta 2025",
    "amenaza": "Competencia en campo pulsado",
@@ -203,10 +217,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
    "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.0959
   },
   "UBER": {
-   "moat": "sin moat",
    "fuentes": "Efectos de red de dos lados",
    "evidencia": "ROIC por encima del costo de capital solo desde 2024 (menos de 3 años)",
    "amenaza": "Robotaxis; revisar en 2027",
@@ -215,10 +230,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.0922,
    "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.1238
   },
   "PLTR": {
-   "moat": "sin moat",
    "fuentes": "Costos de cambio en gobierno",
    "evidencia": "ROIC con plusvalía de 5-12% en 2025-LTM, cerca del costo de capital; serie poco confiable",
    "amenaza": "Comoditización (D, 10%); revisar cuando haya 3 años de datos limpios",
@@ -227,10 +243,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.0923,
    "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.2932
   },
   "EPAM": {
-   "moat": "sin moat",
    "fuentes": "Servicios de ingeniería con costos de cambio moderados",
    "evidencia": "ROIC 47% → 15% en cinco años, acercándose al costo de capital",
    "amenaza": "Deflación de horas por IA",
@@ -238,11 +255,12 @@
    "roic_industria": 0.2635,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal": 0.114,
+   "roic_terminal_antes": null,
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.1377
   },
   "PAGS": {
-   "moat": "sin moat",
    "fuentes": "Ninguna durable frente a Pix y bancos digitales",
    "evidencia": "ROIC 13-15%, apenas sobre el costo de capital (12%)",
    "amenaza": "Pix y competencia",
@@ -251,10 +269,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.12,
    "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.1513
   },
   "CELH": {
-   "moat": "sin moat",
    "fuentes": "Marca en una categoría con barreras bajas",
    "evidencia": "ROIC volátil (−39% a 104%)",
    "amenaza": "La moda de la categoría",
@@ -263,10 +282,11 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
    "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.1178
   },
   "SHAK": {
-   "moat": "sin moat",
    "fuentes": "Marca sin economía unitaria probada",
    "evidencia": "ROIC bajo el costo de capital",
    "amenaza": "—",
@@ -275,7 +295,9 @@
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
    "roic_terminal": null,
-   "roic_terminal_antes": null
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.0793
   }
  }
 }

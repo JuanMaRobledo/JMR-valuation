@@ -1,324 +1,324 @@
 {
-  "ticker": "PYPL",
-  "empresa": "PayPal Holdings, Inc.",
-  "fecha": "2026-09-30",
-  "industria_damodaran": "Financial Svcs. (Non-bank & Insurance)",
-  "segmentos": {
-    "Checkout de marca": 14500,
-    "Procesamiento no de marca (Braintree)": 11000,
-    "Venmo y P2P": 3300,
-    "Otros servicios de valor agregado": 5328
-  },
-  "riesgo": {
-    "beta_propuesta": 0.97,
-    "texto": "La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$101,16 a US$107,30."
-  },
-  "historias": [
-    {
-      "nombre": "A · Se estabiliza con márgenes estables",
-      "prob": 0.45,
-      "margen": 0.19,
-      "crec": {
-        "Checkout de marca": [
-          0.03,
-          0.03,
-          0.04,
-          0.04,
-          0.04
-        ],
-        "Procesamiento no de marca (Braintree)": [
-          0.03,
-          0.04,
-          0.04,
-          0.04,
-          0.04
-        ],
-        "Venmo y P2P": [
-          0.15,
-          0.15,
-          0.12,
-          0.1,
-          0.1
-        ],
-        "Otros servicios de valor agregado": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      }
-    },
-    {
-      "nombre": "B · El botón PayPal pierde frente a las billeteras nativas",
-      "prob": 0.3,
-      "margen": 0.16,
-      "crec": {
-        "Checkout de marca": [
-          0,
-          -0.01,
-          -0.02,
-          -0.02,
-          -0.02
-        ],
-        "Procesamiento no de marca (Braintree)": [
-          0.03,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Venmo y P2P": [
-          0.1,
-          0.08,
-          0.08,
-          0.06,
-          0.06
-        ],
-        "Otros servicios de valor agregado": [
-          0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02
-        ]
-      },
-      "roic_terminal": "costo_capital"
-    },
-    {
-      "nombre": "C · Reactivación: Fastlane, Venmo y publicidad",
-      "prob": 0.15,
-      "margen": 0.22,
-      "crec": {
-        "Checkout de marca": [
-          0.06,
-          0.06,
-          0.06,
-          0.05,
-          0.05
-        ],
-        "Procesamiento no de marca (Braintree)": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "Venmo y P2P": [
-          0.2,
-          0.18,
-          0.15,
-          0.12,
-          0.1
-        ],
-        "Otros servicios de valor agregado": [
-          0.08,
-          0.08,
-          0.08,
-          0.08,
-          0.08
-        ]
-      }
-    },
-    {
-      "nombre": "D · Pierde el checkout y compite por precio",
-      "prob": 0.1,
-      "margen": 0.13,
-      "crec": {
-        "Checkout de marca": [
-          -0.03,
-          -0.05,
-          -0.05,
-          -0.04,
-          -0.03
-        ],
-        "Procesamiento no de marca (Braintree)": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "Venmo y P2P": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "Otros servicios de valor agregado": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "roic_terminal": "costo_capital"
-    }
-  ],
-  "margenes_inverso": [
-    0.15,
-    0.175,
-    0.195
-  ],
-  "historia": "PayPal es una red de pagos digitales de dos lados: 439 millones de cuentas activas, US$1,79 billones de volumen en 2025 y un botón de pago (checkout de marca) que durante veinte años fue sinónimo de pagar en línea. Ese botón, su negocio de mayor margen, crece solo ~2% sin divisas y pierde terreno frente a las billeteras integradas en el dispositivo o la plataforma (Apple Pay, Shop Pay, Google Pay); el volumen lo aportan Braintree (procesamiento de bajo margen) y Venmo, que todavía monetiza poco. Las finanzas son sólidas: flujo libre ajustado de US$6.400 millones en 2025 y recompras que bajaron las acciones de 1.172 millones (2020) a 920 millones. En 2026 llegó un nuevo CEO (Enrique Lores) y una reorganización. La historia de cinco años es si PayPal defiende el checkout y monetiza Venmo, o si se convierte en un procesador de bajo margen.",
-  "filtro": [
-    [
-      "Los ingresos crecen ~4% anual cinco años",
-      "Sí",
-      "Sí: +4-7% en 2023-2025",
-      "Probable"
+ "ticker": "PYPL",
+ "empresa": "PayPal Holdings, Inc.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Financial Svcs. (Non-bank & Insurance)",
+ "segmentos": {
+  "Checkout de marca": 14500,
+  "Procesamiento no de marca (Braintree)": 11000,
+  "Venmo y P2P": 3300,
+  "Otros servicios de valor agregado": 5328
+ },
+ "riesgo": {
+  "beta_propuesta": 0.97,
+  "texto": "La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$101,16 a US$107,30."
+ },
+ "historias": [
+  {
+   "nombre": "A · Se estabiliza con márgenes estables",
+   "prob": 0.45,
+   "margen": 0.19,
+   "crec": {
+    "Checkout de marca": [
+     0.03,
+     0.03,
+     0.04,
+     0.04,
+     0.04
     ],
-    [
-      "El checkout de marca vuelve a crecer ≥ 5%",
-      "Sí",
-      "Poco: ~2% sin divisas y en baja de participación",
-      "Baja-media"
+    "Procesamiento no de marca (Braintree)": [
+     0.03,
+     0.04,
+     0.04,
+     0.04,
+     0.04
     ],
-    [
-      "El margen operativo llega a 19,5%",
-      "Sí",
-      "Sí: 18,3% en 2025 por disciplina de costos y mezcla",
-      "Media"
+    "Venmo y P2P": [
+     0.15,
+     0.15,
+     0.12,
+     0.1,
+     0.1
     ],
-    [
-      "Venmo se vuelve un negocio rentable grande",
-      "Sí",
-      "Sí: creció a doble dígito en ingresos; parte de una base de ~US$3.000 millones",
-      "Media"
+    "Otros servicios de valor agregado": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
     ]
-  ],
-  "tasas_base_nota": "Para empresas de más de US$25.000 millones, crecer 4,9% anual cinco años (historia A) lo logró ~49%: la hoja (~3,6%) es modesta. El valor de PayPal depende de la mezcla (cuánto margen de checkout de marca conserva), no del crecimiento total.",
-  "crecimiento": {
-    "texto": "Ingresos de US$29.771 millones (2023, +8,2%), US$31.797 millones (2024, +6,8%) y US$33.172 millones (2025, +4,3%); LTM US$34.128 millones. El 89,8% de los ingresos de 2025 fueron transacciones y el 10,2% otros servicios de valor agregado. La división de las historias entre checkout de marca, Braintree, Venmo y otros es una estimación propia: PayPal no publica ingresos por producto.",
-    "tabla": {
-      "cols": [
-        "US$ millones",
-        "2023",
-        "2024",
-        "2025",
-        "LTM"
-      ],
-      "align": [
-        "l",
-        "r",
-        "r",
-        "r",
-        "r"
-      ],
-      "rows": [
-        [
-          "Ingresos",
-          "29.771",
-          "31.797",
-          "33.172",
-          "34.128"
-        ],
-        [
-          "Crecimiento",
-          "+8,2%",
-          "+6,8%",
-          "+4,3%",
-          "—"
-        ],
-        [
-          "Margen operativo",
-          "16,9%",
-          "16,7%",
-          "18,3%",
-          "17,4%"
-        ],
-        [
-          "FCFF (hoja)",
-          "5.899",
-          "2.643",
-          "4.154",
-          "—"
-        ]
-      ]
-    }
+   }
   },
-  "margenes": {
-    "texto": "El margen operativo fue 16,7-18,3% y la hoja supone ~17,3% el próximo año y 19,5% de objetivo. La mezcla manda: cada punto que el checkout de marca pierde frente a Braintree baja el margen, porque Braintree cobra mucho menos por transacción. Las historias van de 13% a 22%."
-  },
-  "reinversion": {
-    "texto": "Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción. Moat estrecho (red de dos lados de comercios y usuarios, una fuente fuerte, pero con erosión visible hoy: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas): el ROIC después del año 10 es 13,4%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (17,8%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
-  },
-  "prob_texto": "A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
-  "premortem": [
-    "Apple Pay, Shop Pay y los checkouts de plataforma siguen quitando participación al botón PayPal.",
-    "Braintree renegocia con grandes comercios y el volumen crece sin margen.",
-    "La reorganización y el cambio de CEO distraen y retrasan productos.",
-    "Pérdidas de crédito en «compra ahora y paga después» en una recesión.",
-    "Regulación (tarifas, competencia de billeteras) limita la monetización de Venmo."
-  ],
-  "contra": "el checkout de marca crece ~2% y pierde tasa de captura desde hace varios años; sin evidencia de reactivación, B pesa casi tanto como A.",
-  "indicadores": [
-    [
-      "Checkout de marca (TPV sin divisas)",
-      "~+2%",
-      "≥ +5%",
-      "≤ 0%"
+  {
+   "nombre": "B · El botón PayPal pierde frente a las billeteras nativas",
+   "prob": 0.3,
+   "margen": 0.16,
+   "crec": {
+    "Checkout de marca": [
+     0,
+     -0.01,
+     -0.02,
+     -0.02,
+     -0.02
     ],
-    [
-      "Margen de transacción (US$)",
-      "Creciendo",
-      "≥ +4%",
-      "En caída"
+    "Procesamiento no de marca (Braintree)": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
     ],
-    [
-      "Ingresos de Venmo",
-      "Doble dígito",
-      "≥ +15%",
-      "< +8%"
+    "Venmo y P2P": [
+     0.1,
+     0.08,
+     0.08,
+     0.06,
+     0.06
     ],
-    [
-      "Margen operativo",
-      "~18%",
-      "≥ 19%",
-      "≤ 16%"
-    ],
-    [
-      "Recompras / acciones en circulación",
-      "En baja",
-      "−5% anual",
-      "Se detienen"
+    "Otros servicios de valor agregado": [
+     0.02,
+     0.02,
+     0.02,
+     0.02,
+     0.02
     ]
-  ],
-  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
-  "frase": "Red de pagos rentable cuyo botón de marca pierde frente a las billeteras nativas",
-  "confianza": "Media: finanzas sólidas; la mezcla de ingresos es la incógnita",
-  "cambiaria": "Crecimiento del checkout de marca y margen de transacción",
-  "revision": "Resultados del 3T26 (oct-2026)",
-  "fuentes": [
-    [
-      "PayPal, resultados del 4T y año 2025",
-      "https://newsroom.paypal-corp.com/2026-02-03-PayPal-Reports-Fourth-Quarter-and-Full-Year-2025-Results"
+   },
+   "roic_terminal": "costo_capital"
+  },
+  {
+   "nombre": "C · Reactivación: Fastlane, Venmo y publicidad",
+   "prob": 0.15,
+   "margen": 0.22,
+   "crec": {
+    "Checkout de marca": [
+     0.06,
+     0.06,
+     0.06,
+     0.05,
+     0.05
     ],
-    [
-      "PayPal, Form 10-K 2025",
-      "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000024/pypl-20251231.htm"
+    "Procesamiento no de marca (Braintree)": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
     ],
-    [
-      "PayPal, nombramiento de Enrique Lores como CEO",
-      "https://newsroom.paypal-corp.com/2026-02-03-PayPal-Appoints-Enrique-Lores-as-Chief-Executive-Officer-and-David-W-Dorman-as-Independent-Board-Chair"
+    "Venmo y P2P": [
+     0.2,
+     0.18,
+     0.15,
+     0.12,
+     0.1
     ],
-    [
-      "PayPal, reorganización estratégica (abr-2026)",
-      "https://newsroom.paypal-corp.com/2026-04-29-PayPal-Announces-Strategic-Reorganization-to-Accelerate-Growth"
-    ],
-    [
-      "Yahoo Finance, resultados del 2T 2026",
-      "https://finance.yahoo.com/markets/stocks/articles/paypal-holdings-inc-pypl-q2-190110631.html"
-    ],
-    [
-      "Mauboussin & Callahan, The Base Rate Book (2016)",
-      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-    ],
-    [
-      "Damodaran, Betas by Sector (US), enero 2026",
-      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    "Otros servicios de valor agregado": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
     ]
+   }
+  },
+  {
+   "nombre": "D · Pierde el checkout y compite por precio",
+   "prob": 0.1,
+   "margen": 0.13,
+   "crec": {
+    "Checkout de marca": [
+     -0.03,
+     -0.05,
+     -0.05,
+     -0.04,
+     -0.03
+    ],
+    "Procesamiento no de marca (Braintree)": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Venmo y P2P": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Otros servicios de valor agregado": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "roic_terminal": "costo_capital"
+  }
+ ],
+ "margenes_inverso": [
+  0.15,
+  0.175,
+  0.195
+ ],
+ "historia": "PayPal es una red de pagos digitales de dos lados: 439 millones de cuentas activas, US$1,79 billones de volumen en 2025 y un botón de pago (checkout de marca) que durante veinte años fue sinónimo de pagar en línea. Ese botón, su negocio de mayor margen, crece solo ~2% sin divisas y pierde terreno frente a las billeteras integradas en el dispositivo o la plataforma (Apple Pay, Shop Pay, Google Pay); el volumen lo aportan Braintree (procesamiento de bajo margen) y Venmo, que todavía monetiza poco. Las finanzas son sólidas: flujo libre ajustado de US$6.400 millones en 2025 y recompras que bajaron las acciones de 1.172 millones (2020) a 920 millones. En 2026 llegó un nuevo CEO (Enrique Lores) y una reorganización. La historia de cinco años es si PayPal defiende el checkout y monetiza Venmo, o si se convierte en un procesador de bajo margen.",
+ "filtro": [
+  [
+   "Los ingresos crecen ~4% anual cinco años",
+   "Sí",
+   "Sí: +4-7% en 2023-2025",
+   "Probable"
+  ],
+  [
+   "El checkout de marca vuelve a crecer ≥ 5%",
+   "Sí",
+   "Poco: ~2% sin divisas y en baja de participación",
+   "Baja-media"
+  ],
+  [
+   "El margen operativo llega a 19,5%",
+   "Sí",
+   "Sí: 18,3% en 2025 por disciplina de costos y mezcla",
+   "Media"
+  ],
+  [
+   "Venmo se vuelve un negocio rentable grande",
+   "Sí",
+   "Sí: creció a doble dígito en ingresos; parte de una base de ~US$3.000 millones",
+   "Media"
   ]
+ ],
+ "tasas_base_nota": "Para empresas de más de US$25.000 millones, crecer 4,9% anual cinco años (historia A) lo logró ~49%: la hoja (~3,6%) es modesta. El valor de PayPal depende de la mezcla (cuánto margen de checkout de marca conserva), no del crecimiento total.",
+ "crecimiento": {
+  "texto": "Ingresos de US$29.771 millones (2023, +8,2%), US$31.797 millones (2024, +6,8%) y US$33.172 millones (2025, +4,3%); LTM US$34.128 millones. El 89,8% de los ingresos de 2025 fueron transacciones y el 10,2% otros servicios de valor agregado. La división de las historias entre checkout de marca, Braintree, Venmo y otros es una estimación propia: PayPal no publica ingresos por producto.",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2023",
+    "2024",
+    "2025",
+    "LTM"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos",
+     "29.771",
+     "31.797",
+     "33.172",
+     "34.128"
+    ],
+    [
+     "Crecimiento",
+     "+8,2%",
+     "+6,8%",
+     "+4,3%",
+     "—"
+    ],
+    [
+     "Margen operativo",
+     "16,9%",
+     "16,7%",
+     "18,3%",
+     "17,4%"
+    ],
+    [
+     "FCFF (hoja)",
+     "5.899",
+     "2.643",
+     "4.154",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen operativo fue 16,7-18,3% y la hoja supone ~17,3% el próximo año y 19,5% de objetivo. La mezcla manda: cada punto que el checkout de marca pierde frente a Braintree baja el margen, porque Braintree cobra mucho menos por transacción. Las historias van de 13% a 22%."
+ },
+ "reinversion": {
+  "texto": "Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción. Ventaja que se desvanece: red de dos lados de comercios y usuarios, pero el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas. El ROIC después del año 10 es 13,4%, el punto medio entre el costo de capital terminal (9,0%) y su ROIC actual (17,8%), porque Damodaran no publica un promedio útil para su industria."
+ },
+ "prob_texto": "A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "premortem": [
+  "Apple Pay, Shop Pay y los checkouts de plataforma siguen quitando participación al botón PayPal.",
+  "Braintree renegocia con grandes comercios y el volumen crece sin margen.",
+  "La reorganización y el cambio de CEO distraen y retrasan productos.",
+  "Pérdidas de crédito en «compra ahora y paga después» en una recesión.",
+  "Regulación (tarifas, competencia de billeteras) limita la monetización de Venmo."
+ ],
+ "contra": "el checkout de marca crece ~2% y pierde tasa de captura desde hace varios años; sin evidencia de reactivación, B pesa casi tanto como A.",
+ "indicadores": [
+  [
+   "Checkout de marca (TPV sin divisas)",
+   "~+2%",
+   "≥ +5%",
+   "≤ 0%"
+  ],
+  [
+   "Margen de transacción (US$)",
+   "Creciendo",
+   "≥ +4%",
+   "En caída"
+  ],
+  [
+   "Ingresos de Venmo",
+   "Doble dígito",
+   "≥ +15%",
+   "< +8%"
+  ],
+  [
+   "Margen operativo",
+   "~18%",
+   "≥ 19%",
+   "≤ 16%"
+  ],
+  [
+   "Recompras / acciones en circulación",
+   "En baja",
+   "−5% anual",
+   "Se detienen"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+ "frase": "Red de pagos rentable cuyo botón de marca pierde frente a las billeteras nativas",
+ "confianza": "Media: finanzas sólidas; la mezcla de ingresos es la incógnita",
+ "cambiaria": "Crecimiento del checkout de marca y margen de transacción",
+ "revision": "Resultados del 3T26 (oct-2026)",
+ "fuentes": [
+  [
+   "PayPal, resultados del 4T y año 2025",
+   "https://newsroom.paypal-corp.com/2026-02-03-PayPal-Reports-Fourth-Quarter-and-Full-Year-2025-Results"
+  ],
+  [
+   "PayPal, Form 10-K 2025",
+   "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000024/pypl-20251231.htm"
+  ],
+  [
+   "PayPal, nombramiento de Enrique Lores como CEO",
+   "https://newsroom.paypal-corp.com/2026-02-03-PayPal-Appoints-Enrique-Lores-as-Chief-Executive-Officer-and-David-W-Dorman-as-Independent-Board-Chair"
+  ],
+  [
+   "PayPal, reorganización estratégica (abr-2026)",
+   "https://newsroom.paypal-corp.com/2026-04-29-PayPal-Announces-Strategic-Reorganization-to-Accelerate-Growth"
+  ],
+  [
+   "Yahoo Finance, resultados del 2T 2026",
+   "https://finance.yahoo.com/markets/stocks/articles/paypal-holdings-inc-pypl-q2-190110631.html"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Damodaran, Betas by Sector (US), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ]
 }

@@ -1,256 +1,256 @@
 {
-  "ticker": "PAGS",
-  "empresa": "PagSeguro Digital Ltd.",
-  "fecha": "2026-09-30",
-  "industria_damodaran": "Financial Svcs. (Non-bank & Insurance)",
-  "segmentos": {
-    "Transacciones (adquirencia)": 1556,
-    "Ingresos financieros y banca": 2335
-  },
-  "riesgo": {
-    "beta_propuesta": 0.97,
-    "texto": "La beta de la hoja es 1,30; el Ke inicial es 14,7%. La beta sectorial propuesta de 0,97 se evalúa como sensibilidad al costo del patrimonio. Se usa FCFE financiero y el ROE converge al Ke terminal; los depósitos y la caja operativa bancaria no son deuda y caja excedente de una industrial."
-  },
-  "historias": [
-    {
-      "nombre": "A · Banco digital estable con ROAE de ~15%",
-      "prob": 0.45,
-      "margen": 0.156,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          -0.03,
-          -0.02,
-          0,
-          0.01,
-          0.01
-        ],
-        "Ingresos financieros y banca": [
-          0.1,
-          0.1,
-          0.09,
-          0.08,
-          0.08
-        ]
-      }
-    },
-    {
-      "nombre": "B · El PIX y la competencia erosionan",
-      "prob": 0.3,
-      "margen": 0.13,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          -0.08,
-          -0.06,
-          -0.05,
-          -0.04,
-          -0.03
-        ],
-        "Ingresos financieros y banca": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      }
-    },
-    {
-      "nombre": "C · Crece el banco: crédito y depósitos",
-      "prob": 0.15,
-      "margen": 0.17,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          0,
-          0.02,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Ingresos financieros y banca": [
-          0.15,
-          0.14,
-          0.13,
-          0.12,
-          0.1
-        ]
-      }
-    },
-    {
-      "nombre": "D · Crisis de crédito en Brasil",
-      "prob": 0.1,
-      "margen": 0.1,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          -0.1,
-          -0.05,
-          -0.03,
-          0,
-          0
-        ],
-        "Ingresos financieros y banca": [
-          -0.05,
-          0,
-          0.03,
-          0.05,
-          0.05
-        ]
-      }
-    }
-  ],
-  "margenes_inverso": [
-    0.13,
-    0.156,
-    0.17
-  ],
-  "historia": "PagSeguro (PagBank) nació procesando pagos con tarjeta para microcomercios en Brasil y se está convirtiendo en un banco digital: cuentas, depósitos, crédito e inversiones que financian su propia operación. La adquirencia es un negocio maduro y deflacionario (el PIX, pago instantáneo gratuito, reemplaza a la tarjeta de débito; los ingresos por transacciones cayeron de R$9.183 millones en 2024 a R$8.159 millones en 2025), mientras el banco reduce el costo de fondeo y sostiene utilidades: R$2.118 millones en 2025, ROAE de 15,6% y Basilea de 22,5% en el 2T26. La acción cotiza a ~6 veces utilidades y por debajo del valor en libros. La historia de cinco años es si PagBank es un banco digital rentable y estable o un adquirente en declive con un banco que no alcanza a compensar.",
-  "filtro": [
-    [
-      "Los ingresos crecen ~6% anual cinco años",
-      "Sí",
-      "Sí: +8,5% en 2025 en reales; la adquirencia cae y el banco crece",
-      "Media"
+ "ticker": "PAGS",
+ "empresa": "PagSeguro Digital Ltd.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Financial Svcs. (Non-bank & Insurance)",
+ "segmentos": {
+  "Transacciones (adquirencia)": 1556,
+  "Ingresos financieros y banca": 2335
+ },
+ "riesgo": {
+  "beta_propuesta": 0.97,
+  "texto": "La beta de la hoja es 1,30; el Ke inicial es 14,7%. La beta sectorial propuesta de 0,97 se evalúa como sensibilidad al costo del patrimonio. Se usa FCFE financiero y el ROE converge al Ke terminal; los depósitos y la caja operativa bancaria no son deuda y caja excedente de una industrial."
+ },
+ "historias": [
+  {
+   "nombre": "A · Banco digital estable con ROAE de ~15%",
+   "prob": 0.45,
+   "margen": 0.156,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     -0.03,
+     -0.02,
+     0,
+     0.01,
+     0.01
     ],
-    [
-      "El ROAE se mantiene en ~15%",
-      "Sí",
-      "Sí: estable en 15-16% con capital holgado",
-      "Probable"
-    ],
-    [
-      "El PIX destruye la adquirencia",
-      "Sí",
-      "Parcialmente: el débito cae; el crédito y la anticipación resisten",
-      "Posible, gradual"
-    ],
-    [
-      "Una crisis de crédito en Brasil golpea la cartera",
-      "Sí",
-      "Sí con tasas altas; la cartera es pequeña y conservadora",
-      "Baja-media"
+    "Ingresos financieros y banca": [
+     0.1,
+     0.1,
+     0.09,
+     0.08,
+     0.08
     ]
-  ],
-  "tasas_base_nota": "Para empresas de US$3.000-4.500 millones, crecer 5,6% anual cinco años (historia A) lo logró ~60%: la hoja (6%) es normal. En una financiera, el valor depende más del retorno sobre el patrimonio frente al costo del patrimonio (~12-15% en Brasil) que del crecimiento.",
-  "crecimiento": {
-    "texto": "En dólares (hoja): US$3.193 millones (2023), US$3.495 millones (2024, +9,4%) y US$3.653 millones (2025, +4,5%); LTM US$3.892 millones. En reales, ingresos y rendimientos de R$20.411 millones en 2025 (+8,5%); transacciones R$8.159 millones (en baja) y el resto ingresos financieros. La división de las historias (~40% transacciones, ~60% financieros y banca) es un cálculo propio.",
-    "tabla": {
-      "cols": [
-        "US$ millones",
-        "2023",
-        "2024",
-        "2025",
-        "LTM"
-      ],
-      "align": [
-        "l",
-        "r",
-        "r",
-        "r",
-        "r"
-      ],
-      "rows": [
-        [
-          "Ingresos",
-          "3.193",
-          "3.495",
-          "3.653",
-          "3.892"
-        ],
-        [
-          "Crecimiento",
-          "+7,5%",
-          "+9,4%",
-          "+4,5%",
-          "—"
-        ],
-        [
-          "Margen (utilidad antes de impuestos)",
-          "12,6%",
-          "12,7%",
-          "12,5%",
-          "12,6%"
-        ],
-        [
-          "FCFF (hoja)",
-          "−845",
-          "−333",
-          "703",
-          "—"
-        ]
-      ]
-    }
+   }
   },
-  "margenes": {
-    "texto": "Para PagBank la rentabilidad relevante es el ROE, no el margen EBIT. El DCF de flujos al accionista parte de utilidad LTM de US$406,6 millones, 276 millones de acciones, ROE Base de 15,6%, crecimiento de beneficios de 5% el primer año y 6% en años 2-5. El ROE se desvanece al costo del patrimonio terminal de 12%; crecimiento estable en dólares de 3%. ROE de 13%/17% delimitan los escenarios. Son supuestos del analista, no guía; la cifra de ROAE ajustado de 15,6% procede del comunicado 2T de 11-ago-2026."
-  },
-  "reinversion": {
-    "texto": "La reinversión patrimonial se estima como utilidad × crecimiento / ROE; el FCFE es utilidad menos esa retención. Se descuenta al Ke de 14,7%, que converge a 12%. No se suma la liquidez bancaria ni se restan depósitos. El 22,5% de Basilea reportado en 2T muestra holgura, pero no identifica por sí solo capital distribuible: no se agrega un valor por exceso de capital no comprobado. La aproximación requiere que crecimiento de ingresos y beneficios sea comparable; la sensibilidad debe revisarse si cambia el riesgo de crédito o el capital regulatorio."
-  },
-  "prob_texto": "A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (15%) es un banco digital que crece a doble dígito. D (10%) es una crisis de crédito con morosidad en alza.",
-  "premortem": [
-    "El PIX con crédito (PIX parcelado) reemplaza también a la tarjeta de crédito y la adquirencia se derrumba.",
-    "Nubank y Mercado Pago capturan a los microcomercios con cuentas y crédito gratis.",
-    "Las tasas altas en Brasil elevan la morosidad y obligan a más provisiones.",
-    "El real se deprecia y el valor en dólares cae aunque el negocio vaya bien en reales.",
-    "Cambios regulatorios (tarifas de intercambio, anticipación) bajan la rentabilidad."
-  ],
-  "contra": "los ingresos por transacciones caen y el crecimiento en dólares bajó a 4,5%; si el banco no acelera, B se vuelve la historia central.",
-  "indicadores": [
-    [
-      "ROAE",
-      "15,6% (2T26)",
-      "≥ 15%",
-      "< 12%"
+  {
+   "nombre": "B · El PIX y la competencia erosionan",
+   "prob": 0.3,
+   "margen": 0.13,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     -0.08,
+     -0.06,
+     -0.05,
+     -0.04,
+     -0.03
     ],
-    [
-      "Volumen de pagos (TPV)",
-      "Estable",
-      "Creciendo ≥ 5%",
-      "En caída"
-    ],
-    [
-      "Depósitos y cartera de crédito",
-      "Creciendo",
-      "≥ +15%",
-      "Estancados"
-    ],
-    [
-      "Morosidad (90 días)",
-      "Controlada",
-      "Estable",
-      "En alza dos trimestres"
-    ],
-    [
-      "Índice de Basilea",
-      "22,5%",
-      "≥ 18% con dividendos",
-      "< 16%"
+    "Ingresos financieros y banca": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
     ]
-  ],
-  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
-  "frase": "Adquirente en declive que se convierte en banco digital rentable en Brasil",
-  "confianza": "Media-baja: país, tasas y competencia dominan el resultado",
-  "cambiaria": "ROAE, morosidad y crecimiento de depósitos y crédito",
-  "revision": "Resultados del 3T26 (nov-2026)",
-  "fuentes": [
-    [
-      "PagSeguro, comunicado de resultados del 2T 2026 (6-K)",
-      "https://www.sec.gov/Archives/edgar/data/1712807/000155485526001793/MainDocument.htm"
+   }
+  },
+  {
+   "nombre": "C · Crece el banco: crédito y depósitos",
+   "prob": 0.15,
+   "margen": 0.17,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     0,
+     0.02,
+     0.03,
+     0.03,
+     0.03
     ],
-    [
-      "PagSeguro, 6-K sobre dividendos 2027-2028 (sep-2026)",
-      "https://www.sec.gov/Archives/edgar/data/1712807/000155485526001939/MainDocument.htm"
-    ],
-    [
-      "PagSeguro, Form 20-F 2025",
-      "https://www.sec.gov/Archives/edgar/data/1712807/000155485526000826/pags-20251231.htm"
-    ],
-    [
-      "Mauboussin & Callahan, The Base Rate Book (2016)",
-      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-    ],
-    [
-      "Damodaran, Betas by Sector (US), enero 2026",
-      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    "Ingresos financieros y banca": [
+     0.15,
+     0.14,
+     0.13,
+     0.12,
+     0.1
     ]
+   }
+  },
+  {
+   "nombre": "D · Crisis de crédito en Brasil",
+   "prob": 0.1,
+   "margen": 0.1,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     -0.1,
+     -0.05,
+     -0.03,
+     0,
+     0
+    ],
+    "Ingresos financieros y banca": [
+     -0.05,
+     0,
+     0.03,
+     0.05,
+     0.05
+    ]
+   }
+  }
+ ],
+ "margenes_inverso": [
+  0.13,
+  0.156,
+  0.17
+ ],
+ "historia": "PagSeguro (PagBank) nació procesando pagos con tarjeta para microcomercios en Brasil y se está convirtiendo en un banco digital: cuentas, depósitos, crédito e inversiones que financian su propia operación. La adquirencia es un negocio maduro y deflacionario (el PIX, pago instantáneo gratuito, reemplaza a la tarjeta de débito; los ingresos por transacciones cayeron de R$9.183 millones en 2024 a R$8.159 millones en 2025), mientras el banco reduce el costo de fondeo y sostiene utilidades: R$2.118 millones en 2025, ROAE de 15,6% y Basilea de 22,5% en el 2T26. La acción cotiza a ~6 veces utilidades y por debajo del valor en libros. La historia de cinco años es si PagBank es un banco digital rentable y estable o un adquirente en declive con un banco que no alcanza a compensar.",
+ "filtro": [
+  [
+   "Los ingresos crecen ~6% anual cinco años",
+   "Sí",
+   "Sí: +8,5% en 2025 en reales; la adquirencia cae y el banco crece",
+   "Media"
+  ],
+  [
+   "El ROAE se mantiene en ~15%",
+   "Sí",
+   "Sí: estable en 15-16% con capital holgado",
+   "Probable"
+  ],
+  [
+   "El PIX destruye la adquirencia",
+   "Sí",
+   "Parcialmente: el débito cae; el crédito y la anticipación resisten",
+   "Posible, gradual"
+  ],
+  [
+   "Una crisis de crédito en Brasil golpea la cartera",
+   "Sí",
+   "Sí con tasas altas; la cartera es pequeña y conservadora",
+   "Baja-media"
   ]
+ ],
+ "tasas_base_nota": "Para empresas de US$3.000-4.500 millones, crecer 5,6% anual cinco años (historia A) lo logró ~60%: la hoja (6%) es normal. En una financiera, el valor depende más del retorno sobre el patrimonio frente al costo del patrimonio (~12-15% en Brasil) que del crecimiento.",
+ "crecimiento": {
+  "texto": "En dólares (hoja): US$3.193 millones (2023), US$3.495 millones (2024, +9,4%) y US$3.653 millones (2025, +4,5%); LTM US$3.892 millones. En reales, ingresos y rendimientos de R$20.411 millones en 2025 (+8,5%); transacciones R$8.159 millones (en baja) y el resto ingresos financieros. La división de las historias (~40% transacciones, ~60% financieros y banca) es un cálculo propio.",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2023",
+    "2024",
+    "2025",
+    "LTM"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos",
+     "3.193",
+     "3.495",
+     "3.653",
+     "3.892"
+    ],
+    [
+     "Crecimiento",
+     "+7,5%",
+     "+9,4%",
+     "+4,5%",
+     "—"
+    ],
+    [
+     "Margen (utilidad antes de impuestos)",
+     "12,6%",
+     "12,7%",
+     "12,5%",
+     "12,6%"
+    ],
+    [
+     "FCFF (hoja)",
+     "−845",
+     "−333",
+     "703",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "Para PagBank la rentabilidad relevante es el ROE, no el margen EBIT. El DCF de flujos al accionista parte de utilidad LTM de US$406,6 millones, 276 millones de acciones, ROE Base de 15,6%, crecimiento de beneficios de 5% el primer año y 6% en años 2-5. El ROE se desvanece al costo del patrimonio terminal de 12%; crecimiento estable en dólares de 3%. ROE de 13%/17% delimitan los escenarios. Son supuestos del analista, no guía; la cifra de ROAE ajustado de 15,6% procede del comunicado 2T de 11-ago-2026."
+ },
+ "reinversion": {
+  "texto": "La reinversión patrimonial se estima como utilidad × crecimiento / ROE; el FCFE es utilidad menos esa retención. Se descuenta al Ke de 14,7%, que converge a 12%. No se suma la liquidez bancaria ni se restan depósitos. El 22,5% de Basilea reportado en 2T muestra holgura, pero no identifica por sí solo capital distribuible: no se agrega un valor por exceso de capital no comprobado. La aproximación requiere que crecimiento de ingresos y beneficios sea comparable; la sensibilidad debe revisarse si cambia el riesgo de crédito o el capital regulatorio. Sin ventaja defendible: no tiene una barrera durable frente a Pix y los bancos digitales, y su ROIC apenas supera el costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
+ },
+ "prob_texto": "A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (15%) es un banco digital que crece a doble dígito. D (10%) es una crisis de crédito con morosidad en alza.",
+ "premortem": [
+  "El PIX con crédito (PIX parcelado) reemplaza también a la tarjeta de crédito y la adquirencia se derrumba.",
+  "Nubank y Mercado Pago capturan a los microcomercios con cuentas y crédito gratis.",
+  "Las tasas altas en Brasil elevan la morosidad y obligan a más provisiones.",
+  "El real se deprecia y el valor en dólares cae aunque el negocio vaya bien en reales.",
+  "Cambios regulatorios (tarifas de intercambio, anticipación) bajan la rentabilidad."
+ ],
+ "contra": "los ingresos por transacciones caen y el crecimiento en dólares bajó a 4,5%; si el banco no acelera, B se vuelve la historia central.",
+ "indicadores": [
+  [
+   "ROAE",
+   "15,6% (2T26)",
+   "≥ 15%",
+   "< 12%"
+  ],
+  [
+   "Volumen de pagos (TPV)",
+   "Estable",
+   "Creciendo ≥ 5%",
+   "En caída"
+  ],
+  [
+   "Depósitos y cartera de crédito",
+   "Creciendo",
+   "≥ +15%",
+   "Estancados"
+  ],
+  [
+   "Morosidad (90 días)",
+   "Controlada",
+   "Estable",
+   "En alza dos trimestres"
+  ],
+  [
+   "Índice de Basilea",
+   "22,5%",
+   "≥ 18% con dividendos",
+   "< 16%"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+ "frase": "Adquirente en declive que se convierte en banco digital rentable en Brasil",
+ "confianza": "Media-baja: país, tasas y competencia dominan el resultado",
+ "cambiaria": "ROAE, morosidad y crecimiento de depósitos y crédito",
+ "revision": "Resultados del 3T26 (nov-2026)",
+ "fuentes": [
+  [
+   "PagSeguro, comunicado de resultados del 2T 2026 (6-K)",
+   "https://www.sec.gov/Archives/edgar/data/1712807/000155485526001793/MainDocument.htm"
+  ],
+  [
+   "PagSeguro, 6-K sobre dividendos 2027-2028 (sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1712807/000155485526001939/MainDocument.htm"
+  ],
+  [
+   "PagSeguro, Form 20-F 2025",
+   "https://www.sec.gov/Archives/edgar/data/1712807/000155485526000826/pags-20251231.htm"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Damodaran, Betas by Sector (US), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ]
 }

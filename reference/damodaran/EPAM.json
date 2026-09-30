@@ -1,285 +1,287 @@
 {
-  "ticker": "EPAM",
-  "empresa": "EPAM Systems, Inc.",
-  "fecha": "2026-09-30",
-  "industria_damodaran": "Computer Services",
-  "segmentos": {
-    "Norteamérica": 3200,
-    "Europa": 2250,
-    "Otros mercados": 167
-  },
-  "riesgo": {
-    "beta_propuesta": null,
-    "texto": "La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$148,68 a US$159,67. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector."
-  },
-  "historias": [
-    {
-      "nombre": "A · La IA compensa lo que quita: crecimiento moderado",
-      "prob": 0.45,
-      "margen": 0.12,
-      "crec": {
-        "Norteamérica": [
-          0.04,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "Europa": [
-          0.08,
-          0.07,
-          0.06,
-          0.06,
-          0.06
-        ],
-        "Otros mercados": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      }
-    },
-    {
-      "nombre": "B · Deflación de horas por IA",
-      "prob": 0.3,
-      "margen": 0.1,
-      "crec": {
-        "Norteamérica": [
-          0,
-          0.01,
-          0.02,
-          0.02,
-          0.02
-        ],
-        "Europa": [
-          0.04,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Otros mercados": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      }
-    },
-    {
-      "nombre": "C · La IA crea demanda de ingeniería",
-      "prob": 0.15,
-      "margen": 0.14,
-      "crec": {
-        "Norteamérica": [
-          0.08,
-          0.09,
-          0.09,
-          0.08,
-          0.08
-        ],
-        "Europa": [
-          0.1,
-          0.1,
-          0.09,
-          0.08,
-          0.08
-        ],
-        "Otros mercados": [
-          0.08,
-          0.08,
-          0.08,
-          0.08,
-          0.08
-        ]
-      }
-    },
-    {
-      "nombre": "D · Los servicios se comoditizan",
-      "prob": 0.1,
-      "margen": 0.08,
-      "crec": {
-        "Norteamérica": [
-          -0.05,
-          -0.04,
-          -0.02,
-          0,
-          0.01
-        ],
-        "Europa": [
-          0,
-          -0.02,
-          0,
-          0.01,
-          0.01
-        ],
-        "Otros mercados": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      }
-    }
-  ],
-  "margenes_inverso": [
-    0.09,
-    0.105,
-    0.125
-  ],
-  "historia": "EPAM vende ingeniería de software, datos, nube e IA a grandes empresas, con equipos en Europa Central y del Este, Asia y América Latina, y cobra casi todo por tiempo y materiales. Fue una de las mejores historias de crecimiento de servicios de TI hasta 2021 (la acción llegó a US$668). Después vinieron la guerra en Ucrania (reubicación de miles de ingenieros), la caída del gasto discrecional y la IA generativa, que amenaza con reducir las horas de programación que EPAM factura. Los ingresos se estancaron en 2023-2024, repuntaron en 2025 con compras (+15,4%) y en el 1S26 crecen 6% (4,5% en el 2T). La historia de cinco años es si la IA es una deflación de horas o una nueva ola de proyectos de ingeniería (datos, agentes, modernización) en la que EPAM está bien posicionada.",
-  "filtro": [
-    [
-      "Los ingresos crecen ~5% anual cinco años",
-      "Sí",
-      "Sí: +6% en el 1S26 con Europa +10%",
-      "Probable"
+ "ticker": "EPAM",
+ "empresa": "EPAM Systems, Inc.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Computer Services",
+ "segmentos": {
+  "Norteamérica": 3200,
+  "Europa": 2250,
+  "Otros mercados": 167
+ },
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$168,22 a US$181,07. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector."
+ },
+ "historias": [
+  {
+   "nombre": "A · La IA compensa lo que quita: crecimiento moderado",
+   "prob": 0.45,
+   "margen": 0.12,
+   "crec": {
+    "Norteamérica": [
+     0.04,
+     0.05,
+     0.05,
+     0.05,
+     0.05
     ],
-    [
-      "La IA reduce las horas facturables netas",
-      "Sí",
-      "Sí: la programación rutinaria se automatiza; EPAM está en el segmento de mayor valor",
-      "Posible, gradual"
+    "Europa": [
+     0.08,
+     0.07,
+     0.06,
+     0.06,
+     0.06
     ],
-    [
-      "El margen GAAP sube de ~10% a 12,5%",
-      "Sí",
-      "Poco: el margen cae desde 2021 (compresión de tarifas y reubicación)",
-      "Media-baja"
-    ],
-    [
-      "EPAM vuelve a crecer a doble dígito orgánico",
-      "Sí",
-      "Solo si la IA genera una ola de proyectos grandes",
-      "Baja"
+    "Otros mercados": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
     ]
-  ],
-  "tasas_base_nota": "Para empresas de US$4.500-7.000 millones, crecer 5,5% anual cinco años (historia A) lo logró ~57%: la hoja (5%) es modesta. El valor de EPAM depende menos del crecimiento que del margen, que la hoja espera recuperar (de ~10% a 12,5%).",
-  "crecimiento": {
-    "texto": "Ingresos de US$4.691 millones (2023, −2,8%), US$4.728 millones (2024, +0,8%) y US$5.457 millones (2025, +15,4% con compras como Neoris y First Derivative); LTM US$5.617 millones. En el 2T26 facturó US$1.414,8 millones (+4,5%), con Europa +10%. La división de las historias (Norteamérica ~57%, Europa ~40%, otros ~3%) es una aproximación: la empresa reporta por geografía de clientes y la diferencia entre el total y Europa la calcula el informe.",
-    "tabla": {
-      "cols": [
-        "US$ millones",
-        "2023",
-        "2024",
-        "2025",
-        "LTM"
-      ],
-      "align": [
-        "l",
-        "r",
-        "r",
-        "r",
-        "r"
-      ],
-      "rows": [
-        [
-          "Ingresos",
-          "4.691",
-          "4.728",
-          "5.457",
-          "5.617"
-        ],
-        [
-          "Crecimiento",
-          "−2,8%",
-          "+0,8%",
-          "+15,4%",
-          "—"
-        ],
-        [
-          "Margen operativo GAAP",
-          "10,7%",
-          "11,5%",
-          "9,5%",
-          "10,0%"
-        ],
-        [
-          "FCFF (hoja)",
-          "437",
-          "513",
-          "527",
-          "—"
-        ]
-      ]
-    }
+   }
   },
-  "margenes": {
-    "texto": "El margen operativo GAAP pasó de ~14% en 2021 a 9,5% en 2025 y 10,0% LTM: menos utilización, tarifas presionadas, reubicación desde Ucrania y Belarús y costos de integración. La hoja supone 10,5% el próximo año y 12,5% de objetivo. Es la pieza más frágil: si la IA baja las horas, el margen difícilmente sube. Las historias van de 8% a 14%."
-  },
-  "reinversion": {
-    "texto": "Casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un sales-to-capital de 3,5 y 3. La reinversión real es en personas (formación en IA) y compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones)."
-  },
-  "prob_texto": "A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (15%) supone que la IA dispara proyectos de datos y modernización. D (10%) es la comoditización con ingresos en caída.",
-  "premortem": [
-    "Los clientes usan IA para producir el mismo software con 20-30% menos horas y renegocian contratos.",
-    "La competencia de India (TCS, Infosys) y de las consultoras con IA baja las tarifas.",
-    "El margen sigue cayendo por baja utilización y costos de reubicación.",
-    "Un nuevo shock geopolítico en Europa del Este afecta la entrega.",
-    "Las compras recientes no se integran bien y generan deterioro."
-  ],
-  "contra": "el margen cae desde 2021 y el crecimiento orgánico es de un dígito bajo en Norteamérica; si 2027 no muestra recuperación, la historia B se vuelve la central.",
-  "indicadores": [
-    [
-      "Crecimiento de ingresos (orgánico, sin divisas)",
-      "+4,5% (2T26)",
-      "≥ +6%",
-      "Negativo dos trimestres"
+  {
+   "nombre": "B · Deflación de horas por IA",
+   "prob": 0.3,
+   "margen": 0.1,
+   "crec": {
+    "Norteamérica": [
+     0,
+     0.01,
+     0.02,
+     0.02,
+     0.02
     ],
-    [
-      "Margen operativo GAAP",
-      "10,0% LTM",
-      "≥ 11%",
-      "< 9%"
+    "Europa": [
+     0.04,
+     0.03,
+     0.03,
+     0.03,
+     0.03
     ],
-    [
-      "Norteamérica (interanual)",
-      "Bajo un dígito",
-      "≥ +5%",
-      "Negativo"
-    ],
-    [
-      "Utilización de ingenieros",
-      "Estable",
-      "En alza",
-      "En baja"
-    ],
-    [
-      "Ingresos de proyectos de IA y datos",
-      "En aumento",
-      "Más de 20% de los ingresos",
-      "Estancados"
+    "Otros mercados": [
+     0,
+     0,
+     0,
+     0,
+     0
     ]
-  ],
-  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
-  "frase": "Ingeniería de software de alta calidad frente a la deflación de horas por IA",
-  "confianza": "Media-baja: el efecto neto de la IA sobre las horas facturables es el gran desconocido",
-  "cambiaria": "Crecimiento orgánico en Norteamérica y margen operativo en 2027",
-  "revision": "Resultados del 3T26 (nov-2026)",
-  "fuentes": [
-    [
-      "EPAM, Form 10-Q del 2T 2026",
-      "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000046/epam-20260630.htm"
+   },
+   "roic_terminal": "costo_capital"
+  },
+  {
+   "nombre": "C · La IA crea demanda de ingeniería",
+   "prob": 0.15,
+   "margen": 0.14,
+   "crec": {
+    "Norteamérica": [
+     0.08,
+     0.09,
+     0.09,
+     0.08,
+     0.08
     ],
-    [
-      "EPAM, Form 10-Q del 1T 2026",
-      "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000029/epam-20260331.htm"
+    "Europa": [
+     0.1,
+     0.1,
+     0.09,
+     0.08,
+     0.08
     ],
-    [
-      "EPAM, Form 10-K 2025",
-      "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000015/epam-20251231.htm"
-    ],
-    [
-      "Mauboussin & Callahan, The Base Rate Book (2016)",
-      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-    ],
-    [
-      "Damodaran, Betas by Sector (US), enero 2026",
-      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    "Otros mercados": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
     ]
+   }
+  },
+  {
+   "nombre": "D · Los servicios se comoditizan",
+   "prob": 0.1,
+   "margen": 0.08,
+   "crec": {
+    "Norteamérica": [
+     -0.05,
+     -0.04,
+     -0.02,
+     0,
+     0.01
+    ],
+    "Europa": [
+     0,
+     -0.02,
+     0,
+     0.01,
+     0.01
+    ],
+    "Otros mercados": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "roic_terminal": "costo_capital"
+  }
+ ],
+ "margenes_inverso": [
+  0.09,
+  0.105,
+  0.125
+ ],
+ "historia": "EPAM vende ingeniería de software, datos, nube e IA a grandes empresas, con equipos en Europa Central y del Este, Asia y América Latina, y cobra casi todo por tiempo y materiales. Fue una de las mejores historias de crecimiento de servicios de TI hasta 2021 (la acción llegó a US$668). Después vinieron la guerra en Ucrania (reubicación de miles de ingenieros), la caída del gasto discrecional y la IA generativa, que amenaza con reducir las horas de programación que EPAM factura. Los ingresos se estancaron en 2023-2024, repuntaron en 2025 con compras (+15,4%) y en el 1S26 crecen 6% (4,5% en el 2T). La historia de cinco años es si la IA es una deflación de horas o una nueva ola de proyectos de ingeniería (datos, agentes, modernización) en la que EPAM está bien posicionada.",
+ "filtro": [
+  [
+   "Los ingresos crecen ~5% anual cinco años",
+   "Sí",
+   "Sí: +6% en el 1S26 con Europa +10%",
+   "Probable"
+  ],
+  [
+   "La IA reduce las horas facturables netas",
+   "Sí",
+   "Sí: la programación rutinaria se automatiza; EPAM está en el segmento de mayor valor",
+   "Posible, gradual"
+  ],
+  [
+   "El margen GAAP sube de ~10% a 12,5%",
+   "Sí",
+   "Poco: el margen cae desde 2021 (compresión de tarifas y reubicación)",
+   "Media-baja"
+  ],
+  [
+   "EPAM vuelve a crecer a doble dígito orgánico",
+   "Sí",
+   "Solo si la IA genera una ola de proyectos grandes",
+   "Baja"
   ]
+ ],
+ "tasas_base_nota": "Para empresas de US$4.500-7.000 millones, crecer 5,5% anual cinco años (historia A) lo logró ~57%: la hoja (5%) es modesta. El valor de EPAM depende menos del crecimiento que del margen, que la hoja espera recuperar (de ~10% a 12,5%).",
+ "crecimiento": {
+  "texto": "Ingresos de US$4.691 millones (2023, −2,8%), US$4.728 millones (2024, +0,8%) y US$5.457 millones (2025, +15,4% con compras como Neoris y First Derivative); LTM US$5.617 millones. En el 2T26 facturó US$1.414,8 millones (+4,5%), con Europa +10%. La división de las historias (Norteamérica ~57%, Europa ~40%, otros ~3%) es una aproximación: la empresa reporta por geografía de clientes y la diferencia entre el total y Europa la calcula el informe.",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2023",
+    "2024",
+    "2025",
+    "LTM"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos",
+     "4.691",
+     "4.728",
+     "5.457",
+     "5.617"
+    ],
+    [
+     "Crecimiento",
+     "−2,8%",
+     "+0,8%",
+     "+15,4%",
+     "—"
+    ],
+    [
+     "Margen operativo GAAP",
+     "10,7%",
+     "11,5%",
+     "9,5%",
+     "10,0%"
+    ],
+    [
+     "FCFF (hoja)",
+     "437",
+     "513",
+     "527",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen operativo GAAP pasó de ~14% en 2021 a 9,5% en 2025 y 10,0% LTM: menos utilización, tarifas presionadas, reubicación desde Ucrania y Belarús y costos de integración. La hoja supone 10,5% el próximo año y 12,5% de objetivo. Es la pieza más frágil: si la IA baja las horas, el margen difícilmente sube. Las historias van de 8% a 14%."
+ },
+ "reinversion": {
+  "texto": "Casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un sales-to-capital de 3,5 y 3. La reinversión real es en personas (formación en IA) y compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones). Ventaja que se desvanece: costos de cambio moderados en servicios de ingeniería, pero con un ROIC que bajó de 47% a 15% en cinco años y deflación de horas por la IA. El ROIC después del año 10 es 11,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (26,4%), limitado a su ROIC actual (13,8%)."
+ },
+ "prob_texto": "A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (15%) supone que la IA dispara proyectos de datos y modernización. D (10%) es la comoditización con ingresos en caída. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "premortem": [
+  "Los clientes usan IA para producir el mismo software con 20-30% menos horas y renegocian contratos.",
+  "La competencia de India (TCS, Infosys) y de las consultoras con IA baja las tarifas.",
+  "El margen sigue cayendo por baja utilización y costos de reubicación.",
+  "Un nuevo shock geopolítico en Europa del Este afecta la entrega.",
+  "Las compras recientes no se integran bien y generan deterioro."
+ ],
+ "contra": "el margen cae desde 2021 y el crecimiento orgánico es de un dígito bajo en Norteamérica; si 2027 no muestra recuperación, la historia B se vuelve la central.",
+ "indicadores": [
+  [
+   "Crecimiento de ingresos (orgánico, sin divisas)",
+   "+4,5% (2T26)",
+   "≥ +6%",
+   "Negativo dos trimestres"
+  ],
+  [
+   "Margen operativo GAAP",
+   "10,0% LTM",
+   "≥ 11%",
+   "< 9%"
+  ],
+  [
+   "Norteamérica (interanual)",
+   "Bajo un dígito",
+   "≥ +5%",
+   "Negativo"
+  ],
+  [
+   "Utilización de ingenieros",
+   "Estable",
+   "En alza",
+   "En baja"
+  ],
+  [
+   "Ingresos de proyectos de IA y datos",
+   "En aumento",
+   "Más de 20% de los ingresos",
+   "Estancados"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+ "frase": "Ingeniería de software de alta calidad frente a la deflación de horas por IA",
+ "confianza": "Media-baja: el efecto neto de la IA sobre las horas facturables es el gran desconocido",
+ "cambiaria": "Crecimiento orgánico en Norteamérica y margen operativo en 2027",
+ "revision": "Resultados del 3T26 (nov-2026)",
+ "fuentes": [
+  [
+   "EPAM, Form 10-Q del 2T 2026",
+   "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000046/epam-20260630.htm"
+  ],
+  [
+   "EPAM, Form 10-Q del 1T 2026",
+   "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000029/epam-20260331.htm"
+  ],
+  [
+   "EPAM, Form 10-K 2025",
+   "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000015/epam-20251231.htm"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Damodaran, Betas by Sector (US), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ]
 }

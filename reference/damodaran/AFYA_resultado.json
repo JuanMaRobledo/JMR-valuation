@@ -1,329 +1,353 @@
 {
-  "ticker": "AFYA",
-  "fecha": "2026-09-30",
-  "precio": 12.33,
-  "dcf_base": 24.06821398236459,
-  "g_ref": 0.052000000000000005,
-  "m_base": 0.33,
-  "s2c": 1.5,
+ "ticker": "AFYA",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.035,
+  "growthY1Base": 0.06,
+  "growthY1Opt": 0.06999999999999999,
+  "growthCons": 0.035,
+  "growthBase": 0.05,
+  "growthOpt": 0.06999999999999999,
+  "marginY1Cons": 0.315,
+  "marginY1Base": 0.315,
+  "marginY1Opt": 0.315,
+  "marginCons": 0.29,
+  "marginBase": 0.33,
+  "marginOpt": 0.36,
+  "salesToCapital2": 1.2,
   "wacc": 0.11219548370722277,
-  "beta_hoja": 1.2013957951411405,
-  "beta_bu": 1.1617397628536215,
-  "beta_prop": 1.1617397628536215,
-  "industria": "Education",
-  "bu_sector": 0.72,
-  "rf": 0.0518,
-  "erp": 0.0733,
-  "tasas_base": {
-    "tramo": "$700-1,250 Mn",
-    "<(25)": 0.2,
-    "(25)-(20)": 0.3,
-    "(20)-(15)": 0.5,
-    "(15)-(10)": 1.3,
-    "(10)-(5)": 3.3,
-    "(5)-0": 8.8,
-    "0-5": 26.6,
-    "5-10": 26.6,
-    "10-15": 15.3,
-    "15-20": 7.3,
-    "20-25": 4.2,
-    "25-30": 2.3,
-    "30-35": 1.0,
-    "35-40": 1.0,
-    "40-45": 0.4,
-    ">45": 0.9,
-    "Mean": 7.9,
-    "Median": 6.4,
-    "StDev": 10.5,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+  "costoPatrimonio": 0.13986231178384562,
+  "taxEffective": 0.1061,
+  "convergenceYear": 5,
+  "terminalWacc": 0.11,
+  "roicTerminal": 0.148,
+  "salesToCapital": 1.5
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 22.426321263572817,
+ "precio": 12.31,
+ "dcf_base": 25.288539651736855,
+ "g_ref": 0.052000000000000005,
+ "m_base": 0.33,
+ "s2c": 1.5,
+ "wacc": 0.11219548370722277,
+ "beta_hoja": 1.2013957951411405,
+ "beta_bu": 1.1617397628536215,
+ "beta_prop": 1.1617397628536215,
+ "industria": "Education",
+ "bu_sector": 0.72,
+ "rf": 0.0518,
+ "erp": 0.0733,
+ "tasas_base": {
+  "tramo": "$700-1,250 Mn",
+  "<(25)": 0.2,
+  "(25)-(20)": 0.3,
+  "(20)-(15)": 0.5,
+  "(15)-(10)": 1.3,
+  "(10)-(5)": 3.3,
+  "(5)-0": 8.8,
+  "0-5": 26.6,
+  "5-10": 26.6,
+  "10-15": 15.3,
+  "15-20": 7.3,
+  "20-25": 4.2,
+  "25-30": 2.3,
+  "30-35": 1.0,
+  "35-40": 1.0,
+  "40-45": 0.4,
+  ">45": 0.9,
+  "Mean": 7.9,
+  "Median": 6.4,
+  "StDev": 10.5,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · La escasez de plazas sostiene precio y margen",
+   "prob": 0.45,
+   "margen": 0.33,
+   "crec": {
+    "Grado (Medicina)": [
+     0.07,
+     0.06,
+     0.06,
+     0.05,
+     0.05
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Educación continua": [
+     0.06,
+     0.06,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Soluciones para la práctica médica": [
+     0.05,
+     0.08,
+     0.08,
+     0.08,
+     0.07
+    ]
+   },
+   "cagr": 0.05830359264824869,
+   "rev5": 959.9524331341845,
+   "mix5": {
+    "Grado (Medicina)": 0.8838212329369127,
+    "Educación continua": 0.07046822330367324,
+    "Soluciones para la práctica médica": 0.04571054375941404
+   },
+   "tasa_base": 0.6788248871113169,
+   "roic_terminal_usado": 0.148,
+   "valor_beta_hoja": 26.057491728949326,
+   "valor_beta_prop": 26.33299861194464
   },
-  "historias": [
-    {
-      "nombre": "A · La escasez de plazas sostiene precio y margen",
-      "prob": 0.45,
-      "margen": 0.33,
-      "crec": {
-        "Grado (Medicina)": [
-          0.07,
-          0.06,
-          0.06,
-          0.05,
-          0.05
-        ],
-        "Educación continua": [
-          0.06,
-          0.06,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "Soluciones para la práctica médica": [
-          0.05,
-          0.08,
-          0.08,
-          0.08,
-          0.07
-        ]
-      },
-      "cagr": 0.05830359264824869,
-      "rev5": 959.9524331341845,
-      "mix5": {
-        "Grado (Medicina)": 0.8838212329369127,
-        "Educación continua": 0.07046822330367324,
-        "Soluciones para la práctica médica": 0.04571054375941404
-      },
-      "tasa_base": 0.6788248871113169,
-      "roic_terminal_usado": 0.129,
-      "valor_beta_hoja": 24.797968743305994,
-      "valor_beta_prop": 25.06000909008053
-    },
-    {
-      "nombre": "B · Madurez: precio real plano",
-      "prob": 0.3,
-      "margen": 0.3,
-      "crec": {
-        "Grado (Medicina)": [
-          0.05,
-          0.04,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Educación continua": [
-          0.03,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Soluciones para la práctica médica": [
-          0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02
-        ]
-      },
-      "cagr": 0.03487862134542752,
-      "rev5": 858.3125015272985,
-      "mix5": {
-        "Grado (Medicina)": 0.889874808598039,
-        "Educación continua": 0.07024316848524254,
-        "Soluciones para la práctica médica": 0.039882022916718385
-      },
-      "tasa_base": 0.8034457344423257,
-      "roic_terminal_usado": 0.129,
-      "valor_beta_hoja": 19.6852707458177,
-      "valor_beta_prop": 19.895343163113218
-    },
-    {
-      "nombre": "C · Se liberan plazas y cae el precio",
-      "prob": 0.15,
-      "margen": 0.26,
-      "crec": {
-        "Grado (Medicina)": [
-          0.02,
-          0.0,
-          -0.01,
-          0.0,
-          0.01
-        ],
-        "Educación continua": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "Soluciones para la práctica médica": [
-          0.0,
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.003498183775823449,
-      "rev5": 735.8364813720609,
-      "mix5": {
-        "Grado (Medicina)": 0.8871875993564636,
-        "Educación continua": 0.07067764859595045,
-        "Soluciones para la práctica médica": 0.04213475204758585
-      },
-      "tasa_base": 0.8938431965545509,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 13.338865626661455,
-      "valor_beta_prop": 13.484402581502678
-    },
-    {
-      "nombre": "D · Maduran los campus y crece lo digital",
-      "prob": 0.1,
-      "margen": 0.35,
-      "crec": {
-        "Grado (Medicina)": [
-          0.09,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Educación continua": [
-          0.08,
-          0.08,
-          0.08,
-          0.08,
-          0.08
-        ],
-        "Soluciones para la práctica médica": [
-          0.12,
-          0.12,
-          0.1,
-          0.1,
-          0.08
-        ]
-      },
-      "cagr": 0.07397231062429022,
-      "rev5": 1033.1509603492864,
-      "mix5": {
-        "Grado (Medicina)": 0.8768433570948503,
-        "Educación continua": 0.07396366136970996,
-        "Soluciones para la práctica médica": 0.049192981535439724
-      },
-      "tasa_base": 0.5954673074787761,
-      "roic_terminal_usado": 0.129,
-      "valor_beta_hoja": 28.775719081034936,
-      "valor_beta_prop": 29.077704481687476
-    }
-  ],
-  "valor_esperado_beta_hoja": 21.943068910335718,
-  "valor_esperado_beta_prop": 22.176037874864353,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.2013957951411405,
-      "ke": 0.13986231178384562,
-      "wacc": 0.11219548370722277,
-      "dcf_base": 24.06821398236459
-    },
-    {
-      "enfoque": "Bottom-up del sector (Education, reapalancada)",
-      "beta": 1.1617397628536215,
-      "ke": 0.13695552461717048,
-      "wacc": 0.11050725497303547,
-      "dcf_base": 24.322696288692743
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.012000000000000004,
-      0.032,
-      0.052000000000000005,
-      0.07200000000000001,
-      0.092
+  {
+   "nombre": "B · Madurez: precio real plano",
+   "prob": 0.3,
+   "margen": 0.3,
+   "crec": {
+    "Grado (Medicina)": [
+     0.05,
+     0.04,
+     0.03,
+     0.03,
+     0.03
     ],
-    "m": [
-      0.29000000000000004,
-      0.31,
-      0.33,
-      0.35000000000000003,
-      0.37
+    "Educación continua": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
     ],
-    "v": [
-      [
-        16.708517467767184,
-        18.003421541788484,
-        19.29832561580979,
-        20.593229689831098,
-        21.8881337638524
-      ],
-      [
-        18.63606859745456,
-        20.09707935668456,
-        21.558090115914556,
-        23.019100875144552,
-        24.480111634374545
-      ],
-      [
-        20.75924436803316,
-        22.405353393984484,
-        24.051462419935813,
-        25.697571445887135,
-        27.343680471838454
-      ],
-      [
-        23.096903213591656,
-        24.948980264212324,
-        26.801057314832978,
-        28.653134365453653,
-        30.505211416074317
-      ],
-      [
-        25.669437689816586,
-        27.75038607993439,
-        29.83133447005219,
-        31.91228286017,
-        33.9932312502878
-      ]
-    ],
-    "referencia_constante": 24.051462419935813,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Soluciones para la práctica médica": [
+     0.02,
+     0.02,
+     0.02,
+     0.02,
+     0.02
+    ]
+   },
+   "cagr": 0.034878621345427296,
+   "rev5": 858.3125015272984,
+   "mix5": {
+    "Grado (Medicina)": 0.8898748085980391,
+    "Educación continua": 0.07024316848524254,
+    "Soluciones para la práctica médica": 0.03988202291671839
+   },
+   "tasa_base": 0.8034457344423269,
+   "roic_terminal_usado": 0.148,
+   "valor_beta_hoja": 20.668154008066924,
+   "valor_beta_prop": 20.88873519193735
   },
-  "inverso": [
-    {
-      "beta": 1.2013957951411405,
-      "margen": 0.26,
-      "g": -0.0209019020137598,
-      "tasa_base": 0.9367873475442174
-    },
-    {
-      "beta": 1.2013957951411405,
-      "margen": 0.3,
-      "g": -0.0486878454279413,
-      "tasa_base": 0.9596339779824414
-    },
-    {
-      "beta": 1.2013957951411405,
-      "margen": 0.33,
-      "g": -0.066225315157382,
-      "tasa_base": 0.9712087080038723
-    },
-    {
-      "beta": 1.1617397628536215,
-      "margen": 0.26,
-      "g": -0.022873274396156995,
-      "tasa_base": 0.9402569629372364
-    },
-    {
-      "beta": 1.1617397628536215,
-      "margen": 0.3,
-      "g": -0.0505503524027367,
-      "tasa_base": 0.9608632325858063
-    },
-    {
-      "beta": 1.1617397628536215,
-      "margen": 0.33,
-      "g": -0.06802437235990949,
-      "tasa_base": 0.9723960857575403
-    }
+  {
+   "nombre": "C · Se liberan plazas y cae el precio",
+   "prob": 0.15,
+   "margen": 0.26,
+   "crec": {
+    "Grado (Medicina)": [
+     0.02,
+     0.0,
+     -0.01,
+     0.0,
+     0.01
+    ],
+    "Educación continua": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "Soluciones para la práctica médica": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.003498183775823449,
+   "rev5": 735.8364813720609,
+   "mix5": {
+    "Grado (Medicina)": 0.8871875993564636,
+    "Educación continua": 0.07067764859595045,
+    "Soluciones para la práctica médica": 0.04213475204758585
+   },
+   "tasa_base": 0.8938431965545509,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 13.338865626661455,
+   "valor_beta_prop": 13.484402581502678
+  },
+  {
+   "nombre": "D · Maduran los campus y crece lo digital",
+   "prob": 0.1,
+   "margen": 0.35,
+   "crec": {
+    "Grado (Medicina)": [
+     0.09,
+     0.08,
+     0.07,
+     0.06,
+     0.06
+    ],
+    "Educación continua": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
+    ],
+    "Soluciones para la práctica médica": [
+     0.12,
+     0.12,
+     0.1,
+     0.1,
+     0.08
+    ]
+   },
+   "cagr": 0.07397231062429022,
+   "rev5": 1033.1509603492864,
+   "mix5": {
+    "Grado (Medicina)": 0.8768433570948503,
+    "Educación continua": 0.07396366136970996,
+    "Soluciones para la práctica médica": 0.049192981535439724
+   },
+   "tasa_base": 0.5954673074787761,
+   "roic_terminal_usado": 0.148,
+   "valor_beta_hoja": 30.245205620725542,
+   "valor_beta_prop": 30.56290244065207
+  }
+ ],
+ "valor_esperado_beta_hoja": 22.951667886519047,
+ "valor_esperado_beta_prop": 23.1954205642469,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.2013957951411405,
+   "ke": 0.13986231178384562,
+   "wacc": 0.11219548370722277,
+   "dcf_base": 25.288539651736855
+  },
+  {
+   "enfoque": "Bottom-up del sector (Education, reapalancada)",
+   "beta": 1.1617397628536215,
+   "ke": 0.13695552461717048,
+   "wacc": 0.11050725497303547,
+   "dcf_base": 25.556069405404237
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.012000000000000004,
+   0.032,
+   0.052000000000000005,
+   0.07200000000000001,
+   0.092
   ],
-  "ingresos_ltm": 723.1
+  "m": [
+   0.29000000000000004,
+   0.31,
+   0.33,
+   0.35000000000000003,
+   0.37
+  ],
+  "v": [
+   [
+    17.529700003317423,
+    18.88123735565253,
+    20.232774707987655,
+    21.584312060322763,
+    22.935849412657877
+   ],
+   [
+    19.57739070082706,
+    21.103320225806883,
+    22.629249750786713,
+    24.155179275766535,
+    25.681108800746344
+   ],
+   [
+    21.835778540946983,
+    23.556131302961326,
+    25.276484064975683,
+    26.996836826990027,
+    28.717189589004366
+   ],
+   [
+    24.325315062821808,
+    26.262110172010072,
+    28.198905281198336,
+    30.135700390386596,
+    32.072495499574856
+   ],
+   [
+    27.068124535225866,
+    29.24553408709603,
+    31.4229436389662,
+    33.600353190836366,
+    35.777762742706535
+   ]
+  ],
+  "referencia_constante": 25.276484064975683,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.2013957951411405,
+   "margen": 0.26,
+   "g": -0.029415281300054108,
+   "tasa_base": 0.9469140856580358
+  },
+  {
+   "beta": 1.2013957951411405,
+   "margen": 0.3,
+   "g": -0.056461629505055344,
+   "tasa_base": 0.9647646754733367
+  },
+  {
+   "beta": 1.2013957951411405,
+   "margen": 0.33,
+   "g": -0.07358540621917203,
+   "tasa_base": 0.9760663681046537
+  },
+  {
+   "beta": 1.1617397628536215,
+   "margen": 0.26,
+   "g": -0.031349805822452434,
+   "tasa_base": 0.9481908718428187
+  },
+  {
+   "beta": 1.1617397628536215,
+   "margen": 0.3,
+   "g": -0.058293626611611804,
+   "tasa_base": 0.9659737935636639
+  },
+  {
+   "beta": 1.1617397628536215,
+   "margen": 0.33,
+   "g": -0.07535723186894333,
+   "tasa_base": 0.9770928802859253
+  }
+ ],
+ "ingresos_ltm": 723.1
 }

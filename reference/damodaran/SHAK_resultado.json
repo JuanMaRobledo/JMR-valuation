@@ -1,296 +1,320 @@
 {
-  "ticker": "SHAK",
-  "fecha": "2026-09-30",
-  "precio": 59.37,
-  "dcf_base": 20.934031523657257,
-  "g_ref": 0.114,
-  "m_base": 0.08,
-  "s2c": 1.4,
-  "wacc": 0.11518913096242647,
-  "beta_hoja": 1.6,
-  "beta_bu": 0.8323274525396384,
-  "beta_prop": 0.8323274525396384,
-  "industria": "Restaurant/Dining",
-  "bu_sector": 0.78,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": "$1,250-2,000 Mn",
-    "<(25)": 0.3,
-    "(25)-(20)": 0.2,
-    "(20)-(15)": 0.4,
-    "(15)-(10)": 1.0,
-    "(10)-(5)": 3.1,
-    "(5)-0": 10.4,
-    "0-5": 29.6,
-    "5-10": 27.0,
-    "10-15": 13.6,
-    "15-20": 6.2,
-    "20-25": 3.4,
-    "25-30": 2.1,
-    "30-35": 0.9,
-    "35-40": 0.6,
-    "40-45": 0.4,
-    ">45": 0.7,
-    "Mean": 7.2,
-    "Median": 5.7,
-    "StDev": 10.1,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+ "ticker": "SHAK",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.09,
+  "growthY1Base": 0.13,
+  "growthY1Opt": 0.16,
+  "growthCons": 0.09,
+  "growthBase": 0.11,
+  "growthOpt": 0.16,
+  "marginY1Cons": 0.045,
+  "marginY1Base": 0.045,
+  "marginY1Opt": 0.045,
+  "marginCons": 0.06,
+  "marginBase": 0.08,
+  "marginOpt": 0.1,
+  "salesToCapital2": 1.6,
+  "wacc": 0.11512370816506332,
+  "costoPatrimonio": 0.12126,
+  "taxEffective": 0.3343,
+  "convergenceYear": 5,
+  "terminalWacc": 0.09,
+  "roicTerminal": 0,
+  "salesToCapital": 1.4
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 20.943693087663004,
+ "precio": 59.34,
+ "dcf_base": 20.943693087662993,
+ "g_ref": 0.114,
+ "m_base": 0.08,
+ "s2c": 1.4,
+ "wacc": 0.11512370816506332,
+ "beta_hoja": 1.6,
+ "beta_bu": 0.8333172867645702,
+ "beta_prop": 0.8333172867645702,
+ "industria": "Restaurant/Dining",
+ "bu_sector": 0.78,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": "$1,250-2,000 Mn",
+  "<(25)": 0.3,
+  "(25)-(20)": 0.2,
+  "(20)-(15)": 0.4,
+  "(15)-(10)": 1.0,
+  "(10)-(5)": 3.1,
+  "(5)-0": 10.4,
+  "0-5": 29.6,
+  "5-10": 27.0,
+  "10-15": 13.6,
+  "15-20": 6.2,
+  "20-25": 3.4,
+  "25-30": 2.1,
+  "30-35": 0.9,
+  "35-40": 0.6,
+  "40-45": 0.4,
+  ">45": 0.7,
+  "Mean": 7.2,
+  "Median": 5.7,
+  "StDev": 10.1,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Crece por aperturas y el margen mejora",
+   "prob": 0.45,
+   "margen": 0.08,
+   "crec": {
+    "Shacks propios": [
+     0.13,
+     0.12,
+     0.11,
+     0.1,
+     0.09
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Licencias": [
+     0.12,
+     0.12,
+     0.12,
+     0.12,
+     0.12
+    ]
+   },
+   "cagr": 0.11025587784191715,
+   "rev5": 2618.7320460313604,
+   "mix5": {
+    "Shacks propios": 0.9648033978233693,
+    "Licencias": 0.03519660217663074
+   },
+   "tasa_base": 0.3586182596536473,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 20.995837455280007,
+   "valor_beta_prop": 26.15323057418152
   },
-  "historias": [
-    {
-      "nombre": "A · Crece por aperturas y el margen mejora",
-      "prob": 0.45,
-      "margen": 0.08,
-      "crec": {
-        "Shacks propios": [
-          0.13,
-          0.12,
-          0.11,
-          0.1,
-          0.09
-        ],
-        "Licencias": [
-          0.12,
-          0.12,
-          0.12,
-          0.12,
-          0.12
-        ]
-      },
-      "cagr": 0.11025587784191715,
-      "rev5": 2618.7320460313604,
-      "mix5": {
-        "Shacks propios": 0.9648033978233693,
-        "Licencias": 0.03519660217663074
-      },
-      "tasa_base": 0.3586182596536473,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 20.986270268287605,
-      "valor_beta_prop": 26.15761624174046
-    },
-    {
-      "nombre": "B · Crece, pero el margen no despega",
-      "prob": 0.3,
-      "margen": 0.05,
-      "crec": {
-        "Shacks propios": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Licencias": [
-          0.08,
-          0.08,
-          0.08,
-          0.08,
-          0.08
-        ]
-      },
-      "cagr": 0.07410432031031111,
-      "rev5": 2219.258922416641,
-      "mix5": {
-        "Shacks propios": 0.9653731893829858,
-        "Licencias": 0.03462681061701419
-      },
-      "tasa_base": 0.5543024237629582,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 10.040592325903189,
-      "valor_beta_prop": 12.354273295031799
-    },
-    {
-      "nombre": "C · Economía unitaria de primer nivel",
-      "prob": 0.15,
-      "margen": 0.11,
-      "crec": {
-        "Shacks propios": [
-          0.15,
-          0.14,
-          0.13,
-          0.12,
-          0.11
-        ],
-        "Licencias": [
-          0.15,
-          0.15,
-          0.15,
-          0.15,
-          0.15
-        ]
-      },
-      "cagr": 0.13061194566139522,
-      "rev5": 2867.7646449062504,
-      "mix5": {
-        "Shacks propios": 0.9633184748640037,
-        "Licencias": 0.036681525135996235
-      },
-      "tasa_base": 0.26373550780100496,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 36.37485256387394,
-      "valor_beta_prop": 45.080862326821126
-    },
-    {
-      "nombre": "D · Consumidor débil y aperturas que no rinden",
-      "prob": 0.1,
-      "margen": 0.03,
-      "crec": {
-        "Shacks propios": [
-          0.05,
-          0.03,
-          0.02,
-          0.02,
-          0.02
-        ],
-        "Licencias": [
-          0.03,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ]
-      },
-      "cagr": 0.028004282600283315,
-      "rev5": 1782.17471208589,
-      "mix5": {
-        "Shacks propios": 0.9659797472858722,
-        "Licencias": 0.03402025271412785
-      },
-      "tasa_base": 0.8272146470063229,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 6.957342854712974,
-      "valor_beta_prop": 8.006906505582661
-    }
-  ],
-  "valor_esperado_beta_hoja": 18.607961488552768,
-  "valor_esperado_beta_prop": 23.04002929687418,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.6,
-      "ke": 0.12126,
-      "wacc": 0.11518913096242647,
-      "dcf_base": 20.934031523657257
-    },
-    {
-      "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
-      "beta": 0.8323274525396384,
-      "ke": 0.08702180438326787,
-      "wacc": 0.08376204531599013,
-      "dcf_base": 26.16207265980584
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.07400000000000001,
-      0.094,
-      0.114,
-      0.134,
-      0.154
+  {
+   "nombre": "B · Crece, pero el margen no despega",
+   "prob": 0.3,
+   "margen": 0.05,
+   "crec": {
+    "Shacks propios": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
     ],
-    "m": [
-      0.04,
-      0.06,
-      0.08,
-      0.1,
-      0.12
-    ],
-    "v": [
-      [
-        5.483947591789374,
-        13.112640250604953,
-        20.741332909420528,
-        28.37002556823611,
-        35.99871822705168
-      ],
-      [
-        3.4926383650402917,
-        12.081881974412843,
-        20.6711255837854,
-        29.260369193157956,
-        37.8496128025305
-      ],
-      [
-        1.2514078650407265,
-        10.908026134197824,
-        20.564644403354933,
-        30.221262672512033,
-        39.87788094166912
-      ],
-      [
-        -1.2618562367381032,
-        9.579173051089127,
-        20.420202338916365,
-        31.261231626743594,
-        42.10226091457083
-      ],
-      [
-        -4.070921541542575,
-        8.082582118624194,
-        20.236085778790983,
-        32.38958943895776,
-        44.54309309912453
-      ]
-    ],
-    "referencia_constante": 20.564644403354933,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Licencias": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
+    ]
+   },
+   "cagr": 0.07410432031031111,
+   "rev5": 2219.258922416641,
+   "mix5": {
+    "Shacks propios": 0.9653731893829858,
+    "Licencias": 0.03462681061701419
+   },
+   "tasa_base": 0.5543024237629582,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 10.044869457821695,
+   "valor_beta_prop": 12.352309761491094
   },
-  "inverso": [
-    {
-      "beta": 1.6,
-      "margen": 0.08,
-      "g": null,
-      "tasa_base": null
-    },
-    {
-      "beta": 1.6,
-      "margen": 0.11,
-      "g": 0.3082433809955487,
-      "tasa_base": 0.033037779981869554
-    },
-    {
-      "beta": 1.6,
-      "margen": 0.14,
-      "g": 0.1671576476340585,
-      "tasa_base": 0.16433119843536087
-    },
-    {
-      "beta": 0.8323274525396384,
-      "margen": 0.08,
-      "g": null,
-      "tasa_base": null
-    },
-    {
-      "beta": 0.8323274525396384,
-      "margen": 0.11,
-      "g": 0.2238257827506004,
-      "tasa_base": 0.08245602938925549
-    },
-    {
-      "beta": 0.8323274525396384,
-      "margen": 0.14,
-      "g": 0.10808842964354948,
-      "tasa_base": 0.37032247992483286
-    }
+  {
+   "nombre": "C · Economía unitaria de primer nivel",
+   "prob": 0.15,
+   "margen": 0.11,
+   "crec": {
+    "Shacks propios": [
+     0.15,
+     0.14,
+     0.13,
+     0.12,
+     0.11
+    ],
+    "Licencias": [
+     0.15,
+     0.15,
+     0.15,
+     0.15,
+     0.15
+    ]
+   },
+   "cagr": 0.13061194566139522,
+   "rev5": 2867.7646449062504,
+   "mix5": {
+    "Shacks propios": 0.9633184748640037,
+    "Licencias": 0.036681525135996235
+   },
+   "tasa_base": 0.26373550780100496,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 36.3909853670018,
+   "valor_beta_prop": 45.07348985326825
+  },
+  {
+   "nombre": "D · Consumidor débil y aperturas que no rinden",
+   "prob": 0.1,
+   "margen": 0.03,
+   "crec": {
+    "Shacks propios": [
+     0.05,
+     0.03,
+     0.02,
+     0.02,
+     0.02
+    ],
+    "Licencias": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "cagr": 0.028004282600283315,
+   "rev5": 1782.17471208589,
+   "mix5": {
+    "Shacks propios": 0.9659797472858722,
+    "Licencias": 0.03402025271412785
+   },
+   "tasa_base": 0.8272146470063229,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 6.959301008188124,
+   "valor_beta_prop": 8.006023098397922
+  }
+ ],
+ "valor_esperado_beta_hoja": 18.616165598091595,
+ "valor_esperado_beta_prop": 23.03627247465904,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.6,
+   "ke": 0.12126,
+   "wacc": 0.11512370816506332,
+   "dcf_base": 20.943693087663004
+  },
+  {
+   "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
+   "beta": 0.8333172867645702,
+   "ke": 0.08706595098969983,
+   "wacc": 0.08378581541831168,
+   "dcf_base": 26.157634525506502
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.07400000000000001,
+   0.094,
+   0.114,
+   0.134,
+   0.154
   ],
-  "ingresos_ltm": 1552.3
+  "m": [
+   0.04,
+   0.06,
+   0.08,
+   0.1,
+   0.12
+  ],
+  "v": [
+   [
+    5.486610901134461,
+    13.118172130895072,
+    20.749733360655686,
+    28.381294590416296,
+    36.01285582017691
+   ],
+   [
+    3.495140191533775,
+    12.087627373861828,
+    20.68011455618989,
+    29.272601738517942,
+    37.86508892084599
+   ],
+   [
+    1.2537058644883352,
+    10.913985353262047,
+    20.574264842035763,
+    30.234544330809477,
+    39.89482381958318
+   ],
+   [
+    -1.259809544829216,
+    9.585345382937714,
+    20.430500310704648,
+    31.275655238471572,
+    42.120810166238506
+   ],
+   [
+    -4.06917923105583,
+    8.088965723728641,
+    20.24711067851314,
+    32.40525563329761,
+    44.56340058808207
+   ]
+  ],
+  "referencia_constante": 20.574264842035763,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.6,
+   "margen": 0.08,
+   "g": null,
+   "tasa_base": null
+  },
+  {
+   "beta": 1.6,
+   "margen": 0.11,
+   "g": 0.30789895996372885,
+   "tasa_base": 0.03318243681523389
+  },
+  {
+   "beta": 1.6,
+   "margen": 0.14,
+   "g": 0.16688784955381253,
+   "tasa_base": 0.16506504921362994
+  },
+  {
+   "beta": 0.8333172867645702,
+   "margen": 0.08,
+   "g": null,
+   "tasa_base": null
+  },
+  {
+   "beta": 0.8333172867645702,
+   "margen": 0.11,
+   "g": 0.22372529800516489,
+   "tasa_base": 0.08258063047359554
+  },
+  {
+   "beta": 0.8333172867645702,
+   "margen": 0.14,
+   "g": 0.10798893622707062,
+   "tasa_base": 0.37085974437381863
+  }
+ ],
+ "ingresos_ltm": 1552.3
 }

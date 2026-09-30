@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$466,38 en el escenario Base (rango US$363,72–US$552,48). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$466,16 (−0% frente al DCF). Con los pesos de la categoría «Software» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$466,29. El valor intrínseco es el DCF: US$466,38 frente a un precio de referencia de US$509,22 (−8%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$466,38 en el escenario Base (rango US$363,72–US$552,48). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$466,16 (−0% frente al DCF). Con los pesos de la categoría «Software» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$466,29. El valor intrínseco es el DCF: US$466,38 frente a un precio de referencia de US$518,46 (−10%).
 
-Revisión del 30-sep-2026: antes los múltiplos (US$437,36 hoy) quedaban 33% por encima del DCF (US$329,42). El DCF suponía que después del año 10 Microsoft gana solo su costo de capital, algo incoherente con sus efectos de red y costos de cambio. Ahora usa un ROIC terminal de 25,9% (el actual, menor que el de Software) y da US$466,38. Los múltiplos dejan fuera el justificado y dan US$466,16, prácticamente igual al DCF. La recta de peers por crecimiento no se usa porque su R² va de 0 a 0,6. El precio (US$509,22) queda 9% por encima de ambos: el mercado paga por más crecimiento en Azure y en IA del que supone el escenario Base.
+Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$466,38 por acción y los múltiplos, US$466,16 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$363,72 | US$344,10 | US$355,87 | US$236,42 | US$473,11 |
-| Base | US$466,38 | US$466,16 | US$466,29 | US$303,15 | US$631,42 |
-| Optimista | US$552,48 | US$607,66 | US$574,55 | US$359,11 | US$786,73 |
+| Conservador | US$363,72 | US$344,10 | US$355,87 | US$268,10 | US$473,11 |
+| Base | US$466,38 | US$466,16 | US$466,29 | US$268,10 | US$631,42 |
+| Optimista | US$552,48 | US$607,66 | US$574,55 | US$268,10 | US$786,73 |
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - Valoración MSFT - 2026-09-16](https://docs.google.com/spreadsheets/d/1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY/edit).
-- Análisis del 16 de sept de 2026. Precio de referencia de la hoja: US$509,22.
+- Análisis del 16 de sept de 2026. Precio de referencia de la hoja: US$518,46.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -104,11 +104,11 @@ Múltiplos consolidados hoy: US$344,10 / US$466,16 / US$607,66 · DCF hoy: US$36
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para MSFT la diferencia es de −0% (múltiplos por debajo del DCF). Revisión del 30-sep-2026: antes los múltiplos (US$437,36 hoy) quedaban 33% por encima del DCF (US$329,42). El DCF suponía que después del año 10 Microsoft gana solo su costo de capital, algo incoherente con sus efectos de red y costos de cambio. Ahora usa un ROIC terminal de 25,9% (el actual, menor que el de Software) y da US$466,38. Los múltiplos dejan fuera el justificado y dan US$466,16, prácticamente igual al DCF. La recta de peers por crecimiento no se usa porque su R² va de 0 a 0,6. El precio (US$509,22) queda 9% por encima de ambos: el mercado paga por más crecimiento en Azure y en IA del que supone el escenario Base.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para MSFT la diferencia es de −0% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$466,38 por acción y los múltiplos, US$466,16 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$509,22 supone que los ingresos crecen 14,7% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,9% (+1,8 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$518,41 supone que los ingresos crecen 14,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,9% (+2,0 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$624,73 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 10,2%, WACC de los años 4-10 9,4%, ROE de FY+3 40,6% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -129,15 +129,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$466,29 | — |
 | Múltiplos Base +20% | US$502,74 | +7,8% |
 | Múltiplos Base −20% | US$429,84 | −7,8% |
-| Crecimiento años 1-5 +2 pp | US$494,78 | +6,1% |
-| Crecimiento años 1-5 −2 pp | US$440,50 | −5,5% |
-| Margen objetivo +3 pp | US$486,45 | +4,3% |
-| Margen objetivo −3 pp | US$446,14 | −4,3% |
-| WACC +1 pp | US$450,02 | −3,5% |
-| WACC −1 pp | US$483,75 | +3,7% |
+| Crecimiento años 2-5 +2 pp | US$489,76 | +5,0% |
+| Crecimiento años 2-5 −2 pp | US$444,84 | −4,6% |
+| Margen objetivo +3 pp | US$484,73 | +4,0% |
+| Margen objetivo −3 pp | US$447,85 | −4,0% |
+| WACC +1 pp | US$450,48 | −3,4% |
+| WACC −1 pp | US$483,25 | +3,6% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 1-5 +2 pp.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 2-5 +2 pp.
 
 ## 8. Log de cambios en la hoja
 

@@ -1,297 +1,321 @@
 {
-  "ticker": "NVDA",
-  "fecha": "2026-09-30",
-  "precio": 230.8,
-  "dcf_base": 259.2938434194763,
-  "g_ref": 0.21200000000000002,
-  "m_base": 0.58,
-  "s2c": 3,
-  "wacc": 0.11692810079771021,
-  "beta_hoja": 1.51,
-  "beta_bu": 1.5059412377601338,
-  "beta_prop": 1.5059412377601338,
-  "industria": "Semiconductor",
-  "bu_sector": 1.5,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": ">$50,000 Mn",
-    "<(25)": 1.6,
-    "(25)-(20)": 1.0,
-    "(20)-(15)": 1.5,
-    "(15)-(10)": 2.7,
-    "(10)-(5)": 9.3,
-    "(5)-0": 22.8,
-    "0-5": 34.0,
-    "5-10": 16.9,
-    "10-15": 7.0,
-    "15-20": 2.3,
-    "20-25": 0.6,
-    "25-30": 0.3,
-    "30-35": 0.1,
-    "35-40": 0.0,
-    "40-45": 0.0,
-    ">45": 0.0,
-    "Mean": 1.0,
-    "Median": 1.5,
-    "StDev": 8.3,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+ "ticker": "NVDA",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.32527477968115653,
+  "growthY1Base": 0.5,
+  "growthY1Opt": 0.5604396474898504,
+  "growthCons": 0.06,
+  "growthBase": 0.14,
+  "growthOpt": 0.22,
+  "marginY1Cons": 0.6,
+  "marginY1Base": 0.6,
+  "marginY1Opt": 0.6,
+  "marginCons": 0.5,
+  "marginBase": 0.58,
+  "marginOpt": 0.65,
+  "salesToCapital2": 2.5,
+  "wacc": 0.11692474816158688,
+  "costoPatrimonio": 0.117246,
+  "taxEffective": 0.1605,
+  "convergenceYear": 5,
+  "terminalWacc": 0.09,
+  "roicTerminal": 0.272,
+  "salesToCapital": 3
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 178.3807577883633,
+ "precio": 230.67,
+ "dcf_base": 259.29877349243725,
+ "g_ref": 0.21200000000000002,
+ "m_base": 0.58,
+ "s2c": 3,
+ "wacc": 0.11692474816158688,
+ "beta_hoja": 1.51,
+ "beta_bu": 1.5059917062830108,
+ "beta_prop": 1.5059917062830108,
+ "industria": "Semiconductor",
+ "bu_sector": 1.5,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": ">$50,000 Mn",
+  "<(25)": 1.6,
+  "(25)-(20)": 1.0,
+  "(20)-(15)": 1.5,
+  "(15)-(10)": 2.7,
+  "(10)-(5)": 9.3,
+  "(5)-0": 22.8,
+  "0-5": 34.0,
+  "5-10": 16.9,
+  "10-15": 7.0,
+  "15-20": 2.3,
+  "20-25": 0.6,
+  "25-30": 0.3,
+  "30-35": 0.1,
+  "35-40": 0.0,
+  "40-45": 0.0,
+  ">45": 0.0,
+  "Mean": 1.0,
+  "Median": 1.5,
+  "StDev": 8.3,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Ciclo de IA largo que desacelera con la escala",
+   "prob": 0.4,
+   "margen": 0.58,
+   "crec": {
+    "Data Center": [
+     0.5,
+     0.2,
+     0.1,
+     0.08,
+     0.06
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Gaming, visualización y automotriz": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
+    ]
+   },
+   "cagr": 0.1705496611450923,
+   "rev5": 665807.74813872,
+   "mix5": {
+    "Data Center": 0.946434933750141,
+    "Gaming, visualización y automotriz": 0.053565066249859065
+   },
+   "tasa_base": 0.039230474396870794,
+   "roic_terminal_usado": 0.272,
+   "valor_beta_hoja": 204.91131840729753,
+   "valor_beta_prop": 205.11294853646135
   },
-  "historias": [
-    {
-      "nombre": "A · Ciclo de IA largo que desacelera con la escala",
-      "prob": 0.4,
-      "margen": 0.58,
-      "crec": {
-        "Data Center": [
-          0.5,
-          0.2,
-          0.1,
-          0.08,
-          0.06
-        ],
-        "Gaming, visualización y automotriz": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ]
-      },
-      "cagr": 0.1705496611450923,
-      "rev5": 665807.74813872,
-      "mix5": {
-        "Data Center": 0.946434933750141,
-        "Gaming, visualización y automotriz": 0.053565066249859065
-      },
-      "tasa_base": 0.039230474396870794,
-      "roic_terminal_usado": 0.272,
-      "valor_beta_hoja": 204.9075213960198,
-      "valor_beta_prop": 205.11169532116023
-    },
-    {
-      "nombre": "B · Ciclo de semiconductores: el capex se corrige",
-      "prob": 0.3,
-      "margen": 0.5,
-      "crec": {
-        "Data Center": [
-          0.35,
-          -0.1,
-          0,
-          0.08,
-          0.08
-        ],
-        "Gaming, visualización y automotriz": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      },
-      "cagr": 0.07045919147125179,
-      "rev5": 425843.6786156251,
-      "mix5": {
-        "Data Center": 0.9251632647941914,
-        "Gaming, visualización y automotriz": 0.07483673520580864
-      },
-      "tasa_base": 0.30287749799548785,
-      "roic_terminal_usado": 0.272,
-      "valor_beta_hoja": 121.19869702157062,
-      "valor_beta_prop": 121.3154368137233
-    },
-    {
-      "nombre": "C · La IA es infraestructura permanente",
-      "prob": 0.2,
-      "margen": 0.6,
-      "crec": {
-        "Data Center": [
-          0.6,
-          0.3,
-          0.2,
-          0.15,
-          0.12
-        ],
-        "Gaming, visualización y automotriz": [
-          0.12,
-          0.12,
-          0.1,
-          0.1,
-          0.08
-        ]
-      },
-      "cagr": 0.2527107051893509,
-      "rev5": 934659.8145024001,
-      "mix5": {
-        "Data Center": 0.9562064508741165,
-        "Gaming, visualización y automotriz": 0.04379354912588349
-      },
-      "tasa_base": 0.006674715377277891,
-      "roic_terminal_usado": 0.272,
-      "valor_beta_hoja": 313.46709186564243,
-      "valor_beta_prop": 313.7893251767999
-    },
-    {
-      "nombre": "D · Chips propios de los clientes y corrección fuerte",
-      "prob": 0.1,
-      "margen": 0.4,
-      "crec": {
-        "Data Center": [
-          0.25,
-          -0.25,
-          -0.1,
-          0.05,
-          0.05
-        ],
-        "Gaming, visualización y automotriz": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": -0.01314417112383326,
-      "rev5": 283575.15625,
-      "mix5": {
-        "Data Center": 0.9119457418971272,
-        "Gaming, visualización y automotriz": 0.08805425810287286
-      },
-      "tasa_base": 0.7859374203246796,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 50.60732593904484,
-      "valor_beta_prop": 50.648171424017114
-    }
-  ],
-  "valor_esperado_beta_hoja": 186.07676863191207,
-  "valor_esperado_beta_prop": 186.26199135034278,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.51,
-      "ke": 0.117246,
-      "wacc": 0.11692810079771021,
-      "dcf_base": 259.2938434194763
-    },
-    {
-      "enfoque": "Bottom-up del sector (Semiconductor, reapalancada)",
-      "beta": 1.5059412377601338,
-      "ke": 0.11706497920410197,
-      "wacc": 0.11674792955750708,
-      "dcf_base": 259.55894613891576
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.17200000000000001,
-      0.19200000000000003,
-      0.21200000000000002,
-      0.232,
-      0.252
+  {
+   "nombre": "B · Ciclo de semiconductores: el capex se corrige",
+   "prob": 0.3,
+   "margen": 0.5,
+   "crec": {
+    "Data Center": [
+     0.35,
+     -0.1,
+     0,
+     0.08,
+     0.08
     ],
-    "m": [
-      0.5399999999999999,
-      0.5599999999999999,
-      0.58,
-      0.6,
-      0.62
-    ],
-    "v": [
-      [
-        218.9207609447347,
-        226.6917756745663,
-        234.46279040439794,
-        242.2338051342295,
-        250.00481986406118
-      ],
-      [
-        243.57681074183768,
-        252.2856961739947,
-        260.99458160615177,
-        269.7034670383089,
-        278.41235247046586
-      ],
-      [
-        270.7917009641139,
-        280.53753782057794,
-        290.28337467704193,
-        300.02921153350593,
-        309.7750483899699
-      ],
-      [
-        300.7958132186904,
-        311.68663485080475,
-        322.57745648291916,
-        333.4682781150335,
-        344.359099747148
-      ],
-      [
-        333.8368440579875,
-        345.9903099987714,
-        358.14377593955527,
-        370.2972418803391,
-        382.4507078211229
-      ]
-    ],
-    "referencia_constante": 290.28337467704193,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Gaming, visualización y automotriz": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ]
+   },
+   "cagr": 0.07045919147125179,
+   "rev5": 425843.6786156251,
+   "mix5": {
+    "Data Center": 0.9251632647941914,
+    "Gaming, visualización y automotriz": 0.07483673520580864
+   },
+   "tasa_base": 0.30287749799548785,
+   "roic_terminal_usado": 0.272,
+   "valor_beta_hoja": 121.20086803153211,
+   "valor_beta_prop": 121.3161533579539
   },
-  "inverso": [
-    {
-      "beta": 1.51,
-      "margen": 0.5,
-      "g": 0.19584273725622314,
-      "tasa_base": 0.02341234086213735
-    },
-    {
-      "beta": 1.51,
-      "margen": 0.58,
-      "g": 0.16907535750156938,
-      "tasa_base": 0.04129449949780286
-    },
-    {
-      "beta": 1.51,
-      "margen": 0.62,
-      "g": 0.15724812591848913,
-      "tasa_base": 0.05785262371411519
-    },
-    {
-      "beta": 1.5059412377601338,
-      "margen": 0.5,
-      "g": 0.19564662165220248,
-      "tasa_base": 0.023502554039986853
-    },
-    {
-      "beta": 1.5059412377601338,
-      "margen": 0.58,
-      "g": 0.1688837067926353,
-      "tasa_base": 0.04156281049031054
-    },
-    {
-      "beta": 1.5059412377601338,
-      "margen": 0.62,
-      "g": 0.15705842889199217,
-      "tasa_base": 0.05811819955121094
-    }
+  {
+   "nombre": "C · La IA es infraestructura permanente",
+   "prob": 0.2,
+   "margen": 0.6,
+   "crec": {
+    "Data Center": [
+     0.6,
+     0.3,
+     0.2,
+     0.15,
+     0.12
+    ],
+    "Gaming, visualización y automotriz": [
+     0.12,
+     0.12,
+     0.1,
+     0.1,
+     0.08
+    ]
+   },
+   "cagr": 0.2527107051893509,
+   "rev5": 934659.8145024001,
+   "mix5": {
+    "Data Center": 0.9562064508741165,
+    "Gaming, visualización y automotriz": 0.04379354912588349
+   },
+   "tasa_base": 0.006674715377277891,
+   "roic_terminal_usado": 0.272,
+   "valor_beta_hoja": 313.4730843873144,
+   "valor_beta_prop": 313.79130304949246
+  },
+  {
+   "nombre": "D · Chips propios de los clientes y corrección fuerte",
+   "prob": 0.1,
+   "margen": 0.4,
+   "crec": {
+    "Data Center": [
+     0.25,
+     -0.25,
+     -0.1,
+     0.05,
+     0.05
+    ],
+    "Gaming, visualización y automotriz": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": -0.01314417112383326,
+   "rev5": 283575.15625,
+   "mix5": {
+    "Data Center": 0.9119457418971272,
+    "Gaming, visualización y automotriz": 0.08805425810287286
+   },
+   "tasa_base": 0.7859374203246796,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 50.60808556575589,
+   "valor_beta_prop": 50.64842212414012
+  }
+ ],
+ "valor_esperado_beta_hoja": 186.0802132064171,
+ "valor_esperado_beta_prop": 186.26312824428322,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.51,
+   "ke": 0.117246,
+   "wacc": 0.11692474816158688,
+   "dcf_base": 259.29877349243725
+  },
+  {
+   "enfoque": "Bottom-up del sector (Semiconductor, reapalancada)",
+   "beta": 1.5059917062830108,
+   "ke": 0.11706723010022228,
+   "wacc": 0.11674682434691888,
+   "dcf_base": 259.56057334327585
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.17200000000000001,
+   0.19200000000000003,
+   0.21200000000000002,
+   0.232,
+   0.252
   ],
-  "ingresos_ltm": 302970
+  "m": [
+   0.5399999999999999,
+   0.5599999999999999,
+   0.58,
+   0.6,
+   0.62
+  ],
+  "v": [
+   [
+    218.9249588706859,
+    226.69612899123885,
+    234.46729911179182,
+    242.23846923234476,
+    250.00963935289772
+   ],
+   [
+    243.58151388276573,
+    252.2905738679584,
+    260.99963385315107,
+    269.7086938383437,
+    278.4177538235363
+   ],
+   [
+    270.79696280510336,
+    280.54299542710805,
+    290.28902804911274,
+    300.0350606711174,
+    309.7810932931221
+   ],
+   [
+    300.8016920887962,
+    311.6927329357511,
+    322.5837737827062,
+    333.4748146296611,
+    344.36585547661616
+   ],
+   [
+    333.84340349521824,
+    345.9971145376415,
+    358.15082558006463,
+    370.30453662248783,
+    382.458247664911
+   ]
+  ],
+  "referencia_constante": 290.28902804911274,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.51,
+   "margen": 0.5,
+   "g": 0.19573243137846225,
+   "tasa_base": 0.023463081565907356
+  },
+  {
+   "beta": 1.51,
+   "margen": 0.58,
+   "g": 0.16896719838988072,
+   "tasa_base": 0.04144592225416698
+  },
+  {
+   "beta": 1.51,
+   "margen": 0.62,
+   "g": 0.15714090644187395,
+   "tasa_base": 0.058002730981376455
+  },
+  {
+   "beta": 1.5059917062830108,
+   "margen": 0.5,
+   "g": 0.19553877665242647,
+   "tasa_base": 0.023552162739883812
+  },
+  {
+   "beta": 1.5059917062830108,
+   "margen": 0.58,
+   "g": 0.16877795266008688,
+   "tasa_base": 0.04171086627587834
+  },
+  {
+   "beta": 1.5059917062830108,
+   "margen": 0.62,
+   "g": 0.15695358993468717,
+   "tasa_base": 0.058264974091437945
+  }
+ ],
+ "ingresos_ltm": 302970
 }

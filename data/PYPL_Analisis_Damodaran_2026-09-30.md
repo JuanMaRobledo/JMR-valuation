@@ -49,7 +49,7 @@ Para empresas de más de US$25.000 millones, crecer 4,9% anual cinco años (hist
 
 **Márgenes.** El margen operativo fue 16,7-18,3% y la hoja supone ~17,3% el próximo año y 19,5% de objetivo. La mezcla manda: cada punto que el checkout de marca pierde frente a Braintree baja el margen, porque Braintree cobra mucho menos por transacción. Las historias van de 13% a 22%.
 
-**Reinversión y retorno.** Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción. Moat estrecho (red de dos lados de comercios y usuarios, una fuente fuerte, pero con erosión visible hoy: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas): el ROIC después del año 10 es 13,4%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (17,8%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
+**Reinversión y retorno.** Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción. Ventaja que se desvanece: red de dos lados de comercios y usuarios, pero el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas. El ROIC después del año 10 es 13,4%, el punto medio entre el costo de capital terminal (9,0%) y su ROIC actual (17,8%), porque Damodaran no publica un promedio útil para su industria.
 
 **Riesgo.** La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$101,16 a US$107,30.
 
@@ -58,6 +58,27 @@ Para empresas de más de US$25.000 millones, crecer 4,9% anual cinco años (hist
 | Hoja (regresión o la cargada en el libro) | 1,29 | 10,5% | 9,2% | US$101,16 |
 | Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,40 | 6,7% | 6,2% | US$119,48 |
 | Propuesta (sector ajustado por riesgo propio) | 0,97 | 9,2% | 8,1% | US$107,30 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 2,0% | 4,0% | 5,2% |
+| Crecimiento años 2–5 | 2,0% | 3,5% | 5,2% |
+| Margen año 1 (base ajustada del modelo) | 17,3% | 17,3% | 17,3% |
+| Margen objetivo | 17,3% | 19,5% | 23,9% |
+
+Ventas/capital: 2,6x en años 1–5 y 2,6x en 6–10. WACC: 9,2%. Ke: 10,5%. Impuesto efectivo: 16,4%. Convergencia: 6 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja que se desvanece | 17,8% | No disponible | 9,0% | 13,4% | US$101,16 | US$84,77 |
+
+Fuentes de ventaja: Red de dos lados (comercios y usuarios) y marca en el checkout. Evidencia: ROIC 13-25% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -70,17 +91,19 @@ Para empresas de más de US$25.000 millones, crecer 4,9% anual cinco años (hist
 | **D · Pierde el checkout y compite por precio** | 10% | Checkout de marca: -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree): 0%, 0%, 0%, 0%, 0%; Venmo y P2P: 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado: 0%, 0%, 0%, 0%, 0% | -1,1% | 13% | 2,6 | = costo de capital | US$50,30 | US$52,90 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$91,82** | **US$97,33** |
 
-A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,29; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 15,5% | 17,5% | 19,5% | 21,5% | 23,5% |
 |---|---:|---:|---:|---:|---:|
-| -0,4% | 68,71 | 75,96 | 83,21 | 90,46 | 97,71 |
-| 1,6% | 75,24 | 83,48 | 91,71 | 99,94 | 108,18 |
-| 3,6% | 82,49 | 91,82 | 101,16 | 110,49 | 119,83 |
-| 5,6% | 90,52 | 101,08 | 111,65 | 122,21 | 132,78 |
-| 7,6% | 99,41 | 111,35 | 123,29 | 135,22 | 147,16 |
+| -0,4% | 68,72 | 75,97 | 83,23 | 90,48 | 97,73 |
+| 1,6% | 75,26 | 83,49 | 91,73 | 99,96 | 108,20 |
+| 3,6% | 82,50 | 91,84 | 101,17 | 110,51 | 119,85 |
+| 5,6% | 90,53 | 101,10 | 111,67 | 122,23 | 132,80 |
+| 7,6% | 99,43 | 111,37 | 123,31 | 135,25 | 147,18 |
 
 
 ### Pre-mortem
@@ -109,16 +132,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$54,28**.
+Precio de referencia de la valoración guardada: **US$52,68**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 15% | Margen 18% | Margen 20% |
 |---|---:|---:|---:|
-| Beta 1,29 | -5,0% (90% de las empresas) | -7,6% (94% de las empresas) | -9,4% (95% de las empresas) |
-| Beta 0,97 | -6,2% (92% de las empresas) | -8,8% (95% de las empresas) | ≤ −10% (el precio supone una caída mayor) |
+| Beta 1,29 | -5,9% (91% de las empresas) | -8,4% (94% de las empresas) | ninguno entre −10% y 60% |
+| Beta 0,97 | -7,1% (93% de las empresas) | -9,5% (95% de las empresas) | ninguno entre −10% y 60% |
 
-Frente al valor esperado de las historias (US$91,82 con la beta de la hoja; US$97,33 con la propuesta), el precio está por debajo en 41% y por debajo en 44%, respectivamente. El precio (US$54,28) está 41-44% por debajo del valor esperado (US$91,82 con la beta de la hoja; US$97,33 con la bottom-up). El DCF inverso muestra que el precio supone ingresos cayendo 2-8% al año durante cinco años con márgenes de 15-19,5%: el mercado valora algo entre la historia D (US$50,30) y la B (US$65,53). ¿Qué sabe el mercado que yo no? Probablemente teme que la pérdida del checkout se acelere y que el crecimiento de Braintree y Venmo no compense. Si esa historia no es la más probable, el precio parece bajo; la evidencia a vigilar es el checkout de marca.
+Frente al valor esperado de las historias (US$91,82 con la beta de la hoja; US$97,33 con la propuesta), el precio está por debajo en 43% y por debajo en 46%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$12,53 en el escenario Base (rango US$9,47–US$15,69). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$8,36 (−33% frente al DCF). Con los pesos de la categoría «Financiera» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$10,03. El valor intrínseco es el DCF: US$12,53 frente a un precio de referencia de US$8,90 (+41%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$11,92 en el escenario Base (rango US$11,18–US$12,76). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$8,36 (−30% frente al DCF). Con los pesos de la categoría «Financiera» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$9,78. El valor intrínseco es el DCF: US$11,92 frente a un precio de referencia de US$8,96 (+33%).
 
-Los múltiplos (US$8,36 hoy) quedan 33% por debajo del DCF (US$12,53). La diferencia viene casi toda de P/FCFE (US$2,8, peso 20%): en la proyección Base el crédito que otorga PagBank absorbe caja (cambio en capital de trabajo de ~US$215-240 millones al año), y el FCFE de FY+3 queda en US$0,41 por acción frente a una utilidad de US$1,77. P/E, el método más confiable para una financiera, da US$11,9, cerca del DCF. Queda a tu decisión: revisar el supuesto de capital de trabajo o mover el peso de P/FCFE a P/E en la categoría Financiera (el prompt v3 pide hacerlo en la tabla compartida y registrarlo).
+Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$11,92 por acción y los múltiplos, US$8,36 hoy: 30% por debajo del DCF, fuera del rango de ±25%. La diferencia viene de P/FCFE: en la proyección Base el crédito de PagBank absorbe caja y el FCFE de FY+3 queda muy por debajo de la utilidad. P/E, el método más confiable para una financiera, queda cerca del DCF.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$9,47 | US$6,42 | US$7,64 | US$6,15 | US$11,00 |
-| Base | US$12,53 | US$8,36 | US$10,03 | US$8,15 | US$15,07 |
-| Optimista | US$15,69 | US$10,01 | US$12,28 | US$10,20 | US$19,25 |
+| Conservador | US$11,18 | US$6,42 | US$8,33 | US$7,54 | US$12,03 |
+| Base | US$11,92 | US$8,36 | US$9,78 | US$7,54 | US$14,70 |
+| Optimista | US$12,76 | US$10,01 | US$11,11 | US$7,54 | US$17,48 |
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - PAGS](https://docs.google.com/spreadsheets/d/1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY/edit).
-- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$8,90.
+- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$8,96.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -40,7 +40,7 @@ Los múltiplos (US$8,36 hoy) quedan 33% por debajo del DCF (US$12,53). La difere
 | Margen EBIT objetivo | 11,0% | 14,0% | 16,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 1,40 / 1,40 | — | Input B32/B33 |
-| DCF por acción hoy | US$9,47 | US$12,53 | US$15,69 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$11,18 | US$11,92 | US$12,76 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,30, ERP 7,47%, Ke 14,70%, costo de la deuda después de impuestos 4,78%, peso del patrimonio 99,5%, WACC inicial 14,65% y terminal 12,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -62,7 +62,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 7,9x: promedio de historia y peers 6,8x, acercado 25% al justificado (11,2x); rango de anclas 6,5x–11,2x. Atípicos excluidos de la historia: Dec '21 (-54,5x: métrica negativa o ~0); Dec '24 (-1,9x: métrica negativa o ~0). Aplicable con cautela: el FCFE proyectado es positivo pero bajo frente a la utilidad porque el crecimiento de la cartera de crédito consume caja. Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 3,3x: promedio de historia y peers 3,7x, acercado 25% al justificado (2,0x); rango de anclas 2,0x–4,3x. Atípicos excluidos de la historia: Dec '24 (-3,1x: métrica negativa o ~0); Dec '21 (51,8x: > 2,5x la mediana (4.1x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$8,36 frente a US$12,53 del DCF (−33%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$8,36 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$8,36 frente a US$11,92 del DCF (−30%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$8,36 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -70,13 +70,13 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$14,28 | US$18,92 | US$23,68 |
+| DCF Damodaran · FCFE | 40% | US$16,88 | US$17,99 | US$19,26 |
 | EV/EBITDA | 0% | US$8,96 | US$11,62 | US$14,47 |
 | EV/FCFF | 0% | US$2,64 | US$2,21 | US$1,74 |
 | P/E | 35% | US$11,02 | US$17,63 | US$24,79 |
 | P/FCFE | 20% | US$4,94 | US$4,48 | US$3,19 |
 | P/OCF | 5% | US$8,77 | US$8,84 | US$9,32 |
-| **Ponderado FY+3** | 100% | US$11,00 | US$15,07 | US$19,25 |
+| **Ponderado FY+3** | 100% | US$12,03 | US$14,70 | US$17,48 |
 
 Valor presente (Ke 14,70%; consolidado por método: Promedio 1-3 años):
 
@@ -98,25 +98,25 @@ Valor presente (Ke 14,70%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$6,12 | US$5,91 | US$5,86 | US$5,96 | OK |
 | P/OCF | Optimista | US$5,34 | US$5,93 | US$6,17 | US$5,81 | OK |
 
-Múltiplos consolidados hoy: US$6,42 / US$8,36 / US$10,01 · DCF hoy: US$9,47 / US$12,53 / US$15,69 · Ponderado hoy: US$7,64 / US$10,03 / US$12,28 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$6,42 / US$8,36 / US$10,01 · DCF hoy: US$11,18 / US$11,92 / US$12,76 · Ponderado hoy: US$8,33 / US$9,78 / US$11,11 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PAGS la diferencia es de −33% (múltiplos por debajo del DCF). Los múltiplos (US$8,36 hoy) quedan 33% por debajo del DCF (US$12,53). La diferencia viene casi toda de P/FCFE (US$2,8, peso 20%): en la proyección Base el crédito que otorga PagBank absorbe caja (cambio en capital de trabajo de ~US$215-240 millones al año), y el FCFE de FY+3 queda en US$0,41 por acción frente a una utilidad de US$1,77. P/E, el método más confiable para una financiera, da US$11,9, cerca del DCF. Queda a tu decisión: revisar el supuesto de capital de trabajo o mover el peso de P/FCFE a P/E en la categoría Financiera (el prompt v3 pide hacerlo en la tabla compartida y registrarlo).
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PAGS la diferencia es de −30% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$11,92 por acción y los múltiplos, US$8,36 hoy: 30% por debajo del DCF, fuera del rango de ±25%. La diferencia viene de P/FCFE: en la proyección Base el crédito de PagBank absorbe caja y el FCFE de FY+3 queda muy por debajo de la utilidad. P/E, el método más confiable para una financiera, queda cerca del DCF.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$8,90 supone que los ingresos crecen -15,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,8% (−21,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$9,02 supone que los ingresos crecen -4,4% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,8% (−10,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$18,92 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 14,7%, WACC de los años 4-10 13,5%, ROE de FY+3 17,9% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$17,99 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 14,7%, WACC de los años 4-10 13,5%, ROE de FY+3 17,9% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 3,0x | — | — | — | — | — | No aplica: PagSeguro es una entidad financiera (PagBank): la deuda es materia prima del negocio, no financiación, y el valor empres |
-| EV/FCFF | 2,5x | — | — | — | — | — | No aplica: Igual que EV/EBITDA: para una financiera el FCFF no se puede separar de la financiación; peso 0%. |
-| P/E | 9,2x | 10,0x | −7% | 8,6% | 9,6% | −1,0 pp | Coherente con el DCF. |
-| P/FCFE | 7,9x | 43,3x | −76% | 1,8% | 12,1% | −10,3 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 76% por debajo del DCF en FY+3. |
-| P/OCF | 3,3x | 7,6x | −53% | 8,8% | 12,1% | −3,3 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 53% por debajo del DCF en FY+3. |
+| EV/EBITDA | 3,0x | — | — | — | — | — | No aplica: peso cero en la categoría financiera. |
+| EV/FCFF | 2,5x | — | — | — | — | — | No aplica: peso cero en la categoría financiera. |
+| P/E | 9,2x | 9,5x | −2% | 8,6% | 9,0% | −0,3 pp | Coherente con el DCF. |
+| P/FCFE | 7,9x | 41,0x | −75% | 1,8% | 12,0% | −10,2 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 75% por debajo del DCF en FY+3. |
+| P/OCF | 3,3x | 7,2x | −51% | 8,8% | 12,0% | −3,1 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 51% por debajo del DCF en FY+3. |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -124,18 +124,18 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$10,03 | — |
-| Múltiplos Base +20% | US$10,96 | +9,3% |
-| Múltiplos Base −20% | US$9,10 | −9,3% |
-| Crecimiento años 1-5 +2 pp | US$10,21 | +1,8% |
-| Crecimiento años 1-5 −2 pp | US$9,86 | −1,7% |
-| Margen objetivo +3 pp | US$11,15 | +11,2% |
-| Margen objetivo −3 pp | US$8,91 | −11,2% |
-| WACC +1 pp | US$9,79 | −2,4% |
-| WACC −1 pp | US$10,28 | +2,5% |
+| Vigente | US$9,78 | — |
+| Múltiplos Base +20% | US$10,71 | +9,5% |
+| Múltiplos Base −20% | US$8,86 | −9,5% |
+| Crecimiento años 2-5 +2 pp | US$9,88 | +0,9% |
+| Crecimiento años 2-5 −2 pp | US$9,69 | −1,0% |
+| Margen objetivo +3 pp | US$9,78 | +0,0% |
+| Margen objetivo −3 pp | US$9,78 | +0,0% |
+| WACC +1 pp | US$9,56 | −2,3% |
+| WACC −1 pp | US$10,03 | +2,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo +3 pp, Margen objetivo −3 pp, Múltiplos Base +20%.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, WACC −1 pp.
 
 ## 8. Log de cambios en la hoja
 

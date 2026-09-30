@@ -49,7 +49,7 @@ Entre las empresas de más de US$25.000 millones, solo ~29% creció 8% anual dur
 
 **Márgenes.** El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado).
 
-**Reinversión y retorno.** Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Moat ancho (costos de cambio y estándar de la industria creativa y documental, con el ROIC en alza (38% → 59%) y sin erosión visible hoy): el ROIC después del año 10 es 29,3%, el menor entre el ROIC actual (36,3%) y el de la industria (29,3%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026).
+**Reinversión y retorno.** Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Ventaja durable: costos de cambio y estándar de la industria creativa y documental, con ROIC en alza (38% → 59%). El ROIC después del año 10 es 29,3%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
 **Riesgo.** La hoja usa una beta de 1,39. La beta bottom-up del sector (Software System & Application, 309 empresas, desapalancada y corregida por caja 1,25) reapalancada con la estructura de Adobe da 1,31, casi igual. El riesgo de Adobe no está en la tasa de descuento sino en los flujos (precio y retención de Creative Cloud), y eso se trata en las historias, no subiendo la beta.
 
@@ -57,6 +57,27 @@ Entre las empresas de más de US$25.000 millones, solo ~29% creció 8% anual dur
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,39 | 11,2% | 10,8% | US$536,48 |
 | Bottom-up del sector (Software (System & Application), reapalancada) | 1,31 | 10,8% | 10,4% | US$547,41 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 6,0% | 12,0% | 16,0% |
+| Crecimiento años 2–5 | 6,0% | 10,0% | 16,0% |
+| Margen año 1 (base ajustada del modelo) | 38,5% | 38,5% | 38,5% |
+| Margen objetivo | 38,7% | 40,0% | 45,0% |
+
+Ventas/capital: 4,0x en años 1–5 y 4,5x en 6–10. WACC: 10,8%. Ke: 11,2%. Impuesto efectivo: 21,5%. Convergencia: 3 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja durable | 36,3% | 29,3% | 9,2% | 29,3% | US$536,48 | US$377,94 |
+
+Fuentes de ventaja: Costos de cambio y estándar de la industria creativa y documental. Evidencia: ROIC 37-60% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -69,17 +90,19 @@ Entre las empresas de más de US$25.000 millones, solo ~29% creció 8% anual dur
 | **D · La IA amplía el mercado de Adobe** | 10% | Creative & Marketing Professionals: 12%, 12%, 11%, 10%, 9%; Business Professionals & Consumers: 16%, 14%, 12%, 11%, 10%; Otros: 0%, 0%, 0%, 0%, 0% | 11,1% | 43% | 4,0 | 29,3% | US$586,71 | US$598,68 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$367,80** | **US$374,99** |
 
-A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias donde la ventaja se erosiona (B y C), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,39; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 36,0% | 38,0% | 40,0% | 42,0% | 44,0% |
 |---|---:|---:|---:|---:|---:|
-| 6,4% | 388,00 | 408,72 | 429,44 | 450,16 | 470,88 |
-| 8,4% | 433,45 | 456,80 | 480,14 | 503,49 | 526,84 |
-| 10,4% | 483,94 | 510,21 | 536,48 | 562,75 | 589,02 |
-| 12,4% | 539,97 | 569,49 | 599,00 | 628,52 | 658,04 |
-| 14,4% | 602,06 | 635,18 | 668,30 | 701,42 | 734,55 |
+| 6,4% | 389,56 | 410,37 | 431,17 | 451,97 | 472,78 |
+| 8,4% | 435,20 | 458,64 | 482,08 | 505,52 | 528,96 |
+| 10,4% | 485,89 | 512,27 | 538,64 | 565,02 | 591,39 |
+| 12,4% | 542,14 | 571,78 | 601,42 | 631,05 | 660,69 |
+| 14,4% | 604,48 | 637,74 | 670,99 | 704,25 | 737,50 |
 
 
 ### Pre-mortem
@@ -109,16 +132,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$231,01**.
+Precio de referencia de la valoración guardada: **US$240,24**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 35% | Margen 38% | Margen 40% |
 |---|---:|---:|---:|
-| Beta 1,39 | -2,4% (85% de las empresas) | -3,6% (88% de las empresas) | -4,4% (89% de las empresas) |
-| Beta 1,31 | -2,6% (86% de las empresas) | -4,0% (88% de las empresas) | -4,8% (89% de las empresas) |
+| Beta 1,39 | -1,8% (83% de las empresas) | -3,1% (87% de las empresas) | -3,9% (88% de las empresas) |
+| Beta 1,31 | -2,1% (84% de las empresas) | -3,4% (87% de las empresas) | -4,3% (89% de las empresas) |
 
-Frente al valor esperado de las historias (US$367,80 con la beta de la hoja; US$374,99 con la propuesta), el precio está por debajo en 37% y por debajo en 38%, respectivamente. El precio (US$231,01) queda por debajo del valor esperado de las historias (US$367,80), entre la historia B (US$268,58) y la C (US$187,86): el mercado le da a la disrupción por IA más peso que el 15% de este análisis. El DCF inverso muestra que el precio se justifica con ingresos cayendo 2-4% al año en los años 1-5 con márgenes de 35-40%. ¿Qué sabe el mercado que yo no? Quizá que Figma y los modelos generales avanzan más rápido de lo que muestran las cifras de Adobe, que siguen creciendo 13%. Si le das a C 35% en vez de 15% (quitándole 20 pp a A), el valor esperado baja a US$311,90; aun así queda por encima del precio. Para que el precio sea justo hay que creer que la erosión ya empezó, algo que los resultados todavía no muestran.
+Frente al valor esperado de las historias (US$367,80 con la beta de la hoja; US$374,99 con la propuesta), el precio está por debajo en 35% y por debajo en 36%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

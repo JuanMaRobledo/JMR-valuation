@@ -13,7 +13,7 @@
    "[Nasdaq: ciberataque y guía 2026 débil](https://www.nasdaq.com/articles/cyberattack-weak-2026-outlook-weigh-bsx-stock-sell)",
    "[TIKR: BSX cae tras el impacto del ciberataque](https://www.tikr.com/blog/boston-scientific-bsx-stock-falls-cyberattack-sales-profit-impact)"
   ],
-  "evaluacion": "Revisión del 30-sep-2026 (tasa de impuestos): la tasa efectiva de los años 1-5 pasa de 5% (LTM, con beneficios fiscales de una vez) a 17,8% (promedio 2023-2025). El DCF da US$36,39 y los múltiplos US$38,61 hoy (6% por encima): ambos métodos coinciden y quedan por debajo del precio (US$44,11). Alpha Spread da ~US$102-112 porque usa un múltiplo de salida de 23,1x EV/EBIT, margen ajustado de ~28% y una tasa de 7,8%; con criterio Damodaran se mantienen los supuestos de la hoja. Revisión anterior: Revisión del 30-sep-2026: el ROIC terminal de 11,1% se revirtió porque BSX no cumple la regla del prompt. Incluida la plusvalía de sus compras, su ROIC estuvo por debajo del costo de capital hasta 2025, así que el DCF vuelve a suponer que después del año 10 gana solo su costo de capital: US$39,13. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 9% por encima del DCF, dentro del rango de ±25%. Los dos métodos rodean el precio (~US$44): el mercado ya descuenta la desaceleración de 2026 y paga algo por la recuperación de Watchman y electrofisiología.",
+  "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$36,39 por acción y los múltiplos, US$38,61 hoy: 6% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.",
   "ticker": "BSX",
   "peers_crecimiento": {
    "g": 0.07,

@@ -1,314 +1,314 @@
 {
-  "ticker": "BSX",
-  "empresa": "Boston Scientific Corporation",
-  "fecha": "2026-09-30",
-  "industria_damodaran": "Healthcare Products",
-  "segmentos": {
-    "Electrofisiología": 3590,
-    "Watchman": 2000,
-    "Resto de Cardiovascular": 8470,
-    "MedSurg": 6936
-  },
-  "riesgo": {
-    "beta_propuesta": null,
-    "texto": "La hoja usa una beta de 1,00. La beta bottom-up de Healthcare Products (204 empresas, 0,86 desapalancada y corregida por caja) reapalancada con la deuda de Boston Scientific da 0,97. No hay diferencia material: el riesgo está en la competencia en Electrofisiología, no en la tasa."
-  },
-  "historias": [
-    {
-      "nombre": "A · La cartera diversificada sostiene ~7%",
-      "prob": 0.45,
-      "margen": 0.24,
-      "crec": {
-        "Electrofisiología": [
-          0.1,
-          0.1,
-          0.09,
-          0.08,
-          0.08
-        ],
-        "Watchman": [
-          0.08,
-          0.09,
-          0.09,
-          0.08,
-          0.08
-        ],
-        "Resto de Cardiovascular": [
-          0.06,
-          0.06,
-          0.06,
-          0.05,
-          0.05
-        ],
-        "MedSurg": [
-          0.06,
-          0.06,
-          0.06,
-          0.06,
-          0.05
-        ]
-      }
-    },
-    {
-      "nombre": "B · El campo pulsado se vuelve commodity",
-      "prob": 0.3,
-      "margen": 0.22,
-      "crec": {
-        "Electrofisiología": [
-          0.02,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Watchman": [
-          0.03,
-          0.04,
-          0.04,
-          0.04,
-          0.04
-        ],
-        "Resto de Cardiovascular": [
-          0.05,
-          0.05,
-          0.04,
-          0.04,
-          0.04
-        ],
-        "MedSurg": [
-          0.05,
-          0.05,
-          0.05,
-          0.04,
-          0.04
-        ]
-      }
-    },
-    {
-      "nombre": "C · Electrofisiología y Watchman vuelven a doble dígito",
-      "prob": 0.2,
-      "margen": 0.26,
-      "crec": {
-        "Electrofisiología": [
-          0.15,
-          0.15,
-          0.13,
-          0.12,
-          0.1
-        ],
-        "Watchman": [
-          0.14,
-          0.14,
-          0.12,
-          0.1,
-          0.1
-        ],
-        "Resto de Cardiovascular": [
-          0.07,
-          0.07,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "MedSurg": [
-          0.07,
-          0.07,
-          0.06,
-          0.06,
-          0.06
-        ]
-      }
-    },
-    {
-      "nombre": "D · Pierde participación y precio",
-      "prob": 0.05,
-      "margen": 0.2,
-      "crec": {
-        "Electrofisiología": [
-          -0.05,
-          -0.03,
-          0,
-          0.02,
-          0.02
-        ],
-        "Watchman": [
-          0,
-          0,
-          0.02,
-          0.02,
-          0.02
-        ],
-        "Resto de Cardiovascular": [
-          0.03,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "MedSurg": [
-          0.03,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ]
-      }
-    }
-  ],
-  "margenes_inverso": [
-    0.22,
-    0.24,
-    0.26
-  ],
-  "historia": "Boston Scientific vende dispositivos de un solo uso para procedimientos mínimamente invasivos, sobre todo cardiovasculares. En 2023-2025 creció 12-20% al año gracias a dos productos excepcionales: la ablación por campo pulsado (FARAPULSE) y el cierre de orejuela Watchman. En 2026 ambos frenaron en EE.UU. (+3% en el 2T) al llegar la competencia de Medtronic y Johnson & Johnson, el crecimiento orgánico bajó a 7%. La historia de los próximos cinco años es la de una cartera amplia (dos tercios cardiovascular, un tercio MedSurg) en mercados que crecen por envejecimiento: ¿cuánto de su crecimiento dependía de productos que ahora se vuelven competidos? La compra pendiente de Penumbra (~US$14.500 millones) no está en esta valoración.",
-  "filtro": [
-    [
-      "Los ingresos crecen ~7% anual cinco años",
-      "Sí",
-      "Sí: orgánico de 7% en el 2T26 con cartera diversificada",
-      "Probable"
+ "ticker": "BSX",
+ "empresa": "Boston Scientific Corporation",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Healthcare Products",
+ "segmentos": {
+  "Electrofisiología": 3590,
+  "Watchman": 2000,
+  "Resto de Cardiovascular": 8470,
+  "MedSurg": 6936
+ },
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,00. La beta bottom-up de Healthcare Products (204 empresas, 0,86 desapalancada y corregida por caja) reapalancada con la deuda de Boston Scientific da 0,97. No hay diferencia material: el riesgo está en la competencia en Electrofisiología, no en la tasa."
+ },
+ "historias": [
+  {
+   "nombre": "A · La cartera diversificada sostiene ~7%",
+   "prob": 0.45,
+   "margen": 0.24,
+   "crec": {
+    "Electrofisiología": [
+     0.1,
+     0.1,
+     0.09,
+     0.08,
+     0.08
     ],
-    [
-      "Electrofisiología vuelve a crecer a doble dígito",
-      "Sí",
-      "Sí fuera de EE.UU.; en EE.UU. hay tres competidores en campo pulsado",
-      "Incierto"
+    "Watchman": [
+     0.08,
+     0.09,
+     0.09,
+     0.08,
+     0.08
     ],
-    [
-      "El margen operativo GAAP sube de ~20% a 24%",
-      "Sí",
-      "Sí: el ajustado ya es mayor; la amortización de compras pesa ~4,5 pp",
-      "Probable si baja la actividad de compras"
+    "Resto de Cardiovascular": [
+     0.06,
+     0.06,
+     0.06,
+     0.05,
+     0.05
     ],
-    [
-      "Penumbra crea valor al precio pagado",
-      "Sí",
-      "Depende de la trombectomía; se paga un múltiplo alto",
-      "Incierto"
+    "MedSurg": [
+     0.06,
+     0.06,
+     0.06,
+     0.06,
+     0.05
     ]
-  ],
-  "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 6,5% anual cinco años (historia A) lo logró ~42%; 8,3% (historia C), ~33%. La hoja (7%) está por encima de la mediana nominal (~5,4%) pero es razonable por el envejecimiento y la cartera de productos. El crecimiento de 2023-2025 (12-20%, con compras) no es una tasa base útil: fue un ciclo de producto.",
-  "crecimiento": {
-    "texto": "Ventas de US$14.240 millones (2023), US$16.747 millones (2024, +17,6%) y US$20.074 millones (2025, +19,9% con compras); US$10.646 millones en el 1S26 (+9,5%) y orgánico de 7% en el 2T. En el 1S26, Cardiovascular facturó US$7.126 millones (+10,8%): Electrofisiología US$1.821 millones (+16%), ICVT US$2.577 millones (+11,9%) y Watchman US$1.014 millones (+11,3%); MedSurg, ~US$3.520 millones. La división LTM de las historias usa esos pesos (EP ~17%, Watchman ~10%, resto de Cardiovascular ~40%, MedSurg ~33%).",
-    "tabla": {
-      "cols": [
-        "US$ millones",
-        "2023",
-        "2024",
-        "2025",
-        "LTM"
-      ],
-      "align": [
-        "l",
-        "r",
-        "r",
-        "r",
-        "r"
-      ],
-      "rows": [
-        [
-          "Ingresos",
-          "14.240",
-          "16.747",
-          "20.074",
-          "20.996"
-        ],
-        [
-          "Crecimiento",
-          "+12,3%",
-          "+17,6%",
-          "+19,9%",
-          "—"
-        ],
-        [
-          "Margen operativo GAAP",
-          "16,5%",
-          "15,5%",
-          "18,0%",
-          "19,8%"
-        ],
-        [
-          "FCFF (hoja)",
-          "2.166",
-          "1.947",
-          "3.775",
-          "—"
-        ]
-      ]
-    }
+   }
   },
-  "margenes": {
-    "texto": "El margen GAAP subió de 4,9% (2016) a 19,8% LTM, pero sigue cargado por amortización de intangibles (~US$930 millones al año), litigios y reestructuración. La hoja supone 20% el próximo año y 24% de objetivo. Si la empresa deja de comprar, la amortización baja y el margen sube; si compra Penumbra y otras, el GAAP se queda cerca de 20%. Por eso las historias van de 20% a 26%. La tasa efectiva de los años 1-5 es 17,8% (promedio 2023-2025); la del LTM, 5%, refleja beneficios fiscales de una vez."
-  },
-  "reinversion": {
-    "texto": "La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un sales-to-capital de 1,3 (años 1-5) y 1,2 (años 6-10), que ya asume que parte del crecimiento se compra. Con Penumbra, el capital invertido sube ~US$14.500 millones: el retorno de esa compra decide si el crecimiento crea valor. El ROIC después del año 10 es igual al costo de capital: incluida la plusvalía de las compras, el ROIC estuvo por debajo del costo de capital hasta 2025, así que no cumple la regla del ROIC terminal (se aplicó 11,1% y se revirtió el 30-sep-2026)."
-  },
-  "prob_texto": "A (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. B (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. C (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). D (5%) es un tropiezo clínico o de producto.",
-  "premortem": [
-    "Medtronic y Johnson & Johnson ganan participación en campo pulsado y Electrofisiología en EE.UU. crece a un dígito bajo por años.",
-    "Watchman pierde frente a nuevos anticoagulantes o por evidencia clínica comparativa desfavorable.",
-    "Penumbra se paga caro, genera deterioro de goodwill y la deuda limita la flexibilidad.",
-    "La demanda colectiva por la guía de Electrofisiología revela problemas de gestión o de transparencia.",
-    "Presión de precios en ICVT y reembolsos de Medicare más bajos reducen el margen."
-  ],
-  "contra": "el freno en EE.UU. fue brusco (de doble dígito alto a +3% en un trimestre) y coincidió con la llegada de competencia directa. Si el 3T y el 4T repiten ~3% en EE.UU., la historia B debe pesar más que A.",
-  "indicadores": [
-    [
-      "Crecimiento orgánico total",
-      "7,0% (2T26)",
-      "≥ 7%",
-      "< 5% dos trimestres"
+  {
+   "nombre": "B · El campo pulsado se vuelve commodity",
+   "prob": 0.3,
+   "margen": 0.22,
+   "crec": {
+    "Electrofisiología": [
+     0.02,
+     0.03,
+     0.03,
+     0.03,
+     0.03
     ],
-    [
-      "Electrofisiología EE.UU.",
-      "+3% (2T26)",
-      "≥ +8% en 2027",
-      "≤ 0%"
+    "Watchman": [
+     0.03,
+     0.04,
+     0.04,
+     0.04,
+     0.04
     ],
-    [
-      "Watchman EE.UU.",
-      "+3% (2T26)",
-      "≥ +8%",
-      "≤ 0%"
+    "Resto de Cardiovascular": [
+     0.05,
+     0.05,
+     0.04,
+     0.04,
+     0.04
     ],
-    [
-      "Margen operativo GAAP",
-      "19,8% LTM",
-      "≥ 21% en 2027",
-      "≤ 18%"
-    ],
-    [
-      "Penumbra (antimonopolio y retorno)",
-      "Pendiente",
-      "Cierre y crecimiento de trombectomía ≥ 15%",
-      "Remedios o deterioro"
+    "MedSurg": [
+     0.05,
+     0.05,
+     0.05,
+     0.04,
+     0.04
     ]
-  ],
-  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
-  "frase": "Cartera cardiovascular diversificada que pierde su ciclo de producto excepcional",
-  "confianza": "Media: la diversificación da piso; la duración de la competencia en campo pulsado es incierta",
-  "cambiaria": "Electrofisiología y Watchman en EE.UU. en los próximos dos trimestres; cierre y precio de Penumbra",
-  "revision": "Resultados del 3T26 (oct-2026)",
-  "fuentes": [
-    [
-      "Boston Scientific, Form 10-Q del 2T 2026",
-      "https://www.sec.gov/Archives/edgar/data/885725/000088572526000053/bsx-20260630.htm"
+   }
+  },
+  {
+   "nombre": "C · Electrofisiología y Watchman vuelven a doble dígito",
+   "prob": 0.2,
+   "margen": 0.26,
+   "crec": {
+    "Electrofisiología": [
+     0.15,
+     0.15,
+     0.13,
+     0.12,
+     0.1
     ],
-    [
-      "Boston Scientific, Form 10-Q del 1T 2026",
-      "https://www.sec.gov/Archives/edgar/data/885725/000088572526000033/bsx-20260331.htm"
+    "Watchman": [
+     0.14,
+     0.14,
+     0.12,
+     0.1,
+     0.1
     ],
-    [
-      "Boston Scientific, Form 10-K 2025",
-      "https://www.sec.gov/Archives/edgar/data/885725/000088572526000010/bsx-20251231.htm"
+    "Resto de Cardiovascular": [
+     0.07,
+     0.07,
+     0.07,
+     0.06,
+     0.06
     ],
-    [
-      "Mauboussin & Callahan, The Base Rate Book (2016)",
-      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-    ],
-    [
-      "Damodaran, Betas by Sector (US), enero 2026",
-      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    "MedSurg": [
+     0.07,
+     0.07,
+     0.06,
+     0.06,
+     0.06
     ]
+   }
+  },
+  {
+   "nombre": "D · Pierde participación y precio",
+   "prob": 0.05,
+   "margen": 0.2,
+   "crec": {
+    "Electrofisiología": [
+     -0.05,
+     -0.03,
+     0,
+     0.02,
+     0.02
+    ],
+    "Watchman": [
+     0,
+     0,
+     0.02,
+     0.02,
+     0.02
+    ],
+    "Resto de Cardiovascular": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "MedSurg": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   }
+  }
+ ],
+ "margenes_inverso": [
+  0.22,
+  0.24,
+  0.26
+ ],
+ "historia": "Boston Scientific vende dispositivos de un solo uso para procedimientos mínimamente invasivos, sobre todo cardiovasculares. En 2023-2025 creció 12-20% al año gracias a dos productos excepcionales: la ablación por campo pulsado (FARAPULSE) y el cierre de orejuela Watchman. En 2026 ambos frenaron en EE.UU. (+3% en el 2T) al llegar la competencia de Medtronic y Johnson & Johnson, el crecimiento orgánico bajó a 7%. La historia de los próximos cinco años es la de una cartera amplia (dos tercios cardiovascular, un tercio MedSurg) en mercados que crecen por envejecimiento: ¿cuánto de su crecimiento dependía de productos que ahora se vuelven competidos? La compra pendiente de Penumbra (~US$14.500 millones) no está en esta valoración.",
+ "filtro": [
+  [
+   "Los ingresos crecen ~7% anual cinco años",
+   "Sí",
+   "Sí: orgánico de 7% en el 2T26 con cartera diversificada",
+   "Probable"
+  ],
+  [
+   "Electrofisiología vuelve a crecer a doble dígito",
+   "Sí",
+   "Sí fuera de EE.UU.; en EE.UU. hay tres competidores en campo pulsado",
+   "Incierto"
+  ],
+  [
+   "El margen operativo GAAP sube de ~20% a 24%",
+   "Sí",
+   "Sí: el ajustado ya es mayor; la amortización de compras pesa ~4,5 pp",
+   "Probable si baja la actividad de compras"
+  ],
+  [
+   "Penumbra crea valor al precio pagado",
+   "Sí",
+   "Depende de la trombectomía; se paga un múltiplo alto",
+   "Incierto"
   ]
+ ],
+ "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 6,5% anual cinco años (historia A) lo logró ~42%; 8,3% (historia C), ~33%. La hoja (7%) está por encima de la mediana nominal (~5,4%) pero es razonable por el envejecimiento y la cartera de productos. El crecimiento de 2023-2025 (12-20%, con compras) no es una tasa base útil: fue un ciclo de producto.",
+ "crecimiento": {
+  "texto": "Ventas de US$14.240 millones (2023), US$16.747 millones (2024, +17,6%) y US$20.074 millones (2025, +19,9% con compras); US$10.646 millones en el 1S26 (+9,5%) y orgánico de 7% en el 2T. En el 1S26, Cardiovascular facturó US$7.126 millones (+10,8%): Electrofisiología US$1.821 millones (+16%), ICVT US$2.577 millones (+11,9%) y Watchman US$1.014 millones (+11,3%); MedSurg, ~US$3.520 millones. La división LTM de las historias usa esos pesos (EP ~17%, Watchman ~10%, resto de Cardiovascular ~40%, MedSurg ~33%).",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2023",
+    "2024",
+    "2025",
+    "LTM"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos",
+     "14.240",
+     "16.747",
+     "20.074",
+     "20.996"
+    ],
+    [
+     "Crecimiento",
+     "+12,3%",
+     "+17,6%",
+     "+19,9%",
+     "—"
+    ],
+    [
+     "Margen operativo GAAP",
+     "16,5%",
+     "15,5%",
+     "18,0%",
+     "19,8%"
+    ],
+    [
+     "FCFF (hoja)",
+     "2.166",
+     "1.947",
+     "3.775",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen GAAP subió de 4,9% (2016) a 19,8% LTM, pero sigue cargado por amortización de intangibles (~US$930 millones al año), litigios y reestructuración. La hoja supone 20% el próximo año y 24% de objetivo. Si la empresa deja de comprar, la amortización baja y el margen sube; si compra Penumbra y otras, el GAAP se queda cerca de 20%. Por eso las historias van de 20% a 26%. La tasa efectiva de los años 1-5 es 17,8% (promedio 2023-2025); la del LTM, 5%, refleja beneficios fiscales de una vez."
+ },
+ "reinversion": {
+  "texto": "La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un sales-to-capital de 1,3 (años 1-5) y 1,2 (años 6-10), que ya asume que parte del crecimiento se compra. Con Penumbra, el capital invertido sube ~US$14.500 millones: el retorno de esa compra decide si el crecimiento crea valor. El ROIC después del año 10 es igual al costo de capital: incluida la plusvalía de las compras, el ROIC estuvo por debajo del costo de capital hasta 2025, así que no cumple la regla del ROIC terminal (se aplicó 11,1% y se revirtió el 30-sep-2026). Sin ventaja defendible: el crecimiento se compra y el ROIC con la plusvalía de las compras (4-9% en 2021-2025) no superó el costo de capital de forma sostenida. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
+ },
+ "prob_texto": "A (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. B (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. C (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). D (5%) es un tropiezo clínico o de producto.",
+ "premortem": [
+  "Medtronic y Johnson & Johnson ganan participación en campo pulsado y Electrofisiología en EE.UU. crece a un dígito bajo por años.",
+  "Watchman pierde frente a nuevos anticoagulantes o por evidencia clínica comparativa desfavorable.",
+  "Penumbra se paga caro, genera deterioro de goodwill y la deuda limita la flexibilidad.",
+  "La demanda colectiva por la guía de Electrofisiología revela problemas de gestión o de transparencia.",
+  "Presión de precios en ICVT y reembolsos de Medicare más bajos reducen el margen."
+ ],
+ "contra": "el freno en EE.UU. fue brusco (de doble dígito alto a +3% en un trimestre) y coincidió con la llegada de competencia directa. Si el 3T y el 4T repiten ~3% en EE.UU., la historia B debe pesar más que A.",
+ "indicadores": [
+  [
+   "Crecimiento orgánico total",
+   "7,0% (2T26)",
+   "≥ 7%",
+   "< 5% dos trimestres"
+  ],
+  [
+   "Electrofisiología EE.UU.",
+   "+3% (2T26)",
+   "≥ +8% en 2027",
+   "≤ 0%"
+  ],
+  [
+   "Watchman EE.UU.",
+   "+3% (2T26)",
+   "≥ +8%",
+   "≤ 0%"
+  ],
+  [
+   "Margen operativo GAAP",
+   "19,8% LTM",
+   "≥ 21% en 2027",
+   "≤ 18%"
+  ],
+  [
+   "Penumbra (antimonopolio y retorno)",
+   "Pendiente",
+   "Cierre y crecimiento de trombectomía ≥ 15%",
+   "Remedios o deterioro"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+ "frase": "Cartera cardiovascular diversificada que pierde su ciclo de producto excepcional",
+ "confianza": "Media: la diversificación da piso; la duración de la competencia en campo pulsado es incierta",
+ "cambiaria": "Electrofisiología y Watchman en EE.UU. en los próximos dos trimestres; cierre y precio de Penumbra",
+ "revision": "Resultados del 3T26 (oct-2026)",
+ "fuentes": [
+  [
+   "Boston Scientific, Form 10-Q del 2T 2026",
+   "https://www.sec.gov/Archives/edgar/data/885725/000088572526000053/bsx-20260630.htm"
+  ],
+  [
+   "Boston Scientific, Form 10-Q del 1T 2026",
+   "https://www.sec.gov/Archives/edgar/data/885725/000088572526000033/bsx-20260331.htm"
+  ],
+  [
+   "Boston Scientific, Form 10-K 2025",
+   "https://www.sec.gov/Archives/edgar/data/885725/000088572526000010/bsx-20251231.htm"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Damodaran, Betas by Sector (US), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ]
 }

@@ -1,338 +1,362 @@
 {
-  "ticker": "GOOG",
-  "fecha": "2026-09-30",
-  "precio": 345.95,
-  "dcf_base": 311.54906519269986,
-  "g_ref": 0.124,
-  "m_base": 0.35,
-  "s2c": 1.2,
-  "wacc": 0.09699377205542774,
-  "beta_hoja": 1.07,
-  "beta_bu": 1.6065951427438718,
-  "beta_prop": 1.07,
-  "industria": "Software (Internet)",
-  "bu_sector": 1.59,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": ">$50,000 Mn",
-    "<(25)": 1.6,
-    "(25)-(20)": 1.0,
-    "(20)-(15)": 1.5,
-    "(15)-(10)": 2.7,
-    "(10)-(5)": 9.3,
-    "(5)-0": 22.8,
-    "0-5": 34.0,
-    "5-10": 16.9,
-    "10-15": 7.0,
-    "15-20": 2.3,
-    "20-25": 0.6,
-    "25-30": 0.3,
-    "30-35": 0.1,
-    "35-40": 0.0,
-    "40-45": 0.0,
-    ">45": 0.0,
-    "Mean": 1.0,
-    "Median": 1.5,
-    "StDev": 8.3,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+ "ticker": "GOOG",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.09,
+  "growthY1Base": 0.18,
+  "growthY1Opt": 0.20648894510906862,
+  "growthCons": 0.09,
+  "growthBase": 0.11,
+  "growthOpt": 0.16,
+  "marginY1Cons": 0.325,
+  "marginY1Base": 0.325,
+  "marginY1Opt": 0.325,
+  "marginCons": 0.31,
+  "marginBase": 0.335,
+  "marginOpt": 0.38,
+  "salesToCapital2": 1.5,
+  "wacc": 0.09698428621463184,
+  "costoPatrimonio": 0.097622,
+  "taxEffective": 0.184,
+  "convergenceYear": 5,
+  "terminalWacc": 0.09,
+  "roicTerminal": 0.286,
+  "salesToCapital": 1.2
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 206.1361051237829,
+ "precio": 346.22,
+ "dcf_base": 311.56657403009655,
+ "g_ref": 0.124,
+ "m_base": 0.35,
+ "s2c": 1.2,
+ "wacc": 0.09698428621463184,
+ "beta_hoja": 1.07,
+ "beta_bu": 1.6068849270349033,
+ "beta_prop": 1.07,
+ "industria": "Software (Internet)",
+ "bu_sector": 1.59,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": ">$50,000 Mn",
+  "<(25)": 1.6,
+  "(25)-(20)": 1.0,
+  "(20)-(15)": 1.5,
+  "(15)-(10)": 2.7,
+  "(10)-(5)": 9.3,
+  "(5)-0": 22.8,
+  "0-5": 34.0,
+  "5-10": 16.9,
+  "10-15": 7.0,
+  "15-20": 2.3,
+  "20-25": 0.6,
+  "25-30": 0.3,
+  "30-35": 0.1,
+  "35-40": 0.0,
+  "40-45": 0.0,
+  ">45": 0.0,
+  "Mean": 1.0,
+  "Median": 1.5,
+  "StDev": 8.3,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Search resiste y Cloud es el segundo motor",
+   "prob": 0.4,
+   "margen": 0.34,
+   "crec": {
+    "Google Services": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Google Cloud": [
+     0.45,
+     0.3,
+     0.22,
+     0.18,
+     0.15
+    ],
+    "Other Bets": [
+     0.2,
+     0.2,
+     0.2,
+     0.2,
+     0.2
+    ]
+   },
+   "cagr": 0.11668000111116306,
+   "rev5": 774190.8739840002,
+   "mix5": {
+    "Google Services": 0.6715297923735855,
+    "Google Cloud": 0.3224727136284475,
+    "Other Bets": 0.00599749399796717
+   },
+   "tasa_base": 0.13112159624426883,
+   "roic_terminal_usado": 0.286,
+   "valor_beta_hoja": 298.80595512442505,
+   "valor_beta_prop": 298.80595512442505
   },
-  "historias": [
-    {
-      "nombre": "A · Search resiste y Cloud es el segundo motor",
-      "prob": 0.4,
-      "margen": 0.34,
-      "crec": {
-        "Google Services": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Google Cloud": [
-          0.45,
-          0.3,
-          0.22,
-          0.18,
-          0.15
-        ],
-        "Other Bets": [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
-        ]
-      },
-      "cagr": 0.11668000111116306,
-      "rev5": 774190.8739840002,
-      "mix5": {
-        "Google Services": 0.6715297923735855,
-        "Google Cloud": 0.3224727136284475,
-        "Other Bets": 0.00599749399796717
-      },
-      "tasa_base": 0.13112159624426883,
-      "roic_terminal_usado": 0.286,
-      "valor_beta_hoja": 298.78923643067003,
-      "valor_beta_prop": 298.78923643067003
-    },
-    {
-      "nombre": "B · La IA conversacional erosiona Search",
-      "prob": 0.25,
-      "margen": 0.3,
-      "crec": {
-        "Google Services": [
-          0.06,
-          0.03,
-          0.02,
-          0.02,
-          0.02
-        ],
-        "Google Cloud": [
-          0.35,
-          0.22,
-          0.16,
-          0.13,
-          0.1
-        ],
-        "Other Bets": [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.06633989696421727,
-      "rev5": 614727.5100215999,
-      "mix5": {
-        "Google Services": 0.6860603807153207,
-        "Google Cloud": 0.3090509302134933,
-        "Other Bets": 0.004888689071186038
-      },
-      "tasa_base": 0.33088870064332254,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 141.08897476204723,
-      "valor_beta_prop": 141.08897476204723
-    },
-    {
-      "nombre": "C · Gemini y Cloud dominan la plataforma de IA",
-      "prob": 0.2,
-      "margen": 0.37,
-      "s2c": 1.0,
-      "crec": {
-        "Google Services": [
-          0.13,
-          0.11,
-          0.1,
-          0.09,
-          0.08
-        ],
-        "Google Cloud": [
-          0.55,
-          0.4,
-          0.3,
-          0.25,
-          0.2
-        ],
-        "Other Bets": [
-          0.4,
-          0.4,
-          0.4,
-          0.4,
-          0.4
-        ]
-      },
-      "cagr": 0.16081645443720016,
-      "rev5": 939771.2046240001,
-      "mix5": {
-        "Google Services": 0.6291056864426313,
-        "Google Cloud": 0.36021533574806747,
-        "Other Bets": 0.010678977809301243
-      },
-      "tasa_base": 0.05285696378791974,
-      "roic_terminal_usado": 0.286,
-      "valor_beta_hoja": 399.91508149624354,
-      "valor_beta_prop": 399.91508149624354
-    },
-    {
-      "nombre": "D · Remedios antimonopolio y guerra de precios en IA",
-      "prob": 0.15,
-      "margen": 0.27,
-      "crec": {
-        "Google Services": [
-          0.04,
-          0.01,
-          0,
-          0,
-          0.01
-        ],
-        "Google Cloud": [
-          0.25,
-          0.15,
-          0.1,
-          0.08,
-          0.08
-        ],
-        "Other Bets": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.03734866906643308,
-      "rev5": 535584.656,
-      "mix5": {
-        "Google Services": 0.7210233745008557,
-        "Google Cloud": 0.2754925824462007,
-        "Other Bets": 0.003484043052943623
-      },
-      "tasa_base": 0.528029050348255,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 114.28219354181266,
-      "valor_beta_prop": 114.28219354181266
-    }
-  ],
-  "valor_esperado_beta_hoja": 251.91328359330043,
-  "valor_esperado_beta_prop": 251.91328359330043,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.07,
-      "ke": 0.097622,
-      "wacc": 0.09699377205542774,
-      "dcf_base": 311.54906519269986
-    },
-    {
-      "enfoque": "Bottom-up del sector (Software (Internet), reapalancada)",
-      "beta": 1.6065951427438718,
-      "ke": 0.12155414336637668,
-      "wacc": 0.12063220238972984,
-      "dcf_base": 271.31005341629174
-    },
-    {
-      "enfoque": "Propuesta (sector ajustado por riesgo propio)",
-      "beta": 1.07,
-      "ke": 0.097622,
-      "wacc": 0.09699377205542774,
-      "dcf_base": 311.54906519269986
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.08399999999999999,
-      0.104,
-      0.124,
-      0.144,
-      0.164
+  {
+   "nombre": "B · La IA conversacional erosiona Search",
+   "prob": 0.25,
+   "margen": 0.3,
+   "crec": {
+    "Google Services": [
+     0.06,
+     0.03,
+     0.02,
+     0.02,
+     0.02
     ],
-    "m": [
-      0.31,
-      0.32999999999999996,
-      0.35,
-      0.37,
-      0.38999999999999996
+    "Google Cloud": [
+     0.35,
+     0.22,
+     0.16,
+     0.13,
+     0.1
     ],
-    "v": [
-      [
-        236.61633409829756,
-        251.75265980576023,
-        266.8889855132229,
-        282.0253112206856,
-        297.16163692814814
-      ],
-      [
-        262.56759619759566,
-        279.6553478607874,
-        296.74309952397914,
-        313.8308511871709,
-        330.91860285036256
-      ],
-      [
-        291.37258179197596,
-        310.63211866725595,
-        329.89165554253594,
-        349.15119241781593,
-        368.410729293096
-      ],
-      [
-        323.30871356777016,
-        344.9816633853672,
-        366.65461320296436,
-        388.3275630205614,
-        410.00051283815844
-      ],
-      [
-        358.67585820366673,
-        383.026823504214,
-        407.3777888047614,
-        431.7287541053089,
-        456.07971940585617
-      ]
-    ],
-    "referencia_constante": 329.89165554253594,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Other Bets": [
+     0.1,
+     0.1,
+     0.1,
+     0.1,
+     0.1
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.06633989696421727,
+   "rev5": 614727.5100215999,
+   "mix5": {
+    "Google Services": 0.6860603807153207,
+    "Google Cloud": 0.3090509302134933,
+    "Other Bets": 0.004888689071186038
+   },
+   "tasa_base": 0.33088870064332254,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 141.09616201552234,
+   "valor_beta_prop": 141.09616201552234
   },
-  "inverso": [
-    {
-      "beta": 1.07,
-      "margen": 0.3,
-      "g": 0.1636921108192418,
-      "tasa_base": 0.04883104485306147
-    },
-    {
-      "beta": 1.07,
-      "margen": 0.335,
-      "g": 0.14156495796877722,
-      "tasa_base": 0.07980905884371187
-    },
-    {
-      "beta": 1.07,
-      "margen": 0.37,
-      "g": 0.12227070446126376,
-      "tasa_base": 0.11222501892092847
-    },
-    {
-      "beta": 1.07,
-      "margen": 0.3,
-      "g": 0.1636921108192418,
-      "tasa_base": 0.04883104485306147
-    },
-    {
-      "beta": 1.07,
-      "margen": 0.335,
-      "g": 0.14156495796877722,
-      "tasa_base": 0.07980905884371187
-    },
-    {
-      "beta": 1.07,
-      "margen": 0.37,
-      "g": 0.12227070446126376,
-      "tasa_base": 0.11222501892092847
-    }
+  {
+   "nombre": "C · Gemini y Cloud dominan la plataforma de IA",
+   "prob": 0.2,
+   "margen": 0.37,
+   "s2c": 1.0,
+   "crec": {
+    "Google Services": [
+     0.13,
+     0.11,
+     0.1,
+     0.09,
+     0.08
+    ],
+    "Google Cloud": [
+     0.55,
+     0.4,
+     0.3,
+     0.25,
+     0.2
+    ],
+    "Other Bets": [
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4
+    ]
+   },
+   "cagr": 0.16081645443720016,
+   "rev5": 939771.2046240001,
+   "mix5": {
+    "Google Services": 0.6291056864426313,
+    "Google Cloud": 0.36021533574806747,
+    "Other Bets": 0.010678977809301243
+   },
+   "tasa_base": 0.05285696378791974,
+   "roic_terminal_usado": 0.286,
+   "valor_beta_hoja": 399.93811111848174,
+   "valor_beta_prop": 399.93811111848174
+  },
+  {
+   "nombre": "D · Remedios antimonopolio y guerra de precios en IA",
+   "prob": 0.15,
+   "margen": 0.27,
+   "crec": {
+    "Google Services": [
+     0.04,
+     0.01,
+     0,
+     0,
+     0.01
+    ],
+    "Google Cloud": [
+     0.25,
+     0.15,
+     0.1,
+     0.08,
+     0.08
+    ],
+    "Other Bets": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.03734866906643308,
+   "rev5": 535584.656,
+   "mix5": {
+    "Google Services": 0.7210233745008557,
+    "Google Cloud": 0.2754925824462007,
+    "Other Bets": 0.003484043052943623
+   },
+   "tasa_base": 0.528029050348255,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 114.28779686981026,
+   "valor_beta_prop": 114.28779686981026
+  }
+ ],
+ "valor_esperado_beta_hoja": 251.9272143078185,
+ "valor_esperado_beta_prop": 251.9272143078185,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.07,
+   "ke": 0.097622,
+   "wacc": 0.09698428621463184,
+   "dcf_base": 311.56657403009655
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (Internet), reapalancada)",
+   "beta": 1.6068849270349033,
+   "ke": 0.1215670677457567,
+   "wacc": 0.12063041479023504,
+   "dcf_base": 271.31285527161805
+  },
+  {
+   "enfoque": "Propuesta (sector ajustado por riesgo propio)",
+   "beta": 1.07,
+   "ke": 0.097622,
+   "wacc": 0.09698428621463184,
+   "dcf_base": 311.56657403009655
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.08399999999999999,
+   0.104,
+   0.124,
+   0.144,
+   0.164
   ],
-  "ingresos_ltm": 445866
+  "m": [
+   0.31,
+   0.32999999999999996,
+   0.35,
+   0.37,
+   0.38999999999999996
+  ],
+  "v": [
+   [
+    236.62940494170127,
+    251.76659450566447,
+    266.9037840696277,
+    282.0409736335909,
+    297.178163197554
+   ],
+   [
+    262.5822797357454,
+    279.6710094694671,
+    296.7597392031888,
+    313.84846893691054,
+    330.93719867063226
+   ],
+   [
+    291.3890577913006,
+    310.64970003803364,
+    329.9103422847667,
+    349.17098453149987,
+    368.43162677823295
+   ],
+   [
+    323.3271791083468,
+    345.0013759587163,
+    366.67557280908613,
+    388.3497696594558,
+    410.02396650982536
+   ],
+   [
+    358.6965290694421,
+    383.04889880063547,
+    407.40126853182886,
+    431.75363826302237,
+    456.10600799421564
+   ]
+  ],
+  "referencia_constante": 329.9103422847667,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.07,
+   "margen": 0.3,
+   "g": 0.16383205224795544,
+   "tasa_base": 0.04863512685286238
+  },
+  {
+   "beta": 1.07,
+   "margen": 0.335,
+   "g": 0.14170269826502546,
+   "tasa_base": 0.07961622242896432
+  },
+  {
+   "beta": 1.07,
+   "margen": 0.37,
+   "g": 0.12240652617494752,
+   "tasa_base": 0.11176594152867736
+  },
+  {
+   "beta": 1.07,
+   "margen": 0.3,
+   "g": 0.16383205224795544,
+   "tasa_base": 0.04863512685286238
+  },
+  {
+   "beta": 1.07,
+   "margen": 0.335,
+   "g": 0.14170269826502546,
+   "tasa_base": 0.07961622242896432
+  },
+  {
+   "beta": 1.07,
+   "margen": 0.37,
+   "g": 0.12240652617494752,
+   "tasa_base": 0.11176594152867736
+  }
+ ],
+ "ingresos_ltm": 445866
 }

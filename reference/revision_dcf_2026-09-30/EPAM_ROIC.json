@@ -1,0 +1,21 @@
+{
+ "ticker": "EPAM_ROIC",
+ "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Ventaja que se desvanece: Servicios de ingeniería con costos de cambio moderados. Evidencia: ROIC 47% → 15% en cinco años, acercándose al costo de capital. ROIC después del año 10 = 11,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (26,4%), sin superar el ROIC actual (13,8%): 13,8%, porque la ventaja se desvanece."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.114,
+   "motivo": "Ventaja que se desvanece: Servicios de ingeniería con costos de cambio moderados. Evidencia: ROIC 47% → 15% en cinco años, acercándose al costo de capital. ROIC después del año 10 = 11,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (26,4%), sin superar el ROIC actual (13,8%): 13,8%, porque la ventaja se desvanece."
+  }
+ ]
+}

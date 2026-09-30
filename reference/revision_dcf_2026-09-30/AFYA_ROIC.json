@@ -1,0 +1,21 @@
+{
+ "ticker": "AFYA_ROIC",
+ "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Licencias reguladas de Medicina (una sola fuente, depende de la política). Evidencia: ROIC 12-16%, apenas 1-5 pp sobre el costo de capital desde 2022. ROIC después del año 10 = el promedio de la industria (15,9%), sin superar el ROIC actual (14,8%): 14,8% (Damodaran, Investment Valuation, cap. 12)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.129,
+   "despues": 0.148,
+   "motivo": "Ventaja durable: Licencias reguladas de Medicina (una sola fuente, depende de la política). Evidencia: ROIC 12-16%, apenas 1-5 pp sobre el costo de capital desde 2022. ROIC después del año 10 = el promedio de la industria (15,9%), sin superar el ROIC actual (14,8%): 14,8% (Damodaran, Investment Valuation, cap. 12)."
+  }
+ ]
+}

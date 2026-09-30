@@ -50,7 +50,7 @@ Para empresas de más de US$50.000 millones, la mediana de crecimiento real a ci
 
 **Márgenes.** El margen operativo subió a 46,8% pese al capex porque la depreciación todavía no refleja toda la inversión. La hoja supone 46,3% el próximo año y 45% de objetivo. La depreciación de los centros de datos de IA (vidas útiles de 5-6 años) y los márgenes menores de la infraestructura de IA frente al software empujan hacia abajo; Copilot y el precio de Microsoft 365 empujan hacia arriba. Las historias van de 37% a 48%.
 
-**Reinversión y retorno.** La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia C se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 25,9% (antes igual al costo de capital). Es el actual, que ya descuenta el capex de IA, y queda por debajo del de Software.
+**Reinversión y retorno.** La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia C se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Ventaja durable: costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn), con ROIC de 30-72% en 2021-2026. El ROIC después del año 10 es 25,9%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
 **Riesgo.** La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$466,38 a US$476,33. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa.
 
@@ -58,6 +58,27 @@ Para empresas de más de US$50.000 millones, la mediana de crecimiento real a ci
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,34 | 10,2% | 10,2% | US$466,38 |
 | Bottom-up del sector (Software (System & Application), reapalancada) | 1,26 | 9,9% | 9,8% | US$476,33 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 14,0% | 16,5% | 19,0% |
+| Crecimiento años 2–5 | 8,0% | 12,0% | 14,0% |
+| Margen año 1 (base ajustada del modelo) | 45,0% | 46,3% | 47,5% |
+| Margen objetivo | 42,0% | 45,0% | 48,0% |
+
+Ventas/capital: 0,7x en años 1–5 y 1,0x en 6–10. WACC: 10,2%. Ke: 10,2%. Impuesto efectivo: 19,4%. Convergencia: 7 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja durable | 25,9% | 29,3% | 8,5% | 25,9% | US$466,38 | US$329,42 |
+
+Fuentes de ventaja: Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn). Evidencia: ROIC 30-72% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -70,17 +91,19 @@ Para empresas de más de US$50.000 millones, la mediana de crecimiento real a ci
 | **D · La demanda de cómputo para IA se corrige** | 10% | Productivity and Business Processes: 8%, 6%, 5%, 5%, 5%; Intelligent Cloud: 10%, 4%, 5%, 6%, 6%; More Personal Computing: -3%, -2%, 0%, 0%, 0% | 5,0% | 37% | 0,7 | 25,9% | US$269,94 | US$275,22 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$412,46** | **US$421,18** |
 
-A (45%) es la continuación de FY24-FY26 con desaceleración gradual. B (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. C (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). D (10%) es una corrección de la demanda de cómputo. En las historias donde la ventaja se erosiona (B), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (45%) es la continuación de FY24-FY26 con desaceleración gradual. B (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. C (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). D (10%) es una corrección de la demanda de cómputo. En las historias de erosión (B) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,34; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 41,0% | 43,0% | 45,0% | 47,0% | 49,0% |
 |---|---:|---:|---:|---:|---:|
-| 8,9% | 351,43 | 367,66 | 383,89 | 400,12 | 416,34 |
-| 10,9% | 386,33 | 404,66 | 422,99 | 441,33 | 459,66 |
-| 12,9% | 425,02 | 445,70 | 466,38 | 487,05 | 507,73 |
-| 14,9% | 467,89 | 491,17 | 514,46 | 537,74 | 561,02 |
-| 16,9% | 515,33 | 541,51 | 567,68 | 593,86 | 620,03 |
+| 8,9% | 353,29 | 369,60 | 385,92 | 402,23 | 418,54 |
+| 10,9% | 388,37 | 406,80 | 425,23 | 443,66 | 462,09 |
+| 12,9% | 427,27 | 448,05 | 468,84 | 489,63 | 510,41 |
+| 14,9% | 470,36 | 493,77 | 517,17 | 540,58 | 563,98 |
+| 16,9% | 518,06 | 544,37 | 570,68 | 597,00 | 623,31 |
 
 
 ### Pre-mortem
@@ -109,16 +132,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$509,22**.
+Precio de referencia de la valoración guardada: **US$518,46**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 40% | Margen 45% | Margen 48% |
 |---|---:|---:|---:|
-| Beta 1,34 | 17,2% (4% de las empresas) | 14,8% (7% de las empresas) | 13,4% (9% de las empresas) |
-| Beta 1,26 | 16,8% (4% de las empresas) | 14,4% (8% de las empresas) | 13,0% (10% de las empresas) |
+| Beta 1,34 | 17,5% (3% de las empresas) | 15,0% (7% de las empresas) | 13,6% (9% de las empresas) |
+| Beta 1,26 | 17,0% (4% de las empresas) | 14,5% (7% de las empresas) | 13,2% (9% de las empresas) |
 
-Frente al valor esperado de las historias (US$412,46 con la beta de la hoja; US$421,18 con la propuesta), el precio está por encima en 23% y por encima en 21%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$509,22) queda 23% por encima del valor esperado (US$412,46), entre las historias A y C. El DCF inverso pide 13-18% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~3-9% de las empresas de este tamaño. Microsoft ya lo ha hecho, pero no es la norma. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años. El precio es alcanzable si el capex de IA rinde como en la historia A o mejor; no deja margen de seguridad.
+Frente al valor esperado de las historias (US$412,46 con la beta de la hoja; US$421,18 con la propuesta), el precio está por encima en 26% y por encima en 23%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

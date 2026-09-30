@@ -49,7 +49,7 @@ Para empresas de más de US$50.000 millones, crecer 11% anual cinco años (histo
 
 **Márgenes.** El margen GAAP subió 7-8 puntos por año desde 2023. La hoja suponía 26% de objetivo en cinco años, más que el margen de sus mejores segmentos; tras la revisión del 30-sep-2026 supone 14% el próximo año y 21% de objetivo (margen GAAP de 13,4% en el 2T26). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%.
 
-**Reinversión y retorno.** Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Por eso la revisión bajó el sales-to-capital de los años 1-5 a 2,5.
+**Reinversión y retorno.** Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Por eso la revisión bajó el sales-to-capital de los años 1-5 a 2,5. Sin ventaja defendible: tiene efectos de red, pero gana por encima del costo de capital solo desde 2024; se revisará con tres años de evidencia. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
 **Riesgo.** La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF Base casi no cambia (US$88,85 → US$89,70). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja.
 
@@ -57,6 +57,27 @@ Para empresas de más de US$50.000 millones, crecer 11% anual cinco años (histo
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 0,80 | 8,6% | 8,2% | US$88,85 |
 | Bottom-up del sector (Transportation, reapalancada) | 0,76 | 8,4% | 8,0% | US$89,70 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 8,0% | 13,0% | 18,0% |
+| Crecimiento años 2–5 | 8,0% | 11,0% | 18,0% |
+| Margen año 1 (base ajustada del modelo) | 14,0% | 14,0% | 14,0% |
+| Margen objetivo | 13,1% | 21,0% | 26,0% |
+
+Ventas/capital: 2,5x en años 1–5 y 3,5x en 6–10. WACC: 8,2%. Ke: 8,6%. Impuesto efectivo: 25,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Sin ventaja defendible | 12,4% | 13,0% | 9,2% | = costo de capital | US$88,85 | US$88,85 |
+
+Fuentes de ventaja: Efectos de red de dos lados. Evidencia: ROIC por encima del costo de capital solo desde 2024 (menos de 3 años). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -73,13 +94,15 @@ A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22
 
 Sensibilidad del DCF Base (beta 0,80; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 17,0% | 19,0% | 21,0% | 23,0% | 25,0% |
 |---|---:|---:|---:|---:|---:|
-| 7,4% | 59,42 | 66,24 | 73,07 | 79,90 | 86,73 |
-| 9,4% | 65,19 | 72,88 | 80,56 | 88,25 | 95,93 |
-| 11,4% | 71,58 | 80,22 | 88,85 | 97,49 | 106,13 |
-| 13,4% | 78,64 | 88,33 | 98,03 | 107,72 | 117,42 |
-| 15,4% | 86,43 | 97,29 | 108,16 | 119,03 | 129,89 |
+| 7,4% | 59,53 | 66,37 | 73,22 | 80,06 | 86,90 |
+| 9,4% | 65,32 | 73,02 | 80,72 | 88,42 | 96,12 |
+| 11,4% | 71,72 | 80,37 | 89,03 | 97,68 | 106,34 |
+| 13,4% | 78,79 | 88,50 | 98,22 | 107,93 | 117,65 |
+| 15,4% | 86,60 | 97,49 | 108,37 | 119,26 | 130,15 |
 
 
 ### Pre-mortem
@@ -108,16 +131,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$68,16**.
+Precio de referencia de la valoración guardada: **US$68,91**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 16% | Margen 22% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 0,80 | 11,8% (13% de las empresas) | 5,2% (43% de las empresas) | 2,0% (63% de las empresas) |
-| Beta 0,76 | 11,6% (13% de las empresas) | 5,0% (44% de las empresas) | 1,8% (64% de las empresas) |
+| Beta 0,80 | 11,9% (12% de las empresas) | 5,2% (43% de las empresas) | 2,0% (63% de las empresas) |
+| Beta 0,76 | 11,7% (13% de las empresas) | 5,0% (44% de las empresas) | 1,9% (64% de las empresas) |
 
-Frente al valor esperado de las historias (US$81,15 con la beta de la hoja; US$81,91 con la propuesta), el precio está por debajo en 16% y por debajo en 17%, respectivamente. El precio está ~16% por debajo del valor esperado. El DCF inverso pide 5% anual con margen de 22% (lo logró ~44-46% de las empresas de este tamaño) o 2% con margen de 26%, y 11-12% solo si el margen se queda en 16%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de los robotaxis y el cambio a un modelo más intensivo en capital. Si crees que Uber será la red de los autónomos, el precio parece bajo.
+Frente al valor esperado de las historias (US$81,15 con la beta de la hoja; US$81,91 con la propuesta), el precio está por debajo en 15% y por debajo en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

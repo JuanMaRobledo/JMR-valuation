@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # NVIDIA Corporation (NVDA) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$259,29 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$259,30 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -38,7 +38,7 @@ Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (histo
 
 ### Piezas del valor
 
-**Crecimiento.** Ingresos de US$60.922 millones (FY24, +126%), US$130.497 millones (FY25, +114%) y US$215.938 millones (FY26, +65%); LTM US$302.970 millones. En el 2T FY27 (jul-2026) facturó US$96.220 millones, con Data Center en US$89.000 millones (+117%). La hoja supone +50% el próximo año y 14% en los años 2-5. Nota de método: el motor usa el crecimiento anual compuesto de los años 1-5, así que una historia con un año muy fuerte y una corrección posterior se valora por su promedio.
+**Crecimiento.** Ingresos de US$60.922 millones (FY24, +126%), US$130.497 millones (FY25, +114%) y US$215.938 millones (FY26, +65%); LTM US$302.970 millones. En el 2T FY27 (jul-2026) facturó US$96.220 millones, con Data Center en US$89.000 millones (+117%). La hoja supone +50% el próximo año y 14% en los años 2-5. Cada historia se valora con su crecimiento año a año por segmentos; el CAGR a cinco años es descriptivo y no reemplaza la trayectoria de flujos.
 
 | US$ millones | FY24 | FY25 | FY26 | LTM |
 |---|---:|---:|---:|---:|
@@ -49,14 +49,35 @@ Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (histo
 
 **Márgenes.** El margen operativo (54-65%) es de monopolio temporal: precio altísimo por escasez, poco capital (fabless) y software propio. La hoja supone 60% el próximo año y 58% de objetivo. Las fuerzas en contra son la competencia (AMD MI400, TPU, Trainium) y el poder de negociación de cinco clientes enormes; a favor, la escala y el ecosistema CUDA. Las historias van de 40% (corrección fuerte) a 60%.
 
-**Reinversión y retorno.** Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 27,2% (el de Semiconductor; el actual supera 100%); antes era igual al costo de capital.
+**Reinversión y retorno.** Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir. Ventaja durable: ecosistema CUDA (costos de cambio) y escala en cómputo acelerado, con ROIC de 13-111%. El ROIC después del año 10 es 27,2%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
 **Riesgo.** La hoja usaba una beta de regresión de 1,90 (costo del patrimonio 13,5%). Tras la revisión del 30-sep-2026 usa la bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja; 1,51 sin deuda relevante), con costo del patrimonio de 11,7%: el DCF Base pasó de US$162,65 a US$178,38. La ciclicidad del negocio se modela en las historias (B y D), no en la tasa.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,51 | 11,7% | 11,7% | US$259,29 |
+| Hoja (regresión o la cargada en el libro) | 1,51 | 11,7% | 11,7% | US$259,30 |
 | Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 11,7% | 11,7% | US$259,56 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 32,5% | 50,0% | 56,0% |
+| Crecimiento años 2–5 | 6,0% | 14,0% | 22,0% |
+| Margen año 1 (base ajustada del modelo) | 60,0% | 60,0% | 60,0% |
+| Margen objetivo | 50,0% | 58,0% | 65,0% |
+
+Ventas/capital: 3,0x en años 1–5 y 2,5x en 6–10. WACC: 11,7%. Ke: 11,7%. Impuesto efectivo: 16,1%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja durable | 113,7% | 27,2% | 9,0% | 27,2% | US$259,30 | US$178,38 |
+
+Fuentes de ventaja: Ecosistema CUDA (costos de cambio) y escala en cómputo acelerado. Evidencia: ROIC 13-111%, siempre por encima del costo de capital. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -69,17 +90,19 @@ Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (histo
 | **D · Chips propios de los clientes y corrección fuerte** | 10% | Data Center: 25%, -25%, -10%, 5%, 5%; Gaming, visualización y automotriz: 0%, 0%, 0%, 0%, 0% | -1,3% | 40% | 3,0 | = costo de capital | US$50,61 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$186,08** |
 
-A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). D (10%) combina corrección fuerte y pérdida de participación frente a chips propios. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). D (10%) combina corrección fuerte y pérdida de participación frente a chips propios. En las historias de erosión (D) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,51; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 54,0% | 56,0% | 58,0% | 60,0% | 62,0% |
 |---|---:|---:|---:|---:|---:|
-| 17,2% | 195,55 | 202,49 | 209,43 | 216,37 | 223,32 |
-| 19,2% | 217,57 | 225,35 | 233,13 | 240,91 | 248,69 |
-| 21,2% | 241,88 | 250,59 | 259,29 | 268,00 | 276,71 |
-| 23,2% | 268,68 | 278,41 | 288,14 | 297,87 | 307,60 |
-| 25,2% | 298,20 | 309,05 | 319,91 | 330,77 | 341,62 |
+| 17,2% | 218,92 | 226,70 | 234,47 | 242,24 | 250,01 |
+| 19,2% | 243,58 | 252,29 | 261,00 | 269,71 | 278,42 |
+| 21,2% | 270,80 | 280,54 | 290,29 | 300,04 | 309,78 |
+| 23,2% | 300,80 | 311,69 | 322,58 | 333,47 | 344,37 |
+| 25,2% | 333,84 | 346,00 | 358,15 | 370,30 | 382,46 |
 
 
 ### Pre-mortem
@@ -108,16 +131,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$228,86**.
+Precio de referencia de la valoración guardada: **US$230,67**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 50% | Margen 58% | Margen 62% |
 |---|---:|---:|---:|
-| Beta 1,51 | 21,6% (1% de las empresas) | 19,0% (3% de las empresas) | 17,8% (3% de las empresas) |
-| Beta 1,51 | 21,6% (1% de las empresas) | 19,0% (3% de las empresas) | 17,8% (3% de las empresas) |
+| Beta 1,51 | 19,6% (2% de las empresas) | 16,9% (4% de las empresas) | 15,7% (6% de las empresas) |
+| Beta 1,51 | 19,6% (2% de las empresas) | 16,9% (4% de las empresas) | 15,7% (6% de las empresas) |
 
-Frente al valor esperado de las historias (US$186,08), el precio está por encima en 23%. Con el ROIC terminal revisado (30-sep-2026), el precio (US$228,86) queda 23% por encima del valor esperado de las historias (US$186,08) pero por debajo del DCF Base (US$259,29). El DCF inverso pide 18-22% anual en los años 1-5, algo que logró ~1-3% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por algo entre las historias A y C. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.
+Frente al valor esperado de las historias (US$186,08), el precio está por encima en 24%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

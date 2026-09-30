@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$117,29 en el escenario Base (rango US$75,11–US$136,81). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$111,20 (−5% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$113,64. El valor intrínseco es el DCF: US$117,29 frente a un precio de referencia de US$71,43 (+64%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$117,31 en el escenario Base (rango US$75,12–US$136,83). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$111,20 (−5% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$113,64. El valor intrínseco es el DCF: US$117,31 frente a un precio de referencia de US$70,00 (+68%).
 
-Revisión del 30-sep-2026 (ROIC terminal según el moat): moat ancho (patentes, veterinarios y escala), ROIC después del año 10 de 16,9%; el DCF da US$117,29 y los múltiplos US$111,20 hoy (5% por debajo, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 16,9% el DCF pasa de US$85,57 a US$117,28. Los múltiplos (US$111,20 hoy) quedan 5% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$71,43) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$111,20 hoy) quedan 30% por encima del DCF (US$85,57); el precio (US$71,43) está por debajo de ambos. Los múltiplos suponen que, a FY+3, Zoetis cotiza entre su valoración actual y la de sus peers ajustados (~14x EBITDA, ~23x utilidad), cerca de su múltiplo justificado (~25x utilidad), es decir que el mercado deja atrás las dudas sobre Librela. El DCF y el precio de hoy reflejan que la presión dura más. Si Librela se estabiliza, los múltiplos son razonables; si no, el DCF es la referencia más prudente.
+Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$117,30 por acción y los múltiplos, US$111,20 hoy: 5% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$75,11 | US$79,61 | US$77,81 | US$48,82 | US$95,97 |
-| Base | US$117,29 | US$111,20 | US$113,64 | US$76,24 | US$146,76 |
-| Optimista | US$136,81 | US$132,48 | US$134,21 | US$88,92 | US$175,37 |
+| Conservador | US$75,12 | US$79,61 | US$77,82 | US$62,06 | US$95,97 |
+| Base | US$117,31 | US$111,20 | US$113,64 | US$62,06 | US$146,76 |
+| Optimista | US$136,83 | US$132,48 | US$134,22 | US$62,06 | US$175,38 |
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - ZTS](https://docs.google.com/spreadsheets/d/1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE/edit).
-- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$71,43.
+- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$70,00.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -40,7 +40,7 @@ Revisión del 30-sep-2026 (ROIC terminal según el moat): moat ancho (patentes, 
 | Margen EBIT objetivo | 33,0% | 36,0% | 38,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,00 / 2,00 | — | Input B32/B33 |
-| DCF por acción hoy | US$75,11 | US$117,29 | US$136,81 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$75,12 | US$117,31 | US$136,83 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 0,90, ERP 4,46%, Ke 9,00%, costo de la deuda después de impuestos 4,88%, peso del patrimonio 80,0%, WACC inicial 8,18% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 21,8x: promedio de historia y peers 20,3x, acercado 25% al justificado (26,2x); rango de anclas 17,9x–26,2x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 17,2x: promedio de historia y peers 15,0x, acercado 25% al justificado (23,8x); rango de anclas 14,3x–23,8x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$111,20 frente a US$117,29 del DCF (−5%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$111,20 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$111,20 frente a US$117,31 del DCF (−5%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$111,20 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,13 +72,13 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$97,28 | US$151,91 | US$177,19 |
+| DCF Damodaran | 40% | US$97,28 | US$151,92 | US$177,20 |
 | EV/EBITDA | 20% | US$87,07 | US$128,09 | US$159,08 |
 | EV/FCFF | 10% | US$92,83 | US$132,33 | US$160,24 |
 | P/E | 20% | US$103,33 | US$160,21 | US$190,49 |
 | P/FCFE | 5% | US$93,63 | US$161,11 | US$200,90 |
 | P/OCF | 5% | US$100,32 | US$140,86 | US$170,29 |
-| **Ponderado FY+3** | 100% | US$95,97 | US$146,76 | US$175,37 |
+| **Ponderado FY+3** | 100% | US$95,97 | US$146,76 | US$175,38 |
 
 Valor presente (Ke 9,00%; consolidado por método: Promedio 1-3 años):
 
@@ -100,17 +100,17 @@ Valor presente (Ke 9,00%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$111,34 | US$108,73 | US$108,75 | US$109,61 | OK |
 | P/OCF | Optimista | US$126,70 | US$129,54 | US$131,48 | US$129,24 | OK |
 
-Múltiplos consolidados hoy: US$79,61 / US$111,20 / US$132,48 · DCF hoy: US$75,11 / US$117,29 / US$136,81 · Ponderado hoy: US$77,81 / US$113,64 / US$134,21 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$79,61 / US$111,20 / US$132,48 · DCF hoy: US$75,12 / US$117,31 / US$136,83 · Ponderado hoy: US$77,82 / US$113,64 / US$134,22 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ZTS la diferencia es de −5% (múltiplos por debajo del DCF). Revisión del 30-sep-2026 (ROIC terminal según el moat): moat ancho (patentes, veterinarios y escala), ROIC después del año 10 de 16,9%; el DCF da US$117,29 y los múltiplos US$111,20 hoy (5% por debajo, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 16,9% el DCF pasa de US$85,57 a US$117,28. Los múltiplos (US$111,20 hoy) quedan 5% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$71,43) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$111,20 hoy) quedan 30% por encima del DCF (US$85,57); el precio (US$71,43) está por debajo de ambos. Los múltiplos suponen que, a FY+3, Zoetis cotiza entre su valoración actual y la de sus peers ajustados (~14x EBITDA, ~23x utilidad), cerca de su múltiplo justificado (~25x utilidad), es decir que el mercado deja atrás las dudas sobre Librela. El DCF y el precio de hoy reflejan que la presión dura más. Si Librela se estabiliza, los múltiplos son razonables; si no, el DCF es la referencia más prudente.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ZTS la diferencia es de −5% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$117,30 por acción y los múltiplos, US$111,20 hoy: 5% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$71,43 supone que los ingresos crecen -3,2% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,4% (−7,6 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$69,83 supone que los ingresos crecen -3,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,4% (−7,9 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$151,91 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,0%, WACC de los años 4-10 8,5%, ROE de FY+3 85,7% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$151,94 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,0%, WACC de los años 4-10 8,5%, ROE de FY+3 85,7% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
@@ -127,17 +127,17 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
 | Vigente | US$113,64 | — |
-| Múltiplos Base +20% | US$127,33 | +12,1% |
-| Múltiplos Base −20% | US$99,94 | −12,1% |
-| Crecimiento años 1-5 +2 pp | US$119,97 | +5,6% |
-| Crecimiento años 1-5 −2 pp | US$107,96 | −5,0% |
-| Margen objetivo +3 pp | US$117,86 | +3,7% |
-| Margen objetivo −3 pp | US$109,42 | −3,7% |
-| WACC +1 pp | US$110,66 | −2,6% |
-| WACC −1 pp | US$116,82 | +2,8% |
+| Múltiplos Base +20% | US$127,34 | +12,0% |
+| Múltiplos Base −20% | US$99,95 | −12,0% |
+| Crecimiento años 2-5 +2 pp | US$118,70 | +4,5% |
+| Crecimiento años 2-5 −2 pp | US$109,02 | −4,1% |
+| Margen objetivo +3 pp | US$117,89 | +3,7% |
+| Margen objetivo −3 pp | US$109,39 | −3,7% |
+| WACC +1 pp | US$110,67 | −2,6% |
+| WACC −1 pp | US$116,83 | +2,8% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 1-5 +2 pp.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 2-5 +2 pp.
 
 ## 8. Log de cambios en la hoja
 

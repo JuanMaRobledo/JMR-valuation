@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$88,85 en el escenario Base (rango US$47,26–US$154,67). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$83,89 (−6% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$85,88. El valor intrínseco es el DCF: US$88,85 frente a un precio de referencia de US$68,16 (+30%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$88,85 en el escenario Base (rango US$47,26–US$154,67). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$83,89 (−6% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$85,88. El valor intrínseco es el DCF: US$88,85 frente a un precio de referencia de US$68,91 (+29%).
 
-Revisión del 30-sep-2026: con el margen objetivo de 21% se revisaron también los múltiplos de salida. Los anteriores (EV/EBITDA 30,4x, P/E 23,4x) superaban lo que el mercado paga hoy por Uber (20,3x EBITDA y 15,4x utilidad LTM) aunque en FY+3 crecerá menos (~11%). Ahora la referencia de peers se ajusta por crecimiento (recta múltiplo ~ crecimiento evaluada en el 11% de FY+3), se deja fuera el justificado (supone un ROE de 54% para siempre, incoherente con el DCF) y el EV/EBITDA de 2023. El DCF da US$88,85 y los múltiplos US$83,89 hoy (6% por debajo): los dos métodos coinciden y quedan por encima del precio (US$68,16); el mercado descuenta sobre todo la competencia de los robotaxis. El chequeo de crecimiento implícito marca que los múltiplos suponen menos crecimiento perpetuo que el DCF; es un efecto de la fórmula (usa el ROE de FY+3 para siempre), no de los múltiplos: el propio DCF implica en FY+3 unos 17x EBITDA y 17x utilidad.
+Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$47,26 | US$49,25 | US$48,45 | US$30,72 | US$60,01 |
-| Base | US$88,85 | US$83,89 | US$85,88 | US$57,76 | US$116,03 |
-| Optimista | US$154,67 | US$128,84 | US$139,17 | US$100,53 | US$199,36 |
+| Conservador | US$47,26 | US$49,25 | US$48,45 | US$52,74 | US$60,01 |
+| Base | US$88,85 | US$83,89 | US$85,88 | US$52,74 | US$116,03 |
+| Optimista | US$154,67 | US$128,84 | US$139,17 | US$52,74 | US$199,36 |
 
 ## 2. Datos
 
 - Hoja del modelo: [UBER plantilla maestra](https://docs.google.com/spreadsheets/d/1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw/edit).
-- Análisis del 14 de sept de 2026. Precio de referencia de la hoja: US$68,16.
+- Análisis del 14 de sept de 2026. Precio de referencia de la hoja: US$68,91.
 - Peers: datos de mercado de yfinance consultados el 2026-09-30 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -104,11 +104,11 @@ Múltiplos consolidados hoy: US$49,25 / US$83,89 / US$128,84 · DCF hoy: US$47,2
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para UBER la diferencia es de −6% (múltiplos por debajo del DCF). Revisión del 30-sep-2026: con el margen objetivo de 21% se revisaron también los múltiplos de salida. Los anteriores (EV/EBITDA 30,4x, P/E 23,4x) superaban lo que el mercado paga hoy por Uber (20,3x EBITDA y 15,4x utilidad LTM) aunque en FY+3 crecerá menos (~11%). Ahora la referencia de peers se ajusta por crecimiento (recta múltiplo ~ crecimiento evaluada en el 11% de FY+3), se deja fuera el justificado (supone un ROE de 54% para siempre, incoherente con el DCF) y el EV/EBITDA de 2023. El DCF da US$88,85 y los múltiplos US$83,89 hoy (6% por debajo): los dos métodos coinciden y quedan por encima del precio (US$68,16); el mercado descuenta sobre todo la competencia de los robotaxis. El chequeo de crecimiento implícito marca que los múltiplos suponen menos crecimiento perpetuo que el DCF; es un efecto de la fórmula (usa el ROE de FY+3 para siempre), no de los múltiplos: el propio DCF implica en FY+3 unos 17x EBITDA y 17x utilidad.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para UBER la diferencia es de −6% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$68,16 supone que los ingresos crecen 5,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,4% (−5,5 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$68,88 supone que los ingresos crecen 6,1% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,4% (−5,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$113,67 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 8,6%, WACC de los años 4-10 8,6%, ROE de FY+3 53,8% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -129,12 +129,12 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$85,88 | — |
 | Múltiplos Base +20% | US$95,90 | +11,7% |
 | Múltiplos Base −20% | US$75,86 | −11,7% |
-| Crecimiento años 1-5 +2 pp | US$89,51 | +4,2% |
-| Crecimiento años 1-5 −2 pp | US$82,58 | −3,8% |
-| Margen objetivo +3 pp | US$91,23 | +6,2% |
-| Margen objetivo −3 pp | US$80,52 | −6,2% |
-| WACC +1 pp | US$83,86 | −2,3% |
-| WACC −1 pp | US$88,04 | +2,5% |
+| Crecimiento años 2-5 +2 pp | US$88,86 | +3,5% |
+| Crecimiento años 2-5 −2 pp | US$83,15 | −3,2% |
+| Margen objetivo +3 pp | US$91,04 | +6,0% |
+| Margen objetivo −3 pp | US$80,71 | −6,0% |
+| WACC +1 pp | US$83,89 | −2,3% |
+| WACC −1 pp | US$88,01 | +2,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Margen objetivo +3 pp.
