@@ -122,6 +122,10 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (IS, "B49", "Yes", "ROIC después del año 10 distinto del costo de capital: líder en salud animal: marcas, relación con veterinarios y cartera diversificada de patentes."),
         (IS, "B50", 0.169, "ROIC terminal 16,9%: el menor entre el actual (25,3%) y el de Drugs (Pharmaceutical) según Damodaran (16,9%); costo de capital terminal 9,0%."),
     ],
+    # Cuarta ronda: tasa efectiva de los años 1-5 normalizada cuando la del LTM es atípica.
+    "BSX_IMPUESTO": [
+        (IS, "B24", 0.178, "Tasa efectiva de los años 1-5 = promedio 2023-2025 (19,8%, 19,1% y 14,6%). La del LTM (5%) refleja beneficios fiscales de una vez y no es sostenible."),
+    ],
 }
 
 
@@ -131,7 +135,8 @@ def main(argv: list[str]) -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     client = get_gspread_client()
     for tk in tickers:
-        sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())["sheet_id"]
+        base_tk = tk.split("_")[0]  # "BSX_IMPUESTO" = otra ronda de cambios de BSX, con su propio respaldo
+        sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{base_tk}_anclas.json").read_text())["sheet_id"]
         sh = client.open_by_key(sid)
         bk_path = OUT / f"{tk}.json"
         if revert:

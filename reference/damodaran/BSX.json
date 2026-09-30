@@ -238,7 +238,7 @@
   }
  },
  "margenes": {
-  "texto": "El margen GAAP subió de 4,9% (2016) a 19,8% LTM, pero sigue cargado por amortización de intangibles (~US$930 millones al año), litigios y reestructuración. La hoja supone 20% el próximo año y 24% de objetivo. Si la empresa deja de comprar, la amortización baja y el margen sube; si compra Penumbra y otras, el GAAP se queda cerca de 20%. Por eso las historias van de 20% a 26%."
+  "texto": "El margen GAAP subió de 4,9% (2016) a 19,8% LTM, pero sigue cargado por amortización de intangibles (~US$930 millones al año), litigios y reestructuración. La hoja supone 20% el próximo año y 24% de objetivo. Si la empresa deja de comprar, la amortización baja y el margen sube; si compra Penumbra y otras, el GAAP se queda cerca de 20%. Por eso las historias van de 20% a 26%. La tasa efectiva de los años 1-5 es 17,8% (promedio 2023-2025); la del LTM, 5%, refleja beneficios fiscales de una vez."
  },
  "reinversion": {
   "texto": "La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un sales-to-capital de 1,3 (años 1-5) y 1,2 (años 6-10), que ya asume que parte del crecimiento se compra. Con Penumbra, el capital invertido sube ~US$14.500 millones: el retorno de esa compra decide si el crecimiento crea valor. El ROIC después del año 10 es igual al costo de capital: incluida la plusvalía de las compras, el ROIC estuvo por debajo del costo de capital hasta 2025, así que no cumple la regla del ROIC terminal (se aplicó 11,1% y se revirtió el 30-sep-2026)."
@@ -284,7 +284,7 @@
    "Remedios o deterioro"
   ]
  ],
- "precio_lectura": "El precio (US$44,11) está 20% por encima del valor esperado (US$36,77) y entre las historias A (US$38,23) y C (US$46,05). El DCF inverso pide 9,4% anual en los años 1-5 con margen de 24% (lo logró ~28% de las empresas de este tamaño), o 7,6% con margen de 26%: más de lo que muestra la guía orgánica de 6,5-8%. ¿Qué sabe el mercado que yo no? Puede estar pagando por Penumbra y por la cartera futura (nuevas indicaciones de Watchman, catéteres de nueva generación), que la hoja no incluye, o por retornos sobre las compras mejores que los de los últimos años. Si no crees en la historia C, el precio ya pide más de lo que muestran los datos.",
+ "precio_lectura": "El precio (US$44,11) está 29% por encima del valor esperado (US$34,15) y cerca de la historia C (US$43,00). El DCF inverso pide 10,8% anual en los años 1-5 con margen de 24% (lo logró ~22% de las empresas de este tamaño), o 8,8% con margen de 26%: más de lo que muestra la guía orgánica de 6,5-8%. ¿Qué sabe el mercado que yo no? Puede estar pagando por Penumbra y por la cartera futura (nuevas indicaciones de Watchman, catéteres de nueva generación), que la hoja no incluye, o por retornos sobre las compras mejores que los de los últimos años. Valoradores que usan el margen ajustado y un múltiplo de salida alto (Alpha Spread, ~US$100-112) llegan a la conclusión contraria; la diferencia está en esos supuestos, no en los datos. Si no crees en la historia C, el precio ya pide más de lo que muestran los datos.",
  "frase": "Cartera cardiovascular diversificada que pierde su ciclo de producto excepcional",
  "confianza": "Media: la diversificación da piso; la duración de la competencia en campo pulsado es incierta",
  "cambiaria": "Electrofisiología y Watchman en EE.UU. en los próximos dos trimestres; cierre y precio de Penumbra",

@@ -209,8 +209,26 @@ def derived_percentages(text: str, old_rec: dict, new_rec: dict) -> tuple[str, i
     return text, n
 
 
+# Notas de revisión (blockquote «Actualización del …» y la tabla antes/ahora que la sigue): registran cifras
+# históricas y nunca se reescriben.
+NOTA = re.compile(r"<blockquote><p><strong>Actualización del .*?</blockquote>(?:\s*<table>.*?</table>)?", re.S)
+
+
 def substitute(text: str, table: dict[str, str]) -> tuple[str, int]:
     if not table:
+        return text, 0
+    partes, n, pos = [], 0, 0
+    for m in NOTA.finditer(text):
+        t, c = _substitute(text[pos:m.start()], table)
+        partes += [t, m.group(0)]
+        n += c
+        pos = m.end()
+    t, c = _substitute(text[pos:], table)
+    return "".join(partes) + t, n + c
+
+
+def _substitute(text: str, table: dict[str, str]) -> tuple[str, int]:
+    if not text:
         return text, 0
     pat = re.compile("|".join(re.escape(k) for k in sorted(table, key=len, reverse=True)) + r"(?![\d,])")
     n = 0
