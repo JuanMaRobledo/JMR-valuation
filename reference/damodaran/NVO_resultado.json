@@ -1,360 +1,362 @@
 {
- "ticker": "NVO",
- "fecha": "2026-09-30",
- "precio": 38.71,
- "dcf_base": 41.960928092896836,
- "g_ref": 0.03,
- "m_base": 0.4,
- "s2c": 0.45,
- "wacc": 0.09034143627647655,
- "beta_hoja": 1.086171172667352,
- "beta_bu": 1.0005238278367277,
- "beta_prop": 1.0005238278367277,
- "industria": "Drugs (Pharmaceutical)",
- "bu_sector": 0.92,
- "rf": 0.0511,
- "erp": 0.0409,
- "tasas_base": {
-  "tramo": ">$25,000 Mn",
-  "<(25)": 1.0,
-  "(25)-(20)": 0.6,
-  "(20)-(15)": 1.5,
-  "(15)-(10)": 3.0,
-  "(10)-(5)": 8.2,
-  "(5)-0": 21.3,
-  "0-5": 32.6,
-  "5-10": 18.1,
-  "10-15": 8.5,
-  "15-20": 3.2,
-  "20-25": 1.2,
-  "25-30": 0.4,
-  "30-35": 0.2,
-  "35-40": 0.1,
-  "40-45": 0.1,
-  ">45": 0.0,
-  "Mean": 2.1,
-  "Median": 2.0,
-  "StDev": 8.6,
-  "bins": [
-   "<(25)",
-   "(25)-(20)",
-   "(20)-(15)",
-   "(15)-(10)",
-   "(10)-(5)",
-   "(5)-0",
-   "0-5",
-   "5-10",
-   "10-15",
-   "15-20",
-   "20-25",
-   "25-30",
-   "30-35",
-   "35-40",
-   "40-45",
-   ">45"
+  "ticker": "NVO",
+  "fecha": "2026-09-30",
+  "precio": 38.23,
+  "dcf_base": 41.960928092896836,
+  "g_ref": 0.03,
+  "m_base": 0.4,
+  "s2c": 0.45,
+  "wacc": 0.09034143627647655,
+  "beta_hoja": 1.086171172667352,
+  "beta_bu": 1.0005238278367277,
+  "beta_prop": 1.0005238278367277,
+  "industria": "Drugs (Pharmaceutical)",
+  "bu_sector": 0.92,
+  "rf": 0.0511,
+  "erp": 0.0409,
+  "tasas_base": {
+    "tramo": ">$25,000 Mn",
+    "<(25)": 1.0,
+    "(25)-(20)": 0.6,
+    "(20)-(15)": 1.5,
+    "(15)-(10)": 3.0,
+    "(10)-(5)": 8.2,
+    "(5)-0": 21.3,
+    "0-5": 32.6,
+    "5-10": 18.1,
+    "10-15": 8.5,
+    "15-20": 3.2,
+    "20-25": 1.2,
+    "25-30": 0.4,
+    "30-35": 0.2,
+    "35-40": 0.1,
+    "40-45": 0.1,
+    ">45": 0.0,
+    "Mean": 2.1,
+    "Median": 2.0,
+    "StDev": 8.6,
+    "bins": [
+      "<(25)",
+      "(25)-(20)",
+      "(20)-(15)",
+      "(15)-(10)",
+      "(10)-(5)",
+      "(5)-0",
+      "0-5",
+      "5-10",
+      "10-15",
+      "15-20",
+      "20-25",
+      "25-30",
+      "30-35",
+      "35-40",
+      "40-45",
+      ">45"
+    ],
+    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+  },
+  "historias": [
+    {
+      "nombre": "A · El volumen compensa la caída de precio",
+      "prob": 0.4,
+      "margen": 0.4,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          0.05,
+          0.1,
+          0.1,
+          0.08,
+          0.07
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.08,
+          -0.02,
+          0,
+          0,
+          0
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.05,
+          -0.05,
+          -0.05,
+          -0.05,
+          -0.05
+        ],
+        "Enfermedades raras": [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      },
+      "cagr": 0.008358059738736712,
+      "rev5": 48322.7583802536,
+      "mix5": {
+        "Obesidad (Wegovy, Saxenda)": 0.37522990486837454,
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.42539955683490344,
+        "Insulinas y otros de diabetes": 0.1325856879295634,
+        "Enfermedades raras": 0.06678485036715869
+      },
+      "tasa_base": 0.7148946655129816,
+      "roic_terminal_usado": 0.131,
+      "valor_beta_hoja": 38.9802346353739,
+      "valor_beta_prop": 39.68655431205545
+    },
+    {
+      "nombre": "B · Guerra de precios con Lilly y genéricos",
+      "prob": 0.3,
+      "margen": 0.35,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          -0.02,
+          0.04,
+          0.05,
+          0.05,
+          0.04
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.12,
+          -0.06,
+          -0.04,
+          -0.03,
+          -0.03
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.07,
+          -0.07,
+          -0.07,
+          -0.07,
+          -0.07
+        ],
+        "Enfermedades raras": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "roic_terminal": "costo_capital",
+      "cagr": -0.028317103394146836,
+      "rev5": 40151.395052044,
+      "mix5": {
+        "Obesidad (Wegovy, Saxenda)": 0.3594493235737593,
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.4242867163185345,
+        "Insulinas y otros de diabetes": 0.14346449707009015,
+        "Enfermedades raras": 0.07279946303761613
+      },
+      "tasa_base": 0.862440049566401,
+      "roic_terminal_usado": 0.0,
+      "valor_beta_hoja": 28.2567651107055,
+      "valor_beta_prop": 28.72927877597852
+    },
+    {
+      "nombre": "C · La nueva generación recupera el liderazgo",
+      "prob": 0.2,
+      "margen": 0.43,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          0.1,
+          0.15,
+          0.15,
+          0.12,
+          0.1
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.04,
+          0,
+          0.02,
+          0.02,
+          0.02
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.04,
+          -0.04,
+          -0.04,
+          -0.04,
+          -0.04
+        ],
+        "Enfermedades raras": [
+          0.03,
+          0.03,
+          0.03,
+          0.03,
+          0.03
+        ]
+      },
+      "cagr": 0.036682970827976336,
+      "rev5": 55501.8769593069,
+      "mix5": {
+        "Obesidad (Wegovy, Saxenda)": 0.3988029488845671,
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.41850333676156937,
+        "Insulinas y otros de diabetes": 0.12164067786532579,
+        "Enfermedades raras": 0.06105303648853782
+      },
+      "tasa_base": 0.5678270302015944,
+      "roic_terminal_usado": 0.131,
+      "valor_beta_hoja": 46.571500977051244,
+      "valor_beta_prop": 47.44686729852584
+    },
+    {
+      "nombre": "D · Novo pierde relevancia frente a Lilly",
+      "prob": 0.1,
+      "margen": 0.3,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          -0.08,
+          -0.05,
+          0,
+          0.02,
+          0.02
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.15,
+          -0.1,
+          -0.08,
+          -0.05,
+          -0.05
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.08,
+          -0.08,
+          -0.08,
+          -0.08,
+          -0.08
+        ],
+        "Enfermedades raras": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "roic_terminal": "costo_capital",
+      "cagr": -0.05959356572762853,
+      "rev5": 34092.261172096005,
+      "mix5": {
+        "Obesidad (Wegovy, Saxenda)": 0.32939949343083064,
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.42479120193568654,
+        "Insulinas y otros de diabetes": 0.16007137175643346,
+        "Enfermedades raras": 0.08573793287704926
+      },
+      "tasa_base": 0.9137334477933108,
+      "roic_terminal_usado": 0.0,
+      "valor_beta_hoja": 23.29462042987667,
+      "valor_beta_prop": 23.65438475798277
+    }
   ],
-  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
- },
- "historias": [
-  {
-   "nombre": "A · El volumen compensa la caída de precio",
-   "prob": 0.4,
-   "margen": 0.4,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     0.05,
-     0.1,
-     0.1,
-     0.08,
-     0.07
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.08,
-     -0.02,
-     0,
-     0,
-     0
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.05,
-     -0.05,
-     -0.05,
-     -0.05,
-     -0.05
-    ],
-    "Enfermedades raras": [
-     0.02,
-     0.02,
-     0.02,
-     0.02,
-     0.02
-    ]
-   },
-   "cagr": 0.008358059738736712,
-   "rev5": 48322.7583802536,
-   "mix5": {
-    "Obesidad (Wegovy, Saxenda)": 0.37522990486837454,
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.42539955683490344,
-    "Insulinas y otros de diabetes": 0.1325856879295634,
-    "Enfermedades raras": 0.06678485036715869
-   },
-   "tasa_base": 0.7148946655129816,
-   "roic_terminal_usado": 0.131,
-   "valor_beta_hoja": 38.98023463537389,
-   "valor_beta_prop": 39.68655431205546
-  },
-  {
-   "nombre": "B · Guerra de precios con Lilly y genéricos",
-   "prob": 0.3,
-   "margen": 0.35,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     -0.02,
-     0.04,
-     0.05,
-     0.05,
-     0.04
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.12,
-     -0.06,
-     -0.04,
-     -0.03,
-     -0.03
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.07,
-     -0.07,
-     -0.07,
-     -0.07,
-     -0.07
-    ],
-    "Enfermedades raras": [
-     0,
-     0,
-     0,
-     0,
-     0
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "cagr": -0.028317103394146836,
-   "rev5": 40151.395052044,
-   "mix5": {
-    "Obesidad (Wegovy, Saxenda)": 0.3594493235737593,
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.4242867163185345,
-    "Insulinas y otros de diabetes": 0.14346449707009015,
-    "Enfermedades raras": 0.07279946303761613
-   },
-   "tasa_base": 0.862440049566401,
-   "roic_terminal_usado": 0.0,
-   "valor_beta_hoja": 28.2567651107055,
-   "valor_beta_prop": 28.72927877597852
-  },
-  {
-   "nombre": "C · La nueva generación recupera el liderazgo",
-   "prob": 0.2,
-   "margen": 0.43,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     0.1,
-     0.15,
-     0.15,
-     0.12,
-     0.1
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.04,
-     0,
-     0.02,
-     0.02,
-     0.02
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.04,
-     -0.04,
-     -0.04,
-     -0.04,
-     -0.04
-    ],
-    "Enfermedades raras": [
-     0.03,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ]
-   },
-   "cagr": 0.036682970827976336,
-   "rev5": 55501.87695930691,
-   "mix5": {
-    "Obesidad (Wegovy, Saxenda)": 0.398802948884567,
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.4185033367615693,
-    "Insulinas y otros de diabetes": 0.12164067786532577,
-    "Enfermedades raras": 0.06105303648853781
-   },
-   "tasa_base": 0.5678270302015944,
-   "roic_terminal_usado": 0.131,
-   "valor_beta_hoja": 46.57150097705124,
-   "valor_beta_prop": 47.44686729852583
-  },
-  {
-   "nombre": "D · Novo pierde relevancia frente a Lilly",
-   "prob": 0.1,
-   "margen": 0.3,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     -0.08,
-     -0.05,
-     0,
-     0.02,
-     0.02
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.15,
-     -0.1,
-     -0.08,
-     -0.05,
-     -0.05
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.08,
-     -0.08,
-     -0.08,
-     -0.08,
-     -0.08
-    ],
-    "Enfermedades raras": [
-     0,
-     0,
-     0,
-     0,
-     0
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "cagr": -0.05959356572762853,
-   "rev5": 34092.261172096005,
-   "mix5": {
-    "Obesidad (Wegovy, Saxenda)": 0.32939949343083064,
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": 0.42479120193568654,
-    "Insulinas y otros de diabetes": 0.16007137175643346,
-    "Enfermedades raras": 0.08573793287704926
-   },
-   "tasa_base": 0.9137334477933108,
-   "roic_terminal_usado": 0.0,
-   "valor_beta_hoja": 23.29462042987667,
-   "valor_beta_prop": 23.65438475798277
-  }
- ],
- "valor_esperado_beta_hoja": 35.71288562575912,
- "valor_esperado_beta_prop": 36.348217293119184,
- "betas": [
-  {
-   "enfoque": "Hoja (regresión o la cargada en el libro)",
-   "beta": 1.086171172667352,
-   "ke": 0.09552440096209469,
-   "wacc": 0.09034143627647655,
-   "dcf_base": 41.960928092896836
-  },
-  {
-   "enfoque": "Bottom-up del sector (Drugs (Pharmaceutical), reapalancada)",
-   "beta": 1.0005238278367277,
-   "ke": 0.09202142455852216,
-   "wacc": 0.08719188005533603,
-   "dcf_base": 42.75089070787342
-  }
- ],
- "sensibilidad": {
-  "g": [
-   -0.010000000000000002,
-   0.009999999999999998,
-   0.03,
-   0.05,
-   0.07
+  "valor_esperado_beta_hoja": 35.71288562575913,
+  "valor_esperado_beta_prop": 36.348217293119184,
+  "betas": [
+    {
+      "enfoque": "Hoja (regresión o la cargada en el libro)",
+      "beta": 1.086171172667352,
+      "ke": 0.09552440096209469,
+      "wacc": 0.09034143627647655,
+      "dcf_base": 41.960928092896836
+    },
+    {
+      "enfoque": "Bottom-up del sector (Drugs (Pharmaceutical), reapalancada)",
+      "beta": 1.0005238278367277,
+      "ke": 0.09202142455852216,
+      "wacc": 0.08719188005533603,
+      "dcf_base": 42.75089070787342
+    }
   ],
-  "m": [
-   0.36000000000000004,
-   0.38,
-   0.4,
-   0.42000000000000004,
-   0.44
+  "sensibilidad": {
+    "g": [
+      -0.010000000000000002,
+      0.009999999999999998,
+      0.03,
+      0.05,
+      0.07
+    ],
+    "m": [
+      0.36000000000000004,
+      0.38,
+      0.4,
+      0.42000000000000004,
+      0.44
+    ],
+    "v": [
+      [
+        34.086806986386186,
+        35.64839201015525,
+        37.2099770339243,
+        38.771562057693366,
+        40.333147081462414
+      ],
+      [
+        36.39689124108802,
+        38.17224868165028,
+        39.94760612221254,
+        41.72296356277481,
+        43.49832100333706
+      ],
+      [
+        38.94472941498409,
+        40.959620795204124,
+        42.97451217542418,
+        44.98940355564423,
+        47.004294935864266
+      ],
+      [
+        41.75744763334487,
+        44.04029343578923,
+        46.32313923823361,
+        48.60598504067797,
+        50.88883084312234
+      ],
+      [
+        44.864733200471285,
+        47.446840890370744,
+        50.02894858027021,
+        52.611056270169705,
+        55.19316396006917
+      ]
+    ],
+    "referencia_constante": 42.97451217542418,
+    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+  },
+  "inverso": [
+    {
+      "beta": 1.086171172667352,
+      "margen": 0.35,
+      "g": 0.032283929765813624,
+      "tasa_base": 0.5965087779268954
+    },
+    {
+      "beta": 1.086171172667352,
+      "margen": 0.4,
+      "g": -0.002312317046845592,
+      "tasa_base": 0.7603504706195623
+    },
+    {
+      "beta": 1.086171172667352,
+      "margen": 0.44,
+      "g": -0.024512679851425634,
+      "tasa_base": 0.8549240161670733
+    },
+    {
+      "beta": 1.0005238278367277,
+      "margen": 0.35,
+      "g": 0.026919610663933002,
+      "tasa_base": 0.631484138471157
+    },
+    {
+      "beta": 1.0005238278367277,
+      "margen": 0.4,
+      "g": -0.0071890752097785995,
+      "tasa_base": 0.7811254603936568
+    },
+    {
+      "beta": 1.0005238278367277,
+      "margen": 0.44,
+      "g": -0.02910770426307295,
+      "tasa_base": 0.8637366349914397
+    }
   ],
-  "v": [
-   [
-    33.282845679168815,
-    34.80759962229304,
-    36.33235356541726,
-    37.85710750854149,
-    39.38186145166571
-   ],
-   [
-    35.53844497263817,
-    37.27192935981462,
-    39.005413746991074,
-    40.73889813416754,
-    42.472382521343995
-   ],
-   [
-    38.02619059196666,
-    39.99355934243174,
-    41.960928092896836,
-    43.92829684336193,
-    45.895665593827005
-   ],
-   [
-    40.77256887368947,
-    43.00157215294761,
-    45.23057543220576,
-    47.4595787114639,
-    49.68858199072205
-   ],
-   [
-    43.80656692616418,
-    46.32777379086823,
-    48.848980655572284,
-    51.370187520276374,
-    53.89139438498042
-   ]
-  ]
- },
- "inverso": [
-  {
-   "beta": 1.086171172667352,
-   "margen": 0.35,
-   "g": 0.044,
-   "tasa_base": 0.5201200000000001
-  },
-  {
-   "beta": 1.086171172667352,
-   "margen": 0.4,
-   "g": 0.008,
-   "tasa_base": 0.7164200000000001
-  },
-  {
-   "beta": 1.086171172667352,
-   "margen": 0.44,
-   "g": -0.014,
-   "tasa_base": 0.81014
-  },
-  {
-   "beta": 1.0005238278367277,
-   "margen": 0.35,
-   "g": 0.038,
-   "tasa_base": 0.5592400000000002
-  },
-  {
-   "beta": 1.0005238278367277,
-   "margen": 0.4,
-   "g": 0.004,
-   "tasa_base": 0.7334600000000002
-  },
-  {
-   "beta": 1.0005238278367277,
-   "margen": 0.44,
-   "g": -0.018,
-   "tasa_base": 0.82718
-  }
- ],
- "ingresos_ltm": 46353
+  "ingresos_ltm": 46353
 }

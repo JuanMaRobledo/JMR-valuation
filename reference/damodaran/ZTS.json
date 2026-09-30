@@ -1,258 +1,258 @@
 {
- "ticker": "ZTS",
- "empresa": "Zoetis Inc.",
- "fecha": "2026-09-30",
- "industria_damodaran": "Drugs (Pharmaceutical)",
- "segmentos": {
-  "Animales de compañía": 6350,
-  "Animales de producción": 3167
- },
- "riesgo": {
-  "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$106,44 a US$111,84. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo."
- },
- "historias": [
-  {
-   "nombre": "A · Tropiezo temporal; vuelve a crecer con innovación",
-   "prob": 0.4,
-   "margen": 0.36,
-   "crec": {
-    "Animales de compañía": [
-     0.01,
-     0.05,
-     0.06,
-     0.06,
-     0.06
-    ],
-    "Animales de producción": [
-     0.03,
-     0.04,
-     0.04,
-     0.04,
-     0.04
-    ]
-   }
+  "ticker": "ZTS",
+  "empresa": "Zoetis Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Drugs (Pharmaceutical)",
+  "segmentos": {
+    "Animales de compañía": 6350,
+    "Animales de producción": 3167
   },
-  {
-   "nombre": "B · Erosión prolongada de franquicias clave",
-   "prob": 0.35,
-   "margen": 0.33,
-   "crec": {
-    "Animales de compañía": [
-     -0.04,
-     0,
-     0.02,
-     0.03,
-     0.03
-    ],
-    "Animales de producción": [
-     0.02,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ]
-   },
-   "roic_terminal": "costo_capital"
+  "riesgo": {
+    "beta_propuesta": null,
+    "texto": "La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,10; el DCF Base baja de US$106,44 a US$111,84. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo."
   },
-  {
-   "nombre": "C · Recuperación fuerte con nuevos productos",
-   "prob": 0.15,
-   "margen": 0.38,
-   "crec": {
-    "Animales de compañía": [
-     0.04,
-     0.08,
-     0.08,
-     0.08,
-     0.07
+  "historias": [
+    {
+      "nombre": "A · Tropiezo temporal; vuelve a crecer con innovación",
+      "prob": 0.4,
+      "margen": 0.36,
+      "crec": {
+        "Animales de compañía": [
+          0.01,
+          0.05,
+          0.06,
+          0.06,
+          0.06
+        ],
+        "Animales de producción": [
+          0.03,
+          0.04,
+          0.04,
+          0.04,
+          0.04
+        ]
+      }
+    },
+    {
+      "nombre": "B · Erosión prolongada de franquicias clave",
+      "prob": 0.35,
+      "margen": 0.33,
+      "crec": {
+        "Animales de compañía": [
+          -0.04,
+          0,
+          0.02,
+          0.03,
+          0.03
+        ],
+        "Animales de producción": [
+          0.02,
+          0.03,
+          0.03,
+          0.03,
+          0.03
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    },
+    {
+      "nombre": "C · Recuperación fuerte con nuevos productos",
+      "prob": 0.15,
+      "margen": 0.38,
+      "crec": {
+        "Animales de compañía": [
+          0.04,
+          0.08,
+          0.08,
+          0.08,
+          0.07
+        ],
+        "Animales de producción": [
+          0.04,
+          0.04,
+          0.04,
+          0.04,
+          0.04
+        ]
+      }
+    },
+    {
+      "nombre": "D · Genéricos y competencia generalizada",
+      "prob": 0.1,
+      "margen": 0.29,
+      "crec": {
+        "Animales de compañía": [
+          -0.08,
+          -0.04,
+          0,
+          0.01,
+          0.02
+        ],
+        "Animales de producción": [
+          0,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    }
+  ],
+  "margenes_inverso": [
+    0.32,
+    0.36,
+    0.38
+  ],
+  "historia": "Zoetis es la mayor empresa de salud animal del mundo: medicamentos, vacunas y diagnósticos para mascotas (~2/3 de las ventas) y animales de producción. Durante una década fue un compuesto casi perfecto: crecimiento de un dígito alto, margen operativo de ~37% y franquicias crónicas (dermatología con Apoquel y Cytopoint, dolor con Librela y Solensia, parasiticidas con Simparica) que se renuevan cada mes. En 2026 varias franquicias se debilitaron a la vez: en el 2T las ventas cayeron 0,2% y mascotas en EE.UU. 11%, por demanda más débil, competencia en dermatología y parasiticidas, genéricos de Cerenia y Convenia y menores ventas de Librela. Mientras tanto, la empresa se endeudó para recomprar acciones. La historia de cinco años es si este es un tropiezo temporal de un líder o el fin de su poder de precio en mascotas.",
+  "filtro": [
+    [
+      "Las ventas vuelven a crecer ~5% anual desde 2027",
+      "Sí",
+      "Sí: la salud animal crece a un dígito medio y Zoetis tiene cartera nueva",
+      "Media"
     ],
-    "Animales de producción": [
-     0.04,
-     0.04,
-     0.04,
-     0.04,
-     0.04
+    [
+      "El margen operativo se mantiene en ~36%",
+      "Sí",
+      "Sí: 36-38% en 2023-2025 incluso con ventas planas",
+      "Probable"
+    ],
+    [
+      "Las franquicias de dermatología y dolor pierden participación de forma duradera",
+      "Sí",
+      "Sí: competidores nuevos y dudas sobre Librela",
+      "Media"
+    ],
+    [
+      "El dueño de mascotas deja de pagar precios altos",
+      "Sí",
+      "Parcialmente: el 10-Q habla de sensibilidad de precio por la macro",
+      "Media-baja"
     ]
-   }
+  ],
+  "tasas_base_nota": "Para empresas de US$7.000-12.000 millones, crecer 4,5% anual cinco años (historia A) lo logró ~60%: la hoja pide algo común. El valor de Zoetis depende de sostener un margen de 36%, que es excepcional para cualquier empresa, más que del crecimiento.",
+  "crecimiento": {
+    "texto": "Ingresos de US$8.544 millones (2023, +5,7%), US$9.256 millones (2024, +8,3%) y US$9.467 millones (2025, +2,3%); LTM US$9.517 millones. En el 2T26 las ventas cayeron 0,2% y mascotas en EE.UU. 11%. La hoja supone 2% el próximo año y 5% en los años 2-5. La división de las historias (compañía ~2/3, producción ~1/3) es una aproximación.",
+    "tabla": {
+      "cols": [
+        "US$ millones",
+        "2023",
+        "2024",
+        "2025",
+        "LTM"
+      ],
+      "align": [
+        "l",
+        "r",
+        "r",
+        "r",
+        "r"
+      ],
+      "rows": [
+        [
+          "Ingresos",
+          "8.544",
+          "9.256",
+          "9.467",
+          "9.517"
+        ],
+        [
+          "Crecimiento",
+          "+5,7%",
+          "+8,3%",
+          "+2,3%",
+          "—"
+        ],
+        [
+          "Margen operativo",
+          "37,2%",
+          "36,3%",
+          "37,8%",
+          "36,9%"
+        ],
+        [
+          "FCFF (hoja)",
+          "1.984",
+          "2.993",
+          "2.432",
+          "—"
+        ]
+      ]
+    }
   },
-  {
-   "nombre": "D · Genéricos y competencia generalizada",
-   "prob": 0.1,
-   "margen": 0.29,
-   "crec": {
-    "Animales de compañía": [
-     -0.08,
-     -0.04,
-     0,
-     0.01,
-     0.02
+  "margenes": {
+    "texto": "El margen operativo se mantuvo en 36-38% con ventas planas: es un negocio con poder de precio y costos flexibles. La hoja supone 36% estable. Si la competencia obliga a bajar precios en mascotas, el margen cae rápido porque la mezcla de mascotas es la más rentable. Las historias van de 29% a 38%."
+  },
+  "reinversion": {
+    "texto": "Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Moat ancho (cartera de patentes que se renueva, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%): el ROIC después del año 10 es 16,9%, el menor entre el ROIC actual (25,3%) y el de la industria (17,0%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026)."
+  },
+  "prob_texto": "A (40%, antes 45%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%, antes 30%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
+  "premortem": [
+    "Los competidores en dermatología (nuevos inhibidores de JAK y anticuerpos) le quitan participación a Apoquel y Cytopoint.",
+    "Las dudas de seguridad sobre Librela reducen su uso de forma permanente.",
+    "Los genéricos de Cerenia y Convenia y los parasiticidas de la competencia bajan precios.",
+    "El dueño de mascotas, presionado por la macro, visita menos al veterinario.",
+    "La deuda para recompras limita la flexibilidad si el flujo cae."
+  ],
+  "contra": "la caída es simultánea en varias franquicias (no un solo producto), lo que apunta a un problema competitivo más que a un año malo; si mascotas EE.UU. sigue cayendo en el 3T y 4T, B gana peso.",
+  "indicadores": [
+    [
+      "Mascotas EE.UU. (interanual)",
+      "−11% (2T26)",
+      "≥ 0% en 2027",
+      "Caídas > 10% tres trimestres más"
     ],
-    "Animales de producción": [
-     0,
-     0.02,
-     0.02,
-     0.02,
-     0.02
+    [
+      "Ventas totales (orgánicas)",
+      "−0,2% (2T26)",
+      "≥ +4% en 2027",
+      "Negativas"
+    ],
+    [
+      "Franquicia de dermatología (Apoquel, Cytopoint)",
+      "En baja",
+      "Estable",
+      "Caída de doble dígito"
+    ],
+    [
+      "Margen operativo",
+      "~37%",
+      "≥ 36%",
+      "≤ 33%"
+    ],
+    [
+      "Deuda neta / EBITDA",
+      "En alza",
+      "≤ 2x",
+      "> 2,5x"
     ]
-   },
-   "roic_terminal": "costo_capital"
-  }
- ],
- "margenes_inverso": [
-  0.32,
-  0.36,
-  0.38
- ],
- "historia": "Zoetis es la mayor empresa de salud animal del mundo: medicamentos, vacunas y diagnósticos para mascotas (~2/3 de las ventas) y animales de producción. Durante una década fue un compuesto casi perfecto: crecimiento de un dígito alto, margen operativo de ~37% y franquicias crónicas (dermatología con Apoquel y Cytopoint, dolor con Librela y Solensia, parasiticidas con Simparica) que se renuevan cada mes. En 2026 varias franquicias se debilitaron a la vez: en el 2T las ventas cayeron 0,2% y mascotas en EE.UU. 11%, por demanda más débil, competencia en dermatología y parasiticidas, genéricos de Cerenia y Convenia y menores ventas de Librela. Mientras tanto, la empresa se endeudó para recomprar acciones. La historia de cinco años es si este es un tropiezo temporal de un líder o el fin de su poder de precio en mascotas.",
- "filtro": [
-  [
-   "Las ventas vuelven a crecer ~5% anual desde 2027",
-   "Sí",
-   "Sí: la salud animal crece a un dígito medio y Zoetis tiene cartera nueva",
-   "Media"
   ],
-  [
-   "El margen operativo se mantiene en ~36%",
-   "Sí",
-   "Sí: 36-38% en 2023-2025 incluso con ventas planas",
-   "Probable"
-  ],
-  [
-   "Las franquicias de dermatología y dolor pierden participación de forma duradera",
-   "Sí",
-   "Sí: competidores nuevos y dudas sobre Librela",
-   "Media"
-  ],
-  [
-   "El dueño de mascotas deja de pagar precios altos",
-   "Sí",
-   "Parcialmente: el 10-Q habla de sensibilidad de precio por la macro",
-   "Media-baja"
-  ]
- ],
- "tasas_base_nota": "Para empresas de US$7.000-12.000 millones, crecer 4,5% anual cinco años (historia A) lo logró ~60%: la hoja pide algo común. El valor de Zoetis depende de sostener un margen de 36%, que es excepcional para cualquier empresa, más que del crecimiento.",
- "crecimiento": {
-  "texto": "Ingresos de US$8.544 millones (2023, +5,7%), US$9.256 millones (2024, +8,3%) y US$9.467 millones (2025, +2,3%); LTM US$9.517 millones. En el 2T26 las ventas cayeron 0,2% y mascotas en EE.UU. 11%. La hoja supone 2% el próximo año y 5% en los años 2-5. La división de las historias (compañía ~2/3, producción ~1/3) es una aproximación.",
-  "tabla": {
-   "cols": [
-    "US$ millones",
-    "2023",
-    "2024",
-    "2025",
-    "LTM"
-   ],
-   "align": [
-    "l",
-    "r",
-    "r",
-    "r",
-    "r"
-   ],
-   "rows": [
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez",
+  "confianza": "Media: la calidad del negocio es alta; la duración de la presión competitiva no",
+  "cambiaria": "Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres",
+  "revision": "Resultados del 3T26 (nov-2026)",
+  "fuentes": [
     [
-     "Ingresos",
-     "8.544",
-     "9.256",
-     "9.467",
-     "9.517"
+      "Zoetis, Form 10-Q del 2T 2026",
+      "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000040/zts-20260630.htm"
     ],
     [
-     "Crecimiento",
-     "+5,7%",
-     "+8,3%",
-     "+2,3%",
-     "—"
+      "Zoetis, Form 10-Q del 1T 2026",
+      "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000024/zts-20260331.htm"
     ],
     [
-     "Margen operativo",
-     "37,2%",
-     "36,3%",
-     "37,8%",
-     "36,9%"
+      "Zoetis, Form 10-K 2025",
+      "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000011/zts-20251231.htm"
     ],
     [
-     "FCFF (hoja)",
-     "1.984",
-     "2.993",
-     "2.432",
-     "—"
+      "Mauboussin & Callahan, The Base Rate Book (2016)",
+      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+    ],
+    [
+      "Damodaran, Betas by Sector (US), enero 2026",
+      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
     ]
-   ]
-  }
- },
- "margenes": {
-  "texto": "El margen operativo se mantuvo en 36-38% con ventas planas: es un negocio con poder de precio y costos flexibles. La hoja supone 36% estable. Si la competencia obliga a bajar precios en mascotas, el margen cae rápido porque la mezcla de mascotas es la más rentable. Las historias van de 29% a 38%."
- },
- "reinversion": {
-  "texto": "Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Moat ancho (cartera de patentes que se renueva, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%): el ROIC después del año 10 es 16,9%, el menor entre el ROIC actual (25,3%) y el de la industria (17,0%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026)."
- },
- "prob_texto": "A (40%, antes 45%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%, antes 30%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
- "premortem": [
-  "Los competidores en dermatología (nuevos inhibidores de JAK y anticuerpos) le quitan participación a Apoquel y Cytopoint.",
-  "Las dudas de seguridad sobre Librela reducen su uso de forma permanente.",
-  "Los genéricos de Cerenia y Convenia y los parasiticidas de la competencia bajan precios.",
-  "El dueño de mascotas, presionado por la macro, visita menos al veterinario.",
-  "La deuda para recompras limita la flexibilidad si el flujo cae."
- ],
- "contra": "la caída es simultánea en varias franquicias (no un solo producto), lo que apunta a un problema competitivo más que a un año malo; si mascotas EE.UU. sigue cayendo en el 3T y 4T, B gana peso.",
- "indicadores": [
-  [
-   "Mascotas EE.UU. (interanual)",
-   "−11% (2T26)",
-   "≥ 0% en 2027",
-   "Caídas > 10% tres trimestres más"
-  ],
-  [
-   "Ventas totales (orgánicas)",
-   "−0,2% (2T26)",
-   "≥ +4% en 2027",
-   "Negativas"
-  ],
-  [
-   "Franquicia de dermatología (Apoquel, Cytopoint)",
-   "En baja",
-   "Estable",
-   "Caída de doble dígito"
-  ],
-  [
-   "Margen operativo",
-   "~37%",
-   "≥ 36%",
-   "≤ 33%"
-  ],
-  [
-   "Deuda neta / EBITDA",
-   "En alza",
-   "≤ 2x",
-   "> 2,5x"
   ]
- ],
- "precio_lectura": "El precio (US$71,43) queda entre la historia B (US$65,08) y la A (US$118,14), 25% por debajo del valor esperado (US$95,47): el mercado valora algo cercano a B, una erosión que no es temporal. El DCF inverso pide ingresos cayendo 1-4% al año con márgenes de 32-38% (lo logró ~83-92% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Descuenta que la caída de 2026 es un cambio de régimen y no un tropiezo. Los resultados del 3T (mascotas en EE.UU. y Librela) dirán cuál de las dos historias pesa más.",
- "frase": "Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez",
- "confianza": "Media: la calidad del negocio es alta; la duración de la presión competitiva no",
- "cambiaria": "Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres",
- "revision": "Resultados del 3T26 (nov-2026)",
- "fuentes": [
-  [
-   "Zoetis, Form 10-Q del 2T 2026",
-   "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000040/zts-20260630.htm"
-  ],
-  [
-   "Zoetis, Form 10-Q del 1T 2026",
-   "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000024/zts-20260331.htm"
-  ],
-  [
-   "Zoetis, Form 10-K 2025",
-   "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000011/zts-20251231.htm"
-  ],
-  [
-   "Mauboussin & Callahan, The Base Rate Book (2016)",
-   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-  ],
-  [
-   "Damodaran, Betas by Sector (US), enero 2026",
-   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
-  ]
- ]
 }

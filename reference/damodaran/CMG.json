@@ -1,228 +1,228 @@
 {
- "ticker": "CMG",
- "empresa": "Chipotle Mexican Grill, Inc.",
- "fecha": "2026-09-30",
- "industria_damodaran": "Restaurant/Dining",
- "segmentos": {
-  "Chipotle": 12423.8
- },
- "riesgo": {
-  "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) sin deuda financiera da 0,78, y el DCF Base sube de US$25,48 a US$27,63. Hay una razón para no bajar tanto: los arrendamientos son deuda operativa que el modelo trata como gasto, y ese apalancamiento operativo sube el riesgo real del patrimonio. La beta de la hoja es defendible."
- },
- "historias": [
-  {
-   "nombre": "A · Crece por aperturas con comparables bajas",
-   "prob": 0.45,
-   "margen": 0.16,
-   "crec": {
-    "Chipotle": [
-     0.08,
-     0.08,
-     0.07,
-     0.07,
-     0.06
-    ]
-   }
+  "ticker": "CMG",
+  "empresa": "Chipotle Mexican Grill, Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Restaurant/Dining",
+  "segmentos": {
+    "Chipotle": 12423.8
   },
-  {
-   "nombre": "B · Tráfico débil y margen presionado",
-   "prob": 0.3,
-   "margen": 0.14,
-   "crec": {
-    "Chipotle": [
-     0.06,
-     0.05,
-     0.05,
-     0.05,
-     0.04
-    ]
-   }
+  "riesgo": {
+    "beta_propuesta": null,
+    "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) sin deuda financiera da 0,78, y el DCF Base sube de US$25,48 a US$27,63. Hay una razón para no bajar tanto: los arrendamientos son deuda operativa que el modelo trata como gasto, y ese apalancamiento operativo sube el riesgo real del patrimonio. La beta de la hoja es defendible."
   },
-  {
-   "nombre": "C · Vuelve el tráfico",
-   "prob": 0.2,
-   "margen": 0.18,
-   "crec": {
-    "Chipotle": [
-     0.11,
-     0.11,
-     0.1,
-     0.1,
-     0.09
-    ]
-   }
-  },
-  {
-   "nombre": "D · Saturación: el tráfico cae",
-   "prob": 0.05,
-   "margen": 0.12,
-   "crec": {
-    "Chipotle": [
-     0.03,
-     0.03,
-     0.03,
-     0.02,
-     0.02
-    ]
-   },
-   "roic_terminal": "costo_capital"
-  }
- ],
- "margenes_inverso": [
-  0.15,
-  0.17,
-  0.19
- ],
- "historia": "Chipotle es una cadena de comida mexicana rápida-casual con 4.186 locales propios (casi todos en EE.UU.), sin franquicias y sin deuda financiera. Su crecimiento tiene dos motores: aperturas (~8% más unidades al año, con Chipotlanes de alto retorno) y ventas comparables (ticket y tráfico). El primer motor sigue intacto; el segundo se debilitó: en el 2T26 las comparables fueron +2,2%, con tráfico de solo +1,0%, y el margen operativo bajó de 16,9% (2024) a 14,6% LTM por alimentos, aranceles y salarios. La acción cayó a la mitad. La pregunta es si Chipotle es todavía una historia de crecimiento de doble dígito o ya una cadena madura que crece por aperturas con márgenes normales de restaurante.",
- "filtro": [
-  [
-   "Las ventas crecen ~8% anual cinco años",
-   "Sí",
-   "Sí: ~8% de unidades nuevas al año más comparables de 1-3%",
-   "Probable"
+  "historias": [
+    {
+      "nombre": "A · Crece por aperturas con comparables bajas",
+      "prob": 0.45,
+      "margen": 0.16,
+      "crec": {
+        "Chipotle": [
+          0.08,
+          0.08,
+          0.07,
+          0.07,
+          0.06
+        ]
+      }
+    },
+    {
+      "nombre": "B · Tráfico débil y margen presionado",
+      "prob": 0.3,
+      "margen": 0.14,
+      "crec": {
+        "Chipotle": [
+          0.06,
+          0.05,
+          0.05,
+          0.05,
+          0.04
+        ]
+      }
+    },
+    {
+      "nombre": "C · Vuelve el tráfico",
+      "prob": 0.2,
+      "margen": 0.18,
+      "crec": {
+        "Chipotle": [
+          0.11,
+          0.11,
+          0.1,
+          0.1,
+          0.09
+        ]
+      }
+    },
+    {
+      "nombre": "D · Saturación: el tráfico cae",
+      "prob": 0.05,
+      "margen": 0.12,
+      "crec": {
+        "Chipotle": [
+          0.03,
+          0.03,
+          0.03,
+          0.02,
+          0.02
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    }
   ],
-  [
-   "El margen operativo vuelve a 17%",
-   "Sí",
-   "Sí: fue 16,9% en 2024; hoy lo frenan costos y tráfico débil",
-   "Incierto"
+  "margenes_inverso": [
+    0.15,
+    0.17,
+    0.19
   ],
-  [
-   "El tráfico vuelve a crecer 3-4% anual",
-   "Sí",
-   "Poco: el consumidor de ingresos medios está presionado",
-   "Baja-media"
-  ],
-  [
-   "Chipotle llega a 7.000 locales en Norteamérica",
-   "Sí",
-   "Sí: es la meta de la empresa y el ritmo es ~350 aperturas al año",
-   "Probable a largo plazo"
-  ]
- ],
- "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (historia A) lo logró ~38%; 10,2% (historia C), ~25%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).",
- "crecimiento": {
-  "texto": "Ventas de US$9.872 millones (2023, +14,3%), US$11.314 millones (2024, +14,6%) y US$11.926 millones (2025, +5,4%); LTM US$12.424 millones. En el 2T26 los ingresos crecieron 9,3% (US$3.300 millones) con comparables de +2,2% (+1,2% ticket, +1,0% tráfico) y 38,3% de ventas digitales. El salto de 2025 hacia abajo viene de comparables planas o negativas; las aperturas sostuvieron el crecimiento.",
-  "tabla": {
-   "cols": [
-    "US$ millones",
-    "2023",
-    "2024",
-    "2025",
-    "LTM"
-   ],
-   "align": [
-    "l",
-    "r",
-    "r",
-    "r",
-    "r"
-   ],
-   "rows": [
+  "historia": "Chipotle es una cadena de comida mexicana rápida-casual con 4.186 locales propios (casi todos en EE.UU.), sin franquicias y sin deuda financiera. Su crecimiento tiene dos motores: aperturas (~8% más unidades al año, con Chipotlanes de alto retorno) y ventas comparables (ticket y tráfico). El primer motor sigue intacto; el segundo se debilitó: en el 2T26 las comparables fueron +2,2%, con tráfico de solo +1,0%, y el margen operativo bajó de 16,9% (2024) a 14,6% LTM por alimentos, aranceles y salarios. La acción cayó a la mitad. La pregunta es si Chipotle es todavía una historia de crecimiento de doble dígito o ya una cadena madura que crece por aperturas con márgenes normales de restaurante.",
+  "filtro": [
     [
-     "Ingresos",
-     "9.872",
-     "11.314",
-     "11.926",
-     "12.424"
+      "Las ventas crecen ~8% anual cinco años",
+      "Sí",
+      "Sí: ~8% de unidades nuevas al año más comparables de 1-3%",
+      "Probable"
     ],
     [
-     "Crecimiento",
-     "+14,3%",
-     "+14,6%",
-     "+5,4%",
-     "—"
+      "El margen operativo vuelve a 17%",
+      "Sí",
+      "Sí: fue 16,9% en 2024; hoy lo frenan costos y tráfico débil",
+      "Incierto"
     ],
     [
-     "Margen operativo",
-     "15,8%",
-     "16,9%",
-     "16,2%",
-     "14,6%"
+      "El tráfico vuelve a crecer 3-4% anual",
+      "Sí",
+      "Poco: el consumidor de ingresos medios está presionado",
+      "Baja-media"
     ],
     [
-     "FCFF (hoja)",
-     "265",
-     "1.370",
-     "1.109",
-     "—"
+      "Chipotle llega a 7.000 locales en Norteamérica",
+      "Sí",
+      "Sí: es la meta de la empresa y el ritmo es ~350 aperturas al año",
+      "Probable a largo plazo"
     ]
-   ]
-  }
- },
- "margenes": {
-  "texto": "El margen operativo (con el alquiler dentro del EBIT, como lo reporta la empresa) pasó de 15,8% a 16,9% y bajó a 14,6% LTM. La hoja supone 15% el próximo año y 17% de objetivo, es decir, volver al máximo de 2024. Es posible con apalancamiento operativo si vuelve el tráfico; sin tráfico, los aumentos de precio compiten con la elasticidad del consumidor. Las historias van de 12% a 18%."
- },
- "reinversion": {
-  "texto": "Todo el crecimiento es propio: cada local nuevo se paga con caja (capex de US$560-670 millones al año). La hoja usa un sales-to-capital de 2,6 (años 1-5) y 2,2 (años 6-10). El retorno sobre el capital es alto (los locales se pagan en 2-3 años), así que el crecimiento crea valor mientras la economía unitaria se sostenga. La empresa además recompró US$2.783 millones LTM. Moat estrecho (marca probada: 30 años y la recuperación tras la crisis de seguridad alimentaria de 2015-2018, con ROIC de 15-22%; es su única fuente estructural): el ROIC después del año 10 es 13,7%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (18,4%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
- },
- "prob_texto": "A (45%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (30%) extiende la debilidad del consumidor y los costos. C (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. D (5%) es saturación: canibalización y tráfico negativo. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
- "premortem": [
-  "Las comparables siguen planas o negativas: la marca perdió frescura frente a Cava, Sweetgreen y cadenas más baratas.",
-  "El margen no vuelve: alimentos, aranceles y salarios suben más rápido que el precio que el cliente acepta.",
-  "Las aperturas canibalizan a los locales existentes y bajan el retorno por unidad.",
-  "Un problema de seguridad alimentaria repite la crisis de 2015-2016.",
-  "La expansión internacional (socios en Oriente Medio, Asia, Latinoamérica) consume atención sin aportar."
- ],
- "contra": "el tráfico del 2T26 (+1,0%) y la caída del margen muestran que ni siquiera la historia A está garantizada; si las comparables se vuelven negativas, B pasa a ser la más probable.",
- "indicadores": [
-  [
-   "Ventas comparables",
-   "+2,2% (2T26)",
-   "≥ +3%",
-   "Negativas dos trimestres"
   ],
-  [
-   "Tráfico (transacciones)",
-   "+1,0%",
-   "≥ +2%",
-   "Negativo"
+  "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (historia A) lo logró ~38%; 10,2% (historia C), ~25%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).",
+  "crecimiento": {
+    "texto": "Ventas de US$9.872 millones (2023, +14,3%), US$11.314 millones (2024, +14,6%) y US$11.926 millones (2025, +5,4%); LTM US$12.424 millones. En el 2T26 los ingresos crecieron 9,3% (US$3.300 millones) con comparables de +2,2% (+1,2% ticket, +1,0% tráfico) y 38,3% de ventas digitales. El salto de 2025 hacia abajo viene de comparables planas o negativas; las aperturas sostuvieron el crecimiento.",
+    "tabla": {
+      "cols": [
+        "US$ millones",
+        "2023",
+        "2024",
+        "2025",
+        "LTM"
+      ],
+      "align": [
+        "l",
+        "r",
+        "r",
+        "r",
+        "r"
+      ],
+      "rows": [
+        [
+          "Ingresos",
+          "9.872",
+          "11.314",
+          "11.926",
+          "12.424"
+        ],
+        [
+          "Crecimiento",
+          "+14,3%",
+          "+14,6%",
+          "+5,4%",
+          "—"
+        ],
+        [
+          "Margen operativo",
+          "15,8%",
+          "16,9%",
+          "16,2%",
+          "14,6%"
+        ],
+        [
+          "FCFF (hoja)",
+          "265",
+          "1.370",
+          "1.109",
+          "—"
+        ]
+      ]
+    }
+  },
+  "margenes": {
+    "texto": "El margen operativo (con el alquiler dentro del EBIT, como lo reporta la empresa) pasó de 15,8% a 16,9% y bajó a 14,6% LTM. La hoja supone 15% el próximo año y 17% de objetivo, es decir, volver al máximo de 2024. Es posible con apalancamiento operativo si vuelve el tráfico; sin tráfico, los aumentos de precio compiten con la elasticidad del consumidor. Las historias van de 12% a 18%."
+  },
+  "reinversion": {
+    "texto": "Todo el crecimiento es propio: cada local nuevo se paga con caja (capex de US$560-670 millones al año). La hoja usa un sales-to-capital de 2,6 (años 1-5) y 2,2 (años 6-10). El retorno sobre el capital es alto (los locales se pagan en 2-3 años), así que el crecimiento crea valor mientras la economía unitaria se sostenga. La empresa además recompró US$2.783 millones LTM. Moat estrecho (marca probada: 30 años y la recuperación tras la crisis de seguridad alimentaria de 2015-2018, con ROIC de 15-22%; es su única fuente estructural): el ROIC después del año 10 es 13,7%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (18,4%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
+  },
+  "prob_texto": "A (45%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (30%) extiende la debilidad del consumidor y los costos. C (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. D (5%) es saturación: canibalización y tráfico negativo. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
+  "premortem": [
+    "Las comparables siguen planas o negativas: la marca perdió frescura frente a Cava, Sweetgreen y cadenas más baratas.",
+    "El margen no vuelve: alimentos, aranceles y salarios suben más rápido que el precio que el cliente acepta.",
+    "Las aperturas canibalizan a los locales existentes y bajan el retorno por unidad.",
+    "Un problema de seguridad alimentaria repite la crisis de 2015-2016.",
+    "La expansión internacional (socios en Oriente Medio, Asia, Latinoamérica) consume atención sin aportar."
   ],
-  [
-   "Margen operativo",
-   "14,6% LTM",
-   "≥ 16%",
-   "≤ 13%"
+  "contra": "el tráfico del 2T26 (+1,0%) y la caída del margen muestran que ni siquiera la historia A está garantizada; si las comparables se vuelven negativas, B pasa a ser la más probable.",
+  "indicadores": [
+    [
+      "Ventas comparables",
+      "+2,2% (2T26)",
+      "≥ +3%",
+      "Negativas dos trimestres"
+    ],
+    [
+      "Tráfico (transacciones)",
+      "+1,0%",
+      "≥ +2%",
+      "Negativo"
+    ],
+    [
+      "Margen operativo",
+      "14,6% LTM",
+      "≥ 16%",
+      "≤ 13%"
+    ],
+    [
+      "Aperturas al año (con Chipotlane)",
+      "~8% de las unidades",
+      "315-345 o más",
+      "< 250"
+    ],
+    [
+      "Retorno de locales nuevos (ventas por unidad)",
+      "Estable",
+      "Estable o en alza",
+      "Caída"
+    ]
   ],
-  [
-   "Aperturas al año (con Chipotlane)",
-   "~8% de las unidades",
-   "315-345 o más",
-   "< 250"
-  ],
-  [
-   "Retorno de locales nuevos (ventas por unidad)",
-   "Estable",
-   "Estable o en alza",
-   "Caída"
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Cadena de restaurantes propios con gran economía unitaria y tráfico débil",
+  "confianza": "Media: las aperturas son predecibles; el tráfico y el margen no",
+  "cambiaria": "Comparables y tráfico de los próximos dos trimestres; margen operativo",
+  "revision": "Resultados del 3T26 (oct-2026)",
+  "fuentes": [
+    [
+      "Chipotle, Form 10-Q del 2T 2026",
+      "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000066/cmg-20260630.htm"
+    ],
+    [
+      "Chipotle, Form 10-Q del 1T 2026",
+      "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000028/cmg-20260331.htm"
+    ],
+    [
+      "Chipotle, Form 10-K 2025",
+      "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000009/cmg-20251231.htm"
+    ],
+    [
+      "Mauboussin & Callahan, The Base Rate Book (2016)",
+      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+    ],
+    [
+      "Damodaran, Betas by Sector (US), enero 2026",
+      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    ]
   ]
- ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$31,85) sigue por encima del valor esperado (US$22,27) y del DCF (US$25,48), e incluso de la historia C (US$29,70), la más optimista. El DCF inverso pide 9-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-31% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha.",
- "frase": "Cadena de restaurantes propios con gran economía unitaria y tráfico débil",
- "confianza": "Media: las aperturas son predecibles; el tráfico y el margen no",
- "cambiaria": "Comparables y tráfico de los próximos dos trimestres; margen operativo",
- "revision": "Resultados del 3T26 (oct-2026)",
- "fuentes": [
-  [
-   "Chipotle, Form 10-Q del 2T 2026",
-   "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000066/cmg-20260630.htm"
-  ],
-  [
-   "Chipotle, Form 10-Q del 1T 2026",
-   "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000028/cmg-20260331.htm"
-  ],
-  [
-   "Chipotle, Form 10-K 2025",
-   "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000009/cmg-20251231.htm"
-  ],
-  [
-   "Mauboussin & Callahan, The Base Rate Book (2016)",
-   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-  ],
-  [
-   "Damodaran, Betas by Sector (US), enero 2026",
-   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
-  ]
- ]
 }

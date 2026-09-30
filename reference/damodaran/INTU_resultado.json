@@ -1,328 +1,330 @@
 {
- "ticker": "INTU",
- "fecha": "2026-09-30",
- "precio": 269.4,
- "dcf_base": 496.4408222830217,
- "g_ref": 0.09016020141738157,
- "m_base": 0.32,
- "s2c": 2.5,
- "wacc": 0.09834374064880581,
- "beta_hoja": 1.2,
- "beta_bu": 1.3420317194955234,
- "beta_prop": 1.3420317194955234,
- "industria": "Software (System & Application)",
- "bu_sector": 1.25,
- "rf": 0.0499,
- "erp": 0.0446,
- "tasas_base": {
-  "tramo": "$12,000-25,000 Mn",
-  "<(25)": 0.3,
-  "(25)-(20)": 0.6,
-  "(20)-(15)": 1.2,
-  "(15)-(10)": 2.5,
-  "(10)-(5)": 6.4,
-  "(5)-0": 19.7,
-  "0-5": 33.3,
-  "5-10": 21.1,
-  "10-15": 8.2,
-  "15-20": 3.6,
-  "20-25": 1.7,
-  "25-30": 0.7,
-  "30-35": 0.4,
-  "35-40": 0.3,
-  "40-45": 0.0,
-  ">45": 0.1,
-  "Mean": 3.3,
-  "Median": 2.9,
-  "StDev": 8.9,
-  "bins": [
-   "<(25)",
-   "(25)-(20)",
-   "(20)-(15)",
-   "(15)-(10)",
-   "(10)-(5)",
-   "(5)-0",
-   "0-5",
-   "5-10",
-   "10-15",
-   "15-20",
-   "20-25",
-   "25-30",
-   "30-35",
-   "35-40",
-   "40-45",
-   ">45"
+  "ticker": "INTU",
+  "fecha": "2026-09-30",
+  "precio": 273.7,
+  "dcf_base": 496.50088529782676,
+  "g_ref": 0.09016020141738157,
+  "m_base": 0.32,
+  "s2c": 2.5,
+  "wacc": 0.09832275801025211,
+  "beta_hoja": 1.2,
+  "beta_bu": 1.342445292309741,
+  "beta_prop": 1.342445292309741,
+  "industria": "Software (System & Application)",
+  "bu_sector": 1.25,
+  "rf": 0.0499,
+  "erp": 0.0446,
+  "tasas_base": {
+    "tramo": "$12,000-25,000 Mn",
+    "<(25)": 0.3,
+    "(25)-(20)": 0.6,
+    "(20)-(15)": 1.2,
+    "(15)-(10)": 2.5,
+    "(10)-(5)": 6.4,
+    "(5)-0": 19.7,
+    "0-5": 33.3,
+    "5-10": 21.1,
+    "10-15": 8.2,
+    "15-20": 3.6,
+    "20-25": 1.7,
+    "25-30": 0.7,
+    "30-35": 0.4,
+    "35-40": 0.3,
+    "40-45": 0.0,
+    ">45": 0.1,
+    "Mean": 3.3,
+    "Median": 2.9,
+    "StDev": 8.9,
+    "bins": [
+      "<(25)",
+      "(25)-(20)",
+      "(20)-(15)",
+      "(15)-(10)",
+      "(10)-(5)",
+      "(5)-0",
+      "0-5",
+      "5-10",
+      "10-15",
+      "15-20",
+      "20-25",
+      "25-30",
+      "30-35",
+      "35-40",
+      "40-45",
+      ">45"
+    ],
+    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+  },
+  "historias": [
+    {
+      "nombre": "A · La IA es palanca de monetización",
+      "prob": 0.45,
+      "margen": 0.32,
+      "crec": {
+        "Global Business Solutions": [
+          0.14,
+          0.13,
+          0.12,
+          0.11,
+          0.1
+        ],
+        "Consumer (TurboTax y ProTax)": [
+          0.07,
+          0.06,
+          0.06,
+          0.05,
+          0.05
+        ],
+        "Credit Karma": [
+          0.1,
+          0.08,
+          0.07,
+          0.07,
+          0.06
+        ]
+      },
+      "cagr": 0.09826931361269264,
+      "rev5": 34271.33699057053,
+      "mix5": {
+        "Global Business Solutions": 0.6501835298927533,
+        "Consumer (TurboTax y ProTax)": 0.23203516843629493,
+        "Credit Karma": 0.11778130167095165
+      },
+      "tasa_base": 0.262803496554437,
+      "roic_terminal_usado": 0.222,
+      "valor_beta_hoja": 509.994555059208,
+      "valor_beta_prop": 493.2877147282213
+    },
+    {
+      "nombre": "B · La IA erosiona impuestos y contabilidad básica",
+      "prob": 0.25,
+      "margen": 0.29,
+      "crec": {
+        "Global Business Solutions": [
+          0.1,
+          0.08,
+          0.07,
+          0.06,
+          0.06
+        ],
+        "Consumer (TurboTax y ProTax)": [
+          0.02,
+          0,
+          -0.02,
+          -0.02,
+          -0.02
+        ],
+        "Credit Karma": [
+          0.05,
+          0.04,
+          0.04,
+          0.03,
+          0.03
+        ]
+      },
+      "roic_terminal": "costo_capital",
+      "cagr": 0.048654914071139865,
+      "rev5": 27198.802444643366,
+      "mix5": {
+        "Global Business Solutions": 0.6642203792124394,
+        "Consumer (TurboTax y ProTax)": 0.2117577779361278,
+        "Credit Karma": 0.12402184285143288
+      },
+      "tasa_base": 0.5364582722862086,
+      "roic_terminal_usado": 0.0,
+      "valor_beta_hoja": 259.8321708418909,
+      "valor_beta_prop": 252.03535868669272
+    },
+    {
+      "nombre": "C · Plataforma financiera de la pyme",
+      "prob": 0.2,
+      "margen": 0.35,
+      "crec": {
+        "Global Business Solutions": [
+          0.17,
+          0.16,
+          0.15,
+          0.14,
+          0.12
+        ],
+        "Consumer (TurboTax y ProTax)": [
+          0.08,
+          0.08,
+          0.07,
+          0.07,
+          0.06
+        ],
+        "Credit Karma": [
+          0.12,
+          0.1,
+          0.1,
+          0.08,
+          0.08
+        ]
+      },
+      "cagr": 0.1219247044012246,
+      "rev5": 38124.605345967444,
+      "mix5": {
+        "Global Business Solutions": 0.661164061114935,
+        "Consumer (TurboTax y ProTax)": 0.22275441973127866,
+        "Credit Karma": 0.11608151915378628
+      },
+      "tasa_base": 0.16297774742683213,
+      "roic_terminal_usado": 0.222,
+      "valor_beta_hoja": 628.1236971974947,
+      "valor_beta_prop": 607.2828129703847
+    },
+    {
+      "nombre": "D · Recesión y declaración gratuita del Estado",
+      "prob": 0.1,
+      "margen": 0.26,
+      "crec": {
+        "Global Business Solutions": [
+          0.06,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        "Consumer (TurboTax y ProTax)": [
+          -0.03,
+          -0.05,
+          -0.03,
+          -0.02,
+          0
+        ],
+        "Credit Karma": [
+          -0.1,
+          0,
+          0.03,
+          0.03,
+          0.03
+        ]
+      },
+      "roic_terminal": "costo_capital",
+      "cagr": 0.025333920441126256,
+      "rev5": 24305.99624156504,
+      "mix5": {
+        "Global Business Solutions": 0.6705013631121945,
+        "Consumer (TurboTax y ProTax)": 0.21621731897771318,
+        "Credit Karma": 0.11328131791009231
+      },
+      "tasa_base": 0.691776089862099,
+      "roic_terminal_usado": 0.0,
+      "valor_beta_hoja": 212.70003661289343,
+      "valor_beta_prop": 206.43696066708023
+    }
   ],
-  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
- },
- "historias": [
-  {
-   "nombre": "A · La IA es palanca de monetización",
-   "prob": 0.45,
-   "margen": 0.32,
-   "crec": {
-    "Global Business Solutions": [
-     0.14,
-     0.13,
-     0.12,
-     0.11,
-     0.1
-    ],
-    "Consumer (TurboTax y ProTax)": [
-     0.07,
-     0.06,
-     0.06,
-     0.05,
-     0.05
-    ],
-    "Credit Karma": [
-     0.1,
-     0.08,
-     0.07,
-     0.07,
-     0.06
-    ]
-   },
-   "cagr": 0.09826931361269264,
-   "rev5": 34271.33699057053,
-   "mix5": {
-    "Global Business Solutions": 0.6501835298927533,
-    "Consumer (TurboTax y ProTax)": 0.23203516843629493,
-    "Credit Karma": 0.11778130167095165
-   },
-   "tasa_base": 0.262803496554437,
-   "roic_terminal_usado": 0.222,
-   "valor_beta_hoja": 509.9328650991249,
-   "valor_beta_prop": 493.2695763050689
-  },
-  {
-   "nombre": "B · La IA erosiona impuestos y contabilidad básica",
-   "prob": 0.25,
-   "margen": 0.29,
-   "crec": {
-    "Global Business Solutions": [
-     0.1,
-     0.08,
-     0.07,
-     0.06,
-     0.06
-    ],
-    "Consumer (TurboTax y ProTax)": [
-     0.02,
-     0,
-     -0.02,
-     -0.02,
-     -0.02
-    ],
-    "Credit Karma": [
-     0.05,
-     0.04,
-     0.04,
-     0.03,
-     0.03
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "cagr": 0.048654914071139865,
-   "rev5": 27198.802444643366,
-   "mix5": {
-    "Global Business Solutions": 0.6642203792124394,
-    "Consumer (TurboTax y ProTax)": 0.2117577779361278,
-    "Credit Karma": 0.12402184285143288
-   },
-   "tasa_base": 0.5364582722862086,
-   "roic_terminal_usado": 0.0,
-   "valor_beta_hoja": 259.80340067020285,
-   "valor_beta_prop": 252.02688790626095
-  },
-  {
-   "nombre": "C · Plataforma financiera de la pyme",
-   "prob": 0.2,
-   "margen": 0.35,
-   "crec": {
-    "Global Business Solutions": [
-     0.17,
-     0.16,
-     0.15,
-     0.14,
-     0.12
-    ],
-    "Consumer (TurboTax y ProTax)": [
-     0.08,
-     0.08,
-     0.07,
-     0.07,
-     0.06
-    ],
-    "Credit Karma": [
-     0.12,
-     0.1,
-     0.1,
-     0.08,
-     0.08
-    ]
-   },
-   "cagr": 0.1219247044012246,
-   "rev5": 38124.60534596744,
-   "mix5": {
-    "Global Business Solutions": 0.6611640611149352,
-    "Consumer (TurboTax y ProTax)": 0.2227544197312787,
-    "Credit Karma": 0.11608151915378631
-   },
-   "tasa_base": 0.16297774742683213,
-   "roic_terminal_usado": 0.222,
-   "valor_beta_hoja": 628.0467361899803,
-   "valor_beta_prop": 607.2601880996974
-  },
-  {
-   "nombre": "D · Recesión y declaración gratuita del Estado",
-   "prob": 0.1,
-   "margen": 0.26,
-   "crec": {
-    "Global Business Solutions": [
-     0.06,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Consumer (TurboTax y ProTax)": [
-     -0.03,
-     -0.05,
-     -0.03,
-     -0.02,
-     0
-    ],
-    "Credit Karma": [
-     -0.1,
-     0,
-     0.03,
-     0.03,
-     0.03
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "cagr": 0.025333920441126256,
-   "rev5": 24305.99624156504,
-   "mix5": {
-    "Global Business Solutions": 0.6705013631121945,
-    "Consumer (TurboTax y ProTax)": 0.21621731897771318,
-    "Credit Karma": 0.11328131791009231
-   },
-   "tasa_base": 0.691776089862099,
-   "roic_terminal_usado": 0.0,
-   "valor_beta_hoja": 212.67692821418677,
-   "valor_beta_prop": 206.43015550846985
-  }
- ],
- "valor_esperado_beta_hoja": 441.2976795215717,
- "valor_esperado_beta_prop": 427.0730844846327,
- "betas": [
-  {
-   "enfoque": "Hoja (regresión o la cargada en el libro)",
-   "beta": 1.2,
-   "ke": 0.10342,
-   "wacc": 0.09834374064880581,
-   "dcf_base": 496.4408222830217
-  },
-  {
-   "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
-   "beta": 1.3420317194955234,
-   "ke": 0.10975461468950035,
-   "wacc": 0.10412551707707755,
-   "dcf_base": 480.2171223485903
-  }
- ],
- "sensibilidad": {
-  "g": [
-   0.05016020141738157,
-   0.07016020141738157,
-   0.09016020141738157,
-   0.11016020141738157,
-   0.13016020141738158
+  "valor_esperado_beta_hoja": 441.3503355879046,
+  "valor_esperado_beta_prop": 427.08856996015777,
+  "betas": [
+    {
+      "enfoque": "Hoja (regresión o la cargada en el libro)",
+      "beta": 1.2,
+      "ke": 0.10342,
+      "wacc": 0.09832275801025211,
+      "dcf_base": 496.50088529782676
+    },
+    {
+      "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
+      "beta": 1.342445292309741,
+      "ke": 0.10977306003701445,
+      "wacc": 0.10411909676848134,
+      "dcf_base": 480.2347821261738
+    }
   ],
-  "m": [
-   0.28,
-   0.3,
-   0.32,
-   0.34,
-   0.36
+  "sensibilidad": {
+    "g": [
+      0.05016020141738157,
+      0.07016020141738157,
+      0.09016020141738157,
+      0.11016020141738157,
+      0.13016020141738158
+    ],
+    "m": [
+      0.28,
+      0.3,
+      0.32,
+      0.34,
+      0.36
+    ],
+    "v": [
+      [
+        352.0827303741103,
+        375.67867709558647,
+        399.27462381706266,
+        422.8705705385387,
+        446.4665172600148
+      ],
+      [
+        391.95010253604846,
+        418.65026615469804,
+        445.35042977334774,
+        472.0505933919973,
+        498.7507570106468
+      ],
+      [
+        436.239991545264,
+        466.4029021951028,
+        496.5658128449418,
+        526.7287234947808,
+        556.8916341446196
+      ],
+      [
+        485.3863525497643,
+        519.4059735163875,
+        553.4255944830109,
+        587.445215449634,
+        621.4648364162572
+      ],
+      [
+        539.8586727157623,
+        578.1673116211944,
+        616.4759505266264,
+        654.7845894320586,
+        693.0932283374905
+      ]
+    ],
+    "referencia_constante": 496.5658128449418,
+    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+  },
+  "inverso": [
+    {
+      "beta": 1.2,
+      "margen": 0.28,
+      "g": 0.0032449509830217837,
+      "tasa_base": 0.7797148931268941
+    },
+    {
+      "beta": 1.2,
+      "margen": 0.32,
+      "g": -0.018753633012232818,
+      "tasa_base": 0.8663893140681972
+    },
+    {
+      "beta": 1.2,
+      "margen": 0.35,
+      "g": -0.03316098434365361,
+      "tasa_base": 0.9014460599598766
+    },
+    {
+      "beta": 1.342445292309741,
+      "margen": 0.28,
+      "g": 0.009100161657817796,
+      "tasa_base": 0.7566453630681979
+    },
+    {
+      "beta": 1.342445292309741,
+      "margen": 0.32,
+      "g": -0.013062580047741579,
+      "tasa_base": 0.8439665653881019
+    },
+    {
+      "beta": 1.342445292309741,
+      "margen": 0.35,
+      "g": -0.02757425723436452,
+      "tasa_base": 0.8942950492599866
+    }
   ],
-  "v": [
-   [
-    351.99532831991263,
-    375.58524320868537,
-    399.1751580974582,
-    422.7650729862309,
-    446.3549878750037
-   ],
-   [
-    391.852231081454,
-    418.54555772546576,
-    445.23888436947766,
-    471.93221101348934,
-    498.62553765750096
-   ],
-   [
-    436.1304727860391,
-    466.2856475345303,
-    496.4408222830217,
-    526.5959970315131,
-    556.7511717800045
-   ],
-   [
-    485.26389291751036,
-    519.2747759585556,
-    553.2856589996007,
-    587.2965420406462,
-    621.3074250816912
-   ],
-   [
-    539.7218535120086,
-    578.0206392901554,
-    616.3194250683025,
-    654.6182108464495,
-    692.9169966245963
-   ]
-  ]
- },
- "inverso": [
-  {
-   "beta": 1.2,
-   "margen": 0.28,
-   "g": 0.002,
-   "tasa_base": 0.7846199999999999
-  },
-  {
-   "beta": 1.2,
-   "margen": 0.32,
-   "g": -0.02,
-   "tasa_base": 0.8713
-  },
-  {
-   "beta": 1.2,
-   "margen": 0.35,
-   "g": -0.034,
-   "tasa_base": 0.9025200000000001
-  },
-  {
-   "beta": 1.3420317194955234,
-   "margen": 0.28,
-   "g": 0.008,
-   "tasa_base": 0.76098
-  },
-  {
-   "beta": 1.3420317194955234,
-   "margen": 0.32,
-   "g": -0.014,
-   "tasa_base": 0.8476599999999999
-  },
-  {
-   "beta": 1.3420317194955234,
-   "margen": 0.35,
-   "g": -0.03,
-   "tasa_base": 0.8974000000000001
-  }
- ],
- "ingresos_ltm": 21448
+  "ingresos_ltm": 21448
 }
