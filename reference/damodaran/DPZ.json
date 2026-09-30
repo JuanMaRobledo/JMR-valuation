@@ -1,252 +1,252 @@
 {
- "ticker": "DPZ",
- "empresa": "Domino's Pizza, Inc.",
- "fecha": "2026-09-30",
- "industria_damodaran": "Restaurant/Dining",
- "segmentos": {
-  "Cadena de suministro": 2960,
-  "Regalías, tiendas propias y fondo de publicidad": 1980
- },
- "riesgo": {
-  "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,05, y el DCF Base baja de US$349,63 a US$337,02. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización)."
- },
- "historias": [
-  {
-   "nombre": "A · Crece por tiendas con ventas mismas tiendas bajas",
-   "prob": 0.5,
-   "margen": 0.2,
-   "crec": {
-    "Cadena de suministro": [
-     0.04,
-     0.04,
-     0.045,
-     0.045,
-     0.045
-    ],
-    "Regalías, tiendas propias y fondo de publicidad": [
-     0.04,
-     0.045,
-     0.05,
-     0.05,
-     0.05
-    ]
-   }
+  "ticker": "DPZ",
+  "empresa": "Domino's Pizza, Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Restaurant/Dining",
+  "segmentos": {
+    "Cadena de suministro": 2960,
+    "Regalías, tiendas propias y fondo de publicidad": 1980
   },
-  {
-   "nombre": "B · Los agregadores erosionan la ventaja",
-   "prob": 0.25,
-   "margen": 0.185,
-   "crec": {
-    "Cadena de suministro": [
-     0.02,
-     0.02,
-     0.025,
-     0.025,
-     0.025
-    ],
-    "Regalías, tiendas propias y fondo de publicidad": [
-     0.025,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ]
-   },
-   "roic_terminal": "costo_capital"
+  "riesgo": {
+    "beta_propuesta": null,
+    "texto": "La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,05, y el DCF Base baja de US$349,63 a US$337,02. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización)."
   },
-  {
-   "nombre": "C · Agregadores e internacional aceleran",
-   "prob": 0.2,
-   "margen": 0.21,
-   "crec": {
-    "Cadena de suministro": [
-     0.06,
-     0.06,
-     0.06,
-     0.055,
-     0.055
+  "historias": [
+    {
+      "nombre": "A · Crece por tiendas con ventas mismas tiendas bajas",
+      "prob": 0.5,
+      "margen": 0.2,
+      "crec": {
+        "Cadena de suministro": [
+          0.04,
+          0.04,
+          0.045,
+          0.045,
+          0.045
+        ],
+        "Regalías, tiendas propias y fondo de publicidad": [
+          0.04,
+          0.045,
+          0.05,
+          0.05,
+          0.05
+        ]
+      }
+    },
+    {
+      "nombre": "B · Los agregadores erosionan la ventaja",
+      "prob": 0.25,
+      "margen": 0.185,
+      "crec": {
+        "Cadena de suministro": [
+          0.02,
+          0.02,
+          0.025,
+          0.025,
+          0.025
+        ],
+        "Regalías, tiendas propias y fondo de publicidad": [
+          0.025,
+          0.03,
+          0.03,
+          0.03,
+          0.03
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    },
+    {
+      "nombre": "C · Agregadores e internacional aceleran",
+      "prob": 0.2,
+      "margen": 0.21,
+      "crec": {
+        "Cadena de suministro": [
+          0.06,
+          0.06,
+          0.06,
+          0.055,
+          0.055
+        ],
+        "Regalías, tiendas propias y fondo de publicidad": [
+          0.07,
+          0.07,
+          0.07,
+          0.065,
+          0.06
+        ]
+      }
+    },
+    {
+      "nombre": "D · El sistema de franquicias se debilita",
+      "prob": 0.05,
+      "margen": 0.17,
+      "crec": {
+        "Cadena de suministro": [
+          0,
+          0,
+          0.01,
+          0.01,
+          0.01
+        ],
+        "Regalías, tiendas propias y fondo de publicidad": [
+          0,
+          0.01,
+          0.01,
+          0.01,
+          0.01
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    }
+  ],
+  "margenes_inverso": [
+    0.19,
+    0.2,
+    0.21
+  ],
+  "historia": "Domino's es la mayor cadena de pizza del mundo y casi todas sus tiendas son franquiciadas. Gana dinero de dos formas: regalías sobre las ventas del sistema (alto margen, casi sin capital) y la venta de insumos a los franquiciados de EE.UU. y Canadá (~60% de los ingresos, margen bajo). Es un negocio de muy poco capital, con retornos altísimos y patrimonio negativo por recompras con deuda titulizada (~US$4.900 millones). Su ventaja histórica fue la conveniencia del delivery propio; los agregadores (DoorDash, Uber Eats) la estrecharon y en el 2T26 las ventas mismas tiendas fueron +0,1% en EE.UU. y −0,1% internacional, con ventas minoristas globales de +3% por aperturas. La historia de cinco años es la de un compuesto maduro que crece por tiendas nuevas; la pregunta es si las ventas por tienda vuelven a crecer.",
+  "filtro": [
+    [
+      "Los ingresos crecen ~4,5% anual cinco años",
+      "Sí",
+      "Sí: +5% en 2024 y 2025, +3,9% en el 1S26",
+      "Probable"
     ],
-    "Regalías, tiendas propias y fondo de publicidad": [
-     0.07,
-     0.07,
-     0.07,
-     0.065,
-     0.06
+    [
+      "Las ventas mismas tiendas de EE.UU. vuelven a +3%",
+      "Sí",
+      "Poco: planas en 2026 pese a promociones y a entrar en Uber Eats/DoorDash",
+      "Baja-media"
+    ],
+    [
+      "El margen operativo llega a 20%",
+      "Sí",
+      "Sí: 18,3% → 19,3% en dos años con escala en regalías",
+      "Probable"
+    ],
+    [
+      "La deuda titulizada se vuelve un problema",
+      "Sí",
+      "Poco: flujo estable y refinanciaciones ordenadas",
+      "Baja salvo recesión fuerte"
     ]
-   }
+  ],
+  "tasas_base_nota": "Para empresas de US$4.500-7.000 millones, crecer 4,5% anual cinco años (historia A) lo logró ~64%: la hoja es realista y cercana a la mediana nominal (~6,6%). Domino's no necesita crecer mucho para valer lo que dice el DCF; su valor depende más de la duración y de los márgenes que del crecimiento.",
+  "crecimiento": {
+    "texto": "Ingresos de US$4.479 millones (2023, −1,3%), US$4.706 millones (2024, +5,1%) y US$4.940 millones (2025, +5,0%); US$2.345 millones en el 1S26 (+3,9%). En el 2T26, las ventas minoristas globales sin efecto cambiario crecieron 3,0%, con ventas mismas tiendas de +0,1% en EE.UU. y −0,1% internacional: el crecimiento viene de tiendas nuevas. La división de las historias entre cadena de suministro (~60%) y el resto (~40%) es una aproximación con el peso del costo de suministro del 1S26.",
+    "tabla": {
+      "cols": [
+        "US$ millones",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "align": [
+        "l",
+        "r",
+        "r",
+        "r"
+      ],
+      "rows": [
+        [
+          "Ingresos",
+          "4.479",
+          "4.706",
+          "4.940"
+        ],
+        [
+          "Crecimiento",
+          "−1,3%",
+          "+5,1%",
+          "+5,0%"
+        ],
+        [
+          "Margen operativo",
+          "18,3%",
+          "18,7%",
+          "19,3%"
+        ],
+        [
+          "FCFF (hoja)",
+          "664",
+          "642",
+          "737"
+        ]
+      ]
+    }
   },
-  {
-   "nombre": "D · El sistema de franquicias se debilita",
-   "prob": 0.05,
-   "margen": 0.17,
-   "crec": {
-    "Cadena de suministro": [
-     0,
-     0,
-     0.01,
-     0.01,
-     0.01
+  "margenes": {
+    "texto": "El margen operativo sube lento (18,3% → 19,3%) porque la cadena de suministro diluye el margen de las regalías. La hoja supone 19% el próximo año y 20% de objetivo, un paso pequeño y creíble. El riesgo está en la rentabilidad de los franquiciados: si sus márgenes caen, Domino's tiene que subsidiar promociones o bajar el precio de los insumos. Las historias van de 17% a 21%."
+  },
+  "reinversion": {
+    "texto": "Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Moat ancho (marca probada de más de 60 años y densidad y escala logística en reparto, con ROIC de 65-78% en cada uno de los últimos 5 años): el ROIC después del año 10 es 18,4%, el menor entre el ROIC actual (99,2%) y el de la industria (18,4%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026)."
+  },
+  "prob_texto": "A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
+  "premortem": [
+    "Las ventas mismas tiendas de EE.UU. son negativas varios trimestres: los agregadores hacen irrelevante la logística propia.",
+    "Grandes franquiciados internacionales (como Domino's Pizza Enterprises o Jubilant) cierran tiendas o reducen aperturas.",
+    "La inflación de insumos y salarios comprime a los franquiciados y frena la apertura de tiendas.",
+    "Una recesión con tasas altas encarece la refinanciación de la deuda titulizada.",
+    "Las promociones permanentes bajan el ticket y el margen del sistema."
+  ],
+  "contra": "las ventas mismas tiendas están planas en EE.UU. y levemente negativas afuera pese a promociones y a la entrada en agregadores. Si esto sigue en 2027, B gana peso.",
+  "indicadores": [
+    [
+      "Ventas mismas tiendas EE.UU.",
+      "+0,1% (2T26)",
+      "≥ +2%",
+      "Negativas dos trimestres"
     ],
-    "Regalías, tiendas propias y fondo de publicidad": [
-     0,
-     0.01,
-     0.01,
-     0.01,
-     0.01
+    [
+      "Ventas mismas tiendas internacionales",
+      "−0,1%",
+      "≥ +2%",
+      "≤ −2%"
+    ],
+    [
+      "Aperturas netas globales",
+      "Positivas",
+      "≥ 700 al año",
+      "Cierres netos internacionales"
+    ],
+    [
+      "Margen operativo",
+      "19,3% (2025)",
+      "≥ 19,5%",
+      "≤ 18%"
+    ],
+    [
+      "Deuda / EBITDA",
+      "~4,5x",
+      "≤ 5x",
+      "> 5,5x"
     ]
-   },
-   "roic_terminal": "costo_capital"
-  }
- ],
- "margenes_inverso": [
-  0.19,
-  0.2,
-  0.21
- ],
- "historia": "Domino's es la mayor cadena de pizza del mundo y casi todas sus tiendas son franquiciadas. Gana dinero de dos formas: regalías sobre las ventas del sistema (alto margen, casi sin capital) y la venta de insumos a los franquiciados de EE.UU. y Canadá (~60% de los ingresos, margen bajo). Es un negocio de muy poco capital, con retornos altísimos y patrimonio negativo por recompras con deuda titulizada (~US$4.900 millones). Su ventaja histórica fue la conveniencia del delivery propio; los agregadores (DoorDash, Uber Eats) la estrecharon y en el 2T26 las ventas mismas tiendas fueron +0,1% en EE.UU. y −0,1% internacional, con ventas minoristas globales de +3% por aperturas. La historia de cinco años es la de un compuesto maduro que crece por tiendas nuevas; la pregunta es si las ventas por tienda vuelven a crecer.",
- "filtro": [
-  [
-   "Los ingresos crecen ~4,5% anual cinco años",
-   "Sí",
-   "Sí: +5% en 2024 y 2025, +3,9% en el 1S26",
-   "Probable"
   ],
-  [
-   "Las ventas mismas tiendas de EE.UU. vuelven a +3%",
-   "Sí",
-   "Poco: planas en 2026 pese a promociones y a entrar en Uber Eats/DoorDash",
-   "Baja-media"
-  ],
-  [
-   "El margen operativo llega a 20%",
-   "Sí",
-   "Sí: 18,3% → 19,3% en dos años con escala en regalías",
-   "Probable"
-  ],
-  [
-   "La deuda titulizada se vuelve un problema",
-   "Sí",
-   "Poco: flujo estable y refinanciaciones ordenadas",
-   "Baja salvo recesión fuerte"
-  ]
- ],
- "tasas_base_nota": "Para empresas de US$4.500-7.000 millones, crecer 4,5% anual cinco años (historia A) lo logró ~64%: la hoja es realista y cercana a la mediana nominal (~6,6%). Domino's no necesita crecer mucho para valer lo que dice el DCF; su valor depende más de la duración y de los márgenes que del crecimiento.",
- "crecimiento": {
-  "texto": "Ingresos de US$4.479 millones (2023, −1,3%), US$4.706 millones (2024, +5,1%) y US$4.940 millones (2025, +5,0%); US$2.345 millones en el 1S26 (+3,9%). En el 2T26, las ventas minoristas globales sin efecto cambiario crecieron 3,0%, con ventas mismas tiendas de +0,1% en EE.UU. y −0,1% internacional: el crecimiento viene de tiendas nuevas. La división de las historias entre cadena de suministro (~60%) y el resto (~40%) es una aproximación con el peso del costo de suministro del 1S26.",
-  "tabla": {
-   "cols": [
-    "US$ millones",
-    "2023",
-    "2024",
-    "2025"
-   ],
-   "align": [
-    "l",
-    "r",
-    "r",
-    "r"
-   ],
-   "rows": [
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Compuesto de franquicias maduro que crece por tiendas nuevas, con ventas por tienda planas",
+  "confianza": "Media-alta en el negocio; media en el crecimiento por tienda",
+  "cambiaria": "Ventas mismas tiendas en EE.UU. y aperturas internacionales netas",
+  "revision": "Resultados del 3T26 (oct-2026)",
+  "fuentes": [
     [
-     "Ingresos",
-     "4.479",
-     "4.706",
-     "4.940"
+      "Domino's, Form 10-Q del 2T 2026",
+      "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000035/dpz-20260614.htm"
     ],
     [
-     "Crecimiento",
-     "−1,3%",
-     "+5,1%",
-     "+5,0%"
+      "Domino's, Form 10-Q del 1T 2026",
+      "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000025/dpz-20260322.htm"
     ],
     [
-     "Margen operativo",
-     "18,3%",
-     "18,7%",
-     "19,3%"
+      "Domino's, Form 10-K 2025",
+      "https://www.sec.gov/Archives/edgar/data/1286681/000119312526062321/dpz-20251228.htm"
     ],
     [
-     "FCFF (hoja)",
-     "664",
-     "642",
-     "737"
+      "Mauboussin & Callahan, The Base Rate Book (2016)",
+      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+    ],
+    [
+      "Damodaran, Betas by Sector (US), enero 2026",
+      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
     ]
-   ]
-  }
- },
- "margenes": {
-  "texto": "El margen operativo sube lento (18,3% → 19,3%) porque la cadena de suministro diluye el margen de las regalías. La hoja supone 19% el próximo año y 20% de objetivo, un paso pequeño y creíble. El riesgo está en la rentabilidad de los franquiciados: si sus márgenes caen, Domino's tiene que subsidiar promociones o bajar el precio de los insumos. Las historias van de 17% a 21%."
- },
- "reinversion": {
-  "texto": "Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Moat ancho (marca probada de más de 60 años y densidad y escala logística en reparto, con ROIC de 65-78% en cada uno de los últimos 5 años): el ROIC después del año 10 es 18,4%, el menor entre el ROIC actual (99,2%) y el de la industria (18,4%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026)."
- },
- "prob_texto": "A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
- "premortem": [
-  "Las ventas mismas tiendas de EE.UU. son negativas varios trimestres: los agregadores hacen irrelevante la logística propia.",
-  "Grandes franquiciados internacionales (como Domino's Pizza Enterprises o Jubilant) cierran tiendas o reducen aperturas.",
-  "La inflación de insumos y salarios comprime a los franquiciados y frena la apertura de tiendas.",
-  "Una recesión con tasas altas encarece la refinanciación de la deuda titulizada.",
-  "Las promociones permanentes bajan el ticket y el margen del sistema."
- ],
- "contra": "las ventas mismas tiendas están planas en EE.UU. y levemente negativas afuera pese a promociones y a la entrada en agregadores. Si esto sigue en 2027, B gana peso.",
- "indicadores": [
-  [
-   "Ventas mismas tiendas EE.UU.",
-   "+0,1% (2T26)",
-   "≥ +2%",
-   "Negativas dos trimestres"
-  ],
-  [
-   "Ventas mismas tiendas internacionales",
-   "−0,1%",
-   "≥ +2%",
-   "≤ −2%"
-  ],
-  [
-   "Aperturas netas globales",
-   "Positivas",
-   "≥ 700 al año",
-   "Cierres netos internacionales"
-  ],
-  [
-   "Margen operativo",
-   "19,3% (2025)",
-   "≥ 19,5%",
-   "≤ 18%"
-  ],
-  [
-   "Deuda / EBITDA",
-   "~4,5x",
-   "≤ 5x",
-   "> 5,5x"
   ]
- ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$292,27) queda 6% por debajo del valor esperado (US$309,55) y 16% por debajo del DCF (US$349,76), entre las historias B y A. El DCF inverso pide solo 2,2% anual en los años 1-5 con margen de 20% (lo logró ~78% de las empresas de este tamaño), o 3,0% con margen de 19%: menos de lo que muestran los últimos trimestres. ¿Qué sabe el mercado que yo no? Puede estar descontando que los agregadores y la competencia de precios erosionen el retorno de la franquicia más rápido de lo que supone la hoja. Si crees en la historia A, hay margen de seguridad; con B, el precio queda alto.",
- "frase": "Compuesto de franquicias maduro que crece por tiendas nuevas, con ventas por tienda planas",
- "confianza": "Media-alta en el negocio; media en el crecimiento por tienda",
- "cambiaria": "Ventas mismas tiendas en EE.UU. y aperturas internacionales netas",
- "revision": "Resultados del 3T26 (oct-2026)",
- "fuentes": [
-  [
-   "Domino's, Form 10-Q del 2T 2026",
-   "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000035/dpz-20260614.htm"
-  ],
-  [
-   "Domino's, Form 10-Q del 1T 2026",
-   "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000025/dpz-20260322.htm"
-  ],
-  [
-   "Domino's, Form 10-K 2025",
-   "https://www.sec.gov/Archives/edgar/data/1286681/000119312526062321/dpz-20251228.htm"
-  ],
-  [
-   "Mauboussin & Callahan, The Base Rate Book (2016)",
-   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-  ],
-  [
-   "Damodaran, Betas by Sector (US), enero 2026",
-   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
-  ]
- ]
 }

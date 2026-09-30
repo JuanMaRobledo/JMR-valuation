@@ -81,7 +81,12 @@ def run_exact(grid, cases):
           "const out=G.cases.map(k=>{const i=JSON.parse(JSON.stringify(base));"
           "if(k.anios)i.crecimientoAnios=k.anios;else if(k.g!=null)i.crecimientoAnios=[k.g,k.g,k.g,k.g,k.g];"
           "if(k.wacc!=null)i.wacc=k.wacc;if(k.s2c!=null)i.salesToCapital=k.s2c;if(k.roic!=null)i.roicTerminal=k.roic;"
-          "return c.runDCFDetalle(i,i.growthBase,k.m!=null?k.m:i.marginBase,i.growthY1Base,i.marginY1Base).valuePerShare;});"
+          "const margin=k.m!=null?k.m:(i.dcfFinanciero?i.dcfFinanciero.roeBase:i.marginBase);"
+          "const value=g=>{if(g!=null)i.crecimientoAnios=[g,g,g,g,g];return c.runDCFDetalle(i,i.growthBase,margin,i.growthY1Base,i.marginY1Base).valuePerShare;};"
+          "if(k.target!=null){const roots=[];let pg=-.1,pf=value(pg)-k.target;"
+          "for(let g=-.098;g<=.600001;g+=.002){const f=value(g)-k.target;if(pf*f<=0){let lo=pg,hi=g,fl=pf;for(let n=0;n<50;n++){const mid=(lo+hi)/2,fm=value(mid)-k.target;if(fl*fm<=0)hi=mid;else{lo=mid;fl=fm;}}roots.push((lo+hi)/2);}pg=g;pf=f;}"
+          "return roots.length?roots.sort((a,b)=>Math.abs(a-k.ref)-Math.abs(b-k.ref))[0]:null;}"
+          "return value(null);});"
           "console.log(JSON.stringify(out));")
     return json.loads(subprocess.check_output(["node", "-e", js], input=json.dumps({"grid": grid, "cases": cases}), text=True))
 
@@ -113,6 +118,7 @@ def load_sheet(sid: str):
     rng = ["'Input sheet'!A1:D75", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
            "'Resumen de Valoración'!A1:U20", "'Cost of capital worksheet'!A1:C70", "'Descuento de múltiplos'!A1:E40",
            "EVEBITDA!A1:J30", "EVFCFF!A1:J30", "PE!A1:J30", "PFCFE!A1:J30", "POCF!A1:J30"]
+    if 'DCF FCFE financiero' in {w.title for w in sh.worksheets()}:rng.append("'DCF FCFE financiero'!A1:I62")
     vr = sh.values_batch_get(rng, params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
     grid = {r.split("!")[0].strip("'"): v.get("values", []) for r, v in zip(rng, vr)}
 
@@ -139,7 +145,7 @@ def compute(tk: str) -> dict:
     price = rec.get("precio")
     dcf = cell("Descuento de múltiplos", "D38") or ((rec.get("descuentoMultiples") or {}).get("dcfHoy") or {}).get("base")
     inp = engine_inputs(cell, grid["Financials Multiples"], price)
-    m_base = cell("Input sheet", "B30")
+    m_base = inp["dcfFinanciero"]["roeBase"] if inp.get("dcfFinanciero") else cell("Input sheet", "B30")
     g_ref = st.mean([x for x in grid["Valuation output"][3][2:7] if isinstance(x, (int, float))])
     s2c = cell("Input sheet", "B32")
     wacc0 = cell("Input sheet", "B36")
@@ -232,7 +238,8 @@ def compute(tk: str) -> dict:
     gs = [g_ref + d for d in (-0.04, -0.02, 0, 0.02, 0.04)]
     ms = [m_base + d for d in (-0.04, -0.02, 0, 0.02, 0.04)]
     sv = run_exact(grid, [value(g, m) for g in gs for m in ms])
-    sens = {"g": gs, "m": ms, "v": [[dcf * sv[i * 5 + j] / ref for j in range(5)] for i in range(5)]}
+    sens = {"g": gs, "m": ms, "v": [[sv[i * 5 + j] for j in range(5)] for i in range(5)],
+            "referencia_constante": ref, "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"}
 
     # DCF inverso
     inv_m = spec.get("margenes_inverso") or [m_base, m_base + 0.02]
@@ -240,8 +247,9 @@ def compute(tk: str) -> dict:
     inverso = []
     for b in (beta_hoja, beta_prop):
         for m in inv_m:
-            vv = [dcf * x / ref for x in run_exact(grid, [value(g, m, b) for g in grid_g])]
-            gi = next((grid_g[k] for k in range(len(grid_g)) if vv[k] >= price), None) if price else None
+            case = value(None, m, b)
+            case.update(target=price, ref=g_ref)
+            gi = run_exact(grid, [case])[0] if price else None
             inverso.append({"beta": b, "margen": m, "g": gi, "tasa_base": frac_at_least(br, gi) if gi is not None else None})
 
     return {"ticker": tk, "fecha": spec.get("fecha") or dt.date.today().isoformat(), "spec": spec,
@@ -351,6 +359,8 @@ def render(r: dict) -> tuple[str, str]:
     s = r["sensibilidad"]
     p(f"Sensibilidad del DCF Base (beta {es(r['beta_hoja'])}; US$ por acción; filas = crecimiento de los años 1-5, "
       "columnas = margen operativo objetivo):")
+    p("Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; "
+      "si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.")
     tab(["Crecimiento \\ Margen"] + [pct(m) for m in s["m"]],
         [[pct(g)] + [es(v) for v in row] for g, row in zip(s["g"], s["v"])], ["l"] + ["r"] * 5)
 

@@ -57,26 +57,30 @@ def engine_dcf(inp: dict) -> dict:
 
 
 def engine_inputs(cell, fm, price) -> dict:
-    """Insumos del motor jmr_engine.js leídos de la hoja (grilla ya descargada)."""
-    def c_(addr, sheet="Input sheet"):
-        return cell(sheet, addr)
-    e4, d4, e6 = fm[3][4], fm[3][3], fm[5][4]
-    base_inp = {
-        "precioActual": price, "tipoEmpresa": cell("Resumen de Valoración", "G3"), "mos": cell("Resumen de Valoración", "G4"),
-        "revenue0": c_("B12"), "ebit0": cell("Valuation output", "B7"), "taxEffective": c_("B24"), "taxMarginal": c_("B25"),
-        "shares0": c_("B22"), "cash": c_("B19"), "debt": c_("B16"), "nonOperatingAssets": c_("B20") or 0,
-        "minorityInterests": c_("B21") or 0, "probFailure": c_("B53") if c_("B52") in ("Yes", "Sí") else 0,
-        "recoveryPct": c_("B55") or 0, "roicTerminal": c_("B50") if c_("B49") in ("Yes", "Sí") else 0, "wacc": cell("Input sheet", "B36"), "riskFreeRate": c_("B35"),
-        "matureMarketERP": cell("Valuation output", "M14") - c_("B35"), "salesToCapital": c_("B32"),
-        "growthCons": cell("Valuation output", "C55"), "marginCons": cell("Valuation output", "G57"),
-        "growthBase": cell("Valuation output", "C4"), "marginBase": cell("Valuation output", "G6"),
-        "growthOpt": cell("Valuation output", "C106"), "marginOpt": cell("Valuation output", "G108"),
-        "daPctRevenue": fm[19][4] / e4, "capexPctRevenue": fm[20][4] / e4, "netBorrowingPctRevenue": fm[27][4] / e4,
-        "nwcPctDeltaRevenue": fm[21][4] / (e4 - d4) if e4 != d4 else 0, "interestOtherPctEBIT": fm[9][4] / e6 if e6 else 0,
-        "buybackRate": fm[30][5] / fm[30][4] - 1 if fm[30][4] else 0, "dividendPerShare": fm[34][4] or 0,
-        "evEbitdaBase": 10, "evFcffBase": 10, "peBase": 10, "pfcfeBase": 10, "pocfBase": 10,
-    }
-    return base_inp
+    """Use the engine's shared grid reader; never approximate year 1 with years 2–5."""
+    bounds={"Input sheet":(75,4),"Valuation output":(140,13),"Financials Multiples":(120,8),
+            "Resumen de Valoración":(20,21),"Cost of capital worksheet":(70,5),"DCF FCFE financiero":(62,9)}
+    bounds.update({name:(34,10) for name,_ in SHEETS.values()})
+    grid={}
+    for name,(rows,cols) in bounds.items():
+        if name=="Financials Multiples":grid[name]=fm;continue
+        data=[]
+        for r in range(1,rows+1):
+            row=[]
+            for c in range(cols):
+                try:v=cell(name,chr(65+c)+str(r))
+                except (KeyError,IndexError):v=None
+                row.append(v)
+            data.append(row)
+        grid[name]=data
+    js=("const fs=require('fs'),vm=require('vm'),c={};vm.createContext(c);"
+        f"vm.runInContext(fs.readFileSync({json.dumps(str(ENGINE))},'utf8'),c);"
+        "const G=JSON.parse(fs.readFileSync(0,'utf8'));const cell=(h,a)=>{const m=a.match(/^([A-Z]+)(\\d+)$/);"
+        "let n=0;for(const k of m[1])n=n*26+k.charCodeAt(0)-64;return G[h]?.[+m[2]-1]?.[n-1]??null;};"
+        "console.log(JSON.stringify(c.insumosDesdeHoja(cell)));")
+    inp=json.loads(subprocess.check_output(['node','-e',js],input=json.dumps(grid),text=True))
+    inp['precioActual']=price
+    return inp
 
 
 def main():
@@ -96,6 +100,7 @@ def main():
     rng = ["'Input sheet'!A1:D70", "'Valuation output'!A1:M140", "'Cost of capital worksheet'!A1:E70",
            "'Descuento de múltiplos'!A1:K49", "'Financials Multiples'!A1:H120", "'Resumen de Valoración'!A1:U20"]
     rng += [f"{s}!A1:J34" for s, _ in SHEETS.values()]
+    if 'DCF FCFE financiero' in {w.title for w in sh.worksheets()}:rng.append("'DCF FCFE financiero'!A1:I62")
     vr = sh.values_batch_get(rng, params=U)["valueRanges"]
     grid = {r.split("!")[0].strip("'"): v.get("values", []) for r, v in zip(rng, vr)}
 
@@ -117,7 +122,8 @@ def main():
     w_dcf, w_mult = cell("Descuento de múltiplos", "B38"), cell("Descuento de múltiplos", "B39")
     op = rec["objetivoPonderado"]
     mos_pct = float(rec.get("mos") or 0)
-    mos = {k: dcf[i] * (1 - mos_pct) for i, k in enumerate(SCEN)}  # MOS sobre el DCF
+    mos_base=(rec.get('valorEsperado') or {}).get('valor',dcf[1])
+    mos = {k:mos_base*(1-mos_pct) for k in SCEN}
 
     # --- sensibilidad de múltiplos (Base) ---
     nd = cell("Input sheet", "B16") - cell("Input sheet", "B19") - (cell("Input sheet", "B20") or 0) + (cell("Input sheet", "B21") or 0)
@@ -155,13 +161,13 @@ def main():
     def c_(addr, sheet="Input sheet"):
         return cell(sheet, addr)
     eng0 = engine_dcf(base_inp)["base"]
-    for lab, change in (("Crecimiento años 1-5 +2 pp", {"growthBase": base_inp["growthBase"] + 0.02}),
-                        ("Crecimiento años 1-5 −2 pp", {"growthBase": base_inp["growthBase"] - 0.02}),
+    for lab, change in (("Crecimiento años 2-5 +2 pp", {"growthBase": base_inp["growthBase"] + 0.02}),
+                        ("Crecimiento años 2-5 −2 pp", {"growthBase": base_inp["growthBase"] - 0.02}),
                         ("Margen objetivo +3 pp", {"marginBase": base_inp["marginBase"] + 0.03}),
                         ("Margen objetivo −3 pp", {"marginBase": base_inp["marginBase"] - 0.03}),
                         ("WACC +1 pp", {"wacc": wacc + 0.01}), ("WACC −1 pp", {"wacc": wacc - 0.01})):
         e = engine_dcf({**base_inp, **change})["base"]
-        new_dcf = dcf[1] * e / eng0
+        new_dcf = e
         sens.append((lab, new_dcf * w_dcf + mult[1] * w_mult))
 
     today = dt.date.today().isoformat()

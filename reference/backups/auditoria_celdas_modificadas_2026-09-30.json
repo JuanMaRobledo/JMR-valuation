@@ -1,0 +1,5586 @@
+{
+  "UBER": {
+    "spreadsheetId": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "PAGS": {
+    "spreadsheetId": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY/edit",
+    "cells": {
+      "Resumen de Valoración!C6": {
+        "formattedValue": "$14,28",
+        "userEnteredValue": {
+          "formulaValue": "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3"
+        },
+        "effectiveValue": {
+          "numberValue": 14.283038972030335
+        }
+      },
+      "Resumen de Valoración!D6": {
+        "formattedValue": "$18,91",
+        "userEnteredValue": {
+          "formulaValue": "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3"
+        },
+        "effectiveValue": {
+          "numberValue": 18.914500500255528
+        }
+      },
+      "Resumen de Valoración!E6": {
+        "formattedValue": "$23,68",
+        "userEnteredValue": {
+          "formulaValue": "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3"
+        },
+        "effectiveValue": {
+          "numberValue": 23.680374331274834
+        }
+      },
+      "Descuento de múltiplos!C38": {
+        "formattedValue": "9,46",
+        "userEnteredValue": {
+          "formulaValue": "='Valuation output'!B86"
+        },
+        "effectiveValue": {
+          "numberValue": 9.464964915779458
+        }
+      },
+      "Descuento de múltiplos!D38": {
+        "formattedValue": "12,53",
+        "userEnteredValue": {
+          "formulaValue": "='Valuation output'!B35"
+        },
+        "effectiveValue": {
+          "numberValue": 12.534103140444149
+        }
+      },
+      "Descuento de múltiplos!E38": {
+        "formattedValue": "15,69",
+        "userEnteredValue": {
+          "formulaValue": "='Valuation output'!B137"
+        },
+        "effectiveValue": {
+          "numberValue": 15.692312586764587
+        }
+      },
+      "Valuation output!A1": {
+        "formattedValue": "PagSeguro Digital Ltd. (NYSE:PAGS)",
+        "userEnteredValue": {
+          "formulaValue": "='Input sheet'!A1"
+        },
+        "effectiveValue": {
+          "stringValue": "PagSeguro Digital Ltd. (NYSE:PAGS)"
+        }
+      },
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "ZTS": {
+    "spreadsheetId": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "EPAM": {
+    "spreadsheetId": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "ONON": {
+    "spreadsheetId": "17E_Rd-MD-u5i8Vez7sYwcWIdVYvDdjNhOu-6NWAzGnQ",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/17E_Rd-MD-u5i8Vez7sYwcWIdVYvDdjNhOu-6NWAzGnQ/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "CELH": {
+    "spreadsheetId": "1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Columna 13",
+        "userEnteredValue": {
+          "stringValue": "Columna 13"
+        },
+        "effectiveValue": {
+          "stringValue": "Columna 13"
+        },
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M3": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M4": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M5": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M6": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M7": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M8": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M9": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M10": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M11": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M12": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M13": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M14": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M15": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M18": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M19": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M20": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M21": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M22": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M23": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M24": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M25": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M26": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M27": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M28": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      },
+      "Income Statement!M29": {
+        "note": "Proyección Nov '26 anterior retirada por incongruencia de magnitud; pendiente de fuente y modelo."
+      }
+    }
+  },
+  "PYPL": {
+    "spreadsheetId": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "NVO": {
+    "spreadsheetId": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "GOOG": {
+    "spreadsheetId": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "CMG": {
+    "spreadsheetId": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "NKE": {
+    "spreadsheetId": "1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "LULU": {
+    "spreadsheetId": "1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "BSX": {
+    "spreadsheetId": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "ADBE": {
+    "spreadsheetId": "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "SHAK": {
+    "spreadsheetId": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "PLTR": {
+    "spreadsheetId": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "MSFT": {
+    "spreadsheetId": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "INTU": {
+    "spreadsheetId": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "DUOL": {
+    "spreadsheetId": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "NVDA": {
+    "spreadsheetId": "1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "DPZ": {
+    "spreadsheetId": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  },
+  "AFYA": {
+    "spreadsheetId": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ/edit",
+    "cells": {
+      "Income Statement!M2": {
+        "formattedValue": "Nov '26 (E)",
+        "userEnteredValue": {
+          "stringValue": "Nov '26 (E)"
+        },
+        "effectiveValue": {
+          "stringValue": "Nov '26 (E)"
+        }
+      },
+      "Income Statement!M3": {
+        "formattedValue": "$26.523",
+        "userEnteredValue": {
+          "numberValue": 26523
+        },
+        "effectiveValue": {
+          "numberValue": 26523
+        }
+      },
+      "Income Statement!M4": {
+        "formattedValue": "11,60%",
+        "userEnteredValue": {
+          "numberValue": 0.116
+        },
+        "effectiveValue": {
+          "numberValue": 0.116
+        }
+      },
+      "Income Statement!M5": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M6": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M7": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M8": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M9": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M10": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M11": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M12": {
+        "formattedValue": "$11.951",
+        "userEnteredValue": {
+          "numberValue": 11950.9
+        },
+        "effectiveValue": {
+          "numberValue": 11950.9
+        }
+      },
+      "Income Statement!M13": {
+        "formattedValue": "0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M14": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M15": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M16": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "formulaValue": "=M14-M15"
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M17": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M18": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M19": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M20": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M21": {
+        "formattedValue": "$0",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M22": {
+        "formattedValue": "$9.742",
+        "userEnteredValue": {
+          "numberValue": 9741.7
+        },
+        "effectiveValue": {
+          "numberValue": 9741.7
+        }
+      },
+      "Income Statement!M23": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M24": {
+        "formattedValue": "24,42",
+        "userEnteredValue": {
+          "numberValue": 24.42
+        },
+        "effectiveValue": {
+          "numberValue": 24.42
+        }
+      },
+      "Income Statement!M25": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M26": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M27": {
+        "formattedValue": "0,00",
+        "userEnteredValue": {
+          "numberValue": 0
+        },
+        "effectiveValue": {
+          "numberValue": 0
+        }
+      },
+      "Income Statement!M28": {
+        "formattedValue": "$12.668",
+        "userEnteredValue": {
+          "numberValue": 12667.6
+        },
+        "effectiveValue": {
+          "numberValue": 12667.6
+        }
+      },
+      "Income Statement!M29": {
+        "formattedValue": "18,00%",
+        "userEnteredValue": {
+          "numberValue": 0.18
+        },
+        "effectiveValue": {
+          "numberValue": 0.18
+        }
+      }
+    }
+  }
+}

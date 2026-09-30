@@ -1,367 +1,369 @@
 {
- "ticker": "PYPL",
- "fecha": "2026-09-30",
- "precio": 54.28,
- "dcf_base": 101.15830362133379,
- "g_ref": 0.036000000000000004,
- "m_base": 0.195,
- "s2c": 2.6,
- "wacc": 0.09211964649685198,
- "beta_hoja": 1.29,
- "beta_bu": 0.39773073043251084,
- "beta_prop": 0.97,
- "industria": "Financial Svcs. (Non-bank & Insurance)",
- "bu_sector": 0.33,
- "rf": 0.0496,
- "erp": 0.0432,
- "tasas_base": {
-  "tramo": ">$25,000 Mn",
-  "<(25)": 1.0,
-  "(25)-(20)": 0.6,
-  "(20)-(15)": 1.5,
-  "(15)-(10)": 3.0,
-  "(10)-(5)": 8.2,
-  "(5)-0": 21.3,
-  "0-5": 32.6,
-  "5-10": 18.1,
-  "10-15": 8.5,
-  "15-20": 3.2,
-  "20-25": 1.2,
-  "25-30": 0.4,
-  "30-35": 0.2,
-  "35-40": 0.1,
-  "40-45": 0.1,
-  ">45": 0.0,
-  "Mean": 2.1,
-  "Median": 2.0,
-  "StDev": 8.6,
-  "bins": [
-   "<(25)",
-   "(25)-(20)",
-   "(20)-(15)",
-   "(15)-(10)",
-   "(10)-(5)",
-   "(5)-0",
-   "0-5",
-   "5-10",
-   "10-15",
-   "15-20",
-   "20-25",
-   "25-30",
-   "30-35",
-   "35-40",
-   "40-45",
-   ">45"
+  "ticker": "PYPL",
+  "fecha": "2026-09-30",
+  "precio": 52.5,
+  "dcf_base": 101.15830362133379,
+  "g_ref": 0.036000000000000004,
+  "m_base": 0.195,
+  "s2c": 2.6,
+  "wacc": 0.09211964649685198,
+  "beta_hoja": 1.29,
+  "beta_bu": 0.39773073043251084,
+  "beta_prop": 0.97,
+  "industria": "Financial Svcs. (Non-bank & Insurance)",
+  "bu_sector": 0.33,
+  "rf": 0.0496,
+  "erp": 0.0432,
+  "tasas_base": {
+    "tramo": ">$25,000 Mn",
+    "<(25)": 1.0,
+    "(25)-(20)": 0.6,
+    "(20)-(15)": 1.5,
+    "(15)-(10)": 3.0,
+    "(10)-(5)": 8.2,
+    "(5)-0": 21.3,
+    "0-5": 32.6,
+    "5-10": 18.1,
+    "10-15": 8.5,
+    "15-20": 3.2,
+    "20-25": 1.2,
+    "25-30": 0.4,
+    "30-35": 0.2,
+    "35-40": 0.1,
+    "40-45": 0.1,
+    ">45": 0.0,
+    "Mean": 2.1,
+    "Median": 2.0,
+    "StDev": 8.6,
+    "bins": [
+      "<(25)",
+      "(25)-(20)",
+      "(20)-(15)",
+      "(15)-(10)",
+      "(10)-(5)",
+      "(5)-0",
+      "0-5",
+      "5-10",
+      "10-15",
+      "15-20",
+      "20-25",
+      "25-30",
+      "30-35",
+      "35-40",
+      "40-45",
+      ">45"
+    ],
+    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+  },
+  "historias": [
+    {
+      "nombre": "A · Se estabiliza con márgenes estables",
+      "prob": 0.45,
+      "margen": 0.19,
+      "crec": {
+        "Checkout de marca": [
+          0.03,
+          0.03,
+          0.04,
+          0.04,
+          0.04
+        ],
+        "Procesamiento no de marca (Braintree)": [
+          0.03,
+          0.04,
+          0.04,
+          0.04,
+          0.04
+        ],
+        "Venmo y P2P": [
+          0.15,
+          0.15,
+          0.12,
+          0.1,
+          0.1
+        ],
+        "Otros servicios de valor agregado": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      },
+      "cagr": 0.048626490385704546,
+      "rev5": 43272.796405,
+      "mix5": {
+        "Checkout de marca": 0.39987799709659183,
+        "Procesamiento no de marca (Braintree)": 0.30630092311918394,
+        "Venmo y P2P": 0.1366778228207274,
+        "Otros servicios de valor agregado": 0.15714325696349693
+      },
+      "tasa_base": 0.4899552826852065,
+      "roic_terminal_usado": 0.134,
+      "valor_beta_hoja": 105.14277803238065,
+      "valor_beta_prop": 111.59268196569204
+    },
+    {
+      "nombre": "B · El botón PayPal pierde frente a las billeteras nativas",
+      "prob": 0.3,
+      "margen": 0.16,
+      "crec": {
+        "Checkout de marca": [
+          0,
+          -0.01,
+          -0.02,
+          -0.02,
+          -0.02
+        ],
+        "Procesamiento no de marca (Braintree)": [
+          0.03,
+          0.03,
+          0.03,
+          0.03,
+          0.03
+        ],
+        "Venmo y P2P": [
+          0.1,
+          0.08,
+          0.08,
+          0.06,
+          0.06
+        ],
+        "Otros servicios de valor agregado": [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      },
+      "roic_terminal": "costo_capital",
+      "cagr": 0.01575629880421503,
+      "rev5": 36902.7268519496,
+      "mix5": {
+        "Checkout de marca": 0.3661195882408406,
+        "Procesamiento no de marca (Braintree)": 0.3455575212222102,
+        "Venmo y P2P": 0.12891617398047828,
+        "Otros servicios de valor agregado": 0.159406716556471
+      },
+      "tasa_base": 0.683378167094044,
+      "roic_terminal_usado": 0.0,
+      "valor_beta_hoja": 65.52860373862967,
+      "valor_beta_prop": 69.16935014256455
+    },
+    {
+      "nombre": "C · Reactivación: Fastlane, Venmo y publicidad",
+      "prob": 0.15,
+      "margen": 0.22,
+      "crec": {
+        "Checkout de marca": [
+          0.06,
+          0.06,
+          0.06,
+          0.05,
+          0.05
+        ],
+        "Procesamiento no de marca (Braintree)": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        "Venmo y P2P": [
+          0.2,
+          0.18,
+          0.15,
+          0.12,
+          0.1
+        ],
+        "Otros servicios de valor agregado": [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      },
+      "cagr": 0.06848321279778524,
+      "rev5": 47527.97975069041,
+      "mix5": {
+        "Checkout de marca": 0.40060359455365707,
+        "Procesamiento no de marca (Braintree)": 0.29538594447192057,
+        "Venmo y P2P": 0.13929527564032068,
+        "Otros servicios de valor agregado": 0.1647151853341017
+      },
+      "tasa_base": 0.36048945255844034,
+      "roic_terminal_usado": 0.134,
+      "valor_beta_hoja": 132.14526730929128,
+      "valor_beta_prop": 140.45058800792657
+    },
+    {
+      "nombre": "D · Pierde el checkout y compite por precio",
+      "prob": 0.1,
+      "margen": 0.13,
+      "crec": {
+        "Checkout de marca": [
+          -0.03,
+          -0.05,
+          -0.05,
+          -0.04,
+          -0.03
+        ],
+        "Procesamiento no de marca (Braintree)": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Venmo y P2P": [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        "Otros servicios de valor agregado": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "roic_terminal": "costo_capital",
+      "cagr": -0.010582205924871468,
+      "rev5": 32360.067676249997,
+      "mix5": {
+        "Checkout de marca": 0.36527545734013683,
+        "Procesamiento no de marca (Braintree)": 0.33992512345928194,
+        "Venmo y P2P": 0.13015205031048535,
+        "Otros servicios de valor agregado": 0.16464736889009585
+      },
+      "tasa_base": 0.7955801972399525,
+      "roic_terminal_usado": 0.0,
+      "valor_beta_hoja": 50.29558390835335,
+      "valor_beta_prop": 52.90349480662504
+    }
   ],
-  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
- },
- "historias": [
-  {
-   "nombre": "A · Se estabiliza con márgenes estables",
-   "prob": 0.45,
-   "margen": 0.19,
-   "crec": {
-    "Checkout de marca": [
-     0.03,
-     0.03,
-     0.04,
-     0.04,
-     0.04
-    ],
-    "Procesamiento no de marca (Braintree)": [
-     0.03,
-     0.04,
-     0.04,
-     0.04,
-     0.04
-    ],
-    "Venmo y P2P": [
-     0.15,
-     0.15,
-     0.12,
-     0.1,
-     0.1
-    ],
-    "Otros servicios de valor agregado": [
-     0.05,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ]
-   },
-   "cagr": 0.048626490385704546,
-   "rev5": 43272.79640500001,
-   "mix5": {
-    "Checkout de marca": 0.3998779970965918,
-    "Procesamiento no de marca (Braintree)": 0.3063009231191839,
-    "Venmo y P2P": 0.13667782282072738,
-    "Otros servicios de valor agregado": 0.1571432569634969
-   },
-   "tasa_base": 0.4899552826852065,
-   "roic_terminal_usado": 0.134,
-   "valor_beta_hoja": 105.14277803238068,
-   "valor_beta_prop": 111.59268196569207
-  },
-  {
-   "nombre": "B · El botón PayPal pierde frente a las billeteras nativas",
-   "prob": 0.3,
-   "margen": 0.16,
-   "crec": {
-    "Checkout de marca": [
-     0,
-     -0.01,
-     -0.02,
-     -0.02,
-     -0.02
-    ],
-    "Procesamiento no de marca (Braintree)": [
-     0.03,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ],
-    "Venmo y P2P": [
-     0.1,
-     0.08,
-     0.08,
-     0.06,
-     0.06
-    ],
-    "Otros servicios de valor agregado": [
-     0.02,
-     0.02,
-     0.02,
-     0.02,
-     0.02
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "cagr": 0.01575629880421503,
-   "rev5": 36902.7268519496,
-   "mix5": {
-    "Checkout de marca": 0.3661195882408406,
-    "Procesamiento no de marca (Braintree)": 0.3455575212222102,
-    "Venmo y P2P": 0.12891617398047828,
-    "Otros servicios de valor agregado": 0.159406716556471
-   },
-   "tasa_base": 0.683378167094044,
-   "roic_terminal_usado": 0.0,
-   "valor_beta_hoja": 65.52860373862967,
-   "valor_beta_prop": 69.16935014256455
-  },
-  {
-   "nombre": "C · Reactivación: Fastlane, Venmo y publicidad",
-   "prob": 0.15,
-   "margen": 0.22,
-   "crec": {
-    "Checkout de marca": [
-     0.06,
-     0.06,
-     0.06,
-     0.05,
-     0.05
-    ],
-    "Procesamiento no de marca (Braintree)": [
-     0.05,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Venmo y P2P": [
-     0.2,
-     0.18,
-     0.15,
-     0.12,
-     0.1
-    ],
-    "Otros servicios de valor agregado": [
-     0.08,
-     0.08,
-     0.08,
-     0.08,
-     0.08
-    ]
-   },
-   "cagr": 0.06848321279778524,
-   "rev5": 47527.97975069041,
-   "mix5": {
-    "Checkout de marca": 0.40060359455365707,
-    "Procesamiento no de marca (Braintree)": 0.29538594447192057,
-    "Venmo y P2P": 0.13929527564032068,
-    "Otros servicios de valor agregado": 0.1647151853341017
-   },
-   "tasa_base": 0.36048945255844034,
-   "roic_terminal_usado": 0.134,
-   "valor_beta_hoja": 132.14526730929128,
-   "valor_beta_prop": 140.45058800792657
-  },
-  {
-   "nombre": "D · Pierde el checkout y compite por precio",
-   "prob": 0.1,
-   "margen": 0.13,
-   "crec": {
-    "Checkout de marca": [
-     -0.03,
-     -0.05,
-     -0.05,
-     -0.04,
-     -0.03
-    ],
-    "Procesamiento no de marca (Braintree)": [
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "Venmo y P2P": [
-     0.05,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Otros servicios de valor agregado": [
-     0,
-     0,
-     0,
-     0,
-     0
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "cagr": -0.010582205924871468,
-   "rev5": 32360.067676249997,
-   "mix5": {
-    "Checkout de marca": 0.36527545734013683,
-    "Procesamiento no de marca (Braintree)": 0.33992512345928194,
-    "Venmo y P2P": 0.13015205031048535,
-    "Otros servicios de valor agregado": 0.16464736889009585
-   },
-   "tasa_base": 0.7955801972399525,
-   "roic_terminal_usado": 0.0,
-   "valor_beta_hoja": 50.29558390835335,
-   "valor_beta_prop": 52.90349480662504
-  }
- ],
- "valor_esperado_beta_hoja": 91.82417972338924,
- "valor_esperado_beta_prop": 97.32544960918229,
- "betas": [
-  {
-   "enfoque": "Hoja (regresión o la cargada en el libro)",
-   "beta": 1.29,
-   "ke": 0.105328,
-   "wacc": 0.09211964649685198,
-   "dcf_base": 101.15830362133379
-  },
-  {
-   "enfoque": "Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada)",
-   "beta": 0.39773073043251084,
-   "ke": 0.06678196755468446,
-   "wacc": 0.061855645848418725,
-   "dcf_base": 119.48289984565766
-  },
-  {
-   "enfoque": "Propuesta (sector ajustado por riesgo propio)",
-   "beta": 0.97,
-   "ke": 0.091504,
-   "wacc": 0.08126588234985517,
-   "dcf_base": 107.29513300836447
-  }
- ],
- "sensibilidad": {
-  "g": [
-   -0.003999999999999997,
-   0.016000000000000004,
-   0.036000000000000004,
-   0.05600000000000001,
-   0.07600000000000001
+  "valor_esperado_beta_hoja": 91.82417972338922,
+  "valor_esperado_beta_prop": 97.32544960918227,
+  "betas": [
+    {
+      "enfoque": "Hoja (regresión o la cargada en el libro)",
+      "beta": 1.29,
+      "ke": 0.105328,
+      "wacc": 0.09211964649685198,
+      "dcf_base": 101.15830362133379
+    },
+    {
+      "enfoque": "Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada)",
+      "beta": 0.39773073043251084,
+      "ke": 0.06678196755468446,
+      "wacc": 0.061855645848418725,
+      "dcf_base": 119.48289984565766
+    },
+    {
+      "enfoque": "Propuesta (sector ajustado por riesgo propio)",
+      "beta": 0.97,
+      "ke": 0.091504,
+      "wacc": 0.08126588234985517,
+      "dcf_base": 107.29513300836447
+    }
   ],
-  "m": [
-   0.155,
-   0.17500000000000002,
-   0.195,
-   0.215,
-   0.23500000000000001
+  "sensibilidad": {
+    "g": [
+      -0.003999999999999997,
+      0.016000000000000004,
+      0.036000000000000004,
+      0.05600000000000001,
+      0.07600000000000001
+    ],
+    "m": [
+      0.155,
+      0.17500000000000002,
+      0.195,
+      0.215,
+      0.23500000000000001
+    ],
+    "v": [
+      [
+        68.7224772223601,
+        75.97377769239746,
+        83.22507816243484,
+        90.4763786324722,
+        97.72767910250961
+      ],
+      [
+        75.256540126671,
+        83.49123157731223,
+        91.72592302795346,
+        99.96061447859468,
+        108.19530592923589
+      ],
+      [
+        82.50306603813723,
+        91.83866707775384,
+        101.1742681173704,
+        110.509869156987,
+        119.8454701966036
+      ],
+      [
+        90.53420528745376,
+        101.10027316636108,
+        111.66634104526838,
+        122.23240892417569,
+        132.798476803083
+      ],
+      [
+        99.4282355080934,
+        111.36739146274164,
+        123.30654741738985,
+        135.24570337203807,
+        147.18485932668628
+      ]
+    ],
+    "referencia_constante": 101.1742681173704,
+    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+  },
+  "inverso": [
+    {
+      "beta": 1.29,
+      "margen": 0.15,
+      "g": -0.05961573886049604,
+      "tasa_base": 0.9137698117312136
+    },
+    {
+      "beta": 1.29,
+      "margen": 0.175,
+      "g": -0.0850561509211945,
+      "tasa_base": 0.9450336905527168
+    },
+    {
+      "beta": 1.29,
+      "margen": 0.195,
+      "g": null,
+      "tasa_base": null
+    },
+    {
+      "beta": 0.97,
+      "margen": 0.15,
+      "g": -0.07137699314331186,
+      "tasa_base": 0.9330582687550314
+    },
+    {
+      "beta": 0.97,
+      "margen": 0.175,
+      "g": -0.0962701371386687,
+      "tasa_base": 0.9517620822832014
+    },
+    {
+      "beta": 0.97,
+      "margen": 0.195,
+      "g": null,
+      "tasa_base": null
+    }
   ],
-  "v": [
-   [
-    68.71163336121182,
-    75.961789633621,
-    83.21194590603018,
-    90.46210217843935,
-    97.71225845084857
-   ],
-   [
-    75.24466524228649,
-    83.47805732401235,
-    91.71144940573822,
-    99.94484148746406,
-    108.1782335691899
-   ],
-   [
-    82.49004770951194,
-    91.8241756654229,
-    101.15830362133379,
-    110.4924315772447,
-    119.82655953315566
-   ],
-   [
-    90.51991970883397,
-    101.0843203461401,
-    111.64872098344622,
-    122.21312162075233,
-    132.77752225805844
-   ],
-   [
-    99.41254652213647,
-    111.34981857278949,
-    123.2870906234425,
-    135.22436267409552,
-    147.16163472474852
-   ]
-  ]
- },
- "inverso": [
-  {
-   "beta": 1.29,
-   "margen": 0.15,
-   "g": -0.05,
-   "tasa_base": 0.898
-  },
-  {
-   "beta": 1.29,
-   "margen": 0.175,
-   "g": -0.076,
-   "tasa_base": 0.9396000000000001
-  },
-  {
-   "beta": 1.29,
-   "margen": 0.195,
-   "g": -0.094,
-   "tasa_base": 0.9504
-  },
-  {
-   "beta": 0.97,
-   "margen": 0.15,
-   "g": -0.062,
-   "tasa_base": 0.9176800000000002
-  },
-  {
-   "beta": 0.97,
-   "margen": 0.175,
-   "g": -0.088,
-   "tasa_base": 0.9468000000000001
-  },
-  {
-   "beta": 0.97,
-   "margen": 0.195,
-   "g": -0.1,
-   "tasa_base": 0.9540000000000001
-  }
- ],
- "ingresos_ltm": 34128
+  "ingresos_ltm": 34128
 }

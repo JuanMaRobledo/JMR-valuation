@@ -1,327 +1,327 @@
 {
- "ticker": "NVO",
- "empresa": "Novo Nordisk A/S",
- "fecha": "2026-09-30",
- "industria_damodaran": "Drugs (Pharmaceutical)",
- "segmentos": {
-  "Obesidad (Wegovy, Saxenda)": 12350,
-  "Diabetes GLP-1 (Ozempic, Rybelsus)": 22800,
-  "Insulinas y otros de diabetes": 8280,
-  "Enfermedades raras": 2923
- },
- "riesgo": {
-  "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,09. La bottom-up de Drugs (Pharmaceutical) (228 empresas, 0,92 desapalancada y corregida por caja) reapalancada da 1,00; el DCF Base sube de US$41,96 a US$42,75. Diferencia menor: el riesgo está en el precio de los GLP-1."
- },
- "historias": [
-  {
-   "nombre": "A · El volumen compensa la caída de precio",
-   "prob": 0.4,
-   "margen": 0.4,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     0.05,
-     0.1,
-     0.1,
-     0.08,
-     0.07
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.08,
-     -0.02,
-     0,
-     0,
-     0
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.05,
-     -0.05,
-     -0.05,
-     -0.05,
-     -0.05
-    ],
-    "Enfermedades raras": [
-     0.02,
-     0.02,
-     0.02,
-     0.02,
-     0.02
-    ]
-   }
+  "ticker": "NVO",
+  "empresa": "Novo Nordisk A/S",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Drugs (Pharmaceutical)",
+  "segmentos": {
+    "Obesidad (Wegovy, Saxenda)": 12350,
+    "Diabetes GLP-1 (Ozempic, Rybelsus)": 22800,
+    "Insulinas y otros de diabetes": 8280,
+    "Enfermedades raras": 2923
   },
-  {
-   "nombre": "B · Guerra de precios con Lilly y genéricos",
-   "prob": 0.3,
-   "margen": 0.35,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     -0.02,
-     0.04,
-     0.05,
-     0.05,
-     0.04
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.12,
-     -0.06,
-     -0.04,
-     -0.03,
-     -0.03
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.07,
-     -0.07,
-     -0.07,
-     -0.07,
-     -0.07
-    ],
-    "Enfermedades raras": [
-     0,
-     0,
-     0,
-     0,
-     0
-    ]
-   },
-   "roic_terminal": "costo_capital"
+  "riesgo": {
+    "beta_propuesta": null,
+    "texto": "La hoja usa una beta de 1,09. La bottom-up de Drugs (Pharmaceutical) (228 empresas, 0,92 desapalancada y corregida por caja) reapalancada da 1,00; el DCF Base sube de US$41,96 a US$42,75. Diferencia menor: el riesgo está en el precio de los GLP-1."
   },
-  {
-   "nombre": "C · La nueva generación recupera el liderazgo",
-   "prob": 0.2,
-   "margen": 0.43,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     0.1,
-     0.15,
-     0.15,
-     0.12,
-     0.1
+  "historias": [
+    {
+      "nombre": "A · El volumen compensa la caída de precio",
+      "prob": 0.4,
+      "margen": 0.4,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          0.05,
+          0.1,
+          0.1,
+          0.08,
+          0.07
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.08,
+          -0.02,
+          0,
+          0,
+          0
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.05,
+          -0.05,
+          -0.05,
+          -0.05,
+          -0.05
+        ],
+        "Enfermedades raras": [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      }
+    },
+    {
+      "nombre": "B · Guerra de precios con Lilly y genéricos",
+      "prob": 0.3,
+      "margen": 0.35,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          -0.02,
+          0.04,
+          0.05,
+          0.05,
+          0.04
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.12,
+          -0.06,
+          -0.04,
+          -0.03,
+          -0.03
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.07,
+          -0.07,
+          -0.07,
+          -0.07,
+          -0.07
+        ],
+        "Enfermedades raras": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    },
+    {
+      "nombre": "C · La nueva generación recupera el liderazgo",
+      "prob": 0.2,
+      "margen": 0.43,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          0.1,
+          0.15,
+          0.15,
+          0.12,
+          0.1
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.04,
+          0,
+          0.02,
+          0.02,
+          0.02
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.04,
+          -0.04,
+          -0.04,
+          -0.04,
+          -0.04
+        ],
+        "Enfermedades raras": [
+          0.03,
+          0.03,
+          0.03,
+          0.03,
+          0.03
+        ]
+      }
+    },
+    {
+      "nombre": "D · Novo pierde relevancia frente a Lilly",
+      "prob": 0.1,
+      "margen": 0.3,
+      "crec": {
+        "Obesidad (Wegovy, Saxenda)": [
+          -0.08,
+          -0.05,
+          0,
+          0.02,
+          0.02
+        ],
+        "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+          -0.15,
+          -0.1,
+          -0.08,
+          -0.05,
+          -0.05
+        ],
+        "Insulinas y otros de diabetes": [
+          -0.08,
+          -0.08,
+          -0.08,
+          -0.08,
+          -0.08
+        ],
+        "Enfermedades raras": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "roic_terminal": "costo_capital"
+    }
+  ],
+  "margenes_inverso": [
+    0.35,
+    0.4,
+    0.44
+  ],
+  "historia": "Novo Nordisk creó el mercado de los GLP-1 para diabetes y obesidad (Ozempic, Wegovy, Rybelsus) y entre 2022 y 2024 creció 25-31% al año con márgenes operativos de ~44%. Ahora vive una transición: Eli Lilly (tirzepatida) le quitó el liderazgo en obesidad en EE.UU., el precio realizado cae más rápido de lo que crece el volumen (canal de autopago a US$149-299 por mes, Medicare desde julio de 2026), la semaglutida enfrenta genéricos fuera de EE.UU. desde 2026 y las insulinas declinan. En el 1S26 las ventas ajustadas subieron solo 2% a tipo de cambio constante, aunque el volumen sigue creciendo y la guía subió dos veces. La historia de cinco años depende de si el volumen global de obesidad (Wegovy pill, dosis altas, nuevos mercados) compensa la caída de precio, y de si su próxima generación (CagriSema, amicretin) recupera terreno frente a Lilly.",
+  "filtro": [
+    [
+      "Las ventas vuelven a crecer ~4% anual desde 2027",
+      "Sí",
+      "Sí: el volumen crece; el precio es la incógnita",
+      "Media"
     ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.04,
-     0,
-     0.02,
-     0.02,
-     0.02
+    [
+      "El margen operativo se mantiene en ~40%",
+      "Sí",
+      "Sí: 41-44% hoy con precios en baja; la escala de producción ayuda",
+      "Probable"
     ],
-    "Insulinas y otros de diabetes": [
-     -0.04,
-     -0.04,
-     -0.04,
-     -0.04,
-     -0.04
+    [
+      "Novo recupera el liderazgo en obesidad",
+      "Sí",
+      "Poco: Lilly lidera en eficacia y en nuevos lanzamientos",
+      "Baja-media"
     ],
-    "Enfermedades raras": [
-     0.03,
-     0.03,
-     0.03,
-     0.03,
-     0.03
+    [
+      "La semaglutida pierde valor por genéricos antes de 2032 en EE.UU.",
+      "Sí",
+      "Fuera de EE.UU. sí desde 2026; en EE.UU. la patente llega a 2032",
+      "Parcial"
     ]
-   }
+  ],
+  "tasas_base_nota": "Para empresas de más de US$25.000 millones, crecer 0,8% anual cinco años (historia A) lo logró ~71%: la hoja (3%) no pide nada extraordinario. El riesgo de Novo no es de crecimiento sino de precio: en farmacéuticas, la erosión de precio por competencia y genéricos suele ser más rápida de lo que el volumen compensa.",
+  "crecimiento": {
+    "texto": "En dólares (hoja): US$35.570 millones (2023, +31%), US$44.474 millones (2024, +25%) y US$47.332 millones (2025, +6%); LTM US$46.353 millones. En coronas, 2025 fue DKK 309.064 millones (+10% a tipo de cambio constante): obesidad DKK 82.347 millones, GLP-1 para diabetes DKK 152.202 millones y enfermedades raras DKK 19.608 millones; EE.UU. aportó 56%. En el 1S26 las ventas ajustadas crecieron 2% a tipo de cambio constante (EUCAN +20%, China 0%, emergentes −7%). La división LTM en dólares de las historias usa el peso de 2025.",
+    "tabla": {
+      "cols": [
+        "US$ millones",
+        "2023",
+        "2024",
+        "2025",
+        "LTM"
+      ],
+      "align": [
+        "l",
+        "r",
+        "r",
+        "r",
+        "r"
+      ],
+      "rows": [
+        [
+          "Ingresos",
+          "35.570",
+          "44.474",
+          "47.332",
+          "46.353"
+        ],
+        [
+          "Crecimiento",
+          "+31,3%",
+          "+25,0%",
+          "+6,4%",
+          "—"
+        ],
+        [
+          "Margen operativo",
+          "44,2%",
+          "44,2%",
+          "41,3%",
+          "40,2%"
+        ],
+        [
+          "Capex",
+          "3.952",
+          "7.223",
+          "9.210",
+          "—"
+        ],
+        [
+          "FCFF (hoja)",
+          "12.618",
+          "12.028",
+          "6.712",
+          "—"
+        ]
+      ]
+    }
   },
-  {
-   "nombre": "D · Novo pierde relevancia frente a Lilly",
-   "prob": 0.1,
-   "margen": 0.3,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     -0.08,
-     -0.05,
-     0,
-     0.02,
-     0.02
+  "margenes": {
+    "texto": "El margen operativo bajó de 44% a ~41% por precios, costos de reestructuración y la integración de las plantas de Catalent. La hoja supone 44% el próximo año y 40% de objetivo. El segmento Obesidad y Diabetes aún tiene 52,4% de margen; lo que pesa es el precio en EE.UU. Las historias van de 30% (pérdida de relevancia) a 43%."
+  },
+  "reinversion": {
+    "texto": "Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Moat estrecho (patentes y escala de manufactura en diabetes y obesidad, que darían un moat ancho, pero con erosión visible hoy: pierde participación frente a Lilly, recorta precios y su ROIC bajó de 87% a 36%): el ROIC después del año 10 es 13,1%, el punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual y el de la industria (17,0%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
+  },
+  "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
+  "premortem": [
+    "Lilly (tirzepatida y orforglipron oral) gana también fuera de EE.UU. y Novo queda como segundo jugador con precio más bajo.",
+    "CagriSema decepciona frente a la competencia y la cartera nueva no llega a tiempo.",
+    "Los genéricos de semaglutida fuera de EE.UU. bajan el precio más rápido de lo previsto.",
+    "Medicare y el autopago fijan un precio de referencia bajo que se extiende a todo el mercado estadounidense.",
+    "La nueva capacidad de producción queda ociosa y se deteriora."
+  ],
+  "contra": "en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja; si 2027 no muestra crecimiento en moneda constante, B pasa a ser la historia central.",
+  "indicadores": [
+    [
+      "Ventas a tipo de cambio constante",
+      "+2% (1S26)",
+      "≥ +5% en 2027",
+      "Negativas"
     ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.15,
-     -0.1,
-     -0.08,
-     -0.05,
-     -0.05
+    [
+      "Participación de Novo en prescripciones de obesidad (EE.UU.)",
+      "Detrás de Lilly",
+      "Estabiliza",
+      "Sigue cayendo"
     ],
-    "Insulinas y otros de diabetes": [
-     -0.08,
-     -0.08,
-     -0.08,
-     -0.08,
-     -0.08
+    [
+      "Precio realizado de Wegovy/Ozempic en EE.UU.",
+      "En fuerte baja",
+      "Baja < 10% anual",
+      "Baja > 15% anual"
     ],
-    "Enfermedades raras": [
-     0,
-     0,
-     0,
-     0,
-     0
+    [
+      "Resultados de CagriSema y amicretin",
+      "En desarrollo",
+      "Superioridad o no inferioridad frente a tirzepatida",
+      "Datos débiles"
+    ],
+    [
+      "Margen operativo",
+      "~40%",
+      "≥ 40%",
+      "≤ 36%"
     ]
-   },
-   "roic_terminal": "costo_capital"
-  }
- ],
- "margenes_inverso": [
-  0.35,
-  0.4,
-  0.44
- ],
- "historia": "Novo Nordisk creó el mercado de los GLP-1 para diabetes y obesidad (Ozempic, Wegovy, Rybelsus) y entre 2022 y 2024 creció 25-31% al año con márgenes operativos de ~44%. Ahora vive una transición: Eli Lilly (tirzepatida) le quitó el liderazgo en obesidad en EE.UU., el precio realizado cae más rápido de lo que crece el volumen (canal de autopago a US$149-299 por mes, Medicare desde julio de 2026), la semaglutida enfrenta genéricos fuera de EE.UU. desde 2026 y las insulinas declinan. En el 1S26 las ventas ajustadas subieron solo 2% a tipo de cambio constante, aunque el volumen sigue creciendo y la guía subió dos veces. La historia de cinco años depende de si el volumen global de obesidad (Wegovy pill, dosis altas, nuevos mercados) compensa la caída de precio, y de si su próxima generación (CagriSema, amicretin) recupera terreno frente a Lilly.",
- "filtro": [
-  [
-   "Las ventas vuelven a crecer ~4% anual desde 2027",
-   "Sí",
-   "Sí: el volumen crece; el precio es la incógnita",
-   "Media"
   ],
-  [
-   "El margen operativo se mantiene en ~40%",
-   "Sí",
-   "Sí: 41-44% hoy con precios en baja; la escala de producción ayuda",
-   "Probable"
-  ],
-  [
-   "Novo recupera el liderazgo en obesidad",
-   "Sí",
-   "Poco: Lilly lidera en eficacia y en nuevos lanzamientos",
-   "Baja-media"
-  ],
-  [
-   "La semaglutida pierde valor por genéricos antes de 2032 en EE.UU.",
-   "Sí",
-   "Fuera de EE.UU. sí desde 2026; en EE.UU. la patente llega a 2032",
-   "Parcial"
-  ]
- ],
- "tasas_base_nota": "Para empresas de más de US$25.000 millones, crecer 0,8% anual cinco años (historia A) lo logró ~71%: la hoja (3%) no pide nada extraordinario. El riesgo de Novo no es de crecimiento sino de precio: en farmacéuticas, la erosión de precio por competencia y genéricos suele ser más rápida de lo que el volumen compensa.",
- "crecimiento": {
-  "texto": "En dólares (hoja): US$35.570 millones (2023, +31%), US$44.474 millones (2024, +25%) y US$47.332 millones (2025, +6%); LTM US$46.353 millones. En coronas, 2025 fue DKK 309.064 millones (+10% a tipo de cambio constante): obesidad DKK 82.347 millones, GLP-1 para diabetes DKK 152.202 millones y enfermedades raras DKK 19.608 millones; EE.UU. aportó 56%. En el 1S26 las ventas ajustadas crecieron 2% a tipo de cambio constante (EUCAN +20%, China 0%, emergentes −7%). La división LTM en dólares de las historias usa el peso de 2025.",
-  "tabla": {
-   "cols": [
-    "US$ millones",
-    "2023",
-    "2024",
-    "2025",
-    "LTM"
-   ],
-   "align": [
-    "l",
-    "r",
-    "r",
-    "r",
-    "r"
-   ],
-   "rows": [
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Pionera de los GLP-1 en transición: volumen en alza, precio en baja y Lilly adelante",
+  "confianza": "Media: el mercado de obesidad crecerá; la participación y el precio de Novo son inciertos",
+  "cambiaria": "Ventas a tipo de cambio constante, participación frente a Lilly y datos de CagriSema",
+  "revision": "Resultados de 9M26 (nov-2026)",
+  "fuentes": [
     [
-     "Ingresos",
-     "35.570",
-     "44.474",
-     "47.332",
-     "46.353"
+      "Novo Nordisk, informe del 1S 2026 (Form 6-K)",
+      "https://www.sec.gov/Archives/edgar/data/0000353278/000035327826000023/caq22026.htm"
     ],
     [
-     "Crecimiento",
-     "+31,3%",
-     "+25,0%",
-     "+6,4%",
-     "—"
+      "Novo Nordisk, informe financiero 2025 (Form 6-K)",
+      "https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm"
     ],
     [
-     "Margen operativo",
-     "44,2%",
-     "44,2%",
-     "41,3%",
-     "40,2%"
+      "Novo Nordisk, Form 20-F 2025",
+      "https://www.sec.gov/Archives/edgar/data/353278/000035327826000012/nvo-20251231.htm"
     ],
     [
-     "Capex",
-     "3.952",
-     "7.223",
-     "9.210",
-     "—"
+      "Eli Lilly, resultados del 2T 2026",
+      "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000077/q226lillysalesandearningsp.htm"
     ],
     [
-     "FCFF (hoja)",
-     "12.618",
-     "12.028",
-     "6.712",
-     "—"
+      "Mauboussin & Callahan, The Base Rate Book (2016)",
+      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+    ],
+    [
+      "Damodaran, Betas by Sector (US), enero 2026",
+      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
     ]
-   ]
-  }
- },
- "margenes": {
-  "texto": "El margen operativo bajó de 44% a ~41% por precios, costos de reestructuración y la integración de las plantas de Catalent. La hoja supone 44% el próximo año y 40% de objetivo. El segmento Obesidad y Diabetes aún tiene 52,4% de margen; lo que pesa es el precio en EE.UU. Las historias van de 30% (pérdida de relevancia) a 43%."
- },
- "reinversion": {
-  "texto": "Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Moat estrecho (patentes y escala de manufactura en diabetes y obesidad, que darían un moat ancho, pero con erosión visible hoy: pierde participación frente a Lilly, recorta precios y su ROIC bajó de 87% a 36%): el ROIC después del año 10 es 13,1%, el punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual y el de la industria (17,0%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
- },
- "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
- "premortem": [
-  "Lilly (tirzepatida y orforglipron oral) gana también fuera de EE.UU. y Novo queda como segundo jugador con precio más bajo.",
-  "CagriSema decepciona frente a la competencia y la cartera nueva no llega a tiempo.",
-  "Los genéricos de semaglutida fuera de EE.UU. bajan el precio más rápido de lo previsto.",
-  "Medicare y el autopago fijan un precio de referencia bajo que se extiende a todo el mercado estadounidense.",
-  "La nueva capacidad de producción queda ociosa y se deteriora."
- ],
- "contra": "en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja; si 2027 no muestra crecimiento en moneda constante, B pasa a ser la historia central.",
- "indicadores": [
-  [
-   "Ventas a tipo de cambio constante",
-   "+2% (1S26)",
-   "≥ +5% en 2027",
-   "Negativas"
-  ],
-  [
-   "Participación de Novo en prescripciones de obesidad (EE.UU.)",
-   "Detrás de Lilly",
-   "Estabiliza",
-   "Sigue cayendo"
-  ],
-  [
-   "Precio realizado de Wegovy/Ozempic en EE.UU.",
-   "En fuerte baja",
-   "Baja < 10% anual",
-   "Baja > 15% anual"
-  ],
-  [
-   "Resultados de CagriSema y amicretin",
-   "En desarrollo",
-   "Superioridad o no inferioridad frente a tirzepatida",
-   "Datos débiles"
-  ],
-  [
-   "Margen operativo",
-   "~40%",
-   "≥ 40%",
-   "≤ 36%"
   ]
- ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$38,71) queda 8% por encima del valor esperado de las historias (US$35,71) y 8% por debajo del DCF (US$41,96). El DCF inverso pide ingresos planos con margen de 40%, o 3,4% anual con margen de 35% (lo logró ~59-76% de las empresas de este tamaño): el mercado valora algo cercano a la historia A. ¿Qué sabe el mercado que yo no? Probablemente le da más peso a la guerra de precios de los GLP-1 (historia B). La decisión depende de cuánto peso le das a B.",
- "frase": "Pionera de los GLP-1 en transición: volumen en alza, precio en baja y Lilly adelante",
- "confianza": "Media: el mercado de obesidad crecerá; la participación y el precio de Novo son inciertos",
- "cambiaria": "Ventas a tipo de cambio constante, participación frente a Lilly y datos de CagriSema",
- "revision": "Resultados de 9M26 (nov-2026)",
- "fuentes": [
-  [
-   "Novo Nordisk, informe del 1S 2026 (Form 6-K)",
-   "https://www.sec.gov/Archives/edgar/data/0000353278/000035327826000023/caq22026.htm"
-  ],
-  [
-   "Novo Nordisk, informe financiero 2025 (Form 6-K)",
-   "https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm"
-  ],
-  [
-   "Novo Nordisk, Form 20-F 2025",
-   "https://www.sec.gov/Archives/edgar/data/353278/000035327826000012/nvo-20251231.htm"
-  ],
-  [
-   "Eli Lilly, resultados del 2T 2026",
-   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000077/q226lillysalesandearningsp.htm"
-  ],
-  [
-   "Mauboussin & Callahan, The Base Rate Book (2016)",
-   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-  ],
-  [
-   "Damodaran, Betas by Sector (US), enero 2026",
-   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
-  ]
- ]
 }
