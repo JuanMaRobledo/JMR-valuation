@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$466,38 a US$476,38. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa."
+  "texto": "La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$466,38 a US$476,33. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa."
  },
  "historias": [
   {
@@ -257,7 +257,7 @@
    "Pérdida de cargas de OpenAI"
   ]
  ],
- "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$509,22) queda 21% por encima del valor esperado (US$419,93), entre las historias A y C. El DCF inverso pide 13-18% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~3-9% de las empresas de este tamaño. Microsoft ya lo ha hecho, pero no es la norma. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años. El precio es alcanzable si el capex de IA rinde como en la historia A o mejor; no deja margen de seguridad.",
+ "precio_lectura": "Con el ROIC terminal revisado (30-sep-2026), el precio (US$509,22) queda 23% por encima del valor esperado (US$412,46), entre las historias A y C. El DCF inverso pide 13-18% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~3-9% de las empresas de este tamaño. Microsoft ya lo ha hecho, pero no es la norma. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años. El precio es alcanzable si el capex de IA rinde como en la historia A o mejor; no deja margen de seguridad.",
  "frase": "Plataforma de software empresarial que apuesta su capital a la infraestructura de IA",
  "confianza": "Media: el negocio es excepcional; el retorno del capex de IA no está probado",
  "cambiaria": "Crecimiento de Azure frente al capex; adopción pagada de Copilot",

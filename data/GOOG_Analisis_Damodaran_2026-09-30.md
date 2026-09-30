@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Alphabet Inc. (GOOG) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$311,54 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$311,54 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -57,7 +57,7 @@ Para empresas de más de US$50.000 millones, la mediana de crecimiento real a ci
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,07 | 9,8% | 9,7% | US$311,54 |
-| Bottom-up del sector (Software (Internet), reapalancada) | 1,61 | 12,2% | 12,1% | US$271,03 |
+| Bottom-up del sector (Software (Internet), reapalancada) | 1,61 | 12,2% | 12,1% | US$271,31 |
 | Propuesta (sector ajustado por riesgo propio) | 1,07 | 9,8% | 9,7% | US$311,54 |
 
 
@@ -65,11 +65,11 @@ Para empresas de más de US$50.000 millones, la mediana de crecimiento real a ci
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,07) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Search resiste y Cloud es el segundo motor** | 40% | Google Services: 10%, 8%, 7%, 6%, 6%; Google Cloud: 45%, 30%, 22%, 18%, 15%; Other Bets: 20%, 20%, 20%, 20%, 20% | 11,7% | 34% | 1,2 | 28,6% | US$291,02 |
-| **B · La IA conversacional erosiona Search** | 25% | Google Services: 6%, 3%, 2%, 2%, 2%; Google Cloud: 35%, 22%, 16%, 13%, 10%; Other Bets: 10%, 10%, 10%, 10%, 10% | 6,6% | 30% | 1,2 | = costo de capital | US$134,10 |
-| **C · Gemini y Cloud dominan la plataforma de IA** | 20% | Google Services: 13%, 11%, 10%, 9%, 8%; Google Cloud: 55%, 40%, 30%, 25%, 20%; Other Bets: 40%, 40%, 40%, 40%, 40% | 16,1% | 37% | 1,0 | 28,6% | US$392,17 |
-| **D · Remedios antimonopolio y guerra de precios en IA** | 15% | Google Services: 4%, 1%, 0%, 0%, 1%; Google Cloud: 25%, 15%, 10%, 8%, 8%; Other Bets: 0%, 0%, 0%, 0%, 0% | 3,7% | 27% | 1,2 | = costo de capital | US$107,17 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$244,44** |
+| **A · Search resiste y Cloud es el segundo motor** | 40% | Google Services: 10%, 8%, 7%, 6%, 6%; Google Cloud: 45%, 30%, 22%, 18%, 15%; Other Bets: 20%, 20%, 20%, 20%, 20% | 11,7% | 34% | 1,2 | 28,6% | US$298,78 |
+| **B · La IA conversacional erosiona Search** | 25% | Google Services: 6%, 3%, 2%, 2%, 2%; Google Cloud: 35%, 22%, 16%, 13%, 10%; Other Bets: 10%, 10%, 10%, 10%, 10% | 6,6% | 30% | 1,2 | = costo de capital | US$141,09 |
+| **C · Gemini y Cloud dominan la plataforma de IA** | 20% | Google Services: 13%, 11%, 10%, 9%, 8%; Google Cloud: 55%, 40%, 30%, 25%, 20%; Other Bets: 40%, 40%, 40%, 40%, 40% | 16,1% | 37% | 1,0 | 28,6% | US$399,90 |
+| **D · Remedios antimonopolio y guerra de precios en IA** | 15% | Google Services: 4%, 1%, 0%, 0%, 1%; Google Cloud: 25%, 15%, 10%, 8%, 8%; Other Bets: 0%, 0%, 0%, 0%, 0% | 3,7% | 27% | 1,2 | = costo de capital | US$114,28 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$251,91** |
 
 A (40%) es lo que muestra 2026: Search sigue creciendo y Cloud se vuelve un segundo motor que desacelera con la escala. B (25%) es la erosión de la Búsqueda por la IA conversacional (competencia de OpenAI, cambios en el comportamiento). C (20%) es Alphabet como plataforma dominante de IA (modelos, chips y nube). D (15%) combina remedios antimonopolio más duros y una guerra de precios en IA que baja márgenes. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -77,11 +77,11 @@ Sensibilidad del DCF Base (beta 1,07; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 31,0% | 33,0% | 35,0% | 37,0% | 39,0% |
 |---|---:|---:|---:|---:|---:|
-| 8,4% | 223,63 | 238,01 | 252,39 | 266,76 | 281,14 |
-| 10,4% | 247,97 | 264,20 | 280,43 | 296,66 | 312,89 |
-| 12,4% | 274,96 | 293,25 | 311,54 | 329,84 | 348,13 |
-| 14,4% | 304,86 | 325,45 | 346,03 | 366,62 | 387,20 |
-| 16,4% | 337,96 | 361,08 | 384,21 | 407,34 | 430,47 |
+| 8,4% | 223,45 | 237,75 | 252,04 | 266,34 | 280,63 |
+| 10,4% | 247,96 | 264,10 | 280,24 | 296,37 | 312,51 |
+| 12,4% | 275,16 | 293,35 | 311,54 | 329,73 | 347,92 |
+| 14,4% | 305,32 | 325,79 | 346,26 | 366,73 | 387,19 |
+| 16,4% | 338,72 | 361,72 | 384,72 | 407,71 | 430,71 |
 
 
 ### Pre-mortem
@@ -118,7 +118,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 |---|---:|---:|---:|
 | Beta 1,07 | 17,2% (4% de las empresas) | 15,0% (7% de las empresas) | 13,0% (10% de las empresas) |
 
-Frente al valor esperado de las historias (US$244,44), el precio está por encima en 39%. Con el ROIC terminal revisado (30-sep-2026), el precio (US$339,16) queda 39% por encima del valor esperado de las historias (US$244,44) y 9% por encima del DCF (US$311,58). El DCF inverso pide 13-17% anual en los años 1-5 con márgenes de 30-37%, algo que logró ~4-10% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por Alphabet como ganador de la IA (la historia C: Cloud creciendo 80% con márgenes altos, Waymo, TPUs vendidos a terceros) y por la duración de su crecimiento más allá de cinco años. Tras las revisiones del 30-sep-2026 el DCF pasó de US$174 a US$206 (crecimiento y reinversión) y a US$312 (ROIC terminal): el precio ya no pide un resultado excepcional, pero sí algo mejor que la historia A.
+Frente al valor esperado de las historias (US$251,91), el precio está por encima en 35%. Con el ROIC terminal revisado (30-sep-2026), el precio (US$339,16) queda 35% por encima del valor esperado de las historias (US$251,91) y 9% por encima del DCF (US$311,54). El DCF inverso pide 13-17% anual en los años 1-5 con márgenes de 30-37%, algo que logró ~4-10% de las empresas de este tamaño. ¿Qué sabe el mercado que yo no? Paga por Alphabet como ganador de la IA (la historia C: Cloud creciendo 80% con márgenes altos, Waymo, TPUs vendidos a terceros) y por la duración de su crecimiento más allá de cinco años. Tras las revisiones del 30-sep-2026 el DCF pasó de US$174 a US$206 (crecimiento y reinversión) y a US$312 (ROIC terminal): el precio ya no pide un resultado excepcional, pero sí algo mejor que la historia A.
 
 
 ### Registro de decisión
@@ -128,8 +128,8 @@ Frente al valor esperado de las historias (US$244,44), el precio está por encim
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Máquina publicitaria madura con un segundo motor de IA en la nube, financiado con capex récord |  |
 | Probabilidades | A 40% / B 25% / C 20% / D 15% |  |
-| Valor esperado | US$244,44 |  |
-| Rango (historia más débil a más fuerte) | US$107,17 a US$392,17 |  |
+| Valor esperado | US$251,91 |  |
+| Rango (historia más débil a más fuerte) | US$114,28 a US$399,90 |  |
 | Confianza | Media: el negocio es excepcional; el retorno del capex de IA y el futuro de Search son inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de Search y de Cloud; retorno del capex; remedios antimonopolio |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |

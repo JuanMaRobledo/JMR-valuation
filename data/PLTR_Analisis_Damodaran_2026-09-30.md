@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Palantir Technologies Inc. (PLTR) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$85,42 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$85,42 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -63,11 +63,11 @@ Para empresas de US$4.500-7.000 millones, crecer 35% anual cinco años (historia
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,25) |
 |---|---:|---|---:|---:|---:|---:|
-| **A · Hipercrecimiento que desacelera con la escala** | 40% | Gobierno: 55%, 35%, 25%, 20%, 16%; Comercial: 90%, 50%, 32%, 24%, 18% | 35,3% | 45% | 4,0 | US$60,82 |
-| **B · Se normaliza en un software de alta calidad** | 30% | Gobierno: 30%, 18%, 12%, 10%, 8%; Comercial: 50%, 25%, 18%, 14%, 12% | 19,3% | 38% | 4,0 | US$26,16 |
-| **C · Sistema operativo de la IA empresarial** | 20% | Gobierno: 70%, 50%, 35%, 28%, 22%; Comercial: 110%, 70%, 45%, 32%, 25% | 47,1% | 50% | 4,0 | US$113,35 |
-| **D · Comoditización y contratos perdidos** | 10% | Gobierno: 15%, 5%, 5%, 5%, 5%; Comercial: 25%, 10%, 5%, 5%, 5% | 8,3% | 30% | 4,0 | US$14,39 |
-| **Valor esperado** | 100% |  |  |  |  | **US$56,29** |
+| **A · Hipercrecimiento que desacelera con la escala** | 40% | Gobierno: 55%, 35%, 25%, 20%, 16%; Comercial: 90%, 50%, 32%, 24%, 18% | 35,3% | 45% | 4,0 | US$55,62 |
+| **B · Se normaliza en un software de alta calidad** | 30% | Gobierno: 30%, 18%, 12%, 10%, 8%; Comercial: 50%, 25%, 18%, 14%, 12% | 19,3% | 38% | 4,0 | US$26,93 |
+| **C · Sistema operativo de la IA empresarial** | 20% | Gobierno: 70%, 50%, 35%, 28%, 22%; Comercial: 110%, 70%, 45%, 32%, 25% | 47,1% | 50% | 4,0 | US$95,62 |
+| **D · Comoditización y contratos perdidos** | 10% | Gobierno: 15%, 5%, 5%, 5%, 5%; Comercial: 25%, 10%, 5%, 5%, 5% | 8,3% | 30% | 4,0 | US$15,72 |
+| **Valor esperado** | 100% |  |  |  |  | **US$51,02** |
 
 A (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). B (30%) es la normalización en un software de alta calidad (~19%). C (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. D (10%) es comoditización con pérdida de contratos. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,25; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 44,0% | 46,0% | 48,0% | 50,0% | 52,0% |
 |---|---:|---:|---:|---:|---:|
-| 37,6% | 65,89 | 68,72 | 71,55 | 74,39 | 77,22 |
-| 39,6% | 71,95 | 75,07 | 78,19 | 81,32 | 84,44 |
-| 41,6% | 78,54 | 81,98 | 85,42 | 88,86 | 92,30 |
-| 43,6% | 85,72 | 89,50 | 93,28 | 97,07 | 100,85 |
-| 45,6% | 93,52 | 97,67 | 101,83 | 105,99 | 110,14 |
+| 37,6% | 65,93 | 68,75 | 71,56 | 74,38 | 77,20 |
+| 39,6% | 71,99 | 75,09 | 78,20 | 81,30 | 84,41 |
+| 41,6% | 78,58 | 82,00 | 85,42 | 88,84 | 92,26 |
+| 43,6% | 85,75 | 89,51 | 93,28 | 97,04 | 100,80 |
+| 45,6% | 93,55 | 97,68 | 101,82 | 105,95 | 110,09 |
 
 
 ### Pre-mortem
@@ -116,7 +116,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 |---|---:|---:|---:|
 | Beta 1,25 | ninguno entre −10% y 60% | ninguno entre −10% y 60% | 59,0% (0% de las empresas) |
 
-Frente al valor esperado de las historias (US$56,29), el precio está por encima en 233%. El precio (US$187,48) está más de tres veces por encima del valor esperado de las historias y más del doble del DCF revisado (US$85,42). El DCF inverso no encuentra solución hasta 60% anual durante cinco años (solo con margen de 50% y beta 1,25 llega a ~60%): el precio supone algo mejor que la historia C, sostenido por más de cinco años. ¿Qué sabe el mercado que yo no? Quizá nada que pueda medirse: es un caso donde el precio refleja una narrativa (Palantir como plataforma dominante de la IA) más que flujos proyectables. Con criterio Damodaran, un gran negocio puede ser una mala inversión a un precio que exige lo improbable.
+Frente al valor esperado de las historias (US$51,02), el precio está por encima en 267%. El precio (US$187,48) está más de tres veces por encima del valor esperado de las historias y más del doble del DCF revisado (US$85,42). El DCF inverso no encuentra solución hasta 60% anual durante cinco años (solo con margen de 50% y beta 1,25 llega a ~60%): el precio supone algo mejor que la historia C, sostenido por más de cinco años. ¿Qué sabe el mercado que yo no? Quizá nada que pueda medirse: es un caso donde el precio refleja una narrativa (Palantir como plataforma dominante de la IA) más que flujos proyectables. Con criterio Damodaran, un gran negocio puede ser una mala inversión a un precio que exige lo improbable.
 
 
 ### Registro de decisión
@@ -126,8 +126,8 @@ Frente al valor esperado de las historias (US$56,29), el precio está por encima
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Plataforma de datos e IA con crecimiento excepcional y un precio que exige aún más |  |
 | Probabilidades | A 40% / B 30% / C 20% / D 10% |  |
-| Valor esperado | US$56,29 |  |
-| Rango (historia más débil a más fuerte) | US$14,39 a US$113,35 |  |
+| Valor esperado | US$51,02 |  |
+| Rango (historia más débil a más fuerte) | US$15,72 a US$95,62 |  |
 | Confianza | Baja: el crecimiento futuro es muy incierto y la distancia al precio es enorme |  |
 | Qué cambiaría la opinión | Crecimiento comercial sostenido por encima de 40% con márgenes en alza durante varios años |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

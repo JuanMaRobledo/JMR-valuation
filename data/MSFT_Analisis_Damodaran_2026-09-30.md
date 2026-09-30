@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Microsoft Corporation (MSFT) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$466,38 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$466,38 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -52,23 +52,23 @@ Para empresas de más de US$50.000 millones, la mediana de crecimiento real a ci
 
 **Reinversión y retorno.** La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia C se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 25,9% (antes igual al costo de capital). Es el actual, que ya descuenta el capex de IA, y queda por debajo del de Software.
 
-**Riesgo.** La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$466,38 a US$476,38. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa.
+**Riesgo.** La hoja usa una beta de 1,34. La bottom-up de Software (System & Application) reapalancada da 1,26; el DCF Base sube de US$466,38 a US$476,33. La diferencia es pequeña frente a la que producen las historias; el riesgo real está en el retorno del capex, no en la tasa.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,34 | 10,2% | 10,2% | US$466,38 |
-| Bottom-up del sector (Software (System & Application), reapalancada) | 1,26 | 9,9% | 9,8% | US$476,38 |
+| Bottom-up del sector (Software (System & Application), reapalancada) | 1,26 | 9,9% | 9,8% | US$476,33 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,34) | Valor/acción (beta 1,26) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Azure y Copilot sostienen el doble dígito** | 45% | Productivity and Business Processes: 14%, 12%, 11%, 10%, 9%; Intelligent Cloud: 25%, 20%, 17%, 15%, 13%; More Personal Computing: 0%, 1%, 2%, 2%, 2% | 13,0% | 45% | 0,7 | 25,9% | US$467,92 | US$477,96 |
-| **B · El capex de IA rinde menos de lo esperado** | 25% | Productivity and Business Processes: 10%, 8%, 7%, 6%, 6%; Intelligent Cloud: 18%, 12%, 10%, 8%, 8%; More Personal Computing: -2%, 0%, 0%, 1%, 1% | 8,0% | 40% | 0,7 | = costo de capital | US$237,14 | US$241,74 |
-| **C · Microsoft gana la plataforma empresarial de IA** | 20% | Productivity and Business Processes: 17%, 16%, 15%, 13%, 12%; Intelligent Cloud: 32%, 28%, 24%, 20%, 17%; More Personal Computing: 2%, 3%, 3%, 3%, 3% | 17,5% | 48% | 0,6 | 25,9% | US$617,12 | US$630,83 |
-| **D · La demanda de cómputo para IA se corrige** | 10% | Productivity and Business Processes: 8%, 6%, 5%, 5%, 5%; Intelligent Cloud: 10%, 4%, 5%, 6%, 6%; More Personal Computing: -3%, -2%, 0%, 0%, 0% | 5,0% | 37% | 0,7 | 25,9% | US$266,57 | US$271,81 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$419,93** | **US$428,86** |
+| **A · Azure y Copilot sostienen el doble dígito** | 45% | Productivity and Business Processes: 14%, 12%, 11%, 10%, 9%; Intelligent Cloud: 25%, 20%, 17%, 15%, 13%; More Personal Computing: 0%, 1%, 2%, 2%, 2% | 13,0% | 45% | 0,7 | 25,9% | US$457,82 | US$467,59 |
+| **B · El capex de IA rinde menos de lo esperado** | 25% | Productivity and Business Processes: 10%, 8%, 7%, 6%, 6%; Intelligent Cloud: 18%, 12%, 10%, 8%, 8%; More Personal Computing: -2%, 0%, 0%, 1%, 1% | 8,0% | 40% | 0,7 | = costo de capital | US$240,06 | US$244,68 |
+| **C · Microsoft gana la plataforma empresarial de IA** | 20% | Productivity and Business Processes: 17%, 16%, 15%, 13%, 12%; Intelligent Cloud: 32%, 28%, 24%, 20%, 17%; More Personal Computing: 2%, 3%, 3%, 3%, 3% | 17,5% | 48% | 0,6 | 25,9% | US$597,17 | US$610,37 |
+| **D · La demanda de cómputo para IA se corrige** | 10% | Productivity and Business Processes: 8%, 6%, 5%, 5%, 5%; Intelligent Cloud: 10%, 4%, 5%, 6%, 6%; More Personal Computing: -3%, -2%, 0%, 0%, 0% | 5,0% | 37% | 0,7 | 25,9% | US$269,94 | US$275,22 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$412,46** | **US$421,18** |
 
 A (45%) es la continuación de FY24-FY26 con desaceleración gradual. B (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. C (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). D (10%) es una corrección de la demanda de cómputo. En las historias donde la ventaja se erosiona (B), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -76,11 +76,11 @@ Sensibilidad del DCF Base (beta 1,34; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 41,0% | 43,0% | 45,0% | 47,0% | 49,0% |
 |---|---:|---:|---:|---:|---:|
-| 8,9% | 351,02 | 368,18 | 385,34 | 402,49 | 419,65 |
-| 10,9% | 385,09 | 404,44 | 423,79 | 443,14 | 462,49 |
-| 12,9% | 422,80 | 444,59 | 466,38 | 488,17 | 509,96 |
-| 14,9% | 464,50 | 489,00 | 513,49 | 537,99 | 562,49 |
-| 16,9% | 510,57 | 538,07 | 565,57 | 593,07 | 620,57 |
+| 8,9% | 351,43 | 367,66 | 383,89 | 400,12 | 416,34 |
+| 10,9% | 386,33 | 404,66 | 422,99 | 441,33 | 459,66 |
+| 12,9% | 425,02 | 445,70 | 466,38 | 487,05 | 507,73 |
+| 14,9% | 467,89 | 491,17 | 514,46 | 537,74 | 561,02 |
+| 16,9% | 515,33 | 541,51 | 567,68 | 593,86 | 620,03 |
 
 
 ### Pre-mortem
@@ -115,10 +115,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 40% | Margen 45% | Margen 48% |
 |---|---:|---:|---:|
-| Beta 1,34 | 17,6% (3% de las empresas) | 14,8% (7% de las empresas) | 13,4% (9% de las empresas) |
-| Beta 1,26 | 17,0% (4% de las empresas) | 14,4% (8% de las empresas) | 13,0% (10% de las empresas) |
+| Beta 1,34 | 17,2% (4% de las empresas) | 14,8% (7% de las empresas) | 13,4% (9% de las empresas) |
+| Beta 1,26 | 16,8% (4% de las empresas) | 14,4% (8% de las empresas) | 13,0% (10% de las empresas) |
 
-Frente al valor esperado de las historias (US$419,93 con la beta de la hoja; US$428,86 con la propuesta), el precio está por encima en 21% y por encima en 19%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$509,22) queda 21% por encima del valor esperado (US$419,93), entre las historias A y C. El DCF inverso pide 13-18% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~3-9% de las empresas de este tamaño. Microsoft ya lo ha hecho, pero no es la norma. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años. El precio es alcanzable si el capex de IA rinde como en la historia A o mejor; no deja margen de seguridad.
+Frente al valor esperado de las historias (US$412,46 con la beta de la hoja; US$421,18 con la propuesta), el precio está por encima en 23% y por encima en 21%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$509,22) queda 23% por encima del valor esperado (US$412,46), entre las historias A y C. El DCF inverso pide 13-18% anual en los años 1-5 con márgenes de 40-48%, algo que logró ~3-9% de las empresas de este tamaño. Microsoft ya lo ha hecho, pero no es la norma. ¿Qué sabe el mercado que yo no? Paga por Microsoft como uno de los dos o tres ganadores de la IA y por un crecimiento que dura más de cinco años. El precio es alcanzable si el capex de IA rinde como en la historia A o mejor; no deja margen de seguridad.
 
 
 ### Registro de decisión
@@ -128,8 +128,8 @@ Frente al valor esperado de las historias (US$419,93 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Plataforma de software empresarial que apuesta su capital a la infraestructura de IA |  |
 | Probabilidades | A 45% / B 25% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$419,93 / US$428,86 |  |
-| Rango (historia más débil a más fuerte) | US$237,14 a US$630,83 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$412,46 / US$421,18 |  |
+| Rango (historia más débil a más fuerte) | US$240,06 a US$610,37 |  |
 | Confianza | Media: el negocio es excepcional; el retorno del capex de IA no está probado |  |
 | Qué cambiaría la opinión | Crecimiento de Azure frente al capex; adopción pagada de Copilot |  |
 | Revisión | Resultados del 1T FY27 (oct-2026) |  |

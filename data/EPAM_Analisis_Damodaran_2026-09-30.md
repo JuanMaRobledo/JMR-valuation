@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # EPAM Systems, Inc. (EPAM) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$148,70 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$148,68 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -51,23 +51,23 @@ Para empresas de US$4.500-7.000 millones, crecer 5,5% anual cinco años (histori
 
 **Reinversión y retorno.** Casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un sales-to-capital de 3,5 y 3. La reinversión real es en personas (formación en IA) y compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones).
 
-**Riesgo.** La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$148,70 a US$159,72. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector.
+**Riesgo.** La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$148,68 a US$159,67. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,30 | 10,8% | 10,7% | US$148,70 |
-| Bottom-up del sector (Computer Services, reapalancada) | 0,97 | 9,3% | 9,2% | US$159,72 |
+| Hoja (regresión o la cargada en el libro) | 1,30 | 10,8% | 10,7% | US$148,68 |
+| Bottom-up del sector (Computer Services, reapalancada) | 0,97 | 9,3% | 9,2% | US$159,67 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,30) | Valor/acción (beta 0,97) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · La IA compensa lo que quita: crecimiento moderado** | 45% | Norteamérica: 4%, 5%, 5%, 5%, 5%; Europa: 8%, 7%, 6%, 6%, 6%; Otros mercados: 5%, 5%, 5%, 5%, 5% | 5,5% | 12% | 3,5 | US$146,63 | US$157,53 |
-| **B · Deflación de horas por IA** | 30% | Norteamérica: 0%, 1%, 2%, 2%, 2%; Europa: 4%, 3%, 3%, 3%, 3%; Otros mercados: 0%, 0%, 0%, 0%, 0% | 2,1% | 10% | 3,5 | US$110,05 | US$117,53 |
-| **C · La IA crea demanda de ingeniería** | 15% | Norteamérica: 8%, 9%, 9%, 8%, 8%; Europa: 10%, 10%, 9%, 8%, 8%; Otros mercados: 8%, 8%, 8%, 8%, 8% | 8,6% | 14% | 3,5 | US$192,78 | US$207,97 |
-| **D · Los servicios se comoditizan** | 10% | Norteamérica: -5%, -4%, -2%, 0%, 1%; Europa: 0%, -2%, 0%, 1%, 1%; Otros mercados: 0%, 0%, 0%, 0%, 0% | -1,1% | 8% | 3,5 | US$83,81 | US$88,87 |
-| **Valor esperado** | 100% |  |  |  |  | **US$136,30** | **US$146,23** |
+| **A · La IA compensa lo que quita: crecimiento moderado** | 45% | Norteamérica: 4%, 5%, 5%, 5%, 5%; Europa: 8%, 7%, 6%, 6%, 6%; Otros mercados: 5%, 5%, 5%, 5%, 5% | 5,5% | 12% | 3,5 | US$146,48 | US$157,32 |
+| **B · Deflación de horas por IA** | 30% | Norteamérica: 0%, 1%, 2%, 2%, 2%; Europa: 4%, 3%, 3%, 3%, 3%; Otros mercados: 0%, 0%, 0%, 0%, 0% | 2,1% | 10% | 3,5 | US$110,20 | US$117,67 |
+| **C · La IA crea demanda de ingeniería** | 15% | Norteamérica: 8%, 9%, 9%, 8%, 8%; Europa: 10%, 10%, 9%, 8%, 8%; Otros mercados: 8%, 8%, 8%, 8%, 8% | 8,6% | 14% | 3,5 | US$191,44 | US$206,45 |
+| **D · Los servicios se comoditizan** | 10% | Norteamérica: -5%, -4%, -2%, 0%, 1%; Europa: 0%, -2%, 0%, 1%, 1%; Otros mercados: 0%, 0%, 0%, 0%, 0% | -1,1% | 8% | 3,5 | US$84,22 | US$89,31 |
+| **Valor esperado** | 100% |  |  |  |  | **US$136,12** | **US$146,00** |
 
 A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (15%) supone que la IA dispara proyectos de datos y modernización. D (10%) es la comoditización con ingresos en caída. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,30; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 8,5% | 10,5% | 12,5% | 14,5% | 16,5% |
 |---|---:|---:|---:|---:|---:|
-| 1,0% | 93,48 | 109,95 | 126,42 | 142,89 | 159,36 |
-| 3,0% | 99,74 | 118,37 | 136,99 | 155,61 | 174,24 |
-| 5,0% | 106,64 | 127,67 | 148,70 | 169,72 | 190,75 |
-| 7,0% | 114,23 | 137,94 | 161,65 | 185,35 | 209,06 |
-| 9,0% | 122,59 | 149,28 | 175,97 | 202,66 | 229,35 |
+| 1,0% | 93,71 | 110,19 | 126,67 | 143,15 | 159,63 |
+| 3,0% | 99,85 | 118,49 | 137,12 | 155,76 | 174,40 |
+| 5,0% | 106,60 | 127,64 | 148,68 | 169,73 | 190,77 |
+| 7,0% | 114,01 | 137,73 | 161,46 | 185,18 | 208,90 |
+| 9,0% | 122,15 | 148,86 | 175,56 | 202,27 | 228,98 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 9% | Margen 10% | Margen 12% |
 |---|---:|---:|---:|
-| Beta 1,30 | 4,0% (67% de las empresas) | 0,4% (84% de las empresas) | -3,0% (93% de las empresas) |
-| Beta 0,97 | 2,0% (79% de las empresas) | -1,2% (89% de las empresas) | -4,8% (95% de las empresas) |
+| Beta 1,30 | 4,0% (67% de las empresas) | 0,4% (84% de las empresas) | -3,2% (93% de las empresas) |
+| Beta 0,97 | 2,0% (79% de las empresas) | -1,4% (89% de las empresas) | -4,8% (95% de las empresas) |
 
-Frente al valor esperado de las historias (US$136,30 con la beta de la hoja; US$146,23 con la propuesta), el precio está por debajo en 21% y 26%, respectivamente. El precio está por debajo del valor esperado. El DCF inverso muestra que con márgenes de 10-12,5% el precio supone ingresos planos o en caída (−5% a 0% anual), y solo con margen de 9% pide 2-4%: el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Que la IA puede hacer con los servicios de ingeniería lo que la nube hizo con el hosting: deflación de precios por unidad. Si crees que la historia B no es la más probable, el precio parece bajo; si crees que lo es, está cerca del valor.
+Frente al valor esperado de las historias (US$136,12 con la beta de la hoja; US$146,00 con la propuesta), el precio está por debajo en 21% y por debajo en 26%, respectivamente. El precio está por debajo del valor esperado. El DCF inverso muestra que con márgenes de 10-12,5% el precio supone ingresos planos o en caída (−5% a 0% anual), y solo con margen de 9% pide 2-4%: el mercado valora algo entre las historias B y D. ¿Qué sabe el mercado que yo no? Que la IA puede hacer con los servicios de ingeniería lo que la nube hizo con el hosting: deflación de precios por unidad. Si crees que la historia B no es la más probable, el precio parece bajo; si crees que lo es, está cerca del valor.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$136,30 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Ingeniería de software de alta calidad frente a la deflación de horas por IA |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$136,30 / US$146,23 |  |
-| Rango (historia más débil a más fuerte) | US$83,81 a US$207,97 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$136,12 / US$146,00 |  |
+| Rango (historia más débil a más fuerte) | US$84,22 a US$206,45 |  |
 | Confianza | Media-baja: el efecto neto de la IA sobre las horas facturables es el gran desconocido |  |
 | Qué cambiaría la opinión | Crecimiento orgánico en Norteamérica y margen operativo en 2027 |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

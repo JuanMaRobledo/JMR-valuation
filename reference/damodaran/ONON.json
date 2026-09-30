@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF Base sube de US$38,92 a US$42,60. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y D que en la beta."
+  "texto": "La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF Base sube de US$38,92 a US$42,58. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y D que en la beta."
  },
  "historias": [
   {
@@ -226,7 +226,7 @@
    "Crece más que ventas"
   ]
  ],
- "precio_lectura": "El precio está por debajo del valor esperado (con la beta bottom-up, ~21% por debajo). El DCF inverso pide 9% anual con margen de 17% (lo logró ~41% de las empresas de este tamaño) o 5% con margen de 20%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de ciclo de moda y el efecto del franco. Si crees que On es una marca duradera, el precio parece bajo; si crees que es una moda, está cerca del valor.",
+ "precio_lectura": "El precio está por debajo del valor esperado (con la beta bottom-up, ~20% por debajo). El DCF inverso pide 9% anual con margen de 17% (lo logró ~41% de las empresas de este tamaño) o 5% con margen de 20%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de ciclo de moda y el efecto del franco. Si crees que On es una marca duradera, el precio parece bajo; si crees que es una moda, está cerca del valor.",
  "frase": "Marca premium de calzado deportivo en expansión, con el riesgo de todo ciclo de moda",
  "confianza": "Media: la ejecución es excelente; la duración de la marca es incierta",
  "cambiaria": "Crecimiento a tipo constante y margen bruto sin descuentos",

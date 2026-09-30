@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Chipotle Mexican Grill, Inc. (CMG) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$27,91 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$27,91 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -63,11 +63,11 @@ Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (histo
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,10) | Valor/acción (beta 0,78) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Crece por aperturas con comparables bajas** | 45% | 8%, 8%, 7%, 7%, 6% | 7,2% | 16% | 2,6 | 18,4% | US$25,26 | US$27,40 |
-| **B · Tráfico débil y margen presionado** | 30% | 6%, 5%, 5%, 5%, 4% | 5,0% | 14% | 2,6 | 18,4% | US$19,95 | US$21,59 |
-| **C · Vuelve el tráfico** | 20% | 11%, 11%, 10%, 10%, 9% | 10,2% | 18% | 2,6 | 18,4% | US$33,05 | US$35,93 |
-| **D · Saturación: el tráfico cae** | 5% | 3%, 3%, 3%, 2%, 2% | 2,6% | 12% | 2,6 | = costo de capital | US$11,84 | US$12,72 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$24,55** | **US$26,63** |
+| **A · Crece por aperturas con comparables bajas** | 45% | 8%, 8%, 7%, 7%, 6% | 7,2% | 16% | 2,6 | 18,4% | US$24,96 | US$27,07 |
+| **B · Tráfico débil y margen presionado** | 30% | 6%, 5%, 5%, 5%, 4% | 5,0% | 14% | 2,6 | 18,4% | US$19,80 | US$21,42 |
+| **C · Vuelve el tráfico** | 20% | 11%, 11%, 10%, 10%, 9% | 10,2% | 18% | 2,6 | 18,4% | US$32,60 | US$35,43 |
+| **D · Saturación: el tráfico cae** | 5% | 3%, 3%, 3%, 2%, 2% | 2,6% | 12% | 2,6 | = costo de capital | US$11,83 | US$12,70 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$24,28** | **US$26,33** |
 
 A (45%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (30%) extiende la debilidad del consumidor y los costos. C (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. D (5%) es saturación: canibalización y tráfico negativo. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,10; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 13,0% | 15,0% | 17,0% | 19,0% | 21,0% |
 |---|---:|---:|---:|---:|---:|
-| 4,0% | 17,75 | 20,29 | 22,82 | 25,36 | 27,90 |
-| 6,0% | 19,49 | 22,36 | 25,23 | 28,11 | 30,98 |
-| 8,0% | 21,42 | 24,67 | 27,91 | 31,16 | 34,40 |
-| 10,0% | 23,56 | 27,23 | 30,89 | 34,55 | 38,21 |
-| 12,0% | 25,93 | 30,06 | 34,18 | 38,31 | 42,43 |
+| 4,0% | 17,76 | 20,31 | 22,86 | 25,41 | 27,95 |
+| 6,0% | 19,49 | 22,37 | 25,25 | 28,14 | 31,02 |
+| 8,0% | 21,40 | 24,66 | 27,91 | 31,17 | 34,43 |
+| 10,0% | 23,51 | 27,19 | 30,86 | 34,54 | 38,22 |
+| 12,0% | 25,85 | 29,99 | 34,13 | 38,27 | 42,41 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 15% | Margen 17% | Margen 19% |
 |---|---:|---:|---:|
-| Beta 1,10 | 13,2% (14% de las empresas) | 10,8% (22% de las empresas) | 8,6% (31% de las empresas) |
+| Beta 1,10 | 13,4% (14% de las empresas) | 10,8% (22% de las empresas) | 8,6% (31% de las empresas) |
 | Beta 0,78 | 11,6% (19% de las empresas) | 9,0% (30% de las empresas) | 7,0% (39% de las empresas) |
 
-Frente al valor esperado de las historias (US$24,55 con la beta de la hoja; US$26,63 con la propuesta), el precio está por encima en 30% y por encima en 20%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$31,85) sigue por encima del valor esperado (US$24,55) y del DCF (US$27,91), cerca de la historia C (US$33,05). El DCF inverso pide 9-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-31% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha.
+Frente al valor esperado de las historias (US$24,28 con la beta de la hoja; US$26,33 con la propuesta), el precio está por encima en 31% y por encima en 21%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$31,85) sigue por encima del valor esperado (US$24,28) y del DCF (US$27,91), cerca de la historia C (US$32,60). El DCF inverso pide 9-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-31% de las empresas de este tamaño y que Chipotle no muestra desde 2024. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$24,55 con la beta de la hoja; US$2
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Cadena de restaurantes propios con gran economía unitaria y tráfico débil |  |
 | Probabilidades | A 45% / B 30% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$24,55 / US$26,63 |  |
-| Rango (historia más débil a más fuerte) | US$11,84 a US$35,93 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$24,28 / US$26,33 |  |
+| Rango (historia más débil a más fuerte) | US$11,83 a US$35,43 |  |
 | Confianza | Media: las aperturas son predecibles; el tráfico y el margen no |  |
 | Qué cambiaría la opinión | Comparables y tráfico de los próximos dos trimestres; margen operativo |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |

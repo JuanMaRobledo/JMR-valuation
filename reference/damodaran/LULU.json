@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$174,31 a US$185,62. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
+  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$174,31 a US$185,89. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
  },
  "historias": [
   {
@@ -257,7 +257,7 @@
    "Sigue subiendo"
   ]
  ],
- "precio_lectura": "El precio (US$100,58) queda entre la historia B (US$95,68) y la A (US$178,03), por debajo del valor esperado (US$147,15): el mercado valora algo muy cercano a B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.",
+ "precio_lectura": "El precio (US$100,58) queda entre la historia B (US$108,35) y la A (US$179,41), por debajo del valor esperado (US$152,98): el mercado valora algo muy cercano a B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.",
  "frase": "Marca premium de ropa técnica que pierde Norteamérica y crece afuera, con nueva CEO",
  "confianza": "Baja-media: la duración de la caída en Norteamérica es muy incierta",
  "cambiaria": "Comparables de Norteamérica, margen bruto y respuesta a Alo y Vuori",
