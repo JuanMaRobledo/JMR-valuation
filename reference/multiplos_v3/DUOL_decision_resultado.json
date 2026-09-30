@@ -30,7 +30,7 @@
   "notas": {
    "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
   },
-  "evaluacion": "Tras la revisión del DCF del 30-sep-2026 (crecimiento 12% / 11% según las reservas, margen objetivo 27%), el DCF da US$125,77 y los múltiplos US$132,03 hoy (5% por encima): los dos métodos cuentan ahora una historia parecida y quedan cerca del precio (US$134,30). Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente; ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Dentro de los múltiplos hay mucha dispersión (EV/EBITDA US$214 frente a P/E US$59) porque el EBITDA ajustado excluye una compensación en acciones de ~15% de los ingresos; los métodos de flujo y el DCF son la referencia.",
+  "evaluacion": "Revisión del 30-sep-2026 (múltiplo justificado): el C justificado se había calculado el 29-sep con los supuestos anteriores del DCF; ahora se recalcula con los vigentes (crecimiento, WACC y cifras de FY+3) y se mantiene λ. El C anterior usaba el crecimiento previo a la revisión (16% en los años 2-5) y daba 46x EBITDA; con 11% da 26,6x. El DCF da US$125,77 y los múltiplos US$121,75 hoy (3% por debajo): ambos métodos coinciden. Lectura anterior: Tras la revisión del DCF del 30-sep-2026 (crecimiento 12% / 11% según las reservas, margen objetivo 27%), el DCF da US$125,77 y los múltiplos US$132,03 hoy (5% por encima): los dos métodos cuentan ahora una historia parecida y quedan cerca del precio (US$134,30). Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente; ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Dentro de los múltiplos hay mucha dispersión (EV/EBITDA US$214 frente a P/E US$59) porque el EBITDA ajustado excluye una compensación en acciones de ~15% de los ingresos; los métodos de flujo y el DCF son la referencia.",
   "fuentes": [
    "[Duolingo, Form 10-Q del 3T25 (30-sep-2025)](https://www.sec.gov/Archives/edgar/data/1562088/000162828025049743/duol-20250930.htm): liberación de la reserva de valuación, beneficio tributario único de US$222,7 millones.",
    "[Duolingo, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): beneficio tributario de US$231,7 millones en 2025."
@@ -75,6 +75,7 @@
    "B_mediana": 31.44,
    "B_ajustada": 31.44,
    "B_n": 3,
+   "B_regresion": null,
    "B_peers": "SPOT 35,4x, NFLX 20,1x, RDDT 31,4x",
    "B_excluidos": [
     "BMBL",
@@ -82,22 +83,22 @@
     "PINS"
    ],
    "C": {
-    "Conservador": 41.4,
-    "Base": 46.0,
-    "Optimista": null
+    "Conservador": 21.41,
+    "Base": 26.61,
+    "Optimista": 46.04
    },
    "mercado": 37.46,
    "lambda": 0.15,
-   "conservador": 34.11,
-   "base": 38.74,
-   "optimista": 41.46,
-   "factor_cons": 0.881,
-   "factor_opt": 1.07,
+   "conservador": 30.41,
+   "base": 35.83,
+   "optimista": 46.23,
+   "factor_cons": 0.849,
+   "factor_opt": 1.29,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    31.44,
-    46.0
+    26.61,
+    43.47
    ],
    "antes": {
     "J8": 33.98,
@@ -129,28 +130,29 @@
    "B_mediana": 24.88,
    "B_ajustada": 24.88,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "SPOT 28,9x, NFLX 25,0x, PINS 8,1x, RDDT 24,7x",
    "B_excluidos": [
     "BMBL",
     "MTCH"
    ],
    "C": {
-    "Conservador": 45.83,
-    "Base": 52.31,
-    "Optimista": null
+    "Conservador": 24.32,
+    "Base": 30.52,
+    "Optimista": 52.31
    },
    "mercado": 24.16,
    "lambda": 0.15,
-   "conservador": 24.94,
-   "base": 28.39,
-   "optimista": 29.97,
-   "factor_cons": 0.879,
-   "factor_opt": 1.056,
+   "conservador": 21.41,
+   "base": 25.12,
+   "optimista": 32.03,
+   "factor_cons": 0.852,
+   "factor_opt": 1.275,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     23.45,
-    52.31
+    30.52
    ],
    "antes": {
     "J8": 22.83,
@@ -192,6 +194,7 @@
    "B_mediana": 27.26,
    "B_ajustada": 27.26,
    "B_n": 3,
+   "B_regresion": null,
    "B_peers": "SPOT 27,3x, NFLX 22,1x, RDDT 33,7x",
    "B_excluidos": [
     "BMBL",
@@ -199,21 +202,21 @@
     "PINS"
    ],
    "C": {
-    "Conservador": 11.98,
-    "Base": 17.11,
-    "Optimista": null
+    "Conservador": 8.53,
+    "Base": 11.13,
+    "Optimista": 17.29
    },
    "mercado": 27.26,
    "lambda": 0.15,
-   "conservador": 20.66,
-   "base": 25.74,
-   "optimista": 28.79,
-   "factor_cons": 0.803,
-   "factor_opt": 1.119,
+   "conservador": 20.76,
+   "base": 24.84,
+   "optimista": 33.19,
+   "factor_cons": 0.836,
+   "factor_opt": 1.336,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    17.11,
+    11.13,
     27.26
    ],
    "antes": {
@@ -246,28 +249,29 @@
    "B_mediana": 26.85,
    "B_ajustada": 26.85,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "SPOT 31,1x, NFLX 26,2x, PINS 8,2x, RDDT 27,5x",
    "B_excluidos": [
     "BMBL",
     "MTCH"
    ],
    "C": {
-    "Conservador": 34.24,
-    "Base": 37.75,
-    "Optimista": null
+    "Conservador": 20.55,
+    "Base": 24.86,
+    "Optimista": 37.75
    },
    "mercado": 23.72,
    "lambda": 0.15,
-   "conservador": 22.89,
-   "base": 25.82,
-   "optimista": 27.28,
-   "factor_cons": 0.886,
-   "factor_opt": 1.057,
+   "conservador": 20.54,
+   "base": 23.89,
+   "optimista": 28.92,
+   "factor_cons": 0.86,
+   "factor_opt": 1.211,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     20.58,
-    37.75
+    26.85
    ],
    "antes": {
     "J8": 22.89,
@@ -299,28 +303,29 @@
    "B_mediana": 25.85,
    "B_ajustada": 25.85,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "SPOT 30,4x, NFLX 24,5x, PINS 7,9x, RDDT 27,3x",
    "B_excluidos": [
     "BMBL",
     "MTCH"
    ],
    "C": {
-    "Conservador": 33.56,
-    "Base": 37.24,
-    "Optimista": null
+    "Conservador": 19.37,
+    "Base": 23.9,
+    "Optimista": 37.25
    },
    "mercado": 22.71,
    "lambda": 0.15,
-   "conservador": 21.8,
-   "base": 24.89,
-   "optimista": 26.67,
-   "factor_cons": 0.876,
-   "factor_opt": 1.072,
+   "conservador": 19.36,
+   "base": 22.89,
+   "optimista": 28.24,
+   "factor_cons": 0.846,
+   "factor_opt": 1.234,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     19.56,
-    37.24
+    25.85
    ],
    "antes": {
     "J8": 21.8,
@@ -332,21 +337,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   125.16850391157044,
-   167.58007320005476,
-   250.9404393429077
+   98.09499243509907,
+   125.77061613571756,
+   172.4903673147671
   ],
   "multiplos_hoy": [
-   120.90451798227781,
-   150.13862746139907,
-   183.01144157809088
+   96.32434428818313,
+   121.7542861492237,
+   171.1836374697063
   ],
   "ponderado_hoy": [
-   123.46290953985337,
-   160.60349490459248,
-   223.76884023698096
+   97.38673317633268,
+   124.16408414112001,
+   171.96767537674276
   ],
-  "brecha_base": -0.10407827974770201,
+  "brecha_base": -0.03193377046161472,
   "fila_origen": 50
  }
 }

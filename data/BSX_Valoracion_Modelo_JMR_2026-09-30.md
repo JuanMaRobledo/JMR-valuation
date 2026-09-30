@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$45,27 en el escenario Base (rango US$31,10–US$61,06). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$42,83 (−5% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$44,29. El valor intrínseco es el DCF: US$45,27 frente a un precio de referencia de US$44,11 (+3%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$39,13 en el escenario Base (rango US$26,91–US$52,68). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$42,83 (+9% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$40,61. El valor intrínseco es el DCF: US$39,13 frente a un precio de referencia de US$44,11 (−11%).
 
-Revisión del 30-sep-2026: antes los múltiplos (US$59,06 hoy) quedaban 51% por encima del DCF (US$39,12). Había dos razones. Los múltiplos pagaban en FY+3 la mediana de peers que hoy crecen más que Boston Scientific y además se acercaban al justificado, que supone el ROE actual para siempre. El DCF suponía que después del año 10 el ROIC baja al costo de capital. Ahora el DCF usa un ROIC terminal de 11,1% (el actual, menor que el de la industria) y da US$45,27. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 5% por debajo del DCF. Los dos métodos coinciden alrededor del precio (US$44,11); el mercado ya descuenta la desaceleración de 2026.
+Revisión del 30-sep-2026: el ROIC terminal de 11,1% se revirtió porque BSX no cumple la regla del prompt. Incluida la plusvalía de sus compras, su ROIC estuvo por debajo del costo de capital hasta 2025, así que el DCF vuelve a suponer que después del año 10 gana solo su costo de capital: US$39,13. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 9% por encima del DCF, dentro del rango de ±25%. Los dos métodos rodean el precio (~US$44): el mercado ya descuenta la desaceleración de 2026 y paga algo por la recuperación de Watchman y electrofisiología.
 
 | Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$31,10 | US$32,52 | US$31,67 | US$20,21 | US$40,38 |
-| Base | US$45,27 | US$42,83 | US$44,29 | US$29,42 | US$58,26 |
-| Optimista | US$61,06 | US$58,84 | US$60,17 | US$39,69 | US$80,93 |
+| Conservador | US$26,91 | US$32,52 | US$29,15 | US$17,49 | US$37,08 |
+| Base | US$39,13 | US$42,83 | US$40,61 | US$25,44 | US$53,43 |
+| Optimista | US$52,68 | US$58,84 | US$55,14 | US$34,24 | US$74,34 |
 
 ## 2. Datos
 
@@ -40,13 +40,13 @@ Revisión del 30-sep-2026: antes los múltiplos (US$59,06 hoy) quedaban 51% por 
 | Margen EBIT objetivo | 20,0% | 24,0% | 27,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 1,30 / 1,20 | — | Input B32/B33 |
-| DCF por acción hoy | US$31,10 | US$45,27 | US$61,06 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$26,91 | US$39,13 | US$52,68 | Valuation output B86/B35/B137 |
 
-Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,00, ERP 4,46%, Ke 9,45%, costo de la deuda después de impuestos 4,76%, peso del patrimonio 86,7%, WACC inicial 8,82% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
+Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,00, ERP 4,46%, Ke 9,45%, costo de la deuda después de impuestos 4,76%, peso del patrimonio 86,6%, WACC inicial 8,82% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
 ## 4. Múltiplos: selección y origen
 
-A: Boston Scientific cotizaba a 25-55x EBITDA mientras crecía 12-20% orgánico. En 2026 la empresa bajó su guía de crecimiento orgánico a 6,5-8% (desde 10-11%, frente a 19,5% en 2025), las ventas de Watchman se estancaron y un ciberataque en agosto la llevó a retirar su guía; la acción cayó ~50% en el año. La etapa actual es solo el LTM. B: medtech diversificada de gran capitalización (Medtronic, Stryker, Abbott, Edwards, Intuitive Surgical, Zimmer Biomet), datos de yfinance al 29-sep-2026. Ajuste −5%: tras la baja de guía, Boston Scientific crece como la mediana de los peers, pero con más incertidumbre de ejecución (Watchman, electrofisiología en EE. UU. y los efectos del ciberataque). λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 11,1% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.
+A: Boston Scientific cotizaba a 25-55x EBITDA mientras crecía 12-20% orgánico. En 2026 la empresa bajó su guía de crecimiento orgánico a 6,5-8% (desde 10-11%, frente a 19,5% en 2025), las ventas de Watchman se estancaron y un ciberataque en agosto la llevó a retirar su guía; la acción cayó ~50% en el año. La etapa actual es solo el LTM. B: medtech diversificada de gran capitalización (Medtronic, Stryker, Abbott, Edwards, Intuitive Surgical, Zimmer Biomet), datos de yfinance al 29-sep-2026. Ajuste −5%: tras la baja de guía, Boston Scientific crece como la mediana de los peers, pero con más incertidumbre de ejecución (Watchman, electrofisiología en EE. UU. y los efectos del ciberataque). λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF supone que después del año 10 el retorno sobre el capital baja al costo de capital (BSX no cumple la regla del ROIC terminal). C se deja fuera del Base y se conserva como referencia en la tabla.
 
 | Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
 |---|---|---|---|---:|---:|---:|---|
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 15,9x: promedio de historia y peers 15,9x, acercado 0% al justificado (27,2x); rango de anclas 14,3x–27,2x. Atípicos excluidos de la historia: Dec '18 (-8.155,3x: métrica negativa o ~0); LTM (17,6x: < 0,4x la mediana (46.1x), caída puntual).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 12,7x: promedio de historia y peers 12,7x, acercado 0% al justificado (26,1x); rango de anclas 11,4x–26,1x. Atípicos excluidos de la historia: Dec '18 (157,8x: > 2,5x la mediana (33.8x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$42,83 frente a US$45,27 del DCF (−5%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$42,83 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$42,83 frente a US$39,13 del DCF (+9%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$42,83 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,13 +72,13 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$40,77 | US$59,35 | US$80,06 |
+| DCF Damodaran | 60% | US$35,28 | US$51,31 | US$69,07 |
 | EV/EBITDA | 10% | US$33,89 | US$48,91 | US$72,05 |
 | EV/FCFF | 15% | US$41,68 | US$59,45 | US$85,06 |
 | P/E | 5% | US$44,11 | US$62,63 | US$91,20 |
 | P/FCFE | 5% | US$43,73 | US$62,41 | US$92,70 |
 | P/OCF | 5% | US$37,61 | US$51,78 | US$74,72 |
-| **Ponderado FY+3** | 100% | US$40,38 | US$58,26 | US$80,93 |
+| **Ponderado FY+3** | 100% | US$37,08 | US$53,43 | US$74,34 |
 
 Valor presente (Ke 9,45%; consolidado por método: Promedio 1-3 años):
 
@@ -100,25 +100,25 @@ Valor presente (Ke 9,45%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$39,80 | US$40,06 | US$39,49 | US$39,78 | OK |
 | P/OCF | Optimista | US$51,23 | US$55,21 | US$56,99 | US$54,48 | OK |
 
-Múltiplos consolidados hoy: US$32,52 / US$42,83 / US$58,84 · DCF hoy: US$31,10 / US$45,27 / US$61,06 · Ponderado hoy: US$31,67 / US$44,29 / US$60,17 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$32,52 / US$42,83 / US$58,84 · DCF hoy: US$26,91 / US$39,13 / US$52,68 · Ponderado hoy: US$29,15 / US$40,61 / US$55,14 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para BSX la diferencia es de −5% (múltiplos por debajo del DCF). Revisión del 30-sep-2026: antes los múltiplos (US$59,06 hoy) quedaban 51% por encima del DCF (US$39,12). Había dos razones. Los múltiplos pagaban en FY+3 la mediana de peers que hoy crecen más que Boston Scientific y además se acercaban al justificado, que supone el ROE actual para siempre. El DCF suponía que después del año 10 el ROIC baja al costo de capital. Ahora el DCF usa un ROIC terminal de 11,1% (el actual, menor que el de la industria) y da US$45,27. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 5% por debajo del DCF. Los dos métodos coinciden alrededor del precio (US$44,11); el mercado ya descuenta la desaceleración de 2026.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para BSX la diferencia es de +9% (múltiplos por encima del DCF). Revisión del 30-sep-2026: el ROIC terminal de 11,1% se revirtió porque BSX no cumple la regla del prompt. Incluida la plusvalía de sus compras, su ROIC estuvo por debajo del costo de capital hasta 2025, así que el DCF vuelve a suponer que después del año 10 gana solo su costo de capital: US$39,13. Los múltiplos ajustan los peers por el crecimiento de 7% de FY+3 y dejan fuera el justificado: dan US$42,83, 9% por encima del DCF, dentro del rango de ±25%. Los dos métodos rodean el precio (~US$44): el mercado ya descuenta la desaceleración de 2026 y paga algo por la recuperación de Watchman y electrofisiología.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$44,11 supone que los ingresos crecen 6,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 7,0% (−0,5 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$44,11 supone que los ingresos crecen 9,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 7,0% (+2,3 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$59,35 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,4%, WACC de los años 4-10 8,9%, ROE de FY+3 19,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$51,31 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,4%, WACC de los años 4-10 8,9%, ROE de FY+3 19,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 11,9x | 14,1x | −18% | 2,2% | 3,2% | −1,0 pp | Coherente con el DCF. |
-| EV/FCFF | 18,0x | 18,0x | +0% | 3,2% | 3,2% | +0,0 pp | Coherente con el DCF. |
-| P/E | 20,8x | 19,7x | +6% | 5,9% | 5,7% | +0,3 pp | Coherente con el DCF. |
-| P/FCFE | 15,9x | 15,2x | +5% | 3,0% | 2,7% | +0,3 pp | Coherente con el DCF. |
-| P/OCF | 12,7x | 14,6x | −13% | 1,8% | 2,7% | −0,9 pp | Coherente con el DCF. |
+| EV/EBITDA | 11,9x | 12,4x | −5% | 2,2% | 2,4% | −0,3 pp | Coherente con el DCF. |
+| EV/FCFF | 18,0x | 15,8x | +16% | 3,2% | 2,4% | +0,7 pp | Coherente con el DCF. |
+| P/E | 20,8x | 17,0x | +22% | 5,9% | 4,9% | +1,1 pp | Coherente con el DCF. |
+| P/FCFE | 15,9x | 13,1x | +22% | 3,0% | 1,7% | +1,3 pp | Coherente con el DCF. |
+| P/OCF | 12,7x | 12,6x | +1% | 1,8% | 1,7% | +0,1 pp | Coherente con el DCF. |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -126,18 +126,18 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$44,29 | — |
-| Múltiplos Base +20% | US$48,03 | +8,4% |
-| Múltiplos Base −20% | US$40,55 | −8,4% |
-| Crecimiento años 1-5 +2 pp | US$47,34 | +6,9% |
-| Crecimiento años 1-5 −2 pp | US$41,53 | −6,2% |
-| Margen objetivo +3 pp | US$48,31 | +9,1% |
-| Margen objetivo −3 pp | US$40,28 | −9,1% |
-| WACC +1 pp | US$42,56 | −3,9% |
-| WACC −1 pp | US$46,15 | +4,2% |
+| Vigente | US$40,61 | — |
+| Múltiplos Base +20% | US$44,35 | +9,2% |
+| Múltiplos Base −20% | US$36,87 | −9,2% |
+| Crecimiento años 1-5 +2 pp | US$43,15 | +6,3% |
+| Crecimiento años 1-5 −2 pp | US$38,31 | −5,7% |
+| Margen objetivo +3 pp | US$44,17 | +8,8% |
+| Margen objetivo −3 pp | US$37,06 | −8,8% |
+| WACC +1 pp | US$39,11 | −3,7% |
+| WACC −1 pp | US$42,22 | +4,0% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo +3 pp, Margen objetivo −3 pp, Múltiplos Base +20%.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Margen objetivo +3 pp.
 
 ## 8. Log de cambios en la hoja
 
