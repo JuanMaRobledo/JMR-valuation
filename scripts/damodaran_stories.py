@@ -339,6 +339,8 @@ def render(r: dict) -> tuple[str, str]:
     def gi_txt(x):
         if x is None or x["g"] is None:
             return "no alcanza"
+        if x["g"] <= -0.1:  # piso de la búsqueda: el precio supone una caída aún mayor
+            return "≤ −10% (el precio supone una caída mayor)"
         return f"{pct(x['g'])} ({pct(x['tasa_base'], 0)} de las empresas)"
     rows = [[f"Beta {es(b)}"] + [gi_txt(next((x for x in r['inverso'] if x['beta'] == b and x['margen'] == m), None)) for m in ms] for b in bs]
     p("DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción "
