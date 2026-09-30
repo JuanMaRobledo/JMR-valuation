@@ -52,8 +52,31 @@ def money(v, cur="US$"):
 def engine_dcf(inp: dict) -> dict:
     js = (f"const fs=require('fs'),vm=require('vm');const c={{}};vm.createContext(c);"
           f"vm.runInContext(fs.readFileSync({json.dumps(str(ENGINE))},'utf8'),c);c.inp={json.dumps(inp)};"
-          "const r=vm.runInContext('calcularModeloJMR(inp)',c);console.log(JSON.stringify(r.precios.dcf));")
+          "const r=vm.runInContext('calcularModeloJMR(inp)',c);console.log(JSON.stringify(r.valorPresente.dcf));")
     return json.loads(subprocess.check_output(["node", "-e", js]))
+
+
+def engine_inputs(cell, fm, price) -> dict:
+    """Insumos del motor jmr_engine.js leídos de la hoja (grilla ya descargada)."""
+    def c_(addr, sheet="Input sheet"):
+        return cell(sheet, addr)
+    e4, d4, e6 = fm[3][4], fm[3][3], fm[5][4]
+    base_inp = {
+        "precioActual": price, "tipoEmpresa": cell("Resumen de Valoración", "G3"), "mos": cell("Resumen de Valoración", "G4"),
+        "revenue0": c_("B12"), "ebit0": cell("Valuation output", "B7"), "taxEffective": c_("B24"), "taxMarginal": c_("B25"),
+        "shares0": c_("B22"), "cash": c_("B19"), "debt": c_("B16"), "nonOperatingAssets": c_("B20") or 0,
+        "minorityInterests": c_("B21") or 0, "probFailure": c_("B53") if c_("B52") in ("Yes", "Sí") else 0,
+        "recoveryPct": c_("B55") or 0, "wacc": cell("Input sheet", "B36"), "riskFreeRate": c_("B35"),
+        "matureMarketERP": cell("Valuation output", "M14") - c_("B35"), "salesToCapital": c_("B32"),
+        "growthCons": cell("Valuation output", "C55"), "marginCons": cell("Valuation output", "G57"),
+        "growthBase": cell("Valuation output", "C4"), "marginBase": cell("Valuation output", "G6"),
+        "growthOpt": cell("Valuation output", "C106"), "marginOpt": cell("Valuation output", "G108"),
+        "daPctRevenue": fm[19][4] / e4, "capexPctRevenue": fm[20][4] / e4, "netBorrowingPctRevenue": fm[27][4] / e4,
+        "nwcPctDeltaRevenue": fm[21][4] / (e4 - d4) if e4 != d4 else 0, "interestOtherPctEBIT": fm[9][4] / e6 if e6 else 0,
+        "buybackRate": fm[30][5] / fm[30][4] - 1 if fm[30][4] else 0, "dividendPerShare": fm[34][4] or 0,
+        "evEbitdaBase": 10, "evFcffBase": 10, "peBase": 10, "pfcfeBase": 10, "pocfBase": 10,
+    }
+    return base_inp
 
 
 def main():
@@ -125,24 +148,11 @@ def main():
     check_mult = mult_base(1.0)
 
     # --- sensibilidad DCF con el motor de la Calculadora ---
+    base_inp = engine_inputs(cell, fm, price)
+    wacc = base_inp["wacc"]
+
     def c_(addr, sheet="Input sheet"):
         return cell(sheet, addr)
-    e4, d4, e6 = fm[3][4], fm[3][3], fm[5][4]
-    base_inp = {
-        "precioActual": price, "tipoEmpresa": cell("Resumen de Valoración", "G3"), "mos": cell("Resumen de Valoración", "G4"),
-        "revenue0": c_("B12"), "ebit0": cell("Valuation output", "B7"), "taxEffective": c_("B24"), "taxMarginal": c_("B25"),
-        "shares0": c_("B22"), "cash": c_("B19"), "debt": c_("B16"), "nonOperatingAssets": c_("B20") or 0,
-        "minorityInterests": c_("B21") or 0, "probFailure": c_("B53") if c_("B52") in ("Yes", "Sí") else 0,
-        "recoveryPct": c_("B55") or 0, "wacc": wacc, "riskFreeRate": c_("B35"),
-        "matureMarketERP": cell("Valuation output", "M14") - c_("B35"), "salesToCapital": c_("B32"),
-        "growthCons": cell("Valuation output", "C55"), "marginCons": cell("Valuation output", "G57"),
-        "growthBase": cell("Valuation output", "C4"), "marginBase": cell("Valuation output", "G6"),
-        "growthOpt": cell("Valuation output", "C106"), "marginOpt": cell("Valuation output", "G108"),
-        "daPctRevenue": fm[19][4] / e4, "capexPctRevenue": fm[20][4] / e4, "netBorrowingPctRevenue": fm[27][4] / e4,
-        "nwcPctDeltaRevenue": fm[21][4] / (e4 - d4) if e4 != d4 else 0, "interestOtherPctEBIT": fm[9][4] / e6 if e6 else 0,
-        "buybackRate": fm[30][5] / fm[30][4] - 1 if fm[30][4] else 0, "dividendPerShare": fm[34][4] or 0,
-        "evEbitdaBase": 10, "evFcffBase": 10, "peBase": 10, "pfcfeBase": 10, "pocfBase": 10,
-    }
     eng0 = engine_dcf(base_inp)["base"]
     for lab, change in (("Crecimiento años 1-5 +2 pp", {"growthBase": base_inp["growthBase"] + 0.02}),
                         ("Crecimiento años 1-5 −2 pp", {"growthBase": base_inp["growthBase"] - 0.02}),
@@ -280,6 +290,31 @@ def main():
       f"pagaría el mercado por negocios comparables. Para {tk} la diferencia es de {'+' if gap >= 0 else '−'}{es(abs(gap) * 100, 0)}% "
       f"(múltiplos {'por encima' if gap >= 0 else 'por debajo'} del DCF). {dec.get('evaluacion', '')}")
     w("")
+    cpath = MV / f"{tk}_crecimiento.json"
+    if cpath.exists():
+        ci = json.loads(cpath.read_text())
+        di = ci["dcfInverso"]
+        pp_ = lambda x: "—" if x is None else ("+" if x >= 0 else "−") + es(abs(x) * 100, 1) + " pp"  # noqa: E731
+        w("### 6.1 Coherencia del crecimiento (criterio Damodaran)")
+        w("")
+        w(f"DCF inverso: con el resto de supuestos del escenario Base, el precio de {money(ci['precio'], cur)} supone que los "
+          f"ingresos crecen {pct(di['gImplicito'])} al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone "
+          f"{pct(di['gDcf'])} ({pp_(di['dif'])}). {di['lectura']}")
+        w("")
+        w("Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke "
+          f"{pct(ci['parametros']['ke'])}, WACC de los años 4-10 {pct(ci['parametros']['wacc'])} y ROE de FY+3 "
+          f"{pct(ci['parametros']['roe'])}, frente al crecimiento del DCF ({pct(ci['gDcf']['puntoMedio'])}: punto medio entre "
+          f"los años 4-10 y la perpetuidad):")
+        w("")
+        w("| Múltiplo Base FY+3 | Múltiplo | Crecimiento implícito | Diferencia vs. DCF | Lectura |")
+        w("|---|---:|---:|---:|---|")
+        for x in ci["multiplos"]:
+            w(f"| {x['metodo']} | {xm(x['multiplo'])} | {pct(x['gImplicito'])} | {pp_(x['dif'])} | {x['lectura']} |")
+        w("")
+        w(f"Más de {int(ci['umbral'] * 100)} pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de "
+          "crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el "
+          "crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).")
+        w("")
     w("## 7. Sensibilidad del valor ponderado hoy (Base)")
     w("")
     w("| Cambio | Valor ponderado hoy | Variación |")

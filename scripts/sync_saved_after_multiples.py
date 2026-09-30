@@ -27,7 +27,7 @@ from patch_saved_present_value import summaries  # noqa: E402
 from regen_saved_valuations import export_xlsx, regen, serve  # noqa: E402
 
 FIELDS = ("metodos", "objetivoPonderado", "cagr", "zonas", "precioMOS", "precioMOSMax",
-          "valorPresentePonderado", "descuentoMultiples", "precioMOSHoy")
+          "valorPresentePonderado", "descuentoMultiples", "precioMOSHoy", "crecimientoImplicito")
 RAW_SHEETS = ("EVEBITDA", "EVFCFF", "PE", "PFCFE", "POCF", "Financials Multiples")
 
 
