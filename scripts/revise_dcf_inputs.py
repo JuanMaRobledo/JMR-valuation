@@ -126,6 +126,12 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
     "BSX_IMPUESTO": [
         (IS, "B24", 0.178, "Tasa efectiva de los años 1-5 = promedio 2023-2025 (19,8%, 19,1% y 14,6%). La del LTM (5%) refleja beneficios fiscales de una vez y no es sostenible."),
     ],
+    # Sexta ronda (30-sep-2026, revaloración de CMG): saldos del balance al 30-jun-2026 (10-Q del 2T26).
+    "CMG_CAJA": [
+        (IS, "B19", 677.9, "Caja e inversiones negociables al 30-jun-2026 = efectivo US$228,2M + inversiones de corto plazo US$449,7M (10-Q 2T26). Antes solo el efectivo."),
+        (IS, "B20", 97.1, "Inversiones de largo plazo al 30-jun-2026 (10-Q 2T26); antes US$197,1M, el saldo de dic-2025."),
+        (IS, "B15", 2199.8, "Patrimonio al 30-jun-2026 (10-Q 2T26); antes US$2.830,6M, el saldo de dic-2025. Bajó por recompras de US$1.355M en el semestre."),
+    ],
     # CELH_IMPUESTO se aplicó y se revirtió el 30-sep-2026: la hoja ya usa la tasa marginal (24%) desde el año 1
     # ('Valuation output'!C8 = 'Input sheet'!B25); B24 solo alimenta el año base y no cambia el valor.
     "CELH_IMPUESTO": [
