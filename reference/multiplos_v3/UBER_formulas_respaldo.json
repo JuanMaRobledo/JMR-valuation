@@ -1,0 +1,27 @@
+{
+ "EVEBITDA": {
+  "F8": "=IFERROR(F19*0,9;\"\")",
+  "F19": "=IFERROR(MEDIAN(FILTER('Trailing Valuation'!I21:K21;'Trailing Valuation'!I21:K21>0));\"\")",
+  "F30": "=IFERROR(F19*1,1;\"\")"
+ },
+ "EVFCFF": {
+  "F8": "=IFERROR(F19*0,9;\"\")",
+  "F19": "=IFERROR(MEDIAN(FILTER('Trailing Valuation'!I24:K24;'Trailing Valuation'!I24:K24>0));\"\")",
+  "F30": "=IFERROR(F19*1,1;\"\")"
+ },
+ "PE": {
+  "F8": "=IFERROR(F19*0,9;\"\")",
+  "F19": "=IFERROR(MEDIAN(FILTER('Trailing Valuation'!I13:K13;'Trailing Valuation'!I13:K13>0));\"\")",
+  "F30": "=IFERROR(F19*1,1;\"\")"
+ },
+ "PFCFE": {
+  "F8": "=IFERROR(F19*0,9;\"\")",
+  "F19": "=IFERROR(MEDIAN(FILTER('Trailing Valuation'!I16:K16;'Trailing Valuation'!I16:K16>0));\"\")",
+  "F30": "=IFERROR(F19*1,1;\"\")"
+ },
+ "POCF": {
+  "F8": "=IFERROR(F19*0,9;\"\")",
+  "F19": "=IFERROR(MEDIAN(FILTER('Trailing Valuation'!I15:K15;'Trailing Valuation'!I15:K15>0));\"\")",
+  "F30": "=IFERROR(F19*1,1;\"\")"
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "decision": {
+  "etapa_desde": "Feb '26",
+  "etapa_motivo": "A: Lululemon cotizó a 15-40x EBITDA mientras crecía 15-30% al año. En 2026 guió una caída de ventas de 5-7% (US$10.350-10.500 millones), recortó la utilidad por acción a US$9,48-9,73 por aranceles y menor demanda en EE. UU., y cambió de CEO (Heidi O'Neill desde septiembre); la acción cayó 20% tras el 2T. La etapa actual es el cierre Feb '26 y el LTM. Antes el múltiplo Base se había calibrado al DCF; ahora sale de las tres anclas.",
+  "peers_excluir": {
+   "*": [
+    "UAA",
+    "ONON"
+   ]
+  },
+  "peers_motivo": "B: ropa y calzado deportivo (Nike, Deckers, Adidas, Birkenstock), datos de yfinance al 29-sep-2026. Se excluyen Under Armour (con pérdidas, EV/EBITDA inflado) y On Holding (crece 14% con múltiplos de crecimiento que no comparan con una Lululemon que decrece).",
+  "ajuste_peers": -0.1,
+  "ajuste_motivo": "Ajuste −10%: Lululemon decrece 5-7% en 2026 mientras la mediana de los peers crece ~6-13%, y está en transición de CEO.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Lululemon de FY+3 del escenario Base es una marca madura de crecimiento bajo, parecida a la de hoy.",
+  "fuentes": [
+   "[CNBC, 3-sep-2026: Lululemon cae 20% por resultados y guía](https://www.cnbc.com/2026/09/03/lululemon-lulu-q2-2026-earnings.html)",
+   "[Quartz: Lululemon recorta su guía anual](https://qz.com/lululemon-full-year-guidance-cut-product-sales-060526)"
+  ],
+  "evaluacion": "Los múltiplos (US$107,52 hoy) quedan 31% por debajo del DCF (US$155,29). Los múltiplos reflejan la valoración actual de una marca que decrece (~6x EBITDA, ~11x utilidad) y peers ajustados −10%, mientras que el DCF supone que las ventas y los márgenes se recuperan en el horizonte. Mientras las ventas caigan y la nueva CEO no muestre un plan, los múltiplos son la referencia más prudente; el DCF muestra el valor si Lululemon vuelve a crecer.",
+  "ticker": "LULU"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 5.83,
+   "A_desc": "mediana Feb '26, LTM (etapa actual) = 5,8x",
+   "A_p25": 5.22,
+   "A_p75": 6.45,
+   "A_max": 40.41,
+   "A_excluidos": [],
+   "B_mediana": 11.09,
+   "B_ajustada": 9.98,
+   "B_n": 4,
+   "B_peers": "NKE 11,2x, DECK 7,1x, ADDYY 12,7x, BIRK 11,0x",
+   "B_excluidos": [
+    "ONON",
+    "UAA"
+   ],
+   "C": {
+    "Conservador": 6.32,
+    "Base": 7.4,
+    "Optimista": 8.73
+   },
+   "mercado": 7.91,
+   "lambda": 0.25,
+   "conservador": 6.88,
+   "base": 7.78,
+   "optimista": 8.63,
+   "factor_cons": 0.884,
+   "factor_opt": 1.109,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    5.83,
+    9.98
+   ],
+   "antes": {
+    "J8": 6,
+    "J19": 8,
+    "J30": 11
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 14.96,
+   "A_desc": "mediana Feb '26, LTM (etapa actual) = 15,0x (EV/FCF × 1,02 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 11.84,
+   "A_p75": 18.08,
+   "A_max": 75.66,
+   "A_excluidos": [
+    [
+     "Jan '23",
+     114.99,
+     "> 2,5x la mediana (33.0x)"
+    ],
+    [
+     "LTM",
+     8.55,
+     "< 0,4x la mediana (33.0x), caída puntual"
+    ]
+   ],
+   "B_mediana": 18.74,
+   "B_ajustada": 16.86,
+   "B_n": 4,
+   "B_peers": "NKE 25,3x, DECK 8,4x, ADDYY 18,0x, BIRK 19,5x",
+   "B_excluidos": [
+    "ONON",
+    "UAA"
+   ],
+   "C": {
+    "Conservador": 14.96,
+    "Base": 18.17,
+    "Optimista": 21.57
+   },
+   "mercado": 15.91,
+   "lambda": 0.25,
+   "conservador": 13.44,
+   "base": 16.48,
+   "optimista": 19.3,
+   "factor_cons": 0.816,
+   "factor_opt": 1.171,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    14.96,
+    18.17
+   ],
+   "antes": {
+    "J8": 12,
+    "J19": 18,
+    "J30": 25
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 10.69,
+   "A_desc": "mediana Feb '26, LTM (etapa actual) = 10,7x",
+   "A_p25": 9.45,
+   "A_p75": 11.92,
+   "A_max": 73.04,
+   "A_excluidos": [],
+   "B_mediana": 16.63,
+   "B_ajustada": 14.97,
+   "B_n": 4,
+   "B_peers": "NKE 17,1x, DECK 11,0x, ADDYY 18,6x, BIRK 16,2x",
+   "B_excluidos": [
+    "ONON",
+    "UAA"
+   ],
+   "C": {
+    "Conservador": 12.11,
+    "Base": 14.14,
+    "Optimista": 16.39
+   },
+   "mercado": 12.83,
+   "lambda": 0.25,
+   "conservador": 11.56,
+   "base": 13.15,
+   "optimista": 14.58,
+   "factor_cons": 0.879,
+   "factor_opt": 1.108,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    10.69,
+    14.97
+   ],
+   "antes": {
+    "J8": 10,
+    "J19": 15,
+    "J30": 20
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 14.54,
+   "A_desc": "mediana Feb '26, LTM (etapa actual) = 14,5x",
+   "A_p25": 11.27,
+   "A_p75": 17.81,
+   "A_max": 76.9,
+   "A_excluidos": [
+    [
+     "Jan '23",
+     115.88,
+     "> 2,5x la mediana (35.2x)"
+    ]
+   ],
+   "B_mediana": 17.26,
+   "B_ajustada": 15.53,
+   "B_n": 4,
+   "B_peers": "NKE 24,3x, DECK 9,5x, ADDYY 15,8x, BIRK 18,7x",
+   "B_excluidos": [
+    "ONON",
+    "UAA"
+   ],
+   "C": {
+    "Conservador": 13.48,
+    "Base": 16.06,
+    "Optimista": 18.68
+   },
+   "mercado": 15.04,
+   "lambda": 0.25,
+   "conservador": 12.43,
+   "base": 15.29,
+   "optimista": 18.12,
+   "factor_cons": 0.813,
+   "factor_opt": 1.185,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    14.54,
+    16.06
+   ],
+   "antes": {
+    "J8": 10,
+    "J19": 15,
+    "J30": 20
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 8.79,
+   "A_desc": "mediana Feb '26, LTM (etapa actual) = 8,8x",
+   "A_p25": 7.13,
+   "A_p75": 10.46,
+   "A_max": 51.23,
+   "A_excluidos": [],
+   "B_mediana": 13.08,
+   "B_ajustada": 11.77,
+   "B_n": 4,
+   "B_peers": "NKE 18,5x, DECK 8,9x, ADDYY 12,5x, BIRK 13,6x",
+   "B_excluidos": [
+    "ONON",
+    "UAA"
+   ],
+   "C": {
+    "Conservador": 7.43,
+    "Base": 9.96,
+    "Optimista": 12.55
+   },
+   "mercado": 10.28,
+   "lambda": 0.25,
+   "conservador": 8.31,
+   "base": 10.2,
+   "optimista": 12.19,
+   "factor_cons": 0.815,
+   "factor_opt": 1.195,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    8.79,
+    11.77
+   ],
+   "antes": {
+    "J8": 8,
+    "J19": 12,
+    "J30": 16
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   104.9848649216894,
+   155.29184062099816,
+   206.3813967398458
+  ],
+  "multiplos_hoy": [
+   76.37037913965057,
+   107.52336852289598,
+   143.0829235687902
+  ],
+  "ponderado_hoy": [
+   87.8161734524661,
+   126.63075736213686,
+   168.40231283721246
+  ],
+  "brecha_base": -0.3076045200255232,
+  "fila_origen": 44
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "ticker": "NKE",
+ "sheet_id": "1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital: marca global con poder de precio."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.133,
+   "motivo": "ROIC terminal 13,3%: el menor entre el actual (13,3%, con el margen deprimido) y el de su industria según Damodaran (20,9%)."
+  }
+ ]
+}

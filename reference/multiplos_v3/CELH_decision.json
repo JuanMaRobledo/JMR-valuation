@@ -1,0 +1,27 @@
+{
+ "etapa_desde": "Dec '24",
+ "etapa_motivo": "A: Celsius fue hipercrecimiento hasta 2023 (múltiplos de 50-500x o con utilidades negativas); desde 2024 es una marca de bebidas energéticas en consolidación. Se usa FY24 como etapa actual.",
+ "historia_excluir": {
+  "*": [
+   "Dec '25",
+   "LTM"
+  ]
+ },
+ "historia_motivo": "El FY25 y el LTM se excluyen de todos los métodos: incluyen US$246,7 millones por terminar contratos de distribución de Alani Nu (traspaso al sistema de PepsiCo) y US$24,8 millones de costos de la adquisición (10-K FY2025), que distorsionan utilidad, EBITDA y flujo de caja.",
+ "peers_excluir": {
+  "*": [
+   "KDP",
+   "BRBR"
+  ]
+ },
+ "peers_motivo": "B: bebidas con marca (Monster, PepsiCo, Coca-Cola, Vita Coco), datos de yfinance al 29-sep-2026. Se excluyen Keurig Dr Pepper (crecimiento de 76% por la compra de JDE Peet's distorsiona sus múltiplos) y BellRing (nutrición, en fuerte caída).",
+ "ajuste_peers": -0.1,
+ "ajuste_motivo": "Ajuste −10%: Celsius crece más que Coca-Cola y PepsiCo, pero con márgenes menores que Monster, dependencia de PepsiCo como distribuidor y una integración reciente (Alani Nu) aún por demostrar.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Celsius de FY+3 del escenario Base es una marca madura de crecimiento medio.",
+ "fuentes": [
+  "[Celsius Holdings, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000024/celh-20251231.htm): costos de la adquisición de Alani Nu y terminación de distribuidores."
+ ],
+ "evaluacion": "Los múltiplos (US$21,32 hoy) quedan 18% por encima del DCF (US$18,11). Con la historia distorsionada por la compra de Alani Nu, los múltiplos se anclan en FY24, en los peers de bebidas y en los fundamentales; el DCF es más confiable mientras no haya uno o dos años limpios después de integrar Alani Nu.",
+ "ticker": "CELH"
+}

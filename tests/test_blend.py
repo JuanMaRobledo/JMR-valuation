@@ -131,3 +131,48 @@ def test_run_blend_respects_included_methods_end_to_end():
     assert result.weights["EV/EBITDA"] == 0.0
     assert result.weights["P/OCF"] == 0.0
     assert math.isclose(sum(result.weights.values()), 1.0)
+
+
+# --- Multiplos a valor presente (ADBE, escenario Base, hoja del 29-sep-2026) ---
+from jmr_valuation.models.blend import (  # noqa: E402
+    CONSOLIDATE_3Y,
+    consolidate_horizons,
+    discount_multiple,
+    present_value_blend,
+)
+
+_ADBE_KE = 0.11202253349164944
+_ADBE_BASE = {  # precio + dividendos acumulados, FY+1..FY+3
+    "EV/EBITDA": (415.1537921453624, 465.9090426394286, 518.0078695372337),
+    "EV/FCFF": (316.71876937878704, 358.63440816090474, 400.2617612595693),
+    "P/E": (409.62004062157047, 462.2854744157724, 514.9509082099744),
+    "P/FCFE": (290.7974617360271, 328.9207672480282, 366.7868016089501),
+    "P/OCF": (322.88376143857886, 364.81991439297207, 406.60818307806375),
+}
+
+
+def test_discount_multiple_matches_sheet():
+    assert math.isclose(discount_multiple(518.0078695372337, _ADBE_KE, 3), 376.6999777519675, rel_tol=1e-12)
+    assert math.isclose(discount_multiple(415.1537921453624, _ADBE_KE, 1), 373.3321759603354, rel_tol=1e-12)
+
+
+def test_consolidate_horizons_average_and_three_years():
+    assert consolidate_horizons((1.0, 2.0, 3.0)) == 2.0
+    assert consolidate_horizons((1.0, 2.0, 3.0), CONSOLIDATE_3Y) == 3.0
+    with pytest.raises(ValueError):
+        consolidate_horizons((1.0, 2.0, 3.0), "otro")
+
+
+def test_present_value_blend_matches_adbe_sheet():
+    r = present_value_blend("Madura", 377.93587266843457, _ADBE_BASE, _ADBE_KE)
+    assert math.isclose(r.multiples_consolidated, 343.91616722118016, rel_tol=1e-12)
+    assert math.isclose(r.weighted_present, 357.52404940008194, rel_tol=1e-12)
+    assert math.isclose(r.method_consolidated["EV/EBITDA"], 375.6000380619109, rel_tol=1e-12)
+    assert math.isclose(r.weight_dcf + r.weight_multiples, 1.0)
+
+
+@pytest.mark.parametrize("ke", [0.01, 0.08, 0.15])
+def test_three_year_present_value_is_below_undiscounted(ke):
+    r = present_value_blend("Madura", 100.0, _ADBE_BASE, ke)
+    for method, values in _ADBE_BASE.items():
+        assert r.method_present_values[method][2] < values[2]

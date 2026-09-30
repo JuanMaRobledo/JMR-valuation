@@ -1,0 +1,467 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '23",
+  "etapa_motivo": "A: Uber es rentable desde 2023; los cierres anteriores tienen EBITDA y utilidad negativos. La etapa actual es Dec '23 a LTM. En P/E se quita Dec '24: la utilidad de 2024 incluye la liberación de ~US$6.400 millones de la reserva de impuestos diferidos, que baja el P/E a 13x. La utilidad del LTM incluye revaluaciones de sus participaciones (Didi, Grab, Aurora) que se compensan entre trimestres (−US$1.500 millones en el 1T26, +US$1.600 millones en el 2T26). Se excluye la columna sin fecha de la hoja. En EV/EBITDA se quita también Dec '23 (69x): fue el primer año con EBITDA positivo (US$1.933 millones) y el múltiplo no es representativo.",
+  "historia_excluir": {
+   "*": [
+    "—"
+   ],
+   "P/E": [
+    "Dec '24"
+   ],
+   "EV/EBITDA": [
+    "Dec '23"
+   ]
+  },
+  "peers_excluir": {
+   "*": [
+    "LYFT"
+   ],
+   "P/E": [
+    "DASH"
+   ]
+  },
+  "peers_motivo": "B: plataformas de movilidad, reparto y viajes (DoorDash, Airbnb, Booking, Grab, Expedia), datos de yfinance al 29-sep-2026. Se excluye Lyft (P/E de 2x por la liberación de su reserva de impuestos; EV/EBITDA de 112x) y, en P/E, DoorDash (98x con margen de 4%).",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Sin ajuste: Uber crece ~15-18% con margen creciente, en la mitad del grupo (más que Booking y Expedia, menos que DoorDash).",
+  "lambda": 0.0,
+  "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C usa g perpetuo de 6,7% con un ROE de 54% para siempre y Ke − g de apenas 1,9 pp, mientras el DCF supone que después del año 10 el retorno sobre el capital iguala al costo de capital; no es coherente con el DCF y se deja fuera del Base (se conserva como referencia en la tabla).",
+  "fuentes": [
+   "[Uber: resultados 2T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm)",
+   "[Uber: resultados 1T26](https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000019/uberq126earningspressrelea.htm)"
+  ],
+  "evaluacion": "Revisión del 30-sep-2026: con el margen objetivo de 21% se revisaron también los múltiplos de salida. Los anteriores (EV/EBITDA 30,4x, P/E 23,4x) superaban lo que el mercado paga hoy por Uber (20,3x EBITDA y 15,4x utilidad LTM) aunque en FY+3 crecerá menos (~11%). Ahora la referencia de peers se ajusta por crecimiento (recta múltiplo ~ crecimiento evaluada en el 11% de FY+3), se deja fuera el justificado (supone un ROE de 54% para siempre, incoherente con el DCF) y el EV/EBITDA de 2023. El DCF da US$88,85 y los múltiplos US$83,89 hoy (6% por debajo): los dos métodos coinciden y quedan por encima del precio (US$68,16); el mercado descuenta sobre todo la competencia de los robotaxis. El chequeo de crecimiento implícito marca que los múltiplos suponen menos crecimiento perpetuo que el DCF; es un efecto de la fórmula (usa el ROE de FY+3 para siempre), no de los múltiplos: el propio DCF implica en FY+3 unos 17x EBITDA y 17x utilidad.",
+  "ticker": "UBER",
+  "peers_crecimiento": {
+   "g": 0.11,
+   "motivo": "B ajustado por crecimiento (30-sep-2026): con el margen revisado a 21%, la hoja supone que en FY+3 Uber crece ~11% (13% el año 1 y 11% los años 2-5). Los peers de hoy crecen entre 8% (Booking) y 36% (DoorDash) y su múltiplo sube con el crecimiento (R² 0,8-0,9 en EV/EBITDA y flujos). Pagar en FY+3 la mediana de hoy, sesgada por DoorDash y Airbnb, supone que Uber seguirá creciendo como hoy; la recta evaluada en 11% da el precio relativo coherente con la historia del DCF."
+  }
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 27.6,
+   "A_desc": "mediana Dec '24, Dec '25, LTM (etapa actual) = 27,6x",
+   "A_p25": 23.93,
+   "A_p75": 32.64,
+   "A_max": 37.67,
+   "A_excluidos": [
+    [
+     "Dec '18",
+     -0.18,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -5.84,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -22.81,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -30.15,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -63.68,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     1.23,
+     "< 0,4x la mediana (27.6x), caída puntual"
+    ],
+    [
+     "Dec '23",
+     69.26,
+     "> 2,5x la mediana (27.6x)"
+    ]
+   ],
+   "B_mediana": 25.26,
+   "B_ajustada": 13.5,
+   "B_n": 5,
+   "B_regresion": {
+    "a": -4.15,
+    "b": 160.42,
+    "r2": 0.87,
+    "g": 0.11,
+    "n": 5
+   },
+   "B_peers": "DASH 55,0x, ABNB 30,1x, BKNG 12,1x, GRAB 25,3x, EXPE 11,0x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 29.77,
+    "Base": 43.61,
+    "Optimista": null
+   },
+   "mercado": 20.55,
+   "lambda": 0.0,
+   "conservador": 13.89,
+   "base": 20.55,
+   "optimista": 24.37,
+   "factor_cons": 0.676,
+   "factor_opt": 1.186,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    13.5,
+    43.61
+   ],
+   "antes": {
+    "J8": 19.84,
+    "J19": 30.39,
+    "J30": 37.67
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 19.11,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 19,1x (EV/FCF × 1,03 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 17.63,
+   "A_p75": 25.18,
+   "A_max": 39.82,
+   "A_excluidos": [
+    [
+     "Dec '18",
+     -0.22,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -9.66,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -29.11,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -118.96,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     1.96,
+     "< 0,4x la mediana (18.5x), caída puntual"
+    ],
+    [
+     "Dec '22",
+     144.49,
+     "> 2,5x la mediana (18.5x)"
+    ]
+   ],
+   "B_mediana": 12.07,
+   "B_ajustada": 10.03,
+   "B_n": 3,
+   "B_regresion": {
+    "a": -1.39,
+    "b": 103.83,
+    "r2": 0.87,
+    "g": 0.11,
+    "n": 3
+   },
+   "B_peers": "DASH 37,0x, BKNG 12,1x, EXPE 6,7x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 38.08,
+    "Base": 55.5,
+    "Optimista": null
+   },
+   "mercado": 14.57,
+   "lambda": 0.0,
+   "conservador": 11.59,
+   "base": 14.57,
+   "optimista": 24.39,
+   "factor_cons": 0.796,
+   "factor_opt": 1.674,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    10.03,
+    55.5
+   ],
+   "antes": {
+    "J8": 15.59,
+    "J19": 19.63,
+    "J30": 32.02
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 17.24,
+   "A_desc": "mediana Dec '23, Dec '25, LTM (etapa actual) = 17,2x",
+   "A_p25": 16.29,
+   "A_p75": 42.83,
+   "A_max": 17.24,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -4.37,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -13.21,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -161.27,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -5.34,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '23",
+     68.41,
+     "> 2,5x la mediana (16.3x)"
+    ]
+   ],
+   "B_mediana": 23.19,
+   "B_ajustada": 20.67,
+   "B_n": 4,
+   "B_regresion": {
+    "a": 9.92,
+    "b": 97.74,
+    "r2": 0.38,
+    "g": 0.11,
+    "n": 4
+   },
+   "B_peers": "ABNB 35,8x, BKNG 18,0x, GRAB 28,4x, EXPE 16,6x",
+   "B_excluidos": [
+    "DASH",
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 32.75,
+    "Base": 50.53,
+    "Optimista": null
+   },
+   "mercado": 18.96,
+   "lambda": 0.0,
+   "conservador": 14.88,
+   "base": 18.96,
+   "optimista": 19.53,
+   "factor_cons": 0.785,
+   "factor_opt": 1.894,
+   "opt_tope_historico": 35.900868273578176,
+   "base_en_rango": true,
+   "rango": [
+    17.24,
+    50.53
+   ],
+   "antes": {
+    "J8": 18.25,
+    "J19": 23.35,
+    "J30": 24.05
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 17.88,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,9x",
+   "A_p25": 16.48,
+   "A_p75": 23.31,
+   "A_max": 37.93,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -10.4,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -28.07,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -110.01,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     127.17,
+     "> 2,5x la mediana (18.4x)"
+    ]
+   ],
+   "B_mediana": 12.79,
+   "B_ajustada": 10.64,
+   "B_n": 3,
+   "B_regresion": {
+    "a": -0.92,
+    "b": 105.06,
+    "r2": 0.86,
+    "g": 0.11,
+    "n": 3
+   },
+   "B_peers": "DASH 37,9x, BKNG 12,8x, EXPE 7,2x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 39.12,
+    "Base": 57.73,
+    "Optimista": null
+   },
+   "mercado": 14.26,
+   "lambda": 0.0,
+   "conservador": 11.31,
+   "base": 14.26,
+   "optimista": 23.42,
+   "factor_cons": 0.793,
+   "factor_opt": 1.643,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    10.64,
+    57.73
+   ],
+   "antes": {
+    "J8": 15.53,
+    "J19": 19.57,
+    "J30": 32.16
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 17.27,
+   "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,3x",
+   "A_p25": 15.94,
+   "A_p75": 22.26,
+   "A_max": 35.57,
+   "A_excluidos": [
+    [
+     "Dec '17",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     0,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -11.82,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     -34.37,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -183.67,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     77.25,
+     "> 2,5x la mediana (17.8x)"
+    ]
+   ],
+   "B_mediana": 12.37,
+   "B_ajustada": 9.84,
+   "B_n": 3,
+   "B_regresion": {
+    "a": 2.0,
+    "b": 71.33,
+    "r2": 0.79,
+    "g": 0.11,
+    "n": 3
+   },
+   "B_peers": "DASH 28,6x, BKNG 12,4x, EXPE 6,1x",
+   "B_excluidos": [
+    "LYFT"
+   ],
+   "C": {
+    "Conservador": 42.16,
+    "Base": 62.76,
+    "Optimista": null
+   },
+   "mercado": 13.56,
+   "lambda": 0.0,
+   "conservador": 10.59,
+   "base": 13.56,
+   "optimista": 19.97,
+   "factor_cons": 0.781,
+   "factor_opt": 1.473,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    9.84,
+    62.76
+   ],
+   "antes": {
+    "J8": 15.31,
+    "J19": 19.55,
+    "J30": 28.8
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   47.26219769101782,
+   88.85408796980948,
+   154.6652341882876
+  ],
+  "multiplos_hoy": [
+   49.24986248678045,
+   83.89486899002443,
+   128.84006199955962
+  ],
+  "ponderado_hoy": [
+   48.4547965684754,
+   85.87855658193845,
+   139.17013087505083
+  ],
+  "brecha_base": -0.055813064914583044,
+  "fila_origen": 41
+ }
+}

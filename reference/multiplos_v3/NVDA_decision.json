@@ -1,0 +1,43 @@
+{
+ "etapa_desde": "Jan '25",
+ "etapa_motivo": "A: los cierres de la hoja hasta Jan '24 dan múltiplos de 0,5-12x porque el precio no está ajustado por los splits 4:1 (jul-2021) y 10:1 (jun-2024); no son representativos. Desde FY25 (Jan '25) la historia es comparable y corresponde a la etapa actual de NVIDIA como proveedor dominante de cómputo para IA.",
+ "historia_excluir": {
+  "*": [
+   "Jan '17",
+   "Jan '18",
+   "Jan '19",
+   "Jan '20",
+   "Jan '21",
+   "Jan '22",
+   "Jan '23",
+   "Jan '24"
+  ]
+ },
+ "max_sin_exclusiones_auto": true,
+ "peers_excluir": {
+  "*": [
+   "ASML",
+   "AMD",
+   "MRVL"
+  ],
+  "EV/EBITDA": [
+   "TSM"
+  ],
+  "EV/FCFF": [
+   "TSM"
+  ],
+  "P/FCFE": [
+   "TSM"
+  ],
+  "P/OCF": [
+   "TSM"
+  ]
+ },
+ "peers_motivo": "B: semiconductores de márgenes altos (Broadcom, Qualcomm, KLA, Lam Research, Texas Instruments, Analog Devices y, en P/E, TSMC), datos de yfinance al 29-sep-2026. Se excluyen ASML (EV/EBITDA de 2.900x: dato roto), AMD y Marvell (utilidades deprimidas por la amortización de adquisiciones: múltiplos de 80-156x que no comparan con los márgenes de ~60% de NVIDIA) y TSMC en los múltiplos de EV y flujo (mezcla dólares del ADR con cifras en dólares taiwaneses).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: NVIDIA crece más que la mediana de los peers, pero ellos ya cotizan a múltiplos de ciclo alto de semiconductores (40-55x utilidades); se toma la mediana tal cual.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la NVIDIA de FY+3 del escenario Base sigue creciendo por encima del mercado, pero con un costo de patrimonio alto (13,5%) que baja el múltiplo justificado.",
+ "evaluacion": "Tras la revisión del DCF del 30-sep-2026 (beta bottom-up de Semiconductor de 1,51 en lugar de la de regresión de 1,90; costo del patrimonio 11,7% en lugar de 13,5%), el DCF da US$178,38 y los múltiplos US$219,02 hoy (23% por encima); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras el DCF usa un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia.",
+ "ticker": "NVDA"
+}

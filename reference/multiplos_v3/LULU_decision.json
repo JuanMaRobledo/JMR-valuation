@@ -1,0 +1,21 @@
+{
+ "etapa_desde": "Feb '26",
+ "etapa_motivo": "A: Lululemon cotizó a 15-40x EBITDA mientras crecía 15-30% al año. En 2026 guió una caída de ventas de 5-7% (US$10.350-10.500 millones), recortó la utilidad por acción a US$9,48-9,73 por aranceles y menor demanda en EE. UU., y cambió de CEO (Heidi O'Neill desde septiembre); la acción cayó 20% tras el 2T. La etapa actual es el cierre Feb '26 y el LTM. Antes el múltiplo Base se había calibrado al DCF; ahora sale de las tres anclas.",
+ "peers_excluir": {
+  "*": [
+   "UAA",
+   "ONON"
+  ]
+ },
+ "peers_motivo": "B: ropa y calzado deportivo (Nike, Deckers, Adidas, Birkenstock), datos de yfinance al 29-sep-2026. Se excluyen Under Armour (con pérdidas, EV/EBITDA inflado) y On Holding (crece 14% con múltiplos de crecimiento que no comparan con una Lululemon que decrece).",
+ "ajuste_peers": -0.1,
+ "ajuste_motivo": "Ajuste −10%: Lululemon decrece 5-7% en 2026 mientras la mediana de los peers crece ~6-13%, y está en transición de CEO.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Lululemon de FY+3 del escenario Base es una marca madura de crecimiento bajo, parecida a la de hoy.",
+ "fuentes": [
+  "[CNBC, 3-sep-2026: Lululemon cae 20% por resultados y guía](https://www.cnbc.com/2026/09/03/lululemon-lulu-q2-2026-earnings.html)",
+  "[Quartz: Lululemon recorta su guía anual](https://qz.com/lululemon-full-year-guidance-cut-product-sales-060526)"
+ ],
+ "evaluacion": "Los múltiplos (US$107,52 hoy) quedan 31% por debajo del DCF (US$155,29). Los múltiplos reflejan la valoración actual de una marca que decrece (~6x EBITDA, ~11x utilidad) y peers ajustados −10%, mientras que el DCF supone que las ventas y los márgenes se recuperan en el horizonte. Mientras las ventas caigan y la nueva CEO no muestre un plan, los múltiplos son la referencia más prudente; el DCF muestra el valor si Lululemon vuelve a crecer.",
+ "ticker": "LULU"
+}

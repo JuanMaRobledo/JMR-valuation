@@ -1,0 +1,266 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '25",
+  "etapa_motivo": "A: Zoetis cotizó a 18-38x EBITDA y 29-57x utilidades como líder de salud animal con crecimiento estable. En 2026 recortó dos veces su guía (ingresos de US$9.680-9.960 millones) por las dudas de seguridad de Librela, la caída de sus anticuerpos para osteoartritis canina (−24%) y menos visitas a veterinarios; la acción cae ~25% en el año. La etapa actual es Dec '25 y el LTM.",
+  "peers_excluir": {
+   "*": [
+    "NEOG"
+   ],
+   "P/E": [
+    "MRK"
+   ],
+   "P/FCFE": [
+    "PAHC"
+   ],
+   "EV/FCFF": [
+    "PAHC"
+   ]
+  },
+  "peers_motivo": "B: salud animal y diagnóstico (IDEXX, Elanco, Phibro, Merck, Abbott), datos de yfinance al 29-sep-2026. Se excluye Neogen (margen casi cero), Merck en P/E (119x por cargos puntuales) y Phibro en los múltiplos de flujo libre (P/FCF de 146x por un año de capex alto).",
+  "ajuste_peers": -0.15,
+  "ajuste_motivo": "Ajuste −15%: Zoetis crece ~2-5% en 2026 (la mitad de IDEXX y Abbott) y tiene el riesgo de Librela; conserva los márgenes más altos del grupo.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Zoetis de FY+3 del escenario Base es una empresa de salud animal de crecimiento medio, parecida a la de hoy.",
+  "fuentes": [
+   "[Yahoo Finance: Zoetis recorta su guía por las dudas sobre Librela](https://finance.yahoo.com/news/zoetis-cuts-guidance-librela-safety-010955054.html)",
+   "[Zacks/TradingView: Zoetis cae 24,8% en el año](https://www.tradingview.com/news/zacks:c838081a4094b:0-zoetis-stock-plummets-24-8-ytd-here-s-what-you-need-to-know/)"
+  ],
+  "evaluacion": "Los múltiplos (US$111,20 hoy) quedan 30% por encima del DCF (US$85,57); el precio (US$71,43) está por debajo de ambos. Los múltiplos suponen que, a FY+3, Zoetis cotiza entre su valoración actual y la de sus peers ajustados (~14x EBITDA, ~23x utilidad), cerca de su múltiplo justificado (~25x utilidad), es decir que el mercado deja atrás las dudas sobre Librela. El DCF y el precio de hoy reflejan que la presión dura más. Si Librela se estabiliza, los múltiplos son razonables; si no, el DCF es la referencia más prudente.",
+  "ticker": "ZTS"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 12.07,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 12,1x",
+   "A_p25": 10.69,
+   "A_p75": 13.46,
+   "A_max": 37.53,
+   "A_excluidos": [],
+   "B_mediana": 14.82,
+   "B_ajustada": 12.59,
+   "B_n": 5,
+   "B_peers": "IDXX 26,5x, ELAN 14,8x, PAHC 8,8x, MRK 14,4x, ABT 17,3x",
+   "B_excluidos": [
+    "NEOG"
+   ],
+   "C": {
+    "Conservador": 12.68,
+    "Base": 18.33,
+    "Optimista": 19.99
+   },
+   "mercado": 12.33,
+   "lambda": 0.25,
+   "conservador": 11.74,
+   "base": 13.83,
+   "optimista": 15.56,
+   "factor_cons": 0.849,
+   "factor_opt": 1.125,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.07,
+    18.33
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 9.296233408464813,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 19.54,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,5x (EV/FCF × 0,93 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 17.05,
+   "A_p75": 22.03,
+   "A_max": 68.31,
+   "A_excluidos": [],
+   "B_mediana": 26.11,
+   "B_ajustada": 22.2,
+   "B_n": 4,
+   "B_peers": "IDXX 33,9x, ELAN 26,0x, MRK 23,8x, ABT 26,3x",
+   "B_excluidos": [
+    "NEOG",
+    "PAHC"
+   ],
+   "C": {
+    "Conservador": 19.66,
+    "Base": 29.66,
+    "Optimista": 32.35
+   },
+   "mercado": 20.87,
+   "lambda": 0.25,
+   "conservador": 19.29,
+   "base": 23.07,
+   "optimista": 25.35,
+   "factor_cons": 0.836,
+   "factor_opt": 1.099,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    19.54,
+    29.66
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 15.688867286559594,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 16.48,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 16,5x",
+   "A_p25": 14.27,
+   "A_p75": 18.69,
+   "A_max": 57.15,
+   "A_excluidos": [
+    [
+     "LTM",
+     12.06,
+     "< 0,4x la mediana (32.6x), caída puntual"
+    ]
+   ],
+   "B_mediana": 32.67,
+   "B_ajustada": 27.77,
+   "B_n": 3,
+   "B_peers": "IDXX 37,5x, PAHC 14,6x, ABT 32,7x",
+   "B_excluidos": [
+    "MRK",
+    "NEOG"
+   ],
+   "C": {
+    "Conservador": 17.2,
+    "Base": 24.65,
+    "Optimista": 26.67
+   },
+   "mercado": 22.12,
+   "lambda": 0.25,
+   "conservador": 17.35,
+   "base": 22.76,
+   "optimista": 24.95,
+   "factor_cons": 0.762,
+   "factor_opt": 1.097,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    16.48,
+    27.77
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 12.062818336162989,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 17.91,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 17,9x",
+   "A_p25": 15.16,
+   "A_p75": 20.67,
+   "A_max": 66.43,
+   "A_excluidos": [],
+   "B_mediana": 26.74,
+   "B_ajustada": 22.73,
+   "B_n": 4,
+   "B_peers": "IDXX 34,0x, ELAN 29,8x, MRK 22,9x, ABT 23,7x",
+   "B_excluidos": [
+    "NEOG",
+    "PAHC"
+   ],
+   "C": {
+    "Conservador": 18.04,
+    "Base": 26.18,
+    "Optimista": 28.26
+   },
+   "mercado": 20.32,
+   "lambda": 0.25,
+   "conservador": 17.53,
+   "base": 21.79,
+   "optimista": 24.59,
+   "factor_cons": 0.805,
+   "factor_opt": 1.129,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    17.91,
+    26.18
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 12.408224852071005,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 14.29,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 14,3x",
+   "A_p25": 12.23,
+   "A_p75": 16.35,
+   "A_max": 52.11,
+   "A_excluidos": [],
+   "B_mediana": 18.46,
+   "B_ajustada": 15.69,
+   "B_n": 5,
+   "B_peers": "IDXX 30,6x, ELAN 18,3x, PAHC 20,9x, MRK 18,4x, ABT 18,5x",
+   "B_excluidos": [
+    "NEOG"
+   ],
+   "C": {
+    "Conservador": 13.16,
+    "Base": 23.83,
+    "Optimista": 26.56
+   },
+   "mercado": 14.99,
+   "lambda": 0.25,
+   "conservador": 13.8,
+   "base": 17.2,
+   "optimista": 19.43,
+   "factor_cons": 0.802,
+   "factor_opt": 1.13,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    14.29,
+    23.83
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 10.168985105645998,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   55.25202868652154,
+   85.57324187237836,
+   99.97335217947962
+  ],
+  "multiplos_hoy": [
+   79.61394831278356,
+   111.19738950679442,
+   132.48155546291875
+  ],
+  "ponderado_hoy": [
+   69.86918046227876,
+   100.94773045302802,
+   119.47827414954311
+  ],
+  "brecha_base": 0.2994411228761349,
+  "fila_origen": 40
+ }
+}

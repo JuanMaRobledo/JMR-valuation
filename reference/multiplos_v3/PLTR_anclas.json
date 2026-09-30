@@ -1,0 +1,547 @@
+{
+ "fcf_a_fcff": 1.2203079723191357,
+ "empresa": "Palantir Technologies Inc. (NASDAQ:PLTR)",
+ "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+ "fecha": "2026-09-29",
+ "ke": 0.12225200000000001,
+ "categoria": "Crecimiento",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '18": 0,
+     "Dec '19": 1.21,
+     "Dec '20": -34.83,
+     "Dec '21": -86.8,
+     "Dec '22": -78.18,
+     "Dec '23": 222.42,
+     "Dec '24": 501.97,
+     "Dec '25": 290.12,
+     "LTM": 151.71
+    },
+    "mediana_5a": 290.12,
+    "mediana_10a": 290.12,
+    "p25": 204.74,
+    "p75": 343.08,
+    "min": 151.71,
+    "max": 501.97,
+    "ultimo_cierre": 290.12,
+    "ltm": 151.71,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -34.83,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -86.8,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -78.18,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      1.21,
+      "< 0,4x la mediana (222.4x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 3,
+    "mediana": 47.68,
+    "p25": 33.41,
+    "p75": 48.03
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": 37.42,
+    "J19": 61.25,
+    "J30": 99.02
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '18": 0,
+     "Dec '19": 3.83,
+     "Dec '20": -130.78,
+     "Dec '21": 107.05,
+     "Dec '22": 59.01,
+     "Dec '23": 48.92,
+     "Dec '24": 150.37,
+     "Dec '25": 198.95,
+     "LTM": 120.31
+    },
+    "mediana_5a": 107.05,
+    "mediana_10a": 107.05,
+    "p25": 71.02,
+    "p75": 142.86,
+    "min": 48.92,
+    "max": 198.95,
+    "ultimo_cierre": 198.95,
+    "ltm": 120.31,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -130.78,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      3.83,
+      "< 0,4x la mediana (107.0x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 8,
+    "mediana": 81.74,
+    "p25": 39.39,
+    "p75": 111.93
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": 36.97,
+    "J19": 65.38,
+    "J30": 106.05
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '18": 0,
+     "Dec '19": 0,
+     "Dec '20": -19.62,
+     "Dec '21": -67.44,
+     "Dec '22": -35.67,
+     "Dec '23": 190.78,
+     "Dec '24": 398.05,
+     "Dec '25": 282.14,
+     "LTM": 147.03
+    },
+    "mediana_5a": 282.14,
+    "mediana_10a": 282.14,
+    "p25": 179.84,
+    "p75": 311.12,
+    "min": 147.03,
+    "max": 398.05,
+    "ultimo_cierre": 282.14,
+    "ltm": 147.03,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -19.62,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -67.44,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -35.67,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 71.8,
+    "p25": 52.67,
+    "p75": 104.25
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": 26.36,
+    "J19": 41.82,
+    "J30": 66.57
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '18": 0,
+     "Dec '19": 0,
+     "Dec '20": -136.65,
+     "Dec '21": 114.91,
+     "Dec '22": 73.35,
+     "Dec '23": 54.19,
+     "Dec '24": 154.95,
+     "Dec '25": 202.37,
+     "LTM": 123.11
+    },
+    "mediana_5a": 114.91,
+    "mediana_10a": 114.91,
+    "p25": 83.74,
+    "p75": 146.99,
+    "min": 54.19,
+    "max": 202.37,
+    "ultimo_cierre": 202.37,
+    "ltm": 123.11,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -136.65,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 7,
+    "mediana": 77.25,
+    "p25": 41.29,
+    "p75": 93.77
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": 25.57,
+    "J19": 42.62,
+    "J30": 67.99
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '18": 0,
+     "Dec '19": 0,
+     "Dec '20": -142.29,
+     "Dec '21": 110.56,
+     "Dec '22": 60.23,
+     "Dec '23": 53.04,
+     "Dec '24": 153.26,
+     "Dec '25": 199.16,
+     "LTM": 121.59
+    },
+    "mediana_5a": 110.56,
+    "mediana_10a": 110.56,
+    "p25": 72.81,
+    "p75": 145.34,
+    "min": 53.04,
+    "max": 199.16,
+    "ultimo_cierre": 199.16,
+    "ltm": 121.59,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '18",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '19",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '20",
+      -142.29,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 9,
+    "mediana": 78.46,
+    "p25": 40.68,
+    "p75": 128.23
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": 25.36,
+    "J19": 42.26,
+    "J30": 67.4
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.12142857142857141,
+   "g_años_4_10": 0.19285714285714284,
+   "g_perpetuidad": 0.05,
+   "wacc_4_10": 0.10941542857142857,
+   "ke": 0.12225200000000001,
+   "roe_fy3": 0.8816726294503905,
+   "fcff_ebitda": 1.01058245077383,
+   "fcfe_ocf": 0.9916155744774421,
+   "multiplos": {
+    "EV/FCFF": null,
+    "P/FCFE": null,
+    "P/E": null,
+    "EV/EBITDA": null,
+    "P/OCF": null
+   }
+  },
+  "Base": {
+   "g": 0.15,
+   "g_años_4_10": 0.25,
+   "g_perpetuidad": 0.05,
+   "wacc_4_10": 0.10941542857142857,
+   "ke": 0.12225200000000001,
+   "roe_fy3": 1.2345793764811694,
+   "fcff_ebitda": 1.017524968121194,
+   "fcfe_ocf": 0.992126267220666,
+   "multiplos": {
+    "EV/FCFF": null,
+    "P/FCFE": null,
+    "P/E": null,
+    "EV/EBITDA": null,
+    "P/OCF": null
+   }
+  },
+  "Optimista": {
+   "g": 0.17857142857142858,
+   "g_años_4_10": 0.30714285714285716,
+   "g_perpetuidad": 0.05,
+   "wacc_4_10": 0.10941542857142857,
+   "ke": 0.12225200000000001,
+   "roe_fy3": 1.6110688038615661,
+   "fcff_ebitda": 1.022568412441196,
+   "fcfe_ocf": 0.9925942798762627,
+   "multiplos": {
+    "EV/FCFF": null,
+    "P/FCFE": null,
+    "P/E": null,
+    "EV/EBITDA": null,
+    "P/OCF": null
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "NOW",
+   "nombre": "ServiceNow, Inc.",
+   "precio": 129.94,
+   "pe": 81.2125,
+   "ev_ebitda": 47.68,
+   "crec_ingresos": 0.24,
+   "margen_operativo": 0.04063,
+   "roe": 0.14244,
+   "p_ocf": 25.30897410700829,
+   "p_fcf": 29.389637838547365,
+   "ev_fcf": 30.2185585578648,
+   "ocf_ttm": 5308000000.0,
+   "fcf_ttm": 4571000000.0,
+   "interest_ttm": 83000000.0,
+   "ev_fcff": 29.791210133352887
+  },
+  {
+   "ticker": "CRWD",
+   "nombre": "CrowdStrike Holdings, Inc.",
+   "precio": 262.74,
+   "pe": 8758.0,
+   "ev_ebitda": 2445.225,
+   "crec_ingresos": 0.258,
+   "margen_operativo": -0.02259,
+   "roe": 0.01461,
+   "p_ocf": 133.40604861116276,
+   "p_fcf": 176.68994394467896,
+   "ev_fcf": 171.61350723727722,
+   "ocf_ttm": 2016615000.0,
+   "fcf_ttm": 1522603000.0,
+   "interest_ttm": 26646000.0,
+   "ev_fcff": 169.27326504537606
+  },
+  {
+   "ticker": "DDOG",
+   "nombre": "Datadog, Inc.",
+   "precio": 268.56,
+   "pe": 526.58826,
+   "ev_ebitda": 1118.563,
+   "crec_ingresos": 0.356,
+   "margen_operativo": 0.00666,
+   "roe": 0.04696,
+   "p_ocf": 78.46258506111303,
+   "p_fcf": 89.89184509246631,
+   "ev_fcf": 86.43571086039958,
+   "ocf_ttm": 1229034000.0,
+   "fcf_ttm": 1072769000.0,
+   "interest_ttm": 12809000.0,
+   "ev_fcff": 85.62800740697024
+  },
+  {
+   "ticker": "SNOW",
+   "nombre": "Snowflake Inc.",
+   "precio": 330.31,
+   "pe": null,
+   "ev_ebitda": -111.991,
+   "crec_ingresos": 0.351,
+   "margen_operativo": -0.17001,
+   "roe": -0.48063,
+   "p_ocf": 92.98471328614414,
+   "p_fcf": 97.64133484822587,
+   "ev_fcf": 97.24038478270342,
+   "ocf_ttm": 1253253000.0,
+   "fcf_ttm": 1193484000.0,
+   "interest_ttm": 8314000.0,
+   "ev_fcff": 96.70817397038591
+  },
+  {
+   "ticker": "NET",
+   "nombre": "Cloudflare, Inc.",
+   "precio": 352.26,
+   "pe": null,
+   "ev_ebitda": -34570.414,
+   "crec_ingresos": 0.359,
+   "margen_operativo": -0.07603,
+   "roe": -0.14425999,
+   "p_ocf": 198.02194343161338,
+   "p_fcf": 398.3594769446729,
+   "ev_fcf": 396.34769888812315,
+   "ocf_ttm": 633428000.0,
+   "fcf_ttm": 314873000.0,
+   "interest_ttm": 11451000.0,
+   "ev_fcff": 385.27865689011605
+  },
+  {
+   "ticker": "MDB",
+   "nombre": "MongoDB, Inc.",
+   "precio": 337.19,
+   "pe": 481.7,
+   "ev_ebitda": 1775.975,
+   "crec_ingresos": 0.305,
+   "margen_operativo": 0.0368,
+   "roe": 0.01989,
+   "p_ocf": 40.68392892534461,
+   "p_fcf": 41.15329239173318,
+   "ev_fcf": 37.334761555036266,
+   "ocf_ttm": 666623000.0,
+   "fcf_ttm": 659020000.0,
+   "interest_ttm": 2366000.0,
+   "ev_fcff": 37.22917062913154
+  },
+  {
+   "ticker": "APP",
+   "nombre": "Applovin Corporation",
+   "precio": 305.66,
+   "pe": 23.494236,
+   "ev_ebitda": 19.135,
+   "crec_ingresos": 0.528,
+   "margen_operativo": 0.77678,
+   "roe": 2.03686,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "error_cashflow": ""
+  },
+  {
+   "ticker": "AXON",
+   "nombre": "Axon Enterprise, Inc.",
+   "precio": 419.58,
+   "pe": 173.38016,
+   "ev_ebitda": 213.461,
+   "crec_ingresos": 0.353,
+   "margen_operativo": 0.0517,
+   "roe": 0.06221,
+   "p_ocf": 128.23340476808536,
+   "p_fcf": 255.91321616913928,
+   "ev_fcf": 264.6079903898132,
+   "ocf_ttm": 265809000.0,
+   "fcf_ttm": 133192000.0,
+   "interest_ttm": 114475000.0,
+   "ev_fcff": 157.60005748852163
+  },
+  {
+   "ticker": "PANW",
+   "nombre": "Palo Alto Networks, Inc.",
+   "precio": 388.41,
+   "pe": 995.9231,
+   "ev_ebitda": 205.273,
+   "crec_ingresos": 0.345,
+   "margen_operativo": 0.05396,
+   "roe": 0.01739,
+   "p_ocf": 69.78242476784537,
+   "p_fcf": 77.24760028397763,
+   "ev_fcf": 77.85694327255045,
+   "ocf_ttm": 4553000000.0,
+   "fcf_ttm": 4113000000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 77.85694327255045
+  },
+  {
+   "ticker": "FTNT",
+   "nombre": "Fortinet, Inc.",
+   "precio": 175.96,
+   "pe": 62.397167,
+   "ev_ebitda": 48.384,
+   "crec_ingresos": 0.256,
+   "margen_operativo": 0.33595002,
+   "roe": 1.17442,
+   "p_ocf": 38.01544866641147,
+   "p_fcf": 41.41939852935515,
+   "ev_fcf": 40.29389079242862,
+   "ocf_ttm": 3396100000.0,
+   "fcf_ttm": 3117000000.0,
+   "interest_ttm": 18000000.0,
+   "ev_fcff": 40.11090169326972
+  }
+ ]
+}

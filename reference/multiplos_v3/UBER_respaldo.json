@@ -1,0 +1,152 @@
+{
+ "EVEBITDA!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Metodología corregida: el escenario BASE usa la mediana de los múltiplos positivos observados en FY2023-FY2025. Conservador = Base × 0,9 y Optimista = Base × 1,1. La columna J conserva la opción de override manual, pero queda vacía por defecto para evitar circularidad con el propio DCF."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación corregida: se eliminaron los overrides derivados del propio DCF porque eran circulares. Los múltiplos de salida se anclan ahora a la mediana positiva FY2023-FY2025 y los escenarios conservador/optimista aplican ±10%."
+  ]
+ ]
+}

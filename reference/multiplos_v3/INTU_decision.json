@@ -1,0 +1,17 @@
+{
+ "etapa_desde": "Jul '26",
+ "etapa_motivo": "A: Intuit cotizó a 30-51x EBITDA y 44-70x utilidades mientras crecía 12-20% con TurboTax, Credit Karma y QuickBooks. En 2026 el mercado empezó a temer que los agentes de IA hagan el trabajo de impuestos y contabilidad por el que cobra; recortó la guía de TurboTax, anunció una reestructuración y su guía FY27 (9-10% de crecimiento, TurboTax 2-3%) decepcionó. La acción cayó ~60% desde su máximo. La etapa actual es el cierre Jul '26 y el LTM.",
+ "peers_excluir": {},
+ "peers_motivo": "B: software de aplicaciones y nómina/finanzas (Adobe, Autodesk, Salesforce, Workday, ADP, Paychex), datos de yfinance al 29-sep-2026.",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: Intuit crece 9-10% con márgenes altos, en línea con la mediana de los peers.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Intuit de FY+3 del escenario Base crece al ~10%, parecida a la de hoy.",
+ "fuentes": [
+  "[Motley Fool, 26-ago-2026: por qué cayó Intuit](https://www.fool.com/investing/2026/08/26/why-intuit-stock-dropped-today/)",
+  "[Intuit: resultados FY26 y guía FY27](https://investors.intuit.com/news-events/press-releases/detail/1320/intuit-reports-fourth-quarter-and-full-year-fiscal-2026-results-sets-fiscal-2027-guidance)",
+  "[Yahoo Finance: Intuit se desplomó por el temor a la IA agéntica](https://finance.yahoo.com/markets/stocks/articles/intuit-crashed-over-agentic-ai-132427512.html)"
+ ],
+ "evaluacion": "Los múltiplos (US$386,84 hoy) quedan 10% por encima del DCF (US$351,86), dentro del rango de ±25%: ambos métodos coinciden. Los múltiplos ya usan la valoración de la etapa actual (~12x EBITDA, ~18x utilidad), con el temor a la IA agéntica incorporado, y los peers de software lo suben un poco.",
+ "ticker": "INTU"
+}

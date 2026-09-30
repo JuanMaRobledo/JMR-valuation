@@ -1,0 +1,42 @@
+{
+ "ticker": "DUOL",
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B27",
+   "antes": 0.19,
+   "despues": 0.12,
+   "motivo": "Reservas +8% en el 2T26 y guía de reservas 2026 de +10,9%; la hoja suponía 19%."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B29",
+   "antes": 0.16,
+   "despues": 0.11,
+   "motivo": "Crecimiento de los años 2-5 alineado con las reservas; antes 16%."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.3,
+   "despues": 0.27,
+   "motivo": "Margen objetivo 27% (antes 30%): SBC de ~15% de los ingresos y costos de IA."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C55",
+   "antes": 0.15,
+   "despues": 0.08,
+   "motivo": "Conservador: 8% anual (antes 15%, por encima de las reservas actuales)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C106",
+   "antes": 0.23,
+   "despues": 0.16,
+   "motivo": "Optimista: 16% anual si la IA reacelera las reservas (antes 23%)."
+  }
+ ]
+}

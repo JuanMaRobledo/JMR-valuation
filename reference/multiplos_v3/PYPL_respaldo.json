@@ -1,0 +1,162 @@
+{
+ "EVEBITDA!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Cómo se fija el múltiplo de salida en las 5 hojas de múltiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MENOR múltiplo POSITIVO de los últimos 4 cierres fiscales (celda J19 de cada hoja; si no hay ninguno positivo, la mediana de 5 años). Es un ancla conservadora: no extrapola múltiplos de pico. Conservador = Base × 0,9 y Optimista = Base × 1,1. Si se escribe un número en J8/J19/J30, reemplaza el cálculo automático (columna E). El precio sale al cierre FY+3, con la deuda neta restada en los múltiplos EV y los dividendos acumulados sumados. Detalle: hoja «Origen de los Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación PYPL: la utilidad neta, el EBITDA y el FCF fueron POSITIVOS los 10 años (no hay cambio de signo), así que el mecanismo nativo (Base = MIN de los últimos 4 años) funciona sin reemplazos. Además es el ancla correcta: PayPal pasó de P/E de 50-66x (2017-2021) a ~10-11x (2025-LTM) y el mínimo de 4 años captura el múltiplo de hoy, no el de la burbuja de 2021. Resultado: P/E Base ~10,3x, EV/EBITDA ~7,7x y EV/FCFF ~10,5x. Contraste: V/MA cotizan a ~22x EV/EBITDA y Adyen a ~13x, por eso el rango x0,9 / x1,1 es conservador."
+  ]
+ ]
+}

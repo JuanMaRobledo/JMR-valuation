@@ -1,0 +1,411 @@
+{
+ "fcf_a_fcff": 0.9796015359605964,
+ "empresa": "EPAM Systems, Inc. (NYSE:EPAM)",
+ "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+ "fecha": "2026-09-29",
+ "ke": 0.10788,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Dec '16": 18.77,
+     "Dec '17": 25.49,
+     "Dec '18": 19.58,
+     "Dec '19": 31.54,
+     "Dec '20": 42.94,
+     "Dec '21": 58.67,
+     "Dec '22": 26.13,
+     "Dec '23": 25.67,
+     "Dec '24": 19.15,
+     "Dec '25": 15.41,
+     "LTM": 7.12
+    },
+    "mediana_5a": 25.67,
+    "mediana_10a": 25.58,
+    "p25": 19.25,
+    "p75": 30.18,
+    "min": 15.41,
+    "max": 58.67,
+    "ultimo_cierre": 15.41,
+    "ltm": 7.12,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "LTM",
+      7.12,
+      "< 0,4x la mediana (25.5x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 8.36,
+    "p25": 6.6,
+    "p75": 14.38
+   },
+   "justificado": {
+    "Conservador": 12.2,
+    "Base": 14.84,
+    "Optimista": 19.17
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 7.115354913630427,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Dec '16": 21.77,
+     "Dec '17": 31.02,
+     "Dec '18": 21.72,
+     "Dec '19": 58.38,
+     "Dec '20": 39.92,
+     "Dec '21": 79.67,
+     "Dec '22": 45.44,
+     "Dec '23": 28.5,
+     "Dec '24": 23.04,
+     "Dec '25": 16.22,
+     "LTM": 10.16
+    },
+    "mediana_5a": 28.5,
+    "mediana_10a": 28.5,
+    "p25": 21.73,
+    "p75": 37.7,
+    "min": 10.16,
+    "max": 58.38,
+    "ultimo_cierre": 16.22,
+    "ltm": 10.16,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '21",
+      79.67,
+      "> 2,5x la mediana (28.5x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 10.15,
+    "p25": 8.46,
+    "p75": 18.84
+   },
+   "justificado": {
+    "Conservador": 17.0,
+    "Base": 21.14,
+    "Optimista": 27.76
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 10.15699958557812,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Dec '16": 34.39,
+     "Dec '17": 81.39,
+     "Dec '18": 27.36,
+     "Dec '19": 46.83,
+     "Dec '20": 63.99,
+     "Dec '21": 82.02,
+     "Dec '22": 46.23,
+     "Dec '23": 42.12,
+     "Dec '24": 29.82,
+     "Dec '25": 30.49,
+     "LTM": 15.16
+    },
+    "mediana_5a": 42.12,
+    "mediana_10a": 44.17,
+    "p25": 31.46,
+    "p75": 59.7,
+    "min": 27.36,
+    "max": 82.02,
+    "ultimo_cierre": 30.49,
+    "ltm": 15.16,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "LTM",
+      15.16,
+      "< 0,4x la mediana (42.1x), caída puntual"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 13.2,
+    "p25": 12.57,
+    "p75": 13.92
+   },
+   "justificado": {
+    "Conservador": 9.96,
+    "Base": 12.2,
+    "Optimista": 15.56
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 15.15826330532213,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Dec '16": 24.25,
+     "Dec '17": 34.38,
+     "Dec '18": 24.65,
+     "Dec '19": 62.26,
+     "Dec '20": 42.27,
+     "Dec '21": 82.4,
+     "Dec '22": 49.44,
+     "Dec '23": 32.17,
+     "Dec '24": 25.25,
+     "Dec '25": 18.16,
+     "LTM": 11.57
+    },
+    "mediana_5a": 32.17,
+    "mediana_10a": 32.17,
+    "p25": 24.35,
+    "p75": 40.3,
+    "min": 11.57,
+    "max": 62.26,
+    "ultimo_cierre": 18.16,
+    "ltm": 11.57,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '21",
+      82.4,
+      "> 2,5x la mediana (32.2x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 9.23,
+    "p25": 6.49,
+    "p75": 10.96
+   },
+   "justificado": {
+    "Conservador": 14.97,
+    "Base": 18.12,
+    "Optimista": 22.81
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 11.572043099875675,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Dec '16": 19.94,
+     "Dec '17": 29.14,
+     "Dec '18": 21.48,
+     "Dec '19": 40.73,
+     "Dec '20": 36.93,
+     "Dec '21": 66.34,
+     "Dec '22": 40.75,
+     "Dec '23": 30.55,
+     "Dec '24": 23.79,
+     "Dec '25": 16.99,
+     "LTM": 10.37
+    },
+    "mediana_5a": 30.55,
+    "mediana_10a": 29.84,
+    "p25": 20.71,
+    "p75": 38.83,
+    "min": 10.37,
+    "max": 66.34,
+    "ultimo_cierre": 16.99,
+    "ltm": 10.37,
+    "regimen_bajo_actual": true,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 8.5,
+    "p25": 5.29,
+    "p75": 10.09
+   },
+   "justificado": {
+    "Conservador": 13.93,
+    "Base": 17.11,
+    "Optimista": 21.78
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 10.365011135857463,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.0385,
+   "g_años_4_10": 0.0271,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.09959671390716095,
+   "ke": 0.10788,
+   "roe_fy3": 0.11509738700621049,
+   "fcff_ebitda": 0.7174731592734198,
+   "fcfe_ocf": 0.9305180300370841,
+   "multiplos": {
+    "EV/FCFF": 16.997640848213944,
+    "P/FCFE": 14.96829057365235,
+    "P/E": 9.961407254446152,
+    "EV/EBITDA": 12.19535107956299,
+    "P/OCF": 13.92826425761764
+   }
+  },
+  "Base": {
+   "g": 0.04992857142857143,
+   "g_años_4_10": 0.04995714285714286,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.09959671390716095,
+   "ke": 0.10788,
+   "roe_fy3": 0.15283397448722952,
+   "fcff_ebitda": 0.7021647813631333,
+   "fcfe_ocf": 0.9445011868580319,
+   "multiplos": {
+    "EV/FCFF": 21.138873310616862,
+    "P/FCFE": 18.117388946408326,
+    "P/E": 12.198709208183345,
+    "EV/EBITDA": 14.842972356412263,
+    "P/OCF": 17.11189536265125
+   }
+  },
+  "Optimista": {
+   "g": 0.06135714285714285,
+   "g_años_4_10": 0.0728142857142857,
+   "g_perpetuidad": 0.0499,
+   "wacc_4_10": 0.09959671390716095,
+   "ke": 0.10788,
+   "roe_fy3": 0.19289437940597395,
+   "fcff_ebitda": 0.6907044427880764,
+   "fcfe_ocf": 0.9545700049207737,
+   "multiplos": {
+    "EV/FCFF": 27.755466751153335,
+    "P/FCFE": 22.813670699502545,
+    "P/E": 15.556944731043142,
+    "EV/EBITDA": 19.170824196678346,
+    "P/OCF": 21.777245751885054
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "ACN",
+   "nombre": "Accenture plc",
+   "precio": 177.12,
+   "pe": 14.135674,
+   "ev_ebitda": 8.361,
+   "crec_ingresos": 0.056,
+   "margen_operativo": 0.16964,
+   "roe": 0.24406,
+   "p_ocf": 8.222303720789732,
+   "p_fcf": 8.614677183538488,
+   "ev_fcf": 8.601511840382626,
+   "ocf_ttm": 13182094000.0,
+   "fcf_ttm": 12581688000.0,
+   "interest_ttm": 265819000.0,
+   "ev_fcff": 8.460303565902144
+  },
+  {
+   "ticker": "GLOB",
+   "nombre": "Globant S.A.",
+   "precio": 33.94,
+   "pe": 13.2578125,
+   "ev_ebitda": 4.749,
+   "crec_ingresos": 0.0,
+   "margen_operativo": 0.04856,
+   "roe": 0.0548,
+   "p_ocf": 4.311312008896133,
+   "p_fcf": 5.7817821841551895,
+   "ev_fcf": 7.328592983023699,
+   "ocf_ttm": 339923000.0,
+   "fcf_ttm": 253471000.0,
+   "interest_ttm": 35487000.0,
+   "ev_fcff": 6.598749489042373
+  },
+  {
+   "ticker": "CTSH",
+   "nombre": "Cognizant Technology Solutions ",
+   "precio": 56.84,
+   "pe": 12.329718,
+   "ev_ebitda": 6.602,
+   "crec_ingresos": 0.045,
+   "margen_operativo": 0.17479,
+   "roe": 0.14924,
+   "p_ocf": 8.777254088447034,
+   "p_fcf": 9.854984671285605,
+   "ev_fcf": 10.256447063895305,
+   "ocf_ttm": 2917000000.0,
+   "fcf_ttm": 2598000000.0,
+   "interest_ttm": 36000000.0,
+   "ev_fcff": 10.145386710528319
+  },
+  {
+   "ticker": "INFY",
+   "nombre": "Infosys Limited",
+   "precio": 10.64,
+   "pe": 13.135803,
+   "ev_ebitda": 18.748,
+   "crec_ingresos": 0.029,
+   "margen_operativo": 0.21173,
+   "roe": 0.32,
+   "p_ocf": 10.531685849462365,
+   "p_fcf": 11.329037459516298,
+   "ev_fcf": 22.090027339642482,
+   "ocf_ttm": 4092000000.0,
+   "fcf_ttm": 3804000000.0,
+   "interest_ttm": 48000000.0,
+   "ev_fcff": 21.871997334666002
+  },
+  {
+   "ticker": "EXLS",
+   "nombre": "ExlService Holdings, Inc.",
+   "precio": 34.58,
+   "pe": 21.886076,
+   "ev_ebitda": 14.38,
+   "crec_ingresos": 0.156,
+   "margen_operativo": 0.14609,
+   "roe": 0.25944,
+   "p_ocf": 15.998267335554823,
+   "p_fcf": 19.06208711586847,
+   "ev_fcf": 19.823348216233512,
+   "ocf_ttm": 327708000.0,
+   "fcf_ttm": 275036000.0,
+   "interest_ttm": 18204000.0,
+   "ev_fcff": 18.838324583103503
+  },
+  {
+   "ticker": "WIT",
+   "nombre": "Wipro Limited",
+   "precio": 1.61,
+   "pe": 12.384616,
+   "ev_ebitda": -0.937,
+   "crec_ingresos": 0.106,
+   "margen_operativo": 0.15698,
+   "roe": 0.16128999,
+   "p_ocf": 0.11290485349135579,
+   "p_fcf": 0.12759260488476973,
+   "ev_fcf": -1.3124677649094418,
+   "ocf_ttm": 141077000000.0,
+   "fcf_ttm": 124837000000.0,
+   "interest_ttm": 8092000000.0,
+   "ev_fcff": -1.2485326365803833
+  }
+ ]
+}

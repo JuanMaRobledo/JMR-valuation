@@ -1,0 +1,485 @@
+{
+ "decision": {
+  "etapa_desde": "Jan '25",
+  "etapa_motivo": "A: los cierres de la hoja hasta Jan '24 dan múltiplos de 0,5-12x porque el precio no está ajustado por los splits 4:1 (jul-2021) y 10:1 (jun-2024); no son representativos. Desde FY25 (Jan '25) la historia es comparable y corresponde a la etapa actual de NVIDIA como proveedor dominante de cómputo para IA.",
+  "historia_excluir": {
+   "*": [
+    "Jan '17",
+    "Jan '18",
+    "Jan '19",
+    "Jan '20",
+    "Jan '21",
+    "Jan '22",
+    "Jan '23",
+    "Jan '24"
+   ]
+  },
+  "max_sin_exclusiones_auto": true,
+  "peers_excluir": {
+   "*": [
+    "ASML",
+    "AMD",
+    "MRVL"
+   ],
+   "EV/EBITDA": [
+    "TSM"
+   ],
+   "EV/FCFF": [
+    "TSM"
+   ],
+   "P/FCFE": [
+    "TSM"
+   ],
+   "P/OCF": [
+    "TSM"
+   ]
+  },
+  "peers_motivo": "B: semiconductores de márgenes altos (Broadcom, Qualcomm, KLA, Lam Research, Texas Instruments, Analog Devices y, en P/E, TSMC), datos de yfinance al 29-sep-2026. Se excluyen ASML (EV/EBITDA de 2.900x: dato roto), AMD y Marvell (utilidades deprimidas por la amortización de adquisiciones: múltiplos de 80-156x que no comparan con los márgenes de ~60% de NVIDIA) y TSMC en los múltiplos de EV y flujo (mezcla dólares del ADR con cifras en dólares taiwaneses).",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Sin ajuste: NVIDIA crece más que la mediana de los peers, pero ellos ya cotizan a múltiplos de ciclo alto de semiconductores (40-55x utilidades); se toma la mediana tal cual.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la NVIDIA de FY+3 del escenario Base sigue creciendo por encima del mercado, pero con un costo de patrimonio alto (13,5%) que baja el múltiplo justificado.",
+  "evaluacion": "Tras la revisión del DCF del 30-sep-2026 (beta bottom-up de Semiconductor de 1,51 en lugar de la de regresión de 1,90; costo del patrimonio 11,7% en lugar de 13,5%), el DCF da US$178,38 y los múltiplos US$219,02 hoy (23% por encima); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras el DCF usa un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia.",
+  "ticker": "NVDA"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 34.24,
+   "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 34,2x",
+   "A_p25": 30.57,
+   "A_p75": 38.08,
+   "A_max": 41.92,
+   "A_excluidos": [
+    [
+     "Jan '18",
+     0.49,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Jan '20",
+     -1.4,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Jan '17",
+     0.87,
+     "< 0,4x la mediana (6.0x), caída puntual"
+    ],
+    [
+     "Jan '19",
+     0.89,
+     "< 0,4x la mediana (6.0x), caída puntual"
+    ],
+    [
+     "Jan '25",
+     41.92,
+     "> 2,5x la mediana (6.0x)"
+    ],
+    [
+     "Jan '26",
+     34.24,
+     "> 2,5x la mediana (6.0x)"
+    ],
+    [
+     "LTM",
+     26.89,
+     "> 2,5x la mediana (6.0x)"
+    ]
+   ],
+   "B_mediana": 30.64,
+   "B_ajustada": 30.64,
+   "B_n": 6,
+   "B_peers": "AVGO 32,6x, QCOM 16,7x, KLAC 42,6x, LRCX 46,7x, TXN 27,4x, ADI 28,7x",
+   "B_excluidos": [
+    "AMD",
+    "ASML",
+    "MRVL",
+    "TSM"
+   ],
+   "C": {
+    "Conservador": 13.5,
+    "Base": 20.59,
+    "Optimista": 47.57
+   },
+   "mercado": 32.44,
+   "lambda": 0.25,
+   "conservador": 24.11,
+   "base": 29.48,
+   "optimista": 41.92,
+   "factor_cons": 0.818,
+   "factor_opt": 1.577,
+   "opt_tope_historico": 46.49237253254272,
+   "base_en_rango": true,
+   "rango": [
+    20.59,
+    34.24
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 4.464208816705336,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 49.42,
+   "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 49,4x (EV/FCF × 1,11 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 47.15,
+   "A_p75": 55.03,
+   "A_max": 54.49,
+   "A_excluidos": [
+    [
+     "Jan '18",
+     0.48,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Jan '20",
+     -0.95,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Jan '17",
+     1.11,
+     "< 0,4x la mediana (7.3x), caída puntual"
+    ],
+    [
+     "Jan '19",
+     0.97,
+     "< 0,4x la mediana (7.3x), caída puntual"
+    ],
+    [
+     "Jan '21",
+     2.54,
+     "< 0,4x la mediana (7.3x), caída puntual"
+    ],
+    [
+     "Jan '25",
+     54.49,
+     "> 2,5x la mediana (7.3x)"
+    ],
+    [
+     "Jan '26",
+     44.41,
+     "> 2,5x la mediana (7.3x)"
+    ],
+    [
+     "LTM",
+     40.33,
+     "> 2,5x la mediana (7.3x)"
+    ]
+   ],
+   "B_mediana": 42.87,
+   "B_ajustada": 42.87,
+   "B_n": 6,
+   "B_peers": "AVGO 40,7x, QCOM 18,3x, KLAC 64,6x, LRCX 80,5x, TXN 45,0x, ADI 38,1x",
+   "B_excluidos": [
+    "AMD",
+    "ASML",
+    "MRVL",
+    "TSM"
+   ],
+   "C": {
+    "Conservador": 16.85,
+    "Base": 27.14,
+    "Optimista": 65.48
+   },
+   "mercado": 46.15,
+   "lambda": 0.25,
+   "conservador": 34.19,
+   "base": 41.4,
+   "optimista": 54.49,
+   "factor_cons": 0.826,
+   "factor_opt": 1.64,
+   "opt_tope_historico": 67.88274769133895,
+   "base_en_rango": true,
+   "rango": [
+    27.14,
+    49.42
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 4.164235607728804,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 38.3,
+   "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 38,3x",
+   "A_p25": 33.45,
+   "A_p75": 43.41,
+   "A_max": 48.51,
+   "A_excluidos": [
+    [
+     "Jan '17",
+     1.09,
+     "< 0,4x la mediana (5.1x), caída puntual"
+    ],
+    [
+     "Jan '18",
+     1.26,
+     "< 0,4x la mediana (5.1x), caída puntual"
+    ],
+    [
+     "Jan '19",
+     0.6,
+     "< 0,4x la mediana (5.1x), caída puntual"
+    ],
+    [
+     "Jan '20",
+     1.38,
+     "< 0,4x la mediana (5.1x), caída puntual"
+    ],
+    [
+     "Jan '21",
+     1.88,
+     "< 0,4x la mediana (5.1x), caída puntual"
+    ],
+    [
+     "Jan '25",
+     48.51,
+     "> 2,5x la mediana (5.1x)"
+    ],
+    [
+     "Jan '26",
+     38.3,
+     "> 2,5x la mediana (5.1x)"
+    ],
+    [
+     "LTM",
+     28.6,
+     "> 2,5x la mediana (5.1x)"
+    ]
+   ],
+   "B_mediana": 45.76,
+   "B_ajustada": 45.76,
+   "B_n": 7,
+   "B_peers": "AVGO 45,8x, QCOM 21,0x, TSM 34,0x, KLAC 53,8x, LRCX 56,3x, TXN 42,9x, ADI 47,3x",
+   "B_excluidos": [
+    "AMD",
+    "ASML",
+    "MRVL"
+   ],
+   "C": {
+    "Conservador": 11.99,
+    "Base": 17.24,
+    "Optimista": 28.23
+   },
+   "mercado": 42.03,
+   "lambda": 0.25,
+   "conservador": 28.77,
+   "base": 35.83,
+   "optimista": 46.29,
+   "factor_cons": 0.803,
+   "factor_opt": 1.292,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    17.24,
+    45.76
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 5.0530215053763445,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 44.4,
+   "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 44,4x",
+   "A_p25": 42.41,
+   "A_p75": 49.44,
+   "A_max": 54.47,
+   "A_excluidos": [
+    [
+     "Jan '17",
+     0.98,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '18",
+     1.05,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '19",
+     0.65,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '20",
+     0.8,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '21",
+     1.38,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '25",
+     54.47,
+     "> 2,5x la mediana (5.4x)"
+    ],
+    [
+     "Jan '26",
+     44.4,
+     "> 2,5x la mediana (5.4x)"
+    ],
+    [
+     "LTM",
+     40.41,
+     "> 2,5x la mediana (5.4x)"
+    ]
+   ],
+   "B_mediana": 45.53,
+   "B_ajustada": 45.53,
+   "B_n": 6,
+   "B_peers": "AVGO 43,0x, QCOM 18,9x, KLAC 68,1x, LRCX 82,9x, TXN 48,0x, ADI 39,1x",
+   "B_excluidos": [
+    "AMD",
+    "ASML",
+    "MRVL",
+    "TSM"
+   ],
+   "C": {
+    "Conservador": 12.86,
+    "Base": 18.23,
+    "Optimista": 30.4
+   },
+   "mercado": 44.96,
+   "lambda": 0.25,
+   "conservador": 32.42,
+   "base": 38.28,
+   "optimista": 53.16,
+   "factor_cons": 0.847,
+   "factor_opt": 1.389,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    18.23,
+    45.53
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 3.9218684580534293,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 44.4,
+   "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 44,4x",
+   "A_p25": 42.38,
+   "A_p75": 49.44,
+   "A_max": 54.47,
+   "A_excluidos": [
+    [
+     "Jan '17",
+     0.98,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '18",
+     1.05,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '19",
+     0.65,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '20",
+     0.8,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '21",
+     1.38,
+     "< 0,4x la mediana (5.4x), caída puntual"
+    ],
+    [
+     "Jan '25",
+     54.47,
+     "> 2,5x la mediana (5.4x)"
+    ],
+    [
+     "Jan '26",
+     44.4,
+     "> 2,5x la mediana (5.4x)"
+    ],
+    [
+     "LTM",
+     40.37,
+     "> 2,5x la mediana (5.4x)"
+    ]
+   ],
+   "B_mediana": 38.25,
+   "B_ajustada": 38.25,
+   "B_n": 6,
+   "B_peers": "AVGO 41,7x, QCOM 15,9x, KLAC 61,9x, LRCX 69,2x, TXN 29,7x, ADI 34,8x",
+   "B_excluidos": [
+    "AMD",
+    "ASML",
+    "MRVL",
+    "TSM"
+   ],
+   "C": {
+    "Conservador": 12.92,
+    "Base": 18.4,
+    "Optimista": 30.8
+   },
+   "mercado": 41.32,
+   "lambda": 0.25,
+   "conservador": 29.26,
+   "base": 35.59,
+   "optimista": 50.7,
+   "factor_cons": 0.822,
+   "factor_opt": 1.425,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    18.4,
+    44.4
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 3.5747782128871486,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   72.62477517933243,
+   162.65094647491398,
+   206.1475149984452
+  ],
+  "multiplos_hoy": [
+   113.97292715301029,
+   212.28165719750058,
+   262.51251249437115
+  ],
+  "ponderado_hoy": [
+   97.43366636353915,
+   192.42937290846595,
+   239.9665134960008
+  ],
+  "brecha_base": 0.3051363167458805,
+  "fila_origen": 40
+ }
+}

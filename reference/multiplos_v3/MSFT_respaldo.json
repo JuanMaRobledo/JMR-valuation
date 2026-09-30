@@ -1,0 +1,152 @@
+{
+ "EVEBITDA!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Para MSFT, empresa rentable y madura, el múltiplo Base usa la mediana observada de los años recientes en cada hoja. Conservador = Base × 0,9 y Optimista = Base × 1,1. Los overrides manuales heredados de PLTR se eliminaron para que los múltiplos se recalculen automáticamente con el historial de MSFT."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación MSFT: utilidades, EBITDA y flujos son positivos en todo el periodo relevante; por ello se usa el historial reciente, sin los overrides implícitos del DCF que eran necesarios para PLTR."
+  ]
+ ]
+}

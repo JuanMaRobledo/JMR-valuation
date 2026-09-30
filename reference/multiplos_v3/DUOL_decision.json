@@ -1,0 +1,37 @@
+{
+ "ticker": "DUOL",
+ "etapa_desde": "Dec '25",
+ "etapa_motivo": "A: Duolingo salió a bolsa en 2021 y hasta 2023 tuvo utilidades cercanas a cero, con múltiplos de 50-650x que reflejan hipercrecimiento; tras la desaceleración de usuarios de 2025 el mercado la re-valoró, así que A usa solo el cierre FY25 y el LTM.",
+ "historia_excluir": {
+  "P/E": [
+   "Dec '25",
+   "LTM"
+  ]
+ },
+ "historia_motivo": "El P/E del FY25 y del LTM se excluye: la utilidad incluye un beneficio tributario único de US$222,7 millones por la liberación de la reserva de valuación de impuestos diferidos (10-Q del 3T25 y 10-K FY2025); sin él, el P/E real es mucho más alto y los años anteriores no son representativos, así que el P/E se ancla en peers y fundamentales.",
+ "peers_excluir": {
+  "*": [
+   "BMBL",
+   "MTCH"
+  ],
+  "P/E": [
+   "PINS"
+  ],
+  "EV/EBITDA": [
+   "PINS"
+  ]
+ },
+ "peers_motivo": "B: suscripción de consumo y plataformas digitales con datos de yfinance al 29-sep-2026: Spotify, Netflix, Reddit y Pinterest. Se excluyen Bumble (ingresos −15%, acción en dificultades) y Match (ingresos en baja): están en otra etapa. Pinterest se excluye de P/E y EV/EBITDA porque su margen operativo GAAP es negativo.",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Ajuste 0%: Duolingo crece más que Spotify y Netflix (Base 19% el año 1 y 16% en los años 2-5, frente a ~13-14%), lo que justificaría una prima de ~10%, pero tiene una desaceleración reciente de usuarios, menor escala y riesgo de sustitución por asistentes de IA para aprender idiomas, que justifican un descuento similar.",
+ "lambda": 0.15,
+ "lambda_motivo": "λ = 0,15: el múltiplo justificado es inestable para Duolingo porque su crecimiento de largo plazo (g ≈ 8-10%) queda a solo 2-3 puntos del WACC y del Ke; en el Optimista no se puede calcular. Por eso pesa poco.",
+ "notas": {
+  "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
+ },
+ "evaluacion": "Tras la revisión del DCF del 30-sep-2026 (crecimiento 12% / 11% según las reservas, margen objetivo 27%), el DCF da US$125,77 y los múltiplos US$132,03 hoy (5% por encima): los dos métodos cuentan ahora una historia parecida y quedan cerca del precio (US$134,30). Los múltiplos anteriores (P/E 66x, P/FCFE 61x, P/OCF 55x) no tenían respaldo en el mercado ni en la historia reciente; ahora salen de peers de hoy, del FY25/LTM y de los fundamentales. Dentro de los múltiplos hay mucha dispersión (EV/EBITDA US$214 frente a P/E US$59) porque el EBITDA ajustado excluye una compensación en acciones de ~15% de los ingresos; los métodos de flujo y el DCF son la referencia.",
+ "fuentes": [
+  "[Duolingo, Form 10-Q del 3T25 (30-sep-2025)](https://www.sec.gov/Archives/edgar/data/1562088/000162828025049743/duol-20250930.htm): liberación de la reserva de valuación, beneficio tributario único de US$222,7 millones.",
+  "[Duolingo, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): beneficio tributario de US$231,7 millones en 2025."
+ ]
+}

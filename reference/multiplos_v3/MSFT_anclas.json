@@ -1,0 +1,382 @@
+{
+ "fcf_a_fcff": 1.2821688196077732,
+ "empresa": "Microsoft Corporation (NASDAQ:MSFT)",
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "fecha": "2026-09-29",
+ "ke": 0.10234636171822228,
+ "categoria": "Software",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": 16.74,
+     "Dec '18": 18.64,
+     "Dec '19": 23.17,
+     "Dec '20": 24.92,
+     "Dec '21": 19.52,
+     "Dec '22": 24.91,
+     "Dec '23": 27.12,
+     "Dec '24": 24.34,
+     "Dec '25": 14.51,
+     "LTM": 19.84
+    },
+    "mediana_5a": 24.34,
+    "mediana_10a": 21.35,
+    "p25": 17.69,
+    "p75": 24.63,
+    "min": 13.69,
+    "max": 27.12,
+    "ultimo_cierre": 14.51,
+    "ltm": 19.84,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 17.14,
+    "p25": 16.61,
+    "p75": 21.76
+   },
+   "justificado": {
+    "Conservador": 9.42,
+    "Base": 13.12,
+    "Optimista": 16.94
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": 22.19,
+     "Dec '18": 25.65,
+     "Dec '19": 32.61,
+     "Dec '20": 35.18,
+     "Dec '21": 28.76,
+     "Dec '22": 41.69,
+     "Dec '23": 45.63,
+     "Dec '24": 51.16,
+     "Dec '25": 41.06,
+     "LTM": 56.13
+    },
+    "mediana_5a": 41.69,
+    "mediana_10a": 33.9,
+    "p25": 27.21,
+    "p75": 43.66,
+    "min": 15.32,
+    "max": 56.13,
+    "ultimo_cierre": 41.06,
+    "ltm": 56.13,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 40.03,
+    "p25": 29.95,
+    "p75": 51.81
+   },
+   "justificado": {
+    "Conservador": 25.53,
+    "Base": 35.69,
+    "Optimista": 44.39
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": 46.95,
+     "Dec '18": 26.81,
+     "Dec '19": 35.33,
+     "Dec '20": 33.65,
+     "Dec '21": 26.61,
+     "Dec '22": 35.18,
+     "Dec '23": 38.71,
+     "Dec '24": 36.47,
+     "Dec '25": 20.78,
+     "LTM": 28.35
+    },
+    "mediana_5a": 35.18,
+    "mediana_10a": 34.42,
+    "p25": 26.71,
+    "p75": 35.9,
+    "min": 20.78,
+    "max": 46.95,
+    "ultimo_cierre": 20.78,
+    "ltm": 28.35,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 21.11,
+    "p25": 20.04,
+    "p75": 26.27
+   },
+   "justificado": {
+    "Conservador": 18.21,
+    "Base": 23.74,
+    "Optimista": 28.21
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": 23.81,
+     "Dec '18": 27.1,
+     "Dec '19": 34.06,
+     "Dec '20": 36.3,
+     "Dec '21": 29.42,
+     "Dec '22": 42.55,
+     "Dec '23": 45.84,
+     "Dec '24": 51.64,
+     "Dec '25": 41.36,
+     "LTM": 56.43
+    },
+    "mediana_5a": 42.55,
+    "mediana_10a": 35.18,
+    "p25": 28.26,
+    "p75": 44.2,
+    "min": 16.93,
+    "max": 56.43,
+    "ultimo_cierre": 41.36,
+    "ltm": 56.43,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 4,
+    "mediana": 40.55,
+    "p25": 29.44,
+    "p75": 53.81
+   },
+   "justificado": {
+    "Conservador": 21.44,
+    "Base": 28.24,
+    "Optimista": 33.46
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": 17.5,
+     "Dec '18": 19.87,
+     "Dec '19": 25.39,
+     "Dec '20": 26.54,
+     "Dec '21": 21.53,
+     "Dec '22": 28.9,
+     "Dec '23": 28.64,
+     "Dec '24": 27.16,
+     "Dec '25": 15.14,
+     "LTM": 20.66
+    },
+    "mediana_5a": 27.16,
+    "mediana_10a": 23.46,
+    "p25": 18.68,
+    "p75": 26.85,
+    "min": 13.45,
+    "max": 28.9,
+    "ultimo_cierre": 15.14,
+    "ltm": 20.66,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 16.18,
+    "p25": 12.44,
+    "p75": 21.14
+   },
+   "justificado": {
+    "Conservador": 9.97,
+    "Base": 13.71,
+    "Optimista": 16.99
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": null,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.053214285714285714,
+   "g_años_4_10": 0.06392857142857143,
+   "g_perpetuidad": 0.0425,
+   "wacc_4_10": 0.09446971908878263,
+   "ke": 0.10234636171822228,
+   "roe_fy3": 0.3532871526397279,
+   "fcff_ebitda": 0.369167866003229,
+   "fcfe_ocf": 0.46527558729812046,
+   "multiplos": {
+    "EV/FCFF": 25.529104885499923,
+    "P/FCFE": 21.436388839541397,
+    "P/E": 18.207507993276497,
+    "EV/EBITDA": 9.424525171552613,
+    "P/OCF": 9.973828406868499
+   }
+  },
+  "Base": {
+   "g": 0.06464285714285714,
+   "g_años_4_10": 0.08678571428571429,
+   "g_perpetuidad": 0.0425,
+   "wacc_4_10": 0.09446971908878263,
+   "ke": 0.10234636171822228,
+   "roe_fy3": 0.4062911421021409,
+   "fcff_ebitda": 0.36757993210779344,
+   "fcfe_ocf": 0.4855230640333961,
+   "multiplos": {
+    "EV/FCFF": 35.694095445675714,
+    "P/FCFE": 28.2372386634445,
+    "P/E": 23.744559409878793,
+    "EV/EBITDA": 13.120433180570577,
+    "P/OCF": 13.709830635717854
+   }
+  },
+  "Optimista": {
+   "g": 0.07035714285714287,
+   "g_años_4_10": 0.09821428571428573,
+   "g_perpetuidad": 0.0425,
+   "wacc_4_10": 0.09446971908878263,
+   "ke": 0.10234636171822228,
+   "roe_fy3": 0.44849456717426817,
+   "fcff_ebitda": 0.38162222053883516,
+   "fcfe_ocf": 0.5078849079439958,
+   "multiplos": {
+    "EV/FCFF": 44.38999518652238,
+    "P/FCFE": 33.45993372033923,
+    "P/E": 28.210939620846144,
+    "EV/EBITDA": 16.940208532788873,
+    "P/OCF": 16.99379535736669
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "GOOG",
+   "nombre": "Alphabet Inc.",
+   "precio": 337.32,
+   "pe": 16.91675,
+   "ev_ebitda": 23.225,
+   "crec_ingresos": 0.242,
+   "margen_operativo": 0.34033,
+   "roe": 0.48676,
+   "p_ocf": 22.21840209449845,
+   "p_fcf": 77.43888665733111,
+   "ev_fcf": 75.49347141674019,
+   "ocf_ttm": 185675000000.0,
+   "fcf_ttm": 53273000000.0,
+   "interest_ttm": 2252000000.0,
+   "ev_fcff": 73.05380110586194
+  },
+  {
+   "ticker": "AAPL",
+   "nombre": "Apple Inc.",
+   "precio": 329.4,
+   "pe": 37.73196,
+   "ev_ebitda": 28.753,
+   "crec_ingresos": 0.164,
+   "margen_operativo": 0.32623002,
+   "roe": 1.4875101,
+   "p_ocf": 32.764394546277366,
+   "p_fcf": 35.17133092928894,
+   "ev_fcf": 35.331885810408025,
+   "ocf_ttm": 146724000000.0,
+   "fcf_ttm": 136683000000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 35.331885810408025
+  },
+  {
+   "ticker": "AMZN",
+   "nombre": "Amazon.com, Inc.",
+   "precio": 246.67,
+   "pe": 19.84473,
+   "ev_ebitda": 16.513,
+   "crec_ingresos": 0.196,
+   "margen_operativo": 0.13689,
+   "roe": 0.30558002,
+   "p_ocf": 17.913162155563484,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": 148531000000.0,
+   "fcf_ttm": -2472000000.0,
+   "interest_ttm": 2017000000.0,
+   "ev_fcff": null
+  },
+  {
+   "ticker": "ORCL",
+   "nombre": "Oracle Corporation",
+   "precio": 137.79,
+   "pe": 21.597178,
+   "ev_ebitda": 15.636,
+   "crec_ingresos": 0.296,
+   "margen_operativo": 0.35632,
+   "roe": 0.41192,
+   "p_ocf": 8.898817767021729,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": 46940000000.0,
+   "fcf_ttm": -28720000000.0,
+   "interest_ttm": 5104000000.0,
+   "ev_fcff": null
+  },
+  {
+   "ticker": "META",
+   "nombre": "Meta Platforms, Inc.",
+   "precio": 738.79,
+   "pe": 27.826365,
+   "ev_ebitda": 17.369,
+   "crec_ingresos": 0.28,
+   "margen_operativo": 0.34827,
+   "roe": 0.29848,
+   "p_ocf": 14.444033607109692,
+   "p_fcf": 45.931082171026944,
+   "ev_fcf": 46.4802532510738,
+   "ocf_ttm": 130301000000.0,
+   "fcf_ttm": 40976000000.0,
+   "interest_ttm": 2028000000.0,
+   "ev_fcff": 44.73130465168495
+  },
+  {
+   "ticker": "CRM",
+   "nombre": "Salesforce, Inc.",
+   "precio": 225.31,
+   "pe": 20.613905,
+   "ev_ebitda": 16.902,
+   "crec_ingresos": 0.108,
+   "margen_operativo": 0.21375,
+   "roe": 0.19381,
+   "p_ocf": 11.773341630984127,
+   "p_fcf": 12.23638185878316,
+   "ev_fcf": 14.386709961198363,
+   "ocf_ttm": 15750000000.0,
+   "fcf_ttm": 15154000000.0,
+   "interest_ttm": 790000000.0,
+   "ev_fcff": 13.817646152071543
+  }
+ ]
+}

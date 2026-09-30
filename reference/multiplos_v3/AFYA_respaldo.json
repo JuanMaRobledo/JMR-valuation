@@ -1,0 +1,162 @@
+{
+ "EVEBITDA!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "=IF(COUNTIF(B19:E19;\">0\")=0;\"\";MINIFS(B19:E19;B19:E19;\">0\"))"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Cómo se fija el múltiplo de salida en las 5 hojas de múltiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MENOR múltiplo POSITIVO de los últimos 4 cierres fiscales (celda J19 de cada hoja; si no hay ninguno positivo, la mediana de 5 años). Es un ancla conservadora: no extrapola múltiplos de pico. Conservador = Base × 0,9 y Optimista = Base × 1,1. Si se escribe un número en J8/J19/J30, reemplaza el cálculo automático (columna E). El precio sale al cierre FY+3, con la deuda neta restada en los múltiplos EV y los dividendos acumulados sumados. Detalle: hoja «Origen de los Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación AFYA: P/E, EV/EBITDA, EV/FCFF, P/OCF y P/FCFE fueron positivos todos los años, así que el mecanismo nativo funciona: el ancla Base es el mínimo positivo de los cierres dic-22 a dic-25, que cae en dic-2025 (P/E 10,4x, EV/EBITDA 6,5x). Son los múltiplos del sector educativo brasileño después del derrumbe, no los de 2019-2020 (P/E 40-53x). Los múltiplos en US$ se calcularon con el tipo de cambio de cada año (el real pasó de 3,94 a 6,18). Para comparar: los pares de B3 (Yduqs, Cogna, Ser, Cruzeiro do Sul, Ânima) cotizan a EV/EBITDA de 4,5-5,2x."
+  ]
+ ]
+}

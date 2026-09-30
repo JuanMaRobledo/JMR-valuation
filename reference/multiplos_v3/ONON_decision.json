@@ -1,0 +1,20 @@
+{
+ "etapa_desde": "LTM",
+ "etapa_motivo": "A: On cotizó a 24-48x EBITDA y 64-96x utilidades como marca de hipercrecimiento. En agosto de 2026 bajó su guía de crecimiento a ~20% (desde ≥23%) tras ventas por debajo de lo esperado en EE. UU., y la acción cayó 22% en un día hasta mínimos de dos años. La etapa actual es solo el LTM.",
+ "fcf_a_fcff": 1.0,
+ "peers_excluir": {},
+ "peers_motivo": "B: ropa y calzado deportivo (Deckers, Nike, Lululemon, Birkenstock, Adidas, Crocs), datos de yfinance al 29-sep-2026.",
+ "ajuste_peers": 0.3,
+ "ajuste_motivo": "Ajuste +30%: On crece ~20% al año frente a 0-13% de los peers, con margen parecido y sin deuda.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la On de FY+3 del escenario Base sigue creciendo más que el sector, pero ya como marca establecida.",
+ "notas": {
+  "EV/FCFF": "La razón FCF después de intereses ÷ FCFF se fija en 1,0: On casi no tiene deuda y su 'Interest / Other' es sobre todo diferencia cambiaria (francos suizos), no intereses."
+ },
+ "fuentes": [
+  "[Yahoo Finance: On cae 22% tras el 2T y baja su guía](https://finance.yahoo.com/markets/stocks/articles/holding-shares-fall-sharply-q2-094135863.html)",
+  "[Trefis, 23-sep-2026: On confirma su guía y recompra US$1.000 millones](https://www.trefis.com/stock/onon/articles/616301/why-did-on-holding-stock-jump-if-its-near-term-guidance-did-not-change/2026-09-23)"
+ ],
+ "evaluacion": "Los múltiplos (US$34,52 hoy) quedan 11% por debajo del DCF (US$38,92), dentro del rango de ±25%: ambos métodos coinciden. Los dos quedan por encima del precio (US$30,00): el mercado descuenta, tras el recorte de la guía, un crecimiento menor que el escenario Base. P/E, P/FCFE y P/OCF dan menos que los múltiplos de EV porque la proyección mantiene 'Interest / Other' en −25% del EBIT (trata como recurrentes las pérdidas cambiarias de 2023 y 2025); conviene revisar ese supuesto.",
+ "ticker": "ONON"
+}

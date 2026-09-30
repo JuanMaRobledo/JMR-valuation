@@ -1,0 +1,29 @@
+{
+ "etapa_desde": "Dec '25",
+ "etapa_motivo": "A: Novo Nordisk cotizó a 16-27x EBITDA y 23-36x utilidades durante el auge de Ozempic y Wegovy. Desde 2025 perdió participación frente a Eli Lilly, bajó precios en EE. UU. (Wegovy a US$349 al mes en pago directo) y en febrero de 2026 guió una caída de ventas de 5-13% (luego −6% a 0%); la acción cayó de US$59 a US$39 en tres semanas. La etapa actual es Dec '25 y el LTM. Se excluye la columna sin fecha de la hoja.",
+ "historia_excluir": {
+  "*": [
+   "—"
+  ]
+ },
+ "peers_excluir": {
+  "*": [
+   "LLY"
+  ],
+  "P/E": [
+   "MRK"
+  ]
+ },
+ "peers_motivo": "B: farmacéuticas grandes (AstraZeneca, Novartis, Sanofi, Merck, Pfizer), datos de yfinance al 29-sep-2026. Se excluye Eli Lilly (crece 48% justamente a costa de Novo; su múltiplo es de otra etapa) y, en P/E, Merck (119x por cargos puntuales de I+D adquirida).",
+ "ajuste_peers": -0.05,
+ "ajuste_motivo": "Ajuste −5%: Novo decrece en 2026 mientras los peers crecen 1-15%, aunque conserva márgenes más altos.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Novo de FY+3 del escenario Base es una farmacéutica de crecimiento bajo con márgenes altos, parecida a la de hoy.",
+ "fuentes": [
+  "[CNBC, 4-feb-2026: Novo cae; el CEO dice que empeorará antes de mejorar](https://www.cnbc.com/2026/02/04/novo-nordisk-stock-ceo-earnings-guidance-ozempic-wegovy.html)",
+  "[CNBC, 4-ago-2026: la guía de Novo decepciona](https://www.cnbc.com/2026/08/04/novo-nordisk-releases-earnings-and-guidance.html)",
+  "[Fierce Pharma: advertencia de ventas y utilidad 2026](https://www.fiercepharma.com/pharma/novo-shares-plummet-sales-profit-warning-26)"
+ ],
+ "evaluacion": "Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.",
+ "ticker": "NVO"
+}

@@ -1,0 +1,40 @@
+{
+ "etapa_desde": "Dec '22",
+ "etapa_motivo": "A: los cierres 2016-2021 de la hoja dan múltiplos de ~1x porque el precio no está ajustado por el split 20:1 de julio de 2022; no son representativos y se usa la historia desde Dec '22. En P/E se quita el LTM: la utilidad del primer semestre de 2026 incluye US$135,9 mil millones de ganancias en acciones de otras empresas, que bajan el P/E a 17x. En EV/FCFF y P/FCFE se quita el LTM: el capex de 2026 (US$195-205 mil millones) deja el flujo de caja en mínimos y el múltiplo en ~78x, un pico transitorio frente al flujo de FY+3.",
+ "historia_excluir": {
+  "*": [
+   "Dec '16",
+   "Dec '17",
+   "Dec '18",
+   "Dec '19",
+   "Dec '20",
+   "Dec '21"
+  ],
+  "P/E": [
+   "LTM"
+  ],
+  "EV/FCFF": [
+   "LTM"
+  ],
+  "P/FCFE": [
+   "LTM"
+  ]
+ },
+ "max_sin_exclusiones_auto": true,
+ "fcf_a_fcff": 1.09,
+ "peers_excluir": {},
+ "peers_motivo": "B: grandes plataformas tecnológicas (Meta, Microsoft, Amazon, Apple, Netflix), datos de yfinance al 29-sep-2026. Amazon no tiene flujo de caja libre positivo y no entra en los múltiplos de flujo.",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: Alphabet crece 24% con margen operativo de 34%, en línea con Meta y Microsoft.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Alphabet de FY+3 del escenario Base sigue siendo una plataforma de crecimiento alto con fuerte inversión en IA, parecida a la de hoy.",
+ "notas": {
+  "EV/FCFF": "EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 1,09 (mediana de los tres cierres reales); el último cierre da 2,70 porque 'Interest / Other' incluye ganancias en inversiones, no intereses."
+ },
+ "fuentes": [
+  "[Alphabet, 8-K 2T26: ganancias en acciones y capex](https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000066/googexhibit991q22026.htm)",
+  "[Yahoo Finance: Alphabet sube el capex a US$205 mil millones y el flujo de caja se vuelve negativo](https://finance.yahoo.com/markets/stocks/articles/alphabet-lifts-capex-205-billion-123356486.html)"
+ ],
+ "evaluacion": "Tras la revisión del DCF del 30-sep-2026 (crecimiento 18% / 11%, sales-to-capital 1,2 por el capex de IA de US$195-205 mil millones, margen 35%, beta 1,07), el DCF da US$206,14 y los múltiplos US$228,88 hoy: 11% por encima, dentro del rango de ±25%, así que ambos métodos coinciden. Los dos quedan muy por debajo del precio (US$339,16): el mercado descuenta más crecimiento de Cloud e IA, y más duración, que el escenario Base. Además, las participaciones de Alphabet en otras empresas (que generaron US$135,9 mil millones de ganancias en el 1S26) no están en los múltiplos operativos; conviene revisar que la hoja las incluya a valor actual como activos no operativos.",
+ "ticker": "GOOG"
+}

@@ -1,0 +1,187 @@
+{
+ "EVEBITDA!J8:J30": [
+  [
+   37.42
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   61.25
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   99.02
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [
+   36.97
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   65.38
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   106.05
+  ]
+ ],
+ "PE!J8:J30": [
+  [
+   26.36
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   41.82
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   66.57
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [
+   25.57
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   42.62
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   67.99
+  ]
+ ],
+ "POCF!J8:J30": [
+  [
+   25.36
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   42.26
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   67.4
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Cómo se fija el múltiplo de salida en las 5 hojas de múltiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MENOR múltiplo POSITIVO de los últimos 4 cierres fiscales (celda J19 de cada hoja; si no hay ninguno positivo, la mediana de 5 años). Es un ancla conservadora: no extrapola múltiplos de pico. Conservador = Base × 0,9 y Optimista = Base × 1,1. Si se escribe un número en J8/J19/J30, reemplaza el cálculo automático (columna E). El precio sale al cierre FY+3, con la deuda neta restada en los múltiplos EV y los dividendos acumulados sumados. Detalle: hoja «Origen de los Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación PLTR: el historial cambia de pérdidas a beneficios, por lo que los mínimos históricos de P/E, EV/EBITDA y múltiplos de flujo no son económicamente comparables. Se reemplazaron por múltiplos implícitos en cada escenario DCF."
+  ]
+ ]
+}

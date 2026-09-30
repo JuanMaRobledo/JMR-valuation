@@ -1,0 +1,187 @@
+{
+ "EVEBITDA!J8:J30": [
+  [
+   10.81
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   13.17
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   18.88
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [
+   13.02
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   15.43
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   21.66
+  ]
+ ],
+ "PE!J8:J30": [
+  [
+   14.61
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   17.82
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   25.58
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [
+   11.57
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   13.77
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   19.39
+  ]
+ ],
+ "POCF!J8:J30": [
+  [
+   12.37
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   14.69
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   20.66
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "En ADBE los cinco múltiplos base J19 fueron fijados con un DCF anterior, no con el mínimo histórico automático. Se usan como escenarios de salida, pero no aportan validación independiente y no se han cotejado con comparables actuales. Ver «Auditoría ADBE 2026-09-28»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación: al igual que UBER (y a diferencia de DUOL), el historial de utilidades/EBITDA de ADBE NO tiene el problema de signo cambiante -- Adobe viene reportando utilidades positivas y estables cada año desde 2016, sin cruzar por cero en ningún momento del historial de 10 años. El ancla automática MIN-de-4-años nativa hubiera funcionado razonablemente acá también (los múltiplos históricos de Adobe son altos pero consistentes: 18x-51x de P/E en los últimos 4 años). Aun así, sobrescribí las 5 celdas Base (columna J) con el múltiplo IMPLÍCITO del propio DCF (Valor de Equity o Enterprise Value del escenario Base, dividido por la métrica proyectada FY+1: Utilidad Neta, EBITDA, FCFF, OCF o FCFE según corresponda) en vez del MIN histórico -- por consistencia metodológica con DUOL/UBER, y para mantener el múltiplo objetivo atado a los supuestos de crecimiento/margen que realmente alimentan el DCF en lugar de a un promedio retrospectivo que incluye años de múltiplos de pico de mercado (2022-2023, 40x-51x) no representativos del perfil de crecimiento actual de la empresa."
+  ]
+ ]
+}

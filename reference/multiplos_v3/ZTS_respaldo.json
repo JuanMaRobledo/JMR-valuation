@@ -1,0 +1,162 @@
+{
+ "EVEBITDA!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L21"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L24"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L13"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L16"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   "='Trailing Valuation'!L15"
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Cómo se fija el múltiplo de salida en las 5 hojas de múltiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MENOR múltiplo POSITIVO de los últimos 4 cierres fiscales (celda J19 de cada hoja; si no hay ninguno positivo, la mediana de 5 años). Es un ancla conservadora: no extrapola múltiplos de pico. Conservador = Base × 0,9 y Optimista = Base × 1,1. Si se escribe un número en J8/J19/J30, reemplaza el cálculo automático (columna E). El precio sale al cierre FY+3, con la deuda neta restada en los múltiplos EV y los dividendos acumulados sumados. Detalle: hoja «Origen de los Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación ZTS: tras reconstruir el EBIT (antes era 0), los cierres 2021-2025 dan P/E de 21-57x y EV/EBITDA de 15-38x. Con la acción en ~US$71 (P/E LTM ~12x, EV/EBITDA ~9x) se activó el override manual del bloque Base (columna J) = múltiplo LTM vivo: supone que el mercado no vuelve a pagar la prima de 'compounder defensivo' mientras no se estabilice el negocio de mascotas en EE.UU."
+  ]
+ ]
+}

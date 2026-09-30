@@ -1,0 +1,235 @@
+{
+ "decision": {
+  "etapa_desde": "Jul '26",
+  "etapa_motivo": "A: Intuit cotizó a 30-51x EBITDA y 44-70x utilidades mientras crecía 12-20% con TurboTax, Credit Karma y QuickBooks. En 2026 el mercado empezó a temer que los agentes de IA hagan el trabajo de impuestos y contabilidad por el que cobra; recortó la guía de TurboTax, anunció una reestructuración y su guía FY27 (9-10% de crecimiento, TurboTax 2-3%) decepcionó. La acción cayó ~60% desde su máximo. La etapa actual es el cierre Jul '26 y el LTM.",
+  "peers_excluir": {},
+  "peers_motivo": "B: software de aplicaciones y nómina/finanzas (Adobe, Autodesk, Salesforce, Workday, ADP, Paychex), datos de yfinance al 29-sep-2026.",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Sin ajuste: Intuit crece 9-10% con márgenes altos, en línea con la mediana de los peers.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Intuit de FY+3 del escenario Base crece al ~10%, parecida a la de hoy.",
+  "fuentes": [
+   "[Motley Fool, 26-ago-2026: por qué cayó Intuit](https://www.fool.com/investing/2026/08/26/why-intuit-stock-dropped-today/)",
+   "[Intuit: resultados FY26 y guía FY27](https://investors.intuit.com/news-events/press-releases/detail/1320/intuit-reports-fourth-quarter-and-full-year-fiscal-2026-results-sets-fiscal-2027-guidance)",
+   "[Yahoo Finance: Intuit se desplomó por el temor a la IA agéntica](https://finance.yahoo.com/markets/stocks/articles/intuit-crashed-over-agentic-ai-132427512.html)"
+  ],
+  "evaluacion": "Los múltiplos (US$386,84 hoy) quedan 10% por encima del DCF (US$351,86), dentro del rango de ±25%: ambos métodos coinciden. Los múltiplos ya usan la valoración de la etapa actual (~12x EBITDA, ~18x utilidad), con el temor a la IA agéntica incorporado, y los peers de software lo suben un poco.",
+  "ticker": "INTU"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 12.26,
+   "A_desc": "mediana Jul '26, LTM (etapa actual) = 12,3x",
+   "A_p25": 11.84,
+   "A_p75": 12.68,
+   "A_max": 50.97,
+   "A_excluidos": [],
+   "B_mediana": 16.66,
+   "B_ajustada": 16.66,
+   "B_n": 6,
+   "B_peers": "ADBE 9,3x, ADSK 18,4x, CRM 16,9x, WDAY 29,0x, ADP 16,4x, PAYX 12,7x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 19.29,
+    "Base": 24.56,
+    "Optimista": 43.84
+   },
+   "mercado": 14.46,
+   "lambda": 0.25,
+   "conservador": 14.54,
+   "base": 16.99,
+   "optimista": 22.08,
+   "factor_cons": 0.856,
+   "factor_opt": 1.3,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.26,
+    24.56
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 13.113054911531421,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 9.47,
+   "A_desc": "mediana Jul '26, LTM (etapa actual) = 9,5x (EV/FCF × 1,02 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 9.14,
+   "A_p75": 9.8,
+   "A_max": 44.83,
+   "A_excluidos": [],
+   "B_mediana": 15.19,
+   "B_ajustada": 15.19,
+   "B_n": 6,
+   "B_peers": "ADBE 8,5x, ADSK 15,0x, CRM 13,8x, WDAY 15,7x, ADP 20,5x, PAYX 15,4x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 25.12,
+    "Base": 31.83,
+    "Optimista": 56.44
+   },
+   "mercado": 12.33,
+   "lambda": 0.25,
+   "conservador": 15.39,
+   "base": 17.21,
+   "optimista": 21.99,
+   "factor_cons": 0.894,
+   "factor_opt": 1.278,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    9.47,
+    31.83
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 17.367256744620512,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 17.95,
+   "A_desc": "mediana Jul '26, LTM (etapa actual) = 18,0x",
+   "A_p25": 17.34,
+   "A_p75": 18.57,
+   "A_max": 70.19,
+   "A_excluidos": [],
+   "B_mediana": 22.27,
+   "B_ajustada": 22.27,
+   "B_n": 6,
+   "B_peers": "ADBE 13,0x, ADSK 26,3x, CRM 20,6x, WDAY 38,8x, ADP 23,9x, PAYX 19,7x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 17.13,
+    "Base": 20.84,
+    "Optimista": 31.96
+   },
+   "mercado": 20.11,
+   "lambda": 0.25,
+   "conservador": 18.15,
+   "base": 20.3,
+   "optimista": 25.18,
+   "factor_cons": 0.894,
+   "factor_opt": 1.24,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    17.95,
+    22.27
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 18.579322820849757,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 9.15,
+   "A_desc": "mediana Jul '26, LTM (etapa actual) = 9,1x",
+   "A_p25": 8.83,
+   "A_p75": 9.47,
+   "A_max": 45.29,
+   "A_excluidos": [],
+   "B_mediana": 15.19,
+   "B_ajustada": 15.19,
+   "B_n": 6,
+   "B_peers": "ADBE 8,8x, ADSK 15,1x, CRM 12,2x, WDAY 16,0x, ADP 21,7x, PAYX 15,2x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 20.79,
+    "Base": 25.23,
+    "Optimista": 38.72
+   },
+   "mercado": 12.17,
+   "lambda": 0.25,
+   "conservador": 13.6,
+   "base": 15.43,
+   "optimista": 18.58,
+   "factor_cons": 0.881,
+   "factor_opt": 1.204,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    9.15,
+    25.23
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 15.429826846125863,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 8.97,
+   "A_desc": "mediana Jul '26, LTM (etapa actual) = 9,0x",
+   "A_p25": 8.65,
+   "A_p75": 9.29,
+   "A_max": 44.55,
+   "A_excluidos": [],
+   "B_mediana": 14.25,
+   "B_ajustada": 14.25,
+   "B_n": 6,
+   "B_peers": "ADBE 8,6x, ADSK 14,7x, CRM 11,8x, WDAY 14,8x, ADP 19,1x, PAYX 13,8x",
+   "B_excluidos": [],
+   "C": {
+    "Conservador": 21.91,
+    "Base": 27.4,
+    "Optimista": 43.85
+   },
+   "mercado": 11.61,
+   "lambda": 0.25,
+   "conservador": 13.62,
+   "base": 15.56,
+   "optimista": 19.04,
+   "factor_cons": 0.876,
+   "factor_opt": 1.224,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    8.97,
+    27.4
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 16.23291006505932,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   267.20283796015445,
+   351.8586578894956,
+   508.06283994143394
+  ],
+  "multiplos_hoy": [
+   309.3272706473824,
+   386.83905083614457,
+   557.1633585613469
+  ],
+  "ponderado_hoy": [
+   284.05261103504563,
+   365.85081506815516,
+   527.7030473893991
+  ],
+  "brecha_base": 0.09941603584935765,
+  "fila_origen": 40
+ }
+}

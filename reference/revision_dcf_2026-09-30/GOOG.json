@@ -1,0 +1,70 @@
+{
+ "ticker": "GOOG",
+ "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B27",
+   "antes": 0.11,
+   "despues": 0.18,
+   "motivo": "Ingresos +24% en el 2T26 (Cloud +82%); la hoja suponía 11%."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B29",
+   "antes": 0.07,
+   "despues": 0.11,
+   "motivo": "Desaceleración con la escala; antes 7%."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.335,
+   "despues": 0.35,
+   "motivo": "Margen operativo de 34% en el 2T26 con Cloud rentable; antes 33,5%."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.5,
+   "despues": 1.2,
+   "motivo": "Capex 2026 de US$195-205 mil M: la reinversión real es muy superior a la de un S/C de 2,5."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 2,
+   "despues": 1.5,
+   "motivo": "El capex se modera pero sigue alto en los años 6-10; antes 2."
+  },
+  {
+   "hoja": "Cost of capital worksheet",
+   "celda": "B23",
+   "antes": 1.05,
+   "despues": 1.07,
+   "motivo": "Beta por ingresos: Advertising (1,01, ~82%) y Software (1,25, ~18%), reapalancada."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C55",
+   "antes": 0.06,
+   "despues": 0.09,
+   "motivo": "Conservador: crecimiento de 9% (antes 6%, por debajo de lo que ya muestra la empresa)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C45",
+   "antes": 0.325,
+   "despues": 0.31,
+   "motivo": "Conservador: la depreciación del capex de IA baja el margen a 31% (antes 32,5%)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C47",
+   "antes": 0.37,
+   "despues": 0.38,
+   "motivo": "Optimista: margen de 38% con Cloud a escala (antes 37%)."
+  }
+ ]
+}

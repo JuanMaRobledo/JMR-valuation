@@ -1,0 +1,290 @@
+{
+ "ticker": "DPZ",
+ "fecha": "2026-09-30",
+ "precio": 292.27,
+ "dcf_base": 349.62557793386236,
+ "g_ref": 0.044,
+ "m_base": 0.2,
+ "s2c": 3,
+ "wacc": 0.07673257057903567,
+ "beta_hoja": 0.9,
+ "beta_bu": 1.0486303953234482,
+ "beta_prop": 1.0486303953234482,
+ "industria": "Restaurant/Dining",
+ "bu_sector": 0.78,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": "$4,500-7,000 Mn",
+  "<(25)": 0.2,
+  "(25)-(20)": 0.2,
+  "(20)-(15)": 0.6,
+  "(15)-(10)": 1.9,
+  "(10)-(5)": 4.5,
+  "(5)-0": 15.6,
+  "0-5": 33.2,
+  "5-10": 23.1,
+  "10-15": 10.5,
+  "15-20": 5.6,
+  "20-25": 2.2,
+  "25-30": 1.1,
+  "30-35": 0.6,
+  "35-40": 0.3,
+  "40-45": 0.2,
+  ">45": 0.3,
+  "Mean": 5.0,
+  "Median": 4.1,
+  "StDev": 8.7,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Crece por tiendas con ventas mismas tiendas bajas",
+   "prob": 0.5,
+   "margen": 0.2,
+   "crec": {
+    "Cadena de suministro": [
+     0.04,
+     0.04,
+     0.045,
+     0.045,
+     0.045
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.04,
+     0.045,
+     0.05,
+     0.05,
+     0.05
+    ]
+   },
+   "cagr": 0.04460579010312138,
+   "rev5": 6144.535994168,
+   "mix5": {
+    "Cadena de suministro": 0.5945907770148393,
+    "Regalías, tiendas propias y fondo de publicidad": 0.40540922298516074
+   },
+   "tasa_base": 0.6408175537152743,
+   "valor_beta_hoja": 351.21433791876984,
+   "valor_beta_prop": 338.5667946479
+  },
+  {
+   "nombre": "B · Los agregadores erosionan la ventaja",
+   "prob": 0.25,
+   "margen": 0.185,
+   "crec": {
+    "Cadena de suministro": [
+     0.02,
+     0.02,
+     0.025,
+     0.025,
+     0.025
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.025,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "cagr": 0.0254192073538424,
+   "rev5": 5600.595268394999,
+   "mix5": {
+    "Cadena de suministro": 0.5921469021721322,
+    "Regalías, tiendas propias y fondo de publicidad": 0.4078530978278679
+   },
+   "tasa_base": 0.7682164631704864,
+   "valor_beta_hoja": 272.4466217857137,
+   "valor_beta_prop": 262.02503866017497
+  },
+  {
+   "nombre": "C · Agregadores e internacional aceleran",
+   "prob": 0.2,
+   "margen": 0.21,
+   "crec": {
+    "Cadena de suministro": [
+     0.06,
+     0.06,
+     0.06,
+     0.055,
+     0.055
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.07,
+     0.07,
+     0.07,
+     0.065,
+     0.06
+    ]
+   },
+   "cagr": 0.06163924563226697,
+   "rev5": 6662.1095914100015,
+   "mix5": {
+    "Cadena de suministro": 0.5889825847241181,
+    "Regalías, tiendas propias y fondo de publicidad": 0.41101741527588187
+   },
+   "tasa_base": 0.5277154090017473,
+   "valor_beta_hoja": 423.86527273920876,
+   "valor_beta_prop": 409.1516808501292
+  },
+  {
+   "nombre": "D · El sistema de franquicias se debilita",
+   "prob": 0.05,
+   "margen": 0.17,
+   "crec": {
+    "Cadena de suministro": [
+     0,
+     0,
+     0.01,
+     0.01,
+     0.01
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0,
+     0.01,
+     0.01,
+     0.01,
+     0.01
+    ]
+   },
+   "cagr": 0.006793185458554563,
+   "rev5": 5110.0868998,
+   "mix5": {
+    "Cadena de suministro": 0.596798257994274,
+    "Regalías, tiendas propias y fondo de publicidad": 0.403201742005726
+   },
+   "tasa_base": 0.8278052613693098,
+   "valor_beta_hoja": 206.49816797088855,
+   "valor_beta_prop": 197.93440240295587
+  }
+ ],
+ "valor_esperado_beta_hoja": 338.8167873521995,
+ "valor_esperado_beta_prop": 326.5167132791674,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 0.9,
+   "ke": 0.09004000000000001,
+   "wacc": 0.07673257057903567,
+   "dcf_base": 349.62557793386236
+  },
+  {
+   "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
+   "beta": 1.0486303953234482,
+   "ke": 0.0966689156314258,
+   "wacc": 0.081312859935752,
+   "dcf_base": 337.0241155077875
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.003999999999999997,
+   0.023999999999999997,
+   0.044,
+   0.064,
+   0.08399999999999999
+  ],
+  "m": [
+   0.16,
+   0.18000000000000002,
+   0.2,
+   0.22,
+   0.24000000000000002
+  ],
+  "v": [
+   [
+    183.576068262074,
+    219.49641804978322,
+    255.41676783749236,
+    291.3371176252015,
+    327.2574674129107
+   ],
+   [
+    218.37077582360925,
+    259.1725821704293,
+    299.9743885172489,
+    340.7761948640688,
+    381.5780012108887
+   ],
+   [
+    257.0921858711811,
+    303.3588819025218,
+    349.62557793386236,
+    395.892273965203,
+    442.1589699965437
+   ],
+   [
+    300.1400868783487,
+    352.5148124419413,
+    404.88953800553367,
+    457.26426356912606,
+    509.63898913271845
+   ],
+   [
+    347.9482647242189,
+    407.1389441452143,
+    466.32962356620925,
+    525.5203029872044,
+    584.7109824081997
+   ]
+  ]
+ },
+ "inverso": [
+  {
+   "beta": 0.9,
+   "margen": 0.19,
+   "g": 0.03,
+   "tasa_base": 0.7377999999999999
+  },
+  {
+   "beta": 0.9,
+   "margen": 0.2,
+   "g": 0.022,
+   "tasa_base": 0.7803599999999998
+  },
+  {
+   "beta": 0.9,
+   "margen": 0.21,
+   "g": 0.014,
+   "tasa_base": 0.8053199999999998
+  },
+  {
+   "beta": 1.0486303953234482,
+   "margen": 0.19,
+   "g": 0.036,
+   "tasa_base": 0.6979599999999999
+  },
+  {
+   "beta": 1.0486303953234482,
+   "margen": 0.2,
+   "g": 0.026,
+   "tasa_base": 0.7643599999999999
+  },
+  {
+   "beta": 1.0486303953234482,
+   "margen": 0.21,
+   "g": 0.018,
+   "tasa_base": 0.7928399999999999
+  }
+ ],
+ "ingresos_ltm": 4940
+}

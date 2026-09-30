@@ -1,0 +1,162 @@
+{
+ "EVEBITDA!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   16
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   20
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   25
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   20
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "POCF!J8:J30": [
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   18
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Los cinco múltiplos base en J19 son supuestos manuales: EV/FCFF 20x; P/OCF 18x; P/E 25x; P/FCFE 20x; EV/EBITDA 16x. Conservador = base ×0,9 y optimista = base ×1,1. Salida FY+3 ilustrativa, desde LTM junio 2026; conversión total de preferentes supuesta (286,5 M acciones). Los múltiplos no están validados por comparables actuales."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Revisión 28-sep-2026: las proyecciones parten de ingresos LTM y comparten base de acciones as-converted con el DCF. La tasa normalizada es 24%; no se presupone nueva deuda. Las preferentes de PepsiCo no están convertidas hoy y tienen derechos económicos propios: resultados solo ilustrativos hasta modelar cada serie, dividendos y fecha de conversión. Los múltiplos J19 siguen siendo elecciones manuales, no resultados históricos automáticos."
+  ]
+ ]
+}

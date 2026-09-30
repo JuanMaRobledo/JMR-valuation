@@ -1,0 +1,187 @@
+{
+ "EVEBITDA!J8:J30": [
+  [
+   22.32
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   24.8
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   27.28
+  ]
+ ],
+ "EVFCFF!J8:J30": [
+  [
+   25.4
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   28.22
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   31.04
+  ]
+ ],
+ "PE!J8:J30": [
+  [
+   59.4
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   66
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   72.6
+  ]
+ ],
+ "PFCFE!J8:J30": [
+  [
+   55.36
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   61.51
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   67.66
+  ]
+ ],
+ "POCF!J8:J30": [
+  [
+   49.25
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   54.72
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+   "Cambiar múltiplo"
+  ],
+  [
+   60.19
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A3": [
+  [
+   "Cómo se fija el múltiplo de salida en las 5 hojas de múltiplos (EVFCFF, POCF, PE, PFCFE, EVEBITDA): el escenario BASE usa el MENOR múltiplo POSITIVO de los últimos 4 cierres fiscales (celda J19 de cada hoja; si no hay ninguno positivo, la mediana de 5 años). Es un ancla conservadora: no extrapola múltiplos de pico. Conservador = Base × 0,9 y Optimista = Base × 1,1. Si se escribe un número en J8/J19/J30, reemplaza el cálculo automático (columna E). El precio sale al cierre FY+3, con la deuda neta restada en los múltiplos EV y los dividendos acumulados sumados. Detalle: hoja «Origen de los Supuestos»."
+  ]
+ ],
+ "'Supuestos de los Múltiplos'!A12": [
+  [
+   "Evaluación: el ancla automatica MIN-de-4-años NO funciona para DUOL en P/E y EV/EBITDA, y las tuve que sobrescribir manualmente (columna J, marcado \"Sí — revisar\" arriba). Duolingo tuvo ganancias/EBITDA NEGATIVOS hasta 2022-2023 y recien 2025 fue su primer año de rentabilidad real -- eso hace que el P/E historico oscile entre -47x y +648x, y el EV/EBITDA entre -1.584x y +198x (el denominador cruzo por cero), volviendo inutilizable cualquier estadistica sobre esa serie (promedio, mediana, min, max quedan todos distorsionados, ver columnas de la derecha). Reemplace el ancla Base de esos dos metodos por el multiplo LTM actual (P/E=18,11x, EV/EBITDA=36,71x), que es la unica lectura confiable dado que la empresa ya es rentable HOY. EV/FCFF, P/OCF y P/FCFE no tuvieron este problema porque el flujo de caja de Duolingo fue positivo durante toda su historia aunque la utilidad contable no lo fuera (patron tipico de negocios de suscripcion con ingresos diferidos) -- esos tres quedaron en modo automatico sin necesidad de ajuste."
+  ]
+ ]
+}

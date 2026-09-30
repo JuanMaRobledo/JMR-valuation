@@ -1,0 +1,281 @@
+{
+ "decision": {
+  "etapa_desde": "LTM",
+  "etapa_motivo": "A: EPAM cotizó a 15-59x EBITDA mientras crecía 15-25% al año como proveedor de ingeniería de software. En febrero de 2026 guió un crecimiento orgánico de solo 3-6% y luego lo bajó a 3,2-4,2%; el mercado lo lee como presión estructural de los asistentes de código con IA sobre la subcontratación tradicional, y la acción cayó a mínimos. La etapa actual es solo el LTM.",
+  "peers_excluir": {
+   "*": [
+    "WIT"
+   ],
+   "EV/EBITDA": [
+    "INFY"
+   ],
+   "EV/FCFF": [
+    "INFY"
+   ]
+  },
+  "peers_motivo": "B: servicios de TI y consultoría (Accenture, Globant, Cognizant, Infosys, ExlService), datos de yfinance al 29-sep-2026. Se excluye Wipro (sus cifras mezclan rupias y dólares: EV/EBITDA negativo) y, en los múltiplos de EV, Infosys (EV/EBITDA de 18,8x incoherente con su P/E de 13x).",
+  "ajuste_peers": 0.0,
+  "ajuste_motivo": "Sin ajuste: EPAM crece como Accenture y Cognizant (3-6%), con menor margen operativo pero sin deuda y con recompras; las diferencias se compensan.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la EPAM de FY+3 del escenario Base es una empresa de servicios de TI de crecimiento bajo, parecida a la de hoy.",
+  "fuentes": [
+   "[Trefis, 20-feb-2026: EPAM −17% por una guía 2026 cauta](https://www.trefis.com/stock/epam/articles/591182/epam-stock-17-cautious-2026-guidance-ignites-investor-revolt/2026-02-20)",
+   "[Finimize: EPAM recorta su guía 2026](https://finimize.com/content/epam-cuts-its-2026-revenue-outlook-as-ai-fears-linger)",
+   "[Morningstar: EPAM vulnerable a la disrupción de la IA](https://www.morningstar.com/company-reports/1450663-no-moat-epam-systems-is-vulnerable-to-ais-potential-disruption)"
+  ],
+  "evaluacion": "Los múltiplos (US$109,37 hoy) quedan 26% por debajo del DCF (US$148,70). Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA, ~13-15x utilidad), mientras que el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente; si el crecimiento orgánico vuelve a ~5-8% con los ingresos de IA, el DCF se acerca más al valor.",
+  "ticker": "EPAM"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 7.12,
+   "A_desc": "mediana LTM (etapa actual) = 7,1x",
+   "A_p25": 7.12,
+   "A_p75": 7.12,
+   "A_max": 58.67,
+   "A_excluidos": [
+    [
+     "LTM",
+     7.12,
+     "< 0,4x la mediana (25.5x), caída puntual"
+    ]
+   ],
+   "B_mediana": 7.48,
+   "B_ajustada": 7.48,
+   "B_n": 4,
+   "B_peers": "ACN 8,4x, GLOB 4,7x, CTSH 6,6x, EXLS 14,4x",
+   "B_excluidos": [
+    "INFY",
+    "WIT"
+   ],
+   "C": {
+    "Conservador": 12.2,
+    "Base": 14.84,
+    "Optimista": 19.17
+   },
+   "mercado": 7.3,
+   "lambda": 0.25,
+   "conservador": 8.09,
+   "base": 9.19,
+   "optimista": 11.05,
+   "factor_cons": 0.881,
+   "factor_opt": 1.203,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    7.12,
+    14.84
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 7.115354913630427,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 9.95,
+   "A_desc": "mediana LTM (etapa actual) = 10,0x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 9.95,
+   "A_p75": 9.95,
+   "A_max": 58.38,
+   "A_excluidos": [
+    [
+     "Dec '21",
+     79.67,
+     "> 2,5x la mediana (28.5x)"
+    ]
+   ],
+   "B_mediana": 9.3,
+   "B_ajustada": 9.3,
+   "B_n": 4,
+   "B_peers": "ACN 8,5x, GLOB 6,6x, CTSH 10,1x, EXLS 18,8x",
+   "B_excluidos": [
+    "INFY",
+    "WIT"
+   ],
+   "C": {
+    "Conservador": 17.0,
+    "Base": 21.14,
+    "Optimista": 27.76
+   },
+   "mercado": 9.63,
+   "lambda": 0.25,
+   "conservador": 11.1,
+   "base": 12.51,
+   "optimista": 15.16,
+   "factor_cons": 0.888,
+   "factor_opt": 1.212,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    9.3,
+    21.14
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 10.15699958557812,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 15.16,
+   "A_desc": "mediana LTM (etapa actual) = 15,2x",
+   "A_p25": 15.16,
+   "A_p75": 15.16,
+   "A_max": 82.02,
+   "A_excluidos": [
+    [
+     "LTM",
+     15.16,
+     "< 0,4x la mediana (42.1x), caída puntual"
+    ]
+   ],
+   "B_mediana": 13.26,
+   "B_ajustada": 13.26,
+   "B_n": 5,
+   "B_peers": "ACN 14,1x, GLOB 13,3x, CTSH 12,3x, INFY 13,1x, EXLS 21,9x",
+   "B_excluidos": [
+    "WIT"
+   ],
+   "C": {
+    "Conservador": 9.96,
+    "Base": 12.2,
+    "Optimista": 15.56
+   },
+   "mercado": 14.21,
+   "lambda": 0.25,
+   "conservador": 12.83,
+   "base": 13.71,
+   "optimista": 15.27,
+   "factor_cons": 0.936,
+   "factor_opt": 1.114,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    12.2,
+    15.16
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 15.15826330532213,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 11.57,
+   "A_desc": "mediana LTM (etapa actual) = 11,6x",
+   "A_p25": 11.57,
+   "A_p75": 11.57,
+   "A_max": 62.26,
+   "A_excluidos": [
+    [
+     "Dec '21",
+     82.4,
+     "> 2,5x la mediana (32.2x)"
+    ]
+   ],
+   "B_mediana": 9.85,
+   "B_ajustada": 9.85,
+   "B_n": 5,
+   "B_peers": "ACN 8,6x, GLOB 5,8x, CTSH 9,9x, INFY 11,3x, EXLS 19,1x",
+   "B_excluidos": [
+    "WIT"
+   ],
+   "C": {
+    "Conservador": 14.97,
+    "Base": 18.12,
+    "Optimista": 22.81
+   },
+   "mercado": 10.71,
+   "lambda": 0.25,
+   "conservador": 11.31,
+   "base": 12.56,
+   "optimista": 14.27,
+   "factor_cons": 0.9,
+   "factor_opt": 1.136,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    9.85,
+    18.12
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 11.572043099875675,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 10.37,
+   "A_desc": "mediana LTM (etapa actual) = 10,4x",
+   "A_p25": 10.37,
+   "A_p75": 10.37,
+   "A_max": 66.34,
+   "A_excluidos": [],
+   "B_mediana": 8.78,
+   "B_ajustada": 8.78,
+   "B_n": 5,
+   "B_peers": "ACN 8,2x, GLOB 4,3x, CTSH 8,8x, INFY 10,5x, EXLS 16,0x",
+   "B_excluidos": [
+    "WIT"
+   ],
+   "C": {
+    "Conservador": 13.93,
+    "Base": 17.11,
+    "Optimista": 21.78
+   },
+   "mercado": 9.57,
+   "lambda": 0.25,
+   "conservador": 10.51,
+   "base": 11.46,
+   "optimista": 13.26,
+   "factor_cons": 0.917,
+   "factor_opt": 1.158,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    8.78,
+    17.11
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 10.365011135857463,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   101.9577232603108,
+   148.69575964240113,
+   208.96641083538836
+  ],
+  "multiplos_hoy": [
+   86.28914532568481,
+   109.37150931073234,
+   143.99154301053807
+  ],
+  "ponderado_hoy": [
+   92.55657649953523,
+   125.10120944339987,
+   169.9814901404782
+  ],
+  "brecha_base": -0.26446114150289024,
+  "fila_origen": 40
+ }
+}

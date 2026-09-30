@@ -1,0 +1,16 @@
+{
+ "etapa_desde": null,
+ "etapa_motivo": "A: Domino's es un franquiciador maduro desde hace una década con múltiplos estables (EV/EBITDA 18-30x); no hubo cambio de etapa del negocio, así que A usa los últimos cinco cierres y el LTM.",
+ "peers_excluir": {
+  "*": [
+   "PZZA"
+  ]
+ },
+ "peers_motivo": "B: franquiciadores y cadenas de restaurantes (Yum!, McDonald's, Restaurant Brands, Wingstop, Darden), datos de yfinance al 29-sep-2026. Se excluye Papa John's (ingresos −9%, reestructuración).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Ajuste 0%: modelo de franquicia asset-light y crecimiento similares a Yum! y Restaurant Brands.",
+ "lambda": 0.0,
+ "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 18,4% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
+ "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$422,49 hoy) quedaban 86% por encima del DCF (US$226,68). La brecha venía sobre todo del DCF, que suponía que después del año 10 Domino's gana solo su costo de capital. Eso es incoherente con una franquicia de marca que opera con muy poco capital (ROIC actual de 99%). Ahora el DCF usa el ROIC de la industria (18,4%) y da US$349,63. Los múltiplos dejan fuera el justificado y dan US$408,88, 17% por encima del DCF, dentro del rango de ±25%. La recta de peers por crecimiento no se usa porque su R² va de 0 a 0,5. Los dos métodos quedan por encima del precio (US$292,27).",
+ "ticker": "DPZ"
+}

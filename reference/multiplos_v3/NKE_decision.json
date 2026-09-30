@@ -1,0 +1,25 @@
+{
+ "etapa_desde": "May '25",
+ "etapa_motivo": "A: Nike cotizó a 20-42x EBITDA mientras crecía y ganaba margen con la venta directa. Desde FY25 está en reestructuración: las ventas cayeron ~10% en FY25 y quedaron planas en FY26 (US$46.400 millones, −2% sin efecto cambiario), China cae 12% y el CEO Elliott Hill reconoce que la recuperación toma más de lo esperado. La etapa actual es May '25, May '26 y el LTM.",
+ "peers_excluir": {
+  "*": [
+   "UAA",
+   "VFC"
+  ]
+ },
+ "peers_motivo": "B: ropa y calzado deportivo (Adidas, Lululemon, Deckers, On Holding), datos de yfinance al 29-sep-2026. Se excluyen Under Armour y VF Corp (margen operativo negativo; sus múltiplos no comparan).",
+ "ajuste_peers": 0.0,
+ "ajuste_motivo": "Sin ajuste: Nike es la marca más grande del sector, pero hoy no crece; queda entre On/Adidas (crecen) y Lululemon (decrece).",
+ "lambda": 0.0,
+ "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 13,3% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
+ "fuentes": [
+  "[Nike: resultados FY26](https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2026-fourth-quarter-and-full-year-results)",
+  "[CNBC, 30-jun-2026: Nike supera estimados pero China cae 12%](https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html)"
+ ],
+ "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$36,79 hoy) quedaban 24% por encima del DCF (US$29,76). Los múltiplos pagaban en FY+3 la historia de Nike cuando crecía y además se acercaban al justificado. El DCF suponía que después del año 10 el ROIC baja al costo de capital. Ahora el DCF usa un ROIC terminal de 13,3% (el actual, con el margen deprimido y por debajo del de la industria) y da US$36,76. Los múltiplos ajustan los peers por el crecimiento de ~3,5% de FY+3 y dejan fuera el justificado: dan US$34,03, 7% por debajo del DCF. Los dos métodos coinciden con el precio (US$36,39); el mercado ya descuenta una recuperación lenta.",
+ "ticker": "NKE",
+ "peers_crecimiento": {
+  "g": 0.035,
+  "motivo": "B ajustado por crecimiento (30-sep-2026): la hoja supone que Nike crece ~3,5% en FY+3. Entre los peers, On y Deckers crecen más y cotizan más caros, mientras que Lululemon decrece y cotiza más barato. El múltiplo sube con el crecimiento (R² de 0,7 a 0,9, aunque con solo cuatro peers). Por eso la mediana de hoy se corrige con la recta evaluada en 3,5%."
+ }
+}

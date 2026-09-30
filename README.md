@@ -72,6 +72,19 @@ PYTHONPATH=.:scripts python scripts/model_presentation.py --sheet-id <ID>
 
 Detalle de las reglas y de cada corrección: `Modelo-JMR/modelo/METODOLOGIA.md`, anexo
 «Modelo en Google Sheets».
+- `discount_multiples.py` (29-sep-2026) reconstruye en la plantilla maestra y en cada valoración la
+  hoja «Descuento de múltiplos»: cada múltiplo a valor presente en 1, 2 y 3 años,
+  `(precio FY+n + dividendos acumulados) ÷ (1 + Ke)^n`, consolidado por método (promedio de los 3
+  horizontes o solo 3 años) y ponderado con el DCF hoy; el Resumen (filas 30-47) muestra DCF,
+  múltiplos consolidados y ponderado por separado. Respaldo en
+  `reference/backups/descuento_multiples_2026-09-29/`, resultados y chequeo VP3 < FY+3 en
+  `reference/descuento_multiples_2026-09-29_informe.json`. `--check-only` solo verifica.
+  `patch_saved_present_value.py` lleva esos valores a las valoraciones guardadas del visor sin tocar
+  el resto del registro, y `sync_research_present_value.py` rehace la tabla de valor presente y las
+  cifras citadas en los análisis fundamentales guardados. El script detecta la estructura de cada hoja
+  (nombres 'EVEBITDA' / 'EV/EBITDA' / 'EV∕EBITDA', filas, Ke, MOS, separador ',' o ';'), así que
+  también cubre las versiones de julio-agosto (V3-V6, ONON, NFLX, Motor v2) y los respaldos;
+  `reference/descuento_multiples_targets*.json` lista todas las hojas procesadas.
 - `regen_saved_valuations.py` vuelve a generar una valoración guardada del visor web
   (`Modelo-JMR-datos/valoraciones/*.json`) desde la hoja corregida: carga el xlsx en
   `docs/visor.html` con Playwright e intercepta el guardado. Conserva el análisis fundamental

@@ -1,0 +1,258 @@
+{
+ "decision": {
+  "etapa_desde": "Dec '25",
+  "etapa_motivo": "A: Novo Nordisk cotizó a 16-27x EBITDA y 23-36x utilidades durante el auge de Ozempic y Wegovy. Desde 2025 perdió participación frente a Eli Lilly, bajó precios en EE. UU. (Wegovy a US$349 al mes en pago directo) y en febrero de 2026 guió una caída de ventas de 5-13% (luego −6% a 0%); la acción cayó de US$59 a US$39 en tres semanas. La etapa actual es Dec '25 y el LTM. Se excluye la columna sin fecha de la hoja.",
+  "historia_excluir": {
+   "*": [
+    "—"
+   ]
+  },
+  "peers_excluir": {
+   "*": [
+    "LLY"
+   ],
+   "P/E": [
+    "MRK"
+   ]
+  },
+  "peers_motivo": "B: farmacéuticas grandes (AstraZeneca, Novartis, Sanofi, Merck, Pfizer), datos de yfinance al 29-sep-2026. Se excluye Eli Lilly (crece 48% justamente a costa de Novo; su múltiplo es de otra etapa) y, en P/E, Merck (119x por cargos puntuales de I+D adquirida).",
+  "ajuste_peers": -0.05,
+  "ajuste_motivo": "Ajuste −5%: Novo decrece en 2026 mientras los peers crecen 1-15%, aunque conserva márgenes más altos.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la Novo de FY+3 del escenario Base es una farmacéutica de crecimiento bajo con márgenes altos, parecida a la de hoy.",
+  "fuentes": [
+   "[CNBC, 4-feb-2026: Novo cae; el CEO dice que empeorará antes de mejorar](https://www.cnbc.com/2026/02/04/novo-nordisk-stock-ceo-earnings-guidance-ozempic-wegovy.html)",
+   "[CNBC, 4-ago-2026: la guía de Novo decepciona](https://www.cnbc.com/2026/08/04/novo-nordisk-releases-earnings-and-guidance.html)",
+   "[Fierce Pharma: advertencia de ventas y utilidad 2026](https://www.fiercepharma.com/pharma/novo-shares-plummet-sales-profit-warning-26)"
+  ],
+  "evaluacion": "Los múltiplos (US$42,59 hoy) quedan 12% por encima del DCF (US$38,01), dentro del rango de ±25%: ambos métodos coinciden, y los dos quedan cerca del precio (US$38,71). Los múltiplos de la etapa actual (~9x EBITDA, ~12x utilidad) ya incorporan la pérdida de participación frente a Lilly; los peers de farma grande los suben un poco.",
+  "ticker": "NVO"
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 9.37,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 9,4x",
+   "A_p25": 8.5,
+   "A_p75": 10.23,
+   "A_max": 27.38,
+   "A_excluidos": [],
+   "B_mediana": 13.8,
+   "B_ajustada": 13.11,
+   "B_n": 5,
+   "B_peers": "AZN 14,2x, NVS 13,8x, SNY 8,5x, MRK 14,3x, PFE 8,5x",
+   "B_excluidos": [
+    "LLY"
+   ],
+   "C": {
+    "Conservador": 6.64,
+    "Base": 8.7,
+    "Optimista": 10.76
+   },
+   "mercado": 11.24,
+   "lambda": 0.25,
+   "conservador": 8.08,
+   "base": 10.6,
+   "optimista": 11.86,
+   "factor_cons": 0.762,
+   "factor_opt": 1.119,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    8.7,
+    13.11
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 11.10446771026408,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 22.39,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 22,4x (EV/FCF × 1,05 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 19.49,
+   "A_p75": 25.29,
+   "A_max": 36.2,
+   "A_excluidos": [],
+   "B_mediana": 21.77,
+   "B_ajustada": 20.68,
+   "B_n": 4,
+   "B_peers": "AZN 38,0x, NVS 19,8x, MRK 23,7x, PFE 16,5x",
+   "B_excluidos": [
+    "LLY"
+   ],
+   "C": {
+    "Conservador": 16.26,
+    "Base": 19.51,
+    "Optimista": 22.69
+   },
+   "mercado": 21.54,
+   "lambda": 0.25,
+   "conservador": 18.06,
+   "base": 21.03,
+   "optimista": 24.86,
+   "factor_cons": 0.859,
+   "factor_opt": 1.182,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    19.51,
+    22.39
+   ],
+   "antes": {
+    "J8": 19.880669019266854,
+    "J19": 22.5297318160481,
+    "J30": 26.100467466220852
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 11.96,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 12,0x",
+   "A_p25": 10.73,
+   "A_p75": 13.18,
+   "A_max": 36.3,
+   "A_excluidos": [],
+   "B_mediana": 23.36,
+   "B_ajustada": 22.19,
+   "B_n": 4,
+   "B_peers": "AZN 24,6x, NVS 22,0x, SNY 22,1x, PFE 37,8x",
+   "B_excluidos": [
+    "LLY",
+    "MRK"
+   ],
+   "C": {
+    "Conservador": 14.03,
+    "Base": 16.42,
+    "Optimista": 18.78
+   },
+   "mercado": 17.07,
+   "lambda": 0.25,
+   "conservador": 15.21,
+   "base": 16.91,
+   "optimista": 19.39,
+   "factor_cons": 0.899,
+   "factor_opt": 1.147,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    11.96,
+    22.19
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 14.413432350597606,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 19.79,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,8x",
+   "A_p25": 17.16,
+   "A_p75": 22.41,
+   "A_max": 36.24,
+   "A_excluidos": [],
+   "B_mediana": 20.71,
+   "B_ajustada": 19.67,
+   "B_n": 4,
+   "B_peers": "AZN 42,1x, NVS 18,5x, MRK 22,9x, PFE 14,9x",
+   "B_excluidos": [
+    "LLY"
+   ],
+   "C": {
+    "Conservador": 15.19,
+    "Base": 18.0,
+    "Optimista": 20.68
+   },
+   "mercado": 19.73,
+   "lambda": 0.25,
+   "conservador": 16.47,
+   "base": 19.3,
+   "optimista": 23.29,
+   "factor_cons": 0.854,
+   "factor_opt": 1.207,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    18.0,
+    19.79
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 16.99490261675757,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 10.38,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 10,4x",
+   "A_p25": 9.36,
+   "A_p75": 11.39,
+   "A_max": 30.72,
+   "A_excluidos": [],
+   "B_mediana": 16.75,
+   "B_ajustada": 15.91,
+   "B_n": 4,
+   "B_peers": "AZN 18,6x, NVS 15,1x, MRK 18,4x, PFE 12,2x",
+   "B_excluidos": [
+    "LLY"
+   ],
+   "C": {
+    "Conservador": 7.92,
+    "Base": 10.74,
+    "Optimista": 13.39
+   },
+   "mercado": 13.14,
+   "lambda": 0.25,
+   "conservador": 10.44,
+   "base": 12.54,
+   "optimista": 14.41,
+   "factor_cons": 0.832,
+   "factor_opt": 1.149,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    10.38,
+    15.91
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 13.89834100646018,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   29.74040048143476,
+   38.0111631652627,
+   46.792309373306225
+  ],
+  "multiplos_hoy": [
+   32.13851989380911,
+   42.58608258601892,
+   52.6980644713451
+  ],
+  "ponderado_hoy": [
+   31.179272128859374,
+   40.75611481771644,
+   50.335762432129556
+  ],
+  "brecha_base": 0.12035725928369123,
+  "fila_origen": 64
+ }
+}

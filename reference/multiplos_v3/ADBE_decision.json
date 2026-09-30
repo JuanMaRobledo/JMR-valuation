@@ -1,0 +1,16 @@
+{
+ "ticker": "ADBE",
+ "etapa_desde": "Dec '23",
+ "etapa_motivo": "A: Adobe pasó de crecer 15-25% anual (FY16-FY21) a ~10-11% (FY23-FY25: +10,2%, +10,8%, +10,5%), y el mercado re-valoró el software de aplicaciones por el riesgo de la IA generativa; los múltiplos de 40-60x de la etapa anterior no describen a la empresa de FY+3, así que A usa solo los cierres FY23-FY25 y el LTM.",
+ "peers_excluir": {
+  "*": [
+   "NOW"
+  ]
+ },
+ "peers_motivo": "B: peers de software de aplicaciones con datos de yfinance al 29-sep-2026 (ADSK, INTU, CRM, WDAY, PTC); se excluye ServiceNow (NOW) porque crece 24% con margen operativo GAAP de 4%, lo que infla sus múltiplos (P/E 81x). No se usa MSFT (megacap diversificada).",
+ "ajuste_peers": 0.05,
+ "ajuste_motivo": "Ajuste +5%: margen operativo de Adobe 35-39% frente a ~21% de mediana de los peers y conversión de caja superior (+10%), compensado en parte por un crecimiento algo menor (10-12% vs ~13% de mediana, -5%).",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la Adobe de FY+3 del escenario Base (crecimiento ~10%, margen 40%) es parecida a la de hoy, así que el Base se acerca solo un 25% al múltiplo justificado.",
+ "evaluacion": "Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe."
+}
