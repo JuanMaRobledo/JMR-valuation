@@ -1,0 +1,14 @@
+{
+ "ticker": "AFYA_MOAT",
+ "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.148,
+   "despues": 0.129,
+   "motivo": "Moat estrecho: Licencias reguladas de Medicina (una sola fuente, depende de la política). Evidencia: ROIC 12-16%, apenas 1-5 pp sobre el costo de capital desde 2022. Amenaza: Liberación de plazas (C, 15%). ROIC terminal 12,9% = punto medio entre el costo de capital terminal (11,0%) y el menor entre el ROIC actual (14,8%) y el de la industria (15,9%): 14,8%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

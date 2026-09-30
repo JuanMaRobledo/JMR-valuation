@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # lululemon athletica inc. (LULU) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$174,31 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$167,44 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,25 +49,25 @@ Para empresas de US$7.000-12.000 millones, crecer 3% anual cinco años (historia
 
 **Márgenes.** El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles (40% de la producción en Vietnam, 9% en Camboya). La hoja supone 14% el próximo año y 18,5% de objetivo. Las historias van de 10% (declive de marca) a 21% (recuperación); volver a 23% no está en ninguna.
 
-**Reinversión y retorno.** Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Desde la revisión del 30-sep-2026, el ROIC después del año 10 es 15,8% (el de Apparel; el actual es 25%); antes era igual al costo de capital.
+**Reinversión y retorno.** Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Moat estrecho (marca premium (una sola fuente); amenaza: Alo y Vuori: historias B y D suman 45%): el ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (15,8%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
 
-**Riesgo.** La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$174,31 a US$185,89. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible.
+**Riesgo.** La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$167,44 a US$178,53. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,20 | 9,7% | 9,0% | US$174,31 |
-| Bottom-up del sector (Apparel, reapalancada) | 0,89 | 8,4% | 7,9% | US$185,89 |
+| Hoja (regresión o la cargada en el libro) | 1,20 | 9,7% | 9,0% | US$167,44 |
+| Bottom-up del sector (Apparel, reapalancada) | 0,89 | 8,4% | 7,9% | US$178,53 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,20) | Valor/acción (beta 0,89) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Se estabiliza Américas y crece lo internacional** | 40% | Américas: -8%, 0%, 2%, 3%, 3%; China continental: 8%, 10%, 10%, 8%, 8%; Resto del mundo: 6%, 10%, 10%, 9%, 8% | 3,0% | 18% | 2,0 | 15,8% | US$179,41 | US$191,39 |
+| **A · Se estabiliza Américas y crece lo internacional** | 40% | Américas: -8%, 0%, 2%, 3%, 3%; China continental: 8%, 10%, 10%, 8%, 8%; Resto del mundo: 6%, 10%, 10%, 9%, 8% | 3,0% | 18% | 2,0 | 12,4% | US$172,25 | US$183,70 |
 | **B · Pérdida estructural frente a Alo y Vuori** | 35% | Américas: -10%, -5%, -2%, 0%, 1%; China continental: 3%, 5%, 5%, 4%, 4%; Resto del mundo: 3%, 5%, 5%, 5%, 5% | -0,6% | 14% | 2,0 | = costo de capital | US$108,35 | US$115,13 |
-| **C · La marca se recupera** | 15% | Américas: -4%, 4%, 5%, 5%, 5%; China continental: 12%, 14%, 12%, 10%, 10%; Resto del mundo: 10%, 12%, 12%, 10%, 10% | 5,8% | 21% | 2,0 | 15,8% | US$239,90 | US$256,22 |
+| **C · La marca se recupera** | 15% | Américas: -4%, 4%, 5%, 5%, 5%; China continental: 12%, 14%, 12%, 10%, 10%; Resto del mundo: 10%, 12%, 12%, 10%, 10% | 5,8% | 21% | 2,0 | 12,4% | US$229,97 | US$245,55 |
 | **D · Moda que pasa: declive de la marca** | 10% | Américas: -12%, -8%, -5%, -3%, 0%; China continental: -5%, 0%, 0%, 2%, 2%; Resto del mundo: 0%, 2%, 2%, 2%, 2% | -3,5% | 10% | 2,0 | = costo de capital | US$73,05 | US$77,33 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$152,98** | **US$163,02** |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$148,62** | **US$158,34** |
 
 A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%, antes 30%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (15%, antes 20%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. D (10%) es el declive de una marca de moda. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -75,11 +75,11 @@ Sensibilidad del DCF Base (beta 1,20; US$ por acción; filas = crecimiento de lo
 
 | Crecimiento \ Margen | 14,5% | 16,5% | 18,5% | 20,5% | 22,5% |
 |---|---:|---:|---:|---:|---:|
-| -2,0% | 116,43 | 130,33 | 144,23 | 158,14 | 172,04 |
-| 0,0% | 126,85 | 142,66 | 158,48 | 174,29 | 190,10 |
-| 2,0% | 138,40 | 156,35 | 174,31 | 192,26 | 210,22 |
-| 4,0% | 151,19 | 171,54 | 191,90 | 212,25 | 232,60 |
-| 6,0% | 165,36 | 188,39 | 211,42 | 234,45 | 257,49 |
+| -2,0% | 112,33 | 125,68 | 139,02 | 152,36 | 165,70 |
+| 0,0% | 122,15 | 137,32 | 152,49 | 167,65 | 182,82 |
+| 2,0% | 133,01 | 150,23 | 167,44 | 184,66 | 201,87 |
+| 4,0% | 145,04 | 164,54 | 184,05 | 203,55 | 223,05 |
+| 6,0% | 158,34 | 180,40 | 202,46 | 224,53 | 246,59 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 12% | Margen 15% | Margen 18% |
 |---|---:|---:|---:|
-| Beta 1,20 | -1,6% (87% de las empresas) | -6,0% (95% de las empresas) | -9,8% (98% de las empresas) |
-| Beta 0,89 | -3,0% (91% de las empresas) | -7,4% (96% de las empresas) | ≤ −10% (el precio supone una caída mayor) |
+| Beta 1,20 | -0,6% (83% de las empresas) | -5,2% (94% de las empresas) | -9,2% (97% de las empresas) |
+| Beta 0,89 | -2,2% (89% de las empresas) | -6,6% (95% de las empresas) | ≤ −10% (el precio supone una caída mayor) |
 
-Frente al valor esperado de las historias (US$152,98 con la beta de la hoja; US$163,02 con la propuesta), el precio está por debajo en 34% y por debajo en 38%, respectivamente. El precio (US$100,58) queda entre la historia B (US$108,35) y la A (US$179,41), por debajo del valor esperado (US$152,98): el mercado valora algo muy cercano a B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.
+Frente al valor esperado de las historias (US$148,62 con la beta de la hoja; US$158,34 con la propuesta), el precio está por debajo en 32% y por debajo en 36%, respectivamente. El precio (US$100,58) queda entre la historia B (US$108,35) y la A (US$172,25), por debajo del valor esperado (US$148,62): el mercado valora algo muy cercano a B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$152,98 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Marca premium de ropa técnica que pierde Norteamérica y crece afuera, con nueva CEO |  |
 | Probabilidades | A 40% / B 35% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$152,98 / US$163,02 |  |
-| Rango (historia más débil a más fuerte) | US$73,05 a US$256,22 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$148,62 / US$158,34 |  |
+| Rango (historia más débil a más fuerte) | US$73,05 a US$245,55 |  |
 | Confianza | Baja-media: la duración de la caída en Norteamérica es muy incierta |  |
 | Qué cambiaría la opinión | Comparables de Norteamérica, margen bruto y respuesta a Alo y Vuori |  |
 | Revisión | Resultados del 3T FY26 (dic-2026) |  |

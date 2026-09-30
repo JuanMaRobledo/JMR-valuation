@@ -1,0 +1,21 @@
+{
+ "ticker": "PYPL_MOAT",
+ "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital (moat estrecho)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.134,
+   "motivo": "Moat estrecho: Red de dos lados (comercios y usuarios) y marca en el checkout. Evidencia: ROIC 13-25% en 2021-2026. Amenaza: Billeteras nativas: historias B y D suman 40%. ROIC terminal 13,4% = punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual (17,8%) y el de la industria (sin dato): 17,8%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

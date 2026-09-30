@@ -1,0 +1,21 @@
+{
+ "ticker": "ONON_MOAT",
+ "sheet_id": "17E_Rd-MD-u5i8Vez7sYwcWIdVYvDdjNhOu-6NWAzGnQ",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "ROIC después del año 10 distinto del costo de capital (moat estrecho)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.15,
+   "motivo": "Moat estrecho: Marca y tecnología (CloudTec), joven. Evidencia: ROIC 13-39% desde 2022 (4 años). Amenaza: Ciclo de moda: historias B y D suman 40%. ROIC terminal 15,0% = punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual (41,9%) y el de la industria (20,9%): 20,9%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

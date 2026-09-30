@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$536,48 en el escenario Base (rango US$408,85–US$823,06). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$486,87 (−9% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$506,71. El valor intrínseco es el DCF: US$536,48 frente a un precio de referencia de US$231,01 (+132%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$498,76 en el escenario Base (rango US$381,19–US$762,43). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$486,87 (−2% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$491,63. El valor intrínseco es el DCF: US$498,76 frente a un precio de referencia de US$231,01 (+116%).
 
-Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 29,3% el DCF pasa de US$377,94 a US$536,48. Los múltiplos (US$486,87 hoy) quedan 9% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$231,01) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe.
+Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho, ROIC después del año 10 de 19,3%; el DCF da US$498,76 y los múltiplos US$486,87 hoy (2% por debajo, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 29,3% el DCF pasa de US$377,94 a US$536,48. Los múltiplos (US$486,87 hoy) quedan 9% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$231,01) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe.
 
 | Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$408,85 | US$318,83 | US$354,84 | US$265,75 | US$475,99 |
-| Base | US$536,48 | US$486,87 | US$506,71 | US$348,71 | US$698,88 |
-| Optimista | US$823,06 | US$812,69 | US$816,83 | US$534,99 | US$1.197,71 |
+| Conservador | US$381,19 | US$318,83 | US$343,78 | US$247,77 | US$460,77 |
+| Base | US$498,76 | US$486,87 | US$491,63 | US$324,20 | US$678,14 |
+| Optimista | US$762,43 | US$812,69 | US$792,58 | US$495,58 | US$1.164,36 |
 
 ## 2. Datos
 
@@ -40,7 +40,7 @@ Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 2
 | Margen EBIT objetivo | 38,7% | 40,0% | 45,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 3 | 3 | 3 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 4,00 / 4,50 | — | Input B32/B33 |
-| DCF por acción hoy | US$408,85 | US$536,48 | US$823,06 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$381,19 | US$498,76 | US$762,43 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,39, ERP 4,46%, Ke 11,20%, costo de la deuda después de impuestos 4,32%, peso del patrimonio 94,2%, WACC inicial 10,80% y terminal 9,22%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 19,5x: promedio de historia y peers 18,5x, acercado 25% al justificado (22,3x); rango de anclas 15,9x–22,3x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 18,9x: promedio de historia y peers 18,1x, acercado 25% al justificado (21,4x); rango de anclas 15,4x–21,4x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$486,87 frente a US$536,48 del DCF (−9%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$486,87 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$486,87 frente a US$498,76 del DCF (−2%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$486,87 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,13 +72,13 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$562,22 | US$737,73 | US$1.131,80 |
+| DCF Damodaran | 40% | US$524,18 | US$685,86 | US$1.048,43 |
 | EV/EBITDA | 20% | US$466,38 | US$771,14 | US$1.444,35 |
 | EV/FCFF | 10% | US$361,68 | US$545,79 | US$1.007,95 |
 | P/E | 20% | US$441,28 | US$714,63 | US$1.331,88 |
 | P/FCFE | 5% | US$332,83 | US$518,35 | US$892,84 |
 | P/OCF | 5% | US$335,16 | US$522,86 | US$886,10 |
-| **Ponderado FY+3** | 100% | US$475,99 | US$698,88 | US$1.197,71 |
+| **Ponderado FY+3** | 100% | US$460,77 | US$678,14 | US$1.164,36 |
 
 Valor presente (Ke 11,20%; consolidado por método: Promedio 1-3 años):
 
@@ -100,25 +100,25 @@ Valor presente (Ke 11,20%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Base | US$373,37 | US$379,37 | US$380,23 | US$377,66 | OK |
 | P/OCF | Optimista | US$499,29 | US$585,43 | US$644,38 | US$576,36 | OK |
 
-Múltiplos consolidados hoy: US$318,83 / US$486,87 / US$812,69 · DCF hoy: US$408,85 / US$536,48 / US$823,06 · Ponderado hoy: US$354,84 / US$506,71 / US$816,83 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$318,83 / US$486,87 / US$812,69 · DCF hoy: US$381,19 / US$498,76 / US$762,43 · Ponderado hoy: US$343,78 / US$491,63 / US$792,58 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ADBE la diferencia es de −9% (múltiplos por debajo del DCF). Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 29,3% el DCF pasa de US$377,94 a US$536,48. Los múltiplos (US$486,87 hoy) quedan 9% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$231,01) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para ADBE la diferencia es de −2% (múltiplos por debajo del DCF). Revisión del 30-sep-2026 (ROIC terminal según el moat): moat estrecho, ROIC después del año 10 de 19,3%; el DCF da US$498,76 y los múltiplos US$486,87 hoy (2% por debajo, dentro del rango de ±25%). Revisión anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 29,3% el DCF pasa de US$377,94 a US$536,48. Los múltiplos (US$486,87 hoy) quedan 9% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$231,01) está por debajo de ambos. Lectura anterior, con el DCF sin ROIC terminal: Los múltiplos (US$486,87 hoy) quedan 29% por encima del DCF (US$377,94). Los múltiplos ahora salen de la etapa actual de Adobe, de peers de hoy y de sus fundamentales, no del DCF: suponen que el mercado le paga a FY+3 algo parecido a sus peers ajustados (~22x utilidad) y a su múltiplo justificado (~21x), frente a ~14x hoy. El DCF depende de sostener un margen de 40% con un WACC de 10,8% y no requiere que el mercado cambie de opinión, por eso es la referencia más confiable para Adobe.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$231,01 supone que los ingresos crecen -4,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 10,4% (−15,0 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$231,01 supone que los ingresos crecen -3,5% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 10,4% (−13,9 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$737,73 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,2%, WACC de los años 4-10 10,1%, ROE de FY+3 95,6% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$685,86 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,2%, WACC de los años 4-10 10,1%, ROE de FY+3 95,6% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 19,6x | 18,7x | +5% | 6,5% | 6,4% | +0,2 pp | Coherente con el DCF. |
-| EV/FCFF | 21,0x | 28,3x | −26% | 5,1% | 6,4% | −1,3 pp | Revisar: el múltiplo vale 26% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
-| P/E | 24,7x | 25,5x | −3% | 7,2% | 7,3% | −0,1 pp | Coherente con el DCF. |
-| P/FCFE | 19,5x | 27,7x | −30% | 5,8% | 7,3% | −1,6 pp | Revisar: el múltiplo vale 30% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
-| P/OCF | 18,9x | 26,7x | −29% | 5,8% | 7,3% | −1,5 pp | Revisar: el múltiplo vale 29% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
+| EV/EBITDA | 19,6x | 17,4x | +12% | 6,5% | 6,1% | +0,4 pp | Coherente con el DCF. |
+| EV/FCFF | 21,0x | 26,4x | −20% | 5,1% | 6,1% | −1,0 pp | Coherente con el DCF. |
+| P/E | 24,7x | 23,7x | +4% | 7,2% | 7,0% | +0,2 pp | Coherente con el DCF. |
+| P/FCFE | 19,5x | 25,7x | −24% | 5,8% | 7,0% | −1,3 pp | Coherente con el DCF. |
+| P/OCF | 18,9x | 24,8x | −24% | 5,8% | 7,0% | −1,2 pp | Coherente con el DCF. |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -126,18 +126,18 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$506,71 | — |
-| Múltiplos Base +20% | US$565,28 | +11,6% |
-| Múltiplos Base −20% | US$448,15 | −11,6% |
-| Crecimiento años 1-5 +2 pp | US$531,56 | +4,9% |
-| Crecimiento años 1-5 −2 pp | US$484,30 | −4,4% |
-| Margen objetivo +3 pp | US$522,07 | +3,0% |
-| Margen objetivo −3 pp | US$491,36 | −3,0% |
-| WACC +1 pp | US$494,88 | −2,3% |
-| WACC −1 pp | US$519,39 | +2,5% |
+| Vigente | US$491,63 | — |
+| Múltiplos Base +20% | US$550,19 | +11,9% |
+| Múltiplos Base −20% | US$433,06 | −11,9% |
+| Crecimiento años 1-5 +2 pp | US$514,46 | +4,6% |
+| Crecimiento años 1-5 −2 pp | US$471,01 | −4,2% |
+| Margen objetivo +3 pp | US$505,85 | +2,9% |
+| Margen objetivo −3 pp | US$477,40 | −2,9% |
+| WACC +1 pp | US$480,71 | −2,2% |
+| WACC −1 pp | US$503,31 | +2,4% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Crecimiento años 1-5 +2 pp.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 1-5 +2 pp.
 
 ## 8. Log de cambios en la hoja
 

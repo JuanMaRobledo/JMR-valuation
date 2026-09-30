@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # PayPal Holdings, Inc. (PYPL) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$84,77 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$101,16 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,38 +49,38 @@ Para empresas de más de US$25.000 millones, crecer 4,9% anual cinco años (hist
 
 **Márgenes.** El margen operativo fue 16,7-18,3% y la hoja supone ~17,3% el próximo año y 19,5% de objetivo. La mezcla manda: cada punto que el checkout de marca pierde frente a Braintree baja el margen, porque Braintree cobra mucho menos por transacción. Las historias van de 13% a 22%.
 
-**Reinversión y retorno.** Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción.
+**Reinversión y retorno.** Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción. Moat estrecho (red de dos lados (comercios y usuarios) y marca en el checkout; amenaza: billeteras nativas: historias B y D suman 40%): el ROIC después del año 10 es 13,4%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (17,8%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
 
-**Riesgo.** La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$84,77 a US$89,72.
+**Riesgo.** La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$101,16 a US$107,30.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,29 | 10,5% | 9,2% | US$84,77 |
-| Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,40 | 6,7% | 6,2% | US$99,54 |
-| Propuesta (sector ajustado por riesgo propio) | 0,97 | 9,2% | 8,1% | US$89,72 |
+| Hoja (regresión o la cargada en el libro) | 1,29 | 10,5% | 9,2% | US$101,16 |
+| Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,40 | 6,7% | 6,2% | US$119,48 |
+| Propuesta (sector ajustado por riesgo propio) | 0,97 | 9,2% | 8,1% | US$107,30 |
 
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,29) | Valor/acción (beta 0,97) |
-|---|---:|---|---:|---:|---:|---:|---:|
-| **A · Se estabiliza con márgenes estables** | 45% | Checkout de marca: 3%, 3%, 4%, 4%, 4%; Procesamiento no de marca (Braintree): 3%, 4%, 4%, 4%, 4%; Venmo y P2P: 15%, 15%, 12%, 10%, 10%; Otros servicios de valor agregado: 5%, 5%, 5%, 5%, 5% | 4,9% | 19% | 2,6 | US$87,70 | US$92,89 |
-| **B · El botón PayPal pierde frente a las billeteras nativas** | 30% | Checkout de marca: 0%, -1%, -2%, -2%, -2%; Procesamiento no de marca (Braintree): 3%, 3%, 3%, 3%, 3%; Venmo y P2P: 10%, 8%, 8%, 6%, 6%; Otros servicios de valor agregado: 2%, 2%, 2%, 2%, 2% | 1,6% | 16% | 2,6 | US$65,53 | US$69,17 |
-| **C · Reactivación: Fastlane, Venmo y publicidad** | 15% | Checkout de marca: 6%, 6%, 6%, 5%, 5%; Procesamiento no de marca (Braintree): 5%, 5%, 5%, 5%, 5%; Venmo y P2P: 20%, 18%, 15%, 12%, 10%; Otros servicios de valor agregado: 8%, 8%, 8%, 8%, 8% | 6,8% | 22% | 2,6 | US$109,45 | US$116,11 |
-| **D · Pierde el checkout y compite por precio** | 10% | Checkout de marca: -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree): 0%, 0%, 0%, 0%, 0%; Venmo y P2P: 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado: 0%, 0%, 0%, 0%, 0% | -1,1% | 13% | 2,6 | US$50,30 | US$52,90 |
-| **Valor esperado** | 100% |  |  |  |  | **US$80,57** | **US$85,26** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,29) | Valor/acción (beta 0,97) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| **A · Se estabiliza con márgenes estables** | 45% | Checkout de marca: 3%, 3%, 4%, 4%, 4%; Procesamiento no de marca (Braintree): 3%, 4%, 4%, 4%, 4%; Venmo y P2P: 15%, 15%, 12%, 10%, 10%; Otros servicios de valor agregado: 5%, 5%, 5%, 5%, 5% | 4,9% | 19% | 2,6 | 13,4% | US$105,14 | US$111,59 |
+| **B · El botón PayPal pierde frente a las billeteras nativas** | 30% | Checkout de marca: 0%, -1%, -2%, -2%, -2%; Procesamiento no de marca (Braintree): 3%, 3%, 3%, 3%, 3%; Venmo y P2P: 10%, 8%, 8%, 6%, 6%; Otros servicios de valor agregado: 2%, 2%, 2%, 2%, 2% | 1,6% | 16% | 2,6 | = costo de capital | US$65,53 | US$69,17 |
+| **C · Reactivación: Fastlane, Venmo y publicidad** | 15% | Checkout de marca: 6%, 6%, 6%, 5%, 5%; Procesamiento no de marca (Braintree): 5%, 5%, 5%, 5%, 5%; Venmo y P2P: 20%, 18%, 15%, 12%, 10%; Otros servicios de valor agregado: 8%, 8%, 8%, 8%, 8% | 6,8% | 22% | 2,6 | 13,4% | US$132,15 | US$140,45 |
+| **D · Pierde el checkout y compite por precio** | 10% | Checkout de marca: -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree): 0%, 0%, 0%, 0%, 0%; Venmo y P2P: 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado: 0%, 0%, 0%, 0%, 0% | -1,1% | 13% | 2,6 | = costo de capital | US$50,30 | US$52,90 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$91,82** | **US$97,33** |
 
-A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,29; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
 | Crecimiento \ Margen | 15,5% | 17,5% | 19,5% | 21,5% | 23,5% |
 |---|---:|---:|---:|---:|---:|
-| -0,4% | 58,82 | 64,79 | 70,76 | 76,73 | 82,71 |
-| 1,6% | 63,88 | 70,64 | 77,41 | 84,18 | 90,94 |
-| 3,6% | 69,46 | 77,12 | 84,77 | 92,42 | 100,08 |
-| 5,6% | 75,63 | 84,27 | 92,91 | 101,56 | 110,20 |
-| 7,6% | 82,43 | 92,17 | 101,92 | 111,66 | 121,41 |
+| -0,4% | 68,71 | 75,96 | 83,21 | 90,46 | 97,71 |
+| 1,6% | 75,24 | 83,48 | 91,71 | 99,94 | 108,18 |
+| 3,6% | 82,49 | 91,82 | 101,16 | 110,49 | 119,83 |
+| 5,6% | 90,52 | 101,08 | 111,65 | 122,21 | 132,78 |
+| 7,6% | 99,41 | 111,35 | 123,29 | 135,22 | 147,16 |
 
 
 ### Pre-mortem
@@ -115,10 +115,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 15% | Margen 18% | Margen 20% |
 |---|---:|---:|---:|
-| Beta 1,29 | -1,6% (82% de las empresas) | -4,4% (89% de las empresas) | -6,4% (92% de las empresas) |
-| Beta 0,97 | -3,0% (87% de las empresas) | -5,6% (91% de las empresas) | -7,6% (94% de las empresas) |
+| Beta 1,29 | -5,0% (90% de las empresas) | -7,6% (94% de las empresas) | -9,4% (95% de las empresas) |
+| Beta 0,97 | -6,2% (92% de las empresas) | -8,8% (95% de las empresas) | ≤ −10% (el precio supone una caída mayor) |
 
-Frente al valor esperado de las historias (US$80,57 con la beta de la hoja; US$85,26 con la propuesta), el precio está por debajo en 33% y por debajo en 36%, respectivamente. El precio está 33-36% por debajo del valor esperado. El DCF inverso muestra que el precio supone ingresos cayendo 2-8% al año durante cinco años con márgenes de 15-19,5%: el mercado valora algo peor que la historia D. ¿Qué sabe el mercado que yo no? Probablemente teme que la pérdida del checkout se acelere y que el crecimiento de Braintree y Venmo no compense. Si esa historia no es la más probable, el precio parece bajo; la evidencia a vigilar es el checkout de marca.
+Frente al valor esperado de las historias (US$91,82 con la beta de la hoja; US$97,33 con la propuesta), el precio está por debajo en 41% y por debajo en 44%, respectivamente. El precio (US$54,28) está 41-44% por debajo del valor esperado (US$91,82 con la beta de la hoja; US$97,33 con la bottom-up). El DCF inverso muestra que el precio supone ingresos cayendo 2-8% al año durante cinco años con márgenes de 15-19,5%: el mercado valora algo entre la historia D (US$50,30) y la B (US$65,53). ¿Qué sabe el mercado que yo no? Probablemente teme que la pérdida del checkout se acelere y que el crecimiento de Braintree y Venmo no compense. Si esa historia no es la más probable, el precio parece bajo; la evidencia a vigilar es el checkout de marca.
 
 
 ### Registro de decisión
@@ -128,8 +128,8 @@ Frente al valor esperado de las historias (US$80,57 con la beta de la hoja; US$8
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Red de pagos rentable cuyo botón de marca pierde frente a las billeteras nativas |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$80,57 / US$85,26 |  |
-| Rango (historia más débil a más fuerte) | US$50,30 a US$116,11 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$91,82 / US$97,33 |  |
+| Rango (historia más débil a más fuerte) | US$50,30 a US$140,45 |  |
 | Confianza | Media: finanzas sólidas; la mezcla de ingresos es la incógnita |  |
 | Qué cambiaría la opinión | Crecimiento del checkout de marca y margen de transacción |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |

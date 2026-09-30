@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Duolingo, Inc. (DUOL) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$125,77 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$153,07 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,37 +49,37 @@ Para empresas de US$700-1.250 millones, crecer 11,5% anual cinco años (historia
 
 **Márgenes.** El margen operativo de la hoja (ajustado por capitalización de I+D, *21,8% LTM) no coincide con el GAAP ni con el EBITDA ajustado (26,5% guía 2026). La hoja supone 20% el próximo año y 27% a siete años (antes 30%). El margen bruto es alto (72,6%) y la IA bajó su costo por unidad, pero la compensación en acciones (~15% de los ingresos, dilución bruta de 3,5-4% al año) es un costo real. Las historias van de 15% a 32%.
 
-**Reinversión y retorno.** Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas.
+**Reinversión y retorno.** Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Moat estrecho (marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos; amenaza: IA generalista (D, 10%) y costos de cambio bajos): el ROIC después del año 10 es 17,4%, el punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual y el de la industria (25,6%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
 
-**Riesgo.** La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$125,77 frente a US$120,25) es menor que la que producen las historias.
+**Riesgo.** La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$153,07 frente a US$145,69) es menor que la que producen las historias.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,35 | 11,0% | 10,9% | US$125,77 |
-| Bottom-up del sector (Software (Internet), reapalancada) | 1,60 | 12,1% | 12,1% | US$120,25 |
+| Hoja (regresión o la cargada en el libro) | 1,35 | 11,0% | 10,9% | US$153,07 |
+| Bottom-up del sector (Software (Internet), reapalancada) | 1,60 | 12,1% | 12,1% | US$145,69 |
 
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,35) | Valor/acción (beta 1,60) |
-|---|---:|---|---:|---:|---:|---:|---:|
-| **A · La audiencia crece y la monetización se recupera en parte** | 40% | Suscripciones: 14%, 13%, 12%, 11%, 10%; Publicidad: 15%, 12%, 10%, 10%, 8%; Duolingo English Test: 2%, 2%, 2%, 2%, 2%; Compras en la aplicación: 10%, 10%, 8%, 8%, 6% | 11,5% | 27% | 4,0 | US$125,64 | US$120,15 |
-| **B · La monetización se estanca** | 30% | Suscripciones: 10%, 9%, 8%, 7%, 6%; Publicidad: 10%, 8%, 7%, 6%, 5%; Duolingo English Test: 0%, 0%, 0%, 0%, 0%; Compras en la aplicación: 5%, 5%, 5%, 5%, 5% | 7,6% | 23% | 4,0 | US$98,99 | US$95,21 |
-| **C · La IA sube el ingreso por usuario** | 20% | Suscripciones: 20%, 18%, 16%, 14%, 12%; Publicidad: 18%, 15%, 12%, 10%, 10%; Duolingo English Test: 5%, 5%, 5%, 5%, 5%; Compras en la aplicación: 15%, 12%, 10%, 10%, 8% | 15,3% | 32% | 4,0 | US$162,33 | US$154,50 |
-| **D · La IA generalista comoditiza los idiomas** | 10% | Suscripciones: 5%, 2%, 0%, -2%, -2%; Publicidad: 3%, 0%, 0%, 0%, 0%; Duolingo English Test: -5%, -5%, -5%, -5%, -5%; Compras en la aplicación: 0%, 0%, 0%, 0%, 0% | 0,4% | 15% | 4,0 | US$66,48 | US$64,78 |
-| **Valor esperado** | 100% |  |  |  |  | **US$119,07** | **US$114,00** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,35) | Valor/acción (beta 1,60) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| **A · La audiencia crece y la monetización se recupera en parte** | 40% | Suscripciones: 14%, 13%, 12%, 11%, 10%; Publicidad: 15%, 12%, 10%, 10%, 8%; Duolingo English Test: 2%, 2%, 2%, 2%, 2%; Compras en la aplicación: 10%, 10%, 8%, 8%, 6% | 11,5% | 27% | 4,0 | 17,4% | US$152,60 | US$145,27 |
+| **B · La monetización se estanca** | 30% | Suscripciones: 10%, 9%, 8%, 7%, 6%; Publicidad: 10%, 8%, 7%, 6%, 5%; Duolingo English Test: 0%, 0%, 0%, 0%, 0%; Compras en la aplicación: 5%, 5%, 5%, 5%, 5% | 7,6% | 23% | 4,0 | 17,4% | US$116,87 | US$111,87 |
+| **C · La IA sube el ingreso por usuario** | 20% | Suscripciones: 20%, 18%, 16%, 14%, 12%; Publicidad: 18%, 15%, 12%, 10%, 10%; Duolingo English Test: 5%, 5%, 5%, 5%, 5%; Compras en la aplicación: 15%, 12%, 10%, 10%, 8% | 15,3% | 32% | 4,0 | 17,4% | US$201,54 | US$191,02 |
+| **D · La IA generalista comoditiza los idiomas** | 10% | Suscripciones: 5%, 2%, 0%, -2%, -2%; Publicidad: 3%, 0%, 0%, 0%, 0%; Duolingo English Test: -5%, -5%, -5%, -5%, -5%; Compras en la aplicación: 0%, 0%, 0%, 0%, 0% | 0,4% | 15% | 4,0 | = costo de capital | US$66,48 | US$64,78 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$143,06** | **US$136,35** |
 
-A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). D (10%) es el riesgo de sustitución por asistentes generalistas. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). D (10%) es el riesgo de sustitución por asistentes generalistas. En las historias donde la ventaja se erosiona (D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,35; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
 | Crecimiento \ Margen | 23,0% | 25,0% | 27,0% | 29,0% | 31,0% |
 |---|---:|---:|---:|---:|---:|
-| 7,2% | 98,56 | 103,55 | 108,53 | 113,52 | 118,51 |
-| 9,2% | 105,49 | 111,10 | 116,72 | 122,33 | 127,95 |
-| 11,2% | 113,14 | 119,46 | 125,77 | 132,09 | 138,40 |
-| 13,2% | 121,59 | 128,68 | 135,77 | 142,86 | 149,96 |
-| 15,2% | 130,90 | 138,86 | 146,81 | 154,76 | 162,71 |
+| 7,2% | 116,53 | 123,08 | 129,63 | 136,18 | 142,73 |
+| 9,2% | 125,95 | 133,35 | 140,75 | 148,14 | 155,54 |
+| 11,2% | 136,40 | 144,73 | 153,07 | 161,41 | 169,75 |
+| 13,2% | 147,96 | 157,35 | 166,74 | 176,12 | 185,51 |
+| 15,2% | 160,76 | 171,31 | 181,86 | 192,41 | 202,96 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 23% | Margen 27% | Margen 30% |
 |---|---:|---:|---:|
-| Beta 1,35 | 16,0% (22% de las empresas) | 13,0% (31% de las empresas) | 11,2% (39% de las empresas) |
-| Beta 1,60 | 17,2% (18% de las empresas) | 14,2% (27% de las empresas) | 12,4% (33% de las empresas) |
+| Beta 1,35 | 11,0% (40% de las empresas) | 8,2% (55% de las empresas) | 6,4% (65% de las empresas) |
+| Beta 1,60 | 12,2% (34% de las empresas) | 9,4% (49% de las empresas) | 7,6% (58% de las empresas) |
 
-Frente al valor esperado de las historias (US$119,07 con la beta de la hoja; US$114,00 con la propuesta), el precio está por encima en 13% y por encima en 18%, respectivamente. Con el DCF revisado (US$125,77, antes US$167,58), valor esperado, DCF y precio quedan cerca. El DCF inverso pide 11-16% anual en los años 1-5 según el margen (lo logró 17-40% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Probablemente está viendo lo mismo que las historias (reservas en desaceleración) y le pone algo de peso a la IA. La revisión ya bajó el crecimiento de la hoja hacia lo que muestran las reservas; lo que decide ahora es si las reservas reaceleran.
+Frente al valor esperado de las historias (US$143,06 con la beta de la hoja; US$136,35 con la propuesta), el precio está por debajo en 6% y por debajo en 2%, respectivamente. Con el DCF revisado (US$153,07: US$167,58 antes de la revisión de supuestos y US$125,77 antes del ROIC terminal por moat), el precio (US$134,30) queda 6% por debajo del valor esperado (US$143,06) y 12% por debajo del DCF. El DCF inverso pide 11-16% anual en los años 1-5 según el margen (lo logró 17-40% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Probablemente está viendo lo mismo que las historias (reservas en desaceleración) y le pone algo de peso a la IA. La revisión ya bajó el crecimiento de la hoja hacia lo que muestran las reservas; lo que decide ahora es si las reservas reaceleran.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$119,07 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Hábito de aprendizaje global con audiencia en alza y monetización en desaceleración |  |
 | Probabilidades | A 40% / B 30% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$119,07 / US$114,00 |  |
-| Rango (historia más débil a más fuerte) | US$64,78 a US$162,33 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$143,06 / US$136,35 |  |
+| Rango (historia más débil a más fuerte) | US$64,78 a US$201,54 |  |
 | Confianza | Media-baja: la monetización y el efecto de la IA son muy inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de reservas y suscriptores frente a DAU; margen y SBC |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

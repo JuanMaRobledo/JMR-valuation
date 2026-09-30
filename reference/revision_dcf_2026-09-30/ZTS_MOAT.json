@@ -1,0 +1,14 @@
+{
+ "ticker": "ZTS_MOAT",
+ "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.169,
+   "despues": 0.13,
+   "motivo": "Moat estrecho: Marcas, relación con veterinarios y cartera de patentes. Evidencia: ROIC 26-29% en 2021-2026. Amenaza: Erosión de franquicias y genéricos: historias B y D suman 45%. ROIC terminal 13,0% = punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual (25,3%) y el de la industria (17,0%): 17,0%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}
