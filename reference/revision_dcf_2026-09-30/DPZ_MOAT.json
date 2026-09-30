@@ -1,0 +1,14 @@
+{
+ "ticker": "DPZ_MOAT",
+ "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.184,
+   "despues": 0.137,
+   "motivo": "Moat estrecho: Escala logística en reparto, marca y sistema de franquicias con muy poco capital. Evidencia: ROIC 65-78% en 2021-2026. Amenaza: Agregadores (B y D, 30%). ROIC terminal 13,7% = punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual (99,2%) y el de la industria (18,4%): 18,4%. Un moat estrecho conserva solo parte de los retornos excedentes."
+  }
+ ]
+}

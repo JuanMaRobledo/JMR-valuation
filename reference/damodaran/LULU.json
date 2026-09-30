@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$167,44 a US$178,53. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
+  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$155,29 a US$165,48. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
  },
  "historias": [
   {
@@ -67,8 +67,7 @@
      0.05,
      0.05
     ]
-   },
-   "roic_terminal": "costo_capital"
+   }
   },
   {
    "nombre": "C · La marca se recupera",
@@ -124,8 +123,7 @@
      0.02,
      0.02
     ]
-   },
-   "roic_terminal": "costo_capital"
+   }
   }
  ],
  "margenes_inverso": [
@@ -214,9 +212,9 @@
   "texto": "El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles (40% de la producción en Vietnam, 9% en Camboya). La hoja supone 14% el próximo año y 18,5% de objetivo. Las historias van de 10% (declive de marca) a 21% (recuperación); volver a 23% no está en ninguna."
  },
  "reinversion": {
-  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Moat estrecho (marca premium (una sola fuente); amenaza: Alo y Vuori: historias B y D suman 45%): el ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (15,8%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026)."
+  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Sin moat para el ROIC terminal: la ventaja es una marca premium en moda, sin fuente estructural (costos de cambio, red, escala o licencias); el ROIC después del año 10 es igual al costo de capital (revisión del 30-sep-2026)."
  },
- "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%, antes 30%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (15%, antes 20%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. D (10%) es el declive de una marca de moda. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
+ "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%, antes 30%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (15%, antes 20%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. D (10%) es el declive de una marca de moda.",
  "premortem": [
   "Alo y Vuori siguen ganando a la clienta joven y lululemon queda como marca de «generación anterior».",
   "Los aranceles se quedan y lululemon no puede trasladarlos a precio sin perder volumen.",
@@ -257,7 +255,7 @@
    "Sigue subiendo"
   ]
  ],
- "precio_lectura": "El precio (US$100,58) queda entre la historia B (US$108,35) y la A (US$172,25), por debajo del valor esperado (US$148,62): el mercado valora algo muy cercano a B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.",
+ "precio_lectura": "El precio (US$100,58) queda por debajo incluso de la historia B (US$108,35) y 29% por debajo del valor esperado (US$140,91): el mercado valora algo peor que B, la pérdida estructural frente a Alo y Vuori. El DCF inverso muestra que, con márgenes de 15-18,5%, el precio supone ingresos cayendo 6-9% al año durante cinco años, y con margen de 12% supone ~1% de caída. ¿Qué sabe el mercado que yo no? Que las marcas de moda que pierden a la clienta joven rara vez la recuperan. Si crees que la nueva CEO puede estabilizar Norteamérica, el precio parece bajo; si las comparables del 3T y el 4T repiten −10%, el precio es justo.",
  "frase": "Marca premium de ropa técnica que pierde Norteamérica y crece afuera, con nueva CEO",
  "confianza": "Baja-media: la duración de la caída en Norteamérica es muy incierta",
  "cambiaria": "Comparables de Norteamérica, margen bruto y respuesta a Alo y Vuori",

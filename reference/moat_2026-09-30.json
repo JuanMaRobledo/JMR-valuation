@@ -15,7 +15,7 @@
    "roic_terminal_antes": 0.259
   },
   "GOOG": {
-   "moat": "ancho",
+   "moat": "estrecho",
    "fuentes": "Escala y efectos de red en búsqueda, YouTube y Android; datos",
    "evidencia": "ROIC 24-31% en 2021-2026",
    "amenaza": "IA conversacional y remedios antimonopolio (B y D, 40% con la erosión de Search)",
@@ -23,8 +23,9 @@
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.286,
-   "roic_terminal_antes": 0.286
+   "roic_terminal": 0.188,
+   "roic_terminal_antes": 0.286,
+   "nota": "Ajuste del 30-sep-2026: tiene fuentes estructurales fuertes (escala y efectos de red), pero las historias de erosión suman 40% (B 25% + D 15%) y el moat ancho exige menos de 40%. Antes se clasificó como ancho."
   },
   "INTU": {
    "moat": "ancho",
@@ -51,7 +52,7 @@
    "roic_terminal_antes": 0.272
   },
   "DPZ": {
-   "moat": "ancho",
+   "moat": "estrecho",
    "fuentes": "Escala logística en reparto, marca y sistema de franquicias con muy poco capital",
    "evidencia": "ROIC 65-78% en 2021-2026",
    "amenaza": "Agregadores (B y D, 30%)",
@@ -59,8 +60,9 @@
    "roic_industria": 0.1836,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.184,
-   "roic_terminal_antes": 0.184
+   "roic_terminal": 0.137,
+   "roic_terminal_antes": 0.184,
+   "nota": "Ajuste del 30-sep-2026: una sola fuente estructural (densidad y escala logística en reparto); la marca no cuenta en consumo discrecional y el sistema de franquicias con poco capital explica el ROIC alto, no su duración. El moat ancho exige dos fuentes estructurales. Antes se clasificó como ancho."
   },
   "ADBE": {
    "moat": "estrecho",
@@ -99,7 +101,7 @@
    "roic_terminal_antes": 0.169
   },
   "CMG": {
-   "moat": "estrecho",
+   "moat": "sin moat",
    "fuentes": "Marca y economía por local (una sola fuente en un sector competitivo)",
    "evidencia": "ROIC 15-22% en 2021-2026",
    "amenaza": "Tráfico débil; la marca es la única barrera",
@@ -107,8 +109,9 @@
    "roic_industria": 0.1836,
    "industria_proxy": null,
    "costo_capital_terminal": 0.09,
-   "roic_terminal": 0.137,
-   "roic_terminal_antes": 0.184
+   "roic_terminal": null,
+   "roic_terminal_antes": null,
+   "nota": "Ajuste del 30-sep-2026: La marca es la única barrera; la economía por local depende de ella y no es una ventaja de costo frente a otras cadenas. Restaurantes = consumo discrecional. Antes se clasificó como estrecho."
   },
   "NKE": {
    "moat": "estrecho",
@@ -123,7 +126,7 @@
    "roic_terminal_antes": 0.133
   },
   "LULU": {
-   "moat": "estrecho",
+   "moat": "sin moat",
    "fuentes": "Marca premium (una sola fuente)",
    "evidencia": "ROIC 27-52% en 2021-2026, en descenso",
    "amenaza": "Alo y Vuori: historias B y D suman 45%",
@@ -131,8 +134,9 @@
    "roic_industria": 0.1577,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0898,
-   "roic_terminal": 0.124,
-   "roic_terminal_antes": 0.158
+   "roic_terminal": null,
+   "roic_terminal_antes": null,
+   "nota": "Ajuste del 30-sep-2026: Marca premium como única fuente, en moda (Alo y Vuori le quitan participación). Antes se clasificó como estrecho."
   },
   "AFYA": {
    "moat": "estrecho",
