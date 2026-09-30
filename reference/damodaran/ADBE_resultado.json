@@ -1,0 +1,294 @@
+{
+ "ticker": "ADBE",
+ "fecha": "2026-09-30",
+ "precio": 231.01,
+ "dcf_base": 377.93587266843457,
+ "g_ref": 0.10400000000000001,
+ "m_base": 0.4,
+ "s2c": 4,
+ "wacc": 0.1080042835452905,
+ "beta_hoja": 1.3928819168531263,
+ "beta_bu": 1.308164891664659,
+ "beta_prop": 1.308164891664659,
+ "industria": "Software (System & Application)",
+ "bu_sector": 1.25,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": ">$25,000 Mn",
+  "<(25)": 1.0,
+  "(25)-(20)": 0.6,
+  "(20)-(15)": 1.5,
+  "(15)-(10)": 3.0,
+  "(10)-(5)": 8.2,
+  "(5)-0": 21.3,
+  "0-5": 32.6,
+  "5-10": 18.1,
+  "10-15": 8.5,
+  "15-20": 3.2,
+  "20-25": 1.2,
+  "25-30": 0.4,
+  "30-35": 0.2,
+  "35-40": 0.1,
+  "40-45": 0.1,
+  ">45": 0.0,
+  "Mean": 2.1,
+  "Median": 2.0,
+  "StDev": 8.6,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · La IA se cobra dentro de la suscripción",
+   "prob": 0.4,
+   "margen": 0.4,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
+    ],
+    "Business Professionals & Consumers": [
+     0.14,
+     0.12,
+     0.1,
+     0.09,
+     0.08
+    ]
+   },
+   "cagr": 0.08175700697834754,
+   "rev5": 38469.85368560001,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6701447514589868,
+    "Business Professionals & Consumers": 0.3137387328644257,
+    "Otros": 0.016116515676587503
+   },
+   "tasa_base": 0.29353963473838196,
+   "valor_beta_hoja": 336.83272570236414,
+   "valor_beta_prop": 343.28288085358815
+  },
+  {
+   "nombre": "B · Erosión gradual frente a Figma y Canva",
+   "prob": 0.35,
+   "margen": 0.37,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.08,
+     0.05,
+     0.04,
+     0.03,
+     0.03
+    ],
+    "Business Professionals & Consumers": [
+     0.12,
+     0.09,
+     0.07,
+     0.06,
+     0.05
+    ]
+   },
+   "cagr": 0.05422366658381561,
+   "rev5": 33817.052957600004,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6678244142538309,
+    "Business Professionals & Consumers": 0.313841640420497,
+    "Otros": 0.018333945325672205
+   },
+   "tasa_base": 0.4534616938735223,
+   "valor_beta_hoja": 272.3984736582525,
+   "valor_beta_prop": 277.4865623929074
+  },
+  {
+   "nombre": "C · La IA generativa comoditiza la creatividad",
+   "prob": 0.15,
+   "margen": 0.32,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.05,
+     0.01,
+     -0.02,
+     -0.03,
+     -0.03
+    ],
+    "Business Professionals & Consumers": [
+     0.09,
+     0.05,
+     0.03,
+     0.02,
+     0.02
+    ]
+   },
+   "cagr": 0.009473581880143467,
+   "rev5": 27223.67421425,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6483517455116689,
+    "Business Professionals & Consumers": 0.32887395903061273,
+    "Otros": 0.022774295457718426
+   },
+   "tasa_base": 0.710142541190589,
+   "valor_beta_hoja": 191.54294950778976,
+   "valor_beta_prop": 194.9395449279689
+  },
+  {
+   "nombre": "D · La IA amplía el mercado de Adobe",
+   "prob": 0.1,
+   "margen": 0.43,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.12,
+     0.12,
+     0.11,
+     0.1,
+     0.09
+    ],
+    "Business Professionals & Consumers": [
+     0.16,
+     0.14,
+     0.12,
+     0.11,
+     0.1
+    ]
+   },
+   "cagr": 0.11098407374059693,
+   "rev5": 43955.28657920002,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6855581490636808,
+    "Business Professionals & Consumers": 0.3003366078984228,
+    "Otros": 0.014105243037896351
+   },
+   "tasa_base": 0.1877376530590391,
+   "valor_beta_hoja": 419.13378085042973,
+   "valor_beta_prop": 427.3363557887602
+  }
+ ],
+ "valor_esperado_beta_hoja": 300.7173765725455,
+ "valor_esperado_beta_prop": 306.4080164970242,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.3928819168531263,
+   "ke": 0.11202253349164944,
+   "wacc": 0.1080042835452905,
+   "dcf_base": 377.93587266843457
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
+   "beta": 1.308164891664659,
+   "ke": 0.10824415416824379,
+   "wacc": 0.10444663011656459,
+   "dcf_base": 385.2716846355182
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.064,
+   0.084,
+   0.10400000000000001,
+   0.12400000000000001,
+   0.14400000000000002
+  ],
+  "m": [
+   0.36000000000000004,
+   0.38,
+   0.4,
+   0.42000000000000004,
+   0.44
+  ],
+  "v": [
+   [
+    279.5200171324239,
+    293.35291297650866,
+    307.1858088205935,
+    321.0187046646784,
+    334.8516005087632
+   ],
+   [
+    309.64144391050695,
+    325.20647150233293,
+    340.77149909415897,
+    356.33652668598506,
+    371.90155427781104
+   ],
+   [
+    342.9570876007818,
+    360.4464801346082,
+    377.93587266843457,
+    395.425265202261,
+    412.9146577360874
+   ],
+   [
+    379.7700300933571,
+    399.39440837626853,
+    419.01878665917985,
+    438.64316494209123,
+    458.26754322500267
+   ],
+   [
+    420.4075281489376,
+    442.397369956701,
+    464.38721176446455,
+    486.3770535722282,
+    508.3668953799917
+   ]
+  ]
+ },
+ "inverso": [
+  {
+   "beta": 1.3928819168531263,
+   "margen": 0.35,
+   "g": 0.032,
+   "tasa_base": 0.5983600000000001
+  },
+  {
+   "beta": 1.3928819168531263,
+   "margen": 0.38,
+   "g": 0.018,
+   "tasa_base": 0.6738200000000001
+  },
+  {
+   "beta": 1.3928819168531263,
+   "margen": 0.4,
+   "g": 0.01,
+   "tasa_base": 0.7079000000000001
+  },
+  {
+   "beta": 1.308164891664659,
+   "margen": 0.35,
+   "g": 0.028,
+   "tasa_base": 0.6244400000000001
+  },
+  {
+   "beta": 1.308164891664659,
+   "margen": 0.38,
+   "g": 0.016,
+   "tasa_base": 0.6823400000000001
+  },
+  {
+   "beta": 1.308164891664659,
+   "margen": 0.4,
+   "g": 0.006,
+   "tasa_base": 0.7249400000000001
+  }
+ ],
+ "ingresos_ltm": 25970
+}

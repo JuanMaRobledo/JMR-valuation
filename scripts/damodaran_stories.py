@@ -369,8 +369,9 @@ def render(r: dict) -> tuple[str, str]:
       "la toma por ti.")
     if sp.get("fuentes"):
         h3("Fuentes de esta sección")
-        md.append("".join(f"- [{t}]({u})\n" for t, u in sp["fuentes"]))
-        ht.append("<ul>" + "".join(f'<li><a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(t)}</a></li>' for t, u in sp["fuentes"]) + "</ul>")
+        md.append("".join((f"- [{t}]({u})\n" if u else f"- {t}\n") for t, u in sp["fuentes"]))
+        ht.append("<ul>" + "".join((f'<li><a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(t)}</a></li>' if u
+                                    else f"<li>{html.escape(t)}</li>") for t, u in sp["fuentes"]) + "</ul>")
     return "\n".join(md), "".join(ht)
 
 
