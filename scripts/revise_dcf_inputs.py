@@ -126,6 +126,11 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
     "BSX_IMPUESTO": [
         (IS, "B24", 0.178, "Tasa efectiva de los años 1-5 = promedio 2023-2025 (19,8%, 19,1% y 14,6%). La del LTM (5%) refleja beneficios fiscales de una vez y no es sostenible."),
     ],
+    # CELH_IMPUESTO se aplicó y se revirtió el 30-sep-2026: la hoja ya usa la tasa marginal (24%) desde el año 1
+    # ('Valuation output'!C8 = 'Input sheet'!B25); B24 solo alimenta el año base y no cambia el valor.
+    "CELH_IMPUESTO": [
+        (IS, "B24", 0.205, "Tasa efectiva de los años 1-5 = promedio 2023-2025 (22,3%, 25,6% y 13,6%). La del LTM (8,8%) refleja beneficios fiscales de una vez y no es sostenible."),
+    ],
 }
 
 
