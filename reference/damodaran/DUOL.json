@@ -11,7 +11,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$167,58 frente a US$159,36) es menor que la que producen las historias."
+  "texto": "La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$125,77 frente a US$120,27) es menor que la que producen las historias."
  },
  "historias": [
   {
@@ -187,7 +187,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$700-1.250 millones, crecer 11,5% anual cinco años (historia A) lo logró ~38%; 15,3% (historia C), ~24%. El DCF de la hoja (16,6% en los años 1-5) supone un resultado del cuartil superior justo cuando las reservas desaceleran: la visión externa pide recortar ese supuesto hasta que las reservas lo confirmen.",
+ "tasas_base_nota": "Para empresas de US$700-1.250 millones, crecer 11,5% anual cinco años (historia A) lo logró ~38%; 15,3% (historia C), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.",
  "crecimiento": {
   "texto": "Ingresos de US$531 millones (2023, +43,7%), US$748 millones (2024, +40,8%) y US$1.038 millones (2025, +38,7%); LTM US$1.145 millones. En el 2T26 los ingresos crecieron 18% (US$298,5 millones), pero las reservas solo 8% (US$289,1 millones). Guía 2026: ingresos US$1.207 millones (+16,3%), reservas US$1.285 millones (+10,9%). Los ingresos van detrás de las reservas: su desaceleración todavía no se ve completa en los ingresos.",
   "tabla": {
@@ -238,7 +238,7 @@
   }
  },
  "margenes": {
-  "texto": "El margen operativo de la hoja (ajustado por capitalización de I+D, *21,8% LTM) no coincide con el GAAP ni con el EBITDA ajustado (26,5% guía 2026). La hoja supone 20% el próximo año y 30% a siete años. El margen bruto es alto (72,6%) y la IA bajó su costo por unidad, pero la compensación en acciones (~15% de los ingresos, dilución bruta de 3,5-4% al año) es un costo real. Las historias van de 15% a 32%."
+  "texto": "El margen operativo de la hoja (ajustado por capitalización de I+D, *21,8% LTM) no coincide con el GAAP ni con el EBITDA ajustado (26,5% guía 2026). La hoja supone 20% el próximo año y 27% a siete años (antes 30%). El margen bruto es alto (72,6%) y la IA bajó su costo por unidad, pero la compensación en acciones (~15% de los ingresos, dilución bruta de 3,5-4% al año) es un costo real. Las historias van de 15% a 32%."
  },
  "reinversion": {
   "texto": "Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas."
@@ -284,7 +284,7 @@
    "≥ 17%"
   ]
  ],
- "precio_lectura": "El precio está por encima del valor esperado de las historias, pero por debajo del DCF de la hoja: el problema está en el DCF, no en el mercado. El DCF inverso pide 11-16% anual en los años 1-5 según el margen (lo logró 17-39% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Probablemente está viendo lo mismo que las historias (reservas en desaceleración) y le pone algo de peso a la IA. Antes de usar el DCF de la hoja como valor intrínseco, conviene bajar su crecimiento hacia lo que muestran las reservas.",
+ "precio_lectura": "Con el DCF revisado (US$125,77, antes US$167,58), valor esperado, DCF y precio quedan cerca. El DCF inverso pide 11-16% anual en los años 1-5 según el margen (lo logró 17-40% de las empresas de este tamaño). ¿Qué sabe el mercado que yo no? Probablemente está viendo lo mismo que las historias (reservas en desaceleración) y le pone algo de peso a la IA. La revisión ya bajó el crecimiento de la hoja hacia lo que muestran las reservas; lo que decide ahora es si las reservas reaceleran.",
  "frase": "Hábito de aprendizaje global con audiencia en alza y monetización en desaceleración",
  "confianza": "Media-baja: la monetización y el efecto de la IA son muy inciertos",
  "cambiaria": "Crecimiento de reservas y suscriptores frente a DAU; margen y SBC",

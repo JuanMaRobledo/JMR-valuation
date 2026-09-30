@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,90 (regresión, costo del patrimonio 13,5%). La bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja) sin deuda relevante da 1,51, y el DCF Base sube de US$162,65 a US$179,05. Con criterio Damodaran conviene la bottom-up; la ciclicidad del negocio se modela mejor en las historias (B y D) que en la tasa."
+  "texto": "La hoja usaba una beta de regresión de 1,90 (costo del patrimonio 13,5%). Tras la revisión del 30-sep-2026 usa la bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja; 1,51 sin deuda relevante), con costo del patrimonio de 11,7%: el DCF Base pasó de US$162,65 a US$178,38. La ciclicidad del negocio se modela en las historias (B y D), no en la tasa."
  },
  "historias": [
   {
@@ -226,7 +226,7 @@
    "Nuevas restricciones o problemas en Taiwán"
   ]
  ],
- "precio_lectura": "El precio está muy por encima del valor esperado de las historias y del DCF de la hoja. El DCF inverso pide 25-31% anual en los años 1-5, algo que prácticamente ninguna empresa de este tamaño logró. ¿Qué sabe el mercado que yo no? Paga por la historia C o algo mejor, y probablemente con un costo de capital más bajo que el de la hoja. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.",
+ "precio_lectura": "El precio está muy por encima del valor esperado de las historias y del DCF de la hoja. El DCF inverso pide 25-29% anual en los años 1-5, algo que prácticamente ninguna empresa de este tamaño logró. ¿Qué sabe el mercado que yo no? Paga por la historia C o algo mejor, y probablemente con un costo de capital aún más bajo que el de la hoja. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.",
  "frase": "Proveedor dominante de la infraestructura de IA en la cima de un ciclo de inversión",
  "confianza": "Baja: el valor depende de la duración del ciclo, que nadie puede prever",
  "cambiaria": "Capex de los hiperescaladores y participación de NVIDIA en inferencia",

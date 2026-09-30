@@ -301,17 +301,18 @@ def render(r: dict) -> tuple[str, str]:
 
     h3("Historias cuantificadas y valor esperado")
     segs = list(sp["segmentos"].keys())
+    same = abs(r["beta_prop"] - r["beta_hoja"]) < 0.005  # la hoja ya usa la beta propuesta: una sola columna
     rows = []
     for h in r["historias"]:
         crec = "; ".join(f"{k}: " + ", ".join(es(x * 100, 0) + "%" for x in h["crec"].get(k, [0] * 5)) for k in segs) if len(segs) > 1 else \
             ", ".join(es(x * 100, 0) + "%" for x in h["crec"][segs[0]])
         rows.append([f"**{h['nombre']}**", pct(h["prob"], 0), crec, pct(h["cagr"]), pct(h["margen"], 0),
-                     es(h.get("s2c", r["s2c"]), 1), usd(h["valor_beta_hoja"]), usd(h["valor_beta_prop"])])
-    rows.append(["**Valor esperado**", "100%", "", "", "", "", f"**{usd(r['valor_esperado_beta_hoja'])}**",
-                 f"**{usd(r['valor_esperado_beta_prop'])}**"])
+                     es(h.get("s2c", r["s2c"]), 1), usd(h["valor_beta_hoja"])] + ([] if same else [usd(h["valor_beta_prop"])]))
+    rows.append(["**Valor esperado**", "100%", "", "", "", "", f"**{usd(r['valor_esperado_beta_hoja'])}**"] +
+                ([] if same else [f"**{usd(r['valor_esperado_beta_prop'])}**"]))
     tab(["Historia", "Probabilidad", "Crecimiento por segmento (años 1-5)", "Crecimiento anual del grupo",
-         "Margen objetivo", "Sales-to-capital", f"Valor/acción (beta {es(r['beta_hoja'])})",
-         f"Valor/acción (beta {es(r['beta_prop'])})"], rows, ["l", "r", "l", "r", "r", "r", "r", "r"])
+         "Margen objetivo", "Sales-to-capital", f"Valor/acción (beta {es(r['beta_hoja'])})"] +
+        ([] if same else [f"Valor/acción (beta {es(r['beta_prop'])})"]), rows, ["l", "r", "l", "r", "r", "r", "r"] + ([] if same else ["r"]))
     p(sp["prob_texto"] + " **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**")
     s = r["sensibilidad"]
     p(f"Sensibilidad del DCF Base (beta {es(r['beta_hoja'])}; US$ por acción; filas = crecimiento de los años 1-5, "
@@ -348,20 +349,22 @@ def render(r: dict) -> tuple[str, str]:
     tab([""] + [f"Margen {pct(m, 0)}" for m in ms], rows, ["l"] + ["r"] * len(ms))
     diff_h = r["precio"] / r["valor_esperado_beta_hoja"] - 1 if r["precio"] else None
     diff_p = r["precio"] / r["valor_esperado_beta_prop"] - 1 if r["precio"] else None
-    p(f"Frente al valor esperado de las historias ({usd(r['valor_esperado_beta_hoja'])} con la beta de la hoja; "
-      f"{usd(r['valor_esperado_beta_prop'])} con la propuesta), el precio está "
-      f"{'por encima' if (diff_h or 0) > 0 else 'por debajo'} en {es(abs(diff_h) * 100, 0)}% y "
-      f"{es(abs(diff_p) * 100, 0)}%, respectivamente. " + sp["precio_lectura"])
+    pos = lambda d: f"{'por encima' if d > 0 else 'por debajo'} en {es(abs(d) * 100, 0)}%"  # noqa: E731
+    if same:
+        p(f"Frente al valor esperado de las historias ({usd(r['valor_esperado_beta_hoja'])}), el precio está {pos(diff_h)}. " + sp["precio_lectura"])
+    else:
+        p(f"Frente al valor esperado de las historias ({usd(r['valor_esperado_beta_hoja'])} con la beta de la hoja; "
+          f"{usd(r['valor_esperado_beta_prop'])} con la propuesta), el precio está {pos(diff_h)} y {pos(diff_p)}, respectivamente. " + sp["precio_lectura"])
 
     h3("Registro de decisión")
     probs = " / ".join(f"{h['nombre'].split(' · ')[0]} {pct(h['prob'], 0)}" for h in r["historias"])
-    lo = min(h["valor_beta_hoja"] for h in r["historias"])
-    hi = max(h["valor_beta_prop"] for h in r["historias"])
+    lo = min(min(h["valor_beta_hoja"], h["valor_beta_prop"]) for h in r["historias"])
+    hi = max(max(h["valor_beta_hoja"], h["valor_beta_prop"]) for h in r["historias"])
     tab(["Campo", "Propuesta del análisis", "Tu estimación"], [
         ["Fecha", r["fecha"], ""],
         ["Historia en una frase", sp["frase"], ""],
         ["Probabilidades", probs, ""],
-        ["Valor esperado (beta de la hoja / propuesta)", f"{usd(r['valor_esperado_beta_hoja'])} / {usd(r['valor_esperado_beta_prop'])}", ""],
+        ["Valor esperado" + ("" if same else " (beta de la hoja / propuesta)"), usd(r['valor_esperado_beta_hoja']) + ("" if same else f" / {usd(r['valor_esperado_beta_prop'])}"), ""],
         ["Rango (historia más débil a más fuerte)", f"{usd(lo)} a {usd(hi)}", ""],
         ["Confianza", sp["confianza"], ""],
         ["Qué cambiaría la opinión", sp["cambiaria"], ""],

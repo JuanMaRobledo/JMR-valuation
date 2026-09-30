@@ -1,0 +1,49 @@
+{
+ "ticker": "PLTR",
+ "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B27",
+   "antes": 0.82,
+   "despues": 0.68,
+   "motivo": "Próximos 12 meses: ~US$10.400 M con la guía 2026 de US$8.150 M (+82% en el año calendario); antes 82% sobre el LTM."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B29",
+   "antes": 0.4,
+   "despues": 0.35,
+   "motivo": "Años 2-5 al 35% (antes 40%): tasa base de <1% de las empresas a este ritmo."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.5,
+   "despues": 0.48,
+   "motivo": "Margen objetivo 48% (antes 50%) por la compensación en acciones."
+  },
+  {
+   "hoja": "Cost of capital worksheet",
+   "celda": "B23",
+   "antes": 1.62,
+   "despues": 1.25,
+   "motivo": "Beta bottom-up de Software (System & Application) en lugar de la de regresión (1,62)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C55",
+   "antes": 0.6,
+   "despues": 0.35,
+   "motivo": "Conservador: 35% anual (antes 60%)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C106",
+   "antes": 0.95,
+   "despues": 0.6,
+   "motivo": "Optimista: 60% anual (antes 95%, que multiplicaba los ingresos por 28 en cinco años)."
+  }
+ ]
+}

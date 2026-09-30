@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # NVIDIA Corporation (NVDA) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$162,65 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$178,38 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -51,35 +51,35 @@ Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (histo
 
 **Reinversión y retorno.** Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir.
 
-**Riesgo.** La hoja usa una beta de 1,90 (regresión, costo del patrimonio 13,5%). La bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja) sin deuda relevante da 1,51, y el DCF Base sube de US$162,65 a US$179,05. Con criterio Damodaran conviene la bottom-up; la ciclicidad del negocio se modela mejor en las historias (B y D) que en la tasa.
+**Riesgo.** La hoja usaba una beta de regresión de 1,90 (costo del patrimonio 13,5%). Tras la revisión del 30-sep-2026 usa la bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja; 1,51 sin deuda relevante), con costo del patrimonio de 11,7%: el DCF Base pasó de US$162,65 a US$178,38. La ciclicidad del negocio se modela en las historias (B y D), no en la tasa.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,90 | 13,5% | 13,4% | US$162,65 |
-| Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 11,7% | 11,7% | US$179,05 |
+| Hoja (regresión o la cargada en el libro) | 1,51 | 11,7% | 11,7% | US$178,38 |
+| Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 11,7% | 11,7% | US$178,56 |
 
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,90) | Valor/acción (beta 1,51) |
-|---|---:|---|---:|---:|---:|---:|---:|
-| **A · Ciclo de IA largo que desacelera con la escala** | 40% | Data Center: 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz: 10%, 8%, 7%, 6%, 6% | 17,1% | 58% | 3,0 | US$132,30 | US$145,37 |
-| **B · Ciclo de semiconductores: el capex se corrige** | 30% | Data Center: 35%, -10%, 0%, 8%, 8%; Gaming, visualización y automotriz: 5%, 5%, 5%, 5%, 5% | 7,0% | 50% | 3,0 | US$70,44 | US$76,84 |
-| **C · La IA es infraestructura permanente** | 20% | Data Center: 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz: 12%, 12%, 10%, 10%, 8% | 25,3% | 60% | 3,0 | US$205,45 | US$226,56 |
-| **D · Chips propios de los clientes y corrección fuerte** | 10% | Data Center: 25%, -25%, -10%, 5%, 5%; Gaming, visualización y automotriz: 0%, 0%, 0%, 0%, 0% | -1,3% | 40% | 3,0 | US$39,64 | US$42,82 |
-| **Valor esperado** | 100% |  |  |  |  | **US$119,11** | **US$130,79** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,51) |
+|---|---:|---|---:|---:|---:|---:|
+| **A · Ciclo de IA largo que desacelera con la escala** | 40% | Data Center: 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz: 10%, 8%, 7%, 6%, 6% | 17,1% | 58% | 3,0 | US$144,82 |
+| **B · Ciclo de semiconductores: el capex se corrige** | 30% | Data Center: 35%, -10%, 0%, 8%, 8%; Gaming, visualización y automotriz: 5%, 5%, 5%, 5%, 5% | 7,0% | 50% | 3,0 | US$76,56 |
+| **C · La IA es infraestructura permanente** | 20% | Data Center: 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz: 12%, 12%, 10%, 10%, 8% | 25,3% | 60% | 3,0 | US$225,71 |
+| **D · Chips propios de los clientes y corrección fuerte** | 10% | Data Center: 25%, -25%, -10%, 5%, 5%; Gaming, visualización y automotriz: 0%, 0%, 0%, 0%, 0% | -1,3% | 40% | 3,0 | US$42,67 |
+| **Valor esperado** | 100% |  |  |  |  | **US$130,30** |
 
 A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). D (10%) combina corrección fuerte y pérdida de participación frente a chips propios. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF Base (beta 1,90; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF Base (beta 1,51; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
 | Crecimiento \ Margen | 54,0% | 56,0% | 58,0% | 60,0% | 62,0% |
 |---|---:|---:|---:|---:|---:|
-| 17,2% | 124,75 | 129,01 | 133,26 | 137,52 | 141,78 |
-| 19,2% | 137,74 | 142,50 | 147,26 | 152,01 | 156,77 |
-| 21,2% | 152,04 | 157,35 | 162,65 | 167,96 | 173,26 |
-| 23,2% | 167,75 | 173,66 | 179,57 | 185,48 | 191,39 |
-| 25,2% | 185,00 | 191,58 | 198,15 | 204,73 | 211,31 |
+| 17,2% | 136,51 | 141,20 | 145,89 | 150,58 | 155,27 |
+| 19,2% | 150,87 | 156,12 | 161,36 | 166,60 | 171,84 |
+| 21,2% | 166,68 | 172,53 | 178,38 | 184,23 | 190,08 |
+| 23,2% | 184,06 | 190,58 | 197,10 | 203,62 | 210,14 |
+| 25,2% | 203,15 | 210,40 | 217,66 | 224,91 | 232,17 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 50% | Margen 58% | Margen 62% |
 |---|---:|---:|---:|
-| Beta 1,90 | 31,2% (0% de las empresas) | 28,2% (0% de las empresas) | 27,0% (0% de las empresas) |
+| Beta 1,51 | 29,2% (0% de las empresas) | 26,4% (1% de las empresas) | 25,0% (1% de las empresas) |
 | Beta 1,51 | 29,2% (0% de las empresas) | 26,2% (1% de las empresas) | 25,0% (1% de las empresas) |
 
-Frente al valor esperado de las historias (US$119,11 con la beta de la hoja; US$130,79 con la propuesta), el precio está por encima en 92% y 75%, respectivamente. El precio está muy por encima del valor esperado de las historias y del DCF de la hoja. El DCF inverso pide 25-31% anual en los años 1-5, algo que prácticamente ninguna empresa de este tamaño logró. ¿Qué sabe el mercado que yo no? Paga por la historia C o algo mejor, y probablemente con un costo de capital más bajo que el de la hoja. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.
+Frente al valor esperado de las historias (US$130,30), el precio está por encima en 76%. El precio está muy por encima del valor esperado de las historias y del DCF de la hoja. El DCF inverso pide 25-29% anual en los años 1-5, algo que prácticamente ninguna empresa de este tamaño logró. ¿Qué sabe el mercado que yo no? Paga por la historia C o algo mejor, y probablemente con un costo de capital aún más bajo que el de la hoja. Aquí el mayor error posible es doble: subestimar el ciclo (como quien vendió en 2023) o sobreestimar su duración (como en 2000 con Cisco). Las historias ponen ese dilema en números.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$119,11 con la beta de la hoja; US$
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Proveedor dominante de la infraestructura de IA en la cima de un ciclo de inversión |  |
 | Probabilidades | A 40% / B 30% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$119,11 / US$130,79 |  |
-| Rango (historia más débil a más fuerte) | US$39,64 a US$226,56 |  |
+| Valor esperado | US$130,30 |  |
+| Rango (historia más débil a más fuerte) | US$42,67 a US$225,93 |  |
 | Confianza | Baja: el valor depende de la duración del ciclo, que nadie puede prever |  |
 | Qué cambiaría la opinión | Capex de los hiperescaladores y participación de NVIDIA en inferencia |  |
 | Revisión | Resultados del 3T FY27 (nov-2026) |  |

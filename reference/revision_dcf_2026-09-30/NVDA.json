@@ -1,0 +1,14 @@
+{
+ "ticker": "NVDA",
+ "sheet_id": "1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Cost of capital worksheet",
+   "celda": "B23",
+   "antes": 1.9,
+   "despues": 1.51,
+   "motivo": "Beta bottom-up de Semiconductor (Damodaran, ene-2026) en lugar de la de regresión (1,90)."
+  }
+ ]
+}

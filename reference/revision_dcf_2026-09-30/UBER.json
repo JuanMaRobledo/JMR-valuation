@@ -1,0 +1,21 @@
+{
+ "ticker": "UBER",
+ "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.26,
+   "despues": 0.21,
+   "motivo": "Margen GAAP de 13% en el 2T26; 26% superaba incluso el margen de los mejores segmentos. Objetivo 21%."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 3,
+   "despues": 2.5,
+   "motivo": "Flotas autónomas y Delivery Hero hacen el crecimiento más intensivo en capital; antes 3."
+  }
+ ]
+}

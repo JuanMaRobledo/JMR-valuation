@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Uber Technologies, Inc. (UBER) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$111,44 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Los valores se calculan con el motor del Modelo JMR calibrado para que el escenario Base reproduzca el DCF de la hoja (US$88,85 por acción); la hoja no se modifica. El valor intrínseco es el DCF; los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -47,39 +47,39 @@ Para empresas de más de US$50.000 millones, crecer 11% anual cinco años (histo
 | Margen operativo GAAP | 3,0% | 6,4% | 10,7% | 12,1% |
 | FCFF (hoja) | 635 | 8.337 | 11.935 | — |
 
-**Márgenes.** El margen GAAP subió 7-8 puntos por año desde 2023. La hoja supone 14% el próximo año y 26% de objetivo en cinco años: exigente, pero coherente con los márgenes de segmento de Movilidad (30%). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%.
+**Márgenes.** El margen GAAP subió 7-8 puntos por año desde 2023. La hoja suponía 26% de objetivo en cinco años, más que el margen de sus mejores segmentos; tras la revisión del 30-sep-2026 supone 14% el próximo año y 21% de objetivo (margen GAAP de 13,4% en el 2T26). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%.
 
-**Reinversión y retorno.** Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa un sales-to-capital de 3 y 3,5. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Si ocurre, el sales-to-capital real será menor que el de la hoja.
+**Reinversión y retorno.** Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Por eso la revisión bajó el sales-to-capital de los años 1-5 a 2,5.
 
-**Riesgo.** La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF Base casi no cambia (US$111,44 → US$112,51). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja.
+**Riesgo.** La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF Base casi no cambia (US$88,85 → US$89,70). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 0,80 | 8,6% | 8,2% | US$111,44 |
-| Bottom-up del sector (Transportation, reapalancada) | 0,76 | 8,4% | 8,0% | US$112,51 |
+| Hoja (regresión o la cargada en el libro) | 0,80 | 8,6% | 8,2% | US$88,85 |
+| Bottom-up del sector (Transportation, reapalancada) | 0,76 | 8,4% | 8,0% | US$89,70 |
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 0,80) | Valor/acción (beta 0,76) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22% | 3,0 | US$91,90 | US$92,78 |
-| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16% | 3,0 | US$54,52 | US$55,01 |
-| **C · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26% | 3,0 | US$125,80 | US$127,02 |
-| **D · Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10% | 3,0 | US$29,07 | US$29,30 |
-| **Valor esperado** | 100% |  |  |  |  | **US$83,05** | **US$83,84** |
+| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22% | 2,5 | US$91,18 | US$92,05 |
+| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16% | 2,5 | US$54,10 | US$54,59 |
+| **C · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26% | 2,5 | US$124,88 | US$126,09 |
+| **D · Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10% | 2,5 | US$28,97 | US$29,21 |
+| **Valor esperado** | 100% |  |  |  |  | **US$82,43** | **US$83,21** |
 
 A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. B (25%) es la presión de los robotaxis y la regulación sobre Movilidad. C (20%) es Uber como la red preferida de los vehículos autónomos. D (10%) es la desintermediación por Waymo y Tesla. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 0,80; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
-| Crecimiento \ Margen | 22,0% | 24,0% | 26,0% | 28,0% | 30,0% |
+| Crecimiento \ Margen | 17,0% | 19,0% | 21,0% | 23,0% | 25,0% |
 |---|---:|---:|---:|---:|---:|
-| 7,4% | 76,96 | 83,84 | 90,72 | 97,60 | 104,48 |
-| 9,4% | 85,07 | 92,81 | 100,55 | 108,30 | 116,04 |
-| 11,4% | 94,04 | 102,74 | 111,44 | 120,15 | 128,85 |
-| 13,4% | 103,95 | 113,72 | 123,49 | 133,26 | 143,02 |
-| 15,4% | 114,91 | 125,85 | 136,80 | 147,75 | 158,69 |
+| 7,4% | 59,30 | 66,25 | 73,20 | 80,16 | 87,11 |
+| 9,4% | 64,98 | 72,81 | 80,64 | 88,46 | 96,29 |
+| 11,4% | 71,26 | 80,06 | 88,85 | 97,65 | 106,45 |
+| 13,4% | 78,19 | 88,06 | 97,93 | 107,81 | 117,68 |
+| 15,4% | 85,82 | 96,89 | 107,95 | 119,02 | 130,09 |
 
 
 ### Pre-mortem
@@ -114,10 +114,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 16% | Margen 22% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 0,80 | 11,6% (13% de las empresas) | 5,0% (44% de las empresas) | 2,0% (63% de las empresas) |
-| Beta 0,76 | 11,4% (14% de las empresas) | 4,8% (46% de las empresas) | 1,8% (64% de las empresas) |
+| Beta 0,80 | 12,0% (12% de las empresas) | 5,0% (44% de las empresas) | 1,8% (64% de las empresas) |
+| Beta 0,76 | 11,8% (13% de las empresas) | 4,8% (46% de las empresas) | 1,6% (65% de las empresas) |
 
-Frente al valor esperado de las historias (US$83,05 con la beta de la hoja; US$83,84 con la propuesta), el precio está por debajo en 18% y 19%, respectivamente. El precio está ~18% por debajo del valor esperado. El DCF inverso pide 5% anual con margen de 22% (lo logró ~44-46% de las empresas de este tamaño) o 2% con margen de 26%, y 11-12% solo si el margen se queda en 16%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de los robotaxis y el cambio a un modelo más intensivo en capital. Si crees que Uber será la red de los autónomos, el precio parece bajo.
+Frente al valor esperado de las historias (US$82,43 con la beta de la hoja; US$83,21 con la propuesta), el precio está por debajo en 17% y por debajo en 18%, respectivamente. El precio está ~18% por debajo del valor esperado. El DCF inverso pide 5% anual con margen de 22% (lo logró ~44-46% de las empresas de este tamaño) o 2% con margen de 26%, y 11-12% solo si el margen se queda en 16%: el mercado valora algo entre las historias A y B. ¿Qué sabe el mercado que yo no? Descuenta el riesgo de los robotaxis y el cambio a un modelo más intensivo en capital. Si crees que Uber será la red de los autónomos, el precio parece bajo.
 
 
 ### Registro de decisión
@@ -127,8 +127,8 @@ Frente al valor esperado de las historias (US$83,05 con la beta de la hoja; US$8
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Red de movilidad y entrega ya rentable que enfrenta a los robotaxis y se vuelve intensiva en capital |  |
 | Probabilidades | A 45% / B 25% / C 20% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$83,05 / US$83,84 |  |
-| Rango (historia más débil a más fuerte) | US$29,07 a US$127,02 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$82,43 / US$83,21 |  |
+| Rango (historia más débil a más fuerte) | US$28,97 a US$126,09 |  |
 | Confianza | Media: la red y los márgenes son sólidos; los autónomos y las compras son inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de viajes frente a la expansión de Waymo y Tesla; precio y cierre de Delivery Hero |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

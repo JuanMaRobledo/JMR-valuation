@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF Base casi no cambia (US$111,44 → US$112,51). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja."
+  "texto": "La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF Base casi no cambia (US$88,85 → US$89,70). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja."
  },
  "historias": [
   {
@@ -209,10 +209,10 @@
   }
  },
  "margenes": {
-  "texto": "El margen GAAP subió 7-8 puntos por año desde 2023. La hoja supone 14% el próximo año y 26% de objetivo en cinco años: exigente, pero coherente con los márgenes de segmento de Movilidad (30%). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%."
+  "texto": "El margen GAAP subió 7-8 puntos por año desde 2023. La hoja suponía 26% de objetivo en cinco años, más que el margen de sus mejores segmentos; tras la revisión del 30-sep-2026 supone 14% el próximo año y 21% de objetivo (margen GAAP de 13,4% en el 2T26). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%."
  },
  "reinversion": {
-  "texto": "Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa un sales-to-capital de 3 y 3,5. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Si ocurre, el sales-to-capital real será menor que el de la hoja."
+  "texto": "Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Por eso la revisión bajó el sales-to-capital de los años 1-5 a 2,5."
  },
  "prob_texto": "A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. B (25%) es la presión de los robotaxis y la regulación sobre Movilidad. C (20%) es Uber como la red preferida de los vehículos autónomos. D (10%) es la desintermediación por Waymo y Tesla.",
  "premortem": [

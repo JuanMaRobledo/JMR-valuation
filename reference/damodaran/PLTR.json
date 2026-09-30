@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,62. La bottom-up de Software (System & Application) sin deuda da 1,25; el DCF Base sube de US$105,73 a US$116,21. La dependencia de contratos públicos grandes y el gobierno controlado por fundadores (clase F) suben el riesgo, pero ese riesgo está más en los flujos que en la tasa."
+  "texto": "La hoja usaba una beta de regresión de 1,62; tras la revisión usa la bottom-up de Software (System & Application) sin deuda, 1,25. La dependencia de contratos públicos grandes y el gobierno controlado por fundadores (clase F) suben el riesgo, pero ese riesgo está más en los flujos que en la tasa."
  },
  "historias": [
   {
@@ -129,9 +129,9 @@
    "Probable"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$4.500-7.000 millones, crecer 35% anual cinco años (historia A) lo logró ~1%; 19% (historia B), ~8%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. Aun así, la hoja supone 48% anual (82% el primer año), por encima incluso de la historia C.",
+ "tasas_base_nota": "Para empresas de US$4.500-7.000 millones, crecer 35% anual cinco años (historia A) lo logró ~1%; 19% (historia B), ~8%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. La hoja suponía 48% anual (82% el primer año); tras la revisión del 30-sep-2026 supone ~42% (68% el primer año, coherente con la guía 2026 de US$8.150 millones), entre las historias A y C.",
  "crecimiento": {
-  "texto": "Ingresos de US$2.225 millones (2023, +16,7%), US$2.866 millones (2024, +28,8%) y US$4.475 millones (2025, +56,2%); LTM US$6.156 millones. En 2025 EE.UU. fue el 74% (US$3.320 millones), Reino Unido el 10%. En 2026 U.S. Commercial creció 149% en un trimestre. La hoja supone +82% el próximo año y 40% en los años 2-5. La división de las historias (Gobierno ~52%, Comercial ~48%) es una aproximación.",
+  "texto": "Ingresos de US$2.225 millones (2023, +16,7%), US$2.866 millones (2024, +28,8%) y US$4.475 millones (2025, +56,2%); LTM US$6.156 millones. En 2025 EE.UU. fue el 74% (US$3.320 millones), Reino Unido el 10%. En 2026 U.S. Commercial creció 149% en un trimestre. La hoja supone ahora +68% en los próximos doce meses y 35% en los años 2-5 (antes 82% y 40%). En el 2T26 los ingresos crecieron 93% (US$1.940 millones) y la guía 2026 subió a US$8.150-8.158 millones. La división de las historias (Gobierno ~52%, Comercial ~48%) es una aproximación.",
   "tabla": {
    "cols": [
     "US$ millones",
@@ -180,12 +180,12 @@
   }
  },
  "margenes": {
-  "texto": "El margen operativo saltó de 5% (2023) a 43% LTM por apalancamiento operativo: el costo de servir a un cliente adicional es bajo. La hoja supone 48% y 50% de objetivo. La compensación en acciones es alta y es un costo real para el accionista. Las historias van de 30% (comoditización) a 50%."
+  "texto": "El margen operativo saltó de 5% (2023) a 43% LTM por apalancamiento operativo: el costo de servir a un cliente adicional es bajo. La hoja supone 48% el próximo año y 48% de objetivo (antes 50%). La compensación en acciones es alta y es un costo real para el accionista. Las historias van de 30% (comoditización) a 50%."
  },
  "reinversion": {
   "texto": "Casi no necesita capital (capex de US$34 millones en 2025). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en ingenieros desplegados con los clientes (bootcamps) y en I+D; el crecimiento no está limitado por el capital sino por la capacidad de convertir pilotos en contratos."
  },
- "prob_texto": "A (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). B (30%) es la normalización en un software de alta calidad (~19%). C (20%) es Palantir como sistema operativo de la IA empresarial, cerca de lo que supone la hoja. D (10%) es comoditización con pérdida de contratos.",
+ "prob_texto": "A (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). B (30%) es la normalización en un software de alta calidad (~19%). C (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. D (10%) es comoditización con pérdida de contratos.",
  "premortem": [
   "La adopción comercial es un ciclo de entusiasmo por la IA: los pilotos no se renuevan cuando los retornos no aparecen.",
   "Los hiperescaladores (Microsoft Fabric, Google, AWS) y Databricks/Snowflake ofrecen lo mismo integrado y más barato.",
@@ -226,7 +226,7 @@
    "Cancelaciones o protestas"
   ]
  ],
- "precio_lectura": "El precio (US$187,48) está más de tres veces por encima del valor esperado de las historias y ~75% por encima del DCF de la hoja. El DCF inverso no encuentra solución hasta 60% anual durante cinco años (solo con margen de 50% y beta 1,25 llega a ~60%): el precio supone algo mejor que la historia C, sostenido por más de cinco años. ¿Qué sabe el mercado que yo no? Quizá nada que pueda medirse: es un caso donde el precio refleja una narrativa (Palantir como plataforma dominante de la IA) más que flujos proyectables. Con criterio Damodaran, un gran negocio puede ser una mala inversión a un precio que exige lo improbable.",
+ "precio_lectura": "El precio (US$187,48) está más de tres veces por encima del valor esperado de las historias y más del doble del DCF revisado (US$85,42). El DCF inverso no encuentra solución hasta 60% anual durante cinco años (solo con margen de 50% y beta 1,25 llega a ~60%): el precio supone algo mejor que la historia C, sostenido por más de cinco años. ¿Qué sabe el mercado que yo no? Quizá nada que pueda medirse: es un caso donde el precio refleja una narrativa (Palantir como plataforma dominante de la IA) más que flujos proyectables. Con criterio Damodaran, un gran negocio puede ser una mala inversión a un precio que exige lo improbable.",
  "frase": "Plataforma de datos e IA con crecimiento excepcional y un precio que exige aún más",
  "confianza": "Baja: el crecimiento futuro es muy incierto y la distancia al precio es enorme",
  "cambiaria": "Crecimiento comercial sostenido por encima de 40% con márgenes en alza durante varios años",
