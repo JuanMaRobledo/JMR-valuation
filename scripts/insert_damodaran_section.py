@@ -21,6 +21,8 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 _ROOT = Path(__file__).resolve().parents[1]
 TITLE = "Valor con criterio Damodaran"
 QC_NOTE = "Historia, tasas base, piezas del valor, historias con probabilidades, pre-mortem, indicadores y precio al final"
@@ -63,6 +65,34 @@ def insert(html: str, section: str) -> tuple[str, str]:
     return html, f"insertada ({n})"
 
 
+LINKED = ("metodos", "objetivoPonderado", "zonas", "cagr", "precioMOS", "precioMOSMax", "valorPresentePonderado",
+          "descuentoMultiples", "precioMOSHoy", "valorEsperado", "precioMOSValorEsperado", "baseMOS", "precio", "mos")
+
+
+def place_block(rec: dict, datos: Path, ticker: str) -> str:
+    """Bloque «Valoración vigente» al final de la sección 12, antes de «Registro de decisión» (el precio va solo al
+    final, prompt v5). Quita el bloque y la «Lectura de la valoración vigente» de cualquier otro lugar."""
+    import sync_research_present_value as srp
+    html, lv = rec["html"], rec.get("linkedValuation") or {}
+    if not lv.get("sourcePath"):
+        return html
+    val = json.loads((datos / lv["sourcePath"]).read_text())
+    for k in LINKED:
+        if k in val:
+            lv[k] = val[k]
+    html = re.sub(re.escape(srp.START) + r".*?" + re.escape(srp.END), "", html, flags=re.S)
+    html = re.sub(re.escape(srp.LECTURA) + r".*?</p>", "", html, flags=re.S)
+    block = (srp.current_block(ticker, lv, val).replace("<h2>Valoración vigente", "<h3>Valoración vigente")
+             .replace(f" · {ticker}</h2>", f" · {ticker}</h3>"))
+    sec = html.find(f"{TITLE}</h2>")
+    reg = html.find("<h3>Registro de decisión</h3>", sec)
+    if sec < 0 or reg < 0:
+        return html
+    rec["valuationHtml"] = block
+    rec["linkedValuation"] = lv
+    return html[:reg] + block + "\n" + html[reg:]
+
+
 def main(argv: list[str]) -> int:
     datos, tickers = Path(argv[0]), argv[1:]
     for t in tickers:
@@ -73,6 +103,7 @@ def main(argv: list[str]) -> int:
             continue
         rec = json.loads(Path(files[0]).read_text())
         rec["html"], estado = insert(rec["html"], sec_path.read_text().strip())
+        rec["html"] = place_block(rec, datos, t)
         rec["updatedAt"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
         Path(files[0]).write_text(json.dumps(rec, ensure_ascii=False, indent=2) + "\n")
         print(f"{t}: {estado}")

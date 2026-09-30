@@ -1,303 +1,327 @@
 {
-  "ticker": "PAGS",
-  "fecha": "2026-09-30",
-  "precio": 9.02,
-  "dcf_base": 11.923674329093467,
-  "g_ref": 0.057999999999999996,
-  "m_base": 0.156,
-  "s2c": 1.4,
-  "wacc": 0.14653548933723592,
-  "beta_hoja": 1.3,
-  "beta_bu": 0.33119870910647997,
-  "beta_prop": 0.97,
-  "industria": "Financial Svcs. (Non-bank & Insurance)",
-  "bu_sector": 0.33,
-  "rf": 0.0499,
-  "erp": 0.07469999999999999,
-  "tasas_base": {
-    "tramo": "$3,000-4,500 Mn",
-    "<(25)": 0.2,
-    "(25)-(20)": 0.2,
-    "(20)-(15)": 0.7,
-    "(15)-(10)": 1.7,
-    "(10)-(5)": 3.7,
-    "(5)-0": 14.4,
-    "0-5": 31.3,
-    "5-10": 25.2,
-    "10-15": 12.3,
-    "15-20": 5.2,
-    "20-25": 2.6,
-    "25-30": 1.4,
-    "30-35": 0.5,
-    "35-40": 0.2,
-    "40-45": 0.3,
-    ">45": 0.2,
-    "Mean": 5.4,
-    "Median": 4.7,
-    "StDev": 8.5,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+ "ticker": "PAGS",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.02,
+  "growthY1Base": 0.05,
+  "growthY1Opt": 0.09,
+  "growthCons": 0.02,
+  "growthBase": 0.06,
+  "growthOpt": 0.09,
+  "marginY1Cons": 0.125,
+  "marginY1Base": 0.125,
+  "marginY1Opt": 0.125,
+  "marginCons": 0.11,
+  "marginBase": 0.14,
+  "marginOpt": 0.16,
+  "salesToCapital2": 1.4,
+  "wacc": 0.14652912245044453,
+  "costoPatrimonio": 0.14700999999999997,
+  "taxEffective": 0.173,
+  "convergenceYear": 5,
+  "terminalWacc": 0.12,
+  "roicTerminal": 0,
+  "salesToCapital": 1.4
+ },
+ "financiero": true,
+ "dcf_sin_exceso": null,
+ "precio": 8.96,
+ "dcf_base": 11.923674329093467,
+ "g_ref": 0.057999999999999996,
+ "m_base": 0.156,
+ "s2c": 1.4,
+ "wacc": 0.14652912245044453,
+ "beta_hoja": 1.3,
+ "beta_bu": 0.3312054434273029,
+ "beta_prop": 0.97,
+ "industria": "Financial Svcs. (Non-bank & Insurance)",
+ "bu_sector": 0.33,
+ "rf": 0.0499,
+ "erp": 0.07469999999999999,
+ "tasas_base": {
+  "tramo": "$3,000-4,500 Mn",
+  "<(25)": 0.2,
+  "(25)-(20)": 0.2,
+  "(20)-(15)": 0.7,
+  "(15)-(10)": 1.7,
+  "(10)-(5)": 3.7,
+  "(5)-0": 14.4,
+  "0-5": 31.3,
+  "5-10": 25.2,
+  "10-15": 12.3,
+  "15-20": 5.2,
+  "20-25": 2.6,
+  "25-30": 1.4,
+  "30-35": 0.5,
+  "35-40": 0.2,
+  "40-45": 0.3,
+  ">45": 0.2,
+  "Mean": 5.4,
+  "Median": 4.7,
+  "StDev": 8.5,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Banco digital estable con ROAE de ~15%",
+   "prob": 0.45,
+   "margen": 0.156,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     -0.03,
+     -0.02,
+     0,
+     0.01,
+     0.01
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Ingresos financieros y banca": [
+     0.1,
+     0.1,
+     0.09,
+     0.08,
+     0.08
+    ]
+   },
+   "cagr": 0.055645024923835607,
+   "rev5": 5101.601847089397,
+   "mix5": {
+    "Transacciones (adquirencia)": 0.29580083318132083,
+    "Ingresos financieros y banca": 0.7041991668186791
+   },
+   "tasa_base": 0.6001621439767892,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 11.891267632316424,
+   "valor_beta_prop": 13.441849060361719
   },
-  "historias": [
-    {
-      "nombre": "A · Banco digital estable con ROAE de ~15%",
-      "prob": 0.45,
-      "margen": 0.156,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          -0.03,
-          -0.02,
-          0,
-          0.01,
-          0.01
-        ],
-        "Ingresos financieros y banca": [
-          0.1,
-          0.1,
-          0.09,
-          0.08,
-          0.08
-        ]
-      },
-      "cagr": 0.055645024923835607,
-      "rev5": 5101.601847089397,
-      "mix5": {
-        "Transacciones (adquirencia)": 0.29580083318132083,
-        "Ingresos financieros y banca": 0.7041991668186791
-      },
-      "tasa_base": 0.6001621439767892,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 11.891267632316424,
-      "valor_beta_prop": 13.441786324825976
-    },
-    {
-      "nombre": "B · El PIX y la competencia erosionan",
-      "prob": 0.3,
-      "margen": 0.13,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          -0.08,
-          -0.06,
-          -0.05,
-          -0.04,
-          -0.03
-        ],
-        "Ingresos financieros y banca": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      },
-      "cagr": 0.013971343155100069,
-      "rev5": 4171.050428150978,
-      "mix5": {
-        "Transacciones (adquirencia)": 0.2854317036322126,
-        "Ingresos financieros y banca": 0.7145682963677875
-      },
-      "tasa_base": 0.8237625317133118,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 11.140643558401408,
-      "valor_beta_prop": 12.465960614524844
-    },
-    {
-      "nombre": "C · Crece el banco: crédito y depósitos",
-      "prob": 0.15,
-      "margen": 0.17,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          0,
-          0.02,
-          0.03,
-          0.03,
-          0.03
-        ],
-        "Ingresos financieros y banca": [
-          0.15,
-          0.14,
-          0.13,
-          0.12,
-          0.1
-        ]
-      },
-      "cagr": 0.09033343043964726,
-      "rev5": 5996.718675198243,
-      "mix5": {
-        "Transacciones (adquirencia)": 0.2892434728398233,
-        "Ingresos financieros y banca": 0.7107565271601767
-      },
-      "tasa_base": 0.4017195105841778,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 12.729056658385355,
-      "valor_beta_prop": 14.502377729872315
-    },
-    {
-      "nombre": "D · Crisis de crédito en Brasil",
-      "prob": 0.1,
-      "margen": 0.1,
-      "crec": {
-        "Transacciones (adquirencia)": [
-          -0.1,
-          -0.05,
-          -0.03,
-          0,
-          0
-        ],
-        "Ingresos financieros y banca": [
-          -0.05,
-          0,
-          0.03,
-          0.05,
-          0.05
-        ]
-      },
-      "cagr": -0.004226904030948497,
-      "rev5": 3809.947365446704,
-      "mix5": {
-        "Transacciones (adquirencia)": 0.3387538733673643,
-        "Ingresos financieros y banca": 0.6612461266326357
-      },
-      "tasa_base": 0.8761734836091317,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 9.9941785794775,
-      "valor_beta_prop": 11.177753827752097
-    }
-  ],
-  "valor_esperado_beta_hoja": 11.602039858768366,
-  "valor_esperado_beta_prop": 13.0817240727852,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.3,
-      "ke": 0.14700999999999997,
-      "wacc": 0.14653548933723592,
-      "dcf_base": 11.923674329093467
-    },
-    {
-      "enfoque": "Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada)",
-      "beta": 0.33119870910647997,
-      "ke": 0.07464054357025404,
-      "wacc": 0.07451484825424033,
-      "dcf_base": 17.33627294096443
-    },
-    {
-      "enfoque": "Propuesta (sector ajustado por riesgo propio)",
-      "beta": 0.97,
-      "ke": 0.12235899999999998,
-      "wacc": 0.12200330530652664,
-      "dcf_base": 13.486638396757183
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.017999999999999995,
-      0.03799999999999999,
-      0.057999999999999996,
-      0.078,
-      0.098
+  {
+   "nombre": "B · El PIX y la competencia erosionan",
+   "prob": 0.3,
+   "margen": 0.13,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     -0.08,
+     -0.06,
+     -0.05,
+     -0.04,
+     -0.03
     ],
-    "m": [
-      0.11599999999999999,
-      0.136,
-      0.156,
-      0.176,
-      0.196
-    ],
-    "v": [
-      [
-        11.056555733726784,
-        11.214756729127252,
-        11.335924089838803,
-        11.432081100584343,
-        11.51048846524719
-      ],
-      [
-        11.042532765237526,
-        11.376203482758738,
-        11.630016818491121,
-        11.830176091781361,
-        11.992443911611772
-      ],
-      [
-        10.986124636976125,
-        11.517562892874587,
-        11.92109321985517,
-        12.238786076697556,
-        12.495929192166251
-      ],
-      [
-        10.881569875448942,
-        11.635202331162345,
-        12.207179811992184,
-        12.657272671592006,
-        13.0214069005772
-      ],
-      [
-        10.722478975207709,
-        11.72503263472557,
-        12.485982949958895,
-        13.084788912810769,
-        13.569224375849984
-      ]
-    ],
-    "referencia_constante": 11.92109321985517,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Ingresos financieros y banca": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ]
+   },
+   "cagr": 0.013971343155100069,
+   "rev5": 4171.050428150978,
+   "mix5": {
+    "Transacciones (adquirencia)": 0.2854317036322126,
+    "Ingresos financieros y banca": 0.7145682963677875
+   },
+   "tasa_base": 0.8237625317133118,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 11.140643558401408,
+   "valor_beta_prop": 12.46601411157545
   },
-  "inverso": [
-    {
-      "beta": 1.3,
-      "margen": 0.13,
-      "g": -0.04431278296257274,
-      "tasa_base": 0.9502914593923039
-    },
-    {
-      "beta": 1.3,
-      "margen": 0.156,
-      "g": -0.04435531759061023,
-      "tasa_base": 0.9503229350170516
-    },
-    {
-      "beta": 1.3,
-      "margen": 0.17,
-      "g": -0.04437667548094583,
-      "tasa_base": 0.9503387398558999
-    },
-    {
-      "beta": 0.97,
-      "margen": 0.13,
-      "g": -0.0652791333781319,
-      "tasa_base": 0.9658065586998177
-    },
-    {
-      "beta": 0.97,
-      "margen": 0.156,
-      "g": -0.06530735619633748,
-      "tasa_base": 0.9658274435852898
-    },
-    {
-      "beta": 0.97,
-      "margen": 0.17,
-      "g": -0.06532160390635261,
-      "tasa_base": 0.9658379868907009
-    }
+  {
+   "nombre": "C · Crece el banco: crédito y depósitos",
+   "prob": 0.15,
+   "margen": 0.17,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     0,
+     0.02,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "Ingresos financieros y banca": [
+     0.15,
+     0.14,
+     0.13,
+     0.12,
+     0.1
+    ]
+   },
+   "cagr": 0.09033343043964726,
+   "rev5": 5996.718675198243,
+   "mix5": {
+    "Transacciones (adquirencia)": 0.2892434728398233,
+    "Ingresos financieros y banca": 0.7107565271601767
+   },
+   "tasa_base": 0.4017195105841778,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 12.729056658385355,
+   "valor_beta_prop": 14.502449595910132
+  },
+  {
+   "nombre": "D · Crisis de crédito en Brasil",
+   "prob": 0.1,
+   "margen": 0.1,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     -0.1,
+     -0.05,
+     -0.03,
+     0,
+     0
+    ],
+    "Ingresos financieros y banca": [
+     -0.05,
+     0,
+     0.03,
+     0.05,
+     0.05
+    ]
+   },
+   "cagr": -0.004226904030948497,
+   "rev5": 3809.947365446704,
+   "mix5": {
+    "Transacciones (adquirencia)": 0.3387538733673643,
+    "Ingresos financieros y banca": 0.6612461266326357
+   },
+   "tasa_base": 0.8761734836091317,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 9.9941785794775,
+   "valor_beta_prop": 11.17780161238503
+  }
+ ],
+ "valor_esperado_beta_hoja": 11.602039858768366,
+ "valor_esperado_beta_prop": 13.081783911260432,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.3,
+   "ke": 0.14700999999999997,
+   "wacc": 0.14652912245044453,
+   "dcf_base": 11.923674329093467
+  },
+  {
+   "enfoque": "Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada)",
+   "beta": 0.3312054434273029,
+   "ke": 0.07464104662401952,
+   "wacc": 0.07451093212164828,
+   "dcf_base": 17.33648084573117
+  },
+  {
+   "enfoque": "Propuesta (sector ajustado por riesgo propio)",
+   "beta": 0.97,
+   "ke": 0.12235899999999998,
+   "wacc": 0.12199760268986731,
+   "dcf_base": 13.486701644599947
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.017999999999999995,
+   0.03799999999999999,
+   0.057999999999999996,
+   0.078,
+   0.098
   ],
-  "ingresos_ltm": 3891.5
+  "m": [
+   0.11599999999999999,
+   0.136,
+   0.156,
+   0.176,
+   0.196
+  ],
+  "v": [
+   [
+    11.056555733726784,
+    11.214756729127252,
+    11.335924089838803,
+    11.432081100584343,
+    11.51048846524719
+   ],
+   [
+    11.042532765237526,
+    11.376203482758738,
+    11.630016818491121,
+    11.830176091781361,
+    11.992443911611772
+   ],
+   [
+    10.986124636976125,
+    11.517562892874587,
+    11.92109321985517,
+    12.238786076697556,
+    12.495929192166251
+   ],
+   [
+    10.881569875448942,
+    11.635202331162345,
+    12.207179811992184,
+    12.657272671592006,
+    13.0214069005772
+   ],
+   [
+    10.722478975207709,
+    11.72503263472557,
+    12.485982949958895,
+    13.084788912810769,
+    13.569224375849984
+   ]
+  ],
+  "referencia_constante": 11.92109321985517,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.3,
+   "margen": 0.13,
+   "g": -0.045694977627023514,
+   "tasa_base": 0.9513142834439975
+  },
+  {
+   "beta": 1.3,
+   "margen": 0.156,
+   "g": -0.04573405494323329,
+   "tasa_base": 0.9513432006579927
+  },
+  {
+   "beta": 1.3,
+   "margen": 0.17,
+   "g": -0.04575378056033602,
+   "tasa_base": 0.9513577976146488
+  },
+  {
+   "beta": 0.97,
+   "margen": 0.13,
+   "g": -0.06661404898464246,
+   "tasa_base": 0.9667943962486355
+  },
+  {
+   "beta": 0.97,
+   "margen": 0.156,
+   "g": -0.06664149968015981,
+   "tasa_base": 0.9668147097633184
+  },
+  {
+   "beta": 0.97,
+   "margen": 0.17,
+   "g": -0.0666553577058388,
+   "tasa_base": 0.9668249647023208
+  }
+ ],
+ "ingresos_ltm": 3891.5
 }

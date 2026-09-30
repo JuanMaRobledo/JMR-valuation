@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # PagSeguro Digital Ltd. (PAGS) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$12,53 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$11,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -47,40 +47,47 @@ Para empresas de US$3.000-4.500 millones, crecer 5,6% anual cinco años (histori
 | Margen (utilidad antes de impuestos) | 12,6% | 12,7% | 12,5% | 12,6% |
 | FCFF (hoja) | −845 | −333 | 703 | — |
 
-**Márgenes.** Por tratarse de un banco, la hoja usa la utilidad antes de impuestos sobre ingresos como «margen operativo»: estable en ~12,5% desde 2023. La hoja supone 12,5% y 14% de objetivo, apoyada en menor costo de fondeo (depósitos propios en lugar de deuda). Las historias van de 8% (crisis de crédito) a 16%.
+**Márgenes.** Para PagBank la rentabilidad relevante es el ROE, no el margen EBIT. El DCF de flujos al accionista parte de utilidad LTM de US$406,6 millones, 276 millones de acciones, ROE Base de 15,6%, crecimiento de beneficios de 5% el primer año y 6% en años 2-5. El ROE se desvanece al costo del patrimonio terminal de 12%; crecimiento estable en dólares de 3%. ROE de 13%/17% delimitan los escenarios. Son supuestos del analista, no guía; la cifra de ROAE ajustado de 15,6% procede del comunicado 2T de 11-ago-2026.
 
-**Reinversión y retorno.** En un banco, reinvertir es retener capital para crecer la cartera. La hoja usa un sales-to-capital de 1,4. El flujo libre de la hoja es volátil (negativo en 2023-2024 por el crecimiento del crédito y la anticipación). La empresa comprometió dividendos de R$1.000 millones por año en 2027-2028 y recompró R$1.330 millones en 2025: devuelve capital porque tiene exceso (Basilea 22,5%).
+**Reinversión y retorno.** La reinversión patrimonial se estima como utilidad × crecimiento / ROE; el FCFE es utilidad menos esa retención. Se descuenta al Ke de 14,7%, que converge a 12%. No se suma la liquidez bancaria ni se restan depósitos. El 22,5% de Basilea reportado en 2T muestra holgura, pero no identifica por sí solo capital distribuible: no se agrega un valor por exceso de capital no comprobado. La aproximación requiere que crecimiento de ingresos y beneficios sea comparable; la sensibilidad debe revisarse si cambia el riesgo de crédito o el capital regulatorio. Sin ventaja defendible: no tiene una barrera durable frente a Pix y los bancos digitales, y su ROIC apenas supera el costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
-**Riesgo.** La hoja usa una beta de 1,30 con prima de riesgo de Brasil (costo del patrimonio ~14,7%). La bottom-up desapalancada de Financial Services (0,33) no sirve: en financieras la deuda es materia prima y Damodaran recomienda usar la beta del patrimonio del sector (0,97). Con 0,97 y la misma prima de país, el costo del patrimonio es ~12,2% y el DCF Base sube de US$12,53 a US$14,20.
+**Riesgo.** La beta de la hoja es 1,30; el Ke inicial es 14,7%. La beta sectorial propuesta de 0,97 se evalúa como sensibilidad al costo del patrimonio. Se usa FCFE financiero y el ROE converge al Ke terminal; los depósitos y la caja operativa bancaria no son deuda y caja excedente de una industrial.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,30 | 14,7% | 14,7% | US$12,53 |
-| Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,33 | 7,5% | 7,5% | US$18,30 |
-| Propuesta (sector ajustado por riesgo propio) | 0,97 | 12,2% | 12,2% | US$14,20 |
+| Hoja (regresión o la cargada en el libro) | 1,30 | 14,7% | 14,7% | US$11,92 |
+| Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada) | 0,33 | 7,5% | 7,5% | US$17,34 |
+| Propuesta (sector ajustado por riesgo propio) | 0,97 | 12,2% | 12,2% | US$13,49 |
+
+
+### DCF financiero: supuestos y limitaciones
+
+Para PagBank la rentabilidad relevante es el ROE, no el margen EBIT. El DCF de flujos al accionista parte de utilidad LTM de US$406,6 millones, 276 millones de acciones, ROE Base de 15,6%, crecimiento de beneficios de 5% el primer año y 6% en años 2-5. El ROE se desvanece al costo del patrimonio terminal de 12%; crecimiento estable en dólares de 3%. ROE de 13%/17% delimitan los escenarios. Son supuestos del analista, no guía; la cifra de ROAE ajustado de 15,6% procede del comunicado 2T de 11-ago-2026. La reinversión patrimonial se estima como utilidad × crecimiento / ROE; el FCFE es utilidad menos esa retención. Se descuenta al Ke de 14,7%, que converge a 12%. No se suma la liquidez bancaria ni se restan depósitos. El 22,5% de Basilea reportado en 2T muestra holgura, pero no identifica por sí solo capital distribuible: no se agrega un valor por exceso de capital no comprobado. La aproximación requiere que crecimiento de ingresos y beneficios sea comparable; la sensibilidad debe revisarse si cambia el riesgo de crédito o el capital regulatorio. Sin ventaja defendible: no tiene una barrera durable frente a Pix y los bancos digitales, y su ROIC apenas supera el costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,30) | Valor/acción (beta 0,97) |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | ROE objetivo | Reinversión patrimonial | Valor/acción (beta 1,30) | Valor/acción (beta 0,97) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Banco digital estable con ROAE de ~15%** | 45% | Transacciones (adquirencia): -3%, -2%, 0%, 1%, 1%; Ingresos financieros y banca: 10%, 10%, 9%, 8%, 8% | 5,6% | 14% | 1,4 | US$12,49 | US$14,14 |
-| **B · El PIX y la competencia erosionan** | 30% | Transacciones (adquirencia): -8%, -6%, -5%, -4%, -3%; Ingresos financieros y banca: 5%, 5%, 5%, 5%, 5% | 1,4% | 12% | 1,4 | US$10,03 | US$11,21 |
-| **C · Crece el banco: crédito y depósitos** | 15% | Transacciones (adquirencia): 0%, 2%, 3%, 3%, 3%; Ingresos financieros y banca: 15%, 14%, 13%, 12%, 10% | 9,0% | 16% | 1,4 | US$15,63 | US$17,85 |
-| **D · Crisis de crédito en Brasil** | 10% | Transacciones (adquirencia): -10%, -5%, -3%, 0%, 0%; Ingresos financieros y banca: -5%, 0%, 3%, 5%, 5% | -0,4% | 8% | 1,4 | US$6,54 | US$7,23 |
-| **Valor esperado** | 100% |  |  |  |  | **US$11,63** | **US$13,12** |
+| **A · Banco digital estable con ROAE de ~15%** | 45% | Transacciones (adquirencia): -3%, -2%, 0%, 1%, 1%; Ingresos financieros y banca: 10%, 10%, 9%, 8%, 8% | 5,6% | 16% | 1,4 | US$11,89 | US$13,44 |
+| **B · El PIX y la competencia erosionan** | 30% | Transacciones (adquirencia): -8%, -6%, -5%, -4%, -3%; Ingresos financieros y banca: 5%, 5%, 5%, 5%, 5% | 1,4% | 13% | 1,4 | US$11,14 | US$12,47 |
+| **C · Crece el banco: crédito y depósitos** | 15% | Transacciones (adquirencia): 0%, 2%, 3%, 3%, 3%; Ingresos financieros y banca: 15%, 14%, 13%, 12%, 10% | 9,0% | 17% | 1,4 | US$12,73 | US$14,50 |
+| **D · Crisis de crédito en Brasil** | 10% | Transacciones (adquirencia): -10%, -5%, -3%, 0%, 0%; Ingresos financieros y banca: -5%, 0%, 3%, 5%, 5% | -0,4% | 10% | 1,4 | US$9,99 | US$11,18 |
+| **Valor esperado** | 100% |  |  |  |  | **US$11,60** | **US$13,08** |
 
 A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (15%) es un banco digital que crece a doble dígito. D (10%) es una crisis de crédito con morosidad en alza. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF Base (beta 1,30; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF Base (beta 1,30; US$ por acción; filas = crecimiento de los años 1-5, columnas = ROE objetivo):
 
-| Crecimiento \ Margen | 10,0% | 12,0% | 14,0% | 16,0% | 18,0% |
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
+| Crecimiento \ Margen | 11,6% | 13,6% | 15,6% | 17,6% | 19,6% |
 |---|---:|---:|---:|---:|---:|
-| 1,8% | 8,63 | 10,16 | 11,70 | 13,23 | 14,76 |
-| 3,8% | 8,66 | 10,38 | 12,10 | 13,83 | 15,55 |
-| 5,8% | 8,67 | 10,60 | 12,53 | 14,47 | 16,40 |
-| 7,8% | 8,66 | 10,82 | 12,99 | 15,16 | 17,33 |
-| 9,8% | 8,63 | 11,05 | 13,48 | 15,90 | 18,33 |
+| 1,8% | 11,06 | 11,21 | 11,34 | 11,43 | 11,51 |
+| 3,8% | 11,04 | 11,38 | 11,63 | 11,83 | 11,99 |
+| 5,8% | 10,99 | 11,52 | 11,92 | 12,24 | 12,50 |
+| 7,8% | 10,88 | 11,64 | 12,21 | 12,66 | 13,02 |
+| 9,8% | 10,72 | 11,73 | 12,49 | 13,08 | 13,57 |
 
 
 ### Pre-mortem
@@ -109,16 +116,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$8,90**.
+Precio de referencia de la valoración guardada: **US$8,96**.
 
-DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
+DCF inverso: crecimiento anual de beneficios en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
-|  | Margen 10% | Margen 12% | Margen 14% |
+|  | Margen 13% | Margen 16% | Margen 17% |
 |---|---:|---:|---:|
-| Beta 1,30 | ninguno entre −10% y 60% | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
-| Beta 0,97 | -9,4% (98% de las empresas) | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
+| Beta 1,30 | -4,6% (95% de las empresas) | -4,6% (95% de las empresas) | -4,6% (95% de las empresas) |
+| Beta 0,97 | -6,7% (97% de las empresas) | -6,7% (97% de las empresas) | -6,7% (97% de las empresas) |
 
-Frente al valor esperado de las historias (US$11,63 con la beta de la hoja; US$13,12 con la propuesta), el precio está por debajo en 23% y por debajo en 32%, respectivamente. El precio está por debajo del valor esperado (23-32%). El DCF inverso llega al piso de la búsqueda: el precio supone que los ingresos caen más de 10% al año durante cinco años, algo que no aparece en ninguna historia con datos de 2023-2026. ¿Qué sabe el mercado que yo no? Descuenta Brasil (tasas, moneda, regulación) y el riesgo de que el PIX y los bancos digitales grandes vacíen el negocio. Con ROAE de 15% y P/VL de ~0,9, el mercado dice que PagBank no gana su costo de capital; si crees que sí, el precio parece bajo.
+Frente al valor esperado de las historias (US$11,60 con la beta de la hoja; US$13,08 con la propuesta), el precio está por debajo en 23% y por debajo en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -128,8 +135,8 @@ Frente al valor esperado de las historias (US$11,63 con la beta de la hoja; US$1
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Adquirente en declive que se convierte en banco digital rentable en Brasil |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$11,63 / US$13,12 |  |
-| Rango (historia más débil a más fuerte) | US$6,54 a US$17,85 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$11,60 / US$13,08 |  |
+| Rango (historia más débil a más fuerte) | US$9,99 a US$14,50 |  |
 | Confianza | Media-baja: país, tasas y competencia dominan el resultado |  |
 | Qué cambiaría la opinión | ROAE, morosidad y crecimiento de depósitos y crédito |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |
@@ -139,7 +146,7 @@ La decisión (comprar, mantener o vender) la registras tú con el selector «Mi 
 
 ### Fuentes de esta sección
 
-- [PagSeguro, comunicado de resultados del 2T 2026 (6-K)](https://www.sec.gov/Archives/edgar/data/1712807/000155485526001791/MainDocument.htm)
+- [PagSeguro, comunicado de resultados del 2T 2026 (6-K)](https://www.sec.gov/Archives/edgar/data/1712807/000155485526001793/MainDocument.htm)
 - [PagSeguro, 6-K sobre dividendos 2027-2028 (sep-2026)](https://www.sec.gov/Archives/edgar/data/1712807/000155485526001939/MainDocument.htm)
 - [PagSeguro, Form 20-F 2025](https://www.sec.gov/Archives/edgar/data/1712807/000155485526000826/pags-20251231.htm)
 - [Mauboussin & Callahan, The Base Rate Book (2016)](https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf)

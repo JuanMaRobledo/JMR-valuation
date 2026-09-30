@@ -14,20 +14,20 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$259,29 en el escenario Base (rango US$110,92–US$338,49). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$230,76 (−11% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$242,18. El valor intrínseco es el DCF: US$259,29 frente a un precio de referencia de US$228,86 (+13%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$259,30 en el escenario Base (rango US$138,57–US$432,82). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$230,76 (−11% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$242,18. El valor intrínseco es el DCF: US$259,30 frente a un precio de referencia de US$230,67 (+12%).
 
-Revisión del 30-sep-2026 (múltiplo justificado): el C justificado se había calculado el 29-sep con los supuestos anteriores del DCF; ahora se recalcula con los vigentes (crecimiento, WACC y cifras de FY+3) y se mantiene λ. El C anterior usaba el costo del patrimonio con la beta de regresión (13,5%); con la bottom-up (11,7%) sube a 27,4x EBITDA y 24,4x utilidad. Con un ROIC después del año 10 de 27,2%, el DCF da US$259,29 y los múltiplos US$230,76 hoy (11% por debajo), dentro del rango de ±25%; el precio (US$228,86) queda en línea con los múltiplos. Lectura anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 27,2% el DCF pasa de US$178,38 a US$259,30. Los múltiplos (US$219,02 hoy) quedan 16% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$228,86) está entre los dos. Lectura anterior, con el DCF sin ROIC terminal: Tras la revisión del DCF del 30-sep-2026 (beta bottom-up de Semiconductor de 1,51 en lugar de la de regresión de 1,90; costo del patrimonio 11,7% en lugar de 13,5%), el DCF da US$178,38 y los múltiplos US$219,02 hoy (23% por encima); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras el DCF usa un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia.
+Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$110,92 | US$120,10 | US$116,43 | US$72,10 | US$152,84 |
-| Base | US$259,29 | US$230,76 | US$242,18 | US$168,54 | US$344,29 |
-| Optimista | US$338,49 | US$251,71 | US$286,42 | US$220,02 | US$423,45 |
+| Conservador | US$138,57 | US$147,21 | US$143,75 | US$120,95 | US$191,00 |
+| Base | US$259,30 | US$230,76 | US$242,18 | US$120,95 | US$344,28 |
+| Optimista | US$432,82 | US$316,58 | US$363,08 | US$120,95 | US$541,36 |
 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR — Plantilla maestra reutilizable (vigente)](https://docs.google.com/spreadsheets/d/1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg/edit).
-- Análisis del 14 de sept de 2026. Precio de referencia de la hoja: US$228,86.
+- Análisis del 14 de sept de 2026. Precio de referencia de la hoja: US$230,67.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
@@ -35,12 +35,12 @@ Revisión del 30-sep-2026 (múltiplo justificado): el C justificado se había ca
 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
-| Crecimiento año 1 | 6,0% | 50,0% | 22,0% | Input B27; Valuation output C55/C106 |
+| Crecimiento año 1 | 32,5% | 50,0% | 56,0% | Input B27; Valuation output C55/C106 |
 | Crecimiento años 2-5 | 6,0% | 14,0% | 22,0% | Input B29 |
 | Margen EBIT objetivo | 50,0% | 58,0% | 65,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 3,00 / 2,50 | — | Input B32/B33 |
-| DCF por acción hoy | US$110,92 | US$259,29 | US$338,49 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$138,57 | US$259,30 | US$432,82 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,51, ERP 4,46%, Ke 11,72%, costo de la deuda después de impuestos 4,94%, peso del patrimonio 99,5%, WACC inicial 11,69% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -64,7 +64,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 40,2x: promedio de historia y peers 45,0x, acercado 25% al justificado (25,9x); rango de anclas 25,9x–45,5x. Atípicos excluidos de la historia: Jan '17 (1,0x: < 0,4x la mediana (5.4x), caída puntual); Jan '18 (1,1x: < 0,4x la mediana (5.4x), caída puntual); Jan '19 (0,7x: < 0,4x la mediana (5.4x), caída puntual); Jan '20 (0,8x: < 0,4x la mediana (5.4x), caída puntual); Jan '21 (1,4x: < 0,4x la mediana (5.4x), caída puntual); Jan '25 (54,5x: > 2,5x la mediana (5.4x)); Jan '26 (44,4x: > 2,5x la mediana (5.4x)); LTM (40,4x: > 2,5x la mediana (5.4x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 37,5x: promedio de historia y peers 41,3x, acercado 25% al justificado (26,1x); rango de anclas 26,1x–44,4x. Atípicos excluidos de la historia: Jan '17 (1,0x: < 0,4x la mediana (5.4x), caída puntual); Jan '18 (1,1x: < 0,4x la mediana (5.4x), caída puntual); Jan '19 (0,7x: < 0,4x la mediana (5.4x), caída puntual); Jan '20 (0,8x: < 0,4x la mediana (5.4x), caída puntual); Jan '21 (1,4x: < 0,4x la mediana (5.4x), caída puntual); Jan '25 (54,5x: > 2,5x la mediana (5.4x)); Jan '26 (44,4x: > 2,5x la mediana (5.4x)); LTM (40,4x: > 2,5x la mediana (5.4x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$230,76 frente a US$259,29 del DCF (−11%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$230,76 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$230,76 frente a US$259,30 del DCF (−11%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$230,76 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -72,43 +72,43 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$154,69 | US$361,61 | US$472,06 |
-| EV/EBITDA | 20% | US$145,58 | US$324,36 | US$390,98 |
-| EV/FCFF | 10% | US$164,99 | US$344,25 | US$409,88 |
-| P/E | 20% | US$148,32 | US$338,41 | US$377,94 |
-| P/FCFE | 5% | US$164,91 | US$339,32 | US$406,92 |
-| P/OCF | 5% | US$148,76 | US$313,92 | US$390,09 |
-| **Ponderado FY+3** | 100% | US$152,84 | US$344,29 | US$423,45 |
+| DCF Damodaran | 40% | US$193,24 | US$361,61 | US$603,60 |
+| EV/EBITDA | 20% | US$181,69 | US$324,36 | US$499,72 |
+| EV/FCFF | 10% | US$205,95 | US$344,25 | US$523,89 |
+| P/E | 20% | US$185,92 | US$338,41 | US$483,17 |
+| P/FCFE | 5% | US$205,96 | US$339,32 | US$520,24 |
+| P/OCF | 5% | US$185,78 | US$313,92 | US$498,71 |
+| **Ponderado FY+3** | 100% | US$191,00 | US$344,28 | US$541,36 |
 
 Valor presente (Ke 11,72%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$128,48 | US$113,75 | US$104,39 | US$115,54 | OK |
+| EV/EBITDA | Conservador | US$160,46 | US$142,01 | US$130,28 | US$144,25 | OK |
 | EV/EBITDA | Base | US$228,41 | US$229,27 | US$232,59 | US$230,09 | OK |
-| EV/EBITDA | Optimista | US$224,91 | US$252,65 | US$280,36 | US$252,64 | OK |
-| EV/FCFF | Conservador | US$146,47 | US$129,14 | US$118,31 | US$131,31 | OK |
+| EV/EBITDA | Optimista | US$287,49 | US$322,93 | US$358,33 | US$322,92 | OK |
+| EV/FCFF | Conservador | US$154,07 | US$161,25 | US$147,68 | US$154,33 | OK |
 | EV/FCFF | Base | US$197,83 | US$243,47 | US$246,84 | US$229,38 | OK |
-| EV/FCFF | Optimista | US$234,33 | US$264,19 | US$293,91 | US$264,14 | OK |
-| P/E | Conservador | US$129,44 | US$115,44 | US$106,36 | US$117,08 | OK |
+| EV/FCFF | Optimista | US$249,48 | US$337,68 | US$375,66 | US$320,94 | OK |
+| P/E | Conservador | US$162,37 | US$144,76 | US$133,32 | US$146,82 | OK |
 | P/E | Base | US$235,03 | US$238,05 | US$242,66 | US$238,58 | OK |
-| P/E | Optimista | US$213,99 | US$242,88 | US$271,01 | US$242,63 | OK |
-| P/FCFE | Conservador | US$144,77 | US$128,38 | US$118,25 | US$130,47 | OK |
+| P/E | Optimista | US$273,63 | US$310,54 | US$346,46 | US$310,21 | OK |
+| P/FCFE | Conservador | US$156,10 | US$160,39 | US$147,69 | US$154,73 | OK |
 | P/FCFE | Base | US$198,90 | US$238,69 | US$243,31 | US$226,97 | OK |
-| P/FCFE | Optimista | US$230,26 | US$260,94 | US$291,78 | US$261,00 | OK |
-| P/OCF | Conservador | US$130,61 | US$115,80 | US$106,67 | US$117,69 | OK |
+| P/FCFE | Optimista | US$252,35 | US$333,63 | US$373,04 | US$319,67 | OK |
+| P/OCF | Conservador | US$138,59 | US$144,67 | US$133,21 | US$138,82 | OK |
 | P/OCF | Base | US$180,31 | US$220,82 | US$225,10 | US$208,75 | OK |
-| P/OCF | Optimista | US$220,58 | US$250,09 | US$279,72 | US$250,13 | OK |
+| P/OCF | Optimista | US$237,26 | US$319,75 | US$357,61 | US$304,87 | OK |
 
-Múltiplos consolidados hoy: US$120,10 / US$230,76 / US$251,71 · DCF hoy: US$110,92 / US$259,29 / US$338,49 · Ponderado hoy: US$116,43 / US$242,18 / US$286,42 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$147,21 / US$230,76 / US$316,58 · DCF hoy: US$138,57 / US$259,30 / US$432,82 · Ponderado hoy: US$143,75 / US$242,18 / US$363,08 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVDA la diferencia es de −11% (múltiplos por debajo del DCF). Revisión del 30-sep-2026 (múltiplo justificado): el C justificado se había calculado el 29-sep con los supuestos anteriores del DCF; ahora se recalcula con los vigentes (crecimiento, WACC y cifras de FY+3) y se mantiene λ. El C anterior usaba el costo del patrimonio con la beta de regresión (13,5%); con la bottom-up (11,7%) sube a 27,4x EBITDA y 24,4x utilidad. Con un ROIC después del año 10 de 27,2%, el DCF da US$259,29 y los múltiplos US$230,76 hoy (11% por debajo), dentro del rango de ±25%; el precio (US$228,86) queda en línea con los múltiplos. Lectura anterior: Revisión del 30-sep-2026 (ROIC terminal): con un ROIC después del año 10 de 27,2% el DCF pasa de US$178,38 a US$259,30. Los múltiplos (US$219,02 hoy) quedan 16% por debajo del DCF, dentro del rango de ±25%: ambos métodos coinciden; el precio (US$228,86) está entre los dos. Lectura anterior, con el DCF sin ROIC terminal: Tras la revisión del DCF del 30-sep-2026 (beta bottom-up de Semiconductor de 1,51 en lugar de la de regresión de 1,90; costo del patrimonio 11,7% en lugar de 13,5%), el DCF da US$178,38 y los múltiplos US$219,02 hoy (23% por encima); el precio (US$228,86) está por encima de ambos. Los múltiplos reflejan lo que el mercado paga hoy en el ciclo de IA (~30x EBITDA, ~36x utilidad, en línea con Broadcom, KLA y Lam), mientras el DCF usa un crecimiento que se desacelera. La diferencia es sobre todo riesgo de ciclo: si la inversión en centros de datos se frena, los múltiplos de todo el sector bajan y el DCF es la mejor referencia.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVDA la diferencia es de −11% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$228,86 supone que los ingresos crecen 18,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 21,2% (−2,4 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$230,80 supone que los ingresos crecen 16,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 21,2% (−4,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$361,61 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,7%, WACC de los años 4-10 10,5%, ROE de FY+3 138,4% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -129,15 +129,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$242,18 | — |
 | Múltiplos Base +20% | US$269,79 | +11,4% |
 | Múltiplos Base −20% | US$214,56 | −11,4% |
-| Crecimiento años 1-5 +2 pp | US$252,18 | +4,1% |
-| Crecimiento años 1-5 −2 pp | US$232,97 | −3,8% |
-| Margen objetivo +3 pp | US$247,62 | +2,2% |
-| Margen objetivo −3 pp | US$236,73 | −2,2% |
-| WACC +1 pp | US$236,07 | −2,5% |
-| WACC −1 pp | US$248,72 | +2,7% |
+| Crecimiento años 2-5 +2 pp | US$252,08 | +4,1% |
+| Crecimiento años 2-5 −2 pp | US$233,10 | −3,7% |
+| Margen objetivo +3 pp | US$247,27 | +2,1% |
+| Margen objetivo −3 pp | US$237,08 | −2,1% |
+| WACC +1 pp | US$236,49 | −2,3% |
+| WACC −1 pp | US$248,26 | +2,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 1-5 +2 pp.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 2-5 +2 pp.
 
 ## 8. Log de cambios en la hoja
 

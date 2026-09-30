@@ -1,0 +1,21 @@
+{
+ "ticker": "CMG_ROIC",
+ "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior. Evidencia: ROIC 15-22% en 2021-2026. ROIC después del año 10 = el promedio de la industria (18,4%), sin superar el ROIC actual (53,1%): 18,4% (Damodaran, Investment Valuation, cap. 12)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.137,
+   "despues": 0.184,
+   "motivo": "Ventaja durable: Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior. Evidencia: ROIC 15-22% en 2021-2026. ROIC después del año 10 = el promedio de la industria (18,4%), sin superar el ROIC actual (53,1%): 18,4% (Damodaran, Investment Valuation, cap. 12)."
+  }
+ ]
+}

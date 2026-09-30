@@ -15,7 +15,7 @@
   "[CNBC, 29-jul-2026: resultados 4T FY26 de Microsoft](https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html)",
   "[CNBC, 29-abr-2026: Microsoft proyecta US$190 mil millones de capex](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html)"
  ],
- "evaluacion": "Revisión del 30-sep-2026: antes los múltiplos (US$437,36 hoy) quedaban 33% por encima del DCF (US$329,42). El DCF suponía que después del año 10 Microsoft gana solo su costo de capital, algo incoherente con sus efectos de red y costos de cambio. Ahora usa un ROIC terminal de 25,9% (el actual, menor que el de Software) y da US$466,38. Los múltiplos dejan fuera el justificado y dan US$466,16, prácticamente igual al DCF. La recta de peers por crecimiento no se usa porque su R² va de 0 a 0,6. El precio (US$509,22) queda 9% por encima de ambos: el mercado paga por más crecimiento en Azure y en IA del que supone el escenario Base.",
+ "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$466,38 por acción y los múltiplos, US$466,16 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.",
  "ticker": "MSFT",
  "etapa_motivo": "A: Sin cambio de etapa: Microsoft sigue creciendo a doble dígito y cotiza por debajo de su promedio de cinco años; se usa la mediana de los últimos 5 cierres + LTM. Se excluye la columna sin fecha de la hoja.",
  "notas": {

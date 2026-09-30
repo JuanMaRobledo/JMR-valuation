@@ -1,0 +1,21 @@
+{
+ "ticker": "LULU_ROIC",
+ "sheet_id": "1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Ventaja que se desvanece: Marca premium (una sola fuente). Evidencia: ROIC 27-52% en 2021-2026, en descenso. ROIC después del año 10 = 12,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (15,8%), sin superar el ROIC actual (25,2%): 15,8%, porque la ventaja se desvanece."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.158,
+   "despues": 0.124,
+   "motivo": "Ventaja que se desvanece: Marca premium (una sola fuente). Evidencia: ROIC 27-52% en 2021-2026, en descenso. ROIC después del año 10 = 12,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (15,8%), sin superar el ROIC actual (25,2%): 15,8%, porque la ventaja se desvanece."
+  }
+ ]
+}

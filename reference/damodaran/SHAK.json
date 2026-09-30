@@ -1,256 +1,256 @@
 {
-  "ticker": "SHAK",
-  "empresa": "Shake Shack Inc.",
-  "fecha": "2026-09-30",
-  "industria_damodaran": "Restaurant/Dining",
-  "segmentos": {
-    "Shacks propios": 1500,
-    "Licencias": 52.3
-  },
-  "riesgo": {
-    "beta_propuesta": null,
-    "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada da 0,83, y el DCF Base sube de US$20,92 a US$26,15. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
-  },
-  "historias": [
-    {
-      "nombre": "A · Crece por aperturas y el margen mejora",
-      "prob": 0.45,
-      "margen": 0.08,
-      "crec": {
-        "Shacks propios": [
-          0.13,
-          0.12,
-          0.11,
-          0.1,
-          0.09
-        ],
-        "Licencias": [
-          0.12,
-          0.12,
-          0.12,
-          0.12,
-          0.12
-        ]
-      }
-    },
-    {
-      "nombre": "B · Crece, pero el margen no despega",
-      "prob": 0.3,
-      "margen": 0.05,
-      "crec": {
-        "Shacks propios": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Licencias": [
-          0.08,
-          0.08,
-          0.08,
-          0.08,
-          0.08
-        ]
-      }
-    },
-    {
-      "nombre": "C · Economía unitaria de primer nivel",
-      "prob": 0.15,
-      "margen": 0.11,
-      "crec": {
-        "Shacks propios": [
-          0.15,
-          0.14,
-          0.13,
-          0.12,
-          0.11
-        ],
-        "Licencias": [
-          0.15,
-          0.15,
-          0.15,
-          0.15,
-          0.15
-        ]
-      }
-    },
-    {
-      "nombre": "D · Consumidor débil y aperturas que no rinden",
-      "prob": 0.1,
-      "margen": 0.03,
-      "crec": {
-        "Shacks propios": [
-          0.05,
-          0.03,
-          0.02,
-          0.02,
-          0.02
-        ],
-        "Licencias": [
-          0.03,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ]
-      }
-    }
-  ],
-  "margenes_inverso": [
-    0.08,
-    0.11,
-    0.14
-  ],
-  "historia": "Shake Shack es una cadena de hamburguesas «fine casual» con marca premium: 703 Shacks al 1-jul-2026 (406 propios y 297 licenciados en aeropuertos, estadios y el exterior). Crece rápido por aperturas (61 Shacks propios nuevos en doce meses, ingresos +17,2% en el 2T26, same-Shack +3,5%), pero durante años casi no ganó dinero: el margen operativo GAAP es de 3,6% LTM y el capex de aperturas consume todo el flujo operativo (US$192 millones frente a US$203 millones de capex). La historia de cinco años no es de crecimiento, que está razonablemente asegurado por la marca, sino de rentabilidad: si los Shacks nuevos y la eficiencia en costos llevan el margen a 8-11%, o si Shake Shack sigue siendo una marca querida que no genera retorno sobre el capital.",
-  "filtro": [
-    [
-      "Los ingresos crecen ~11% anual cinco años",
-      "Sí",
-      "Sí: +15-21% en 2023-2025 y 17% en el 2T26",
-      "Probable"
+ "ticker": "SHAK",
+ "empresa": "Shake Shack Inc.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Restaurant/Dining",
+ "segmentos": {
+  "Shacks propios": 1500,
+  "Licencias": 52.3
+ },
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada da 0,83, y el DCF Base sube de US$20,92 a US$26,15. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
+ },
+ "historias": [
+  {
+   "nombre": "A · Crece por aperturas y el margen mejora",
+   "prob": 0.45,
+   "margen": 0.08,
+   "crec": {
+    "Shacks propios": [
+     0.13,
+     0.12,
+     0.11,
+     0.1,
+     0.09
     ],
-    [
-      "El margen operativo llega a 8%",
-      "Sí",
-      "Sí, en camino: de ~0,5% (2023) a 4,3% (2025)",
-      "Media"
-    ],
-    [
-      "El margen llega a 11% o más",
-      "Sí",
-      "Poco: exige márgenes por Shack y gastos generales de cadenas mucho más grandes",
-      "Baja"
-    ],
-    [
-      "Los Shacks nuevos rinden menos que los antiguos",
-      "Sí",
-      "Posible: las aperturas en suburbios y drive-thru tienen menor volumen",
-      "Media"
+    "Licencias": [
+     0.12,
+     0.12,
+     0.12,
+     0.12,
+     0.12
     ]
-  ],
-  "tasas_base_nota": "Para empresas de US$1.250-2.000 millones, crecer 11% anual cinco años (historia A) lo logró ~36%: la hoja pide algo alcanzable. El problema es el margen: incluso con crecimiento de doble dígito, con margen de 5% el valor es muy bajo, porque cada Shack nuevo exige capital y el retorno apenas cubre su costo.",
-  "crecimiento": {
-    "texto": "Ingresos de US$1.088 millones (2023, +20,8%), US$1.253 millones (2024, +15,2%) y US$1.445 millones (2025, +15,4%); LTM US$1.552 millones. En el 1S26, ventas de Shacks propios de US$757,5 millones (+16%) y licencias de US$25,7 millones. La hoja supone 13% el próximo año y 11% en los años 2-5.",
-    "tabla": {
-      "cols": [
-        "US$ millones",
-        "2023",
-        "2024",
-        "2025",
-        "LTM"
-      ],
-      "align": [
-        "l",
-        "r",
-        "r",
-        "r",
-        "r"
-      ],
-      "rows": [
-        [
-          "Ingresos",
-          "1.088",
-          "1.253",
-          "1.445",
-          "1.552"
-        ],
-        [
-          "Crecimiento",
-          "+20,8%",
-          "+15,2%",
-          "+15,4%",
-          "—"
-        ],
-        [
-          "Margen operativo",
-          "0,5%",
-          "0,2%",
-          "4,3%",
-          "3,6%"
-        ],
-        [
-          "FCFF (hoja)",
-          "−40",
-          "−14",
-          "18",
-          "—"
-        ]
-      ]
-    }
+   }
   },
-  "margenes": {
-    "texto": "El margen operativo pasó de ~0% (2023-2024) a 4,3% (2025) y 3,6% LTM, por mejor margen a nivel Shack y gastos generales creciendo menos que las ventas. La hoja supone 4,5% el próximo año y 8% de objetivo. Las historias van de 3% a 11%: el margen es la variable que más mueve el valor."
-  },
-  "reinversion": {
-    "texto": "Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia B. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028."
-  },
-  "prob_texto": "A (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. B (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. C (15%) es una economía unitaria de primer nivel. D (10%) es un consumidor débil con aperturas que no rinden.",
-  "premortem": [
-    "La competencia en hamburguesas (ofertas de valor de McDonald's y Wendy's, Five Guys) baja el tráfico.",
-    "Los Shacks nuevos (drive-thru, suburbios) tienen volúmenes menores y bajan el retorno promedio.",
-    "La inflación de carne y salarios se come la mejora de margen.",
-    "El refinanciamiento de los convertibles de 2028 se hace a tasas altas o con dilución.",
-    "Las licencias internacionales cierran locales en mercados débiles."
-  ],
-  "contra": "el margen operativo sigue en 3-4% después de años de crecimiento; mientras no supere ~6% de forma sostenida, la historia B es tan creíble como A.",
-  "indicadores": [
-    [
-      "Ventas same-Shack",
-      "+3,5% (2T26)",
-      "≥ +3%",
-      "Negativas"
+  {
+   "nombre": "B · Crece, pero el margen no despega",
+   "prob": 0.3,
+   "margen": 0.05,
+   "crec": {
+    "Shacks propios": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
     ],
-    [
-      "Margen a nivel Shack",
-      "En alza",
-      "≥ 22%",
-      "≤ 19%"
-    ],
-    [
-      "Margen operativo GAAP",
-      "3,6% LTM",
-      "≥ 6% en 2027",
-      "≤ 3%"
-    ],
-    [
-      "Aperturas de Shacks propios",
-      "61 en 12 meses",
-      "55-70 al año con buen volumen",
-      "Recortes o volúmenes bajos"
-    ],
-    [
-      "Flujo libre",
-      "~0",
-      "Positivo y creciente",
-      "Negativo"
+    "Licencias": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
     ]
-  ],
-  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
-  "frase": "Marca de hamburguesas premium en expansión que todavía no demuestra rentabilidad",
-  "confianza": "Baja-media: el crecimiento es claro; el margen de largo plazo no",
-  "cambiaria": "Margen a nivel Shack y margen operativo GAAP en 2027",
-  "revision": "Resultados del 3T26 (oct-2026)",
-  "fuentes": [
-    [
-      "Shake Shack, Form 10-Q del 2T 2026",
-      "https://www.sec.gov/Archives/edgar/data/1620533/000162053326000034/shak-20260701.htm"
+   }
+  },
+  {
+   "nombre": "C · Economía unitaria de primer nivel",
+   "prob": 0.15,
+   "margen": 0.11,
+   "crec": {
+    "Shacks propios": [
+     0.15,
+     0.14,
+     0.13,
+     0.12,
+     0.11
     ],
-    [
-      "Shake Shack, Form 10-Q del 1T 2026",
-      "https://www.sec.gov/Archives/edgar/data/1620533/000162053326000026/shak-20260401.htm"
-    ],
-    [
-      "Shake Shack, Form 10-K 2025",
-      "https://www.sec.gov/Archives/edgar/data/1620533/000162053326000018/shak-20251231.htm"
-    ],
-    [
-      "Mauboussin & Callahan, The Base Rate Book (2016)",
-      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-    ],
-    [
-      "Damodaran, Betas by Sector (US), enero 2026",
-      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    "Licencias": [
+     0.15,
+     0.15,
+     0.15,
+     0.15,
+     0.15
     ]
+   }
+  },
+  {
+   "nombre": "D · Consumidor débil y aperturas que no rinden",
+   "prob": 0.1,
+   "margen": 0.03,
+   "crec": {
+    "Shacks propios": [
+     0.05,
+     0.03,
+     0.02,
+     0.02,
+     0.02
+    ],
+    "Licencias": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   }
+  }
+ ],
+ "margenes_inverso": [
+  0.08,
+  0.11,
+  0.14
+ ],
+ "historia": "Shake Shack es una cadena de hamburguesas «fine casual» con marca premium: 703 Shacks al 1-jul-2026 (406 propios y 297 licenciados en aeropuertos, estadios y el exterior). Crece rápido por aperturas (61 Shacks propios nuevos en doce meses, ingresos +17,2% en el 2T26, same-Shack +3,5%), pero durante años casi no ganó dinero: el margen operativo GAAP es de 3,6% LTM y el capex de aperturas consume todo el flujo operativo (US$192 millones frente a US$203 millones de capex). La historia de cinco años no es de crecimiento, que está razonablemente asegurado por la marca, sino de rentabilidad: si los Shacks nuevos y la eficiencia en costos llevan el margen a 8-11%, o si Shake Shack sigue siendo una marca querida que no genera retorno sobre el capital.",
+ "filtro": [
+  [
+   "Los ingresos crecen ~11% anual cinco años",
+   "Sí",
+   "Sí: +15-21% en 2023-2025 y 17% en el 2T26",
+   "Probable"
+  ],
+  [
+   "El margen operativo llega a 8%",
+   "Sí",
+   "Sí, en camino: de ~0,5% (2023) a 4,3% (2025)",
+   "Media"
+  ],
+  [
+   "El margen llega a 11% o más",
+   "Sí",
+   "Poco: exige márgenes por Shack y gastos generales de cadenas mucho más grandes",
+   "Baja"
+  ],
+  [
+   "Los Shacks nuevos rinden menos que los antiguos",
+   "Sí",
+   "Posible: las aperturas en suburbios y drive-thru tienen menor volumen",
+   "Media"
   ]
+ ],
+ "tasas_base_nota": "Para empresas de US$1.250-2.000 millones, crecer 11% anual cinco años (historia A) lo logró ~36%: la hoja pide algo alcanzable. El problema es el margen: incluso con crecimiento de doble dígito, con margen de 5% el valor es muy bajo, porque cada Shack nuevo exige capital y el retorno apenas cubre su costo.",
+ "crecimiento": {
+  "texto": "Ingresos de US$1.088 millones (2023, +20,8%), US$1.253 millones (2024, +15,2%) y US$1.445 millones (2025, +15,4%); LTM US$1.552 millones. En el 1S26, ventas de Shacks propios de US$757,5 millones (+16%) y licencias de US$25,7 millones. La hoja supone 13% el próximo año y 11% en los años 2-5.",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2023",
+    "2024",
+    "2025",
+    "LTM"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos",
+     "1.088",
+     "1.253",
+     "1.445",
+     "1.552"
+    ],
+    [
+     "Crecimiento",
+     "+20,8%",
+     "+15,2%",
+     "+15,4%",
+     "—"
+    ],
+    [
+     "Margen operativo",
+     "0,5%",
+     "0,2%",
+     "4,3%",
+     "3,6%"
+    ],
+    [
+     "FCFF (hoja)",
+     "−40",
+     "−14",
+     "18",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen operativo pasó de ~0% (2023-2024) a 4,3% (2025) y 3,6% LTM, por mejor margen a nivel Shack y gastos generales creciendo menos que las ventas. La hoja supone 4,5% el próximo año y 8% de objetivo. Las historias van de 3% a 11%: el margen es la variable que más mueve el valor."
+ },
+ "reinversion": {
+  "texto": "Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia B. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028. Sin ventaja defendible: su ROIC está por debajo del costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
+ },
+ "prob_texto": "A (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. B (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. C (15%) es una economía unitaria de primer nivel. D (10%) es un consumidor débil con aperturas que no rinden.",
+ "premortem": [
+  "La competencia en hamburguesas (ofertas de valor de McDonald's y Wendy's, Five Guys) baja el tráfico.",
+  "Los Shacks nuevos (drive-thru, suburbios) tienen volúmenes menores y bajan el retorno promedio.",
+  "La inflación de carne y salarios se come la mejora de margen.",
+  "El refinanciamiento de los convertibles de 2028 se hace a tasas altas o con dilución.",
+  "Las licencias internacionales cierran locales en mercados débiles."
+ ],
+ "contra": "el margen operativo sigue en 3-4% después de años de crecimiento; mientras no supere ~6% de forma sostenida, la historia B es tan creíble como A.",
+ "indicadores": [
+  [
+   "Ventas same-Shack",
+   "+3,5% (2T26)",
+   "≥ +3%",
+   "Negativas"
+  ],
+  [
+   "Margen a nivel Shack",
+   "En alza",
+   "≥ 22%",
+   "≤ 19%"
+  ],
+  [
+   "Margen operativo GAAP",
+   "3,6% LTM",
+   "≥ 6% en 2027",
+   "≤ 3%"
+  ],
+  [
+   "Aperturas de Shacks propios",
+   "61 en 12 meses",
+   "55-70 al año con buen volumen",
+   "Recortes o volúmenes bajos"
+  ],
+  [
+   "Flujo libre",
+   "~0",
+   "Positivo y creciente",
+   "Negativo"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+ "frase": "Marca de hamburguesas premium en expansión que todavía no demuestra rentabilidad",
+ "confianza": "Baja-media: el crecimiento es claro; el margen de largo plazo no",
+ "cambiaria": "Margen a nivel Shack y margen operativo GAAP en 2027",
+ "revision": "Resultados del 3T26 (oct-2026)",
+ "fuentes": [
+  [
+   "Shake Shack, Form 10-Q del 2T 2026",
+   "https://www.sec.gov/Archives/edgar/data/1620533/000162053326000034/shak-20260701.htm"
+  ],
+  [
+   "Shake Shack, Form 10-Q del 1T 2026",
+   "https://www.sec.gov/Archives/edgar/data/1620533/000162053326000026/shak-20260401.htm"
+  ],
+  [
+   "Shake Shack, Form 10-K 2025",
+   "https://www.sec.gov/Archives/edgar/data/1620533/000162053326000018/shak-20251231.htm"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Damodaran, Betas by Sector (US), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ]
 }

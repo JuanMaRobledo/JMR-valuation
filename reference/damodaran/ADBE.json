@@ -1,269 +1,269 @@
 {
-  "ticker": "ADBE",
-  "empresa": "Adobe Inc.",
-  "fecha": "2026-09-30",
-  "industria_damodaran": "Software (System & Application)",
-  "segmentos": {
-    "Creative & Marketing Professionals": 18050,
-    "Business Professionals & Consumers": 7300,
-    "Otros": 620
-  },
-  "riesgo": {
-    "beta_propuesta": null,
-    "texto": "La hoja usa una beta de 1,39. La beta bottom-up del sector (Software System & Application, 309 empresas, desapalancada y corregida por caja 1,25) reapalancada con la estructura de Adobe da 1,31, casi igual. El riesgo de Adobe no está en la tasa de descuento sino en los flujos (precio y retención de Creative Cloud), y eso se trata en las historias, no subiendo la beta."
-  },
-  "historias": [
-    {
-      "nombre": "A · La IA se cobra dentro de la suscripción",
-      "prob": 0.4,
-      "margen": 0.4,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Business Professionals & Consumers": [
-          0.14,
-          0.12,
-          0.1,
-          0.09,
-          0.08
-        ]
-      }
-    },
-    {
-      "nombre": "B · Erosión gradual frente a Figma y Canva",
-      "prob": 0.35,
-      "margen": 0.37,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.08,
-          0.05,
-          0.04,
-          0.03,
-          0.03
-        ],
-        "Business Professionals & Consumers": [
-          0.12,
-          0.09,
-          0.07,
-          0.06,
-          0.05
-        ]
-      },
-      "roic_terminal": "costo_capital"
-    },
-    {
-      "nombre": "C · La IA generativa comoditiza la creatividad",
-      "prob": 0.15,
-      "margen": 0.32,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.05,
-          0.01,
-          -0.02,
-          -0.03,
-          -0.03
-        ],
-        "Business Professionals & Consumers": [
-          0.09,
-          0.05,
-          0.03,
-          0.02,
-          0.02
-        ]
-      },
-      "roic_terminal": "costo_capital"
-    },
-    {
-      "nombre": "D · La IA amplía el mercado de Adobe",
-      "prob": 0.1,
-      "margen": 0.43,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.12,
-          0.12,
-          0.11,
-          0.1,
-          0.09
-        ],
-        "Business Professionals & Consumers": [
-          0.16,
-          0.14,
-          0.12,
-          0.11,
-          0.1
-        ]
-      }
-    }
-  ],
-  "margenes_inverso": [
-    0.35,
-    0.38,
-    0.4
-  ],
-  "historia": "Adobe es la suite de referencia de la creatividad profesional y de los documentos (PDF), vendida por suscripción: ~US$27.500 millones de ARR, margen operativo GAAP de ~36% y flujo libre de ~41% de las ventas. Los próximos cinco años dependen de una pregunta: si la IA generativa es una función que Adobe cobra dentro de sus suscripciones (Firefly, Acrobat AI Assistant, GenStudio) o una tecnología que abarata crear contenido y deja entrar a herramientas más baratas (Figma, Canva y los modelos generales de OpenAI o Google). Por ahora los datos apoyan la primera lectura: en el 3T FY26 las ventas crecieron 13%, la guía subió y el ARR «AI-first» pasó de US$650 millones (+150%). Pero la IA todavía es ~2,4% del ARR, y entre equipos de diseño la adopción de Figma (59%) ya supera a la de Adobe (42%). A esto se suma el cambio de CEO del 1-dic-2026.",
-  "filtro": [
-    [
-      "Adobe crece ~8% anual cinco años más",
-      "Sí",
-      "Sí: +10-11% anual en FY23-FY25 y guía FY26 de ~+12%",
-      "Probable, desacelerando"
+ "ticker": "ADBE",
+ "empresa": "Adobe Inc.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Software (System & Application)",
+ "segmentos": {
+  "Creative & Marketing Professionals": 18050,
+  "Business Professionals & Consumers": 7300,
+  "Otros": 620
+ },
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,39. La beta bottom-up del sector (Software System & Application, 309 empresas, desapalancada y corregida por caja 1,25) reapalancada con la estructura de Adobe da 1,31, casi igual. El riesgo de Adobe no está en la tasa de descuento sino en los flujos (precio y retención de Creative Cloud), y eso se trata en las historias, no subiendo la beta."
+ },
+ "historias": [
+  {
+   "nombre": "A · La IA se cobra dentro de la suscripción",
+   "prob": 0.4,
+   "margen": 0.4,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
     ],
-    [
-      "La IA suma crecimiento sobre la base actual",
-      "Sí",
-      "Sí: ARR AI-first +150%, aunque solo ~2,4% del total",
-      "Incierto"
-    ],
-    [
-      "El margen operativo sube a 40% y se sostiene",
-      "Sí",
-      "Sí: 36,6% en FY25 con capex ~1% de las ventas; la IA encarece el cómputo",
-      "Probable si no hay guerra de precios"
-    ],
-    [
-      "Creative Cloud pierde poder de precio frente a Figma y Canva",
-      "Sí",
-      "Sí: Figma ya supera a Adobe en adopción entre equipos de diseño",
-      "Posible, gradual"
+    "Business Professionals & Consumers": [
+     0.14,
+     0.12,
+     0.1,
+     0.09,
+     0.08
     ]
-  ],
-  "tasas_base_nota": "Entre las empresas de más de US$25.000 millones, solo ~29% creció 8% anual durante cinco años (historia A) y ~19% llegó a 11% (historia D). Adobe tiene razones para estar arriba de la mediana: suscripción con alta retención, subidas de precio y venta cruzada de IA. Aun así, el DCF de la hoja (10,4% anual en los años 1-5) ya supone un resultado del cuartil superior, y la visión externa pide descontar esa confianza.",
-  "crecimiento": {
-    "texto": "Las ventas crecieron 10,8% en FY24 y 10,5% en FY25; la guía FY26 (US$26.576-26.626 millones) implica ~12%. En el 3T FY26, Creative & Marketing Professionals facturó US$4.700 millones (+13%) y Business Professionals & Consumers US$1.900 millones (+16%). La reorganización de segmentos de 2026 no deja comparar series largas por segmento: la división LTM de las historias es una estimación propia con el peso del 3T (≈70% / 28% / 2%).",
-    "tabla": {
-      "cols": [
-        "US$ millones",
-        "FY23",
-        "FY24",
-        "FY25",
-        "LTM"
-      ],
-      "align": [
-        "l",
-        "r",
-        "r",
-        "r",
-        "r"
-      ],
-      "rows": [
-        [
-          "Ingresos",
-          "19.409",
-          "21.505",
-          "23.769",
-          "25.970"
-        ],
-        [
-          "Crecimiento",
-          "+10,2%",
-          "+10,8%",
-          "+10,5%",
-          "—"
-        ],
-        [
-          "Margen operativo GAAP",
-          "34,3%",
-          "31,3%",
-          "36,6%",
-          "35,7%"
-        ],
-        [
-          "FCFF (hoja)",
-          "6.102",
-          "6.749",
-          "8.702",
-          "—"
-        ]
-      ]
-    }
+   }
   },
-  "margenes": {
-    "texto": "El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado)."
-  },
-  "reinversion": {
-    "texto": "Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Moat ancho (costos de cambio y estándar de la industria creativa y documental, con el ROIC en alza (38% → 59%) y sin erosión visible hoy): el ROIC después del año 10 es 29,3%, el menor entre el ROIC actual (36,3%) y el de la industria (29,3%). El riesgo de perder la ventaja no baja este valor: está en las historias de erosión, que usan el costo de capital (revisión del 30-sep-2026)."
-  },
-  "prob_texto": "A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias donde la ventaja se erosiona (B y C), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026).",
-  "premortem": [
-    "El ARR «AI-first» se estanca antes de llegar a 5% del total y la IA termina regalada dentro de los planes para no perder usuarios.",
-    "Figma y Canva capturan a los nuevos diseñadores y equipos de marketing; Creative Cloud crece solo por precio y la retención cae.",
-    "El nuevo CEO (1-dic-2026) cambia la estrategia o salen ejecutivos clave en medio del giro a la IA.",
-    "Adobe hace una compra grande para defenderse y destruye valor (precio alto, retorno bajo).",
-    "El costo de cómputo de la IA baja el margen a 32-34% en lugar de subirlo a 40%."
-  ],
-  "contra": "la adopción relativa se mueve en contra (Figma 59% frente a 42% de Adobe en equipos de diseño) y el consenso (~40 analistas en «Hold») no cree la guía. Si Creative & Marketing Professionals baja de ~13% a un dígito bajo en 2027, la historia A pierde peso a favor de B.",
-  "indicadores": [
-    [
-      "Crecimiento de ingresos (interanual)",
-      "+13% (3T FY26)",
-      "≥ +9% en FY27",
-      "≤ +6%"
+  {
+   "nombre": "B · Erosión gradual frente a Figma y Canva",
+   "prob": 0.35,
+   "margen": 0.37,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.08,
+     0.05,
+     0.04,
+     0.03,
+     0.03
     ],
-    [
-      "ARR «AI-first»",
-      ">US$650M, +150%",
-      "> 5% del ARR total en 2027",
-      "Crece < 60% antes de llegar a 5%"
-    ],
-    [
-      "Creative & Marketing Professionals",
-      "+13%",
-      "≥ +8%",
-      "≤ +4%"
-    ],
-    [
-      "Margen operativo GAAP",
-      "35,7% LTM",
-      "≥ 37%",
-      "≤ 33%"
-    ],
-    [
-      "Adopción Figma frente a Adobe (equipos de diseño)",
-      "59% vs 42%",
-      "Brecha estable o cerrándose",
-      "Brecha y gasto por cliente a favor de Figma"
-    ],
-    [
-      "Transición de CEO",
-      "1-dic-2026",
-      "Sin cambios bruscos de estrategia",
-      "Salida de ejecutivos clave"
+    "Business Professionals & Consumers": [
+     0.12,
+     0.09,
+     0.07,
+     0.06,
+     0.05
     ]
-  ],
-  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
-  "frase": "Suite creativa y documental por suscripción que defiende su precio con IA frente a Figma y Canva",
-  "confianza": "Media: la base es muy rentable y recurrente; lo incierto es el precio de Creative Cloud en la era de la IA",
-  "cambiaria": "Crecimiento de Creative & Marketing Professionals, peso del ARR «AI-first» y adopción frente a Figma",
-  "revision": "Resultados del 4T FY26 (dic-2026) y primeros meses del nuevo CEO",
-  "fuentes": [
-    [
-      "Adobe, resultados del 3T FY2026 (Form 8-K, ex. 99.1)",
-      "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+   },
+   "roic_terminal": "costo_capital"
+  },
+  {
+   "nombre": "C · La IA generativa comoditiza la creatividad",
+   "prob": 0.15,
+   "margen": 0.32,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.05,
+     0.01,
+     -0.02,
+     -0.03,
+     -0.03
     ],
-    [
-      "Adobe, anuncio de Anil Chakravarthy como CEO (sep-2026)",
-      "https://news.adobe.com/news/2026/09/adobe-announces-anil-chakravarthy-to-become-president-and-ceo"
-    ],
-    [
-      "Yahoo Finance, «Adobe Valuation Questioned As Figma AI Credits Challenge Creative Cloud»",
-      "https://finance.yahoo.com/news/adobe-valuation-questioned-figma-ai-031116166.html"
-    ],
-    [
-      "Benzinga, revisiones de analistas tras el 3T FY26",
-      "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61739763/these-analysts-revise-their-forecasts-on-adobe-following-q3-results"
-    ],
-    [
-      "Mauboussin & Callahan, The Base Rate Book (2016)",
-      "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-    ],
-    [
-      "Damodaran, Betas by Sector (US), enero 2026",
-      "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+    "Business Professionals & Consumers": [
+     0.09,
+     0.05,
+     0.03,
+     0.02,
+     0.02
     ]
+   },
+   "roic_terminal": "costo_capital"
+  },
+  {
+   "nombre": "D · La IA amplía el mercado de Adobe",
+   "prob": 0.1,
+   "margen": 0.43,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.12,
+     0.12,
+     0.11,
+     0.1,
+     0.09
+    ],
+    "Business Professionals & Consumers": [
+     0.16,
+     0.14,
+     0.12,
+     0.11,
+     0.1
+    ]
+   }
+  }
+ ],
+ "margenes_inverso": [
+  0.35,
+  0.38,
+  0.4
+ ],
+ "historia": "Adobe es la suite de referencia de la creatividad profesional y de los documentos (PDF), vendida por suscripción: ~US$27.500 millones de ARR, margen operativo GAAP de ~36% y flujo libre de ~41% de las ventas. Los próximos cinco años dependen de una pregunta: si la IA generativa es una función que Adobe cobra dentro de sus suscripciones (Firefly, Acrobat AI Assistant, GenStudio) o una tecnología que abarata crear contenido y deja entrar a herramientas más baratas (Figma, Canva y los modelos generales de OpenAI o Google). Por ahora los datos apoyan la primera lectura: en el 3T FY26 las ventas crecieron 13%, la guía subió y el ARR «AI-first» pasó de US$650 millones (+150%). Pero la IA todavía es ~2,4% del ARR, y entre equipos de diseño la adopción de Figma (59%) ya supera a la de Adobe (42%). A esto se suma el cambio de CEO del 1-dic-2026.",
+ "filtro": [
+  [
+   "Adobe crece ~8% anual cinco años más",
+   "Sí",
+   "Sí: +10-11% anual en FY23-FY25 y guía FY26 de ~+12%",
+   "Probable, desacelerando"
+  ],
+  [
+   "La IA suma crecimiento sobre la base actual",
+   "Sí",
+   "Sí: ARR AI-first +150%, aunque solo ~2,4% del total",
+   "Incierto"
+  ],
+  [
+   "El margen operativo sube a 40% y se sostiene",
+   "Sí",
+   "Sí: 36,6% en FY25 con capex ~1% de las ventas; la IA encarece el cómputo",
+   "Probable si no hay guerra de precios"
+  ],
+  [
+   "Creative Cloud pierde poder de precio frente a Figma y Canva",
+   "Sí",
+   "Sí: Figma ya supera a Adobe en adopción entre equipos de diseño",
+   "Posible, gradual"
   ]
+ ],
+ "tasas_base_nota": "Entre las empresas de más de US$25.000 millones, solo ~29% creció 8% anual durante cinco años (historia A) y ~19% llegó a 11% (historia D). Adobe tiene razones para estar arriba de la mediana: suscripción con alta retención, subidas de precio y venta cruzada de IA. Aun así, el DCF de la hoja (10,4% anual en los años 1-5) ya supone un resultado del cuartil superior, y la visión externa pide descontar esa confianza.",
+ "crecimiento": {
+  "texto": "Las ventas crecieron 10,8% en FY24 y 10,5% en FY25; la guía FY26 (US$26.576-26.626 millones) implica ~12%. En el 3T FY26, Creative & Marketing Professionals facturó US$4.700 millones (+13%) y Business Professionals & Consumers US$1.900 millones (+16%). La reorganización de segmentos de 2026 no deja comparar series largas por segmento: la división LTM de las historias es una estimación propia con el peso del 3T (≈70% / 28% / 2%).",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "FY23",
+    "FY24",
+    "FY25",
+    "LTM"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos",
+     "19.409",
+     "21.505",
+     "23.769",
+     "25.970"
+    ],
+    [
+     "Crecimiento",
+     "+10,2%",
+     "+10,8%",
+     "+10,5%",
+     "—"
+    ],
+    [
+     "Margen operativo GAAP",
+     "34,3%",
+     "31,3%",
+     "36,6%",
+     "35,7%"
+    ],
+    [
+     "FCFF (hoja)",
+     "6.102",
+     "6.749",
+     "8.702",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado)."
+ },
+ "reinversion": {
+  "texto": "Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Ventaja durable: costos de cambio y estándar de la industria creativa y documental, con ROIC en alza (38% → 59%). El ROIC después del año 10 es 29,3%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+ },
+ "prob_texto": "A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "premortem": [
+  "El ARR «AI-first» se estanca antes de llegar a 5% del total y la IA termina regalada dentro de los planes para no perder usuarios.",
+  "Figma y Canva capturan a los nuevos diseñadores y equipos de marketing; Creative Cloud crece solo por precio y la retención cae.",
+  "El nuevo CEO (1-dic-2026) cambia la estrategia o salen ejecutivos clave en medio del giro a la IA.",
+  "Adobe hace una compra grande para defenderse y destruye valor (precio alto, retorno bajo).",
+  "El costo de cómputo de la IA baja el margen a 32-34% en lugar de subirlo a 40%."
+ ],
+ "contra": "la adopción relativa se mueve en contra (Figma 59% frente a 42% de Adobe en equipos de diseño) y el consenso (~40 analistas en «Hold») no cree la guía. Si Creative & Marketing Professionals baja de ~13% a un dígito bajo en 2027, la historia A pierde peso a favor de B.",
+ "indicadores": [
+  [
+   "Crecimiento de ingresos (interanual)",
+   "+13% (3T FY26)",
+   "≥ +9% en FY27",
+   "≤ +6%"
+  ],
+  [
+   "ARR «AI-first»",
+   ">US$650M, +150%",
+   "> 5% del ARR total en 2027",
+   "Crece < 60% antes de llegar a 5%"
+  ],
+  [
+   "Creative & Marketing Professionals",
+   "+13%",
+   "≥ +8%",
+   "≤ +4%"
+  ],
+  [
+   "Margen operativo GAAP",
+   "35,7% LTM",
+   "≥ 37%",
+   "≤ 33%"
+  ],
+  [
+   "Adopción Figma frente a Adobe (equipos de diseño)",
+   "59% vs 42%",
+   "Brecha estable o cerrándose",
+   "Brecha y gasto por cliente a favor de Figma"
+  ],
+  [
+   "Transición de CEO",
+   "1-dic-2026",
+   "Sin cambios bruscos de estrategia",
+   "Salida de ejecutivos clave"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+ "frase": "Suite creativa y documental por suscripción que defiende su precio con IA frente a Figma y Canva",
+ "confianza": "Media: la base es muy rentable y recurrente; lo incierto es el precio de Creative Cloud en la era de la IA",
+ "cambiaria": "Crecimiento de Creative & Marketing Professionals, peso del ARR «AI-first» y adopción frente a Figma",
+ "revision": "Resultados del 4T FY26 (dic-2026) y primeros meses del nuevo CEO",
+ "fuentes": [
+  [
+   "Adobe, resultados del 3T FY2026 (Form 8-K, ex. 99.1)",
+   "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+  ],
+  [
+   "Adobe, anuncio de Anil Chakravarthy como CEO (sep-2026)",
+   "https://news.adobe.com/news/2026/09/adobe-announces-anil-chakravarthy-to-become-president-and-ceo"
+  ],
+  [
+   "Yahoo Finance, «Adobe Valuation Questioned As Figma AI Credits Challenge Creative Cloud»",
+   "https://finance.yahoo.com/news/adobe-valuation-questioned-figma-ai-031116166.html"
+  ],
+  [
+   "Benzinga, revisiones de analistas tras el 3T FY26",
+   "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61739763/these-analysts-revise-their-forecasts-on-adobe-following-q3-results"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Damodaran, Betas by Sector (US), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ]
 }

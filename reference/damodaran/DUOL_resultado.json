@@ -1,360 +1,384 @@
 {
-  "ticker": "DUOL",
-  "fecha": "2026-09-30",
-  "precio": 143.01,
-  "dcf_base": 125.77061613571759,
-  "g_ref": 0.112,
-  "m_base": 0.27,
-  "s2c": 4,
+ "ticker": "DUOL",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.08,
+  "growthY1Base": 0.12,
+  "growthY1Opt": 0.16,
+  "growthCons": 0.08,
+  "growthBase": 0.11,
+  "growthOpt": 0.16,
+  "marginY1Cons": 0.2,
+  "marginY1Base": 0.2,
+  "marginY1Opt": 0.2,
+  "marginCons": 0.21761280931586602,
+  "marginBase": 0.27,
+  "marginOpt": 0.32,
+  "salesToCapital2": 4.5,
   "wacc": 0.10940422842864324,
-  "beta_hoja": 1.3475579447262913,
-  "beta_bu": 1.6025078695860997,
-  "beta_prop": 1.6025078695860997,
-  "industria": "Software (Internet)",
-  "bu_sector": 1.59,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": "$700-1,250 Mn",
-    "<(25)": 0.2,
-    "(25)-(20)": 0.3,
-    "(20)-(15)": 0.5,
-    "(15)-(10)": 1.3,
-    "(10)-(5)": 3.3,
-    "(5)-0": 8.8,
-    "0-5": 26.6,
-    "5-10": 26.6,
-    "10-15": 15.3,
-    "15-20": 7.3,
-    "20-25": 4.2,
-    "25-30": 2.3,
-    "30-35": 1.0,
-    "35-40": 1.0,
-    "40-45": 0.4,
-    ">45": 0.9,
-    "Mean": 7.9,
-    "Median": 6.4,
-    "StDev": 10.5,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+  "costoPatrimonio": 0.1100010843347926,
+  "taxEffective": 0.0962,
+  "convergenceYear": 7,
+  "terminalWacc": 0.0922,
+  "roicTerminal": 0,
+  "salesToCapital": 4
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 125.77061613571759,
+ "precio": 142.69,
+ "dcf_base": 125.77061613571756,
+ "g_ref": 0.112,
+ "m_base": 0.27,
+ "s2c": 4,
+ "wacc": 0.10940422842864324,
+ "beta_hoja": 1.3475579447262913,
+ "beta_bu": 1.6025078695860997,
+ "beta_prop": 1.6025078695860997,
+ "industria": "Software (Internet)",
+ "bu_sector": 1.59,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": "$700-1,250 Mn",
+  "<(25)": 0.2,
+  "(25)-(20)": 0.3,
+  "(20)-(15)": 0.5,
+  "(15)-(10)": 1.3,
+  "(10)-(5)": 3.3,
+  "(5)-0": 8.8,
+  "0-5": 26.6,
+  "5-10": 26.6,
+  "10-15": 15.3,
+  "15-20": 7.3,
+  "20-25": 4.2,
+  "25-30": 2.3,
+  "30-35": 1.0,
+  "35-40": 1.0,
+  "40-45": 0.4,
+  ">45": 0.9,
+  "Mean": 7.9,
+  "Median": 6.4,
+  "StDev": 10.5,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · La audiencia crece y la monetización se recupera en parte",
+   "prob": 0.4,
+   "margen": 0.27,
+   "crec": {
+    "Suscripciones": [
+     0.14,
+     0.13,
+     0.12,
+     0.11,
+     0.1
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Publicidad": [
+     0.15,
+     0.12,
+     0.1,
+     0.1,
+     0.08
+    ],
+    "Duolingo English Test": [
+     0.02,
+     0.02,
+     0.02,
+     0.02,
+     0.02
+    ],
+    "Compras en la aplicación": [
+     0.1,
+     0.1,
+     0.08,
+     0.08,
+     0.06
+    ]
+   },
+   "cagr": 0.11513288700535673,
+   "rev5": 1974.4157502144,
+   "mix5": {
+    "Suscripciones": 0.8833108585011127,
+    "Publicidad": 0.06819874283588866,
+    "Duolingo English Test": 0.023486134432104573,
+    "Compras en la aplicación": 0.025004264230894177
+   },
+   "tasa_base": 0.37649304113150217,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 125.64255490364278,
+   "valor_beta_prop": 120.15112102908182
   },
-  "historias": [
-    {
-      "nombre": "A · La audiencia crece y la monetización se recupera en parte",
-      "prob": 0.4,
-      "margen": 0.27,
-      "crec": {
-        "Suscripciones": [
-          0.14,
-          0.13,
-          0.12,
-          0.11,
-          0.1
-        ],
-        "Publicidad": [
-          0.15,
-          0.12,
-          0.1,
-          0.1,
-          0.08
-        ],
-        "Duolingo English Test": [
-          0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02
-        ],
-        "Compras en la aplicación": [
-          0.1,
-          0.1,
-          0.08,
-          0.08,
-          0.06
-        ]
-      },
-      "cagr": 0.11513288700535673,
-      "rev5": 1974.4157502144003,
-      "mix5": {
-        "Suscripciones": 0.8833108585011126,
-        "Publicidad": 0.06819874283588866,
-        "Duolingo English Test": 0.02348613443210457,
-        "Compras en la aplicación": 0.025004264230894174
-      },
-      "tasa_base": 0.37649304113150217,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 125.64255490364282,
-      "valor_beta_prop": 120.15112102908182
-    },
-    {
-      "nombre": "B · La monetización se estanca",
-      "prob": 0.3,
-      "margen": 0.23,
-      "crec": {
-        "Suscripciones": [
-          0.1,
-          0.09,
-          0.08,
-          0.07,
-          0.06
-        ],
-        "Publicidad": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.05
-        ],
-        "Duolingo English Test": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "Compras en la aplicación": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      },
-      "cagr": 0.07598140193754843,
-      "rev5": 1651.3126593225004,
-      "mix5": {
-        "Suscripciones": 0.880518460965806,
-        "Publicidad": 0.06854188742575082,
-        "Duolingo English Test": 0.02543431116020859,
-        "Compras en la aplicación": 0.025505340448234597
-      },
-      "tasa_base": 0.5847789416922423,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 98.98884151855442,
-      "valor_beta_prop": 95.21216047721522
-    },
-    {
-      "nombre": "C · La IA sube el ingreso por usuario",
-      "prob": 0.2,
-      "margen": 0.32,
-      "crec": {
-        "Suscripciones": [
-          0.2,
-          0.18,
-          0.16,
-          0.14,
-          0.12
-        ],
-        "Publicidad": [
-          0.18,
-          0.15,
-          0.12,
-          0.1,
-          0.1
-        ],
-        "Duolingo English Test": [
-          0.05,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "Compras en la aplicación": [
-          0.15,
-          0.12,
-          0.1,
-          0.1,
-          0.08
-        ]
-      },
-      "cagr": 0.1529324556254854,
-      "rev5": 2332.516966745,
-      "mix5": {
-        "Suscripciones": 0.8901321754659647,
-        "Publicidad": 0.06307371568889591,
-        "Duolingo English Test": 0.022981108557509667,
-        "Compras en la aplicación": 0.02381300028762977
-      },
-      "tasa_base": 0.2385266857860146,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 162.33422531958587,
-      "valor_beta_prop": 154.49816788458554
-    },
-    {
-      "nombre": "D · La IA generalista comoditiza los idiomas",
-      "prob": 0.1,
-      "margen": 0.15,
-      "crec": {
-        "Suscripciones": [
-          0.05,
-          0.02,
-          0,
-          -0.02,
-          -0.02
-        ],
-        "Publicidad": [
-          0.03,
-          0,
-          0,
-          0,
-          0
-        ],
-        "Duolingo English Test": [
-          -0.05,
-          -0.05,
-          -0.05,
-          -0.05,
-          -0.05
-        ],
-        "Compras en la aplicación": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "cagr": 0.0036761586997788864,
-      "rev5": 1166.201315375,
-      "mix5": {
-        "Suscripciones": 0.8731790151278966,
-        "Publicidad": 0.07065675446739118,
-        "Duolingo English Test": 0.02786722922238325,
-        "Compras en la aplicación": 0.028297001182328994
-      },
-      "tasa_base": 0.8935299606883892,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 66.4798099635984,
-      "valor_beta_prop": 64.77939628104804
-    }
-  ],
-  "valor_esperado_beta_hoja": 119.06850047730047,
-  "valor_esperado_beta_prop": 114.00166975981922,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.3475579447262913,
-      "ke": 0.1100010843347926,
-      "wacc": 0.10940422842864324,
-      "dcf_base": 125.77061613571759
-    },
-    {
-      "enfoque": "Bottom-up del sector (Software (Internet), reapalancada)",
-      "beta": 1.6025078695860997,
-      "ke": 0.12137185098354004,
-      "wacc": 0.12065696757738328,
-      "dcf_base": 120.25307133459168
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.07200000000000001,
-      0.092,
-      0.112,
-      0.132,
-      0.152
+  {
+   "nombre": "B · La monetización se estanca",
+   "prob": 0.3,
+   "margen": 0.23,
+   "crec": {
+    "Suscripciones": [
+     0.1,
+     0.09,
+     0.08,
+     0.07,
+     0.06
     ],
-    "m": [
-      0.23,
-      0.25,
-      0.27,
-      0.29000000000000004,
-      0.31
+    "Publicidad": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.05
     ],
-    "v": [
-      [
-        98.64734187619044,
-        103.63772814221413,
-        108.62811440823783,
-        113.61850067426153,
-        118.60888694028522
-      ],
-      [
-        105.57920442510208,
-        111.19983177683025,
-        116.82045912855847,
-        122.44108648028664,
-        128.06171383201482
-      ],
-      [
-        113.23809750108437,
-        119.55914268329627,
-        125.88018786550822,
-        132.20123304772014,
-        138.52227822993206
-      ],
-      [
-        121.69251356665556,
-        128.79086160770973,
-        135.88920964876388,
-        142.98755768981806,
-        150.08590573087224
-      ],
-      [
-        131.01637011091057,
-        138.97614862806094,
-        146.93592714521137,
-        154.89570566236173,
-        162.85548417951213
-      ]
+    "Duolingo English Test": [
+     0,
+     0,
+     0,
+     0,
+     0
     ],
-    "referencia_constante": 125.88018786550822,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Compras en la aplicación": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ]
+   },
+   "cagr": 0.07598140193754843,
+   "rev5": 1651.3126593225004,
+   "mix5": {
+    "Suscripciones": 0.880518460965806,
+    "Publicidad": 0.06854188742575082,
+    "Duolingo English Test": 0.02543431116020859,
+    "Compras en la aplicación": 0.025505340448234597
+   },
+   "tasa_base": 0.5847789416922423,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 98.98884151855442,
+   "valor_beta_prop": 95.21216047721522
   },
-  "inverso": [
-    {
-      "beta": 1.3475579447262913,
-      "margen": 0.23,
-      "g": 0.1751693668271742,
-      "tasa_base": 0.17075272443232564
-    },
-    {
-      "beta": 1.3475579447262913,
-      "margen": 0.27,
-      "g": 0.1451146774194928,
-      "tasa_base": 0.262449087096352
-    },
-    {
-      "beta": 1.3475579447262913,
-      "margen": 0.3,
-      "g": 0.12590047322227427,
-      "tasa_base": 0.3212445519398407
-    },
-    {
-      "beta": 1.6025078695860997,
-      "margen": 0.23,
-      "g": 0.18790968387538898,
-      "tasa_base": 0.15215186154193208
-    },
-    {
-      "beta": 1.6025078695860997,
-      "margen": 0.27,
-      "g": 0.1574584311176933,
-      "tasa_base": 0.22467720077985842
-    },
-    {
-      "beta": 1.6025078695860997,
-      "margen": 0.3,
-      "g": 0.1379984659179364,
-      "tasa_base": 0.2842246942911145
-    }
+  {
+   "nombre": "C · La IA sube el ingreso por usuario",
+   "prob": 0.2,
+   "margen": 0.32,
+   "crec": {
+    "Suscripciones": [
+     0.2,
+     0.18,
+     0.16,
+     0.14,
+     0.12
+    ],
+    "Publicidad": [
+     0.18,
+     0.15,
+     0.12,
+     0.1,
+     0.1
+    ],
+    "Duolingo English Test": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Compras en la aplicación": [
+     0.15,
+     0.12,
+     0.1,
+     0.1,
+     0.08
+    ]
+   },
+   "cagr": 0.1529324556254854,
+   "rev5": 2332.516966745,
+   "mix5": {
+    "Suscripciones": 0.8901321754659647,
+    "Publicidad": 0.06307371568889591,
+    "Duolingo English Test": 0.022981108557509667,
+    "Compras en la aplicación": 0.02381300028762977
+   },
+   "tasa_base": 0.2385266857860146,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 162.33422531958587,
+   "valor_beta_prop": 154.49816788458554
+  },
+  {
+   "nombre": "D · La IA generalista comoditiza los idiomas",
+   "prob": 0.1,
+   "margen": 0.15,
+   "crec": {
+    "Suscripciones": [
+     0.05,
+     0.02,
+     0,
+     -0.02,
+     -0.02
+    ],
+    "Publicidad": [
+     0.03,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Duolingo English Test": [
+     -0.05,
+     -0.05,
+     -0.05,
+     -0.05,
+     -0.05
+    ],
+    "Compras en la aplicación": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cagr": 0.0036761586997788864,
+   "rev5": 1166.2013153750001,
+   "mix5": {
+    "Suscripciones": 0.8731790151278964,
+    "Publicidad": 0.07065675446739117,
+    "Duolingo English Test": 0.027867229222383244,
+    "Compras en la aplicación": 0.028297001182328987
+   },
+   "tasa_base": 0.8935299606883892,
+   "roic_terminal_usado": 0,
+   "valor_beta_hoja": 66.4798099635984,
+   "valor_beta_prop": 64.77939628104804
+  }
+ ],
+ "valor_esperado_beta_hoja": 119.06850047730045,
+ "valor_esperado_beta_prop": 114.00166975981922,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.3475579447262913,
+   "ke": 0.1100010843347926,
+   "wacc": 0.10940422842864324,
+   "dcf_base": 125.77061613571759
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (Internet), reapalancada)",
+   "beta": 1.6025078695860997,
+   "ke": 0.12137185098354004,
+   "wacc": 0.12065696757738328,
+   "dcf_base": 120.25307133459168
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.07200000000000001,
+   0.092,
+   0.112,
+   0.132,
+   0.152
   ],
-  "ingresos_ltm": 1145
+  "m": [
+   0.23,
+   0.25,
+   0.27,
+   0.29000000000000004,
+   0.31
+  ],
+  "v": [
+   [
+    98.64734187619044,
+    103.63772814221413,
+    108.62811440823783,
+    113.61850067426153,
+    118.60888694028522
+   ],
+   [
+    105.57920442510208,
+    111.19983177683025,
+    116.82045912855847,
+    122.44108648028664,
+    128.06171383201482
+   ],
+   [
+    113.23809750108437,
+    119.55914268329627,
+    125.88018786550822,
+    132.20123304772014,
+    138.52227822993206
+   ],
+   [
+    121.69251356665556,
+    128.79086160770973,
+    135.88920964876388,
+    142.98755768981806,
+    150.08590573087224
+   ],
+   [
+    131.01637011091057,
+    138.97614862806094,
+    146.93592714521137,
+    154.89570566236173,
+    162.85548417951213
+   ]
+  ],
+  "referencia_constante": 125.88018786550822,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.3475579447262913,
+   "margen": 0.23,
+   "g": 0.17458357211493813,
+   "tasa_base": 0.17227426932828926
+  },
+  {
+   "beta": 1.3475579447262913,
+   "margen": 0.27,
+   "g": 0.14454309649647934,
+   "tasa_base": 0.2641981247207732
+  },
+  {
+   "beta": 1.3475579447262913,
+   "margen": 0.3,
+   "g": 0.1253377777256265,
+   "tasa_base": 0.32296640015958294
+  },
+  {
+   "beta": 1.6025078695860997,
+   "margen": 0.23,
+   "g": 0.1873190729994748,
+   "tasa_base": 0.15301415342076677
+  },
+  {
+   "beta": 1.6025078695860997,
+   "margen": 0.27,
+   "g": 0.15688209780800866,
+   "tasa_base": 0.2264407807074935
+  },
+  {
+   "beta": 1.6025078695860997,
+   "margen": 0.3,
+   "g": 0.1374310584680405,
+   "tasa_base": 0.28596096108779606
+  }
+ ],
+ "ingresos_ltm": 1145
 }

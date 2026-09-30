@@ -7,7 +7,7 @@ analysis_date: "2026-09-30"
 # Shake Shack Inc. (SHAK) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$20,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$20,94 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -49,37 +49,60 @@ Para empresas de US$1.250-2.000 millones, crecer 11% anual cinco años (historia
 
 **Márgenes.** El margen operativo pasó de ~0% (2023-2024) a 4,3% (2025) y 3,6% LTM, por mejor margen a nivel Shack y gastos generales creciendo menos que las ventas. La hoja supone 4,5% el próximo año y 8% de objetivo. Las historias van de 3% a 11%: el margen es la variable que más mueve el valor.
 
-**Reinversión y retorno.** Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia B. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028.
+**Reinversión y retorno.** Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia B. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028. Sin ventaja defendible: su ROIC está por debajo del costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
 **Riesgo.** La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada da 0,83, y el DCF Base sube de US$20,92 a US$26,15. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,60 | 12,1% | 11,5% | US$20,92 |
-| Bottom-up del sector (Restaurant/Dining, reapalancada) | 0,83 | 8,7% | 8,4% | US$26,15 |
+| Hoja (regresión o la cargada en el libro) | 1,60 | 12,1% | 11,5% | US$20,94 |
+| Bottom-up del sector (Restaurant/Dining, reapalancada) | 0,83 | 8,7% | 8,4% | US$26,16 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 9,0% | 13,0% | 16,0% |
+| Crecimiento años 2–5 | 9,0% | 11,0% | 16,0% |
+| Margen año 1 (base ajustada del modelo) | 4,5% | 4,5% | 4,5% |
+| Margen objetivo | 6,0% | 8,0% | 10,0% |
+
+Ventas/capital: 1,4x en años 1–5 y 1,6x en 6–10. WACC: 11,5%. Ke: 12,1%. Impuesto efectivo: 33,4%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Sin ventaja defendible | 7,9% | 18,4% | 9,0% | = costo de capital | US$20,94 | US$20,94 |
+
+Fuentes de ventaja: Marca sin economía unitaria probada. Evidencia: ROIC bajo el costo de capital. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,60) | Valor/acción (beta 0,83) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Crece por aperturas y el margen mejora** | 45% | Shacks propios: 13%, 12%, 11%, 10%, 9%; Licencias: 12%, 12%, 12%, 12%, 12% | 11,0% | 8% | 1,4 | US$20,97 | US$26,15 |
-| **B · Crece, pero el margen no despega** | 30% | Shacks propios: 10%, 8%, 7%, 6%, 6%; Licencias: 8%, 8%, 8%, 8%, 8% | 7,4% | 5% | 1,4 | US$10,03 | US$12,35 |
-| **C · Economía unitaria de primer nivel** | 15% | Shacks propios: 15%, 14%, 13%, 12%, 11%; Licencias: 15%, 15%, 15%, 15%, 15% | 13,1% | 11% | 1,4 | US$36,35 | US$45,07 |
-| **D · Consumidor débil y aperturas que no rinden** | 10% | Shacks propios: 5%, 3%, 2%, 2%, 2%; Licencias: 3%, 3%, 3%, 3%, 3% | 2,8% | 3% | 1,4 | US$6,95 | US$8,01 |
-| **Valor esperado** | 100% |  |  |  |  | **US$18,60** | **US$23,03** |
+| **A · Crece por aperturas y el margen mejora** | 45% | Shacks propios: 13%, 12%, 11%, 10%, 9%; Licencias: 12%, 12%, 12%, 12%, 12% | 11,0% | 8% | 1,4 | US$21,00 | US$26,15 |
+| **B · Crece, pero el margen no despega** | 30% | Shacks propios: 10%, 8%, 7%, 6%, 6%; Licencias: 8%, 8%, 8%, 8%, 8% | 7,4% | 5% | 1,4 | US$10,04 | US$12,35 |
+| **C · Economía unitaria de primer nivel** | 15% | Shacks propios: 15%, 14%, 13%, 12%, 11%; Licencias: 15%, 15%, 15%, 15%, 15% | 13,1% | 11% | 1,4 | US$36,39 | US$45,07 |
+| **D · Consumidor débil y aperturas que no rinden** | 10% | Shacks propios: 5%, 3%, 2%, 2%, 2%; Licencias: 3%, 3%, 3%, 3%, 3% | 2,8% | 3% | 1,4 | US$6,96 | US$8,01 |
+| **Valor esperado** | 100% |  |  |  |  | **US$18,62** | **US$23,04** |
 
 A (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. B (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. C (15%) es una economía unitaria de primer nivel. D (10%) es un consumidor débil con aperturas que no rinden. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,60; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 4,0% | 6,0% | 8,0% | 10,0% | 12,0% |
 |---|---:|---:|---:|---:|---:|
-| 7,4% | 5,58 | 13,34 | 21,10 | 28,86 | 36,63 |
-| 9,4% | 3,55 | 12,29 | 21,03 | 29,77 | 38,51 |
-| 11,4% | 1,27 | 11,10 | 20,92 | 30,75 | 40,57 |
-| 13,4% | -1,29 | 9,74 | 20,77 | 31,80 | 42,83 |
-| 15,4% | -4,15 | 8,22 | 20,58 | 32,95 | 45,31 |
+| 7,4% | 5,49 | 13,12 | 20,75 | 28,38 | 36,01 |
+| 9,4% | 3,50 | 12,09 | 20,68 | 29,27 | 37,87 |
+| 11,4% | 1,25 | 10,91 | 20,57 | 30,23 | 39,89 |
+| 13,4% | -1,26 | 9,59 | 20,43 | 31,28 | 42,12 |
+| 15,4% | -4,07 | 8,09 | 20,25 | 32,41 | 44,56 |
 
 
 ### Pre-mortem
@@ -108,16 +131,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$57,52**.
+Precio de referencia de la valoración guardada: **US$59,34**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 8% | Margen 11% | Margen 14% |
 |---|---:|---:|---:|
-| Beta 1,60 | ninguno entre −10% y 60% | 29,4% (4% de las empresas) | 15,4% (20% de las empresas) |
-| Beta 0,83 | ninguno entre −10% y 60% | 21,0% (10% de las empresas) | 9,6% (44% de las empresas) |
+| Beta 1,60 | ninguno entre −10% y 60% | 30,8% (3% de las empresas) | 16,7% (17% de las empresas) |
+| Beta 0,83 | ninguno entre −10% y 60% | 22,4% (8% de las empresas) | 10,8% (37% de las empresas) |
 
-Frente al valor esperado de las historias (US$18,60 con la beta de la hoja; US$23,03 con la propuesta), el precio está por encima en 209% y por encima en 150%, respectivamente. El precio (US$57,52) está 2,5-3 veces por encima del valor esperado. El DCF inverso muestra que con margen de 8% (el objetivo de la hoja) ningún crecimiento entre −10% y 60% justifica el precio; con 11% hace falta 20-30% anual, y con 14% entre 8% y 14%. En otras palabras, el precio supone márgenes de cadena madura de primer nivel (14%) que Shake Shack nunca tuvo. ¿Qué sabe el mercado que yo no? Paga por la marca y por la opción de que la economía unitaria mejore mucho. Con criterio Damodaran, pagar por una marca sin evidencia de rentabilidad es pagar por la narrativa y no por los flujos.
+Frente al valor esperado de las historias (US$18,62 con la beta de la hoja; US$23,04 con la propuesta), el precio está por encima en 219% y por encima en 158%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -127,8 +150,8 @@ Frente al valor esperado de las historias (US$18,60 con la beta de la hoja; US$2
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Marca de hamburguesas premium en expansión que todavía no demuestra rentabilidad |  |
 | Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$18,60 / US$23,03 |  |
-| Rango (historia más débil a más fuerte) | US$6,95 a US$45,07 |  |
+| Valor esperado (beta de la hoja / propuesta) | US$18,62 / US$23,04 |  |
+| Rango (historia más débil a más fuerte) | US$6,96 a US$45,07 |  |
 | Confianza | Baja-media: el crecimiento es claro; el margen de largo plazo no |  |
 | Qué cambiaría la opinión | Margen a nivel Shack y margen operativo GAAP en 2027 |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |

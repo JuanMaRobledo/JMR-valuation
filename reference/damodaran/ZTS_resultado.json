@@ -1,298 +1,322 @@
 {
-  "ticker": "ZTS",
-  "fecha": "2026-09-30",
-  "precio": 69.83,
-  "dcf_base": 117.31136416284306,
-  "g_ref": 0.044000000000000004,
-  "m_base": 0.36,
-  "s2c": 2,
+ "ticker": "ZTS",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": -0.01,
+  "growthY1Base": 0.02,
+  "growthY1Opt": 0.06,
+  "growthCons": -0.01,
+  "growthBase": 0.05,
+  "growthOpt": 0.06,
+  "marginY1Cons": 0.36,
+  "marginY1Base": 0.36,
+  "marginY1Opt": 0.36,
+  "marginCons": 0.33,
+  "marginBase": 0.36,
+  "marginOpt": 0.38,
+  "salesToCapital2": 2,
   "wacc": 0.08178448240094004,
-  "beta_hoja": 0.9,
-  "beta_bu": 1.103610431779129,
-  "beta_prop": 1.103610431779129,
-  "industria": "Drugs (Pharmaceutical)",
-  "bu_sector": 0.92,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": "$7,000-12,000 Mn",
-    "<(25)": 0.3,
-    "(25)-(20)": 0.3,
-    "(20)-(15)": 0.7,
-    "(15)-(10)": 2.3,
-    "(10)-(5)": 6.3,
-    "(5)-0": 17.7,
-    "0-5": 31.9,
-    "5-10": 23.5,
-    "10-15": 9.5,
-    "15-20": 4.0,
-    "20-25": 1.5,
-    "25-30": 1.2,
-    "30-35": 0.5,
-    "35-40": 0.2,
-    "40-45": 0.1,
-    ">45": 0.1,
-    "Mean": 3.9,
-    "Median": 3.5,
-    "StDev": 8.3,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+  "costoPatrimonio": 0.09004000000000001,
+  "taxEffective": 0.2005,
+  "convergenceYear": 5,
+  "terminalWacc": 0.09,
+  "roicTerminal": 0.169,
+  "salesToCapital": 2
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 85.59821753003158,
+ "precio": 70,
+ "dcf_base": 117.31136416284306,
+ "g_ref": 0.044000000000000004,
+ "m_base": 0.36,
+ "s2c": 2,
+ "wacc": 0.08178448240094004,
+ "beta_hoja": 0.9,
+ "beta_bu": 1.104267779737668,
+ "beta_prop": 1.104267779737668,
+ "industria": "Drugs (Pharmaceutical)",
+ "bu_sector": 0.92,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": "$7,000-12,000 Mn",
+  "<(25)": 0.3,
+  "(25)-(20)": 0.3,
+  "(20)-(15)": 0.7,
+  "(15)-(10)": 2.3,
+  "(10)-(5)": 6.3,
+  "(5)-0": 17.7,
+  "0-5": 31.9,
+  "5-10": 23.5,
+  "10-15": 9.5,
+  "15-20": 4.0,
+  "20-25": 1.5,
+  "25-30": 1.2,
+  "30-35": 0.5,
+  "35-40": 0.2,
+  "40-45": 0.1,
+  ">45": 0.1,
+  "Mean": 3.9,
+  "Median": 3.5,
+  "StDev": 8.3,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Tropiezo temporal; vuelve a crecer con innovación",
+   "prob": 0.4,
+   "margen": 0.36,
+   "crec": {
+    "Animales de compañía": [
+     0.01,
+     0.05,
+     0.06,
+     0.06,
+     0.06
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Animales de producción": [
+     0.03,
+     0.04,
+     0.04,
+     0.04,
+     0.04
+    ]
+   },
+   "cagr": 0.04458884572123023,
+   "rev5": 11836.600493105601,
+   "mix5": {
+    "Animales de compañía": 0.6776025072799967,
+    "Animales de producción": 0.32239749272000334
+   },
+   "tasa_base": 0.6000231642985512,
+   "roic_terminal_usado": 0.169,
+   "valor_beta_hoja": 118.15986684157774,
+   "valor_beta_prop": 112.64498691382937
   },
-  "historias": [
-    {
-      "nombre": "A · Tropiezo temporal; vuelve a crecer con innovación",
-      "prob": 0.4,
-      "margen": 0.36,
-      "crec": {
-        "Animales de compañía": [
-          0.01,
-          0.05,
-          0.06,
-          0.06,
-          0.06
-        ],
-        "Animales de producción": [
-          0.03,
-          0.04,
-          0.04,
-          0.04,
-          0.04
-        ]
-      },
-      "cagr": 0.04458884572123023,
-      "rev5": 11836.600493105601,
-      "mix5": {
-        "Animales de compañía": 0.6776025072799967,
-        "Animales de producción": 0.32239749272000334
-      },
-      "tasa_base": 0.6000231642985512,
-      "roic_terminal_usado": 0.169,
-      "valor_beta_hoja": 118.15986684157774,
-      "valor_beta_prop": 112.6584606940287
-    },
-    {
-      "nombre": "B · Erosión prolongada de franquicias clave",
-      "prob": 0.35,
-      "margen": 0.33,
-      "crec": {
-        "Animales de compañía": [
-          -0.04,
-          0,
-          0.02,
-          0.03,
-          0.03
-        ],
-        "Animales de producción": [
-          0.02,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.014600826361075292,
-      "rev5": 10232.3674572954,
-      "mix5": {
-        "Animales de compañía": 0.6446788932796593,
-        "Animales de producción": 0.3553211067203408
-      },
-      "tasa_base": 0.7618130746817934,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 65.09490216716658,
-      "valor_beta_prop": 61.96607870286196
-    },
-    {
-      "nombre": "C · Recuperación fuerte con nuevos productos",
-      "prob": 0.15,
-      "margen": 0.38,
-      "crec": {
-        "Animales de compañía": [
-          0.04,
-          0.08,
-          0.08,
-          0.08,
-          0.07
-        ],
-        "Animales de producción": [
-          0.04,
-          0.04,
-          0.04,
-          0.04,
-          0.04
-        ]
-      },
-      "cagr": 0.06031150461460277,
-      "rev5": 12754.617453260802,
-      "mix5": {
-        "Animales de compañía": 0.697902367043104,
-        "Animales de producción": 0.30209763295689596
-      },
-      "tasa_base": 0.4997126005588343,
-      "roic_terminal_usado": 0.169,
-      "valor_beta_hoja": 136.72718054056284,
-      "valor_beta_prop": 130.41712009383644
-    },
-    {
-      "nombre": "D · Genéricos y competencia generalizada",
-      "prob": 0.1,
-      "margen": 0.29,
-      "crec": {
-        "Animales de compañía": [
-          -0.08,
-          -0.04,
-          0,
-          0.01,
-          0.02
-        ],
-        "Animales de producción": [
-          0,
-          0.02,
-          0.02,
-          0.02,
-          0.02
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": -0.0066281282144515785,
-      "rev5": 9205.75391472,
-      "mix5": {
-        "Animales de compañía": 0.6276173920705692,
-        "Animales de producción": 0.3723826079294308
-      },
-      "tasa_base": 0.8369635738791585,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 49.27338055953618,
-      "valor_beta_prop": 46.8092787857046
-    }
-  ],
-  "valor_esperado_beta_hoja": 95.48357763217744,
-  "valor_esperado_beta_prop": 90.9950077162591,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 0.9,
-      "ke": 0.09004000000000001,
-      "wacc": 0.08178448240094004,
-      "dcf_base": 117.31136416284306
-    },
-    {
-      "enfoque": "Bottom-up del sector (Drugs (Pharmaceutical), reapalancada)",
-      "beta": 1.103610431779129,
-      "ke": 0.09912102525734916,
-      "wacc": 0.08905238015246777,
-      "dcf_base": 111.85235677296167
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.0040000000000000036,
-      0.024000000000000004,
-      0.044000000000000004,
-      0.064,
-      0.084
+  {
+   "nombre": "B · Erosión prolongada de franquicias clave",
+   "prob": 0.35,
+   "margen": 0.33,
+   "crec": {
+    "Animales de compañía": [
+     -0.04,
+     0,
+     0.02,
+     0.03,
+     0.03
     ],
-    "m": [
-      0.32,
-      0.33999999999999997,
-      0.36,
-      0.38,
-      0.39999999999999997
-    ],
-    "v": [
-      [
-        79.6254217011728,
-        85.07941624321174,
-        90.53341078525072,
-        95.98740532728972,
-        101.44139986932869
-      ],
-      [
-        90.59420895606327,
-        96.78787845673216,
-        102.98154795740106,
-        109.17521745807,
-        115.36888695873887
-      ],
-      [
-        102.81032103732795,
-        109.83195017615408,
-        116.85357931498027,
-        123.87520845380641,
-        130.89683759263255
-      ],
-      [
-        116.4006410647104,
-        124.3475408458033,
-        132.2944406268963,
-        140.24134040798918,
-        148.18824018908214
-      ],
-      [
-        131.502832449802,
-        140.48210731949007,
-        149.46138218917815,
-        158.4406570588663,
-        167.41993192855432
-      ]
-    ],
-    "referencia_constante": 116.85357931498027,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Animales de producción": [
+     0.02,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.014600826361075292,
+   "rev5": 10232.3674572954,
+   "mix5": {
+    "Animales de compañía": 0.6446788932796593,
+    "Animales de producción": 0.3553211067203408
+   },
+   "tasa_base": 0.7618130746817934,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 65.09490216716658,
+   "valor_beta_prop": 61.95841040521397
   },
-  "inverso": [
-    {
-      "beta": 0.9,
-      "margen": 0.32,
-      "g": -0.015907984269015588,
-      "tasa_base": 0.8698142643123151
-    },
-    {
-      "beta": 0.9,
-      "margen": 0.36,
-      "g": -0.0350620009295613,
-      "tasa_base": 0.9146781211712471
-    },
-    {
-      "beta": 0.9,
-      "margen": 0.38,
-      "g": -0.04369073175373278,
-      "tasa_base": 0.9255503220097032
-    },
-    {
-      "beta": 1.103610431779129,
-      "margen": 0.32,
-      "g": -0.008543629181082812,
-      "tasa_base": 0.843744447301033
-    },
-    {
-      "beta": 1.103610431779129,
-      "margen": 0.36,
-      "g": -0.027883829235903435,
-      "tasa_base": 0.9056336248372382
-    },
-    {
-      "beta": 1.103610431779129,
-      "margen": 0.38,
-      "g": -0.03659445399404229,
-      "tasa_base": 0.9166090120324932
-    }
+  {
+   "nombre": "C · Recuperación fuerte con nuevos productos",
+   "prob": 0.15,
+   "margen": 0.38,
+   "crec": {
+    "Animales de compañía": [
+     0.04,
+     0.08,
+     0.08,
+     0.08,
+     0.07
+    ],
+    "Animales de producción": [
+     0.04,
+     0.04,
+     0.04,
+     0.04,
+     0.04
+    ]
+   },
+   "cagr": 0.06031150461460277,
+   "rev5": 12754.617453260802,
+   "mix5": {
+    "Animales de compañía": 0.697902367043104,
+    "Animales de producción": 0.30209763295689596
+   },
+   "tasa_base": 0.4997126005588343,
+   "roic_terminal_usado": 0.169,
+   "valor_beta_hoja": 136.72718054056284,
+   "valor_beta_prop": 130.4016668663091
+  },
+  {
+   "nombre": "D · Genéricos y competencia generalizada",
+   "prob": 0.1,
+   "margen": 0.29,
+   "crec": {
+    "Animales de compañía": [
+     -0.08,
+     -0.04,
+     0,
+     0.01,
+     0.02
+    ],
+    "Animales de producción": [
+     0,
+     0.02,
+     0.02,
+     0.02,
+     0.02
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": -0.0066281282144515785,
+   "rev5": 9205.75391472,
+   "mix5": {
+    "Animales de compañía": 0.6276173920705692,
+    "Animales de producción": 0.3723826079294308
+   },
+   "tasa_base": 0.8369635738791585,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 49.27338055953618,
+   "valor_beta_prop": 46.80323837223227
+  }
+ ],
+ "valor_esperado_beta_hoja": 95.48357763217744,
+ "valor_esperado_beta_prop": 90.98401227452624,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 0.9,
+   "ke": 0.09004000000000001,
+   "wacc": 0.08178448240094004,
+   "dcf_base": 117.31136416284306
+  },
+  {
+   "enfoque": "Bottom-up del sector (Drugs (Pharmaceutical), reapalancada)",
+   "beta": 1.104267779737668,
+   "ke": 0.09915034297629999,
+   "wacc": 0.08907063603816527,
+   "dcf_base": 111.83898661864596
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.0040000000000000036,
+   0.024000000000000004,
+   0.044000000000000004,
+   0.064,
+   0.084
   ],
-  "ingresos_ltm": 9517
+  "m": [
+   0.32,
+   0.33999999999999997,
+   0.36,
+   0.38,
+   0.39999999999999997
+  ],
+  "v": [
+   [
+    79.6254217011728,
+    85.07941624321174,
+    90.53341078525072,
+    95.98740532728972,
+    101.44139986932869
+   ],
+   [
+    90.59420895606327,
+    96.78787845673216,
+    102.98154795740106,
+    109.17521745807,
+    115.36888695873887
+   ],
+   [
+    102.81032103732795,
+    109.83195017615408,
+    116.85357931498027,
+    123.87520845380641,
+    130.89683759263255
+   ],
+   [
+    116.4006410647104,
+    124.3475408458033,
+    132.2944406268963,
+    140.24134040798918,
+    148.18824018908214
+   ],
+   [
+    131.502832449802,
+    140.48210731949007,
+    149.46138218917815,
+    158.4406570588663,
+    167.41993192855432
+   ]
+  ],
+  "referencia_constante": 116.85357931498027,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 0.9,
+   "margen": 0.32,
+   "g": -0.015543317675417528,
+   "tasa_base": 0.868523344570978
+  },
+  {
+   "beta": 0.9,
+   "margen": 0.36,
+   "g": -0.03470423171763354,
+   "tasa_base": 0.9142273319642181
+  },
+  {
+   "beta": 0.9,
+   "margen": 0.38,
+   "g": -0.04333601896801792,
+   "tasa_base": 0.9251033838997026
+  },
+  {
+   "beta": 1.104267779737668,
+   "margen": 0.32,
+   "g": -0.008158536245706338,
+   "tasa_base": 0.8423812183098004
+  },
+  {
+   "beta": 1.104267779737668,
+   "margen": 0.36,
+   "g": -0.0275061143369561,
+   "tasa_base": 0.9051577040645645
+  },
+  {
+   "beta": 1.104267779737668,
+   "margen": 0.38,
+   "g": -0.03622000713030499,
+   "tasa_base": 0.9161372089841842
+  }
+ ],
+ "ingresos_ltm": 9517
 }

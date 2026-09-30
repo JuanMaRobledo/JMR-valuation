@@ -1,302 +1,326 @@
 {
-  "ticker": "ADBE",
-  "fecha": "2026-09-30",
-  "precio": 239.66,
-  "dcf_base": 536.4823571890387,
-  "g_ref": 0.10400000000000001,
-  "m_base": 0.4,
-  "s2c": 4,
+ "ticker": "ADBE",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.06,
+  "growthY1Base": 0.12,
+  "growthY1Opt": 0.16,
+  "growthCons": 0.06,
+  "growthBase": 0.1,
+  "growthOpt": 0.16,
+  "marginY1Cons": 0.385,
+  "marginY1Base": 0.385,
+  "marginY1Opt": 0.385,
+  "marginCons": 0.3874213836477987,
+  "marginBase": 0.4,
+  "marginOpt": 0.45,
+  "salesToCapital2": 4.5,
   "wacc": 0.1080042835452905,
-  "beta_hoja": 1.3928819168531263,
-  "beta_bu": 1.308164891664659,
-  "beta_prop": 1.308164891664659,
-  "industria": "Software (System & Application)",
-  "bu_sector": 1.25,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": ">$25,000 Mn",
-    "<(25)": 1.0,
-    "(25)-(20)": 0.6,
-    "(20)-(15)": 1.5,
-    "(15)-(10)": 3.0,
-    "(10)-(5)": 8.2,
-    "(5)-0": 21.3,
-    "0-5": 32.6,
-    "5-10": 18.1,
-    "10-15": 8.5,
-    "15-20": 3.2,
-    "20-25": 1.2,
-    "25-30": 0.4,
-    "30-35": 0.2,
-    "35-40": 0.1,
-    "40-45": 0.1,
-    ">45": 0.0,
-    "Mean": 2.1,
-    "Median": 2.0,
-    "StDev": 8.6,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+  "costoPatrimonio": 0.11202253349164944,
+  "taxEffective": 0.21517077901088244,
+  "convergenceYear": 3,
+  "terminalWacc": 0.0922,
+  "roicTerminal": 0.293,
+  "salesToCapital": 4
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 377.93587266843446,
+ "precio": 240.24,
+ "dcf_base": 536.4823571890387,
+ "g_ref": 0.10400000000000001,
+ "m_base": 0.4,
+ "s2c": 4,
+ "wacc": 0.1080042835452905,
+ "beta_hoja": 1.3928819168531263,
+ "beta_bu": 1.308164891664659,
+ "beta_prop": 1.308164891664659,
+ "industria": "Software (System & Application)",
+ "bu_sector": 1.25,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": ">$25,000 Mn",
+  "<(25)": 1.0,
+  "(25)-(20)": 0.6,
+  "(20)-(15)": 1.5,
+  "(15)-(10)": 3.0,
+  "(10)-(5)": 8.2,
+  "(5)-0": 21.3,
+  "0-5": 32.6,
+  "5-10": 18.1,
+  "10-15": 8.5,
+  "15-20": 3.2,
+  "20-25": 1.2,
+  "25-30": 0.4,
+  "30-35": 0.2,
+  "35-40": 0.1,
+  "40-45": 0.1,
+  ">45": 0.0,
+  "Mean": 2.1,
+  "Median": 2.0,
+  "StDev": 8.6,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · La IA se cobra dentro de la suscripción",
+   "prob": 0.4,
+   "margen": 0.4,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Business Professionals & Consumers": [
+     0.14,
+     0.12,
+     0.1,
+     0.09,
+     0.08
+    ]
+   },
+   "cagr": 0.08175700697834754,
+   "rev5": 38469.85368560001,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6701447514589868,
+    "Business Professionals & Consumers": 0.3137387328644257,
+    "Otros": 0.016116515676587503
+   },
+   "tasa_base": 0.29353963473838196,
+   "roic_terminal_usado": 0.293,
+   "valor_beta_hoja": 467.3813052362383,
+   "valor_beta_prop": 476.77083514378927
   },
-  "historias": [
-    {
-      "nombre": "A · La IA se cobra dentro de la suscripción",
-      "prob": 0.4,
-      "margen": 0.4,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Business Professionals & Consumers": [
-          0.14,
-          0.12,
-          0.1,
-          0.09,
-          0.08
-        ]
-      },
-      "cagr": 0.08175700697834754,
-      "rev5": 38469.85368560001,
-      "mix5": {
-        "Creative & Marketing Professionals": 0.6701447514589868,
-        "Business Professionals & Consumers": 0.3137387328644257,
-        "Otros": 0.016116515676587503
-      },
-      "tasa_base": 0.29353963473838196,
-      "roic_terminal_usado": 0.293,
-      "valor_beta_hoja": 467.3813052362383,
-      "valor_beta_prop": 476.77083514378927
-    },
-    {
-      "nombre": "B · Erosión gradual frente a Figma y Canva",
-      "prob": 0.35,
-      "margen": 0.37,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.08,
-          0.05,
-          0.04,
-          0.03,
-          0.03
-        ],
-        "Business Professionals & Consumers": [
-          0.12,
-          0.09,
-          0.07,
-          0.06,
-          0.05
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.05422366658381561,
-      "rev5": 33817.052957600004,
-      "mix5": {
-        "Creative & Marketing Professionals": 0.6678244142538309,
-        "Business Professionals & Consumers": 0.313841640420497,
-        "Otros": 0.018333945325672205
-      },
-      "tasa_base": 0.4534616938735223,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 268.5755948722109,
-      "valor_beta_prop": 273.55020052133665
-    },
-    {
-      "nombre": "C · La IA generativa comoditiza la creatividad",
-      "prob": 0.15,
-      "margen": 0.32,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.05,
-          0.01,
-          -0.02,
-          -0.03,
-          -0.03
-        ],
-        "Business Professionals & Consumers": [
-          0.09,
-          0.05,
-          0.03,
-          0.02,
-          0.02
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.009473581880143467,
-      "rev5": 27223.67421425,
-      "mix5": {
-        "Creative & Marketing Professionals": 0.6483517455116689,
-        "Business Professionals & Consumers": 0.32887395903061273,
-        "Otros": 0.022774295457718426
-      },
-      "tasa_base": 0.710142541190589,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 187.85703178546464,
-      "valor_beta_prop": 191.15350372197176
-    },
-    {
-      "nombre": "D · La IA amplía el mercado de Adobe",
-      "prob": 0.1,
-      "margen": 0.43,
-      "crec": {
-        "Creative & Marketing Professionals": [
-          0.12,
-          0.12,
-          0.11,
-          0.1,
-          0.09
-        ],
-        "Business Professionals & Consumers": [
-          0.16,
-          0.14,
-          0.12,
-          0.11,
-          0.1
-        ]
-      },
-      "cagr": 0.11098407374059693,
-      "rev5": 43955.28657920002,
-      "mix5": {
-        "Creative & Marketing Professionals": 0.6855581490636808,
-        "Business Professionals & Consumers": 0.3003366078984228,
-        "Otros": 0.014105243037896351
-      },
-      "tasa_base": 0.1877376530590391,
-      "roic_terminal_usado": 0.293,
-      "valor_beta_hoja": 586.709822214482,
-      "valor_beta_prop": 598.6826087956961
-    }
-  ],
-  "valor_esperado_beta_hoja": 367.803517289037,
-  "valor_esperado_beta_prop": 374.9921906778489,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.3928819168531263,
-      "ke": 0.11202253349164944,
-      "wacc": 0.1080042835452905,
-      "dcf_base": 536.4823571890387
-    },
-    {
-      "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
-      "beta": 1.308164891664659,
-      "ke": 0.10824415416824379,
-      "wacc": 0.10444663011656459,
-      "dcf_base": 547.4129138183398
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.064,
-      0.084,
-      0.10400000000000001,
-      0.12400000000000001,
-      0.14400000000000002
+  {
+   "nombre": "B · Erosión gradual frente a Figma y Canva",
+   "prob": 0.35,
+   "margen": 0.37,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.08,
+     0.05,
+     0.04,
+     0.03,
+     0.03
     ],
-    "m": [
-      0.36000000000000004,
-      0.38,
-      0.4,
-      0.42000000000000004,
-      0.44
-    ],
-    "v": [
-      [
-        389.5638664094649,
-        410.3673017573826,
-        431.17073710530036,
-        451.97417245321816,
-        472.7776078011359
-      ],
-      [
-        435.1953672001521,
-        458.63638788843934,
-        482.0774085767267,
-        505.51842926501405,
-        528.9594499533014
-      ],
-      [
-        485.89057963865406,
-        512.2663910283612,
-        538.6422024180688,
-        565.0180138077761,
-        591.3938251974836
-      ],
-      [
-        542.1423752789501,
-        571.7790593973202,
-        601.41574351569,
-        631.0524276340601,
-        660.6891117524299
-      ],
-      [
-        604.4836752035582,
-        637.7385324155414,
-        670.9933896275247,
-        704.248246839508,
-        737.5031040514913
-      ]
-    ],
-    "referencia_constante": 538.6422024180688,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Business Professionals & Consumers": [
+     0.12,
+     0.09,
+     0.07,
+     0.06,
+     0.05
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.05422366658381561,
+   "rev5": 33817.052957600004,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6678244142538309,
+    "Business Professionals & Consumers": 0.313841640420497,
+    "Otros": 0.018333945325672205
+   },
+   "tasa_base": 0.4534616938735223,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 268.5755948722109,
+   "valor_beta_prop": 273.55020052133665
   },
-  "inverso": [
-    {
-      "beta": 1.3928819168531263,
-      "margen": 0.35,
-      "g": -0.018267874052015763,
-      "tasa_base": 0.8283211434615871
-    },
-    {
-      "beta": 1.3928819168531263,
-      "margen": 0.38,
-      "g": -0.031637256722435836,
-      "tasa_base": 0.8678851010247949
-    },
-    {
-      "beta": 1.3928819168531263,
-      "margen": 0.4,
-      "g": -0.03989585641241916,
-      "tasa_base": 0.8814292045163675
-    },
-    {
-      "beta": 1.308164891664659,
-      "margen": 0.35,
-      "g": -0.021598382603344735,
-      "tasa_base": 0.8425091098902486
-    },
-    {
-      "beta": 1.308164891664659,
-      "margen": 0.38,
-      "g": -0.03491868800818004,
-      "tasa_base": 0.8732666483334153
-    },
-    {
-      "beta": 1.308164891664659,
-      "margen": 0.4,
-      "g": -0.04314721723132725,
-      "tasa_base": 0.8867614362593769
-    }
+  {
+   "nombre": "C · La IA generativa comoditiza la creatividad",
+   "prob": 0.15,
+   "margen": 0.32,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.05,
+     0.01,
+     -0.02,
+     -0.03,
+     -0.03
+    ],
+    "Business Professionals & Consumers": [
+     0.09,
+     0.05,
+     0.03,
+     0.02,
+     0.02
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.009473581880143467,
+   "rev5": 27223.67421425,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6483517455116689,
+    "Business Professionals & Consumers": 0.32887395903061273,
+    "Otros": 0.022774295457718426
+   },
+   "tasa_base": 0.710142541190589,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 187.85703178546464,
+   "valor_beta_prop": 191.15350372197176
+  },
+  {
+   "nombre": "D · La IA amplía el mercado de Adobe",
+   "prob": 0.1,
+   "margen": 0.43,
+   "crec": {
+    "Creative & Marketing Professionals": [
+     0.12,
+     0.12,
+     0.11,
+     0.1,
+     0.09
+    ],
+    "Business Professionals & Consumers": [
+     0.16,
+     0.14,
+     0.12,
+     0.11,
+     0.1
+    ]
+   },
+   "cagr": 0.11098407374059693,
+   "rev5": 43955.28657920002,
+   "mix5": {
+    "Creative & Marketing Professionals": 0.6855581490636808,
+    "Business Professionals & Consumers": 0.3003366078984228,
+    "Otros": 0.014105243037896351
+   },
+   "tasa_base": 0.1877376530590391,
+   "roic_terminal_usado": 0.293,
+   "valor_beta_hoja": 586.709822214482,
+   "valor_beta_prop": 598.6826087956961
+  }
+ ],
+ "valor_esperado_beta_hoja": 367.803517289037,
+ "valor_esperado_beta_prop": 374.9921906778489,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.3928819168531263,
+   "ke": 0.11202253349164944,
+   "wacc": 0.1080042835452905,
+   "dcf_base": 536.4823571890387
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
+   "beta": 1.308164891664659,
+   "ke": 0.10824415416824379,
+   "wacc": 0.10444663011656459,
+   "dcf_base": 547.4129138183398
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.064,
+   0.084,
+   0.10400000000000001,
+   0.12400000000000001,
+   0.14400000000000002
   ],
-  "ingresos_ltm": 25970
+  "m": [
+   0.36000000000000004,
+   0.38,
+   0.4,
+   0.42000000000000004,
+   0.44
+  ],
+  "v": [
+   [
+    389.5638664094649,
+    410.3673017573826,
+    431.17073710530036,
+    451.97417245321816,
+    472.7776078011359
+   ],
+   [
+    435.1953672001521,
+    458.63638788843934,
+    482.0774085767267,
+    505.51842926501405,
+    528.9594499533014
+   ],
+   [
+    485.89057963865406,
+    512.2663910283612,
+    538.6422024180688,
+    565.0180138077761,
+    591.3938251974836
+   ],
+   [
+    542.1423752789501,
+    571.7790593973202,
+    601.41574351569,
+    631.0524276340601,
+    660.6891117524299
+   ],
+   [
+    604.4836752035582,
+    637.7385324155414,
+    670.9933896275247,
+    704.248246839508,
+    737.5031040514913
+   ]
+  ],
+  "referencia_constante": 538.6422024180688,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.3928819168531263,
+   "margen": 0.35,
+   "g": -0.017836150208148494,
+   "tasa_base": 0.8264819998867127
+  },
+  {
+   "beta": 1.3928819168531263,
+   "margen": 0.38,
+   "g": -0.031209725862909127,
+   "tasa_base": 0.8671839504151709
+  },
+  {
+   "beta": 1.3928819168531263,
+   "margen": 0.4,
+   "g": -0.03947088423298434,
+   "tasa_base": 0.8807322501420942
+  },
+  {
+   "beta": 1.308164891664659,
+   "margen": 0.35,
+   "g": -0.02116783402049588,
+   "tasa_base": 0.8406749729273126
+  },
+  {
+   "beta": 1.308164891664659,
+   "margen": 0.38,
+   "g": -0.03449232820455733,
+   "tasa_base": 0.8725674182554741
+  },
+  {
+   "beta": 1.308164891664659,
+   "margen": 0.4,
+   "g": -0.042723413510465214,
+   "tasa_base": 0.8860663981571629
+  }
+ ],
+ "ingresos_ltm": 25970
 }

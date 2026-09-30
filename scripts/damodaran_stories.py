@@ -252,7 +252,16 @@ def compute(tk: str) -> dict:
             gi = run_exact(grid, [case])[0] if price else None
             inverso.append({"beta": b, "margen": m, "g": gi, "tasa_base": frac_at_least(br, gi) if gi is not None else None})
 
+    financiero = bool(inp.get("dcfFinanciero"))
+    sup = {k: inp.get(k) for k in ("growthY1Cons", "growthY1Base", "growthY1Opt", "growthCons", "growthBase", "growthOpt",
+                                   "marginY1Cons", "marginY1Base", "marginY1Opt", "marginCons", "marginBase", "marginOpt",
+                                   "salesToCapital2", "wacc", "costoPatrimonio", "taxEffective", "convergenceYear",
+                                   "terminalWacc", "roicTerminal")}
+    sup["salesToCapital"] = s2c
+    sin_exceso = None if financiero else run_exact(grid, [{"roic": 0}])[0]
+
     return {"ticker": tk, "fecha": spec.get("fecha") or dt.date.today().isoformat(), "spec": spec,
+            "supuestos": sup, "financiero": financiero, "dcf_sin_exceso": sin_exceso,
             "precio": price, "dcf_base": dcf, "g_ref": g_ref, "m_base": m_base, "s2c": s2c, "wacc": wacc0,
             "beta_hoja": beta_hoja, "beta_bu": beta_bu, "beta_prop": beta_prop, "industria": industria,
             "bu_sector": bu, "rf": rf, "erp": erp, "tasas_base": br, "historias": historias,
@@ -336,6 +345,35 @@ def render(r: dict) -> tuple[str, str]:
     tab(["Enfoque", "Beta", "Costo del patrimonio", "WACC inicial", "DCF Base por acción"],
         [[b["enfoque"], es(b["beta"]), pct(b["ke"]), pct(b["wacc"]), usd(b["dcf_base"])] for b in r["betas"]],
         ["l", "r", "r", "r", "r"])
+
+    su = r.get("supuestos") or {}
+    if r.get("financiero"):
+        h3("DCF financiero: supuestos y limitaciones")
+        p((sp.get("margenes") or {}).get("texto", "") + " " + (sp.get("reinversion") or {}).get("texto", ""))
+    elif su.get("growthBase") is not None:
+        h3("Supuestos vigentes verificados")
+        tab(["Supuesto", "Conservador", "Base", "Optimista"],
+            [[lab] + [pct(su.get(k + s_)) for s_ in ("Cons", "Base", "Opt")] for lab, k in (
+                ("Crecimiento año 1", "growthY1"), ("Crecimiento años 2–5", "growth"),
+                ("Margen año 1 (base ajustada del modelo)", "marginY1"), ("Margen objetivo", "margin"))],
+            ["l", "r", "r", "r"])
+        p(f"Ventas/capital: {es(su.get('salesToCapital'), 1)}x en años 1–5 y {es(su.get('salesToCapital2'), 1)}x en 6–10. "
+          f"WACC: {pct(su.get('wacc'))}. Ke: {pct(su.get('costoPatrimonio'))}. Impuesto efectivo: {pct(su.get('taxEffective'))}. "
+          f"Convergencia: {es(su.get('convergenceYear'), 0)} años. Estos parámetros son escenarios del analista, no cifras reportadas.")
+    moat = (json.loads((_ROOT / "reference" / "moat_2026-09-30.json").read_text())["empresas"]).get(r["ticker"])
+    if moat and not r.get("financiero") and r.get("dcf_sin_exceso") is not None:
+        rt = moat.get("roic_terminal")
+        h3("Ventaja competitiva y ROIC terminal: comprobación")
+        tab(["Ventaja (criterio Damodaran)", "ROIC actual (modelo)", "ROIC de la industria (Damodaran)", "Costo de capital terminal",
+             "ROIC terminal usado", "DCF Base", "DCF con ROIC terminal = costo de capital"],
+            [[moat["ventaja"].capitalize(), pct(moat["roic_actual"]), pct(moat["roic_industria"]) if moat.get("roic_industria") else "No disponible",
+              pct(moat["costo_capital_terminal"]), pct(rt) if rt else "= costo de capital", usd(r["dcf_base"]), usd(r["dcf_sin_exceso"])]],
+            ["l", "r", "r", "r", "r", "r", "r"])
+        p(f"Fuentes de ventaja: {moat['fuentes']}. Evidencia: {moat['evidencia']}. Criterio (Damodaran, *Investment Valuation*, "
+          "cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el "
+          "promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre "
+          "ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del "
+          "motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.")
 
     h3("Historias cuantificadas y valor esperado")
     segs = list(sp["segmentos"].keys())
@@ -421,7 +459,12 @@ def render(r: dict) -> tuple[str, str]:
         md.append("".join((f"- [{t}]({u})\n" if u else f"- {t}\n") for t, u in sp["fuentes"]))
         ht.append("<ul>" + "".join((f'<li><a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(t)}</a></li>' if u
                                     else f"<li>{html.escape(t)}</li>") for t, u in sp["fuentes"]) + "</ul>")
-    return "\n".join(md), "".join(ht)
+    out_md, out_ht = "\n".join(md), "".join(ht)
+    if r.get("financiero"):  # DCF de flujo al accionista: ROE en lugar de margen operativo
+        for x, y in (("Margen objetivo", "ROE objetivo"), ("Sales-to-capital", "Reinversión patrimonial"),
+                     ("crecimiento anual de ingresos", "crecimiento anual de beneficios"), ("margen operativo objetivo", "ROE objetivo")):
+            out_md, out_ht = out_md.replace(x, y), out_ht.replace(x, y)
+    return out_md, out_ht
 
 
 def main(tickers):

@@ -49,7 +49,7 @@ Para empresas de más de US$25.000 millones, crecer 3,1% anual cinco años (hist
 
 **Márgenes.** El margen operativo cayó de 12,3% a ~8% (6,1% en el EBIT LTM de la hoja) por rebajas para limpiar inventario, desapalancamiento y aranceles; el margen bruto subyacente fue 40,8% en FY26 frente a 43-46% histórico. La hoja supone 6,5% el próximo año y 11% en siete años. Las historias van de 6% a 13,5%.
 
-**Reinversión y retorno.** Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Moat estrecho (marca probada y escala global, que darían un moat ancho, pero con erosión visible hoy: ventas en caída, descuentos y ROIC de 47% a 18%): el ROIC después del año 10 es 11,2%, el punto medio entre el costo de capital terminal (9,0%) y el menor entre el ROIC actual y el de la industria (13,3%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
+**Reinversión y retorno.** Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Ventaja que se desvanece: marca probada y escala global, pero con ventas en caída, descuentos y un ROIC que bajó de 47% a 18%. El ROIC después del año 10 es 11,2%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (20,9%), limitado a su ROIC actual (13,3%).
 
 **Riesgo.** La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$33,96 a US$33,09. Diferencia menor: el riesgo está en el margen.
 
@@ -57,6 +57,27 @@ Para empresas de más de US$25.000 millones, crecer 3,1% anual cinco años (hist
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,00 | 9,3% | 8,6% | US$33,96 |
 | Bottom-up del sector (Shoe, reapalancada) | 1,12 | 9,8% | 9,0% | US$33,09 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | -3,0% | -2,0% | 4,5% |
+| Crecimiento años 2–5 | -3,0% | 3,5% | 4,5% |
+| Margen año 1 (base ajustada del modelo) | 6,5% | 6,5% | 6,5% |
+| Margen objetivo | 6,5% | 11,0% | 13,4% |
+
+Ventas/capital: 2,1x en años 1–5 y 2,1x en 6–10. WACC: 8,6%. Ke: 9,3%. Impuesto efectivo: 20,3%. Convergencia: 7 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja que se desvanece | 13,3% | 20,9% | 9,0% | 11,2% | US$33,96 | US$29,76 |
+
+Fuentes de ventaja: Marca global y escala de distribución, hoy bajo presión. Evidencia: ROIC 18-47% en 2021-2026, en descenso. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -69,17 +90,19 @@ Para empresas de más de US$25.000 millones, crecer 3,1% anual cinco años (hist
 | **D · Aranceles y competencia estructural** | 5% | Calzado: -6%, -3%, 0%, 1%, 1%; Indumentaria: -4%, -2%, 0%, 1%, 1%; Equipamiento y otros: -2%, -2%, -2%, -2%, -2% | -1,3% | 6% | 2,1 | = costo de capital | US$14,99 | US$14,65 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$32,19** | **US$31,37** |
 
-A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,00; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 7,0% | 9,0% | 11,0% | 13,0% | 15,0% |
 |---|---:|---:|---:|---:|---:|
-| -1,6% | 19,42 | 24,22 | 29,02 | 33,81 | 38,61 |
-| 0,4% | 20,45 | 25,91 | 31,37 | 36,82 | 42,28 |
-| 2,4% | 21,57 | 27,77 | 33,96 | 40,16 | 46,36 |
-| 4,4% | 22,78 | 29,81 | 36,83 | 43,86 | 50,89 |
-| 6,4% | 24,09 | 32,05 | 40,00 | 47,96 | 55,92 |
+| -1,6% | 19,65 | 24,50 | 29,35 | 34,20 | 39,06 |
+| 0,4% | 20,69 | 26,21 | 31,73 | 37,25 | 42,77 |
+| 2,4% | 21,82 | 28,09 | 34,36 | 40,63 | 46,90 |
+| 4,4% | 23,04 | 30,15 | 37,26 | 44,37 | 51,48 |
+| 6,4% | 24,37 | 32,42 | 40,47 | 48,52 | 56,57 |
 
 
 ### Pre-mortem
@@ -108,16 +131,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$36,39**.
+Precio de referencia de la valoración guardada: **US$35,35**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 9% | Margen 11% | Margen 13% |
 |---|---:|---:|---:|
-| Beta 1,00 | 10,0% (23% de las empresas) | 4,2% (53% de las empresas) | 0,2% (74% de las empresas) |
-| Beta 1,12 | 10,6% (21% de las empresas) | 4,8% (49% de las empresas) | 0,8% (72% de las empresas) |
+| Beta 1,00 | 8,7% (27% de las empresas) | 3,1% (60% de las empresas) | -0,8% (79% de las empresas) |
+| Beta 1,12 | 9,5% (25% de las empresas) | 3,7% (56% de las empresas) | -0,2% (76% de las empresas) |
 
-Frente al valor esperado de las historias (US$32,19 con la beta de la hoja; US$31,37 con la propuesta), el precio está por encima en 13% y por encima en 16%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$36,39) queda 13% por encima del valor esperado (US$32,19), cerca de la historia A. El DCF inverso pide 2,2% anual con margen de 11% (lo logró ~66% de las empresas de este tamaño), o 7,6% con margen de 9%. ¿Qué sabe el mercado que yo no? Probablemente nada: descuenta la recuperación que la empresa describe. El precio es razonable si el margen vuelve a ~11%; no deja margen de seguridad si la recuperación se demora.
+Frente al valor esperado de las historias (US$32,19 con la beta de la hoja; US$31,37 con la propuesta), el precio está por encima en 10% y por encima en 13%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

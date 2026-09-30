@@ -1,330 +1,354 @@
 {
-  "ticker": "MSFT",
-  "fecha": "2026-09-30",
-  "precio": 518.41,
-  "dcf_base": 466.37735894412435,
-  "g_ref": 0.129,
-  "m_base": 0.45,
-  "s2c": 0.65,
+ "ticker": "MSFT",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.14,
+  "growthY1Base": 0.165,
+  "growthY1Opt": 0.19,
+  "growthCons": 0.08,
+  "growthBase": 0.12,
+  "growthOpt": 0.14,
+  "marginY1Cons": 0.45,
+  "marginY1Base": 0.463,
+  "marginY1Opt": 0.475,
+  "marginCons": 0.42,
+  "marginBase": 0.45,
+  "marginOpt": 0.48,
+  "salesToCapital2": 1,
   "wacc": 0.10172200840536959,
-  "beta_hoja": 1.3418466752964637,
-  "beta_bu": 1.2602336848378197,
-  "beta_prop": 1.2602336848378197,
-  "industria": "Software (System & Application)",
-  "bu_sector": 1.25,
-  "rf": 0.0425,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": ">$50,000 Mn",
-    "<(25)": 1.6,
-    "(25)-(20)": 1.0,
-    "(20)-(15)": 1.5,
-    "(15)-(10)": 2.7,
-    "(10)-(5)": 9.3,
-    "(5)-0": 22.8,
-    "0-5": 34.0,
-    "5-10": 16.9,
-    "10-15": 7.0,
-    "15-20": 2.3,
-    "20-25": 0.6,
-    "25-30": 0.3,
-    "30-35": 0.1,
-    "35-40": 0.0,
-    "40-45": 0.0,
-    ">45": 0.0,
-    "Mean": 1.0,
-    "Median": 1.5,
-    "StDev": 8.3,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+  "costoPatrimonio": 0.10234636171822228,
+  "taxEffective": 0.19396265985271252,
+  "convergenceYear": 7,
+  "terminalWacc": 0.0848,
+  "roicTerminal": 0.259,
+  "salesToCapital": 0.65
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 329.4181190681075,
+ "precio": 518.46,
+ "dcf_base": 466.3773589441244,
+ "g_ref": 0.129,
+ "m_base": 0.45,
+ "s2c": 0.65,
+ "wacc": 0.10172200840536959,
+ "beta_hoja": 1.3418466752964637,
+ "beta_bu": 1.2602336848378197,
+ "beta_prop": 1.2602336848378197,
+ "industria": "Software (System & Application)",
+ "bu_sector": 1.25,
+ "rf": 0.0425,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": ">$50,000 Mn",
+  "<(25)": 1.6,
+  "(25)-(20)": 1.0,
+  "(20)-(15)": 1.5,
+  "(15)-(10)": 2.7,
+  "(10)-(5)": 9.3,
+  "(5)-0": 22.8,
+  "0-5": 34.0,
+  "5-10": 16.9,
+  "10-15": 7.0,
+  "15-20": 2.3,
+  "20-25": 0.6,
+  "25-30": 0.3,
+  "30-35": 0.1,
+  "35-40": 0.0,
+  "40-45": 0.0,
+  ">45": 0.0,
+  "Mean": 1.0,
+  "Median": 1.5,
+  "StDev": 8.3,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Azure y Copilot sostienen el doble dígito",
+   "prob": 0.45,
+   "margen": 0.45,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.14,
+     0.12,
+     0.11,
+     0.1,
+     0.09
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Intelligent Cloud": [
+     0.25,
+     0.2,
+     0.17,
+     0.15,
+     0.13
+    ],
+    "More Personal Computing": [
+     0,
+     0.01,
+     0.02,
+     0.02,
+     0.02
+    ]
+   },
+   "cagr": 0.1296865894094794,
+   "rev5": 610544.4562339513,
+   "mix5": {
+    "Productivity and Business Processes": 0.3899751405467818,
+    "Intelligent Cloud": 0.5159181840724713,
+    "More Personal Computing": 0.09410667538074706
+   },
+   "tasa_base": 0.09643877482672882,
+   "roic_terminal_usado": 0.259,
+   "valor_beta_hoja": 457.8240655491447,
+   "valor_beta_prop": 467.5854879540943
   },
-  "historias": [
-    {
-      "nombre": "A · Azure y Copilot sostienen el doble dígito",
-      "prob": 0.45,
-      "margen": 0.45,
-      "crec": {
-        "Productivity and Business Processes": [
-          0.14,
-          0.12,
-          0.11,
-          0.1,
-          0.09
-        ],
-        "Intelligent Cloud": [
-          0.25,
-          0.2,
-          0.17,
-          0.15,
-          0.13
-        ],
-        "More Personal Computing": [
-          0,
-          0.01,
-          0.02,
-          0.02,
-          0.02
-        ]
-      },
-      "cagr": 0.1296865894094794,
-      "rev5": 610544.4562339513,
-      "mix5": {
-        "Productivity and Business Processes": 0.3899751405467818,
-        "Intelligent Cloud": 0.5159181840724713,
-        "More Personal Computing": 0.09410667538074706
-      },
-      "tasa_base": 0.09643877482672882,
-      "roic_terminal_usado": 0.259,
-      "valor_beta_hoja": 457.82406554914434,
-      "valor_beta_prop": 467.58548795409394
-    },
-    {
-      "nombre": "B · El capex de IA rinde menos de lo esperado",
-      "prob": 0.25,
-      "margen": 0.4,
-      "crec": {
-        "Productivity and Business Processes": [
-          0.1,
-          0.08,
-          0.07,
-          0.06,
-          0.06
-        ],
-        "Intelligent Cloud": [
-          0.18,
-          0.12,
-          0.1,
-          0.08,
-          0.08
-        ],
-        "More Personal Computing": [
-          -0.02,
-          0,
-          0,
-          0.01,
-          0.01
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.08014774766420296,
-      "rev5": 487913.9641784892,
-      "mix5": {
-        "Productivity and Business Processes": 0.4101643218354745,
-        "Intelligent Cloud": 0.48000051251517173,
-        "More Personal Computing": 0.10983516564935378
-      },
-      "tasa_base": 0.254600612894994,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 240.0642153531951,
-      "valor_beta_prop": 244.67848590008296
-    },
-    {
-      "nombre": "C · Microsoft gana la plataforma empresarial de IA",
-      "prob": 0.2,
-      "margen": 0.48,
-      "s2c": 0.6,
-      "crec": {
-        "Productivity and Business Processes": [
-          0.17,
-          0.16,
-          0.15,
-          0.13,
-          0.12
-        ],
-        "Intelligent Cloud": [
-          0.32,
-          0.28,
-          0.24,
-          0.2,
-          0.17
-        ],
-        "More Personal Computing": [
-          0.02,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ]
-      },
-      "cagr": 0.1754328395571163,
-      "rev5": 744588.8455053816,
-      "mix5": {
-        "Productivity and Business Processes": 0.3717156200278294,
-        "Intelligent Cloud": 0.5456333293164747,
-        "More Personal Computing": 0.08265105065569592
-      },
-      "tasa_base": 0.0328008938037265,
-      "roic_terminal_usado": 0.259,
-      "valor_beta_hoja": 597.1698855684891,
-      "valor_beta_prop": 610.369861922255
-    },
-    {
-      "nombre": "D · La demanda de cómputo para IA se corrige",
-      "prob": 0.1,
-      "margen": 0.37,
-      "crec": {
-        "Productivity and Business Processes": [
-          0.08,
-          0.06,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "Intelligent Cloud": [
-          0.1,
-          0.04,
-          0.05,
-          0.06,
-          0.06
-        ],
-        "More Personal Computing": [
-          -0.03,
-          -0.02,
-          0,
-          0,
-          0
-        ]
-      },
-      "cagr": 0.049771056719973394,
-      "rev5": 423058.47464160883,
-      "mix5": {
-        "Productivity and Business Processes": 0.4389209376811484,
-        "Intelligent Cloud": 0.4406272760851221,
-        "More Personal Computing": 0.12045178623372947
-      },
-      "tasa_base": 0.44355681430418087,
-      "roic_terminal_usado": 0.259,
-      "valor_beta_hoja": 269.9355408276313,
-      "valor_beta_prop": 275.2156445091186
-    }
-  ],
-  "valor_esperado_beta_hoja": 412.4644145318747,
-  "valor_esperado_beta_prop": 421.1786278897259,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.3418466752964637,
-      "ke": 0.10234636171822228,
-      "wacc": 0.10172200840536959,
-      "dcf_base": 466.37735894412435
-    },
-    {
-      "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
-      "beta": 1.2602336848378197,
-      "ke": 0.09870642234376677,
-      "wacc": 0.09811940363528096,
-      "dcf_base": 476.33238101536773
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.089,
-      0.109,
-      0.129,
-      0.149,
-      0.169
+  {
+   "nombre": "B · El capex de IA rinde menos de lo esperado",
+   "prob": 0.25,
+   "margen": 0.4,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.1,
+     0.08,
+     0.07,
+     0.06,
+     0.06
     ],
-    "m": [
-      0.41000000000000003,
-      0.43,
-      0.45,
-      0.47000000000000003,
-      0.49
+    "Intelligent Cloud": [
+     0.18,
+     0.12,
+     0.1,
+     0.08,
+     0.08
     ],
-    "v": [
-      [
-        353.2896863289221,
-        369.6023597569314,
-        385.9150331849406,
-        402.2277066129498,
-        418.5403800409591
-      ],
-      [
-        388.3682624786441,
-        406.7978012996389,
-        425.2273401206336,
-        443.65687894162824,
-        462.08641776262294
-      ],
-      [
-        427.2674878227618,
-        448.0536507738776,
-        468.83981372499363,
-        489.6259766761096,
-        510.41213962722543
-      ],
-      [
-        470.36170680897317,
-        493.76740764082365,
-        517.1731084726741,
-        540.5788093045246,
-        563.984510136375
-      ],
-      [
-        518.0557761614624,
-        544.3689397688249,
-        570.6821033761876,
-        596.99526698355,
-        623.3084305909126
-      ]
-    ],
-    "referencia_constante": 468.83981372499363,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "More Personal Computing": [
+     -0.02,
+     0,
+     0,
+     0.01,
+     0.01
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.08014774766420296,
+   "rev5": 487913.9641784892,
+   "mix5": {
+    "Productivity and Business Processes": 0.4101643218354745,
+    "Intelligent Cloud": 0.48000051251517173,
+    "More Personal Computing": 0.10983516564935378
+   },
+   "tasa_base": 0.254600612894994,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 240.0642153531951,
+   "valor_beta_prop": 244.67848590008296
   },
-  "inverso": [
-    {
-      "beta": 1.3418466752964637,
-      "margen": 0.4,
-      "g": 0.1744831792338254,
-      "tasa_base": 0.033723549072644445
-    },
-    {
-      "beta": 1.3418466752964637,
-      "margen": 0.45,
-      "g": 0.14948595825134137,
-      "tasa_base": 0.06871965844812206
-    },
-    {
-      "beta": 1.3418466752964637,
-      "margen": 0.48,
-      "g": 0.13627399896732412,
-      "tasa_base": 0.08721640144574624
-    },
-    {
-      "beta": 1.2602336848378197,
-      "margen": 0.4,
-      "g": 0.16996179179054216,
-      "tasa_base": 0.04005349149324097
-    },
-    {
-      "beta": 1.2602336848378197,
-      "margen": 0.45,
-      "g": 0.14511486534164664,
-      "tasa_base": 0.07483918852169469
-    },
-    {
-      "beta": 1.2602336848378197,
-      "margen": 0.48,
-      "g": 0.13197930361571453,
-      "tasa_base": 0.09322897493799964
-    }
+  {
+   "nombre": "C · Microsoft gana la plataforma empresarial de IA",
+   "prob": 0.2,
+   "margen": 0.48,
+   "s2c": 0.6,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.17,
+     0.16,
+     0.15,
+     0.13,
+     0.12
+    ],
+    "Intelligent Cloud": [
+     0.32,
+     0.28,
+     0.24,
+     0.2,
+     0.17
+    ],
+    "More Personal Computing": [
+     0.02,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "cagr": 0.1754328395571163,
+   "rev5": 744588.8455053816,
+   "mix5": {
+    "Productivity and Business Processes": 0.3717156200278294,
+    "Intelligent Cloud": 0.5456333293164747,
+    "More Personal Computing": 0.08265105065569592
+   },
+   "tasa_base": 0.0328008938037265,
+   "roic_terminal_usado": 0.259,
+   "valor_beta_hoja": 597.1698855684891,
+   "valor_beta_prop": 610.369861922255
+  },
+  {
+   "nombre": "D · La demanda de cómputo para IA se corrige",
+   "prob": 0.1,
+   "margen": 0.37,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.08,
+     0.06,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Intelligent Cloud": [
+     0.1,
+     0.04,
+     0.05,
+     0.06,
+     0.06
+    ],
+    "More Personal Computing": [
+     -0.03,
+     -0.02,
+     0,
+     0,
+     0
+    ]
+   },
+   "cagr": 0.049771056719973394,
+   "rev5": 423058.47464160883,
+   "mix5": {
+    "Productivity and Business Processes": 0.4389209376811484,
+    "Intelligent Cloud": 0.4406272760851221,
+    "More Personal Computing": 0.12045178623372947
+   },
+   "tasa_base": 0.44355681430418087,
+   "roic_terminal_usado": 0.259,
+   "valor_beta_hoja": 269.9355408276313,
+   "valor_beta_prop": 275.2156445091186
+  }
+ ],
+ "valor_esperado_beta_hoja": 412.46441453187487,
+ "valor_esperado_beta_prop": 421.17862788972604,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.3418466752964637,
+   "ke": 0.10234636171822228,
+   "wacc": 0.10172200840536959,
+   "dcf_base": 466.37735894412435
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
+   "beta": 1.2602336848378197,
+   "ke": 0.09870642234376677,
+   "wacc": 0.09811940363528096,
+   "dcf_base": 476.33238101536773
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.089,
+   0.109,
+   0.129,
+   0.149,
+   0.169
   ],
-  "ingresos_ltm": 331839
+  "m": [
+   0.41000000000000003,
+   0.43,
+   0.45,
+   0.47000000000000003,
+   0.49
+  ],
+  "v": [
+   [
+    353.2896863289221,
+    369.6023597569314,
+    385.9150331849406,
+    402.2277066129498,
+    418.5403800409591
+   ],
+   [
+    388.3682624786441,
+    406.7978012996389,
+    425.2273401206336,
+    443.65687894162824,
+    462.08641776262294
+   ],
+   [
+    427.2674878227618,
+    448.0536507738776,
+    468.83981372499363,
+    489.6259766761096,
+    510.41213962722543
+   ],
+   [
+    470.36170680897317,
+    493.76740764082365,
+    517.1731084726741,
+    540.5788093045246,
+    563.984510136375
+   ],
+   [
+    518.0557761614624,
+    544.3689397688249,
+    570.6821033761876,
+    596.99526698355,
+    623.3084305909126
+   ]
+  ],
+  "referencia_constante": 468.83981372499363,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.3418466752964637,
+   "margen": 0.4,
+   "g": 0.17450319401839426,
+   "tasa_base": 0.03369552837424803
+  },
+  {
+   "beta": 1.3418466752964637,
+   "margen": 0.45,
+   "g": 0.14950557735157266,
+   "tasa_base": 0.06869219170779826
+  },
+  {
+   "beta": 1.3418466752964637,
+   "margen": 0.48,
+   "g": 0.13629340907720133,
+   "tasa_base": 0.08718922729191812
+  },
+  {
+   "beta": 1.2602336848378197,
+   "margen": 0.4,
+   "g": 0.1699817667126618,
+   "tasa_base": 0.04002552660227348
+  },
+  {
+   "beta": 1.2602336848378197,
+   "margen": 0.45,
+   "g": 0.1451344438791352,
+   "tasa_base": 0.07481177856921069
+  },
+  {
+   "beta": 1.2602336848378197,
+   "margen": 0.48,
+   "g": 0.13199867285222472,
+   "tasa_base": 0.09320185800688538
+  }
+ ],
+ "ingresos_ltm": 331839
 }

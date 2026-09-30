@@ -29,7 +29,7 @@
   "fuentes": [
    "[Nasdaq: puntos del 1T26 de PagSeguro](https://www.nasdaq.com/articles/pagseguro-digital-q1-earnings-call-highlights)"
   ],
-  "evaluacion": "Los múltiplos (US$8,36 hoy) quedan 33% por debajo del DCF (US$12,53). La diferencia viene casi toda de P/FCFE (US$2,8, peso 20%): en la proyección Base el crédito que otorga PagBank absorbe caja (cambio en capital de trabajo de ~US$215-240 millones al año), y el FCFE de FY+3 queda en US$0,41 por acción frente a una utilidad de US$1,77. P/E, el método más confiable para una financiera, da US$11,9, cerca del DCF. Queda a tu decisión: revisar el supuesto de capital de trabajo o mover el peso de P/FCFE a P/E en la categoría Financiera (el prompt v3 pide hacerlo en la tabla compartida y registrarlo).",
+  "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$11,92 por acción y los múltiplos, US$8,36 hoy: 30% por debajo del DCF, fuera del rango de ±25%. La diferencia viene de P/FCFE: en la proyección Base el crédito de PagBank absorbe caja y el FCFE de FY+3 queda muy por debajo de la utilidad. P/E, el método más confiable para una financiera, queda cerca del DCF.",
   "ticker": "PAGS",
   "notas": {
    "P/FCFE": "Aplicable con cautela: el FCFE proyectado es positivo pero bajo frente a la utilidad porque el crecimiento de la cartera de crédito consume caja."

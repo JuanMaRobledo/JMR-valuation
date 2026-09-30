@@ -47,9 +47,9 @@ Para empresas de US$4.500-7.000 millones, crecer 35% anual cinco años (historia
 | Margen operativo | 5,4% | 10,8% | 31,6% | 42,8% |
 | FCFF (hoja) | 229 | 327 | 1.089 | — |
 
-**Márgenes.** El margen operativo saltó de 5% (2023) a 43% LTM por apalancamiento operativo: el costo de servir a un cliente adicional es bajo. La hoja supone 48% el próximo año y 48% de objetivo (antes 50%). La compensación en acciones es alta y es un costo real para el accionista. Las historias van de 30% (comoditización) a 50%.
+**Márgenes.** El margen operativo saltó de 5% (2023) a 43% LTM por apalancamiento operativo: el costo de servir a un cliente adicional es bajo. La hoja supone 48% el próximo año y 48% de objetivo. La compensación en acciones es alta y es un costo real para el accionista. Las historias van de 30% (comoditización) a 50%.
 
-**Reinversión y retorno.** Casi no necesita capital (capex de US$34 millones en 2025). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en ingenieros desplegados con los clientes (bootcamps) y en I+D; el crecimiento no está limitado por el capital sino por la capacidad de convertir pilotos en contratos.
+**Reinversión y retorno.** Casi no necesita capital (capex de US$34 millones en 2025). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en ingenieros desplegados con los clientes (bootcamps) y en I+D; el crecimiento no está limitado por el capital sino por la capacidad de convertir pilotos en contratos. Sin ventaja defendible: tiene costos de cambio en gobierno, pero su ROIC con plusvalía (5-12%) está cerca del costo de capital y la serie es corta. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
 **Riesgo.** La hoja usaba una beta de regresión de 1,62; tras la revisión usa la bottom-up de Software (System & Application) sin deuda, 1,25. La dependencia de contratos públicos grandes y el gobierno controlado por fundadores (clase F) suben el riesgo, pero ese riesgo está más en los flujos que en la tasa.
 
@@ -57,6 +57,27 @@ Para empresas de US$4.500-7.000 millones, crecer 35% anual cinco años (historia
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,25 | 10,6% | 10,6% | US$85,42 |
 | Bottom-up del sector (Software (System & Application), reapalancada) | 1,25 | 10,6% | 10,6% | US$85,42 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | 35,0% | 68,0% | 89,2% |
+| Crecimiento años 2–5 | 30,0% | 35,0% | 50,0% |
+| Margen año 1 (base ajustada del modelo) | 48,0% | 48,0% | 48,0% |
+| Margen objetivo | 45,3% | 48,0% | 53,0% |
+
+Ventas/capital: 4,0x en años 1–5 y 4,5x en 6–10. WACC: 10,6%. Ke: 10,6%. Impuesto efectivo: 1,3%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Sin ventaja defendible | 165,8% | 29,3% | 9,2% | = costo de capital | US$85,42 | US$85,42 |
+
+Fuentes de ventaja: Costos de cambio en gobierno. Evidencia: ROIC con plusvalía de 5-12% en 2025-LTM, cerca del costo de capital; serie poco confiable. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -73,13 +94,15 @@ A (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). B (30%
 
 Sensibilidad del DCF Base (beta 1,25; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 44,0% | 46,0% | 48,0% | 50,0% | 52,0% |
 |---|---:|---:|---:|---:|---:|
-| 37,6% | 65,93 | 68,75 | 71,56 | 74,38 | 77,20 |
-| 39,6% | 71,99 | 75,09 | 78,20 | 81,30 | 84,41 |
-| 41,6% | 78,58 | 82,00 | 85,42 | 88,84 | 92,26 |
-| 43,6% | 85,75 | 89,51 | 93,28 | 97,04 | 100,80 |
-| 45,6% | 93,55 | 97,68 | 101,82 | 105,95 | 110,09 |
+| 37,6% | 71,77 | 74,84 | 77,91 | 80,98 | 84,04 |
+| 39,6% | 78,37 | 81,75 | 85,13 | 88,51 | 91,90 |
+| 41,6% | 85,55 | 89,27 | 93,00 | 96,72 | 100,44 |
+| 43,6% | 93,36 | 97,45 | 101,55 | 105,65 | 109,74 |
+| 45,6% | 101,84 | 106,34 | 110,85 | 115,35 | 119,85 |
 
 
 ### Pre-mortem
@@ -108,15 +131,15 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$187,48**.
+Precio de referencia de la valoración guardada: **US$188,17**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 40% | Margen 45% | Margen 50% |
 |---|---:|---:|---:|
-| Beta 1,25 | ninguno entre −10% y 60% | ninguno entre −10% y 60% | 59,0% (0% de las empresas) |
+| Beta 1,25 | ninguno entre −10% y 60% | 59,5% (0% de las empresas) | 57,0% (0% de las empresas) |
 
-Frente al valor esperado de las historias (US$51,02), el precio está por encima en 267%. El precio (US$187,48) está más de tres veces por encima del valor esperado de las historias y más del doble del DCF revisado (US$85,42). El DCF inverso no encuentra solución hasta 60% anual durante cinco años (solo con margen de 50% y beta 1,25 llega a ~60%): el precio supone algo mejor que la historia C, sostenido por más de cinco años. ¿Qué sabe el mercado que yo no? Quizá nada que pueda medirse: es un caso donde el precio refleja una narrativa (Palantir como plataforma dominante de la IA) más que flujos proyectables. Con criterio Damodaran, un gran negocio puede ser una mala inversión a un precio que exige lo improbable.
+Frente al valor esperado de las historias (US$51,02), el precio está por encima en 269%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión

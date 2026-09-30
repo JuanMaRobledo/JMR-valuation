@@ -1,298 +1,322 @@
 {
-  "ticker": "DPZ",
-  "fecha": "2026-09-30",
-  "precio": 300.24,
-  "dcf_base": 349.7600761810581,
-  "g_ref": 0.044,
-  "m_base": 0.2,
-  "s2c": 3,
-  "wacc": 0.07668456691070531,
-  "beta_hoja": 0.9,
-  "beta_bu": 1.0499451941551905,
-  "beta_prop": 1.0499451941551905,
-  "industria": "Restaurant/Dining",
-  "bu_sector": 0.78,
-  "rf": 0.0499,
-  "erp": 0.0446,
-  "tasas_base": {
-    "tramo": "$4,500-7,000 Mn",
-    "<(25)": 0.2,
-    "(25)-(20)": 0.2,
-    "(20)-(15)": 0.6,
-    "(15)-(10)": 1.9,
-    "(10)-(5)": 4.5,
-    "(5)-0": 15.6,
-    "0-5": 33.2,
-    "5-10": 23.1,
-    "10-15": 10.5,
-    "15-20": 5.6,
-    "20-25": 2.2,
-    "25-30": 1.1,
-    "30-35": 0.6,
-    "35-40": 0.3,
-    "40-45": 0.2,
-    ">45": 0.3,
-    "Mean": 5.0,
-    "Median": 4.1,
-    "StDev": 8.7,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+ "ticker": "DPZ",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": 0.02,
+  "growthY1Base": 0.04,
+  "growthY1Opt": 0.065,
+  "growthCons": 0.02,
+  "growthBase": 0.045,
+  "growthOpt": 0.065,
+  "marginY1Cons": 0.19,
+  "marginY1Base": 0.19,
+  "marginY1Opt": 0.19,
+  "marginCons": 0.18,
+  "marginBase": 0.2,
+  "marginOpt": 0.22,
+  "salesToCapital2": 3,
+  "wacc": 0.0766652067825287,
+  "costoPatrimonio": 0.09004000000000001,
+  "taxEffective": 0.2189,
+  "convergenceYear": 5,
+  "terminalWacc": 0.09,
+  "roicTerminal": 0.184,
+  "salesToCapital": 3
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 226.81594167280696,
+ "precio": 299.23,
+ "dcf_base": 349.8143327753037,
+ "g_ref": 0.044,
+ "m_base": 0.2,
+ "s2c": 3,
+ "wacc": 0.0766652067825287,
+ "beta_hoja": 0.9,
+ "beta_bu": 1.0506029158324819,
+ "beta_prop": 1.0506029158324819,
+ "industria": "Restaurant/Dining",
+ "bu_sector": 0.78,
+ "rf": 0.0499,
+ "erp": 0.0446,
+ "tasas_base": {
+  "tramo": "$4,500-7,000 Mn",
+  "<(25)": 0.2,
+  "(25)-(20)": 0.2,
+  "(20)-(15)": 0.6,
+  "(15)-(10)": 1.9,
+  "(10)-(5)": 4.5,
+  "(5)-0": 15.6,
+  "0-5": 33.2,
+  "5-10": 23.1,
+  "10-15": 10.5,
+  "15-20": 5.6,
+  "20-25": 2.2,
+  "25-30": 1.1,
+  "30-35": 0.6,
+  "35-40": 0.3,
+  "40-45": 0.2,
+  ">45": 0.3,
+  "Mean": 5.0,
+  "Median": 4.1,
+  "StDev": 8.7,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Crece por tiendas con ventas mismas tiendas bajas",
+   "prob": 0.5,
+   "margen": 0.2,
+   "crec": {
+    "Cadena de suministro": [
+     0.04,
+     0.04,
+     0.045,
+     0.045,
+     0.045
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.04,
+     0.045,
+     0.05,
+     0.05,
+     0.05
+    ]
+   },
+   "cagr": 0.04460579010312138,
+   "rev5": 6144.535994168,
+   "mix5": {
+    "Cadena de suministro": 0.5945907770148393,
+    "Regalías, tiendas propias y fondo de publicidad": 0.40540922298516074
+   },
+   "tasa_base": 0.6408175537152743,
+   "roic_terminal_usado": 0.184,
+   "valor_beta_hoja": 352.1440186585945,
+   "valor_beta_prop": 339.302373172631
   },
-  "historias": [
-    {
-      "nombre": "A · Crece por tiendas con ventas mismas tiendas bajas",
-      "prob": 0.5,
-      "margen": 0.2,
-      "crec": {
-        "Cadena de suministro": [
-          0.04,
-          0.04,
-          0.045,
-          0.045,
-          0.045
-        ],
-        "Regalías, tiendas propias y fondo de publicidad": [
-          0.04,
-          0.045,
-          0.05,
-          0.05,
-          0.05
-        ]
-      },
-      "cagr": 0.04460579010312138,
-      "rev5": 6144.535994168,
-      "mix5": {
-        "Cadena de suministro": 0.5945907770148393,
-        "Regalías, tiendas propias y fondo de publicidad": 0.40540922298516074
-      },
-      "tasa_base": 0.6408175537152743,
-      "roic_terminal_usado": 0.184,
-      "valor_beta_hoja": 352.0894607916236,
-      "valor_beta_prop": 339.2952225082428
-    },
-    {
-      "nombre": "B · Los agregadores erosionan la ventaja",
-      "prob": 0.25,
-      "margen": 0.185,
-      "crec": {
-        "Cadena de suministro": [
-          0.02,
-          0.02,
-          0.025,
-          0.025,
-          0.025
-        ],
-        "Regalías, tiendas propias y fondo de publicidad": [
-          0.025,
-          0.03,
-          0.03,
-          0.03,
-          0.03
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.0254192073538424,
-      "rev5": 5600.595268394999,
-      "mix5": {
-        "Cadena de suministro": 0.5921469021721322,
-        "Regalías, tiendas propias y fondo de publicidad": 0.4078530978278679
-      },
-      "tasa_base": 0.7682164631704864,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 172.2095770076985,
-      "valor_beta_prop": 164.6390047950877
-    },
-    {
-      "nombre": "C · Agregadores e internacional aceleran",
-      "prob": 0.2,
-      "margen": 0.21,
-      "crec": {
-        "Cadena de suministro": [
-          0.06,
-          0.06,
-          0.06,
-          0.055,
-          0.055
-        ],
-        "Regalías, tiendas propias y fondo de publicidad": [
-          0.07,
-          0.07,
-          0.07,
-          0.065,
-          0.06
-        ]
-      },
-      "cagr": 0.06163924563226697,
-      "rev5": 6662.1095914100015,
-      "mix5": {
-        "Cadena de suministro": 0.5889825847241181,
-        "Regalías, tiendas propias y fondo de publicidad": 0.41101741527588187
-      },
-      "tasa_base": 0.5277154090017473,
-      "roic_terminal_usado": 0.184,
-      "valor_beta_hoja": 420.82713810442795,
-      "valor_beta_prop": 406.0838344684258
-    },
-    {
-      "nombre": "D · El sistema de franquicias se debilita",
-      "prob": 0.05,
-      "margen": 0.17,
-      "crec": {
-        "Cadena de suministro": [
-          0,
-          0,
-          0.01,
-          0.01,
-          0.01
-        ],
-        "Regalías, tiendas propias y fondo de publicidad": [
-          0,
-          0.01,
-          0.01,
-          0.01,
-          0.01
-        ]
-      },
-      "roic_terminal": "costo_capital",
-      "cagr": 0.006793185458554563,
-      "rev5": 5110.0868998,
-      "mix5": {
-        "Cadena de suministro": 0.596798257994274,
-        "Regalías, tiendas propias y fondo de publicidad": 0.403201742005726
-      },
-      "tasa_base": 0.8278052613693098,
-      "roic_terminal_usado": 0.0,
-      "valor_beta_hoja": 125.3053111994301,
-      "valor_beta_prop": 119.03880192189226
-    }
-  ],
-  "valor_esperado_beta_hoja": 309.5278178285935,
-  "valor_esperado_beta_prop": 297.97606944267307,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 0.9,
-      "ke": 0.09004000000000001,
-      "wacc": 0.07668456691070531,
-      "dcf_base": 349.7600761810581
-    },
-    {
-      "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
-      "beta": 1.0499451941551905,
-      "ke": 0.0967275556593215,
-      "wacc": 0.08129839506799735,
-      "dcf_base": 337.03641324085874
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      0.003999999999999997,
-      0.023999999999999997,
-      0.044,
-      0.064,
-      0.08399999999999999
+  {
+   "nombre": "B · Los agregadores erosionan la ventaja",
+   "prob": 0.25,
+   "margen": 0.185,
+   "crec": {
+    "Cadena de suministro": [
+     0.02,
+     0.02,
+     0.025,
+     0.025,
+     0.025
     ],
-    "m": [
-      0.16,
-      0.18000000000000002,
-      0.2,
-      0.22,
-      0.24000000000000002
-    ],
-    "v": [
-      [
-        183.21298021143244,
-        219.19331849255397,
-        255.17365677367548,
-        291.15399505479695,
-        327.1343333359184
-      ],
-      [
-        218.04049432119476,
-        258.91048979115504,
-        299.7804852611151,
-        340.6504807310754,
-        381.52047620103565
-      ],
-      [
-        256.8006904958301,
-        303.14475985702654,
-        349.48882921822303,
-        395.83289857941935,
-        442.1769679406158
-      ],
-      [
-        299.89402140133154,
-        352.3563889317342,
-        404.8187564621367,
-        457.28112399253916,
-        509.74349152294184
-      ],
-      [
-        347.7549947201089,
-        407.0447786149402,
-        466.3345625097711,
-        525.6243464046022,
-        584.9141302994335
-      ]
-    ],
-    "referencia_constante": 349.48882921822303,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.025,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.0254192073538424,
+   "rev5": 5600.595268394999,
+   "mix5": {
+    "Cadena de suministro": 0.5921469021721322,
+    "Regalías, tiendas propias y fondo de publicidad": 0.4078530978278679
+   },
+   "tasa_base": 0.7682164631704864,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 172.24184597497035,
+   "valor_beta_prop": 164.64323780070524
   },
-  "inverso": [
-    {
-      "beta": 0.9,
-      "margen": 0.19,
-      "g": 0.033163083498577994,
-      "tasa_base": 0.7167971255694421
-    },
-    {
-      "beta": 0.9,
-      "margen": 0.2,
-      "g": 0.024195125827378372,
-      "tasa_base": 0.7735112074185793
-    },
-    {
-      "beta": 0.9,
-      "margen": 0.21,
-      "g": 0.015774030288718932,
-      "tasa_base": 0.7997850254991968
-    },
-    {
-      "beta": 1.0499451941551905,
-      "margen": 0.19,
-      "g": 0.03808231134918805,
-      "tasa_base": 0.6841334526413912
-    },
-    {
-      "beta": 1.0499451941551905,
-      "margen": 0.2,
-      "g": 0.02905769369341169,
-      "tasa_base": 0.7440569138757462
-    },
-    {
-      "beta": 1.0499451941551905,
-      "margen": 0.21,
-      "g": 0.020584198158172362,
-      "tasa_base": 0.7847773017465022
-    }
+  {
+   "nombre": "C · Agregadores e internacional aceleran",
+   "prob": 0.2,
+   "margen": 0.21,
+   "crec": {
+    "Cadena de suministro": [
+     0.06,
+     0.06,
+     0.06,
+     0.055,
+     0.055
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.07,
+     0.07,
+     0.07,
+     0.065,
+     0.06
+    ]
+   },
+   "cagr": 0.06163924563226697,
+   "rev5": 6662.1095914100015,
+   "mix5": {
+    "Cadena de suministro": 0.5889825847241181,
+    "Regalías, tiendas propias y fondo de publicidad": 0.41101741527588187
+   },
+   "tasa_base": 0.5277154090017473,
+   "roic_terminal_usado": 0.184,
+   "valor_beta_hoja": 420.890010425947,
+   "valor_beta_prop": 406.09207404341686
+  },
+  {
+   "nombre": "D · El sistema de franquicias se debilita",
+   "prob": 0.05,
+   "margen": 0.17,
+   "crec": {
+    "Cadena de suministro": [
+     0,
+     0,
+     0.01,
+     0.01,
+     0.01
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0,
+     0.01,
+     0.01,
+     0.01,
+     0.01
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": 0.006793185458554563,
+   "rev5": 5110.0868998,
+   "mix5": {
+    "Cadena de suministro": 0.596798257994274,
+    "Regalías, tiendas propias y fondo de publicidad": 0.403201742005726
+   },
+   "tasa_base": 0.8278052613693098,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 125.33201818837905,
+   "valor_beta_prop": 119.042306239517
+  }
+ ],
+ "valor_esperado_beta_hoja": 309.5770738176482,
+ "valor_esperado_beta_prop": 297.982526157151,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 0.9,
+   "ke": 0.09004000000000001,
+   "wacc": 0.0766652067825287,
+   "dcf_base": 349.8143327753037
+  },
+  {
+   "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
+   "beta": 1.0506029158324819,
+   "ke": 0.0967568900461287,
+   "wacc": 0.08129577457378778,
+   "dcf_base": 337.04352450340764
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.003999999999999997,
+   0.023999999999999997,
+   0.044,
+   0.064,
+   0.08399999999999999
   ],
-  "ingresos_ltm": 4940
+  "m": [
+   0.16,
+   0.18000000000000002,
+   0.2,
+   0.22,
+   0.24000000000000002
+  ],
+  "v": [
+   [
+    183.24708377518425,
+    219.23160258583312,
+    255.21612139648198,
+    291.20064020713085,
+    327.1851590177798
+   ],
+   [
+    218.07895864937186,
+    258.9537222924296,
+    299.82848593548715,
+    340.70324957854484,
+    381.5780132216027
+   ],
+   [
+    256.84402530261434,
+    303.1935221017786,
+    349.5430189009428,
+    395.89251570010697,
+    442.2420124992711
+   ],
+   [
+    299.94278811551237,
+    352.411321379057,
+    404.8798546426013,
+    457.34838790614566,
+    509.8169211696902
+   ],
+   [
+    347.80981086197875,
+    407.10658585837353,
+    466.403360854768,
+    525.7001358511626,
+    584.9969108475573
+   ]
+  ],
+  "referencia_constante": 349.5430189009428,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 0.9,
+   "margen": 0.19,
+   "g": 0.0327097780339386,
+   "tasa_base": 0.7198070738546477
+  },
+  {
+   "beta": 0.9,
+   "margen": 0.2,
+   "g": 0.023745584332060976,
+   "tasa_base": 0.7749137768839697
+  },
+  {
+   "beta": 0.9,
+   "margen": 0.21,
+   "g": 0.01532799430811747,
+   "tasa_base": 0.8011766577586734
+  },
+  {
+   "beta": 1.0506029158324819,
+   "margen": 0.19,
+   "g": 0.03764541696840651,
+   "tasa_base": 0.6870344313297807
+  },
+  {
+   "beta": 1.0506029158324819,
+   "margen": 0.2,
+   "g": 0.028624361173977264,
+   "tasa_base": 0.7469342418047908
+  },
+  {
+   "beta": 1.0506029158324819,
+   "margen": 0.21,
+   "g": 0.020154184360284932,
+   "tasa_base": 0.7861189447959108
+  }
+ ],
+ "ingresos_ltm": 4940
 }

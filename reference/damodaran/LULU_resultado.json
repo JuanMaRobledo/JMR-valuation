@@ -1,328 +1,354 @@
 {
-  "ticker": "LULU",
-  "fecha": "2026-09-30",
-  "precio": 96.55,
-  "dcf_base": 155.29184062099816,
-  "g_ref": 0.02,
-  "m_base": 0.185,
-  "s2c": 2,
+ "ticker": "LULU",
+ "fecha": "2026-09-30",
+ "supuestos": {
+  "growthY1Cons": -0.1,
+  "growthY1Base": -0.06,
+  "growthY1Opt": -0.03,
+  "growthCons": 0,
+  "growthBase": 0.04,
+  "growthOpt": 0.07,
+  "marginY1Cons": 0.13,
+  "marginY1Base": 0.14,
+  "marginY1Opt": 0.155,
+  "marginCons": 0.15,
+  "marginBase": 0.185,
+  "marginOpt": 0.21,
+  "salesToCapital2": 2.5,
   "wacc": 0.08962944873976701,
-  "beta_hoja": 1.2,
-  "beta_bu": 0.8902410235397273,
-  "beta_prop": 0.8902410235397273,
-  "industria": "Apparel",
-  "bu_sector": 0.79,
-  "rf": 0.0475,
-  "erp": 0.0414,
-  "tasas_base": {
-    "tramo": "$7,000-12,000 Mn",
-    "<(25)": 0.3,
-    "(25)-(20)": 0.3,
-    "(20)-(15)": 0.7,
-    "(15)-(10)": 2.3,
-    "(10)-(5)": 6.3,
-    "(5)-0": 17.7,
-    "0-5": 31.9,
-    "5-10": 23.5,
-    "10-15": 9.5,
-    "15-20": 4.0,
-    "20-25": 1.5,
-    "25-30": 1.2,
-    "30-35": 0.5,
-    "35-40": 0.2,
-    "40-45": 0.1,
-    ">45": 0.1,
-    "Mean": 3.9,
-    "Median": 3.5,
-    "StDev": 8.3,
-    "bins": [
-      "<(25)",
-      "(25)-(20)",
-      "(20)-(15)",
-      "(15)-(10)",
-      "(10)-(5)",
-      "(5)-0",
-      "0-5",
-      "5-10",
-      "10-15",
-      "15-20",
-      "20-25",
-      "25-30",
-      "30-35",
-      "35-40",
-      "40-45",
-      ">45"
+  "costoPatrimonio": 0.09717999999999999,
+  "taxEffective": 0.293991,
+  "convergenceYear": 6,
+  "terminalWacc": 0.08979999999999999,
+  "roicTerminal": 0.124,
+  "salesToCapital": 2
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 155.29184062099816,
+ "precio": 96.32,
+ "dcf_base": 167.4420321712164,
+ "g_ref": 0.02,
+ "m_base": 0.185,
+ "s2c": 2,
+ "wacc": 0.08962944873976701,
+ "beta_hoja": 1.2,
+ "beta_bu": 0.8902410235397273,
+ "beta_prop": 0.8902410235397273,
+ "industria": "Apparel",
+ "bu_sector": 0.79,
+ "rf": 0.0475,
+ "erp": 0.0414,
+ "tasas_base": {
+  "tramo": "$7,000-12,000 Mn",
+  "<(25)": 0.3,
+  "(25)-(20)": 0.3,
+  "(20)-(15)": 0.7,
+  "(15)-(10)": 2.3,
+  "(10)-(5)": 6.3,
+  "(5)-0": 17.7,
+  "0-5": 31.9,
+  "5-10": 23.5,
+  "10-15": 9.5,
+  "15-20": 4.0,
+  "20-25": 1.5,
+  "25-30": 1.2,
+  "30-35": 0.5,
+  "35-40": 0.2,
+  "40-45": 0.1,
+  ">45": 0.1,
+  "Mean": 3.9,
+  "Median": 3.5,
+  "StDev": 8.3,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "nombre": "A · Se estabiliza Américas y crece lo internacional",
+   "prob": 0.4,
+   "margen": 0.18,
+   "crec": {
+    "Américas": [
+     -0.08,
+     0,
+     0.02,
+     0.03,
+     0.03
     ],
-    "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+    "China continental": [
+     0.08,
+     0.1,
+     0.1,
+     0.08,
+     0.08
+    ],
+    "Resto del mundo": [
+     0.06,
+     0.1,
+     0.1,
+     0.09,
+     0.08
+    ]
+   },
+   "cagr": 0.029681556407293863,
+   "rev5": 12841.117807680002,
+   "mix5": {
+    "Américas": 0.5930906170368644,
+    "China continental": 0.20772647677172318,
+    "Resto del mundo": 0.19918290619141238
+   },
+   "tasa_base": 0.6951316701214652,
+   "roic_terminal_usado": 0.124,
+   "valor_beta_hoja": 172.24727088595017,
+   "valor_beta_prop": 183.69590759100743
   },
-  "historias": [
-    {
-      "nombre": "A · Se estabiliza Américas y crece lo internacional",
-      "prob": 0.4,
-      "margen": 0.18,
-      "crec": {
-        "Américas": [
-          -0.08,
-          0,
-          0.02,
-          0.03,
-          0.03
-        ],
-        "China continental": [
-          0.08,
-          0.1,
-          0.1,
-          0.08,
-          0.08
-        ],
-        "Resto del mundo": [
-          0.06,
-          0.1,
-          0.1,
-          0.09,
-          0.08
-        ]
-      },
-      "cagr": 0.029681556407293863,
-      "rev5": 12841.117807680002,
-      "mix5": {
-        "Américas": 0.5930906170368644,
-        "China continental": 0.20772647677172318,
-        "Resto del mundo": 0.19918290619141238
-      },
-      "tasa_base": 0.6951316701214652,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 159.56752188663765,
-      "valor_beta_prop": 170.08619158584844
-    },
-    {
-      "nombre": "B · Pérdida estructural frente a Alo y Vuori",
-      "prob": 0.35,
-      "margen": 0.14,
-      "crec": {
-        "Américas": [
-          -0.1,
-          -0.05,
-          -0.02,
-          0,
-          0.01
-        ],
-        "China continental": [
-          0.03,
-          0.05,
-          0.05,
-          0.04,
-          0.04
-        ],
-        "Resto del mundo": [
-          0.03,
-          0.05,
-          0.05,
-          0.05,
-          0.05
-        ]
-      },
-      "cagr": -0.006385513542655374,
-      "rev5": 10744.290325125,
-      "mix5": {
-        "Américas": 0.6025557904797849,
-        "China continental": 0.20005196201499642,
-        "Resto del mundo": 0.19739224750521867
-      },
-      "tasa_base": 0.8361047179409999,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 108.34514631430582,
-      "valor_beta_prop": 115.13427147922549
-    },
-    {
-      "nombre": "C · La marca se recupera",
-      "prob": 0.15,
-      "margen": 0.21,
-      "crec": {
-        "Américas": [
-          -0.04,
-          0.04,
-          0.05,
-          0.05,
-          0.05
-        ],
-        "China continental": [
-          0.12,
-          0.14,
-          0.12,
-          0.1,
-          0.1
-        ],
-        "Resto del mundo": [
-          0.1,
-          0.12,
-          0.12,
-          0.1,
-          0.1
-        ]
-      },
-      "cagr": 0.05787466772162109,
-      "rev5": 14698.034041600004,
-      "mix5": {
-        "Américas": 0.6015540510367134,
-        "China continental": 0.20601795256628566,
-        "Resto del mundo": 0.19242799639700084
-      },
-      "tasa_base": 0.5152596199360575,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 212.38928774219553,
-      "valor_beta_prop": 226.68822271652536
-    },
-    {
-      "nombre": "D · Moda que pasa: declive de la marca",
-      "prob": 0.1,
-      "margen": 0.1,
-      "crec": {
-        "Américas": [
-          -0.12,
-          -0.08,
-          -0.05,
-          -0.03,
-          0
-        ],
-        "China continental": [
-          -0.05,
-          0,
-          0,
-          0.02,
-          0.02
-        ],
-        "Resto del mundo": [
-          0,
-          0.02,
-          0.02,
-          0.02,
-          0.02
-        ]
-      },
-      "cagr": -0.03527493594186737,
-      "rev5": 9270.56003904,
-      "mix5": {
-        "Américas": 0.6156321663379257,
-        "China continental": 0.18657610680650025,
-        "Resto del mundo": 0.19779172685557414
-      },
-      "tasa_base": 0.9149464192867528,
-      "roic_terminal_usado": 0,
-      "valor_beta_hoja": 73.05072136325778,
-      "valor_beta_prop": 77.32771731618422
-    }
-  ],
-  "valor_esperado_beta_hoja": 140.9112752623172,
-  "valor_esperado_beta_prop": 150.06747679116552,
-  "betas": [
-    {
-      "enfoque": "Hoja (regresión o la cargada en el libro)",
-      "beta": 1.2,
-      "ke": 0.09717999999999999,
-      "wacc": 0.08962944873976701,
-      "dcf_base": 155.29184062099816
-    },
-    {
-      "enfoque": "Bottom-up del sector (Apparel, reapalancada)",
-      "beta": 0.8902410235397273,
-      "ke": 0.08435597837454471,
-      "wacc": 0.07866108891280418,
-      "dcf_base": 165.48480365663042
-    }
-  ],
-  "sensibilidad": {
-    "g": [
-      -0.02,
-      0.0,
-      0.02,
-      0.04,
-      0.06
+  {
+   "nombre": "B · Pérdida estructural frente a Alo y Vuori",
+   "prob": 0.35,
+   "margen": 0.14,
+   "crec": {
+    "Américas": [
+     -0.1,
+     -0.05,
+     -0.02,
+     0,
+     0.01
     ],
-    "m": [
-      0.145,
-      0.165,
-      0.185,
-      0.205,
-      0.225
+    "China continental": [
+     0.03,
+     0.05,
+     0.05,
+     0.04,
+     0.04
     ],
-    "v": [
-      [
-        106.57364562953056,
-        119.09856789021737,
-        131.6234901509042,
-        144.14841241159098,
-        156.6733346722778
-      ],
-      [
-        115.44103886179933,
-        129.66596401208403,
-        143.89088916236878,
-        158.1158143126535,
-        172.34073946293822
-      ],
-      [
-        125.23284638692088,
-        141.3619116202069,
-        157.4909768534929,
-        173.62004208677894,
-        189.74910732006492
-      ],
-      [
-        136.0454901407288,
-        154.30390349715748,
-        172.56231685358617,
-        190.82073021001486,
-        209.07914356644358
-      ],
-      [
-        147.98382813299713,
-        168.61967957170165,
-        189.25553101040603,
-        209.8913824491105,
-        230.52723388781493
-      ]
-    ],
-    "referencia_constante": 157.4909768534929,
-    "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+    "Resto del mundo": [
+     0.03,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": -0.006385513542655374,
+   "rev5": 10744.290325125,
+   "mix5": {
+    "Américas": 0.6025557904797849,
+    "China continental": 0.20005196201499642,
+    "Resto del mundo": 0.19739224750521867
+   },
+   "tasa_base": 0.8361047179409999,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 108.34514631430582,
+   "valor_beta_prop": 115.13427147922549
   },
-  "inverso": [
-    {
-      "beta": 1.2,
-      "margen": 0.12,
-      "g": -0.003165130965753938,
-      "tasa_base": 0.8247045636187689
-    },
-    {
-      "beta": 1.2,
-      "margen": 0.15,
-      "g": -0.05222780853658654,
-      "tasa_base": 0.936307038756099
-    },
-    {
-      "beta": 1.2,
-      "margen": 0.185,
-      "g": -0.09220232711448578,
-      "tasa_base": 0.9729130704726634
-    },
-    {
-      "beta": 0.8902410235397273,
-      "margen": 0.12,
-      "g": -0.019290164035262083,
-      "tasa_base": 0.8817871806848276
-    },
-    {
-      "beta": 0.8902410235397273,
-      "margen": 0.15,
-      "g": -0.066420596498944,
-      "tasa_base": 0.9541899515886694
-    },
-    {
-      "beta": 0.8902410235397273,
-      "margen": 0.185,
-      "g": null,
-      "tasa_base": null
-    }
+  {
+   "nombre": "C · La marca se recupera",
+   "prob": 0.15,
+   "margen": 0.21,
+   "crec": {
+    "Américas": [
+     -0.04,
+     0.04,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "China continental": [
+     0.12,
+     0.14,
+     0.12,
+     0.1,
+     0.1
+    ],
+    "Resto del mundo": [
+     0.1,
+     0.12,
+     0.12,
+     0.1,
+     0.1
+    ]
+   },
+   "cagr": 0.05787466772162109,
+   "rev5": 14698.034041600004,
+   "mix5": {
+    "Américas": 0.6015540510367134,
+    "China continental": 0.20601795256628566,
+    "Resto del mundo": 0.19242799639700084
+   },
+   "tasa_base": 0.5152596199360575,
+   "roic_terminal_usado": 0.124,
+   "valor_beta_hoja": 229.96674435497124,
+   "valor_beta_prop": 245.55485742718494
+  },
+  {
+   "nombre": "D · Moda que pasa: declive de la marca",
+   "prob": 0.1,
+   "margen": 0.1,
+   "crec": {
+    "Américas": [
+     -0.12,
+     -0.08,
+     -0.05,
+     -0.03,
+     0
+    ],
+    "China continental": [
+     -0.05,
+     0,
+     0,
+     0.02,
+     0.02
+    ],
+    "Resto del mundo": [
+     0,
+     0.02,
+     0.02,
+     0.02,
+     0.02
+    ]
+   },
+   "roic_terminal": "costo_capital",
+   "cagr": -0.03527493594186737,
+   "rev5": 9270.56003904,
+   "mix5": {
+    "Américas": 0.6156321663379257,
+    "China continental": 0.18657610680650025,
+    "Resto del mundo": 0.19779172685557414
+   },
+   "tasa_base": 0.9149464192867528,
+   "roic_terminal_usado": 0.0,
+   "valor_beta_hoja": 73.05072136325778,
+   "valor_beta_prop": 77.32771731618422
+  }
+ ],
+ "valor_esperado_beta_hoja": 148.61979335395856,
+ "valor_esperado_beta_prop": 158.34135839982804,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.2,
+   "ke": 0.09717999999999999,
+   "wacc": 0.08962944873976701,
+   "dcf_base": 167.4420321712164
+  },
+  {
+   "enfoque": "Bottom-up del sector (Apparel, reapalancada)",
+   "beta": 0.8902410235397273,
+   "ke": 0.08435597837454471,
+   "wacc": 0.07866108891280418,
+   "dcf_base": 178.526123040454
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   -0.02,
+   0.0,
+   0.02,
+   0.04,
+   0.06
   ],
-  "ingresos_ltm": 11094
+  "m": [
+   0.145,
+   0.165,
+   0.185,
+   0.205,
+   0.225
+  ],
+  "v": [
+   [
+    113.53106146601998,
+    127.01562729036048,
+    140.500193114701,
+    153.9847589390415,
+    167.46932476338205
+   ],
+   [
+    123.45020072356196,
+    138.7798378547795,
+    154.10947498599702,
+    169.4391121172145,
+    184.76874924843202
+   ],
+   [
+    134.42999130127066,
+    151.8276282468808,
+    169.22526519249095,
+    186.62290213810104,
+    204.02053908371113
+   ],
+   [
+    146.58171145052123,
+    166.29339671174893,
+    186.0050819729765,
+    205.71676723420418,
+    225.42845249543186
+   ],
+   [
+    160.02640804870234,
+    182.3233049930213,
+    204.62020193734025,
+    226.91709888165914,
+    249.21399582597815
+   ]
+  ],
+  "referencia_constante": 169.22526519249095,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.2,
+   "margen": 0.12,
+   "g": -0.020982968290062465,
+   "tasa_base": 0.887779707746821
+  },
+  {
+   "beta": 1.2,
+   "margen": 0.15,
+   "g": -0.06696469595705229,
+   "tasa_base": 0.9548755169058858
+  },
+  {
+   "beta": 1.2,
+   "margen": 0.185,
+   "g": null,
+   "tasa_base": null
+  },
+  {
+   "beta": 0.8902410235397273,
+   "margen": 0.12,
+   "g": -0.03632477466349489,
+   "tasa_base": 0.9162692160760035
+  },
+  {
+   "beta": 0.8902410235397273,
+   "margen": 0.15,
+   "g": -0.08062261393013664,
+   "tasa_base": 0.9675864024078628
+  },
+  {
+   "beta": 0.8902410235397273,
+   "margen": 0.185,
+   "g": null,
+   "tasa_base": null
+  }
+ ],
+ "ingresos_ltm": 11094
 }

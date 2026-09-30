@@ -50,7 +50,7 @@ Para empresas de más de US$25.000 millones, crecer 0,8% anual cinco años (hist
 
 **Márgenes.** El margen operativo bajó de 44% a ~41% por precios, costos de reestructuración y la integración de las plantas de Catalent. La hoja supone 44% el próximo año y 40% de objetivo. El segmento Obesidad y Diabetes aún tiene 52,4% de margen; lo que pesa es el precio en EE.UU. Las historias van de 30% (pérdida de relevancia) a 43%.
 
-**Reinversión y retorno.** Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Moat estrecho (patentes y escala de manufactura en diabetes y obesidad, que darían un moat ancho, pero con erosión visible hoy: pierde participación frente a Lilly, recorta precios y su ROIC bajó de 87% a 36%): el ROIC después del año 10 es 13,1%, el punto medio entre el costo de capital terminal (9,2%) y el menor entre el ROIC actual y el de la industria (17,0%); un moat estrecho conserva solo parte de los retornos excedentes (revisión del 30-sep-2026).
+**Reinversión y retorno.** Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Ventaja que se desvanece: patentes y escala en diabetes y obesidad, pero pierde participación frente a Lilly, recorta precios y su ROIC bajó de 87% a 36%. El ROIC después del año 10 es 13,1%, el punto medio entre el costo de capital terminal (9,2%) y el promedio de su industria según Damodaran (17,0%).
 
 **Riesgo.** La hoja usa una beta de 1,09. La bottom-up de Drugs (Pharmaceutical) (228 empresas, 0,92 desapalancada y corregida por caja) reapalancada da 1,00; el DCF Base sube de US$41,96 a US$42,75. Diferencia menor: el riesgo está en el precio de los GLP-1.
 
@@ -58,6 +58,27 @@ Para empresas de más de US$25.000 millones, crecer 0,8% anual cinco años (hist
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,09 | 9,6% | 9,0% | US$41,96 |
 | Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,00 | 9,2% | 8,7% | US$42,75 |
+
+
+### Supuestos vigentes verificados
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | -7,0% | -3,0% | -1,0% |
+| Crecimiento años 2–5 | 1,0% | 4,5% | 7,0% |
+| Margen año 1 (base ajustada del modelo) | 44,3% | 44,3% | 44,3% |
+| Margen objetivo | 35,0% | 40,0% | 45,0% |
+
+Ventas/capital: 0,5x en años 1–5 y 1,1x en 6–10. WACC: 9,0%. Ke: 9,6%. Impuesto efectivo: 21,7%. Convergencia: 7 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja que se desvanece | 23,8% | 17,0% | 9,2% | 13,1% | US$41,96 | US$38,01 |
+
+Fuentes de ventaja: Patentes y escala de manufactura en diabetes y obesidad. Evidencia: ROIC 36-87% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### Historias cuantificadas y valor esperado
@@ -70,17 +91,19 @@ Para empresas de más de US$25.000 millones, crecer 0,8% anual cinco años (hist
 | **D · Novo pierde relevancia frente a Lilly** | 10% | Obesidad (Wegovy, Saxenda): -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus): -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes: -8%, -8%, -8%, -8%, -8%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | -6,0% | 30% | 0,5 | = costo de capital | US$23,29 | US$23,65 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$35,71** | **US$36,35** |
 
-A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias donde la ventaja se erosiona (B y D), el ROIC después del año 10 vuelve al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre (revisión del 30-sep-2026). **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF Base (beta 1,09; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+
 | Crecimiento \ Margen | 36,0% | 38,0% | 40,0% | 42,0% | 44,0% |
 |---|---:|---:|---:|---:|---:|
-| -1,0% | 33,28 | 34,81 | 36,33 | 37,86 | 39,38 |
-| 1,0% | 35,54 | 37,27 | 39,01 | 40,74 | 42,47 |
-| 3,0% | 38,03 | 39,99 | 41,96 | 43,93 | 45,90 |
-| 5,0% | 40,77 | 43,00 | 45,23 | 47,46 | 49,69 |
-| 7,0% | 43,81 | 46,33 | 48,85 | 51,37 | 53,89 |
+| -1,0% | 34,09 | 35,65 | 37,21 | 38,77 | 40,33 |
+| 1,0% | 36,40 | 38,17 | 39,95 | 41,72 | 43,50 |
+| 3,0% | 38,94 | 40,96 | 42,97 | 44,99 | 47,00 |
+| 5,0% | 41,76 | 44,04 | 46,32 | 48,61 | 50,89 |
+| 7,0% | 44,86 | 47,45 | 50,03 | 52,61 | 55,19 |
 
 
 ### Pre-mortem
@@ -109,16 +132,16 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$38,71**.
+Precio de referencia de la valoración guardada: **US$38,14**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 35% | Margen 40% | Margen 44% |
 |---|---:|---:|---:|
-| Beta 1,09 | 4,4% (52% de las empresas) | 0,8% (72% de las empresas) | -1,4% (81% de las empresas) |
-| Beta 1,00 | 3,8% (56% de las empresas) | 0,4% (73% de las empresas) | -1,8% (83% de las empresas) |
+| Beta 1,09 | 3,2% (60% de las empresas) | -0,3% (76% de las empresas) | -2,5% (86% de las empresas) |
+| Beta 1,00 | 2,6% (64% de las empresas) | -0,8% (78% de las empresas) | -3,0% (86% de las empresas) |
 
-Frente al valor esperado de las historias (US$35,71 con la beta de la hoja; US$36,35 con la propuesta), el precio está por encima en 8% y por encima en 6%, respectivamente. Con el ROIC terminal revisado (30-sep-2026), el precio (US$38,71) queda 8% por encima del valor esperado de las historias (US$35,71) y 8% por debajo del DCF (US$41,96). El DCF inverso pide ingresos planos con margen de 40%, o 3,4% anual con margen de 35% (lo logró ~59-76% de las empresas de este tamaño): el mercado valora algo cercano a la historia A. ¿Qué sabe el mercado que yo no? Probablemente le da más peso a la guerra de precios de los GLP-1 (historia B). La decisión depende de cuánto peso le das a B.
+Frente al valor esperado de las historias (US$35,71 con la beta de la hoja; US$36,35 con la propuesta), el precio está por encima en 7% y por encima en 5%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
