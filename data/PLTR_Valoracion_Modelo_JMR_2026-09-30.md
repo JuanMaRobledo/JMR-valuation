@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$105,73 en el escenario Base (rango US$58,58–US$180,31). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$137,05 (+30% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el valor intrínseco ponderado hoy es US$118,26, frente a un precio de referencia de US$187,48 (−37%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$105,73 en el escenario Base (rango US$58,58–US$180,31). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$137,05 (+30% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$118,26. El valor intrínseco es el DCF: US$105,73 frente a un precio de referencia de US$187,48 (−44%).
 
 Los múltiplos (US$137,05 hoy) quedan 30% por encima del DCF (US$105,73); el precio (US$187,48) está por encima de ambos. Los múltiplos suponen que a FY+3 Palantir cotiza como el software de crecimiento alto de hoy con una prima de 25% (~60x EBITDA, ~78x utilidad), mientras que el DCF lleva el crecimiento de 40% en FY+3 a 5% en el año 10 con un WACC de 10,9%. El mercado paga por un crecimiento alto más largo que ambos. Ojo: P/E da US$196 porque la utilidad normalizada de FY+3 de la hoja (US$12.204 millones) supera al EBITDA (US$7.991 millones); conviene revisar esa proyección. Mientras tanto, el DCF y los múltiplos de flujo son la referencia más prudente.
 
-| Escenario | DCF hoy | Múltiplos consolidados hoy | Valor intrínseco ponderado hoy | Compra con MOS hoy | Precio objetivo FY+3 ponderado |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$58,58 | US$76,96 | US$65,93 | US$42,85 | US$95,70 |
-| Base | US$105,73 | US$137,05 | US$118,26 | US$76,87 | US$179,64 |
-| Optimista | US$180,31 | US$221,90 | US$196,94 | US$128,01 | US$310,97 |
+| Conservador | US$58,58 | US$76,96 | US$65,93 | US$38,08 | US$95,70 |
+| Base | US$105,73 | US$137,05 | US$118,26 | US$68,73 | US$179,64 |
+| Optimista | US$180,31 | US$221,90 | US$196,94 | US$117,20 | US$310,97 |
 
 ## 2. Datos
 
@@ -122,7 +122,7 @@ Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 12,
 
 Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
-## 7. Sensibilidad del valor ponderado hoy (Base)
+## 7. Sensibilidad del valor ponderado hoy (Base, lectura secundaria)
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|

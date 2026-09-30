@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$155,29 en el escenario Base (rango US$104,98–US$206,38). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$107,52 (−31% frente al DCF). Con los pesos de la categoría «Cíclica/Commodity» (40% DCF, 60% múltiplos), el valor intrínseco ponderado hoy es US$126,63, frente a un precio de referencia de US$100,58 (+26%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$155,29 en el escenario Base (rango US$104,98–US$206,38). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$107,52 (−31% frente al DCF). Con los pesos de la categoría «Cíclica/Commodity» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$126,63. El valor intrínseco es el DCF: US$155,29 frente a un precio de referencia de US$100,58 (+54%).
 
 Los múltiplos (US$107,52 hoy) quedan 31% por debajo del DCF (US$155,29). Los múltiplos reflejan la valoración actual de una marca que decrece (~6x EBITDA, ~11x utilidad) y peers ajustados −10%, mientras que el DCF supone que las ventas y los márgenes se recuperan en el horizonte. Mientras las ventas caigan y la nueva CEO no muestre un plan, los múltiplos son la referencia más prudente; el DCF muestra el valor si Lululemon vuelve a crecer.
 
-| Escenario | DCF hoy | Múltiplos consolidados hoy | Valor intrínseco ponderado hoy | Compra con MOS hoy | Precio objetivo FY+3 ponderado |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$104,98 | US$76,37 | US$87,82 | US$61,47 | US$111,62 |
-| Base | US$155,29 | US$107,52 | US$126,63 | US$88,64 | US$166,71 |
-| Optimista | US$206,38 | US$143,08 | US$168,40 | US$117,88 | US$226,33 |
+| Conservador | US$104,98 | US$76,37 | US$87,82 | US$73,49 | US$111,62 |
+| Base | US$155,29 | US$107,52 | US$126,63 | US$108,70 | US$166,71 |
+| Optimista | US$206,38 | US$143,08 | US$168,40 | US$144,47 | US$226,33 |
 
 ## 2. Datos
 
@@ -122,7 +122,7 @@ Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 9,7
 
 Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
-## 7. Sensibilidad del valor ponderado hoy (Base)
+## 7. Sensibilidad del valor ponderado hoy (Base, lectura secundaria)
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|

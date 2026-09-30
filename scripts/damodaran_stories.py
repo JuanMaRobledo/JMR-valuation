@@ -235,10 +235,11 @@ def table(cols, rows, align=None):
 
 
 def inline_html(s: str) -> str:
-    """Markdown mínimo: **negrita** y [texto](url)."""
+    """Markdown mínimo: **negrita**, *cursiva* y [texto](url)."""
     import re
     t = html.escape(s)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"(?<![\w*])\*([^*\s][^*]*?)\*(?![\w*])", r"<em>\1</em>", t)
     t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}" target="_blank" rel="noopener">{m.group(1)}</a>', t)
     return t
 

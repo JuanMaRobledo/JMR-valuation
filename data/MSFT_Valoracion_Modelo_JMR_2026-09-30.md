@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$329,42 en el escenario Base (rango US$263,31–US$386,35). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$437,36 (+33% frente al DCF). Con los pesos de la categoría «Software» (60% DCF, 40% múltiplos), el valor intrínseco ponderado hoy es US$372,59, frente a un precio de referencia de US$509,22 (−27%).
+Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$329,42 en el escenario Base (rango US$263,31–US$386,35). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$437,36 (+33% frente al DCF). Con los pesos de la categoría «Software» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$372,59. El valor intrínseco es el DCF: US$329,42 frente a un precio de referencia de US$509,22 (−35%).
 
 Los múltiplos (US$437,36 hoy) quedan 33% por encima del DCF (US$329,42). Los múltiplos suponen que Microsoft conserva a FY+3 una valoración parecida a la de sus últimos cinco años (~22x EBITDA, ~32x utilidad, ajustada por los peers), mientras que el DCF carga el capex de US$190 mil millones de 2026 contra el flujo de caja y usa un WACC de ~9,4%. El precio (US$509,22) está por encima de ambos. El DCF parece conservador frente a la aceleración de Azure (~40%) y conviene revisar su crecimiento y su reinversión; los múltiplos están más cerca de lo que paga el mercado.
 
-| Escenario | DCF hoy | Múltiplos consolidados hoy | Valor intrínseco ponderado hoy | Compra con MOS hoy | Precio objetivo FY+3 ponderado |
+| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el DCF | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$263,31 | US$322,80 | US$287,11 | US$186,62 | US$381,31 |
-| Base | US$329,42 | US$437,36 | US$372,59 | US$242,19 | US$505,58 |
-| Optimista | US$386,35 | US$569,86 | US$459,75 | US$298,84 | US$631,98 |
+| Conservador | US$263,31 | US$322,80 | US$287,11 | US$171,15 | US$381,31 |
+| Base | US$329,42 | US$437,36 | US$372,59 | US$214,12 | US$505,58 |
+| Optimista | US$386,35 | US$569,86 | US$459,75 | US$251,12 | US$631,98 |
 
 ## 2. Datos
 
@@ -122,7 +122,7 @@ Crecimiento perpetuo después de FY+3 que supone cada múltiplo Base, con Ke 10,
 
 Más de 2 pp de diferencia significa que el múltiplo (o el precio) cuenta otra historia de crecimiento que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (subir el crecimiento del DCF si la evidencia lo sostiene, o acercar el múltiplo al justificado si no).
 
-## 7. Sensibilidad del valor ponderado hoy (Base)
+## 7. Sensibilidad del valor ponderado hoy (Base, lectura secundaria)
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
