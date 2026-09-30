@@ -115,7 +115,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 10% | Margen 12% | Margen 14% |
 |---|---:|---:|---:|
-| Beta 1,30 | no alcanza | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
+| Beta 1,30 | ninguno entre −10% y 60% | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
 | Beta 0,97 | -9,4% (98% de las empresas) | ≤ −10% (el precio supone una caída mayor) | ≤ −10% (el precio supone una caída mayor) |
 
 Frente al valor esperado de las historias (US$11,72 con la beta de la hoja; US$13,22 con la propuesta), el precio está por debajo en 24% y 33%, respectivamente. El precio está por debajo del valor esperado (24-33%). El DCF inverso llega al piso de la búsqueda: el precio supone que los ingresos caen más de 10% al año durante cinco años, algo que no aparece en ninguna historia con datos de 2023-2026. ¿Qué sabe el mercado que yo no? Descuenta Brasil (tasas, moneda, regulación) y el riesgo de que el PIX y los bancos digitales grandes vacíen el negocio. Con ROAE de 15% y P/VL de ~0,9, el mercado dice que PagBank no gana su costo de capital; si crees que sí, el precio parece bajo.
