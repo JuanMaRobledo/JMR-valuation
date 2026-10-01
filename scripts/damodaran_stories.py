@@ -147,7 +147,7 @@ def frac_at_least(br: dict, g_nominal: float) -> float:
 # ---------------------------------------------------------------- hoja
 def load_sheet(sid: str):
     sh = get_gspread_client().open_by_key(sid)
-    rng = ["'Input sheet'!A1:D75", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
+    rng = ["'Input sheet'!A1:D80", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
            "'Resumen de Valoración'!A1:U20", "'Cost of capital worksheet'!A1:C70", "'Descuento de múltiplos'!A1:E40",
            "EVEBITDA!A1:J30", "EVFCFF!A1:J30", "PE!A1:J30", "PFCFE!A1:J30", "POCF!A1:J30"]
     titulos = {w.title for w in sh.worksheets()}
@@ -160,7 +160,7 @@ def load_sheet(sid: str):
 
     def cell(s, a):
         col, row = ord(a[0]) - 65, int(a[1:]) - 1
-        g = grid[s]
+        g = grid.get(s, [])
         return g[row][col] if row < len(g) and col < len(g[row]) else None
     return grid, cell
 
@@ -182,6 +182,8 @@ def compute(tk: str) -> dict:
     # DCF técnico anterior = el DCF propio de la hoja ('Valuation output'!B35, casos Conservador/Base/Optimista de la plantilla).
     # 'Descuento de múltiplos'!D38 ya no sirve: desde el 1-oct-2026 apunta a la historia Base de «Escenarios e historias».
     dcf = cell("Valuation output", "B35")
+    if cell("DCF FCFE financiero", "A1") == "DCF FCFE financiero":  # financieras: el DCF de la hoja es el FCFE Base
+        dcf = cell("DCF FCFE financiero", "B42")
     if not isinstance(dcf, (int, float)):
         dcf = ((rec.get("descuentoMultiples") or {}).get("dcfHoy") or {}).get("base")
     inp = engine_inputs(cell, grid["Financials Multiples"], price)
@@ -1357,7 +1359,7 @@ def main(tickers):
         out_md.write_text(head + md)
         mt = r.get("motor_tecnico")
         if isinstance(mt, (int, float)) and isinstance(r.get("dcf_base"), (int, float)) and abs(mt - r["dcf_base"]) > 0.01:
-            print(f"{tk:5s} AVISO: el motor da {mt:.2f} y la hoja (Valuation output B35) {r['dcf_base']:.2f}", flush=True)
+            print(f"{tk:5s} AVISO: el motor da {mt:.2f} y la hoja (DCF técnico: VO B35 o FCFE financiero B42) {r['dcf_base']:.2f}", flush=True)
         print(f"{tk:5s} DCF {r['dcf_base']:.2f} | VE {r['valor_esperado_beta_hoja']:.2f} / {r['valor_esperado_beta_prop']:.2f} | "
               f"beta {r['beta_hoja']:.2f}→{r['beta_prop']:.2f} | " +
               " ".join(f"{h['id']}:{h['valor_beta_hoja']:.1f}" for h in r["historias"]), flush=True)

@@ -59,7 +59,7 @@ def engine_dcf(inp: dict) -> dict:
 
 def engine_inputs(cell, fm, price) -> dict:
     """Use the engine's shared grid reader; never approximate year 1 with years 2–5."""
-    bounds={"Input sheet":(75,4),"Valuation output":(140,13),"Financials Multiples":(120,8),
+    bounds={"Input sheet":(80,4),"Valuation output":(140,13),"Financials Multiples":(120,8),
             "Resumen de Valoración":(20,21),"Cost of capital worksheet":(70,5),"DCF FCFE financiero":(62,9)}
     bounds.update({name:(34,10) for name,_ in SHEETS.values()})
     grid={}
