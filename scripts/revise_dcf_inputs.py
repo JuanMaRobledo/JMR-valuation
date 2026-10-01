@@ -368,6 +368,13 @@ for _t in ("MSFT", "LULU"):
                               "Margen del año 1 del caso técnico Optimista enlazado a 'Input sheet'!B28, como en las demás hojas: "
                               "el número escrito a mano era una copia redondeada (escaneo de integridad del 1-oct-2026).")]
 
+CHANGES["CELH_PREF"] = [("Input sheet", "B76", 1135,
+                         "Preferentes de PepsiCo a su valor de liquidación: Serie A US$550M + Serie B US$585M (10-Q 2T26, nota de "
+                         "preferentes). Antes 1.759,975, el valor contable en mezzanine (852,4 + 907,6), que no es lo que cobraría "
+                         "PepsiCo. La conversión es solo a opción de Celsius o automática con el precio por encima de US$25 (A) y "
+                         "US$51,75 (B); por debajo, Celsius puede redimir y PepsiCo exigir la redención desde 2032 al valor "
+                         "declarado. Con el valor intrínseco por debajo de US$25, el derecho económico es el de liquidación.")]
+
 
 def main(argv: list[str]) -> int:
     dry, revert = "--dry-run" in argv, "--revert" in argv
