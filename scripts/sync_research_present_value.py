@@ -86,7 +86,7 @@ def tabla_multiplos(dm: dict, vp: dict, rec: dict, fecha: str) -> str:
                 descuadres.append(f"{m['nombre']} {lab}")
     filas += ("<tr><td>Múltiplos consolidados</td>" + "".join(f"<td>—</td><td>{money(dm['multiplesHoy'][k])}</td>" for k, _ in CASOS)
               + f"<td>{pct(dm.get('pesoMultiplos'))}</td></tr>")
-    filas += ("<tr><td>Ponderado técnico DCF + múltiplos</td>" + "".join(f"<td>—</td><td>{money(vp.get(k))}</td>" for k, _ in CASOS)
+    filas += ("<tr><td>Ponderado DCF + múltiplos</td>" + "".join(f"<td>—</td><td>{money(vp.get(k))}</td>" for k, _ in CASOS)
               + "<td>100%</td></tr>")
     ke = _num_es(dm["costoPatrimonio"] * 100) + "%"
     cab = "".join(f"<th>{lab} · múltiplo</th><th>{lab} · US$/acción hoy</th>" for _, lab in CASOS)
@@ -100,9 +100,9 @@ def tabla_multiplos(dm: dict, vp: dict, rec: dict, fecha: str) -> str:
             f"(valoración del {fecha}). El peso es el del método dentro de los múltiplos.</p>"
             f'<div style="overflow-x:auto"><table><thead><tr><th>Método</th>{cab}<th>Peso</th></tr></thead><tbody>{filas}'
             "</tbody></table></div>"
-            f"<p>El consolidado promedia los métodos con sus pesos; el ponderado técnico asigna {pct(dm.get('pesoDcf'))} al antiguo "
-            f"DCF técnico de la hoja y {pct(dm.get('pesoMultiplos'))} a los múltiplos. Esa mezcla no incorpora los cuatro DCF "
-            "activos y no es el valor intrínseco principal. Los múltiplos son precio relativo: si el mercado entero está caro, "
+            f"<p>El consolidado promedia los métodos con sus pesos; el ponderado asigna {pct(dm.get('pesoDcf'))} al DCF de la "
+            f"historia del mismo caso (Conservadora, Base u Optimista) y {pct(dm.get('pesoMultiplos'))} a los múltiplos. Es una "
+            "lectura secundaria y no es el valor intrínseco principal. Los múltiplos son precio relativo: si el mercado entero está caro, "
             "también lo estará el múltiplo; EV/EBITDA omite la reinversión y P/E depende del tratamiento de I+D y de la "
             "compensación en acciones. Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada, peers "
             "ajustados y múltiplo justificado).</p>" + nota)
@@ -227,7 +227,7 @@ def lectura(lv: dict) -> str:
     if ve.get("escenariosUnificados") and ve.get("valorCentral") is not None:
         return (f"{LECTURA} el valor intrínseco principal es el DCF Base, {es_money(ve['valorCentral'])} por acción. El DCF "
                 f"esperado por probabilidades ({es_money(ve['valor'])}) es complementario y sobre él se aplica el MOS. Los "
-                f"múltiplos ({es_money(mh['base'])} hoy, caso Base) y el ponderado técnico ({es_money(vp.get('base'))}) son "
+                f"múltiplos ({es_money(mh['base'])} hoy, caso Base) y el ponderado DCF + múltiplos ({es_money(vp.get('base'))}) son "
                 "lecturas secundarias. La comparación con el precio va al final de la sección «Valor con criterio Damodaran».</p>")
     return (f"{LECTURA} el valor intrínseco Base (DCF) hoy es {es_money(d['base'])}, con un rango de {es_money(d['conservador'])} "
             f"(Conservador) a {es_money(d['optimista'])} (Optimista). Los múltiplos ({es_money(mh['base'])} hoy) y el ponderado "

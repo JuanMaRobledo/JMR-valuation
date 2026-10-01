@@ -89,7 +89,7 @@ def block_fcff(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
     tv = ["Valor terminal"] + [""] * 11 + [f"=M{R['fcff']}/(M{R['wacc']}-M{R['g']})"]
     ops = ["VP activos operativos", f"=SUM(C{R['pv']}:L{R['pv']})+M{R['tv']}*L{R['disc']}"]
     eq = ["Valor patrimonio", f"=B{R['ops']}*(1-{VO}!B24)+IF({IS}!B54=\"B\";{IS}!B15+{IS}!B16;B{R['ops']})*{IS}!B55*{VO}!B24"
-          f"-{VO}!B27-{VO}!B28+{VO}!B29+{VO}!B30-{VO}!B32"]
+          f"-{VO}!B27-{VO}!B28+{VO}!B29+{VO}!B30-{VO}!B32-N({IS}!$B$76)"]  # B76: acciones preferentes separadas
     ps = ["DCF por acción", f"=B{R['eq']}/{VO}!B34"]
     rows += [rev, g, m, t, ebit, nol, nopat, s2c, reinv, fcff, wacc, disc, pv, tv, ops, eq, ps]
     return rows, R
