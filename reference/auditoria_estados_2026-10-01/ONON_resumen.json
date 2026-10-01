@@ -51,6 +51,14 @@
    "tipo": "Balance del último 10-Q"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 2.2,
+   "despues": 2.62,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 2,77 (con derechos de uso) e industria Shoe 2,62. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -105,14 +113,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 38.83802872,
-  "valorEsperado": 34.2804333579916,
-  "precioMOS": 22.28228168269454,
+  "dcfTecnico": 39.20515682,
+  "valorEsperado": 34.571457486749736,
+  "precioMOS": 22.47144736638733,
   "historias": {
-   "A": 38.23686637475675,
-   "B": 22.858262214686565,
-   "C": 14.706365043752896,
-   "D": 53.2878581965382
+   "A": 38.58753581477111,
+   "B": 23.011346738805834,
+   "C": 14.775778840464072,
+   "D": 53.77730627576568
   }
  },
  "tramo_tasas_base": "$2,000-3,000 Mn"

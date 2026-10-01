@@ -1,0 +1,21 @@
+{
+ "ticker": "CMG_S2C",
+ "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 1.2648,
+   "despues": 1.51,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 1.162,
+   "despues": 1.51,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran)."
+  }
+ ]
+}

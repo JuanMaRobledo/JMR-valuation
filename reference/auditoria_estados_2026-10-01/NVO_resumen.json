@@ -43,6 +43,14 @@
    "tipo": "Conversor de I+D alineado al LTM"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 0.45,
+   "despues": 0.57,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 0,57 (capex, intangibles y compras) e industria Drugs (Pharmaceutical) 1,11. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -97,14 +105,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 42.26832437,
-  "valorEsperado": 35.91615292961335,
-  "precioMOS": 23.345499404248677,
+  "dcfTecnico": 43.16451252,
+  "valorEsperado": 36.1097409713952,
+  "precioMOS": 23.47133163140688,
   "historias": {
-   "A": 39.27487455165944,
-   "B": 28.52368069392444,
-   "C": 22.713212408512774,
-   "D": 46.88888829960481
+   "A": 39.64794722701145,
+   "B": 28.284201122502097,
+   "C": 22.016376395374238,
+   "D": 47.8183205215128
   }
  },
  "tramo_tasas_base": ">$25,000 Mn"

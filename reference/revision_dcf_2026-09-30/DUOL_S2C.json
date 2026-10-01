@@ -1,0 +1,21 @@
+{
+ "ticker": "DUOL_S2C",
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.9707,
+   "despues": 1.79,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 3.2379,
+   "despues": 1.79,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran)."
+  }
+ ]
+}

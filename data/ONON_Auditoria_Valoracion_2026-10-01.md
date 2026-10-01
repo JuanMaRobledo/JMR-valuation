@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$38,92 | US$38,84 |
-| **DCF Base (valor intrínseco principal)** | US$38,33 | US$38,24 |
-| DCF Conservadora | US$22,96 | US$22,86 |
-| DCF Disrupción | US$14,81 | US$14,71 |
-| DCF Optimista | US$53,37 | US$53,29 |
-| DCF esperado por probabilidades (complemento) | US$34,38 | US$34,28 |
-| Precio con MOS sobre el esperado | US$22,34 | US$22,28 |
+| DCF técnico anterior (caso Base de la hoja) | US$38,92 | US$39,21 |
+| **DCF Base (valor intrínseco principal)** | US$38,33 | US$38,59 |
+| DCF Conservadora | US$22,96 | US$23,01 |
+| DCF Disrupción | US$14,81 | US$14,78 |
+| DCF Optimista | US$53,37 | US$53,78 |
+| DCF esperado por probabilidades (complemento) | US$34,38 | US$34,57 |
+| Precio con MOS sobre el esperado | US$22,34 | US$22,47 |
 
 ## Hallazgos y correcciones
 
@@ -33,6 +33,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Balance del último 10-Q | Balance Sheet L35 | Patrimonio total | 2.061,9 | 2.363,6 | Patrimonio al 30-jun-2026: 1.911,4 MCHF × 1,2366 (6-K 1S26). Antes 2.061,9, el cierre de 2025. |
 | Balance del último 10-Q | Balance Sheet L16 | Activos totales | 3.581,4 | 4.010,2 | Activos totales al 30-jun-2026: 3.242,9 MCHF × 1,2366 (6-K 1S26). |
 | Balance del último 10-Q | Balance Sheet L29 | Pasivos totales | 1.519,5 | 1.646,5 | Pasivos totales al 30-jun-2026: 1.331,5 MCHF × 1,2366 (6-K 1S26). |
+| Ventas/capital contrastado con la historia y la industria | Input sheet B33 |  | 2,20 | 2,62 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 2,77 (con derechos de uso) e industria Shoe 2,62. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | =L13+L22+L34 | Auditoría 1-oct-2026: cambio de caja LTM = operación + inversión + financiación (sin efecto cambiario). Antes −14, un valor de relleno del importador. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 
@@ -56,6 +57,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$38,24 (antes US$38,33). El DCF esperado de las cuatro historias, complementario, es US$34,28 (antes US$34,38); precio con margen de seguridad sobre el esperado US$22,28. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$38,59 (antes US$38,33). El DCF esperado de las cuatro historias, complementario, es US$34,57 (antes US$34,38); precio con margen de seguridad sobre el esperado US$22,47. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

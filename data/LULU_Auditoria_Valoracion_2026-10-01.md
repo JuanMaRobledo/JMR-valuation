@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$182,25 |
-| **DCF Base (valor intrínseco principal)** | US$172,25 | US$187,28 |
-| DCF Conservadora | US$108,35 | US$122,83 |
-| DCF Disrupción | US$71,34 | US$86,06 |
-| DCF Optimista | US$229,97 | US$244,99 |
-| DCF esperado por probabilidades (complemento) | US$148,45 | US$163,26 |
-| Precio con MOS sobre el esperado | US$103,91 | US$114,28 |
+| DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$183,65 |
+| **DCF Base (valor intrínseco principal)** | US$172,25 | US$188,95 |
+| DCF Conservadora | US$108,35 | US$123,14 |
+| DCF Disrupción | US$71,34 | US$85,51 |
+| DCF Optimista | US$229,97 | US$247,76 |
+| DCF esperado por probabilidades (complemento) | US$148,45 | US$164,39 |
+| Precio con MOS sobre el esperado | US$103,91 | US$115,07 |
 
 ## Hallazgos y correcciones
 
@@ -44,6 +44,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 2,50 | 1,80 | Ventas/capital con el capital arrendado: 1/(1/2.5 + 0.1542), con VP de arrendamientos 1711.0 / ventas 11094. |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,150 | 0,165 | Margen en base ajustada por arrendamientos: + 1.46 pp (ajuste del EBIT 161.6 / ventas 11094). |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,210 | 0,225 | Margen en base ajustada por arrendamientos: + 1.46 pp (ajuste del EBIT 161.6 / ventas 11094). |
+| Ventas/capital contrastado con la historia y la industria | Input sheet B32 |  | 1,53 | 1,77 | Ventas/capital revisado (1-oct-2026): historia 3,02 (con arrendamientos) e industria Apparel 1,77. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | 1.117,7 | 233,9 | LTM = ejercicio -177.1 + acumulado al 2026-08-02 -417.5 − acumulado del año anterior -828.5 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes 1117.738. |
 | EPS básico | Income Statement I23 | Basic EPS 2024-01-28 | 12,20 | 12,23 | EPS básico del 10-K (2024-01-28); antes copiaba el diluido. |
 | EPS básico | Income Statement J23 | Basic EPS 2025-02-02 | 14,64 | 14,67 | EPS básico del 10-K (2025-02-02); antes copiaba el diluido. |
@@ -68,6 +69,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$187,28 (antes US$172,25). El DCF esperado de las cuatro historias, complementario, es US$163,26 (antes US$148,45); precio con margen de seguridad sobre el esperado US$114,28. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$188,95 (antes US$172,25). El DCF esperado de las cuatro historias, complementario, es US$164,39 (antes US$148,45); precio con margen de seguridad sobre el esperado US$115,07. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

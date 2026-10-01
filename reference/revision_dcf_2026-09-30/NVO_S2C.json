@@ -1,0 +1,14 @@
+{
+ "ticker": "NVO_S2C",
+ "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 0.45,
+   "despues": 0.57,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 0,57 (capex, intangibles y compras) e industria Drugs (Pharmaceutical) 1,11. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran)."
+  }
+ ]
+}

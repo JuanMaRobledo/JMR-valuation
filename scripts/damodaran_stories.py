@@ -78,7 +78,7 @@ def run_exact(grid, cases):
     insumosDesdeHoja y, por caso, cambios opcionales: anios (crecimiento de cada año 1-5), g (el mismo para
     los años 1-5), m (margen objetivo), wacc, s2c (años 1-5), roic (ROIC después del año 10; 0 = costo de capital),
     tg (crecimiento terminal propio), dk (suma a la tasa de descuento inicial y terminal: WACC o Ke), s2cf (multiplica
-    el ventas/capital de las dos etapas) y shf (multiplica las acciones: dilución). Con detalle=True devuelve el puente completo (flujos, terminal, patrimonio)."""
+    el ventas/capital de las dos etapas), shf (multiplica las acciones: dilución) y set (sobrescribe insumos del motor). Con detalle=True devuelve el puente completo (flujos, terminal, patrimonio)."""
     js = ("const fs=require('fs'),vm=require('vm');const c={};vm.createContext(c);"
           f"vm.runInContext(fs.readFileSync({json.dumps(str(ENGINE))},'utf8'),c);"
           "const G=JSON.parse(fs.readFileSync(0,'utf8'));"
@@ -93,6 +93,7 @@ def run_exact(grid, cases):
           "if(k.dk!=null){if(i.dcfFinanciero){i.costoPatrimonio+=k.dk;i.dcfFinanciero.terminalKe+=k.dk;}"
           "else{const t=typeof i.terminalWacc==='number'?i.terminalWacc:i.riskFreeRate+i.matureMarketERP;i.wacc+=k.dk;i.terminalWacc=t+k.dk;}}"
           "if(k.s2cf!=null){i.salesToCapital*=k.s2cf;i.salesToCapital2*=k.s2cf;}if(k.shf!=null)i.shares0*=k.shf;"
+          "if(k.set)Object.assign(i,k.set);"
           "const margin=k.m!=null?k.m:(i.dcfFinanciero?i.dcfFinanciero.roeBase:i.marginBase);"
           "if(k.detalle){const d=c.runDCFDetalle(i,i.growthBase,margin,i.growthY1Base,i.marginY1Base);"
           "const f=i.dcfFinanciero,fl=d.fcff||d.fcfe,disc=[1];for(let n=1;n<=10;n++)disc[n]=disc[n-1]/(1+d.wacc[n]);"

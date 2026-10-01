@@ -2,11 +2,11 @@
  "fecha": "2026-10-01",
  "umbral": 0.02,
  "precio": 29.61,
- "dcfHoy": 38.83802871902853,
+ "dcfHoy": 39.208310151950386,
  "dcfInverso": {
-  "gImplicito": 0.08351434570870919,
+  "gImplicito": 0.0818679190329008,
   "gDcf": 0.14800000000000002,
-  "dif": -0.06448565429129083,
+  "dif": -0.06613208096709922,
   "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
  },
  "gDcf": {
@@ -25,60 +25,60 @@
   {
    "metodo": "EV/EBITDA",
    "multiplo": 17.07,
-   "multiploDcf": 15.91350524497357,
+   "multiploDcf": 16.072035464625987,
    "gImplicito": 0.0560611738069633,
-   "gDcf": 0.05298727464570473,
-   "dif": 0.003073899161258574,
-   "difValor": 0.06955147798408912,
+   "gDcf": 0.05343368964339469,
+   "dif": 0.0026274841635686094,
+   "difValor": 0.05945068424121125,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "EV/FCFF",
    "multiplo": 23.94,
-   "multiploDcf": 22.2760673927644,
+   "multiploDcf": 22.49798140871525,
    "gImplicito": 0.056141000097081645,
-   "gDcf": 0.05298727464570471,
-   "dif": 0.003153725451376932,
-   "difValor": 0.07148678350777793,
+   "gDcf": 0.05343368964339469,
+   "dif": 0.0027073104536869536,
+   "difValor": 0.06136771283075859,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "P/E",
    "multiplo": 19.38,
-   "multiploDcf": 30.518811163357356,
+   "multiploDcf": 30.809777247408448,
    "gImplicito": 0.0715013208795398,
-   "gDcf": 0.0884057303785894,
-   "dif": -0.016904409499049602,
-   "difValor": -0.364981817402221,
+   "gDcf": 0.08866673279196656,
+   "dif": -0.017165411912426765,
+   "difValor": -0.37097889918596727,
    "aplica": true,
-   "lectura": "Revisar: el múltiplo vale 36% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
+   "lectura": "Revisar: el múltiplo vale 37% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
   },
   {
    "metodo": "P/FCFE",
    "multiplo": 20.17,
-   "multiploDcf": 26.080072512037113,
+   "multiploDcf": 26.328719699831474,
    "gImplicito": 0.06075906943788379,
-   "gDcf": 0.07223674228973666,
-   "dif": -0.011477672851852867,
-   "difValor": -0.22661257975066407,
+   "gDcf": 0.07261080649848863,
+   "dif": -0.011851737060604835,
+   "difValor": -0.23391641409251251,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "P/OCF",
    "multiplo": 17.6,
-   "multiploDcf": 24.952799841003117,
+   "multiploDcf": 25.19069962081383,
    "gImplicito": 0.056422973586134,
-   "gDcf": 0.07258334338982515,
-   "dif": -0.016160369803691156,
-   "difValor": -0.2946683293199347,
+   "gDcf": 0.07295437289451422,
+   "dif": -0.01653139930838022,
+   "difValor": -0.30132944837077924,
    "aplica": true,
-   "lectura": "Revisar: el múltiplo vale 29% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
+   "lectura": "Revisar: el múltiplo vale 30% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
   }
  ],
- "dcfFy3": 53.59846089682876,
+ "dcfFy3": 54.10946816362034,
  "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
  "alertas": 2
 }

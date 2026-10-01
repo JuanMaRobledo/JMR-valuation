@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$182,25 a US$194,34. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
+  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$183,65 a US$195,77. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
  },
  "historias": [
   {
@@ -224,7 +224,7 @@
   "texto": "El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles (40% de la producción en Vietnam, 9% en Camboya). La hoja supone 14% el próximo año y 18,5% de objetivo. Las historias van de 10% (declive de marca) a 21% (recuperación); volver a 23% no está en ninguna."
  },
  "reinversion": {
-  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Ventaja que se desvanece: marca premium de 27 años, pero con comparables de −10% a −12% en Norteamérica, rebajas y un ROIC que bajó de 52% a 27%. El ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (15,8%)."
+  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 1,77 (años 1-5) y 1,80 después, con los arrendamientos incluidos: el promedio de Apparel según Damodaran es 1,77 y la historia reciente, 3,02. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Ventaja que se desvanece: marca premium de 27 años, pero con comparables de −10% a −12% en Norteamérica, rebajas y un ROIC que bajó de 52% a 27%. El ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (15,8%)."
  },
  "prob_texto": "Base (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. Conservadora (35%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como Base. Disrupción (10%) es el declive de una marca de moda. Optimista (15%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -321,7 +321,7 @@
   ],
   [
    "Reinversión: tiendas propias, ahora con alquileres dentro.",
-   "lululemon invierte ~US$650-690 millones al año en tiendas y centros de distribución. Al tratar los alquileres como deuda (~US${arr_vp} millones de valor presente), el ventas/capital baja a {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital propio y arrendado. Con ingresos planos, abrir tiendas afuera solo crea valor si mantienen la productividad histórica. El ROIC bajó de 52% a ~30%: la ventaja existe pero se desvanece, así que el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria. Si la ventaja desapareciera, la Base valdría {s_roic}."
+   "lululemon invierte ~US$650-690 millones al año en tiendas y centros de distribución. Al tratar los alquileres como deuda (~US${arr_vp} millones de valor presente), el capital incluye las tiendas arrendadas. Revisión del 1-oct-2026: el ventas/capital de los años 1–5 había quedado en 1,53, por debajo de la historia (3,02, con capex neto y tiendas arrendadas nuevas) y del promedio de Apparel según Damodaran (1,77); ahora usa {s2c1}× en los años 1–5 y {s2c2}× después, el borde prudente de ese rango. Cada dólar de ventas nuevas exige ~US${cap1} de capital propio y arrendado. Con ingresos planos, abrir tiendas afuera solo crea valor si mantienen la productividad histórica. El ROIC bajó de 52% a ~30%: la ventaja existe pero se desvanece, así que el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria. Si la ventaja desapareciera, la Base valdría {s_roic}."
   ],
   [
    "Descuento.",

@@ -252,16 +252,16 @@
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM."
   },
   "PLTR": {
-   "fuentes": "Costos de cambio en gobierno",
-   "evidencia": "ROIC con plusvalía de 5-12% en 2025-LTM, cerca del costo de capital; serie poco confiable",
-   "amenaza": "Comoditización (Disrupción, 10%); revisar cuando haya 3 años de datos limpios",
+   "fuentes": "Costos de cambio: plataformas integradas en los procesos de defensa, inteligencia y grandes empresas (Gotham, Foundry, AIP)",
+   "evidencia": "ROIC sobre el capital operativo (sin la caja) muy por encima del costo de capital en 2023-2025 y LTM: el negocio casi no necesita capital; el 5-12% anterior incluía la caja en el capital, contra el criterio de Damodaran",
+   "amenaza": "Comoditización (Disrupción, 10%); serie de tres años: revisar si el ROIC cae con la escala",
    "roic_actual": 1.5003,
    "roic_industria": 0.2932,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0923,
-   "roic_terminal": null,
+   "roic_terminal": 0.293,
    "roic_terminal_antes": null,
-   "ventaja": "sin ventaja defendible",
+   "ventaja": "ventaja durable",
    "referencia": 0.2932,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM."
   },

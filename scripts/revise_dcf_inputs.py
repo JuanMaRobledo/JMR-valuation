@@ -323,9 +323,36 @@ def _roic_nota(m: dict) -> str:
 
 # MSFT (1-oct-2026): el ROIC actual sube a 26,5% al corregir el conversor de I+D y sigue bajo el de la industria.
 # 1-oct-2026: ROIC actual con capital operativo y balance del último 10-Q (auditoría de estados).
-for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT", "GOOG", "INTU", "NKE", "PYPL", "ADBE"):
+# PLTR (1-oct-2026, segunda revisión): la evidencia anterior incluía la caja en el capital; sin ella el ROIC supera al
+# costo de capital desde 2023 (tres años) y pasa a ventaja durable.
+for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT", "GOOG", "INTU", "NKE", "PYPL", "ADBE", "PLTR"):
     _m = _MOAT[_t]
     CHANGES[f"{_t}_ROIC"] = [(IS, "B49", "Yes", _roic_nota(_m)), (IS, "B50", _m["roic_terminal"], _roic_nota(_m))]
+
+
+# Segunda revisión del 1-oct-2026 (aprobada por el usuario).
+# Ventas/capital: el supuesto debe quedar dentro del rango que respaldan la historia de la empresa (últimos tres
+# ejercicios: ventas nuevas / (capex − depreciación + compras + I+D neto capitalizado + capital arrendado nuevo), SEC)
+# y el promedio de su industria (Damodaran, ene-2026, incluye arrendamientos). Si se aparta más de 10%, se lleva al
+# borde más cercano. Solo se aplica donde la historia es comparable (capex neto positivo).
+_S2C = {"SHAK": (1.51, 1.51, "historia 2023-2025 1,54 (con arrendamientos) e industria Restaurant/Dining 1,51"),
+        "CMG": (1.51, 1.51, "historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51"),
+        "LULU": (1.77, None, "historia 3,02 (con arrendamientos) e industria Apparel 1,77"),
+        "NVO": (0.57, None, "historia 2023-2025 0,57 (capex, intangibles y compras) e industria Drugs (Pharmaceutical) 1,11"),
+        "ONON": (None, 2.62, "historia 2023-2025 2,77 (con derechos de uso) e industria Shoe 2,62"),
+        "DUOL": (1.79, 1.79, "historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35")}
+for _t, (_a, _b, _ev) in _S2C.items():
+    _why = (f"Ventas/capital revisado (1-oct-2026): {_ev}. El valor anterior quedaba fuera de ese rango por más de 10%; "
+            "se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).")
+    CHANGES[f"{_t}_S2C"] = [(IS, c, v, _why) for c, v in (("B32", _a), ("B33", _b)) if v is not None]
+
+# Acciones: dilución y estructura de capital (segunda revisión del 1-oct-2026).
+CHANGES["PLTR_ACCIONES"] = [(IS, "B22", "='Income Statement'!L27+168,9", "Acciones con dilución: 2.402,9 millones más 168,9 millones de opciones y "
+                             "acciones restringidas (diluidas − básicas del 2T26, 10-Q). La hoja no restaba el valor de las opciones.")]
+CHANGES["SHAK_ACCIONES"] = [(IS, "B22", 42.80, "Acciones totalmente canjeadas: 40,41 millones clase A y 2,39 millones clase B "
+                             "(LLC Interests) al 29-jul-2026 (10-Q). La clase B es la participación minoritaria."),
+                            (IS, "B21", 0, "La participación minoritaria son las LLC Interests (clase B), ya incluidas en las "
+                             "acciones totalmente canjeadas: restarla además las contaría dos veces.")]
 
 
 def main(argv: list[str]) -> int:
@@ -369,3 +396,4 @@ def main(argv: list[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
+
