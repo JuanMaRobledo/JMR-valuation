@@ -1,0 +1,154 @@
+{
+ "ticker": "ZTS",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L4",
+   "antes": 0,
+   "despues": 200,
+   "motivo": "Inversiones de corto plazo al 30-jun-2026 (10-Q 2T26); antes 0.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L5",
+   "antes": 1476,
+   "despues": 1676,
+   "motivo": "Caja 1.476 + inversiones de corto plazo 200 al 30-jun-2026 (10-Q).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 9042,
+   "despues": 9048,
+   "motivo": "Deuda de largo plazo al 30-jun-2026 (10-Q); antes 9.042.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 196,
+   "despues": 190,
+   "motivo": "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 196.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 3331,
+   "despues": 3148,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 3.331, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 3331,
+   "despues": 3148,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 3.331, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L13",
+   "fila": "Cash from Operating Activities",
+   "antes": 2887,
+   "despues": 2840.0,
+   "motivo": "LTM = ejercicio 2904.0 + acumulado al 2026-06-30 1056.0 − acumulado del año anterior 1120.0 (NetCashProvidedByUsedInOperatingActivities). Antes 2887.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L22",
+   "fila": "Cash from Investing Activities",
+   "antes": -713,
+   "despues": -720.0,
+   "motivo": "LTM = ejercicio -748.0 + acumulado al 2026-06-30 -387.0 − acumulado del año anterior -415.0 (NetCashProvidedByUsedInInvestingActivities). Antes -713.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": -167.0,
+   "motivo": "LTM = ejercicio 325.0 + acumulado al 2026-06-30 -974.0 − acumulado del año anterior -482.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2023-12-31",
+   "antes": 5.07,
+   "despues": 5.08,
+   "motivo": "EPS básico del 10-K (2023-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2025-12-31",
+   "antes": 6.02,
+   "despues": 6.03,
+   "motivo": "EPS básico del 10-K (2025-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "Arrendamientos operativos: la deuda del DCF incluye 190,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,46 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 190,
+  "acciones": 413.2,
+  "efecto_por_accion": 0.45982575024201355
+ },
+ "antes": {
+  "dcfTecnico": 117.29900955285687,
+  "valorEsperado": 95.1520739613164,
+  "precioMOS": 61.84884807485567,
+  "historias": {
+   "A": 118.15986684157774,
+   "B": 65.09490216716658,
+   "C": 45.95834385092575,
+   "D": 136.72718054056284
+  }
+ },
+ "despues": {
+  "dcfTecnico": 117.7953913,
+  "valorEsperado": 95.6361010668343,
+  "precioMOS": 62.1634656934423,
+  "historias": {
+   "A": 118.64389394709565,
+   "B": 65.57892927268449,
+   "C": 46.44237095644366,
+   "D": 137.21120764608074
+  }
+ },
+ "tramo_tasas_base": "$4,500-7,000 Mn"
+}

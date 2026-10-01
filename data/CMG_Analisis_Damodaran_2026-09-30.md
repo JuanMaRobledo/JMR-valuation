@@ -9,6 +9,8 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$24,28; la historia central A vale US$25,24 y el rango es US$11,71–32,88. El MOS 35% se aplica al esperado: US$15,78. El antiguo caso Base de la hoja (US$28,19) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, eps básico, flujos ltm, roic terminal (criterio damodaran) (6 celdas, con respaldo). Valor esperado US$24,28 → US$24,28. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$28,19 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
@@ -26,16 +28,16 @@ Chipotle es una cadena de comida mexicana rápida-casual con 4.186 locales propi
 
 ### Visión externa: tasas base
 
-Con ventas LTM de US$12.424 millones, la empresa está en el tramo **$12,000-25,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 3,3% y una mediana de 2,9% (desviación estándar 8,9%); sumando una inflación de 2,5%, la mediana nominal ronda 5,4%.
+Con ventas LTM de US$12.424 millones (US$8.791 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **$7,000-12,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 3,9% y una mediana de 3,5% (desviación estándar 8,3%); sumando una inflación de 2,5%, la mediana nominal ronda 6,0%.
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · Crece por aperturas con comparables bajas | 7,2% | 38% |
-| B · Tráfico débil y margen presionado | 5,0% | 53% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 2,6% | 69% |
-| D · Vuelve el tráfico | 10,2% | 25% |
+| A · Crece por aperturas con comparables bajas | 7,2% | 43% |
+| B · Tráfico débil y margen presionado | 5,0% | 57% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | 2,6% | 72% |
+| D · Vuelve el tráfico | 10,2% | 28% |
 
-Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (historia A) lo logró ~38%; 10,2% (historia D), ~25%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).
+En dólares de 2015 la empresa está en el tramo de US$7.000-12.000 millones: crecer 7,2% anual cinco años (historia A) lo logró ~43% de las empresas de ese tamaño; 10,2% (historia D), ~28%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).
 
 
 ### Piezas del valor
@@ -53,7 +55,7 @@ Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (histo
 
 **Reinversión y retorno.** Todo el crecimiento es propio: cada local nuevo se paga con caja (capex de US$560-670 millones al año). La hoja usa un sales-to-capital de 2,6 (años 1-5) y 2,2 (años 6-10). El retorno sobre el capital es alto (los locales se pagan en 2-3 años), así que el crecimiento crea valor mientras la economía unitaria se sostenga. La empresa además recompró US$2.783 millones LTM. Ventaja durable: marca probada de 30 años que superó la crisis sanitaria de 2015-2016, con ROIC (con arrendamientos) de 15-22%. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Riesgo.** La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) sin deuda financiera da 0,78, y el DCF técnico anterior sube de US$28,19 a US$30,57. Hay una razón para no bajar tanto: los arrendamientos son deuda operativa que el modelo trata como gasto, y ese apalancamiento operativo sube el riesgo real del patrimonio. La beta de la hoja es defendible.
+**Riesgo.** La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) sin deuda financiera da 0,78, y el DCF técnico anterior sube de US$28,19 a US$30,57 Hay una razón para no bajar tanto: los arrendamientos son deuda operativa que el modelo trata como gasto, y ese apalancamiento operativo sube el riesgo real del patrimonio. La beta de la hoja es defendible.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
@@ -77,7 +79,7 @@ Ventas/capital: 2,6x en años 1–5 y 2,2x en 6–10. WACC: 9,9%. Ke: 9,9%. Impu
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja durable | 53,1% | 18,4% | 9,0% | 18,4% | US$28,19 | US$20,79 |
+| Ventaja durable | 97,0% | 18,4% | 9,0% | 18,4% | US$28,19 | US$20,79 |
 
 Fuentes de ventaja: Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior. Evidencia: ROIC 15-22% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
@@ -313,8 +315,8 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 15% | Margen 17% | Margen 19% |
 |---|---:|---:|---:|
-| Beta 1,10 | 13,1% (14% de las empresas) | 10,5% (24% de las empresas) | 8,3% (33% de las empresas) |
-| Beta 0,78 | 11,4% (20% de las empresas) | 8,8% (30% de las empresas) | 6,7% (42% de las empresas) |
+| Beta 1,10 | 13,1% (16% de las empresas) | 10,5% (27% de las empresas) | 8,3% (37% de las empresas) |
+| Beta 0,78 | 11,4% (22% de las empresas) | 8,8% (34% de las empresas) | 6,7% (46% de las empresas) |
 
 Frente al valor esperado de las historias (US$24,28 con la beta de la hoja; US$26,30 con la propuesta), el precio está por encima en 31% y por encima en 21%, respectivamente. El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 13% por encima del DCF técnico anterior (US$28,19) y cerca de la historia D (US$32,88), la más optimista. El DCF inverso pide 7-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-42% de las empresas de este tamaño; con el margen objetivo de 17% y la beta de la hoja pide 10,5%, algo más que el 8% de la hoja. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).
 

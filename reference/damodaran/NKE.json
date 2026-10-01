@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$33,96 a US$33,09. Diferencia menor: el riesgo está en el margen."
+  "texto": "La hoja usa una beta de 1,00. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada con la deuda de Nike da 1,12; el DCF Base baja de US$34,27 a US$33,39 Diferencia menor: el riesgo está en el margen."
  },
  "historias": [
   {
@@ -170,7 +170,7 @@
    "Baja-media"
   ]
  ],
- "tasas_base_nota": "Para empresas de más de US$25.000 millones, crecer 3,1% anual cinco años (historia A) lo logró ~61%: la hoja no pide crecimiento. El valor de Nike depende del margen: pasar de 6% a 11% vale más que cualquier escenario razonable de ventas.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 3,1% anual cinco años (historia A) lo logró ~61% de las empresas de ese tamaño; 4,7% (historia D), ~50%. La hoja no pide crecimiento. El valor de Nike depende del margen: pasar de 6% a 11% vale más que cualquier escenario razonable de ventas.",
  "crecimiento": {
   "texto": "Ingresos de US$51.362 millones (FY24, +0,3%), US$46.309 millones (FY25, −9,8%) y US$46.398 millones (FY26, +0,2%; −2% sin divisas). En FY26 el calzado facturó US$30.538 millones (−1,4%), la indumentaria US$13.497 millones (+3,5%) y el equipamiento US$2.220 millones; EE.UU. fue el 44%. La hoja supone −2% el próximo año y 3,5% después.",
   "tabla": {
@@ -218,7 +218,7 @@
   "texto": "El margen operativo cayó de 12,3% a ~8% (6,1% en el EBIT LTM de la hoja) por rebajas para limpiar inventario, desapalancamiento y aranceles; el margen bruto subyacente fue 40,8% en FY26 frente a 43-46% histórico. La hoja supone 6,5% el próximo año y 11% en siete años. Las historias van de 6% a 13,5%."
  },
  "reinversion": {
-  "texto": "Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Ventaja que se desvanece: marca probada y escala global, pero con ventas en caída, descuentos y un ROIC que bajó de 47% a 18%. El ROIC después del año 10 es 11,2%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (20,9%), limitado a su ROIC actual (13,3%)."
+  "texto": "Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Ventaja que se desvanece: marca probada y escala global, pero con ventas en caída, descuentos y un ROIC que bajó de 47% a 18%. El ROIC después del año 10 es 11,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (20,9%), limitado a su ROIC actual (13,3%)."
  },
  "prob_texto": "A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (5%) es un deterioro estructural por aranceles y competencia. D (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [

@@ -37,9 +37,25 @@ def usd(v):
     return "US$" + es(v) if isinstance(v, (int, float)) else "—"
 
 
+ETIQUETA = {"L3": "Caja", "L4": "Inversiones de corto plazo", "L5": "Caja y valores negociables", "L14": "Inversiones no operativas",
+            "L16": "Activos totales", "L20": "Deuda corriente", "L21": "Arrendamientos corrientes", "L25": "Deuda de largo plazo",
+            "L26": "Arrendamientos de largo plazo", "L29": "Pasivos totales", "L34": "Patrimonio de los accionistas",
+            "L35": "Patrimonio total", "B15": "Patrimonio (DCF)", "B16": "Deuda (DCF)", "B20": "Activos no operativos (DCF)",
+            "B21": "Minoritarios (DCF)", "B49": "¿ROIC terminal propio?", "B50": "ROIC después del año 10", "B41": "Capital invertido",
+            "B12": "I+D año −1", "B13": "I+D año −2", "B14": "I+D año −3", "B15RD": "I+D año −4", "B16RD": "I+D año −5"}
+
+
+def concepto(c):
+    if c.get("fila"):
+        return c["fila"]
+    if c["hoja"] == "R& D converter" and c["celda"] in ("B15", "B16"):
+        return ETIQUETA[c["celda"] + "RD"]
+    return ETIQUETA.get(c["celda"], "")
+
+
 def fmt(v):
     if isinstance(v, (int, float)):
-        return es(v, 2 if abs(v) < 100 else 1)
+        return es(v, 3) if abs(v) < 1 and v != 0 else es(v, 2 if abs(v) < 100 else 1)
     return str(v)[:60] if v not in (None, "") else "—"
 
 
@@ -145,7 +161,9 @@ def markdown(a: dict, empresa: str) -> str:
     if a["cambios"]:
         L += ["| Tipo | Hoja y celda | Concepto | Antes | Después | Motivo |", "|---|---|---|---:|---:|---|"]
         for c in a["cambios"]:
-            L.append(f"| {c['tipo']} | {c['hoja']} {c['celda']} | {c.get('fila', '')} | {fmt(c['antes'])} | {fmt(c['despues'])} | "
+            if c["antes"] == c["despues"]:
+                continue
+            L.append(f"| {c['tipo']} | {c['hoja']} {c['celda']} | {concepto(c)} | {fmt(c['antes'])} | {fmt(c['despues'])} | "
                      f"{c['motivo'].replace('|', '/')} |")
     else:
         L.append("Sin correcciones de datos: los estados de la hoja coinciden con la SEC en las filas revisadas.")

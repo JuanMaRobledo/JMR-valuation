@@ -1,0 +1,109 @@
+{
+ "ticker": "SHAK",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 575.1,
+   "despues": 622,
+   "motivo": "Arrendamientos operativos de largo plazo al 1-jul-2026 (10-Q 2T26); antes 575,1.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 525.3,
+   "despues": 544,
+   "motivo": "Patrimonio de los accionistas al 1-jul-2026 (10-Q); antes 525,3, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 525.3,
+   "despues": 572,
+   "motivo": "Patrimonio total con minoritarios al 1-jul-2026 (10-Q).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B15",
+   "antes": "='Balance Sheet'!L35",
+   "despues": "='Balance Sheet'!L34",
+   "motivo": "Patrimonio de los accionistas (sin minoritarios, que se restan aparte).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B21",
+   "antes": 0,
+   "despues": 27,
+   "motivo": "Participaciones minoritarias al 1-jul-2026 (10-Q 2T26); antes 0.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": -28.8,
+   "motivo": "LTM = ejercicio 39.4 + acumulado al 2026-07-01 -52.2 − acumulado del año anterior 16.1 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": false,
+  "conversor": "No",
+  "arrendamientos": 622,
+  "acciones": 41.8,
+  "efecto_por_accion": 0.0
+ },
+ "antes": {
+  "dcfTecnico": 20.93444720950923,
+  "valorEsperado": 18.710564825535407,
+  "precioMOS": 12.161867136598016,
+  "historias": {
+   "A": 20.995837455280007,
+   "B": 10.044869457821695,
+   "C": 7.903293282626252,
+   "D": 36.3909853670018
+  }
+ },
+ "despues": {
+  "dcfTecnico": 20.29776007,
+  "valorEsperado": 18.064631811181343,
+  "precioMOS": 11.742010677267873,
+  "historias": {
+   "A": 20.349904440925943,
+   "B": 9.39893644346763,
+   "C": 7.257360268272185,
+   "D": 35.74505235264773
+  }
+ },
+ "tramo_tasas_base": "$700-1,250 Mn"
+}

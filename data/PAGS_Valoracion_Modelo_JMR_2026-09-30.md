@@ -79,7 +79,7 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran · FCFE | 40% | US$16,88 | US$17,99 | US$19,26 |
+| DCF Damodaran | 40% | US$16,88 | US$17,99 | US$19,26 |
 | EV/EBITDA | 0% | US$8,96 | US$11,62 | US$14,47 |
 | EV/FCFF | 0% | US$2,64 | US$2,21 | US$1,74 |
 | P/E | 35% | US$11,02 | US$17,63 | US$24,79 |
@@ -115,14 +115,14 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$9,02 supone que los ingresos crecen -4,4% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,8% (−10,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$8,96 supone que los ingresos crecen -15,4% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,8% (−21,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$17,99 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 14,7%, WACC de los años 4-10 13,5%, ROE de FY+3 17,9% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 3,0x | — | — | — | — | — | No aplica: peso cero en la categoría financiera. |
-| EV/FCFF | 2,5x | — | — | — | — | — | No aplica: peso cero en la categoría financiera. |
+| EV/EBITDA | 3,0x | — | — | — | — | — | No aplica: PagSeguro es una entidad financiera (PagBank): la deuda es materia prima del negocio, no financiación, y el valor empres |
+| EV/FCFF | 2,5x | — | — | — | — | — | No aplica: Igual que EV/EBITDA: para una financiera el FCFF no se puede separar de la financiación; peso 0%. |
 | P/E | 9,2x | 9,5x | −2% | 8,6% | 9,0% | −0,3 pp | Coherente con el DCF. |
 | P/FCFE | 7,9x | 41,0x | −75% | 1,8% | 12,0% | −10,2 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 75% por debajo del DCF en FY+3. |
 | P/OCF | 3,3x | 7,2x | −51% | 8,8% | 12,0% | −3,1 pp | Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 51% por debajo del DCF en FY+3. |

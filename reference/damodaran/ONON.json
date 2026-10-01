@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF Base sube de US$38,92 a US$42,57. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y C que en la beta."
+  "texto": "La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF Base sube de US$38,84 a US$42,47 Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y C que en la beta."
  },
  "historias": [
   {
@@ -140,7 +140,7 @@
    "Media-baja"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$3.000-4.500 millones, crecer 15% anual cinco años (historia A) lo logró ~17%; 19% (historia D), ~9%. On ya está en ese grupo desde 2021, y su baja participación global le deja espacio, pero la visión externa recuerda que pocas marcas sostienen tanto crecimiento cuando dejan de ser nicho.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 14,9% anual cinco años (historia A) lo logró ~18% de las empresas de ese tamaño; 18,8% (historia D), ~10%. On ya está en ese grupo desde 2021, y su baja participación global le deja espacio, pero la visión externa recuerda que pocas marcas sostienen tanto crecimiento cuando dejan de ser nicho.",
  "crecimiento": {
   "texto": "En dólares (hoja): US$1.994 millones (2023, +55,8%), US$2.634 millones (2024, +32,1%) y US$3.627 millones (2025, +37,7%); LTM US$4.059 millones. En el 2T26 el crecimiento a tipo constante fue 21,6% y en francos 13,5% (el franco restó ~8 pp). La hoja supone 18% el próximo año y 14% en los años 2-5. La división de las historias usa el peso del canal directo (45,7%) y mayorista (54,3%) del 2T26.",
   "tabla": {

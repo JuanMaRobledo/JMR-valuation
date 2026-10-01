@@ -1,0 +1,185 @@
+{
+ "ticker": "GOOG",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L4",
+   "antes": 0,
+   "despues": 186563,
+   "motivo": "Valores negociables al 30-jun-2026 (10-Q 2T26); antes 0: la caja del DCF omitía los valores negociables.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L5",
+   "antes": 55911,
+   "despues": 242474,
+   "motivo": "Caja y valores negociables al 30-jun-2026 = 55.911 + 186.563 (10-Q).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L14",
+   "antes": 0,
+   "despues": 131461,
+   "motivo": "Valores no negociables y otras inversiones de largo plazo al 30-jun-2026 (10-Q); antes 0: son activos no operativos.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L20",
+   "antes": 1996,
+   "despues": 1999,
+   "motivo": "Porción corriente de la deuda al 30-jun-2026 (10-Q).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 46547,
+   "despues": 98165,
+   "motivo": "Deuda de largo plazo al 30-jun-2026 (10-Q); antes 46.547, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L21",
+   "antes": null,
+   "despues": 3446,
+   "motivo": "Arrendamientos operativos corrientes al 30-jun-2026 = 18.037 − 14.591 (10-Q).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 12744,
+   "despues": 14591,
+   "motivo": "Arrendamientos operativos de largo plazo al 30-jun-2026 (10-Q); antes 12.744.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 415265,
+   "despues": 640480,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 415265,
+   "despues": 640480,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Escala y efectos de red en búsqueda, YouTube y Android; datos. Evidencia: ROIC 24-31% en 2021-2026. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (31,3%): 29,3% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.286,
+   "despues": 0.293,
+   "motivo": "Ventaja durable: Escala y efectos de red en búsqueda, YouTube y Android; datos. Evidencia: ROIC 24-31% en 2021-2026. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (31,3%): 29,3% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": 34875.0,
+   "motivo": "LTM = ejercicio 7242.0 + acumulado al 2026-06-30 25203.0 − acumulado del año anterior -2430.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2023-12-31",
+   "antes": 5.8,
+   "despues": 5.84,
+   "motivo": "EPS básico del 10-K (2023-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2024-12-31",
+   "antes": 8.04,
+   "despues": 8.13,
+   "motivo": "EPS básico del 10-K (2024-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2025-12-31",
+   "antes": 10.81,
+   "despues": 10.91,
+   "motivo": "EPS básico del 10-K (2025-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "Arrendamientos operativos: la deuda del DCF incluye 18.037,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$1,47 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 18037,
+  "acciones": 12230,
+  "efecto_por_accion": 1.4748160261651677
+ },
+ "antes": {
+  "dcfTecnico": 311.5481720414428,
+  "valorEsperado": 251.34600016432722,
+  "precioMOS": 163.3749001068127,
+  "historias": {
+   "A": 298.80595512442505,
+   "B": 141.09616201552234,
+   "C": 110.41303591320177,
+   "D": 399.93811111848174
+  }
+ },
+ "despues": {
+  "dcfTecnico": 334.8036765,
+  "valorEsperado": 274.02040568199186,
+  "precioMOS": 178.11326369329473,
+  "historias": {
+   "A": 321.9463153186606,
+   "B": 162.7447935742507,
+   "C": 131.9859181357954,
+   "D": 423.7889672029782
+  }
+ },
+ "tramo_tasas_base": ">$50,000 Mn"
+}

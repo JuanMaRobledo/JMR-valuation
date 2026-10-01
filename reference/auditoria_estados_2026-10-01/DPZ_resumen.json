@@ -1,0 +1,171 @@
+{
+ "ticker": "DPZ",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L20",
+   "antes": 6.1,
+   "despues": 7,
+   "motivo": "Porción corriente de deuda y arrendamientos financieros al 14-jun-2026 (10-Q 2T26).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 4810.7,
+   "despues": 4876,
+   "motivo": "Deuda de largo plazo con arrendamientos financieros al 14-jun-2026 (10-Q 2T26); antes 4.810,7, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L14",
+   "antes": 0,
+   "despues": 28,
+   "motivo": "Valores negociables de largo plazo al 14-jun-2026 (10-Q); antes 0.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": -3901.1,
+   "despues": -3982,
+   "motivo": "Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": -3901.1,
+   "despues": -3982,
+   "motivo": "Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "antes": 4816.8,
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+   "motivo": "Deuda financiera al 14-jun-2026 (antes 4.816,8 fijo, del cierre de 2025). Sin arrendamientos operativos, como antes.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L13",
+   "fila": "Cash from Operating Activities",
+   "antes": 792.1,
+   "despues": 777.8,
+   "motivo": "LTM = ejercicio 792.1 + acumulado al 2026-06-14 352.6 − acumulado del año anterior 366.9 (NetCashProvidedByUsedInOperatingActivities). Antes 792.1.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L22",
+   "fila": "Cash from Investing Activities",
+   "antes": -70.2,
+   "despues": -109.6,
+   "motivo": "LTM = ejercicio -70.2 + acumulado al 2026-06-14 -24.6 − acumulado del año anterior 14.8 (NetCashProvidedByUsedInInvestingActivities). Antes -70.2.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L34",
+   "fila": "Cash from Financing Activities",
+   "antes": -752.1,
+   "despues": -805.1,
+   "motivo": "LTM = ejercicio -752.1 + acumulado al 2026-06-14 -314.3 − acumulado del año anterior -261.3 (NetCashProvidedByUsedInFinancingActivities). Antes -752.1.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": -137.8,
+   "motivo": "LTM = ejercicio -28.4 + acumulado al 2026-06-14 12.8 − acumulado del año anterior 122.2 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2023-12-31",
+   "antes": 14.66,
+   "despues": 14.8,
+   "motivo": "EPS básico del 10-K (2023-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2024-12-29",
+   "antes": 16.69,
+   "despues": 16.83,
+   "motivo": "EPS básico del 10-K (2024-12-29); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2025-12-28",
+   "antes": 17.57,
+   "despues": 17.69,
+   "motivo": "EPS básico del 10-K (2025-12-28); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": false,
+  "conversor": "No",
+  "arrendamientos": 183.9,
+  "acciones": 33.1,
+  "efecto_por_accion": 0.0
+ },
+ "antes": {
+  "dcfTecnico": 349.8471386530062,
+  "valorEsperado": 308.74757449876313,
+  "precioMOS": 200.68592342419603,
+  "historias": {
+   "A": 352.1440186585945,
+   "B": 172.24184597497035,
+   "C": 108.74203181067823,
+   "D": 420.890010425947
+  }
+ },
+ "despues": {
+  "dcfTecnico": 348.9441242,
+  "valorEsperado": 307.8506500355493,
+  "precioMOS": 200.10292252310703,
+  "historias": {
+   "A": 351.27538636065276,
+   "B": 171.2565964682136,
+   "C": 107.71663593963918,
+   "D": 420.06487970593747
+  }
+ },
+ "tramo_tasas_base": "$3,000-4,500 Mn"
+}

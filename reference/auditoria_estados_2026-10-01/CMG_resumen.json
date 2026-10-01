@@ -1,0 +1,103 @@
+{
+ "ticker": "CMG",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior. Evidencia: ROIC 15-22% en 2021-2026. ROIC después del año 10 = el promedio de la industria (18,4%), sin superar el ROIC actual (53,1%): 18,4% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.137,
+   "despues": 0.184,
+   "motivo": "Ventaja durable: Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior. Evidencia: ROIC 15-22% en 2021-2026. ROIC después del año 10 = el promedio de la industria (18,4%), sin superar el ROIC actual (53,1%): 18,4% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": -611.5,
+   "motivo": "LTM = ejercicio -392.5 + acumulado al 2026-06-30 -122.2 − acumulado del año anterior 96.8 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2024-12-31",
+   "antes": 1.11,
+   "despues": 1.12,
+   "motivo": "EPS básico del 10-K (2024-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2025-12-31",
+   "antes": 1.14,
+   "despues": 1.15,
+   "motivo": "EPS básico del 10-K (2025-12-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": false,
+  "conversor": "No",
+  "arrendamientos": 4773.4,
+  "acciones": 1265.4,
+  "efecto_por_accion": 0.0
+ },
+ "antes": {
+  "dcfTecnico": 28.18983143,
+  "valorEsperado": 24.282535072871415,
+  "precioMOS": 15.78364779736642,
+  "historias": {
+   "A": 25.24043038689661,
+   "B": 20.073598574673145,
+   "C": 11.706559348509105,
+   "D": 32.876377247758576
+  }
+ },
+ "despues": {
+  "dcfTecnico": 28.18983143,
+  "valorEsperado": 24.282535072871415,
+  "precioMOS": 15.78364779736642,
+  "historias": {
+   "A": 25.24043038689661,
+   "B": 20.073598574673145,
+   "C": 11.706559348509105,
+   "D": 32.876377247758576
+  }
+ },
+ "tramo_tasas_base": "$7,000-12,000 Mn"
+}

@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada da 0,83, y el DCF Base sube de US$20,92 a US$26,15. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
+  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada da 0,83, y el DCF Base sube de US$20,30 a US$25,51 Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
  },
  "historias": [
   {
@@ -140,7 +140,7 @@
    "Media"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$1.250-2.000 millones, crecer 11% anual cinco años (historia A) lo logró ~36%: la hoja pide algo alcanzable. El problema es el margen: incluso con crecimiento de doble dígito, con margen de 5% el valor es muy bajo, porque cada Shack nuevo exige capital y el retorno apenas cubre su costo.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,0% anual cinco años (historia A) lo logró ~40% de las empresas de ese tamaño; 13,1% (historia D), ~31%. La hoja pide algo alcanzable. El problema es el margen: incluso con crecimiento de doble dígito, con margen de 5% el valor es muy bajo, porque cada Shack nuevo exige capital y el retorno apenas cubre su costo.",
  "crecimiento": {
   "texto": "Ingresos de US$1.088 millones (2023, +20,8%), US$1.253 millones (2024, +15,2%) y US$1.445 millones (2025, +15,4%); LTM US$1.552 millones. En el 1S26, ventas de Shacks propios de US$757,5 millones (+16%) y licencias de US$25,7 millones. La hoja supone 13% el próximo año y 11% en los años 2-5.",
   "tabla": {

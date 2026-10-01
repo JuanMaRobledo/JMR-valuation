@@ -1,0 +1,110 @@
+{
+ "ticker": "NVO",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10*45288/48062",
+   "motivo": "12 meses a jun-2025 = 2024 (48.062) + 1S25 (21.998) − 1S24 (24.772) = 45.288 MDKK (6-K 2T25 y 4T24). Antes el ejercicio 2025, que se solapa con el LTM.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10*43360/32443",
+   "motivo": "12 meses a jun-2024 = 2023 (32.443) + 1S24 (24.772) − 1S23 (13.855) = 43.360 MDKK. Antes el ejercicio 2024.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10*27573/24047",
+   "motivo": "12 meses a jun-2023 = 2022 (24.047) + 1S23 (13.855) − 1S22 (10.329) = 27.573 MDKK. Antes el ejercicio 2023.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B15",
+   "antes": "='Income Statement'!H10",
+   "despues": "='Income Statement'!G10*20213/17772",
+   "motivo": "12 meses a jun-2022 = 2021 (17.772) + 1S22 (10.329) − 1S21 (7.888) = 20.213 MDKK. Antes el ejercicio 2022.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B16",
+   "antes": "='Income Statement'!G10",
+   "despues": "='Income Statement'!F10*16282/15462",
+   "motivo": "12 meses a jun-2021 = 2020 (15.462) + 1S21 (7.888) − 1S20 (7.068) = 16.282 MDKK. Antes el ejercicio 2021.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": "=L13+L22+L34",
+   "motivo": "Auditoría 1-oct-2026: cambio de caja LTM = operación + inversión + financiación (sin efecto cambiario). Antes −14, un valor de relleno del importador.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma automática; el balance se revisó con el informe semestral.",
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 0,
+  "acciones": 4420.8,
+  "efecto_por_accion": 0.0
+ },
+ "antes": {
+  "dcfTecnico": 41.960928092896836,
+  "valorEsperado": 35.630289157904414,
+  "precioMOS": 23.15968795263787,
+  "historias": {
+   "A": 38.98023463537389,
+   "B": 28.2567651107055,
+   "C": 22.46865575132954,
+   "D": 46.57150097705124
+  }
+ },
+ "despues": {
+  "dcfTecnico": 42.26832437,
+  "valorEsperado": 35.91615292961335,
+  "precioMOS": 23.345499404248677,
+  "historias": {
+   "A": 39.27487455165944,
+   "B": 28.52368069392444,
+   "C": 22.713212408512774,
+   "D": 46.88888829960481
+  }
+ },
+ "tramo_tasas_base": ">$25,000 Mn"
+}
