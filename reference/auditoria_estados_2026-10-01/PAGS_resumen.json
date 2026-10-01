@@ -3,6 +3,78 @@
  "fecha": "2026-10-01",
  "cambios": [
   {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 2673.3,
+   "despues": 2742.0,
+   "motivo": "Patrimonio al 30-jun-2026: R$15.015.865 mil / 5.4762 (6-K 1S26). Antes 2.673,3, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 2673.3,
+   "despues": 2742.0,
+   "motivo": "Patrimonio al 30-jun-2026: R$15.015.865 mil / 5.4762 (6-K 1S26). Antes 2.673,3, el cierre de 2025.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L16",
+   "antes": 13587.8,
+   "despues": 13823.0,
+   "motivo": "Activos totales al 30-jun-2026: R$75.697.476 mil / 5.4762 (6-K 1S26).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L29",
+   "antes": 10914.5,
+   "despues": 11080.9,
+   "motivo": "Pasivos totales al 30-jun-2026 = activos − patrimonio (6-K 1S26).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K22",
+   "antes": 0,
+   "despues": -411.6,
+   "motivo": "Flujo de inversión 2025: −R$2.299.796 mil / 5.5877 (20-F 2025). Antes 0 (no importado).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K34",
+   "antes": 0,
+   "despues": -775.4,
+   "motivo": "Flujo de financiación 2025: −R$4.332.796 mil / 5.5877 (20-F 2025). Antes 0 (no importado).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L13",
+   "antes": 1429.4,
+   "despues": 1082.6,
+   "motivo": "Flujo operativo LTM = 2025 (7.562.431) + 1S26 (1.938.645) − 1S25 (3.451.822) = R$6.049.254 mil / 5.5877 (20-F y 6-K).",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L22",
+   "antes": 0,
+   "despues": -431.9,
+   "motivo": "Flujo de inversión LTM = −2.299.796 − 1.215.583 + 1.101.798 = −R$2.413.581 mil / 5.5877 (20-F y 6-K). Antes 0.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L34",
+   "antes": 0,
+   "despues": -740.9,
+   "motivo": "Flujo de financiación LTM = −4.332.796 − 1.956.893 + 2.149.485 = −R$4.140.204 mil / 5.5877 (20-F y 6-K). Antes 0.",
+   "tipo": "Balance del último 10-Q"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -35,7 +107,7 @@
  ],
  "salvedades": [
   "Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF.",
-  "Financiera (DCF de flujo al accionista): el balance LTM de la hoja repite el cierre de 2025 y los flujos de inversión y financiación LTM no están importados. No afectan al valor (utilidad, ROE y costo del patrimonio), pero quedan pendientes de completar.",
+  "Financiera (DCF de flujo al accionista): balance y flujos LTM actualizados con el 20-F 2025 y el 6-K del 1S26 (convertidos a los tipos implícitos de la hoja); no afectan al valor, que depende de utilidad, ROE y costo del patrimonio.",
   "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
  ],
  "arrendamientos": {

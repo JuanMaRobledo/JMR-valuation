@@ -75,9 +75,11 @@ def fix_riesgo(spec, r, fixes):
 
     def rep(m):
         return f"el DCF Base {verbo} de US${es(v0)} a US${es(v1)}"
-    t2 = re.sub(r"el DCF Base (?:sube|baja) de US\$[\d.,]+ a US\$[\d.,]+", rep, t)
-    t2 = re.sub(r"\(US\$[\d.,]+ frente a US\$[\d.,]+\)", f"(US${es(v0)} frente a US${es(v1)})", t2)
-    t2 = re.sub(r"\(US\$[\d.,]+ → US\$[\d.,]+\)", f"(US${es(v0)} → US${es(v1)})", t2)
+    t2 = re.sub(r"el DCF Base (?:sube|baja) de US\$\d[\d.]*,\d{2} a US\$\d[\d.]*,\d{2}", rep, t)
+    t2 = re.sub(r"\(US\$\d[\d.]*,\d{2} frente a US\$\d[\d.]*,\d{2}\)", f"(US${es(v0)} frente a US${es(v1)})", t2)
+    t2 = re.sub(r"\(US\$\d[\d.]*,\d{2} → US\$\d[\d.]*,\d{2}\)", f"(US${es(v0)} → US${es(v1)})", t2)
+    if r.get("beta_bu"):  # beta bottom-up reapalancada (cambia con la deuda, incluidos los arrendamientos)
+        t2 = re.sub(r"(reapalancada[^.]*? da )\d,\d\d", lambda m_: m_.group(1) + es(r["beta_bu"]), t2, count=1)
     if t2 != t:
         spec["riesgo"]["texto"] = t2
         fixes.append(("riesgo", re.findall(r"US\$[\d.,]+", t), re.findall(r"US\$[\d.,]+", t2)))

@@ -19,6 +19,118 @@
    "tipo": "ROIC terminal (criterio Damodaran)"
   },
   {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 295,
+   "despues": 520.3,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 287,
+   "despues": 521.413,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 235,
+   "despues": 569.2,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 194,
+   "despues": 553.401,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 151,
+   "despues": 536.731,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 98,
+   "despues": 513.146,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 605,
+   "despues": 4780.639,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B18",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.15,
+   "despues": 0.162878,
+   "motivo": "Margen en base ajustada por arrendamientos: + 1.29 pp (ajuste del EBIT 160.0 / ventas 12423.8).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.17,
+   "despues": 0.182878,
+   "motivo": "Margen en base ajustada por arrendamientos: + 1.29 pp (ajuste del EBIT 160.0 / ventas 12423.8).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.6,
+   "despues": 1.2648,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/2.6 + 0.406), con VP de arrendamientos 5044.3 / ventas 12423.8.",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 2.2,
+   "despues": 1.162,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/2.2 + 0.406), con VP de arrendamientos 5044.3 / ventas 12423.8.",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C45",
+   "antes": 0.14,
+   "despues": 0.152878,
+   "motivo": "Margen en base ajustada por arrendamientos: + 1.29 pp (ajuste del EBIT 160.0 / ventas 12423.8).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C47",
+   "antes": 0.2,
+   "despues": 0.212878,
+   "motivo": "Margen en base ajustada por arrendamientos: + 1.29 pp (ajuste del EBIT 160.0 / ventas 12423.8).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -72,7 +184,7 @@
  ],
  "arrendamientos": {
   "incluye_operativos": false,
-  "conversor": "No",
+  "conversor": "Yes",
   "arrendamientos": 4773.4,
   "acciones": 1265.4,
   "efecto_por_accion": 0.0
@@ -89,14 +201,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 28.18983143,
-  "valorEsperado": 24.282535072871415,
-  "precioMOS": 15.78364779736642,
+  "dcfTecnico": 22.88554748,
+  "valorEsperado": 21.271490401752104,
+  "precioMOS": 13.826468761138868,
   "historias": {
-   "A": 25.24043038689661,
-   "B": 20.073598574673145,
-   "C": 11.706559348509105,
-   "D": 32.876377247758576
+   "A": 22.2294388492498,
+   "B": 17.235778764339752,
+   "C": 8.673913193080027,
+   "D": 29.56748317439635
   }
  },
  "tramo_tasas_base": "$7,000-12,000 Mn"

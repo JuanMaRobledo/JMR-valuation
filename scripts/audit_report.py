@@ -114,7 +114,7 @@ def build(datos: Path, tk: str, sh) -> dict:
     orden = [h["id"] for h in sorted(hs, key=lambda h: h["valor"])]
     checks = {
         "probabilidades_suman_100": abs(sum(h["probabilidad"] for h in hs) - 1) < 1e-9,
-        "orden_severidad_C_B_A_D": orden == ["C", "B", "A", "D"],
+        "orden_severidad_C_B_A_D": all(v[a] <= v[b] + 1e-9 for a, b in (("C", "B"), ("B", "A"), ("A", "D"))) if (v := {h["id"]: h["valor"] for h in hs}) else False,
         "valor_esperado_igual_suma": abs(sum(h["probabilidad"] * h["valor"] for h in hs) - ve1["valor"]) < 1e-6,
         "mos_sobre_esperado": abs(new["precioMOS"] - ve1["valor"] * (1 - new["mos"])) < 1e-6,
     }

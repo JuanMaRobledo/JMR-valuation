@@ -7,11 +7,11 @@ analysis_date: "2026-09-30"
 # Palantir Technologies Inc. (PLTR) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$51,02; la historia central A vale US$55,62 y el rango es US$15,72–95,62. El MOS 35% se aplica al esperado: US$33,16. El antiguo caso Base de la hoja (US$85,42) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$51,02; la historia central A vale US$55,62 y el rango es US$15,71–95,59. El MOS 35% se aplica al esperado: US$33,16. El antiguo caso Base de la hoja (US$85,37) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos operativos fuera de la deuda, capital invertido operativo, conversor de i+d alineado al ltm, flujos ltm (6 celdas, con respaldo). Valor esperado US$51,02 → US$51,02. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, flujos ltm (19 celdas, con respaldo). Valor esperado US$51,02 → US$51,02. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$85,42 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$85,37 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -55,12 +55,14 @@ En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: cre
 
 **Reinversión y retorno.** Casi no necesita capital (capex de US$34 millones en 2025). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en ingenieros desplegados con los clientes (bootcamps) y en I+D; el crecimiento no está limitado por el capital sino por la capacidad de convertir pilotos en contratos. Sin ventaja defendible: tiene costos de cambio en gobierno, pero su ROIC con plusvalía (5-12%) está cerca del costo de capital y la serie es corta. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
+**Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$236 millones, compromisos del 10-K al 2025-12-31) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$23 millones, +0,38 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,04 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
+
 **Riesgo.** La hoja usaba una beta de regresión de 1,62; tras la revisión usa la bottom-up de Software (System & Application) sin deuda, 1,25. La dependencia de contratos públicos grandes y el gobierno controlado por fundadores (clase F) suben el riesgo, pero ese riesgo está más en los flujos que en la tasa.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,25 | 10,6% | 10,6% | US$85,42 |
-| Bottom-up del sector (Software (System & Application), reapalancada) | 1,25 | 10,6% | 10,6% | US$85,42 |
+| Hoja (regresión o la cargada en el libro) | 1,25 | 10,6% | 10,6% | US$85,37 |
+| Bottom-up del sector (Software (System & Application), reapalancada) | 1,25 | 10,6% | 10,6% | US$85,36 |
 
 
 ### Calibración técnica anterior C/B/O (referencia auxiliar)
@@ -69,24 +71,24 @@ En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: cre
 |---|---:|---:|---:|
 | Crecimiento año 1 | 35,0% | 68,0% | 89,2% |
 | Crecimiento años 2–5 | 30,0% | 35,0% | 50,0% |
-| Margen año 1 (base ajustada del modelo) | 48,0% | 48,0% | 48,0% |
-| Margen objetivo | 45,8% | 48,0% | 53,0% |
+| Margen año 1 (base ajustada del modelo) | 48,4% | 48,4% | 48,4% |
+| Margen objetivo | 46,6% | 48,4% | 53,4% |
 
-Ventas/capital: 4,0x en años 1–5 y 4,5x en 6–10. WACC: 10,6%. Ke: 10,6%. Impuesto efectivo: 1,3%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
+Ventas/capital: 3,5x en años 1–5 y 3,8x en 6–10. WACC: 10,6%. Ke: 10,6%. Impuesto efectivo: 1,3%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 170,3% | 29,3% | 9,2% | = costo de capital | US$85,42 | US$85,42 |
+| Sin ventaja defendible | 150,0% | 29,3% | 9,2% | = costo de capital | US$85,37 | US$85,37 |
 
 Fuentes de ventaja: Costos de cambio en gobierno. Evidencia: ROIC con plusvalía de 5-12% en 2025-LTM, cerca del costo de capital; serie poco confiable. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor principal de US$51,02 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$85,42 ni mezclando el DCF con múltiplos. La historia central A vale US$55,62; «central» y «esperado» son conceptos distintos.
+El valor principal de US$51,02 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$85,37 ni mezclando el DCF con múltiplos. La historia central A vale US$55,62; «central» y «esperado» son conceptos distintos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -94,13 +96,13 @@ El valor principal de US$51,02 se obtiene ejecutando cuatro DCF completos de die
 | Entrada | Valor usado | Origen y tratamiento |
 |---|---|---|
 | Ingresos LTM | US$6.156 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 3.200 + 2.956 = 6.156. |
-| Margen inicial del DCF | 48,0% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
+| Margen inicial del DCF | 48,4% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
 | Impuesto | 1,34% en años 1–5; 25,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
-| Descuento | WACC 10,58% → 9,23% | Tasa libre de riesgo 5,00%, beta 1,25, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
-| Ventas/capital | 4,00x en años 1–5; 4,50x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
+| Descuento | WACC 10,57% → 9,23% | Tasa libre de riesgo 5,00%, beta 1,25, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 3,47x en años 1–5; 3,84x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
 | Crecimiento perpetuo | A/B/C/D: 5,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. |
 | ROIC terminal | A/B/C/D: 9,23% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
-| Puente al patrimonio | Caja 9.409; deuda 0; minoritarios 111; acciones 2.402,9 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
+| Puente al patrimonio | Caja 9.409; deuda 236; minoritarios 111; acciones 2.402,9 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
 #### 2. Cómo se convierte cada historia en ingresos
@@ -114,7 +116,7 @@ Ejemplo A, año 1: 3.200 × 1,55 + 2.956 × 1,90 = US$10.576,30 millones. Frente
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En A, año 1: NOPAT = 10.576,30 × 48,00% × (1 − 1,34%) = US$5.008,60 millones. La reinversión es US$1.136,04 millones y el FCFF es US$3.872,56 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En A, año 1: NOPAT = 10.576,30 × 48,38% × (1 − 1,34%) = US$5.048,38 millones. La reinversión es US$1.310,31 millones y el FCFF es US$3.738,07 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,23%. Reinversión terminal sobre el NOPAT: A, 54,2% (5,00% / 9,23%); B, 54,2% (5,00% / 9,23%); C, 54,2% (5,00% / 9,23%); D, 54,2% (5,00% / 9,23%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
@@ -123,69 +125,69 @@ En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor 
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**A · Hipercrecimiento que desacelera con la escala** — probabilidad 40%; valor terminal 171.160 (VP 64.976); DCF US$55,62 por acción.
+**A · Hipercrecimiento que desacelera con la escala** — probabilidad 40%; valor terminal 172.610 (VP 65.541); DCF US$55,62 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 10.576 | 71,8% | 48,0% | 5.009 | 1.136 | 3.873 | 10,6% | 3.502 |
-| 2 | 15.120 | 43,0% | 46,8% | 6.982 | 1.092 | 5.889 | 10,6% | 4.817 |
-| 3 | 19.490 | 28,9% | 46,2% | 8.884 | 1.086 | 7.798 | 10,6% | 5.768 |
-| 4 | 23.833 | 22,3% | 45,6% | 10.722 | 1.022 | 9.700 | 10,6% | 6.489 |
-| 5 | 27.922 | 17,2% | 45,0% | 12.397 | 1.028 | 11.369 | 10,6% | 6.877 |
-| 6 | 32.034 | 14,7% | 45,0% | 13.540 | 875 | 12.665 | 10,3% | 6.946 |
-| 7 | 35.972 | 12,3% | 45,0% | 14.439 | 788 | 13.650 | 10,0% | 6.803 |
-| 8 | 39.520 | 9,9% | 45,0% | 15.021 | 653 | 14.369 | 9,8% | 6.524 |
-| 9 | 42.457 | 7,4% | 45,0% | 15.233 | 472 | 14.762 | 9,5% | 6.121 |
-| 10 | 44.580 | 5,0% | 45,0% | 15.046 | 495 | 14.550 | 9,2% | 5.524 |
-| Terminal | 46.809 | 5,0% | 45,0% | 15.798 | 8.558 | 7.240 | 9,2% | — |
+| 1 | 10.576 | 71,8% | 48,4% | 5.048 | 1.310 | 3.738 | 10,6% | 3.381 |
+| 2 | 15.120 | 43,0% | 47,2% | 7.038 | 1.260 | 5.778 | 10,6% | 4.726 |
+| 3 | 19.490 | 28,9% | 46,6% | 8.957 | 1.252 | 7.705 | 10,6% | 5.699 |
+| 4 | 23.833 | 22,3% | 46,0% | 10.812 | 1.179 | 9.633 | 10,6% | 6.444 |
+| 5 | 27.922 | 17,2% | 45,4% | 12.502 | 1.186 | 11.316 | 10,6% | 6.847 |
+| 6 | 32.034 | 14,7% | 45,4% | 13.655 | 1.026 | 12.629 | 10,3% | 6.927 |
+| 7 | 35.972 | 12,3% | 45,4% | 14.561 | 924 | 13.637 | 10,0% | 6.798 |
+| 8 | 39.520 | 9,9% | 45,4% | 15.148 | 765 | 14.383 | 9,8% | 6.532 |
+| 9 | 42.457 | 7,4% | 45,4% | 15.362 | 553 | 14.809 | 9,5% | 6.142 |
+| 10 | 44.580 | 5,0% | 45,4% | 15.173 | 581 | 14.592 | 9,2% | 5.541 |
+| Terminal | 46.809 | 5,0% | 45,4% | 15.932 | 8.631 | 7.301 | 9,2% | — |
 
-**B · Se normaliza en un software de alta calidad** — probabilidad 30%; valor terminal 67.904 (VP 25.778); DCF US$26,93 por acción.
-
-| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 8.594 | 39,6% | 48,0% | 4.070 | 464 | 3.605 | 10,6% | 3.261 |
-| 2 | 10.451 | 21,6% | 44,0% | 4.537 | 397 | 4.140 | 10,6% | 3.386 |
-| 3 | 12.038 | 15,2% | 42,0% | 4.988 | 366 | 4.622 | 10,6% | 3.419 |
-| 4 | 13.503 | 12,2% | 40,0% | 5.329 | 345 | 4.984 | 10,6% | 3.334 |
-| 5 | 14.882 | 10,2% | 38,0% | 5.579 | 341 | 5.238 | 10,6% | 3.169 |
-| 6 | 16.246 | 9,2% | 38,0% | 5.799 | 293 | 5.505 | 10,3% | 3.019 |
-| 7 | 17.566 | 8,1% | 38,0% | 5.954 | 277 | 5.677 | 10,0% | 2.830 |
-| 8 | 18.810 | 7,1% | 38,0% | 6.037 | 253 | 5.785 | 9,8% | 2.627 |
-| 9 | 19.947 | 6,0% | 38,0% | 6.043 | 222 | 5.822 | 9,5% | 2.414 |
-| 10 | 20.944 | 5,0% | 38,0% | 5.969 | 233 | 5.736 | 9,2% | 2.178 |
-| Terminal | 21.991 | 5,0% | 38,0% | 6.268 | 3.395 | 2.872 | 9,2% | — |
-
-**C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos** — probabilidad 10%; valor terminal 29.983 (VP 11.382); DCF US$15,72 por acción.
+**B · Se normaliza en un software de alta calidad** — probabilidad 30%; valor terminal 68.585 (VP 26.042); DCF US$26,93 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 7.375 | 19,8% | 48,0% | 3.493 | 138 | 3.354 | 10,6% | 3.033 |
-| 2 | 7.928 | 7,5% | 40,8% | 3.191 | 99 | 3.092 | 10,6% | 2.529 |
-| 3 | 8.325 | 5,0% | 37,2% | 3.055 | 104 | 2.951 | 10,6% | 2.183 |
-| 4 | 8.741 | 5,0% | 33,6% | 2.898 | 109 | 2.788 | 10,6% | 1.865 |
-| 5 | 9.178 | 5,0% | 30,0% | 2.717 | 115 | 2.602 | 10,6% | 1.574 |
-| 6 | 9.637 | 5,0% | 30,0% | 2.716 | 107 | 2.608 | 10,3% | 1.431 |
-| 7 | 10.119 | 5,0% | 30,0% | 2.708 | 112 | 2.595 | 10,0% | 1.293 |
-| 8 | 10.625 | 5,0% | 30,0% | 2.692 | 118 | 2.574 | 9,8% | 1.169 |
-| 9 | 11.156 | 5,0% | 30,0% | 2.668 | 124 | 2.545 | 9,5% | 1.055 |
-| 10 | 11.714 | 5,0% | 30,0% | 2.636 | 130 | 2.505 | 9,2% | 951 |
-| Terminal | 12.300 | 5,0% | 30,0% | 2.767 | 1.499 | 1.268 | 9,2% | — |
+| 1 | 8.594 | 39,6% | 48,4% | 4.102 | 536 | 3.567 | 10,6% | 3.226 |
+| 2 | 10.451 | 21,6% | 44,4% | 4.576 | 458 | 4.119 | 10,6% | 3.369 |
+| 3 | 12.038 | 15,2% | 42,4% | 5.033 | 423 | 4.611 | 10,6% | 3.411 |
+| 4 | 13.503 | 12,2% | 40,4% | 5.380 | 397 | 4.982 | 10,6% | 3.333 |
+| 5 | 14.882 | 10,2% | 38,4% | 5.635 | 393 | 5.242 | 10,6% | 3.172 |
+| 6 | 16.246 | 9,2% | 38,4% | 5.857 | 344 | 5.513 | 10,3% | 3.024 |
+| 7 | 17.566 | 8,1% | 38,4% | 6.014 | 324 | 5.689 | 10,0% | 2.836 |
+| 8 | 18.810 | 7,1% | 38,4% | 6.098 | 296 | 5.802 | 9,8% | 2.635 |
+| 9 | 19.947 | 6,0% | 38,4% | 6.104 | 260 | 5.844 | 9,5% | 2.424 |
+| 10 | 20.944 | 5,0% | 38,4% | 6.029 | 273 | 5.756 | 9,2% | 2.186 |
+| Terminal | 21.991 | 5,0% | 38,4% | 6.330 | 3.429 | 2.901 | 9,2% | — |
 
-**D · Sistema operativo de la IA empresarial** — probabilidad 20%; valor terminal 324.614 (VP 123.230); DCF US$95,62 por acción.
+**C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos** — probabilidad 10%; valor terminal 30.364 (VP 11.529); DCF US$15,71 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 11.647 | 89,2% | 48,0% | 5.516 | 1.766 | 3.750 | 10,6% | 3.391 |
-| 2 | 18.713 | 60,7% | 48,8% | 9.009 | 1.901 | 7.108 | 10,6% | 5.814 |
-| 3 | 26.317 | 40,6% | 49,2% | 12.775 | 1.995 | 10.779 | 10,6% | 7.973 |
-| 4 | 34.298 | 30,3% | 49,6% | 16.784 | 2.038 | 14.746 | 10,6% | 9.864 |
-| 5 | 42.450 | 23,8% | 50,0% | 20.941 | 2.124 | 18.817 | 10,6% | 11.383 |
-| 6 | 50.946 | 20,0% | 50,0% | 23.926 | 1.841 | 22.085 | 10,3% | 12.112 |
-| 7 | 59.229 | 16,3% | 50,0% | 26.415 | 1.646 | 24.769 | 10,0% | 12.345 |
-| 8 | 66.637 | 12,5% | 50,0% | 28.142 | 1.296 | 26.846 | 9,8% | 12.189 |
-| 9 | 72.470 | 8,8% | 50,0% | 28.891 | 805 | 28.086 | 9,5% | 11.646 |
-| 10 | 76.094 | 5,0% | 50,0% | 28.535 | 845 | 27.690 | 9,2% | 10.512 |
-| Terminal | 79.898 | 5,0% | 50,0% | 29.962 | 16.231 | 13.731 | 9,2% | — |
+| 1 | 7.375 | 19,8% | 48,4% | 3.520 | 160 | 3.361 | 10,6% | 3.039 |
+| 2 | 7.928 | 7,5% | 41,2% | 3.221 | 114 | 3.107 | 10,6% | 2.541 |
+| 3 | 8.325 | 5,0% | 37,6% | 3.087 | 120 | 2.967 | 10,6% | 2.194 |
+| 4 | 8.741 | 5,0% | 34,0% | 2.931 | 126 | 2.805 | 10,6% | 1.876 |
+| 5 | 9.178 | 5,0% | 30,4% | 2.751 | 132 | 2.619 | 10,6% | 1.584 |
+| 6 | 9.637 | 5,0% | 30,4% | 2.750 | 126 | 2.625 | 10,3% | 1.440 |
+| 7 | 10.119 | 5,0% | 30,4% | 2.742 | 132 | 2.610 | 10,0% | 1.301 |
+| 8 | 10.625 | 5,0% | 30,4% | 2.726 | 138 | 2.588 | 9,8% | 1.175 |
+| 9 | 11.156 | 5,0% | 30,4% | 2.702 | 145 | 2.557 | 9,5% | 1.061 |
+| 10 | 11.714 | 5,0% | 30,4% | 2.669 | 153 | 2.517 | 9,2% | 956 |
+| Terminal | 12.300 | 5,0% | 30,4% | 2.803 | 1.518 | 1.284 | 9,2% | — |
+
+**D · Sistema operativo de la IA empresarial** — probabilidad 20%; valor terminal 327.089 (VP 124.197); DCF US$95,59 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 11.647 | 89,2% | 48,4% | 5.560 | 2.037 | 3.522 | 10,6% | 3.186 |
+| 2 | 18.713 | 60,7% | 49,2% | 9.080 | 2.193 | 6.887 | 10,6% | 5.633 |
+| 3 | 26.317 | 40,6% | 49,6% | 12.874 | 2.301 | 10.572 | 10,6% | 7.821 |
+| 4 | 34.298 | 30,3% | 50,0% | 16.913 | 2.351 | 14.563 | 10,6% | 9.742 |
+| 5 | 42.450 | 23,8% | 50,4% | 21.100 | 2.450 | 18.651 | 10,6% | 11.284 |
+| 6 | 50.946 | 20,0% | 50,4% | 24.109 | 2.159 | 21.950 | 10,3% | 12.040 |
+| 7 | 59.229 | 16,3% | 50,4% | 26.617 | 1.930 | 24.686 | 10,0% | 12.306 |
+| 8 | 66.637 | 12,5% | 50,4% | 28.357 | 1.520 | 26.837 | 9,8% | 12.188 |
+| 9 | 72.470 | 8,8% | 50,4% | 29.111 | 944 | 28.167 | 9,5% | 11.682 |
+| 10 | 76.094 | 5,0% | 50,4% | 28.753 | 991 | 27.761 | 9,2% | 10.541 |
+| Terminal | 79.898 | 5,0% | 50,4% | 30.190 | 16.354 | 13.836 | 9,2% | — |
 
 
 #### 5. Puente numérico de los cuatro DCF
@@ -194,21 +196,21 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| A | 59.370,23 | 64.975,75 | 124.345,98 | 133.644,39 | 55,62 |
-| B | 29.635,49 | 25.777,60 | 55.413,09 | 64.711,50 | 26,93 |
-| C | 17.083,70 | 11.382,06 | 28.465,76 | 37.764,17 | 15,72 |
-| D | 97.228,58 | 123.230,03 | 220.458,61 | 229.757,02 | 95,62 |
+| A | 59.037,25 | 65.540,55 | 124.577,80 | 133.640,12 | 55,62 |
+| B | 29.614,30 | 26.041,91 | 55.656,21 | 64.718,54 | 26,93 |
+| C | 17.168,02 | 11.529,23 | 28.697,25 | 37.759,58 | 15,71 |
+| D | 96.423,37 | 124.196,76 | 220.620,13 | 229.682,45 | 95,59 |
 
-Ejemplo A: (59.370,23 + 64.975,75 + 9.409 − 111) / 2.402,9 = US$55,62 por acción. El terminal representa 52,3% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo A: (59.037,25 + 65.540,55 + 9.409 − 236 − 111) / 2.402,9 = US$55,62 por acción. El terminal representa 52,6% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-Valor esperado = 0,40 × 55,618026 + 0,30 × 26,930616 + 0,10 × 15,716099 + 0,20 × 95,616673 = US$51,021340 ≈ US$51,02. Los aportes son US$22,25 + US$8,08 + US$1,57 + US$19,12 por acción.
+Valor esperado = 0,40 × 55,616251 + 0,30 × 26,933546 + 0,10 × 15,714189 + 0,20 × 95,585643 = US$51,015112 ≈ US$51,02. Los aportes son US$22,25 + US$8,08 + US$1,57 + US$19,12 por acción.
 
-Precio con MOS = valor esperado × (1 − 35%) = 51,021340 × 0,65 = US$33,163871 ≈ US$33,16. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+Precio con MOS = valor esperado × (1 − 35%) = 51,015112 × 0,65 = US$33,159823 ≈ US$33,16. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
 
 Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
@@ -222,7 +224,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es un hipercrecimiento que desacelera con la escala (~35% anual).
 
-**Traducción al modelo.** Gobierno crece 55%, 35%, 25%, 20%, 16%; Comercial crece 90%, 50%, 32%, 24%, 18%. El crecimiento anual compuesto de cinco años es 35,3%; el margen operativo objetivo es 45,0%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 40%; DCF: US$55,62 por acción.
+**Traducción al modelo.** Gobierno crece 55%, 35%, 25%, 20%, 16%; Comercial crece 90%, 50%, 32%, 24%, 18%. El crecimiento anual compuesto de cinco años es 35,3%; el margen operativo objetivo es 45,4%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 40%; DCF: US$55,62 por acción.
 
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (crecimiento de ingresos (interanual): > 50%; u.S. Commercial: +149% en un trimestre; valor contractual restante (RDV) comercial: En alza). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
@@ -231,7 +233,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es la normalización en un software de alta calidad (~19%).
 
-**Traducción al modelo.** Gobierno crece 30%, 18%, 12%, 10%, 8%; Comercial crece 50%, 25%, 18%, 14%, 12%. El crecimiento anual compuesto de cinco años es 19,3%; el margen operativo objetivo es 38,0%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 30%; DCF: US$26,93 por acción.
+**Traducción al modelo.** Gobierno crece 30%, 18%, 12%, 10%, 8%; Comercial crece 50%, 25%, 18%, 14%, 12%. El crecimiento anual compuesto de cinco años es 19,3%; el margen operativo objetivo es 38,4%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 30%; DCF: US$26,93 por acción.
 
 **Cómo contrastarla.** La apoyarían: crecimiento de ingresos (interanual): < 25%; u.S. Commercial: < +30%; valor contractual restante (RDV) comercial: estancado; margen operativo (con SBC): < 38%.
 
@@ -240,7 +242,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es comoditización con pérdida de contratos.
 
-**Traducción al modelo.** Gobierno crece 15%, 5%, 5%, 5%, 5%; Comercial crece 25%, 10%, 5%, 5%, 5%. El crecimiento anual compuesto de cinco años es 8,3%; el margen operativo objetivo es 30,0%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 10%; DCF: US$15,72 por acción.
+**Traducción al modelo.** Gobierno crece 15%, 5%, 5%, 5%, 5%; Comercial crece 25%, 10%, 5%, 5%, 5%. El crecimiento anual compuesto de cinco años es 8,3%; el margen operativo objetivo es 30,4%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 10%; DCF: US$15,71 por acción.
 
 **Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: crecimiento de ingresos (interanual): < 25%; u.S. Commercial: < +30%; valor contractual restante (RDV) comercial: estancado; margen operativo (con SBC): < 38%.
 
@@ -249,7 +251,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja.
 
-**Traducción al modelo.** Gobierno crece 70%, 50%, 35%, 28%, 22%; Comercial crece 110%, 70%, 45%, 32%, 25%. El crecimiento anual compuesto de cinco años es 47,1%; el margen operativo objetivo es 50,0%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 20%; DCF: US$95,62 por acción.
+**Traducción al modelo.** Gobierno crece 70%, 50%, 35%, 28%, 22%; Comercial crece 110%, 70%, 45%, 32%, 25%. El crecimiento anual compuesto de cinco años es 47,1%; el margen operativo objetivo es 50,4%. El ROIC terminal es el costo de capital (9,23%). El crecimiento terminal es 5,00%, el de la hoja. Probabilidad: 20%; DCF: US$95,59 por acción.
 
 **Cómo contrastarla.** La confirmarían: crecimiento de ingresos (interanual): ≥ 40% en 2027; u.S. Commercial: ≥ +50%; valor contractual restante (RDV) comercial: crece más que ingresos; margen operativo (con SBC): ≥ 45%.
 
@@ -260,10 +262,10 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,25) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **A · Hipercrecimiento que desacelera con la escala** | 40% | Gobierno: 55%, 35%, 25%, 20%, 16%; Comercial: 90%, 50%, 32%, 24%, 18% | 35,3% | 45% | 4,0 | 5,00% | US$55,62 |
-| **B · Se normaliza en un software de alta calidad** | 30% | Gobierno: 30%, 18%, 12%, 10%, 8%; Comercial: 50%, 25%, 18%, 14%, 12% | 19,3% | 38% | 4,0 | 5,00% | US$26,93 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos** | 10% | Gobierno: 15%, 5%, 5%, 5%, 5%; Comercial: 25%, 10%, 5%, 5%, 5% | 8,3% | 30% | 4,0 | 5,00% | US$15,72 |
-| **D · Sistema operativo de la IA empresarial** | 20% | Gobierno: 70%, 50%, 35%, 28%, 22%; Comercial: 110%, 70%, 45%, 32%, 25% | 47,1% | 50% | 4,0 | 5,00% | US$95,62 |
+| **A · Hipercrecimiento que desacelera con la escala** | 40% | Gobierno: 55%, 35%, 25%, 20%, 16%; Comercial: 90%, 50%, 32%, 24%, 18% | 35,3% | 45,4% | 3,5 | 5,00% | US$55,62 |
+| **B · Se normaliza en un software de alta calidad** | 30% | Gobierno: 30%, 18%, 12%, 10%, 8%; Comercial: 50%, 25%, 18%, 14%, 12% | 19,3% | 38,4% | 3,5 | 5,00% | US$26,93 |
+| **C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos** | 10% | Gobierno: 15%, 5%, 5%, 5%, 5%; Comercial: 25%, 10%, 5%, 5%, 5% | 8,3% | 30,4% | 3,5 | 5,00% | US$15,71 |
+| **D · Sistema operativo de la IA empresarial** | 20% | Gobierno: 70%, 50%, 35%, 28%, 22%; Comercial: 110%, 70%, 45%, 32%, 25% | 47,1% | 50,4% | 3,5 | 5,00% | US$95,59 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$51,02** |
 
 A (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). B (30%) es la normalización en un software de alta calidad (~19%). C (10%) es comoditización con pérdida de contratos. D (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
@@ -272,13 +274,13 @@ Sensibilidad del DCF técnico anterior (beta 1,25; US$ por acción; filas = crec
 
 Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
-| Crecimiento \ Margen | 44,0% | 46,0% | 48,0% | 50,0% | 52,0% |
+| Crecimiento \ Margen | 44,4% | 46,4% | 48,4% | 50,4% | 52,4% |
 |---|---:|---:|---:|---:|---:|
-| 37,6% | 71,77 | 74,84 | 77,91 | 80,98 | 84,04 |
-| 39,6% | 78,37 | 81,75 | 85,13 | 88,51 | 91,90 |
-| 41,6% | 85,55 | 89,27 | 93,00 | 96,72 | 100,44 |
-| 43,6% | 93,36 | 97,45 | 101,55 | 105,65 | 109,74 |
-| 45,6% | 101,84 | 106,34 | 110,85 | 115,35 | 119,85 |
+| 37,6% | 71,70 | 74,77 | 77,84 | 80,91 | 83,98 |
+| 39,6% | 78,29 | 81,67 | 85,06 | 88,44 | 91,82 |
+| 41,6% | 85,46 | 89,18 | 92,91 | 96,63 | 100,36 |
+| 43,6% | 93,26 | 97,35 | 101,45 | 105,55 | 109,65 |
+| 45,6% | 101,73 | 106,23 | 110,74 | 115,24 | 119,74 |
 
 
 ### Pre-mortem
@@ -314,6 +316,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 |  | Margen 40% | Margen 45% | Margen 50% |
 |---|---:|---:|---:|
 | Beta 1,25 | ninguno entre −10% y 60% | 59,5% (0% de las empresas) | 57,0% (0% de las empresas) |
+| Beta 1,25 | ninguno entre −10% y 60% | 59,5% (0% de las empresas) | 57,0% (0% de las empresas) |
 
 Frente al valor esperado de las historias (US$51,02), el precio está por encima en 269%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
@@ -328,7 +331,7 @@ Frente al valor esperado de las historias (US$51,02), el precio está por encima
 | Valor esperado (valor principal) | US$51,02 |  |
 | DCF base hoy (historia A) | US$55,62 |  |
 | Precio con MOS sobre el valor esperado | US$33,16 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$15,72 a US$95,62 |  |
+| Rango (historia más débil a más fuerte) | US$15,71 a US$95,59 |  |
 | Confianza | Baja: el crecimiento futuro es muy incierto y la distancia al precio es enorme |  |
 | Qué cambiaría la opinión | Crecimiento comercial sostenido por encima de 40% con márgenes en alza durante varios años |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |
