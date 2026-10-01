@@ -117,7 +117,76 @@ En A, año 1: NOPAT = 62.353,81 × 14,00% × (1 − 25,00%) = US$6.547,15 millon
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: A, 54,1% (4,99% / 9,22%); B, 54,1% (4,99% / 9,22%); C, 9,9% (0,91% / 9,22%); D, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Plataforma madura que escala márgenes** — probabilidad 45%; valor terminal 240.046 (VP 106.204); DCF US$89,63 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 62.354 | 12,9% | 14,0% | 6.547 | 3.011 | 3.536 | 8,2% | 3.269 |
+| 2 | 69.881 | 12,1% | 17,2% | 9.015 | 3.024 | 5.990 | 8,2% | 5.118 |
+| 3 | 77.442 | 10,8% | 18,8% | 10.919 | 3.076 | 7.843 | 8,2% | 6.194 |
+| 4 | 85.133 | 9,9% | 20,4% | 13.025 | 3.074 | 9.951 | 8,2% | 7.264 |
+| 5 | 92.818 | 9,0% | 22,0% | 15.315 | 3.052 | 12.263 | 8,2% | 8.274 |
+| 6 | 100.447 | 8,2% | 22,0% | 16.574 | 2.127 | 14.447 | 8,4% | 8.993 |
+| 7 | 107.893 | 7,4% | 22,0% | 17.802 | 2.036 | 15.766 | 8,6% | 9.037 |
+| 8 | 115.019 | 6,6% | 22,0% | 18.978 | 1.905 | 17.073 | 8,8% | 8.994 |
+| 9 | 121.687 | 5,8% | 22,0% | 20.078 | 1.735 | 18.343 | 9,0% | 8.864 |
+| 10 | 127.759 | 5,0% | 22,0% | 21.080 | 1.821 | 19.259 | 9,2% | 8.521 |
+| Terminal | 134.135 | 5,0% | 22,0% | 22.132 | 11.978 | 10.154 | 9,2% | — |
+
+**B · Robotaxis y regulación presionan la movilidad** — probabilidad 25%; valor terminal 131.816 (VP 58.320); DCF US$53,68 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 60.697 | 9,9% | 14,0% | 6.373 | 1.849 | 4.524 | 8,2% | 4.181 |
+| 2 | 65.321 | 7,6% | 14,8% | 7.251 | 1.626 | 5.625 | 8,2% | 4.806 |
+| 3 | 69.385 | 6,2% | 15,2% | 7.910 | 1.486 | 6.424 | 8,2% | 5.073 |
+| 4 | 73.099 | 5,4% | 15,6% | 8.553 | 1.308 | 7.245 | 8,2% | 5.288 |
+| 5 | 76.369 | 4,5% | 16,0% | 9.164 | 1.398 | 7.766 | 8,2% | 5.240 |
+| 6 | 79.864 | 4,6% | 16,0% | 9.584 | 1.068 | 8.516 | 8,4% | 5.301 |
+| 7 | 83.601 | 4,7% | 16,0% | 10.032 | 1.142 | 8.890 | 8,6% | 5.095 |
+| 8 | 87.599 | 4,8% | 16,0% | 10.512 | 1.223 | 9.289 | 8,8% | 4.893 |
+| 9 | 91.880 | 4,9% | 16,0% | 11.026 | 1.310 | 9.716 | 9,0% | 4.695 |
+| 10 | 96.465 | 5,0% | 16,0% | 11.576 | 1.375 | 10.200 | 9,2% | 4.513 |
+| Terminal | 101.278 | 5,0% | 16,0% | 12.153 | 6.578 | 5.576 | 9,2% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** — probabilidad 10%; valor terminal 52.389 (VP 23.179); DCF US$28,29 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 58.802 | 6,5% | 14,0% | 6.174 | 739 | 5.435 | 8,2% | 5.024 |
+| 2 | 60.650 | 3,1% | 12,4% | 5.640 | -21 | 5.661 | 8,2% | 4.837 |
+| 3 | 60.598 | -0,1% | 11,6% | 5.272 | -60 | 5.332 | 8,2% | 4.211 |
+| 4 | 60.449 | -0,2% | 10,8% | 4.896 | 220 | 4.676 | 8,2% | 3.414 |
+| 5 | 60.999 | 0,9% | 10,0% | 4.575 | 222 | 4.353 | 8,2% | 2.937 |
+| 6 | 61.553 | 0,9% | 10,0% | 4.617 | 160 | 4.457 | 8,4% | 2.774 |
+| 7 | 62.113 | 0,9% | 10,0% | 4.658 | 161 | 4.497 | 8,6% | 2.578 |
+| 8 | 62.678 | 0,9% | 10,0% | 4.701 | 163 | 4.538 | 8,8% | 2.391 |
+| 9 | 63.248 | 0,9% | 10,0% | 4.744 | 164 | 4.579 | 9,0% | 2.213 |
+| 10 | 63.823 | 0,9% | 10,0% | 4.787 | 166 | 4.621 | 9,2% | 2.044 |
+| Terminal | 64.404 | 0,9% | 10,0% | 4.830 | 476 | 4.354 | 9,2% | — |
+
+**D · Uber es la red de los vehículos autónomos** — probabilidad 20%; valor terminal 338.164 (VP 149.615); DCF US$122,08 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 63.753 | 15,4% | 14,0% | 6.694 | 3.862 | 2.832 | 8,2% | 2.618 |
+| 2 | 73.408 | 15,1% | 18,8% | 10.351 | 4.082 | 6.269 | 8,2% | 5.356 |
+| 3 | 83.613 | 13,9% | 21,2% | 13.294 | 4.225 | 9.069 | 8,2% | 7.162 |
+| 4 | 94.176 | 12,6% | 23,6% | 16.669 | 4.422 | 12.247 | 8,2% | 8.940 |
+| 5 | 105.232 | 11,7% | 26,0% | 20.520 | 4.373 | 16.147 | 8,2% | 10.895 |
+| 6 | 116.165 | 10,4% | 26,0% | 22.652 | 3.000 | 19.652 | 8,4% | 12.233 |
+| 7 | 126.665 | 9,0% | 26,0% | 24.700 | 2.783 | 21.917 | 8,6% | 12.562 |
+| 8 | 136.406 | 7,7% | 26,0% | 26.599 | 2.471 | 24.128 | 8,8% | 12.710 |
+| 9 | 145.053 | 6,3% | 26,0% | 28.285 | 2.068 | 26.217 | 9,0% | 12.669 |
+| 10 | 152.292 | 5,0% | 26,0% | 29.697 | 2.171 | 27.526 | 9,2% | 12.178 |
+| Terminal | 159.891 | 5,0% | 26,0% | 31.179 | 16.874 | 14.304 | 9,2% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -131,7 +200,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (74.526,48 + 106.204,30 + 5.391 + 12.532 − 14.731 − 1.083) / 2.040,0 = US$89,63 por acción. El terminal representa 58,8% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 45% / 25% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

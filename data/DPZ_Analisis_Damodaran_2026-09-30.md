@@ -117,7 +117,76 @@ En A, año 1: NOPAT = 5.137,60 × 19,00% × (1 − 21,89%) = US$762,47 millones.
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 27,1% (4,99% / 18,40%); B, 55,4% (4,99% / 9,00%); C, 11,1% (1,00% / 9,00%); D, 27,1% (4,99% / 18,40%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Crece por tiendas con ventas mismas tiendas bajas** — probabilidad 50%; valor terminal 22.907,6 (VP 10.546,5); DCF US$352,14 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 5.137,6 | 4,0% | 19,0% | 762,5 | 71,9 | 690,5 | 7,7% | 641,4 |
+| 2 | 5.353,4 | 4,2% | 19,4% | 811,2 | 83,9 | 727,3 | 7,7% | 627,4 |
+| 3 | 5.605,1 | 4,7% | 19,6% | 858,1 | 87,8 | 770,3 | 7,7% | 617,2 |
+| 4 | 5.868,6 | 4,7% | 19,8% | 907,6 | 92,0 | 815,6 | 7,7% | 607,0 |
+| 5 | 6.144,5 | 4,7% | 20,0% | 959,9 | 97,5 | 862,4 | 7,7% | 596,1 |
+| 6 | 6.437,0 | 4,8% | 20,0% | 1.002,7 | 103,4 | 899,4 | 7,9% | 575,9 |
+| 7 | 6.747,1 | 4,8% | 20,0% | 1.048,0 | 109,6 | 938,4 | 8,2% | 555,4 |
+| 8 | 7.076,0 | 4,9% | 20,0% | 1.096,0 | 116,3 | 979,6 | 8,5% | 534,6 |
+| 9 | 7.425,0 | 4,9% | 20,0% | 1.146,7 | 123,5 | 1.023,2 | 8,7% | 513,5 |
+| 10 | 7.795,5 | 5,0% | 20,0% | 1.200,5 | 129,7 | 1.070,8 | 9,0% | 493,0 |
+| Terminal | 8.184,5 | 5,0% | 20,0% | 1.260,4 | 341,8 | 918,6 | 9,0% | — |
+
+**B · Los agregadores erosionan la ventaja** — probabilidad 25%; valor terminal 11.363,2 (VP 5.231,5); DCF US$172,24 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 5.048,7 | 2,2% | 19,0% | 749,3 | 40,4 | 708,8 | 7,7% | 658,4 |
+| 2 | 5.170,0 | 2,4% | 18,8% | 759,2 | 46,6 | 712,6 | 7,7% | 614,8 |
+| 3 | 5.309,7 | 2,7% | 18,7% | 775,6 | 47,8 | 727,7 | 7,7% | 583,1 |
+| 4 | 5.453,2 | 2,7% | 18,6% | 792,3 | 49,1 | 743,1 | 7,7% | 553,0 |
+| 5 | 5.600,6 | 2,7% | 18,5% | 809,3 | 59,0 | 750,3 | 7,7% | 518,6 |
+| 6 | 5.777,6 | 3,2% | 18,5% | 832,5 | 69,7 | 762,8 | 7,9% | 488,5 |
+| 7 | 5.986,6 | 3,6% | 18,5% | 860,2 | 81,3 | 778,8 | 8,2% | 461,0 |
+| 8 | 6.230,6 | 4,1% | 18,5% | 892,7 | 94,1 | 798,5 | 8,5% | 435,7 |
+| 9 | 6.513,0 | 4,5% | 18,5% | 930,5 | 108,3 | 822,1 | 8,7% | 412,6 |
+| 10 | 6.838,0 | 5,0% | 18,5% | 974,1 | 113,7 | 860,3 | 9,0% | 396,1 |
+| Terminal | 7.179,3 | 5,0% | 18,5% | 1.022,7 | 567,0 | 455,7 | 9,0% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: El sistema de franquicias se debilita** — probabilidad 5%; valor terminal 7.889,6 (VP 3.632,3); DCF US$108,74 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 4.940,0 | 0,0% | 19,0% | 733,1 | 6,6 | 726,5 | 7,7% | 674,8 |
+| 2 | 4.959,8 | 0,4% | 18,2% | 705,1 | 16,5 | 688,6 | 7,7% | 594,0 |
+| 3 | 5.009,4 | 1,0% | 17,8% | 696,5 | 16,7 | 679,8 | 7,7% | 544,7 |
+| 4 | 5.059,5 | 1,0% | 17,4% | 687,6 | 16,9 | 670,8 | 7,7% | 499,2 |
+| 5 | 5.110,1 | 1,0% | 17,0% | 678,6 | 17,0 | 661,5 | 7,7% | 457,2 |
+| 6 | 5.161,2 | 1,0% | 17,0% | 683,4 | 17,2 | 666,2 | 7,9% | 426,6 |
+| 7 | 5.212,8 | 1,0% | 17,0% | 688,3 | 17,4 | 670,9 | 8,2% | 397,1 |
+| 8 | 5.264,9 | 1,0% | 17,0% | 693,2 | 17,5 | 675,6 | 8,5% | 368,6 |
+| 9 | 5.317,6 | 1,0% | 17,0% | 698,1 | 17,7 | 680,4 | 8,7% | 341,4 |
+| 10 | 5.370,8 | 1,0% | 17,0% | 703,0 | 17,9 | 685,1 | 9,0% | 315,4 |
+| Terminal | 5.424,5 | 1,0% | 17,0% | 710,1 | 78,9 | 631,2 | 9,0% | — |
+
+**D · Agregadores e internacional aceleran** — probabilidad 20%; valor terminal 26.581,4 (VP 12.237,9); DCF US$420,89 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 5.256,2 | 6,4% | 19,0% | 780,1 | 112,2 | 667,9 | 7,7% | 620,3 |
+| 2 | 5.592,8 | 6,4% | 19,8% | 865,0 | 119,4 | 745,6 | 7,7% | 643,2 |
+| 3 | 5.951,0 | 6,4% | 20,2% | 939,0 | 117,2 | 821,8 | 7,7% | 658,4 |
+| 4 | 6.302,6 | 5,9% | 20,6% | 1.014,1 | 119,9 | 894,3 | 7,7% | 665,5 |
+| 5 | 6.662,1 | 5,7% | 21,0% | 1.092,8 | 123,5 | 969,3 | 7,7% | 670,0 |
+| 6 | 7.032,7 | 5,6% | 21,0% | 1.150,3 | 127,0 | 1.023,3 | 7,9% | 655,3 |
+| 7 | 7.413,7 | 5,4% | 21,0% | 1.209,2 | 130,4 | 1.078,8 | 8,2% | 638,5 |
+| 8 | 7.804,9 | 5,3% | 21,0% | 1.269,3 | 133,5 | 1.135,8 | 8,5% | 619,7 |
+| 9 | 8.205,5 | 5,1% | 21,0% | 1.330,7 | 136,5 | 1.194,2 | 8,7% | 599,3 |
+| 10 | 8.615,0 | 5,0% | 21,0% | 1.393,0 | 143,3 | 1.249,7 | 9,0% | 575,4 |
+| Terminal | 9.044,9 | 5,0% | 21,0% | 1.462,6 | 396,6 | 1.065,9 | 9,0% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -131,7 +200,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (5.761,43 + 10.546,54 + 165 − 4.817) / 33,1 = US$352,14 por acción. El terminal representa 64,7% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 50% / 25% / 5% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

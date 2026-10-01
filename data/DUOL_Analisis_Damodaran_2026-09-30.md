@@ -117,7 +117,76 @@ En A, año 1: NOPAT = 1.299,74 × 20,00% × (1 − 9,62%) = US$234,94 millones. 
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: A, 54,1% (4,99% / 9,22%); B, 54,1% (4,99% / 9,22%); C, 0,0% (0,00% / 9,22%); D, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · La audiencia crece y la monetización se recupera en parte** — probabilidad 40%; valor terminal 6.328,7 (VP 2.348,2); DCF US$125,64 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 1.299,7 | 13,5% | 20,0% | 234,9 | 40,6 | 194,4 | 10,9% | 175,2 |
+| 2 | 1.462,0 | 12,5% | 22,0% | 290,7 | 41,9 | 248,8 | 10,9% | 202,2 |
+| 3 | 1.629,4 | 11,5% | 23,0% | 338,7 | 43,2 | 295,5 | 10,9% | 216,4 |
+| 4 | 1.802,2 | 10,6% | 24,0% | 390,9 | 43,1 | 347,9 | 10,9% | 229,6 |
+| 5 | 1.974,4 | 9,6% | 25,0% | 446,1 | 42,7 | 403,5 | 10,9% | 240,1 |
+| 6 | 2.145,1 | 8,6% | 26,0% | 486,9 | 36,8 | 450,1 | 10,6% | 242,1 |
+| 7 | 2.310,9 | 7,7% | 27,0% | 525,5 | 35,0 | 490,5 | 10,3% | 239,4 |
+| 8 | 2.468,4 | 6,8% | 27,0% | 540,9 | 32,4 | 508,5 | 9,9% | 225,8 |
+| 9 | 2.614,1 | 5,9% | 27,0% | 551,1 | 29,0 | 522,1 | 9,6% | 211,6 |
+| 10 | 2.744,6 | 5,0% | 27,0% | 555,8 | 30,4 | 525,3 | 9,2% | 194,9 |
+| Terminal | 2.881,5 | 5,0% | 27,0% | 583,5 | 315,8 | 267,7 | 9,2% | — |
+
+**B · La monetización se estanca** — probabilidad 30%; valor terminal 4.197,6 (VP 1.557,5); DCF US$98,99 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 1.253,7 | 9,5% | 20,0% | 226,6 | 26,7 | 199,9 | 10,9% | 180,2 |
+| 2 | 1.360,4 | 8,5% | 20,9% | 256,5 | 25,9 | 230,6 | 10,9% | 187,4 |
+| 3 | 1.463,9 | 7,6% | 21,3% | 281,6 | 24,4 | 257,2 | 10,9% | 188,4 |
+| 4 | 1.561,6 | 6,7% | 21,7% | 306,5 | 22,4 | 284,0 | 10,9% | 187,5 |
+| 5 | 1.651,3 | 5,7% | 22,1% | 330,5 | 23,1 | 307,4 | 10,9% | 182,9 |
+| 6 | 1.743,7 | 5,6% | 22,6% | 343,6 | 21,1 | 322,5 | 10,6% | 173,5 |
+| 7 | 1.838,6 | 5,4% | 23,0% | 356,2 | 21,6 | 334,6 | 10,3% | 163,3 |
+| 8 | 1.935,9 | 5,3% | 23,0% | 361,3 | 22,1 | 339,2 | 9,9% | 150,6 |
+| 9 | 2.035,4 | 5,1% | 23,0% | 365,5 | 22,6 | 342,9 | 9,6% | 139,0 |
+| 10 | 2.136,9 | 5,0% | 23,0% | 368,6 | 23,7 | 344,9 | 9,2% | 128,0 |
+| Terminal | 2.243,6 | 5,0% | 23,0% | 387,0 | 209,5 | 177,6 | 9,2% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas** — probabilidad 10%; valor terminal 1.369,8 (VP 508,3); DCF US$64,28 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 1.194,8 | 4,3% | 20,0% | 216,0 | 4,7 | 211,3 | 10,9% | 190,4 |
+| 2 | 1.213,6 | 1,6% | 18,6% | 203,7 | -0,5 | 204,2 | 10,9% | 165,9 |
+| 3 | 1.211,7 | -0,2% | 17,9% | 195,6 | -5,8 | 201,3 | 10,9% | 147,4 |
+| 4 | 1.188,7 | -1,9% | 17,1% | 184,2 | -5,6 | 189,8 | 10,9% | 125,3 |
+| 5 | 1.166,2 | -1,9% | 16,4% | 173,2 | -4,4 | 177,6 | 10,9% | 105,7 |
+| 6 | 1.148,5 | -1,5% | 15,7% | 157,6 | -2,9 | 160,5 | 10,6% | 86,3 |
+| 7 | 1.135,5 | -1,1% | 15,0% | 143,5 | -1,9 | 145,4 | 10,3% | 70,9 |
+| 8 | 1.126,9 | -0,8% | 15,0% | 137,2 | -0,9 | 138,1 | 9,9% | 61,3 |
+| 9 | 1.122,6 | -0,4% | 15,0% | 131,5 | 0,0 | 131,5 | 9,6% | 53,3 |
+| 10 | 1.122,6 | 0,0% | 15,0% | 126,3 | 0,0 | 126,3 | 9,2% | 46,9 |
+| Terminal | 1.122,6 | 0,0% | 15,0% | 126,3 | 0,0 | 126,3 | 9,2% | — |
+
+**D · La IA sube el ingreso por usuario** — probabilidad 20%; valor terminal 9.202,2 (VP 3.414,4); DCF US$162,33 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 1.364,5 | 19,2% | 20,0% | 246,6 | 58,7 | 187,9 | 10,9% | 169,4 |
+| 2 | 1.599,2 | 17,2% | 23,4% | 338,6 | 61,0 | 277,7 | 10,9% | 225,6 |
+| 3 | 1.843,1 | 15,3% | 25,1% | 418,8 | 61,7 | 357,1 | 10,9% | 261,5 |
+| 4 | 2.090,0 | 13,4% | 26,9% | 507,3 | 60,6 | 446,7 | 10,9% | 294,9 |
+| 5 | 2.332,5 | 11,6% | 28,6% | 602,3 | 59,9 | 542,4 | 10,9% | 322,7 |
+| 6 | 2.572,3 | 10,3% | 30,3% | 680,1 | 51,2 | 628,9 | 10,6% | 338,4 |
+| 7 | 2.802,7 | 9,0% | 32,0% | 755,4 | 47,6 | 707,9 | 10,3% | 345,4 |
+| 8 | 3.016,7 | 7,6% | 32,0% | 783,4 | 42,3 | 741,1 | 9,9% | 329,0 |
+| 9 | 3.207,1 | 6,3% | 32,0% | 801,3 | 35,6 | 765,7 | 9,6% | 310,3 |
+| 10 | 3.367,2 | 5,0% | 32,0% | 808,1 | 37,3 | 770,8 | 9,2% | 286,0 |
+| Terminal | 3.535,2 | 5,0% | 32,0% | 848,4 | 459,2 | 389,3 | 9,2% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -131,7 +200,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (2.177,32 + 2.348,21 + 1.181 + 456 − 94) / 48,3 = US$125,64 por acción. El terminal representa 51,9% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

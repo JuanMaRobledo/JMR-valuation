@@ -21,7 +21,7 @@ No modifica la hoja. Escribe reference/damodaran/<T>_resultado.json, la sección
 (reference/damodaran/<T>_seccion.html) y en Markdown (data/<T>_Analisis_Damodaran_<fecha>.md).
 
 Uso:
-    python scripts/damodaran_stories.py CELH [ADBE ...]
+    python scripts/damodaran_stories.py CELH [ADBE ...] [--offline]
 """
 from __future__ import annotations
 
@@ -436,7 +436,9 @@ def origen_calculo(r: dict, W) -> None:
             f"millones y FCFE US${mn(dA['flujo'][1], 2)} millones. Se descuenta al costo del patrimonio; en perpetuidad, "
             "FCFE₁₁ = utilidad₁₁ × (1 − g / Ke terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g). No se resta deuda.")
 
-    W.h4(f"{3 if fin else 4}. Puente numérico de los cuatro DCF")
+    trayectorias(r, W, f"{3 if fin else 4}. Trayectoria anual de cada historia")
+
+    W.h4(f"{4 if fin else 5}. Puente numérico de los cuatro DCF")
     W.p(f"Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.")
     flujo = "FCFE" if fin else "FCFF"
     rows = [[h["id"], mn(h["detalle"]["pvFlujos"], 2), mn(h["detalle"]["pvTerminal"], 2)] +
@@ -456,7 +458,7 @@ def origen_calculo(r: dict, W) -> None:
             "materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente." +
             (f" Los activos operativos ya descuentan la probabilidad de fracaso de {pct(dA['probFracaso'], 0)}." if dA["probFracaso"] else ""))
 
-    W.h4(f"{4 if fin else 5}. Valor esperado, probabilidades y margen de seguridad")
+    W.h4(f"{5 if fin else 6}. Valor esperado, probabilidades y margen de seguridad")
     W.p("Las probabilidades " + " / ".join(pct(h["prob"], 0) for h in hs) + " son juicio del analista (ver «Historias "
         "cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos "
         "discutibles y revisables, no como precisión empírica.")
@@ -471,6 +473,57 @@ def origen_calculo(r: dict, W) -> None:
         "MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en "
         "B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia "
         "verifica la aritmética, no la validez económica de los supuestos.")
+
+
+def trayectorias(r: dict, W, titulo: str) -> None:
+    """Tabla año por año (1-10 y perpetuidad) de cada historia: lo que la hoja calcula en «Escenarios e historias»."""
+    fin = r.get("financiero")
+    W.h4(titulo)
+    W.p("Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e "
+        "historias»: " + ("utilidad, crecimiento, ROE, reinversión patrimonial, flujo al accionista (FCFE), costo del patrimonio "
+                          "y su valor presente." if fin else
+                          "ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente.") +
+        " Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el "
+        "factor del año 10).")
+    for h in r["historias"]:
+        d = h["detalle"]
+        base = d["utilidad"] if fin else d["ingresos"]
+        big = max(abs(x) for x in base[1:11]) >= 10000
+        nd = 0 if big else 1
+        rows = []
+        for y in range(1, 12):
+            t = y == 11
+            g = d["gTerminal"] if t else d["crecimiento"][y]
+            if fin:
+                ni = base[10] * (1 + g) if t else base[y]
+                roe = d["tasaTerminal"] if t else d["margen"][y]
+                reinv = ni * g / d["tasaTerminal"] if t else d["reinversion"][y]
+                fl = ni - reinv
+                rows.append(["Terminal" if t else str(y), es(ni, nd), pct(g), pct(roe), es(reinv, nd), es(fl, nd),
+                             pct(d["tasaTerminal"] if t else d["tasa"][y]), "—" if t else es(d["flujo"][y] / _acum(d["tasa"], y), nd)])
+            else:
+                rev = base[11] if t else base[y]
+                m = d["margen"][10] if t else d["margen"][y]
+                nop = rev * m * (1 - d["impuestoMarg"]) if t else d["nopat"][y]
+                reinv = nop * g / d["roicTerminal"] if t else d["reinversion"][y]
+                fl = nop - reinv
+                rows.append(["Terminal" if t else str(y), es(rev, nd), pct(g), pct(m), es(nop, nd), es(reinv, nd), es(fl, nd),
+                             pct(d["tasaTerminal"] if t else d["tasa"][y]), "—" if t else es(d["flujo"][y] / _acum(d["tasa"], y), nd)])
+        nom = h["nombre"] + (f": {h['descripcion']}" if h.get("descripcion") else "")
+        W.p(f"**{nom}** — probabilidad {pct(h['prob'], 0)}; valor terminal {es(d['valorTerminal'], nd)} (VP {es(d['pvTerminal'], nd)}); "
+            f"DCF {usd(h['valor_beta_hoja'])} por acción.")
+        if fin:
+            W.tab(["Año", "Utilidad", "Crecimiento", "ROE", "Reinversión", "FCFE", "Ke", "VP del FCFE"], rows, ["l"] + ["r"] * 7)
+        else:
+            W.tab(["Año", "Ingresos", "Crecimiento", "Margen", "NOPAT", "Reinversión", "FCFF", "WACC", "VP del FCFF"], rows,
+                  ["l"] + ["r"] * 8)
+
+
+def _acum(tasas, y):
+    f = 1.0
+    for n in range(1, y + 1):
+        f *= 1 + tasas[n]
+    return f
 
 
 def low(t: str) -> str:
@@ -762,8 +815,13 @@ def render(r: dict) -> tuple[str, str]:
 
 
 def main(tickers):
-    for tk in tickers:
-        r = compute(tk)
+    offline = "--offline" in tickers  # vuelve a redactar desde <T>_resultado.json, sin leer la hoja
+    for tk in [t for t in tickers if not t.startswith("--")]:
+        if offline:
+            r = json.loads((REF / f"{tk}_resultado.json").read_text())
+            r["spec"] = json.loads((REF / f"{tk}.json").read_text())
+        else:
+            r = compute(tk)
         md, ht = render(r)
         (REF / f"{tk}_resultado.json").write_text(json.dumps({k: v for k, v in r.items() if k != "spec"}, ensure_ascii=False, indent=1))
         (REF / f"{tk}_seccion.html").write_text(ht)
