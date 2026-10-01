@@ -1,0 +1,14 @@
+{
+ "ticker": "CELH_PREF",
+ "sheet_id": "1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B76",
+   "antes": 1759.975,
+   "despues": 1135,
+   "motivo": "Preferentes de PepsiCo a su valor de liquidación: Serie A US$550M + Serie B US$585M (10-Q 2T26, nota de preferentes). Antes 1.759,975, el valor contable en mezzanine (852,4 + 907,6), que no es lo que cobraría PepsiCo. La conversión es solo a opción de Celsius o automática con el precio por encima de US$25 (A) y US$51,75 (B); por debajo, Celsius puede redimir y PepsiCo exigir la redención desde 2032 al valor declarado. Con el valor intrínseco por debajo de US$25, el derecho económico es el de liquidación."
+  }
+ ]
+}

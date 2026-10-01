@@ -31,9 +31,9 @@
   "salesToCapital": 2.4652
  },
  "financiero": false,
- "dcf_sin_exceso": 13.73923795836074,
+ "dcf_sin_exceso": 16.20616988015784,
  "precio": 27.42,
- "dcf_base": 13.739237958360732,
+ "dcf_base": 16.206169880157834,
  "g_ref": 0.062,
  "m_base": 0.170929,
  "s2c": 2.4652,
@@ -146,12 +146,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 18.407022353166692,
+    "v": 20.873954274963797,
     "pvFlujos": 2746.595634447878,
     "pvTerminal": 3730.460894146863,
     "valorTerminal": 10075.629635410824,
     "activosOperativos": 6477.056528594742,
-    "patrimonio": 4663.253449973603,
+    "patrimonio": 5288.228449973603,
     "ingresos": [
      3047.3,
      3396.14,
@@ -253,7 +253,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
-    "preferentes": 1759.975,
+    "preferentes": 1135,
     "acciones": 253.341,
     "probFracaso": 0,
     "nol0": 0,
@@ -266,10 +266,10 @@
     "wacc0": 0.11069683729593352,
     "margenY1": 0.120929
    },
-   "valor_bruto": 18.407022353166692,
-   "valor_bruto_prop": 21.480608075821525,
-   "valor_beta_hoja": 18.407022353166692,
-   "valor_beta_prop": 21.480608075821525
+   "valor_bruto": 20.873954274963797,
+   "valor_bruto_prop": 23.94753999761863,
+   "valor_beta_hoja": 20.873954274963797,
+   "valor_beta_prop": 23.94753999761863
   },
   {
    "nombre": "Conservadora · Alani crece, Celsius sigue cediendo",
@@ -329,12 +329,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 10.740793328536567,
+    "v": 13.20772525033367,
     "pvFlujos": 2100.013019899241,
     "pvTerminal": 2434.873381366678,
     "valorTerminal": 6576.367664988378,
     "activosOperativos": 4534.886401265921,
-    "patrimonio": 2721.0833226447826,
+    "patrimonio": 3346.0583226447825,
     "ingresos": [
      3047.3,
      3204.6319999999996,
@@ -436,7 +436,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
-    "preferentes": 1759.975,
+    "preferentes": 1135,
     "acciones": 253.341,
     "probFracaso": 0,
     "nol0": 0,
@@ -449,10 +449,10 @@
     "wacc0": 0.11069683729593352,
     "margenY1": 0.120929
    },
-   "valor_bruto": 10.740793328536567,
-   "valor_bruto_prop": 12.796286208148723,
-   "valor_beta_hoja": 10.740793328536567,
-   "valor_beta_prop": 12.796286208148723
+   "valor_bruto": 13.20772525033367,
+   "valor_bruto_prop": 15.263218129945827,
+   "valor_beta_hoja": 13.20772525033367,
+   "valor_beta_prop": 15.263218129945827
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -515,12 +515,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 3.300739626298522,
+    "v": 5.767671548095625,
     "pvFlujos": 1627.4224778748714,
     "pvTerminal": 1022.5932784123611,
     "valorTerminal": 2761.9298079520013,
     "activosOperativos": 2650.0157562872328,
-    "patrimonio": 836.2126776660939,
+    "patrimonio": 1461.1876776660938,
     "ingresos": [
      3047.3,
      3000.5280000000002,
@@ -622,7 +622,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
-    "preferentes": 1759.975,
+    "preferentes": 1135,
     "acciones": 253.341,
     "probFracaso": 0,
     "nol0": 0,
@@ -635,10 +635,10 @@
     "wacc0": 0.11069683729593352,
     "margenY1": 0.120929
    },
-   "valor_bruto": 3.300739626298522,
-   "valor_bruto_prop": 4.356404770987178,
-   "valor_beta_hoja": 3.300739626298522,
-   "valor_beta_prop": 4.356404770987178
+   "valor_bruto": 5.767671548095625,
+   "valor_bruto_prop": 6.823336692784281,
+   "valor_beta_hoja": 5.767671548095625,
+   "valor_beta_prop": 6.823336692784281
   },
   {
    "nombre": "Optimista · Plataforma multimarca",
@@ -698,12 +698,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 25.933427459325596,
+    "v": 28.4003593811227,
     "pvFlujos": 3110.728425394104,
     "pvTerminal": 5273.075099200038,
     "valorTerminal": 14242.087840300821,
     "activosOperativos": 8383.803524594145,
-    "patrimonio": 6570.000445973006,
+    "patrimonio": 7194.975445973007,
     "ingresos": [
      3047.3,
      3585.989000000001,
@@ -805,7 +805,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
-    "preferentes": 1759.975,
+    "preferentes": 1135,
     "acciones": 253.341,
     "probFracaso": 0,
     "nol0": 0,
@@ -818,35 +818,35 @@
     "wacc0": 0.11069683729593352,
     "margenY1": 0.120929
    },
-   "valor_bruto": 25.933427459325596,
-   "valor_bruto_prop": 30.142816841237963,
-   "valor_beta_hoja": 25.933427459325596,
-   "valor_beta_prop": 30.142816841237963
+   "valor_bruto": 28.4003593811227,
+   "valor_bruto_prop": 32.60974876303507,
+   "valor_beta_hoja": 28.4003593811227,
+   "valor_beta_prop": 32.60974876303507
   }
  ],
- "valor_esperado_beta_hoja": 14.210540296131814,
- "valor_esperado_beta_prop": 16.73868580295254,
+ "valor_esperado_beta_hoja": 16.67747221792892,
+ "valor_esperado_beta_prop": 19.20561772474964,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.5,
    "ke": 0.1168,
    "wacc": 0.11069683729593352,
-   "dcf_base": 13.73923795836074
+   "dcf_base": 16.20616988015784
   },
   {
    "enfoque": "Bottom-up del sector (Beverage (Soft), reapalancada)",
    "beta": 0.6257586909464695,
    "ke": 0.07780883761621255,
    "wacc": 0.07537262112513568,
-   "dcf_base": 18.28896978185403
+   "dcf_base": 20.755901703651134
   },
   {
    "enfoque": "Propuesta (sector ajustado por riesgo propio)",
    "beta": 1.0,
    "ke": 0.0945,
    "wacc": 0.09049405357650457,
-   "dcf_base": 16.206243050749027
+   "dcf_base": 18.673174972546132
   }
  ],
  "sensibilidad": {
@@ -866,149 +866,149 @@
   ],
   "v": [
    [
-    6.466867305738453,
-    8.406469026833035,
-    10.346070747927618,
-    12.285672469022199,
-    14.225274190116783
+    8.933799227535555,
+    10.873400948630138,
+    12.813002669724721,
+    14.752604390819302,
+    16.692206111913887
    ],
    [
-    7.5730417325950405,
-    9.763367885865009,
-    11.953694039134975,
-    14.14402019240494,
-    16.334346345674902
+    10.039973654392144,
+    12.230299807662112,
+    14.420625960932076,
+    16.610952114202043,
+    18.801278267472007
    ],
    [
-    8.789887250654276,
-    11.259709716628564,
-    13.729532182602847,
-    16.199354648577135,
-    18.669177114551417
+    11.25681917245138,
+    13.726641638425667,
+    16.19646410439995,
+    18.66628657037424,
+    21.136109036348522
    ],
    [
-    10.128078845162664,
-    12.909016649296378,
-    15.689954453430092,
-    18.470892257563797,
-    21.25183006169751
+    12.595010766959767,
+    15.375948571093481,
+    18.156886375227195,
+    20.937824179360902,
+    23.718761983494616
    ],
    [
-    11.599154802041562,
-    14.725909365631342,
-    17.852663929221112,
-    20.97941849281088,
-    24.106173056400653
+    14.066086723838666,
+    17.192841287428447,
+    20.319595851018217,
+    23.446350414607984,
+    26.573104978197755
    ]
   ],
-  "referencia_constante": 13.729532182602847,
+  "referencia_constante": 16.19646410439995,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.5,
    "margen": 0.17092912421809806,
-   "g": 0.17272120976228955,
-   "tasa_base": 0.12346909657050503
+   "g": 0.15665023843152281,
+   "tasa_base": 0.16203942776434524
   },
   {
    "beta": 1.5,
    "margen": 0.19092912421809805,
-   "g": 0.14584241379309304,
-   "tasa_base": 0.18797820689657668
+   "g": 0.13013535828914513,
+   "tasa_base": 0.22567514010605166
   },
   {
    "beta": 1.5,
    "margen": 0.22092912421809804,
-   "g": 0.11271624932410232,
-   "tasa_base": 0.30408657863632954
+   "g": 0.09744349609219005,
+   "tasa_base": 0.3862539910240176
   },
   {
    "beta": 1.0,
    "margen": 0.17092912421809806,
-   "g": 0.14672871809632515,
-   "tasa_base": 0.1858510765688196
+   "g": 0.13086438991142157,
+   "tasa_base": 0.22392546421258822
   },
   {
    "beta": 1.0,
    "margen": 0.19092912421809805,
-   "g": 0.12088086943128651,
-   "tasa_base": 0.26016092245967853
+   "g": 0.10537916403530712,
+   "tasa_base": 0.3435600974900477
   },
   {
    "beta": 1.0,
    "margen": 0.22092912421809804,
-   "g": 0.08893350936205102,
-   "tasa_base": 0.43203771963216553
+   "g": 0.07386474819010419,
+   "tasa_base": 0.5142429065471352
   }
  ],
  "ingresos_ltm": 3047.3,
  "sens_base": {
-  "base": 18.407022353166692,
+  "base": 20.873954274963797,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 15.667556121989255
+    "valor": 18.13448804378636
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 21.146488584344137
+    "valor": 23.613420506141242
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 16.17369615159706
+    "valor": 18.640628073394165
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 20.872670058786582
+    "valor": 23.339601980583687
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 22.404252584181066
+    "valor": 24.87118450597817
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 15.253261272816122
+    "valor": 17.720193194613223
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 18.18595296997579
+    "valor": 20.652884891772896
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 18.631226085337754
+    "valor": 21.09815800713486
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 17.53049747920637
+    "valor": 19.879956452346473
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 17.65886514608739
+    "valor": 20.125797067884495
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 18.905793824552898
+    "valor": 21.372725746350003
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 18.407022353166692
+    "valor": 20.873954274963797
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 13.73923795836074
+ "motor_tecnico": 16.20616988015784
 }
