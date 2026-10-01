@@ -16,11 +16,11 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Concepto | Antes | Después |
 |---|---:|---:|
 | DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$182,25 |
-| Historia A | US$172,25 | US$187,28 |
-| Historia B | US$108,35 | US$122,83 |
-| Historia C | US$71,34 | US$86,06 |
-| Historia D | US$229,97 | US$244,99 |
-| **Valor esperado (valor intrínseco principal)** | **US$148,45** | **US$163,26** |
+| **DCF Base (valor intrínseco principal)** | US$172,25 | US$187,28 |
+| DCF Conservadora | US$108,35 | US$122,83 |
+| DCF Disrupción | US$71,34 | US$86,06 |
+| DCF Optimista | US$229,97 | US$244,99 |
+| DCF esperado por probabilidades (complemento) | US$148,45 | US$163,26 |
 | Precio con MOS sobre el esperado | US$103,91 | US$114,28 |
 
 ## Hallazgos y correcciones
@@ -55,9 +55,9 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Control | Resultado |
 |---|---|
 | Las probabilidades suman 100% | Sí |
-| Orden de valores C < B < A < D | Sí |
-| Valor esperado = Σ probabilidad × DCF | Sí |
-| MOS aplicado al valor esperado | Sí |
+| Orden de valores Disrupción < Conservadora < Base < Optimista | Sí |
+| DCF esperado = Σ probabilidad × DCF | Sí |
+| MOS aplicado al DCF esperado | Sí |
 | Pestaña «Escenarios e historias» = motor | Sí (H5:H8 y H10 verificados al centavo) |
 | Tramo de tasas base (dólares de 2015) | $7,000-12,000 Mn |
 | Cifras de los textos (tasas base, DCF por beta, ROIC terminal, probabilidades) | Regeneradas desde el cálculo |
@@ -68,6 +68,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF esperado de las cuatro historias: US$163,26 (antes US$148,45); precio con margen de seguridad US$114,28. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$187,28 (antes US$172,25). El DCF esperado de las cuatro historias, complementario, es US$163,26 (antes US$148,45); precio con margen de seguridad sobre el esperado US$114,28. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

@@ -7,9 +7,11 @@ analysis_date: "2026-09-30"
 # Uber Technologies, Inc. (UBER) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$81,21; la historia central A vale US$89,78 y el rango es US$28,81–122,09. El MOS 35% se aplica al esperado: US$52,79. El antiguo caso Base de la hoja (US$88,97) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+**Valor intrínseco principal · DCF Base hoy: US$89,78 por acción** (Base · Plataforma madura que escala márgenes).
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (21 celdas, con respaldo). Valor esperado US$81,00 → US$81,21. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Complemento · DCF esperado por probabilidades: US$81,21.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$28,81–122,09. El MOS 35% se aplica al esperado: US$52,79. El antiguo caso técnico de la hoja (US$88,97) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (21 celdas, con respaldo). DCF esperado US$81,00 → US$81,21. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$88,97 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
@@ -32,12 +34,51 @@ Con ventas LTM de US$55.227 millones (US$39.076 millones en dólares de 2015, de
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · Plataforma madura que escala márgenes | 10,9% | 19% |
-| B · Robotaxis y regulación presionan la movilidad | 6,7% | 37% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 2,0% | 66% |
-| D · Uber es la red de los vehículos autónomos | 13,8% | 12% |
+| Base · Plataforma madura que escala márgenes | 10,9% | 19% |
+| Conservadora · Robotaxis y regulación presionan la movilidad | 6,7% | 37% |
+| Disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber | 2,0% | 66% |
+| Optimista · Uber es la red de los vehículos autónomos | 13,8% | 12% |
 
-En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 10,9% anual cinco años (historia A) lo logró ~19% de las empresas de ese tamaño; 13,8% (historia D), ~12%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.
+En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 10,9% anual cinco años (Base) lo logró ~19% de las empresas de ese tamaño; 13,8% (Optimista), ~12%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.
+
+
+### Justificación de los supuestos
+
+Cada párrafo explica un supuesto material de la tesis Base —el valor intrínseco principal—: qué cifra se usa y con qué trayectoria, qué evidencia la respalda (fuente y fecha), el mecanismo económico, por qué se eligió frente a las alternativas, cómo cambia entre escenarios, qué observación obligaría a cambiarla y cuánto mueve el valor. Las sensibilidades son DCF completos de la Base con un solo supuesto cambiado. Donde falta soporte, el supuesto se declara provisional: un valor heredado de la hoja no queda validado por reproducirse aritméticamente.
+
+**Crecimiento de ingresos.** La Base supone 12,9% el año 1 y 9,0% el año 5: la trayectoria desacelera y equivale a 10,9% anual compuesto en cinco años; después converge al terminal en los años 6–10. Los demás escenarios: Conservadora 6,7%; Disrupción 2,0%; Optimista 13,8% de crecimiento compuesto. Evidencia (Uber, resultados del 2T 2026; datos contrastados con la SEC el 1-oct-2026): Ingresos de US$37.281 millones (2023, +17,0%), US$43.978 millones (2024, +18,0%) y US$52.017 millones (2025, +18,3%); LTM US$55.227 millones. En el 2T26, Movilidad tuvo resultado de segmento de US$2.215 millones (30,1% de ingresos) y Delivery US$1.055 millones (20,1%). Mecanismo de la Base: es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. Por qué esta cifra: la visión externa (The Base Rate Book) indica que ~19% de las empresas de su tamaño lograron ese crecimiento, frente a ~12% para el de la Optimista; la Base no extrapola el mejor resultado reciente ni supone la caída de la Disrupción. Los porcentajes son juicio del analista, no guía de la empresa. Obligaría a revisarlo este indicador: Reservas brutas (interanual, sin divisas), ≤ +10% (hoy: ~+20%). Sensibilidad: restar o sumar 2 pp al crecimiento de cada año 1–5 lleva el DCF Base de US$89,78 a US$81,50 (−9%) y US$98,94 (+10%), respectivamente.
+
+**Margen operativo.** La Base usa un margen operativo objetivo de 22,2% en base ajustada (I+D capitalizado y arrendamientos como deuda, según la hoja) (22,0% en base reportada + 0,22 pp por el ajuste de arrendamientos), desde 14,2% en el año 1 y con convergencia en el año 5. Escenarios: Conservadora 16,2%; Disrupción 10,2%; Optimista 26,2%. Evidencia (datos contrastados con la SEC el 1-oct-2026): El margen GAAP subió 7-8 puntos por año desde 2023. La hoja suponía 26% de objetivo en cinco años, más que el margen de sus mejores segmentos; tras la revisión del 30-sep-2026 supone 14% el próximo año y 21% de objetivo (margen GAAP de 13,4% en el 2T26). Mecanismo y elección: el objetivo de la Base refleja la economía de su tesis (escala, mezcla y precio frente a los costos que exige crecer); la Conservadora y la Disrupción lo bajan porque defender ingresos cuesta precio o gasto, y la Optimista solo lo sube si la monetización supera esos costos. No es una promesa de la empresa. Obligaría a revisarlo este indicador: Margen de segmento de Movilidad, ≤ 26% (hoy: 30,1% (2T26)). Sensibilidad: restar o sumar 2 pp al margen operativo objetivo lleva el DCF Base de US$89,78 a US$81,57 (−9%) y US$97,99 (+9%), respectivamente.
+
+**Reinversión y ventas/capital.** La Base reinvierte con un ventas/capital de 2,29x en los años 1–5 y 3,11x en los años 6–10: cada dólar de ventas nuevas exige ~US$0,44 y ~US$0,32 de capital, respectivamente. Evidencia: Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Incluye el capital arrendado (0,04 dólares por dólar de ventas, criterio de Damodaran). Mecanismo: la reinversión es lo que financia el crecimiento; si el retorno del capital nuevo supera el costo de capital, crecer suma valor. Salvedad: es una hipótesis de la hoja, no un dato reportado; falta una serie homogénea de capital invertido incremental (con I+D, adquisiciones y capital de trabajo) que la confirme, así que queda provisional. Obligaría a revisarlo que el capital invertido crezca más rápido que las ventas. Sensibilidad: un ventas/capital 20% menor o mayor en ambas etapas lleva el DCF Base de US$89,78 a US$87,46 (−3%) y US$91,33 (+2%), respectivamente.
+
+**Vida útil de I+D.** La hoja capitaliza el I+D (US$3.741 millones en el último año) y lo amortiza en 3 años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda provisional hasta contrastarla con la duración de los beneficios de los productos.
+
+**Costo de capital (WACC).** WACC de 8,19% en los años 1–5, que converge a 9,22% en el año 10: tasa libre de riesgo 4,99%, beta 0,80 y prima de riesgo 4,46% (Damodaran, betas por sector y ERP, enero de 2026). La beta bottom-up de Transportation reapalancada (0,76) daría un WACC inicial de 8,03%. Se usa la misma tasa en los cuatro escenarios: el riesgo propio del negocio va en los flujos de cada historia, no en una prima arbitraria. La convergencia supone que el riesgo y la estructura financiera se normalizan; no es automática. Obligaría a revisarlo un cambio de la tasa libre de riesgo, de la prima de mercado o de la deuda (incluidos los arrendamientos). Sensibilidad: sumar o restar 1 pp al WACC inicial y terminal lleva el DCF Base de US$89,78 a US$78,50 (−13%) y US$104,03 (+16%), respectivamente.
+
+**Crecimiento terminal.** La Base crece 4,99% a perpetuidad, la tasa libre de riesgo: Damodaran pide que el crecimiento estable no supere el de la economía, y la tasa libre de riesgo es su techo práctico. Disrupción se estabiliza en 0,91% sin recuperarse. El valor terminal explica 59,2% del valor operativo de la Base, así que este supuesto pesa mucho. Obligaría a revisarlo un cambio persistente de la inflación o del crecimiento nominal de largo plazo de su moneda. Sensibilidad: restar o sumar 0,5 pp al crecimiento terminal lleva el DCF Base de US$89,78 a US$88,85 (−1%) y US$90,73 (+1%), respectivamente.
+
+**ROIC terminal.** La Base usa 9,2% (igual al costo de capital) después del año 10. Criterio de ventaja competitiva: sin ventaja defendible (Efectos de red de dos lados; evidencia: ROIC por encima del costo de capital solo desde 2024 (menos de 3 años)). ROIC actual del modelo 17,9%; industria (Damodaran) 13,0%. Con ventaja durable se toma el ROIC de la industria sin superar el actual; si se desvanece, el punto medio hacia el costo de capital; sin ventaja, el costo de capital. Las historias de erosión usan el costo de capital porque una ventaja perdida no deja retornos excedentes. No es un ROIC futuro observado: es la hipótesis de cuánto dura la ventaja. Lo invalidaría: robotaxis; revisar en 2027.
+
+**Acciones y dilución.** Los cuatro escenarios usan 2.040,0 millones de acciones, sin recompras ni dilución proyectadas; así se comparan sobre la misma base. No demuestra que la compensación en acciones carezca de costo: si es material, debería modelarse como gasto o como más acciones. Supuesto provisional. Sensibilidad: 5% más acciones con el mismo patrimonio llevan la Base a US$85,51 (−5%).
+
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 20,55× (peso 33% dentro de los múltiplos); EV/FCFF 14,57× (peso 17% dentro de los múltiplos); P/E 18,96× (peso 33% dentro de los múltiplos); P/FCFE 14,26× (peso 8% dentro de los múltiplos); P/OCF 13,56× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (8,6%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+
+Sensibilidad del DCF Base (US$89,78; cada fila es un DCF completo con un solo supuesto cambiado):
+
+| Supuesto cambiado | DCF Base | Variación |
+|---|---:|---:|
+| Margen objetivo −2 pp | US$81,57 | −9,1% |
+| Margen objetivo +2 pp | US$97,99 | +9,1% |
+| Crecimiento años 1–5 −2 pp | US$81,50 | −9,2% |
+| Crecimiento años 1–5 +2 pp | US$98,94 | +10,2% |
+| Ventas/capital −20% | US$87,46 | −2,6% |
+| Ventas/capital +20% | US$91,33 | +1,7% |
+| WACC +1 pp | US$78,50 | −12,6% |
+| WACC −1 pp | US$104,03 | +15,9% |
+| Crecimiento terminal −0,5 pp | US$88,85 | −1,0% |
+| Crecimiento terminal +0,5 pp | US$90,73 | +1,1% |
+| Acciones +5% | US$85,51 | −4,8% |
 
 
 ### Piezas del valor
@@ -65,7 +106,7 @@ En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: 
 | Bottom-up del sector (Transportation, reapalancada) | 0,76 | 8,4% | 8,0% | US$89,82 |
 
 
-### Calibración técnica anterior C/B/O (referencia auxiliar)
+### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -74,7 +115,7 @@ En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: 
 | Margen año 1 (base ajustada del modelo) | 14,2% | 14,2% | 14,2% |
 | Margen objetivo | 13,7% | 21,2% | 26,2% |
 
-Ventas/capital: 2,3x en años 1–5 y 3,1x en 6–10. WACC: 8,2%. Ke: 8,6%. Impuesto efectivo: 25,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
+Ventas/capital: 2,3x en años 1–5 y 3,1x en 6–10. WACC: 8,2%. Ke: 8,6%. Impuesto efectivo: 25,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
@@ -88,7 +129,7 @@ Fuentes de ventaja: Efectos de red de dos lados. Evidencia: ROIC por encima del 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor principal de US$81,21 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$88,97 ni mezclando el DCF con múltiplos. La historia central A vale US$89,78; «central» y «esperado» son conceptos distintos.
+El valor intrínseco principal es el DCF Base: US$89,78 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$81,21. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$88,97) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -100,8 +141,8 @@ El valor principal de US$81,21 se obtiene ejecutando cuatro DCF completos de die
 | Impuesto | 25,00% en años 1–5; 25,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
 | Descuento | WACC 8,19% → 9,22% | Tasa libre de riesgo 4,99%, beta 0,80, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 2,29x en años 1–5; 3,11x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
-| Crecimiento perpetuo | A/B/D: 4,99%; C: 0,91% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (0,91%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
-| ROIC terminal | A/B/C/D: 9,22% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 4,99%; Disrupción: 0,91% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (0,91%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Conservadora/Disrupción/Optimista: 9,22% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
 | Puente al patrimonio | Caja 5.391; deuda 14.698; activos no operativos 12.532; minoritarios 1.083; acciones 2.040,0 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
@@ -109,23 +150,23 @@ El valor principal de US$81,21 se obtiene ejecutando cuatro DCF completos de die
 
 Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
 
-Ejemplo A, año 1: 29.500 × 1,13 + 21.000 × 1,15 + 4.727 × 1,03 = US$62.353,81 millones. Frente a 55.227, el crecimiento consolidado es 12,90%. En los años 2–5 es 12,07%, 10,82%, 9,93%, 9,03%; las ventas del año 5 son US$92.818,13 millones. El 10,9% de la tabla es el crecimiento anual compuesto de los cinco años: (92.818,13 / 55.227)^(1/5) − 1; no se usa como tasa constante.
+Ejemplo Base, año 1: 29.500 × 1,13 + 21.000 × 1,15 + 4.727 × 1,03 = US$62.353,81 millones. Frente a 55.227, el crecimiento consolidado es 12,90%. En los años 2–5 es 12,07%, 10,82%, 9,93%, 9,03%; las ventas del año 5 son US$92.818,13 millones. El 10,9% de la tabla es el crecimiento anual compuesto de los cinco años: (92.818,13 / 55.227)^(1/5) − 1; no se usa como tasa constante.
 
 
 #### 3. Del ingreso al flujo libre y su valor presente
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En A, año 1: NOPAT = 62.353,81 × 14,22% × (1 − 25,00%) = US$6.651,67 millones. La reinversión es US$3.280,14 millones y el FCFF es US$3.371,53 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En la Base, año 1: NOPAT = 62.353,81 × 14,22% × (1 − 25,00%) = US$6.651,67 millones. La reinversión es US$3.280,14 millones y el FCFF es US$3.371,53 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
-En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: A, 54,1% (4,99% / 9,22%); B, 54,1% (4,99% / 9,22%); C, 9,9% (0,91% / 9,22%); D, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: Base, 54,1% (4,99% / 9,22%); Conservadora, 54,1% (4,99% / 9,22%); Disrupción, 9,9% (0,91% / 9,22%); Optimista, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
 #### 4. Trayectoria anual de cada historia
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**A · Plataforma madura que escala márgenes** — probabilidad 45%; valor terminal 242.484 (VP 107.230); DCF US$89,78 por acción.
+**Base · Plataforma madura que escala márgenes** — probabilidad 45%; valor terminal 242.484 (VP 107.230); DCF US$89,78 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -141,7 +182,7 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 127.759 | 5,0% | 22,2% | 21.294 | 2.049 | 19.245 | 9,2% | 8.510 |
 | Terminal | 134.135 | 5,0% | 22,2% | 22.357 | 12.100 | 10.257 | 9,2% | — |
 
-**B · Robotaxis y regulación presionan la movilidad** — probabilidad 25%; valor terminal 133.657 (VP 59.105); DCF US$54,02 por acción.
+**Conservadora · Robotaxis y regulación presionan la movilidad** — probabilidad 25%; valor terminal 133.657 (VP 59.105); DCF US$54,02 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -157,14 +198,14 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 96.465 | 5,0% | 16,2% | 11.737 | 1.547 | 10.190 | 9,2% | 4.506 |
 | Terminal | 101.278 | 5,0% | 16,2% | 12.323 | 6.669 | 5.654 | 9,2% | — |
 
-**C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** — probabilidad 10%; valor terminal 53.560 (VP 23.685); DCF US$28,81 por acción.
+**Disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** — probabilidad 10%; valor terminal 53.560 (VP 23.685); DCF US$28,81 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 58.802 | 6,5% | 14,2% | 6.273 | 805 | 5.467 | 8,2% | 5.053 |
 | 2 | 60.650 | 3,1% | 12,6% | 5.742 | -23 | 5.765 | 8,2% | 4.925 |
-| 3 | 60.598 | -0,1% | 11,8% | 5.374 | -65 | 5.439 | 8,2% | 4.294 |
-| 4 | 60.449 | -0,2% | 11,0% | 4.998 | 240 | 4.758 | 8,2% | 3.472 |
+| 3 | 60.598 | −0,1% | 11,8% | 5.374 | -65 | 5.439 | 8,2% | 4.294 |
+| 4 | 60.449 | −0,2% | 11,0% | 4.998 | 240 | 4.758 | 8,2% | 3.472 |
 | 5 | 60.999 | 0,9% | 10,2% | 4.677 | 242 | 4.435 | 8,2% | 2.992 |
 | 6 | 61.553 | 0,9% | 10,2% | 4.720 | 180 | 4.540 | 8,4% | 2.825 |
 | 7 | 62.113 | 0,9% | 10,2% | 4.763 | 182 | 4.581 | 8,6% | 2.625 |
@@ -173,7 +214,7 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 63.823 | 0,9% | 10,2% | 4.894 | 187 | 4.707 | 9,2% | 2.082 |
 | Terminal | 64.404 | 0,9% | 10,2% | 4.938 | 487 | 4.451 | 9,2% | — |
 
-**D · Uber es la red de los vehículos autónomos** — probabilidad 20%; valor terminal 341.071 (VP 150.826); DCF US$122,09 por acción.
+**Optimista · Uber es la red de los vehículos autónomos** — probabilidad 20%; valor terminal 341.071 (VP 150.826); DCF US$122,09 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -196,31 +237,31 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| A | 73.785,08 | 107.229,69 | 181.014,77 | 183.156,94 | 89,78 |
-| B | 48.958,69 | 59.104,89 | 108.063,58 | 110.205,75 | 54,02 |
-| C | 32.953,51 | 23.684,91 | 56.638,42 | 58.780,59 | 28,81 |
-| D | 96.103,80 | 150.826,12 | 246.929,91 | 249.072,09 | 122,09 |
+| Base | 73.785,08 | 107.229,69 | 181.014,77 | 183.156,94 | 89,78 |
+| Conservadora | 48.958,69 | 59.104,89 | 108.063,58 | 110.205,75 | 54,02 |
+| Disrupción | 32.953,51 | 23.684,91 | 56.638,42 | 58.780,59 | 28,81 |
+| Optimista | 96.103,80 | 150.826,12 | 246.929,91 | 249.072,09 | 122,09 |
 
-Ejemplo A: (73.785,08 + 107.229,69 + 5.391 + 12.532 − 14.698 − 1.083) / 2.040,0 = US$89,78 por acción. El terminal representa 59,2% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (73.785,08 + 107.229,69 + 5.391 + 12.532 − 14.698 − 1.083) / 2.040,0 = US$89,78 por acción. El terminal representa 59,2% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 6. Valor esperado, probabilidades y margen de seguridad
+#### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 45% / 25% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-Valor esperado = 0,45 × 89,783079 + 0,25 × 54,022584 + 0,10 × 28,814101 + 0,20 × 122,094519 = US$81,208345 ≈ US$81,21. Los aportes son US$40,40 + US$13,51 + US$2,88 + US$24,42 por acción.
+DCF esperado = 0,45 × 89,783079 + 0,25 × 54,022584 + 0,10 × 28,814101 + 0,20 × 122,094519 = US$81,208345 ≈ US$81,21. Los aportes son US$40,40 + US$13,51 + US$2,88 + US$24,42 por acción.
 
-Precio con MOS = valor esperado × (1 − 35%) = 81,208345 × 0,65 = US$52,785424 ≈ US$52,79. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+Precio con MOS = DCF esperado × (1 − 35%) = 81,208345 × 0,65 = US$52,785424 ≈ US$52,79. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
-Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
-
-
-### Las cuatro tesis: base, conservadora, disrupción y optimista
-
-Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$89,78; el valor esperado de US$81,21 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
-#### A · Tesis base: Plataforma madura que escala márgenes
+### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
+
+La tesis Base es la trayectoria central defendida y su DCF, US$89,78, es el valor intrínseco principal. El DCF esperado de US$81,21 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### Base: Plataforma madura que escala márgenes
 
 **Qué plantea.** Es la continuación: crecimiento de doble dígito bajo y margen hacia 22%.
 
@@ -229,7 +270,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (reservas brutas (interanual, sin divisas): ~+20%; margen de segmento de Movilidad: 30,1% (2T26); margen de segmento de Delivery: 20,1% (2T26)). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
 
-#### B · Tesis conservadora: Robotaxis y regulación presionan la movilidad
+#### Conservadora: Robotaxis y regulación presionan la movilidad
 
 **Qué plantea.** Es la presión de los robotaxis y la regulación sobre Movilidad.
 
@@ -238,16 +279,16 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 **Cómo contrastarla.** La apoyarían: reservas brutas (interanual, sin divisas): ≤ +10%; margen de segmento de Movilidad: ≤ 26%; margen de segmento de Delivery: ≤ 16%; participación de viajes autónomos en la red de Uber: robotaxis crecen fuera de Uber.
 
 
-#### C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber
+#### Disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber
 
 **Qué plantea.** Es la desintermediación por Waymo y Tesla.
 
 **Traducción al modelo.** Movilidad crece 5%, 0%, -5%, -5%, -3%; Delivery crece 10%, 8%, 6%, 5%, 5%; Freight crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 2,0%; el margen operativo objetivo es 10,2%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 0,91%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$28,81 por acción.
 
-**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: reservas brutas (interanual, sin divisas): ≤ +10%; margen de segmento de Movilidad: ≤ 26%; margen de segmento de Delivery: ≤ 16%; participación de viajes autónomos en la red de Uber: robotaxis crecen fuera de Uber.
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: reservas brutas (interanual, sin divisas): ≤ +10%; margen de segmento de Movilidad: ≤ 26%; margen de segmento de Delivery: ≤ 16%; participación de viajes autónomos en la red de Uber: robotaxis crecen fuera de Uber.
 
 
-#### D · Tesis optimista: Uber es la red de los vehículos autónomos
+#### Optimista: Uber es la red de los vehículos autónomos
 
 **Qué plantea.** Es Uber como la red preferida de los vehículos autónomos.
 
@@ -255,20 +296,20 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Cómo contrastarla.** La confirmarían: reservas brutas (interanual, sin divisas): ≥ +15%; margen de segmento de Movilidad: ≥ 30%; margen de segmento de Delivery: ≥ 20%; participación de viajes autónomos en la red de Uber: socios crecen dentro de Uber.
 
-**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,99%; C: 0,91%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 4,99%; Disrupción: 0,91%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
 
-### Historias cuantificadas y valor esperado
+### Historias cuantificadas: DCF Base y DCF esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 0,80) | Valor/acción (beta 0,76) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22,2% | 2,3 | 4,99% | US$89,78 | US$90,63 |
-| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16,2% | 2,3 | 4,99% | US$54,02 | US$54,51 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10,2% | 2,3 | 0,91% | US$28,81 | US$29,04 |
-| **D · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26,2% | 2,3 | 4,99% | US$122,09 | US$123,28 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$81,21** | **US$81,97** |
+| **Base · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22,2% | 2,3 | 4,99% | US$89,78 | US$90,63 |
+| **Conservadora · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16,2% | 2,3 | 4,99% | US$54,02 | US$54,51 |
+| **Disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10,2% | 2,3 | 0,91% | US$28,81 | US$29,04 |
+| **Optimista · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26,2% | 2,3 | 4,99% | US$122,09 | US$123,28 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$81,21** | **US$81,97** |
 
-A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. B (25%) es la presión de los robotaxis y la regulación sobre Movilidad. C (10%) es la desintermediación por Waymo y Tesla. D (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+Base (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. Conservadora (25%) es la presión de los robotaxis y la regulación sobre Movilidad. Disrupción (10%) es la desintermediación por Waymo y Tesla. Optimista (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF técnico anterior (beta 0,80; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
@@ -318,7 +359,9 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 0,80 | 11,9% (16% de las empresas) | 5,1% (47% de las empresas) | 1,9% (67% de las empresas) |
 | Beta 0,76 | 11,6% (17% de las empresas) | 4,9% (48% de las empresas) | 1,7% (68% de las empresas) |
 
-Frente al valor esperado de las historias (US$81,21 con la beta de la hoja; US$81,97 con la propuesta), el precio está por debajo en 15% y por debajo en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF Base (US$89,78), el valor intrínseco principal, el precio está por debajo en 23%.
+
+Frente al DCF esperado de las historias (US$81,21 con la beta de la hoja; US$81,97 con la propuesta), el precio está por debajo en 15% y por debajo en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -327,10 +370,10 @@ Frente al valor esperado de las historias (US$81,21 con la beta de la hoja; US$8
 |---|---|---|
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Red de movilidad y entrega ya rentable que enfrenta a los robotaxis y se vuelve intensiva en capital |  |
-| Probabilidades | A 45% / B 25% / C 10% / D 20% |  |
-| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$81,21 / US$81,97 |  |
-| DCF base hoy (historia A) | US$89,78 |  |
-| Precio con MOS sobre el valor esperado | US$52,79 (MOS 35%) |  |
+| Probabilidades | Base 45% / Conservadora 25% / Disrupción 10% / Optimista 20% |  |
+| DCF Base hoy (valor intrínseco principal) | US$89,78 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$81,21 / US$81,97 |  |
+| Precio con MOS sobre el DCF esperado | US$52,79 (MOS 35%) |  |
 | Rango (historia más débil a más fuerte) | US$28,81 a US$123,28 |  |
 | Confianza | Media: la red y los márgenes son sólidos; los autónomos y las compras son inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de viajes frente a la expansión de Waymo y Tesla; precio y cierre de Delivery Hero |  |

@@ -13,7 +13,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Banco digital estable con ROAE de ~15%",
+   "nombre": "Base · Banco digital estable con ROAE de ~15%",
    "prob": 0.45,
    "margen": 0.156,
    "crec": {
@@ -36,7 +36,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · El PIX y la competencia erosionan",
+   "nombre": "Conservadora · El PIX y la competencia erosionan",
    "prob": 0.3,
    "margen": 0.13,
    "crec": {
@@ -59,7 +59,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.1,
    "crec": {
@@ -85,7 +85,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Crece el banco: crédito y depósitos",
+   "nombre": "Optimista · Crece el banco: crédito y depósitos",
    "prob": 0.15,
    "margen": 0.17,
    "crec": {
@@ -140,7 +140,7 @@
    "Baja-media"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 5,6% anual cinco años (historia A) lo logró ~63% de las empresas de ese tamaño; 9,0% (historia D), ~42%. La hoja (6%) es normal. En una financiera, el valor depende más del retorno sobre el patrimonio frente al costo del patrimonio (~12-15% en Brasil) que del crecimiento.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 5,6% anual cinco años (Base) lo logró ~63% de las empresas de ese tamaño; 9,0% (Optimista), ~42%. La hoja (6%) es normal. En una financiera, el valor depende más del retorno sobre el patrimonio frente al costo del patrimonio (~12-15% en Brasil) que del crecimiento.",
  "crecimiento": {
   "texto": "En dólares (hoja): US$3.193 millones (2023), US$3.495 millones (2024, +9,4%) y US$3.653 millones (2025, +4,5%); LTM US$3.892 millones. En reales, ingresos y rendimientos de R$20.411 millones en 2025 (+8,5%); transacciones R$8.159 millones (en baja) y el resto ingresos financieros. La división de las historias (~40% transacciones, ~60% financieros y banca) es un cálculo propio.",
   "tabla": {
@@ -196,7 +196,7 @@
  "reinversion": {
   "texto": "La reinversión patrimonial se estima como utilidad × crecimiento / ROE; el FCFE es utilidad menos esa retención. Se descuenta al Ke de 14,7%, que converge a 12%. No se suma la liquidez bancaria ni se restan depósitos. El 22,5% de Basilea reportado en 2T muestra holgura, pero no identifica por sí solo capital distribuible: no se agrega un valor por exceso de capital no comprobado. La aproximación requiere que crecimiento de ingresos y beneficios sea comparable; la sensibilidad debe revisarse si cambia el riesgo de crédito o el capital regulatorio. Sin ventaja defendible: no tiene una barrera durable frente a Pix y los bancos digitales, y su ROIC apenas supera el costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (10%) es una crisis de crédito con morosidad en alza. D (15%) es un banco digital que crece a doble dígito. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. Conservadora (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. Disrupción (10%) es una crisis de crédito con morosidad en alza. Optimista (15%) es un banco digital que crece a doble dígito. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "El PIX con crédito (PIX parcelado) reemplaza también a la tarjeta de crédito y la adquirencia se derrumba.",
   "Nubank y Mercado Pago capturan a los microcomercios con cuentas y crédito gratis.",
@@ -204,7 +204,7 @@
   "El real se deprecia y el valor en dólares cae aunque el negocio vaya bien en reales.",
   "Cambios regulatorios (tarifas de intercambio, anticipación) bajan la rentabilidad."
  ],
- "contra": "los ingresos por transacciones caen y el crecimiento en dólares bajó a 4,5%; si el banco no acelera, B se vuelve la historia central.",
+ "contra": "los ingresos por transacciones caen y el crecimiento en dólares bajó a 4,5%; si el banco no acelera, Conservadora se vuelve la historia central.",
  "indicadores": [
   [
    "ROAE",

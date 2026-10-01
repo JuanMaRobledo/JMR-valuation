@@ -31,7 +31,7 @@ def normalize(r: dict, old: dict | None, roic_hoja: float | None) -> dict:
     r["precioMOSHoy"] = {k: pm for k in ("conservador", "base", "optimista")}
     r["zonas"]["conMOS"] = {"min": pm, "max": pm, "base": "valor esperado; una cifra, sin escenarios"}
     r["zonas"]["descripcion"] = ZONAS_DESC
-    ve["metodo"] = ("Escenarios = historias; cada historia es un DCF completo. Valor principal = suma de DCF × probabilidad."
+    ve["metodo"] = ("DCF Base como valor intrínseco principal; DCF esperado = suma de DCF × probabilidad como complemento."
                     if ve.get("escenariosUnificados") else "Promedio de DCF completos ponderado por probabilidades del analista.")
     for h in ve["historias"]:
         if h.get("roicTerminal") == "hoja":

@@ -15,7 +15,7 @@
  },
  "historias": [
   {
-   "nombre": "A · La cartera diversificada sostiene ~7%",
+   "nombre": "Base · La cartera diversificada sostiene ~7%",
    "prob": 0.45,
    "margen": 0.24,
    "crec": {
@@ -52,7 +52,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · El campo pulsado se vuelve commodity",
+   "nombre": "Conservadora · El campo pulsado se vuelve commodity",
    "prob": 0.3,
    "margen": 0.22,
    "crec": {
@@ -89,7 +89,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.05,
    "margen": 0.2,
    "crec": {
@@ -129,7 +129,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Electrofisiología y Watchman vuelven a doble dígito",
+   "nombre": "Optimista · Electrofisiología y Watchman vuelven a doble dígito",
    "prob": 0.2,
    "margen": 0.26,
    "crec": {
@@ -198,7 +198,7 @@
    "Incierto"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 6,5% anual cinco años (historia A) lo logró ~42% de las empresas de ese tamaño; 8,3% (historia D), ~33%. La hoja (7%) está por encima de la mediana nominal (~5,4%) pero es razonable por el envejecimiento y la cartera de productos. El crecimiento de 2023-2025 (12-20%, con compras) no es una tasa base útil: fue un ciclo de producto.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 6,5% anual cinco años (Base) lo logró ~42% de las empresas de ese tamaño; 8,3% (Optimista), ~33%. La hoja (7%) está por encima de la mediana nominal (~5,4%) pero es razonable por el envejecimiento y la cartera de productos. El crecimiento de 2023-2025 (12-20%, con compras) no es una tasa base útil: fue un ciclo de producto.",
  "crecimiento": {
   "texto": "Ventas de US$14.240 millones (2023), US$16.747 millones (2024, +17,6%) y US$20.074 millones (2025, +19,9% con compras); US$10.646 millones en el 1S26 (+9,5%) y orgánico de 7% en el 2T. En el 1S26, Cardiovascular facturó US$7.126 millones (+10,8%): Electrofisiología US$1.821 millones (+16%), ICVT US$2.577 millones (+11,9%) y Watchman US$1.014 millones (+11,3%); MedSurg, ~US$3.520 millones. La división LTM de las historias usa esos pesos (EP ~17%, Watchman ~10%, resto de Cardiovascular ~40%, MedSurg ~33%).",
   "tabla": {
@@ -254,7 +254,7 @@
  "reinversion": {
   "texto": "La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un sales-to-capital de 1,3 (años 1-5) y 1,2 (años 6-10), que ya asume que parte del crecimiento se compra. Con Penumbra, el capital invertido sube ~US$14.500 millones: el retorno de esa compra decide si el crecimiento crea valor. El ROIC después del año 10 es igual al costo de capital: incluida la plusvalía de las compras, el ROIC estuvo por debajo del costo de capital hasta 2025, así que no cumple la regla del ROIC terminal (se aplicó 11,1% y se revirtió el 30-sep-2026). Sin ventaja defendible: el crecimiento se compra y el ROIC con la plusvalía de las compras (4-9% en 2021-2025) no superó el costo de capital de forma sostenida. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. B (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. C (5%) es un tropiezo clínico o de producto. D (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. Conservadora (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. Disrupción (5%) es un tropiezo clínico o de producto. Optimista (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Medtronic y Johnson & Johnson ganan participación en campo pulsado y Electrofisiología en EE.UU. crece a un dígito bajo por años.",
   "Watchman pierde frente a nuevos anticoagulantes o por evidencia clínica comparativa desfavorable.",
@@ -262,7 +262,7 @@
   "La demanda colectiva por la guía de Electrofisiología revela problemas de gestión o de transparencia.",
   "Presión de precios en ICVT y reembolsos de Medicare más bajos reducen el margen."
  ],
- "contra": "el freno en EE.UU. fue brusco (de doble dígito alto a +3% en un trimestre) y coincidió con la llegada de competencia directa. Si el 3T y el 4T repiten ~3% en EE.UU., la historia B debe pesar más que A.",
+ "contra": "el freno en EE.UU. fue brusco (de doble dígito alto a +3% en un trimestre) y coincidió con la llegada de competencia directa. Si el 3T y el 4T repiten ~3% en EE.UU., la historia Conservadora debe pesar más que Base.",
  "indicadores": [
   [
    "Crecimiento orgánico total",

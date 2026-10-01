@@ -7,9 +7,11 @@ analysis_date: "2026-09-30"
 # Duolingo, Inc. (DUOL) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$113,06; la historia central A vale US$119,64 y el rango es US$59,88–155,74. El MOS 35% se aplica al esperado: US$73,49. El antiguo caso Base de la hoja (US$119,73) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+**Valor intrínseco principal · DCF Base hoy: US$119,64 por acción** (Base · La audiencia crece y la monetización se recupera en parte).
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, flujos ltm (26 celdas, con respaldo). Valor esperado US$118,85 → US$113,06. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Complemento · DCF esperado por probabilidades: US$113,06.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$59,88–155,74. El MOS 35% se aplica al esperado: US$73,49. El antiguo caso técnico de la hoja (US$119,73) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, flujos ltm (26 celdas, con respaldo). DCF esperado US$118,85 → US$113,06. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$119,73 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
@@ -32,12 +34,51 @@ Con ventas LTM de US$1.145 millones (US$810 millones en dólares de 2015, deflac
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · La audiencia crece y la monetización se recupera en parte | 11,5% | 38% |
-| B · La monetización se estanca | 7,6% | 58% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 0,4% | 89% |
-| D · La IA sube el ingreso por usuario | 15,3% | 24% |
+| Base · La audiencia crece y la monetización se recupera en parte | 11,5% | 38% |
+| Conservadora · La monetización se estanca | 7,6% | 58% |
+| Disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas | 0,4% | 89% |
+| Optimista · La IA sube el ingreso por usuario | 15,3% | 24% |
 
-En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,5% anual cinco años (historia A) lo logró ~38% de las empresas de ese tamaño; 15,3% (historia D), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.
+En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,5% anual cinco años (Base) lo logró ~38% de las empresas de ese tamaño; 15,3% (Optimista), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.
+
+
+### Justificación de los supuestos
+
+Cada párrafo explica un supuesto material de la tesis Base —el valor intrínseco principal—: qué cifra se usa y con qué trayectoria, qué evidencia la respalda (fuente y fecha), el mecanismo económico, por qué se eligió frente a las alternativas, cómo cambia entre escenarios, qué observación obligaría a cambiarla y cuánto mueve el valor. Las sensibilidades son DCF completos de la Base con un solo supuesto cambiado. Donde falta soporte, el supuesto se declara provisional: un valor heredado de la hoja no queda validado por reproducirse aritméticamente.
+
+**Crecimiento de ingresos.** La Base supone 13,5% el año 1 y 9,6% el año 5: la trayectoria desacelera y equivale a 11,5% anual compuesto en cinco años; después converge al terminal en los años 6–10. Los demás escenarios: Conservadora 7,6%; Disrupción 0,4%; Optimista 15,3% de crecimiento compuesto. Evidencia (Duolingo, carta a accionistas del 2T 2026; datos contrastados con la SEC el 1-oct-2026): Ingresos de US$531 millones (2023, +43,7%), US$748 millones (2024, +40,8%) y US$1.038 millones (2025, +38,7%); LTM US$1.145 millones. En el 2T26 los ingresos crecieron 18% (US$298,5 millones), pero las reservas solo 8% (US$289,1 millones). Mecanismo de la Base: es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. Por qué esta cifra: la visión externa (The Base Rate Book) indica que ~38% de las empresas de su tamaño lograron ese crecimiento, frente a ~24% para el de la Optimista; la Base no extrapola el mejor resultado reciente ni supone la caída de la Disrupción. Los porcentajes son juicio del analista, no guía de la empresa. Obligaría a revisarlo este indicador: Reservas totales (interanual), ≤ +8% dos trimestres (hoy: +8% (2T26)). Sensibilidad: restar o sumar 2 pp al crecimiento de cada año 1–5 lleva el DCF Base de US$119,64 a US$110,99 (−7%) y US$129,19 (+8%), respectivamente.
+
+**Margen operativo.** La Base usa un margen operativo objetivo de 27,1% en base ajustada (I+D capitalizado y arrendamientos como deuda, según la hoja) (27,0% en base reportada + 0,09 pp por el ajuste de arrendamientos), desde 20,1% en el año 1 y con convergencia en el año 7. Escenarios: Conservadora 23,1%; Disrupción 15,1%; Optimista 32,1%. Evidencia (datos contrastados con la SEC el 1-oct-2026): El margen operativo de la hoja (ajustado por capitalización de I+D, *21,8% LTM) no coincide con el GAAP ni con el EBITDA ajustado (26,5% guía 2026). La hoja supone 20% el próximo año y 27% a siete años. Mecanismo y elección: el objetivo de la Base refleja la economía de su tesis (escala, mezcla y precio frente a los costos que exige crecer); la Conservadora y la Disrupción lo bajan porque defender ingresos cuesta precio o gasto, y la Optimista solo lo sube si la monetización supera esos costos. No es una promesa de la empresa. Obligaría a revisarlo este indicador: Margen EBITDA ajustado, ≤ 24% (hoy: 25,9% (2T26)). Sensibilidad: restar o sumar 2 pp al margen operativo objetivo lleva el DCF Base de US$119,64 a US$113,37 (−5%) y US$125,91 (+5%), respectivamente.
+
+**Reinversión y ventas/capital.** La Base reinvierte con un ventas/capital de 2,97x en los años 1–5 y 3,24x en los años 6–10: cada dólar de ventas nuevas exige ~US$0,34 y ~US$0,31 de capital, respectivamente. Evidencia: Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. Incluye el capital arrendado (0,09 dólares por dólar de ventas, criterio de Damodaran). Mecanismo: la reinversión es lo que financia el crecimiento; si el retorno del capital nuevo supera el costo de capital, crecer suma valor. Salvedad: es una hipótesis de la hoja, no un dato reportado; falta una serie homogénea de capital invertido incremental (con I+D, adquisiciones y capital de trabajo) que la confirme, así que queda provisional. Obligaría a revisarlo que el capital invertido crezca más rápido que las ventas. Sensibilidad: un ventas/capital 20% menor o mayor en ambas etapas lleva el DCF Base de US$119,64 a US$118,02 (−1%) y US$120,72 (+0,9%), respectivamente.
+
+**Vida útil de I+D.** La hoja capitaliza el I+D (US$337 millones en el último año) y lo amortiza en 3 años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda provisional hasta contrastarla con la duración de los beneficios de los productos.
+
+**Costo de capital (WACC).** WACC de 10,94% en los años 1–5, que converge a 9,22% en el año 10: tasa libre de riesgo 4,99%, beta 1,35 y prima de riesgo 4,46% (Damodaran, betas por sector y ERP, enero de 2026). La beta bottom-up de Software (Internet) reapalancada (1,61) daría un WACC inicial de 12,06%. Se usa la misma tasa en los cuatro escenarios: el riesgo propio del negocio va en los flujos de cada historia, no en una prima arbitraria. La convergencia supone que el riesgo y la estructura financiera se normalizan; no es automática. Obligaría a revisarlo un cambio de la tasa libre de riesgo, de la prima de mercado o de la deuda (incluidos los arrendamientos). Sensibilidad: sumar o restar 1 pp al WACC inicial y terminal lleva el DCF Base de US$119,64 a US$108,94 (−9%) y US$133,08 (+11%), respectivamente.
+
+**Crecimiento terminal.** La Base crece 4,99% a perpetuidad, la tasa libre de riesgo: Damodaran pide que el crecimiento estable no supere el de la economía, y la tasa libre de riesgo es su techo práctico. Disrupción se estabiliza en 0,00% sin recuperarse. El valor terminal explica 52,8% del valor operativo de la Base, así que este supuesto pesa mucho. Obligaría a revisarlo un cambio persistente de la inflación o del crecimiento nominal de largo plazo de su moneda. Sensibilidad: restar o sumar 0,5 pp al crecimiento terminal lleva el DCF Base de US$119,64 a US$118,72 (−0,8%) y US$120,57 (+0,8%), respectivamente.
+
+**ROIC terminal.** La Base usa 9,2% (igual al costo de capital) después del año 10. Criterio de ventaja competitiva: sin ventaja defendible (Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos; evidencia: ROIC por encima del costo de capital en 2021-2026 (serie volátil)). ROIC actual del modelo 36,6%; industria (Damodaran) 29,3%. Con ventaja durable se toma el ROIC de la industria sin superar el actual; si se desvanece, el punto medio hacia el costo de capital; sin ventaja, el costo de capital. Las historias de erosión usan el costo de capital porque una ventaja perdida no deja retornos excedentes. No es un ROIC futuro observado: es la hipótesis de cuánto dura la ventaja. Lo invalidaría: IA generalista (Disrupción, 10%) y costos de cambio bajos.
+
+**Acciones y dilución.** Los cuatro escenarios usan 48,3 millones de acciones, sin recompras ni dilución proyectadas; así se comparan sobre la misma base. No demuestra que la compensación en acciones carezca de costo: si es material, debería modelarse como gasto o como más acciones. Supuesto provisional. Sensibilidad: 5% más acciones con el mismo patrimonio llevan la Base a US$113,94 (−5%).
+
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 35,83× (peso 25% dentro de los múltiplos); EV/FCFF 25,12× (peso 38% dentro de los múltiplos); P/E 24,84× (peso 12% dentro de los múltiplos); P/FCFE 23,89× (peso 12% dentro de los múltiplos); P/OCF 22,89× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (11,0%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+
+Sensibilidad del DCF Base (US$119,64; cada fila es un DCF completo con un solo supuesto cambiado):
+
+| Supuesto cambiado | DCF Base | Variación |
+|---|---:|---:|
+| Margen objetivo −2 pp | US$113,37 | −5,2% |
+| Margen objetivo +2 pp | US$125,91 | +5,2% |
+| Crecimiento años 1–5 −2 pp | US$110,99 | −7,2% |
+| Crecimiento años 1–5 +2 pp | US$129,19 | +8,0% |
+| Ventas/capital −20% | US$118,02 | −1,4% |
+| Ventas/capital +20% | US$120,72 | +0,9% |
+| WACC +1 pp | US$108,94 | −8,9% |
+| WACC −1 pp | US$133,08 | +11,2% |
+| Crecimiento terminal −0,5 pp | US$118,72 | −0,8% |
+| Crecimiento terminal +0,5 pp | US$120,57 | +0,8% |
+| Acciones +5% | US$113,94 | −4,8% |
 
 
 ### Piezas del valor
@@ -65,7 +106,7 @@ En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crece
 | Bottom-up del sector (Software (Internet), reapalancada) | 1,61 | 12,2% | 12,1% | US$114,27 |
 
 
-### Calibración técnica anterior C/B/O (referencia auxiliar)
+### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -74,7 +115,7 @@ En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crece
 | Margen año 1 (base ajustada del modelo) | 20,1% | 20,1% | 20,1% |
 | Margen objetivo | 24,2% | 27,1% | 32,1% |
 
-Ventas/capital: 3,0x en años 1–5 y 3,2x en 6–10. WACC: 10,9%. Ke: 11,0%. Impuesto efectivo: 9,6%. Convergencia: 7 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
+Ventas/capital: 3,0x en años 1–5 y 3,2x en 6–10. WACC: 10,9%. Ke: 11,0%. Impuesto efectivo: 9,6%. Convergencia: 7 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
@@ -88,7 +129,7 @@ Fuentes de ventaja: Marca y hábito (rachas, gamificación) con escala de usuari
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor principal de US$113,06 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$119,73 ni mezclando el DCF con múltiplos. La historia central A vale US$119,64; «central» y «esperado» son conceptos distintos.
+El valor intrínseco principal es el DCF Base: US$119,64 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$113,06. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$119,73) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -100,8 +141,8 @@ El valor principal de US$113,06 se obtiene ejecutando cuatro DCF completos de di
 | Impuesto | 9,62% en años 1–5; 25,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
 | Descuento | WACC 10,94% → 9,22% | Tasa libre de riesgo 4,99%, beta 1,35, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 2,97x en años 1–5; 3,24x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
-| Crecimiento perpetuo | A/B/D: 4,99%; C: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: parte de su crecimiento del año 5 (-1,9%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
-| ROIC terminal | A/B/C/D: 9,22% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 4,99%; Disrupción: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: parte de su crecimiento del año 5 (−1,9%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Conservadora/Disrupción/Optimista: 9,22% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
 | Puente al patrimonio | Caja 1.314; deuda 99; activos no operativos 103; acciones 48,3 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
@@ -109,23 +150,23 @@ El valor principal de US$113,06 se obtiene ejecutando cuatro DCF completos de di
 
 Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
 
-Ejemplo A, año 1: 990 × 1,14 + 80 × 1,15 + 42 × 1,02 + 33 × 1,10 = US$1.299,74 millones. Frente a 1.145, el crecimiento consolidado es 13,51%. En los años 2–5 es 12,48%, 11,45%, 10,60%, 9,56%; las ventas del año 5 son US$1.974,42 millones. El 11,5% de la tabla es el crecimiento anual compuesto de los cinco años: (1.974,42 / 1.145)^(1/5) − 1; no se usa como tasa constante.
+Ejemplo Base, año 1: 990 × 1,14 + 80 × 1,15 + 42 × 1,02 + 33 × 1,10 = US$1.299,74 millones. Frente a 1.145, el crecimiento consolidado es 13,51%. En los años 2–5 es 12,48%, 11,45%, 10,60%, 9,56%; las ventas del año 5 son US$1.974,42 millones. El 11,5% de la tabla es el crecimiento anual compuesto de los cinco años: (1.974,42 / 1.145)^(1/5) − 1; no se usa como tasa constante.
 
 
 #### 3. Del ingreso al flujo libre y su valor presente
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En A, año 1: NOPAT = 1.299,74 × 20,09% × (1 − 9,62%) = US$236,05 millones. La reinversión es US$54,62 millones y el FCFF es US$181,43 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En la Base, año 1: NOPAT = 1.299,74 × 20,09% × (1 − 9,62%) = US$236,05 millones. La reinversión es US$54,62 millones y el FCFF es US$181,43 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
-En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: A, 54,1% (4,99% / 9,22%); B, 54,1% (4,99% / 9,22%); C, 0,0% (0,00% / 9,22%); D, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: Base, 54,1% (4,99% / 9,22%); Conservadora, 54,1% (4,99% / 9,22%); Disrupción, 0,0% (0,00% / 9,22%); Optimista, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
 #### 4. Trayectoria anual de cada historia
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**A · La audiencia crece y la monetización se recupera en parte** — probabilidad 40%; valor terminal 6.350,8 (VP 2.357,0); DCF US$119,64 por acción.
+**Base · La audiencia crece y la monetización se recupera en parte** — probabilidad 40%; valor terminal 6.350,8 (VP 2.357,0); DCF US$119,64 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -141,7 +182,7 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 2.744,6 | 5,0% | 27,1% | 557,7 | 42,3 | 515,4 | 9,2% | 191,3 |
 | Terminal | 2.881,5 | 5,0% | 27,1% | 585,5 | 316,9 | 268,6 | 9,2% | — |
 
-**B · La monetización se estanca** — probabilidad 30%; valor terminal 4.214,8 (VP 1.564,2); DCF US$93,58 por acción.
+**Conservadora · La monetización se estanca** — probabilidad 30%; valor terminal 4.214,8 (VP 1.564,2); DCF US$93,58 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -157,23 +198,23 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 2.136,9 | 5,0% | 23,1% | 370,1 | 32,9 | 337,2 | 9,2% | 125,1 |
 | Terminal | 2.243,6 | 5,0% | 23,1% | 388,6 | 210,3 | 178,3 | 9,2% | — |
 
-**C · Tesis de disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas** — probabilidad 10%; valor terminal 1.378,4 (VP 511,6); DCF US$59,88 por acción.
+**Disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas** — probabilidad 10%; valor terminal 1.378,4 (VP 511,6); DCF US$59,88 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 1.194,8 | 4,3% | 20,1% | 217,0 | 6,3 | 210,7 | 10,9% | 189,9 |
 | 2 | 1.213,6 | 1,6% | 18,7% | 204,7 | -0,6 | 205,4 | 10,9% | 166,9 |
-| 3 | 1.211,7 | -0,2% | 18,0% | 196,6 | -7,7 | 204,3 | 10,9% | 149,7 |
-| 4 | 1.188,7 | -1,9% | 17,2% | 185,2 | -7,6 | 192,8 | 10,9% | 127,3 |
-| 5 | 1.166,2 | -1,9% | 16,5% | 174,2 | -5,9 | 180,1 | 10,9% | 107,2 |
-| 6 | 1.148,5 | -1,5% | 15,8% | 158,5 | -4,0 | 162,5 | 10,6% | 87,5 |
-| 7 | 1.135,5 | -1,1% | 15,1% | 144,4 | -2,7 | 147,0 | 10,3% | 71,8 |
-| 8 | 1.126,9 | -0,8% | 15,1% | 138,0 | -1,3 | 139,4 | 9,9% | 61,9 |
-| 9 | 1.122,6 | -0,4% | 15,1% | 132,3 | 0,0 | 132,3 | 9,6% | 53,6 |
+| 3 | 1.211,7 | −0,2% | 18,0% | 196,6 | -7,7 | 204,3 | 10,9% | 149,7 |
+| 4 | 1.188,7 | −1,9% | 17,2% | 185,2 | -7,6 | 192,8 | 10,9% | 127,3 |
+| 5 | 1.166,2 | −1,9% | 16,5% | 174,2 | -5,9 | 180,1 | 10,9% | 107,2 |
+| 6 | 1.148,5 | −1,5% | 15,8% | 158,5 | -4,0 | 162,5 | 10,6% | 87,5 |
+| 7 | 1.135,5 | −1,1% | 15,1% | 144,4 | -2,7 | 147,0 | 10,3% | 71,8 |
+| 8 | 1.126,9 | −0,8% | 15,1% | 138,0 | -1,3 | 139,4 | 9,9% | 61,9 |
+| 9 | 1.122,6 | −0,4% | 15,1% | 132,3 | 0,0 | 132,3 | 9,6% | 53,6 |
 | 10 | 1.122,6 | 0,0% | 15,1% | 127,1 | 0,0 | 127,1 | 9,2% | 47,2 |
 | Terminal | 1.122,6 | 0,0% | 15,1% | 127,1 | 0,0 | 127,1 | 9,2% | — |
 
-**D · La IA sube el ingreso por usuario** — probabilidad 20%; valor terminal 9.229,4 (VP 3.425,3); DCF US$155,74 por acción.
+**Optimista · La IA sube el ingreso por usuario** — probabilidad 20%; valor terminal 9.229,4 (VP 3.425,3); DCF US$155,74 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -196,31 +237,31 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| A | 2.103,88 | 2.356,97 | 4.460,85 | 5.778,57 | 119,64 |
-| B | 1.637,73 | 1.564,23 | 3.201,96 | 4.519,68 | 93,58 |
-| C | 1.062,81 | 511,58 | 1.574,39 | 2.892,11 | 59,88 |
-| D | 2.779,07 | 3.425,29 | 6.204,35 | 7.522,08 | 155,74 |
+| Base | 2.103,88 | 2.356,97 | 4.460,85 | 5.778,57 | 119,64 |
+| Conservadora | 1.637,73 | 1.564,23 | 3.201,96 | 4.519,68 | 93,58 |
+| Disrupción | 1.062,81 | 511,58 | 1.574,39 | 2.892,11 | 59,88 |
+| Optimista | 2.779,07 | 3.425,29 | 6.204,35 | 7.522,08 | 155,74 |
 
-Ejemplo A: (2.103,88 + 2.356,97 + 1.314 + 103 − 99) / 48,3 = US$119,64 por acción. El terminal representa 52,8% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (2.103,88 + 2.356,97 + 1.314 + 103 − 99) / 48,3 = US$119,64 por acción. El terminal representa 52,8% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 6. Valor esperado, probabilidades y margen de seguridad
+#### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-Valor esperado = 0,40 × 119,639232 + 0,30 × 93,575242 + 0,10 × 59,878075 + 0,20 × 155,736564 = US$113,063386 ≈ US$113,06. Los aportes son US$47,86 + US$28,07 + US$5,99 + US$31,15 por acción.
+DCF esperado = 0,40 × 119,639232 + 0,30 × 93,575242 + 0,10 × 59,878075 + 0,20 × 155,736564 = US$113,063386 ≈ US$113,06. Los aportes son US$47,86 + US$28,07 + US$5,99 + US$31,15 por acción.
 
-Precio con MOS = valor esperado × (1 − 35%) = 113,063386 × 0,65 = US$73,491201 ≈ US$73,49. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+Precio con MOS = DCF esperado × (1 − 35%) = 113,063386 × 0,65 = US$73,491201 ≈ US$73,49. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
-Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
-
-
-### Las cuatro tesis: base, conservadora, disrupción y optimista
-
-Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$119,64; el valor esperado de US$113,06 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
-#### A · Tesis base: La audiencia crece y la monetización se recupera en parte
+### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
+
+La tesis Base es la trayectoria central defendida y su DCF, US$119,64, es el valor intrínseco principal. El DCF esperado de US$113,06 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### Base: La audiencia crece y la monetización se recupera en parte
 
 **Qué plantea.** Es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte.
 
@@ -229,7 +270,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (reservas totales (interanual): +8% (2T26); usuarios activos diarios: 58,7 M (+23%); suscriptores pagos: 12,7 M (+17%)). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
 
-#### B · Tesis conservadora: La monetización se estanca
+#### Conservadora: La monetización se estanca
 
 **Qué plantea.** Prolonga la brecha actual entre usuarios y reservas.
 
@@ -238,16 +279,16 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 **Cómo contrastarla.** La apoyarían: reservas totales (interanual): ≤ +8% dos trimestres; usuarios activos diarios: desaceleración bajo +10%; suscriptores pagos: ≤ +10%; margen EBITDA ajustado: ≤ 24%.
 
 
-#### C · Tesis de disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas
+#### Disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas
 
 **Qué plantea.** Es el riesgo de sustitución por asistentes generalistas.
 
-**Traducción al modelo.** Suscripciones crece 5%, 2%, 0%, -2%, -2%; Publicidad crece 3%, 0%, 0%, 0%, 0%; Duolingo English Test crece -5%, -5%, -5%, -5%, -5%; Compras en la aplicación crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 0,4%; el margen operativo objetivo es 15,1%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 0,00%: los años 6–10 pasan de -1,9% a ese nivel, sin recuperación. Probabilidad: 10%; DCF: US$59,88 por acción.
+**Traducción al modelo.** Suscripciones crece 5%, 2%, 0%, -2%, -2%; Publicidad crece 3%, 0%, 0%, 0%, 0%; Duolingo English Test crece -5%, -5%, -5%, -5%, -5%; Compras en la aplicación crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 0,4%; el margen operativo objetivo es 15,1%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 0,00%: los años 6–10 pasan de −1,9% a ese nivel, sin recuperación. Probabilidad: 10%; DCF: US$59,88 por acción.
 
-**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: reservas totales (interanual): ≤ +8% dos trimestres; usuarios activos diarios: desaceleración bajo +10%; suscriptores pagos: ≤ +10%; margen EBITDA ajustado: ≤ 24%.
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: reservas totales (interanual): ≤ +8% dos trimestres; usuarios activos diarios: desaceleración bajo +10%; suscriptores pagos: ≤ +10%; margen EBITDA ajustado: ≤ 24%.
 
 
-#### D · Tesis optimista: La IA sube el ingreso por usuario
+#### Optimista: La IA sube el ingreso por usuario
 
 **Qué plantea.** Necesita que la IA suba el precio o la conversión (Max, Video Call).
 
@@ -255,20 +296,20 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Cómo contrastarla.** La confirmarían: reservas totales (interanual): ≥ +15%; usuarios activos diarios: ≥ +15% con reservas acelerando; suscriptores pagos: ≥ +15%; margen EBITDA ajustado: ≥ 28%.
 
-**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,99%; C: 0,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 4,99%; Disrupción: 0,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
 
-### Historias cuantificadas y valor esperado
+### Historias cuantificadas: DCF Base y DCF esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,35) | Valor/acción (beta 1,61) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · La audiencia crece y la monetización se recupera en parte** | 40% | Suscripciones: 14%, 13%, 12%, 11%, 10%; Publicidad: 15%, 12%, 10%, 10%, 8%; Duolingo English Test: 2%, 2%, 2%, 2%, 2%; Compras en la aplicación: 10%, 10%, 8%, 8%, 6% | 11,5% | 27,1% | 3,0 | 4,99% | US$119,64 | US$114,20 |
-| **B · La monetización se estanca** | 30% | Suscripciones: 10%, 9%, 8%, 7%, 6%; Publicidad: 10%, 8%, 7%, 6%, 5%; Duolingo English Test: 0%, 0%, 0%, 0%, 0%; Compras en la aplicación: 5%, 5%, 5%, 5%, 5% | 7,6% | 23,1% | 3,0 | 4,99% | US$93,58 | US$89,83 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas** | 10% | Suscripciones: 5%, 2%, 0%, -2%, -2%; Publicidad: 3%, 0%, 0%, 0%, 0%; Duolingo English Test: -5%, -5%, -5%, -5%, -5%; Compras en la aplicación: 0%, 0%, 0%, 0%, 0% | 0,4% | 15,1% | 3,0 | 0,00% | US$59,88 | US$58,32 |
-| **D · La IA sube el ingreso por usuario** | 20% | Suscripciones: 20%, 18%, 16%, 14%, 12%; Publicidad: 18%, 15%, 12%, 10%, 10%; Duolingo English Test: 5%, 5%, 5%, 5%, 5%; Compras en la aplicación: 15%, 12%, 10%, 10%, 8% | 15,3% | 32,1% | 3,0 | 4,99% | US$155,74 | US$147,97 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$113,06** | **US$108,05** |
+| **Base · La audiencia crece y la monetización se recupera en parte** | 40% | Suscripciones: 14%, 13%, 12%, 11%, 10%; Publicidad: 15%, 12%, 10%, 10%, 8%; Duolingo English Test: 2%, 2%, 2%, 2%, 2%; Compras en la aplicación: 10%, 10%, 8%, 8%, 6% | 11,5% | 27,1% | 3,0 | 4,99% | US$119,64 | US$114,20 |
+| **Conservadora · La monetización se estanca** | 30% | Suscripciones: 10%, 9%, 8%, 7%, 6%; Publicidad: 10%, 8%, 7%, 6%, 5%; Duolingo English Test: 0%, 0%, 0%, 0%, 0%; Compras en la aplicación: 5%, 5%, 5%, 5%, 5% | 7,6% | 23,1% | 3,0 | 4,99% | US$93,58 | US$89,83 |
+| **Disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas** | 10% | Suscripciones: 5%, 2%, 0%, -2%, -2%; Publicidad: 3%, 0%, 0%, 0%, 0%; Duolingo English Test: -5%, -5%, -5%, -5%, -5%; Compras en la aplicación: 0%, 0%, 0%, 0%, 0% | 0,4% | 15,1% | 3,0 | 0,00% | US$59,88 | US$58,32 |
+| **Optimista · La IA sube el ingreso por usuario** | 20% | Suscripciones: 20%, 18%, 16%, 14%, 12%; Publicidad: 18%, 15%, 12%, 10%, 10%; Duolingo English Test: 5%, 5%, 5%, 5%, 5%; Compras en la aplicación: 15%, 12%, 10%, 10%, 8% | 15,3% | 32,1% | 3,0 | 4,99% | US$155,74 | US$147,97 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$113,06** | **US$108,05** |
 
-A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (10%) es el riesgo de sustitución por asistentes generalistas. D (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+Base (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. Conservadora (30%) prolonga la brecha actual entre usuarios y reservas. Disrupción (10%) es el riesgo de sustitución por asistentes generalistas. Optimista (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF técnico anterior (beta 1,35; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
@@ -291,7 +332,7 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 4. El SBC y la dilución absorben el flujo libre: crece el negocio pero no el valor por acción.
 5. El margen no sube porque la IA y el marketing exigen gasto permanente.
 
-**Evidencia en contra de la historia más probable:** el 2T26 muestra la brecha más grande en años entre usuarios (+23%) y reservas (+8%), y la guía del 3T (+8,9% de reservas) no muestra recuperación. Si el 4T repite, B pasa a ser la historia central.
+**Evidencia en contra de la historia más probable:** el 2T26 muestra la brecha más grande en años entre usuarios (+23%) y reservas (+8%), y la guía del 3T (+8,9% de reservas) no muestra recuperación. Si el 4T repite, Conservadora pasa a ser la historia central.
 
 
 ### Indicadores y actualización de probabilidades
@@ -318,7 +359,9 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,35 | 18,8% (15% de las empresas) | 15,7% (23% de las empresas) | 13,6% (29% de las empresas) |
 | Beta 1,61 | 20,1% (13% de las empresas) | 16,9% (19% de las empresas) | 14,9% (25% de las empresas) |
 
-Frente al valor esperado de las historias (US$113,06 con la beta de la hoja; US$108,05 con la propuesta), el precio está por encima en 26% y por encima en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF Base (US$119,64), el valor intrínseco principal, el precio está por encima en 19%.
+
+Frente al DCF esperado de las historias (US$113,06 con la beta de la hoja; US$108,05 con la propuesta), el precio está por encima en 26% y por encima en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -327,10 +370,10 @@ Frente al valor esperado de las historias (US$113,06 con la beta de la hoja; US$
 |---|---|---|
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Hábito de aprendizaje global con audiencia en alza y monetización en desaceleración |  |
-| Probabilidades | A 40% / B 30% / C 10% / D 20% |  |
-| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$113,06 / US$108,05 |  |
-| DCF base hoy (historia A) | US$119,64 |  |
-| Precio con MOS sobre el valor esperado | US$73,49 (MOS 35%) |  |
+| Probabilidades | Base 40% / Conservadora 30% / Disrupción 10% / Optimista 20% |  |
+| DCF Base hoy (valor intrínseco principal) | US$119,64 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$113,06 / US$108,05 |  |
+| Precio con MOS sobre el DCF esperado | US$73,49 (MOS 35%) |  |
 | Rango (historia más débil a más fuerte) | US$58,32 a US$155,74 |  |
 | Confianza | Media-baja: la monetización y el efecto de la IA son muy inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de reservas y suscriptores frente a DAU; margen y SBC |  |

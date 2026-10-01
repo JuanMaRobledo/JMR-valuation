@@ -89,7 +89,7 @@
  },
  "historias": [
   {
-   "nombre": "A · La IA se cobra dentro de la suscripción",
+   "nombre": "Base · La IA se cobra dentro de la suscripción",
    "prob": 0.4,
    "margen": 0.40095389759382544,
    "crec": {
@@ -259,11 +259,13 @@
     "wacc0": 0.10799209778764625,
     "margenY1": 0.385954
    },
+   "valor_bruto": 466.2949101295959,
+   "valor_bruto_prop": 475.66254281823825,
    "valor_beta_hoja": 466.2949101295959,
    "valor_beta_prop": 475.66254281823825
   },
   {
-   "nombre": "B · Erosión gradual frente a Figma y Canva",
+   "nombre": "Conservadora · Erosión gradual frente a Figma y Canva",
    "prob": 0.35,
    "margen": 0.3709538975938254,
    "crec": {
@@ -434,11 +436,13 @@
     "wacc0": 0.10799209778764625,
     "margenY1": 0.385954
    },
+   "valor_bruto": 268.3229539875946,
+   "valor_bruto_prop": 273.29265204848747,
    "valor_beta_hoja": 268.3229539875946,
    "valor_beta_prop": 273.29265204848747
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "margen": 0.3209538975938254,
    "crec": {
@@ -611,11 +615,13 @@
     "wacc0": 0.10799209778764625,
     "margenY1": 0.385954
    },
+   "valor_bruto": 172.96182185650662,
+   "valor_bruto_prop": 175.91538740461328,
    "valor_beta_hoja": 172.96182185650662,
    "valor_beta_prop": 175.91538740461328
   },
   {
-   "nombre": "D · La IA amplía el mercado de Adobe",
+   "nombre": "Optimista · La IA amplía el mercado de Adobe",
    "prob": 0.1,
    "margen": 0.4309538975938254,
    "crec": {
@@ -785,6 +791,8 @@
     "wacc0": 0.10799209778764625,
     "margenY1": 0.385954
    },
+   "valor_bruto": 584.4606227274746,
+   "valor_bruto_prop": 596.3879120971362,
    "valor_beta_hoja": 584.4606227274746,
    "valor_beta_prop": 596.3879120971362
   }
@@ -900,5 +908,72 @@
    "tasa_base": 0.9145945965467378
   }
  ],
- "ingresos_ltm": 25970
+ "ingresos_ltm": 25970,
+ "sens_base": {
+  "base": 466.2949101295959,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 443.7592301726215
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 488.8305900865703
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 417.3618819981118
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 520.6774178093348
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 604.768689767936
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 380.3631562980985
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 434.7332311234003
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 506.08658813284103
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 444.0903905996151
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 463.93850781814035
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 467.86584500389966
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 332.3229412629497
+   }
+  ]
+ },
+ "rd_vida": 3,
+ "rd_ltm": 4694
 }

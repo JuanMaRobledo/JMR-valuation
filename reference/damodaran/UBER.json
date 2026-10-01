@@ -14,7 +14,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Plataforma madura que escala márgenes",
+   "nombre": "Base · Plataforma madura que escala márgenes",
    "prob": 0.45,
    "margen": 0.22,
    "crec": {
@@ -44,7 +44,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Robotaxis y regulación presionan la movilidad",
+   "nombre": "Conservadora · Robotaxis y regulación presionan la movilidad",
    "prob": 0.25,
    "margen": 0.16,
    "crec": {
@@ -74,7 +74,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.1,
    "crec": {
@@ -107,7 +107,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Uber es la red de los vehículos autónomos",
+   "nombre": "Optimista · Uber es la red de los vehículos autónomos",
    "prob": 0.2,
    "margen": 0.26,
    "crec": {
@@ -169,7 +169,7 @@
    "Incierto"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 10,9% anual cinco años (historia A) lo logró ~19% de las empresas de ese tamaño; 13,8% (historia D), ~12%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 10,9% anual cinco años (Base) lo logró ~19% de las empresas de ese tamaño; 13,8% (Optimista), ~12%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.",
  "crecimiento": {
   "texto": "Ingresos de US$37.281 millones (2023, +17,0%), US$43.978 millones (2024, +18,0%) y US$52.017 millones (2025, +18,3%); LTM US$55.227 millones. En el 2T26, Movilidad tuvo resultado de segmento de US$2.215 millones (30,1% de ingresos) y Delivery US$1.055 millones (20,1%). La división LTM de las historias (Movilidad ~53%, Delivery ~38%, Freight ~9%) es una estimación con los pesos del 2T26.",
   "tabla": {
@@ -225,7 +225,7 @@
  "reinversion": {
   "texto": "Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Por eso la revisión bajó el sales-to-capital de los años 1-5 a 2,5. Sin ventaja defendible: tiene efectos de red, pero gana por encima del costo de capital solo desde 2024; se revisará con tres años de evidencia. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. B (25%) es la presión de los robotaxis y la regulación sobre Movilidad. C (10%) es la desintermediación por Waymo y Tesla. D (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. Conservadora (25%) es la presión de los robotaxis y la regulación sobre Movilidad. Disrupción (10%) es la desintermediación por Waymo y Tesla. Optimista (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Waymo y Tesla operan sus robotaxis con sus propias apps y Uber pierde los viajes urbanos más rentables.",
   "La compra de Delivery Hero se paga cara y entra en mercados con competencia feroz.",

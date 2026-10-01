@@ -10,11 +10,11 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Software (System & Application) reapalancada con la deuda de Intuit da 1,35; el DCF Base baja de US$496,86 a US$480,28. Credit Karma añade ciclicidad (depende del crédito al consumidor), lo que apoya una beta algo mayor que la de la hoja."
+  "texto": "La hoja usa una beta de 1,20. La bottom-up de Software (System & Application) reapalancada con la deuda de Intuit da 1,34; el DCF Base baja de US$496,74 a US$480,25. Credit Karma añade ciclicidad (depende del crédito al consumidor), lo que apoya una beta algo mayor que la de la hoja."
  },
  "historias": [
   {
-   "nombre": "A · La IA es palanca de monetización",
+   "nombre": "Base · La IA es palanca de monetización",
    "prob": 0.45,
    "margen": 0.32,
    "crec": {
@@ -44,7 +44,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · La IA erosiona impuestos y contabilidad básica",
+   "nombre": "Conservadora · La IA erosiona impuestos y contabilidad básica",
    "prob": 0.25,
    "margen": 0.29,
    "crec": {
@@ -75,7 +75,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.26,
    "crec": {
@@ -108,7 +108,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Plataforma financiera de la pyme",
+   "nombre": "Optimista · Plataforma financiera de la pyme",
    "prob": 0.2,
    "margen": 0.35,
    "crec": {
@@ -170,7 +170,7 @@
    "Probable"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 9,8% anual cinco años (historia A) lo logró ~26% de las empresas de ese tamaño; 12,2% (historia D), ~16%. Intuit lleva años en ese grupo, pero la tasa base recuerda que pocas empresas sostienen doble dígito cuando ya facturan más de US$20.000 millones.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 9,8% anual cinco años (Base) lo logró ~26% de las empresas de ese tamaño; 12,2% (Optimista), ~16%. Intuit lleva años en ese grupo, pero la tasa base recuerda que pocas empresas sostienen doble dígito cuando ya facturan más de US$20.000 millones.",
  "crecimiento": {
   "texto": "Ingresos de US$16.285 millones (FY24, +13,3%), US$18.831 millones (FY25, +15,6%) y US$21.448 millones (FY26, +13,9%). Global Business Solutions creció 16% y el Online Ecosystem 19%; QuickBooks Online Accounting, 23%. La división de las historias (GBS ~US$12.650 millones, Consumer ~US$6.000 millones, Credit Karma ~US$2.800 millones) es una estimación propia: desde agosto de 2025 Consumer, Credit Karma y ProTax se reportan juntos y desde agosto de 2026 Mailchimp va aparte.",
   "tabla": {
@@ -220,7 +220,7 @@
  "reinversion": {
   "texto": "Capex mínimo (US$175 millones en FY26) y flujo operativo de US$8.838 millones. La hoja usa un sales-to-capital de 2,5 y 2, que incorpora compras (Credit Karma y Mailchimp costaron ~US$20.000 millones). El flujo libre va a recompras (US$5.412 millones) y dividendos (US$1.347 millones). Ventaja durable: costos de cambio y datos del cliente en QuickBooks y TurboTax, con ROIC siempre por encima del costo de capital (12-22%). El ROIC después del año 10 es 22,6%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (45%) es la continuación de FY24-FY26: la pyme crece a doble dígito y el consumidor a un dígito medio. B (25%) es la sustitución parcial por IA en impuestos y contabilidad simples. C (10%) combina recesión (Credit Karma) y expansión de la declaración gratuita del Estado. D (20%) es Intuit como plataforma financiera completa de la pyme (pagos, nómina, capital, mid-market). En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es la continuación de FY24-FY26: la pyme crece a doble dígito y el consumidor a un dígito medio. Conservadora (25%) es la sustitución parcial por IA en impuestos y contabilidad simples. Disrupción (10%) combina recesión (Credit Karma) y expansión de la declaración gratuita del Estado. Optimista (20%) es Intuit como plataforma financiera completa de la pyme (pagos, nómina, capital, mid-market). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Los asistentes de IA preparan declaraciones simples gratis y TurboTax pierde unidades en el extremo bajo.",
   "Bancos, fintech y ERPs ligeros integran contabilidad y pagos gratis y QuickBooks pierde pymes nuevas.",
@@ -228,7 +228,7 @@
   "La regulación amplía la declaración gratuita del IRS o de los estados.",
   "La compensación en acciones sigue en ~10% de los ingresos y diluye el valor por acción."
  ],
- "contra": "la compresión del múltiplo muestra que el mercado ya ve riesgo de sustitución, y Credit Karma sigue siendo cíclico. Si las unidades de TurboTax caen en la temporada 2027, B gana peso.",
+ "contra": "la compresión del múltiplo muestra que el mercado ya ve riesgo de sustitución, y Credit Karma sigue siendo cíclico. Si las unidades de TurboTax caen en la temporada 2027, Conservadora gana peso.",
  "indicadores": [
   [
    "Online Ecosystem (interanual)",

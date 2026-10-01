@@ -14,7 +14,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Se estabiliza Américas y crece lo internacional",
+   "nombre": "Base · Se estabiliza Américas y crece lo internacional",
    "prob": 0.4,
    "margen": 0.18,
    "crec": {
@@ -44,7 +44,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Pérdida estructural frente a Alo y Vuori",
+   "nombre": "Conservadora · Pérdida estructural frente a Alo y Vuori",
    "prob": 0.35,
    "margen": 0.14,
    "crec": {
@@ -75,7 +75,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.1,
    "crec": {
@@ -108,7 +108,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · La marca se recupera",
+   "nombre": "Optimista · La marca se recupera",
    "prob": 0.15,
    "margen": 0.21,
    "crec": {
@@ -170,7 +170,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$7.000-12.000 millones: crecer 3,0% anual cinco años (historia A) lo logró ~70% de las empresas de ese tamaño; 5,8% (historia D), ~52%. La hoja no pide crecimiento, pide que el margen se recupere. El valor de lululemon depende del margen y de cuánto dura la caída en Norteamérica, no de la tasa de crecimiento.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$7.000-12.000 millones: crecer 3,0% anual cinco años (Base) lo logró ~70% de las empresas de ese tamaño; 5,8% (Optimista), ~52%. La hoja no pide crecimiento, pide que el margen se recupere. El valor de lululemon depende del margen y de cuánto dura la caída en Norteamérica, no de la tasa de crecimiento.",
  "crecimiento": {
   "texto": "Ingresos de US$9.619 millones (FY23, +18,6%), US$10.588 millones (FY24, +10,1%) y US$11.103 millones (FY25, +4,9%); LTM US$11.094 millones (plano). En el 2T FY26 los ingresos cayeron 4% (−5% en moneda constante) y las comparables −10%. La hoja supone −6% el próximo año y 4% después. La división de las historias (Américas ~69%, China ~16%, resto ~15%) es una aproximación con fuentes secundarias: no se verificó un desglose oficial en un solo documento.",
   "tabla": {
@@ -226,7 +226,7 @@
  "reinversion": {
   "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Ventaja que se desvanece: marca premium de 27 años, pero con comparables de −10% a −12% en Norteamérica, rebajas y un ROIC que bajó de 52% a 27%. El ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (15,8%)."
  },
- "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (10%) es el declive de una marca de moda. D (15%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. Conservadora (35%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como Base. Disrupción (10%) es el declive de una marca de moda. Optimista (15%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Alo y Vuori siguen ganando a la clienta joven y lululemon queda como marca de «generación anterior».",
   "Los aranceles se quedan y lululemon no puede trasladarlos a precio sin perder volumen.",
@@ -234,7 +234,7 @@
   "China se desacelera por competencia local (Anta, Li Ning) o por tensiones comerciales.",
   "Las rebajas se vuelven permanentes y el margen se queda en 14-15%."
  ],
- "contra": "las comparables de −10% y la caída de ~20% en leggings (la categoría central) muestran una pérdida de relevancia, no solo un mal trimestre. Si el 3T y el 4T repiten, B pasa a ser la historia central.",
+ "contra": "las comparables de −10% y la caída de ~20% en leggings (la categoría central) muestran una pérdida de relevancia, no solo un mal trimestre. Si el 3T y el 4T repiten, Conservadora pasa a ser la historia central.",
  "indicadores": [
   [
    "Ventas comparables en Norteamérica",

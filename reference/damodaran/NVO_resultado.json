@@ -90,7 +90,7 @@
  },
  "historias": [
   {
-   "nombre": "A · El volumen compensa la caída de precio",
+   "nombre": "Base · El volumen compensa la caída de precio",
    "prob": 0.4,
    "margen": 0.4,
    "crec": {
@@ -271,11 +271,13 @@
     "wacc0": 0.09034143627647655,
     "margenY1": 0.4571473879498117
    },
+   "valor_bruto": 39.27487455165944,
+   "valor_bruto_prop": 39.983282232540674,
    "valor_beta_hoja": 39.27487455165944,
    "valor_beta_prop": 39.983282232540674
   },
   {
-   "nombre": "B · Guerra de precios con Lilly y genéricos",
+   "nombre": "Conservadora · Guerra de precios con Lilly y genéricos",
    "prob": 0.3,
    "margen": 0.35,
    "crec": {
@@ -457,11 +459,13 @@
     "wacc0": 0.09034143627647655,
     "margenY1": 0.4571473879498117
    },
+   "valor_bruto": 28.52368069392444,
+   "valor_bruto_prop": 28.998030381151054,
    "valor_beta_hoja": 28.52368069392444,
    "valor_beta_prop": 28.998030381151054
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.3,
    "crec": {
@@ -645,11 +649,13 @@
     "wacc0": 0.09034143627647655,
     "margenY1": 0.4571473879498117
    },
+   "valor_bruto": 22.713212408512774,
+   "valor_bruto_prop": 23.056955598150758,
    "valor_beta_hoja": 22.713212408512774,
    "valor_beta_prop": 23.056955598150758
   },
   {
-   "nombre": "D · La nueva generación recupera el liderazgo",
+   "nombre": "Optimista · La nueva generación recupera el liderazgo",
    "prob": 0.2,
    "margen": 0.43,
    "crec": {
@@ -830,6 +836,8 @@
     "wacc0": 0.09034143627647655,
     "margenY1": 0.4571473879498117
    },
+   "valor_bruto": 46.88888829960481,
+   "valor_bruto_prop": 47.766553380593734,
    "valor_beta_hoja": 46.88888829960481,
    "valor_beta_prop": 47.766553380593734
   }
@@ -945,5 +953,72 @@
    "tasa_base": 0.8680769725531161
   }
  ],
- "ingresos_ltm": 46353
+ "ingresos_ltm": 46353,
+ "sens_base": {
+  "base": 39.27487455165944,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 37.490918737078914
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 41.05883036623998
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 36.499820665886375
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 42.34299900256342
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 47.45349390832513
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 33.48954342420589
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 38.21076579727808
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 40.51297199056977
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 37.404642430151846
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 38.623561510426455
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 39.70908324581477
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 35.8883410050242
+   }
+  ]
+ },
+ "rd_vida": 5,
+ "rd_ltm": 7930.5
 }

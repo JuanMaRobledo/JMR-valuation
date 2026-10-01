@@ -9,11 +9,11 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,11; el DCF Base baja de US$117,68 a US$112,15. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo."
+  "texto": "La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,11; el DCF Base baja de US$117,70 a US$112,15. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo."
  },
  "historias": [
   {
-   "nombre": "A · Tropiezo temporal; vuelve a crecer con innovación",
+   "nombre": "Base · Tropiezo temporal; vuelve a crecer con innovación",
    "prob": 0.4,
    "margen": 0.36,
    "crec": {
@@ -36,7 +36,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Erosión prolongada de franquicias clave",
+   "nombre": "Conservadora · Erosión prolongada de franquicias clave",
    "prob": 0.35,
    "margen": 0.33,
    "crec": {
@@ -60,7 +60,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.29,
    "crec": {
@@ -86,7 +86,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Recuperación fuerte con nuevos productos",
+   "nombre": "Optimista · Recuperación fuerte con nuevos productos",
    "prob": 0.15,
    "margen": 0.38,
    "crec": {
@@ -141,7 +141,7 @@
    "Media-baja"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$4.500-7.000 millones: crecer 4,5% anual cinco años (historia A) lo logró ~64% de las empresas de ese tamaño; 6,0% (historia D), ~54%. La hoja pide algo común. El valor de Zoetis depende de sostener un margen de 36%, que es excepcional para cualquier empresa, más que del crecimiento.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$4.500-7.000 millones: crecer 4,5% anual cinco años (Base) lo logró ~64% de las empresas de ese tamaño; 6,0% (Optimista), ~54%. La hoja pide algo común. El valor de Zoetis depende de sostener un margen de 36%, que es excepcional para cualquier empresa, más que del crecimiento.",
  "crecimiento": {
   "texto": "Ingresos de US$8.544 millones (2023, +5,7%), US$9.256 millones (2024, +8,3%) y US$9.467 millones (2025, +2,3%); LTM US$9.517 millones. En el 2T26 las ventas cayeron 0,2% y mascotas en EE.UU. 11%. La hoja supone 2% el próximo año y 5% en los años 2-5. La división de las historias (compañía ~2/3, producción ~1/3) es una aproximación.",
   "tabla": {
@@ -197,7 +197,7 @@
  "reinversion": {
   "texto": "Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Ventaja durable: patentes que se renuevan, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%. El ROIC después del año 10 es 16,9%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (10%) es competencia y genéricos generalizados. D (15%) es una recuperación fuerte con nuevos productos. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. Conservadora (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como Base. Disrupción (10%) es competencia y genéricos generalizados. Optimista (15%) es una recuperación fuerte con nuevos productos. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Los competidores en dermatología (nuevos inhibidores de JAK y anticuerpos) le quitan participación a Apoquel y Cytopoint.",
   "Las dudas de seguridad sobre Librela reducen su uso de forma permanente.",
@@ -205,7 +205,7 @@
   "El dueño de mascotas, presionado por la macro, visita menos al veterinario.",
   "La deuda para recompras limita la flexibilidad si el flujo cae."
  ],
- "contra": "la caída es simultánea en varias franquicias (no un solo producto), lo que apunta a un problema competitivo más que a un año malo; si mascotas EE.UU. sigue cayendo en el 3T y 4T, B gana peso.",
+ "contra": "la caída es simultánea en varias franquicias (no un solo producto), lo que apunta a un problema competitivo más que a un año malo; si mascotas EE.UU. sigue cayendo en el 3T y 4T, Conservadora gana peso.",
  "indicadores": [
   [
    "Mascotas EE.UU. (interanual)",

@@ -9,11 +9,11 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada con la deuda, incluidos los arrendamientos, da 0,98, y el DCF Base mejora de −US$4,70 a −US$2,16 por acción (sigue siendo negativo: el problema no es la tasa sino que el retorno sobre el capital, con los arrendamientos, es menor que el costo de capital). Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
+  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada con la deuda, incluidos los arrendamientos, da 0,97, y el DCF Base mejora de −US$4,70 a −US$2,16 por acción (sigue siendo negativo: el problema no es la tasa sino que el retorno sobre el capital, con los arrendamientos, es menor que el costo de capital). Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
  },
  "historias": [
   {
-   "nombre": "A · Crece por aperturas y el margen mejora",
+   "nombre": "Base · Crece por aperturas y el margen mejora",
    "prob": 0.45,
    "margen": 0.08,
    "crec": {
@@ -36,7 +36,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Crece, pero el margen no despega",
+   "nombre": "Conservadora · Crece, pero el margen no despega",
    "prob": 0.3,
    "margen": 0.05,
    "crec": {
@@ -59,7 +59,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.03,
    "crec": {
@@ -85,7 +85,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Economía unitaria de primer nivel",
+   "nombre": "Optimista · Economía unitaria de primer nivel",
    "prob": 0.15,
    "margen": 0.11,
    "crec": {
@@ -140,7 +140,7 @@
    "Media"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,0% anual cinco años (historia A) lo logró ~40% de las empresas de ese tamaño; 13,1% (historia D), ~31%. La hoja pide algo alcanzable. El problema es el margen: incluso con crecimiento de doble dígito, con margen de 5% el valor es muy bajo, porque cada Shack nuevo exige capital y el retorno apenas cubre su costo.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,0% anual cinco años (Base) lo logró ~40% de las empresas de ese tamaño; 13,1% (Optimista), ~31%. La hoja pide algo alcanzable. El problema es el margen: incluso con crecimiento de doble dígito, con margen de 5% el valor es muy bajo, porque cada Shack nuevo exige capital y el retorno apenas cubre su costo.",
  "crecimiento": {
   "texto": "Ingresos de US$1.088 millones (2023, +20,8%), US$1.253 millones (2024, +15,2%) y US$1.445 millones (2025, +15,4%); LTM US$1.552 millones. En el 1S26, ventas de Shacks propios de US$757,5 millones (+16%) y licencias de US$25,7 millones. La hoja supone 13% el próximo año y 11% en los años 2-5.",
   "tabla": {
@@ -194,9 +194,9 @@
   "texto": "El margen operativo pasó de ~0% (2023-2024) a 4,3% (2025) y 3,6% LTM, por mejor margen a nivel Shack y gastos generales creciendo menos que las ventas. La hoja supone 4,5% el próximo año y 8% de objetivo. Las historias van de 3% a 11%: el margen es la variable que más mueve el valor."
  },
  "reinversion": {
-  "texto": "Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia B. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028. Sin ventaja defendible: su ROIC está por debajo del costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
+  "texto": "Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia Conservadora. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028. Sin ventaja defendible: su ROIC está por debajo del costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. B (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. C (10%) es un consumidor débil con aperturas que no rinden. D (15%) es una economía unitaria de primer nivel. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. Conservadora (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. Disrupción (10%) es un consumidor débil con aperturas que no rinden. Optimista (15%) es una economía unitaria de primer nivel. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "La competencia en hamburguesas (ofertas de valor de McDonald's y Wendy's, Five Guys) baja el tráfico.",
   "Los Shacks nuevos (drive-thru, suburbios) tienen volúmenes menores y bajan el retorno promedio.",
@@ -204,7 +204,7 @@
   "El refinanciamiento de los convertibles de 2028 se hace a tasas altas o con dilución.",
   "Las licencias internacionales cierran locales en mercados débiles."
  ],
- "contra": "el margen operativo sigue en 3-4% después de años de crecimiento; mientras no supere ~6% de forma sostenida, la historia B es tan creíble como A.",
+ "contra": "el margen operativo sigue en 3-4% después de años de crecimiento; mientras no supere ~6% de forma sostenida, la historia Conservadora es tan creíble como Base.",
  "indicadores": [
   [
    "Ventas same-Shack",

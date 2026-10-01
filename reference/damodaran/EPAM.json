@@ -10,11 +10,11 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$171,77 a US$184,60. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector."
+  "texto": "La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$171,69 a US$184,57. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector."
  },
  "historias": [
   {
-   "nombre": "A · La IA compensa lo que quita: crecimiento moderado",
+   "nombre": "Base · La IA compensa lo que quita: crecimiento moderado",
    "prob": 0.45,
    "margen": 0.12,
    "crec": {
@@ -44,7 +44,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Deflación de horas por IA",
+   "nombre": "Conservadora · Deflación de horas por IA",
    "prob": 0.3,
    "margen": 0.1,
    "crec": {
@@ -75,7 +75,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.08,
    "crec": {
@@ -108,7 +108,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · La IA crea demanda de ingeniería",
+   "nombre": "Optimista · La IA crea demanda de ingeniería",
    "prob": 0.15,
    "margen": 0.14,
    "crec": {
@@ -170,7 +170,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 5,5% anual cinco años (historia A) lo logró ~60% de las empresas de ese tamaño; 8,6% (historia D), ~42%. La hoja (5%) es modesta. El valor de EPAM depende menos del crecimiento que del margen, que la hoja espera recuperar (de ~10% a 12,5%).",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 5,5% anual cinco años (Base) lo logró ~60% de las empresas de ese tamaño; 8,6% (Optimista), ~42%. La hoja (5%) es modesta. El valor de EPAM depende menos del crecimiento que del margen, que la hoja espera recuperar (de ~10% a 12,5%).",
  "crecimiento": {
   "texto": "Ingresos de US$4.691 millones (2023, −2,8%), US$4.728 millones (2024, +0,8%) y US$5.457 millones (2025, +15,4% con compras como Neoris y First Derivative); LTM US$5.617 millones. En el 2T26 facturó US$1.414,8 millones (+4,5%), con Europa +10%. La división de las historias (Norteamérica ~57%, Europa ~40%, otros ~3%) es una aproximación: la empresa reporta por geografía de clientes y la diferencia entre el total y Europa la calcula el informe.",
   "tabla": {
@@ -226,7 +226,7 @@
  "reinversion": {
   "texto": "Casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un sales-to-capital de 3,5 y 3. La reinversión real es en personas (formación en IA) y compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones). Ventaja que se desvanece: costos de cambio moderados en servicios de ingeniería, pero con un ROIC que bajó de 47% a 15% en cinco años y deflación de horas por la IA. El ROIC después del año 10 es 12,0%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (26,4%), limitado a su ROIC actual (13,8%)."
  },
- "prob_texto": "A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (10%) es la comoditización con ingresos en caída. D (15%) supone que la IA dispara proyectos de datos y modernización. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. Conservadora (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. Disrupción (10%) es la comoditización con ingresos en caída. Optimista (15%) supone que la IA dispara proyectos de datos y modernización. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Los clientes usan IA para producir el mismo software con 20-30% menos horas y renegocian contratos.",
   "La competencia de India (TCS, Infosys) y de las consultoras con IA baja las tarifas.",
@@ -234,7 +234,7 @@
   "Un nuevo shock geopolítico en Europa del Este afecta la entrega.",
   "Las compras recientes no se integran bien y generan deterioro."
  ],
- "contra": "el margen cae desde 2021 y el crecimiento orgánico es de un dígito bajo en Norteamérica; si 2027 no muestra recuperación, la historia B se vuelve la central.",
+ "contra": "el margen cae desde 2021 y el crecimiento orgánico es de un dígito bajo en Norteamérica; si 2027 no muestra recuperación, la historia Conservadora se vuelve la central.",
  "indicadores": [
   [
    "Crecimiento de ingresos (orgánico, sin divisas)",

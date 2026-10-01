@@ -202,20 +202,24 @@ def main():
     w("")
     ve = rec.get("valorEsperado") or {}
     if ve.get("escenariosUnificados") and ve.get("historias"):
-        # Contrato del 30-sep-2026: las historias A-D son los escenarios DCF activos; el esperado es el valor principal.
-        L[-2] = (f"**Valor intrínseco principal: DCF esperado de las cuatro historias, {money(ve['valor'])}.** Historia central A: "
-                 f"{money(ve['valorCentral'])}; rango {money(ve['rango']['min'])}–{money(ve['rango']['max'])}; precio con MOS "
+        # Contrato del 30-sep-2026 con la jerarquía del 1-oct-2026: el DCF Base es el valor intrínseco principal; el DCF
+        # esperado por probabilidades es un complemento y el MOS se sigue aplicando sobre él.
+        L[-2] = (f"**Valor intrínseco principal · DCF Base hoy: {money(ve['valorCentral'])} por acción.** Complemento: DCF "
+                 f"esperado por probabilidades {money(ve['valor'])}; rango de los cuatro escenarios (Base, Conservadora, "
+                 f"Disrupción y Optimista) {money(ve['rango']['min'])}–{money(ve['rango']['max'])}; precio con MOS "
                  f"{pct(mos_pct, 0)} sobre el esperado: {money(ve['valor'] * (1 - mos_pct))}; precio de referencia {money(price)}. "
-                 "Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con "
-                 "criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración "
-                 f"técnica anterior de la hoja (Base {money(dcf[1])}) y los múltiplos y el ponderado son lecturas secundarias.")
+                 "Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos "
+                 "están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista "
+                 f"de abajo son la calibración técnica anterior de la hoja (Base técnico {money(dcf[1])}) y los múltiplos y el "
+                 "ponderado son lecturas secundarias.")
         w("")
-        w("| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |")
+        w("| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |")
         w("|---|---:|---:|---:|")
         for h in ve["historias"]:
-            w(f"| {h['nombre']}{': ' + h['descripcion'] if h.get('descripcion') else ''} | {pct(h['probabilidad'], 0)} | "
+            nom = h["nombre"] + (": " + h["descripcion"] if h.get("descripcion") else "")
+            w(f"| {'**' + nom + '** (valor principal)' if h.get('id') == 'A' else nom} | {pct(h['probabilidad'], 0)} | "
               f"{money(h['valor'])} | {money(h['probabilidad'] * h['valor'])} |")
-        w(f"| **DCF esperado** | 100% | **{money(ve['valor'])}** | |")
+        w(f"| **DCF esperado (complemento)** | 100% | **{money(ve['valor'])}** | |")
         w("")
     w(dec.get("evaluacion", ""))
     w("")
@@ -223,7 +227,7 @@ def main():
     w(f"| Escenario | {'DCF técnico anterior hoy (calibración)' if unif else 'DCF hoy (valor intrínseco)'} | Múltiplos consolidados hoy (secundario) | "
       f"{'Mezcla auxiliar hoy' if unif else 'Ponderado hoy (secundario)'} | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |")
     w("|---|---:|---:|---:|---:|---:|")
-    for i, k in enumerate(SCEN):
+    for i, k in ((1, "base"), (0, "conservador"), (2, "optimista")):  # Base primero (contrato del 1-oct-2026)
         w(f"| {k.capitalize()} | {money(dcf[i])} | {money(mult[i])} | {money(pond[i])} | {money(mos.get(k))} | {money(op[k])} |")
     w("")
     w("## 2. Datos")
@@ -257,7 +261,7 @@ def main():
     w(" ".join(x for x in (dec.get("etapa_motivo"), dec.get("historia_motivo"), dec.get("peers_motivo"),
                          dec.get("ajuste_motivo"), dec.get("lambda_motivo")) if x))
     w("")
-    w("| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |")
+    w("| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |")
     w("|---|---|---|---|---:|---:|---:|---|")
     for m, r in res.items():
         if not r["aplica"]:
@@ -266,10 +270,10 @@ def main():
         c = r["C"]
         b = r["antes"]
         w(f"| {m} | {r['A_desc']} | {es(r['B_mediana'], 1)}x (n={r['B_n']}: {r['B_peers']}) × {es(1 + dec.get('ajuste_peers', 0))} = {es(r['B_ajustada'], 1)}x | "
-          f"{xm(c['Conservador'])} / {xm(c['Base'])} / {xm(c['Optimista'])} | {es(r['conservador'], 1)}x | **{es(r['base'], 1)}x** | "
-          f"{es(r['optimista'], 1)}x | {es(b['J8'], 1)}x / {es(b['J19'], 1)}x / {es(b['J30'], 1)}x |")
+          f"{xm(c['Base'])} / {xm(c['Conservador'])} / {xm(c['Optimista'])} | **{es(r['base'], 1)}x** | {es(r['conservador'], 1)}x | "
+          f"{es(r['optimista'], 1)}x | {es(b['J19'], 1)}x / {es(b['J8'], 1)}x / {es(b['J30'], 1)}x |")
     w("")
-    w("Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × "
+    w("Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × "
       "la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y "
       "Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de "
       "perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF "
@@ -291,24 +295,25 @@ def main():
     w("")
     w("Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:")
     w("")
-    w("| Método | Peso | Conservador | Base | Optimista |")
+    w("| Método | Peso | Base | Conservador | Optimista |")
     w("|---|---:|---:|---:|---:|")
     for m in rec["metodos"]:
-        w(f"| {m['nombre']} | {pct(m['peso'], 0)} | {money(m['conservador'])} | {money(m['base'])} | {money(m['optimista'])} |")
-    w(f"| **Ponderado FY+3** | 100% | {money(op['conservador'])} | {money(op['base'])} | {money(op['optimista'])} |")
+        w(f"| {m['nombre']} | {pct(m['peso'], 0)} | {money(m['base'])} | {money(m['conservador'])} | {money(m['optimista'])} |")
+    w(f"| **Ponderado FY+3** | 100% | {money(op['base'])} | {money(op['conservador'])} | {money(op['optimista'])} |")
     w("")
     w(f"Valor presente (Ke {pct(ke, 2)}; consolidado por método: {cell('Descuento de múltiplos', 'B6')}):")
     w("")
     w("| Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |")
     w("|---|---|---:|---:|---:|---:|---|")
     for mm in rec["descuentoMultiples"]["metodos"]:
-        for k in SCEN:
+        for k in ("base", "conservador", "optimista"):
             d = mm[k]
             w(f"| {mm['nombre']} | {k.capitalize()} | " + " | ".join(money(v) for v in d["vp"]) + f" | {money(d['consolidado'])} | {d.get('chequeo')} |")
     w("")
     chk = rec["descuentoMultiples"]["chequeo"]["resultado"]
-    w(f"Múltiplos consolidados hoy: {' / '.join(money(v) for v in mult)} · DCF hoy: {' / '.join(money(v) for v in dcf)} · "
-      f"Ponderado hoy: {' / '.join(money(v) for v in pond)} (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin "
+    bco = lambda v: " / ".join(money(v[i]) for i in (1, 0, 2))  # noqa: E731
+    w(f"Múltiplos consolidados hoy: {bco(mult)} · DCF técnico hoy: {bco(dcf)} · "
+      f"Ponderado hoy: {bco(pond)} (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin "
       f"descontar: {', '.join(f'{k} {chk[k]}' for k in SCEN)}.")
     w("")
     w("## 6. DCF frente a múltiplos")
