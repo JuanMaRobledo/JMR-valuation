@@ -15,7 +15,7 @@
  },
  "historias": [
   {
-   "nombre": "A · La audiencia crece y la monetización se recupera en parte",
+   "nombre": "Base · La audiencia crece y la monetización se recupera en parte",
    "prob": 0.4,
    "margen": 0.27,
    "crec": {
@@ -52,7 +52,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · La monetización se estanca",
+   "nombre": "Conservadora · La monetización se estanca",
    "prob": 0.3,
    "margen": 0.23,
    "crec": {
@@ -89,7 +89,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.15,
    "crec": {
@@ -129,7 +129,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · La IA sube el ingreso por usuario",
+   "nombre": "Optimista · La IA sube el ingreso por usuario",
    "prob": 0.2,
    "margen": 0.32,
    "crec": {
@@ -198,7 +198,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,5% anual cinco años (historia A) lo logró ~38% de las empresas de ese tamaño; 15,3% (historia D), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$700-1.250 millones: crecer 11,5% anual cinco años (Base) lo logró ~38% de las empresas de ese tamaño; 15,3% (Optimista), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.",
  "crecimiento": {
   "texto": "Ingresos de US$531 millones (2023, +43,7%), US$748 millones (2024, +40,8%) y US$1.038 millones (2025, +38,7%); LTM US$1.145 millones. En el 2T26 los ingresos crecieron 18% (US$298,5 millones), pero las reservas solo 8% (US$289,1 millones). Guía 2026: ingresos US$1.207 millones (+16,3%), reservas US$1.285 millones (+10,9%). Los ingresos van detrás de las reservas: su desaceleración todavía no se ve completa en los ingresos.",
   "tabla": {
@@ -254,7 +254,7 @@
  "reinversion": {
   "texto": "Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Sin ventaja defendible: marca y hábito de uso con costos de cambio bajos; cualquier app o asistente de IA puede enseñar idiomas. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (10%) es el riesgo de sustitución por asistentes generalistas. D (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. Conservadora (30%) prolonga la brecha actual entre usuarios y reservas. Disrupción (10%) es el riesgo de sustitución por asistentes generalistas. Optimista (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Las reservas siguen en ~8-10%: los usuarios nuevos (atraídos por campañas como la recuperación de rachas) pagan menos.",
   "Los asistentes de IA generalistas ofrecen práctica conversacional gratis y erosionan el valor de Max.",
@@ -262,7 +262,7 @@
   "El SBC y la dilución absorben el flujo libre: crece el negocio pero no el valor por acción.",
   "El margen no sube porque la IA y el marketing exigen gasto permanente."
  ],
- "contra": "el 2T26 muestra la brecha más grande en años entre usuarios (+23%) y reservas (+8%), y la guía del 3T (+8,9% de reservas) no muestra recuperación. Si el 4T repite, B pasa a ser la historia central.",
+ "contra": "el 2T26 muestra la brecha más grande en años entre usuarios (+23%) y reservas (+8%), y la guía del 3T (+8,9% de reservas) no muestra recuperación. Si el 4T repite, Conservadora pasa a ser la historia central.",
  "indicadores": [
   [
    "Reservas totales (interanual)",

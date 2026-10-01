@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$157,00.** Historia central A: US$176,10; rango US$85,29–US$231,70; precio con MOS 35% sobre el esperado: US$102,05; precio de referencia US$108,58. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$171,67) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$176,02 por acción.** Complemento: DCF esperado por probabilidades US$156,93; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$85,26–US$231,58; precio con MOS 35% sobre el esperado: US$102,00; precio de referencia US$108,58. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$171,68) y los múltiplos y el ponderado son lecturas secundarias.
 
 
-| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · La IA compensa lo que quita: crecimiento moderado | 45% | US$176,10 | US$79,25 |
-| B · Deflación de horas por IA | 30% | US$114,90 | US$34,47 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: Los servicios se comoditizan | 10% | US$85,29 | US$8,53 |
-| D · La IA crea demanda de ingeniería | 15% | US$231,70 | US$34,75 |
-| **DCF esperado** | 100% | **US$157,00** | |
+| **Base · La IA compensa lo que quita: crecimiento moderado** (valor principal) | 45% | US$176,02 | US$79,21 |
+| Conservadora · Deflación de horas por IA | 30% | US$114,85 | US$34,46 |
+| Disrupción · Deterioro de los fundamentales: Los servicios se comoditizan | 10% | US$85,26 | US$8,53 |
+| Optimista · La IA crea demanda de ingeniería | 15% | US$231,58 | US$34,74 |
+| **DCF esperado (complemento)** | 100% | **US$156,93** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$168,22 por acción y los múltiplos, US$109,37 hoy: 35% por debajo del DCF, fuera del rango de ±25%. Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA); el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$120,60 | US$90,62 | US$102,61 | US$102,05 | US$132,14 |
-| Base | US$171,67 | US$112,92 | US$136,42 | US$102,05 | US$184,18 |
-| Optimista | US$252,88 | US$150,04 | US$191,17 | US$102,05 | US$269,42 |
+| Base | US$171,68 | US$112,92 | US$136,42 | US$102,00 | US$184,18 |
+| Conservador | US$120,61 | US$90,62 | US$102,61 | US$102,00 | US$132,14 |
+| Optimista | US$252,90 | US$150,04 | US$191,18 | US$102,00 | US$269,42 |
 
 ## 2. Datos
 
@@ -49,23 +49,23 @@ Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$1
 | Margen EBIT objetivo | 10,0% | 13,0% | 15,5% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 3,27 / 2,83 | — | Input B32/B33 |
-| DCF por acción hoy | US$120,60 | US$171,67 | US$252,88 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$120,61 | US$171,68 | US$252,90 | Valuation output B86/B35/B137 |
 
-Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,30, ERP 4,46%, Ke 10,79%, costo de la deuda después de impuestos 4,38%, peso del patrimonio 97,6%, WACC inicial 10,64% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
+Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,30, ERP 4,46%, Ke 10,79%, costo de la deuda después de impuestos 4,38%, peso del patrimonio 97,6%, WACC inicial 10,63% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
 ## 4. Múltiplos: selección y origen
 
 A: EPAM cotizó a 15-59x EBITDA mientras crecía 15-25% al año como proveedor de ingeniería de software. En febrero de 2026 guió un crecimiento orgánico de solo 3-6% y luego lo bajó a 3,2-4,2%; el mercado lo lee como presión estructural de los asistentes de código con IA sobre la subcontratación tradicional, y la acción cayó a mínimos. La etapa actual es solo el LTM. B: servicios de TI y consultoría (Accenture, Globant, Cognizant, Infosys, ExlService), datos de yfinance al 29-sep-2026. Se excluye Wipro (sus cifras mezclan rupias y dólares: EV/EBITDA negativo) y, en los múltiplos de EV, Infosys (EV/EBITDA de 18,8x incoherente con su P/E de 13x). Sin ajuste: EPAM crece como Accenture y Cognizant (3-6%), con menor margen operativo pero sin deuda y con recompras; las diferencias se compensan. λ = 0,25: la EPAM de FY+3 del escenario Base es una empresa de servicios de TI de crecimiento bajo, parecida a la de hoy.
 
-| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
+| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana LTM (etapa actual) = 7,1x | 7,5x (n=4: ACN 8,4x, GLOB 4,7x, CTSH 6,6x, EXLS 14,4x) × 1,00 = 7,5x | 12,2x / 14,8x / 19,2x | 8,1x | **9,2x** | 11,1x | —x / 7,1x / —x |
-| EV/FCFF | mediana LTM (etapa actual) = 10,0x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF) | 9,3x (n=4: ACN 8,5x, GLOB 6,6x, CTSH 10,1x, EXLS 18,8x) × 1,00 = 9,3x | 17,0x / 21,1x / 27,8x | 11,1x | **12,5x** | 15,2x | —x / 10,2x / —x |
-| P/E | mediana LTM (etapa actual) = 15,2x | 13,3x (n=5: ACN 14,1x, GLOB 13,3x, CTSH 12,3x, INFY 13,1x, EXLS 21,9x) × 1,00 = 13,3x | 10,0x / 12,2x / 15,6x | 12,8x | **13,7x** | 15,3x | —x / 15,2x / —x |
-| P/FCFE | mediana LTM (etapa actual) = 11,6x | 9,8x (n=5: ACN 8,6x, GLOB 5,8x, CTSH 9,9x, INFY 11,3x, EXLS 19,1x) × 1,00 = 9,8x | 15,0x / 18,1x / 22,8x | 11,3x | **12,6x** | 14,3x | —x / 11,6x / —x |
-| P/OCF | mediana LTM (etapa actual) = 10,4x | 8,8x (n=5: ACN 8,2x, GLOB 4,3x, CTSH 8,8x, INFY 10,5x, EXLS 16,0x) × 1,00 = 8,8x | 13,9x / 17,1x / 21,8x | 10,5x | **11,5x** | 13,3x | —x / 10,4x / —x |
+| EV/EBITDA | mediana LTM (etapa actual) = 7,1x | 7,5x (n=4: ACN 8,4x, GLOB 4,7x, CTSH 6,6x, EXLS 14,4x) × 1,00 = 7,5x | 14,8x / 12,2x / 19,2x | **9,2x** | 8,1x | 11,1x | 7,1x / —x / —x |
+| EV/FCFF | mediana LTM (etapa actual) = 10,0x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF) | 9,3x (n=4: ACN 8,5x, GLOB 6,6x, CTSH 10,1x, EXLS 18,8x) × 1,00 = 9,3x | 21,1x / 17,0x / 27,8x | **12,5x** | 11,1x | 15,2x | 10,2x / —x / —x |
+| P/E | mediana LTM (etapa actual) = 15,2x | 13,3x (n=5: ACN 14,1x, GLOB 13,3x, CTSH 12,3x, INFY 13,1x, EXLS 21,9x) × 1,00 = 13,3x | 12,2x / 10,0x / 15,6x | **13,7x** | 12,8x | 15,3x | 15,2x / —x / —x |
+| P/FCFE | mediana LTM (etapa actual) = 11,6x | 9,8x (n=5: ACN 8,6x, GLOB 5,8x, CTSH 9,9x, INFY 11,3x, EXLS 19,1x) × 1,00 = 9,8x | 18,1x / 15,0x / 22,8x | **12,6x** | 11,3x | 14,3x | 11,6x / —x / —x |
+| P/OCF | mediana LTM (etapa actual) = 10,4x | 8,8x (n=5: ACN 8,2x, GLOB 4,3x, CTSH 8,8x, INFY 10,5x, EXLS 16,0x) × 1,00 = 8,8x | 17,1x / 13,9x / 21,8x | **11,5x** | 10,5x | 13,3x | 10,4x / —x / —x |
 
-Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
+Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
 - **EV/EBITDA.** Base 9,2x: promedio de historia y peers 7,3x, acercado 25% al justificado (14,8x); rango de anclas 7,1x–14,8x. Atípicos excluidos de la historia: LTM (7,1x: < 0,4x la mediana (25.5x), caída puntual).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **EV/FCFF.** Base 12,5x: promedio de historia y peers 9,6x, acercado 25% al justificado (21,1x); rango de anclas 9,3x–21,1x. Atípicos excluidos de la historia: Dec '21 (79,7x: > 2,5x la mediana (28.5x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
@@ -73,43 +73,43 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 12,6x: promedio de historia y peers 10,7x, acercado 25% al justificado (18,1x); rango de anclas 9,8x–18,1x. Atípicos excluidos de la historia: Dec '21 (82,4x: > 2,5x la mediana (32.2x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 11,5x: promedio de historia y peers 9,6x, acercado 25% al justificado (17,1x); rango de anclas 8,8x–17,1x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$112,92 frente a US$171,67 del DCF (−34%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$112,92 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$112,92 frente a US$171,68 del DCF (−34%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$112,92 para los múltiplos Base.
 
 ## 5. Resultados
 
 Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:
 
-| Método | Peso | Conservador | Base | Optimista |
+| Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$164,08 | US$233,57 | US$344,09 |
-| EV/EBITDA | 20% | US$115,30 | US$158,72 | US$234,05 |
-| EV/FCFF | 10% | US$113,80 | US$152,40 | US$222,91 |
-| P/E | 20% | US$105,67 | US$144,92 | US$208,11 |
-| P/FCFE | 5% | US$109,51 | US$149,93 | US$212,48 |
-| P/OCF | 5% | US$109,21 | US$145,69 | US$208,68 |
-| **Ponderado FY+3** | 100% | US$132,14 | US$184,18 | US$269,42 |
+| DCF Damodaran | 40% | US$233,57 | US$164,08 | US$344,09 |
+| EV/EBITDA | 20% | US$158,72 | US$115,30 | US$234,05 |
+| EV/FCFF | 10% | US$152,40 | US$113,80 | US$222,91 |
+| P/E | 20% | US$144,92 | US$105,67 | US$208,11 |
+| P/FCFE | 5% | US$149,93 | US$109,51 | US$212,48 |
+| P/OCF | 5% | US$145,69 | US$109,21 | US$208,68 |
+| **Ponderado FY+3** | 100% | US$184,18 | US$132,14 | US$269,42 |
 
 Valor presente (Ke 10,79%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$105,91 | US$94,03 | US$84,79 | US$94,91 | OK |
 | EV/EBITDA | Base | US$122,86 | US$120,84 | US$116,72 | US$120,14 | OK |
+| EV/EBITDA | Conservador | US$105,91 | US$94,03 | US$84,79 | US$94,91 | OK |
 | EV/EBITDA | Optimista | US$150,30 | US$165,88 | US$172,12 | US$162,77 | OK |
-| EV/FCFF | Conservador | US$104,36 | US$92,68 | US$83,69 | US$93,58 | OK |
 | EV/FCFF | Base | US$117,43 | US$115,77 | US$112,07 | US$115,09 | OK |
+| EV/FCFF | Conservador | US$104,36 | US$92,68 | US$83,69 | US$93,58 | OK |
 | EV/FCFF | Optimista | US$141,36 | US$157,29 | US$163,93 | US$154,19 | OK |
-| P/E | Conservador | US$95,24 | US$85,26 | US$77,71 | US$86,07 | OK |
 | P/E | Base | US$105,80 | US$107,63 | US$106,57 | US$106,67 | OK |
+| P/E | Conservador | US$95,24 | US$85,26 | US$77,71 | US$86,07 | OK |
 | P/E | Optimista | US$122,33 | US$142,65 | US$153,05 | US$139,34 | OK |
-| P/FCFE | Conservador | US$96,99 | US$87,55 | US$80,54 | US$88,36 | OK |
 | P/FCFE | Base | US$109,42 | US$111,00 | US$110,26 | US$110,23 | OK |
+| P/FCFE | Conservador | US$96,99 | US$87,55 | US$80,54 | US$88,36 | OK |
 | P/FCFE | Optimista | US$126,26 | US$145,69 | US$156,26 | US$142,74 | OK |
-| P/OCF | Conservador | US$96,47 | US$87,25 | US$80,31 | US$88,01 | OK |
 | P/OCF | Base | US$106,85 | US$108,05 | US$107,14 | US$107,35 | OK |
+| P/OCF | Conservador | US$96,47 | US$87,25 | US$80,31 | US$88,01 | OK |
 | P/OCF | Optimista | US$125,55 | US$143,62 | US$153,46 | US$140,88 | OK |
 
-Múltiplos consolidados hoy: US$90,62 / US$112,92 / US$150,04 · DCF hoy: US$120,60 / US$171,67 / US$252,88 · Ponderado hoy: US$102,61 / US$136,42 / US$191,17 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$112,92 / US$90,62 / US$150,04 · DCF técnico hoy: US$171,68 / US$120,61 / US$252,90 · Ponderado hoy: US$136,42 / US$102,61 / US$191,18 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
@@ -137,16 +137,16 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 |---|---:|---:|
 | Vigente | US$136,42 | — |
 | Múltiplos Base +20% | US$149,30 | +9,4% |
-| Múltiplos Base −20% | US$123,53 | −9,4% |
+| Múltiplos Base −20% | US$123,54 | −9,4% |
 | Crecimiento años 2-5 +2 pp | US$141,44 | +3,7% |
-| Crecimiento años 2-5 −2 pp | US$131,83 | −3,4% |
+| Crecimiento años 2-5 −2 pp | US$131,84 | −3,4% |
 | Margen objetivo +3 pp | US$151,31 | +10,9% |
 | Margen objetivo −3 pp | US$121,53 | −10,9% |
 | WACC +1 pp | US$133,03 | −2,5% |
-| WACC −1 pp | US$140,04 | +2,7% |
+| WACC −1 pp | US$140,05 | +2,7% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo −3 pp, Margen objetivo +3 pp, Múltiplos Base −20%.
+Supuestos más frágiles: Margen objetivo +3 pp, Margen objetivo −3 pp, Múltiplos Base −20%.
 
 ## 8. Log de cambios en la hoja
 

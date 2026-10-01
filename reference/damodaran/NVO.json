@@ -15,7 +15,7 @@
  },
  "historias": [
   {
-   "nombre": "A · El volumen compensa la caída de precio",
+   "nombre": "Base · El volumen compensa la caída de precio",
    "prob": 0.4,
    "margen": 0.4,
    "crec": {
@@ -52,7 +52,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Guerra de precios con Lilly y genéricos",
+   "nombre": "Conservadora · Guerra de precios con Lilly y genéricos",
    "prob": 0.3,
    "margen": 0.35,
    "crec": {
@@ -90,7 +90,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.3,
    "crec": {
@@ -130,7 +130,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · La nueva generación recupera el liderazgo",
+   "nombre": "Optimista · La nueva generación recupera el liderazgo",
    "prob": 0.2,
    "margen": 0.43,
    "crec": {
@@ -199,7 +199,7 @@
    "Parcial"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 0,8% anual cinco años (historia A) lo logró ~71% de las empresas de ese tamaño; 3,7% (historia D), ~57%. La hoja (3%) no pide nada extraordinario. El riesgo de Novo no es de crecimiento sino de precio: en farmacéuticas, la erosión de precio por competencia y genéricos suele ser más rápida de lo que el volumen compensa.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 0,8% anual cinco años (Base) lo logró ~71% de las empresas de ese tamaño; 3,7% (Optimista), ~57%. La hoja (3%) no pide nada extraordinario. El riesgo de Novo no es de crecimiento sino de precio: en farmacéuticas, la erosión de precio por competencia y genéricos suele ser más rápida de lo que el volumen compensa.",
  "crecimiento": {
   "texto": "En dólares (hoja): US$35.570 millones (2023, +31%), US$44.474 millones (2024, +25%) y US$47.332 millones (2025, +6%); LTM US$46.353 millones. En coronas, 2025 fue DKK 309.064 millones (+10% a tipo de cambio constante): obesidad DKK 82.347 millones, GLP-1 para diabetes DKK 152.202 millones y enfermedades raras DKK 19.608 millones; EE.UU. aportó 56%. En el 1S26 las ventas ajustadas crecieron 2% a tipo de cambio constante (EUCAN +20%, China 0%, emergentes −7%). La división LTM en dólares de las historias usa el peso de 2025.",
   "tabla": {
@@ -262,7 +262,7 @@
  "reinversion": {
   "texto": "Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Ventaja que se desvanece: patentes y escala en diabetes y obesidad, pero pierde participación frente a Lilly, recorta precios y su ROIC bajó de 87% a 36%. El ROIC después del año 10 es 13,1%, el punto medio entre el costo de capital terminal (9,2%) y el promedio de su industria según Damodaran (17,0%)."
  },
- "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (10%) es la pérdida de relevancia frente a Lilly y los orales. D (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. Conservadora (30%) es una guerra de precios con Lilly y genéricos que se aceleran. Disrupción (10%) es la pérdida de relevancia frente a Lilly y los orales. Optimista (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Lilly (tirzepatida y orforglipron oral) gana también fuera de EE.UU. y Novo queda como segundo jugador con precio más bajo.",
   "CagriSema decepciona frente a la competencia y la cartera nueva no llega a tiempo.",
@@ -270,7 +270,7 @@
   "Medicare y el autopago fijan un precio de referencia bajo que se extiende a todo el mercado estadounidense.",
   "La nueva capacidad de producción queda ociosa y se deteriora."
  ],
- "contra": "en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja; si 2027 no muestra crecimiento en moneda constante, B pasa a ser la historia central.",
+ "contra": "en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja; si 2027 no muestra crecimiento en moneda constante, Conservadora pasa a ser la historia central.",
  "indicadores": [
   [
    "Ventas a tipo de cambio constante",

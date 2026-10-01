@@ -3,7 +3,7 @@ del 30-sep-2026, prompt de valoración v4): las cuatro historias A-D son los esc
 completo por fórmulas, con el mismo diseño que la pestaña construida para ADBE.
 
 - Filas 5-8: probabilidad, CAGR de ingresos, margen objetivo (ROE en financieras), ventas/capital, ROIC terminal,
-  crecimiento terminal, DCF por acción y aporte al esperado. H10 = valor esperado (principal); H11 = historia central A;
+  crecimiento terminal, DCF por acción y aporte al esperado. H10 = DCF esperado (complemento); H11 = DCF Base (valor intrínseco principal);
   H12:H13 = rango; H14 = precio con MOS sobre el esperado; H16 = antiguo caso Base (referencia técnica).
 - Un bloque de 24 filas por historia desde la fila 22 (A), 46 (B), 70 (C) y 94 (D): ingresos por segmento (cuatro
   filas), crecimiento (años 6-10 convergen al terminal de la historia), margen, impuesto, NOPAT con pérdidas fiscales
@@ -153,8 +153,8 @@ def build(tk: str, gc) -> None:
         for c, v in enumerate(vals):
             grid[r - 1][c] = v
 
-    put(1, [f"{tk} · Escenarios = historias · DCF esperado"])
-    put(2, ["Cuatro DCF completos (A · Base, B · Conservadora, C · Disrupción, D · Optimista) con probabilidades del analista. "
+    put(1, [f"{tk} · Escenarios = historias · DCF Base (principal) y DCF esperado (complemento)"])
+    put(2, ["Cuatro DCF completos (Base, Conservadora, Disrupción y Optimista) con probabilidades del analista. "
             "Supuestos vinculados al modelo; crecimiento por segmento y probabilidades son entradas del analista."])
     put(4, ["Escenario / historia", "Probabilidad", "CAGR ingresos 1–5", "ROE objetivo" if fin else "Margen objetivo",
             "Ventas/capital 1–5", "Ventas/capital 6–10", "ROIC terminal", "DCF hoy por acción", "Aporte al esperado",
@@ -173,14 +173,14 @@ def build(tk: str, gc) -> None:
                 f"=(G{R['rev']}/B{R['rev']})^(1/5)-1", h["margen"],
                 "" if fin else (s2 if s2 else f"={VO}!C40"), "" if fin else f"={VO}!H40", roic,
                 f"=MAX(0;B{R['ps']})", f"=B{i}*H{i}", f"=M{R['g']}"])  # responsabilidad limitada: patrimonio ≥ 0
-    put(10, ["Valor intrínseco esperado · principal", "=SUM(B5:B8)"] + [""] * 5 + ["=IF(ABS(B10-1)<0,00000001;SUMPRODUCT(B5:B8;H5:H8);NA())"])
-    put(11, ["Historia central A"] + [""] * 6 + ["=H5"])
+    put(10, ["DCF esperado por probabilidades · complemento", "=SUM(B5:B8)"] + [""] * 5 + ["=IF(ABS(B10-1)<0,00000001;SUMPRODUCT(B5:B8;H5:H8);NA())"])
+    put(11, ["DCF Base · valor intrínseco principal"] + [""] * 6 + ["=H5"])
     put(12, ["Mínimo de las historias"] + [""] * 6 + ["=MIN(H5:H8)"])
     put(13, ["Máximo de las historias"] + [""] * 6 + ["=MAX(H5:H8)"])
     put(14, ["Margen de seguridad (precio con MOS sobre el esperado)", "='Resumen de Valoración'!G4"] + [""] * 5 + ["=H10*(1-B14)"])
     put(16, ["Antiguo caso Base · referencia técnica"] + [""] * 6 + [f"={VO}!B35"])
-    put(17, ["Los casos C/B/O anteriores calibran el motor y los múltiplos auxiliares; los cuatro escenarios activos son A–D."])
-    put(18, ["C se estabiliza sin recuperación: crecimiento terminal = el del año 5, sin superar el de la hoja, con piso de 0%; "
+    put(17, ["Los casos técnicos Conservador/Base/Optimista anteriores calibran el motor y los múltiplos auxiliares; los cuatro escenarios activos son Base, Conservadora, Disrupción y Optimista."])
+    put(18, ["Disrupción se estabiliza sin recuperación: crecimiento terminal = el del año 5, sin superar el de la hoja, con piso de 0%; "
              "ROIC terminal = costo de capital. Las demás conservan el terminal de la hoja."])
     put(19, ["Las fórmulas siguientes reproducen el motor DCF del Modelo JMR; millones de la moneda de la hoja salvo valor por acción."])
     if not fin:

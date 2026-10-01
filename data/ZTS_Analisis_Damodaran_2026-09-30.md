@@ -7,11 +7,13 @@ analysis_date: "2026-09-30"
 # Zoetis Inc. (ZTS) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$96,60; la historia central A vale US$119,79 y el rango es US$47,11–138,44. El MOS 35% se aplica al esperado: US$62,79. El antiguo caso Base de la hoja (US$117,68) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+**Valor intrínseco principal · DCF Base hoy: US$119,78 por acción** (Base · Tropiezo temporal; vuelve a crecer con innovación).
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (27 celdas, con respaldo). Valor esperado US$95,15 → US$96,60. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Complemento · DCF esperado por probabilidades: US$96,59.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$47,11–138,42. El MOS 35% se aplica al esperado: US$62,79. El antiguo caso técnico de la hoja (US$117,66) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$117,68 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (27 celdas, con respaldo). DCF esperado US$95,15 → US$96,59. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$117,66 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -32,12 +34,50 @@ Con ventas LTM de US$9.517 millones (US$6.734 millones en dólares de 2015, defl
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · Tropiezo temporal; vuelve a crecer con innovación | 4,5% | 64% |
-| B · Erosión prolongada de franquicias clave | 1,5% | 80% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | -0,7% | 87% |
-| D · Recuperación fuerte con nuevos productos | 6,0% | 54% |
+| Base · Tropiezo temporal; vuelve a crecer con innovación | 4,5% | 64% |
+| Conservadora · Erosión prolongada de franquicias clave | 1,5% | 80% |
+| Disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada | −0,7% | 87% |
+| Optimista · Recuperación fuerte con nuevos productos | 6,0% | 54% |
 
-En dólares de 2015 la empresa está en el tramo de US$4.500-7.000 millones: crecer 4,5% anual cinco años (historia A) lo logró ~64% de las empresas de ese tamaño; 6,0% (historia D), ~54%. La hoja pide algo común. El valor de Zoetis depende de sostener un margen de 36%, que es excepcional para cualquier empresa, más que del crecimiento.
+En dólares de 2015 la empresa está en el tramo de US$4.500-7.000 millones: crecer 4,5% anual cinco años (Base) lo logró ~64% de las empresas de ese tamaño; 6,0% (Optimista), ~54%. La hoja pide algo común. El valor de Zoetis depende de sostener un margen de 36%, que es excepcional para cualquier empresa, más que del crecimiento.
+
+
+### Justificación de los supuestos
+
+Cada párrafo explica un supuesto material de la tesis Base —el valor intrínseco principal—: qué cifra se usa y con qué trayectoria, qué evidencia la respalda (fuente y fecha), el mecanismo económico, por qué se eligió frente a las alternativas, cómo cambia entre escenarios, qué observación obligaría a cambiarla y cuánto mueve el valor. Las sensibilidades son DCF completos de la Base con un solo supuesto cambiado. Donde falta soporte, el supuesto se declara provisional: un valor heredado de la hoja no queda validado por reproducirse aritméticamente.
+
+**Crecimiento de ingresos.** La Base supone 1,7% el año 1 y 5,3% el año 5: la trayectoria acelera y equivale a 4,5% anual compuesto en cinco años; después converge al terminal en los años 6–10. Los demás escenarios: Conservadora 1,5%; Disrupción −0,7%; Optimista 6,0% de crecimiento compuesto. Evidencia (Zoetis, Form 10-Q del 2T 2026; datos contrastados con la SEC el 1-oct-2026): Ingresos de US$8.544 millones (2023, +5,7%), US$9.256 millones (2024, +8,3%) y US$9.467 millones (2025, +2,3%); LTM US$9.517 millones. En el 2T26 las ventas cayeron 0,2% y mascotas en EE.UU. 11%. Mecanismo de la Base: es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. Por qué esta cifra: la visión externa (The Base Rate Book) indica que ~64% de las empresas de su tamaño lograron ese crecimiento, frente a ~54% para el de la Optimista; la Base no extrapola el mejor resultado reciente ni supone la caída de la Disrupción. Los porcentajes son juicio del analista, no guía de la empresa. Obligaría a revisarlo este indicador: Ventas totales (orgánicas), negativas (hoy: −0,2% (2T26)). Sensibilidad: restar o sumar 2 pp al crecimiento de cada año 1–5 lleva el DCF Base de US$119,78 a US$105,60 (−12%) y US$135,56 (+13%), respectivamente.
+
+**Margen operativo.** La Base usa un margen operativo objetivo de 36,4% en base ajustada (arrendamientos como deuda, según la hoja) (36,0% en base reportada + 0,36 pp por el ajuste de arrendamientos), desde 36,4% en el año 1 y con convergencia en el año 5. Escenarios: Conservadora 33,4%; Disrupción 29,4%; Optimista 38,4%. Evidencia (datos contrastados con la SEC el 1-oct-2026): El margen operativo se mantuvo en 36-38% con ventas planas: es un negocio con poder de precio y costos flexibles. La hoja supone 36% estable. Mecanismo y elección: el objetivo de la Base refleja la economía de su tesis (escala, mezcla y precio frente a los costos que exige crecer); la Conservadora y la Disrupción lo bajan porque defender ingresos cuesta precio o gasto, y la Optimista solo lo sube si la monetización supera esos costos. No es una promesa de la empresa. Obligaría a revisarlo este indicador: Margen operativo, ≤ 33% (hoy: ~37%). Sensibilidad: restar o sumar 2 pp al margen operativo objetivo lleva el DCF Base de US$119,78 a US$112,64 (−6%) y US$126,92 (+6%), respectivamente.
+
+**Reinversión y ventas/capital.** La Base reinvierte con un ventas/capital de 1,91x en los años 1–5 y 1,91x en los años 6–10: cada dólar de ventas nuevas exige ~US$0,52 y ~US$0,52 de capital, respectivamente. Evidencia: Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. Incluye el capital arrendado (0,02 dólares por dólar de ventas, criterio de Damodaran). Mecanismo: la reinversión es lo que financia el crecimiento; si el retorno del capital nuevo supera el costo de capital, crecer suma valor. Salvedad: es una hipótesis de la hoja, no un dato reportado; falta una serie homogénea de capital invertido incremental (con I+D, adquisiciones y capital de trabajo) que la confirme, así que queda provisional. Obligaría a revisarlo que el capital invertido crezca más rápido que las ventas. Sensibilidad: un ventas/capital 20% menor o mayor en ambas etapas lleva el DCF Base de US$119,78 a US$118,50 (−1%) y US$120,63 (+0,7%), respectivamente.
+
+**Costo de capital (WACC).** WACC de 8,17% en los años 1–5, que converge a 9,00% en el año 10: tasa libre de riesgo 4,99%, beta 0,90 y prima de riesgo 4,46% (Damodaran, betas por sector y ERP, enero de 2026). La beta bottom-up de Drugs (Pharmaceutical) reapalancada (1,11) daría un WACC inicial de 8,91%. Se usa la misma tasa en los cuatro escenarios: el riesgo propio del negocio va en los flujos de cada historia, no en una prima arbitraria. La convergencia supone que el riesgo y la estructura financiera se normalizan; no es automática. Obligaría a revisarlo un cambio de la tasa libre de riesgo, de la prima de mercado o de la deuda (incluidos los arrendamientos). Sensibilidad: sumar o restar 1 pp al WACC inicial y terminal lleva el DCF Base de US$119,78 a US$93,69 (−22%) y US$162,92 (+36%), respectivamente.
+
+**Crecimiento terminal.** La Base crece 4,99% a perpetuidad, la tasa libre de riesgo: Damodaran pide que el crecimiento estable no supere el de la economía, y la tasa libre de riesgo es su techo práctico. Disrupción se estabiliza en 2,00% sin recuperarse. El valor terminal explica 63,7% del valor operativo de la Base, así que este supuesto pesa mucho. Obligaría a revisarlo un cambio persistente de la inflación o del crecimiento nominal de largo plazo de su moneda. Sensibilidad: restar o sumar 0,5 pp al crecimiento terminal lleva el DCF Base de US$119,78 a US$111,80 (−7%) y US$129,91 (+8%), respectivamente.
+
+**ROIC terminal.** La Base usa 16,9% después del año 10. Criterio de ventaja competitiva: ventaja durable (Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal; evidencia: ROIC 26-29% en 2021-2026). ROIC actual del modelo 26,4%; industria (Damodaran) 17,0%. Con ventaja durable se toma el ROIC de la industria sin superar el actual; si se desvanece, el punto medio hacia el costo de capital; sin ventaja, el costo de capital. Las historias de erosión usan el costo de capital porque una ventaja perdida no deja retornos excedentes. No es un ROIC futuro observado: es la hipótesis de cuánto dura la ventaja. Lo invalidaría: erosión de franquicias y genéricos: las historias Conservadora y Disrupción suman 45%. Sensibilidad: con ROIC terminal igual al costo de capital la Base vale US$87,42 (−27%).
+
+**Acciones y dilución.** Los cuatro escenarios usan 413,2 millones de acciones, sin recompras ni dilución proyectadas; así se comparan sobre la misma base. No demuestra que la compensación en acciones carezca de costo: si es material, debería modelarse como gasto o como más acciones. Supuesto provisional. Sensibilidad: 5% más acciones con el mismo patrimonio llevan la Base a US$114,08 (−5%).
+
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 13,83× (peso 33% dentro de los múltiplos); EV/FCFF 23,07× (peso 17% dentro de los múltiplos); P/E 22,76× (peso 33% dentro de los múltiplos); P/FCFE 21,79× (peso 8% dentro de los múltiplos); P/OCF 17,20× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (9,0%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+
+Sensibilidad del DCF Base (US$119,78; cada fila es un DCF completo con un solo supuesto cambiado):
+
+| Supuesto cambiado | DCF Base | Variación |
+|---|---:|---:|
+| Margen objetivo −2 pp | US$112,64 | −6,0% |
+| Margen objetivo +2 pp | US$126,92 | +6,0% |
+| Crecimiento años 1–5 −2 pp | US$105,60 | −11,8% |
+| Crecimiento años 1–5 +2 pp | US$135,56 | +13,2% |
+| Ventas/capital −20% | US$118,50 | −1,1% |
+| Ventas/capital +20% | US$120,63 | +0,7% |
+| WACC +1 pp | US$93,69 | −21,8% |
+| WACC −1 pp | US$162,92 | +36,0% |
+| Crecimiento terminal −0,5 pp | US$111,80 | −6,7% |
+| Crecimiento terminal +0,5 pp | US$129,91 | +8,5% |
+| ROIC terminal = costo de capital | US$87,42 | −27,0% |
+| Acciones +5% | US$114,08 | −4,8% |
 
 
 ### Piezas del valor
@@ -57,38 +97,38 @@ En dólares de 2015 la empresa está en el tramo de US$4.500-7.000 millones: cre
 
 **Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$231 millones, compromisos del 10-K al 2025-12-31) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$34 millones, +0,36 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,02 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
 
-**Riesgo.** La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,11; el DCF técnico anterior baja de US$117,68 a US$112,15. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo.
+**Riesgo.** La hoja usa una beta de 0,90. La bottom-up de Drugs (Pharmaceutical) reapalancada con la deuda de Zoetis da 1,11; el DCF técnico anterior baja de US$117,66 a US$112,15. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 8,2% | US$117,68 |
+| Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 8,2% | US$117,66 |
 | Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,11 | 9,9% | 8,9% | US$112,15 |
 
 
-### Calibración técnica anterior C/B/O (referencia auxiliar)
+### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
-| Crecimiento año 1 | -1,0% | 2,0% | 6,0% |
-| Crecimiento años 2–5 | -1,0% | 5,0% | 6,0% |
+| Crecimiento año 1 | −1,0% | 2,0% | 6,0% |
+| Crecimiento años 2–5 | −1,0% | 5,0% | 6,0% |
 | Margen año 1 (base ajustada del modelo) | 36,4% | 36,4% | 36,4% |
 | Margen objetivo | 33,4% | 36,0% | 38,4% |
 
-Ventas/capital: 1,9x en años 1–5 y 1,9x en 6–10. WACC: 8,2%. Ke: 9,0%. Impuesto efectivo: 20,1%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
+Ventas/capital: 1,9x en años 1–5 y 1,9x en 6–10. WACC: 8,2%. Ke: 9,0%. Impuesto efectivo: 20,1%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja durable | 26,4% | 17,0% | 9,0% | 16,9% | US$117,68 | US$85,94 |
+| Ventaja durable | 26,4% | 17,0% | 9,0% | 16,9% | US$117,66 | US$85,93 |
 
 Fuentes de ventaja: Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal. Evidencia: ROIC 26-29% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor principal de US$96,60 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$117,68 ni mezclando el DCF con múltiplos. La historia central A vale US$119,79; «central» y «esperado» son conceptos distintos.
+El valor intrínseco principal es el DCF Base: US$119,78 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$96,59. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$117,66) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -100,8 +140,8 @@ El valor principal de US$96,60 se obtiene ejecutando cuatro DCF completos de die
 | Impuesto | 20,05% en años 1–5; 20,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
 | Descuento | WACC 8,17% → 9,00% | Tasa libre de riesgo 4,99%, beta 0,90, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 1,91x en años 1–5; 1,91x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
-| Crecimiento perpetuo | A/B/D: 4,99%; C: 2,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (2,00%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
-| ROIC terminal | A/D: 16,90%; B/C: 9,00% (= WACC terminal) | Criterio de ventaja competitiva (ventaja durable). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 4,99%; Disrupción: 2,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (2,00%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Optimista: 16,90%; Conservadora/Disrupción: 9,00% (= WACC terminal) | Criterio de ventaja competitiva (ventaja durable). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
 | Puente al patrimonio | Caja 1.676; deuda 9.279; acciones 413,2 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
@@ -109,43 +149,43 @@ El valor principal de US$96,60 se obtiene ejecutando cuatro DCF completos de die
 
 Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
 
-Ejemplo A, año 1: 6.350 × 1,01 + 3.167 × 1,03 = US$9.675,51 millones. Frente a 9.517, el crecimiento consolidado es 1,67%. En los años 2–5 es 4,66%, 5,33%, 5,34%, 5,35%; las ventas del año 5 son US$11.836,60 millones. El 4,5% de la tabla es el crecimiento anual compuesto de los cinco años: (11.836,60 / 9.517)^(1/5) − 1; no se usa como tasa constante.
+Ejemplo Base, año 1: 6.350 × 1,01 + 3.167 × 1,03 = US$9.675,51 millones. Frente a 9.517, el crecimiento consolidado es 1,67%. En los años 2–5 es 4,66%, 5,33%, 5,34%, 5,35%; las ventas del año 5 son US$11.836,60 millones. El 4,5% de la tabla es el crecimiento anual compuesto de los cinco años: (11.836,60 / 9.517)^(1/5) − 1; no se usa como tasa constante.
 
 
 #### 3. Del ingreso al flujo libre y su valor presente
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En A, año 1: NOPAT = 9.675,51 × 36,36% × (1 − 20,05%) = US$2.812,42 millones. La reinversión es US$236,54 millones y el FCFF es US$2.575,88 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En la Base, año 1: NOPAT = 9.675,51 × 36,36% × (1 − 20,05%) = US$2.812,42 millones. La reinversión es US$236,54 millones y el FCFF es US$2.575,88 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
-En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 29,5% (4,99% / 16,90%); B, 55,4% (4,99% / 9,00%); C, 22,2% (2,00% / 9,00%); D, 29,5% (4,99% / 16,90%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: Base, 29,5% (4,99% / 16,90%); Conservadora, 55,4% (4,99% / 9,00%); Disrupción, 22,2% (2,00% / 9,00%); Optimista, 29,5% (4,99% / 16,90%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
 #### 4. Trayectoria anual de cada historia
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**A · Tropiezo temporal; vuelve a crecer con innovación** — probabilidad 40%; valor terminal 81.587 (VP 36.361); DCF US$119,79 por acción.
+**Base · Tropiezo temporal; vuelve a crecer con innovación** — probabilidad 40%; valor terminal 81.587 (VP 36.357); DCF US$119,78 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 9.676 | 1,7% | 36,4% | 2.812 | 237 | 2.576 | 8,2% | 2.381 |
 | 2 | 10.127 | 4,7% | 36,4% | 2.944 | 283 | 2.661 | 8,2% | 2.274 |
 | 3 | 10.666 | 5,3% | 36,4% | 3.100 | 299 | 2.802 | 8,2% | 2.214 |
-| 4 | 11.236 | 5,3% | 36,4% | 3.266 | 315 | 2.951 | 8,2% | 2.156 |
+| 4 | 11.236 | 5,3% | 36,4% | 3.266 | 315 | 2.951 | 8,2% | 2.155 |
 | 5 | 11.837 | 5,3% | 36,4% | 3.441 | 327 | 3.113 | 8,2% | 2.102 |
 | 6 | 12.461 | 5,3% | 36,4% | 3.623 | 340 | 3.283 | 8,3% | 2.046 |
 | 7 | 13.110 | 5,2% | 36,4% | 3.812 | 353 | 3.459 | 8,5% | 1.987 |
 | 8 | 13.782 | 5,1% | 36,4% | 4.008 | 366 | 3.642 | 8,7% | 1.925 |
-| 9 | 14.480 | 5,1% | 36,4% | 4.211 | 379 | 3.832 | 8,8% | 1.862 |
+| 9 | 14.480 | 5,1% | 36,4% | 4.211 | 379 | 3.832 | 8,8% | 1.861 |
 | 10 | 15.203 | 5,0% | 36,4% | 4.422 | 398 | 4.024 | 9,0% | 1.793 |
 | Terminal | 15.961 | 5,0% | 36,4% | 4.642 | 1.371 | 3.272 | 9,0% | — |
 
-**B · Erosión prolongada de franquicias clave** — probabilidad 35%; valor terminal 39.115 (VP 17.432); DCF US$66,32 por acción.
+**Conservadora · Erosión prolongada de franquicias clave** — probabilidad 35%; valor terminal 39.115 (VP 17.430); DCF US$66,31 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 9.326 | -2,0% | 36,4% | 2.711 | 51 | 2.660 | 8,2% | 2.459 |
+| 1 | 9.326 | −2,0% | 36,4% | 2.711 | 51 | 2.660 | 8,2% | 2.459 |
 | 2 | 9.423 | 1,0% | 35,2% | 2.649 | 116 | 2.532 | 8,2% | 2.164 |
 | 3 | 9.645 | 2,4% | 34,6% | 2.665 | 152 | 2.513 | 8,2% | 1.986 |
 | 4 | 9.934 | 3,0% | 34,0% | 2.697 | 156 | 2.541 | 8,2% | 1.856 |
@@ -157,33 +197,33 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 12.565 | 5,0% | 33,4% | 3.353 | 329 | 3.024 | 9,0% | 1.348 |
 | Terminal | 13.192 | 5,0% | 33,4% | 3.520 | 1.952 | 1.568 | 9,0% | — |
 
-**C · Tesis de disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada** — probabilidad 10%; valor terminal 27.053 (VP 12.057); DCF US$47,11 por acción.
+**Disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada** — probabilidad 10%; valor terminal 27.053 (VP 12.055); DCF US$47,11 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 9.009 | -5,3% | 36,4% | 2.619 | -89 | 2.708 | 8,2% | 2.504 |
-| 2 | 8.839 | -1,9% | 33,6% | 2.371 | 34 | 2.337 | 8,2% | 1.998 |
+| 1 | 9.009 | −5,3% | 36,4% | 2.619 | -89 | 2.708 | 8,2% | 2.503 |
+| 2 | 8.839 | −1,9% | 33,6% | 2.371 | 34 | 2.337 | 8,2% | 1.998 |
 | 3 | 8.903 | 0,7% | 32,2% | 2.289 | 64 | 2.225 | 8,2% | 1.758 |
 | 4 | 9.025 | 1,4% | 30,8% | 2.219 | 95 | 2.125 | 8,2% | 1.552 |
 | 5 | 9.206 | 2,0% | 29,4% | 2.161 | 97 | 2.064 | 8,2% | 1.394 |
-| 6 | 9.390 | 2,0% | 29,4% | 2.204 | 98 | 2.106 | 8,3% | 1.313 |
+| 6 | 9.390 | 2,0% | 29,4% | 2.204 | 98 | 2.106 | 8,3% | 1.312 |
 | 7 | 9.578 | 2,0% | 29,4% | 2.249 | 100 | 2.148 | 8,5% | 1.234 |
-| 8 | 9.769 | 2,0% | 29,4% | 2.294 | 102 | 2.191 | 8,7% | 1.159 |
+| 8 | 9.769 | 2,0% | 29,4% | 2.294 | 102 | 2.191 | 8,7% | 1.158 |
 | 9 | 9.965 | 2,0% | 29,4% | 2.340 | 104 | 2.235 | 8,8% | 1.086 |
 | 10 | 10.164 | 2,0% | 29,4% | 2.387 | 107 | 2.280 | 9,0% | 1.016 |
 | Terminal | 10.367 | 2,0% | 29,4% | 2.435 | 541 | 1.894 | 9,0% | — |
 
-**D · Recuperación fuerte con nuevos productos** — probabilidad 15%; valor terminal 94.042 (VP 41.912); DCF US$138,44 por acción.
+**Optimista · Recuperación fuerte con nuevos productos** — probabilidad 15%; valor terminal 94.042 (VP 41.907); DCF US$138,42 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 9.898 | 4,0% | 36,4% | 2.877 | 346 | 2.531 | 8,2% | 2.340 |
-| 2 | 10.558 | 6,7% | 37,2% | 3.136 | 371 | 2.765 | 8,2% | 2.364 |
+| 2 | 10.558 | 6,7% | 37,2% | 3.136 | 371 | 2.765 | 8,2% | 2.363 |
 | 3 | 11.265 | 6,7% | 37,6% | 3.383 | 398 | 2.985 | 8,2% | 2.358 |
-| 4 | 12.024 | 6,7% | 38,0% | 3.649 | 383 | 3.266 | 8,2% | 2.386 |
+| 4 | 12.024 | 6,7% | 38,0% | 3.649 | 383 | 3.266 | 8,2% | 2.385 |
 | 5 | 12.755 | 6,1% | 38,4% | 3.911 | 392 | 3.520 | 8,2% | 2.377 |
 | 6 | 13.502 | 5,9% | 38,4% | 4.141 | 399 | 3.742 | 8,3% | 2.332 |
-| 7 | 14.264 | 5,6% | 38,4% | 4.375 | 406 | 3.970 | 8,5% | 2.281 |
+| 7 | 14.264 | 5,6% | 38,4% | 4.375 | 406 | 3.970 | 8,5% | 2.280 |
 | 8 | 15.037 | 5,4% | 38,4% | 4.613 | 411 | 4.203 | 8,7% | 2.222 |
 | 9 | 15.820 | 5,2% | 38,4% | 4.854 | 414 | 4.440 | 8,8% | 2.157 |
 | 10 | 16.610 | 5,0% | 38,4% | 5.097 | 435 | 4.662 | 9,0% | 2.078 |
@@ -196,79 +236,79 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| A | 20.740,94 | 36.361,05 | 57.101,99 | 49.498,81 | 119,79 |
-| B | 17.572,28 | 17.432,28 | 35.004,56 | 27.401,38 | 66,32 |
-| C | 15.012,83 | 12.056,84 | 27.069,67 | 19.466,48 | 47,11 |
-| D | 22.893,74 | 41.911,95 | 64.805,69 | 57.202,51 | 138,44 |
+| Base | 20.739,33 | 36.356,80 | 57.096,13 | 49.492,95 | 119,78 |
+| Conservadora | 17.570,99 | 17.430,24 | 35.001,23 | 27.398,05 | 66,31 |
+| Disrupción | 15.011,78 | 12.055,43 | 27.067,20 | 19.464,02 | 47,11 |
+| Optimista | 22.891,92 | 41.907,05 | 64.798,98 | 57.195,79 | 138,42 |
 
-Ejemplo A: (20.740,94 + 36.361,05 + 1.676 − 9.279) / 413,2 = US$119,79 por acción. El terminal representa 63,7% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (20.739,33 + 36.356,80 + 1.676 − 9.279) / 413,2 = US$119,78 por acción. El terminal representa 63,7% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 6. Valor esperado, probabilidades y margen de seguridad
+#### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 40% / 35% / 10% / 15% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-Valor esperado = 0,40 × 119,793824 + 0,35 × 66,315052 + 0,10 × 47,111529 + 0,15 × 138,437819 = US$96,604624 ≈ US$96,60. Los aportes son US$47,92 + US$23,21 + US$4,71 + US$20,77 por acción.
+DCF esperado = 0,40 × 119,779648 + 0,35 × 66,306989 + 0,10 × 47,105565 + 0,15 × 138,421567 = US$96,593097 ≈ US$96,59. Los aportes son US$47,91 + US$23,21 + US$4,71 + US$20,76 por acción.
 
-Precio con MOS = valor esperado × (1 − 35%) = 96,604624 × 0,65 = US$62,793006 ≈ US$62,79. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+Precio con MOS = DCF esperado × (1 − 35%) = 96,593097 × 0,65 = US$62,785513 ≈ US$62,79. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
-Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
-
-
-### Las cuatro tesis: base, conservadora, disrupción y optimista
-
-Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$119,79; el valor esperado de US$96,60 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
-#### A · Tesis base: Tropiezo temporal; vuelve a crecer con innovación
+### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
+
+La tesis Base es la trayectoria central defendida y su DCF, US$119,78, es el valor intrínseco principal. El DCF esperado de US$96,59 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### Base: Tropiezo temporal; vuelve a crecer con innovación
 
 **Qué plantea.** Es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento.
 
-**Traducción al modelo.** Animales de compañía crece 1%, 5%, 6%, 6%, 6%; Animales de producción crece 3%, 4%, 4%, 4%, 4%. El crecimiento anual compuesto de cinco años es 4,5%; el margen operativo objetivo es 36,4%. El ROIC terminal es 16,9%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 40%; DCF: US$119,79 por acción.
+**Traducción al modelo.** Animales de compañía crece 1%, 5%, 6%, 6%, 6%; Animales de producción crece 3%, 4%, 4%, 4%, 4%. El crecimiento anual compuesto de cinco años es 4,5%; el margen operativo objetivo es 36,4%. El ROIC terminal es 16,9%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 40%; DCF: US$119,78 por acción.
 
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (mascotas EE.UU. (interanual): −11% (2T26); ventas totales (orgánicas): −0,2% (2T26); franquicia de dermatología (Apoquel, Cytopoint): En baja). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
 
-#### B · Tesis conservadora: Erosión prolongada de franquicias clave
+#### Conservadora: Erosión prolongada de franquicias clave
 
-**Qué plantea.** Es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A.
+**Qué plantea.** Es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como Base.
 
-**Traducción al modelo.** Animales de compañía crece -4%, 0%, 2%, 3%, 3%; Animales de producción crece 2%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 1,5%; el margen operativo objetivo es 33,4%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 35%; DCF: US$66,32 por acción.
+**Traducción al modelo.** Animales de compañía crece -4%, 0%, 2%, 3%, 3%; Animales de producción crece 2%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 1,5%; el margen operativo objetivo es 33,4%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 35%; DCF: US$66,31 por acción.
 
 **Cómo contrastarla.** La apoyarían: mascotas EE.UU. (interanual): caídas > 10% tres trimestres más; ventas totales (orgánicas): negativas; franquicia de dermatología (Apoquel, Cytopoint): caída de doble dígito; margen operativo: ≤ 33%.
 
 
-#### C · Tesis de disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada
+#### Disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada
 
 **Qué plantea.** Es competencia y genéricos generalizados.
 
-**Traducción al modelo.** Animales de compañía crece -8%, -4%, 0%, 1%, 2%; Animales de producción crece 0%, 2%, 2%, 2%, 2%. El crecimiento anual compuesto de cinco años es -0,7%; el margen operativo objetivo es 29,4%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 2,00%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$47,11 por acción.
+**Traducción al modelo.** Animales de compañía crece -8%, -4%, 0%, 1%, 2%; Animales de producción crece 0%, 2%, 2%, 2%, 2%. El crecimiento anual compuesto de cinco años es −0,7%; el margen operativo objetivo es 29,4%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 2,00%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$47,11 por acción.
 
-**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: mascotas EE.UU. (interanual): caídas > 10% tres trimestres más; ventas totales (orgánicas): negativas; franquicia de dermatología (Apoquel, Cytopoint): caída de doble dígito; margen operativo: ≤ 33%.
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: mascotas EE.UU. (interanual): caídas > 10% tres trimestres más; ventas totales (orgánicas): negativas; franquicia de dermatología (Apoquel, Cytopoint): caída de doble dígito; margen operativo: ≤ 33%.
 
 
-#### D · Tesis optimista: Recuperación fuerte con nuevos productos
+#### Optimista: Recuperación fuerte con nuevos productos
 
 **Qué plantea.** Es una recuperación fuerte con nuevos productos.
 
-**Traducción al modelo.** Animales de compañía crece 4%, 8%, 8%, 8%, 7%; Animales de producción crece 4%, 4%, 4%, 4%, 4%. El crecimiento anual compuesto de cinco años es 6,0%; el margen operativo objetivo es 38,4%. El ROIC terminal es 16,9%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 15%; DCF: US$138,44 por acción.
+**Traducción al modelo.** Animales de compañía crece 4%, 8%, 8%, 8%, 7%; Animales de producción crece 4%, 4%, 4%, 4%, 4%. El crecimiento anual compuesto de cinco años es 6,0%; el margen operativo objetivo es 38,4%. El ROIC terminal es 16,9%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 15%; DCF: US$138,42 por acción.
 
 **Cómo contrastarla.** La confirmarían: mascotas EE.UU. (interanual): ≥ 0% en 2027; ventas totales (orgánicas): ≥ +4% en 2027; franquicia de dermatología (Apoquel, Cytopoint): estable; margen operativo: ≥ 36%.
 
-**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,99%; C: 2,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 4,99%; Disrupción: 2,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
 
-### Historias cuantificadas y valor esperado
+### Historias cuantificadas: DCF Base y DCF esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 0,90) | Valor/acción (beta 1,11) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|---:|
-| **A · Tropiezo temporal; vuelve a crecer con innovación** | 40% | Animales de compañía: 1%, 5%, 6%, 6%, 6%; Animales de producción: 3%, 4%, 4%, 4%, 4% | 4,5% | 36,4% | 1,9 | 16,9% | 4,99% | US$119,79 | US$114,17 |
-| **B · Erosión prolongada de franquicias clave** | 35% | Animales de compañía: -4%, 0%, 2%, 3%, 3%; Animales de producción: 2%, 3%, 3%, 3%, 3% | 1,5% | 33,4% | 1,9 | = costo de capital | 4,99% | US$66,32 | US$63,11 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada** | 10% | Animales de compañía: -8%, -4%, 0%, 1%, 2%; Animales de producción: 0%, 2%, 2%, 2%, 2% | -0,7% | 29,4% | 1,9 | = costo de capital | 2,00% | US$47,11 | US$44,74 |
-| **D · Recuperación fuerte con nuevos productos** | 15% | Animales de compañía: 4%, 8%, 8%, 8%, 7%; Animales de producción: 4%, 4%, 4%, 4%, 4% | 6,0% | 38,4% | 1,9 | 16,9% | 4,99% | US$138,44 | US$131,99 |
-| **Valor esperado** | 100% |  |  |  |  |  |  | **US$96,60** | **US$92,03** |
+| **Base · Tropiezo temporal; vuelve a crecer con innovación** | 40% | Animales de compañía: 1%, 5%, 6%, 6%, 6%; Animales de producción: 3%, 4%, 4%, 4%, 4% | 4,5% | 36,4% | 1,9 | 16,9% | 4,99% | US$119,78 | US$114,16 |
+| **Conservadora · Erosión prolongada de franquicias clave** | 35% | Animales de compañía: -4%, 0%, 2%, 3%, 3%; Animales de producción: 2%, 3%, 3%, 3%, 3% | 1,5% | 33,4% | 1,9 | = costo de capital | 4,99% | US$66,31 | US$63,11 |
+| **Disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada** | 10% | Animales de compañía: -8%, -4%, 0%, 1%, 2%; Animales de producción: 0%, 2%, 2%, 2%, 2% | −0,7% | 29,4% | 1,9 | = costo de capital | 2,00% | US$47,11 | US$44,74 |
+| **Optimista · Recuperación fuerte con nuevos productos** | 15% | Animales de compañía: 4%, 8%, 8%, 8%, 7%; Animales de producción: 4%, 4%, 4%, 4%, 4% | 6,0% | 38,4% | 1,9 | 16,9% | 4,99% | US$138,42 | US$131,98 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$96,59** | **US$92,03** |
 
-A (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (10%) es competencia y genéricos generalizados. D (15%) es una recuperación fuerte con nuevos productos. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+Base (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. Conservadora (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como Base. Disrupción (10%) es competencia y genéricos generalizados. Optimista (15%) es una recuperación fuerte con nuevos productos. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF técnico anterior (beta 0,90; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
@@ -276,11 +316,11 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 
 | Crecimiento \ Margen | 32,4% | 34,4% | 36,4% | 38,4% | 40,4% |
 |---|---:|---:|---:|---:|---:|
-| 0,4% | 81,09 | 86,55 | 92,00 | 97,46 | 102,92 |
-| 2,4% | 92,14 | 98,34 | 104,53 | 110,73 | 116,93 |
-| 4,4% | 104,44 | 111,47 | 118,49 | 125,52 | 132,54 |
-| 6,4% | 118,13 | 126,08 | 134,03 | 141,98 | 149,93 |
-| 8,4% | 133,33 | 142,32 | 151,30 | 160,29 | 169,27 |
+| 0,4% | 81,08 | 86,54 | 91,99 | 97,45 | 102,91 |
+| 2,4% | 92,13 | 98,32 | 104,52 | 110,72 | 116,91 |
+| 4,4% | 104,43 | 111,45 | 118,48 | 125,50 | 132,53 |
+| 6,4% | 118,11 | 126,06 | 134,01 | 141,97 | 149,92 |
+| 8,4% | 133,32 | 142,30 | 151,29 | 160,27 | 169,25 |
 
 
 ### Pre-mortem
@@ -291,7 +331,7 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 4. El dueño de mascotas, presionado por la macro, visita menos al veterinario.
 5. La deuda para recompras limita la flexibilidad si el flujo cae.
 
-**Evidencia en contra de la historia más probable:** la caída es simultánea en varias franquicias (no un solo producto), lo que apunta a un problema competitivo más que a un año malo; si mascotas EE.UU. sigue cayendo en el 3T y 4T, B gana peso.
+**Evidencia en contra de la historia más probable:** la caída es simultánea en varias franquicias (no un solo producto), lo que apunta a un problema competitivo más que a un año malo; si mascotas EE.UU. sigue cayendo en el 3T y 4T, Conservadora gana peso.
 
 
 ### Indicadores y actualización de probabilidades
@@ -315,10 +355,12 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 32% | Margen 36% | Margen 38% |
 |---|---:|---:|---:|
-| Beta 0,90 | -1,9% (91% de las empresas) | -3,8% (94% de las empresas) | -4,6% (95% de las empresas) |
-| Beta 1,11 | -1,1% (88% de las empresas) | -3,0% (93% de las empresas) | -3,9% (94% de las empresas) |
+| Beta 0,90 | −1,9% (91% de las empresas) | −3,8% (94% de las empresas) | −4,6% (95% de las empresas) |
+| Beta 1,11 | −1,1% (88% de las empresas) | −3,0% (93% de las empresas) | −3,9% (94% de las empresas) |
 
-Frente al valor esperado de las historias (US$96,60 con la beta de la hoja; US$92,03 con la propuesta), el precio está por debajo en 28% y por debajo en 24%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF Base (US$119,78), el valor intrínseco principal, el precio está por debajo en 42%.
+
+Frente al DCF esperado de las historias (US$96,59 con la beta de la hoja; US$92,03 con la propuesta), el precio está por debajo en 28% y por debajo en 24%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -327,11 +369,11 @@ Frente al valor esperado de las historias (US$96,60 con la beta de la hoja; US$9
 |---|---|---|
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Líder de salud animal con márgenes excepcionales y varias franquicias bajo presión a la vez |  |
-| Probabilidades | A 40% / B 35% / C 10% / D 15% |  |
-| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$96,60 / US$92,03 |  |
-| DCF base hoy (historia A) | US$119,79 |  |
-| Precio con MOS sobre el valor esperado | US$62,79 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$44,74 a US$138,44 |  |
+| Probabilidades | Base 40% / Conservadora 35% / Disrupción 10% / Optimista 15% |  |
+| DCF Base hoy (valor intrínseco principal) | US$119,78 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$96,59 / US$92,03 |  |
+| Precio con MOS sobre el DCF esperado | US$62,79 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$44,74 a US$138,42 |  |
 | Confianza | Media: la calidad del negocio es alta; la duración de la presión competitiva no |  |
 | Qué cambiaría la opinión | Ventas de mascotas en EE.UU. y de dermatología en los próximos dos trimestres |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

@@ -1,4 +1,4 @@
-"""Tabla «Escenarios e historias (A–D)» de la sección 10 del análisis fundamental (prompt de research v5).
+"""Tabla «Escenarios e historias» (Base, Conservadora, Disrupción y Optimista) de la sección 10 del análisis fundamental (prompt de research v5).
 
 La tabla cualitativa de escenarios de la sección 10 tenía tres columnas, Conservador / Base / Optimista: los casos
 técnicos antiguos de la hoja. Con el contrato del 30-sep-2026 los escenarios activos son las cuatro historias A-D,
@@ -62,6 +62,7 @@ def build(tk: str, h: str) -> str:
     fin = res.get("financiero")
     old = old_table(h)
     ve = res["valor_esperado_beta_hoja"]
+    vb = next(h for h in res["historias"] if h["id"] == "A")["valor_beta_hoja"]
 
     def cell(fila, letra, generado):
         o = old.get(fila)
@@ -111,15 +112,16 @@ def build(tk: str, h: str) -> str:
                                "Reinversión y retorno sobre capital": "Capex, adquisiciones y retorno incremental",
                                "Moat y sustitución": "Participación de mercado y sustitutos"}[fila]))
         filas.append(row)
-    heads = ["Variable", "A · Base", "B · Conservadora", "C · Disrupción", "D · Optimista", "Evidencia que movería de escenario"]
+    heads = ["Variable", "Base", "Conservadora", "Disrupción · Deterioro de los fundamentales", "Optimista", "Evidencia que movería de escenario"]
     t = ("<table>\n<thead>\n<tr>" + "".join(f"<th>{c}</th>" for c in heads) + "</tr>\n</thead>\n<tbody>" +
          "".join("<tr>" + "".join(f"<td>{html.escape(str(c))}</td>" for c in r) + "</tr>\n" for r in filas) + "</tbody></table>")
-    nota_old = (" Las celdas de precios y moat de A, B y D conservan el criterio del analista de la tabla anterior (Base, "
+    nota_old = (" Las celdas de precios y moat de Base, Conservadora y Optimista conservan el criterio del analista de la tabla anterior (Base, "
                 "Conservador y Optimista de la hoja)." if old else "")
-    return (f"{START}\n<h3>Escenarios e historias (A–D)</h3>\n<p>Los escenarios son las cuatro historias del análisis: "
-            "A · Base (la trayectoria central), B · Conservadora (erosión gradual), C · Disrupción (deterioro estructural de "
-            "los fundamentales; no presupone quiebra) y D · Optimista. Cada una se cuantifica en la sección 12 como un DCF "
-            "completo, año por año, y su promedio ponderado por probabilidad es el valor intrínseco esperado "
+    return (f"{START}\n<h3>Escenarios e historias: Base, Conservadora, Disrupción y Optimista</h3>\n<p>Los escenarios son "
+            "las cuatro historias del análisis: Base (la trayectoria central), Conservadora (erosión gradual), Disrupción · "
+            "Deterioro de los fundamentales (deterioro estructural; no presupone quiebra) y Optimista. Cada una se cuantifica "
+            "en la sección 12 como un DCF completo, año por año. El DCF Base es el valor intrínseco principal "
+            f"(US${es(vb)} por acción); el promedio ponderado por probabilidad es el DCF esperado, un complemento "
             f"(US${es(ve)} por acción). Los casos Conservador/Base/Optimista de la hoja quedan como calibración técnica, "
             f"no como escenarios.{nota_old}</p>\n{t}\n{END}")
 

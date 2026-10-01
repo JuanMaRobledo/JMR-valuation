@@ -14,23 +14,23 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$405,29.** Historia central A: US$458,42; rango US$197,86–US$599,73; precio con MOS 35% sobre el esperado: US$263,44; precio de referencia US$518,46. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$467,13) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$458,42 por acción.** Complemento: DCF esperado por probabilidades US$405,29; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$197,86–US$599,73; precio con MOS 35% sobre el esperado: US$263,44; precio de referencia US$518,46. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$467,13) y los múltiplos y el ponderado son lecturas secundarias.
 
 
-| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · Azure y Copilot sostienen el doble dígito | 45% | US$458,42 | US$206,29 |
-| B · El capex de IA rinde menos de lo esperado | 25% | US$237,05 | US$59,26 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: La demanda de cómputo para IA se corrige | 10% | US$197,86 | US$19,79 |
-| D · Microsoft gana la plataforma empresarial de IA | 20% | US$599,73 | US$119,95 |
-| **DCF esperado** | 100% | **US$405,29** | |
+| **Base · Azure y Copilot sostienen el doble dígito** (valor principal) | 45% | US$458,42 | US$206,29 |
+| Conservadora · El capex de IA rinde menos de lo esperado | 25% | US$237,05 | US$59,26 |
+| Disrupción · Deterioro de los fundamentales: La demanda de cómputo para IA se corrige | 10% | US$197,86 | US$19,79 |
+| Optimista · Microsoft gana la plataforma empresarial de IA | 20% | US$599,73 | US$119,95 |
+| **DCF esperado (complemento)** | 100% | **US$405,29** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$466,38 por acción y los múltiplos, US$466,16 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$361,69 | US$345,41 | US$355,18 | US$263,44 | US$474,01 |
 | Base | US$467,13 | US$482,31 | US$473,20 | US$263,44 | US$641,83 |
+| Conservador | US$361,69 | US$345,41 | US$355,18 | US$263,44 | US$474,01 |
 | Optimista | US$552,57 | US$614,62 | US$577,39 | US$263,44 | US$793,87 |
 
 ## 2. Datos
@@ -57,15 +57,15 @@ Costo de capital: tasa libre de riesgo 4,25%, beta apalancada 1,36, ERP 4,46%, K
 
 A: Sin cambio de etapa: Microsoft sigue creciendo a doble dígito y cotiza por debajo de su promedio de cinco años; se usa la mediana de los últimos 5 cierres + LTM. Se excluye la columna sin fecha de la hoja. B: grandes plataformas tecnológicas y de software (Alphabet, Apple, Amazon, Oracle, Meta, Salesforce), datos de yfinance al 29-sep-2026. Amazon y Oracle no tienen flujo de caja libre positivo y no entran en los múltiplos de flujo. Ajuste +5%: Microsoft tiene el margen operativo más alto del grupo (45% frente a ~33%) y Azure acelera (~40%) con una cartera de US$678 mil millones. λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 25,9% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.
 
-| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
+| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana de los últimos 5 cierres + LTM depurados = 22,1x | 17,1x (n=6: GOOG 23,2x, AAPL 28,8x, AMZN 16,5x, ORCL 15,6x, META 17,4x, CRM 16,9x) × 1,05 = 18,0x | 9,4x / 13,1x / 16,9x | 17,2x | **20,0x** | 24,6x | —x / —x / —x |
-| EV/FCFF | mediana de los últimos 5 cierres + LTM depurados = 42,8x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF) | 40,0x (n=4: GOOG 73,1x, AAPL 35,3x, META 44,7x, CRM 13,8x) × 1,05 = 42,0x | 25,5x / 35,7x / 44,4x | 31,2x | **42,4x** | 50,6x | —x / —x / —x |
-| P/E | mediana de los últimos 5 cierres + LTM depurados = 31,8x | 21,1x (n=6: GOOG 16,9x, AAPL 37,7x, AMZN 19,8x, ORCL 21,6x, META 27,8x, CRM 20,6x) × 1,05 = 22,2x | 18,2x / 23,7x / 28,2x | 23,0x | **27,0x** | 31,9x | —x / —x / —x |
-| P/FCFE | mediana de los últimos 5 cierres + LTM depurados = 44,2x | 40,5x (n=4: GOOG 77,4x, AAPL 35,2x, META 45,9x, CRM 12,2x) × 1,05 = 42,6x | 21,4x / 28,2x / 33,5x | 32,6x | **43,4x** | 51,3x | —x / —x / —x |
-| P/OCF | mediana de los últimos 5 cierres + LTM depurados = 24,3x | 16,2x (n=6: GOOG 22,2x, AAPL 32,8x, AMZN 17,9x, ORCL 8,9x, META 14,4x, CRM 11,8x) × 1,05 = 17,0x | 10,0x / 13,7x / 17,0x | 16,1x | **20,7x** | 25,2x | —x / —x / —x |
+| EV/EBITDA | mediana de los últimos 5 cierres + LTM depurados = 22,1x | 17,1x (n=6: GOOG 23,2x, AAPL 28,8x, AMZN 16,5x, ORCL 15,6x, META 17,4x, CRM 16,9x) × 1,05 = 18,0x | 13,1x / 9,4x / 16,9x | **20,0x** | 17,2x | 24,6x | —x / —x / —x |
+| EV/FCFF | mediana de los últimos 5 cierres + LTM depurados = 42,8x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF) | 40,0x (n=4: GOOG 73,1x, AAPL 35,3x, META 44,7x, CRM 13,8x) × 1,05 = 42,0x | 35,7x / 25,5x / 44,4x | **42,4x** | 31,2x | 50,6x | —x / —x / —x |
+| P/E | mediana de los últimos 5 cierres + LTM depurados = 31,8x | 21,1x (n=6: GOOG 16,9x, AAPL 37,7x, AMZN 19,8x, ORCL 21,6x, META 27,8x, CRM 20,6x) × 1,05 = 22,2x | 23,7x / 18,2x / 28,2x | **27,0x** | 23,0x | 31,9x | —x / —x / —x |
+| P/FCFE | mediana de los últimos 5 cierres + LTM depurados = 44,2x | 40,5x (n=4: GOOG 77,4x, AAPL 35,2x, META 45,9x, CRM 12,2x) × 1,05 = 42,6x | 28,2x / 21,4x / 33,5x | **43,4x** | 32,6x | 51,3x | —x / —x / —x |
+| P/OCF | mediana de los últimos 5 cierres + LTM depurados = 24,3x | 16,2x (n=6: GOOG 22,2x, AAPL 32,8x, AMZN 17,9x, ORCL 8,9x, META 14,4x, CRM 11,8x) × 1,05 = 17,0x | 13,7x / 10,0x / 17,0x | **20,7x** | 16,1x | 25,2x | —x / —x / —x |
 
-Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
+Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
 - **EV/EBITDA.** Base 20,0x: promedio de historia y peers 20,0x, acercado 0% al justificado (13,1x); rango de anclas 13,1x–22,1x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **EV/FCFF.** Base 42,4x: promedio de historia y peers 42,4x, acercado 0% al justificado (35,7x); rango de anclas 35,7x–42,8x. Atípicos excluidos de la historia: ninguno. EV/FCFF: la razón FCF después de intereses ÷ FCFF se fija en 0,98 (mediana de los tres cierres reales); el último cierre da 1,28 porque 'Interest / Other' incluye partidas no operativas. Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
@@ -79,37 +79,37 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$482,31 f
 
 Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:
 
-| Método | Peso | Conservador | Base | Optimista |
+| Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$485,42 | US$626,92 | US$741,59 |
-| EV/EBITDA | 10% | US$555,96 | US$744,27 | US$986,02 |
-| EV/FCFF | 15% | US$382,06 | US$596,63 | US$784,13 |
-| P/E | 5% | US$501,74 | US$681,02 | US$871,25 |
-| P/FCFE | 5% | US$447,51 | US$713,04 | US$941,64 |
-| P/OCF | 5% | US$447,76 | US$641,09 | US$840,90 |
-| **Ponderado FY+3** | 100% | US$474,01 | US$641,83 | US$793,87 |
+| DCF Damodaran | 60% | US$626,92 | US$485,42 | US$741,59 |
+| EV/EBITDA | 10% | US$744,27 | US$555,96 | US$986,02 |
+| EV/FCFF | 15% | US$596,63 | US$382,06 | US$784,13 |
+| P/E | 5% | US$681,02 | US$501,74 | US$871,25 |
+| P/FCFE | 5% | US$713,04 | US$447,51 | US$941,64 |
+| P/OCF | 5% | US$641,09 | US$447,76 | US$840,90 |
+| **Ponderado FY+3** | 100% | US$641,83 | US$474,01 | US$793,87 |
 
 Valor presente (Ke 10,30%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$424,23 | US$419,57 | US$414,26 | US$419,35 | OK |
 | EV/EBITDA | Base | US$528,49 | US$542,24 | US$554,57 | US$541,77 | OK |
+| EV/EBITDA | Conservador | US$424,23 | US$419,57 | US$414,26 | US$419,35 | OK |
 | EV/EBITDA | Optimista | US$662,57 | US$701,54 | US$734,70 | US$699,60 | OK |
-| EV/FCFF | Conservador | US$290,59 | US$286,16 | US$284,68 | US$287,14 | OK |
 | EV/FCFF | Base | US$412,52 | US$431,79 | US$444,56 | US$429,62 | OK |
+| EV/FCFF | Conservador | US$290,59 | US$286,16 | US$284,68 | US$287,14 | OK |
 | EV/FCFF | Optimista | US$500,30 | US$549,96 | US$584,27 | US$544,84 | OK |
-| P/E | Conservador | US$389,62 | US$380,67 | US$373,86 | US$381,38 | OK |
 | P/E | Base | US$491,56 | US$498,67 | US$507,44 | US$499,22 | OK |
+| P/E | Conservador | US$389,62 | US$380,67 | US$373,86 | US$381,38 | OK |
 | P/E | Optimista | US$592,56 | US$622,09 | US$649,19 | US$621,28 | OK |
-| P/FCFE | Conservador | US$364,61 | US$335,69 | US$333,45 | US$344,58 | OK |
 | P/FCFE | Base | US$518,37 | US$516,80 | US$531,29 | US$522,16 | OK |
+| P/FCFE | Conservador | US$364,61 | US$335,69 | US$333,45 | US$344,58 | OK |
 | P/FCFE | Optimista | US$637,95 | US$662,87 | US$701,63 | US$667,48 | OK |
-| P/OCF | Conservador | US$341,18 | US$336,68 | US$333,63 | US$337,16 | OK |
 | P/OCF | Base | US$450,70 | US$465,82 | US$477,69 | US$464,73 | OK |
+| P/OCF | Conservador | US$341,18 | US$336,68 | US$333,63 | US$337,16 | OK |
 | P/OCF | Optimista | US$559,84 | US$596,92 | US$626,57 | US$594,44 | OK |
 
-Múltiplos consolidados hoy: US$345,41 / US$482,31 / US$614,62 · DCF hoy: US$361,69 / US$467,13 / US$552,57 · Ponderado hoy: US$355,18 / US$473,20 / US$577,39 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$482,31 / US$345,41 / US$614,62 · DCF técnico hoy: US$467,13 / US$361,69 / US$552,57 · Ponderado hoy: US$473,20 / US$355,18 / US$577,39 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 

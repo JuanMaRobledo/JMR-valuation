@@ -89,7 +89,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Se estabiliza Américas y crece lo internacional",
+   "nombre": "Base · Se estabiliza Américas y crece lo internacional",
    "prob": 0.4,
    "margen": 0.194563428662154,
    "crec": {
@@ -263,11 +263,13 @@
     "wacc0": 0.08994308263386643,
     "margenY1": 0.154563
    },
+   "valor_bruto": 187.27739014645724,
+   "valor_bruto_prop": 199.7633258162345,
    "valor_beta_hoja": 187.27739014645724,
    "valor_beta_prop": 199.7633258162345
   },
   {
-   "nombre": "B · Pérdida estructural frente a Alo y Vuori",
+   "nombre": "Conservadora · Pérdida estructural frente a Alo y Vuori",
    "prob": 0.35,
    "margen": 0.15456342866215403,
    "crec": {
@@ -442,11 +444,13 @@
     "wacc0": 0.08994308263386643,
     "margenY1": 0.154563
    },
+   "valor_bruto": 122.8336426827711,
+   "valor_bruto_prop": 130.41151850879606,
    "valor_beta_hoja": 122.8336426827711,
    "valor_beta_prop": 130.41151850879606
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.11456342866215403,
    "crec": {
@@ -623,11 +627,13 @@
     "wacc0": 0.08994308263386643,
     "margenY1": 0.154563
    },
+   "valor_bruto": 86.06490994200986,
+   "valor_bruto_prop": 90.89321660675468,
    "valor_beta_hoja": 86.06490994200986,
    "valor_beta_prop": 90.89321660675468
   },
   {
-   "nombre": "D · La marca se recupera",
+   "nombre": "Optimista · La marca se recupera",
    "prob": 0.15,
    "margen": 0.224563428662154,
    "crec": {
@@ -801,6 +807,8 @@
     "wacc0": 0.08994308263386643,
     "margenY1": 0.154563
    },
+   "valor_bruto": 244.99153491711576,
+   "valor_bruto_prop": 261.7881268330667,
    "valor_beta_hoja": 244.99153491711576,
    "valor_beta_prop": 261.7881268330667
   }
@@ -916,5 +924,72 @@
    "tasa_base": null
   }
  ],
- "ingresos_ltm": 11094
+ "ingresos_ltm": 11094,
+ "sens_base": {
+  "base": 187.27739014645724,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 168.30265970961037
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 206.2521205833042
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 171.54134997684574
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 204.7072293365773
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 227.05838542532717
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 158.89745387695476
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 182.47562892040364
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 192.81411221207222
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 178.35941918710213
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 182.62031904154594
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 190.3821042163981
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 173.59933178573698
+   }
+  ]
+ },
+ "rd_vida": null,
+ "rd_ltm": null
 }

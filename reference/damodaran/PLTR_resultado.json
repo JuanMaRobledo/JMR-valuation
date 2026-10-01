@@ -88,7 +88,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Hipercrecimiento que desacelera con la escala",
+   "nombre": "Base · Hipercrecimiento que desacelera con la escala",
    "prob": 0.4,
    "margen": 0.4538131814682245,
    "crec": {
@@ -254,11 +254,13 @@
     "wacc0": 0.10571578347616187,
     "margenY1": 0.483813
    },
+   "valor_bruto": 55.61625102310631,
+   "valor_bruto_prop": 55.60951990888733,
    "valor_beta_hoja": 55.61625102310631,
    "valor_beta_prop": 55.60951990888733
   },
   {
-   "nombre": "B · Se normaliza en un software de alta calidad",
+   "nombre": "Conservadora · Se normaliza en un software de alta calidad",
    "prob": 0.3,
    "margen": 0.3838131814682245,
    "crec": {
@@ -424,11 +426,13 @@
     "wacc0": 0.10571578347616187,
     "margenY1": 0.483813
    },
+   "valor_bruto": 26.93354568200303,
+   "valor_bruto_prop": 26.93072818298596,
    "valor_beta_hoja": 26.93354568200303,
    "valor_beta_prop": 26.93072818298596
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.3038131814682245,
    "crec": {
@@ -597,11 +601,13 @@
     "wacc0": 0.10571578347616187,
     "margenY1": 0.483813
    },
+   "valor_bruto": 15.714188861771536,
+   "valor_bruto_prop": 15.712861439339017,
    "valor_beta_hoja": 15.714188861771536,
    "valor_beta_prop": 15.712861439339017
   },
   {
-   "nombre": "D · Sistema operativo de la IA empresarial",
+   "nombre": "Optimista · Sistema operativo de la IA empresarial",
    "prob": 0.2,
    "margen": 0.5038131814682245,
    "crec": {
@@ -767,6 +773,8 @@
     "wacc0": 0.10571578347616187,
     "margenY1": 0.483813
    },
+   "valor_bruto": 95.58564282629008,
+   "valor_bruto_prop": 95.57331149088469,
    "valor_beta_hoja": 95.58564282629008,
    "valor_beta_prop": 95.57331149088469
   }
@@ -882,5 +890,72 @@
    "tasa_base": 0.001458168838715111
   }
  ],
- "ingresos_ltm": 6155.941
+ "ingresos_ltm": 6155.941,
+ "sens_base": {
+  "base": 55.61625102310631,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 53.43984976825911
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 57.79265227795352
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 51.12225534510401
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 60.52127717675215
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 63.18842521931814
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 49.5800104815148
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 55.07011817544105
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 56.16991256029394
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 52.9678581172441
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 54.94316574847912
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 56.064974539524435
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 55.61625102310631
+   }
+  ]
+ },
+ "rd_vida": 3,
+ "rd_ltm": 641.239
 }

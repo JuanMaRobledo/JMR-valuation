@@ -90,7 +90,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Se estabiliza con márgenes estables",
+   "nombre": "Base · Se estabiliza con márgenes estables",
    "prob": 0.45,
    "margen": 0.19151457812512637,
    "crec": {
@@ -272,11 +272,13 @@
     "wacc0": 0.09204782708839387,
     "margenY1": 0.17426547670302917
    },
+   "valor_bruto": 109.82474544977978,
+   "valor_bruto_prop": 116.58904041839365,
    "valor_beta_hoja": 109.82474544977978,
    "valor_beta_prop": 116.58904041839365
   },
   {
-   "nombre": "B · El botón PayPal pierde frente a las billeteras nativas",
+   "nombre": "Conservadora · El botón PayPal pierde frente a las billeteras nativas",
    "prob": 0.3,
    "margen": 0.16151457812512637,
    "crec": {
@@ -459,11 +461,13 @@
     "wacc0": 0.09204782708839387,
     "margenY1": 0.17426547670302917
    },
+   "valor_bruto": 66.19779491681915,
+   "valor_bruto_prop": 69.86233555033844,
    "valor_beta_hoja": 66.19779491681915,
    "valor_beta_prop": 69.86233555033844
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.13151457812512637,
    "crec": {
@@ -648,11 +652,13 @@
     "wacc0": 0.09204782708839387,
     "margenY1": 0.17426547670302917
    },
+   "valor_bruto": 48.27936015837794,
+   "valor_bruto_prop": 50.70990687887772,
    "valor_beta_hoja": 48.27936015837794,
    "valor_beta_prop": 50.70990687887772
   },
   {
-   "nombre": "D · Reactivación: Fastlane, Venmo y publicidad",
+   "nombre": "Optimista · Reactivación: Fastlane, Venmo y publicidad",
    "prob": 0.15,
    "margen": 0.22151457812512637,
    "crec": {
@@ -834,6 +840,8 @@
     "wacc0": 0.09204782708839387,
     "margenY1": 0.17426547670302917
    },
+   "valor_bruto": 138.00919940792932,
+   "valor_bruto_prop": 146.71430191411062,
    "valor_beta_hoja": 138.00919940792932,
    "valor_beta_prop": 146.71430191411062
   }
@@ -956,5 +964,72 @@
    "tasa_base": null
   }
  ],
- "ingresos_ltm": 34128
+ "ingresos_ltm": 34128,
+ "sens_base": {
+  "base": 109.82474544977978,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 99.3055263138109
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 120.34396458574871
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 99.52513159275009
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 121.25878270973992
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 141.74720441574036
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 90.26422213262371
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 104.496199262454
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 116.54521258716426
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 104.59499566645692
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 108.21479002258147
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 110.89804906791201
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 88.33669804182387
+   }
+  ]
+ },
+ "rd_vida": 3,
+ "rd_ltm": 3247
 }

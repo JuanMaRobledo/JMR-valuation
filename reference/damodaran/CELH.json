@@ -30,7 +30,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 8,6% anual cinco años (historia A) lo logró ~45% de las empresas de ese tamaño; 12,2% (historia D), ~25%. Para Celsius hay evidencia que justifica estar algo por encima de la tasa base (categoría creciendo, Alani al alza, distribución de PepsiCo) y evidencia en contra (marca original estancada, ciclos de moda en energéticas). El CAGR histórico de 68% no es evidencia útil: mezcla hipercrecimiento orgánico de una marca pequeña con compras.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 8,6% anual cinco años (Base) lo logró ~45% de las empresas de ese tamaño; 12,2% (Optimista), ~25%. Para Celsius hay evidencia que justifica estar algo por encima de la tasa base (categoría creciendo, Alani al alza, distribución de PepsiCo) y evidencia en contra (marca original estancada, ciclos de moda en energéticas). El CAGR histórico de 68% no es evidencia útil: mezcla hipercrecimiento orgánico de una marca pequeña con compras.",
  "segmentos": {
   "Celsius": 1425.5,
   "Alani Nu": 1433.1,
@@ -125,7 +125,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Alani lidera y Celsius se estabiliza",
+   "nombre": "Base · Alani lidera y Celsius se estabiliza",
    "prob": 0.4,
    "crec": {
     "Celsius": [
@@ -156,7 +156,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Alani crece, Celsius sigue cediendo",
+   "nombre": "Conservadora · Alani crece, Celsius sigue cediendo",
    "prob": 0.35,
    "crec": {
     "Celsius": [
@@ -187,7 +187,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "crec": {
     "Celsius": [
@@ -221,7 +221,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Plataforma multimarca",
+   "nombre": "Optimista · Plataforma multimarca",
    "prob": 0.1,
    "crec": {
     "Celsius": [
@@ -252,7 +252,7 @@
    "tesis": "optimista"
   }
  ],
- "prob_texto": "A es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). B (35%) es la continuación de lo que muestra la factura. C (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). D (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). Conservadora (35%) es la continuación de lo que muestra la factura. Disrupción (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). Optimista (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Alani fue una moda: sus ventas al consumidor pasan de +56% a un dígito en 2027 y la participación retrocede.",
   "Las promociones se vuelven permanentes: el margen bruto no vuelve a 50% y el operativo se queda en 12-15%.",
@@ -260,7 +260,7 @@
   "La marca Celsius pasa de −2% a −10% al consumidor y arrastra al grupo.",
   "Más compras a retornos iguales o menores que el costo de capital."
  ],
- "contra": "la desaceleración rápida de Alani (100% → 56% en un trimestre) y la caída de participación del 1T al 2T son exactamente lo que se vería al principio de las historias B o C.",
+ "contra": "la desaceleración rápida de Alani (100% → 56% en un trimestre) y la caída de participación del 1T al 2T son exactamente lo que se vería al principio de las historias Conservadora o Disrupción.",
  "indicadores": [
   [
    "Ventas al consumidor Celsius (Circana)",

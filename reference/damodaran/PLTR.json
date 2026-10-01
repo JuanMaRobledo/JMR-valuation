@@ -13,7 +13,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Hipercrecimiento que desacelera con la escala",
+   "nombre": "Base · Hipercrecimiento que desacelera con la escala",
    "prob": 0.4,
    "margen": 0.45,
    "crec": {
@@ -36,7 +36,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Se normaliza en un software de alta calidad",
+   "nombre": "Conservadora · Se normaliza en un software de alta calidad",
    "prob": 0.3,
    "margen": 0.38,
    "crec": {
@@ -59,7 +59,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.3,
    "crec": {
@@ -85,7 +85,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Sistema operativo de la IA empresarial",
+   "nombre": "Optimista · Sistema operativo de la IA empresarial",
    "prob": 0.2,
    "margen": 0.5,
    "crec": {
@@ -140,7 +140,7 @@
    "Probable"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 35,3% anual cinco años (historia A) lo logró ~1% de las empresas de ese tamaño; 47,1% (historia D), ~0%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. La hoja suponía 48% anual (82% el primer año); tras la revisión del 30-sep-2026 supone ~42% (68% el primer año, coherente con la guía 2026 de US$8.150 millones), entre las historias A y D.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 35,3% anual cinco años (Base) lo logró ~1% de las empresas de ese tamaño; 47,1% (Optimista), ~0%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. La hoja suponía 48% anual (82% el primer año); tras la revisión del 30-sep-2026 supone ~42% (68% el primer año, coherente con la guía 2026 de US$8.150 millones), entre las historias Base y Optimista.",
  "crecimiento": {
   "texto": "Ingresos de US$2.225 millones (2023, +16,7%), US$2.866 millones (2024, +28,8%) y US$4.475 millones (2025, +56,2%); LTM US$6.156 millones. En 2025 EE.UU. fue el 74% (US$3.320 millones), Reino Unido el 10%. En 2026 U.S. Commercial creció 149% en un trimestre. La hoja supone ahora +68% en los próximos doce meses y 35% en los años 2-5 (antes 82% y 40%). En el 2T26 los ingresos crecieron 93% (US$1.940 millones) y la guía 2026 subió a US$8.150-8.158 millones. La división de las historias (Gobierno ~52%, Comercial ~48%) es una aproximación.",
   "tabla": {
@@ -196,7 +196,7 @@
  "reinversion": {
   "texto": "Casi no necesita capital (capex de US$34 millones en 2025). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en ingenieros desplegados con los clientes (bootcamps) y en I+D; el crecimiento no está limitado por el capital sino por la capacidad de convertir pilotos en contratos. Sin ventaja defendible: tiene costos de cambio en gobierno, pero su ROIC con plusvalía (5-12%) está cerca del costo de capital y la serie es corta. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). B (30%) es la normalización en un software de alta calidad (~19%). C (10%) es comoditización con pérdida de contratos. D (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). Conservadora (30%) es la normalización en un software de alta calidad (~19%). Disrupción (10%) es comoditización con pérdida de contratos. Optimista (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "La adopción comercial es un ciclo de entusiasmo por la IA: los pilotos no se renuevan cuando los retornos no aparecen.",
   "Los hiperescaladores (Microsoft Fabric, Google, AWS) y Databricks/Snowflake ofrecen lo mismo integrado y más barato.",

@@ -89,7 +89,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Plataforma madura que escala márgenes",
+   "nombre": "Base · Plataforma madura que escala márgenes",
    "prob": 0.45,
    "margen": 0.22223497313500631,
    "crec": {
@@ -263,11 +263,13 @@
     "wacc0": 0.08194855263518223,
     "margenY1": 0.142235
    },
+   "valor_bruto": 89.78307863884211,
+   "valor_bruto_prop": 90.63405602933558,
    "valor_beta_hoja": 89.78307863884211,
    "valor_beta_prop": 90.63405602933558
   },
   {
-   "nombre": "B · Robotaxis y regulación presionan la movilidad",
+   "nombre": "Conservadora · Robotaxis y regulación presionan la movilidad",
    "prob": 0.25,
    "margen": 0.16223497313500632,
    "crec": {
@@ -441,11 +443,13 @@
     "wacc0": 0.08194855263518223,
     "margenY1": 0.142235
    },
+   "valor_bruto": 54.022584029840715,
+   "valor_bruto_prop": 54.5069690368873,
    "valor_beta_hoja": 54.022584029840715,
    "valor_beta_prop": 54.5069690368873
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.10223497313500632,
    "crec": {
@@ -622,11 +626,13 @@
     "wacc0": 0.08194855263518223,
     "margenY1": 0.142235
    },
+   "valor_bruto": 28.81410053617975,
+   "valor_bruto_prop": 29.039197377103125,
    "valor_beta_hoja": 28.81410053617975,
    "valor_beta_prop": 29.039197377103125
   },
   {
-   "nombre": "D · Uber es la red de los vehículos autónomos",
+   "nombre": "Optimista · Uber es la red de los vehículos autónomos",
    "prob": 0.2,
    "margen": 0.2622349731350063,
    "crec": {
@@ -800,6 +806,8 @@
     "wacc0": 0.08194855263518223,
     "margenY1": 0.142235
    },
+   "valor_bruto": 122.09451851324344,
+   "valor_bruto_prop": 123.27654336388238,
    "valor_beta_hoja": 122.09451851324344,
    "valor_beta_prop": 123.27654336388238
   }
@@ -915,5 +923,72 @@
    "tasa_base": 0.676192578018935
   }
  ],
- "ingresos_ltm": 55227
+ "ingresos_ltm": 55227,
+ "sens_base": {
+  "base": 89.78307863884211,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 81.57456908402355
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 97.99158819366066
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 81.50326586848897
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 98.94206837713168
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 104.03242222936751
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 78.50492716219817
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 88.8465669010109
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 90.73283934536566
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 85.5076939417544
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 87.45976271678238
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 91.33195592021525
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 89.78307863884211
+   }
+  ]
+ },
+ "rd_vida": 3,
+ "rd_ltm": 3741
 }

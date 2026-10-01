@@ -89,7 +89,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Azure y Copilot sostienen el doble dígito",
+   "nombre": "Base · Azure y Copilot sostienen el doble dígito",
    "prob": 0.45,
    "margen": 0.46205670192792014,
    "crec": {
@@ -263,11 +263,13 @@
     "wacc0": 0.10152881611369352,
     "margenY1": 0.475057
    },
+   "valor_bruto": 458.4229910581587,
+   "valor_bruto_prop": 468.3818563932399,
    "valor_beta_hoja": 458.4229910581587,
    "valor_beta_prop": 468.3818563932399
   },
   {
-   "nombre": "B · El capex de IA rinde menos de lo esperado",
+   "nombre": "Conservadora · El capex de IA rinde menos de lo esperado",
    "prob": 0.25,
    "margen": 0.41205670192792015,
    "crec": {
@@ -442,11 +444,13 @@
     "wacc0": 0.10152881611369352,
     "margenY1": 0.475057
    },
+   "valor_bruto": 237.05156790100042,
+   "valor_bruto_prop": 241.7866024522611,
    "valor_beta_hoja": 237.05156790100042,
    "valor_beta_prop": 241.7866024522611
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.38205670192792013,
    "crec": {
@@ -623,11 +627,13 @@
     "wacc0": 0.10152881611369352,
     "margenY1": 0.475057
    },
+   "valor_bruto": 197.86428381556968,
+   "valor_bruto_prop": 201.66024813224408,
    "valor_beta_hoja": 197.86428381556968,
    "valor_beta_prop": 201.66024813224408
   },
   {
-   "nombre": "D · Microsoft gana la plataforma empresarial de IA",
+   "nombre": "Optimista · Microsoft gana la plataforma empresarial de IA",
    "prob": 0.2,
    "margen": 0.4920567019279201,
    "s2c": 0.5782831447318479,
@@ -803,6 +809,8 @@
     "wacc0": 0.10152881611369352,
     "margenY1": 0.475057
    },
+   "valor_bruto": 599.7297312665733,
+   "valor_bruto_prop": 613.1719865825434,
    "valor_beta_hoja": 599.7297312665733,
    "valor_beta_prop": 613.1719865825434
   }
@@ -918,5 +926,72 @@
    "tasa_base": 0.09374702924778515
   }
  ],
- "ingresos_ltm": 331839
+ "ingresos_ltm": 331839,
+ "sens_base": {
+  "base": 458.4229910581587,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 438.44052442474145
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 478.4054576915759
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 415.57744206915663
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 505.9065160920789
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 612.7327488943471
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 363.44604333908785
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 424.5340089141454
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 501.30010839949733
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 436.593324817294
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 443.3625683102573
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 468.4632728900929
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 322.77626817147507
+   }
+  ]
+ },
+ "rd_vida": 3,
+ "rd_ltm": 35562
 }

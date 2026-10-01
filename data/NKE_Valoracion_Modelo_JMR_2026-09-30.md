@@ -14,23 +14,23 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$35,18.** Historia central A: US$38,40; rango US$16,63–US$50,33; precio con MOS 35% sobre el esperado: US$22,87; precio de referencia US$35,35. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$37,41) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$38,40 por acción.** Complemento: DCF esperado por probabilidades US$35,18; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$16,63–US$50,33; precio con MOS 35% sobre el esperado: US$22,87; precio de referencia US$35,35. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$37,41) y los múltiplos y el ponderado son lecturas secundarias.
 
 
-| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · Recuperación lenta con la vuelta a los mayoristas | 45% | US$38,40 | US$17,28 |
-| B · Pérdida de relevancia prolongada | 30% | US$23,36 | US$7,01 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: Aranceles y competencia estructural | 5% | US$16,63 | US$0,83 |
-| D · Vuelve la Nike de márgenes históricos | 20% | US$50,33 | US$10,07 |
-| **DCF esperado** | 100% | **US$35,18** | |
+| **Base · Recuperación lenta con la vuelta a los mayoristas** (valor principal) | 45% | US$38,40 | US$17,28 |
+| Conservadora · Pérdida de relevancia prolongada | 30% | US$23,36 | US$7,01 |
+| Disrupción · Deterioro de los fundamentales: Aranceles y competencia estructural | 5% | US$16,63 | US$0,83 |
+| Optimista · Vuelve la Nike de márgenes históricos | 20% | US$50,33 | US$10,07 |
+| **DCF esperado (complemento)** | 100% | **US$35,18** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$33,96 por acción y los múltiplos, US$34,03 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$20,40 | US$24,86 | US$23,08 | US$22,87 | US$29,49 |
 | Base | US$37,41 | US$37,10 | US$37,22 | US$22,87 | US$51,02 |
+| Conservador | US$20,40 | US$24,86 | US$23,08 | US$22,87 | US$29,49 |
 | Optimista | US$50,23 | US$49,02 | US$49,50 | US$22,87 | US$69,59 |
 
 ## 2. Datos
@@ -57,15 +57,15 @@ Costo de capital: tasa libre de riesgo 4,96%, beta apalancada 1,01, ERP 4,32%, K
 
 A: Nike cotizó a 20-42x EBITDA mientras crecía y ganaba margen con la venta directa. Desde FY25 está en reestructuración: las ventas cayeron ~10% en FY25 y quedaron planas en FY26 (US$46.400 millones, −2% sin efecto cambiario), China cae 12% y el CEO Elliott Hill reconoce que la recuperación toma más de lo esperado. La etapa actual es May '25, May '26 y el LTM. B: ropa y calzado deportivo (Adidas, Lululemon, Deckers, On Holding), datos de yfinance al 29-sep-2026. Se excluyen Under Armour y VF Corp (margen operativo negativo; sus múltiplos no comparan). Sin ajuste: Nike es la marca más grande del sector, pero hoy no crece; queda entre On/Adidas (crecen) y Lululemon (decrece). λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 13,3% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.
 
-| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
+| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana May '25, May '26, LTM (etapa actual) = 15,5x | 9,9x (n=4: ADDYY 12,7x, LULU 5,0x, DECK 7,1x, ONON 19,1x) × 1,00 = 8,7x | 11,9x / 16,4x / 17,7x | 9,2x | **12,1x** | 14,8x | —x / 15,5x / —x |
-| EV/FCFF | mediana May '25, May '26, LTM (etapa actual) = 29,9x (EV/FCF × 1,07 = FCF después de intereses ÷ FCFF) | 13,4x (n=4: ADDYY 18,0x, LULU 8,8x, DECK 8,4x, ONON 20,9x) × 1,00 = 11,7x | 16,8x / 24,6x / 26,4x | 15,9x | **20,8x** | 24,6x | —x / 22,6x / —x |
-| P/E | mediana May '25, May '26, LTM (etapa actual) = 22,0x | 14,8x (n=4: ADDYY 18,6x, LULU 8,0x, DECK 11,0x, ONON 20,8x) × 1,00 = 12,2x | 12,9x / 17,8x / 19,6x | 13,2x | **17,1x** | 20,1x | —x / 22,0x / —x |
-| P/FCFE | mediana May '25, May '26, LTM (etapa actual) = 27,6x | 12,6x (n=4: ADDYY 15,8x, LULU 7,9x, DECK 9,5x, ONON 23,0x) × 1,00 = 11,6x | 15,6x / 22,1x / 23,6x | 15,5x | **19,6x** | 23,1x | 10,1x / 17,9x / 19,5x |
-| P/OCF | mediana May '25, May '26, LTM (etapa actual) = 23,9x | 10,7x (n=4: ADDYY 12,5x, LULU 5,4x, DECK 8,9x, ONON 18,8x) × 1,00 = 9,3x | 11,2x / 20,7x / 22,8x | 12,0x | **16,6x** | 18,9x | —x / 19,2x / —x |
+| EV/EBITDA | mediana May '25, May '26, LTM (etapa actual) = 15,5x | 9,9x (n=4: ADDYY 12,7x, LULU 5,0x, DECK 7,1x, ONON 19,1x) × 1,00 = 8,7x | 16,4x / 11,9x / 17,7x | **12,1x** | 9,2x | 14,8x | 15,5x / —x / —x |
+| EV/FCFF | mediana May '25, May '26, LTM (etapa actual) = 29,9x (EV/FCF × 1,07 = FCF después de intereses ÷ FCFF) | 13,4x (n=4: ADDYY 18,0x, LULU 8,8x, DECK 8,4x, ONON 20,9x) × 1,00 = 11,7x | 24,6x / 16,8x / 26,4x | **20,8x** | 15,9x | 24,6x | 22,6x / —x / —x |
+| P/E | mediana May '25, May '26, LTM (etapa actual) = 22,0x | 14,8x (n=4: ADDYY 18,6x, LULU 8,0x, DECK 11,0x, ONON 20,8x) × 1,00 = 12,2x | 17,8x / 12,9x / 19,6x | **17,1x** | 13,2x | 20,1x | 22,0x / —x / —x |
+| P/FCFE | mediana May '25, May '26, LTM (etapa actual) = 27,6x | 12,6x (n=4: ADDYY 15,8x, LULU 7,9x, DECK 9,5x, ONON 23,0x) × 1,00 = 11,6x | 22,1x / 15,6x / 23,6x | **19,6x** | 15,5x | 23,1x | 17,9x / 10,1x / 19,5x |
+| P/OCF | mediana May '25, May '26, LTM (etapa actual) = 23,9x | 10,7x (n=4: ADDYY 12,5x, LULU 5,4x, DECK 8,9x, ONON 18,8x) × 1,00 = 9,3x | 20,7x / 11,2x / 22,8x | **16,6x** | 12,0x | 18,9x | 19,2x / —x / —x |
 
-Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
+Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
 - **EV/EBITDA.** Base 12,1x: promedio de historia y peers 12,1x, acercado 0% al justificado (16,4x); rango de anclas 8,7x–16,4x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **EV/FCFF.** Base 20,8x: promedio de historia y peers 20,8x, acercado 0% al justificado (24,6x); rango de anclas 11,7x–29,9x. Atípicos excluidos de la historia: May '20 (114,7x: > 2,5x la mediana (32.3x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
@@ -79,37 +79,37 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$37,10 fr
 
 Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:
 
-| Método | Peso | Conservador | Base | Optimista |
+| Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$26,66 | US$48,88 | US$65,63 |
-| EV/EBITDA | 20% | US$30,08 | US$49,46 | US$69,14 |
-| EV/FCFF | 10% | US$35,41 | US$56,19 | US$76,80 |
-| P/E | 20% | US$29,34 | US$50,46 | US$69,49 |
-| P/FCFE | 5% | US$33,70 | US$60,75 | US$84,21 |
-| P/OCF | 5% | US$34,27 | US$56,60 | US$74,47 |
-| **Ponderado FY+3** | 100% | US$29,49 | US$51,02 | US$69,59 |
+| DCF Damodaran | 40% | US$48,88 | US$26,66 | US$65,63 |
+| EV/EBITDA | 20% | US$49,46 | US$30,08 | US$69,14 |
+| EV/FCFF | 10% | US$56,19 | US$35,41 | US$76,80 |
+| P/E | 20% | US$50,46 | US$29,34 | US$69,49 |
+| P/FCFE | 5% | US$60,75 | US$33,70 | US$84,21 |
+| P/OCF | 5% | US$56,60 | US$34,27 | US$74,47 |
+| **Ponderado FY+3** | 100% | US$51,02 | US$29,49 | US$69,59 |
 
 Valor presente (Ke 9,32%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$25,05 | US$23,99 | US$23,02 | US$24,02 | OK |
 | EV/EBITDA | Base | US$32,33 | US$36,36 | US$37,86 | US$35,52 | OK |
+| EV/EBITDA | Conservador | US$25,05 | US$23,99 | US$23,02 | US$24,02 | OK |
 | EV/EBITDA | Optimista | US$41,47 | US$49,67 | US$52,92 | US$48,02 | OK |
-| EV/FCFF | Conservador | US$30,23 | US$28,62 | US$27,10 | US$28,65 | OK |
 | EV/FCFF | Base | US$38,58 | US$41,07 | US$43,01 | US$40,89 | OK |
+| EV/FCFF | Conservador | US$30,23 | US$28,62 | US$27,10 | US$28,65 | OK |
 | EV/FCFF | Optimista | US$43,61 | US$54,48 | US$58,78 | US$52,29 | OK |
-| P/E | Conservador | US$23,27 | US$22,84 | US$22,45 | US$22,85 | OK |
 | P/E | Base | US$30,05 | US$35,74 | US$38,62 | US$34,80 | OK |
+| P/E | Conservador | US$23,27 | US$22,84 | US$22,45 | US$22,85 | OK |
 | P/E | Optimista | US$37,30 | US$47,87 | US$53,18 | US$46,12 | OK |
-| P/FCFE | Conservador | US$27,27 | US$26,56 | US$25,79 | US$26,54 | OK |
 | P/FCFE | Base | US$34,90 | US$43,56 | US$46,50 | US$41,65 | OK |
+| P/FCFE | Conservador | US$27,27 | US$26,56 | US$25,79 | US$26,54 | OK |
 | P/FCFE | Optimista | US$46,79 | US$58,74 | US$64,45 | US$56,66 | OK |
-| P/OCF | Conservador | US$27,80 | US$27,02 | US$26,23 | US$27,02 | OK |
 | P/OCF | Base | US$37,59 | US$40,72 | US$43,32 | US$40,54 | OK |
+| P/OCF | Conservador | US$27,80 | US$27,02 | US$26,23 | US$27,02 | OK |
 | P/OCF | Optimista | US$42,09 | US$52,12 | US$56,99 | US$50,40 | OK |
 
-Múltiplos consolidados hoy: US$24,86 / US$37,10 / US$49,02 · DCF hoy: US$20,40 / US$37,41 / US$50,23 · Ponderado hoy: US$23,08 / US$37,22 / US$49,50 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$37,10 / US$24,86 / US$49,02 · DCF técnico hoy: US$37,41 / US$20,40 / US$50,23 · Ponderado hoy: US$37,22 / US$23,08 / US$49,50 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 

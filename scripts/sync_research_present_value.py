@@ -22,7 +22,10 @@ import argparse
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 SCEN = ("conservador", "base", "optimista")
 H3 = "<h3>DCF y múltiplos descontados al presente</h3>"
@@ -42,6 +45,67 @@ def _old_rows(block: str) -> dict[str, list[str]]:
     for m in re.finditer(r'<th scope="row">([^<]+)</th>((?:<td>[^<]*</td>)+)', block):
         rows[m.group(1).strip()] = re.findall(r"<td>([^<]*)</td>", m.group(2))
     return rows
+
+NOMBRE = {"A": "Base", "B": "Conservadora", "C": "Disrupción", "D": "Optimista"}
+CASOS = (("base", "Base"), ("conservador", "Conservadora"), ("optimista", "Optimista"))
+
+
+def html_escape(t: str) -> str:
+    import html as _h
+    return _h.escape(t, quote=False)
+
+
+def _num_es(v: float, nd: int = 2) -> str:
+    return f"{v:,.{nd}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def tabla_multiplos(dm: dict, vp: dict, rec: dict, fecha: str) -> str:
+    """Múltiplos secundarios (contrato del 1-oct-2026): una fila por método y una columna por caso, Base primero; en cada
+    caso el múltiplo aplicado (×) y el precio relativo por acción traído a hoy. Consolidado y ponderado al final. Solo
+    hay tres casos auxiliares: no se inventa un resultado de Disrupción."""
+    from damodaran_stories import multiplos_aplicados, precios_snapshot
+    ap = multiplos_aplicados(rec)
+    snap = precios_snapshot(rec)
+
+    def mult(a):
+        if not a:
+            return "—"
+        if len({round(x, 4) for x in a}) == 1:
+            return _num_es(a[0]) + "×"
+        return "; ".join(f"FY+{i + 1} {_num_es(x)}×" for i, x in enumerate(a))
+    pct = lambda w: f"{round(w * 100):.0f}%" if isinstance(w, (int, float)) else "—"  # noqa: E731
+    money = lambda v: _num_es(v) if isinstance(v, (int, float)) else "—"  # noqa: E731
+    filas, descuadres = "", []
+    for m in dm["metodos"]:
+        a = ap.get(m["nombre"]) or {}
+        filas += (f"<tr><td>{m['nombre']}</td>" + "".join(f"<td>{mult(a.get(k))}</td><td>{money(m[k]['consolidado'])}</td>" for k, _ in CASOS)
+                  + f"<td>{pct(m.get('pesoMultiplos', m.get('peso')))}</td></tr>")
+        for k, lab in CASOS:  # control: precios FY+n de la foto de la pestaña frente a los usados por «Descuento de múltiplos»
+            sn, fy = (snap.get(m["nombre"]) or {}).get(k), m[k].get("fy")
+            if sn and fy and any(abs(x - y) > 0.01 and abs(x / y - 1) > 0.005 for x, y in zip(sn, fy) if y):
+                descuadres.append(f"{m['nombre']} {lab}")
+    filas += ("<tr><td>Múltiplos consolidados</td>" + "".join(f"<td>—</td><td>{money(dm['multiplesHoy'][k])}</td>" for k, _ in CASOS)
+              + f"<td>{pct(dm.get('pesoMultiplos'))}</td></tr>")
+    filas += ("<tr><td>Ponderado técnico DCF + múltiplos</td>" + "".join(f"<td>—</td><td>{money(vp.get(k))}</td>" for k, _ in CASOS)
+              + "<td>100%</td></tr>")
+    ke = _num_es(dm["costoPatrimonio"] * 100) + "%"
+    cab = "".join(f"<th>{lab} · múltiplo</th><th>{lab} · US$/acción hoy</th>" for _, lab in CASOS)
+    nota = (f"<p><strong>Control pendiente:</strong> los precios FY+n de la foto de las pestañas no coinciden con los usados por "
+            f"«Descuento de múltiplos» en {', '.join(descuadres)}. La tabla reproduce los valores presentes guardados; hay que "
+            "conciliar ambas fuentes antes de cerrar la auditoría de múltiplos. El DCF Base no cambia.</p>" if descuadres else "")
+    return (f"<p>Base primero. Estos tres casos son supuestos auxiliares de precio relativo de la hoja; no equivalen a las "
+            "cuatro historias DCF y no existe un resultado de Disrupción para estos métodos. En cada caso, el múltiplo aplicado "
+            "(en veces) al cierre de FY+1, FY+2 y FY+3 y el precio por acción de hoy: el promedio de los valores presentes de "
+            f"esos tres horizontes, con los dividendos acumulados, descontados con un costo del patrimonio de {ke} "
+            f"(valoración del {fecha}). El peso es el del método dentro de los múltiplos.</p>"
+            f'<div style="overflow-x:auto"><table><thead><tr><th>Método</th>{cab}<th>Peso</th></tr></thead><tbody>{filas}'
+            "</tbody></table></div>"
+            f"<p>El consolidado promedia los métodos con sus pesos; el ponderado técnico asigna {pct(dm.get('pesoDcf'))} al antiguo "
+            f"DCF técnico de la hoja y {pct(dm.get('pesoMultiplos'))} a los múltiplos. Esa mezcla no incorpora los cuatro DCF "
+            "activos y no es el valor intrínseco principal. Los múltiplos son precio relativo: si el mercado entero está caro, "
+            "también lo estará el múltiplo; EV/EBITDA omite la reinversión y P/E depende del tratamiento de I+D y de la "
+            "compensación en acciones. Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada, peers "
+            "ajustados y múltiplo justificado).</p>" + nota)
 
 
 def new_block(lv: dict) -> str:
@@ -97,16 +161,22 @@ def current_block(ticker: str, lv: dict, rec: dict) -> str:
     vex = lv.get("valorEsperado") or rec.get("valorEsperado") or {}
     unificado = bool(vex.get("escenariosUnificados") and vex.get("historias"))
     if unificado:
-        # Contrato del 30-sep-2026: las historias A-D son los escenarios DCF activos; el esperado es la cifra principal.
+        # Contrato del 30-sep-2026 con la jerarquía del 1-oct-2026: el DCF Base es el valor intrínseco principal y va
+        # primero; el DCF esperado por probabilidades es un complemento (el MOS se sigue aplicando sobre el esperado).
         hs = vex["historias"]
         a = next((h for h in hs if h.get("id") == vex.get("historiaCentralId", "A")), hs[0])
         rg = vex.get("rango") or {}
-        mos_txt = f" Precio con MOS {round(mos * 100)}%: {money(vex['valor'] * (1 - mos))}." if isinstance(mos, (int, float)) else ""
-        formula = " + ".join(f"{h.get('id')} {round(h['probabilidad'] * 100)}% × {h['valor']:.6f}".replace(".", ",") for h in hs)
-        t1 = (f"<p><strong>Valor esperado hoy: {money(vex['valor'])}. Historia central A: {money(a['valor'])}. Rango: "
-              f"{money(rg.get('min'))}–{es_money(rg.get('max')).replace('US$', '')}.{mos_txt}</strong></p><p>{formula} = "
-              f"{money(vex['valor'])}. Cada historia es un DCF completo; el puente de ingresos, flujos, terminal y patrimonio se "
-              "explica en «De dónde sale el cálculo», sección 12. "
+        mos_txt = (f" MOS {round(mos * 100)}% sobre el esperado: {money(vex['valor'] * (1 - mos))}."
+                   if isinstance(mos, (int, float)) else "")
+        formula = " + ".join(f"{NOMBRE.get(h.get('id'), h.get('id'))} {round(h['probabilidad'] * 100)}% × {h['valor']:.6f}".replace(".", ",")
+                             for h in hs)
+        titulo_a = re.sub(r"^(?:[A-D]|Base)\s*·\s*", "", a.get("nombre") or "")
+        t1 = (f"<p><strong>Valor intrínseco principal · DCF Base hoy: {money(a['valor'])} por acción.</strong>"
+              + (f" Tesis Base: {html_escape(titulo_a)}." if titulo_a else "") + "</p>"
+              f"<p>DCF esperado por probabilidades (complemento): {money(vex['valor'])}. Rango de los cuatro escenarios (Base, "
+              f"Conservadora, Disrupción y Optimista): {money(rg.get('min'))}–{es_money(rg.get('max')).replace('US$', '')}.{mos_txt}</p>"
+              f"<p>{formula} = {money(vex['valor'])}. Cada historia es un DCF completo; el puente de ingresos, flujos, terminal y "
+              "patrimonio se explica en «De dónde sale el cálculo», sección 12. "
               f'<a href="#{ticker.lower()}-origen-calculo">Ir a la explicación</a>.</p>')
     fy3 = {m["nombre"]: m for m in lv.get("metodos") or []}
     rows2 = ""
@@ -126,25 +196,26 @@ def current_block(ticker: str, lv: dict, rec: dict) -> str:
           f'<th>Opt.</th><th>Cons.</th><th>Base</th><th>Opt.</th></tr></thead><tbody>{rows2}</tbody></table></div>')
     ke = f"{dm['costoPatrimonio'] * 100:.2f}%".replace(".", ",")
     saved = (rec.get("savedAt") or lv.get("fecha") or "")[:10]
+    if unificado:
+        t2 = tabla_multiplos(dm, vp, rec, saved)
     link = f"https://github.com/JuanMaRobledo/Modelo-JMR-datos/blob/main/{lv.get('sourcePath', '')}"
     return (f'{START}\n<section class="jmr-valuation-current" style="margin:1.5rem 0;padding:1.25rem;border:1px solid #dfd2b6;'
             f'border-radius:14px;background:#fffaf0;color:#24332d">\n<h2>Valoración vigente · {ticker}</h2>\n'
             f'<p>Resultados de la valoración guardada el {saved}. Los importes son por acción. <a href="{link}">Consultar datos y '
-            'supuestos</a>.</p>\n' + ('<h3>Valor intrínseco: cuatro historias DCF</h3>' + t1 if unificado else
+            'supuestos</a>.</p>\n' + ('<h3>Valor intrínseco: DCF Base y cuatro escenarios</h3>' + t1 if unificado else
             '<h3>Valor intrínseco: DCF</h3>\n' + t1 +
             '\n<p>Con criterio Damodaran, el valor intrínseco es el DCF: lo que vale la acción según sus flujos de caja, '
             'crecimiento, reinversión y riesgo. El DCF ya está a valor presente; llevado a FY+3 se capitaliza con el costo del '
             f'patrimonio ({ke}).' + (' El DCF Base valora la historia central; el valor esperado promedia las historias de la sección '
             '«Valor con criterio Damodaran», cada una un DCF completo, según su probabilidad. El margen de seguridad se aplica sobre '
             'el valor esperado, que ya incorpora lo que puede salir mal.' if isinstance(ve, (int, float)) else '') +
-            '</p>') + '\n<h3>Lecturas secundarias: múltiplos y ponderado</h3>\n' + t2 +
+            '</p>') + ('\n<h3>Múltiplos secundarios · cifras organizadas por método</h3>\n' + t2 if unificado else
+            '\n<h3>Lecturas secundarias: múltiplos y ponderado</h3>\n' + t2 +
             '\n<p>Los múltiplos son precio relativo: lo que pagaría el mercado por empresas parecidas. Cada uno da un precio al '
             'cierre de FY+1, FY+2 y FY+3, más los dividendos acumulados, traído a hoy con el costo del patrimonio; se consolidan '
-            'con los pesos del tipo de empresa. ' + (
-                f'Esta mezcla conserva la calibración técnica C/B/O anterior (DCF Base {money(dcf["base"])}); no mezcla las cuatro '
-                'historias A–D. Es una referencia auxiliar y no reemplaza al valor intrínseco esperado.' if unificado else
-                'El ponderado mezcla el DCF con los múltiplos y es opcional: sirve como contraste, no reemplaza al DCF.') +
-            '</p>\n<p><strong>Contexto del informe:</strong> el análisis fundamental que sigue conserva sus '
+            'con los pesos del tipo de empresa. El ponderado mezcla el DCF con los múltiplos y es opcional: sirve como contraste, '
+            'no reemplaza al DCF.</p>') +
+            '\n<p><strong>Contexto del informe:</strong> el análisis fundamental que sigue conserva sus '
             'fuentes, fecha y cálculos originales. Las tablas anteriores contienen las cifras vigentes; las referencias fechadas a '
             'versiones anteriores del modelo en el estudio de negocio son antecedentes históricos.</p>\n</section>\n' + END)
 
@@ -152,6 +223,12 @@ def current_block(ticker: str, lv: dict, rec: dict) -> str:
 def lectura(lv: dict) -> str:
     dm = lv["descuentoMultiples"]
     d, mh, vp = dm["dcfHoy"], dm["multiplesHoy"], lv.get("valorPresentePonderado") or {}
+    ve = lv.get("valorEsperado") or {}
+    if ve.get("escenariosUnificados") and ve.get("valorCentral") is not None:
+        return (f"{LECTURA} el valor intrínseco principal es el DCF Base, {es_money(ve['valorCentral'])} por acción. El DCF "
+                f"esperado por probabilidades ({es_money(ve['valor'])}) es complementario y sobre él se aplica el MOS. Los "
+                f"múltiplos ({es_money(mh['base'])} hoy, caso Base) y el ponderado técnico ({es_money(vp.get('base'))}) son "
+                "lecturas secundarias. La comparación con el precio va al final de la sección «Valor con criterio Damodaran».</p>")
     return (f"{LECTURA} el valor intrínseco Base (DCF) hoy es {es_money(d['base'])}, con un rango de {es_money(d['conservador'])} "
             f"(Conservador) a {es_money(d['optimista'])} (Optimista). Los múltiplos ({es_money(mh['base'])} hoy) y el ponderado "
             f"({es_money(vp.get('base'))}) son lecturas secundarias. La comparación con el precio va al final de la sección "

@@ -7,9 +7,11 @@ analysis_date: "2026-09-30"
 # PayPal Holdings, Inc. (PYPL) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$94,81; la historia central A vale US$109,82 y el rango es US$48,28–138,01. El MOS 35% se aplica al esperado: US$61,63. El antiguo caso Base de la hoja (US$105,61) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+**Valor intrínseco principal · DCF Base hoy: US$109,82 por acción** (Base · Se estabiliza con márgenes estables).
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, roic terminal (criterio damodaran) (22 celdas, con respaldo). Valor esperado US$91,54 → US$94,81. Salvedades abiertas: La API XBRL de la SEC solo publica hasta mar-2026 para PayPal: se conservaron los flujos LTM a jun-2026 de la hoja. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Complemento · DCF esperado por probabilidades: US$94,81.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$48,28–138,01. El MOS 35% se aplica al esperado: US$61,63. El antiguo caso técnico de la hoja (US$105,61) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, roic terminal (criterio damodaran) (22 celdas, con respaldo). DCF esperado US$91,54 → US$94,81. Salvedades abiertas: La API XBRL de la SEC solo publica hasta mar-2026 para PayPal: se conservaron los flujos LTM a jun-2026 de la hoja. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$105,61 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
@@ -32,12 +34,52 @@ Con ventas LTM de US$34.128 millones (US$24.147 millones en dólares de 2015, de
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · Se estabiliza con márgenes estables | 4,9% | 54% |
-| B · El botón PayPal pierde frente a las billeteras nativas | 1,6% | 73% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | -1,1% | 83% |
-| D · Reactivación: Fastlane, Venmo y publicidad | 6,8% | 40% |
+| Base · Se estabiliza con márgenes estables | 4,9% | 54% |
+| Conservadora · El botón PayPal pierde frente a las billeteras nativas | 1,6% | 73% |
+| Disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio | −1,1% | 83% |
+| Optimista · Reactivación: Fastlane, Venmo y publicidad | 6,8% | 40% |
 
-En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 4,9% anual cinco años (historia A) lo logró ~54% de las empresas de ese tamaño; 6,8% (historia D), ~40%. La hoja (~3,6%) es modesta. El valor de PayPal depende de la mezcla (cuánto margen de checkout de marca conserva), no del crecimiento total.
+En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 4,9% anual cinco años (Base) lo logró ~54% de las empresas de ese tamaño; 6,8% (Optimista), ~40%. La hoja (~3,6%) es modesta. El valor de PayPal depende de la mezcla (cuánto margen de checkout de marca conserva), no del crecimiento total.
+
+
+### Justificación de los supuestos
+
+Cada párrafo explica un supuesto material de la tesis Base —el valor intrínseco principal—: qué cifra se usa y con qué trayectoria, qué evidencia la respalda (fuente y fecha), el mecanismo económico, por qué se eligió frente a las alternativas, cómo cambia entre escenarios, qué observación obligaría a cambiarla y cuánto mueve el valor. Las sensibilidades son DCF completos de la Base con un solo supuesto cambiado. Donde falta soporte, el supuesto se declara provisional: un valor heredado de la hoja no queda validado por reproducirse aritméticamente.
+
+**Crecimiento de ingresos.** La Base supone 4,5% el año 1 y 4,9% el año 5: la trayectoria acelera y equivale a 4,9% anual compuesto en cinco años; después converge al terminal en los años 6–10. Los demás escenarios: Conservadora 1,6%; Disrupción −1,1%; Optimista 6,8% de crecimiento compuesto. Evidencia (PayPal, resultados del 4T y año 2025; datos contrastados con la SEC el 1-oct-2026): Ingresos de US$29.771 millones (2023, +8,2%), US$31.797 millones (2024, +6,8%) y US$33.172 millones (2025, +4,3%); LTM US$34.128 millones. El 89,8% de los ingresos de 2025 fueron transacciones y el 10,2% otros servicios de valor agregado. Mecanismo de la Base: es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. Por qué esta cifra: la visión externa (The Base Rate Book) indica que ~54% de las empresas de su tamaño lograron ese crecimiento, frente a ~40% para el de la Optimista; la Base no extrapola el mejor resultado reciente ni supone la caída de la Disrupción. Los porcentajes son juicio del analista, no guía de la empresa. Obligaría a revisarlo este indicador: Checkout de marca (TPV sin divisas), ≤ 0% (hoy: ~+2%). Sensibilidad: restar o sumar 2 pp al crecimiento de cada año 1–5 lleva el DCF Base de US$109,82 a US$99,53 (−9%) y US$121,26 (+10%), respectivamente.
+
+**Margen operativo.** La Base usa un margen operativo objetivo de 19,2% en base ajustada (I+D capitalizado y arrendamientos como deuda, según la hoja) (19,0% en base reportada + 0,15 pp por el ajuste de arrendamientos), desde 17,4% en el año 1 y con convergencia en el año 6. Escenarios: Conservadora 16,2%; Disrupción 13,2%; Optimista 22,2%. Evidencia (datos contrastados con la SEC el 1-oct-2026): El margen operativo fue 16,7-18,3% y la hoja supone ~17,3% el próximo año y 19,5% de objetivo. La mezcla manda: cada punto que el checkout de marca pierde frente a Braintree baja el margen, porque Braintree cobra mucho menos por transacción. Mecanismo y elección: el objetivo de la Base refleja la economía de su tesis (escala, mezcla y precio frente a los costos que exige crecer); la Conservadora y la Disrupción lo bajan porque defender ingresos cuesta precio o gasto, y la Optimista solo lo sube si la monetización supera esos costos. No es una promesa de la empresa. Obligaría a revisarlo este indicador: Margen de transacción (US$), en caída (hoy: Creciendo). Sensibilidad: restar o sumar 2 pp al margen operativo objetivo lleva el DCF Base de US$109,82 a US$99,31 (−10%) y US$120,34 (+10%), respectivamente.
+
+**Reinversión y ventas/capital.** La Base reinvierte con un ventas/capital de 2,48x en los años 1–5 y 2,48x en los años 6–10: cada dólar de ventas nuevas exige ~US$0,40 y ~US$0,40 de capital, respectivamente. Evidencia: Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. Incluye el capital arrendado (0,02 dólares por dólar de ventas, criterio de Damodaran). Mecanismo: la reinversión es lo que financia el crecimiento; si el retorno del capital nuevo supera el costo de capital, crecer suma valor. Salvedad: es una hipótesis de la hoja, no un dato reportado; falta una serie homogénea de capital invertido incremental (con I+D, adquisiciones y capital de trabajo) que la confirme, así que queda provisional. Obligaría a revisarlo que el capital invertido crezca más rápido que las ventas. Sensibilidad: un ventas/capital 20% menor o mayor en ambas etapas lleva el DCF Base de US$109,82 a US$108,21 (−1%) y US$110,90 (+1,0%), respectivamente.
+
+**Vida útil de I+D.** La hoja capitaliza el I+D (US$3.247 millones en el último año) y lo amortiza en 3 años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda provisional hasta contrastarla con la duración de los beneficios de los productos.
+
+**Costo de capital (WACC).** WACC de 9,20% en los años 1–5, que converge a 9,05% en el año 10: tasa libre de riesgo 4,96%, beta 1,29 y prima de riesgo 4,32% (Damodaran, betas por sector y ERP, enero de 2026). La beta bottom-up de Financial Svcs. (Non-bank & Insurance) reapalancada (0,40) daría un WACC inicial de 6,18%. Se usa la misma tasa en los cuatro escenarios: el riesgo propio del negocio va en los flujos de cada historia, no en una prima arbitraria. La convergencia supone que el riesgo y la estructura financiera se normalizan; no es automática. Obligaría a revisarlo un cambio de la tasa libre de riesgo, de la prima de mercado o de la deuda (incluidos los arrendamientos). Sensibilidad: sumar o restar 1 pp al WACC inicial y terminal lleva el DCF Base de US$109,82 a US$90,26 (−18%) y US$141,75 (+29%), respectivamente.
+
+**Crecimiento terminal.** La Base crece 4,96% a perpetuidad, la tasa libre de riesgo: Damodaran pide que el crecimiento estable no supere el de la economía, y la tasa libre de riesgo es su techo práctico. Disrupción se estabiliza en 0,00% sin recuperarse. El valor terminal explica 61,0% del valor operativo de la Base, así que este supuesto pesa mucho. Obligaría a revisarlo un cambio persistente de la inflación o del crecimiento nominal de largo plazo de su moneda. Sensibilidad: restar o sumar 0,5 pp al crecimiento terminal lleva el DCF Base de US$109,82 a US$104,50 (−5%) y US$116,55 (+6%), respectivamente.
+
+**ROIC terminal.** La Base usa 15,0% después del año 10. Criterio de ventaja competitiva: ventaja que se desvanece (Red de dos lados (comercios y usuarios) y marca en el checkout; evidencia: ROIC 13-25% en 2021-2026). ROIC actual del modelo 20,9%. Con ventaja durable se toma el ROIC de la industria sin superar el actual; si se desvanece, el punto medio hacia el costo de capital; sin ventaja, el costo de capital. Las historias de erosión usan el costo de capital porque una ventaja perdida no deja retornos excedentes. No es un ROIC futuro observado: es la hipótesis de cuánto dura la ventaja. Lo invalidaría: billeteras nativas: las historias Conservadora y Disrupción suman 40%. Sensibilidad: con ROIC terminal igual al costo de capital la Base vale US$88,34 (−20%).
+
+**Acciones y dilución.** Los cuatro escenarios usan 855,5 millones de acciones, sin recompras ni dilución proyectadas; así se comparan sobre la misma base. No demuestra que la compensación en acciones carezca de costo: si es material, debería modelarse como gasto o como más acciones. Supuesto provisional. Sensibilidad: 5% más acciones con el mismo patrimonio llevan la Base a US$104,59 (−5%).
+
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 13,34× (peso 33% dentro de los múltiplos); EV/FCFF 17,61× (peso 17% dentro de los múltiplos); P/E 16,87× (peso 33% dentro de los múltiplos); P/FCFE 16,09× (peso 8% dentro de los múltiplos); P/OCF 13,33× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (10,5%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+
+Sensibilidad del DCF Base (US$109,82; cada fila es un DCF completo con un solo supuesto cambiado):
+
+| Supuesto cambiado | DCF Base | Variación |
+|---|---:|---:|
+| Margen objetivo −2 pp | US$99,31 | −9,6% |
+| Margen objetivo +2 pp | US$120,34 | +9,6% |
+| Crecimiento años 1–5 −2 pp | US$99,53 | −9,4% |
+| Crecimiento años 1–5 +2 pp | US$121,26 | +10,4% |
+| Ventas/capital −20% | US$108,21 | −1,5% |
+| Ventas/capital +20% | US$110,90 | +1,0% |
+| WACC +1 pp | US$90,26 | −17,8% |
+| WACC −1 pp | US$141,75 | +29,1% |
+| Crecimiento terminal −0,5 pp | US$104,50 | −4,9% |
+| Crecimiento terminal +0,5 pp | US$116,55 | +6,1% |
+| ROIC terminal = costo de capital | US$88,34 | −19,6% |
+| Acciones +5% | US$104,59 | −4,8% |
 
 
 ### Piezas del valor
@@ -66,7 +108,7 @@ En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: c
 | Propuesta (sector ajustado por riesgo propio) | 0,97 | 9,2% | 8,1% | US$112,05 |
 
 
-### Calibración técnica anterior C/B/O (referencia auxiliar)
+### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -75,7 +117,7 @@ En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: c
 | Margen año 1 (base ajustada del modelo) | 17,4% | 17,4% | 17,4% |
 | Margen objetivo | 17,4% | 19,7% | 24,0% |
 
-Ventas/capital: 2,5x en años 1–5 y 2,5x en 6–10. WACC: 9,2%. Ke: 10,5%. Impuesto efectivo: 16,4%. Convergencia: 6 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
+Ventas/capital: 2,5x en años 1–5 y 2,5x en 6–10. WACC: 9,2%. Ke: 10,5%. Impuesto efectivo: 16,4%. Convergencia: 6 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
@@ -89,7 +131,7 @@ Fuentes de ventaja: Red de dos lados (comercios y usuarios) y marca en el checko
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor principal de US$94,81 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$105,61 ni mezclando el DCF con múltiplos. La historia central A vale US$109,82; «central» y «esperado» son conceptos distintos.
+El valor intrínseco principal es el DCF Base: US$109,82 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$94,81. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$105,61) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -101,8 +143,8 @@ El valor principal de US$94,81 se obtiene ejecutando cuatro DCF completos de die
 | Impuesto | 16,39% en años 1–5; 25,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
 | Descuento | WACC 9,20% → 9,05% | Tasa libre de riesgo 4,96%, beta 1,29, ERP 4,32%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 2,48x en años 1–5; 2,48x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
-| Crecimiento perpetuo | A/B/D: 4,96%; C: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: parte de su crecimiento del año 5 (-0,5%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
-| ROIC terminal | A/D: 15,00%; B/C: 9,05% (= WACC terminal) | Criterio de ventaja competitiva (ventaja que se desvanece). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 4,96%; Disrupción: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: parte de su crecimiento del año 5 (−0,5%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Optimista: 15,00%; Conservadora/Disrupción: 9,05% (= WACC terminal) | Criterio de ventaja competitiva (ventaja que se desvanece). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
 | Puente al patrimonio | Caja 11.256; deuda 14.062; activos no operativos 4.009; acciones 855,5 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
@@ -110,23 +152,23 @@ El valor principal de US$94,81 se obtiene ejecutando cuatro DCF completos de die
 
 Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
 
-Ejemplo A, año 1: 14.500 × 1,03 + 11.000 × 1,03 + 3.300 × 1,15 + 5.328 × 1,05 = US$35.654,40 millones. Frente a 34.128, el crecimiento consolidado es 4,47%. En los años 2–5 es 4,91%, 5,09%, 4,90%, 4,94%; las ventas del año 5 son US$43.272,80 millones. El 4,9% de la tabla es el crecimiento anual compuesto de los cinco años: (43.272,80 / 34.128)^(1/5) − 1; no se usa como tasa constante.
+Ejemplo Base, año 1: 14.500 × 1,03 + 11.000 × 1,03 + 3.300 × 1,15 + 5.328 × 1,05 = US$35.654,40 millones. Frente a 34.128, el crecimiento consolidado es 4,47%. En los años 2–5 es 4,91%, 5,09%, 4,90%, 4,94%; las ventas del año 5 son US$43.272,80 millones. El 4,9% de la tabla es el crecimiento anual compuesto de los cinco años: (43.272,80 / 34.128)^(1/5) − 1; no se usa como tasa constante.
 
 
 #### 3. Del ingreso al flujo libre y su valor presente
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En A, año 1: NOPAT = 35.654,40 × 17,43% × (1 − 16,39%) = US$5.194,97 millones. La reinversión es US$707,10 millones y el FCFF es US$4.487,86 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En la Base, año 1: NOPAT = 35.654,40 × 17,43% × (1 − 16,39%) = US$5.194,97 millones. La reinversión es US$707,10 millones y el FCFF es US$4.487,86 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
-En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,05%. Reinversión terminal sobre el NOPAT: A, 33,1% (4,96% / 15,00%); B, 54,8% (4,96% / 9,05%); C, 0,0% (0,00% / 9,05%); D, 33,1% (4,96% / 15,00%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,05%. Reinversión terminal sobre el NOPAT: Base, 33,1% (4,96% / 15,00%); Conservadora, 54,8% (4,96% / 9,05%); Disrupción, 0,0% (0,00% / 9,05%); Optimista, 33,1% (4,96% / 15,00%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
 #### 4. Trayectoria anual de cada historia
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**A · Se estabiliza con márgenes estables** — probabilidad 45%; valor terminal 135.947 (VP 56.598); DCF US$109,82 por acción.
+**Base · Se estabiliza con márgenes estables** — probabilidad 45%; valor terminal 135.947 (VP 56.598); DCF US$109,82 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -142,7 +184,7 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 55.102 | 5,0% | 19,2% | 7.915 | 1.104 | 6.810 | 9,0% | 2.835 |
 | Terminal | 57.835 | 5,0% | 19,2% | 8.307 | 2.747 | 5.560 | 9,0% | — |
 
-**B · El botón PayPal pierde frente a las billeteras nativas** — probabilidad 30%; valor terminal 61.571 (VP 25.633); DCF US$66,20 por acción.
+**Conservadora · El botón PayPal pierde frente a las billeteras nativas** — probabilidad 30%; valor terminal 61.571 (VP 25.633); DCF US$66,20 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -158,23 +200,23 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 43.825 | 5,0% | 16,2% | 5.309 | 878 | 4.431 | 9,0% | 1.845 |
 | Terminal | 45.999 | 5,0% | 16,2% | 5.572 | 3.054 | 2.518 | 9,0% | — |
 
-**C · Tesis de disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio** — probabilidad 10%; valor terminal 34.913 (VP 14.535); DCF US$48,28 por acción.
+**Disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio** — probabilidad 10%; valor terminal 34.913 (VP 14.535); DCF US$48,28 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 33.858 | -0,8% | 17,4% | 4.933 | -214 | 5.147 | 9,2% | 4.713 |
-| 2 | 33.328 | -1,6% | 16,0% | 4.459 | -196 | 4.655 | 9,2% | 3.904 |
-| 3 | 32.842 | -1,5% | 15,3% | 4.198 | -128 | 4.326 | 9,2% | 3.322 |
-| 4 | 32.525 | -1,0% | 14,6% | 3.964 | -67 | 4.031 | 9,2% | 2.834 |
-| 5 | 32.360 | -0,5% | 13,9% | 3.751 | -53 | 3.804 | 9,2% | 2.449 |
-| 6 | 32.229 | -0,4% | 13,2% | 3.471 | -40 | 3.510 | 9,2% | 2.070 |
-| 7 | 32.131 | -0,3% | 13,2% | 3.388 | -26 | 3.414 | 9,1% | 1.845 |
-| 8 | 32.065 | -0,2% | 13,2% | 3.308 | -13 | 3.321 | 9,1% | 1.645 |
-| 9 | 32.033 | -0,1% | 13,2% | 3.232 | 0 | 3.232 | 9,1% | 1.467 |
+| 1 | 33.858 | −0,8% | 17,4% | 4.933 | -214 | 5.147 | 9,2% | 4.713 |
+| 2 | 33.328 | −1,6% | 16,0% | 4.459 | -196 | 4.655 | 9,2% | 3.904 |
+| 3 | 32.842 | −1,5% | 15,3% | 4.198 | -128 | 4.326 | 9,2% | 3.322 |
+| 4 | 32.525 | −1,0% | 14,6% | 3.964 | -67 | 4.031 | 9,2% | 2.834 |
+| 5 | 32.360 | −0,5% | 13,9% | 3.751 | -53 | 3.804 | 9,2% | 2.449 |
+| 6 | 32.229 | −0,4% | 13,2% | 3.471 | -40 | 3.510 | 9,2% | 2.070 |
+| 7 | 32.131 | −0,3% | 13,2% | 3.388 | -26 | 3.414 | 9,1% | 1.845 |
+| 8 | 32.065 | −0,2% | 13,2% | 3.308 | -13 | 3.321 | 9,1% | 1.645 |
+| 9 | 32.033 | −0,1% | 13,2% | 3.232 | 0 | 3.232 | 9,1% | 1.467 |
 | 10 | 32.033 | 0,0% | 13,2% | 3.160 | 0 | 3.160 | 9,0% | 1.315 |
 | Terminal | 32.033 | 0,0% | 13,2% | 3.160 | 0 | 3.160 | 9,0% | — |
 
-**D · Reactivación: Fastlane, Venmo y publicidad** — probabilidad 15%; valor terminal 176.748 (VP 73.584); DCF US$138,01 por acción.
+**Optimista · Reactivación: Fastlane, Venmo y publicidad** — probabilidad 15%; valor terminal 176.748 (VP 73.584); DCF US$138,01 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -197,31 +239,31 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| A | 36.153,99 | 56.597,94 | 92.751,93 | 93.955,07 | 109,82 |
-| B | 29.795,73 | 25.633,34 | 55.429,08 | 56.632,21 | 66,20 |
-| C | 25.564,91 | 14.534,95 | 40.099,86 | 41.302,99 | 48,28 |
-| D | 43.279,44 | 73.584,29 | 116.863,73 | 118.066,87 | 138,01 |
+| Base | 36.153,99 | 56.597,94 | 92.751,93 | 93.955,07 | 109,82 |
+| Conservadora | 29.795,73 | 25.633,34 | 55.429,08 | 56.632,21 | 66,20 |
+| Disrupción | 25.564,91 | 14.534,95 | 40.099,86 | 41.302,99 | 48,28 |
+| Optimista | 43.279,44 | 73.584,29 | 116.863,73 | 118.066,87 | 138,01 |
 
-Ejemplo A: (36.153,99 + 56.597,94 + 11.256 + 4.009 − 14.062) / 855,5 = US$109,82 por acción. El terminal representa 61,0% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (36.153,99 + 56.597,94 + 11.256 + 4.009 − 14.062) / 855,5 = US$109,82 por acción. El terminal representa 61,0% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 6. Valor esperado, probabilidades y margen de seguridad
+#### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 45% / 30% / 10% / 15% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-Valor esperado = 0,45 × 109,824745 + 0,30 × 66,197795 + 0,10 × 48,279360 + 0,15 × 138,009199 = US$94,809790 ≈ US$94,81. Los aportes son US$49,42 + US$19,86 + US$4,83 + US$20,70 por acción.
+DCF esperado = 0,45 × 109,824745 + 0,30 × 66,197795 + 0,10 × 48,279360 + 0,15 × 138,009199 = US$94,809790 ≈ US$94,81. Los aportes son US$49,42 + US$19,86 + US$4,83 + US$20,70 por acción.
 
-Precio con MOS = valor esperado × (1 − 35%) = 94,809790 × 0,65 = US$61,626363 ≈ US$61,63. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+Precio con MOS = DCF esperado × (1 − 35%) = 94,809790 × 0,65 = US$61,626363 ≈ US$61,63. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
-Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
-
-
-### Las cuatro tesis: base, conservadora, disrupción y optimista
-
-Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$109,82; el valor esperado de US$94,81 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
-#### A · Tesis base: Se estabiliza con márgenes estables
+### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
+
+La tesis Base es la trayectoria central defendida y su DCF, US$109,82, es el valor intrínseco principal. El DCF esperado de US$94,81 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### Base: Se estabiliza con márgenes estables
 
 **Qué plantea.** Es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%.
 
@@ -230,7 +272,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (checkout de marca (TPV sin divisas): ~+2%; margen de transacción (US$): Creciendo; ingresos de Venmo: Doble dígito). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
 
-#### B · Tesis conservadora: El botón PayPal pierde frente a las billeteras nativas
+#### Conservadora: El botón PayPal pierde frente a las billeteras nativas
 
 **Qué plantea.** Es la pérdida continua del checkout de marca.
 
@@ -239,16 +281,16 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 **Cómo contrastarla.** La apoyarían: checkout de marca (TPV sin divisas): ≤ 0%; margen de transacción (US$): en caída; ingresos de Venmo: < +8%; margen operativo: ≤ 16%.
 
 
-#### C · Tesis de disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio
+#### Disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio
 
 **Qué plantea.** Es PayPal convertido en procesador de bajo margen.
 
-**Traducción al modelo.** Checkout de marca crece -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree) crece 0%, 0%, 0%, 0%, 0%; Venmo y P2P crece 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es -1,1%; el margen operativo objetivo es 13,2%. El ROIC terminal es el costo de capital (9,05%). El crecimiento terminal es 0,00%: los años 6–10 pasan de -0,5% a ese nivel, sin recuperación. Probabilidad: 10%; DCF: US$48,28 por acción.
+**Traducción al modelo.** Checkout de marca crece -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree) crece 0%, 0%, 0%, 0%, 0%; Venmo y P2P crece 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es −1,1%; el margen operativo objetivo es 13,2%. El ROIC terminal es el costo de capital (9,05%). El crecimiento terminal es 0,00%: los años 6–10 pasan de −0,5% a ese nivel, sin recuperación. Probabilidad: 10%; DCF: US$48,28 por acción.
 
-**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: checkout de marca (TPV sin divisas): ≤ 0%; margen de transacción (US$): en caída; ingresos de Venmo: < +8%; margen operativo: ≤ 16%.
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: checkout de marca (TPV sin divisas): ≤ 0%; margen de transacción (US$): en caída; ingresos de Venmo: < +8%; margen operativo: ≤ 16%.
 
 
-#### D · Tesis optimista: Reactivación: Fastlane, Venmo y publicidad
+#### Optimista: Reactivación: Fastlane, Venmo y publicidad
 
 **Qué plantea.** Es una reactivación (Fastlane, Venmo en comercios, publicidad).
 
@@ -256,20 +298,20 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Cómo contrastarla.** La confirmarían: checkout de marca (TPV sin divisas): ≥ +5%; margen de transacción (US$): ≥ +4%; ingresos de Venmo: ≥ +15%; margen operativo: ≥ 19%.
 
-**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,96%; C: 0,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 4,96%; Disrupción: 0,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
 
-### Historias cuantificadas y valor esperado
+### Historias cuantificadas: DCF Base y DCF esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 1,29) | Valor/acción (beta 0,97) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|---:|
-| **A · Se estabiliza con márgenes estables** | 45% | Checkout de marca: 3%, 3%, 4%, 4%, 4%; Procesamiento no de marca (Braintree): 3%, 4%, 4%, 4%, 4%; Venmo y P2P: 15%, 15%, 12%, 10%, 10%; Otros servicios de valor agregado: 5%, 5%, 5%, 5%, 5% | 4,9% | 19,2% | 2,5 | 15,0% | 4,96% | US$109,82 | US$116,59 |
-| **B · El botón PayPal pierde frente a las billeteras nativas** | 30% | Checkout de marca: 0%, -1%, -2%, -2%, -2%; Procesamiento no de marca (Braintree): 3%, 3%, 3%, 3%, 3%; Venmo y P2P: 10%, 8%, 8%, 6%, 6%; Otros servicios de valor agregado: 2%, 2%, 2%, 2%, 2% | 1,6% | 16,2% | 2,5 | = costo de capital | 4,96% | US$66,20 | US$69,86 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio** | 10% | Checkout de marca: -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree): 0%, 0%, 0%, 0%, 0%; Venmo y P2P: 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado: 0%, 0%, 0%, 0%, 0% | -1,1% | 13,2% | 2,5 | = costo de capital | 0,00% | US$48,28 | US$50,71 |
-| **D · Reactivación: Fastlane, Venmo y publicidad** | 15% | Checkout de marca: 6%, 6%, 6%, 5%, 5%; Procesamiento no de marca (Braintree): 5%, 5%, 5%, 5%, 5%; Venmo y P2P: 20%, 18%, 15%, 12%, 10%; Otros servicios de valor agregado: 8%, 8%, 8%, 8%, 8% | 6,8% | 22,2% | 2,5 | 15,0% | 4,96% | US$138,01 | US$146,71 |
-| **Valor esperado** | 100% |  |  |  |  |  |  | **US$94,81** | **US$100,50** |
+| **Base · Se estabiliza con márgenes estables** | 45% | Checkout de marca: 3%, 3%, 4%, 4%, 4%; Procesamiento no de marca (Braintree): 3%, 4%, 4%, 4%, 4%; Venmo y P2P: 15%, 15%, 12%, 10%, 10%; Otros servicios de valor agregado: 5%, 5%, 5%, 5%, 5% | 4,9% | 19,2% | 2,5 | 15,0% | 4,96% | US$109,82 | US$116,59 |
+| **Conservadora · El botón PayPal pierde frente a las billeteras nativas** | 30% | Checkout de marca: 0%, -1%, -2%, -2%, -2%; Procesamiento no de marca (Braintree): 3%, 3%, 3%, 3%, 3%; Venmo y P2P: 10%, 8%, 8%, 6%, 6%; Otros servicios de valor agregado: 2%, 2%, 2%, 2%, 2% | 1,6% | 16,2% | 2,5 | = costo de capital | 4,96% | US$66,20 | US$69,86 |
+| **Disrupción · Deterioro de los fundamentales: Pierde el checkout y compite por precio** | 10% | Checkout de marca: -3%, -5%, -5%, -4%, -3%; Procesamiento no de marca (Braintree): 0%, 0%, 0%, 0%, 0%; Venmo y P2P: 5%, 5%, 5%, 5%, 5%; Otros servicios de valor agregado: 0%, 0%, 0%, 0%, 0% | −1,1% | 13,2% | 2,5 | = costo de capital | 0,00% | US$48,28 | US$50,71 |
+| **Optimista · Reactivación: Fastlane, Venmo y publicidad** | 15% | Checkout de marca: 6%, 6%, 6%, 5%, 5%; Procesamiento no de marca (Braintree): 5%, 5%, 5%, 5%, 5%; Venmo y P2P: 20%, 18%, 15%, 12%, 10%; Otros servicios de valor agregado: 8%, 8%, 8%, 8%, 8% | 6,8% | 22,2% | 2,5 | 15,0% | 4,96% | US$138,01 | US$146,71 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$94,81** | **US$100,50** |
 
-A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (10%) es PayPal convertido en procesador de bajo margen. D (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+Base (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. Conservadora (30%) es la pérdida continua del checkout de marca. Disrupción (10%) es PayPal convertido en procesador de bajo margen. Optimista (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
 Sensibilidad del DCF técnico anterior (beta 1,29; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
@@ -277,7 +319,7 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 
 | Crecimiento \ Margen | 15,7% | 17,7% | 19,7% | 21,7% | 23,7% |
 |---|---:|---:|---:|---:|---:|
-| -0,4% | 71,73 | 79,26 | 86,80 | 94,34 | 101,88 |
+| −0,4% | 71,73 | 79,26 | 86,80 | 94,34 | 101,88 |
 | 1,6% | 78,59 | 87,15 | 95,72 | 104,28 | 112,85 |
 | 3,6% | 86,21 | 95,92 | 105,63 | 115,35 | 125,06 |
 | 5,6% | 94,65 | 105,65 | 116,65 | 127,65 | 138,64 |
@@ -292,7 +334,7 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 4. Pérdidas de crédito en «compra ahora y paga después» en una recesión.
 5. Regulación (tarifas, competencia de billeteras) limita la monetización de Venmo.
 
-**Evidencia en contra de la historia más probable:** el checkout de marca crece ~2% y pierde tasa de captura desde hace varios años; sin evidencia de reactivación, B pesa casi tanto como A.
+**Evidencia en contra de la historia más probable:** el checkout de marca crece ~2% y pierde tasa de captura desde hace varios años; sin evidencia de reactivación, Conservadora pesa casi tanto como Base.
 
 
 ### Indicadores y actualización de probabilidades
@@ -316,10 +358,12 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 15% | Margen 18% | Margen 20% |
 |---|---:|---:|---:|
-| Beta 1,29 | -6,9% (95% de las empresas) | -9,3% (96% de las empresas) | ninguno entre −10% y 60% |
-| Beta 0,97 | -8,0% (96% de las empresas) | ninguno entre −10% y 60% | ninguno entre −10% y 60% |
+| Beta 1,29 | −6,9% (95% de las empresas) | −9,3% (96% de las empresas) | ninguno entre −10% y 60% |
+| Beta 0,97 | −8,0% (96% de las empresas) | ninguno entre −10% y 60% | ninguno entre −10% y 60% |
 
-Frente al valor esperado de las historias (US$94,81 con la beta de la hoja; US$100,50 con la propuesta), el precio está por debajo en 44% y por debajo en 48%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF Base (US$109,82), el valor intrínseco principal, el precio está por debajo en 52%.
+
+Frente al DCF esperado de las historias (US$94,81 con la beta de la hoja; US$100,50 con la propuesta), el precio está por debajo en 44% y por debajo en 48%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -328,10 +372,10 @@ Frente al valor esperado de las historias (US$94,81 con la beta de la hoja; US$1
 |---|---|---|
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Red de pagos rentable cuyo botón de marca pierde frente a las billeteras nativas |  |
-| Probabilidades | A 45% / B 30% / C 10% / D 15% |  |
-| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$94,81 / US$100,50 |  |
-| DCF base hoy (historia A) | US$109,82 |  |
-| Precio con MOS sobre el valor esperado | US$61,63 (MOS 35%) |  |
+| Probabilidades | Base 45% / Conservadora 30% / Disrupción 10% / Optimista 15% |  |
+| DCF Base hoy (valor intrínseco principal) | US$109,82 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$94,81 / US$100,50 |  |
+| Precio con MOS sobre el DCF esperado | US$61,63 (MOS 35%) |  |
 | Rango (historia más débil a más fuerte) | US$48,28 a US$146,71 |  |
 | Confianza | Media: finanzas sólidas; la mezcla de ingresos es la incógnita |  |
 | Qué cambiaría la opinión | Crecimiento del checkout de marca y margen de transacción |  |

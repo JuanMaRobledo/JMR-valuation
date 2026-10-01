@@ -2,10 +2,10 @@
 contra el resultado calculado (<T>_resultado.json) y el criterio de ventaja competitiva (moat_2026-09-30.json).
 
 Cifras que se regeneran desde el cálculo, para que el texto no quede desactualizado cuando cambia el modelo:
-  - tasas base: la frase «crecer X% anual (historia L) lo logró ~Y%» y el tramo de tamaño (dólares de 2015);
+  - tasas base: la frase «crecer X% anual (Base) lo logró ~Y%» y el tramo de tamaño (dólares de 2015);
   - riesgo: «el DCF Base sube/baja de US$a a US$b» (DCF con la beta de la hoja y con la bottom-up o la propuesta);
   - reinversión: «El ROIC después del año 10 es X%»;
-  - probabilidades «L (NN%)» del texto de probabilidades.
+  - probabilidades «Base (NN%)» del texto de probabilidades.
 Informa además los importes en US$ de los demás textos que no coinciden con ningún valor calculado.
 
 Uso: python scripts/verify_story_texts.py [--fix] TICKER ...
@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from damodaran_stories import REF, _ROOT, es  # noqa: E402
+from damodaran_stories import NOMBRE, REF, _ROOT, es  # noqa: E402
 
 MOAT = json.loads((_ROOT / "reference" / "moat_2026-09-30.json").read_text())["empresas"]
 
@@ -35,12 +35,13 @@ def frase_tasas(r: dict) -> str:
     br, hs = r["tasas_base"], {h["id"]: h for h in r["historias"]}
     a, d = hs["A"], hs["D"]
     return (f"En dólares de 2015 la empresa está en el tramo {tramo_es(br['tramo'])}: crecer {es(a['cagr'] * 100, 1)}% anual "
-            f"cinco años (historia A) lo logró ~{es(a['tasa_base'] * 100, 0)}% de las empresas de ese tamaño; "
-            f"{es(d['cagr'] * 100, 1)}% (historia D), ~{es(d['tasa_base'] * 100, 0)}%.")
+            f"cinco años (Base) lo logró ~{es(a['tasa_base'] * 100, 0)}% de las empresas de ese tamaño; "
+            f"{es(d['cagr'] * 100, 1)}% (Optimista), ~{es(d['tasa_base'] * 100, 0)}%.")
 
 
 _X = r"(?:[^.]|(?<=\d)\.(?=\d))"  # cualquier carácter salvo el punto final de una oración (admite «US$4.500»)
-ORACION_TASAS = re.compile(rf"(?:Para|Entre las) empresas de {_X}*?(?:\(historia [A-D]\)|mediana){_X}*\.(?:\s*Crecer {_X}*\(historia [A-D]\){_X}*\.)?")
+_H = r"\((?:historia )?(?:[A-D]|Base|Conservadora|Disrupción|Optimista)\)"
+ORACION_TASAS = re.compile(rf"(?:Para|Entre las) empresas de {_X}*?(?:{_H}|mediana){_X}*\.(?:\s*Crecer {_X}*{_H}{_X}*\.)?")
 
 
 def fix_tasas(spec, r, fixes):
@@ -60,7 +61,7 @@ def fix_tasas(spec, r, fixes):
             return " " + cola[:1].upper() + cola[1:] + " "
         return " "
     t2, n = ORACION_TASAS.subn(resto, t, count=1)
-    t2 = re.sub(r"^En dólares de 2015 la empresa está en el tramo [^.]*\.[^.]*?\(historia D\), ~\d+%\.\s*", "", t2)
+    t2 = re.sub(r"^En dólares de 2015 la empresa está en el tramo [^.]*\.[^.]*?\((?:historia D|Optimista)\), ~\d+%\.\s*", "", t2)
     spec["tasas_base_nota"] = re.sub(r"\s{2,}", " ", (nueva + " " + t2.strip()).strip())
     fixes.append(("tasas_base_nota", t[:120], spec["tasas_base_nota"][:160]))
 
@@ -100,8 +101,8 @@ def fix_roic(spec, tk, fixes):
 
 
 def check_probs(spec, r, issues):
-    probs = {h["id"]: round(h["prob"] * 100) for h in r["historias"]}
-    for letra, pct in re.findall(r"\b([A-D]) \((\d+)%\)", spec.get("prob_texto", "")):
+    probs = {NOMBRE[h["id"]]: round(h["prob"] * 100) for h in r["historias"]}
+    for letra, pct in re.findall(r"\b(Base|Conservadora|Disrupción|Optimista) (?:es la más probable )?\((\d+)%\)", spec.get("prob_texto", "")):
         if int(pct) != probs.get(letra):
             issues.append(f"prob_texto: {letra} dice {pct}% y la historia tiene {probs.get(letra)}%")
 
@@ -111,7 +112,7 @@ def check_importes(spec, r, issues):
     vals |= {round(h["valor_beta_hoja"], 2) for h in r["historias"]} | {round(h["valor_beta_prop"], 2) for h in r["historias"]}
     vals |= {round(b["dcf_base"], 2) for b in r["betas"]}
     for campo in ("precio_lectura", "contra", "prob_texto"):
-        for m in re.finditer(r"(DCF[^.;]{0,40}?|historia [A-D][^.;]{0,20}?)\(US\$([\d.]+,\d{2})\)", spec.get(campo, "")):
+        for m in re.finditer(r"(DCF[^.;]{0,40}?|historia (?:Base|Conservadora|Disrupción|Optimista)[^.;]{0,20}?)\(US\$([\d.]+,\d{2})\)", spec.get(campo, "")):
             v = float(m.group(2).replace(".", "").replace(",", "."))
             if v not in vals:
                 issues.append(f"{campo}: «{m.group(0)[:70]}» no coincide con ningún valor calculado")

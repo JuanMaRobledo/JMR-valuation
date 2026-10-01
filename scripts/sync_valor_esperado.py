@@ -20,12 +20,14 @@ import sys
 from pathlib import Path
 
 REF = Path(__file__).resolve().parents[1] / "reference" / "damodaran"
-METODO = "Escenarios = historias; cada historia es un DCF completo. Valor principal = suma de DCF × probabilidad."
+METODO = "DCF Base como valor intrínseco principal; DCF esperado = suma de DCF × probabilidad como complemento."
 
 
 def valor_esperado(r: dict) -> dict:
-    """Contrato del 30-sep-2026 (implementado primero en ADBE): las historias A-D son los escenarios DCF activos; el
-    valor principal es el esperado, la historia A es la central y el antiguo Base de la hoja queda como referencia."""
+    """Contrato del 30-sep-2026, con la jerarquía del 1-oct-2026: las cuatro historias (Base, Conservadora, Disrupción y
+    Optimista; claves internas A-D) son los escenarios DCF activos; el DCF Base es el valor intrínseco principal
+    (valorCentral), el esperado por probabilidades es complementario (valor, sobre el que se aplica el MOS) y el antiguo
+    Base de la hoja queda como referencia técnica."""
     hs = r["historias"]
     a = next(h for h in hs if h.get("id") == "A")
     vals = [h["valor_beta_hoja"] for h in hs]
@@ -66,11 +68,11 @@ def valor_esperado(r: dict) -> dict:
 
 def escenarios_dcf(rec: dict) -> dict:
     dh = (rec.get("descuentoMultiples") or {}).get("dcfHoy") or {}
-    return {"version": 1, "fuente": "valorEsperado.historias", "principal": "valorEsperado.valor", "central": "A",
+    return {"version": 1, "fuente": "valorEsperado.historias", "principal": "valorEsperado.valorCentral", "central": "A",
             "fecha": dt.datetime.now(dt.timezone.utc).isoformat(),
             "baseAnterior": {k: dh.get(k) for k in ("conservador", "base", "optimista")},
-            "nota": "Los tres casos de la hoja original se conservan como calibración y supuestos auxiliares de múltiplos; "
-                    "no son los escenarios DCF activos."}
+            "nota": "DCF Base es el valor intrínseco principal. El esperado por probabilidades es complementario. Los tres "
+                    "casos técnicos anteriores son auxiliares de múltiplos."}
 
 
 def main(argv: list[str]) -> int:

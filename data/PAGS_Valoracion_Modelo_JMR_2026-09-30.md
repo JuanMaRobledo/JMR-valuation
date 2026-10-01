@@ -14,23 +14,23 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$11,60.** Historia central A: US$11,89; rango US$9,99–US$12,73; precio con MOS 35% sobre el esperado: US$7,54; precio de referencia US$8,96. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$11,92) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$11,89 por acción.** Complemento: DCF esperado por probabilidades US$11,60; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$9,99–US$12,73; precio con MOS 35% sobre el esperado: US$7,54; precio de referencia US$8,96. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$11,92) y los múltiplos y el ponderado son lecturas secundarias.
 
 
-| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · Banco digital estable con ROAE de ~15% | 45% | US$11,89 | US$5,35 |
-| B · El PIX y la competencia erosionan | 30% | US$11,14 | US$3,34 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: Crisis de crédito en Brasil | 10% | US$9,99 | US$1,00 |
-| D · Crece el banco: crédito y depósitos | 15% | US$12,73 | US$1,91 |
-| **DCF esperado** | 100% | **US$11,60** | |
+| **Base · Banco digital estable con ROAE de ~15%** (valor principal) | 45% | US$11,89 | US$5,35 |
+| Conservadora · El PIX y la competencia erosionan | 30% | US$11,14 | US$3,34 |
+| Disrupción · Deterioro de los fundamentales: Crisis de crédito en Brasil | 10% | US$9,99 | US$1,00 |
+| Optimista · Crece el banco: crédito y depósitos | 15% | US$12,73 | US$1,91 |
+| **DCF esperado (complemento)** | 100% | **US$11,60** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$11,92 por acción y los múltiplos, US$8,36 hoy: 30% por debajo del DCF, fuera del rango de ±25%. La diferencia viene de P/FCFE: en la proyección Base el crédito de PagBank absorbe caja y el FCFE de FY+3 queda muy por debajo de la utilidad. P/E, el método más confiable para una financiera, queda cerca del DCF.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$11,18 | US$6,42 | US$8,33 | US$7,54 | US$12,03 |
 | Base | US$11,92 | US$8,36 | US$9,78 | US$7,54 | US$14,70 |
+| Conservador | US$11,18 | US$6,42 | US$8,33 | US$7,54 | US$12,03 |
 | Optimista | US$12,76 | US$10,01 | US$11,11 | US$7,54 | US$17,48 |
 
 ## 2. Datos
@@ -57,15 +57,15 @@ Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,30, ERP 7,47%, K
 
 A: PagSeguro cotiza a 5-12x utilidades desde 2022; no hay un cambio de etapa. Se usa la mediana de los últimos cierres depurados, sin la columna sin fecha. B: pagos y banca digital (StoneCo, Nu, dLocal, PayPal, Adyen), datos de yfinance al 29-sep-2026. Se excluye en P/E a Shift4 (58x por amortización y deuda) y, en los múltiplos de flujo, StoneCo (su flujo incluye los fondos de clientes: P/FCF de 0,6x). Ajuste −30%: PagSeguro crece ~5% y opera en Brasil con Selic alta (costo de patrimonio de 14,7%), frente a Nu, dLocal y Adyen que crecen 20-50%. λ = 0,25: la PagSeguro de FY+3 del escenario Base es un banco digital de crecimiento moderado, parecida a la de hoy.
 
-| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
+| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
 | EV/EBITDA | No aplica: PagSeguro es una entidad financiera (PagBank): la deuda es materia prima del negocio, no financiación, y el valor empresa no tiene sentido; su peso en la categoría Financiera es 0%. | | | | | | |
 | EV/FCFF | No aplica: Igual que EV/EBITDA: para una financiera el FCFF no se puede separar de la financiación; peso 0%. | | | | | | |
-| P/E | mediana de los últimos 5 cierres + LTM depurados = 7,6x | 16,9x (n=5: STNE 3,5x, NU 16,9x, DLO 20,1x, PYPL 10,2x, ADYEY 24,5x) × 0,70 = 11,8x | 6,9x / 7,9x / 8,8x | 7,1x | **9,2x** | 11,1x | —x / 6,2x / —x |
-| P/FCFE | mediana de los últimos 5 cierres + LTM depurados = 6,5x | 10,1x (n=3: DLO 10,4x, FOUR 10,1x, PYPL 7,0x) × 0,70 = 7,1x | 9,9x / 11,2x / 12,4x | 5,7x | **7,9x** | 9,7x | —x / 2,5x / —x |
-| P/OCF | mediana de los últimos 5 cierres + LTM depurados = 3,1x | 6,2x (n=3: DLO 9,4x, FOUR 4,9x, PYPL 6,2x) × 0,70 = 4,3x | 2,7x / 2,0x / 1,1x | 3,2x | **3,3x** | 3,5x | —x / 1,7x / —x |
+| P/E | mediana de los últimos 5 cierres + LTM depurados = 7,6x | 16,9x (n=5: STNE 3,5x, NU 16,9x, DLO 20,1x, PYPL 10,2x, ADYEY 24,5x) × 0,70 = 11,8x | 7,9x / 6,9x / 8,8x | **9,2x** | 7,1x | 11,1x | 6,2x / —x / —x |
+| P/FCFE | mediana de los últimos 5 cierres + LTM depurados = 6,5x | 10,1x (n=3: DLO 10,4x, FOUR 10,1x, PYPL 7,0x) × 0,70 = 7,1x | 11,2x / 9,9x / 12,4x | **7,9x** | 5,7x | 9,7x | 2,5x / —x / —x |
+| P/OCF | mediana de los últimos 5 cierres + LTM depurados = 3,1x | 6,2x (n=3: DLO 9,4x, FOUR 4,9x, PYPL 6,2x) × 0,70 = 4,3x | 2,0x / 2,7x / 1,1x | **3,3x** | 3,2x | 3,5x | 1,7x / —x / —x |
 
-Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
+Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
 - **P/E.** Base 9,2x: promedio de historia y peers 9,7x, acercado 25% al justificado (7,9x); rango de anclas 7,6x–11,8x. Atípicos excluidos de la historia: Dec '21 (39,7x: > 2,5x la mediana (8.7x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/FCFE.** Base 7,9x: promedio de historia y peers 6,8x, acercado 25% al justificado (11,2x); rango de anclas 6,5x–11,2x. Atípicos excluidos de la historia: Dec '21 (-54,5x: métrica negativa o ~0); Dec '24 (-1,9x: métrica negativa o ~0). Aplicable con cautela: el FCFE proyectado es positivo pero bajo frente a la utilidad porque el crecimiento de la cartera de crédito consume caja. Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
@@ -77,37 +77,37 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$8,36 fre
 
 Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:
 
-| Método | Peso | Conservador | Base | Optimista |
+| Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$16,88 | US$17,99 | US$19,26 |
-| EV/EBITDA | 0% | US$8,96 | US$11,62 | US$14,47 |
-| EV/FCFF | 0% | US$2,64 | US$2,21 | US$1,74 |
-| P/E | 35% | US$11,02 | US$17,63 | US$24,79 |
-| P/FCFE | 20% | US$4,94 | US$4,48 | US$3,19 |
-| P/OCF | 5% | US$8,77 | US$8,84 | US$9,32 |
-| **Ponderado FY+3** | 100% | US$12,03 | US$14,70 | US$17,48 |
+| DCF Damodaran | 40% | US$17,99 | US$16,88 | US$19,26 |
+| EV/EBITDA | 0% | US$11,62 | US$8,96 | US$14,47 |
+| EV/FCFF | 0% | US$2,21 | US$2,64 | US$1,74 |
+| P/E | 35% | US$17,63 | US$11,02 | US$24,79 |
+| P/FCFE | 20% | US$4,48 | US$4,94 | US$3,19 |
+| P/OCF | 5% | US$8,84 | US$8,77 | US$9,32 |
+| **Ponderado FY+3** | 100% | US$14,70 | US$12,03 | US$17,48 |
 
 Valor presente (Ke 14,70%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$7,07 | US$6,44 | US$5,93 | US$6,48 | OK |
 | EV/EBITDA | Base | US$8,04 | US$7,95 | US$7,70 | US$7,90 | OK |
+| EV/EBITDA | Conservador | US$7,07 | US$6,44 | US$5,93 | US$6,48 | OK |
 | EV/EBITDA | Optimista | US$9,13 | US$9,55 | US$9,59 | US$9,42 | OK |
-| EV/FCFF | Conservador | US$1,69 | US$1,71 | US$1,75 | US$1,72 | OK |
 | EV/FCFF | Base | US$1,09 | US$1,23 | US$1,46 | US$1,26 | OK |
+| EV/FCFF | Conservador | US$1,69 | US$1,71 | US$1,75 | US$1,72 | OK |
 | EV/FCFF | Optimista | US$0,07 | US$0,76 | US$1,15 | US$0,66 | OK |
-| P/E | Conservador | US$8,98 | US$8,01 | US$7,30 | US$8,10 | OK |
 | P/E | Base | US$11,95 | US$11,98 | US$11,68 | US$11,87 | OK |
+| P/E | Conservador | US$8,98 | US$8,01 | US$7,30 | US$8,10 | OK |
 | P/E | Optimista | US$14,83 | US$16,09 | US$16,42 | US$15,78 | OK |
-| P/FCFE | Conservador | US$3,82 | US$3,47 | US$3,28 | US$3,52 | OK |
 | P/FCFE | Base | US$2,80 | US$2,65 | US$2,97 | US$2,81 | OK |
+| P/FCFE | Conservador | US$3,82 | US$3,47 | US$3,28 | US$3,52 | OK |
 | P/FCFE | Optimista | US$-0,47 | US$1,23 | US$2,11 | US$0,96 | OK |
-| P/OCF | Conservador | US$6,76 | US$6,24 | US$5,81 | US$6,27 | OK |
 | P/OCF | Base | US$6,12 | US$5,91 | US$5,86 | US$5,96 | OK |
+| P/OCF | Conservador | US$6,76 | US$6,24 | US$5,81 | US$6,27 | OK |
 | P/OCF | Optimista | US$5,34 | US$5,93 | US$6,17 | US$5,81 | OK |
 
-Múltiplos consolidados hoy: US$6,42 / US$8,36 / US$10,01 · DCF hoy: US$11,18 / US$11,92 / US$12,76 · Ponderado hoy: US$8,33 / US$9,78 / US$11,11 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$8,36 / US$6,42 / US$10,01 · DCF técnico hoy: US$11,92 / US$11,18 / US$12,76 · Ponderado hoy: US$9,78 / US$8,33 / US$11,11 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 

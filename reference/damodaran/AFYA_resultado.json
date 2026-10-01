@@ -89,7 +89,7 @@
  },
  "historias": [
   {
-   "nombre": "A · La escasez de plazas sostiene precio y margen",
+   "nombre": "Base · La escasez de plazas sostiene precio y margen",
    "prob": 0.45,
    "margen": 0.33,
    "crec": {
@@ -262,11 +262,13 @@
     "wacc0": 0.11219548370722277,
     "margenY1": 0.315
    },
+   "valor_bruto": 26.057491728949326,
+   "valor_bruto_prop": 26.33299861194464,
    "valor_beta_hoja": 26.057491728949326,
    "valor_beta_prop": 26.33299861194464
   },
   {
-   "nombre": "B · Madurez: precio real plano",
+   "nombre": "Conservadora · Madurez: precio real plano",
    "prob": 0.3,
    "margen": 0.3,
    "crec": {
@@ -439,11 +441,13 @@
     "wacc0": 0.11219548370722277,
     "margenY1": 0.315
    },
+   "valor_bruto": 20.668154008066924,
+   "valor_bruto_prop": 20.88873519193735,
    "valor_beta_hoja": 20.668154008066924,
    "valor_beta_prop": 20.88873519193735
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "margen": 0.26,
    "crec": {
@@ -619,11 +623,13 @@
     "wacc0": 0.11219548370722277,
     "margenY1": 0.315
    },
+   "valor_bruto": 12.548065357577574,
+   "valor_bruto_prop": 12.684878492516129,
    "valor_beta_hoja": 12.548065357577574,
    "valor_beta_prop": 12.684878492516129
   },
   {
-   "nombre": "D · Maduran los campus y crece lo digital",
+   "nombre": "Optimista · Maduran los campus y crece lo digital",
    "prob": 0.1,
    "margen": 0.35,
    "crec": {
@@ -796,6 +802,8 @@
     "wacc0": 0.11219548370722277,
     "margenY1": 0.315
    },
+   "valor_bruto": 30.245205620725542,
+   "valor_bruto_prop": 30.56290244065207,
    "valor_beta_hoja": 30.245205620725542,
    "valor_beta_prop": 30.56290244065207
   }
@@ -911,5 +919,72 @@
    "tasa_base": 0.905050012461652
   }
  ],
- "ingresos_ltm": 723.1
+ "ingresos_ltm": 723.1,
+ "sens_base": {
+  "base": 26.057491728949326,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 24.287852625781827
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 27.82713083211683
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 23.350346927639926
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 29.045206238552538
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 31.891087848328745
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 21.89072748946705
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 25.31709669432707
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 26.91544275655741
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 24.816658789475547
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 25.44227157574915
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 26.467638497749448
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 23.103337817167677
+   }
+  ]
+ },
+ "rd_vida": null,
+ "rd_ltm": null
 }

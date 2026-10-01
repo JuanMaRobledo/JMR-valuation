@@ -14,7 +14,7 @@
  },
  "historias": [
   {
-   "nombre": "A · Recuperación lenta con la vuelta a los mayoristas",
+   "nombre": "Base · Recuperación lenta con la vuelta a los mayoristas",
    "prob": 0.45,
    "margen": 0.11,
    "crec": {
@@ -44,7 +44,7 @@
    "tesis": "base"
   },
   {
-   "nombre": "B · Pérdida de relevancia prolongada",
+   "nombre": "Conservadora · Pérdida de relevancia prolongada",
    "prob": 0.3,
    "margen": 0.085,
    "crec": {
@@ -75,7 +75,7 @@
    "tesis": "conservadora"
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.05,
    "margen": 0.06,
    "crec": {
@@ -108,7 +108,7 @@
    "terminal": "estabilizacion"
   },
   {
-   "nombre": "D · Vuelve la Nike de márgenes históricos",
+   "nombre": "Optimista · Vuelve la Nike de márgenes históricos",
    "prob": 0.2,
    "margen": 0.135,
    "crec": {
@@ -170,7 +170,7 @@
    "Baja-media"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 3,1% anual cinco años (historia A) lo logró ~61% de las empresas de ese tamaño; 4,7% (historia D), ~50%. La hoja no pide crecimiento. El valor de Nike depende del margen: pasar de 6% a 11% vale más que cualquier escenario razonable de ventas.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 3,1% anual cinco años (Base) lo logró ~61% de las empresas de ese tamaño; 4,7% (Optimista), ~50%. La hoja no pide crecimiento. El valor de Nike depende del margen: pasar de 6% a 11% vale más que cualquier escenario razonable de ventas.",
  "crecimiento": {
   "texto": "Ingresos de US$51.362 millones (FY24, +0,3%), US$46.309 millones (FY25, −9,8%) y US$46.398 millones (FY26, +0,2%; −2% sin divisas). En FY26 el calzado facturó US$30.538 millones (−1,4%), la indumentaria US$13.497 millones (+3,5%) y el equipamiento US$2.220 millones; EE.UU. fue el 44%. La hoja supone −2% el próximo año y 3,5% después.",
   "tabla": {
@@ -220,7 +220,7 @@
  "reinversion": {
   "texto": "Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Ventaja que se desvanece: marca probada y escala global, pero con ventas en caída, descuentos y un ROIC que bajó de 47% a 18%. El ROIC después del año 10 es 12,2%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (20,9%), limitado a su ROIC actual (13,3%)."
  },
- "prob_texto": "A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (5%) es un deterioro estructural por aranceles y competencia. D (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. Conservadora (30%) prolonga la pérdida de relevancia y la presión de precios. Disrupción (5%) es un deterioro estructural por aranceles y competencia. Optimista (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "On, Hoka, Adidas y marcas chinas siguen ganando en running y básquet; los productos nuevos de Nike no rotan.",
   "Los aranceles suben o se quedan y Nike no puede trasladarlos a precio.",
@@ -228,7 +228,7 @@
   "Greater China sigue cayendo por competencia local (Anta, Li Ning).",
   "El consumidor global se debilita (tráfico en baja desde abril de 2026) y las rebajas vuelven."
  ],
- "contra": "el FCFF está en mínimos y la dirección describe un consumidor presionado en todo el mundo; si el margen bruto no sube en FY27, la historia B gana peso.",
+ "contra": "el FCFF está en mínimos y la dirección describe un consumidor presionado en todo el mundo; si el margen bruto no sube en FY27, la historia Conservadora gana peso.",
  "indicadores": [
   [
    "Ingresos sin divisas (interanual)",

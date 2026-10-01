@@ -158,9 +158,11 @@ def markdown(a: dict, empresa: str) -> str:
          "## Resultados antes y después\n",
          "| Concepto | Antes | Después |", "|---|---:|---:|",
          f"| DCF técnico anterior (caso Base de la hoja) | {usd(a['antes']['dcfTecnico'])} | {usd(a['despues']['dcfTecnico'])} |"]
+    N = {"A": "Base", "B": "Conservadora", "C": "Disrupción", "D": "Optimista"}
     for k in "ABCD":
-        L.append(f"| Historia {k} | {usd(a['antes']['historias'].get(k))} | {usd(a['despues']['historias'].get(k))} |")
-    L += [f"| **Valor esperado (valor intrínseco principal)** | **{usd(a['antes']['valorEsperado'])}** | **{usd(a['despues']['valorEsperado'])}** |",
+        lab = "**DCF Base (valor intrínseco principal)**" if k == "A" else f"DCF {N[k]}"
+        L.append(f"| {lab} | {usd(a['antes']['historias'].get(k))} | {usd(a['despues']['historias'].get(k))} |")
+    L += [f"| DCF esperado por probabilidades (complemento) | {usd(a['antes']['valorEsperado'])} | {usd(a['despues']['valorEsperado'])} |",
           f"| Precio con MOS sobre el esperado | {usd(a['antes']['precioMOS'])} | {usd(a['despues']['precioMOS'])} |", ""]
     L += ["## Hallazgos y correcciones\n"]
     if a["cambios"]:
@@ -173,17 +175,19 @@ def markdown(a: dict, empresa: str) -> str:
     else:
         L.append("Sin correcciones de datos: los estados de la hoja coinciden con la SEC en las filas revisadas.")
     L += ["", "## Verificación de las historias\n", "| Control | Resultado |", "|---|---|"]
-    nombres = {"probabilidades_suman_100": "Las probabilidades suman 100%", "orden_severidad_C_B_A_D": "Orden de valores C < B < A < D",
-               "valor_esperado_igual_suma": "Valor esperado = Σ probabilidad × DCF", "mos_sobre_esperado": "MOS aplicado al valor esperado"}
+    nombres = {"probabilidades_suman_100": "Las probabilidades suman 100%", "orden_severidad_C_B_A_D": "Orden de valores Disrupción < Conservadora < Base < Optimista",
+               "valor_esperado_igual_suma": "DCF esperado = Σ probabilidad × DCF", "mos_sobre_esperado": "MOS aplicado al DCF esperado"}
     for k, v in a["checks"].items():
-        L.append(f"| {nombres[k]} | {'Sí' if v else 'No (' + ' < '.join(a['orden']) + ')'} |")
+        L.append(f"| {nombres[k]} | {'Sí' if v else 'No (' + ' < '.join(N.get(x, x) for x in a['orden']) + ')'} |")
     L += ["| Pestaña «Escenarios e historias» = motor | Sí (H5:H8 y H10 verificados al centavo) |",
           f"| Tramo de tasas base (dólares de 2015) | {a['tramo_tasas_base']} |",
           "| Cifras de los textos (tasas base, DCF por beta, ROIC terminal, probabilidades) | Regeneradas desde el cálculo |", ""]
     L += ["## Salvedades abiertas\n"] + [f"- {s}" for s in a["salvedades"]] + [""]
     L += ["## Dictamen\n",
-          f"El valor intrínseco principal es el DCF esperado de las cuatro historias: {usd(a['despues']['valorEsperado'])} "
-          f"(antes {usd(a['antes']['valorEsperado'])}); precio con margen de seguridad {usd(a['despues']['precioMOS'])}. Las "
+          f"El valor intrínseco principal es el DCF Base: {usd(a['despues']['historias'].get('A'))} (antes "
+          f"{usd(a['antes']['historias'].get('A'))}). El DCF esperado de las cuatro historias, complementario, es "
+          f"{usd(a['despues']['valorEsperado'])} (antes {usd(a['antes']['valorEsperado'])}); precio con margen de seguridad sobre "
+          f"el esperado {usd(a['despues']['precioMOS'])}. Las "
           "correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al "
           "último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias "
           "para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.\n",

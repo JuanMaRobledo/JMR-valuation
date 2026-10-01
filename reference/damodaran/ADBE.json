@@ -14,7 +14,7 @@
  },
  "historias": [
   {
-   "nombre": "A · La IA se cobra dentro de la suscripción",
+   "nombre": "Base · La IA se cobra dentro de la suscripción",
    "prob": 0.4,
    "margen": 0.4,
    "crec": {
@@ -40,7 +40,7 @@
    "tesis_contraste": "La confirmarían renovaciones y precio realizado estables, monetización de IA que aporte ventas y márgenes compatibles con el coste de cómputo. Perdería fuerza si el crecimiento solo se sostiene con descuentos, si empeora la retención o si la IA aumenta el coste sin elevar el gasto del cliente."
   },
   {
-   "nombre": "B · Erosión gradual frente a Figma y Canva",
+   "nombre": "Conservadora · Erosión gradual frente a Figma y Canva",
    "prob": 0.35,
    "margen": 0.37,
    "crec": {
@@ -67,7 +67,7 @@
    "tesis_contraste": "La apoyarían una desaceleración persistente, menor gasto por cliente o presión de descuentos con caja todavía sólida. Se debilitaría si Adobe mantiene la retención y monetiza la IA sin sacrificar precios ni margen. No hay una serie comparable verificada de adopción que demuestre que esta erosión ya esté ocurriendo."
   },
   {
-   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "margen": 0.32,
    "crec": {
@@ -96,7 +96,7 @@
    "tesis_contraste": "La apoyarían deterioro sostenido de renovaciones, contracción de ingresos profesionales y necesidad de regalar funcionalidades de IA para retener usuarios. Se debilitaría si las herramientas complementan la suite y Adobe conserva el gasto de sus clientes. Es una hipótesis adversa severa; no es un caso de quiebra ni el peor resultado posible."
   },
   {
-   "nombre": "D · La IA amplía el mercado de Adobe",
+   "nombre": "Optimista · La IA amplía el mercado de Adobe",
    "prob": 0.1,
    "margen": 0.43,
    "crec": {
@@ -154,7 +154,7 @@
    "Posible, gradual"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 8,1% anual cinco años (historia A) lo logró ~34% de las empresas de ese tamaño; 11,0% (historia D), ~21%. Adobe tiene razones para estar arriba de la mediana: suscripción con alta retención, subidas de precio y venta cruzada de IA. Aun así, el DCF de la hoja (10,4% anual en los años 1-5) ya supone un resultado del cuartil superior, y la visión externa pide descontar esa confianza.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 8,1% anual cinco años (Base) lo logró ~34% de las empresas de ese tamaño; 11,0% (Optimista), ~21%. Adobe tiene razones para estar arriba de la mediana: suscripción con alta retención, subidas de precio y venta cruzada de IA. Aun así, el DCF de la hoja (10,4% anual en los años 1-5) ya supone un resultado del cuartil superior, y la visión externa pide descontar esa confianza.",
  "crecimiento": {
   "texto": "Las ventas crecieron 10,8% en FY24 y 10,5% en FY25; la guía FY26 (US$26.576-26.626 millones) implica ~12%. En el 3T FY26, Creative & Marketing Professionals facturó US$4.700 millones (+13%) y Business Professionals & Consumers US$1.900 millones (+16%). La reorganización de segmentos de 2026 no deja comparar series largas por segmento: la división LTM de las historias es una estimación propia con el peso del 3T (≈70% / 28% / 2%).",
   "tabla": {
@@ -210,7 +210,7 @@
  "reinversion": {
   "texto": "Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un sales-to-capital de 4 (años 1-5) y 4,5 (años 6-10), razonable para software. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Ventaja durable: costos de cambio y estándar de la industria creativa y documental, con ROIC en alza (38% → 59%). El ROIC después del año 10 es 29,3%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. B (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. C (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. D (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. Conservadora (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. Disrupción (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. Optimista (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "El ARR «AI-first» se estanca antes de llegar a 5% del total y la IA termina regalada dentro de los planes para no perder usuarios.",
   "Figma y Canva capturan a los nuevos diseñadores y equipos de marketing; Creative Cloud crece solo por precio y la retención cae.",
@@ -218,7 +218,7 @@
   "Adobe hace una compra grande para defenderse y destruye valor (precio alto, retorno bajo).",
   "El costo de cómputo de la IA baja el margen a 32-34% en lugar de subirlo a 40%."
  ],
- "contra": "la adopción relativa se mueve en contra (Figma 59% frente a 42% de Adobe en equipos de diseño) y el consenso (~40 analistas en «Hold») no cree la guía. Si Creative & Marketing Professionals baja de ~13% a un dígito bajo en 2027, la historia A pierde peso a favor de B.",
+ "contra": "la adopción relativa se mueve en contra (Figma 59% frente a 42% de Adobe en equipos de diseño) y el consenso (~40 analistas en «Hold») no cree la guía. Si Creative & Marketing Professionals baja de ~13% a un dígito bajo en 2027, la historia Base pierde peso a favor de Conservadora.",
  "indicadores": [
   [
    "Crecimiento de ingresos (interanual)",
@@ -302,8 +302,38 @@
    "DCF técnico anterior US$536,48, condicionado a ROIC terminal 29,3%; contraste sin retorno excedente terminal US$377,94 (−29,55%). Valor esperado de cuatro historias US$364,33; MOS 35% US$236,81. El ROIC excedente no es incorrecto por definición: requiere evidencia de duración de la ventaja. Falta una serie homogénea que incluya I+D, goodwill y adquisiciones, así como soporte de ventas/capital 4x–4,5x. La coincidencia del cálculo con la hoja no certifica esos supuestos ni el cumplimiento integral de los prompts v4/v5."
   ],
   [
-   "Corrección de la historia C, 30-sep-2026",
+   "Corrección de la historia Disrupción, 30-sep-2026",
    "La convergencia automática a 4,99% introducía una recuperación no explicada por la tesis. Se sustituye por estabilización nominal del negocio residual: crecimiento años 6–10 de −1,06%, −0,79%, −0,53%, −0,26% y 0%; perpetuidad 0%, margen 32% y ROIC igual a WACC. El 0% es juicio del analista aceptado por el usuario, no una cifra de Adobe. El ingreso del año 10 y terminal es US$26.508,16 millones. La reinversión negativa de algunos años representa liberación de capital y sigue siendo una salvedad económica por validar; no debe interpretarse como recuperación automática de todo el capital intangible. Damodaran, The Stable Growth Rate, consultado 30-sep-2026, permite crecimiento estable menor o negativo, pero no determina el 0% elegido."
+  ]
+ ],
+ "justificacion": [
+  [
+   "Crecimiento: por qué la Base desacelera.",
+   "La trayectoria parte del negocio recurrente y del desglose de clientes conciliado con el último 10-Q, no de aplicar un porcentaje idéntico a todas las ventas. El grupo profesional aumenta 10% en el primer año y termina creciendo 6% en el quinto; documentos y consumidores pasan de 14% a 8%. El mecanismo supuesto es que las funciones de IA sostengan renovaciones y permitan aumentar el ingreso por cliente, mientras la mayor escala y las alternativas competitivas moderan la expansión. Esta elección produce {g1A} consolidado en el primer año y {cagrA} de CAGR a cinco años. El CAGR resume esa trayectoria; no es una tasa constante. Una Base con crecimiento perpetuamente igual al ritmo reciente exigiría demostrar que Adobe puede mantener ganancias de clientes y monetización a una escala mucho mayor. Los porcentajes son juicio del analista, no una guía publicada por Adobe. La contribución de adquisiciones debe separarse antes de calificar todo el crecimiento como orgánico."
+  ],
+  [
+   "Margen: por qué {mA} y qué podría impedirlo.",
+   "El objetivo de {mA} ({mrepA} antes del ajuste por arrendamientos) es un margen operativo ajustado por capitalización de I+D; no se compara directamente con el margen GAAP LTM de 35,70%. La hipótesis de la Base es que la escala de las suscripciones y una mezcla más favorable compensen el cómputo adicional y la inversión comercial de la IA. Por eso se usa una mejora moderada frente al margen ajustado inicial, en vez de extrapolar el máximo de la Optimista. La Conservadora queda en {mB} porque defender clientes puede exigir descuentos y producto adicional sin cobrarlo íntegramente; la Disrupción cae a {mC} por menor poder de precio y costos que no se ajustan tan rápido como las ventas. La Optimista exige {mD} y crecimiento mayor a la vez: solo tiene sentido si la monetización supera los costos incrementales. Ninguno de estos márgenes es una promesa de Adobe. Revisaría la Base si el ingreso por cliente aumenta menos que el costo de prestar funciones de IA."
+  ],
+  [
+   "Reinversión y ventas/capital: una hipótesis todavía incompleta.",
+   "El modelo usa {s2c1}× en la primera etapa y {s2c2}× en la siguiente (4× y 4,5× antes de sumar el capital arrendado, criterio de Damodaran): cada dólar de ventas incrementales exige aproximadamente US${cap1} o US${cap2} de capital económico adicional, respectivamente, con el rezago de reinversión de la hoja. La justificación conceptual es que distribuir software permite crecer sin construir activos físicos al ritmo de las ventas. Sin embargo, capex bajo no demuestra eficiencia del capital total: I+D, adquisiciones e infraestructura también consumen recursos. No hay aquí una serie homogénea que pruebe que esos dos ratios son alcanzables; permanecen supuestos heredados con salvedad. Subir ventas/capital reduce reinversión y eleva el DCF; bajarlo hace lo contrario. En Disrupción, la reinversión negativa implica recuperar capital al contraerse ventas. Ese beneficio puede exagerarse si los intangibles no son recuperables, de modo que debe contrastarse con una alternativa sin liberación automática antes de cerrar la auditoría."
+  ],
+  [
+   "I+D: por qué la vida útil importa.",
+   "Capitalizar I+D reconoce que una parte del gasto genera beneficios durante varios años. La vida útil de tres años es una convención del modelo, no un dato reportado ni evidencia de que todo desarrollo tenga ese plazo. En productos expuestos a cambios rápidos de IA, parte del desarrollo puede quedar obsoleto antes; plataformas e integraciones pueden durar más. La vida elegida modifica tanto la amortización y el EBIT ajustado como el activo económico y el ROIC, por lo que deben evaluarse conjuntamente. La corrección aritmética de I+D no valida su vida útil. Falta contrastar plazos alternativos con la persistencia de los beneficios, conservando definiciones homogéneas."
+  ],
+  [
+   "Descuento y valor terminal: dónde se concentra el juicio.",
+   "Se mantiene el WACC de la hoja, aproximadamente {wacc0} al inicio y {waccT} al final, para que las diferencias entre historias provengan de sus flujos. Esa convergencia supone que el riesgo y la estructura financiera se normalicen; no es una consecuencia automática de ser una empresa grande. Base y Optimista conservan ROIC terminal de {roicT} como ancla sectorial condicionada a una ventaja duradera, mientras Conservadora y Disrupción convergen al costo de capital. El {roicT} no es un ROIC futuro observado de Adobe. El crecimiento terminal de {tgA} en Base, Conservadora y Optimista es exigente y requiere moneda, inflación y crecimiento económico de largo plazo compatibles; la Conservadora incluso vuelve a acelerar desde {g5B} en el año 5, una recuperación que necesita soporte adicional. Disrupción se estabiliza en {tgC} nominal. Como el terminal explica {terminal} del valor operativo de la Base, estos supuestos pesan mucho en {vA} y deben seguir señalados como condicionados, no plenamente auditados."
+  ],
+  [
+   "Acciones y probabilidades: límites del valor por acción.",
+   "Las cuatro historias conservan {acciones} millones de acciones y no proyectan recompras ni dilución adicional. Esta elección facilita compararlas, pero no demuestra que la compensación en acciones carezca de costo. Más acciones, manteniendo el mismo patrimonio, reducen el DCF por acción; una recompra también consume caja y debe modelarse de forma consistente. La Base es la trayectoria central defendida; el esperado de {ve} combina desenlaces distintos y pesos subjetivos. Cambiar esos pesos modifica el esperado y el MOS, sin cambiar por sí solo el DCF de la Base. La política vigente mantiene MOS de {mos} sobre el esperado: {vmos}."
+  ],
+  [
+   "Fuentes y alcance.",
+   "Punto de partida contable: [Adobe 10-Q, cierre 28-ago-2026](https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm). Límite conceptual del crecimiento perpetuo: [Damodaran, The Stable Growth Rate](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/valquestions/stablegrowthrate.htm), revisado 1-oct-2026. Los porcentajes de escenarios y elecciones de capital son hipótesis del modelo. Esta ampliación explica la selección y sus límites; no declara resueltos los controles económicos pendientes."
   ]
  ]
 }
