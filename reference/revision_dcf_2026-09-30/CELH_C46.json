@@ -1,0 +1,14 @@
+{
+ "ticker": "CELH_C46",
+ "sheet_id": "1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.17,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar."
+  }
+ ]
+}

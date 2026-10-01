@@ -1,0 +1,14 @@
+{
+ "ticker": "GOOG_C46",
+ "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.335,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar."
+  }
+ ]
+}

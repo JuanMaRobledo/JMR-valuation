@@ -1,0 +1,14 @@
+{
+ "ticker": "ZTS_C46",
+ "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.36,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar."
+  }
+ ]
+}

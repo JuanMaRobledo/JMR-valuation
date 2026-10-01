@@ -32,7 +32,8 @@ REF = _ROOT / "reference" / "damodaran"
 FECHA = "2026-10-01"
 TIPO = {"RD": "Conversor de I+D alineado al LTM", "BALANCE": "Balance del último 10-Q", "ROIC": "ROIC terminal (criterio Damodaran)",
         "ARREND": "Deuda de balance sin arrendamientos operativos", "LEASECONV": "Arrendamientos como deuda (conversor, Damodaran)",
-        "S2C": "Ventas/capital contrastado con la historia y la industria", "ACCIONES": "Acciones: dilución y estructura de capital"}
+        "S2C": "Ventas/capital contrastado con la historia y la industria", "ACCIONES": "Acciones: dilución y estructura de capital",
+        "C46": "Margen objetivo Base de la hoja enlazado al de Input sheet"}
 BASE = "7361ae29c73368ed2ccedade461d02df9243e5eb"  # Modelo-JMR-datos antes de la auditoría (merge del PR #17)
 NIIF = ("AFYA", "NVO", "ONON", "PAGS")
 
