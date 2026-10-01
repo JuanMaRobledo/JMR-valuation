@@ -1175,7 +1175,7 @@ def render(r: dict) -> tuple[str, str]:
       f"{es(INFLACION * 100, 1)}%, la mediana nominal ronda {es(br['Median'] + INFLACION * 100, 1)}%.")
     rows = [[nombre(h), pct(h["cagr"]), pct(h["tasa_base"], 0)] for h in r["historias"]]
     tab(["Historia", "Crecimiento anual de ingresos (5 años)", "Empresas de este tamaño que lo lograron"], rows, ["l", "r", "r"])
-    p(sp["tasas_base_nota"])
+    p(sp["tasas_base_nota"].format_map(_cifras(r)) if "{" in sp["tasas_base_nota"] else sp["tasas_base_nota"])
 
     from types import SimpleNamespace
     W = SimpleNamespace(h3=h3, h4=h4, p=p, tab=tab)
@@ -1300,10 +1300,10 @@ def render(r: dict) -> tuple[str, str]:
     if r["precio"] and vb_ > 0:
         p(f"Frente al DCF Base ({usd(vb_)}), el valor intrínseco principal, el precio está {pos(r['precio'] / vb_ - 1)}.")
     if same:
-        p(f"Frente al DCF esperado de las historias ({usd(r['valor_esperado_beta_hoja'])}), el complemento, el precio está {pos(diff_h)}. " + sp["precio_lectura"])
+        p(f"Frente al DCF esperado de las historias ({usd(r['valor_esperado_beta_hoja'])}), el complemento, el precio está {pos(diff_h)}. " + (sp["precio_lectura"].format_map(_cifras(r)) if "{" in sp["precio_lectura"] else sp["precio_lectura"]))
     else:
         p(f"Frente al DCF esperado de las historias ({usd(r['valor_esperado_beta_hoja'])} con la beta de la hoja; "
-          f"{usd(r['valor_esperado_beta_prop'])} con la propuesta), el precio está {pos(diff_h)} y {pos(diff_p)}, respectivamente. " + sp["precio_lectura"])
+          f"{usd(r['valor_esperado_beta_prop'])} con la propuesta), el precio está {pos(diff_h)} y {pos(diff_p)}, respectivamente. " + (sp["precio_lectura"].format_map(_cifras(r)) if "{" in sp["precio_lectura"] else sp["precio_lectura"]))
 
     h3("Registro de decisión")
     probs = " / ".join(f"{NOMBRE[h['id']]} {pct(h['prob'], 0)}" for h in r["historias"])

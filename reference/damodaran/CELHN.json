@@ -121,7 +121,7 @@
  },
  "riesgo": {
   "beta_propuesta": 1.0,
-  "texto": "La beta desapalancada del sector Beverage (Soft) es 0,58 en EE.UU. y 0,54 global (Damodaran, enero de 2026); reapalancada con la deuda de Celsius da ~0,63. La beta de regresión semanal es 1,55 a cinco años y 0,83 a dos años. Se usa 1,0: el sector corresponde a refrescos diversificados como Coca-Cola o PepsiCo, mientras que Celsius depende de una sola categoría discrecional, de un distribuidor que concentra más de 40% de sus ventas y de marcas jóvenes. Con la beta del sector el DCF Base sube a ~US$26,3; con la de regresión a cinco años baja a ~US$21,1."
+  "texto": "La beta desapalancada del sector Beverage (Soft) es 0,58 en EE.UU. y 0,54 global (Damodaran, enero de 2026); reapalancada con la deuda de Celsius da ~0,63. La beta de regresión semanal es 1,55 a cinco años y 0,83 a dos años. Se usa 1,0: el sector corresponde a refrescos diversificados como Coca-Cola o PepsiCo, mientras que Celsius depende de una sola categoría discrecional, de un distribuidor que concentra más de la mitad de sus ventas (60% en el 2T26) y de marcas jóvenes. La tabla muestra el DCF con la beta usada y con la del sector; con la beta de regresión a cinco años el valor sería menor."
  },
  "historias": [
   {
@@ -320,7 +320,7 @@
   0.21,
   0.24
  ],
- "precio_lectura": "El precio pide algo más que la Base: con un margen de 21% hace falta crecer ~8,3% anual en los años 1-5, lo que logra ~46% de las empresas de este tamaño, frente al {cagrA} de la Base. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera o por una recuperación de la marca CELSIUS más rápida que la de la Base; también puede estar descontando que Celsius vuelva a comprar marcas con éxito. Ninguna de esas lecturas está hoy en los datos: la participación de CELSIUS sigue cayendo.",
+ "precio_lectura": "El precio pide algo más que la Base: con el margen de la Base, el DCF inverso de la tabla exige crecer más en los años 1-5 que el {cagrA} anual de la Base, y menos empresas de este tamaño lo lograron. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera o por una recuperación de la marca CELSIUS más rápida que la de la Base; también puede estar descontando que Celsius vuelva a comprar marcas con éxito. Ninguna de esas lecturas está hoy en los datos: la participación de CELSIUS sigue cayendo.",
  "frase": "Portafolio de tres marcas distribuido por PepsiCo que crece con la categoría; la marca CELSIUS todavía cede participación",
  "confianza": "Media: el margen normalizado está bien documentado; la duración del crecimiento de Alani Nu y la recuperación de CELSIUS no",
  "cambiaria": "Las ventas al consumidor de CELSIUS y de Alani Nu, el margen bruto y el resultado de la investigación de Texas",

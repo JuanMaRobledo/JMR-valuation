@@ -177,7 +177,26 @@ def step_content() -> None:
     cc.write_tesis(sh, bk)  # después hay que volver a correr apply_multiples_v3 --apply (agrega el origen de los múltiplos)
 
 
-STEPS = {"refresh": step_refresh, "assumptions": step_assumptions, "supuestos": step_supuestos, "presentacion": step_presentacion, "content": step_content}
+# Split 3 por 1 del 15-nov-2023: el XBRL de 2016-2022 trae acciones y EPS sin ajustar (acciones 76,4M en dic-2022 frente a
+# 231,8M en dic-2023), lo que dejaba la capitalización y los múltiplos históricos de 'Trailing Valuation' en un tercio.
+SPLIT_COLS = "BCDEFGH"   # Dec '16 .. Dec '22
+IS_SHARES_PRE = {25: [0, 0, 50.1, 60.8, 70.2, 73.8, 75.6], 26: [0, 0, 50.1, 64.2, 74.4, 77.7, 75.6],
+                 27: [40, 45.7, 57, 68.9, 72.3, 74.9, 76.4]}
+IS_EPS_PRE = {23: ["", "", -0.22, 0.16, 0.11, 0.05, -2.48], 24: ["", "", -0.22, 0.16, 0.11, 0.05, -2.48]}
+
+
+def step_split() -> None:
+    sh = ms.open_sheet(SHEET_ID)
+    upd = {}
+    for row, vals in IS_SHARES_PRE.items():
+        upd.update({f"{c}{row}": round(v * 3, 1) for c, v in zip(SPLIT_COLS, vals)})
+    for row, vals in IS_EPS_PRE.items():
+        upd.update({f"{c}{row}": (round(v / 3, 3) if isinstance(v, (int, float)) else v) for c, v in zip(SPLIT_COLS, vals)})
+    ms.write_with_backup(sh, "Income Statement", upd, "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)",
+                         BACKUP_PATH)
+
+
+STEPS = {"refresh": step_refresh, "assumptions": step_assumptions, "supuestos": step_supuestos, "presentacion": step_presentacion, "content": step_content, "split": step_split}
 
 
 def main(argv: list[str]) -> int:

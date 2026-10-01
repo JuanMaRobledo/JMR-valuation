@@ -1021,7 +1021,7 @@
  },
  "Supuestos de los Múltiplos!A12": {
   "before": "Chequeo de independencia (2026-10-01): múltiplos consolidados hoy (Base) 37,44 frente a DCF hoy 24,03 (+56%). Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$37 hoy, ~55% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers.",
-  "after": "Evaluación CELH (1-oct-2026): los múltiplos Base salen de tres anclas (historia desde FY2024 sin FY2025 ni LTM, peers sin KDP con −15% y el justificado, λ = 0,5). Valen ~55% más que el DCF Base de las historias. No es un problema de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos y el DCF supone que Celsius no los conserva después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo.",
+  "after": "Evaluación CELH (1-oct-2026): los múltiplos Base salen de tres anclas (historia desde FY2024 sin FY2025 ni LTM, peers sin KDP con −15% y el justificado, λ = 0,5). Valen ~60% más que el DCF Base de las historias. No es un problema de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos y el DCF supone que Celsius no los conserva después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo.",
   "reason": "Evaluación de múltiplos CELH"
  },
  "Tesis de Inversión y Supuestos!A1:H120": {
@@ -1266,5 +1266,180 @@
    ]
   ],
   "reason": "Plantilla de placeholders reemplazada"
+ },
+ "Income Statement!B25": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C25": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D25": {
+  "before": 50.1,
+  "after": 150.3,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E25": {
+  "before": 60.8,
+  "after": 182.4,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F25": {
+  "before": 70.2,
+  "after": 210.6,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G25": {
+  "before": 73.8,
+  "after": 221.4,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H25": {
+  "before": 75.6,
+  "after": 226.8,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B26": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C26": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D26": {
+  "before": 50.1,
+  "after": 150.3,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E26": {
+  "before": 64.2,
+  "after": 192.6,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F26": {
+  "before": 74.4,
+  "after": 223.2,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G26": {
+  "before": 77.7,
+  "after": 233.1,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H26": {
+  "before": 75.6,
+  "after": 226.8,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B27": {
+  "before": 40,
+  "after": 120,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C27": {
+  "before": 45.7,
+  "after": 137.1,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D27": {
+  "before": 57,
+  "after": 171,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E27": {
+  "before": 68.9,
+  "after": 206.7,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F27": {
+  "before": 72.3,
+  "after": 216.9,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G27": {
+  "before": 74.9,
+  "after": 224.7,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H27": {
+  "before": 76.4,
+  "after": 229.2,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B23": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C23": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D23": {
+  "before": -0.22,
+  "after": -0.073,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E23": {
+  "before": 0.16,
+  "after": 0.053,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F23": {
+  "before": 0.11,
+  "after": 0.037,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G23": {
+  "before": 0.05,
+  "after": 0.017,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H23": {
+  "before": -2.48,
+  "after": -0.827,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B24": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C24": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D24": {
+  "before": -0.22,
+  "after": -0.073,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E24": {
+  "before": 0.16,
+  "after": 0.053,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F24": {
+  "before": 0.11,
+  "after": 0.037,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G24": {
+  "before": 0.05,
+  "after": 0.017,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H24": {
+  "before": -2.48,
+  "after": -0.827,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
  }
 }

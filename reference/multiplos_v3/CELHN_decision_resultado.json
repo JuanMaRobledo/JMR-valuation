@@ -19,12 +19,12 @@
   "ajuste_peers": -0.15,
   "ajuste_motivo": "Ajuste −15%: crecimiento a FY+3 parecido a la mediana (Base ~5,5% frente a ~6-7% de Coca-Cola y PepsiCo; Monster crece más), 0%; margen operativo menor (21% objetivo frente a 29% de Monster y 35% de Coca-Cola), −5%; riesgo propio mayor (una sola categoría, un distribuidor que concentra más de 40% de las ventas, investigación del fiscal de Texas y demandas colectivas), −10%.",
   "lambda": 0.5,
-  "lambda_motivo": "λ = 0,5: la Celsius de FY+3 (portafolio de tres marcas, crecimiento de un dígito medio, margen ~21%) es distinta de la de FY2024 y el ancla A tiene un solo cierre. Chequeo de crecimiento implícito (1-oct-2026): con λ = 0,5 cuatro múltiplos valen 50-60% más que el DCF en FY+3. Se probó λ = 0,75 y la brecha creció, porque el justificado (C) supone que el retorno de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10 (sin ventaja defendible). La diferencia no es de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos. Se deja λ = 0,5 y la diferencia se explica; el DCF manda.",
+  "lambda_motivo": "λ = 0,5: la Celsius de FY+3 (portafolio de tres marcas, crecimiento de un dígito medio, margen ~21%) es distinta de la de FY2024 y el ancla A tiene un solo cierre. Chequeo de crecimiento implícito (1-oct-2026): con λ = 0,5 los múltiplos valen ~30-60% más que el DCF en FY+3. Se probó λ = 0,75 y la brecha creció, porque el justificado (C) supone que el retorno de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10 (sin ventaja defendible). La diferencia no es de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos. Se deja λ = 0,5 y la diferencia se explica; el DCF manda.",
   "fuentes": [
    "[Celsius Holdings, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)",
    "[Celsius Holdings, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm)"
   ],
-  "evaluacion": "Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$37 hoy, ~55% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers."
+  "evaluacion": "Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$38 hoy, ~60% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers."
  },
  "resultado": {
   "EV/EBITDA": {
@@ -38,37 +38,37 @@
    "A_excluidos": [
     [
      "Dec '16",
-     -7.54,
+     -30.96,
      "métrica negativa o ~0"
     ],
     [
      "Dec '17",
-     -8.12,
+     -27.87,
      "métrica negativa o ~0"
     ],
     [
      "Dec '18",
-     -5.51,
+     -17.99,
      "métrica negativa o ~0"
     ],
     [
      "Dec '19",
-     -69.02,
+     -227.49,
      "métrica negativa o ~0"
     ],
     [
      "Dec '21",
-     -659.43,
+     -1989.44,
      "métrica negativa o ~0"
     ],
     [
      "Dec '22",
-     -13.06,
+     -47.05,
      "métrica negativa o ~0"
     ],
     [
      "Dec '20",
-     136.02,
+     417.99,
      "> 2,5x la mediana (44.1x)"
     ]
    ],
@@ -99,9 +99,9 @@
     32.62
    ],
    "antes": {
-    "J8": null,
-    "J19": 32.615950920245396,
-    "J30": null
+    "J8": 18.6,
+    "J19": 21.64,
+    "J30": 26.56
    },
    "nota": ""
   },
@@ -112,42 +112,37 @@
    "A_desc": "mediana Dec '24 (etapa actual) = 24,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF)",
    "A_p25": 24.16,
    "A_p75": 24.16,
-   "A_max": 37.24,
+   "A_max": 95.98,
    "A_excluidos": [
     [
      "Dec '16",
-     -8.79,
+     -36.12,
      "métrica negativa o ~0"
     ],
     [
      "Dec '17",
-     -7.74,
+     -26.56,
      "métrica negativa o ~0"
     ],
     [
      "Dec '18",
-     -4.95,
+     -16.16,
      "métrica negativa o ~0"
     ],
     [
      "Dec '21",
-     -18.52,
+     -55.87,
      "métrica negativa o ~0"
     ],
     [
      "Dec '19",
-     96.63,
-     "> 2,5x la mediana (37.2x)"
+     318.49,
+     "> 2,5x la mediana (73.4x)"
     ],
     [
      "Dec '20",
-     417.78,
-     "> 2,5x la mediana (37.2x)"
-    ],
-    [
-     "Dec '23",
-     95.98,
-     "> 2,5x la mediana (37.2x)"
+     1283.83,
+     "> 2,5x la mediana (73.4x)"
     ]
    ],
    "B_mediana": 24.28,
@@ -177,9 +172,9 @@
     27.88
    ],
    "antes": {
-    "J8": null,
-    "J19": 26.179242424242396,
-    "J30": null
+    "J8": 22.96,
+    "J19": 24.81,
+    "J30": 28.36
    },
    "nota": ""
   },
@@ -194,27 +189,22 @@
    "A_excluidos": [
     [
      "Dec '18",
-     -5.27,
+     -15.89,
      "métrica negativa o ~0"
     ],
     [
      "Dec '22",
-     -13.98,
+     -41.93,
      "métrica negativa o ~0"
     ],
     [
-     "Dec '19",
-     10.06,
-     "< 0,4x la mediana (56.8x), caída puntual"
-    ],
-    [
      "Dec '20",
-     152.45,
+     453.24,
      "> 2,5x la mediana (56.8x)"
     ],
     [
      "Dec '21",
-     497.2,
+     1462.35,
      "> 2,5x la mediana (56.8x)"
     ]
    ],
@@ -245,9 +235,9 @@
     43.18
    ],
    "antes": {
-    "J8": null,
-    "J19": 42.68896551724138,
-    "J30": null
+    "J8": 23.88,
+    "J19": 26.8,
+    "J30": 32.28
    },
    "nota": ""
   },
@@ -258,42 +248,37 @@
    "A_desc": "mediana Dec '24 (etapa actual) = 25,9x",
    "A_p25": 25.85,
    "A_p75": 25.85,
-   "A_max": 36.33,
+   "A_max": 102.08,
    "A_excluidos": [
     [
      "Dec '16",
-     -13.67,
+     -41,
      "métrica negativa o ~0"
     ],
     [
      "Dec '17",
-     -9.41,
+     -28.23,
      "métrica negativa o ~0"
     ],
     [
      "Dec '18",
-     -5.6,
+     -16.81,
      "métrica negativa o ~0"
     ],
     [
      "Dec '21",
-     -18.68,
+     -56.03,
      "métrica negativa o ~0"
     ],
     [
      "Dec '19",
-     110.93,
-     "> 2,5x la mediana (36.3x)"
+     332.79,
+     "> 2,5x la mediana (79.6x)"
     ],
     [
      "Dec '20",
-     433.03,
-     "> 2,5x la mediana (36.3x)"
-    ],
-    [
-     "Dec '23",
-     102.08,
-     "> 2,5x la mediana (36.3x)"
+     1299.08,
+     "> 2,5x la mediana (79.6x)"
     ]
    ],
    "B_mediana": 25.91,
@@ -323,9 +308,9 @@
     26.14
    ],
    "antes": {
-    "J8": null,
-    "J19": 23.515321192715643,
-    "J30": null
+    "J8": 21.97,
+    "J19": 24.25,
+    "J30": 28.22
    },
    "nota": ""
   },
@@ -336,42 +321,37 @@
    "A_desc": "mediana Dec '24 (etapa actual) = 23,5x",
    "A_p25": 23.54,
    "A_p75": 23.54,
-   "A_max": 32.7,
+   "A_max": 89.5,
    "A_excluidos": [
     [
      "Dec '16",
-     -13.67,
+     -41,
      "métrica negativa o ~0"
     ],
     [
      "Dec '17",
-     -9.52,
+     -28.56,
      "métrica negativa o ~0"
     ],
     [
      "Dec '18",
-     -5.7,
+     -17.1,
      "métrica negativa o ~0"
     ],
     [
      "Dec '21",
-     -19.28,
+     -57.83,
      "métrica negativa o ~0"
     ],
     [
      "Dec '19",
-     110.93,
-     "> 2,5x la mediana (32.7x)"
+     332.79,
+     "> 2,5x la mediana (73.5x)"
     ],
     [
      "Dec '20",
-     356.61,
-     "> 2,5x la mediana (32.7x)"
-    ],
-    [
-     "Dec '23",
-     89.5,
-     "> 2,5x la mediana (32.7x)"
+     1069.83,
+     "> 2,5x la mediana (73.5x)"
     ]
    ],
    "B_mediana": 22.67,
@@ -401,9 +381,9 @@
     25.7
    ],
    "antes": {
-    "J8": null,
-    "J19": 24.20766523269454,
-    "J30": null
+    "J8": 20.06,
+    "J19": 22.72,
+    "J30": 27.29
    },
    "nota": ""
   }
@@ -415,16 +395,16 @@
    32.42839904779824
   ],
   "multiplos_hoy": [
-   30.67006725280271,
-   37.4388576730281,
-   47.78446754378044
+   31.461149142076238,
+   38.420633707201496,
+   49.12383047312964
   ],
   "ponderado_hoy": [
-   22.273473704654883,
-   29.39065802984331,
-   38.57082644619112
+   22.589906460364297,
+   29.783368443512664,
+   39.1065716179308
   ],
-  "brecha_base": 0.5583167158336626,
+  "brecha_base": 0.599181157228184,
   "fila_origen": 53
  }
 }

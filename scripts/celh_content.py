@@ -132,7 +132,7 @@ SUPUESTOS_RECOMENDADOS = {
 
 MULTIPLOS_EVALUACION = (
     "Evaluación CELH (1-oct-2026): los múltiplos Base salen de tres anclas (historia desde FY2024 sin FY2025 ni LTM, peers sin KDP "
-    "con −15% y el justificado, λ = 0,5). Valen ~55% más que el DCF Base de las historias. No es un problema de crecimiento sino de "
+    "con −15% y el justificado, λ = 0,5). Valen ~60% más que el DCF Base de las historias. No es un problema de crecimiento sino de "
     "ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos y el DCF supone que Celsius no los "
     "conserva después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo."
 )

@@ -37,7 +37,7 @@ Con ventas LTM de US$3.047 millones (US$2.156 millones en dólares de 2015, defl
 | Disrupción · Deterioro de los fundamentales: La moda pasa y la regulación de la cafeína alcanza a Alani Nu | −6,5% | 97% |
 | Optimista · Plataforma multimarca con PepsiCo y expansión internacional | 8,9% | 43% |
 
-En dólares de 2015 Celsius está en el tramo de ventas de US$2.000-3.000 millones. Allí la mediana de crecimiento real a 5 años es 5,1% y la media 6,2% (más ~2,5% de inflación para comparar con cifras nominales). La Base ({cagrA} nominal) está en la mitad de la distribución; alejarse de la tasa base hacia arriba exigiría que la marca CELSIUS vuelva a ganar participación, algo que hoy no muestran los datos.
+En dólares de 2015 Celsius está en el tramo de ventas de US$2.000-3.000 millones. Allí la mediana de crecimiento real a 5 años es 5,1% y la media 6,2% (más ~2,5% de inflación para comparar con cifras nominales). La Base (5,9% nominal) está en la mitad de la distribución; alejarse de la tasa base hacia arriba exigiría que la marca CELSIUS vuelva a ganar participación, algo que hoy no muestran los datos.
 
 
 ### Justificación de los supuestos
@@ -97,7 +97,7 @@ Sensibilidad del DCF Base (US$24,03; cada fila es un DCF completo con un solo su
 
 **Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$17 millones, compromisos del 10-K al 2025-12-31) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$3 millones, +0,09 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,01 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
 
-**Riesgo.** La beta desapalancada del sector Beverage (Soft) es 0,58 en EE.UU. y 0,54 global (Damodaran, enero de 2026); reapalancada con la deuda de Celsius da ~0,63. La beta de regresión semanal es 1,55 a cinco años y 0,83 a dos años. Se usa 1,0: el sector corresponde a refrescos diversificados como Coca-Cola o PepsiCo, mientras que Celsius depende de una sola categoría discrecional, de un distribuidor que concentra más de 40% de sus ventas y de marcas jóvenes. Con la beta del sector el DCF técnico anterior sube a ~US$26,3; con la de regresión a cinco años baja a ~US$21,1.
+**Riesgo.** La beta desapalancada del sector Beverage (Soft) es 0,58 en EE.UU. y 0,54 global (Damodaran, enero de 2026); reapalancada con la deuda de Celsius da ~0,63. La beta de regresión semanal es 1,55 a cinco años y 0,83 a dos años. Se usa 1,0: el sector corresponde a refrescos diversificados como Coca-Cola o PepsiCo, mientras que Celsius depende de una sola categoría discrecional, de un distribuidor que concentra más de la mitad de sus ventas (60% en el 2T26) y de marcas jóvenes. La tabla muestra el DCF con la beta usada y con la del sector; con la beta de regresión a cinco años el valor sería menor.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
@@ -363,7 +363,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 Frente al DCF Base (US$24,03), el valor intrínseco principal, el precio está por encima en 14%.
 
-Frente al DCF esperado de las historias (US$20,90), el complemento, el precio está por encima en 31%. El precio pide algo más que la Base: con un margen de 21% hace falta crecer ~8,3% anual en los años 1-5, lo que logra ~46% de las empresas de este tamaño, frente al {cagrA} de la Base. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera o por una recuperación de la marca CELSIUS más rápida que la de la Base; también puede estar descontando que Celsius vuelva a comprar marcas con éxito. Ninguna de esas lecturas está hoy en los datos: la participación de CELSIUS sigue cayendo.
+Frente al DCF esperado de las historias (US$20,90), el complemento, el precio está por encima en 31%. El precio pide algo más que la Base: con el margen de la Base, el DCF inverso de la tabla exige crecer más en los años 1-5 que el 5,9% anual de la Base, y menos empresas de este tamaño lo lograron. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera o por una recuperación de la marca CELSIUS más rápida que la de la Base; también puede estar descontando que Celsius vuelva a comprar marcas con éxito. Ninguna de esas lecturas está hoy en los datos: la participación de CELSIUS sigue cayendo.
 
 
 ### Registro de decisión
