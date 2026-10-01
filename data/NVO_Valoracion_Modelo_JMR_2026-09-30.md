@@ -14,23 +14,23 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$35,92.** Historia central A: US$39,27; rango US$22,71–US$46,89; precio con MOS 35% sobre el esperado: US$23,35; precio de referencia US$38,14. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$42,27) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$39,27 por acción.** Complemento: DCF esperado por probabilidades US$35,92; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$22,71–US$46,89; precio con MOS 35% sobre el esperado: US$23,35; precio de referencia US$38,14. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$42,27) y los múltiplos y el ponderado son lecturas secundarias.
 
 
-| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · El volumen compensa la caída de precio | 40% | US$39,27 | US$15,71 |
-| B · Guerra de precios con Lilly y genéricos | 30% | US$28,52 | US$8,56 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly | 10% | US$22,71 | US$2,27 |
-| D · La nueva generación recupera el liderazgo | 20% | US$46,89 | US$9,38 |
-| **DCF esperado** | 100% | **US$35,92** | |
+| **Base · El volumen compensa la caída de precio** (valor principal) | 40% | US$39,27 | US$15,71 |
+| Conservadora · Guerra de precios con Lilly y genéricos | 30% | US$28,52 | US$8,56 |
+| Disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly | 10% | US$22,71 | US$2,27 |
+| Optimista · La nueva generación recupera el liderazgo | 20% | US$46,89 | US$9,38 |
+| **DCF esperado (complemento)** | 100% | **US$35,92** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$41,96 por acción y los múltiplos, US$42,59 hoy: 1% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$32,72 | US$31,84 | US$32,19 | US$23,35 | US$41,06 |
 | Base | US$42,27 | US$42,20 | US$42,23 | US$23,35 | US$55,19 |
+| Conservador | US$32,72 | US$31,84 | US$32,19 | US$23,35 | US$41,06 |
 | Optimista | US$52,35 | US$52,23 | US$52,27 | US$23,35 | US$69,95 |
 
 ## 2. Datos
@@ -57,15 +57,15 @@ Costo de capital: tasa libre de riesgo 5,11%, beta apalancada 1,09, ERP 4,09%, K
 
 A: Novo Nordisk cotizó a 16-27x EBITDA y 23-36x utilidades durante el auge de Ozempic y Wegovy. Desde 2025 perdió participación frente a Eli Lilly, bajó precios en EE. UU. (Wegovy a US$349 al mes en pago directo) y en febrero de 2026 guió una caída de ventas de 5-13% (luego −6% a 0%); la acción cayó de US$59 a US$39 en tres semanas. La etapa actual es Dec '25 y el LTM. Se excluye la columna sin fecha de la hoja. B: farmacéuticas grandes (AstraZeneca, Novartis, Sanofi, Merck, Pfizer), datos de yfinance al 29-sep-2026. Se excluye Eli Lilly (crece 48% justamente a costa de Novo; su múltiplo es de otra etapa) y, en P/E, Merck (119x por cargos puntuales de I+D adquirida). Ajuste −5%: Novo decrece en 2026 mientras los peers crecen 1-15%, aunque conserva márgenes más altos. λ = 0,25: la Novo de FY+3 del escenario Base es una farmacéutica de crecimiento bajo con márgenes altos, parecida a la de hoy.
 
-| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
+| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana Dec '25, LTM (etapa actual) = 9,4x | 13,8x (n=5: AZN 14,2x, NVS 13,8x, SNY 8,5x, MRK 14,3x, PFE 8,5x) × 0,95 = 13,1x | 6,6x / 8,7x / 10,8x | 8,1x | **10,6x** | 11,9x | —x / 11,1x / —x |
-| EV/FCFF | mediana Dec '25, LTM (etapa actual) = 22,4x (EV/FCF × 1,05 = FCF después de intereses ÷ FCFF) | 21,8x (n=4: AZN 38,0x, NVS 19,8x, MRK 23,7x, PFE 16,5x) × 0,95 = 20,7x | 16,3x / 19,5x / 22,7x | 18,1x | **21,0x** | 24,9x | 19,9x / 22,5x / 26,1x |
-| P/E | mediana Dec '25, LTM (etapa actual) = 12,0x | 23,4x (n=4: AZN 24,6x, NVS 22,0x, SNY 22,1x, PFE 37,8x) × 0,95 = 22,2x | 14,0x / 16,4x / 18,8x | 15,2x | **16,9x** | 19,4x | —x / 14,4x / —x |
-| P/FCFE | mediana Dec '25, LTM (etapa actual) = 19,8x | 20,7x (n=4: AZN 42,1x, NVS 18,5x, MRK 22,9x, PFE 14,9x) × 0,95 = 19,7x | 15,2x / 18,0x / 20,7x | 16,5x | **19,3x** | 23,3x | —x / 17,0x / —x |
-| P/OCF | mediana Dec '25, LTM (etapa actual) = 10,4x | 16,8x (n=4: AZN 18,6x, NVS 15,1x, MRK 18,4x, PFE 12,2x) × 0,95 = 15,9x | 7,9x / 10,7x / 13,4x | 10,4x | **12,5x** | 14,4x | —x / 13,9x / —x |
+| EV/EBITDA | mediana Dec '25, LTM (etapa actual) = 9,4x | 13,8x (n=5: AZN 14,2x, NVS 13,8x, SNY 8,5x, MRK 14,3x, PFE 8,5x) × 0,95 = 13,1x | 8,7x / 6,6x / 10,8x | **10,6x** | 8,1x | 11,9x | 11,1x / —x / —x |
+| EV/FCFF | mediana Dec '25, LTM (etapa actual) = 22,4x (EV/FCF × 1,05 = FCF después de intereses ÷ FCFF) | 21,8x (n=4: AZN 38,0x, NVS 19,8x, MRK 23,7x, PFE 16,5x) × 0,95 = 20,7x | 19,5x / 16,3x / 22,7x | **21,0x** | 18,1x | 24,9x | 22,5x / 19,9x / 26,1x |
+| P/E | mediana Dec '25, LTM (etapa actual) = 12,0x | 23,4x (n=4: AZN 24,6x, NVS 22,0x, SNY 22,1x, PFE 37,8x) × 0,95 = 22,2x | 16,4x / 14,0x / 18,8x | **16,9x** | 15,2x | 19,4x | 14,4x / —x / —x |
+| P/FCFE | mediana Dec '25, LTM (etapa actual) = 19,8x | 20,7x (n=4: AZN 42,1x, NVS 18,5x, MRK 22,9x, PFE 14,9x) × 0,95 = 19,7x | 18,0x / 15,2x / 20,7x | **19,3x** | 16,5x | 23,3x | 17,0x / —x / —x |
+| P/OCF | mediana Dec '25, LTM (etapa actual) = 10,4x | 16,8x (n=4: AZN 18,6x, NVS 15,1x, MRK 18,4x, PFE 12,2x) × 0,95 = 15,9x | 10,7x / 7,9x / 13,4x | **12,5x** | 10,4x | 14,4x | 13,9x / —x / —x |
 
-Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
+Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
 - **EV/EBITDA.** Base 10,6x: promedio de historia y peers 11,2x, acercado 25% al justificado (8,7x); rango de anclas 8,7x–13,1x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **EV/FCFF.** Base 21,0x: promedio de historia y peers 21,5x, acercado 25% al justificado (19,5x); rango de anclas 19,5x–22,4x. Atípicos excluidos de la historia: ninguno.  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
@@ -79,37 +79,37 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$42,20 fr
 
 Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:
 
-| Método | Peso | Conservador | Base | Optimista |
+| Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$43,02 | US$55,58 | US$68,83 |
-| EV/EBITDA | 20% | US$35,16 | US$52,23 | US$64,82 |
-| EV/FCFF | 10% | US$32,02 | US$46,16 | US$63,86 |
-| P/E | 20% | US$49,33 | US$62,80 | US$79,46 |
-| P/FCFE | 5% | US$34,35 | US$51,21 | US$73,01 |
-| P/OCF | 5% | US$40,67 | US$55,58 | US$70,56 |
-| **Ponderado FY+3** | 100% | US$41,06 | US$55,19 | US$69,95 |
+| DCF Damodaran | 40% | US$55,58 | US$43,02 | US$68,83 |
+| EV/EBITDA | 20% | US$52,23 | US$35,16 | US$64,82 |
+| EV/FCFF | 10% | US$46,16 | US$32,02 | US$63,86 |
+| P/E | 20% | US$62,80 | US$49,33 | US$79,46 |
+| P/FCFE | 5% | US$51,21 | US$34,35 | US$73,01 |
+| P/OCF | 5% | US$55,58 | US$40,67 | US$70,56 |
+| **Ponderado FY+3** | 100% | US$55,19 | US$41,06 | US$69,95 |
 
 Valor presente (Ke 9,55%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$29,92 | US$27,61 | US$26,74 | US$28,09 | OK |
 | EV/EBITDA | Base | US$41,32 | US$40,03 | US$39,72 | US$40,36 | OK |
+| EV/EBITDA | Conservador | US$29,92 | US$27,61 | US$26,74 | US$28,09 | OK |
 | EV/EBITDA | Optimista | US$47,34 | US$48,23 | US$49,30 | US$48,29 | OK |
-| EV/FCFF | Conservador | US$26,19 | US$25,57 | US$24,36 | US$25,37 | OK |
 | EV/FCFF | Base | US$33,96 | US$35,36 | US$35,11 | US$34,81 | OK |
+| EV/FCFF | Conservador | US$26,19 | US$25,57 | US$24,36 | US$25,37 | OK |
 | EV/FCFF | Optimista | US$42,29 | US$47,21 | US$48,57 | US$46,02 | OK |
-| P/E | Conservador | US$44,09 | US$39,79 | US$37,52 | US$40,46 | OK |
 | P/E | Base | US$50,83 | US$48,73 | US$47,76 | US$49,11 | OK |
+| P/E | Conservador | US$44,09 | US$39,79 | US$37,52 | US$40,46 | OK |
 | P/E | Optimista | US$59,16 | US$59,74 | US$60,43 | US$59,78 | OK |
-| P/FCFE | Conservador | US$22,46 | US$27,26 | US$26,12 | US$25,28 | OK |
 | P/FCFE | Base | US$32,24 | US$39,22 | US$38,95 | US$36,80 | OK |
+| P/FCFE | Conservador | US$22,46 | US$27,26 | US$26,12 | US$25,28 | OK |
 | P/FCFE | Optimista | US$42,28 | US$54,18 | US$55,53 | US$50,66 | OK |
-| P/OCF | Conservador | US$32,71 | US$31,96 | US$30,93 | US$31,87 | OK |
 | P/OCF | Base | US$41,65 | US$42,45 | US$42,27 | US$42,13 | OK |
+| P/OCF | Conservador | US$32,71 | US$31,96 | US$30,93 | US$31,87 | OK |
 | P/OCF | Optimista | US$49,16 | US$52,45 | US$53,67 | US$51,76 | OK |
 
-Múltiplos consolidados hoy: US$31,84 / US$42,20 / US$52,23 · DCF hoy: US$32,72 / US$42,27 / US$52,35 · Ponderado hoy: US$32,19 / US$42,23 / US$52,27 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$42,20 / US$31,84 / US$52,23 · DCF técnico hoy: US$42,27 / US$32,72 / US$52,35 · Ponderado hoy: US$42,23 / US$32,19 / US$52,27 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 

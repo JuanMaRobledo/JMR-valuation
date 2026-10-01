@@ -14,23 +14,23 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$51,02.** Historia central A: US$55,62; rango US$15,71–US$95,59; precio con MOS 35% sobre el esperado: US$33,16; precio de referencia US$188,17. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$85,37) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$55,62 por acción.** Complemento: DCF esperado por probabilidades US$51,02; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$15,71–US$95,59; precio con MOS 35% sobre el esperado: US$33,16; precio de referencia US$188,17. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$85,37) y los múltiplos y el ponderado son lecturas secundarias.
 
 
-| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · Hipercrecimiento que desacelera con la escala | 40% | US$55,62 | US$22,25 |
-| B · Se normaliza en un software de alta calidad | 30% | US$26,93 | US$8,08 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos | 10% | US$15,71 | US$1,57 |
-| D · Sistema operativo de la IA empresarial | 20% | US$95,59 | US$19,12 |
-| **DCF esperado** | 100% | **US$51,02** | |
+| **Base · Hipercrecimiento que desacelera con la escala** (valor principal) | 40% | US$55,62 | US$22,25 |
+| Conservadora · Se normaliza en un software de alta calidad | 30% | US$26,93 | US$8,08 |
+| Disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos | 10% | US$15,71 | US$1,57 |
+| Optimista · Sistema operativo de la IA empresarial | 20% | US$95,59 | US$19,12 |
+| **DCF esperado (complemento)** | 100% | **US$51,02** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$85,42 por acción y los múltiplos, US$123,49 hoy: 45% por encima del DCF, fuera del rango de ±25%. Los múltiplos suponen que en FY+3 Palantir cotiza como el software de crecimiento alto de hoy; P/E y P/OCF quedan muy por encima de EV/EBITDA porque la utilidad normalizada de FY+3 supera al EBITDA, algo que conviene revisar en la proyección.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$55,51 | US$67,98 | US$60,50 | US$33,16 | US$84,75 |
 | Base | US$85,37 | US$124,43 | US$101,00 | US$33,16 | US$145,19 |
+| Conservador | US$55,51 | US$67,98 | US$60,50 | US$33,16 | US$84,75 |
 | Optimista | US$185,52 | US$220,74 | US$199,61 | US$33,16 | US$301,57 |
 
 ## 2. Datos
@@ -57,15 +57,15 @@ Costo de capital: tasa libre de riesgo 5,00%, beta apalancada 1,25, ERP 4,46%, K
 
 A: Palantir es rentable desde 2023 y cotiza como la plataforma de IA de mayor crecimiento del software (ingresos 2026 +82% según su guía), a 150-500x EBITDA. Ese múltiplo no se usa como ancla: el Base de la hoja lleva el crecimiento de 82% a 40% en FY+3, y el múltiplo de FY+3 tiene que ser el de una empresa que crece 40%, no 80%. El ancla es B (peers ajustados). la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza B: software de crecimiento alto y rentable (ServiceNow, Fortinet, AppLovin, Datadog, MongoDB, Axon, Palo Alto), datos de yfinance al 29-sep-2026. Se excluyen CrowdStrike, Cloudflare y Snowflake (margen operativo GAAP negativo: sus múltiplos de utilidad y EBITDA no tienen sentido) y, en P/E, Axon, Palo Alto, MongoDB y Datadog (P/E de 170-1.000x por compensación en acciones y utilidad casi cero). Ajuste +25%: en FY+3 el escenario Base todavía crece 40%, frente a 25-35% de la mediana de los peers hoy, con márgenes más altos. λ no aplica: el múltiplo justificado C no se puede calcular en ningún escenario porque el crecimiento de los años 4-10 (19-31%) supera al WACC (10,9%); la fórmula de Gordon exige g al menos 1 pp por debajo. Sin A ni C, el Base es B.
 
-| Método | A · historia | B · peers (ajustada) | C · justificado Cons/Base/Opt | Conservador | Base | Optimista | Antes (J8/J19/J30) |
+| Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 47,7x (n=3: NOW 47,7x, APP 19,1x, FTNT 48,4x) × 1,25 = 59,6x | — / — / — | 41,8x | **59,6x** | 61,4x | 37,4x / 61,2x / 99,0x |
-| EV/FCFF | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 59,0x (n=6: NOW 29,8x, DDOG 85,6x, MDB 37,2x, AXON 157,6x, PANW 77,9x, FTNT 40,1x) × 1,25 = 73,7x | — / — / — | 47,4x | **73,7x** | 104,6x | 37,0x / 65,4x / 106,0x |
-| P/E | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 62,4x (n=3: NOW 81,2x, APP 23,5x, FTNT 62,4x) × 1,25 = 78,0x | — / — / — | 53,7x | **78,0x** | 89,8x | 26,4x / 41,8x / 66,6x |
-| P/FCFE | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 41,4x (n=5: NOW 29,4x, DDOG 89,9x, MDB 41,2x, PANW 77,2x, FTNT 41,4x) × 1,25 = 51,8x | — / — / — | 50,2x | **51,8x** | 96,6x | 25,6x / 42,6x / 68,0x |
-| P/OCF | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 55,2x (n=6: NOW 25,3x, DDOG 78,5x, MDB 40,7x, AXON 128,2x, PANW 69,8x, FTNT 38,0x) × 1,25 = 69,0x | — / — / — | 48,4x | **69,0x** | 95,4x | 25,4x / 42,3x / 67,4x |
+| EV/EBITDA | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 47,7x (n=3: NOW 47,7x, APP 19,1x, FTNT 48,4x) × 1,25 = 59,6x | — / — / — | **59,6x** | 41,8x | 61,4x | 61,2x / 37,4x / 99,0x |
+| EV/FCFF | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 59,0x (n=6: NOW 29,8x, DDOG 85,6x, MDB 37,2x, AXON 157,6x, PANW 77,9x, FTNT 40,1x) × 1,25 = 73,7x | — / — / — | **73,7x** | 47,4x | 104,6x | 65,4x / 37,0x / 106,0x |
+| P/E | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 62,4x (n=3: NOW 81,2x, APP 23,5x, FTNT 62,4x) × 1,25 = 78,0x | — / — / — | **78,0x** | 53,7x | 89,8x | 41,8x / 26,4x / 66,6x |
+| P/FCFE | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 41,4x (n=5: NOW 29,4x, DDOG 89,9x, MDB 41,2x, PANW 77,2x, FTNT 41,4x) × 1,25 = 51,8x | — / — / — | **51,8x** | 50,2x | 96,6x | 42,6x / 25,6x / 68,0x |
+| P/OCF | sin historia representativa (la historia no representa a la Palantir de FY+3: antes de 2023 la utilidad era negativa y desde 2023 el múltiplo (150-500x) corresponde a un crecimiento de ~80% que en el escenario Base baja a 40% en FY+3; aplicarlo a la métrica de FY+3 supondría que el mercado no comprime el múltiplo mientras el crecimiento se normaliza) | 55,2x (n=6: NOW 25,3x, DDOG 78,5x, MDB 40,7x, AXON 128,2x, PANW 69,8x, FTNT 38,0x) × 1,25 = 69,0x | — / — / — | **69,0x** | 48,4x | 95,4x | 42,3x / 25,4x / 67,4x |
 
-Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
+Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
 - **EV/EBITDA.** Base 59,6x: promedio de historia y peers 59,6x, acercado 0% al justificado (—x); rango de anclas 59,6x–59,6x. Atípicos excluidos de la historia: Dec '18 (0,0x: métrica negativa o ~0); Dec '20 (-34,8x: métrica negativa o ~0); Dec '21 (-86,8x: métrica negativa o ~0); Dec '22 (-78,2x: métrica negativa o ~0); Dec '19 (1,2x: < 0,4x la mediana (222.4x), caída puntual).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **EV/FCFF.** Base 73,7x: promedio de historia y peers 73,7x, acercado 0% al justificado (—x); rango de anclas 73,7x–73,7x. Atípicos excluidos de la historia: Dec '18 (0,0x: métrica negativa o ~0); Dec '20 (-130,8x: métrica negativa o ~0); Dec '19 (3,8x: < 0,4x la mediana (107.0x), caída puntual).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
@@ -79,37 +79,37 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$124,43 f
 
 Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:
 
-| Método | Peso | Conservador | Base | Optimista |
+| Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$75,05 | US$115,42 | US$250,82 |
-| EV/EBITDA | 10% | US$73,20 | US$140,29 | US$211,52 |
-| EV/FCFF | 15% | US$83,52 | US$175,17 | US$366,41 |
-| P/E | 5% | US$137,37 | US$273,98 | US$465,56 |
-| P/FCFE | 5% | US$131,97 | US$187,14 | US$518,09 |
-| P/OCF | 5% | US$128,11 | US$251,59 | US$515,58 |
-| **Ponderado FY+3** | 100% | US$84,75 | US$145,19 | US$301,57 |
+| DCF Damodaran | 60% | US$115,42 | US$75,05 | US$250,82 |
+| EV/EBITDA | 10% | US$140,29 | US$73,20 | US$211,52 |
+| EV/FCFF | 15% | US$175,17 | US$83,52 | US$366,41 |
+| P/E | 5% | US$273,98 | US$137,37 | US$465,56 |
+| P/FCFE | 5% | US$187,14 | US$131,97 | US$518,09 |
+| P/OCF | 5% | US$251,59 | US$128,11 | US$515,58 |
+| **Ponderado FY+3** | 100% | US$145,19 | US$84,75 | US$301,57 |
 
 Valor presente (Ke 10,58%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$47,02 | US$50,16 | US$54,14 | US$50,44 | OK |
 | EV/EBITDA | Base | US$80,99 | US$91,48 | US$103,77 | US$92,08 | OK |
+| EV/EBITDA | Conservador | US$47,02 | US$50,16 | US$54,14 | US$50,44 | OK |
 | EV/EBITDA | Optimista | US$93,43 | US$121,75 | US$156,45 | US$123,88 | OK |
-| EV/FCFF | Conservador | US$53,67 | US$57,14 | US$61,78 | US$57,53 | OK |
 | EV/FCFF | Base | US$102,89 | US$114,04 | US$129,57 | US$115,50 | OK |
+| EV/FCFF | Conservador | US$53,67 | US$57,14 | US$61,78 | US$57,53 | OK |
 | EV/FCFF | Optimista | US$164,03 | US$210,35 | US$271,02 | US$215,13 | OK |
-| P/E | Conservador | US$85,52 | US$92,87 | US$101,61 | US$93,33 | OK |
 | P/E | Base | US$154,65 | US$177,03 | US$202,65 | US$178,11 | OK |
+| P/E | Conservador | US$85,52 | US$92,87 | US$101,61 | US$93,33 | OK |
 | P/E | Optimista | US$200,43 | US$265,47 | US$344,35 | US$270,08 | OK |
-| P/FCFE | Conservador | US$82,56 | US$89,28 | US$97,61 | US$89,82 | OK |
 | P/FCFE | Base | US$107,42 | US$121,02 | US$138,42 | US$122,29 | OK |
+| P/FCFE | Conservador | US$82,56 | US$89,28 | US$97,61 | US$89,82 | OK |
 | P/FCFE | Optimista | US$227,10 | US$295,84 | US$383,20 | US$302,05 | OK |
-| P/OCF | Conservador | US$80,13 | US$86,66 | US$94,76 | US$87,18 | OK |
 | P/OCF | Base | US$144,39 | US$162,69 | US$186,09 | US$164,39 | OK |
+| P/OCF | Conservador | US$80,13 | US$86,66 | US$94,76 | US$87,18 | OK |
 | P/OCF | Optimista | US$226,07 | US$294,45 | US$381,35 | US$300,62 | OK |
 
-Múltiplos consolidados hoy: US$67,98 / US$124,43 / US$220,74 · DCF hoy: US$55,51 / US$85,37 / US$185,52 · Ponderado hoy: US$60,50 / US$101,00 / US$199,61 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$124,43 / US$67,98 / US$220,74 · DCF técnico hoy: US$85,37 / US$55,51 / US$185,52 · Ponderado hoy: US$101,00 / US$60,50 / US$199,61 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
