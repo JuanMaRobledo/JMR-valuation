@@ -47,7 +47,9 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · El botón PayPal pierde frente a las billeteras nativas",
@@ -83,45 +85,12 @@
      0.02
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Reactivación: Fastlane, Venmo y publicidad",
-   "prob": 0.15,
-   "margen": 0.22,
-   "crec": {
-    "Checkout de marca": [
-     0.06,
-     0.06,
-     0.06,
-     0.05,
-     0.05
-    ],
-    "Procesamiento no de marca (Braintree)": [
-     0.05,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Venmo y P2P": [
-     0.2,
-     0.18,
-     0.15,
-     0.12,
-     0.1
-    ],
-    "Otros servicios de valor agregado": [
-     0.08,
-     0.08,
-     0.08,
-     0.08,
-     0.08
-    ]
-   }
-  },
-  {
-   "nombre": "D · Pierde el checkout y compite por precio",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.13,
    "crec": {
@@ -154,7 +123,48 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Pierde el checkout y compite por precio",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Reactivación: Fastlane, Venmo y publicidad",
+   "prob": 0.15,
+   "margen": 0.22,
+   "crec": {
+    "Checkout de marca": [
+     0.06,
+     0.06,
+     0.06,
+     0.05,
+     0.05
+    ],
+    "Procesamiento no de marca (Braintree)": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Venmo y P2P": [
+     0.2,
+     0.18,
+     0.15,
+     0.12,
+     0.1
+    ],
+    "Otros servicios de valor agregado": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -245,7 +255,7 @@
  "reinversion": {
   "texto": "Poco capital físico (capex de US$620-850 millones) y sales-to-capital de 2,6 en la hoja. El capital de trabajo incluye carteras de crédito (compra ahora y paga después) que PayPal vende a terceros. El flujo libre va a recompras: es la palanca principal del valor por acción. Ventaja que se desvanece: red de dos lados de comercios y usuarios, pero el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas. El ROIC después del año 10 es 13,4%, el punto medio entre el costo de capital terminal (9,0%) y su ROIC actual (17,8%), porque Damodaran no publica un promedio útil para su industria."
  },
- "prob_texto": "A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). D (10%) es PayPal convertido en procesador de bajo margen. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (45%) es la estabilización con Lores: crecimiento de un dígito medio y margen de ~19%. B (30%) es la pérdida continua del checkout de marca. C (10%) es PayPal convertido en procesador de bajo margen. D (15%) es una reactivación (Fastlane, Venmo en comercios, publicidad). En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Apple Pay, Shop Pay y los checkouts de plataforma siguen quitando participación al botón PayPal.",
   "Braintree renegocia con grandes comercios y el volumen crece sin margen.",

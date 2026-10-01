@@ -39,7 +39,9 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Pérdida de relevancia prolongada",
@@ -68,38 +70,12 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Vuelve la Nike de márgenes históricos",
-   "prob": 0.2,
-   "margen": 0.135,
-   "crec": {
-    "Calzado": [
-     0,
-     0.06,
-     0.07,
-     0.06,
-     0.05
-    ],
-    "Indumentaria": [
-     0.02,
-     0.06,
-     0.06,
-     0.05,
-     0.05
-    ],
-    "Equipamiento y otros": [
-     0.03,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ]
-   }
-  },
-  {
-   "nombre": "D · Aranceles y competencia estructural",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.05,
    "margen": 0.06,
    "crec": {
@@ -125,7 +101,41 @@
      -0.02
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Aranceles y competencia estructural",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Vuelve la Nike de márgenes históricos",
+   "prob": 0.2,
+   "margen": 0.135,
+   "crec": {
+    "Calzado": [
+     0,
+     0.06,
+     0.07,
+     0.06,
+     0.05
+    ],
+    "Indumentaria": [
+     0.02,
+     0.06,
+     0.06,
+     0.05,
+     0.05
+    ],
+    "Equipamiento y otros": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -210,7 +220,7 @@
  "reinversion": {
   "texto": "Capex de US$430-810 millones al año y sales-to-capital de 2,1 en la hoja. El FCFF cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; la recuperación del flujo depende del margen, no de invertir más. Ventaja que se desvanece: marca probada y escala global, pero con ventas en caída, descuentos y un ROIC que bajó de 47% a 18%. El ROIC después del año 10 es 11,2%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (20,9%), limitado a su ROIC actual (13,3%)."
  },
- "prob_texto": "A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. D (5%) es un deterioro estructural por aranceles y competencia. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (45%) es la recuperación que la empresa describe: ventas estabilizándose y margen volviendo a ~11% en siete años. B (30%) prolonga la pérdida de relevancia y la presión de precios. C (5%) es un deterioro estructural por aranceles y competencia. D (20%) es la vuelta a márgenes históricos con producto nuevo exitoso. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "On, Hoka, Adidas y marcas chinas siguen ganando en running y básquet; los productos nuevos de Nike no rotan.",
   "Los aranceles suben o se quedan y Nike no puede trasladarlos a precio.",

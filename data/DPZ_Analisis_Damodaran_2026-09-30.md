@@ -7,7 +7,9 @@ analysis_date: "2026-09-30"
 # Domino's Pizza, Inc. (DPZ) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$349,81 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$308,75; la historia central A vale US$352,14 y el rango es US$108,74–420,89. El MOS 35% se aplica al esperado: US$200,69. El antiguo caso Base de la hoja (US$349,81) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$349,81 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -30,8 +32,8 @@ Con ventas LTM de US$4.940 millones, la empresa está en el tramo **$4,500-7,000
 |---|---:|---:|
 | A · Crece por tiendas con ventas mismas tiendas bajas | 4,5% | 64% |
 | B · Los agregadores erosionan la ventaja | 2,5% | 77% |
-| C · Agregadores e internacional aceleran | 6,2% | 53% |
-| D · El sistema de franquicias se debilita | 0,7% | 83% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | 0,7% | 83% |
+| D · Agregadores e internacional aceleran | 6,2% | 53% |
 
 Para empresas de US$4.500-7.000 millones, crecer 4,5% anual cinco años (historia A) lo logró ~64%: la hoja es realista y cercana a la mediana nominal (~6,6%). Domino's no necesita crecer mucho para valer lo que dice el DCF; su valor depende más de la duración y de los márgenes que del crecimiento.
 
@@ -51,15 +53,15 @@ Para empresas de US$4.500-7.000 millones, crecer 4,5% anual cinco años (histori
 
 **Reinversión y retorno.** Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Ventaja durable: marca probada de más de 60 años y escala logística en reparto, con ROIC de 65-78% en 2021-2026. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Riesgo.** La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,05, y el DCF Base baja de US$349,63 a US$337,02. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización).
+**Riesgo.** La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,05, y el DCF técnico anterior baja de US$349,63 a US$337,02. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización).
 
-| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
+| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 0,90 | 9,0% | 7,7% | US$349,81 |
 | Bottom-up del sector (Restaurant/Dining, reapalancada) | 1,05 | 9,7% | 8,1% | US$337,04 |
 
 
-### Supuestos vigentes verificados
+### Calibración técnica anterior C/B/O (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -68,33 +70,136 @@ Para empresas de US$4.500-7.000 millones, crecer 4,5% anual cinco años (histori
 | Margen año 1 (base ajustada del modelo) | 19,0% | 19,0% | 19,0% |
 | Margen objetivo | 18,0% | 20,0% | 22,0% |
 
-Ventas/capital: 3,0x en años 1–5 y 3,0x en 6–10. WACC: 7,7%. Ke: 9,0%. Impuesto efectivo: 21,9%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+Ventas/capital: 3,0x en años 1–5 y 3,0x en 6–10. WACC: 7,7%. Ke: 9,0%. Impuesto efectivo: 21,9%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
-| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
 | Ventaja durable | 99,2% | 18,4% | 9,0% | 18,4% | US$349,81 | US$226,82 |
 
 Fuentes de ventaja: Marca probada (más de 60 años, se recuperó de la crisis de 2008-2010) y densidad y escala logística en reparto; franquicias con muy poco capital. Evidencia: ROIC 65-78% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
+### De dónde sale el cálculo: de la historia al valor por acción
+
+El valor principal de US$308,75 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$349,81 ni mezclando el DCF con múltiplos. La historia central A vale US$352,14; «central» y «esperado» son conceptos distintos.
+
+
+#### 1. Datos de partida y origen de los supuestos
+
+| Entrada | Valor usado | Origen y tratamiento |
+|---|---|---|
+| Ingresos LTM | US$4.940 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 2.960 + 1.980 = 4.940. |
+| Margen inicial del DCF | 19,0% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
+| Impuesto | 21,89% en años 1–5; 23,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
+| Descuento | WACC 7,67% → 9,00% | Tasa libre de riesgo 4,99%, beta 0,90, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 3,00x en años 1–5; 3,00x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
+| Crecimiento perpetuo | A/B/D: 4,99%; C: 1,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (1,00%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | A/D: 18,40%; B/C: 9,00% (= WACC terminal) | Criterio de ventaja competitiva (ventaja durable). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Puente al patrimonio | Caja 165; deuda 4.817; acciones 33,1 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
+
+
+#### 2. Cómo se convierte cada historia en ingresos
+
+Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
+
+Ejemplo A, año 1: 2.960 × 1,04 + 1.980 × 1,04 = US$5.137,60 millones. Frente a 4.940, el crecimiento consolidado es 4,00%. En los años 2–5 es 4,20%, 4,70%, 4,70%, 4,70%; las ventas del año 5 son US$6.144,54 millones. El 4,5% de la tabla es el crecimiento anual compuesto de los cinco años: (6.144,54 / 4.940)^(1/5) − 1; no se usa como tasa constante.
+
+
+#### 3. Del ingreso al flujo libre y su valor presente
+
+NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
+
+En A, año 1: NOPAT = 5.137,60 × 19,00% × (1 − 21,89%) = US$762,47 millones. La reinversión es US$71,93 millones y el FCFF es US$690,53 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 27,1% (4,99% / 18,40%); B, 55,4% (4,99% / 9,00%); C, 11,1% (1,00% / 9,00%); D, 27,1% (4,99% / 18,40%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+
+
+#### 4. Puente numérico de los cuatro DCF
+
+Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
+
+| Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
+|---|---:|---:|---:|---:|---:|
+| A | 5.761,43 | 10.546,54 | 16.307,97 | 11.655,97 | 352,14 |
+| B | 5.121,68 | 5.231,53 | 10.353,21 | 5.701,21 | 172,24 |
+| C | 4.619,05 | 3.632,31 | 8.251,36 | 3.599,36 | 108,74 |
+| D | 6.345,53 | 12.237,93 | 18.583,46 | 13.931,46 | 420,89 |
+
+Ejemplo A: (5.761,43 + 10.546,54 + 165 − 4.817) / 33,1 = US$352,14 por acción. El terminal representa 64,7% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+
+
+#### 5. Valor esperado, probabilidades y margen de seguridad
+
+Las probabilidades 50% / 25% / 5% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
+
+Valor esperado = 0,50 × 352,144019 + 0,25 × 172,241846 + 0,05 × 108,742032 + 0,20 × 420,890010 = US$308,747574 ≈ US$308,75. Los aportes son US$176,07 + US$43,06 + US$5,44 + US$84,18 por acción.
+
+Precio con MOS = valor esperado × (1 − 35%) = 308,747574 × 0,65 = US$200,685923 ≈ US$200,69. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
+
+
+### Las cuatro tesis: base, conservadora, disrupción y optimista
+
+Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$352,14; el valor esperado de US$308,75 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### A · Tesis base: Crece por tiendas con ventas mismas tiendas bajas
+
+**Qué plantea.** Es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas.
+
+**Traducción al modelo.** Cadena de suministro crece 4%, 4%, 4%, 4%, 4%; Regalías, tiendas propias y fondo de publicidad crece 4%, 4%, 5%, 5%, 5%. El crecimiento anual compuesto de cinco años es 4,5%; el margen operativo objetivo es 20,0%. El ROIC terminal es 18,4%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 50%; DCF: US$352,14 por acción.
+
+**Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (ventas mismas tiendas EE.UU.: +0,1% (2T26); ventas mismas tiendas internacionales: −0,1%; aperturas netas globales: Positivas). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
+
+
+#### B · Tesis conservadora: Los agregadores erosionan la ventaja
+
+**Qué plantea.** Es el riesgo de que los agregadores sigan quitando pedidos.
+
+**Traducción al modelo.** Cadena de suministro crece 2%, 2%, 2%, 2%, 2%; Regalías, tiendas propias y fondo de publicidad crece 2%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 2,5%; el margen operativo objetivo es 18,5%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 25%; DCF: US$172,24 por acción.
+
+**Cómo contrastarla.** La apoyarían: ventas mismas tiendas EE.UU.: negativas dos trimestres; ventas mismas tiendas internacionales: ≤ −2%; aperturas netas globales: cierres netos internacionales; margen operativo: ≤ 18%.
+
+
+#### C · Tesis de disrupción · Deterioro de los fundamentales: El sistema de franquicias se debilita
+
+**Qué plantea.** Es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades).
+
+**Traducción al modelo.** Cadena de suministro crece 0%, 0%, 1%, 1%, 1%; Regalías, tiendas propias y fondo de publicidad crece 0%, 1%, 1%, 1%, 1%. El crecimiento anual compuesto de cinco años es 0,7%; el margen operativo objetivo es 17,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 1,00%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 5%; DCF: US$108,74 por acción.
+
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: ventas mismas tiendas EE.UU.: negativas dos trimestres; ventas mismas tiendas internacionales: ≤ −2%; aperturas netas globales: cierres netos internacionales; margen operativo: ≤ 18%.
+
+
+#### D · Tesis optimista: Agregadores e internacional aceleran
+
+**Qué plantea.** Supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento.
+
+**Traducción al modelo.** Cadena de suministro crece 6%, 6%, 6%, 6%, 6%; Regalías, tiendas propias y fondo de publicidad crece 7%, 7%, 7%, 6%, 6%. El crecimiento anual compuesto de cinco años es 6,2%; el margen operativo objetivo es 21,0%. El ROIC terminal es 18,4%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 20%; DCF: US$420,89 por acción.
+
+**Cómo contrastarla.** La confirmarían: ventas mismas tiendas EE.UU.: ≥ +2%; ventas mismas tiendas internacionales: ≥ +2%; aperturas netas globales: ≥ 700 al año; margen operativo: ≥ 19,5%.
+
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,99%; C: 1,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+
+
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 0,90) | Valor/acción (beta 1,05) |
-|---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Crece por tiendas con ventas mismas tiendas bajas** | 50% | Cadena de suministro: 4%, 4%, 4%, 4%, 4%; Regalías, tiendas propias y fondo de publicidad: 4%, 4%, 5%, 5%, 5% | 4,5% | 20% | 3,0 | 18,4% | US$352,14 | US$339,30 |
-| **B · Los agregadores erosionan la ventaja** | 25% | Cadena de suministro: 2%, 2%, 2%, 2%, 2%; Regalías, tiendas propias y fondo de publicidad: 2%, 3%, 3%, 3%, 3% | 2,5% | 18% | 3,0 | = costo de capital | US$172,24 | US$164,64 |
-| **C · Agregadores e internacional aceleran** | 20% | Cadena de suministro: 6%, 6%, 6%, 6%, 6%; Regalías, tiendas propias y fondo de publicidad: 7%, 7%, 7%, 6%, 6% | 6,2% | 21% | 3,0 | 18,4% | US$420,89 | US$406,09 |
-| **D · El sistema de franquicias se debilita** | 5% | Cadena de suministro: 0%, 0%, 1%, 1%, 1%; Regalías, tiendas propias y fondo de publicidad: 0%, 1%, 1%, 1%, 1% | 0,7% | 17% | 3,0 | = costo de capital | US$125,33 | US$119,04 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$309,58** | **US$297,98** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 0,90) | Valor/acción (beta 1,05) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| **A · Crece por tiendas con ventas mismas tiendas bajas** | 50% | Cadena de suministro: 4%, 4%, 4%, 4%, 4%; Regalías, tiendas propias y fondo de publicidad: 4%, 4%, 5%, 5%, 5% | 4,5% | 20% | 3,0 | 18,4% | 4,99% | US$352,14 | US$339,30 |
+| **B · Los agregadores erosionan la ventaja** | 25% | Cadena de suministro: 2%, 2%, 2%, 2%, 2%; Regalías, tiendas propias y fondo de publicidad: 2%, 3%, 3%, 3%, 3% | 2,5% | 18% | 3,0 | = costo de capital | 4,99% | US$172,24 | US$164,64 |
+| **C · Tesis de disrupción · Deterioro de los fundamentales: El sistema de franquicias se debilita** | 5% | Cadena de suministro: 0%, 0%, 1%, 1%, 1%; Regalías, tiendas propias y fondo de publicidad: 0%, 1%, 1%, 1%, 1% | 0,7% | 17% | 3,0 | = costo de capital | 1,00% | US$108,74 | US$102,95 |
+| **D · Agregadores e internacional aceleran** | 20% | Cadena de suministro: 6%, 6%, 6%, 6%, 6%; Regalías, tiendas propias y fondo de publicidad: 7%, 7%, 7%, 6%, 6% | 6,2% | 21% | 3,0 | 18,4% | 4,99% | US$420,89 | US$406,09 |
+| **Valor esperado** | 100% |  |  |  |  |  |  | **US$308,75** | **US$297,18** |
 
-A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). D (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF Base (beta 0,90; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF técnico anterior (beta 0,90; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
-Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
 | Crecimiento \ Margen | 16,0% | 18,0% | 20,0% | 22,0% | 24,0% |
 |---|---:|---:|---:|---:|---:|
@@ -140,7 +245,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 0,90 | 3,3% (72% de las empresas) | 2,4% (77% de las empresas) | 1,5% (80% de las empresas) |
 | Beta 1,05 | 3,8% (69% de las empresas) | 2,9% (75% de las empresas) | 2,0% (79% de las empresas) |
 
-Frente al valor esperado de las historias (US$309,58 con la beta de la hoja; US$297,98 con la propuesta), el precio está por debajo en 3% y por encima en 0%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al valor esperado de las historias (US$308,75 con la beta de la hoja; US$297,18 con la propuesta), el precio está por debajo en 3% y por encima en 1%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -149,9 +254,11 @@ Frente al valor esperado de las historias (US$309,58 con la beta de la hoja; US$
 |---|---|---|
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Compuesto de franquicias maduro que crece por tiendas nuevas, con ventas por tienda planas |  |
-| Probabilidades | A 50% / B 25% / C 20% / D 5% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$309,58 / US$297,98 |  |
-| Rango (historia más débil a más fuerte) | US$119,04 a US$420,89 |  |
+| Probabilidades | A 50% / B 25% / C 5% / D 20% |  |
+| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$308,75 / US$297,18 |  |
+| DCF base hoy (historia A) | US$352,14 |  |
+| Precio con MOS sobre el valor esperado | US$200,69 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$102,95 a US$420,89 |  |
 | Confianza | Media-alta en el negocio; media en el crecimiento por tienda |  |
 | Qué cambiaría la opinión | Ventas mismas tiendas en EE.UU. y aperturas internacionales netas |  |
 | Revisión | Resultados del 3T26 (oct-2026) |  |

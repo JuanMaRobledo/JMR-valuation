@@ -25,7 +25,7 @@ from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 
 _ROOT = Path(__file__).resolve().parents[1]
 OUT = _ROOT / "reference" / "revision_dcf_2026-09-30"
-IS, VO, COC = "Input sheet", "Valuation output", "Cost of capital worksheet"
+IS, VO, COC, RD = "Input sheet", "Valuation output", "Cost of capital worksheet", "R& D converter"
 
 # (hoja, celda, valor nuevo, motivo)
 CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
@@ -132,6 +132,35 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (IS, "B20", 97.1, "Inversiones de largo plazo al 30-jun-2026 (10-Q 2T26); antes US$197,1M, el saldo de dic-2025."),
         (IS, "B15", 2199.8, "Patrimonio al 30-jun-2026 (10-Q 2T26); antes US$2.830,6M, el saldo de dic-2025. Bajó por recompras de US$1.355M en el semestre."),
     ],
+    # Séptima ronda (1-oct-2026): conversor de I+D con períodos alineados al LTM, como la corrección verificada de ADBE.
+    # El año −1 del conversor debe ser los doce meses anteriores al LTM, no el último ejercicio fiscal (que se solapa
+    # con el LTM): LTM a jun-2025 = ejercicio 2024 + 1S25 − 1S24, y así hacia atrás (10-Q de cada año, SEC EDGAR).
+    "DUOL_RD": [
+        (RD, "B12", "='Income Statement'!J10+144,06-106,025", "I+D de los 12 meses a jun-2025 = 2024 (235,3) + 1S25 (144,06) − 1S24 (106,025) = 273,3 (10-Q 2T25 y 2T24). Antes el ejercicio 2025, que se solapa con el LTM."),
+        (RD, "B13", "='Income Statement'!I10+106,025-93,791", "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."),
+        (RD, "B14", "='Income Statement'!H10+93,791-63,998", "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."),
+    ],
+    "PLTR_RD": [
+        (RD, "B12", "='Income Statement'!J10+269,932-218,821", "I+D de los 12 meses a jun-2025 = 2024 (507,9) + 1S25 (269,9) − 1S24 (218,8) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM."),
+        (RD, "B13", "='Income Statement'!I10+218,821-189,633", "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."),
+        (RD, "B14", "='Income Statement'!H10+189,633-176,772", "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."),
+    ],
+    "PYPL_RD": [
+        (RD, "B12", "='Income Statement'!J10+1498-1460", "Tecnología y desarrollo de los 12 meses a jun-2025 = 2024 (2.979) + 1S25 (1.498) − 1S24 (1.460) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM."),
+        (RD, "B13", "='Income Statement'!I10+1460-1464", "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."),
+        (RD, "B14", "='Income Statement'!H10+1464-1630", "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."),
+    ],
+    "UBER_RD": [
+        (RD, "B12", "='Income Statement'!J10+1655-1550", "I+D de los 12 meses a jun-2025 = 2024 (3.109) + 1S25 (1.655) − 1S24 (1.550) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM."),
+        (RD, "B13", "='Income Statement'!I10+1550-1583", "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."),
+        (RD, "B14", "='Income Statement'!H10+1583-1291", "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."),
+    ],
+    # MSFT cierra en junio: el LTM es el ejercicio 2026, así que el año −1 es el ejercicio 2025 (antes repetía el 2026).
+    "MSFT_RD": [
+        (RD, "B12", "='Income Statement'!J10", "Año −1 = ejercicio a jun-2025 (32.488). Antes repetía el ejercicio a jun-2026, que es el mismo LTM: el activo de I+D contaba dos veces el año actual."),
+        (RD, "B13", "='Income Statement'!I10", "Año −2 = ejercicio a jun-2024. Antes el ejercicio a jun-2025."),
+        (RD, "B14", "='Income Statement'!H10", "Año −3 = ejercicio a jun-2023. Antes el ejercicio a jun-2024."),
+    ],
     # CELH_IMPUESTO se aplicó y se revirtió el 30-sep-2026: la hoja ya usa la tasa marginal (24%) desde el año 1
     # ('Valuation output'!C8 = 'Input sheet'!B25); B24 solo alimenta el año base y no cambia el valor.
     "CELH_IMPUESTO": [
@@ -161,7 +190,8 @@ def _roic_nota(m: dict) -> str:
                    f"({_p(m['costo_capital_terminal'])}) y {ref}, porque la ventaja se desvanece.")
 
 
-for _t in ("CMG", "AFYA", "LULU", "EPAM"):
+# MSFT (1-oct-2026): el ROIC actual sube a 26,5% al corregir el conversor de I+D y sigue bajo el de la industria.
+for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT"):
     _m = _MOAT[_t]
     CHANGES[f"{_t}_ROIC"] = [(IS, "B49", "Yes", _roic_nota(_m)), (IS, "B50", _m["roic_terminal"], _roic_nota(_m))]
 
@@ -196,7 +226,8 @@ def main(argv: list[str]) -> int:
         vistas = {(c["hoja"], c["celda"]) for c in bk["cambios"]}
         bk["cambios"] += [c for c in cambios if (c["hoja"], c["celda"]) not in vistas]
         bk_path.write_text(json.dumps(bk, ensure_ascii=False, indent=1))
-        sh.values_batch_update({"valueInputOption": "RAW", "data": [{"range": f"'{c['hoja']}'!{c['celda']}", "values": [[c["despues"]]]} for c in cambios]})
+        # USER_ENTERED: los números entran como números y las fórmulas (conversor de I+D) como fórmulas.
+        sh.values_batch_update({"valueInputOption": "USER_ENTERED", "data": [{"range": f"'{c['hoja']}'!{c['celda']}", "values": [[c["despues"]]]} for c in cambios]})
         for c in cambios:
             sh.worksheet(c["hoja"]).insert_note(c["celda"], f"Revisión 30-sep-2026: antes {c['antes']}, ahora {c['despues']}. {c['motivo']}")
             time.sleep(0.4)

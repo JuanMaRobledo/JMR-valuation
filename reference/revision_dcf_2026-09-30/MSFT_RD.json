@@ -1,0 +1,28 @@
+{
+ "ticker": "MSFT_RD",
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10",
+   "motivo": "Año −1 = ejercicio a jun-2025 (32.488). Antes repetía el ejercicio a jun-2026, que es el mismo LTM: el activo de I+D contaba dos veces el año actual."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10",
+   "motivo": "Año −2 = ejercicio a jun-2024. Antes el ejercicio a jun-2025."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10",
+   "motivo": "Año −3 = ejercicio a jun-2023. Antes el ejercicio a jun-2024."
+  }
+ ]
+}

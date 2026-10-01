@@ -1,0 +1,21 @@
+{
+ "ticker": "MSFT_ROIC",
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn). Evidencia: ROIC 30-72% en 2021-2026. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (26,5%): 26,5% (Damodaran, Investment Valuation, cap. 12)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.259,
+   "despues": 0.265,
+   "motivo": "Ventaja durable: Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn). Evidencia: ROIC 30-72% en 2021-2026. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (26,5%): 26,5% (Damodaran, Investment Valuation, cap. 12)."
+  }
+ ]
+}

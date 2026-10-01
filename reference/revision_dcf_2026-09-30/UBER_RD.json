@@ -1,0 +1,28 @@
+{
+ "ticker": "UBER_RD",
+ "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10+1655-1550",
+   "motivo": "I+D de los 12 meses a jun-2025 = 2024 (3.109) + 1S25 (1.655) − 1S24 (1.550) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10+1550-1583",
+   "motivo": "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10+1583-1291",
+   "motivo": "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."
+  }
+ ]
+}

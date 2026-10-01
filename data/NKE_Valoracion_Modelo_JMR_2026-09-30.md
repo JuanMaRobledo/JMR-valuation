@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$33,96 en el escenario Base (rango US$17,86–US$46,10). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$34,03 (+0% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$34,00. El valor intrínseco es el DCF: US$33,96 frente a un precio de referencia de US$35,35 (−4%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$32,19.** Historia central A: US$34,88; rango US$14,93–US$46,23; precio con MOS 35% sobre el esperado: US$20,92; precio de referencia US$35,35. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$33,96) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$33,96 por acción y los múltiplos, US$34,03 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · Recuperación lenta con la vuelta a los mayoristas | 45% | US$34,88 | US$15,70 |
+| B · Pérdida de relevancia prolongada | 30% | US$21,68 | US$6,50 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Aranceles y competencia estructural | 5% | US$14,93 | US$0,75 |
+| D · Vuelve la Nike de márgenes históricos | 20% | US$46,23 | US$9,25 |
+| **DCF esperado** | 100% | **US$32,19** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$33,96 por acción y los múltiplos, US$34,03 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$17,86 | US$22,32 | US$20,54 | US$20,93 | US$26,33 |
-| Base | US$33,96 | US$34,03 | US$34,00 | US$20,93 | US$46,93 |
-| Optimista | US$46,10 | US$45,43 | US$45,70 | US$20,93 | US$64,68 |
+| Conservador | US$17,86 | US$22,32 | US$20,54 | US$20,92 | US$26,33 |
+| Base | US$33,96 | US$34,03 | US$34,00 | US$20,92 | US$46,93 |
+| Optimista | US$46,10 | US$45,43 | US$45,70 | US$20,92 | US$64,68 |
 
 ## 2. Datos
 
@@ -104,7 +113,7 @@ Múltiplos consolidados hoy: US$22,32 / US$34,03 / US$45,43 · DCF hoy: US$17,86
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NKE la diferencia es de +0% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$33,96 por acción y los múltiplos, US$34,03 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NKE la diferencia es de +0% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$33,96 por acción y los múltiplos, US$34,03 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 

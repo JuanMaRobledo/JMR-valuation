@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$167,44 en el escenario Base (rango US$112,44–US$223,27). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$107,52 (−36% frente al DCF). Con los pesos de la categoría «Cíclica/Commodity» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$131,49. El valor intrínseco es el DCF: US$167,44 frente a un precio de referencia de US$96,32 (+74%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$148,45.** Historia central A: US$172,25; rango US$71,34–US$229,97; precio con MOS 30% sobre el esperado: US$103,91; precio de referencia US$96,32. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$167,44) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$167,44 por acción y los múltiplos, US$107,52 hoy: 36% por debajo del DCF, fuera del rango de ±25%. Es un desacuerdo de historia, no una inconsistencia: el DCF supone que la marca se estabiliza y el mercado la paga como una marca que sigue perdiendo clientas (~6x EBITDA). El DCF se lee como el valor si se cumple la estabilización.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · Se estabiliza Américas y crece lo internacional | 40% | US$172,25 | US$68,90 |
+| B · Pérdida estructural frente a Alo y Vuori | 35% | US$108,35 | US$37,92 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Moda que pasa: declive de la marca | 10% | US$71,34 | US$7,13 |
+| D · La marca se recupera | 15% | US$229,97 | US$34,50 |
+| **DCF esperado** | 100% | **US$148,45** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$167,44 por acción y los múltiplos, US$107,52 hoy: 36% por debajo del DCF, fuera del rango de ±25%. Es un desacuerdo de historia, no una inconsistencia: el DCF supone que la marca se estabiliza y el mercado la paga como una marca que sigue perdiendo clientas (~6x EBITDA). El DCF se lee como el valor si se cumple la estabilización.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$112,44 | US$76,37 | US$90,80 | US$104,03 | US$115,56 |
-| Base | US$167,44 | US$107,52 | US$131,49 | US$104,03 | US$173,13 |
-| Optimista | US$223,27 | US$143,08 | US$175,16 | US$104,03 | US$235,25 |
+| Conservador | US$112,44 | US$76,37 | US$90,80 | US$103,91 | US$115,56 |
+| Base | US$167,44 | US$107,52 | US$131,49 | US$103,91 | US$173,13 |
+| Optimista | US$223,27 | US$143,08 | US$175,16 | US$103,91 | US$235,25 |
 
 ## 2. Datos
 
@@ -104,7 +113,7 @@ Múltiplos consolidados hoy: US$76,37 / US$107,52 / US$143,08 · DCF hoy: US$112
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para LULU la diferencia es de −36% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$167,44 por acción y los múltiplos, US$107,52 hoy: 36% por debajo del DCF, fuera del rango de ±25%. Es un desacuerdo de historia, no una inconsistencia: el DCF supone que la marca se estabiliza y el mercado la paga como una marca que sigue perdiendo clientas (~6x EBITDA). El DCF se lee como el valor si se cumple la estabilización.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para LULU la diferencia es de −36% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$167,44 por acción y los múltiplos, US$107,52 hoy: 36% por debajo del DCF, fuera del rango de ±25%. Es un desacuerdo de historia, no una inconsistencia: el DCF supone que la marca se estabiliza y el mercado la paga como una marca que sigue perdiendo clientas (~6x EBITDA). El DCF se lee como el valor si se cumple la estabilización.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 

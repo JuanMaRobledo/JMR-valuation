@@ -39,7 +39,9 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · El capex de IA rinde menos de lo esperado",
@@ -68,10 +70,45 @@
      0.01
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Microsoft gana la plataforma empresarial de IA",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+   "prob": 0.1,
+   "margen": 0.37,
+   "crec": {
+    "Productivity and Business Processes": [
+     0.08,
+     0.06,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Intelligent Cloud": [
+     0.1,
+     0.04,
+     0.05,
+     0.06,
+     0.06
+    ],
+    "More Personal Computing": [
+     -0.03,
+     -0.02,
+     0,
+     0,
+     0
+    ]
+   },
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "La demanda de cómputo para IA se corrige",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Microsoft gana la plataforma empresarial de IA",
    "prob": 0.2,
    "margen": 0.48,
    "s2c": 0.6,
@@ -97,35 +134,9 @@
      0.03,
      0.03
     ]
-   }
-  },
-  {
-   "nombre": "D · La demanda de cómputo para IA se corrige",
-   "prob": 0.1,
-   "margen": 0.37,
-   "crec": {
-    "Productivity and Business Processes": [
-     0.08,
-     0.06,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Intelligent Cloud": [
-     0.1,
-     0.04,
-     0.05,
-     0.06,
-     0.06
-    ],
-    "More Personal Computing": [
-     -0.03,
-     -0.02,
-     0,
-     0,
-     0
-    ]
-   }
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -160,7 +171,7 @@
    "Probable"
   ]
  ],
- "tasas_base_nota": "Para empresas de más de US$50.000 millones, la mediana de crecimiento real a cinco años es 1,5%. Crecer 13% anual (historia A) lo logró ~10%; 17,5% (historia C), ~3%. Microsoft es la excepción que confirma la regla: hace cinco años que crece a doble dígito con más de US$150.000 millones de ventas. Aun así, la visión externa pide no extrapolar el 17,8% de FY26.",
+ "tasas_base_nota": "Para empresas de más de US$50.000 millones, la mediana de crecimiento real a cinco años es 1,5%. Crecer 13% anual (historia A) lo logró ~10%; 17,5% (historia D), ~3%. Microsoft es la excepción que confirma la regla: hace cinco años que crece a doble dígito con más de US$150.000 millones de ventas. Aun así, la visión externa pide no extrapolar el 17,8% de FY26.",
  "crecimiento": {
   "texto": "Ingresos de US$245.122 millones (FY24, +15,7%), US$281.724 millones (FY25, +14,9%) y US$331.839 millones (FY26, +17,8%). En FY25: Productivity US$120.810 millones (+12%), Intelligent Cloud US$106.265 millones (+20%) y More Personal Computing US$54.649 millones (+5%). En FY26, según los trimestres publicados, ~+16%, ~+30% y ~−1%. La división FY26 de las historias aplica esos crecimientos a FY25 (estimación propia).",
   "tabla": {
@@ -214,9 +225,9 @@
   "texto": "El margen operativo subió a 46,8% pese al capex porque la depreciación todavía no refleja toda la inversión. La hoja supone 46,3% el próximo año y 45% de objetivo. La depreciación de los centros de datos de IA (vidas útiles de 5-6 años) y los márgenes menores de la infraestructura de IA frente al software empujan hacia abajo; Copilot y el precio de Microsoft 365 empujan hacia arriba. Las historias van de 37% a 48%."
  },
  "reinversion": {
-  "texto": "La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia C se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Ventaja durable: costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn), con ROIC de 30-72% en 2021-2026. El ROIC después del año 10 es 25,9%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "La hoja usa un sales-to-capital de 0,65 en los años 1-5 (cada dólar de ingreso nuevo exige ~US$1,5 de capital) y 1 después: refleja el ciclo de capex de IA, muy distinto del Microsoft de software puro. En la historia D se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Ventaja durable: costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn), con ROIC de 30-72% en 2021-2026. El ROIC después del año 10 es 26,5%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (45%) es la continuación de FY24-FY26 con desaceleración gradual. B (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. C (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). D (10%) es una corrección de la demanda de cómputo. En las historias de erosión (B) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (45%) es la continuación de FY24-FY26 con desaceleración gradual. B (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. C (10%) es una corrección de la demanda de cómputo. D (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "OpenAI diversifica proveedores de cómputo y Azure pierde su cliente de IA más grande.",
   "Copilot no convence: la adopción pagada se estanca y Microsoft 365 crece solo por precio.",

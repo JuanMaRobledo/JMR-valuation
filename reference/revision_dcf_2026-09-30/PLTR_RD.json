@@ -1,0 +1,28 @@
+{
+ "ticker": "PLTR_RD",
+ "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10+269,932-218,821",
+   "motivo": "I+D de los 12 meses a jun-2025 = 2024 (507,9) + 1S25 (269,9) − 1S24 (218,8) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10+218,821-189,633",
+   "motivo": "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10+189,633-176,772",
+   "motivo": "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."
+  }
+ ]
+}

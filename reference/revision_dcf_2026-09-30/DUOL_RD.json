@@ -1,0 +1,28 @@
+{
+ "ticker": "DUOL_RD",
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10+144,06-106,025",
+   "motivo": "I+D de los 12 meses a jun-2025 = 2024 (235,3) + 1S25 (144,06) − 1S24 (106,025) = 273,3 (10-Q 2T25 y 2T24). Antes el ejercicio 2025, que se solapa con el LTM."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10+106,025-93,791",
+   "motivo": "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10+93,791-63,998",
+   "motivo": "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023."
+  }
+ ]
+}

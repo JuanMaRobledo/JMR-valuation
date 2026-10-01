@@ -151,7 +151,9 @@
     ]
    },
    "margen": 0.19,
-   "s2c": 2.5
+   "s2c": 2.5,
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Alani crece, Celsius sigue cediendo",
@@ -180,10 +182,12 @@
     ]
    },
    "margen": 0.16,
-   "s2c": 2.5
+   "s2c": 2.5,
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La moda se desgasta",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "crec": {
     "Celsius": [
@@ -209,7 +213,12 @@
     ]
    },
    "margen": 0.12,
-   "s2c": 2.5
+   "s2c": 2.5,
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "La moda se desgasta",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion"
   },
   {
    "nombre": "D · Plataforma multimarca",
@@ -238,10 +247,12 @@
     ]
    },
    "margen": 0.22,
-   "s2c": 1.5
+   "s2c": 1.5,
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
- "prob_texto": "A es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). B (35%) es la continuación de lo que muestra la factura. C (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). D (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras.",
+ "prob_texto": "A es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). B (35%) es la continuación de lo que muestra la factura. C (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). D (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Alani fue una moda: sus ventas al consumidor pasan de +56% a un dígito en 2027 y la participación retrocede.",
   "Las promociones se vuelven permanentes: el margen bruto no vuelve a 50% y el operativo se queda en 12-15%.",

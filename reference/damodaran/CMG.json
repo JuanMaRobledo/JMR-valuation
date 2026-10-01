@@ -23,7 +23,9 @@
      0.07,
      0.06
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Tráfico débil y margen presionado",
@@ -37,24 +39,12 @@
      0.05,
      0.04
     ]
-   }
+   },
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Vuelve el tráfico",
-   "prob": 0.2,
-   "margen": 0.18,
-   "crec": {
-    "Chipotle": [
-     0.11,
-     0.11,
-     0.1,
-     0.1,
-     0.09
-    ]
-   }
-  },
-  {
-   "nombre": "D · Crisis de marca o saturación: el tráfico cae",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.05,
    "margen": 0.12,
    "crec": {
@@ -66,7 +56,27 @@
      0.02
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Crisis de marca o saturación: el tráfico cae",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Vuelve el tráfico",
+   "prob": 0.2,
+   "margen": 0.18,
+   "crec": {
+    "Chipotle": [
+     0.11,
+     0.11,
+     0.1,
+     0.1,
+     0.09
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -101,7 +111,7 @@
    "Probable a largo plazo"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (historia A) lo logró ~38%; 10,2% (historia C), ~25%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).",
+ "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (historia A) lo logró ~38%; 10,2% (historia D), ~25%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).",
  "crecimiento": {
   "texto": "Ventas de US$9.872 millones (2023, +14,3%), US$11.314 millones (2024, +14,6%) y US$11.926 millones (2025, +5,4%); LTM US$12.424 millones. En el 2T26 los ingresos crecieron 9,3% (US$3.349 millones) con comparables de +2,2% (+1,2% ticket, +1,0% tráfico) y 38,3% de ventas digitales. El salto de 2025 hacia abajo viene de comparables planas o negativas; las aperturas sostuvieron el crecimiento. Para 2026 la empresa espera comparables de un dígito bajo y 350-370 aperturas; para el 3T26 anticipó comparables de ~+1%, con ~200 pb de freno por preocupaciones sanitarias de la industria, antes del brote de agosto.",
   "tabla": {
@@ -157,7 +167,7 @@
  "reinversion": {
   "texto": "Todo el crecimiento es propio: cada local nuevo se paga con caja (capex de US$560-670 millones al año). La hoja usa un sales-to-capital de 2,6 (años 1-5) y 2,2 (años 6-10). El retorno sobre el capital es alto (los locales se pagan en 2-3 años), así que el crecimiento crea valor mientras la economía unitaria se sostenga. La empresa además recompró US$2.783 millones LTM. Ventaja durable: marca probada de 30 años que superó la crisis sanitaria de 2015-2016, con ROIC (con arrendamientos) de 15-22%. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (40%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (35%) extiende la debilidad del consumidor y los costos; gana 5 pp porque la guía del 3T26 (~+1%) quedó en el piso de A y el brote de salmonella de agosto, no incluido en esa guía, añade presión al tráfico de corto plazo. C (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. D (5%) es una caída del tráfico por saturación (canibalización) o por una crisis de seguridad alimentaria que dañe la marca como en 2015-2016; el brote de 2026 vino de un proveedor compartido con Qdoba y la CDC no ve riesgo en curso, por eso D no sube. En las historias de erosión (D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (40%) es lo que muestran 2025-2026: unidades nuevas y comparables de 1-3%. B (35%) extiende la debilidad del consumidor y los costos; gana 5 pp porque la guía del 3T26 (~+1%) quedó en el piso de A y el brote de salmonella de agosto, no incluido en esa guía, añade presión al tráfico de corto plazo. C (5%) es una caída del tráfico por saturación (canibalización) o por una crisis de seguridad alimentaria que dañe la marca como en 2015-2016; el brote de 2026 vino de un proveedor compartido con Qdoba y la CDC no ve riesgo en curso, por eso C no sube. D (20%) es el regreso del tráfico por nuevas proteínas, velocidad de servicio y Chipotlanes. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Las comparables siguen planas o negativas: la marca perdió frescura frente a Cava, Sweetgreen y cadenas más baratas.",
   "El margen no vuelve: alimentos, aranceles y salarios suben más rápido que el precio que el cliente acepta.",
@@ -210,7 +220,7 @@
    "Nuevo brote o tráfico negativo atribuido al caso"
   ]
  ],
- "precio_lectura": "El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 13% por encima del DCF Base (US$28,19) y cerca de la historia C (US$32,88), la más optimista. El DCF inverso pide 7-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-42% de las empresas de este tamaño; con el margen objetivo de 17% y la beta de la hoja pide 10,5%, algo más que el 8% de la hoja. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).",
+ "precio_lectura": "El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 13% por encima del DCF Base (US$28,19) y cerca de la historia D (US$32,88), la más optimista. El DCF inverso pide 7-13% de crecimiento anual en los años 1-5 con márgenes de 15-19%, algo que lograron 14-42% de las empresas de este tamaño; con el margen objetivo de 17% y la beta de la hoja pide 10,5%, algo más que el 8% de la hoja. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).",
  "frase": "Cadena de restaurantes propios con gran economía unitaria y tráfico débil",
  "confianza": "Media: las aperturas son predecibles; el tráfico y el margen no",
  "cambiaria": "Comparables y tráfico de los próximos dos trimestres; margen operativo",

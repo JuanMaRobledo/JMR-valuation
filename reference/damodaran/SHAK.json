@@ -31,7 +31,9 @@
      0.12,
      0.12
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Crece, pero el margen no despega",
@@ -52,31 +54,12 @@
      0.08,
      0.08
     ]
-   }
+   },
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Economía unitaria de primer nivel",
-   "prob": 0.15,
-   "margen": 0.11,
-   "crec": {
-    "Shacks propios": [
-     0.15,
-     0.14,
-     0.13,
-     0.12,
-     0.11
-    ],
-    "Licencias": [
-     0.15,
-     0.15,
-     0.15,
-     0.15,
-     0.15
-    ]
-   }
-  },
-  {
-   "nombre": "D · Consumidor débil y aperturas que no rinden",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.03,
    "crec": {
@@ -94,7 +77,35 @@
      0.03,
      0.03
     ]
-   }
+   },
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Consumidor débil y aperturas que no rinden",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Economía unitaria de primer nivel",
+   "prob": 0.15,
+   "margen": 0.11,
+   "crec": {
+    "Shacks propios": [
+     0.15,
+     0.14,
+     0.13,
+     0.12,
+     0.11
+    ],
+    "Licencias": [
+     0.15,
+     0.15,
+     0.15,
+     0.15,
+     0.15
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -185,7 +196,7 @@
  "reinversion": {
   "texto": "Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,4 (años 1-5) y 1,6 después. Con margen bajo, el retorno sobre ese capital apenas cubre el costo de capital: por eso crecer más no suma valor en la historia B. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028. Sin ventaja defendible: su ROIC está por debajo del costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. B (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. C (15%) es una economía unitaria de primer nivel. D (10%) es un consumidor débil con aperturas que no rinden.",
+ "prob_texto": "A (45%) es el plan de la empresa: aperturas de doble dígito con margen convergiendo a 8%. B (30%) es crecimiento sin rentabilidad, lo que Shake Shack mostró durante años. C (10%) es un consumidor débil con aperturas que no rinden. D (15%) es una economía unitaria de primer nivel. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "La competencia en hamburguesas (ofertas de valor de McDonald's y Wendy's, Five Guys) baja el tráfico.",
   "Los Shacks nuevos (drive-thru, suburbios) tienen volúmenes menores y bajan el retorno promedio.",

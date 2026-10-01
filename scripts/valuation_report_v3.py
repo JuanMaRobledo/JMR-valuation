@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -170,7 +171,7 @@ def main():
         new_dcf = e
         sens.append((lab, new_dcf * w_dcf + mult[1] * w_mult))
 
-    today = dt.date.today().isoformat()
+    today = os.environ.get("JMR_FECHA") or dt.date.today().isoformat()  # fecha de corte de la valoración
     L = []
     w = L.append
     w("---")
@@ -199,9 +200,28 @@ def main():
       f"el ponderado hoy (lectura secundaria) es {money(pond[1])}. El valor intrínseco es el DCF: {money(dcf[1])} frente a un "
       f"precio de referencia de {money(price)} ({'+' if dcf[1] >= price else '−'}{es(abs(dcf[1] / price - 1) * 100, 0)}%).")
     w("")
+    ve = rec.get("valorEsperado") or {}
+    if ve.get("escenariosUnificados") and ve.get("historias"):
+        # Contrato del 30-sep-2026: las historias A-D son los escenarios DCF activos; el esperado es el valor principal.
+        L[-2] = (f"**Valor intrínseco principal: DCF esperado de las cuatro historias, {money(ve['valor'])}.** Historia central A: "
+                 f"{money(ve['valorCentral'])}; rango {money(ve['rango']['min'])}–{money(ve['rango']['max'])}; precio con MOS "
+                 f"{pct(mos_pct, 0)} sobre el esperado: {money(ve['valor'] * (1 - mos_pct))}; precio de referencia {money(price)}. "
+                 "Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con "
+                 "criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración "
+                 f"técnica anterior de la hoja (Base {money(dcf[1])}) y los múltiplos y el ponderado son lecturas secundarias.")
+        w("")
+        w("| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |")
+        w("|---|---:|---:|---:|")
+        for h in ve["historias"]:
+            w(f"| {h['nombre']}{': ' + h['descripcion'] if h.get('descripcion') else ''} | {pct(h['probabilidad'], 0)} | "
+              f"{money(h['valor'])} | {money(h['probabilidad'] * h['valor'])} |")
+        w(f"| **DCF esperado** | 100% | **{money(ve['valor'])}** | |")
+        w("")
     w(dec.get("evaluacion", ""))
     w("")
-    w("| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |")
+    unif = bool(ve.get("escenariosUnificados"))
+    w(f"| Escenario | {'DCF técnico anterior hoy (calibración)' if unif else 'DCF hoy (valor intrínseco)'} | Múltiplos consolidados hoy (secundario) | "
+      f"{'Mezcla auxiliar hoy' if unif else 'Ponderado hoy (secundario)'} | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |")
     w("|---|---:|---:|---:|---:|---:|")
     for i, k in enumerate(SCEN):
         w(f"| {k.capitalize()} | {money(dcf[i])} | {money(mult[i])} | {money(pond[i])} | {money(mos.get(k))} | {money(op[k])} |")
@@ -382,7 +402,12 @@ def main():
     for q, v in rows:
         w(f"| {q} | {v} |")
     out = Path(a.out) / f"{tk}_Valoracion_Modelo_JMR_{today}.md"
-    out.write_text("\n".join(L) + "\n")
+    txt = "\n".join(L) + "\n"
+    if (rec.get("valorEsperado") or {}).get("escenariosUnificados"):  # el caso Base técnico ya no es el valor intrínseco
+        txt = txt.replace("el DCF (valor intrínseco) da", "el DCF técnico anterior (caso Base de la hoja) da").replace(
+            "el DCF manda y los múltiplos son precio relativo",
+            "el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo")
+    out.write_text(txt)
     print(out, "| sensibilidad:", [(lab, round(v, 2)) for lab, v in sens], "| check mult", round(check_mult, 2), "vs hoja", round(mult[1], 2))
 
 

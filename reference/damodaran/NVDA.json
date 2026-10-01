@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usaba una beta de regresión de 1,90 (costo del patrimonio 13,5%). Tras la revisión del 30-sep-2026 usa la bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja; 1,51 sin deuda relevante), con costo del patrimonio de 11,7%: el DCF Base pasó de US$162,65 a US$178,38. La ciclicidad del negocio se modela en las historias (B y D), no en la tasa."
+  "texto": "La hoja usaba una beta de regresión de 1,90 (costo del patrimonio 13,5%). Tras la revisión del 30-sep-2026 usa la bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja; 1,51 sin deuda relevante), con costo del patrimonio de 11,7%: el DCF Base pasó de US$162,65 a US$178,38. La ciclicidad del negocio se modela en las historias (B y C), no en la tasa."
  },
  "historias": [
   {
@@ -31,7 +31,9 @@
      0.06,
      0.06
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Ciclo de semiconductores: el capex se corrige",
@@ -52,31 +54,12 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La IA es infraestructura permanente",
-   "prob": 0.2,
-   "margen": 0.6,
-   "crec": {
-    "Data Center": [
-     0.6,
-     0.3,
-     0.2,
-     0.15,
-     0.12
-    ],
-    "Gaming, visualización y automotriz": [
-     0.12,
-     0.12,
-     0.1,
-     0.1,
-     0.08
-    ]
-   }
-  },
-  {
-   "nombre": "D · Chips propios de los clientes y corrección fuerte",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.4,
    "crec": {
@@ -95,7 +78,34 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Chips propios de los clientes y corrección fuerte",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · La IA es infraestructura permanente",
+   "prob": 0.2,
+   "margen": 0.6,
+   "crec": {
+    "Data Center": [
+     0.6,
+     0.3,
+     0.2,
+     0.15,
+     0.12
+    ],
+    "Gaming, visualización y automotriz": [
+     0.12,
+     0.12,
+     0.1,
+     0.1,
+     0.08
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -130,7 +140,7 @@
    "Baja a cinco años"
   ]
  ],
- "tasas_base_nota": "Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (historia A) lo logró ~4%; 25% (historia C), ~1%. NVIDIA ya rompió todas las tasas base en 2024-2026, pero la visión externa es clara: sostener crecimientos así desde US$300.000 millones de ventas casi no tiene precedentes, y en semiconductores los ciclos de sobreinversión terminan en correcciones.",
+ "tasas_base_nota": "Para empresas de más de US$50.000 millones, crecer 17% anual cinco años (historia A) lo logró ~4%; 25% (historia D), ~1%. NVIDIA ya rompió todas las tasas base en 2024-2026, pero la visión externa es clara: sostener crecimientos así desde US$300.000 millones de ventas casi no tiene precedentes, y en semiconductores los ciclos de sobreinversión terminan en correcciones.",
  "crecimiento": {
   "texto": "Ingresos de US$60.922 millones (FY24, +126%), US$130.497 millones (FY25, +114%) y US$215.938 millones (FY26, +65%); LTM US$302.970 millones. En el 2T FY27 (jul-2026) facturó US$96.220 millones, con Data Center en US$89.000 millones (+117%). La hoja supone +50% el próximo año y 14% en los años 2-5. Cada historia se valora con su crecimiento año a año por segmentos; el CAGR a cinco años es descriptivo y no reemplaza la trayectoria de flujos.",
   "tabla": {
@@ -186,7 +196,7 @@
  "reinversion": {
   "texto": "Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir. Ventaja durable: ecosistema CUDA (costos de cambio) y escala en cómputo acelerado, con ROIC de 13-111%. El ROIC después del año 10 es 27,2%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). D (10%) combina corrección fuerte y pérdida de participación frente a chips propios. En las historias de erosión (D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (40%) es un ciclo de IA largo que desacelera con la escala. B (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. C (10%) combina corrección fuerte y pérdida de participación frente a chips propios. D (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Los hiperescaladores recortan capex en 2028 porque la monetización de la IA no alcanza para pagar la inversión.",
   "Los chips propios (TPU, Trainium, Maia) y AMD capturan la inferencia, que es la mayor parte de la demanda futura.",

@@ -7,7 +7,9 @@ analysis_date: "2026-09-30"
 # EPAM Systems, Inc. (EPAM) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$168,22 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$148,68; la historia central A vale US$165,87 y el rango es US$81,42–218,87. El MOS 35% se aplica al esperado: US$96,64. El antiguo caso Base de la hoja (US$168,22) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$168,22 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -30,8 +32,8 @@ Con ventas LTM de US$5.617 millones, la empresa está en el tramo **$4,500-7,000
 |---|---:|---:|
 | A · La IA compensa lo que quita: crecimiento moderado | 5,5% | 57% |
 | B · Deflación de horas por IA | 2,1% | 78% |
-| C · La IA crea demanda de ingeniería | 8,6% | 39% |
-| D · Los servicios se comoditizan | -1,1% | 88% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | -1,1% | 88% |
+| D · La IA crea demanda de ingeniería | 8,6% | 39% |
 
 Para empresas de US$4.500-7.000 millones, crecer 5,5% anual cinco años (historia A) lo logró ~57%: la hoja (5%) es modesta. El valor de EPAM depende menos del crecimiento que del margen, que la hoja espera recuperar (de ~10% a 12,5%).
 
@@ -51,15 +53,15 @@ Para empresas de US$4.500-7.000 millones, crecer 5,5% anual cinco años (histori
 
 **Reinversión y retorno.** Casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un sales-to-capital de 3,5 y 3. La reinversión real es en personas (formación en IA) y compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones). Ventaja que se desvanece: costos de cambio moderados en servicios de ingeniería, pero con un ROIC que bajó de 47% a 15% en cinco años y deflación de horas por la IA. El ROIC después del año 10 es 11,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (26,4%), limitado a su ROIC actual (13,8%).
 
-**Riesgo.** La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$168,22 a US$181,07. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector.
+**Riesgo.** La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF técnico anterior sube de US$168,22 a US$181,07. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector.
 
-| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
+| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,30 | 10,8% | 10,7% | US$168,22 |
 | Bottom-up del sector (Computer Services, reapalancada) | 0,97 | 9,3% | 9,2% | US$181,07 |
 
 
-### Supuestos vigentes verificados
+### Calibración técnica anterior C/B/O (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -68,33 +70,136 @@ Para empresas de US$4.500-7.000 millones, crecer 5,5% anual cinco años (histori
 | Margen año 1 (base ajustada del modelo) | 10,5% | 10,5% | 10,5% |
 | Margen objetivo | 9,5% | 12,5% | 15,0% |
 
-Ventas/capital: 3,5x en años 1–5 y 3,0x en 6–10. WACC: 10,7%. Ke: 10,8%. Impuesto efectivo: 26,8%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+Ventas/capital: 3,5x en años 1–5 y 3,0x en 6–10. WACC: 10,7%. Ke: 10,8%. Impuesto efectivo: 26,8%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
-| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
 | Ventaja que se desvanece | 13,8% | 26,4% | 9,0% | 11,4% | US$168,22 | US$148,69 |
 
 Fuentes de ventaja: Servicios de ingeniería con costos de cambio moderados. Evidencia: ROIC 47% → 15% en cinco años, acercándose al costo de capital. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
+### De dónde sale el cálculo: de la historia al valor por acción
+
+El valor principal de US$148,68 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$168,22 ni mezclando el DCF con múltiplos. La historia central A vale US$165,87; «central» y «esperado» son conceptos distintos.
+
+
+#### 1. Datos de partida y origen de los supuestos
+
+| Entrada | Valor usado | Origen y tratamiento |
+|---|---|---|
+| Ingresos LTM | US$5.617 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 3.200 + 2.250 + 167 = 5.617. |
+| Margen inicial del DCF | 10,5% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
+| Impuesto | 26,79% en años 1–5; 24,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
+| Descuento | WACC 10,68% → 9,00% | Tasa libre de riesgo 4,99%, beta 1,30, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 3,50x en años 1–5; 3,00x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
+| Crecimiento perpetuo | A/B/D: 4,99%; C: 0,97% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (0,97%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | A/D: 11,40%; B/C: 9,00% (= WACC terminal) | Criterio de ventaja competitiva (ventaja que se desvanece). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Puente al patrimonio | Caja 789; deuda 106; acciones 51,6 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
+
+
+#### 2. Cómo se convierte cada historia en ingresos
+
+Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
+
+Ejemplo A, año 1: 3.200 × 1,04 + 2.250 × 1,08 + 167 × 1,05 = US$5.933,03 millones. Frente a 5.617, el crecimiento consolidado es 5,63%. En los años 2–5 es 5,82%, 5,41%, 5,42%, 5,42%; las ventas del año 5 son US$7.354,71 millones. El 5,5% de la tabla es el crecimiento anual compuesto de los cinco años: (7.354,71 / 5.617)^(1/5) − 1; no se usa como tasa constante.
+
+
+#### 3. Del ingreso al flujo libre y su valor presente
+
+NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
+
+En A, año 1: NOPAT = 5.933,03 × 10,50% × (1 − 26,79%) = US$456,08 millones. La reinversión es US$98,64 millones y el FCFF es US$357,43 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 43,8% (4,99% / 11,40%); B, 55,4% (4,99% / 9,00%); C, 10,8% (0,97% / 9,00%); D, 43,8% (4,99% / 11,40%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+
+
+#### 4. Puente numérico de los cuatro DCF
+
+Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
+
+| Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
+|---|---:|---:|---:|---:|---:|
+| A | 3.056,98 | 4.819,23 | 7.876,21 | 8.559,11 | 165,87 |
+| B | 2.461,28 | 2.542,49 | 5.003,76 | 5.686,66 | 110,21 |
+| C | 2.077,63 | 1.440,81 | 3.518,44 | 4.201,34 | 81,42 |
+| D | 3.792,25 | 6.818,67 | 10.610,91 | 11.293,81 | 218,87 |
+
+Ejemplo A: (3.056,98 + 4.819,23 + 789 − 106) / 51,6 = US$165,87 por acción. El terminal representa 61,2% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+
+
+#### 5. Valor esperado, probabilidades y margen de seguridad
+
+Las probabilidades 45% / 30% / 10% / 15% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
+
+Valor esperado = 0,45 × 165,874292 + 0,30 × 110,206661 + 0,10 × 81,421243 + 0,15 × 218,872379 = US$148,678411 ≈ US$148,68. Los aportes son US$74,64 + US$33,06 + US$8,14 + US$32,83 por acción.
+
+Precio con MOS = valor esperado × (1 − 35%) = 148,678411 × 0,65 = US$96,640967 ≈ US$96,64. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
+
+
+### Las cuatro tesis: base, conservadora, disrupción y optimista
+
+Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$165,87; el valor esperado de US$148,68 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### A · Tesis base: La IA compensa lo que quita: crecimiento moderado
+
+**Qué plantea.** Es lo que muestra 2026: un dígito medio con Europa más fuerte.
+
+**Traducción al modelo.** Norteamérica crece 4%, 5%, 5%, 5%, 5%; Europa crece 8%, 7%, 6%, 6%, 6%; Otros mercados crece 5%, 5%, 5%, 5%, 5%. El crecimiento anual compuesto de cinco años es 5,5%; el margen operativo objetivo es 12,0%. El ROIC terminal es 11,4%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 45%; DCF: US$165,87 por acción.
+
+**Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (crecimiento de ingresos (orgánico, sin divisas): +4,5% (2T26); margen operativo GAAP: 10,0% LTM; norteamérica (interanual): Bajo un dígito). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
+
+
+#### B · Tesis conservadora: Deflación de horas por IA
+
+**Qué plantea.** Es la deflación de horas por IA, el riesgo que el mercado más teme.
+
+**Traducción al modelo.** Norteamérica crece 0%, 1%, 2%, 2%, 2%; Europa crece 4%, 3%, 3%, 3%, 3%; Otros mercados crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 2,1%; el margen operativo objetivo es 10,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 30%; DCF: US$110,21 por acción.
+
+**Cómo contrastarla.** La apoyarían: crecimiento de ingresos (orgánico, sin divisas): negativo dos trimestres; margen operativo GAAP: < 9%; norteamérica (interanual): negativo; utilización de ingenieros: en baja.
+
+
+#### C · Tesis de disrupción · Deterioro de los fundamentales: Los servicios se comoditizan
+
+**Qué plantea.** Es la comoditización con ingresos en caída.
+
+**Traducción al modelo.** Norteamérica crece -5%, -4%, -2%, 0%, 1%; Europa crece 0%, -2%, 0%, 1%, 1%; Otros mercados crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es -1,1%; el margen operativo objetivo es 8,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 0,97%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$81,42 por acción.
+
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: crecimiento de ingresos (orgánico, sin divisas): negativo dos trimestres; margen operativo GAAP: < 9%; norteamérica (interanual): negativo; utilización de ingenieros: en baja.
+
+
+#### D · Tesis optimista: La IA crea demanda de ingeniería
+
+**Qué plantea.** Supone que la IA dispara proyectos de datos y modernización.
+
+**Traducción al modelo.** Norteamérica crece 8%, 9%, 9%, 8%, 8%; Europa crece 10%, 10%, 9%, 8%, 8%; Otros mercados crece 8%, 8%, 8%, 8%, 8%. El crecimiento anual compuesto de cinco años es 8,6%; el margen operativo objetivo es 14,0%. El ROIC terminal es 11,4%. El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 15%; DCF: US$218,87 por acción.
+
+**Cómo contrastarla.** La confirmarían: crecimiento de ingresos (orgánico, sin divisas): ≥ +6%; margen operativo GAAP: ≥ 11%; norteamérica (interanual): ≥ +5%; utilización de ingenieros: en alza.
+
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,99%; C: 0,97%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+
+
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Valor/acción (beta 1,30) | Valor/acción (beta 0,97) |
-|---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · La IA compensa lo que quita: crecimiento moderado** | 45% | Norteamérica: 4%, 5%, 5%, 5%, 5%; Europa: 8%, 7%, 6%, 6%, 6%; Otros mercados: 5%, 5%, 5%, 5%, 5% | 5,5% | 12% | 3,5 | 11,4% | US$165,87 | US$178,57 |
-| **B · Deflación de horas por IA** | 30% | Norteamérica: 0%, 1%, 2%, 2%, 2%; Europa: 4%, 3%, 3%, 3%, 3%; Otros mercados: 0%, 0%, 0%, 0%, 0% | 2,1% | 10% | 3,5 | = costo de capital | US$110,21 | US$117,68 |
-| **C · La IA crea demanda de ingeniería** | 15% | Norteamérica: 8%, 9%, 9%, 8%, 8%; Europa: 10%, 10%, 9%, 8%, 8%; Otros mercados: 8%, 8%, 8%, 8%, 8% | 8,6% | 14% | 3,5 | 11,4% | US$218,87 | US$236,51 |
-| **D · Los servicios se comoditizan** | 10% | Norteamérica: -5%, -4%, -2%, 0%, 1%; Europa: 0%, -2%, 0%, 1%, 1%; Otros mercados: 0%, 0%, 0%, 0%, 0% | -1,1% | 8% | 3,5 | = costo de capital | US$84,22 | US$89,31 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$148,96** | **US$160,07** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 1,30) | Valor/acción (beta 0,97) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| **A · La IA compensa lo que quita: crecimiento moderado** | 45% | Norteamérica: 4%, 5%, 5%, 5%, 5%; Europa: 8%, 7%, 6%, 6%, 6%; Otros mercados: 5%, 5%, 5%, 5%, 5% | 5,5% | 12% | 3,5 | 11,4% | 4,99% | US$165,87 | US$178,57 |
+| **B · Deflación de horas por IA** | 30% | Norteamérica: 0%, 1%, 2%, 2%, 2%; Europa: 4%, 3%, 3%, 3%, 3%; Otros mercados: 0%, 0%, 0%, 0%, 0% | 2,1% | 10% | 3,5 | = costo de capital | 4,99% | US$110,21 | US$117,68 |
+| **C · Tesis de disrupción · Deterioro de los fundamentales: Los servicios se comoditizan** | 10% | Norteamérica: -5%, -4%, -2%, 0%, 1%; Europa: 0%, -2%, 0%, 1%, 1%; Otros mercados: 0%, 0%, 0%, 0%, 0% | -1,1% | 8% | 3,5 | = costo de capital | 0,97% | US$81,42 | US$86,23 |
+| **D · La IA crea demanda de ingeniería** | 15% | Norteamérica: 8%, 9%, 9%, 8%, 8%; Europa: 10%, 10%, 9%, 8%, 8%; Otros mercados: 8%, 8%, 8%, 8%, 8% | 8,6% | 14% | 3,5 | 11,4% | 4,99% | US$218,87 | US$236,51 |
+| **Valor esperado** | 100% |  |  |  |  |  |  | **US$148,68** | **US$159,76** |
 
-A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (15%) supone que la IA dispara proyectos de datos y modernización. D (10%) es la comoditización con ingresos en caída. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (10%) es la comoditización con ingresos en caída. D (15%) supone que la IA dispara proyectos de datos y modernización. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF Base (beta 1,30; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF técnico anterior (beta 1,30; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
-Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
 | Crecimiento \ Margen | 8,5% | 10,5% | 12,5% | 14,5% | 16,5% |
 |---|---:|---:|---:|---:|---:|
@@ -140,7 +245,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,30 | 1,0% (82% de las empresas) | -2,2% (92% de las empresas) | -5,5% (95% de las empresas) |
 | Beta 0,97 | -0,8% (87% de las empresas) | -3,8% (94% de las empresas) | -7,1% (97% de las empresas) |
 
-Frente al valor esperado de las historias (US$148,96 con la beta de la hoja; US$160,07 con la propuesta), el precio está por debajo en 27% y por debajo en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al valor esperado de las historias (US$148,68 con la beta de la hoja; US$159,76 con la propuesta), el precio está por debajo en 27% y por debajo en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -149,9 +254,11 @@ Frente al valor esperado de las historias (US$148,96 con la beta de la hoja; US$
 |---|---|---|
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Ingeniería de software de alta calidad frente a la deflación de horas por IA |  |
-| Probabilidades | A 45% / B 30% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$148,96 / US$160,07 |  |
-| Rango (historia más débil a más fuerte) | US$84,22 a US$236,51 |  |
+| Probabilidades | A 45% / B 30% / C 10% / D 15% |  |
+| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$148,68 / US$159,76 |  |
+| DCF base hoy (historia A) | US$165,87 |  |
+| Precio con MOS sobre el valor esperado | US$96,64 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$81,42 a US$236,51 |  |
 | Confianza | Media-baja: el efecto neto de la IA sobre las horas facturables es el gran desconocido |  |
 | Qué cambiaría la opinión | Crecimiento orgánico en Norteamérica y margen operativo en 2027 |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

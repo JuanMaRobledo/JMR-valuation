@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$41,96 en el escenario Base (rango US$32,44–US$52,02). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$42,59 (+1% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$42,34. El valor intrínseco es el DCF: US$41,96 frente a un precio de referencia de US$38,14 (+10%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$35,63.** Historia central A: US$38,98; rango US$22,47–US$46,57; precio con MOS 35% sobre el esperado: US$23,16; precio de referencia US$38,14. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$41,96) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$41,96 por acción y los múltiplos, US$42,59 hoy: 1% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · El volumen compensa la caída de precio | 40% | US$38,98 | US$15,59 |
+| B · Guerra de precios con Lilly y genéricos | 30% | US$28,26 | US$8,48 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly | 10% | US$22,47 | US$2,25 |
+| D · La nueva generación recupera el liderazgo | 20% | US$46,57 | US$9,31 |
+| **DCF esperado** | 100% | **US$35,63** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$41,96 por acción y los múltiplos, US$42,59 hoy: 1% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$32,44 | US$32,14 | US$32,26 | US$23,21 | US$41,32 |
-| Base | US$41,96 | US$42,59 | US$42,34 | US$23,21 | US$55,57 |
-| Optimista | US$52,02 | US$52,70 | US$52,43 | US$23,21 | US$70,44 |
+| Conservador | US$32,44 | US$32,14 | US$32,26 | US$23,16 | US$41,32 |
+| Base | US$41,96 | US$42,59 | US$42,34 | US$23,16 | US$55,57 |
+| Optimista | US$52,02 | US$52,70 | US$52,43 | US$23,16 | US$70,44 |
 
 ## 2. Datos
 
@@ -104,7 +113,7 @@ Múltiplos consolidados hoy: US$32,14 / US$42,59 / US$52,70 · DCF hoy: US$32,44
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVO la diferencia es de +1% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$41,96 por acción y los múltiplos, US$42,59 hoy: 1% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVO la diferencia es de +1% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$41,96 por acción y los múltiplos, US$42,59 hoy: 1% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 

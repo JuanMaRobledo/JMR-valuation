@@ -39,7 +39,9 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Deflación de horas por IA",
@@ -68,38 +70,12 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La IA crea demanda de ingeniería",
-   "prob": 0.15,
-   "margen": 0.14,
-   "crec": {
-    "Norteamérica": [
-     0.08,
-     0.09,
-     0.09,
-     0.08,
-     0.08
-    ],
-    "Europa": [
-     0.1,
-     0.1,
-     0.09,
-     0.08,
-     0.08
-    ],
-    "Otros mercados": [
-     0.08,
-     0.08,
-     0.08,
-     0.08,
-     0.08
-    ]
-   }
-  },
-  {
-   "nombre": "D · Los servicios se comoditizan",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.08,
    "crec": {
@@ -125,7 +101,41 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Los servicios se comoditizan",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · La IA crea demanda de ingeniería",
+   "prob": 0.15,
+   "margen": 0.14,
+   "crec": {
+    "Norteamérica": [
+     0.08,
+     0.09,
+     0.09,
+     0.08,
+     0.08
+    ],
+    "Europa": [
+     0.1,
+     0.1,
+     0.09,
+     0.08,
+     0.08
+    ],
+    "Otros mercados": [
+     0.08,
+     0.08,
+     0.08,
+     0.08,
+     0.08
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -216,7 +226,7 @@
  "reinversion": {
   "texto": "Casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un sales-to-capital de 3,5 y 3. La reinversión real es en personas (formación en IA) y compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones). Ventaja que se desvanece: costos de cambio moderados en servicios de ingeniería, pero con un ROIC que bajó de 47% a 15% en cinco años y deflación de horas por la IA. El ROIC después del año 10 es 11,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (26,4%), limitado a su ROIC actual (13,8%)."
  },
- "prob_texto": "A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (15%) supone que la IA dispara proyectos de datos y modernización. D (10%) es la comoditización con ingresos en caída. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. B (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. C (10%) es la comoditización con ingresos en caída. D (15%) supone que la IA dispara proyectos de datos y modernización. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Los clientes usan IA para producir el mismo software con 20-30% menos horas y renegocian contratos.",
   "La competencia de India (TCS, Infosys) y de las consultoras con IA baja las tarifas.",
