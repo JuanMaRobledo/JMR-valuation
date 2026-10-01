@@ -1,0 +1,1445 @@
+{
+ "Input sheet!B1": {
+  "before": "=A1",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!L29",
+  "after": 0.201,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!E22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Balance Sheet!L3": {
+  "before": 631.2,
+  "after": 631.234,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L4": {
+  "before": 0,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L6": {
+  "before": 755.5,
+  "after": 735.336,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L8": {
+  "before": 755.5,
+  "after": 735.336,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L9": {
+  "before": 656.8,
+  "after": 509.391,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L10": {
+  "before": 1811.2,
+  "after": 1875.961,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L11": {
+  "before": 87.9,
+  "after": 108.748,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L12": {
+  "before": 111.9,
+  "after": 99.529,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L13": {
+  "before": 917.6,
+  "after": 919.66,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L15": {
+  "before": 2191.1,
+  "after": 2164.253,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L16": {
+  "before": 5119.6,
+  "after": 5168.151,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L18": {
+  "before": 137.9,
+  "after": 202.101,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L20": {
+  "before": 7,
+  "after": 7.0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L22": {
+  "before": 27,
+  "after": 31.46,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L23": {
+  "before": 906.8,
+  "after": 803.074,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L24": {
+  "before": 1078.7,
+  "after": 1043.635,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L25": {
+  "before": 669.9,
+  "after": 667.85,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L26": {
+  "before": 13.8,
+  "after": 13.76,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L27": {
+  "before": 415.8,
+  "after": 483.347,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L28": {
+  "before": 1099.5,
+  "after": 1164.957,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L29": {
+  "before": 2178.2,
+  "after": 2208.592,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L31": {
+  "before": 1050.5,
+  "after": 1069.452,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L32": {
+  "before": 3.2,
+  "after": 0.335,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L33": {
+  "before": 175.9,
+  "after": 313.165,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L34": {
+  "before": 1181.5,
+  "after": 1199.584,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L35": {
+  "before": 1181.5,
+  "after": 1199.584,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Balance Sheet!L36": {
+  "before": 5119.6,
+  "after": 5168.151,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); el pipeline repetía dic-2025 salvo la caja"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 27.35,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B13": {
+  "before": "='Income Statement'!L12",
+  "after": "='Income Statement'!L12+466,2",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B16": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+  "after": 694.75,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B22": {
+  "before": "='Income Statement'!L27",
+  "after": "='Income Statement'!L27+2,149",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0529,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B38": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B39": {
+  "before": "",
+  "after": 2.313,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B40": {
+  "before": "",
+  "after": 6.28,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B41": {
+  "before": 7,
+  "after": 3.96,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B42": {
+  "before": 0.45,
+  "after": 0.6,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!A76": {
+  "before": "",
+  "after": "Derechos preferentes separados (millones)",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B76": {
+  "before": "",
+  "after": 1135,
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!A77": {
+  "before": "",
+  "after": "Estado del tratamiento preferente",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Input sheet!B77": {
+  "before": "",
+  "after": "Valor de liquidación: Serie A US$550M + Serie B US$585M (10-Q 2T26). Conversión a US$25 (A) y US$51,75 (B) solo a opción de Celsius o automática; redención exigible por PepsiCo desde 2032.",
+  "reason": "Datos base CELH desde cero (10-Q 2T26, 10-K 2025, comunicados 4T25 y 2T26)"
+ },
+ "Operating lease converter!E5": {
+  "before": 295,
+  "after": 5.7,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Operating lease converter!B8": {
+  "before": 287,
+  "after": 5.012,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Operating lease converter!B9": {
+  "before": 235,
+  "after": 5.189,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Operating lease converter!B10": {
+  "before": 194,
+  "after": 4.008,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Operating lease converter!B11": {
+  "before": 151,
+  "after": 3.699,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Operating lease converter!B12": {
+  "before": 98,
+  "after": 0.68,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Operating lease converter!B13": {
+  "before": 605,
+  "after": 2.018,
+  "reason": "Arrendamientos operativos: gasto 2025 y compromisos al 31-dic-2025 (10-K 2025, nota 7)"
+ },
+ "Valuation output!B33": {
+  "before": "=B31-B32",
+  "after": "=B31-B32-N('Input sheet'!$B$76)",
+  "reason": "Resta las preferentes de PepsiCo (Input sheet B76)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Damodaran, implied ERP September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.0,
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Will Input",
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Cost of capital worksheet!B27": {
+  "before": 0.06,
+  "after": 0.0409,
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 5.75,
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": 0.065,
+  "reason": "Costo de capital CELH: beta 1,0 (bottom-up 0,58 ajustada por riesgo propio), ERP sep-2026, Kd real"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.078,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.2,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.055,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.211,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.0,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.7,
+  "reason": "Supuestos Base CELH desde cero = historia Base (ver reference/damodaran/CELHN.json)"
+ },
+ "Input sheet!B15": {
+  "before": "='Balance Sheet'!L35",
+  "after": "='Balance Sheet'!L35+1759,975",
+  "reason": "Capital invertido con el capital preferente (mezzanine, valor contable 852,355 + 907,620; 10-Q 2T26): financió Rockstar y el pago implícito a PepsiCo"
+ },
+ "Valuation output!B84": {
+  "before": "=B82-B83",
+  "after": "=B82-B83-N('Input sheet'!$B$76)",
+  "reason": "Resta las preferentes de PepsiCo en los casos técnicos Conservador y Optimista"
+ },
+ "Valuation output!B135": {
+  "before": "=B133-B134",
+  "after": "=B133-B134-N('Input sheet'!$B$76)",
+  "reason": "Resta las preferentes de PepsiCo en los casos técnicos Conservador y Optimista"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Crecimiento",
+  "reason": "Tipo de empresa CELH"
+ },
+ "Descuento de múltiplos!A38": {
+  "before": "DCF · valor intrínseco (valor presente)",
+  "after": "DCF activo hoy · escenarios de las historias",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!C38": {
+  "before": "='Valuation output'!B86",
+  "after": "='Escenarios e historias'!H6",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!D38": {
+  "before": "='Valuation output'!B35",
+  "after": "='Escenarios e historias'!H5",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!E38": {
+  "before": "='Valuation output'!B137",
+  "after": "='Escenarios e historias'!H8",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!A43": {
+  "before": "Compra con MOS sobre el ponderado (secundario)",
+  "after": "Precio con MOS sobre el valor esperado",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!C43": {
+  "before": "=IFERROR(C40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!D43": {
+  "before": "=IFERROR(D40*(1-$B$43);\"\")",
+  "after": "='Escenarios e historias'!H14",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!E43": {
+  "before": "=IFERROR(E40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Celsius Holdings, Inc.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "John Fieldly (presidente del directorio y CEO). CFO: Jarrod Langhans. Tyler Bohannon, director comercial desde el 10-ago-2026.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Bebidas energéticas y funcionales (Damodaran: Beverage (Soft))",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.celsiusholdingsinc.com  |  IR: https://ir.celsiusholdingsinc.com",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Portafolio de tres marcas de bebidas energéticas: CELSIUS, Alani Nu (comprada en abril de 2025) y Rockstar (EE.UU. y Canadá, agosto de 2025). Ventas LTM a jun-2026 de US$3.047M, ~20% de la categoría en EE.UU. Fabrica con terceros y distribuye en EE.UU. a través de PepsiCo, que es parte relacionada (60% de las ventas del 2T26) y tenedor de las preferentes. 1.497 empleados a dic-2025.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "CELSIUS",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "~US$1.425M LTM. Cayó 11,7% en el 2T26 (−2% al consumidor) por promociones, inventario y la poda de presentaciones, que la gerencia admitió fue demasiado profunda. 9,5% de participación en EE.UU.; espera volver a crecer al cierre de 2026.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Alani Nu",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "~US$1.433M LTM. Ventas al consumidor +55,7% en el 2T26 y 8,7% de participación; facturación +21% por el paso a distribución directa de PepsiCo, que aumenta las bonificaciones. Bajo investigación del fiscal de Texas (jun-2026).",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Rockstar y exterior",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Rockstar ~US$189M en diez meses (US$66,5M en el 2T26), −13% al consumidor. Exterior US$62,5M en el 1S26 (+32%): Nórdicos, Reino Unido, Irlanda, Francia, Australia; meta de más de 15% de las ventas en cinco años.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Distribución",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "PepsiCo distribuye las tres marcas en EE.UU. como capitán de la categoría energía (acuerdo de ~17 años desde ago-2025). Celsius pagó por la capitanía con preferentes y reconoce el pago implícito como menor ingreso.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Categoría en crecimiento y escala",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Las bebidas energéticas crecieron 15,2% en EE.UU. en 52 semanas a abr-2026 (Circana). El portafolio vendió +31% al consumidor en el 2T26 y aportó ~30% del crecimiento del segmento sin azúcar.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Margen normalizado y caja",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Sin cargos de una vez el margen operativo LTM es ~20,6%; EBITDA ajustado 23,7% en el 1S26. Flujo operativo de US$296M en el 1S26, caja de US$631M y deuda neta baja (~US$64M).",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "PepsiCo alineado",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "PepsiCo es socio, distribuidor y tenedor de preferentes: tiene incentivos para priorizar el portafolio. Las tres marcas ya están integradas a su sistema (sep-2026).",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "La marca CELSIUS pierde participación",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Facturación −11,7% en el 2T26 y tres trimestres cediendo participación; la recuperación depende de recuperar espacio en refrigeradores.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Moda y regulación de la cafeína",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Investigación del fiscal de Texas sobre Alani Nu (200 mg de cafeína por lata) y demandas colectivas (período feb-2025 a jun-2026). Una restricción por edad golpearía a la marca que hoy crece.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Margen bruto y dependencia",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Margen bruto de 48,1% (51,5% un año antes) por promociones, mezcla y aluminio. Más de la mitad de las ventas pasa por un solo distribuidor.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-Q del 2T26 de Celsius Holdings (6-ago-2026) y 10-K 2025 (2-mar-2026), SEC EDGAR; comunicados de resultados del 4T25 (26-feb-2026) y del 2T26 (6-ago-2026); 8-K de la segunda enmienda del crédito (15-jul-2026) y de cambios en la gerencia (10-ago-2026); proxy 2026 (14-abr-2026); Beverage Industry con datos de Circana (10-jul-2026); resumen de la llamada del 2T26 (Yahoo Finance, 6-ago-2026); investigación del fiscal de Texas (4-jun-2026); demanda colectiva (SBS, 29-sep-2026); Monster Beverage, XBRL de la SEC; Damodaran (betas y márgenes por industria, ene-2026; ERP sep-2026); UST 10 años al 30-sep-2026; precio de cierre del 30-sep-2026.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 1 de julio de 2026 – 30 de septiembre de 2026",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T26: ventas +10,6%, CELSIUS −11,7%, margen bruto 48,1%",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ventas de US$817,9M frente a ~US$886M esperados; EBITDA ajustado US$184,2M (22,5%); recompras de US$100,4M.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "3T26 parecido al 2T26; CELSIUS vuelve a crecer al cierre del año",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Margen bruto «en la parte alta de los 40» por el aluminio; sin metas formales de largo plazo.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Gestión",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Sale el presidente y COO Eric Hanson; Bohannon, director comercial",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "8-K del 10-ago-2026; Tony Guilfoyle, director de transformación desde el 1-jul-2026.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Deuda",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Segunda refinanciación: −0,25 pp de tasa",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Nuevo préstamo de US$694,75M (15-jul-2026) a SOFR + 2,25%, vence en 2032.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Legal",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Demandas colectivas por la seguridad de Alani Nu",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Período de clase feb-2025 a jun-2026; fecha límite para el demandante principal: 3-nov-2026. El CEO compró acciones el 10-sep-2026.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "EBIT normalizado",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "El EBIT GAAP LTM (US$160,3M) incluye US$466,2M de cargos de una vez, sobre todo la terminación de distribuidores de Alani Nu (en su mayoría reembolsada por PepsiCo). El modelo usa el EBIT normalizado (US$626,5M, 20,6%).",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Preferentes de PepsiCo",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "Se restan por su valor de liquidación (US$1.135M), no por el contable (US$1.760M): la conversión solo ocurre a opción de Celsius o por encima de US$25 (Serie A) y US$51,75 (Serie B). Se incluyen en el capital invertido.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Historias",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Cuatro historias activas: Base (45%), Conservadora (25%), Disrupción (15%) y Optimista (15%). Los casos Conservador/Base/Optimista de la plantilla quedan como referencia técnica.",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Riesgo en el descuento",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "Beta 1,0: la del sector (0,63 reapalancada) corresponde a refrescos diversificados; Celsius depende de una categoría, de un distribuidor y de marcas jóvenes. Regresión: 1,55 (5 años) y 0,83 (2 años).",
+  "reason": "Contenido cualitativo CELH desde cero"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 1497,
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B12",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Valuation output'!B42",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Income Statement'!L16",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "=(3380/2515,3)-1",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadísticas CELH (fórmulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Celsius: de una marca en hipercrecimiento a un portafolio de tres marcas que crece con la categoría",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Celsius vende ~US$3.047M al año y ~20% de las bebidas energéticas de EE.UU., pero la mitad de sus ventas ya no es la marca CELSIUS sino Alani Nu, y todo pasa por PepsiCo. El margen normalizado es ~20,6%, por debajo del 29% de Monster. La historia Base: el portafolio crece con la categoría (~6% compuesto), CELSIUS se estabiliza, Alani Nu se modera, Rockstar cae y el margen llega a 21%. Sin una ventaja defendible propia, el retorno después del año 10 vuelve al costo de capital.",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 +7,8% (3T26 ≈ 2T26 y Rockstar con un año completo); años 2-5 5,5% compuesto con la categoría.",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 20% (normalizado del 2T26); objetivo 21% en 5 años, por escala; no recupera todo el margen bruto.",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva del 1S26 (20,1%) que converge a la marginal de 25%.",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,0 en los años 1-5 y 1,7 (promedio global Beverage (Soft)) en los años 6-10: incluye compras ocasionales.",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC normalizado ~16,5% con el preferente en el capital; terminal = costo de capital (sin ventaja defendible).",
+  "reason": "Historia CELH"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Ke 9,38% (rf 5,29% + beta 1,0 × ERP 4,09%); Kd 6,5% (SOFR + 2,25%); WACC ~8,9%.",
+  "reason": "Historia CELH"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.078,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "3T26 similar al 2T26 (guía del 6-ago-2026), Rockstar con un año completo y el 1S27 con la categoría.",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.2,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen normalizado del 2T26: EBITDA ajustado 22,5% − D&A 1,2% − compensación en acciones 1,3%.",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.055,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Historia Base: categoría ~6-7% nominal; Alani Nu 7-10%, CELSIUS 3-4%, Rockstar −3 a −6%.",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.211,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "21% reportado + 0,09 pp de arrendamientos; Monster 29% como techo de largo plazo con distribución propia.",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "La mejora de margen es de escala y compras, no un cambio de modelo.",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.0,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Entre la industria (1,54-1,68) y la intensidad orgánica (capex ≈ D&A).",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.7,
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Promedio global de Beverage (Soft) (1,68).",
+  "reason": "Recomendaciones CELH"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Chequeo de independencia (2026-10-01): múltiplos consolidados hoy (Base) 37,44 frente a DCF hoy 24,03 (+56%). Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$37 hoy, ~55% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers.",
+  "after": "Evaluación CELH (1-oct-2026): los múltiplos Base salen de tres anclas (historia desde FY2024 sin FY2025 ni LTM, peers sin KDP con −15% y el justificado, λ = 0,5). Valen ~60% más que el DCF Base de las historias. No es un problema de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos y el DCF supone que Celsius no los conserva después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo.",
+  "reason": "Evaluación de múltiplos CELH"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ],
+   [],
+   [],
+   [
+    "ORIGEN DE LOS MÚLTIPLOS (prompt de valoración v3, 2026-10-01)"
+   ],
+   [
+    "Método",
+    "Aplica",
+    "A · historia",
+    "B · peers (ajustada)",
+    "C · justificado (Cons/Base/Opt)",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "EV/EBITDA",
+    "Sí",
+    "mediana Dec '24 (etapa actual) = 32,6x",
+    "mediana 22,1x (n=5: MNST 26,7x, KO 23,6x, PEP 11,4x, FIZZ 11,1x, COCO 22,1x) × 0,85 = 18,8x",
+    "17,9x / 19,9x / 26,6x",
+    18.36,
+    22.78,
+    25.87
+   ],
+   [
+    "EV/FCFF",
+    "Sí",
+    "mediana Dec '24 (etapa actual) = 24,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF)",
+    "mediana 24,3x (n=5: MNST 37,6x, KO 25,8x, PEP 21,2x, FIZZ 16,6x, COCO 24,3x) × 0,85 = 20,6x",
+    "24,9x / 27,9x / 37,5x",
+    23.19,
+    25.14,
+    28.54
+   ],
+   [
+    "P/E",
+    "Sí",
+    "mediana Dec '24 (etapa actual) = 43,2x",
+    "mediana 25,9x (n=5: MNST 39,0x, KO 25,9x, PEP 16,5x, FIZZ 16,0x, COCO 31,5x) × 0,85 = 22,0x",
+    "20,7x / 23,0x / 30,5x",
+    23.51,
+    27.8,
+    32.83
+   ],
+   [
+    "P/FCFE",
+    "Sí",
+    "mediana Dec '24 (etapa actual) = 25,9x",
+    "mediana 25,9x (n=5: MNST 39,7x, KO 25,9x, PEP 18,5x, FIZZ 17,2x, COCO 26,5x) × 0,85 = 22,0x",
+    "23,5x / 26,1x / 34,4x",
+    21.81,
+    25.04,
+    27.88
+   ],
+   [
+    "P/OCF",
+    "Sí",
+    "mediana Dec '24 (etapa actual) = 23,5x",
+    "mediana 22,7x (n=5: MNST 36,9x, KO 22,7x, PEP 12,8x, FIZZ 14,9x, COCO 25,0x) × 0,85 = 19,3x",
+    "22,7x / 25,7x / 35,0x",
+    19.94,
+    23.55,
+    27.22
+   ],
+   [
+    "Criterios: A: hasta 2023 Celsius fue una marca única en hipercrecimiento (ventas +102% en 2023, utilidades negativas en 2021-2022): sus múltiplos de 44-136× no describen a la empresa de FY+3. Desde 2024 (ventas +3%) es una marca de bebidas energéticas que madura y, desde 2025, un portafolio de tres marcas distribuido por PepsiCo. Se usa FY2024 como etapa actual. FY2025 y LTM se excluyen en todos los métodos: la utilidad y el EBITDA incluyen US$327,5 millones (2025) y US$412,8 millones (LTM) de terminación de distribuidores y otros cargos de una vez (comunicados del 4T25 y 2T26), y el flujo de caja incluye los reembolsos de PepsiCo por esas terminaciones (ingresos diferidos +US$329,6 millones LTM). Con un solo cierre representativo (FY2024), el ancla A es débil y pesa menos (ver λ). B: bebidas con marca y datos de yfinance al 1-oct-2026: Monster, Coca-Cola, PepsiCo, National Beverage y Vita Coco. Se excluye Keurig Dr Pepper: su compra de JDE Peet's (crecimiento de ingresos de 76%) distorsiona sus múltiplos. Ajuste −15%: crecimiento a FY+3 parecido a la mediana (Base ~5,5% frente a ~6-7% de Coca-Cola y PepsiCo; Monster crece más), 0%; margen operativo menor (21% objetivo frente a 29% de Monster y 35% de Coca-Cola), −5%; riesgo propio mayor (una sola categoría, un distribuidor que concentra más de 40% de las ventas, investigación del fiscal de Texas y demandas colectivas), −10%. λ = 0,5: la Celsius de FY+3 (portafolio de tres marcas, crecimiento de un dígito medio, margen ~21%) es distinta de la de FY2024 y el ancla A tiene un solo cierre. Chequeo de crecimiento implícito (1-oct-2026): con λ = 0,5 cuatro múltiplos valen 50-60% más que el DCF en FY+3. Se probó λ = 0,75 y la brecha creció, porque el justificado (C) supone que el retorno de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10 (sin ventaja defendible). La diferencia no es de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos. Se deja λ = 0,5 y la diferencia se explica; el DCF manda."
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ },
+ "Income Statement!B25": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C25": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D25": {
+  "before": 50.1,
+  "after": 150.3,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E25": {
+  "before": 60.8,
+  "after": 182.4,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F25": {
+  "before": 70.2,
+  "after": 210.6,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G25": {
+  "before": 73.8,
+  "after": 221.4,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H25": {
+  "before": 75.6,
+  "after": 226.8,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B26": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C26": {
+  "before": 0,
+  "after": 0,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D26": {
+  "before": 50.1,
+  "after": 150.3,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E26": {
+  "before": 64.2,
+  "after": 192.6,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F26": {
+  "before": 74.4,
+  "after": 223.2,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G26": {
+  "before": 77.7,
+  "after": 233.1,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H26": {
+  "before": 75.6,
+  "after": 226.8,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B27": {
+  "before": 40,
+  "after": 120,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C27": {
+  "before": 45.7,
+  "after": 137.1,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D27": {
+  "before": 57,
+  "after": 171,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E27": {
+  "before": 68.9,
+  "after": 206.7,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F27": {
+  "before": 72.3,
+  "after": 216.9,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G27": {
+  "before": 74.9,
+  "after": 224.7,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H27": {
+  "before": 76.4,
+  "after": 229.2,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B23": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C23": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D23": {
+  "before": -0.22,
+  "after": -0.073,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E23": {
+  "before": 0.16,
+  "after": 0.053,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F23": {
+  "before": 0.11,
+  "after": 0.037,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G23": {
+  "before": 0.05,
+  "after": 0.017,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H23": {
+  "before": -2.48,
+  "after": -0.827,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!B24": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!C24": {
+  "before": "",
+  "after": "",
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!D24": {
+  "before": -0.22,
+  "after": -0.073,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!E24": {
+  "before": 0.16,
+  "after": 0.053,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!F24": {
+  "before": 0.11,
+  "after": 0.037,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!G24": {
+  "before": 0.05,
+  "after": 0.017,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ },
+ "Income Statement!H24": {
+  "before": -2.48,
+  "after": -0.827,
+  "reason": "Ajuste por el split 3x1 del 15-nov-2023 (acciones x3, EPS /3 en 2016-2022)"
+ }
+}

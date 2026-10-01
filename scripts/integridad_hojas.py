@@ -34,8 +34,8 @@ TABS = ["Input sheet", "Valuation output", "Cost of capital worksheet", "Operati
 ERR = re.compile(r"^#(REF!|VALUE!|DIV/0!|N/A|NAME\?|ERROR!|NUM!|NULL!)")
 # Celdas que son entradas del analista por diseño (supuestos de escenarios técnicos y datos con respaldo documentado).
 # «Escenarios e historias» E5:E8 = ventas/capital propio de cada historia (spec); 'Valuation output' filas 96-98 = referencia
-# histórica que no alimenta el DCF; A1 = rótulo.
-ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|98|106)|A1)$|^Input sheet!B(?:15|16|19|20|22|24)$"
+# histórica que no alimenta el DCF; A1 = rótulo; 'Input sheet'!D1 = precio fijado a la fecha de la valoración (hojas nuevas).
+ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|98|106)|A1)$|^Input sheet!(?:B(?:15|16|19|20|22|24)|D1)$"
                       r"|^Escenarios e historias!E[5-8]$")
 
 
@@ -82,7 +82,7 @@ def main(argv: list[str]) -> int:
     tickers = [a for a in argv if not a.startswith("--")] or TODAS
     gc = get_gspread_client()
     D = {}
-    for t in TODAS if len(tickers) < len(TODAS) else tickers:  # la regla de mayoría necesita todas las hojas
+    for t in sorted(set(TODAS) | set(tickers)):  # la regla de mayoría necesita todas las hojas (y las nuevas, p. ej. CELHN)
         D[t] = leer(gc, t)
         time.sleep(2)
     hallazgos = collections.defaultdict(list)
@@ -118,8 +118,9 @@ def main(argv: list[str]) -> int:
         # 4. preferentes
         pref = celda(inp, "B76")
         if isinstance(pref, (int, float)) and pref:
-            if "B$76" not in str(formula(vo, "B33")):
-                hallazgos[t].append(f"Input sheet!B76 = {pref} (preferentes) no se resta en Valuation output!B33")
+            for c in ("B33", "B84", "B135"):  # Base, Conservador y Optimista técnicos
+                if "B$76" not in str(formula(vo, c)):
+                    hallazgos[t].append(f"Input sheet!B76 = {pref} (preferentes) no se resta en Valuation output!{c}")
             esc = x.get("Escenarios e historias")
             if esc and "B$76" not in str(formula(esc, "B43")):
                 hallazgos[t].append("la pestaña «Escenarios e historias» no resta las preferentes (B76)")

@@ -98,7 +98,7 @@ def main():
     sid = anc["sheet_id"]
     sh = get_gspread_client().open_by_key(sid)
     U = {"valueRenderOption": "UNFORMATTED_VALUE"}
-    rng = ["'Input sheet'!A1:D70", "'Valuation output'!A1:M140", "'Cost of capital worksheet'!A1:E70",
+    rng = ["'Input sheet'!A1:D80", "'Valuation output'!A1:M140", "'Cost of capital worksheet'!A1:E70",
            "'Descuento de múltiplos'!A1:K49", "'Financials Multiples'!A1:H120", "'Resumen de Valoración'!A1:U20"]
     rng += [f"{s}!A1:J34" for s, _ in SHEETS.values()]
     if 'DCF FCFE financiero' in {w.title for w in sh.worksheets()}:rng.append("'DCF FCFE financiero'!A1:I62")

@@ -176,9 +176,12 @@ def coc_row(grid, label):
 def compute(tk: str) -> dict:
     spec = json.loads((REF / f"{tk}.json").read_text())
     anc = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())
-    rec = json.loads(Path(glob.glob(str(DATOS / "valoraciones" / f"{tk}-*.json"))[0]).read_text())
+    recs = glob.glob(str(DATOS / "valoraciones" / f"{tk}-*.json"))
+    rec = json.loads(Path(recs[0]).read_text()) if recs else {}
     grid, cell = load_sheet(anc["sheet_id"])
-    price = rec.get("precio")
+    # Una hoja nueva sin valoración guardada en la app (p. ej. CELHN, CELH desde cero) toma precio y MOS de la hoja.
+    price = rec.get("precio") or cell("Input sheet", "D1") or cell("Input sheet", "B23")
+    rec.setdefault("mos", cell("Resumen de Valoración", "G4"))
     # DCF técnico anterior = el DCF propio de la hoja ('Valuation output'!B35, casos Conservador/Base/Optimista de la plantilla).
     # 'Descuento de múltiplos'!D38 ya no sirve: desde el 1-oct-2026 apunta a la historia Base de «Escenarios e historias».
     dcf = cell("Valuation output", "B35")
@@ -1172,7 +1175,7 @@ def render(r: dict) -> tuple[str, str]:
       f"{es(INFLACION * 100, 1)}%, la mediana nominal ronda {es(br['Median'] + INFLACION * 100, 1)}%.")
     rows = [[nombre(h), pct(h["cagr"]), pct(h["tasa_base"], 0)] for h in r["historias"]]
     tab(["Historia", "Crecimiento anual de ingresos (5 años)", "Empresas de este tamaño que lo lograron"], rows, ["l", "r", "r"])
-    p(sp["tasas_base_nota"])
+    p(sp["tasas_base_nota"].format_map(_cifras(r)) if "{" in sp["tasas_base_nota"] else sp["tasas_base_nota"])
 
     from types import SimpleNamespace
     W = SimpleNamespace(h3=h3, h4=h4, p=p, tab=tab)
@@ -1297,10 +1300,10 @@ def render(r: dict) -> tuple[str, str]:
     if r["precio"] and vb_ > 0:
         p(f"Frente al DCF Base ({usd(vb_)}), el valor intrínseco principal, el precio está {pos(r['precio'] / vb_ - 1)}.")
     if same:
-        p(f"Frente al DCF esperado de las historias ({usd(r['valor_esperado_beta_hoja'])}), el complemento, el precio está {pos(diff_h)}. " + sp["precio_lectura"])
+        p(f"Frente al DCF esperado de las historias ({usd(r['valor_esperado_beta_hoja'])}), el complemento, el precio está {pos(diff_h)}. " + (sp["precio_lectura"].format_map(_cifras(r)) if "{" in sp["precio_lectura"] else sp["precio_lectura"]))
     else:
         p(f"Frente al DCF esperado de las historias ({usd(r['valor_esperado_beta_hoja'])} con la beta de la hoja; "
-          f"{usd(r['valor_esperado_beta_prop'])} con la propuesta), el precio está {pos(diff_h)} y {pos(diff_p)}, respectivamente. " + sp["precio_lectura"])
+          f"{usd(r['valor_esperado_beta_prop'])} con la propuesta), el precio está {pos(diff_h)} y {pos(diff_p)}, respectivamente. " + (sp["precio_lectura"].format_map(_cifras(r)) if "{" in sp["precio_lectura"] else sp["precio_lectura"]))
 
     h3("Registro de decisión")
     probs = " / ".join(f"{NOMBRE[h['id']]} {pct(h['prob'], 0)}" for h in r["historias"])
