@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal: DCF esperado de las cuatro historias, US$34,38.** Historia central A: US$38,33; rango US$14,81–US$53,37; precio con MOS 35% sobre el esperado: US$22,34; precio de referencia US$29,61. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$38,92) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$34,29.** Historia central A: US$38,25; rango US$14,71–US$53,31; precio con MOS 35% sobre el esperado: US$22,29; precio de referencia US$29,61. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$38,84) y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| A · Marca premium que cumple sus metas 2029 | 40% | US$38,33 | US$15,33 |
-| B · El ciclo de moda se enfría | 30% | US$22,96 | US$6,89 |
-| C · Tesis de disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen | 10% | US$14,81 | US$1,48 |
-| D · On se vuelve una marca deportiva global | 20% | US$53,37 | US$10,67 |
-| **DCF esperado** | 100% | **US$34,38** | |
+| A · Marca premium que cumple sus metas 2029 | 40% | US$38,25 | US$15,30 |
+| B · El ciclo de moda se enfría | 30% | US$22,87 | US$6,86 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen | 10% | US$14,71 | US$1,47 |
+| D · On se vuelve una marca deportiva global | 20% | US$53,31 | US$10,66 |
+| **DCF esperado** | 100% | **US$34,29** | |
 
 Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$38,92 por acción y los múltiplos, US$34,52 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$24,80 | US$23,85 | US$24,42 | US$22,34 | US$32,99 |
-| Base | US$38,92 | US$34,52 | US$37,16 | US$22,34 | US$52,24 |
-| Optimista | US$63,65 | US$45,41 | US$56,35 | US$22,34 | US$81,76 |
+| Conservador | US$24,71 | US$23,81 | US$24,35 | US$22,29 | US$32,90 |
+| Base | US$38,84 | US$34,50 | US$37,10 | US$22,29 | US$52,17 |
+| Optimista | US$63,59 | US$45,42 | US$56,32 | US$22,29 | US$81,72 |
 
 ## 2. Datos
 
@@ -49,9 +49,9 @@ Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$3
 | Margen EBIT objetivo | 13,0% | 17,0% | 20,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,50 / 2,20 | — | Input B32/B33 |
-| DCF por acción hoy | US$24,80 | US$38,92 | US$63,65 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$24,71 | US$38,84 | US$63,59 | Valuation output B86/B35/B137 |
 
-Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,50, ERP 4,23%, Ke 11,33%, costo de la deuda después de impuestos 4,61%, peso del patrimonio 92,0%, WACC inicial 10,80% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
+Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,50, ERP 4,23%, Ke 11,33%, costo de la deuda después de impuestos 4,61%, peso del patrimonio 91,7%, WACC inicial 10,78% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
 ## 4. Múltiplos: selección y origen
 
@@ -73,7 +73,7 @@ Regla: Base = (1 − λ) × promedio(A, B) + λ × C, dentro del rango de las tr
 - **P/FCFE.** Base 20,2x: promedio de historia y peers 17,4x, acercado 25% al justificado (28,5x); rango de anclas 16,4x–28,5x. Atípicos excluidos de la historia: Dec '21 (-558,0x: métrica negativa o ~0); Dec '22 (-16,7x: métrica negativa o ~0).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 17,6x: promedio de historia y peers 14,4x, acercado 25% al justificado (27,1x); rango de anclas 13,9x–27,1x. Atípicos excluidos de la historia: Dec '22 (-22,9x: métrica negativa o ~0); Dec '21 (636,4x: > 2,5x la mediana (33.3x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$34,52 frente a US$38,92 del DCF (−11%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$34,52 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$34,50 frente a US$38,84 del DCF (−11%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$34,50 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -81,35 +81,35 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$34,22 | US$53,71 | US$87,83 |
-| EV/EBITDA | 10% | US$36,71 | US$57,43 | US$79,62 |
-| EV/FCFF | 15% | US$35,00 | US$57,54 | US$84,86 |
+| DCF Damodaran | 60% | US$34,09 | US$53,60 | US$87,76 |
+| EV/EBITDA | 10% | US$36,60 | US$57,33 | US$79,52 |
+| EV/FCFF | 15% | US$34,90 | US$57,43 | US$84,75 |
 | P/E | 5% | US$21,05 | US$34,04 | US$50,20 |
-| P/FCFE | 5% | US$25,10 | US$41,09 | US$65,24 |
+| P/FCFE | 5% | US$25,29 | US$41,45 | US$66,00 |
 | P/OCF | 5% | US$24,58 | US$37,80 | US$51,85 |
-| **Ponderado FY+3** | 100% | US$32,99 | US$52,24 | US$81,76 |
+| **Ponderado FY+3** | 100% | US$32,90 | US$52,17 | US$81,72 |
 
 Valor presente (Ke 11,33%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$29,59 | US$28,08 | US$26,60 | US$28,09 | OK |
-| EV/EBITDA | Base | US$38,18 | US$40,71 | US$41,62 | US$40,17 | OK |
-| EV/EBITDA | Optimista | US$42,64 | US$51,45 | US$57,70 | US$50,59 | OK |
-| EV/FCFF | Conservador | US$28,43 | US$26,91 | US$25,36 | US$26,90 | OK |
-| EV/FCFF | Base | US$35,95 | US$40,50 | US$41,69 | US$39,38 | OK |
-| EV/FCFF | Optimista | US$42,48 | US$53,88 | US$61,49 | US$52,62 | OK |
+| EV/EBITDA | Conservador | US$29,49 | US$27,99 | US$26,52 | US$28,00 | OK |
+| EV/EBITDA | Base | US$38,08 | US$40,63 | US$41,54 | US$40,08 | OK |
+| EV/EBITDA | Optimista | US$42,54 | US$51,36 | US$57,62 | US$50,51 | OK |
+| EV/FCFF | Conservador | US$28,33 | US$26,82 | US$25,29 | US$26,81 | OK |
+| EV/FCFF | Base | US$35,85 | US$40,41 | US$41,61 | US$39,29 | OK |
+| EV/FCFF | Optimista | US$42,38 | US$53,79 | US$61,41 | US$52,53 | OK |
 | P/E | Conservador | US$17,03 | US$16,00 | US$15,25 | US$16,09 | OK |
 | P/E | Base | US$21,75 | US$23,67 | US$24,66 | US$23,36 | OK |
 | P/E | Optimista | US$25,14 | US$31,59 | US$36,37 | US$31,04 | OK |
-| P/FCFE | Conservador | US$20,01 | US$19,17 | US$18,19 | US$19,13 | OK |
-| P/FCFE | Base | US$26,63 | US$28,90 | US$29,77 | US$28,43 | OK |
-| P/FCFE | Optimista | US$33,51 | US$41,69 | US$47,27 | US$40,83 | OK |
+| P/FCFE | Conservador | US$20,16 | US$19,31 | US$18,33 | US$19,27 | OK |
+| P/FCFE | Base | US$26,95 | US$29,17 | US$30,04 | US$28,72 | OK |
+| P/FCFE | Optimista | US$33,99 | US$42,21 | US$47,83 | US$41,34 | OK |
 | P/OCF | Conservador | US$19,54 | US$18,73 | US$17,81 | US$18,69 | OK |
 | P/OCF | Base | US$23,65 | US$26,63 | US$27,39 | US$25,89 | OK |
 | P/OCF | Optimista | US$26,53 | US$33,10 | US$37,57 | US$32,40 | OK |
 
-Múltiplos consolidados hoy: US$23,85 / US$34,52 / US$45,41 · DCF hoy: US$24,80 / US$38,92 / US$63,65 · Ponderado hoy: US$24,42 / US$37,16 / US$56,35 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$23,81 / US$34,50 / US$45,42 · DCF hoy: US$24,71 / US$38,84 / US$63,59 · Ponderado hoy: US$24,35 / US$37,10 / US$56,32 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
@@ -117,17 +117,17 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$29,46 supone que los ingresos crecen 8,2% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 14,8% (−6,6 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$29,61 supone que los ingresos crecen 8,4% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 14,8% (−6,4 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$53,71 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,3%, WACC de los años 4-10 10,0%, ROE de FY+3 29,4% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$53,60 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,3%, WACC de los años 4-10 10,0%, ROE de FY+3 29,4% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
 | EV/EBITDA | 17,1x | 15,9x | +7% | 5,6% | 5,3% | +0,3 pp | Coherente con el DCF. |
 | EV/FCFF | 23,9x | 22,3x | +7% | 5,6% | 5,3% | +0,3 pp | Coherente con el DCF. |
-| P/E | 19,4x | 30,6x | −37% | 7,2% | 8,8% | −1,7 pp | Revisar: el múltiplo vale 37% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
-| P/FCFE | 20,2x | 26,4x | −24% | 6,1% | 7,3% | −1,2 pp | Coherente con el DCF. |
-| P/OCF | 17,6x | 25,0x | −30% | 5,6% | 7,3% | −1,6 pp | Revisar: el múltiplo vale 30% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
+| P/E | 19,4x | 30,5x | −36% | 7,2% | 8,8% | −1,7 pp | Revisar: el múltiplo vale 36% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
+| P/FCFE | 20,2x | 26,1x | −23% | 6,1% | 7,2% | −1,1 pp | Coherente con el DCF. |
+| P/OCF | 17,6x | 25,0x | −29% | 5,6% | 7,3% | −1,6 pp | Revisar: el múltiplo vale 29% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -135,15 +135,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$37,16 | — |
-| Múltiplos Base +20% | US$39,82 | +7,2% |
-| Múltiplos Base −20% | US$34,50 | −7,2% |
-| Crecimiento años 2-5 +2 pp | US$38,85 | +4,6% |
-| Crecimiento años 2-5 −2 pp | US$35,60 | −4,2% |
-| Margen objetivo +3 pp | US$41,26 | +11,0% |
-| Margen objetivo −3 pp | US$33,06 | −11,0% |
-| WACC +1 pp | US$35,96 | −3,2% |
-| WACC −1 pp | US$38,44 | +3,4% |
+| Vigente | US$37,10 | — |
+| Múltiplos Base +20% | US$39,77 | +7,2% |
+| Múltiplos Base −20% | US$34,44 | −7,2% |
+| Crecimiento años 2-5 +2 pp | US$38,80 | +4,6% |
+| Crecimiento años 2-5 −2 pp | US$35,55 | −4,2% |
+| Margen objetivo +3 pp | US$41,21 | +11,1% |
+| Margen objetivo −3 pp | US$33,00 | −11,1% |
+| WACC +1 pp | US$35,91 | −3,2% |
+| WACC −1 pp | US$38,39 | +3,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Margen objetivo +3 pp, Margen objetivo −3 pp, Múltiplos Base +20%.

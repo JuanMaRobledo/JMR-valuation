@@ -1,0 +1,49 @@
+{
+ "ticker": "ONON_BALANCE",
+ "sheet_id": "17E_Rd-MD-u5i8Vez7sYwcWIdVYvDdjNhOu-6NWAzGnQ",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L20",
+   "antes": 102.6,
+   "despues": 108.7,
+   "motivo": "Arrendamientos corrientes al 30-jun-2026: 87,9 MCHF × 1,2366 (6-K 1S26). Antes 102,6, el cierre de 2025. Sin deuda bancaria dispuesta."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 556.1,
+   "despues": 586.9,
+   "motivo": "Arrendamientos no corrientes al 30-jun-2026: 474,6 MCHF × 1,2366 (6-K 1S26). Antes 556,1."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 2061.9,
+   "despues": 2363.6,
+   "motivo": "Patrimonio al 30-jun-2026: 1.911,4 MCHF × 1,2366 (6-K 1S26). Antes 2.061,9, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 2061.9,
+   "despues": 2363.6,
+   "motivo": "Patrimonio al 30-jun-2026: 1.911,4 MCHF × 1,2366 (6-K 1S26). Antes 2.061,9, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L16",
+   "antes": 3581.4,
+   "despues": 4010.2,
+   "motivo": "Activos totales al 30-jun-2026: 3.242,9 MCHF × 1,2366 (6-K 1S26)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L29",
+   "antes": 1519.5,
+   "despues": 1646.5,
+   "motivo": "Pasivos totales al 30-jun-2026: 1.331,5 MCHF × 1,2366 (6-K 1S26)."
+  }
+ ]
+}

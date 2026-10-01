@@ -1,0 +1,21 @@
+{
+ "ticker": "PYPL_ROIC",
+ "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja que se desvanece: Red de dos lados (comercios y usuarios) y marca en el checkout. Evidencia: ROIC 13-25% en 2021-2026. ROIC después del año 10 = 14,8%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (sin dato), sin superar el ROIC actual (20,6%): 20,6%, porque la ventaja se desvanece."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.134,
+   "despues": 0.148,
+   "motivo": "Ventaja que se desvanece: Red de dos lados (comercios y usuarios) y marca en el checkout. Evidencia: ROIC 13-25% en 2021-2026. ROIC después del año 10 = 14,8%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (sin dato), sin superar el ROIC actual (20,6%): 20,6%, porque la ventaja se desvanece."
+  }
+ ]
+}

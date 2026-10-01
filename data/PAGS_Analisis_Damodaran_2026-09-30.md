@@ -9,6 +9,8 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$11,60; la historia central A vale US$11,89 y el rango es US$9,99–12,73. El MOS 35% se aplica al esperado: US$7,54. El antiguo caso Base de la hoja (US$11,92) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, flujos ltm (2 celdas, con respaldo). Valor esperado US$11,60 → US$11,60. Salvedades abiertas: Arrendamientos operativos: la deuda del DCF incluye 10,9 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,04 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría. Financiera (DCF de flujo al accionista): el balance LTM de la hoja repite el cierre de 2025 y los flujos de inversión y financiación LTM no están importados. No afectan al valor (utilidad, ROE y costo del patrimonio), pero quedan pendientes de completar. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$11,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
@@ -26,16 +28,16 @@ PagSeguro (PagBank) nació procesando pagos con tarjeta para microcomercios en B
 
 ### Visión externa: tasas base
 
-Con ventas LTM de US$3.892 millones, la empresa está en el tramo **$3,000-4,500 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 5,4% y una mediana de 4,7% (desviación estándar 8,5%); sumando una inflación de 2,5%, la mediana nominal ronda 7,2%.
+Con ventas LTM de US$3.892 millones (US$2.753 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **$2,000-3,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 6,2% y una mediana de 5,1% (desviación estándar 8,9%); sumando una inflación de 2,5%, la mediana nominal ronda 7,6%.
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · Banco digital estable con ROAE de ~15% | 5,6% | 60% |
-| B · El PIX y la competencia erosionan | 1,4% | 82% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | -0,4% | 88% |
-| D · Crece el banco: crédito y depósitos | 9,0% | 40% |
+| A · Banco digital estable con ROAE de ~15% | 5,6% | 63% |
+| B · El PIX y la competencia erosionan | 1,4% | 85% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | -0,4% | 89% |
+| D · Crece el banco: crédito y depósitos | 9,0% | 42% |
 
-Para empresas de US$3.000-4.500 millones, crecer 5,6% anual cinco años (historia A) lo logró ~60%: la hoja (6%) es normal. En una financiera, el valor depende más del retorno sobre el patrimonio frente al costo del patrimonio (~12-15% en Brasil) que del crecimiento.
+En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 5,6% anual cinco años (historia A) lo logró ~63% de las empresas de ese tamaño; 9,0% (historia D), ~42%. La hoja (6%) es normal. En una financiera, el valor depende más del retorno sobre el patrimonio frente al costo del patrimonio (~12-15% en Brasil) que del crecimiento.
 
 
 ### Piezas del valor
@@ -282,7 +284,7 @@ DCF inverso: crecimiento anual de beneficios en los años 1-5 que justifica ese 
 
 |  | Margen 13% | Margen 16% | Margen 17% |
 |---|---:|---:|---:|
-| Beta 1,30 | -4,6% (95% de las empresas) | -4,6% (95% de las empresas) | -4,6% (95% de las empresas) |
+| Beta 1,30 | -4,6% (96% de las empresas) | -4,6% (96% de las empresas) | -4,6% (96% de las empresas) |
 | Beta 0,97 | -6,7% (97% de las empresas) | -6,7% (97% de las empresas) | -6,7% (97% de las empresas) |
 
 Frente al valor esperado de las historias (US$11,60 con la beta de la hoja; US$13,08 con la propuesta), el precio está por debajo en 23% y por debajo en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.

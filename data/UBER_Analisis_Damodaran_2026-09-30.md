@@ -9,6 +9,8 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$81,00; la historia central A vale US$89,63 y el rango es US$28,29–122,08. El MOS 35% se aplica al esperado: US$52,65. El antiguo caso Base de la hoja (US$88,85) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, conversor de i+d alineado al ltm, eps básico, flujos ltm (7 celdas, con respaldo). Valor esperado US$81,00 → US$81,00. Salvedades abiertas: Arrendamientos operativos: la deuda del DCF incluye 2.008,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,98 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$88,85 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
@@ -26,16 +28,16 @@ Uber es una plataforma que coordina demanda y oferta local: viajes (Movilidad), 
 
 ### Visión externa: tasas base
 
-Con ventas LTM de US$55.227 millones, la empresa está en el tramo **>$50,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 1,0% y una mediana de 1,5% (desviación estándar 8,3%); sumando una inflación de 2,5%, la mediana nominal ronda 4,0%.
+Con ventas LTM de US$55.227 millones (US$39.076 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **>$25,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 2,1% y una mediana de 2,0% (desviación estándar 8,6%); sumando una inflación de 2,5%, la mediana nominal ronda 4,5%.
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · Plataforma madura que escala márgenes | 10,9% | 16% |
-| B · Robotaxis y regulación presionan la movilidad | 6,7% | 33% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 2,0% | 63% |
-| D · Uber es la red de los vehículos autónomos | 13,8% | 9% |
+| A · Plataforma madura que escala márgenes | 10,9% | 19% |
+| B · Robotaxis y regulación presionan la movilidad | 6,7% | 37% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | 2,0% | 66% |
+| D · Uber es la red de los vehículos autónomos | 13,8% | 12% |
 
-Para empresas de más de US$50.000 millones, crecer 11% anual cinco años (historia A) lo logró ~16%; 13,8% (historia D), ~9%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.
+En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 10,9% anual cinco años (historia A) lo logró ~19% de las empresas de ese tamaño; 13,8% (historia D), ~12%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.
 
 
 ### Piezas del valor
@@ -77,7 +79,7 @@ Ventas/capital: 2,5x en años 1–5 y 3,5x en 6–10. WACC: 8,2%. Ke: 8,6%. Impu
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 12,6% | 13,0% | 9,2% | = costo de capital | US$88,85 | US$88,85 |
+| Sin ventaja defendible | 17,6% | 13,0% | 9,2% | = costo de capital | US$88,85 | US$88,85 |
 
 Fuentes de ventaja: Efectos de red de dos lados. Evidencia: ROIC por encima del costo de capital solo desde 2024 (menos de 3 años). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
@@ -311,8 +313,8 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 16% | Margen 22% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 0,80 | 11,9% (12% de las empresas) | 5,2% (43% de las empresas) | 2,0% (63% de las empresas) |
-| Beta 0,76 | 11,7% (13% de las empresas) | 5,0% (44% de las empresas) | 1,9% (64% de las empresas) |
+| Beta 0,80 | 11,9% (16% de las empresas) | 5,2% (47% de las empresas) | 2,0% (66% de las empresas) |
+| Beta 0,76 | 11,7% (17% de las empresas) | 5,0% (48% de las empresas) | 1,9% (67% de las empresas) |
 
 Frente al valor esperado de las historias (US$81,00 con la beta de la hoja; US$81,76 con la propuesta), el precio está por debajo en 15% y por debajo en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 

@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$167,44 a US$178,53. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
+  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$167,44 a US$178,53 Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
  },
  "historias": [
   {
@@ -170,7 +170,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$7.000-12.000 millones, crecer 3% anual cinco años (historia A) lo logró ~70%: la hoja no pide crecimiento, pide que el margen se recupere. El valor de lululemon depende del margen y de cuánto dura la caída en Norteamérica, no de la tasa de crecimiento.",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$7.000-12.000 millones: crecer 3,0% anual cinco años (historia A) lo logró ~70% de las empresas de ese tamaño; 5,8% (historia D), ~52%. La hoja no pide crecimiento, pide que el margen se recupere. El valor de lululemon depende del margen y de cuánto dura la caída en Norteamérica, no de la tasa de crecimiento.",
  "crecimiento": {
   "texto": "Ingresos de US$9.619 millones (FY23, +18,6%), US$10.588 millones (FY24, +10,1%) y US$11.103 millones (FY25, +4,9%); LTM US$11.094 millones (plano). En el 2T FY26 los ingresos cayeron 4% (−5% en moneda constante) y las comparables −10%. La hoja supone −6% el próximo año y 4% después. La división de las historias (Américas ~69%, China ~16%, resto ~15%) es una aproximación con fuentes secundarias: no se verificó un desglose oficial en un solo documento.",
   "tabla": {

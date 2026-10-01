@@ -107,10 +107,16 @@ def run_exact(grid, cases):
 
 
 # ---------------------------------------------------------------- tasas base
+# Los tramos de The Base Rate Book están en dólares de 2015: las ventas se deflactan con el IPC-U (promedio 2015 =
+# 237,017; agosto de 2026 = 334,980, BLS) antes de elegir el tramo (corrección verificada en la auditoría de ADBE).
+IPC_2015, IPC_HOY = 237.017, 334.980
+
+
 def base_rates(revenue_mn: float) -> dict:
     br = json.loads((REF / "base_rates_5y.json").read_text())
-    name = next(n for lim, n in BUCKETS if revenue_mn < lim)
-    return {"tramo": name, **br["tamanos"][name], "bins": br["bins"], "fuente": br["fuente"]}
+    real = revenue_mn * IPC_2015 / IPC_HOY
+    name = next(n for lim, n in BUCKETS if real < lim)
+    return {"tramo": name, "ventas_2015": real, **br["tamanos"][name], "bins": br["bins"], "fuente": br["fuente"]}
 
 
 def frac_at_least(br: dict, g_nominal: float) -> float:
@@ -644,6 +650,16 @@ def render(r: dict) -> tuple[str, str]:
       f"valor intrínseco esperado {usd(ve)}; la historia central A vale {usd(central['valor_beta_hoja'])} y el rango es "
       f"{rango}.{mos_txt} El antiguo caso Base de la hoja ({usd(r['dcf_base'])}) se conserva solo como calibración técnica; "
       "no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.")
+    aud_p = _ROOT / "reference" / "auditoria_estados_2026-10-01" / f"{r['ticker']}_resumen.json"
+    if aud_p.exists():
+        a = json.loads(aud_p.read_text())
+        tipos = sorted({c["tipo"] for c in a["cambios"]})
+        p(f"**Auditoría, {a['fecha']}:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las "
+          f"historias y sus textos. " + (f"Correcciones: {', '.join(t_.lower() for t_ in tipos)} ({len(a['cambios'])} celdas, con "
+          "respaldo). " if a["cambios"] else "Sin correcciones de datos. ") +
+          f"Valor esperado {usd(a['antes']['valorEsperado'])} → {usd(a['despues']['valorEsperado'])}. " +
+          ("Salvedades abiertas: " + " ".join(a["salvedades"][:-1]) + " " if len(a["salvedades"]) > 1 else "") +
+          "La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.")
     p("Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, "
       "piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el "
       f"motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de {usd(r['dcf_base'])} por acción): solo cambian el "
@@ -658,7 +674,9 @@ def render(r: dict) -> tuple[str, str]:
 
     br = r["tasas_base"]
     h3("Visión externa: tasas base")
-    p(f"Con ventas LTM de US${es(r['ingresos_ltm'], 0)} millones, la empresa está en el tramo **{br['tramo']}** de las "
+    real = br.get("ventas_2015") or r["ingresos_ltm"] * IPC_2015 / IPC_HOY
+    p(f"Con ventas LTM de US${es(r['ingresos_ltm'], 0)} millones (US${es(real, 0)} millones en dólares de 2015, deflactadas con "
+      f"el IPC-U: × {es(IPC_2015, 3)} / {es(IPC_HOY, 3)}), la empresa está en el tramo **{br['tramo']}** de las "
       f"tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, "
       f"1950-2015). En ese tramo el crecimiento real anual tuvo una media de {es(br['Mean'], 1)}% y una mediana de "
       f"{es(br['Median'], 1)}% (desviación estándar {es(br['StDev'], 1)}%); sumando una inflación de "

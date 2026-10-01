@@ -8,7 +8,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) sin deuda financiera da 0,78, y el DCF Base sube de US$28,19 a US$30,57. Hay una razón para no bajar tanto: los arrendamientos son deuda operativa que el modelo trata como gasto, y ese apalancamiento operativo sube el riesgo real del patrimonio. La beta de la hoja es defendible."
+  "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) sin deuda financiera da 0,78, y el DCF Base sube de US$28,19 a US$30,57 Hay una razón para no bajar tanto: los arrendamientos son deuda operativa que el modelo trata como gasto, y ese apalancamiento operativo sube el riesgo real del patrimonio. La beta de la hoja es defendible."
  },
  "historias": [
   {
@@ -111,7 +111,7 @@
    "Probable a largo plazo"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$12.000-25.000 millones, crecer 7,2% anual cinco años (historia A) lo logró ~38%; 10,2% (historia D), ~25%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).",
+ "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$7.000-12.000 millones: crecer 7,2% anual cinco años (historia A) lo logró ~43% de las empresas de ese tamaño; 10,2% (historia D), ~28%. El crecimiento por aperturas le da a Chipotle una ventaja sobre la tasa base, pero el precio pide algo muy distinto (ver «El precio al final»).",
  "crecimiento": {
   "texto": "Ventas de US$9.872 millones (2023, +14,3%), US$11.314 millones (2024, +14,6%) y US$11.926 millones (2025, +5,4%); LTM US$12.424 millones. En el 2T26 los ingresos crecieron 9,3% (US$3.349 millones) con comparables de +2,2% (+1,2% ticket, +1,0% tráfico) y 38,3% de ventas digitales. El salto de 2025 hacia abajo viene de comparables planas o negativas; las aperturas sostuvieron el crecimiento. Para 2026 la empresa espera comparables de un dígito bajo y 350-370 aperturas; para el 3T26 anticipó comparables de ~+1%, con ~200 pb de freno por preocupaciones sanitarias de la industria, antes del brote de agosto.",
   "tabla": {

@@ -1,0 +1,42 @@
+{
+ "ticker": "SHAK_BALANCE",
+ "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 575.1,
+   "despues": 622,
+   "motivo": "Arrendamientos operativos de largo plazo al 1-jul-2026 (10-Q 2T26); antes 575,1."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 525.3,
+   "despues": 544,
+   "motivo": "Patrimonio de los accionistas al 1-jul-2026 (10-Q); antes 525,3, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 525.3,
+   "despues": 572,
+   "motivo": "Patrimonio total con minoritarios al 1-jul-2026 (10-Q)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B15",
+   "antes": "='Balance Sheet'!L35",
+   "despues": "='Balance Sheet'!L34",
+   "motivo": "Patrimonio de los accionistas (sin minoritarios, que se restan aparte)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B21",
+   "antes": 0,
+   "despues": 27,
+   "motivo": "Participaciones minoritarias al 1-jul-2026 (10-Q 2T26); antes 0."
+  }
+ ]
+}

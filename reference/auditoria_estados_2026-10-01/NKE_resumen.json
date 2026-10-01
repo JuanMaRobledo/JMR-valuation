@@ -1,0 +1,104 @@
+{
+ "ticker": "NKE",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja que se desvanece: Marca global y escala de distribución, hoy bajo presión. Evidencia: ROIC 18-47% en 2021-2026, en descenso. ROIC después del año 10 = 11,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (20,9%), sin superar el ROIC actual (13,8%): 13,8%, porque la ventaja se desvanece.",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.112,
+   "despues": 0.114,
+   "motivo": "Ventaja que se desvanece: Marca global y escala de distribución, hoy bajo presión. Evidencia: ROIC 18-47% en 2021-2026, en descenso. ROIC después del año 10 = 11,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (20,9%), sin superar el ROIC actual (13,8%): 13,8%, porque la ventaja se desvanece.",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": 99.0,
+   "motivo": "LTM = ejercicio cerrado el 2026-05-31 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2024-05-31",
+   "antes": 3.73,
+   "despues": 3.76,
+   "motivo": "EPS básico del 10-K (2024-05-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2025-05-31",
+   "antes": 2.16,
+   "despues": 2.17,
+   "motivo": "EPS básico del 10-K (2025-05-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "Arrendamientos operativos: la deuda del DCF incluye 3.091,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$2,09 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 3091,
+  "acciones": 1481,
+  "efecto_por_accion": 2.087103308575287
+ },
+ "antes": {
+  "dcfTecnico": 33.96395977432078,
+  "valorEsperado": 32.19150965006905,
+  "precioMOS": 20.924481272544885,
+  "historias": {
+   "A": 34.88061644109514,
+   "B": 21.678488375936837,
+   "C": 14.926200181930792,
+   "D": 46.22687864849322
+  }
+ },
+ "despues": {
+  "dcfTecnico": 34.27459711,
+  "valorEsperado": 32.424975575890954,
+  "precioMOS": 21.076234124329122,
+  "historias": {
+   "A": 35.2048082997036,
+   "B": 21.678488375936837,
+   "C": 14.926200181930792,
+   "D": 46.66477659573372
+  }
+ },
+ "tramo_tasas_base": ">$25,000 Mn"
+}

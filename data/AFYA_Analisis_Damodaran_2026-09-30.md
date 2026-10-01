@@ -9,6 +9,8 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$22,83; la historia central A vale US$26,06 y el rango es US$12,55–30,25. El MOS 35% se aplica al esperado: US$14,84. El antiguo caso Base de la hoja (US$25,29) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, flujos ltm, roic terminal (criterio damodaran) (4 celdas, con respaldo). Valor esperado US$22,83 → US$22,83. Salvedades abiertas: Arrendamientos operativos: la deuda del DCF incluye 206,5 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$2,32 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría. Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma automática; el balance se revisó con el informe semestral. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$25,29 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
@@ -26,16 +28,16 @@ Afya es el mayor grupo de educación médica de Brasil. Su negocio es la escasez
 
 ### Visión externa: tasas base
 
-Con ventas LTM de US$723 millones, la empresa está en el tramo **$700-1,250 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 7,9% y una mediana de 6,4% (desviación estándar 10,5%); sumando una inflación de 2,5%, la mediana nominal ronda 8,9%.
+Con ventas LTM de US$723 millones (US$512 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **$325-700 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 9,2% y una mediana de 7,3% (desviación estándar 10,8%); sumando una inflación de 2,5%, la mediana nominal ronda 9,8%.
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| A · La escasez de plazas sostiene precio y margen | 5,8% | 68% |
-| B · Madurez: precio real plano | 3,5% | 80% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 0,3% | 89% |
-| D · Maduran los campus y crece lo digital | 7,4% | 60% |
+| A · La escasez de plazas sostiene precio y margen | 5,8% | 66% |
+| B · Madurez: precio real plano | 3,5% | 77% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | 0,3% | 85% |
+| D · Maduran los campus y crece lo digital | 7,4% | 59% |
 
-Para empresas de US$700-1.250 millones, crecer ~6% anual cinco años (historia A) lo logró ~68% de las empresas: la hoja no pide nada extraordinario. El riesgo no está en el crecimiento sino en el país (real, tasas, política educativa), que ya entra por el costo del patrimonio de ~14%.
+En dólares de 2015 la empresa está en el tramo de US$325-700 millones: crecer 5,8% anual cinco años (historia A) lo logró ~66% de las empresas de ese tamaño; 7,4% (historia D), ~59%. La hoja no pide nada extraordinario. El riesgo no está en el crecimiento sino en el país (real, tasas, política educativa), que ya entra por el costo del patrimonio de ~14%.
 
 
 ### Piezas del valor
@@ -77,7 +79,7 @@ Ventas/capital: 1,5x en años 1–5 y 1,2x en 6–10. WACC: 11,2%. Ke: 14,0%. Im
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja durable | 14,8% | 15,9% | 11,0% | 14,8% | US$25,29 | US$22,43 |
+| Ventaja durable | 14,9% | 15,9% | 11,0% | 14,8% | US$25,29 | US$22,43 |
 
 Fuentes de ventaja: Licencias reguladas de Medicina (plazas limitadas). Evidencia: ROIC 12-16%, apenas 1-5 pp sobre el costo de capital desde 2022. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
@@ -311,8 +313,8 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 26% | Margen 30% | Margen 33% |
 |---|---:|---:|---:|
-| Beta 1,20 | -2,9% (95% de las empresas) | -5,6% (96% de las empresas) | -7,4% (98% de las empresas) |
-| Beta 1,16 | -3,1% (95% de las empresas) | -5,8% (97% de las empresas) | -7,5% (98% de las empresas) |
+| Beta 1,20 | -2,9% (89% de las empresas) | -5,6% (90% de las empresas) | -7,4% (90% de las empresas) |
+| Beta 1,16 | -3,1% (89% de las empresas) | -5,8% (90% de las empresas) | -7,5% (91% de las empresas) |
 
 Frente al valor esperado de las historias (US$22,83 con la beta de la hoja; US$23,08 con la propuesta), el precio está por debajo en 46% y por debajo en 47%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 

@@ -1,0 +1,56 @@
+{
+ "ticker": "DUOL_BALANCE",
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L4",
+   "antes": 0,
+   "despues": 133,
+   "motivo": "Inversiones mantenidas al vencimiento de corto plazo al 30-jun-2026 (10-Q 2T26); antes 0."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L5",
+   "antes": 1180.9,
+   "despues": 1313.9,
+   "motivo": "Caja 1.180,9 + inversiones de corto plazo 133 al 30-jun-2026 (10-Q)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L14",
+   "antes": 135.1,
+   "despues": 103,
+   "motivo": "Inversiones de largo plazo al 30-jun-2026 (10-Q); antes 135,1, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 93.8,
+   "despues": 86,
+   "motivo": "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 93,8."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 1347,
+   "despues": 1410,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.347, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 1347,
+   "despues": 1410,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.347, el cierre de 2025."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B20",
+   "antes": "='Balance Sheet'!L14+'Balance Sheet'!L15",
+   "despues": "='Balance Sheet'!L14",
+   "motivo": "Activos no operativos = inversiones de largo plazo. Antes sumaba «Other Long-Term Assets» (320,8), que no son inversiones."
+  }
+ ]
+}

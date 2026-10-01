@@ -1,0 +1,25 @@
+{
+ "ticker": "PAGS",
+ "fecha_ltm": "2026-06-30",
+ "cambios": [
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": "=L13+L22+L34",
+   "motivo": "Auditoría 1-oct-2026: cambio de caja LTM = operación + inversión + financiación (sin efecto cambiario). Antes −14, un valor de relleno del importador. Inversión y financiación LTM están en 0 en la hoja (no importadas); no afectan al DCF de flujo al accionista."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20)."
+  }
+ ],
+ "notas": [
+  "Emisor extranjero sin XBRL trimestral: flujos y EPS no contrastados automáticamente."
+ ]
+}

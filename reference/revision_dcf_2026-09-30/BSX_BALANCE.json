@@ -1,0 +1,56 @@
+{
+ "ticker": "BSX_BALANCE",
+ "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L20",
+   "antes": 299,
+   "despues": 1709,
+   "motivo": "Deuda corriente al 30-jun-2026 (DebtCurrent, 10-Q 2T26); antes 299, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 11137,
+   "despues": 10915,
+   "motivo": "Deuda de largo plazo al 30-jun-2026 (10-Q 2T26); antes 11.137, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L14",
+   "antes": 0,
+   "despues": 2245,
+   "motivo": "Inversiones al 30-jun-2026: método de participación 1.308 + sin valor de mercado 938 (10-Q). Antes 0: son activos no operativos."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 24233,
+   "despues": 24930,
+   "motivo": "Patrimonio de los accionistas al 30-jun-2026 (10-Q); antes 24.233, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 24233,
+   "despues": 25172,
+   "motivo": "Patrimonio total con minoritarios al 30-jun-2026 (10-Q)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B21",
+   "antes": 0,
+   "despues": 242,
+   "motivo": "Participaciones minoritarias al 30-jun-2026 (10-Q 2T26); antes 0."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B15",
+   "antes": "='Balance Sheet'!L35",
+   "despues": "='Balance Sheet'!L34",
+   "motivo": "Patrimonio de los accionistas (sin minoritarios, que se restan aparte)."
+  }
+ ]
+}

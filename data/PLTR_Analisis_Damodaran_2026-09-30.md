@@ -9,6 +9,8 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$51,02; la historia central A vale US$55,62 y el rango es US$15,72–95,62. El MOS 35% se aplica al esperado: US$33,16. El antiguo caso Base de la hoja (US$85,42) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, conversor de i+d alineado al ltm, flujos ltm (5 celdas, con respaldo). Valor esperado US$51,02 → US$51,02. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$85,42 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
@@ -26,16 +28,16 @@ Palantir vende plataformas (Gotham, Foundry, Apollo y AIP) que integran datos, m
 
 ### Visión externa: tasas base
 
-Con ventas LTM de US$6.156 millones, la empresa está en el tramo **$4,500-7,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 5,0% y una mediana de 4,1% (desviación estándar 8,7%); sumando una inflación de 2,5%, la mediana nominal ronda 6,6%.
+Con ventas LTM de US$6.156 millones (US$4.356 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **$3,000-4,500 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 5,4% y una mediana de 4,7% (desviación estándar 8,5%); sumando una inflación de 2,5%, la mediana nominal ronda 7,2%.
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
 | A · Hipercrecimiento que desacelera con la escala | 35,3% | 1% |
-| B · Se normaliza en un software de alta calidad | 19,3% | 8% |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 8,3% | 40% |
+| B · Se normaliza en un software de alta calidad | 19,3% | 9% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | 8,3% | 44% |
 | D · Sistema operativo de la IA empresarial | 47,1% | 0% |
 
-Para empresas de US$4.500-7.000 millones, crecer 35% anual cinco años (historia A) lo logró ~1%; 19% (historia B), ~8%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. La hoja suponía 48% anual (82% el primer año); tras la revisión del 30-sep-2026 supone ~42% (68% el primer año, coherente con la guía 2026 de US$8.150 millones), entre las historias A y D.
+En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 35,3% anual cinco años (historia A) lo logró ~1% de las empresas de ese tamaño; 47,1% (historia D), ~0%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. La hoja suponía 48% anual (82% el primer año); tras la revisión del 30-sep-2026 supone ~42% (68% el primer año, coherente con la guía 2026 de US$8.150 millones), entre las historias A y D.
 
 
 ### Piezas del valor

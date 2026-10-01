@@ -1,0 +1,93 @@
+{
+ "ticker": "PLTR",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10+269,932-218,821",
+   "motivo": "I+D de los 12 meses a jun-2025 = 2024 (507,9) + 1S25 (269,9) − 1S24 (218,8) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10+218,821-189,633",
+   "motivo": "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10+189,633-176,772",
+   "motivo": "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023.",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": 1117.738,
+   "despues": 1112.1,
+   "motivo": "LTM = ejercicio -668.5 + acumulado al 2026-06-30 611.9 − acumulado del año anterior -1168.7 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes 1117.738.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 0,
+  "acciones": 2402.897,
+  "efecto_por_accion": 0.0
+ },
+ "antes": {
+  "dcfTecnico": 85.42070051,
+  "valorEsperado": 51.02133950260961,
+  "precioMOS": 33.16387067669625,
+  "historias": {
+   "A": 55.61802554514875,
+   "B": 26.930616155421163,
+   "C": 15.716098972375727,
+   "D": 95.61667270343092
+  }
+ },
+ "despues": {
+  "dcfTecnico": 85.42070051,
+  "valorEsperado": 51.02133950260961,
+  "precioMOS": 33.16387067669625,
+  "historias": {
+   "A": 55.61802554514875,
+   "B": 26.930616155421163,
+   "C": 15.716098972375727,
+   "D": 95.61667270343092
+  }
+ },
+ "tramo_tasas_base": "$3,000-4,500 Mn"
+}

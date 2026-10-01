@@ -25,7 +25,7 @@ from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 
 _ROOT = Path(__file__).resolve().parents[1]
 OUT = _ROOT / "reference" / "revision_dcf_2026-09-30"
-IS, VO, COC, RD = "Input sheet", "Valuation output", "Cost of capital worksheet", "R& D converter"
+IS, VO, COC, RD, BSH = "Input sheet", "Valuation output", "Cost of capital worksheet", "R& D converter", "Balance Sheet"
 
 # (hoja, celda, valor nuevo, motivo)
 CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
@@ -161,6 +161,105 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (RD, "B13", "='Income Statement'!I10", "Año −2 = ejercicio a jun-2024. Antes el ejercicio a jun-2025."),
         (RD, "B14", "='Income Statement'!H10", "Año −3 = ejercicio a jun-2023. Antes el ejercicio a jun-2024."),
     ],
+    # NVO (IFRS, coronas; la hoja convierte todos los años a 0,1531 USD/DKK): el año −k es el LTM a junio, escalando el
+    # ejercicio anterior por la razón (ejercicio + 1S del año siguiente − 1S del año) / ejercicio, en coronas (6-K de Novo).
+    "NVO_RD": [
+        (RD, "B12", "='Income Statement'!J10*45288/48062", "12 meses a jun-2025 = 2024 (48.062) + 1S25 (21.998) − 1S24 (24.772) = 45.288 MDKK (6-K 2T25 y 4T24). Antes el ejercicio 2025, que se solapa con el LTM."),
+        (RD, "B13", "='Income Statement'!I10*43360/32443", "12 meses a jun-2024 = 2023 (32.443) + 1S24 (24.772) − 1S23 (13.855) = 43.360 MDKK. Antes el ejercicio 2024."),
+        (RD, "B14", "='Income Statement'!H10*27573/24047", "12 meses a jun-2023 = 2022 (24.047) + 1S23 (13.855) − 1S22 (10.329) = 27.573 MDKK. Antes el ejercicio 2023."),
+        (RD, "B15", "='Income Statement'!G10*20213/17772", "12 meses a jun-2022 = 2021 (17.772) + 1S22 (10.329) − 1S21 (7.888) = 20.213 MDKK. Antes el ejercicio 2022."),
+        (RD, "B16", "='Income Statement'!F10*16282/15462", "12 meses a jun-2021 = 2020 (15.462) + 1S21 (7.888) − 1S20 (7.068) = 16.282 MDKK. Antes el ejercicio 2021."),
+    ],
+    # Octava ronda (1-oct-2026): auditoría del balance LTM contra la SEC (XBRL del último 10-Q), como la de ADBE.
+    # El importador dejaba en la columna LTM el cierre anual y omitía los valores negociables y las inversiones
+    # no operativas. Solo se corrigen saldos reportados; la convención de arrendamientos de cada hoja se conserva.
+    "BSX_BALANCE": [
+        (BSH, "L20", 1709, "Deuda corriente al 30-jun-2026 (DebtCurrent, 10-Q 2T26); antes 299, el cierre de 2025."),
+        (BSH, "L25", 10915, "Deuda de largo plazo al 30-jun-2026 (10-Q 2T26); antes 11.137, el cierre de 2025."),
+        (BSH, "L14", 2245, "Inversiones al 30-jun-2026: método de participación 1.308 + sin valor de mercado 938 (10-Q). Antes 0: son activos no operativos."),
+        (BSH, "L34", 24930, "Patrimonio de los accionistas al 30-jun-2026 (10-Q); antes 24.233, el cierre de 2025."),
+        (BSH, "L35", 25172, "Patrimonio total con minoritarios al 30-jun-2026 (10-Q)."),
+        (IS, "B21", 242, "Participaciones minoritarias al 30-jun-2026 (10-Q 2T26); antes 0."),
+        (IS, "B15", "='Balance Sheet'!L34", "Patrimonio de los accionistas (sin minoritarios, que se restan aparte)."),
+    ],
+    "CELH_BALANCE": [
+        (BSH, "L25", 668, "Deuda de largo plazo al 30-jun-2026 (10-Q 2T26); antes 669,9, el cierre de 2025."),
+        (BSH, "L34", 1200, "Patrimonio al 30-jun-2026 (10-Q); antes 1.181,5, el cierre de 2025."),
+        (BSH, "L35", 1200, "Patrimonio al 30-jun-2026 (10-Q); antes 1.181,5, el cierre de 2025."),
+    ],
+    "DPZ_BALANCE": [
+        (BSH, "L20", 7, "Porción corriente de deuda y arrendamientos financieros al 14-jun-2026 (10-Q 2T26)."),
+        (BSH, "L25", 4876, "Deuda de largo plazo con arrendamientos financieros al 14-jun-2026 (10-Q 2T26); antes 4.810,7, el cierre de 2025."),
+        (BSH, "L14", 28, "Valores negociables de largo plazo al 14-jun-2026 (10-Q); antes 0."),
+        (BSH, "L34", -3982, "Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025."),
+        (BSH, "L35", -3982, "Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025."),
+        (IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", "Deuda financiera al 14-jun-2026 (antes 4.816,8 fijo, del cierre de 2025). Sin arrendamientos operativos, como antes."),
+    ],
+    "DUOL_BALANCE": [
+        (BSH, "L4", 133, "Inversiones mantenidas al vencimiento de corto plazo al 30-jun-2026 (10-Q 2T26); antes 0."),
+        (BSH, "L5", 1313.9, "Caja 1.180,9 + inversiones de corto plazo 133 al 30-jun-2026 (10-Q)."),
+        (BSH, "L14", 103, "Inversiones de largo plazo al 30-jun-2026 (10-Q); antes 135,1, el cierre de 2025."),
+        (BSH, "L26", 86, "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 93,8."),
+        (BSH, "L34", 1410, "Patrimonio al 30-jun-2026 (10-Q); antes 1.347, el cierre de 2025."),
+        (BSH, "L35", 1410, "Patrimonio al 30-jun-2026 (10-Q); antes 1.347, el cierre de 2025."),
+        (IS, "B20", "='Balance Sheet'!L14", "Activos no operativos = inversiones de largo plazo. Antes sumaba «Other Long-Term Assets» (320,8), que no son inversiones."),
+    ],
+    "EPAM_BALANCE": [
+        (BSH, "L21", 39.3, "Porción corriente de arrendamientos al 30-jun-2026 (10-Q 2T26)."),
+        (BSH, "L26", 88, "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 81,5."),
+        (BSH, "L34", 3519, "Patrimonio al 30-jun-2026 (10-Q); antes 3.677,2, el cierre de 2025."),
+        (BSH, "L35", 3519, "Patrimonio al 30-jun-2026 (10-Q); antes 3.677,2, el cierre de 2025."),
+    ],
+    "GOOG_BALANCE": [
+        (BSH, "L4", 186563, "Valores negociables al 30-jun-2026 (10-Q 2T26); antes 0: la caja del DCF omitía los valores negociables."),
+        (BSH, "L5", 242474, "Caja y valores negociables al 30-jun-2026 = 55.911 + 186.563 (10-Q)."),
+        (BSH, "L14", 131461, "Valores no negociables y otras inversiones de largo plazo al 30-jun-2026 (10-Q); antes 0: son activos no operativos."),
+        (BSH, "L20", 1999, "Porción corriente de la deuda al 30-jun-2026 (10-Q)."),
+        (BSH, "L25", 98165, "Deuda de largo plazo al 30-jun-2026 (10-Q); antes 46.547, el cierre de 2025."),
+        (BSH, "L21", 3446, "Arrendamientos operativos corrientes al 30-jun-2026 = 18.037 − 14.591 (10-Q)."),
+        (BSH, "L26", 14591, "Arrendamientos operativos de largo plazo al 30-jun-2026 (10-Q); antes 12.744."),
+        (BSH, "L34", 640480, "Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025."),
+        (BSH, "L35", 640480, "Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025."),
+    ],
+    "NVDA_BALANCE": [
+        (BSH, "L4", 34143, "Valores negociables (deuda) al 26-jul-2026 (10-Q 2T FY27); antes 0."),
+        (BSH, "L5", 56586, "Caja 22.443 + valores negociables 34.143 al 26-jul-2026 (10-Q)."),
+        (BSH, "L14", 90681, "Inversiones en acciones al 26-jul-2026: cotizadas 42.783 + no cotizadas 47.898 (10-Q); antes 0: son activos no operativos."),
+        (BSH, "L20", 1000, "Porción corriente de la deuda al 26-jul-2026 (10-Q)."),
+        (BSH, "L25", 32366, "Deuda de largo plazo al 26-jul-2026 (10-Q); antes 7.469, el cierre de enero de 2026."),
+        (BSH, "L21", 509, "Arrendamientos operativos corrientes al 26-jul-2026 (10-Q)."),
+        (BSH, "L26", 4985, "Arrendamientos operativos de largo plazo al 26-jul-2026 (10-Q); antes 2.572."),
+        (BSH, "L34", 228984, "Patrimonio al 26-jul-2026 (10-Q); antes 157.293, el cierre de enero de 2026."),
+        (BSH, "L35", 228984, "Patrimonio al 26-jul-2026 (10-Q); antes 157.293, el cierre de enero de 2026."),
+    ],
+    "ZTS_BALANCE": [
+        (BSH, "L4", 200, "Inversiones de corto plazo al 30-jun-2026 (10-Q 2T26); antes 0."),
+        (BSH, "L5", 1676, "Caja 1.476 + inversiones de corto plazo 200 al 30-jun-2026 (10-Q)."),
+        (BSH, "L25", 9048, "Deuda de largo plazo al 30-jun-2026 (10-Q); antes 9.042."),
+        (BSH, "L26", 190, "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 196."),
+        (BSH, "L34", 3148, "Patrimonio al 30-jun-2026 (10-Q); antes 3.331, el cierre de 2025."),
+        (BSH, "L35", 3148, "Patrimonio al 30-jun-2026 (10-Q); antes 3.331, el cierre de 2025."),
+    ],
+    "SHAK_BALANCE": [
+        (BSH, "L26", 622, "Arrendamientos operativos de largo plazo al 1-jul-2026 (10-Q 2T26); antes 575,1."),
+        (BSH, "L34", 544, "Patrimonio de los accionistas al 1-jul-2026 (10-Q); antes 525,3, el cierre de 2025."),
+        (BSH, "L35", 572, "Patrimonio total con minoritarios al 1-jul-2026 (10-Q)."),
+        (IS, "B15", "='Balance Sheet'!L34", "Patrimonio de los accionistas (sin minoritarios, que se restan aparte)."),
+        (IS, "B21", 27, "Participaciones minoritarias al 1-jul-2026 (10-Q 2T26); antes 0."),
+    ],
+    # ONON (NIIF, francos; la hoja convierte a USD al tipo implícito de su caja LTM: 1.490,8 / 1.205,6 = 1,2366).
+    "ONON_BALANCE": [
+        (BSH, "L20", 108.7, "Arrendamientos corrientes al 30-jun-2026: 87,9 MCHF × 1,2366 (6-K 1S26). Antes 102,6, el cierre de 2025. Sin deuda bancaria dispuesta."),
+        (BSH, "L26", 586.9, "Arrendamientos no corrientes al 30-jun-2026: 474,6 MCHF × 1,2366 (6-K 1S26). Antes 556,1."),
+        (BSH, "L34", 2363.6, "Patrimonio al 30-jun-2026: 1.911,4 MCHF × 1,2366 (6-K 1S26). Antes 2.061,9, el cierre de 2025."),
+        (BSH, "L35", 2363.6, "Patrimonio al 30-jun-2026: 1.911,4 MCHF × 1,2366 (6-K 1S26). Antes 2.061,9, el cierre de 2025."),
+        (BSH, "L16", 4010.2, "Activos totales al 30-jun-2026: 3.242,9 MCHF × 1,2366 (6-K 1S26)."),
+        (BSH, "L29", 1646.5, "Pasivos totales al 30-jun-2026: 1.331,5 MCHF × 1,2366 (6-K 1S26)."),
+    ],
+    "MSFT_BALANCE": [
+        (IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26+66594",
+         "Se suman los arrendamientos financieros (66.594 al 30-jun-2026, 10-K FY26): son deuda (centros de datos) y su costo no está en el EBIT como alquiler. Antes se omitían."),
+    ],
     # CELH_IMPUESTO se aplicó y se revirtió el 30-sep-2026: la hoja ya usa la tasa marginal (24%) desde el año 1
     # ('Valuation output'!C8 = 'Input sheet'!B25); B24 solo alimenta el año base y no cambia el valor.
     "CELH_IMPUESTO": [
@@ -191,7 +290,8 @@ def _roic_nota(m: dict) -> str:
 
 
 # MSFT (1-oct-2026): el ROIC actual sube a 26,5% al corregir el conversor de I+D y sigue bajo el de la industria.
-for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT"):
+# 1-oct-2026: ROIC actual con capital operativo y balance del último 10-Q (auditoría de estados).
+for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT", "GOOG", "INTU", "NKE", "PYPL"):
     _m = _MOAT[_t]
     CHANGES[f"{_t}_ROIC"] = [(IS, "B49", "Yes", _roic_nota(_m)), (IS, "B50", _m["roic_terminal"], _roic_nota(_m))]
 

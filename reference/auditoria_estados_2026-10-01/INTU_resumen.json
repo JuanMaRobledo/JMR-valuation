@@ -1,0 +1,113 @@
+{
+ "ticker": "INTU",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Costos de cambio y datos del cliente (QuickBooks, TurboTax), escala en pyme. Evidencia: ROIC 12-22%, siempre por encima del costo de capital. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (22,5%): 22,5% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.222,
+   "despues": 0.225,
+   "motivo": "Ventaja durable: Costos de cambio y datos del cliente (QuickBooks, TurboTax), escala en pyme. Evidencia: ROIC 12-22%, siempre por encima del costo de capital. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (22,5%): 22,5% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": -265.0,
+   "motivo": "LTM = ejercicio cerrado el 2026-07-31 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2024-07-31",
+   "antes": 10.43,
+   "despues": 10.58,
+   "motivo": "EPS básico del 10-K (2024-07-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2025-07-31",
+   "antes": 13.67,
+   "despues": 13.82,
+   "motivo": "EPS básico del 10-K (2025-07-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2026-07-31",
+   "antes": 16.48,
+   "despues": 16.53,
+   "motivo": "EPS básico del 10-K (2026-07-31); antes copiaba el diluido.",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "Arrendamientos operativos: la deuda del DCF incluye 667,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$2,50 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 667,
+  "acciones": 267.2,
+  "efecto_por_accion": 2.49625748502994
+ },
+ "antes": {
+  "dcfTecnico": 496.4490269490772,
+  "valorEsperado": 440.7884793666784,
+  "precioMOS": 286.512511588341,
+  "historias": {
+   "A": 509.8948170410697,
+   "B": 259.78565623432974,
+   "C": 207.8954373087914,
+   "D": 627.9992695436773
+  }
+ },
+ "despues": {
+  "dcfTecnico": 497.7201535,
+  "valorEsperado": 441.7350014752543,
+  "precioMOS": 287.1277509589153,
+  "historias": {
+   "A": 511.24370495196615,
+   "B": 259.78565623432974,
+   "C": 207.8954373087914,
+   "D": 629.69688228704
+  }
+ },
+ "tramo_tasas_base": "$12,000-25,000 Mn"
+}
