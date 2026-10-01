@@ -1,0 +1,14 @@
+{
+ "ticker": "MSFT_C108",
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Valuation output",
+   "celda": "C108",
+   "antes": 0.475,
+   "despues": "='Input sheet'!B28",
+   "motivo": "Margen del año 1 del caso técnico Optimista enlazado a 'Input sheet'!B28, como en las demás hojas: el número escrito a mano era una copia redondeada (escaneo de integridad del 1-oct-2026)."
+  }
+ ]
+}

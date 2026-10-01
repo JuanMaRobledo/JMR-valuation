@@ -1,0 +1,14 @@
+{
+ "ticker": "LULU_C108",
+ "sheet_id": "1Skav94fUb3IYvhsucWI1MQAcN6LH-VQ87Z_7KCImu3g",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Valuation output",
+   "celda": "C108",
+   "antes": 0.155,
+   "despues": "='Input sheet'!B28",
+   "motivo": "Margen del año 1 del caso técnico Optimista enlazado a 'Input sheet'!B28, como en las demás hojas: el número escrito a mano era una copia redondeada (escaneo de integridad del 1-oct-2026)."
+  }
+ ]
+}

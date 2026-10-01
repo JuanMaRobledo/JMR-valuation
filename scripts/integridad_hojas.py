@@ -33,7 +33,10 @@ TABS = ["Input sheet", "Valuation output", "Cost of capital worksheet", "Operati
         "Descuento de múltiplos", "Resumen de Valoración", "Escenarios e historias", "EVEBITDA", "EVFCFF", "PE", "PFCFE", "POCF"]
 ERR = re.compile(r"^#(REF!|VALUE!|DIV/0!|N/A|NAME\?|ERROR!|NUM!|NULL!)")
 # Celdas que son entradas del analista por diseño (supuestos de escenarios técnicos y datos con respaldo documentado).
-ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|106))$|^Input sheet!B(?:15|16|19|20|22|24)$")
+# «Escenarios e historias» E5:E8 = ventas/capital propio de cada historia (spec); 'Valuation output' filas 96-98 = referencia
+# histórica que no alimenta el DCF; A1 = rótulo.
+ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|98|106)|A1)$|^Input sheet!B(?:15|16|19|20|22|24)$"
+                      r"|^Escenarios e historias!E[5-8]$")
 
 
 def col(j: int) -> str:

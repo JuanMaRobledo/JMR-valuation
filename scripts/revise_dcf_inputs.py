@@ -363,6 +363,11 @@ for _t in ("BSX", "CELH", "CMG", "DPZ", "EPAM", "GOOG", "INTU", "NVDA", "SHAK", 
                              "arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial "
                              "ajustado con un objetivo sin ajustar.")]
 
+for _t in ("MSFT", "LULU"):
+    CHANGES[f"{_t}_C108"] = [(VO, "C108", "='Input sheet'!B28",
+                              "Margen del año 1 del caso técnico Optimista enlazado a 'Input sheet'!B28, como en las demás hojas: "
+                              "el número escrito a mano era una copia redondeada (escaneo de integridad del 1-oct-2026).")]
+
 
 def main(argv: list[str]) -> int:
     dry, revert = "--dry-run" in argv, "--revert" in argv
