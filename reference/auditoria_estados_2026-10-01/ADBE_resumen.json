@@ -1,0 +1,164 @@
+{
+ "ticker": "ADBE",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+   "motivo": "Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda.",
+   "tipo": "Deuda de balance sin arrendamientos operativos"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 295,
+   "despues": 92.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 287,
+   "despues": 89.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 235,
+   "despues": 98.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 194,
+   "despues": 83.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 151,
+   "despues": 65.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 98,
+   "despues": 57.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 605,
+   "despues": 93.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B18",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-11-28 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.385,
+   "despues": 0.385954,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.1 pp (ajuste del EBIT 24.8 / ventas 25970).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.4,
+   "despues": 0.400954,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.1 pp (ajuste del EBIT 24.8 / ventas 25970).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 4,
+   "despues": 3.766,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/4 + 0.0155), con VP de arrendamientos 403.4 / ventas 25970.",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 4.5,
+   "despues": 4.206,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/4.5 + 0.0155), con VP de arrendamientos 403.4 / ventas 25970.",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
+   "tipo": "Capital invertido operativo"
+  }
+ ],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": false,
+  "conversor": "Yes",
+  "arrendamientos": 399,
+  "acciones": 389.2,
+  "efecto_por_accion": 0.0
+ },
+ "antes": {
+  "dcfTecnico": 536.4823571890387,
+  "valorEsperado": 364.32983642586817,
+  "precioMOS": 236.81439367681432,
+  "historias": {
+   "A": 465.7075740827592,
+   "B": 267.9698468540572,
+   "C": 172.43436844074913,
+   "D": 583.922051277321
+  }
+ },
+ "despues": {
+  "dcfTecnico": 537.0231626,
+  "valorEsperado": 364.8213334987199,
+  "precioMOS": 237.13386677416796,
+  "historias": {
+   "A": 466.2949101295959,
+   "B": 268.3229539875946,
+   "C": 172.96182185650662,
+   "D": 584.4606227274746
+  }
+ },
+ "tramo_tasas_base": "$12,000-25,000 Mn"
+}

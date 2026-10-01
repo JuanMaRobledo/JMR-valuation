@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$349,85 | US$348,94 |
-| Historia A | US$352,14 | US$351,28 |
-| Historia B | US$172,24 | US$171,26 |
-| Historia C | US$108,74 | US$107,72 |
-| Historia D | US$420,89 | US$420,06 |
-| **Valor esperado (valor intrínseco principal)** | **US$308,75** | **US$307,85** |
-| Precio con MOS sobre el esperado | US$200,69 | US$200,10 |
+| DCF técnico anterior (caso Base de la hoja) | US$349,85 | US$341,52 |
+| Historia A | US$352,14 | US$350,90 |
+| Historia B | US$172,24 | US$168,77 |
+| Historia C | US$108,74 | US$105,53 |
+| Historia D | US$420,89 | US$419,88 |
+| **Valor esperado (valor intrínseco principal)** | **US$308,75** | **US$306,89** |
+| Precio con MOS sobre el esperado | US$200,69 | US$199,48 |
 
 ## Hallazgos y correcciones
 
@@ -33,6 +33,20 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Balance del último 10-Q | Balance Sheet L34 | Patrimonio de los accionistas | -3.901,1 | -3.982,0 | Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025. |
 | Balance del último 10-Q | Balance Sheet L35 | Patrimonio total | -3.901,1 | -3.982,0 | Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025. |
 | Balance del último 10-Q | Input sheet B16 | Deuda (DCF) | 4.816,8 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Deuda financiera al 14-jun-2026 (antes 4.816,8 fijo, del cierre de 2025). Sin arrendamientos operativos, como antes. |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter E5 |  | 295,0 | 52,20 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B8 |  | 287,0 | 57,78 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B9 |  | 235,0 | 49,21 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B10 |  | 194,0 | 41,32 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B11 |  | 151,0 | 37,23 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B12 | I+D año −1 | 98,00 | 26,76 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B13 | I+D año −2 | 605,0 | 59,11 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B18 |  | No | Yes | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B28 |  | 0,190 | 0,193 | Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B30 |  | 0,200 | 0,203 | Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B32 |  | 3,00 | 2,64 | Ventas/capital con el capital arrendado: 1/(1/3 + 0.0452), con VP de arrendamientos 223.5 / ventas 4940. |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 3,00 | 2,64 | Ventas/capital con el capital arrendado: 1/(1/3 + 0.0452), con VP de arrendamientos 223.5 / ventas 4940. |
+| Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,180 | 0,183 | Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940). |
+| Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,220 | 0,223 | Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940). |
 | Flujos LTM | Cash Flow Statement L13 | Cash from Operating Activities | 792,1 | 777,8 | LTM = ejercicio 792.1 + acumulado al 2026-06-14 352.6 − acumulado del año anterior 366.9 (NetCashProvidedByUsedInOperatingActivities). Antes 792.1. |
 | Flujos LTM | Cash Flow Statement L22 | Cash from Investing Activities | -70,20 | -109,6 | LTM = ejercicio -70.2 + acumulado al 2026-06-14 -24.6 − acumulado del año anterior 14.8 (NetCashProvidedByUsedInInvestingActivities). Antes -70.2. |
 | Flujos LTM | Cash Flow Statement L34 | Cash from Financing Activities | -752,1 | -805,1 | LTM = ejercicio -752.1 + acumulado al 2026-06-14 -314.3 − acumulado del año anterior -261.3 (NetCashProvidedByUsedInFinancingActivities). Antes -752.1. |
@@ -60,6 +74,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF esperado de las cuatro historias: US$307,85 (antes US$308,75); precio con margen de seguridad US$200,10. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF esperado de las cuatro historias: US$306,89 (antes US$308,75); precio con margen de seguridad US$199,48. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

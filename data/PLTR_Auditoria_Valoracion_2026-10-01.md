@@ -15,11 +15,11 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$85,42 | US$85,42 |
+| DCF técnico anterior (caso Base de la hoja) | US$85,42 | US$85,37 |
 | Historia A | US$55,62 | US$55,62 |
 | Historia B | US$26,93 | US$26,93 |
-| Historia C | US$15,72 | US$15,72 |
-| Historia D | US$95,62 | US$95,62 |
+| Historia C | US$15,72 | US$15,71 |
+| Historia D | US$95,62 | US$95,59 |
 | **Valor esperado (valor intrínseco principal)** | **US$51,02** | **US$51,02** |
 | Precio con MOS sobre el esperado | US$33,16 | US$33,16 |
 
@@ -30,7 +30,20 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Conversor de I+D alineado al LTM | R& D converter B12 | I+D año −1 | ='Income Statement'!K10 | ='Income Statement'!J10+269,932-218,821 | I+D de los 12 meses a jun-2025 = 2024 (507,9) + 1S25 (269,9) − 1S24 (218,8) (10-Q). Antes el ejercicio 2025, que se solapa con el LTM. |
 | Conversor de I+D alineado al LTM | R& D converter B13 | I+D año −2 | ='Income Statement'!J10 | ='Income Statement'!I10+218,821-189,633 | 12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024. |
 | Conversor de I+D alineado al LTM | R& D converter B14 | I+D año −3 | ='Income Statement'!I10 | ='Income Statement'!H10+189,633-176,772 | 12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023. |
-| Arrendamientos operativos fuera de la deuda | Input sheet B16 | Deuda (DCF) | ='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda. |
+| Deuda de balance sin arrendamientos operativos | Input sheet B16 | Deuda (DCF) | ='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda. |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter E5 |  | 295,0 | 57,20 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B8 |  | 287,0 | 62,08 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B9 |  | 235,0 | 50,43 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B10 |  | 194,0 | 29,55 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B11 |  | 151,0 | 24,94 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B12 | I+D año −1 | 98,00 | 33,32 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B13 | I+D año −2 | 605,0 | 92,22 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B18 |  | No | Yes | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B28 |  | 0,480 | 0,484 | Margen en base ajustada por arrendamientos: + 0.38 pp (ajuste del EBIT 23.5 / ventas 6155.9). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B30 |  | 0,480 | 0,484 | Margen en base ajustada por arrendamientos: + 0.38 pp (ajuste del EBIT 23.5 / ventas 6155.9). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B32 |  | 4,00 | 3,47 | Ventas/capital con el capital arrendado: 1/(1/4 + 0.0384), con VP de arrendamientos 236.1 / ventas 6155.9. |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 4,50 | 3,84 | Ventas/capital con el capital arrendado: 1/(1/4.5 + 0.0384), con VP de arrendamientos 236.1 / ventas 6155.9. |
+| Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | =B6 | =(B6)+0,003813 | Margen en base ajustada por arrendamientos: + 0.38 pp (ajuste del EBIT 23.5 / ventas 6155.9). |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | 1.117,7 | 1.112,1 | LTM = ejercicio -668.5 + acumulado al 2026-06-30 611.9 − acumulado del año anterior -1168.7 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes 1117.738. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 

@@ -1,0 +1,120 @@
+{
+ "ticker": "DPZ_LEASECONV",
+ "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+ "fecha": "2026-10-01",
+ "cambios": [
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 295,
+   "despues": 52.2,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 287,
+   "despues": 57.778,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 235,
+   "despues": 49.212,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 194,
+   "despues": 41.316,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 151,
+   "despues": 37.23,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 98,
+   "despues": 26.756,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 605,
+   "despues": 59.108,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B18",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-28 (SEC XBRL)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.19,
+   "despues": 0.193027,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.2,
+   "despues": 0.203027,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 3,
+   "despues": 2.6415,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/3 + 0.0452), con VP de arrendamientos 223.5 / ventas 4940."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 3,
+   "despues": 2.6415,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/3 + 0.0452), con VP de arrendamientos 223.5 / ventas 4940."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C45",
+   "antes": 0.18,
+   "despues": 0.183027,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C47",
+   "antes": 0.22,
+   "despues": 0.223027,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.3 pp (ajuste del EBIT 15.0 / ventas 4940)."
+  }
+ ],
+ "vp_arrendamientos": 223.4671054537327,
+ "ajuste_ebit": 14.955482424377884,
+ "ventas": 4940,
+ "margen_pp": 0.0030274255919793287,
+ "capital_ventas": 0.04523625616472322,
+ "datos_sec": {
+  "cierre": "2025-12-28",
+  "gasto": 52.16,
+  "y1": 57.778,
+  "y2": 49.212,
+  "y3": 41.316,
+  "y4": 37.23,
+  "y5": 26.756,
+  "resto": 59.108
+ }
+}

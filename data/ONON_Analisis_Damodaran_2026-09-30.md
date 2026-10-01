@@ -55,7 +55,7 @@ En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: cre
 
 **Reinversión y retorno.** Poco capital: producción tercerizada en Vietnam e Indonesia, capex de ~US$50-95 millones y tiendas propias. La hoja usa un sales-to-capital de 2,5 y 2,2. On tiene CHF 1.206 millones de caja sin deuda financiera y anunció su primera recompra (hasta US$1.000 millones hasta 2029). Sin ventaja defendible: marca de solo cuatro años en un sector de modas, sin otra barrera de entrada. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
-**Riesgo.** La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF técnico anterior sube de US$38,84 a US$42,47 Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y C que en la beta.
+**Riesgo.** La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF técnico anterior sube de US$38,84 a US$42,47. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias B y C que en la beta.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
@@ -260,10 +260,10 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,50) | Valor/acción (beta 1,07) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Marca premium que cumple sus metas 2029** | 40% | Mayoristas: 14%, 13%, 12%, 11%, 10%; Directo al consumidor: 22%, 20%, 18%, 16%, 14% | 14,9% | 17% | 2,5 | 4,99% | US$38,25 | US$41,82 |
-| **B · El ciclo de moda se enfría** | 30% | Mayoristas: 8%, 5%, 4%, 4%, 4%; Directo al consumidor: 12%, 8%, 7%, 6%, 5% | 6,2% | 14% | 2,5 | 4,99% | US$22,87 | US$24,72 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen** | 10% | Mayoristas: 0%, -5%, -2%, 2%, 3%; Directo al consumidor: 5%, 0%, 0%, 3%, 3% | 0,8% | 10% | 2,5 | 3,00% | US$14,71 | US$15,71 |
-| **D · On se vuelve una marca deportiva global** | 20% | Mayoristas: 18%, 17%, 16%, 15%, 13%; Directo al consumidor: 26%, 24%, 22%, 20%, 18% | 18,8% | 20% | 2,5 | 4,99% | US$53,31 | US$58,50 |
+| **A · Marca premium que cumple sus metas 2029** | 40% | Mayoristas: 14%, 13%, 12%, 11%, 10%; Directo al consumidor: 22%, 20%, 18%, 16%, 14% | 14,9% | 17,0% | 2,5 | 4,99% | US$38,25 | US$41,82 |
+| **B · El ciclo de moda se enfría** | 30% | Mayoristas: 8%, 5%, 4%, 4%, 4%; Directo al consumidor: 12%, 8%, 7%, 6%, 5% | 6,2% | 14,0% | 2,5 | 4,99% | US$22,87 | US$24,72 |
+| **C · Tesis de disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen** | 10% | Mayoristas: 0%, -5%, -2%, 2%, 3%; Directo al consumidor: 5%, 0%, 0%, 3%, 3% | 0,8% | 10,0% | 2,5 | 3,00% | US$14,71 | US$15,71 |
+| **D · On se vuelve una marca deportiva global** | 20% | Mayoristas: 18%, 17%, 16%, 15%, 13%; Directo al consumidor: 26%, 24%, 22%, 20%, 18% | 18,8% | 20,0% | 2,5 | 4,99% | US$53,31 | US$58,50 |
 | **Valor esperado** | 100% |  |  |  |  |  | **US$34,29** | **US$37,41** |
 
 A (40%) es la historia de la empresa: crecimiento high-teens con márgenes en alza hasta 2029. B (30%) es el enfriamiento del ciclo de marca. C (10%) es la caída de una moda. D (20%) es On como marca deportiva global. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**

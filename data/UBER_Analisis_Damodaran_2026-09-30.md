@@ -7,11 +7,11 @@ analysis_date: "2026-09-30"
 # Uber Technologies, Inc. (UBER) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$81,91; la historia central A vale US$90,53 y el rango es US$29,25–122,95. El MOS 35% se aplica al esperado: US$53,24. El antiguo caso Base de la hoja (US$89,76) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$81,21; la historia central A vale US$89,78 y el rango es US$28,81–122,09. El MOS 35% se aplica al esperado: US$52,79. El antiguo caso Base de la hoja (US$88,97) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos operativos fuera de la deuda, capital invertido operativo, conversor de i+d alineado al ltm, eps básico, flujos ltm (8 celdas, con respaldo). Valor esperado US$81,00 → US$81,91. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (21 celdas, con respaldo). Valor esperado US$81,00 → US$81,21. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$89,76 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$88,97 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -55,12 +55,14 @@ En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: 
 
 **Reinversión y retorno.** Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). La hoja usa ahora un sales-to-capital de 2,5 en los años 1-5 (antes 3) y 3,5 después. Eso puede cambiar: Delivery Hero (~US$13.700 millones) y las flotas autónomas con socios convierten a Uber en un negocio más intensivo en capital. Por eso la revisión bajó el sales-to-capital de los años 1-5 a 2,5. Sin ventaja defendible: tiene efectos de red, pero gana por encima del costo de capital solo desde 2024; se revisará con tres años de evidencia. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
-**Riesgo.** La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF técnico anterior casi no cambia (US$89,76 → US$90,60). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja.
+**Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$1.975 millones, compromisos del 10-K al 2025-12-31) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$123 millones, +0,22 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,04 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
+
+**Riesgo.** La hoja usa una beta de 0,80. La bottom-up de Transportation (0,71 desapalancada y corregida por caja) reapalancada da 0,76; el DCF técnico anterior casi no cambia (US$88,97 → US$89,82). Damodaran, en sus valoraciones de Uber, usa una mezcla de servicios de transporte y entrega; ambos grupos tienen betas cercanas a 1, así que la beta de la hoja podría estar algo baja.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 0,79 | 8,5% | 8,2% | US$89,76 |
-| Bottom-up del sector (Transportation, reapalancada) | 0,75 | 8,3% | 8,0% | US$90,60 |
+| Hoja (regresión o la cargada en el libro) | 0,80 | 8,6% | 8,2% | US$88,97 |
+| Bottom-up del sector (Transportation, reapalancada) | 0,76 | 8,4% | 8,0% | US$89,82 |
 
 
 ### Calibración técnica anterior C/B/O (referencia auxiliar)
@@ -69,24 +71,24 @@ En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: 
 |---|---:|---:|---:|
 | Crecimiento año 1 | 8,0% | 13,0% | 18,0% |
 | Crecimiento años 2–5 | 8,0% | 11,0% | 18,0% |
-| Margen año 1 (base ajustada del modelo) | 14,0% | 14,0% | 14,0% |
-| Margen objetivo | 13,2% | 21,0% | 26,0% |
+| Margen año 1 (base ajustada del modelo) | 14,2% | 14,2% | 14,2% |
+| Margen objetivo | 13,7% | 21,2% | 26,2% |
 
-Ventas/capital: 2,5x en años 1–5 y 3,5x en 6–10. WACC: 8,2%. Ke: 8,5%. Impuesto efectivo: 25,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
+Ventas/capital: 2,3x en años 1–5 y 3,1x en 6–10. WACC: 8,2%. Ke: 8,6%. Impuesto efectivo: 25,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 18,8% | 13,0% | 9,2% | = costo de capital | US$89,76 | US$89,76 |
+| Sin ventaja defendible | 17,9% | 13,0% | 9,2% | = costo de capital | US$88,97 | US$88,97 |
 
 Fuentes de ventaja: Efectos de red de dos lados. Evidencia: ROIC por encima del costo de capital solo desde 2024 (menos de 3 años). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor principal de US$81,91 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$89,76 ni mezclando el DCF con múltiplos. La historia central A vale US$90,53; «central» y «esperado» son conceptos distintos.
+El valor principal de US$81,21 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$88,97 ni mezclando el DCF con múltiplos. La historia central A vale US$89,78; «central» y «esperado» son conceptos distintos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -94,13 +96,13 @@ El valor principal de US$81,91 se obtiene ejecutando cuatro DCF completos de die
 | Entrada | Valor usado | Origen y tratamiento |
 |---|---|---|
 | Ingresos LTM | US$55.227 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 29.500 + 21.000 + 4.727 = 55.227. |
-| Margen inicial del DCF | 14,0% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
+| Margen inicial del DCF | 14,2% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
 | Impuesto | 25,00% en años 1–5; 25,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
-| Descuento | WACC 8,20% → 9,22% | Tasa libre de riesgo 4,99%, beta 0,79, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
-| Ventas/capital | 2,50x en años 1–5; 3,50x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
+| Descuento | WACC 8,19% → 9,22% | Tasa libre de riesgo 4,99%, beta 0,80, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 2,29x en años 1–5; 3,11x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
 | Crecimiento perpetuo | A/B/D: 4,99%; C: 0,91% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (0,91%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
 | ROIC terminal | A/B/C/D: 9,22% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
-| Puente al patrimonio | Caja 5.391; deuda 12.723; activos no operativos 12.532; minoritarios 1.083; acciones 2.040,0 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
+| Puente al patrimonio | Caja 5.391; deuda 14.698; activos no operativos 12.532; minoritarios 1.083; acciones 2.040,0 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
 #### 2. Cómo se convierte cada historia en ingresos
@@ -114,7 +116,7 @@ Ejemplo A, año 1: 29.500 × 1,13 + 21.000 × 1,15 + 4.727 × 1,03 = US$62.353,8
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En A, año 1: NOPAT = 62.353,81 × 14,00% × (1 − 25,00%) = US$6.547,15 millones. La reinversión es US$3.010,91 millones y el FCFF es US$3.536,24 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En A, año 1: NOPAT = 62.353,81 × 14,22% × (1 − 25,00%) = US$6.651,67 millones. La reinversión es US$3.280,14 millones y el FCFF es US$3.371,53 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,22%. Reinversión terminal sobre el NOPAT: A, 54,1% (4,99% / 9,22%); B, 54,1% (4,99% / 9,22%); C, 9,9% (0,91% / 9,22%); D, 54,1% (4,99% / 9,22%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
@@ -123,69 +125,69 @@ En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor 
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**A · Plataforma madura que escala márgenes** — probabilidad 45%; valor terminal 240.046 (VP 106.097); DCF US$90,53 por acción.
+**A · Plataforma madura que escala márgenes** — probabilidad 45%; valor terminal 242.484 (VP 107.230); DCF US$89,78 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 62.354 | 12,9% | 14,0% | 6.547 | 3.011 | 3.536 | 8,2% | 3.268 |
-| 2 | 69.881 | 12,1% | 17,2% | 9.015 | 3.024 | 5.990 | 8,2% | 5.116 |
-| 3 | 77.442 | 10,8% | 18,8% | 10.919 | 3.076 | 7.843 | 8,2% | 6.191 |
-| 4 | 85.133 | 9,9% | 20,4% | 13.025 | 3.074 | 9.951 | 8,2% | 7.260 |
-| 5 | 92.818 | 9,0% | 22,0% | 15.315 | 3.052 | 12.263 | 8,2% | 8.268 |
-| 6 | 100.447 | 8,2% | 22,0% | 16.574 | 2.127 | 14.447 | 8,4% | 8.985 |
-| 7 | 107.893 | 7,4% | 22,0% | 17.802 | 2.036 | 15.766 | 8,6% | 9.028 |
-| 8 | 115.019 | 6,6% | 22,0% | 18.978 | 1.905 | 17.073 | 8,8% | 8.985 |
-| 9 | 121.687 | 5,8% | 22,0% | 20.078 | 1.735 | 18.343 | 9,0% | 8.855 |
-| 10 | 127.759 | 5,0% | 22,0% | 21.080 | 1.821 | 19.259 | 9,2% | 8.512 |
-| Terminal | 134.135 | 5,0% | 22,0% | 22.132 | 11.978 | 10.154 | 9,2% | — |
+| 1 | 62.354 | 12,9% | 14,2% | 6.652 | 3.280 | 3.372 | 8,2% | 3.116 |
+| 2 | 69.881 | 12,1% | 17,4% | 9.132 | 3.295 | 5.837 | 8,2% | 4.986 |
+| 3 | 77.442 | 10,8% | 19,0% | 11.049 | 3.351 | 7.698 | 8,2% | 6.078 |
+| 4 | 85.133 | 9,9% | 20,6% | 13.168 | 3.349 | 9.819 | 8,2% | 7.166 |
+| 5 | 92.818 | 9,0% | 22,2% | 15.471 | 3.325 | 12.146 | 8,2% | 8.192 |
+| 6 | 100.447 | 8,2% | 22,2% | 16.742 | 2.393 | 14.349 | 8,4% | 8.928 |
+| 7 | 107.893 | 7,4% | 22,2% | 17.983 | 2.291 | 15.692 | 8,6% | 8.990 |
+| 8 | 115.019 | 6,6% | 22,2% | 19.171 | 2.144 | 17.027 | 8,8% | 8.965 |
+| 9 | 121.687 | 5,8% | 22,2% | 20.282 | 1.952 | 18.330 | 9,0% | 8.853 |
+| 10 | 127.759 | 5,0% | 22,2% | 21.294 | 2.049 | 19.245 | 9,2% | 8.510 |
+| Terminal | 134.135 | 5,0% | 22,2% | 22.357 | 12.100 | 10.257 | 9,2% | — |
 
-**B · Robotaxis y regulación presionan la movilidad** — probabilidad 25%; valor terminal 131.816 (VP 58.261); DCF US$54,62 por acción.
-
-| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 60.697 | 9,9% | 14,0% | 6.373 | 1.849 | 4.524 | 8,2% | 4.181 |
-| 2 | 65.321 | 7,6% | 14,8% | 7.251 | 1.626 | 5.625 | 8,2% | 4.804 |
-| 3 | 69.385 | 6,2% | 15,2% | 7.910 | 1.486 | 6.424 | 8,2% | 5.071 |
-| 4 | 73.099 | 5,4% | 15,6% | 8.553 | 1.308 | 7.245 | 8,2% | 5.285 |
-| 5 | 76.369 | 4,5% | 16,0% | 9.164 | 1.398 | 7.766 | 8,2% | 5.236 |
-| 6 | 79.864 | 4,6% | 16,0% | 9.584 | 1.068 | 8.516 | 8,4% | 5.296 |
-| 7 | 83.601 | 4,7% | 16,0% | 10.032 | 1.142 | 8.890 | 8,6% | 5.091 |
-| 8 | 87.599 | 4,8% | 16,0% | 10.512 | 1.223 | 9.289 | 8,8% | 4.888 |
-| 9 | 91.880 | 4,9% | 16,0% | 11.026 | 1.310 | 9.716 | 9,0% | 4.690 |
-| 10 | 96.465 | 5,0% | 16,0% | 11.576 | 1.375 | 10.200 | 9,2% | 4.508 |
-| Terminal | 101.278 | 5,0% | 16,0% | 12.153 | 6.578 | 5.576 | 9,2% | — |
-
-**C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** — probabilidad 10%; valor terminal 52.389 (VP 23.155); DCF US$29,25 por acción.
+**B · Robotaxis y regulación presionan la movilidad** — probabilidad 25%; valor terminal 133.657 (VP 59.105); DCF US$54,02 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 58.802 | 6,5% | 14,0% | 6.174 | 739 | 5.435 | 8,2% | 5.023 |
-| 2 | 60.650 | 3,1% | 12,4% | 5.640 | -21 | 5.661 | 8,2% | 4.835 |
-| 3 | 60.598 | -0,1% | 11,6% | 5.272 | -60 | 5.332 | 8,2% | 4.209 |
-| 4 | 60.449 | -0,2% | 10,8% | 4.896 | 220 | 4.676 | 8,2% | 3.412 |
-| 5 | 60.999 | 0,9% | 10,0% | 4.575 | 222 | 4.353 | 8,2% | 2.935 |
-| 6 | 61.553 | 0,9% | 10,0% | 4.617 | 160 | 4.457 | 8,4% | 2.772 |
-| 7 | 62.113 | 0,9% | 10,0% | 4.658 | 161 | 4.497 | 8,6% | 2.575 |
-| 8 | 62.678 | 0,9% | 10,0% | 4.701 | 163 | 4.538 | 8,8% | 2.388 |
-| 9 | 63.248 | 0,9% | 10,0% | 4.744 | 164 | 4.579 | 9,0% | 2.211 |
-| 10 | 63.823 | 0,9% | 10,0% | 4.787 | 166 | 4.621 | 9,2% | 2.042 |
-| Terminal | 64.404 | 0,9% | 10,0% | 4.830 | 476 | 4.354 | 9,2% | — |
+| 1 | 60.697 | 9,9% | 14,2% | 6.475 | 2.015 | 4.460 | 8,2% | 4.122 |
+| 2 | 65.321 | 7,6% | 15,0% | 7.360 | 1.771 | 5.589 | 8,2% | 4.774 |
+| 3 | 69.385 | 6,2% | 15,4% | 8.026 | 1.619 | 6.408 | 8,2% | 5.059 |
+| 4 | 73.099 | 5,4% | 15,8% | 8.675 | 1.425 | 7.250 | 8,2% | 5.291 |
+| 5 | 76.369 | 4,5% | 16,2% | 9.292 | 1.523 | 7.769 | 8,2% | 5.240 |
+| 6 | 79.864 | 4,6% | 16,2% | 9.717 | 1.201 | 8.516 | 8,4% | 5.299 |
+| 7 | 83.601 | 4,7% | 16,2% | 10.172 | 1.285 | 8.887 | 8,6% | 5.091 |
+| 8 | 87.599 | 4,8% | 16,2% | 10.659 | 1.376 | 9.283 | 8,8% | 4.888 |
+| 9 | 91.880 | 4,9% | 16,2% | 11.180 | 1.474 | 9.706 | 9,0% | 4.688 |
+| 10 | 96.465 | 5,0% | 16,2% | 11.737 | 1.547 | 10.190 | 9,2% | 4.506 |
+| Terminal | 101.278 | 5,0% | 16,2% | 12.323 | 6.669 | 5.654 | 9,2% | — |
 
-**D · Uber es la red de los vehículos autónomos** — probabilidad 20%; valor terminal 338.164 (VP 149.464); DCF US$122,95 por acción.
+**C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** — probabilidad 10%; valor terminal 53.560 (VP 23.685); DCF US$28,81 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 63.753 | 15,4% | 14,0% | 6.694 | 3.862 | 2.832 | 8,2% | 2.618 |
-| 2 | 73.408 | 15,1% | 18,8% | 10.351 | 4.082 | 6.269 | 8,2% | 5.354 |
-| 3 | 83.613 | 13,9% | 21,2% | 13.294 | 4.225 | 9.069 | 8,2% | 7.159 |
-| 4 | 94.176 | 12,6% | 23,6% | 16.669 | 4.422 | 12.247 | 8,2% | 8.935 |
-| 5 | 105.232 | 11,7% | 26,0% | 20.520 | 4.373 | 16.147 | 8,2% | 10.887 |
-| 6 | 116.165 | 10,4% | 26,0% | 22.652 | 3.000 | 19.652 | 8,4% | 12.222 |
-| 7 | 126.665 | 9,0% | 26,0% | 24.700 | 2.783 | 21.917 | 8,6% | 12.551 |
-| 8 | 136.406 | 7,7% | 26,0% | 26.599 | 2.471 | 24.128 | 8,8% | 12.698 |
-| 9 | 145.053 | 6,3% | 26,0% | 28.285 | 2.068 | 26.217 | 9,0% | 12.656 |
-| 10 | 152.292 | 5,0% | 26,0% | 29.697 | 2.171 | 27.526 | 9,2% | 12.166 |
-| Terminal | 159.891 | 5,0% | 26,0% | 31.179 | 16.874 | 14.304 | 9,2% | — |
+| 1 | 58.802 | 6,5% | 14,2% | 6.273 | 805 | 5.467 | 8,2% | 5.053 |
+| 2 | 60.650 | 3,1% | 12,6% | 5.742 | -23 | 5.765 | 8,2% | 4.925 |
+| 3 | 60.598 | -0,1% | 11,8% | 5.374 | -65 | 5.439 | 8,2% | 4.294 |
+| 4 | 60.449 | -0,2% | 11,0% | 4.998 | 240 | 4.758 | 8,2% | 3.472 |
+| 5 | 60.999 | 0,9% | 10,2% | 4.677 | 242 | 4.435 | 8,2% | 2.992 |
+| 6 | 61.553 | 0,9% | 10,2% | 4.720 | 180 | 4.540 | 8,4% | 2.825 |
+| 7 | 62.113 | 0,9% | 10,2% | 4.763 | 182 | 4.581 | 8,6% | 2.625 |
+| 8 | 62.678 | 0,9% | 10,2% | 4.806 | 183 | 4.623 | 8,8% | 2.434 |
+| 9 | 63.248 | 0,9% | 10,2% | 4.850 | 185 | 4.665 | 9,0% | 2.253 |
+| 10 | 63.823 | 0,9% | 10,2% | 4.894 | 187 | 4.707 | 9,2% | 2.082 |
+| Terminal | 64.404 | 0,9% | 10,2% | 4.938 | 487 | 4.451 | 9,2% | — |
+
+**D · Uber es la red de los vehículos autónomos** — probabilidad 20%; valor terminal 341.071 (VP 150.826); DCF US$122,09 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 63.753 | 15,4% | 14,2% | 6.801 | 4.207 | 2.594 | 8,2% | 2.397 |
+| 2 | 73.408 | 15,1% | 19,0% | 10.474 | 4.447 | 6.027 | 8,2% | 5.148 |
+| 3 | 83.613 | 13,9% | 21,4% | 13.435 | 4.603 | 8.831 | 8,2% | 6.973 |
+| 4 | 94.176 | 12,6% | 23,8% | 16.827 | 4.818 | 12.009 | 8,2% | 8.764 |
+| 5 | 105.232 | 11,7% | 26,2% | 20.697 | 4.764 | 15.932 | 8,2% | 10.746 |
+| 6 | 116.165 | 10,4% | 26,2% | 22.847 | 3.376 | 19.471 | 8,4% | 12.115 |
+| 7 | 126.665 | 9,0% | 26,2% | 24.912 | 3.131 | 21.781 | 8,6% | 12.479 |
+| 8 | 136.406 | 7,7% | 26,2% | 26.828 | 2.780 | 24.048 | 8,8% | 12.662 |
+| 9 | 145.053 | 6,3% | 26,2% | 28.529 | 2.327 | 26.202 | 9,0% | 12.655 |
+| 10 | 152.292 | 5,0% | 26,2% | 29.952 | 2.443 | 27.509 | 9,2% | 12.165 |
+| Terminal | 159.891 | 5,0% | 26,2% | 31.447 | 17.019 | 14.427 | 9,2% | — |
 
 
 #### 5. Puente numérico de los cuatro DCF
@@ -194,35 +196,35 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| A | 74.469,33 | 106.096,89 | 180.566,22 | 184.683,22 | 90,53 |
-| B | 49.051,88 | 58.260,77 | 107.312,65 | 111.429,65 | 54,62 |
-| C | 32.401,83 | 23.155,26 | 55.557,09 | 59.674,09 | 29,25 |
-| D | 97.245,00 | 149.464,00 | 246.709,01 | 250.826,01 | 122,95 |
+| A | 73.785,08 | 107.229,69 | 181.014,77 | 183.156,94 | 89,78 |
+| B | 48.958,69 | 59.104,89 | 108.063,58 | 110.205,75 | 54,02 |
+| C | 32.953,51 | 23.684,91 | 56.638,42 | 58.780,59 | 28,81 |
+| D | 96.103,80 | 150.826,12 | 246.929,91 | 249.072,09 | 122,09 |
 
-Ejemplo A: (74.469,33 + 106.096,89 + 5.391 + 12.532 − 12.723 − 1.083) / 2.040,0 = US$90,53 por acción. El terminal representa 58,8% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo A: (73.785,08 + 107.229,69 + 5.391 + 12.532 − 14.698 − 1.083) / 2.040,0 = US$89,78 por acción. El terminal representa 59,2% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 45% / 25% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-Valor esperado = 0,45 × 90,531257 + 0,25 × 54,622537 + 0,10 × 29,252089 + 0,20 × 122,954287 = US$81,910766 ≈ US$81,91. Los aportes son US$40,74 + US$13,66 + US$2,93 + US$24,59 por acción.
+Valor esperado = 0,45 × 89,783079 + 0,25 × 54,022584 + 0,10 × 28,814101 + 0,20 × 122,094519 = US$81,208345 ≈ US$81,21. Los aportes son US$40,40 + US$13,51 + US$2,88 + US$24,42 por acción.
 
-Precio con MOS = valor esperado × (1 − 35%) = 81,910766 × 0,65 = US$53,241998 ≈ US$53,24. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+Precio con MOS = valor esperado × (1 − 35%) = 81,208345 × 0,65 = US$52,785424 ≈ US$52,79. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
 
 Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: base, conservadora, disrupción y optimista
 
-Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$90,53; el valor esperado de US$81,91 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$89,78; el valor esperado de US$81,21 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### A · Tesis base: Plataforma madura que escala márgenes
 
 **Qué plantea.** Es la continuación: crecimiento de doble dígito bajo y margen hacia 22%.
 
-**Traducción al modelo.** Movilidad crece 13%, 12%, 11%, 10%, 9%; Delivery crece 15%, 14%, 12%, 11%, 10%; Freight crece 3%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 10,9%; el margen operativo objetivo es 22,0%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 45%; DCF: US$90,53 por acción.
+**Traducción al modelo.** Movilidad crece 13%, 12%, 11%, 10%, 9%; Delivery crece 15%, 14%, 12%, 11%, 10%; Freight crece 3%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 10,9%; el margen operativo objetivo es 22,2%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 45%; DCF: US$89,78 por acción.
 
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (reservas brutas (interanual, sin divisas): ~+20%; margen de segmento de Movilidad: 30,1% (2T26); margen de segmento de Delivery: 20,1% (2T26)). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
@@ -231,7 +233,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es la presión de los robotaxis y la regulación sobre Movilidad.
 
-**Traducción al modelo.** Movilidad crece 10%, 7%, 5%, 4%, 3%; Delivery crece 12%, 10%, 9%, 8%, 7%; Freight crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 6,7%; el margen operativo objetivo es 16,0%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 25%; DCF: US$54,62 por acción.
+**Traducción al modelo.** Movilidad crece 10%, 7%, 5%, 4%, 3%; Delivery crece 12%, 10%, 9%, 8%, 7%; Freight crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 6,7%; el margen operativo objetivo es 16,2%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 25%; DCF: US$54,02 por acción.
 
 **Cómo contrastarla.** La apoyarían: reservas brutas (interanual, sin divisas): ≤ +10%; margen de segmento de Movilidad: ≤ 26%; margen de segmento de Delivery: ≤ 16%; participación de viajes autónomos en la red de Uber: robotaxis crecen fuera de Uber.
 
@@ -240,7 +242,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es la desintermediación por Waymo y Tesla.
 
-**Traducción al modelo.** Movilidad crece 5%, 0%, -5%, -5%, -3%; Delivery crece 10%, 8%, 6%, 5%, 5%; Freight crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 2,0%; el margen operativo objetivo es 10,0%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 0,91%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$29,25 por acción.
+**Traducción al modelo.** Movilidad crece 5%, 0%, -5%, -5%, -3%; Delivery crece 10%, 8%, 6%, 5%, 5%; Freight crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 2,0%; el margen operativo objetivo es 10,2%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 0,91%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$28,81 por acción.
 
 **Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: reservas brutas (interanual, sin divisas): ≤ +10%; margen de segmento de Movilidad: ≤ 26%; margen de segmento de Delivery: ≤ 16%; participación de viajes autónomos en la red de Uber: robotaxis crecen fuera de Uber.
 
@@ -249,7 +251,7 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 **Qué plantea.** Es Uber como la red preferida de los vehículos autónomos.
 
-**Traducción al modelo.** Movilidad crece 16%, 16%, 15%, 14%, 13%; Delivery crece 17%, 16%, 14%, 12%, 11%; Freight crece 5%, 5%, 5%, 5%, 5%. El crecimiento anual compuesto de cinco años es 13,8%; el margen operativo objetivo es 26,0%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 20%; DCF: US$122,95 por acción.
+**Traducción al modelo.** Movilidad crece 16%, 16%, 15%, 14%, 13%; Delivery crece 17%, 16%, 14%, 12%, 11%; Freight crece 5%, 5%, 5%, 5%, 5%. El crecimiento anual compuesto de cinco años es 13,8%; el margen operativo objetivo es 26,2%. El ROIC terminal es el costo de capital (9,22%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 20%; DCF: US$122,09 por acción.
 
 **Cómo contrastarla.** La confirmarían: reservas brutas (interanual, sin divisas): ≥ +15%; margen de segmento de Movilidad: ≥ 30%; margen de segmento de Delivery: ≥ 20%; participación de viajes autónomos en la red de Uber: socios crecen dentro de Uber.
 
@@ -258,27 +260,27 @@ Estas etiquetas describen las historias A–D activas. La tesis base es A, con u
 
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 0,79) | Valor/acción (beta 0,75) |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 0,80) | Valor/acción (beta 0,76) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22% | 2,5 | 4,99% | US$90,53 | US$91,38 |
-| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16% | 2,5 | 4,99% | US$54,62 | US$55,10 |
-| **C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10% | 2,5 | 0,91% | US$29,25 | US$29,47 |
-| **D · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26% | 2,5 | 4,99% | US$122,95 | US$124,14 |
-| **Valor esperado** | 100% |  |  |  |  |  | **US$81,91** | **US$82,67** |
+| **A · Plataforma madura que escala márgenes** | 45% | Movilidad: 13%, 12%, 11%, 10%, 9%; Delivery: 15%, 14%, 12%, 11%, 10%; Freight: 3%, 3%, 3%, 3%, 3% | 10,9% | 22,2% | 2,3 | 4,99% | US$89,78 | US$90,63 |
+| **B · Robotaxis y regulación presionan la movilidad** | 25% | Movilidad: 10%, 7%, 5%, 4%, 3%; Delivery: 12%, 10%, 9%, 8%, 7%; Freight: 0%, 0%, 0%, 0%, 0% | 6,7% | 16,2% | 2,3 | 4,99% | US$54,02 | US$54,51 |
+| **C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber** | 10% | Movilidad: 5%, 0%, -5%, -5%, -3%; Delivery: 10%, 8%, 6%, 5%, 5%; Freight: 0%, 0%, 0%, 0%, 0% | 2,0% | 10,2% | 2,3 | 0,91% | US$28,81 | US$29,04 |
+| **D · Uber es la red de los vehículos autónomos** | 20% | Movilidad: 16%, 16%, 15%, 14%, 13%; Delivery: 17%, 16%, 14%, 12%, 11%; Freight: 5%, 5%, 5%, 5%, 5% | 13,8% | 26,2% | 2,3 | 4,99% | US$122,09 | US$123,28 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$81,21** | **US$81,97** |
 
 A (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. B (25%) es la presión de los robotaxis y la regulación sobre Movilidad. C (10%) es la desintermediación por Waymo y Tesla. D (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF técnico anterior (beta 0,79; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF técnico anterior (beta 0,80; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
 Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
-| Crecimiento \ Margen | 17,0% | 19,0% | 21,0% | 23,0% | 25,0% |
+| Crecimiento \ Margen | 17,2% | 19,2% | 21,2% | 23,2% | 25,2% |
 |---|---:|---:|---:|---:|---:|
-| 7,4% | 60,47 | 67,30 | 74,14 | 80,97 | 87,81 |
-| 9,4% | 66,25 | 73,94 | 81,63 | 89,33 | 97,02 |
-| 11,4% | 72,64 | 81,29 | 89,93 | 98,58 | 107,23 |
-| 13,4% | 79,70 | 89,41 | 99,11 | 108,82 | 118,52 |
-| 15,4% | 87,50 | 98,38 | 109,26 | 120,13 | 131,01 |
+| 7,4% | 59,80 | 66,63 | 73,47 | 80,31 | 87,15 |
+| 9,4% | 65,51 | 73,20 | 80,90 | 88,60 | 96,30 |
+| 11,4% | 71,82 | 80,47 | 89,12 | 97,78 | 106,43 |
+| 13,4% | 78,80 | 88,51 | 98,22 | 107,93 | 117,64 |
+| 15,4% | 86,50 | 97,38 | 108,26 | 119,14 | 130,03 |
 
 
 ### Pre-mortem
@@ -313,10 +315,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 16% | Margen 22% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 0,79 | 11,6% (17% de las empresas) | 5,0% (48% de las empresas) | 1,8% (67% de las empresas) |
-| Beta 0,75 | 11,4% (18% de las empresas) | 4,8% (50% de las empresas) | 1,6% (68% de las empresas) |
+| Beta 0,80 | 11,9% (16% de las empresas) | 5,1% (47% de las empresas) | 1,9% (67% de las empresas) |
+| Beta 0,76 | 11,6% (17% de las empresas) | 4,9% (48% de las empresas) | 1,7% (68% de las empresas) |
 
-Frente al valor esperado de las historias (US$81,91 con la beta de la hoja; US$82,67 con la propuesta), el precio está por debajo en 16% y por debajo en 17%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al valor esperado de las historias (US$81,21 con la beta de la hoja; US$81,97 con la propuesta), el precio está por debajo en 15% y por debajo en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -326,10 +328,10 @@ Frente al valor esperado de las historias (US$81,91 con la beta de la hoja; US$8
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Red de movilidad y entrega ya rentable que enfrenta a los robotaxis y se vuelve intensiva en capital |  |
 | Probabilidades | A 45% / B 25% / C 10% / D 20% |  |
-| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$81,91 / US$82,67 |  |
-| DCF base hoy (historia A) | US$90,53 |  |
-| Precio con MOS sobre el valor esperado | US$53,24 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$29,25 a US$124,14 |  |
+| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$81,21 / US$81,97 |  |
+| DCF base hoy (historia A) | US$89,78 |  |
+| Precio con MOS sobre el valor esperado | US$52,79 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$28,81 a US$123,28 |  |
 | Confianza | Media: la red y los márgenes son sólidos; los autónomos y las compras son inciertos |  |
 | Qué cambiaría la opinión | Crecimiento de viajes frente a la expansión de Waymo y Tesla; precio y cierre de Delivery Hero |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

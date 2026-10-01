@@ -31,8 +31,112 @@
    "celda": "B16",
    "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
    "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
-   "motivo": "Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda.",
-   "tipo": "Arrendamientos operativos fuera de la deuda"
+   "motivo": "Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda.",
+   "tipo": "Deuda de balance sin arrendamientos operativos"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 295,
+   "despues": 288.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 287,
+   "despues": 265.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 235,
+   "despues": 262.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 194,
+   "despues": 232.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 151,
+   "despues": 226.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 98,
+   "despues": 194.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 605,
+   "despues": 1592.0,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B18",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.14,
+   "despues": 0.142235,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.22 pp (ajuste del EBIT 123.4 / ventas 55227).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.21,
+   "despues": 0.212235,
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.22 pp (ajuste del EBIT 123.4 / ventas 55227).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.5,
+   "despues": 2.2948,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/2.5 + 0.0358), con VP de arrendamientos 1974.8 / ventas 55227.",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 3.5,
+   "despues": 3.1107,
+   "motivo": "Ventas/capital con el capital arrendado: 1/(1/3.5 + 0.0358), con VP de arrendamientos 1974.8 / ventas 55227.",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C45",
+   "antes": "=B6",
+   "despues": "=(B6)+0,002235",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.22 pp (ajuste del EBIT 123.4 / ventas 55227).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
    "hoja": "Cash Flow Statement",
@@ -88,7 +192,7 @@
  ],
  "arrendamientos": {
   "incluye_operativos": false,
-  "conversor": "No",
+  "conversor": "Yes",
   "arrendamientos": 2008,
   "acciones": 2039.994,
   "efecto_por_accion": 0.0
@@ -105,14 +209,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 89.75804283,
-  "valorEsperado": 81.91076621132507,
-  "precioMOS": 53.2419980373613,
+  "dcfTecnico": 88.9692332,
+  "valorEsperado": 81.2083451512058,
+  "precioMOS": 52.785424348283776,
   "historias": {
-   "A": 90.53125691678486,
-   "B": 54.62253673793822,
-   "C": 29.252089262970905,
-   "D": 122.95428743995124
+   "A": 89.78307863884211,
+   "B": 54.022584029840715,
+   "C": 28.81410053617975,
+   "D": 122.09451851324344
   }
  },
  "tramo_tasas_base": ">$25,000 Mn"

@@ -1,0 +1,70 @@
+{
+ "ticker": "PAGS_BALANCE",
+ "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 2673.3,
+   "despues": 2742.0,
+   "motivo": "Patrimonio al 30-jun-2026: R$15.015.865 mil / 5.4762 (6-K 1S26). Antes 2.673,3, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 2673.3,
+   "despues": 2742.0,
+   "motivo": "Patrimonio al 30-jun-2026: R$15.015.865 mil / 5.4762 (6-K 1S26). Antes 2.673,3, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L16",
+   "antes": 13587.8,
+   "despues": 13823.0,
+   "motivo": "Activos totales al 30-jun-2026: R$75.697.476 mil / 5.4762 (6-K 1S26)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L29",
+   "antes": 10914.5,
+   "despues": 11080.9,
+   "motivo": "Pasivos totales al 30-jun-2026 = activos − patrimonio (6-K 1S26)."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K22",
+   "antes": 0,
+   "despues": -411.6,
+   "motivo": "Flujo de inversión 2025: −R$2.299.796 mil / 5.5877 (20-F 2025). Antes 0 (no importado)."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K34",
+   "antes": 0,
+   "despues": -775.4,
+   "motivo": "Flujo de financiación 2025: −R$4.332.796 mil / 5.5877 (20-F 2025). Antes 0 (no importado)."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L13",
+   "antes": 1429.4,
+   "despues": 1082.6,
+   "motivo": "Flujo operativo LTM = 2025 (7.562.431) + 1S26 (1.938.645) − 1S25 (3.451.822) = R$6.049.254 mil / 5.5877 (20-F y 6-K)."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L22",
+   "antes": 0,
+   "despues": -431.9,
+   "motivo": "Flujo de inversión LTM = −2.299.796 − 1.215.583 + 1.101.798 = −R$2.413.581 mil / 5.5877 (20-F y 6-K). Antes 0."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L34",
+   "antes": 0,
+   "despues": -740.9,
+   "motivo": "Flujo de financiación LTM = −4.332.796 − 1.956.893 + 2.149.485 = −R$4.140.204 mil / 5.5877 (20-F y 6-K). Antes 0."
+  }
+ ]
+}

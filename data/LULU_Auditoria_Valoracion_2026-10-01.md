@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$179,62 |
-| Historia A | US$172,25 | US$184,19 |
-| Historia B | US$108,35 | US$123,29 |
-| Historia C | US$71,34 | US$88,00 |
-| Historia D | US$229,97 | US$239,24 |
-| **Valor esperado (valor intrínseco principal)** | **US$148,45** | **US$161,52** |
-| Precio con MOS sobre el esperado | US$103,91 | US$113,06 |
+| DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$182,25 |
+| Historia A | US$172,25 | US$187,28 |
+| Historia B | US$108,35 | US$122,83 |
+| Historia C | US$71,34 | US$86,06 |
+| Historia D | US$229,97 | US$244,99 |
+| **Valor esperado (valor intrínseco principal)** | **US$148,45** | **US$163,26** |
+| Precio con MOS sobre el esperado | US$103,91 | US$114,28 |
 
 ## Hallazgos y correcciones
 
@@ -29,7 +29,21 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 |---|---|---|---:|---:|---|
 | ROIC terminal (criterio Damodaran) | Input sheet B49 | ¿ROIC terminal propio? | No | Yes | Ventaja que se desvanece: Marca premium (una sola fuente). Evidencia: ROIC 27-52% en 2021-2026, en descenso. ROIC después del año 10 = 12,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (15,8%), sin superar el ROIC actual (25,2%): 15,8%, porque la ventaja se desvanece. |
 | ROIC terminal (criterio Damodaran) | Input sheet B50 | ROIC después del año 10 | 0,158 | 0,124 | Ventaja que se desvanece: Marca premium (una sola fuente). Evidencia: ROIC 27-52% en 2021-2026, en descenso. ROIC después del año 10 = 12,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (15,8%), sin superar el ROIC actual (25,2%): 15,8%, porque la ventaja se desvanece. |
-| Arrendamientos operativos fuera de la deuda | Input sheet B16 | Deuda (DCF) | ='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda. |
+| Deuda de balance sin arrendamientos operativos | Input sheet B16 | Deuda (DCF) | ='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda. |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter E5 |  | 295,0 | 406,0 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B8 |  | 287,0 | 370,7 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B9 |  | 235,0 | 392,0 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B10 |  | 194,0 | 334,1 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B11 |  | 151,0 | 287,4 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B12 | I+D año −1 | 98,00 | 182,0 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Operating lease converter B13 | I+D año −2 | 605,0 | 537,6 | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B18 |  | No | Yes | Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2026-02-01 (SEC XBRL). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B28 |  | 0,140 | 0,155 | Margen en base ajustada por arrendamientos: + 1.46 pp (ajuste del EBIT 161.6 / ventas 11094). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B30 |  | 0,185 | 0,200 | Margen en base ajustada por arrendamientos: + 1.46 pp (ajuste del EBIT 161.6 / ventas 11094). |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B32 |  | 2,00 | 1,53 | Ventas/capital con el capital arrendado: 1/(1/2 + 0.1542), con VP de arrendamientos 1711.0 / ventas 11094. |
+| Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 2,50 | 1,80 | Ventas/capital con el capital arrendado: 1/(1/2.5 + 0.1542), con VP de arrendamientos 1711.0 / ventas 11094. |
+| Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,150 | 0,165 | Margen en base ajustada por arrendamientos: + 1.46 pp (ajuste del EBIT 161.6 / ventas 11094). |
+| Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,210 | 0,225 | Margen en base ajustada por arrendamientos: + 1.46 pp (ajuste del EBIT 161.6 / ventas 11094). |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | 1.117,7 | 233,9 | LTM = ejercicio -177.1 + acumulado al 2026-08-02 -417.5 − acumulado del año anterior -828.5 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes 1117.738. |
 | EPS básico | Income Statement I23 | Basic EPS 2024-01-28 | 12,20 | 12,23 | EPS básico del 10-K (2024-01-28); antes copiaba el diluido. |
 | EPS básico | Income Statement J23 | Basic EPS 2025-02-02 | 14,64 | 14,67 | EPS básico del 10-K (2025-02-02); antes copiaba el diluido. |
@@ -54,6 +68,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF esperado de las cuatro historias: US$161,52 (antes US$148,45); precio con margen de seguridad US$113,06. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF esperado de las cuatro historias: US$163,26 (antes US$148,45); precio con margen de seguridad US$114,28. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

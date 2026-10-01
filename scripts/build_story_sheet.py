@@ -13,7 +13,7 @@ completo por fórmulas, con el mismo diseño que la pestaña construida para ADB
 - Las cifras de cada historia salen de reference/damodaran/<T>.json y <T>_resultado.json (damodaran_stories.py); el
   resto son referencias a 'Input sheet', 'Valuation output' y 'Cost of capital worksheet'.
 
-Verifica que H5:H8 y H10 coincidan con el motor (diferencia < 0,005 por acción). No toca ADBE (pestaña de referencia).
+Verifica que H5:H8 y H10 coincidan con el motor (diferencia < 0,005 por acción).
 
 Uso: python scripts/build_story_sheet.py CMG [MSFT ...]
 """
@@ -172,7 +172,7 @@ def build(tk: str, gc) -> None:
         put(i, [h["nombre"] + (f": {h['descripcion']}" if h.get("descripcion") else ""), h["prob"],
                 f"=(G{R['rev']}/B{R['rev']})^(1/5)-1", h["margen"],
                 "" if fin else (s2 if s2 else f"={VO}!C40"), "" if fin else f"={VO}!H40", roic,
-                f"=B{R['ps']}", f"=B{i}*H{i}", f"=M{R['g']}"])
+                f"=MAX(0;B{R['ps']})", f"=B{i}*H{i}", f"=M{R['g']}"])  # responsabilidad limitada: patrimonio ≥ 0
     put(10, ["Valor intrínseco esperado · principal", "=SUM(B5:B8)"] + [""] * 5 + ["=IF(ABS(B10-1)<0,00000001;SUMPRODUCT(B5:B8;H5:H8);NA())"])
     put(11, ["Historia central A"] + [""] * 6 + ["=H5"])
     put(12, ["Mínimo de las historias"] + [""] * 6 + ["=MIN(H5:H8)"])
@@ -234,8 +234,6 @@ def build(tk: str, gc) -> None:
 def main(argv: list[str]) -> int:
     gc = get_gspread_client()
     for tk in argv:
-        if tk == "ADBE":
-            continue
         for attempt in range(5):
             try:
                 build(tk, gc)

@@ -11,7 +11,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,00. La beta bottom-up de Healthcare Products (204 empresas, 0,86 desapalancada y corregida por caja) reapalancada con la deuda de Boston Scientific da 0,97. No hay diferencia material: el riesgo está en la competencia en Electrofisiología, no en la tasa."
+  "texto": "La hoja usa una beta de 1,00. La beta bottom-up de Healthcare Products (204 empresas, 0,86 desapalancada y corregida por caja) reapalancada con la deuda de Boston Scientific da 0,98. No hay diferencia material: el riesgo está en la competencia en Electrofisiología, no en la tasa."
  },
  "historias": [
   {
@@ -321,5 +321,13 @@
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
- ]
+ ],
+ "arrendamientos": {
+  "vp": 519.2439468399006,
+  "ajuste_ebit": 52.09450664501243,
+  "margen_pp": 0.0024811633951711005,
+  "capital_ventas": 0.024730612823390195,
+  "cierre": "2025-12-31",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+ }
 }
