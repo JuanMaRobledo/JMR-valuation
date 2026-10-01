@@ -9,11 +9,11 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Valor intrínseco principal · DCF Base hoy: US$36,34 por acción** (Base · La cartera diversificada sostiene ~7%).
 
-**Complemento · DCF esperado por probabilidades: US$34,93.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$22,69–43,67. El MOS 35% se aplica al esperado: US$22,71. El antiguo caso técnico de la hoja (US$36,92) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$34,94.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$22,69–43,68. El MOS 35% se aplica al esperado: US$22,71. El antiguo caso técnico de la hoja (US$36,34) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (27 celdas, con respaldo). DCF esperado US$33,95 → US$34,93. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet (28 celdas, con respaldo). DCF esperado US$33,95 → US$34,94. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$36,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$36,34 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -48,15 +48,15 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Crecimiento: una cartera amplia después de un ciclo de producto excepcional.** Entre 2023 y 2025 Boston Scientific creció 12-20% al año, pero eso fue un ciclo de producto (la ablación por campo pulsado FARAPULSE y el cierre de orejuela Watchman) más compras. En el 2T26 ambos productos frenaron en EE.UU. a +3% al llegar Medtronic y Johnson & Johnson, y el orgánico total bajó a 7%. La Base parte de ahí: Electrofisiología crece 10% y baja a 8%, Watchman entre 8% y 9%, el resto de Cardiovascular y MedSurg entre 5% y 6%. El resultado es 6,9% el primer año y 6,5% compuesto. No extrapolamos el 20% de 2025 porque no es una tasa base útil: fue un producto nuevo sin competencia. Tampoco suponemos que la desaceleración siga, porque la cartera es amplia y los mercados crecen por envejecimiento. La visión externa dice que ~42% de las empresas de su tamaño lo lograron. La Conservadora (4,1%) es el campo pulsado convertido en commodity; la Disrupción (2,2%), un tropiezo clínico que hace caer Electrofisiología; la Optimista (8,3%), que 2026 fue un ajuste temporal. Si EE.UU. repite ~3% en el 3T y el 4T, la Conservadora debería pesar más que la Base. La compra pendiente de Penumbra (~US$14.500 millones) no está en esta valoración.
 
-**Margen: lo que dejan la amortización y las compras.** El margen GAAP subió de 4,9% en 2016 a 19,8% LTM, pero sigue cargado por ~US$930 millones al año de amortización de intangibles, litigios y reestructuración. La Base usa 24,2%: supone que parte de esos cargos se diluye con la escala. El rango de las historias —20,2% a 26,2%— refleja una pregunta concreta: si la empresa deja de comprar, la amortización baja y el margen sube; si sigue comprando (Penumbra y otras), el margen GAAP se queda cerca de 20%. Restar dos puntos al objetivo lleva la Base a US$32,66 (−10%); sumarlos, a US$40,02 (+10%). Lo invalidaría un margen GAAP por debajo de 18% en 2027.
+**Margen: lo que dejan la amortización y las compras.** El margen GAAP subió de 4,9% en 2016 a 19,8% LTM, pero sigue cargado por ~US$930 millones al año de amortización de intangibles, litigios y reestructuración. La Base usa 24,2%: supone que parte de esos cargos se diluye con la escala. El rango de las historias —20,2% a 26,2%— refleja una pregunta concreta: si la empresa deja de comprar, la amortización baja y el margen sube; si sigue comprando (Penumbra y otras), el margen GAAP se queda cerca de 20%. Restar dos puntos al objetivo lleva la Base a US$32,66 (−10%); sumarlos, a US$40,03 (+10%). Lo invalidaría un margen GAAP por debajo de 18% en 2027.
 
 **Reinversión: el crecimiento se compra, y eso decide el ROIC.** La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un ventas/capital de 1,26× y 1,17×, que ya supone que parte del crecimiento se compra: cada dólar de ventas nuevas exige ~US$0,79 de capital. Incluida la plusvalía de esas compras, el ROIC fue 4-9% en 2021-2025, por debajo del costo de capital. Por eso la Base no conserva retornos excedentes después del año 10: el ROIC terminal es el costo de capital (9,0%). Es el supuesto por defecto de Damodaran cuando no hay una ventaja demostrada: el crecimiento posterior no suma ni resta valor. Se probó un ROIC terminal de 11,1% y se revirtió el 30-sep-2026 por no cumplir la regla. Con Penumbra el capital invertido sube ~US$14.500 millones; el retorno de esa compra dirá si el crecimiento de los próximos años crea valor.
 
-**Descuento y terminal.** El costo de capital empieza en 8,76% y termina en 9,00%, con beta 1,00; la bottom-up de Healthcare Products reapalancada da 0,98, prácticamente igual. El riesgo de esta empresa no está en la tasa sino en la competencia en Electrofisiología, y por eso va en las historias. El crecimiento perpetuo es 4,99% y el valor terminal explica 58,1% del valor operativo de la Base. Como el ROIC terminal ya es el costo de capital, mover el crecimiento terminal casi no cambia el valor (US$36,00 (−0,9%) y US$36,68 (+0,9%)): crecer a perpetuidad sin retorno excedente no crea valor.
+**Descuento y terminal.** El costo de capital empieza en 8,76% y termina en 9,00%, con beta 1,00; la bottom-up de Healthcare Products reapalancada da 0,98, prácticamente igual. El riesgo de esta empresa no está en la tasa sino en la competencia en Electrofisiología, y por eso va en las historias. El crecimiento perpetuo es 4,99% y el valor terminal explica 58,1% del valor operativo de la Base. Como el ROIC terminal ya es el costo de capital, mover el crecimiento terminal casi no cambia el valor (US$36,01 (−0,9%) y US$36,69 (+0,9%)): crecer a perpetuidad sin retorno excedente no crea valor.
 
-**Probabilidades y lectura del resultado.** La Base pesa 45% porque es lo que muestra el 2T26; la Conservadora 30% es el riesgo real, con tres competidores bajando precio en campo pulsado; la Disrupción solo 5%, un tropiezo clínico o de producto; la Optimista 20%, la lectura de que la caída de 2026 fue de inventario y adopción. El DCF Base es US$36,34 y el esperado US$34,93, con el precio en US$43,66. Los arrendamientos son pequeños aquí (+0,25 pp de margen) y no cambian la lectura. Las acciones se fijan en 1.449,2 millones; la emisión o la deuda para Penumbra no están modeladas.
+**Probabilidades y lectura del resultado.** La Base pesa 45% porque es lo que muestra el 2T26; la Conservadora 30% es el riesgo real, con tres competidores bajando precio en campo pulsado; la Disrupción solo 5%, un tropiezo clínico o de producto; la Optimista 20%, la lectura de que la caída de 2026 fue de inventario y adopción. El DCF Base es US$36,34 y el esperado US$34,94, con el precio en US$43,66. Los arrendamientos son pequeños aquí (+0,25 pp de margen) y no cambian la lectura. Las acciones se fijan en 1.449,2 millones; la emisión o la deuda para Penumbra no están modeladas.
 
-**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$20.996 millones. Con el crecimiento de la Base llegan a US$28.832 millones en el año 5 y a US$37.400 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 20,2% en el año 1 a 24,2% al final, y se descuentan impuestos (17,8% al principio y 19,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$3.735 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$1.246 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$2.489 millones el primer año. Cada flujo se trae a hoy con el costo de capital (8,76% al principio, 9,00% al final): los diez años suman US$26.509 millones. Después del año 10 se supone que la empresa crece 4,99% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,0%; esa perpetuidad vale hoy US$36.756 millones, 58% del total. Flujos más terminal dan el valor de las operaciones, US$63.265 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$539 millones, más activos no operativos por US$2.245 millones, menos deuda por US$13.143 millones (incluye los arrendamientos capitalizados), menos minoritarios por US$242 millones. Queda un patrimonio de US$52.664 millones que, repartido entre 1.449,2 millones de acciones, da US$36,34 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$20.996 millones. Con el crecimiento de la Base llegan a US$28.832 millones en el año 5 y a US$37.400 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 20,2% en el año 1 a 24,2% al final, y se descuentan impuestos (17,8% al principio y 19,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$3.735 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$1.246 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$2.489 millones el primer año. Cada flujo se trae a hoy con el costo de capital (8,76% al principio, 9,00% al final): los diez años suman US$26.511 millones. Después del año 10 se supone que la empresa crece 4,99% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,0%; esa perpetuidad vale hoy US$36.760 millones, 58% del total. Flujos más terminal dan el valor de las operaciones, US$63.271 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$539 millones, más activos no operativos por US$2.245 millones, menos deuda por US$13.143 millones (incluye los arrendamientos capitalizados), menos minoritarios por US$242 millones. Queda un patrimonio de US$52.670 millones que, repartido entre 1.449,2 millones de acciones, da US$36,34 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
 **Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 11,89× (peso 25% dentro de los múltiplos); EV/FCFF 18,03× (peso 38% dentro de los múltiplos); P/E 20,79× (peso 12% dentro de los múltiplos); P/FCFE 15,95× (peso 12% dentro de los múltiplos); P/OCF 12,72× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (9,4%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
@@ -65,15 +65,15 @@ Sensibilidad del DCF Base (US$36,34; cada fila es un DCF completo con un solo su
 | Supuesto cambiado | DCF Base | Variación |
 |---|---:|---:|
 | Margen objetivo −2 pp | US$32,66 | −10,1% |
-| Margen objetivo +2 pp | US$40,02 | +10,1% |
-| Crecimiento años 1–5 −2 pp | US$32,81 | −9,7% |
+| Margen objetivo +2 pp | US$40,03 | +10,1% |
+| Crecimiento años 1–5 −2 pp | US$32,82 | −9,7% |
 | Crecimiento años 1–5 +2 pp | US$40,23 | +10,7% |
-| Ventas/capital −20% | US$34,81 | −4,2% |
+| Ventas/capital −20% | US$34,82 | −4,2% |
 | Ventas/capital +20% | US$37,36 | +2,8% |
-| WACC +1 pp | US$30,91 | −14,9% |
-| WACC −1 pp | US$43,23 | +19,0% |
-| Crecimiento terminal −0,5 pp | US$36,00 | −0,9% |
-| Crecimiento terminal +0,5 pp | US$36,68 | +0,9% |
+| WACC +1 pp | US$30,92 | −14,9% |
+| WACC −1 pp | US$43,24 | +19,0% |
+| Crecimiento terminal −0,5 pp | US$36,01 | −0,9% |
+| Crecimiento terminal +0,5 pp | US$36,69 | +0,9% |
 | Acciones +5% | US$34,61 | −4,8% |
 
 
@@ -98,8 +98,8 @@ Sensibilidad del DCF Base (US$36,34; cada fila es un DCF completo con un solo su
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$36,92 |
-| Bottom-up del sector (Healthcare Products, reapalancada) | 0,98 | 9,4% | 8,7% | US$37,11 |
+| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$37,39 |
+| Bottom-up del sector (Healthcare Products, reapalancada) | 0,98 | 9,4% | 8,7% | US$37,58 |
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
@@ -109,7 +109,7 @@ Sensibilidad del DCF Base (US$36,34; cada fila es un DCF completo con un solo su
 | Crecimiento año 1 | 4,0% | 7,0% | 10,0% |
 | Crecimiento años 2–5 | 4,0% | 7,0% | 10,0% |
 | Margen año 1 (base ajustada del modelo) | 20,2% | 20,2% | 20,2% |
-| Margen objetivo | 20,2% | 24,0% | 27,2% |
+| Margen objetivo | 20,2% | 24,2% | 27,2% |
 
 Ventas/capital: 1,3x en años 1–5 y 1,2x en 6–10. WACC: 8,8%. Ke: 9,4%. Impuesto efectivo: 17,8%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
@@ -118,14 +118,14 @@ Ventas/capital: 1,3x en años 1–5 y 1,2x en 6–10. WACC: 8,8%. Ke: 9,4%. Impu
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 9,8% | 17,0% | 9,0% | = costo de capital | US$36,92 | US$36,92 |
+| Sin ventaja defendible | 9,8% | 17,0% | 9,0% | = costo de capital | US$36,34 | US$37,39 |
 
 Fuentes de ventaja: Patentes y relación con médicos, pero el crecimiento se compra. Evidencia: ROIC (con plusvalía) 4-9% en 2021-2025, bajo el costo de capital hasta 2025. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$36,34 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$34,93. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$36,92) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$36,34 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$34,94. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$36,34) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -162,14 +162,14 @@ En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor 
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**Base · La cartera diversificada sostiene ~7%** — probabilidad 45%; valor terminal 85.692 (VP 36.756); DCF US$36,34 por acción.
+**Base · La cartera diversificada sostiene ~7%** — probabilidad 45%; valor terminal 85.692 (VP 36.760); DCF US$36,34 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 22.439 | 6,9% | 20,2% | 3.735 | 1.246 | 2.489 | 8,8% | 2.288 |
 | 2 | 24.008 | 7,0% | 21,8% | 4.312 | 1.303 | 3.008 | 8,8% | 2.543 |
 | 3 | 25.650 | 6,8% | 22,6% | 4.775 | 1.258 | 3.517 | 8,8% | 2.734 |
-| 4 | 27.234 | 6,2% | 23,4% | 5.249 | 1.269 | 3.980 | 8,8% | 2.844 |
+| 4 | 27.234 | 6,2% | 23,4% | 5.249 | 1.269 | 3.980 | 8,8% | 2.845 |
 | 5 | 28.832 | 5,9% | 24,2% | 5.747 | 1.303 | 4.444 | 8,8% | 2.920 |
 | 6 | 30.474 | 5,7% | 24,2% | 6.056 | 1.443 | 4.614 | 8,8% | 2.786 |
 | 7 | 32.155 | 5,5% | 24,2% | 6.372 | 1.474 | 4.898 | 8,9% | 2.717 |
@@ -178,39 +178,39 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 37.400 | 5,0% | 24,2% | 7.346 | 1.601 | 5.744 | 9,0% | 2.464 |
 | Terminal | 39.266 | 5,0% | 24,2% | 7.712 | 4.276 | 3.436 | 9,0% | — |
 
-**Conservadora · El campo pulsado se vuelve commodity** — probabilidad 30%; valor terminal 67.474 (VP 28.942); DCF US$29,03 por acción.
+**Conservadora · El campo pulsado se vuelve commodity** — probabilidad 30%; valor terminal 67.474 (VP 28.945); DCF US$29,04 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 21.898 | 4,3% | 20,2% | 3.645 | 795 | 2.850 | 8,8% | 2.620 |
-| 2 | 22.899 | 4,6% | 21,0% | 3.962 | 758 | 3.204 | 8,8% | 2.708 |
+| 2 | 22.899 | 4,6% | 21,0% | 3.962 | 758 | 3.204 | 8,8% | 2.709 |
 | 3 | 23.854 | 4,2% | 21,4% | 4.206 | 727 | 3.479 | 8,8% | 2.704 |
 | 4 | 24.769 | 3,8% | 21,8% | 4.448 | 755 | 3.693 | 8,8% | 2.640 |
 | 5 | 25.720 | 3,8% | 22,2% | 4.704 | 831 | 3.873 | 8,8% | 2.545 |
 | 6 | 26.766 | 4,1% | 22,2% | 4.881 | 987 | 3.893 | 8,8% | 2.351 |
 | 7 | 27.917 | 4,3% | 22,2% | 5.076 | 1.085 | 3.991 | 8,9% | 2.214 |
 | 8 | 29.182 | 4,5% | 22,2% | 5.290 | 1.192 | 4.098 | 8,9% | 2.088 |
-| 9 | 30.571 | 4,8% | 22,2% | 5.525 | 1.309 | 4.216 | 9,0% | 1.971 |
-| 10 | 32.096 | 5,0% | 22,2% | 5.784 | 1.374 | 4.410 | 9,0% | 1.891 |
+| 9 | 30.571 | 4,8% | 22,2% | 5.525 | 1.309 | 4.216 | 9,0% | 1.972 |
+| 10 | 32.096 | 5,0% | 22,2% | 5.784 | 1.374 | 4.410 | 9,0% | 1.892 |
 | Terminal | 33.698 | 5,0% | 22,2% | 6.073 | 3.367 | 2.706 | 9,0% | — |
 
-**Disrupción · Deterioro de los fundamentales: Pierde participación y precio** — probabilidad 5%; valor terminal 50.263 (VP 21.560); DCF US$22,69 por acción.
+**Disrupción · Deterioro de los fundamentales: Pierde participación y precio** — probabilidad 5%; valor terminal 50.263 (VP 21.562); DCF US$22,69 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 21.279 | 1,3% | 20,2% | 3.542 | 297 | 3.245 | 8,8% | 2.983 |
+| 1 | 21.279 | 1,3% | 20,2% | 3.542 | 297 | 3.245 | 8,8% | 2.984 |
 | 2 | 21.652 | 1,8% | 20,2% | 3.604 | 421 | 3.183 | 8,8% | 2.691 |
 | 3 | 22.183 | 2,4% | 20,2% | 3.692 | 486 | 3.206 | 8,8% | 2.492 |
 | 4 | 22.795 | 2,8% | 20,2% | 3.794 | 500 | 3.294 | 8,8% | 2.354 |
-| 5 | 23.424 | 2,8% | 20,2% | 3.899 | 513 | 3.385 | 8,8% | 2.224 |
+| 5 | 23.424 | 2,8% | 20,2% | 3.899 | 513 | 3.385 | 8,8% | 2.225 |
 | 6 | 24.071 | 2,8% | 20,2% | 3.995 | 570 | 3.424 | 8,8% | 2.068 |
-| 7 | 24.735 | 2,8% | 20,2% | 4.093 | 586 | 3.507 | 8,9% | 1.945 |
-| 8 | 25.418 | 2,8% | 20,2% | 4.194 | 602 | 3.591 | 8,9% | 1.829 |
+| 7 | 24.735 | 2,8% | 20,2% | 4.093 | 586 | 3.507 | 8,9% | 1.946 |
+| 8 | 25.418 | 2,8% | 20,2% | 4.194 | 602 | 3.591 | 8,9% | 1.830 |
 | 9 | 26.120 | 2,8% | 20,2% | 4.297 | 619 | 3.678 | 9,0% | 1.720 |
 | 10 | 26.841 | 2,8% | 20,2% | 4.402 | 636 | 3.766 | 9,0% | 1.616 |
 | Terminal | 27.582 | 2,8% | 20,2% | 4.524 | 1.388 | 3.136 | 9,0% | — |
 
-**Optimista · Electrofisiología y Watchman vuelven a doble dígito** — probabilidad 20%; valor terminal 103.218 (VP 44.274); DCF US$43,67 por acción.
+**Optimista · Electrofisiología y Watchman vuelven a doble dígito** — probabilidad 20%; valor terminal 103.218 (VP 44.278); DCF US$43,68 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -222,7 +222,7 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 6 | 33.377 | 6,8% | 26,2% | 7.180 | 1.820 | 5.360 | 8,8% | 3.237 |
 | 7 | 35.498 | 6,4% | 26,2% | 7.614 | 1.797 | 5.817 | 8,9% | 3.227 |
 | 8 | 37.592 | 5,9% | 26,2% | 8.040 | 1.756 | 6.283 | 8,9% | 3.201 |
-| 9 | 39.639 | 5,4% | 26,2% | 8.453 | 1.697 | 6.755 | 9,0% | 3.158 |
+| 9 | 39.639 | 5,4% | 26,2% | 8.453 | 1.697 | 6.755 | 9,0% | 3.159 |
 | 10 | 41.617 | 5,0% | 26,2% | 8.848 | 1.782 | 7.066 | 9,0% | 3.031 |
 | Terminal | 43.693 | 5,0% | 26,2% | 9.290 | 5.151 | 4.139 | 9,0% | — |
 
@@ -233,28 +233,28 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 26.509,17 | 36.756,03 | 63.265,20 | 52.663,96 | 36,34 |
-| Conservadora | 23.732,45 | 28.941,78 | 52.674,23 | 42.072,99 | 29,03 |
-| Disrupción | 21.922,77 | 21.559,60 | 43.482,37 | 32.881,13 | 22,69 |
-| Optimista | 29.620,72 | 44.273,76 | 73.894,48 | 63.293,24 | 43,67 |
+| Base | 26.511,10 | 36.759,90 | 63.271,00 | 52.669,75 | 36,34 |
+| Conservadora | 23.734,08 | 28.944,82 | 52.678,90 | 42.077,66 | 29,04 |
+| Disrupción | 21.924,23 | 21.561,86 | 43.486,09 | 32.884,85 | 22,69 |
+| Optimista | 29.622,96 | 44.278,42 | 73.901,37 | 63.300,13 | 43,68 |
 
-Ejemplo Base: (26.509,17 + 36.756,03 + 539 + 2.245 − 13.143 − 242) / 1.449,2 = US$36,34 por acción. El terminal representa 58,1% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (26.511,10 + 36.759,90 + 539 + 2.245 − 13.143 − 242) / 1.449,2 = US$36,34 por acción. El terminal representa 58,1% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 45% / 30% / 5% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-DCF esperado = 0,45 × 36,340021 + 0,30 × 29,031871 + 0,05 × 22,689158 + 0,20 × 43,674603 = US$34,931949 ≈ US$34,93. Los aportes son US$16,35 + US$8,71 + US$1,13 + US$8,73 por acción.
+DCF esperado = 0,45 × 36,344019 + 0,30 × 29,035096 + 0,05 × 22,691724 + 0,20 × 43,679361 = US$34,935796 ≈ US$34,94. Los aportes son US$16,35 + US$8,71 + US$1,13 + US$8,74 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 34,931949 × 0,65 = US$22,705767 ≈ US$22,71. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 34,935796 × 0,65 = US$22,708267 ≈ US$22,71. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$36,34, es el valor intrínseco principal. El DCF esperado de US$34,93 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$36,34, es el valor intrínseco principal. El DCF esperado de US$34,94 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: La cartera diversificada sostiene ~7%
@@ -270,7 +270,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$36,34, es el valo
 
 **Qué plantea.** Es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU.
 
-**Traducción al modelo.** Electrofisiología crece 2%, 3%, 3%, 3%, 3%; Watchman crece 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular crece 5%, 5%, 4%, 4%, 4%; MedSurg crece 5%, 5%, 5%, 4%, 4%. El crecimiento anual compuesto de cinco años es 4,1%; el margen operativo objetivo es 22,2%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 30%; DCF: US$29,03 por acción.
+**Traducción al modelo.** Electrofisiología crece 2%, 3%, 3%, 3%, 3%; Watchman crece 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular crece 5%, 5%, 4%, 4%, 4%; MedSurg crece 5%, 5%, 5%, 4%, 4%. El crecimiento anual compuesto de cinco años es 4,1%; el margen operativo objetivo es 22,2%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 30%; DCF: US$29,04 por acción.
 
 **Cómo contrastarla.** La apoyarían: crecimiento orgánico total: < 5% dos trimestres; electrofisiología EE.UU.: ≤ 0%; watchman EE.UU.: ≤ 0%; margen operativo GAAP: ≤ 18%.
 
@@ -288,7 +288,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$36,34, es el valo
 
 **Qué plantea.** Supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres).
 
-**Traducción al modelo.** Electrofisiología crece 15%, 15%, 13%, 12%, 10%; Watchman crece 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular crece 7%, 7%, 7%, 6%, 6%; MedSurg crece 7%, 7%, 6%, 6%, 6%. El crecimiento anual compuesto de cinco años es 8,3%; el margen operativo objetivo es 26,2%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 20%; DCF: US$43,67 por acción.
+**Traducción al modelo.** Electrofisiología crece 15%, 15%, 13%, 12%, 10%; Watchman crece 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular crece 7%, 7%, 7%, 6%, 6%; MedSurg crece 7%, 7%, 6%, 6%, 6%. El crecimiento anual compuesto de cinco años es 8,3%; el margen operativo objetivo es 26,2%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 20%; DCF: US$43,68 por acción.
 
 **Cómo contrastarla.** La confirmarían: crecimiento orgánico total: ≥ 7%; electrofisiología EE.UU.: ≥ +8% en 2027; watchman EE.UU.: ≥ +8%; margen operativo GAAP: ≥ 21% en 2027.
 
@@ -300,10 +300,10 @@ La tesis Base es la trayectoria central defendida y su DCF, US$36,34, es el valo
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,00) | Valor/acción (beta 0,98) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
 | **Base · La cartera diversificada sostiene ~7%** | 45% | Electrofisiología: 10%, 10%, 9%, 8%, 8%; Watchman: 8%, 9%, 9%, 8%, 8%; Resto de Cardiovascular: 6%, 6%, 6%, 5%, 5%; MedSurg: 6%, 6%, 6%, 6%, 5% | 6,5% | 24,2% | 1,3 | 4,99% | US$36,34 | US$36,53 |
-| **Conservadora · El campo pulsado se vuelve commodity** | 30% | Electrofisiología: 2%, 3%, 3%, 3%, 3%; Watchman: 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular: 5%, 5%, 4%, 4%, 4%; MedSurg: 5%, 5%, 5%, 4%, 4% | 4,1% | 22,2% | 1,3 | 4,99% | US$29,03 | US$29,18 |
+| **Conservadora · El campo pulsado se vuelve commodity** | 30% | Electrofisiología: 2%, 3%, 3%, 3%, 3%; Watchman: 3%, 4%, 4%, 4%, 4%; Resto de Cardiovascular: 5%, 5%, 4%, 4%, 4%; MedSurg: 5%, 5%, 5%, 4%, 4% | 4,1% | 22,2% | 1,3 | 4,99% | US$29,04 | US$29,18 |
 | **Disrupción · Deterioro de los fundamentales: Pierde participación y precio** | 5% | Electrofisiología: -5%, -3%, 0%, 2%, 2%; Watchman: 0%, 0%, 2%, 2%, 2%; Resto de Cardiovascular: 3%, 3%, 3%, 3%, 3%; MedSurg: 3%, 3%, 3%, 3%, 3% | 2,2% | 20,2% | 1,3 | 2,76% | US$22,69 | US$22,81 |
-| **Optimista · Electrofisiología y Watchman vuelven a doble dígito** | 20% | Electrofisiología: 15%, 15%, 13%, 12%, 10%; Watchman: 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular: 7%, 7%, 7%, 6%, 6%; MedSurg: 7%, 7%, 6%, 6%, 6% | 8,3% | 26,2% | 1,3 | 4,99% | US$43,67 | US$43,90 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$34,93** | **US$35,11** |
+| **Optimista · Electrofisiología y Watchman vuelven a doble dígito** | 20% | Electrofisiología: 15%, 15%, 13%, 12%, 10%; Watchman: 14%, 14%, 12%, 10%, 10%; Resto de Cardiovascular: 7%, 7%, 7%, 6%, 6%; MedSurg: 7%, 7%, 6%, 6%, 6% | 8,3% | 26,2% | 1,3 | 4,99% | US$43,68 | US$43,90 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$34,94** | **US$35,11** |
 
 Base (45%) es lo que muestra el 2T26: orgánico de 7% con Electrofisiología desacelerando pero todavía creciendo. Conservadora (30%) es el riesgo real: tres competidores en campo pulsado bajan precio y participación en EE.UU. Disrupción (5%) es un tropiezo clínico o de producto. Optimista (20%) supone que la caída de 2026 fue un ajuste temporal (inventario, adopción de nuevos catéteres). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -313,10 +313,10 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 
 | Crecimiento \ Margen | 20,2% | 22,2% | 24,2% | 26,2% | 28,2% |
 |---|---:|---:|---:|---:|---:|
-| 3,0% | 24,46 | 27,46 | 30,46 | 33,45 | 36,45 |
-| 5,0% | 26,98 | 30,37 | 33,75 | 37,14 | 40,52 |
-| 7,0% | 29,76 | 33,57 | 37,39 | 41,21 | 45,02 |
-| 9,0% | 32,81 | 37,10 | 41,40 | 45,70 | 49,99 |
+| 3,0% | 24,46 | 27,46 | 30,46 | 33,46 | 36,45 |
+| 5,0% | 26,99 | 30,37 | 33,76 | 37,14 | 40,53 |
+| 7,0% | 29,76 | 33,58 | 37,39 | 41,21 | 45,03 |
+| 9,0% | 32,81 | 37,11 | 41,40 | 45,70 | 50,00 |
 | 11,0% | 36,16 | 40,99 | 45,82 | 50,65 | 55,48 |
 
 
@@ -352,12 +352,12 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 22% | Margen 24% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 1,00 | 12,3% (16% de las empresas) | 10,0% (25% de las empresas) | 8,1% (33% de las empresas) |
+| Beta 1,00 | 12,3% (16% de las empresas) | 10,0% (25% de las empresas) | 8,1% (34% de las empresas) |
 | Beta 0,98 | 12,2% (16% de las empresas) | 9,9% (26% de las empresas) | 8,0% (34% de las empresas) |
 
 Frente al DCF Base (US$36,34), el valor intrínseco principal, el precio está por encima en 20%.
 
-Frente al DCF esperado de las historias (US$34,93 con la beta de la hoja; US$35,11 con la propuesta), el precio está por encima en 25% y por encima en 24%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$34,94 con la beta de la hoja; US$35,11 con la propuesta), el precio está por encima en 25% y por encima en 24%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -368,7 +368,7 @@ Frente al DCF esperado de las historias (US$34,93 con la beta de la hoja; US$35,
 | Historia en una frase | Cartera cardiovascular diversificada que pierde su ciclo de producto excepcional |  |
 | Probabilidades | Base 45% / Conservadora 30% / Disrupción 5% / Optimista 20% |  |
 | DCF Base hoy (valor intrínseco principal) | US$36,34 |  |
-| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$34,93 / US$35,11 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$34,94 / US$35,11 |  |
 | Precio con MOS sobre el DCF esperado | US$22,71 (MOS 35%) |  |
 | Rango (historia más débil a más fuerte) | US$22,69 a US$43,90 |  |
 | Confianza | Media: la diversificación da piso; la duración de la competencia en campo pulsado es incierta |  |

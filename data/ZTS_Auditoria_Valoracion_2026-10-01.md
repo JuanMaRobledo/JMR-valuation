@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$117,30 | US$117,68 |
-| **DCF Base (valor intrínseco principal)** | US$118,16 | US$119,78 |
-| DCF Conservadora | US$65,09 | US$66,31 |
-| DCF Disrupción | US$45,96 | US$47,11 |
-| DCF Optimista | US$136,73 | US$138,42 |
-| DCF esperado por probabilidades (complemento) | US$95,15 | US$96,59 |
-| Precio con MOS sobre el esperado | US$61,85 | US$62,79 |
+| DCF técnico anterior (caso Base de la hoja) | US$117,30 | US$119,84 |
+| **DCF Base (valor intrínseco principal)** | US$118,16 | US$119,84 |
+| DCF Conservadora | US$65,09 | US$66,34 |
+| DCF Disrupción | US$45,96 | US$47,13 |
+| DCF Optimista | US$136,73 | US$138,49 |
+| DCF esperado por probabilidades (complemento) | US$95,15 | US$96,64 |
+| Precio con MOS sobre el esperado | US$61,85 | US$62,82 |
 
 ## Hallazgos y correcciones
 
@@ -48,6 +48,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 2,00 | 1,91 | Ventas/capital con el capital arrendado: 1/(1/2 + 0.0243), con VP de arrendamientos 231.2 / ventas 9517. |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,330 | 0,334 | Margen en base ajustada por arrendamientos: + 0.36 pp (ajuste del EBIT 34.0 / ventas 9517). |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,380 | 0,384 | Margen en base ajustada por arrendamientos: + 0.36 pp (ajuste del EBIT 34.0 / ventas 9517). |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,360 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L13 | Cash from Operating Activities | 2.887,0 | 2.840,0 | LTM = ejercicio 2904.0 + acumulado al 2026-06-30 1056.0 − acumulado del año anterior 1120.0 (NetCashProvidedByUsedInOperatingActivities). Antes 2887. |
 | Flujos LTM | Cash Flow Statement L22 | Cash from Investing Activities | -713,0 | -720,0 | LTM = ejercicio -748.0 + acumulado al 2026-06-30 -387.0 − acumulado del año anterior -415.0 (NetCashProvidedByUsedInInvestingActivities). Antes -713. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | -167,0 | LTM = ejercicio 325.0 + acumulado al 2026-06-30 -974.0 − acumulado del año anterior -482.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
@@ -73,6 +74,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$119,78 (antes US$118,16). El DCF esperado de las cuatro historias, complementario, es US$96,59 (antes US$95,15); precio con margen de seguridad sobre el esperado US$62,79. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$119,84 (antes US$118,16). El DCF esperado de las cuatro historias, complementario, es US$96,64 (antes US$95,15); precio con margen de seguridad sobre el esperado US$62,82. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

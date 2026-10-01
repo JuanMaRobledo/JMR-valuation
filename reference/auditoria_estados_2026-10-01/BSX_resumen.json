@@ -179,6 +179,14 @@
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.24,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar.",
+   "tipo": "Margen objetivo Base de la hoja enlazado al de Input sheet"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -258,14 +266,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 36.90246261,
-  "valorEsperado": 34.931949379823095,
-  "precioMOS": 22.705767096885012,
+  "dcfTecnico": 36.34702943,
+  "valorEsperado": 34.93579551199851,
+  "precioMOS": 22.708267082799036,
   "historias": {
-   "A": 36.34002128236686,
-   "B": 29.03187082129351,
-   "C": 22.689158131023767,
-   "D": 43.67460324909382
+   "A": 36.3440186413768,
+   "B": 29.035095530413948,
+   "C": 22.69172419539102,
+   "D": 43.67936127242608
   }
  },
  "tramo_tasas_base": "$12,000-25,000 Mn"

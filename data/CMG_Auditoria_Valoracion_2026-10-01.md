@@ -15,11 +15,11 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$28,19 | US$23,86 |
-| **DCF Base (valor intrínseco principal)** | US$25,24 | US$23,06 |
-| DCF Conservadora | US$20,07 | US$17,83 |
+| DCF técnico anterior (caso Base de la hoja) | US$28,19 | US$23,05 |
+| **DCF Base (valor intrínseco principal)** | US$25,24 | US$23,05 |
+| DCF Conservadora | US$20,07 | US$17,82 |
 | DCF Disrupción | US$11,71 | US$8,92 |
-| DCF Optimista | US$32,88 | US$30,77 |
+| DCF Optimista | US$32,88 | US$30,76 |
 | DCF esperado por probabilidades (complemento) | US$24,28 | US$22,06 |
 | Precio con MOS sobre el esperado | US$15,78 | US$14,34 |
 
@@ -44,6 +44,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,200 | 0,213 | Margen en base ajustada por arrendamientos: + 1.29 pp (ajuste del EBIT 160.0 / ventas 12423.8). |
 | Ventas/capital contrastado con la historia y la industria | Input sheet B32 |  | 1,26 | 1,51 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
 | Ventas/capital contrastado con la historia y la industria | Input sheet B33 |  | 1,16 | 1,51 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,170 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | -611,5 | LTM = ejercicio -392.5 + acumulado al 2026-06-30 -122.2 − acumulado del año anterior 96.8 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | EPS básico | Income Statement J23 | Basic EPS 2024-12-31 | 1,11 | 1,12 | EPS básico del 10-K (2024-12-31); antes copiaba el diluido. |
 | EPS básico | Income Statement K23 | Basic EPS 2025-12-31 | 1,14 | 1,15 | EPS básico del 10-K (2025-12-31); antes copiaba el diluido. |
@@ -67,6 +68,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$23,06 (antes US$25,24). El DCF esperado de las cuatro historias, complementario, es US$22,06 (antes US$24,28); precio con margen de seguridad sobre el esperado US$14,34. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$23,05 (antes US$25,24). El DCF esperado de las cuatro historias, complementario, es US$22,06 (antes US$24,28); precio con margen de seguridad sobre el esperado US$14,34. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

@@ -147,6 +147,14 @@
    "tipo": "Ventas/capital contrastado con la historia y la industria"
   },
   {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.17,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar.",
+   "tipo": "Margen objetivo Base de la hoja enlazado al de Input sheet"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -217,14 +225,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 23.85685491,
-  "valorEsperado": 22.064308346542433,
-  "precioMOS": 14.34180042525258,
+  "dcfTecnico": 23.04937419,
+  "valorEsperado": 22.055285972178815,
+  "precioMOS": 14.33593588191623,
   "historias": {
-   "A": 23.0574889015696,
-   "B": 17.831375772833514,
-   "C": 8.91921630184017,
-   "D": 30.771852251654266
+   "A": 23.048078641002093,
+   "B": 17.824036176473562,
+   "C": 8.915386522981928,
+   "D": 30.759362639315672
   }
  },
  "tramo_tasas_base": "$7,000-12,000 Mn"

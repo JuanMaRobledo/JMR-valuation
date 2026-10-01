@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,07, y el DCF Base baja de US$341,66 a US$327,66. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización)."
+  "texto": "La hoja usa una beta de 0,90. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda de Domino's da 1,07, y el DCF Base baja de US$348,85 a US$334,53. La beta bottom-up es más coherente con un patrimonio muy apalancado (deuda titulizada de ~US$4.800 millones frente a ~US$10.000 millones de capitalización)."
  },
  "historias": [
   {
