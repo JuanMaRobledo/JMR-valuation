@@ -111,6 +111,8 @@ def run(tk: str, client) -> dict:
     rng = ["'Input sheet'!A1:D80", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
            "'Resumen de Valoración'!A1:U20", "'Descuento de múltiplos'!A1:K49"]
     rng += [f"{s}!F19:H23" for s, _ in SHEETS.values()]
+    # Limitación conocida: en financieras (PAGS) el DCF inverso usa el motor FCFF calibrado contra 'Valuation output'!B35;
+    # crecimientoImplicitoDCF no admite el FCFE financiero.
     vr = sh.values_batch_get(rng, params=U)["valueRanges"]
     grid = {r.split("!")[0].strip("'"): v.get("values", []) for r, v in zip(rng[:5], vr[:5])}
     blk = {m: (v.get("values") or []) for m, v in zip(SHEETS, vr[5:])}
@@ -123,7 +125,7 @@ def run(tk: str, client) -> dict:
 
     def cell(sheet, addr):
         col, row = ord(addr[0]) - 65, int(addr[1:]) - 1
-        g = grid[sheet]
+        g = grid.get(sheet, [])
         return g[row][col] if row < len(g) and col < len(g[row]) else None
 
     price = rec.get("precio") or cell("Input sheet", "D1")

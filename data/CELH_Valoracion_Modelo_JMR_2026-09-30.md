@@ -117,7 +117,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$27,42 supone que los ingresos crecen 12,4% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,2% (+6,2 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$27,42 supone que los ingresos crecen 15,7% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,2% (+9,5 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$29,08 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,7%, WACC de los años 4-10 10,2%, ROE de FY+3 31,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -138,15 +138,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$21,99 | — |
 | Múltiplos Base +20% | US$24,07 | +9,5% |
 | Múltiplos Base −20% | US$19,91 | −9,5% |
-| Crecimiento años 2-5 +2 pp | US$22,80 | +3,7% |
-| Crecimiento años 2-5 −2 pp | US$21,03 | −4,4% |
-| Margen objetivo +3 pp | US$24,09 | +9,6% |
-| Margen objetivo −3 pp | US$19,66 | −10,6% |
-| WACC +1 pp | US$21,21 | −3,5% |
-| WACC −1 pp | US$22,58 | +2,7% |
+| Crecimiento años 2-5 +2 pp | US$20,11 | −8,5% |
+| Crecimiento años 2-5 −2 pp | US$18,34 | −16,6% |
+| Margen objetivo +3 pp | US$21,40 | −2,7% |
+| Margen objetivo −3 pp | US$16,97 | −22,8% |
+| WACC +1 pp | US$18,52 | −15,7% |
+| WACC −1 pp | US$19,89 | −9,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo −3 pp, Margen objetivo +3 pp, Múltiplos Base −20%.
+Supuestos más frágiles: Margen objetivo −3 pp, Crecimiento años 2-5 −2 pp, WACC +1 pp.
 
 ## 8. Log de cambios en la hoja
 

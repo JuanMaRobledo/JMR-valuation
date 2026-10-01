@@ -117,7 +117,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$346,22 supone que los ingresos crecen 11,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,4% (−0,5 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$346,22 supone que los ingresos crecen 12,0% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,4% (−0,4 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$426,26 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,8%, WACC de los años 4-10 9,4%, ROE de FY+3 42,1% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -138,12 +138,12 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$288,14 | — |
 | Múltiplos Base +20% | US$318,78 | +10,6% |
 | Múltiplos Base −20% | US$257,40 | −10,7% |
-| Crecimiento años 2-5 +2 pp | US$311,69 | +8,2% |
-| Crecimiento años 2-5 −2 pp | US$288,56 | +0,1% |
-| Margen objetivo +3 pp | US$310,98 | +7,9% |
-| Margen objetivo −3 pp | US$288,24 | +0,0% |
-| WACC +1 pp | US$292,05 | +1,4% |
-| WACC −1 pp | US$307,72 | +6,8% |
+| Crecimiento años 2-5 +2 pp | US$311,07 | +8,0% |
+| Crecimiento años 2-5 −2 pp | US$287,94 | −0,1% |
+| Margen objetivo +3 pp | US$310,36 | +7,7% |
+| Margen objetivo −3 pp | US$287,62 | −0,2% |
+| WACC +1 pp | US$291,43 | +1,1% |
+| WACC −1 pp | US$307,10 | +6,6% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Crecimiento años 2-5 +2 pp.
