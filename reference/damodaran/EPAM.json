@@ -301,5 +301,27 @@
   "capital_ventas": 0.0200519529355118,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: modesto, porque la pregunta es la IA.",
+   "EPAM vende ingeniería de software, datos, nube e IA a grandes empresas y cobra casi todo por tiempo y materiales: gana por hora facturada. Fue una de las mejores historias de servicios de TI hasta 2021; después vinieron la guerra en Ucrania (reubicación de miles de ingenieros), la caída del gasto discrecional y la IA generativa, que puede reducir las horas que EPAM factura. Los ingresos se estancaron en 2023-2024, saltaron 15,4% en 2025 por compras (Neoris, First Derivative) y en el 2T26 crecieron 4,5%, con Europa +10%. La Base sigue lo que se ve: Norteamérica de 4% a 5%, Europa de 8% bajando a 6%; {g1A} el primer año y {cagrA} compuesto, una cifra que lograron ~{tbA} de las empresas de su tamaño. No extrapolamos 2025 porque fue comprado. La Conservadora ({cagrB}) es la deflación de horas: los clientes producen el mismo software con menos horas; la Disrupción ({cagrC}), la comoditización con ingresos en caída; la Optimista ({cagrD}), que la IA dispare proyectos de datos y modernización. Dos trimestres de crecimiento orgánico negativo invalidarían la Base."
+  ],
+  [
+   "Margen: la pieza más frágil.",
+   "El margen operativo GAAP pasó de ~14% en 2021 a 9,5% en 2025 y 10,0% LTM: menos utilización de ingenieros, tarifas presionadas, costos de reubicación y de integración. La Base supone que se recupera a 12% (en el modelo {mA}, con el ajuste por arrendamientos). Es la apuesta más discutible de la Base, porque si la IA reduce las horas difícilmente sube el margen: una empresa que cobra por hora gana menos si cada proyecto necesita menos horas, salvo que suba la tarifa. Por eso el margen pesa más que el crecimiento: dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}, más que dos puntos de crecimiento. Lo invalidaría un margen GAAP por debajo de 9%. El rango de las historias va de {mC} a {mD}."
+  ],
+  [
+   "Reinversión: personas, no fábricas.",
+   "EPAM casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un ventas/capital de {s2c1}× y {s2c2}×: ~US${cap1} de capital por dólar de ventas nuevas. La reinversión real es en personas (formación en IA) y en compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones). El ROIC cayó de 47% a ~15% en cinco años: la ventaja existe —costos de cambio moderados con clientes grandes— pero se está desvaneciendo. Por eso el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria, limitado al ROIC actual. Si la ventaja desapareciera del todo, la Base valdría {s_roic}; la Conservadora y la Disrupción ya usan el costo de capital."
+  ],
+  [
+   "Descuento: la beta de regresión cuenta la guerra.",
+   "La hoja usa una beta de {beta}; la bottom-up de servicios de computación da {betabu}, con la que el DCF técnico sube de forma notable. La diferencia refleja que la regresión de EPAM incorpora el shock geopolítico de 2022. El criterio de Damodaran prefiere la bottom-up, pero la entrega desde Europa del Este justifica algo por encima del sector, así que la Base se queda con la de la hoja, del lado prudente. El costo de capital va de {wacc0} a {waccT}; un punto menos lleva la Base a {s_k_lo}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}; la Conservadora {pB}, el riesgo que el mercado más teme; la Disrupción {pC}; la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado valora algo más cercano a la Conservadora ({vB}). La evidencia en contra de la Base es que el margen cae desde 2021 y Norteamérica crece a un dígito bajo; si 2027 no muestra recuperación, la Conservadora se vuelve la central. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+  ]
+ ]
 }

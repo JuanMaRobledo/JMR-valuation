@@ -338,5 +338,27 @@
   "capital_ventas": 0.019393543907469626,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: el botón crece poco; Venmo, más.",
+   "PayPal es una red de pagos de dos lados: 439 millones de cuentas y US$1,79 billones de volumen en 2025. Su negocio de mayor margen, el botón de pago (checkout de marca), crece solo ~2% sin divisas y pierde terreno frente a las billeteras integradas en el dispositivo (Apple Pay, Shop Pay, Google Pay); el volumen lo aportan Braintree, procesamiento de bajo margen, y Venmo, que todavía monetiza poco. La Base supone que el checkout de marca y Braintree crecen 3-4%, Venmo 10-15% y los servicios de valor agregado 5%: {g1A} el primer año y {cagrA} compuesto, algo que lograron ~{tbA} de las empresas de su tamaño. Es la estabilización con el nuevo CEO (Enrique Lores, 2026). La Conservadora ({cagrB}) es la pérdida continua del checkout; la Disrupción ({cagrC}), PayPal convertido en procesador de bajo margen; la Optimista ({cagrD}), una reactivación con Fastlane, Venmo en comercios y publicidad. Si el checkout de marca deja de crecer, la Base se cae."
+  ],
+  [
+   "Margen: la mezcla manda.",
+   "El margen operativo fue 16,7-18,3% y la Base supone {mA} (con el I+D capitalizado y los arrendamientos como deuda). Lo que mueve el margen es la mezcla: cada punto que el checkout de marca cede a Braintree lo baja, porque Braintree cobra mucho menos por transacción. Por eso la Conservadora usa {mB} y la Disrupción {mC}, mientras la Optimista llega a {mD}. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}. Un margen operativo de 16% o menos invalidaría la Base."
+  ],
+  [
+   "Reinversión: el flujo libre va a recompras.",
+   "PayPal necesita poco capital físico (capex de US$620-850 millones) y la hoja usa un ventas/capital de {s2c1}×. El capital de trabajo incluye carteras de crédito de «compra ahora y paga después», que PayPal vende a terceros. El flujo libre (US$6.400 millones ajustado en 2025) va a recompras, que bajaron las acciones de 1.172 millones en 2020 a ~{acciones} millones: es la palanca principal del valor por acción, pero no se modela hacia adelante. La red de dos lados es una ventaja que se desvanece, así que el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y su ROIC actual (Damodaran no publica un promedio útil para su industria). Sin ventaja, la Base valdría {s_roic}."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}. La bottom-up desapalancada de servicios financieros no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, la referencia sectorial es la beta del patrimonio (~0,97), con la que el DCF técnico sube. La Base, con la beta de la hoja, queda del lado prudente. El costo de capital va de {wacc0} a {waccT}; un punto menos lleva la Base a {s_k_lo}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB} —casi tanto, porque el checkout de marca pierde captura desde hace años sin señales de reactivación—, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo cercano a la Disrupción ({vC}). O el mercado ve a PayPal como un procesador de bajo margen, o descuenta un riesgo que las historias no capturan. Como en INTU y LULU, esa distancia merece una explicación antes de cualquier decisión."
+  ]
+ ]
 }

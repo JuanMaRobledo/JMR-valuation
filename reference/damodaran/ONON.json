@@ -263,5 +263,27 @@
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
+ ],
+ "justificacion": [
+  [
+   "Crecimiento: alto, porque todavía es una marca chica.",
+   "On es una marca suiza de calzado y ropa deportiva premium que pasó de CHF 725 millones de ventas en 2021 a CHF 3.014 millones en 2025, casi sin descuentos y con 45,7% de venta directa. Ganó participación en running mientras Nike la perdía, y se expande a tenis, outdoor, ropa y Asia. En el Investor Day de septiembre de 2026 fijó metas a 2029: crecimiento «high-teens» y EBITDA ajustado de al menos 22%. La Base adopta una versión algo más prudente de esas metas: mayoristas de 14% a 10%, directo de 22% a 14%; {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de su tamaño lo lograron, pero On ya está en ese grupo desde 2021 y su participación global es baja. Una advertencia: en el 2T26 creció 21,6% a tipo constante pero 13,5% en francos; el franco fuerte resta ~8 puntos. La Conservadora ({cagrB}) es el enfriamiento del ciclo de marca; la Disrupción ({cagrC}), una moda que pasa; la Optimista ({cagrD}), On como marca deportiva global. Si el crecimiento a tipo constante baja de 10%, la Base se cae."
+  ],
+  [
+   "Margen: por debajo de la meta de la empresa.",
+   "El margen operativo subió a 13,8% LTM con un margen bruto en alza (65,4% en el 2T26) pese a los aranceles. La Base usa {mA}, por debajo de la meta de EBITDA ajustado de 22%, porque ese EBITDA excluye depreciación y compensación en acciones. La Conservadora usa {mB}, la Disrupción {mC} y la Optimista {mD}. Bajo NIIF 16 los arrendamientos ya están en la deuda. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}. Un margen bruto por debajo de 60% o descuentos crecientes invalidarían la Base."
+  ],
+  [
+   "Reinversión: poco capital, ninguna barrera.",
+   "On terceriza la producción (Vietnam, Indonesia) y casi no necesita capital: la hoja usa un ventas/capital de {s2c1}× (~US${cap1} por dólar de ventas nuevas). Tiene CHF 1.206 millones de caja sin deuda financiera y anunció su primera recompra. Pero una marca de cuatro años en un sector de modas no tiene una ventaja demostrada, así que el ROIC después del año 10 es el costo de capital ({roicT}): el crecimiento posterior no suma valor. Por eso el crecimiento terminal casi no cambia el resultado ({s_tg_lo} y {s_tg_hi}): On vale por los próximos diez años."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}; la bottom-up de calzado reapalancada da {betabu}, con la que el DCF técnico sube. Una marca joven tiene más riesgo que el promedio del sector, pero ese riesgo (el ciclo de moda) está mejor capturado en la Conservadora y la Disrupción que en la beta; la Base, con la beta de la hoja, queda del lado prudente. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: la acción cayó de ~US$55 a ~US$30 por el franco, los aranceles y el temor a un ciclo de moda, y el mercado paga algo entre la Conservadora ({vB}) y el esperado. Las acciones se fijan en {acciones} millones; la recompra no se modela."
+  ]
  ]
 }

@@ -272,5 +272,27 @@
   "capital_ventas": 0.0242917080396228,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: un tropiezo o el fin del poder de precio.",
+   "Zoetis es la mayor empresa de salud animal del mundo: medicamentos, vacunas y diagnósticos para mascotas (~2/3 de las ventas) y animales de producción. Durante una década fue un compuesto casi perfecto, con franquicias crónicas que se renuevan cada mes (dermatología con Apoquel y Cytopoint, dolor con Librela y Solensia, parasiticidas con Simparica). En 2026 varias franquicias se debilitaron a la vez: en el 2T26 las ventas cayeron 0,2% y mascotas en EE.UU. 11%, por demanda más débil, competencia, genéricos de Cerenia y Convenia y menores ventas de Librela. La Base es la tesis de la empresa: 2026 es transición y la cartera nueva devuelve el crecimiento (mascotas de 1% a 6%, producción 3-4%): {g1A} el primer año y {cagrA} compuesto, algo común (~{tbA} de empresas de su tamaño lo lograron). La Conservadora ({cagrB}) es una erosión prolongada de las franquicias; la Disrupción ({cagrC}), genéricos y competencia generalizados; la Optimista ({cagrD}), una recuperación fuerte. La caída simultánea en varias franquicias apunta a un problema competitivo más que a un mal año; si mascotas EE.UU. sigue cayendo en el 3T y el 4T, la Conservadora gana peso."
+  ],
+  [
+   "Margen: excepcional, y por eso frágil.",
+   "El margen operativo se mantuvo en 36-38% con ventas planas: poder de precio y costos flexibles. La Base lo mantiene ({mA}). Es un margen excepcional para cualquier empresa, y la mezcla lo hace frágil: las mascotas son el negocio más rentable, así que si la competencia obliga a bajar precios ahí, el margen cae rápido. La Conservadora usa {mB}, la Disrupción {mC} y la Optimista {mD}. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}. Un margen de 33% o menos invalidaría la Base."
+  ],
+  [
+   "Reinversión y ventaja.",
+   "Zoetis invierte US$620-730 millones al año (plantas de biológicos) y US$722 millones en I+D; la hoja usa un ventas/capital de {s2c1}× (~US${cap1} por dólar de ventas nuevas). En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con la deuda subiendo a US$9.042 millones: una apuesta de la gerencia a que el tropiezo es temporal. La ventaja —patentes que se renuevan, relación con los veterinarios, escala— sostuvo un ROIC de 26-29%, así que la Base conserva {roicT} después del año 10, el promedio de la industria (menor que el actual). Si la ventaja se perdiera, la Base valdría {s_roic}; por eso la Conservadora y la Disrupción usan el costo de capital, y explican la distancia entre la Base y el esperado."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}; la bottom-up farmacéutica reapalancada con la deuda de Zoetis da {betabu}. La salud animal suele ser menos riesgosa que la farmacéutica humana (menos riesgo de ensayos y de reembolsos), así que la beta de la hoja es defendible, pero la deuda creciente apoya subirla algo: la Base queda del lado optimista en ese punto. El costo de capital va de {wacc0} a {waccT}; un punto más lleva la Base a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA} y la Conservadora {pB}, casi lo mismo, por la caída simultánea de varias franquicias. La Disrupción pesa {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo apenas por encima de la Conservadora ({vB}), es decir, ya descuenta una erosión prolongada. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+  ]
+ ]
 }

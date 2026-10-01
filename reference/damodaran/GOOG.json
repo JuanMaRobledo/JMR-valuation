@@ -313,5 +313,27 @@
   "capital_ventas": 0.03347289335380817,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: una máquina madura y un segundo motor.",
+   "Alphabet son dos negocios. Google Services (Búsqueda, YouTube, Android) genera ~80% de los ingresos y es una máquina publicitaria madura; Google Cloud creció 82% en el 2T26 (US$24.800 millones en el trimestre) por la demanda de cómputo para IA. La Base les da trayectorias distintas: Services de 10% bajando a 6%, Cloud de 45% bajando a 15%. El total es {g1A} el primer año y {cagrA} compuesto. Es una cifra exigente para una empresa de ~US$450.000 millones de ventas —solo ~{tbA} de las empresas de ese tamaño lo lograron—, pero Alphabet es una excepción probada: creció 14-15% en 2024-2025 y 24% en el 2T26. Antes de la revisión del 30-sep-2026 la hoja suponía mucho menos (11% y 7%), por debajo del ritmo real. La Conservadora ({cagrB}) es la Búsqueda erosionada por la IA conversacional; la Disrupción ({cagrC}), remedios antimonopolio y una guerra de precios en IA; la Optimista ({cagrD}), Alphabet como plataforma dominante de IA. Si Search crece 3% o menos, la Base deja de sostenerse."
+  ],
+  [
+   "Margen: escala de Cloud contra depreciación de la IA.",
+   "El margen operativo subió de 27,4% (2023) a ~33% y fue 34% en el 2T26, con Cloud ya rentable. La Base usa {mA}. Se cruzan dos fuerzas: la escala de Cloud sube el margen, y la depreciación del capex de IA y el costo de servir respuestas generativas en la Búsqueda lo bajan. La Base supone que se compensan con una mejora leve; el rango de las historias va de {mC} (remedios y guerra de precios) a {mD}. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}."
+  ],
+  [
+   "Reinversión: el supuesto que más cambió.",
+   "El capex se triplicó en dos años (US$91.447 millones en 2025) y el flujo libre cayó de US$71.236 millones a US$14.612 millones; para 2026 la guía es de US$195-205 mil millones. Por eso la hoja pasó a un ventas/capital de {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital, el triple que antes. La versión anterior (2,5 y 2) suponía una reinversión que era una fracción del gasto real. La Optimista usa {s2cD}× porque crecer tanto en Cloud exige aún más centros de datos. Todo depende de que ese capital rinda por encima del costo de capital; la demanda de Cloud (+82%) es la mejor evidencia a favor, y un capex que sube sin que aceleren los ingresos sería la señal en contra. Después del año 10 la Base conserva un ROIC de {roicT}, el promedio de la industria: escala y efectos de red en búsqueda, YouTube y Android sostuvieron un ROIC de 24-31% durante años. Si esa ventaja se perdiera, la Base caería a {s_roic}."
+  ],
+  [
+   "Descuento.",
+   "La beta de la hoja es {beta}. La bottom-up de Software (Internet) da {betabu}, pero ese grupo son 29 empresas pequeñas y volátiles que no representan a Alphabet; ponderando publicidad (~82% de ingresos) y software sale ~1,07, la que usa la hoja. El riesgo de Alphabet está en los flujos —IA y regulación—, no en la tasa. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo; un punto más de tasa lleva la Base a {s_k_hi}."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA}, cerca del precio ({precio}); el esperado, {ve}, es menor porque la Conservadora y la Disrupción suman 40% y en ambas la ventaja se pierde. La evidencia en contra de la Base es el capex: crece más rápido que los ingresos y el flujo libre cayó ~80% en 2025. Si la demanda de IA se enfría, la Base se sostiene en ingresos pero no en retorno sobre el capital. Los dos juicios antimonopolio siguen en apelación. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+  ]
+ ]
 }

@@ -296,5 +296,27 @@
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
+ ],
+ "justificacion": [
+  [
+   "Crecimiento: una escasez regulada, no una apuesta de expansión.",
+   "Afya vive de que el Ministerio de Educación limita las plazas de Medicina en Brasil: cada plaza autorizada es una matrícula de seis años con precio alto y más demanda que oferta, y el grado en Medicina explica ~88% de los ingresos. Por eso la Base no supone un salto, sino que el negocio siga como en 2024-2026: el grado crece 7% el primer año y baja a 5% en el quinto, la educación continua de 6% a 5% y las soluciones digitales para médicos entre 5% y 8%. El resultado es {g1A} el primer año y {cagrA} anual compuesto en cinco años. La evidencia está en el 1S26 (6-K): grado +7% y Medicina +6,5% en reales, en el piso de la guía de 7-11%. Elegimos el piso y no el centro de la guía porque el primer semestre ya mostró que el rango alto no se está cumpliendo; tampoco extrapolamos el +27,6% de 2023, que fue comprado. La visión externa respalda que no es una cifra heroica: ~{tbA} de las empresas de su tamaño crecieron al menos eso en cinco años. La Conservadora ({cagrB}) supone que el precio real de la matrícula deja de subir; la Disrupción ({cagrC}) que el gobierno abre plazas y el precio cae; la Optimista ({cagrD}) que los campus nuevos maduran y lo digital despega. Si en 2027 el grado en Medicina crece 4% o menos en reales, la Base pierde sustento. Un punto que esta valoración deja fuera a propósito: la fusión anunciada con Yduqs (sep-2026). Se valora Afya sola, que es lo que vuelve a importar si CADE o las asambleas la frenan."
+  ],
+  [
+   "Margen: el nivel de hoy, no uno mejor.",
+   "El margen EBIT subió de 26,7% a 32,8% en dos años porque las plazas compradas maduraron: una plaza nueva tiene pocos alumnos los primeros años y los costos del campus ya están. La Base usa {mA} de objetivo, prácticamente el margen actual; no supone una mejora adicional porque la mezcla empuja en contra (educación continua y digital, que crecen más, tienen menos margen) y porque el 1S26 trajo 190 pb menos de EBITDA ajustado por inversión en producto. Si esa compresión fuera permanente, la Conservadora ({mB}) se vuelve más probable; la Disrupción ({mC}) es la caída de precio que traería una apertura masiva de plazas, y la Optimista ({mD}) los campus maduros sin la presión de mezcla. Restar dos puntos al margen objetivo lleva la Base a {s_m_lo}."
+  ],
+  [
+   "Reinversión y retorno: crecer en educación presencial cuesta capital.",
+   "Para crecer Afya necesita campus, hospitales-escuela y, a menudo, comprar plazas con pagos diferidos. El capex fue de US$49-73 millones al año, ~10% de las ventas. La hoja usa un ventas/capital de {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} y ~US${cap2} de capital. Es una cifra prudente para educación presencial, pero es una hipótesis de la hoja, no un dato reportado: si el crecimiento viene de comprar plazas, cada punto de crecimiento cuesta más de lo que supone el DCF, y el supuesto debe tratarse como provisional. Después del año 10 la Base conserva un ROIC de {roicT}: las licencias de Medicina son una barrera real (el regulador decide cuántas plazas hay), y el ROIC ha estado en 12-16% desde 2022, apenas por encima del costo de capital. Por eso el ROIC terminal se limita al actual y no se eleva al de la industria. Si el ROIC terminal fuera igual al costo de capital —lo que pasaría si se liberan plazas— la Base caería a {s_roic}."
+  ],
+  [
+   "Descuento: el riesgo es Brasil, y ya está en la tasa.",
+   "El costo de capital empieza en {wacc0} y termina en {waccT}. Es alto porque incluye la prima de riesgo país de Brasil: tasa libre de riesgo {rf}, beta {beta} y prima de riesgo {erp}. La beta bottom-up del sector educación reapalancada con la deuda de Afya da {betabu}, casi igual, así que la tasa no es el punto débil. Lo que no hacemos es contar el riesgo dos veces: si el real se deprecia o cambian las tasas, eso ya está en el costo de capital, y las historias no recortan además los flujos por el mismo motivo. Un punto más de tasa lleva la Base a {s_k_hi}; un punto menos, a {s_k_lo}. El crecimiento perpetuo es {tgA}, igual a la tasa libre de riesgo de la hoja, y el valor terminal explica {terminal} del valor operativo de la Base."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA} porque es la continuación de lo que se ve; la Conservadora {pB} porque el precio real de la matrícula no puede subir para siempre y el 1S26 ya estuvo en el piso de la guía; la Disrupción {pC} es el riesgo regulatorio, poco probable pero el único que rompe la tesis; la Optimista {pD} exige que la madurez de los campus y lo digital aceleren. El DCF Base es {vA} y el esperado {ve}; la diferencia entre ambos mide cuánto pesan los desenlaces malos. Las acciones se mantienen en {acciones} millones en todas las historias. La salvedad mayor no está en el modelo sino fuera de él: si la fusión con Yduqs se cierra, el valor relevante pasa a ser el del canje, y esta valoración standalone deja de ser la referencia."
+  ]
  ]
 }

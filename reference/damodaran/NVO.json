@@ -333,5 +333,27 @@
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
+ ],
+ "justificacion": [
+  [
+   "Crecimiento: el volumen sube, el precio baja.",
+   "Novo Nordisk creó el mercado de los GLP-1 (Ozempic, Wegovy, Rybelsus) y entre 2022 y 2024 creció 25-31% al año. Ahora vive una transición: Eli Lilly le quitó el liderazgo en obesidad en EE.UU., el precio realizado cae más rápido de lo que crece el volumen (autopago a US$149-299 al mes, Medicare desde julio de 2026), la semaglutida enfrenta genéricos fuera de EE.UU. y las insulinas declinan. En el 1S26 las ventas ajustadas crecieron solo 2% a tipo de cambio constante. La Base supone que la obesidad sigue creciendo (5% y luego 7-10%), que los GLP-1 para diabetes caen 8% el primer año y se estabilizan, y que las insulinas bajan 5% al año: {g1A} el primer año y {cagrA} compuesto, ventas casi planas. No es una cifra exigente (~{tbA} de empresas de su tamaño lo lograron): el riesgo de Novo no es de crecimiento sino de precio. La Conservadora ({cagrB}) es una guerra de precios con Lilly y genéricos; la Disrupción ({cagrC}), la pérdida de relevancia frente a Lilly y los orales; la Optimista ({cagrD}), que la próxima generación (CagriSema, amicretin, Wegovy en pastilla) recupere participación. Si 2027 no crece a tipo constante, la Conservadora pasa a ser la central."
+  ],
+  [
+   "Margen: bajar de 44% a 40%.",
+   "El margen operativo bajó de 44% a ~41% por precios, reestructuración y la integración de las plantas de Catalent. El modelo capitaliza el I+D (vida de {rd_vida} años), por eso el margen del primer año es {margenY1}. La Base supone que converge a {mA} en {conv} años: el segmento de obesidad y diabetes todavía tiene ~52% de margen, pero el precio en EE.UU. baja. La Conservadora usa {mB} y la Disrupción {mC}. Bajo NIIF 16 los arrendamientos ya están en la deuda y no hay ajuste adicional. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}. Un margen de 36% o menos invalidaría la Base."
+  ],
+  [
+   "Reinversión: capacidad comprada para una demanda que cambió de precio.",
+   "Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y la compra de tres plantas de llenado por US$11.700 millones. La hoja usa un ventas/capital de {s2c1}× en los años 1–5 —cada dólar de ventas nuevas exige ~US${cap1} de capital, muy intensivo— y {s2c2}× después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: es el mayor riesgo de destrucción de valor. El ROIC bajó de 87% a ~25%: la ventaja (patentes y escala de manufactura) se desvanece, así que después del año 10 la Base usa {roicT}, el punto medio entre el costo de capital y la industria. Sin ventaja, la Base valdría {s_roic}."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}; la bottom-up de farmacéuticas reapalancada da {betabu}, una diferencia menor: el riesgo está en el precio de los GLP-1, no en la tasa. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo. Un punto más de tasa lleva la Base a {s_k_hi}."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga casi lo mismo que la Base. La evidencia en contra es que en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja. Los datos de CagriSema y amicretin frente a tirzepatida son el evento que más puede mover las probabilidades. Las acciones se fijan en {acciones} millones."
+  ]
  ]
 }

@@ -329,5 +329,27 @@
   "capital_ventas": 0.024730612823390195,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: una cartera amplia después de un ciclo de producto excepcional.",
+   "Entre 2023 y 2025 Boston Scientific creció 12-20% al año, pero eso fue un ciclo de producto (la ablación por campo pulsado FARAPULSE y el cierre de orejuela Watchman) más compras. En el 2T26 ambos productos frenaron en EE.UU. a +3% al llegar Medtronic y Johnson & Johnson, y el orgánico total bajó a 7%. La Base parte de ahí: Electrofisiología crece 10% y baja a 8%, Watchman entre 8% y 9%, el resto de Cardiovascular y MedSurg entre 5% y 6%. El resultado es {g1A} el primer año y {cagrA} compuesto. No extrapolamos el 20% de 2025 porque no es una tasa base útil: fue un producto nuevo sin competencia. Tampoco suponemos que la desaceleración siga, porque la cartera es amplia y los mercados crecen por envejecimiento. La visión externa dice que ~{tbA} de las empresas de su tamaño lo lograron. La Conservadora ({cagrB}) es el campo pulsado convertido en commodity; la Disrupción ({cagrC}), un tropiezo clínico que hace caer Electrofisiología; la Optimista ({cagrD}), que 2026 fue un ajuste temporal. Si EE.UU. repite ~3% en el 3T y el 4T, la Conservadora debería pesar más que la Base. La compra pendiente de Penumbra (~US$14.500 millones) no está en esta valoración."
+  ],
+  [
+   "Margen: lo que dejan la amortización y las compras.",
+   "El margen GAAP subió de 4,9% en 2016 a 19,8% LTM, pero sigue cargado por ~US$930 millones al año de amortización de intangibles, litigios y reestructuración. La Base usa {mA}: supone que parte de esos cargos se diluye con la escala. El rango de las historias —{mC} a {mD}— refleja una pregunta concreta: si la empresa deja de comprar, la amortización baja y el margen sube; si sigue comprando (Penumbra y otras), el margen GAAP se queda cerca de 20%. Restar dos puntos al objetivo lleva la Base a {s_m_lo}; sumarlos, a {s_m_hi}. Lo invalidaría un margen GAAP por debajo de 18% en 2027."
+  ],
+  [
+   "Reinversión: el crecimiento se compra, y eso decide el ROIC.",
+   "La reinversión es alta: I+D de ~10% de las ventas, capex de US$700-900 millones y compras frecuentes (Axonics, Bolt, Nalu y ahora Penumbra). La hoja usa un ventas/capital de {s2c1}× y {s2c2}×, que ya supone que parte del crecimiento se compra: cada dólar de ventas nuevas exige ~US${cap1} de capital. Incluida la plusvalía de esas compras, el ROIC fue 4-9% en 2021-2025, por debajo del costo de capital. Por eso la Base no conserva retornos excedentes después del año 10: el ROIC terminal es el costo de capital ({roicT}). Es el supuesto por defecto de Damodaran cuando no hay una ventaja demostrada: el crecimiento posterior no suma ni resta valor. Se probó un ROIC terminal de 11,1% y se revirtió el 30-sep-2026 por no cumplir la regla. Con Penumbra el capital invertido sube ~US$14.500 millones; el retorno de esa compra dirá si el crecimiento de los próximos años crea valor."
+  ],
+  [
+   "Descuento y terminal.",
+   "El costo de capital empieza en {wacc0} y termina en {waccT}, con beta {beta}; la bottom-up de Healthcare Products reapalancada da {betabu}, prácticamente igual. El riesgo de esta empresa no está en la tasa sino en la competencia en Electrofisiología, y por eso va en las historias. El crecimiento perpetuo es {tgA} y el valor terminal explica {terminal} del valor operativo de la Base. Como el ROIC terminal ya es el costo de capital, mover el crecimiento terminal casi no cambia el valor ({s_tg_lo} y {s_tg_hi}): crecer a perpetuidad sin retorno excedente no crea valor."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA} porque es lo que muestra el 2T26; la Conservadora {pB} es el riesgo real, con tres competidores bajando precio en campo pulsado; la Disrupción solo {pC}, un tropiezo clínico o de producto; la Optimista {pD}, la lectura de que la caída de 2026 fue de inventario y adopción. El DCF Base es {vA} y el esperado {ve}, con el precio en {precio}. Los arrendamientos son pequeños aquí (+{arr_pp} pp de margen) y no cambian la lectura. Las acciones se fijan en {acciones} millones; la emisión o la deuda para Penumbra no están modeladas."
+  ]
+ ]
 }

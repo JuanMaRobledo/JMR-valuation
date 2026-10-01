@@ -279,5 +279,27 @@
   "capital_ventas": 0.03835058832032581,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: excepcional hoy, la tasa base dice que no dura.",
+   "Palantir vende plataformas (Gotham, Foundry, Apollo, AIP) que integran datos, modelos de IA y decisiones donde la seguridad y la trazabilidad importan: defensa, inteligencia y grandes empresas. Pasó de crecer 17% en 2023 a 56% en 2025 y 93% en el 2T26, con U.S. Commercial +149% en un trimestre; la guía 2026 es de US$8.150 millones. La Base parte de ese ritmo y lo desacelera con la escala: Gobierno de 55% a 16%, Comercial de 90% a 18%; {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de su tamaño lo lograron: Palantir está hoy en ese 1%, pero casi ninguna sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. Por eso la Base desacelera más rápido que la hoja original (48% anual). La Conservadora ({cagrB}) es la normalización en un software de alta calidad; la Disrupción ({cagrC}), la comoditización con contratos perdidos; la Optimista ({cagrD}), Palantir como sistema operativo de la IA empresarial. No hay evidencia contraria en los resultados —todo acelera—; la evidencia contraria es externa: la historia de las empresas de software que crecieron así."
+  ],
+  [
+   "Margen: apalancamiento operativo, menos la compensación en acciones.",
+   "El margen operativo saltó de 5% en 2023 a 43% LTM porque servir a un cliente adicional cuesta poco (margen bruto ~85%). La Base usa {mA} (con el I+D capitalizado y los arrendamientos como deuda). La compensación en acciones es alta y es un costo real para el accionista que este margen no captura: las acciones se fijan en {acciones} millones y 5% más acciones llevarían la Base a {s_acc}. La Conservadora usa {mB}, la Disrupción {mC} y la Optimista {mD}."
+  ],
+  [
+   "Reinversión y ventaja: casi sin capital, sin ventaja demostrada.",
+   "Palantir casi no necesita capital (capex de US$34 millones en 2025; ventas/capital de {s2c1}×). Su reinversión real son los ingenieros que despliega con los clientes y el I+D; el crecimiento no está limitado por el capital sino por convertir pilotos en contratos. Tiene costos de cambio en gobierno, pero su ROIC con plusvalía estuvo cerca del costo de capital y la serie limpia es corta, así que el ROIC después del año 10 es el costo de capital ({roicT}): no se le reconoce una ventaja demostrada. Se revisará cuando haya tres años de datos limpios."
+  ],
+  [
+   "Descuento.",
+   "Hasta el 30-sep-2026 la hoja usaba una beta de regresión de 1,62; hoy usa la bottom-up de software sin deuda, {beta}. La dependencia de contratos públicos y el gobierno controlado por los fundadores suben el riesgo, pero ese riesgo está más en los flujos que en la tasa. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}. El precio, {precio}, está muy por encima incluso de la Optimista ({vD}): para justificarlo haría falta crecer más rápido y durante más tiempo que en cualquier historia, con un margen aún mayor. El antiguo DCF técnico de la hoja ({tecnico}) era más alto porque suponía 48% anual. La diferencia con el precio no se explica con supuestos razonables de la Base; es la lectura más importante de esta valoración."
+  ]
+ ]
 }

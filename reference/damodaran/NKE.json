@@ -299,5 +299,27 @@
   "capital_ventas": 0.062438423034867976,
   "cierre": "2026-05-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: estabilizar antes de crecer.",
+   "Nike, la marca deportiva más grande del mundo, perdió participación entre 2020 y 2024 al apostar por la venta directa y exprimir sus franquicias de estilo de vida (Dunk, Air Force 1, Jordan 1) hasta saturarlas; On, Hoka y otras marcas de running ocuparon el espacio. Con Elliott Hill como CEO desde fines de 2024, Nike volvió a los mayoristas y reorientó el producto hacia el deporte. FY2026 terminó plano (−2% sin divisas) tras −9,8% en FY2025. La Base supone un año más de caída leve en calzado y luego 4-5%: {g1A} el primer año y {cagrA} compuesto, algo que lograron ~{tbA} de las empresas de su tamaño. La hoja no pide crecimiento: pide recuperar margen. La Conservadora ({cagrB}) prolonga la pérdida de relevancia; la Disrupción ({cagrC}), aranceles y competencia estructural; la Optimista ({cagrD}), producto nuevo exitoso. Si los ingresos sin divisas son negativos en FY27, la Base pierde sustento."
+  ],
+  [
+   "Margen: el supuesto que decide el valor.",
+   "El margen operativo cayó de 12,3% (FY24) a ~8% por rebajas para limpiar inventario, desapalancamiento y aranceles incrementales de ~15%; el margen bruto subyacente fue 40,8% en FY26 frente a 43-46% histórico. La Base supone volver a 11% en siete años ({mA} en el modelo, con los arrendamientos como deuda). Es la apuesta central: pasar de 6% a 11% vale más que cualquier escenario razonable de ventas, y por eso es el supuesto más sensible (dos puntos mueven la Base a {s_m_lo} o {s_m_hi}). La Conservadora se queda en {mB}, la Disrupción en {mC} y la Optimista vuelve a {mD}. Un margen bruto por debajo de 40% invalidaría la Base."
+  ],
+  [
+   "Reinversión: el flujo vuelve con el margen, no con más inversión.",
+   "Nike invierte US$430-810 millones al año y la hoja usa un ventas/capital de {s2c1}× (cada dólar de ventas nuevas exige ~US${cap1}). El flujo libre cayó a US$1.203 millones en FY26 por menor resultado y capital de trabajo; su recuperación depende del margen, no de invertir más. El ROIC bajó de 47% a ~15%: la marca sigue siendo una ventaja, pero se está desvaneciendo. Por eso el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria, limitado al actual. Si la ventaja desapareciera, la Base valdría {s_roic}."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}; la bottom-up de calzado reapalancada da {betabu}, con una diferencia de valor menor. El riesgo de Nike está en el margen, no en la tasa. El costo de capital va de {wacc0} a {waccT}; un punto más lleva la Base a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}: es la recuperación que describe la empresa. La Conservadora pesa {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga casi exactamente el esperado, es decir, duda de la recuperación tanto como estas probabilidades. La evidencia en contra de la Base es que el flujo libre está en mínimos y la dirección describe un consumidor presionado; si el margen bruto no sube en FY27, la Conservadora gana peso. Las acciones se fijan en {acciones} millones."
+  ]
+ ]
 }

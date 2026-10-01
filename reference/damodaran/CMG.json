@@ -266,5 +266,27 @@
   "capital_ventas": 0.40601735357018537,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: las aperturas siguen; el tráfico es la duda.",
+   "Chipotle crece por dos motores. El primero son las aperturas: ~8% más locales al año, la mayoría con Chipotlane (ventanilla para pedidos digitales), y ese motor sigue intacto (guía de 350-370 aperturas en 2026). El segundo son las ventas comparables, y ahí está el problema: en el 2T26 fueron +2,2%, con tráfico de solo +1,0%, y la guía del 3T26 es ~+1%, antes del brote de salmonella de agosto. La Base suma ambos: 8% el primer año bajando a 6% en el quinto ({cagrA} compuesto). Es, en esencia, aperturas más comparables casi planas. No usamos el 14% de 2023-2024 porque se apoyaba en comparables que ya no existen. La visión externa da ~{tbA} de empresas de su tamaño con ese crecimiento: plausible justamente porque las aperturas son un motor que muchas empresas no tienen. La Conservadora ({cagrB}) extiende la debilidad del consumidor; la Disrupción ({cagrC}) es una caída del tráfico por saturación o por una crisis sanitaria como la de 2015-2016; la Optimista ({cagrD}) es el regreso del tráfico. Si las comparables del 3T26 y el 4T26 son negativas, la Conservadora pasa a ser la más probable."
+  ],
+  [
+   "Margen: volver al máximo de 2024, con arrendamientos dentro.",
+   "El margen operativo reportado (con el alquiler como gasto) pasó de 15,8% a 16,9% en 2024 y bajó a 14,7% LTM por alimentos, aranceles y salarios. La Base supone volver a 16% en base reportada; en el modelo eso es {mA}, porque desde el 1-oct-2026 los arrendamientos se tratan como deuda y el alquiler deja de restar del EBIT (+{arr_pp} pp). Volver al máximo es posible con apalancamiento operativo si vuelve el tráfico; sin tráfico, subir precios choca con la elasticidad del cliente. Por eso el rango es amplio: {mC} en la Disrupción, {mB} en la Conservadora y {mD} en la Optimista. Es el supuesto que más mueve la Base después de la tasa: dos puntos de margen la llevan a {s_m_lo} o {s_m_hi}. Lo invalidaría un margen a nivel restaurante por debajo de 24%."
+  ],
+  [
+   "Reinversión: cada local se paga con caja, y los locales se alquilan.",
+   "Chipotle no franquicia en EE.UU.: cada local nuevo se paga con caja propia (capex de US$560-670 millones al año). La hoja original usaba un ventas/capital de 2,6, pero al tratar los arrendamientos como deuda el capital incluye también los locales alquilados (~US${arr_vp} millones de valor presente), y el ventas/capital baja a {s2c1}×: cada dólar de ventas nuevas exige ~US${cap1} de capital propio más arrendado. Es más exigente, pero es lo correcto: un restaurante nuevo necesita su local aunque sea alquilado. El retorno sigue siendo alto —los locales se pagan en 2-3 años, ~60% cash-on-cash al segundo año— y por eso el crecimiento crea valor. Después del año 10 la Base conserva un ROIC de {roicT}, el promedio de la industria (por debajo del ROIC actual de ~23%), porque la marca demostró que sobrevive a una crisis sanitaria. Si se perdiera esa ventaja y el ROIC terminal fuera el costo de capital, la Base bajaría a {s_roic}: es el supuesto con más efecto después de la tasa."
+  ],
+  [
+   "Descuento, terminal y el peso de la perpetuidad.",
+   "El costo de capital va de {wacc0} a {waccT}, con beta {beta}. La bottom-up de restaurantes reapalancada con la deuda por arrendamientos da {betabu}, menor; la de la hoja es prudente y defendible para una cadena con ~US$5.000 millones de pasivo por alquileres. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo: la mayor parte del valor de Chipotle está más allá del año 10, lo que es lógico para un negocio que todavía abre locales pero hace al resultado muy sensible a la tasa (un punto más la lleva a {s_k_hi}; uno menos, a {s_k_lo})."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}; la Conservadora {pB}, cinco puntos más que antes, porque la guía del 3T26 quedó en el piso de la Base y el brote de agosto añade presión; la Disrupción solo {pC}, porque el brote vino de un proveedor compartido con Qdoba y la CDC no ve riesgo en curso; la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}. La diferencia con el precio es grande y es la pregunta central: el mercado está pagando por algo más cercano a la Optimista. Las recompras (US$2.783 millones LTM) no se modelan: las acciones se fijan en {acciones} millones."
+  ]
+ ]
 }
