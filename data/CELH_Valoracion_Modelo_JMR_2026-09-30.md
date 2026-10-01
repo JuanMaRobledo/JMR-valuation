@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$25,35 por acción.** Complemento: DCF esperado por probabilidades US$21,16; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$10,25–US$32,88; precio con MOS 35% sobre el esperado: US$13,75; precio de referencia US$27,42. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$13,74), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$18,41 por acción.** Complemento: DCF esperado por probabilidades US$14,21; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$3,30–US$25,93; precio con MOS 35% sobre el esperado: US$9,24; precio de referencia US$27,42. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$13,74), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Alani lidera y Celsius se estabiliza** (valor principal) | 40% | US$25,35 | US$10,14 |
-| Conservadora · Alani crece, Celsius sigue cediendo | 35% | US$17,69 | US$6,19 |
-| Disrupción · Deterioro de los fundamentales: La moda se desgasta | 15% | US$10,25 | US$1,54 |
-| Optimista · Plataforma multimarca | 10% | US$32,88 | US$3,29 |
-| **DCF esperado (complemento)** | 100% | **US$21,16** | |
+| **Base · Alani lidera y Celsius se estabiliza** (valor principal) | 40% | US$18,41 | US$7,36 |
+| Conservadora · Alani crece, Celsius sigue cediendo | 35% | US$10,74 | US$3,76 |
+| Disrupción · Deterioro de los fundamentales: La moda se desgasta | 15% | US$3,30 | US$0,50 |
+| Optimista · Plataforma multimarca | 10% | US$25,93 | US$2,59 |
+| **DCF esperado (complemento)** | 100% | **US$14,21** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$18,12 por acción y los múltiplos, US$21,32 hoy: 18% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$18,41 | US$22,41 | US$20,01 | US$13,75 | US$30,64 |
-| Conservador | US$10,74 | US$18,28 | US$13,76 | US$13,75 | US$19,62 |
-| Optimista | US$25,93 | US$22,94 | US$24,74 | US$13,75 | US$41,77 |
+| Base | US$18,41 | US$22,41 | US$20,01 | US$9,24 | US$30,64 |
+| Conservador | US$10,74 | US$18,28 | US$13,76 | US$9,24 | US$19,62 |
+| Optimista | US$25,93 | US$22,94 | US$24,74 | US$9,24 | US$41,77 |
 
 ## 2. Datos
 

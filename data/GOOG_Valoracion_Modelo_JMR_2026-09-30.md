@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$323,90 por acción.** Complemento: DCF esperado por probabilidades US$275,69; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$133,17–US$425,92; precio con MOS 35% sobre el esperado: US$179,20; precio de referencia US$346,22. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$349,47), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$322,34 por acción.** Complemento: DCF esperado por probabilidades US$274,14; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$131,61–US$424,37; precio con MOS 35% sobre el esperado: US$178,19; precio de referencia US$346,22. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$349,47), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Search resiste y Cloud es el segundo motor** (valor principal) | 40% | US$323,90 | US$129,56 |
-| Conservadora · La IA conversacional erosiona Search | 25% | US$163,90 | US$40,97 |
-| Disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA | 15% | US$133,17 | US$19,98 |
-| Optimista · Gemini y Cloud dominan la plataforma de IA | 20% | US$425,92 | US$85,18 |
-| **DCF esperado (complemento)** | 100% | **US$275,69** | |
+| **Base · Search resiste y Cloud es el segundo motor** (valor principal) | 40% | US$322,34 | US$128,94 |
+| Conservadora · La IA conversacional erosiona Search | 25% | US$162,35 | US$40,59 |
+| Disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA | 15% | US$131,61 | US$19,74 |
+| Optimista · Gemini y Cloud dominan la plataforma de IA | 20% | US$424,37 | US$84,87 |
+| **DCF esperado (complemento)** | 100% | **US$274,14** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$311,55 por acción y los múltiplos, US$244,87 hoy: 21% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$322,34 | US$265,34 | US$288,14 | US$179,20 | US$391,45 |
-| Conservador | US$162,35 | US$214,34 | US$193,54 | US$179,20 | US$248,61 |
-| Optimista | US$424,37 | US$334,97 | US$370,73 | US$179,20 | US$525,30 |
+| Base | US$322,34 | US$265,34 | US$288,14 | US$178,19 | US$391,45 |
+| Conservador | US$162,35 | US$214,34 | US$193,54 | US$178,19 | US$248,61 |
+| Optimista | US$424,37 | US$334,97 | US$370,73 | US$178,19 | US$525,30 |
 
 ## 2. Datos
 
