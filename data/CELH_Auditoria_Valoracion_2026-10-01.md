@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$18,12 | US$18,11 |
-| **DCF Base (valor intrínseco principal)** | US$22,22 | US$22,32 |
-| DCF Conservadora | US$15,48 | US$15,57 |
-| DCF Disrupción | US$8,94 | US$9,01 |
-| DCF Optimista | US$28,84 | US$28,95 |
-| DCF esperado por probabilidades (complemento) | US$18,53 | US$18,62 |
-| Precio con MOS sobre el esperado | US$12,05 | US$12,10 |
+| DCF técnico anterior (caso Base de la hoja) | US$18,12 | US$18,41 |
+| **DCF Base (valor intrínseco principal)** | US$22,22 | US$18,41 |
+| DCF Conservadora | US$15,48 | US$10,74 |
+| DCF Disrupción | US$8,94 | US$3,30 |
+| DCF Optimista | US$28,84 | US$25,93 |
+| DCF esperado por probabilidades (complemento) | US$18,53 | US$14,21 |
+| Precio con MOS sobre el esperado | US$12,05 | US$9,24 |
 
 ## Hallazgos y correcciones
 
@@ -45,6 +45,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 2,00 | 1,98 | Ventas/capital con el capital arrendado: 1/(1/2 + 0.0056), con VP de arrendamientos 17.2 / ventas 3047.3. |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,110 | 0,111 | Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 2.8 / ventas 3047.3). |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,210 | 0,211 | Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 2.8 / ventas 3047.3). |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,170 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | 17,90 | LTM = ejercicio -350.2 + acumulado al 2026-06-30 93.1 − acumulado del año anterior -275.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 
@@ -66,6 +67,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$22,32 (antes US$22,22). El DCF esperado de las cuatro historias, complementario, es US$18,62 (antes US$18,53); precio con margen de seguridad sobre el esperado US$12,10. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$18,41 (antes US$22,22). El DCF esperado de las cuatro historias, complementario, es US$14,21 (antes US$18,53); precio con margen de seguridad sobre el esperado US$9,24. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

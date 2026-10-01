@@ -1,0 +1,14 @@
+{
+ "ticker": "INTU_C46",
+ "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.32,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar."
+  }
+ ]
+}

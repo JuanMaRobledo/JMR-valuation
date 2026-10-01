@@ -383,7 +383,7 @@
   ],
   [
    "Probabilidades y lectura del resultado.",
-   "La Base pesa {pA} porque los datos al consumidor del 2T26 la respaldan; la Conservadora {pB} porque es lo que muestra la factura; la Disrupción {pC} recoge los ciclos conocidos de marcas de energía; la Optimista {pD} exige crecimiento del tercio superior, margen cercano al techo y más compras. El DCF Base es {vA} y el esperado {ve}. La evidencia en contra de la Base es seria: la desaceleración de Alani y la pérdida de participación del 1T al 2T (de 20,9% a 20,1%) es exactamente lo que se vería al comienzo de la Conservadora. Las acciones se fijan en {acciones} millones; una conversión de las preferentes de PepsiCo cambiaría ese número."
+   "La Base pesa {pA} porque los datos al consumidor del 2T26 la respaldan; la Conservadora {pB} porque es lo que muestra la factura; la Disrupción {pC} recoge los ciclos conocidos de marcas de energía; la Optimista {pD} exige crecimiento del tercio superior, margen cercano al techo y más compras. El DCF Base es {vA} y el esperado {ve}. La evidencia en contra de la Base es seria: la desaceleración de Alani y la pérdida de participación del 1T al 2T (de 20,9% a 20,1%) es exactamente lo que se vería al comienzo de la Conservadora. Las acciones son las {acciones} millones ordinarias. Las preferentes de PepsiCo se restan aparte como un derecho separado de US$1.760 millones (valor contable del 10-Q del 2T26, tratamiento provisional): no se suman como acciones convertidas. Si se convirtieran en condiciones distintas, o si se liquidaran por su valor de liquidación (~US$1.135 millones), el valor por acción cambiaría, y por eso este punto sigue abierto."
   ]
  ]
 }

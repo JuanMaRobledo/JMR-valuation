@@ -105,7 +105,7 @@ def run_exact(grid, cases):
           "nopat:d.ebit1t||null,reinversion:d.reinvestment,flujo:fl,tasa:d.wacc,crecimiento:d.growth,margen:d.margin||d.roe,"
           "tasaTerminal:wT,gTerminal:gT,roicTerminal:f?null:(i.roicTerminal>0?i.roicTerminal:wT),"
           "caja:i.cash,deuda:i.debt,minoritarios:i.minorityInterests||0,noOperativos:i.nonOperatingAssets||0,"
-          "opciones:i.optionsValue||0,acciones:i.shares0,probFracaso:i.probFailure||0,nol0:i.nol0||0,"
+          "opciones:i.optionsValue||0,preferentes:i.preferredStock||0,acciones:i.shares0,probFracaso:i.probFailure||0,nol0:i.nol0||0,"
           "impuestoEf:i.taxEffective,impuestoMarg:i.taxMarginal,s2c:i.salesToCapital,s2c2:i.salesToCapital2,"
           "rezago0:i.reinvestLag===0,convergencia:i.convergenceYear,wacc0:i.wacc,margenY1:i.marginY1Base};}"
           "const value=g=>{if(g!=null)i.crecimientoAnios=[g,g,g,g,g];return c.runDCFDetalle(i,i.growthBase,margin,i.growthY1Base,i.marginY1Base).valuePerShare;};"
@@ -147,7 +147,7 @@ def frac_at_least(br: dict, g_nominal: float) -> float:
 # ---------------------------------------------------------------- hoja
 def load_sheet(sid: str):
     sh = get_gspread_client().open_by_key(sid)
-    rng = ["'Input sheet'!A1:D75", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
+    rng = ["'Input sheet'!A1:D80", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
            "'Resumen de Valoración'!A1:U20", "'Cost of capital worksheet'!A1:C70", "'Descuento de múltiplos'!A1:E40",
            "EVEBITDA!A1:J30", "EVFCFF!A1:J30", "PE!A1:J30", "PFCFE!A1:J30", "POCF!A1:J30"]
     titulos = {w.title for w in sh.worksheets()}
@@ -160,7 +160,7 @@ def load_sheet(sid: str):
 
     def cell(s, a):
         col, row = ord(a[0]) - 65, int(a[1:]) - 1
-        g = grid[s]
+        g = grid.get(s, [])
         return g[row][col] if row < len(g) and col < len(g[row]) else None
     return grid, cell
 
@@ -179,7 +179,13 @@ def compute(tk: str) -> dict:
     rec = json.loads(Path(glob.glob(str(DATOS / "valoraciones" / f"{tk}-*.json"))[0]).read_text())
     grid, cell = load_sheet(anc["sheet_id"])
     price = rec.get("precio")
-    dcf = cell("Descuento de múltiplos", "D38") or ((rec.get("descuentoMultiples") or {}).get("dcfHoy") or {}).get("base")
+    # DCF técnico anterior = el DCF propio de la hoja ('Valuation output'!B35, casos Conservador/Base/Optimista de la plantilla).
+    # 'Descuento de múltiplos'!D38 ya no sirve: desde el 1-oct-2026 apunta a la historia Base de «Escenarios e historias».
+    dcf = cell("Valuation output", "B35")
+    if cell("DCF FCFE financiero", "A1") == "DCF FCFE financiero":  # financieras: el DCF de la hoja es el FCFE Base
+        dcf = cell("DCF FCFE financiero", "B42")
+    if not isinstance(dcf, (int, float)):
+        dcf = ((rec.get("descuentoMultiples") or {}).get("dcfHoy") or {}).get("base")
     inp = engine_inputs(cell, grid["Financials Multiples"], price)
     m_base = inp["dcfFinanciero"]["roeBase"] if inp.get("dcfFinanciero") else cell("Input sheet", "B30")
     g_ref = st.mean([x for x in grid["Valuation output"][3][2:7] if isinstance(x, (int, float))])
@@ -189,6 +195,8 @@ def compute(tk: str) -> dict:
     # Referencia de las tablas de sensibilidad y DCF inverso (crecimiento igual en los años 1-5): se calibran contra
     # el DCF de la hoja. Las historias y la tabla de betas no se calibran: el motor reproduce la hoja exactamente.
     ref = run_exact(grid, [{"g": g_ref, "m": m_base}])[0]
+    # Control de integridad: el motor sin cambios debe reproducir el DCF propio de la hoja ('Valuation output'!B35).
+    motor_tecnico = run_exact(grid, [{}])[0]
 
     # riesgo
     rf = cell("Input sheet", "B35")
@@ -353,7 +361,7 @@ def compute(tk: str) -> dict:
             "bu_sector": bu, "rf": rf, "erp": erp, "tasas_base": br, "historias": historias,
             "valor_esperado_beta_hoja": ev_h, "valor_esperado_beta_prop": ev_p, "betas": betas_tab,
             "sensibilidad": sens, "inverso": inverso, "ingresos_ltm": rev0, "sens_base": sens_base, "rd_vida": rd_vida,
-            "rd_ltm": cell("R& D converter", "F8") if rd_vida else None}
+            "rd_ltm": cell("R& D converter", "F8") if rd_vida else None, "motor_tecnico": motor_tecnico}
 
 
 # ---------------------------------------------------------------- nombres visibles (contrato del 1-oct-2026)
@@ -473,7 +481,8 @@ def origen_calculo(r: dict, W) -> None:
         rows.append(["ROIC terminal", agrupa(hs, rt),
                      f"Criterio de ventaja competitiva ({moat.get('ventaja', 'sin clasificar')}). Las historias de erosión igualan el "
                      "retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre."])
-        extra = [(dA["noOperativos"], "activos no operativos"), (dA["minoritarios"], "minoritarios"), (dA["opciones"], "opciones")]
+        extra = [(dA["noOperativos"], "activos no operativos"), (dA["minoritarios"], "minoritarios"), (dA["opciones"], "opciones"),
+                 (dA.get("preferentes", 0), "acciones preferentes")]
         W_extra = "".join(f"; {n} {mn(v)}" for v, n in extra if v)
         rows.append(["Puente al patrimonio", f"Caja {mn(dA['caja'])}; deuda {mn(dA['deuda'])}{W_extra}; acciones {es(dA['acciones'], 1)} millones",
                      "Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución." +
@@ -529,7 +538,8 @@ def origen_calculo(r: dict, W) -> None:
     if fin:
         W.p(f"Ejemplo Base: ({mn(dA['pvFlujos'], 2)} + {mn(dA['pvTerminal'], 2)}) / {es(dA['acciones'], 1)} = {usd(A['valor_beta_hoja'])} por acción.")
     else:
-        signos = [(dA["caja"], "+"), (dA["noOperativos"], "+"), (dA["deuda"], "−"), (dA["minoritarios"], "−"), (dA["opciones"], "−")]
+        signos = [(dA["caja"], "+"), (dA["noOperativos"], "+"), (dA["deuda"], "−"), (dA["minoritarios"], "−"), (dA["opciones"], "−"),
+                  (dA.get("preferentes", 0), "−")]
         ajustes = "".join(f" {sg} {mn(v)}" for v, sg in signos if v)
         fr = (f"[{mn(dA['activosOperativos'], 2)}" if dA["probFracaso"] else f"({mn(dA['pvFlujos'], 2)} + {mn(dA['pvTerminal'], 2)}")
         cierre = "]" if dA["probFracaso"] else ")"
@@ -913,6 +923,8 @@ def calculo_en_prosa(r: dict, W) -> None:
         puente.append(f"menos minoritarios por {_um(d['minoritarios'])} millones")
     if d["opciones"]:
         puente.append(f"menos opciones por {_um(d['opciones'])} millones")
+    if d.get("preferentes"):
+        puente.append(f"menos acciones preferentes por {_um(d['preferentes'])} millones")
     W.p(f"**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por {_um(rev[0])} "
         f"millones. Con el crecimiento de la Base llegan a {_um(rev[5])} millones en el año 5 y a {_um(rev[10])} millones en el "
         f"año 10. A esas ventas se les aplica el margen operativo, que pasa de {pct(m[1])} en el año 1 a {pct(m[10])} al final, y "
@@ -1345,6 +1357,9 @@ def main(tickers):
         if r["spec"].get("md_propio"):
             out_md = REF / f"{tk}_seccion.md"  # hay un documento escrito a mano con ese nombre; no se pisa
         out_md.write_text(head + md)
+        mt = r.get("motor_tecnico")
+        if isinstance(mt, (int, float)) and isinstance(r.get("dcf_base"), (int, float)) and abs(mt - r["dcf_base"]) > 0.01:
+            print(f"{tk:5s} AVISO: el motor da {mt:.2f} y la hoja (DCF técnico: VO B35 o FCFE financiero B42) {r['dcf_base']:.2f}", flush=True)
         print(f"{tk:5s} DCF {r['dcf_base']:.2f} | VE {r['valor_esperado_beta_hoja']:.2f} / {r['valor_esperado_beta_prop']:.2f} | "
               f"beta {r['beta_hoja']:.2f}→{r['beta_prop']:.2f} | " +
               " ".join(f"{h['id']}:{h['valor_beta_hoja']:.1f}" for h in r["historias"]), flush=True)

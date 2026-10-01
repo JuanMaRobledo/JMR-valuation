@@ -15,7 +15,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$11,92 | US$11,92 |
+| DCF técnico anterior (caso Base de la hoja) | US$11,92 | US$11,89 |
 | **DCF Base (valor intrínseco principal)** | US$11,89 | US$11,89 |
 | DCF Conservadora | US$11,14 | US$11,14 |
 | DCF Disrupción | US$9,99 | US$9,99 |
@@ -36,6 +36,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Balance del último 10-Q | Cash Flow Statement L13 |  | 1.429,4 | 1.082,6 | Flujo operativo LTM = 2025 (7.562.431) + 1S26 (1.938.645) − 1S25 (3.451.822) = R$6.049.254 mil / 5.5877 (20-F y 6-K). |
 | Balance del último 10-Q | Cash Flow Statement L22 |  | 0,00 | -431,9 | Flujo de inversión LTM = −2.299.796 − 1.215.583 + 1.101.798 = −R$2.413.581 mil / 5.5877 (20-F y 6-K). Antes 0. |
 | Balance del último 10-Q | Cash Flow Statement L34 | Patrimonio de los accionistas | 0,00 | -740,9 | Flujo de financiación LTM = −4.332.796 − 1.956.893 + 2.149.485 = −R$4.140.204 mil / 5.5877 (20-F y 6-K). Antes 0. |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,140 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | =L13+L22+L34 | Auditoría 1-oct-2026: cambio de caja LTM = operación + inversión + financiación (sin efecto cambiario). Antes −14, un valor de relleno del importador. Inversión y financiación LTM están en 0 en la hoja (no importadas); no afectan al DCF de flujo al accionista. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 

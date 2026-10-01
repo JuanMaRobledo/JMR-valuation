@@ -8,7 +8,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda por arrendamientos (que ahora el modelo trata como deuda, criterio Damodaran) da 0,85, y el DCF Base sube de US$23,86 a US$25,48. Una cadena con un pasivo por arrendamientos de ~US$5.000 millones tiene apalancamiento operativo real; la beta de la hoja, algo mayor que la bottom-up, es prudente y defendible."
+  "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda por arrendamientos (que ahora el modelo trata como deuda, criterio Damodaran) da 0,85, y el DCF Base sube de US$26,02 a US$27,78. Una cadena con un pasivo por arrendamientos de ~US$5.000 millones tiene apalancamiento operativo real; la beta de la hoja, algo mayor que la bottom-up, es prudente y defendible."
  },
  "historias": [
   {
@@ -220,7 +220,7 @@
    "Nuevo brote o tráfico negativo atribuido al caso"
   ]
  ],
- "precio_lectura": "El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 34% por encima del DCF Base (US$23,86) y por encima de la historia Optimista (US$30,77), la más optimista. Con los arrendamientos como deuda (márgenes en base ajustada, +1,3 pp), el DCF inverso pide 8-15% de crecimiento anual en los años 1-5 con márgenes de 16-20%, algo que lograron 13-37% de las empresas de este tamaño; con el margen objetivo de la hoja (18,3% ajustado) y su beta pide 11,8%, bastante más que el 8% de la hoja. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda financiera, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).",
+ "precio_lectura": "El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 38% por encima del DCF Base (US$23,05) y por encima de la historia Optimista (US$30,76), la más optimista. Con los arrendamientos como deuda (márgenes en base ajustada, +1,3 pp), el DCF inverso pide 8-15% de crecimiento anual en los años 1-5 con márgenes de 16-20%, algo que lograron 13-37% de las empresas de este tamaño; con el margen objetivo de la hoja (18,3% ajustado) y su beta pide 11,8%, bastante más que el 8% de la hoja. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda financiera, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).",
  "frase": "Cadena de restaurantes propios con gran economía unitaria y tráfico débil",
  "confianza": "Media: las aperturas son predecibles; el tráfico y el margen no",
  "cambiaria": "Comparables y tráfico de los próximos dos trimestres; margen operativo",

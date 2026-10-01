@@ -15,7 +15,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$36,39 | US$36,90 |
+| DCF técnico anterior (caso Base de la hoja) | US$36,39 | US$36,34 |
 | **DCF Base (valor intrínseco principal)** | US$35,35 | US$36,34 |
 | DCF Conservadora | US$28,07 | US$29,03 |
 | DCF Disrupción | US$21,76 | US$22,69 |
@@ -49,6 +49,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 1,20 | 1,17 | Ventas/capital con el capital arrendado: 1/(1/1.2 + 0.0247), con VP de arrendamientos 519.2 / ventas 20996. |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,200 | 0,202 | Margen en base ajustada por arrendamientos: + 0.25 pp (ajuste del EBIT 52.1 / ventas 20996). |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,270 | 0,272 | Margen en base ajustada por arrendamientos: + 0.25 pp (ajuste del EBIT 52.1 / ventas 20996). |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,240 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | 12,00 | LTM = ejercicio 1541.0 + acumulado al 2026-06-30 -1394.0 − acumulado del año anterior 135.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | EPS básico | Income Statement I23 | Basic EPS 2023-12-31 | 1,09 | 1,08 | EPS básico del 10-K (2023-12-31); antes copiaba el diluido. |
 | EPS básico | Income Statement J23 | Basic EPS 2024-12-31 | 1,24 | 1,26 | EPS básico del 10-K (2024-12-31); antes copiaba el diluido. |

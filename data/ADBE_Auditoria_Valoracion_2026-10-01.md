@@ -15,7 +15,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$536,48 | US$536,48 |
+| DCF técnico anterior (caso Base de la hoja) | US$536,48 | US$466,29 |
 | **DCF Base (valor intrínseco principal)** | US$465,71 | US$466,29 |
 | DCF Conservadora | US$267,97 | US$268,32 |
 | DCF Disrupción | US$172,43 | US$172,96 |

@@ -59,7 +59,7 @@ def engine_dcf(inp: dict) -> dict:
 
 def engine_inputs(cell, fm, price) -> dict:
     """Use the engine's shared grid reader; never approximate year 1 with years 2–5."""
-    bounds={"Input sheet":(75,4),"Valuation output":(140,13),"Financials Multiples":(120,8),
+    bounds={"Input sheet":(80,4),"Valuation output":(140,13),"Financials Multiples":(120,8),
             "Resumen de Valoración":(20,21),"Cost of capital worksheet":(70,5),"DCF FCFE financiero":(62,9)}
     bounds.update({name:(34,10) for name,_ in SHEETS.values()})
     grid={}
@@ -210,7 +210,8 @@ def main():
                  f"{pct(mos_pct, 0)} sobre el esperado: {money(ve['valor'] * (1 - mos_pct))}; precio de referencia {money(price)}. "
                  "Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos "
                  "están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista "
-                 f"de abajo son la calibración técnica anterior de la hoja (Base técnico {money(dcf[1])}) y los múltiplos y el "
+                 f"de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja "
+                 f"('Valuation output' B35) queda como calibración ({money(ve.get('dcfBaseTecnicoAnterior'))}), y los múltiplos y el "
                  "ponderado son lecturas secundarias.")
         w("")
         w("| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |")
@@ -224,7 +225,7 @@ def main():
     w(dec.get("evaluacion", ""))
     w("")
     unif = bool(ve.get("escenariosUnificados"))
-    w(f"| Escenario | {'DCF técnico anterior hoy (calibración)' if unif else 'DCF hoy (valor intrínseco)'} | Múltiplos consolidados hoy (secundario) | "
+    w(f"| Escenario | {'DCF de la historia hoy' if unif else 'DCF hoy (valor intrínseco)'} | Múltiplos consolidados hoy (secundario) | "
       f"{'Mezcla auxiliar hoy' if unif else 'Ponderado hoy (secundario)'} | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |")
     w("|---|---:|---:|---:|---:|---:|")
     for i, k in ((1, "base"), (0, "conservador"), (2, "optimista")):  # Base primero (contrato del 1-oct-2026)
@@ -312,7 +313,7 @@ def main():
     w("")
     chk = rec["descuentoMultiples"]["chequeo"]["resultado"]
     bco = lambda v: " / ".join(money(v[i]) for i in (1, 0, 2))  # noqa: E731
-    w(f"Múltiplos consolidados hoy: {bco(mult)} · DCF técnico hoy: {bco(dcf)} · "
+    w(f"Múltiplos consolidados hoy: {bco(mult)} · DCF {'de las historias' if unif else ''} hoy: {bco(dcf)} · "
       f"Ponderado hoy: {bco(pond)} (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin "
       f"descontar: {', '.join(f'{k} {chk[k]}' for k in SCEN)}.")
     w("")
@@ -409,9 +410,9 @@ def main():
     out = Path(a.out) / f"{tk}_Valoracion_Modelo_JMR_{today}.md"
     txt = "\n".join(L) + "\n"
     if (rec.get("valorEsperado") or {}).get("escenariosUnificados"):  # el caso Base técnico ya no es el valor intrínseco
-        txt = txt.replace("el DCF (valor intrínseco) da", "el DCF técnico anterior (caso Base de la hoja) da").replace(
+        txt = txt.replace("el DCF (valor intrínseco) da", "el DCF Base de las historias (valor intrínseco principal) da").replace(
             "el DCF manda y los múltiplos son precio relativo",
-            "el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo")
+            "el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo")
     out.write_text(txt)
     print(out, "| sensibilidad:", [(lab, round(v, 2)) for lab, v in sens], "| check mult", round(check_mult, 2), "vs hoja", round(mult[1], 2))
 

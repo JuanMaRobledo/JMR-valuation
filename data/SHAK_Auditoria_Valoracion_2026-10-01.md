@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$20,93 | US$9,24 |
-| **DCF Base (valor intrínseco principal)** | US$21,00 | US$15,66 |
-| DCF Conservadora | US$10,04 | US$2,47 |
+| DCF técnico anterior (caso Base de la hoja) | US$20,93 | US$15,67 |
+| **DCF Base (valor intrínseco principal)** | US$21,00 | US$15,67 |
+| DCF Conservadora | US$10,04 | US$2,48 |
 | DCF Disrupción | US$7,90 | US$0,00 |
-| DCF Optimista | US$36,39 | US$32,90 |
-| DCF esperado por probabilidades (complemento) | US$18,71 | US$12,72 |
-| Precio con MOS sobre el esperado | US$12,16 | US$8,27 |
+| DCF Optimista | US$36,39 | US$32,92 |
+| DCF esperado por probabilidades (complemento) | US$18,71 | US$12,73 |
+| Precio con MOS sobre el esperado | US$12,16 | US$8,28 |
 
 ## Hallazgos y correcciones
 
@@ -50,6 +50,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Ventas/capital contrastado con la historia y la industria | Input sheet B33 |  | 0,980 | 1,51 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,54 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
 | Acciones: dilución y estructura de capital | Input sheet B22 |  | ='Income Statement'!L27 | 42,80 | Acciones totalmente canjeadas: 40,41 millones clase A y 2,39 millones clase B (LLC Interests) al 29-jul-2026 (10-Q). La clase B es la participación minoritaria. |
 | Acciones: dilución y estructura de capital | Input sheet B21 | Minoritarios (DCF) | 27,00 | 0,00 | La participación minoritaria son las LLC Interests (clase B), ya incluidas en las acciones totalmente canjeadas: restarla además las contaría dos veces. |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,080 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | -28,80 | LTM = ejercicio 39.4 + acumulado al 2026-07-01 -52.2 − acumulado del año anterior 16.1 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 
@@ -71,6 +72,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$15,66 (antes US$21,00). El DCF esperado de las cuatro historias, complementario, es US$12,72 (antes US$18,71); precio con margen de seguridad sobre el esperado US$8,27. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$15,67 (antes US$21,00). El DCF esperado de las cuatro historias, complementario, es US$12,73 (antes US$18,71); precio con margen de seguridad sobre el esperado US$8,28. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

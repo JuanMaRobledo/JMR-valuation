@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada con la deuda, incluidos los arrendamientos, da 0,97, y el DCF Base sube de US$9,24 a US$12,90. Con el capital por dólar de ventas corregido (1-oct-2026) el DCF ya es positivo, pero el diagnóstico de fondo no cambia: el retorno sobre el capital nuevo apenas supera el costo de capital, y el valor depende del margen. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
+  "texto": "La hoja usa una beta de 1,60. La bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja) reapalancada con la deuda, incluidos los arrendamientos, da 0,97, y el DCF Base sube de US$15,93 a US$20,48. Con el capital por dólar de ventas corregido (1-oct-2026) el DCF ya es positivo, pero el diagnóstico de fondo no cambia: el retorno sobre el capital nuevo apenas supera el costo de capital, y el valor depende del margen. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector; algo entre ambas betas es razonable."
  },
  "historias": [
   {

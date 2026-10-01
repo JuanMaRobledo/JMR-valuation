@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$259,29 | US$263,56 |
-| **DCF Base (valor intrínseco principal)** | US$204,91 | US$209,33 |
-| DCF Conservadora | US$121,20 | US$125,54 |
-| DCF Disrupción | US$50,24 | US$54,49 |
-| DCF Optimista | US$313,47 | US$317,98 |
-| DCF esperado por probabilidades (complemento) | US$186,04 | US$190,44 |
-| Precio con MOS sobre el esperado | US$120,93 | US$123,79 |
+| DCF técnico anterior (caso Base de la hoja) | US$259,29 | US$209,46 |
+| **DCF Base (valor intrínseco principal)** | US$204,91 | US$209,46 |
+| DCF Conservadora | US$121,20 | US$125,68 |
+| DCF Disrupción | US$50,24 | US$54,63 |
+| DCF Optimista | US$313,47 | US$318,11 |
+| DCF esperado por probabilidades (complemento) | US$186,04 | US$190,57 |
+| Precio con MOS sobre el esperado | US$120,93 | US$123,87 |
 
 ## Hallazgos y correcciones
 
@@ -51,6 +51,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 2,50 | 2,44 | Ventas/capital con el capital arrendado: 1/(1/2.5 + 0.0092), con VP de arrendamientos 2798.0 / ventas 302970. |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | 0,500 | 0,500 | Margen en base ajustada por arrendamientos: + 0.05 pp (ajuste del EBIT 151.1 / ventas 302970). |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C47 |  | 0,650 | 0,650 | Margen en base ajustada por arrendamientos: + 0.05 pp (ajuste del EBIT 151.1 / ventas 302970). |
+| Margen objetivo Base de la hoja enlazado al de Input sheet | Valuation output C46 |  | 0,580 | ='Input sheet'!B30 | Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | 10.804,0 | LTM = ejercicio 2016.0 + acumulado al 2026-07-26 11838.0 − acumulado del año anterior 3050.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | EPS básico | Income Statement J23 | Basic EPS 2025-01-26 | 2,94 | 2,97 | EPS básico del 10-K (2025-01-26); antes copiaba el diluido. |
 | EPS básico | Income Statement K23 | Basic EPS 2026-01-25 | 4,90 | 4,93 | EPS básico del 10-K (2026-01-25); antes copiaba el diluido. |
@@ -74,6 +75,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$209,33 (antes US$204,91). El DCF esperado de las cuatro historias, complementario, es US$190,44 (antes US$186,04); precio con margen de seguridad sobre el esperado US$123,79. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$209,46 (antes US$204,91). El DCF esperado de las cuatro historias, complementario, es US$190,57 (antes US$186,04); precio con margen de seguridad sobre el esperado US$123,87. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

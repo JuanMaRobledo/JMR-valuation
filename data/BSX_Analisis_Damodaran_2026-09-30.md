@@ -9,11 +9,11 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Valor intrínseco principal · DCF Base hoy: US$36,34 por acción** (Base · La cartera diversificada sostiene ~7%).
 
-**Complemento · DCF esperado por probabilidades: US$34,93.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$22,69–43,67. El MOS 35% se aplica al esperado: US$22,71. El antiguo caso técnico de la hoja (US$36,92) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$34,93.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$22,69–43,67. El MOS 35% se aplica al esperado: US$22,71. El antiguo caso técnico de la hoja (US$37,39) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (27 celdas, con respaldo). DCF esperado US$33,95 → US$34,93. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet (28 celdas, con respaldo). DCF esperado US$33,95 → US$34,93. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$36,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$37,39 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -98,8 +98,8 @@ Sensibilidad del DCF Base (US$36,34; cada fila es un DCF completo con un solo su
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$36,92 |
-| Bottom-up del sector (Healthcare Products, reapalancada) | 0,98 | 9,4% | 8,7% | US$37,11 |
+| Hoja (regresión o la cargada en el libro) | 1,00 | 9,4% | 8,8% | US$37,39 |
+| Bottom-up del sector (Healthcare Products, reapalancada) | 0,98 | 9,4% | 8,7% | US$37,58 |
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
@@ -109,7 +109,7 @@ Sensibilidad del DCF Base (US$36,34; cada fila es un DCF completo con un solo su
 | Crecimiento año 1 | 4,0% | 7,0% | 10,0% |
 | Crecimiento años 2–5 | 4,0% | 7,0% | 10,0% |
 | Margen año 1 (base ajustada del modelo) | 20,2% | 20,2% | 20,2% |
-| Margen objetivo | 20,2% | 24,0% | 27,2% |
+| Margen objetivo | 20,2% | 24,2% | 27,2% |
 
 Ventas/capital: 1,3x en años 1–5 y 1,2x en 6–10. WACC: 8,8%. Ke: 9,4%. Impuesto efectivo: 17,8%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
@@ -118,14 +118,14 @@ Ventas/capital: 1,3x en años 1–5 y 1,2x en 6–10. WACC: 8,8%. Ke: 9,4%. Impu
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 9,8% | 17,0% | 9,0% | = costo de capital | US$36,92 | US$36,92 |
+| Sin ventaja defendible | 9,8% | 17,0% | 9,0% | = costo de capital | US$37,39 | US$37,39 |
 
 Fuentes de ventaja: Patentes y relación con médicos, pero el crecimiento se compra. Evidencia: ROIC (con plusvalía) 4-9% en 2021-2025, bajo el costo de capital hasta 2025. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$36,34 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$34,93. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$36,92) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$36,34 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$34,93. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$37,39) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos

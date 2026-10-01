@@ -251,6 +251,7 @@
     "minoritarios": 1083,
     "noOperativos": 12532,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 2039.994,
     "probFracaso": 0,
     "nol0": 0,
@@ -431,6 +432,7 @@
     "minoritarios": 1083,
     "noOperativos": 12532,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 2039.994,
     "probFracaso": 0,
     "nol0": 0,
@@ -614,6 +616,7 @@
     "minoritarios": 1083,
     "noOperativos": 12532,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 2039.994,
     "probFracaso": 0,
     "nol0": 0,
@@ -794,6 +797,7 @@
     "minoritarios": 1083,
     "noOperativos": 12532,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 2039.994,
     "probFracaso": 0,
     "nol0": 0,
@@ -990,5 +994,6 @@
   ]
  },
  "rd_vida": 3,
- "rd_ltm": 3741
+ "rd_ltm": 3741,
+ "motor_tecnico": 88.96923319597828
 }

@@ -354,6 +354,20 @@ CHANGES["SHAK_ACCIONES"] = [(IS, "B22", 42.80, "Acciones totalmente canjeadas: 4
                             (IS, "B21", 0, "La participación minoritaria son las LLC Interests (clase B), ya incluidas en las "
                              "acciones totalmente canjeadas: restarla además las contaría dos veces.")]
 
+# Margen objetivo del caso Base en 'Valuation output'!C46 (segunda revisión del 1-oct-2026): en 10 hojas era un número
+# escrito a mano y no seguía a 'Input sheet'!B30 (no recibió el ajuste por arrendamientos; en GOOG tampoco la subida a
+# 35% del 30-sep). Se enlaza a B30, como en las otras hojas.
+for _t in ("BSX", "CELH", "CMG", "DPZ", "EPAM", "GOOG", "INTU", "NVDA", "SHAK", "ZTS", "ONON", "PAGS"):
+    CHANGES[f"{_t}_C46"] = [(VO, "C46", "='Input sheet'!B30",
+                             "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por "
+                             "arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial "
+                             "ajustado con un objetivo sin ajustar.")]
+
+for _t in ("MSFT", "LULU"):
+    CHANGES[f"{_t}_C108"] = [(VO, "C108", "='Input sheet'!B28",
+                              "Margen del año 1 del caso técnico Optimista enlazado a 'Input sheet'!B28, como en las demás hojas: "
+                              "el número escrito a mano era una copia redondeada (escaneo de integridad del 1-oct-2026).")]
+
 
 def main(argv: list[str]) -> int:
     dry, revert = "--dry-run" in argv, "--revert" in argv

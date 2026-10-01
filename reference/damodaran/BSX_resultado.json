@@ -20,7 +20,7 @@
   "marginY1Base": 0.202481,
   "marginY1Opt": 0.202481,
   "marginCons": 0.202481,
-  "marginBase": 0.24,
+  "marginBase": 0.242481,
   "marginOpt": 0.272481,
   "salesToCapital2": 1.1654,
   "wacc": 0.0876161966291387,
@@ -32,9 +32,9 @@
   "salesToCapital": 1.2595
  },
  "financiero": false,
- "dcf_sin_exceso": 36.916570233172465,
+ "dcf_sin_exceso": 37.38994871521949,
  "precio": 43.66,
- "dcf_base": 36.916570233172465,
+ "dcf_base": 37.389948715219475,
  "g_ref": 0.07,
  "m_base": 0.242481,
  "s2c": 1.2595,
@@ -260,6 +260,7 @@
     "minoritarios": 242,
     "noOperativos": 2245,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 1449.2,
     "probFracaso": 0,
     "nol0": 0,
@@ -448,6 +449,7 @@
     "minoritarios": 242,
     "noOperativos": 2245,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 1449.2,
     "probFracaso": 0,
     "nol0": 0,
@@ -639,6 +641,7 @@
     "minoritarios": 242,
     "noOperativos": 2245,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 1449.2,
     "probFracaso": 0,
     "nol0": 0,
@@ -827,6 +830,7 @@
     "minoritarios": 242,
     "noOperativos": 2245,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 1449.2,
     "probFracaso": 0,
     "nol0": 0,
@@ -853,14 +857,14 @@
    "beta": 1,
    "ke": 0.0945,
    "wacc": 0.0876161966291387,
-   "dcf_base": 36.916570233172465
+   "dcf_base": 37.38994871521949
   },
   {
    "enfoque": "Bottom-up del sector (Healthcare Products, reapalancada)",
    "beta": 0.9798488469170337,
    "ke": 0.09360125857249971,
    "wacc": 0.08684938401036808,
-   "dcf_base": 37.10826618646097
+   "dcf_base": 37.58377598266668
   }
  ],
  "sensibilidad": {
@@ -1023,5 +1027,6 @@
   ]
  },
  "rd_vida": null,
- "rd_ltm": null
+ "rd_ltm": null,
+ "motor_tecnico": 37.38994871521949
 }
