@@ -16,11 +16,11 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Concepto | Antes | Después |
 |---|---:|---:|
 | DCF técnico anterior (caso Base de la hoja) | US$20,93 | US$-4,70 |
-| **DCF Base (valor intrínseco principal)** | US$21,00 | US$2,89 |
+| **DCF Base (valor intrínseco principal)** | US$21,00 | US$2,90 |
 | DCF Conservadora | US$10,04 | US$0,00 |
 | DCF Disrupción | US$7,90 | US$0,00 |
-| DCF Optimista | US$36,39 | US$17,49 |
-| DCF esperado por probabilidades (complemento) | US$18,71 | US$3,92 |
+| DCF Optimista | US$36,39 | US$17,50 |
+| DCF esperado por probabilidades (complemento) | US$18,71 | US$3,93 |
 | Precio con MOS sobre el esperado | US$12,16 | US$2,55 |
 
 ## Hallazgos y correcciones
@@ -67,6 +67,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$2,89 (antes US$21,00). El DCF esperado de las cuatro historias, complementario, es US$3,92 (antes US$18,71); precio con margen de seguridad sobre el esperado US$2,55. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$2,90 (antes US$21,00). El DCF esperado de las cuatro historias, complementario, es US$3,93 (antes US$18,71); precio con margen de seguridad sobre el esperado US$2,55. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.
