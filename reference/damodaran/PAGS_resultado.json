@@ -21,7 +21,7 @@
   "marginBase": 0.14,
   "marginOpt": 0.16,
   "salesToCapital2": 1.4,
-  "wacc": 0.14652036264559293,
+  "wacc": 0.14652750394214814,
   "costoPatrimonio": 0.14700999999999997,
   "taxEffective": 0.173,
   "convergenceYear": 5,
@@ -32,13 +32,13 @@
  "financiero": true,
  "dcf_sin_exceso": null,
  "precio": 8.96,
- "dcf_base": 11.923674329093467,
+ "dcf_base": 12.534372140793607,
  "g_ref": 0.057999999999999996,
  "m_base": 0.156,
  "s2c": 1.4,
- "wacc": 0.14652036264559293,
+ "wacc": 0.14652750394214814,
  "beta_hoja": 1.3,
- "beta_bu": 0.3312275110415327,
+ "beta_bu": 0.33120952046257,
  "beta_prop": 0.97,
  "industria": "Financial Svcs. (Non-bank & Insurance)",
  "bu_sector": 0.33,
@@ -228,6 +228,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 276,
     "probFracaso": 0,
     "nol0": 0,
@@ -237,7 +238,7 @@
     "s2c2": 1.4,
     "rezago0": false,
     "convergencia": 5,
-    "wacc0": 0.14652036264559293,
+    "wacc0": 0.14652750394214814,
     "margenY1": 0.125
    },
    "valor_bruto": 11.891267632316424,
@@ -386,6 +387,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 276,
     "probFracaso": 0,
     "nol0": 0,
@@ -395,7 +397,7 @@
     "s2c2": 1.4,
     "rezago0": false,
     "convergencia": 5,
-    "wacc0": 0.14652036264559293,
+    "wacc0": 0.14652750394214814,
     "margenY1": 0.125
    },
    "valor_bruto": 11.140643558401408,
@@ -547,6 +549,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 276,
     "probFracaso": 0,
     "nol0": 0,
@@ -556,7 +559,7 @@
     "s2c2": 1.4,
     "rezago0": false,
     "convergencia": 5,
-    "wacc0": 0.14652036264559293,
+    "wacc0": 0.14652750394214814,
     "margenY1": 0.125
    },
    "valor_bruto": 9.9941785794775,
@@ -705,6 +708,7 @@
     "minoritarios": 0,
     "noOperativos": 0,
     "opciones": 0,
+    "preferentes": 0,
     "acciones": 276,
     "probFracaso": 0,
     "nol0": 0,
@@ -714,7 +718,7 @@
     "s2c2": 1.4,
     "rezago0": false,
     "convergencia": 5,
-    "wacc0": 0.14652036264559293,
+    "wacc0": 0.14652750394214814,
     "margenY1": 0.125
    },
    "valor_bruto": 12.729056658385355,
@@ -730,21 +734,21 @@
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.3,
    "ke": 0.14700999999999997,
-   "wacc": 0.14652036264559293,
+   "wacc": 0.14652750394214814,
    "dcf_base": 11.923674329093467
   },
   {
    "enfoque": "Bottom-up del sector (Financial Svcs. (Non-bank & Insurance), reapalancada)",
-   "beta": 0.3312275110415327,
-   "ke": 0.07464269507480249,
-   "wacc": 0.07451020223356032,
-   "dcf_base": 17.33632534168374
+   "beta": 0.33120952046257,
+   "ke": 0.07464135117855397,
+   "wacc": 0.07451079726362966,
+   "dcf_base": 17.33645211591955
   },
   {
    "enfoque": "Propuesta (sector ajustado por riesgo propio)",
    "beta": 0.97,
    "ke": 0.12235899999999998,
-   "wacc": 0.12199101937169497,
+   "wacc": 0.12199638632086592,
    "dcf_base": 13.486701644599947
   }
  ],
@@ -893,5 +897,6 @@
   ]
  },
  "rd_vida": null,
- "rd_ltm": null
+ "rd_ltm": null,
+ "motor_tecnico": 11.923674329093467
 }

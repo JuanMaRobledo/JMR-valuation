@@ -9,11 +9,11 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Valor intrínseco principal · DCF Base hoy: US$25,35 por acción** (Base · Alani lidera y Celsius se estabiliza).
 
-**Complemento · DCF esperado por probabilidades: US$21,15.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$10,25–32,87. El MOS 35% se aplica al esperado: US$13,75. El antiguo caso técnico de la hoja (US$18,40) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$21,16.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$10,25–32,88. El MOS 35% se aplica al esperado: US$13,75. El antiguo caso técnico de la hoja (US$13,74) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
 **Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet (21 celdas, con respaldo). DCF esperado US$18,53 → US$21,15. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$18,40 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$13,74 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -52,11 +52,11 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Reinversión: liviana cuando crece sola, cara cuando compra.** El crecimiento orgánico casi no exige capital (capex LTM de US$46 millones), y por eso la Base usa un ventas/capital de 2,47×: ~US$0,41 de capital por dólar de ventas nuevas. Lo caro fueron las compras: Alani costó US$1.650 millones netos y hoy rinde ~10,5-12,5% sobre lo pagado, cerca del costo de capital; Rockstar costó US$585 millones y rinde ~3,5%, justificado solo por la alianza con PepsiCo. Una advertencia importante: el capital invertido de la hoja no incluye las preferentes de PepsiCo (~US$1.135 millones), así que el ROIC que muestra el modelo se ve más alto de lo que es. Por eso, y porque la marca está en una categoría de barreras bajas con un ROIC histórico muy volátil, el ROIC después del año 10 es el costo de capital (9,0%): no se le reconoce una ventaja duradera.
 
-**Descuento: la beta de regresión exagera.** La hoja usa una beta de 1,50, que refleja sobre todo la volatilidad de la acción en su auge y caída. La bottom-up de bebidas no alcohólicas reapalancada da 0,63; como Celsius es más riesgosa que el promedio (una categoría, moda, un distribuidor dominante), un punto medio cercano a 1,0 sería defendible. La Base se calcula con la beta de la hoja, lo que la deja del lado prudente: el costo de capital empieza en 11,07% y converge a 9,00%. Un punto menos de tasa la llevaría a US$29,34 (+16%). El crecimiento perpetuo es 4,99% y el terminal explica 57,6% del valor operativo.
+**Descuento: la beta de regresión exagera.** La hoja usa una beta de 1,50, que refleja sobre todo la volatilidad de la acción en su auge y caída. La bottom-up de bebidas no alcohólicas reapalancada da 0,63; como Celsius es más riesgosa que el promedio (una categoría, moda, un distribuidor dominante), un punto medio cercano a 1,0 sería defendible. La Base se calcula con la beta de la hoja, lo que la deja del lado prudente: el costo de capital empieza en 11,07% y converge a 9,00%. Un punto menos de tasa la llevaría a US$29,35 (+16%). El crecimiento perpetuo es 4,99% y el terminal explica 57,6% del valor operativo.
 
-**Probabilidades y lectura del resultado.** La Base pesa 40% porque los datos al consumidor del 2T26 la respaldan; la Conservadora 35% porque es lo que muestra la factura; la Disrupción 15% recoge los ciclos conocidos de marcas de energía; la Optimista 10% exige crecimiento del tercio superior, margen cercano al techo y más compras. El DCF Base es US$25,35 y el esperado US$21,15. La evidencia en contra de la Base es seria: la desaceleración de Alani y la pérdida de participación del 1T al 2T (de 20,9% a 20,1%) es exactamente lo que se vería al comienzo de la Conservadora. Las acciones se fijan en 253,3 millones; una conversión de las preferentes de PepsiCo cambiaría ese número.
+**Probabilidades y lectura del resultado.** La Base pesa 40% porque los datos al consumidor del 2T26 la respaldan; la Conservadora 35% porque es lo que muestra la factura; la Disrupción 15% recoge los ciclos conocidos de marcas de energía; la Optimista 10% exige crecimiento del tercio superior, margen cercano al techo y más compras. El DCF Base es US$25,35 y el esperado US$21,16. La evidencia en contra de la Base es seria: la desaceleración de Alani y la pérdida de participación del 1T al 2T (de 20,9% a 20,1%) es exactamente lo que se vería al comienzo de la Conservadora. Las acciones son las 253,3 millones ordinarias. Las preferentes de PepsiCo se restan aparte como un derecho separado de US$1.760 millones (valor contable del 10-Q del 2T26, tratamiento provisional): no se suman como acciones convertidas. Si se convirtieran en condiciones distintas, o si se liquidaran por su valor de liquidación (~US$1.135 millones), el valor por acción cambiaría, y por eso este punto sigue abierto.
 
-**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$3.047 millones. Con el crecimiento de la Base llegan a US$4.598 millones en el año 5 y a US$5.952 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 12,1% en el año 1 a 19,1% al final, y se descuentan impuestos (24,0% al principio y 24,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$312 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$139 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$173 millones el primer año. Cada flujo se trae a hoy con el costo de capital (11,07% al principio, 9,00% al final): los diez años suman US$2.746 millones. Después del año 10 se supone que la empresa crece 4,99% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,0%; esa perpetuidad vale hoy US$3.729 millones, 58% del total. Flujos más terminal dan el valor de las operaciones, US$6.475 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$631 millones, menos deuda por US$685 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$6.422 millones que, repartido entre 253,3 millones de acciones, da US$25,35 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$3.047 millones. Con el crecimiento de la Base llegan a US$4.598 millones en el año 5 y a US$5.952 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 12,1% en el año 1 a 19,1% al final, y se descuentan impuestos (24,0% al principio y 24,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$312 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$139 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$173 millones el primer año. Cada flujo se trae a hoy con el costo de capital (11,07% al principio, 9,00% al final): los diez años suman US$2.747 millones. Después del año 10 se supone que la empresa crece 4,99% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,0%; esa perpetuidad vale hoy US$3.730 millones, 58% del total. Flujos más terminal dan el valor de las operaciones, US$6.477 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$631 millones, menos deuda por US$685 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$6.423 millones que, repartido entre 253,3 millones de acciones, da US$25,35 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
 **Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 23,03× (peso 25% dentro de los múltiplos); EV/FCFF 21,84× (peso 38% dentro de los múltiplos); P/E 29,28× (peso 12% dentro de los múltiplos); P/FCFE 22,65× (peso 12% dentro de los múltiplos); P/OCF 20,32× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (11,7%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
@@ -67,14 +67,14 @@ Sensibilidad del DCF Base (US$25,35; cada fila es un DCF completo con un solo su
 | Margen objetivo −2 pp | US$22,61 | −10,8% |
 | Margen objetivo +2 pp | US$28,09 | +10,8% |
 | Crecimiento años 1–5 −2 pp | US$23,12 | −8,8% |
-| Crecimiento años 1–5 +2 pp | US$27,81 | +9,7% |
-| Ventas/capital −20% | US$24,60 | −3,0% |
+| Crecimiento años 1–5 +2 pp | US$27,82 | +9,7% |
+| Ventas/capital −20% | US$24,61 | −3,0% |
 | Ventas/capital +20% | US$25,85 | +2,0% |
-| WACC +1 pp | US$22,19 | −12,4% |
-| WACC −1 pp | US$29,34 | +15,8% |
+| WACC +1 pp | US$22,20 | −12,4% |
+| WACC −1 pp | US$29,35 | +15,8% |
 | Crecimiento terminal −0,5 pp | US$25,13 | −0,9% |
-| Crecimiento terminal +0,5 pp | US$25,57 | +0,9% |
-| Acciones +5% | US$24,14 | −4,8% |
+| Crecimiento terminal +0,5 pp | US$25,58 | +0,9% |
+| Acciones +5% | US$24,15 | −4,8% |
 
 
 ### Piezas del valor
@@ -103,9 +103,9 @@ Sensibilidad del DCF Base (US$25,35; cada fila es un DCF completo con un solo su
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,50 | 11,7% | 11,1% | US$20,68 |
+| Hoja (regresión o la cargada en el libro) | 1,50 | 11,7% | 11,1% | US$20,69 |
 | Bottom-up del sector (Beverage (Soft), reapalancada) | 0,63 | 7,8% | 7,5% | US$25,24 |
-| Propuesta (sector ajustado por riesgo propio) | 1,00 | 9,4% | 9,1% | US$23,15 |
+| Propuesta (sector ajustado por riesgo propio) | 1,00 | 9,4% | 9,0% | US$23,15 |
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
@@ -124,14 +124,14 @@ Ventas/capital: 2,5x en años 1–5 y 2,0x en 6–10. WACC: 11,1%. Ke: 11,7%. Im
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 11,8% | 29,0% | 9,0% | = costo de capital | US$18,40 | US$20,68 |
+| Sin ventaja defendible | 11,8% | 29,0% | 9,0% | = costo de capital | US$13,74 | US$20,69 |
 
 Fuentes de ventaja: Marca en una categoría con barreras bajas. Evidencia: ROIC volátil (−39% a 104%). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$25,35 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$21,15. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$18,40) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$25,35 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$21,16. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$13,74) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -168,39 +168,39 @@ En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor 
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**Base · Alani lidera y Celsius se estabiliza** — probabilidad 40%; valor terminal 10.075,6 (VP 3.729,4); DCF US$25,35 por acción.
+**Base · Alani lidera y Celsius se estabiliza** — probabilidad 40%; valor terminal 10.075,6 (VP 3.730,5); DCF US$25,35 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 3.396,1 | 11,4% | 12,1% | 312,1 | 138,7 | 173,4 | 11,1% | 156,1 |
 | 2 | 3.738,1 | 10,1% | 14,9% | 423,1 | 134,3 | 288,8 | 11,1% | 234,1 |
 | 3 | 4.069,2 | 8,9% | 16,3% | 503,9 | 112,7 | 391,2 | 11,1% | 285,5 |
-| 4 | 4.347,0 | 6,8% | 17,7% | 584,5 | 101,7 | 482,8 | 11,1% | 317,2 |
-| 5 | 4.597,6 | 5,8% | 19,1% | 667,1 | 104,6 | 562,5 | 11,1% | 332,7 |
-| 6 | 4.855,6 | 5,6% | 19,1% | 704,6 | 133,9 | 570,6 | 10,7% | 305,0 |
-| 7 | 5.120,5 | 5,5% | 19,1% | 743,0 | 137,2 | 605,8 | 10,2% | 293,7 |
+| 4 | 4.347,0 | 6,8% | 17,7% | 584,5 | 101,7 | 482,8 | 11,1% | 317,3 |
+| 5 | 4.597,6 | 5,8% | 19,1% | 667,1 | 104,6 | 562,5 | 11,1% | 332,8 |
+| 6 | 4.855,6 | 5,6% | 19,1% | 704,6 | 133,9 | 570,6 | 10,7% | 305,1 |
+| 7 | 5.120,5 | 5,5% | 19,1% | 743,0 | 137,2 | 605,8 | 10,2% | 293,8 |
 | 8 | 5.391,9 | 5,3% | 19,1% | 782,4 | 140,3 | 642,1 | 9,8% | 283,5 |
-| 9 | 5.669,3 | 5,1% | 19,1% | 822,7 | 143,0 | 679,6 | 9,4% | 274,2 |
-| 10 | 5.952,2 | 5,0% | 19,1% | 863,7 | 150,2 | 713,5 | 9,0% | 264,1 |
+| 9 | 5.669,3 | 5,1% | 19,1% | 822,7 | 143,0 | 679,6 | 9,4% | 274,3 |
+| 10 | 5.952,2 | 5,0% | 19,1% | 863,7 | 150,2 | 713,5 | 9,0% | 264,2 |
 | Terminal | 6.249,3 | 5,0% | 19,1% | 906,8 | 502,8 | 404,0 | 9,0% | — |
 
-**Conservadora · Alani crece, Celsius sigue cediendo** — probabilidad 35%; valor terminal 6.576,4 (VP 2.434,2); DCF US$17,68 por acción.
+**Conservadora · Alani crece, Celsius sigue cediendo** — probabilidad 35%; valor terminal 6.576,4 (VP 2.434,9); DCF US$17,69 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 3.204,6 | 5,2% | 12,1% | 294,5 | 54,9 | 239,6 | 11,1% | 215,7 |
-| 2 | 3.340,1 | 4,2% | 13,7% | 347,6 | 53,5 | 294,1 | 11,1% | 238,3 |
+| 2 | 3.340,1 | 4,2% | 13,7% | 347,6 | 53,5 | 294,1 | 11,1% | 238,4 |
 | 3 | 3.472,0 | 4,0% | 14,5% | 382,4 | 53,9 | 328,6 | 11,1% | 239,8 |
-| 4 | 3.604,8 | 3,8% | 15,3% | 419,0 | 49,4 | 369,6 | 11,1% | 242,8 |
+| 4 | 3.604,8 | 3,8% | 15,3% | 419,0 | 49,4 | 369,6 | 11,1% | 242,9 |
 | 5 | 3.726,5 | 3,4% | 16,1% | 455,8 | 55,9 | 399,9 | 11,1% | 236,5 |
-| 6 | 3.864,4 | 3,7% | 16,1% | 472,6 | 78,6 | 394,0 | 10,7% | 210,6 |
+| 6 | 3.864,4 | 3,7% | 16,1% | 472,6 | 78,6 | 394,0 | 10,7% | 210,7 |
 | 7 | 4.019,8 | 4,0% | 16,1% | 491,6 | 88,3 | 403,3 | 10,2% | 195,6 |
 | 8 | 4.194,4 | 4,3% | 16,1% | 513,0 | 99,0 | 414,0 | 9,8% | 182,8 |
-| 9 | 4.390,2 | 4,7% | 16,1% | 536,9 | 110,8 | 426,2 | 9,4% | 171,9 |
-| 10 | 4.609,3 | 5,0% | 16,1% | 563,7 | 116,3 | 447,4 | 9,0% | 165,6 |
+| 9 | 4.390,2 | 4,7% | 16,1% | 536,9 | 110,8 | 426,2 | 9,4% | 172,0 |
+| 10 | 4.609,3 | 5,0% | 16,1% | 563,7 | 116,3 | 447,4 | 9,0% | 165,7 |
 | Terminal | 4.839,3 | 5,0% | 16,1% | 591,9 | 328,2 | 263,7 | 9,0% | — |
 
-**Disrupción · Deterioro de los fundamentales: La moda se desgasta** — probabilidad 15%; valor terminal 2.761,9 (VP 1.022,3); DCF US$10,25 por acción.
+**Disrupción · Deterioro de los fundamentales: La moda se desgasta** — probabilidad 15%; valor terminal 2.761,9 (VP 1.022,6); DCF US$10,25 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -208,28 +208,28 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 2 | 2.927,3 | −2,4% | 12,1% | 269,0 | -30,1 | 299,2 | 11,1% | 242,5 |
 | 3 | 2.853,0 | −2,5% | 12,1% | 262,2 | -19,2 | 281,4 | 11,1% | 205,4 |
 | 4 | 2.805,6 | −1,7% | 12,1% | 257,9 | -13,8 | 271,7 | 11,1% | 178,5 |
-| 5 | 2.771,5 | −1,2% | 12,1% | 254,7 | -10,9 | 265,7 | 11,1% | 157,1 |
-| 6 | 2.744,5 | −1,0% | 12,1% | 252,2 | -10,1 | 262,4 | 10,7% | 140,2 |
+| 5 | 2.771,5 | −1,2% | 12,1% | 254,7 | -10,9 | 265,7 | 11,1% | 157,2 |
+| 6 | 2.744,5 | −1,0% | 12,1% | 252,2 | -10,1 | 262,4 | 10,7% | 140,3 |
 | 7 | 2.724,5 | −0,7% | 12,1% | 250,4 | -6,7 | 257,1 | 10,2% | 124,7 |
 | 8 | 2.711,2 | −0,5% | 12,1% | 249,2 | -3,3 | 252,5 | 9,8% | 111,5 |
 | 9 | 2.704,6 | −0,2% | 12,1% | 248,6 | 0,0 | 248,6 | 9,4% | 100,3 |
 | 10 | 2.704,6 | 0,0% | 12,1% | 248,6 | 0,0 | 248,6 | 9,0% | 92,0 |
 | Terminal | 2.704,6 | 0,0% | 12,1% | 248,6 | 0,0 | 248,6 | 9,0% | — |
 
-**Optimista · Plataforma multimarca** — probabilidad 10%; valor terminal 14.242,1 (VP 5.271,6); DCF US$32,87 por acción.
+**Optimista · Plataforma multimarca** — probabilidad 10%; valor terminal 14.242,1 (VP 5.273,1); DCF US$32,88 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 3.586,0 | 17,7% | 12,1% | 329,6 | 370,8 | -41,3 | 11,1% | -37,2 |
 | 2 | 4.137,6 | 15,4% | 16,1% | 506,1 | 340,9 | 165,1 | 11,1% | 133,9 |
-| 3 | 4.644,6 | 12,3% | 18,1% | 638,7 | 270,3 | 368,4 | 11,1% | 268,8 |
-| 4 | 5.046,7 | 8,7% | 20,1% | 770,7 | 256,8 | 513,9 | 11,1% | 337,6 |
-| 5 | 5.428,6 | 7,6% | 22,1% | 911,5 | 257,4 | 654,1 | 11,1% | 386,9 |
-| 6 | 5.811,5 | 7,1% | 22,1% | 975,8 | 192,1 | 783,7 | 10,7% | 418,9 |
-| 7 | 6.191,3 | 6,5% | 22,1% | 1.039,6 | 188,5 | 851,1 | 10,2% | 412,6 |
-| 8 | 6.564,1 | 6,0% | 22,1% | 1.102,2 | 182,7 | 919,4 | 9,8% | 405,9 |
-| 9 | 6.925,5 | 5,5% | 22,1% | 1.162,8 | 174,7 | 988,1 | 9,4% | 398,7 |
-| 10 | 7.271,1 | 5,0% | 22,1% | 1.220,9 | 183,5 | 1.037,4 | 9,0% | 384,0 |
+| 3 | 4.644,6 | 12,3% | 18,1% | 638,7 | 270,3 | 368,4 | 11,1% | 268,9 |
+| 4 | 5.046,7 | 8,7% | 20,1% | 770,7 | 256,8 | 513,9 | 11,1% | 337,7 |
+| 5 | 5.428,6 | 7,6% | 22,1% | 911,5 | 257,4 | 654,1 | 11,1% | 387,0 |
+| 6 | 5.811,5 | 7,1% | 22,1% | 975,8 | 192,1 | 783,7 | 10,7% | 419,0 |
+| 7 | 6.191,3 | 6,5% | 22,1% | 1.039,6 | 188,5 | 851,1 | 10,2% | 412,7 |
+| 8 | 6.564,1 | 6,0% | 22,1% | 1.102,2 | 182,7 | 919,4 | 9,8% | 406,0 |
+| 9 | 6.925,5 | 5,5% | 22,1% | 1.162,8 | 174,7 | 988,1 | 9,4% | 398,8 |
+| 10 | 7.271,1 | 5,0% | 22,1% | 1.220,9 | 183,5 | 1.037,4 | 9,0% | 384,1 |
 | Terminal | 7.634,0 | 5,0% | 22,1% | 1.281,8 | 710,7 | 571,1 | 9,0% | — |
 
 
@@ -239,28 +239,28 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 2.746,05 | 3.729,42 | 6.475,47 | 6.421,64 | 25,35 |
-| Conservadora | 2.099,63 | 2.434,20 | 4.533,83 | 4.480,00 | 17,68 |
-| Disrupción | 1.627,16 | 1.022,31 | 2.649,47 | 2.595,64 | 10,25 |
-| Optimista | 3.110,03 | 5.271,61 | 8.381,64 | 8.327,81 | 32,87 |
+| Base | 2.746,60 | 3.730,46 | 6.477,06 | 6.423,23 | 25,35 |
+| Conservadora | 2.100,01 | 2.434,87 | 4.534,89 | 4.481,06 | 17,69 |
+| Disrupción | 1.627,42 | 1.022,59 | 2.650,02 | 2.596,19 | 10,25 |
+| Optimista | 3.110,73 | 5.273,08 | 8.383,80 | 8.329,98 | 32,88 |
 
-Ejemplo Base: (2.746,05 + 3.729,42 + 631 − 685) / 253,3 = US$25,35 por acción. El terminal representa 57,6% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (2.746,60 + 3.730,46 + 631 − 685) / 253,3 = US$25,35 por acción. El terminal representa 57,6% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 40% / 35% / 15% / 10% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-DCF esperado = 0,40 × 25,347828 + 0,35 × 17,683667 + 0,15 × 10,245643 + 0,10 × 32,871932 = US$21,152455 ≈ US$21,15. Los aportes son US$10,14 + US$6,19 + US$1,54 + US$3,29 por acción.
+DCF esperado = 0,40 × 25,354082 + 0,35 × 17,687853 + 0,15 × 10,247799 + 0,10 × 32,880487 = US$21,157600 ≈ US$21,16. Los aportes son US$10,14 + US$6,19 + US$1,54 + US$3,29 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 21,152455 × 0,65 = US$13,749095 ≈ US$13,75. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 21,157600 × 0,65 = US$13,752440 ≈ US$13,75. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$25,35, es el valor intrínseco principal. El DCF esperado de US$21,15 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$25,35, es el valor intrínseco principal. El DCF esperado de US$21,16 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: Alani lidera y Celsius se estabiliza
@@ -276,7 +276,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$25,35, es el valo
 
 **Qué plantea.** Es la continuación de lo que muestra la factura.
 
-**Traducción al modelo.** Celsius crece -6%, -4%, -2%, 0%, 0%; Alani Nu crece 18%, 12%, 9%, 7%, 6%; Rockstar crece -8%, -8%, -8%, -8%, -8%. El crecimiento anual compuesto de cinco años es 4,1%; el margen operativo objetivo es 16,1%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 35%; DCF: US$17,68 por acción.
+**Traducción al modelo.** Celsius crece -6%, -4%, -2%, 0%, 0%; Alani Nu crece 18%, 12%, 9%, 7%, 6%; Rockstar crece -8%, -8%, -8%, -8%, -8%. El crecimiento anual compuesto de cinco años es 4,1%; el margen operativo objetivo es 16,1%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 35%; DCF: US$17,69 por acción.
 
 **Cómo contrastarla.** La apoyarían: ventas al consumidor Celsius (Circana): ≤ −8%; ventas al consumidor Alani Nu: ≤ +10%; participación del portafolio: ≤ 19%; parte del crecimiento sin azúcar que captura: ≤ 20%.
 
@@ -294,7 +294,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$25,35, es el valo
 
 **Qué plantea.** Exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras.
 
-**Traducción al modelo.** Celsius crece 3%, 5%, 5%, 4%, 4%; Alani Nu crece 35%, 25%, 18%, 12%, 10%; Rockstar crece -3%, -3%, -3%, -3%, -3%. El crecimiento anual compuesto de cinco años es 12,2%; el margen operativo objetivo es 22,1%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 10%; DCF: US$32,87 por acción.
+**Traducción al modelo.** Celsius crece 3%, 5%, 5%, 4%, 4%; Alani Nu crece 35%, 25%, 18%, 12%, 10%; Rockstar crece -3%, -3%, -3%, -3%, -3%. El crecimiento anual compuesto de cinco años es 12,2%; el margen operativo objetivo es 22,1%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 10%; DCF: US$32,88 por acción.
 
 **Cómo contrastarla.** La confirmarían: ventas al consumidor Celsius (Circana): ≥ 0%; ventas al consumidor Alani Nu: ≥ +25%; participación del portafolio: ≥ 21%; parte del crecimiento sin azúcar que captura: ≥ 40%.
 
@@ -305,11 +305,11 @@ La tesis Base es la trayectoria central defendida y su DCF, US$25,35, es el valo
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,50) | Valor/acción (beta 1,00) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **Base · Alani lidera y Celsius se estabiliza** | 40% | Celsius: 0%, 2%, 3%, 3%, 3%; Alani Nu: 25%, 18%, 14%, 10%, 8%; Rockstar: -5%, -5%, -5%, -5%, -5% | 8,6% | 19,1% | 2,5 | 4,99% | US$25,35 | US$28,42 |
-| **Conservadora · Alani crece, Celsius sigue cediendo** | 35% | Celsius: -6%, -4%, -2%, 0%, 0%; Alani Nu: 18%, 12%, 9%, 7%, 6%; Rockstar: -8%, -8%, -8%, -8%, -8% | 4,1% | 16,1% | 2,5 | 4,99% | US$17,68 | US$19,74 |
+| **Base · Alani lidera y Celsius se estabiliza** | 40% | Celsius: 0%, 2%, 3%, 3%, 3%; Alani Nu: 25%, 18%, 14%, 10%, 8%; Rockstar: -5%, -5%, -5%, -5%, -5% | 8,6% | 19,1% | 2,5 | 4,99% | US$25,35 | US$28,43 |
+| **Conservadora · Alani crece, Celsius sigue cediendo** | 35% | Celsius: -6%, -4%, -2%, 0%, 0%; Alani Nu: 18%, 12%, 9%, 7%, 6%; Rockstar: -8%, -8%, -8%, -8%, -8% | 4,1% | 16,1% | 2,5 | 4,99% | US$17,69 | US$19,74 |
 | **Disrupción · Deterioro de los fundamentales: La moda se desgasta** | 15% | Celsius: -10%, -8%, -5%, -3%, -2%; Alani Nu: 8%, 3%, 0%, 0%, 0%; Rockstar: -10%, -10%, -10%, -10%, -10% | −1,9% | 12,1% | 2,5 | 0,00% | US$10,25 | US$11,30 |
-| **Optimista · Plataforma multimarca** | 10% | Celsius: 3%, 5%, 5%, 4%, 4%; Alani Nu: 35%, 25%, 18%, 12%, 10%; Rockstar: -3%, -3%, -3%, -3%, -3% | 12,2% | 22,1% | 1,5 | 4,99% | US$32,87 | US$37,08 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$21,15** | **US$23,68** |
+| **Optimista · Plataforma multimarca** | 10% | Celsius: 3%, 5%, 5%, 4%, 4%; Alani Nu: 35%, 25%, 18%, 12%, 10%; Rockstar: -3%, -3%, -3%, -3%, -3% | 12,2% | 22,1% | 1,5 | 4,99% | US$32,88 | US$37,09 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$21,16** | **US$23,69** |
 
 Base es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). Conservadora (35%) es la continuación de lo que muestra la factura. Disrupción (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). Optimista (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -321,9 +321,9 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 |---|---:|---:|---:|---:|---:|
 | 2,2% | 13,41 | 15,35 | 17,29 | 19,23 | 21,17 |
 | 4,2% | 14,52 | 16,71 | 18,90 | 21,09 | 23,28 |
-| 6,2% | 15,73 | 18,20 | 20,67 | 23,14 | 25,61 |
-| 8,2% | 17,07 | 19,85 | 22,63 | 25,41 | 28,19 |
-| 10,2% | 18,54 | 21,67 | 24,79 | 27,92 | 31,05 |
+| 6,2% | 15,74 | 18,21 | 20,68 | 23,15 | 25,62 |
+| 8,2% | 17,08 | 19,86 | 22,64 | 25,42 | 28,20 |
+| 10,2% | 18,55 | 21,67 | 24,80 | 27,93 | 31,05 |
 
 
 ### Pre-mortem
@@ -366,7 +366,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 Frente al DCF Base (US$25,35), el valor intrínseco principal, el precio está por encima en 8%.
 
-Frente al DCF esperado de las historias (US$21,15 con la beta de la hoja; US$23,68 con la propuesta), el precio está por encima en 30% y por encima en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$21,16 con la beta de la hoja; US$23,69 con la propuesta), el precio está por encima en 30% y por encima en 16%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -377,9 +377,9 @@ Frente al DCF esperado de las historias (US$21,15 con la beta de la hoja; US$23,
 | Historia en una frase | Portafolio liderado por Alani Nu; la marca Celsius se estanca |  |
 | Probabilidades | Base 40% / Conservadora 35% / Disrupción 15% / Optimista 10% |  |
 | DCF Base hoy (valor intrínseco principal) | US$25,35 |  |
-| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$21,15 / US$23,68 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$21,16 / US$23,69 |  |
 | Precio con MOS sobre el DCF esperado | US$13,75 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$10,25 a US$37,08 |  |
+| Rango (historia más débil a más fuerte) | US$10,25 a US$37,09 |  |
 | Confianza | Media-baja: el margen y la duración de Alani son muy inciertos |  |
 | Qué cambiaría la opinión | Los indicadores de la tabla anterior, en especial Celsius y Alani al consumidor |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

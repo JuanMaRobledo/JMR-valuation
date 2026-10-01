@@ -18,9 +18,9 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | DCF técnico anterior (caso Base de la hoja) | US$28,19 | US$23,05 |
 | **DCF Base (valor intrínseco principal)** | US$25,24 | US$23,05 |
 | DCF Conservadora | US$20,07 | US$17,82 |
-| DCF Disrupción | US$11,71 | US$8,92 |
+| DCF Disrupción | US$11,71 | US$8,91 |
 | DCF Optimista | US$32,88 | US$30,76 |
-| DCF esperado por probabilidades (complemento) | US$24,28 | US$22,06 |
+| DCF esperado por probabilidades (complemento) | US$24,28 | US$22,05 |
 | Precio con MOS sobre el esperado | US$15,78 | US$14,34 |
 
 ## Hallazgos y correcciones
@@ -68,6 +68,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$23,05 (antes US$25,24). El DCF esperado de las cuatro historias, complementario, es US$22,06 (antes US$24,28); precio con margen de seguridad sobre el esperado US$14,34. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$23,05 (antes US$25,24). El DCF esperado de las cuatro historias, complementario, es US$22,05 (antes US$24,28); precio con margen de seguridad sobre el esperado US$14,34. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.
