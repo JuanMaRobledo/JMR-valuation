@@ -6,14 +6,15 @@
    "fuentes": "Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn)",
    "evidencia": "ROIC 30-72% en 2021-2026",
    "amenaza": "Retorno del capex de IA (historia B, 25%)",
-   "roic_actual": 0.2591,
+   "roic_actual": 0.2653,
    "roic_industria": 0.2932,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0848,
-   "roic_terminal": 0.259,
+   "roic_terminal": 0.265,
    "roic_terminal_antes": 0.259,
    "ventaja": "ventaja durable",
-   "referencia": 0.2591
+   "referencia": 0.2653,
+   "nota_rd": "ROIC actual recalculado el 1-oct-2026 tras alinear el conversor de I+D con el LTM."
   },
   "GOOG": {
    "fuentes": "Escala y efectos de red en búsqueda, YouTube y Android; datos",
@@ -170,7 +171,7 @@
    "fuentes": "Red de dos lados (comercios y usuarios) y marca en el checkout",
    "evidencia": "ROIC 13-25% en 2021-2026",
    "amenaza": "Billeteras nativas: historias B y D suman 40%",
-   "roic_actual": 0.1775,
+   "roic_actual": 0.1777,
    "roic_industria": null,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0905,
@@ -178,13 +179,14 @@
    "roic_terminal_antes": null,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): red de dos lados (fuente fuerte), pero con erosión visible: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas → estrecho.",
    "ventaja": "ventaja que se desvanece",
-   "referencia": 0.1775
+   "referencia": 0.1777,
+   "nota_rd": "ROIC actual recalculado el 1-oct-2026 tras alinear el conversor de I+D con el LTM."
   },
   "DUOL": {
    "fuentes": "Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos",
    "evidencia": "ROIC por encima del costo de capital en 2021-2026 (serie volátil)",
    "amenaza": "IA generalista (D, 10%) y costos de cambio bajos",
-   "roic_actual": 0.2559,
+   "roic_actual": 0.2924,
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
    "costo_capital_terminal": 0.0922,
@@ -192,7 +194,8 @@
    "roic_terminal_antes": null,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): marca joven y producto fácil de sustituir (costos de cambio bajos): no cuenta como fuente estructural.",
    "ventaja": "sin ventaja defendible",
-   "referencia": 0.2559
+   "referencia": 0.2924,
+   "nota_rd": "ROIC actual recalculado el 1-oct-2026 tras alinear el conversor de I+D con el LTM."
   },
   "ONON": {
    "fuentes": "Marca y tecnología (CloudTec), joven",
@@ -225,27 +228,29 @@
    "fuentes": "Efectos de red de dos lados",
    "evidencia": "ROIC por encima del costo de capital solo desde 2024 (menos de 3 años)",
    "amenaza": "Robotaxis; revisar en 2027",
-   "roic_actual": 0.1238,
+   "roic_actual": 0.1256,
    "roic_industria": 0.13,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0922,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
-   "referencia": 0.1238
+   "referencia": 0.1256,
+   "nota_rd": "ROIC actual recalculado el 1-oct-2026 tras alinear el conversor de I+D con el LTM."
   },
   "PLTR": {
    "fuentes": "Costos de cambio en gobierno",
    "evidencia": "ROIC con plusvalía de 5-12% en 2025-LTM, cerca del costo de capital; serie poco confiable",
    "amenaza": "Comoditización (D, 10%); revisar cuando haya 3 años de datos limpios",
-   "roic_actual": 1.6576,
+   "roic_actual": 1.7029,
    "roic_industria": 0.2932,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0923,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
-   "referencia": 0.2932
+   "referencia": 0.2932,
+   "nota_rd": "ROIC actual recalculado el 1-oct-2026 tras alinear el conversor de I+D con el LTM."
   },
   "EPAM": {
    "fuentes": "Servicios de ingeniería con costos de cambio moderados",

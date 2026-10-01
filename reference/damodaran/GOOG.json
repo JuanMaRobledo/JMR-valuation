@@ -39,7 +39,9 @@
      0.2,
      0.2
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · La IA conversacional erosiona Search",
@@ -68,39 +70,12 @@
      0.1
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Gemini y Cloud dominan la plataforma de IA",
-   "prob": 0.2,
-   "margen": 0.37,
-   "s2c": 1.0,
-   "crec": {
-    "Google Services": [
-     0.13,
-     0.11,
-     0.1,
-     0.09,
-     0.08
-    ],
-    "Google Cloud": [
-     0.55,
-     0.4,
-     0.3,
-     0.25,
-     0.2
-    ],
-    "Other Bets": [
-     0.4,
-     0.4,
-     0.4,
-     0.4,
-     0.4
-    ]
-   }
-  },
-  {
-   "nombre": "D · Remedios antimonopolio y guerra de precios en IA",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "margen": 0.27,
    "crec": {
@@ -126,7 +101,42 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Remedios antimonopolio y guerra de precios en IA",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Gemini y Cloud dominan la plataforma de IA",
+   "prob": 0.2,
+   "margen": 0.37,
+   "s2c": 1.0,
+   "crec": {
+    "Google Services": [
+     0.13,
+     0.11,
+     0.1,
+     0.09,
+     0.08
+    ],
+    "Google Cloud": [
+     0.55,
+     0.4,
+     0.3,
+     0.25,
+     0.2
+    ],
+    "Other Bets": [
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.4
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -161,7 +171,7 @@
    "Baja-media"
   ]
  ],
- "tasas_base_nota": "Para empresas de más de US$50.000 millones, la mediana de crecimiento real a cinco años es 1,5% (≈4% nominal). Crecer 11,7% anual (historia A) lo logró ~13%; 16% (historia C), ~5%. Alphabet es una excepción probada (creció 14-15% en 2024-2025 y 24% en el 2T26 con ~US$450.000 millones de ventas), pero la visión externa recuerda lo raro que es sostenerlo cinco años más.",
+ "tasas_base_nota": "Para empresas de más de US$50.000 millones, la mediana de crecimiento real a cinco años es 1,5% (≈4% nominal). Crecer 11,7% anual (historia A) lo logró ~13%; 16% (historia D), ~5%. Alphabet es una excepción probada (creció 14-15% en 2024-2025 y 24% en el 2T26 con ~US$450.000 millones de ventas), pero la visión externa recuerda lo raro que es sostenerlo cinco años más.",
  "crecimiento": {
   "texto": "Ingresos de US$307.394 millones (2023, +8,7%), US$350.018 millones (2024, +13,9%) y US$402.836 millones (2025, +15,1%); LTM US$445.866 millones. En el 2T26 los ingresos crecieron 24% (US$119.800 millones): Google Services +15% (US$94.500 millones; Search +17%, YouTube +13%) y Google Cloud +82% (US$24.800 millones). Tras la revisión del 30-sep-2026, la hoja supone 18% el próximo año y 11% en los años 2-5 (antes 11% y 7%, muy por debajo del ritmo actual). La división LTM de las historias (Services ~US$364.000 millones, Cloud ~US$80.000 millones) es una estimación propia.",
   "tabla": {
@@ -222,9 +232,9 @@
   "texto": "El margen operativo subió de 27,4% (2023) a ~33% y fue 34% en el 2T26, con Cloud ya rentable. La hoja supone 32,5% el próximo año y 35% de objetivo (antes 33,5%). Dos fuerzas se cruzan: la escala de Cloud sube el margen, y la depreciación del capex de IA y el costo de servir respuestas generativas en Search lo bajan. Las historias van de 27% (remedios y guerra de precios) a 37% (plataforma de IA dominante)."
  },
  "reinversion": {
-  "texto": "Esta es la pieza que más cambió. El capex se triplicó en dos años (US$91.447 millones en 2025) y el FCFF cayó de US$71.236 millones a US$14.612 millones. Con un capex 2026 de US$195-205 mil millones, la hoja pasó a un sales-to-capital de 1,2 (años 1-5) y 1,5 (años 6-10), antes 2,5 y 2: la reinversión anterior (~US$14.000 millones al año) era una fracción del gasto real. En la historia C se baja a 1,0 porque crecer tanto en Cloud exige aún más centros de datos. El valor depende de que ese capital rinda por encima del costo de capital: la demanda de Cloud (+82%) es la mejor evidencia a favor. Ventaja durable: escala y efectos de red en búsqueda, YouTube y Android, con ROIC estable de 24-31% y la Búsqueda todavía creciendo. El ROIC después del año 10 es 28,6%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "Esta es la pieza que más cambió. El capex se triplicó en dos años (US$91.447 millones en 2025) y el FCFF cayó de US$71.236 millones a US$14.612 millones. Con un capex 2026 de US$195-205 mil millones, la hoja pasó a un sales-to-capital de 1,2 (años 1-5) y 1,5 (años 6-10), antes 2,5 y 2: la reinversión anterior (~US$14.000 millones al año) era una fracción del gasto real. En la historia D se baja a 1,0 porque crecer tanto en Cloud exige aún más centros de datos. El valor depende de que ese capital rinda por encima del costo de capital: la demanda de Cloud (+82%) es la mejor evidencia a favor. Ventaja durable: escala y efectos de red en búsqueda, YouTube y Android, con ROIC estable de 24-31% y la Búsqueda todavía creciendo. El ROIC después del año 10 es 28,6%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (40%) es lo que muestra 2026: Search sigue creciendo y Cloud se vuelve un segundo motor que desacelera con la escala. B (25%) es la erosión de la Búsqueda por la IA conversacional (competencia de OpenAI, cambios en el comportamiento). C (20%) es Alphabet como plataforma dominante de IA (modelos, chips y nube). D (15%) combina remedios antimonopolio más duros y una guerra de precios en IA que baja márgenes. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (40%) es lo que muestra 2026: Search sigue creciendo y Cloud se vuelve un segundo motor que desacelera con la escala. B (25%) es la erosión de la Búsqueda por la IA conversacional (competencia de OpenAI, cambios en el comportamiento). C (15%) combina remedios antimonopolio más duros y una guerra de precios en IA que baja márgenes. D (20%) es Alphabet como plataforma dominante de IA (modelos, chips y nube). En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Las respuestas generativas reducen los clics y el precio por consulta: Search deja de crecer aunque las búsquedas suban.",
   "El capex de IA sobreinvierte: hay exceso de capacidad, precios de cómputo en caída y deterioro de activos.",

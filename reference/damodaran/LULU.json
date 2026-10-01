@@ -39,7 +39,9 @@
      0.09,
      0.08
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Pérdida estructural frente a Alo y Vuori",
@@ -68,38 +70,12 @@
      0.05
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La marca se recupera",
-   "prob": 0.15,
-   "margen": 0.21,
-   "crec": {
-    "Américas": [
-     -0.04,
-     0.04,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "China continental": [
-     0.12,
-     0.14,
-     0.12,
-     0.1,
-     0.1
-    ],
-    "Resto del mundo": [
-     0.1,
-     0.12,
-     0.12,
-     0.1,
-     0.1
-    ]
-   }
-  },
-  {
-   "nombre": "D · Moda que pasa: declive de la marca",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.1,
    "crec": {
@@ -125,7 +101,41 @@
      0.02
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Moda que pasa: declive de la marca",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · La marca se recupera",
+   "prob": 0.15,
+   "margen": 0.21,
+   "crec": {
+    "Américas": [
+     -0.04,
+     0.04,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "China continental": [
+     0.12,
+     0.14,
+     0.12,
+     0.1,
+     0.1
+    ],
+    "Resto del mundo": [
+     0.1,
+     0.12,
+     0.12,
+     0.1,
+     0.1
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -216,7 +226,7 @@
  "reinversion": {
   "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 2 en la hoja (años 1-5) y 2,5 después. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Ventaja que se desvanece: marca premium de 27 años, pero con comparables de −10% a −12% en Norteamérica, rebajas y un ROIC que bajó de 52% a 27%. El ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (15,8%)."
  },
- "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (15%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. D (10%) es el declive de una marca de moda. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. B (35%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como A. C (10%) es el declive de una marca de moda. D (15%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Alo y Vuori siguen ganando a la clienta joven y lululemon queda como marca de «generación anterior».",
   "Los aranceles se quedan y lululemon no puede trasladarlos a precio sin perder volumen.",

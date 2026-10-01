@@ -7,7 +7,9 @@ analysis_date: "2026-09-30"
 # Celsius Holdings, Inc. (CELH) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF Base de US$18,12 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja no se modifica. Los múltiplos son precio relativo y se comentan en otras secciones.
+**Escenarios e historias unificados:** A, B, C y D son los cuatro escenarios DCF activos. La cifra principal es el valor intrínseco esperado US$18,53; la historia central A vale US$22,22 y el rango es US$8,94–28,84. El MOS 35% se aplica al esperado: US$12,05. El antiguo caso Base de la hoja (US$18,12) se conserva solo como calibración técnica; no es el DCF de la historia central A. Los múltiplos y su mezcla son lecturas auxiliares con sus propios supuestos.
+
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$18,12 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -30,7 +32,7 @@ Con ventas LTM de US$3.047 millones, la empresa está en el tramo **$3,000-4,500
 |---|---:|---:|
 | A · Alani lidera y Celsius se estabiliza | 8,6% | 42% |
 | B · Alani crece, Celsius sigue cediendo | 4,1% | 69% |
-| C · La moda se desgasta | -1,9% | 92% |
+| C · Tesis de disrupción · Deterioro de los fundamentales | -1,9% | 92% |
 | D · Plataforma multimarca | 12,2% | 24% |
 
 Para Celsius hay evidencia que justifica estar algo por encima de la tasa base (categoría creciendo, Alani al alza, distribución de PepsiCo) y evidencia en contra (marca original estancada, ciclos de moda en energéticas). El CAGR histórico de 68% no es evidencia útil: mezcla hipercrecimiento orgánico de una marca pequeña con compras.
@@ -58,14 +60,14 @@ Para Celsius hay evidencia que justifica estar algo por encima de la tasa base (
 
 **Riesgo.** La hoja usa una beta de regresión de 1,5, que refleja sobre todo la volatilidad de la acción en su auge y caída. Damodaran usa la beta bottom-up del sector: bebidas no alcohólicas tiene 0,58 desapalancada y corregida por caja (27 empresas, enero de 2026), ~0,6 reapalancada para Celsius. Celsius es más riesgosa que el promedio del sector (una sola categoría, moda, un distribuidor dominante), por lo que 1,0 es un punto medio defendible. El valor cambia menos de lo que parece porque el costo de capital terminal de la hoja está fijo en 9%.
 
-| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
+| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
 | Hoja (regresión o la cargada en el libro) | 1,50 | 11,7% | 11,1% | US$18,12 |
 | Bottom-up del sector (Beverage (Soft), reapalancada) | 0,62 | 7,8% | 7,5% | US$22,18 |
 | Propuesta (sector ajustado por riesgo propio) | 1,00 | 9,4% | 9,1% | US$20,31 |
 
 
-### Supuestos vigentes verificados
+### Calibración técnica anterior C/B/O (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -74,33 +76,136 @@ Para Celsius hay evidencia que justifica estar algo por encima de la tasa base (
 | Margen año 1 (base ajustada del modelo) | 12,0% | 12,0% | 12,0% |
 | Margen objetivo | 11,0% | 17,0% | 21,0% |
 
-Ventas/capital: 2,5x en años 1–5 y 2,0x en 6–10. WACC: 11,1%. Ke: 11,7%. Impuesto efectivo: 24,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas.
+Ventas/capital: 2,5x en años 1–5 y 2,0x en 6–10. WACC: 11,1%. Ke: 11,7%. Impuesto efectivo: 24,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo Base con la historia A.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
-| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base | DCF con ROIC terminal = costo de capital |
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
 | Sin ventaja defendible | 11,8% | 29,0% | 9,0% | = costo de capital | US$18,12 | US$18,12 |
 
 Fuentes de ventaja: Marca en una categoría con barreras bajas. Evidencia: ROIC volátil (−39% a 104%). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
+### De dónde sale el cálculo: de la historia al valor por acción
+
+El valor principal de US$18,53 se obtiene ejecutando cuatro DCF completos de diez años más valor terminal y ponderándolos por sus probabilidades. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. No se obtiene aplicando descuentos al antiguo Base de US$18,12 ni mezclando el DCF con múltiplos. La historia central A vale US$22,22; «central» y «esperado» son conceptos distintos.
+
+
+#### 1. Datos de partida y origen de los supuestos
+
+| Entrada | Valor usado | Origen y tratamiento |
+|---|---|---|
+| Ingresos LTM | US$3.047 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 1.426 + 1.433 + 189 = 3.047. |
+| Margen inicial del DCF | 12,0% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
+| Impuesto | 24,00% en años 1–5; 24,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
+| Descuento | WACC 11,13% → 9,00% | Tasa libre de riesgo 4,99%, beta 1,50, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 2,50x en años 1–5; 2,00x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. A usa 2,50x en años 1–5. B usa 2,50x en años 1–5. C usa 2,50x en años 1–5. D usa 1,50x en años 1–5. |
+| Crecimiento perpetuo | A/B/D: 4,99%; C: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. C se estabiliza sin recuperarse: parte de su crecimiento del año 5 (-1,2%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | A/B/C/D: 9,00% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Puente al patrimonio | Caja 631; deuda 691; acciones 286,5 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
+
+
+#### 2. Cómo se convierte cada historia en ingresos
+
+Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
+
+Ejemplo A, año 1: 1.426 × 1,00 + 1.433 × 1,25 + 189 × 0,95 = US$3.396,14 millones. Frente a 3.047, el crecimiento consolidado es 11,45%. En los años 2–5 es 10,07%, 8,86%, 6,83%, 5,77%; las ventas del año 5 son US$4.597,64 millones. El 8,6% de la tabla es el crecimiento anual compuesto de los cinco años: (4.597,64 / 3.047)^(1/5) − 1; no se usa como tasa constante.
+
+
+#### 3. Del ingreso al flujo libre y su valor presente
+
+NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
+
+En A, año 1: NOPAT = 3.396,14 × 12,00% × (1 − 24,00%) = US$309,73 millones. La reinversión es US$136,80 millones y el FCFF es US$172,93 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 55,4% (4,99% / 9,00%); B, 55,4% (4,99% / 9,00%); C, 0,0% (0,00% / 9,00%); D, 55,4% (4,99% / 9,00%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+
+
+#### 4. Puente numérico de los cuatro DCF
+
+Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
+
+| Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
+|---|---:|---:|---:|---:|---:|
+| A | 2.729,60 | 3.697,30 | 6.426,90 | 6.367,40 | 22,22 |
+| B | 2.084,07 | 2.411,03 | 4.495,10 | 4.435,60 | 15,48 |
+| C | 1.610,61 | 1.010,63 | 2.621,24 | 2.561,74 | 8,94 |
+| D | 3.092,78 | 5.229,67 | 8.322,45 | 8.262,95 | 28,84 |
+
+Ejemplo A: (2.729,60 + 3.697,30 + 631 − 691) / 286,5 = US$22,22 por acción. El terminal representa 57,5% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+
+
+#### 5. Valor esperado, probabilidades y margen de seguridad
+
+Las probabilidades 40% / 35% / 15% / 10% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
+
+Valor esperado = 0,40 × 22,224771 + 0,35 × 15,482025 + 0,15 × 8,941502 + 0,10 × 28,841026 = US$18,533945 ≈ US$18,53. Los aportes son US$8,89 + US$5,42 + US$1,34 + US$2,88 por acción.
+
+Precio con MOS = valor esperado × (1 − 35%) = 18,533945 × 0,65 = US$12,047064 ≈ US$12,05. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. No se aplica al antiguo Base ni a la historia central A.
+
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; central H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (A), 46 (B), 70 (C) y 94 (D); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
+
+
+### Las cuatro tesis: base, conservadora, disrupción y optimista
+
+Estas etiquetas describen las historias A–D activas. La tesis base es A, con un DCF de US$22,22; el valor esperado de US$18,53 combina las cuatro tesis con sus probabilidades. La antigua calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+
+
+#### A · Tesis base: Alani lidera y Celsius se estabiliza
+
+**Qué plantea.** Es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%).
+
+**Traducción al modelo.** Celsius crece 0%, 2%, 3%, 3%, 3%; Alani Nu crece 25%, 18%, 14%, 10%, 8%; Rockstar crece -5%, -5%, -5%, -5%, -5%. El crecimiento anual compuesto de cinco años es 8,6%; el margen operativo objetivo es 19,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 40%; DCF: US$22,22 por acción.
+
+**Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (ventas al consumidor Celsius (Circana): −2%; ventas al consumidor Alani Nu: +55,7%; participación del portafolio: 20,1%). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
+
+
+#### B · Tesis conservadora: Alani crece, Celsius sigue cediendo
+
+**Qué plantea.** Es la continuación de lo que muestra la factura.
+
+**Traducción al modelo.** Celsius crece -6%, -4%, -2%, 0%, 0%; Alani Nu crece 18%, 12%, 9%, 7%, 6%; Rockstar crece -8%, -8%, -8%, -8%, -8%. El crecimiento anual compuesto de cinco años es 4,1%; el margen operativo objetivo es 16,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 35%; DCF: US$15,48 por acción.
+
+**Cómo contrastarla.** La apoyarían: ventas al consumidor Celsius (Circana): ≤ −8%; ventas al consumidor Alani Nu: ≤ +10%; participación del portafolio: ≤ 19%; parte del crecimiento sin azúcar que captura: ≤ 20%.
+
+
+#### C · Tesis de disrupción · Deterioro de los fundamentales: La moda se desgasta
+
+**Qué plantea.** Recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar).
+
+**Traducción al modelo.** Celsius crece -10%, -8%, -5%, -3%, -2%; Alani Nu crece 8%, 3%, 0%, 0%, 0%; Rockstar crece -10%, -10%, -10%, -10%, -10%. El crecimiento anual compuesto de cinco años es -1,9%; el margen operativo objetivo es 12,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 0,00%: los años 6–10 pasan de -1,2% a ese nivel, sin recuperación. Probabilidad: 15%; DCF: US$8,94 por acción.
+
+**Cómo contrastarla.** La apoyaría, con más intensidad y duración que B: ventas al consumidor Celsius (Circana): ≤ −8%; ventas al consumidor Alani Nu: ≤ +10%; participación del portafolio: ≤ 19%; parte del crecimiento sin azúcar que captura: ≤ 20%.
+
+
+#### D · Tesis optimista: Plataforma multimarca
+
+**Qué plantea.** Exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras.
+
+**Traducción al modelo.** Celsius crece 3%, 5%, 5%, 4%, 4%; Alani Nu crece 35%, 25%, 18%, 12%, 10%; Rockstar crece -3%, -3%, -3%, -3%, -3%. El crecimiento anual compuesto de cinco años es 12,2%; el margen operativo objetivo es 22,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 10%; DCF: US$28,84 por acción.
+
+**Cómo contrastarla.** La confirmarían: ventas al consumidor Celsius (Circana): ≥ 0%; ventas al consumidor Alani Nu: ≥ +25%; participación del portafolio: ≥ 21%; parte del crecimiento sin azúcar que captura: ≥ 40%.
+
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: A/B/D: 4,99%; C: 0,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+
+
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | Crecimiento anual del grupo | Margen objetivo | Sales-to-capital | Valor/acción (beta 1,50) | Valor/acción (beta 1,00) |
-|---|---:|---|---:|---:|---:|---:|---:|
-| **A · Alani lidera y Celsius se estabiliza** | 40% | Celsius: 0%, 2%, 3%, 3%, 3%; Alani Nu: 25%, 18%, 14%, 10%, 8%; Rockstar: -5%, -5%, -5%, -5%, -5% | 8,6% | 19% | 2,5 | US$22,22 | US$24,95 |
-| **B · Alani crece, Celsius sigue cediendo** | 35% | Celsius: -6%, -4%, -2%, 0%, 0%; Alani Nu: 18%, 12%, 9%, 7%, 6%; Rockstar: -8%, -8%, -8%, -8%, -8% | 4,1% | 16% | 2,5 | US$15,48 | US$17,30 |
-| **C · La moda se desgasta** | 15% | Celsius: -10%, -8%, -5%, -3%, -2%; Alani Nu: 8%, 3%, 0%, 0%, 0%; Rockstar: -10%, -10%, -10%, -10%, -10% | -1,9% | 12% | 2,5 | US$9,40 | US$10,40 |
-| **D · Plataforma multimarca** | 10% | Celsius: 3%, 5%, 5%, 4%, 4%; Alani Nu: 35%, 25%, 18%, 12%, 10%; Rockstar: -3%, -3%, -3%, -3%, -3% | 12,2% | 22% | 1,5 | US$28,84 | US$32,58 |
-| **Valor esperado** | 100% |  |  |  |  | **US$18,60** | **US$20,85** |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,50) | Valor/acción (beta 1,00) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| **A · Alani lidera y Celsius se estabiliza** | 40% | Celsius: 0%, 2%, 3%, 3%, 3%; Alani Nu: 25%, 18%, 14%, 10%, 8%; Rockstar: -5%, -5%, -5%, -5%, -5% | 8,6% | 19% | 2,5 | 4,99% | US$22,22 | US$24,95 |
+| **B · Alani crece, Celsius sigue cediendo** | 35% | Celsius: -6%, -4%, -2%, 0%, 0%; Alani Nu: 18%, 12%, 9%, 7%, 6%; Rockstar: -8%, -8%, -8%, -8%, -8% | 4,1% | 16% | 2,5 | 4,99% | US$15,48 | US$17,30 |
+| **C · Tesis de disrupción · Deterioro de los fundamentales: La moda se desgasta** | 15% | Celsius: -10%, -8%, -5%, -3%, -2%; Alani Nu: 8%, 3%, 0%, 0%, 0%; Rockstar: -10%, -10%, -10%, -10%, -10% | -1,9% | 12% | 2,5 | 0,00% | US$8,94 | US$9,87 |
+| **D · Plataforma multimarca** | 10% | Celsius: 3%, 5%, 5%, 4%, 4%; Alani Nu: 35%, 25%, 18%, 12%, 10%; Rockstar: -3%, -3%, -3%, -3%, -3% | 12,2% | 22% | 1,5 | 4,99% | US$28,84 | US$32,58 |
+| **Valor esperado** | 100% |  |  |  |  |  | **US$18,53** | **US$20,78** |
 
-A es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). B (35%) es la continuación de lo que muestra la factura. C (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). D (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+A es la más probable (40%) porque los datos al consumidor del 2T26 la respaldan (Celsius −2%, Alani +55,7%). B (35%) es la continuación de lo que muestra la factura. C (15%) recoge la fracción de empresas que se achican en cinco años y los ciclos conocidos de marcas de energía (Bang, Rockstar). D (10%) exige un crecimiento del tercio superior de su tamaño, un margen cercano al techo y más compras. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF Base (beta 1,50; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF técnico anterior (beta 1,50; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
-Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
 | Crecimiento \ Margen | 13,0% | 15,0% | 17,0% | 19,0% | 21,0% |
 |---|---:|---:|---:|---:|---:|
@@ -149,7 +254,7 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 | Beta 1,50 | 15,2% (16% de las empresas) | 12,6% (22% de las empresas) | 9,3% (39% de las empresas) |
 | Beta 1,00 | 12,6% (22% de las empresas) | 10,1% (35% de las empresas) | 7,0% (51% de las empresas) |
 
-Frente al valor esperado de las historias (US$18,60 con la beta de la hoja; US$20,85 con la propuesta), el precio está por encima en 47% y por encima en 31%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al valor esperado de las historias (US$18,53 con la beta de la hoja; US$20,78 con la propuesta), el precio está por encima en 48% y por encima en 32%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -159,8 +264,10 @@ Frente al valor esperado de las historias (US$18,60 con la beta de la hoja; US$2
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Portafolio liderado por Alani Nu; la marca Celsius se estanca |  |
 | Probabilidades | A 40% / B 35% / C 15% / D 10% |  |
-| Valor esperado (beta de la hoja / propuesta) | US$18,60 / US$20,85 |  |
-| Rango (historia más débil a más fuerte) | US$9,40 a US$32,58 |  |
+| Valor esperado (valor principal) (beta de la hoja / propuesta) | US$18,53 / US$20,78 |  |
+| DCF base hoy (historia A) | US$22,22 |  |
+| Precio con MOS sobre el valor esperado | US$12,05 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$8,94 a US$32,58 |  |
 | Confianza | Media-baja: el margen y la duración de Alani son muy inciertos |  |
 | Qué cambiaría la opinión | Los indicadores de la tabla anterior, en especial Celsius y Alani al consumidor |  |
 | Revisión | Resultados del 3T26 (nov-2026) |  |

@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$25,29 en el escenario Base (rango US$19,90–US$30,76). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$14,08 (−44% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$18,56. El valor intrínseco es el DCF: US$25,29 frente a un precio de referencia de US$12,31 (+105%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$22,83.** Historia central A: US$26,06; rango US$12,55–US$30,25; precio con MOS 35% sobre el esperado: US$14,84; precio de referencia US$12,31. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$25,29) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$25,29 por acción y los múltiplos, US$14,08 hoy: 44% por debajo del DCF, fuera del rango de ±25%. La brecha no es una inconsistencia del modelo: el mercado brasileño paga 5-7x EBITDA por la educación superior y Afya cotiza anclada a la relación de canje con Yduqs. El DCF manda; los múltiplos muestran cuánto descuenta hoy el mercado local.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · La escasez de plazas sostiene precio y margen | 45% | US$26,06 | US$11,73 |
+| B · Madurez: precio real plano | 30% | US$20,67 | US$6,20 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Se liberan plazas y cae el precio | 15% | US$12,55 | US$1,88 |
+| D · Maduran los campus y crece lo digital | 10% | US$30,25 | US$3,02 |
+| **DCF esperado** | 100% | **US$22,83** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$25,29 por acción y los múltiplos, US$14,08 hoy: 44% por debajo del DCF, fuera del rango de ±25%. La brecha no es una inconsistencia del modelo: el mercado brasileño paga 5-7x EBITDA por la educación superior y Afya cotiza anclada a la relación de canje con Yduqs. El DCF manda; los múltiplos muestran cuánto descuenta hoy el mercado local.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$19,90 | US$11,63 | US$14,94 | US$14,92 | US$21,40 |
-| Base | US$25,29 | US$14,08 | US$18,56 | US$14,92 | US$27,08 |
-| Optimista | US$30,76 | US$16,59 | US$22,26 | US$14,92 | US$33,01 |
+| Conservador | US$19,90 | US$11,63 | US$14,94 | US$14,84 | US$21,40 |
+| Base | US$25,29 | US$14,08 | US$18,56 | US$14,84 | US$27,08 |
+| Optimista | US$30,76 | US$16,59 | US$22,26 | US$14,84 | US$33,01 |
 
 ## 2. Datos
 
@@ -104,7 +113,7 @@ Múltiplos consolidados hoy: US$11,63 / US$14,08 / US$16,59 · DCF hoy: US$19,90
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para AFYA la diferencia es de −44% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$25,29 por acción y los múltiplos, US$14,08 hoy: 44% por debajo del DCF, fuera del rango de ±25%. La brecha no es una inconsistencia del modelo: el mercado brasileño paga 5-7x EBITDA por la educación superior y Afya cotiza anclada a la relación de canje con Yduqs. El DCF manda; los múltiplos muestran cuánto descuenta hoy el mercado local.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para AFYA la diferencia es de −44% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$25,29 por acción y los múltiplos, US$14,08 hoy: 44% por debajo del DCF, fuera del rango de ±25%. La brecha no es una inconsistencia del modelo: el mercado brasileño paga 5-7x EBITDA por la educación superior y Afya cotiza anclada a la relación de canje con Yduqs. El DCF manda; los múltiplos muestran cuánto descuenta hoy el mercado local.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 

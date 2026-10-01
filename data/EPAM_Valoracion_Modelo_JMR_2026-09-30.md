@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$168,22 en el escenario Base (rango US$113,27–US$239,42). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$109,37 (−35% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$132,91. El valor intrínseco es el DCF: US$168,22 frente a un precio de referencia de US$108,58 (+55%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$148,68.** Historia central A: US$165,87; rango US$81,42–US$218,87; precio con MOS 35% sobre el esperado: US$96,64; precio de referencia US$108,58. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$168,22) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$168,22 por acción y los múltiplos, US$109,37 hoy: 35% por debajo del DCF, fuera del rango de ±25%. Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA); el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · La IA compensa lo que quita: crecimiento moderado | 45% | US$165,87 | US$74,64 |
+| B · Deflación de horas por IA | 30% | US$110,21 | US$33,06 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Los servicios se comoditizan | 10% | US$81,42 | US$8,14 |
+| D · La IA crea demanda de ingeniería | 15% | US$218,87 | US$32,83 |
+| **DCF esperado** | 100% | **US$148,68** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$168,22 por acción y los múltiplos, US$109,37 hoy: 35% por debajo del DCF, fuera del rango de ±25%. Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA); el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$113,27 | US$86,29 | US$97,08 | US$96,82 | US$124,88 |
-| Base | US$168,22 | US$109,37 | US$132,91 | US$96,82 | US$180,47 |
-| Optimista | US$239,42 | US$143,99 | US$182,16 | US$96,82 | US$257,15 |
+| Conservador | US$113,27 | US$86,29 | US$97,08 | US$96,64 | US$124,88 |
+| Base | US$168,22 | US$109,37 | US$132,91 | US$96,64 | US$180,47 |
+| Optimista | US$239,42 | US$143,99 | US$182,16 | US$96,64 | US$257,15 |
 
 ## 2. Datos
 
@@ -104,7 +113,7 @@ Múltiplos consolidados hoy: US$86,29 / US$109,37 / US$143,99 · DCF hoy: US$113
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para EPAM la diferencia es de −35% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$168,22 por acción y los múltiplos, US$109,37 hoy: 35% por debajo del DCF, fuera del rango de ±25%. Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA); el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para EPAM la diferencia es de −35% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$168,22 por acción y los múltiplos, US$109,37 hoy: 35% por debajo del DCF, fuera del rango de ±25%. Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA); el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 

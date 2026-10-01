@@ -18,7 +18,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-LINKED = ("valorEsperado", "precioMOS", "precioMOSMax", "precioMOSHoy", "zonas", "baseMOS", "precioMOSValorEsperado")
+LINKED = ("valorEsperado", "escenariosDCF", "precioMOS", "precioMOSMax", "precioMOSHoy", "zonas", "baseMOS", "precioMOSValorEsperado")
 ZONAS_DESC = ("Value, Deep Value e histórica son bandas heredadas del objetivo FY+3; no son umbrales de valor "
               "intrínseco presente. MOS vigente: valor esperado.")
 
@@ -31,7 +31,8 @@ def normalize(r: dict, old: dict | None, roic_hoja: float | None) -> dict:
     r["precioMOSHoy"] = {k: pm for k in ("conservador", "base", "optimista")}
     r["zonas"]["conMOS"] = {"min": pm, "max": pm, "base": "valor esperado; una cifra, sin escenarios"}
     r["zonas"]["descripcion"] = ZONAS_DESC
-    ve["metodo"] = "Promedio de DCF completos ponderado por probabilidades del analista."
+    ve["metodo"] = ("Escenarios = historias; cada historia es un DCF completo. Valor principal = suma de DCF × probabilidad."
+                    if ve.get("escenariosUnificados") else "Promedio de DCF completos ponderado por probabilidades del analista.")
     for h in ve["historias"]:
         if h.get("roicTerminal") == "hoja":
             h["roicTerminal"] = roic_hoja if roic_hoja else "costo_capital"

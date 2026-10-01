@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$259,30 en el escenario Base (rango US$138,57–US$432,82). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$230,76 (−11% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$242,18. El valor intrínseco es el DCF: US$259,30 frente a un precio de referencia de US$230,67 (+12%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$186,04.** Historia central A: US$204,91; rango US$50,24–US$313,47; precio con MOS 35% sobre el esperado: US$120,93; precio de referencia US$230,67. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$259,30) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · Ciclo de IA largo que desacelera con la escala | 40% | US$204,91 | US$81,96 |
+| B · Ciclo de semiconductores: el capex se corrige | 30% | US$121,20 | US$36,36 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Chips propios de los clientes y corrección fuerte | 10% | US$50,24 | US$5,02 |
+| D · La IA es infraestructura permanente | 20% | US$313,47 | US$62,69 |
+| **DCF esperado** | 100% | **US$186,04** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$138,57 | US$147,21 | US$143,75 | US$120,95 | US$191,00 |
-| Base | US$259,30 | US$230,76 | US$242,18 | US$120,95 | US$344,28 |
-| Optimista | US$432,82 | US$316,58 | US$363,08 | US$120,95 | US$541,36 |
+| Conservador | US$138,57 | US$147,21 | US$143,75 | US$120,93 | US$191,00 |
+| Base | US$259,30 | US$230,76 | US$242,18 | US$120,93 | US$344,28 |
+| Optimista | US$432,82 | US$316,58 | US$363,08 | US$120,93 | US$541,36 |
 
 ## 2. Datos
 
@@ -104,7 +113,7 @@ Múltiplos consolidados hoy: US$147,21 / US$230,76 / US$316,58 · DCF hoy: US$13
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVDA la diferencia es de −11% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para NVDA la diferencia es de −11% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 

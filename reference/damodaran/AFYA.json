@@ -39,7 +39,9 @@
      0.08,
      0.07
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Madurez: precio real plano",
@@ -67,10 +69,12 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Se liberan plazas y cae el precio",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "margen": 0.26,
    "crec": {
@@ -96,7 +100,11 @@
      0.0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Se liberan plazas y cae el precio",
+   "terminal": "estabilizacion"
   },
   {
    "nombre": "D · Maduran los campus y crece lo digital",
@@ -124,7 +132,9 @@
      0.1,
      0.08
     ]
-   }
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [

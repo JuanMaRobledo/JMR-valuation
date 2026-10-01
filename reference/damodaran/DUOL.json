@@ -47,7 +47,9 @@
      0.08,
      0.06
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · La monetización se estanca",
@@ -82,45 +84,12 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La IA sube el ingreso por usuario",
-   "prob": 0.2,
-   "margen": 0.32,
-   "crec": {
-    "Suscripciones": [
-     0.2,
-     0.18,
-     0.16,
-     0.14,
-     0.12
-    ],
-    "Publicidad": [
-     0.18,
-     0.15,
-     0.12,
-     0.1,
-     0.1
-    ],
-    "Duolingo English Test": [
-     0.05,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Compras en la aplicación": [
-     0.15,
-     0.12,
-     0.1,
-     0.1,
-     0.08
-    ]
-   }
-  },
-  {
-   "nombre": "D · La IA generalista comoditiza los idiomas",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.15,
    "crec": {
@@ -152,7 +121,49 @@
      0,
      0
     ]
-   }
+   },
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "La IA generalista comoditiza los idiomas",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · La IA sube el ingreso por usuario",
+   "prob": 0.2,
+   "margen": 0.32,
+   "crec": {
+    "Suscripciones": [
+     0.2,
+     0.18,
+     0.16,
+     0.14,
+     0.12
+    ],
+    "Publicidad": [
+     0.18,
+     0.15,
+     0.12,
+     0.1,
+     0.1
+    ],
+    "Duolingo English Test": [
+     0.05,
+     0.05,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "Compras en la aplicación": [
+     0.15,
+     0.12,
+     0.1,
+     0.1,
+     0.08
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -187,7 +198,7 @@
    "Baja"
   ]
  ],
- "tasas_base_nota": "Para empresas de US$700-1.250 millones, crecer 11,5% anual cinco años (historia A) lo logró ~38%; 15,3% (historia C), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.",
+ "tasas_base_nota": "Para empresas de US$700-1.250 millones, crecer 11,5% anual cinco años (historia A) lo logró ~38%; 15,3% (historia D), ~24%. La hoja suponía 16,6% en los años 1-5; tras la revisión del 30-sep-2026 supone ~11% (12% el primer año), en línea con las reservas y con el ~38% de empresas que lo logra.",
  "crecimiento": {
   "texto": "Ingresos de US$531 millones (2023, +43,7%), US$748 millones (2024, +40,8%) y US$1.038 millones (2025, +38,7%); LTM US$1.145 millones. En el 2T26 los ingresos crecieron 18% (US$298,5 millones), pero las reservas solo 8% (US$289,1 millones). Guía 2026: ingresos US$1.207 millones (+16,3%), reservas US$1.285 millones (+10,9%). Los ingresos van detrás de las reservas: su desaceleración todavía no se ve completa en los ingresos.",
   "tabla": {
@@ -243,7 +254,7 @@
  "reinversion": {
   "texto": "Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Sin ventaja defendible: marca y hábito de uso con costos de cambio bajos; cualquier app o asistente de IA puede enseñar idiomas. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). D (10%) es el riesgo de sustitución por asistentes generalistas.",
+ "prob_texto": "A (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. B (30%) prolonga la brecha actual entre usuarios y reservas. C (10%) es el riesgo de sustitución por asistentes generalistas. D (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Las reservas siguen en ~8-10%: los usuarios nuevos (atraídos por campañas como la recuperación de rachas) pagan menos.",
   "Los asistentes de IA generalistas ofrecen práctica conversacional gratis y erosionan el valor de Max.",

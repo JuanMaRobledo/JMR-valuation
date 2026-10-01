@@ -47,7 +47,9 @@
      0.02,
      0.02
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Guerra de precios con Lilly y genéricos",
@@ -83,45 +85,12 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La nueva generación recupera el liderazgo",
-   "prob": 0.2,
-   "margen": 0.43,
-   "crec": {
-    "Obesidad (Wegovy, Saxenda)": [
-     0.1,
-     0.15,
-     0.15,
-     0.12,
-     0.1
-    ],
-    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
-     -0.04,
-     0,
-     0.02,
-     0.02,
-     0.02
-    ],
-    "Insulinas y otros de diabetes": [
-     -0.04,
-     -0.04,
-     -0.04,
-     -0.04,
-     -0.04
-    ],
-    "Enfermedades raras": [
-     0.03,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ]
-   }
-  },
-  {
-   "nombre": "D · Novo pierde relevancia frente a Lilly",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.3,
    "crec": {
@@ -154,7 +123,48 @@
      0
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Novo pierde relevancia frente a Lilly",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · La nueva generación recupera el liderazgo",
+   "prob": 0.2,
+   "margen": 0.43,
+   "crec": {
+    "Obesidad (Wegovy, Saxenda)": [
+     0.1,
+     0.15,
+     0.15,
+     0.12,
+     0.1
+    ],
+    "Diabetes GLP-1 (Ozempic, Rybelsus)": [
+     -0.04,
+     0,
+     0.02,
+     0.02,
+     0.02
+    ],
+    "Insulinas y otros de diabetes": [
+     -0.04,
+     -0.04,
+     -0.04,
+     -0.04,
+     -0.04
+    ],
+    "Enfermedades raras": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -252,7 +262,7 @@
  "reinversion": {
   "texto": "Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y compra de tres plantas de llenado a Novo Holdings por US$11.700 millones. La hoja usa un sales-to-capital de 0,45 en los años 1-5 (muy intensivo en capital) y 1,1 después. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: ese es el mayor riesgo de destrucción de valor. Ventaja que se desvanece: patentes y escala en diabetes y obesidad, pero pierde participación frente a Lilly, recorta precios y su ROIC bajó de 87% a 36%. El ROIC después del año 10 es 13,1%, el punto medio entre el costo de capital terminal (9,2%) y el promedio de su industria según Damodaran (17,0%)."
  },
- "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. D (10%) es la pérdida de relevancia frente a Lilly y los orales. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. B (30%) es una guerra de precios con Lilly y genéricos que se aceleran. C (10%) es la pérdida de relevancia frente a Lilly y los orales. D (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Lilly (tirzepatida y orforglipron oral) gana también fuera de EE.UU. y Novo queda como segundo jugador con precio más bajo.",
   "CagriSema decepciona frente a la competencia y la cartera nueva no llega a tiempo.",

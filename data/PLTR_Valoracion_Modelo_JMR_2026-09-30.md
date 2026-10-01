@@ -14,13 +14,22 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$85,42 en el escenario Base (rango US$54,52–US$185,67). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$123,49 (+45% frente al DCF). Con los pesos de la categoría «Crecimiento» (60% DCF, 40% múltiplos), el ponderado hoy (lectura secundaria) es US$100,65. El valor intrínseco es el DCF: US$85,42 frente a un precio de referencia de US$188,17 (−55%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$51,02.** Historia central A: US$55,62; rango US$15,72–US$95,62; precio con MOS 35% sobre el esperado: US$33,16; precio de referencia US$188,17. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$85,42) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$85,42 por acción y los múltiplos, US$123,49 hoy: 45% por encima del DCF, fuera del rango de ±25%. Los múltiplos suponen que en FY+3 Palantir cotiza como el software de crecimiento alto de hoy; P/E y P/OCF quedan muy por encima de EV/EBITDA porque la utilidad normalizada de FY+3 supera al EBITDA, algo que conviene revisar en la proyección.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · Hipercrecimiento que desacelera con la escala | 40% | US$55,62 | US$22,25 |
+| B · Se normaliza en un software de alta calidad | 30% | US$26,93 | US$8,08 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos | 10% | US$15,72 | US$1,57 |
+| D · Sistema operativo de la IA empresarial | 20% | US$95,62 | US$19,12 |
+| **DCF esperado** | 100% | **US$51,02** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$85,42 por acción y los múltiplos, US$123,49 hoy: 45% por encima del DCF, fuera del rango de ±25%. Los múltiplos suponen que en FY+3 Palantir cotiza como el software de crecimiento alto de hoy; P/E y P/OCF quedan muy por encima de EV/EBITDA porque la utilidad normalizada de FY+3 supera al EBITDA, algo que conviene revisar en la proyección.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$54,52 | US$67,01 | US$59,52 | US$33,16 | US$83,18 |
+| Conservador | US$55,14 | US$67,28 | US$60,00 | US$33,16 | US$83,96 |
 | Base | US$85,42 | US$123,49 | US$100,65 | US$33,16 | US$144,66 |
 | Optimista | US$185,67 | US$219,14 | US$199,06 | US$33,16 | US$300,61 |
 
@@ -37,10 +46,10 @@ Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$85,42 por acción y lo
 |---|---:|---:|---:|---|
 | Crecimiento año 1 | 35,0% | 68,0% | 89,2% | Input B27; Valuation output C55/C106 |
 | Crecimiento años 2-5 | 30,0% | 35,0% | 50,0% | Input B29 |
-| Margen EBIT objetivo | 45,3% | 48,0% | 53,0% | Input B30; Valuation output C45/C47 |
+| Margen EBIT objetivo | 45,8% | 48,0% | 53,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 4,00 / 4,50 | — | Input B32/B33 |
-| DCF por acción hoy | US$54,52 | US$85,42 | US$185,67 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$55,14 | US$85,42 | US$185,67 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 5,00%, beta apalancada 1,25, ERP 4,46%, Ke 10,58%, costo de la deuda después de impuestos 4,50%, peso del patrimonio 100,0%, WACC inicial 10,58% y terminal 9,23%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -72,43 +81,43 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$73,71 | US$115,49 | US$251,02 |
-| EV/EBITDA | 10% | US$71,81 | US$139,23 | US$210,00 |
-| EV/FCFF | 15% | US$81,97 | US$173,87 | US$363,85 |
-| P/E | 5% | US$134,61 | US$271,82 | US$462,10 |
-| P/FCFE | 5% | US$129,39 | US$185,71 | US$514,37 |
-| P/OCF | 5% | US$125,62 | US$249,68 | US$511,91 |
-| **Ponderado FY+3** | 100% | US$83,18 | US$144,66 | US$300,61 |
+| DCF Damodaran | 60% | US$74,55 | US$115,49 | US$251,02 |
+| EV/EBITDA | 10% | US$72,31 | US$139,23 | US$210,00 |
+| EV/FCFF | 15% | US$82,53 | US$173,87 | US$363,85 |
+| P/E | 5% | US$135,60 | US$271,82 | US$462,10 |
+| P/FCFE | 5% | US$130,31 | US$185,71 | US$514,37 |
+| P/OCF | 5% | US$126,51 | US$249,68 | US$511,91 |
+| **Ponderado FY+3** | 100% | US$83,96 | US$144,66 | US$300,61 |
 
 Valor presente (Ke 10,58%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$46,69 | US$49,42 | US$53,12 | US$49,74 | OK |
+| EV/EBITDA | Conservador | US$46,69 | US$49,64 | US$53,48 | US$49,94 | OK |
 | EV/EBITDA | Base | US$80,39 | US$90,79 | US$102,98 | US$91,39 | OK |
 | EV/EBITDA | Optimista | US$92,73 | US$120,87 | US$155,33 | US$122,97 | OK |
-| EV/FCFF | Conservador | US$53,29 | US$56,31 | US$60,63 | US$56,74 | OK |
+| EV/FCFF | Conservador | US$53,29 | US$56,56 | US$61,04 | US$56,96 | OK |
 | EV/FCFF | Base | US$102,16 | US$113,20 | US$128,61 | US$114,66 | OK |
 | EV/FCFF | Optimista | US$162,86 | US$208,86 | US$269,13 | US$213,62 | OK |
-| P/E | Conservador | US$84,85 | US$91,39 | US$99,56 | US$91,93 | OK |
+| P/E | Conservador | US$84,85 | US$91,83 | US$100,30 | US$92,33 | OK |
 | P/E | Base | US$153,43 | US$175,63 | US$201,05 | US$176,70 | OK |
 | P/E | Optimista | US$198,85 | US$263,46 | US$341,80 | US$268,03 | OK |
-| P/FCFE | Conservador | US$81,93 | US$87,89 | US$95,70 | US$88,51 | OK |
+| P/FCFE | Conservador | US$81,93 | US$88,30 | US$96,39 | US$88,87 | OK |
 | P/FCFE | Base | US$106,61 | US$120,09 | US$137,36 | US$121,35 | OK |
 | P/FCFE | Optimista | US$225,40 | US$293,68 | US$380,46 | US$299,84 | OK |
-| P/OCF | Conservador | US$79,52 | US$85,32 | US$92,92 | US$85,92 | OK |
+| P/OCF | Conservador | US$79,52 | US$85,72 | US$93,58 | US$86,27 | OK |
 | P/OCF | Base | US$143,31 | US$161,46 | US$184,68 | US$163,15 | OK |
 | P/OCF | Optimista | US$224,39 | US$292,31 | US$378,63 | US$298,45 | OK |
 
-Múltiplos consolidados hoy: US$67,01 / US$123,49 / US$219,14 · DCF hoy: US$54,52 / US$85,42 / US$185,67 · Ponderado hoy: US$59,52 / US$100,65 / US$199,06 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$67,28 / US$123,49 / US$219,14 · DCF hoy: US$55,14 / US$85,42 / US$185,67 · Ponderado hoy: US$60,00 / US$100,65 / US$199,06 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PLTR la diferencia es de +45% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$85,42 por acción y los múltiplos, US$123,49 hoy: 45% por encima del DCF, fuera del rango de ±25%. Los múltiplos suponen que en FY+3 Palantir cotiza como el software de crecimiento alto de hoy; P/E y P/OCF quedan muy por encima de EV/EBITDA porque la utilidad normalizada de FY+3 supera al EBITDA, algo que conviene revisar en la proyección.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para PLTR la diferencia es de +45% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$85,42 por acción y los múltiplos, US$123,49 hoy: 45% por encima del DCF, fuera del rango de ±25%. Los múltiplos suponen que en FY+3 Palantir cotiza como el software de crecimiento alto de hoy; P/E y P/OCF quedan muy por encima de EV/EBITDA porque la utilidad normalizada de FY+3 supera al EBITDA, algo que conviene revisar en la proyección.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$188,28 supone que los ingresos crecen 57,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 41,6% (+16,3 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$188,17 supone que los ingresos crecen 57,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 41,6% (+16,3 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$115,49 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 10,6%, WACC de los años 4-10 10,0%, ROE de FY+3 103,4% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 

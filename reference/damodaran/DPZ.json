@@ -31,7 +31,9 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Los agregadores erosionan la ventaja",
@@ -53,31 +55,12 @@
      0.03
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Agregadores e internacional aceleran",
-   "prob": 0.2,
-   "margen": 0.21,
-   "crec": {
-    "Cadena de suministro": [
-     0.06,
-     0.06,
-     0.06,
-     0.055,
-     0.055
-    ],
-    "Regalías, tiendas propias y fondo de publicidad": [
-     0.07,
-     0.07,
-     0.07,
-     0.065,
-     0.06
-    ]
-   }
-  },
-  {
-   "nombre": "D · El sistema de franquicias se debilita",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.05,
    "margen": 0.17,
    "crec": {
@@ -96,7 +79,34 @@
      0.01
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "El sistema de franquicias se debilita",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Agregadores e internacional aceleran",
+   "prob": 0.2,
+   "margen": 0.21,
+   "crec": {
+    "Cadena de suministro": [
+     0.06,
+     0.06,
+     0.06,
+     0.055,
+     0.055
+    ],
+    "Regalías, tiendas propias y fondo de publicidad": [
+     0.07,
+     0.07,
+     0.07,
+     0.065,
+     0.06
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -181,7 +191,7 @@
  "reinversion": {
   "texto": "Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Ventaja durable: marca probada de más de 60 años y escala logística en reparto, con ROIC de 65-78% en 2021-2026. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. D (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. B (25%) es el riesgo de que los agregadores sigan quitando pedidos. C (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). D (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Las ventas mismas tiendas de EE.UU. son negativas varios trimestres: los agregadores hacen irrelevante la logística propia.",
   "Grandes franquiciados internacionales (como Domino's Pizza Enterprises o Jubilant) cierran tiendas o reducen aperturas.",

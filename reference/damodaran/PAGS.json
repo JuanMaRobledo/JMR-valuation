@@ -31,7 +31,9 @@
      0.08,
      0.08
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · El PIX y la competencia erosionan",
@@ -52,31 +54,12 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Crece el banco: crédito y depósitos",
-   "prob": 0.15,
-   "margen": 0.17,
-   "crec": {
-    "Transacciones (adquirencia)": [
-     0,
-     0.02,
-     0.03,
-     0.03,
-     0.03
-    ],
-    "Ingresos financieros y banca": [
-     0.15,
-     0.14,
-     0.13,
-     0.12,
-     0.1
-    ]
-   }
-  },
-  {
-   "nombre": "D · Crisis de crédito en Brasil",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.1,
    "crec": {
@@ -94,7 +77,35 @@
      0.05,
      0.05
     ]
-   }
+   },
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Crisis de crédito en Brasil",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Crece el banco: crédito y depósitos",
+   "prob": 0.15,
+   "margen": 0.17,
+   "crec": {
+    "Transacciones (adquirencia)": [
+     0,
+     0.02,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "Ingresos financieros y banca": [
+     0.15,
+     0.14,
+     0.13,
+     0.12,
+     0.1
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -185,7 +196,7 @@
  "reinversion": {
   "texto": "La reinversión patrimonial se estima como utilidad × crecimiento / ROE; el FCFE es utilidad menos esa retención. Se descuenta al Ke de 14,7%, que converge a 12%. No se suma la liquidez bancaria ni se restan depósitos. El 22,5% de Basilea reportado en 2T muestra holgura, pero no identifica por sí solo capital distribuible: no se agrega un valor por exceso de capital no comprobado. La aproximación requiere que crecimiento de ingresos y beneficios sea comparable; la sensibilidad debe revisarse si cambia el riesgo de crédito o el capital regulatorio. Sin ventaja defendible: no tiene una barrera durable frente a Pix y los bancos digitales, y su ROIC apenas supera el costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (15%) es un banco digital que crece a doble dígito. D (10%) es una crisis de crédito con morosidad en alza.",
+ "prob_texto": "A (45%) es lo que muestra 2025-2026: adquirencia estancada, banco creciendo, ROAE ~15%. B (30%) es la erosión por el PIX y la competencia de Nubank, Mercado Pago y Stone. C (10%) es una crisis de crédito con morosidad en alza. D (15%) es un banco digital que crece a doble dígito. En las historias de erosión (C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "El PIX con crédito (PIX parcelado) reemplaza también a la tarjeta de crédito y la adquirencia se derrumba.",
   "Nubank y Mercado Pago capturan a los microcomercios con cuentas y crédito gratis.",

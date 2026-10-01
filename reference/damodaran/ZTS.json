@@ -31,7 +31,9 @@
      0.04,
      0.04
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Erosión prolongada de franquicias clave",
@@ -53,31 +55,12 @@
      0.03
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · Recuperación fuerte con nuevos productos",
-   "prob": 0.15,
-   "margen": 0.38,
-   "crec": {
-    "Animales de compañía": [
-     0.04,
-     0.08,
-     0.08,
-     0.08,
-     0.07
-    ],
-    "Animales de producción": [
-     0.04,
-     0.04,
-     0.04,
-     0.04,
-     0.04
-    ]
-   }
-  },
-  {
-   "nombre": "D · Genéricos y competencia generalizada",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
    "margen": 0.29,
    "crec": {
@@ -96,7 +79,34 @@
      0.02
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Genéricos y competencia generalizada",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "D · Recuperación fuerte con nuevos productos",
+   "prob": 0.15,
+   "margen": 0.38,
+   "crec": {
+    "Animales de compañía": [
+     0.04,
+     0.08,
+     0.08,
+     0.08,
+     0.07
+    ],
+    "Animales de producción": [
+     0.04,
+     0.04,
+     0.04,
+     0.04,
+     0.04
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
@@ -187,7 +197,7 @@
  "reinversion": {
   "texto": "Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un sales-to-capital de 2. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Ventaja durable: patentes que se renuevan, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%. El ROIC después del año 10 es 16,9%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
- "prob_texto": "A (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (15%) es una recuperación fuerte con nuevos productos. D (10%) es competencia y genéricos generalizados. En las historias de erosión (B y D) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "A (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. B (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como A. C (10%) es competencia y genéricos generalizados. D (15%) es una recuperación fuerte con nuevos productos. En las historias de erosión (B y C) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Los competidores en dermatología (nuevos inhibidores de JAK y anticuerpos) le quitan participación a Apoquel y Cytopoint.",
   "Las dudas de seguridad sobre Librela reducen su uso de forma permanente.",

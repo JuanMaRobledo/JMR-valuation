@@ -14,15 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-Con los supuestos vigentes, el DCF de Damodaran da un valor por acción hoy de US$88,85 en el escenario Base (rango US$47,26–US$154,67). Los cinco múltiplos, elegidos con anclas de mercado y fundamentales y traídos a valor presente en 1, 2 y 3 años, dan US$83,89 (−6% frente al DCF). Con los pesos de la categoría «Madura» (40% DCF, 60% múltiplos), el ponderado hoy (lectura secundaria) es US$85,88. El valor intrínseco es el DCF: US$88,85 frente a un precio de referencia de US$68,91 (+29%).
+**Valor intrínseco principal: DCF esperado de las cuatro historias, US$81,00.** Historia central A: US$89,63; rango US$28,29–US$122,08; precio con MOS 35% sobre el esperado: US$52,65; precio de referencia US$68,91. Cada historia es un DCF completo (hoja «Escenarios e historias»); el detalle está en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base US$88,85) y los múltiplos y el ponderado son lecturas secundarias.
 
-Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
 
-| Escenario | DCF hoy (valor intrínseco) | Múltiplos consolidados hoy (secundario) | Ponderado hoy (secundario) | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Historia | Probabilidad | DCF hoy por acción | Aporte al esperado |
+|---|---:|---:|---:|
+| A · Plataforma madura que escala márgenes | 45% | US$89,63 | US$40,33 |
+| B · Robotaxis y regulación presionan la movilidad | 25% | US$53,68 | US$13,42 |
+| C · Tesis de disrupción · Deterioro de los fundamentales: Waymo y Tesla desintermedian a Uber | 10% | US$28,29 | US$2,83 |
+| D · Uber es la red de los vehículos autónomos | 20% | US$122,08 | US$24,42 |
+| **DCF esperado** | 100% | **US$81,00** | |
+
+Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
+
+| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Conservador | US$47,26 | US$49,25 | US$48,45 | US$52,74 | US$60,01 |
-| Base | US$88,85 | US$83,89 | US$85,88 | US$52,74 | US$116,03 |
-| Optimista | US$154,67 | US$128,84 | US$139,17 | US$52,74 | US$199,36 |
+| Conservador | US$47,78 | US$49,41 | US$48,75 | US$52,65 | US$60,49 |
+| Base | US$88,85 | US$83,89 | US$85,88 | US$52,65 | US$116,03 |
+| Optimista | US$154,67 | US$128,84 | US$139,17 | US$52,65 | US$199,36 |
 
 ## 2. Datos
 
@@ -37,10 +46,10 @@ Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$88,85 por acción y lo
 |---|---:|---:|---:|---|
 | Crecimiento año 1 | 8,0% | 13,0% | 18,0% | Input B27; Valuation output C55/C106 |
 | Crecimiento años 2-5 | 8,0% | 11,0% | 18,0% | Input B29 |
-| Margen EBIT objetivo | 13,1% | 21,0% | 26,0% | Input B30; Valuation output C45/C47 |
+| Margen EBIT objetivo | 13,2% | 21,0% | 26,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,50 / 3,50 | — | Input B32/B33 |
-| DCF por acción hoy | US$47,26 | US$88,85 | US$154,67 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$47,78 | US$88,85 | US$154,67 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 0,80, ERP 4,46%, Ke 8,56%, costo de la deuda después de impuestos 4,21%, peso del patrimonio 91,5%, WACC inicial 8,19% y terminal 9,22%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -72,43 +81,43 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Conservador | Base | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 40% | US$60,46 | US$113,67 | US$197,86 |
-| EV/EBITDA | 20% | US$61,90 | US$132,24 | US$212,59 |
-| EV/FCFF | 10% | US$40,71 | US$74,10 | US$170,99 |
-| P/E | 20% | US$67,37 | US$128,48 | US$181,92 |
-| P/FCFE | 5% | US$63,20 | US$117,49 | US$275,73 |
-| P/OCF | 5% | US$54,91 | US$102,76 | US$208,67 |
-| **Ponderado FY+3** | 100% | US$60,01 | US$116,03 | US$199,36 |
+| DCF Damodaran | 40% | US$61,12 | US$113,67 | US$197,86 |
+| EV/EBITDA | 20% | US$62,25 | US$132,24 | US$212,59 |
+| EV/FCFF | 10% | US$40,93 | US$74,10 | US$170,99 |
+| P/E | 20% | US$67,80 | US$128,48 | US$181,92 |
+| P/FCFE | 5% | US$63,53 | US$117,49 | US$275,73 |
+| P/OCF | 5% | US$55,22 | US$102,76 | US$208,67 |
+| **Ponderado FY+3** | 100% | US$60,49 | US$116,03 | US$199,36 |
 
 Valor presente (Ke 8,56%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Conservador | US$54,28 | US$50,72 | US$48,39 | US$51,13 | OK |
+| EV/EBITDA | Conservador | US$54,28 | US$50,91 | US$48,66 | US$51,28 | OK |
 | EV/EBITDA | Base | US$83,52 | US$96,77 | US$103,38 | US$94,56 | OK |
 | EV/EBITDA | Optimista | US$103,21 | US$140,89 | US$166,18 | US$136,76 | OK |
-| EV/FCFF | Conservador | US$35,78 | US$33,36 | US$31,82 | US$33,66 | OK |
+| EV/FCFF | Conservador | US$35,78 | US$33,48 | US$32,00 | US$33,75 | OK |
 | EV/FCFF | Base | US$48,18 | US$54,48 | US$57,92 | US$53,53 | OK |
 | EV/FCFF | Optimista | US$85,80 | US$114,25 | US$133,66 | US$111,24 | OK |
-| P/E | Conservador | US$58,58 | US$55,17 | US$52,66 | US$55,47 | OK |
+| P/E | Conservador | US$58,58 | US$55,41 | US$53,00 | US$55,66 | OK |
 | P/E | Base | US$78,09 | US$93,21 | US$100,43 | US$90,58 | OK |
 | P/E | Optimista | US$84,00 | US$119,27 | US$142,20 | US$115,16 | OK |
-| P/FCFE | Conservador | US$55,01 | US$51,66 | US$49,41 | US$52,03 | OK |
+| P/FCFE | Conservador | US$55,01 | US$51,84 | US$49,67 | US$52,17 | OK |
 | P/FCFE | Base | US$77,93 | US$86,55 | US$91,84 | US$85,44 | OK |
 | P/FCFE | Optimista | US$142,06 | US$185,68 | US$215,54 | US$181,09 | OK |
-| P/OCF | Conservador | US$47,95 | US$44,93 | US$42,93 | US$45,27 | OK |
+| P/OCF | Conservador | US$47,95 | US$45,09 | US$43,17 | US$45,40 | OK |
 | P/OCF | Base | US$65,54 | US$75,25 | US$80,33 | US$73,71 | OK |
 | P/OCF | Optimista | US$102,64 | US$138,78 | US$163,12 | US$134,85 | OK |
 
-Múltiplos consolidados hoy: US$49,25 / US$83,89 / US$128,84 · DCF hoy: US$47,26 / US$88,85 / US$154,67 · Ponderado hoy: US$48,45 / US$85,88 / US$139,17 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$49,41 / US$83,89 / US$128,84 · DCF hoy: US$47,78 / US$88,85 / US$154,67 · Ponderado hoy: US$48,75 / US$85,88 / US$139,17 (Conservador / Base / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para UBER la diferencia es de −6% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para UBER la diferencia es de −6% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$88,85 por acción y los múltiplos, US$83,89 hoy: 6% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$68,88 supone que los ingresos crecen 6,1% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,4% (−5,3 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$68,91 supone que los ingresos crecen 6,2% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,4% (−5,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$113,67 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 8,6%, WACC de los años 4-10 8,6%, ROE de FY+3 53,8% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
