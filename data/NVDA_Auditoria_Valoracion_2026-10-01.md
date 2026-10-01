@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$259,29 | US$263,61 |
-| Historia A | US$204,91 | US$209,15 |
-| Historia B | US$121,20 | US$125,35 |
-| Historia C | US$50,24 | US$54,31 |
-| Historia D | US$313,47 | US$317,84 |
-| **Valor esperado (valor intrínseco principal)** | **US$186,04** | **US$190,27** |
-| Precio con MOS sobre el esperado | US$120,93 | US$123,67 |
+| DCF técnico anterior (caso Base de la hoja) | US$259,29 | US$263,78 |
+| Historia A | US$204,91 | US$209,34 |
+| Historia B | US$121,20 | US$125,55 |
+| Historia C | US$50,24 | US$54,53 |
+| Historia D | US$313,47 | US$318,00 |
+| **Valor esperado (valor intrínseco principal)** | **US$186,04** | **US$190,45** |
+| Precio con MOS sobre el esperado | US$120,93 | US$123,80 |
 
 ## Hallazgos y correcciones
 
@@ -36,6 +36,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Balance del último 10-Q | Balance Sheet L26 | Arrendamientos de largo plazo | 2.572,0 | 4.985,0 | Arrendamientos operativos de largo plazo al 26-jul-2026 (10-Q); antes 2.572. |
 | Balance del último 10-Q | Balance Sheet L34 | Patrimonio de los accionistas | 157.293,0 | 228.984,0 | Patrimonio al 26-jul-2026 (10-Q); antes 157.293, el cierre de enero de 2026. |
 | Balance del último 10-Q | Balance Sheet L35 | Patrimonio total | 157.293,0 | 228.984,0 | Patrimonio al 26-jul-2026 (10-Q); antes 157.293, el cierre de enero de 2026. |
+| Arrendamientos operativos fuera de la deuda | Input sheet B16 | Deuda (DCF) | ='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | 10.804,0 | LTM = ejercicio 2016.0 + acumulado al 2026-07-26 11838.0 − acumulado del año anterior 3050.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | EPS básico | Income Statement J23 | Basic EPS 2025-01-26 | 2,94 | 2,97 | EPS básico del 10-K (2025-01-26); antes copiaba el diluido. |
 | EPS básico | Income Statement K23 | Basic EPS 2026-01-25 | 4,90 | 4,93 | EPS básico del 10-K (2026-01-25); antes copiaba el diluido. |
@@ -55,11 +56,10 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Salvedades abiertas
 
-- Arrendamientos operativos: la deuda del DCF incluye 5.494,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,23 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.
 - No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF esperado de las cuatro historias: US$190,27 (antes US$186,04); precio con margen de seguridad US$123,67. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF esperado de las cuatro historias: US$190,45 (antes US$186,04); precio con margen de seguridad US$123,80. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

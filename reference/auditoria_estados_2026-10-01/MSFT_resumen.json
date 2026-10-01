@@ -51,6 +51,14 @@
    "tipo": "ROIC terminal (criterio Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26+66594",
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25+66594",
+   "motivo": "Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda. MSFT: se conservan los 66.594 de arrendamientos financieros.",
+   "tipo": "Arrendamientos operativos fuera de la deuda"
+  },
+  {
    "hoja": "Valuation output",
    "celda": "B41",
    "fila": "Invested capital",
@@ -73,15 +81,14 @@
   "D"
  ],
  "salvedades": [
-  "Arrendamientos operativos: la deuda del DCF incluye 16.532,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$2,23 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
   "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
  ],
  "arrendamientos": {
-  "incluye_operativos": true,
+  "incluye_operativos": false,
   "conversor": "No",
   "arrendamientos": 16532,
   "acciones": 7427,
-  "efecto_por_accion": 2.22593240877878
+  "efecto_por_accion": 0.0
  },
  "antes": {
   "dcfTecnico": 467.8868982,
@@ -95,14 +102,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 455.4412628,
-  "valorEsperado": 395.32594872839263,
-  "precioMOS": 256.96186667345523,
+  "dcfTecnico": 459.7046073,
+  "valorEsperado": 398.97766875639127,
+  "precioMOS": 259.33548469165436,
   "historias": {
-   "A": 446.94512684052035,
-   "B": 231.29850671770487,
-   "C": 192.6926873883488,
-   "D": 585.5337311594872
+   "A": 451.15203022947463,
+   "B": 233.47502544955475,
+   "C": 194.8790949038483,
+   "D": 590.5129465017708
   }
  },
  "tramo_tasas_base": ">$50,000 Mn"

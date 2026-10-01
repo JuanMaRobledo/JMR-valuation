@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$311,55 | US$334,80 |
-| Historia A | US$298,81 | US$321,95 |
-| Historia B | US$141,10 | US$162,74 |
-| Historia C | US$110,41 | US$131,99 |
-| Historia D | US$399,94 | US$423,79 |
-| **Valor esperado (valor intrínseco principal)** | **US$251,35** | **US$274,02** |
-| Precio con MOS sobre el esperado | US$163,37 | US$178,11 |
+| DCF técnico anterior (caso Base de la hoja) | US$311,55 | US$336,05 |
+| Historia A | US$298,81 | US$323,20 |
+| Historia B | US$141,10 | US$164,13 |
+| Historia C | US$110,41 | US$133,39 |
+| Historia D | US$399,94 | US$424,96 |
+| **Valor esperado (valor intrínseco principal)** | **US$251,35** | **US$275,31** |
+| Precio con MOS sobre el esperado | US$163,37 | US$178,95 |
 
 ## Hallazgos y correcciones
 
@@ -37,6 +37,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Balance del último 10-Q | Balance Sheet L34 | Patrimonio de los accionistas | 415.265,0 | 640.480,0 | Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025. |
 | Balance del último 10-Q | Balance Sheet L35 | Patrimonio total | 415.265,0 | 640.480,0 | Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025. |
 | ROIC terminal (criterio Damodaran) | Input sheet B50 | ROIC después del año 10 | 0,286 | 0,293 | Ventaja durable: Escala y efectos de red en búsqueda, YouTube y Android; datos. Evidencia: ROIC 24-31% en 2021-2026. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (31,3%): 29,3% (Damodaran, Investment Valuation, cap. 12). |
+| Arrendamientos operativos fuera de la deuda | Input sheet B16 | Deuda (DCF) | ='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25 | ='Balance Sheet'!L20+'Balance Sheet'!L25 | Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda. |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | 34.875,0 | LTM = ejercicio 7242.0 + acumulado al 2026-06-30 25203.0 − acumulado del año anterior -2430.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | EPS básico | Income Statement I23 | Basic EPS 2023-12-31 | 5,80 | 5,84 | EPS básico del 10-K (2023-12-31); antes copiaba el diluido. |
 | EPS básico | Income Statement J23 | Basic EPS 2024-12-31 | 8,04 | 8,13 | EPS básico del 10-K (2024-12-31); antes copiaba el diluido. |
@@ -57,11 +58,10 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Salvedades abiertas
 
-- Arrendamientos operativos: la deuda del DCF incluye 18.037,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$1,47 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.
 - No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF esperado de las cuatro historias: US$274,02 (antes US$251,35); precio con margen de seguridad US$178,11. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF esperado de las cuatro historias: US$275,31 (antes US$251,35); precio con margen de seguridad US$178,95. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

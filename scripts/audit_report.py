@@ -30,7 +30,10 @@ REV = _ROOT / "reference" / "revision_dcf_2026-09-30"
 AUD = _ROOT / "reference" / "auditoria_estados_2026-10-01"
 REF = _ROOT / "reference" / "damodaran"
 FECHA = "2026-10-01"
-TIPO = {"RD": "Conversor de I+D alineado al LTM", "BALANCE": "Balance del último 10-Q", "ROIC": "ROIC terminal (criterio Damodaran)"}
+TIPO = {"RD": "Conversor de I+D alineado al LTM", "BALANCE": "Balance del último 10-Q", "ROIC": "ROIC terminal (criterio Damodaran)",
+        "ARREND": "Arrendamientos operativos fuera de la deuda"}
+BASE = "7361ae29c73368ed2ccedade461d02df9243e5eb"  # Modelo-JMR-datos antes de la auditoría (merge del PR #17)
+NIIF = ("AFYA", "NVO", "ONON", "PAGS")
 
 
 def usd(v):
@@ -80,7 +83,7 @@ def antes_despues(datos: Path, tk: str):
     new = json.loads(Path(f).read_text())
     rel = str(Path(f).relative_to(datos))
     try:
-        old = json.loads(subprocess.check_output(["git", "-C", str(datos), "show", f"HEAD:{rel}"]))
+        old = json.loads(subprocess.check_output(["git", "-C", str(datos), "show", f"{BASE}:{rel}"]))
     except subprocess.CalledProcessError:
         old = new
     return old, new
@@ -118,7 +121,10 @@ def build(datos: Path, tk: str, sh) -> dict:
     dcf0 = (old.get("descuentoMultiples") or {}).get("dcfHoy", {}).get("base")
     dcf1 = new["descuentoMultiples"]["dcfHoy"]["base"]
     salvedades = []
-    if ls["incluye_operativos"] and str(ls["conversor"]).strip().lower() != "yes" and ls["arrendamientos"] > 0:
+    if tk in NIIF and ls["incluye_operativos"]:
+        salvedades.append("Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo "
+                          "financiero, así que su pasivo es deuda; se conserva en la deuda del DCF.")
+    elif ls["incluye_operativos"] and str(ls["conversor"]).strip().lower() != "yes" and ls["arrendamientos"] > 0:
         salvedades.append(
             f"Arrendamientos operativos: la deuda del DCF incluye {es(ls['arrendamientos'], 1)} millones de arrendamientos operativos "
             "mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o "

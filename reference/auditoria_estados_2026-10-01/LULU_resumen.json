@@ -19,6 +19,14 @@
    "tipo": "ROIC terminal (criterio Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+   "motivo": "Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda.",
+   "tipo": "Arrendamientos operativos fuera de la deuda"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -77,15 +85,14 @@
   "D"
  ],
  "salvedades": [
-  "Arrendamientos operativos: la deuda del DCF incluye 2.141,1 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$19,34 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
   "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
  ],
  "arrendamientos": {
-  "incluye_operativos": true,
+  "incluye_operativos": false,
   "conversor": "No",
   "arrendamientos": 2141.127,
   "acciones": 110.710025,
-  "efecto_por_accion": 19.33995588927019
+  "efecto_por_accion": 0.0
  },
  "antes": {
   "dcfTecnico": 167.4420322,
@@ -99,14 +106,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 167.4420322,
-  "valorEsperado": 148.44919604988894,
-  "precioMOS": 103.91443723492225,
+  "dcfTecnico": 179.622149,
+  "valorEsperado": 161.51643041700817,
+  "precioMOS": 113.06150129190571,
   "historias": {
-   "A": 172.24727088595017,
-   "B": 108.34514631430582,
-   "C": 71.3447483225617,
-   "D": 229.96674435497124
+   "A": 184.19317222814556,
+   "B": 123.29348079647527,
+   "C": 87.99775338382307,
+   "D": 239.2444527240087
   }
  },
  "tramo_tasas_base": "$7,000-12,000 Mn"

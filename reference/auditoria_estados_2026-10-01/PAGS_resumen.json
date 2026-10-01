@@ -34,7 +34,7 @@
   "D"
  ],
  "salvedades": [
-  "Arrendamientos operativos: la deuda del DCF incluye 10,9 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,04 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
+  "Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF.",
   "Financiera (DCF de flujo al accionista): el balance LTM de la hoja repite el cierre de 2025 y los flujos de inversión y financiación LTM no están importados. No afectan al valor (utilidad, ROE y costo del patrimonio), pero quedan pendientes de completar.",
   "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
  ],

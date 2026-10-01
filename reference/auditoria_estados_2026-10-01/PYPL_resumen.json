@@ -43,6 +43,14 @@
    "tipo": "ROIC terminal (criterio Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+   "motivo": "Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda.",
+   "tipo": "Arrendamientos operativos fuera de la deuda"
+  },
+  {
    "hoja": "Income Statement",
    "celda": "I23",
    "fila": "Basic EPS 2023-12-31",
@@ -101,16 +109,15 @@
   "D"
  ],
  "salvedades": [
-  "Arrendamientos operativos: la deuda del DCF incluye 810,0 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,95 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
   "La API XBRL de la SEC solo publica hasta mar-2026 para PayPal: se conservaron los flujos LTM a jun-2026 de la hoja.",
   "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
  ],
  "arrendamientos": {
-  "incluye_operativos": true,
+  "incluye_operativos": false,
   "conversor": "No",
   "arrendamientos": 810,
   "acciones": 855.5,
-  "efecto_por_accion": 0.9468147282291058
+  "efecto_por_accion": 0.0
  },
  "antes": {
   "dcfTecnico": 101.1443488,
@@ -124,14 +131,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 104.3694435,
-  "valorEsperado": 93.75242727728488,
-  "precioMOS": 60.93907773023518,
+  "dcfTecnico": 105.8510319,
+  "valorEsperado": 95.01165437639247,
+  "precioMOS": 61.75757534465511,
   "historias": {
-   "A": 108.56041430386857,
-   "B": 65.51518621854447,
-   "C": 47.56139641477065,
-   "D": 136.59696889002413
+   "A": 110.07980475715034,
+   "B": 66.3046295059239,
+   "C": 48.40411284825389,
+   "D": 138.29294732714843
   }
  },
  "tramo_tasas_base": "$12,000-25,000 Mn"

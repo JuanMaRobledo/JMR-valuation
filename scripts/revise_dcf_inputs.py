@@ -27,6 +27,8 @@ _ROOT = Path(__file__).resolve().parents[1]
 OUT = _ROOT / "reference" / "revision_dcf_2026-09-30"
 IS, VO, COC, RD, BSH = "Input sheet", "Valuation output", "Cost of capital worksheet", "R& D converter", "Balance Sheet"
 
+ARREND = 'Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda.'
+
 # (hoja, celda, valor nuevo, motivo)
 CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
     "GOOG": [
@@ -260,6 +262,21 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26+66594",
          "Se suman los arrendamientos financieros (66.594 al 30-jun-2026, 10-K FY26): son deuda (centros de datos) y su costo no está en el EBIT como alquiler. Antes se omitían."),
     ],
+    # Novena ronda (1-oct-2026): arrendamientos operativos fuera de la deuda en las empresas US GAAP (ver motivo).
+    "BSX_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "CELH_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "DUOL_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "EPAM_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "GOOG_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "INTU_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "LULU_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "NKE_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "NVDA_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "PYPL_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "UBER_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "ZTS_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "PLTR_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "MSFT_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25+66594", ARREND + " MSFT: se conservan los 66.594 de arrendamientos financieros.")],
     # CELH_IMPUESTO se aplicó y se revirtió el 30-sep-2026: la hoja ya usa la tasa marginal (24%) desde el año 1
     # ('Valuation output'!C8 = 'Input sheet'!B25); B24 solo alimenta el año base y no cambia el valor.
     "CELH_IMPUESTO": [
