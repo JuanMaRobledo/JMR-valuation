@@ -1,0 +1,430 @@
+{
+ "decision": {
+  "ticker": "CELHN",
+  "etapa_desde": "Dec '24",
+  "etapa_motivo": "A: hasta 2023 Celsius fue una marca única en hipercrecimiento (ventas +102% en 2023, utilidades negativas en 2021-2022): sus múltiplos de 44-136× no describen a la empresa de FY+3. Desde 2024 (ventas +3%) es una marca de bebidas energéticas que madura y, desde 2025, un portafolio de tres marcas distribuido por PepsiCo. Se usa FY2024 como etapa actual.",
+  "historia_excluir": {
+   "*": [
+    "Dec '25",
+    "LTM"
+   ]
+  },
+  "historia_motivo": "FY2025 y LTM se excluyen en todos los métodos: la utilidad y el EBITDA incluyen US$327,5 millones (2025) y US$412,8 millones (LTM) de terminación de distribuidores y otros cargos de una vez (comunicados del 4T25 y 2T26), y el flujo de caja incluye los reembolsos de PepsiCo por esas terminaciones (ingresos diferidos +US$329,6 millones LTM). Con un solo cierre representativo (FY2024), el ancla A es débil y pesa menos (ver λ).",
+  "peers_excluir": {
+   "*": [
+    "KDP"
+   ]
+  },
+  "peers_motivo": "B: bebidas con marca y datos de yfinance al 1-oct-2026: Monster, Coca-Cola, PepsiCo, National Beverage y Vita Coco. Se excluye Keurig Dr Pepper: su compra de JDE Peet's (crecimiento de ingresos de 76%) distorsiona sus múltiplos.",
+  "ajuste_peers": -0.15,
+  "ajuste_motivo": "Ajuste −15%: crecimiento a FY+3 parecido a la mediana (Base ~5,5% frente a ~6-7% de Coca-Cola y PepsiCo; Monster crece más), 0%; margen operativo menor (21% objetivo frente a 29% de Monster y 35% de Coca-Cola), −5%; riesgo propio mayor (una sola categoría, un distribuidor que concentra más de 40% de las ventas, investigación del fiscal de Texas y demandas colectivas), −10%.",
+  "lambda": 0.5,
+  "lambda_motivo": "λ = 0,5: la Celsius de FY+3 (portafolio de tres marcas, crecimiento de un dígito medio, margen ~21%) es distinta de la de FY2024 y el ancla A tiene un solo cierre. Chequeo de crecimiento implícito (1-oct-2026): con λ = 0,5 cuatro múltiplos valen 50-60% más que el DCF en FY+3. Se probó λ = 0,75 y la brecha creció, porque el justificado (C) supone que el retorno de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10 (sin ventaja defendible). La diferencia no es de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos. Se deja λ = 0,5 y la diferencia se explica; el DCF manda.",
+  "fuentes": [
+   "[Celsius Holdings, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)",
+   "[Celsius Holdings, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm)"
+  ],
+  "evaluacion": "Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$37 hoy, ~55% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers."
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 32.62,
+   "A_desc": "mediana Dec '24 (etapa actual) = 32,6x",
+   "A_p25": 32.62,
+   "A_p75": 32.62,
+   "A_max": 70.63,
+   "A_excluidos": [
+    [
+     "Dec '16",
+     -7.54,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     -8.12,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     -5.51,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     -69.02,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -659.43,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -13.06,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '20",
+     136.02,
+     "> 2,5x la mediana (44.1x)"
+    ]
+   ],
+   "B_mediana": 22.12,
+   "B_ajustada": 18.8,
+   "B_n": 5,
+   "B_regresion": null,
+   "B_peers": "MNST 26,7x, KO 23,6x, PEP 11,4x, FIZZ 11,1x, COCO 22,1x",
+   "B_excluidos": [
+    "KDP"
+   ],
+   "C": {
+    "Conservador": 17.9,
+    "Base": 19.85,
+    "Optimista": 26.63
+   },
+   "mercado": 25.71,
+   "lambda": 0.5,
+   "conservador": 18.36,
+   "base": 22.78,
+   "optimista": 25.87,
+   "factor_cons": 0.806,
+   "factor_opt": 1.136,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    18.8,
+    32.62
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 32.615950920245396,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 24.16,
+   "A_desc": "mediana Dec '24 (etapa actual) = 24,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 24.16,
+   "A_p75": 24.16,
+   "A_max": 37.24,
+   "A_excluidos": [
+    [
+     "Dec '16",
+     -8.79,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     -7.74,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     -4.95,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -18.52,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     96.63,
+     "> 2,5x la mediana (37.2x)"
+    ],
+    [
+     "Dec '20",
+     417.78,
+     "> 2,5x la mediana (37.2x)"
+    ],
+    [
+     "Dec '23",
+     95.98,
+     "> 2,5x la mediana (37.2x)"
+    ]
+   ],
+   "B_mediana": 24.28,
+   "B_ajustada": 20.64,
+   "B_n": 5,
+   "B_regresion": null,
+   "B_peers": "MNST 37,6x, KO 25,8x, PEP 21,2x, FIZZ 16,6x, COCO 24,3x",
+   "B_excluidos": [
+    "KDP"
+   ],
+   "C": {
+    "Conservador": 24.94,
+    "Base": 27.88,
+    "Optimista": 37.48
+   },
+   "mercado": 22.4,
+   "lambda": 0.5,
+   "conservador": 23.19,
+   "base": 25.14,
+   "optimista": 28.54,
+   "factor_cons": 0.922,
+   "factor_opt": 1.135,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    20.64,
+    27.88
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 26.179242424242396,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 43.18,
+   "A_desc": "mediana Dec '24 (etapa actual) = 43,2x",
+   "A_p25": 43.18,
+   "A_p75": 43.18,
+   "A_max": 108.9,
+   "A_excluidos": [
+    [
+     "Dec '18",
+     -5.27,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '22",
+     -13.98,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     10.06,
+     "< 0,4x la mediana (56.8x), caída puntual"
+    ],
+    [
+     "Dec '20",
+     152.45,
+     "> 2,5x la mediana (56.8x)"
+    ],
+    [
+     "Dec '21",
+     497.2,
+     "> 2,5x la mediana (56.8x)"
+    ]
+   ],
+   "B_mediana": 25.86,
+   "B_ajustada": 21.98,
+   "B_n": 5,
+   "B_regresion": null,
+   "B_peers": "MNST 39,0x, KO 25,9x, PEP 16,5x, FIZZ 16,0x, COCO 31,5x",
+   "B_excluidos": [
+    "KDP"
+   ],
+   "C": {
+    "Conservador": 20.74,
+    "Base": 23.02,
+    "Optimista": 30.49
+   },
+   "mercado": 32.58,
+   "lambda": 0.5,
+   "conservador": 23.51,
+   "base": 27.8,
+   "optimista": 32.83,
+   "factor_cons": 0.846,
+   "factor_opt": 1.181,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    21.98,
+    43.18
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 42.68896551724138,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 25.85,
+   "A_desc": "mediana Dec '24 (etapa actual) = 25,9x",
+   "A_p25": 25.85,
+   "A_p75": 25.85,
+   "A_max": 36.33,
+   "A_excluidos": [
+    [
+     "Dec '16",
+     -13.67,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     -9.41,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     -5.6,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -18.68,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     110.93,
+     "> 2,5x la mediana (36.3x)"
+    ],
+    [
+     "Dec '20",
+     433.03,
+     "> 2,5x la mediana (36.3x)"
+    ],
+    [
+     "Dec '23",
+     102.08,
+     "> 2,5x la mediana (36.3x)"
+    ]
+   ],
+   "B_mediana": 25.91,
+   "B_ajustada": 22.02,
+   "B_n": 5,
+   "B_regresion": null,
+   "B_peers": "MNST 39,7x, KO 25,9x, PEP 18,5x, FIZZ 17,2x, COCO 26,5x",
+   "B_excluidos": [
+    "KDP"
+   ],
+   "C": {
+    "Conservador": 23.53,
+    "Base": 26.14,
+    "Optimista": 34.43
+   },
+   "mercado": 23.94,
+   "lambda": 0.5,
+   "conservador": 21.81,
+   "base": 25.04,
+   "optimista": 27.88,
+   "factor_cons": 0.871,
+   "factor_opt": 1.113,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    22.02,
+    26.14
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 23.515321192715643,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 23.54,
+   "A_desc": "mediana Dec '24 (etapa actual) = 23,5x",
+   "A_p25": 23.54,
+   "A_p75": 23.54,
+   "A_max": 32.7,
+   "A_excluidos": [
+    [
+     "Dec '16",
+     -13.67,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '17",
+     -9.52,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '18",
+     -5.7,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '21",
+     -19.28,
+     "métrica negativa o ~0"
+    ],
+    [
+     "Dec '19",
+     110.93,
+     "> 2,5x la mediana (32.7x)"
+    ],
+    [
+     "Dec '20",
+     356.61,
+     "> 2,5x la mediana (32.7x)"
+    ],
+    [
+     "Dec '23",
+     89.5,
+     "> 2,5x la mediana (32.7x)"
+    ]
+   ],
+   "B_mediana": 22.67,
+   "B_ajustada": 19.27,
+   "B_n": 5,
+   "B_regresion": null,
+   "B_peers": "MNST 36,9x, KO 22,7x, PEP 12,8x, FIZZ 14,9x, COCO 25,0x",
+   "B_excluidos": [
+    "KDP"
+   ],
+   "C": {
+    "Conservador": 22.73,
+    "Base": 25.7,
+    "Optimista": 35.02
+   },
+   "mercado": 21.4,
+   "lambda": 0.5,
+   "conservador": 19.94,
+   "base": 23.55,
+   "optimista": 27.22,
+   "factor_cons": 0.847,
+   "factor_opt": 1.156,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    19.27,
+    25.7
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 24.20766523269454,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   16.675744672556338,
+   24.025191601053447,
+   32.42839904779824
+  ],
+  "multiplos_hoy": [
+   30.67006725280271,
+   37.4388576730281,
+   47.78446754378044
+  ],
+  "ponderado_hoy": [
+   22.273473704654883,
+   29.39065802984331,
+   38.57082644619112
+  ],
+  "brecha_base": 0.5583167158336626,
+  "fila_origen": 53
+ }
+}

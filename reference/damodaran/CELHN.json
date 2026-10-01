@@ -1,0 +1,404 @@
+{
+ "ticker": "CELHN",
+ "empresa": "Celsius Holdings, Inc.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Beverage (Soft)",
+ "historia": "En cinco a diez años Celsius Holdings es un portafolio de tres marcas de bebidas energéticas (CELSIUS, Alani Nu y Rockstar) que vende alrededor de una de cada cinco latas de la categoría en Estados Unidos a través de la red de PepsiCo, y que crece más o menos al ritmo de la categoría: un dígito medio, con Alani Nu ganando terreno, la marca CELSIUS estabilizada y Rockstar en lento declive. El crecimiento ya no sale de una sola marca que conquista anaqueles, sino de la categoría, de la innovación de sabores y, en menor medida, del exterior. El margen operativo sostenible está cerca del normalizado de hoy (~21%), por debajo del de Monster (29%) porque Celsius vende a través de un distribuidor que se queda con parte del margen y porque necesita promoción para sostener tres marcas. Reinvierte poco en activos (fabrica con terceros) pero compra crecimiento cuando lo necesita, como hizo con Alani Nu y Rockstar. El riesgo es de marca y de moda: una categoría con barreras bajas, un distribuidor dominante y un escrutinio regulatorio creciente sobre la cafeína.",
+ "filtro": [
+  [
+   "La categoría de bebidas energéticas en EE.UU. sigue creciendo más que el consumo (≥5% nominal anual)",
+   "Sí",
+   "Sí: +15,2% en dólares en 52 semanas a abr-2026 ([Beverage Industry con datos de Circana, 10-jul-2026](https://www.bevindustry.com/articles/98511-2026-state-of-the-beverage-industry-energy-drinks-shots-market-embraces-innovation-functionality))",
+   "Sí, desacelerando hacia un dígito alto"
+  ],
+  [
+   "Alani Nu sigue creciendo más que la categoría tres a cinco años",
+   "Sí",
+   "Sí: ventas al consumidor +55,7% en el 2T26 ([Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm))",
+   "Probable, pero desacelerando; la facturación crece menos que el consumo por el traspaso a distribución directa"
+  ],
+  [
+   "La marca CELSIUS vuelve a crecer en 2027",
+   "Sí",
+   "Sí: la caída al consumidor es leve (−2%) y la gerencia espera volver a crecer al cierre de 2026 ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html))",
+   "Incierto: lleva tres trimestres cediendo participación"
+  ],
+  [
+   "El margen operativo llega a 25% o más",
+   "Sí",
+   "Poco: exige recuperar margen bruto (48% hoy) hacia el de Monster (56%) sin su escala ni su distribución propia",
+   "Improbable en el caso central"
+  ]
+ ],
+ "tasas_base_nota": "En dólares de 2015 Celsius está en el tramo de ventas de US$2.000-3.000 millones. Allí la mediana de crecimiento real a 5 años es 5,1% y la media 6,2% (más ~2,5% de inflación para comparar con cifras nominales). La Base ({cagrA} nominal) está en la mitad de la distribución; alejarse de la tasa base hacia arriba exigiría que la marca CELSIUS vuelva a ganar participación, algo que hoy no muestran los datos.",
+ "segmentos": {
+  "Celsius": 1425.4,
+  "Alani Nu": 1433.1,
+  "Rockstar": 188.7
+ },
+ "crecimiento": {
+  "texto": "Las ventas LTM (julio 2025-junio 2026) suman US$3.047,3 millones: CELSIUS ~US$1.425 millones, Alani Nu ~US$1.433 millones y Rockstar ~US$189 millones (cálculo propio: 2025 + 1S26 − 1S25, [Celsius, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm) y [Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)). El +85,5% de 2025 fue casi todo comprado: Alani Nu aportó US$1.001,9 millones desde abril y Rockstar US$55,6 millones desde fines de agosto; la marca CELSIUS creció 7,5% en 2025 y cayó ~4% en el 1S26 (−11,7% en el 2T26). Al consumidor la foto es mejor: el portafolio vendió +31,0% en el 2T26, CELSIUS −2% y Alani Nu +55,7%; la diferencia entre facturación y consumo viene de inventario, de la poda de presentaciones y del paso a distribución directa, que aumenta las bonificaciones que se descuentan del ingreso ([Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)).",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2024",
+    "2025",
+    "LTM jun-26 (cálculo propio)",
+    "Ventas al consumidor 2T26"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "CELSIUS",
+     "1.355,6",
+     "1.457,7",
+     "~1.425,4",
+     "−2%"
+    ],
+    [
+     "Alani Nu",
+     "— (comprada en abr-25)",
+     "1.001,9 (abr-dic)",
+     "~1.433,1",
+     "+55,7%"
+    ],
+    [
+     "Rockstar",
+     "—",
+     "55,6 (sep-dic)",
+     "~188,7",
+     "−13%"
+    ],
+    [
+     "Total",
+     "1.355,6",
+     "2.515,3",
+     "3.047,3",
+     "+31,0%"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen operativo GAAP LTM es 5,3%, deprimido por US$466,2 millones de partidas de una vez: US$412,8 millones de terminación de distribuidores de Alani Nu (en su mayoría reembolsados por PepsiCo y registrados como ingreso diferido), US$28,1 millones de compras e integración, US$24,6 millones de un litigio y el ajuste de inventario de las compras ([Celsius, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm), [Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)). Sin ellas el margen LTM es 20,6%; el del 2T26 por sí solo, ~20% (EBITDA ajustado 22,5% menos depreciación 1,2% y compensación en acciones 1,3%). El margen bruto bajó de 51,5% a 48,1% en un año por promociones, mezcla y aluminio, y la gerencia lo espera «en la parte alta de los 40» en el 3T26 ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html)). El comparable maduro es Monster: margen bruto 55,8% y operativo 29,2% en 2025 con 2,7 veces las ventas ([Monster Beverage, 10-K 2025 (XBRL de la SEC)](https://data.sec.gov/api/xbrl/companyfacts/CIK0000865752.json)). La brecha de margen bruto (~8 puntos) es estructural en parte: Celsius paga la distribución de PepsiCo y financia promociones de tres marcas."
+ },
+ "reinversion": {
+  "texto": "El crecimiento orgánico casi no pide activos fijos: Celsius fabrica con terceros y el capex LTM fue US$45,9 millones (1,5% de las ventas), apenas por encima de la depreciación (US$37,0 millones). El capital de trabajo neto ronda 8% de las ventas. Lo caro fueron las compras: Alani Nu costó US$1.278,8 millones netos de caja más pagos contingentes, y el acuerdo con PepsiCo (Rockstar más el pago implícito por la capitanía de la categoría) se pagó con preferentes valuadas en US$935,8 millones ([Celsius, 10-K 2025, 2-mar-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000024/celh-20251231.htm)). Por eso el capital invertido incluye el preferente: con él, el ROIC normalizado LTM es ~16,5%; sin él parecería 39%.",
+  "tabla": {
+   "cols": [
+    "Compra",
+    "Precio pagado",
+    "Ventas",
+    "Retorno sobre lo pagado (cálculo propio)"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "l"
+   ],
+   "rows": [
+    [
+     "Alani Nu (abr-2025)",
+     "US$1.278,8M netos de caja + contingente",
+     "~1.433 LTM",
+     "~20% antes de impuestos con margen ~18%: por encima del costo de capital"
+    ],
+    [
+     "Rockstar y capitanía (ago-2025)",
+     "US$935,8M en preferentes (incluye el pago implícito a PepsiCo por US$598,8M)",
+     "~189 LTM (~266 anualizado)",
+     "Bajo por sí solo: se justifica por la distribución de PepsiCo"
+    ]
+   ]
+  }
+ },
+ "riesgo": {
+  "beta_propuesta": 1.0,
+  "texto": "La beta desapalancada del sector Beverage (Soft) es 0,58 en EE.UU. y 0,54 global (Damodaran, enero de 2026); reapalancada con la deuda de Celsius da ~0,63. La beta de regresión semanal es 1,55 a cinco años y 0,83 a dos años. Se usa 1,0: el sector corresponde a refrescos diversificados como Coca-Cola o PepsiCo, mientras que Celsius depende de una sola categoría discrecional, de un distribuidor que concentra más de 40% de sus ventas y de marcas jóvenes. Con la beta del sector el DCF Base sube a ~US$26,3; con la de regresión a cinco años baja a ~US$21,1."
+ },
+ "historias": [
+  {
+   "id": "A",
+   "tesis": "base",
+   "nombre": "Base · Portafolio de tres marcas que crece con la categoría",
+   "prob": 0.45,
+   "margen": 0.21,
+   "crec": {
+    "Celsius": [
+     0.04,
+     0.04,
+     0.04,
+     0.035,
+     0.03
+    ],
+    "Alani Nu": [
+     0.08,
+     0.1,
+     0.09,
+     0.08,
+     0.07
+    ],
+    "Rockstar": [
+     0.35,
+     -0.06,
+     -0.05,
+     -0.04,
+     -0.03
+    ]
+   },
+   "tesis_que": "La categoría crece un dígito alto que se modera; la marca CELSIUS deja de caer al cierre de 2026, como espera la gerencia, y crece 3-4% con la categoría menos algo de participación; Alani Nu crece 7-10% (la facturación converge al consumo cuando termina el traspaso a PepsiCo); Rockstar suma un año completo (+35% en el año 1 por anualización) y después cae 3-6%. El margen vuelve de ~20% a 21% por escala en gastos generales y sinergias de compras, sin recuperar todo el margen bruto. No hay nuevas compras.",
+   "tesis_contraste": "Ventas al consumidor de CELSIUS ≥ 0% desde el 4T26, Alani Nu ≥ +15% y margen bruto ≥ 48%."
+  },
+  {
+   "id": "B",
+   "tesis": "conservadora",
+   "nombre": "Conservadora · Alani crece, CELSIUS sigue cediendo",
+   "prob": 0.25,
+   "margen": 0.185,
+   "crec": {
+    "Celsius": [
+     -0.03,
+     -0.03,
+     -0.02,
+     -0.01,
+     0.0
+    ],
+    "Alani Nu": [
+     0.05,
+     0.06,
+     0.05,
+     0.04,
+     0.04
+    ],
+    "Rockstar": [
+     0.3,
+     -0.1,
+     -0.08,
+     -0.06,
+     -0.05
+    ]
+   },
+   "tesis_que": "La marca CELSIUS sigue perdiendo participación tres años más frente a Monster, Red Bull y las marcas de nicho; Alani Nu crece por debajo de la categoría cuando madura; las promociones se quedan altas y el margen operativo se estanca en 18,5%.",
+   "tesis_contraste": "CELSIUS al consumidor negativo en 2027 y participación del portafolio < 19%."
+  },
+  {
+   "id": "C",
+   "tesis": "disrupción",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "descripcion": "La moda pasa y la regulación de la cafeína alcanza a Alani Nu",
+   "prob": 0.15,
+   "margen": 0.13,
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion",
+   "crec": {
+    "Celsius": [
+     -0.08,
+     -0.08,
+     -0.06,
+     -0.04,
+     -0.03
+    ],
+    "Alani Nu": [
+     -0.05,
+     -0.12,
+     -0.1,
+     -0.06,
+     -0.04
+    ],
+    "Rockstar": [
+     0.25,
+     -0.15,
+     -0.12,
+     -0.1,
+     -0.08
+    ]
+   },
+   "tesis_que": "Alani Nu sigue el camino de Bang: la investigación del fiscal de Texas y las demandas sobre cafeína y adolescentes ([14 News, investigación del fiscal de Texas, 4-jun-2026](https://www.14news.com/2026/06/04/state-opens-investigation-into-celsius-over-caffeine-levels-alani-nu-energy-drinks-marketed-teens/)) derivan en restricciones de venta o etiquetado, la moda se desplaza y las ventas del portafolio caen cinco años; el margen baja a 13% porque el marketing y la estructura no se ajustan al mismo ritmo, y el negocio se estabiliza sin recuperación.",
+   "tesis_contraste": "Alani Nu al consumidor negativo dos trimestres seguidos o una restricción regulatoria por edad."
+  },
+  {
+   "id": "D",
+   "tesis": "optimista",
+   "nombre": "Optimista · Plataforma multimarca con PepsiCo y expansión internacional",
+   "prob": 0.15,
+   "margen": 0.24,
+   "crec": {
+    "Celsius": [
+     0.07,
+     0.09,
+     0.08,
+     0.07,
+     0.06
+    ],
+    "Alani Nu": [
+     0.12,
+     0.13,
+     0.11,
+     0.09,
+     0.08
+    ],
+    "Rockstar": [
+     0.35,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "tesis_que": "La capitanía de PepsiCo da espacio en refrigeradores y la marca CELSIUS vuelve a ganar participación; Alani Nu crece doble dígito dos años más; el exterior llega a la meta de más de 15% de las ventas en cinco años ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html)); el margen bruto recupera 3 puntos y el operativo sube a 24%, aún por debajo de Monster.",
+   "tesis_contraste": "Portafolio ≥ 22% de participación y margen bruto ≥ 50% en 2027."
+  }
+ ],
+ "prob_texto": "La Base pesa 45%: es lo que dicen los datos al consumidor (portafolio +31%, CELSIUS −2%) y la guía de la gerencia, sin suponer que la marca CELSIUS recupera el crecimiento de 2022-2024. La Conservadora pesa 25% porque es lo que hoy muestra la facturación de CELSIUS. La Disrupción pesa 15%: la categoría ya vio marcas desplomarse (Bang, Rockstar) y hay una investigación estatal abierta sobre Alani Nu. La Optimista pesa 15% porque exige que se cumplan a la vez la recuperación de CELSIUS, el exterior y el margen bruto. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas.",
+ "premortem": [
+  "Alani Nu fue una moda: las ventas al consumidor pasan de +56% a negativas en 2027 y la facturación cae con el inventario de PepsiCo.",
+  "La marca CELSIUS no vuelve a crecer: la poda de presentaciones le quitó espacio que Monster y Red Bull ocuparon, y la participación baja de 9,5% a 7%.",
+  "La regulación de la cafeína para menores (Texas y otros estados) obliga a cambiar etiquetado, comercialización y fórmulas de Alani Nu.",
+  "El aluminio y las promociones dejan el margen bruto en 45-46% y el operativo nunca vuelve a 20%.",
+  "PepsiCo prioriza sus marcas propias o renegocia la capitanía; la dependencia del distribuidor se vuelve un costo."
+ ],
+ "contra": "la facturación de CELSIUS lleva tres trimestres cayendo (−11,7% en el 2T26) y la gerencia admitió que la poda de presentaciones fue demasiado profunda ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html)); además el margen bruto bajó 3,4 puntos en un año.",
+ "indicadores": [
+  [
+   "Ventas al consumidor de CELSIUS (Circana, 13 semanas)",
+   "−2% (2T26)",
+   "≥ 0% desde el 4T26",
+   "≤ −8%"
+  ],
+  [
+   "Ventas al consumidor de Alani Nu",
+   "+55,7% (2T26)",
+   "≥ +15%",
+   "≤ 0%"
+  ],
+  [
+   "Participación del portafolio en EE.UU.",
+   "20,1% (2T26)",
+   "≥ 21%",
+   "≤ 18%"
+  ],
+  [
+   "Margen bruto",
+   "48,1% (2T26)",
+   "≥ 50%",
+   "≤ 46%"
+  ],
+  [
+   "EBITDA ajustado / ventas",
+   "22,5% (2T26)",
+   "≥ 24%",
+   "≤ 19%"
+  ],
+  [
+   "Ventas internacionales",
+   "US$27,2M en el 2T26 (+10%)",
+   "≥ +20% anual",
+   "≤ 0%"
+  ],
+  [
+   "Regulación de la cafeína (Texas, otros estados)",
+   "Investigación abierta (jun-2026)",
+   "Cierre sin restricciones",
+   "Restricción por edad o etiquetado obligatorio"
+  ],
+  [
+   "Recompras frente a dilución",
+   "US$124,5M en el 1S26",
+   "Acciones en circulación bajan",
+   "Emisión para compras"
+  ]
+ ],
+ "margenes_inverso": [
+  0.185,
+  0.21,
+  0.24
+ ],
+ "precio_lectura": "El precio pide algo más que la Base: con un margen de 21% hace falta crecer ~8,3% anual en los años 1-5, lo que logra ~46% de las empresas de este tamaño, frente al {cagrA} de la Base. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera o por una recuperación de la marca CELSIUS más rápida que la de la Base; también puede estar descontando que Celsius vuelva a comprar marcas con éxito. Ninguna de esas lecturas está hoy en los datos: la participación de CELSIUS sigue cayendo.",
+ "frase": "Portafolio de tres marcas distribuido por PepsiCo que crece con la categoría; la marca CELSIUS todavía cede participación",
+ "confianza": "Media: el margen normalizado está bien documentado; la duración del crecimiento de Alani Nu y la recuperación de CELSIUS no",
+ "cambiaria": "Las ventas al consumidor de CELSIUS y de Alani Nu, el margen bruto y el resultado de la investigación de Texas",
+ "revision": "Resultados del 3T26 (noviembre de 2026)",
+ "fuentes": [
+  [
+   "Celsius, comunicado del 2T26 (6-ago-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm"
+  ],
+  [
+   "Celsius, 10-Q del 2T26 (6-ago-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm"
+  ],
+  [
+   "Celsius, comunicado del 4T25 (26-feb-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm"
+  ],
+  [
+   "Celsius, 10-K 2025 (2-mar-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000024/celh-20251231.htm"
+  ],
+  [
+   "Celsius, 8-K de la segunda enmienda del crédito (15-jul-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1341766/000119312526304791/d64754d8k.htm"
+  ],
+  [
+   "Monster Beverage, datos XBRL de la SEC (10-K 2025)",
+   "https://data.sec.gov/api/xbrl/companyfacts/CIK0000865752.json"
+  ],
+  [
+   "Beverage Industry, estado de la categoría con datos de Circana (10-jul-2026)",
+   "https://www.bevindustry.com/articles/98511-2026-state-of-the-beverage-industry-energy-drinks-shots-market-embraces-innovation-functionality"
+  ],
+  [
+   "Yahoo Finance, resumen de la llamada del 2T26 (6-ago-2026)",
+   "https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html"
+  ],
+  [
+   "Damodaran, ERP implícita de septiembre de 2026",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+  ],
+  [
+   "Mauboussin y Callahan, The Base Rate Book (2016)",
+   "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+  ]
+ ],
+ "arrendamientos": {
+  "vp": 17.354,
+  "ajuste_ebit": 2.808,
+  "margen_pp": 0.0009214714665441538,
+  "capital_ventas": 0.005694877432481212,
+  "cierre": "2025-12-31",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+ },
+ "justificacion": [
+  [
+   "Crecimiento: la categoría pone el ritmo; la marca CELSIUS decide el nivel.",
+   "La Base crece {g1A} el primer año y {cagrA} compuesto en cinco años. El primer año incluye ~US$66 millones de Rockstar por anualización (solo tuvo diez meses en el LTM) y supone que el 3T26 se parece al 2T26, como anticipó la gerencia. Después el crecimiento se apoya en la categoría (+15,2% al consumidor en 52 semanas a abril, pero desacelerando) y no en ganar participación: Alani Nu crece 7-10%, CELSIUS 3-4% y Rockstar cae. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento, así que la Base no exige nada excepcional. La alternativa de 10% o más (lo que pide el consenso para 2026) supone que CELSIUS vuelve a ganar participación, algo que hoy no muestran los datos. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que CELSIUS siga negativa al consumidor en 2027 (hacia la Conservadora, {cagrB}) o que vuelva a ganar participación (hacia la Optimista, {cagrD})."
+  ],
+  [
+   "Margen: el normalizado de hoy, no el de Monster.",
+   "La Base parte de {margenY1} el primer año (el margen normalizado del 2T26) y llega a {mA} en {conv} años ({mrepA} antes del ajuste de arrendamientos, +{arr_pp} pp). Es apenas más que el 20,6% normalizado LTM: supone escala en gastos generales y sinergias de compras, pero no que el margen bruto vuelva a 51%. No se usa el 29% de Monster porque Celsius no controla su distribución y sostiene tres marcas con promociones. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone promociones altas para siempre; la Disrupción ({mC}), pérdida de escala; la Optimista ({mD}), recuperación del margen bruto."
+  ],
+  [
+   "Reinversión: liviana cuando crece sola; cara cuando compra.",
+   "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10, el promedio global de Beverage (Soft). Es más prudente que la intensidad orgánica (capex ≈ depreciación y capital de trabajo ~8% de las ventas), porque Celsius ha comprado crecimiento (Alani Nu, Rockstar) y es razonable que lo vuelva a hacer. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}: importa poco, porque el retorno del capital nuevo (~33% con margen de 21%) supera el costo de capital."
+  ],
+  [
+   "Descuento y largo plazo: beta de mercado y sin ventaja duradera.",
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): Celsius gana hoy ~16,5% sobre todo su capital, pero sus marcas son jóvenes, la categoría tiene barreras bajas y la distribución es un contrato con PepsiCo, no un activo propio. Por eso el crecimiento después del año 10 no suma valor y el terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+  ],
+  [
+   "Acciones y preferentes: el derecho de PepsiCo va por su valor de liquidación.",
+   "Se usan {acciones} millones de acciones (253,0 millones en circulación al 31-jul-2026 más 2,1 millones de RSU sin consolidar); las 2,3 millones de opciones a US$6,28 se restan por su valor. Las preferentes de PepsiCo se restan por su valor de liquidación, US$1.135 millones (Serie A US$550 millones y Serie B US$585 millones), no por su valor contable de US$1.760 millones: solo se convierten a opción de Celsius o en forma automática si la acción supera US$25 (Serie A) y US$51,75 (Serie B), y por debajo PepsiCo cobraría el valor declarado ([Celsius, 10-Q del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm)). En la Optimista ({vD}) la Serie A se convertiría en 22 millones de acciones: el valor bajaría ~2% (a ~US$31,8). Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. El esperado queda por debajo de la Base porque las historias malas pesan 40% y en ellas el margen cae más de lo que sube en la Optimista. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+  ]
+ ]
+}

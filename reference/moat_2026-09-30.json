@@ -320,6 +320,20 @@
    "ventaja": "sin ventaja defendible",
    "referencia": 0.09,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM."
+  },
+  "CELHN": {
+   "fuentes": "Marcas jóvenes (Alani Nu 2018; Celsius masiva desde 2021) en una categoría de barreras bajas; la distribución es un contrato con PepsiCo, no un activo propio",
+   "evidencia": "ROIC normalizado sobre todo el capital (con el preferente): ~62% (2023), ~35% (2024), ~13,5% (2025) y ~16,5% (LTM): por encima del costo de capital, pero en caída a medida que se compró crecimiento",
+   "amenaza": "Pérdida de participación de la marca Celsius (ventas al consumidor −2% en el 2T26), moda y regulación de la cafeína (Texas, jun-2026)",
+   "roic_actual": 0.1654,
+   "roic_industria": 0.2903,
+   "industria_proxy": null,
+   "costo_capital_terminal": 0.0938,
+   "roic_terminal": null,
+   "roic_terminal_antes": null,
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.1654,
+   "nota_rd": "Hoja nueva desde cero (1-oct-2026): EBIT normalizado sin partidas de una vez, capital invertido con el preferente de PepsiCo (contable), arrendamientos como deuda."
   }
  }
 }

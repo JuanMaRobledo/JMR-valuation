@@ -103,11 +103,12 @@ def lectura_multiplo(gi, gd, dv):
 def run(tk: str, client) -> dict:
     anc = json.loads((MV / f"{tk}_anclas.json").read_text())
     res = json.loads((MV / f"{tk}_decision_resultado.json").read_text())["resultado"]
-    rec_path = Path(glob.glob(str(DATOS / f"{tk}-*.json"))[0])
-    rec = json.loads(rec_path.read_text())
+    recs = glob.glob(str(DATOS / f"{tk}-*.json"))
+    rec_path = Path(recs[0]) if recs else None  # hoja nueva sin valoración guardada (p. ej. CELHN)
+    rec = json.loads(rec_path.read_text()) if rec_path else {}
     sh = client.open_by_key(anc["sheet_id"])
     U = {"valueRenderOption": "UNFORMATTED_VALUE"}
-    rng = ["'Input sheet'!A1:D70", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
+    rng = ["'Input sheet'!A1:D80", "'Valuation output'!A1:M140", "'Financials Multiples'!A1:H120",
            "'Resumen de Valoración'!A1:U20", "'Descuento de múltiplos'!A1:K49"]
     rng += [f"{s}!F19:H23" for s, _ in SHEETS.values()]
     vr = sh.values_batch_get(rng, params=U)["valueRanges"]
@@ -125,9 +126,11 @@ def run(tk: str, client) -> dict:
         g = grid[sheet]
         return g[row][col] if row < len(g) and col < len(g[row]) else None
 
-    price = rec.get("precio")
-    dcf_hoy = cell("Descuento de múltiplos", "D38")
+    price = rec.get("precio") or cell("Input sheet", "D1")
     inp = engine_inputs(cell, grid["Financials Multiples"], price)
+    # DCF técnico de la hoja (VO B35): desde el 1-oct-2026 'Descuento de múltiplos'!D38 muestra la historia Base, que no
+    # usa los mismos supuestos que el motor calibrado aquí. Financieras: D38 (FCFE financiero).
+    dcf_hoy = cell("Descuento de múltiplos", "D38") if inp.get("dcfFinanciero") else cell("Valuation output", "B35")
     g15 = [x for x in grid["Valuation output"][3][2:7] if isinstance(x, (int, float))]
     g_ref = st.mean(g15)
     g_imp = node("crecimientoImplicitoDCF(inp, m, g, d, p)", inp=inp, m=inp["marginBase"], g=g_ref, d=dcf_hoy, p=price)
@@ -228,8 +231,9 @@ def run(tk: str, client) -> dict:
     ]})
 
     (MV / f"{tk}_crecimiento.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
-    rec["crecimientoImplicito"] = out
-    rec_path.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + "\n")
+    if rec_path:
+        rec["crecimientoImplicito"] = out
+        rec_path.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + "\n")
     return out
 
 

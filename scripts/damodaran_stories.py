@@ -176,9 +176,12 @@ def coc_row(grid, label):
 def compute(tk: str) -> dict:
     spec = json.loads((REF / f"{tk}.json").read_text())
     anc = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())
-    rec = json.loads(Path(glob.glob(str(DATOS / "valoraciones" / f"{tk}-*.json"))[0]).read_text())
+    recs = glob.glob(str(DATOS / "valoraciones" / f"{tk}-*.json"))
+    rec = json.loads(Path(recs[0]).read_text()) if recs else {}
     grid, cell = load_sheet(anc["sheet_id"])
-    price = rec.get("precio")
+    # Una hoja nueva sin valoración guardada en la app (p. ej. CELHN, CELH desde cero) toma precio y MOS de la hoja.
+    price = rec.get("precio") or cell("Input sheet", "D1") or cell("Input sheet", "B23")
+    rec.setdefault("mos", cell("Resumen de Valoración", "G4"))
     # DCF técnico anterior = el DCF propio de la hoja ('Valuation output'!B35, casos Conservador/Base/Optimista de la plantilla).
     # 'Descuento de múltiplos'!D38 ya no sirve: desde el 1-oct-2026 apunta a la historia Base de «Escenarios e historias».
     dcf = cell("Valuation output", "B35")
