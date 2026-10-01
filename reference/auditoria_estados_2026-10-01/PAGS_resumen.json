@@ -75,6 +75,14 @@
    "tipo": "Balance del último 10-Q"
   },
   {
+   "hoja": "Valuation output",
+   "celda": "C46",
+   "antes": 0.14,
+   "despues": "='Input sheet'!B30",
+   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar.",
+   "tipo": "Margen objetivo Base de la hoja enlazado al de Input sheet"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -129,7 +137,7 @@
   }
  },
  "despues": {
-  "dcfTecnico": 11.92367433,
+  "dcfTecnico": 11.89126763,
   "valorEsperado": 11.602039858768364,
   "precioMOS": 7.541325908199437,
   "historias": {
