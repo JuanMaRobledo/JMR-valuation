@@ -131,6 +131,22 @@
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 1.2648,
+   "despues": 1.51,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 1.162,
+   "despues": 1.51,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,56 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -201,14 +217,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 22.88554748,
-  "valorEsperado": 21.272973408892227,
-  "precioMOS": 13.827432715779947,
+  "dcfTecnico": 23.85685491,
+  "valorEsperado": 22.064308346542433,
+  "precioMOS": 14.34180042525258,
   "historias": {
-   "A": 22.23098575915708,
-   "B": 17.236986310645104,
-   "C": 8.674547296471204,
-   "D": 29.56953265840024
+   "A": 23.0574889015696,
+   "B": 17.831375772833514,
+   "C": 8.91921630184017,
+   "D": 30.771852251654266
   }
  },
  "tramo_tasas_base": "$7,000-12,000 Mn"

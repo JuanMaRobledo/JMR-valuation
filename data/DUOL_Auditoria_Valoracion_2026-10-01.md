@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$125,77 | US$119,73 |
-| **DCF Base (valor intrínseco principal)** | US$125,64 | US$119,64 |
-| DCF Conservadora | US$98,99 | US$93,58 |
-| DCF Disrupción | US$64,28 | US$59,88 |
-| DCF Optimista | US$162,33 | US$155,74 |
-| DCF esperado por probabilidades (complemento) | US$118,85 | US$113,06 |
-| Precio con MOS sobre el esperado | US$77,25 | US$73,49 |
+| DCF técnico anterior (caso Base de la hoja) | US$125,77 | US$115,03 |
+| **DCF Base (valor intrínseco principal)** | US$125,64 | US$115,04 |
+| DCF Conservadora | US$98,99 | US$90,74 |
+| DCF Disrupción | US$64,28 | US$60,07 |
+| DCF Optimista | US$162,33 | US$149,35 |
+| DCF esperado por probabilidades (complemento) | US$118,85 | US$109,11 |
+| Precio con MOS sobre el esperado | US$77,25 | US$70,92 |
 
 ## Hallazgos y correcciones
 
@@ -51,6 +51,8 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B32 |  | 4,00 | 2,97 | Ventas/capital con el capital arrendado: 1/(1/4 + 0.0866), con VP de arrendamientos 99.2 / ventas 1145. |
 | Arrendamientos como deuda (conversor, Damodaran) | Input sheet B33 |  | 4,50 | 3,24 | Ventas/capital con el capital arrendado: 1/(1/4.5 + 0.0866), con VP de arrendamientos 99.2 / ventas 1145. |
 | Arrendamientos como deuda (conversor, Damodaran) | Valuation output C45 |  | =B6 | =(B6)+0,000944 | Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145). |
+| Ventas/capital contrastado con la historia y la industria | Input sheet B32 |  | 2,97 | 1,79 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
+| Ventas/capital contrastado con la historia y la industria | Input sheet B33 |  | 3,24 | 1,79 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | 204,7 | LTM = ejercicio 250.6 + acumulado al 2026-06-30 144.5 − acumulado del año anterior 190.4 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 
@@ -72,6 +74,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$119,64 (antes US$125,64). El DCF esperado de las cuatro historias, complementario, es US$113,06 (antes US$118,85); precio con margen de seguridad sobre el esperado US$73,49. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$115,04 (antes US$125,64). El DCF esperado de las cuatro historias, complementario, es US$109,11 (antes US$118,85); precio con margen de seguridad sobre el esperado US$70,92. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

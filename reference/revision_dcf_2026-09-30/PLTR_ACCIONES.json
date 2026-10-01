@@ -1,0 +1,14 @@
+{
+ "ticker": "PLTR_ACCIONES",
+ "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B22",
+   "antes": "='Income Statement'!L27",
+   "despues": "='Income Statement'!L27+168,9",
+   "motivo": "Acciones con dilución: 2.402,9 millones más 168,9 millones de opciones y acciones restringidas (diluidas − básicas del 2T26, 10-Q). La hoja no restaba el valor de las opciones."
+  }
+ ]
+}

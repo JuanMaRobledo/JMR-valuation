@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$41,96 | US$42,27 |
-| **DCF Base (valor intrínseco principal)** | US$38,98 | US$39,27 |
-| DCF Conservadora | US$28,26 | US$28,52 |
-| DCF Disrupción | US$22,47 | US$22,71 |
-| DCF Optimista | US$46,57 | US$46,89 |
-| DCF esperado por probabilidades (complemento) | US$35,63 | US$35,92 |
-| Precio con MOS sobre el esperado | US$23,16 | US$23,35 |
+| DCF técnico anterior (caso Base de la hoja) | US$41,96 | US$43,16 |
+| **DCF Base (valor intrínseco principal)** | US$38,98 | US$39,65 |
+| DCF Conservadora | US$28,26 | US$28,28 |
+| DCF Disrupción | US$22,47 | US$22,02 |
+| DCF Optimista | US$46,57 | US$47,82 |
+| DCF esperado por probabilidades (complemento) | US$35,63 | US$36,11 |
+| Precio con MOS sobre el esperado | US$23,16 | US$23,47 |
 
 ## Hallazgos y correcciones
 
@@ -32,6 +32,7 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 | Conversor de I+D alineado al LTM | R& D converter B14 | I+D año −3 | ='Income Statement'!I10 | ='Income Statement'!H10*27573/24047 | 12 meses a jun-2023 = 2022 (24.047) + 1S23 (13.855) − 1S22 (10.329) = 27.573 MDKK. Antes el ejercicio 2023. |
 | Conversor de I+D alineado al LTM | R& D converter B15 | I+D año −4 | ='Income Statement'!H10 | ='Income Statement'!G10*20213/17772 | 12 meses a jun-2022 = 2021 (17.772) + 1S22 (10.329) − 1S21 (7.888) = 20.213 MDKK. Antes el ejercicio 2022. |
 | Conversor de I+D alineado al LTM | R& D converter B16 | I+D año −5 | ='Income Statement'!G10 | ='Income Statement'!F10*16282/15462 | 12 meses a jun-2021 = 2020 (15.462) + 1S21 (7.888) − 1S20 (7.068) = 16.282 MDKK. Antes el ejercicio 2021. |
+| Ventas/capital contrastado con la historia y la industria | Input sheet B32 |  | 0,450 | 0,570 | Ventas/capital revisado (1-oct-2026): historia 2023-2025 0,57 (capex, intangibles y compras) e industria Drugs (Pharmaceutical) 1,11. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran). |
 | Flujos LTM | Cash Flow Statement L40 | Net Change in Cash | -14,00 | =L13+L22+L34 | Auditoría 1-oct-2026: cambio de caja LTM = operación + inversión + financiación (sin efecto cambiario). Antes −14, un valor de relleno del importador. |
 | Capital invertido operativo | Valuation output B41 | Invested capital | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | =IF('Input sheet'!$B$18="Yes";IF('Input sheet'!$B$17="Yes";' | Capital invertido operativo: se restan los activos no operativos (Input B20). |
 
@@ -55,6 +56,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$39,27 (antes US$38,98). El DCF esperado de las cuatro historias, complementario, es US$35,92 (antes US$35,63); precio con margen de seguridad sobre el esperado US$23,35. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$39,65 (antes US$38,98). El DCF esperado de las cuatro historias, complementario, es US$36,11 (antes US$35,63); precio con margen de seguridad sobre el esperado US$23,47. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.

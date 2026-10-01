@@ -1,0 +1,14 @@
+{
+ "ticker": "ONON_S2C",
+ "sheet_id": "17E_Rd-MD-u5i8Vez7sYwcWIdVYvDdjNhOu-6NWAzGnQ",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 2.2,
+   "despues": 2.62,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 2,77 (con derechos de uso) e industria Shoe 2,62. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran)."
+  }
+ ]
+}

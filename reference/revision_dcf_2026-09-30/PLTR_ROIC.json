@@ -1,0 +1,21 @@
+{
+ "ticker": "PLTR_ROIC",
+ "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Costos de cambio: plataformas integradas en los procesos de defensa, inteligencia y grandes empresas (Gotham, Foundry, AIP). Evidencia: ROIC sobre el capital operativo (sin la caja) muy por encima del costo de capital en 2023-2025 y LTM: el negocio casi no necesita capital; el 5-12% anterior incluía la caja en el capital, contra el criterio de Damodaran. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (150,0%): 29,3% (Damodaran, Investment Valuation, cap. 12)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.293,
+   "motivo": "Ventaja durable: Costos de cambio: plataformas integradas en los procesos de defensa, inteligencia y grandes empresas (Gotham, Foundry, AIP). Evidencia: ROIC sobre el capital operativo (sin la caja) muy por encima del costo de capital en 2023-2025 y LTM: el negocio casi no necesita capital; el 5-12% anterior incluía la caja en el capital, contra el criterio de Damodaran. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (150,0%): 29,3% (Damodaran, Investment Valuation, cap. 12)."
+  }
+ ]
+}

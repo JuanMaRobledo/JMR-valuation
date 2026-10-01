@@ -195,6 +195,22 @@
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.9707,
+   "despues": 1.79,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 3.2379,
+   "despues": 1.79,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -247,14 +263,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 119.7317838,
-  "valorEsperado": 113.06338594807852,
-  "precioMOS": 73.49120086625103,
+  "dcfTecnico": 115.0272562,
+  "valorEsperado": 109.11421152783208,
+  "precioMOS": 70.92423749309086,
   "historias": {
-   "A": 119.63923240426533,
-   "B": 93.5752420483873,
-   "C": 59.87807486657769,
-   "D": 155.73656442599216
+   "A": 115.03985981100283,
+   "B": 90.73635835528202,
+   "C": 60.06908639459845,
+   "D": 149.35225728693243
   }
  },
  "tramo_tasas_base": "$700-1,250 Mn"

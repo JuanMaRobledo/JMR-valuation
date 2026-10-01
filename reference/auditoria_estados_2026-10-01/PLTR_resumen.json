@@ -28,6 +28,22 @@
   },
   {
    "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Costos de cambio: plataformas integradas en los procesos de defensa, inteligencia y grandes empresas (Gotham, Foundry, AIP). Evidencia: ROIC sobre el capital operativo (sin la caja) muy por encima del costo de capital en 2023-2025 y LTM: el negocio casi no necesita capital; el 5-12% anterior incluía la caja en el capital, contra el criterio de Damodaran. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (150,0%): 29,3% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.2,
+   "despues": 0.293,
+   "motivo": "Ventaja durable: Costos de cambio: plataformas integradas en los procesos de defensa, inteligencia y grandes empresas (Gotham, Foundry, AIP). Evidencia: ROIC sobre el capital operativo (sin la caja) muy por encima del costo de capital en 2023-2025 y LTM: el negocio casi no necesita capital; el 5-12% anterior incluía la caja en el capital, contra el criterio de Damodaran. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (150,0%): 29,3% (Damodaran, Investment Valuation, cap. 12).",
+   "tipo": "ROIC terminal (criterio Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
    "celda": "B16",
    "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
    "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
@@ -139,6 +155,14 @@
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B22",
+   "antes": "='Income Statement'!L27",
+   "despues": "='Income Statement'!L27+168,9",
+   "motivo": "Acciones con dilución: 2.402,9 millones más 168,9 millones de opciones y acciones restringidas (diluidas − básicas del 2T26, 10-Q). La hoja no restaba el valor de las opciones.",
+   "tipo": "Acciones: dilución y estructura de capital"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -176,7 +200,7 @@
   "incluye_operativos": false,
   "conversor": "Yes",
   "arrendamientos": 0,
-  "acciones": 2402.897,
+  "acciones": 2571.797,
   "efecto_por_accion": 0.0
  },
  "antes": {
@@ -191,14 +215,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 85.3734746,
-  "valorEsperado": 51.0151115652786,
-  "precioMOS": 33.159822517431095,
+  "dcfTecnico": 116.4405296,
+  "valorEsperado": 66.19725176372638,
+  "precioMOS": 43.02821364642215,
   "historias": {
-   "A": 55.61625102310631,
-   "B": 26.93354568200303,
-   "C": 15.714188861771536,
-   "D": 95.58564282629008
+   "A": 72.59679009378094,
+   "B": 33.36305783253723,
+   "C": 14.682058132851726,
+   "D": 128.40706281583834
   }
  },
  "tramo_tasas_base": "$3,000-4,500 Mn"

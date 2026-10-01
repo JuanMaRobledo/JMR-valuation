@@ -155,6 +155,38 @@
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 0.9013,
+   "despues": 1.51,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,54 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 0.9801,
+   "despues": 1.51,
+   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,54 (con arrendamientos) e industria Restaurant/Dining 1,51. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
+   "tipo": "Ventas/capital contrastado con la historia y la industria"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B22",
+   "antes": "='Income Statement'!L27",
+   "despues": 42.8,
+   "motivo": "Acciones totalmente canjeadas: 40,41 millones clase A y 2,39 millones clase B (LLC Interests) al 29-jul-2026 (10-Q). La clase B es la participación minoritaria.",
+   "tipo": "Acciones: dilución y estructura de capital"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B21",
+   "antes": 27,
+   "despues": 0,
+   "motivo": "La participación minoritaria son las LLC Interests (clase B), ya incluidas en las acciones totalmente canjeadas: restarla además las contaría dos veces.",
+   "tipo": "Acciones: dilución y estructura de capital"
+  },
+  {
    "hoja": "Cash Flow Statement",
    "celda": "L40",
    "fila": "Net Change in Cash",
@@ -180,8 +212,8 @@
   "mos_sobre_esperado": true
  },
  "orden": [
-  "B",
   "C",
+  "B",
   "A",
   "D"
  ],
@@ -192,7 +224,7 @@
   "incluye_operativos": false,
   "conversor": "Yes",
   "arrendamientos": 622,
-  "acciones": 41.8,
+  "acciones": 42.8,
   "efecto_por_accion": 0.0
  },
  "antes": {
@@ -207,14 +239,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": -4.698227005,
-  "valorEsperado": 3.928740518335541,
-  "precioMOS": 2.553681336918102,
+  "dcfTecnico": 9.238751715,
+  "valorEsperado": 12.724961654414804,
+  "precioMOS": 8.271225075369623,
   "historias": {
-   "A": 2.8969978363104785,
-   "B": 0.0,
+   "A": 15.660423358038614,
+   "B": 2.474953408098449,
    "C": 0.0,
-   "D": 17.50060994663884
+   "D": 32.90190080578595
   }
  },
  "tramo_tasas_base": "$700-1,250 Mn"

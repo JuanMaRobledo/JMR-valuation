@@ -1,0 +1,21 @@
+{
+ "ticker": "SHAK_ACCIONES",
+ "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B22",
+   "antes": "='Income Statement'!L27",
+   "despues": 42.8,
+   "motivo": "Acciones totalmente canjeadas: 40,41 millones clase A y 2,39 millones clase B (LLC Interests) al 29-jul-2026 (10-Q). La clase B es la participación minoritaria."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B21",
+   "antes": 27,
+   "despues": 0,
+   "motivo": "La participación minoritaria son las LLC Interests (clase B), ya incluidas en las acciones totalmente canjeadas: restarla además las contaría dos veces."
+  }
+ ]
+}
