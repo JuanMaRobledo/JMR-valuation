@@ -118,7 +118,76 @@ En A, año 1: NOPAT = 44.790,96 × 44,28% × (1 − 21,72%) = US$15.527,12 millo
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,20%. Reinversión terminal sobre el NOPAT: A, 26,7% (3,50% / 13,10%); B, 38,0% (3,50% / 9,20%); C, 0,0% (0,00% / 9,20%); D, 26,7% (3,50% / 13,10%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · El volumen compensa la caída de precio** — probabilidad 40%; valor terminal 231.094 (VP 96.869); DCF US$38,98 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 44.791 | -3,4% | 44,3% | 15.527 | 1.208 | 14.319 | 9,0% | 13.133 |
+| 2 | 45.335 | 1,2% | 43,1% | 15.281 | 2.475 | 12.806 | 9,0% | 10.772 |
+| 3 | 46.448 | 2,5% | 42,4% | 15.434 | 2.139 | 13.295 | 9,0% | 10.257 |
+| 4 | 47.410 | 2,1% | 41,8% | 15.527 | 2.027 | 13.499 | 9,0% | 9.551 |
+| 5 | 48.323 | 1,9% | 41,2% | 15.594 | 2.405 | 13.189 | 9,0% | 8.559 |
+| 6 | 49.405 | 2,2% | 40,6% | 15.695 | 1.147 | 14.548 | 9,1% | 8.655 |
+| 7 | 50.667 | 2,6% | 40,0% | 15.842 | 1.322 | 14.520 | 9,1% | 7.918 |
+| 8 | 52.121 | 2,9% | 40,0% | 16.285 | 1.509 | 14.776 | 9,1% | 7.384 |
+| 9 | 53.781 | 3,2% | 40,0% | 16.792 | 1.711 | 15.080 | 9,2% | 6.903 |
+| 10 | 55.663 | 3,5% | 40,0% | 17.367 | 1.771 | 15.596 | 9,2% | 6.537 |
+| Terminal | 57.611 | 3,5% | 40,0% | 17.975 | 4.802 | 13.172 | 9,2% | — |
+
+**B · Guerra de precios con Lilly y genéricos** — probabilidad 30%; valor terminal 134.108 (VP 56.215); DCF US$28,26 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 42.790 | -7,7% | 44,3% | 14.834 | -2.797 | 17.631 | 9,0% | 16.170 |
+| 2 | 41.532 | -2,9% | 41,6% | 13.535 | -1.392 | 14.927 | 9,0% | 12.556 |
+| 3 | 40.905 | -1,5% | 40,3% | 12.906 | -775 | 13.681 | 9,0% | 10.554 |
+| 4 | 40.557 | -0,9% | 39,0% | 12.375 | -901 | 13.276 | 9,0% | 9.393 |
+| 5 | 40.151 | -1,0% | 37,7% | 11.834 | -89 | 11.923 | 9,0% | 7.737 |
+| 6 | 40.111 | -0,1% | 36,3% | 11.398 | 292 | 11.106 | 9,1% | 6.608 |
+| 7 | 40.432 | 0,8% | 35,0% | 11.062 | 625 | 10.437 | 9,1% | 5.692 |
+| 8 | 41.120 | 1,7% | 35,0% | 11.242 | 972 | 10.270 | 9,1% | 5.132 |
+| 9 | 42.189 | 2,6% | 35,0% | 11.526 | 1.342 | 10.183 | 9,2% | 4.661 |
+| 10 | 43.666 | 3,5% | 35,0% | 11.921 | 1.389 | 10.531 | 9,2% | 4.414 |
+| Terminal | 45.194 | 3,5% | 35,0% | 12.338 | 4.694 | 7.644 | 9,2% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly** — probabilidad 10%; valor terminal 81.792 (VP 34.285); DCF US$22,47 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 41.283 | -10,9% | 44,3% | 14.311 | -6.923 | 21.234 | 9,0% | 19.475 |
+| 2 | 38.167 | -7,5% | 40,2% | 12.012 | -4.347 | 16.358 | 9,0% | 13.760 |
+| 3 | 36.211 | -5,1% | 38,2% | 10.818 | -2.449 | 13.267 | 9,0% | 10.235 |
+| 4 | 35.109 | -3,0% | 36,1% | 9.927 | -2.259 | 12.186 | 9,0% | 8.622 |
+| 5 | 34.092 | -2,9% | 34,1% | 9.095 | -1.755 | 10.850 | 9,0% | 7.041 |
+| 6 | 33.303 | -2,3% | 32,0% | 8.347 | -526 | 8.873 | 9,1% | 5.279 |
+| 7 | 32.724 | -1,7% | 30,0% | 7.674 | -345 | 8.018 | 9,1% | 4.373 |
+| 8 | 32.345 | -1,2% | 30,0% | 7.580 | -170 | 7.750 | 9,1% | 3.873 |
+| 9 | 32.158 | -0,6% | 30,0% | 7.530 | 0 | 7.530 | 9,2% | 3.447 |
+| 10 | 32.158 | -0,0% | 30,0% | 7.525 | 0 | 7.525 | 9,2% | 3.154 |
+| Terminal | 32.158 | 0,0% | 30,0% | 7.525 | 0 | 7.525 | 9,2% | — |
+
+**D · La nueva generación recupera el liderazgo** — probabilidad 20%; valor terminal 298.734 (VP 125.221); DCF US$46,57 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 46.432 | 0,2% | 44,3% | 16.096 | 4.022 | 12.074 | 9,0% | 11.073 |
+| 2 | 48.243 | 3,9% | 43,9% | 16.585 | 5.709 | 10.876 | 9,0% | 9.149 |
+| 3 | 50.812 | 5,3% | 43,7% | 17.395 | 5.345 | 12.050 | 9,0% | 9.296 |
+| 4 | 53.217 | 4,7% | 43,6% | 18.142 | 5.078 | 13.064 | 9,0% | 9.244 |
+| 5 | 55.502 | 4,3% | 43,4% | 18.842 | 5.100 | 13.741 | 9,0% | 8.917 |
+| 6 | 57.797 | 4,1% | 43,2% | 19.524 | 2.089 | 17.434 | 9,1% | 10.373 |
+| 7 | 60.095 | 4,0% | 43,0% | 20.199 | 2.086 | 18.114 | 9,1% | 9.878 |
+| 8 | 62.389 | 3,8% | 43,0% | 20.955 | 2.075 | 18.880 | 9,1% | 9.434 |
+| 9 | 64.672 | 3,7% | 43,0% | 21.707 | 2.058 | 19.649 | 9,2% | 8.994 |
+| 10 | 66.935 | 3,5% | 43,0% | 22.450 | 2.130 | 20.320 | 9,2% | 8.518 |
+| Terminal | 69.278 | 3,5% | 43,0% | 23.236 | 6.208 | 17.028 | 9,2% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -132,7 +201,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (89.669,50 + 96.868,52 + 6.889 + 357 − 21.460) / 4.420,8 = US$38,98 por acción. El terminal representa 51,9% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

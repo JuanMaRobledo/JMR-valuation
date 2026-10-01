@@ -117,7 +117,76 @@ En A, año 1: NOPAT = 10.576,30 × 48,00% × (1 − 1,34%) = US$5.008,60 millone
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,23%. Reinversión terminal sobre el NOPAT: A, 54,2% (5,00% / 9,23%); B, 54,2% (5,00% / 9,23%); C, 54,2% (5,00% / 9,23%); D, 54,2% (5,00% / 9,23%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Hipercrecimiento que desacelera con la escala** — probabilidad 40%; valor terminal 171.160 (VP 64.976); DCF US$55,62 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 10.576 | 71,8% | 48,0% | 5.009 | 1.136 | 3.873 | 10,6% | 3.502 |
+| 2 | 15.120 | 43,0% | 46,8% | 6.982 | 1.092 | 5.889 | 10,6% | 4.817 |
+| 3 | 19.490 | 28,9% | 46,2% | 8.884 | 1.086 | 7.798 | 10,6% | 5.768 |
+| 4 | 23.833 | 22,3% | 45,6% | 10.722 | 1.022 | 9.700 | 10,6% | 6.489 |
+| 5 | 27.922 | 17,2% | 45,0% | 12.397 | 1.028 | 11.369 | 10,6% | 6.877 |
+| 6 | 32.034 | 14,7% | 45,0% | 13.540 | 875 | 12.665 | 10,3% | 6.946 |
+| 7 | 35.972 | 12,3% | 45,0% | 14.439 | 788 | 13.650 | 10,0% | 6.803 |
+| 8 | 39.520 | 9,9% | 45,0% | 15.021 | 653 | 14.369 | 9,8% | 6.524 |
+| 9 | 42.457 | 7,4% | 45,0% | 15.233 | 472 | 14.762 | 9,5% | 6.121 |
+| 10 | 44.580 | 5,0% | 45,0% | 15.046 | 495 | 14.550 | 9,2% | 5.524 |
+| Terminal | 46.809 | 5,0% | 45,0% | 15.798 | 8.558 | 7.240 | 9,2% | — |
+
+**B · Se normaliza en un software de alta calidad** — probabilidad 30%; valor terminal 67.904 (VP 25.778); DCF US$26,93 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 8.594 | 39,6% | 48,0% | 4.070 | 464 | 3.605 | 10,6% | 3.261 |
+| 2 | 10.451 | 21,6% | 44,0% | 4.537 | 397 | 4.140 | 10,6% | 3.386 |
+| 3 | 12.038 | 15,2% | 42,0% | 4.988 | 366 | 4.622 | 10,6% | 3.419 |
+| 4 | 13.503 | 12,2% | 40,0% | 5.329 | 345 | 4.984 | 10,6% | 3.334 |
+| 5 | 14.882 | 10,2% | 38,0% | 5.579 | 341 | 5.238 | 10,6% | 3.169 |
+| 6 | 16.246 | 9,2% | 38,0% | 5.799 | 293 | 5.505 | 10,3% | 3.019 |
+| 7 | 17.566 | 8,1% | 38,0% | 5.954 | 277 | 5.677 | 10,0% | 2.830 |
+| 8 | 18.810 | 7,1% | 38,0% | 6.037 | 253 | 5.785 | 9,8% | 2.627 |
+| 9 | 19.947 | 6,0% | 38,0% | 6.043 | 222 | 5.822 | 9,5% | 2.414 |
+| 10 | 20.944 | 5,0% | 38,0% | 5.969 | 233 | 5.736 | 9,2% | 2.178 |
+| Terminal | 21.991 | 5,0% | 38,0% | 6.268 | 3.395 | 2.872 | 9,2% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Comoditización y contratos perdidos** — probabilidad 10%; valor terminal 29.983 (VP 11.382); DCF US$15,72 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 7.375 | 19,8% | 48,0% | 3.493 | 138 | 3.354 | 10,6% | 3.033 |
+| 2 | 7.928 | 7,5% | 40,8% | 3.191 | 99 | 3.092 | 10,6% | 2.529 |
+| 3 | 8.325 | 5,0% | 37,2% | 3.055 | 104 | 2.951 | 10,6% | 2.183 |
+| 4 | 8.741 | 5,0% | 33,6% | 2.898 | 109 | 2.788 | 10,6% | 1.865 |
+| 5 | 9.178 | 5,0% | 30,0% | 2.717 | 115 | 2.602 | 10,6% | 1.574 |
+| 6 | 9.637 | 5,0% | 30,0% | 2.716 | 107 | 2.608 | 10,3% | 1.431 |
+| 7 | 10.119 | 5,0% | 30,0% | 2.708 | 112 | 2.595 | 10,0% | 1.293 |
+| 8 | 10.625 | 5,0% | 30,0% | 2.692 | 118 | 2.574 | 9,8% | 1.169 |
+| 9 | 11.156 | 5,0% | 30,0% | 2.668 | 124 | 2.545 | 9,5% | 1.055 |
+| 10 | 11.714 | 5,0% | 30,0% | 2.636 | 130 | 2.505 | 9,2% | 951 |
+| Terminal | 12.300 | 5,0% | 30,0% | 2.767 | 1.499 | 1.268 | 9,2% | — |
+
+**D · Sistema operativo de la IA empresarial** — probabilidad 20%; valor terminal 324.614 (VP 123.230); DCF US$95,62 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 11.647 | 89,2% | 48,0% | 5.516 | 1.766 | 3.750 | 10,6% | 3.391 |
+| 2 | 18.713 | 60,7% | 48,8% | 9.009 | 1.901 | 7.108 | 10,6% | 5.814 |
+| 3 | 26.317 | 40,6% | 49,2% | 12.775 | 1.995 | 10.779 | 10,6% | 7.973 |
+| 4 | 34.298 | 30,3% | 49,6% | 16.784 | 2.038 | 14.746 | 10,6% | 9.864 |
+| 5 | 42.450 | 23,8% | 50,0% | 20.941 | 2.124 | 18.817 | 10,6% | 11.383 |
+| 6 | 50.946 | 20,0% | 50,0% | 23.926 | 1.841 | 22.085 | 10,3% | 12.112 |
+| 7 | 59.229 | 16,3% | 50,0% | 26.415 | 1.646 | 24.769 | 10,0% | 12.345 |
+| 8 | 66.637 | 12,5% | 50,0% | 28.142 | 1.296 | 26.846 | 9,8% | 12.189 |
+| 9 | 72.470 | 8,8% | 50,0% | 28.891 | 805 | 28.086 | 9,5% | 11.646 |
+| 10 | 76.094 | 5,0% | 50,0% | 28.535 | 845 | 27.690 | 9,2% | 10.512 |
+| Terminal | 79.898 | 5,0% | 50,0% | 29.962 | 16.231 | 13.731 | 9,2% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -131,7 +200,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (59.370,23 + 64.975,75 + 9.409 − 111) / 2.402,9 = US$55,62 por acción. El terminal representa 52,3% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

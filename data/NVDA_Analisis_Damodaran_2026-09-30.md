@@ -117,7 +117,76 @@ En A, año 1: NOPAT = 444.467,00 × 60,00% × (1 − 16,05%) = US$223.878,03 mil
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 18,3% (4,99% / 27,20%); B, 18,3% (4,99% / 27,20%); C, 50,4% (4,54% / 9,00%); D, 18,3% (4,99% / 27,20%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Ciclo de IA largo que desacelera con la escala** — probabilidad 40%; valor terminal 9.018.012 (VP 3.210.410); DCF US$204,91 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 444.467 | 46,7% | 60,0% | 223.878 | 28.532 | 195.346 | 11,7% | 174.896 |
+| 2 | 530.064 | 19,3% | 59,2% | 263.434 | 17.372 | 246.061 | 11,7% | 197.240 |
+| 3 | 582.181 | 9,8% | 58,8% | 287.380 | 15.313 | 272.066 | 11,7% | 195.255 |
+| 4 | 628.121 | 7,9% | 58,4% | 307.947 | 12.562 | 295.385 | 11,7% | 189.798 |
+| 5 | 665.808 | 6,0% | 58,0% | 324.188 | 12.868 | 311.321 | 11,7% | 179.097 |
+| 6 | 704.411 | 5,8% | 58,0% | 343.026 | 15.768 | 327.258 | 11,2% | 169.374 |
+| 7 | 743.830 | 5,6% | 58,0% | 362.265 | 16.049 | 346.216 | 10,6% | 161.989 |
+| 8 | 783.952 | 5,4% | 58,0% | 381.851 | 16.281 | 365.570 | 10,1% | 155.386 |
+| 9 | 824.655 | 5,2% | 58,0% | 401.724 | 16.460 | 385.264 | 9,5% | 149.498 |
+| 10 | 865.805 | 5,0% | 58,0% | 421.820 | 17.281 | 404.539 | 9,0% | 144.016 |
+| Terminal | 909.009 | 5,0% | 58,0% | 442.869 | 81.247 | 361.622 | 9,0% | — |
+
+**B · Ciclo de semiconductores: el capex se corrige** — probabilidad 30%; valor terminal 5.140.879 (VP 1.830.152); DCF US$121,20 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 401.518 | 32,5% | 60,0% | 202.245 | -12.073 | 214.318 | 11,7% | 191.882 |
+| 2 | 365.299 | -9,0% | 56,0% | 171.735 | 459 | 171.276 | 11,7% | 137.293 |
+| 3 | 366.676 | 0,4% | 54,0% | 166.225 | 9.489 | 156.736 | 11,7% | 112.486 |
+| 4 | 395.143 | 7,8% | 52,0% | 172.496 | 10.234 | 162.262 | 11,7% | 104.261 |
+| 5 | 425.844 | 7,8% | 50,0% | 178.748 | 10.240 | 168.508 | 11,7% | 96.940 |
+| 6 | 456.563 | 7,2% | 50,0% | 191.665 | 12.159 | 179.506 | 11,2% | 92.904 |
+| 7 | 486.959 | 6,7% | 50,0% | 204.450 | 11.885 | 192.565 | 10,6% | 90.098 |
+| 8 | 516.673 | 6,1% | 50,0% | 216.951 | 11.462 | 205.489 | 10,1% | 87.344 |
+| 9 | 545.327 | 5,5% | 50,0% | 229.010 | 10.885 | 218.125 | 9,5% | 84.641 |
+| 10 | 572.539 | 5,0% | 50,0% | 240.466 | 11.428 | 229.038 | 9,0% | 81.538 |
+| Terminal | 601.108 | 5,0% | 50,0% | 252.466 | 46.316 | 206.149 | 9,0% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Chips propios de los clientes y corrección fuerte** — probabilidad 10%; valor terminal 1.381.826 (VP 491.930); DCF US$50,24 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 372.470 | 22,9% | 60,0% | 187.613 | -28.958 | 216.571 | 11,7% | 193.900 |
+| 2 | 285.595 | -23,3% | 52,0% | 124.674 | -8.688 | 133.361 | 11,7% | 106.901 |
+| 3 | 259.532 | -9,1% | 48,0% | 104.581 | 3.909 | 100.672 | 11,7% | 72.250 |
+| 4 | 271.261 | 4,5% | 44,0% | 100.198 | 4.105 | 96.093 | 11,7% | 61.744 |
+| 5 | 283.575 | 4,5% | 40,0% | 95.225 | 4.291 | 90.933 | 11,7% | 52.312 |
+| 6 | 296.449 | 4,5% | 40,0% | 99.559 | 5.383 | 94.176 | 11,2% | 48.741 |
+| 7 | 309.907 | 4,5% | 40,0% | 104.091 | 5.628 | 98.464 | 10,6% | 46.070 |
+| 8 | 323.976 | 4,5% | 40,0% | 108.830 | 5.883 | 102.947 | 10,1% | 43.758 |
+| 9 | 338.683 | 4,5% | 40,0% | 113.784 | 6.150 | 107.634 | 9,5% | 41.766 |
+| 10 | 354.059 | 4,5% | 40,0% | 118.964 | 6.429 | 112.534 | 9,0% | 40.062 |
+| Terminal | 370.132 | 4,5% | 40,0% | 124.364 | 62.731 | 61.633 | 9,0% | — |
+
+**D · La IA es infraestructura permanente** — probabilidad 20%; valor terminal 14.595.843 (VP 5.196.116); DCF US$313,47 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 472.766 | 56,0% | 60,0% | 238.132 | 45.599 | 192.534 | 11,7% | 172.378 |
+| 2 | 609.562 | 28,9% | 60,0% | 307.037 | 39.593 | 267.443 | 11,7% | 214.380 |
+| 3 | 728.343 | 19,5% | 60,0% | 366.866 | 35.843 | 331.023 | 11,7% | 237.567 |
+| 4 | 835.871 | 14,8% | 60,0% | 421.028 | 32.930 | 388.099 | 11,7% | 249.371 |
+| 5 | 934.660 | 11,8% | 60,0% | 470.788 | 32.566 | 438.222 | 11,7% | 252.101 |
+| 6 | 1.032.359 | 10,5% | 60,0% | 520.061 | 37.525 | 482.536 | 11,2% | 249.738 |
+| 7 | 1.126.171 | 9,1% | 60,0% | 567.388 | 34.783 | 532.605 | 10,6% | 249.198 |
+| 8 | 1.213.128 | 7,7% | 60,0% | 611.271 | 30.841 | 580.430 | 10,1% | 246.713 |
+| 9 | 1.290.231 | 6,4% | 60,0% | 650.199 | 25.753 | 624.446 | 9,5% | 242.310 |
+| 10 | 1.354.614 | 5,0% | 60,0% | 682.725 | 27.038 | 655.687 | 9,0% | 233.424 |
+| Terminal | 1.422.209 | 5,0% | 60,0% | 716.793 | 131.500 | 585.293 | 9,0% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -131,7 +200,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (1.716.549,95 + 3.210.409,83 + 22.443 − 11.040) / 24.100,0 = US$204,91 por acción. El terminal representa 65,2% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

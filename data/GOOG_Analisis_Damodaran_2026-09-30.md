@@ -119,7 +119,76 @@ En A, año 1: NOPAT = 518.639,20 × 32,50% × (1 − 18,40%) = US$137.543,12 mil
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 17,4% (4,99% / 28,60%); B, 55,4% (4,99% / 9,00%); C, 31,5% (2,83% / 9,00%); D, 17,4% (4,99% / 28,60%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Search resiste y Cloud es el segundo motor** — probabilidad 40%; valor terminal 6.553.061 (VP 2.647.005); DCF US$298,81 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 518.639 | 16,3% | 32,5% | 137.543 | 56.067 | 81.477 | 9,7% | 74.273 |
+| 2 | 585.919 | 13,0% | 33,1% | 158.254 | 53.320 | 104.935 | 9,7% | 87.200 |
+| 3 | 649.903 | 10,9% | 33,4% | 177.127 | 51.269 | 125.858 | 9,7% | 95.341 |
+| 4 | 711.425 | 9,5% | 33,7% | 195.636 | 52.305 | 143.332 | 9,7% | 98.978 |
+| 5 | 774.191 | 8,8% | 34,0% | 214.792 | 51.974 | 162.818 | 9,7% | 102.494 |
+| 6 | 836.560 | 8,1% | 34,0% | 233.460 | 40.654 | 192.806 | 9,6% | 110.783 |
+| 7 | 897.541 | 7,3% | 34,0% | 251.943 | 39.031 | 212.912 | 9,4% | 111.804 |
+| 8 | 956.087 | 6,5% | 34,0% | 269.938 | 36.691 | 233.246 | 9,3% | 112.082 |
+| 9 | 1.011.124 | 5,8% | 34,0% | 287.127 | 33.637 | 253.490 | 9,1% | 111.609 |
+| 10 | 1.061.580 | 5,0% | 34,0% | 303.187 | 35.315 | 267.872 | 9,0% | 108.203 |
+| Terminal | 1.114.552 | 5,0% | 34,0% | 318.316 | 55.538 | 262.778 | 9,0% | — |
+
+**B · La IA conversacional erosiona Search** — probabilidad 25%; valor terminal 2.278.768 (VP 920.472); DCF US$141,10 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 495.893 | 11,2% | 32,5% | 131.511 | 29.617 | 101.894 | 9,7% | 92.885 |
+| 2 | 531.433 | 7,2% | 31,5% | 136.600 | 24.380 | 112.220 | 9,7% | 93.254 |
+| 3 | 560.689 | 5,5% | 31,0% | 141.832 | 23.521 | 118.311 | 9,7% | 89.624 |
+| 4 | 588.914 | 5,0% | 30,5% | 146.569 | 21.511 | 125.057 | 9,7% | 86.359 |
+| 5 | 614.728 | 4,4% | 30,0% | 150.485 | 23.076 | 127.409 | 9,7% | 80.205 |
+| 6 | 642.419 | 4,5% | 30,0% | 158.189 | 19.812 | 138.377 | 9,6% | 79.509 |
+| 7 | 672.137 | 4,6% | 30,0% | 166.475 | 21.272 | 145.203 | 9,4% | 76.249 |
+| 8 | 704.045 | 4,7% | 30,0% | 175.392 | 22.852 | 152.540 | 9,3% | 73.300 |
+| 9 | 738.323 | 4,9% | 30,0% | 184.994 | 24.562 | 160.433 | 9,1% | 70.637 |
+| 10 | 775.165 | 5,0% | 30,0% | 195.342 | 25.787 | 169.554 | 9,0% | 68.489 |
+| Terminal | 813.846 | 5,0% | 30,0% | 205.089 | 113.711 | 91.379 | 9,0% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA** — probabilidad 15%; valor terminal 1.595.929 (VP 644.650); DCF US$110,41 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 480.426 | 7,8% | 32,5% | 127.409 | 15.655 | 111.754 | 9,7% | 101.874 |
+| 2 | 499.212 | 3,9% | 30,3% | 123.429 | 9.583 | 113.846 | 9,7% | 94.605 |
+| 3 | 510.712 | 2,3% | 29,2% | 121.688 | 8.433 | 113.255 | 9,7% | 85.794 |
+| 4 | 520.832 | 2,0% | 28,1% | 119.425 | 12.294 | 107.130 | 9,7% | 73.979 |
+| 5 | 535.585 | 2,8% | 27,0% | 118.000 | 12.642 | 105.358 | 9,7% | 66.323 |
+| 6 | 550.756 | 2,8% | 27,0% | 122.056 | 10.400 | 111.656 | 9,6% | 64.155 |
+| 7 | 566.356 | 2,8% | 27,0% | 126.248 | 10.695 | 115.553 | 9,4% | 60.679 |
+| 8 | 582.399 | 2,8% | 27,0% | 130.578 | 10.998 | 119.580 | 9,3% | 57.462 |
+| 9 | 598.896 | 2,8% | 27,0% | 135.053 | 11.310 | 123.744 | 9,1% | 54.483 |
+| 10 | 615.860 | 2,8% | 27,0% | 139.677 | 11.630 | 128.047 | 9,0% | 51.723 |
+| Terminal | 633.305 | 2,8% | 27,0% | 143.634 | 45.206 | 98.427 | 9,0% | — |
+
+**D · Gemini y Cloud dominan la plataforma de IA** — probabilidad 20%; valor terminal 9.233.931 (VP 3.729.900); DCF US$399,94 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 537.932 | 20,6% | 32,5% | 142.660 | 95.890 | 46.770 | 9,7% | 42.635 |
+| 2 | 633.823 | 17,8% | 34,3% | 177.399 | 99.199 | 78.200 | 9,7% | 64.984 |
+| 3 | 733.022 | 15,7% | 35,2% | 210.547 | 103.668 | 106.879 | 9,7% | 80.964 |
+| 4 | 836.690 | 14,1% | 36,1% | 246.469 | 103.081 | 143.388 | 9,7% | 99.017 |
+| 5 | 939.771 | 12,3% | 37,0% | 283.736 | 102.004 | 181.732 | 9,7% | 114.401 |
+| 6 | 1.041.775 | 10,9% | 37,0% | 316.383 | 65.202 | 251.181 | 9,6% | 144.324 |
+| 7 | 1.139.577 | 9,4% | 37,0% | 348.109 | 60.185 | 287.924 | 9,4% | 151.194 |
+| 8 | 1.229.855 | 7,9% | 37,0% | 377.870 | 52.933 | 324.937 | 9,3% | 156.142 |
+| 9 | 1.309.255 | 6,5% | 37,0% | 404.591 | 43.555 | 361.037 | 9,1% | 158.960 |
+| 10 | 1.374.587 | 5,0% | 37,0% | 427.221 | 45.728 | 381.494 | 9,0% | 154.098 |
+| Terminal | 1.443.178 | 5,0% | 37,0% | 448.540 | 78.259 | 370.281 | 9,0% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -133,7 +202,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (1.012.767,49 + 2.647.005,34 + 55.911 − 61.287) / 12.230,0 = US$298,81 por acción. El terminal representa 72,3% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 25% / 15% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

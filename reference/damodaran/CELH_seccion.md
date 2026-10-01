@@ -123,7 +123,76 @@ En A, año 1: NOPAT = 3.396,14 × 12,00% × (1 − 24,00%) = US$309,73 millones.
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: A, 55,4% (4,99% / 9,00%); B, 55,4% (4,99% / 9,00%); C, 0,0% (0,00% / 9,00%); D, 55,4% (4,99% / 9,00%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Alani lidera y Celsius se estabiliza** — probabilidad 40%; valor terminal 10.026,6 (VP 3.697,3); DCF US$22,22 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 3.396,1 | 11,4% | 12,0% | 309,7 | 136,8 | 172,9 | 11,1% | 155,6 |
+| 2 | 3.738,1 | 10,1% | 14,8% | 420,5 | 132,4 | 288,0 | 11,1% | 233,2 |
+| 3 | 4.069,2 | 8,9% | 16,2% | 501,0 | 111,1 | 389,9 | 11,1% | 284,0 |
+| 4 | 4.347,0 | 6,8% | 17,6% | 581,5 | 100,3 | 481,2 | 11,1% | 315,5 |
+| 5 | 4.597,6 | 5,8% | 19,0% | 663,9 | 103,2 | 560,7 | 11,1% | 330,8 |
+| 6 | 4.855,6 | 5,6% | 19,0% | 701,1 | 132,5 | 568,7 | 10,7% | 303,0 |
+| 7 | 5.120,5 | 5,5% | 19,0% | 739,4 | 135,7 | 603,7 | 10,3% | 291,7 |
+| 8 | 5.391,9 | 5,3% | 19,0% | 778,6 | 138,7 | 639,9 | 9,9% | 281,4 |
+| 9 | 5.669,3 | 5,1% | 19,0% | 818,7 | 141,5 | 677,2 | 9,4% | 272,2 |
+| 10 | 5.952,2 | 5,0% | 19,0% | 859,5 | 148,5 | 711,0 | 9,0% | 262,2 |
+| Terminal | 6.249,3 | 5,0% | 19,0% | 902,4 | 500,3 | 402,1 | 9,0% | — |
+
+**B · Alani crece, Celsius sigue cediendo** — probabilidad 35%; valor terminal 6.538,4 (VP 2.411,0); DCF US$15,48 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 3.204,6 | 5,2% | 12,0% | 292,3 | 54,2 | 238,1 | 11,1% | 214,2 |
+| 2 | 3.340,1 | 4,2% | 13,6% | 345,2 | 52,8 | 292,4 | 11,1% | 236,8 |
+| 3 | 3.472,0 | 4,0% | 14,4% | 380,0 | 53,1 | 326,9 | 11,1% | 238,1 |
+| 4 | 3.604,8 | 3,8% | 15,2% | 416,4 | 48,7 | 367,7 | 11,1% | 241,1 |
+| 5 | 3.726,5 | 3,4% | 16,0% | 453,1 | 55,1 | 398,0 | 11,1% | 234,8 |
+| 6 | 3.864,4 | 3,7% | 16,0% | 469,9 | 77,7 | 392,2 | 10,7% | 209,0 |
+| 7 | 4.019,8 | 4,0% | 16,0% | 488,8 | 87,3 | 401,5 | 10,3% | 194,0 |
+| 8 | 4.194,4 | 4,3% | 16,0% | 510,0 | 97,9 | 412,2 | 9,9% | 181,3 |
+| 9 | 4.390,2 | 4,7% | 16,0% | 533,8 | 109,5 | 424,3 | 9,4% | 170,5 |
+| 10 | 4.609,3 | 5,0% | 16,0% | 560,5 | 115,0 | 445,5 | 9,0% | 164,3 |
+| Terminal | 4.839,3 | 5,0% | 16,0% | 588,5 | 326,3 | 262,2 | 9,0% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: La moda se desgasta** — probabilidad 15%; valor terminal 2.740,7 (VP 1.010,6); DCF US$8,94 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 3.000,5 | -1,5% | 12,0% | 273,6 | -29,3 | 302,9 | 11,1% | 272,6 |
+| 2 | 2.927,3 | -2,4% | 12,0% | 267,0 | -29,7 | 296,7 | 11,1% | 240,2 |
+| 3 | 2.853,0 | -2,5% | 12,0% | 260,2 | -19,0 | 279,2 | 11,1% | 203,4 |
+| 4 | 2.805,6 | -1,7% | 12,0% | 255,9 | -13,7 | 269,5 | 11,1% | 176,7 |
+| 5 | 2.771,5 | -1,2% | 12,0% | 252,8 | -10,8 | 263,6 | 11,1% | 155,5 |
+| 6 | 2.744,5 | -1,0% | 12,0% | 250,3 | -10,0 | 260,3 | 10,7% | 138,7 |
+| 7 | 2.724,5 | -0,7% | 12,0% | 248,5 | -6,6 | 255,1 | 10,3% | 123,3 |
+| 8 | 2.711,2 | -0,5% | 12,0% | 247,3 | -3,3 | 250,6 | 9,9% | 110,2 |
+| 9 | 2.704,6 | -0,2% | 12,0% | 246,7 | 0,0 | 246,7 | 9,4% | 99,1 |
+| 10 | 2.704,6 | 0,0% | 12,0% | 246,7 | 0,0 | 246,7 | 9,0% | 91,0 |
+| Terminal | 2.704,6 | 0,0% | 12,0% | 246,7 | 0,0 | 246,7 | 9,0% | — |
+
+**D · Plataforma multimarca** — probabilidad 10%; valor terminal 14.182,2 (VP 5.229,7); DCF US$28,84 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 3.586,0 | 17,7% | 12,0% | 327,0 | 367,7 | -40,7 | 11,1% | -36,6 |
+| 2 | 4.137,6 | 15,4% | 16,0% | 503,1 | 338,0 | 165,1 | 11,1% | 133,7 |
+| 3 | 4.644,6 | 12,3% | 18,0% | 635,4 | 268,0 | 367,4 | 11,1% | 267,6 |
+| 4 | 5.046,7 | 8,7% | 20,0% | 767,1 | 254,6 | 512,5 | 11,1% | 336,0 |
+| 5 | 5.428,6 | 7,6% | 22,0% | 907,7 | 255,2 | 652,4 | 11,1% | 384,9 |
+| 6 | 5.811,5 | 7,1% | 22,0% | 971,7 | 189,9 | 781,7 | 10,7% | 416,5 |
+| 7 | 6.191,3 | 6,5% | 22,0% | 1.035,2 | 186,4 | 848,8 | 10,3% | 410,1 |
+| 8 | 6.564,1 | 6,0% | 22,0% | 1.097,5 | 180,7 | 916,8 | 9,9% | 403,2 |
+| 9 | 6.925,5 | 5,5% | 22,0% | 1.158,0 | 172,8 | 985,2 | 9,4% | 396,0 |
+| 10 | 7.271,1 | 5,0% | 22,0% | 1.215,7 | 181,4 | 1.034,3 | 9,0% | 381,4 |
+| Terminal | 7.634,0 | 5,0% | 22,0% | 1.276,4 | 707,7 | 568,7 | 9,0% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -137,7 +206,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (2.729,60 + 3.697,30 + 631 − 691) / 286,5 = US$22,22 por acción. El terminal representa 57,5% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 35% / 15% / 10% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

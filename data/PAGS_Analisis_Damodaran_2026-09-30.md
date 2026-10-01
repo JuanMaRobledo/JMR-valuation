@@ -88,7 +88,76 @@ El valor principal de US$11,60 se obtiene ejecutando cuatro DCF completos de die
 Utilidadₜ = utilidadₜ₋₁ × (1 + crecimientoₜ). Reinversión patrimonial = utilidad × crecimiento / ROE; FCFE = utilidad − reinversión. En A, año 1: utilidad US$426,12 millones, reinversión US$131,15 millones y FCFE US$294,97 millones. Se descuenta al costo del patrimonio; en perpetuidad, FCFE₁₁ = utilidad₁₁ × (1 − g / Ke terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g). No se resta deuda.
 
 
-#### 3. Puente numérico de los cuatro DCF
+#### 3. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: utilidad, crecimiento, ROE, reinversión patrimonial, flujo al accionista (FCFE), costo del patrimonio y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Banco digital estable con ROAE de ~15%** — probabilidad 45%; valor terminal 5.601,1 (VP 1.526,0); DCF US$11,89 por acción.
+
+| Año | Utilidad | Crecimiento | ROE | Reinversión | FCFE | Ke | VP del FCFE |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 426,1 | 4,8% | 15,6% | 131,2 | 295,0 | 14,7% | 257,2 |
+| 2 | 449,8 | 5,6% | 15,6% | 160,3 | 289,5 | 14,7% | 220,1 |
+| 3 | 476,4 | 5,9% | 15,6% | 180,4 | 296,0 | 14,7% | 196,1 |
+| 4 | 503,7 | 5,7% | 15,6% | 185,0 | 318,7 | 14,7% | 184,1 |
+| 5 | 533,0 | 5,8% | 15,6% | 199,2 | 333,8 | 14,7% | 168,1 |
+| 6 | 561,1 | 5,3% | 14,9% | 198,5 | 362,6 | 14,2% | 160,0 |
+| 7 | 587,5 | 4,7% | 14,2% | 194,9 | 392,5 | 13,6% | 152,4 |
+| 8 | 611,7 | 4,1% | 13,4% | 188,1 | 423,7 | 13,1% | 145,5 |
+| 9 | 633,5 | 3,6% | 12,7% | 177,6 | 455,9 | 12,5% | 139,1 |
+| 10 | 652,6 | 3,0% | 12,0% | 163,1 | 489,4 | 12,0% | 133,3 |
+| Terminal | 672,1 | 3,0% | 12,0% | 168,0 | 504,1 | 12,0% | — |
+
+**B · El PIX y la competencia erosionan** — probabilidad 30%; valor terminal 4.301,6 (VP 1.172,0); DCF US$11,14 por acción.
+
+| Año | Utilidad | Crecimiento | ROE | Reinversión | FCFE | Ke | VP del FCFE |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 405,8 | -0,2% | 13,0% | 0,0 | 405,8 | 14,7% | 353,8 |
+| 2 | 409,6 | 0,9% | 13,0% | 29,8 | 379,9 | 14,7% | 288,7 |
+| 3 | 416,0 | 1,6% | 13,0% | 50,2 | 365,9 | 14,7% | 242,5 |
+| 4 | 424,8 | 2,1% | 13,0% | 69,0 | 355,9 | 14,7% | 205,6 |
+| 5 | 435,8 | 2,6% | 13,0% | 86,7 | 349,1 | 14,7% | 175,9 |
+| 6 | 447,4 | 2,7% | 12,8% | 93,3 | 354,2 | 14,2% | 156,3 |
+| 7 | 459,7 | 2,8% | 12,6% | 100,4 | 359,4 | 13,6% | 139,5 |
+| 8 | 472,8 | 2,8% | 12,4% | 108,1 | 364,7 | 13,1% | 125,2 |
+| 9 | 486,6 | 2,9% | 12,2% | 116,3 | 370,2 | 12,5% | 113,0 |
+| 10 | 501,2 | 3,0% | 12,0% | 125,3 | 375,9 | 12,0% | 102,4 |
+| Terminal | 516,2 | 3,0% | 12,0% | 129,0 | 387,1 | 12,0% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Crisis de crédito en Brasil** — probabilidad 10%; valor terminal 3.980,4 (VP 1.084,4); DCF US$9,99 por acción.
+
+| Año | Utilidad | Crecimiento | ROE | Reinversión | FCFE | Ke | VP del FCFE |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 378,1 | -7,0% | 10,0% | 0,0 | 378,1 | 14,7% | 329,7 |
+| 2 | 370,8 | -1,9% | 10,0% | 0,0 | 370,8 | 14,7% | 281,9 |
+| 3 | 373,6 | 0,8% | 10,0% | 28,0 | 345,6 | 14,7% | 229,0 |
+| 4 | 385,5 | 3,2% | 10,0% | 123,2 | 262,4 | 14,7% | 151,6 |
+| 5 | 398,1 | 3,3% | 10,0% | 129,4 | 268,7 | 14,7% | 135,3 |
+| 6 | 410,8 | 3,2% | 10,4% | 126,4 | 284,4 | 14,2% | 125,5 |
+| 7 | 423,8 | 3,2% | 10,8% | 123,6 | 300,1 | 13,6% | 116,6 |
+| 8 | 436,9 | 3,1% | 11,2% | 120,9 | 316,0 | 13,1% | 108,5 |
+| 9 | 450,2 | 3,1% | 11,6% | 118,4 | 331,8 | 12,5% | 101,3 |
+| 10 | 463,7 | 3,0% | 12,0% | 115,9 | 347,8 | 12,0% | 94,8 |
+| Terminal | 477,6 | 3,0% | 12,0% | 119,4 | 358,2 | 12,0% | — |
+
+**D · Crece el banco: crédito y depósitos** — probabilidad 15%; valor terminal 6.845,1 (VP 1.864,9); DCF US$12,73 por acción.
+
+| Año | Utilidad | Crecimiento | ROE | Reinversión | FCFE | Ke | VP del FCFE |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 443,2 | 9,0% | 17,0% | 234,7 | 208,5 | 14,7% | 181,8 |
+| 2 | 485,7 | 9,6% | 17,0% | 274,2 | 211,5 | 14,7% | 160,8 |
+| 3 | 532,3 | 9,6% | 17,0% | 300,1 | 232,2 | 14,7% | 153,8 |
+| 4 | 580,8 | 9,1% | 17,0% | 311,3 | 269,5 | 14,7% | 155,7 |
+| 5 | 626,6 | 7,9% | 17,0% | 290,4 | 336,2 | 14,7% | 169,3 |
+| 6 | 669,8 | 6,9% | 16,0% | 289,0 | 380,8 | 14,2% | 168,0 |
+| 7 | 709,5 | 5,9% | 15,0% | 280,4 | 429,1 | 13,6% | 166,6 |
+| 8 | 744,7 | 5,0% | 14,0% | 263,4 | 481,3 | 13,1% | 165,3 |
+| 9 | 774,3 | 4,0% | 13,0% | 236,8 | 537,5 | 12,5% | 164,0 |
+| 10 | 797,5 | 3,0% | 12,0% | 199,4 | 598,1 | 12,0% | 163,0 |
+| Terminal | 821,4 | 3,0% | 12,0% | 205,4 | 616,1 | 12,0% | — |
+
+
+#### 4. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -102,7 +171,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (1.756,01 + 1.525,98) / 276,0 = US$11,89 por acción.
 
 
-#### 4. Valor esperado, probabilidades y margen de seguridad
+#### 5. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 45% / 30% / 10% / 15% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

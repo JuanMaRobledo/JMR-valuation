@@ -117,7 +117,76 @@ En A, año 1: NOPAT = 10.723,64 × 14,00% × (1 − 29,40%) = US$1.059,94 millon
 En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 8,98%. Reinversión terminal sobre el NOPAT: A, 24,2% (3,00% / 12,40%); B, 33,4% (3,00% / 8,98%); C, 8,5% (0,76% / 8,98%); D, 24,2% (3,00% / 12,40%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
-#### 4. Puente numérico de los cuatro DCF
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**A · Se estabiliza Américas y crece lo internacional** — probabilidad 40%; valor terminal 27.261 (VP 11.549); DCF US$172,25 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 10.724 | -3,3% | 14,0% | 1.060 | 184 | 876 | 9,0% | 804 |
+| 2 | 11.092 | 3,4% | 15,3% | 1.201 | 273 | 928 | 9,0% | 781 |
+| 3 | 11.638 | 4,9% | 16,0% | 1.315 | 297 | 1.018 | 9,0% | 787 |
+| 4 | 12.232 | 5,1% | 16,7% | 1.439 | 304 | 1.135 | 9,0% | 805 |
+| 5 | 12.841 | 5,0% | 17,3% | 1.571 | 294 | 1.277 | 9,0% | 832 |
+| 6 | 13.430 | 4,6% | 18,0% | 1.728 | 225 | 1.503 | 9,0% | 898 |
+| 7 | 13.992 | 4,2% | 18,0% | 1.822 | 212 | 1.610 | 9,0% | 883 |
+| 8 | 14.522 | 3,8% | 18,0% | 1.914 | 197 | 1.717 | 9,0% | 864 |
+| 9 | 15.015 | 3,4% | 18,0% | 2.003 | 180 | 1.823 | 9,0% | 842 |
+| 10 | 15.466 | 3,0% | 18,0% | 2.088 | 186 | 1.902 | 9,0% | 806 |
+| Terminal | 15.930 | 3,0% | 18,0% | 2.151 | 520 | 1.630 | 9,0% | — |
+
+**B · Pérdida estructural frente a Alo y Vuori** — probabilidad 35%; valor terminal 14.815 (VP 6.277); DCF US$108,35 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 10.432 | -6,0% | 14,0% | 1.031 | -83 | 1.115 | 9,0% | 1.023 |
+| 2 | 10.265 | -1,6% | 14,0% | 1.015 | 28 | 987 | 9,0% | 831 |
+| 3 | 10.321 | 0,5% | 14,0% | 1.020 | 88 | 932 | 9,0% | 721 |
+| 4 | 10.497 | 1,7% | 14,0% | 1.037 | 124 | 914 | 9,0% | 648 |
+| 5 | 10.744 | 2,4% | 14,0% | 1.062 | 134 | 928 | 9,0% | 604 |
+| 6 | 11.012 | 2,5% | 14,0% | 1.102 | 115 | 987 | 9,0% | 590 |
+| 7 | 11.300 | 2,6% | 14,0% | 1.145 | 124 | 1.021 | 9,0% | 560 |
+| 8 | 11.610 | 2,7% | 14,0% | 1.190 | 133 | 1.057 | 9,0% | 532 |
+| 9 | 11.943 | 2,9% | 14,0% | 1.239 | 143 | 1.096 | 9,0% | 506 |
+| 10 | 12.302 | 3,0% | 14,0% | 1.292 | 148 | 1.144 | 9,0% | 485 |
+| Terminal | 12.671 | 3,0% | 14,0% | 1.330 | 444 | 886 | 9,0% | — |
+
+**C · Tesis de disrupción · Deterioro de los fundamentales: Moda que pasa: declive de la marca** — probabilidad 10%; valor terminal 8.102 (VP 3.433); DCF US$71,34 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 10.088 | -9,1% | 14,0% | 997 | -252 | 1.250 | 9,0% | 1.147 |
+| 2 | 9.584 | -5,0% | 12,7% | 857 | -138 | 995 | 9,0% | 838 |
+| 3 | 9.309 | -2,9% | 12,0% | 789 | -54 | 843 | 9,0% | 651 |
+| 4 | 9.201 | -1,2% | 11,3% | 736 | 35 | 701 | 9,0% | 497 |
+| 5 | 9.271 | 0,8% | 10,7% | 698 | 35 | 663 | 9,0% | 432 |
+| 6 | 9.341 | 0,8% | 10,0% | 668 | 28 | 639 | 9,0% | 382 |
+| 7 | 9.412 | 0,8% | 10,0% | 681 | 29 | 652 | 9,0% | 358 |
+| 8 | 9.483 | 0,8% | 10,0% | 695 | 29 | 666 | 9,0% | 335 |
+| 9 | 9.555 | 0,8% | 10,0% | 708 | 29 | 679 | 9,0% | 314 |
+| 10 | 9.628 | 0,8% | 10,0% | 722 | 29 | 693 | 9,0% | 294 |
+| Terminal | 9.701 | 0,8% | 10,0% | 728 | 62 | 666 | 9,0% | — |
+
+**D · La marca se recupera** — probabilidad 15%; valor terminal 37.791 (VP 16.010); DCF US$229,97 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 11.167 | 0,7% | 14,0% | 1.104 | 396 | 708 | 9,0% | 650 |
+| 2 | 11.959 | 7,1% | 16,3% | 1.379 | 450 | 929 | 9,0% | 782 |
+| 3 | 12.860 | 7,5% | 17,5% | 1.589 | 442 | 1.146 | 9,0% | 886 |
+| 4 | 13.745 | 6,9% | 18,7% | 1.811 | 477 | 1.335 | 9,0% | 947 |
+| 5 | 14.698 | 6,9% | 19,8% | 2.058 | 452 | 1.606 | 9,0% | 1.046 |
+| 6 | 15.602 | 6,1% | 21,0% | 2.342 | 335 | 2.007 | 9,0% | 1.199 |
+| 7 | 16.438 | 5,4% | 21,0% | 2.498 | 301 | 2.197 | 9,0% | 1.205 |
+| 8 | 17.190 | 4,6% | 21,0% | 2.644 | 260 | 2.384 | 9,0% | 1.199 |
+| 9 | 17.842 | 3,8% | 21,0% | 2.777 | 214 | 2.563 | 9,0% | 1.183 |
+| 10 | 18.377 | 3,0% | 21,0% | 2.894 | 221 | 2.674 | 9,0% | 1.133 |
+| Terminal | 18.928 | 3,0% | 21,0% | 2.981 | 721 | 2.260 | 9,0% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
 
 Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
 
@@ -131,7 +200,7 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 Ejemplo A: (8.300,81 + 11.549,27 + 1.390 − 2.141 − 29) / 110,7 = US$172,25 por acción. El terminal representa 58,2% del valor operativo de A: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
-#### 5. Valor esperado, probabilidades y margen de seguridad
+#### 6. Valor esperado, probabilidades y margen de seguridad
 
 Las probabilidades 40% / 35% / 10% / 15% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 

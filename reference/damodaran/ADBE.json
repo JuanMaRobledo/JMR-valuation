@@ -4,9 +4,9 @@
  "fecha": "2026-09-30",
  "industria_damodaran": "Software (System & Application)",
  "segmentos": {
-  "Creative & Marketing Professionals": 18050,
-  "Business Professionals & Consumers": 7300,
-  "Otros": 620
+  "Creative & Marketing Professionals": 17819,
+  "Business Professionals & Consumers": 7263,
+  "Otros": 888
  },
  "riesgo": {
   "beta_propuesta": null,
@@ -32,7 +32,9 @@
      0.09,
      0.08
     ]
-   }
+   },
+   "id": "A",
+   "tesis": "base"
   },
   {
    "nombre": "B · Erosión gradual frente a Figma y Canva",
@@ -54,10 +56,12 @@
      0.05
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "B",
+   "tesis": "conservadora"
   },
   {
-   "nombre": "C · La IA generativa comoditiza la creatividad",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.15,
    "margen": 0.32,
    "crec": {
@@ -76,7 +80,11 @@
      0.02
     ]
    },
-   "roic_terminal": "costo_capital"
+   "roic_terminal": "costo_capital",
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "La IA generativa comoditiza la creatividad",
+   "terminal": "estabilizacion"
   },
   {
    "nombre": "D · La IA amplía el mercado de Adobe",
@@ -97,7 +105,9 @@
      0.11,
      0.1
     ]
-   }
+   },
+   "id": "D",
+   "tesis": "optimista"
   }
  ],
  "margenes_inverso": [
