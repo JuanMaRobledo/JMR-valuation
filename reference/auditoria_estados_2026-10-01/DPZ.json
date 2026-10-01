@@ -1,0 +1,72 @@
+{
+ "ticker": "DPZ",
+ "cierre_fiscal": "2025-12-28",
+ "fecha_ltm": "2026-06-14",
+ "cambios": [
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L13",
+   "fila": "Cash from Operating Activities",
+   "antes": 792.1,
+   "despues": 777.8,
+   "motivo": "LTM = ejercicio 792.1 + acumulado al 2026-06-14 352.6 − acumulado del año anterior 366.9 (NetCashProvidedByUsedInOperatingActivities). Antes 792.1."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L22",
+   "fila": "Cash from Investing Activities",
+   "antes": -70.2,
+   "despues": -109.6,
+   "motivo": "LTM = ejercicio -70.2 + acumulado al 2026-06-14 -24.6 − acumulado del año anterior 14.8 (NetCashProvidedByUsedInInvestingActivities). Antes -70.2."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L34",
+   "fila": "Cash from Financing Activities",
+   "antes": -752.1,
+   "despues": -805.1,
+   "motivo": "LTM = ejercicio -752.1 + acumulado al 2026-06-14 -314.3 − acumulado del año anterior -261.3 (NetCashProvidedByUsedInFinancingActivities). Antes -752.1."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": -137.8,
+   "motivo": "LTM = ejercicio -28.4 + acumulado al 2026-06-14 12.8 − acumulado del año anterior 122.2 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2023-12-31",
+   "antes": 14.66,
+   "despues": 14.8,
+   "motivo": "EPS básico del 10-K (2023-12-31); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2024-12-29",
+   "antes": 16.69,
+   "despues": 16.83,
+   "motivo": "EPS básico del 10-K (2024-12-29); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2025-12-28",
+   "antes": 17.57,
+   "despues": 17.69,
+   "motivo": "EPS básico del 10-K (2025-12-28); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20)."
+  }
+ ],
+ "notas": []
+}

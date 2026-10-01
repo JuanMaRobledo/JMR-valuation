@@ -1,0 +1,28 @@
+{
+ "ticker": "CELH_BALANCE",
+ "sheet_id": "1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 669.9,
+   "despues": 668,
+   "motivo": "Deuda de largo plazo al 30-jun-2026 (10-Q 2T26); antes 669,9, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 1181.5,
+   "despues": 1200,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.181,5, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 1181.5,
+   "despues": 1200,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.181,5, el cierre de 2025."
+  }
+ ]
+}

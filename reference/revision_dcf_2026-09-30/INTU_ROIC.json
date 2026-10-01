@@ -1,0 +1,21 @@
+{
+ "ticker": "INTU_ROIC",
+ "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja durable: Costos de cambio y datos del cliente (QuickBooks, TurboTax), escala en pyme. Evidencia: ROIC 12-22%, siempre por encima del costo de capital. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (22,5%): 22,5% (Damodaran, Investment Valuation, cap. 12)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.222,
+   "despues": 0.225,
+   "motivo": "Ventaja durable: Costos de cambio y datos del cliente (QuickBooks, TurboTax), escala en pyme. Evidencia: ROIC 12-22%, siempre por encima del costo de capital. ROIC después del año 10 = el promedio de la industria (29,3%), sin superar el ROIC actual (22,5%): 22,5% (Damodaran, Investment Valuation, cap. 12)."
+  }
+ ]
+}

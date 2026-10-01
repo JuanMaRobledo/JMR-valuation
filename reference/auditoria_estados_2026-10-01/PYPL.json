@@ -1,0 +1,49 @@
+{
+ "ticker": "PYPL",
+ "cierre_fiscal": "2025-12-31",
+ "fecha_ltm": "2026-03-31",
+ "cambios": [
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2023-12-31",
+   "antes": 3.84,
+   "despues": 3.85,
+   "motivo": "EPS básico del 10-K (2023-12-31); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2024-12-31",
+   "antes": 3.99,
+   "despues": 4.03,
+   "motivo": "EPS básico del 10-K (2024-12-31); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2025-12-31",
+   "antes": 5.41,
+   "despues": 5.46,
+   "motivo": "EPS básico del 10-K (2025-12-31); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": -14,
+   "despues": "=L13+L22+L34",
+   "motivo": "Cambio de caja LTM = operación + inversión + financiación (sin efecto cambiario); la SEC solo publica hasta mar-2026."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20)."
+  }
+ ],
+ "notas": [],
+ "nota": "Flujos LTM de la hoja (a jun-2026) conservados: la API companyfacts de la SEC solo llega a mar-2026 para PYPL."
+}

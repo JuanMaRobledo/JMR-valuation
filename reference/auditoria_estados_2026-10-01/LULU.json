@@ -1,0 +1,48 @@
+{
+ "ticker": "LULU",
+ "cierre_fiscal": "2026-02-01",
+ "fecha_ltm": "2026-08-02",
+ "cambios": [
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "L40",
+   "fila": "Net Change in Cash",
+   "antes": 1117.738,
+   "despues": 233.9,
+   "motivo": "LTM = ejercicio -177.1 + acumulado al 2026-08-02 -417.5 − acumulado del año anterior -828.5 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes 1117.738."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS 2024-01-28",
+   "antes": 12.2,
+   "despues": 12.23,
+   "motivo": "EPS básico del 10-K (2024-01-28); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "fila": "Basic EPS 2025-02-02",
+   "antes": 14.64,
+   "despues": 14.67,
+   "motivo": "EPS básico del 10-K (2025-02-02); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "fila": "Basic EPS 2026-02-01",
+   "antes": 13.26,
+   "despues": 13.27,
+   "motivo": "EPS básico del 10-K (2026-02-01); antes copiaba el diluido."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "B41",
+   "fila": "Invested capital",
+   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
+   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
+   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20)."
+  }
+ ],
+ "notas": []
+}

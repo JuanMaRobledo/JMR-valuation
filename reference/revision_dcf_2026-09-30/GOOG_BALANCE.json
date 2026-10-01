@@ -1,0 +1,70 @@
+{
+ "ticker": "GOOG_BALANCE",
+ "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L4",
+   "antes": 0,
+   "despues": 186563,
+   "motivo": "Valores negociables al 30-jun-2026 (10-Q 2T26); antes 0: la caja del DCF omitía los valores negociables."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L5",
+   "antes": 55911,
+   "despues": 242474,
+   "motivo": "Caja y valores negociables al 30-jun-2026 = 55.911 + 186.563 (10-Q)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L14",
+   "antes": 0,
+   "despues": 131461,
+   "motivo": "Valores no negociables y otras inversiones de largo plazo al 30-jun-2026 (10-Q); antes 0: son activos no operativos."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L20",
+   "antes": 1996,
+   "despues": 1999,
+   "motivo": "Porción corriente de la deuda al 30-jun-2026 (10-Q)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 46547,
+   "despues": 98165,
+   "motivo": "Deuda de largo plazo al 30-jun-2026 (10-Q); antes 46.547, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L21",
+   "antes": null,
+   "despues": 3446,
+   "motivo": "Arrendamientos operativos corrientes al 30-jun-2026 = 18.037 − 14.591 (10-Q)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 12744,
+   "despues": 14591,
+   "motivo": "Arrendamientos operativos de largo plazo al 30-jun-2026 (10-Q); antes 12.744."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 415265,
+   "despues": 640480,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 415265,
+   "despues": 640480,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 415.265, el cierre de 2025."
+  }
+ ]
+}

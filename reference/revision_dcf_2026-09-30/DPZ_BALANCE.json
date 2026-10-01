@@ -1,0 +1,49 @@
+{
+ "ticker": "DPZ_BALANCE",
+ "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L20",
+   "antes": 6.1,
+   "despues": 7,
+   "motivo": "Porción corriente de deuda y arrendamientos financieros al 14-jun-2026 (10-Q 2T26)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L25",
+   "antes": 4810.7,
+   "despues": 4876,
+   "motivo": "Deuda de largo plazo con arrendamientos financieros al 14-jun-2026 (10-Q 2T26); antes 4.810,7, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L14",
+   "antes": 0,
+   "despues": 28,
+   "motivo": "Valores negociables de largo plazo al 14-jun-2026 (10-Q); antes 0."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": -3901.1,
+   "despues": -3982,
+   "motivo": "Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": -3901.1,
+   "despues": -3982,
+   "motivo": "Déficit patrimonial al 14-jun-2026 (10-Q); antes −3.901,1, el cierre de 2025."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "antes": 4816.8,
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+   "motivo": "Deuda financiera al 14-jun-2026 (antes 4.816,8 fijo, del cierre de 2025). Sin arrendamientos operativos, como antes."
+  }
+ ]
+}

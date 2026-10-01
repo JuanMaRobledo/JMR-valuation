@@ -1,0 +1,21 @@
+{
+ "ticker": "NKE_ROIC",
+ "sheet_id": "1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B49",
+   "antes": "Yes",
+   "despues": "Yes",
+   "motivo": "Ventaja que se desvanece: Marca global y escala de distribución, hoy bajo presión. Evidencia: ROIC 18-47% en 2021-2026, en descenso. ROIC después del año 10 = 11,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (20,9%), sin superar el ROIC actual (13,8%): 13,8%, porque la ventaja se desvanece."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B50",
+   "antes": 0.112,
+   "despues": 0.114,
+   "motivo": "Ventaja que se desvanece: Marca global y escala de distribución, hoy bajo presión. Evidencia: ROIC 18-47% en 2021-2026, en descenso. ROIC después del año 10 = 11,4%, punto medio entre el costo de capital terminal (9,0%) y el promedio de la industria (20,9%), sin superar el ROIC actual (13,8%): 13,8%, porque la ventaja se desvanece."
+  }
+ ]
+}

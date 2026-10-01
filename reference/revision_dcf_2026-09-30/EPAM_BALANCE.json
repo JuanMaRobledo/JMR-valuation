@@ -1,0 +1,35 @@
+{
+ "ticker": "EPAM_BALANCE",
+ "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L21",
+   "antes": null,
+   "despues": 39.3,
+   "motivo": "Porción corriente de arrendamientos al 30-jun-2026 (10-Q 2T26)."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L26",
+   "antes": 81.5,
+   "despues": 88,
+   "motivo": "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 81,5."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L34",
+   "antes": 3677.2,
+   "despues": 3519,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 3.677,2, el cierre de 2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L35",
+   "antes": 3677.2,
+   "despues": 3519,
+   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 3.677,2, el cierre de 2025."
+  }
+ ]
+}

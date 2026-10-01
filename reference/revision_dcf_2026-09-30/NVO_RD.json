@@ -1,0 +1,42 @@
+{
+ "ticker": "NVO_RD",
+ "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+ "fecha": "2026-09-30",
+ "cambios": [
+  {
+   "hoja": "R& D converter",
+   "celda": "B12",
+   "antes": "='Income Statement'!K10",
+   "despues": "='Income Statement'!J10*45288/48062",
+   "motivo": "12 meses a jun-2025 = 2024 (48.062) + 1S25 (21.998) − 1S24 (24.772) = 45.288 MDKK (6-K 2T25 y 4T24). Antes el ejercicio 2025, que se solapa con el LTM."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B13",
+   "antes": "='Income Statement'!J10",
+   "despues": "='Income Statement'!I10*43360/32443",
+   "motivo": "12 meses a jun-2024 = 2023 (32.443) + 1S24 (24.772) − 1S23 (13.855) = 43.360 MDKK. Antes el ejercicio 2024."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B14",
+   "antes": "='Income Statement'!I10",
+   "despues": "='Income Statement'!H10*27573/24047",
+   "motivo": "12 meses a jun-2023 = 2022 (24.047) + 1S23 (13.855) − 1S22 (10.329) = 27.573 MDKK. Antes el ejercicio 2023."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B15",
+   "antes": "='Income Statement'!H10",
+   "despues": "='Income Statement'!G10*20213/17772",
+   "motivo": "12 meses a jun-2022 = 2021 (17.772) + 1S22 (10.329) − 1S21 (7.888) = 20.213 MDKK. Antes el ejercicio 2022."
+  },
+  {
+   "hoja": "R& D converter",
+   "celda": "B16",
+   "antes": "='Income Statement'!G10",
+   "despues": "='Income Statement'!F10*16282/15462",
+   "motivo": "12 meses a jun-2021 = 2020 (15.462) + 1S21 (7.888) − 1S20 (7.068) = 16.282 MDKK. Antes el ejercicio 2021."
+  }
+ ]
+}
