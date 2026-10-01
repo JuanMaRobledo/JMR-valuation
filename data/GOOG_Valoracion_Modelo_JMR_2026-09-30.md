@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$323,89 por acción.** Complemento: DCF esperado por probabilidades US$275,69; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$133,17–US$425,91; precio con MOS 35% sobre el esperado: US$179,20; precio de referencia US$346,22. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son la calibración técnica anterior de la hoja (Base técnico US$323,89) y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$323,90 por acción.** Complemento: DCF esperado por probabilidades US$275,69; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$133,17–US$425,92; precio con MOS 35% sobre el esperado: US$179,20; precio de referencia US$346,22. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$349,47), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Search resiste y Cloud es el segundo motor** (valor principal) | 40% | US$323,89 | US$129,56 |
+| **Base · Search resiste y Cloud es el segundo motor** (valor principal) | 40% | US$323,90 | US$129,56 |
 | Conservadora · La IA conversacional erosiona Search | 25% | US$163,90 | US$40,97 |
-| Disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA | 15% | US$133,17 | US$19,97 |
-| Optimista · Gemini y Cloud dominan la plataforma de IA | 20% | US$425,91 | US$85,18 |
+| Disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA | 15% | US$133,17 | US$19,98 |
+| Optimista · Gemini y Cloud dominan la plataforma de IA | 20% | US$425,92 | US$85,18 |
 | **DCF esperado (complemento)** | 100% | **US$275,69** | |
 
-Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$311,55 por acción y los múltiplos, US$244,87 hoy: 21% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
+Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$311,55 por acción y los múltiplos, US$244,87 hoy: 21% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
-| Escenario | DCF técnico anterior hoy (calibración) | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
+| Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$323,89 | US$265,34 | US$288,76 | US$179,20 | US$391,45 |
-| Conservador | US$163,90 | US$214,34 | US$194,17 | US$179,20 | US$248,60 |
-| Optimista | US$425,92 | US$334,97 | US$371,35 | US$179,20 | US$525,30 |
+| Base | US$322,34 | US$265,34 | US$288,14 | US$179,20 | US$391,45 |
+| Conservador | US$162,35 | US$214,34 | US$193,54 | US$179,20 | US$248,61 |
+| Optimista | US$424,37 | US$334,97 | US$370,73 | US$179,20 | US$525,30 |
 
 ## 2. Datos
 
@@ -49,7 +49,7 @@ Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$3
 | Margen EBIT objetivo | 31,3% | 35,3% | 38,3% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 1,15 / 1,43 | — | Input B32/B33 |
-| DCF por acción hoy | US$163,90 | US$323,89 | US$425,92 | Valuation output B86/B35/B137 |
+| DCF por acción hoy | US$162,35 | US$322,34 | US$424,37 | Valuation output B86/B35/B137 |
 
 Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,07, ERP 4,46%, Ke 9,76%, costo de la deuda después de impuestos 4,65%, peso del patrimonio 97,8%, WACC inicial 9,65% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
@@ -73,7 +73,7 @@ Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentr
 - **P/FCFE.** Base 34,7x: promedio de historia y peers 34,6x, acercado 25% al justificado (34,9x); rango de anclas 28,6x–40,5x. Atípicos excluidos de la historia: Dec '22 (19,0x: > 2,5x la mediana (1.6x)); Dec '23 (25,3x: > 2,5x la mediana (1.6x)); Dec '24 (32,0x: > 2,5x la mediana (1.6x)); Dec '25 (51,8x: > 2,5x la mediana (1.6x)); LTM (78,3x: > 2,5x la mediana (1.6x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 19,5x: promedio de historia y peers 19,6x, acercado 25% al justificado (19,3x); rango de anclas 18,6x–20,7x. Atípicos excluidos de la historia: Dec '22 (12,5x: > 2,5x la mediana (1.0x)); Dec '23 (17,3x: > 2,5x la mediana (1.0x)); Dec '24 (18,6x: > 2,5x la mediana (1.0x)); Dec '25 (23,0x: > 2,5x la mediana (1.0x)); LTM (22,5x: > 2,5x la mediana (1.0x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$265,34 frente a US$323,89 del DCF (−18%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$265,25 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$265,34 frente a US$322,34 del DCF (−18%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$265,25 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -87,7 +87,7 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 | P/E | 20% | US$392,58 | US$269,62 | US$505,11 |
 | P/FCFE | 5% | US$393,34 | US$293,49 | US$520,04 |
 | P/OCF | 5% | US$352,58 | US$279,12 | US$399,86 |
-| **Ponderado FY+3** | 100% | US$391,45 | US$248,60 | US$525,30 |
+| **Ponderado FY+3** | 100% | US$391,45 | US$248,61 | US$525,30 |
 
 Valor presente (Ke 9,76%; consolidado por método: Promedio 1-3 años):
 
@@ -109,25 +109,25 @@ Valor presente (Ke 9,76%; consolidado por método: Promedio 1-3 años):
 | P/OCF | Conservador | US$219,73 | US$219,07 | US$211,27 | US$216,69 | OK |
 | P/OCF | Optimista | US$211,01 | US$263,93 | US$302,57 | US$259,17 | OK |
 
-Múltiplos consolidados hoy: US$265,34 / US$214,34 / US$334,97 · DCF técnico hoy: US$323,89 / US$163,90 / US$425,92 · Ponderado hoy: US$288,76 / US$194,17 / US$371,35 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$265,34 / US$214,34 / US$334,97 · DCF de las historias hoy: US$322,34 / US$162,35 / US$424,37 · Ponderado hoy: US$288,14 / US$193,54 / US$370,73 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para GOOG la diferencia es de −18% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF técnico anterior (caso Base de la hoja) da US$311,55 por acción y los múltiplos, US$244,87 hoy: 21% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco es el DCF esperado de las historias y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para GOOG la diferencia es de −18% (múltiplos por debajo del DCF). Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$311,55 por acción y los múltiplos, US$244,87 hoy: 21% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
 DCF inverso: con el resto de supuestos del escenario Base, el precio de US$346,22 supone que los ingresos crecen 11,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,4% (−0,5 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$464,18 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,8%, WACC de los años 4-10 9,4%, ROE de FY+3 42,1% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$426,26 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,8%, WACC de los años 4-10 9,4%, ROE de FY+3 42,1% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 17,9x | 23,8x | −23% | 7,2% | 7,7% | −0,5 pp | Coherente con el DCF. |
-| EV/FCFF | 36,6x | 49,7x | −25% | 6,5% | 7,2% | −0,8 pp | Coherente con el DCF. |
-| P/E | 26,8x | 31,7x | −15% | 6,4% | 6,9% | −0,6 pp | Coherente con el DCF. |
-| P/FCFE | 34,7x | 41,0x | −15% | 6,7% | 7,1% | −0,5 pp | Coherente con el DCF. |
-| P/OCF | 19,5x | 25,8x | −24% | 6,7% | 7,5% | −0,7 pp | Coherente con el DCF. |
+| EV/EBITDA | 17,9x | 21,7x | −17% | 7,2% | 7,6% | −0,4 pp | Coherente con el DCF. |
+| EV/FCFF | 36,6x | 45,4x | −19% | 6,5% | 7,0% | −0,6 pp | Coherente con el DCF. |
+| P/E | 26,8x | 29,1x | −8% | 6,4% | 6,7% | −0,3 pp | Coherente con el DCF. |
+| P/FCFE | 34,7x | 37,6x | −8% | 6,7% | 6,9% | −0,2 pp | Coherente con el DCF. |
+| P/OCF | 19,5x | 23,6x | −17% | 6,7% | 7,3% | −0,5 pp | Coherente con el DCF. |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -135,15 +135,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$288,76 | — |
-| Múltiplos Base +20% | US$319,40 | +10,6% |
-| Múltiplos Base −20% | US$258,02 | −10,6% |
-| Crecimiento años 2-5 +2 pp | US$311,69 | +7,9% |
-| Crecimiento años 2-5 −2 pp | US$288,56 | −0,1% |
-| Margen objetivo +3 pp | US$310,98 | +7,7% |
-| Margen objetivo −3 pp | US$288,24 | −0,2% |
-| WACC +1 pp | US$292,05 | +1,1% |
-| WACC −1 pp | US$307,72 | +6,6% |
+| Vigente | US$288,14 | — |
+| Múltiplos Base +20% | US$318,78 | +10,6% |
+| Múltiplos Base −20% | US$257,40 | −10,7% |
+| Crecimiento años 2-5 +2 pp | US$311,69 | +8,2% |
+| Crecimiento años 2-5 −2 pp | US$288,56 | +0,1% |
+| Margen objetivo +3 pp | US$310,98 | +7,9% |
+| Margen objetivo −3 pp | US$288,24 | +0,0% |
+| WACC +1 pp | US$292,05 | +1,4% |
+| WACC −1 pp | US$307,72 | +6,8% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Crecimiento años 2-5 +2 pp.
