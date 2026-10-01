@@ -31,7 +31,7 @@ AUD = _ROOT / "reference" / "auditoria_estados_2026-10-01"
 REF = _ROOT / "reference" / "damodaran"
 FECHA = "2026-10-01"
 TIPO = {"RD": "Conversor de I+D alineado al LTM", "BALANCE": "Balance del último 10-Q", "ROIC": "ROIC terminal (criterio Damodaran)",
-        "ARREND": "Arrendamientos operativos fuera de la deuda"}
+        "ARREND": "Deuda de balance sin arrendamientos operativos", "LEASECONV": "Arrendamientos como deuda (conversor, Damodaran)"}
 BASE = "7361ae29c73368ed2ccedade461d02df9243e5eb"  # Modelo-JMR-datos antes de la auditoría (merge del PR #17)
 NIIF = ("AFYA", "NVO", "ONON", "PAGS")
 
@@ -133,9 +133,8 @@ def build(datos: Path, tk: str, sh) -> dict:
     if tk in ("AFYA", "NVO", "ONON", "PAGS"):
         salvedades.append("Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma "
                           "automática; el balance se revisó con el informe semestral." if tk != "PAGS" else
-                          "Financiera (DCF de flujo al accionista): el balance LTM de la hoja repite el cierre de 2025 y los flujos de "
-                          "inversión y financiación LTM no están importados. No afectan al valor (utilidad, ROE y costo del patrimonio), "
-                          "pero quedan pendientes de completar.")
+                          "Financiera (DCF de flujo al accionista): balance y flujos LTM actualizados con el 20-F 2025 y el 6-K del 1S26 "
+                          "(convertidos a los tipos implícitos de la hoja); no afectan al valor, que depende de utilidad, ROE y costo del patrimonio.")
     if tk == "PYPL":
         salvedades.append("La API XBRL de la SEC solo publica hasta mar-2026 para PayPal: se conservaron los flujos LTM a jun-2026 de la hoja.")
     salvedades.append("No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la "
@@ -212,6 +211,9 @@ def main(argv):
         (AUD / f"{tk}_resumen.json").write_text(json.dumps(a, ensure_ascii=False, indent=1))
         af = glob.glob(str(datos / "analisis" / f"{tk}-research-*.json"))[0]
         rec = json.loads(Path(af).read_text())
+        prev = rec.get("auditoriaEspecifica") or {}
+        if prev and "documento" in prev and "2026-10-01" not in str(prev.get("documento")):
+            rec["auditoriaEspecificaAnterior"] = prev  # auditoría previa (ADBE, 30-sep-2026)
         rec["auditoriaEspecifica"] = {"fecha": dt.datetime.now(dt.timezone.utc).isoformat(), "estado": "auditoría de datos y "
                                       "cálculo verificada; salvedades de método abiertas", "documento": f"data/{tk}_Auditoria_Valoracion_{FECHA}.md",
                                       "cambios": len(a["cambios"]), "checks": a["checks"], "salvedades": a["salvedades"],

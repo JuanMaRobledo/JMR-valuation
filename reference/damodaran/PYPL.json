@@ -330,5 +330,13 @@
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
- ]
+ ],
+ "arrendamientos": {
+  "vp": 661.8628664741234,
+  "ajuste_ebit": 51.68952225431276,
+  "margen_pp": 0.0015145781251263701,
+  "capital_ventas": 0.019393543907469626,
+  "cierre": "2025-12-31",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+ }
 }

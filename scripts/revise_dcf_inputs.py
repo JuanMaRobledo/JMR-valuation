@@ -25,9 +25,9 @@ from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 
 _ROOT = Path(__file__).resolve().parents[1]
 OUT = _ROOT / "reference" / "revision_dcf_2026-09-30"
-IS, VO, COC, RD, BSH = "Input sheet", "Valuation output", "Cost of capital worksheet", "R& D converter", "Balance Sheet"
+IS, VO, COC, RD, BSH, CFH = "Input sheet", "Valuation output", "Cost of capital worksheet", "R& D converter", "Balance Sheet", "Cash Flow Statement"
 
-ARREND = 'Arrendamientos operativos fuera de la deuda (1-oct-2026): bajo US GAAP el EBIT ya descuenta el alquiler y el conversor de arrendamientos está desactivado, así que contarlos también como deuda los resta dos veces (criterio Damodaran: o se convierten deuda y EBIT, o ninguno). Los arrendamientos financieros siguen siendo deuda.'
+ARREND = 'Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda.'
 
 # (hoja, celda, valor nuevo, motivo)
 CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
@@ -258,11 +258,25 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
         (BSH, "L16", 4010.2, "Activos totales al 30-jun-2026: 3.242,9 MCHF × 1,2366 (6-K 1S26)."),
         (BSH, "L29", 1646.5, "Pasivos totales al 30-jun-2026: 1.331,5 MCHF × 1,2366 (6-K 1S26)."),
     ],
+    # PAGS (NIIF, reales; la hoja convierte a USD: flujos a 5.5877 BRL/USD, el implícito en su flujo operativo de 2025;
+    # balance a 5.4762, el implícito en su patrimonio de dic-2025). 20-F 2025 y 6-K 1S26 (estados intermedios).
+    "PAGS_BALANCE": [
+        (BSH, "L34", 2742.0, "Patrimonio al 30-jun-2026: R$15.015.865 mil / 5.4762 (6-K 1S26). Antes 2.673,3, el cierre de 2025."),
+        (BSH, "L35", 2742.0, "Patrimonio al 30-jun-2026: R$15.015.865 mil / 5.4762 (6-K 1S26). Antes 2.673,3, el cierre de 2025."),
+        (BSH, "L16", 13823.0, "Activos totales al 30-jun-2026: R$75.697.476 mil / 5.4762 (6-K 1S26)."),
+        (BSH, "L29", 11080.9, "Pasivos totales al 30-jun-2026 = activos − patrimonio (6-K 1S26)."),
+        (CFH, "K22", -411.6, "Flujo de inversión 2025: −R$2.299.796 mil / 5.5877 (20-F 2025). Antes 0 (no importado)."),
+        (CFH, "K34", -775.4, "Flujo de financiación 2025: −R$4.332.796 mil / 5.5877 (20-F 2025). Antes 0 (no importado)."),
+        (CFH, "L13", 1082.6, "Flujo operativo LTM = 2025 (7.562.431) + 1S26 (1.938.645) − 1S25 (3.451.822) = R$6.049.254 mil / 5.5877 (20-F y 6-K)."),
+        (CFH, "L22", -431.9, "Flujo de inversión LTM = −2.299.796 − 1.215.583 + 1.101.798 = −R$2.413.581 mil / 5.5877 (20-F y 6-K). Antes 0."),
+        (CFH, "L34", -740.9, "Flujo de financiación LTM = −4.332.796 − 1.956.893 + 2.149.485 = −R$4.140.204 mil / 5.5877 (20-F y 6-K). Antes 0."),
+    ],
     "MSFT_BALANCE": [
         (IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26+66594",
          "Se suman los arrendamientos financieros (66.594 al 30-jun-2026, 10-K FY26): son deuda (centros de datos) y su costo no está en el EBIT como alquiler. Antes se omitían."),
     ],
-    # Novena ronda (1-oct-2026): arrendamientos operativos fuera de la deuda en las empresas US GAAP (ver motivo).
+    # Novena ronda (1-oct-2026): la deuda de balance excluye los arrendamientos operativos, que entran por el conversor
+    # (apply_lease_conversion.py, criterio Damodaran).
     "BSX_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
     "CELH_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
     "DUOL_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
@@ -276,6 +290,7 @@ CHANGES: dict[str, list[tuple[str, str, float, str]]] = {
     "UBER_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
     "ZTS_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
     "PLTR_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
+    "ADBE_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25", ARREND)],
     "MSFT_ARREND": [(IS, "B16", "='Balance Sheet'!L20+'Balance Sheet'!L25+66594", ARREND + " MSFT: se conservan los 66.594 de arrendamientos financieros.")],
     # CELH_IMPUESTO se aplicó y se revirtió el 30-sep-2026: la hoja ya usa la tasa marginal (24%) desde el año 1
     # ('Valuation output'!C8 = 'Input sheet'!B25); B24 solo alimenta el año base y no cambia el valor.
@@ -308,7 +323,7 @@ def _roic_nota(m: dict) -> str:
 
 # MSFT (1-oct-2026): el ROIC actual sube a 26,5% al corregir el conversor de I+D y sigue bajo el de la industria.
 # 1-oct-2026: ROIC actual con capital operativo y balance del último 10-Q (auditoría de estados).
-for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT", "GOOG", "INTU", "NKE", "PYPL"):
+for _t in ("CMG", "AFYA", "LULU", "EPAM", "MSFT", "GOOG", "INTU", "NKE", "PYPL", "ADBE"):
     _m = _MOAT[_t]
     CHANGES[f"{_t}_ROIC"] = [(IS, "B49", "Yes", _roic_nota(_m)), (IS, "B50", _m["roic_terminal"], _roic_nota(_m))]
 

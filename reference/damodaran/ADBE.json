@@ -34,7 +34,10 @@
     ]
    },
    "id": "A",
-   "tesis": "base"
+   "tesis": "base",
+   "tesis_titulo": "Adobe monetiza la IA y conserva su posición",
+   "tesis_que": "Adobe mantiene el papel de sus herramientas en los flujos profesionales y cobra las funciones de IA mediante suscripciones, créditos o planes superiores. La IA ayuda a defender la retención y el gasto por cliente, pero no provoca una aceleración permanente. La competencia limita el crecimiento sin deshacer la ventaja comercial.",
+   "tesis_contraste": "La confirmarían renovaciones y precio realizado estables, monetización de IA que aporte ventas y márgenes compatibles con el coste de cómputo. Perdería fuerza si el crecimiento solo se sostiene con descuentos, si empeora la retención o si la IA aumenta el coste sin elevar el gasto del cliente."
   },
   {
    "nombre": "B · Erosión gradual frente a Figma y Canva",
@@ -58,7 +61,10 @@
    },
    "roic_terminal": "costo_capital",
    "id": "B",
-   "tesis": "conservadora"
+   "tesis": "conservadora",
+   "tesis_titulo": "Adobe sigue siendo rentable, pero pierde poder de precio",
+   "tesis_que": "Figma, Canva y otras herramientas capturan parte de los nuevos clientes y de los trabajos sencillos. Adobe conserva los flujos profesionales más difíciles de sustituir, pero necesita conceder más valor dentro de sus planes y tiene menos capacidad para subir precios. El negocio crece más lentamente y su ventaja se erosiona de forma gradual.",
+   "tesis_contraste": "La apoyarían una desaceleración persistente, menor gasto por cliente o presión de descuentos con caja todavía sólida. Se debilitaría si Adobe mantiene la retención y monetiza la IA sin sacrificar precios ni margen. No hay una serie comparable verificada de adopción que demuestre que esta erosión ya esté ocurriendo."
   },
   {
    "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
@@ -84,7 +90,10 @@
    "id": "C",
    "tesis": "disrupción",
    "descripcion": "La IA generativa comoditiza la creatividad",
-   "terminal": "estabilizacion"
+   "terminal": "estabilizacion",
+   "tesis_titulo": "La IA generativa comoditiza la creatividad",
+   "tesis_que": "Para una parte relevante de los usuarios, producir contenido con herramientas de IA más baratas resulta suficiente y reduce la necesidad de pagar por la suite de Adobe. La presión afecta tanto a nuevos clientes como al gasto de la base instalada. Adobe conserva productos útiles y un negocio rentable, pero pierde una parte sustancial de su poder de precio y de sus retornos extraordinarios.",
+   "tesis_contraste": "La apoyarían deterioro sostenido de renovaciones, contracción de ingresos profesionales y necesidad de regalar funcionalidades de IA para retener usuarios. Se debilitaría si las herramientas complementan la suite y Adobe conserva el gasto de sus clientes. Es una hipótesis adversa severa; no es un caso de quiebra ni el peor resultado posible."
   },
   {
    "nombre": "D · La IA amplía el mercado de Adobe",
@@ -107,7 +116,10 @@
     ]
    },
    "id": "D",
-   "tesis": "optimista"
+   "tesis": "optimista",
+   "tesis_titulo": "La IA amplía el mercado y Adobe captura el crecimiento",
+   "tesis_que": "La IA permite que más personas y empresas creen y distribuyan contenido, aumenta el volumen de trabajo y el gasto por cliente, y Adobe captura una parte relevante de esa expansión con Firefly, Acrobat y GenStudio. Los ingresos adicionales compensan el coste de cómputo y sostienen la ventaja competitiva.",
+   "tesis_contraste": "La confirmarían expansión de clientes y gasto, monetización de IA que aporte crecimiento adicional y mejora de margen con retención sólida. Se debilitaría si el ARR de IA solo sustituye ingresos existentes o si aumenta su uso sin una contribución económica suficiente."
   }
  ],
  "margenes_inverso": [
@@ -274,6 +286,24 @@
   [
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ]
+ ],
+ "arrendamientos": {
+  "vp": 403.3636769301271,
+  "ajuste_ebit": 24.77272051164549,
+  "margen_pp": 0.0009538975938253942,
+  "capital_ventas": 0.015531909007706087,
+  "cierre": "2025-11-28",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+ },
+ "notas_historicas": [
+  [
+   "Dictamen de auditoría del 30-sep-2026 (cifras de esa fecha)",
+   "DCF técnico anterior US$536,48, condicionado a ROIC terminal 29,3%; contraste sin retorno excedente terminal US$377,94 (−29,55%). Valor esperado de cuatro historias US$364,33; MOS 35% US$236,81. El ROIC excedente no es incorrecto por definición: requiere evidencia de duración de la ventaja. Falta una serie homogénea que incluya I+D, goodwill y adquisiciones, así como soporte de ventas/capital 4x–4,5x. La coincidencia del cálculo con la hoja no certifica esos supuestos ni el cumplimiento integral de los prompts v4/v5."
+  ],
+  [
+   "Corrección de la historia C, 30-sep-2026",
+   "La convergencia automática a 4,99% introducía una recuperación no explicada por la tesis. Se sustituye por estabilización nominal del negocio residual: crecimiento años 6–10 de −1,06%, −0,79%, −0,53%, −0,26% y 0%; perpetuidad 0%, margen 32% y ROIC igual a WACC. El 0% es juicio del analista aceptado por el usuario, no una cifra de Adobe. El ingreso del año 10 y terminal es US$26.508,16 millones. La reinversión negativa de algunos años representa liberación de capital y sigue siendo una salvedad económica por validar; no debe interpretarse como recuperación automática de todo el capital intangible. Damodaran, The Stable Growth Rate, consultado 30-sep-2026, permite crecimiento estable menor o negativo, pero no determina el 0% elegido."
   ]
  ]
 }

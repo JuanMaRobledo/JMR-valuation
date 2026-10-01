@@ -117,7 +117,7 @@ def check_importes(spec, r, issues):
 
 def main(argv):
     fix = "--fix" in argv
-    for tk in [a for a in argv if not a.startswith("--") and a != "ADBE"]:  # ADBE: sección escrita a mano
+    for tk in [a for a in argv if not a.startswith("--")]:
         p = REF / f"{tk}.json"
         spec = json.loads(p.read_text())
         r = json.loads((REF / f"{tk}_resultado.json").read_text())

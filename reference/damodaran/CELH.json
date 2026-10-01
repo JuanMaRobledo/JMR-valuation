@@ -355,5 +355,13 @@
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
  ],
- "md_propio": true
+ "md_propio": true,
+ "arrendamientos": {
+  "vp": 17.212078621138826,
+  "ajuste_ebit": 2.831320229810196,
+  "margen_pp": 0.0009291242180980527,
+  "capital_ventas": 0.005648304604449455,
+  "cierre": "2025-12-31",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+ }
 }

@@ -224,7 +224,19 @@ def compute(tk: str) -> dict:
     cases = []
     # Crecimiento terminal de la hoja (Valuation output M4; en financieras, el de 'DCF FCFE financiero').
     tg_hoja = inp["dcfFinanciero"]["terminalGrowth"] if inp.get("dcfFinanciero") else (cell("Valuation output", "M4") or rf)
-    for h in spec["historias"]:
+    # Arrendamientos como deuda (Damodaran): los márgenes de las historias se escriben en base reportada y se llevan a
+    # la base ajustada de la hoja (+ ajuste del EBIT / ventas); el ventas/capital propio de una historia incluye el
+    # capital arrendado. Ver apply_lease_conversion.py.
+    arr = spec.get("arrendamientos") or {}
+    dm, kcap = arr.get("margen_pp", 0.0), arr.get("capital_ventas", 0.0)
+    for h0 in spec["historias"]:
+        h = dict(h0)
+        if arr:
+            h["margen_reportado"] = h["margen"]
+            h["margen"] = h["margen"] + dm
+            if h.get("s2c"):
+                h["s2c_reportado"] = h["s2c"]
+                h["s2c"] = 1 / (1 / h["s2c"] + kcap)
         revs = {k: v * scale for k, v in segs.items()}
         anios, prev = [], rev0
         for y in range(5):
@@ -280,7 +292,7 @@ def compute(tk: str) -> dict:
             "referencia_constante": ref, "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"}
 
     # DCF inverso
-    inv_m = spec.get("margenes_inverso") or [m_base, m_base + 0.02]
+    inv_m = [m + dm for m in spec["margenes_inverso"]] if spec.get("margenes_inverso") else [m_base, m_base + 0.02]
     grid_g = [x / 1000 for x in range(-100, 601, 2)]
     inverso = []
     for b in (beta_hoja, beta_prop):
@@ -553,10 +565,12 @@ def cuatro_tesis(r: dict, W) -> None:
         "calibración C/B/O de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no "
         "presupone IA ni quiebra.")
     for h in hs:
-        desc = h.get("descripcion") or h["nombre"].split(" · ", 1)[-1]
+        desc = h.get("tesis_titulo") or h.get("descripcion") or h["nombre"].split(" · ", 1)[-1]
         W.h4(f"{TITULO_TESIS[h['id']]}: {desc}")
         frase = prob_frase(sp, h["id"])
-        if frase:
+        if h.get("tesis_que"):  # prosa del analista (ADBE)
+            W.p("**Qué tiene que ocurrir.** " + h["tesis_que"])
+        elif frase:
             W.p("**Qué plantea.** " + frase)
         crec = ("; ".join(f"{k} crece " + ", ".join(es(x * 100, 0) + "%" for x in h["crec"].get(k, [0] * 5)) for k in segs)
                 if len(segs) > 1 else ("Crece " + ", ".join(es(x * 100, 0) + "%" for x in h["crec"][segs[0]])))
@@ -569,7 +583,9 @@ def cuatro_tesis(r: dict, W) -> None:
         W.p(f"**Traducción al modelo.** {crec}. El crecimiento anual compuesto de cinco años es {pct(h['cagr'])}; el "
             f"{'ROE' if fin else 'margen operativo'} objetivo es {pct(h['margen'], 1)}.{roic}{tg} Probabilidad: {pct(h['prob'], 0)}; "
             f"DCF: {usd(h['valor_beta_hoja'])} por acción.")
-        if ind:
+        if h.get("tesis_contraste"):
+            W.p("**Cómo contrastarla.** " + h["tesis_contraste"])
+        elif ind:
             if h["id"] == "A":
                 c = ("Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (" +
                      "; ".join(f"{low(x[0])}: {x[1]}" for x in ind[:3]) + "). Pierde peso si cruzan cualquiera de los umbrales "
@@ -692,6 +708,15 @@ def render(r: dict) -> tuple[str, str]:
             p(f"**{titulo}.** " + blk["texto"])
         if blk.get("tabla"):
             tab(blk["tabla"]["cols"], blk["tabla"]["rows"], blk["tabla"].get("align"))
+    arr = sp.get("arrendamientos")
+    if arr:
+        p(f"**Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente "
+          f"(US${es(arr['vp'], 0)} millones, compromisos del 10-K al {arr['cierre']}) se suma a la deuda y al peso de la deuda "
+          f"del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación "
+          f"del activo arrendado (US${es(arr['ajuste_ebit'], 0)} millones, +{es(arr['margen_pp'] * 100, 2)} pp de margen). Por eso "
+          "los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y "
+          f"el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además {es(arr['capital_ventas'], 2)} dólares "
+          "de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.")
     rk = sp.get("riesgo", {})
     p("**Riesgo.** " + rk.get("texto", ""))
     tab(["Enfoque", "Beta", "Costo del patrimonio", "WACC inicial", "DCF Base por acción"],
@@ -744,7 +769,7 @@ def render(r: dict) -> tuple[str, str]:
         crec = "; ".join(f"{k}: " + ", ".join(es(x * 100, 0) + "%" for x in h["crec"].get(k, [0] * 5)) for k in segs) if len(segs) > 1 else \
             ", ".join(es(x * 100, 0) + "%" for x in h["crec"][segs[0]])
         nom = h["nombre"] + (f": {h['descripcion']}" if h.get("descripcion") else "")
-        rows.append([f"**{nom}**", pct(h["prob"], 0), crec, pct(h["cagr"]), pct(h["margen"], 0),
+        rows.append([f"**{nom}**", pct(h["prob"], 0), crec, pct(h["cagr"]), pct(h["margen"], 1),
                      es(h.get("s2c", r["s2c"]), 1)] + ([roic_txt(h)] if con_roic else []) + [pct(h["terminal_growth"], 2)] +
                     [usd(h["valor_beta_hoja"])] + ([] if same else [usd(h["valor_beta_prop"])]))
     rows.append(["**Valor esperado**", "100%", "", "", "", ""] + ([""] if con_roic else []) + [""] + [f"**{usd(r['valor_esperado_beta_hoja'])}**"] +
@@ -817,6 +842,11 @@ def render(r: dict) -> tuple[str, str]:
     ])
     p("La decisión (comprar, mantener o vender) la registras tú con el selector «Mi decisión» de la app; este análisis no "
       "la toma por ti.")
+    if sp.get("notas_historicas"):
+        h3("Antecedentes de revisiones anteriores")
+        p("Notas de revisiones previas, con las cifras de su fecha; las cifras vigentes son las de esta sección.")
+        for titulo, texto in sp["notas_historicas"]:
+            p(f"**{titulo}.** {texto}")
     if sp.get("fuentes"):
         h3("Fuentes de esta sección")
         md.append("".join((f"- [{t}]({u})\n" if u else f"- {t}\n") for t, u in sp["fuentes"]))
