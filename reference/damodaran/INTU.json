@@ -295,5 +295,27 @@
   "capital_ventas": 0.033194392064301546,
   "cierre": "2026-07-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: la pyme crece a doble dígito; el consumidor, a un dígito.",
+   "Intuit es el sistema financiero de la pequeña empresa (QuickBooks, nómina, pagos, Mailchimp) y del contribuyente estadounidense (TurboTax, Credit Karma). En FY2026, cerrado en julio, facturó US$21.448 millones (+13,9%): Global Business Solutions +16% y QuickBooks Online +23%. La Base supone que la pyme crece de 14% a 10%, el consumidor de 7% a 5% y Credit Karma de 10% a 6%: {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de su tamaño lo lograron, pero Intuit lleva años en ese grupo y la Base ya supone que desacelera. El mercado bajó el múltiplo por miedo a que la IA abarate la contabilidad básica y la preparación de impuestos; esa es la Conservadora ({cagrB}), con el consumidor cayendo. La Disrupción ({cagrC}) combina recesión (Credit Karma) y la declaración gratuita del Estado; la Optimista ({cagrD}), Intuit como plataforma financiera completa de la pyme. Si las unidades de TurboTax caen en la temporada 2027, la Conservadora gana peso."
+  ],
+  [
+   "Margen: el salto depende de la compensación en acciones.",
+   "El margen operativo GAAP subió de 22,3% a 27,4% en dos años. La Base supone ~32% ({mA} en el modelo) desde el próximo año, un salto rápido que exige que la compensación en acciones (US$2.056 millones, ~10% de los ingresos) crezca menos que las ventas. Los márgenes de segmento son de 73-77%, así que el espacio existe; la duda es si la empresa lo deja llegar al resultado o lo reinvierte en IA. El rango va de {mC} a {mD}; dos puntos mueven la Base a {s_m_lo} o {s_m_hi}. Un margen GAAP de 26% o menos en FY27 invalidaría la Base."
+  ],
+  [
+   "Reinversión: casi sin capital, con compras grandes.",
+   "El capex es mínimo (US$175 millones en FY26) frente a un flujo operativo de US$8.838 millones. La hoja usa un ventas/capital de {s2c1}× y {s2c2}× (~US${cap1} de capital por dólar de ventas nuevas), que incorpora que parte del crecimiento se compra: Credit Karma y Mailchimp costaron ~US$20.000 millones. El flujo libre va a recompras (US$5.412 millones) y dividendos. El ROIC, incluida la plusvalía de esas compras, siempre estuvo por encima del costo de capital (12-22%), y los costos de cambio son reales: una pyme no cambia de contabilidad con facilidad. Por eso la Base conserva un ROIC de {roicT} después del año 10, limitado al actual y por debajo del de la industria. Sin esa ventaja, la Base valdría {s_roic}."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}; la bottom-up de Software reapalancada da {betabu}, y con ella el DCF técnico baja algo. Credit Karma añade ciclicidad (depende del crédito al consumidor), lo que apoya una beta algo mayor que la de la hoja; la Base, calculada con la de la hoja, queda del lado optimista en este punto. El costo de capital va de {wacc0} a {waccT}; un punto más lleva la Base a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}; el precio, {precio}, está apenas por encima de la Conservadora ({vB}): el mercado está descontando algo muy cercano a la sustitución por IA de esa historia, o una tasa mucho mayor. Esa distancia merece una explicación antes de cualquier decisión. La compensación en acciones (~10% de los ingresos) diluye, y no está modelada: las acciones se fijan en {acciones} millones."
+  ]
+ ]
 }

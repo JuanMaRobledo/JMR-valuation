@@ -309,5 +309,27 @@
   "capital_ventas": 0.15423050810838673,
   "cierre": "2026-02-01",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: Norteamérica cae, el resto del mundo crece.",
+   "lululemon construyó una marca premium de ropa técnica vendida casi toda en tiendas propias y online. Esa historia se rompió en Norteamérica: en el 2T FY26 las ventas comparables cayeron 10% (−12% en Norteamérica; los leggings, la categoría central, ~−20%), mientras Alo Yoga y Vuori ganan participación. China y el resto del mundo siguen creciendo. La Base supone que Américas cae 8% el primer año, se estabiliza y vuelve a crecer 3%, mientras China y el resto crecen 8-10%: {g1A} el primer año y {cagrA} compuesto. No es una cifra exigente (~{tbA} de empresas de su tamaño lo lograron); el valor de lululemon no depende del crecimiento sino de cuánto dura la caída y a qué margen vuelve. La Conservadora ({cagrB}) es una pérdida estructural frente a Alo y Vuori; la Disrupción ({cagrC}), el declive de una marca de moda; la Optimista ({cagrD}), una recuperación como la de 2018-2019. La nueva CEO, Heidi O'Neill (ex Nike), es la razón para dar a la Base dos años de estabilización y no más. Si el 3T y el 4T repiten comparables de −10%, la Conservadora pasa a ser la central."
+  ],
+  [
+   "Margen: recuperarse, pero no al máximo.",
+   "El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles: ~40% de la producción está en Vietnam y 9% en Camboya. La Base supone 18% en base reportada ({mA} en el modelo, con +{arr_pp} pp por tratar los alquileres de las tiendas como deuda). Es volver al nivel de hoy, no al máximo: con la competencia actual, regresar a 23% no está en ninguna historia. La Conservadora ({mB}) es rebajas permanentes; la Disrupción ({mC}), el declive de la marca; la Optimista ({mD}), una recuperación de producto. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}. La señal que vigilar es el margen bruto: una caída de más de 200 pb invalidaría la Base."
+  ],
+  [
+   "Reinversión: tiendas propias, ahora con alquileres dentro.",
+   "lululemon invierte ~US$650-690 millones al año en tiendas y centros de distribución. Al tratar los alquileres como deuda (~US${arr_vp} millones de valor presente), el ventas/capital baja a {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital propio y arrendado. Con ingresos planos, abrir tiendas afuera solo crea valor si mantienen la productividad histórica. El ROIC bajó de 52% a ~30%: la ventaja existe pero se desvanece, así que el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria. Si la ventaja desapareciera, la Base valdría {s_roic}."
+  ],
+  [
+   "Descuento.",
+   "La hoja usa una beta de {beta}; la bottom-up de Apparel reapalancada da {betabu}, con la que el DCF técnico sube. Una marca de moda premium con ventas en caída tiene más riesgo que el promedio del sector, así que la beta de la hoja es prudente. El costo de capital es casi constante ({wacc0} a {waccT}); un punto más lo lleva a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo. La prima de seguridad de esta empresa es {mos}."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA} y la Conservadora {pB}: casi lo mismo, porque las comparables de −10% y la caída de los leggings hacen la pérdida estructural casi tan probable como la recuperación. La Disrupción pesa {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo entre la Disrupción ({vC}) y la Conservadora ({vB}). O el mercado ve un declive más profundo que el de la Conservadora, o la Base es demasiado generosa con el margen. Esa es la pregunta que hay que resolver antes de leer el resultado. Las acciones se fijan en {acciones} millones."
+  ]
+ ]
 }

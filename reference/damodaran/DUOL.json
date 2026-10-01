@@ -325,5 +325,27 @@
   "capital_ventas": 0.08661722010628585,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: más usuarios que dinero.",
+   "Duolingo vive del hábito: rachas, retención diaria alta y distribución casi toda orgánica; las suscripciones (Super y Max) son ~86% de los ingresos. En 2026 apareció una brecha entre audiencia y dinero: en el 2T26 los usuarios activos diarios crecieron 23% y los suscriptores 17%, pero las reservas —el dinero que entra— solo 8%, y la guía de reservas del año es +10,9%. Los ingresos van detrás de las reservas, así que la desaceleración todavía no se ve completa en los ingresos (+18% en el 2T26). Por eso la Base no sigue a los ingresos sino a las reservas: suscripciones de 14% bajando a 10%, publicidad de 15% a 8%, el examen de inglés casi plano: {g1A} el primer año y {cagrA} compuesto. Antes de la revisión del 30-sep-2026 la hoja suponía 16,6%; se bajó porque no había evidencia para sostenerlo. Lo lograron ~{tbA} de las empresas de su tamaño. La Conservadora ({cagrB}) prolonga la brecha; la Disrupción ({cagrC}) es la sustitución por asistentes de IA generalistas; la Optimista ({cagrD}), que la IA (Max, Video Call) suba el ingreso por usuario. Si el 4T26 repite reservas de ~8%, la Conservadora pasa a ser la historia central."
+  ],
+  [
+   "Margen: con I+D capitalizado y con el costo de las acciones.",
+   "El margen del modelo no es el GAAP ni el EBITDA ajustado: el I+D se capitaliza (vida de {rd_vida} años), lo que da ~21,8% LTM. La Base supone que llega a {mA} en siete años, empujado por un margen bruto alto (72,6%) y por la IA, que bajó el costo por unidad. Hay un costo que este margen no muestra: la compensación en acciones, ~15% de los ingresos, con dilución bruta de 3,5-4% al año. Es un costo real para el accionista y no está modelado (las acciones se fijan en {acciones} millones), así que la Base es optimista en ese punto; 5% más acciones la llevaría a {s_acc}. El rango del margen va de {mC} a {mD}; dos puntos mueven la Base a {s_m_lo} o {s_m_hi}."
+  ],
+  [
+   "Reinversión: casi no hay capital físico.",
+   "Duolingo casi no tiene activos físicos (capex de US$18 millones en 2025) y cobra por adelantado (ingresos diferidos de US$505 millones). La hoja usa un ventas/capital de {s2c1}×: ~US${cap1} de capital por dólar de ventas nuevas, que es sobre todo I+D capitalizado. Por eso el ventas/capital casi no mueve el valor ({s_s_lo} y {s_s_hi}). La reinversión de verdad está en producto y marketing. Después del año 10 el ROIC es el costo de capital ({roicT}): aunque el ROIC actual es alto, la ventaja es un hábito y una marca con costos de cambio bajos, y cualquier app o asistente puede enseñar idiomas. Con esa regla, mover el crecimiento terminal o el ROIC terminal casi no cambia el valor: la Base vale por los próximos diez años, no por la perpetuidad."
+  ],
+  [
+   "Descuento.",
+   "La beta de la hoja es {beta}; la bottom-up de Software (Internet) da {betabu}, pero sale de solo 29 empresas muy dispersas, y la de Software (System & Application) 1,25. El rango razonable es 1,25-1,60. El costo de capital va de {wacc0} a {waccT}; un punto más de tasa lleva la Base a {s_k_hi}. La diferencia que produce la beta es menor que la que producen las historias: el riesgo de Duolingo está en la monetización, no en la tasa. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga más de lo que vale la Base, algo entre la Base y la Optimista ({vD}). La evidencia en contra de la Base es la brecha más grande en años entre usuarios y reservas, y la guía del 3T (+8,9% de reservas) no muestra recuperación. La empresa tiene US$1.181 millones de caja y anunció recompras por US$400 millones; la caja está en el puente al patrimonio, las recompras no."
+  ]
+ ]
 }

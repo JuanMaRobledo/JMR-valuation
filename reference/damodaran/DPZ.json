@@ -266,5 +266,27 @@
   "capital_ventas": 0.04523625616472322,
   "cierre": "2025-12-28",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "Crecimiento: tiendas nuevas, ventas por tienda planas.",
+   "Domino's es casi todo franquicia: gana regalías sobre las ventas del sistema (margen alto, casi sin capital) y vende insumos a los franquiciados de EE.UU. y Canadá (~60% de los ingresos, margen bajo). En el 2T26 las ventas minoristas globales crecieron 3% sin efecto cambiario, pero las ventas mismas tiendas fueron +0,1% en EE.UU. y −0,1% internacional: todo el crecimiento viene de tiendas nuevas. La Base supone exactamente eso: 4-5% al año en ambas partes del negocio, {cagrA} compuesto, cerca de la mediana nominal de empresas de su tamaño (~{tbA} lo lograron). No pedimos más porque los agregadores (DoorDash, Uber Eats) estrecharon la ventaja del delivery propio y la entrada de Domino's en esas plataformas todavía no movió las ventas por tienda. La Conservadora ({cagrB}) es que los agregadores sigan quitando pedidos; la Disrupción ({cagrC}), un sistema de franquicias que se debilita con cierres internacionales; la Optimista ({cagrD}), que agregadores e internacional aceleren. Domino's no necesita crecer mucho para valer lo que dice el DCF: su valor depende más de la duración de los retornos que del crecimiento."
+  ],
+  [
+   "Margen: un paso pequeño y creíble.",
+   "El margen sube despacio (18,3% → 19,3%) porque la cadena de suministro, que vende insumos casi al costo, diluye el margen de las regalías. La Base usa {mA}, apenas un punto más, porque no hay un motor evidente para más: el riesgo está en la rentabilidad de los franquiciados, y si sus márgenes caen Domino's tiene que subsidiar promociones o bajar el precio de los insumos. El rango va de {mC} a {mD}. Aun así el margen pesa: dos puntos llevan la Base a {s_m_lo} o {s_m_hi}, porque cada punto se aplica sobre todas las ventas del sistema y casi no hay capital que lo diluya. Lo invalidaría un margen por debajo de 18%."
+  ],
+  [
+   "Reinversión: el capital lo ponen los franquiciados.",
+   "Domino's casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un ventas/capital de {s2c1}× (cada dólar de ventas nuevas exige ~US${cap1}), y el ROIC actual es altísimo (~81% en el modelo, 65-78% en 2021-2026). El flujo libre (~US$670 millones en 2025) va a dividendos y recompras financiadas en parte con deuda titulizada (~US$4.900 millones), por eso el patrimonio contable es negativo. Después del año 10 la Base no conserva ese 81%: usa {roicT}, el promedio de la industria, porque Damodaran limita el ROIC terminal de una ventaja duradera al de su sector; suponer que un ROIC de 80% dura para siempre sería extrapolar. Si la ventaja desapareciera (ROIC terminal igual al costo de capital) la Base caería a {s_roic}; por eso la Conservadora y la Disrupción usan el costo de capital."
+  ],
+  [
+   "Descuento: una empresa muy apalancada.",
+   "El costo de capital empieza bajo ({wacc0}) porque la deuda pesa mucho en la estructura y es más barata que el patrimonio, y converge a {waccT}. La beta de la hoja es {beta}; la bottom-up de restaurantes reapalancada con la deuda de Domino's da {betabu}, más coherente con un patrimonio tan apalancado, y con ella el DCF técnico baja algo. Es el punto donde más se apoya el valor: un punto más de tasa lleva la Base a {s_k_hi}; uno menos, a {s_k_lo}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo. La refinanciación de la deuda titulizada con tasas altas es un riesgo que no está en la tasa y que conviene vigilar (deuda/EBITDA ~4,5×; por encima de 5,5× cambiaría la lectura)."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, más que en otras empresas, porque es la continuación de lo que se ve desde 2024; la Conservadora {pB}, los agregadores; la Disrupción {pC}; la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}. La distancia entre la Base y la Conservadora ({vB}) es grande porque la Conservadora además pierde el ROIC excedente: no solo crece menos, sino que su crecimiento deja de crear valor. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+  ]
+ ]
 }

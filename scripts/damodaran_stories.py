@@ -501,7 +501,7 @@ def origen_calculo(r: dict, W) -> None:
             "reinversiónₜ. No se resta además el capex como una segunda reinversión.")
         W.p(f"En la Base, año 1: NOPAT = {mn(rev[1], 2)} × {pct(dA['margen'][1], 2)} × (1 − {pct(dA['impuestoEf'], 2)}) = "
             f"US${mn(dA['nopat'][1], 2)} millones" + (" (con el escudo de las pérdidas fiscales acumuladas)" if dA["nol0"] else "") +
-            f". La reinversión es US${mn(dA['reinversion'][1], 2)} millones y el FCFF es US${mn(dA['flujo'][1], 2)} millones. "
+            f". La reinversión es US${mn(dA['reinversion'][1], 2)} millones y el FCFF es {_um2(dA['flujo'][1])} millones. "
             "Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].")
         tasas = "; ".join(f"{NOMBRE[h['id']]}, {pct(h['detalle']['gTerminal'] / h['detalle']['roicTerminal'], 1)} "
                           f"({pct(h['detalle']['gTerminal'], 2)} / {pct(h['detalle']['roicTerminal'], 2)})" for h in hs)
@@ -672,6 +672,8 @@ def justificacion(r: dict, W) -> None:
     if sp.get("justificacion"):  # prosa propia del analista (ADBE): las cifras vienen del cálculo vigente
         for titulo_, texto in sp["justificacion"]:
             W.p((f"**{titulo_}** " + texto).format_map(_cifras(r)))
+        if r.get("rd_vida") and not any("I+D" in t_ for t_, _ in sp["justificacion"]):
+            W.p(_parrafo_rd(r))
     else:
         an = A["anios"]
         ritmo = ("desacelera" if an[4] < an[0] - 1e-9 else "se mantiene" if abs(an[4] - an[0]) < 1e-9 else "acelera")
@@ -722,6 +724,8 @@ def justificacion(r: dict, W) -> None:
                 f"provisional. {invalida('reinversion', 'Obligaría a revisarlo que el capital invertido crezca más rápido que las ventas.')}"
                 + par("s2c", 0.8, 1.2, "un ventas/capital 20% menor o mayor en ambas etapas"))
         if r.get("rd_vida"):
+            W.p(_parrafo_rd(r))
+        if False:
             W.p(f"**Vida útil de I+D.** La hoja capitaliza el I+D (US${mn(r['rd_ltm'])} millones en el último año) y lo amortiza en "
                 f"{es(r['rd_vida'], 0)} años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del "
                 "EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato "
@@ -772,6 +776,7 @@ def justificacion(r: dict, W) -> None:
             "dilución proyectadas; así se comparan sobre la misma base. No demuestra que la compensación en acciones carezca de "
             "costo: si es material, debería modelarse como gasto o como más acciones. Supuesto provisional."
             + (f" Sensibilidad: 5% más acciones con el mismo patrimonio llevan la Base a {sv('acciones', 0.05)}." if sv("acciones", 0.05) else ""))
+    calculo_en_prosa(r, W)
     _justifica_multiplos(r, W)
     casos = {("margen", -0.02): "Margen objetivo −2 pp" if not fin else "ROE −2 pp", ("margen", 0.02): "Margen objetivo +2 pp" if not fin else "ROE +2 pp",
              ("crecimiento", -0.02): "Crecimiento años 1–5 −2 pp", ("crecimiento", 0.02): "Crecimiento años 1–5 +2 pp",
@@ -819,7 +824,7 @@ def _cifras(r: dict) -> dict:
     A, dA = H["A"], H["A"]["detalle"]
     d = {"vA": usd(A["valor_beta_hoja"]), "ve": usd(r["valor_esperado_beta_hoja"]), "acciones": es(dA["acciones"], 1),
          "cagrA": pct(A["cagr"]), "g1A": pct(A["anios"][0], 2), "tgA": pct(A["terminal_growth"], 2),
-         "wacc0": pct(dA["wacc0"], 2), "waccT": pct(dA["tasaTerminal"], 2), "roicT": pct(dA["roicTerminal"], 1),
+         "wacc0": pct(dA["tasa"][1] if r.get("financiero") else dA["wacc0"], 2), "waccT": pct(dA["tasaTerminal"], 2), "roicT": pct(dA["roicTerminal"], 1),
          "terminal": pct(dA["pvTerminal"] / (dA["pvFlujos"] + dA["pvTerminal"])), "margenY1": pct(dA.get("margenY1")),
          "s2c1": es(dA.get("s2c") or 0, 2), "s2c2": es(dA.get("s2c2") or 0, 2),
          "cap1": es(1 / dA["s2c"], 2) if dA.get("s2c") else "—", "cap2": es(1 / dA["s2c2"], 2) if dA.get("s2c2") else "—"}
@@ -828,10 +833,104 @@ def _cifras(r: dict) -> dict:
         d[f"mrep{k}"] = pct(h.get("margen_reportado", h["margen"]), 1)
         d[f"tg{k}"] = pct(h["terminal_growth"], 2)
         d[f"g5{k}"] = pct(h["anios"][4], 2)
+        d[f"cagr{k}"] = pct(h["cagr"])
+        d[f"g1{k}"] = pct(h["anios"][0], 1)
+        d[f"p{k}"] = pct(h["prob"], 0)
+        d[f"v{k}"] = usd(h["valor_beta_hoja"])
+        d[f"tb{k}"] = pct(h.get("tasa_base"), 0)
+        d[f"s2c{k}"] = es(h.get("s2c") or dA.get("s2c") or 0, 2)
     mos = r.get("mos")
     d["mos"] = pct(mos, 0) if isinstance(mos, (int, float)) else "—"
     d["vmos"] = usd(r["valor_esperado_beta_hoja"] * (1 - mos)) if isinstance(mos, (int, float)) else "—"
+    d["g5A"] = pct(A["anios"][4], 1)
+    d["conv"] = es(dA.get("convergencia") or 0, 0)
+    d["rf"], d["erp"], d["beta"] = pct(r["rf"], 2), pct(r["erp"], 2), es(r["beta_hoja"])
+    d["betabu"] = es(r["beta_bu"]) if r.get("beta_bu") else "—"
+    d["tecnico"] = usd(r.get("dcf_base"))
+    d["precio"] = usd(r.get("precio"))
+    d["rd_vida"] = es(r["rd_vida"], 0) if r.get("rd_vida") else "—"
+    arr = (r.get("spec") or {}).get("arrendamientos") or {}
+    d["arr_pp"] = es(arr.get("margen_pp", 0) * 100, 2)
+    d["arr_vp"] = es(arr.get("vp", 0), 0)
+    sb = r.get("sens_base") or {"base": None, "casos": []}
+    v0 = sb["base"]
+    for n, dd, k in (("margen", -0.02, "s_m_lo"), ("margen", 0.02, "s_m_hi"), ("crecimiento", -0.02, "s_g_lo"),
+                     ("crecimiento", 0.02, "s_g_hi"), ("tasa", 0.01, "s_k_hi"), ("tasa", -0.01, "s_k_lo"),
+                     ("terminal", -0.005, "s_tg_lo"), ("terminal", 0.005, "s_tg_hi"), ("s2c", 0.8, "s_s_lo"),
+                     ("s2c", 1.2, "s_s_hi"), ("roic_cc", 0, "s_roic"), ("acciones", 0.05, "s_acc")):
+        x = next((c["valor"] for c in sb["casos"] if c["supuesto"] == n and abs(c["cambio"] - dd) < 1e-9), None)
+        if x is None or not v0:
+            d[k] = "—"
+        else:
+            q = abs(x / v0 - 1) * 100
+            d[k] = f"{usd(x)} ({'+' if x >= v0 else '−'}{es(q, 0 if q >= 1 else 1)}%)"
     return d
+
+
+def _parrafo_rd(r: dict) -> str:
+    return (f"**Vida útil de I+D.** La hoja capitaliza el I+D (US${mn(r['rd_ltm'])} millones en el último año) y lo amortiza en "
+            f"{es(r['rd_vida'], 0)} años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del "
+            "EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato "
+            "reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia "
+            "también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda "
+            "provisional hasta contrastarla con la duración de los beneficios de los productos.")
+
+
+def _um2(v) -> str:
+    return ("−US$" if v < 0 else "US$") + mn(abs(v), 2)
+
+
+def _um(v) -> str:
+    """Millones con signo antes de la moneda: −US$165 millones."""
+    return ("−US$" if v < 0 else "US$") + mn(abs(v))
+
+
+def calculo_en_prosa(r: dict, W) -> None:
+    """Explica en palabras, con las cifras de la Base, cómo se pasa de los supuestos al valor por acción."""
+    H = {h["id"]: h for h in r["historias"]}
+    A, d = H["A"], H["A"]["detalle"]
+    if r.get("financiero"):
+        u = d["utilidad"]
+        W.p(f"**Del supuesto al valor: cómo se calcula la Base.** El punto de partida es la utilidad del último año, {_um(u[0])} "
+            f"millones. Cada año crece con la trayectoria de la Base y llega a {_um(u[5])} millones en el año 5 y {_um(u[10])} "
+            "millones en el año 10. No toda esa utilidad se puede repartir: para crecer, un banco o una financiera tiene que "
+            "retener capital, y la parte retenida es utilidad × crecimiento / ROE. Lo que queda es el flujo del accionista (FCFE): "
+            f"{_um(d['flujo'][1])} millones el primer año. Esos flujos se traen a hoy con el costo del patrimonio, que empieza en "
+            f"{pct(d['tasa'][1], 2)} y baja a {pct(d['tasaTerminal'], 2)}; suman {_um(d['pvFlujos'])} millones. Después del año 10 se "
+            f"supone un crecimiento perpetuo de {pct(d['gTerminal'], 2)}: el valor de esa perpetuidad, traído a hoy, es "
+            f"{_um(d['pvTerminal'])} millones. La suma es el valor del patrimonio, {_um(d['patrimonio'])} millones; dividido "
+            f"entre {es(d['acciones'], 1)} millones de acciones da {usd(A['valor_beta_hoja'])} por acción. Aquí no se resta deuda: "
+            "en una financiera la deuda es materia prima del negocio y ya está dentro del flujo del accionista.")
+        return
+    rev, m = d["ingresos"], d["margen"]
+    tot = d["pvFlujos"] + d["pvTerminal"]
+    puente = [f"más caja por {_um(d['caja'])} millones"]
+    if d["noOperativos"]:
+        puente.append(f"más activos no operativos por {_um(d['noOperativos'])} millones")
+    puente.append(f"menos deuda por {_um(d['deuda'])} millones" + (" (incluye los arrendamientos capitalizados)" if (r.get("spec") or {}).get("arrendamientos") else ""))
+    if d["minoritarios"]:
+        puente.append(f"menos minoritarios por {_um(d['minoritarios'])} millones")
+    if d["opciones"]:
+        puente.append(f"menos opciones por {_um(d['opciones'])} millones")
+    W.p(f"**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por {_um(rev[0])} "
+        f"millones. Con el crecimiento de la Base llegan a {_um(rev[5])} millones en el año 5 y a {_um(rev[10])} millones en el "
+        f"año 10. A esas ventas se les aplica el margen operativo, que pasa de {pct(m[1])} en el año 1 a {pct(m[10])} al final, y "
+        f"se descuentan impuestos ({pct(d['impuestoEf'], 1)} al principio y {pct(d['impuestoMarg'], 1)} a largo plazo): el resultado "
+        f"es el beneficio operativo después de impuestos (NOPAT), {_um(d['nopat'][1])} millones el primer año. Crecer no es "
+        f"gratis: cada dólar de ventas nuevas exige capital, y esa reinversión ({'+' if d['reinversion'][1] >= 0 else '−'}"
+        f"{_um(abs(d['reinversion'][1]))} millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de "
+        f"la empresa (FCFF), {_um(d['flujo'][1])} millones el primer año. Cada flujo se trae a hoy con el costo de capital "
+        f"({pct(d['tasa'][1], 2)} al principio, {pct(d['tasaTerminal'], 2)} al final): los diez años suman {_um(d['pvFlujos'])} "
+        f"millones. Después del año 10 se supone que la empresa crece {pct(d['gTerminal'], 2)} para siempre y reinvierte lo justo "
+        f"para ese crecimiento con un retorno de {pct(d['roicTerminal'], 1)}; esa perpetuidad vale hoy {_um(d['pvTerminal'])} "
+        f"millones" + (f", {pct(d['pvTerminal'] / tot, 0)} del total" if 0 < d["pvTerminal"] / tot <= 1 else "") +
+        f". Flujos más terminal dan el valor de las operaciones, {_um(d['activosOperativos'])} millones. Para llegar al "
+        f"accionista se suma y se resta lo que no es operativo: {', '.join(puente)}. Queda un patrimonio de "
+        f"{_um(d['patrimonio'])} millones que, repartido entre {es(d['acciones'], 1)} millones de acciones, da "
+        f"{usd(A['valor_beta_hoja'])} por acción" + (" (si el patrimonio fuera negativo, se toma cero: el accionista no responde por "
+        "más de lo que puso)." if A.get("valor_bruto", 1) < 0 else ".") +
+        " Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio "
+        "ponderado por probabilidad.")
 
 
 def trayectorias(r: dict, W, titulo: str) -> None:

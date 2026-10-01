@@ -271,5 +271,27 @@
   "capital_ventas": 0.3952556100831723,
   "cierre": "2025-12-31",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- }
+ },
+ "justificacion": [
+  [
+   "El punto de partida: crecer no es el problema.",
+   "Shake Shack es una cadena de hamburguesas «fine casual» con marca premium: 703 Shacks al 1-jul-2026, 406 propios y 297 licenciados. Crece rápido por aperturas (61 Shacks propios nuevos en doce meses, ingresos +17,2% en el 2T26, same-Shack +3,5%). La Base supone que los Shacks propios crecen de 13% a 9% y las licencias 12%: {g1A} el primer año y {cagrA} compuesto, algo que lograron ~{tbA} de las empresas de su tamaño. El crecimiento está razonablemente asegurado por la marca. El problema es otro, y es el que define esta valoración: crecer no crea valor si cada Shack nuevo rinde menos que lo que cuesta el capital que exige."
+  ],
+  [
+   "Por qué crecer resta valor: margen bajo y mucho capital.",
+   "El margen operativo GAAP pasó de ~0% en 2023-2024 a 4,3% en 2025 y 3,6% LTM. La Base supone que llega a 8% (el plan de la empresa); en el modelo eso es {mA}, porque los alquileres de los locales se tratan como deuda (+{arr_pp} pp). Del otro lado está el capital: cada Shack propio se paga con caja (capex de US$135-203 millones al año, todo el flujo operativo), y además se alquila el local. Con los arrendamientos dentro (~US${arr_vp} millones de valor presente), el ventas/capital es {s2c1}×: cada dólar de ventas nuevas exige ~US${cap1} de capital. Con un margen de 8-9% y esa intensidad de capital, el retorno sobre el capital nuevo es menor que el costo de capital ({wacc0} al principio). El resultado es contraintuitivo pero lógico: crecer más resta valor (2 pp más de crecimiento llevan la Base a {s_g_hi}; 2 pp menos, a {s_g_lo}). Lo que crea valor es el margen: dos puntos más llevan la Base a {s_m_hi}; dos menos, a {s_m_lo}. El margen es la variable que manda."
+  ],
+  [
+   "Responsabilidad limitada: por qué la Conservadora y la Disrupción valen cero.",
+   "En la Conservadora (margen {mB}) y la Disrupción ({mC}), el valor de las operaciones no alcanza para cubrir la deuda, que incluye los arrendamientos. Un DCF negativo significa que el negocio, tal como está planteado, destruye más valor del que tiene. Pero el accionista no puede perder más de lo que puso: el patrimonio no vale menos que cero, así que esas historias entran al esperado con US$0. Por eso el esperado ({ve}) es mayor que la Base ({vA}): la Optimista ({vD}) aporta valor y las malas no restan por debajo de cero. Es una asimetría real, la misma que tiene una opción. Que el DCF técnico anterior de la hoja sea negativo ({tecnico}) es la misma señal."
+  ],
+  [
+   "Descuento y ROIC terminal.",
+   "La hoja usa una beta de {beta}; la bottom-up de restaurantes reapalancada con la deuda (incluidos los arrendamientos) da {betabu}, y con ella el valor mejora pero el diagnóstico no cambia: el problema no es la tasa sino el retorno sobre el capital. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector, así que algo entre ambas betas es razonable. Como el ROIC actual (~5%) está por debajo del costo de capital, no hay ventaja que justifique retornos excedentes: el ROIC terminal es el costo de capital ({roicT}). El valor terminal supera al valor de las operaciones porque los flujos de los primeros años son negativos en valor presente: todo el valor depende de la perpetuidad."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA} (el plan de la empresa), la Conservadora {pB} (crecer sin rentabilidad, lo que Shake Shack mostró durante años), la Disrupción {pC} y la Optimista {pD}. El precio, {precio}, está muy por encima incluso de la Optimista: el mercado paga por una economía unitaria que la empresa todavía no demostró. La evidencia que cambiaría la lectura es concreta: un margen operativo GAAP por encima de 6% de forma sostenida y un flujo libre positivo. Mientras el margen siga en 3-4%, la Conservadora es tan creíble como la Base. Hay convertibles de US$250 millones al 0% con vencimiento en 2028; su refinanciamiento podría diluir. Las acciones se fijan en {acciones} millones."
+  ]
+ ]
 }

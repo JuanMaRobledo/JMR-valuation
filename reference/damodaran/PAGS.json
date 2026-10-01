@@ -263,5 +263,27 @@
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
   ]
+ ],
+ "justificacion": [
+  [
+   "Qué se valora: un banco, no un procesador.",
+   "PagSeguro nació procesando pagos con tarjeta para microcomercios en Brasil y se está convirtiendo en un banco digital (PagBank): cuentas, depósitos, crédito e inversiones que financian su propia operación. Por eso se valora con un DCF de flujos al accionista (FCFE), como una financiera: en un banco la deuda y los depósitos son materia prima del negocio, no financiamiento que haya que restar, y lo que importa es cuánto rinde el patrimonio (ROE) frente a lo que cuesta (el costo del patrimonio). La adquirencia es un negocio maduro y deflacionario: el PIX, pago instantáneo gratuito, reemplaza a la tarjeta de débito, y los ingresos por transacciones cayeron de R$9.183 millones en 2024 a R$8.159 millones en 2025. El banco compensa: utilidad de R$2.118 millones en 2025 y ROAE de 15,6% en el 2T26."
+  ],
+  [
+   "Crecimiento: la adquirencia cae, el banco crece.",
+   "La Base supone que las transacciones caen 3% y se estabilizan mientras los ingresos financieros y de banca crecen 8-10%: el total crece {g1A} el primer año y {cagrA} compuesto, una cifra que lograron ~{tbA} de las empresas de su tamaño. El crecimiento que mueve el valor es el de la utilidad, que la hoja supone en 5% el primer año y 6% después. La Conservadora ({cagrB}) es la erosión por el PIX y por Nubank, Mercado Pago y Stone; la Disrupción ({cagrC}), una crisis de crédito; la Optimista ({cagrD}), un banco que crece a doble dígito. Si el volumen de pagos entra en caída, la Base pierde sustento. El crecimiento casi no mueve el valor (±2 puntos: {s_g_lo} y {s_g_hi}), porque crecer exige retener capital: en un banco, crecer con un ROE apenas por encima del costo del patrimonio crea poco valor."
+  ],
+  [
+   "ROE: el supuesto central.",
+   "La Base usa un ROE de {mA}, el ROAE ajustado del 2T26 (comunicado del 11-ago-2026), que después del año 5 converge al costo del patrimonio terminal: ningún banco sostiene para siempre un retorno por encima de su costo de capital sin una ventaja, y PagBank no tiene una barrera durable frente al PIX y los bancos digitales. La Conservadora usa {mB}, la Disrupción {mC} y la Optimista {mD}. La parte de la utilidad que se retiene para crecer es utilidad × crecimiento / ROE; el resto es el flujo del accionista. El índice de Basilea de 22,5% muestra holgura de capital, pero no se suma como valor extra porque no hay evidencia de que sea distribuible. Un ROAE por debajo de 12% invalidaría la Base; dos puntos de ROE la mueven a {s_m_lo} o {s_m_hi}."
+  ],
+  [
+   "Descuento: Brasil cuesta caro.",
+   "El costo del patrimonio empieza en {wacc0} (beta {beta}, prima de riesgo {erp}, que incluye el riesgo país) y converge a {waccT}. Es el supuesto que más mueve el valor: un punto más lo lleva a {s_k_hi}; uno menos, a {s_k_lo}. Una beta sectorial menor (~0,97) se considera solo como sensibilidad, porque el riesgo de un banco en Brasil no es el de una financiera promedio de EE.UU. El crecimiento perpetuo en dólares es {tgA} y el terminal explica {terminal} del valor."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. Las cuatro historias están cerca ({vC} a {vD}) porque, con el ROE convergiendo al costo del patrimonio, ninguna crea mucho valor por crecer: la diferencia está en cuánto rinde el capital que ya tiene. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga menos que la Disrupción, es decir, descuenta un ROE o un riesgo país peor que el de cualquier historia, o desconfía de la calidad de la cartera de crédito. Las acciones se fijan en {acciones} millones; el real frente al dólar es un riesgo que este DCF en dólares no aísla."
+  ]
  ]
 }
