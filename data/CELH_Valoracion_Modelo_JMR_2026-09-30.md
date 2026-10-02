@@ -3,7 +3,7 @@ schema: "jmr-valuation-v3"
 title: "Valoración Modelo JMR de Celsius Holdings, Inc."
 ticker: "CELH"
 analysis_date: "2026-09-30"
-sheet: "https://docs.google.com/spreadsheets/d/1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o/edit"
+sheet: "https://docs.google.com/spreadsheets/d/1E_s_A35yIAZRGatTIElusnMZs5NIvFJ9CUlGlqf7-j8/edit"
 generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sobre una valoración existente)"
 ---
 
@@ -14,66 +14,66 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$20,87 por acción.** Complemento: DCF esperado por probabilidades US$16,68; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$5,77–US$28,40; precio con MOS 35% sobre el esperado: US$10,84; precio de referencia US$27,42. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$16,21), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$24,03 por acción.** Complemento: DCF esperado por probabilidades US$20,90; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$7,06–US$32,43; precio con MOS 35% sobre el esperado: US$13,59; precio de referencia US$27,35. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$24,24), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Alani lidera y Celsius se estabiliza** (valor principal) | 40% | US$20,87 | US$8,35 |
-| Conservadora · Alani crece, Celsius sigue cediendo | 35% | US$13,21 | US$4,62 |
-| Disrupción · Deterioro de los fundamentales: La moda se desgasta | 15% | US$5,77 | US$0,87 |
-| Optimista · Plataforma multimarca | 10% | US$28,40 | US$2,84 |
-| **DCF esperado (complemento)** | 100% | **US$16,68** | |
+| **Base · Portafolio de tres marcas que crece con la categoría** (valor principal) | 45% | US$24,03 | US$10,81 |
+| Conservadora · Alani crece, CELSIUS sigue cediendo | 25% | US$16,68 | US$4,17 |
+| Disrupción · Deterioro de los fundamentales: La moda pasa y la regulación de la cafeína alcanza a Alani Nu | 15% | US$7,06 | US$1,06 |
+| Optimista · Plataforma multimarca con PepsiCo y expansión internacional | 15% | US$32,43 | US$4,86 |
+| **DCF esperado (complemento)** | 100% | **US$20,90** | |
 
-Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$18,12 por acción y los múltiplos, US$21,32 hoy: 18% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
+Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$38 hoy, ~60% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$20,87 | US$23,66 | US$21,99 | US$10,84 | US$33,31 |
-| Conservador | US$13,21 | US$19,53 | US$15,73 | US$10,84 | US$22,30 |
-| Optimista | US$28,40 | US$24,18 | US$26,71 | US$10,84 | US$44,45 |
+| Base | US$24,03 | US$38,42 | US$29,78 | US$13,59 | US$37,97 |
+| Conservador | US$16,68 | US$31,46 | US$22,59 | US$13,59 | US$31,85 |
+| Optimista | US$32,43 | US$49,12 | US$39,11 | US$13,59 | US$54,81 |
 
 ## 2. Datos
 
-- Hoja del modelo: [Modelo JMR - CELH](https://docs.google.com/spreadsheets/d/1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o/edit).
-- Análisis del 25 de sept de 2026. Precio de referencia de la hoja: US$27,42.
-- Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
+- Hoja del modelo: [Modelo JMR - CELH (desde cero 2026-10-01)](https://docs.google.com/spreadsheets/d/1E_s_A35yIAZRGatTIElusnMZs5NIvFJ9CUlGlqf7-j8/edit).
+- Análisis del 30 de sept de 2026. Precio de referencia de la hoja: US$27,35.
+- Peers: datos de mercado de yfinance consultados el 2026-10-01 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
 ## 3. Supuestos del DCF y costo de capital
 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
-| Crecimiento año 1 | 2,0% | 7,0% | 12,0% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | 2,0% | 6,0% | 12,0% | Input B29 |
-| Margen EBIT objetivo | 11,1% | 17,1% | 21,1% | Input B30; Valuation output C45/C47 |
+| Crecimiento año 1 | 4,0% | 7,8% | 8,8% | Input B27; Valuation output C55/C106 |
+| Crecimiento años 2-5 | 4,0% | 5,5% | 8,8% | Input B29 |
+| Margen EBIT objetivo | 20,7% | 21,1% | 26,1% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
-| Sales-to-capital años 1-5 / 6-10 | — | 2,47 / 1,98 | — | Input B32/B33 |
-| DCF por acción hoy | US$13,21 | US$20,87 | US$28,40 | Valuation output B86/B35/B137 |
+| Sales-to-capital años 1-5 / 6-10 | — | 2,00 / 1,70 | — | Input B32/B33 |
+| DCF por acción hoy | US$16,68 | US$24,03 | US$32,43 | Valuation output B86/B35/B137 |
 
-Costo de capital: tasa libre de riesgo 4,99%, beta apalancada 1,50, ERP 4,46%, Ke 11,68%, costo de la deuda después de impuestos 5,19%, peso del patrimonio 90,6%, WACC inicial 11,07% y terminal 9,00%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
+Costo de capital: tasa libre de riesgo 5,29%, beta apalancada 1,00, ERP 4,09%, Ke 9,38%, costo de la deuda después de impuestos 4,88%, peso del patrimonio 90,2%, WACC inicial 8,94% y terminal 9,38%. La justificación de cada supuesto está en «Tesis de Inversión y Supuestos» y «Origen de los Supuestos» de la hoja.
 
 ## 4. Múltiplos: selección y origen
 
-A: Celsius fue hipercrecimiento hasta 2023 (múltiplos de 50-500x o con utilidades negativas); desde 2024 es una marca de bebidas energéticas en consolidación. Se usa FY24 como etapa actual. El FY25 y el LTM se excluyen de todos los métodos: incluyen US$246,7 millones por terminar contratos de distribución de Alani Nu (traspaso al sistema de PepsiCo) y US$24,8 millones de costos de la adquisición (10-K FY2025), que distorsionan utilidad, EBITDA y flujo de caja. B: bebidas con marca (Monster, PepsiCo, Coca-Cola, Vita Coco), datos de yfinance al 29-sep-2026. Se excluyen Keurig Dr Pepper (crecimiento de 76% por la compra de JDE Peet's distorsiona sus múltiplos) y BellRing (nutrición, en fuerte caída). Ajuste −10%: Celsius crece más que Coca-Cola y PepsiCo, pero con márgenes menores que Monster, dependencia de PepsiCo como distribuidor y una integración reciente (Alani Nu) aún por demostrar. λ = 0,25: la Celsius de FY+3 del escenario Base es una marca madura de crecimiento medio.
+A: hasta 2023 Celsius fue una marca única en hipercrecimiento (ventas +102% en 2023, utilidades negativas en 2021-2022): sus múltiplos de 44-136× no describen a la empresa de FY+3. Desde 2024 (ventas +3%) es una marca de bebidas energéticas que madura y, desde 2025, un portafolio de tres marcas distribuido por PepsiCo. Se usa FY2024 como etapa actual. FY2025 y LTM se excluyen en todos los métodos: la utilidad y el EBITDA incluyen US$327,5 millones (2025) y US$412,8 millones (LTM) de terminación de distribuidores y otros cargos de una vez (comunicados del 4T25 y 2T26), y el flujo de caja incluye los reembolsos de PepsiCo por esas terminaciones (ingresos diferidos +US$329,6 millones LTM). Con un solo cierre representativo (FY2024), el ancla A es débil y pesa menos (ver λ). B: bebidas con marca y datos de yfinance al 1-oct-2026: Monster, Coca-Cola, PepsiCo, National Beverage y Vita Coco. Se excluye Keurig Dr Pepper: su compra de JDE Peet's (crecimiento de ingresos de 76%) distorsiona sus múltiplos. Ajuste −15%: crecimiento a FY+3 parecido a la mediana (Base ~5,5% frente a ~6-7% de Coca-Cola y PepsiCo; Monster crece más), 0%; margen operativo menor (21% objetivo frente a 29% de Monster y 35% de Coca-Cola), −5%; riesgo propio mayor (una sola categoría, un distribuidor que concentra más de 40% de las ventas, investigación del fiscal de Texas y demandas colectivas), −10%. λ = 0,5: la Celsius de FY+3 (portafolio de tres marcas, crecimiento de un dígito medio, margen ~21%) es distinta de la de FY2024 y el ancla A tiene un solo cierre. Chequeo de crecimiento implícito (1-oct-2026): con λ = 0,5 los múltiplos valen ~30-60% más que el DCF en FY+3. Se probó λ = 0,75 y la brecha creció, porque el justificado (C) supone que el retorno de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10 (sin ventaja defendible). La diferencia no es de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos. Se deja λ = 0,5 y la diferencia se explica; el DCF manda.
 
 | Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana Dec '24 (etapa actual) = 32,6x | 23,1x (n=4: MNST 26,8x, PEP 11,5x, KO 23,8x, COCO 22,3x) × 0,90 = 20,8x | 12,1x / 11,0x / 15,3x | **23,0x** | 21,2x | 25,6x | 23,0x / 21,2x / 25,6x |
-| EV/FCFF | mediana Dec '24 (etapa actual) = 21,3x (EV/FCF × 0,96 = FCF después de intereses ÷ FCFF) | 25,3x (n=4: MNST 37,8x, PEP 21,4x, KO 26,1x, COCO 24,5x) × 0,90 = 22,8x | 21,3x / 17,1x / 33,1x | **21,8x** | 20,0x | 27,0x | 22,6x / 20,5x / 28,0x |
-| P/E | mediana Dec '24 (etapa actual) = 43,2x | 28,7x (n=4: MNST 38,6x, PEP 16,9x, KO 26,1x, COCO 31,2x) × 0,90 = 25,8x | 13,7x / 11,1x / 19,1x | **29,3x** | 25,8x | 34,6x | 29,3x / 25,8x / 34,6x |
-| P/FCFE | mediana Dec '24 (etapa actual) = 25,9x | 26,2x (n=4: MNST 39,3x, PEP 18,9x, KO 26,1x, COCO 26,3x) × 0,90 = 23,6x | 16,4x / 13,8x / 22,8x | **22,6x** | 20,9x | 26,5x | 22,6x / 20,9x / 26,5x |
-| P/OCF | mediana Dec '24 (etapa actual) = 23,5x | 23,9x (n=4: MNST 36,5x, PEP 13,1x, KO 22,9x, COCO 24,8x) × 0,90 = 21,5x | 13,8x / 11,3x / 18,8x | **20,3x** | 18,1x | 23,9x | 20,3x / 18,1x / 23,9x |
+| EV/EBITDA | mediana Dec '24 (etapa actual) = 32,6x | 22,1x (n=5: MNST 26,7x, KO 23,6x, PEP 11,4x, FIZZ 11,1x, COCO 22,1x) × 0,85 = 18,8x | 19,9x / 17,9x / 26,6x | **22,8x** | 18,4x | 25,9x | 21,6x / 18,6x / 26,6x |
+| EV/FCFF | mediana Dec '24 (etapa actual) = 24,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF) | 24,3x (n=5: MNST 37,6x, KO 25,8x, PEP 21,2x, FIZZ 16,6x, COCO 24,3x) × 0,85 = 20,6x | 27,9x / 24,9x / 37,5x | **25,1x** | 23,2x | 28,5x | 24,8x / 23,0x / 28,4x |
+| P/E | mediana Dec '24 (etapa actual) = 43,2x | 25,9x (n=5: MNST 39,0x, KO 25,9x, PEP 16,5x, FIZZ 16,0x, COCO 31,5x) × 0,85 = 22,0x | 23,0x / 20,7x / 30,5x | **27,8x** | 23,5x | 32,8x | 26,8x / 23,9x / 32,3x |
+| P/FCFE | mediana Dec '24 (etapa actual) = 25,9x | 25,9x (n=5: MNST 39,7x, KO 25,9x, PEP 18,5x, FIZZ 17,2x, COCO 26,5x) × 0,85 = 22,0x | 26,1x / 23,5x / 34,4x | **25,0x** | 21,8x | 27,9x | 24,2x / 22,0x / 28,2x |
+| P/OCF | mediana Dec '24 (etapa actual) = 23,5x | 22,7x (n=5: MNST 36,9x, KO 22,7x, PEP 12,8x, FIZZ 14,9x, COCO 25,0x) × 0,85 = 19,3x | 25,7x / 22,7x / 35,0x | **23,6x** | 19,9x | 27,2x | 22,7x / 20,1x / 27,3x |
 
 Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
-- **EV/EBITDA.** Base 23,0x: promedio de historia y peers 26,7x, acercado 25% al justificado (12,1x); rango de anclas 12,1x–32,6x. Atípicos excluidos de la historia: Dec '16 (-7,5x: métrica negativa o ~0); Dec '17 (-8,1x: métrica negativa o ~0); Dec '18 (-5,5x: métrica negativa o ~0); Dec '19 (-69,0x: métrica negativa o ~0); Dec '21 (-659,4x: métrica negativa o ~0); Dec '22 (-13,1x: métrica negativa o ~0); Dec '20 (136,0x: > 2,5x la mediana (44.1x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
-- **EV/FCFF.** Base 21,8x: promedio de historia y peers 22,0x, acercado 25% al justificado (21,3x); rango de anclas 21,3x–22,8x. Atípicos excluidos de la historia: Dec '16 (-8,8x: métrica negativa o ~0); Dec '17 (-7,7x: métrica negativa o ~0); Dec '18 (-5,0x: métrica negativa o ~0); Dec '21 (-18,5x: métrica negativa o ~0); Dec '19 (96,6x: > 2,5x la mediana (37.2x)); Dec '20 (417,8x: > 2,5x la mediana (37.2x)); Dec '23 (96,0x: > 2,5x la mediana (37.2x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
-- **P/E.** Base 29,3x: promedio de historia y peers 34,5x, acercado 25% al justificado (13,7x); rango de anclas 13,7x–43,2x. Atípicos excluidos de la historia: Dec '18 (-5,3x: métrica negativa o ~0); Dec '22 (-14,0x: métrica negativa o ~0); Dec '19 (10,1x: < 0,4x la mediana (56.8x), caída puntual); Dec '20 (152,4x: > 2,5x la mediana (56.8x)); Dec '21 (497,2x: > 2,5x la mediana (56.8x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
-- **P/FCFE.** Base 22,6x: promedio de historia y peers 24,7x, acercado 25% al justificado (16,4x); rango de anclas 16,4x–25,9x. Atípicos excluidos de la historia: Dec '16 (-13,7x: métrica negativa o ~0); Dec '17 (-9,4x: métrica negativa o ~0); Dec '18 (-5,6x: métrica negativa o ~0); Dec '21 (-18,7x: métrica negativa o ~0); Dec '19 (110,9x: > 2,5x la mediana (36.3x)); Dec '20 (433,0x: > 2,5x la mediana (36.3x)); Dec '23 (102,1x: > 2,5x la mediana (36.3x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
-- **P/OCF.** Base 20,3x: promedio de historia y peers 22,5x, acercado 25% al justificado (13,8x); rango de anclas 13,8x–23,5x. Atípicos excluidos de la historia: Dec '16 (-13,7x: métrica negativa o ~0); Dec '17 (-9,5x: métrica negativa o ~0); Dec '18 (-5,7x: métrica negativa o ~0); Dec '21 (-19,3x: métrica negativa o ~0); Dec '19 (110,9x: > 2,5x la mediana (32.7x)); Dec '20 (356,6x: > 2,5x la mediana (32.7x)); Dec '23 (89,5x: > 2,5x la mediana (32.7x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
+- **EV/EBITDA.** Base 22,8x: promedio de historia y peers 25,7x, acercado 50% al justificado (19,9x); rango de anclas 18,8x–32,6x. Atípicos excluidos de la historia: Dec '16 (-31,0x: métrica negativa o ~0); Dec '17 (-27,9x: métrica negativa o ~0); Dec '18 (-18,0x: métrica negativa o ~0); Dec '19 (-227,5x: métrica negativa o ~0); Dec '21 (-1.989,4x: métrica negativa o ~0); Dec '22 (-47,0x: métrica negativa o ~0); Dec '20 (418,0x: > 2,5x la mediana (44.1x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
+- **EV/FCFF.** Base 25,1x: promedio de historia y peers 22,4x, acercado 50% al justificado (27,9x); rango de anclas 20,6x–27,9x. Atípicos excluidos de la historia: Dec '16 (-36,1x: métrica negativa o ~0); Dec '17 (-26,6x: métrica negativa o ~0); Dec '18 (-16,2x: métrica negativa o ~0); Dec '21 (-55,9x: métrica negativa o ~0); Dec '19 (318,5x: > 2,5x la mediana (73.4x)); Dec '20 (1.283,8x: > 2,5x la mediana (73.4x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
+- **P/E.** Base 27,8x: promedio de historia y peers 32,6x, acercado 50% al justificado (23,0x); rango de anclas 22,0x–43,2x. Atípicos excluidos de la historia: Dec '18 (-15,9x: métrica negativa o ~0); Dec '22 (-41,9x: métrica negativa o ~0); Dec '20 (453,2x: > 2,5x la mediana (56.8x)); Dec '21 (1.462,3x: > 2,5x la mediana (56.8x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
+- **P/FCFE.** Base 25,0x: promedio de historia y peers 23,9x, acercado 50% al justificado (26,1x); rango de anclas 22,0x–26,1x. Atípicos excluidos de la historia: Dec '16 (-41,0x: métrica negativa o ~0); Dec '17 (-28,2x: métrica negativa o ~0); Dec '18 (-16,8x: métrica negativa o ~0); Dec '21 (-56,0x: métrica negativa o ~0); Dec '19 (332,8x: > 2,5x la mediana (79.6x)); Dec '20 (1.299,1x: > 2,5x la mediana (79.6x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
+- **P/OCF.** Base 23,6x: promedio de historia y peers 21,4x, acercado 50% al justificado (25,7x); rango de anclas 19,3x–25,7x. Atípicos excluidos de la historia: Dec '16 (-41,0x: métrica negativa o ~0); Dec '17 (-28,6x: métrica negativa o ~0); Dec '18 (-17,1x: métrica negativa o ~0); Dec '21 (-57,8x: métrica negativa o ~0); Dec '19 (332,8x: > 2,5x la mediana (73.5x)); Dec '20 (1.069,8x: > 2,5x la mediana (73.5x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
-Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$23,66 frente a US$20,87 del DCF (+13%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$23,66 para los múltiplos Base.
+Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$38,42 frente a US$24,03 del DCF (+60%). Ningún múltiplo se derivó del DCF ni se ajustó después de verlo; el recálculo independiente del informe da US$38,42 para los múltiplos Base.
 
 ## 5. Resultados
 
@@ -81,53 +81,53 @@ Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método
 
 | Método | Peso | Base | Conservador | Optimista |
 |---|---:|---:|---:|---:|
-| DCF Damodaran | 60% | US$29,08 | US$18,40 | US$39,56 |
-| EV/EBITDA | 10% | US$58,80 | US$39,90 | US$84,24 |
-| EV/FCFF | 15% | US$29,03 | US$21,20 | US$34,51 |
-| P/E | 5% | US$51,44 | US$34,36 | US$77,14 |
-| P/FCFE | 5% | US$29,72 | US$23,43 | US$30,79 |
-| P/OCF | 5% | US$31,54 | US$24,05 | US$34,25 |
-| **Ponderado FY+3** | 100% | US$33,31 | US$22,30 | US$44,45 |
+| DCF Damodaran | 60% | US$31,71 | US$27,82 | US$47,18 |
+| EV/EBITDA | 10% | US$52,95 | US$39,45 | US$73,63 |
+| EV/FCFF | 15% | US$41,57 | US$35,75 | US$57,66 |
+| P/E | 5% | US$53,64 | US$41,98 | US$77,87 |
+| P/FCFE | 5% | US$48,36 | US$38,60 | US$67,32 |
+| P/OCF | 5% | US$46,26 | US$36,54 | US$64,62 |
+| **Ponderado FY+3** | 100% | US$37,97 | US$31,85 | US$54,81 |
 
-Valor presente (Ke 11,68%; consolidado por método: Promedio 1-3 años):
+Valor presente (Ke 9,38%; consolidado por método: Promedio 1-3 años):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Base | US$31,03 | US$38,96 | US$42,21 | US$37,40 | OK |
-| EV/EBITDA | Conservador | US$26,37 | US$28,66 | US$28,65 | US$27,89 | OK |
-| EV/EBITDA | Optimista | US$37,12 | US$52,78 | US$60,48 | US$50,12 | OK |
-| EV/FCFF | Base | US$9,18 | US$16,20 | US$20,84 | US$15,41 | OK |
-| EV/FCFF | Conservador | US$12,70 | US$14,81 | US$15,22 | US$14,24 | OK |
-| EV/FCFF | Optimista | US$-8,13 | US$10,33 | US$24,78 | US$8,99 | OK |
-| P/E | Base | US$28,53 | US$34,63 | US$36,93 | US$33,37 | OK |
-| P/E | Conservador | US$23,70 | US$25,04 | US$24,67 | US$24,47 | OK |
-| P/E | Optimista | US$35,64 | US$49,01 | US$55,38 | US$46,68 | OK |
-| P/FCFE | Base | US$10,97 | US$17,17 | US$21,33 | US$16,49 | OK |
-| P/FCFE | Conservador | US$15,16 | US$16,77 | US$16,82 | US$16,25 | OK |
-| P/FCFE | Optimista | US$-7,48 | US$8,91 | US$22,10 | US$7,85 | OK |
-| P/OCF | Base | US$13,48 | US$18,99 | US$22,64 | US$18,37 | OK |
-| P/OCF | Conservador | US$16,23 | US$17,42 | US$17,26 | US$16,97 | OK |
-| P/OCF | Optimista | US$-2,21 | US$12,69 | US$24,59 | US$11,69 | OK |
+| EV/EBITDA | Base | US$45,52 | US$43,21 | US$40,46 | US$43,06 | OK |
+| EV/EBITDA | Conservador | US$35,35 | US$32,79 | US$30,15 | US$32,76 | OK |
+| EV/EBITDA | Optimista | US$52,21 | US$55,94 | US$56,27 | US$54,81 | OK |
+| EV/FCFF | Base | US$34,91 | US$33,82 | US$31,76 | US$33,50 | OK |
+| EV/FCFF | Conservador | US$31,82 | US$29,65 | US$27,32 | US$29,60 | OK |
+| EV/FCFF | Optimista | US$39,78 | US$43,45 | US$44,06 | US$42,43 | OK |
+| P/E | Base | US$46,58 | US$43,94 | US$40,99 | US$43,84 | OK |
+| P/E | Conservador | US$38,00 | US$35,03 | US$32,08 | US$35,04 | OK |
+| P/E | Optimista | US$55,52 | US$59,29 | US$59,51 | US$58,11 | OK |
+| P/FCFE | Base | US$42,06 | US$39,42 | US$36,95 | US$39,48 | OK |
+| P/FCFE | Conservador | US$34,49 | US$32,06 | US$29,50 | US$32,02 | OK |
+| P/FCFE | Optimista | US$47,55 | US$51,09 | US$51,44 | US$50,03 | OK |
+| P/OCF | Base | US$39,20 | US$37,72 | US$35,35 | US$37,42 | OK |
+| P/OCF | Conservador | US$32,69 | US$30,36 | US$27,93 | US$30,32 | OK |
+| P/OCF | Optimista | US$45,49 | US$48,99 | US$49,38 | US$47,95 | OK |
 
-Múltiplos consolidados hoy: US$23,66 / US$19,53 / US$24,18 · DCF de las historias hoy: US$20,87 / US$13,21 / US$28,40 · Ponderado hoy: US$21,99 / US$15,73 / US$26,71 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$38,42 / US$31,46 / US$49,12 · DCF de las historias hoy: US$24,03 / US$16,68 / US$32,43 · Ponderado hoy: US$29,78 / US$22,59 / US$39,11 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
-En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CELH la diferencia es de +13% (múltiplos por encima del DCF). Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$18,12 por acción y los múltiplos, US$21,32 hoy: 18% por encima del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
+En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujos y riesgo, y los múltiplos muestran cuánto pagaría el mercado por negocios comparables. Para CELH la diferencia es de +60% (múltiplos por encima del DCF). Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$38 hoy, ~60% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers.
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$27,42 supone que los ingresos crecen 15,7% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,2% (+9,5 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$27,35 supone que los ingresos crecen 8,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 6,0% (+2,3 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
-Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$29,08 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,7%, WACC de los años 4-10 10,2%, ROE de FY+3 31,2% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
+Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$31,71 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,4%, WACC de los años 4-10 9,1%, ROE de FY+3 44,8% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 23,0x | 10,6x | +102% | 7,6% | 4,6% | +2,9 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 102% por encima del DCF en FY+3. |
-| EV/FCFF | 21,8x | 18,9x | −0% | 5,4% | 4,7% | +0,7 pp | Coherente con el DCF. |
-| P/E | 29,3x | 16,5x | +77% | 9,0% | 6,6% | +2,4 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 77% por encima del DCF en FY+3. |
-| P/FCFE | 22,6x | 22,2x | +2% | 7,0% | 6,9% | +0,1 pp | Coherente con el DCF. |
-| P/OCF | 20,3x | 18,7x | +8% | 7,3% | 6,9% | +0,4 pp | Coherente con el DCF. |
+| EV/EBITDA | 22,8x | 13,7x | +67% | 5,8% | 3,7% | +2,1 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 67% por encima del DCF en FY+3. |
+| EV/FCFF | 25,1x | 19,2x | +31% | 5,0% | 3,7% | +1,2 pp | Revisar: el múltiplo vale 31% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
+| P/E | 27,8x | 16,4x | +69% | 6,1% | 3,6% | +2,5 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 69% por encima del DCF en FY+3. |
+| P/FCFE | 25,0x | 16,4x | +52% | 5,2% | 3,1% | +2,1 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 52% por encima del DCF en FY+3. |
+| P/OCF | 23,6x | 16,1x | +46% | 5,0% | 3,1% | +1,9 pp | Revisar: el múltiplo vale 46% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia). |
 
 Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en valor. Significa que el múltiplo (o el precio) cuenta otra historia que el DCF: hay que decidir con evidencia cuál es la correcta y alinear los supuestos (revisar el DCF si la evidencia lo sostiene, o acercar el múltiplo al que implica el DCF si no). Con múltiplos altos el crecimiento implícito se acerca al costo de capital en los dos casos y casi no distingue diferencias grandes; por eso también se mira la diferencia de valor.
 
@@ -135,38 +135,38 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 
 | Cambio | Valor ponderado hoy | Variación |
 |---|---:|---:|
-| Vigente | US$21,99 | — |
-| Múltiplos Base +20% | US$24,07 | +9,5% |
-| Múltiplos Base −20% | US$19,91 | −9,5% |
-| Crecimiento años 2-5 +2 pp | US$20,11 | −8,5% |
-| Crecimiento años 2-5 −2 pp | US$18,34 | −16,6% |
-| Margen objetivo +3 pp | US$21,40 | −2,7% |
-| Margen objetivo −3 pp | US$16,97 | −22,8% |
-| WACC +1 pp | US$18,52 | −15,7% |
-| WACC −1 pp | US$19,89 | −9,5% |
+| Vigente | US$29,78 | — |
+| Múltiplos Base +20% | US$32,87 | +10,4% |
+| Múltiplos Base −20% | US$26,70 | −10,4% |
+| Crecimiento años 2-5 +2 pp | US$31,17 | +4,7% |
+| Crecimiento años 2-5 −2 pp | US$28,75 | −3,5% |
+| Margen objetivo +3 pp | US$32,31 | +8,5% |
+| Margen objetivo −3 pp | US$27,51 | −7,6% |
+| WACC +1 pp | US$29,00 | −2,6% |
+| WACC −1 pp | US$30,88 | +3,7% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo −3 pp, Crecimiento años 2-5 −2 pp, WACC +1 pp.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Margen objetivo +3 pp.
 
 ## 8. Log de cambios en la hoja
 
 | Hoja | Celda | Valor anterior | Valor nuevo | Motivo |
 |---|---|---:|---:|---|
-| EVEBITDA | J8 | 21,18 | 21,18 | Múltiplo conservador elegido con el protocolo v3 |
-| EVEBITDA | J19 | 23,03 | 23,03 | Múltiplo base elegido con el protocolo v3 |
-| EVEBITDA | J30 | 25,58 | 25,58 | Múltiplo optimista elegido con el protocolo v3 |
-| EVFCFF | J8 | 20,46 | 19,96 | Múltiplo conservador elegido con el protocolo v3 |
-| EVFCFF | J19 | 22,56 | 21,84 | Múltiplo base elegido con el protocolo v3 |
-| EVFCFF | J30 | 27,96 | 26,96 | Múltiplo optimista elegido con el protocolo v3 |
-| PE | J8 | 25,77 | 25,77 | Múltiplo conservador elegido con el protocolo v3 |
-| PE | J19 | 29,28 | 29,28 | Múltiplo base elegido con el protocolo v3 |
-| PE | J30 | 34,64 | 34,64 | Múltiplo optimista elegido con el protocolo v3 |
-| PFCFE | J8 | 20,90 | 20,90 | Múltiplo conservador elegido con el protocolo v3 |
-| PFCFE | J19 | 22,65 | 22,65 | Múltiplo base elegido con el protocolo v3 |
-| PFCFE | J30 | 26,54 | 26,54 | Múltiplo optimista elegido con el protocolo v3 |
-| POCF | J8 | 18,14 | 18,14 | Múltiplo conservador elegido con el protocolo v3 |
-| POCF | J19 | 20,32 | 20,32 | Múltiplo base elegido con el protocolo v3 |
-| POCF | J30 | 23,89 | 23,89 | Múltiplo optimista elegido con el protocolo v3 |
+| EVEBITDA | J8 | 18,60 | 18,36 | Múltiplo conservador elegido con el protocolo v3 |
+| EVEBITDA | J19 | 21,64 | 22,78 | Múltiplo base elegido con el protocolo v3 |
+| EVEBITDA | J30 | 26,56 | 25,87 | Múltiplo optimista elegido con el protocolo v3 |
+| EVFCFF | J8 | 22,96 | 23,19 | Múltiplo conservador elegido con el protocolo v3 |
+| EVFCFF | J19 | 24,81 | 25,14 | Múltiplo base elegido con el protocolo v3 |
+| EVFCFF | J30 | 28,36 | 28,54 | Múltiplo optimista elegido con el protocolo v3 |
+| PE | J8 | 23,88 | 23,51 | Múltiplo conservador elegido con el protocolo v3 |
+| PE | J19 | 26,80 | 27,80 | Múltiplo base elegido con el protocolo v3 |
+| PE | J30 | 32,28 | 32,83 | Múltiplo optimista elegido con el protocolo v3 |
+| PFCFE | J8 | 21,97 | 21,81 | Múltiplo conservador elegido con el protocolo v3 |
+| PFCFE | J19 | 24,25 | 25,04 | Múltiplo base elegido con el protocolo v3 |
+| PFCFE | J30 | 28,22 | 27,88 | Múltiplo optimista elegido con el protocolo v3 |
+| POCF | J8 | 20,06 | 19,94 | Múltiplo conservador elegido con el protocolo v3 |
+| POCF | J19 | 22,72 | 23,55 | Múltiplo base elegido con el protocolo v3 |
+| POCF | J30 | 27,29 | 27,22 | Múltiplo optimista elegido con el protocolo v3 |
 | Supuestos de los Múltiplos | A3, A12 | texto anterior | síntesis y chequeo de independencia | Documentación (paso 6.5) |
 | Tesis de Inversión y Supuestos | bloque «Origen de los múltiplos» | — | tabla de origen | Paso 10.d |
 
@@ -174,9 +174,10 @@ Respaldo de los valores anteriores: `JMR-valuation/reference/multiplos_v3/CELH_r
 
 ## 9. Fuentes
 
-- Hoja del Modelo JMR: https://docs.google.com/spreadsheets/d/1pl_6BeI9gl_ciaSY5wDqyjRF9GS-ZhjXXK4wGVuBC4o/edit
-- Múltiplos de peers: Yahoo Finance vía yfinance, consultado el 2026-09-29 (MNST, KDP, PEP, KO, BRBR, COCO).
-- [Celsius Holdings, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000024/celh-20251231.htm): costos de la adquisición de Alani Nu y terminación de distribuidores.
+- Hoja del Modelo JMR: https://docs.google.com/spreadsheets/d/1E_s_A35yIAZRGatTIElusnMZs5NIvFJ9CUlGlqf7-j8/edit
+- Múltiplos de peers: Yahoo Finance vía yfinance, consultado el 2026-10-01 (MNST, KDP, KO, PEP, FIZZ, COCO).
+- [Celsius Holdings, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)
+- [Celsius Holdings, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm)
 
 ## 10. Control de calidad
 
