@@ -142,7 +142,7 @@ VO, INP, COC, RES, ESC = ("'Valuation output'", "'Input sheet'", "'Cost of capit
 
 TESIS_ROWS: list[list] = [
     ["CELH (Celsius Holdings, Inc.) — Tesis de Inversión: De la Historia a los Números (análisis desde cero, 1-oct-2026)"],
-    [f'="Metodología Damodaran (NYU Stern) | Precio al 30-sep-2026: US$"&TEXT({RES}!C3;"0.00")&" | WACC inicial: "&TEXT({COC}!B14;"0.00%")'],
+    [f'="Metodología Damodaran (NYU Stern) | Precio al 30-sep-2026: US$"&TEXT({RES}!B3;"0.00")&" | WACC inicial: "&TEXT({COC}!B14;"0.00%")'],
     [],
     ["1. LA HISTORIA"],
     ["Celsius dejó de ser una marca única en hipercrecimiento y pasó a ser un portafolio de tres marcas de bebidas energéticas "
@@ -186,7 +186,7 @@ TESIS_ROWS: list[list] = [
     [f"={ESC}!A7", f"={ESC}!B7", f"={ESC}!H7", f"={ESC}!D7", f"={ESC}!C7"],
     [f"={ESC}!A8", f"={ESC}!B8", f"={ESC}!H8", f"={ESC}!D8", f"={ESC}!C8"],
     ["DCF esperado por probabilidades (complemento)", f"={ESC}!B10", f"={ESC}!H10", "Precio con MOS sobre el esperado", f"={ESC}!H14"],
-    ["Múltiplos consolidados hoy (precio relativo, Base)", "", "='Descuento de múltiplos'!D39", "Precio al 30-sep-2026", f"={RES}!C3"],
+    ["Múltiplos consolidados hoy (precio relativo, Base)", "", "='Descuento de múltiplos'!D39", "Precio al 30-sep-2026", f"={RES}!B3"],
     [],
     ["4. LOG DE CORRECCIONES Y AJUSTES (respaldo de cada celda en reference/backups/celh_desde_cero_2026-10-01.json del repo JMR-valuation)"],
     ["#", "Celda / componente", "Antes", "Después", "Razón"],
@@ -202,7 +202,7 @@ TESIS_ROWS: list[list] = [
     [10, "Descuento de múltiplos fila 38 / 43", "DCF técnico · MOS sobre el ponderado", "Historias · MOS sobre el esperado", "Presentación vigente (1-oct-2026)."],
     [],
     ["5. CONCLUSIÓN"],
-    [f'="El DCF Base de las historias es US$"&TEXT({ESC}!H5;"0.00")&" y el esperado US$"&TEXT({ESC}!H10;"0.00")&"; el precio del 30-sep-2026 (US$"&TEXT({RES}!C3;"0.00")&") está "&TEXT({RES}!C3/{ESC}!H5-1;"+0%;-0%")&" frente a la Base. Los múltiplos (US$"&TEXT(\'Descuento de múltiplos\'!D39;"0.00")&") valen más porque los peers cotizan con ventajas duraderas que el DCF no le reconoce a Celsius. El DCF es la lectura más confiable: el valor depende del margen y de la duración de Alani Nu, no de un múltiplo de mercado."'],
+    [f'="El DCF Base de las historias es US$"&TEXT({ESC}!H5;"0.00")&" y el esperado US$"&TEXT({ESC}!H10;"0.00")&"; el precio del 30-sep-2026 (US$"&TEXT({RES}!B3;"0.00")&") está "&TEXT({RES}!B3/{ESC}!H5-1;"+0%;-0%")&" frente a la Base. Los múltiplos (US$"&TEXT(\'Descuento de múltiplos\'!D39;"0.00")&") valen más porque los peers cotizan con ventajas duraderas que el DCF no le reconoce a Celsius. El DCF es la lectura más confiable: el valor depende del margen y de la duración de Alani Nu, no de un múltiplo de mercado."'],
     ["Variable clave a monitorear: las ventas al consumidor de CELSIUS y de Alani Nu (Circana) y el margen bruto. Si CELSIUS vuelve a crecer y el margen bruto se recupera a 50%, el caso se mueve hacia la Optimista; si Alani Nu se desacelera a un dígito o llega una restricción regulatoria, hacia la Conservadora o la Disrupción."],
     [],
     [SOURCES],
