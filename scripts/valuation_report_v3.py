@@ -27,6 +27,9 @@ sys.path.insert(0, str(_ROOT))
 
 from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 
+sys.path.insert(0, str(_ROOT / "scripts"))
+import horizon_tables  # noqa: E402
+
 ENGINE = _ROOT.parent / "Modelo-JMR" / "docs" / "jmr_engine.js"
 MV = _ROOT / "reference" / "multiplos_v3"
 SCEN = ("conservador", "base", "optimista")
@@ -99,7 +102,7 @@ def main():
     sh = get_gspread_client().open_by_key(sid)
     U = {"valueRenderOption": "UNFORMATTED_VALUE"}
     rng = ["'Input sheet'!A1:D80", "'Valuation output'!A1:M140", "'Cost of capital worksheet'!A1:E70",
-           "'Descuento de múltiplos'!A1:K49", "'Financials Multiples'!A1:H120", "'Resumen de Valoración'!A1:U20"]
+           "'Descuento de múltiplos'!A1:K50", "'Financials Multiples'!A1:H120", "'Resumen de Valoración'!A1:U20"]
     rng += [f"{s}!A1:J34" for s, _ in SHEETS.values()]
     if 'DCF FCFE financiero' in {w.title for w in sh.worksheets()}:rng.append("'DCF FCFE financiero'!A1:I62")
     vr = sh.values_batch_get(rng, params=U)["valueRanges"]
@@ -137,13 +140,15 @@ def main():
                 continue
             g = grid[s]
             M = g[18][5]
-            pv = []
+            pv, prev, pv_div = [], 0.0, 0.0
             for n, col in enumerate("FGH", start=1):
                 metric = g[19][ord(col) - 65]
                 sh_n = max(shares["E"], shares[chr(ord(col) - 1)]) if is_ev else shares[chr(ord(col) - 1)]
                 implied = g[20][ord(col) - 65]
-                div = g[21][ord(col) - 65] or 0
-                pv.append((implied + (k - 1) * M * metric / sh_n + div) / (1 + ke) ** n)
+                cum = g[21][ord(col) - 65] or 0
+                pv_div += (cum - prev) / (1 + ke) ** n  # cada dividendo en su año de pago (2-oct-2026)
+                prev = cum
+                pv.append((implied + (k - 1) * M * metric / sh_n) / (1 + ke) ** n + pv_div)
             w = next(r[2] for r in dm[19:24] if r and r[0] == m)
             tot += w * (sum(pv) / 3 if cell("Descuento de múltiplos", "B6") != "Solo 3 años" else pv[2])
             wsum += w
@@ -168,7 +173,7 @@ def main():
                         ("Margen objetivo −3 pp", {"marginBase": base_inp["marginBase"] - 0.03}),
                         ("WACC +1 pp", {"wacc": wacc + 0.01}), ("WACC −1 pp", {"wacc": wacc - 0.01})):
         e = engine_dcf({**base_inp, **change})["base"]
-        new_dcf = e
+        new_dcf = dcf[1] * e / eng0 if eng0 else e  # variación relativa del motor sobre el DCF de la hoja
         sens.append((lab, new_dcf * w_dcf + mult[1] * w_mult))
 
     today = os.environ.get("JMR_FECHA") or dt.date.today().isoformat()  # fecha de corte de la valoración
@@ -294,15 +299,9 @@ def main():
     w("")
     w("## 5. Resultados")
     w("")
-    w("Precio al cierre de FY+3 (con dividendos acumulados, sin descontar), por método y escenario:")
-    w("")
-    w("| Método | Peso | Base | Conservador | Optimista |")
-    w("|---|---:|---:|---:|---:|")
-    for m in rec["metodos"]:
-        w(f"| {m['nombre']} | {pct(m['peso'], 0)} | {money(m['base'])} | {money(m['conservador'])} | {money(m['optimista'])} |")
-    w(f"| **Ponderado FY+3** | 100% | {money(op['base'])} | {money(op['conservador'])} | {money(op['optimista'])} |")
-    w("")
-    w(f"Valor presente (Ke {pct(ke, 2)}; consolidado por método: {cell('Descuento de múltiplos', 'B6')}):")
+    w(horizon_tables.markdown(horizon_tables.build(cell, rec), cur, today, heading="###"))
+    w(f"Detalle del valor presente por horizonte (Ke {pct(ke, 2)}; consolidado por método: "
+      f"{cell('Descuento de múltiplos', 'B6')}; cada dividendo descontado en su año de pago):")
     w("")
     w("| Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |")
     w("|---|---|---:|---:|---:|---:|---|")

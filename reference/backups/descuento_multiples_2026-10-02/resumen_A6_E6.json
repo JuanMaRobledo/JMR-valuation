@@ -1,0 +1,29 @@
+{
+ "CELH": [
+  [
+   "DCF Damodaran (llevado a FY+3)",
+   "=VLOOKUP(\"DCF Damodaran\"; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+   "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3"
+  ]
+ ],
+ "LULU": [
+  [
+   "DCF Damodaran (llevado a FY+3)",
+   "=VLOOKUP(\"DCF Damodaran\"; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+   "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3"
+  ]
+ ],
+ "ONON": [
+  [
+   "DCF Damodaran (llevado a FY+3)",
+   "=VLOOKUP(\"DCF Damodaran\"; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)",
+   "='Valuation output'!B86*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "='Valuation output'!B35*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3",
+   "='Valuation output'!B137*(1+IFERROR('Cost of capital worksheet'!$B$63;'Input sheet'!$B$36))^3"
+  ]
+ ]
+}

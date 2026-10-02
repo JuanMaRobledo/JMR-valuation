@@ -181,20 +181,26 @@ def run_blend(
 
 # --- Multiplos a valor presente (hoja 'Descuento de múltiplos', 29-sep-2026) ---
 # Cada multiplo da un precio al cierre de FY+1, FY+2 y FY+3 (mas los dividendos
-# acumulados hasta ese año, sumados nominalmente). Ese total esta en dolares
-# futuros: se trae a hoy con el costo del patrimonio (el mismo Ke con que el
-# Resumen lleva el DCF a FY+3) y se consolida por metodo, para ponderarlo
-# con el DCF, que ya esta en valor de hoy.
+# acumulados hasta ese año). Ese total esta en dolares futuros: se trae a hoy
+# con el costo del patrimonio (el mismo Ke con que el Resumen lleva el DCF a
+# FY+3), descontando cada dividendo en su año de pago (prompts del 2-oct-2026),
+# y se consolida por metodo, para ponderarlo con el DCF, que ya esta en valor de hoy.
 HORIZONS = (1, 2, 3)
 MULTIPLE_METHODS = tuple(m for m in METHODS if m != "DCF Damodaran")
 CONSOLIDATE_AVERAGE, CONSOLIDATE_3Y = "Promedio 1-3 años", "Solo 3 años"
 
 
-def discount_multiple(price_plus_dividends: float, cost_of_equity: float, years: int) -> float:
-    """VP_n = (precio objetivo FY+n + dividendos acumulados FY+1..FY+n) / (1 + Ke)^n."""
+def discount_multiple(price_plus_dividends: float, cost_of_equity: float, years: int,
+                      dividends: tuple[float, ...] = ()) -> float:
+    """VP_n = Precio FY+n / (1 + Ke)^n + suma(Dividendo FY+t / (1 + Ke)^t), t = 1..n.
+
+    price_plus_dividends es el total de la hoja (precio FY+n + dividendos FY+1..FY+n);
+    dividends son los dividendos por accion de cada año FY+1, FY+2, ... (vacio = sin dividendos)."""
     if cost_of_equity <= -1:
         raise ValueError("La tasa de descuento debe ser mayor que -100%")
-    return price_plus_dividends / (1 + cost_of_equity) ** years
+    divs = tuple(dividends[:years])
+    price = price_plus_dividends - sum(divs)
+    return price / (1 + cost_of_equity) ** years + sum(d / (1 + cost_of_equity) ** t for t, d in enumerate(divs, 1))
 
 
 def consolidate_horizons(present_values: tuple[float, float, float], criterion: str = CONSOLIDATE_AVERAGE) -> float:
@@ -226,12 +232,13 @@ def present_value_blend(
     cost_of_equity: float,
     criterion: str = CONSOLIDATE_AVERAGE,
     included_methods: dict[str, bool] | None = None,
+    dividends: tuple[float, float, float] = (),                    # dividendo por accion FY+1, FY+2, FY+3
 ) -> PresentValueResult:
     """Replica 'Descuento de múltiplos' para un escenario: 5 metodos x 3 horizontes
     descontados, consolidados por metodo y ponderados con el DCF. El peso de los
     multiplos se reparte entre ellos en la misma proporcion que en el Resumen."""
     weights = renormalize_weights(weights_for_type(company_type), included_methods)
-    pv = {m: tuple(discount_multiple(price_plus_dividends[m][n - 1], cost_of_equity, n) for n in HORIZONS)
+    pv = {m: tuple(discount_multiple(price_plus_dividends[m][n - 1], cost_of_equity, n, dividends) for n in HORIZONS)
           for m in MULTIPLE_METHODS}
     consolidated = {m: consolidate_horizons(pv[m], criterion) for m in MULTIPLE_METHODS}
     weight_multiples = sum(weights[m] for m in MULTIPLE_METHODS)

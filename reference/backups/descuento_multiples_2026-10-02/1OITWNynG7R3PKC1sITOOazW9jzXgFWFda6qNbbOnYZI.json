@@ -1,0 +1,408 @@
+{
+ "descuento": [
+  [
+   "='Input sheet'!A1&\" · Múltiplos a valor presente (1, 2 y 3 años)\""
+  ],
+  [
+   "Cada múltiplo da un precio objetivo al cierre de FY+1, FY+2 y FY+3 (múltiplo × métrica proyectada ÷ acciones). Se le suman los dividendos por acción acumulados hasta ese año, sin descontarlos uno a uno, y el total se trae a hoy con el costo del patrimonio: VP = (Precio FY+n + Dividendos FY+1..FY+n) ÷ (1 + Ke)^n."
+  ],
+  [],
+  [
+   "Parámetro",
+   "Valor usado",
+   "Entrada manual",
+   "Automático"
+  ],
+  [
+   "Tasa de descuento: Ke (costo del patrimonio del DCF)",
+   "=IF(ISNUMBER(C5);C5;D5)",
+   "",
+   "=IFERROR('Cost of capital worksheet'!B63;'Input sheet'!B36)"
+  ],
+  [
+   "Criterio para consolidar cada método",
+   "=IF(C6=\"Solo 3 años\";\"Solo 3 años\";\"Promedio 1-3 años\")",
+   "",
+   "Promedio 1-3 años"
+  ],
+  [
+   "Factor de descuento a 1, 2 y 3 años",
+   "=1/(1+B5)",
+   "=1/(1+B5)^2",
+   "=1/(1+B5)^3"
+  ],
+  [],
+  [
+   "CONSERVADOR"
+  ],
+  [
+   "Método",
+   "Peso total",
+   "Peso en múltiplos",
+   "Precio + div. FY+1",
+   "Precio + div. FY+2",
+   "Precio + div. FY+3",
+   "VP 1 año",
+   "VP 2 años",
+   "VP 3 años",
+   "Consolidado hoy",
+   "Chequeo VP3 < FY+3"
+  ],
+  [
+   "='Resumen de Valoración'!A7",
+   "='Resumen de Valoración'!B7",
+   "=IFERROR(B11/SUM($B$11:$B$15);0)",
+   "=EVEBITDA!F12",
+   "=EVEBITDA!G12",
+   "=EVEBITDA!H12",
+   "=D11/(1+$B$5)",
+   "=(E11-'Financials Multiples'!E35)/(1+$B$5)^2+'Financials Multiples'!E35/(1+$B$5)",
+   "=(F11-'Financials Multiples'!E35-'Financials Multiples'!F35)/(1+$B$5)^3+'Financials Multiples'!E35/(1+$B$5)+'Financials Multiples'!F35/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I11;AVERAGE(G11:I11));\"\")",
+   "=IF(NOT(ISNUMBER(I11));\"\";IF(F11<=0;\"n/a (≤ 0)\";IF(I11<F11;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A8",
+   "='Resumen de Valoración'!B8",
+   "=IFERROR(B12/SUM($B$11:$B$15);0)",
+   "=EVFCFF!F12",
+   "=EVFCFF!G12",
+   "=EVFCFF!H12",
+   "=D12/(1+$B$5)",
+   "=(E12-'Financials Multiples'!E35)/(1+$B$5)^2+'Financials Multiples'!E35/(1+$B$5)",
+   "=(F12-'Financials Multiples'!E35-'Financials Multiples'!F35)/(1+$B$5)^3+'Financials Multiples'!E35/(1+$B$5)+'Financials Multiples'!F35/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I12;AVERAGE(G12:I12));\"\")",
+   "=IF(NOT(ISNUMBER(I12));\"\";IF(F12<=0;\"n/a (≤ 0)\";IF(I12<F12;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A9",
+   "='Resumen de Valoración'!B9",
+   "=IFERROR(B13/SUM($B$11:$B$15);0)",
+   "=PE!F12",
+   "=PE!G12",
+   "=PE!H12",
+   "=D13/(1+$B$5)",
+   "=(E13-'Financials Multiples'!E35)/(1+$B$5)^2+'Financials Multiples'!E35/(1+$B$5)",
+   "=(F13-'Financials Multiples'!E35-'Financials Multiples'!F35)/(1+$B$5)^3+'Financials Multiples'!E35/(1+$B$5)+'Financials Multiples'!F35/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I13;AVERAGE(G13:I13));\"\")",
+   "=IF(NOT(ISNUMBER(I13));\"\";IF(F13<=0;\"n/a (≤ 0)\";IF(I13<F13;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A10",
+   "='Resumen de Valoración'!B10",
+   "=IFERROR(B14/SUM($B$11:$B$15);0)",
+   "=PFCFE!F12",
+   "=PFCFE!G12",
+   "=PFCFE!H12",
+   "=D14/(1+$B$5)",
+   "=(E14-'Financials Multiples'!E35)/(1+$B$5)^2+'Financials Multiples'!E35/(1+$B$5)",
+   "=(F14-'Financials Multiples'!E35-'Financials Multiples'!F35)/(1+$B$5)^3+'Financials Multiples'!E35/(1+$B$5)+'Financials Multiples'!F35/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I14;AVERAGE(G14:I14));\"\")",
+   "=IF(NOT(ISNUMBER(I14));\"\";IF(F14<=0;\"n/a (≤ 0)\";IF(I14<F14;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A11",
+   "='Resumen de Valoración'!B11",
+   "=IFERROR(B15/SUM($B$11:$B$15);0)",
+   "=POCF!F12",
+   "=POCF!G12",
+   "=POCF!H12",
+   "=D15/(1+$B$5)",
+   "=(E15-'Financials Multiples'!E35)/(1+$B$5)^2+'Financials Multiples'!E35/(1+$B$5)",
+   "=(F15-'Financials Multiples'!E35-'Financials Multiples'!F35)/(1+$B$5)^3+'Financials Multiples'!E35/(1+$B$5)+'Financials Multiples'!F35/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I15;AVERAGE(G15:I15));\"\")",
+   "=IF(NOT(ISNUMBER(I15));\"\";IF(F15<=0;\"n/a (≤ 0)\";IF(I15<F15;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "Múltiplos consolidados",
+   "=SUM(B11:B15)",
+   "=SUM(C11:C15)",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;D11:D15);\"\")",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;E11:E15);\"\")",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;F11:F15);\"\")",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;G11:G15);\"\")",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;H11:H15);\"\")",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;I11:I15);\"\")",
+   "=IFERROR(SUMPRODUCT($C$11:$C$15;J11:J15);\"\")",
+   "=IF(NOT(ISNUMBER(I16));\"\";IF(F16<=0;\"n/a (≤ 0)\";IF(I16<F16;\"OK\";\"REVISAR\")))"
+  ],
+  [],
+  [
+   "BASE"
+  ],
+  [
+   "Método",
+   "Peso total",
+   "Peso en múltiplos",
+   "Precio + div. FY+1",
+   "Precio + div. FY+2",
+   "Precio + div. FY+3",
+   "VP 1 año",
+   "VP 2 años",
+   "VP 3 años",
+   "Consolidado hoy",
+   "Chequeo VP3 < FY+3"
+  ],
+  [
+   "='Resumen de Valoración'!A7",
+   "='Resumen de Valoración'!B7",
+   "=IFERROR(B20/SUM($B$20:$B$24);0)",
+   "=EVEBITDA!F23",
+   "=EVEBITDA!G23",
+   "=EVEBITDA!H23",
+   "=D20/(1+$B$5)",
+   "=(E20-'Financials Multiples'!E74)/(1+$B$5)^2+'Financials Multiples'!E74/(1+$B$5)",
+   "=(F20-'Financials Multiples'!E74-'Financials Multiples'!F74)/(1+$B$5)^3+'Financials Multiples'!E74/(1+$B$5)+'Financials Multiples'!F74/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I20;AVERAGE(G20:I20));\"\")",
+   "=IF(NOT(ISNUMBER(I20));\"\";IF(F20<=0;\"n/a (≤ 0)\";IF(I20<F20;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A8",
+   "='Resumen de Valoración'!B8",
+   "=IFERROR(B21/SUM($B$20:$B$24);0)",
+   "=EVFCFF!F23",
+   "=EVFCFF!G23",
+   "=EVFCFF!H23",
+   "=D21/(1+$B$5)",
+   "=(E21-'Financials Multiples'!E74)/(1+$B$5)^2+'Financials Multiples'!E74/(1+$B$5)",
+   "=(F21-'Financials Multiples'!E74-'Financials Multiples'!F74)/(1+$B$5)^3+'Financials Multiples'!E74/(1+$B$5)+'Financials Multiples'!F74/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I21;AVERAGE(G21:I21));\"\")",
+   "=IF(NOT(ISNUMBER(I21));\"\";IF(F21<=0;\"n/a (≤ 0)\";IF(I21<F21;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A9",
+   "='Resumen de Valoración'!B9",
+   "=IFERROR(B22/SUM($B$20:$B$24);0)",
+   "=PE!F23",
+   "=PE!G23",
+   "=PE!H23",
+   "=D22/(1+$B$5)",
+   "=(E22-'Financials Multiples'!E74)/(1+$B$5)^2+'Financials Multiples'!E74/(1+$B$5)",
+   "=(F22-'Financials Multiples'!E74-'Financials Multiples'!F74)/(1+$B$5)^3+'Financials Multiples'!E74/(1+$B$5)+'Financials Multiples'!F74/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I22;AVERAGE(G22:I22));\"\")",
+   "=IF(NOT(ISNUMBER(I22));\"\";IF(F22<=0;\"n/a (≤ 0)\";IF(I22<F22;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A10",
+   "='Resumen de Valoración'!B10",
+   "=IFERROR(B23/SUM($B$20:$B$24);0)",
+   "=PFCFE!F23",
+   "=PFCFE!G23",
+   "=PFCFE!H23",
+   "=D23/(1+$B$5)",
+   "=(E23-'Financials Multiples'!E74)/(1+$B$5)^2+'Financials Multiples'!E74/(1+$B$5)",
+   "=(F23-'Financials Multiples'!E74-'Financials Multiples'!F74)/(1+$B$5)^3+'Financials Multiples'!E74/(1+$B$5)+'Financials Multiples'!F74/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I23;AVERAGE(G23:I23));\"\")",
+   "=IF(NOT(ISNUMBER(I23));\"\";IF(F23<=0;\"n/a (≤ 0)\";IF(I23<F23;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A11",
+   "='Resumen de Valoración'!B11",
+   "=IFERROR(B24/SUM($B$20:$B$24);0)",
+   "=POCF!F23",
+   "=POCF!G23",
+   "=POCF!H23",
+   "=D24/(1+$B$5)",
+   "=(E24-'Financials Multiples'!E74)/(1+$B$5)^2+'Financials Multiples'!E74/(1+$B$5)",
+   "=(F24-'Financials Multiples'!E74-'Financials Multiples'!F74)/(1+$B$5)^3+'Financials Multiples'!E74/(1+$B$5)+'Financials Multiples'!F74/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I24;AVERAGE(G24:I24));\"\")",
+   "=IF(NOT(ISNUMBER(I24));\"\";IF(F24<=0;\"n/a (≤ 0)\";IF(I24<F24;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "Múltiplos consolidados",
+   "=SUM(B20:B24)",
+   "=SUM(C20:C24)",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;D20:D24);\"\")",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;E20:E24);\"\")",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;F20:F24);\"\")",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;G20:G24);\"\")",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;H20:H24);\"\")",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;I20:I24);\"\")",
+   "=IFERROR(SUMPRODUCT($C$20:$C$24;J20:J24);\"\")",
+   "=IF(NOT(ISNUMBER(I25));\"\";IF(F25<=0;\"n/a (≤ 0)\";IF(I25<F25;\"OK\";\"REVISAR\")))"
+  ],
+  [],
+  [
+   "OPTIMISTA"
+  ],
+  [
+   "Método",
+   "Peso total",
+   "Peso en múltiplos",
+   "Precio + div. FY+1",
+   "Precio + div. FY+2",
+   "Precio + div. FY+3",
+   "VP 1 año",
+   "VP 2 años",
+   "VP 3 años",
+   "Consolidado hoy",
+   "Chequeo VP3 < FY+3"
+  ],
+  [
+   "='Resumen de Valoración'!A7",
+   "='Resumen de Valoración'!B7",
+   "=IFERROR(B29/SUM($B$29:$B$33);0)",
+   "=EVEBITDA!F34",
+   "=EVEBITDA!G34",
+   "=EVEBITDA!H34",
+   "=D29/(1+$B$5)",
+   "=(E29-'Financials Multiples'!E114)/(1+$B$5)^2+'Financials Multiples'!E114/(1+$B$5)",
+   "=(F29-'Financials Multiples'!E114-'Financials Multiples'!F114)/(1+$B$5)^3+'Financials Multiples'!E114/(1+$B$5)+'Financials Multiples'!F114/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I29;AVERAGE(G29:I29));\"\")",
+   "=IF(NOT(ISNUMBER(I29));\"\";IF(F29<=0;\"n/a (≤ 0)\";IF(I29<F29;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A8",
+   "='Resumen de Valoración'!B8",
+   "=IFERROR(B30/SUM($B$29:$B$33);0)",
+   "=EVFCFF!F34",
+   "=EVFCFF!G34",
+   "=EVFCFF!H34",
+   "=D30/(1+$B$5)",
+   "=(E30-'Financials Multiples'!E114)/(1+$B$5)^2+'Financials Multiples'!E114/(1+$B$5)",
+   "=(F30-'Financials Multiples'!E114-'Financials Multiples'!F114)/(1+$B$5)^3+'Financials Multiples'!E114/(1+$B$5)+'Financials Multiples'!F114/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I30;AVERAGE(G30:I30));\"\")",
+   "=IF(NOT(ISNUMBER(I30));\"\";IF(F30<=0;\"n/a (≤ 0)\";IF(I30<F30;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A9",
+   "='Resumen de Valoración'!B9",
+   "=IFERROR(B31/SUM($B$29:$B$33);0)",
+   "=PE!F34",
+   "=PE!G34",
+   "=PE!H34",
+   "=D31/(1+$B$5)",
+   "=(E31-'Financials Multiples'!E114)/(1+$B$5)^2+'Financials Multiples'!E114/(1+$B$5)",
+   "=(F31-'Financials Multiples'!E114-'Financials Multiples'!F114)/(1+$B$5)^3+'Financials Multiples'!E114/(1+$B$5)+'Financials Multiples'!F114/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I31;AVERAGE(G31:I31));\"\")",
+   "=IF(NOT(ISNUMBER(I31));\"\";IF(F31<=0;\"n/a (≤ 0)\";IF(I31<F31;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A10",
+   "='Resumen de Valoración'!B10",
+   "=IFERROR(B32/SUM($B$29:$B$33);0)",
+   "=PFCFE!F34",
+   "=PFCFE!G34",
+   "=PFCFE!H34",
+   "=D32/(1+$B$5)",
+   "=(E32-'Financials Multiples'!E114)/(1+$B$5)^2+'Financials Multiples'!E114/(1+$B$5)",
+   "=(F32-'Financials Multiples'!E114-'Financials Multiples'!F114)/(1+$B$5)^3+'Financials Multiples'!E114/(1+$B$5)+'Financials Multiples'!F114/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I32;AVERAGE(G32:I32));\"\")",
+   "=IF(NOT(ISNUMBER(I32));\"\";IF(F32<=0;\"n/a (≤ 0)\";IF(I32<F32;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "='Resumen de Valoración'!A11",
+   "='Resumen de Valoración'!B11",
+   "=IFERROR(B33/SUM($B$29:$B$33);0)",
+   "=POCF!F34",
+   "=POCF!G34",
+   "=POCF!H34",
+   "=D33/(1+$B$5)",
+   "=(E33-'Financials Multiples'!E114)/(1+$B$5)^2+'Financials Multiples'!E114/(1+$B$5)",
+   "=(F33-'Financials Multiples'!E114-'Financials Multiples'!F114)/(1+$B$5)^3+'Financials Multiples'!E114/(1+$B$5)+'Financials Multiples'!F114/(1+$B$5)^2",
+   "=IFERROR(IF($B$6=\"Solo 3 años\";I33;AVERAGE(G33:I33));\"\")",
+   "=IF(NOT(ISNUMBER(I33));\"\";IF(F33<=0;\"n/a (≤ 0)\";IF(I33<F33;\"OK\";\"REVISAR\")))"
+  ],
+  [
+   "Múltiplos consolidados",
+   "=SUM(B29:B33)",
+   "=SUM(C29:C33)",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;D29:D33);\"\")",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;E29:E33);\"\")",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;F29:F33);\"\")",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;G29:G33);\"\")",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;H29:H33);\"\")",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;I29:I33);\"\")",
+   "=IFERROR(SUMPRODUCT($C$29:$C$33;J29:J33);\"\")",
+   "=IF(NOT(ISNUMBER(I34));\"\";IF(F34<=0;\"n/a (≤ 0)\";IF(I34<F34;\"OK\";\"REVISAR\")))"
+  ],
+  [],
+  [
+   "VALOR HOY · DCF (VALOR INTRÍNSECO) + MÚLTIPLOS DESCONTADOS (SECUNDARIO)"
+  ],
+  [
+   "Concepto",
+   "Peso",
+   "Conservador",
+   "Base",
+   "Optimista"
+  ],
+  [
+   "DCF activo hoy · escenarios de las historias",
+   "='Resumen de Valoración'!B6",
+   "='Escenarios e historias'!H6",
+   "='Escenarios e historias'!H5",
+   "='Escenarios e historias'!H8"
+  ],
+  [
+   "Múltiplos consolidados (valor presente)",
+   "=SUM('Resumen de Valoración'!B7:B11)",
+   "=J16",
+   "=J25",
+   "=J34"
+  ],
+  [
+   "Ponderado DCF + múltiplos (secundario)",
+   "=B38+B39",
+   "=IFERROR(C38*$B$38+C39*$B$39;\"\")",
+   "=IFERROR(D38*$B$38+D39*$B$39;\"\")",
+   "=IFERROR(E38*$B$38+E39*$B$39;\"\")"
+  ],
+  [
+   "Precio de referencia de la hoja",
+   "='Input sheet'!D1"
+  ],
+  [
+   "Descuento del precio frente al ponderado",
+   "",
+   "=IFERROR(1-$B$41/C40;\"\")",
+   "=IFERROR(1-$B$41/D40;\"\")",
+   "=IFERROR(1-$B$41/E40;\"\")"
+  ],
+  [
+   "Precio con MOS sobre el valor esperado",
+   "='Resumen de Valoración'!G4",
+   "",
+   "='Escenarios e historias'!H14"
+  ],
+  [],
+  [
+   "CHEQUEO MATEMÁTICO · MÚLTIPLOS A 3 AÑOS"
+  ],
+  [
+   "Concepto",
+   "",
+   "Conservador",
+   "Base",
+   "Optimista"
+  ],
+  [
+   "Múltiplos FY+3 sin descontar (ponderado)",
+   "",
+   "=F16",
+   "=F25",
+   "=F34"
+  ],
+  [
+   "Múltiplos a 3 años descontados (ponderado)",
+   "",
+   "=I16",
+   "=I25",
+   "=I34"
+  ],
+  [
+   "VP a 3 años < FY+3 sin descontar",
+   "",
+   "=IF(NOT(ISNUMBER(C48));\"\";IF(C47<=0;\"n/a (≤ 0)\";IF(C48<C47;\"OK\";\"REVISAR\")))",
+   "=IF(NOT(ISNUMBER(D48));\"\";IF(D47<=0;\"n/a (≤ 0)\";IF(D48<D47;\"OK\";\"REVISAR\")))",
+   "=IF(NOT(ISNUMBER(E48));\"\";IF(E47<=0;\"n/a (≤ 0)\";IF(E48<E47;\"OK\";\"REVISAR\")))"
+  ],
+  [],
+  [
+   "Fuentes: precio + dividendos de cada horizonte = filas 12, 23 y 34 (columnas F:H) de EVEBITDA, EVFCFF, PE, PFCFE y POCF; dividendos por acción de «Financials Multiples». Ke = 'Cost of capital worksheet'!B63 (C5 lo reemplaza). C6 = «Solo 3 años» usa solo el VP a 3 años; vacío = promedio simple de 1, 2 y 3 años."
+  ],
+  [
+   "Los pesos salen de la categoría de empresa del Resumen (I5:U11): el DCF conserva su peso y el de los múltiplos se reparte entre los 5 métodos en la misma proporción. Resumen C32:E47 muestra DCF, múltiplos consolidados, ponderado y cada método por separado."
+  ]
+ ]
+}

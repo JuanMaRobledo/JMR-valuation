@@ -1,0 +1,294 @@
+{
+ "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g": {
+  "nombre": "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g",
+  "estado": "dividendos",
+  "escenarios": {
+   "Conservador": {
+    "metodos": {
+     "EV/EBITDA": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "EV/FCFF": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/E": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/FCFE": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/OCF": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "Múltiplos consolidados": {
+      "fy": [
+       "",
+       "",
+       ""
+      ],
+      "vp": [
+       0,
+       0,
+       0
+      ],
+      "consolidado": 0,
+      "chequeo": "OK"
+     }
+    },
+    "dcf_hoy": "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+    "multiplos_hoy": 0,
+    "ponderado_hoy": "",
+    "multiplos_fy3_nominal": "",
+    "multiplos_vp3": 0,
+    "chequeo": "OK",
+    "ponderado_fy3": ""
+   },
+   "Base": {
+    "metodos": {
+     "EV/EBITDA": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "EV/FCFF": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/E": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/FCFE": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/OCF": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "Múltiplos consolidados": {
+      "fy": [
+       "",
+       "",
+       ""
+      ],
+      "vp": [
+       0,
+       0,
+       0
+      ],
+      "consolidado": 0,
+      "chequeo": "OK"
+     }
+    },
+    "dcf_hoy": "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "multiplos_hoy": 0,
+    "ponderado_hoy": "",
+    "multiplos_fy3_nominal": "",
+    "multiplos_vp3": 0,
+    "chequeo": "OK",
+    "ponderado_fy3": ""
+   },
+   "Optimista": {
+    "metodos": {
+     "EV/EBITDA": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "EV/FCFF": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/E": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/FCFE": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "P/OCF": {
+      "fy": [
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)",
+       "#DIV/0! (Function DIVIDE parameter 2 cannot be zero.)"
+      ],
+      "vp": [
+       "",
+       "",
+       ""
+      ],
+      "consolidado": "",
+      "chequeo": ""
+     },
+     "Múltiplos consolidados": {
+      "fy": [
+       "",
+       "",
+       ""
+      ],
+      "vp": [
+       0,
+       0,
+       0
+      ],
+      "consolidado": 0,
+      "chequeo": "OK"
+     }
+    },
+    "dcf_hoy": "#N/A (Did not find value '' in VLOOKUP evaluation.)",
+    "multiplos_hoy": 0,
+    "ponderado_hoy": "",
+    "multiplos_fy3_nominal": "",
+    "multiplos_vp3": 0,
+    "chequeo": "OK",
+    "ponderado_fy3": ""
+   }
+  },
+  "alertas": []
+ }
+}
