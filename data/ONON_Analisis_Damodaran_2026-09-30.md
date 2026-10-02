@@ -1,228 +1,236 @@
 ---
 schema: "jmr-analisis-damodaran-v1"
 ticker: "ONON"
-analysis_date: "2026-09-30"
+analysis_date: "2026-10-01"
 ---
 
 # On Holding AG (ONON) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Valor intrínseco principal · DCF Base hoy: US$38,58 por acción** (Base · Marca premium que cumple sus metas 2029).
+**Valor intrínseco principal · DCF Base hoy: US$33,24 por acción** (Base · Marca premium global que crece ~15% con margen de 16,5%).
 
-**Complemento · DCF esperado por probabilidades: US$34,56.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$14,77–53,76. El MOS 35% se aplica al esperado: US$22,47. El antiguo caso técnico de la hoja (US$39,20) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$30,73.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$12,53–46,56. El MOS 35% se aplica al esperado: US$19,97. El antiguo caso técnico de la hoja (US$34,02) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: balance del último 10-q, capital invertido operativo, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet, ventas/capital contrastado con la historia y la industria (10 celdas, con respaldo). DCF esperado US$34,38 → US$34,56. Salvedades abiertas: Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF. Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma automática; el balance se revisó con el informe semestral. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: balance del último 10-q, capital invertido operativo, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet, ventas/capital contrastado con la historia y la industria (10 celdas, con respaldo). DCF esperado US$34,38 → US$30,73. Salvedades abiertas: Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF. Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma automática; el balance se revisó con el informe semestral. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$39,20 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$34,02 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
 
-On es una marca suiza de calzado y ropa deportiva premium que pasó de CHF 725 millones de ventas (2021) a CHF 3.014 millones (2025), con precio completo (casi sin descuentos), margen bruto de 65,4% en el 2T26 y un canal directo de 45,7% de las ventas. Ganó participación en running junto con Hoka mientras Nike la perdía, y ahora se expande a tenis, outdoor, ropa y Asia. En el Investor Day de septiembre de 2026 fijó metas a 2029: crecimiento «high-teens» y EBITDA ajustado de al menos 22%. La acción cayó de ~US$55 a ~US$30 por el franco fuerte, los aranceles y el temor a un ciclo de moda. La historia de cinco años es si On es una marca deportiva duradera, como Nike o Adidas en su momento, o una marca de moda que ya tuvo su mejor momento.
+En cinco a diez años On es una de las cuatro o cinco marcas deportivas globales, con ventas de US$9.000-10.000 millones, liderada por el running premium y con ropa, tenis, fútbol y calzado de estilo de vida como segundas patas. Crece más rápido que el mercado porque todavía tiene poca participación fuera de Norteamérica y de Europa central, y porque vende cada vez más directo al consumidor, con un margen bruto de ~65% que ninguna marca grande tiene. El margen operativo sube de ~14% a ~16-17% por escala en gastos, pero no llega al de las marcas de lujo porque On debe seguir invirtiendo en atletas, tiendas e innovación para sostener la novedad. Reinvierte poco capital (fabrica con terceros) y empieza a devolver caja. El riesgo es de moda: una marca de 16 años que todavía no atravesó un ciclo completo de pérdida de favor del consumidor.
 
 | Afirmación | ¿Posible? | ¿Plausible? | ¿Probable? |
 |---|---|---|---|
-| Las ventas crecen ~15% anual cinco años | Sí | Sí: +21,6% a tipo constante en el 2T26 y meta high-teens a 2029 | Probable 2-3 años; incierto después |
-| El margen operativo llega a 17% | Sí | Sí: margen bruto de 65% y apalancamiento operativo; la meta de EBITDA es ≥22% | Probable |
-| On sostiene el precio completo sin descuentos | Sí | Sí hasta ahora; es la señal clave de fuerza de marca | Probable |
-| La marca pasa de moda como otras antes | Sí | Posible: el calzado deportivo tiene ciclos de marcas | Media-baja |
+| On crece ~15% anual hasta 2031 | Sí | Sí: +21,6% en moneda constante en el 2T26 y meta de crecimiento de un dígito alto-teens hasta 2029 ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)) | Probable, desacelerando |
+| El margen bruto se sostiene en ~65% | Sí | Sí: 65,4% en el 2T26 con más venta directa y sin rebajas ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)) | Probable |
+| El margen operativo llega a ~16-17% | Sí | Sí: la meta de EBITDA ajustado ≥ 22% en 2029 equivale a ~15,5% operativo | Probable en el caso central |
+| On llega al margen de Deckers o Birkenstock (23-29%) | Sí | Poco: On reinvierte en marca, tiendas y nuevas categorías | Baja |
 
 
 ### Visión externa: tasas base
 
-Con ventas LTM de US$4.059 millones (US$2.872 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **$2,000-3,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 6,2% y una mediana de 5,1% (desviación estándar 8,9%); sumando una inflación de 2,5%, la mediana nominal ronda 7,6%.
+Con ventas LTM de US$4.060 millones (US$2.873 millones en dólares de 2015, deflactadas con el IPC-U: × 237,017 / 334,980), la empresa está en el tramo **$2,000-3,000 Mn** de las tasas base de crecimiento de ventas a 5 años (Mauboussin & Callahan, *The Base Rate Book*, 2016, Exhibit 4, 1950-2015). En ese tramo el crecimiento real anual tuvo una media de 6,2% y una mediana de 5,1% (desviación estándar 8,9%); sumando una inflación de 2,5%, la mediana nominal ronda 7,6%.
 
 | Historia | Crecimiento anual de ingresos (5 años) | Empresas de este tamaño que lo lograron |
 |---|---:|---:|
-| Base · Marca premium que cumple sus metas 2029 | 14,9% | 18% |
-| Conservadora · El ciclo de moda se enfría | 6,2% | 59% |
-| Disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen | 0,8% | 87% |
-| Optimista · On se vuelve una marca deportiva global | 18,8% | 10% |
+| Base · Marca premium global que crece ~15% con margen de 16,5% | 14,7% | 18% |
+| Conservadora · El ciclo de moda se enfría | 8,1% | 47% |
+| Disrupción · Deterioro de los fundamentales: pasa la moda y las ventas caen como en Under Armour | 0,1% | 88% |
+| Optimista · On se vuelve una marca deportiva global de primera línea | 18,1% | 11% |
 
-En dólares de 2015 la empresa está en el tramo de US$2.000-3.000 millones: crecer 14,9% anual cinco años (Base) lo logró ~18% de las empresas de ese tamaño; 18,8% (Optimista), ~10%. On ya está en ese grupo desde 2021, y su baja participación global le deja espacio, pero la visión externa recuerda que pocas marcas sostienen tanto crecimiento cuando dejan de ser nicho.
+On está en el tramo de ventas de US$2.000-3.000 millones de dólares de 2015 de The Base Rate Book. La Base (14,7% nominal compuesto en cinco años) está en la cola alta de ese tramo: pocas empresas sostienen crecimientos así cinco años, y por eso la Base queda algo por debajo de la meta de la gerencia.
 
 
 ### Justificación de los supuestos
 
 Cada párrafo explica un supuesto material de la tesis Base —el valor intrínseco principal—: qué cifra se usa y con qué trayectoria, qué evidencia la respalda (fuente y fecha), el mecanismo económico, por qué se eligió frente a las alternativas, cómo cambia entre escenarios, qué observación obligaría a cambiarla y cuánto mueve el valor. Las sensibilidades son DCF completos de la Base con un solo supuesto cambiado. Donde falta soporte, el supuesto se declara provisional: un valor heredado de la hoja no queda validado por reproducirse aritméticamente.
 
-**Crecimiento: alto, porque todavía es una marca chica.** On es una marca suiza de calzado y ropa deportiva premium que pasó de CHF 725 millones de ventas en 2021 a CHF 3.014 millones en 2025, casi sin descuentos y con 45,7% de venta directa. Ganó participación en running mientras Nike la perdía, y se expande a tenis, outdoor, ropa y Asia. En el Investor Day de septiembre de 2026 fijó metas a 2029: crecimiento «high-teens» y EBITDA ajustado de al menos 22%. La Base adopta una versión algo más prudente de esas metas: mayoristas de 14% a 10%, directo de 22% a 14%; 17,7% el primer año y 14,9% compuesto. Solo ~18% de las empresas de su tamaño lo lograron, pero On ya está en ese grupo desde 2021 y su participación global es baja. Una advertencia: en el 2T26 creció 21,6% a tipo constante pero 13,5% en francos; el franco fuerte resta ~8 puntos. La Conservadora (6,2%) es el enfriamiento del ciclo de marca; la Disrupción (0,8%), una moda que pasa; la Optimista (18,8%), On como marca deportiva global. Si el crecimiento a tipo constante baja de 10%, la Base se cae.
+**Crecimiento: ~17,5% el primer año y ~14% después.** La Base crece 17,5% el primer año, en línea con la guía de 2026 (~20% en moneda constante, con mayoristas contenidos), y 14,7% compuesto en cinco años. La venta directa crece 14-30% y los mayoristas 8-10%. Queda algo por debajo de la meta de la gerencia (un dígito alto en los «teens» hasta 2029) porque pocas empresas sostienen ese ritmo: ~18% de las empresas de su tamaño lo lograron. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a US$30,65 (−8%) y US$36,10 (+9%). Obligaría a revisarlo que los mayoristas caigan (hacia la Conservadora, 8,1%) o que On supere su meta (hacia la Optimista, 18,1%).
 
-**Margen: por debajo de la meta de la empresa.** El margen operativo subió a 13,8% LTM con un margen bruto en alza (65,4% en el 2T26) pese a los aranceles. La Base usa 17,0%, por debajo de la meta de EBITDA ajustado de 22%, porque ese EBITDA excluye depreciación y compensación en acciones. La Conservadora usa 14,0%, la Disrupción 10,0% y la Optimista 20,0%. Bajo NIIF 16 los arrendamientos ya están en la deuda. Dos puntos de margen mueven la Base a US$34,12 (−12%) o US$43,04 (+12%). Un margen bruto por debajo de 60% o descuentos crecientes invalidarían la Base.
+**Margen: de 14% a 16,5% con escala.** La Base parte de 14,0% el primer año (el margen NIIF del 1S26) y llega a 16,5% en 5 años. Supone margen bruto de ~65% y algo de escala en gastos, en línea con la meta de EBITDA ajustado de 22% en 2029 (≈ 15,5% operativo). Los arrendamientos ya están en el balance (NIIF 16), sin ajuste adicional. Sensibilidad: ±2 puntos de margen dan US$29,14 (−12%) y US$37,35 (+12%). La Conservadora (13,0%) supone más marketing para crecer; la Disrupción (9,0%), rebajas; la Optimista (20,0%), escala de marca global.
 
-**Reinversión: poco capital, ninguna barrera.** On terceriza la producción (Vietnam, Indonesia) y casi no necesita capital: la hoja usa un ventas/capital de 2,50× en los años 1–5 (~US$0,40 por dólar de ventas nuevas) y 2,62× después: la historia 2023-2025 da 2,77 y el promedio de calzado según Damodaran 2,62 (revisión del 1-oct-2026; antes 2,2 en los años 6–10). Tiene CHF 1.206 millones de caja sin deuda financiera y anunció su primera recompra. Pero una marca de cuatro años en un sector de modas no tiene una ventaja demostrada, así que el ROIC después del año 10 es el costo de capital (9,0%): el crecimiento posterior no suma valor. Por eso el crecimiento terminal casi no cambia el resultado (US$38,23 (−0,9%) y US$38,93 (+0,9%)): On vale por los próximos diez años.
+**Reinversión: liviana.** El ventas/capital es 2,30 en los años 1-5 (~US$0,43 de capital por dólar de ventas nuevas) y 2,10 en los años 6-10. On rota hoy su capital ~2,6 veces; se usa algo menos por las tiendas propias y las nuevas categorías. Con ±20% en el ventas/capital el DCF Base va de US$31,67 (−5%) a US$34,29 (+3%).
 
-**Descuento.** La hoja usa una beta de 1,50; la bottom-up de calzado reapalancada da 1,07, con la que el DCF técnico sube. Una marca joven tiene más riesgo que el promedio del sector, pero ese riesgo (el ciclo de moda) está mejor capturado en la Conservadora y la Disrupción que en la beta; la Base, con la beta de la hoja, queda del lado prudente. El costo de capital va de 10,79% a 9,00%. El crecimiento perpetuo es 4,99% y el terminal explica 59,0% del valor operativo.
+**Descuento y largo plazo: beta 1,30 y sin ventaja defendible.** El costo de capital inicial es 10,18% (tasa libre de riesgo 5,24% al 1-oct-2026, prima de mercado 4,09% de Damodaran a septiembre, beta 1,30, sin deuda bancaria; los arrendamientos pesan ~6%) y el terminal 9,33%. Después del año 10 el crecimiento es 5,24% y el ROIC terminal es el costo de capital (9,3%): On gana hoy muy por encima de su costo de capital, pero su marca tiene 16 años y no atravesó todavía un ciclo de moda completo, así que no cuenta como ventaja probada. El terminal pesa 62,5% del valor operativo. ±1 punto de tasa da US$38,30 (+15%) y US$29,24 (−12%).
 
-**Probabilidades y lectura del resultado.** La Base pesa 40%, la Conservadora 30%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$38,58 y el esperado US$34,56, frente a un precio de US$29,61: la acción cayó de ~US$55 a ~US$30 por el franco, los aranceles y el temor a un ciclo de moda, y el mercado paga algo entre la Conservadora (US$23,01) y el esperado. Las acciones se fijan en 331,0 millones; la recompra no se modela.
+**Acciones, moneda y caja.** Se usan 336,1 millones de acciones económicas: 301,7 millones Clase A y 325,0 millones Clase B (cada una con 1/10 de los derechos económicos) al 30-jun-2026, más 1,9 millones de premios con efecto dilutivo. Las cifras en francos se convierten a dólares al tipo de cambio de cada período. La caja es US$1.493 millones y no hay deuda bancaria. Una dilución adicional de 5% llevaría el DCF Base a US$31,66 (−5%).
 
-**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$4.059 millones. Con el crecimiento de la Base llegan a US$8.120 millones en el año 5 y a US$11.818 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 14,0% en el año 1 a 17,0% al final, y se descuentan impuestos (8,0% al principio y 20,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$615 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$312 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$304 millones el primer año. Cada flujo se trae a hoy con el costo de capital (10,79% al principio, 9,00% al final): los diez años suman US$4.908 millones. Después del año 10 se supone que la empresa crece 4,99% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,0%; esa perpetuidad vale hoy US$7.066 millones, 59% del total. Flujos más terminal dan el valor de las operaciones, US$11.974 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$1.491 millones, menos deuda por US$696 millones. Queda un patrimonio de US$12.770 millones que, repartido entre 331,0 millones de acciones, da US$38,58 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+**Probabilidades y lectura del resultado.** Con 45% para la Base, 25% para la Conservadora, 10% para la Disrupción y 20% para la Optimista, el DCF esperado es US$30,73 frente a un DCF Base de US$33,24. Con el margen de seguridad de 35%, el precio de compra con margen es US$19,97.
 
-**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 17,07× (peso 25% dentro de los múltiplos); EV/FCFF 23,94× (peso 38% dentro de los múltiplos); P/E 19,38× (peso 12% dentro de los múltiplos); P/FCFE 20,17× (peso 12% dentro de los múltiplos); P/OCF 17,60× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (11,3%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$4.060 millones. Con el crecimiento de la Base llegan a US$8.067 millones en el año 5 y a US$11.656 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 14,0% en el año 1 a 16,5% al final, y se descuentan impuestos (20,0% al principio y 23,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$534 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$346 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$189 millones el primer año. Cada flujo se trae a hoy con el costo de capital (10,18% al principio, 9,33% al final): los diez años suman US$3.891 millones. Después del año 10 se supone que la empresa crece 5,24% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,3%; esa perpetuidad vale hoy US$6.485 millones, 63% del total. Flujos más terminal dan el valor de las operaciones, US$10.377 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$1.493 millones, menos deuda por US$696 millones. Queda un patrimonio de US$11.173 millones que, repartido entre 336,1 millones de acciones, da US$33,24 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
-Sensibilidad del DCF Base (US$38,58; cada fila es un DCF completo con un solo supuesto cambiado):
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 25,79× (peso 25% dentro de los múltiplos); EV/FCFF 34,76× (peso 38% dentro de los múltiplos); P/E 32,37× (peso 12% dentro de los múltiplos); P/FCFE 32,99× (peso 12% dentro de los múltiplos); P/OCF 29,73× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (10,6%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+
+Sensibilidad del DCF Base (US$33,24; cada fila es un DCF completo con un solo supuesto cambiado):
 
 | Supuesto cambiado | DCF Base | Variación |
 |---|---:|---:|
-| Margen objetivo −2 pp | US$34,12 | −11,6% |
-| Margen objetivo +2 pp | US$43,04 | +11,6% |
-| Crecimiento años 1–5 −2 pp | US$35,42 | −8,2% |
-| Crecimiento años 1–5 +2 pp | US$42,06 | +9,0% |
-| Ventas/capital −20% | US$37,18 | −3,6% |
-| Ventas/capital +20% | US$39,51 | +2,4% |
-| WACC +1 pp | US$34,01 | −11,8% |
-| WACC −1 pp | US$44,37 | +15,0% |
-| Crecimiento terminal −0,5 pp | US$38,23 | −0,9% |
-| Crecimiento terminal +0,5 pp | US$38,93 | +0,9% |
-| Acciones +5% | US$36,74 | −4,8% |
+| Margen objetivo −2 pp | US$29,14 | −12,3% |
+| Margen objetivo +2 pp | US$37,35 | +12,3% |
+| Crecimiento años 1–5 −2 pp | US$30,65 | −7,8% |
+| Crecimiento años 1–5 +2 pp | US$36,10 | +8,6% |
+| Ventas/capital −20% | US$31,67 | −4,7% |
+| Ventas/capital +20% | US$34,29 | +3,2% |
+| WACC +1 pp | US$29,24 | −12,0% |
+| WACC −1 pp | US$38,30 | +15,2% |
+| Crecimiento terminal −0,5 pp | US$32,97 | −0,8% |
+| Crecimiento terminal +0,5 pp | US$33,52 | +0,8% |
+| Acciones +5% | US$31,66 | −4,8% |
 
 
 ### Piezas del valor
 
-**Crecimiento.** En dólares (hoja): US$1.994 millones (2023, +55,8%), US$2.634 millones (2024, +32,1%) y US$3.627 millones (2025, +37,7%); LTM US$4.059 millones. En el 2T26 el crecimiento a tipo constante fue 21,6% y en francos 13,5% (el franco restó ~8 pp). La hoja supone 18% el próximo año y 14% en los años 2-5. La división de las historias usa el peso del canal directo (45,7%) y mayorista (54,3%) del 2T26.
+**Crecimiento.** Las ventas de los últimos doce meses (julio 2025-junio 2026) suman CHF 3.220 millones, US$4.060 millones al tipo de cambio promedio de esos meses (cálculo propio: 2025 − 1S25 + 1S26, [On, 20-F 2025, 3-mar-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm) y [On, estados intermedios del 1S26 (6-K), 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/onholdingag-20260630_d2.htm)). Mayoristas CHF 1.834 millones y directo al consumidor CHF 1.386 millones. En 2025 las ventas crecieron 30% (CHF 3.014 millones). En el 2T26 crecieron 13,5% en francos y 21,6% en moneda constante: directo al consumidor +34,3%, mayoristas +12,7%; Asia-Pacífico +54,7%, EMEA +20,5% y Américas +13,0% en moneda constante; ropa +56% ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)). La guía de 2026 es un crecimiento de ~20% en moneda constante (CHF 3.470-3.560 millones) y la meta 2026-2029 es un crecimiento de un dígito alto en los «teens» hasta al menos CHF 5.600 millones en 2029 ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)).
 
-| US$ millones | 2023 | 2024 | 2025 | LTM |
+| CHF millones | 2024 | 2025 | LTM jun-26 (cálculo propio) | 2T26 vs 2T25 (moneda constante) |
 |---|---:|---:|---:|---:|
-| Ingresos | 1.994 | 2.634 | 3.627 | 4.059 |
-| Crecimiento | +55,8% | +32,1% | +37,7% | — |
-| Margen operativo | 10,1% | 9,1% | 12,5% | 13,8% |
-| FCFF (hoja) | 286 | 456 | 390 | — |
+| Mayoristas | 1.375 | 1.753 | 1.834 | +12,7% |
+| Directo al consumidor | 943 | 1.261 | 1.386 | +34,3% |
+| Total | 2.318 | 3.014 | 3.220 | +21,6% |
+| Total en US$ (al promedio de cada período) | 2.635 | 3.636 | 4.060 | — |
 
-**Márgenes.** El margen operativo subió a 13,8% LTM con margen bruto en alza pese a los aranceles. La hoja supone 14% el próximo año y 17% de objetivo, por debajo de la meta de EBITDA ajustado de ≥22% (que excluye depreciación y compensación en acciones). Las historias van de 10% (pasa la moda) a 20% (marca global).
+**Márgenes.** El resultado operativo NIIF de los últimos doce meses es CHF 444 millones, 13,8% de las ventas (14,1% en el 1S26); ya descuenta los pagos en acciones (~2% de las ventas) y la depreciación de los derechos de uso. El margen bruto subió de 59,6% en 2023 a 62,8% en 2025 y 65,4% en el 2T26 por más venta directa y precio lleno, aun absorbiendo los aranceles de EE.UU. ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)). La guía de 2026 es EBITDA ajustado de 19,5-20% y la meta de 2029, ≥ 22% con margen bruto ≥ 65% ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)). Comparables: Deckers ganó 23% y Birkenstock ~29% en su último ejercicio, con margen bruto parecido pero menos inversión en crecimiento; Nike ~7% normalizado.
 
-**Reinversión y retorno.** Poco capital: producción tercerizada en Vietnam e Indonesia, capex de ~US$50-95 millones y tiendas propias. La hoja usa un sales-to-capital de 2,5 (años 1-5) y 2,62 después: la historia 2023-2025 da 2,77 (con los derechos de uso de tiendas) y el promedio de Shoe según Damodaran es 2,62. On tiene CHF 1.206 millones de caja sin deuda financiera y anunció su primera recompra (hasta US$1.000 millones hasta 2029). Sin ventaja defendible: marca de solo cuatro años en un sector de modas, sin otra barrera de entrada. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
+**Reinversión y retorno.** On fabrica con terceros: el capex fue CHF 79 millones en 2025 (2,6% de las ventas). El capital invertido (patrimonio + arrendamientos − caja) es ~US$1.570 millones al 30-jun-2026: rota ~2,6 veces las ventas. Se usa 2,3 en los años 1-5 (más tiendas propias, ropa y nuevas categorías) y el promedio de Shoe (2,1) en los años 6-10.
 
-**Riesgo.** La hoja usa una beta de 1,50. La bottom-up de Shoe (11 empresas, 1,00 desapalancada y corregida por caja) reapalancada da 1,07, y el DCF técnico anterior sube de US$39,20 a US$42,89. Una marca joven de alto crecimiento tiene más riesgo que el promedio del sector, pero ese riesgo (ciclo de moda) se captura mejor en las historias Conservadora y Disrupción que en la beta.
+| Concepto (CHF millones) | 2024 | 2025 | LTM jun-26 |
+|---|---:|---:|---:|
+| Capex | 65 | 79 | 96 |
+| Inventarios | 419 | 420 | 473 |
+| Flujo operativo (después de intereses) | 495 | 338 | 501 |
+
+**Riesgo.** La hoja usa una beta de 1,30. La bottom-up de Shoe global (0,89 desapalancada, Damodaran, enero de 2026) reapalancada con los arrendamientos de On da ~0,95; la regresión semanal contra el S&P 500 da 1,58 a dos años y 1,80 desde la salida a bolsa (2021). Se usa un punto intermedio: la industria subestima el riesgo de una marca joven de crecimiento alto, y la regresión está inflada por la volatilidad de los primeros años en bolsa. La tabla muestra el efecto de la beta de la industria.
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,50 | 11,3% | 10,8% | US$39,20 |
-| Bottom-up del sector (Shoe, reapalancada) | 1,07 | 9,5% | 9,1% | US$42,89 |
+| Hoja (regresión o la cargada en el libro) | 1,30 | 10,6% | 10,2% | US$34,02 |
+| Bottom-up del sector (Shoe, reapalancada) | 1,05 | 9,5% | 9,2% | US$35,82 |
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
-| Crecimiento año 1 | 10,0% | 18,0% | 22,0% |
-| Crecimiento años 2–5 | 10,0% | 14,0% | 22,0% |
+| Crecimiento año 1 | 12,5% | 17,5% | 18,5% |
+| Crecimiento años 2–5 | 12,5% | 14,0% | 18,5% |
 | Margen año 1 (base ajustada del modelo) | 14,0% | 14,0% | 14,0% |
-| Margen objetivo | 13,0% | 17,0% | 20,0% |
+| Margen objetivo | 13,8% | 16,5% | 21,5% |
 
-Ventas/capital: 2,5x en años 1–5 y 2,6x en 6–10. WACC: 10,8%. Ke: 11,3%. Impuesto efectivo: 8,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
+Ventas/capital: 2,3x en años 1–5 y 2,1x en 6–10. WACC: 10,2%. Ke: 10,6%. Impuesto efectivo: 20,0%. Convergencia: 5 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 32,9% | 20,9% | 9,0% | = costo de capital | US$39,20 | US$39,20 |
+| Sin ventaja defendible | 28,5% | 20,9% | 9,3% | = costo de capital | US$34,02 | US$34,02 |
 
-Fuentes de ventaja: Marca y tecnología (CloudTec), joven. Evidencia: ROIC 13-39% desde 2022 (4 años). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
+Fuentes de ventaja: Marca y tecnología (CloudTec, LightSpray) de 16 años, con venta directa creciente; sin historia de un ciclo completo. Evidencia: ROIC después de impuestos ~28,5% LTM (resultado operativo de US$560 millones sobre capital invertido de ~US$1.570 millones con arrendamientos); margen operativo de 12-14% desde 2023 y margen bruto de 65%. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$38,58 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$34,56. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$39,20) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$33,24 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$30,73. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$34,02) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
 
 | Entrada | Valor usado | Origen y tratamiento |
 |---|---|---|
-| Ingresos LTM | US$4.059 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 2.205 + 1.854 = 4.059. |
+| Ingresos LTM | US$4.060 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 2.313 + 1.748 = 4.060. |
 | Margen inicial del DCF | 14,0% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 5 (Input sheet B31). |
-| Impuesto | 7,95% en años 1–5; 20,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
-| Descuento | WACC 10,79% → 9,00% | Tasa libre de riesgo 4,99%, beta 1,50, ERP 4,23%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
-| Ventas/capital | 2,50x en años 1–5; 2,62x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
-| Crecimiento perpetuo | Base/Conservadora/Optimista: 4,99%; Disrupción: 3,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (3,00%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
-| ROIC terminal | Base/Conservadora/Disrupción/Optimista: 9,00% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
-| Puente al patrimonio | Caja 1.491; deuda 696; acciones 331,0 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
+| Impuesto | 20,00% en años 1–5; 23,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
+| Descuento | WACC 10,18% → 9,33% | Tasa libre de riesgo 5,24%, beta 1,30, ERP 4,09%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 2,30x en años 1–5; 2,10x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 5,24%; Disrupción: 2,49% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (2,49%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Conservadora/Disrupción/Optimista: 9,33% (= WACC terminal) | Criterio de ventaja competitiva (sin ventaja defendible). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Puente al patrimonio | Caja 1.493; deuda 696; acciones 336,1 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
 #### 2. Cómo se convierte cada historia en ingresos
 
 Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
 
-Ejemplo Base, año 1: 2.205 × 1,14 + 1.854 × 1,22 = US$4.775,58 millones. Frente a 4.059, el crecimiento consolidado es 17,65%. En los años 2–5 es 16,32%, 14,93%, 13,51%, 12,05%; las ventas del año 5 son US$8.119,83 millones. El 14,9% de la tabla es el crecimiento anual compuesto de los cinco años: (8.119,83 / 4.059)^(1/5) − 1; no se usa como tasa constante.
+Ejemplo Base, año 1: 2.313 × 1,08 + 1.748 × 1,30 = US$4.769,58 millones. Frente a 4.060, el crecimiento consolidado es 17,47%. En los años 2–5 es 16,67%, 15,06%, 13,22%, 11,27%; las ventas del año 5 son US$8.066,70 millones. El 14,7% de la tabla es el crecimiento anual compuesto de los cinco años: (8.066,70 / 4.060)^(1/5) − 1; no se usa como tasa constante.
 
 
 #### 3. Del ingreso al flujo libre y su valor presente
 
 NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-En la Base, año 1: NOPAT = 4.775,58 × 14,00% × (1 − 7,95%) = US$615,43 millones. La reinversión es US$311,66 millones y el FCFF es US$303,77 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+En la Base, año 1: NOPAT = 4.769,58 × 14,00% × (1 − 20,00%) = US$534,19 millones. La reinversión es US$345,66 millones y el FCFF es US$188,54 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
-En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,00%. Reinversión terminal sobre el NOPAT: Base, 55,4% (4,99% / 9,00%); Conservadora, 55,4% (4,99% / 9,00%); Disrupción, 33,3% (3,00% / 9,00%); Optimista, 55,4% (4,99% / 9,00%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,33%. Reinversión terminal sobre el NOPAT: Base, 56,2% (5,24% / 9,33%); Conservadora, 56,2% (5,24% / 9,33%); Disrupción, 26,7% (2,49% / 9,33%); Optimista, 56,2% (5,24% / 9,33%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
 #### 4. Trayectoria anual de cada historia
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**Base · Marca premium que cumple sus metas 2029** — probabilidad 40%; valor terminal 18.750 (VP 7.066); DCF US$38,58 por acción.
+**Base · Marca premium global que crece ~15% con margen de 16,5%** — probabilidad 45%; valor terminal 16.705 (VP 6.485); DCF US$33,24 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 4.776 | 17,7% | 14,0% | 615 | 312 | 304 | 10,8% | 274 |
-| 2 | 5.555 | 16,3% | 15,2% | 777 | 332 | 445 | 10,8% | 363 |
-| 3 | 6.384 | 14,9% | 15,8% | 929 | 345 | 584 | 10,8% | 429 |
-| 4 | 7.247 | 13,5% | 16,4% | 1.094 | 349 | 745 | 10,8% | 494 |
-| 5 | 8.120 | 12,1% | 17,0% | 1.271 | 346 | 925 | 10,8% | 554 |
-| 6 | 8.984 | 10,6% | 17,0% | 1.369 | 316 | 1.053 | 10,4% | 571 |
-| 7 | 9.813 | 9,2% | 17,0% | 1.455 | 293 | 1.162 | 10,1% | 573 |
-| 8 | 10.579 | 7,8% | 17,0% | 1.525 | 259 | 1.267 | 9,7% | 569 |
-| 9 | 11.257 | 6,4% | 17,0% | 1.577 | 214 | 1.363 | 9,4% | 560 |
-| 10 | 11.818 | 5,0% | 17,0% | 1.607 | 225 | 1.382 | 9,0% | 521 |
-| Terminal | 12.408 | 5,0% | 17,0% | 1.687 | 936 | 752 | 9,0% | — |
+| 1 | 4.770 | 17,5% | 14,0% | 534 | 346 | 189 | 10,2% | 171 |
+| 2 | 5.565 | 16,7% | 15,0% | 668 | 364 | 303 | 10,2% | 250 |
+| 3 | 6.403 | 15,1% | 15,5% | 794 | 368 | 426 | 10,2% | 318 |
+| 4 | 7.249 | 13,2% | 16,0% | 928 | 355 | 573 | 10,2% | 389 |
+| 5 | 8.067 | 11,3% | 16,5% | 1.065 | 353 | 712 | 10,2% | 438 |
+| 6 | 8.879 | 10,1% | 16,5% | 1.163 | 375 | 789 | 10,0% | 442 |
+| 7 | 9.665 | 8,9% | 16,5% | 1.257 | 352 | 904 | 9,8% | 461 |
+| 8 | 10.405 | 7,7% | 16,5% | 1.343 | 319 | 1.023 | 9,7% | 476 |
+| 9 | 11.076 | 6,4% | 16,5% | 1.418 | 276 | 1.142 | 9,5% | 485 |
+| 10 | 11.656 | 5,2% | 16,5% | 1.481 | 291 | 1.190 | 9,3% | 462 |
+| Terminal | 12.267 | 5,2% | 16,5% | 1.559 | 875 | 683 | 9,3% | — |
 
-**Conservadora · El ciclo de moda se enfría** — probabilidad 30%; valor terminal 9.051,7 (VP 3.411,2); DCF US$23,01 por acción.
-
-| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 4.457,9 | 9,8% | 14,0% | 574,5 | 114,1 | 460,4 | 10,8% | 415,6 |
-| 2 | 4.743,1 | 6,4% | 14,0% | 611,2 | 102,8 | 508,4 | 10,8% | 414,2 |
-| 3 | 5.000,1 | 5,4% | 14,0% | 644,4 | 99,2 | 545,2 | 10,8% | 400,9 |
-| 4 | 5.248,1 | 5,0% | 14,0% | 676,3 | 94,1 | 582,2 | 10,8% | 386,4 |
-| 5 | 5.483,4 | 4,5% | 14,0% | 706,6 | 100,6 | 606,1 | 10,8% | 363,1 |
-| 6 | 5.734,9 | 4,6% | 14,0% | 719,7 | 102,6 | 617,1 | 10,4% | 334,8 |
-| 7 | 6.003,7 | 4,7% | 14,0% | 733,2 | 109,7 | 623,5 | 10,1% | 307,3 |
-| 8 | 6.291,1 | 4,8% | 14,0% | 747,1 | 117,4 | 629,7 | 9,7% | 282,9 |
-| 9 | 6.598,7 | 4,9% | 14,0% | 761,3 | 125,7 | 635,6 | 9,4% | 261,1 |
-| 10 | 6.927,9 | 5,0% | 14,0% | 775,9 | 131,9 | 644,0 | 9,0% | 242,7 |
-| Terminal | 7.273,7 | 5,0% | 14,0% | 814,6 | 451,7 | 363,0 | 9,0% | — |
-
-**Disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen** — probabilidad 10%; valor terminal 4.481,1 (VP 1.688,7); DCF US$14,77 por acción.
+**Conservadora · El ciclo de moda se enfría** — probabilidad 25%; valor terminal 8.879,0 (VP 3.447,2); DCF US$20,80 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 4.151,7 | 2,3% | 14,0% | 535,0 | -44,1 | 579,1 | 10,8% | 522,7 |
-| 2 | 4.041,4 | −2,7% | 12,4% | 461,3 | -16,8 | 478,1 | 10,8% | 389,5 |
-| 3 | 3.999,6 | −1,0% | 11,6% | 427,1 | 39,8 | 387,3 | 10,8% | 284,8 |
-| 4 | 4.099,0 | 2,5% | 10,8% | 407,5 | 49,2 | 358,3 | 10,8% | 237,8 |
-| 5 | 4.222,0 | 3,0% | 10,0% | 388,6 | 50,7 | 338,0 | 10,8% | 202,5 |
-| 6 | 4.348,6 | 3,0% | 10,0% | 389,8 | 49,8 | 340,0 | 10,4% | 184,5 |
-| 7 | 4.479,1 | 3,0% | 10,0% | 390,7 | 51,3 | 339,4 | 10,1% | 167,3 |
-| 8 | 4.613,5 | 3,0% | 10,0% | 391,3 | 52,8 | 338,5 | 9,7% | 152,1 |
-| 9 | 4.751,9 | 3,0% | 10,0% | 391,6 | 54,4 | 337,2 | 9,4% | 138,5 |
-| 10 | 4.894,4 | 3,0% | 10,0% | 391,6 | 56,0 | 335,5 | 9,0% | 126,4 |
-| Terminal | 5.041,3 | 3,0% | 10,0% | 403,3 | 134,4 | 268,9 | 9,0% | — |
+| 1 | 4.502,3 | 10,9% | 14,0% | 504,3 | 169,5 | 334,8 | 10,2% | 303,9 |
+| 2 | 4.892,1 | 8,7% | 13,6% | 532,3 | 168,2 | 364,0 | 10,2% | 299,9 |
+| 3 | 5.279,1 | 7,9% | 13,4% | 565,9 | 161,7 | 404,3 | 10,2% | 302,3 |
+| 4 | 5.650,9 | 7,0% | 13,2% | 596,7 | 149,5 | 447,2 | 10,2% | 303,5 |
+| 5 | 5.994,7 | 6,1% | 13,0% | 623,4 | 154,2 | 469,3 | 10,2% | 289,0 |
+| 6 | 6.349,3 | 5,9% | 13,0% | 655,4 | 173,8 | 481,6 | 10,0% | 269,7 |
+| 7 | 6.714,2 | 5,7% | 13,0% | 687,8 | 178,3 | 509,5 | 9,8% | 259,7 |
+| 8 | 7.088,8 | 5,6% | 13,0% | 720,6 | 182,6 | 538,1 | 9,7% | 250,1 |
+| 9 | 7.472,2 | 5,4% | 13,0% | 753,8 | 186,4 | 567,3 | 9,5% | 240,8 |
+| 10 | 7.863,7 | 5,2% | 13,0% | 787,2 | 196,2 | 590,9 | 9,3% | 229,4 |
+| Terminal | 8.275,8 | 5,2% | 13,0% | 828,4 | 465,3 | 363,1 | 9,3% | — |
 
-**Optimista · On se vuelve una marca deportiva global** — probabilidad 20%; valor terminal 27.771 (VP 10.466); DCF US$53,76 por acción.
+**Disrupción · Deterioro de los fundamentales: pasa la moda y las ventas caen como en Under Armour** — probabilidad 10%; valor terminal 3.514,0 (VP 1.364,3); DCF US$12,53 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 4.938 | 21,7% | 14,0% | 636 | 401 | 235 | 10,8% | 212 |
-| 2 | 5.941 | 20,3% | 16,4% | 897 | 450 | 447 | 10,8% | 364 |
-| 3 | 7.065 | 18,9% | 17,6% | 1.145 | 495 | 650 | 10,8% | 478 |
-| 4 | 8.302 | 17,5% | 18,8% | 1.437 | 517 | 920 | 10,8% | 611 |
-| 5 | 9.593 | 15,6% | 20,0% | 1.766 | 516 | 1.250 | 10,8% | 749 |
-| 6 | 10.882 | 13,4% | 20,0% | 1.951 | 471 | 1.480 | 10,4% | 803 |
-| 7 | 12.115 | 11,3% | 20,0% | 2.114 | 426 | 1.687 | 10,1% | 832 |
-| 8 | 13.232 | 9,2% | 20,0% | 2.245 | 359 | 1.886 | 9,7% | 847 |
-| 9 | 14.172 | 7,1% | 20,0% | 2.336 | 270 | 2.066 | 9,4% | 849 |
-| 10 | 14.879 | 5,0% | 20,0% | 2.381 | 283 | 2.097 | 9,0% | 790 |
-| Terminal | 15.621 | 5,0% | 20,0% | 2.499 | 1.386 | 1.114 | 9,0% | — |
+| 1 | 4.235,1 | 4,3% | 14,0% | 474,3 | -80,4 | 554,8 | 10,2% | 503,5 |
+| 2 | 4.050,0 | −4,4% | 12,0% | 388,8 | -46,3 | 435,1 | 10,2% | 358,4 |
+| 3 | 3.943,6 | −2,6% | 11,0% | 347,0 | 16,7 | 330,3 | 10,2% | 247,0 |
+| 4 | 3.982,1 | 1,0% | 10,0% | 318,6 | 43,2 | 275,4 | 10,2% | 186,9 |
+| 5 | 4.081,3 | 2,5% | 9,0% | 293,9 | 44,2 | 249,6 | 10,2% | 153,8 |
+| 6 | 4.183,1 | 2,5% | 9,0% | 298,9 | 49,6 | 249,3 | 10,0% | 139,6 |
+| 7 | 4.287,3 | 2,5% | 9,0% | 304,1 | 50,9 | 253,2 | 9,8% | 129,0 |
+| 8 | 4.394,2 | 2,5% | 9,0% | 309,3 | 52,2 | 257,1 | 9,7% | 119,5 |
+| 9 | 4.503,7 | 2,5% | 9,0% | 314,5 | 53,5 | 261,1 | 9,5% | 110,8 |
+| 10 | 4.616,0 | 2,5% | 9,0% | 319,9 | 54,8 | 265,1 | 9,3% | 102,9 |
+| Terminal | 4.731,0 | 2,5% | 9,0% | 327,9 | 87,6 | 240,3 | 9,3% | — |
+
+**Optimista · On se vuelve una marca deportiva global de primera línea** — probabilidad 20%; valor terminal 24.526 (VP 9.522); DCF US$46,56 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 4.932 | 21,5% | 14,0% | 552 | 443 | 110 | 10,2% | 100 |
+| 2 | 5.950 | 20,6% | 16,4% | 781 | 480 | 301 | 10,2% | 248 |
+| 3 | 7.054 | 18,5% | 17,6% | 993 | 497 | 496 | 10,2% | 371 |
+| 4 | 8.197 | 16,2% | 18,8% | 1.233 | 492 | 741 | 10,2% | 503 |
+| 5 | 9.329 | 13,8% | 20,0% | 1.493 | 491 | 1.002 | 10,2% | 617 |
+| 6 | 10.458 | 12,1% | 20,0% | 1.661 | 517 | 1.144 | 10,0% | 640 |
+| 7 | 11.543 | 10,4% | 20,0% | 1.819 | 476 | 1.343 | 9,8% | 684 |
+| 8 | 12.544 | 8,7% | 20,0% | 1.962 | 415 | 1.546 | 9,7% | 719 |
+| 9 | 13.416 | 7,0% | 20,0% | 2.082 | 335 | 1.747 | 9,5% | 742 |
+| 10 | 14.119 | 5,2% | 20,0% | 2.174 | 352 | 1.822 | 9,3% | 707 |
+| Terminal | 14.859 | 5,2% | 20,0% | 2.288 | 1.285 | 1.003 | 9,3% | — |
 
 
 #### 5. Puente numérico de los cuatro DCF
@@ -231,113 +239,116 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 4.908,41 | 7.066,03 | 11.974,44 | 12.769,64 | 38,58 |
-| Conservadora | 3.408,91 | 3.411,17 | 6.820,08 | 7.615,28 | 23,01 |
-| Disrupción | 2.406,05 | 1.688,74 | 4.094,79 | 4.889,99 | 14,77 |
-| Optimista | 6.535,31 | 10.465,66 | 17.000,97 | 17.796,17 | 53,76 |
+| Base | 3.891,10 | 6.485,43 | 10.376,53 | 11.172,93 | 33,24 |
+| Conservadora | 2.748,18 | 3.447,19 | 6.195,36 | 6.991,76 | 20,80 |
+| Disrupción | 2.051,40 | 1.364,29 | 3.415,69 | 4.212,09 | 12,53 |
+| Optimista | 5.330,77 | 9.522,00 | 14.852,77 | 15.649,17 | 46,56 |
 
-Ejemplo Base: (4.908,41 + 7.066,03 + 1.491 − 696) / 331,0 = US$38,58 por acción. El terminal representa 59,0% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (3.891,10 + 6.485,43 + 1.493 − 696) / 336,1 = US$33,24 por acción. El terminal representa 62,5% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
-Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
+Las probabilidades 45% / 25% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-DCF esperado = 0,40 × 38,578985 + 0,30 × 23,006890 + 0,10 × 14,773386 + 0,20 × 53,764860 = US$34,563972 ≈ US$34,56. Los aportes son US$15,43 + US$6,90 + US$1,48 + US$10,75 por acción.
+DCF esperado = 0,45 × 33,242867 + 0,25 × 20,802630 + 0,10 × 12,532254 + 0,20 × 46,561042 = US$30,725382 ≈ US$30,73. Los aportes son US$14,96 + US$5,20 + US$1,25 + US$9,31 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 34,563972 × 0,65 = US$22,466582 ≈ US$22,47. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 30,725382 × 0,65 = US$19,971498 ≈ US$19,97. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$38,58, es el valor intrínseco principal. El DCF esperado de US$34,56 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$33,24, es el valor intrínseco principal. El DCF esperado de US$30,73 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
-#### Base: Marca premium que cumple sus metas 2029
+#### Base: Marca premium global que crece ~15% con margen de 16,5%
 
-**Qué plantea.** Es la historia de la empresa: crecimiento high-teens con márgenes en alza hasta 2029.
+**Qué tiene que ocurrir.** On crece ~17,5% en los próximos doce meses (guía de 2026 con mayoristas contenidos) y ~14% anual en los años 2-5: venta directa +14-24% y mayoristas +8-10%, con Asia y la ropa como motores. El margen operativo sube de 14% a 16,5% en cinco años por escala en gastos, un poco más que la meta de 2029 de la gerencia.
 
-**Traducción al modelo.** Mayoristas crece 14%, 13%, 12%, 11%, 10%; Directo al consumidor crece 22%, 20%, 18%, 16%, 14%. El crecimiento anual compuesto de cinco años es 14,9%; el margen operativo objetivo es 17,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 40%; DCF: US$38,58 por acción.
+**Traducción al modelo.** Mayoristas crece 8%, 10%, 10%, 9%, 8%; Directo al consumidor crece 30%, 24%, 20%, 17%, 14%. El crecimiento anual compuesto de cinco años es 14,7%; el margen operativo objetivo es 16,5%. El ROIC terminal es el costo de capital (9,33%). El crecimiento terminal es 5,24%, el de la hoja. Probabilidad: 45%; DCF: US$33,24 por acción.
 
-**Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (crecimiento a tipo constante: +21,6% (2T26); margen bruto: 65,4%; canal directo (% de ventas): 45,7%). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
+**Cómo contrastarla.** Crecimiento en moneda constante ≥ 15% en 2027 con margen bruto ≥ 64%.
 
 
 #### Conservadora: El ciclo de moda se enfría
 
-**Qué plantea.** Es el enfriamiento del ciclo de marca.
+**Qué tiene que ocurrir.** La moda del running premium se desacelera: los mayoristas compran menos, crecen las marcas nuevas y On necesita más marketing para crecer 8-10% anual; el margen operativo se queda en 13%.
 
-**Traducción al modelo.** Mayoristas crece 8%, 5%, 4%, 4%, 4%; Directo al consumidor crece 12%, 8%, 7%, 6%, 5%. El crecimiento anual compuesto de cinco años es 6,2%; el margen operativo objetivo es 14,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 30%; DCF: US$23,01 por acción.
+**Traducción al modelo.** Mayoristas crece 4%, 4%, 4%, 4%, 4%; Directo al consumidor crece 20%, 14%, 12%, 10%, 8%. El crecimiento anual compuesto de cinco años es 8,1%; el margen operativo objetivo es 13,0%. El ROIC terminal es el costo de capital (9,33%). El crecimiento terminal es 5,24%, el de la hoja. Probabilidad: 25%; DCF: US$20,80 por acción.
 
-**Cómo contrastarla.** La apoyarían: crecimiento a tipo constante: < 10%; margen bruto: < 60% o descuentos crecientes; canal directo (% de ventas): en baja; crecimiento en Asia y ropa: se desacelera fuerte.
-
-
-#### Disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen
-
-**Qué plantea.** Es la caída de una moda.
-
-**Traducción al modelo.** Mayoristas crece 0%, -5%, -2%, 2%, 3%; Directo al consumidor crece 5%, 0%, 0%, 3%, 3%. El crecimiento anual compuesto de cinco años es 0,8%; el margen operativo objetivo es 10,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 3,00%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$14,77 por acción.
-
-**Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: crecimiento a tipo constante: < 10%; margen bruto: < 60% o descuentos crecientes; canal directo (% de ventas): en baja; crecimiento en Asia y ropa: se desacelera fuerte.
+**Cómo contrastarla.** Mayoristas negativos dos trimestres seguidos o margen bruto ≤ 62%.
 
 
-#### Optimista: On se vuelve una marca deportiva global
+#### Disrupción · Deterioro de los fundamentales: pasa la moda y las ventas caen como en Under Armour
 
-**Qué plantea.** Es On como marca deportiva global.
+**Qué tiene que ocurrir.** On repite la historia de marcas que pasaron de moda (Under Armour, Crocs en 2008): las ventas a mayoristas caen, se acumula inventario, llegan las rebajas y el margen operativo baja a 9%.
 
-**Traducción al modelo.** Mayoristas crece 18%, 17%, 16%, 15%, 13%; Directo al consumidor crece 26%, 24%, 22%, 20%, 18%. El crecimiento anual compuesto de cinco años es 18,8%; el margen operativo objetivo es 20,0%. El ROIC terminal es el costo de capital (9,00%). El crecimiento terminal es 4,99%, el de la hoja. Probabilidad: 20%; DCF: US$53,76 por acción.
+**Traducción al modelo.** Mayoristas crece 0%, -8%, -5%, 0%, 2%; Directo al consumidor crece 10%, 0%, 0%, 2%, 3%. El crecimiento anual compuesto de cinco años es 0,1%; el margen operativo objetivo es 9,0%. El ROIC terminal es el costo de capital (9,33%). El crecimiento terminal es 2,49%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$12,53 por acción.
 
-**Cómo contrastarla.** La confirmarían: crecimiento a tipo constante: ≥ +17%; margen bruto: ≥ 62%; canal directo (% de ventas): estable o en alza; crecimiento en Asia y ropa: ≥ +30%.
+**Cómo contrastarla.** Crecimiento total ≤ 0% en 2027 o inventario creciendo más que las ventas dos trimestres.
 
-**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 4,99%; Disrupción: 3,00%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+
+#### Optimista: On se vuelve una marca deportiva global de primera línea
+
+**Qué tiene que ocurrir.** On supera su meta de 2029: ropa, fútbol (con atletas como Mbappé) y Asia crecen al doble, la venta directa pasa de la mitad de las ventas y el margen operativo llega a 20%.
+
+**Traducción al modelo.** Mayoristas crece 12%, 14%, 13%, 12%, 10%; Directo al consumidor crece 34%, 28%, 24%, 20%, 17%. El crecimiento anual compuesto de cinco años es 18,1%; el margen operativo objetivo es 20,0%. El ROIC terminal es el costo de capital (9,33%). El crecimiento terminal es 5,24%, el de la hoja. Probabilidad: 20%; DCF: US$46,56 por acción.
+
+**Cómo contrastarla.** Crecimiento en moneda constante ≥ 20% en 2027 con EBITDA ajustado ≥ 21%.
+
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 5,24%; Disrupción: 2,49%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
 
 ### Historias cuantificadas: DCF Base y DCF esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,50) | Valor/acción (beta 1,07) |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,30) | Valor/acción (beta 1,05) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **Base · Marca premium que cumple sus metas 2029** | 40% | Mayoristas: 14%, 13%, 12%, 11%, 10%; Directo al consumidor: 22%, 20%, 18%, 16%, 14% | 14,9% | 17,0% | 2,5 | 4,99% | US$38,58 | US$42,20 |
-| **Conservadora · El ciclo de moda se enfría** | 30% | Mayoristas: 8%, 5%, 4%, 4%, 4%; Directo al consumidor: 12%, 8%, 7%, 6%, 5% | 6,2% | 14,0% | 2,5 | 4,99% | US$23,01 | US$24,89 |
-| **Disrupción · Deterioro de los fundamentales: Pasa la moda: las ventas caen** | 10% | Mayoristas: 0%, -5%, -2%, 2%, 3%; Directo al consumidor: 5%, 0%, 0%, 3%, 3% | 0,8% | 10,0% | 2,5 | 3,00% | US$14,77 | US$15,78 |
-| **Optimista · On se vuelve una marca deportiva global** | 20% | Mayoristas: 18%, 17%, 16%, 15%, 13%; Directo al consumidor: 26%, 24%, 22%, 20%, 18% | 18,8% | 20,0% | 2,5 | 4,99% | US$53,76 | US$59,03 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$34,56** | **US$37,73** |
+| **Base · Marca premium global que crece ~15% con margen de 16,5%** | 45% | Mayoristas: 8%, 10%, 10%, 9%, 8%; Directo al consumidor: 30%, 24%, 20%, 17%, 14% | 14,7% | 16,5% | 2,3 | 5,24% | US$33,24 | US$34,99 |
+| **Conservadora · El ciclo de moda se enfría** | 25% | Mayoristas: 4%, 4%, 4%, 4%, 4%; Directo al consumidor: 20%, 14%, 12%, 10%, 8% | 8,1% | 13,0% | 2,3 | 5,24% | US$20,80 | US$21,78 |
+| **Disrupción · Deterioro de los fundamentales: pasa la moda y las ventas caen como en Under Armour** | 10% | Mayoristas: 0%, -8%, -5%, 0%, 2%; Directo al consumidor: 10%, 0%, 0%, 2%, 3% | 0,1% | 9,0% | 2,3 | 2,49% | US$12,53 | US$12,98 |
+| **Optimista · On se vuelve una marca deportiva global de primera línea** | 20% | Mayoristas: 12%, 14%, 13%, 12%, 10%; Directo al consumidor: 34%, 28%, 24%, 20%, 17% | 18,1% | 20,0% | 2,3 | 5,24% | US$46,56 | US$49,12 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$30,73** | **US$32,31** |
 
-Base (40%) es la historia de la empresa: crecimiento high-teens con márgenes en alza hasta 2029. Conservadora (30%) es el enfriamiento del ciclo de marca. Disrupción (10%) es la caída de una moda. Optimista (20%) es On como marca deportiva global. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
+La Base pesa 45%: es la guía de 2026 y algo menos que la meta de 2029, que la gerencia viene superando. La Conservadora pesa 25% porque las marcas de moda deportiva se desaceleran sin aviso y los mayoristas ya se contienen. La Disrupción pesa 10%: On no muestra señales de inventario o rebajas, pero la marca tiene apenas 16 años. La Optimista pesa 20% porque On viene superando sus metas y suma categorías. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF técnico anterior (beta 1,50; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF técnico anterior (beta 1,30; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
 Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
-| Crecimiento \ Margen | 13,0% | 15,0% | 17,0% | 19,0% | 21,0% |
+| Crecimiento \ Margen | 12,5% | 14,5% | 16,5% | 18,5% | 20,5% |
 |---|---:|---:|---:|---:|---:|
-| 10,8% | 25,72 | 29,39 | 33,07 | 36,74 | 40,41 |
-| 12,8% | 27,80 | 31,91 | 36,03 | 40,15 | 44,26 |
-| 14,8% | 30,08 | 34,69 | 39,30 | 43,91 | 48,52 |
-| 16,8% | 32,59 | 37,74 | 42,89 | 48,05 | 53,20 |
-| 18,8% | 35,34 | 41,09 | 46,85 | 52,61 | 58,36 |
+| 10,7% | 22,06 | 25,47 | 28,88 | 32,30 | 35,71 |
+| 12,7% | 23,69 | 27,52 | 31,35 | 35,18 | 39,01 |
+| 14,7% | 25,47 | 29,77 | 34,06 | 38,35 | 42,64 |
+| 16,7% | 27,43 | 32,24 | 37,04 | 41,84 | 46,64 |
+| 18,7% | 29,58 | 34,95 | 40,31 | 45,68 | 51,04 |
 
 
 ### Pre-mortem
 
-1. Hoka, Nike (que recupera running), Asics y Adidas saturan el segmento premium y On tiene que hacer descuentos.
-2. La marca se vuelve «demasiado común» y pierde a los corredores que la hicieron creíble.
-3. Aranceles más altos en Vietnam e Indonesia comprimen el margen.
-4. El franco suizo sigue fuerte y el crecimiento en francos es la mitad del crecimiento a tipo constante.
-5. La expansión a ropa y Asia consume capital sin rendir.
+1. El running premium se satura: Hoka, Nike y las marcas chinas recuperan participación y los mayoristas reducen pedidos.
+2. La expansión a ropa, fútbol y golf diluye la marca y el margen sin crear volumen.
+3. Un cambio de gusto del consumidor joven (la Cloudtilt pierde atractivo) deja inventario y obliga a rebajar.
+4. La estructura con co-CEO fundadores y un CFO nuevo pierde disciplina de costos.
+5. Los aranceles y un franco suizo fuerte comprimen el margen bruto por debajo de 62%.
 
-**Evidencia en contra de la historia más probable:** el crecimiento en francos (13,5%) ya es mucho menor que a tipo constante y la acción cayó a la mitad; si el crecimiento a tipo constante baja de 15% en 2027, Conservadora gana peso.
+**Evidencia en contra de la historia más probable:** los mayoristas crecieron solo 4,8% en francos en el 2T26 y la gerencia los está conteniendo «para proteger el precio lleno» en un mercado con muchas rebajas; la acción cayó de US$50,63 (ene-2026) a US$30,20 ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)).
 
 
 ### Indicadores y actualización de probabilidades
 
 | Indicador | Hoy | Refuerza historias favorables si… | Refuerza historias desfavorables si… |
 |---|---|---|---|
-| Crecimiento a tipo constante | +21,6% (2T26) | ≥ +17% | < 10% |
-| Margen bruto | 65,4% | ≥ 62% | < 60% o descuentos crecientes |
-| Canal directo (% de ventas) | 45,7% | Estable o en alza | En baja |
-| Crecimiento en Asia y ropa | Alto | ≥ +30% | Se desacelera fuerte |
-| Inventario frente a ventas | Sano | Crece menos que ventas | Crece más que ventas |
+| Crecimiento en moneda constante | +21,6% (2T26) | ≥ 18% | ≤ 10% |
+| Mayoristas (moneda constante) | +12,7% (2T26) | ≥ +10% | ≤ 0% |
+| Directo al consumidor (participación) | 45,7% de las ventas (2T26) | ≥ 48% | Cae |
+| Margen bruto | 65,4% (2T26) | ≥ 65% | ≤ 62% |
+| EBITDA ajustado | 19,8% (2T26) | ≥ 21% | ≤ 17% |
+| Inventario / ventas | ~15% (jun-26) | Estable | Crece más que las ventas |
+| Asia-Pacífico | +54,7% (2T26) | ≥ +30% | ≤ +10% |
+| Recompras (programa de US$1.000M) | Aprobado en sep-2026 | Ejecución gradual | Suspendido |
 
 Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónde apunten los indicadores; no cambies el valor de cada historia salvo que cambie un supuesto (crecimiento, margen, reinversión o riesgo).
 
@@ -348,38 +359,41 @@ Precio de referencia de la valoración guardada: **US$29,61**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
-|  | Margen 14% | Margen 17% | Margen 20% |
+|  | Margen 13% | Margen 16% | Margen 20% |
 |---|---:|---:|---:|
-| Beta 1,50 | 12,6% (24% de las empresas) | 8,2% (47% de las empresas) | 4,8% (68% de las empresas) |
-| Beta 1,07 | 10,5% (35% de las empresas) | 6,2% (59% de las empresas) | 2,9% (80% de las empresas) |
+| Beta 1,30 | 17,6% (12% de las empresas) | 11,3% (30% de las empresas) | 6,9% (54% de las empresas) |
+| Beta 1,05 | 16,2% (15% de las empresas) | 10,1% (37% de las empresas) | 5,8% (62% de las empresas) |
 
-Frente al DCF Base (US$38,58), el valor intrínseco principal, el precio está por debajo en 23%.
+Frente al DCF Base (US$33,24), el valor intrínseco principal, el precio está por debajo en 11%.
 
-Frente al DCF esperado de las historias (US$34,56 con la beta de la hoja; US$37,73 con la propuesta), el precio está por debajo en 14% y por debajo en 22%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$30,73 con la beta de la hoja; US$32,31 con la propuesta), el precio está por debajo en 4% y por debajo en 8%, respectivamente. El precio de US$30,20 queda ~9% por debajo de la Base y casi igual al esperado: el mercado paga por un crecimiento alto, pero no por la meta completa de la gerencia; con el margen de la Base, el DCF inverso pide ~12% anual en los años 1-5. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la contención de los mayoristas y el enfriamiento del sector, o descontando un margen menor por la inversión en nuevas categorías.
 
 
 ### Registro de decisión
 
 | Campo | Propuesta del análisis | Tu estimación |
 |---|---|---|
-| Fecha | 2026-09-30 |  |
-| Historia en una frase | Marca premium de calzado deportivo en expansión, con el riesgo de todo ciclo de moda |  |
-| Probabilidades | Base 40% / Conservadora 30% / Disrupción 10% / Optimista 20% |  |
-| DCF Base hoy (valor intrínseco principal) | US$38,58 |  |
-| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$34,56 / US$37,73 |  |
-| Precio con MOS sobre el DCF esperado | US$22,47 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$14,77 a US$59,03 |  |
-| Confianza | Media: la ejecución es excelente; la duración de la marca es incierta |  |
-| Qué cambiaría la opinión | Crecimiento a tipo constante y margen bruto sin descuentos |  |
-| Revisión | Resultados del 3T26 (nov-2026) |  |
+| Fecha | 2026-10-01 |  |
+| Historia en una frase | Marca premium de running que crece ~15% con margen bruto de 65%; sin ventaja defendible probada a largo plazo |  |
+| Probabilidades | Base 45% / Conservadora 25% / Disrupción 10% / Optimista 20% |  |
+| DCF Base hoy (valor intrínseco principal) | US$33,24 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$30,73 / US$32,31 |  |
+| Precio con MOS sobre el DCF esperado | US$19,97 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$12,53 a US$49,12 |  |
+| Confianza | Media: el crecimiento y el margen bruto están bien documentados; la duración de la moda no |  |
+| Qué cambiaría la opinión | El crecimiento de los mayoristas, el margen bruto y la ejecución de las nuevas categorías |  |
+| Revisión | Resultados del 3T26 (noviembre de 2026) |  |
 
 La decisión (comprar, mantener o vender) la registras tú con el selector «Mi decisión» de la app; este análisis no la toma por ti.
 
 
 ### Fuentes de esta sección
 
-- [On, comunicado de resultados del 2T 2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)
-- [On, Investor Day (22-sep-2026)](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)
-- [On, informe anual 2025](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm)
-- [Mauboussin & Callahan, The Base Rate Book (2016)](https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf)
-- [Damodaran, Betas by Sector (US), enero 2026](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html)
+- [On, comunicado del 2T26 (11-ago-2026)](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)
+- [On, estados intermedios del 1S26 (6-K, 11-ago-2026)](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/onholdingag-20260630_d2.htm)
+- [On, 20-F 2025 (3-mar-2026)](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm)
+- [On, Investor Day 2026 (22-sep-2026)](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)
+- [On, cofundadores como co-CEO (25-mar-2026)](https://www.sec.gov/Archives/edgar/data/1858985/000095010326004606/dp244091_ex9901.htm)
+- [Damodaran, ERP implícita de septiembre de 2026](https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx)
+- [Damodaran, Betas by Sector (global), enero de 2026](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html)
+- [Mauboussin y Callahan, The Base Rate Book (2016)](https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf)
