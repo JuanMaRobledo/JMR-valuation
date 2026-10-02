@@ -1,0 +1,1110 @@
+{
+ "Input sheet!B1": {
+  "before": "=A1",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!L29",
+  "after": 0.2,
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!E22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Income Statement!G15": {
+  "before": -3.9,
+  "after": 3.9,
+  "reason": "Gasto financiero bruto en positivo (el pipeline lo restaba dos veces en la fila 16)"
+ },
+ "Income Statement!H15": {
+  "before": -6.7,
+  "after": 6.7,
+  "reason": "Gasto financiero bruto en positivo (el pipeline lo restaba dos veces en la fila 16)"
+ },
+ "Income Statement!I15": {
+  "before": -12.6,
+  "after": 12.6,
+  "reason": "Gasto financiero bruto en positivo (el pipeline lo restaba dos veces en la fila 16)"
+ },
+ "Income Statement!J15": {
+  "before": -26.3,
+  "after": 26.3,
+  "reason": "Gasto financiero bruto en positivo (el pipeline lo restaba dos veces en la fila 16)"
+ },
+ "Income Statement!K15": {
+  "before": -35.7,
+  "after": 35.7,
+  "reason": "Gasto financiero bruto en positivo (el pipeline lo restaba dos veces en la fila 16)"
+ },
+ "Income Statement!L15": {
+  "before": -40.7,
+  "after": 40.7,
+  "reason": "Gasto financiero bruto en positivo (el pipeline lo restaba dos veces en la fila 16)"
+ },
+ "Balance Sheet!G20": {
+  "before": 0,
+  "after": 0,
+  "reason": "Sin deuda bancaria: el pipeline duplicaba los arrendamientos corrientes en la fila 20"
+ },
+ "Balance Sheet!H20": {
+  "before": 23.4,
+  "after": 0,
+  "reason": "Sin deuda bancaria: el pipeline duplicaba los arrendamientos corrientes en la fila 20"
+ },
+ "Balance Sheet!I20": {
+  "before": 45.9,
+  "after": 0,
+  "reason": "Sin deuda bancaria: el pipeline duplicaba los arrendamientos corrientes en la fila 20"
+ },
+ "Balance Sheet!J20": {
+  "before": 65.4,
+  "after": 0,
+  "reason": "Sin deuda bancaria: el pipeline duplicaba los arrendamientos corrientes en la fila 20"
+ },
+ "Balance Sheet!K20": {
+  "before": 102.6,
+  "after": 0,
+  "reason": "Sin deuda bancaria: el pipeline duplicaba los arrendamientos corrientes en la fila 20"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46296,
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 30.2,
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!B14": {
+  "before": "='Income Statement'!L16",
+  "after": "='Income Statement'!L15",
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!C14": {
+  "before": "=IF('Income Statement'!L16='Income Statement'!K16;'Income Statement'!J16;'Income Statement'!K16)",
+  "after": "='Income Statement'!K15",
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!B25": {
+  "before": 0.25,
+  "after": 0.23,
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0524,
+  "reason": "Datos base ONON desde cero (20-F 2025, 6-K del 1S26)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Damodaran, implied ERP September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.3,
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Will Input",
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B27": {
+  "before": 0.06,
+  "after": 0.0409,
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 5,
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": 0.06,
+  "reason": "Costo de capital ONON: beta 1,30, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Valuation output!B33": {
+  "before": "=B31-B32",
+  "after": "=B31-B32-N('Input sheet'!$B$76)",
+  "reason": "Fórmula estándar con preferentes (B76 vacío en ONON)"
+ },
+ "Valuation output!B84": {
+  "before": "=B82-B83",
+  "after": "=B82-B83-N('Input sheet'!$B$76)",
+  "reason": "Fórmula estándar con preferentes (B76 vacío en ONON)"
+ },
+ "Valuation output!B135": {
+  "before": "=B133-B134",
+  "after": "=B133-B134-N('Input sheet'!$B$76)",
+  "reason": "Fórmula estándar con preferentes (B76 vacío en ONON)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.175,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.14,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.14,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.165,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 2.3,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 2.1,
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Input sheet!B49": {
+  "before": "No",
+  "after": "No",
+  "reason": "Supuestos Base ONON desde cero = historia Base (ver reference/damodaran/ONONN.json)"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Crecimiento",
+  "reason": "Tipo de empresa ONON"
+ },
+ "Descuento de múltiplos!A38": {
+  "before": "DCF · valor intrínseco (valor presente)",
+  "after": "DCF activo hoy · escenarios de las historias",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!C38": {
+  "before": "='Valuation output'!B86",
+  "after": "='Escenarios e historias'!H6",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!D38": {
+  "before": "='Valuation output'!B35",
+  "after": "='Escenarios e historias'!H5",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!E38": {
+  "before": "='Valuation output'!B137",
+  "after": "='Escenarios e historias'!H8",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!A43": {
+  "before": "Compra con MOS sobre el ponderado (secundario)",
+  "after": "Precio con MOS sobre el valor esperado",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!C43": {
+  "before": "=IFERROR(C40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!D43": {
+  "before": "=IFERROR(D40*(1-$B$43);\"\")",
+  "after": "='Escenarios e historias'!H14",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!E43": {
+  "before": "=IFERROR(E40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "On Holding AG",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "David Allemann y Caspar Coppetti (cofundadores, co-CEO desde el 1-may-2026). CFO: Frank Sluis. Presidente y COO: Scott Maguire.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Calzado y ropa deportiva premium (Damodaran: Shoe)",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.on.com  |  IR: https://investors.on-running.com",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Marca suiza de calzado de running premium (CloudTec, LightSpray), con ropa y accesorios en crecimiento. Ventas LTM a jun-2026 de CHF 3.220M (US$4.060M): calzado ~92%, ropa ~6%, accesorios ~2%. Mayoristas ~57% y venta directa ~43%. Presente en más de 90 países; ~4.000 empleados. Reporta en francos suizos bajo NIIF.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Mayoristas",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "CHF 1.834M LTM. +12,7% en moneda constante en el 2T26; la gerencia contiene los envíos para proteger el precio lleno. El mayor cliente es 11,6% de las ventas.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "Directo al consumidor",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "CHF 1.386M LTM. +34,3% en moneda constante en el 2T26; 45,7% de las ventas del trimestre, con tiendas propias muy rentables.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Regiones y categorías",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Américas ~54% de las ventas (+13% en moneda constante), EMEA ~26% (+20,5%), Asia-Pacífico ~20% (+54,7%). Ropa +56%.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "«Premium Playbook»: innovación, validación con atletas, experiencias propias y precio lleno. Metas 2026-2029: crecimiento de un dígito alto en los «teens», margen bruto ≥ 65%, EBITDA ajustado ≥ 22% en 2029; fútbol y golf como nuevas categorías.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Crecimiento con precio lleno",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Ventas +21,6% en moneda constante con margen bruto de 65,4% en el 2T26: crece sin rebajas.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Venta directa y Asia",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "La venta directa crece al triple que los mayoristas y Asia-Pacífico crece >50%: más margen y más mercado por delante.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Balance y recompras",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Caja de CHF 1.206M (US$1.493M), sin deuda bancaria; recompra de hasta US$1.000M aprobada hasta 2029.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Moda",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Marca de 16 años: el running premium puede enfriarse como otras modas deportivas; los mayoristas ya se contienen.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Moneda y aranceles",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Reporta en francos con ventas en dólares y euros; absorbe aranceles de EE.UU. sin devoluciones en la guía.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Gobierno",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Cofundadores con acciones Clase B de voto múltiple; co-CEO desde mayo de 2026 y CFO nuevo en 2026.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 20-F 2025 de On Holding AG (3-mar-2026) y estados intermedios del 1S26 (6-K del 11-ago-2026), SEC EDGAR; comunicado del 2T26 (11-ago-2026); Investor Day 2026 (22-sep-2026); comunicado de los cofundadores como co-CEO (25-mar-2026); tipos de cambio CHF/USD de yfinance; Damodaran (betas y márgenes por industria, ene-2026; ERP sep-2026); UST 10 años y precio del 1-oct-2026.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 1 de julio de 2026 – 1 de octubre de 2026",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T26: ventas +13,5% (+21,6% en moneda constante), margen bruto 65,4%, EBITDA ajustado 19,8%",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Venta directa +34,3% y Asia-Pacífico +54,7% en moneda constante; utilidad neta CHF 105M.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "2026: crecimiento ~20% en moneda constante (CHF 3.470-3.560M), margen bruto ≥ 65%, EBITDA ajustado 19,5-20%",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Sin devoluciones de aranceles; contención deliberada de los envíos a mayoristas en el 2S26.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Investor Day",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Metas 2029: ventas ≥ CHF 5.600M, margen bruto ≥ 65%, EBITDA ajustado ≥ 22%; recompra de US$1.000M",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Fútbol y golf como nuevas categorías; Laura Miele, directora independiente líder (22-sep-2026).",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Gestión",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Los cofundadores Allemann y Coppetti, co-CEO desde el 1-may-2026; Martin Hoffmann dejó el cargo",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Frank Sluis, CFO nuevo (su primer trimestre fue el 2T26).",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Mercado",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "La acción cayó de US$50,63 (ene-2026) a ~US$30",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Mínimo de 52 semanas de US$26,76 el 15-sep-2026.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "Moneda",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "Los estados NIIF en francos se convierten a dólares al tipo de cambio de cada período (flujos al promedio, saldos al cierre). LTM: CHF 3.220M de ventas y CHF 444M de resultado operativo a 1,2608 US$/CHF.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Arrendamientos y acciones",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "NIIF 16: los arrendamientos (US$696M) son la única deuda y el resultado operativo ya excluye su interés. Acciones económicas = Clase A + Clase B / 10 (336,1M con premios dilutivos).",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Historias",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Cuatro historias activas: Base (45%), Conservadora (25%), Disrupción (10%) y Optimista (20%). Los casos Conservador/Base/Optimista de la plantilla quedan como referencia técnica.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Ventaja competitiva",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "Sin ventaja defendible probada: la marca tiene 16 años. ROIC terminal = costo de capital.",
+  "reason": "Contenido cualitativo ONON desde cero"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 3963,
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B12",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Valuation output'!B42",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B14",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!G3)^(1/4)-1",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!G3)^(1/4)-1",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": 0.2,
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadísticas ONON (fórmulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "On: una marca premium de running que se vuelve marca deportiva global, sin ventaja todavía probada",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "On vende ~US$4.060M al año, crece ~20% en moneda constante y gana un margen bruto de 65% con precio lleno. La historia Base: ~17,5% el primer año y ~14% anual después, con la venta directa y Asia como motores, y un margen operativo que sube de 14% a 16,5%. La marca tiene 16 años: sin un ciclo completo probado, el retorno después del año 10 vuelve al costo de capital.",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 +17,5% (guía 2026, mayoristas contenidos); años 2-5 ~14% (venta directa 14-24%, mayoristas 8-10%).",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 14% (margen NIIF del 1S26); objetivo 16,5% en 5 años (meta de EBITDA ajustado ≥ 22% en 2029).",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "20% (normalizada; LTM 7,9% por impuestos diferidos), que converge a 23% marginal.",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "2,3 en los años 1-5 y 2,1 (Shoe) en los años 6-10; On rota hoy ~2,6.",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC ~28,5% LTM; terminal = costo de capital (sin ventaja defendible probada).",
+  "reason": "Historia ONON"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Ke 10,56% (rf 5,24% + beta 1,30 × ERP 4,09%); arrendamientos al 6%; WACC ~10,2%.",
+  "reason": "Historia ONON"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.175,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Guía 2026 (~20% en moneda constante) con mayoristas contenidos; venta directa +30%.",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.14,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen operativo NIIF del 1S26 (14,1%).",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.14,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Historia Base: venta directa 14-24%, mayoristas 8-10%.",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.165,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "Meta de EBITDA ajustado ≥ 22% en 2029 ≈ 15,5% operativo, con algo más de escala.",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Escala en gastos en cinco años.",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 2.3,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Rotación propia ~2,6; más tiendas y nuevas categorías.",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 2.1,
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Promedio global de Shoe.",
+  "reason": "Recomendaciones ONON"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Chequeo de independencia (2026-10-02): múltiplos consolidados hoy (Base) 47,29 frente a DCF hoy 34,02 (+39%). Lectura del 2-oct-2026: se completa después de aplicar los múltiplos.",
+  "after": "Evaluación ONON (2-oct-2026): los múltiplos Base salen de tres anclas (historia desde Dec '23, peers con +25% por crecimiento y el justificado, λ = 0,5). Valen ~40% más que el DCF Base: el justificado supone que el ROE de FY+3 dura para siempre y la historia de On refleja la etapa de hipercrecimiento, mientras el DCF lleva el ROIC al costo de capital después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo.",
+  "reason": "Evaluación de múltiplos ONON"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ],
+   [],
+   [],
+   [
+    "ORIGEN DE LOS MÚLTIPLOS (prompt de valoración v3, 2026-10-02)"
+   ],
+   [
+    "Método",
+    "Aplica",
+    "A · historia",
+    "B · peers (ajustada)",
+    "C · justificado (Cons/Base/Opt)",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "EV/EBITDA",
+    "Sí",
+    "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 27,3x",
+    "mediana 9,4x (n=6: DECK 7,3x, NKE 11,0x, LULU 4,8x, BIRK 11,0x, ADDYY 12,4x, CROX 7,8x) × 1,25 = 11,7x",
+    "26,1x / 32,1x / —",
+    20.56,
+    25.79,
+    31.45
+   ],
+   [
+    "EV/FCFF",
+    "Sí",
+    "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 18,2x (EV/FCF × 0,47 = FCF después de intereses ÷ FCFF)",
+    "mediana 13,5x (n=6: DECK 8,7x, NKE 24,8x, LULU 8,4x, BIRK 19,5x, ADDYY 17,6x, CROX 9,4x) × 1,25 = 16,9x",
+    "42,9x / 52,0x / —",
+    26.49,
+    34.76,
+    44.02
+   ],
+   [
+    "P/E",
+    "Sí",
+    "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 63,2x",
+    "mediana 13,5x (n=6: DECK 11,2x, NKE 15,8x, LULU 7,8x, BIRK 16,1x, ADDYY 18,2x, CROX 10,6x) × 1,25 = 16,9x",
+    "19,8x / 24,7x / —",
+    26.04,
+    32.37,
+    37.69
+   ],
+   [
+    "P/FCFE",
+    "Sí",
+    "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 39,8x",
+    "mediana 12,5x (n=6: DECK 9,6x, NKE 22,6x, LULU 7,7x, BIRK 18,8x, ADDYY 15,4x, CROX 8,1x) × 1,25 = 15,6x",
+    "33,1x / 38,3x / —",
+    25.89,
+    32.99,
+    42.29
+   ],
+   [
+    "P/OCF",
+    "Sí",
+    "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 32,9x",
+    "mediana 10,6x (n=6: DECK 9,0x, NKE 17,2x, LULU 5,3x, BIRK 13,7x, ADDYY 12,2x, CROX 7,5x) × 1,25 = 13,3x",
+    "30,7x / 36,4x / —",
+    24.08,
+    29.73,
+    34.57
+   ],
+   [
+    "Criterios: A: 2021 (pérdida por los pagos en acciones de la salida a bolsa) y 2022 (flujo negativo por inventario) no son comparables. Desde 2023 On es una marca rentable que crece 20-30% al año: la etapa actual es Dec '23, Dec '24, Dec '25 y el LTM, con múltiplos de 24-48× EBITDA que bajan con el precio. B: calzado y ropa deportiva con datos de yfinance al 2-oct-2026: Deckers, Nike, Lululemon, Birkenstock, Adidas y Crocs. Ajuste +25%: crecimiento a FY+3 mucho mayor que la mediana de los peers (Base ~14% frente a −4% a +13%), +25%; margen bruto mayor (65% frente a 45-60%), +5%; riesgo propio mayor (marca joven, beta 1,30), −5%. λ = 0,5: los peers son marcas maduras o en caída y la historia de On refleja múltiplos de la etapa de hipercrecimiento; el justificado (C) usa los supuestos de cada escenario y equilibra ambos."
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}
