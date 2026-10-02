@@ -8,8 +8,7 @@ analysis_date: "2026-10-02"
 information_cutoff: "2026-10-01"
 currency: "USD"
 language: "es"
-generator: "Claude Code (informe original); actualización conciliada con hoja corregida"
-revision_date: "2026-10-02"
+generator: "Claude Code (Modelo JMR, análisis desde cero en hoja nueva)"
 ---
 
 # NIKE, Inc. (NKE)
@@ -34,8 +33,6 @@ La tensión central está entre una marca de escala única que muestra señales 
 - **Señal que invalidaría la tesis central.** Que Norteamérica vuelva a caer dos trimestres seguidos o que el margen bruto baje de 41%: la recuperación de la región más rentable es el pilar de la tesis.
 
 La hoja del Modelo JMR construida para este informe sostiene sus escenarios en tres supuestos cualitativos: que la caída de FY2027 sea una limpieza de mercado y no una pérdida de demanda, que los ahorros de Pace lleguen en buena parte al margen y que la marca conserve parte de su ventaja. El más frágil es el segundo, porque la gerencia ya dijo que parte de los ahorros se reinvertirá; el mejor documentado es el primero, porque Norteamérica, el mercado donde la limpieza empezó antes, ya crece.
-
-**Valoración actualizada:** DCF Base US$32,56; esperado US$29,56; rango de historias US$13,12–43,56. Umbral principal con MOS 35%: US$21,16. El cierre de referencia US$35,15 no ofrece ese margen. Los múltiplos históricos permanecen como contexto y no se añade una nueva valoración basada en ellos.
 
 ## 2. Modelo de negocio
 
@@ -112,7 +109,7 @@ La fuerza con mayor probabilidad de deteriorar la economía del negocio es la ri
 
 ## 5. Calidad del negocio
 
-Este apartado distingue calidad histórica (lo que el negocio mostró) de sostenibilidad futura (lo que puede repetirse). La historia disponible es de diez ejercicios (FY2017-FY2026) más los últimos doce meses a agosto de 2026, tomada de los estados de la SEC cargados en la hoja; los saldos de agosto de 2026 y los resultados del primer trimestre de FY2027 se tomaron del comunicado del 1 de octubre de 2026. La columna de flujo de caja utiliza FY2026 como proxy y está rotulada «FY2026 (proxy; no LTM)»: el comunicado no incluye un estado de flujos trimestral con el que construir un LTM real.
+Este apartado distingue calidad histórica (lo que el negocio mostró) de sostenibilidad futura (lo que puede repetirse). La historia disponible es de diez ejercicios (FY2017-FY2026) más los últimos doce meses a agosto de 2026, tomada de los estados de la SEC cargados en la hoja; los saldos de agosto de 2026 y los resultados del primer trimestre de FY2027 se tomaron del comunicado del 1 de octubre de 2026. El flujo de caja LTM de la hoja repite el de FY2026 porque el comunicado no incluye el estado de flujos.
 
 ### Análisis financiero histórico
 
@@ -171,7 +168,7 @@ Los promedios de 5 y 10 años describen a la Nike que crecía con márgenes de d
 
 ### Auditoría de cifras y supuestos del Modelo JMR
 
-La hoja se construyó desde la plantilla maestra con datos de la SEC. La revisión posterior del 2-oct-2026 corrigió clasificaciones del estado de flujos FY2024–FY2026, concilió los escenarios auxiliares con las historias activas, eliminó recompras proyectadas sin financiación explícita, ajustó el descuento temporal de dividendos y unificó impuestos y deuda en las valoraciones. El flujo operativo FY2026 es US$2.868 millones, capex US$684 millones, flujo libre US$2.184 millones y variación de caja US$99 millones. Se verificaron 45 relaciones económicas y contables en la hoja corregida y no se detectaron errores de fórmula en las 18 pestañas revisadas. Esta comprobación no certifica todos los datos históricos ni valida por sí sola los supuestos futuros.
+La hoja de este informe se construyó desde la plantilla maestra auditada y se cargó con datos de la SEC; el alcance de la auditoría es completo para las pestañas que usa la valoración. Los hallazgos prioritarios fueron: la columna LTM repetía FY2026; el pipeline cargaba el ingreso por intereses como gasto y dejaba el gasto en cero; la deuda incluía los arrendamientos contables mientras el conversor de arrendamientos estaba apagado; la plantilla pedía capitalizar I+D que Nike no informa; y el EBIT incluía la devolución de una vez de aranceles. Todos se corrigieron con respaldo de la celda anterior (`reference/backups/nke_desde_cero_2026-10-02.json` del repositorio JMR-valuation).
 
 | Dato o supuesto | Valor del modelo y unidad | Tipo de origen y actividad | Fuente, fecha, hoja y celda | Resultado del contraste | Prioridad e incidencia cualitativa |
 |---|---|---|---|---|---|
@@ -180,25 +177,24 @@ La hoja se construyó desde la plantilla maestra con datos de la SEC. La revisi�
 | Balance LTM | Saldos al 31-ago-2026 | Dato reportado; activo | Balance Sheet columna L; comunicado del 1T FY27 | Corregido (el pipeline repetía may-2026) | Alta |
 | Gasto por intereses | US$228 millones | Cálculo derivado; activo | Income Statement fila 15; Input sheet B14 | Corregido: ingreso por intereses − neto (10-K); el pipeline ponía US$278 millones de ingreso como gasto | Media |
 | Acciones | 1.496,0 millones | Dato reportado + RSU | Input sheet B22; portada del 10-K (1.483,5 al 8-jul-2026) + 12,5 RSU | Conciliado; la hoja usaba el promedio diluido | Media |
-| Opciones | 76,8 millones a US$96,44; VP US$177 millones | Dato reportado + valoración; activo | Input sheet B38-B42; Option value; 10-K FY2026 | Se deduce el valor de las opciones, aunque estén fuera del dinero | Media |
-| Deuda | US$7.893 millones contable; US$6.800 millones de valor razonable usado en DCF | Balance reportado y proxy de mercado; activos | Input sheet B16; Cost of capital worksheet C54; 1T FY27 y 10-K FY2026 | Se distingue deuda contable del proxy de mercado al 31-may-2026; arrendamientos se añaden por separado | Alta |
+| Opciones | 76,8 millones a US$96,44, 5,1 años, volatilidad 33,1% | Dato reportado; activo | Input sheet B38-B42; 10-K FY2026 | Conciliado; valor casi nulo con la acción a US$35 | Baja |
+| Deuda | US$7.893 millones contable; US$6.216 millones de valor de mercado | Dato reportado; activo | Input sheet B16; comunicado del 1T FY27; valor de mercado con la fórmula de la plantilla (Cost of capital C54: bono con el gasto por intereses y 9 años de vencimiento) | Corregido: la hoja sumaba US$2.613 millones de arrendamientos contables | Alta |
 | Arrendamientos | VP US$2.869 millones; ajuste al EBIT +US$283 millones | Cálculo derivado; activo | Operating lease converter; 10-K FY2026 (costo US$693 millones; compromisos 564/553/512/456/361/1.146) | Conciliado con el pasivo contable (US$3.091 millones) | Media |
 | Crecimiento año 1 (Base) | −6,6% | Entrada manual con fuente; activo | Input sheet B27; guía de FY2027 | Elección razonable documentada | Alta |
 | Crecimiento años 2-5 (Base) | ~3,4% anual | Entrada manual; activo | Input sheet B29; historia Base por región | Elección razonable documentada | Alta |
 | Margen año 1 y objetivo | 6,0% y 11,6% en 6 años | Entrada manual con fuente; activo | Input sheet B28/B30/B31; guía FY2027 y Pace | Elección razonable documentada | Alta |
 | Ventas/capital | 2,1 (años 1-10) | Entrada manual con referencia sectorial; activo | Input sheet B32/B33; Damodaran Shoe global (2,12) | Elección razonable; Nike rota ~2,6 | Media |
-| Tasa efectiva proyectada | 25% desde el año 1 | Entrada manual con fuente | Input sheet B24; LTM 20,7%, guía FY2027 ~25% | Elección razonable | Media |
+| Tasa efectiva proyectada | 25% desde el año 1 | Entrada manual con fuente | Input sheet B24; LTM 20,7% (dato histórico), guía FY2027 ~25% | Elección razonable | Media |
 | Tasa libre de riesgo | 5,24% | Referencia de mercado | Input sheet B35; UST 10 años al 1-oct-2026 | Conciliado | Media |
 | ERP | 4,09% | Referencia de mercado | Cost of capital worksheet B27; Damodaran sep-2026 | Conciliado | Media |
-| Beta | 1,017 (~1,02) | Bottom-up de la industria; activo | Cost of capital worksheet B22-B24; Shoe global 0,89 desapalancada | Conciliado con la regresión (0,98 a 2 años, 1,04 a 5 años) | Media |
+| Beta | 1,01 | Bottom-up de la industria; activo | Cost of capital worksheet B22-B24; Shoe global 0,89 desapalancada | Conciliado con la regresión (0,98 a 2 años, 1,04 a 5 años) | Media |
 | Costo de la deuda | 6,02% | Rating real | Cost of capital worksheet B34-B38; A2/A | Conciliado | Baja |
-| WACC | 8,64% (terminal 9,33%) | Cálculo derivado | Cost of capital worksheet B14; Valuation output M14 | Conciliado | Alta |
-| Costos futuros Pace | US$1.000 millones antes de impuestos; VP neto US$602 millones | Guía y distribución temporal del analista | Input sheet B74:B76 | Deducción única del patrimonio; revisar calendario y desembolsos | Alta |
+| WACC | 8,65% (terminal 9,33%) | Cálculo derivado | Cost of capital worksheet B14; Valuation output M14 | Conciliado | Alta |
 | ROIC después del año 10 | 12,3% | Criterio de ventaja documentado | Input sheet B49/B50 | Ventaja que se desvanece (sección 6) | Alta |
 | Probabilidad de fracaso | 0% | Valor predeterminado | Input sheet B52 = No | Razonable con calificación A | Baja |
 | Múltiplos objetivo (Base) | EV/EBITDA 14,2×, EV/FCFF 22,9×, P/E 17,6×, P/FCFE 21,1×, P/OCF 18,7× | Entrada manual con protocolo de tres anclas | EVEBITDA/EVFCFF/PE/PFCFE/POCF J19 | Elección razonable documentada | Media (secundarios) |
 | Ponderación de métodos | Categoría «Madura» (DCF 40%) | Valor de tabla | Resumen de Valoración G3 | Razonable | Baja |
-| Margen de seguridad | 35% sobre DCF Base (principal); esperado (complemento) | Política del analista | Resumen de Valoración G4 | No aplicable a contraste | Media |
+| Margen de seguridad | 35% sobre el esperado | Política del analista | Resumen de Valoración G4 | No aplicable a contraste | Media |
 
 | Supuesto activo y escenario | Historia empresarial que presupone | Evidencia favorable | Evidencia contraria | Justificación documentada o faltante | Qué debe comprobarse |
 |---|---|---|---|---|---|
@@ -218,12 +214,12 @@ Fuente de la tabla: 'Trailing Valuation' de la hoja, con precios de cierre de ca
 
 | Resultado declarado (hoy, por acción) | Conservador / Conservadora | Base | Optimista |
 |---|---:|---:|---:|
-| DCF de las historias | US$19,54 | US$32,56 | US$43,56 |
-| DCF auxiliar conciliado con historias | US$19,54 | US$32,56 | US$43,56 |
-| Múltiplos consolidados a valor presente | US$20,57 | US$29,26 | US$37,48 |
-| Ponderado DCF 40% + múltiplos 60% (secundario) | US$20,16 | US$30,58 | US$39,91 |
+| DCF de las historias | US$19,37 | US$32,54 | US$43,71 |
+| DCF técnico de la plantilla (referencia) | US$15,95 | US$32,48 | US$55,71 |
+| Múltiplos consolidados a valor presente | US$21,72 | US$34,58 | US$51,41 |
+| Ponderado DCF 40% + múltiplos 60% (secundario) | US$20,78 | US$33,76 | US$48,33 |
 
-La Disrupción (US$13,12) no tiene un caso auxiliar de múltiplos. El DCF Base principal es US$32,56 y el esperado US$29,56. Las incertidumbres principales son el margen objetivo, Gran China y los supuestos terminales. Los múltiplos consolidados Base (US$29,26) quedan 10,1% por debajo del DCF Base; se conservan las anclas originales sin una nueva calibración. La tabla histórica anterior mantiene su función descriptiva: no se añade valoración por promedio de cinco/diez años ni por el mínimo.
+La Disrupción (US$12,82) no tiene caso de múltiplos: solo hay tres casos auxiliares. Las partes del modelo con mejor soporte son la conciliación de ventas, el EBIT normalizado y la estructura de capital (deuda, arrendamientos, opciones y acciones), todas verificadas contra el 10-K y el comunicado. Las más frágiles son el margen objetivo y la trayectoria de Gran China, que son juicio del analista. Los múltiplos valen algo más que el DCF Base (~6%) porque la historia de Nike (múltiplos de la era de crecimiento) compensa a los peers, que hoy cotizan deprimidos.
 
 ## 6. Ventaja competitiva
 
@@ -340,11 +336,14 @@ Nike sigue siendo una gran marca con un negocio de calidad (poco capital, retorn
 
 ## 12. Valor con criterio Damodaran
 
-**Valor intrínseco principal · DCF Base: US$32,56 por acción.**
+**Valor intrínseco principal · DCF Base hoy: US$32,54 por acción** (Base · Reestructuración que devuelve a Nike a crecer poco con margen de 11%).
 
-**Complemento · DCF esperado: US$29,56**, ponderando Base 45%, Conservadora 25%, Disrupción 10% y Optimista 20%. El rango activo es **US$13,12–43,56**. El umbral principal con un margen de seguridad del 35% es **US$21,16 sobre la Base**; el umbral complementario sobre el esperado es **US$19,21**. Son valores presentes con fecha del modelo y cotización de referencia del 1-oct-2026, no una cotización en vivo.
+**Complemento · DCF esperado por probabilidades: US$29,51.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$12,82–43,71. El MOS 35% se aplica al esperado: US$19,18. El antiguo caso técnico de la hoja (US$32,48) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-Actualización del 2-oct-2026: esta sección sustituye las cifras y sensibilidades anteriores por los resultados de la hoja corregida. Los casos auxiliares Conservador/Base/Optimista del motor reproducen ahora los DCF activos correspondientes (19,54 / 32,56 / 43,56); ya no constituyen otra valoración independiente. No se incorpora una valoración mediante promedios de múltiplos históricos de cinco o diez años ni mediante su mínimo.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, roic terminal (criterio damodaran) (20 celdas, con respaldo). DCF esperado US$32,19 → US$29,51. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$32,48 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+
 
 ### La historia en un párrafo
 
@@ -356,6 +355,7 @@ En cinco a diez años Nike sigue siendo la marca deportiva más grande del mundo
 | El margen operativo vuelve a ~11% | Sí | Sí: fue 12-16% en FY2017-FY2024 salvo la pandemia; Pace promete US$2.500M de ahorros brutos a FY2031 | Probable en el caso central, más lento de lo que promete la gerencia |
 | Nike recupera los márgenes de 14-15% de FY2021-FY2022 | Sí | Poco: con más mayoristas, aranceles y competidores que crecen al doble | Baja |
 | Gran China vuelve a crecer en dos años | Sí | Incierto: −22% en el 1T FY27 (−26% sin efecto cambiario) y la gerencia la está reposicionando | Baja-media |
+
 
 ### Visión externa: tasas base
 
@@ -370,122 +370,239 @@ Con ventas LTM de US$45.891 millones (US$32.470 millones en dólares de 2015, de
 
 Nike está en el tramo de ventas de más de US$25.000 millones de dólares de 2015 (mediana de crecimiento real a cinco años 2,0%). En ese grupo pocas empresas crecen rápido; la Base (1,3% nominal compuesto en cinco años, con el primer año en caída) está en la parte baja de la distribución, coherente con la guía de la gerencia y con una marca madura.
 
+
 ### Justificación de los supuestos
 
-**Crecimiento y margen.** Se mantienen las historias empresariales y las trayectorias de ventas por región de la hoja. La Base parte de una caída de ventas de 6,6% el primer año y crece 1,3% compuesto en cinco años. El margen operativo ajustado parte de 6,0% y converge en pasos uniformes hasta 11,62% en el año 6. El objetivo equivale a 11,0% antes del ajuste de arrendamientos (+0,62 puntos). La Conservadora alcanza 9,12%; Disrupción 6,62%; Optimista 14,12%. La recuperación exige menos descuentos, mejor producto y ejecución de Pace: los ahorros anunciados no garantizan estos márgenes.
+Cada párrafo explica un supuesto material de la tesis Base —el valor intrínseco principal—: qué cifra se usa y con qué trayectoria, qué evidencia la respalda (fuente y fecha), el mecanismo económico, por qué se eligió frente a las alternativas, cómo cambia entre escenarios, qué observación obligaría a cambiarla y cuánto mueve el valor. Las sensibilidades son DCF completos de la Base con un solo supuesto cambiado. Donde falta soporte, el supuesto se declara provisional: un valor heredado de la hoja no queda validado por reproducirse aritméticamente.
 
-**Reinversión e impuestos.** Ventas/capital de 2,1 en años 1–10, lo que relaciona crecimiento con capital adicional; la tasa efectiva proyectada es 25% desde el año 1 y en perpetuidad. El primer año conserva la reinversión de US$490 millones de la hoja, aun con caída de ventas, una hipótesis de inversión durante la reestructuración. En los escenarios débiles, la reinversión negativa posterior presupone que se libera capital: debe comprobarse mediante inventarios, cuentas por cobrar y activos recuperables, porque una caída de ventas no garantiza una entrada de caja. El dato fiscal histórico LTM no se confunde con la tasa futura.
+**Crecimiento: un año más de caída y después un dígito bajo-medio.** La Base cae −6,6% el primer año, en línea con la guía de FY2027 (caída de un dígito alto: Nike retira producto de NIKE Sportswear, Jordan y Gran China), y crece 1,3% compuesto en cinco años. Desde el año 2 el crecimiento es de 3-4,5%: Norteamérica con los mayoristas (+9% en el 1T FY27), EMEA y APLA con la economía, Gran China se estabiliza y Converse deja de caer. La visión externa dice que ~69% de las empresas de su tamaño lograron al menos ese crecimiento. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a US$29,77 (−9%) y US$35,60 (+9%). Obligaría a revisarlo que las ventas de FY2028 sigan cayendo (hacia la Conservadora, −0,9%) o que Gran China vuelva a crecer pronto (hacia la Optimista, 3,2%).
 
-**Riesgo y capital.** WACC inicial 8,64%, costo del patrimonio 9,40% y WACC terminal 9,33%. La beta apalancada es 1,017 (1,02 redondeada). El valor de mercado de la deuda financiera utilizado es US$6.800 millones: valor razonable publicado al 31-may-2026 usado como proxy, no una cotización de bonos del 1-oct-2026. Se añaden US$2.869 millones de arrendamientos capitalizados al puente EV–patrimonio. Los US$7.893 millones de deuda contable al 31-ago-2026 permanecen como dato del balance y para métricas de capital invertido, sin sustituir la deuda de mercado en el DCF. Caja e inversiones: US$8.368 millones; opciones: US$177 millones; acciones más RSU: 1.496 millones. El valor de las opciones se deduce aunque su precio de ejercicio supere la cotización.
+**Margen: de ~6% a 11%, sin volver a la era de venta directa.** La Base parte de 6,0% el primer año (la guía de FY2027) y llega a 11,6% en 6 años (11,0% antes del ajuste de arrendamientos, +0,62 pp). Supone que Pace entrega buena parte de sus US$2.500 millones de ahorros brutos y que bajan los descuentos, pero que el margen no vuelve al 12-16% de FY2017-FY2024: más ventas por mayoristas, aranceles y competencia más intensa. Sensibilidad: ±2 puntos de margen dan US$26,44 (−19%) y US$38,63 (+19%). La Conservadora (9,1%) supone que los ahorros se reinvierten en precio; la Disrupción (6,6%), pérdida de escala; la Optimista (14,1%), la vuelta al promedio histórico.
 
-**Terminal y ventaja competitiva.** Se conserva g terminal de 5,24% en Base, Conservadora y Optimista; Disrupción usa 0,2954%. El ROIC terminal de 12,3% en Base/Optimista es una hipótesis de ventaja de marca persistente frente al WACC de 9,33%; en Conservadora/Disrupción ambos se igualan. Un crecimiento perpetuo de 5,24% exige sostener crecimiento nominal y reinversión durante un horizonte indefinido. Usar la tasa libre de riesgo como referencia de g no lo valida por sí solo. La relación crecimiento–reinversión–retorno y la justificación de retornos superiores al costo de capital siguen el criterio de [Damodaran: determinantes fundamentales del crecimiento](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/valquestions/growth.htm). En esta aplicación, la permanencia de la ventaja y ese nivel de crecimiento son juicios del analista pendientes de comprobación.
+**Reinversión: liviana, con el promedio de la industria.** El ventas/capital es 2,10 en los años 1-5 (~US$0,48 de capital por dólar de ventas nuevas) y 2,10 en los años 6-10, el promedio global de Shoe. Nike rota hoy su capital ~2,6 veces, pero volver a crecer con los mayoristas pide inventario y cuentas por cobrar. Con ±20% en el ventas/capital el DCF Base va de US$31,50 (−3%) a US$33,22 (+2%).
 
-**Pace tiene un costo además de un ahorro.** La hoja incorpora US$1.000 millones de costos futuros antes de impuestos: US$300 millones en FY2027 y US$175 millones por año en FY2028–FY2031. La distribución de los US$700 millones restantes es una hipótesis del analista y los cargos se usan como aproximación al desembolso; se revisará con el calendario real de caja. Su valor presente después de impuestos es US$602 millones, o US$0,40 por acción. Se resta una sola vez del patrimonio, pues los márgenes proyectados son normalizados y no incluyen esos costos. No se vuelve a descontar la indemnización histórica ya normalizada.
+**Descuento y largo plazo: beta de la industria y una ventaja que se desvanece.** El costo de capital inicial es 8,65% (tasa libre de riesgo 5,24% al 1-oct-2026, prima de mercado 4,09% de Damodaran a septiembre, beta 1,01, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal 9,33%. Después del año 10 el crecimiento es 5,24% y el ROIC terminal es 12,3%: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa 65,7% del valor operativo. ±1 punto de tasa da US$43,33 (+33%) y US$25,95 (−20%).
 
-### Piezas del valor y comprobación del motor
+**Acciones, opciones y deuda.** Se usan 1.496,0 millones de acciones (1.483,5 millones en circulación al 8-jul-2026 más 12,5 millones de RSU sin consolidar); las 76,8 millones de opciones a US$96,44 se restan por su valor (casi nulo con la acción a US$35). La deuda es US$7.893 millones a valor nominal más ~US$2.869 millones de arrendamientos; la caja e inversiones suman US$8.368 millones al 31-ago-2026. Una dilución adicional de 5% llevaría el DCF Base a US$30,99 (−5%).
 
-Se calcula NOPAT = ventas × margen ajustado × (1 − impuesto); FCFF = NOPAT − reinversión. Cada flujo se descuenta con el WACC de su año y el terminal usa FCFF terminal / (WACC terminal − g). La fracción transcurrida del primer año es 0,25. Después se incorporan caja, deuda, arrendamientos, opciones y el costo futuro de Pace para llegar al patrimonio común.
+**Probabilidades y lectura del resultado.** Con 45% para la Base, 25% para la Conservadora, 10% para la Disrupción y 20% para la Optimista, el DCF esperado es US$29,51 frente a un DCF Base de US$32,54. Con el margen de seguridad de 35%, el precio de compra con margen es US$19,18.
 
-En la Base, las ventas son US$42.846 millones en el año 1, US$49.008 millones en el año 5 y US$61.106 millones en el año 10. El NOPAT del primer año es US$1.928 millones y el FCFF US$1.438 millones. El VP de los flujos explícitos es US$17.100 millones y el del terminal US$33.685 millones, 66,3% del valor operativo. El terminal sigue siendo determinante; la precisión aritmética no elimina la incertidumbre económica.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$45.891 millones. Con el crecimiento de la Base llegan a US$49.008 millones en el año 5 y a US$61.106 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 6,0% en el año 1 a 11,6% al final, y se descuentan impuestos (25,0% al principio y 25,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$1.928 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$490 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$1.438 millones el primer año. Cada flujo se trae a hoy con el costo de capital (8,65% al principio, 9,33% al final): los diez años suman US$17.589 millones. Después del año 10 se supone que la empresa crece 5,24% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 12,3%; esa perpetuidad vale hoy US$33.656 millones, 66% del total. Flujos más terminal dan el valor de las operaciones, US$51.245 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$8.368 millones, menos deuda por US$10.762 millones (incluye los arrendamientos capitalizados), menos opciones por US$177 millones. Queda un patrimonio de US$48.674 millones que, repartido entre 1.496,0 millones de acciones, da US$32,54 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
-| Puente al patrimonio (millones de USD) | Base | Conservadora | Disrupción | Optimista |
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 13,92× (peso 33% dentro de los múltiplos); EV/FCFF 22,75× (peso 17% dentro de los múltiplos); P/E 17,48× (peso 33% dentro de los múltiplos); P/FCFE 21,12× (peso 8% dentro de los múltiplos); P/OCF 18,70× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (9,4%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+
+Sensibilidad del DCF Base (US$32,54; cada fila es un DCF completo con un solo supuesto cambiado):
+
+| Supuesto cambiado | DCF Base | Variación |
+|---|---:|---:|
+| Margen objetivo −2 pp | US$26,44 | −18,7% |
+| Margen objetivo +2 pp | US$38,63 | +18,7% |
+| Crecimiento años 1–5 −2 pp | US$29,77 | −8,5% |
+| Crecimiento años 1–5 +2 pp | US$35,60 | +9,4% |
+| Ventas/capital −20% | US$31,50 | −3,2% |
+| Ventas/capital +20% | US$33,22 | +2,1% |
+| WACC +1 pp | US$25,95 | −20,2% |
+| WACC −1 pp | US$43,33 | +33,2% |
+| Crecimiento terminal −0,5 pp | US$31,24 | −4,0% |
+| Crecimiento terminal +0,5 pp | US$34,17 | +5,0% |
+| ROIC terminal = costo de capital | US$27,22 | −16,3% |
+| Acciones +5% | US$30,99 | −4,8% |
+
+
+### Piezas del valor
+
+**Crecimiento.** Las ventas de los últimos doce meses (septiembre 2025-agosto 2026) suman US$45.891 millones (cálculo propio: FY2026 menos 1T FY26 más 1T FY27, [NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm) y [NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)). Vienen de US$51.362 millones en FY2024: −10% en FY2025 y plano en FY2026. En el 1T FY27 las ventas cayeron 4% (−5% sin efecto cambiario): Norteamérica +2% con mayoristas +9%, EMEA −5%, Gran China −22%, APLA −2% y Converse −28%; NIKE Direct −8% (digital −13%). En las historias EMEA y APLA se proyectan juntas (US$18.633 millones LTM). Para FY2027 la gerencia espera una caída de un dígito alto, porque está retirando producto de NIKE Sportswear, Jordan y Gran China para limpiar el mercado ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)).
+
+| US$ millones | FY2025 | FY2026 | LTM ago-26 (cálculo propio) | 1T FY27 vs 1T FY26 |
 |---|---:|---:|---:|---:|
-| VP flujos años 1–10 | 17.100 | 13.645 | 12.972 | 21.491 |
-| VP terminal | 33.685 | 17.662 | 8738 | 45.748 |
-| Valor operativo | 50.785 | 31.307 | 21.710 | 67.239 |
-| Más caja e inversiones | 8368 | 8368 | 8368 | 8368 |
-| Menos deuda financiera a valor razonable | 6800 | 6800 | 6800 | 6800 |
-| Menos VP arrendamientos | 2869 | 2869 | 2869 | 2869 |
-| Menos opciones | 177 | 177 | 177 | 177 |
-| Menos VP costos futuros Pace después de impuestos | 602 | 602 | 602 | 602 |
-| Patrimonio común | 48.705 | 29.227 | 19.631 | 65.160 |
-| Acciones (millones) | 1496 | 1496 | 1496 | 1496 |
-| Valor por acción | 32,56 | 19,54 | 13,12 | 43,56 |
+| Norteamérica | 19.572 | 20.511 | 20.618 | +2% |
+| EMEA | 12.257 | 12.572 | 12.417 | −5% |
+| Gran China | 6.586 | 5.847 | 5.515 | −22% |
+| APLA | 6.251 | 6.243 | 6.216 | −2% |
+| Converse y otros | 1.643 | 1.225 | 1.125 | −28% (Converse) |
+| Total | 46.309 | 46.398 | 45.891 | −4% |
+
+**Márgenes.** El margen operativo GAAP de los últimos doce meses es 8,2% (US$3.758 millones), pero incluye un beneficio de una vez de US$986 millones por la devolución de los aranceles IEEPA que la Corte Suprema declaró ilegales (reconocido en el 4T FY26) y US$385 millones de indemnizaciones por despidos ([NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)). Sin ambos, el margen normalizado es 6,9%. La guía de FY2027 (BPA ajustado US$1,15-1,35 con impuestos de ~25%) implica un margen operativo de ~6% sobre ventas ~8% menores. Entre FY2017 y FY2024 Nike ganó 12-16% (salvo 8,3% en la pandemia); Deckers ganó 23% y Lululemon 20% en su último ejercicio fiscal, con marcas más chicas y sin la carga de los mayoristas. El margen bruto del 1T FY27 subió 60 puntos básicos a 42,8% por menores costos de logística ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)).
+
+**Reinversión y retorno.** Nike reinvierte poco en activos: fabrica con terceros y el capex de FY2026 fue US$684 millones (1,5% de las ventas), algo menos que la depreciación más la amortización de los arrendamientos. Con el capital invertido de ~US$17.600 millones (patrimonio más deuda y arrendamientos, menos caja) rota su capital ~2,6 veces; se usa el promedio global de Shoe (2,1) por prudencia, porque la vuelta a crecer exigirá inventario y cuentas por cobrar con los mayoristas. Pace también cuesta: ~US$1.000 millones de cargos a FY2031.
+
+| Concepto | FY2025 | FY2026 | LTM ago-26 |
+|---|---:|---:|---:|
+| Capex (US$M) | 430 | 684 | ~700 |
+| Depreciación y amortización (US$M) | 775 | 747 | ~747 |
+| Inventarios (US$M) | 7.489 | 7.501 | 7.846 |
+| ROIC normalizado (con arrendamientos, cálculo propio) | ~20% | ~16% | ~15% |
+
+**Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$2.869 millones, compromisos del 10-K al 2026-05-31) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$283 millones, +0,62 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,06 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
+
+**Riesgo.** La hoja usa la beta desapalancada del sector Shoe global (0,89, Damodaran, enero de 2026) reapalancada con la deuda y los arrendamientos de Nike: 1,01. La regresión contra el S&P 500 da 0,98 a dos años y 1,04 a cinco años, así que las tres miradas coinciden. El riesgo de Nike está en el margen y en la marca, no en la beta.
+
+| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
+|---|---:|---:|---:|---:|
+| Hoja (regresión o la cargada en el libro) | 1,01 | 9,4% | 8,7% | US$32,48 |
+| Bottom-up del sector (Shoe, reapalancada) | 1,13 | 9,9% | 9,1% | US$31,67 |
 
 
-Las diferencias de un millón al sumar columnas se deben al redondeo. Fuentes del cálculo: «Escenarios e historias», filas 28–44, 52–68, 76–92 y 100–116; «Valuation output», filas 18–35; «Input sheet» B74:B76 y «Cost of capital worksheet» C54:C63. Los importes se conciliaron con la versión corregida de la hoja.
+### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
+
+| Supuesto | Conservador | Base | Optimista |
+|---|---:|---:|---:|
+| Crecimiento año 1 | −8,1% | −6,6% | 4,4% |
+| Crecimiento años 2–5 | −8,1% | 3,4% | 4,4% |
+| Margen año 1 (base ajustada del modelo) | 6,0% | 6,0% | 6,0% |
+| Margen objetivo | 7,5% | 11,6% | 16,6% |
+
+Ventas/capital: 2,1x en años 1–5 y 2,1x en 6–10. WACC: 8,7%. Ke: 9,4%. Impuesto efectivo: 25,0%. Convergencia: 6 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
+
+
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja que se desvanece | 15,2% | 20,9% | 9,3% | 12,3% | US$32,48 | US$27,18 |
+
+Fuentes de ventaja: Marca global de más de 50 años, escala en marketing deportivo y contratos con atletas, y la red de distribución más grande del sector. Evidencia: ROIC de la hoja: 33-51% en FY2021-FY2023, 21% en FY2025 y 17% LTM; normalizado con arrendamientos (cálculo propio) ~20% en FY2025 y ~15% LTM (ago-2026): por encima del costo de capital, pero en caída. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
+
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-#### Base: trayectoria anual
+El valor intrínseco principal es el DCF Base: US$32,54 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$29,51. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$32,48) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
-Cifras en millones de USD; FCFF operativo normalizado antes de la deducción separada de Pace.
 
-| Año | Ventas | Margen ajustado | Impuesto | NOPAT | Reinversión | FCFF | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 42.846 | 6,00% | 25% | 1928 | 490 | 1438 | 1324 |
-| 2 | 43.876 | 7,12% | 25% | 2344 | 832 | 1512 | 1281 |
-| 3 | 45.623 | 8,25% | 25% | 2822 | 839 | 1983 | 1546 |
-| 4 | 47.386 | 9,37% | 25% | 3330 | 772 | 2558 | 1836 |
-| 5 | 49.008 | 10,49% | 25% | 3857 | 883 | 2974 | 1965 |
-| 6 | 50.863 | 11,62% | 25% | 4432 | 1005 | 3427 | 2081 |
-| 7 | 52.973 | 11,62% | 25% | 4615 | 1138 | 3477 | 1939 |
-| 8 | 55.364 | 11,62% | 25% | 4824 | 1286 | 3538 | 1809 |
-| 9 | 58.064 | 11,62% | 25% | 5059 | 1449 | 3610 | 1691 |
-| 10 | 61.106 | 11,62% | 25% | 5324 | 1525 | 3799 | 1628 |
+#### 1. Datos de partida y origen de los supuestos
 
-#### Conservadora: trayectoria anual
+| Entrada | Valor usado | Origen y tratamiento |
+|---|---|---|
+| Ingresos LTM | US$45.891 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 20.618 + 18.633 + 5.515 + 1.125 = 45.891. |
+| Margen inicial del DCF | 6,0% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 6 (Input sheet B31). |
+| Impuesto | 25,00% en años 1–5; 25,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
+| Descuento | WACC 8,65% → 9,33% | Tasa libre de riesgo 5,24%, beta 1,01, ERP 4,09%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Ventas/capital | 2,10x en años 1–5; 2,10x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 5,24%; Disrupción: 0,30% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (0,30%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Optimista: 12,30%; Conservadora/Disrupción: 9,33% (= WACC terminal) | Criterio de ventaja competitiva (ventaja que se desvanece). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Puente al patrimonio | Caja 8.368; deuda 10.762; opciones 177; acciones 1.496,0 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
-Cifras en millones de USD; FCFF operativo normalizado antes de la deducción separada de Pace.
 
-| Año | Ventas | Margen ajustado | Impuesto | NOPAT | Reinversión | FCFF | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 41.729 | 6,00% | 25% | 1878 | -160 | 2038 | 1876 |
-| 2 | 41.393 | 6,62% | 25% | 2056 | 320 | 1736 | 1471 |
-| 3 | 42.065 | 7,25% | 25% | 2286 | 416 | 1870 | 1458 |
-| 4 | 42.940 | 7,87% | 25% | 2535 | 451 | 2083 | 1496 |
-| 5 | 43.887 | 8,49% | 25% | 2796 | 588 | 2208 | 1459 |
-| 6 | 45.122 | 9,12% | 25% | 3085 | 735 | 2351 | 1428 |
-| 7 | 46.665 | 9,12% | 25% | 3191 | 895 | 2296 | 1281 |
-| 8 | 48.544 | 9,12% | 25% | 3319 | 1071 | 2248 | 1150 |
-| 9 | 50.793 | 9,12% | 25% | 3473 | 1267 | 2206 | 1033 |
-| 10 | 53.454 | 9,12% | 25% | 3655 | 1334 | 2321 | 994 |
+#### 2. Cómo se convierte cada historia en ingresos
 
-#### Disrupción: trayectoria anual
+Para cada segmento: ingreso del año t = ingreso del año anterior × (1 + crecimiento de ese segmento). Se suman los segmentos para obtener las ventas de la empresa. Las tasas de la tabla «Historias cuantificadas» son hipótesis del analista; los informes de la empresa aportan el punto de partida, no estas cuatro trayectorias. En los años 6–10 el crecimiento converge linealmente al terminal de cada historia.
 
-Cifras en millones de USD; FCFF operativo normalizado antes de la deducción separada de Pace.
+Ejemplo Base, año 1: 20.618 × 0,98 + 18.633 × 0,93 + 5.515 × 0,80 + 1.125 × 0,80 = US$42.846,33 millones. Frente a 45.891, el crecimiento consolidado es −6,63%. En los años 2–5 es 2,40%, 3,98%, 3,86%, 3,42%; las ventas del año 5 son US$49.007,53 millones. El 1,3% de la tabla es el crecimiento anual compuesto de los cinco años: (49.007,53 / 45.891)^(1/5) − 1; no se usa como tasa constante.
 
-| Año | Ventas | Margen ajustado | Impuesto | NOPAT | Reinversión | FCFF | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 40.556 | 6,00% | 25% | 1825 | -979 | 2804 | 2581 |
-| 2 | 38.501 | 6,12% | 25% | 1768 | -374 | 2142 | 1815 |
-| 3 | 37.716 | 6,25% | 25% | 1767 | -72 | 1839 | 1434 |
-| 4 | 37.565 | 6,37% | 25% | 1795 | 53 | 1742 | 1250 |
-| 5 | 37.676 | 6,49% | 25% | 1835 | 53 | 1782 | 1177 |
-| 6 | 37.787 | 6,62% | 25% | 1875 | 53 | 1822 | 1107 |
-| 7 | 37.899 | 6,62% | 25% | 1881 | 53 | 1828 | 1019 |
-| 8 | 38.011 | 6,62% | 25% | 1886 | 53 | 1833 | 937 |
-| 9 | 38.123 | 6,62% | 25% | 1892 | 54 | 1838 | 861 |
-| 10 | 38.236 | 6,62% | 25% | 1898 | 54 | 1844 | 790 |
 
-#### Optimista: trayectoria anual
+#### 3. Del ingreso al flujo libre y su valor presente
 
-Cifras en millones de USD; FCFF operativo normalizado antes de la deducción separada de Pace.
+NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversión explícita es (ventasₜ₊₁ − ventasₜ) / ventas-capital: financia el crecimiento del año siguiente. FCFFₜ = NOPATₜ − reinversiónₜ. No se resta además el capex como una segunda reinversión.
 
-| Año | Ventas | Margen ajustado | Impuesto | NOPAT | Reinversión | FCFF | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 44.094 | 6,00% | 25% | 1984 | 1081 | 904 | 832 |
-| 2 | 46.363 | 7,62% | 25% | 2651 | 1249 | 1402 | 1188 |
-| 3 | 48.985 | 9,25% | 25% | 3397 | 1163 | 2235 | 1743 |
-| 4 | 51.426 | 10,87% | 25% | 4193 | 1088 | 3105 | 2229 |
-| 5 | 53.711 | 12,49% | 25% | 5033 | 1177 | 3856 | 2548 |
-| 6 | 56.183 | 14,12% | 25% | 5949 | 1274 | 4675 | 2840 |
-| 7 | 58.858 | 14,12% | 25% | 6232 | 1379 | 4853 | 2706 |
-| 8 | 61.755 | 14,12% | 25% | 6539 | 1494 | 5044 | 2580 |
-| 9 | 64.892 | 14,12% | 25% | 6871 | 1619 | 5251 | 2460 |
-| 10 | 68.293 | 14,12% | 25% | 7231 | 1704 | 5527 | 2368 |
+En la Base, año 1: NOPAT = 42.846,33 × 6,00% × (1 − 25,00%) = US$1.928,08 millones. La reinversión es US$490,20 millones y el FCFF es US$1.437,88 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
+
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,33%. Reinversión terminal sobre el NOPAT: Base, 42,6% (5,24% / 12,30%); Conservadora, 56,2% (5,24% / 9,33%); Disrupción, 3,2% (0,30% / 9,33%); Optimista, 42,6% (5,24% / 12,30%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+
+
+#### 4. Trayectoria anual de cada historia
+
+Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e historias»: ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
+
+**Base · Reestructuración que devuelve a Nike a crecer poco con margen de 11%** — probabilidad 45%; valor terminal 78.633 (VP 33.656); DCF US$32,54 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 42.846 | −6,6% | 6,0% | 1.928 | 490 | 1.438 | 8,7% | 1.323 |
+| 2 | 43.876 | 2,4% | 7,9% | 2.591 | 832 | 1.758 | 8,7% | 1.489 |
+| 3 | 45.623 | 4,0% | 8,8% | 3.014 | 839 | 2.175 | 8,7% | 1.695 |
+| 4 | 47.386 | 3,9% | 9,7% | 3.463 | 772 | 2.691 | 8,7% | 1.931 |
+| 5 | 49.008 | 3,4% | 10,7% | 3.926 | 883 | 3.042 | 8,7% | 2.009 |
+| 6 | 50.863 | 3,8% | 11,6% | 4.432 | 1.005 | 3.427 | 8,8% | 2.080 |
+| 7 | 52.973 | 4,1% | 11,6% | 4.615 | 1.138 | 3.477 | 8,9% | 1.938 |
+| 8 | 55.364 | 4,5% | 11,6% | 4.824 | 1.286 | 3.538 | 9,1% | 1.808 |
+| 9 | 58.064 | 4,9% | 11,6% | 5.059 | 1.449 | 3.610 | 9,2% | 1.689 |
+| 10 | 61.106 | 5,2% | 11,6% | 5.324 | 1.525 | 3.799 | 9,3% | 1.626 |
+| Terminal | 64.308 | 5,2% | 11,6% | 5.603 | 2.387 | 3.216 | 9,3% | — |
+
+**Conservadora · Recuperación a medias, la marca pierde participación** — probabilidad 25%; valor terminal 41.229 (VP 17.647); DCF US$19,37 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 41.729 | −9,1% | 6,0% | 1.878 | -160 | 2.038 | 8,7% | 1.876 |
+| 2 | 41.393 | −0,8% | 7,0% | 2.185 | 320 | 1.865 | 8,7% | 1.580 |
+| 3 | 42.065 | 1,6% | 7,6% | 2.385 | 416 | 1.968 | 8,7% | 1.534 |
+| 4 | 42.940 | 2,1% | 8,1% | 2.602 | 451 | 2.150 | 8,7% | 1.543 |
+| 5 | 43.887 | 2,2% | 8,6% | 2.830 | 588 | 2.242 | 8,7% | 1.481 |
+| 6 | 45.122 | 2,8% | 9,1% | 3.085 | 735 | 2.351 | 8,8% | 1.427 |
+| 7 | 46.665 | 3,4% | 9,1% | 3.191 | 895 | 2.296 | 8,9% | 1.280 |
+| 8 | 48.544 | 4,0% | 9,1% | 3.319 | 1.071 | 2.248 | 9,1% | 1.149 |
+| 9 | 50.793 | 4,6% | 9,1% | 3.473 | 1.267 | 2.206 | 9,2% | 1.032 |
+| 10 | 53.454 | 5,2% | 9,1% | 3.655 | 1.334 | 2.321 | 9,3% | 994 |
+| Terminal | 56.255 | 5,2% | 9,1% | 3.847 | 2.160 | 1.686 | 9,3% | — |
+
+**Disrupción · Deterioro de los fundamentales: Nike pierde relevancia como Adidas en 2015-2016, pero sin recuperación** — probabilidad 10%; valor terminal 20.399 (VP 8.731); DCF US$12,82 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 40.556 | −11,6% | 6,0% | 1.825 | -979 | 2.804 | 8,7% | 2.580 |
+| 2 | 38.501 | −5,1% | 6,2% | 1.792 | -374 | 2.166 | 8,7% | 1.835 |
+| 3 | 37.716 | −2,0% | 6,3% | 1.784 | -72 | 1.856 | 8,7% | 1.447 |
+| 4 | 37.565 | −0,4% | 6,4% | 1.806 | 53 | 1.753 | 8,7% | 1.258 |
+| 5 | 37.676 | 0,3% | 6,5% | 1.841 | 53 | 1.788 | 8,7% | 1.181 |
+| 6 | 37.787 | 0,3% | 6,6% | 1.875 | 53 | 1.822 | 8,8% | 1.106 |
+| 7 | 37.899 | 0,3% | 6,6% | 1.881 | 53 | 1.828 | 8,9% | 1.018 |
+| 8 | 38.011 | 0,3% | 6,6% | 1.886 | 53 | 1.833 | 9,1% | 937 |
+| 9 | 38.123 | 0,3% | 6,6% | 1.892 | 54 | 1.838 | 9,2% | 860 |
+| 10 | 38.236 | 0,3% | 6,6% | 1.898 | 54 | 1.844 | 9,3% | 789 |
+| Terminal | 38.349 | 0,3% | 6,6% | 1.903 | 60 | 1.843 | 9,3% | — |
+
+**Optimista · Vuelve la Nike de márgenes históricos** — probabilidad 20%; valor terminal 106.792 (VP 45.709); DCF US$43,71 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 44.094 | −3,9% | 6,0% | 1.984 | 1.081 | 904 | 8,7% | 832 |
+| 2 | 46.363 | 5,1% | 8,7% | 3.027 | 1.249 | 1.779 | 8,7% | 1.507 |
+| 3 | 48.985 | 5,7% | 10,1% | 3.695 | 1.163 | 2.533 | 8,7% | 1.975 |
+| 4 | 51.426 | 5,0% | 11,4% | 4.401 | 1.088 | 3.313 | 8,7% | 2.377 |
+| 5 | 53.711 | 4,4% | 12,8% | 5.142 | 1.177 | 3.965 | 8,7% | 2.618 |
+| 6 | 56.183 | 4,6% | 14,1% | 5.949 | 1.274 | 4.675 | 8,8% | 2.838 |
+| 7 | 58.858 | 4,8% | 14,1% | 6.232 | 1.379 | 4.853 | 8,9% | 2.704 |
+| 8 | 61.755 | 4,9% | 14,1% | 6.539 | 1.494 | 5.044 | 9,1% | 2.578 |
+| 9 | 64.892 | 5,1% | 14,1% | 6.871 | 1.619 | 5.251 | 9,2% | 2.457 |
+| 10 | 68.293 | 5,2% | 14,1% | 7.231 | 1.704 | 5.527 | 9,3% | 2.366 |
+| Terminal | 71.871 | 5,2% | 14,1% | 7.610 | 3.242 | 4.368 | 9,3% | — |
+
+
+#### 5. Puente numérico de los cuatro DCF
+
+Importes en US$ millones salvo el DCF por acción. Se calcula con precisión completa y se redondea solo al presentar.
+
+| Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
+|---|---:|---:|---:|---:|---:|
+| Base | 17.589,19 | 33.656,15 | 51.245,34 | 48.674,39 | 32,54 |
+| Conservadora | 13.894,30 | 17.646,72 | 31.541,02 | 28.970,07 | 19,37 |
+| Disrupción | 13.011,43 | 8.730,94 | 21.742,37 | 19.171,42 | 12,82 |
+| Optimista | 22.250,56 | 45.708,92 | 67.959,47 | 65.388,52 | 43,71 |
+
+Ejemplo Base: (17.589,19 + 33.656,15 + 8.368 − 10.762 − 177) / 1.496,0 = US$32,54 por acción. El terminal representa 65,7% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+
+
+#### 6. DCF esperado (complemento), probabilidades y margen de seguridad
+
+Las probabilidades 45% / 25% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
+
+DCF esperado = 0,45 × 32,536355 + 0,25 × 19,365018 + 0,10 × 12,815121 + 0,20 × 43,708904 = US$29,505907 ≈ US$29,51. Los aportes son US$14,64 + US$4,84 + US$1,28 + US$8,74 por acción.
+
+Precio con MOS = DCF esperado × (1 − 35%) = 29,505907 × 0,65 = US$19,178839 ≈ US$19,18. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+
+Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$32,56, es el valor intrínseco principal. El DCF esperado de US$29,56 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Los casos auxiliares Conservador/Base/Optimista reproducen sus historias activas; Disrupción permanece como cuarto DCF. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$32,54, es el valor intrínseco principal. El DCF esperado de US$29,51 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: Reestructuración que devuelve a Nike a crecer poco con margen de 11%
 
 **Qué tiene que ocurrir.** Se cumple la guía de FY2027 (caída de un dígito alto mientras se limpia el mercado) y desde FY2028 Nike crece 3-4%: Norteamérica con los mayoristas y el rendimiento deportivo, EMEA y APLA con la economía, Gran China se estabiliza en dos años y Converse deja de caer. El margen operativo sube de ~6% a 11% en seis años con los ahorros de Pace (US$2.500 millones brutos, buena parte reinvertidos en marketing) y menos descuentos, sin volver a los márgenes de la era de venta directa.
 
-**Traducción al modelo.** Crecimiento por región en años 1–5: Norteamérica: -2%, 4%, 4,5%, 4%, 3,5%; EMEA y APLA: -7%, 2,3%, 3,8%, 3,8%, 3,3%; Gran China: -20%, -3%, 3%, 4%, 4%; Converse y otros: -20%, -5%, 0%, 1%, 1%. CAGR del grupo: 1,32%; margen objetivo ajustado: 11,62%; ROIC terminal: 12,30%; g terminal: 5,24%. Probabilidad: 45%; DCF: US$32,56 por acción.
+**Traducción al modelo.** Norteamérica crece -2%, 4%, 4%, 4%, 4%; EMEA y APLA crece -7%, 2%, 4%, 4%, 3%; Gran China crece -20%, -3%, 3%, 4%, 4%; Converse y otros crece -20%, -5%, 0%, 1%, 1%. El crecimiento anual compuesto de cinco años es 1,3%; el margen operativo objetivo es 11,6%. El ROIC terminal es 12,3%. El crecimiento terminal es 5,24%, el de la hoja. Probabilidad: 45%; DCF: US$32,54 por acción.
 
 **Cómo contrastarla.** Ventas de FY2028 ≥ FY2027, margen bruto ≥ 43% y Norteamérica creciendo.
 
@@ -494,7 +611,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$32,56, es el valo
 
 **Qué tiene que ocurrir.** On, Hoka, Adidas y las marcas chinas siguen ganando participación; Nike vuelve a crecer solo con la inflación desde FY2029 y Gran China no se recupera. Los ahorros de Pace se van en marketing y precios, y el margen se queda en 8,5%. La ventaja de marca se erosiona: después del año 10 Nike gana su costo de capital.
 
-**Traducción al modelo.** Crecimiento por región en años 1–5: Norteamérica: -4%, 1%, 2,5%, 2,5%, 2,5%; EMEA y APLA: -9%, -0,7%, 1,7%, 2,2%, 2,2%; Gran China: -25%, -8%, -2%, 0%, 1%; Converse y otros: -25%, -10%, -5%, -2%, 0%. CAGR del grupo: -0,89%; margen objetivo ajustado: 9,12%; ROIC terminal: 9,33%; g terminal: 5,24%. Probabilidad: 25%; DCF: US$19,54 por acción.
+**Traducción al modelo.** Norteamérica crece -4%, 1%, 2%, 2%, 2%; EMEA y APLA crece -9%, -1%, 2%, 2%, 2%; Gran China crece -25%, -8%, -2%, 0%, 1%; Converse y otros crece -25%, -10%, -5%, -2%, 0%. El crecimiento anual compuesto de cinco años es −0,9%; el margen operativo objetivo es 9,1%. El ROIC terminal es el costo de capital (9,33%). El crecimiento terminal es 5,24%, el de la hoja. Probabilidad: 25%; DCF: US$19,37 por acción.
 
 **Cómo contrastarla.** Ventas de FY2028 por debajo de FY2027 y margen bruto ≤ 42%.
 
@@ -503,7 +620,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$32,56, es el valo
 
 **Qué tiene que ocurrir.** La pérdida de atletas (Mbappé se fue a On en septiembre de 2026, [Bloomberg Línea, Mbappé cambia Nike por On, sep-2026](https://www.bloomberglinea.com/mercados/mbappe-cambia-nike-por-on-acciones-precios-objetivo-y-la-apuesta-por-el-futbol/)), la salida del índice S&P 100 y la competencia de marcas más ágiles se vuelven una pérdida estructural de relevancia: las ventas caen tres años más, Gran China se achica a la mitad del pico y el margen se queda en 6% porque los gastos de marketing no se pueden recortar sin perder más terreno.
 
-**Traducción al modelo.** Crecimiento por región en años 1–5: Norteamérica: -6%, -3%, -1%, 0%, 1%; EMEA y APLA: -11,3%, -4,7%, -1,7%, 0%, 0%; Gran China: -30%, -15%, -8%, -4%, -2%; Converse y otros: -30%, -15%, -10%, -5%, -3%. CAGR del grupo: -3,87%; margen objetivo ajustado: 6,62%; ROIC terminal: 9,33%; g terminal: 0,30%. Probabilidad: 10%; DCF: US$13,12 por acción.
+**Traducción al modelo.** Norteamérica crece -6%, -3%, -1%, 0%, 1%; EMEA y APLA crece -11%, -5%, -2%, 0%, 0%; Gran China crece -30%, -15%, -8%, -4%, -2%; Converse y otros crece -30%, -15%, -10%, -5%, -3%. El crecimiento anual compuesto de cinco años es −3,9%; el margen operativo objetivo es 6,6%. El ROIC terminal es el costo de capital (9,33%). El crecimiento terminal es 0,30%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$12,82 por acción.
 
 **Cómo contrastarla.** Norteamérica vuelve a caer dos trimestres seguidos o margen bruto ≤ 40%.
 
@@ -512,45 +629,37 @@ La tesis Base es la trayectoria central defendida y su DCF, US$32,56, es el valo
 
 **Qué tiene que ocurrir.** La «Sport Offense» funciona como en 2017-2021: la innovación en running y básquet recupera participación, los mayoristas vuelven a pedir, los Juegos Olímpicos de Los Ángeles 2028 impulsan la marca y Gran China vuelve a crecer desde FY2029. Pace entrega sus ahorros y el margen vuelve a 13,5%, el promedio de FY2017-FY2024.
 
-**Traducción al modelo.** Crecimiento por región en años 1–5: Norteamérica: 0%, 6%, 6%, 5%, 4,5%; EMEA y APLA: -4,3%, 5%, 5,3%, 4,8%, 4,3%; Gran China: -15%, 3%, 6%, 6%, 5%; Converse y otros: -15%, 0%, 3%, 3%, 3%. CAGR del grupo: 3,20%; margen objetivo ajustado: 14,12%; ROIC terminal: 12,30%; g terminal: 5,24%. Probabilidad: 20%; DCF: US$43,56 por acción.
+**Traducción al modelo.** Norteamérica crece 0%, 6%, 6%, 5%, 4%; EMEA y APLA crece -4%, 5%, 5%, 5%, 4%; Gran China crece -15%, 3%, 6%, 6%, 5%; Converse y otros crece -15%, 0%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 3,2%; el margen operativo objetivo es 14,1%. El ROIC terminal es 12,3%. El crecimiento terminal es 5,24%, el de la hoja. Probabilidad: 20%; DCF: US$43,71 por acción.
 
 **Cómo contrastarla.** Crecimiento de un dígito medio en FY2028 con margen bruto ≥ 45%.
 
 **Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 5,24%; Disrupción: 0,30%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
+
 ### Historias cuantificadas y valor esperado
 
-| Historia | Probabilidad | CAGR ventas años 1–5 | Margen objetivo ajustado | ROIC terminal | g terminal | DCF por acción |
-|---|---:|---:|---:|---:|---:|---:|
-| Base · Reestructuración que devuelve a Nike a crecer poco con margen de 11% | 45% | 1,3% | 11,6% | 12,30% | 5,24% | US$32,56 |
-| Conservadora · Recuperación a medias, la marca pierde participación | 25% | -0,9% | 9,1% | 9,33% | 5,24% | US$19,54 |
-| Disrupción · Deterioro de los fundamentales: Nike pierde relevancia como Adidas en 2015-2016, pero sin recuperación | 10% | -3,9% | 6,6% | 9,33% | 0,30% | US$13,12 |
-| Optimista · Vuelve la Nike de márgenes históricos | 20% | 3,2% | 14,1% | 12,30% | 5,24% | US$43,56 |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 1,01) | Valor/acción (beta 1,13) |
+|---|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| **Base · Reestructuración que devuelve a Nike a crecer poco con margen de 11%** | 45% | Norteamérica: -2%, 4%, 4%, 4%, 4%; EMEA y APLA: -7%, 2%, 4%, 4%, 3%; Gran China: -20%, -3%, 3%, 4%, 4%; Converse y otros: -20%, -5%, 0%, 1%, 1% | 1,3% | 11,6% | 2,1 | 12,3% | 5,24% | US$32,54 | US$31,72 |
+| **Conservadora · Recuperación a medias, la marca pierde participación** | 25% | Norteamérica: -4%, 1%, 2%, 2%, 2%; EMEA y APLA: -9%, -1%, 2%, 2%, 2%; Gran China: -25%, -8%, -2%, 0%, 1%; Converse y otros: -25%, -10%, -5%, -2%, 0% | −0,9% | 9,1% | 2,1 | = costo de capital | 5,24% | US$19,37 | US$18,90 |
+| **Disrupción · Deterioro de los fundamentales: Nike pierde relevancia como Adidas en 2015-2016, pero sin recuperación** | 10% | Norteamérica: -6%, -3%, -1%, 0%, 1%; EMEA y APLA: -11%, -5%, -2%, 0%, 0%; Gran China: -30%, -15%, -8%, -4%, -2%; Converse y otros: -30%, -15%, -10%, -5%, -3% | −3,9% | 6,6% | 2,1 | = costo de capital | 0,30% | US$12,82 | US$12,53 |
+| **Optimista · Vuelve la Nike de márgenes históricos** | 20% | Norteamérica: 0%, 6%, 6%, 5%, 4%; EMEA y APLA: -4%, 5%, 5%, 5%, 4%; Gran China: -15%, 3%, 6%, 6%, 5%; Converse y otros: -15%, 0%, 3%, 3%, 3% | 3,2% | 14,1% | 2,1 | 12,3% | 5,24% | US$43,71 | US$42,60 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$29,51** | **US$28,77** |
 
+La Base pesa 45%: es lo que dice la guía de FY2027, más una recuperación modesta, en línea con lo que Nike ya muestra en Norteamérica. La Conservadora pesa 25% porque la competencia es real y Gran China y Converse siguen en caída. La Disrupción pesa 10%: la marca tiene más de 50 años, escala y presupuesto de marketing, pero perdió atletas y participación. La Optimista pesa 20% porque Nike ya salió de crisis parecidas (1998, 2016-2017) con la innovación. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Las probabilidades se mantienen como juicio del analista y suman 100%; no son frecuencias publicadas ni un ajuste para igualar el precio. El esperado es 0,45 × 32,5569 + 0,25 × 19,5369 + 0,10 × 13,1221 + 0,20 × 43,5559 = US$29,56. El margen de seguridad es una política de compra, no una reducción de la estimación del valor.
+Sensibilidad del DCF técnico anterior (beta 1,01; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
-### Sensibilidad del terminal
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
 
-| Cambio aislado sobre la Base | Valor por acción |
-|---|---:|
-| Base | US$32,56 |
-| g terminal 4% | US$30,11 |
-| g terminal 3% | US$28,80 |
-| ROIC terminal = WACC terminal | US$27,24 |
+| Crecimiento \ Margen | 7,6% | 9,6% | 11,6% | 13,6% | 15,6% |
+|---|---:|---:|---:|---:|---:|
+| −2,6% | 18,84 | 23,44 | 28,04 | 32,64 | 37,24 |
+| −0,6% | 20,00 | 25,23 | 30,47 | 35,71 | 40,94 |
+| 1,4% | 21,26 | 27,21 | 33,16 | 39,11 | 45,06 |
+| 3,4% | 22,65 | 29,40 | 36,15 | 42,89 | 49,64 |
+| 5,4% | 24,16 | 31,81 | 39,45 | 47,09 | 54,73 |
 
-Estas pruebas cambian únicamente el terminal y mantienen los flujos de los años 1–10. No son DCF completos con nuevas trayectorias. Las antiguas matrices de crecimiento/margen, el DCF inverso y las cifras con beta alternativa no se trasladan a la hoja corregida; requieren recalcularse antes de usarlas en una decisión.
-
-### Múltiplos como contraste secundario
-
-| Valor presente por acción | Conservadora | Base | Optimista |
-|---|---:|---:|---:|
-| Múltiplos consolidados | US$20,57 | US$29,26 | US$37,48 |
-| Ponderado 40% DCF + 60% múltiplos | US$20,16 | US$30,58 | US$39,91 |
-
-Se conservan los múltiplos objetivo y sus anclas. Los resultados se actualizan porque las ventas, márgenes y tasas fiscales ahora siguen las historias activas; se mantienen 1.496 millones de acciones, no se financian recompras automáticas y los dividendos se limitan al FCFE disponible. Los costos futuros de Pace reducen el FCFE de sus respectivos años. Los dividendos se descuentan en el año de cada pago y el precio objetivo en el año de salida, con Ke de 9,40%.
-
-Los múltiplos EV usan métricas sin capitalizar arrendamientos: se revierte el ajuste de margen y se resta la deuda financiera, evitando mezclar definiciones de EV. La caja futura excedente que se acumule tras pagar dividendos no se añade al puente de salida: es una aproximación conservadora de estos métodos. Las anclas conservadas no reciben una nueva validación de mercado o de fundamentales por esta actualización. El ponderado de métodos es una política del modelo y no una nueva estimación intrínseca Damodaran; el DCF Base conserva la prioridad.
 
 ### Pre-mortem
 
@@ -561,6 +670,7 @@ Los múltiplos EV usan métricas sin capitalizar arrendamientos: se revierte el 
 5. Nuevos aranceles (sección 232 o 301) reemplazan a los IEEPA y quitan 1-2 puntos de margen bruto.
 
 **Evidencia en contra de la historia más probable:** la guía de FY2027 vuelve a mostrar caída de ventas de un dígito alto, Gran China cae 22% y la gerencia anunció más despidos: la recuperación lleva dos años de retraso y la marca perdió atletas emblemáticos ([Tradingpedia, 18-sep-2026](https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/)).
+
 
 ### Indicadores y actualización de probabilidades
 
@@ -575,65 +685,75 @@ Los múltiplos EV usan métricas sin capitalizar arrendamientos: se revierte el 
 | Pedidos de mayoristas (futuros) | Norteamérica mayoristas +9% | Crecen | Caen |
 | Converse | −28% (1T FY27) | ≥ −5% | ≤ −20% en FY2028 |
 
-Cada trimestre, revisa las probabilidades según la evidencia y deja registrado el motivo; no hay una regla mecánica que justifique mover 5–10 puntos. Recalcula las historias cuando cambien crecimiento, margen, reinversión, impuestos, riesgo o costos de Pace.
+Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónde apunten los indicadores; no cambies el valor de cada historia salvo que cambie un supuesto (crecimiento, margen, reinversión o riesgo).
+
 
 ### El precio al final
 
-Precio de referencia: **US$35,15, cierre del 1-oct-2026**, previo al comunicado publicado después del cierre. Frente al DCF Base de US$32,56, el precio está **8,0% por encima del valor**; el retorno implícito desde ese precio hasta el valor es **−7,4%**. Frente al esperado de US$29,56, está 18,9% por encima. Se distinguen los denominadores: precio/valor − 1 mide la prima y valor/precio − 1 el retorno.
+Precio de referencia (cierre del 1 de octubre de 2026): **US$35,15**.
 
-La Optimista permite una subida de 23,9% desde ese precio; la Conservadora implica una caída de 44,4% y Disrupción de 62,7%. A ese cierre no se cumple el margen de seguridad del 35%. Un precio superior a la Base requeriría mejores flujos o menor riesgo que el caso central; dar más peso a los escenarios débiles reduciría el valor esperado y ampliaría la diferencia. Esta comparación no equivale a un DCF inverso recalculado.
+DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
+
+|  | Margen 9% | Margen 12% | Margen 14% |
+|---|---:|---:|---:|
+| Beta 1,01 | 9,5% (25% de las empresas) | 2,7% (63% de las empresas) | −1,8% (83% de las empresas) |
+| Beta 1,13 | 10,2% (22% de las empresas) | 3,3% (59% de las empresas) | −1,2% (80% de las empresas) |
+
+Frente al DCF Base (US$32,54), el valor intrínseco principal, el precio está por encima en 8%.
+
+Frente al DCF esperado de las historias (US$29,51 con la beta de la hoja; US$28,77 con la propuesta), el precio está por encima en 19% y por encima en 22%, respectivamente. El precio de US$35,15 queda cerca de lo que vale la Base: el mercado ya descuenta una reestructuración larga y un margen que no vuelve a los niveles históricos. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la pérdida de atletas y de participación en running; o puede estar descontando que Pace no entregue sus ahorros. Ninguna de esas lecturas es extrema.
+
 
 ### Registro de decisión
 
 | Campo | Propuesta del análisis | Tu estimación |
 |---|---|---|
-| Fecha de actualización | 2-oct-2026; precio de referencia 1-oct-2026 | |
-| Historia | Reestructuración con recuperación modesta y margen de dos dígitos bajos | |
-| Probabilidades | Base 45% / Conservadora 25% / Disrupción 10% / Optimista 20% | |
-| DCF Base principal | US$32,56 | |
-| DCF esperado complementario | US$29,56 | |
-| Umbral principal con MOS 35% sobre la Base | US$21,16 | |
-| Umbral complementario con MOS 35% sobre el esperado | US$19,21 | |
-| Rango de las historias activas | US$13,12–43,56 | |
-| Confianza | Media: depende del margen, China, costos de Pace y supuestos terminales | |
-| Qué cambiaría la opinión | Norteamérica, margen bruto, China, capital liberado y desembolsos de Pace | |
-| Revisión | Próximos resultados y calendario real de Pace | |
+| Fecha | 2026-10-01 |  |
+| Historia en una frase | La marca deportiva más grande del mundo en medio de una reestructuración que devuelve el crecimiento lento con margen de dos dígitos bajos |  |
+| Probabilidades | Base 45% / Conservadora 25% / Disrupción 10% / Optimista 20% |  |
+| DCF Base hoy (valor intrínseco principal) | US$32,54 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$29,51 / US$28,77 |  |
+| Precio con MOS sobre el DCF esperado | US$19,18 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$12,53 a US$43,71 |  |
+| Confianza | Media: el margen normalizado y la caja están bien documentados; la duración de la caída y la recuperación de China no |  |
+| Qué cambiaría la opinión | El crecimiento de Norteamérica, el margen bruto, Gran China y la ejecución de Pace |  |
+| Revisión | Resultados del 2T FY2027 (diciembre de 2026) |  |
 
 La decisión (comprar, mantener o vender) la registras tú con el selector «Mi decisión» de la app; este análisis no la toma por ti.
 <!-- JMR-HORIZONTES-20261002 -->
 ### Valor por acción en dos horizontes
 
-Moneda: US$ por acción. Fecha de valoración: 2026-10-02. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,40%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$13,12) y no se inventa para ellos.
+Moneda: US$ por acción. Fecha de valoración: 2026-10-02. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,37%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$12,82) y no se inventa para ellos.
 
-**Valor intrínseco principal: DCF Base al presente, US$32,56 por acción.** Complemento: DCF esperado por probabilidades US$29,56. Múltiplos y ponderados son lecturas secundarias.
+**Valor intrínseco principal: DCF Base al presente, US$32,54 por acción.** Complemento: DCF esperado por probabilidades US$29,51. Múltiplos y ponderados son lecturas secundarias.
 
 **Tabla 1 · Valor por acción descontado al presente (2026-10-02).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
-| DCF de las historias al presente | — | 40% | — | US$32,56 | US$19,54 | US$43,56 |
-| EV/EBITDA | 14,2× / 11,0× / 16,8× | 20% | 33% | US$31,69 | US$22,79 | US$40,81 |
-| EV/FCFF | 22,9× / 16,4× / 27,2× | 10% | 17% | US$32,93 | US$23,00 | US$41,24 |
-| P/E | 17,6× / 13,5× / 21,1× | 20% | 33% | US$24,39 | US$17,17 | US$32,30 |
-| P/FCFE | 21,1× / 15,3× / 25,1× | 5% | 8% | US$28,90 | US$20,13 | US$36,59 |
-| P/OCF | 18,7× / 12,6× / 21,0× | 5% | 8% | US$32,04 | US$20,93 | US$38,27 |
-| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$29,26 | US$20,57 | US$37,48 |
-| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$30,58 | US$20,16 | US$39,91 |
+| DCF de las historias al presente | — | 40% | — | US$32,54 | US$19,37 | US$43,71 |
+| EV/EBITDA | 13,9× / 10,8× / 16,5× | 20% | 33% | US$35,62 | US$22,76 | US$52,72 |
+| EV/FCFF | 22,8× / 16,6× / 27,4× | 10% | 17% | US$37,76 | US$25,50 | US$54,64 |
+| P/E | 17,5× / 13,5× / 20,9× | 20% | 33% | US$30,01 | US$18,64 | US$45,97 |
+| P/FCFE | 21,1× / 15,3× / 25,2× | 5% | 8% | US$37,07 | US$19,44 | US$59,16 |
+| P/OCF | 18,7× / 12,5× / 21,0× | 5% | 8% | US$39,85 | US$24,66 | US$53,69 |
+| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$34,58 | US$21,72 | US$51,41 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$33,76 | US$20,78 | US$48,33 |
 
 **Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 más los dividendos por acción de FY+1 a FY+3.
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
-| DCF capitalizado a FY+3 antes de distribuciones | — | 40% | — | US$42,63 | US$25,58 | US$57,03 |
-| EV/EBITDA (total con dividendos) | 14,2× / 11,0× / 16,8× | 20% | 33% | US$45,55 | US$30,72 | US$61,90 |
-| EV/FCFF (total con dividendos) | 22,9× / 16,4× / 27,2× | 10% | 17% | US$44,91 | US$28,79 | US$61,11 |
-| P/E (total con dividendos) | 17,6× / 13,5× / 21,1× | 20% | 33% | US$36,41 | US$23,90 | US$51,07 |
-| P/FCFE (total con dividendos) | 21,1× / 15,3× / 25,1× | 5% | 8% | US$40,56 | US$25,82 | US$55,89 |
-| P/OCF (total con dividendos) | 18,7× / 12,6× / 21,0× | 5% | 8% | US$44,05 | US$26,72 | US$56,63 |
-| **Ponderado de múltiplos solos a 3 años sin descontar** (total) | — | 60% | 100% | US$41,86 | US$27,38 | US$57,22 |
-| Dividendos acumulados FY+1 a FY+3 (incluidos en cada múltiplo) | — | — | — | US$4,37 | US$4,14 | US$4,38 |
-| Ponderado de múltiplos solos: precio objetivo exdividendo | — | — | 100% | US$37,48 | US$23,24 | US$52,84 |
-| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$42,16 | US$26,66 | US$57,14 |
+| DCF capitalizado a FY+3 antes de distribuciones | — | 40% | — | US$42,57 | US$25,33 | US$57,18 |
+| EV/EBITDA (total con dividendos) | 13,9× / 10,8× / 16,5× | 20% | 33% | US$51,48 | US$28,11 | US$81,84 |
+| EV/FCFF (total con dividendos) | 22,8× / 16,6× / 27,4× | 10% | 17% | US$52,88 | US$31,24 | US$87,81 |
+| P/E (total con dividendos) | 17,5× / 13,5× / 20,9× | 20% | 33% | US$45,56 | US$24,10 | US$75,30 |
+| P/FCFE (total con dividendos) | 21,1× / 15,3× / 25,2× | 5% | 8% | US$57,55 | US$25,12 | US$95,17 |
+| P/OCF (total con dividendos) | 18,7× / 12,5× / 21,0× | 5% | 8% | US$56,32 | US$30,77 | US$85,26 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** (total) | — | 60% | 100% | US$50,65 | US$27,27 | US$82,05 |
+| Dividendos acumulados FY+1 a FY+3 (incluidos en cada múltiplo) | — | — | — | US$5,89 | US$5,89 | US$5,89 |
+| Ponderado de múltiplos solos: precio objetivo exdividendo | — | — | 100% | US$44,76 | US$21,38 | US$76,16 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$47,42 | US$26,49 | US$72,10 |
 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 <!-- /JMR-HORIZONTES-20261002 -->
@@ -673,7 +793,7 @@ Lynch clasificaría a Nike como una «recuperación» (turnaround) de una empres
 
 ### Howard Marks
 
-Marks preguntaría qué está descontado en el precio y dónde está el consenso. El DCF Base de US$32,56 es inferior al cierre de referencia de US$35,15. La asimetría entre historias es desfavorable a ese precio: Optimista (US$43,56), +23,9%; Conservadora (US$19,54), −44,4%; Disrupción (US$13,12), −62,7%. La diferencia exige estudiar qué mejora adicional descuenta el mercado, sin convertir el sentimiento negativo en una garantía de infravaloración.
+Marks preguntaría qué está descontado en el precio y dónde está el consenso. La acción cayó de US$136 a US$35, salió del S&P 100 y toca mínimos de 52 semanas: el sentimiento es negativo. El DCF Base de este informe (US$32,54) está cerca del precio, lo que sugiere que el mercado ya descuenta una recuperación lenta, no un colapso. La asimetría es moderada: la Optimista (US$43,71) está 24% arriba del precio y la Conservadora (US$19,37), 45% abajo.
 
 - **Veredicto:** Neutral.
 - **Encaje:** Encaja parcialmente.
@@ -761,7 +881,7 @@ Antes de dejar estas preguntas se revisaron el 10-K de FY2026, el comunicado del
 | 2. Modelo de negocio | Sí | Tabla y siete dimensiones económicas |
 | 3. Segmentos y geografía | Sí | Cuatro geografías, Converse y canales; márgenes por canal no publicados (declarado) |
 | 4. Industria y crecimiento | Sí | Mercado, límites y encabezado literal “Las 5 fuerzas de Porter”, con cinco filas; tamaño total del mercado sin fuente pública verificable (declarado) |
-| 5. Calidad del negocio | Sí | Tres estados, ratios y auditoría JMR; flujo de caja FY2026 como proxy, sin afirmar que sea LTM; clasificaciones y conciliación corregidas |
+| 5. Calidad del negocio | Sí | Tres estados, ratios y auditoría JMR; flujo de caja FY2026 como proxy del LTM (el comunicado no trae estado de flujos), con clasificaciones de FY2024-FY2026 corregidas |
 | 6. Ventaja competitiva | Sí | Evidencia, duración y contraevidencia |
 | 7. Competencia | Sí | Seis competidores; New Balance es privada y no publica cifras |
 | 8. Gestión y asignación de capital | Sí | Incentivos, gobierno y seis usos de capital |
@@ -774,4 +894,4 @@ Antes de dejar estas preguntas se revisaron el 10-K de FY2026, el comunicado del
 | 15. Qué vigilar | Sí | 10 indicadores con umbrales |
 | 16. Preguntas abiertas | Sí | Seis preguntas específicas |
 | 17. Fuentes | Sí | Primarias de la SEC con fecha y enlace; secundarias justificadas |
-| 18. Control de calidad final | Sí | Esta tabla; conciliación de resultados con la hoja corregida y limitaciones explícitas |
+| 18. Control de calidad final | Sí | Esta tabla |

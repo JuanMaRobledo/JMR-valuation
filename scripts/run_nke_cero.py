@@ -106,7 +106,7 @@ def step_assumptions() -> None:
         "B20": 0,         # el reembolso de aranceles por cobrar (US$684M al 31-may) ya se cobró en buena parte: está en caja
         # Acciones: 1.483,5M (portada del 10-K, 8-jul-2026) + 12,5M RSU sin consolidar (10-K FY26).
         "B22": "='Income Statement'!L27+12,5",
-        "B24": 0.22,      # LTM 20,7%; guía FY27 "mid-20s": punto intermedio
+        "B24": 0.25,      # guía FY27 ~25% (corrección del 2-oct-2026); LTM 20,7% solo como dato histórico
         "B35": RF_1001,
         "B38": "Yes", "B39": 76.8, "B40": 96.44, "B41": 5.1, "B42": 0.331,  # 10-K FY26: opciones y volatilidad
     }, "Datos base NKE desde cero (10-K FY26, comunicado 1T FY27)", bk)
