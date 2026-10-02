@@ -9,11 +9,12 @@ maestra y en cada valoracion:
 
 1. Hoja 'Descuento de múltiplos' (se reconstruye entera):
    - Por metodo (EV/EBITDA, EV/FCFF, P/E, P/FCFE, P/OCF), escenario y
-     horizonte n = 1, 2, 3:
-         VP_n = (Precio objetivo FY+n + Dividendos acumulados FY+1..FY+n) / (1 + Ke)^n
-     Los dividendos se suman nominales (simplificacion decidida); el total
-     de cada horizonte ya viene asi de las hojas de multiplos (filas 12, 23
-     y 34, columnas F:H). 5 metodos x 3 horizontes = 15 VP por escenario.
+     horizonte n = 1, 2, 3, cada dividendo se descuenta en su año de pago
+     (prompts del 2-oct-2026):
+         VP_n = Precio objetivo FY+n / (1 + Ke)^n + suma(Dividendo FY+t / (1 + Ke)^t), t = 1..n
+     El total precio + dividendos de cada horizonte viene de las hojas de
+     multiplos (filas 12, 23 y 34, columnas F:H) y los dividendos acumulados
+     de la fila de arriba (11, 22 y 33). 5 metodos x 3 horizontes = 15 VP por escenario.
    - Consolidado por metodo: promedio simple de los 3 VP (por defecto) o
      solo el de 3 años (celda C6, lista desplegable).
    - Multiplos consolidados = promedio de los 5 metodos con sus pesos del
@@ -22,6 +23,8 @@ maestra y en cada valoracion:
      el valor intrinseco es el DCF
      (pesos de la categoria de empresa, 'Resumen de Valoración' I5:U11).
    - Chequeo: VP a 3 años < precio FY+3 sin descontar, por metodo y total.
+   - FY+3 sin descontar: ponderado DCF capitalizado a FY+3 (DCF hoy x (1 + Ke)^3,
+     antes de distribuciones) + multiplos FY+3 (fila 50).
    Ke = 'Cost of capital worksheet'!B63 (costo del patrimonio del DCF, el
    mismo que usa el Resumen para llevar el DCF a FY+3), con entrada manual
    en C5. Es la tasa correcta para un precio por accion (patrimonio); el
@@ -40,6 +43,9 @@ la hoja queda listada como "personalizada".
 
 Uso:
     PYTHONPATH=.:scripts python scripts/discount_multiples.py --sheet-id ID [--dry-run]
+    PYTHONPATH=.:scripts python scripts/discount_multiples.py --sheet-id ID --solo-dividendos
+        (solo reescribe las formulas VP, los textos y la fila 50; respeta el resto de la hoja,
+         p. ej. la fila 38 enlazada a 'Escenarios e historias')
     PYTHONPATH=.:scripts python scripts/discount_multiples.py --targets-json targets.json [--dry-run]
 """
 from __future__ import annotations
@@ -78,7 +84,7 @@ SCENARIOS = (("Conservador", 12, "B86", "C"), ("Base", 23, "B35", "D"), ("Optimi
 FIRST_ROW = {"Conservador": 11, "Base": 20, "Optimista": 29}  # primera fila de metodos de cada bloque
 KE, CRIT, DEFAULT_CRIT, ONLY3 = "$B$5", "$B$6", "Promedio 1-3 años", "Solo 3 años"
 SUM_TITLE, SUM_HDR, SUM_DCF, SUM_MULT, SUM_W, SUM_PRICE, SUM_DISC, SUM_MOS = 36, 37, 38, 39, 40, 41, 42, 43
-CHK_TITLE, CHK_HDR, CHK_NOM, CHK_PV, CHK_OK = 45, 46, 47, 48, 49
+CHK_TITLE, CHK_HDR, CHK_NOM, CHK_PV, CHK_OK, CHK_W = 45, 46, 47, 48, 49, 50
 NOTE_ROW = 51
 NCOL = 11
 
@@ -89,6 +95,7 @@ class Layout:
     ',' como separador (locale es_MX) o tienen todo una fila mas arriba."""
     sheets: tuple[str, ...] = tuple(s for s, _ in METHODS)        # nombre real de cada hoja de multiplo
     src_rows: tuple[int, int, int] = (12, 23, 34)                  # "Total Target Price + Dividends"
+    div_rows: tuple[int, int, int] | None = (11, 22, 33)           # "Cumulative Dividends/Share" (None = no hay)
     res_dcf_row: int = 6
     res_rows: tuple[int, ...] = tuple(r for _, r in METHODS)        # filas de los 5 multiplos en el Resumen
     dcf_refs: tuple[str, str, str] = ("B86", "B35", "B137")         # DCF hoy en 'Valuation output'
@@ -143,16 +150,20 @@ def detect_layout(sh) -> tuple[Layout | None, str]:
     if has_coc:
         ranges.append("'Cost of capital worksheet'!A50:A80")
     vr = sh.values_batch_get(ranges, params={"valueRenderOption": "FORMULA"})["valueRanges"]
-    src = None
+    src, divs = None, None
     for v in vr[:5]:
-        rows = tuple(i + 1 for i, r in enumerate(v.get("values", [])) if r and "Total Target Price" in str(r[0]))
+        vals = v.get("values", [])
+        rows = tuple(i + 1 for i, r in enumerate(vals) if r and "Total Target Price" in str(r[0]))
         if len(rows) != 3 or (src and rows != src):
             return None, f"filas 'Total Target Price' no reconocidas en {names}: {rows}"
         src = rows
+        ok = all(r >= 2 and vals[r - 2] and "Dividend" in str(vals[r - 2][0]) for r in rows)
+        divs = tuple(r - 1 for r in rows) if ok and divs is not False else False
+    divs = divs or None
     res = [r + [""] * (7 - len(r)) for r in vr[5].get("values", [])]
     col_a = [str(r[0]).strip() for r in res]
-    # el rótulo puede ser "DCF Damodaran" o "DCF Damodaran (llevado a FY+3)"
-    dcf_rows = [i for i, v in enumerate(col_a) if v.startswith("DCF Damodaran")]
+    # el rótulo puede ser "DCF Damodaran", "DCF Damodaran (llevado a FY+3)" o "DCF capitalizado FY+3"
+    dcf_rows = [i for i, v in enumerate(col_a) if v.startswith(("DCF Damodaran", "DCF capitalizado"))]
     if not dcf_rows:
         return None, "Resumen sin fila 'DCF Damodaran'"
     dcf_row = dcf_rows[0] + 1
@@ -162,9 +173,10 @@ def detect_layout(sh) -> tuple[Layout | None, str]:
     refs = []
     for c in (2, 3, 4):
         m = re.search(r"'Valuation output'!\$?B\$?(\d+)", str(res[dcf_row - 1][c]))
-        if not m:
+        e = re.search(r"'Escenarios e historias'!\$?H\$?(\d+)", str(res[dcf_row - 1][c]))
+        if not (m or e):
             return None, f"DCF del Resumen sin referencia a 'Valuation output': {res[dcf_row - 1][c]}"
-        refs.append(f"B{m.group(1)}")
+        refs.append(f"B{m.group(1)}" if m else f"'Escenarios e historias'!H{e.group(1)}")
     sep = ";" if ";" in str(res[dcf_row - 1][1]) else ","
     mos = next((f"G{i + 1}" for i, r in enumerate(res) if str(r[5]).startswith("Margen de Seguridad")), None)
     if not mos:
@@ -191,7 +203,7 @@ def detect_layout(sh) -> tuple[Layout | None, str]:
         if not row:
             return None, "Resumen sin precio de referencia"
         price = f"{R}!B{row}"
-    return Layout(sheets=tuple(names), src_rows=src, res_dcf_row=dcf_row,
+    return Layout(sheets=tuple(names), src_rows=src, div_rows=divs, res_dcf_row=dcf_row,
                   res_rows=tuple(range(dcf_row + 1, dcf_row + 6)), dcf_refs=tuple(refs), ke_expr=ke_expr,
                   ke_label=ke_label, mos_ref=mos, price_ref=price, title_expr=title, sep=sep), ""
 
@@ -200,16 +212,27 @@ HEADERS = ["Método", "Peso total", "Peso en múltiplos", "Precio + div. FY+1", 
            "Precio + div. FY+3", "VP 1 año", "VP 2 años", "VP 3 años", "Consolidado hoy", "Chequeo VP3 < FY+3"]
 
 
-def _method_row(sheet: str, res_row: int, r: int, first: int, src_row: int) -> list[str]:
+def _vp_formulas(sheet: str, r: int, div_row: int | None) -> list[str]:
+    """VP a 1, 2 y 3 años. D:F traen precio + dividendos acumulados; cada dividendo se
+    descuenta en su año de pago: VP_n = Precio_n/(1+Ke)^n + suma(Div_t/(1+Ke)^t)."""
+    if div_row is None:  # hoja sin fila de dividendos: el total se descuenta entero
+        return [f'=IFERROR(D{r}/(1+{KE});"")', f'=IFERROR(E{r}/(1+{KE})^2;"")', f'=IFERROR(F{r}/(1+{KE})^3;"")']
+    c1, c2 = f"N({sheet}!F{div_row})", f"N({sheet}!G{div_row})"  # dividendos acumulados FY+1 y FY+1..FY+2
+    return [
+        f'=IFERROR(D{r}/(1+{KE});"")',
+        f'=IFERROR((E{r}-{c1})/(1+{KE})^2+{c1}/(1+{KE});"")',
+        f'=IFERROR((F{r}-{c2})/(1+{KE})^3+{c1}/(1+{KE})+({c2}-{c1})/(1+{KE})^2;"")',
+    ]
+
+
+def _method_row(sheet: str, res_row: int, r: int, first: int, src_row: int, div_row: int | None = None) -> list[str]:
     last = first + len(METHODS) - 1
     return [
         f"={R}!A{res_row}",
         f"={R}!B{res_row}",
         f"=IFERROR(B{r}/SUM($B${first}:$B${last});0)",
         f"={sheet}!F{src_row}", f"={sheet}!G{src_row}", f"={sheet}!H{src_row}",
-        f'=IFERROR(D{r}/(1+{KE});"")',
-        f'=IFERROR(E{r}/(1+{KE})^2;"")',
-        f'=IFERROR(F{r}/(1+{KE})^3;"")',
+        *_vp_formulas(sheet, r, div_row),
         f'=IFERROR(IF({CRIT}="{ONLY3}";I{r};AVERAGE(G{r}:I{r}));"")',
         f'=IF(NOT(ISNUMBER(I{r}));"";IF(F{r}<=0;"n/a (≤ 0)";IF(I{r}<F{r};"OK";"REVISAR")))',
     ]
@@ -234,9 +257,7 @@ def sheet_values(lay: Layout = DEFAULT) -> list[list[str]]:
             rows[r - 1][c0 + i] = v
 
     put(1, [f"={lay.title_expr}&\" · Múltiplos a valor presente (1, 2 y 3 años)\""])
-    put(2, ["Cada múltiplo da un precio objetivo al cierre de FY+1, FY+2 y FY+3 (múltiplo × métrica proyectada ÷ acciones). "
-            "Se le suman los dividendos por acción acumulados hasta ese año, sin descontarlos uno a uno, y el total se trae a hoy "
-            "con el costo del patrimonio: VP = (Precio FY+n + Dividendos FY+1..FY+n) ÷ (1 + Ke)^n."])
+    put(2, [INTRO])
     put(4, ["Parámetro", "Valor usado", "Entrada manual", "Automático"])
     put(5, ["Tasa de descuento: Ke (costo del patrimonio del DCF)", "=IF(ISNUMBER(C5);C5;D5)", "",
             f"={lay.ke_expr}"])
@@ -248,12 +269,13 @@ def sheet_values(lay: Layout = DEFAULT) -> list[list[str]]:
         put(first - 2, [name.upper()])
         put(first - 1, HEADERS)
         for i in range(len(METHODS)):
-            put(first + i, _method_row(lay.q(i), lay.res_rows[i], first + i, first, lay.src_rows[k]))
+            put(first + i, _method_row(lay.q(i), lay.res_rows[i], first + i, first, lay.src_rows[k],
+                                       lay.div_rows[k] if lay.div_rows else None))
         put(first + len(METHODS), _total_row(first + len(METHODS), first))
 
     put(SUM_TITLE, ["VALOR HOY · DCF (VALOR INTRÍNSECO) + MÚLTIPLOS DESCONTADOS (SECUNDARIO)"])
     put(SUM_HDR, ["Concepto", "Peso", "Conservador", "Base", "Optimista"])
-    put(SUM_DCF, ["DCF · valor intrínseco (valor presente)", f"={R}!B{lay.res_dcf_row}"] + [f"='Valuation output'!{d}" for d in lay.dcf_refs])
+    put(SUM_DCF, ["DCF · valor intrínseco (valor presente)", f"={R}!B{lay.res_dcf_row}"] + [f"={d}" if "!" in d else f"='Valuation output'!{d}" for d in lay.dcf_refs])
     put(SUM_MULT, ["Múltiplos consolidados (valor presente)", f"=SUM({R}!B{lay.res_rows[0]}:B{lay.res_rows[-1]})"]
         + [f"=J{FIRST_ROW[n] + len(METHODS)}" for n, *_ in SCENARIOS])
     put(SUM_W, ["Ponderado DCF + múltiplos (secundario)", f"=B{SUM_DCF}+B{SUM_MULT}"]
@@ -273,14 +295,33 @@ def sheet_values(lay: Layout = DEFAULT) -> list[list[str]]:
     put(CHK_OK, ["VP a 3 años < FY+3 sin descontar", ""]
         + [f'=IF(NOT(ISNUMBER({c}{CHK_PV}));"";IF({c}{CHK_NOM}<=0;"n/a (≤ 0)";IF({c}{CHK_PV}<{c}{CHK_NOM};"OK";"REVISAR")))'
            for c in "CDE"])
-
-    put(NOTE_ROW, [f"Fuentes: precio + dividendos de cada horizonte = filas {', '.join(map(str, lay.src_rows))} (columnas F:H) "
-                   f"de {', '.join(lay.sheets)}; dividendos por acción de «Financials Multiples». Ke = {lay.ke_label} "
-                   "(C5 lo reemplaza). C6 = «Solo 3 años» usa solo el VP a 3 años; vacío = promedio simple de 1, 2 y 3 años."])
-    put(NOTE_ROW + 1, ["Los pesos salen de la categoría de empresa del Resumen (I5:U11): el DCF conserva su peso y el de los "
-                       "múltiplos se reparte entre los 5 métodos en la misma proporción. Resumen C32:E47 muestra DCF, múltiplos "
-                       "consolidados, ponderado y cada método por separado."])
+    put(CHK_W, _fy3_weighted_row(lay))
+    put(NOTE_ROW, [_note(lay)])
+    put(NOTE_ROW + 1, [NOTE2])
     return _localize(rows, lay.sep)
+
+
+INTRO = ("Cada múltiplo da un precio objetivo al cierre de FY+1, FY+2 y FY+3 (múltiplo × métrica proyectada ÷ acciones) "
+         "más los dividendos por acción hasta ese año. Se trae a hoy con el costo del patrimonio descontando cada dividendo "
+         "en su año de pago: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n.")
+NOTE2 = ("Los pesos salen de la categoría de empresa del Resumen (I5:U11): el DCF conserva su peso y el de los múltiplos se "
+         "reparte entre los 5 métodos en la misma proporción (múltiplos solos = 100% entre los múltiplos). Fila 50: DCF "
+         "capitalizado a FY+3 (DCF hoy × (1 + Ke)^3, antes de distribuciones; riqueza capitalizada, no un precio exdividendo) "
+         "con su peso + múltiplos FY+3 sin descontar. Resumen C32:E47 muestra DCF, múltiplos consolidados, ponderado y cada método.")
+
+
+def _note(lay: Layout) -> str:
+    divs = (f"dividendos acumulados = filas {', '.join(map(str, lay.div_rows))}" if lay.div_rows
+            else "sin fila de dividendos: el total se descuenta entero")
+    return (f"Fuentes: precio + dividendos de cada horizonte = filas {', '.join(map(str, lay.src_rows))} (columnas F:H) "
+            f"de {', '.join(lay.sheets)}; {divs} (dividendos por acción de «Financials Multiples»). Ke = {lay.ke_label} "
+            "(C5 lo reemplaza). C6 = «Solo 3 años» usa solo el VP a 3 años; vacío = promedio simple de 1, 2 y 3 años.")
+
+
+def _fy3_weighted_row(lay: Layout) -> list[str]:
+    d = lay.res_dcf_row
+    return ["Ponderado DCF capitalizado + múltiplos FY+3 (sin descontar)", ""] + [
+        f'=IFERROR($B${SUM_DCF}*{R}!{c}{d}+$B${SUM_MULT}*{c}{CHK_NOM};"")' for c in "CDE"]
 
 
 RES_FIRST, RES_LAST = 28, 50
@@ -348,7 +389,7 @@ def _format_sheet(ws) -> list[dict]:
         q.fmt(first, last, 7, 10, backgroundColor=ZEBRA)
         q.fmt(last, last, 1, NCOL, textFormat=_txt(10, bold=True), backgroundColor=GREEN_BG)
         q.borders(first - 1, last, 1, NCOL)
-    for title, hdr, last in ((SUM_TITLE, SUM_HDR, SUM_MOS), (CHK_TITLE, CHK_HDR, CHK_OK)):
+    for title, hdr, last in ((SUM_TITLE, SUM_HDR, SUM_MOS), (CHK_TITLE, CHK_HDR, CHK_W)):
         q.fmt(title, title, 1, NCOL, textFormat=_txt(11, bold=True, color=NAVY))
         q.fmt(hdr, hdr, 1, 5, backgroundColor=HEAD_BG, textFormat=_txt(10, bold=True), horizontalAlignment="CENTER")
         q.fmt(hdr + 1, last, 3, 5, numberFormat={"type": "NUMBER", "pattern": NUM}, horizontalAlignment="RIGHT")
@@ -359,6 +400,7 @@ def _format_sheet(ws) -> list[dict]:
     q.fmt(SUM_DISC, SUM_DISC, 3, 5, numberFormat={"type": "NUMBER", "pattern": PCT})
     q.fmt(SUM_W, SUM_W, 1, 5, textFormat=_txt(10, bold=True), backgroundColor=GREEN_BG)
     q.fmt(CHK_OK, CHK_OK, 3, 5, horizontalAlignment="CENTER", textFormat=_txt(10, bold=True))
+    q.fmt(CHK_W, CHK_W, 1, 5, textFormat=_txt(10, bold=True), backgroundColor=GREEN_BG)
     q.width(1, 1, 340)
     q.width(2, NCOL, 112)
     q.sheet_props(frozen_rows=0, hide_grid=True, tab=NAVY)
@@ -456,10 +498,53 @@ def apply(client, sheet_id: str, *, dry_run: bool) -> dict:
     return {"estado": "aplicada", **check(sh, lay)}
 
 
+def patch_dividends(client, sheet_id: str, *, dry_run: bool) -> dict:
+    """Prompts del 2-oct-2026: solo cambia el descuento de dividendos (G:I de los 15 metodos),
+    los textos (filas 2, 51 y 52) y agrega la fila 50 (ponderado FY+3 sin descontar). No toca
+    el resto de la hoja ni el Resumen."""
+    sh = _open(client, sheet_id)
+    if SHEET not in {ws.title for ws in sh.worksheets()}:
+        return {"estado": "omitida", "motivo": f"no tiene la hoja {SHEET}"}
+    lay, why = detect_layout(sh)
+    if lay is None:
+        return {"estado": "omitida", "motivo": why}
+    ws = sh.worksheet(SHEET)
+    cur = ws.get(f"A1:K{NOTE_ROW + 1}", value_render_option="FORMULA")
+    a = lambda r: str(cur[r - 1][0]) if r - 1 < len(cur) and cur[r - 1] else ""  # noqa: E731
+    if not a(5).startswith("Tasa de descuento") or a(CHK_OK) != "VP a 3 años < FY+3 sin descontar" or a(CHK_W).strip() \
+            and not a(CHK_W).startswith("Ponderado DCF capitalizado"):
+        return {"estado": "personalizada", "motivo": "la hoja no tiene la distribucion conocida"}
+    data = []
+    for k, (name, *_rest) in enumerate(SCENARIOS):
+        first = FIRST_ROW[name]
+        for i in range(len(METHODS)):
+            r = first + i
+            vp = _vp_formulas(lay.q(i), r, lay.div_rows[k] if lay.div_rows else None)
+            data.append({"range": f"{Q}!G{r}:I{r}", "values": _localize([vp], lay.sep)})
+    data.append({"range": f"{Q}!A2", "values": [[INTRO]]})
+    data.append({"range": f"{Q}!A{CHK_W}:E{CHK_W}", "values": _localize([_fy3_weighted_row(lay)], lay.sep)})
+    data.append({"range": f"{Q}!A{NOTE_ROW}:A{NOTE_ROW + 1}", "values": [[_note(lay)], [NOTE2]]})
+    if dry_run:
+        return {"estado": "dry-run", "celdas": data, "layout": lay.__dict__}
+    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+    bp = BACKUP_DIR.parent / "descuento_multiples_2026-10-02" / f"{sheet_id}.json"
+    bp.parent.mkdir(parents=True, exist_ok=True)
+    if not bp.exists():
+        bp.write_text(json.dumps({"descuento": cur}, ensure_ascii=False, indent=1))
+    sh.values_batch_update({"valueInputOption": "USER_ENTERED", "data": data})
+    q = Req(ws.id)
+    q.fmt(CHK_W, CHK_W, 1, 5, textFormat=_txt(10, bold=True), backgroundColor=GREEN_BG)
+    q.fmt(CHK_W, CHK_W, 3, 5, numberFormat={"type": "NUMBER", "pattern": NUM}, horizontalAlignment="RIGHT")
+    q.borders(CHK_HDR, CHK_W, 1, 5)
+    sh.batch_update({"requests": q.items})
+    time.sleep(2)
+    return {"estado": "dividendos", **check(sh, lay)}
+
+
 def check(sh, lay: Layout | None = None) -> dict:
     """Lee los resultados y verifica VP3 < FY+3 y que las columnas FY+3 coincidan con el Resumen."""
     lay = lay or detect_layout(sh)[0] or DEFAULT
-    vr = sh.values_batch_get([f"{Q}!A11:K34", f"{Q}!C{SUM_DCF}:E{CHK_OK}", f"{R}!C{lay.res_rows[0]}:E{lay.res_rows[-1]}"],
+    vr = sh.values_batch_get([f"{Q}!A11:K34", f"{Q}!C{SUM_DCF}:E{CHK_W}", f"{R}!C{lay.res_rows[0]}:E{lay.res_rows[-1]}"],
                              params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
     grid = vr[0].get("values", [])
     summ = vr[1].get("values", [])
@@ -481,7 +566,8 @@ def check(sh, lay: Layout | None = None) -> dict:
         col = lambda r: (summ[r][k] if r < len(summ) and k < len(summ[r]) else "")  # noqa: E731
         out["escenarios"][name] = {"metodos": per, "dcf_hoy": col(0), "multiplos_hoy": col(1),
                                    "ponderado_hoy": col(2), "multiplos_fy3_nominal": col(CHK_NOM - SUM_DCF),
-                                   "multiplos_vp3": col(CHK_PV - SUM_DCF), "chequeo": col(CHK_OK - SUM_DCF)}
+                                   "multiplos_vp3": col(CHK_PV - SUM_DCF), "chequeo": col(CHK_OK - SUM_DCF),
+                                   "ponderado_fy3": col(CHK_W - SUM_DCF)}
     return out
 
 
@@ -504,6 +590,8 @@ def main(argv: list[str]) -> int:
     g.add_argument("--targets-json", help="JSON con [[id, nombre], ...]")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--check-only", action="store_true", help="Solo lee y verifica, no escribe")
+    ap.add_argument("--solo-dividendos", action="store_true",
+                    help="Solo descuento de dividendos año a año, textos y fila 50 (prompts 2-oct-2026)")
     ap.add_argument("--report", default=str(_ROOT / "reference" / "descuento_multiples_2026-09-29_informe.json"))
     args = ap.parse_args(argv)
 
@@ -518,6 +606,8 @@ def main(argv: list[str]) -> int:
             continue
         if args.check_only:
             rep = {"estado": "verificada", **check(_open(client, sid))}
+        elif args.solo_dividendos:
+            rep = _retry(lambda: patch_dividends(client, sid, dry_run=args.dry_run))
         else:
             rep = _retry(lambda: apply(client, sid, dry_run=args.dry_run))
         base = rep.get("escenarios", {}).get("Base", {})

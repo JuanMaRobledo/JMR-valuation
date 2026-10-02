@@ -721,6 +721,42 @@ Frente al DCF esperado de las historias (US$20,90), el complemento, el precio es
 | Revisión | Resultados del 3T26 (noviembre de 2026) |  |
 
 La decisión (comprar, mantener o vender) la registras tú con el selector «Mi decisión» de la app; este análisis no la toma por ti.
+<!-- JMR-HORIZONTES-20261002 -->
+### Valor por acción en dos horizontes
+
+Moneda: US$ por acción. Fecha de valoración: 2026-10-01. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Crecimiento»: DCF 60% y múltiplos 40% (EV/EBITDA 10%, EV/FCFF 15%, P/E 5%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,38%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$7,06) y no se inventa para ellos.
+
+**Valor intrínseco principal: DCF Base al presente, US$24,03 por acción.** Complemento: DCF esperado por probabilidades US$20,90. Múltiplos y ponderados son lecturas secundarias.
+
+**Tabla 1 · Valor por acción descontado al presente (2026-10-01).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
+
+| Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
+|---|---|---:|---:|---:|---:|---:|
+| DCF de las historias al presente | — | 60% | — | US$24,03 | US$16,68 | US$32,43 |
+| EV/EBITDA | 22,8× / 18,4× / 25,9× | 10% | 25% | US$43,06 | US$32,76 | US$54,81 |
+| EV/FCFF | 25,1× / 23,2× / 28,5× | 15% | 38% | US$33,50 | US$29,60 | US$42,43 |
+| P/E | 27,8× / 23,5× / 32,8× | 5% | 13% | US$43,84 | US$35,04 | US$58,11 |
+| P/FCFE | 25,0× / 21,8× / 27,9× | 5% | 13% | US$39,48 | US$32,02 | US$50,03 |
+| P/OCF | 23,6× / 19,9× / 27,2× | 5% | 13% | US$37,42 | US$30,32 | US$47,95 |
+| **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$38,42 | US$31,46 | US$49,12 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$29,78 | US$22,59 | US$39,11 |
+
+**Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 (la hoja no proyecta dividendos: precio objetivo exdividendo = total).
+
+| Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
+|---|---|---:|---:|---:|---:|---:|
+| DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$31,44 | US$21,82 | US$42,44 |
+| EV/EBITDA | 22,8× / 18,4× / 25,9× | 10% | 25% | US$52,95 | US$39,45 | US$73,63 |
+| EV/FCFF | 25,1× / 23,2× / 28,5× | 15% | 38% | US$41,57 | US$35,75 | US$57,66 |
+| P/E | 27,8× / 23,5× / 32,8× | 5% | 13% | US$53,64 | US$41,98 | US$77,87 |
+| P/FCFE | 25,0× / 21,8× / 27,9× | 5% | 13% | US$48,36 | US$38,60 | US$67,32 |
+| P/OCF | 23,6× / 19,9× / 27,2× | 5% | 13% | US$46,26 | US$36,54 | US$64,62 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 40% | 100% | US$47,36 | US$37,91 | US$66,26 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$37,81 | US$28,26 | US$51,96 |
+
+Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
+<!-- /JMR-HORIZONTES-20261002 -->
+
 
 ## 13. Filosofías de inversión
 
@@ -856,7 +892,7 @@ Antes de dejar estas preguntas se revisaron el 10-K 2025, el 10-Q del 2T26, los 
 | 9. Catalizadores | Sí | Al menos cuatro con horizonte y confirmación |
 | 10. Riesgos | Sí | Al menos seis, escenarios y FODA |
 | 11. Bulls say / Bears say | Sí | Cinco argumentos por lado, conclusión cualitativa y “Síntesis final” explícita |
-| 12. Valor con criterio Damodaran | Sí | Historia y filtro, tasas base del tamaño, piezas del valor, cuatro historias activas con probabilidades y valor esperado, pre-mortem, indicadores, precio solo al final y registro de decisión |
+| 12. Valor con criterio Damodaran | Sí | Historia y filtro, tasas base del tamaño, piezas del valor, cuatro historias activas con probabilidades y valor esperado, pre-mortem, indicadores, precio solo al final, registro de decisión y dos tablas de horizontes (presente y FY+3) con métodos, múltiplos solos y DCF + múltiplos |
 | 13. Filosofías de inversión | Sí | Cinco marcos con formato completo e independiente |
 | 14. Noticias y eventos recientes | Sí | Solo 90 días, materialidad y efecto en tesis |
 | 15. Qué vigilar | Sí | 10 indicadores con umbrales |

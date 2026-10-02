@@ -28,7 +28,7 @@ currency: "USD"
 
 Los casos técnicos de la plantilla (Conservador US$21,26, Base US$24,24, Optimista US$36,05) se conservan como calibración y para los múltiplos auxiliares; no son escenarios activos.
 
-Precio relativo (secundario): los múltiplos consolidados a valor presente dan US$31,46 (Conservador), US$38,42 (Base) y US$49,12 (Optimista). El ponderado opcional DCF + múltiplos (60/40, categoría «Crecimiento») da US$22,59, US$29,78 y US$39,11. Ninguno de los dos es valor intrínseco.
+Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos al presente US$38,42 / US$31,46 / US$49,12 y a 3 años sin descontar US$47,36 / US$37,91 / US$66,26; ponderado DCF + múltiplos (60%/40%, categoría «Crecimiento») al presente US$29,78 / US$22,59 / US$39,11 y a 3 años sin descontar US$37,81 / US$28,26 / US$51,96, con el DCF capitalizado a FY+3 (US$31,44 / US$21,82 / US$42,44). Ninguno es valor intrínseco; las dos tablas completas están en «Resultados».
 
 ## 2. Historia y visión externa
 
@@ -121,18 +121,43 @@ Regla común: Base = 0,5 × promedio(A, B) + 0,5 × C (λ = 0,5); Conservador y 
 | P/OCF | 42,88 | 45,13 | 46,26 | 39,20 | 37,72 | 35,35 | 37,42 |
 | **Consolidado** | 44,25 | 46,20 | 47,36 | 40,45 | 38,62 | 36,19 | **38,42** |
 
-| Valores presentes por método | Conservador | Base | Optimista |
-|---|---:|---:|---:|
-| EV/EBITDA | 32,76 | 43,06 | 54,81 |
-| EV/FCFF | 29,60 | 33,50 | 42,43 |
-| P/E | 35,04 | 43,84 | 58,11 |
-| P/FCFE | 32,02 | 39,48 | 50,03 |
-| P/OCF | 30,32 | 37,42 | 47,95 |
-| Múltiplos consolidados hoy | 31,46 | 38,42 | 49,12 |
-| DCF hoy (historias) | 16,68 | 24,03 | 32,43 |
-| Ponderado opcional (DCF 60% + múltiplos 40%) | 22,59 | 29,78 | 39,11 |
+<!-- JMR-HORIZONTES-20261002 -->
+### Valor por acción en dos horizontes
 
-Ke de descuento de los múltiplos: 9,38%. Chequeo VP a 3 años < FY+3 sin descontar: OK en los tres casos (Base 36,19 < 47,36). MOS 35% sobre el DCF esperado: US$13,59.
+Moneda: US$ por acción. Fecha de valoración: 2026-10-01. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Crecimiento»: DCF 60% y múltiplos 40% (EV/EBITDA 10%, EV/FCFF 15%, P/E 5%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,38%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$7,06) y no se inventa para ellos.
+
+**Valor intrínseco principal: DCF Base al presente, US$24,03 por acción.** Complemento: DCF esperado por probabilidades US$20,90. Múltiplos y ponderados son lecturas secundarias.
+
+**Tabla 1 · Valor por acción descontado al presente (2026-10-01).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
+
+| Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
+|---|---|---:|---:|---:|---:|---:|
+| DCF de las historias al presente | — | 60% | — | US$24,03 | US$16,68 | US$32,43 |
+| EV/EBITDA | 22,8× / 18,4× / 25,9× | 10% | 25% | US$43,06 | US$32,76 | US$54,81 |
+| EV/FCFF | 25,1× / 23,2× / 28,5× | 15% | 38% | US$33,50 | US$29,60 | US$42,43 |
+| P/E | 27,8× / 23,5× / 32,8× | 5% | 13% | US$43,84 | US$35,04 | US$58,11 |
+| P/FCFE | 25,0× / 21,8× / 27,9× | 5% | 13% | US$39,48 | US$32,02 | US$50,03 |
+| P/OCF | 23,6× / 19,9× / 27,2× | 5% | 13% | US$37,42 | US$30,32 | US$47,95 |
+| **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$38,42 | US$31,46 | US$49,12 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$29,78 | US$22,59 | US$39,11 |
+
+**Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 (la hoja no proyecta dividendos: precio objetivo exdividendo = total).
+
+| Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
+|---|---|---:|---:|---:|---:|---:|
+| DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$31,44 | US$21,82 | US$42,44 |
+| EV/EBITDA | 22,8× / 18,4× / 25,9× | 10% | 25% | US$52,95 | US$39,45 | US$73,63 |
+| EV/FCFF | 25,1× / 23,2× / 28,5× | 15% | 38% | US$41,57 | US$35,75 | US$57,66 |
+| P/E | 27,8× / 23,5× / 32,8× | 5% | 13% | US$53,64 | US$41,98 | US$77,87 |
+| P/FCFE | 25,0× / 21,8× / 27,9× | 5% | 13% | US$48,36 | US$38,60 | US$67,32 |
+| P/OCF | 23,6× / 19,9× / 27,2× | 5% | 13% | US$46,26 | US$36,54 | US$64,62 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 40% | 100% | US$47,36 | US$37,91 | US$66,26 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$37,81 | US$28,26 | US$51,96 |
+
+Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
+<!-- /JMR-HORIZONTES-20261002 -->
+
+Ke de descuento de los múltiplos: 9,38% (cada dividendo descontado en su año de pago). Chequeo VP a 3 años < FY+3 sin descontar: OK en los tres casos (Base 36,19 < 47,36). MOS 35% sobre el DCF esperado: US$13,59.
 
 ## 8. DCF frente a múltiplos
 
@@ -182,7 +207,7 @@ DCF inverso: crecimiento anual de ingresos de los años 1-5 que justifica el pre
 | Beta 1,00 (usada) | 11,2% (31%) | 8,3% (47%) | 5,4% (64%) |
 | Beta 1,55 (regresión a 5 años) | 13,9% (20%) | 10,8% (33%) | 7,8% (49%) |
 
-Frente al DCF Base (US$24,03), el precio está 14% por encima; frente al esperado (US$20,90), 31% por encima. Con la beta y el margen de la Base, el precio pide crecer ~8,3% anual en los años 1-5, frente al 5,9% de la Base: una historia entre la Base y la Optimista. Crecimiento implícito de los múltiplos Base frente al del DCF en FY+3: EV/EBITDA 5,8% frente a 3,7%; EV/FCFF 5,0% frente a 3,7%; P/E 6,1% frente a 3,6%; P/FCFE 5,2% frente a 3,1%; P/OCF 5,0% frente a 3,1%. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como una ventaja duradera, por una recuperación de CELSIUS más rápida o por nuevas compras exitosas; ninguna de esas lecturas está hoy en los datos.
+Frente al DCF Base (US$24,03), el precio está 14% por encima; frente al esperado (US$20,90), 31% por encima. Con la beta y el margen de la Base, el precio pide crecer ~8,3% anual en los años 1-5, frente al 5,9% de la Base: una historia entre la Base y la Optimista. Crecimiento implícito de los múltiplos Base frente al del DCF en FY+3: EV/EBITDA 5,8% frente a 3,7%; EV/FCFF 5,0% frente a 3,7%; P/E 6,1% frente a 3,5%; P/FCFE 5,2% frente a 3,1%; P/OCF 5,0% frente a 3,1%. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como una ventaja duradera, por una recuperación de CELSIUS más rápida o por nuevas compras exitosas; ninguna de esas lecturas está hoy en los datos.
 
 ## 12. Registro de decisión
 
@@ -231,5 +256,6 @@ La decisión (comprar, mantener o vender) la registra el usuario en la app.
 | Motor = hoja (US$24,24) y pestaña de historias = motor (esperado US$20,90) | Sí |
 | Múltiplos con tres anclas, independientes del DCF | Sí |
 | Chequeo VP a 3 años < FY+3 | Sí |
+| Dos tablas de horizontes (presente y FY+3): métodos, múltiplos solos y DCF + múltiplos; reproducen la hoja y la app | Sí |
 | El precio no aparece antes de la sección 11 | Sí |
 | Estado | Verificado, con salvedades: márgenes por marca no publicados; la participación de competidores privados no está disponible |

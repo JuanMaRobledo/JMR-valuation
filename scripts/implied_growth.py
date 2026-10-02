@@ -135,7 +135,13 @@ def run(tk: str, client) -> dict:
     dcf_hoy = cell("Descuento de múltiplos", "D38") if inp.get("dcfFinanciero") else cell("Valuation output", "B35")
     g15 = [x for x in grid["Valuation output"][3][2:7] if isinstance(x, (int, float))]
     g_ref = st.mean(g15)
-    g_imp = node("crecimientoImplicitoDCF(inp, m, g, d, p)", inp=inp, m=inp["marginBase"], g=g_ref, d=dcf_hoy, p=price)
+    # Calibración (2-oct-2026): el motor no reproduce exactamente el DCF de la hoja cuando esta usa trayectorias por
+    # región, fracción de año o costos restados aparte (NKE con Pace). Se busca el crecimiento que lleva el motor al
+    # precio escalado por motor/hoja en la Base, así el DCF inverso responde a la hoja y no al sesgo del motor.
+    eng0 = None if inp.get("dcfFinanciero") else node(
+        "runDCF(inp, inp.growthBase, inp.marginBase, inp.growthY1Base, inp.marginY1Base)", inp=inp)
+    k = (eng0 / dcf_hoy) if (isinstance(eng0, (int, float)) and eng0 > 0 and dcf_hoy) else 1.0
+    g_imp = node("crecimientoImplicitoDCF(inp, m, g, d, p)", inp=inp, m=inp["marginBase"], g=g_ref, d=dcf_hoy, p=price * k)
 
     jb = anc["justificado"]["Base"]
     params = {"ke": jb["ke"], "wacc": jb["wacc_4_10"], "roe": jb["roe_fy3"],
@@ -145,7 +151,7 @@ def run(tk: str, client) -> dict:
     # EV: precio = (M × métrica − deuda neta) / acciones FY+3; patrimonio: precio = M × métrica / acciones FY+3.
     dcf_fy3 = None
     for row in grid["Resumen de Valoración"]:
-        if row and str(row[0]).startswith("DCF Damodaran") and len(row) > 3 and isinstance(row[3], (int, float)):
+        if row and str(row[0]).startswith(("DCF Damodaran", "DCF capitalizado")) and len(row) > 3 and isinstance(row[3], (int, float)):
             dcf_fy3 = row[3]
             break
     nd = sum((cell("Input sheet", a) or 0) * sg for a, sg in (("B16", 1), ("B19", -1), ("B20", -1), ("B21", 1)))

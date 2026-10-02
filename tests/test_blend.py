@@ -156,6 +156,22 @@ def test_discount_multiple_matches_sheet():
     assert math.isclose(discount_multiple(415.1537921453624, _ADBE_KE, 1), 373.3321759603354, rel_tol=1e-12)
 
 
+# NKE Base EV/EBITDA (hoja del 2-oct-2026): cada dividendo se descuenta en su año de pago.
+_NKE_KE = 0.0939984536737729
+_NKE_DIV = (1.3698586663039776, 1.4318585634784549, 1.572368545926228)
+_NKE_TOTAL = (30.9223582535809, 37.81294503593795, 45.55270249575698)
+_NKE_VP = (28.265449690298976, 31.70176773659534, 35.0994947291899)
+
+
+def test_discount_multiple_discounts_each_dividend_in_its_year():
+    for n in (1, 2, 3):
+        assert math.isclose(discount_multiple(_NKE_TOTAL[n - 1], _NKE_KE, n, _NKE_DIV), _NKE_VP[n - 1], rel_tol=1e-12)
+    # sin dividendos coincide con descontar el total
+    assert math.isclose(discount_multiple(100.0, 0.1, 3), 100.0 / 1.1 ** 3)
+    # descontar los dividendos en su año da mas valor que descontarlos todos al final
+    assert discount_multiple(_NKE_TOTAL[2], _NKE_KE, 3, _NKE_DIV) > _NKE_TOTAL[2] / (1 + _NKE_KE) ** 3
+
+
 def test_consolidate_horizons_average_and_three_years():
     assert consolidate_horizons((1.0, 2.0, 3.0)) == 2.0
     assert consolidate_horizons((1.0, 2.0, 3.0), CONSOLIDATE_3Y) == 3.0
