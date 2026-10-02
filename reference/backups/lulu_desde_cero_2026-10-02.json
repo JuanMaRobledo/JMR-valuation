@@ -1,0 +1,1310 @@
+{
+ "Input sheet!B1": {
+  "before": "=A1",
+  "after": "=A1",
+  "reason": "Bugs de la plantilla (TICKER vacio; tasa efectiva fija en Dec '23)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!L29",
+  "after": 0.3,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Cost of capital worksheet!B24": {
+  "before": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "after": "=IF(B22=\"Direct Input\";B23/(1+(1-B39)*(C61/B61));IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65))))",
+  "reason": "B24 con Direct Input; tabla multibusiness vacia"
+ },
+ "Financials Multiples!E22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E4-D4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F4-E4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G4-F4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H22": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H4-G4)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E43-D43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F43-E43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G43-F43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H61": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H43-G43)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!E101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(E83-D83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!F101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(F83-E83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!G101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(G83-F83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Financials Multiples!H101": {
+  "before": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "after": "=((('Balance Sheet'!$I$10-'Balance Sheet'!$I$5)-('Balance Sheet'!$I$24-'Balance Sheet'!$I$20-'Balance Sheet'!$I$21))/'Income Statement'!$I$3+(('Balance Sheet'!$J$10-'Balance Sheet'!$J$5)-('Balance Sheet'!$J$24-'Balance Sheet'!$J$20-'Balance Sheet'!$J$21))/'Income Statement'!$J$3+(('Balance Sheet'!$K$10-'Balance Sheet'!$K$5)-('Balance Sheet'!$K$24-'Balance Sheet'!$K$20-'Balance Sheet'!$K$21))/'Income Statement'!$K$3)/3*(H83-G83)",
+  "reason": "Bug: NWC proyectado con ΔNWC/ΔIngresos (explota con ingresos planos) y referencias a H42/H82 vacias"
+ },
+ "Balance Sheet!L3": {
+  "before": 1389.7,
+  "after": 1389.737,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L4": {
+  "before": 0,
+  "after": 0,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L5": {
+  "before": 1389.7,
+  "after": 1389.737,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L6": {
+  "before": 190.7,
+  "after": 171.164,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L8": {
+  "before": 190.7,
+  "after": 171.164,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L9": {
+  "before": 2264.8,
+  "after": 2384.6860000000006,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L10": {
+  "before": 4262.7,
+  "after": 3945.587,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L11": {
+  "before": 2033.7,
+  "after": 2046.363,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L12": {
+  "before": 6.3,
+  "after": 3.469999999999999,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L13": {
+  "before": 184.9,
+  "after": 184.9,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L14": {
+  "before": 0,
+  "after": 0,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L15": {
+  "before": 1969.1,
+  "after": 2304.258,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L16": {
+  "before": 8456.7,
+  "after": 8484.578,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L18": {
+  "before": 331.4,
+  "after": 346.717,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L20": {
+  "before": 0,
+  "after": 0,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L21": {
+  "before": "",
+  "after": 366.649,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L22": {
+  "before": 0,
+  "after": 277.318,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L23": {
+  "before": 1556.1,
+  "after": 810.967,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L24": {
+  "before": 1887.5,
+  "after": 1801.651,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L25": {
+  "before": 0,
+  "after": 0,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L26": {
+  "before": 1499.7,
+  "after": 1774.478,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L27": {
+  "before": 107.6,
+  "after": 117.275,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L28": {
+  "before": 1607.4,
+  "after": 1891.7530000000002,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L29": {
+  "before": 3494.9,
+  "after": 3693.404,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L31": {
+  "before": 669.4,
+  "after": 669.4,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L32": {
+  "before": -230.7,
+  "after": -230.7,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L33": {
+  "before": 4522.6,
+  "after": 4352.474,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L34": {
+  "before": 4961.8,
+  "after": 4791.174,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L35": {
+  "before": 4961.8,
+  "after": 4791.174,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!L36": {
+  "before": 8456.7,
+  "after": 8484.578,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!K21": {
+  "before": "",
+  "after": 298.724,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!K22": {
+  "before": 0,
+  "after": 316.632,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Balance Sheet!K23": {
+  "before": 1556.1,
+  "after": 940.7439999999999,
+  "reason": "LTM = balance al 2-ago-2026 (10-Q del 2T26)"
+ },
+ "Income Statement!L27": {
+  "before": 105.6,
+  "after": 110.71,
+  "reason": "Acciones al 28-ago-2026: 105,594M comunes + 5,116M intercambiables (portada del 10-Q)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46296,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 95.86,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B13": {
+  "before": "='Income Statement'!L12",
+  "after": "='Income Statement'!L12-134,5+40",
+  "reason": "EBIT normalizado LULU (ver TARIFF_REFUND, PROXY_COSTS, CEO_TRANSITION)"
+ },
+ "Input sheet!B14": {
+  "before": "='Income Statement'!L16",
+  "after": "='Income Statement'!L15",
+  "reason": "Deuda e intereses con fórmula (valen 0: sin deuda financiera)"
+ },
+ "Input sheet!B16": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+  "after": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+  "reason": "Deuda e intereses con fórmula (valen 0: sin deuda financiera)"
+ },
+ "Input sheet!C16": {
+  "before": "=IF('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26='Balance Sheet'!K20+'Balance Sheet'!K21+'Balance Sheet'!K25+'Balance Sheet'!K26;'Balance Sheet'!J20+'Balance Sheet'!J21+'Balance Sheet'!J25+'Balance Sheet'!J26;'Balance Sheet'!K20+'Balance Sheet'!K21+'Balance Sheet'!K25+'Balance Sheet'!K26)",
+  "after": "='Balance Sheet'!K20+'Balance Sheet'!K25",
+  "reason": "Deuda e intereses con fórmula (valen 0: sin deuda financiera)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B20": {
+  "before": "='Balance Sheet'!L14",
+  "after": 0,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B22": {
+  "before": "='Income Statement'!L27",
+  "after": "='Income Statement'!L27+0,759+0,288",
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0499,
+  "after": 0.0524,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B38": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B39": {
+  "before": "",
+  "after": 1.525,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B40": {
+  "before": "",
+  "after": 258.81,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B41": {
+  "before": 7,
+  "after": 4.0,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B42": {
+  "before": 0.45,
+  "after": 0.437,
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Input sheet!B60": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base LULU desde cero (10-Q 2T26, 10-K FY2025, comunicado del 3-sep-2026)"
+ },
+ "Operating lease converter!E5": {
+  "before": 295,
+  "after": 405.987,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B8": {
+  "before": 287,
+  "after": 370.705,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B9": {
+  "before": 235,
+  "after": 391.976,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B10": {
+  "before": 194,
+  "after": 334.124,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B11": {
+  "before": 151,
+  "after": 287.375,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B12": {
+  "before": 98,
+  "after": 182.005,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B13": {
+  "before": 605,
+  "after": 537.635,
+  "reason": "Arrendamientos operativos: gasto FY2025 y compromisos al 1-feb-2026 (10-K FY2025, nota de arrendamientos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0423,
+  "after": 0.0409,
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Country equity risk premiums!C2": {
+  "before": "Updated January 1, 2026",
+  "after": "Damodaran, implied ERP September 1, 2026",
+  "reason": "ERP de mercado maduro (Damodaran, 1-sep-2026)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Beta LULU: marca única de moda deportiva discrecional; la de Apparel (0,79) mezcla fabricantes diversificados"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Will Input",
+  "reason": "Costo de capital LULU: beta de industria, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B27": {
+  "before": 0.06,
+  "after": 0.0409,
+  "reason": "Costo de capital LULU: beta de industria, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 5,
+  "reason": "Costo de capital LULU: beta de industria, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "Costo de capital LULU: beta de industria, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": 0.059,
+  "reason": "Costo de capital LULU: beta de industria, ERP sep-2026, Kd de arrendamientos"
+ },
+ "Valuation output!B33": {
+  "before": "=B31-B32",
+  "after": "=B31-B32-N('Input sheet'!$B$76)",
+  "reason": "Fórmula estándar con preferentes (B76 vacío en LULU)"
+ },
+ "Valuation output!B84": {
+  "before": "=B82-B83",
+  "after": "=B82-B83-N('Input sheet'!$B$76)",
+  "reason": "Fórmula estándar con preferentes (B76 vacío en LULU)"
+ },
+ "Valuation output!B135": {
+  "before": "=B133-B134",
+  "after": "=B133-B134-N('Input sheet'!$B$76)",
+  "reason": "Fórmula estándar con preferentes (B76 vacío en LULU)"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.15,
+  "reason": "Beta LULU: marca única de moda deportiva discrecional; la de Apparel (0,79) mezcla fabricantes diversificados"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": -0.065,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.125,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.039,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.1845,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.8,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.8,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B49": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Input sheet!B50": {
+  "before": 0.2,
+  "after": 0.126,
+  "reason": "Supuestos Base LULU desde cero = historia Base (ver reference/damodaran/LULUN.json)"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa LULU"
+ },
+ "Descuento de múltiplos!A38": {
+  "before": "DCF · valor intrínseco (valor presente)",
+  "after": "DCF activo hoy · escenarios de las historias",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!C38": {
+  "before": "='Valuation output'!B86",
+  "after": "='Escenarios e historias'!H6",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!D38": {
+  "before": "='Valuation output'!B35",
+  "after": "='Escenarios e historias'!H5",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!E38": {
+  "before": "='Valuation output'!B137",
+  "after": "='Escenarios e historias'!H8",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!A43": {
+  "before": "Compra con MOS sobre el ponderado (secundario)",
+  "after": "Precio con MOS sobre el valor esperado",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!C43": {
+  "before": "=IFERROR(C40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!D43": {
+  "before": "=IFERROR(D40*(1-$B$43);\"\")",
+  "after": "='Escenarios e historias'!H14",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Descuento de múltiplos!E43": {
+  "before": "=IFERROR(E40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente 1-oct-2026)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "lululemon athletica inc.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Heidi O'Neill (CEO desde el 8-sep-2026; antes en Nike). CFO: Meghan Frank. Presidenta ejecutiva del directorio: Marti Morfitt.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Ropa deportiva técnica premium (Damodaran: Apparel)",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://shop.lululemon.com  |  IR: https://corporate.lululemon.com/investors",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Marca de ropa deportiva técnica (yoga, running, entrenamiento) para mujeres (~63% de las ventas) y hombres (~24%), con accesorios y calzado (~13%). Ventas LTM a jul-2026 de US$11.094M: tiendas propias ~45%, e-commerce ~44% y otros canales. 825 tiendas propias y ~39.000 empleados. Sin deuda financiera.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Américas",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "US$7.652M LTM (69%). Ventas −8% y comparables −12% en el 2T26 por menos tráfico, conversión y ticket. Margen del segmento 32,6% en 2025 (38,0% en 2024).",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "China continental",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "US$1.879M LTM (17%). +29% en 2025 (comparables +20%); +4% en el 2T26 (−2% en moneda constante). Margen del segmento 40,0% en 2025, el más alto de la empresa.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Resto del mundo",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "US$1.563M LTM (14%): APAC y EMEA. +16% en 2025; +5% en el 2T26. Margen del segmento 23,0% en 2025.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Estrategia",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Plan de recuperación de Américas en tres pilares (creación de producto, activación de producto y habilitación de la empresa), más ventas a precio lleno y menos rebajas; expansión internacional con tiendas propias.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Marca premium y rentable",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "Margen de segmento de 23-40% y ROIC de la hoja de 27% LTM aun en la caída; margen bruto de ~55-59%.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Crecimiento internacional",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "China continental y el resto del mundo crecieron 29% y 16% en 2025 y ya son 31% de las ventas; 25 tiendas nuevas en un año.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Balance y recompras",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Caja de US$1.390M, sin deuda financiera; US$1.158M de recompras en los últimos doce meses (~11% de la capitalización).",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Américas pierde clientes",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Comparables −12% en el 2T26; Alo Yoga, Vuori, Nike y Adidas compiten por el mismo cliente.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Aranceles y de minimis",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "Pagó US$230M de aranceles IEEPA (recuperó US$134,5M); los aranceles nuevos y el fin de la exención de minimis encarecen el e-commerce de EE.UU., que se despacha desde Canadá.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Gobierno y transición",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "CEO nueva desde sep-2026 tras ocho meses de co-CEO interinos; disputa por poderes con el fundador Chip Wilson resuelta con un acuerdo.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-Q del 2T26 de lululemon athletica inc. (2-ago-2026, presentado el 3-sep-2026), 10-Q del 1T26 y 10-K 2025 (1-feb-2026), SEC EDGAR; comunicado de resultados del 2T26 (3-sep-2026); 8-K del nombramiento de Heidi O'Neill (22-abr-2026), del acuerdo de cooperación con Chip Wilson (27-may-2026), de la junta anual (24-jun-2026) y del directorio (8-sep-2026); Damodaran (betas y márgenes por industria, ene-2026; ERP sep-2026); UST 10 años y precio de cierre del 1-oct-2026.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 1 de julio de 2026 – 1 de octubre de 2026",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T26: ventas −4%, comparables −9% (Américas −12%), BPA US$2,92",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Incluye US$134,5M de devolución de aranceles (+560 pb de margen bruto y US$0,86 de BPA); gastos de venta y administración 41,7% de las ventas.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "2026: ventas −5% a −7% y BPA US$9,48-9,73; 3T26: ventas −10% a −11%",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "La guía incluye US$0,86 de la devolución de aranceles y no supone recompras futuras; tasa de impuestos ~30%.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Gestión",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Heidi O'Neill asume como CEO (8-sep-2026); sale el director de IA y tecnología (13-ago-2026)",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Meghan Frank y André Maestrini dejan de ser co-CEO interinos; O'Neill se suma al directorio.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Gobierno",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Acuerdo de cooperación con Chip Wilson (26-may-2026): dos directores nuevos y uno más con experiencia en ropa",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Laura Gentile y Marc Maurer entran al directorio tras la junta del 25-jun-2026.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Capital",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Recompra de 2,7 millones de acciones por US$330M en el 2T26",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Autorización total de US$4.000M; acciones comunes e intercambiables de 110,7 millones al 28-ago-2026.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "EBIT normalizado",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "El EBIT GAAP LTM (US$1.979M) incluye US$134,5M de devolución de aranceles y US$40M de costos de una vez (disputa por poderes y transición del CEO). El modelo usa el EBIT normalizado (US$1.884M, 17,0%).",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Arrendamientos y acciones",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "Arrendamientos operativos como deuda (VP US$1.717M; +US$161M al EBIT). Las acciones incluyen 5,1 millones de acciones intercambiables de Lulu Canadian Holding que el pipeline omitía.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Historias",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Cuatro historias activas: Base (45%), Conservadora (30%), Disrupción (10%) y Optimista (15%). Los casos Conservador/Base/Optimista de la plantilla quedan como referencia técnica.",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Ventaja competitiva",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "Ventaja que se desvanece: marca de 28 años muy rentable, con Américas en caída. ROIC terminal 12,6% (punto medio entre el costo de capital terminal y el ROIC de la industria).",
+  "reason": "Contenido cualitativo LULU desde cero"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 39000,
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B12",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Valuation output'!B42",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": -0.06,
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadísticas LULU (fórmulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "lululemon: una marca premium que deja de crecer en Américas y se apoya en lo internacional",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "lululemon vende ~US$11.100M al año con un margen operativo normalizado de ~17%, pero Américas (69% de las ventas) cae y la guía de 2026 implica un margen de ~13%. La historia Base: un año más de caída en Américas, estabilización desde 2027, crecimiento de 6-8% en China y el resto del mundo y un margen que sube a 17% en cinco años, sin volver al 20-24% de 2022-2025. La marca gana muy por encima de su costo de capital, pero la ventaja se desvanece: ROIC terminal de 12,6%.",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 −6,5% (guía 2026 y Américas −11%); años 2-5 ~3,9% con lo internacional.",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 12,5% (guía 2026 sin la devolución de aranceles); objetivo 17% (18,45% con arrendamientos) en 5 años.",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "30% (tasa efectiva de 2025 y guía de 2026), que se mantiene en el largo plazo.",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,8 en los años 1-10: entre la industria (1,5) y la rotación propia (~2,2).",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC de la hoja 27% LTM; terminal 12,6%: ventaja que se desvanece.",
+  "reason": "Historia LULU"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Ke 9,94% (rf 5,24% + beta 1,15 × ERP 4,09%); sin deuda financiera; arrendamientos al 5,9%; WACC ~9,18%.",
+  "reason": "Historia LULU"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": -0.065,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Guía 2026 (ventas −5% a −7%; 3T26 −10% a −11%) y Américas −11% en los próximos doce meses.",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.125,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Guía 2026 sin la devolución de aranceles: BPA ~US$8,7 → margen operativo ~13%.",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.039,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Historia Base: Américas 0-3%, China continental y resto del mundo 6-8%.",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.1845,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "17% reportado + 1,45 pp de arrendamientos; 2022-2025 fue 20-24%.",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "Recuperación de precio lleno y gastos en cinco años.",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.8,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Entre Apparel (1,5) y la rotación propia (~2,2).",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.8,
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Igual que los años 1-5.",
+  "reason": "Recomendaciones LULU"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Chequeo de independencia (2026-10-02): múltiplos consolidados hoy (Base) 135,70 frente a DCF hoy 171,34 (−21%). Lectura del 2-oct-2026: se completa después de aplicar los múltiplos.",
+  "after": "Evaluación LULU (2-oct-2026): los múltiplos Base salen de tres anclas (historia desde Feb '25, la etapa de caída de Américas; peers sin Under Armour, sin ajuste; y el justificado, λ = 0,5). Quedan ~21% por debajo del DCF Base: la propia historia reciente de lululemon (7× EBITDA en Feb '26) y los peers deprimidos tiran hacia abajo. El DCF es el valor intrínseco; los múltiplos son precio relativo.",
+  "reason": "Evaluación de múltiplos LULU"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ],
+   [],
+   [],
+   [
+    "ORIGEN DE LOS MÚLTIPLOS (prompt de valoración v3, 2026-10-02)"
+   ],
+   [
+    "Método",
+    "Aplica",
+    "A · historia",
+    "B · peers (ajustada)",
+    "C · justificado (Cons/Base/Opt)",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "EV/EBITDA",
+    "Sí",
+    "mediana Feb '25, Feb '26, LTM (etapa actual) = 7,2x",
+    "mediana 11,0x (n=6: NKE 11,0x, ADDYY 12,4x, ONON 19,2x, DECK 7,3x, BIRK 11,0x, GAP 7,6x) × 1,00 = 11,0x",
+    "6,0x / 10,5x / 12,1x",
+    7.05,
+    9.79,
+    12.62
+   ],
+   [
+    "EV/FCFF",
+    "Sí",
+    "mediana Feb '25, Feb '26, LTM (etapa actual) = 21,7x (EV/FCF × 1,03 = FCF después de intereses ÷ FCFF)",
+    "mediana 18,5x (n=6: NKE 24,8x, ADDYY 17,6x, ONON 21,1x, DECK 8,7x, BIRK 19,5x, GAP 10,9x) × 1,00 = 18,5x",
+    "13,0x / 23,9x / 25,6x",
+    14.1,
+    22.01,
+    24.93
+   ],
+   [
+    "P/E",
+    "Sí",
+    "mediana Feb '25, Feb '26, LTM (etapa actual) = 13,2x",
+    "mediana 15,9x (n=6: NKE 15,8x, ADDYY 18,3x, ONON 21,2x, DECK 11,2x, BIRK 15,9x, GAP 6,8x) × 1,00 = 15,9x",
+    "11,1x / 16,9x / 18,8x",
+    11.74,
+    15.71,
+    19.92
+   ],
+   [
+    "P/FCFE",
+    "Sí",
+    "mediana Feb '25, Feb '26, LTM (etapa actual) = 21,1x",
+    "mediana 17,1x (n=6: NKE 22,6x, ADDYY 15,5x, ONON 23,3x, DECK 9,6x, BIRK 18,7x, GAP 8,3x) × 1,00 = 17,1x",
+    "12,0x / 20,6x / 21,9x",
+    12.67,
+    19.85,
+    23.48
+   ],
+   [
+    "P/OCF",
+    "Sí",
+    "mediana Feb '25, Feb '26, LTM (etapa actual) = 12,1x",
+    "mediana 12,9x (n=6: NKE 17,2x, ADDYY 12,3x, ONON 19,0x, DECK 9,0x, BIRK 13,6x, GAP 5,1x) × 1,00 = 12,9x",
+    "7,2x / 12,1x / 13,9x",
+    8.5,
+    12.32,
+    15.54
+   ],
+   [
+    "Criterios: A: lululemon cotizó a 15-40 veces el EBITDA mientras crecía 15-25% al año (2017-2024). Desde 2025 Américas cae (comparables −3% en 2025 y −12% en el 2T26), el margen baja de 23,7% a ~17% normalizado y la guía de 2026 es de caída de ventas: la etapa actual es Feb '25, Feb '26 y el LTM. Su mediana mezcla el fin de la etapa anterior con el mínimo actual. B: ropa y calzado deportivo con datos de yfinance al 2-oct-2026: Nike, Adidas, On, Deckers, Birkenstock y Gap. Se excluye Under Armour (margen operativo negativo). Sin ajuste: margen operativo mayor que la mediana de los peers (17% objetivo frente a 7-15% de Nike, Adidas, Gap y Deckers), +5%; crecimiento a FY+3 menor que el de On, Adidas y Birkenstock, −5%; riesgo propio parecido (una marca, sin deuda). λ = 0,5: la lululemon de FY+3 (crecimiento de un dígito medio y margen ~16%) es distinta de la de la etapa de alto crecimiento; el justificado (C) usa los supuestos de cada escenario y equilibra la historia y los peers."
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

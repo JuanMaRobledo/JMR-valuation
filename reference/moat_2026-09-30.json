@@ -349,6 +349,21 @@
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.152,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin el reembolso de aranceles IEEPA ni las indemnizaciones de FY2026, balance al 31-ago-2026 y arrendamientos como deuda."
+  },
+  "LULUN": {
+   "fuentes": "Marca premium de 28 años en ropa deportiva técnica, con comunidad propia y venta directa (tiendas propias y e-commerce)",
+   "evidencia": "ROIC de la hoja: 51-52% en 2023-2024, 36% en 2025 y 27% LTM; margen operativo de 20-24% en 2022-2025 frente a ~17% normalizado LTM",
+   "amenaza": "Comparables de Américas −12% en el 2T26; Alo Yoga, Vuori, Nike y Adidas compiten por el mismo cliente; aranceles y fin de la exención de minimis",
+   "roic_actual": 0.266,
+   "roic_industria": 0.1577,
+   "industria_proxy": null,
+   "costo_capital_terminal": 0.0933,
+   "roic_terminal": 0.126,
+   "roic_terminal_antes": null,
+   "nota": "Hoja nueva desde cero (2-oct-2026): (1) gana muy por encima de su costo de capital, (2) marca probada de 28 años y (3) la ventaja se desvanece de forma visible → punto medio entre el costo de capital terminal (9,33%) y el ROIC de la industria (15,8%, menor que el actual): 12,6%.",
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.1577,
+   "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin la devolución de aranceles IEEPA ni los costos de la disputa por poderes y de la transición del CEO; balance al 2-ago-2026; arrendamientos como deuda."
   }
  }
 }
