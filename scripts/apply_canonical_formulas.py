@@ -10,7 +10,7 @@ También: Resumen C6:E6 = DCF de las historias × (1 + Ke)^3 (prompts del 2-oct-
 
 Se respetan supuestos y datos: 'Input sheet' (incluida la deuda B16, que depende de si los arrendamientos entran por el
 conversor), múltiplos objetivo J8/J19/J30, parámetros de escenario
-escritos como número en 'Valuation output' (filas 45-47, 55, 57, 96-98, 106, 108), el % de EBIT de otros
+de referencia histórica en 'Valuation output' (filas 96-98), el % de EBIT de otros
 ingresos proyectado en 'Financials Multiples' (E11/E50/E90; el promedio de 3 años de la maestra falla con EBIT histórico
 casi nulo, p. ej. SHAK), precio fijado (Resumen B3/C25) y el
 bloque del Resumen desde la fila 28. PAGS (banco, DCF FCFE financiero) conserva su bloque de múltiplos.
@@ -35,7 +35,7 @@ EH = "'Escenarios e historias'"
 COLS = "EFGH"  # FY+0..FY+3 en 'Financials Multiples' <-> C..F en la pestaña de historias
 # bloque de 'Financials Multiples' -> fila de ingresos en la pestaña de historias
 FM_BLOCKS = {4: 52, 43: 28, 83: 100}  # Conservador / Base / Optimista
-VO_ASSUMPTION_ROWS = {45, 46, 47, 55, 57, 96, 97, 98, 106, 108}
+VO_ASSUMPTION_ROWS = {96, 97, 98}  # referencia histórica; desde el 2-oct-2026 los bloques leen sus historias
 EV_ROWS = (10, 21, 32)
 CAP = "*(1+'Descuento de múltiplos'!$B$5)^3"
 
@@ -43,19 +43,16 @@ CAP = "*(1+'Descuento de múltiplos'!$B$5)^3"
 def contract(ev_formulas: dict[str, dict[str, str]], vo_b41: str, zones: dict[str, str]) -> dict[tuple[str, str], str]:
     c: dict[tuple[str, str], str] = {}
     fm = "Financials Multiples"
-    for r_rev, s0 in FM_BLOCKS.items():
-        r_g, r_m, r_t, r_nwc, r_sh, r_shg = r_rev + 1, r_rev + 4, r_rev + 10, r_rev + 18, r_rev + 27, r_rev + 28
-        for i, col in enumerate(COLS):
-            e = "CDEF"[i]
-            c[(fm, f"{col}{r_rev}")] = f"={EH}!{e}{s0}"
-            c[(fm, f"{col}{r_g}")] = f"={EH}!{e}{s0 + 1}"
-            c[(fm, f"{col}{r_m}")] = f"={EH}!{e}{s0 + 2}"
-            c[(fm, f"{col}{r_t}")] = f"=IFERROR(1-{EH}!{e}{s0 + 6}/{EH}!{e}{s0 + 4};{EH}!{e}{s0 + 3})"
-            c[(fm, f"{col}{r_nwc}")] = f"={col}{r_nwc - 2}+{col}{r_nwc - 1}+{EH}!{e}{s0 + 8}"
-            if i:
-                prev = COLS[i - 1]
-                c[(fm, f"{col}{r_sh}")] = f"={prev}{r_sh}"
-                c[(fm, f"{col}{r_shg}")] = f'=IFERROR({col}{r_sh}/{prev}{r_sh}-1;"")'
+    import link_vo_to_stories as lv  # 2-oct-2026: cada escenario de múltiplos desde su bloque Damodaran
+    for d in lv.fm_links():
+        t, a = d["range"].split("!")
+        c[(t.strip("'"), a)] = d["values"][0][0]
+    for r_rev in FM_BLOCKS:
+        r_sh, r_shg = r_rev + 27, r_rev + 28
+        for i, col in enumerate(COLS[1:], start=1):
+            prev = COLS[i - 1]
+            c[(fm, f"{col}{r_sh}")] = f"={prev}{r_sh}"
+            c[(fm, f"{col}{r_shg}")] = f'=IFERROR({col}{r_sh}/{prev}{r_sh}-1;"")'
     for tab, d in ev_formulas.items():
         c.update({(tab, a): f for a, f in d.items()})
     c[("Valuation output", "B41")] = vo_b41
@@ -81,7 +78,7 @@ def keep(tab: str, addr: str, cur, tk: str) -> bool:
         return True
     if tab == "Financials Multiples" and addr in ("E11", "E50", "E90"):
         return True  # % de EBIT proyectado de otros ingresos/intereses: supuesto con valor por defecto (promedio 3 años)
-    if tk == "PAGS" and (tab == "Financials Multiples" or (tab, addr) == ("Valuation output", "A1")):
+    if tk == "PAGS" and tab in ("Financials Multiples", "Valuation output"):
         return True
     return False
 

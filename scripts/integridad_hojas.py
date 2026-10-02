@@ -6,7 +6,7 @@ Lee fórmulas y valores de las pestañas clave de cada hoja y reporta:
   1. celdas con error (#REF!, #VALUE!, #DIV/0!, #N/A, #NAME?, #NUM!, #ERROR!);
   2. números escritos a mano donde al menos el 75% de las hojas tiene una fórmula (así apareció el margen Base de
      'Valuation output'!C46, que no seguía a 'Input sheet'!B30 en 10 hojas);
-  3. 'Valuation output'!C46 sin enlazar a 'Input sheet'!B30;
+  3. 'Valuation output'!C46 sin enlazar al margen objetivo de la historia Base (D5 de la pestaña de historias);
   4. acciones preferentes en 'Input sheet'!B76 que 'Valuation output'!B33 o la pestaña «Escenarios e historias» no restan;
   5. la pestaña «Escenarios e historias» (H5:H8 y H10) frente al último cálculo guardado del motor
      (reference/damodaran/<T>_resultado.json): una diferencia indica que la hoja cambió después del cálculo;
@@ -112,18 +112,17 @@ def main(argv: list[str]) -> int:
                     if isinstance(c, str) and ERR.match(c):
                         hallazgos[t].append(f"error {tab}!{col(j)}{i + 1} = {c}")
         vo, inp = x["Valuation output"], x["Input sheet"]
-        # 3. C46
-        if formula(vo, "C46") != "='Input sheet'!B30":
-            hallazgos[t].append(f"Valuation output!C46 no está enlazado a Input sheet!B30 ({formula(vo, 'C46')})")
+        # 3. C46: margen objetivo del bloque Base = el de la historia Base (2-oct-2026; PAGS conserva la Input sheet)
+        ok46 = ("='Input sheet'!B30",) if t == "PAGS" else ("='Escenarios e historias'!$D$5",)
+        if formula(vo, "C46") not in ok46:
+            hallazgos[t].append(f"Valuation output!C46 no está enlazado a {ok46[0][1:]} ({formula(vo, 'C46')})")
         # 4. preferentes
         pref = celda(inp, "B76")
         if isinstance(pref, (int, float)) and pref:
-            for c in ("B33", "B84", "B135"):  # Base, Conservador y Optimista técnicos
+            for c in ("B33", "B84", "B135", "B188"):  # Base, Conservador, Optimista y Disrupción
                 if "B$76" not in str(formula(vo, c)):
                     hallazgos[t].append(f"Input sheet!B76 = {pref} (preferentes) no se resta en Valuation output!{c}")
-            esc = x.get("Escenarios e historias")
-            if esc and "B$76" not in str(formula(esc, "B43")):
-                hallazgos[t].append("la pestaña «Escenarios e historias» no resta las preferentes (B76)")
+            # desde el 2-oct-2026 las historias se calculan en 'Valuation output' (la pestaña de historias no tiene DCF)
         # 5. pestaña frente al motor
         rp = _ROOT / "reference" / "damodaran" / f"{t}_resultado.json"
         esc = x.get("Escenarios e historias")

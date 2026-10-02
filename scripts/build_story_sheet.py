@@ -171,7 +171,7 @@ def build(tk: str, gc) -> None:
         s2 = h.get("s2c")
         put(i, [h["nombre"] + (f": {h['descripcion']}" if h.get("descripcion") else ""), h["prob"],
                 f"=(G{R['rev']}/B{R['rev']})^(1/5)-1", h["margen"],
-                "" if fin else (s2 if s2 else f"={VO}!C40"), "" if fin else f"={VO}!H40", roic,
+                "" if fin else (s2 if s2 else f"={IS}!$B$32"), "" if fin else f"={IS}!$B$33", roic,
                 f"=MAX(0;B{R['ps']})", f"=B{i}*H{i}", f"=M{R['g']}"])  # responsabilidad limitada: patrimonio ≥ 0
     put(10, ["DCF esperado por probabilidades · complemento", "=SUM(B5:B8)"] + [""] * 5 + ["=IF(ABS(B10-1)<0,00000001;SUMPRODUCT(B5:B8;H5:H8);NA())"])
     put(11, ["DCF Base · valor intrínseco principal"] + [""] * 6 + ["=H5"])
@@ -229,6 +229,18 @@ def build(tk: str, gc) -> None:
           f"{'OK' if ok else 'DIFERENCIA'}", flush=True)
     if not ok:
         raise SystemExit(f"{tk}: la pestaña no reproduce el motor")
+    if not fin:
+        # 2-oct-2026: las cuatro historias se calculan en 'Valuation output' con la estructura de Damodaran
+        import link_vo_to_stories as lv
+        sh.values_batch_update({"valueInputOption": "USER_ENTERED", "data": lv.plan(sh)})
+        lv.format_block(sh)
+        time.sleep(3)
+        chk = lv.check(sh)
+        bad = {k: v for k, v in chk.items() if not (isinstance(v["dif"], (int, float)) and abs(v["dif"]) < 0.005)}
+        if bad:
+            raise SystemExit(f"{tk}: 'Valuation output' no reproduce las historias: {bad}")
+        lv.apply_phase2(sh)
+        print(f"{tk:5s} historias calculadas en 'Valuation output' (Base, Conservador, Optimista, Disrupción): OK", flush=True)
 
 
 def main(argv: list[str]) -> int:
