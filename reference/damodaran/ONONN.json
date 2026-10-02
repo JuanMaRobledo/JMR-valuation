@@ -1,0 +1,366 @@
+{
+ "ticker": "ONONN",
+ "empresa": "On Holding AG",
+ "fecha": "2026-10-01",
+ "industria_damodaran": "Shoe",
+ "historia": "En cinco a diez años On es una de las cuatro o cinco marcas deportivas globales, con ventas de US$9.000-10.000 millones, liderada por el running premium y con ropa, tenis, fútbol y calzado de estilo de vida como segundas patas. Crece más rápido que el mercado porque todavía tiene poca participación fuera de Norteamérica y de Europa central, y porque vende cada vez más directo al consumidor, con un margen bruto de ~65% que ninguna marca grande tiene. El margen operativo sube de ~14% a ~16-17% por escala en gastos, pero no llega al de las marcas de lujo porque On debe seguir invirtiendo en atletas, tiendas e innovación para sostener la novedad. Reinvierte poco capital (fabrica con terceros) y empieza a devolver caja. El riesgo es de moda: una marca de 16 años que todavía no atravesó un ciclo completo de pérdida de favor del consumidor.",
+ "filtro": [
+  [
+   "On crece ~15% anual hasta 2031",
+   "Sí",
+   "Sí: +21,6% en moneda constante en el 2T26 y meta de crecimiento de un dígito alto-teens hasta 2029 ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm))",
+   "Probable, desacelerando"
+  ],
+  [
+   "El margen bruto se sostiene en ~65%",
+   "Sí",
+   "Sí: 65,4% en el 2T26 con más venta directa y sin rebajas ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm))",
+   "Probable"
+  ],
+  [
+   "El margen operativo llega a ~16-17%",
+   "Sí",
+   "Sí: la meta de EBITDA ajustado ≥ 22% en 2029 equivale a ~15,5% operativo",
+   "Probable en el caso central"
+  ],
+  [
+   "On llega al margen de Deckers o Birkenstock (23-29%)",
+   "Sí",
+   "Poco: On reinvierte en marca, tiendas y nuevas categorías",
+   "Baja"
+  ]
+ ],
+ "tasas_base_nota": "On está en el tramo de ventas de US$2.000-3.000 millones de dólares de 2015 de The Base Rate Book. La Base ({cagrA} nominal compuesto en cinco años) está en la cola alta de ese tramo: pocas empresas sostienen crecimientos así cinco años, y por eso la Base queda algo por debajo de la meta de la gerencia.",
+ "segmentos": {
+  "Mayoristas": 2312.7,
+  "Directo al consumidor": 1747.5
+ },
+ "crecimiento": {
+  "texto": "Las ventas de los últimos doce meses (julio 2025-junio 2026) suman CHF 3.220 millones, US$4.060 millones al tipo de cambio promedio de esos meses (cálculo propio: 2025 − 1S25 + 1S26, [On, 20-F 2025, 3-mar-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm) y [On, estados intermedios del 1S26 (6-K), 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/onholdingag-20260630_d2.htm)). Mayoristas CHF 1.834 millones y directo al consumidor CHF 1.386 millones. En 2025 las ventas crecieron 30% (CHF 3.014 millones). En el 2T26 crecieron 13,5% en francos y 21,6% en moneda constante: directo al consumidor +34,3%, mayoristas +12,7%; Asia-Pacífico +54,7%, EMEA +20,5% y Américas +13,0% en moneda constante; ropa +56% ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)). La guía de 2026 es un crecimiento de ~20% en moneda constante (CHF 3.470-3.560 millones) y la meta 2026-2029 es un crecimiento de un dígito alto en los «teens» hasta al menos CHF 5.600 millones en 2029 ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)).",
+  "tabla": {
+   "cols": [
+    "CHF millones",
+    "2024",
+    "2025",
+    "LTM jun-26 (cálculo propio)",
+    "2T26 vs 2T25 (moneda constante)"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Mayoristas",
+     "1.375",
+     "1.753",
+     "1.834",
+     "+12,7%"
+    ],
+    [
+     "Directo al consumidor",
+     "943",
+     "1.261",
+     "1.386",
+     "+34,3%"
+    ],
+    [
+     "Total",
+     "2.318",
+     "3.014",
+     "3.220",
+     "+21,6%"
+    ],
+    [
+     "Total en US$ (al promedio de cada período)",
+     "2.635",
+     "3.636",
+     "4.060",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El resultado operativo NIIF de los últimos doce meses es CHF 444 millones, 13,8% de las ventas (14,1% en el 1S26); ya descuenta los pagos en acciones (~2% de las ventas) y la depreciación de los derechos de uso. El margen bruto subió de 59,6% en 2023 a 62,8% en 2025 y 65,4% en el 2T26 por más venta directa y precio lleno, aun absorbiendo los aranceles de EE.UU. ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)). La guía de 2026 es EBITDA ajustado de 19,5-20% y la meta de 2029, ≥ 22% con margen bruto ≥ 65% ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)). Comparables: Deckers ganó 23% y Birkenstock ~29% en su último ejercicio, con margen bruto parecido pero menos inversión en crecimiento; Nike ~7% normalizado."
+ },
+ "reinversion": {
+  "texto": "On fabrica con terceros: el capex fue CHF 79 millones en 2025 (2,6% de las ventas). El capital invertido (patrimonio + arrendamientos − caja) es ~US$1.570 millones al 30-jun-2026: rota ~2,6 veces las ventas. Se usa 2,3 en los años 1-5 (más tiendas propias, ropa y nuevas categorías) y el promedio de Shoe (2,1) en los años 6-10.",
+  "tabla": {
+   "cols": [
+    "Concepto (CHF millones)",
+    "2024",
+    "2025",
+    "LTM jun-26"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Capex",
+     "65",
+     "79",
+     "96"
+    ],
+    [
+     "Inventarios",
+     "419",
+     "420",
+     "473"
+    ],
+    [
+     "Flujo operativo (después de intereses)",
+     "495",
+     "338",
+     "501"
+    ]
+   ]
+  }
+ },
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,30. La bottom-up de Shoe global (0,89 desapalancada, Damodaran, enero de 2026) reapalancada con los arrendamientos de On da ~0,95; la regresión semanal contra el S&P 500 da 1,58 a dos años y 1,80 desde la salida a bolsa (2021). Se usa un punto intermedio: la industria subestima el riesgo de una marca joven de crecimiento alto, y la regresión está inflada por la volatilidad de los primeros años en bolsa. La tabla muestra el efecto de la beta de la industria."
+ },
+ "historias": [
+  {
+   "id": "A",
+   "tesis": "base",
+   "nombre": "Base · Marca premium global que crece ~15% con margen de 16,5%",
+   "prob": 0.45,
+   "margen": 0.165,
+   "crec": {
+    "Mayoristas": [
+     0.08,
+     0.1,
+     0.1,
+     0.09,
+     0.08
+    ],
+    "Directo al consumidor": [
+     0.3,
+     0.24,
+     0.2,
+     0.17,
+     0.14
+    ]
+   },
+   "tesis_que": "On crece ~17,5% en los próximos doce meses (guía de 2026 con mayoristas contenidos) y ~14% anual en los años 2-5: venta directa +14-24% y mayoristas +8-10%, con Asia y la ropa como motores. El margen operativo sube de 14% a 16,5% en cinco años por escala en gastos, un poco más que la meta de 2029 de la gerencia.",
+   "tesis_contraste": "Crecimiento en moneda constante ≥ 15% en 2027 con margen bruto ≥ 64%."
+  },
+  {
+   "id": "B",
+   "tesis": "conservadora",
+   "nombre": "Conservadora · El ciclo de moda se enfría",
+   "prob": 0.25,
+   "margen": 0.13,
+   "roic_terminal": "costo_capital",
+   "crec": {
+    "Mayoristas": [
+     0.04,
+     0.04,
+     0.04,
+     0.04,
+     0.04
+    ],
+    "Directo al consumidor": [
+     0.2,
+     0.14,
+     0.12,
+     0.1,
+     0.08
+    ]
+   },
+   "tesis_que": "La moda del running premium se desacelera: los mayoristas compran menos, crecen las marcas nuevas y On necesita más marketing para crecer 8-10% anual; el margen operativo se queda en 13%.",
+   "tesis_contraste": "Mayoristas negativos dos trimestres seguidos o margen bruto ≤ 62%."
+  },
+  {
+   "id": "C",
+   "tesis": "disrupción",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "descripcion": "pasa la moda y las ventas caen como en Under Armour",
+   "prob": 0.1,
+   "margen": 0.09,
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion",
+   "crec": {
+    "Mayoristas": [
+     0.0,
+     -0.08,
+     -0.05,
+     0.0,
+     0.02
+    ],
+    "Directo al consumidor": [
+     0.1,
+     0.0,
+     0.0,
+     0.02,
+     0.03
+    ]
+   },
+   "tesis_que": "On repite la historia de marcas que pasaron de moda (Under Armour, Crocs en 2008): las ventas a mayoristas caen, se acumula inventario, llegan las rebajas y el margen operativo baja a 9%.",
+   "tesis_contraste": "Crecimiento total ≤ 0% en 2027 o inventario creciendo más que las ventas dos trimestres."
+  },
+  {
+   "id": "D",
+   "tesis": "optimista",
+   "nombre": "Optimista · On se vuelve una marca deportiva global de primera línea",
+   "prob": 0.2,
+   "margen": 0.2,
+   "crec": {
+    "Mayoristas": [
+     0.12,
+     0.14,
+     0.13,
+     0.12,
+     0.1
+    ],
+    "Directo al consumidor": [
+     0.34,
+     0.28,
+     0.24,
+     0.2,
+     0.17
+    ]
+   },
+   "tesis_que": "On supera su meta de 2029: ropa, fútbol (con atletas como Mbappé) y Asia crecen al doble, la venta directa pasa de la mitad de las ventas y el margen operativo llega a 20%.",
+   "tesis_contraste": "Crecimiento en moneda constante ≥ 20% en 2027 con EBITDA ajustado ≥ 21%."
+  }
+ ],
+ "prob_texto": "La Base pesa 45%: es la guía de 2026 y algo menos que la meta de 2029, que la gerencia viene superando. La Conservadora pesa 25% porque las marcas de moda deportiva se desaceleran sin aviso y los mayoristas ya se contienen. La Disrupción pesa 10%: On no muestra señales de inventario o rebajas, pero la marca tiene apenas 16 años. La Optimista pesa 20% porque On viene superando sus metas y suma categorías. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas.",
+ "premortem": [
+  "El running premium se satura: Hoka, Nike y las marcas chinas recuperan participación y los mayoristas reducen pedidos.",
+  "La expansión a ropa, fútbol y golf diluye la marca y el margen sin crear volumen.",
+  "Un cambio de gusto del consumidor joven (la Cloudtilt pierde atractivo) deja inventario y obliga a rebajar.",
+  "La estructura con co-CEO fundadores y un CFO nuevo pierde disciplina de costos.",
+  "Los aranceles y un franco suizo fuerte comprimen el margen bruto por debajo de 62%."
+ ],
+ "contra": "los mayoristas crecieron solo 4,8% en francos en el 2T26 y la gerencia los está conteniendo «para proteger el precio lleno» en un mercado con muchas rebajas; la acción cayó de US$50,63 (ene-2026) a US$30,20 ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)).",
+ "indicadores": [
+  [
+   "Crecimiento en moneda constante",
+   "+21,6% (2T26)",
+   "≥ 18%",
+   "≤ 10%"
+  ],
+  [
+   "Mayoristas (moneda constante)",
+   "+12,7% (2T26)",
+   "≥ +10%",
+   "≤ 0%"
+  ],
+  [
+   "Directo al consumidor (participación)",
+   "45,7% de las ventas (2T26)",
+   "≥ 48%",
+   "Cae"
+  ],
+  [
+   "Margen bruto",
+   "65,4% (2T26)",
+   "≥ 65%",
+   "≤ 62%"
+  ],
+  [
+   "EBITDA ajustado",
+   "19,8% (2T26)",
+   "≥ 21%",
+   "≤ 17%"
+  ],
+  [
+   "Inventario / ventas",
+   "~15% (jun-26)",
+   "Estable",
+   "Crece más que las ventas"
+  ],
+  [
+   "Asia-Pacífico",
+   "+54,7% (2T26)",
+   "≥ +30%",
+   "≤ +10%"
+  ],
+  [
+   "Recompras (programa de US$1.000M)",
+   "Aprobado en sep-2026",
+   "Ejecución gradual",
+   "Suspendido"
+  ]
+ ],
+ "margenes_inverso": [
+  0.13,
+  0.165,
+  0.2
+ ],
+ "precio_lectura": "El precio de US$30,20 queda ~9% por debajo de la Base y casi igual al esperado: el mercado paga por un crecimiento alto, pero no por la meta completa de la gerencia; con el margen de la Base, el DCF inverso pide ~12% anual en los años 1-5. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la contención de los mayoristas y el enfriamiento del sector, o descontando un margen menor por la inversión en nuevas categorías.",
+ "frase": "Marca premium de running que crece ~15% con margen bruto de 65%; sin ventaja defendible probada a largo plazo",
+ "confianza": "Media: el crecimiento y el margen bruto están bien documentados; la duración de la moda no",
+ "cambiaria": "El crecimiento de los mayoristas, el margen bruto y la ejecución de las nuevas categorías",
+ "revision": "Resultados del 3T26 (noviembre de 2026)",
+ "fuentes": [
+  [
+   "On, comunicado del 2T26 (11-ago-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm"
+  ],
+  [
+   "On, estados intermedios del 1S26 (6-K, 11-ago-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/onholdingag-20260630_d2.htm"
+  ],
+  [
+   "On, 20-F 2025 (3-mar-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm"
+  ],
+  [
+   "On, Investor Day 2026 (22-sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm"
+  ],
+  [
+   "On, cofundadores como co-CEO (25-mar-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1858985/000095010326004606/dp244091_ex9901.htm"
+  ],
+  [
+   "Damodaran, ERP implícita de septiembre de 2026",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+  ],
+  [
+   "Damodaran, Betas by Sector (global), enero de 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ],
+  [
+   "Mauboussin y Callahan, The Base Rate Book (2016)",
+   "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+  ]
+ ],
+ "justificacion": [
+  [
+   "Crecimiento: ~17,5% el primer año y ~14% después.",
+   "La Base crece {g1A} el primer año, en línea con la guía de 2026 (~20% en moneda constante, con mayoristas contenidos), y {cagrA} compuesto en cinco años. La venta directa crece 14-30% y los mayoristas 8-10%. Queda algo por debajo de la meta de la gerencia (un dígito alto en los «teens» hasta 2029) porque pocas empresas sostienen ese ritmo: ~{tbA} de las empresas de su tamaño lo lograron. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que los mayoristas caigan (hacia la Conservadora, {cagrB}) o que On supere su meta (hacia la Optimista, {cagrD})."
+  ],
+  [
+   "Margen: de 14% a 16,5% con escala.",
+   "La Base parte de {margenY1} el primer año (el margen NIIF del 1S26) y llega a {mA} en {conv} años. Supone margen bruto de ~65% y algo de escala en gastos, en línea con la meta de EBITDA ajustado de 22% en 2029 (≈ 15,5% operativo). Los arrendamientos ya están en el balance (NIIF 16), sin ajuste adicional. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone más marketing para crecer; la Disrupción ({mC}), rebajas; la Optimista ({mD}), escala de marca global."
+  ],
+  [
+   "Reinversión: liviana.",
+   "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10. On rota hoy su capital ~2,6 veces; se usa algo menos por las tiendas propias y las nuevas categorías. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+  ],
+  [
+   "Descuento y largo plazo: beta 1,30 y sin ventaja defendible.",
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 1-oct-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, sin deuda bancaria; los arrendamientos pesan ~6%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): On gana hoy muy por encima de su costo de capital, pero su marca tiene 16 años y no atravesó todavía un ciclo de moda completo, así que no cuenta como ventaja probada. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+  ],
+  [
+   "Acciones, moneda y caja.",
+   "Se usan {acciones} millones de acciones económicas: 301,7 millones Clase A y 325,0 millones Clase B (cada una con 1/10 de los derechos económicos) al 30-jun-2026, más 1,9 millones de premios con efecto dilutivo. Las cifras en francos se convierten a dólares al tipo de cambio de cada período. La caja es US$1.493 millones y no hay deuda bancaria. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+  ]
+ ]
+}

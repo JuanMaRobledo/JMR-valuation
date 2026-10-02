@@ -364,6 +364,21 @@
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.1577,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin la devolución de aranceles IEEPA ni los costos de la disputa por poderes y de la transición del CEO; balance al 2-ago-2026; arrendamientos como deuda."
+  },
+  "ONONN": {
+   "fuentes": "Marca y tecnología (CloudTec, LightSpray) de 16 años, con venta directa creciente; sin historia de un ciclo completo",
+   "evidencia": "ROIC después de impuestos ~28,5% LTM (resultado operativo de US$560 millones sobre capital invertido de ~US$1.570 millones con arrendamientos); margen operativo de 12-14% desde 2023 y margen bruto de 65%",
+   "amenaza": "Ciclo de moda en el running premium; Hoka, Nike y marcas chinas; contención de mayoristas en 2026",
+   "roic_actual": 0.285,
+   "roic_industria": 0.2093,
+   "industria_proxy": null,
+   "costo_capital_terminal": 0.0933,
+   "roic_terminal": null,
+   "roic_terminal_antes": null,
+   "nota": "Hoja nueva desde cero (2-oct-2026): gana muy por encima de su costo de capital, pero la marca (16 años) no cumple el criterio de marca probada de 20 años que superó un ciclo → sin ventaja defendible: ROIC terminal = costo de capital.",
+   "ventaja": "sin ventaja defendible",
+   "referencia": 0.285,
+   "nota_rd": "Hoja nueva desde cero (2-oct-2026): estados NIIF en francos convertidos a dólares al tipo de cada período; arrendamientos NIIF 16 en el balance; acciones económicas Clase A + Clase B/10."
   }
  }
 }
