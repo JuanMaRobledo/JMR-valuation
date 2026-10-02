@@ -1,0 +1,456 @@
+{
+ "ticker": "NKEN",
+ "empresa": "NIKE, Inc.",
+ "fecha": "2026-10-01",
+ "industria_damodaran": "Shoe",
+ "historia": "En cinco a diez años Nike sigue siendo la marca deportiva más grande del mundo, con ventas algo mayores que las de hoy y un margen operativo de dos dígitos bajos, pero ya no la empresa que crecía 6-8% al año con márgenes de 13-15%. La reestructuración de 2024-2027 (vuelta a los mayoristas, limpieza de franquicias clásicas, «Sport Offense» por deporte y el programa Pace de ahorro) devuelve el crecimiento a un dígito bajo-medio desde FY2028, liderado por Norteamérica y por el rendimiento deportivo (running, fútbol, básquet). Gran China y Converse siguen siendo el lastre: competencia local, marcas nuevas (On, Hoka, Anta) y menos poder de precio. El margen se recupera por ahorros de costos y menos descuentos, pero no vuelve al de la era de venta directa porque los mayoristas cobran su parte y la competencia es más intensa. Reinvierte poco capital (diseña y comercializa; fabrica con terceros) y devuelve caja a los accionistas. El riesgo es de marca y de ejecución, no financiero.",
+ "filtro": [
+  [
+   "Nike vuelve a crecer desde FY2028",
+   "Sí",
+   "Sí: Norteamérica ya crece (+2% en el 1T FY27, mayoristas +9%) y el rendimiento deportivo gana tracción ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm))",
+   "Probable; China y Converse todavía caen"
+  ],
+  [
+   "El margen operativo vuelve a ~11%",
+   "Sí",
+   "Sí: fue 12-16% en FY2017-FY2024 salvo la pandemia; Pace promete US$2.500M de ahorros brutos a FY2031",
+   "Probable en el caso central, más lento de lo que promete la gerencia"
+  ],
+  [
+   "Nike recupera los márgenes de 14-15% de FY2021-FY2022",
+   "Sí",
+   "Poco: con más mayoristas, aranceles y competidores que crecen al doble",
+   "Baja"
+  ],
+  [
+   "Gran China vuelve a crecer en dos años",
+   "Sí",
+   "Incierto: −22% en el 1T FY27 (−26% sin efecto cambiario) y la gerencia la está reposicionando",
+   "Baja-media"
+  ]
+ ],
+ "tasas_base_nota": "Nike está en el tramo de ventas de más de US$25.000 millones de dólares de 2015 (mediana de crecimiento real a cinco años 2,0%). En ese grupo pocas empresas crecen rápido; la Base ({cagrA} nominal compuesto en cinco años, con el primer año en caída) está en la parte baja de la distribución, coherente con la guía de la gerencia y con una marca madura.",
+ "segmentos": {
+  "Norteamérica": 20618,
+  "EMEA y APLA": 18633,
+  "Gran China": 5515,
+  "Converse y otros": 1125
+ },
+ "crecimiento": {
+  "texto": "Las ventas de los últimos doce meses (septiembre 2025-agosto 2026) suman US$45.891 millones (cálculo propio: FY2026 menos 1T FY26 más 1T FY27, [NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm) y [NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)). Vienen de US$51.362 millones en FY2024: −10% en FY2025 y plano en FY2026. En el 1T FY27 las ventas cayeron 4% (−5% sin efecto cambiario): Norteamérica +2% con mayoristas +9%, EMEA −5%, Gran China −22%, APLA −2% y Converse −28%; NIKE Direct −8% (digital −13%). En las historias EMEA y APLA se proyectan juntas (US$18.633 millones LTM). Para FY2027 la gerencia espera una caída de un dígito alto, porque está retirando producto de NIKE Sportswear, Jordan y Gran China para limpiar el mercado ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)).",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "FY2025",
+    "FY2026",
+    "LTM ago-26 (cálculo propio)",
+    "1T FY27 vs 1T FY26"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Norteamérica",
+     "19.572",
+     "20.511",
+     "20.618",
+     "+2%"
+    ],
+    [
+     "EMEA",
+     "12.257",
+     "12.572",
+     "12.417",
+     "−5%"
+    ],
+    [
+     "Gran China",
+     "6.586",
+     "5.847",
+     "5.515",
+     "−22%"
+    ],
+    [
+     "APLA",
+     "6.251",
+     "6.243",
+     "6.216",
+     "−2%"
+    ],
+    [
+     "Converse y otros",
+     "1.643",
+     "1.225",
+     "1.125",
+     "−28% (Converse)"
+    ],
+    [
+     "Total",
+     "46.309",
+     "46.398",
+     "45.891",
+     "−4%"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "El margen operativo GAAP de los últimos doce meses es 8,2% (US$3.758 millones), pero incluye un beneficio de una vez de US$986 millones por la devolución de los aranceles IEEPA que la Corte Suprema declaró ilegales (reconocido en el 4T FY26) y US$385 millones de indemnizaciones por despidos ([NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)). Sin ambos, el margen normalizado es 6,9%. La guía de FY2027 (BPA ajustado US$1,15-1,35 con impuestos de ~25%) implica un margen operativo de ~6% sobre ventas ~8% menores. Entre FY2017 y FY2024 Nike ganó 12-16% (salvo 8,3% en la pandemia); Deckers ganó 23% y Lululemon 20% en su último ejercicio fiscal, con marcas más chicas y sin la carga de los mayoristas. El margen bruto del 1T FY27 subió 60 puntos básicos a 42,8% por menores costos de logística ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm))."
+ },
+ "reinversion": {
+  "texto": "Nike reinvierte poco en activos: fabrica con terceros y el capex de FY2026 fue US$684 millones (1,5% de las ventas), algo menos que la depreciación más la amortización de los arrendamientos. Con el capital invertido de ~US$17.600 millones (patrimonio más deuda y arrendamientos, menos caja) rota su capital ~2,6 veces; se usa el promedio global de Shoe (2,1) por prudencia, porque la vuelta a crecer exigirá inventario y cuentas por cobrar con los mayoristas. Pace también cuesta: ~US$1.000 millones de cargos a FY2031.",
+  "tabla": {
+   "cols": [
+    "Concepto",
+    "FY2025",
+    "FY2026",
+    "LTM ago-26"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Capex (US$M)",
+     "430",
+     "684",
+     "~700"
+    ],
+    [
+     "Depreciación y amortización (US$M)",
+     "775",
+     "747",
+     "~747"
+    ],
+    [
+     "Inventarios (US$M)",
+     "7.489",
+     "7.501",
+     "7.846"
+    ],
+    [
+     "ROIC normalizado (con arrendamientos, cálculo propio)",
+     "~20%",
+     "~16%",
+     "~15%"
+    ]
+   ]
+  }
+ },
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa la beta desapalancada del sector Shoe global (0,89, Damodaran, enero de 2026) reapalancada con la deuda y los arrendamientos de Nike: 1,01. La regresión contra el S&P 500 da 0,98 a dos años y 1,04 a cinco años, así que las tres miradas coinciden. El riesgo de Nike está en el margen y en la marca, no en la beta."
+ },
+ "historias": [
+  {
+   "id": "A",
+   "tesis": "base",
+   "nombre": "Base · Reestructuración que devuelve a Nike a crecer poco con margen de 11%",
+   "prob": 0.45,
+   "margen": 0.11,
+   "crec": {
+    "Norteamérica": [
+     -0.02,
+     0.04,
+     0.045,
+     0.04,
+     0.035
+    ],
+    "EMEA y APLA": [
+     -0.07,
+     0.023,
+     0.038,
+     0.038,
+     0.033
+    ],
+    "Gran China": [
+     -0.2,
+     -0.03,
+     0.03,
+     0.04,
+     0.04
+    ],
+    "Converse y otros": [
+     -0.2,
+     -0.05,
+     0.0,
+     0.01,
+     0.01
+    ]
+   },
+   "tesis_que": "Se cumple la guía de FY2027 (caída de un dígito alto mientras se limpia el mercado) y desde FY2028 Nike crece 3-4%: Norteamérica con los mayoristas y el rendimiento deportivo, EMEA y APLA con la economía, Gran China se estabiliza en dos años y Converse deja de caer. El margen operativo sube de ~6% a 11% en seis años con los ahorros de Pace (US$2.500 millones brutos, buena parte reinvertidos en marketing) y menos descuentos, sin volver a los márgenes de la era de venta directa.",
+   "tesis_contraste": "Ventas de FY2028 ≥ FY2027, margen bruto ≥ 43% y Norteamérica creciendo."
+  },
+  {
+   "id": "B",
+   "tesis": "conservadora",
+   "nombre": "Conservadora · Recuperación a medias, la marca pierde participación",
+   "prob": 0.25,
+   "margen": 0.085,
+   "roic_terminal": "costo_capital",
+   "crec": {
+    "Norteamérica": [
+     -0.04,
+     0.01,
+     0.025,
+     0.025,
+     0.025
+    ],
+    "EMEA y APLA": [
+     -0.09,
+     -0.007,
+     0.017,
+     0.022,
+     0.022
+    ],
+    "Gran China": [
+     -0.25,
+     -0.08,
+     -0.02,
+     0.0,
+     0.01
+    ],
+    "Converse y otros": [
+     -0.25,
+     -0.1,
+     -0.05,
+     -0.02,
+     0.0
+    ]
+   },
+   "tesis_que": "On, Hoka, Adidas y las marcas chinas siguen ganando participación; Nike vuelve a crecer solo con la inflación desde FY2029 y Gran China no se recupera. Los ahorros de Pace se van en marketing y precios, y el margen se queda en 8,5%. La ventaja de marca se erosiona: después del año 10 Nike gana su costo de capital.",
+   "tesis_contraste": "Ventas de FY2028 por debajo de FY2027 y margen bruto ≤ 42%."
+  },
+  {
+   "id": "C",
+   "tesis": "disrupción",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "descripcion": "Nike pierde relevancia como Adidas en 2015-2016, pero sin recuperación",
+   "prob": 0.1,
+   "margen": 0.06,
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion",
+   "crec": {
+    "Norteamérica": [
+     -0.06,
+     -0.03,
+     -0.01,
+     0.0,
+     0.01
+    ],
+    "EMEA y APLA": [
+     -0.113,
+     -0.047,
+     -0.017,
+     0.0,
+     0.0
+    ],
+    "Gran China": [
+     -0.3,
+     -0.15,
+     -0.08,
+     -0.04,
+     -0.02
+    ],
+    "Converse y otros": [
+     -0.3,
+     -0.15,
+     -0.1,
+     -0.05,
+     -0.03
+    ]
+   },
+   "tesis_que": "La pérdida de atletas (Mbappé se fue a On en septiembre de 2026, [Bloomberg Línea, Mbappé cambia Nike por On, sep-2026](https://www.bloomberglinea.com/mercados/mbappe-cambia-nike-por-on-acciones-precios-objetivo-y-la-apuesta-por-el-futbol/)), la salida del índice S&P 100 y la competencia de marcas más ágiles se vuelven una pérdida estructural de relevancia: las ventas caen tres años más, Gran China se achica a la mitad del pico y el margen se queda en 6% porque los gastos de marketing no se pueden recortar sin perder más terreno.",
+   "tesis_contraste": "Norteamérica vuelve a caer dos trimestres seguidos o margen bruto ≤ 40%."
+  },
+  {
+   "id": "D",
+   "tesis": "optimista",
+   "nombre": "Optimista · Vuelve la Nike de márgenes históricos",
+   "prob": 0.2,
+   "margen": 0.135,
+   "crec": {
+    "Norteamérica": [
+     0.0,
+     0.06,
+     0.06,
+     0.05,
+     0.045
+    ],
+    "EMEA y APLA": [
+     -0.043,
+     0.05,
+     0.053,
+     0.048,
+     0.043
+    ],
+    "Gran China": [
+     -0.15,
+     0.03,
+     0.06,
+     0.06,
+     0.05
+    ],
+    "Converse y otros": [
+     -0.15,
+     0.0,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "tesis_que": "La «Sport Offense» funciona como en 2017-2021: la innovación en running y básquet recupera participación, los mayoristas vuelven a pedir, los Juegos Olímpicos de Los Ángeles 2028 impulsan la marca y Gran China vuelve a crecer desde FY2029. Pace entrega sus ahorros y el margen vuelve a 13,5%, el promedio de FY2017-FY2024.",
+   "tesis_contraste": "Crecimiento de un dígito medio en FY2028 con margen bruto ≥ 45%."
+  }
+ ],
+ "prob_texto": "La Base pesa 45%: es lo que dice la guía de FY2027, más una recuperación modesta, en línea con lo que Nike ya muestra en Norteamérica. La Conservadora pesa 25% porque la competencia es real y Gran China y Converse siguen en caída. La Disrupción pesa 10%: la marca tiene más de 50 años, escala y presupuesto de marketing, pero perdió atletas y participación. La Optimista pesa 20% porque Nike ya salió de crisis parecidas (1998, 2016-2017) con la innovación. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas.",
+ "premortem": [
+  "La limpieza de NIKE Sportswear y Jordan dura dos años más y las ventas caen también en FY2028.",
+  "Gran China se reduce a la mitad del pico por Anta, Li-Ning y el nacionalismo de consumo; Nike sigue invirtiendo sin retorno.",
+  "On, Hoka y Adidas siguen quitando participación en running, la categoría que Nike eligió para volver.",
+  "Los ahorros de Pace se van en marketing y descuentos, y el margen no supera 8%.",
+  "Nuevos aranceles (sección 232 o 301) reemplazan a los IEEPA y quitan 1-2 puntos de margen bruto."
+ ],
+ "contra": "la guía de FY2027 vuelve a mostrar caída de ventas de un dígito alto, Gran China cae 22% y la gerencia anunció más despidos: la recuperación lleva dos años de retraso y la marca perdió atletas emblemáticos ([Tradingpedia, 18-sep-2026](https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/)).",
+ "indicadores": [
+  [
+   "Crecimiento de Norteamérica",
+   "+2% (1T FY27)",
+   "≥ +4%",
+   "≤ −3%"
+  ],
+  [
+   "Ventas de Gran China (sin efecto cambiario)",
+   "−26% (1T FY27)",
+   "≥ 0%",
+   "≤ −15% en FY2028"
+  ],
+  [
+   "Margen bruto",
+   "42,8% (1T FY27)",
+   "≥ 44%",
+   "≤ 41%"
+  ],
+  [
+   "Gasto operativo (overhead)",
+   "US$2.658M (−6%)",
+   "Baja con Pace",
+   "Sube"
+  ],
+  [
+   "NIKE Direct digital",
+   "−13% (1T FY27)",
+   "≥ 0%",
+   "≤ −10% en FY2028"
+  ],
+  [
+   "Inventarios / ventas",
+   "17% (ago-26)",
+   "≤ 16%",
+   "≥ 19%"
+  ],
+  [
+   "Pedidos de mayoristas (futuros)",
+   "Norteamérica mayoristas +9%",
+   "Crecen",
+   "Caen"
+  ],
+  [
+   "Converse",
+   "−28% (1T FY27)",
+   "≥ −5%",
+   "≤ −20% en FY2028"
+  ]
+ ],
+ "margenes_inverso": [
+  0.085,
+  0.11,
+  0.135
+ ],
+ "precio_lectura": "El precio de US$35,15 queda cerca de lo que vale la Base: el mercado ya descuenta una reestructuración larga y un margen que no vuelve a los niveles históricos. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la pérdida de atletas y de participación en running; o puede estar descontando que Pace no entregue sus ahorros. Ninguna de esas lecturas es extrema.",
+ "frase": "La marca deportiva más grande del mundo en medio de una reestructuración que devuelve el crecimiento lento con margen de dos dígitos bajos",
+ "confianza": "Media: el margen normalizado y la caja están bien documentados; la duración de la caída y la recuperación de China no",
+ "cambiaria": "El crecimiento de Norteamérica, el margen bruto, Gran China y la ejecución de Pace",
+ "revision": "Resultados del 2T FY2027 (diciembre de 2026)",
+ "fuentes": [
+  [
+   "NIKE, comunicado del 1T FY2027 (1-oct-2026)",
+   "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm"
+  ],
+  [
+   "NIKE, 10-K FY2026 (15-jul-2026)",
+   "https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm"
+  ],
+  [
+   "NIKE, comunicado del 3T FY2026",
+   "https://www.sec.gov/Archives/edgar/data/320187/000032018726000026/q3fy26exhibit991er.htm"
+  ],
+  [
+   "NIKE, 8-K de la junta anual (8-sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/320187/000032018726000143/nke-20260908.htm"
+  ],
+  [
+   "Bloomberg Línea, Mbappé cambia Nike por On (sep-2026)",
+   "https://www.bloomberglinea.com/mercados/mbappe-cambia-nike-por-on-acciones-precios-objetivo-y-la-apuesta-por-el-futbol/"
+  ],
+  [
+   "Tradingpedia, recorte de precio objetivo y salida de Mbappé (18-sep-2026)",
+   "https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/"
+  ],
+  [
+   "Damodaran, ERP implícita de septiembre de 2026",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+  ],
+  [
+   "Damodaran, Betas by Sector (global), enero de 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ],
+  [
+   "Mauboussin y Callahan, The Base Rate Book (2016)",
+   "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+  ]
+ ],
+ "arrendamientos": {
+  "vp": 2868.58,
+  "ajuste_ebit": 283.2,
+  "margen_pp": 0.006171144668889324,
+  "capital_ventas": 0.06250855287529145,
+  "cierre": "2026-05-31",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+ },
+ "justificacion": [
+  [
+   "Crecimiento: un año más de caída y después un dígito bajo-medio.",
+   "La Base cae {g1A} el primer año, en línea con la guía de FY2027 (caída de un dígito alto: Nike retira producto de NIKE Sportswear, Jordan y Gran China), y crece {cagrA} compuesto en cinco años. Desde el año 2 el crecimiento es de 3-4,5%: Norteamérica con los mayoristas (+9% en el 1T FY27), EMEA y APLA con la economía, Gran China se estabiliza y Converse deja de caer. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que las ventas de FY2028 sigan cayendo (hacia la Conservadora, {cagrB}) o que Gran China vuelva a crecer pronto (hacia la Optimista, {cagrD})."
+  ],
+  [
+   "Margen: de ~6% a 11%, sin volver a la era de venta directa.",
+   "La Base parte de {margenY1} el primer año (la guía de FY2027) y llega a {mA} en {conv} años ({mrepA} antes del ajuste de arrendamientos, +{arr_pp} pp). Supone que Pace entrega buena parte de sus US$2.500 millones de ahorros brutos y que bajan los descuentos, pero que el margen no vuelve al 12-16% de FY2017-FY2024: más ventas por mayoristas, aranceles y competencia más intensa. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone que los ahorros se reinvierten en precio; la Disrupción ({mC}), pérdida de escala; la Optimista ({mD}), la vuelta al promedio histórico."
+  ],
+  [
+   "Reinversión: liviana, con el promedio de la industria.",
+   "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10, el promedio global de Shoe. Nike rota hoy su capital ~2,6 veces, pero volver a crecer con los mayoristas pide inventario y cuentas por cobrar. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+  ],
+  [
+   "Descuento y largo plazo: beta de la industria y una ventaja que se desvanece.",
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 1-oct-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+  ],
+  [
+   "Acciones, opciones y deuda.",
+   "Se usan {acciones} millones de acciones (1.483,5 millones en circulación al 8-jul-2026 más 12,5 millones de RSU sin consolidar); las 76,8 millones de opciones a US$96,44 se restan por su valor (casi nulo con la acción a US$35). La deuda es US$7.893 millones a valor nominal más ~US$2.869 millones de arrendamientos; la caja e inversiones suman US$8.368 millones al 31-ago-2026. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+  ]
+ ]
+}

@@ -334,6 +334,21 @@
    "ventaja": "sin ventaja defendible",
    "referencia": 0.1654,
    "nota_rd": "Hoja nueva desde cero (1-oct-2026): EBIT normalizado sin partidas de una vez, capital invertido con el preferente de PepsiCo (contable), arrendamientos como deuda."
+  },
+  "NKEN": {
+   "fuentes": "Marca global de más de 50 años, escala en marketing deportivo y contratos con atletas, y la red de distribución más grande del sector",
+   "evidencia": "ROIC de la hoja: 33-51% en FY2021-FY2023, 21% en FY2025 y 17% LTM; normalizado con arrendamientos (cálculo propio) ~20% en FY2025 y ~15% LTM (ago-2026): por encima del costo de capital, pero en caída",
+   "amenaza": "Pérdida de participación frente a On, Hoka, Adidas y marcas chinas; salida de atletas (Mbappé, sep-2026); Gran China −22% en el 1T FY27",
+   "roic_actual": 0.152,
+   "roic_industria": 0.2093,
+   "industria_proxy": null,
+   "costo_capital_terminal": 0.0933,
+   "roic_terminal": 0.123,
+   "roic_terminal_antes": null,
+   "nota": "Hoja nueva desde cero (2-oct-2026): (1) gana sobre su costo de capital, (2) marca probada que superó crisis (1998, 2016-2017) y (3) la ventaja se desvanece de forma visible → punto medio entre el costo de capital terminal (9,33%) y el ROIC actual (15,2%, menor que el de la industria): 12,3%.",
+   "ventaja": "ventaja que se desvanece",
+   "referencia": 0.152,
+   "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin el reembolso de aranceles IEEPA ni las indemnizaciones de FY2026, balance al 31-ago-2026 y arrendamientos como deuda."
   }
  }
 }
