@@ -1,28 +1,23 @@
 {
  "decision": {
+  "ticker": "NKE",
   "etapa_desde": "May '25",
-  "etapa_motivo": "A: Nike cotizó a 20-42x EBITDA mientras crecía y ganaba margen con la venta directa. Desde FY25 está en reestructuración: las ventas cayeron ~10% en FY25 y quedaron planas en FY26 (US$46.400 millones, −2% sin efecto cambiario), China cae 12% y el CEO Elliott Hill reconoce que la recuperación toma más de lo esperado. La etapa actual es May '25, May '26 y el LTM.",
+  "etapa_motivo": "A: Nike cotizó a 20-42 veces el EBITDA mientras crecía 6-8% al año y ganaba margen con la venta directa (FY2017-FY2024). Desde FY2025 está en reestructuración: ventas −10% en FY2025, planas en FY2026 y con caída de un dígito alto esperada en FY2027, margen operativo de ~8% frente a 12-16% antes. La etapa actual es May '25, May '26 y el LTM. El reembolso de aranceles IEEPA de FY2026 (US$986 millones) compensa en buena parte los aranceles pagados ese mismo año, así que FY2026 y el LTM se conservan.",
   "peers_excluir": {
    "*": [
-    "UAA",
-    "VFC"
+    "UAA"
    ]
   },
-  "peers_motivo": "B: ropa y calzado deportivo (Adidas, Lululemon, Deckers, On Holding), datos de yfinance al 29-sep-2026. Se excluyen Under Armour y VF Corp (margen operativo negativo; sus múltiplos no comparan).",
-  "ajuste_peers": 0.0,
-  "ajuste_motivo": "Sin ajuste: Nike es la marca más grande del sector, pero hoy no crece; queda entre On/Adidas (crecen) y Lululemon (decrece).",
-  "lambda": 0.0,
-  "lambda_motivo": "λ = 0 (30-sep-2026): el justificado C supone que el ROE de FY+3 se mantiene para siempre, mientras que el DCF revisado limita el ROIC después del año 10 al 13,3% (el menor entre el actual y el de la industria). Para que los múltiplos sean coherentes con el DCF, C se deja fuera del Base y se conserva como referencia en la tabla.",
+  "peers_motivo": "B: calzado y ropa deportiva con datos de yfinance al 2-oct-2026: Adidas, Deckers, On, Lululemon, Crocs y Birkenstock. Se excluye Under Armour (margen operativo negativo; su P/E no existe y su EV/EBITDA no compara).",
+  "ajuste_peers": -0.05,
+  "ajuste_motivo": "Ajuste −5%: crecimiento a FY+3 menor que la mediana de los peers (Base ~3-4% frente a 6-13% de Adidas, On y Birkenstock), −10%; margen operativo objetivo menor (11% frente a 14-29%), −5%; riesgo propio menor (la marca más grande, calificación A2/A+, caja de US$8.400 millones), +10%.",
+  "lambda": 0.5,
+  "lambda_motivo": "λ = 0,5: la Nike de FY+3 (crecimiento de un dígito bajo-medio y margen ~10%) es distinta de la de la etapa histórica de alto múltiplo, y los peers cotizan hoy a múltiplos deprimidos (Lululemon y Deckers a 8-11 veces utilidades). El justificado (C) usa los supuestos de cada escenario y equilibra las dos anclas.",
   "fuentes": [
-   "[Nike: resultados FY26](https://about.nike.com/en/newsroom/releases/nike-inc-reports-fiscal-2026-fourth-quarter-and-full-year-results)",
-   "[CNBC, 30-jun-2026: Nike supera estimados pero China cae 12%](https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html)"
+   "[NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)",
+   "[NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)"
   ],
-  "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$33,96 por acción y los múltiplos, US$34,03 hoy: prácticamente igual al DCF. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.",
-  "ticker": "NKE",
-  "peers_crecimiento": {
-   "g": 0.035,
-   "motivo": "B ajustado por crecimiento (30-sep-2026): la hoja supone que Nike crece ~3,5% en FY+3. Entre los peers, On y Deckers crecen más y cotizan más caros, mientras que Lululemon decrece y cotiza más barato. El múltiplo sube con el crecimiento (R² de 0,7 a 0,9, aunque con solo cuatro peers). Por eso la mediana de hoy se corrige con la recta evaluada en 3,5%."
-  }
+  "evaluacion": "Lectura del 2-oct-2026: el DCF Base de las historias da ~US$33,0 por acción y los múltiplos consolidados ~US$35,5 hoy, ~8% más. Las dos anclas se compensan: la historia de Nike (15-30 veces) refleja la era de crecimiento y los peers cotizan hoy deprimidos (Lululemon y Deckers a 8-11 veces utilidades). El DCF es el valor intrínseco; los múltiplos son precio relativo y confirman que el precio actual (US$35,15) está cerca del valor de la historia Base."
  },
  "resultado": {
   "EV/EBITDA": {
@@ -30,46 +25,39 @@
    "hoja": "EVEBITDA",
    "A": 15.51,
    "A_desc": "mediana May '25, May '26, LTM (etapa actual) = 15,5x",
-   "A_p25": 13.85,
-   "A_p75": 17.98,
+   "A_p25": 13.84,
+   "A_p75": 18.03,
    "A_max": 41.82,
    "A_excluidos": [],
-   "B_mediana": 9.9,
-   "B_ajustada": 8.68,
-   "B_n": 4,
-   "B_regresion": {
-    "a": 6.43,
-    "b": 64.33,
-    "r2": 0.74,
-    "g": 0.035,
-    "n": 4
-   },
-   "B_peers": "ADDYY 12,7x, LULU 5,0x, DECK 7,1x, ONON 19,1x",
+   "B_mediana": 9.39,
+   "B_ajustada": 8.92,
+   "B_n": 6,
+   "B_regresion": null,
+   "B_peers": "ADDYY 12,4x, DECK 7,3x, ONON 19,2x, LULU 4,8x, CROX 7,8x, BIRK 11,0x",
    "B_excluidos": [
-    "UAA",
-    "VFC"
+    "UAA"
    ],
    "C": {
-    "Conservador": 11.92,
-    "Base": 16.37,
-    "Optimista": 17.72
+    "Conservador": 10.33,
+    "Base": 16.25,
+    "Optimista": 17.92
    },
-   "mercado": 12.1,
-   "lambda": 0.0,
-   "conservador": 9.22,
-   "base": 12.1,
-   "optimista": 14.85,
-   "factor_cons": 0.762,
-   "factor_opt": 1.227,
+   "mercado": 12.22,
+   "lambda": 0.5,
+   "conservador": 11.01,
+   "base": 14.23,
+   "optimista": 16.83,
+   "factor_cons": 0.774,
+   "factor_opt": 1.183,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    8.68,
-    16.37
+    8.92,
+    16.25
    ],
    "antes": {
     "J8": null,
-    "J19": 15.514223151408448,
+    "J19": 15.508941461267604,
     "J30": null
    },
    "nota": ""
@@ -77,10 +65,10 @@
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 29.91,
-   "A_desc": "mediana May '25, May '26, LTM (etapa actual) = 29,9x (EV/FCF × 1,07 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 28.5,
-   "A_p75": 32.2,
+   "A": 29.49,
+   "A_desc": "mediana May '25, May '26, LTM (etapa actual) = 29,5x (EV/FCF × 1,05 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 27.89,
+   "A_p75": 31.64,
    "A_max": 43.03,
    "A_excluidos": [
     [
@@ -89,38 +77,31 @@
      "> 2,5x la mediana (32.3x)"
     ]
    ],
-   "B_mediana": 13.37,
-   "B_ajustada": 11.74,
-   "B_n": 4,
-   "B_regresion": {
-    "a": 9.48,
-    "b": 64.4,
-    "r2": 0.72,
-    "g": 0.035,
-    "n": 4
-   },
-   "B_peers": "ADDYY 18,0x, LULU 8,8x, DECK 8,4x, ONON 20,9x",
+   "B_mediana": 13.48,
+   "B_ajustada": 12.81,
+   "B_n": 6,
+   "B_regresion": null,
+   "B_peers": "ADDYY 17,6x, DECK 8,7x, ONON 21,1x, LULU 8,4x, CROX 9,4x, BIRK 19,5x",
    "B_excluidos": [
-    "UAA",
-    "VFC"
+    "UAA"
    ],
    "C": {
-    "Conservador": 16.81,
-    "Base": 24.58,
-    "Optimista": 26.43
+    "Conservador": 13.5,
+    "Base": 24.76,
+    "Optimista": 26.63
    },
-   "mercado": 20.82,
-   "lambda": 0.0,
-   "conservador": 15.88,
-   "base": 20.82,
-   "optimista": 24.64,
-   "factor_cons": 0.762,
-   "factor_opt": 1.183,
+   "mercado": 21.15,
+   "lambda": 0.5,
+   "conservador": 16.43,
+   "base": 22.95,
+   "optimista": 27.23,
+   "factor_cons": 0.716,
+   "factor_opt": 1.186,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    11.74,
-    29.91
+    12.81,
+    29.49
    ],
    "antes": {
     "J8": null,
@@ -134,41 +115,34 @@
    "hoja": "PE",
    "A": 22.01,
    "A_desc": "mediana May '25, May '26, LTM (etapa actual) = 22,0x",
-   "A_p25": 19.59,
+   "A_p25": 19.41,
    "A_p75": 25.03,
    "A_max": 61.61,
    "A_excluidos": [],
-   "B_mediana": 14.84,
-   "B_ajustada": 12.18,
-   "B_n": 4,
-   "B_regresion": {
-    "a": 9.77,
-    "b": 68.76,
-    "r2": 0.9,
-    "g": 0.035,
-    "n": 4
-   },
-   "B_peers": "ADDYY 18,6x, LULU 8,0x, DECK 11,0x, ONON 20,8x",
+   "B_mediana": 13.58,
+   "B_ajustada": 12.91,
+   "B_n": 6,
+   "B_regresion": null,
+   "B_peers": "ADDYY 18,5x, DECK 11,3x, ONON 21,3x, LULU 7,9x, CROX 10,4x, BIRK 15,9x",
    "B_excluidos": [
-    "UAA",
-    "VFC"
+    "UAA"
    ],
    "C": {
-    "Conservador": 12.89,
-    "Base": 17.76,
-    "Optimista": 19.56
+    "Conservador": 11.37,
+    "Base": 17.64,
+    "Optimista": 20.27
    },
-   "mercado": 17.09,
-   "lambda": 0.0,
-   "conservador": 13.15,
-   "base": 17.09,
-   "optimista": 20.12,
-   "factor_cons": 0.769,
-   "factor_opt": 1.177,
+   "mercado": 17.46,
+   "lambda": 0.5,
+   "conservador": 13.51,
+   "base": 17.55,
+   "optimista": 21.06,
+   "factor_cons": 0.77,
+   "factor_opt": 1.2,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    12.18,
+    12.91,
     22.01
    ],
    "antes": {
@@ -183,7 +157,7 @@
    "hoja": "PFCFE",
    "A": 27.58,
    "A_desc": "mediana May '25, May '26, LTM (etapa actual) = 27,6x",
-   "A_p25": 26.02,
+   "A_p25": 25.73,
    "A_p75": 29.46,
    "A_max": 43.22,
    "A_excluidos": [
@@ -193,43 +167,36 @@
      "> 2,5x la mediana (31.3x)"
     ]
    ],
-   "B_mediana": 12.63,
-   "B_ajustada": 11.62,
-   "B_n": 4,
-   "B_regresion": {
-    "a": 9.23,
-    "b": 68.4,
-    "r2": 0.7,
-    "g": 0.035,
-    "n": 4
-   },
-   "B_peers": "ADDYY 15,8x, LULU 7,9x, DECK 9,5x, ONON 23,0x",
+   "B_mediana": 12.54,
+   "B_ajustada": 11.91,
+   "B_n": 6,
+   "B_regresion": null,
+   "B_peers": "ADDYY 15,4x, DECK 9,7x, ONON 23,5x, LULU 7,8x, CROX 8,1x, BIRK 18,7x",
    "B_excluidos": [
-    "UAA",
-    "VFC"
+    "UAA"
    ],
    "C": {
-    "Conservador": 15.6,
-    "Base": 22.12,
-    "Optimista": 23.61
+    "Conservador": 12.77,
+    "Base": 22.49,
+    "Optimista": 24.03
    },
-   "mercado": 19.6,
-   "lambda": 0.0,
-   "conservador": 15.47,
-   "base": 19.6,
-   "optimista": 23.06,
-   "factor_cons": 0.789,
-   "factor_opt": 1.176,
+   "mercado": 19.75,
+   "lambda": 0.5,
+   "conservador": 15.34,
+   "base": 21.12,
+   "optimista": 25.07,
+   "factor_cons": 0.726,
+   "factor_opt": 1.187,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    11.62,
+    11.91,
     27.58
    ],
    "antes": {
-    "J8": 10.139017661948193,
-    "J19": 17.926274021731736,
-    "J30": 19.464962472870045
+    "J8": null,
+    "J19": 24.479544812601844,
+    "J30": null
    },
    "nota": ""
   },
@@ -238,7 +205,7 @@
    "hoja": "POCF",
    "A": 23.87,
    "A_desc": "mediana May '25, May '26, LTM (etapa actual) = 23,9x",
-   "A_p25": 21.25,
+   "A_p25": 21.02,
    "A_p75": 24.12,
    "A_max": 36.9,
    "A_excluidos": [
@@ -248,37 +215,30 @@
      "> 2,5x la mediana (24.4x)"
     ]
    ],
-   "B_mediana": 10.7,
-   "B_ajustada": 9.28,
-   "B_n": 4,
-   "B_regresion": {
-    "a": 7.19,
-    "b": 59.73,
-    "r2": 0.77,
-    "g": 0.035,
-    "n": 4
-   },
-   "B_peers": "ADDYY 12,5x, LULU 5,4x, DECK 8,9x, ONON 18,8x",
+   "B_mediana": 10.64,
+   "B_ajustada": 10.11,
+   "B_n": 6,
+   "B_regresion": null,
+   "B_peers": "ADDYY 12,2x, DECK 9,1x, ONON 19,2x, LULU 5,4x, CROX 7,5x, BIRK 13,6x",
    "B_excluidos": [
-    "UAA",
-    "VFC"
+    "UAA"
    ],
    "C": {
-    "Conservador": 11.21,
-    "Base": 20.73,
-    "Optimista": 22.82
+    "Conservador": 8.22,
+    "Base": 20.47,
+    "Optimista": 22.64
    },
-   "mercado": 16.58,
-   "lambda": 0.0,
-   "conservador": 12.04,
-   "base": 16.58,
-   "optimista": 18.95,
-   "factor_cons": 0.726,
-   "factor_opt": 1.143,
+   "mercado": 16.99,
+   "lambda": 0.5,
+   "conservador": 12.64,
+   "base": 18.73,
+   "optimista": 20.99,
+   "factor_cons": 0.675,
+   "factor_opt": 1.121,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    9.28,
+    10.11,
     23.87
    ],
    "antes": {
@@ -291,21 +251,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   18.972409458075976,
-   36.759695783506785,
-   49.955003053704736
+   19.705722173765423,
+   32.97888250241857,
+   44.26442425733515
   ],
   "multiplos_hoy": [
-   22.32077197104597,
-   34.027259518987655,
-   45.43091515200851
+   22.093400508827003,
+   35.506940741569025,
+   52.83996394705394
   ],
   "ponderado_hoy": [
-   20.981426965857978,
-   35.12023402479531,
-   47.240550312687006
+   21.138329174802372,
+   34.495717445908845,
+   49.409748071166426
   ],
-  "brecha_base": -0.07433239601904185,
-  "fila_origen": 59
+  "brecha_base": 0.07665688001905635,
+  "fila_origen": 53
  }
 }

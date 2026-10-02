@@ -1,9 +1,9 @@
 {
- "fcf_a_fcff": 1.0682366964404473,
+ "fcf_a_fcff": 1.0474765882775878,
  "empresa": "NIKE, Inc. (NYSE:NKE)",
- "sheet_id": "1BAuhp8QPzXQx1osCIBHA4QoFC91DStgSr3h4SjFkAL4",
- "fecha": "2026-09-29",
- "ke": 0.0926806193325744,
+ "sheet_id": "1OITWNynG7R3PKC1sITOOazW9jzXgFWFda6qNbbOnYZI",
+ "fecha": "2026-10-02",
+ "ke": 0.09369376222360518,
  "categoria": "Madura",
  "metodos": {
   "EV/EBITDA": {
@@ -18,35 +18,35 @@
      "May '22": 25.79,
      "May '23": 25.12,
      "May '24": 20.44,
-     "May '25": 20.44,
+     "May '25": 20.55,
      "May '26": 15.51,
-     "LTM": 12.19
+     "LTM": 12.18
     },
-    "mediana_5a": 20.44,
+    "mediana_5a": 20.55,
     "mediana_10a": 22.59,
     "p25": 18.41,
     "p75": 25.46,
-    "min": 12.19,
+    "min": 12.18,
     "max": 41.82,
     "ultimo_cierre": 15.51,
-    "ltm": 12.19,
+    "ltm": 12.18,
     "regimen_bajo_actual": false,
     "excluidos": []
    },
    "peers": {
-    "n": 6,
-    "mediana": 11.9,
-    "p25": 8.13,
-    "p75": 15.38
+    "n": 7,
+    "mediana": 10.97,
+    "p25": 7.57,
+    "p75": 14.79
    },
    "justificado": {
-    "Conservador": 11.92,
-    "Base": 16.37,
-    "Optimista": 17.72
+    "Conservador": 10.33,
+    "Base": 16.25,
+    "Optimista": 17.92
    },
    "actual_J": {
     "J8": null,
-    "J19": 15.514223151408448,
+    "J19": 15.508941461267604,
     "J30": null
    }
   },
@@ -62,18 +62,18 @@
      "May '22": 43.03,
      "May '23": 34.13,
      "May '24": 21.96,
-     "May '25": 28.0,
-     "May '26": 32.28,
-     "LTM": 25.36
+     "May '25": 28.15,
+     "May '26": 32.27,
+     "LTM": 25.11
     },
-    "mediana_5a": 32.28,
-    "mediana_10a": 32.28,
-    "p25": 26.38,
+    "mediana_5a": 32.27,
+    "mediana_10a": 32.27,
+    "p25": 26.42,
     "p75": 34.96,
     "min": 21.96,
     "max": 43.03,
-    "ultimo_cierre": 32.28,
-    "ltm": 25.36,
+    "ultimo_cierre": 32.27,
+    "ltm": 25.11,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -84,15 +84,15 @@
     ]
    },
    "peers": {
-    "n": 5,
-    "mediana": 14.18,
-    "p25": 8.78,
-    "p75": 17.96
+    "n": 6,
+    "mediana": 13.48,
+    "p25": 8.85,
+    "p75": 19.0
    },
    "justificado": {
-    "Conservador": 16.81,
-    "Base": 24.58,
-    "Optimista": 26.43
+    "Conservador": 13.5,
+    "Base": 24.76,
+    "Optimista": 26.63
    },
    "actual_J": {
     "J8": null,
@@ -114,29 +114,29 @@
      "May '24": 25.48,
      "May '25": 28.05,
      "May '26": 22.01,
-     "LTM": 17.17
+     "LTM": 16.82
     },
     "mediana_5a": 28.05,
     "mediana_10a": 31.34,
     "p25": 23.75,
     "p75": 35.46,
-    "min": 17.17,
+    "min": 16.82,
     "max": 61.61,
     "ultimo_cierre": 22.01,
-    "ltm": 17.17,
+    "ltm": 16.82,
     "regimen_bajo_actual": false,
     "excluidos": []
    },
    "peers": {
-    "n": 5,
-    "mediana": 18.64,
-    "p25": 11.05,
-    "p75": 20.81
+    "n": 6,
+    "mediana": 13.58,
+    "p25": 10.63,
+    "p75": 17.85
    },
    "justificado": {
-    "Conservador": 12.89,
-    "Base": 17.76,
-    "Optimista": 19.56
+    "Conservador": 11.37,
+    "Base": 17.64,
+    "Optimista": 20.27
    },
    "actual_J": {
     "J8": null,
@@ -158,7 +158,7 @@
      "May '24": 21.97,
      "May '25": 27.58,
      "May '26": 31.35,
-     "LTM": 24.45
+     "LTM": 23.88
     },
     "mediana_5a": 31.35,
     "mediana_10a": 31.35,
@@ -167,7 +167,7 @@
     "min": 21.97,
     "max": 43.22,
     "ultimo_cierre": 31.35,
-    "ltm": 24.45,
+    "ltm": 23.88,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -178,20 +178,20 @@
     ]
    },
    "peers": {
-    "n": 5,
-    "mediana": 9.82,
-    "p25": 9.46,
-    "p75": 15.8
+    "n": 6,
+    "mediana": 12.54,
+    "p25": 8.51,
+    "p75": 17.86
    },
    "justificado": {
-    "Conservador": 15.6,
-    "Base": 22.12,
-    "Optimista": 23.61
+    "Conservador": 12.77,
+    "Base": 22.49,
+    "Optimista": 24.03
    },
    "actual_J": {
-    "J8": 10.139017661948193,
-    "J19": 17.926274021731736,
-    "J30": 19.464962472870045
+    "J8": null,
+    "J19": 24.479544812601844,
+    "J30": null
    }
   },
   "P/OCF": {
@@ -208,16 +208,16 @@
      "May '24": 19.57,
      "May '25": 24.37,
      "May '26": 23.87,
-     "LTM": 18.62
+     "LTM": 18.18
     },
     "mediana_5a": 24.37,
     "mediana_10a": 24.37,
     "p25": 21.83,
     "p75": 27.37,
-    "min": 18.62,
+    "min": 18.18,
     "max": 36.9,
     "ultimo_cierre": 23.87,
-    "ltm": 18.62,
+    "ltm": 18.18,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -228,15 +228,15 @@
     ]
    },
    "peers": {
-    "n": 5,
-    "mediana": 8.86,
-    "p25": 7.56,
-    "p75": 12.54
+    "n": 6,
+    "mediana": 10.64,
+    "p25": 7.89,
+    "p75": 13.25
    },
    "justificado": {
-    "Conservador": 11.21,
-    "Base": 20.73,
-    "Optimista": 22.82
+    "Conservador": 8.22,
+    "Base": 20.47,
+    "Optimista": 22.64
    },
    "actual_J": {
     "J8": null,
@@ -247,54 +247,54 @@
  },
  "justificado": {
   "Conservador": {
-   "g": 0.026857142857142857,
-   "g_años_4_10": 0.004114285714285715,
-   "g_perpetuidad": 0.0496,
-   "wacc_4_10": 0.08795283036569816,
-   "ke": 0.0926806193325744,
-   "roe_fy3": 0.1543568104434575,
-   "fcff_ebitda": 0.7093255033022423,
-   "fcfe_ocf": 0.7182972931930248,
+   "g": 0.014285714285714289,
+   "g_años_4_10": -0.023828571428571425,
+   "g_perpetuidad": 0.0524,
+   "wacc_4_10": 0.08943572217713716,
+   "ke": 0.09369376222360518,
+   "roe_fy3": 0.13027912680138143,
+   "fcff_ebitda": 0.7657059058591653,
+   "fcfe_ocf": 0.6434542651120991,
    "multiplos": {
-    "EV/FCFF": 16.80735882894109,
-    "P/FCFE": 15.60016574391076,
-    "P/E": 12.885832124450587,
-    "EV/EBITDA": 11.921888260520024,
-    "P/OCF": 11.205556827213648
+    "EV/FCFF": 13.496814474739105,
+    "P/FCFE": 12.773084600682278,
+    "P/E": 11.372456260343501,
+    "EV/EBITDA": 10.334590553593202,
+    "P/OCF": 8.218895764946685
    }
   },
   "Base": {
-   "g": 0.04542857142857143,
-   "g_años_4_10": 0.04125714285714286,
-   "g_perpetuidad": 0.0496,
-   "wacc_4_10": 0.08795283036569816,
-   "ke": 0.0926806193325744,
-   "roe_fy3": 0.23022791656997352,
-   "fcff_ebitda": 0.6660239265240399,
-   "fcfe_ocf": 0.9371090867460279,
+   "g": 0.047142857142857146,
+   "g_años_4_10": 0.04188571428571429,
+   "g_perpetuidad": 0.0524,
+   "wacc_4_10": 0.08943572217713716,
+   "ke": 0.09369376222360518,
+   "roe_fy3": 0.21857923384718017,
+   "fcff_ebitda": 0.6561648123008557,
+   "fcfe_ocf": 0.9100982276377696,
    "multiplos": {
-    "EV/FCFF": 24.58428665327868,
-    "P/FCFE": 22.124513493096824,
-    "P/E": 17.758904593369564,
-    "EV/EBITDA": 16.373723127609214,
-    "P/OCF": 20.733082634216135
+    "EV/FCFF": 24.759326574213098,
+    "P/FCFE": 22.49457567637975,
+    "P/E": 17.642977704624666,
+    "EV/EBITDA": 16.246198874264124,
+    "P/OCF": 20.472273454536893
    }
   },
   "Optimista": {
-   "g": 0.048285714285714286,
-   "g_años_4_10": 0.046971428571428574,
-   "g_perpetuidad": 0.0496,
-   "wacc_4_10": 0.08795283036569816,
-   "ke": 0.0926806193325744,
-   "roe_fy3": 0.28115573607473776,
-   "fcff_ebitda": 0.670526467297505,
-   "fcfe_ocf": 0.9666366132777651,
+   "g": 0.05,
+   "g_años_4_10": 0.0476,
+   "g_perpetuidad": 0.0524,
+   "wacc_4_10": 0.08943572217713716,
+   "ke": 0.09369376222360518,
+   "roe_fy3": 0.3198292745212557,
+   "fcff_ebitda": 0.6731954293746307,
+   "fcfe_ocf": 0.9421844845283563,
    "multiplos": {
-    "EV/FCFF": 26.427071536331873,
-    "P/FCFE": 23.612748201155473,
-    "P/E": 19.557492459055208,
-    "EV/EBITDA": 17.720050918275057,
-    "P/OCF": 22.824946951345567
+    "EV/FCFF": 26.6256059742894,
+    "P/FCFE": 24.030890144606197,
+    "P/E": 20.274059225895357,
+    "EV/EBITDA": 17.924236246221486,
+    "P/OCF": 22.641531843653347
    }
   }
  },
@@ -302,77 +302,111 @@
   {
    "ticker": "ADDYY",
    "nombre": "adidas AG",
-   "precio": 82.75,
-   "pe": 18.637386,
-   "ev_ebitda": 12.67,
+   "precio": 80.57,
+   "pe": 18.52184,
+   "ev_ebitda": 12.4,
    "crec_ingresos": 0.133,
    "margen_operativo": 0.08513,
    "roe": 0.24324,
-   "p_ocf": 12.53695651060147,
-   "p_fcf": 15.79765894002181,
-   "ev_fcf": 18.403705439476553,
+   "p_ocf": 12.206678182604932,
+   "p_fcf": 15.381479432933478,
+   "ev_fcf": 18.01234313631407,
    "ocf_ttm": 2311000000.0,
    "fcf_ttm": 1834000000.0,
    "interest_ttm": 58000000.0,
-   "ev_fcff": 17.95512111585152
-  },
-  {
-   "ticker": "LULU",
-   "nombre": "lululemon athletica inc.",
-   "precio": 96.87,
-   "pe": 7.97284,
-   "ev_ebitda": 4.986,
-   "crec_ingresos": -0.043,
-   "margen_operativo": 0.13212,
-   "roe": 0.30898002,
-   "p_ocf": 5.410848356207994,
-   "p_fcf": 7.9186258062991755,
-   "ev_fcf": 8.77670259669683,
-   "ocf_ttm": 1982033000.0,
-   "fcf_ttm": 1354336000.0,
-   "interest_ttm": 0.0,
-   "ev_fcff": 8.77670259669683
+   "ev_fcff": 17.5732981413114
   },
   {
    "ticker": "DECK",
    "nombre": "Deckers Outdoor Corporation",
-   "precio": 77.68,
-   "pe": 11.049787,
-   "ev_ebitda": 7.134,
+   "precio": 79.57,
+   "pe": 11.318634,
+   "ev_ebitda": 7.328,
    "crec_ingresos": 0.057,
    "margen_operativo": 0.15233,
    "roe": 0.42558,
-   "p_ocf": 8.861935074846299,
-   "p_fcf": 9.463706740334654,
-   "ev_fcf": 8.468718949944892,
+   "p_ocf": 9.077550908803037,
+   "p_fcf": 9.693964015287062,
+   "ev_fcf": 8.699370138700028,
    "ocf_ttm": 1193713000.0,
    "fcf_ttm": 1117808000.0,
    "interest_ttm": 3822000.0,
-   "ev_fcff": 8.445905195499417
+   "ev_fcff": 8.675935036490632
   },
   {
    "ticker": "ONON",
    "nombre": "On Holding AG",
-   "precio": 29.55,
-   "pe": 20.809858,
-   "ev_ebitda": 19.065,
+   "precio": 30.2,
+   "pe": 21.267607,
+   "ev_ebitda": 19.201,
    "crec_ingresos": 0.135,
    "margen_operativo": 0.14019,
    "roe": 0.23951,
-   "p_ocf": 18.797190285496765,
-   "p_fcf": 23.015716094150548,
-   "ev_fcf": 21.78872259147052,
+   "p_ocf": 19.210664880091358,
+   "p_fcf": 23.52198398508506,
+   "ev_fcf": 21.944498979258913,
    "ocf_ttm": 525400000.0,
    "fcf_ttm": 429100000.0,
    "interest_ttm": 22800000.0,
-   "ev_fcff": 20.91095936588595
+   "ev_fcff": 21.060460269462684
+  },
+  {
+   "ticker": "LULU",
+   "nombre": "lululemon athletica inc.",
+   "precio": 95.86,
+   "pe": 7.9157724,
+   "ev_ebitda": 4.767,
+   "crec_ingresos": -0.043,
+   "margen_operativo": 0.13212,
+   "roe": 0.30898002,
+   "p_ocf": 5.354433198639982,
+   "p_fcf": 7.836063795099591,
+   "ev_fcf": 8.390866810008742,
+   "ocf_ttm": 1982033000.0,
+   "fcf_ttm": 1354336000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 8.390866810008742
+  },
+  {
+   "ticker": "CROX",
+   "nombre": "Crocs, Inc.",
+   "precio": 119.24,
+   "pe": 10.404886,
+   "ev_ebitda": 7.81,
+   "crec_ingresos": 0.026,
+   "margen_operativo": 0.24221,
+   "roe": 0.42299998,
+   "p_ocf": 7.496349504480524,
+   "p_fcf": 8.113551996820982,
+   "ev_fcf": 10.269218631319008,
+   "ocf_ttm": 762634000.0,
+   "fcf_ttm": 704620000.0,
+   "interest_ttm": 83366000.0,
+   "ev_fcff": 9.391424707487863
+  },
+  {
+   "ticker": "BIRK",
+   "nombre": "Birkenstock Holding plc",
+   "precio": 32.97,
+   "pe": 15.850963,
+   "ev_ebitda": 10.972,
+   "crec_ingresos": 0.133,
+   "margen_operativo": 0.28972998,
+   "roe": 0.12361,
+   "p_ocf": 13.59890093969656,
+   "p_fcf": 18.684423272941928,
+   "ev_fcf": 24.385241223569466,
+   "ocf_ttm": 400342000.0,
+   "fcf_ttm": 291377000.0,
+   "interest_ttm": 92841000.0,
+   "ev_fcff": 19.48144152444692
   },
   {
    "ticker": "UAA",
    "nombre": "Under Armour, Inc.",
-   "precio": 4.27,
+   "precio": 4.64,
    "pe": null,
-   "ev_ebitda": 16.289,
+   "ev_ebitda": 17.183,
    "crec_ingresos": -0.032,
    "margen_operativo": -0.01604,
    "roe": -0.29825002,
@@ -383,23 +417,6 @@
    "fcf_ttm": -81116000.0,
    "interest_ttm": 0.0,
    "ev_fcff": null
-  },
-  {
-   "ticker": "VFC",
-   "nombre": "V.F. Corporation",
-   "precio": 14.5,
-   "pe": 21.014492,
-   "ev_ebitda": 11.134,
-   "crec_ingresos": -0.052,
-   "margen_operativo": -0.05529,
-   "roe": 0.17938,
-   "p_ocf": 7.557894627425296,
-   "p_fcf": 9.818884056772772,
-   "ev_fcf": 17.14313683340223,
-   "ocf_ttm": 754238000.0,
-   "fcf_ttm": 580560000.0,
-   "interest_ttm": 153551000.0,
-   "ev_fcff": 14.180241795402077
   }
  ]
 }
