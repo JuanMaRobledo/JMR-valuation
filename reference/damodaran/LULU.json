@@ -1,185 +1,50 @@
 {
  "ticker": "LULU",
  "empresa": "lululemon athletica inc.",
- "fecha": "2026-09-30",
+ "fecha": "2026-10-01",
  "industria_damodaran": "Apparel",
- "segmentos": {
-  "Américas": 7650,
-  "China continental": 1750,
-  "Resto del mundo": 1694
- },
- "riesgo": {
-  "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Apparel (35 empresas, 0,79 desapalancada y corregida por caja) reapalancada da 0,89, y el DCF Base sube de US$183,65 a US$195,77. Una marca de moda premium con caída de ventas tiene más riesgo que el promedio de Apparel; la beta de la hoja es prudente y defendible."
- },
- "historias": [
-  {
-   "nombre": "Base · Se estabiliza Américas y crece lo internacional",
-   "prob": 0.4,
-   "margen": 0.18,
-   "crec": {
-    "Américas": [
-     -0.08,
-     0,
-     0.02,
-     0.03,
-     0.03
-    ],
-    "China continental": [
-     0.08,
-     0.1,
-     0.1,
-     0.08,
-     0.08
-    ],
-    "Resto del mundo": [
-     0.06,
-     0.1,
-     0.1,
-     0.09,
-     0.08
-    ]
-   },
-   "id": "A",
-   "tesis": "base"
-  },
-  {
-   "nombre": "Conservadora · Pérdida estructural frente a Alo y Vuori",
-   "prob": 0.35,
-   "margen": 0.14,
-   "crec": {
-    "Américas": [
-     -0.1,
-     -0.05,
-     -0.02,
-     0,
-     0.01
-    ],
-    "China continental": [
-     0.03,
-     0.05,
-     0.05,
-     0.04,
-     0.04
-    ],
-    "Resto del mundo": [
-     0.03,
-     0.05,
-     0.05,
-     0.05,
-     0.05
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "id": "B",
-   "tesis": "conservadora"
-  },
-  {
-   "nombre": "Disrupción · Deterioro de los fundamentales",
-   "prob": 0.1,
-   "margen": 0.1,
-   "crec": {
-    "Américas": [
-     -0.12,
-     -0.08,
-     -0.05,
-     -0.03,
-     0
-    ],
-    "China continental": [
-     -0.05,
-     0,
-     0,
-     0.02,
-     0.02
-    ],
-    "Resto del mundo": [
-     0,
-     0.02,
-     0.02,
-     0.02,
-     0.02
-    ]
-   },
-   "roic_terminal": "costo_capital",
-   "id": "C",
-   "tesis": "disrupción",
-   "descripcion": "Moda que pasa: declive de la marca",
-   "terminal": "estabilizacion"
-  },
-  {
-   "nombre": "Optimista · La marca se recupera",
-   "prob": 0.15,
-   "margen": 0.21,
-   "crec": {
-    "Américas": [
-     -0.04,
-     0.04,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "China continental": [
-     0.12,
-     0.14,
-     0.12,
-     0.1,
-     0.1
-    ],
-    "Resto del mundo": [
-     0.1,
-     0.12,
-     0.12,
-     0.1,
-     0.1
-    ]
-   },
-   "id": "D",
-   "tesis": "optimista"
-  }
- ],
- "margenes_inverso": [
-  0.12,
-  0.15,
-  0.185
- ],
- "historia": "lululemon construyó una marca premium de ropa técnica (leggings, tops, outerwear) vendida casi toda en tiendas propias y online, con márgenes operativos de hasta 23,7%. Esa historia se rompió en Norteamérica: los ingresos quedaron planos (LTM −0,1%), el margen bajó a 17,8% y en el 2T FY26 las ventas comparables cayeron 10% (−12% en Norteamérica; leggings, ~−20%), mientras Alo Yoga y Vuori ganan participación y los aranceles en Vietnam y Camboya encarecen el costo. China y el resto del mundo siguen creciendo. En 2026 cambió la dirección: Heidi O'Neill (ex Nike) es la nueva CEO. La historia de cinco años es si esto es un ciclo de producto que una nueva gestión corrige o la pérdida de relevancia de una marca de moda.",
+ "historia": "En cinco a diez años lululemon sigue siendo una marca premium de ropa deportiva con márgenes altos para la industria, pero ya no la que crecía 15-25% al año. Américas, que hoy es casi el 70% de las ventas, deja de caer después de 2026 y crece con la economía, porque la marca perdió la novedad frente a Alo Yoga, Vuori y otras marcas de nicho y debe volver a ganarse al cliente con producto y menos rebajas. El crecimiento viene de China continental y del resto del mundo, donde la marca todavía es joven y abre tiendas. El margen operativo se recupera desde ~13% (2026, con aranceles y menos ventas a precio lleno) hacia ~17%, por debajo del 20-24% de 2022-2025 porque los aranceles, el fin de la exención de minimis y la competencia llegaron para quedarse. Reinvierte en tiendas y tecnología, no tiene deuda financiera y recompra acciones. El riesgo es de marca y de moda: una sola marca, en una categoría donde el gusto cambia rápido.",
  "filtro": [
   [
-   "Norteamérica vuelve a crecer en 2028",
+   "Américas deja de caer en 2027",
    "Sí",
-   "Sí, si los productos nuevos recuperan tráfico; ya pasó en 2019",
-   "Incierto"
+   "Sí: la caída de 2026 se explica por menos tráfico y conversión, y la nueva CEO (ex-Nike) tiene un plan de producto y precio lleno ([lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm))",
+   "Probable, pero sin volver a crecer doble dígito"
   ],
   [
-   "China y el resto del mundo crecen ~10% anual",
+   "China continental y el resto del mundo crecen 6-8% al año",
    "Sí",
-   "Sí: siguen creciendo con 220 tiendas meta en China y franquicias nuevas",
-   "Probable"
+   "Sí: +29% y +16% en 2025; +4% y +5% en el 2T26 con 25 tiendas nuevas en un año ([lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm))",
+   "Probable, desacelerando"
   ],
   [
-   "El margen vuelve a 18,5%",
+   "El margen operativo vuelve a ~17%",
    "Sí",
-   "Sí, pero exige menos rebajas y absorber aranceles",
-   "Media"
+   "Sí: fue 20-24% en 2022-2025 y el margen de producto en Américas sigue siendo muy alto",
+   "Probable en el caso central"
   ],
   [
-   "lululemon vuelve a margen de 23%",
+   "El margen vuelve a 22% o más",
    "Sí",
-   "Poco: con competencia y aranceles, ese pico parece excepcional",
+   "Poco: aranceles, fin de la exención de minimis y más inversión en marca",
    "Baja"
   ]
  ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$7.000-12.000 millones: crecer 3,0% anual cinco años (Base) lo logró ~70% de las empresas de ese tamaño; 5,8% (Optimista), ~52%. La hoja no pide crecimiento, pide que el margen se recupere. El valor de lululemon depende del margen y de cuánto dura la caída en Norteamérica, no de la tasa de crecimiento.",
+ "tasas_base_nota": "lululemon está en el tramo de ventas de US$7.000-12.000 millones de dólares de 2015 (mediana de crecimiento real a cinco años 3,5%). La Base ({cagrA} nominal compuesto en cinco años, con el primer año en caída) está en la parte baja de la distribución de ese tramo, coherente con una marca que pasó de crecer a estabilizarse.",
+ "segmentos": {
+  "Américas": 7652.2,
+  "China continental": 1879.3,
+  "Resto del mundo": 1562.5
+ },
  "crecimiento": {
-  "texto": "Ingresos de US$9.619 millones (FY23, +18,6%), US$10.588 millones (FY24, +10,1%) y US$11.103 millones (FY25, +4,9%); LTM US$11.094 millones (plano). En el 2T FY26 los ingresos cayeron 4% (−5% en moneda constante) y las comparables −10%. La hoja supone −6% el próximo año y 4% después. La división de las historias (Américas ~69%, China ~16%, resto ~15%) es una aproximación con fuentes secundarias: no se verificó un desglose oficial en un solo documento.",
+  "texto": "Las ventas de los últimos doce meses (agosto 2025-julio 2026) suman US$11.094 millones (cálculo propio: 2025 menos 1S25 más 1S26, [lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm) y [lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm)): Américas US$7.652 millones, China continental US$1.879 millones y resto del mundo US$1.563 millones. En 2025 las ventas crecieron 5% (comparables +2%: Américas −3%, China +20%, resto del mundo +9%). En el 2T26 cayeron 4%: Américas −8% (comparables −12% por menos tráfico, menor conversión y menor ticket), China continental +4% y resto del mundo +5%. La guía de 2026 es una caída de 5% a 7% (US$10.350-10.500 millones) y la del 3T26, de 10% a 11% ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)).",
   "tabla": {
    "cols": [
     "US$ millones",
-    "FY23",
-    "FY24",
-    "FY25",
-    "LTM"
+    "2024",
+    "2025",
+    "LTM jul-26 (cálculo propio)",
+    "2T26 vs 2T25"
    ],
    "align": [
     "l",
@@ -190,146 +55,353 @@
    ],
    "rows": [
     [
-     "Ingresos",
-     "9.619",
+     "Américas",
+     "7.928",
+     "7.847",
+     "7.652",
+     "−8%"
+    ],
+    [
+     "China continental",
+     "1.361",
+     "1.755",
+     "1.879",
+     "+4%"
+    ],
+    [
+     "Resto del mundo",
+     "1.299",
+     "1.501",
+     "1.563",
+     "+5%"
+    ],
+    [
+     "Total",
      "10.588",
      "11.103",
-     "11.094"
-    ],
-    [
-     "Crecimiento",
-     "+18,6%",
-     "+10,1%",
-     "+4,9%",
-     "−0,1%"
-    ],
-    [
-     "Margen operativo",
-     "22,2%",
-     "23,7%",
-     "19,9%",
-     "17,8%"
-    ],
-    [
-     "FCFF (hoja)",
-     "1.574",
-     "1.551",
-     "963",
-     "—"
+     "11.094",
+     "−4%"
     ]
    ]
   }
  },
  "margenes": {
-  "texto": "El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles (40% de la producción en Vietnam, 9% en Camboya). La hoja supone 14% el próximo año y 18,5% de objetivo. Las historias van de 10% (declive de marca) a 21% (recuperación); volver a 23% no está en ninguna."
+  "texto": "El margen operativo GAAP de los últimos doce meses es 17,8% (US$1.979 millones), pero incluye US$134,5 millones de devolución de aranceles IEEPA (una vez, en el 2T26) y excluye como gasto normal US$24,8 millones de la disputa por poderes con el fundador Chip Wilson y US$15,2 millones de la transición del CEO; normalizado, es ~17,0% ([lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm), [lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm)). El margen va hacia abajo: fue 23,7% en 2024 y 19,9% en 2025, y la guía de 2026 implica ~13% sin la devolución de aranceles (BPA de US$9,48-9,73 menos US$0,86 de la devolución). En el 2T26, sin la devolución, el margen bruto bajó 360 puntos básicos (aranceles, rebajas y más ocupación por tiendas nuevas) y los gastos de venta y administración subieron a 41,7% de las ventas ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)). Los segmentos siguen siendo muy rentables: en 2025 Américas ganó 32,6% de sus ventas, China continental 40,0% y el resto del mundo 23,0%, antes de US$1.397 millones de costos corporativos."
  },
  "reinversion": {
-  "texto": "Capex de ~US$650-690 millones al año (tiendas, centros de distribución) y sales-to-capital de 1,77 (años 1-5) y 1,80 después, con los arrendamientos incluidos: el promedio de Apparel según Damodaran es 1,77 y la historia reciente, 3,02. Con ingresos planos, la reinversión en tiendas internacionales solo crea valor si esas tiendas mantienen la productividad histórica. Ventaja que se desvanece: marca premium de 27 años, pero con comparables de −10% a −12% en Norteamérica, rebajas y un ROIC que bajó de 52% a 27%. El ROIC después del año 10 es 12,4%, el punto medio entre el costo de capital terminal (9,0%) y el promedio de su industria según Damodaran (15,8%)."
+  "texto": "lululemon reinvierte en tiendas, centros de distribución y tecnología: el capex fue US$681 millones en 2025 (~6% de las ventas) y abre ~40-45 tiendas por año (825 al 2-ago-2026). No tiene deuda financiera; los arrendamientos (VP de US$1.717 millones con los compromisos del 10-K) son su única deuda. Con capital invertido de ~US$5.100 millones (patrimonio + arrendamientos − caja) rota ~2,2 veces las ventas; se usa 1,8 porque la expansión internacional exige tiendas propias.",
+  "tabla": {
+   "cols": [
+    "Concepto",
+    "2024",
+    "2025",
+    "LTM jul-26"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Tiendas propias",
+     "767",
+     "811",
+     "825"
+    ],
+    [
+     "Inventarios (US$M)",
+     "1.442",
+     "1.701",
+     "1.711"
+    ],
+    [
+     "ROIC de la hoja",
+     "52%",
+     "36%",
+     "27%"
+    ]
+   ]
+  }
  },
- "prob_texto": "Base (40%) supone que la nueva CEO estabiliza Norteamérica en dos años mientras lo internacional crece. Conservadora (35%) es la pérdida estructural frente a Alo y Vuori: las comparables de −10% y la caída de ~20% en leggings la hacen casi tan probable como Base. Disrupción (10%) es el declive de una marca de moda. Optimista (15%) es una recuperación de producto y marca como la de 2018-2019, menos probable con la competencia de hoy. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
- "premortem": [
-  "Alo y Vuori siguen ganando a la clienta joven y lululemon queda como marca de «generación anterior».",
-  "Los aranceles se quedan y lululemon no puede trasladarlos a precio sin perder volumen.",
-  "La nueva CEO cambia demasiado (producto, canal mayorista) y diluye la marca.",
-  "China se desacelera por competencia local (Anta, Li Ning) o por tensiones comerciales.",
-  "Las rebajas se vuelven permanentes y el margen se queda en 14-15%."
+ "riesgo": {
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,15, el promedio de la regresión semanal contra el S&P 500 a dos años (1,13) y a cinco años (1,20). La beta desapalancada de Apparel global (0,71, Damodaran, enero de 2026) reapalancada con los arrendamientos da 0,79 (0,88 con la versión corregida por caja); se deja como sensibilidad porque esa industria mezcla fabricantes diversificados de ropa con marcas premium de una sola marca, y lululemon depende de una marca, de un gusto que cambia y de un consumidor de ingresos altos."
+ },
+ "historias": [
+  {
+   "id": "A",
+   "tesis": "base",
+   "nombre": "Base · Américas se estabiliza y crece lo internacional",
+   "prob": 0.45,
+   "margen": 0.17,
+   "crec": {
+    "Américas": [
+     -0.11,
+     0,
+     0.02,
+     0.03,
+     0.03
+    ],
+    "China continental": [
+     0.03,
+     0.08,
+     0.08,
+     0.07,
+     0.06
+    ],
+    "Resto del mundo": [
+     0.04,
+     0.08,
+     0.08,
+     0.07,
+     0.06
+    ]
+   },
+   "tesis_que": "Se cumple la guía de 2026 y Américas cae ~11% en los próximos doce meses; después se estabiliza y crece 2-3% con la nueva CEO, más producto nuevo y menos rebajas. China continental y el resto del mundo crecen 6-8% con tiendas nuevas. El margen operativo sube de ~12,5% a 17% en cinco años con más ventas a precio lleno y disciplina de gastos, sin volver al 20-24% de 2022-2025 por los aranceles y la inversión en marca.",
+   "tesis_contraste": "Comparables de Américas ≥ 0% en 2027 y margen bruto (sin devoluciones de aranceles) ≥ 56%."
+  },
+  {
+   "id": "B",
+   "tesis": "conservadora",
+   "nombre": "Conservadora · Pérdida de participación frente a Alo y Vuori",
+   "prob": 0.3,
+   "margen": 0.135,
+   "roic_terminal": "costo_capital",
+   "crec": {
+    "Américas": [
+     -0.13,
+     -0.05,
+     -0.02,
+     0,
+     0.01
+    ],
+    "China continental": [
+     0,
+     0.04,
+     0.05,
+     0.04,
+     0.04
+    ],
+    "Resto del mundo": [
+     0.02,
+     0.05,
+     0.05,
+     0.05,
+     0.04
+    ]
+   },
+   "tesis_que": "Las marcas de nicho (Alo Yoga, Vuori) y las grandes (Nike, Adidas) siguen quitando clientes en Américas tres años más; el crecimiento internacional se desacelera a un dígito bajo y las rebajas se vuelven permanentes. El margen se queda en 13,5% y la ventaja de marca se erosiona: después del año 10 lululemon gana su costo de capital.",
+   "tesis_contraste": "Comparables de Américas negativos en 2027 y margen operativo ≤ 14% en 2027."
+  },
+  {
+   "id": "C",
+   "tesis": "disrupción",
+   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "descripcion": "la moda pasa y la marca se vuelve una más",
+   "prob": 0.1,
+   "margen": 0.1,
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion",
+   "crec": {
+    "Américas": [
+     -0.15,
+     -0.1,
+     -0.06,
+     -0.03,
+     0
+    ],
+    "China continental": [
+     -0.05,
+     -0.03,
+     0,
+     0.02,
+     0.02
+    ],
+    "Resto del mundo": [
+     -0.02,
+     0,
+     0.02,
+     0.02,
+     0.02
+    ]
+   },
+   "tesis_que": "lululemon sigue el camino de las marcas de moda que perdieron el favor del consumidor (Under Armour, Gap): Américas cae cuatro años, China se estanca con la competencia local y las rebajas y el costo de las tiendas llevan el margen a 10%.",
+   "tesis_contraste": "Comparables de Américas ≤ −10% en 2027 o margen bruto ≤ 52%."
+  },
+  {
+   "id": "D",
+   "tesis": "optimista",
+   "nombre": "Optimista · La nueva CEO recupera la marca",
+   "prob": 0.15,
+   "margen": 0.21,
+   "crec": {
+    "Américas": [
+     -0.08,
+     0.04,
+     0.05,
+     0.05,
+     0.05
+    ],
+    "China continental": [
+     0.06,
+     0.12,
+     0.12,
+     0.1,
+     0.09
+    ],
+    "Resto del mundo": [
+     0.06,
+     0.12,
+     0.11,
+     0.1,
+     0.09
+    ]
+   },
+   "tesis_que": "Heidi O'Neill (ex-presidenta de consumidor, producto y marca de Nike) recupera la innovación de producto: Américas vuelve a crecer en 2027, la expansión internacional mantiene doble dígito y el margen vuelve a 21%, cerca del promedio de 2022-2025.",
+   "tesis_contraste": "Comparables de Américas ≥ +3% en 2027 con margen bruto ≥ 58%."
+  }
  ],
- "contra": "las comparables de −10% y la caída de ~20% en leggings (la categoría central) muestran una pérdida de relevancia, no solo un mal trimestre. Si el 3T y el 4T repiten, Conservadora pasa a ser la historia central.",
+ "prob_texto": "La Base pesa 45%: es la guía de 2026 más una estabilización de Américas que ya muestran marcas comparables. La Conservadora pesa 30% porque la caída de Américas lleva más de un año y la competencia de nicho sigue creciendo. La Disrupción pesa 10%: la marca sigue siendo muy rentable, pero ya hubo marcas de moda deportiva que no se recuperaron. La Optimista pesa 15% porque exige a la vez un cambio de producto exitoso y volver a márgenes de 20%. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas.",
+ "premortem": [
+  "Américas sigue cayendo en 2027: el consumidor ya no paga US$100 por un pantalón de yoga cuando hay alternativas iguales.",
+  "La nueva CEO cambia el equipo y el producto, y la transición cuesta dos años de ventas.",
+  "Los aranceles nuevos (secciones 232 y 301) y el fin de la exención de minimis quitan 2-3 puntos de margen para siempre.",
+  "China continental se desacelera por la competencia local y la marca deja de abrir tiendas rentables.",
+  "La disputa con el fundador vuelve y distrae al directorio y a la gerencia."
+ ],
+ "contra": "la guía del 3T26 prevé una caída de ventas de 10% a 11%, los comparables de Américas cayeron 12% en el 2T26 y los gastos de venta y administración subieron a 41,7% de las ventas ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)).",
  "indicadores": [
   [
-   "Ventas comparables en Norteamérica",
-   "−12% (2T FY26)",
-   "≥ 0% en FY27",
-   "≤ −8% dos trimestres más"
+   "Comparables de Américas",
+   "−12% (2T26)",
+   "≥ 0%",
+   "≤ −8% en 2027"
   ],
   [
-   "China continental (interanual)",
-   "Creciendo",
-   "≥ +10%",
-   "≤ +3%"
+   "Ventas de China continental (moneda constante)",
+   "−2% (2T26)",
+   "≥ +6%",
+   "≤ 0%"
   ],
   [
-   "Margen bruto",
+   "Margen bruto sin devoluciones de aranceles",
+   "~54,9% (2T26)",
+   "≥ 57%",
+   "≤ 53%"
+  ],
+  [
+   "Gastos de venta y administración / ventas",
+   "41,7% (2T26)",
+   "≤ 38%",
+   "≥ 42%"
+  ],
+  [
+   "Inventario por unidades",
+   "−7% (2T26)",
+   "Estable con ventas en alza",
+   "Sube con ventas en baja"
+  ],
+  [
+   "Tiendas nuevas internacionales",
+   "25 en un año",
+   "Se mantienen",
+   "Se frenan"
+  ],
+  [
+   "Rebajas (markdowns)",
+   "En alza en 2026",
    "En baja",
-   "Estable o en alza",
-   "Caída > 200 pb"
+   "En alza"
   ],
   [
-   "Rebajas / inventario",
-   "Alto",
-   "Inventario baja más que ventas",
-   "Inventario crece más que ventas"
-  ],
-  [
-   "Participación de Alo y Vuori",
-   "En alza",
-   "Se estabiliza",
-   "Sigue subiendo"
+   "Recompras",
+   "US$330M en el 2T26",
+   "Continúan",
+   "Se suspenden"
   ]
  ],
- "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
- "frase": "Marca premium de ropa técnica que pierde Norteamérica y crece afuera, con nueva CEO",
- "confianza": "Baja-media: la duración de la caída en Norteamérica es muy incierta",
- "cambiaria": "Comparables de Norteamérica, margen bruto y respuesta a Alo y Vuori",
- "revision": "Resultados del 3T FY26 (dic-2026)",
+ "margenes_inverso": [
+  0.135,
+  0.17,
+  0.21
+ ],
+ "precio_lectura": "El precio de US$95,86 queda muy por debajo de la Base y cerca de la Disrupción: el mercado descuenta que el margen no se recupera y que Américas sigue cayendo. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la competencia de Alo y Vuori, o puede desconfiar del cambio de CEO en medio de la caída. El DCF inverso de la tabla es elocuente: con un margen de ~15% el precio supone que las ventas caen ~8% al año durante cinco años, y con el margen de la Base ni una caída de 10% anual lo justifica. El precio no apuesta contra el crecimiento sino contra el margen: descuenta que la rentabilidad de 2022-2025 no vuelve.",
+ "frase": "Marca premium de ropa deportiva que deja de crecer en Américas y se apoya en lo internacional; margen que baja de ~20% a ~17%",
+ "confianza": "Media: el margen normalizado y la caja están bien documentados; la estabilización de Américas y el efecto de la nueva CEO no",
+ "cambiaria": "Los comparables de Américas, el margen bruto y la ejecución de la nueva CEO",
+ "revision": "Resultados del 3T26 (diciembre de 2026)",
  "fuentes": [
   [
-   "CNBC, resultados del 2T FY2026 de lululemon",
-   "https://www.cnbc.com/2026/09/03/lululemon-lulu-q2-2026-earnings.html"
+   "lululemon, comunicado del 2T26 (3-sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
   ],
   [
-   "Investing.com, transcripción de la llamada del 2T FY2026",
-   "https://www.investing.com/news/transcripts/earnings-call-transcript-lululemon-q2-2026-profit-beat-fails-to-calm-investors-93CH-4888627"
+   "lululemon, 10-Q del 2T26 (3-sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm"
   ],
   [
-   "CNBC, Heidi O'Neill nombrada CEO",
-   "https://www.cnbc.com/2026/04/22/lululemon-names-former-nike-exec-heidi-oneill-as-new-ceo.html"
+   "lululemon, 10-K 2025 (17-mar-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm"
   ],
   [
-   "Retail Dive, Alo Yoga y Vuori ganan participación",
-   "https://www.retaildive.com/news/alo-yoga-vuori-gaining-activewear-market-share/714384/"
+   "lululemon, 10-Q del 1T26 (4-jun-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000078/lulu-20260503.htm"
   ],
   [
-   "Statista, ingresos de lululemon por región",
-   "https://www.statista.com/statistics/422587/net-revenue-of-lululemon-worldwide-by-region/"
+   "lululemon, nombramiento de Heidi O'Neill como CEO (22-abr-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000070/lulu-20260421xex991.htm"
   ],
   [
-   "Mauboussin & Callahan, The Base Rate Book (2016)",
-   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   "lululemon, 8-K del acuerdo de cooperación con Chip Wilson (27-may-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1397187/000121390026061531/ea0292191-8k_lululemon.htm"
   ],
   [
-   "Damodaran, Betas by Sector (US), enero 2026",
+   "Damodaran, ERP implícita de septiembre de 2026",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+  ],
+  [
+   "Damodaran, Betas by Sector (global), enero de 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ],
+  [
+   "Mauboussin y Callahan, The Base Rate Book (2016)",
+   "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
   ]
  ],
  "arrendamientos": {
-  "vp": 1711.0332569544425,
-  "ajuste_ebit": 161.5666775779368,
-  "margen_pp": 0.014563428662154028,
-  "capital_ventas": 0.15423050810838673,
+  "vp": 1716.58,
+  "ajuste_ebit": 160.76,
+  "margen_pp": 0.014490715702181358,
+  "capital_ventas": 0.1547304849468181,
   "cierre": "2026-02-01",
   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
  },
  "justificacion": [
   [
-   "Crecimiento: Norteamérica cae, el resto del mundo crece.",
-   "lululemon construyó una marca premium de ropa técnica vendida casi toda en tiendas propias y online. Esa historia se rompió en Norteamérica: en el 2T FY26 las ventas comparables cayeron 10% (−12% en Norteamérica; los leggings, la categoría central, ~−20%), mientras Alo Yoga y Vuori ganan participación. China y el resto del mundo siguen creciendo. La Base supone que Américas cae 8% el primer año, se estabiliza y vuelve a crecer 3%, mientras China y el resto crecen 8-10%: {g1A} el primer año y {cagrA} compuesto. No es una cifra exigente (~{tbA} de empresas de su tamaño lo lograron); el valor de lululemon no depende del crecimiento sino de cuánto dura la caída y a qué margen vuelve. La Conservadora ({cagrB}) es una pérdida estructural frente a Alo y Vuori; la Disrupción ({cagrC}), el declive de una marca de moda; la Optimista ({cagrD}), una recuperación como la de 2018-2019. La nueva CEO, Heidi O'Neill (ex Nike), es la razón para dar a la Base dos años de estabilización y no más. Si el 3T y el 4T repiten comparables de −10%, la Conservadora pasa a ser la central."
+   "Crecimiento: un año más de caída en Américas y crecimiento internacional.",
+   "La Base cae {g1A} el primer año, en línea con la guía de 2026 (ventas −5% a −7%; 3T26 −10% a −11%), y crece {cagrA} compuesto en cinco años. Desde el año 2 Américas se estabiliza (0-3%) y China continental y el resto del mundo crecen 6-8% con tiendas nuevas. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que los comparables de Américas sigan negativos en 2027 (hacia la Conservadora, {cagrB}) o que vuelvan a crecer pronto (hacia la Optimista, {cagrD})."
   ],
   [
-   "Margen: recuperarse, pero no al máximo.",
-   "El margen operativo bajó de 23,7% (FY24) a 17,8% LTM por rebajas, desapalancamiento en Norteamérica y aranceles: ~40% de la producción está en Vietnam y 9% en Camboya. La Base supone 18% en base reportada ({mA} en el modelo, con +{arr_pp} pp por tratar los alquileres de las tiendas como deuda). Es volver al nivel de hoy, no al máximo: con la competencia actual, regresar a 23% no está en ninguna historia. La Conservadora ({mB}) es rebajas permanentes; la Disrupción ({mC}), el declive de la marca; la Optimista ({mD}), una recuperación de producto. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}. La señal que vigilar es el margen bruto: una caída de más de 200 pb invalidaría la Base."
+   "Margen: de ~12,5% a 17%, sin volver al 20-24% de 2022-2025.",
+   "La Base parte de {margenY1} el primer año (la guía de 2026 sin la devolución de aranceles) y llega a {mA} en {conv} años ({mrepA} antes del ajuste de arrendamientos, +{arr_pp} pp). Supone más ventas a precio lleno y control de gastos, pero que los aranceles y el fin de la exención de minimis restan margen para siempre. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone rebajas permanentes; la Disrupción ({mC}), pérdida de escala; la Optimista ({mD}), la vuelta al promedio histórico."
   ],
   [
-   "Reinversión: tiendas propias, ahora con alquileres dentro.",
-   "lululemon invierte ~US$650-690 millones al año en tiendas y centros de distribución. Al tratar los alquileres como deuda (~US${arr_vp} millones de valor presente), el capital incluye las tiendas arrendadas. Revisión del 1-oct-2026: el ventas/capital de los años 1–5 había quedado en 1,53, por debajo de la historia (3,02, con capex neto y tiendas arrendadas nuevas) y del promedio de Apparel según Damodaran (1,77); ahora usa {s2c1}× en los años 1–5 y {s2c2}× después, el borde prudente de ese rango. Cada dólar de ventas nuevas exige ~US${cap1} de capital propio y arrendado. Con ingresos planos, abrir tiendas afuera solo crea valor si mantienen la productividad histórica. El ROIC bajó de 52% a ~30%: la ventaja existe pero se desvanece, así que el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria. Si la ventaja desapareciera, la Base valdría {s_roic}."
+   "Reinversión: tiendas y tecnología para crecer afuera.",
+   "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10, entre la industria (1,5) y la rotación propia (~2,2). Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
   ],
   [
-   "Descuento.",
-   "La hoja usa una beta de {beta}; la bottom-up de Apparel reapalancada da {betabu}, con la que el DCF técnico sube. Una marca de moda premium con ventas en caída tiene más riesgo que el promedio del sector, así que la beta de la hoja es prudente. El costo de capital es casi constante ({wacc0} a {waccT}); un punto más lo lleva a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo. La prima de seguridad de esta empresa es {mos}."
+   "Descuento y largo plazo: beta de la propia acción y una ventaja que se desvanece.",
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 1-oct-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, sin deuda financiera; los arrendamientos pesan ~14%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene 28 años y gana muy por encima de su costo de capital, pero la ventaja se desvanece (comparables de Américas −12%, rebajas, ROIC de la hoja de 52% en 2024 a 27% LTM), así que se usa el punto medio entre el costo de capital terminal y el ROIC de la industria (15,8%, menor que el actual). El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+  ],
+  [
+   "Acciones, opciones y caja.",
+   "Se usan {acciones} millones de acciones (105,6 millones comunes y 5,1 millones intercambiables al 28-ago-2026, más 1,0 millón de RSU y PSU sin consolidar); las 1,5 millones de opciones a US$258,81 valen poco con la acción a US$96. La caja es US$1.390 millones al 2-ago-2026 y no hay deuda financiera. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
   ],
   [
    "Probabilidades y lectura del resultado.",
-   "La Base pesa {pA} y la Conservadora {pB}: casi lo mismo, porque las comparables de −10% y la caída de los leggings hacen la pérdida estructural casi tan probable como la recuperación. La Disrupción pesa {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo entre la Disrupción ({vC}) y la Conservadora ({vB}). O el mercado ve un declive más profundo que el de la Conservadora, o la Base es demasiado generosa con el margen. Esa es la pregunta que hay que resolver antes de leer el resultado. Las acciones se fijan en {acciones} millones."
+   "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
   ]
  ]
 }
