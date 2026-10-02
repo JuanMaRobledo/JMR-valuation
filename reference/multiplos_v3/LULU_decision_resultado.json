@@ -38,17 +38,17 @@
     "UAA"
    ],
    "C": {
-    "Conservador": 6.02,
-    "Base": 10.5,
-    "Optimista": 12.08
+    "Conservador": 6.29,
+    "Base": 10.25,
+    "Optimista": 10.25
    },
    "mercado": 9.08,
    "lambda": 0.5,
-   "conservador": 7.05,
-   "base": 9.79,
-   "optimista": 12.62,
-   "factor_cons": 0.72,
-   "factor_opt": 1.289,
+   "conservador": 7.09,
+   "base": 9.66,
+   "optimista": 11.97,
+   "factor_cons": 0.733,
+   "factor_opt": 1.239,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
@@ -56,9 +56,9 @@
     10.98
    ],
    "antes": {
-    "J8": null,
-    "J19": 7.178411408305009,
-    "J30": null
+    "J8": 7.05,
+    "J19": 9.79,
+    "J30": 12.62
    },
    "nota": ""
   },
@@ -109,9 +109,9 @@
     23.9
    ],
    "antes": {
-    "J8": null,
-    "J19": 29.252041512760233,
-    "J30": null
+    "J8": 14.1,
+    "J19": 22.01,
+    "J30": 24.93
    },
    "nota": ""
   },
@@ -124,36 +124,36 @@
    "A_p75": 20.73,
    "A_max": 73.04,
    "A_excluidos": [],
-   "B_mediana": 15.89,
-   "B_ajustada": 15.89,
+   "B_mediana": 16.12,
+   "B_ajustada": 16.12,
    "B_n": 6,
    "B_regresion": null,
-   "B_peers": "NKE 15,8x, ADDYY 18,3x, ONON 21,2x, DECK 11,2x, BIRK 15,9x, GAP 6,8x",
+   "B_peers": "NKE 16,1x, ADDYY 18,3x, ONON 21,9x, DECK 11,3x, BIRK 16,1x, GAP 6,8x",
    "B_excluidos": [
     "UAA"
    ],
    "C": {
-    "Conservador": 11.11,
-    "Base": 16.89,
-    "Optimista": 18.81
+    "Conservador": 11.12,
+    "Base": 16.85,
+    "Optimista": 18.56
    },
-   "mercado": 14.52,
+   "mercado": 14.64,
    "lambda": 0.5,
-   "conservador": 11.74,
-   "base": 15.71,
-   "optimista": 19.92,
-   "factor_cons": 0.747,
-   "factor_opt": 1.268,
+   "conservador": 11.75,
+   "base": 15.74,
+   "optimista": 19.83,
+   "factor_cons": 0.746,
+   "factor_opt": 1.26,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     13.16,
-    16.89
+    16.85
    ],
    "antes": {
-    "J8": null,
-    "J19": 12.30958713272543,
-    "J30": null
+    "J8": 11.74,
+    "J19": 15.71,
+    "J30": 19.92
    },
    "nota": ""
   },
@@ -172,11 +172,11 @@
      "> 2,5x la mediana (35.2x)"
     ]
    ],
-   "B_mediana": 17.09,
-   "B_ajustada": 17.09,
+   "B_mediana": 17.19,
+   "B_ajustada": 17.19,
    "B_n": 6,
    "B_regresion": null,
-   "B_peers": "NKE 22,6x, ADDYY 15,5x, ONON 23,3x, DECK 9,6x, BIRK 18,7x, GAP 8,3x",
+   "B_peers": "NKE 23,0x, ADDYY 15,5x, ONON 24,0x, DECK 9,6x, BIRK 18,9x, GAP 8,3x",
    "B_excluidos": [
     "UAA"
    ],
@@ -185,23 +185,23 @@
     "Base": 20.62,
     "Optimista": 21.9
    },
-   "mercado": 19.09,
+   "mercado": 19.14,
    "lambda": 0.5,
    "conservador": 12.67,
-   "base": 19.85,
-   "optimista": 23.48,
-   "factor_cons": 0.638,
-   "factor_opt": 1.183,
+   "base": 19.88,
+   "optimista": 23.6,
+   "factor_cons": 0.637,
+   "factor_opt": 1.187,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    17.09,
+    17.19,
     21.09
    ],
    "antes": {
-    "J8": null,
-    "J19": 28.408566134133007,
-    "J30": null
+    "J8": 12.67,
+    "J19": 19.85,
+    "J30": 23.48
    },
    "nota": ""
   },
@@ -214,36 +214,36 @@
    "A_p75": 16.66,
    "A_max": 51.23,
    "A_excluidos": [],
-   "B_mediana": 12.95,
-   "B_ajustada": 12.95,
+   "B_mediana": 13.02,
+   "B_ajustada": 13.02,
    "B_n": 6,
    "B_regresion": null,
-   "B_peers": "NKE 17,2x, ADDYY 12,3x, ONON 19,0x, DECK 9,0x, BIRK 13,6x, GAP 5,1x",
+   "B_peers": "NKE 17,5x, ADDYY 12,3x, ONON 19,6x, DECK 9,0x, BIRK 13,7x, GAP 5,2x",
    "B_excluidos": [
     "UAA"
    ],
    "C": {
-    "Conservador": 7.16,
-    "Base": 12.1,
-    "Optimista": 13.93
+    "Conservador": 6.97,
+    "Base": 11.98,
+    "Optimista": 12.96
    },
-   "mercado": 12.54,
+   "mercado": 12.57,
    "lambda": 0.5,
-   "conservador": 8.5,
-   "base": 12.32,
-   "optimista": 15.54,
-   "factor_cons": 0.69,
-   "factor_opt": 1.261,
+   "conservador": 8.42,
+   "base": 12.28,
+   "optimista": 15.26,
+   "factor_cons": 0.686,
+   "factor_opt": 1.243,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    12.1,
-    12.95
+    11.98,
+    13.02
    ],
    "antes": {
-    "J8": null,
-    "J19": 14.240452546231857,
-    "J30": null
+    "J8": 8.5,
+    "J19": 12.32,
+    "J30": 15.54
    },
    "nota": ""
   }
@@ -255,16 +255,16 @@
    241.60065004858274
   ],
   "multiplos_hoy": [
-   86.13321615652686,
-   135.69910395676968,
-   208.36993110138457
+   83.72937498292488,
+   126.92831916384299,
+   170.53553343402592
   ],
   "ponderado_hoy": [
-   93.5797823831994,
-   150.05882278580486,
-   221.66221868026386
+   92.13747767903821,
+   144.79635191004886,
+   198.96158007984866
   ],
-  "brecha_base": -0.20920531227121508,
+  "brecha_base": -0.2603175880285291,
   "fila_origen": 53
  }
 }
