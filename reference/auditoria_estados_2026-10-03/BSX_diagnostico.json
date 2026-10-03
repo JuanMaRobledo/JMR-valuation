@@ -1,0 +1,108 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "F23",
+  "columna": "Dec '20",
+  "hoja_valor": -0.06,
+  "sec": -0.08,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 2.45,
+  "sec": 2.49,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "F24",
+  "columna": "Dec '20",
+  "hoja_valor": -0.06,
+  "sec": -0.08,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "G24",
+  "columna": "Dec '21",
+  "hoja_valor": 0.73,
+  "sec": 0.69,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "H24",
+  "columna": "Dec '22",
+  "hoja_valor": 0.48,
+  "sec": 0.45,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "I24",
+  "columna": "Dec '23",
+  "hoja_valor": 1.09,
+  "sec": 1.07,
+  "fecha_sec": "2023-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 2.45,
+  "sec": 2.47,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "B13",
+  "columna": "Dec '16",
+  "hoja_valor": 972,
+  "sec": 1182.0,
+  "fecha_sec": "2016-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ }
+]

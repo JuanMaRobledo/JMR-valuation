@@ -18,9 +18,9 @@
   "marginY1Cons": 0.110658,
   "marginY1Base": 0.110658,
   "marginY1Opt": 0.110658,
-  "marginCons": 0.10528332280332263,
-  "marginBase": 0.1252833228033226,
-  "marginOpt": 0.14528332280332262,
+  "marginCons": 0.10565877262184488,
+  "marginBase": 0.12565877262184488,
+  "marginOpt": 0.1456587726218449,
   "salesToCapital2": 2.8298,
   "wacc": 0.09226836211411485,
   "costoPatrimonio": 0.093608,
@@ -31,9 +31,9 @@
   "salesToCapital": 3.2705
  },
  "financiero": false,
- "dcf_sin_exceso": 164.63590429962525,
+ "dcf_sin_exceso": 165.08652985807004,
  "precio": 108.29,
- "dcf_base": 189.2735881275726,
+ "dcf_base": 189.79581098993606,
  "g_ref": 0.05540075364990678,
  "m_base": 0.130658,
  "s2c": 3.2705,
@@ -825,14 +825,14 @@
    "beta": 0.98,
    "ke": 0.093608,
    "wacc": 0.09226836211411485,
-   "dcf_base": 191.51339472986655
+   "dcf_base": 192.0445669139801
   },
   {
    "enfoque": "Bottom-up del sector (Computer Services, reapalancada)",
    "beta": 0.9801718707979624,
    "ke": 0.09361566543758912,
    "wacc": 0.09227582132068533,
-   "dcf_base": 191.50585415822775
+   "dcf_base": 192.03700288852755
   }
  ],
  "sensibilidad": {
@@ -996,5 +996,5 @@
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 191.51339472986655
+ "motor_tecnico": 192.0445669139801
 }

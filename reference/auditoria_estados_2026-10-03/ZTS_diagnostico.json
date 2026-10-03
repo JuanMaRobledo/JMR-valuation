@@ -1,0 +1,150 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Income Before Provision for Income Taxes",
+  "celda": "L19",
+  "columna": "LTM",
+  "hoja_valor": 3272,
+  "sec": 3299.0,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "L20",
+  "columna": "LTM",
+  "hoja_valor": 656,
+  "sec": 662.0,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "L21",
+  "columna": "LTM",
+  "hoja_valor": 2616,
+  "sec": 2637.0,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "L22",
+  "columna": "LTM",
+  "hoja_valor": 2616,
+  "sec": 2637.0,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 5.89,
+  "sec": 6.13,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 5.89,
+  "sec": 6.13,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Cash and Cash Equivalents",
+  "celda": "K3",
+  "columna": "Dec '25",
+  "hoja_valor": 2312,
+  "sec": 2450.0,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "CashAndCashEquivalentsAtCarryingValue"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities",
+  "celda": "K29",
+  "columna": "Dec '25",
+  "hoja_valor": 12136,
+  "sec": 12075.0,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "Liabilities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "K34",
+  "columna": "Dec '25",
+  "hoja_valor": 3331,
+  "sec": 3415.0,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "K35",
+  "columna": "Dec '25",
+  "hoja_valor": 3331,
+  "sec": 3415.0,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "K24",
+  "columna": "Dec '25",
+  "hoja_valor": 2235,
+  "sec": 2173.0,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false
+ }
+]

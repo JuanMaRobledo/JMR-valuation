@@ -1,0 +1,41 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 18.20089955022489,
+  "sec": 17.93,
+  "fecha_sec": "2026-08-28",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 18.21,
+  "sec": 17.91,
+  "fecha_sec": "2026-08-28",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "D34",
+  "columna": "Nov '18",
+  "hoja_valor": -5.6,
+  "sec": -5.0,
+  "fecha_sec": "2018-11-30",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ }
+]

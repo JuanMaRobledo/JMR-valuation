@@ -14,7 +14,7 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$89,82 por acción.** Complemento: DCF esperado por probabilidades US$81,23; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$28,71–US$122,19; precio con MOS 35% sobre el esperado: US$52,80; precio de referencia US$68,11. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$89,56), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$89,82 por acción.** Complemento: DCF esperado por probabilidades US$81,23; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$28,71–US$122,19; precio con MOS 35% sobre el esperado: US$52,80; precio de referencia US$68,11. Cada escenario es un DCF completo con la estructura de Damodaran, calculado en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción; B35 es el DCF Base) y resumido en «Escenarios e historias»; el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son esas historias, y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |

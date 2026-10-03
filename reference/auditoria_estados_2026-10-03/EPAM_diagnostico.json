@@ -1,0 +1,54 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 7.14,
+  "sec": 7.4,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 7.14,
+  "sec": 7.37,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "B13",
+  "columna": "Dec '16",
+  "hoja_valor": 164.8,
+  "sec": 167.217,
+  "fecha_sec": "2016-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "C13",
+  "columna": "Dec '17",
+  "hoja_valor": 195.4,
+  "sec": 192.82,
+  "fecha_sec": "2017-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ }
+]

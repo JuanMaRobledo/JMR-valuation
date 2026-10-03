@@ -1,0 +1,140 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "E23",
+  "columna": "Jan '20",
+  "hoja_valor": 4.52,
+  "sec": 1.15,
+  "fecha_sec": "2020-01-26",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "F23",
+  "columna": "Jan '21",
+  "hoja_valor": 6.9,
+  "sec": 1.76,
+  "fecha_sec": "2021-01-31",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "H23",
+  "columna": "Jan '23",
+  "hoja_valor": 1.74,
+  "sec": 0.18,
+  "fecha_sec": "2023-01-29",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "I23",
+  "columna": "Jan '24",
+  "hoja_valor": 11.93,
+  "sec": 1.21,
+  "fecha_sec": "2024-01-28",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 7.87,
+  "sec": 7.95,
+  "fecha_sec": "2026-07-26",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "E24",
+  "columna": "Jan '20",
+  "hoja_valor": 4.52,
+  "sec": 1.13,
+  "fecha_sec": "2020-01-26",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "F24",
+  "columna": "Jan '21",
+  "hoja_valor": 6.9,
+  "sec": 1.73,
+  "fecha_sec": "2021-01-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "H24",
+  "columna": "Jan '23",
+  "hoja_valor": 1.74,
+  "sec": 0.17,
+  "fecha_sec": "2023-01-29",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "I24",
+  "columna": "Jan '24",
+  "hoja_valor": 11.93,
+  "sec": 1.19,
+  "fecha_sec": "2024-01-28",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 7.87,
+  "sec": 7.91,
+  "fecha_sec": "2026-07-26",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ }
+]

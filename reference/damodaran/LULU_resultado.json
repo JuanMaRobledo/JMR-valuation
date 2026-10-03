@@ -18,9 +18,9 @@
   "marginY1Cons": 0.127761,
   "marginY1Base": 0.127761,
   "marginY1Opt": 0.127761,
-  "marginCons": 0.14949071570218136,
-  "marginBase": 0.18449071570218137,
-  "marginOpt": 0.22449071570218135,
+  "marginCons": 0.15225193016919242,
+  "marginBase": 0.18725193016919245,
+  "marginOpt": 0.22725193016919243,
   "salesToCapital2": 1.8,
   "wacc": 0.08647243287093959,
   "costoPatrimonio": 0.094527,
@@ -31,9 +31,9 @@
   "salesToCapital": 1.8
  },
  "financiero": false,
- "dcf_sin_exceso": 140.47575432384997,
+ "dcf_sin_exceso": 142.63247033025976,
  "precio": 95.86,
- "dcf_base": 174.38641828154326,
+ "dcf_base": 177.10434455873235,
  "g_ref": 0.018084264730725108,
  "m_base": 0.187261,
  "s2c": 1.8,
@@ -833,14 +833,14 @@
    "beta": 1.03,
    "ke": 0.094527,
    "wacc": 0.08647243287093959,
-   "dcf_base": 166.87551838546366
+   "dcf_base": 169.42735135033482
   },
   {
    "enfoque": "Bottom-up del sector (Apparel, reapalancada)",
    "beta": 0.9030283287691115,
    "ke": 0.08933385864665666,
    "wacc": 0.08211125256621099,
-   "dcf_base": 171.16817901870783
+   "dcf_base": 173.78661561809483
   }
  ],
  "sensibilidad": {
@@ -1004,5 +1004,5 @@
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 166.87551838546366
+ "motor_tecnico": 169.42735135033482
 }

@@ -1,0 +1,160 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "L3",
+  "columna": "LTM",
+  "hoja_valor": 45891,
+  "sec": 46398.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "L20",
+  "columna": "LTM",
+  "hoja_valor": 806,
+  "sec": 792.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Cash and Cash Equivalents",
+  "celda": "L3",
+  "columna": "LTM",
+  "hoja_valor": 6903,
+  "sec": 7563.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "CashAndCashEquivalentsAtCarryingValue"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "L16",
+  "columna": "LTM",
+  "hoja_valor": 37794,
+  "sec": 38410.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "L34",
+  "columna": "LTM",
+  "hoja_valor": 15220,
+  "sec": 14865.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "L35",
+  "columna": "LTM",
+  "hoja_valor": 15220,
+  "sec": 14865.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "L36",
+  "columna": "LTM",
+  "hoja_valor": 37794,
+  "sec": 38410.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Assets",
+  "celda": "L10",
+  "columna": "LTM",
+  "hoja_valor": 23673,
+  "sec": 24603.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "AssetsCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 11409,
+  "sec": 12547.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "L11",
+  "columna": "LTM",
+  "hoja_valor": 4887,
+  "sec": 4796.0,
+  "fecha_sec": "2026-05-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "B13",
+  "columna": "May '17",
+  "hoja_valor": 3640,
+  "sec": 3846.0,
+  "fecha_sec": "2017-05-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "B34",
+  "columna": "May '17",
+  "hoja_valor": -1942,
+  "sec": -2148.0,
+  "fecha_sec": "2017-05-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ }
+]

@@ -19,9 +19,9 @@
   "marginY1Cons": 0.200844,
   "marginY1Base": 0.200844,
   "marginY1Opt": 0.200844,
-  "marginCons": 0.23094355002215455,
-  "marginBase": 0.2709435500221546,
-  "marginOpt": 0.3209435500221546,
+  "marginCons": 0.23084310616012693,
+  "marginBase": 0.27084310616012697,
+  "marginOpt": 0.32084310616012696,
   "salesToCapital2": 1.79,
   "wacc": 0.10938029025692805,
   "costoPatrimonio": 0.11009007849627529,
@@ -32,9 +32,9 @@
   "salesToCapital": 1.79
  },
  "financiero": false,
- "dcf_sin_exceso": 121.45990199270241,
+ "dcf_sin_exceso": 121.425380624926,
  "precio": 144.27,
- "dcf_base": 115.19381552790816,
+ "dcf_base": 115.1623413396604,
  "g_ref": 0.11521897660481879,
  "m_base": 0.270844,
  "s2c": 1.79,
@@ -857,14 +857,14 @@
    "beta": 1.349553329512899,
    "ke": 0.11009007849627529,
    "wacc": 0.10938029025692805,
-   "dcf_base": 121.45990199270241
+   "dcf_base": 121.425380624926
   },
   {
    "enfoque": "Bottom-up del sector (Software (Internet), reapalancada)",
    "beta": 1.6048807692717162,
    "ke": 0.12147768230951854,
    "wacc": 0.12062754372733389,
-   "dcf_base": 115.75829494325193
+   "dcf_base": 115.7259561560738
   }
  ],
  "sensibilidad": {
@@ -1028,5 +1028,5 @@
  },
  "rd_vida": 3,
  "rd_ltm": 337.4,
- "motor_tecnico": 121.45990199270241
+ "motor_tecnico": 121.425380624926
 }

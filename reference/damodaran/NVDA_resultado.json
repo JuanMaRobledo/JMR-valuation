@@ -17,9 +17,9 @@
   "marginY1Cons": 0.600515,
   "marginY1Base": 0.600515,
   "marginY1Opt": 0.600515,
-  "marginCons": 0.5004987670485834,
-  "marginBase": 0.5804987670485834,
-  "marginOpt": 0.6004987670485834,
+  "marginCons": 0.5005150104500555,
+  "marginBase": 0.5805150104500555,
+  "marginOpt": 0.6005150104500555,
   "salesToCapital2": 2.4436,
   "wacc": 0.11672027509687255,
   "costoPatrimonio": 0.117246,
@@ -30,9 +30,9 @@
   "salesToCapital": 2.9191
  },
  "financiero": false,
- "dcf_sin_exceso": 222.19820211601802,
+ "dcf_sin_exceso": 222.20402284339832,
  "precio": 233.95,
- "dcf_base": 209.38456628670875,
+ "dcf_base": 209.38988836233003,
  "g_ref": 0.179369600512541,
  "m_base": 0.580515,
  "s2c": 2.9191,
@@ -791,14 +791,14 @@
    "beta": 1.51,
    "ke": 0.117246,
    "wacc": 0.11672027509687255,
-   "dcf_base": 326.54355535086154
+   "dcf_base": 326.5522958492397
   },
   {
    "enfoque": "Bottom-up del sector (Semiconductor, reapalancada)",
    "beta": 1.5098351258045581,
    "ke": 0.11723864661088329,
    "wacc": 0.11671297866121821,
-   "dcf_base": 326.5571502973738
+   "dcf_base": 326.565891177119
   }
  ],
  "sensibilidad": {
@@ -962,5 +962,5 @@
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 326.54355535086154
+ "motor_tecnico": 326.5522958492397
 }

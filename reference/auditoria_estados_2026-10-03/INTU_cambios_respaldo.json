@@ -1,0 +1,143 @@
+{
+ "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+ "fecha": "2026-10-03",
+ "celdas": [
+  {
+   "hoja": "Income Statement",
+   "celda": "B23",
+   "antes": 3.72,
+   "despues": 3.83,
+   "motivo": "Basic EPS Jul '17: SEC XBRL (EarningsPerShareBasic) al 2017-07-31; antes 3.72.",
+   "vigente": 3.72
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "C23",
+   "antes": 4.64,
+   "despues": 5.18,
+   "motivo": "Basic EPS Jul '18: SEC XBRL (EarningsPerShareBasic) al 2018-07-31; antes 4.64.",
+   "vigente": 4.64
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "D23",
+   "antes": 5.9,
+   "despues": 5.99,
+   "motivo": "Basic EPS Jul '19: SEC XBRL (EarningsPerShareBasic) al 2019-07-31; antes 5.9.",
+   "vigente": 5.9
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "E23",
+   "antes": 6.92,
+   "despues": 6.99,
+   "motivo": "Basic EPS Jul '20: SEC XBRL (EarningsPerShareBasic) al 2020-07-31; antes 6.92.",
+   "vigente": 6.92
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "F23",
+   "antes": 7.55,
+   "despues": 7.65,
+   "motivo": "Basic EPS Jul '21: SEC XBRL (EarningsPerShareBasic) al 2021-07-31; antes 7.55.",
+   "vigente": 7.55
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G23",
+   "antes": 7.27,
+   "despues": 7.38,
+   "motivo": "Basic EPS Jul '22: SEC XBRL (EarningsPerShareBasic) al 2022-07-31; antes 7.27.",
+   "vigente": 7.27
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H23",
+   "antes": 8.42,
+   "despues": 8.49,
+   "motivo": "Basic EPS Jul '23: SEC XBRL (EarningsPerShareBasic) al 2023-07-31; antes 8.42.",
+   "vigente": 8.42
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "B40",
+   "antes": 149,
+   "despues": -41.0,
+   "motivo": "Net Change in Cash Jul '17: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2017-07-31; antes 149.",
+   "vigente": 149
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "C40",
+   "antes": 1286.2,
+   "despues": 930.0,
+   "motivo": "Net Change in Cash Jul '18: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2018-07-31; antes 1286.2.",
+   "vigente": 1286.2
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "D40",
+   "antes": -661,
+   "despues": 721.0,
+   "motivo": "Net Change in Cash Jul '19: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2019-07-31; antes -661.",
+   "vigente": -661
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "E40",
+   "antes": 1020,
+   "despues": 4345.0,
+   "motivo": "Net Change in Cash Jul '20: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2020-07-31; antes 1020.",
+   "vigente": 1020
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "F40",
+   "antes": 1825,
+   "despues": -3878.0,
+   "motivo": "Net Change in Cash Jul '21: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2021-07-31; antes 1825.",
+   "vigente": 1825
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "G40",
+   "antes": -608,
+   "despues": 178.0,
+   "motivo": "Net Change in Cash Jul '22: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2022-07-31; antes -608.",
+   "vigente": -608
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "H40",
+   "antes": 443,
+   "despues": -145.0,
+   "motivo": "Net Change in Cash Jul '23: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2023-07-31; antes 443.",
+   "vigente": 443
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "I40",
+   "antes": 2896,
+   "despues": 4247.0,
+   "motivo": "Net Change in Cash Jul '24: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2024-07-31; antes 2896.",
+   "vigente": 2896
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "J40",
+   "antes": 481,
+   "despues": 2382.0,
+   "motivo": "Net Change in Cash Jul '25: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2025-07-31; antes 481.",
+   "vigente": 481
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K40",
+   "antes": -2216,
+   "despues": -265.0,
+   "motivo": "Net Change in Cash Jul '26: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2026-07-31; antes -2216.",
+   "vigente": -2216
+  }
+ ],
+ "omitidas": []
+}
