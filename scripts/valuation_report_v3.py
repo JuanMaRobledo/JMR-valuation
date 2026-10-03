@@ -213,11 +213,18 @@ def main():
                  f"esperado por probabilidades {money(ve['valor'])}; rango de los cuatro escenarios (Base, Conservadora, "
                  f"Disrupción y Optimista) {money(ve['rango']['min'])}–{money(ve['rango']['max'])}; precio con MOS "
                  f"{pct(mos_pct, 0)} sobre el esperado: {money(ve['valor'] * (1 - mos_pct))}; precio de referencia {money(price)}. "
-                 "Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos "
-                 "están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista "
-                 f"de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja "
-                 f"('Valuation output' B35) queda como calibración ({money(ve.get('dcfBaseTecnicoAnterior'))}), y los múltiplos y el "
-                 "ponderado son lecturas secundarias.")
+                 + (  # desde el 2-oct-2026 'Valuation output' calcula las historias: B35 es el DCF Base
+                     "Cada escenario es un DCF completo con la estructura de Damodaran, calculado en 'Valuation output' (bloques "
+                     "Base, Conservador, Optimista y Disrupción; B35 es el DCF Base) y resumido en «Escenarios e historias»; el "
+                     "detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis "
+                     "fundamental. Los casos Conservador/Base/Optimista de abajo son esas historias, y los múltiplos y el ponderado "
+                     "son lecturas secundarias."
+                     if abs((ve.get("dcfBaseTecnicoAnterior") or 0) - ve["valorCentral"]) < 0.01 else
+                     "Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos "
+                     "están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista "
+                     f"de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja "
+                     f"('Valuation output' B35) queda como calibración ({money(ve.get('dcfBaseTecnicoAnterior'))}), y los múltiplos y el "
+                     "ponderado son lecturas secundarias."))
         w("")
         w("| Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |")
         w("|---|---:|---:|---:|")

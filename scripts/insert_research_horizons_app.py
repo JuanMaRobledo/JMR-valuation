@@ -1,13 +1,16 @@
-"""Inserta (o reemplaza) el bloque de las dos tablas de horizontes en el HTML del research de la app, antes de la sección 13."""
-import json, re, sys, glob, subprocess, time
+"""Inserta (o reemplaza) el bloque de las dos tablas de horizontes en el HTML del research de la app, antes de la sección 13.
+
+Uso (desde JMR-valuation): python scripts/insert_research_horizons_app.py [TICKER ...]
+Necesita MARKED_PATH (marked.min.js 12.0.2); scripts/regenerar_cartera.sh lo descarga en .cache/js/.
+"""
+import json, os, re, sys, glob, subprocess, time
 sys.path.insert(0, 'scripts'); sys.path.insert(0, '.')
 import horizon_tables as ht
 from jmr_valuation.io.sheets_auth import get_gspread_client
-S = sys.argv.pop(1) if len(sys.argv) > 1 and sys.argv[1].endswith('/') else 'scratchpad/'
+MARKED = os.environ.get('MARKED_PATH', '.cache/js/marked.min.js')
 c = get_gspread_client()
-for tk, sid in json.load(open(S + 'sheets22.json')):
-    if sys.argv[1:] and tk not in sys.argv[1:]:
-        continue
+for tk in sys.argv[1:] or sorted(json.load(open('reference/cartera_drive.json'))['empresas']):
+    sid = json.load(open(f'reference/multiplos_v3/{tk}_anclas.json'))['sheet_id']
     rec = json.load(open([p for p in glob.glob(f'../Modelo-JMR-datos/valoraciones/{tk}-*.json') if 'regen' not in p][0]))
     for i in range(4):
         try:
@@ -17,7 +20,7 @@ for tk, sid in json.load(open(S + 'sheets22.json')):
         except Exception:
             time.sleep(45)
     md = ht.markdown(d, 'US$', rec.get('fecha') if re.match(r'\d{4}-\d\d-\d\d', str(rec.get('fecha'))) else '2026-10-02', '###')
-    html = subprocess.check_output(['node', '-e', f"""const fs=require('fs'),vm=require('vm');const x={{}};vm.createContext(x);vm.runInContext(fs.readFileSync('{S}marked.min.js','utf8'),x);process.stdout.write(x.marked.parse(fs.readFileSync(0,'utf8'),{{gfm:true,breaks:false}}));"""], input=md.encode()).decode()
+    html = subprocess.check_output(['node', '-e', f"""const fs=require('fs'),vm=require('vm');const x={{}};vm.createContext(x);vm.runInContext(fs.readFileSync('{MARKED}','utf8'),x);process.stdout.write(x.marked.parse(fs.readFileSync(0,'utf8'),{{gfm:true,breaks:false}}));"""], input=md.encode()).decode()
     blk = f'<div id="{tk.lower()}-horizontes-20261002">\n{html}</div>\n'
     ps = glob.glob(f'../Modelo-JMR-datos/analisis/{tk}-research-*.json')
     if not ps:

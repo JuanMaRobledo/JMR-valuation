@@ -71,8 +71,9 @@ def escenarios_dcf(rec: dict) -> dict:
     return {"version": 1, "fuente": "valorEsperado.historias", "principal": "valorEsperado.valorCentral", "central": "A",
             "fecha": dt.datetime.now(dt.timezone.utc).isoformat(),
             "baseAnterior": {k: dh.get(k) for k in ("conservador", "base", "optimista")},
-            "nota": "DCF Base es el valor intrínseco principal. El esperado por probabilidades es complementario. Los tres "
-                    "casos técnicos anteriores son auxiliares de múltiplos."}
+            "nota": "DCF Base es el valor intrínseco principal. El esperado por probabilidades es complementario. Desde el "
+                    "2-oct-2026 'Valuation output' calcula las cuatro historias (Base, Conservador, Optimista y Disrupción); "
+                    "ya no hay casos técnicos aparte."}
 
 
 def main(argv: list[str]) -> int:
@@ -94,7 +95,7 @@ def main(argv: list[str]) -> int:
                 if key:  # el análisis también lleva el valor esperado en la raíz (lo lee la app)
                     rec["valorEsperado"] = ve
                 Path(f).write_text(json.dumps(rec, ensure_ascii=False, indent=2) + "\n")
-        print(f"{t:5s} valor esperado {ve['valor']:.2f} (A {ve['valorCentral']:.2f}; técnico anterior {ve['dcfBaseTecnicoAnterior']:.2f})")
+        print(f"{t:5s} valor esperado {ve['valor']:.2f} (A {ve['valorCentral']:.2f}; hoja B35 {ve['dcfBaseTecnicoAnterior']:.2f})")
     return 0
 
 
