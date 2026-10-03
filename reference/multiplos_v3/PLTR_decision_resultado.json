@@ -80,6 +80,7 @@
    "B_mediana": 47.68,
    "B_ajustada": 59.6,
    "B_n": 3,
+   "B_regresion": null,
    "B_peers": "NOW 47,7x, APP 19,1x, FTNT 48,4x",
    "B_excluidos": [
     "CRWD",
@@ -87,22 +88,22 @@
     "SNOW"
    ],
    "C": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 28.05,
+    "Base": 78.42,
     "Optimista": null
    },
    "mercado": 59.6,
    "lambda": 0.0,
-   "conservador": 41.76,
+   "conservador": 31.54,
    "base": 59.6,
    "optimista": 61.39,
-   "factor_cons": 0.701,
+   "factor_cons": 0.529,
    "factor_opt": 1.03,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     59.6,
-    59.6
+    78.42
    ],
    "antes": {
     "J8": 37.42,
@@ -139,6 +140,7 @@
    "B_mediana": 58.98,
    "B_ajustada": 73.73,
    "B_n": 6,
+   "B_regresion": null,
    "B_peers": "NOW 29,8x, DDOG 85,6x, MDB 37,2x, AXON 157,6x, PANW 77,9x, FTNT 40,1x",
    "B_excluidos": [
     "CRWD",
@@ -146,22 +148,22 @@
     "SNOW"
    ],
    "C": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 31.66,
+    "Base": 94.08,
     "Optimista": null
    },
    "mercado": 73.73,
    "lambda": 0.0,
-   "conservador": 47.44,
+   "conservador": 36.12,
    "base": 73.73,
    "optimista": 104.61,
-   "factor_cons": 0.643,
+   "factor_cons": 0.49,
    "factor_opt": 1.419,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     73.73,
-    73.73
+    94.08
    ],
    "antes": {
     "J8": 36.97,
@@ -208,6 +210,7 @@
    "B_mediana": 62.4,
    "B_ajustada": 78.0,
    "B_n": 3,
+   "B_regresion": null,
    "B_peers": "NOW 81,2x, APP 23,5x, FTNT 62,4x",
    "B_excluidos": [
     "AXON",
@@ -219,21 +222,21 @@
     "SNOW"
    ],
    "C": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 24.79,
+    "Base": 58.84,
     "Optimista": null
    },
    "mercado": 78.0,
    "lambda": 0.0,
-   "conservador": 53.68,
+   "conservador": 43.27,
    "base": 78.0,
    "optimista": 89.76,
-   "factor_cons": 0.688,
+   "factor_cons": 0.555,
    "factor_opt": 1.151,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    78.0,
+    58.84,
     78.0
    ],
    "antes": {
@@ -271,6 +274,7 @@
    "B_mediana": 41.42,
    "B_ajustada": 51.77,
    "B_n": 5,
+   "B_regresion": null,
    "B_peers": "NOW 29,4x, DDOG 89,9x, MDB 41,2x, PANW 77,2x, FTNT 41,4x",
    "B_excluidos": [
     "CRWD",
@@ -278,22 +282,22 @@
     "SNOW"
    ],
    "C": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 27.02,
+    "Base": 62.72,
     "Optimista": null
    },
    "mercado": 51.77,
    "lambda": 0.0,
-   "conservador": 50.22,
+   "conservador": 36.87,
    "base": 51.77,
    "optimista": 96.56,
-   "factor_cons": 0.97,
+   "factor_cons": 0.712,
    "factor_opt": 1.865,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     51.77,
-    51.77
+    62.72
    ],
    "antes": {
     "J8": 25.57,
@@ -330,6 +334,7 @@
    "B_mediana": 55.23,
    "B_ajustada": 69.04,
    "B_n": 6,
+   "B_regresion": null,
    "B_peers": "NOW 25,3x, DDOG 78,5x, MDB 40,7x, AXON 128,2x, PANW 69,8x, FTNT 38,0x",
    "B_excluidos": [
     "CRWD",
@@ -337,21 +342,21 @@
     "SNOW"
    ],
    "C": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 26.75,
+    "Base": 62.13,
     "Optimista": null
    },
    "mercado": 69.04,
    "lambda": 0.0,
-   "conservador": 48.35,
+   "conservador": 39.04,
    "base": 69.04,
    "optimista": 95.37,
-   "factor_cons": 0.7,
+   "factor_cons": 0.565,
    "factor_opt": 1.381,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    69.04,
+    62.13,
     69.04
    ],
    "antes": {
@@ -364,21 +369,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   58.577031675437276,
-   105.7343166246045,
-   180.30846986798255
+   33.39481991405494,
+   72.67488520731467,
+   128.54448835448397
   ],
   "multiplos_hoy": [
-   76.9553527528303,
-   137.04526019811345,
-   221.89979479600305
+   63.753421767520464,
+   164.98808652099245,
+   273.0268199180733
   ],
   "ponderado_hoy": [
-   65.92836010639448,
-   118.25869405400809,
-   196.94499983919076
+   45.53826065544115,
+   109.60016573278577,
+   186.33742097991967
   ],
-  "brecha_base": 0.2961284904755592,
+  "brecha_base": 1.270221494679245,
   "fila_origen": 44
  }
 }

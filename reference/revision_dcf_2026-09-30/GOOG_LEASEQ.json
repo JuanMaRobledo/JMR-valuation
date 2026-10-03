@@ -1,0 +1,108 @@
+{
+ "ticker": "GOOG",
+ "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+ "fecha": "2026-10-03",
+ "sec": {
+  "trimestre": "2026-06-30",
+  "forma": "10-Q",
+  "cierre_10k": "2025-12-31",
+  "tabla_al": "2026-06-30",
+  "escala": null,
+  "gasto_ltm": 3571.0,
+  "gasto_def": "OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior",
+  "calendario": {
+   "resto_ejercicio": 1836.0,
+   "anios": [
+    3498.0,
+    2979.0,
+    2576.0,
+    2046.0,
+    2046.0
+   ],
+   "despues": 8398.0,
+   "quinto_supuesto": true
+  },
+  "fraccion": 0.4931506849315068,
+  "anios": [
+   3561.041095890411,
+   3242.054794520548,
+   2780.2602739726026,
+   2314.6301369863013,
+   2046.0
+  ],
+  "despues": 7389.013698630137,
+  "total": 21333.0,
+  "pasivo_balance": 18037.0
+ },
+ "vp_antes": 14924.42506808903,
+ "vp": 17148.383776777555,
+ "ajuste_ebit_antes": 1212.9392759872812,
+ "ajuste_ebit": 1427.4520279028056,
+ "margen_pp_antes": 0.0027204121327647347,
+ "margen_pp": 0.0032015269787398133,
+ "cambios": [
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 3345,
+   "despues": 3571.0,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 3275,
+   "despues": 3561.041,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 3082,
+   "despues": 3242.055,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 2510,
+   "despues": 2780.26,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 2061,
+   "despues": 2314.63,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 1669,
+   "despues": 2046.0,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 5654,
+   "despues": 7389.014,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (OperatingLeaseCost: ejercicio + acumulado − acumulado del año anterior) y compromisos por año calendario pasados a años móviles (fracción del ejercicio transcurrida 0.49; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.32772,
+   "despues": 0.328201,
+   "motivo": "Margen en base ajustada por arrendamientos: ajuste del EBIT 1427.5 / ventas 445866.0 = 0.32 pp (antes 0.27 pp al 2025-12-31); diferencia +0.05 pp."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.35272,
+   "despues": 0.353201,
+   "motivo": "Margen en base ajustada por arrendamientos: ajuste del EBIT 1427.5 / ventas 445866.0 = 0.32 pp (antes 0.27 pp al 2025-12-31); diferencia +0.05 pp."
+  }
+ ]
+}
