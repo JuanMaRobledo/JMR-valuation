@@ -44,9 +44,9 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
-| Crecimiento año 1 | 2,0% | 4,0% | 5,0% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | 2,0% | 3,5% | 5,0% | Input B29 |
-| Margen EBIT objetivo | 18,2% | 19,7% | 24,7% | Input B30; Valuation output C45/C47 |
+| Crecimiento año 1 | 2,2% | 4,0% | 7,3% | Input B27; Valuation output C55/C106 |
+| Crecimiento años 2-5 | 1,7% | 3,5% | 7,3% | Input B29 |
+| Margen EBIT objetivo | 16,2% | 19,7% | 22,2% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 6 | 6 | 6 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,48 / 2,48 | — | Input B32/B33 |
 | DCF por acción hoy | US$66,20 | US$109,82 | US$138,01 | Valuation output B86/B35/B137 |
@@ -141,7 +141,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$52,80 supone que los ingresos crecen -11,0% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 3,6% (−14,6 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$52,80 supone que los ingresos crecen -10,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,9% (−15,5 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$148,31 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 10,5%, WACC de los años 4-10 9,1%, ROE de FY+3 29,8% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -164,13 +164,13 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Múltiplos Base −20% | US$83,55 | −10,5% |
 | Crecimiento años 2-5 +2 pp | US$97,01 | +3,9% |
 | Crecimiento años 2-5 −2 pp | US$89,98 | −3,6% |
-| Margen objetivo +3 pp | US$99,39 | +6,5% |
-| Margen objetivo −3 pp | US$87,28 | −6,5% |
-| WACC +1 pp | US$91,03 | −2,5% |
-| WACC −1 pp | US$95,80 | +2,6% |
+| Margen objetivo +3 pp | US$99,64 | +6,8% |
+| Margen objetivo −3 pp | US$87,03 | −6,8% |
+| WACC +1 pp | US$91,01 | −2,5% |
+| WACC −1 pp | US$95,82 | +2,7% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Margen objetivo −3 pp.
+Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Margen objetivo +3 pp.
 
 ## 8. Log de cambios en la hoja
 

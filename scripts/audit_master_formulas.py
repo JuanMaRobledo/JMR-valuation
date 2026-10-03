@@ -24,7 +24,7 @@ MASTER_ID = "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g"
 TABS = {"Input sheet": "A1:D80", "Valuation output": "A1:M140", "Financials Multiples": "A1:H120",
         "Cost of capital worksheet": "A1:E70", "Operating lease converter": "A1:G40", "Option value": "A1:F40",
         "Trailing Valuation": "A1:P40", "Forward Valuation": "A1:P40", "Resumen de Valoración": "A1:U27",
-        "EVEBITDA": "A1:J35", "EVFCFF": "A1:J35", "PE": "A1:J35", "PFCFE": "A1:J35", "POCF": "A1:J35"}
+        "EVEBITDA": "A1:J36", "EVFCFF": "A1:J36", "PE": "A1:J36", "PFCFE": "A1:J36", "POCF": "A1:J36"}
 EXCEPT = {("Resumen de Valoración", a) for a in ("C6", "D6", "E6", "A6")} | \
          {(t, a) for t in ("EVEBITDA", "EVFCFF", "PE", "PFCFE", "POCF") for a in ("J8", "J19", "J30")}
 

@@ -215,7 +215,7 @@ Fuente de la tabla: 'Trailing Valuation' de la hoja, con precios de cierre de ca
 | Resultado declarado (hoy, por acción) | Conservador / Conservadora | Base | Optimista |
 |---|---:|---:|---:|
 | DCF de las historias | US$16,68 | US$24,03 | US$32,43 |
-| DCF técnico de la plantilla (referencia) | US$21,26 | US$24,24 | US$36,05 |
+| DCF de la hoja por historia (bloques de 'Valuation output') | US$16,68 | US$24,03 | US$32,43 |
 | Múltiplos consolidados a valor presente | US$35,59 | US$43,61 | US$53,14 |
 | Ponderado DCF 60% + múltiplos 40% (secundario) | US$24,24 | US$31,86 | US$40,71 |
 
@@ -309,7 +309,7 @@ No aplican riesgos tecnológicos relevantes. El riesgo geopolítico es bajo (ven
 | Reinversión y retorno sobre capital | Liviana; ROIC ~16% bajando al costo de capital | Liviana; ROIC menor | Liberación de capital; ROIC bajo | Algo más de marketing e internacional | ROIC normalizado |
 | Moat y sustitución | Sin ventaja propia; la distribución protege | Sustitución de CELSIUS | Sustitución de Alani Nu | La distribución se vuelve una ventaja de facto | Participación de cinco años |
 
-Las cuatro historias de la sección 12 son estas mismas, con idénticos identificadores. La hoja contiene además tres casos técnicos de la plantilla (Conservador, Base y Optimista) que son referencia auxiliar; las historias se cuantifican en la pestaña «Escenarios e historias».
+Las cuatro historias de la sección 12 son estas mismas, con idénticos identificadores. Desde el 2-oct-2026 los bloques Conservador, Base, Optimista y Disrupción de 'Valuation output' calculan estas mismas historias con la estructura de Damodaran; la pestaña «Escenarios e historias» guarda sus supuestos y resume los valores.
 
 ### FODA de síntesis
 
@@ -450,6 +450,8 @@ Sensibilidad del DCF Base (US$24,03; cada fila es un DCF completo con un solo su
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
+
+> Nota (2-oct-2026): esta calibración es la anterior a la fórmula única. Hoy los bloques de 'Valuation output' calculan las historias (Conservadora US$16,68, Base US$24,03, Optimista US$32,43, Disrupción US$7,06); las cifras de esta subsección se conservan solo como registro.
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|

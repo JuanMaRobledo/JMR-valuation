@@ -26,7 +26,7 @@ currency: "USD"
 | DCF esperado (complemento) | 100% | US$20,90 |
 | Precio con margen de seguridad (35% sobre el esperado) | | US$13,59 |
 
-Los casos técnicos de la plantilla (Conservador US$21,26, Base US$24,24, Optimista US$36,05) se conservan como calibración y para los múltiplos auxiliares; no son escenarios activos.
+Desde el 2-oct-2026 los bloques Conservador, Base y Optimista de 'Valuation output' (y el nuevo bloque Disrupción, filas 157-197) calculan las cuatro historias con la estructura de Damodaran: Conservadora US$16,68, Base US$24,03, Optimista US$32,43 y Disrupción US$7,06. Ya no hay casos técnicos separados de las historias.
 
 Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos al presente US$43,61 / US$35,59 / US$53,14 y a 3 años sin descontar US$56,26 / US$41,35 / US$75,20; ponderado DCF + múltiplos (60%/40%, categoría «Crecimiento») al presente US$31,86 / US$24,24 / US$40,71 y a 3 años sin descontar US$41,37 / US$29,63 / US$55,54, con el DCF capitalizado a FY+3 (US$31,44 / US$21,82 / US$42,44). Ninguno es valor intrínseco; las dos tablas completas están en «Resultados».
 
@@ -80,7 +80,7 @@ Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos a
 
 DCF esperado = 0,45 × 24,03 + 0,25 × 16,68 + 0,15 × 7,06 + 0,15 × 32,43 = US$20,90. Las probabilidades son juicio del analista. En la Optimista, si la acción supera US$25 de forma sostenida, la Serie A se convertiría en 22 millones de acciones y el valor bajaría a ~US$31,8.
 
-Sensibilidad crecimiento × margen del DCF técnico (crecimiento constante en los años 1-5):
+Sensibilidad crecimiento × margen del DCF Base (crecimiento constante en los años 1-5):
 
 | Crecimiento \ Margen | 17,1% | 19,1% | 21,1% | 23,1% | 25,1% |
 |---|---:|---:|---:|---:|---:|

@@ -1,12 +1,12 @@
 {
- "fecha": "2026-10-02",
+ "fecha": "2026-10-03",
  "umbral": 0.02,
  "precio": 60.98,
- "dcfHoy": 15.895414348028753,
+ "dcfHoy": 15.635238665716683,
  "dcfInverso": {
-  "gImplicito": 0.5163988643429993,
-  "gDcf": 0.114,
-  "dif": 0.4023988643429993,
+  "gImplicito": 0.5246341393024123,
+  "gDcf": 0.11033991870735416,
+  "dif": 0.41429422059505816,
   "lectura": "El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador."
  },
  "gDcf": {
@@ -58,11 +58,11 @@
   {
    "metodo": "P/FCFE",
    "multiplo": 41.73,
-   "multiploDcf": 40.17519709749288,
+   "multiploDcf": 40.17519709749293,
    "gImplicito": 0.09501941961151417,
-   "gDcf": 0.09402855779596808,
-   "dif": 0.0009908618155460847,
-   "difValor": 0.03870056688792567,
+   "gDcf": 0.09402855779596812,
+   "dif": 0.000990861815546043,
+   "difValor": 0.038700566887924115,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },

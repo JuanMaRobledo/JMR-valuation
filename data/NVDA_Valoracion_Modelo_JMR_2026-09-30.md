@@ -14,15 +14,15 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$209,46 por acción.** Complemento: DCF esperado por probabilidades US$190,57; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$54,63–US$318,11; precio con MOS 35% sobre el esperado: US$123,87; precio de referencia US$233,95. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$263,90), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$209,45 por acción.** Complemento: DCF esperado por probabilidades US$190,57; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$54,63–US$318,10; precio con MOS 35% sobre el esperado: US$123,87; precio de referencia US$233,95. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$209,45), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Ciclo de IA largo que desacelera con la escala** (valor principal) | 40% | US$209,46 | US$83,78 |
-| Conservadora · Ciclo de semiconductores: el capex se corrige | 30% | US$125,68 | US$37,70 |
+| **Base · Ciclo de IA largo que desacelera con la escala** (valor principal) | 40% | US$209,45 | US$83,78 |
+| Conservadora · Ciclo de semiconductores: el capex se corrige | 30% | US$125,67 | US$37,70 |
 | Disrupción · Deterioro de los fundamentales: Chips propios de los clientes y corrección fuerte | 10% | US$54,63 | US$5,46 |
-| Optimista · La IA es infraestructura permanente | 20% | US$318,11 | US$63,62 |
+| Optimista · La IA es infraestructura permanente | 20% | US$318,10 | US$63,62 |
 | **DCF esperado (complemento)** | 100% | **US$190,57** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$259,29 por acción y los múltiplos, US$230,76 hoy: 11% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
@@ -45,8 +45,8 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
 | Crecimiento año 1 | 32,5% | 50,0% | 56,0% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | 6,0% | 14,0% | 22,0% | Input B29 |
-| Margen EBIT objetivo | 50,0% | 58,0% | 65,0% | Input B30; Valuation output C45/C47 |
+| Crecimiento años 2-5 | -9,0% | 14,0% | 28,9% | Input B29 |
+| Margen EBIT objetivo | 50,0% | 58,0% | 60,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 2,92 / 2,44 | — | Input B32/B33 |
 | DCF por acción hoy | US$125,67 | US$209,45 | US$318,10 | Valuation output B86/B35/B137 |
@@ -141,7 +141,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$233,95 supone que los ingresos crecen 16,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 21,2% (−4,4 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$233,95 supone que los ingresos crecen 25,3% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 17,9% (+7,4 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$292,10 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 11,7%, WACC de los años 4-10 10,5%, ROE de FY+3 138,4% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -162,12 +162,12 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$281,53 | — |
 | Múltiplos Base +20% | US$320,80 | +13,9% |
 | Múltiplos Base −20% | US$242,27 | −13,9% |
-| Crecimiento años 2-5 +2 pp | US$289,40 | +2,8% |
-| Crecimiento años 2-5 −2 pp | US$274,32 | −2,6% |
-| Margen objetivo +3 pp | US$285,58 | +1,4% |
-| Margen objetivo −3 pp | US$277,49 | −1,4% |
-| WACC +1 pp | US$277,01 | −1,6% |
-| WACC −1 pp | US$286,37 | +1,7% |
+| Crecimiento años 2-5 +2 pp | US$289,30 | +2,8% |
+| Crecimiento años 2-5 −2 pp | US$274,40 | −2,5% |
+| Margen objetivo +3 pp | US$285,68 | +1,5% |
+| Margen objetivo −3 pp | US$277,39 | −1,5% |
+| WACC +1 pp | US$276,92 | −1,6% |
+| WACC −1 pp | US$286,48 | +1,8% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 2-5 +2 pp.

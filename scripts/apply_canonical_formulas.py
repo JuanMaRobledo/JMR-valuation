@@ -55,6 +55,13 @@ def contract(ev_formulas: dict[str, dict[str, str]], vo_b41: str, zones: dict[st
             c[(fm, f"{col}{r_shg}")] = f'=IFERROR({col}{r_sh}/{prev}{r_sh}-1;"")'
     for tab, d in ev_formulas.items():
         c.update({(tab, a): f for a, f in d.items()})
+    # Rentabilidad anualizada de cada múltiplo: «No interpretable» si el precio objetivo o el de hoy no es positivo
+    # (2-oct-2026; la potencia de un negativo da #NUM!, p. ej. SHAK)
+    for tab in ("EVEBITDA", "EVFCFF", "PE", "PFCFE", "POCF"):
+        for r_irr, r_tot in ((14, 12), (25, 23), (36, 34)):
+            for k, col in enumerate("FGH", start=1):
+                c[(tab, f"{col}{r_irr}")] = (f'=IF(AND({col}{r_tot}>0;B3>0);({col}{r_tot}/B3) ^ (1 / {k}) - 1;'
+                                             f'"No interpretable: precio no positivo")')
     c[("Valuation output", "B41")] = vo_b41
     for a, b, r in (("B33", "B31-B32", 33), ("B84", "B82-B83", 84), ("B135", "B133-B134", 135)):
         c[("Valuation output", a)] = f"={b}-N('Input sheet'!$B$76)"

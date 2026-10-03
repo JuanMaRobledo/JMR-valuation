@@ -26,7 +26,7 @@ currency: "USD"
 | DCF esperado (complemento) | 100% | US$152,10 |
 | Precio con margen de seguridad (35% sobre el esperado) | | US$98,86 |
 
-Los casos técnicos de la plantilla (Conservador US$113,26, Base US$171,34, Optimista US$255,89) se conservan como calibración y para los múltiplos auxiliares; no son escenarios activos.
+Desde el 2-oct-2026 los bloques Conservador, Base y Optimista de 'Valuation output' (y el nuevo bloque Disrupción, filas 157-197) calculan las cuatro historias con la estructura de Damodaran: Conservadora US$104,75, Base US$171,60, Optimista US$241,60 y Disrupción US$72,11. Ya no hay casos técnicos separados de las historias.
 
 Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos al presente US$126,93 / US$83,73 / US$170,54 y a 3 años sin descontar US$174,41 / US$102,33 / US$260,38; ponderado DCF + múltiplos (40%/60%, categoría «Madura») al presente US$144,80 / US$92,14 / US$198,96 y a 3 años sin descontar US$195,86 / US$117,08 / US$284,66, con el DCF capitalizado a FY+3 (US$228,05 / US$139,21 / US$321,08). Ninguno es valor intrínseco; las dos tablas completas están en «Resultados».
 

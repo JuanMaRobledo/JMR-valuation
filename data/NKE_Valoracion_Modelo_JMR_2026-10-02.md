@@ -27,7 +27,7 @@ currency: "USD"
 | DCF esperado (complemento) | 100% | US$29,51 |
 | Precio con margen de seguridad (35% sobre el esperado) | | US$19,18 |
 
-Los casos técnicos de la plantilla (Conservador US$15,95, Base US$32,48, Optimista US$55,71) se conservan como calibración y para los múltiplos auxiliares; no son escenarios activos.
+Desde el 2-oct-2026 los bloques Conservador, Base y Optimista de 'Valuation output' (y el nuevo bloque Disrupción, filas 157-197) calculan las cuatro historias con la estructura de Damodaran: Conservadora US$19,37, Base US$32,54, Optimista US$43,71 y Disrupción US$12,82. Ya no hay casos técnicos separados de las historias.
 
 Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos al presente US$27,73 / US$20,15 / US$34,88 y a 3 años sin descontar US$41,69 / US$27,90 / US$56,64; ponderado DCF + múltiplos (40%/60%, categoría «Madura») al presente US$29,65 / US$19,84 / US$38,41 y a 3 años sin descontar US$42,04 / US$26,87 / US$56,86, con el DCF capitalizado a FY+3 (US$42,57 / US$25,33 / US$57,18). Ninguno es valor intrínseco; las dos tablas completas están en «Resultados».
 
@@ -81,7 +81,7 @@ Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos a
 
 DCF esperado = 0,45 × 32,54 + 0,25 × 19,37 + 0,10 × 12,82 + 0,20 × 43,71 = US$29,51. Las probabilidades son juicio del analista. Las historias de erosión (Conservadora y Disrupción) usan el costo de capital como ROIC terminal.
 
-Sensibilidad crecimiento × margen del DCF técnico (crecimiento constante en los años 1-5):
+Sensibilidad crecimiento × margen del DCF Base (crecimiento constante en los años 1-5):
 
 | Crecimiento \ Margen | 7,6% | 9,6% | 11,6% | 13,6% | 15,6% |
 |---|---:|---:|---:|---:|---:|
@@ -203,7 +203,7 @@ Respaldo de cada celda en `reference/backups/nke_desde_cero_2026-10-02.json` (re
 | 15 | Múltiplos J8/J19/J30 | Anclas con Ke y WACC anteriores | Anclas recalculadas (mismos peers), λ = 0,5 | El justificado depende del costo de capital |
 | 16 | Fórmula única (2-oct-2026) | Plantilla maestra sin el contrato de escenarios | Múltiplos de cada escenario proyectados con su historia (ventas, margen, impuesto y reinversión), acciones constantes, preferentes, zonas de compra sobre el valor de hoy y FY+3 con el DCF de las historias; anclas de múltiplos recalculadas | Una sola fórmula en las 22 hojas: maestra + contrato ADBE |
 
-Controles: el motor del Modelo JMR reproduce el DCF técnico de la hoja (US$32,48) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado (US$29,51); el escaneo de integridad no encuentra celdas con error ni fórmulas reemplazadas (el precio fijado a la fecha de valoración en Input D1 es intencional).
+Controles: el motor del Modelo JMR reproduce el DCF Base de la hoja (US$32,54, bloque Base de 'Valuation output' enlazado a la historia Base) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado (US$29,51); el escaneo de integridad no encuentra celdas con error ni fórmulas reemplazadas (el precio fijado a la fecha de valoración en Input D1 es intencional).
 
 ## 11. El precio al final
 

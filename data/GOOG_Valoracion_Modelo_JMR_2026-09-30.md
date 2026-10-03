@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$322,34 por acción.** Complemento: DCF esperado por probabilidades US$274,14; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$131,61–US$424,37; precio con MOS 35% sobre el esperado: US$178,19; precio de referencia US$340,35. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$349,47), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$322,31 por acción.** Complemento: DCF esperado por probabilidades US$274,11; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$131,60–US$424,32; precio con MOS 35% sobre el esperado: US$178,17; precio de referencia US$340,35. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$322,31), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Search resiste y Cloud es el segundo motor** (valor principal) | 40% | US$322,34 | US$128,94 |
-| Conservadora · La IA conversacional erosiona Search | 25% | US$162,35 | US$40,59 |
-| Disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA | 15% | US$131,61 | US$19,74 |
-| Optimista · Gemini y Cloud dominan la plataforma de IA | 20% | US$424,37 | US$84,87 |
-| **DCF esperado (complemento)** | 100% | **US$274,14** | |
+| **Base · Search resiste y Cloud es el segundo motor** (valor principal) | 40% | US$322,31 | US$128,92 |
+| Conservadora · La IA conversacional erosiona Search | 25% | US$162,33 | US$40,58 |
+| Disrupción · Deterioro de los fundamentales: Remedios antimonopolio y guerra de precios en IA | 15% | US$131,60 | US$19,74 |
+| Optimista · Gemini y Cloud dominan la plataforma de IA | 20% | US$424,32 | US$84,86 |
+| **DCF esperado (complemento)** | 100% | **US$274,11** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$311,55 por acción y los múltiplos, US$244,87 hoy: 21% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$322,31 | US$297,66 | US$307,52 | US$178,19 | US$417,22 |
-| Conservador | US$162,33 | US$238,52 | US$208,05 | US$178,19 | US$266,32 |
-| Optimista | US$424,32 | US$381,82 | US$398,82 | US$178,19 | US$564,96 |
+| Base | US$322,31 | US$297,66 | US$307,52 | US$178,17 | US$417,22 |
+| Conservador | US$162,33 | US$238,52 | US$208,05 | US$178,17 | US$266,32 |
+| Optimista | US$424,32 | US$381,82 | US$398,82 | US$178,17 | US$564,96 |
 
 ## 2. Datos
 
@@ -44,9 +44,9 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
-| Crecimiento año 1 | 9,0% | 18,0% | 20,6% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | 9,0% | 11,0% | 16,0% | Input B29 |
-| Margen EBIT objetivo | 31,3% | 35,3% | 38,3% | Input B30; Valuation output C45/C47 |
+| Crecimiento año 1 | 11,2% | 18,0% | 20,6% | Input B27; Valuation output C55/C106 |
+| Crecimiento años 2-5 | 7,2% | 11,0% | 17,8% | Input B29 |
+| Margen EBIT objetivo | 30,3% | 35,3% | 37,3% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 1,15 / 1,43 | — | Input B32/B33 |
 | DCF por acción hoy | US$162,33 | US$322,31 | US$424,32 | Valuation output B86/B35/B137 |
@@ -79,9 +79,9 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$297,66 f
 
 ### Valor por acción en dos horizontes
 
-Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,76%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$131,61) y no se inventa para ellos.
+Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,76%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$131,60) y no se inventa para ellos.
 
-**Valor intrínseco principal: DCF Base al presente, US$322,31 por acción.** Complemento: DCF esperado por probabilidades US$274,14. Múltiplos y ponderados son lecturas secundarias.
+**Valor intrínseco principal: DCF Base al presente, US$322,31 por acción.** Complemento: DCF esperado por probabilidades US$274,11. Múltiplos y ponderados son lecturas secundarias.
 
 **Tabla 1 · Valor por acción descontado al presente (2026-09-30).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 
@@ -141,7 +141,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$340,35 supone que los ingresos crecen 11,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 12,4% (−0,8 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$340,35 supone que los ingresos crecen 14,6% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 11,7% (+2,9 pp). El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$426,22 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,8%, WACC de los años 4-10 9,4%, ROE de FY+3 42,1% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -162,12 +162,12 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$307,52 | — |
 | Múltiplos Base +20% | US$342,09 | +11,2% |
 | Múltiplos Base −20% | US$272,95 | −11,2% |
-| Crecimiento años 2-5 +2 pp | US$318,67 | +3,6% |
+| Crecimiento años 2-5 +2 pp | US$318,65 | +3,6% |
 | Crecimiento años 2-5 −2 pp | US$297,33 | −3,3% |
-| Margen objetivo +3 pp | US$318,01 | +3,4% |
-| Margen objetivo −3 pp | US$297,03 | −3,4% |
-| WACC +1 pp | US$300,55 | −2,3% |
-| WACC −1 pp | US$315,00 | +2,4% |
+| Margen objetivo +3 pp | US$318,50 | +3,6% |
+| Margen objetivo −3 pp | US$296,54 | −3,6% |
+| WACC +1 pp | US$300,47 | −2,3% |
+| WACC −1 pp | US$315,09 | +2,5% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
 Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 2-5 +2 pp.

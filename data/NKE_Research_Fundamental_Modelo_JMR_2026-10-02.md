@@ -215,7 +215,7 @@ Fuente de la tabla: 'Trailing Valuation' de la hoja, con precios de cierre de ca
 | Resultado declarado (hoy, por acción) | Conservador / Conservadora | Base | Optimista |
 |---|---:|---:|---:|
 | DCF de las historias | US$19,37 | US$32,54 | US$43,71 |
-| DCF técnico de la plantilla (referencia) | US$15,95 | US$32,48 | US$55,71 |
+| DCF de la hoja por historia (bloques de 'Valuation output') | US$19,37 | US$32,54 | US$43,71 |
 | Múltiplos consolidados a valor presente | US$20,15 | US$27,73 | US$34,88 |
 | Ponderado DCF 40% + múltiplos 60% (secundario) | US$19,84 | US$29,65 | US$38,41 |
 
@@ -444,6 +444,8 @@ Sensibilidad del DCF Base (US$32,54; cada fila es un DCF completo con un solo su
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
+
+> Nota (2-oct-2026): esta calibración es la anterior a la fórmula única. Hoy los bloques de 'Valuation output' calculan las historias (Conservadora US$19,37, Base US$32,54, Optimista US$43,71, Disrupción US$12,82); las cifras de esta subsección se conservan solo como registro.
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|

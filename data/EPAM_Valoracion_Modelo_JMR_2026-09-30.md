@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$176,03 por acción.** Complemento: DCF esperado por probabilidades US$156,93; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$85,26–US$231,59; precio con MOS 35% sobre el esperado: US$102,01; precio de referencia US$108,29. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$178,25), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$176,10 por acción.** Complemento: DCF esperado por probabilidades US$157,00; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$85,29–US$231,70; precio con MOS 35% sobre el esperado: US$102,05; precio de referencia US$108,29. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$176,10), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · La IA compensa lo que quita: crecimiento moderado** (valor principal) | 45% | US$176,03 | US$79,21 |
-| Conservadora · Deflación de horas por IA | 30% | US$114,85 | US$34,46 |
-| Disrupción · Deterioro de los fundamentales: Los servicios se comoditizan | 10% | US$85,26 | US$8,53 |
-| Optimista · La IA crea demanda de ingeniería | 15% | US$231,59 | US$34,74 |
-| **DCF esperado (complemento)** | 100% | **US$156,93** | |
+| **Base · La IA compensa lo que quita: crecimiento moderado** (valor principal) | 45% | US$176,10 | US$79,25 |
+| Conservadora · Deflación de horas por IA | 30% | US$114,90 | US$34,47 |
+| Disrupción · Deterioro de los fundamentales: Los servicios se comoditizan | 10% | US$85,29 | US$8,53 |
+| Optimista · La IA crea demanda de ingeniería | 15% | US$231,70 | US$34,75 |
+| **DCF esperado (complemento)** | 100% | **US$157,00** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$168,22 por acción y los múltiplos, US$109,37 hoy: 35% por debajo del DCF, fuera del rango de ±25%. Los múltiplos reflejan lo que el mercado paga hoy por los servicios de TI bajo el temor a la IA (~7-9x EBITDA); el DCF supone que EPAM vuelve a crecer y a recuperar margen. Si la presión de los asistentes de código resulta estructural, los múltiplos son la referencia más prudente.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$176,10 | US$105,27 | US$133,60 | US$102,01 | US$180,39 |
-| Conservador | US$114,90 | US$87,80 | US$98,64 | US$102,01 | US$127,49 |
-| Optimista | US$231,70 | US$131,89 | US$171,81 | US$102,01 | US$240,88 |
+| Base | US$176,10 | US$105,27 | US$133,60 | US$102,05 | US$180,39 |
+| Conservador | US$114,90 | US$87,80 | US$98,64 | US$102,05 | US$127,49 |
+| Optimista | US$231,70 | US$131,89 | US$171,81 | US$102,05 | US$240,88 |
 
 ## 2. Datos
 
@@ -44,9 +44,9 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
-| Crecimiento año 1 | 1,0% | 5,0% | 9,0% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | 1,0% | 5,0% | 9,0% | Input B29 |
-| Margen EBIT objetivo | 10,0% | 13,0% | 15,5% | Input B30; Valuation output C45/C47 |
+| Crecimiento año 1 | 1,6% | 5,0% | 8,8% | Input B27; Valuation output C55/C106 |
+| Crecimiento años 2-5 | 1,8% | 5,0% | 9,4% | Input B29 |
+| Margen EBIT objetivo | 10,5% | 13,0% | 14,5% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 3,27 / 2,83 | — | Input B32/B33 |
 | DCF por acción hoy | US$114,90 | US$176,10 | US$231,70 | Valuation output B86/B35/B137 |
@@ -79,9 +79,9 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$105,27 f
 
 ### Valor por acción en dos horizontes
 
-Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 10,79%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$85,26) y no se inventa para ellos.
+Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 10,79%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$85,29) y no se inventa para ellos.
 
-**Valor intrínseco principal: DCF Base al presente, US$176,10 por acción.** Complemento: DCF esperado por probabilidades US$156,93. Múltiplos y ponderados son lecturas secundarias.
+**Valor intrínseco principal: DCF Base al presente, US$176,10 por acción.** Complemento: DCF esperado por probabilidades US$157,00. Múltiplos y ponderados son lecturas secundarias.
 
 **Tabla 1 · Valor por acción descontado al presente (2026-09-30).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 
@@ -139,7 +139,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$108,29 supone que los ingresos crecen -6,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,0% (−11,9 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$108,29 supone que los ingresos crecen -5,9% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 5,5% (−11,4 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$239,47 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 10,8%, WACC de los años 4-10 10,0%, ROE de FY+3 15,3% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -160,15 +160,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$133,60 | — |
 | Múltiplos Base +20% | US$145,67 | +9,0% |
 | Múltiplos Base −20% | US$121,54 | −9,0% |
-| Crecimiento años 2-5 +2 pp | US$138,85 | +3,9% |
-| Crecimiento años 2-5 −2 pp | US$128,81 | −3,6% |
-| Margen objetivo +3 pp | US$148,32 | +11,0% |
-| Margen objetivo −3 pp | US$118,89 | −11,0% |
-| WACC +1 pp | US$130,11 | −2,6% |
-| WACC −1 pp | US$137,34 | +2,8% |
+| Crecimiento años 2-5 +2 pp | US$138,80 | +3,9% |
+| Crecimiento años 2-5 −2 pp | US$128,85 | −3,6% |
+| Margen objetivo +3 pp | US$149,06 | +11,6% |
+| Margen objetivo −3 pp | US$118,14 | −11,6% |
+| WACC +1 pp | US$130,09 | −2,6% |
+| WACC −1 pp | US$137,36 | +2,8% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Margen objetivo −3 pp, Margen objetivo +3 pp, Múltiplos Base +20%.
+Supuestos más frágiles: Margen objetivo +3 pp, Margen objetivo −3 pp, Múltiplos Base +20%.
 
 ## 8. Log de cambios en la hoja
 

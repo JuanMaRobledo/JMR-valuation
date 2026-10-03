@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$119,85 por acción.** Complemento: DCF esperado por probabilidades US$96,65; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$47,13–US$138,50; precio con MOS 35% sobre el esperado: US$62,82; precio de referencia US$69,69. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$119,00), y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$119,80 por acción.** Complemento: DCF esperado por probabilidades US$96,61; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$47,12–US$138,45; precio con MOS 35% sobre el esperado: US$62,80; precio de referencia US$69,69. Cada escenario es un DCF completo (hoja «Escenarios e historias»); el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo usan el DCF de las historias Conservadora, Base y Optimista; el antiguo caso técnico de la hoja ('Valuation output' B35) queda como calibración (US$119,80), y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · Tropiezo temporal; vuelve a crecer con innovación** (valor principal) | 40% | US$119,85 | US$47,94 |
-| Conservadora · Erosión prolongada de franquicias clave | 35% | US$66,35 | US$23,22 |
-| Disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada | 10% | US$47,13 | US$4,71 |
-| Optimista · Recuperación fuerte con nuevos productos | 15% | US$138,50 | US$20,78 |
-| **DCF esperado (complemento)** | 100% | **US$96,65** | |
+| **Base · Tropiezo temporal; vuelve a crecer con innovación** (valor principal) | 40% | US$119,80 | US$47,92 |
+| Conservadora · Erosión prolongada de franquicias clave | 35% | US$66,32 | US$23,21 |
+| Disrupción · Deterioro de los fundamentales: Genéricos y competencia generalizada | 10% | US$47,12 | US$4,71 |
+| Optimista · Recuperación fuerte con nuevos productos | 15% | US$138,45 | US$20,77 |
+| **DCF esperado (complemento)** | 100% | **US$96,61** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$117,30 por acción y los múltiplos, US$111,20 hoy: 5% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$119,80 | US$112,20 | US$115,24 | US$62,82 | US$148,14 |
-| Conservador | US$66,32 | US$82,81 | US$76,22 | US$62,82 | US$94,80 |
-| Optimista | US$138,45 | US$131,75 | US$134,43 | US$62,82 | US$175,43 |
+| Base | US$119,80 | US$112,20 | US$115,24 | US$62,80 | US$148,14 |
+| Conservador | US$66,32 | US$82,81 | US$76,22 | US$62,80 | US$94,80 |
+| Optimista | US$138,45 | US$131,75 | US$134,43 | US$62,80 | US$175,43 |
 
 ## 2. Datos
 
@@ -44,8 +44,8 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
-| Crecimiento año 1 | -1,0% | 2,0% | 6,0% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | -1,0% | 5,0% | 6,0% | Input B29 |
+| Crecimiento año 1 | -2,0% | 2,0% | 4,0% | Input B27; Valuation output C55/C106 |
+| Crecimiento años 2-5 | 1,0% | 5,0% | 6,7% | Input B29 |
 | Margen EBIT objetivo | 33,4% | 36,4% | 38,4% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 1,91 / 1,91 | — | Input B32/B33 |
@@ -79,9 +79,9 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$112,20 f
 
 ### Valor por acción en dos horizontes
 
-Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,00%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$47,13) y no se inventa para ellos.
+Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 9,00%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$47,12) y no se inventa para ellos.
 
-**Valor intrínseco principal: DCF Base al presente, US$119,80 por acción.** Complemento: DCF esperado por probabilidades US$96,65. Múltiplos y ponderados son lecturas secundarias.
+**Valor intrínseco principal: DCF Base al presente, US$119,80 por acción.** Complemento: DCF esperado por probabilidades US$96,61. Múltiplos y ponderados son lecturas secundarias.
 
 **Tabla 1 · Valor por acción descontado al presente (2026-09-30).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 
@@ -141,7 +141,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$69,69 supone que los ingresos crecen -3,8% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,4% (−8,2 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$69,69 supone que los ingresos crecen -4,2% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 4,5% (−8,7 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$155,17 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 9,0%, WACC de los años 4-10 8,5%, ROE de FY+3 85,7% y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 
@@ -162,15 +162,15 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | Vigente | US$115,24 | — |
 | Múltiplos Base +20% | US$129,01 | +11,9% |
 | Múltiplos Base −20% | US$101,47 | −11,9% |
-| Crecimiento años 2-5 +2 pp | US$120,37 | +4,4% |
-| Crecimiento años 2-5 −2 pp | US$110,56 | −4,1% |
+| Crecimiento años 2-5 +2 pp | US$120,38 | +4,5% |
+| Crecimiento años 2-5 −2 pp | US$110,55 | −4,1% |
 | Margen objetivo +3 pp | US$119,52 | +3,7% |
 | Margen objetivo −3 pp | US$110,96 | −3,7% |
 | WACC +1 pp | US$112,21 | −2,6% |
-| WACC −1 pp | US$118,48 | +2,8% |
+| WACC −1 pp | US$118,49 | +2,8% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Crecimiento años 2-5 +2 pp.
+Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Crecimiento años 2-5 +2 pp.
 
 ## 8. Log de cambios en la hoja
 
