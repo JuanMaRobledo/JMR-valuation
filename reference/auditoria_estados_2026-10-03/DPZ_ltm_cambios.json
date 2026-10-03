@@ -1,0 +1,394 @@
+[
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L3",
+  "antes": 164.8,
+  "despues": 164.84,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): CashAndCashEquivalentsAtCarryingValue."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L5",
+  "antes": 164.8,
+  "despues": 164.84,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): CashAndCashEquivalentsAtCarryingValue."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L6",
+  "antes": 316,
+  "despues": 303.18,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): AccountsReceivableNetCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L8",
+  "antes": 316,
+  "despues": 303.18,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): AccountsReceivableNetCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L9",
+  "antes": 452.6,
+  "despues": 437.4,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre del activo corriente."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L10",
+  "antes": 894.2,
+  "despues": 905.42,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): AssetsCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L11",
+  "antes": 324,
+  "despues": 374.45,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): PropertyPlantAndEquipmentNet."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L13",
+  "antes": 10.7,
+  "despues": 7.87,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): Goodwill."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L15",
+  "antes": 487.5,
+  "despues": 475.59,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre del activo."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L16",
+  "antes": 1716.5,
+  "despues": 1763.32,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): Assets."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L18",
+  "antes": 135,
+  "despues": 137.43,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): AccountsPayableCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L20",
+  "antes": 7,
+  "despues": 7.42,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): LongTermDebtAndCapitalLeaseObligationsCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L22",
+  "antes": 4.8,
+  "despues": 4.9,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): ContractWithCustomerLiabilityCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L23",
+  "antes": 395.7,
+  "despues": 438.92,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre del pasivo corriente."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L24",
+  "antes": 541.6,
+  "despues": 588.67,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): LiabilitiesCurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L26",
+  "antes": 183.9,
+  "despues": 193.25,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): OperatingLeaseLiabilityNoncurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L27",
+  "antes": 81.4,
+  "despues": 87.62,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre del pasivo."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L28",
+  "antes": 5076,
+  "despues": 5157.08,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): LiabilitiesNoncurrent."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L29",
+  "antes": 5617.6,
+  "despues": 5745.75,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): pasivo corriente + no corriente."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L31",
+  "antes": 1.9,
+  "despues": 0.841,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): AdditionalPaidInCapitalCommonStock."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L32",
+  "antes": -4.8,
+  "despues": -6.06,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): AccumulatedOtherComprehensiveIncomeLossNetOfTax."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L33",
+  "antes": -3898.6,
+  "despues": -3977.55,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): RetainedEarningsAccumulatedDeficit."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L34",
+  "antes": -3982,
+  "despues": -3982.43,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): StockholdersEquity."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L35",
+  "antes": -3982,
+  "despues": -3982.43,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): StockholdersEquity."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L36",
+  "antes": 1716.5,
+  "despues": 1763.32,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): Assets."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L3",
+  "antes": 601.7,
+  "despues": 596.52,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): NetIncomeLoss."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L4",
+  "antes": 88.8,
+  "despues": 88.89,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): DepreciationAndAmortization."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L5",
+  "antes": 44.6,
+  "despues": 44.43,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): ShareBasedCompensation."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L6",
+  "antes": 56.9,
+  "despues": 47.96,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre del flujo operativo."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L15",
+  "antes": -120.6,
+  "despues": -124.33,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): PaymentsToAcquirePropertyPlantAndEquipment."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L21",
+  "antes": 50.4,
+  "despues": 14.7,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre del flujo de inversión."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L22",
+  "antes": -109.6,
+  "despues": -109.64,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): NetCashProvidedByUsedInInvestingActivities."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L32",
+  "antes": -236.9,
+  "despues": -244.85,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): PaymentsOfDividends."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L36",
+  "antes": 671.5,
+  "despues": 653.47,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): flujo operativo − capex."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L37",
+  "antes": 745.1,
+  "despues": 764.66,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): EBIT × (1 − tasa efectiva)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L40",
+  "antes": -137.8,
+  "despues": -137.81,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L3",
+  "antes": 4940,
+  "despues": 5027.81,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): Revenues."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L4",
+  "antes": 0,
+  "despues": 0.0178,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): LTM frente al último ejercicio."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L5",
+  "antes": 2966.4,
+  "despues": 3015.63,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): CostOfGoodsAndServicesSold."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L6",
+  "antes": 1973.6,
+  "despues": 2012.18,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): ingresos − costo de ventas."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L9",
+  "antes": 88.8,
+  "despues": 88.89,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): DepreciationAndAmortization."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L11",
+  "antes": 930.8,
+  "despues": 942.06,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre: bruto − SG&A − D&A − I+D − operativo."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L12",
+  "antes": 954,
+  "despues": 981.23,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): OperatingIncomeLoss."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L14",
+  "antes": 14.9,
+  "despues": 11.22,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): InvestmentIncomeInterest."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L15",
+  "antes": -196,
+  "despues": -198.02,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): InterestExpense."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L17",
+  "antes": -2.5,
+  "despues": -28.95,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): cuadre: antes de impuestos − operativo − intereses."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L18",
+  "antes": -183.6,
+  "despues": -215.75,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): antes de impuestos − operativo."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L19",
+  "antes": 770.3,
+  "despues": 765.48,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L20",
+  "antes": 168.6,
+  "despues": 168.95,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): IncomeTaxExpenseBenefit."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L21",
+  "antes": 601.7,
+  "despues": 596.52,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): NetIncomeLoss."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L22",
+  "antes": 601.7,
+  "despues": 596.52,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): NetIncomeLoss."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L23",
+  "antes": 17.57,
+  "despues": 17.74,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): EarningsPerShareBasic."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L24",
+  "antes": 17.57,
+  "despues": 17.64,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): EarningsPerShareDiluted."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L25",
+  "antes": 34,
+  "despues": 33.2,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): WeightedAverageNumberOfSharesOutstandingBasic."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L26",
+  "antes": 34.2,
+  "despues": 33.33,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): WeightedAverageNumberOfDilutedSharesOutstanding."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L28",
+  "antes": 1042.8,
+  "despues": 1070.13,
+  "motivo": "LTM al 2026-06-14 (10-Q, SEC XBRL): operativo + D&A."
+ }
+]
