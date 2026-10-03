@@ -89,3 +89,29 @@ Detalle de las reglas y de cada corrección: `Modelo-JMR/modelo/METODOLOGIA.md`,
   (`Modelo-JMR-datos/valoraciones/*.json`) desde la hoja corregida: carga el xlsx en
   `docs/visor.html` con Playwright e intercepta el guardado. Conserva el análisis fundamental
   y el Cualitativo que se hayan editado en el visor.
+
+## Regenerar la cartera completa (3-oct-2026)
+
+Cuando cambian las hojas (supuestos, fórmulas o datos), un solo comando rehace las valoraciones de la app, los informes,
+la sección 12 del research de la app y las tablas de horizontes, y luego verifica todo:
+
+```bash
+scripts/regenerar_cartera.sh [--drive] [TICKER ...]   # sin tickers: las 22 de reference/cartera_drive.json
+```
+
+Requisitos: `Modelo-JMR` y `Modelo-JMR-datos` clonados junto a este repo, `GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT`, Node,
+Playwright con Chromium. El script descarga a `.cache/js/` las dos librerías que usa (SheetJS 0.18.5 y marked 12.0.2).
+
+Por empresa: `regen_valoracion_app.py` (valoración de la app desde la hoja) → `implied_growth.py` →
+`sync_saved_after_dcf.py` → `sync_valor_esperado.py` → `normalize_saved_mos.py` → `audit_report.py` →
+`insert_damodaran_section.py` → `insert_scenarios_table.py` → `valuation_report_v3.py`. Para todas al final:
+`insert_research_horizons_app.py`, `consistencia_app.py` (16 controles entre motor, valoración, research y auditoría) e
+`integridad_hojas.py`. Con `--drive`, `subir_drive.py` reemplaza en Drive los archivos listados en
+`reference/cartera_drive.json` y verifica el md5 de cada uno. Cada paso con llamadas a Google se reintenta (cuota de 60
+lecturas por minuto); al final el script lista las empresas o pasos que fallaron.
+
+Si cambian las historias (`reference/damodaran/<T>.json`), antes se corre
+`PYTHONPATH=.:scripts python scripts/damodaran_stories.py <T>`, que recalcula las historias desde la hoja y reescribe
+`data/<T>_Analisis_Damodaran_*.md`. Desde el 2-oct-2026 los bloques Base, Conservador, Optimista y Disrupción de
+'Valuation output' calculan las cuatro historias, así que el DCF de la hoja (B35) es el DCF Base y ya no hay un caso
+técnico aparte (salvo las financieras, como PAGS, que usan 'DCF FCFE financiero').

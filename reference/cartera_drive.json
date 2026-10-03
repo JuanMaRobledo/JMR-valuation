@@ -1,0 +1,101 @@
+{
+  "_nota": "Archivos de Drive que reemplaza scripts/subir_drive.py (ruta local relativa a JMR-valuation -> id del archivo en Drive). Las hojas de cálculo se leen de reference/multiplos_v3/<T>_anclas.json.",
+  "empresas": {
+    "ADBE": {
+      "data/ADBE_Valoracion_Modelo_JMR_2026-09-30.md": "1juU_1hMvoevO9h7XRMa4vkraUatEHyhp",
+      "data/ADBE_Analisis_Damodaran_2026-09-30.md": "1VLuCkof9YmWxR_20GJLVo951o3W8pVGF"
+    },
+    "AFYA": {
+      "data/AFYA_Valoracion_Modelo_JMR_2026-09-30.md": "1-ltfbPU00irbFvaQydWC0G7Hy0fDccJM",
+      "data/AFYA_Analisis_Damodaran_2026-09-30.md": "1DXznvYYzO7zx4ZJW3ARG9lquMrVnOsmS"
+    },
+    "BSX": {
+      "data/BSX_Valoracion_Modelo_JMR_2026-09-30.md": "1EzwUPCxy4BjVR6-nz3CxHYFZqjbIBrCy",
+      "data/BSX_Analisis_Damodaran_2026-09-30.md": "163SJ3pDsH0yfXFK6POgmyucYsSb8SZM6"
+    },
+    "CELH": {
+      "data/CELH_Valoracion_Modelo_JMR_2026-09-30.md": "1N2NLa7Jc5mZyAEDWLR7NB-a6jGCv9APo",
+      "data/CELH_Analisis_Damodaran_2026-09-30.md": "1Q88Z1kcjnbp6q7h8bnodBjCaRzyVqCdl",
+      "data/CELH_Research_Fundamental_Modelo_JMR_2026-10-01.md": "1zj67-1EL9E-WUv9EOQvCSErolhDJZPAp",
+      "data/CELH_Valoracion_Modelo_JMR_2026-10-01.md": "1ko4FJI6OHNjV_TXReNFqzzyjHLxt8dWH"
+    },
+    "CMG": {
+      "data/CMG_Valoracion_Modelo_JMR_2026-09-30.md": "1CsAQRZWBJAG-7p_tNTatWdm0IrtZJeV8",
+      "data/CMG_Analisis_Damodaran_2026-09-30.md": "1Cf1iAfW-TChzUr3R2rhjYNwKv8QaM4Ma"
+    },
+    "DPZ": {
+      "data/DPZ_Valoracion_Modelo_JMR_2026-09-30.md": "1S9ZZMln3yli63L0_pbvQZmxWPNIboDuA",
+      "data/DPZ_Analisis_Damodaran_2026-09-30.md": "17Ft9LQbSxYt8BBTAJSD2-yTFJk1JE_Vu"
+    },
+    "DUOL": {
+      "data/DUOL_Valoracion_Modelo_JMR_2026-09-30.md": "1n2eiyiO-Tn-XI94jMFTZdioFyadnpCtF",
+      "data/DUOL_Analisis_Damodaran_2026-09-30.md": "1hfqcUbviOZf8w5RAouaB9Oh8hvzhGidK"
+    },
+    "EPAM": {
+      "data/EPAM_Valoracion_Modelo_JMR_2026-09-30.md": "16nrneVfdNRRoDvDvooW_WZDfjWgK46Pa",
+      "data/EPAM_Analisis_Damodaran_2026-09-30.md": "1li8T-XlRINK4HbKumAqyXGe0g1TcFeUp"
+    },
+    "GOOG": {
+      "data/GOOG_Valoracion_Modelo_JMR_2026-09-30.md": "1N8nC83nMmQQcXkF5eESyHFTkRRp57Po5",
+      "data/GOOG_Analisis_Damodaran_2026-09-30.md": "1ZppSLCC3cjkXfjG9K4U3Ij9i-2jXyAQ5"
+    },
+    "INTU": {
+      "data/INTU_Valoracion_Modelo_JMR_2026-09-30.md": "1MfbLqFV4b3f1vwuN-_Nm8iuS5G-AaYgJ",
+      "data/INTU_Analisis_Damodaran_2026-09-30.md": "1HSQZfDcGTDglLWbFDflCugXOv0Ok_Ivo"
+    },
+    "LULU": {
+      "data/LULU_Valoracion_Modelo_JMR_2026-09-30.md": "17nLJ76j15ypDd90inw65S_ondNulahmv",
+      "data/LULU_Analisis_Damodaran_2026-09-30.md": "1M514-WSVyIEOnCaE2wJiy4aBnvYiBy0v",
+      "data/LULU_Research_Fundamental_Modelo_JMR_2026-10-02.md": "1vCaZzVub68MbBAWChqSj2YjRqsfIoXPz",
+      "data/LULU_Valoracion_Modelo_JMR_2026-10-02.md": "1ACY4T4UOJQP9Mom380kkigV2PustVBpQ"
+    },
+    "MSFT": {
+      "data/MSFT_Valoracion_Modelo_JMR_2026-09-30.md": "1B96CLfpemYH0G8UDCd-I5IAqiV6qnV2O",
+      "data/MSFT_Analisis_Damodaran_2026-09-30.md": "1XByxHLrXFgPAht5YA-oFk7_9xxgjqM7R"
+    },
+    "NKE": {
+      "data/NKE_Valoracion_Modelo_JMR_2026-09-30.md": "10hvcZfkZOYAAFpifxtTPyHAcfdedC5Ka",
+      "data/NKE_Analisis_Damodaran_2026-09-30.md": "1BvEcyIuawneI0Tjc59_M5a-lKJ9yvFXy",
+      "data/NKE_Research_Fundamental_Modelo_JMR_2026-10-02.md": "1gAvbJvyFHpsMvCaGDtIip1jQxd4hsICS",
+      "data/NKE_Valoracion_Modelo_JMR_2026-10-02.md": "1dZ02eITH6GnNU3beyP0ZUwtuMjNgPwO-"
+    },
+    "NVDA": {
+      "data/NVDA_Valoracion_Modelo_JMR_2026-09-30.md": "1hnJkMvecQwWcTeFSIEyK0ASIfSYxG5_o",
+      "data/NVDA_Analisis_Damodaran_2026-09-30.md": "1rTr-ppZaXvQe2kDxgkRTWpoVzXWaMrf1"
+    },
+    "NVO": {
+      "data/NVO_Valoracion_Modelo_JMR_2026-09-30.md": "1YwLvg5sRNjTfrBEZ4_92I0RzO6oRwUZB",
+      "data/NVO_Analisis_Damodaran_2026-09-30.md": "1_XI27UZiM2_uBRutnjx5CBDK15xJaTF2"
+    },
+    "ONON": {
+      "data/ONON_Valoracion_Modelo_JMR_2026-09-30.md": "1fJ_DIRRgGQcTNObOyMNj0I80zdK_FWvh",
+      "data/ONON_Analisis_Damodaran_2026-09-30.md": "1FRfEXO5o3eEcleIJoUWoKNzms91VdtFq",
+      "data/ONON_Research_Fundamental_Modelo_JMR_2026-10-02.md": "108hiBIFzsBNkZLzasDXiQW3JgEXALwtc",
+      "data/ONON_Valoracion_Modelo_JMR_2026-10-02.md": "1oJs3ch_7PxBt67x6RL7YhTRk8PscFZYz"
+    },
+    "PAGS": {
+      "data/PAGS_Valoracion_Modelo_JMR_2026-09-30.md": "1ytW10VJr_KNfW4SYDn6LUyLyWZNgSjeG",
+      "data/PAGS_Analisis_Damodaran_2026-09-30.md": "1r4bPlzlNwgjUCvxATWaKoj2GpB6OKp4q"
+    },
+    "PLTR": {
+      "data/PLTR_Valoracion_Modelo_JMR_2026-09-30.md": "1ny5_d_e00u3BQdOKT2mEA2dn6Wvlxgiu",
+      "data/PLTR_Analisis_Damodaran_2026-09-30.md": "1GOvZNrC45tw4fHroVS-fIwW6KZIIpD_f"
+    },
+    "PYPL": {
+      "data/PYPL_Valoracion_Modelo_JMR_2026-09-30.md": "1zpp36AgTIu5vHr2FK3G0LFcYs7g0kjgh",
+      "data/PYPL_Analisis_Damodaran_2026-09-30.md": "1gvmwJmjttfF2r3dJhGI1NpmhjnddNYAe"
+    },
+    "SHAK": {
+      "data/SHAK_Valoracion_Modelo_JMR_2026-09-30.md": "1emdpeLxvVK9xvHzTPrmO_NLIiP6p6Y8B",
+      "data/SHAK_Analisis_Damodaran_2026-09-30.md": "1hgrLgR1yIvjFd4dumjdFmdd2lyksXca1"
+    },
+    "UBER": {
+      "data/UBER_Valoracion_Modelo_JMR_2026-09-30.md": "1AHy1-f97fVfPqMYao3OIAds66G4Tl5B8",
+      "data/UBER_Analisis_Damodaran_2026-09-30.md": "1NvJDsCpm65WVHhwM3osJr9GenQ57Da-p"
+    },
+    "ZTS": {
+      "data/ZTS_Valoracion_Modelo_JMR_2026-09-30.md": "1woL_sC2jboRYVFoNTIPLFNG6BbHRO9xL",
+      "data/ZTS_Analisis_Damodaran_2026-09-30.md": "16MjFK4MTxryJ2W01pmCgcyziBbC6o500"
+    }
+  }
+}

@@ -182,7 +182,8 @@ def compute(tk: str) -> dict:
     # Una hoja nueva sin valoración guardada en la app (p. ej. CELHN, CELH desde cero) toma precio y MOS de la hoja.
     price = rec.get("precio") or cell("Input sheet", "D1") or cell("Input sheet", "B23")
     rec.setdefault("mos", cell("Resumen de Valoración", "G4"))
-    # DCF técnico anterior = el DCF propio de la hoja ('Valuation output'!B35, casos Conservador/Base/Optimista de la plantilla).
+    # DCF de la hoja = 'Valuation output'!B35. Desde el 2-oct-2026 ese bloque calcula la historia Base (antes era el caso
+    # técnico Base de la plantilla).
     # 'Descuento de múltiplos'!D38 ya no sirve: desde el 1-oct-2026 apunta a la historia Base de «Escenarios e historias».
     dcf = cell("Valuation output", "B35")
     if cell("DCF FCFE financiero", "A1") == "DCF FCFE financiero":  # financieras: el DCF de la hoja es el FCFE Base
@@ -435,8 +436,9 @@ def origen_calculo(r: dict, W) -> None:
         "(Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es "
         f"{usd(ve)}. Cada historia tiene su propia trayectoria de "
         f"{'beneficios' if fin else 'ventas'}, {'ROE' if fin else 'margen'} objetivo, crecimiento terminal y retorno terminal. "
-        f"Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja ({usd(r['dcf_base'])}) ni mezclando el "
-        "DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio "
+        + ("Ninguna cifra se obtiene mezclando el DCF con múltiplos." if hoja_historias(r) else
+           f"Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja ({usd(r['dcf_base'])}) ni mezclando el "
+           "DCF con múltiplos.") + " «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio "
         "de desenlaces con pesos subjetivos.")
 
     W.h4("1. Datos de partida y origen de los supuestos")
@@ -561,8 +563,16 @@ def origen_calculo(r: dict, W) -> None:
     if isinstance(mos, (int, float)):
         W.p(f"Precio con MOS = DCF esperado × (1 − {pct(mos, 0)}) = {es(ve, 6)} × {es(1 - mos, 2)} = US${es(ve * (1 - mos), 6)} ≈ "
             f"{usd(ve * (1 - mos))}. El {pct(mos, 0)} es la política de margen de seguridad del analista para este tipo de empresa; "
-            "no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de "
-            "presentación (Base primero) no cambia esa fórmula.")
+            "no lo estima el DCF. Se aplica al esperado, no al DCF Base" +
+            ("" if hoja_historias(r) else " ni al antiguo caso técnico de la hoja") +
+            ": la jerarquía de presentación (Base primero) no cambia esa fórmula.")
+    if not fin:
+        W.p("Trazabilidad: la hoja calcula cada historia en 'Valuation output' con la estructura de Damodaran: Base en las filas "
+            "2–42 (valor por acción B35), Conservadora 53–93 (B86), Optimista 104–144 (B137) y Disrupción 157–197 (B190). La "
+            "pestaña «Escenarios e historias» guarda los supuestos de cada historia y resume los resultados: A5:J8; esperado H10; "
+            "Base H11; rango H12:H13; MOS H14. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro "
+            "resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.")
+        return
     W.p("Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; "
         "MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en "
         "B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia "
@@ -953,8 +963,8 @@ def trayectorias(r: dict, W, titulo: str) -> None:
     """Tabla año por año (1-10 y perpetuidad) de cada historia: lo que la hoja calcula en «Escenarios e historias»."""
     fin = r.get("financiero")
     W.h4(titulo)
-    W.p("Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en «Escenarios e "
-        "historias»: " + ("utilidad, crecimiento, ROE, reinversión patrimonial, flujo al accionista (FCFE), costo del patrimonio "
+    W.p("Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en " +
+        ("«Escenarios e historias»: " if fin else "los bloques de 'Valuation output': ") + ("utilidad, crecimiento, ROE, reinversión patrimonial, flujo al accionista (FCFE), costo del patrimonio "
                           "y su valor presente." if fin else
                           "ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente.") +
         " Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el "
@@ -1015,8 +1025,8 @@ def cuatro_tesis(r: dict, W) -> None:
     W.h3("Las cuatro tesis: Base, Conservadora, Disrupción y Optimista")
     W.p(f"La tesis Base es la trayectoria central defendida y su DCF, {usd(A['valor_beta_hoja'])}, es el valor intrínseco principal. "
         f"El DCF esperado de {usd(r['valor_esperado_beta_hoja'])} combina las cuatro tesis con sus probabilidades y se presenta como "
-        "complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción "
-        "describe un deterioro estructural del negocio; no presupone IA ni quiebra.")
+        "complemento. " + ("" if hoja_historias(r) else "La antigua calibración técnica Conservador/Base/Optimista de la hoja "
+                            "no define estas tesis. ") + "Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.")
     for h in hs:
         desc = h.get("tesis_titulo") or titulo(h)
         W.h4(("Disrupción · Deterioro de los fundamentales" if h["id"] == "C" else NOMBRE[h["id"]]) + (f": {desc}" if desc else ""))
@@ -1092,6 +1102,14 @@ def inline_html(s: str) -> str:
     return t
 
 
+def hoja_historias(r: dict) -> bool:
+    """Desde el 2-oct-2026 los bloques de 'Valuation output' calculan las historias: el DCF de la hoja (B35) es el de la
+    historia Base y ya no hay un caso técnico aparte. Las financieras (PAGS) conservan el DCF FCFE y su pestaña."""
+    A = next((h for h in r.get("historias", []) if h.get("id") == "A"), None)
+    return (not r.get("financiero") and A is not None and isinstance(r.get("dcf_base"), (int, float))
+            and abs(r["dcf_base"] - A["valor_beta_hoja"]) < 0.01)
+
+
 def _tecnico(x, k=None):
     """En las fichas, «DCF Base» designa el antiguo caso técnico de la hoja (textos de riesgo y sensibilidad): se
     reescribe como «DCF técnico anterior» para no confundirlo con el DCF de la tesis Base, que es el valor principal."""
@@ -1105,7 +1123,7 @@ def _tecnico(x, k=None):
 
 
 def render(r: dict) -> tuple[str, str]:
-    sp = _tecnico(r["spec"])
+    sp = r["spec"] if hoja_historias(r) else _tecnico(r["spec"])
     r = {**r, "spec": sp}
     md, ht = [], []
 
@@ -1134,14 +1152,16 @@ def render(r: dict) -> tuple[str, str]:
     hs = r["historias"]
     ve, mos = r["valor_esperado_beta_hoja"], r.get("mos")
     central = next(h for h in hs if h.get("id") == "A")
+    hh = hoja_historias(r)
     lo_h, hi_h = min(h["valor_beta_hoja"] for h in hs), max(h["valor_beta_hoja"] for h in hs)
     rango = f"US${es(lo_h)}–{es(hi_h)}"
     mos_txt = (f" El MOS {pct(mos, 0)} se aplica al esperado: {usd(ve * (1 - mos))}." if isinstance(mos, (int, float)) else "")
     p(f"**Valor intrínseco principal · DCF Base hoy: {usd(central['valor_beta_hoja'])} por acción** ({nombre(central)}).")
     p(f"**Complemento · DCF esperado por probabilidades: {usd(ve)}.** Los cuatro escenarios DCF activos son Base, "
-      f"Conservadora, Disrupción y Optimista; su rango es {rango}.{mos_txt} El antiguo caso técnico de la hoja "
-      f"({usd(r['dcf_base'])}) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados "
-      "y ponderados son lecturas secundarias con sus propios supuestos.")
+      f"Conservadora, Disrupción y Optimista; su rango es {rango}.{mos_txt} " +
+      ("La hoja calcula las cuatro en 'Valuation output'. " if hh else
+       f"El antiguo caso técnico de la hoja ({usd(r['dcf_base'])}) se conserva solo como calibración; no es el DCF Base. ") +
+      "Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.")
     aud_p = _ROOT / "reference" / "auditoria_estados_2026-10-01" / f"{r['ticker']}_resumen.json"
     if aud_p.exists():
         a = json.loads(aud_p.read_text())
@@ -1154,10 +1174,13 @@ def render(r: dict) -> tuple[str, str]:
           "La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.")
     p("Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, "
       "piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el "
-      f"motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de {usd(r['dcf_base'])} por acción): solo cambian el "
+      "motor del Modelo JMR, que reproduce la hoja (" + (f"bloque Base de 'Valuation output': {usd(r['dcf_base'])} por acción" if hh
+      else f"DCF técnico anterior de {usd(r['dcf_base'])} por acción") + "): solo cambian el "
       "crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de "
       "la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el "
-      "promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». "
+      "promedio de las historias ponderado por su probabilidad. " + ("La hoja calcula estos cuatro DCF en 'Valuation output' (bloques "
+      "Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». " if hh else
+      "La hoja incluye estos cuatro DCF en «Escenarios e historias». ") +
       "Los múltiplos son precio relativo y se comentan en otras secciones.")
 
     h3("La historia en un párrafo")
@@ -1199,7 +1222,7 @@ def render(r: dict) -> tuple[str, str]:
           "de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.")
     rk = sp.get("riesgo", {})
     p("**Riesgo.** " + rk.get("texto", ""))
-    tab(["Enfoque", "Beta", "Costo del patrimonio", "WACC inicial", "DCF técnico anterior por acción"],
+    tab(["Enfoque", "Beta", "Costo del patrimonio", "WACC inicial", "DCF Base por acción" if hh else "DCF técnico anterior por acción"],
         [[b["enfoque"], es(b["beta"]), pct(b["ke"]), pct(b["wacc"]), usd(b["dcf_base"])] for b in r["betas"]],
         ["l", "r", "r", "r", "r"])
 
@@ -1207,7 +1230,7 @@ def render(r: dict) -> tuple[str, str]:
     if r.get("financiero"):
         h3("DCF financiero: supuestos y limitaciones")
         p((sp.get("margenes") or {}).get("texto", "") + " " + (sp.get("reinversion") or {}).get("texto", ""))
-    elif su.get("growthBase") is not None:
+    elif su.get("growthBase") is not None and not hh:
         h3("Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)")
         tab(["Supuesto", "Conservador", "Base", "Optimista"],
             [[lab] + [pct(su.get(k + s_)) for s_ in ("Cons", "Base", "Opt")] for lab, k in (
@@ -1224,7 +1247,7 @@ def render(r: dict) -> tuple[str, str]:
         rt = moat.get("roic_terminal")
         h3("Ventaja competitiva y ROIC terminal: comprobación")
         tab(["Ventaja (criterio Damodaran)", "ROIC actual (modelo)", "ROIC de la industria (Damodaran)", "Costo de capital terminal",
-             "ROIC terminal usado", "DCF técnico anterior", "DCF con ROIC terminal = costo de capital"],
+             "ROIC terminal usado", "DCF Base de la hoja" if hh else "DCF técnico anterior", "DCF con ROIC terminal = costo de capital"],
             [[moat["ventaja"].capitalize(), pct(moat["roic_actual"]), pct(moat["roic_industria"]) if moat.get("roic_industria") else "No disponible",
               pct(moat["costo_capital_terminal"]), pct(rt) if rt else "= costo de capital", usd(r["dcf_base"]), usd(r["dcf_sin_exceso"])]],
             ["l", "r", "r", "r", "r", "r", "r"])
@@ -1259,10 +1282,11 @@ def render(r: dict) -> tuple[str, str]:
         ["l", "r", "l", "r", "r", "r"] + (["r"] if con_roic else []) + ["r", "r"] + ([] if same else ["r"]))
     p(sp["prob_texto"] + " **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**")
     s = r["sensibilidad"]
-    p(f"Sensibilidad del DCF técnico anterior (beta {es(r['beta_hoja'])}; US$ por acción; filas = crecimiento de los años 1-5, "
+    p(f"Sensibilidad del {'DCF Base' if hh else 'DCF técnico anterior'} (beta {es(r['beta_hoja'])}; US$ por acción; filas = crecimiento de los años 1-5, "
       "columnas = margen operativo objetivo):")
     p("Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; "
-      "si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.")
+      "si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del " +
+      ("DCF Base de la hoja." if hh else "DCF técnico anterior de la hoja."))
     tab(["Crecimiento \\ Margen"] + [pct(m) for m in s["m"]],
         [[pct(g)] + [es(v) for v in row] for g, row in zip(s["g"], s["v"])], ["l"] + ["r"] * 5)
 
@@ -1357,12 +1381,20 @@ def main(tickers):
                 "> Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría "
                 "financiera ni una recomendación.\n")
         out_md = _ROOT / "data" / f"{tk}_Analisis_Damodaran_{r['fecha']}.md"
+        previos = sorted((_ROOT / "data").glob(f"{tk}_Analisis_Damodaran_*.md"))
+        if len(previos) == 1:  # el nombre del archivo (y de su copia en Drive) queda fijo aunque cambie la fecha del análisis
+            out_md = previos[0]
         if r["spec"].get("md_propio"):
             out_md = REF / f"{tk}_seccion.md"  # hay un documento escrito a mano con ese nombre; no se pisa
         out_md.write_text(head + md)
-        mt = r.get("motor_tecnico")
-        if isinstance(mt, (int, float)) and isinstance(r.get("dcf_base"), (int, float)) and abs(mt - r["dcf_base"]) > 0.01:
-            print(f"{tk:5s} AVISO: el motor da {mt:.2f} y la hoja (DCF técnico: VO B35 o FCFE financiero B42) {r['dcf_base']:.2f}", flush=True)
+        # Desde el 2-oct-2026 'Valuation output'!B35 es el DCF de la historia Base: el control es historia Base = hoja.
+        # Las financieras siguen comparando el motor técnico con 'DCF FCFE financiero'!B42.
+        A = next(h for h in r["historias"] if h["id"] == "A")["valor_beta_hoja"]
+        ref, que = (r.get("motor_tecnico"), "el motor técnico") if r.get("financiero") else (A, "la historia Base")
+        if isinstance(ref, (int, float)) and isinstance(r.get("dcf_base"), (int, float)) and abs(ref - r["dcf_base"]) > 0.01:
+            print(f"{tk:5s} AVISO: {que} da {ref:.2f} y la hoja (VO B35 o FCFE financiero B42) {r['dcf_base']:.2f}"
+                  + (" (con --offline, el DCF de la hoja guardado puede ser anterior: correr sin --offline)" if offline else ""),
+                  flush=True)
         print(f"{tk:5s} DCF {r['dcf_base']:.2f} | VE {r['valor_esperado_beta_hoja']:.2f} / {r['valor_esperado_beta_prop']:.2f} | "
               f"beta {r['beta_hoja']:.2f}→{r['beta_prop']:.2f} | " +
               " ".join(f"{h['id']}:{h['valor_beta_hoja']:.1f}" for h in r["historias"]), flush=True)
