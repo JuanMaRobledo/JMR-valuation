@@ -1,0 +1,128 @@
+[
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E40",
+  "antes": 1020,
+  "despues": 223.46,
+  "motivo": "Cambio neto de caja Dec '19: SEC 20-F 2019 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.2537 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E21",
+  "antes": 39.1,
+  "despues": 43.82,
+  "motivo": "Utilidad consolidada Dec '19 con minoritarios (ProfitLoss): SEC 20-F 2019 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "F40",
+  "antes": 1825,
+  "despues": 19.78,
+  "motivo": "Cambio neto de caja Dec '20: SEC 20-F 2020 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.1942 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "F23",
+  "antes": 0.61,
+  "despues": 0.62,
+  "motivo": "EPS básico Dec '20: SEC 20-F 2020 (ifrs-full) convertido con el tipo de cambio implícito de la hoja; la hoja copiaba el diluido (escala de ADS de la hoja)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "F21",
+  "antes": 56.7,
+  "despues": 59.82,
+  "motivo": "Utilidad consolidada Dec '20 con minoritarios (ProfitLoss): SEC 20-F 2020 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "G40",
+  "antes": -608,
+  "despues": -54.97,
+  "motivo": "Cambio neto de caja Dec '21: SEC 20-F 2021 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.1854 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "G21",
+  "antes": 41.4,
+  "despues": 44.92,
+  "motivo": "Utilidad consolidada Dec '21 con minoritarios (ProfitLoss): SEC 20-F 2021 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "H40",
+  "antes": 443,
+  "despues": 66.74,
+  "motivo": "Cambio neto de caja Dec '22: SEC 20-F 2022 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.1937 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "H21",
+  "antes": 72.4,
+  "despues": 76.09,
+  "motivo": "Utilidad consolidada Dec '22 con minoritarios (ProfitLoss): SEC 20-F 2022 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "I40",
+  "antes": 2896,
+  "despues": -108.15,
+  "motivo": "Cambio neto de caja Dec '23: SEC 20-F 2023 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.2002 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I23",
+  "antes": 0.85,
+  "despues": 0.86,
+  "motivo": "EPS básico Dec '23: SEC 20-F 2023 (ifrs-full) convertido con el tipo de cambio implícito de la hoja; la hoja copiaba el diluido (escala de ADS de la hoja)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I21",
+  "antes": 77.4,
+  "despues": 81.18,
+  "motivo": "Utilidad consolidada Dec '23 con minoritarios (ProfitLoss): SEC 20-F 2023 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "J40",
+  "antes": 481,
+  "despues": 66.51,
+  "motivo": "Cambio neto de caja Dec '24: SEC 20-F 2024 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.1858 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J23",
+  "antes": 1.29,
+  "despues": 1.3,
+  "motivo": "EPS básico Dec '24: SEC 20-F 2024 (ifrs-full) convertido con el tipo de cambio implícito de la hoja; la hoja copiaba el diluido (escala de ADS de la hoja)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J21",
+  "antes": 117.3,
+  "despues": 120.56,
+  "motivo": "Utilidad consolidada Dec '24 con minoritarios (ProfitLoss): SEC 20-F 2024 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "K40",
+  "antes": -2216,
+  "despues": 38.37,
+  "motivo": "Cambio neto de caja Dec '25: SEC 20-F 2025 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (0.1790 USD por unidad)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "K23",
+  "antes": 1.48,
+  "despues": 1.49,
+  "motivo": "EPS básico Dec '25: SEC 20-F 2025 (ifrs-full) convertido con el tipo de cambio implícito de la hoja; la hoja copiaba el diluido (escala de ADS de la hoja)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "K21",
+  "antes": 134.7,
+  "despues": 137.53,
+  "motivo": "Utilidad consolidada Dec '25 con minoritarios (ProfitLoss): SEC 20-F 2025 (ifrs-full) convertido con el tipo de cambio implícito de la hoja."
+ }
+]

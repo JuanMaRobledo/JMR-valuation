@@ -1,0 +1,63 @@
+{
+ "sheet_id": "1nlN8qDy9BipM5IWwGE5Fgf6VKpyYQScLXIPvqtAE9Oo",
+ "fecha": "2026-10-03",
+ "celdas": [
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "E40",
+   "antes": 1020,
+   "despues": "",
+   "motivo": "Cambio neto de caja —: valor de relleno de la plantilla y sin dato en la SEC; se deja vacío.",
+   "vigente": 1020
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "F40",
+   "antes": 1825,
+   "despues": "",
+   "motivo": "Cambio neto de caja —: valor de relleno de la plantilla y sin dato en la SEC; se deja vacío.",
+   "vigente": 1825
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "G40",
+   "antes": -608,
+   "despues": 615.52,
+   "motivo": "Cambio neto de caja Dec '21: SEC 20-F 2021 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (1.0943 USD por unidad).",
+   "vigente": -608
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "H40",
+   "antes": 443,
+   "despues": -295.67,
+   "motivo": "Cambio neto de caja Dec '22: SEC 20-F 2022 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (1.0481 USD por unidad).",
+   "vigente": 443
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "I40",
+   "antes": 2896,
+   "despues": 137.61,
+   "motivo": "Cambio neto de caja Dec '23: SEC 20-F 2023 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (1.1134 USD por unidad).",
+   "vigente": 2896
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "J40",
+   "antes": 481,
+   "despues": 488.55,
+   "motivo": "Cambio neto de caja Dec '24: SEC 20-F 2024 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (1.1367 USD por unidad).",
+   "vigente": 481
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K40",
+   "antes": -2216,
+   "despues": 115.22,
+   "motivo": "Cambio neto de caja Dec '25: SEC 20-F 2025 (ifrs-full) convertido con el tipo de cambio implícito de la hoja (1.2065 USD por unidad).",
+   "vigente": -2216
+  }
+ ],
+ "omitidas": []
+}
