@@ -273,12 +273,13 @@
   ]
  ],
  "arrendamientos": {
-  "vp": 2797.996925616218,
-  "ajuste_ebit": 151.1114527093091,
-  "margen_pp": 0.0004987670485833882,
-  "capital_ventas": 0.009235227664838823,
-  "cierre": "2026-01-25",
-  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+  "vp": 5224.64012341325,
+  "ajuste_ebit": 156.0327160533409,
+  "margen_pp": 0.000515010450055586,
+  "capital_ventas": 0.017244744111341883,
+  "cierre": "2026-07-26",
+  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-07-26",
+  "informe": "10-Q"
  },
  "justificacion": [
   [

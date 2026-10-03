@@ -65,8 +65,8 @@
     "p75": 48.03
    },
    "justificado": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 28.05,
+    "Base": 78.42,
     "Optimista": null
    },
    "actual_J": {
@@ -124,8 +124,8 @@
     "p75": 111.93
    },
    "justificado": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 31.66,
+    "Base": 94.08,
     "Optimista": null
    },
    "actual_J": {
@@ -193,8 +193,8 @@
     "p75": 104.25
    },
    "justificado": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 24.79,
+    "Base": 58.84,
     "Optimista": null
    },
    "actual_J": {
@@ -252,8 +252,8 @@
     "p75": 93.77
    },
    "justificado": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 27.02,
+    "Base": 62.72,
     "Optimista": null
    },
    "actual_J": {
@@ -311,8 +311,8 @@
     "p75": 128.23
    },
    "justificado": {
-    "Conservador": null,
-    "Base": null,
+    "Conservador": 26.75,
+    "Base": 62.13,
     "Optimista": null
    },
    "actual_J": {
@@ -324,48 +324,48 @@
  },
  "justificado": {
   "Conservador": {
-   "g": 0.12142857142857141,
-   "g_años_4_10": 0.19285714285714284,
+   "g": 0.06628488881729214,
+   "g_años_4_10": 0.08256977763458426,
    "g_perpetuidad": 0.05,
-   "wacc_4_10": 0.0999857142857143,
+   "wacc_4_10": 0.09996466651379354,
    "ke": 0.10575000000000001,
-   "roe_fy3": 0.7439112810987671,
-   "fcff_ebitda": 1.0105824507738297,
-   "fcfe_ocf": 0.991615574477442,
+   "roe_fy3": 0.8029759544109194,
+   "fcff_ebitda": 0.8860564169001146,
+   "fcfe_ocf": 0.9900775713340005,
    "multiplos": {
-    "EV/FCFF": null,
-    "P/FCFE": null,
-    "P/E": null,
-    "EV/EBITDA": null,
-    "P/OCF": null
+    "EV/FCFF": 31.659499015281682,
+    "P/FCFE": 27.01841846791751,
+    "P/E": 24.788074141506343,
+    "EV/EBITDA": 28.052102258333193,
+    "P/OCF": 26.750330138001477
    }
   },
   "Base": {
-   "g": 0.1357142857142857,
-   "g_años_4_10": 0.22142857142857142,
+   "g": 0.08839548833469094,
+   "g_años_4_10": 0.12679097666938188,
    "g_perpetuidad": 0.05,
-   "wacc_4_10": 0.0999857142857143,
+   "wacc_4_10": 0.09996466651379354,
    "ke": 0.10575000000000001,
-   "roe_fy3": 1.0338190053851197,
-   "fcff_ebitda": 1.0141867704868581,
-   "fcfe_ocf": 0.991916218995178,
+   "roe_fy3": 1.4287449593364765,
+   "fcff_ebitda": 0.8335711328509731,
+   "fcfe_ocf": 0.9906149817916793,
    "multiplos": {
-    "EV/FCFF": null,
-    "P/FCFE": null,
-    "P/E": null,
-    "EV/EBITDA": null,
-    "P/OCF": null
+    "EV/FCFF": 94.07716533406482,
+    "P/FCFE": 62.7154200201638,
+    "P/E": 58.835259224095466,
+    "EV/EBITDA": 78.4200092829247,
+    "P/OCF": 62.126834661332076
    }
   },
   "Optimista": {
-   "g": 0.17857142857142858,
-   "g_años_4_10": 0.30714285714285716,
+   "g": 0.10830408893842877,
+   "g_años_4_10": 0.16660817787685753,
    "g_perpetuidad": 0.05,
-   "wacc_4_10": 0.0999857142857143,
+   "wacc_4_10": 0.09996466651379354,
    "ke": 0.10575000000000001,
-   "roe_fy3": 1.2915140425887004,
-   "fcff_ebitda": 1.023400787872678,
-   "fcfe_ocf": 0.9924271495940827,
+   "roe_fy3": 2.053311377798751,
+   "fcff_ebitda": 0.7967292861260548,
+   "fcfe_ocf": 0.990933470578764,
    "multiplos": {
     "EV/FCFF": null,
     "P/FCFE": null,
@@ -544,5 +544,5 @@
    "ev_fcff": 40.11090169326972
   }
  ],
- "justificado_recalculado": "2026-09-30"
+ "justificado_recalculado": "2026-10-03"
 }

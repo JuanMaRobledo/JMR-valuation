@@ -1,0 +1,97 @@
+{
+ "ticker": "EPAM",
+ "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+ "fecha": "2026-10-03",
+ "sec": {
+  "trimestre": "2026-06-30",
+  "forma": "10-Q",
+  "cierre_10k": "2025-12-31",
+  "tabla_al": "2025-12-31",
+  "escala": 1.0722423527429004,
+  "gasto_ltm": 55.93566681553889,
+  "gasto_def": "gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)",
+  "calendario": null,
+  "fraccion": 0.0,
+  "anios": [
+   44.66425520350552,
+   34.72027962416786,
+   27.89009583719558,
+   16.322745335805173,
+   11.02050690149153
+  ],
+  "despues": 3.5684225499283757,
+  "total": 138.18630545209402,
+  "pasivo_balance": 127.243
+ },
+ "vp_antes": 112.62580405288914,
+ "vp": 120.76185907441949,
+ "ajuste_ebit_antes": 29.674839189422176,
+ "ajuste_ebit": 31.7836281851161,
+ "margen_pp_antes": 0.005283322803322623,
+ "margen_pp": 0.005658772621844874,
+ "cambios": [
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 52.2,
+   "despues": 55.936,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 41.655,
+   "despues": 44.664,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 32.381,
+   "despues": 34.72,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 26.011,
+   "despues": 27.89,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 15.223,
+   "despues": 16.323,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 10.278,
+   "despues": 11.021,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 3.328,
+   "despues": 3.568,
+   "motivo": "Arrendamientos al último informe (10-Q al 2026-06-30, SEC XBRL): gasto de arrendamiento de los últimos doce meses (gasto del ejercicio × 1.072 (el 10-Q no publica el gasto acumulado)) y compromisos en años móviles tal como se publican. La tabla de vencimientos más reciente es del 2025-12-31: se escaló por 1.072 = pasivo de arrendamientos al 2026-06-30 / pasivo al 2025-12-31."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.110283,
+   "despues": 0.110658,
+   "motivo": "Margen en base ajustada por arrendamientos: ajuste del EBIT 31.8 / ventas 5616.7 = 0.57 pp (antes 0.53 pp al 2025-12-31); diferencia +0.04 pp."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.130283,
+   "despues": 0.130658,
+   "motivo": "Margen en base ajustada por arrendamientos: ajuste del EBIT 31.8 / ventas 5616.7 = 0.57 pp (antes 0.53 pp al 2025-12-31); diferencia +0.04 pp."
+  }
+ ]
+}
