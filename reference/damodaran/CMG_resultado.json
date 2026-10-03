@@ -16,9 +16,9 @@
   "marginY1Cons": 0.16333,
   "marginY1Base": 0.16333,
   "marginY1Opt": 0.16333,
-  "marginCons": 0.15287805664884413,
-  "marginBase": 0.17287805664884412,
-  "marginOpt": 0.1928780566488441,
+  "marginCons": 0.1533301787351312,
+  "marginBase": 0.17333017873513118,
+  "marginOpt": 0.19333017873513117,
   "salesToCapital2": 1.51,
   "wacc": 0.0866043947296408,
   "costoPatrimonio": 0.09226999999999999,
@@ -29,9 +29,9 @@
   "salesToCapital": 1.51
  },
  "financiero": false,
- "dcf_sin_exceso": 16.974843545738242,
+ "dcf_sin_exceso": 17.032873459687423,
  "precio": 32.36,
- "dcf_base": 23.77072376572562,
+ "dcf_base": 23.844906700587202,
  "g_ref": 0.07200000000000002,
  "m_base": 0.18333,
  "s2c": 1.51,
@@ -758,14 +758,14 @@
    "beta": 0.95,
    "ke": 0.09226999999999999,
    "wacc": 0.0866043947296408,
-   "dcf_base": 25.11537162512411
+   "dcf_base": 25.19469118456141
   },
   {
    "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
    "beta": 0.8574521445840182,
    "ke": 0.08814236564844721,
    "wacc": 0.08295652792319887,
-   "dcf_base": 25.745129180106588
+   "dcf_base": 25.826215851132524
   }
  ],
  "sensibilidad": {
@@ -929,5 +929,5 @@
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 25.11537162512411
+ "motor_tecnico": 25.19469118456141
 }

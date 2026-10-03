@@ -1,0 +1,156 @@
+[
+ {
+  "hoja": "Income Statement",
+  "celda": "D23",
+  "antes": 1.19,
+  "despues": 1.21,
+  "motivo": "Basic EPS Dec '18: SEC XBRL (EarningsPerShareBasic) al 2018-12-31; antes 1.19."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E23",
+  "antes": 3.33,
+  "despues": 3.38,
+  "motivo": "Basic EPS Dec '19: SEC XBRL (EarningsPerShareBasic) al 2019-12-31; antes 3.33."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "G23",
+  "antes": 0.73,
+  "despues": 0.69,
+  "motivo": "Basic EPS Dec '21: SEC XBRL (EarningsPerShareBasic) al 2021-12-31; antes 0.73."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "H23",
+  "antes": 0.48,
+  "despues": 0.45,
+  "motivo": "Basic EPS Dec '22: SEC XBRL (EarningsPerShareBasic) al 2022-12-31; antes 0.48."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L16",
+  "antes": 43673,
+  "despues": 45216.0,
+  "motivo": "Total Assets LTM: SEC XBRL (Assets) al 2026-06-30; antes 43673."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "I35",
+  "antes": 19282,
+  "despues": 19530.0,
+  "motivo": "Total Shareholders' Equity Dec '23: SEC XBRL (StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest) al 2023-12-31; antes 19282."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "J35",
+  "antes": 21770,
+  "despues": 22003.0,
+  "motivo": "Total Shareholders' Equity Dec '24: SEC XBRL (StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest) al 2024-12-31; antes 21770."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "K35",
+  "antes": 24233,
+  "despues": 24472.0,
+  "motivo": "Total Shareholders' Equity Dec '25: SEC XBRL (StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest) al 2025-12-31; antes 24233."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L36",
+  "antes": 43673,
+  "despues": 45216.0,
+  "motivo": "Total Liabilities and Shareholders' Equity LTM: SEC XBRL (LiabilitiesAndStockholdersEquity) al 2026-06-30; antes 43673."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L10",
+  "antes": 8794,
+  "despues": 7972.0,
+  "motivo": "Total Current Assets LTM: SEC XBRL (AssetsCurrent) al 2026-06-30; antes 8794."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L24",
+  "antes": 5439,
+  "despues": 6428.0,
+  "motivo": "Total Current Liabilities LTM: SEC XBRL (LiabilitiesCurrent) al 2026-06-30; antes 5439."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L11",
+  "antes": 4036,
+  "despues": 4126.0,
+  "motivo": "Net Property, Plant & Equipment LTM: SEC XBRL (PropertyPlantAndEquipmentNet) al 2026-06-30; antes 4036."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "B40",
+  "antes": 149,
+  "despues": -123.0,
+  "motivo": "Net Change in Cash Dec '16: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2016-12-31; antes 149."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "C40",
+  "antes": 1286.2,
+  "despues": 530.0,
+  "motivo": "Net Change in Cash Dec '17: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2017-12-31; antes 1286.2."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "D40",
+  "antes": -661,
+  "despues": -188.0,
+  "motivo": "Net Change in Cash Dec '18: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2018-12-31; antes -661."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E40",
+  "antes": 1020,
+  "despues": -222.0,
+  "motivo": "Net Change in Cash Dec '19: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2019-12-31; antes 1020."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "F40",
+  "antes": 1825,
+  "despues": 1388.0,
+  "motivo": "Net Change in Cash Dec '20: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2020-12-31; antes 1825."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "G40",
+  "antes": -608,
+  "despues": 173.0,
+  "motivo": "Net Change in Cash Dec '21: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2021-12-31; antes -608."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "H40",
+  "antes": 443,
+  "despues": -1042.0,
+  "motivo": "Net Change in Cash Dec '22: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2022-12-31; antes 443."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "I40",
+  "antes": 2896,
+  "despues": -70.0,
+  "motivo": "Net Change in Cash Dec '23: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2023-12-31; antes 2896."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "J40",
+  "antes": 481,
+  "despues": -450.0,
+  "motivo": "Net Change in Cash Dec '24: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2024-12-31; antes 481."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "K40",
+  "antes": -2216,
+  "despues": 1541.0,
+  "motivo": "Net Change in Cash Dec '25: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2025-12-31; antes -2216."
+ }
+]

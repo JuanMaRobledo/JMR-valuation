@@ -1,0 +1,177 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "D3",
+  "columna": "Dec '18",
+  "hoja_valor": 11270,
+  "sec": 10433.0,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "E3",
+  "columna": "Dec '19",
+  "hoja_valor": 14147,
+  "sec": 13000.0,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 4.52,
+  "sec": 4.62,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "D24",
+  "columna": "Dec '18",
+  "hoja_valor": 2.08,
+  "sec": 0.0,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "G24",
+  "columna": "Dec '21",
+  "hoja_valor": -0.26,
+  "sec": -0.29,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "H24",
+  "columna": "Dec '22",
+  "hoja_valor": -4.63,
+  "sec": -4.65,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "I24",
+  "columna": "Dec '23",
+  "hoja_valor": 0.9,
+  "sec": 0.87,
+  "fecha_sec": "2023-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "J24",
+  "columna": "Dec '24",
+  "hoja_valor": 4.58,
+  "sec": 4.56,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 4.52,
+  "sec": 4.56,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "C34",
+  "columna": "Dec '17",
+  "hoja_valor": 0,
+  "sec": -8557.0,
+  "fecha_sec": "2017-12-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "C35",
+  "columna": "Dec '17",
+  "hoja_valor": 0,
+  "sec": -8557.0,
+  "fecha_sec": "2017-12-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "D35",
+  "columna": "Dec '18",
+  "hoja_valor": 6792,
+  "sec": -7385.0,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "L11",
+  "columna": "LTM",
+  "hoja_valor": 1809,
+  "sec": 1982.0,
+  "fecha_sec": "2024-09-30",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ }
+]

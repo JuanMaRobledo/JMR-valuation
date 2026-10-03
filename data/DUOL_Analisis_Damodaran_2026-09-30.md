@@ -9,11 +9,11 @@ analysis_date: "2026-09-30"
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
 **Valor intrínseco principal · DCF Base hoy: US$115,16 por acción** (Base · La audiencia crece y la monetización se recupera en parte).
 
-**Complemento · DCF esperado por probabilidades: US$109,24.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$60,21–149,46. El MOS 35% se aplica al esperado: US$71,01. El antiguo caso técnico de la hoja (US$115,19) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$109,24.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$60,21–149,46. El MOS 35% se aplica al esperado: US$71,01. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, flujos ltm, ventas/capital contrastado con la historia y la industria (28 celdas, con respaldo). DCF esperado US$118,85 → US$109,11. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, flujos ltm, ventas/capital contrastado con la historia y la industria (28 celdas, con respaldo). DCF esperado US$118,85 → US$109,24. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$115,19 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$115,16 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -58,7 +58,7 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$1.145 millones. Con el crecimiento de la Base llegan a US$1.974 millones en el año 5 y a US$2.745 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 20,1% en el año 1 a 27,1% al final, y se descuentan impuestos (9,6% al principio y 25,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$236 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$91 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$145 millones el primer año. Cada flujo se trae a hoy con el costo de capital (10,94% al principio, 9,22% al final): los diez años suman US$1.881 millones. Después del año 10 se supone que la empresa crece 4,99% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,2%; esa perpetuidad vale hoy US$2.356 millones, 56% del total. Flujos más terminal dan el valor de las operaciones, US$4.237 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$1.314 millones, más activos no operativos por US$103 millones, menos deuda por US$91 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$5.562 millones que, repartido entre 48,3 millones de acciones, da US$115,16 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
-**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 35,83× (peso 25% dentro de los múltiplos); EV/FCFF 25,12× (peso 38% dentro de los múltiplos); P/E 24,84× (peso 12% dentro de los múltiplos); P/FCFE 23,89× (peso 12% dentro de los múltiplos); P/OCF 22,89× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (11,0%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 34,38× (peso 25% dentro de los múltiplos); EV/FCFF 24,70× (peso 38% dentro de los múltiplos); P/E 24,96× (peso 12% dentro de los múltiplos); P/FCFE 23,60× (peso 12% dentro de los múltiplos); P/OCF 22,08× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (11,0%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
 Sensibilidad del DCF Base (US$115,16; cada fila es un DCF completo con un solo supuesto cambiado):
 
@@ -96,36 +96,24 @@ Sensibilidad del DCF Base (US$115,16; cada fila es un DCF completo con un solo s
 
 **Riesgo.** La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$115,03 frente a US$109,77) es menor que la que producen las historias.
 
-| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF técnico anterior por acción |
+| Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,35 | 11,0% | 10,9% | US$121,46 |
-| Bottom-up del sector (Software (Internet), reapalancada) | 1,60 | 12,1% | 12,1% | US$115,76 |
-
-
-### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
-
-| Supuesto | Conservador | Base | Optimista |
-|---|---:|---:|---:|
-| Crecimiento año 1 | 9,5% | 13,5% | 19,2% |
-| Crecimiento años 2–5 | 8,5% | 12,5% | 17,2% |
-| Margen año 1 (base ajustada del modelo) | 20,1% | 20,1% | 20,1% |
-| Margen objetivo | 23,1% | 27,1% | 32,1% |
-
-Ventas/capital: 1,8x en años 1–5 y 1,8x en 6–10. WACC: 10,9%. Ke: 11,0%. Impuesto efectivo: 9,6%. Convergencia: 7 años. Estos parámetros son escenarios del analista, no cifras reportadas. Los casos Conservador, Base y Optimista de la hoja ya no son escenarios activos: sirven de calibración y de supuestos auxiliares de múltiplos. No confundir el antiguo caso técnico Base con la tesis Base.
+| Hoja (regresión o la cargada en el libro) | 1,35 | 11,0% | 10,9% | US$121,43 |
+| Bottom-up del sector (Software (Internet), reapalancada) | 1,60 | 12,1% | 12,1% | US$115,73 |
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
-| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF técnico anterior | DCF con ROIC terminal = costo de capital |
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 36,6% | 29,3% | 9,2% | = costo de capital | US$115,19 | US$121,46 |
+| Sin ventaja defendible | 36,6% | 29,3% | 9,2% | = costo de capital | US$115,16 | US$121,43 |
 
 Fuentes de ventaja: Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos. Evidencia: ROIC por encima del costo de capital en 2021-2026 (serie volátil). Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$115,16 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$109,24. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene aplicando descuentos al antiguo caso técnico de la hoja (US$115,19) ni mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$115,16 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$109,24. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -247,14 +235,14 @@ Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historia
 
 DCF esperado = 0,40 × 115,162341 + 0,30 × 90,867880 + 0,10 × 60,214818 + 0,20 × 149,464501 = US$109,239683 ≈ US$109,24. Los aportes son US$46,06 + US$27,26 + US$6,02 + US$29,89 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 109,239683 × 0,65 = US$71,005794 ≈ US$71,01. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 109,239683 × 0,65 = US$71,005794 ≈ US$71,01. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: la hoja calcula cada historia en 'Valuation output' con la estructura de Damodaran: Base en las filas 2–42 (valor por acción B35), Conservadora 53–93 (B86), Optimista 104–144 (B137) y Disrupción 157–197 (B190). La pestaña «Escenarios e historias» guarda los supuestos de cada historia y resume los resultados: A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$115,16, es el valor intrínseco principal. El DCF esperado de US$109,24 combina las cuatro tesis con sus probabilidades y se presenta como complemento. La antigua calibración técnica Conservador/Base/Optimista de la hoja no define estas tesis. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$115,16, es el valor intrínseco principal. El DCF esperado de US$109,24 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: La audiencia crece y la monetización se recupera en parte
@@ -307,9 +295,9 @@ La tesis Base es la trayectoria central defendida y su DCF, US$115,16, es el val
 
 Base (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. Conservadora (30%) prolonga la brecha actual entre usuarios y reservas. Disrupción (10%) es el riesgo de sustitución por asistentes generalistas. Optimista (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
-Sensibilidad del DCF técnico anterior (beta 1,35; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
+Sensibilidad del DCF Base (beta 1,35; US$ por acción; filas = crecimiento de los años 1-5, columnas = margen operativo objetivo):
 
-Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF técnico anterior de la hoja.
+Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimiento es constante en años 1–5; si la hoja tiene un año 1 distinto de años 2–5, el centro puede diferir del DCF Base de la hoja.
 
 | Crecimiento \ Margen | 23,1% | 25,1% | 27,1% | 29,1% | 31,1% |
 |---|---:|---:|---:|---:|---:|

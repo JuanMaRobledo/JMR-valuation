@@ -1,0 +1,543 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "L3",
+  "columna": "LTM",
+  "hoja_valor": 34128,
+  "sec": 33734.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Operating Profit",
+  "celda": "L12",
+  "columna": "LTM",
+  "hoja_valor": 5946,
+  "sec": 6023.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "OperatingIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Income Before Provision for Income Taxes",
+  "celda": "L19",
+  "columna": "LTM",
+  "hoja_valor": 5863,
+  "sec": 3366.0,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "L20",
+  "columna": "LTM",
+  "hoja_valor": 961,
+  "sec": 1023.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "L21",
+  "columna": "LTM",
+  "hoja_valor": 4902,
+  "sec": 5059.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "L22",
+  "columna": "LTM",
+  "hoja_valor": 4902,
+  "sec": 5059.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 5.06,
+  "sec": 5.37,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 5.06,
+  "sec": 5.33,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Cash and Cash Equivalents",
+  "celda": "J3",
+  "columna": "Dec '24",
+  "hoja_valor": 6561,
+  "sec": 6662.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "CashAndCashEquivalentsAtCarryingValue"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Cash and Cash Equivalents",
+  "celda": "L3",
+  "columna": "LTM",
+  "hoja_valor": 8306,
+  "sec": 6977.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "CashAndCashEquivalentsAtCarryingValue"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "J16",
+  "columna": "Dec '24",
+  "hoja_valor": 81611,
+  "sec": 78725.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "L16",
+  "columna": "LTM",
+  "hoja_valor": 82737,
+  "sec": 80546.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities",
+  "celda": "J29",
+  "columna": "Dec '24",
+  "hoja_valor": 61194,
+  "sec": 58308.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "Liabilities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities",
+  "celda": "L29",
+  "columna": "LTM",
+  "hoja_valor": 62917,
+  "sec": 60522.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "Liabilities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "L34",
+  "columna": "LTM",
+  "hoja_valor": 19820,
+  "sec": 20024.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "L35",
+  "columna": "LTM",
+  "hoja_valor": 19820,
+  "sec": 20024.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "J36",
+  "columna": "Dec '24",
+  "hoja_valor": 81611,
+  "sec": 78725.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "L36",
+  "columna": "LTM",
+  "hoja_valor": 82737,
+  "sec": 80546.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Assets",
+  "celda": "J10",
+  "columna": "Dec '24",
+  "hoja_valor": 61092,
+  "sec": 58206.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "AssetsCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Assets",
+  "celda": "L10",
+  "columna": "LTM",
+  "hoja_valor": 62346,
+  "sec": 59995.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "AssetsCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "J24",
+  "columna": "Dec '24",
+  "hoja_valor": 48376,
+  "sec": 45490.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 48406,
+  "sec": 47637.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "L11",
+  "columna": "LTM",
+  "hoja_valor": 1731,
+  "sec": 1700.0,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "E13",
+  "columna": "Dec '19",
+  "hoja_valor": 4561,
+  "sec": 4071.0,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "F13",
+  "columna": "Dec '20",
+  "hoja_valor": 5854,
+  "sec": 6219.0,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "G13",
+  "columna": "Dec '21",
+  "hoja_valor": 6340,
+  "sec": 5797.0,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "L13",
+  "columna": "LTM",
+  "hoja_valor": 7475,
+  "sec": 6390.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "B22",
+  "columna": "Dec '16",
+  "hoja_valor": -4999,
+  "sec": -5904.0,
+  "fecha_sec": "2016-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "C22",
+  "columna": "Dec '17",
+  "hoja_valor": -5358,
+  "sec": -4485.0,
+  "fecha_sec": "2017-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "D22",
+  "columna": "Dec '18",
+  "hoja_valor": 840,
+  "sec": 821.0,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "F22",
+  "columna": "Dec '20",
+  "hoja_valor": -16218,
+  "sec": -16545.0,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "G22",
+  "columna": "Dec '21",
+  "hoja_valor": -5485,
+  "sec": -5149.0,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "H22",
+  "columna": "Dec '22",
+  "hoja_valor": -3421,
+  "sec": -3328.0,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "J22",
+  "columna": "Dec '24",
+  "hoja_valor": 1589,
+  "sec": 1689.0,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "L22",
+  "columna": "LTM",
+  "hoja_valor": -511,
+  "sec": 2334.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "D34",
+  "columna": "Dec '18",
+  "hoja_valor": -1262,
+  "sec": -1240.0,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "E34",
+  "columna": "Dec '19",
+  "hoja_valor": 3688,
+  "sec": 4187.0,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "G34",
+  "columna": "Dec '21",
+  "hoja_valor": -764,
+  "sec": -557.0,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "H34",
+  "columna": "Dec '22",
+  "hoja_valor": -1110,
+  "sec": -1203.0,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "L34",
+  "columna": "LTM",
+  "hoja_valor": -3934,
+  "sec": -7511.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "L40",
+  "columna": "LTM",
+  "hoja_valor": 3030,
+  "sec": 1342.0,
+  "fecha_sec": "2026-03-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ }
+]

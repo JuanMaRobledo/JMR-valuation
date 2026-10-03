@@ -1,0 +1,180 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "L3",
+  "columna": "LTM",
+  "hoja_valor": 4940,
+  "sec": 5027.815,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Operating Profit",
+  "celda": "L12",
+  "columna": "LTM",
+  "hoja_valor": 954,
+  "sec": 981.231,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "OperatingIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Income Before Provision for Income Taxes",
+  "celda": "L19",
+  "columna": "LTM",
+  "hoja_valor": 770.3,
+  "sec": 765.476,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "L21",
+  "columna": "LTM",
+  "hoja_valor": 601.7,
+  "sec": 596.523,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "L22",
+  "columna": "LTM",
+  "hoja_valor": 601.7,
+  "sec": 596.523,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 17.57,
+  "sec": 17.74,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 17.57,
+  "sec": 17.64,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "L16",
+  "columna": "LTM",
+  "hoja_valor": 1716.5,
+  "sec": 1763.322,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false,
+  "nota": "LTM de la hoja desfasado frente al último 10-Q: se revisa aparte"
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "L36",
+  "columna": "LTM",
+  "hoja_valor": 1716.5,
+  "sec": 1763.322,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false,
+  "nota": "LTM de la hoja desfasado frente al último 10-Q: se revisa aparte"
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Assets",
+  "celda": "L10",
+  "columna": "LTM",
+  "hoja_valor": 894.2,
+  "sec": 905.419,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "AssetsCurrent"
+  ],
+  "se_corrige": false,
+  "nota": "LTM de la hoja desfasado frente al último 10-Q: se revisa aparte"
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 541.6,
+  "sec": 588.67,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false,
+  "nota": "LTM de la hoja desfasado frente al último 10-Q: se revisa aparte"
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "L11",
+  "columna": "LTM",
+  "hoja_valor": 324,
+  "sec": 374.446,
+  "fecha_sec": "2026-06-14",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false,
+  "nota": "LTM de la hoja desfasado frente al último 10-Q: se revisa aparte"
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Operating Activities",
+  "celda": "C13",
+  "columna": "Dec '17",
+  "hoja_valor": 339,
+  "sec": 341.261,
+  "fecha_sec": "2017-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInOperatingActivities"
+  ],
+  "se_corrige": false
+ }
+]

@@ -1,0 +1,127 @@
+{
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-10-03",
+ "celdas": [
+  {
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "antes": 0.35,
+   "despues": 0.39,
+   "motivo": "Basic EPS Dec '23: SEC XBRL (EarningsPerShareBasic) al 2023-12-31; antes 0.35.",
+   "vigente": 0.35
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J23",
+   "antes": 1.88,
+   "despues": 2.04,
+   "motivo": "Basic EPS Dec '24: SEC XBRL (EarningsPerShareBasic) al 2024-12-31; antes 1.88.",
+   "vigente": 1.88
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K23",
+   "antes": 8.57,
+   "despues": 9.05,
+   "motivo": "Basic EPS Dec '25: SEC XBRL (EarningsPerShareBasic) al 2025-12-31; antes 8.57.",
+   "vigente": 8.57
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L16",
+   "antes": 1992.2,
+   "despues": 2073.95,
+   "motivo": "Total Assets LTM: SEC XBRL (Assets) al 2026-06-30; antes 1992.2.",
+   "vigente": 1992.2
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L29",
+   "antes": 645.2,
+   "despues": 664.21,
+   "motivo": "Total Liabilities LTM: SEC XBRL (Liabilities) al 2026-06-30; antes 645.2.",
+   "vigente": 645.2
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L36",
+   "antes": 1992.2,
+   "despues": 2073.95,
+   "motivo": "Total Liabilities and Shareholders' Equity LTM: SEC XBRL (LiabilitiesAndStockholdersEquity) al 2026-06-30; antes 1992.2.",
+   "vigente": 1992.2
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L10",
+   "antes": 1436.6,
+   "despues": 1571.11,
+   "motivo": "Total Current Assets LTM: SEC XBRL (AssetsCurrent) al 2026-06-30; antes 1436.6.",
+   "vigente": 1436.6
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L24",
+   "antes": 551.1,
+   "despues": 577.83,
+   "motivo": "Total Current Liabilities LTM: SEC XBRL (LiabilitiesCurrent) al 2026-06-30; antes 551.1.",
+   "vigente": 551.1
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L11",
+   "antes": 36.3,
+   "despues": 42.62,
+   "motivo": "Net Property, Plant & Equipment LTM: SEC XBRL (PropertyPlantAndEquipmentNet) al 2026-06-30; antes 36.3.",
+   "vigente": 36.3
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "F40",
+   "antes": 1825,
+   "despues": 60.65,
+   "motivo": "Net Change in Cash Dec '20: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2020-12-31; antes 1825.",
+   "vigente": 1825
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "G40",
+   "antes": -608,
+   "despues": 433.43,
+   "motivo": "Net Change in Cash Dec '21: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2021-12-31; antes -608.",
+   "vigente": -608
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "H40",
+   "antes": 443,
+   "despues": 54.26,
+   "motivo": "Net Change in Cash Dec '22: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2022-12-31; antes 443.",
+   "vigente": 443
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "I40",
+   "antes": 2896,
+   "despues": 142.16,
+   "motivo": "Net Change in Cash Dec '23: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2023-12-31; antes 2896.",
+   "vigente": 2896
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "J40",
+   "antes": 481,
+   "despues": 38.18,
+   "motivo": "Net Change in Cash Dec '24: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2024-12-31; antes 481.",
+   "vigente": 481
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K40",
+   "antes": -2216,
+   "despues": 250.6,
+   "motivo": "Net Change in Cash Dec '25: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2025-12-31; antes -2216.",
+   "vigente": -2216
+  }
+ ],
+ "omitidas": []
+}

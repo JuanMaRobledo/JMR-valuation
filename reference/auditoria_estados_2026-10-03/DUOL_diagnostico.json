@@ -1,0 +1,147 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 8.5,
+  "sec": 8.93,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 8.5,
+  "sec": 8.46,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Cash and Cash Equivalents",
+  "celda": "F3",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 120.49,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "CashAndCashEquivalentsAtCarryingValue"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "F16",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 175.739,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities",
+  "celda": "F29",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 73.821,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "Liabilities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "F34",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": -80.691,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "F35",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": -80.691,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "F36",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 175.739,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Assets",
+  "celda": "F10",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 158.38,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "AssetsCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "F24",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 65.69,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "F11",
+  "columna": "Dec '20",
+  "hoja_valor": 0,
+  "sec": 6.428,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ }
+]

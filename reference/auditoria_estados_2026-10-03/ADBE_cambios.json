@@ -1,0 +1,30 @@
+[
+ {
+  "hoja": "Income Statement",
+  "celda": "D23",
+  "antes": 5.2,
+  "despues": 5.28,
+  "motivo": "Basic EPS Nov '18: SEC XBRL (EarningsPerShareBasic) al 2018-11-30; antes 5.2."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E23",
+  "antes": 6,
+  "despues": 6.07,
+  "motivo": "Basic EPS Nov '19: SEC XBRL (EarningsPerShareBasic) al 2019-11-29; antes 6."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "F23",
+  "antes": 10.83,
+  "despues": 10.94,
+  "motivo": "Basic EPS Nov '20: SEC XBRL (EarningsPerShareBasic) al 2020-11-27; antes 10.83."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E40",
+  "antes": 1020,
+  "despues": 1007.0,
+  "motivo": "Net Change in Cash Nov '19: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2019-11-29; antes 1020."
+ }
+]

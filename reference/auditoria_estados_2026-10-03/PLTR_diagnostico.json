@@ -1,0 +1,257 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Income Before Provision for Income Taxes",
+  "celda": "G19",
+  "columna": "Dec '21",
+  "hoja_valor": -518.346,
+  "sec": -488.494,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "G20",
+  "columna": "Dec '21",
+  "hoja_valor": 2.033,
+  "sec": 31.885,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "D22",
+  "columna": "Dec '18",
+  "hoja_valor": -598.125,
+  "sec": -580.027,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "E22",
+  "columna": "Dec '19",
+  "hoja_valor": -588.127,
+  "sec": -579.646,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "E35",
+  "columna": "Dec '19",
+  "hoja_valor": 146.589,
+  "sec": -1980.642,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "G11",
+  "columna": "Dec '21",
+  "hoja_valor": 32,
+  "sec": 31.304,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "H11",
+  "columna": "Dec '22",
+  "hoja_valor": 34,
+  "sec": 69.17,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "I11",
+  "columna": "Dec '23",
+  "hoja_valor": 52,
+  "sec": 47.758,
+  "fecha_sec": "2023-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "J11",
+  "columna": "Dec '24",
+  "hoja_valor": 55,
+  "sec": 39.638,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "K11",
+  "columna": "Dec '25",
+  "hoja_valor": 59,
+  "sec": 51.96,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "D34",
+  "columna": "Dec '18",
+  "hoja_valor": 96.48,
+  "sec": 46.154,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "E34",
+  "columna": "Dec '19",
+  "hoja_valor": 299.369,
+  "sec": 324.533,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "D40",
+  "columna": "Dec '18",
+  "hoja_valor": 50.684,
+  "sec": -3.345,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "E40",
+  "columna": "Dec '19",
+  "hoja_valor": 112.19,
+  "sec": 135.127,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "G40",
+  "columna": "Dec '21",
+  "hoja_valor": 242.69,
+  "sec": 238.768,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "H40",
+  "columna": "Dec '22",
+  "hoja_valor": 264.31,
+  "sec": 260.421,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "J40",
+  "columna": "Dec '24",
+  "hoja_valor": 2276.954,
+  "sec": 1269.829,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "K40",
+  "columna": "Dec '25",
+  "hoja_valor": -676.91,
+  "sec": -668.511,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "diferencia de definición (tipo de cambio o caja restringida)",
+  "se_corrige": false
+ }
+]

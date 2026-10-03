@@ -18,9 +18,9 @@
   "marginY1Cons": 0.142879,
   "marginY1Base": 0.142879,
   "marginY1Opt": 0.142879,
-  "marginCons": 0.16223497313500632,
-  "marginBase": 0.22223497313500631,
-  "marginOpt": 0.2622349731350063,
+  "marginCons": 0.1628786497773049,
+  "marginBase": 0.2228786497773049,
+  "marginOpt": 0.2628786497773049,
   "salesToCapital2": 3.1107,
   "wacc": 0.08190077834716511,
   "costoPatrimonio": 0.08568977362400426,
@@ -31,9 +31,9 @@
   "salesToCapital": 2.2948
  },
  "financiero": false,
- "dcf_sin_exceso": 97.06461434668896,
+ "dcf_sin_exceso": 97.35633524911982,
  "precio": 68.11,
- "dcf_base": 89.55986469860682,
+ "dcf_base": 89.82412064819795,
  "g_ref": 0.10950929019812498,
  "m_base": 0.212879,
  "s2c": 2.2948,
@@ -824,14 +824,14 @@
    "beta": 0.8024612920180328,
    "ke": 0.08568977362400426,
    "wacc": 0.08190077834716511,
-   "dcf_base": 97.06461434668896
+   "dcf_base": 97.35633524911982
   },
   {
    "enfoque": "Bottom-up del sector (Transportation, reapalancada)",
    "beta": 0.7622416675797307,
    "ke": 0.08389597837405599,
    "wacc": 0.08026724336315917,
-   "dcf_base": 97.99868600593952
+   "dcf_base": 98.29325724402037
   }
  ],
  "sensibilidad": {
@@ -995,5 +995,5 @@
  },
  "rd_vida": 3,
  "rd_ltm": 3741,
- "motor_tecnico": 97.06461434668896
+ "motor_tecnico": 97.35633524911982
 }

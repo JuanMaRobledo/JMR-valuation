@@ -1,0 +1,65 @@
+[
+ {
+  "hoja": "Income Statement",
+  "celda": "C23",
+  "antes": 5.83,
+  "despues": 6.05,
+  "motivo": "Basic EPS Dec '17: SEC XBRL (EarningsPerShareBasic) al 2017-12-31; antes 5.83."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "D23",
+  "antes": 8.35,
+  "despues": 8.65,
+  "motivo": "Basic EPS Dec '18: SEC XBRL (EarningsPerShareBasic) al 2018-12-30; antes 8.35."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E23",
+  "antes": 9.56,
+  "despues": 9.83,
+  "motivo": "Basic EPS Dec '19: SEC XBRL (EarningsPerShareBasic) al 2019-12-29; antes 9.56."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "C40",
+  "antes": 1286.2,
+  "despues": 60.44,
+  "motivo": "Net Change in Cash Dec '17: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2017-12-31; antes 1286.2."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "D40",
+  "antes": -661,
+  "despues": -17.43,
+  "motivo": "Net Change in Cash Dec '18: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2018-12-30; antes -661."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E40",
+  "antes": 1020,
+  "despues": 246.5,
+  "motivo": "Net Change in Cash Dec '19: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2019-12-29; antes 1020."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "I40",
+  "antes": 2896,
+  "despues": 7.93,
+  "motivo": "Net Change in Cash Dec '23: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2023-12-31; antes 2896."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "J40",
+  "antes": 481,
+  "despues": 59.29,
+  "motivo": "Net Change in Cash Dec '24: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2024-12-29; antes 481."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "K40",
+  "antes": -2216,
+  "despues": -28.44,
+  "motivo": "Net Change in Cash Dec '25: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2025-12-28; antes -2216."
+ }
+]

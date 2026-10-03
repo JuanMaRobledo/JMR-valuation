@@ -1,0 +1,249 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "G20",
+  "columna": "Dec '21",
+  "hoja_valor": -7.2,
+  "sec": -11.318,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "H20",
+  "columna": "Dec '22",
+  "hoja_valor": 1.7,
+  "sec": -1.18,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "G21",
+  "columna": "Dec '21",
+  "hoja_valor": -10.11,
+  "sec": -6.017,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "H21",
+  "columna": "Dec '22",
+  "hoja_valor": -25.97,
+  "sec": -23.105,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "G22",
+  "columna": "Dec '21",
+  "hoja_valor": -8.7,
+  "sec": -4.561,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "H22",
+  "columna": "Dec '22",
+  "hoja_valor": -24.1,
+  "sec": -21.229,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "G23",
+  "columna": "Dec '21",
+  "hoja_valor": -0.22,
+  "sec": -0.12,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "H23",
+  "columna": "Dec '22",
+  "hoja_valor": -0.61,
+  "sec": -0.54,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "diferencia sin evidencia de copia",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "G24",
+  "columna": "Dec '21",
+  "hoja_valor": -0.22,
+  "sec": -0.12,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "H24",
+  "columna": "Dec '22",
+  "hoja_valor": -0.61,
+  "sec": -0.54,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "G16",
+  "columna": "Dec '21",
+  "hoja_valor": 1457.6,
+  "sec": 1471.775,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "H16",
+  "columna": "Dec '22",
+  "hoja_valor": 1494.9,
+  "sec": 1511.95,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "H34",
+  "columna": "Dec '22",
+  "hoja_valor": 395.1,
+  "sec": 412.204,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "F35",
+  "columna": "Dec '20",
+  "hoja_valor": 434.49,
+  "sec": 444.587,
+  "fecha_sec": "2020-12-30",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "G35",
+  "columna": "Dec '21",
+  "hoja_valor": 435.6,
+  "sec": 449.805,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "H35",
+  "columna": "Dec '22",
+  "hoja_valor": 419.75,
+  "sec": 436.836,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "G36",
+  "columna": "Dec '21",
+  "hoja_valor": 1457.6,
+  "sec": 1471.775,
+  "fecha_sec": "2021-12-29",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "H36",
+  "columna": "Dec '22",
+  "hoja_valor": 1494.9,
+  "sec": 1511.95,
+  "fecha_sec": "2022-12-28",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ }
+]

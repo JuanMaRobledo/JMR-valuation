@@ -1,0 +1,15 @@
+{
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "fecha": "2026-10-03",
+ "celdas": [
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "B40",
+   "antes": 0,
+   "despues": 1153.0,
+   "motivo": "Net Change in Cash Jun '17: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2017-06-30; antes 0.",
+   "vigente": 0
+  }
+ ],
+ "omitidas": []
+}

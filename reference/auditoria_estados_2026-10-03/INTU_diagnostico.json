@@ -1,0 +1,390 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "C3",
+  "columna": "Jul '18",
+  "hoja_valor": 5964,
+  "sec": 6025.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Operating Profit",
+  "celda": "B12",
+  "columna": "Jul '17",
+  "hoja_valor": 1395,
+  "sec": 1418.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "OperatingIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Operating Profit",
+  "celda": "C12",
+  "columna": "Jul '18",
+  "hoja_valor": 1497,
+  "sec": 1560.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "OperatingIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Income Before Provision for Income Taxes",
+  "celda": "B19",
+  "columna": "Jul '17",
+  "hoja_valor": 1367,
+  "sec": 1390.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Income Before Provision for Income Taxes",
+  "celda": "C19",
+  "columna": "Jul '18",
+  "hoja_valor": 1503,
+  "sec": 1566.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "B20",
+  "columna": "Jul '17",
+  "hoja_valor": 396,
+  "sec": 405.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Provision for Income Taxes",
+  "celda": "C20",
+  "columna": "Jul '18",
+  "hoja_valor": 292,
+  "sec": 237.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "IncomeTaxExpenseBenefit"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "B21",
+  "columna": "Jul '17",
+  "hoja_valor": 971,
+  "sec": 985.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Consolidated Net Income",
+  "celda": "C21",
+  "columna": "Jul '18",
+  "hoja_valor": 1211,
+  "sec": 1329.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "ProfitLoss",
+   "NetIncomeLoss"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "B22",
+  "columna": "Jul '17",
+  "hoja_valor": 971,
+  "sec": 985.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Net Income Attributable to Common Shareholders",
+  "celda": "C22",
+  "columna": "Jul '18",
+  "hoja_valor": 1211,
+  "sec": 1329.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "NetIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 16.48,
+  "sec": 16.53,
+  "fecha_sec": "2026-07-31",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "B24",
+  "columna": "Jul '17",
+  "hoja_valor": 3.72,
+  "sec": 3.78,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "C24",
+  "columna": "Jul '18",
+  "hoja_valor": 4.64,
+  "sec": 5.09,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "K24",
+  "columna": "Jul '26",
+  "hoja_valor": 16.48,
+  "sec": 16.46,
+  "fecha_sec": "2026-07-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 16.48,
+  "sec": 16.46,
+  "fecha_sec": "2026-07-31",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Assets",
+  "celda": "C16",
+  "columna": "Jul '18",
+  "hoja_valor": 5178,
+  "sec": 5134.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "Assets"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities",
+  "celda": "C29",
+  "columna": "Jul '18",
+  "hoja_valor": 2824,
+  "sec": 2318.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "Liabilities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "B34",
+  "columna": "Jul '17",
+  "hoja_valor": 1354,
+  "sec": 1699.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "C34",
+  "columna": "Jul '18",
+  "hoja_valor": 2354,
+  "sec": 2816.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "B35",
+  "columna": "Jul '17",
+  "hoja_valor": 1354,
+  "sec": 1699.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Shareholders' Equity",
+  "celda": "C35",
+  "columna": "Jul '18",
+  "hoja_valor": 2354,
+  "sec": 2816.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+   "StockholdersEquity"
+  ],
+  "nota": "diferencia por reexpresión u otra definición",
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Liabilities and Shareholders' Equity",
+  "celda": "C36",
+  "columna": "Jul '18",
+  "hoja_valor": 5178,
+  "sec": 5134.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "LiabilitiesAndStockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Assets",
+  "celda": "C10",
+  "columna": "Jul '18",
+  "hoja_valor": 2404,
+  "sec": 2422.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "AssetsCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Current Liabilities",
+  "celda": "C24",
+  "columna": "Jul '18",
+  "hoja_valor": 2116,
+  "sec": 1743.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "LiabilitiesCurrent"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "B22",
+  "columna": "Jul '17",
+  "hoja_valor": -85,
+  "sec": -17.0,
+  "fecha_sec": "2017-07-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Investing Activities",
+  "celda": "D22",
+  "columna": "Jul '19",
+  "hoja_valor": -566,
+  "sec": -635.0,
+  "fecha_sec": "2019-07-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInInvestingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "C34",
+  "columna": "Jul '18",
+  "hoja_valor": -634,
+  "sec": -639.0,
+  "fecha_sec": "2018-07-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Cash from Financing Activities",
+  "celda": "D34",
+  "columna": "Jul '19",
+  "hoja_valor": -1034,
+  "sec": -965.0,
+  "fecha_sec": "2019-07-31",
+  "etiquetas": [
+   "NetCashProvidedByUsedInFinancingActivities"
+  ],
+  "se_corrige": false
+ }
+]

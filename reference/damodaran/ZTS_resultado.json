@@ -17,9 +17,9 @@
   "marginY1Cons": 0.363886,
   "marginY1Base": 0.363886,
   "marginY1Opt": 0.363886,
-  "marginCons": 0.3335697896183808,
-  "marginBase": 0.36356978961838077,
-  "marginOpt": 0.3835697896183808,
+  "marginCons": 0.33388617768532874,
+  "marginBase": 0.3638861776853287,
+  "marginOpt": 0.38388617768532873,
   "salesToCapital2": 1.9073,
   "wacc": 0.08914036534638387,
   "costoPatrimonio": 0.09940600000000001,
@@ -30,9 +30,9 @@
   "salesToCapital": 1.9073
  },
  "financiero": false,
- "dcf_sin_exceso": 81.09305162902905,
+ "dcf_sin_exceso": 81.1720116392643,
  "precio": 69.69,
- "dcf_base": 114.12624083863612,
+ "dcf_base": 114.23429016531476,
  "g_ref": 0.04468739400595676,
  "m_base": 0.363886,
  "s2c": 1.9073,
@@ -792,14 +792,14 @@
    "beta": 1.11,
    "ke": 0.09940600000000001,
    "wacc": 0.08914036534638387,
-   "dcf_base": 110.95566422498709
+   "dcf_base": 111.06061147217939
   },
   {
    "enfoque": "Bottom-up del sector (Drugs (Pharmaceutical), reapalancada)",
    "beta": 1.107342266232295,
    "ke": 0.09928746507396036,
    "wacc": 0.08904588065879215,
-   "dcf_base": 111.02405540627282
+   "dcf_base": 111.1290618777767
   }
  ],
  "sensibilidad": {
@@ -963,5 +963,5 @@
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 110.95566422498709
+ "motor_tecnico": 111.06061147217939
 }

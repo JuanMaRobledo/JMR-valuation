@@ -1,0 +1,67 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Operating Profit",
+  "celda": "D12",
+  "columna": "Dec '18",
+  "hoja_valor": 26321,
+  "sec": 27524.0,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "OperatingIncomeLoss"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
+  "celda": "L23",
+  "columna": "LTM",
+  "hoja_valor": 19.97,
+  "sec": 20.16,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Diluted EPS",
+  "celda": "L24",
+  "columna": "LTM",
+  "hoja_valor": 19.97,
+  "sec": 19.93,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "EarningsPerShareDiluted"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Total Common Shareholders' Equity",
+  "celda": "L34",
+  "columna": "LTM",
+  "hoja_valor": 622457,
+  "sec": 640480.0,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "StockholdersEquity"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Balance Sheet",
+  "fila": "Net Property, Plant & Equipment",
+  "celda": "L11",
+  "columna": "LTM",
+  "hoja_valor": 321212,
+  "sec": 185062.0,
+  "fecha_sec": "2025-03-31",
+  "etiquetas": [
+   "PropertyPlantAndEquipmentNet"
+  ],
+  "se_corrige": false
+ }
+]
