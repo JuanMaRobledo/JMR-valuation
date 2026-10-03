@@ -8,7 +8,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,10. La beta bottom-up de Restaurant/Dining (64 empresas, 0,78 desapalancada y corregida por caja) reapalancada con la deuda por arrendamientos (que ahora el modelo trata como deuda, criterio Damodaran) da 0,85, y el DCF Base sube de US$26,02 a US$27,78. Una cadena con un pasivo por arrendamientos de ~US$5.000 millones tiene apalancamiento operativo real; la beta de la hoja, algo mayor que la bottom-up, es prudente y defendible."
+  "texto": "La hoja usa una beta de 0,95 (desde el 3-oct-2026; antes 1,10). Regla de la cartera (prompt v4, paso 2): bottom-up de Restaurant/Dining (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,12 = 0,85 + 0,10 por un solo concepto de restaurante = 0,95. La de regresión queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {
