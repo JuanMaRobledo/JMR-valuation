@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,30. La beta bottom-up de Computer Services (64 empresas, 0,96 desapalancada y corregida por caja) sin deuda relevante da 0,97, y el DCF Base sube de US$178,25 a US$191,69. La diferencia refleja que la beta de regresión de EPAM incorpora el shock geopolítico de 2022; con criterio Damodaran conviene la bottom-up, pero el riesgo operativo de Europa del Este justifica algo por encima del sector."
+  "texto": "La hoja usa una beta de 0,98 (desde el 3-oct-2026; antes 1,30). Regla de la cartera (prompt v4, paso 2): bottom-up de Computer Services (Damodaran, ene-2026: 0,96 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,03 = 0,98 = 0,98. La de regresión queda como referencia. El riesgo de la entrega desde Europa del Este va en la prima de mercado ponderada por operaciones, no en la beta. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {

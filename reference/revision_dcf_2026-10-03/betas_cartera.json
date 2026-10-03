@@ -1,0 +1,189 @@
+{
+ "BSX": {
+  "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+  "industria": "Healthcare Products",
+  "enfoque_antes": "Direct Input",
+  "antes": 1,
+  "despues": 0.98,
+  "sector_u": 0.86,
+  "bottom_up": 0.981621259441863,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Healthcare Products (Damodaran, ene-2026: 0,86 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,17 = 0,98 = 0,98. La de regresión queda como referencia.",
+  "aplicada": true
+ },
+ "CMG": {
+  "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+  "industria": "Restaurant/Dining",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.1,
+  "despues": 0.95,
+  "sector_u": 0.78,
+  "bottom_up": 0.8525444610937453,
+  "primas": [
+   [
+    "un solo concepto de restaurante",
+    0.1
+   ]
+  ],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Restaurant/Dining (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,12 = 0,85 + 0,10 por un solo concepto de restaurante = 0,95. La de regresión queda como referencia.",
+  "aplicada": true
+ },
+ "DPZ": {
+  "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+  "industria": "Restaurant/Dining",
+  "enfoque_antes": "Direct Input",
+  "antes": 0.9,
+  "despues": 1.17,
+  "sector_u": 0.78,
+  "bottom_up": 1.0690379791956532,
+  "primas": [
+   [
+    "un solo concepto (pizza a domicilio)",
+    0.1
+   ]
+  ],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Restaurant/Dining (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,48 = 1,07 + 0,10 por un solo concepto (pizza a domicilio) = 1,17. La de regresión queda como referencia. La D/E alta (recapitalización con deuda) explica que la beta reapalancada supere a la del sector.",
+  "aplicada": true
+ },
+ "EPAM": {
+  "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+  "industria": "Computer Services",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.3,
+  "despues": 0.98,
+  "sector_u": 0.96,
+  "bottom_up": 0.979109537860546,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Computer Services (Damodaran, ene-2026: 0,96 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,03 = 0,98 = 0,98. La de regresión queda como referencia. El riesgo de la entrega desde Europa del Este va en la prima de mercado ponderada por operaciones, no en la beta.",
+  "aplicada": true
+ },
+ "INTU": {
+  "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+  "industria": "Software (System & Application)",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.2,
+  "despues": 1.34,
+  "sector_u": 1.25,
+  "bottom_up": 1.3434141951968996,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Software (System & Application) (Damodaran, ene-2026: 1,25 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,10 = 1,34 = 1,34. La de regresión queda como referencia.",
+  "aplicada": true
+ },
+ "LULU": {
+  "sheet_id": "1wuEhOhrjlL5t-oSO9sRd7Py0Vw-47rv_4AAwaS8-ZJw",
+  "industria": "Apparel",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.15,
+  "despues": 1.03,
+  "sector_u": 0.79,
+  "bottom_up": 0.8849382452971343,
+  "primas": [
+   [
+    "moda",
+    0.15
+   ]
+  ],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Apparel (Damodaran, ene-2026: 0,79 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,16 = 0,88 + 0,15 por moda = 1,03. La de regresión queda como referencia.",
+  "aplicada": true
+ },
+ "ONON": {
+  "sheet_id": "1nlN8qDy9BipM5IWwGE5Fgf6VKpyYQScLXIPvqtAE9Oo",
+  "industria": "Shoe",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.3,
+  "despues": 1.2,
+  "sector_u": 1.0,
+  "bottom_up": 1.0524828057121387,
+  "primas": [
+   [
+    "moda",
+    0.15
+   ]
+  ],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Shoe (Damodaran, ene-2026: 1,00 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,07 = 1,05 + 0,15 por moda = 1,20. La de regresión queda como referencia.",
+  "aplicada": true
+ },
+ "PAGS": {
+  "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+  "industria": "Financial Svcs. (Non-bank & Insurance)",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.3,
+  "despues": 1.12,
+  "sector_u": 0.33,
+  "bottom_up": 0.3311894064859197,
+  "primas": [
+   [
+    "empresa pequeña",
+    0.15
+   ]
+  ],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): beta del patrimonio del sector (0,97) + 0,15 por empresa pequeña = 1,12. La de regresión queda como referencia. Banco digital: se parte de la beta del patrimonio del sector financiero (0,97), no de la desapalancada; el riesgo de Brasil va en la prima de mercado.",
+  "aplicada": true
+ },
+ "PYPL": {
+  "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+  "industria": "Financial Svcs. (Non-bank & Insurance)",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.29,
+  "despues": 0.97,
+  "sector_u": 0.33,
+  "bottom_up": 0.39820049359421106,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): beta del patrimonio del sector (0,97) = 0,97. La de regresión queda como referencia. Red de pagos con saldos de clientes y crédito: se parte de la beta del patrimonio del sector (0,97).",
+  "aplicada": true
+ },
+ "ZTS": {
+  "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+  "industria": "Drugs (Pharmaceutical)",
+  "enfoque_antes": "Direct Input",
+  "antes": 0.9,
+  "despues": 1.11,
+  "sector_u": 0.92,
+  "bottom_up": 1.107523160270474,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Drugs (Pharmaceutical) (Damodaran, ene-2026: 0,92 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,25 = 1,11 = 1,11. La de regresión queda como referencia.",
+  "aplicada": true
+ },
+ "NVDA": {
+  "sheet_id": "1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg",
+  "industria": "Semiconductor",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.51,
+  "despues": 1.51,
+  "sector_u": 1.5,
+  "bottom_up": 1.5092928298340884,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Semiconductor (Damodaran, ene-2026: 1,50 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,01 = 1,51 = 1,51. La de regresión queda como referencia."
+ },
+ "PLTR": {
+  "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+  "industria": "Software (System & Application)",
+  "enfoque_antes": "Direct input",
+  "antes": 1.25,
+  "despues": 1.25,
+  "sector_u": 1.25,
+  "bottom_up": 1.2504936328223382,
+  "primas": [],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Software (System & Application) (Damodaran, ene-2026: 1,25 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,00 = 1,25 = 1,25. La de regresión queda como referencia."
+ },
+ "SHAK": {
+  "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+  "industria": "Restaurant/Dining",
+  "enfoque_antes": "Direct Input",
+  "antes": 1.25,
+  "despues": 1.25,
+  "sector_u": 0.78,
+  "bottom_up": 0.9788272163666706,
+  "primas": [
+   [
+    "un solo concepto",
+    0.1
+   ],
+   [
+    "empresa pequeña",
+    0.15
+   ]
+  ],
+  "motivo": "Beta de la cartera (prompt v4, paso 2): bottom-up de Restaurant/Dining (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,34 = 0,98 + 0,10 por un solo concepto + 0,15 por empresa pequeña = 1,25. La de regresión queda como referencia. Se fijó 1,25 el 3-oct-2026 (la regla da 1,23; la diferencia cubre los márgenes finos)."
+ }
+}

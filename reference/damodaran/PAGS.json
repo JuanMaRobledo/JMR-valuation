@@ -8,8 +8,8 @@
   "Ingresos financieros y banca": 2335
  },
  "riesgo": {
-  "beta_propuesta": 0.97,
-  "texto": "La beta de la hoja es 1,30; el Ke inicial es 14,7%. La beta sectorial propuesta de 0,97 se evalúa como sensibilidad al costo del patrimonio. Se usa FCFE financiero y el ROE converge al Ke terminal; los depósitos y la caja operativa bancaria no son deuda y caja excedente de una industrial."
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 1,12 (desde el 3-oct-2026; antes 1,30). Regla de la cartera (prompt v4, paso 2): beta del patrimonio del sector (0,97) + 0,15 por empresa pequeña = 1,12. La de regresión queda como referencia. Banco digital: se parte de la beta del patrimonio del sector financiero (0,97), no de la desapalancada; el riesgo de Brasil va en la prima de mercado. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {

@@ -127,7 +127,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,15, el promedio de la regresión semanal contra el S&P 500 a dos años (1,13) y a cinco años (1,20). La beta desapalancada de Apparel global (0,71, Damodaran, enero de 2026) reapalancada con los arrendamientos da 0,79 (0,88 con la versión corregida por caja); se deja como sensibilidad porque esa industria mezcla fabricantes diversificados de ropa con marcas premium de una sola marca, y lululemon depende de una marca, de un gusto que cambia y de un consumidor de ingresos altos."
+  "texto": "La hoja usa una beta de 1,03 (desde el 3-oct-2026; antes 1,15). Regla de la cartera (prompt v4, paso 2): bottom-up de Apparel (Damodaran, ene-2026: 0,79 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,16 = 0,88 + 0,15 por moda = 1,03. La de regresión queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {

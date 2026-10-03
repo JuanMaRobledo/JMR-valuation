@@ -10,7 +10,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,20. La bottom-up de Software (System & Application) reapalancada con la deuda de Intuit da 1,34; el DCF Base baja de US$499,36 a US$482,93. Credit Karma añade ciclicidad (depende del crédito al consumidor), lo que apoya una beta algo mayor que la de la hoja."
+  "texto": "La hoja usa una beta de 1,34 (desde el 3-oct-2026; antes 1,20). Regla de la cartera (prompt v4, paso 2): bottom-up de Software (System & Application) (Damodaran, ene-2026: 1,25 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,10 = 1,34 = 1,34. La de regresión queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {

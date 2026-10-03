@@ -10,8 +10,8 @@
   "Otros servicios de valor agregado": 5328
  },
  "riesgo": {
-  "beta_propuesta": 0.97,
-  "texto": "La hoja usa una beta de 1,29. La bottom-up desapalancada de Financial Services (0,40 reapalancada) no sirve para una red de pagos con saldos de clientes y carteras de crédito; como en las financieras, se usa la beta del patrimonio del sector (0,97). El DCF Base sube de US$101,16 a US$107,30."
+  "beta_propuesta": null,
+  "texto": "La hoja usa una beta de 0,97 (desde el 3-oct-2026; antes 1,29). Regla de la cartera (prompt v4, paso 2): beta del patrimonio del sector (0,97) = 0,97. La de regresión queda como referencia. Red de pagos con saldos de clientes y crédito: se parte de la beta del patrimonio del sector (0,97). El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {
