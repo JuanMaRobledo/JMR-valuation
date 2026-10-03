@@ -207,11 +207,11 @@ Fuente de la tabla: 'Trailing Valuation' de la hoja. La acción pasó de US$478 
 | Resultado declarado (hoy, por acción) | Conservador / Conservadora | Base | Optimista |
 |---|---:|---:|---:|
 | DCF de las historias | US$104,75 | US$171,60 | US$241,60 |
-| DCF técnico de la plantilla (referencia) | US$113,26 | US$171,34 | US$255,89 |
-| Múltiplos consolidados a valor presente | US$86,13 | US$135,70 | US$208,37 |
-| Ponderado DCF 40% + múltiplos 60% (secundario) | US$93,58 | US$150,06 | US$221,66 |
+| DCF de la hoja por historia (bloques de 'Valuation output') | US$104,75 | US$171,60 | US$241,60 |
+| Múltiplos consolidados a valor presente | US$83,73 | US$126,93 | US$170,54 |
+| Ponderado DCF 40% + múltiplos 60% (secundario) | US$92,14 | US$144,80 | US$198,96 |
 
-La Disrupción (US$72,11) no tiene caso de múltiplos: solo hay tres casos auxiliares. Las partes del modelo con mejor soporte son la conciliación de ventas, el EBIT normalizado y la estructura de capital (sin deuda, acciones con intercambiables, arrendamientos), todas verificadas contra el 10-Q y el 10-K. Las más frágiles son la estabilización de Américas y el margen objetivo. Los múltiplos valen ~21% menos que el DCF Base porque la historia reciente de lululemon y los peers cotizan deprimidos.
+La Disrupción (US$72,11) no tiene caso de múltiplos: solo hay tres casos auxiliares. Las partes del modelo con mejor soporte son la conciliación de ventas, el EBIT normalizado y la estructura de capital (sin deuda, acciones con intercambiables, arrendamientos), todas verificadas contra el 10-Q y el 10-K. Las más frágiles son la estabilización de Américas y el margen objetivo. Los múltiplos valen ~26% menos que el DCF Base porque la historia reciente de lululemon y los peers cotizan deprimidos, mientras el DCF supone que el margen se recupera.
 
 ## 6. Ventaja competitiva
 
@@ -330,7 +330,9 @@ lululemon sigue siendo un negocio de alta calidad —marca, venta directa, márg
 
 **Valor intrínseco principal · DCF Base hoy: US$171,60 por acción** (Base · Américas se estabiliza y crece lo internacional).
 
-**Complemento · DCF esperado por probabilidades: US$152,10.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$72,11–241,60. El MOS 35% se aplica al esperado: US$98,86. El antiguo caso técnico de la hoja (US$171,34) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$152,10.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$72,11–241,60. El MOS 30% se aplica al esperado: US$106,47. El antiguo caso técnico de la hoja (US$171,34) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, roic terminal (criterio damodaran), ventas/capital contrastado con la historia y la industria (23 celdas, con respaldo). DCF esperado US$148,45 → US$152,10. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$171,34 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
@@ -375,9 +377,11 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Acciones, opciones y caja.** Se usan 111,8 millones de acciones (105,6 millones comunes y 5,1 millones intercambiables al 28-ago-2026, más 1,0 millón de RSU y PSU sin consolidar); las 1,5 millones de opciones a US$258,81 valen poco con la acción a US$96. La caja es US$1.390 millones al 2-ago-2026 y no hay deuda financiera. Una dilución adicional de 5% llevaría el DCF Base a US$163,43 (−5%).
 
-**Probabilidades y lectura del resultado.** Con 45% para la Base, 30% para la Conservadora, 10% para la Disrupción y 15% para la Optimista, el DCF esperado es US$152,10 frente a un DCF Base de US$171,60. Con el margen de seguridad de 35%, el precio de compra con margen es US$98,86.
+**Probabilidades y lectura del resultado.** Con 45% para la Base, 30% para la Conservadora, 10% para la Disrupción y 15% para la Optimista, el DCF esperado es US$152,10 frente a un DCF Base de US$171,60. Con el margen de seguridad de 30%, el precio de compra con margen es US$106,47.
 
 **Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$11.094 millones. Con el crecimiento de la Base llegan a US$12.080 millones en el año 5 y a US$15.274 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 12,5% en el año 1 a 18,4% al final, y se descuentan impuestos (30,0% al principio y 30,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$907 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$158 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$749 millones el primer año. Cada flujo se trae a hoy con el costo de capital (9,18% al principio, 9,33% al final): los diez años suman US$7.253 millones. Después del año 10 se supone que la empresa crece 5,24% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 12,6%; esa perpetuidad vale hoy US$12.267 millones, 63% del total. Flujos más terminal dan el valor de las operaciones, US$19.520 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$1.390 millones, menos deuda por US$1.717 millones (incluye los arrendamientos capitalizados), menos opciones por US$16 millones. Queda un patrimonio de US$19.177 millones que, repartido entre 111,8 millones de acciones, da US$171,60 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 9,66× (peso 33% dentro de los múltiplos); EV/FCFF 22,01× (peso 17% dentro de los múltiplos); P/E 15,74× (peso 33% dentro de los múltiplos); P/FCFE 19,88× (peso 8% dentro de los múltiplos); P/OCF 12,28× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (9,9%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
 Sensibilidad del DCF Base (US$171,60; cada fila es un DCF completo con un solo supuesto cambiado):
 
@@ -429,6 +433,8 @@ Sensibilidad del DCF Base (US$171,60; cada fila es un DCF completo con un solo s
 
 
 ### Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)
+
+> Nota (2-oct-2026): esta calibración es la anterior a la fórmula única. Hoy los bloques de 'Valuation output' calculan las historias (Conservadora US$104,75, Base US$171,60, Optimista US$241,60, Disrupción US$72,11); las cifras de esta subsección se conservan solo como registro.
 
 | Supuesto | Conservador | Base | Optimista |
 |---|---:|---:|---:|
@@ -573,7 +579,7 @@ Las probabilidades 45% / 30% / 10% / 15% son juicio del analista (ver «Historia
 
 DCF esperado = 0,45 × 171,598401 + 0,30 × 104,749632 + 0,10 × 72,110747 + 0,15 × 241,600650 = US$152,095342 ≈ US$152,10. Los aportes son US$77,22 + US$31,42 + US$7,21 + US$36,24 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 152,095342 × 0,65 = US$98,861972 ≈ US$98,86. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 30%) = 152,095342 × 0,70 = US$106,466740 ≈ US$106,47. El 30% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base ni al antiguo caso técnico de la hoja: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: hoja «Escenarios e historias»: entradas y resultados A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Los DCF completos empiezan en las filas 22 (Base), 46 (Conservadora), 70 (Disrupción) y 94 (Optimista); sus valores por acción están en B44/B68/B92/B116. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
@@ -675,14 +681,14 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia (cierre del 1 de octubre de 2026): **US$95,86**.
+Precio de referencia (cierre del 1 de octubre de 2026): **US$96,32**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 15% | Margen 18% | Margen 22% |
 |---|---:|---:|---:|
-| Beta 1,15 | −8,1% (97% de las empresas) | ninguno entre −10% y 60% | ninguno entre −10% y 60% |
-| Beta 0,88 | −9,3% (97% de las empresas) | ninguno entre −10% y 60% | ninguno entre −10% y 60% |
+| Beta 1,15 | −7,9% (97% de las empresas) | ninguno entre −10% y 60% | ninguno entre −10% y 60% |
+| Beta 0,88 | −9,1% (97% de las empresas) | ninguno entre −10% y 60% | ninguno entre −10% y 60% |
 
 Frente al DCF Base (US$171,60), el valor intrínseco principal, el precio está por debajo en 44%.
 
@@ -698,13 +704,14 @@ Frente al DCF esperado de las historias (US$152,10 con la beta de la hoja; US$16
 | Probabilidades | Base 45% / Conservadora 30% / Disrupción 10% / Optimista 15% |  |
 | DCF Base hoy (valor intrínseco principal) | US$171,60 |  |
 | DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$152,10 / US$160,40 |  |
-| Precio con MOS sobre el DCF esperado | US$98,86 (MOS 35%) |  |
+| Precio con MOS sobre el DCF esperado | US$106,47 (MOS 30%) |  |
 | Rango (historia más débil a más fuerte) | US$72,11 a US$255,38 |  |
 | Confianza | Media: el margen normalizado y la caja están bien documentados; la estabilización de Américas y el efecto de la nueva CEO no |  |
 | Qué cambiaría la opinión | Los comparables de Américas, el margen bruto y la ejecución de la nueva CEO |  |
 | Revisión | Resultados del 3T26 (diciembre de 2026) |  |
 
 La decisión (comprar, mantener o vender) la registras tú con el selector «Mi decisión» de la app; este análisis no la toma por ti.
+
 <!-- JMR-HORIZONTES-20261002 -->
 ### Valor por acción en dos horizontes
 
@@ -717,26 +724,26 @@ Moneda: US$ por acción. Fecha de valoración: 2026-10-02. Escenarios en orden B
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
 | DCF de las historias al presente | — | 40% | — | US$171,60 | US$104,75 | US$241,60 |
-| EV/EBITDA | 9,8× / 7,0× / 12,6× | 20% | 33% | US$146,93 | US$95,89 | US$227,50 |
-| EV/FCFF | 22,0× / 14,1× / 24,9× | 10% | 17% | US$140,01 | US$85,11 | US$197,31 |
-| P/E | 15,7× / 11,7× / 19,9× | 20% | 33% | US$124,63 | US$80,90 | US$199,49 |
-| P/FCFE | 19,9× / 12,7× / 23,5× | 5% | 8% | US$123,92 | US$71,27 | US$186,70 |
-| P/OCF | 12,3× / 8,5× / 15,5× | 5% | 8% | US$138,22 | US$84,94 | US$211,14 |
-| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$135,70 | US$86,13 | US$208,37 |
-| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$150,06 | US$93,58 | US$221,66 |
+| EV/EBITDA | 9,7× / 7,1× / 12,0× | 20% | 33% | US$131,99 | US$84,55 | US$188,10 |
+| EV/FCFF | 22,0× / 14,1× / 24,9× | 10% | 17% | US$128,61 | US$88,90 | US$139,31 |
+| P/E | 15,7× / 11,8× / 19,8× | 20% | 33% | US$120,61 | US$77,83 | US$177,29 |
+| P/FCFE | 19,9× / 12,7× / 23,6× | 5% | 8% | US$121,36 | US$83,70 | US$138,35 |
+| P/OCF | 12,3× / 8,4× / 15,3× | 5% | 8% | US$134,14 | US$93,73 | US$167,90 |
+| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$126,93 | US$83,73 | US$170,54 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$144,80 | US$92,14 | US$198,96 |
 
 **Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 (la hoja no proyecta dividendos: precio objetivo exdividendo = total).
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
 | DCF capitalizado a FY+3 antes de distribuciones | — | 40% | — | US$228,05 | US$139,21 | US$321,08 |
-| EV/EBITDA | 9,8× / 7,0× / 12,6× | 20% | 33% | US$199,55 | US$116,00 | US$329,39 |
-| EV/FCFF | 22,0× / 14,1× / 24,9× | 10% | 17% | US$197,27 | US$108,09 | US$307,50 |
-| P/E | 15,7× / 11,7× / 19,9× | 20% | 33% | US$178,55 | US$102,88 | US$307,25 |
-| P/FCFE | 19,9× / 12,7× / 23,5× | 5% | 8% | US$180,65 | US$93,39 | US$300,44 |
-| P/OCF | 12,3× / 8,5× / 15,5× | 5% | 8% | US$191,08 | US$104,68 | US$312,74 |
-| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 60% | 100% | US$189,89 | US$107,48 | US$314,56 |
-| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$205,15 | US$120,17 | US$317,17 |
+| EV/EBITDA | 9,7× / 7,1× / 12,0× | 20% | 33% | US$180,74 | US$106,12 | US$277,67 |
+| EV/FCFF | 22,0× / 14,1× / 24,9× | 10% | 17% | US$176,62 | US$101,80 | US$230,81 |
+| P/E | 15,7× / 11,8× / 19,8× | 20% | 33% | US$168,37 | US$98,51 | US$268,97 |
+| P/FCFE | 19,9× / 12,7× / 23,6× | 5% | 8% | US$166,37 | US$96,18 | US$227,62 |
+| P/OCF | 12,3× / 8,4× / 15,3× | 5% | 8% | US$176,85 | US$109,71 | US$248,74 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 60% | 100% | US$174,41 | US$102,33 | US$260,38 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$195,86 | US$117,08 | US$284,66 |
 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 <!-- /JMR-HORIZONTES-20261002 -->

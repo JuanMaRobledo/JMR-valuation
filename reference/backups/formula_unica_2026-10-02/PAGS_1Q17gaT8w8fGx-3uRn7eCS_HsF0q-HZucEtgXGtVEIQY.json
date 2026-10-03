@@ -1,0 +1,13 @@
+{
+ "Valuation output": {
+  "B33": "=B31-B32",
+  "B84": "=B82-B83",
+  "B135": "=B133-B134"
+ },
+ "Resumen de Valoración": {
+  "C6": "=C32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "D6": "=D32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "E6": "=E32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "A6": "DCF Damodaran (llevado a FY+3)"
+ }
+}

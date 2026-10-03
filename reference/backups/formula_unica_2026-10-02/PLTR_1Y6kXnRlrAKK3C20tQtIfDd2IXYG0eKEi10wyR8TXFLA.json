@@ -1,0 +1,38 @@
+{
+ "Valuation output": {
+  "B33": "=B31-B32",
+  "C45": "=(B6)+0,003813",
+  "B84": "=B82-B83",
+  "B135": "=B133-B134"
+ },
+ "Financials Multiples": {
+  "F31": "=E31+(E31*F32)",
+  "G31": "=F31+(F31*G32)",
+  "H31": "=G31+(G31*H32)",
+  "F70": "=E70+(E70*F71)",
+  "G70": "=F70+(F70*G71)",
+  "H70": "=G70+(G70*H71)",
+  "F110": "=E110+(E110*F111)",
+  "G110": "=F110+(F110*G111)",
+  "H110": "=G110+(G110*H111)"
+ },
+ "Cost of capital worksheet": {
+  "B24": "=IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65)))"
+ },
+ "Option value": {
+  "B18": "=IFERROR((B16*D17+B29*D16)/(D17+D16);\"\")",
+  "B23": "=IFERROR((LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5));\"\")",
+  "B24": "=IFERROR(NORMSDIST(B23);\"\")",
+  "B26": "=IFERROR(B23-((D19^0,5)*(B20^(0,5)));\"\")",
+  "B27": "=IFERROR(NORMSDIST(B26);\"\")",
+  "B29": "=IFERROR(((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27);\"\")",
+  "B30": "=IFERROR(B29*B11;\"\")"
+ },
+ "Resumen de Valoración": {
+  "C6": "=C32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "D6": "=D32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "E6": "=E32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "A25": "=\"Precio al día del análisis (\"&TEXT('Input sheet'!C23;\"dd-mmm-yyyy\")&\")\"",
+  "A6": "DCF Damodaran (llevado a FY+3)"
+ }
+}

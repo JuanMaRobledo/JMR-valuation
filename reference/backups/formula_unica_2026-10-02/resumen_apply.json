@@ -1,0 +1,142 @@
+{
+ "MAESTRA": {
+  "Valuation output": 4,
+  "Financials Multiples": 78,
+  "Resumen de Valoración": 18,
+  "EVEBITDA": 9,
+  "EVFCFF": 9
+ },
+ "ADBE": {
+  "Valuation output": 3,
+  "Financials Multiples": 24,
+  "Cost of capital worksheet": 1,
+  "Option value": 7,
+  "Resumen de Valoración": 5
+ },
+ "AFYA": {
+  "Valuation output": 4,
+  "Financials Multiples": 9,
+  "Resumen de Valoración": 5
+ },
+ "BSX": {
+  "Valuation output": 3,
+  "Financials Multiples": 21,
+  "Resumen de Valoración": 4
+ },
+ "CELH": {
+  "Valuation output": 1,
+  "Financials Multiples": 78,
+  "Resumen de Valoración": 14,
+  "EVEBITDA": 9,
+  "EVFCFF": 9
+ },
+ "CMG": {
+  "Valuation output": 3,
+  "Financials Multiples": 21,
+  "Resumen de Valoración": 4
+ },
+ "DPZ": {
+  "Valuation output": 3,
+  "Financials Multiples": 21,
+  "Resumen de Valoración": 4
+ },
+ "DUOL": {
+  "Valuation output": 4,
+  "Financials Multiples": 21,
+  "Cost of capital worksheet": 1,
+  "Option value": 7,
+  "Resumen de Valoración": 5
+ },
+ "EPAM": {
+  "Valuation output": 3,
+  "Financials Multiples": 21,
+  "Resumen de Valoración": 4
+ },
+ "GOOG": {
+  "Financials Multiples": 21,
+  "Resumen de Valoración": 4
+ },
+ "INTU": {
+  "Valuation output": 3,
+  "Financials Multiples": 9,
+  "Resumen de Valoración": 4
+ },
+ "LULU": {
+  "Valuation output": 1,
+  "Financials Multiples": 78,
+  "Resumen de Valoración": 14,
+  "EVEBITDA": 9,
+  "EVFCFF": 9
+ },
+ "MSFT": {
+  "Valuation output": 6,
+  "Financials Multiples": 9,
+  "Cost of capital worksheet": 1,
+  "Option value": 7,
+  "Resumen de Valoración": 5
+ },
+ "NKE": {
+  "Valuation output": 1,
+  "Financials Multiples": 78,
+  "Resumen de Valoración": 14,
+  "EVEBITDA": 9,
+  "EVFCFF": 9
+ },
+ "NVDA": {
+  "Valuation output": 3,
+  "Financials Multiples": 9,
+  "Resumen de Valoración": 4
+ },
+ "NVO": {
+  "Valuation output": 5,
+  "Financials Multiples": 9,
+  "Resumen de Valoración": 5
+ },
+ "ONON": {
+  "Valuation output": 1,
+  "Financials Multiples": 78,
+  "Resumen de Valoración": 14,
+  "EVEBITDA": 9,
+  "EVFCFF": 9
+ },
+ "PAGS": {
+  "Valuation output": 3,
+  "Resumen de Valoración": 4
+ },
+ "PLTR": {
+  "Valuation output": 4,
+  "Financials Multiples": 9,
+  "Cost of capital worksheet": 1,
+  "Option value": 7,
+  "Resumen de Valoración": 5
+ },
+ "PYPL": {
+  "Valuation output": 6,
+  "Financials Multiples": 9,
+  "Resumen de Valoración": 5
+ },
+ "SHAK": {
+  "Valuation output": 3,
+  "Financials Multiples": 12,
+  "Resumen de Valoración": 4,
+  "EVFCFF": 2,
+  "PFCFE": 1
+ },
+ "UBER": {
+  "Valuation output": 4,
+  "Financials Multiples": 21,
+  "Cost of capital worksheet": 1,
+  "Option value": 7,
+  "Resumen de Valoración": 4,
+  "EVEBITDA": 1,
+  "EVFCFF": 1,
+  "PE": 1,
+  "PFCFE": 1,
+  "POCF": 1
+ },
+ "ZTS": {
+  "Valuation output": 3,
+  "Financials Multiples": 9,
+  "Resumen de Valoración": 4
+ }
+}

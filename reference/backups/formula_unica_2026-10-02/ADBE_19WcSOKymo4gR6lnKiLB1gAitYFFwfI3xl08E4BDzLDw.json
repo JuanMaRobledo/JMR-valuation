@@ -1,0 +1,52 @@
+{
+ "Valuation output": {
+  "B33": "=B31-B32",
+  "B84": "=B82-B83",
+  "B135": "=B133-B134"
+ },
+ "Financials Multiples": {
+  "E28": 0,
+  "F28": 0,
+  "G28": 0,
+  "H28": 0,
+  "E31": "='Input sheet'!$B$22",
+  "F31": "='Input sheet'!$B$22",
+  "G31": "='Input sheet'!$B$22",
+  "H31": "='Input sheet'!$B$22",
+  "E67": 0,
+  "F67": 0,
+  "G67": 0,
+  "H67": 0,
+  "E70": "='Input sheet'!$B$22",
+  "F70": "='Input sheet'!$B$22",
+  "G70": "='Input sheet'!$B$22",
+  "H70": "='Input sheet'!$B$22",
+  "E107": 0,
+  "F107": 0,
+  "G107": 0,
+  "H107": 0,
+  "E110": "='Input sheet'!$B$22",
+  "F110": "='Input sheet'!$B$22",
+  "G110": "='Input sheet'!$B$22",
+  "H110": "='Input sheet'!$B$22"
+ },
+ "Cost of capital worksheet": {
+  "B24": "=IF(B22=\"Single Business(US)\";VLOOKUP('Input sheet'!B9;'Industry Averages(US)'!A3:G96;7);IF(B22=\"Multibusiness(US)\";K49;IF(B22=\"Single Business(Global)\";VLOOKUP('Input sheet'!B10;'Industry Averages (Global)'!A3:G96;7);'Cost of capital worksheet'!K65)))"
+ },
+ "Option value": {
+  "B18": "=IFERROR((B16*D17+B29*D16)/(D17+D16);\"\")",
+  "B23": "=IFERROR((LN(B18/B19)+(D21+(D19/2))*B20)/(((D19)^(0,5))*(B20^0,5));\"\")",
+  "B24": "=IFERROR(NORMSDIST(B23);\"\")",
+  "B26": "=IFERROR(B23-((D19^0,5)*(B20^(0,5)));\"\")",
+  "B27": "=IFERROR(NORMSDIST(B26);\"\")",
+  "B29": "=IFERROR(((EXP((0-D20)*B20))*B18*B24-B19*(EXP((0-D18)*B20))*B27);\"\")",
+  "B30": "=IFERROR(B29*B11;\"\")"
+ },
+ "Resumen de Valoración": {
+  "C6": "=C32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "D6": "=D32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "E6": "=E32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "A25": "=\"Precio al día del análisis (\"&TEXT('Input sheet'!B4;\"dd-mmm-yyyy\")&\")\"",
+  "A6": "DCF Damodaran (llevado a FY+3)"
+ }
+}

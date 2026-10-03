@@ -1,0 +1,34 @@
+{
+ "Valuation output": {
+  "B33": "=B31-B32",
+  "B84": "=B82-B83",
+  "B135": "=B133-B134"
+ },
+ "Financials Multiples": {
+  "E11": "=D11",
+  "F31": "=E31+(E31*F32)",
+  "G31": "=F31+(F31*G32)",
+  "H31": "=G31+(G31*H32)",
+  "E50": "=D50",
+  "F70": "=E70+(E70*F71)",
+  "G70": "=F70+(F70*G71)",
+  "H70": "=G70+(G70*H71)",
+  "E90": "=D90",
+  "F110": "=E110+(E110*F111)",
+  "G110": "=F110+(F110*G111)",
+  "H110": "=G110+(G110*H111)"
+ },
+ "Resumen de Valoración": {
+  "C6": "=C32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "D6": "=D32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "E6": "=E32*(1+'Descuento de múltiplos'!$B$5)^3",
+  "A6": "DCF Damodaran (llevado a FY+3)"
+ },
+ "EVFCFF": {
+  "G14": "=IF(AND(G12>0;B3>0);(G12/B3) ^ (1 / 2) - 1;\"No interpretable: precio no positivo\")",
+  "G25": "=IF(AND(G23>0;B3>0);(G23/B3) ^ (1 / 2) - 1;\"No interpretable: precio no positivo\")"
+ },
+ "PFCFE": {
+  "G25": "=IF(AND(G23>0;B3>0);(G23/B3) ^ (1 / 2) - 1;\"No interpretable: precio no positivo\")"
+ }
+}

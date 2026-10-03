@@ -1,0 +1,70 @@
+{
+ "antes": {
+  "CMG": {
+   "B15": 2199.8,
+   "B16": 0,
+   "B19": 677.9,
+   "B20": 97.1
+  },
+  "CELH": {
+   "B16": 694.75
+  },
+  "SHAK": {
+   "B16": 248,
+   "B22": 42.8
+  },
+  "ADBE": {
+   "B22": 389.2
+  }
+ },
+ "informe": {
+  "CMG": {
+   "B15": {
+    "antes": 2199.8,
+    "formula": "='Balance Sheet'!L35-630,8",
+    "despues": 2199.8
+   },
+   "B16": {
+    "antes": 0,
+    "formula": "='Balance Sheet'!L20+'Balance Sheet'!L25",
+    "despues": 0
+   },
+   "B19": {
+    "antes": 677.9,
+    "formula": "='Balance Sheet'!L5+449,7",
+    "despues": 677.9
+   },
+   "B20": {
+    "antes": 97.1,
+    "formula": "='Balance Sheet'!L14-100",
+    "despues": 97.1
+   }
+  },
+  "CELH": {
+   "B16": {
+    "antes": 694.75,
+    "formula": "='Balance Sheet'!L20+'Balance Sheet'!L25+19,9",
+    "despues": 694.75
+   }
+  },
+  "SHAK": {
+   "B16": {
+    "antes": 248,
+    "formula": "='Balance Sheet'!L20+'Balance Sheet'!L25+0,3",
+    "despues": 248
+   },
+   "B22": {
+    "antes": 42.8,
+    "formula": "='Income Statement'!L27+1",
+    "despues": 42.8
+   }
+  },
+  "ADBE": {
+   "B22": {
+    "antes": 389.2,
+    "formula": "='Income Statement'!L27",
+    "despues": 389.2
+   }
+  }
+ }
+}

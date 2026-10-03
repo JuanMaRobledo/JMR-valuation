@@ -38,27 +38,27 @@
    "B_peers": "DECK 7,3x, NKE 11,0x, LULU 4,8x, BIRK 11,0x, ADDYY 12,4x, CROX 7,8x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 26.15,
-    "Base": 32.06,
+    "Conservador": 18.66,
+    "Base": 17.55,
     "Optimista": null
    },
    "mercado": 19.51,
    "lambda": 0.5,
-   "conservador": 20.56,
-   "base": 25.79,
-   "optimista": 31.45,
-   "factor_cons": 0.797,
+   "conservador": 16.31,
+   "base": 18.53,
+   "optimista": 22.6,
+   "factor_cons": 0.88,
    "factor_opt": 1.22,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     11.74,
-    32.06
+    27.29
    ],
    "antes": {
-    "J8": null,
-    "J19": 24.24479132435097,
-    "J30": null
+    "J8": 20.56,
+    "J19": 25.79,
+    "J30": 31.45
    },
    "nota": ""
   },
@@ -107,9 +107,9 @@
     52.0
    ],
    "antes": {
-    "J8": null,
-    "J19": 28.920183590364978,
-    "J30": null
+    "J8": 26.49,
+    "J19": 34.76,
+    "J30": 44.02
    },
    "nota": ""
   },
@@ -133,34 +133,34 @@
      "< 0,4x la mediana (64.4x), caída puntual"
     ]
    ],
-   "B_mediana": 13.53,
-   "B_ajustada": 16.91,
+   "B_mediana": 13.68,
+   "B_ajustada": 17.1,
    "B_n": 6,
    "B_regresion": null,
-   "B_peers": "DECK 11,2x, NKE 15,8x, LULU 7,8x, BIRK 16,1x, ADDYY 18,2x, CROX 10,6x",
+   "B_peers": "DECK 11,3x, NKE 16,1x, LULU 7,8x, BIRK 16,1x, ADDYY 18,3x, CROX 10,5x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 19.8,
-    "Base": 24.69,
+    "Conservador": 19.59,
+    "Base": 26.5,
     "Optimista": null
    },
-   "mercado": 40.06,
+   "mercado": 40.15,
    "lambda": 0.5,
-   "conservador": 26.04,
-   "base": 32.37,
-   "optimista": 37.69,
-   "factor_cons": 0.804,
-   "factor_opt": 1.164,
+   "conservador": 25.94,
+   "base": 33.33,
+   "optimista": 38.73,
+   "factor_cons": 0.778,
+   "factor_opt": 1.162,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    16.91,
+    17.1,
     63.2
    ],
    "antes": {
-    "J8": null,
-    "J19": 62.59104963384866,
-    "J30": null
+    "J8": 26.04,
+    "J19": 32.37,
+    "J30": 37.69
    },
    "nota": ""
   },
@@ -184,34 +184,34 @@
      "métrica negativa o ~0"
     ]
    ],
-   "B_mediana": 12.5,
-   "B_ajustada": 15.62,
+   "B_mediana": 12.56,
+   "B_ajustada": 15.7,
    "B_n": 6,
    "B_regresion": null,
-   "B_peers": "DECK 9,6x, NKE 22,6x, LULU 7,7x, BIRK 18,8x, ADDYY 15,4x, CROX 8,1x",
+   "B_peers": "DECK 9,6x, NKE 23,0x, LULU 7,7x, BIRK 18,9x, ADDYY 15,5x, CROX 8,0x",
    "B_excluidos": [],
    "C": {
     "Conservador": 33.09,
     "Base": 38.29,
     "Optimista": null
    },
-   "mercado": 27.7,
+   "mercado": 27.74,
    "lambda": 0.5,
-   "conservador": 25.89,
-   "base": 32.99,
-   "optimista": 42.29,
-   "factor_cons": 0.785,
-   "factor_opt": 1.282,
+   "conservador": 25.8,
+   "base": 33.01,
+   "optimista": 42.27,
+   "factor_cons": 0.782,
+   "factor_opt": 1.28,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    15.62,
+    15.7,
     39.77
    ],
    "antes": {
-    "J8": null,
-    "J19": 33.88331295376386,
-    "J30": null
+    "J8": 25.89,
+    "J19": 32.99,
+    "J30": 42.29
    },
    "nota": ""
   },
@@ -235,34 +235,34 @@
      "> 2,5x la mediana (34.2x)"
     ]
    ],
-   "B_mediana": 10.61,
-   "B_ajustada": 13.26,
+   "B_mediana": 10.66,
+   "B_ajustada": 13.32,
    "B_n": 6,
    "B_regresion": null,
-   "B_peers": "DECK 9,0x, NKE 17,2x, LULU 5,3x, BIRK 13,7x, ADDYY 12,2x, CROX 7,5x",
+   "B_peers": "DECK 9,0x, NKE 17,5x, LULU 5,3x, BIRK 13,7x, ADDYY 12,3x, CROX 7,4x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 30.74,
-    "Base": 36.41,
+    "Conservador": 26.93,
+    "Base": 35.6,
     "Optimista": null
    },
-   "mercado": 23.06,
+   "mercado": 23.09,
    "lambda": 0.5,
-   "conservador": 24.08,
-   "base": 29.73,
-   "optimista": 34.57,
-   "factor_cons": 0.81,
-   "factor_opt": 1.163,
+   "conservador": 22.81,
+   "base": 29.35,
+   "optimista": 34.1,
+   "factor_cons": 0.777,
+   "factor_opt": 1.162,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    13.26,
-    36.41
+    13.32,
+    35.6
    ],
    "antes": {
-    "J8": null,
-    "J19": 29.69115352419221,
-    "J30": null
+    "J8": 24.08,
+    "J19": 29.73,
+    "J30": 34.57
    },
    "nota": ""
   }
@@ -274,16 +274,16 @@
    46.56104224232117
   ],
   "multiplos_hoy": [
-   33.873439149501735,
-   47.29232431426507,
-   66.29619689379071
+   27.049563663608094,
+   33.15033178111311,
+   42.71518696069582
   ],
   "ponderado_hoy": [
-   26.030953848453073,
-   38.86265015491111,
-   54.45510410290898
+   23.301403654095616,
+   33.20585314165033,
+   45.02270012967102
   ],
-  "brecha_base": 0.4226307186684013,
+  "brecha_base": -0.0027836227191836427,
   "fila_origen": 53
  }
 }
