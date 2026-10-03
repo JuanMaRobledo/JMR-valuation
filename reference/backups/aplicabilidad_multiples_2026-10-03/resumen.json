@@ -1,0 +1,81 @@
+{
+ "SHAK": {
+  "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+  "antes": {
+   "'Resumen de Valoración'!B6:B11": [
+    [
+     "=VLOOKUP(\"DCF Damodaran\"; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    ],
+    [
+     "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    ],
+    [
+     "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    ],
+    [
+     "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    ],
+    [
+     "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    ],
+    [
+     "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    ]
+   ],
+   "'Resumen de Valoración'!F5:F11": [],
+   "'Resumen de Valoración'!D38": [
+    [
+     18.608314469018293
+    ]
+   ]
+  },
+  "pesos_antes": [
+   [
+    0.6
+   ],
+   [
+    0.1
+   ],
+   [
+    0.15
+   ],
+   [
+    0.05
+   ],
+   [
+    0.05
+   ],
+   [
+    0.05
+   ]
+  ],
+  "no_aplica": [
+   "EV/FCFF",
+   "P/FCFE"
+  ],
+  "d38_corregida": true,
+  "pesos_despues": [
+   [
+    0.6
+   ],
+   [
+    0.20000000000000004
+   ],
+   [
+    0
+   ],
+   [
+    0.10000000000000002
+   ],
+   [
+    0
+   ],
+   [
+    0.10000000000000002
+   ],
+   [
+    1
+   ]
+  ]
+ }
+}

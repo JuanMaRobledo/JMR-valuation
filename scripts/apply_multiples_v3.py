@@ -141,7 +141,10 @@ def decide(anc: dict, dec: dict) -> dict:
             b = max(icpt + slope * pc["g"], 0.5) * adj
         b_p25, b_p75 = pct(vals, .25) * adj, pct(vals, .75) * adj
         cj = d["justificado"]
-        c_base, c_cons, c_opt = cj["Base"], cj["Conservador"], cj["Optimista"]
+        # un justificado ≤ 0 (p. ej. FCFF de FY+3 negativo en EV/EBITDA = EV/FCFF × FCFF/EBITDA) no se puede
+        # calcular: igual que con g ≥ Ke, C y λ no aplican a ese escenario (prompt v4, 6.2 C y 6.3)
+        c_base, c_cons, c_opt = (v if isinstance(v, (int, float)) and v > 0 else None
+                                 for v in (cj["Base"], cj["Conservador"], cj["Optimista"]))
         market = (a + b) / 2 if a is not None else b
         base = (1 - lam) * market + lam * c_base if c_base else market
         anchors_ok = [x for x in (a, b, c_base) if x is not None]
