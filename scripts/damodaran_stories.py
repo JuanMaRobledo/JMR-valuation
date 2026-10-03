@@ -1214,7 +1214,7 @@ def render(r: dict) -> tuple[str, str]:
     arr = sp.get("arrendamientos")
     if arr:
         p(f"**Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente "
-          f"(US${es(arr['vp'], 0)} millones, compromisos del 10-K al {arr['cierre']}) se suma a la deuda y al peso de la deuda "
+          f"(US${es(arr['vp'], 0)} millones, compromisos del {arr.get('informe', '10-Q' if str(arr['cierre'])[5:7] != '12' else '10-K')} al {arr['cierre']}) se suma a la deuda y al peso de la deuda "
           f"del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación "
           f"del activo arrendado (US${es(arr['ajuste_ebit'], 0)} millones, +{es(arr['margen_pp'] * 100, 2)} pp de margen). Por eso "
           "los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y "
