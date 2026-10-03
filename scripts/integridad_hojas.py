@@ -50,7 +50,7 @@ def leer(gc, t: str) -> dict:
             sh = gc.open_by_key(sid)
             titulos = {w.title for w in sh.worksheets()}
             tabs = [x for x in TABS if x in titulos]
-            rng = [f"'{x}'!A1:N140" for x in tabs]
+            rng = [f"'{x}'!A1:N200" for x in tabs]  # 'Valuation output' llega a la fila 197 (bloque Disrupción)
             F = sh.values_batch_get(rng, params={"valueRenderOption": "FORMULA"})["valueRanges"]
             V = sh.values_batch_get(rng, params={"valueRenderOption": "UNFORMATTED_VALUE"})["valueRanges"]
             rev = gc.http_client.request("get", f"https://www.googleapis.com/drive/v3/files/{sid}/revisions",
