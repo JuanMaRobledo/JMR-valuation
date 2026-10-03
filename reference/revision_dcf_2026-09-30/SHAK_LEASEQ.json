@@ -1,0 +1,102 @@
+{
+ "ticker": "SHAK",
+ "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+ "fecha": "2026-10-03",
+ "sec": {
+  "trimestre": "2026-07-01",
+  "cierre_10k": "2025-12-31",
+  "gasto_ltm": 97.22300000000001,
+  "calendario": {
+   "resto_ejercicio": 35.696,
+   "anios": [
+    107.912,
+    113.591,
+    106.635,
+    94.255
+   ],
+   "despues": 430.32300000000004,
+   "total": 888.412
+  },
+  "fraccion": 0.4986301369863013,
+  "anios": [
+   89.79982465753426,
+   110.7592794520548,
+   110.1034712328767,
+   100.42804109589042,
+   94.255
+  ],
+  "despues": 383.0663835616439,
+  "pasivo_balance": 669.825
+ },
+ "vp_antes": 613.5552835321083,
+ "vp": 663.0181659670806,
+ "ajuste_ebit_antes": 20.62719071865463,
+ "ajuste_ebit": 23.5543148925466,
+ "margen_pp_antes": 0.013288147084103995,
+ "margen_pp": 0.015173816203405657,
+ "cambios": [
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 88.8,
+   "despues": 97.223,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 82.229,
+   "despues": 89.8,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 106.097,
+   "despues": 110.759,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 103.001,
+   "despues": 110.103,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 95.959,
+   "despues": 100.428,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 83.522,
+   "despues": 94.255,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 349.842,
+   "despues": 383.066,
+   "motivo": "Arrendamientos al último trimestre (2026-07-01, 10-Q, SEC XBRL): gasto LTM y compromisos por año calendario pasados a años móviles (f = 0.50; el quinto año calendario, no publicado, igual al cuarto)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B28",
+   "antes": 0.058288,
+   "despues": 0.060174,
+   "motivo": "Margen en base ajustada por arrendamientos: ajuste del EBIT 23.6 / ventas 1552.3 = 1.52 pp (antes 1.33 pp con el 10-K); diferencia +0.19 pp."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": 0.093288,
+   "despues": 0.095174,
+   "motivo": "Margen en base ajustada por arrendamientos: ajuste del EBIT 23.6 / ventas 1552.3 = 1.52 pp (antes 1.33 pp con el 10-K); diferencia +0.19 pp."
+  }
+ ]
+}

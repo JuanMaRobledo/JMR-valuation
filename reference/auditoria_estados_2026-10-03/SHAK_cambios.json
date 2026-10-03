@@ -1,0 +1,520 @@
+[
+ {
+  "hoja": "Income Statement",
+  "celda": "E21",
+  "antes": 19.8,
+  "despues": 24.13,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2019; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E23",
+  "antes": 0.61,
+  "despues": 0.63,
+  "motivo": "EPS básico 2019 (EarningsPerShareBasic); SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "E35",
+  "antes": 298.8,
+  "despues": 321.99,
+  "motivo": "Patrimonio total con minoritarios al cierre 2019; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E40",
+  "antes": 1020,
+  "despues": 12.35,
+  "motivo": "Cambio neto de caja (incluye restringida) 2019; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E3",
+  "antes": 19.8,
+  "despues": 24.13,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2019; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "E6",
+  "antes": 6.6,
+  "despues": 2.27,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2019)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "F21",
+  "antes": -42.2,
+  "despues": -45.53,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2020; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "F35",
+  "antes": 407.3,
+  "despues": 434.49,
+  "motivo": "Patrimonio total con minoritarios al cierre 2020; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "F40",
+  "antes": 1825,
+  "despues": 109.77,
+  "motivo": "Cambio neto de caja (incluye restringida) 2020; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "F3",
+  "antes": -42.2,
+  "despues": -45.53,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2020; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "F6",
+  "antes": 18.8,
+  "despues": 22.13,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2020)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "G21",
+  "antes": -8.7,
+  "despues": -10.11,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2021; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "G35",
+  "antes": 409.5,
+  "despues": 435.6,
+  "motivo": "Patrimonio total con minoritarios al cierre 2021; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "G40",
+  "antes": -608,
+  "despues": 155.53,
+  "motivo": "Cambio neto de caja (incluye restringida) 2021; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "G3",
+  "antes": -8.7,
+  "despues": -10.11,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2021; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "G6",
+  "antes": 9.3,
+  "despues": 10.71,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2021)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "H21",
+  "antes": -24.1,
+  "despues": -25.97,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2022; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "H35",
+  "antes": 395.1,
+  "despues": 419.75,
+  "motivo": "Patrimonio total con minoritarios al cierre 2022; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "H40",
+  "antes": 443,
+  "despues": -71.89,
+  "motivo": "Cambio neto de caja (incluye restringida) 2022; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "H3",
+  "antes": -24.1,
+  "despues": -25.97,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2022; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "H6",
+  "antes": 1.1,
+  "despues": 2.97,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2022)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I21",
+  "antes": 20.3,
+  "despues": 20.99,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2023; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I23",
+  "antes": 0.46,
+  "despues": 0.51,
+  "motivo": "EPS básico 2023 (EarningsPerShareBasic); SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I24",
+  "antes": 0.46,
+  "despues": 0.48,
+  "motivo": "EPS diluido 2023 (EarningsPerShareDiluted); SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "I35",
+  "antes": 443.4,
+  "despues": 469.37,
+  "motivo": "Patrimonio total con minoritarios al cierre 2023; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "I40",
+  "antes": 2896,
+  "despues": -5.87,
+  "motivo": "Cambio neto de caja (incluye restringida) 2023; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "I3",
+  "antes": 20.3,
+  "despues": 20.99,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2023; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "I6",
+  "antes": 6.9,
+  "despues": 6.21,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2023)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J21",
+  "antes": 10.2,
+  "despues": 10.82,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2024; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J23",
+  "antes": 0.23,
+  "despues": 0.26,
+  "motivo": "EPS básico 2024 (EarningsPerShareBasic); SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J24",
+  "antes": 0.23,
+  "despues": 0.24,
+  "motivo": "EPS diluido 2024 (EarningsPerShareDiluted); SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "J35",
+  "antes": 470,
+  "despues": 493.63,
+  "motivo": "Patrimonio total con minoritarios al cierre 2024; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "J40",
+  "antes": 481,
+  "despues": 96.06,
+  "motivo": "Cambio neto de caja (incluye restringida) 2024; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "J3",
+  "antes": 10.2,
+  "despues": 10.82,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2024; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "J6",
+  "antes": 40.6,
+  "despues": 39.98,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2024)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "K21",
+  "antes": 45.7,
+  "despues": 49.71,
+  "motivo": "Utilidad neta consolidada (incluye minoritarios, ProfitLoss) del ejercicio 2025; SEC XBRL 10-K (companyfacts). Antes era la atribuible."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "K23",
+  "antes": 1.09,
+  "despues": 1.14,
+  "motivo": "EPS básico 2025 (EarningsPerShareBasic); SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "K35",
+  "antes": 525.3,
+  "despues": 553.75,
+  "motivo": "Patrimonio total con minoritarios al cierre 2025; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "K40",
+  "antes": -2216,
+  "despues": 39.41,
+  "motivo": "Cambio neto de caja (incluye restringida) 2025; SEC XBRL 10-K (companyfacts). El valor anterior tenía otra escala."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "K3",
+  "antes": 45.7,
+  "despues": 49.71,
+  "motivo": "El flujo de caja parte de la utilidad consolidada (ProfitLoss) 2025; SEC XBRL 10-K (companyfacts)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "K6",
+  "antes": 59.5,
+  "despues": 55.49,
+  "motivo": "Se compensa el cambio de la utilidad neta para que el flujo operativo siga igual al reportado (2025)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "E4",
+  "antes": 0,
+  "despues": 36.51,
+  "motivo": "Valores negociables corrientes al cierre 2019; SEC XBRL 10-K (companyfacts). Estaban dentro de otros activos corrientes."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "E5",
+  "antes": 37.1,
+  "despues": 73.61,
+  "motivo": "Caja + valores negociables."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "E9",
+  "antes": 40.6,
+  "despues": 4.09,
+  "motivo": "Se sacan los valores negociables, que pasan a su propia fila (el total corriente no cambia)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "F4",
+  "antes": 0,
+  "despues": 36.89,
+  "motivo": "Valores negociables corrientes al cierre 2020; SEC XBRL 10-K (companyfacts). Estaban dentro de otros activos corrientes."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "F5",
+  "antes": 146.9,
+  "despues": 183.79,
+  "motivo": "Caja + valores negociables."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "F9",
+  "antes": 46.8,
+  "despues": 9.91,
+  "motivo": "Se sacan los valores negociables, que pasan a su propia fila (el total corriente no cambia)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "G4",
+  "antes": 0,
+  "despues": 80.0,
+  "motivo": "Valores negociables corrientes al cierre 2021; SEC XBRL 10-K (companyfacts). Estaban dentro de otros activos corrientes."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "G5",
+  "antes": 302.4,
+  "despues": 382.4,
+  "motivo": "Caja + valores negociables."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "G9",
+  "antes": 93.6,
+  "despues": 13.6,
+  "motivo": "Se sacan los valores negociables, que pasan a su propia fila (el total corriente no cambia)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L21",
+  "antes": 39.7,
+  "despues": 43.3,
+  "motivo": "LTM = ejercicio + acumulado 2026 − acumulado 2025 de ProfitLoss (con minoritarios)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L23",
+  "antes": 0.95,
+  "despues": 0.99,
+  "motivo": "EPS básico LTM = 1,14 + acumulado 2026 − acumulado 2025 (10-K y 10-Q)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L3",
+  "antes": 39.7,
+  "despues": 43.3,
+  "motivo": "Flujo LTM parte de la utilidad consolidada (ProfitLoss)."
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "celda": "L6",
+  "antes": 25,
+  "despues": 21.4,
+  "motivo": "Compensa el cambio de la utilidad para que el flujo operativo LTM siga en 191,6."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L6",
+  "antes": 33,
+  "despues": 34.66,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L8",
+  "antes": 33,
+  "despues": 34.66,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L9",
+  "antes": 37.3,
+  "despues": 51.1,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L10",
+  "antes": 430.3,
+  "despues": 393.76,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L11",
+  "antes": 625.9,
+  "despues": 673.3,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L15",
+  "antes": 840,
+  "despues": 883.22,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L16",
+  "antes": 1896.2,
+  "despues": 1950.28,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L18",
+  "antes": 24.7,
+  "despues": 23.61,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L22",
+  "antes": 1.9,
+  "despues": 1.97,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L23",
+  "antes": 218.2,
+  "despues": 210.42,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L24",
+  "antes": 244.9,
+  "despues": 236.0,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L25",
+  "antes": 247.7,
+  "despues": 248.25,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L27",
+  "antes": 274.7,
+  "despues": 272.72,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L28",
+  "antes": 1097.5,
+  "despues": 1142.73,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L29",
+  "antes": 1342.5,
+  "despues": 1378.73,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L31",
+  "antes": 452.6,
+  "despues": 456.19,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L33",
+  "antes": 72.7,
+  "despues": 88.1,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L34",
+  "antes": 544,
+  "despues": 544.32,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L35",
+  "antes": 572,
+  "despues": 571.55,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L36",
+  "antes": 1896.2,
+  "despues": 1950.28,
+  "motivo": "Saldo al 1-jul-2026, 10-Q al 1-jul-2026 (SEC XBRL). La columna LTM repetía el cierre de 2025."
+ }
+]

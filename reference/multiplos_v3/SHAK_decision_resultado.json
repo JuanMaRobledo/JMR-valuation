@@ -17,16 +17,18 @@
   "ajuste_peers": 0.1,
   "ajuste_motivo": "Ajuste +10%: Shake Shack abre ~15% más locales al año, más que Chipotle, Wingstop y Texas Roadhouse, aunque con menor margen.",
   "lambda": 0.1,
-  "lambda_motivo": "λ = 0,10: C es inestable. El capex de expansión deja el FCFF de FY+3 en ~9% del EBITDA, lo que hunde el EV/EBITDA justificado a 2,7x y el P/OCF a 5,1x; se le da poco peso.",
+  "lambda_motivo": "λ = 0,10 en P/E y P/OCF: C es inestable porque el capex de expansión deja el FCFF y el FCFE de FY+3 casi en cero; en EV/EBITDA el justificado es negativo (FCFF de FY+3 < 0), no se puede calcular y λ no aplica (Base = promedio de A y B).",
   "fuentes": [
    "[Shake Shack: carta a los accionistas del 2T26](https://www.sec.gov/Archives/edgar/data/0001620533/000162053326000033/a2q26shareholderletter.htm)",
    "[TipRanks: Shake Shack baja su guía 2026](https://www.tipranks.com/news/company-announcements/shake-shack-lowers-2026-outlook-amid-softer-guidance)"
   ],
-  "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$20,93 por acción y los múltiplos, US$49,99 hoy: 139% por encima del DCF, fuera del rango de ±25%. En el DCF el capex de expansión absorbe casi todo el flujo de caja, mientras los múltiplos (~18x EBITDA) aplicados al EBITDA de FY+3 se parecen al precio de mercado. Conviene revisar la reinversión (sales-to-capital) y el margen del DCF.",
+  "evaluacion": "Lectura del 3-oct-2026: EV/FCFF y P/FCFE no aplican (FCFF y FCFE proyectados negativos) y su peso pasa a EV/EBITDA, P/E y P/OCF. Los múltiplos aplicables quedan muy por encima del DCF y la brecha no es un error de cálculo: A es el múltiplo de la propia acción desde 2025 (historia corta, casi el precio de mercado) y B son peers con ROIC de 20-40%, mientras el ROIC de Shake Shack con arrendamientos es ~5% y en el DCF el crecimiento apenas crea valor (ROIC terminal = costo de capital). El DCF es el método más confiable para esta empresa; los múltiplos dicen cuánto paga hoy el mercado por restaurantes en expansión. Pendiente del analista (paso 6.5): ajustar la mediana de peers por margen y ROIC (hoy solo se ajusta +10% por crecimiento) o subir λ; no se movió para acercarlo al DCF.",
   "ticker": "SHAK",
   "fcf_a_fcff": 1.0,
-  "notas": {
-   "EV/FCFF": "La razón FCF después de intereses ÷ FCFF se fija en 1,0: el FCFF de Shake Shack es pequeño frente a sus ingresos por intereses y la razón calculada (1,37) es inestable."
+  "notas": {},
+  "no_aplica": {
+   "EV/FCFF": "No aplica (paso 6.1): con el DCF vigente (arrendamientos capitalizados y ventas/capital 1,51 desde el 1-oct-2026) el FCFF proyectado es negativo en FY+1, FY+2 y FY+3 en los tres casos (Base −71, −49 y −30 millones). Un múltiplo sobre un flujo negativo da precios negativos; peso 0 y su peso se reparte entre los múltiplos aplicables.",
+   "P/FCFE": "No aplica (paso 6.1): el FCFE proyectado del caso Base es negativo en FY+1 (−11 millones) y ~0 en FY+2, y el del Optimista es negativo en FY+1 y FY+2; la métrica no es positiva ni representativa en FY+1-FY+3. Peso 0 y su peso se reparte entre los múltiplos aplicables."
   }
  },
  "resultado": {
@@ -48,27 +50,28 @@
    "B_mediana": 18.18,
    "B_ajustada": 20.0,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "CMG 19,8x, WING 16,7x, TXRH 15,9x, BROS 19,6x",
    "B_excluidos": [
     "CAVA",
     "SG"
    ],
    "C": {
-    "Conservador": 0.69,
-    "Base": 2.72,
-    "Optimista": 7.9
+    "Conservador": 0.32,
+    "Base": -2.43,
+    "Optimista": -2.94
    },
    "mercado": 19.9,
    "lambda": 0.1,
-   "conservador": 12.65,
-   "base": 18.19,
-   "optimista": 30.69,
-   "factor_cons": 0.696,
-   "factor_opt": 1.687,
+   "conservador": 18.25,
+   "base": 19.9,
+   "optimista": 21.47,
+   "factor_cons": 0.917,
+   "factor_opt": 1.079,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    2.72,
+    19.8,
     20.0
    ],
    "antes": {
@@ -79,77 +82,8 @@
    "nota": ""
   },
   "EV/FCFF": {
-   "aplica": true,
-   "hoja": "EVFCFF",
-   "A": 68.24,
-   "A_desc": "mediana Dec '25 (etapa actual) = 68,2x",
-   "A_p25": 68.24,
-   "A_p75": 68.24,
-   "A_max": 175.24,
-   "A_excluidos": [
-    [
-     "Dec '19",
-     -132.78,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '20",
-     -105.52,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '21",
-     -71.52,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '22",
-     -30.83,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '23",
-     -267.9,
-     "métrica negativa o ~0"
-    ],
-    [
-     "LTM",
-     -242.46,
-     "métrica negativa o ~0"
-    ]
-   ],
-   "B_mediana": 28.39,
-   "B_ajustada": 31.22,
-   "B_n": 4,
-   "B_peers": "CMG 28,7x, WING 24,7x, TXRH 28,0x, BROS 53,8x",
-   "B_excluidos": [
-    "CAVA",
-    "SG"
-   ],
-   "C": {
-    "Conservador": 24.71,
-    "Base": 28.65,
-    "Optimista": 47.11
-   },
-   "mercado": 49.73,
-   "lambda": 0.1,
-   "conservador": 44.78,
-   "base": 47.62,
-   "optimista": 61.55,
-   "factor_cons": 0.94,
-   "factor_opt": 1.293,
-   "opt_tope_historico": null,
-   "base_en_rango": true,
-   "rango": [
-    28.65,
-    68.24
-   ],
-   "antes": {
-    "J8": null,
-    "J19": 30,
-    "J30": null
-   },
-   "nota": "La razón FCF después de intereses ÷ FCFF se fija en 1,0: el FCFF de Shake Shack es pequeño frente a sus ingresos por intereses y la razón calculada (1,37) es inestable."
+   "aplica": false,
+   "motivo": "No aplica (paso 6.1): con el DCF vigente (arrendamientos capitalizados y ventas/capital 1,51 desde el 1-oct-2026) el FCFF proyectado es negativo en FY+1, FY+2 y FY+3 en los tres casos (Base −71, −49 y −30 millones). Un múltiplo sobre un flujo negativo da precios negativos; peso 0 y su peso se reparte entre los múltiplos aplicables."
   },
   "P/E": {
    "aplica": true,
@@ -184,27 +118,28 @@
    "B_mediana": 27.6,
    "B_ajustada": 30.36,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "CMG 29,5x, WING 25,7x, TXRH 25,2x, BROS 52,9x",
    "B_excluidos": [
     "CAVA",
     "SG"
    ],
    "C": {
-    "Conservador": 10.41,
-    "Base": 12.94,
-    "Optimista": 18.59
+    "Conservador": 10.58,
+    "Base": 13.34,
+    "Optimista": 15.68
    },
    "mercado": 48.41,
    "lambda": 0.1,
-   "conservador": 39.94,
-   "base": 44.87,
-   "optimista": 56.51,
-   "factor_cons": 0.89,
-   "factor_opt": 1.259,
+   "conservador": 39.8,
+   "base": 44.91,
+   "optimista": 52.65,
+   "factor_cons": 0.886,
+   "factor_opt": 1.172,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    12.94,
+    13.34,
     66.47
    ],
    "antes": {
@@ -215,77 +150,8 @@
    "nota": ""
   },
   "P/FCFE": {
-   "aplica": true,
-   "hoja": "PFCFE",
-   "A": 60.05,
-   "A_desc": "mediana Dec '25 (etapa actual) = 60,0x",
-   "A_p25": 60.05,
-   "A_p75": 60.05,
-   "A_max": 163.47,
-   "A_excluidos": [
-    [
-     "Dec '19",
-     -116.65,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '20",
-     -99.32,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '21",
-     -63.6,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '22",
-     -25.35,
-     "métrica negativa o ~0"
-    ],
-    [
-     "Dec '23",
-     -238.13,
-     "métrica negativa o ~0"
-    ],
-    [
-     "LTM",
-     -198.46,
-     "métrica negativa o ~0"
-    ]
-   ],
-   "B_mediana": 25.74,
-   "B_ajustada": 28.32,
-   "B_n": 4,
-   "B_peers": "CMG 25,7x, WING 23,0x, TXRH 25,8x, BROS 70,3x",
-   "B_excluidos": [
-    "CAVA",
-    "SG"
-   ],
-   "C": {
-    "Conservador": 17.72,
-    "Base": 19.69,
-    "Optimista": 27.1
-   },
-   "mercado": 44.18,
-   "lambda": 0.1,
-   "conservador": 39.96,
-   "base": 41.73,
-   "optimista": 53.0,
-   "factor_cons": 0.958,
-   "factor_opt": 1.27,
-   "opt_tope_historico": null,
-   "base_en_rango": true,
-   "rango": [
-    19.69,
-    60.05
-   ],
-   "antes": {
-    "J8": null,
-    "J19": 30,
-    "J30": null
-   },
-   "nota": ""
+   "aplica": false,
+   "motivo": "No aplica (paso 6.1): el FCFE proyectado del caso Base es negativo en FY+1 (−11 millones) y ~0 en FY+2, y el del Optimista es negativo en FY+1 y FY+2; la métrica no es positiva ni representativa en FY+1-FY+3. Peso 0 y su peso se reparte entre los múltiplos aplicables."
   },
   "P/OCF": {
    "aplica": true,
@@ -305,27 +171,28 @@
    "B_mediana": 16.47,
    "B_ajustada": 18.12,
    "B_n": 4,
+   "B_regresion": null,
    "B_peers": "CMG 17,3x, WING 15,6x, TXRH 12,8x, BROS 18,3x",
    "B_excluidos": [
     "CAVA",
     "SG"
    ],
    "C": {
-    "Conservador": 3.13,
-    "Base": 5.14,
-    "Optimista": 9.97
+    "Conservador": 2.32,
+    "Base": 1.88,
+    "Optimista": 2.62
    },
    "mercado": 15.91,
    "lambda": 0.1,
-   "conservador": 12.15,
-   "base": 14.83,
-   "optimista": 20.09,
-   "factor_cons": 0.819,
-   "factor_opt": 1.354,
+   "conservador": 14.07,
+   "base": 14.5,
+   "optimista": 17.0,
+   "factor_cons": 0.97,
+   "factor_opt": 1.172,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    5.14,
+    1.88,
     18.12
    ],
    "antes": {
@@ -338,21 +205,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   12.311588764845213,
-   20.955164946119442,
-   32.78195692269951
+   2.2137814791727966,
+   15.636898802417617,
+   33.07095110710827
   ],
   "multiplos_hoy": [
-   30.95883814175326,
-   49.987837810293044,
-   93.16531935685053
+   70.46695766272128,
+   86.93048187654458,
+   108.81672779553588
   ],
   "ponderado_hoy": [
-   19.77048851560843,
-   32.56823409178888,
-   56.93530189635992
+   29.5150519525922,
+   44.15433203206841,
+   63.36926178247932
   ],
-  "brecha_base": 1.3854662055308702,
+  "brecha_base": 4.559317290146066,
   "fila_origen": 40
  }
 }
