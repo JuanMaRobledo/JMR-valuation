@@ -1,0 +1,8 @@
+{
+ "ticker": "SHAK",
+ "celda": "'Cost of capital worksheet'!B23",
+ "antes": "1,60",
+ "despues": 1.25,
+ "motivo": "Beta bottom-up (prompt v4, paso 2): Restaurant/Dining de Damodaran (0,78 desapalancada y corregida por caja, ene-2026) reapalancada con la D/E de mercado incluidos los arrendamientos = 0,98, más una prima explícita de ~0,27 por riesgo propio (cadena pequeña, un solo concepto, márgenes finos y consumo discrecional) = 1,25. La beta de regresión de la acción (1,60) queda como referencia.",
+ "fecha": "2026-10-03"
+}
