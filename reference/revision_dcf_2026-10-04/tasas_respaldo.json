@@ -1,0 +1,409 @@
+{
+ "MAESTRA": {
+  "sheet_id": "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "ADBE": {
+  "sheet_id": "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "AFYA": {
+  "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0518
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B47",
+    "antes": 0.11
+   }
+  ]
+ },
+ "BSX": {
+  "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "CELH": {
+  "sheet_id": "1E_s_A35yIAZRGatTIElusnMZs5NIvFJ9CUlGlqf7-j8",
+  "celdas": [
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "CMG": {
+  "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "DPZ": {
+  "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "DUOL": {
+  "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "EPAM": {
+  "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "GOOG": {
+  "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "INTU": {
+  "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "LULU": {
+  "sheet_id": "1wuEhOhrjlL5t-oSO9sRd7Py0Vw-47rv_4AAwaS8-ZJw",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0524
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "MSFT": {
+  "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0425
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "NKE": {
+  "sheet_id": "1OITWNynG7R3PKC1sITOOazW9jzXgFWFda6qNbbOnYZI",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0524
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "NVDA": {
+  "sheet_id": "1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "NVO": {
+  "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0511
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "ONON": {
+  "sheet_id": "1nlN8qDy9BipM5IWwGE5Fgf6VKpyYQScLXIPvqtAE9Oo",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0524
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "PAGS": {
+  "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B47",
+    "antes": 0.12
+   },
+   {
+    "range": "'DCF FCFE financiero'!B4",
+    "antes": 0.12
+   }
+  ]
+ },
+ "PLTR": {
+  "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.05
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "PYPL": {
+  "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0496
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "SHAK": {
+  "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ },
+ "UBER": {
+  "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   }
+  ]
+ },
+ "ZTS": {
+  "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+  "celdas": [
+   {
+    "range": "'Input sheet'!B35",
+    "antes": 0.0499
+   },
+   {
+    "range": "'Country equity risk premiums'!B2",
+    "antes": 0.0423
+   },
+   {
+    "range": "'Country equity risk premiums'!E190",
+    "antes": 0.0023
+   },
+   {
+    "range": "'Input sheet'!B46",
+    "antes": "Yes"
+   }
+  ]
+ }
+}

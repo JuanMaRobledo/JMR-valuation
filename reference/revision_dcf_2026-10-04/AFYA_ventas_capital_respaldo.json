@@ -1,0 +1,23 @@
+{
+ "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 1.5,
+   "despues": 0.75,
+   "motivo": "Ventas/capital de AFYA: con margen de 33% e impuesto de ~11-15%, 1,5 implicaba ~42% de rendimiento sobre el capital nuevo frente a un ROIC actual de 14,9% y terminal de 14,8% (sus ventas son ~0,5 veces su capital porque crece comprando plazas). 0,75 deja ~21% sobre el capital nuevo: parte del crecimiento viene de que maduran plazas ya compradas.",
+   "vigente": 1.5
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 1.2,
+   "despues": 0.75,
+   "motivo": "Ventas/capital de AFYA: con margen de 33% e impuesto de ~11-15%, 1,5 implicaba ~42% de rendimiento sobre el capital nuevo frente a un ROIC actual de 14,9% y terminal de 14,8% (sus ventas son ~0,5 veces su capital porque crece comprando plazas). 0,75 deja ~21% sobre el capital nuevo: parte del crecimiento viene de que maduran plazas ya compradas.",
+   "vigente": 1.2
+  }
+ ],
+ "omitidas": []
+}
