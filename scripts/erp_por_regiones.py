@@ -32,7 +32,7 @@ OUT = _ROOT / "reference" / "revision_dcf_2026-10-04" / "erp_regiones_respaldo.j
 CC, CE = "'Cost of capital worksheet'", "'Country equity risk premiums'"
 FILA = {"Africa": 22, "Asia": 23, "Australia & New Zealand": 24, "Caribbean": 25, "Central and South America": 26,
         "Eastern Europe": 27, "Middle East": 28, "North America": 29, "Western Europe": 30, "EMEA": 31, "RESTO": 32}
-CRP_EMEA, CRP_SIN_DESGLOSE, CRP_EMERGENTES = 0.0164, 0.0180, 0.0433
+CRP_EMEA, CRP_SIN_DESGLOSE, CRP_EMERGENTES = 0.0164, 0.0180, 0.0433  # la hoja usa coma decimal en fórmulas
 
 
 def main() -> int:
@@ -56,13 +56,13 @@ def main() -> int:
         antes = sh.values_get(f"{CC}!G22:I32", params={"valueRenderOption": "FORMULA"}).get("values", [])
         b26 = sh.values_get(f"{CC}!B26").get("values", [[""]])[0][0]
         data = [{"range": f"{CE}!E209", "values": [[0]]},
-                {"range": f"{CC}!G31:I31", "values": [["EMEA", "", f"={CE}!$B$2+{CRP_EMEA}"]]}]
+                {"range": f"{CC}!G31:I31", "values": [["EMEA", "", f"={CE}!$B$2+{str(CRP_EMEA).replace('.', ',')}"]]}]
         e = src.get(tk)
         if e:
             resto = e.get("resto", "sin desglose")
             crp = CRP_EMERGENTES if resto == "emergentes" else CRP_SIN_DESGLOSE
             data.append({"range": f"{CC}!G32:I32", "values": [[
-                "Mercados emergentes" if resto == "emergentes" else "Fuera de EE.UU. sin desglose", "", f"={CE}!$B$2+{crp}"]]})
+                "Mercados emergentes" if resto == "emergentes" else "Fuera de EE.UU. sin desglose", "", f"={CE}!$B$2+{str(crp).replace('.', ',')}"]]})
             for reg, fila in FILA.items():
                 data.append({"range": f"{CC}!H{fila}", "values": [[e["ventas"].get(reg, "")]]})
             data.append({"range": f"{CC}!B26", "values": [["Operating regions"]]})
@@ -72,7 +72,7 @@ def main() -> int:
             sh.values_batch_update({"valueInputOption": "USER_ENTERED", "data": data})
             time.sleep(2)
             k = sh.values_get(f"{CC}!B28", params={"valueRenderOption": "UNFORMATTED_VALUE"}).get("values", [[None]])[0][0]
-            print(f"{tk:7s} prima usada {k:.4%}" + (f"  ({b26} → Operating regions)" if e else ""))
+            print(f"{tk:7s} prima usada {k:.4%}" if isinstance(k, (int, float)) else f"{tk:7s} prima usada {k}" + (f"  ({b26} → Operating regions)" if e else ""))
         else:
             print(f"{tk:7s} {b26} → {'Operating regions' if e else b26}; ventas {e['ventas'] if e else '-'}")
         time.sleep(3)
