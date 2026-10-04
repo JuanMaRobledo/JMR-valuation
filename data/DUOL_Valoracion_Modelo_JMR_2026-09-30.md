@@ -89,10 +89,10 @@ Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden B
 |---|---|---:|---:|---:|---:|---:|
 | DCF de las historias al presente | — | 60% | — | US$115,16 | US$90,87 | US$149,46 |
 | EV/EBITDA | 34,4× / 29,9× / 37,6× | 10% | 25% | US$217,36 | US$173,36 | US$267,69 |
-| EV/FCFF | 24,7× / 20,8× / 27,3× | 15% | 38% | US$102,43 | US$91,34 | US$112,21 |
-| P/E | 25,0× / 21,3× / 30,0× | 5% | 13% | US$66,05 | US$50,20 | US$91,71 |
-| P/FCFE | 23,6× / 20,1× / 25,8× | 5% | 13% | US$25,30 | US$27,78 | US$20,19 |
-| P/OCF | 22,1× / 18,8× / 24,2× | 5% | 13% | US$30,82 | US$31,73 | US$27,49 |
+| EV/FCFF | 24,7× / 20,8× / 27,3× | 15% | 37% | US$102,43 | US$91,34 | US$112,21 |
+| P/E | 25,0× / 21,3× / 30,0× | 5% | 12% | US$66,05 | US$50,20 | US$91,71 |
+| P/FCFE | 23,6× / 20,1× / 25,8× | 5% | 12% | US$25,30 | US$27,78 | US$20,19 |
+| P/OCF | 22,1× / 18,8× / 24,2× | 5% | 12% | US$30,82 | US$31,73 | US$27,49 |
 | **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$108,02 | US$91,30 | US$126,42 |
 | **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$112,31 | US$91,04 | US$140,25 |
 
@@ -102,10 +102,10 @@ Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden B
 |---|---|---:|---:|---:|---:|---:|
 | DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$157,54 | US$124,30 | US$204,46 |
 | EV/EBITDA | 34,4× / 29,9× / 37,6× | 10% | 25% | US$311,40 | US$233,43 | US$409,16 |
-| EV/FCFF | 24,7× / 20,8× / 27,3× | 15% | 38% | US$151,93 | US$125,78 | US$187,12 |
-| P/E | 25,0× / 21,3× / 30,0× | 5% | 13% | US$96,53 | US$68,61 | US$143,43 |
-| P/FCFE | 23,6× / 20,1× / 25,8× | 5% | 13% | US$44,11 | US$41,89 | US$49,66 |
-| P/OCF | 22,1× / 18,8× / 24,2× | 5% | 13% | US$51,11 | US$46,82 | US$58,79 |
+| EV/FCFF | 24,7× / 20,8× / 27,3× | 15% | 37% | US$151,93 | US$125,78 | US$187,12 |
+| P/E | 25,0× / 21,3× / 30,0× | 5% | 12% | US$96,53 | US$68,61 | US$143,43 |
+| P/FCFE | 23,6× / 20,1× / 25,8× | 5% | 12% | US$44,11 | US$41,89 | US$49,66 |
+| P/OCF | 22,1× / 18,8× / 24,2× | 5% | 12% | US$51,11 | US$46,82 | US$58,79 |
 | **Ponderado de múltiplos solos a 3 años sin descontar** | — | 40% | 100% | US$158,79 | US$125,19 | US$203,94 |
 | **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$158,04 | US$124,66 | US$204,26 |
 
@@ -168,7 +168,7 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | WACC −1 pp | US$115,40 | +2,8% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Margen objetivo +3 pp.
+Supuestos más frágiles: Múltiplos Base −20%, Múltiplos Base +20%, Margen objetivo +3 pp.
 
 ## 8. Log de cambios en la hoja
 
