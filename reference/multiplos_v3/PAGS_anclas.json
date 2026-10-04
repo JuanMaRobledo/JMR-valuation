@@ -210,16 +210,16 @@
      "Dec '23": 5.01,
      "Dec '24": -3.13,
      "Dec '25": 2.07,
-     "LTM": 1.75
+     "LTM": 2.31
     },
     "mediana_5a": 4.13,
     "mediana_10a": 4.13,
-    "p25": 1.99,
+    "p25": 2.25,
     "p75": 4.35,
-    "min": 1.75,
+    "min": 2.07,
     "max": 5.01,
     "ultimo_cierre": 2.07,
-    "ltm": 1.75,
+    "ltm": 2.31,
     "regimen_bajo_actual": true,
     "excluidos": [
      [
@@ -406,5 +406,6 @@
    "error_cashflow": ""
   }
  ],
- "justificado_recalculado": "2026-10-03"
+ "justificado_recalculado": "2026-10-04",
+ "historia_actualizada": "2026-10-04"
 }

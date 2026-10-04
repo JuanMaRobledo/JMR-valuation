@@ -30,15 +30,15 @@
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 7.12,
-   "A_desc": "mediana LTM (etapa actual) = 7,1x",
-   "A_p25": 7.12,
-   "A_p75": 7.12,
+   "A": 7.18,
+   "A_desc": "mediana LTM (etapa actual) = 7,2x",
+   "A_p25": 7.18,
+   "A_p75": 7.18,
    "A_max": 58.67,
    "A_excluidos": [
     [
      "LTM",
-     7.12,
+     7.18,
      "< 0,4x la mediana (25.5x), caída puntual"
     ]
    ],
@@ -56,17 +56,17 @@
     "Base": 13.18,
     "Optimista": 15.17
    },
-   "mercado": 7.3,
+   "mercado": 7.33,
    "lambda": 0.25,
-   "conservador": 7.95,
-   "base": 8.77,
-   "optimista": 10.14,
+   "conservador": 7.97,
+   "base": 8.79,
+   "optimista": 10.17,
    "factor_cons": 0.906,
    "factor_opt": 1.157,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    7.12,
+    7.18,
     13.18
    ],
    "antes": {
@@ -79,10 +79,10 @@
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 9.95,
+   "A": 10.04,
    "A_desc": "mediana LTM (etapa actual) = 10,0x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 9.95,
-   "A_p75": 9.95,
+   "A_p25": 10.04,
+   "A_p75": 10.04,
    "A_max": 58.38,
    "A_excluidos": [
     [
@@ -105,11 +105,11 @@
     "Base": 26.16,
     "Optimista": 32.28
    },
-   "mercado": 9.63,
+   "mercado": 9.67,
    "lambda": 0.25,
-   "conservador": 12.27,
-   "base": 13.76,
-   "optimista": 16.32,
+   "conservador": 12.3,
+   "base": 13.79,
+   "optimista": 16.36,
    "factor_cons": 0.891,
    "factor_opt": 1.186,
    "opt_tope_historico": null,
@@ -271,16 +271,16 @@
    250.56032426561117
   ],
   "multiplos_hoy": [
-   95.42694946437933,
-   113.10354909460028,
-   138.4473479206268
+   95.53381431911268,
+   113.21996840074749,
+   138.6310624037792
   ],
   "ponderado_hoy": [
-   106.385622988411,
-   143.7804538527346,
-   183.29253845862058
+   106.449741901251,
+   143.8503054364229,
+   183.40276714851197
   ],
-  "brecha_base": -0.4040777375186768,
+  "brecha_base": -0.4034643451285077,
   "fila_origen": 40
  }
 }

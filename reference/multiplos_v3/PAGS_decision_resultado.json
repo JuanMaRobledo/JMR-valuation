@@ -148,9 +148,9 @@
   "P/OCF": {
    "aplica": true,
    "hoja": "POCF",
-   "A": 3.1,
-   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 3,1x",
-   "A_p25": 1.99,
+   "A": 3.22,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 3,2x",
+   "A_p25": 2.25,
    "A_p75": 4.35,
    "A_max": 5.01,
    "A_excluidos": [
@@ -178,17 +178,17 @@
     "Base": 6.15,
     "Optimista": 6.1
    },
-   "mercado": 3.71,
+   "mercado": 3.77,
    "lambda": 0.25,
-   "conservador": 3.63,
-   "base": 4.32,
+   "conservador": 3.75,
+   "base": 4.36,
    "optimista": 5.01,
-   "factor_cons": 0.84,
-   "factor_opt": 1.219,
-   "opt_tope_historico": 5.264199356031693,
+   "factor_cons": 0.859,
+   "factor_opt": 1.201,
+   "opt_tope_historico": 5.242979226356181,
    "base_en_rango": true,
    "rango": [
-    3.1,
+    3.22,
     6.15
    ],
    "antes": {
@@ -206,16 +206,16 @@
    13.660718077490936
   ],
   "multiplos_hoy": [
-   8.482050249552495,
-   10.703732205330937,
-   12.539943096903626
+   8.502043245236749,
+   10.709454032151847,
+   12.53994309690363
   ],
   "ponderado_hoy": [
-   9.824545816794826,
-   11.504846199996496,
-   12.988253089138551
+   9.836541614205377,
+   11.50827929608904,
+   12.98825308913855
   ],
-  "brecha_base": -0.15761872088172646,
+  "brecha_base": -0.1571684144181651,
   "fila_origen": 40
  }
 }

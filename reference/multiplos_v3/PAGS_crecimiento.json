@@ -68,12 +68,12 @@
   },
   {
    "metodo": "P/OCF",
-   "multiplo": 4.32,
+   "multiplo": 4.36,
    "multiploDcf": 7.591853168457307,
-   "gImplicito": 0.021862277762909908,
+   "gImplicito": 0.02278691736554871,
    "gDcf": 0.06718320771421177,
-   "dif": -0.04532092995130186,
-   "difValor": -0.4014574206287842,
+   "dif": -0.04439629034866306,
+   "difValor": -0.3965494079526767,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 40% por debajo del DCF en FY+3."
   }

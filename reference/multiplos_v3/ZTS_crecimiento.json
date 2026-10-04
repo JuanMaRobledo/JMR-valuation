@@ -24,23 +24,23 @@
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
-   "multiplo": 13.54,
+   "multiplo": 13.53,
    "multiploDcf": 15.953815360791078,
-   "gImplicito": 0.04100731986936039,
+   "gImplicito": 0.040973069459091266,
    "gDcf": 0.04806646958126721,
-   "dif": -0.007059149711906819,
-   "difValor": -0.16261971703269862,
+   "dif": -0.007093400122175943,
+   "difValor": -0.16327963969529202,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "EV/FCFF",
-   "multiplo": 22.46,
+   "multiplo": 22.44,
    "multiploDcf": 25.28976917517185,
-   "gImplicito": 0.04306765572231838,
+   "gImplicito": 0.04302803018948936,
    "gDcf": 0.04806646958126721,
-   "dif": -0.0049988138589488265,
-   "difValor": -0.12113157829869636,
+   "dif": -0.005038439391777852,
+   "difValor": -0.12196419043038431,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
@@ -68,12 +68,12 @@
   },
   {
    "metodo": "P/OCF",
-   "multiplo": 16.22,
+   "multiplo": 16.25,
    "multiploDcf": 18.788107567987115,
-   "gImplicito": 0.04049643374114357,
+   "gImplicito": 0.0405993725577884,
    "gDcf": 0.04817342488336122,
-   "dif": -0.0076769911422176484,
-   "difValor": -0.12895149622053403,
+   "dif": -0.0075740523255728165,
+   "difValor": -0.1274451166066738,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   }

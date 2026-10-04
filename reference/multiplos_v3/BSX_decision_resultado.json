@@ -24,10 +24,10 @@
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 13.48,
-   "A_desc": "mediana LTM (etapa actual) = 13,5x",
-   "A_p25": 13.48,
-   "A_p75": 13.48,
+   "A": 13.69,
+   "A_desc": "mediana LTM (etapa actual) = 13,7x",
+   "A_p25": 13.69,
+   "A_p75": 13.69,
    "A_max": 55.93,
    "A_excluidos": [],
    "B_mediana": 16.64,
@@ -47,18 +47,18 @@
     "Base": 13.59,
     "Optimista": 14.62
    },
-   "mercado": 11.89,
+   "mercado": 12.0,
    "lambda": 0.0,
-   "conservador": 10.95,
-   "base": 11.89,
-   "optimista": 13.43,
+   "conservador": 11.05,
+   "base": 12.0,
+   "optimista": 13.55,
    "factor_cons": 0.921,
    "factor_opt": 1.129,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     10.3,
-    13.59
+    13.69
    ],
    "antes": {
     "J8": 14.92,
@@ -70,21 +70,16 @@
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 19.62,
-   "A_desc": "mediana LTM (etapa actual) = 19,6x (EV/FCF × 0,95 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 19.62,
-   "A_p75": 19.62,
+   "A": 19.94,
+   "A_desc": "mediana LTM (etapa actual) = 19,9x (EV/FCF × 0,95 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 19.94,
+   "A_p75": 19.94,
    "A_max": 79.92,
    "A_excluidos": [
     [
      "Dec '18",
      -9306.96,
      "métrica negativa o ~0"
-    ],
-    [
-     "LTM",
-     20.69,
-     "< 0,4x la mediana (52.0x), caída puntual"
     ]
    ],
    "B_mediana": 25.06,
@@ -104,11 +99,11 @@
     "Base": 29.63,
     "Optimista": 33.54
    },
-   "mercado": 18.03,
+   "mercado": 18.19,
    "lambda": 0.0,
-   "conservador": 16.16,
-   "base": 18.03,
-   "optimista": 20.24,
+   "conservador": 16.3,
+   "base": 18.19,
+   "optimista": 20.41,
    "factor_cons": 0.896,
    "factor_opt": 1.122,
    "opt_tope_historico": null,
@@ -308,16 +303,16 @@
    43.921647891737706
   ],
   "multiplos_hoy": [
-   27.821255526718286,
-   31.88961667975329,
-   38.1829505081596
+   28.004852038842234,
+   32.09665664471221,
+   38.41037208273469
   ],
   "ponderado_hoy": [
-   28.648079647851326,
-   34.68438723793608,
-   41.62616893830646
+   28.72151825270091,
+   34.76720322391965,
+   41.7171375681365
   ],
-  "brecha_base": -0.1274489996161272,
+  "brecha_base": -0.12178405449124441,
   "fila_origen": 40
  }
 }

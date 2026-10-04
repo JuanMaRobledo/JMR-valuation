@@ -20,7 +20,7 @@
      "Dec '23": 25.67,
      "Dec '24": 19.15,
      "Dec '25": 15.41,
-     "LTM": 7.12
+     "LTM": 7.18
     },
     "mediana_5a": 25.67,
     "mediana_10a": 25.58,
@@ -29,12 +29,12 @@
     "min": 15.41,
     "max": 58.67,
     "ultimo_cierre": 15.41,
-    "ltm": 7.12,
+    "ltm": 7.18,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
       "LTM",
-      7.12,
+      7.18,
       "< 0,4x la mediana (25.5x), caída puntual"
      ]
     ]
@@ -70,16 +70,16 @@
      "Dec '23": 28.5,
      "Dec '24": 23.04,
      "Dec '25": 16.22,
-     "LTM": 10.16
+     "LTM": 10.25
     },
     "mediana_5a": 28.5,
     "mediana_10a": 28.5,
     "p25": 21.73,
     "p75": 37.7,
-    "min": 10.16,
+    "min": 10.25,
     "max": 58.38,
     "ultimo_cierre": 16.22,
-    "ltm": 10.16,
+    "ltm": 10.25,
     "regimen_bajo_actual": true,
     "excluidos": [
      [
@@ -408,5 +408,6 @@
    "ev_fcff": -1.2485326365803833
   }
  ],
- "justificado_recalculado": "2026-10-03"
+ "justificado_recalculado": "2026-10-04",
+ "historia_actualizada": "2026-10-04"
 }

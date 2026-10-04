@@ -188,7 +188,35 @@ def refresh_justified(path):
     return anchors
 
 
+def refresh_history(path):
+    """Recalcula solo el ancla A (historia de 'Trailing Valuation') con los datos vigentes de la hoja; deja los peers
+    (B, con su fecha) y recalcula también C. Para usar después de corregir los estados financieros (3-oct-2026)."""
+    p = Path(path)
+    anc = json.loads(p.read_text())
+    sh = get_gspread_client().open_by_key(anc["sheet_id"])
+    tv = sh.values_get("'Trailing Valuation'!A2:L24", params={"valueRenderOption": "UNFORMATTED_VALUE"}).get("values", [])
+    labels = [str(x).strip() for x in tv[0][1:]]
+    rows_tv = {r[0]: r[1:] for r in tv if r}
+    antes = {}
+    for m, (sheet, tv_row, tv_label) in METHODS.items():
+        if m in anc["metodos"]:
+            antes[m] = anc["metodos"][m]["historia"]
+            anc["metodos"][m]["historia"] = history_anchor(labels, rows_tv.get(tv_label, [])[:len(labels)])
+    anc["historia_actualizada"] = dt.date.today().isoformat()
+    p.write_text(json.dumps(anc, ensure_ascii=False, indent=1, default=str))
+    refresh_justified(path)
+    return antes, anc
+
+
 def main():
+    if len(sys.argv) > 2 and sys.argv[1] == "--solo-historia":
+        for path in sys.argv[2:]:
+            antes, a = refresh_history(path)
+            for m, d in a["metodos"].items():
+                h0, h1 = antes.get(m, {}), d["historia"]
+                print(f"{path.split('/')[-1][:5]} {m:9s} mediana 5A {h0.get('mediana_5a')} -> {h1.get('mediana_5a')} · "
+                      f"LTM {h0.get('ltm')} -> {h1.get('ltm')}")
+        return
     if len(sys.argv) > 2 and sys.argv[1] == "--solo-justificado":
         for path in sys.argv[2:]:
             a = refresh_justified(path)

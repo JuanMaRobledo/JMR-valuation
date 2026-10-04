@@ -35,15 +35,15 @@
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 19.8,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,8x",
-   "A_p25": 18.31,
-   "A_p75": 21.3,
-   "A_max": 71.52,
+   "A": 19.95,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,9x",
+   "A_p25": 18.52,
+   "A_p75": 21.37,
+   "A_max": 69.66,
    "A_excluidos": [
     [
      "Dec '20",
-     682.67,
+     675.15,
      "> 2,5x la mediana (41.4x)"
     ]
    ],
@@ -61,17 +61,17 @@
     "Base": -3.0,
     "Optimista": -3.82
    },
-   "mercado": 19.9,
+   "mercado": 19.97,
    "lambda": 0.1,
-   "conservador": 18.25,
-   "base": 19.9,
-   "optimista": 21.47,
-   "factor_cons": 0.917,
-   "factor_opt": 1.079,
+   "conservador": 18.35,
+   "base": 19.97,
+   "optimista": 21.51,
+   "factor_cons": 0.919,
+   "factor_opt": 1.077,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    19.8,
+    19.95,
     20.0
    ],
    "antes": {
@@ -92,7 +92,7 @@
    "A_desc": "mediana Dec '25, LTM (etapa actual) = 66,5x",
    "A_p25": 62.47,
    "A_p75": 70.47,
-   "A_max": 165.09,
+   "A_max": 158.21,
    "A_excluidos": [
     [
      "Dec '20",
@@ -111,7 +111,7 @@
     ],
     [
      "Dec '24",
-     574.04,
+     550.12,
      "> 2,5x la mediana (98.3x)"
     ]
    ],
@@ -210,16 +210,16 @@
    36.8997237010818
   ],
   "multiplos_hoy": [
-   72.47961786357051,
-   89.82973635912415,
-   113.28712942854298
+   72.73210379787864,
+   90.0315515954658,
+   113.41485619404605
   ],
   "ponderado_hoy": [
-   31.097974355034598,
-   46.78737828761886,
-   67.45468599206629
+   31.198968728757848,
+   46.868104382155515,
+   67.50577669826751
   ],
-  "brecha_base": 3.965033626015763,
+  "brecha_base": 3.976188277863706,
   "fila_origen": 40
  }
 }

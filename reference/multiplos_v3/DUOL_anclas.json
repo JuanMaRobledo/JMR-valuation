@@ -17,16 +17,16 @@
      "Dec '23": -1584.2,
      "Dec '24": 198.09,
      "Dec '25": 50.23,
-     "LTM": 36.71
+     "LTM": 35.9
     },
     "mediana_5a": 50.23,
     "mediana_10a": 50.23,
-    "p25": 40.09,
-    "p75": 46.85,
-    "min": 36.71,
+    "p25": 39.48,
+    "p75": 46.64,
+    "min": 35.9,
     "max": 50.23,
     "ultimo_cierre": 50.23,
-    "ltm": 36.71,
+    "ltm": 35.9,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -84,16 +84,16 @@
      "Dec '23": 65.31,
      "Dec '24": 53.18,
      "Dec '25": 20.38,
-     "LTM": 15.56
+     "LTM": 15.22
     },
     "mediana_5a": 49.72,
     "mediana_10a": 49.72,
     "p25": 20.38,
     "p75": 53.18,
-    "min": 15.56,
+    "min": 15.22,
     "max": 65.31,
     "ultimo_cierre": 20.38,
-    "ltm": 15.56,
+    "ltm": 15.22,
     "regimen_bajo_actual": true,
     "excluidos": [
      [
@@ -449,5 +449,6 @@
    "ev_fcff": 24.739892433998364
   }
  ],
- "justificado_recalculado": "2026-10-03"
+ "justificado_recalculado": "2026-10-04",
+ "historia_actualizada": "2026-10-04"
 }
