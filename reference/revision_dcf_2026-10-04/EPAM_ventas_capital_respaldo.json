@@ -1,0 +1,23 @@
+{
+ "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 3.2705,
+   "despues": 2.65,
+   "motivo": "Ventas/capital de EPAM (años 1-5): con margen objetivo de 13.1% e impuesto marginal de 24%, 3.27 implicaba 32% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 15.2% y de su industria de 26.4%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 26.4% (el mayor de los dos): 2.65.",
+   "vigente": 3.2705
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 2.8298,
+   "despues": 2.65,
+   "motivo": "Ventas/capital de EPAM (años 6-10): con margen objetivo de 13.1% e impuesto marginal de 24%, 2.83 implicaba 28% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 15.2% y de su industria de 26.4%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 26.4% (el mayor de los dos): 2.65.",
+   "vigente": 2.8298
+  }
+ ],
+ "omitidas": []
+}

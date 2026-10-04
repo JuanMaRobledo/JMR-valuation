@@ -1,0 +1,23 @@
+{
+ "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 1.2595,
+   "despues": 0.86,
+   "motivo": "Ventas/capital de BSX (años 1-5): con margen objetivo de 24.2% e impuesto marginal de 19%, 1.26 implicaba 25% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 9.8% y de su industria de 17.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 17.0% (el mayor de los dos): 0.86.",
+   "vigente": 1.2595
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 1.1654,
+   "despues": 0.86,
+   "motivo": "Ventas/capital de BSX (años 6-10): con margen objetivo de 24.2% e impuesto marginal de 19%, 1.17 implicaba 23% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 9.8% y de su industria de 17.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 17.0% (el mayor de los dos): 0.86.",
+   "vigente": 1.1654
+  }
+ ],
+ "omitidas": []
+}

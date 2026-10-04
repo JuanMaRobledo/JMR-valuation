@@ -1,0 +1,23 @@
+{
+ "sheet_id": "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 3.766,
+   "despues": 1.23,
+   "motivo": "Ventas/capital de ADBE (años 1-5): con margen objetivo de 40.1% e impuesto marginal de 25%, 3.77 implicaba 113% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 37.0% y de su industria de 20.6%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 37.0% (el mayor de los dos): 1.23.",
+   "vigente": 3.766
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 4.206,
+   "despues": 1.23,
+   "motivo": "Ventas/capital de ADBE (años 6-10): con margen objetivo de 40.1% e impuesto marginal de 25%, 4.21 implicaba 126% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 37.0% y de su industria de 20.6%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 37.0% (el mayor de los dos): 1.23.",
+   "vigente": 4.206
+  }
+ ],
+ "omitidas": []
+}

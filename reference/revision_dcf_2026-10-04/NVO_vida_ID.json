@@ -1,0 +1,44 @@
+[
+ {
+  "hoja": "R& D converter",
+  "celda": "F7",
+  "antes": 5,
+  "despues": 10,
+  "motivo": "Vida del I+D de NVO: 10 años (Damodaran, Investment Valuation cap. 9, p. 6-7: en farmacéuticas la vida es larga por la aprobación de fármacos; Amgen 10 años). Antes 5."
+ },
+ {
+  "hoja": "R& D converter",
+  "celda": "B17",
+  "antes": null,
+  "despues": "=('Income Statement'!E10+'Income Statement'!F10)/2",
+  "motivo": "Año −6 (jul-2019 a jun-2020) ≈ promedio de 2019 y 2020 de la hoja. Años −7 a −10: nivel de 2019 (los 20-F de NVO anteriores a 2019 no traen XBRL; el I+D fue casi plano en esos años). Pesan poco: les queda 30% a 0% sin amortizar."
+ },
+ {
+  "hoja": "R& D converter",
+  "celda": "B18",
+  "antes": null,
+  "despues": "='Income Statement'!E10",
+  "motivo": "Año −6 (jul-2019 a jun-2020) ≈ promedio de 2019 y 2020 de la hoja. Años −7 a −10: nivel de 2019 (los 20-F de NVO anteriores a 2019 no traen XBRL; el I+D fue casi plano en esos años). Pesan poco: les queda 30% a 0% sin amortizar."
+ },
+ {
+  "hoja": "R& D converter",
+  "celda": "B19",
+  "antes": null,
+  "despues": "='Income Statement'!E10",
+  "motivo": "Año −6 (jul-2019 a jun-2020) ≈ promedio de 2019 y 2020 de la hoja. Años −7 a −10: nivel de 2019 (los 20-F de NVO anteriores a 2019 no traen XBRL; el I+D fue casi plano en esos años). Pesan poco: les queda 30% a 0% sin amortizar."
+ },
+ {
+  "hoja": "R& D converter",
+  "celda": "B20",
+  "antes": null,
+  "despues": "='Income Statement'!E10",
+  "motivo": "Año −6 (jul-2019 a jun-2020) ≈ promedio de 2019 y 2020 de la hoja. Años −7 a −10: nivel de 2019 (los 20-F de NVO anteriores a 2019 no traen XBRL; el I+D fue casi plano en esos años). Pesan poco: les queda 30% a 0% sin amortizar."
+ },
+ {
+  "hoja": "R& D converter",
+  "celda": "B21",
+  "antes": null,
+  "despues": "='Income Statement'!E10",
+  "motivo": "Año −6 (jul-2019 a jun-2020) ≈ promedio de 2019 y 2020 de la hoja. Años −7 a −10: nivel de 2019 (los 20-F de NVO anteriores a 2019 no traen XBRL; el I+D fue casi plano en esos años). Pesan poco: les queda 30% a 0% sin amortizar."
+ }
+]

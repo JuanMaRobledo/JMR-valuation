@@ -1,0 +1,9 @@
+[
+ {
+  "hoja": "Input sheet",
+  "celda": "B25",
+  "antes": 0.15,
+  "despues": 0.34,
+  "motivo": "Impuesto marginal de AFYA: tasa legal de Brasil (IRPJ 25% + CSLL 9% = 34%). Damodaran (Investment Valuation cap. 10, p. 4): a perpetuidad es más seguro el marginal porque 'tax credits are seldom perpetual'. El beneficio de ProUni sigue en la tasa efectiva (10,6%) de los años 1-5 y converge a 34% en los años 6-10. Antes 15%."
+ }
+]

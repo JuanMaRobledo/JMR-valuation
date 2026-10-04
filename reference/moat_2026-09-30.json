@@ -118,7 +118,8 @@
    "roic_industria_sin_ajuste": 0.1695,
    "roic_terminal_antes_2026_10_04": 0.131,
    "ajuste_rd": "ROIC de Drugs (Pharmaceutical) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 5 años: 16,95% × (margen después de impuestos ajustado por I+D 26,36% / sin ajuste 28,66%) × capital invertido/(capital + activo de I+D) [0,901/(0,901+3,0×0,2094)] = 9,19%.",
-   "costo_capital_terminal_antes_2026_10_04": 0.092
+   "costo_capital_terminal_antes_2026_10_04": 0.092,
+   "nota_rd_vida": "Desde el 4-oct-2026 el I+D se amortiza en 10 años (antes 5); el ROIC terminal sigue en el costo de capital."
   },
   "ZTS": {
    "fuentes": "Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal",
