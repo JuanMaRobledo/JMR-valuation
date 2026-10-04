@@ -89,10 +89,10 @@ Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden B
 |---|---|---:|---:|---:|---:|---:|
 | DCF de las historias al presente | — | 60% | — | US$496,45 | US$252,86 | US$610,86 |
 | EV/EBITDA | 14,9× / 12,8× / 16,1× | 10% | 25% | US$415,74 | US$321,36 | US$483,56 |
-| EV/FCFF | 16,2× / 14,2× / 17,5× | 15% | 38% | US$259,98 | US$225,40 | US$287,87 |
-| P/E | 19,6× / 17,2× / 21,7× | 5% | 13% | US$376,53 | US$297,38 | US$448,31 |
-| P/FCFE | 14,4× / 12,5× / 15,5× | 5% | 13% | US$272,09 | US$218,24 | US$307,78 |
-| P/OCF | 14,6× / 12,4× / 15,8× | 5% | 13% | US$245,73 | US$207,24 | US$271,65 |
+| EV/FCFF | 16,2× / 14,2× / 17,5× | 15% | 37% | US$259,98 | US$225,40 | US$287,87 |
+| P/E | 19,6× / 17,2× / 21,7× | 5% | 12% | US$376,53 | US$297,38 | US$448,31 |
+| P/FCFE | 14,4× / 12,5× / 15,5× | 5% | 12% | US$272,09 | US$218,24 | US$307,78 |
+| P/OCF | 14,6× / 12,4× / 15,8× | 5% | 12% | US$245,73 | US$207,24 | US$271,65 |
 | **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$313,22 | US$255,23 | US$357,31 |
 | **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$423,16 | US$253,81 | US$509,44 |
 
@@ -102,10 +102,10 @@ Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden B
 |---|---|---:|---:|---:|---:|---:|
 | DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$678,35 | US$345,51 | US$834,68 |
 | EV/EBITDA (total con dividendos) | 14,9× / 12,8× / 16,1× | 10% | 25% | US$568,89 | US$410,24 | US$689,94 |
-| EV/FCFF (total con dividendos) | 16,2× / 14,2× / 17,5× | 15% | 38% | US$364,39 | US$293,39 | US$423,69 |
-| P/E (total con dividendos) | 19,6× / 17,2× / 21,7× | 5% | 13% | US$516,49 | US$379,90 | US$642,09 |
-| P/FCFE (total con dividendos) | 14,4× / 12,5× / 15,5× | 5% | 13% | US$376,29 | US$279,64 | US$445,00 |
-| P/OCF (total con dividendos) | 14,6× / 12,4× / 15,8× | 5% | 13% | US$344,13 | US$270,30 | US$398,84 |
+| EV/FCFF (total con dividendos) | 16,2× / 14,2× / 17,5× | 15% | 37% | US$364,39 | US$293,39 | US$423,69 |
+| P/E (total con dividendos) | 19,6× / 17,2× / 21,7× | 5% | 12% | US$516,49 | US$379,90 | US$642,09 |
+| P/FCFE (total con dividendos) | 14,4× / 12,5× / 15,5× | 5% | 12% | US$376,29 | US$279,64 | US$445,00 |
+| P/OCF (total con dividendos) | 14,6× / 12,4× / 15,8× | 5% | 12% | US$344,13 | US$270,30 | US$398,84 |
 | **Ponderado de múltiplos solos a 3 años sin descontar** (total) | — | 40% | 100% | US$433,48 | US$328,81 | US$517,11 |
 | Dividendos acumulados FY+1 a FY+3 (incluidos en cada múltiplo) | — | — | — | US$20,13 | US$20,13 | US$20,13 |
 | Ponderado de múltiplos solos: precio objetivo exdividendo | — | — | 100% | US$413,35 | US$308,68 | US$496,98 |
@@ -170,7 +170,7 @@ Alerta: más de 2 pp de diferencia en crecimiento implícito o más de 25% en va
 | WACC −1 pp | US$440,99 | +4,2% |
 
 Los cambios de crecimiento, margen y WACC se estimaron con el motor de la Calculadora (crecimiento único para los años 1-5) y se aplicaron como variación relativa al DCF de la hoja; los de múltiplos se calcularon con las fórmulas de las hojas.
-Supuestos más frágiles: Crecimiento años 2-5 +2 pp, Margen objetivo +3 pp, Margen objetivo −3 pp.
+Supuestos más frágiles: Crecimiento años 2-5 +2 pp, Margen objetivo −3 pp, Margen objetivo +3 pp.
 
 ## 8. Log de cambios en la hoja
 

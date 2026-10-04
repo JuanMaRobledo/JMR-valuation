@@ -1,0 +1,75 @@
+{
+ "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+ "antes": {
+  "'Resumen de Valoración'!B6:B11": [
+   [
+    "=VLOOKUP(\"DCF Damodaran\"; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+   ],
+   [
+    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+   ],
+   [
+    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+   ],
+   [
+    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+   ],
+   [
+    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+   ],
+   [
+    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+   ]
+  ],
+  "'Resumen de Valoración'!F5:F11": [
+   [
+    "=\"MOS vs análisis\""
+   ],
+   [
+    "=IFERROR(1-$B$3/D6;\"\")"
+   ],
+   [
+    "=IFERROR(1-$B$3/D7;\"\")"
+   ],
+   [
+    "=IFERROR(1-$B$3/D8;\"\")"
+   ],
+   [
+    "=IFERROR(1-$B$3/D9;\"\")"
+   ],
+   [
+    "=IFERROR(1-$B$3/D10;\"\")"
+   ],
+   [
+    "=IFERROR(1-$B$3/D11;\"\")"
+   ]
+  ],
+  "'Resumen de Valoración'!D38": [
+   [
+    412.4644145318747
+   ]
+  ]
+ },
+ "pesos_antes": [
+  [
+   0.6
+  ],
+  [
+   0.1
+  ],
+  [
+   0.15
+  ],
+  [
+   0.05
+  ],
+  [
+   0.05
+  ],
+  [
+   0.05
+  ]
+ ],
+ "no_aplica": [],
+ "d38_corregida": true
+}

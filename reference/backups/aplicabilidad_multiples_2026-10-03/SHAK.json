@@ -6,25 +6,38 @@
     "=VLOOKUP(\"DCF Damodaran\"; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
    ],
    [
-    "=VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    "=IFERROR(VLOOKUP(A7; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)*($F7<>\"No\")*(1-$B$6)/SUMPRODUCT(INDEX($I$7:$U$11; 0; MATCH($G$3; $I$5:$U$5; 0))*($F$7:$F$11<>\"No\")); 0)"
    ],
    [
-    "=VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    "=IFERROR(VLOOKUP(A8; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)*($F8<>\"No\")*(1-$B$6)/SUMPRODUCT(INDEX($I$7:$U$11; 0; MATCH($G$3; $I$5:$U$5; 0))*($F$7:$F$11<>\"No\")); 0)"
    ],
    [
-    "=VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    "=IFERROR(VLOOKUP(A9; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)*($F9<>\"No\")*(1-$B$6)/SUMPRODUCT(INDEX($I$7:$U$11; 0; MATCH($G$3; $I$5:$U$5; 0))*($F$7:$F$11<>\"No\")); 0)"
    ],
    [
-    "=VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    "=IFERROR(VLOOKUP(A10; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)*($F10<>\"No\")*(1-$B$6)/SUMPRODUCT(INDEX($I$7:$U$11; 0; MATCH($G$3; $I$5:$U$5; 0))*($F$7:$F$11<>\"No\")); 0)"
    ],
    [
-    "=VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)"
+    "=IFERROR(VLOOKUP(A11; $I$6:$U$11; MATCH($G$3; $I$5:$U$5; 0); FALSE)*($F11<>\"No\")*(1-$B$6)/SUMPRODUCT(INDEX($I$7:$U$11; 0; MATCH($G$3; $I$5:$U$5; 0))*($F$7:$F$11<>\"No\")); 0)"
    ]
   ],
-  "'Resumen de Valoración'!F5:F11": [],
+  "'Resumen de Valoración'!F5:F11": [
+   [
+    "¿Aplica? (paso 6.1)"
+   ],
+   [],
+   [],
+   [
+    "No"
+   ],
+   [],
+   [
+    "No"
+   ]
+  ],
   "'Resumen de Valoración'!D38": [
    [
-    18.608314469018293
+    "='Escenarios e historias'!H10"
    ]
   ]
  },
@@ -33,24 +46,24 @@
    0.6
   ],
   [
-   0.1
+   0.20000000000000004
   ],
   [
-   0.15
+   0
   ],
   [
-   0.05
+   0.10000000000000002
   ],
   [
-   0.05
+   0
   ],
   [
-   0.05
+   0.10000000000000002
   ]
  ],
  "no_aplica": [
   "EV/FCFF",
   "P/FCFE"
  ],
- "d38_corregida": true
+ "d38_corregida": false
 }

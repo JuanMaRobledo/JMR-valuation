@@ -96,7 +96,7 @@ def main() -> int:
             time.sleep(2)
             after = sh.values_get(f"{RES}!B6:B12", params={"valueRenderOption": "UNFORMATTED_VALUE"}).get("values", [])
             resumen[tk]["pesos_despues"] = after
-            same = [row[0] for row in vals_before] == [row[0] for row in after[:6]]
+            same = all(abs(x[0] - y[0]) < 1e-9 for x, y in zip(vals_before, after[:6]))
             print(f"        pesos {[round(r[0], 4) for r in after]} {'(sin cambio)' if same else '(CAMBIO)'}")
             time.sleep(3)
     if a.apply:
