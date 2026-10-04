@@ -1,0 +1,24 @@
+# Modelo JMR frente a Damodaran · 4-oct-2026
+
+Fuentes leídas en su web de NYU (pages.stern.nyu.edu/~adamodar): capítulos de *Investment Valuation*, 2.ª ed.
+(`pdfiles/valn2ed/chN.pdf`) y sus artículos (`pdfiles/papers/`). Las páginas son las del PDF de cada capítulo o artículo.
+Son ediciones antiguas (2002-2009): los principios no cambiaron; los números de sus ejemplos sí.
+
+| Regla del modelo | Damodaran (cita) | ¿Coincide? | Acción |
+|---|---|---|---|
+| Tasa libre de riesgo = Treasury a 10 años del día de corte, la misma para todas las valoraciones en dólares (5,29% al 30-sep-2026) | "When doing investment analysis on longer term projects or valuation, the risk free rate should be the long term government bond rate" (cap. 7, p. 3); debe ser coherente con la moneda de los flujos (cap. 7, p. 33) | Sí, desde hoy (antes había tasas de distintos días: 4,25%-5,29%) | Aplicado en las 22 hojas y en la maestra |
+| Prima madura = la implícita del último mes (septiembre de 2026, 4,09%) | La prima implícita "is market-driven and current and it does not require any historical data" (cap. 7, p. 25) | Sí | Aplicado (había primas de enero y de septiembre mezcladas) |
+| Prima país ponderada por las ventas de cada región | "The exposure to country risk ... does not come from where a company is incorporated but from its operations" (*Country Risk*, p. 25); la principal fuente de exposición son los ingresos de cada país (p. 19) | Sí, desde hoy (antes, país de registro) | Aplicado en 20 hojas; AFYA y PAGS son 100% Brasil |
+| Crecimiento terminal ≤ tasa libre de riesgo | "a simple rule of thumb on the stable growth rate is that it should not exceed the riskless rate used in the valuation" (cap. 12, p. 6) | Sí | — |
+| Costo de capital terminal: beta → 1 (tasa libre + prima madura) en mercados desarrollados | Al madurar, las betas se acercan a uno; "one option is to set the beta in stable growth to one for all firms" (cap. 12, p. 10) | Sí, desde hoy (había 9% fijo o el WACC inicial) | Aplicado: 9,38% |
+| Brasil conserva parte de la prima país en perpetuidad | En sus ejemplos la prima país baja en crecimiento estable pero no desaparece (Tata Motors 6% → 4%, Gerdau → 3%) (*Emerging markets*, p. 27 y 30) | Sí | AFYA 11,11%; PAGS Ke terminal 12,30% |
+| ROIC terminal: sin ventaja = costo de capital; ventaja durable = promedio de la industria; ventaja que se desvanece = punto medio | Sin ventaja, ROIC = costo de capital (cap. 12, p. 11 y 14); "moving them to or towards industry averages in stable growth seems like a reasonable compromise" (cap. 12, p. 18); P&G: ROE "about halfway between the cost of equity and the average" (cap. 12, p. 17) | Sí | — |
+| Reinversión terminal = g / ROIC | Tasa de reinversión = crecimiento / rendimiento del capital (cap. 12, p. 13-15) | Sí | — |
+| Ventas/capital coherente con el ROIC | Un rendimiento implícito de 40% sobre el capital nuevo, frente a 15% del sector, indica que se invierte demasiado poco: "decreasing the sales to capital ratio until the return on capital converges on 15% would be prudent" (cap. 11, p. 45) | No en AFYA (corregido hoy: 1,5 → 0,75); sin control en el resto | Añadido al prompt; falta revisarlo en las otras 21 |
+| I+D como gasto de capital, con vida según el tiempo hasta convertirse en producto | La vida "will vary across firms"; en farmacéuticas, larga por la aprobación (Amgen: 10 años) (cap. 9, p. 6-7) | Parcial: software 3 años (correcto); **NVO usa 5 años** | Propuesta: NVO a 10 años |
+| ROIC de la industria en la misma base que el modelo (I+D capitalizado) | Consecuencia de capitalizar el I+D: cambia el capital y el resultado operativo (cap. 9, p. 6-8) | Sí (desde el 4-oct) | — |
+| Impuesto: efectivo al principio, marginal a perpetuidad | "the safer choice is the marginal tax rate because none of the reasons noted above can be sustained in perpetuity ... tax credits are seldom perpetual" (cap. 10, p. 4) | **No en AFYA**: 15% a perpetuidad por ProUni (tasa legal 34%) | Propuesta: AFYA a 34% en el valor terminal |
+| Beta bottom-up (promedio del sector, reapalancada) | Bottom-up betas reducen el error de estimación (cap. 8, p. 23-24) | Sí | — |
+| Bancos: flujo al accionista, reinversión = capital regulatorio; modelo de rendimientos en exceso | La reinversión de un banco es capital regulatorio (cap. 21, p. 21-24); modelo de rendimientos en exceso (cap. 21, p. 24) | Sí (PAGS, desde el 4-oct) | — |
+| DCF y múltiplos promediados en un precio objetivo ponderado | DCF y valoración relativa "will generally yield different estimates"; hay que reconciliarlas, no promediarlas (cap. 17, p. 20) | No: el promedio es una regla propia del modelo | Mantener como filtro del usuario ("invertir solo si ambos coinciden"), leyendo el DCF por separado |
+| Margen de seguridad fijo de 35% | No es un criterio de Damodaran (es de Graham y Buffett); él mira la distribución de valores | No | Regla propia; se mantiene |
