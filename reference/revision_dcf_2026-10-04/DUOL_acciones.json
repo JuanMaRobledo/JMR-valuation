@@ -1,0 +1,16 @@
+[
+ {
+  "hoja": "Income Statement",
+  "celda": "L26",
+  "antes": 48.3,
+  "despues": 50.03,
+  "motivo": "Acciones LTM = diluidas ponderadas del 2T-2026 (10-Q de DUOL, WeightedAverageNumberOfDilutedSharesOutstanding, trimestre al 30-jun-2026) 50,03 M; la hoja repetía el cierre FY2025 (48,3 M)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L27",
+  "antes": 48.3,
+  "despues": 50.03,
+  "motivo": "Acciones LTM = diluidas ponderadas del 2T-2026 (10-Q de DUOL, WeightedAverageNumberOfDilutedSharesOutstanding, trimestre al 30-jun-2026) 50,03 M; la hoja repetía el cierre FY2025 (48,3 M)."
+ }
+]
