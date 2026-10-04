@@ -1,0 +1,15 @@
+{
+ "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 1.4283,
+   "despues": 1.12,
+   "motivo": "Ventas/capital de GOOG (años 6-10): con margen objetivo de 35.3% e impuesto marginal de 16%, 1.43 implicaba 42% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 33.3% y de su industria de 29.3%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 33.3% (el mayor de los dos): 1.12.",
+   "vigente": 1.4283
+  }
+ ],
+ "omitidas": []
+}

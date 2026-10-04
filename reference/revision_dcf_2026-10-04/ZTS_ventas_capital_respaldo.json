@@ -1,0 +1,23 @@
+{
+ "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 1.9073,
+   "despues": 0.91,
+   "motivo": "Ventas/capital de ZTS (años 1-5): con margen objetivo de 36.4% e impuesto marginal de 20%, 1.91 implicaba 56% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 26.4% y de su industria de 17.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 26.4% (el mayor de los dos): 0.91.",
+   "vigente": 1.9073
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 1.9073,
+   "despues": 0.91,
+   "motivo": "Ventas/capital de ZTS (años 6-10): con margen objetivo de 36.4% e impuesto marginal de 20%, 1.91 implicaba 56% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 26.4% y de su industria de 17.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 26.4% (el mayor de los dos): 0.91.",
+   "vigente": 1.9073
+  }
+ ],
+ "omitidas": []
+}

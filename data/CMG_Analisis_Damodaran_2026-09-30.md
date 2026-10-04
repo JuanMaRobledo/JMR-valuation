@@ -93,6 +93,16 @@ Sensibilidad del DCF Base (US$23,08; cada fila es un DCF completo con un solo su
 
 **Reinversión y retorno.** Todo el crecimiento es propio: cada local nuevo se paga con caja (capex de US$560-670 millones al año). La hoja usa un sales-to-capital de 1,51 con los arrendamientos incluidos: la historia 2023-2025 da 1,56 (capex neto más locales arrendados nuevos) y el promedio de Restaurant/Dining según Damodaran es 1,51. El retorno sobre el capital es alto (los locales se pagan en 2-3 años), así que el crecimiento crea valor mientras la economía unitaria se sostenga. La empresa además recompró US$2.783 millones LTM. Ventaja durable: marca probada de 30 años que superó la crisis sanitaria de 2015-2016, con ROIC (con arrendamientos) de 15-22%. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+
+| Referencia | Ventas/capital | Detalle |
+|---|---:|---|
+| Empresa hoy | 2,04 | ventas LTM 12.423,8 / capital invertido 6.080,6 millones |
+| Marginal, último año | 0,81 | Δventas 611,7 / Δcapital 754,6 millones (Dec '24 → Dec '25) |
+| Marginal, últimos tres años | 1,33 | Δventas 3.290,9 / Δcapital 2.480,4 millones (Dec '22 → Dec '25) |
+| Sector (Damodaran, enero de 2026) | 1,51 | Restaurant/Dining |
+| Usado en la hoja | 1,51 / 1,51 | años 1-5 / 6-10; rinde ~21% / ~21% sobre el capital nuevo (ROIC actual 24,9%) |
+
 **Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$5.386 millones, compromisos del 10-Q al 2026-06-30) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$166 millones, +1,33 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,43 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
 
 **Riesgo.** La hoja usa una beta de 0,95 (desde el 3-oct-2026; antes 1,10). Regla de la cartera (prompt v4, paso 2): bottom-up de Restaurant/Dining (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,12 = 0,85 + 0,10 por un solo concepto de restaurante = 0,95. La de regresión queda como referencia. El efecto de cada beta en el DCF Base está en la tabla.

@@ -1,0 +1,16 @@
+[
+ {
+  "hoja": "Input sheet",
+  "celda": "B32",
+  "antes": 2.3084,
+  "despues": 1.18,
+  "motivo": "Ventas/capital de INTU (años 1-5): con margen objetivo de 32.2% e impuesto marginal de 23%, 2.31 implicaba 57% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 22.6% y de su industria de 29.3%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 29.3% (el mayor de los dos): 1.18."
+ },
+ {
+  "hoja": "Input sheet",
+  "celda": "B33",
+  "antes": 1.8755,
+  "despues": 1.18,
+  "motivo": "Ventas/capital de INTU (años 6-10): con margen objetivo de 32.2% e impuesto marginal de 23%, 1.88 implicaba 46% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 22.6% y de su industria de 29.3%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 29.3% (el mayor de los dos): 1.18."
+ }
+]

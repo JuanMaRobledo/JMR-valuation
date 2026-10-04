@@ -1,0 +1,23 @@
+{
+ "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.2948,
+   "despues": 1.11,
+   "motivo": "Ventas/capital de UBER (años 1-5): con margen objetivo de 21.3% e impuesto marginal de 25%, 2.29 implicaba 37% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 17.7% y de su industria de 13.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 17.7% (el mayor de los dos): 1.11.",
+   "vigente": 2.2948
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 3.1107,
+   "despues": 1.11,
+   "motivo": "Ventas/capital de UBER (años 6-10): con margen objetivo de 21.3% e impuesto marginal de 25%, 3.11 implicaba 50% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 17.7% y de su industria de 13.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 17.7% (el mayor de los dos): 1.11.",
+   "vigente": 3.1107
+  }
+ ],
+ "omitidas": []
+}

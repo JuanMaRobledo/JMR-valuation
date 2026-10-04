@@ -1,0 +1,23 @@
+{
+ "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Input sheet",
+   "celda": "B32",
+   "antes": 2.4752,
+   "despues": 1.42,
+   "motivo": "Ventas/capital de PYPL (años 1-5): con margen objetivo de 19.7% e impuesto marginal de 25%, 2.48 implicaba 37% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 21.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 21.0% (el mayor de los dos): 1.42.",
+   "vigente": 2.4752
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B33",
+   "antes": 2.4752,
+   "despues": 1.42,
+   "motivo": "Ventas/capital de PYPL (años 6-10): con margen objetivo de 19.7% e impuesto marginal de 25%, 2.48 implicaba 37% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 21.0%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 21.0% (el mayor de los dos): 1.42.",
+   "vigente": 2.4752
+  }
+ ],
+ "omitidas": []
+}
