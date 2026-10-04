@@ -1,22 +1,22 @@
 {
- "fecha": "2026-10-03",
+ "fecha": "2026-10-04",
  "umbral": 0.02,
  "precio": 30.2,
- "dcfHoy": 33.93640153324255,
+ "dcfHoy": 33.74191176245948,
  "dcfInverso": {
-  "gImplicito": 0.1404874190143538,
+  "gImplicito": 0.14180703565762565,
   "gDcf": 0.14739346470022507,
-  "dif": -0.006906045685871276,
+  "dif": -0.005586429042599428,
   "lectura": "Coherente: el precio supone un crecimiento parecido al del DCF."
  },
  "gDcf": {
-  "anios4a10": 0.08966301580669375,
-  "perpetuidad": 0.0524,
-  "puntoMedio": 0.07103150790334688
+  "anios4a10": 0.08987730152097946,
+  "perpetuidad": 0.0529,
+  "puntoMedio": 0.07138865076048972
  },
  "parametros": {
-  "ke": 0.10148,
-  "wacc": 0.09595861213971865,
+  "ke": 0.10198,
+  "wacc": 0.09644038064935535,
   "roe": 0.2514925836500379,
   "fcffEbitda": 0.33739760964760857,
   "fcfeOcf": 0.9298033855792724
@@ -24,61 +24,61 @@
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
-   "multiplo": 17.01,
-   "multiploDcf": 11.43222488092822,
-   "gImplicito": 0.07464280302936512,
-   "gDcf": 0.06454096758019799,
-   "dif": 0.010101835449167124,
-   "difValor": 0.4623773638302602,
+   "multiplo": 16.97,
+   "multiploDcf": 11.3794313432293,
+   "gImplicito": 0.07506591570114188,
+   "gDcf": 0.06486730187181003,
+   "dif": 0.010198613829331848,
+   "difValor": 0.46547500340179426,
    "aplica": true,
-   "lectura": "Revisar: el múltiplo vale 46% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
+   "lectura": "Revisar: el múltiplo vale 47% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
   },
   {
    "metodo": "EV/FCFF",
-   "multiplo": 30.24,
-   "multiploDcf": 33.88353845443211,
-   "gImplicito": 0.0608767103426726,
-   "gDcf": 0.06454096758019799,
-   "dif": -0.0036642572375253923,
-   "difValor": -0.10190627401152053,
+   "multiplo": 30.14,
+   "multiploDcf": 33.72706568702259,
+   "gImplicito": 0.06123034915772545,
+   "gDcf": 0.06486730187181003,
+   "dif": -0.003636952714084582,
+   "difValor": -0.10076778434225142,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "P/E",
-   "multiplo": 32.7,
-   "multiploDcf": 25.5787068958628,
-   "gImplicito": 0.07882940751725116,
-   "gDcf": 0.0714990872307364,
-   "dif": 0.007330320286514758,
-   "difValor": 0.2784070802769558,
+   "multiplo": 32.62,
+   "multiploDcf": 25.46676441837769,
+   "gImplicito": 0.07932908087310181,
+   "gDcf": 0.07192687723264922,
+   "dif": 0.00740220364045259,
+   "difValor": 0.2808851357834954,
    "aplica": true,
    "lectura": "Revisar: el múltiplo vale 28% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
   },
   {
    "metodo": "P/FCFE",
-   "multiplo": 31.46,
-   "multiploDcf": 41.05434108656332,
-   "gImplicito": 0.06754654343807764,
-   "gDcf": 0.07528817362629107,
-   "dif": -0.00774163018821343,
-   "difValor": -0.23369857687725615,
+   "multiplo": 31.38,
+   "multiploDcf": 40.8746711497108,
+   "gImplicito": 0.06794726374305127,
+   "gDcf": 0.0756638530370737,
+   "dif": -0.007716589294022427,
+   "difValor": -0.23228740152880656,
    "aplica": true,
    "lectura": "Coherente con el DCF."
   },
   {
    "metodo": "P/OCF",
-   "multiplo": 27.9,
-   "multiploDcf": 38.172465335012795,
-   "gImplicito": 0.06595565668588138,
-   "gDcf": 0.07528817362629107,
-   "dif": -0.009332516940409694,
-   "difValor": -0.26910667793810583,
+   "multiplo": 27.83,
+   "multiploDcf": 38.00540761944051,
+   "gImplicito": 0.0663530271343088,
+   "gDcf": 0.0756638530370737,
+   "dif": -0.0093108259027649,
+   "difValor": -0.2677357843738951,
    "aplica": true,
    "lectura": "Revisar: el múltiplo vale 27% menos que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."
   }
  ],
- "dcfFy3": 45.351915777527715,
+ "dcfFy3": 45.15343796426289,
  "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
  "alertas": 3
 }
