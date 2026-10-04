@@ -142,6 +142,7 @@
     0.05177509779517303,
     0.052900000000000016
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
    "roic_terminal_usado": 0,
@@ -180,6 +181,8 @@
      792.250975317225,
      823.4019333161747
     ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
     "reinversion": [
      null,
      99.39663179344961,
@@ -325,6 +328,7 @@
     0.04603840592191255,
     0.0529
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
    "roic_terminal_usado": 0,
@@ -363,6 +367,8 @@
      535.4712864830514,
      556.525780670576
     ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
     "reinversion": [
      null,
      12.137978319112563,
@@ -511,6 +517,7 @@
     -0.00759882317646672,
     -1.734723475976807e-18
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.0,
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
@@ -549,6 +556,8 @@
      200.36959907028847,
      197.78520571560458
     ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
     "reinversion": [
      null,
      -151.83702767409432,
@@ -694,6 +703,7 @@
     0.05562901671587034,
     0.05289999999999999
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
    "roic_terminal_usado": 0,
@@ -732,6 +742,8 @@
      1076.070919918191,
      1118.38155262753
     ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
     "reinversion": [
      null,
      172.96836611873232,
