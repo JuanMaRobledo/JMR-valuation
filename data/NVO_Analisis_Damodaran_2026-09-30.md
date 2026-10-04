@@ -7,13 +7,13 @@ analysis_date: "2026-09-30"
 # Novo Nordisk A/S (NVO) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Valor intrínseco principal · DCF Base hoy: US$31,94 por acción** (Base · El volumen compensa la caída de precio).
+**Valor intrínseco principal · DCF Base hoy: US$30,57 por acción** (Base · El volumen compensa la caída de precio).
 
-**Complemento · DCF esperado por probabilidades: US$30,14.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$20,39–38,95. El MOS 35% se aplica al esperado: US$19,59. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$28,86.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$19,63–37,20. El MOS 35% se aplica al esperado: US$18,76. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, conversor de i+d alineado al ltm, flujos ltm, ventas/capital contrastado con la historia y la industria (8 celdas, con respaldo). DCF esperado US$35,63 → US$30,76. Salvedades abiertas: Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF. Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma automática; el balance se revisó con el informe semestral. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: capital invertido operativo, conversor de i+d alineado al ltm, flujos ltm, ventas/capital contrastado con la historia y la industria (8 celdas, con respaldo). DCF esperado US$35,63 → US$30,14. Salvedades abiertas: Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF. Emisor extranjero (NIIF) sin XBRL trimestral en la SEC: flujos LTM y EPS no se contrastaron de forma automática; el balance se revisó con el informe semestral. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$31,94 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$30,57 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -48,35 +48,35 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Crecimiento: el volumen sube, el precio baja.** Novo Nordisk creó el mercado de los GLP-1 (Ozempic, Wegovy, Rybelsus) y entre 2022 y 2024 creció 25-31% al año. Ahora vive una transición: Eli Lilly le quitó el liderazgo en obesidad en EE.UU., el precio realizado cae más rápido de lo que crece el volumen (autopago a US$149-299 al mes, Medicare desde julio de 2026), la semaglutida enfrenta genéricos fuera de EE.UU. y las insulinas declinan. En el 1S26 las ventas ajustadas crecieron solo 2% a tipo de cambio constante. La Base supone que la obesidad sigue creciendo (5% y luego 7-10%), que los GLP-1 para diabetes caen 8% el primer año y se estabilizan, y que las insulinas bajan 5% al año: −3,4% el primer año y 0,8% compuesto, ventas casi planas. No es una cifra exigente (~71% de empresas de su tamaño lo lograron): el riesgo de Novo no es de crecimiento sino de precio. La Conservadora (−2,8%) es una guerra de precios con Lilly y genéricos; la Disrupción (−6,0%), la pérdida de relevancia frente a Lilly y los orales; la Optimista (3,7%), que la próxima generación (CagriSema, amicretin, Wegovy en pastilla) recupere participación. Si 2027 no crece a tipo constante, la Conservadora pasa a ser la central.
 
-**Margen: bajar de 44% a 40%.** El margen operativo bajó de 44% a ~41% por precios, reestructuración y la integración de las plantas de Catalent. El modelo capitaliza el I+D (vida de 5 años), por eso el margen del primer año es 45,7%. La Base supone que converge a 40,0% en 7 años: el segmento de obesidad y diabetes todavía tiene ~52% de margen, pero el precio en EE.UU. baja. La Conservadora usa 35,0% y la Disrupción 30,0%. Bajo NIIF 16 los arrendamientos ya están en la deuda y no hay ajuste adicional. Dos puntos de margen mueven la Base a US$30,63 (−4%) o US$33,25 (+4%). Un margen de 36% o menos invalidaría la Base.
+**Margen: bajar de 44% a 40%.** El margen operativo bajó de 44% a ~41% por precios, reestructuración y la integración de las plantas de Catalent. El modelo capitaliza el I+D (vida de 5 años), por eso el margen del primer año es 45,7%. La Base supone que converge a 40,0% en 7 años: el segmento de obesidad y diabetes todavía tiene ~52% de margen, pero el precio en EE.UU. baja. La Conservadora usa 35,0% y la Disrupción 30,0%. Bajo NIIF 16 los arrendamientos ya están en la deuda y no hay ajuste adicional. Dos puntos de margen mueven la Base a US$29,32 (−4%) o US$31,82 (+4%). Un margen de 36% o menos invalidaría la Base.
 
-**Reinversión: capacidad comprada para una demanda que cambió de precio.** Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y la compra de tres plantas de llenado por US$11.700 millones. La hoja usa un ventas/capital de 0,57× en los años 1–5 —cada dólar de ventas nuevas exige ~US$1,75 de capital, muy intensivo— y 1,10× después. Revisión del 1-oct-2026: antes era 0,45, más exigente que la propia historia (0,57 en 2023-2025, con capex, intangibles y compras); el promedio de farmacéuticas según Damodaran es 1,11. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: es el mayor riesgo de destrucción de valor. El ROIC bajó de 87% a ~25%: la ventaja (patentes y escala de manufactura) se desvanece, así que después del año 10 la Base usa 9,4%, el punto medio entre el costo de capital y la industria. Sin ventaja, la Base valdría US$31,94 (+0,0%).
+**Reinversión: capacidad comprada para una demanda que cambió de precio.** Novo invirtió fuerte en capacidad: capex de US$9.210 millones en 2025 y la compra de tres plantas de llenado por US$11.700 millones. La hoja usa un ventas/capital de 0,57× en los años 1–5 —cada dólar de ventas nuevas exige ~US$1,75 de capital, muy intensivo— y 1,10× después. Revisión del 1-oct-2026: antes era 0,45, más exigente que la propia historia (0,57 en 2023-2025, con capex, intangibles y compras); el promedio de farmacéuticas según Damodaran es 1,11. Si el precio sigue cayendo, esa capacidad rinde menos de lo planeado: es el mayor riesgo de destrucción de valor. El ROIC bajó de 87% a ~25%: la ventaja (patentes y escala de manufactura) se desvanece, así que después del año 10 la Base usa 9,4%, el punto medio entre el costo de capital y la industria. Sin ventaja, la Base valdría US$30,57 (+0,0%).
 
-**Descuento.** La hoja usa una beta de 1,09; la bottom-up de farmacéuticas reapalancada da 1,00, una diferencia menor: el riesgo está en el precio de los GLP-1, no en la tasa. El costo de capital va de 9,21% a 9,38%. El crecimiento perpetuo es 3,50% y el terminal explica 39,8% del valor operativo. Un punto más de tasa lleva la Base a US$28,61 (−10%).
+**Descuento.** La hoja usa una beta de 1,09; la bottom-up de farmacéuticas reapalancada da 1,00, una diferencia menor: el riesgo está en el precio de los GLP-1, no en la tasa. El costo de capital va de 10,03% a 9,38%. El crecimiento perpetuo es 3,50% y el terminal explica 39,3% del valor operativo. Un punto más de tasa lleva la Base a US$27,41 (−10%).
 
-**Probabilidades y lectura del resultado.** La Base pesa 40%, la Conservadora 30%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$31,94 y el esperado US$30,14, frente a un precio de US$37,32: el mercado paga casi lo mismo que la Base. La evidencia en contra es que en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja. Los datos de CagriSema y amicretin frente a tirzepatida son el evento que más puede mover las probabilidades. Las acciones se fijan en 4.420,8 millones.
+**Probabilidades y lectura del resultado.** La Base pesa 40%, la Conservadora 30%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$30,57 y el esperado US$28,86, frente a un precio de US$37,32: el mercado paga casi lo mismo que la Base. La evidencia en contra es que en el 1S26 el precio cayó más rápido que el aumento del volumen y China y los emergentes están planos o en baja. Los datos de CagriSema y amicretin frente a tirzepatida son el evento que más puede mover las probabilidades. Las acciones se fijan en 4.420,8 millones.
 
 **Vida útil de I+D.** La hoja capitaliza el I+D (US$7.930 millones en el último año) y lo amortiza en 5 años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda provisional hasta contrastarla con la duración de los beneficios de los productos.
 
-**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$46.353 millones. Con el crecimiento de la Base llegan a US$48.323 millones en el año 5 y a US$43.576 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 45,7% en el año 1 a 40,0% al final, y se descuentan impuestos (21,7% al principio y 22,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$16.029 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$954 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$15.075 millones el primer año. Cada flujo se trae a hoy con el costo de capital (9,21% al principio, 9,38% al final): los diez años suman US$93.570 millones. Después del año 10 se supone que la empresa crece 3,50% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,4%; esa perpetuidad vale hoy US$61.864 millones, 40% del total. Flujos más terminal dan el valor de las operaciones, US$155.434 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$6.889 millones, más activos no operativos por US$357 millones, menos deuda por US$21.460 millones. Queda un patrimonio de US$141.220 millones que, repartido entre 4.420,8 millones de acciones, da US$31,94 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$46.353 millones. Con el crecimiento de la Base llegan a US$48.323 millones en el año 5 y a US$43.576 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 45,7% en el año 1 a 40,0% al final, y se descuentan impuestos (21,7% al principio y 22,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$16.029 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$954 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$15.075 millones el primer año. Cada flujo se trae a hoy con el costo de capital (10,03% al principio, 9,38% al final): los diez años suman US$90.649 millones. Después del año 10 se supone que la empresa crece 3,50% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,4%; esa perpetuidad vale hoy US$58.712 millones, 39% del total. Flujos más terminal dan el valor de las operaciones, US$149.361 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$6.889 millones, más activos no operativos por US$357 millones, menos deuda por US$21.460 millones. Queda un patrimonio de US$135.147 millones que, repartido entre 4.420,8 millones de acciones, da US$30,57 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
-**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 10,51× (peso 33% dentro de los múltiplos); EV/FCFF 19,41× (peso 17% dentro de los múltiplos); P/E 15,80× (peso 33% dentro de los múltiplos); P/FCFE 17,87× (peso 8% dentro de los múltiplos); P/OCF 11,97× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (9,6%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 10,46× (peso 33% dentro de los múltiplos); EV/FCFF 19,33× (peso 17% dentro de los múltiplos); P/E 15,73× (peso 33% dentro de los múltiplos); P/FCFE 17,81× (peso 8% dentro de los múltiplos); P/OCF 11,92× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (9,7%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
-Sensibilidad del DCF Base (US$31,94; cada fila es un DCF completo con un solo supuesto cambiado):
+Sensibilidad del DCF Base (US$30,57; cada fila es un DCF completo con un solo supuesto cambiado):
 
 | Supuesto cambiado | DCF Base | Variación |
 |---|---:|---:|
-| Margen objetivo −2 pp | US$30,63 | −4,1% |
-| Margen objetivo +2 pp | US$33,25 | +4,1% |
-| Crecimiento años 1–5 −2 pp | US$32,84 | +2,8% |
-| Crecimiento años 1–5 +2 pp | US$38,32 | +20,0% |
-| Ventas/capital −20% | US$31,85 | −0,3% |
-| Ventas/capital +20% | US$32,01 | +0,2% |
-| WACC +1 pp | US$28,61 | −10,4% |
-| WACC −1 pp | US$36,06 | +12,9% |
-| Crecimiento terminal −0,5 pp | US$31,90 | −0,2% |
-| Crecimiento terminal +0,5 pp | US$31,99 | +0,2% |
-| Acciones +5% | US$30,42 | −4,8% |
+| Margen objetivo −2 pp | US$29,32 | −4,1% |
+| Margen objetivo +2 pp | US$31,82 | +4,1% |
+| Crecimiento años 1–5 −2 pp | US$31,42 | +2,8% |
+| Crecimiento años 1–5 +2 pp | US$36,59 | +19,7% |
+| Ventas/capital −20% | US$30,47 | −0,3% |
+| Ventas/capital +20% | US$30,64 | +0,2% |
+| WACC +1 pp | US$27,41 | −10,3% |
+| WACC −1 pp | US$34,48 | +12,8% |
+| Crecimiento terminal −0,5 pp | US$30,52 | −0,2% |
+| Crecimiento terminal +0,5 pp | US$30,62 | +0,2% |
+| Acciones +5% | US$29,11 | −4,8% |
 
 
 ### Piezas del valor
@@ -99,22 +99,22 @@ Sensibilidad del DCF Base (US$31,94; cada fila es un DCF completo con un solo su
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,09 | 9,7% | 9,2% | US$34,79 |
-| Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,00 | 9,4% | 8,9% | US$35,40 |
+| Hoja (regresión o la cargada en el libro) | 1,09 | 10,6% | 10,0% | US$33,27 |
+| Bottom-up del sector (Drugs (Pharmaceutical), reapalancada) | 1,00 | 10,2% | 9,7% | US$33,96 |
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja que se desvanece | 25,2% | 9,2% | 9,4% | 9,2% | US$31,94 | US$34,79 |
+| Ventaja que se desvanece | 25,2% | 9,2% | 9,4% | 9,2% | US$30,57 | US$33,27 |
 
 Fuentes de ventaja: Patentes y escala de manufactura en diabetes y obesidad. Evidencia: ROIC 36-87% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$31,94 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$30,14. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$30,57 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$28,86. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -124,7 +124,7 @@ El valor intrínseco principal es el DCF Base: US$31,94 por acción, un DCF comp
 | Ingresos LTM | US$46.353 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 12.350 + 22.800 + 8.280 + 2.923 = 46.353. |
 | Margen inicial del DCF | 45,7% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 7 (Input sheet B31). |
 | Impuesto | 21,72% en años 1–5; 22,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
-| Descuento | WACC 9,21% → 9,38% | Tasa libre de riesgo 5,29%, beta 1,09, ERP 4,09%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Descuento | WACC 10,03% → 9,38% | Tasa libre de riesgo 5,29%, beta 1,09, ERP 4,93%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 0,57x en años 1–5; 1,10x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
 | Crecimiento perpetuo | Base/Conservadora/Optimista: 3,50%; Disrupción: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: parte de su crecimiento del año 5 (−2,9%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
 | ROIC terminal | Base/Conservadora/Disrupción/Optimista: 9,38% (= WACC terminal) | Criterio de ventaja competitiva (ventaja que se desvanece). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
@@ -151,68 +151,68 @@ En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor 
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en los bloques de 'Valuation output': ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**Base · El volumen compensa la caída de precio** — probabilidad 40%; valor terminal 150.016 (VP 61.864); DCF US$31,94 por acción.
+**Base · El volumen compensa la caída de precio** — probabilidad 40%; valor terminal 150.016 (VP 58.712); DCF US$30,57 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 44.791 | −3,4% | 45,7% | 16.029 | 954 | 15.075 | 9,2% | 13.804 |
-| 2 | 45.335 | 1,2% | 44,1% | 15.644 | 1.954 | 13.690 | 9,2% | 11.478 |
-| 3 | 46.448 | 2,5% | 43,3% | 15.731 | 1.688 | 14.043 | 9,2% | 10.781 |
-| 4 | 47.410 | 2,1% | 42,4% | 15.754 | 1.601 | 14.154 | 9,2% | 9.949 |
-| 5 | 48.323 | 1,9% | 41,6% | 15.748 | -3.391 | 19.140 | 9,2% | 12.319 |
-| 6 | 46.390 | −4,0% | 40,8% | 14.811 | -2.530 | 17.342 | 9,2% | 10.218 |
-| 7 | 43.606 | −6,0% | 40,0% | 13.635 | -1.189 | 14.824 | 9,3% | 7.992 |
-| 8 | 42.298 | −3,0% | 40,0% | 13.216 | 385 | 12.831 | 9,3% | 6.329 |
-| 9 | 42.721 | 1,0% | 40,0% | 13.339 | 777 | 12.562 | 9,3% | 5.666 |
-| 10 | 43.576 | 2,0% | 40,0% | 13.596 | 1.386 | 12.209 | 9,4% | 5.035 |
+| 1 | 44.791 | −3,4% | 45,7% | 16.029 | 954 | 15.075 | 10,0% | 13.701 |
+| 2 | 45.335 | 1,2% | 44,1% | 15.644 | 1.954 | 13.690 | 10,0% | 11.308 |
+| 3 | 46.448 | 2,5% | 43,3% | 15.731 | 1.688 | 14.043 | 10,0% | 10.542 |
+| 4 | 47.410 | 2,1% | 42,4% | 15.754 | 1.601 | 14.154 | 10,0% | 9.656 |
+| 5 | 48.323 | 1,9% | 41,6% | 15.748 | -3.391 | 19.140 | 10,0% | 11.868 |
+| 6 | 46.390 | −4,0% | 40,8% | 14.811 | -2.530 | 17.342 | 9,9% | 9.784 |
+| 7 | 43.606 | −6,0% | 40,0% | 13.635 | -1.189 | 14.824 | 9,8% | 7.619 |
+| 8 | 42.298 | −3,0% | 40,0% | 13.216 | 385 | 12.831 | 9,6% | 6.015 |
+| 9 | 42.721 | 1,0% | 40,0% | 13.339 | 777 | 12.562 | 9,5% | 5.378 |
+| 10 | 43.576 | 2,0% | 40,0% | 13.596 | 1.386 | 12.209 | 9,4% | 4.778 |
 | Terminal | 45.101 | 3,5% | 40,0% | 14.071 | 5.251 | 8.821 | 9,4% | — |
 
-**Conservadora · Guerra de precios con Lilly y genéricos** — probabilidad 30%; valor terminal 98.011 (VP 40.418); DCF US$25,10 por acción.
+**Conservadora · Guerra de precios con Lilly y genéricos** — probabilidad 30%; valor terminal 98.011 (VP 38.359); DCF US$24,09 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 42.790 | −7,7% | 45,7% | 15.313 | -2.208 | 17.521 | 9,2% | 16.043 |
-| 2 | 41.532 | −2,9% | 42,7% | 13.867 | -1.099 | 14.966 | 9,2% | 12.548 |
-| 3 | 40.905 | −1,5% | 41,1% | 13.168 | -611 | 13.779 | 9,2% | 10.578 |
-| 4 | 40.557 | −0,9% | 39,6% | 12.570 | -711 | 13.281 | 9,2% | 9.336 |
-| 5 | 40.151 | −1,0% | 38,1% | 11.963 | -5.635 | 17.598 | 9,2% | 11.327 |
-| 6 | 36.939 | −8,0% | 36,5% | 10.556 | -3.358 | 13.914 | 9,2% | 8.198 |
-| 7 | 33.245 | −10,0% | 35,0% | 9.096 | -1.511 | 10.607 | 9,3% | 5.719 |
-| 8 | 31.583 | −5,0% | 35,0% | 8.635 | 287 | 8.347 | 9,3% | 4.117 |
-| 9 | 31.899 | 1,0% | 35,0% | 8.715 | 580 | 8.135 | 9,3% | 3.669 |
-| 10 | 32.537 | 2,0% | 35,0% | 8.883 | 1.035 | 7.847 | 9,4% | 3.236 |
+| 1 | 42.790 | −7,7% | 45,7% | 15.313 | -2.208 | 17.521 | 10,0% | 15.924 |
+| 2 | 41.532 | −2,9% | 42,7% | 13.867 | -1.099 | 14.966 | 10,0% | 12.362 |
+| 3 | 40.905 | −1,5% | 41,1% | 13.168 | -611 | 13.779 | 10,0% | 10.344 |
+| 4 | 40.557 | −0,9% | 39,6% | 12.570 | -711 | 13.281 | 10,0% | 9.061 |
+| 5 | 40.151 | −1,0% | 38,1% | 11.963 | -5.635 | 17.598 | 10,0% | 10.912 |
+| 6 | 36.939 | −8,0% | 36,5% | 10.556 | -3.358 | 13.914 | 9,9% | 7.850 |
+| 7 | 33.245 | −10,0% | 35,0% | 9.096 | -1.511 | 10.607 | 9,8% | 5.452 |
+| 8 | 31.583 | −5,0% | 35,0% | 8.635 | 287 | 8.347 | 9,6% | 3.913 |
+| 9 | 31.899 | 1,0% | 35,0% | 8.715 | 580 | 8.135 | 9,5% | 3.482 |
+| 10 | 32.537 | 2,0% | 35,0% | 8.883 | 1.035 | 7.847 | 9,4% | 3.071 |
 | Terminal | 33.676 | 3,5% | 35,0% | 9.193 | 3.430 | 5.763 | 9,4% | — |
 
-**Disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly** — probabilidad 10%; valor terminal 62.051 (VP 25.589); DCF US$20,39 por acción.
+**Disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly** — probabilidad 10%; valor terminal 62.051 (VP 24.285); DCF US$19,63 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 41.283 | −10,9% | 45,7% | 14.773 | -5.466 | 20.239 | 9,2% | 18.532 |
-| 2 | 38.167 | −7,5% | 41,2% | 12.317 | -3.432 | 15.748 | 9,2% | 13.204 |
-| 3 | 36.211 | −5,1% | 39,0% | 11.049 | -1.934 | 12.983 | 9,2% | 9.967 |
-| 4 | 35.109 | −3,0% | 36,7% | 10.096 | -1.783 | 11.879 | 9,2% | 8.351 |
-| 5 | 34.092 | −2,9% | 34,5% | 9.204 | -5.981 | 15.186 | 9,2% | 9.774 |
-| 6 | 30.683 | −10,0% | 32,2% | 7.739 | -3.347 | 11.087 | 9,2% | 6.532 |
-| 7 | 27.001 | −12,0% | 30,0% | 6.332 | -1.473 | 7.805 | 9,3% | 4.208 |
-| 8 | 25.381 | −6,0% | 30,0% | 5.948 | -461 | 6.409 | 9,3% | 3.161 |
-| 9 | 24.873 | −2,0% | 30,0% | 5.825 | 0 | 5.825 | 9,3% | 2.627 |
-| 10 | 24.873 | 0,0% | 30,0% | 5.820 | 0 | 5.820 | 9,4% | 2.400 |
+| 1 | 41.283 | −10,9% | 45,7% | 14.773 | -5.466 | 20.239 | 10,0% | 18.394 |
+| 2 | 38.167 | −7,5% | 41,2% | 12.317 | -3.432 | 15.748 | 10,0% | 13.008 |
+| 3 | 36.211 | −5,1% | 39,0% | 11.049 | -1.934 | 12.983 | 10,0% | 9.746 |
+| 4 | 35.109 | −3,0% | 36,7% | 10.096 | -1.783 | 11.879 | 10,0% | 8.105 |
+| 5 | 34.092 | −2,9% | 34,5% | 9.204 | -5.981 | 15.186 | 10,0% | 9.416 |
+| 6 | 30.683 | −10,0% | 32,2% | 7.739 | -3.347 | 11.087 | 9,9% | 6.255 |
+| 7 | 27.001 | −12,0% | 30,0% | 6.332 | -1.473 | 7.805 | 9,8% | 4.011 |
+| 8 | 25.381 | −6,0% | 30,0% | 5.948 | -461 | 6.409 | 9,6% | 3.005 |
+| 9 | 24.873 | −2,0% | 30,0% | 5.825 | 0 | 5.825 | 9,5% | 2.493 |
+| 10 | 24.873 | 0,0% | 30,0% | 5.820 | 0 | 5.820 | 9,4% | 2.278 |
 | Terminal | 24.873 | 0,0% | 30,0% | 5.820 | 0 | 5.820 | 9,4% | — |
 
-**Optimista · La nueva generación recupera el liderazgo** — probabilidad 20%; valor terminal 208.153 (VP 85.839); DCF US$38,95 por acción.
+**Optimista · La nueva generación recupera el liderazgo** — probabilidad 20%; valor terminal 208.153 (VP 81.465); DCF US$37,20 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 46.432 | 0,2% | 45,7% | 16.616 | 3.176 | 13.440 | 9,2% | 12.307 |
-| 2 | 48.243 | 3,9% | 44,9% | 16.971 | 4.507 | 12.464 | 9,2% | 10.450 |
-| 3 | 50.812 | 5,3% | 44,6% | 17.720 | 4.220 | 13.501 | 9,2% | 10.364 |
-| 4 | 53.217 | 4,7% | 44,2% | 18.398 | 4.009 | 14.389 | 9,2% | 10.115 |
-| 5 | 55.502 | 4,3% | 43,8% | 19.019 | -1.947 | 20.967 | 9,2% | 13.495 |
-| 6 | 54.392 | −2,0% | 43,4% | 18.460 | -1.483 | 19.944 | 9,2% | 11.751 |
-| 7 | 52.760 | −3,0% | 43,0% | 17.734 | 0 | 17.734 | 9,3% | 9.561 |
-| 8 | 52.760 | 0,0% | 43,0% | 17.721 | 1.439 | 16.282 | 9,3% | 8.031 |
-| 9 | 54.343 | 3,0% | 43,0% | 18.240 | 1.729 | 16.511 | 9,3% | 7.447 |
-| 10 | 56.245 | 3,5% | 43,0% | 18.865 | 1.790 | 17.075 | 9,4% | 7.041 |
+| 1 | 46.432 | 0,2% | 45,7% | 16.616 | 3.176 | 13.440 | 10,0% | 12.215 |
+| 2 | 48.243 | 3,9% | 44,9% | 16.971 | 4.507 | 12.464 | 10,0% | 10.295 |
+| 3 | 50.812 | 5,3% | 44,6% | 17.720 | 4.220 | 13.501 | 10,0% | 10.135 |
+| 4 | 53.217 | 4,7% | 44,2% | 18.398 | 4.009 | 14.389 | 10,0% | 9.817 |
+| 5 | 55.502 | 4,3% | 43,8% | 19.019 | -1.947 | 20.967 | 10,0% | 13.001 |
+| 6 | 54.392 | −2,0% | 43,4% | 18.460 | -1.483 | 19.944 | 9,9% | 11.252 |
+| 7 | 52.760 | −3,0% | 43,0% | 17.734 | 0 | 17.734 | 9,8% | 9.115 |
+| 8 | 52.760 | 0,0% | 43,0% | 17.721 | 1.439 | 16.282 | 9,6% | 7.633 |
+| 9 | 54.343 | 3,0% | 43,0% | 18.240 | 1.729 | 16.511 | 9,5% | 7.068 |
+| 10 | 56.245 | 3,5% | 43,0% | 18.865 | 1.790 | 17.075 | 9,4% | 6.683 |
 | Terminal | 58.213 | 3,5% | 43,0% | 19.525 | 7.285 | 12.239 | 9,4% | — |
 
 
@@ -222,35 +222,35 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 93.570,42 | 61.863,90 | 155.434,32 | 141.220,12 | 31,94 |
-| Conservadora | 84.771,07 | 40.418,24 | 125.189,31 | 110.975,11 | 25,10 |
-| Disrupción | 78.756,13 | 25.588,75 | 104.344,88 | 90.130,68 | 20,39 |
-| Optimista | 100.562,57 | 85.839,02 | 186.401,59 | 172.187,39 | 38,95 |
+| Base | 90.649,31 | 58.711,92 | 149.361,23 | 135.147,03 | 30,57 |
+| Conservadora | 82.371,05 | 38.358,92 | 120.729,97 | 106.515,77 | 24,09 |
+| Disrupción | 76.711,49 | 24.285,00 | 100.996,49 | 86.782,29 | 19,63 |
+| Optimista | 97.213,57 | 81.465,50 | 178.679,07 | 164.464,87 | 37,20 |
 
-Ejemplo Base: (93.570,42 + 61.863,90 + 6.889 + 357 − 21.460) / 4.420,8 = US$31,94 por acción. El terminal representa 39,8% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (90.649,31 + 58.711,92 + 6.889 + 357 − 21.460) / 4.420,8 = US$30,57 por acción. El terminal representa 39,3% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-DCF esperado = 0,40 × 31,944471 + 0,30 × 25,102948 + 0,10 × 20,387866 + 0,20 × 38,949373 = US$30,137334 ≈ US$30,14. Los aportes son US$12,78 + US$7,53 + US$2,04 + US$7,79 por acción.
+DCF esperado = 0,40 × 30,570718 + 0,30 × 24,094229 + 0,10 × 19,630449 + 0,20 × 37,202513 = US$28,860103 ≈ US$28,86. Los aportes son US$12,23 + US$7,23 + US$1,96 + US$7,44 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 30,137334 × 0,65 = US$19,589267 ≈ US$19,59. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 28,860103 × 0,65 = US$18,759067 ≈ US$18,76. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: la hoja calcula cada historia en 'Valuation output' con la estructura de Damodaran: Base en las filas 2–42 (valor por acción B35), Conservadora 53–93 (B86), Optimista 104–144 (B137) y Disrupción 157–197 (B190). La pestaña «Escenarios e historias» guarda los supuestos de cada historia y resume los resultados: A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$31,94, es el valor intrínseco principal. El DCF esperado de US$30,14 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$30,57, es el valor intrínseco principal. El DCF esperado de US$28,86 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: El volumen compensa la caída de precio
 
 **Qué plantea.** Es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%.
 
-**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece 5%, 10%, 10%, 8%, 7%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -8%, -2%, 0%, 0%, 0%; Insulinas y otros de diabetes crece -5%, -5%, -5%, -5%, -5%; Enfermedades raras crece 2%, 2%, 2%, 2%, 2%. El crecimiento anual compuesto de cinco años es 0,8%; el margen operativo objetivo es 40,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 3,50%, el de la hoja. Probabilidad: 40%; DCF: US$31,94 por acción.
+**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece 5%, 10%, 10%, 8%, 7%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -8%, -2%, 0%, 0%, 0%; Insulinas y otros de diabetes crece -5%, -5%, -5%, -5%, -5%; Enfermedades raras crece 2%, 2%, 2%, 2%, 2%. El crecimiento anual compuesto de cinco años es 0,8%; el margen operativo objetivo es 40,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 3,50%, el de la hoja. Probabilidad: 40%; DCF: US$30,57 por acción.
 
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (ventas a tipo de cambio constante: +2% (1S26); participación de Novo en prescripciones de obesidad (EE.UU.): Detrás de Lilly; precio realizado de Wegovy/Ozempic en EE.UU.: En fuerte baja). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
@@ -259,7 +259,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$31,94, es el valo
 
 **Qué plantea.** Es una guerra de precios con Lilly y genéricos que se aceleran.
 
-**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece -2%, 4%, 5%, 5%, 4%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -12%, -6%, -4%, -3%, -3%; Insulinas y otros de diabetes crece -7%, -7%, -7%, -7%, -7%; Enfermedades raras crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es −2,8%; el margen operativo objetivo es 35,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 3,50%, el de la hoja. Probabilidad: 30%; DCF: US$25,10 por acción.
+**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece -2%, 4%, 5%, 5%, 4%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -12%, -6%, -4%, -3%, -3%; Insulinas y otros de diabetes crece -7%, -7%, -7%, -7%, -7%; Enfermedades raras crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es −2,8%; el margen operativo objetivo es 35,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 3,50%, el de la hoja. Probabilidad: 30%; DCF: US$24,09 por acción.
 
 **Cómo contrastarla.** La apoyarían: ventas a tipo de cambio constante: negativas; participación de Novo en prescripciones de obesidad (EE.UU.): sigue cayendo; precio realizado de Wegovy/Ozempic en EE.UU.: baja > 15% anual; resultados de CagriSema y amicretin: datos débiles.
 
@@ -268,7 +268,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$31,94, es el valo
 
 **Qué plantea.** Es la pérdida de relevancia frente a Lilly y los orales.
 
-**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes crece -8%, -8%, -8%, -8%, -8%; Enfermedades raras crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es −6,0%; el margen operativo objetivo es 30,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 0,00%: los años 6–10 pasan de −2,9% a ese nivel, sin recuperación. Probabilidad: 10%; DCF: US$20,39 por acción.
+**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes crece -8%, -8%, -8%, -8%, -8%; Enfermedades raras crece 0%, 0%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es −6,0%; el margen operativo objetivo es 30,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 0,00%: los años 6–10 pasan de −2,9% a ese nivel, sin recuperación. Probabilidad: 10%; DCF: US$19,63 por acción.
 
 **Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: ventas a tipo de cambio constante: negativas; participación de Novo en prescripciones de obesidad (EE.UU.): sigue cayendo; precio realizado de Wegovy/Ozempic en EE.UU.: baja > 15% anual; resultados de CagriSema y amicretin: datos débiles.
 
@@ -277,7 +277,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$31,94, es el valo
 
 **Qué plantea.** Es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación.
 
-**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece 10%, 15%, 15%, 12%, 10%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -4%, 0%, 2%, 2%, 2%; Insulinas y otros de diabetes crece -4%, -4%, -4%, -4%, -4%; Enfermedades raras crece 3%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 3,7%; el margen operativo objetivo es 43,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 3,50%, el de la hoja. Probabilidad: 20%; DCF: US$38,95 por acción.
+**Traducción al modelo.** Obesidad (Wegovy, Saxenda) crece 10%, 15%, 15%, 12%, 10%; Diabetes GLP-1 (Ozempic, Rybelsus) crece -4%, 0%, 2%, 2%, 2%; Insulinas y otros de diabetes crece -4%, -4%, -4%, -4%, -4%; Enfermedades raras crece 3%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 3,7%; el margen operativo objetivo es 43,0%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 3,50%, el de la hoja. Probabilidad: 20%; DCF: US$37,20 por acción.
 
 **Cómo contrastarla.** La confirmarían: ventas a tipo de cambio constante: ≥ +5% en 2027; participación de Novo en prescripciones de obesidad (EE.UU.): estabiliza; precio realizado de Wegovy/Ozempic en EE.UU.: baja < 10% anual; resultados de CagriSema y amicretin: superioridad o no inferioridad frente a tirzepatida.
 
@@ -288,11 +288,11 @@ La tesis Base es la trayectoria central defendida y su DCF, US$31,94, es el valo
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,09) | Valor/acción (beta 1,00) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **Base · El volumen compensa la caída de precio** | 40% | Obesidad (Wegovy, Saxenda): 5%, 10%, 10%, 8%, 7%; Diabetes GLP-1 (Ozempic, Rybelsus): -8%, -2%, 0%, 0%, 0%; Insulinas y otros de diabetes: -5%, -5%, -5%, -5%, -5%; Enfermedades raras: 2%, 2%, 2%, 2%, 2% | 0,8% | 40,0% | 0,6 | 3,50% | US$31,94 | US$32,49 |
-| **Conservadora · Guerra de precios con Lilly y genéricos** | 30% | Obesidad (Wegovy, Saxenda): -2%, 4%, 5%, 5%, 4%; Diabetes GLP-1 (Ozempic, Rybelsus): -12%, -6%, -4%, -3%, -3%; Insulinas y otros de diabetes: -7%, -7%, -7%, -7%, -7%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | −2,8% | 35,0% | 0,6 | 3,50% | US$25,10 | US$25,51 |
-| **Disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly** | 10% | Obesidad (Wegovy, Saxenda): -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus): -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes: -8%, -8%, -8%, -8%, -8%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | −6,0% | 30,0% | 0,6 | 0,00% | US$20,39 | US$20,69 |
-| **Optimista · La nueva generación recupera el liderazgo** | 20% | Obesidad (Wegovy, Saxenda): 10%, 15%, 15%, 12%, 10%; Diabetes GLP-1 (Ozempic, Rybelsus): -4%, 0%, 2%, 2%, 2%; Insulinas y otros de diabetes: -4%, -4%, -4%, -4%, -4%; Enfermedades raras: 3%, 3%, 3%, 3%, 3% | 3,7% | 43,0% | 0,6 | 3,50% | US$38,95 | US$39,65 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$30,14** | **US$30,65** |
+| **Base · El volumen compensa la caída de precio** | 40% | Obesidad (Wegovy, Saxenda): 5%, 10%, 10%, 8%, 7%; Diabetes GLP-1 (Ozempic, Rybelsus): -8%, -2%, 0%, 0%, 0%; Insulinas y otros de diabetes: -5%, -5%, -5%, -5%, -5%; Enfermedades raras: 2%, 2%, 2%, 2%, 2% | 0,8% | 40,0% | 0,6 | 3,50% | US$30,57 | US$31,20 |
+| **Conservadora · Guerra de precios con Lilly y genéricos** | 30% | Obesidad (Wegovy, Saxenda): -2%, 4%, 5%, 5%, 4%; Diabetes GLP-1 (Ozempic, Rybelsus): -12%, -6%, -4%, -3%, -3%; Insulinas y otros de diabetes: -7%, -7%, -7%, -7%, -7%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | −2,8% | 35,0% | 0,6 | 3,50% | US$24,09 | US$24,56 |
+| **Disrupción · Deterioro de los fundamentales: Novo pierde relevancia frente a Lilly** | 10% | Obesidad (Wegovy, Saxenda): -8%, -5%, 0%, 2%, 2%; Diabetes GLP-1 (Ozempic, Rybelsus): -15%, -10%, -8%, -5%, -5%; Insulinas y otros de diabetes: -8%, -8%, -8%, -8%, -8%; Enfermedades raras: 0%, 0%, 0%, 0%, 0% | −6,0% | 30,0% | 0,6 | 0,00% | US$19,63 | US$19,98 |
+| **Optimista · La nueva generación recupera el liderazgo** | 20% | Obesidad (Wegovy, Saxenda): 10%, 15%, 15%, 12%, 10%; Diabetes GLP-1 (Ozempic, Rybelsus): -4%, 0%, 2%, 2%, 2%; Insulinas y otros de diabetes: -4%, -4%, -4%, -4%, -4%; Enfermedades raras: 3%, 3%, 3%, 3%, 3% | 3,7% | 43,0% | 0,6 | 3,50% | US$37,20 | US$38,00 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$28,86** | **US$29,44** |
 
 Base (40%) es lo que muestra 2026: volumen creciendo y precio cayendo, con ventas casi planas y margen de ~40%. Conservadora (30%) es una guerra de precios con Lilly y genéricos que se aceleran. Disrupción (10%) es la pérdida de relevancia frente a Lilly y los orales. Optimista (20%) es la próxima generación de Novo (CagriSema, amicretin, Wegovy pill) recuperando participación. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -302,11 +302,11 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 
 | Crecimiento \ Margen | 36,0% | 38,0% | 40,0% | 42,0% | 44,0% |
 |---|---:|---:|---:|---:|---:|
-| −3,1% | 28,79 | 29,99 | 31,20 | 32,40 | 33,60 |
-| −1,1% | 30,80 | 32,17 | 33,53 | 34,90 | 36,27 |
-| 0,9% | 33,00 | 34,55 | 36,11 | 37,66 | 39,22 |
-| 2,9% | 35,42 | 37,18 | 38,95 | 40,71 | 42,47 |
-| 4,9% | 38,09 | 40,08 | 42,08 | 44,07 | 46,06 |
+| −3,1% | 27,62 | 28,77 | 29,92 | 31,07 | 32,21 |
+| −1,1% | 29,51 | 30,81 | 32,12 | 33,42 | 34,73 |
+| 0,9% | 31,58 | 33,06 | 34,54 | 36,02 | 37,51 |
+| 2,9% | 33,85 | 35,53 | 37,21 | 38,89 | 40,57 |
+| 4,9% | 36,35 | 38,25 | 40,15 | 42,06 | 43,96 |
 
 
 ### Pre-mortem
@@ -341,12 +341,12 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 35% | Margen 40% | Margen 44% |
 |---|---:|---:|---:|
-| Beta 1,09 | 5,0% (48% de las empresas) | 1,7% (68% de las empresas) | −0,4% (77% de las empresas) |
-| Beta 1,00 | 4,5% (51% de las empresas) | 1,3% (70% de las empresas) | −0,8% (79% de las empresas) |
+| Beta 1,09 | 6,3% (39% de las empresas) | 2,9% (62% de las empresas) | 0,7% (72% de las empresas) |
+| Beta 1,00 | 5,7% (43% de las empresas) | 2,4% (65% de las empresas) | 0,2% (74% de las empresas) |
 
-Frente al DCF Base (US$31,94), el valor intrínseco principal, el precio está por encima en 17%.
+Frente al DCF Base (US$30,57), el valor intrínseco principal, el precio está por encima en 22%.
 
-Frente al DCF esperado de las historias (US$30,14 con la beta de la hoja; US$30,65 con la propuesta), el precio está por encima en 24% y por encima en 22%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$28,86 con la beta de la hoja; US$29,44 con la propuesta), el precio está por encima en 29% y por encima en 27%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -356,10 +356,10 @@ Frente al DCF esperado de las historias (US$30,14 con la beta de la hoja; US$30,
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Pionera de los GLP-1 en transición: volumen en alza, precio en baja y Lilly adelante |  |
 | Probabilidades | Base 40% / Conservadora 30% / Disrupción 10% / Optimista 20% |  |
-| DCF Base hoy (valor intrínseco principal) | US$31,94 |  |
-| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$30,14 / US$30,65 |  |
-| Precio con MOS sobre el DCF esperado | US$19,59 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$20,39 a US$39,65 |  |
+| DCF Base hoy (valor intrínseco principal) | US$30,57 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$28,86 / US$29,44 |  |
+| Precio con MOS sobre el DCF esperado | US$18,76 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$19,63 a US$38,00 |  |
 | Confianza | Media: el mercado de obesidad crecerá; la participación y el precio de Novo son inciertos |  |
 | Qué cambiaría la opinión | Ventas a tipo de cambio constante, participación frente a Lilly y datos de CagriSema |  |
 | Revisión | Resultados de 9M26 (nov-2026) |  |
