@@ -1,0 +1,247 @@
+{
+ "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Income Statement",
+   "celda": "G5",
+   "antes": 0,
+   "despues": 1070.8,
+   "motivo": "Costo de ventas Dec '21: SEC 20-F 2023-12-31 (0001628280-24-018744), en USD con el tipo de cambio implícito de la hoja (0.18539 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G6",
+   "antes": 1937.1,
+   "despues": 866.3,
+   "motivo": "Utilidad bruta Dec '21 = ingresos − costo de ventas.",
+   "vigente": 1937.1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G7",
+   "antes": 1,
+   "despues": 0.4472,
+   "motivo": "Margen bruto Dec '21.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G8",
+   "antes": 0,
+   "despues": 445.21,
+   "motivo": "SG&A Dec '21 (ventas + pérdidas crediticias + administración): SEC 20-F 2023-12-31 (0001628280-24-018744), en USD con el tipo de cambio implícito de la hoja (0.18539 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G11",
+   "antes": 1518.8,
+   "despues": 2.79,
+   "motivo": "Otros gastos operativos Dec '21: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 1518.8
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H5",
+   "antes": 0,
+   "despues": 1447.27,
+   "motivo": "Costo de ventas Dec '22: SEC 20-F 2024-12-31 (0001628280-25-020406), en USD con el tipo de cambio implícito de la hoja (0.19372 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H6",
+   "antes": 2970.7,
+   "despues": 1523.43,
+   "motivo": "Utilidad bruta Dec '22 = ingresos − costo de ventas.",
+   "vigente": 2970.7
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H7",
+   "antes": 1,
+   "despues": 0.5128,
+   "motivo": "Margen bruto Dec '22.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H8",
+   "antes": 0,
+   "despues": 506.53,
+   "motivo": "SG&A Dec '22 (ventas + pérdidas crediticias + administración): SEC 20-F 2024-12-31 (0001628280-25-020406), en USD con el tipo de cambio implícito de la hoja (0.19372 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H11",
+   "antes": 2410.9,
+   "despues": 457.1,
+   "motivo": "Otros gastos operativos Dec '22: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 2410.9
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I5",
+   "antes": 0,
+   "despues": 1628.41,
+   "motivo": "Costo de ventas Dec '23: SEC 20-F 2025-12-31 (0001554855-26-000826), en USD con el tipo de cambio implícito de la hoja (0.20023 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I6",
+   "antes": 3193.4,
+   "despues": 1564.99,
+   "motivo": "Utilidad bruta Dec '23 = ingresos − costo de ventas.",
+   "vigente": 3193.4
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I7",
+   "antes": 1,
+   "despues": 0.4901,
+   "motivo": "Margen bruto Dec '23.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I8",
+   "antes": 0,
+   "despues": 433.01,
+   "motivo": "SG&A Dec '23 (ventas + pérdidas crediticias + administración): SEC 20-F 2025-12-31 (0001554855-26-000826), en USD con el tipo de cambio implícito de la hoja (0.20023 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I11",
+   "antes": 2518,
+   "despues": 456.58,
+   "motivo": "Otros gastos operativos Dec '23: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 2518
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J5",
+   "antes": 0,
+   "despues": 1772.98,
+   "motivo": "Costo de ventas Dec '24: SEC 20-F 2025-12-31 (0001554855-26-000826), en USD con el tipo de cambio implícito de la hoja (0.18578 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J6",
+   "antes": 3494.5,
+   "despues": 1721.52,
+   "motivo": "Utilidad bruta Dec '24 = ingresos − costo de ventas.",
+   "vigente": 3494.5
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J7",
+   "antes": 1,
+   "despues": 0.4926,
+   "motivo": "Margen bruto Dec '24.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J8",
+   "antes": 0,
+   "despues": 526.11,
+   "motivo": "SG&A Dec '24 (ventas + pérdidas crediticias + administración): SEC 20-F 2025-12-31 (0001554855-26-000826), en USD con el tipo de cambio implícito de la hoja (0.18578 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J11",
+   "antes": 2754.9,
+   "despues": 455.81,
+   "motivo": "Otros gastos operativos Dec '24: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 2754.9
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K5",
+   "antes": 0,
+   "despues": 1735.23,
+   "motivo": "Costo de ventas Dec '25: SEC 20-F 2025-12-31 (0001554855-26-000826), en USD con el tipo de cambio implícito de la hoja (0.17896 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K6",
+   "antes": 3652.7,
+   "despues": 1917.47,
+   "motivo": "Utilidad bruta Dec '25 = ingresos − costo de ventas.",
+   "vigente": 3652.7
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K7",
+   "antes": 1,
+   "despues": 0.5249,
+   "motivo": "Margen bruto Dec '25.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K8",
+   "antes": 0,
+   "despues": 471.58,
+   "motivo": "SG&A Dec '25 (ventas + pérdidas crediticias + administración): SEC 20-F 2025-12-31 (0001554855-26-000826), en USD con el tipo de cambio implícito de la hoja (0.17896 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K11",
+   "antes": 2873,
+   "despues": 666.19,
+   "motivo": "Otros gastos operativos Dec '25: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 2873
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L5",
+   "antes": 0,
+   "despues": 1816.51,
+   "motivo": "Costo de ventas LTM: SEC 20-F 2025 + 1S-2026 − 1S-2025 (6-K 2T-2026, 0001554855-26-001791), en USD con el tipo de cambio implícito de la hoja (0.18902 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L6",
+   "antes": 3891.5,
+   "despues": 2074.99,
+   "motivo": "Utilidad bruta LTM = ingresos − costo de ventas.",
+   "vigente": 3891.5
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L7",
+   "antes": 1,
+   "despues": 0.5332,
+   "motivo": "Margen bruto LTM.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L8",
+   "antes": 0,
+   "despues": 513.23,
+   "motivo": "SG&A LTM (ventas + pérdidas crediticias + administración): SEC 20-F 2025 + 1S-2026 − 1S-2025 (6-K 2T-2026, 0001554855-26-001791), en USD con el tipo de cambio implícito de la hoja (0.18902 USD/BRL).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L11",
+   "antes": 3058.2,
+   "despues": 728.46,
+   "motivo": "Otros gastos operativos LTM: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 3058.2
+  }
+ ],
+ "omitidas": []
+}

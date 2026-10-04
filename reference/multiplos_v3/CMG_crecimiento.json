@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-03",
+ "fecha": "2026-10-04",
  "umbral": 0.02,
  "precio": 32.36,
  "dcfHoy": 23.844906700587202,
@@ -17,7 +17,7 @@
  "parametros": {
   "ke": 0.09226999999999999,
   "wacc": 0.0880596541312233,
-  "roe": 0.7340893894676529,
+  "roe": 0.9445962686561619,
   "fcffEbitda": 0.41148624175770515,
   "fcfeOcf": 0.6142542988498353
  },
@@ -48,9 +48,9 @@
    "metodo": "P/E",
    "multiplo": 27.04,
    "multiploDcf": 20.077278253520316,
-   "gImplicito": 0.05619972711475567,
-   "gDcf": 0.04337261289471472,
-   "dif": 0.012827114220040951,
+   "gImplicito": 0.05552892284359419,
+   "gDcf": 0.042683210400620814,
+   "dif": 0.012845712442973375,
    "difValor": 0.34679609748691154,
    "aplica": true,
    "lectura": "Revisar: el múltiplo vale 35% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."

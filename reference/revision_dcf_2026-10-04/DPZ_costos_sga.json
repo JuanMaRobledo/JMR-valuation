@@ -1,0 +1,156 @@
+[
+ {
+  "hoja": "Income Statement",
+  "celda": "B8",
+  "antes": 0,
+  "despues": 313.65,
+  "motivo": "SG&A Jan '17: SEC 10-K 2018-12-30 (0001193125-19-046191)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "B11",
+  "antes": 275.5,
+  "despues": -38.15,
+  "motivo": "Otros gastos operativos Jan '17: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "C8",
+  "antes": 0,
+  "despues": 344.76,
+  "motivo": "SG&A Dec '17: SEC 10-K 2019-12-29 (0001193125-20-042675)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "C11",
+  "antes": 300.4,
+  "despues": -44.36,
+  "motivo": "Otros gastos operativos Dec '17: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "D8",
+  "antes": 0,
+  "despues": 372.46,
+  "motivo": "SG&A Dec '18: SEC 10-K 2021-01-03 (0001193125-21-055734)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "D11",
+  "antes": 677.3,
+  "despues": 304.84,
+  "motivo": "Otros gastos operativos Dec '18: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E8",
+  "antes": 0,
+  "despues": 382.29,
+  "motivo": "SG&A Dec '19: SEC 10-K 2022-01-02 (0000950170-22-002426)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "E11",
+  "antes": 713.2,
+  "despues": 330.91,
+  "motivo": "Otros gastos operativos Dec '19: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "F8",
+  "antes": 0,
+  "despues": 406.61,
+  "motivo": "SG&A Jan '21: SEC 10-K 2023-01-01 (0000950170-23-003938)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "F11",
+  "antes": 803.8,
+  "despues": 397.19,
+  "motivo": "Otros gastos operativos Jan '21: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "G8",
+  "antes": 0,
+  "despues": 428.33,
+  "motivo": "SG&A Jan '22: SEC 10-K 2023-12-31 (0000950170-24-019725)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "G11",
+  "antes": 834.9,
+  "despues": 406.57,
+  "motivo": "Otros gastos operativos Jan '22: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "H8",
+  "antes": 0,
+  "despues": 416.52,
+  "motivo": "SG&A Jan '23: SEC 10-K 2024-12-29 (0000950170-25-025223)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "H11",
+  "antes": 800.4,
+  "despues": 383.88,
+  "motivo": "Otros gastos operativos Jan '23: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I8",
+  "antes": 0,
+  "despues": 434.55,
+  "motivo": "SG&A Dec '23: SEC 10-K 2025-12-28 (0001193125-26-062321)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "I11",
+  "antes": 827.3,
+  "despues": 392.75,
+  "motivo": "Otros gastos operativos Dec '23: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J8",
+  "antes": 0,
+  "despues": 459.49,
+  "motivo": "SG&A Dec '24: SEC 10-K 2025-12-28 (0001193125-26-062321)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "J11",
+  "antes": 881.8,
+  "despues": 422.31,
+  "motivo": "Otros gastos operativos Dec '24: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "K8",
+  "antes": 0,
+  "despues": 464.12,
+  "motivo": "SG&A Dec '25: SEC 10-K 2025-12-28 (0001193125-26-062321)."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "K11",
+  "antes": 930.8,
+  "despues": 466.68,
+  "motivo": "Otros gastos operativos Dec '25: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L8",
+  "antes": 0,
+  "despues": 474.21,
+  "motivo": "SG&A LTM: SEC 10-K 2025-12-28 + 10-Q 2026-06-14 (6 meses) − mismo periodo del año anterior."
+ },
+ {
+  "hoja": "Income Statement",
+  "celda": "L11",
+  "antes": 942.06,
+  "despues": 467.85,
+  "motivo": "Otros gastos operativos LTM: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia."
+ }
+]

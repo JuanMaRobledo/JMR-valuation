@@ -1,0 +1,359 @@
+{
+ "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Income Statement",
+   "celda": "B5",
+   "antes": 0,
+   "despues": 4434.0,
+   "motivo": "Costo de ventas Dec '16: SEC 10-K 2018-12-31 (0001633917-19-000043).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "B6",
+   "antes": 10842,
+   "despues": 6408.0,
+   "motivo": "Utilidad bruta Dec '16 = ingresos − costo de ventas.",
+   "vigente": 10842
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "B7",
+   "antes": 1,
+   "despues": 0.591,
+   "motivo": "Margen bruto Dec '16.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "B11",
+   "antes": 5701,
+   "despues": 1267.0,
+   "motivo": "Otros gastos operativos Dec '16: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 5701
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "C5",
+   "antes": 0,
+   "despues": 5430.0,
+   "motivo": "Costo de ventas Dec '17: SEC 10-K 2019-12-31 (0001633917-20-000028).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "C6",
+   "antes": 13094,
+   "despues": 7664.0,
+   "motivo": "Utilidad bruta Dec '17 = ingresos − costo de ventas.",
+   "vigente": 13094
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "C7",
+   "antes": 1,
+   "despues": 0.5853,
+   "motivo": "Margen bruto Dec '17.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "C11",
+   "antes": 6926,
+   "despues": 1496.0,
+   "motivo": "Otros gastos operativos Dec '17: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 6926
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "D5",
+   "antes": 0,
+   "despues": 6855.0,
+   "motivo": "Costo de ventas Dec '18: SEC 10-K 2020-12-31 (0001633917-21-000018).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "D6",
+   "antes": 15451,
+   "despues": 8596.0,
+   "motivo": "Utilidad bruta Dec '18 = ingresos − costo de ventas.",
+   "vigente": 15451
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "D7",
+   "antes": 1,
+   "despues": 0.5563,
+   "motivo": "Margen bruto Dec '18.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "D11",
+   "antes": 8646,
+   "despues": 1791.0,
+   "motivo": "Otros gastos operativos Dec '18: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 8646
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "E5",
+   "antes": 0,
+   "despues": 8170.0,
+   "motivo": "Costo de ventas Dec '19: SEC 10-K 2021-12-31 (0001633917-22-000027).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "E6",
+   "antes": 17772,
+   "despues": 9602.0,
+   "motivo": "Utilidad bruta Dec '19 = ingresos − costo de ventas.",
+   "vigente": 17772
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "E7",
+   "antes": 1,
+   "despues": 0.5403,
+   "motivo": "Margen bruto Dec '19.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "E11",
+   "antes": 8944,
+   "despues": 774.0,
+   "motivo": "Otros gastos operativos Dec '19: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 8944
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "F5",
+   "antes": 0,
+   "despues": 9675.0,
+   "motivo": "Costo de ventas Dec '20: SEC 10-K 2022-12-31 (0001633917-23-000033).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "F6",
+   "antes": 21454,
+   "despues": 11779.0,
+   "motivo": "Utilidad bruta Dec '20 = ingresos − costo de ventas.",
+   "vigente": 21454
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "F7",
+   "antes": 1,
+   "despues": 0.549,
+   "motivo": "Margen bruto Dec '20.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "F11",
+   "antes": 10403,
+   "despues": 728.0,
+   "motivo": "Otros gastos operativos Dec '20: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 10403
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G5",
+   "antes": 0,
+   "despues": 11375.0,
+   "motivo": "Costo de ventas Dec '21: SEC 10-K 2023-12-31 (0001633917-24-000024).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G6",
+   "antes": 25371,
+   "despues": 13996.0,
+   "motivo": "Utilidad bruta Dec '21 = ingresos − costo de ventas.",
+   "vigente": 25371
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G7",
+   "antes": 1,
+   "despues": 0.5517,
+   "motivo": "Margen bruto Dec '21.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "G11",
+   "antes": 12247,
+   "despues": 872.0,
+   "motivo": "Otros gastos operativos Dec '21: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 12247
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H5",
+   "antes": 0,
+   "despues": 13745.0,
+   "motivo": "Costo de ventas Dec '22: SEC 10-K 2024-12-31 (0001633917-25-000019).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H6",
+   "antes": 27518,
+   "despues": 13773.0,
+   "motivo": "Utilidad bruta Dec '22 = ingresos − costo de ventas.",
+   "vigente": 27518
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H7",
+   "antes": 1,
+   "despues": 0.5005,
+   "motivo": "Margen bruto Dec '22.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "H11",
+   "antes": 14755,
+   "despues": 1010.0,
+   "motivo": "Otros gastos operativos Dec '22: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 14755
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I5",
+   "antes": 0,
+   "despues": 16067.0,
+   "motivo": "Costo de ventas Dec '23: SEC 10-K 2025-12-31 (0001633917-26-000024).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I6",
+   "antes": 29771,
+   "despues": 13704.0,
+   "motivo": "Utilidad bruta Dec '23 = ingresos − costo de ventas.",
+   "vigente": 29771
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I7",
+   "antes": 1,
+   "despues": 0.4603,
+   "motivo": "Margen bruto Dec '23.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I11",
+   "antes": 16830,
+   "despues": 763.0,
+   "motivo": "Otros gastos operativos Dec '23: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 16830
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J5",
+   "antes": 0,
+   "despues": 17139.0,
+   "motivo": "Costo de ventas Dec '24: SEC 10-K 2025-12-31 (0001633917-26-000024).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J6",
+   "antes": 31797,
+   "despues": 14658.0,
+   "motivo": "Utilidad bruta Dec '24 = ingresos − costo de ventas.",
+   "vigente": 31797
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J7",
+   "antes": 1,
+   "despues": 0.461,
+   "motivo": "Margen bruto Dec '24.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "J11",
+   "antes": 18313,
+   "despues": 1174.0,
+   "motivo": "Otros gastos operativos Dec '24: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 18313
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K5",
+   "antes": 0,
+   "despues": 17707.0,
+   "motivo": "Costo de ventas Dec '25: SEC 10-K 2025-12-31 (0001633917-26-000024).",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K6",
+   "antes": 33172,
+   "despues": 15465.0,
+   "motivo": "Utilidad bruta Dec '25 = ingresos − costo de ventas.",
+   "vigente": 33172
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K7",
+   "antes": 1,
+   "despues": 0.4662,
+   "motivo": "Margen bruto Dec '25.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "K11",
+   "antes": 18779,
+   "despues": 1072.0,
+   "motivo": "Otros gastos operativos Dec '25: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 18779
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L5",
+   "antes": 0,
+   "despues": 18513.0,
+   "motivo": "Costo de ventas LTM: SEC 10-K 2025-12-31 + 10-Q 2026-06-30 (6 meses) − mismo periodo del año anterior.",
+   "vigente": 0
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L6",
+   "antes": 34128,
+   "despues": 15615.0,
+   "motivo": "Utilidad bruta LTM = ingresos − costo de ventas.",
+   "vigente": 34128
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L7",
+   "antes": 1,
+   "despues": 0.4575,
+   "motivo": "Margen bruto LTM.",
+   "vigente": 1
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L11",
+   "antes": 19710,
+   "despues": 1197.0,
+   "motivo": "Otros gastos operativos LTM: se les resta lo que pasó a costo de ventas/SG&A; la utilidad operativa no cambia.",
+   "vigente": 19710
+  }
+ ],
+ "omitidas": []
+}
