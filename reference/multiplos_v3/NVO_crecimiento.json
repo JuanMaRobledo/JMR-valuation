@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-03",
+ "fecha": "2026-10-04",
  "umbral": 0.02,
  "precio": 37.32,
  "dcfHoy": 39.64794722701145,
@@ -10,25 +10,25 @@
   "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
  },
  "gDcf": {
-  "anios4a10": 0.04071428571428572,
+  "anios4a10": 0.026206513614746022,
   "perpetuidad": 0.035,
-  "puntoMedio": 0.03785714285714286
+  "puntoMedio": 0.03060325680737301
  },
  "parametros": {
   "ke": 0.09552440096209469,
   "wacc": 0.09105224930084373,
-  "roe": 0.4317588380187309,
-  "fcffEbitda": 0.4458234188295361,
-  "fcfeOcf": 0.5969151511380114
+  "roe": 0.4694912676655957,
+  "fcffEbitda": 0.6391131170557993,
+  "fcfeOcf": 0.6844864870998141
  },
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
    "multiplo": 10.6,
    "multiploDcf": 9.725022202811394,
-   "gImplicito": 0.04701599908560171,
-   "gDcf": 0.043227647296268164,
-   "dif": 0.0037883517893335453,
+   "gImplicito": 0.029009470955351852,
+   "gDcf": 0.02377159516033617,
+   "dif": 0.005237875795015681,
    "difValor": 0.08313746935244026,
    "aplica": true,
    "lectura": "Coherente con el DCF."
@@ -48,9 +48,9 @@
    "metodo": "P/E",
    "multiplo": 16.91,
    "multiploDcf": 12.53726490748625,
-   "gImplicito": 0.03969289378001667,
-   "gDcf": 0.017675388957021074,
-   "dif": 0.022017504822995596,
+   "gImplicito": 0.039200848038926886,
+   "gDcf": 0.017379932535405696,
+   "dif": 0.02182091550352119,
    "difValor": 0.30084697739468336,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 30% por encima del DCF en FY+3."
@@ -70,9 +70,9 @@
    "metodo": "P/OCF",
    "multiplo": 12.54,
    "multiploDcf": 9.290888205181217,
-   "gImplicito": 0.04574596318943237,
-   "gDcf": 0.029388871177540198,
-   "dif": 0.016357092011892175,
+   "gImplicito": 0.0388211293849219,
+   "gDcf": 0.020352122037381726,
+   "dif": 0.018469007347540176,
    "difValor": 0.30164956782104335,
    "aplica": true,
    "lectura": "Revisar: el múltiplo vale 30% más que el DCF en FY+3 (a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia)."

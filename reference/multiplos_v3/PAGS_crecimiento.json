@@ -2,12 +2,12 @@
  "fecha": "2026-10-04",
  "umbral": 0.02,
  "precio": 9.02,
- "dcfHoy": 13.409487784231885,
+ "dcfHoy": 14.32687908857971,
  "dcfInverso": {
-  "gImplicito": -0.17628325407954093,
+  "gImplicito": null,
   "gDcf": 0.057999999999999996,
-  "dif": -0.23428325407954093,
-  "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
+  "dif": null,
+  "lectura": "Ningún crecimiento entre −20% y 80% justifica el precio con estos márgenes."
  },
  "gDcf": {
   "anios4a10": 0.05567142857142857,
@@ -24,7 +24,7 @@
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
-   "multiplo": 3.0147605904236174,
+   "multiplo": 2.710908436337454,
    "multiploDcf": null,
    "gImplicito": null,
    "gDcf": null,
@@ -35,7 +35,7 @@
   },
   {
    "metodo": "EV/FCFF",
-   "multiplo": 2.5144630167150437,
+   "multiplo": 2.261034931438295,
    "multiploDcf": null,
    "gImplicito": null,
    "gDcf": null,
@@ -69,13 +69,13 @@
   {
    "metodo": "P/OCF",
    "multiplo": 4.36,
-   "multiploDcf": 7.591853168457307,
+   "multiploDcf": 7.47573084140711,
    "gImplicito": 0.02278691736554871,
-   "gDcf": 0.06718320771421177,
-   "dif": -0.04439629034866306,
-   "difValor": -0.3965494079526767,
+   "gDcf": 0.06621336215541589,
+   "dif": -0.04342644478986718,
+   "difValor": -0.3882395376121963,
    "aplica": true,
-   "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 40% por debajo del DCF en FY+3."
+   "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 39% por debajo del DCF en FY+3."
   }
  ],
  "dcfFy3": 18.508220440647175,
