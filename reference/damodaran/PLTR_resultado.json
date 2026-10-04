@@ -17,22 +17,22 @@
   "marginY1Cons": 0.484387,
   "marginY1Base": 0.484387,
   "marginY1Opt": 0.484387,
-  "marginCons": 0.3838131814682245,
-  "marginBase": 0.4538131814682245,
-  "marginOpt": 0.5038131814682245,
+  "marginCons": 0.3843869036940491,
+  "marginBase": 0.4543869036940491,
+  "marginOpt": 0.504386903694049,
   "salesToCapital2": 3.8377,
   "wacc": 0.10571316639913869,
   "costoPatrimonio": 0.10575000000000001,
   "taxEffective": 0.0134,
   "convergenceYear": 5,
   "terminalWacc": 0.0923,
-  "roicTerminal": 0.293,
+  "roicTerminal": 0.2056,
   "salesToCapital": 3.468
  },
  "financiero": false,
- "dcf_sin_exceso": 103.36694648780586,
+ "dcf_sin_exceso": 103.4949975418635,
  "precio": 188.75,
- "dcf_base": 72.59046559798213,
+ "dcf_base": 68.63581545897891,
  "g_ref": 0.3662226947255397,
  "m_base": 0.484387,
  "s2c": 3.468,
@@ -131,16 +131,17 @@
     0.0743142973804181,
     0.04999999999999999
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.05,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.293,
+   "roic_terminal_usado": 0.2056,
    "detalle": {
-    "v": 72.67488520731467,
+    "v": 68.63581545897891,
     "pvFlujos": 59119.80864855909,
-    "pvTerminal": 118758.85046076453,
-    "valorTerminal": 312762.75531692023,
-    "activosOperativos": 177878.65910932355,
-    "patrimonio": 186905.05175151626,
+    "pvTerminal": 108371.18299920385,
+    "valorTerminal": 285405.8426827162,
+    "activosOperativos": 167490.9916477629,
+    "patrimonio": 176517.3842899556,
     "ingresos": [
      6155.941,
      10576.298634243016,
@@ -236,7 +237,7 @@
     ],
     "tasaTerminal": 0.0923,
     "gTerminal": 0.05,
-    "roicTerminal": 0.293,
+    "roicTerminal": 0.2056,
     "caja": 9409.099,
     "deuda": 272.0163578072621,
     "minoritarios": 110.69,
@@ -255,10 +256,10 @@
     "wacc0": 0.10571316639913869,
     "margenY1": 0.484387
    },
-   "valor_bruto": 72.67488520731467,
-   "valor_bruto_prop": 72.66478603258906,
-   "valor_beta_hoja": 72.67488520731467,
-   "valor_beta_prop": 72.66478603258906
+   "valor_bruto": 68.63581545897891,
+   "valor_bruto_prop": 68.62636537734083,
+   "valor_beta_hoja": 68.63581545897891,
+   "valor_beta_prop": 68.62636537734083
   },
   {
    "nombre": "Conservadora · Se normaliza en un software de alta calidad",
@@ -304,16 +305,17 @@
     0.060417118084653665,
     0.05000000000000002
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.05,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.293,
+   "roic_terminal_usado": 0.2056,
    "detalle": {
-    "v": 33.39481991405494,
+    "v": 31.789564431383788,
     "pvFlujos": 29659.74008736063,
-    "pvTerminal": 47198.56494095344,
-    "valorTerminal": 124301.9207466498,
-    "activosOperativos": 76858.30502831403,
-    "patrimonio": 85884.69767050676,
+    "pvTerminal": 43070.17370638621,
+    "valorTerminal": 113429.4088240453,
+    "activosOperativos": 72729.9137937468,
+    "patrimonio": 81756.30643593954,
     "ingresos": [
      6155.941,
      8593.917633853152,
@@ -409,7 +411,7 @@
     ],
     "tasaTerminal": 0.0923,
     "gTerminal": 0.05,
-    "roicTerminal": 0.293,
+    "roicTerminal": 0.2056,
     "caja": 9409.099,
     "deuda": 272.0163578072621,
     "minoritarios": 110.69,
@@ -428,10 +430,10 @@
     "wacc0": 0.10571316639913869,
     "margenY1": 0.484387
    },
-   "valor_bruto": 33.39481991405494,
-   "valor_bruto_prop": 33.390662211213986,
-   "valor_beta_hoja": 33.39481991405494,
-   "valor_beta_prop": 33.390662211213986
+   "valor_bruto": 31.789564431383788,
+   "valor_bruto_prop": 31.785664698893047,
+   "valor_beta_hoja": 31.789564431383788,
+   "valor_beta_prop": 31.785664698893047
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -480,6 +482,7 @@
     0.05000000000000002,
     0.05000000000000001
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.05,
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
@@ -653,16 +656,17 @@
     0.0875333551972085,
     0.05000000000000001
    ],
+   "anios6a10_propios": false,
    "terminal_growth": 0.05,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.293,
+   "roic_terminal_usado": 0.2056,
    "detalle": {
-    "v": 128.54448835448406,
+    "v": 120.89156952200426,
     "pvFlujos": 96548.79728952523,
-    "pvTerminal": 225015.13958487922,
-    "valorTerminal": 592598.8233427631,
-    "activosOperativos": 321563.9368744043,
-    "patrimonio": 330590.32951659703,
+    "pvTerminal": 205333.38589026418,
+    "valorTerminal": 540765.0485031314,
+    "activosOperativos": 301882.1831797893,
+    "patrimonio": 310908.575821982,
     "ingresos": [
      6155.941,
      11647.488367706304,
@@ -758,7 +762,7 @@
     ],
     "tasaTerminal": 0.0923,
     "gTerminal": 0.05,
-    "roicTerminal": 0.293,
+    "roicTerminal": 0.2056,
     "caja": 9409.099,
     "deuda": 272.0163578072621,
     "minoritarios": 110.69,
@@ -777,28 +781,28 @@
     "wacc0": 0.10571316639913869,
     "margenY1": 0.484387
    },
-   "valor_bruto": 128.54448835448406,
-   "valor_bruto_prop": 128.52578001173583,
-   "valor_beta_hoja": 128.54448835448406,
-   "valor_beta_prop": 128.52578001173583
+   "valor_bruto": 120.89156952200426,
+   "valor_bruto_prop": 120.87409103093556,
+   "valor_beta_hoja": 120.89156952200426,
+   "valor_beta_prop": 120.87409103093556
   }
  ],
- "valor_esperado_beta_hoja": 66.2661134773911,
- "valor_esperado_beta_prop": 66.25695106603058,
+ "valor_esperado_beta_hoja": 62.638325166759486,
+ "valor_esperado_beta_prop": 62.62974575407495,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.25,
    "ke": 0.10575000000000001,
    "wacc": 0.10571316639913869,
-   "dcf_base": 153.63060202435528
+   "dcf_base": 143.98332318221767
   },
   {
    "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
    "beta": 1.2505687646165655,
    "ke": 0.10577536690189883,
    "wacc": 0.10573851792071917,
-   "dcf_base": 153.60761152568523
+   "dcf_base": 143.96188420936195
   }
  ],
  "sensibilidad": {
@@ -818,140 +822,140 @@
   ],
   "v": [
    [
-    77.6738703182484,
-    80.9854551144259,
-    84.2970399106034,
-    87.60862470678087,
-    90.92020950295839
+    73.01673895030589,
+    76.11872574438421,
+    79.22071253846254,
+    82.32269933254082,
+    85.42468612661912
    ],
    [
-    85.35124211747782,
-    89.02038684451496,
-    92.68953157155214,
-    96.3586762985893,
-    100.02782102562647
+    80.16476958528749,
+    83.60049287865579,
+    87.03621617202407,
+    90.47193946539237,
+    93.90766275876068
    ],
    [
-    93.74663829393832,
-    97.80715150029148,
-    101.86766470664466,
-    105.92817791299782,
-    109.98869111935103
+    87.97881792695046,
+    91.77974566536744,
+    95.58067340378443,
+    99.38160114220142,
+    103.18252888061842
    ],
    [
-    102.91814884070425,
-    107.40657872384848,
-    111.89500860699273,
-    116.38343849013698,
-    120.87186837328122
+    96.51263302845248,
+    100.7127774391481,
+    104.91292184984368,
+    109.11306626053928,
+    113.31321067123488
    ],
    [
-    112.92779710520651,
-    117.88361696073211,
-    122.83943681625773,
-    127.79525667178338,
-    132.75107652730904
+    105.82359634079575,
+    110.45968583677391,
+    115.09577533275211,
+    119.7318648287303,
+    124.36795432470848
    ]
   ],
-  "referencia_constante": 101.86766470664466,
+  "referencia_constante": 95.58067340378443,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.25,
    "margen": 0.4043869036940491,
-   "g": 0.5407313950945065,
-   "tasa_base": 0.0016243920280313918
+   "g": 0.556522311933304,
+   "tasa_base": 0.001534158217523977
   },
   {
    "beta": 1.25,
    "margen": 0.4543869036940491,
-   "g": 0.514343280803401,
-   "tasa_base": 0.0017751812525519947
+   "g": 0.5297517626368811,
+   "tasa_base": 0.0016871327849321085
   },
   {
    "beta": 1.25,
    "margen": 0.504386903694049,
-   "g": 0.4911416308564197,
-   "tasa_base": 0.0019077621093918876
+   "g": 0.5062237201420048,
+   "tasa_base": 0.001821578742045687
   },
   {
    "beta": 1.2505687646165655,
    "margen": 0.4043869036940491,
-   "g": 0.5407660228648317,
-   "tasa_base": 0.001624194155058105
+   "g": 0.5565573021435044,
+   "tasa_base": 0.0015339582734656889
   },
   {
    "beta": 1.2505687646165655,
    "margen": 0.4543869036940491,
-   "g": 0.5143773246774328,
-   "tasa_base": 0.0017749867161289553
+   "g": 0.5297861569178601,
+   "tasa_base": 0.0016869362461836568
   },
   {
    "beta": 1.2505687646165655,
    "margen": 0.504386903694049,
-   "g": 0.49117516523454585,
-   "tasa_base": 0.0019075704843740237
+   "g": 0.5062575949459662,
+   "tasa_base": 0.0018213851717373362
   }
  ],
  "ingresos_ltm": 6155.941,
  "sens_base": {
-  "base": 72.67488520731467,
+  "base": 68.63581545897891,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 69.73201126823365
+    "valor": 65.87072260097655
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 75.61775914639571
+    "valor": 71.40090831698127
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 66.30018963902313
+    "valor": 62.68536544853179
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 79.65407803034668
+    "valor": 75.14776658479273
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 93.99627222788789
+    "valor": 88.20170839696871
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 59.4550283287334
+    "valor": 56.47049567630425
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 67.82478769311723
+    "valor": 64.63400957985114
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 78.78911455824961
+    "valor": 73.6559948165533
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 69.21417638791873
+    "valor": 65.36744329426563
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 72.0459984455315
+    "valor": 68.00692869719573
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 73.09414304850347
+    "valor": 69.05507330016772
    },
    {
     "supuesto": "roic_cc",
@@ -962,5 +966,5 @@
  },
  "rd_vida": 3,
  "rd_ltm": 641.239,
- "motor_tecnico": 153.63060202435528
+ "motor_tecnico": 143.98332318221767
 }

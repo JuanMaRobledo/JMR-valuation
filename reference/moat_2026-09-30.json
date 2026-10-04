@@ -1,20 +1,23 @@
 {
  "fecha": "2026-09-30",
- "regla": "Criterio Damodaran para el ROIC después del año 10 (30-sep-2026). Tres preguntas con la evidencia de la sección 6: (1) ¿gana hoy por encima de su costo de capital de forma sostenida (al menos los últimos 3 años, con plusvalía y arrendamientos cuando son materiales)? (2) ¿tiene una ventaja competitiva identificable (costos de cambio, efectos de red, escala o costo, licencias o regulación, patentes, marca probada de 20 años o más que superó un ciclo o una crisis)? (3) ¿la ventaja se desvanece de forma visible hoy (ROIC en caída por competencia, pérdida de participación, precios a la baja)? Si (1) o (2) fallan: sin ventaja defendible → ROIC terminal = costo de capital (supuesto por defecto de Damodaran). Si (1) y (2) se cumplen y (3) no: ventaja durable → promedio de la industria (Damodaran), sin superar el ROIC actual ni bajar del costo de capital terminal. Si (3) se cumple: ventaja que se desvanece → punto medio entre el costo de capital terminal y ese valor (convención del modelo para 'ser más conservador'). La probabilidad de perder la ventaja en el futuro va a las historias (las de erosión usan el costo de capital), no a este valor. Fuente: Damodaran, Investment Valuation (3.ª ed.), cap. 12, y hoja Ginzu (B48-B50).",
+ "regla": "Criterio Damodaran para el ROIC después del año 10 (30-sep-2026). Tres preguntas con la evidencia de la sección 6: (1) ¿gana hoy por encima de su costo de capital de forma sostenida (al menos los últimos 3 años, con plusvalía y arrendamientos cuando son materiales)? (2) ¿tiene una ventaja competitiva identificable (costos de cambio, efectos de red, escala o costo, licencias o regulación, patentes, marca probada de 20 años o más que superó un ciclo o una crisis)? (3) ¿la ventaja se desvanece de forma visible hoy (ROIC en caída por competencia, pérdida de participación, precios a la baja)? Si (1) o (2) fallan: sin ventaja defendible → ROIC terminal = costo de capital (supuesto por defecto de Damodaran). Si (1) y (2) se cumplen y (3) no: ventaja durable → promedio de la industria (Damodaran), sin superar el ROIC actual ni bajar del costo de capital terminal. Si (3) se cumple: ventaja que se desvanece → punto medio entre el costo de capital terminal y ese valor (convención del modelo para 'ser más conservador'). La probabilidad de perder la ventaja en el futuro va a las historias (las de erosión usan el costo de capital), no a este valor. Fuente: Damodaran, Investment Valuation (3.ª ed.), cap. 12, y hoja Ginzu (B48-B50). Consistencia de definiciones (4-oct-2026): si el modelo capitaliza el I+D, el ROIC de la industria se lleva a la misma base antes de aplicar la regla (ROC de Damodaran × margen ajustado por I+D / margen sin ajustar × capital / (capital + activo de I+D), con la vida del I+D del modelo); el ROIC actual de la empresa ya está en esa base. Damodaran, Investment Valuation, cap. 9 (I+D como gasto de capital).",
  "empresas": {
   "MSFT": {
    "fuentes": "Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn)",
    "evidencia": "ROIC 30-72% en 2021-2026",
    "amenaza": "Retorno del capex de IA (Conservadora, 25%)",
    "roic_actual": 0.254,
-   "roic_industria": 0.2932,
+   "roic_industria": 0.2056,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0848,
-   "roic_terminal": 0.254,
+   "roic_terminal": 0.2056,
    "roic_terminal_antes": 0.258,
    "ventaja": "ventaja durable",
-   "referencia": 0.254,
-   "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM."
+   "referencia": 0.2056,
+   "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
+   "roic_industria_sin_ajuste": 0.2932,
+   "roic_terminal_antes_2026_10_04": 0.254,
+   "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 3 años: 29,32% × (margen después de impuestos ajustado por I+D 32,62% / sin ajuste 31,17%) × capital/(capital + activo de I+D) [0,649/(0,649 + 2,0 × 15,98%)] = 20,56%."
   },
   "GOOG": {
    "fuentes": "Escala y efectos de red en búsqueda, YouTube y Android; datos",
@@ -79,15 +82,18 @@
    "evidencia": "ROIC 37-60% en 2021-2026",
    "amenaza": "Figma, Canva e IA generativa: las historias de erosión (Conservadora y Disrupción) suman 50%",
    "roic_actual": 0.3686,
-   "roic_industria": 0.2932,
+   "roic_industria": 0.2056,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0922,
-   "roic_terminal": 0.293,
+   "roic_terminal": 0.2056,
    "roic_terminal_antes": 0.293,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): costos de cambio y estándar de la industria, ROIC en alza (38% → 59%) y ingresos creciendo ~10%: sin erosión visible hoy. Figma, Canva y la IA quedan en las historias de erosión (B y C, 50%).",
    "ventaja": "ventaja durable",
-   "referencia": 0.2932,
-   "nota_rd": "ROIC actual del modelo al 1-oct-2026: capital invertido operativo (patrimonio + deuda − caja − activos no operativos) con el balance del último 10-Q y el I+D alineado al LTM."
+   "referencia": 0.2056,
+   "nota_rd": "ROIC actual del modelo al 1-oct-2026: capital invertido operativo (patrimonio + deuda − caja − activos no operativos) con el balance del último 10-Q y el I+D alineado al LTM.",
+   "roic_industria_sin_ajuste": 0.2932,
+   "roic_terminal_antes_2026_10_04": 0.293,
+   "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 3 años: 29,32% × (margen después de impuestos ajustado por I+D 32,62% / sin ajuste 31,17%) × capital/(capital + activo de I+D) [0,649/(0,649 + 2,0 × 15,98%)] = 20,56%."
   },
   "NVO": {
    "fuentes": "Patentes y escala de manufactura en diabetes y obesidad",
@@ -259,14 +265,17 @@
    "evidencia": "ROIC sobre el capital operativo (sin la caja) muy por encima del costo de capital en 2023-2025 y LTM: el negocio casi no necesita capital; el 5-12% anterior incluía la caja en el capital, contra el criterio de Damodaran",
    "amenaza": "Comoditización (Disrupción, 10%); serie de tres años: revisar si el ROIC cae con la escala",
    "roic_actual": 1.5003,
-   "roic_industria": 0.2932,
+   "roic_industria": 0.2056,
    "industria_proxy": null,
    "costo_capital_terminal": 0.0923,
-   "roic_terminal": 0.293,
+   "roic_terminal": 0.2056,
    "roic_terminal_antes": null,
    "ventaja": "ventaja durable",
-   "referencia": 0.2932,
-   "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM."
+   "referencia": 0.2056,
+   "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
+   "roic_industria_sin_ajuste": 0.2932,
+   "roic_terminal_antes_2026_10_04": 0.293,
+   "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 3 años: 29,32% × (margen después de impuestos ajustado por I+D 32,62% / sin ajuste 31,17%) × capital/(capital + activo de I+D) [0,649/(0,649 + 2,0 × 15,98%)] = 20,56%."
   },
   "EPAM": {
    "fuentes": "Servicios de ingeniería con costos de cambio moderados",
