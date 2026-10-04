@@ -286,14 +286,20 @@ def compute(tk: str) -> dict:
         a610, step = [], (anios[4] - tg_uso) / 5
         for n in range(5):
             a610.append((a610[-1] if a610 else anios[4]) - step)
+        # Años 6-10 propios de la historia (p. ej. vencimiento de patentes, criterio de Damodaran para farmacéuticas):
+        # reemplazan la convergencia lineal al terminal y el motor recibe la trayectoria completa de 10 años.
+        propio610 = h.get("crec_6a10")
+        if propio610:
+            a610 = [float(x) for x in propio610]
         historias.append({**h, "cagr": cagr, "rev5": rev5, "mix5": {k: v / rev5 for k, v in revs.items()},
-                          "tasa_base": frac_at_least(br, cagr), "anios": anios, "anios6a10": a610,
+                          "tasa_base": frac_at_least(br, cagr), "anios": anios, "anios6a10": a610, "anios6a10_propios": bool(propio610),
                           "terminal_growth": tg_uso, "terminal_propio": tg is not None and abs(tg - tg_hoja) > 1e-9,
                           "roic_terminal_usado": roic if roic is not None else inp.get("roicTerminal", 0)})
         # Cada historia es un DCF completo con la estructura de la hoja (crecimiento año a año, convergencia del
         # margen, impuestos, sales-to-capital por tramo, deuda y caja): el valor esperado es su promedio ponderado.
-        cases += [value(None, h["margen"], None, s2, roic, anios, tg, detalle=True),
-                  value(None, h["margen"], beta_prop, s2, roic, anios, tg)]
+        tray = anios + a610 if propio610 else anios
+        cases += [value(None, h["margen"], None, s2, roic, tray, tg, detalle=True),
+                  value(None, h["margen"], beta_prop, s2, roic, tray, tg)]
     vals = run_exact(grid, cases)
     for i, h in enumerate(historias):
         h["detalle"] = vals[2 * i]

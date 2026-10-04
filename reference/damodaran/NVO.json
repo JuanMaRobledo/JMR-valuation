@@ -49,7 +49,14 @@
     ]
    },
    "id": "A",
-   "tesis": "base"
+   "tesis": "base",
+   "crec_6a10": [
+    -0.04,
+    -0.06,
+    -0.03,
+    0.01,
+    0.02
+   ]
   },
   {
    "nombre": "Conservadora · Guerra de precios con Lilly y genéricos",
@@ -87,7 +94,14 @@
    },
    "roic_terminal": "costo_capital",
    "id": "B",
-   "tesis": "conservadora"
+   "tesis": "conservadora",
+   "crec_6a10": [
+    -0.08,
+    -0.1,
+    -0.05,
+    0.01,
+    0.02
+   ]
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -127,7 +141,14 @@
    "id": "C",
    "tesis": "disrupción",
    "descripcion": "Novo pierde relevancia frente a Lilly",
-   "terminal": "estabilizacion"
+   "terminal": "estabilizacion",
+   "crec_6a10": [
+    -0.1,
+    -0.12,
+    -0.06,
+    -0.02,
+    0.0
+   ]
   },
   {
    "nombre": "Optimista · La nueva generación recupera el liderazgo",
@@ -164,7 +185,14 @@
     ]
    },
    "id": "D",
-   "tesis": "optimista"
+   "tesis": "optimista",
+   "crec_6a10": [
+    -0.02,
+    -0.03,
+    0.0,
+    0.03,
+    0.035
+   ]
   }
  ],
  "margenes_inverso": [
@@ -201,7 +229,7 @@
  ],
  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 0,8% anual cinco años (Base) lo logró ~71% de las empresas de ese tamaño; 3,7% (Optimista), ~57%. La hoja (3%) no pide nada extraordinario. El riesgo de Novo no es de crecimiento sino de precio: en farmacéuticas, la erosión de precio por competencia y genéricos suele ser más rápida de lo que el volumen compensa.",
  "crecimiento": {
-  "texto": "En dólares (hoja): US$35.570 millones (2023, +31%), US$44.474 millones (2024, +25%) y US$47.332 millones (2025, +6%); LTM US$46.353 millones. En coronas, 2025 fue DKK 309.064 millones (+10% a tipo de cambio constante): obesidad DKK 82.347 millones, GLP-1 para diabetes DKK 152.202 millones y enfermedades raras DKK 19.608 millones; EE.UU. aportó 56%. En el 1S26 las ventas ajustadas crecieron 2% a tipo de cambio constante (EUCAN +20%, China 0%, emergentes −7%). La división LTM en dólares de las historias usa el peso de 2025.",
+  "texto": "En dólares (hoja): US$35.570 millones (2023, +31%), US$44.474 millones (2024, +25%) y US$47.332 millones (2025, +6%); LTM US$46.353 millones. En coronas, 2025 fue DKK 309.064 millones (+10% a tipo de cambio constante): obesidad DKK 82.347 millones, GLP-1 para diabetes DKK 152.202 millones y enfermedades raras DKK 19.608 millones; EE.UU. aportó 56%. En el 1S26 las ventas ajustadas crecieron 2% a tipo de cambio constante (EUCAN +20%, China 0%, emergentes −7%). La división LTM en dólares de las historias usa el peso de 2025. Guía de la empresa (6-K del 4-ago-2026): ventas ajustadas de 2026 entre 0% y −6% a tipo de cambio constante (antes −4% a −12%), por más volumen de GLP-1 que compensa precios más bajos (acuerdo MFN en EE.UU. y pérdida de exclusividad de la semaglutida en Canadá, China, Brasil e India). Con +2% en el 1S26, la guía implica un 2S26 de alrededor de −5% a −10%. El LTM excluye la reversión de la provisión 340B (DKK 26.800 millones en el 1T26, sin efecto en caja; US$4.098 millones en la hoja). La exclusividad de la semaglutida vence en Europa en marzo de 2031, en EE.UU. entre diciembre de 2031 y octubre de 2032 y en Japón en 2033: cae en los años 5-7 del modelo. Siguiendo a Damodaran, el vencimiento se modela de forma explícita en los años 6-10 de cada historia, en lugar de la convergencia lineal al crecimiento terminal: Base −4%, −6%, −3%, +1% y +2% (los genéricos de semaglutida en EE.UU., Europa y Japón, compensados en parte por CagriSema, amicretina y la Wegovy oral); Conservadora −8%, −10%, −5%, +1% y +2% (erosión rápida, poca renovación); Disrupción −10%, −12%, −6%, −2% y 0%; Optimista −2%, −3%, 0%, +3% y +3,5% (la nueva generación reemplaza casi toda la semaglutida). Después del año 10, Base, Conservadora y Optimista crecen al 3,5% terminal.",
   "tabla": {
    "cols": [
     "US$ millones",

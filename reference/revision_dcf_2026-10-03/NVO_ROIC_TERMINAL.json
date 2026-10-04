@@ -1,0 +1,12 @@
+{
+ "ticker": "NVO",
+ "celdas": {
+  "Input sheet!B49": "Yes",
+  "Input sheet!B50": "13,10%"
+ },
+ "despues": {
+  "B49": "No"
+ },
+ "motivo": "ROIC terminal = costo de capital (supuesto por defecto de Damodaran). La regla de ventaja que se desvanece toma el punto medio entre el ROIC de la industria y el costo de capital terminal; con el ROIC de Drugs (Pharmaceutical) medido como el del modelo (I+D capitalizado a 5 años) la referencia es 9,19% (16,95% sin ajustar), igual al costo de capital terminal (9,2%). Antes: B49 = Yes, B50 = 13,1%.",
+ "fecha": "2026-10-04"
+}

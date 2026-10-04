@@ -1,0 +1,121 @@
+[
+ {
+  "hoja": "Balance Sheet",
+  "celda": "K3",
+  "antes": 0,
+  "despues": 339.2,
+  "motivo": "20-F 2025 (comparativo del 6-K del 11-ago-2026), convertido con el tipo de cambio de la hoja al cierre (0,18261 USD/BRL)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "K4",
+  "antes": 0,
+  "despues": 107.74,
+  "motivo": "20-F 2025 (comparativo del 6-K del 11-ago-2026), convertido con el tipo de cambio de la hoja al cierre (0,18261 USD/BRL)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "K5",
+  "antes": 0,
+  "despues": 446.94,
+  "motivo": "20-F 2025 (comparativo del 6-K del 11-ago-2026), convertido con el tipo de cambio de la hoja al cierre (0,18261 USD/BRL)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "K9",
+  "antes": 11857.3,
+  "despues": 11410.36,
+  "motivo": "20-F 2025 (comparativo del 6-K del 11-ago-2026), convertido con el tipo de cambio de la hoja al cierre (0,18261 USD/BRL). Caja e inversiones financieras separadas del resto del activo corriente."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L3",
+  "antes": 0,
+  "despues": 113.89,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L4",
+  "antes": 0,
+  "despues": 139.31,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L5",
+  "antes": 0,
+  "despues": 253.2,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L9",
+  "antes": 11857.3,
+  "despues": 11778.38,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM). Caja e inversiones financieras separadas del resto del activo corriente."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L10",
+  "antes": 11857.3,
+  "despues": 12031.58,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L12",
+  "antes": 579.3,
+  "despues": 591.86,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L15",
+  "antes": 1151.2,
+  "despues": 1199.55,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L23",
+  "antes": 8722.1,
+  "despues": 7756.78,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L24",
+  "antes": 8725.6,
+  "despues": 7760.28,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L27",
+  "antes": 2178,
+  "despues": 3309.79,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L28",
+  "antes": 2188.9,
+  "despues": 3320.69,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L29",
+  "antes": 11080.9,
+  "despues": 11080.97,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "L36",
+  "antes": 13587.8,
+  "despues": 13822.99,
+  "motivo": "6-K de PagSeguro del 11-ago-2026 (estados intermedios no auditados al 30-jun-2026, miles de reales), convertido con el tipo de cambio de la hoja (0,18261 USD/BRL, el mismo de su LTM)."
+ }
+]

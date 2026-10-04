@@ -46,6 +46,13 @@ def col(y: int) -> str:
     return COLS[y]
 
 
+def _propios_6a10(h: dict):
+    """Años 6-10 fijados por la historia (vencimiento de patentes u otra trayectoria explícita); None = convergencia."""
+    if not h.get("anios6a10_propios"):
+        return None
+    return [round(float(x), 6) for x in h["anios6a10"]]
+
+
 def block_fcff(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[list]:
     """Bloque FCFF de una historia; i = fila de resumen (5-8)."""
     rows = [[h["nombre"] + (f": {h['descripcion']}" if h.get("descripcion") else "")],
@@ -66,7 +73,7 @@ def block_fcff(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
         [f"={col(y - 1)}{R['rev']}*(1+{col(y)}{R['g']})" for y in range(6, 12)]
     tg = (f"=MAX(0;MIN($G{R['g']};{VO}!$M$4))" if h.get("terminal_propio") else f"={VO}!M4")
     g = ["Crecimiento", ""] + [f"={col(y)}{R['rev']}/{col(y - 1)}{R['rev']}-1" for y in range(1, 6)] + \
-        [f"=$G{R['g']}-($G{R['g']}-$M${R['g']})*({y}-5)/5" for y in range(6, 11)] + [tg]
+        (_propios_6a10(h) or [f"=$G{R['g']}-($G{R['g']}-$M${R['g']})*({y}-5)/5" for y in range(6, 11)]) + [tg]
     m = ["Margen operativo", "", f"={VO}!C6"] + [
         f"=IF({y}>{IS}!$B$31;$D${i};$D${i}-($D${i}-{VO}!$C$6)/{IS}!$B$31*({IS}!$B$31-{y}))" for y in range(2, 11)] + \
         [f"=L{R['m']}"]
@@ -115,7 +122,7 @@ def block_fcfe(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
     rev = ["Ingresos por segmento (motor del crecimiento)", f"={VO}!B5"] + [f"=SUM({col(y)}{first}:{col(y)}{last})" for y in range(1, 6)]
     tg = (f"=MAX(0;MIN($G{R['g']};{F}!$B$5))" if h.get("terminal_propio") else f"={F}!B5")
     g = ["Crecimiento", ""] + [f"={col(y)}{R['rev']}/{col(y - 1)}{R['rev']}-1" for y in range(1, 6)] + \
-        [f"=$G{R['g']}-($G{R['g']}-$M${R['g']})*({y}-5)/5" for y in range(6, 11)] + [tg]
+        (_propios_6a10(h) or [f"=$G{R['g']}-($G{R['g']}-$M${R['g']})*({y}-5)/5" for y in range(6, 11)]) + [tg]
     ni = ["Utilidad neta", f"={F}!B3"] + [f"={col(y - 1)}{R['ni']}*(1+{col(y)}{R['g']})" for y in range(1, 12)]
     roe = ["ROE", ""] + [f"=$D${i}"] * 5 + [f"=$D${i}+({F}!$B$4-$D${i})*({y}-5)/5" for y in range(6, 11)]
     reinv = ["Reinversión patrimonial", ""] + [f"={col(y)}{R['ni']}*MAX(0;{col(y)}{R['g']})/{col(y)}{R['roe']}" for y in range(1, 11)] + \
