@@ -1005,9 +1005,38 @@ def trayectorias(r: dict, W, titulo: str) -> None:
             f"DCF {usd(h['valor_beta_hoja'])} por acción.")
         if fin:
             W.tab(["Año", "Utilidad", "Crecimiento", "ROE", "Reinversión", "FCFE", "Ke", "VP del FCFE"], rows, ["l"] + ["r"] * 7)
+            exceso(h, W, nd)
         else:
             W.tab(["Año", "Ingresos", "Crecimiento", "Margen", "NOPAT", "Reinversión", "FCFF", "WACC", "VP del FCFF"], rows,
                   ["l"] + ["r"] * 8)
+
+
+def exceso(h: dict, W, nd: int) -> None:
+    """Tabla del modelo de rendimientos en exceso de Damodaran para bancos: valor del patrimonio = patrimonio contable de hoy
+    + VP de (ROE − Ke) × patrimonio inicial de cada año. Con utilidad = ROE × patrimonio y reinversión = aumento del patrimonio
+    es idéntico al FCFE; la tabla lo comprueba."""
+    d = h["detalle"]
+    bv = d.get("patrimonioContable")
+    if not bv or bv[0] is None:
+        return
+    rows, pv = [], 0.0
+    for y in range(1, 11):
+        ke, roe, ni = d["tasa"][y], d["margen"][y], d["utilidad"][y]
+        costo = ke * bv[y - 1]
+        ex = ni - costo
+        v = ex / _acum(d["tasa"], y)
+        pv += v
+        z = lambda x: 0.0 if abs(x) < 0.05 else x  # noqa: E731
+        rows.append([str(y), es(bv[y - 1], nd), pct(roe), es(ni, nd), pct(ke), es(costo, nd), es(z(ex), nd), es(z(v), nd)])
+    rows.append(["Terminal", es(bv[10], nd), pct(d["tasaTerminal"]), es(d["tasaTerminal"] * bv[10], nd), pct(d["tasaTerminal"]),
+                 es(d["tasaTerminal"] * bv[10], nd), es(0, nd), "0"])
+    valor = (bv[0] + pv) / d["acciones"]
+    W.p(f"Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy {es(bv[0], nd)} + VP de los "
+        f"rendimientos en exceso {es(pv, nd)} = {es(bv[0] + pv, nd)} millones; entre {es(d['acciones'], 2)} millones de acciones da "
+        f"{usd(valor)} por acción, igual que el FCFE ({usd(d['v'])}). En perpetuidad el ROE es el costo del patrimonio: no hay "
+        "rendimiento en exceso y crecer no suma valor.")
+    W.tab(["Año", "Patrimonio inicial", "ROE", "Utilidad", "Ke", "Costo del patrimonio", "Rendimiento en exceso", "VP"], rows,
+          ["l"] + ["r"] * 7)
 
 
 def _acum(tasas, y):

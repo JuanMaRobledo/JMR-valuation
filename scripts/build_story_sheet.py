@@ -117,7 +117,7 @@ def block_fcfe(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
         g = h["crec"].get(name, [0] * 5)
         rows.append([name, f"={n(v)}*{VO}!B5/{n(rev_ltm)}"] + [f"={col(y - 1)}{rr}*(1+{n(g[y - 1])})" for y in range(1, 6)])
     R = {nm: r0 + 2 + SLOTS + j for j, nm in enumerate(
-        ("rev", "g", "ni", "roe", "reinv", "fcfe", "ke", "disc", "pv", "tv", "bv", "x2", "x3", "x4", "ops", "eq", "ps"))}
+        ("rev", "g", "ni", "roe", "reinv", "fcfe", "ke", "disc", "pv", "tv", "bv", "costo", "exc", "pvexc", "ops", "eq", "ps"))}
     first, last = seg_rows[0], r0 + 2 + SLOTS - 1
     rev = ["Ingresos por segmento (motor del crecimiento)", f"={VO}!B5"] + [f"=SUM({col(y)}{first}:{col(y)}{last})" for y in range(1, 6)]
     tg = (f"=MAX(0;MIN($G{R['g']};{F}!$B$5))" if h.get("terminal_propio") else f"={F}!B5")
@@ -140,7 +140,13 @@ def block_fcfe(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
     ops = ["VP de los flujos al accionista", f"=SUM(C{R['pv']}:L{R['pv']})+M{R['tv']}*L{R['disc']}"]
     eq = ["Valor patrimonio (FCFE: no se resta deuda)", f"=B{R['ops']}"]
     ps = ["DCF por acción", f"=B{R['eq']}/{VO}!B34"]
-    rows += [rev, g, ni, roe, reinv, fcfe, ke, disc, pv, tv, bv, [""], [""], [""], ops, eq, ps]
+    # Modelo de rendimientos en exceso de Damodaran (bancos): patrimonio de hoy + VP de (utilidad − Ke × patrimonio inicial);
+    # coincide con el FCFE porque la utilidad es ROE × patrimonio y la reinversión es el aumento del patrimonio.
+    costo = ["Costo del patrimonio (Ke × patrimonio inicial)", ""] + [f"={col(y)}{R['ke']}*{col(y - 1)}{R['bv']}" for y in range(1, 11)]
+    exc = ["Rendimiento en exceso (utilidad − costo)", ""] + [f"={col(y)}{R['ni']}-{col(y)}{R['costo']}" for y in range(1, 11)]
+    pvexc = ["VP del rendimiento en exceso", ""] + [f"={col(y)}{R['exc']}*{col(y)}{R['disc']}" for y in range(1, 11)]
+    eq = eq + ["Rendimientos en exceso: patrimonio hoy + VP", f"=B{R['bv']}+SUM(C{R['pvexc']}:L{R['pvexc']})"]
+    rows += [rev, g, ni, roe, reinv, fcfe, ke, disc, pv, tv, bv, costo, exc, pvexc, ops, eq, ps]
     return rows, R
 
 

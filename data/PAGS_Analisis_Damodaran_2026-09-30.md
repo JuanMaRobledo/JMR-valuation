@@ -11,7 +11,7 @@ analysis_date: "2026-09-30"
 
 **Complemento · DCF esperado por probabilidades: US$10,41.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$8,35–11,77. El MOS 35% se aplica al esperado: US$6,76. El antiguo caso técnico de la hoja (US$10,92) se conserva solo como calibración; no es el DCF Base. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: balance del último 10-q, capital invertido operativo, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet (12 celdas, con respaldo). DCF esperado US$11,60 → US$12,38. Salvedades abiertas: Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF. Financiera (DCF de flujo al accionista): balance y flujos LTM actualizados con el 20-F 2025 y el 6-K del 1S26 (convertidos a los tipos implícitos de la hoja); no afectan al valor, que depende de utilidad, ROE y costo del patrimonio. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: balance del último 10-q, capital invertido operativo, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet (12 celdas, con respaldo). DCF esperado US$11,60 → US$10,41. Salvedades abiertas: Arrendamientos: bajo NIIF 16 todos los arrendamientos están en el balance y el EBIT ya excluye su costo financiero, así que su pasivo es deuda; se conserva en la deuda del DCF. Financiera (DCF de flujo al accionista): balance y flujos LTM actualizados con el 20-F 2025 y el 6-K del 1S26 (convertidos a los tipos implícitos de la hoja); no afectan al valor, que depende de utilidad, ROE y costo del patrimonio. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (DCF técnico anterior de US$10,92 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja incluye estos cuatro DCF en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
@@ -58,7 +58,7 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Del supuesto al valor: cómo se calcula la Base.** El punto de partida es la utilidad del último año, US$407 millones. Cada año es el ROE de la Base por el patrimonio contable del año anterior: US$530 millones en el año 5 y US$513 millones en el año 10, cuando el ROE ya bajó al costo del patrimonio. No toda esa utilidad se puede repartir: para crecer, un banco o una financiera tiene que aumentar su patrimonio al mismo ritmo, y esa parte se retiene. Lo que queda es el flujo del accionista (FCFE): US$296 millones el primer año. Esos flujos se traen a hoy con el costo del patrimonio, que empieza en 13,36% y baja a 12,00%; suman US$1.746 millones. Después del año 10 se supone un crecimiento perpetuo de 3,00%: el valor de esa perpetuidad, traído a hoy, es US$1.302 millones. La suma es el valor del patrimonio, US$3.049 millones; dividido entre 279,5 millones de acciones da US$10,91 por acción. Aquí no se resta deuda: en una financiera la deuda es materia prima del negocio y ya está dentro del flujo del accionista.
 
-**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 2,71× (peso 0% dentro de los múltiplos); EV/FCFF 2,26× (peso 0% dentro de los múltiplos); P/E 9,55× (peso 58% dentro de los múltiplos); P/FCFE 8,34× (peso 33% dentro de los múltiplos); P/OCF 4,36× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (13,4%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 2,75× (peso 0% dentro de los múltiplos); EV/FCFF 2,29× (peso 0% dentro de los múltiplos); P/E 9,55× (peso 64% dentro de los múltiplos); P/FCFE 8,34× (peso 36% dentro de los múltiplos); P/OCF 4,34× (peso 0% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (13,4%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
 Sensibilidad del DCF Base (US$10,91; cada fila es un DCF completo con un solo supuesto cambiado):
 
@@ -144,6 +144,22 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 512,7 | 3,0% | 12,0% | 128,2 | 384,5 | 12,0% | 113,8 |
 | Terminal | 528,1 | 3,0% | 12,0% | 132,0 | 396,1 | 12,0% | — |
 
+Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy 2.742,0 + VP de los rendimientos en exceso 306,7 = 3.048,7 millones; entre 279,46 millones de acciones da US$10,91 por acción, igual que el FCFE (US$10,91). En perpetuidad el ROE es el costo del patrimonio: no hay rendimiento en exceso y crecer no suma valor.
+
+| Año | Patrimonio inicial | ROE | Utilidad | Ke | Costo del patrimonio | Rendimiento en exceso | VP |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 2.742,0 | 15,6% | 427,8 | 13,4% | 366,2 | 61,5 | 54,3 |
+| 2 | 2.873,7 | 15,6% | 448,3 | 13,4% | 383,8 | 64,5 | 50,2 |
+| 3 | 3.033,4 | 15,6% | 473,2 | 13,4% | 405,2 | 68,1 | 46,7 |
+| 4 | 3.212,6 | 15,6% | 501,2 | 13,4% | 429,1 | 72,1 | 43,7 |
+| 5 | 3.396,6 | 15,6% | 529,9 | 13,4% | 453,7 | 76,2 | 40,7 |
+| 6 | 3.594,7 | 14,9% | 534,9 | 13,1% | 470,4 | 64,5 | 30,5 |
+| 7 | 3.783,9 | 14,2% | 535,8 | 12,8% | 484,9 | 50,9 | 21,3 |
+| 8 | 3.961,7 | 13,4% | 532,4 | 12,5% | 496,9 | 35,6 | 13,2 |
+| 9 | 4.125,4 | 12,7% | 524,7 | 12,3% | 506,2 | 18,5 | 6,1 |
+| 10 | 4.272,5 | 12,0% | 512,7 | 12,0% | 512,7 | 0,0 | 0,0 |
+| Terminal | 4.400,7 | 12,0% | 528,1 | 12,0% | 528,1 | 0,0 | 0 |
+
 **Conservadora · El PIX y la competencia erosionan** — probabilidad 30%; valor terminal 3.386,4 (VP 1.002,2); DCF US$9,66 por acción.
 
 | Año | Utilidad | Crecimiento | ROE | Reinversión | FCFE | Ke | VP del FCFE |
@@ -159,6 +175,22 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 9 | 389,7 | 2,9% | 12,2% | 93,2 | 296,6 | 12,3% | 98,3 |
 | 10 | 394,5 | 3,0% | 12,0% | 98,6 | 295,9 | 12,0% | 87,6 |
 | Terminal | 406,4 | 3,0% | 12,0% | 101,6 | 304,8 | 12,0% | — |
+
+Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy 2.742,0 + VP de los rendimientos en exceso -43,6 = 2.698,4 millones; entre 279,46 millones de acciones da US$9,66 por acción, igual que el FCFE (US$9,66). En perpetuidad el ROE es el costo del patrimonio: no hay rendimiento en exceso y crecer no suma valor.
+
+| Año | Patrimonio inicial | ROE | Utilidad | Ke | Costo del patrimonio | Rendimiento en exceso | VP |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 2.742,0 | 13,0% | 356,5 | 13,4% | 366,2 | -9,8 | -8,6 |
+| 2 | 2.742,0 | 13,0% | 356,5 | 13,4% | 366,2 | -9,8 | -7,6 |
+| 3 | 2.767,9 | 13,0% | 359,8 | 13,4% | 369,7 | -9,9 | -6,8 |
+| 4 | 2.811,3 | 13,0% | 365,5 | 13,4% | 375,5 | -10,0 | -6,1 |
+| 5 | 2.870,6 | 13,0% | 373,2 | 13,4% | 383,4 | -10,2 | -5,5 |
+| 6 | 2.944,8 | 12,8% | 376,9 | 13,1% | 385,3 | -8,4 | -4,0 |
+| 7 | 3.023,4 | 12,6% | 380,9 | 12,8% | 387,4 | -6,5 | -2,7 |
+| 8 | 3.106,6 | 12,4% | 385,2 | 12,5% | 389,6 | -4,4 | -1,6 |
+| 9 | 3.194,6 | 12,2% | 389,7 | 12,3% | 392,0 | -2,3 | -0,8 |
+| 10 | 3.287,8 | 12,0% | 394,5 | 12,0% | 394,5 | 0,0 | 0,0 |
+| Terminal | 3.386,4 | 12,0% | 406,4 | 12,0% | 406,4 | 0,0 | 0 |
 
 **Disrupción · Deterioro de los fundamentales: Crisis de crédito en Brasil** — probabilidad 10%; valor terminal 3.429,0 (VP 1.014,8); DCF US$8,35 por acción.
 
@@ -176,6 +208,22 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 10 | 399,5 | 3,0% | 12,0% | 99,9 | 299,6 | 12,0% | 88,7 |
 | Terminal | 411,5 | 3,0% | 12,0% | 102,9 | 308,6 | 12,0% | — |
 
+Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy 2.742,0 + VP de los rendimientos en exceso -409,1 = 2.332,9 millones; entre 279,46 millones de acciones da US$8,35 por acción, igual que el FCFE (US$8,35). En perpetuidad el ROE es el costo del patrimonio: no hay rendimiento en exceso y crecer no suma valor.
+
+| Año | Patrimonio inicial | ROE | Utilidad | Ke | Costo del patrimonio | Rendimiento en exceso | VP |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 2.742,0 | 10,0% | 274,2 | 13,4% | 366,2 | -92,0 | -81,2 |
+| 2 | 2.742,0 | 10,0% | 274,2 | 13,4% | 366,2 | -92,0 | -71,6 |
+| 3 | 2.742,0 | 10,0% | 274,2 | 13,4% | 366,2 | -92,0 | -63,2 |
+| 4 | 2.762,6 | 10,0% | 276,3 | 13,4% | 369,0 | -92,7 | -56,2 |
+| 5 | 2.850,9 | 10,0% | 285,1 | 13,4% | 380,8 | -95,7 | -51,1 |
+| 6 | 2.943,5 | 10,4% | 306,1 | 13,1% | 385,2 | -79,0 | -37,3 |
+| 7 | 3.037,8 | 10,8% | 328,1 | 12,8% | 389,3 | -61,2 | -25,6 |
+| 8 | 3.133,5 | 11,2% | 350,9 | 12,5% | 393,0 | -42,1 | -15,7 |
+| 9 | 3.230,6 | 11,6% | 374,8 | 12,3% | 396,4 | -21,7 | -7,2 |
+| 10 | 3.329,2 | 12,0% | 399,5 | 12,0% | 399,5 | 0,0 | 0,0 |
+| Terminal | 3.429,0 | 12,0% | 411,5 | 12,0% | 411,5 | 0,0 | 0 |
+
 **Optimista · Crece el banco: crédito y depósitos** — probabilidad 15%; valor terminal 5.378,0 (VP 1.591,6); DCF US$11,77 por acción.
 
 | Año | Utilidad | Crecimiento | ROE | Reinversión | FCFE | Ke | VP del FCFE |
@@ -191,6 +239,22 @@ Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que l
 | 9 | 652,8 | 4,0% | 13,0% | 199,7 | 453,2 | 12,3% | 150,2 |
 | 10 | 626,6 | 3,0% | 12,0% | 156,6 | 469,9 | 12,0% | 139,1 |
 | Terminal | 645,4 | 3,0% | 12,0% | 161,3 | 484,0 | 12,0% | — |
+
+Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy 2.742,0 + VP de los rendimientos en exceso 547,9 = 3.289,9 millones; entre 279,46 millones de acciones da US$11,77 por acción, igual que el FCFE (US$11,77). En perpetuidad el ROE es el costo del patrimonio: no hay rendimiento en exceso y crecer no suma valor.
+
+| Año | Patrimonio inicial | ROE | Utilidad | Ke | Costo del patrimonio | Rendimiento en exceso | VP |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 2.742,0 | 17,0% | 466,1 | 13,4% | 366,2 | 99,9 | 88,1 |
+| 2 | 2.988,8 | 17,0% | 508,1 | 13,4% | 399,2 | 108,9 | 84,7 |
+| 3 | 3.275,7 | 17,0% | 556,9 | 13,4% | 437,5 | 119,4 | 81,9 |
+| 4 | 3.589,7 | 17,0% | 610,2 | 13,4% | 479,5 | 130,8 | 79,2 |
+| 5 | 3.916,7 | 17,0% | 665,8 | 13,4% | 523,1 | 142,7 | 76,2 |
+| 6 | 4.225,4 | 16,0% | 676,1 | 13,1% | 552,9 | 123,2 | 58,2 |
+| 7 | 4.517,1 | 15,0% | 677,6 | 12,8% | 578,8 | 98,8 | 41,4 |
+| 8 | 4.784,8 | 14,0% | 669,9 | 12,5% | 600,1 | 69,7 | 26,0 |
+| 9 | 5.021,7 | 13,0% | 652,8 | 12,3% | 616,2 | 36,6 | 12,1 |
+| 10 | 5.221,4 | 12,0% | 626,6 | 12,0% | 626,6 | 0,0 | 0,0 |
+| Terminal | 5.378,0 | 12,0% | 645,4 | 12,0% | 645,4 | 0,0 | 0 |
 
 
 #### 4. Puente numérico de los cuatro DCF
