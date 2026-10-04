@@ -48,7 +48,7 @@
    "hoja": "EVEBITDA",
    "A": 34.24,
    "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 34,2x",
-   "A_p25": 30.57,
+   "A_p25": 30.45,
    "A_p75": 38.08,
    "A_max": 41.92,
    "A_excluidos": [
@@ -84,7 +84,7 @@
     ],
     [
      "LTM",
-     26.89,
+     26.65,
      "> 2,5x la mediana (6.0x)"
     ]
    ],
@@ -106,10 +106,10 @@
    },
    "mercado": 32.44,
    "lambda": 0.25,
-   "conservador": 27.12,
+   "conservador": 27.08,
    "base": 28.32,
    "optimista": 36.69,
-   "factor_cons": 0.958,
+   "factor_cons": 0.956,
    "factor_opt": 1.296,
    "opt_tope_historico": null,
    "base_en_rango": true,
@@ -129,7 +129,7 @@
    "hoja": "EVFCFF",
    "A": 49.42,
    "A_desc": "mediana Jan '25, Jan '26, LTM (etapa actual) = 49,4x (EV/FCF × 1,11 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 47.15,
+   "A_p25": 46.95,
    "A_p75": 55.03,
    "A_max": 54.49,
    "A_excluidos": [
@@ -170,7 +170,7 @@
     ],
     [
      "LTM",
-     40.33,
+     39.96,
      "> 2,5x la mediana (7.3x)"
     ]
    ],
@@ -475,14 +475,14 @@
    318.0620434292437
   ],
   "multiplos_hoy": [
-   211.553679454258,
+   211.45639545325372,
    305.42193580449464,
    447.10647794057
   ],
   "ponderado_hoy": [
-   177.16985930723393,
-   267.0091168276288,
-   395.48870413603953
+   177.1114889066313,
+   267.00911682762876,
+   395.4887041360395
   ],
   "brecha_base": 0.45862791270985315,
   "fila_origen": 40

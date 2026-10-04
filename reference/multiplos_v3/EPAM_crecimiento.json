@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-03",
+ "fecha": "2026-10-04",
  "umbral": 0.02,
  "precio": 108.29,
  "dcfHoy": 189.79581098993606,
@@ -24,23 +24,23 @@
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
-   "multiplo": 8.77,
+   "multiplo": 8.79,
    "multiploDcf": 14.128783092954277,
-   "gImplicito": 0.03201703619811483,
+   "gImplicito": 0.0321446040201428,
    "gDcf": 0.05372648467036198,
-   "dif": -0.02170944847224715,
-   "difValor": -0.3671560145190701,
+   "dif": -0.021581880650219182,
+   "difValor": -0.3658180244670515,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 37% por debajo del DCF en FY+3."
   },
   {
    "metodo": "EV/FCFF",
-   "multiplo": 13.76,
+   "multiplo": 13.79,
    "multiploDcf": 28.047225837943643,
-   "gImplicito": 0.017360149542788243,
+   "gImplicito": 0.017510121261610886,
    "gDcf": 0.053726484670361986,
-   "dif": -0.03636633512757374,
-   "difValor": -0.49014428731724435,
+   "dif": -0.036216363408751104,
+   "difValor": -0.4891332690795728,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 49% por debajo del DCF en FY+3."
   },

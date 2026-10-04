@@ -40,10 +40,10 @@
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 43.47,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 43,5x",
-   "A_p25": 40.09,
-   "A_p75": 46.85,
+   "A": 43.06,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 43,1x",
+   "A_p25": 39.48,
+   "A_p75": 46.65,
    "A_max": 50.23,
    "A_excluidos": [
     [
@@ -87,18 +87,18 @@
     "Base": 16.94,
     "Optimista": 19.27
    },
-   "mercado": 37.46,
+   "mercado": 37.25,
    "lambda": 0.15,
-   "conservador": 29.85,
-   "base": 34.38,
-   "optimista": 37.57,
-   "factor_cons": 0.868,
-   "factor_opt": 1.093,
+   "conservador": 29.64,
+   "base": 34.21,
+   "optimista": 37.44,
+   "factor_cons": 0.866,
+   "factor_opt": 1.095,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     16.94,
-    43.47
+    43.06
    ],
    "antes": {
     "J8": 33.98,
@@ -110,10 +110,10 @@
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 23.45,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 23,4x (EV/FCF × 1,30 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 21.87,
-   "A_p75": 25.02,
+   "A": 23.22,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 23,2x (EV/FCF × 1,30 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 21.54,
+   "A_p75": 24.91,
    "A_max": 65.31,
    "A_excluidos": [
     [
@@ -141,17 +141,17 @@
     "Base": 27.76,
     "Optimista": 33.5
    },
-   "mercado": 24.16,
+   "mercado": 24.05,
    "lambda": 0.15,
-   "conservador": 20.82,
-   "base": 24.7,
-   "optimista": 27.32,
-   "factor_cons": 0.843,
-   "factor_opt": 1.106,
+   "conservador": 20.7,
+   "base": 24.61,
+   "optimista": 27.26,
+   "factor_cons": 0.841,
+   "factor_opt": 1.108,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    23.45,
+    23.22,
     27.76
    ],
    "antes": {
@@ -342,16 +342,16 @@
    149.46450141538682
   ],
   "multiplos_hoy": [
-   91.30406372423242,
-   108.02133718100691,
-   126.42310410949864
+   90.88939272932565,
+   107.67087067719821,
+   126.13687957220714
   ],
   "ponderado_hoy": [
-   91.04235364961858,
-   112.30593967619899,
-   140.24794249303153
+   90.87648525165588,
+   112.16575307467554,
+   140.13345267811496
   ],
-  "brecha_base": -0.0620081536688436,
+  "brecha_base": -0.06505139245447267,
   "fila_origen": 50
  }
 }

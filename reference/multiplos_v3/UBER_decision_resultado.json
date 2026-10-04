@@ -43,7 +43,7 @@
    "hoja": "EVEBITDA",
    "A": 27.6,
    "A_desc": "mediana Dec '24, Dec '25, LTM (etapa actual) = 27,6x",
-   "A_p25": 23.93,
+   "A_p25": 23.76,
    "A_p75": 32.64,
    "A_max": 37.67,
    "A_excluidos": [
@@ -104,10 +104,10 @@
    },
    "mercado": 20.55,
    "lambda": 0.0,
-   "conservador": 14.16,
+   "conservador": 14.12,
    "base": 20.55,
    "optimista": 25.9,
-   "factor_cons": 0.689,
+   "factor_cons": 0.687,
    "factor_opt": 1.26,
    "opt_tope_historico": null,
    "base_en_rango": true,
@@ -127,7 +127,7 @@
    "hoja": "EVFCFF",
    "A": 19.11,
    "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 19,1x (EV/FCF × 1,03 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 17.63,
+   "A_p25": 17.57,
    "A_p75": 25.18,
    "A_max": 39.82,
    "A_excluidos": [
@@ -183,10 +183,10 @@
    },
    "mercado": 14.57,
    "lambda": 0.0,
-   "conservador": 11.38,
+   "conservador": 11.36,
    "base": 14.57,
    "optimista": 23.44,
-   "factor_cons": 0.781,
+   "factor_cons": 0.78,
    "factor_opt": 1.609,
    "opt_tope_historico": null,
    "base_en_rango": true,
@@ -206,7 +206,7 @@
    "hoja": "PE",
    "A": 17.24,
    "A_desc": "mediana Dec '23, Dec '25, LTM (etapa actual) = 17,2x",
-   "A_p25": 16.29,
+   "A_p25": 16.16,
    "A_p75": 42.83,
    "A_max": 17.24,
    "A_excluidos": [
@@ -243,7 +243,7 @@
     [
      "Dec '23",
      68.41,
-     "> 2,5x la mediana (16.3x)"
+     "> 2,5x la mediana (16.2x)"
     ]
    ],
    "B_mediana": 23.19,
@@ -268,10 +268,10 @@
    },
    "mercado": 18.96,
    "lambda": 0.0,
-   "conservador": 14.77,
+   "conservador": 14.72,
    "base": 18.96,
    "optimista": 19.53,
-   "factor_cons": 0.779,
+   "factor_cons": 0.776,
    "factor_opt": 1.766,
    "opt_tope_historico": 33.484310672501536,
    "base_en_rango": true,
@@ -291,7 +291,7 @@
    "hoja": "PFCFE",
    "A": 17.88,
    "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,9x",
-   "A_p25": 16.48,
+   "A_p25": 16.42,
    "A_p75": 23.31,
    "A_max": 37.93,
    "A_excluidos": [
@@ -347,10 +347,10 @@
    },
    "mercado": 14.26,
    "lambda": 0.0,
-   "conservador": 11.11,
+   "conservador": 11.1,
    "base": 14.26,
    "optimista": 22.74,
-   "factor_cons": 0.78,
+   "factor_cons": 0.778,
    "factor_opt": 1.595,
    "opt_tope_historico": null,
    "base_en_rango": true,
@@ -370,7 +370,7 @@
    "hoja": "POCF",
    "A": 17.27,
    "A_desc": "mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,3x",
-   "A_p25": 15.94,
+   "A_p25": 15.88,
    "A_p75": 22.26,
    "A_max": 35.57,
    "A_excluidos": [
@@ -426,10 +426,10 @@
    },
    "mercado": 13.56,
    "lambda": 0.0,
-   "conservador": 10.31,
+   "conservador": 10.3,
    "base": 13.56,
    "optimista": 20.22,
-   "factor_cons": 0.76,
+   "factor_cons": 0.759,
    "factor_opt": 1.491,
    "opt_tope_historico": null,
    "base_en_rango": true,
@@ -452,14 +452,14 @@
    122.19290565179571
   ],
   "multiplos_hoy": [
-   54.248207727186895,
+   54.10182516025902,
    86.45768539125791,
    118.44529892971121
   ],
   "ponderado_hoy": [
-   54.14562343975894,
-   87.80425949403394,
-   119.94434161854502
+   54.0577938996022,
+   87.80425949403391,
+   119.944341618545
   ],
   "brecha_base": -0.03747807640806078,
   "fila_origen": 41

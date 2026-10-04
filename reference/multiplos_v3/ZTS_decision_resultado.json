@@ -32,10 +32,10 @@
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 12.07,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 12,1x",
-   "A_p25": 10.69,
-   "A_p75": 13.46,
+   "A": 12.04,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 12,0x",
+   "A_p25": 10.65,
+   "A_p75": 13.44,
    "A_max": 37.53,
    "A_excluidos": [],
    "B_mediana": 14.82,
@@ -51,17 +51,17 @@
     "Base": 17.18,
     "Optimista": 18.08
    },
-   "mercado": 12.33,
+   "mercado": 12.32,
    "lambda": 0.25,
-   "conservador": 12.34,
-   "base": 13.54,
-   "optimista": 15.07,
+   "conservador": 12.33,
+   "base": 13.53,
+   "optimista": 15.06,
    "factor_cons": 0.911,
-   "factor_opt": 1.112,
+   "factor_opt": 1.113,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    12.07,
+    12.04,
     17.18
    ],
    "antes": {
@@ -74,10 +74,10 @@
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 19.54,
+   "A": 19.5,
    "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,5x (EV/FCF × 0,93 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 17.05,
-   "A_p75": 22.03,
+   "A_p25": 16.98,
+   "A_p75": 22.01,
    "A_max": 68.31,
    "A_excluidos": [],
    "B_mediana": 26.11,
@@ -94,17 +94,17 @@
     "Base": 27.23,
     "Optimista": 29.23
    },
-   "mercado": 20.87,
+   "mercado": 20.85,
    "lambda": 0.25,
-   "conservador": 20.15,
-   "base": 22.46,
-   "optimista": 24.56,
+   "conservador": 20.13,
+   "base": 22.44,
+   "optimista": 24.55,
    "factor_cons": 0.897,
-   "factor_opt": 1.093,
+   "factor_opt": 1.094,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    19.54,
+    19.5,
     27.23
    ],
    "antes": {
@@ -209,10 +209,10 @@
   "P/OCF": {
    "aplica": true,
    "hoja": "POCF",
-   "A": 14.29,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 14,3x",
-   "A_p25": 12.23,
-   "A_p75": 16.35,
+   "A": 14.38,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 14,4x",
+   "A_p25": 12.36,
+   "A_p75": 16.39,
    "A_max": 52.11,
    "A_excluidos": [],
    "B_mediana": 18.46,
@@ -228,17 +228,17 @@
     "Base": 19.9,
     "Optimista": 21.91
    },
-   "mercado": 14.99,
+   "mercado": 15.03,
    "lambda": 0.25,
-   "conservador": 14.32,
-   "base": 16.22,
-   "optimista": 18.25,
-   "factor_cons": 0.883,
-   "factor_opt": 1.125,
+   "conservador": 14.37,
+   "base": 16.25,
+   "optimista": 18.27,
+   "factor_cons": 0.884,
+   "factor_opt": 1.124,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    14.29,
+    14.38,
     19.9
    ],
    "antes": {
@@ -256,16 +256,16 @@
    132.05452880790438
   ],
   "multiplos_hoy": [
-   84.79239968511273,
-   106.36754014505082,
-   123.95407401923096
+   84.77641220322279,
+   106.33960251963917,
+   123.92802215249196
   ],
   "ponderado_hoy": [
-   76.14310915867986,
-   109.51424015315641,
-   127.19425593470034
+   76.13351666954588,
+   109.4974775779094,
+   127.17862481465691
   ],
-  "brecha_base": -0.06886504926742687,
+  "brecha_base": -0.06910961353417389,
   "fila_origen": 40
  }
 }

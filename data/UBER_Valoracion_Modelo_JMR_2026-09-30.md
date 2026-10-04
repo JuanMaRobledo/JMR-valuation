@@ -30,7 +30,7 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
 | Base | US$89,82 | US$86,46 | US$87,80 | US$52,80 | US$122,70 |
-| Conservador | US$53,99 | US$54,25 | US$54,15 | US$52,80 | US$70,16 |
+| Conservador | US$53,99 | US$54,10 | US$54,06 | US$52,80 | US$70,04 |
 | Optimista | US$122,19 | US$118,45 | US$119,94 | US$52,80 | US$175,62 |
 
 ## 2. Datos
@@ -59,9 +59,9 @@ A: Uber es rentable desde 2023; los cierres anteriores tienen EBITDA y utilidad 
 
 | Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana Dec '24, Dec '25, LTM (etapa actual) = 27,6x | 25,3x (n=5: DASH 55,0x, ABNB 30,1x, BKNG 12,1x, GRAB 25,3x, EXPE 11,0x) × 1,00 = 13,5x | 21,2x / 15,3x / 29,9x | **20,6x** | 14,2x | 25,9x | 30,4x / 19,8x / 37,7x |
+| EV/EBITDA | mediana Dec '24, Dec '25, LTM (etapa actual) = 27,6x | 25,3x (n=5: DASH 55,0x, ABNB 30,1x, BKNG 12,1x, GRAB 25,3x, EXPE 11,0x) × 1,00 = 13,5x | 21,2x / 15,3x / 29,9x | **20,6x** | 14,1x | 25,9x | 30,4x / 19,8x / 37,7x |
 | EV/FCFF | mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 19,1x (EV/FCF × 1,03 = FCF después de intereses ÷ FCFF) | 12,1x (n=3: DASH 37,0x, BKNG 12,1x, EXPE 6,7x) × 1,00 = 10,0x | 43,8x / 28,1x / 64,9x | **14,6x** | 11,4x | 23,4x | 19,6x / 15,6x / 32,0x |
-| P/E | mediana Dec '23, Dec '25, LTM (etapa actual) = 17,2x | 23,2x (n=4: ABNB 35,8x, BKNG 18,0x, GRAB 28,4x, EXPE 16,6x) × 1,00 = 20,7x | 40,4x / 25,4x / 61,0x | **19,0x** | 14,8x | 19,5x | 23,4x / 18,2x / 24,1x |
+| P/E | mediana Dec '23, Dec '25, LTM (etapa actual) = 17,2x | 23,2x (n=4: ABNB 35,8x, BKNG 18,0x, GRAB 28,4x, EXPE 16,6x) × 1,00 = 20,7x | 40,4x / 25,4x / 61,0x | **19,0x** | 14,7x | 19,5x | 23,4x / 18,2x / 24,1x |
 | P/FCFE | mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,9x | 12,8x (n=3: DASH 37,9x, BKNG 12,8x, EXPE 7,2x) × 1,00 = 10,6x | 45,0x / 28,6x / 67,4x | **14,3x** | 11,1x | 22,7x | 19,6x / 15,5x / 32,2x |
 | P/OCF | mediana Dec '23, Dec '24, Dec '25, LTM (etapa actual) = 17,3x | 12,4x (n=3: DASH 28,6x, BKNG 12,4x, EXPE 6,1x) × 1,00 = 9,8x | 49,0x / 30,0x / 74,9x | **13,6x** | 10,3x | 20,2x | 19,6x / 15,3x / 28,8x |
 
@@ -69,7 +69,7 @@ Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentr
 
 - **EV/EBITDA.** Base 20,6x: promedio de historia y peers 20,6x, acercado 0% al justificado (21,2x); rango de anclas 13,5x–27,6x. Atípicos excluidos de la historia: Dec '18 (-0,2x: métrica negativa o ~0); Dec '19 (-5,8x: métrica negativa o ~0); Dec '20 (-22,8x: métrica negativa o ~0); Dec '21 (-30,1x: métrica negativa o ~0); Dec '22 (-63,7x: métrica negativa o ~0); Dec '17 (1,2x: < 0,4x la mediana (27.6x), caída puntual); Dec '23 (69,3x: > 2,5x la mediana (27.6x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **EV/FCFF.** Base 14,6x: promedio de historia y peers 14,6x, acercado 0% al justificado (43,8x); rango de anclas 10,0x–43,8x. Atípicos excluidos de la historia: Dec '18 (-0,2x: métrica negativa o ~0); Dec '19 (-9,7x: métrica negativa o ~0); Dec '20 (-29,1x: métrica negativa o ~0); Dec '21 (-119,0x: métrica negativa o ~0); Dec '17 (2,0x: < 0,4x la mediana (18.5x), caída puntual); Dec '22 (144,5x: > 2,5x la mediana (18.5x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
-- **P/E.** Base 19,0x: promedio de historia y peers 19,0x, acercado 0% al justificado (40,4x); rango de anclas 17,2x–40,4x. Atípicos excluidos de la historia: Dec '17 (0,0x: métrica negativa o ~0); Dec '18 (0,0x: métrica negativa o ~0); Dec '19 (-4,4x: métrica negativa o ~0); Dec '20 (-13,2x: métrica negativa o ~0); Dec '21 (-161,3x: métrica negativa o ~0); Dec '22 (-5,3x: métrica negativa o ~0); Dec '23 (68,4x: > 2,5x la mediana (16.3x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
+- **P/E.** Base 19,0x: promedio de historia y peers 19,0x, acercado 0% al justificado (40,4x); rango de anclas 17,2x–40,4x. Atípicos excluidos de la historia: Dec '17 (0,0x: métrica negativa o ~0); Dec '18 (0,0x: métrica negativa o ~0); Dec '19 (-4,4x: métrica negativa o ~0); Dec '20 (-13,2x: métrica negativa o ~0); Dec '21 (-161,3x: métrica negativa o ~0); Dec '22 (-5,3x: métrica negativa o ~0); Dec '23 (68,4x: > 2,5x la mediana (16.2x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/FCFE.** Base 14,3x: promedio de historia y peers 14,3x, acercado 0% al justificado (45,0x); rango de anclas 10,6x–45,0x. Atípicos excluidos de la historia: Dec '17 (0,0x: métrica negativa o ~0); Dec '18 (0,0x: métrica negativa o ~0); Dec '19 (-10,4x: métrica negativa o ~0); Dec '20 (-28,1x: métrica negativa o ~0); Dec '21 (-110,0x: métrica negativa o ~0); Dec '22 (127,2x: > 2,5x la mediana (18.4x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 - **P/OCF.** Base 13,6x: promedio de historia y peers 13,6x, acercado 0% al justificado (49,0x); rango de anclas 9,8x–49,0x. Atípicos excluidos de la historia: Dec '17 (0,0x: métrica negativa o ~0); Dec '18 (0,0x: métrica negativa o ~0); Dec '19 (-11,8x: métrica negativa o ~0); Dec '20 (-34,4x: métrica negativa o ~0); Dec '21 (-183,7x: métrica negativa o ~0); Dec '22 (77,2x: > 2,5x la mediana (17.8x)).  Lo cambiaría: una revisión de la mediana de peers o del crecimiento de largo plazo, o que la empresa salga de la etapa actual.
 
@@ -88,26 +88,26 @@ Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden B
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
 | DCF de las historias al presente | — | 40% | — | US$89,82 | US$53,99 | US$122,19 |
-| EV/EBITDA | 20,6× / 14,2× / 25,9× | 20% | 33% | US$107,29 | US$61,73 | US$152,72 |
-| EV/FCFF | 14,6× / 11,4× / 23,4× | 10% | 17% | US$33,07 | US$25,57 | US$54,05 |
-| P/E | 19,0× / 14,8× / 19,5× | 20% | 33% | US$103,45 | US$66,20 | US$121,39 |
-| P/FCFE | 14,3× / 11,1× / 22,7× | 5% | 8% | US$70,16 | US$47,79 | US$123,35 |
-| P/OCF | 13,6× / 10,3× / 20,2× | 5% | 8% | US$58,26 | US$40,32 | US$93,46 |
-| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$86,46 | US$54,25 | US$118,45 |
-| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$87,80 | US$54,15 | US$119,94 |
+| EV/EBITDA | 20,6× / 14,1× / 25,9× | 20% | 33% | US$107,29 | US$61,56 | US$152,72 |
+| EV/FCFF | 14,6× / 11,4× / 23,4× | 10% | 17% | US$33,07 | US$25,53 | US$54,05 |
+| P/E | 19,0× / 14,7× / 19,5× | 20% | 33% | US$103,45 | US$65,97 | US$121,39 |
+| P/FCFE | 14,3× / 11,1× / 22,7× | 5% | 8% | US$70,16 | US$47,75 | US$123,35 |
+| P/OCF | 13,6× / 10,3× / 20,2× | 5% | 8% | US$58,26 | US$40,28 | US$93,46 |
+| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$86,46 | US$54,10 | US$118,45 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$87,80 | US$54,06 | US$119,94 |
 
 **Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 (la hoja no proyecta dividendos: precio objetivo exdividendo = total).
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
 | DCF capitalizado a FY+3 antes de distribuciones | — | 40% | — | US$114,95 | US$69,09 | US$156,37 |
-| EV/EBITDA | 20,6× / 14,2× / 25,9× | 20% | 33% | US$155,80 | US$79,78 | US$236,26 |
-| EV/FCFF | 14,6× / 11,4× / 23,4× | 10% | 17% | US$53,91 | US$35,32 | US$98,85 |
-| P/E | 19,0× / 14,8× / 19,5× | 20% | 33% | US$152,28 | US$86,24 | US$190,66 |
-| P/FCFE | 14,3× / 11,1× / 22,7× | 5% | 8% | US$103,71 | US$61,30 | US$197,83 |
-| P/OCF | 13,6× / 10,3× / 20,2× | 5% | 8% | US$90,43 | US$54,35 | US$158,25 |
-| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 60% | 100% | US$127,86 | US$70,87 | US$188,45 |
-| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$122,70 | US$70,16 | US$175,62 |
+| EV/EBITDA | 20,6× / 14,1× / 25,9× | 20% | 33% | US$155,80 | US$79,56 | US$236,26 |
+| EV/FCFF | 14,6× / 11,4× / 23,4× | 10% | 17% | US$53,91 | US$35,26 | US$98,85 |
+| P/E | 19,0× / 14,7× / 19,5× | 20% | 33% | US$152,28 | US$85,95 | US$190,66 |
+| P/FCFE | 14,3× / 11,1× / 22,7× | 5% | 8% | US$103,71 | US$61,24 | US$197,83 |
+| P/OCF | 13,6× / 10,3× / 20,2× | 5% | 8% | US$90,43 | US$54,29 | US$158,25 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 60% | 100% | US$127,86 | US$70,68 | US$188,45 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$122,70 | US$70,04 | US$175,62 |
 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 
@@ -116,22 +116,22 @@ Detalle del valor presente por horizonte (Ke 8,57%; consolidado por método: Pro
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
 | EV/EBITDA | Base | US$89,90 | US$110,21 | US$121,75 | US$107,29 | OK |
-| EV/EBITDA | Conservador | US$60,53 | US$62,33 | US$62,35 | US$61,73 | OK |
+| EV/EBITDA | Conservador | US$60,36 | US$62,15 | US$62,17 | US$61,56 | OK |
 | EV/EBITDA | Optimista | US$115,65 | US$157,89 | US$184,62 | US$152,72 | OK |
 | EV/FCFF | Base | US$22,22 | US$34,86 | US$42,13 | US$33,07 | OK |
-| EV/FCFF | Conservador | US$22,88 | US$26,23 | US$27,60 | US$25,57 | OK |
+| EV/FCFF | Conservador | US$22,84 | US$26,18 | US$27,55 | US$25,53 | OK |
 | EV/FCFF | Optimista | US$27,42 | US$57,50 | US$77,24 | US$54,05 | OK |
 | P/E | Base | US$84,54 | US$106,81 | US$119,00 | US$103,45 | OK |
-| P/E | Conservador | US$64,10 | US$67,10 | US$67,39 | US$66,20 | OK |
+| P/E | Conservador | US$63,89 | US$66,87 | US$67,16 | US$65,97 | OK |
 | P/E | Optimista | US$89,03 | US$126,15 | US$148,98 | US$121,39 | OK |
 | P/FCFE | Base | US$58,01 | US$71,42 | US$81,04 | US$70,16 | OK |
-| P/FCFE | Conservador | US$48,15 | US$47,33 | US$47,90 | US$47,79 | OK |
+| P/FCFE | Conservador | US$48,10 | US$47,29 | US$47,85 | US$47,75 | OK |
 | P/FCFE | Optimista | US$88,81 | US$126,65 | US$154,59 | US$123,35 | OK |
 | P/OCF | Base | US$43,33 | US$60,77 | US$70,67 | US$58,26 | OK |
-| P/OCF | Conservador | US$37,35 | US$41,14 | US$42,47 | US$40,32 | OK |
+| P/OCF | Conservador | US$37,31 | US$41,10 | US$42,43 | US$40,28 | OK |
 | P/OCF | Optimista | US$58,56 | US$98,17 | US$123,66 | US$93,46 | OK |
 
-Múltiplos consolidados hoy: US$86,46 / US$54,25 / US$118,45 · DCF de las historias hoy: US$89,82 / US$53,99 / US$122,19 · Ponderado hoy: US$87,80 / US$54,15 / US$119,94 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$86,46 / US$54,10 / US$118,45 · DCF de las historias hoy: US$89,82 / US$53,99 / US$122,19 · Ponderado hoy: US$87,80 / US$54,06 / US$119,94 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ## 6. DCF frente a múltiplos
 
@@ -174,19 +174,19 @@ Supuestos más frágiles: Múltiplos Base +20%, Múltiplos Base −20%, Margen o
 
 | Hoja | Celda | Valor anterior | Valor nuevo | Motivo |
 |---|---|---:|---:|---|
-| EVEBITDA | J8 | 19,84 | 14,16 | Múltiplo conservador elegido con el protocolo v3 |
+| EVEBITDA | J8 | 19,84 | 14,12 | Múltiplo conservador elegido con el protocolo v3 |
 | EVEBITDA | J19 | 30,39 | 20,55 | Múltiplo base elegido con el protocolo v3 |
 | EVEBITDA | J30 | 37,67 | 25,90 | Múltiplo optimista elegido con el protocolo v3 |
-| EVFCFF | J8 | 15,59 | 11,38 | Múltiplo conservador elegido con el protocolo v3 |
+| EVFCFF | J8 | 15,59 | 11,36 | Múltiplo conservador elegido con el protocolo v3 |
 | EVFCFF | J19 | 19,63 | 14,57 | Múltiplo base elegido con el protocolo v3 |
 | EVFCFF | J30 | 32,02 | 23,44 | Múltiplo optimista elegido con el protocolo v3 |
-| PE | J8 | 18,25 | 14,77 | Múltiplo conservador elegido con el protocolo v3 |
+| PE | J8 | 18,25 | 14,72 | Múltiplo conservador elegido con el protocolo v3 |
 | PE | J19 | 23,35 | 18,96 | Múltiplo base elegido con el protocolo v3 |
 | PE | J30 | 24,05 | 19,53 | Múltiplo optimista elegido con el protocolo v3 |
-| PFCFE | J8 | 15,53 | 11,11 | Múltiplo conservador elegido con el protocolo v3 |
+| PFCFE | J8 | 15,53 | 11,10 | Múltiplo conservador elegido con el protocolo v3 |
 | PFCFE | J19 | 19,57 | 14,26 | Múltiplo base elegido con el protocolo v3 |
 | PFCFE | J30 | 32,16 | 22,74 | Múltiplo optimista elegido con el protocolo v3 |
-| POCF | J8 | 15,31 | 10,31 | Múltiplo conservador elegido con el protocolo v3 |
+| POCF | J8 | 15,31 | 10,30 | Múltiplo conservador elegido con el protocolo v3 |
 | POCF | J19 | 19,55 | 13,56 | Múltiplo base elegido con el protocolo v3 |
 | POCF | J30 | 28,80 | 20,22 | Múltiplo optimista elegido con el protocolo v3 |
 | Supuestos de los Múltiplos | A3, A12 | texto anterior | síntesis y chequeo de independencia | Documentación (paso 6.5) |

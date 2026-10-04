@@ -20,16 +20,16 @@
      "Dec '23": 69.26,
      "Dec '24": 37.67,
      "Dec '25": 27.6,
-     "LTM": 20.26
+     "LTM": 19.92
     },
     "mediana_5a": 32.63,
     "mediana_10a": 32.63,
-    "p25": 23.93,
+    "p25": 23.76,
     "p75": 32.63,
-    "min": 20.26,
+    "min": 19.92,
     "max": 37.67,
     "ultimo_cierre": 27.6,
-    "ltm": 20.26,
+    "ltm": 19.92,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -100,16 +100,16 @@
      "Dec '23": 39.82,
      "Dec '24": 19.18,
      "Dec '25": 17.76,
-     "LTM": 14.91
+     "LTM": 14.66
     },
     "mediana_5a": 19.18,
     "mediana_10a": 19.18,
-    "p25": 17.05,
+    "p25": 16.99,
     "p75": 24.34,
-    "min": 14.91,
+    "min": 14.66,
     "max": 39.82,
     "ultimo_cierre": 17.76,
-    "ltm": 14.91,
+    "ltm": 14.66,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -175,16 +175,16 @@
      "Dec '23": 68.41,
      "Dec '24": 13.17,
      "Dec '25": 17.24,
-     "LTM": 15.35
+     "LTM": 15.07
     },
     "mediana_5a": 15.2,
     "mediana_10a": 15.2,
-    "p25": 14.26,
-    "p75": 16.29,
+    "p25": 14.12,
+    "p75": 16.15,
     "min": 13.17,
     "max": 17.24,
     "ultimo_cierre": 17.24,
-    "ltm": 15.35,
+    "ltm": 15.07,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -220,7 +220,7 @@
      [
       "Dec '23",
       68.41,
-      "> 2,5x la mediana (16.3x)"
+      "> 2,5x la mediana (16.2x)"
      ]
     ]
    },
@@ -255,16 +255,16 @@
      "Dec '23": 37.93,
      "Dec '24": 18.44,
      "Dec '25": 17.31,
-     "LTM": 13.99
+     "LTM": 13.74
     },
     "mediana_5a": 18.44,
     "mediana_10a": 18.44,
-    "p25": 16.48,
+    "p25": 16.41,
     "p75": 23.31,
-    "min": 13.99,
+    "min": 13.74,
     "max": 37.93,
     "ultimo_cierre": 17.31,
-    "ltm": 13.99,
+    "ltm": 13.74,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -330,16 +330,16 @@
      "Dec '23": 35.57,
      "Dec '24": 17.82,
      "Dec '25": 16.73,
-     "LTM": 13.57
+     "LTM": 13.33
     },
     "mediana_5a": 17.82,
     "mediana_10a": 17.82,
-    "p25": 15.94,
+    "p25": 15.88,
     "p75": 22.25,
-    "min": 13.57,
+    "min": 13.33,
     "max": 35.57,
     "ultimo_cierre": 16.73,
-    "ltm": 13.57,
+    "ltm": 13.33,
     "regimen_bajo_actual": false,
     "excluidos": [
      [
@@ -546,5 +546,6 @@
    "ev_fcff": 6.707477095443564
   }
  ],
- "justificado_recalculado": "2026-10-03"
+ "justificado_recalculado": "2026-10-04",
+ "historia_actualizada": "2026-10-04"
 }

@@ -27,8 +27,8 @@
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 22.09,
-   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 22,1x",
+   "A": 22.26,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 22,3x",
    "A_p25": 19.52,
    "A_p75": 24.91,
    "A_max": 27.12,
@@ -40,22 +40,22 @@
    "B_peers": "GOOG 23,2x, AAPL 28,8x, AMZN 16,5x, ORCL 15,6x, META 17,4x, CRM 16,9x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 9.42,
-    "Base": 13.12,
-    "Optimista": 16.94
+    "Conservador": 11.04,
+    "Base": 10.88,
+    "Optimista": 9.63
    },
-   "mercado": 20.04,
+   "mercado": 20.12,
    "lambda": 0.0,
-   "conservador": 17.18,
-   "base": 20.04,
-   "optimista": 24.64,
-   "factor_cons": 0.857,
-   "factor_opt": 1.23,
+   "conservador": 19.19,
+   "base": 20.12,
+   "optimista": 21.96,
+   "factor_cons": 0.954,
+   "factor_opt": 1.091,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    13.12,
-    22.09
+    10.88,
+    22.26
    ],
    "antes": {
     "J8": null,
@@ -71,7 +71,7 @@
    "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 42,8x (EV/FCF × 0,98 = FCF después de intereses ÷ FCFF)",
    "A_p25": 31.96,
    "A_p75": 44.72,
-   "A_max": 56.13,
+   "A_max": 57.08,
    "A_excluidos": [],
    "B_mediana": 40.03,
    "B_ajustada": 42.03,
@@ -80,21 +80,21 @@
    "B_peers": "GOOG 73,1x, AAPL 35,3x, META 44,7x, CRM 13,8x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 25.53,
-    "Base": 35.69,
-    "Optimista": 44.39
+    "Conservador": 22.87,
+    "Base": 31.5,
+    "Optimista": 46.07
    },
    "mercado": 42.41,
    "lambda": 0.0,
-   "conservador": 31.25,
+   "conservador": 31.4,
    "base": 42.41,
-   "optimista": 50.65,
-   "factor_cons": 0.737,
-   "factor_opt": 1.194,
+   "optimista": 53.75,
+   "factor_cons": 0.74,
+   "factor_opt": 1.267,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    35.69,
+    31.5,
     42.79
    ],
    "antes": {
@@ -107,8 +107,8 @@
   "P/E": {
    "aplica": true,
    "hoja": "PE",
-   "A": 31.77,
-   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 31,8x",
+   "A": 32.0,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 32,0x",
    "A_p25": 26.81,
    "A_p75": 35.33,
    "A_max": 46.95,
@@ -120,22 +120,22 @@
    "B_peers": "GOOG 16,9x, AAPL 37,7x, AMZN 19,8x, ORCL 21,6x, META 27,8x, CRM 20,6x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 18.21,
-    "Base": 23.74,
-    "Optimista": 28.21
+    "Conservador": 16.59,
+    "Base": 21.48,
+    "Optimista": 28.77
    },
-   "mercado": 26.96,
+   "mercado": 27.08,
    "lambda": 0.0,
-   "conservador": 23.01,
-   "base": 26.96,
-   "optimista": 31.86,
+   "conservador": 23.11,
+   "base": 27.08,
+   "optimista": 33.29,
    "factor_cons": 0.853,
-   "factor_opt": 1.182,
+   "factor_opt": 1.229,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    22.16,
-    31.77
+    21.48,
+    32.0
    ],
    "antes": {
     "J8": null,
@@ -151,7 +151,7 @@
    "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 44,2x",
    "A_p25": 34.06,
    "A_p75": 45.84,
-   "A_max": 56.43,
+   "A_max": 57.38,
    "A_excluidos": [],
    "B_mediana": 40.55,
    "B_ajustada": 42.58,
@@ -160,21 +160,21 @@
    "B_peers": "GOOG 77,4x, AAPL 35,2x, META 45,9x, CRM 12,2x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 21.44,
-    "Base": 28.24,
-    "Optimista": 33.46
+    "Conservador": 19.23,
+    "Base": 25.04,
+    "Optimista": 33.54
    },
    "mercado": 43.39,
    "lambda": 0.0,
-   "conservador": 32.62,
+   "conservador": 32.75,
    "base": 43.39,
-   "optimista": 51.33,
-   "factor_cons": 0.752,
-   "factor_opt": 1.183,
+   "optimista": 53.56,
+   "factor_cons": 0.755,
+   "factor_opt": 1.235,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    28.24,
+    25.04,
     44.2
    ],
    "antes": {
@@ -189,7 +189,7 @@
    "hoja": "POCF",
    "A": 24.34,
    "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 24,3x",
-   "A_p25": 20.66,
+   "A_p25": 21.01,
    "A_p75": 27.16,
    "A_max": 28.9,
    "A_excluidos": [],
@@ -200,21 +200,21 @@
    "B_peers": "GOOG 22,2x, AAPL 32,8x, AMZN 17,9x, ORCL 8,9x, META 14,4x, CRM 11,8x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 9.97,
-    "Base": 13.71,
-    "Optimista": 16.99
+    "Conservador": 10.61,
+    "Base": 12.93,
+    "Optimista": 15.28
    },
    "mercado": 20.67,
    "lambda": 0.0,
-   "conservador": 16.15,
+   "conservador": 16.9,
    "base": 20.67,
-   "optimista": 25.22,
-   "factor_cons": 0.782,
-   "factor_opt": 1.221,
+   "optimista": 24.83,
+   "factor_cons": 0.818,
+   "factor_opt": 1.201,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    13.71,
+    12.93,
     24.34
    ],
    "antes": {
@@ -227,21 +227,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   363.7201161102566,
-   466.3773589441244,
-   552.4789142956282
+   237.05156790100042,
+   458.4229910581587,
+   599.7297312665733
   ],
   "multiplos_hoy": [
-   344.10218807328465,
-   466.1620412800673,
-   607.6603177736902
+   397.68003232933495,
+   451.41750509099677,
+   444.95535416726955
   ],
   "ponderado_hoy": [
-   355.87294489546775,
-   466.29123187850155,
-   574.5514756868529
+   301.3029536723343,
+   455.620796671294,
+   537.8199804268518
   ],
-  "brecha_base": -0.0004616812114219826,
+  "brecha_base": -0.01528170729611844,
   "fila_origen": 37
  }
 }
