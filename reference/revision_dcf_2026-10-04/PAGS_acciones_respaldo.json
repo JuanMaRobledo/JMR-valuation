@@ -1,0 +1,23 @@
+{
+ "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+ "fecha": "2026-10-04",
+ "celdas": [
+  {
+   "hoja": "Income Statement",
+   "celda": "L26",
+   "antes": 276,
+   "despues": 279.46,
+   "motivo": "Acciones LTM = diluidas ponderadas del 2T-2026 (6-K de PAGS, 0001554855-26-001791: 279.460.742, trimestre al 30-jun-2026), mismo criterio que DUOL; la hoja tenía las básicas ponderadas (276,0 M).",
+   "vigente": 276
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L27",
+   "antes": 276,
+   "despues": 279.46,
+   "motivo": "Acciones LTM = diluidas ponderadas del 2T-2026 (6-K de PAGS, 0001554855-26-001791: 279.460.742, trimestre al 30-jun-2026), mismo criterio que DUOL; la hoja tenía las básicas ponderadas (276,0 M).",
+   "vigente": 276
+  }
+ ],
+ "omitidas": []
+}

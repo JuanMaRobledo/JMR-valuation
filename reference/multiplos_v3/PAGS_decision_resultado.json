@@ -23,7 +23,7 @@
   },
   "peers_motivo": "B: pagos y banca digital (StoneCo, Nu, dLocal, PayPal, Adyen), datos de yfinance al 29-sep-2026. Se excluye en P/E a Shift4 (58x por amortización y deuda) y, en los múltiplos de flujo, StoneCo (su flujo incluye los fondos de clientes: P/FCF de 0,6x).",
   "ajuste_peers": -0.3,
-  "ajuste_motivo": "Ajuste −30%: PagSeguro crece ~5% y opera en Brasil con Selic alta (costo de patrimonio de 14,7%), frente a Nu, dLocal y Adyen que crecen 20-50%.",
+  "ajuste_motivo": "Ajuste −30%: PagSeguro crece ~5% y opera en Brasil con Selic alta (costo de patrimonio de 13,4%), frente a Nu, dLocal y Adyen que crecen 20-50%.",
   "lambda": 0.25,
   "lambda_motivo": "λ = 0,25: la PagSeguro de FY+3 del escenario Base es un banco digital de crecimiento moderado, parecida a la de hoy.",
   "fuentes": [
@@ -68,17 +68,17 @@
     "FOUR"
    ],
    "C": {
-    "Conservador": 8.22,
-    "Base": 9.07,
-    "Optimista": 10.05
+    "Conservador": 7.73,
+    "Base": 9.05,
+    "Optimista": 10.26
    },
    "mercado": 9.72,
    "lambda": 0.25,
-   "conservador": 7.39,
+   "conservador": 7.22,
    "base": 9.55,
-   "optimista": 11.44,
-   "factor_cons": 0.773,
-   "factor_opt": 1.197,
+   "optimista": 11.52,
+   "factor_cons": 0.756,
+   "factor_opt": 1.206,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
@@ -174,22 +174,22 @@
     "STNE"
    ],
    "C": {
-    "Conservador": 6.01,
-    "Base": 6.15,
-    "Optimista": 6.1
+    "Conservador": 5.64,
+    "Base": 6.05,
+    "Optimista": 5.94
    },
    "mercado": 3.77,
    "lambda": 0.25,
-   "conservador": 3.75,
-   "base": 4.36,
+   "conservador": 3.66,
+   "base": 4.34,
    "optimista": 5.01,
-   "factor_cons": 0.859,
-   "factor_opt": 1.201,
-   "opt_tope_historico": 5.242979226356181,
+   "factor_cons": 0.844,
+   "factor_opt": 1.198,
+   "opt_tope_historico": 5.198405396818619,
    "base_en_rango": true,
    "rango": [
     3.22,
-    6.15
+    6.05
    ],
    "antes": {
     "J8": null,
@@ -201,21 +201,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   11.838289167658319,
-   12.706517191994829,
-   13.660718077490936
+   9.655727273567408,
+   10.909321759716045,
+   11.772389974466545
   ],
   "multiplos_hoy": [
-   8.502043245236749,
-   10.709454032151847,
-   12.53994309690363
+   7.323776494335524,
+   10.786644967507252,
+   13.450146072025214
   ],
   "ponderado_hoy": [
-   9.836541614205377,
-   11.50827929608904,
-   12.98825308913855
+   8.256556806028277,
+   10.835715684390768,
+   12.779043633001745
   ],
-  "brecha_base": -0.1571684144181651,
+  "brecha_base": -0.011245134657389189,
   "fila_origen": 40
  }
 }

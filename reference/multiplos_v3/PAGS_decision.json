@@ -22,7 +22,7 @@
  },
  "peers_motivo": "B: pagos y banca digital (StoneCo, Nu, dLocal, PayPal, Adyen), datos de yfinance al 29-sep-2026. Se excluye en P/E a Shift4 (58x por amortización y deuda) y, en los múltiplos de flujo, StoneCo (su flujo incluye los fondos de clientes: P/FCF de 0,6x).",
  "ajuste_peers": -0.3,
- "ajuste_motivo": "Ajuste −30%: PagSeguro crece ~5% y opera en Brasil con Selic alta (costo de patrimonio de 14,7%), frente a Nu, dLocal y Adyen que crecen 20-50%.",
+ "ajuste_motivo": "Ajuste −30%: PagSeguro crece ~5% y opera en Brasil con Selic alta (costo de patrimonio de 13,4%), frente a Nu, dLocal y Adyen que crecen 20-50%.",
  "lambda": 0.25,
  "lambda_motivo": "λ = 0,25: la PagSeguro de FY+3 del escenario Base es un banco digital de crecimiento moderado, parecida a la de hoy.",
  "fuentes": [

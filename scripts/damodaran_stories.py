@@ -102,7 +102,7 @@ def run_exact(grid, cases):
           "const gT=f?f.terminalGrowth:(typeof i.terminalGrowth==='number'?i.terminalGrowth:i.riskFreeRate);"
           "return {v:d.valuePerShare,pvFlujos:pv,pvTerminal:d.terminalValue*disc[10],valorTerminal:d.terminalValue,"
           "activosOperativos:d.valueOpAssets,patrimonio:d.equityValue,ingresos:d.revenue||null,utilidad:d.netIncome||null,"
-          "nopat:d.ebit1t||null,reinversion:d.reinvestment,flujo:fl,tasa:d.wacc,crecimiento:d.growth,margen:d.margin||d.roe,"
+          "nopat:d.ebit1t||null,patrimonioContable:d.bookEquity||null,utilidadTerminal:d.terminalNetIncome||null,reinversion:d.reinvestment,flujo:fl,tasa:d.wacc,crecimiento:d.growth,margen:d.margin||d.roe,"
           "tasaTerminal:wT,gTerminal:gT,roicTerminal:f?null:(i.roicTerminal>0?i.roicTerminal:wT),"
           "caja:i.cash,deuda:i.debt,minoritarios:i.minorityInterests||0,noOperativos:i.nonOperatingAssets||0,"
           "opciones:i.optionsValue||0,preferentes:i.preferredStock||0,acciones:i.shares0,probFracaso:i.probFailure||0,nol0:i.nol0||0,"
@@ -531,10 +531,11 @@ def origen_calculo(r: dict, W) -> None:
             "Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.")
     else:
         W.h4("2. De la utilidad al flujo del accionista")
-        W.p(f"Utilidadₜ = utilidadₜ₋₁ × (1 + crecimientoₜ). Reinversión patrimonial = utilidad × crecimiento / ROE; FCFE = utilidad − "
-            f"reinversión. En la Base, año 1: utilidad US${mn(dA['utilidad'][1], 2)} millones, reinversión US${mn(dA['reinversion'][1], 2)} "
-            f"millones y FCFE US${mn(dA['flujo'][1], 2)} millones. Se descuenta al costo del patrimonio; en perpetuidad, "
-            "FCFE₁₁ = utilidad₁₁ × (1 − g / Ke terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g). No se resta deuda.")
+        W.p(f"Utilidadₜ = ROEₜ × patrimonio contableₜ₋₁ (Damodaran, bancos). Reinversión patrimonial = patrimonioₜ₋₁ × crecimientoₜ "
+            f"(crecer exige más capital); FCFE = utilidad − reinversión. En la Base, año 1: utilidad US${mn(dA['utilidad'][1], 2)} millones, "
+            f"reinversión US${mn(dA['reinversion'][1], 2)} millones y FCFE US${mn(dA['flujo'][1], 2)} millones. Se descuenta al costo del "
+            "patrimonio; en perpetuidad el ROE es el Ke terminal, utilidad₁₁ = Ke terminal × patrimonio₁₀, FCFE₁₁ = utilidad₁₁ × "
+            "(1 − g / Ke terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g) = patrimonio₁₀. No se resta deuda.")
 
     trayectorias(r, W, f"{3 if fin else 4}. Trayectoria anual de cada historia")
 
@@ -737,8 +738,8 @@ def justificacion(r: dict, W) -> None:
             f"costos. No es una promesa de la empresa. {invalida('margen', f'Obligaría a revisarlo que el {unidad} reportado se aleje de la trayectoria durante varios trimestres.')}"
             + par("margen", -0.02, 0.02, f"restar o sumar 2 pp al {unidad} objetivo"))
         if fin:
-            W.p(f"**Reinversión patrimonial.** En el DCF de flujo al accionista la reinversión es utilidad × crecimiento / ROE: "
-                f"crecer exige retener capital regulatorio. Evidencia: {_oraciones((sp.get('reinversion') or {}).get('texto', ''))} "
+            W.p(f"**Reinversión patrimonial.** En el DCF de flujo al accionista la reinversión es el aumento del patrimonio contable "
+                f"(patrimonio del año anterior × crecimiento): crecer exige retener capital regulatorio. Evidencia: {_oraciones((sp.get('reinversion') or {}).get('texto', ''))} "
                 "Supuesto provisional mientras no se concilie con el capital regulatorio exigido en cada escenario.")
         else:
             cap1, cap2 = 1 / dA["s2c"], 1 / dA["s2c2"]
@@ -922,9 +923,10 @@ def calculo_en_prosa(r: dict, W) -> None:
     if r.get("financiero"):
         u = d["utilidad"]
         W.p(f"**Del supuesto al valor: cómo se calcula la Base.** El punto de partida es la utilidad del último año, {_um(u[0])} "
-            f"millones. Cada año crece con la trayectoria de la Base y llega a {_um(u[5])} millones en el año 5 y {_um(u[10])} "
-            "millones en el año 10. No toda esa utilidad se puede repartir: para crecer, un banco o una financiera tiene que "
-            "retener capital, y la parte retenida es utilidad × crecimiento / ROE. Lo que queda es el flujo del accionista (FCFE): "
+            f"millones. Cada año es el ROE de la Base por el patrimonio contable del año anterior: {_um(u[5])} millones en el año 5 "
+            f"y {_um(u[10])} millones en el año 10, cuando el ROE ya bajó al costo del patrimonio. No toda esa utilidad se puede "
+            "repartir: para crecer, un banco o una financiera tiene que aumentar su patrimonio al mismo ritmo, y esa parte se "
+            "retiene. Lo que queda es el flujo del accionista (FCFE): "
             f"{_um(d['flujo'][1])} millones el primer año. Esos flujos se traen a hoy con el costo del patrimonio, que empieza en "
             f"{pct(d['tasa'][1], 2)} y baja a {pct(d['tasaTerminal'], 2)}; suman {_um(d['pvFlujos'])} millones. Después del año 10 se "
             f"supone un crecimiento perpetuo de {pct(d['gTerminal'], 2)}: el valor de esa perpetuidad, traído a hoy, es "
@@ -985,7 +987,7 @@ def trayectorias(r: dict, W, titulo: str) -> None:
             t = y == 11
             g = d["gTerminal"] if t else d["crecimiento"][y]
             if fin:
-                ni = base[10] * (1 + g) if t else base[y]
+                ni = (d.get("utilidadTerminal") or base[10] * (1 + g)) if t else base[y]
                 roe = d["tasaTerminal"] if t else d["margen"][y]
                 reinv = ni * g / d["tasaTerminal"] if t else d["reinversion"][y]
                 fl = ni - reinv
@@ -1003,9 +1005,38 @@ def trayectorias(r: dict, W, titulo: str) -> None:
             f"DCF {usd(h['valor_beta_hoja'])} por acción.")
         if fin:
             W.tab(["Año", "Utilidad", "Crecimiento", "ROE", "Reinversión", "FCFE", "Ke", "VP del FCFE"], rows, ["l"] + ["r"] * 7)
+            exceso(h, W, nd)
         else:
             W.tab(["Año", "Ingresos", "Crecimiento", "Margen", "NOPAT", "Reinversión", "FCFF", "WACC", "VP del FCFF"], rows,
                   ["l"] + ["r"] * 8)
+
+
+def exceso(h: dict, W, nd: int) -> None:
+    """Tabla del modelo de rendimientos en exceso de Damodaran para bancos: valor del patrimonio = patrimonio contable de hoy
+    + VP de (ROE − Ke) × patrimonio inicial de cada año. Con utilidad = ROE × patrimonio y reinversión = aumento del patrimonio
+    es idéntico al FCFE; la tabla lo comprueba."""
+    d = h["detalle"]
+    bv = d.get("patrimonioContable")
+    if not bv or bv[0] is None:
+        return
+    rows, pv = [], 0.0
+    for y in range(1, 11):
+        ke, roe, ni = d["tasa"][y], d["margen"][y], d["utilidad"][y]
+        costo = ke * bv[y - 1]
+        ex = ni - costo
+        v = ex / _acum(d["tasa"], y)
+        pv += v
+        z = lambda x: 0.0 if abs(x) < 0.05 else x  # noqa: E731
+        rows.append([str(y), es(bv[y - 1], nd), pct(roe), es(ni, nd), pct(ke), es(costo, nd), es(z(ex), nd), es(z(v), nd)])
+    rows.append(["Terminal", es(bv[10], nd), pct(d["tasaTerminal"]), es(d["tasaTerminal"] * bv[10], nd), pct(d["tasaTerminal"]),
+                 es(d["tasaTerminal"] * bv[10], nd), es(0, nd), "0"])
+    valor = (bv[0] + pv) / d["acciones"]
+    W.p(f"Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy {es(bv[0], nd)} + VP de los "
+        f"rendimientos en exceso {es(pv, nd)} = {es(bv[0] + pv, nd)} millones; entre {es(d['acciones'], 2)} millones de acciones da "
+        f"{usd(valor)} por acción, igual que el FCFE ({usd(d['v'])}). En perpetuidad el ROE es el costo del patrimonio: no hay "
+        "rendimiento en exceso y crecer no suma valor.")
+    W.tab(["Año", "Patrimonio inicial", "ROE", "Utilidad", "Ke", "Costo del patrimonio", "Rendimiento en exceso", "VP"], rows,
+          ["l"] + ["r"] * 7)
 
 
 def _acum(tasas, y):

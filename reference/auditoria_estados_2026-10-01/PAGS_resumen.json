@@ -122,8 +122,8 @@
   "incluye_operativos": true,
   "conversor": "No",
   "arrendamientos": 10.9,
-  "acciones": 276,
-  "efecto_por_accion": 0.03949275362318841
+  "acciones": 279.46,
+  "efecto_por_accion": 0.039003793029413876
  },
  "antes": {
   "dcfTecnico": 11.923674329093467,
@@ -137,14 +137,14 @@
   }
  },
  "despues": {
-  "dcfTecnico": 12.70651719,
-  "valorEsperado": 12.380242690416765,
-  "precioMOS": 8.047157748770898,
+  "dcfTecnico": 10.90932176,
+  "valorEsperado": 10.406567303315928,
+  "precioMOS": 6.764268747155353,
   "historias": {
-   "A": 12.706517191994829,
-   "B": 11.838289167658319,
-   "C": 10.617154920979539,
-   "D": 13.660718077490936
+   "A": 10.909321759716045,
+   "B": 9.655727273567408,
+   "C": 8.347958332035038,
+   "D": 11.772389974466545
   }
  },
  "tramo_tasas_base": "$2,000-3,000 Mn"

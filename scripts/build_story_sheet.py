@@ -117,16 +117,20 @@ def block_fcfe(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
         g = h["crec"].get(name, [0] * 5)
         rows.append([name, f"={n(v)}*{VO}!B5/{n(rev_ltm)}"] + [f"={col(y - 1)}{rr}*(1+{n(g[y - 1])})" for y in range(1, 6)])
     R = {nm: r0 + 2 + SLOTS + j for j, nm in enumerate(
-        ("rev", "g", "ni", "roe", "reinv", "fcfe", "ke", "disc", "pv", "tv", "x1", "x2", "x3", "x4", "ops", "eq", "ps"))}
+        ("rev", "g", "ni", "roe", "reinv", "fcfe", "ke", "disc", "pv", "tv", "bv", "costo", "exc", "pvexc", "ops", "eq", "ps"))}
     first, last = seg_rows[0], r0 + 2 + SLOTS - 1
     rev = ["Ingresos por segmento (motor del crecimiento)", f"={VO}!B5"] + [f"=SUM({col(y)}{first}:{col(y)}{last})" for y in range(1, 6)]
     tg = (f"=MAX(0;MIN($G{R['g']};{F}!$B$5))" if h.get("terminal_propio") else f"={F}!B5")
     g = ["Crecimiento", ""] + [f"={col(y)}{R['rev']}/{col(y - 1)}{R['rev']}-1" for y in range(1, 6)] + \
         (_propios_6a10(h) or [f"=$G{R['g']}-($G{R['g']}-$M${R['g']})*({y}-5)/5" for y in range(6, 11)]) + [tg]
-    ni = ["Utilidad neta", f"={F}!B3"] + [f"={col(y - 1)}{R['ni']}*(1+{col(y)}{R['g']})" for y in range(1, 12)]
+    # Damodaran (bancos): utilidad = ROE × patrimonio contable del año anterior; crecer exige aumentar el patrimonio al
+    # mismo ritmo (reinversión patrimonial) y en perpetuidad el ROE es el Ke terminal.
+    ni = ["Utilidad neta", f"={F}!B3"] + [f"={col(y)}{R['roe']}*{col(y - 1)}{R['bv']}" for y in range(1, 11)] + \
+        [f"={F}!B4*L{R['bv']}"]
     roe = ["ROE", ""] + [f"=$D${i}"] * 5 + [f"=$D${i}+({F}!$B$4-$D${i})*({y}-5)/5" for y in range(6, 11)]
-    reinv = ["Reinversión patrimonial", ""] + [f"={col(y)}{R['ni']}*MAX(0;{col(y)}{R['g']})/{col(y)}{R['roe']}" for y in range(1, 11)] + \
-        [f"=M{R['ni']}*M{R['g']}/{F}!B4"]
+    reinv = ["Reinversión patrimonial", ""] + [f"={col(y - 1)}{R['bv']}*MAX(0;{col(y)}{R['g']})" for y in range(1, 11)] + \
+        [f"=L{R['bv']}*M{R['g']}"]
+    bv = ["Patrimonio contable al cierre", f"={F}!B12"] + [f"={col(y - 1)}{R['bv']}+{col(y)}{R['reinv']}" for y in range(1, 11)]
     fcfe = ["FCFE", ""] + [f"={col(y)}{R['ni']}-{col(y)}{R['reinv']}" for y in range(1, 12)]
     ke = ["Costo del patrimonio", ""] + ["='Cost of capital worksheet'!B63"] * 5 + \
         [f"='Cost of capital worksheet'!$B$63-('Cost of capital worksheet'!$B$63-{F}!$B$4)*({y}-5)/5" for y in range(6, 11)] + [f"={F}!B4"]
@@ -136,7 +140,13 @@ def block_fcfe(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
     ops = ["VP de los flujos al accionista", f"=SUM(C{R['pv']}:L{R['pv']})+M{R['tv']}*L{R['disc']}"]
     eq = ["Valor patrimonio (FCFE: no se resta deuda)", f"=B{R['ops']}"]
     ps = ["DCF por acción", f"=B{R['eq']}/{VO}!B34"]
-    rows += [rev, g, ni, roe, reinv, fcfe, ke, disc, pv, tv, [""], [""], [""], [""], ops, eq, ps]
+    # Modelo de rendimientos en exceso de Damodaran (bancos): patrimonio de hoy + VP de (utilidad − Ke × patrimonio inicial);
+    # coincide con el FCFE porque la utilidad es ROE × patrimonio y la reinversión es el aumento del patrimonio.
+    costo = ["Costo del patrimonio (Ke × patrimonio inicial)", ""] + [f"={col(y)}{R['ke']}*{col(y - 1)}{R['bv']}" for y in range(1, 11)]
+    exc = ["Rendimiento en exceso (utilidad − costo)", ""] + [f"={col(y)}{R['ni']}-{col(y)}{R['costo']}" for y in range(1, 11)]
+    pvexc = ["VP del rendimiento en exceso", ""] + [f"={col(y)}{R['exc']}*{col(y)}{R['disc']}" for y in range(1, 11)]
+    eq = eq + ["Rendimientos en exceso: patrimonio hoy + VP", f"=B{R['bv']}+SUM(C{R['pvexc']}:L{R['pvexc']})"]
+    rows += [rev, g, ni, roe, reinv, fcfe, ke, disc, pv, tv, bv, costo, exc, pvexc, ops, eq, ps]
     return rows, R
 
 
