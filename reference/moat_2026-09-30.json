@@ -94,15 +94,18 @@
    "evidencia": "ROIC 36-87% en 2021-2026",
    "amenaza": "Guerra de precios de los GLP-1 y Lilly: las historias Conservadora y Disrupción suman 40%; las patentes vencen",
    "roic_actual": 0.2524,
-   "roic_industria": 0.1695,
+   "roic_industria": 0.0919,
    "industria_proxy": null,
    "costo_capital_terminal": 0.092,
-   "roic_terminal": 0.131,
+   "roic_terminal": 0.092,
    "roic_terminal_antes": 0.169,
-   "nota": "Revisión del 30-sep-2026 (criterio corregido): patentes y escala (ancho por fuentes), pero con erosión visible: pérdida de participación frente a Lilly, recortes de precio y ROIC de 87% a 36% → estrecho.",
+   "nota": "Revisión del 30-sep-2026 (criterio corregido): patentes y escala (ancho por fuentes), pero con erosión visible: pérdida de participación frente a Lilly, recortes de precio y ROIC de 87% a 36% → estrecho. Revisión del 4-oct-2026: con el ROIC de la industria medido como el del modelo (I+D capitalizado) la referencia es 9,19%, igual al costo de capital terminal (9,2%); el punto medio de la regla queda en el costo de capital, el supuesto por defecto de Damodaran. Las patentes de la semaglutida vencen en 2031-2033 y se modelan en los años 6-10.",
    "ventaja": "ventaja que se desvanece",
-   "referencia": 0.1695,
-   "nota_rd": "ROIC actual del modelo al 1-oct-2026: capital invertido operativo (patrimonio + deuda − caja − activos no operativos) con el balance del último 10-Q y el I+D alineado al LTM."
+   "referencia": 0.0919,
+   "nota_rd": "ROIC actual del modelo al 1-oct-2026: capital invertido operativo (patrimonio + deuda − caja − activos no operativos) con el balance del último 10-Q y el I+D alineado al LTM.",
+   "roic_industria_sin_ajuste": 0.1695,
+   "roic_terminal_antes_2026_10_04": 0.131,
+   "ajuste_rd": "ROIC de Drugs (Pharmaceutical) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 5 años: 16,95% × (margen después de impuestos ajustado por I+D 26,36% / sin ajuste 28,66%) × capital invertido/(capital + activo de I+D) [0,901/(0,901+3,0×0,2094)] = 9,19%."
   },
   "ZTS": {
    "fuentes": "Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal",

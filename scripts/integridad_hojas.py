@@ -39,6 +39,21 @@ ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|98|106)|A1)$
                       r"|^Escenarios e historias!E[5-8]$")
 
 
+# Años 6-10 fijados por una historia (crec_6a10 en reference/damodaran/<T>.json, p. ej. vencimiento de patentes):
+# son supuestos documentados, no números sueltos. Filas de crecimiento de los bloques A, B, C y D de la pestaña.
+FILAS_CRECIMIENTO = {"A": 29, "B": 53, "C": 77, "D": 101}
+
+
+def propios_6a10(t: str) -> set:
+    p = Path(__file__).resolve().parents[1] / "reference" / "damodaran" / f"{t}.json"
+    try:
+        hs = json.loads(p.read_text()).get("historias", [])
+    except (OSError, ValueError):
+        return set()
+    return {f"Escenarios e historias!{c}{FILAS_CRECIMIENTO[h['id']]}" for h in hs
+            if h.get("crec_6a10") and h.get("id") in FILAS_CRECIMIENTO for c in "HIJKL"}
+
+
 def col(j: int) -> str:
     return chr(65 + j)
 
@@ -101,7 +116,7 @@ def main(argv: list[str]) -> int:
             if nf >= 0.75 * len(D):
                 for t, v in m.items():
                     ref = f"{tab}!{col(j)}{i + 1}"
-                    if not (isinstance(v, str) and v.startswith("=")) and not ENTRADAS.match(ref):
+                    if not (isinstance(v, str) and v.startswith("=")) and not ENTRADAS.match(ref) and ref not in propios_6a10(t):
                         hallazgos[t].append(f"número fijo donde la mayoría tiene fórmula: {ref} = {v}")
     for t in tickers:
         x = D[t]["tabs"]
