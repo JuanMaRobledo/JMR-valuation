@@ -33,22 +33,22 @@
    "B_peers": "ADBE 9,3x, ADSK 18,4x, CRM 16,9x, WDAY 29,0x, ADP 16,4x, PAYX 12,7x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 13.3,
-    "Base": 16.71,
-    "Optimista": 19.17
+    "Conservador": 12.35,
+    "Base": 13.66,
+    "Optimista": 14.74
    },
    "mercado": 14.46,
    "lambda": 0.25,
-   "conservador": 12.91,
-   "base": 15.02,
-   "optimista": 16.34,
-   "factor_cons": 0.86,
-   "factor_opt": 1.088,
+   "conservador": 12.77,
+   "base": 14.26,
+   "optimista": 15.19,
+   "factor_cons": 0.896,
+   "factor_opt": 1.065,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     12.26,
-    16.71
+    16.66
    ],
    "antes": {
     "J8": null,
@@ -193,22 +193,22 @@
    "B_peers": "ADBE 8,6x, ADSK 14,7x, CRM 11,8x, WDAY 14,8x, ADP 19,1x, PAYX 13,8x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 18.3,
-    "Base": 25.89,
-    "Optimista": 30.64
+    "Conservador": 18.34,
+    "Base": 26.46,
+    "Optimista": 31.77
    },
    "mercado": 11.61,
    "lambda": 0.25,
-   "conservador": 12.82,
-   "base": 15.18,
-   "optimista": 16.47,
-   "factor_cons": 0.845,
-   "factor_opt": 1.085,
+   "conservador": 12.87,
+   "base": 15.32,
+   "optimista": 16.71,
+   "factor_cons": 0.84,
+   "factor_opt": 1.091,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     8.97,
-    25.89
+    26.46
    ],
    "antes": {
     "J8": null,
@@ -220,21 +220,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   249.3753098025328,
-   488.0925738648181,
-   600.3265325638998
+   238.92616890315517,
+   466.0414740466006,
+   571.8397389711885
   ],
   "multiplos_hoy": [
-   259.80146103455485,
-   320.13060281267366,
-   366.3030885974392
+   247.6269644934277,
+   283.8723636744028,
+   313.5575914258354
   ],
   "ponderado_hoy": [
-   253.54577029534164,
-   420.9077854439604,
-   506.7171549773156
+   242.40648713926421,
+   393.1738298977215,
+   468.5268799530473
   ],
-  "brecha_base": -0.3441190873325254,
+  "brecha_base": -0.39088604881114575,
   "fila_origen": 40
  }
 }
