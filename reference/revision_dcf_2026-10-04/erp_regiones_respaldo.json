@@ -1,0 +1,1405 @@
+{
+ "MAESTRA": {
+  "sheet_id": "19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "ADBE": {
+  "sheet_id": "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "AFYA": {
+  "sheet_id": "1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "BSX": {
+  "sheet_id": "1LVn63SMyvovWzNjbF5Jdi-v0EFUPXLqp4A6n8gwbKHc",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "CELH": {
+  "sheet_id": "1E_s_A35yIAZRGatTIElusnMZs5NIvFJ9CUlGlqf7-j8",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Will Input"
+ },
+ "CMG": {
+  "sheet_id": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "DPZ": {
+  "sheet_id": "1voP-krWxuq4RtJDX4WYP6FEG_rRoqjMjgVXF5vPywSo",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "DUOL": {
+  "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "EPAM": {
+  "sheet_id": "1txQTjdUuzsnCem_4O1szofY7uAp5xLc3uda3l_iIcR0",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "GOOG": {
+  "sheet_id": "1yt2zqdGz1JWEqV3SYqqL-nHarO7C1Oud1lvR3pY9i0U",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "INTU": {
+  "sheet_id": "14sbZoheKmtK5UpMOlRNzvqD1F9sCJEpHW01g4f-X8mM",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "LULU": {
+  "sheet_id": "1wuEhOhrjlL5t-oSO9sRd7Py0Vw-47rv_4AAwaS8-ZJw",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Will Input"
+ },
+ "MSFT": {
+  "sheet_id": "1ubjlRP0jbGmG_sXEoTrvonRkwqy5AoOd1ESrU4c3-rY",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "NKE": {
+  "sheet_id": "1OITWNynG7R3PKC1sITOOazW9jzXgFWFda6qNbbOnYZI",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Will Input"
+ },
+ "NVDA": {
+  "sheet_id": "1eEsuWSHXWQrBa2Dt5l_9Fbx24M4pug15Rx_Gj-CCkMg",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "NVO": {
+  "sheet_id": "1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "ONON": {
+  "sheet_id": "1nlN8qDy9BipM5IWwGE5Fgf6VKpyYQScLXIPvqtAE9Oo",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Will Input"
+ },
+ "PAGS": {
+  "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "PLTR": {
+  "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "PYPL": {
+  "sheet_id": "13N5V1gpdsetin5NbTu-1-312lPYq5Pj4aKF4jw0bLT0",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "SHAK": {
+  "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "UBER": {
+  "sheet_id": "1R3V8gISxXCYIujVFSITu0svVBC3AsN4GF_pQHHLs5dw",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ },
+ "ZTS": {
+  "sheet_id": "1MYnJJfv2G9R5u4roWPYb855tFs3K0Mqt2vxCPNkXKPE",
+  "G22:I32": [
+   [
+    "='Country equity risk premiums'!A202",
+    "",
+    "='Country equity risk premiums'!B202"
+   ],
+   [
+    "='Country equity risk premiums'!A203",
+    3360,
+    "='Country equity risk premiums'!B203"
+   ],
+   [
+    "='Country equity risk premiums'!A204",
+    "",
+    "='Country equity risk premiums'!B204"
+   ],
+   [
+    "='Country equity risk premiums'!A205",
+    "",
+    "='Country equity risk premiums'!B205"
+   ],
+   [
+    "='Country equity risk premiums'!A206",
+    "",
+    "='Country equity risk premiums'!B206"
+   ],
+   [
+    "='Country equity risk premiums'!A207",
+    "",
+    "='Country equity risk premiums'!B207"
+   ],
+   [
+    "='Country equity risk premiums'!A208",
+    "",
+    "='Country equity risk premiums'!B208"
+   ],
+   [
+    "='Country equity risk premiums'!A209",
+    14120,
+    "='Country equity risk premiums'!B209"
+   ],
+   [
+    "='Country equity risk premiums'!A210",
+    "",
+    "='Country equity risk premiums'!B210"
+   ],
+   [
+    "EMEA",
+    6290,
+    0.0587
+   ],
+   [
+    "Rest of the World",
+    0,
+    0.055
+   ]
+  ],
+  "B26": "Country of Incorporation"
+ }
+}

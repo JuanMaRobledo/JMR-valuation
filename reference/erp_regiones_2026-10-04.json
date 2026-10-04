@@ -1,0 +1,175 @@
+{
+ "fecha": "2026-10-04",
+ "fuente": "XBRL del último informe anual (eje geográfico) de cada empresa en EDGAR; millones en la moneda de la hoja (NVO en DKK: solo cuentan los pesos)",
+ "empresas": {
+  "ADBE": {
+   "informe": "10-K FY2025 (0000796343-26-000003)",
+   "ventas": {
+    "North America": 12529,
+    "Central and South America": 1591,
+    "EMEA": 6289,
+    "Asia": 3360
+   },
+   "nota": "Otras Américas (Canadá y Latinoamérica) en Centro y Sudamérica, criterio prudente"
+  },
+  "BSX": {
+   "informe": "10-K 2025 (0000885725-26-000010)",
+   "ventas": {
+    "North America": 12864,
+    "EMEA": 3451,
+    "Asia": 3080,
+    "Central and South America": 678
+   },
+   "nota": "Latinoamérica y Canadá en Centro y Sudamérica"
+  },
+  "CELH": {
+   "informe": "10-K 2025 (0001341766-26-000024)",
+   "ventas": {
+    "North America": 2422.5,
+    "Western Europe": 72.5,
+    "Asia": 13.0,
+    "RESTO": 7.3
+   }
+  },
+  "CMG": {
+   "informe": "10-K 2025: sin desglose en XBRL; ~99% EE.UU.",
+   "ventas": {
+    "North America": 11925.6
+   }
+  },
+  "DPZ": {
+   "informe": "10-K 2025 (0001193125-26-062321): regalías internacionales 338,7",
+   "ventas": {
+    "North America": 4601.3,
+    "RESTO": 338.7
+   }
+  },
+  "DUOL": {
+   "informe": "10-K 2025 (0001628280-26-012494)",
+   "ventas": {
+    "North America": 392.2,
+    "RESTO": 645.4
+   }
+  },
+  "EPAM": {
+   "informe": "10-K 2025 (0001352010-26-000015)",
+   "ventas": {
+    "North America": 2834.3,
+    "Central and South America": 366.6,
+    "EMEA": 2147.3,
+    "Asia": 108.8
+   }
+  },
+  "GOOG": {
+   "informe": "10-K 2025 (0001652044-26-000018)",
+   "ventas": {
+    "North America": 194229,
+    "EMEA": 117152,
+    "Asia": 67680,
+    "Central and South America": 23902
+   },
+   "nota": "Américas sin EE.UU. en Centro y Sudamérica"
+  },
+  "INTU": {
+   "informe": "10-K FY2026: sin desglose en XBRL; casi todo EE.UU.",
+   "ventas": {
+    "North America": 21448
+   }
+  },
+  "LULU": {
+   "informe": "10-K FY2025 (0001397187-26-000020)",
+   "ventas": {
+    "North America": 7751.6,
+    "Central and South America": 95.5,
+    "Asia": 1953.9,
+    "RESTO": 1301.7
+   }
+  },
+  "MSFT": {
+   "informe": "10-K FY2026 (0001193125-26-323660)",
+   "ventas": {
+    "North America": 170794,
+    "RESTO": 161045
+   }
+  },
+  "NKE": {
+   "informe": "10-K FY2026 (0000320187-26-000088): EE.UU. y resto",
+   "ventas": {
+    "North America": 20358,
+    "RESTO": 26040
+   }
+  },
+  "NVDA": {
+   "informe": "10-K FY2026 (0001045810-26-000021), por ubicación de facturación",
+   "ventas": {
+    "North America": 149617,
+    "Asia": 62022,
+    "RESTO": 4299
+   }
+  },
+  "NVO": {
+   "informe": "20-F 2025 (0000353278-26-000012), DKK",
+   "ventas": {
+    "North America": 173166,
+    "Western Europe": 66091,
+    "Asia": 39371,
+    "RESTO": 30436
+   },
+   "resto": "emergentes",
+   "nota": "EUCAN en Europa occidental; APAC y China en Asia"
+  },
+  "ONON": {
+   "informe": "20-F 2025 (0001858985-26-000008)",
+   "ventas": {
+    "North America": 1550.5,
+    "Central and South America": 189.6,
+    "EMEA": 762.7,
+    "Asia": 511.1
+   }
+  },
+  "PLTR": {
+   "informe": "10-K 2025 (0001321655-26-000011)",
+   "ventas": {
+    "North America": 3320,
+    "Western Europe": 427.4,
+    "RESTO": 728
+   }
+  },
+  "PYPL": {
+   "informe": "10-K 2025 (0001633917-26-000024)",
+   "ventas": {
+    "North America": 18868,
+    "RESTO": 14304
+   }
+  },
+  "SHAK": {
+   "informe": "10-K 2025 (0001620533-26-000018)",
+   "ventas": {
+    "North America": 1407.1,
+    "RESTO": 38.2
+   }
+  },
+  "UBER": {
+   "informe": "10-K 2025 (0001543151-26-000015)",
+   "ventas": {
+    "North America": 26469,
+    "Central and South America": 3327,
+    "EMEA": 16364,
+    "Asia": 5857
+   }
+  },
+  "ZTS": {
+   "informe": "10-K 2025 (0001555280-26-000011)",
+   "ventas": {
+    "North America": 5387,
+    "Central and South America": 692,
+    "Western Europe": 1649,
+    "Asia": 381,
+    "Australia & New Zealand": 329,
+    "RESTO": 913
+   },
+   "resto": "emergentes",
+   "nota": "Otros desarrollados en Europa occidental; otros emergentes como mercados emergentes"
+  }
+ }
+}

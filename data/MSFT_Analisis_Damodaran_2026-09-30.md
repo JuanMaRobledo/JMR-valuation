@@ -7,13 +7,13 @@ analysis_date: "2026-09-30"
 # Microsoft Corporation (MSFT) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Valor intrínseco principal · DCF Base hoy: US$442,42 por acción** (Base · Azure y Copilot sostienen el doble dígito).
+**Valor intrínseco principal · DCF Base hoy: US$393,72 por acción** (Base · Azure y Copilot sostienen el doble dígito).
 
-**Complemento · DCF esperado por probabilidades: US$393,65.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$197,86–577,55. El MOS 35% se aplica al esperado: US$255,87. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$347,90.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$171,13–511,75. El MOS 35% se aplica al esperado: US$226,13. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, roic terminal (criterio damodaran) (22 celdas, con respaldo). DCF esperado US$406,69 → US$405,29. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, roic terminal (criterio damodaran) (22 celdas, con respaldo). DCF esperado US$406,69 → US$372,17. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$442,42 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$393,72 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -48,36 +48,36 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Crecimiento: doble dígito, con la nube y Copilot.** Microsoft facturó US$331.839 millones en FY2026 (+17,8%), impulsada por Azure (~+30%). La Base desacelera cada segmento: Productivity (Microsoft 365, Dynamics, LinkedIn) de 14% a 9%, Intelligent Cloud (Azure) de 25% a 13% y More Personal Computing (Windows, Xbox) casi plano. El total es 16,3% el primer año y 13,0% compuesto. Solo ~10% de las empresas de este tamaño lo lograron, pero Microsoft lleva cinco años creciendo a doble dígito con más de US$150.000 millones de ventas: es la excepción que confirma la regla. Aun así no extrapolamos el 17,8% de FY26. La Conservadora (8,0%) es un capex que rinde menos; la Disrupción (5,0%), una corrección de la demanda de cómputo para IA; la Optimista (17,5%), Microsoft como plataforma empresarial de IA. Si Azure baja a ~18% de crecimiento, la Base se cae.
 
-**Margen: el capex todavía no está en la depreciación.** El margen operativo subió a 46,8% pese al capex, porque la depreciación todavía no refleja toda la inversión (los centros de datos se deprecian en 5-6 años). La Base usa 45% en base reportada (46,2% en el modelo, que capitaliza I+D con vida de 3 años y trata los arrendamientos como deuda): un poco menos que hoy, porque la depreciación de la IA y su menor margen frente al software empujan hacia abajo, y Copilot y el precio de Microsoft 365 empujan hacia arriba. El rango va de 38,2% a 49,2%. Por la escala de Microsoft, el margen mueve menos el valor que el crecimiento o la tasa: dos puntos llevan la Base a US$423,13 (−4%) o US$461,71 (+4%).
+**Margen: el capex todavía no está en la depreciación.** El margen operativo subió a 46,8% pese al capex, porque la depreciación todavía no refleja toda la inversión (los centros de datos se deprecian en 5-6 años). La Base usa 45% en base reportada (46,2% en el modelo, que capitaliza I+D con vida de 3 años y trata los arrendamientos como deuda): un poco menos que hoy, porque la depreciación de la IA y su menor margen frente al software empujan hacia abajo, y Copilot y el precio de Microsoft 365 empujan hacia arriba. El rango va de 38,2% a 49,2%. Por la escala de Microsoft, el margen mueve menos el valor que el crecimiento o la tasa: dos puntos llevan la Base a US$376,50 (−4%) o US$410,95 (+4%).
 
-**Reinversión: el cambio de régimen.** Este es el punto donde Microsoft dejó de ser una empresa de software puro. El capex pasó de US$44.477 millones (FY24) a US$115.948 millones (FY26), y el flujo libre cayó a menos de la mitad. La hoja usa un ventas/capital de 0,62× en los años 1–5 y 0,94× después: cada dólar de ventas nuevas exige ~US$1,60 de capital, cuando antes bastaba una fracción. La Optimista lo baja a 0,58× porque crecer más exige todavía más centros de datos. El valor depende de que el retorno de ese capital supere el costo de capital de ~10%, y la evidencia aún es incompleta: la demanda está concentrada en pocos clientes (OpenAI). Después del año 10 la Base conserva un ROIC de 20,6%, limitado a su ROIC actual: costos de cambio y efectos de red en Office, Azure y Windows sostuvieron un ROIC de 30-72% en 2021-2026. Si el capex no rinde y el ROIC terminal cae al costo de capital, la Base vale US$322,78 (−27%): es el riesgo central de la tesis.
+**Reinversión: el cambio de régimen.** Este es el punto donde Microsoft dejó de ser una empresa de software puro. El capex pasó de US$44.477 millones (FY24) a US$115.948 millones (FY26), y el flujo libre cayó a menos de la mitad. La hoja usa un ventas/capital de 0,62× en los años 1–5 y 0,94× después: cada dólar de ventas nuevas exige ~US$1,60 de capital, cuando antes bastaba una fracción. La Optimista lo baja a 0,58× porque crecer más exige todavía más centros de datos. El valor depende de que el retorno de ese capital supere el costo de capital de ~10%, y la evidencia aún es incompleta: la demanda está concentrada en pocos clientes (OpenAI). Después del año 10 la Base conserva un ROIC de 20,6%, limitado a su ROIC actual: costos de cambio y efectos de red en Office, Azure y Windows sostuvieron un ROIC de 30-72% en 2021-2026. Si el capex no rinde y el ROIC terminal cae al costo de capital, la Base vale US$276,14 (−30%): es el riesgo central de la tesis.
 
-**Descuento y terminal.** La hoja usa una beta de 1,36; la bottom-up de software reapalancada da 1,27, una diferencia pequeña frente a la que producen las historias. El costo de capital va de 10,15% a 8,48%. El crecimiento perpetuo es 4,25%, igual a la tasa libre de riesgo, y el terminal explica 72,5% del valor operativo: tres cuartas partes del valor están más allá del año 10. Por eso la tasa pesa tanto: un punto más lleva la Base a US$351,63 (−21%), uno menos a US$589,76 (+33%).
+**Descuento y terminal.** La hoja usa una beta de 1,36; la bottom-up de software reapalancada da 1,27, una diferencia pequeña frente a la que producen las historias. El costo de capital va de 11,83% a 9,38%. El crecimiento perpetuo es 5,29%, igual a la tasa libre de riesgo, y el terminal explica 72,0% del valor operativo: tres cuartas partes del valor están más allá del año 10. Por eso la tasa pesa tanto: un punto más lleva la Base a US$312,40 (−21%), uno menos a US$527,76 (+34%).
 
-**Probabilidades y lectura del resultado.** La Base pesa 45%, la Conservadora 25%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$442,42 y el esperado US$393,65, frente a un precio de US$517,53: el mercado paga algo entre la Base y la Optimista (US$577,55). La evidencia en contra de la Base es que el flujo libre cayó a la mitad mientras el capex se triplicaba; si Azure baja a ~20% antes de que el capex se modere, la Conservadora se vuelve la central. Las acciones se fijan en 7.427,0 millones.
+**Probabilidades y lectura del resultado.** La Base pesa 45%, la Conservadora 25%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$393,72 y el esperado US$347,90, frente a un precio de US$517,53: el mercado paga algo entre la Base y la Optimista (US$511,75). La evidencia en contra de la Base es que el flujo libre cayó a la mitad mientras el capex se triplicaba; si Azure baja a ~20% antes de que el capex se modere, la Conservadora se vuelve la central. Las acciones se fijan en 7.427,0 millones.
 
 **Vida útil de I+D.** La hoja capitaliza el I+D (US$35.562 millones en el último año) y lo amortiza en 3 años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda provisional hasta contrastarla con la duración de los beneficios de los productos.
 
-**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$331.839 millones. Con el crecimiento de la Base llegan a US$610.544 millones en el año 5 y a US$842.686 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 47,5% en el año 1 a 46,2% al final, y se descuentan impuestos (19,4% al principio y 21,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$147.799 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$86.828 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$60.970 millones el primer año. Cada flujo se trae a hoy con el costo de capital (10,15% al principio, 8,48% al final): los diez años suman US$906.480 millones. Después del año 10 se supone que la empresa crece 4,25% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 20,6%; esa perpetuidad vale hoy US$2.393.833 millones, 73% del total. Flujos más terminal dan el valor de las operaciones, US$3.300.313 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$76.843 millones, más activos no operativos por US$36.348 millones, menos deuda por US$127.658 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$3.285.846 millones que, repartido entre 7.427,0 millones de acciones, da US$442,42 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$331.839 millones. Con el crecimiento de la Base llegan a US$610.544 millones en el año 5 y a US$867.804 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 47,5% en el año 1 a 46,2% al final, y se descuentan impuestos (19,4% al principio y 21,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$147.799 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$86.828 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$60.970 millones el primer año. Cada flujo se trae a hoy con el costo de capital (11,83% al principio, 9,38% al final): los diez años suman US$823.675 millones. Después del año 10 se supone que la empresa crece 5,29% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 20,6%; esa perpetuidad vale hoy US$2.114.975 millones, 72% del total. Flujos más terminal dan el valor de las operaciones, US$2.938.650 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$76.843 millones, más activos no operativos por US$36.348 millones, menos deuda por US$127.658 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$2.924.183 millones que, repartido entre 7.427,0 millones de acciones, da US$393,72 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
-**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 20,12× (peso 25% dentro de los múltiplos); EV/FCFF 42,41× (peso 38% dentro de los múltiplos); P/E 27,08× (peso 12% dentro de los múltiplos); P/FCFE 43,39× (peso 12% dentro de los múltiplos); P/OCF 20,67× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (10,3%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 20,12× (peso 25% dentro de los múltiplos); EV/FCFF 42,41× (peso 38% dentro de los múltiplos); P/E 27,08× (peso 12% dentro de los múltiplos); P/FCFE 43,39× (peso 12% dentro de los múltiplos); P/OCF 20,67× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (10,8%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
-Sensibilidad del DCF Base (US$442,42; cada fila es un DCF completo con un solo supuesto cambiado):
+Sensibilidad del DCF Base (US$393,72; cada fila es un DCF completo con un solo supuesto cambiado):
 
 | Supuesto cambiado | DCF Base | Variación |
 |---|---:|---:|
-| Margen objetivo −2 pp | US$423,13 | −4,4% |
-| Margen objetivo +2 pp | US$461,71 | +4,4% |
-| Crecimiento años 1–5 −2 pp | US$401,48 | −9,3% |
-| Crecimiento años 1–5 +2 pp | US$487,78 | +10,3% |
-| Ventas/capital −20% | US$427,36 | −3,4% |
-| Ventas/capital +20% | US$452,46 | +2,3% |
-| WACC +1 pp | US$351,63 | −20,5% |
-| WACC −1 pp | US$589,76 | +33,3% |
-| Crecimiento terminal −0,5 pp | US$412,14 | −6,8% |
-| Crecimiento terminal +0,5 pp | US$480,63 | +8,6% |
-| ROIC terminal = costo de capital | US$322,78 | −27,0% |
-| Acciones +5% | US$421,35 | −4,8% |
+| Margen objetivo −2 pp | US$376,50 | −4,4% |
+| Margen objetivo +2 pp | US$410,95 | +4,4% |
+| Crecimiento años 1–5 −2 pp | US$358,03 | −9,1% |
+| Crecimiento años 1–5 +2 pp | US$433,26 | +10,0% |
+| Ventas/capital −20% | US$378,98 | −3,7% |
+| Ventas/capital +20% | US$403,55 | +2,5% |
+| WACC +1 pp | US$312,40 | −20,7% |
+| WACC −1 pp | US$527,76 | +34,0% |
+| Crecimiento terminal −0,5 pp | US$366,64 | −6,9% |
+| Crecimiento terminal +0,5 pp | US$428,18 | +8,8% |
+| ROIC terminal = costo de capital | US$276,14 | −29,9% |
+| Acciones +5% | US$374,97 | −4,8% |
 
 
 ### Piezas del valor
@@ -102,22 +102,22 @@ Sensibilidad del DCF Base (US$442,42; cada fila es un DCF completo con un solo s
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,36 | 10,3% | 10,2% | US$488,88 |
-| Bottom-up del sector (Software (System & Application), reapalancada) | 1,27 | 9,9% | 9,8% | US$499,63 |
+| Hoja (regresión o la cargada en el libro) | 1,36 | 12,0% | 11,8% | US$434,10 |
+| Bottom-up del sector (Software (System & Application), reapalancada) | 1,27 | 11,6% | 11,4% | US$444,54 |
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja durable | 25,4% | 20,6% | 8,5% | 20,6% | US$442,42 | US$351,79 |
+| Ventaja durable | 25,4% | 20,6% | 9,4% | 20,6% | US$393,72 | US$299,40 |
 
 Fuentes de ventaja: Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn). Evidencia: ROIC 30-72% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$442,42 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$393,65. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$393,72 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$347,90. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -127,10 +127,10 @@ El valor intrínseco principal es el DCF Base: US$442,42 por acción, un DCF com
 | Ingresos LTM | US$331.839 millones | Input sheet B12: últimos doce meses de los estados financieros (ver fuentes). Por segmentos: 140.116 + 138.116 + 53.606 = 331.839. |
 | Margen inicial del DCF | 47,5% en año 1 | Valuation output C6 (base ajustada del modelo). Converge al margen objetivo de cada historia en el año 7 (Input sheet B31). |
 | Impuesto | 19,40% en años 1–5; 21,00% en terminal | Tasa efectiva y marginal de la hoja; la efectiva converge linealmente a la marginal en los años 6–10. No hay pérdidas fiscales iniciales. |
-| Descuento | WACC 10,15% → 8,48% | Tasa libre de riesgo 4,25%, beta 1,36, ERP 4,46%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
+| Descuento | WACC 11,83% → 9,38% | Tasa libre de riesgo 5,29%, beta 1,36, ERP 4,96%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 0,62x en años 1–5; 0,94x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. Optimista usa 0,58x en años 1–5. |
-| Crecimiento perpetuo | Base/Conservadora/Disrupción/Optimista: 4,25% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. |
-| ROIC terminal | Base/Optimista: 20,56%; Conservadora/Disrupción: 8,48% (= WACC terminal) | Criterio de ventaja competitiva (ventaja durable). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| Crecimiento perpetuo | Base/Conservadora/Optimista: 5,29%; Disrupción: 4,80% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: mantiene su crecimiento del año 5 (4,80%) en los años 6–10 y en perpetuidad, en lugar de subir al terminal de la hoja. Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
+| ROIC terminal | Base/Optimista: 20,56%; Conservadora/Disrupción: 9,38% (= WACC terminal) | Criterio de ventaja competitiva (ventaja durable). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
 | Puente al patrimonio | Caja 76.843; deuda 127.658; activos no operativos 36.348; acciones 7.427,0 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 
@@ -147,76 +147,76 @@ NOPATₜ = ventasₜ × margen operativoₜ × (1 − impuestoₜ). La reinversi
 
 En la Base, año 1: NOPAT = 385.984,36 × 47,51% × (1 − 19,40%) = US$147.798,69 millones. La reinversión es US$86.828,46 millones y el FCFF es US$60.970,24 millones. Cada FCFF se descuenta con el producto de las tasas de cada año: VP(FCFFₜ) = FCFFₜ / [(1 + WACC₁) × … × (1 + WACCₜ)].
 
-En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 8,48%. Reinversión terminal sobre el NOPAT: Base, 20,7% (4,25% / 20,56%); Conservadora, 50,1% (4,25% / 8,48%); Disrupción, 50,1% (4,25% / 8,48%); Optimista, 20,7% (4,25% / 20,56%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
+En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor terminal al final del año 10 = FCFF₁₁ / (WACC terminal − g), con WACC terminal 9,38%. Reinversión terminal sobre el NOPAT: Base, 25,7% (5,29% / 20,56%); Conservadora, 56,4% (5,29% / 9,38%); Disrupción, 51,2% (4,80% / 9,38%); Optimista, 25,7% (5,29% / 20,56%). Una reinversión neta nula no significa gasto bruto cero: es mantener el capital económico en estado estable.
 
 
 #### 4. Trayectoria anual de cada historia
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en los bloques de 'Valuation output': ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**Base · Azure y Copilot sostienen el doble dígito** — probabilidad 45%; valor terminal 6.013.878 (VP 2.393.833); DCF US$442,42 por acción.
+**Base · Azure y Copilot sostienen el doble dígito** — probabilidad 45%; valor terminal 6.056.525 (VP 2.114.975); DCF US$393,72 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 385.984 | 16,3% | 47,5% | 147.799 | 86.828 | 60.970 | 10,2% | 55.351 |
-| 2 | 440.217 | 14,1% | 47,1% | 167.247 | 89.628 | 77.619 | 10,2% | 63.970 |
-| 3 | 496.199 | 12,7% | 46,9% | 187.773 | 91.773 | 96.000 | 10,2% | 71.826 |
-| 4 | 553.521 | 11,6% | 46,8% | 208.636 | 91.297 | 117.340 | 10,2% | 79.700 |
-| 5 | 610.544 | 10,3% | 46,6% | 229.216 | 88.870 | 140.346 | 10,2% | 86.541 |
-| 6 | 666.053 | 9,1% | 46,4% | 248.067 | 55.778 | 192.289 | 9,8% | 107.969 |
-| 7 | 718.546 | 7,9% | 46,2% | 265.482 | 50.933 | 214.549 | 9,5% | 110.033 |
-| 8 | 766.479 | 6,7% | 46,2% | 282.056 | 44.472 | 237.583 | 9,1% | 111.633 |
-| 9 | 808.332 | 5,5% | 46,2% | 296.259 | 36.504 | 259.755 | 8,8% | 112.164 |
-| 10 | 842.686 | 4,3% | 46,2% | 307.601 | 38.056 | 269.546 | 8,5% | 107.293 |
-| Terminal | 878.500 | 4,2% | 46,2% | 320.674 | 66.287 | 254.387 | 8,5% | — |
+| 1 | 385.984 | 16,3% | 47,5% | 147.799 | 86.828 | 60.970 | 11,8% | 54.518 |
+| 2 | 440.217 | 14,1% | 47,1% | 167.247 | 89.628 | 77.619 | 11,8% | 62.061 |
+| 3 | 496.199 | 12,7% | 46,9% | 187.773 | 91.773 | 96.000 | 11,8% | 68.635 |
+| 4 | 553.521 | 11,6% | 46,8% | 208.636 | 91.297 | 117.340 | 11,8% | 75.015 |
+| 5 | 610.544 | 10,3% | 46,6% | 229.216 | 90.904 | 138.312 | 11,8% | 79.066 |
+| 6 | 667.323 | 9,3% | 46,4% | 248.540 | 58.835 | 189.706 | 11,3% | 97.397 |
+| 7 | 722.692 | 8,3% | 46,2% | 267.014 | 56.019 | 210.995 | 10,9% | 97.722 |
+| 8 | 775.411 | 7,3% | 46,2% | 285.343 | 51.846 | 233.497 | 10,4% | 97.990 |
+| 9 | 824.203 | 6,3% | 46,2% | 302.076 | 46.329 | 255.747 | 9,9% | 97.685 |
+| 10 | 867.804 | 5,3% | 46,2% | 316.770 | 48.780 | 267.990 | 9,4% | 93.584 |
+| Terminal | 913.710 | 5,3% | 46,2% | 333.527 | 85.815 | 247.712 | 9,4% | — |
 
-**Conservadora · El capex de IA rinde menos de lo esperado** — probabilidad 25%; valor terminal 2.503.346 (VP 996.460); DCF US$237,05 por acción.
-
-| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 369.639 | 11,4% | 47,5% | 141.540 | 51.053 | 90.487 | 10,2% | 82.147 |
-| 2 | 401.527 | 8,6% | 45,7% | 147.925 | 47.879 | 100.045 | 10,2% | 82.452 |
-| 3 | 431.432 | 7,4% | 44,8% | 155.812 | 43.668 | 112.144 | 10,2% | 83.905 |
-| 4 | 458.707 | 6,3% | 43,9% | 162.335 | 46.760 | 115.575 | 10,2% | 78.502 |
-| 5 | 487.914 | 6,4% | 43,0% | 169.131 | 46.430 | 122.701 | 10,2% | 75.661 |
-| 6 | 516.914 | 5,9% | 42,1% | 174.736 | 30.321 | 144.415 | 9,8% | 81.088 |
-| 7 | 545.449 | 5,5% | 41,2% | 179.720 | 29.541 | 150.179 | 9,5% | 77.020 |
-| 8 | 573.250 | 5,1% | 41,2% | 188.122 | 28.467 | 159.655 | 9,1% | 75.017 |
-| 9 | 600.040 | 4,7% | 41,2% | 196.121 | 27.098 | 169.023 | 8,8% | 72.985 |
-| 10 | 625.542 | 4,2% | 41,2% | 203.629 | 28.249 | 175.380 | 8,5% | 69.810 |
-| Terminal | 652.128 | 4,2% | 41,2% | 212.284 | 106.392 | 105.892 | 8,5% | — |
-
-**Disrupción · Deterioro de los fundamentales: La demanda de cómputo para IA se corrige** — probabilidad 10%; valor terminal 1.953.566 (VP 777.620); DCF US$197,86 por acción.
+**Conservadora · El capex de IA rinde menos de lo esperado** — probabilidad 25%; valor terminal 2.354.539 (VP 822.219); DCF US$205,04 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 355.252 | 7,1% | 47,5% | 136.031 | 22.601 | 113.430 | 10,2% | 102.975 |
-| 2 | 369.368 | 4,0% | 44,8% | 133.525 | 25.489 | 108.036 | 10,2% | 89.038 |
-| 3 | 385.289 | 4,3% | 43,5% | 135.154 | 29.420 | 105.735 | 10,2% | 79.110 |
-| 4 | 403.665 | 4,8% | 42,2% | 137.278 | 31.050 | 106.227 | 10,2% | 72.153 |
-| 5 | 423.058 | 4,8% | 40,9% | 139.343 | 31.791 | 107.552 | 10,2% | 66.319 |
-| 6 | 442.915 | 4,7% | 39,5% | 140.578 | 21.568 | 119.010 | 9,8% | 66.824 |
-| 7 | 463.212 | 4,6% | 38,2% | 141.512 | 22.010 | 119.502 | 9,5% | 61.287 |
-| 8 | 483.926 | 4,5% | 38,2% | 147.247 | 22.424 | 124.823 | 9,1% | 58.650 |
-| 9 | 505.030 | 4,4% | 38,2% | 153.049 | 22.807 | 130.242 | 8,8% | 56.239 |
-| 10 | 526.494 | 4,3% | 38,2% | 158.909 | 23.776 | 135.132 | 8,5% | 53.790 |
-| Terminal | 548.870 | 4,2% | 38,2% | 165.662 | 83.027 | 82.636 | 8,5% | — |
+| 1 | 369.639 | 11,4% | 47,5% | 141.540 | 51.053 | 90.487 | 11,8% | 80.912 |
+| 2 | 401.527 | 8,6% | 45,7% | 147.925 | 47.879 | 100.045 | 11,8% | 79.992 |
+| 3 | 431.432 | 7,4% | 44,8% | 155.812 | 43.668 | 112.144 | 11,8% | 80.178 |
+| 4 | 458.707 | 6,3% | 43,9% | 162.335 | 46.760 | 115.575 | 11,8% | 73.887 |
+| 5 | 487.914 | 6,4% | 43,0% | 169.131 | 48.055 | 121.077 | 11,8% | 69.213 |
+| 6 | 517.929 | 6,2% | 42,1% | 175.079 | 32.670 | 142.409 | 11,3% | 73.114 |
+| 7 | 548.675 | 5,9% | 41,2% | 180.783 | 33.353 | 147.429 | 10,9% | 68.282 |
+| 8 | 580.064 | 5,7% | 41,2% | 190.358 | 33.934 | 156.425 | 10,4% | 65.646 |
+| 9 | 611.999 | 5,5% | 41,2% | 200.030 | 34.401 | 165.629 | 9,9% | 63.264 |
+| 10 | 644.373 | 5,3% | 41,2% | 209.759 | 36.221 | 173.539 | 9,4% | 60.601 |
+| Terminal | 678.461 | 5,3% | 41,2% | 220.856 | 124.555 | 96.301 | 9,4% | — |
 
-**Optimista · Microsoft gana la plataforma empresarial de IA** — probabilidad 20%; valor terminal 8.333.489 (VP 3.317.158); DCF US$577,55 por acción.
+**Disrupción · Deterioro de los fundamentales: La demanda de cómputo para IA se corrige** — probabilidad 10%; valor terminal 1.803.978 (VP 629.960); DCF US$171,13 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 400.928 | 20,8% | 47,5% | 153.521 | 136.469 | 17.052 | 10,2% | 15.480 |
-| 2 | 479.846 | 19,7% | 48,0% | 185.618 | 149.099 | 36.520 | 10,2% | 30.098 |
-| 3 | 566.067 | 18,0% | 48,2% | 220.079 | 152.250 | 67.829 | 10,2% | 50.749 |
-| 4 | 654.111 | 15,6% | 48,5% | 255.590 | 156.460 | 99.130 | 10,2% | 67.332 |
-| 5 | 744.589 | 13,8% | 48,7% | 292.401 | 153.426 | 138.975 | 10,2% | 85.695 |
-| 6 | 833.312 | 11,9% | 49,0% | 327.565 | 88.541 | 239.025 | 9,8% | 134.211 |
-| 7 | 916.638 | 10,0% | 49,2% | 360.660 | 78.728 | 281.932 | 9,5% | 144.591 |
-| 8 | 990.729 | 8,1% | 49,2% | 388.248 | 64.916 | 323.332 | 9,1% | 151.923 |
-| 9 | 1.051.821 | 6,2% | 49,2% | 410.529 | 47.500 | 363.029 | 8,8% | 156.758 |
-| 10 | 1.096.524 | 4,3% | 49,2% | 426.246 | 49.519 | 376.727 | 8,5% | 149.957 |
-| Terminal | 1.143.126 | 4,2% | 49,2% | 444.361 | 91.855 | 352.507 | 8,5% | — |
+| 1 | 355.252 | 7,1% | 47,5% | 136.031 | 22.601 | 113.430 | 11,8% | 101.427 |
+| 2 | 369.368 | 4,0% | 44,8% | 133.525 | 25.489 | 108.036 | 11,8% | 86.381 |
+| 3 | 385.289 | 4,3% | 43,5% | 135.154 | 29.420 | 105.735 | 11,8% | 75.595 |
+| 4 | 403.665 | 4,8% | 42,2% | 137.278 | 31.050 | 106.227 | 11,8% | 67.911 |
+| 5 | 423.058 | 4,8% | 40,9% | 139.343 | 32.542 | 106.801 | 11,8% | 61.052 |
+| 6 | 443.384 | 4,8% | 39,5% | 140.727 | 22.635 | 118.091 | 11,3% | 60.629 |
+| 7 | 464.686 | 4,8% | 38,2% | 141.962 | 23.723 | 118.239 | 10,9% | 54.762 |
+| 8 | 487.012 | 4,8% | 38,2% | 148.186 | 24.863 | 123.323 | 10,4% | 51.754 |
+| 9 | 510.410 | 4,8% | 38,2% | 154.680 | 26.057 | 128.623 | 9,9% | 49.129 |
+| 10 | 534.933 | 4,8% | 38,2% | 161.456 | 27.309 | 134.147 | 9,4% | 46.845 |
+| Terminal | 560.634 | 4,8% | 38,2% | 169.213 | 86.671 | 82.542 | 9,4% | — |
+
+**Optimista · Microsoft gana la plataforma empresarial de IA** — probabilidad 20%; valor terminal 8.390.488 (VP 2.930.009); DCF US$511,75 por acción.
+
+| Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 400.928 | 20,8% | 47,5% | 153.521 | 136.469 | 17.052 | 11,8% | 15.247 |
+| 2 | 479.846 | 19,7% | 48,0% | 185.618 | 149.099 | 36.520 | 11,8% | 29.200 |
+| 3 | 566.067 | 18,0% | 48,2% | 220.079 | 152.250 | 67.829 | 11,8% | 48.495 |
+| 4 | 654.111 | 15,6% | 48,5% | 255.590 | 156.460 | 99.130 | 11,8% | 63.374 |
+| 5 | 744.589 | 13,8% | 48,7% | 292.401 | 156.104 | 136.297 | 11,8% | 77.914 |
+| 6 | 834.861 | 12,1% | 49,0% | 328.174 | 92.396 | 235.778 | 11,3% | 121.051 |
+| 7 | 921.815 | 10,4% | 49,2% | 362.697 | 85.285 | 277.412 | 10,9% | 128.483 |
+| 8 | 1.002.076 | 8,7% | 49,2% | 392.695 | 74.519 | 318.176 | 10,4% | 133.527 |
+| 9 | 1.072.206 | 7,0% | 49,2% | 418.485 | 60.270 | 358.216 | 9,9% | 136.825 |
+| 10 | 1.128.925 | 5,3% | 49,2% | 438.841 | 63.458 | 375.383 | 9,4% | 131.086 |
+| Terminal | 1.188.645 | 5,3% | 49,2% | 462.056 | 118.885 | 343.171 | 9,4% | — |
 
 
 #### 5. Puente numérico de los cuatro DCF
@@ -225,35 +225,35 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 906.480,01 | 2.393.833,06 | 3.300.313,07 | 3.285.846,25 | 442,42 |
-| Conservadora | 778.588,39 | 996.460,41 | 1.775.048,81 | 1.760.581,99 | 237,05 |
-| Disrupción | 706.384,87 | 777.619,97 | 1.484.004,85 | 1.469.538,04 | 197,86 |
-| Optimista | 986.794,44 | 3.317.157,82 | 4.303.952,26 | 4.289.485,45 | 577,55 |
+| Base | 823.674,90 | 2.114.974,84 | 2.938.649,74 | 2.924.182,93 | 393,72 |
+| Conservadora | 715.088,36 | 822.219,05 | 1.537.307,41 | 1.522.840,60 | 205,04 |
+| Disrupción | 655.486,88 | 629.959,80 | 1.285.446,68 | 1.270.979,87 | 171,13 |
+| Optimista | 885.201,04 | 2.930.008,57 | 3.815.209,61 | 3.800.742,80 | 511,75 |
 
-Ejemplo Base: (906.480,01 + 2.393.833,06 + 76.843 + 36.348 − 127.658) / 7.427,0 = US$442,42 por acción. El terminal representa 72,5% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (823.674,90 + 2.114.974,84 + 76.843 + 36.348 − 127.658) / 7.427,0 = US$393,72 por acción. El terminal representa 72,0% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 45% / 25% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-DCF esperado = 0,45 × 442,419046 + 0,25 × 237,051568 + 0,10 × 197,864284 + 0,20 × 577,552909 = US$393,648473 ≈ US$393,65. Los aportes son US$199,09 + US$59,26 + US$19,79 + US$115,51 por acción.
+DCF esperado = 0,45 × 393,723297 + 0,25 × 205,041147 + 0,10 × 171,129644 + 0,20 × 511,746708 = US$347,898077 ≈ US$347,90. Los aportes son US$177,18 + US$51,26 + US$17,11 + US$102,35 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 393,648473 × 0,65 = US$255,871507 ≈ US$255,87. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 347,898077 × 0,65 = US$226,133750 ≈ US$226,13. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: la hoja calcula cada historia en 'Valuation output' con la estructura de Damodaran: Base en las filas 2–42 (valor por acción B35), Conservadora 53–93 (B86), Optimista 104–144 (B137) y Disrupción 157–197 (B190). La pestaña «Escenarios e historias» guarda los supuestos de cada historia y resume los resultados: A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$442,42, es el valor intrínseco principal. El DCF esperado de US$393,65 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$393,72, es el valor intrínseco principal. El DCF esperado de US$347,90 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: Azure y Copilot sostienen el doble dígito
 
 **Qué plantea.** Es la continuación de FY24-FY26 con desaceleración gradual.
 
-**Traducción al modelo.** Productivity and Business Processes crece 14%, 12%, 11%, 10%, 9%; Intelligent Cloud crece 25%, 20%, 17%, 15%, 13%; More Personal Computing crece 0%, 1%, 2%, 2%, 2%. El crecimiento anual compuesto de cinco años es 13,0%; el margen operativo objetivo es 46,2%. El ROIC terminal es 20,6%. El crecimiento terminal es 4,25%, el de la hoja. Probabilidad: 45%; DCF: US$442,42 por acción.
+**Traducción al modelo.** Productivity and Business Processes crece 14%, 12%, 11%, 10%, 9%; Intelligent Cloud crece 25%, 20%, 17%, 15%, 13%; More Personal Computing crece 0%, 1%, 2%, 2%, 2%. El crecimiento anual compuesto de cinco años es 13,0%; el margen operativo objetivo es 46,2%. El ROIC terminal es 20,6%. El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 45%; DCF: US$393,72 por acción.
 
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (azure y otros servicios de nube (interanual): ~+30% (FY26); microsoft 365 comercial / Copilot: En alza; capex / ingresos: ~35% (FY26)). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
@@ -262,7 +262,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$442,42, es el val
 
 **Qué plantea.** Es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI.
 
-**Traducción al modelo.** Productivity and Business Processes crece 10%, 8%, 7%, 6%, 6%; Intelligent Cloud crece 18%, 12%, 10%, 8%, 8%; More Personal Computing crece -2%, 0%, 0%, 1%, 1%. El crecimiento anual compuesto de cinco años es 8,0%; el margen operativo objetivo es 41,2%. El ROIC terminal es el costo de capital (8,48%). El crecimiento terminal es 4,25%, el de la hoja. Probabilidad: 25%; DCF: US$237,05 por acción.
+**Traducción al modelo.** Productivity and Business Processes crece 10%, 8%, 7%, 6%, 6%; Intelligent Cloud crece 18%, 12%, 10%, 8%, 8%; More Personal Computing crece -2%, 0%, 0%, 1%, 1%. El crecimiento anual compuesto de cinco años es 8,0%; el margen operativo objetivo es 41,2%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 25%; DCF: US$205,04 por acción.
 
 **Cómo contrastarla.** La apoyarían: azure y otros servicios de nube (interanual): ≤ +18%; microsoft 365 comercial / Copilot: asientos de Copilot estancados; capex / ingresos: sube sin aceleración de Azure; margen operativo: ≤ 42%.
 
@@ -271,7 +271,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$442,42, es el val
 
 **Qué plantea.** Es una corrección de la demanda de cómputo.
 
-**Traducción al modelo.** Productivity and Business Processes crece 8%, 6%, 5%, 5%, 5%; Intelligent Cloud crece 10%, 4%, 5%, 6%, 6%; More Personal Computing crece -3%, -2%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 5,0%; el margen operativo objetivo es 38,2%. El ROIC terminal es el costo de capital (8,48%). El crecimiento terminal es 4,25%, el de la hoja. Probabilidad: 10%; DCF: US$197,86 por acción.
+**Traducción al modelo.** Productivity and Business Processes crece 8%, 6%, 5%, 5%, 5%; Intelligent Cloud crece 10%, 4%, 5%, 6%, 6%; More Personal Computing crece -3%, -2%, 0%, 0%, 0%. El crecimiento anual compuesto de cinco años es 5,0%; el margen operativo objetivo es 38,2%. El ROIC terminal es el costo de capital (9,38%). El crecimiento terminal es 4,80%: se mantiene el crecimiento del año 5, sin recuperación. Probabilidad: 10%; DCF: US$171,13 por acción.
 
 **Cómo contrastarla.** La apoyaría, con más intensidad y duración que la Conservadora: azure y otros servicios de nube (interanual): ≤ +18%; microsoft 365 comercial / Copilot: asientos de Copilot estancados; capex / ingresos: sube sin aceleración de Azure; margen operativo: ≤ 42%.
 
@@ -280,22 +280,22 @@ La tesis Base es la trayectoria central defendida y su DCF, US$442,42, es el val
 
 **Qué plantea.** Es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante).
 
-**Traducción al modelo.** Productivity and Business Processes crece 17%, 16%, 15%, 13%, 12%; Intelligent Cloud crece 32%, 28%, 24%, 20%, 17%; More Personal Computing crece 2%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 17,5%; el margen operativo objetivo es 49,2%. El ROIC terminal es 20,6%. El crecimiento terminal es 4,25%, el de la hoja. Probabilidad: 20%; DCF: US$577,55 por acción.
+**Traducción al modelo.** Productivity and Business Processes crece 17%, 16%, 15%, 13%, 12%; Intelligent Cloud crece 32%, 28%, 24%, 20%, 17%; More Personal Computing crece 2%, 3%, 3%, 3%, 3%. El crecimiento anual compuesto de cinco años es 17,5%; el margen operativo objetivo es 49,2%. El ROIC terminal es 20,6%. El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 20%; DCF: US$511,75 por acción.
 
 **Cómo contrastarla.** La confirmarían: azure y otros servicios de nube (interanual): ≥ +25%; microsoft 365 comercial / Copilot: ARPU creciendo ≥ 8%; capex / ingresos: estable o bajando con ingresos creciendo; margen operativo: ≥ 45%.
 
-**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Disrupción/Optimista: 4,25%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
+**Reglas comunes.** Los cuatro DCF usan la misma tasa de descuento y la misma estructura de impuestos y deuda. Crecimiento terminal: Base/Conservadora/Optimista: 5,29%; Disrupción: 4,80%. Las diferencias proceden de ventas, margen, crecimiento terminal y ROIC terminal. Las probabilidades son juicio del analista y suman 100%; no son datos publicados por la empresa. La tesis de disrupción se separa de la conservadora porque plantea una pérdida estructural de la ventaja; la conservadora, una erosión gradual.
 
 
 ### Historias cuantificadas: DCF Base y DCF esperado
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 1,36) | Valor/acción (beta 1,27) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|---:|
-| **Base · Azure y Copilot sostienen el doble dígito** | 45% | Productivity and Business Processes: 14%, 12%, 11%, 10%, 9%; Intelligent Cloud: 25%, 20%, 17%, 15%, 13%; More Personal Computing: 0%, 1%, 2%, 2%, 2% | 13,0% | 46,2% | 0,6 | 20,6% | 4,25% | US$442,42 | US$452,01 |
-| **Conservadora · El capex de IA rinde menos de lo esperado** | 25% | Productivity and Business Processes: 10%, 8%, 7%, 6%, 6%; Intelligent Cloud: 18%, 12%, 10%, 8%, 8%; More Personal Computing: -2%, 0%, 0%, 1%, 1% | 8,0% | 41,2% | 0,6 | = costo de capital | 4,25% | US$237,05 | US$241,79 |
-| **Disrupción · Deterioro de los fundamentales: La demanda de cómputo para IA se corrige** | 10% | Productivity and Business Processes: 8%, 6%, 5%, 5%, 5%; Intelligent Cloud: 10%, 4%, 5%, 6%, 6%; More Personal Computing: -3%, -2%, 0%, 0%, 0% | 5,0% | 38,2% | 0,6 | = costo de capital | 4,25% | US$197,86 | US$201,66 |
-| **Optimista · Microsoft gana la plataforma empresarial de IA** | 20% | Productivity and Business Processes: 17%, 16%, 15%, 13%, 12%; Intelligent Cloud: 32%, 28%, 24%, 20%, 17%; More Personal Computing: 2%, 3%, 3%, 3%, 3% | 17,5% | 49,2% | 0,6 | 20,6% | 4,25% | US$577,55 | US$590,48 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$393,65** | **US$402,11** |
+| **Base · Azure y Copilot sostienen el doble dígito** | 45% | Productivity and Business Processes: 14%, 12%, 11%, 10%, 9%; Intelligent Cloud: 25%, 20%, 17%, 15%, 13%; More Personal Computing: 0%, 1%, 2%, 2%, 2% | 13,0% | 46,2% | 0,6 | 20,6% | 5,29% | US$393,72 | US$403,05 |
+| **Conservadora · El capex de IA rinde menos de lo esperado** | 25% | Productivity and Business Processes: 10%, 8%, 7%, 6%, 6%; Intelligent Cloud: 18%, 12%, 10%, 8%, 8%; More Personal Computing: -2%, 0%, 0%, 1%, 1% | 8,0% | 41,2% | 0,6 | = costo de capital | 5,29% | US$205,04 | US$209,47 |
+| **Disrupción · Deterioro de los fundamentales: La demanda de cómputo para IA se corrige** | 10% | Productivity and Business Processes: 8%, 6%, 5%, 5%, 5%; Intelligent Cloud: 10%, 4%, 5%, 6%, 6%; More Personal Computing: -3%, -2%, 0%, 0%, 0% | 5,0% | 38,2% | 0,6 | = costo de capital | 4,80% | US$171,13 | US$174,65 |
+| **Optimista · Microsoft gana la plataforma empresarial de IA** | 20% | Productivity and Business Processes: 17%, 16%, 15%, 13%, 12%; Intelligent Cloud: 32%, 28%, 24%, 20%, 17%; More Personal Computing: 2%, 3%, 3%, 3%, 3% | 17,5% | 49,2% | 0,6 | 20,6% | 5,29% | US$511,75 | US$524,31 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$347,90** | **US$356,07** |
 
 Base (45%) es la continuación de FY24-FY26 con desaceleración gradual. Conservadora (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. Disrupción (10%) es una corrección de la demanda de cómputo. Optimista (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -305,11 +305,11 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 
 | Crecimiento \ Margen | 42,2% | 44,2% | 46,2% | 48,2% | 50,2% |
 |---|---:|---:|---:|---:|---:|
-| 9,0% | 342,07 | 357,88 | 373,68 | 389,49 | 405,30 |
-| 11,0% | 376,44 | 394,30 | 412,15 | 430,01 | 447,86 |
-| 13,0% | 414,54 | 434,68 | 454,81 | 474,94 | 495,07 |
-| 15,0% | 456,73 | 479,40 | 502,06 | 524,72 | 547,38 |
-| 17,0% | 503,41 | 528,88 | 554,35 | 579,82 | 605,29 |
+| 9,0% | 305,25 | 319,37 | 333,49 | 347,61 | 361,73 |
+| 11,0% | 335,16 | 351,10 | 367,04 | 382,99 | 398,93 |
+| 13,0% | 368,30 | 386,27 | 404,23 | 422,20 | 440,17 |
+| 15,0% | 404,98 | 425,20 | 445,42 | 465,63 | 485,85 |
+| 17,0% | 445,55 | 468,26 | 490,98 | 513,69 | 536,40 |
 
 
 ### Pre-mortem
@@ -344,12 +344,12 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 
 |  | Margen 41% | Margen 46% | Margen 49% |
 |---|---:|---:|---:|
-| Beta 1,36 | 18,1% (3% de las empresas) | 15,6% (6% de las empresas) | 14,3% (8% de las empresas) |
-| Beta 1,27 | 17,6% (3% de las empresas) | 15,2% (7% de las empresas) | 13,9% (8% de las empresas) |
+| Beta 1,36 | 20,7% (2% de las empresas) | 18,1% (3% de las empresas) | 16,7% (4% de las empresas) |
+| Beta 1,27 | 20,2% (2% de las empresas) | 17,6% (3% de las empresas) | 16,2% (5% de las empresas) |
 
-Frente al DCF Base (US$442,42), el valor intrínseco principal, el precio está por encima en 17%.
+Frente al DCF Base (US$393,72), el valor intrínseco principal, el precio está por encima en 31%.
 
-Frente al DCF esperado de las historias (US$393,65 con la beta de la hoja; US$402,11 con la propuesta), el precio está por encima en 31% y por encima en 29%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$347,90 con la beta de la hoja; US$356,07 con la propuesta), el precio está por encima en 49% y por encima en 45%, respectivamente. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -359,10 +359,10 @@ Frente al DCF esperado de las historias (US$393,65 con la beta de la hoja; US$40
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Plataforma de software empresarial que apuesta su capital a la infraestructura de IA |  |
 | Probabilidades | Base 45% / Conservadora 25% / Disrupción 10% / Optimista 20% |  |
-| DCF Base hoy (valor intrínseco principal) | US$442,42 |  |
-| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$393,65 / US$402,11 |  |
-| Precio con MOS sobre el DCF esperado | US$255,87 (MOS 35%) |  |
-| Rango (historia más débil a más fuerte) | US$197,86 a US$590,48 |  |
+| DCF Base hoy (valor intrínseco principal) | US$393,72 |  |
+| DCF esperado por probabilidades (complemento) (beta de la hoja / propuesta) | US$347,90 / US$356,07 |  |
+| Precio con MOS sobre el DCF esperado | US$226,13 (MOS 35%) |  |
+| Rango (historia más débil a más fuerte) | US$171,13 a US$524,31 |  |
 | Confianza | Media: el negocio es excepcional; el retorno del capex de IA no está probado |  |
 | Qué cambiaría la opinión | Crecimiento de Azure frente al capex; adopción pagada de Copilot |  |
 | Revisión | Resultados del 1T FY27 (oct-2026) |  |
