@@ -58,6 +58,9 @@ def main() -> int:
         data = [{"range": f"{CE}!E209", "values": [[0]]},
                 {"range": f"{CC}!G31:I31", "values": [["EMEA", "", f"={CE}!$B$2+{str(CRP_EMEA).replace('.', ',')}"]]}]
         e = src.get(tk)
+        if not e:  # sin regiones (AFYA, PAGS, maestra): la fila 32 queda con la fórmula por defecto, como en las demás
+            data.append({"range": f"{CC}!G32:I32", "values": [[
+                "Fuera de EE.UU. sin desglose", "", f"={CE}!$B$2+{str(CRP_SIN_DESGLOSE).replace('.', ',')}"]]})
         if e:
             resto = e.get("resto", "sin desglose")
             crp = CRP_EMERGENTES if resto == "emergentes" else CRP_SIN_DESGLOSE
