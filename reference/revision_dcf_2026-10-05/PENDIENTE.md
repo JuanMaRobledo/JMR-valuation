@@ -1,4 +1,4 @@
-# Revisión Damodaran de la cartera (5-oct-2026): estado y pendientes
+# Revisión Damodaran de la cartera (5-oct-2026): estado
 
 Rama de trabajo: `ccr-45889b63-8puxn5` en `JuanMaRobledo/JMR-valuation` y `JuanMaRobledo/Modelo-JMR-datos` (sin PR todavía).
 
@@ -18,18 +18,9 @@ EPAM (3,27/2,83), PYPL (2,48), GOOG (años 6-10 1,43), MSFT (tabla EE.UU.; años
 ZTS (1,11). Notas y textos al día (`scripts/revisar_beta_s2c.py`, `scripts/textos_tasa_s2c.py`). Sin cambios de supuestos:
 NVDA, PLTR, DUOL.
 
-## Ya regeneradas con éxito (16/16 consistencia, 0 hallazgos)
-UBER (falta escaneo de integridad), DPZ, SHAK, NVDA, PAGS, AFYA, CMG, ADBE, MSFT, NVO.
+## Ya regener## Estado: terminada (5-oct-2026)
+Las 22 empresas regeneradas: consistencia 16/16, integridad 0 hallazgos, fórmula única 0 celdas pendientes; nota de
+actualización en el research; informes subidos a Drive (52/52). Para regenerar una empresa: `bash scripts/regenerar_una.sh <T>`.
 
-## Pendiente (en este orden)
-1. Regenerar una a una, esperando que termine cada una (cuota de Google Sheets: 60 lecturas/min):
-   `bash scripts/regenerar_una.sh INTU` y luego BSX, EPAM, PYPL, GOOG, ZTS, DUOL, PLTR.
-2. `bash scripts/refrescar_seccion.sh UBER DPZ` y `PYTHONPATH=.:scripts python3 scripts/integridad_hojas.py UBER`.
-3. `PYTHONPATH=.:scripts python3 scripts/nota_revision_research.py` (nota con cifras vigentes en el research).
-4. Controles: `python3 scripts/consistencia_app.py <T>` (16/16) para las 22; `apply_canonical_formulas.py --targets <json>`
-   en seco (0 celdas).
-5. `PYTHONPATH=.:scripts python3 scripts/subir_drive.py` (todas).
-6. Commit y push en ambos repos; PR a `main` en cada uno y fusión.
-
-Requisitos: `GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT`, `SEC_EDGAR_USER_AGENT`, Chromium (Playwright) y los repos hermanos
+GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT`, `SEC_EDGAR_USER_AGENT`, Chromium (Playwright) y los repos hermanos
 `Modelo-JMR` y `Modelo-JMR-datos` junto a `JMR-valuation`.

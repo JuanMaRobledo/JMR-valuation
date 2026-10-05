@@ -11,7 +11,7 @@ analysis_date: "2026-09-30"
 
 **Complemento · DCF esperado por probabilidades: US$70,04.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$26,67–104,14. El MOS 35% se aplica al esperado: US$45,53. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
-**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (21 celdas, con respaldo). DCF esperado US$81,00 → US$69,92. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), capital invertido operativo, conversor de i+d alineado al ltm, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm (21 celdas, con respaldo). DCF esperado US$81,00 → US$70,04. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$77,14 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
@@ -54,7 +54,7 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Descuento: la beta de la plataforma, no la del transporte de carga.** La hoja usa una beta de 1,20: la regresión de Uber, estable entre dos y cinco años. La bottom-up de transporte reapalancada daría 0,76, pero ese sector es de logística con activos y queda muy por debajo de lo que muestran Uber y sus comparables. El costo de capital empieza en 10,71% y baja a 9,38%; un punto más lleva la Base a US$67,79 (−12%) y uno menos a US$88,91 (+15%). El terminal explica 58,2% del valor operativo.
 
-**Probabilidades y lectura del resultado.** La Base pesa 45%, la Conservadora 25%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$77,14 y el esperado US$70,04, frente a un precio de US$69,51: el mercado paga algo entre la Conservadora (US$47,33) y el esperado. La evidencia en contra de la Base es que la oferta por Delivery Hero y las flotas autónomas cambian el perfil de capital justo cuando el margen mejora, y que Waymo ya opera su propia app en varias ciudades. Las acciones se fijan en 2.040,0 millones.
+**Probabilidades y lectura del resultado.** La Base pesa 45%, la Conservadora 25%, la Disrupción 10% y la Optimista 20%. El DCF Base es US$77,14 y el esperado US$70,04, frente a un precio de US$68,51: el mercado paga algo entre la Conservadora (US$47,33) y el esperado. La evidencia en contra de la Base es que la oferta por Delivery Hero y las flotas autónomas cambian el perfil de capital justo cuando el margen mejora, y que Waymo ya opera su propia app en varias ciudades. Las acciones se fijan en 2.040,0 millones.
 
 **Vida útil de I+D.** La hoja capitaliza el I+D (US$3.741 millones en el último año) y lo amortiza en 3 años. Mecanismo: el I+D crea activos que rinden varios años; capitalizarlo mueve el gasto del EBIT al capital invertido. La vida elegida es una convención del modelo (tabla de Damodaran por sector), no un dato reportado: una vida más larga eleva el activo y reduce el ROIC medido; una más corta hace lo contrario, y cambia también el EBIT ajustado. No se recalcula aquí porque modifica la hoja de conversión, no un input del DCF; queda provisional hasta contrastarla con la duración de los beneficios de los productos.
 
@@ -347,17 +347,17 @@ Cada trimestre, mueve 5-10 pp de probabilidad entre historias según hacia dónd
 
 ### El precio al final
 
-Precio de referencia de la valoración guardada: **US$69,51**.
+Precio de referencia de la valoración guardada: **US$68,51**.
 
 DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese precio (entre paréntesis, la fracción de empresas de este tamaño que lo logró):
 
 |  | Margen 16% | Margen 22% | Margen 26% |
 |---|---:|---:|---:|
-| Beta 1,20 | 15,9% (8% de las empresas) | 8,3% (29% de las empresas) | 4,8% (49% de las empresas) |
+| Beta 1,20 | 15,5% (9% de las empresas) | 8,0% (30% de las empresas) | 4,5% (51% de las empresas) |
 
-Frente al DCF Base (US$77,14), el valor intrínseco principal, el precio está por debajo en 10%.
+Frente al DCF Base (US$77,14), el valor intrínseco principal, el precio está por debajo en 11%.
 
-Frente al DCF esperado de las historias (US$70,04), el complemento, el precio está por debajo en 1%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$70,04), el complemento, el precio está por debajo en 2%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
