@@ -180,13 +180,13 @@ La hoja de este informe se construyó desde la plantilla maestra auditada y se c
 | Crecimiento año 1 (Base) | −6,5% | Entrada manual con fuente; activo | Input sheet B27; guía 2026 | Elección razonable documentada | Alta |
 | Crecimiento años 2-5 (Base) | ~3,9% anual | Entrada manual; activo | Input sheet B29; historia Base por segmento | Elección razonable documentada | Alta |
 | Margen año 1 y objetivo | 12,5% y 18,45% en 5 años | Entrada manual con fuente; activo | Input sheet B28/B30/B31 | Elección razonable documentada | Alta |
-| Ventas/capital | 1,8 (años 1-10) | Entrada manual con referencia; activo | Input sheet B32/B33 | Elección razonable | Media |
+| Ventas/capital | 1,80x (años 1-10) | Entrada manual con las referencias de Damodaran (empresa, marginal, sector); activo | Input sheet B32:B33 | Revisión del 5-oct-2026: entre el del sector (1,77) y el de hoy (2,04); el capital nuevo rinde ~24% | Media |
 | Tasa efectiva | 30% fija | Dato reportado y guía | Input sheet B24 y B60 = Yes | Conciliado (29,5% en 2025; guía ~30%) | Media |
-| Tasa libre de riesgo | 5,24% | Referencia de mercado | Input sheet B35; UST 10 años al 1-oct-2026 | Conciliado | Media |
-| ERP | 4,09% | Referencia de mercado | Cost of capital worksheet B27; Damodaran sep-2026 | Conciliado | Media |
-| Beta | 1,15 | Regresión propia; activo | Cost of capital worksheet B22-B23 | Elección documentada; Apparel reapalancada 0,79-0,88 | Alta |
+| Tasa libre de riesgo | 5,29% | Referencia de mercado | Input sheet B35; UST 10 años al 1-oct-2026 | Conciliado | Media |
+| ERP | 4,60% | Referencia de mercado | Cost of capital worksheet B27; Damodaran sep-2026 | Conciliado | Media |
+| Beta | 0,91 | Bottom-up del sector; activo | Cost of capital worksheet B22:B24 | Revisión del 5-oct-2026: bottom-up de Apparel en EE.UU.; sin primas por riesgos diversificables (van en las historias) | Alta |
 | Costo de la deuda (arrendamientos) | 5,9% | Entrada manual | Cost of capital worksheet B34-B35 | Razonable (UST + ~0,7 pp) | Baja |
-| WACC | 9,18% (terminal 9,33%) | Cálculo derivado | Cost of capital worksheet B14 | Conciliado | Alta |
+| WACC | 8,66% (terminal 9,38%) | Cálculo derivado; activo | Cost of capital worksheet B14: beta 0,91, ERP 4,60%, rf 5,29% | Revisión del 5-oct-2026: recalculado por la hoja con la beta y el precio de corte (30-sep-2026) | Alta |
 | ROIC después del año 10 | 12,6% | Criterio de ventaja documentado | Input sheet B49/B50 | Ventaja que se desvanece (sección 6) | Alta |
 | Múltiplos objetivo (Base) | EV/EBITDA 9,8×, EV/FCFF 22,0×, P/E 15,7×, P/FCFE 19,9×, P/OCF 12,3× | Protocolo de tres anclas | EVEBITDA/EVFCFF/PE/PFCFE/POCF J19 | Elección razonable documentada | Media (secundarios) |
 | Ponderación de métodos | Categoría «Madura» (DCF 40%) | Valor de tabla | Resumen de Valoración G3 | Razonable | Baja |

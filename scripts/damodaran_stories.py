@@ -1293,7 +1293,7 @@ def render(r: dict) -> tuple[str, str]:
     for key, titulo in (("crecimiento", "Crecimiento"), ("margenes", "Márgenes"), ("reinversion", "Reinversión y retorno")):
         blk = sp.get(key) or {}
         if blk.get("texto"):
-            p(f"**{titulo}.** " + blk["texto"])
+            p(f"**{titulo}.** " + (blk["texto"].format_map(_cifras(r)) if "{" in blk["texto"] else blk["texto"]))
         if blk.get("tabla"):
             tab(blk["tabla"]["cols"], blk["tabla"]["rows"], blk["tabla"].get("align"))
         if key == "reinversion" and not r.get("financiero"):
@@ -1316,7 +1316,8 @@ def render(r: dict) -> tuple[str, str]:
     su = r.get("supuestos") or {}
     if r.get("financiero"):
         h3("DCF financiero: supuestos y limitaciones")
-        p((sp.get("margenes") or {}).get("texto", "") + " " + (sp.get("reinversion") or {}).get("texto", ""))
+        _t = (sp.get("margenes") or {}).get("texto", "") + " " + (sp.get("reinversion") or {}).get("texto", "")
+        p(_t.format_map(_cifras(r)) if "{" in _t else _t)  # cifras vivas (Ke, beta) en lugar de las de la fecha del informe
     elif su.get("growthBase") is not None and not hh:
         h3("Calibración técnica anterior Conservador/Base/Optimista (referencia auxiliar)")
         tab(["Supuesto", "Conservador", "Base", "Optimista"],
