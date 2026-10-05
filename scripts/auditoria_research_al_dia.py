@@ -3,7 +3,7 @@
 
 El research de cada empresa tiene tablas escritas a la fecha del informe que citan la beta, la prima de mercado, la tasa
 libre de riesgo, el WACC y el ventas/capital de ese momento. Este script reescribe esas filas con los valores vigentes de
-la valoración (reference/damodaran/<T>_resultado.json, que reproduce la hoja):
+la hoja de cálculo de cada empresa (scripts/valores_hoja.py):
   - tabla de auditoría («Dato o supuesto | Valor del modelo y unidad | …»): valor, origen, celda y contraste de las filas
     de ventas/capital, beta, ERP, tasa libre de riesgo, WACC y WACC terminal;
   - tabla de supuestos activos («Supuesto activo y escenario | …»): el nombre de las filas de ventas/capital, beta y WACC
@@ -64,14 +64,9 @@ def pct(x: float, nd: int = 2) -> str:
 
 
 def valores(tk: str) -> dict:
-    r = json.loads((_ROOT / "reference" / "damodaran" / f"{tk}_resultado.json").read_text())
-    a = r["historias"][0]
-    d = a["detalle"]
-    s1, s2 = d.get("s2c") or 0, d.get("s2c2") or d.get("s2c") or 0
-    u = (a.get("margen") or 0) * (1 - (d.get("impuestoMarg") or 0))
-    w0 = d["tasa"][1] if r.get("financiero") else d["wacc0"]
-    return {"beta": r["beta_hoja"], "rf": r["rf"], "erp": r["erp"], "w0": w0, "wT": d["tasaTerminal"], "s1": s1, "s2": s2,
-            "r1": u * s1, "r2": u * s2, "fin": bool(r.get("financiero"))}
+    """Cifras de la hoja de cálculo (scripts/valores_hoja.py), no de copias intermedias."""
+    import valores_hoja
+    return valores_hoja.leer(tk)
 
 
 def s2c_txt(v: dict) -> str:
