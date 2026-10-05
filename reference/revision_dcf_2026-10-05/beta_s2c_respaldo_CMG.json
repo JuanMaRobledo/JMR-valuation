@@ -1,0 +1,17 @@
+{
+ "Cost of capital worksheet!B22": {
+  "before": "Direct Input",
+  "after": "Single Business(US)",
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (CMG, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta 1,1 (Direct Input), ERP maduro; sin deuda financiera: el alquiler ya está en el EBIT, así que el pasivo por arrendamiento (US$4.773M) no se resta como deuda.",
+  "after": "Beta ~0,86 bottom-up (Restaurant/Dining en EE.UU., «Single Business(US)», reapalancada con la D/E de mercado); ERP por regiones 4,09%. Sin deuda financiera: el pasivo por arrendamientos (~US$5.287M a valor de mercado) entra como deuda y el alquiler sale del EBIT (revisión del 5-oct-2026).",
+  "reason": "Texto de beta al día (CMG, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Beta 1,1 (Direct Input), ERP maduro; sin deuda financiera (alquileres dentro del EBIT).",
+  "after": "Beta ~0,86 bottom-up (Restaurant/Dining EE.UU.), ERP 4,09%; arrendamientos como deuda, sin deuda financiera.",
+  "reason": "Texto de beta al día (CMG, 5-oct-2026)"
+ }
+}

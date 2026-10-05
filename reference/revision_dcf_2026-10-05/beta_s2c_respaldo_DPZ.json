@@ -1,0 +1,47 @@
+{
+ "Cost of capital worksheet!B22": {
+  "before": "Direct Input",
+  "after": "Single Business(US)",
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (DPZ, 5-oct-2026)"
+ },
+ "Input sheet!B32": {
+  "before": 2.6415,
+  "after": 5.4,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (DPZ, 5-oct-2026)"
+ },
+ "Input sheet!B33": {
+  "before": 2.6415,
+  "after": 3.4,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (DPZ, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta 0,9 (Direct Input), ERP maduro, deuda Baa2/BBB a 5 años (US$4.817M al cierre 2025).",
+  "after": "Beta ~1,07 bottom-up (Restaurant/Dining en EE.UU., «Single Business(US)», reapalancada con la D/E de mercado ~0,48), ERP por regiones 4,21%, deuda titulizada Baa2/BBB a 5 años (US$4.817M al cierre 2025).",
+  "reason": "Textos de beta y ventas/capital al día (DPZ, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Beta 0,9 (Direct Input), ERP maduro, deuda titulizada Baa2/BBB a 5 años.",
+  "after": "Beta ~1,07 bottom-up (Restaurant/Dining EE.UU.), ERP 4,21%, deuda titulizada Baa2/BBB a 5 años.",
+  "reason": "Textos de beta y ventas/capital al día (DPZ, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 3,
+  "after": 5.4,
+  "reason": "Textos de beta y ventas/capital al día (DPZ, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "3,0x: bajo capex (US$121M en 2025).",
+  "after": "5,4x: el de Domino's hoy (franquiciadora; capex ~2,5% de las ventas). El capital nuevo rinde ~84%.",
+  "reason": "Textos de beta y ventas/capital al día (DPZ, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 3,
+  "after": 3.4,
+  "reason": "Textos de beta y ventas/capital al día (DPZ, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "3,0x: mismo modelo de franquicias.",
+  "after": "3,4x: punto medio hacia el sector (1,51); el rendimiento baja hacia el ROIC terminal.",
+  "reason": "Textos de beta y ventas/capital al día (DPZ, 5-oct-2026)"
+ }
+}
