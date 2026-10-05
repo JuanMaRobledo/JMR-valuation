@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,12 (desde el 3-oct-2026; antes 1,30). Regla de la cartera (prompt v4, paso 2): beta del patrimonio del sector (0,97) + 0,15 por empresa pequeña = 1,12. La de regresión queda como referencia. Banco digital: se parte de la beta del patrimonio del sector financiero (0,97), no de la desapalancada; el riesgo de Brasil va en la prima de mercado. El efecto de cada beta en el DCF Base está en la tabla."
+  "texto": "La hoja usa una beta de 0,82: la del patrimonio de «Financial Svcs. (Non-bank & Insurance)» en la tabla global de Damodaran (1.138 empresas, ene-2026). En una financiera se usa la beta del patrimonio, no la desapalancada; tabla global porque PagSeguro vende 100% en Brasil, y el riesgo de Brasil va en la prima de mercado (7,33%), no en la beta. Hasta el 5-oct-2026 se usaba 1,12 = 0,97 (tabla de EE.UU.) + 0,15 por empresa pequeña; la prima por tamaño es riesgo diversificable y Damodaran no la usa. La regresión semanal contra el S&P 500 da 0,80 a dos años y 1,42 a cinco, y contra el índice de Brasil ~1,2, como StoneCo, XP e Inter; queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {
@@ -279,7 +279,7 @@
   ],
   [
    "Descuento: Brasil cuesta caro.",
-   "El costo del patrimonio empieza en {wacc0} (beta {beta}, prima de riesgo {erp}, que incluye el riesgo país) y converge a {waccT}. Es el supuesto que más mueve el valor: un punto más lo lleva a {s_k_hi}; uno menos, a {s_k_lo}. Una beta sectorial menor (~0,97) se considera solo como sensibilidad, porque el riesgo de un banco en Brasil no es el de una financiera promedio de EE.UU. El crecimiento perpetuo en dólares es {tgA} y el terminal explica {terminal} del valor."
+   "El costo del patrimonio empieza en {wacc0} (beta {beta}, prima de riesgo {erp}, que incluye el riesgo país) y converge a {waccT}. Es el supuesto que más mueve el valor: un punto más lo lleva a {s_k_hi}; uno menos, a {s_k_lo}. La beta es la del patrimonio de las financieras no bancarias en la tabla global; el riesgo de Brasil ya está en la prima y no se cuenta otra vez en la beta. La regresión (0,80-1,42 contra el S&P 500) queda como referencia. El crecimiento perpetuo en dólares es {tgA} y el terminal explica {terminal} del valor."
   ],
   [
    "Probabilidades y lectura del resultado.",

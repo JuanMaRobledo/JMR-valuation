@@ -1,0 +1,17 @@
+{
+ "Input sheet!D1": {
+  "before": "=GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\")",
+  "after": 512.9,
+  "reason": "Precio y fecha de corte (MSFT)"
+ },
+ "Input sheet!B4": {
+  "before": 46281,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (MSFT)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 490.3,
+  "after": 512.9,
+  "reason": "Precio de corte (MSFT)"
+ }
+}

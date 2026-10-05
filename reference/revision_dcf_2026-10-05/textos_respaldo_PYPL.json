@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "2,6x: relación marginal real 2020-2025 (ΔIngresos / ΔCapital invertido, con I+D capitalizado). CapEx ~2,6% de ingresos, por debajo de D&A.",
+  "after": "Ventas/capital 2,48 en los años 1-5: marginal 2020-2025 con I+D capitalizado (~2,6); el de hoy (1,38) incluye el crédito mercantil. Igual en los años 6-10.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "ROIC actual ~18% (con US$10.900M de goodwill); la red de dos lados sostiene retornos sobre el WACC hasta el año 10.",
+  "after": "Ventaja que se desvanece: ROIC después del año 10 de 15,0%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "9,2%: beta 1,29 (entre las redes V/MA ~0,7 y el fintech ~1,7-2,7), rating A3/A-, ERP de 4,09% (sep-2026).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,97 (beta del patrimonio de Financial Svcs. (Non-bank & Insurance) en EE.UU.) × ERP 4,87% = Ke 10,0%; Kd después de impuestos 4,6%; peso del patrimonio 79%; WACC inicial 8,9% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 2.6,
+  "after": 2.4752,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Bottom-up: ΔIngresos 2020-25 (+US$11.718M) / ΔCapital invertido con I+D capitalizado (~+US$4.550M).",
+  "after": "2,48x: marginal 2020-2025 con I+D capitalizado (~2,6); el de hoy (1,38) incluye el crédito mercantil.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 2.6,
+  "after": 2.4752,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Mismo modelo asset-light; el CapEx (~2,6% de ingresos) no escala más rápido que los ingresos.",
+  "after": "2,48x: marginal 2020-2025 con I+D capitalizado (~2,6); el de hoy (1,38) incluye el crédito mercantil.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Tasa libre de riesgo 4,96% (UST 10 años, 22-sep-2026) + beta 1,29 (regresión de 5 años; beta desapalancada implícita 1,07, entre redes V/MA ~0,7 y fintech XYZ/AFRM/Adyen ~1,7-2,7) x ERP 4,32% (Damodaran, 1-sep-2026) = Ke 10,5%. Kd 5,85% (rating A3/A-). D/(D+E) 22%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,97 (beta del patrimonio de Financial Svcs. (Non-bank & Insurance) en EE.UU.) × ERP 4,87% = Ke 10,0%; Kd después de impuestos 4,6%; peso del patrimonio 79%; WACC inicial 8,9% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
+ }
+}

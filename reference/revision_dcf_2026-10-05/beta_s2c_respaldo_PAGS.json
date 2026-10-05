@@ -1,0 +1,17 @@
+{
+ "Cost of capital worksheet!B23": {
+  "before": 1.12,
+  "after": 0.82,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (PAGS, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Costo del capital propio (sin deuda financiera): beta 1,3, ERP de Brasil 7,47%, UST 10 años; WACC terminal 12%.",
+  "after": "Costo del capital propio (sin deuda financiera): beta 0,82 (patrimonio de Financial Svcs. en la tabla global de Damodaran; antes 1,3 y luego 1,12), ERP por regiones de Brasil 7,33% (incluye el riesgo país), UST 10 años; WACC terminal 12%.",
+  "reason": "Texto de beta al día (PAGS, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Costo del capital propio: beta 1,3 x ERP de Brasil 7,47% + UST; sin deuda financiera (fondeo operativo).",
+  "after": "Costo del capital propio: beta 0,82 × ERP de Brasil 7,33% + UST; sin deuda financiera (fondeo operativo).",
+  "reason": "Texto de beta al día (PAGS, 5-oct-2026)"
+ }
+}

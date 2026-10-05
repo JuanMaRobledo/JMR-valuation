@@ -1,0 +1,22 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 37.91,
+  "reason": "Precio y fecha de corte (NVO)"
+ },
+ "Input sheet!B4": {
+  "before": 46288,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (NVO)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 38.17,
+  "after": 37.91,
+  "reason": "Precio de corte (NVO)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 38.17,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (NVO)"
+ }
+}

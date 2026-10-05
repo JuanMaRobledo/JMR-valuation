@@ -15,8 +15,9 @@ Regla única:
     - GOOG: mezcla de sectores por ingresos (Advertising + Software), 1,07.
   Revisión del 5-oct-2026 (scripts/revisar_beta_s2c.py): sin primas por moda, concepto único, distribuidor ni tamaño,
   que son riesgos diversificables ya contados en las historias (prompt v4: no contar el mismo riesgo en flujos,
-  probabilidades y tasa). ADBE, CELH, CMG, DPZ, LULU, ONON y SHAK usan «Single Business(US)» en la hoja, que reapalanca
-  sola la beta del sector; este script no las toca.
+  probabilidades y tasa). ADBE, CELH, CMG, DPZ, LULU, MSFT, NVO, ONON y SHAK usan «Single Business(US)» en la hoja,
+  que reapalanca sola la beta del sector; este script no las toca. UBER usa su regresión (1,20) porque «Transportation»
+  no describe a la plataforma (ver scripts/revisar_beta_s2c.py).
   Las hojas con «Single Business(Global)» ya calculan la beta bottom-up del sector global y no se cambian.
 
 Escribe 'Cost of capital worksheet'!B23 (con B22 = "Direct Input"), deja respaldo y nota en la celda y actualiza el
@@ -54,9 +55,10 @@ REGLA = {
     # «Single Business(US)» y reapalanca sola la beta del sector corregida por caja.
     "LULU": ([], None, ""),
     "ONON": ([], None, ""),
-    "PAGS": ([("empresa pequeña", 0.15)], 0.97,
-             "Banco digital: se parte de la beta del patrimonio del sector financiero (0,97), no de la desapalancada; "
-             "el riesgo de Brasil va en la prima de mercado."),
+    # 5-oct-2026: tabla global (vende 100% en Brasil) y sin prima por tamaño
+    "PAGS": ([], 0.82,
+             "Banco digital: se parte de la beta del patrimonio de Financial Svcs. en la tabla global (0,82), no de la "
+             "desapalancada; el riesgo de Brasil va en la prima de mercado."),
     "PYPL": ([], 0.97, "Red de pagos con saldos de clientes y crédito: se parte de la beta del patrimonio del sector (0,97)."),
     "ZTS": ([], None, ""),
     "NVDA": ([], None, ""),
@@ -64,7 +66,7 @@ REGLA = {
     "SHAK": ([], None, "Los arrendamientos como deuda ya suben la beta reapalancada por el costo fijo del alquiler."),
 }
 FIJA: dict[str, float] = {}  # 5-oct-2026: SHAK ya no usa 1,25 fija
-HOJA_US = {"ADBE", "CELH", "CMG", "DPZ", "LULU", "ONON", "SHAK"}  # «Single Business(US)» en la hoja: no se pasan a Direct Input
+HOJA_US = {"ADBE", "CELH", "CMG", "DPZ", "LULU", "MSFT", "NVO", "ONON", "SHAK"}  # «Single Business(US)» en la hoja: no se pasan a Direct Input
 
 
 def es(x, nd=2):

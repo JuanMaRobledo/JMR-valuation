@@ -1,0 +1,22 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 12.04,
+  "reason": "Precio y fecha de corte (AFYA)"
+ },
+ "Input sheet!B4": {
+  "before": 46290,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (AFYA)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 13,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (AFYA)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 13,
+  "after": 12.04,
+  "reason": "Precio de corte (AFYA)"
+ }
+}

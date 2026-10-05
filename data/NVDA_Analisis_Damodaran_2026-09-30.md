@@ -7,13 +7,13 @@ analysis_date: "2026-09-30"
 # NVIDIA Corporation (NVDA) — Valor con criterio Damodaran
 
 > Sección 12 del análisis fundamental (prompt v5). Estimación condicionada a supuestos; no es asesoría financiera ni una recomendación.
-**Valor intrínseco principal · DCF Base hoy: US$200,23 por acción** (Base · Ciclo de IA largo que desacelera con la escala).
+**Valor intrínseco principal · DCF Base hoy: US$200,22 por acción** (Base · Ciclo de IA largo que desacelera con la escala).
 
-**Complemento · DCF esperado por probabilidades: US$182,13.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$52,51–303,41. El MOS 35% se aplica al esperado: US$118,39. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
+**Complemento · DCF esperado por probabilidades: US$182,12.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$52,51–303,40. El MOS 35% se aplica al esperado: US$118,38. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
 **Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Correcciones: arrendamientos como deuda (conversor, damodaran), balance del último 10-q, capital invertido operativo, deuda de balance sin arrendamientos operativos, eps básico, flujos ltm, margen objetivo base de la hoja enlazado al de input sheet (29 celdas, con respaldo). DCF esperado US$186,04 → US$182,13. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
 
-Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$200,23 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
+Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$200,22 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
 ### La historia en un párrafo
@@ -48,32 +48,32 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Crecimiento: cuánto dura el ciclo.** NVIDIA pasó de vender tarjetas gráficas a ser el proveedor dominante de la infraestructura de IA: GPUs, sistemas completos, redes y CUDA, el software estándar de la industria. Los ingresos fueron US$60.922 millones en FY24, US$130.497 millones en FY25 y US$215.938 millones en FY26, y en el 2T FY27 facturó US$96.220 millones en un solo trimestre (Data Center +117%). La pregunta no es si es buena empresa, sino cuánto dura el ciclo de inversión de los hiperescaladores. La Base supone que Data Center crece 50% el primer año y luego se desacelera rápido (20%, 10%, 8%, 6%): 46,7% el primer año y 17,1% compuesto. La desaceleración es deliberada: sostener crecimientos así desde US$300.000 millones de ventas casi no tiene precedentes (~4% de las empresas de ese tamaño lo lograron), y en semiconductores todos los ciclos de escasez terminaron en exceso de capacidad. La Conservadora (7,0%) es justamente eso: una corrección del capex en el año 2; la Disrupción (−1,3%), corrección fuerte más chips propios de los clientes; la Optimista (25,3%), la IA como infraestructura permanente. Una caída secuencial de Data Center sería la primera señal contra la Base.
 
-**Margen: de monopolio temporal.** El margen operativo de 54-65% es el de un monopolio temporal: precio altísimo por escasez, poco capital (NVIDIA diseña pero no fabrica) y software propio. La Base usa 58,1%, apenas por debajo del actual, porque CUDA y la escala sostienen el precio mientras la escasez dure. Las fuerzas en contra son la competencia (AMD, los TPU de Google, Trainium de Amazon) y el poder de negociación de cinco clientes enormes. La Conservadora baja a 50,1%, la Disrupción a 40,1%. Curiosamente, el margen es de los supuestos que menos mueven la Base (dos puntos: US$193,99 (−3%) o US$206,47 (+3%)), porque lo que domina el valor es cuánto dura el crecimiento. Un margen bruto por debajo de 65% invalidaría la Base.
+**Margen: de monopolio temporal.** El margen operativo de 54-65% es el de un monopolio temporal: precio altísimo por escasez, poco capital (NVIDIA diseña pero no fabrica) y software propio. La Base usa 58,1%, apenas por debajo del actual, porque CUDA y la escala sostienen el precio mientras la escasez dure. Las fuerzas en contra son la competencia (AMD, los TPU de Google, Trainium de Amazon) y el poder de negociación de cinco clientes enormes. La Conservadora baja a 50,1%, la Disrupción a 40,1%. Curiosamente, el margen es de los supuestos que menos mueven la Base (dos puntos: US$193,98 (−3%) o US$206,46 (+3%)), porque lo que domina el valor es cuánto dura el crecimiento. Un margen bruto por debajo de 65% invalidaría la Base.
 
 **Reinversión: genera más caja de la que puede usar.** Como no fabrica, NVIDIA casi no invierte en activos fijos: su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un ventas/capital de 2,92× y 2,44×, y el supuesto casi no mueve el valor. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: genera más caja de la que puede reinvertir. El ROIC actual es altísimo; después del año 10 la Base usa 27,2%, el promedio de semiconductores, no el actual, porque Damodaran limita el retorno de una ventaja duradera al de su industria. La ventaja (los costos de cambio de CUDA) es real; si se perdiera, la Base valdría US$142,56 (−29%).
 
-**Descuento: la ciclicidad va en las historias.** Hasta el 30-sep-2026 la hoja usaba una beta de regresión de 1,90; hoy usa la bottom-up de semiconductores, 1,51, con un costo de capital de 12,11% que converge a 9,38%. La ciclicidad del negocio no se sumó a la tasa: está en la Conservadora y la Disrupción, que es donde Damodaran recomienda ponerla. Un punto más de tasa lleva la Base a US$163,74 (−18%). El crecimiento perpetuo es 5,29% y el terminal explica 64,3% del valor operativo.
+**Descuento: la ciclicidad va en las historias.** Hasta el 30-sep-2026 la hoja usaba una beta de regresión de 1,90; hoy usa la bottom-up de semiconductores, 1,51, con un costo de capital de 12,11% que converge a 9,38%. La ciclicidad del negocio no se sumó a la tasa: está en la Conservadora y la Disrupción, que es donde Damodaran recomienda ponerla. Un punto más de tasa lleva la Base a US$163,73 (−18%). El crecimiento perpetuo es 5,29% y el terminal explica 64,3% del valor operativo.
 
-**Probabilidades y lectura del resultado.** La Base pesa 40%, la Conservadora 30% —alta, porque es la historia clásica del sector—, la Disrupción 10% y la Optimista 20%. El DCF Base es US$200,23 y el esperado US$182,13, frente a un precio de US$233,95: el mercado paga algo entre la Base y la Optimista. El antiguo DCF técnico de la hoja (US$200,23) es más alto que la Base porque suponía un crecimiento más largo; la Base se apoya en la visión externa. Las acciones se fijan en 24.100,0 millones; las recompras no se modelan.
+**Probabilidades y lectura del resultado.** La Base pesa 40%, la Conservadora 30% —alta, porque es la historia clásica del sector—, la Disrupción 10% y la Optimista 20%. El DCF Base es US$200,22 y el esperado US$182,12, frente a un precio de US$233,95: el mercado paga algo entre la Base y la Optimista. El antiguo DCF técnico de la hoja (US$200,22) es más alto que la Base porque suponía un crecimiento más largo; la Base se apoya en la visión externa. Las acciones se fijan en 24.100,0 millones; las recompras no se modelan.
 
-**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$302.970 millones. Con el crecimiento de la Base llegan a US$665.808 millones en el año 5 y a US$873.232 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 60,1% en el año 1 a 58,1% al final, y se descuentan impuestos (16,1% al principio y 16,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$224.070 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$29.323 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$194.747 millones el primer año. Cada flujo se trae a hoy con el costo de capital (12,11% al principio, 9,38% al final): los diez años suman US$1.683.680 millones. Después del año 10 se supone que la empresa crece 5,29% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 27,2%; esa perpetuidad vale hoy US$3.029.800 millones, 64% del total. Flujos más terminal dan el valor de las operaciones, US$4.713.480 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$99.369 millones, más activos no operativos por US$51.157 millones, menos deuda por US$38.512 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$4.825.493 millones que, repartido entre 24.100,0 millones de acciones, da US$200,23 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+**Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$302.970 millones. Con el crecimiento de la Base llegan a US$665.808 millones en el año 5 y a US$873.232 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 60,1% en el año 1 a 58,1% al final, y se descuentan impuestos (16,1% al principio y 16,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$224.070 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$29.323 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$194.747 millones el primer año. Cada flujo se trae a hoy con el costo de capital (12,11% al principio, 9,38% al final): los diez años suman US$1.683.630 millones. Después del año 10 se supone que la empresa crece 5,29% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 27,2%; esa perpetuidad vale hoy US$3.029.663 millones, 64% del total. Flujos más terminal dan el valor de las operaciones, US$4.713.293 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$99.369 millones, más activos no operativos por US$51.157 millones, menos deuda por US$38.512 millones (incluye los arrendamientos capitalizados). Queda un patrimonio de US$4.825.307 millones que, repartido entre 24.100,0 millones de acciones, da US$200,22 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
 **Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 28,17× (peso 33% dentro de los múltiplos); EV/FCFF 39,58× (peso 17% dentro de los múltiplos); P/E 35,39× (peso 33% dentro de los múltiplos); P/FCFE 37,76× (peso 8% dentro de los múltiplos); P/OCF 35,11× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (12,2%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
-Sensibilidad del DCF Base (US$200,23; cada fila es un DCF completo con un solo supuesto cambiado):
+Sensibilidad del DCF Base (US$200,22; cada fila es un DCF completo con un solo supuesto cambiado):
 
 | Supuesto cambiado | DCF Base | Variación |
 |---|---:|---:|
-| Margen objetivo −2 pp | US$193,99 | −3,1% |
-| Margen objetivo +2 pp | US$206,47 | +3,1% |
-| Crecimiento años 1–5 −2 pp | US$180,82 | −9,7% |
-| Crecimiento años 1–5 +2 pp | US$221,70 | +10,7% |
-| Ventas/capital −20% | US$199,15 | −0,5% |
-| Ventas/capital +20% | US$200,95 | +0,4% |
-| WACC +1 pp | US$163,74 | −18,2% |
-| WACC −1 pp | US$260,01 | +29,9% |
-| Crecimiento terminal −0,5 pp | US$186,84 | −6,7% |
-| Crecimiento terminal +0,5 pp | US$217,24 | +8,5% |
+| Margen objetivo −2 pp | US$193,98 | −3,1% |
+| Margen objetivo +2 pp | US$206,46 | +3,1% |
+| Crecimiento años 1–5 −2 pp | US$180,81 | −9,7% |
+| Crecimiento años 1–5 +2 pp | US$221,69 | +10,7% |
+| Ventas/capital −20% | US$199,14 | −0,5% |
+| Ventas/capital +20% | US$200,94 | +0,4% |
+| WACC +1 pp | US$163,73 | −18,2% |
+| WACC −1 pp | US$260,00 | +29,9% |
+| Crecimiento terminal −0,5 pp | US$186,83 | −6,7% |
+| Crecimiento terminal +0,5 pp | US$217,23 | +8,5% |
 | ROIC terminal = costo de capital | US$142,56 | −28,8% |
 | Acciones +5% | US$190,69 | −4,8% |
 
@@ -97,11 +97,11 @@ Sensibilidad del DCF Base (US$200,23; cada fila es un DCF completo con un solo s
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
-| Empresa hoy | 2,59 | ventas LTM 302.970,0 / capital invertido 116.970,5 millones |
-| Marginal, último año | 1,11 | Δventas 85.441,0 / Δcapital 77.008,0 millones (Jan '25 → Jan '26) |
-| Marginal, últimos tres años | 1,49 | Δventas 188.964,0 / Δcapital 127.161,0 millones (Jan '23 → Jan '26) |
+| Empresa hoy | 2,89 | ventas LTM 302.970,0 / capital invertido 104.770,5 millones; sin los impuestos diferidos activos y, en los cierres anuales, sin los títulos de deuda y las inversiones en acciones que el importador dejó dentro de otros activos (10-K y 10-Q) |
+| Marginal, último año | 1,88 | Δventas 85.441,0 / Δcapital 45.548,0 millones (Jan '25 → Jan '26) |
+| Marginal, últimos tres años | 3,38 | Δventas 188.964,0 / Δcapital 55.951,0 millones (Jan '23 → Jan '26) |
 | Sector (Damodaran, enero de 2026) | 1,21 | Semiconductor |
-| Usado en la hoja | 2,92 / 2,44 | años 1-5 / 6-10; rinde ~142% / ~119% sobre el capital nuevo (ROIC actual 141,9%) |
+| Usado en la hoja | 2,92 / 2,44 | años 1-5 / 6-10; rinde ~142% / ~119% sobre el capital nuevo (ROIC actual 158,4%) |
 
 **Arrendamientos (criterio Damodaran).** Los arrendamientos operativos son deuda: su valor presente (US$5.225 millones, compromisos del 10-Q al 2026-07-26) se suma a la deuda y al peso de la deuda del WACC, y el alquiler deja de ser gasto operativo: el EBIT suma el gasto de arrendamiento y resta la depreciación del activo arrendado (US$156 millones, +0,05 pp de margen). Por eso los márgenes del modelo y de las historias están en base ajustada (el margen reportado del texto más ese ajuste), y el ventas/capital incluye el capital arrendado (cada dólar de ventas exige además 0,02 dólares de activo arrendado). Fuente: Damodaran, *Leases, Debt and Value* y *Dealing with Operating Leases in Valuation*.
 
@@ -109,22 +109,22 @@ Sensibilidad del DCF Base (US$200,23; cada fila es un DCF completo con un solo s
 
 | Enfoque | Beta | Costo del patrimonio | WACC inicial | DCF Base por acción |
 |---|---:|---:|---:|---:|
-| Hoja (regresión o la cargada en el libro) | 1,51 | 12,2% | 12,1% | US$311,12 |
-| Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 12,2% | 12,1% | US$311,14 |
+| Hoja (regresión o la cargada en el libro) | 1,51 | 12,2% | 12,1% | US$200,22 |
+| Bottom-up del sector (Semiconductor, reapalancada) | 1,51 | 12,2% | 12,1% | US$200,24 |
 
 
 ### Ventaja competitiva y ROIC terminal: comprobación
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja durable | 140,8% | 27,2% | 9,4% | 27,2% | US$200,23 | US$211,94 |
+| Ventaja durable | 140,8% | 27,2% | 9,4% | 27,2% | US$200,22 | US$142,56 |
 
 Fuentes de ventaja: Ecosistema CUDA (costos de cambio) y escala en cómputo acelerado. Evidencia: ROIC 13-111%, siempre por encima del costo de capital. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
 
 ### De dónde sale el cálculo: de la historia al valor por acción
 
-El valor intrínseco principal es el DCF Base: US$200,23 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$182,13. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
+El valor intrínseco principal es el DCF Base: US$200,22 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$182,12. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
 
 
 #### 1. Datos de partida y origen de los supuestos
@@ -161,68 +161,68 @@ En perpetuidad: reinversión terminal = NOPAT₁₁ × g / ROIC terminal; valor 
 
 Cada historia es un DCF completo. Estas tablas muestran, año por año, lo que la hoja calcula en los bloques de 'Valuation output': ingresos, crecimiento, margen operativo, NOPAT, reinversión, flujo libre (FCFF), WACC y su valor presente. Importes en millones; la fila «Terminal» es el primer año de la perpetuidad (su valor terminal se descuenta con el factor del año 10).
 
-**Base · Ciclo de IA largo que desacelera con la escala** — probabilidad 40%; valor terminal 8.829.982 (VP 3.029.800); DCF US$200,23 por acción.
+**Base · Ciclo de IA largo que desacelera con la escala** — probabilidad 40%; valor terminal 8.829.982 (VP 3.029.663); DCF US$200,22 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 444.467 | 46,7% | 60,1% | 224.070 | 29.323 | 194.747 | 12,1% | 173.704 |
-| 2 | 530.064 | 19,3% | 59,3% | 263.663 | 17.854 | 245.809 | 12,1% | 195.558 |
-| 3 | 582.181 | 9,8% | 58,9% | 287.631 | 15.738 | 271.894 | 12,1% | 192.937 |
-| 4 | 628.121 | 7,9% | 58,5% | 308.219 | 12.911 | 295.308 | 12,1% | 186.910 |
-| 5 | 665.808 | 6,0% | 58,1% | 324.476 | 13.361 | 311.115 | 12,1% | 175.637 |
-| 6 | 704.811 | 5,9% | 58,1% | 343.525 | 16.487 | 327.038 | 11,6% | 165.484 |
-| 7 | 745.098 | 5,7% | 58,1% | 363.204 | 16.996 | 346.208 | 11,0% | 157.795 |
-| 8 | 786.629 | 5,6% | 58,1% | 383.495 | 17.486 | 366.008 | 10,5% | 151.003 |
-| 9 | 829.359 | 5,4% | 58,1% | 404.374 | 17.954 | 386.420 | 9,9% | 145.028 |
-| 10 | 873.232 | 5,3% | 58,1% | 425.817 | 18.904 | 406.912 | 9,4% | 139.622 |
+| 1 | 444.467 | 46,7% | 60,1% | 224.070 | 29.323 | 194.747 | 12,1% | 173.703 |
+| 2 | 530.064 | 19,3% | 59,3% | 263.663 | 17.854 | 245.809 | 12,1% | 195.556 |
+| 3 | 582.181 | 9,8% | 58,9% | 287.631 | 15.738 | 271.894 | 12,1% | 192.934 |
+| 4 | 628.121 | 7,9% | 58,5% | 308.219 | 12.911 | 295.308 | 12,1% | 186.905 |
+| 5 | 665.808 | 6,0% | 58,1% | 324.476 | 13.361 | 311.115 | 12,1% | 175.632 |
+| 6 | 704.811 | 5,9% | 58,1% | 343.525 | 16.487 | 327.038 | 11,6% | 165.478 |
+| 7 | 745.098 | 5,7% | 58,1% | 363.204 | 16.996 | 346.208 | 11,0% | 157.788 |
+| 8 | 786.629 | 5,6% | 58,1% | 383.495 | 17.486 | 366.008 | 10,5% | 150.997 |
+| 9 | 829.359 | 5,4% | 58,1% | 404.374 | 17.954 | 386.420 | 9,9% | 145.021 |
+| 10 | 873.232 | 5,3% | 58,1% | 425.817 | 18.904 | 406.912 | 9,4% | 139.616 |
 | Terminal | 919.426 | 5,3% | 58,1% | 448.342 | 87.196 | 361.146 | 9,4% | — |
 
-**Conservadora · Ciclo de semiconductores: el capex se corrige** — probabilidad 30%; valor terminal 5.034.214 (VP 1.727.372); DCF US$120,35 por acción.
+**Conservadora · Ciclo de semiconductores: el capex se corrige** — probabilidad 30%; valor terminal 5.034.214 (VP 1.727.294); DCF US$120,35 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 401.518 | 32,5% | 60,1% | 202.418 | -12.408 | 214.826 | 12,1% | 191.614 |
-| 2 | 365.299 | −9,0% | 56,1% | 171.893 | 472 | 171.421 | 12,1% | 136.377 |
-| 3 | 366.676 | 0,4% | 54,1% | 166.384 | 9.752 | 156.632 | 12,1% | 111.147 |
-| 4 | 395.143 | 7,8% | 52,1% | 172.666 | 10.517 | 162.149 | 12,1% | 102.629 |
-| 5 | 425.844 | 7,8% | 50,1% | 178.932 | 10.611 | 168.321 | 12,1% | 95.024 |
-| 6 | 456.818 | 7,3% | 50,1% | 191.970 | 12.671 | 179.299 | 11,6% | 90.727 |
-| 7 | 487.780 | 6,8% | 50,1% | 205.005 | 12.539 | 192.466 | 11,0% | 87.722 |
-| 8 | 518.422 | 6,3% | 50,1% | 217.909 | 12.275 | 205.634 | 10,5% | 84.838 |
-| 9 | 548.417 | 5,8% | 50,1% | 230.545 | 11.872 | 218.673 | 9,9% | 82.070 |
-| 10 | 577.428 | 5,3% | 50,1% | 242.770 | 12.500 | 230.269 | 9,4% | 79.011 |
+| 1 | 401.518 | 32,5% | 60,1% | 202.418 | -12.408 | 214.826 | 12,1% | 191.612 |
+| 2 | 365.299 | −9,0% | 56,1% | 171.893 | 472 | 171.421 | 12,1% | 136.376 |
+| 3 | 366.676 | 0,4% | 54,1% | 166.384 | 9.752 | 156.632 | 12,1% | 111.145 |
+| 4 | 395.143 | 7,8% | 52,1% | 172.666 | 10.517 | 162.149 | 12,1% | 102.627 |
+| 5 | 425.844 | 7,8% | 50,1% | 178.932 | 10.611 | 168.321 | 12,1% | 95.021 |
+| 6 | 456.818 | 7,3% | 50,1% | 191.970 | 12.671 | 179.299 | 11,6% | 90.724 |
+| 7 | 487.780 | 6,8% | 50,1% | 205.005 | 12.539 | 192.466 | 11,0% | 87.718 |
+| 8 | 518.422 | 6,3% | 50,1% | 217.909 | 12.275 | 205.634 | 10,5% | 84.834 |
+| 9 | 548.417 | 5,8% | 50,1% | 230.545 | 11.872 | 218.673 | 9,9% | 82.067 |
+| 10 | 577.428 | 5,3% | 50,1% | 242.770 | 12.500 | 230.269 | 9,4% | 79.008 |
 | Terminal | 607.974 | 5,3% | 50,1% | 255.612 | 49.713 | 205.899 | 9,4% | — |
 
-**Disrupción · Deterioro de los fundamentales: Chips propios de los clientes y corrección fuerte** — probabilidad 10%; valor terminal 1.327.553 (VP 455.519); DCF US$52,51 por acción.
+**Disrupción · Deterioro de los fundamentales: Chips propios de los clientes y corrección fuerte** — probabilidad 10%; valor terminal 1.327.553 (VP 455.498); DCF US$52,51 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 372.470 | 22,9% | 60,1% | 187.774 | -29.761 | 217.535 | 12,1% | 194.030 |
-| 2 | 285.595 | −23,3% | 52,1% | 124.797 | -8.928 | 133.725 | 12,1% | 106.388 |
-| 3 | 259.532 | −9,1% | 48,1% | 104.693 | 4.018 | 100.676 | 12,1% | 71.440 |
-| 4 | 271.261 | 4,5% | 44,1% | 100.316 | 4.219 | 96.097 | 12,1% | 60.823 |
-| 5 | 283.575 | 4,5% | 40,1% | 95.347 | 4.410 | 90.937 | 12,1% | 51.338 |
-| 6 | 296.449 | 4,5% | 40,1% | 99.688 | 5.507 | 94.180 | 11,6% | 47.656 |
-| 7 | 309.907 | 4,5% | 40,1% | 104.225 | 5.757 | 98.468 | 11,0% | 44.880 |
-| 8 | 323.976 | 4,5% | 40,1% | 108.970 | 6.019 | 102.951 | 10,5% | 42.474 |
-| 9 | 338.683 | 4,5% | 40,1% | 113.931 | 6.292 | 107.638 | 9,9% | 40.398 |
-| 10 | 354.059 | 4,5% | 40,1% | 119.117 | 6.578 | 112.539 | 9,4% | 38.615 |
+| 1 | 372.470 | 22,9% | 60,1% | 187.774 | -29.761 | 217.535 | 12,1% | 194.029 |
+| 2 | 285.595 | −23,3% | 52,1% | 124.797 | -8.928 | 133.725 | 12,1% | 106.386 |
+| 3 | 259.532 | −9,1% | 48,1% | 104.693 | 4.018 | 100.676 | 12,1% | 71.439 |
+| 4 | 271.261 | 4,5% | 44,1% | 100.316 | 4.219 | 96.097 | 12,1% | 60.821 |
+| 5 | 283.575 | 4,5% | 40,1% | 95.347 | 4.410 | 90.937 | 12,1% | 51.336 |
+| 6 | 296.449 | 4,5% | 40,1% | 99.688 | 5.507 | 94.180 | 11,6% | 47.654 |
+| 7 | 309.907 | 4,5% | 40,1% | 104.225 | 5.757 | 98.468 | 11,0% | 44.878 |
+| 8 | 323.976 | 4,5% | 40,1% | 108.970 | 6.019 | 102.951 | 10,5% | 42.473 |
+| 9 | 338.683 | 4,5% | 40,1% | 113.931 | 6.292 | 107.638 | 9,9% | 40.396 |
+| 10 | 354.059 | 4,5% | 40,1% | 119.117 | 6.578 | 112.539 | 9,4% | 38.613 |
 | Terminal | 370.132 | 4,5% | 40,1% | 124.524 | 60.267 | 64.257 | 9,4% | — |
 
-**Optimista · La IA es infraestructura permanente** — probabilidad 20%; valor terminal 14.289.348 (VP 4.903.053); DCF US$303,41 por acción.
+**Optimista · La IA es infraestructura permanente** — probabilidad 20%; valor terminal 14.289.348 (VP 4.902.831); DCF US$303,40 por acción.
 
 | Año | Ingresos | Crecimiento | Margen | NOPAT | Reinversión | FCFF | WACC | VP del FCFF |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 472.766 | 56,0% | 60,1% | 238.337 | 46.862 | 191.474 | 12,1% | 170.785 |
-| 2 | 609.562 | 28,9% | 60,1% | 307.300 | 40.691 | 266.609 | 12,1% | 212.106 |
-| 3 | 728.343 | 19,5% | 60,1% | 367.181 | 36.836 | 330.345 | 12,1% | 234.415 |
-| 4 | 835.871 | 14,8% | 60,1% | 421.390 | 33.842 | 387.548 | 12,1% | 245.291 |
-| 5 | 934.660 | 11,8% | 60,1% | 471.192 | 33.661 | 437.531 | 12,1% | 247.004 |
-| 6 | 1.032.920 | 10,5% | 60,1% | 520.790 | 38.919 | 481.871 | 11,6% | 243.831 |
-| 7 | 1.128.022 | 9,2% | 60,1% | 568.808 | 36.475 | 532.333 | 11,0% | 242.627 |
-| 8 | 1.217.153 | 7,9% | 60,1% | 613.825 | 32.853 | 580.972 | 10,5% | 239.691 |
-| 9 | 1.297.433 | 6,6% | 60,1% | 654.389 | 28.087 | 626.302 | 9,9% | 235.058 |
-| 10 | 1.366.067 | 5,3% | 60,1% | 689.089 | 29.573 | 659.516 | 9,4% | 226.297 |
+| 1 | 472.766 | 56,0% | 60,1% | 238.337 | 46.862 | 191.474 | 12,1% | 170.784 |
+| 2 | 609.562 | 28,9% | 60,1% | 307.300 | 40.691 | 266.609 | 12,1% | 212.104 |
+| 3 | 728.343 | 19,5% | 60,1% | 367.181 | 36.836 | 330.345 | 12,1% | 234.410 |
+| 4 | 835.871 | 14,8% | 60,1% | 421.390 | 33.842 | 387.548 | 12,1% | 245.285 |
+| 5 | 934.660 | 11,8% | 60,1% | 471.192 | 33.661 | 437.531 | 12,1% | 246.996 |
+| 6 | 1.032.920 | 10,5% | 60,1% | 520.790 | 38.919 | 481.871 | 11,6% | 243.822 |
+| 7 | 1.128.022 | 9,2% | 60,1% | 568.808 | 36.475 | 532.333 | 11,0% | 242.617 |
+| 8 | 1.217.153 | 7,9% | 60,1% | 613.825 | 32.853 | 580.972 | 10,5% | 239.680 |
+| 9 | 1.297.433 | 6,6% | 60,1% | 654.389 | 28.087 | 626.302 | 9,9% | 235.048 |
+| 10 | 1.366.067 | 5,3% | 60,1% | 689.089 | 29.573 | 659.516 | 9,4% | 226.287 |
 | Terminal | 1.438.332 | 5,3% | 60,1% | 725.541 | 141.107 | 584.434 | 9,4% | — |
 
 
@@ -232,35 +232,35 @@ Importes en US$ millones salvo el DCF por acción. Se calcula con precisión com
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 1.683.679,52 | 3.029.800,05 | 4.713.479,57 | 4.825.493,11 | 200,23 |
-| Conservadora | 1.061.160,14 | 1.727.371,73 | 2.788.531,87 | 2.900.545,41 | 120,35 |
-| Disrupción | 698.041,35 | 455.518,58 | 1.153.559,93 | 1.265.573,47 | 52,51 |
-| Optimista | 2.297.105,49 | 4.903.052,60 | 7.200.158,09 | 7.312.171,63 | 303,41 |
+| Base | 1.683.629,61 | 3.029.663,40 | 4.713.293,01 | 4.825.306,55 | 200,22 |
+| Conservadora | 1.061.131,35 | 1.727.293,83 | 2.788.425,18 | 2.900.438,71 | 120,35 |
+| Disrupción | 698.025,10 | 455.498,03 | 1.153.523,13 | 1.265.536,67 | 52,51 |
+| Optimista | 2.297.032,52 | 4.902.831,46 | 7.199.863,99 | 7.311.877,53 | 303,40 |
 
-Ejemplo Base: (1.683.679,52 + 3.029.800,05 + 99.369 + 51.157 − 38.512) / 24.100,0 = US$200,23 por acción. El terminal representa 64,3% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: (1.683.629,61 + 3.029.663,40 + 99.369 + 51.157 − 38.512) / 24.100,0 = US$200,22 por acción. El terminal representa 64,3% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 
 #### 6. DCF esperado (complemento), probabilidades y margen de seguridad
 
 Las probabilidades 40% / 30% / 10% / 20% son juicio del analista (ver «Historias cuantificadas»): no se estimaron con un modelo estadístico ni se deducen de las tasas base. Deben leerse como pesos discutibles y revisables, no como precisión empírica.
 
-DCF esperado = 0,40 × 200,227930 + 0,30 × 120,354581 + 0,10 × 52,513422 + 0,20 × 303,409611 = US$182,130811 ≈ US$182,13. Los aportes son US$80,09 + US$36,11 + US$5,25 + US$60,68 por acción.
+DCF esperado = 0,40 × 200,220189 + 0,30 × 120,350154 + 0,10 × 52,511895 + 0,20 × 303,397408 = US$182,123793 ≈ US$182,12. Los aportes son US$80,09 + US$36,11 + US$5,25 + US$60,68 por acción.
 
-Precio con MOS = DCF esperado × (1 − 35%) = 182,130811 × 0,65 = US$118,385027 ≈ US$118,39. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
+Precio con MOS = DCF esperado × (1 − 35%) = 182,123793 × 0,65 = US$118,380465 ≈ US$118,38. El 35% es la política de margen de seguridad del analista para este tipo de empresa; no lo estima el DCF. Se aplica al esperado, no al DCF Base: la jerarquía de presentación (Base primero) no cambia esa fórmula.
 
 Trazabilidad: la hoja calcula cada historia en 'Valuation output' con la estructura de Damodaran: Base en las filas 2–42 (valor por acción B35), Conservadora 53–93 (B86), Optimista 104–144 (B137) y Disrupción 157–197 (B190). La pestaña «Escenarios e historias» guarda los supuestos de cada historia y resume los resultados: A5:J8; esperado H10; Base H11; rango H12:H13; MOS H14. Las fórmulas de la hoja y el motor del Modelo JMR dan los mismos cuatro resultados; esa concordancia verifica la aritmética, no la validez económica de los supuestos.
 
 
 ### Las cuatro tesis: Base, Conservadora, Disrupción y Optimista
 
-La tesis Base es la trayectoria central defendida y su DCF, US$200,23, es el valor intrínseco principal. El DCF esperado de US$182,13 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
+La tesis Base es la trayectoria central defendida y su DCF, US$200,22, es el valor intrínseco principal. El DCF esperado de US$182,12 combina las cuatro tesis con sus probabilidades y se presenta como complemento. Disrupción describe un deterioro estructural del negocio; no presupone IA ni quiebra.
 
 
 #### Base: Ciclo de IA largo que desacelera con la escala
 
 **Qué plantea.** Es un ciclo de IA largo que desacelera con la escala.
 
-**Traducción al modelo.** Data Center crece 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz crece 10%, 8%, 7%, 6%, 6%. El crecimiento anual compuesto de cinco años es 17,1%; el margen operativo objetivo es 58,1%. El ROIC terminal es 27,2%. El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 40%; DCF: US$200,23 por acción.
+**Traducción al modelo.** Data Center crece 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz crece 10%, 8%, 7%, 6%, 6%. El crecimiento anual compuesto de cinco años es 17,1%; el margen operativo objetivo es 58,1%. El ROIC terminal es 27,2%. El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 40%; DCF: US$200,22 por acción.
 
 **Cómo contrastarla.** Se sostiene mientras los indicadores sigan cerca de sus niveles de hoy (data Center (interanual): +117% (2T FY27); capex de los hiperescaladores: Récord; margen bruto: ~70-75%). Pierde peso si cruzan cualquiera de los umbrales de la tabla de indicadores.
 
@@ -287,7 +287,7 @@ La tesis Base es la trayectoria central defendida y su DCF, US$200,23, es el val
 
 **Qué plantea.** Trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica).
 
-**Traducción al modelo.** Data Center crece 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz crece 12%, 12%, 10%, 10%, 8%. El crecimiento anual compuesto de cinco años es 25,3%; el margen operativo objetivo es 60,1%. El ROIC terminal es 27,2%. El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 20%; DCF: US$303,41 por acción.
+**Traducción al modelo.** Data Center crece 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz crece 12%, 12%, 10%, 10%, 8%. El crecimiento anual compuesto de cinco años es 25,3%; el margen operativo objetivo es 60,1%. El ROIC terminal es 27,2%. El crecimiento terminal es 5,29%, el de la hoja. Probabilidad: 20%; DCF: US$303,40 por acción.
 
 **Cómo contrastarla.** La confirmarían: data Center (interanual): ≥ +30% en FY28; capex de los hiperescaladores: sigue creciendo en 2027-2028; margen bruto: ≥ 70%; participación de chips propios y AMD en inferencia: NVIDIA ≥ 70% del mercado abierto.
 
@@ -298,11 +298,11 @@ La tesis Base es la trayectoria central defendida y su DCF, US$200,23, es el val
 
 | Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | ROIC después del año 10 | Crecimiento terminal | Valor/acción (beta 1,51) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|
-| **Base · Ciclo de IA largo que desacelera con la escala** | 40% | Data Center: 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz: 10%, 8%, 7%, 6%, 6% | 17,1% | 58,1% | 2,9 | 27,2% | 5,29% | US$200,23 |
+| **Base · Ciclo de IA largo que desacelera con la escala** | 40% | Data Center: 50%, 20%, 10%, 8%, 6%; Gaming, visualización y automotriz: 10%, 8%, 7%, 6%, 6% | 17,1% | 58,1% | 2,9 | 27,2% | 5,29% | US$200,22 |
 | **Conservadora · Ciclo de semiconductores: el capex se corrige** | 30% | Data Center: 35%, -10%, 0%, 8%, 8%; Gaming, visualización y automotriz: 5%, 5%, 5%, 5%, 5% | 7,0% | 50,1% | 2,9 | 27,2% | 5,29% | US$120,35 |
 | **Disrupción · Deterioro de los fundamentales: Chips propios de los clientes y corrección fuerte** | 10% | Data Center: 25%, -25%, -10%, 5%, 5%; Gaming, visualización y automotriz: 0%, 0%, 0%, 0%, 0% | −1,3% | 40,1% | 2,9 | = costo de capital | 4,54% | US$52,51 |
-| **Optimista · La IA es infraestructura permanente** | 20% | Data Center: 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz: 12%, 12%, 10%, 10%, 8% | 25,3% | 60,1% | 2,9 | 27,2% | 5,29% | US$303,41 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$182,13** |
+| **Optimista · La IA es infraestructura permanente** | 20% | Data Center: 60%, 30%, 20%, 15%, 12%; Gaming, visualización y automotriz: 12%, 12%, 10%, 10%, 8% | 25,3% | 60,1% | 2,9 | 27,2% | 5,29% | US$303,40 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  |  | **US$182,12** |
 
 Base (40%) es un ciclo de IA largo que desacelera con la escala. Conservadora (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. Disrupción (10%) combina corrección fuerte y pérdida de participación frente a chips propios. Optimista (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital. **Son probabilidades del analista, no datos: asigna las tuyas antes de leer el precio.**
 
@@ -312,11 +312,11 @@ Cada celda ejecuta un DCF completo, sin reescalar el resultado. Aquí el crecimi
 
 | Crecimiento \ Margen | 54,1% | 56,1% | 58,1% | 60,1% | 62,1% |
 |---|---:|---:|---:|---:|---:|
-| 13,9% | 179,55 | 185,67 | 191,80 | 197,93 | 204,06 |
-| 15,9% | 199,42 | 206,30 | 213,18 | 220,06 | 226,95 |
-| 17,9% | 221,39 | 229,10 | 236,82 | 244,54 | 252,26 |
-| 19,9% | 245,65 | 254,29 | 262,93 | 271,57 | 280,22 |
-| 21,9% | 272,41 | 282,07 | 291,74 | 301,40 | 311,07 |
+| 13,9% | 179,54 | 185,67 | 191,80 | 197,92 | 204,05 |
+| 15,9% | 199,41 | 206,29 | 213,17 | 220,05 | 226,94 |
+| 17,9% | 221,38 | 229,09 | 236,81 | 244,53 | 252,25 |
+| 19,9% | 245,64 | 254,28 | 262,92 | 271,56 | 280,21 |
+| 21,9% | 272,40 | 282,06 | 291,72 | 301,39 | 311,05 |
 
 
 ### Pre-mortem
@@ -352,11 +352,10 @@ DCF inverso: crecimiento anual de ingresos en los años 1-5 que justifica ese pr
 |  | Margen 50% | Margen 58% | Margen 62% |
 |---|---:|---:|---:|
 | Beta 1,51 | 20,4% (2% de las empresas) | 17,7% (3% de las empresas) | 16,5% (5% de las empresas) |
-| Beta 1,51 | 20,4% (2% de las empresas) | 17,7% (3% de las empresas) | 16,5% (5% de las empresas) |
 
-Frente al DCF Base (US$200,23), el valor intrínseco principal, el precio está por encima en 17%.
+Frente al DCF Base (US$200,22), el valor intrínseco principal, el precio está por encima en 17%.
 
-Frente al DCF esperado de las historias (US$182,13), el complemento, el precio está por encima en 28%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
+Frente al DCF esperado de las historias (US$182,12), el complemento, el precio está por encima en 28%. La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.
 
 
 ### Registro de decisión
@@ -366,9 +365,9 @@ Frente al DCF esperado de las historias (US$182,13), el complemento, el precio e
 | Fecha | 2026-09-30 |  |
 | Historia en una frase | Proveedor dominante de la infraestructura de IA en la cima de un ciclo de inversión |  |
 | Probabilidades | Base 40% / Conservadora 30% / Disrupción 10% / Optimista 20% |  |
-| DCF Base hoy (valor intrínseco principal) | US$200,23 |  |
-| DCF esperado por probabilidades (complemento) | US$182,13 |  |
-| Precio con MOS sobre el DCF esperado | US$118,39 (MOS 35%) |  |
+| DCF Base hoy (valor intrínseco principal) | US$200,22 |  |
+| DCF esperado por probabilidades (complemento) | US$182,12 |  |
+| Precio con MOS sobre el DCF esperado | US$118,38 (MOS 35%) |  |
 | Rango (historia más débil a más fuerte) | US$52,51 a US$303,44 |  |
 | Confianza | Baja: el valor depende de la duración del ciclo, que nadie puede prever |  |
 | Qué cambiaría la opinión | Capex de los hiperescaladores y participación de NVIDIA en inferencia |  |

@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "3,0x: diseño fabless de chips (TSMC fabrica), relativamente liviano en capital fijo propio frente a un fabricante integrado.",
+  "after": "Ventas/capital 2,92 en los años 1-5: el de hoy sin impuestos diferidos ni inversiones financieras (2,89); diseño fabless. 2,44 en los años 6-10: algo menor: más capital en empaquetado, redes y acuerdos de suministro.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "ROIC muy por encima del costo de capital: el negocio de Data Center genera retornos excepcionales sobre el capital operativo mientras dure el poder de fijación de precios de CUDA.",
+  "after": "Ventaja durable: ROIC después del año 10 de 27,2% (ROIC actual 140,8%; industria 27,2%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "13,4%: beta observado ~1,90 (Directo, muy por encima del beta de industria 'Semiconductor' de Damodaran, que promedia fabricantes mucho más diversificados y de menor crecimiento) x ERP de mercado maduro de EE.UU., calificación real Aa1/AA, deuda financiera neta negativa (posición de caja neta).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,51 (bottom-up de Semiconductor en EE.UU., sin deuda relevante) × ERP 4,55% = Ke 12,2%; Kd después de impuestos 5,2%; peso del patrimonio 99%; WACC inicial 12,1% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 3,
+  "after": 2.9191,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Diseño fabless de chips (TSMC fabrica): relativamente liviano en capital fijo propio por dólar de ingreso incremental.",
+  "after": "2,92x: el de hoy sin impuestos diferidos ni inversiones financieras (2,89); diseño fabless.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 2.5,
+  "after": 2.4436,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Años 6-10: algo más de intensidad de capital por inversión creciente en capacidad de empaquetado, redes propias y acuerdos de suministro estratégicos.",
+  "after": "2,44x: algo menor: más capital en empaquetado, redes y acuerdos de suministro.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta observado ~1,90 (Direct Input; la canasta de industria 'Semiconductor' de Damodaran promedia fabricantes mucho más diversificados y de menor crecimiento, subestimando el riesgo idiosincrático específico de Nvidia) x ERP de mercado maduro de EE.UU. Costo de deuda con calificación real Aa1/AA (no el A1/A+ genérico de la plantilla), vencimiento promedio 10 años. Posición de caja neta positiva.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,51 (bottom-up de Semiconductor en EE.UU., sin deuda relevante) × ERP 4,55% = Ke 12,2%; Kd después de impuestos 5,2%; peso del patrimonio 99%; WACC inicial 12,1% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "Negocio de software asset-light: capex LTM inferior a 1% de ventas, con una eficiencia moderada por SBC y compromisos de infraestructura cloud.",
+  "after": "Ventas/capital 0,62 en los años 1-5: carga el capex de IA (marginal 0,48-0,53). 0,94 en los años 6-10: la capacidad madura sin volver a un modelo liviano.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "Ventaja durable: ROIC después del año 10 de 20,6% (ROIC actual 25,4%; industria 20,6%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,27 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,96% = Ke 11,6%; Kd después de impuestos 4,1%; peso del patrimonio 98%; WACC inicial 11,4% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "0,65x",
+  "after": 0.6246,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "CapEx FY26 de US$115.948M sobre ingresos de US$331.839M; inversión de IA intensiva en capital.",
+  "after": "0,62x: carga el capex de IA (marginal 0,48-0,53).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "1,00x",
+  "after": 0.9411,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Mejora de eficiencia al madurar la capacidad instalada, sin volver a un supuesto asset-light.",
+  "after": "0,94x: la capacidad madura sin volver a un modelo liviano.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
+ }
+}

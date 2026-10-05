@@ -1,0 +1,12 @@
+{
+ "Input sheet!D1": {
+  "before": "=GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\")",
+  "after": 68.51,
+  "reason": "Precio y fecha de corte (UBER)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (UBER)"
+ }
+}

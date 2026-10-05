@@ -1,0 +1,17 @@
+{
+ "Input sheet!D1": {
+  "before": "=GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\")",
+  "after": 187.05,
+  "reason": "Precio y fecha de corte (PLTR)"
+ },
+ "Input sheet!B4": {
+  "before": 46281,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (PLTR)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 172.03,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (PLTR)"
+ }
+}

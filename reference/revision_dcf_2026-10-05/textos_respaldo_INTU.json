@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "2,5x: software, poco capital operativo por dólar incremental (el capital invertido contable está inflado por el goodwill de adquisiciones).",
+  "after": "Ventas/capital 1,54 en los años 1-5: el del sector (1,54): la Base es orgánica y el de hoy (1,08) carga el crédito mercantil de Credit Karma y Mailchimp. Igual en los años 6-10.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "ROIC operativo muy alto en los segmentos orgánicos; el ROIC sobre capital total incluye ~US$18.600M de goodwill/intangibles.",
+  "after": "Ventaja durable: ROIC después del año 10 de 22,6% (ROIC actual 22,6%; industria 29,3%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Beta observado 1,2 (Direct Input) x ERP de mercado maduro; deuda con calificación real A3/A-; deuda neta ~US$1.100M.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,34 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,09% = Ke 10,8%; Kd después de impuestos 4,8%; peso del patrimonio 91%; WACC inicial 10,2% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 2.5,
+  "after": 1.54,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "2,5x: negocio de software, bajo capex (US$175M en FY2026) y capital de trabajo negativo.",
+  "after": "1,54x: el del sector (1,54): la Base es orgánica y el de hoy (1,08) carga el crédito mercantil de Credit Karma y Mailchimp.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 2,
+  "after": 1.54,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "2,0x: algo más de inversión en infraestructura de IA y adquisiciones selectivas.",
+  "after": "1,54x: el del sector (1,54): la Base es orgánica y el de hoy (1,08) carga el crédito mercantil de Credit Karma y Mailchimp.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta observado 1,2 (Direct Input), ERP de mercado maduro de EE.UU., deuda A3/A- a 7 años; deuda financiera US$7.669M + arrendamientos, caja US$7.200M.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,34 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,09% = Ke 10,8%; Kd después de impuestos 4,8%; peso del patrimonio 91%; WACC inicial 10,2% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (INTU, 5-oct-2026)"
+ }
+}

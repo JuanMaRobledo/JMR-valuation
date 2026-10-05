@@ -29,7 +29,8 @@
    0.3698
   ],
   "con_id": true,
-  "vida_id": 3
+  "vida_id": 3,
+  "ajuste": null
  },
  "AFYA": {
   "industria": "Education",
@@ -53,15 +54,16 @@
   },
   "sector": 1.63,
   "usada": [
-   0.75,
-   0.75
+   1.5,
+   1.2
   ],
   "rendimiento_capital_nuevo": [
-   0.1633,
-   0.1633
+   0.3267,
+   0.2614
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "BSX": {
   "industria": "Healthcare Products",
@@ -85,15 +87,16 @@
   },
   "sector": 1.48,
   "usada": [
-   0.86,
-   0.86
+   1.2595,
+   1.1654
   ],
   "rendimiento_capital_nuevo": [
-   0.1689,
-   0.1689
+   0.2474,
+   0.2289
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "CELH": {
   "industria": "Beverage (Soft)",
@@ -125,7 +128,8 @@
    0.2412
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "CMG": {
   "industria": "Restaurant/Dining",
@@ -157,7 +161,8 @@
    0.209
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "DPZ": {
   "industria": "Restaurant/Dining",
@@ -181,15 +186,16 @@
   },
   "sector": 1.51,
   "usada": [
-   2.6415,
-   2.6415
+   5.4,
+   3.4
   ],
   "rendimiento_capital_nuevo": [
-   0.4127,
-   0.4127
+   0.8436,
+   0.5312
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "DUOL": {
   "industria": "Software (Internet)",
@@ -245,15 +251,16 @@
   },
   "sector": 5.19,
   "usada": [
-   2.65,
-   2.65
+   3.2705,
+   2.8298
   ],
   "rendimiento_capital_nuevo": [
-   0.2631,
-   0.2631
+   0.3248,
+   0.281
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "GOOG": {
   "industria": "Software (Internet)",
@@ -278,14 +285,15 @@
   "sector": 1.35,
   "usada": [
    1.1537,
-   1.12
+   1.4283
   ],
   "rendimiento_capital_nuevo": [
    0.3423,
-   0.3323
+   0.4238
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "INTU": {
   "industria": "Software (System & Application)",
@@ -309,15 +317,16 @@
   },
   "sector": 1.54,
   "usada": [
-   1.18,
-   1.18
+   1.54,
+   1.54
   ],
   "rendimiento_capital_nuevo": [
-   0.2925,
-   0.2925
+   0.3817,
+   0.3817
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "LULU": {
   "industria": "Apparel",
@@ -349,7 +358,8 @@
    0.2528
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "MSFT": {
   "industria": "Software (System & Application)",
@@ -374,14 +384,15 @@
   "sector": 1.54,
   "usada": [
    0.6246,
-   0.7
+   0.9411
   ],
   "rendimiento_capital_nuevo": [
    0.228,
-   0.2555
+   0.3435
   ],
   "con_id": true,
-  "vida_id": 3
+  "vida_id": 3,
+  "ajuste": null
  },
  "NKE": {
   "industria": "Shoe",
@@ -405,35 +416,36 @@
   },
   "sector": 2.62,
   "usada": [
-   2.1,
-   2.1
+   2.6,
+   2.6
   ],
   "rendimiento_capital_nuevo": [
-   0.1827,
-   0.1827
+   0.2262,
+   0.2262
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "NVDA": {
   "industria": "Semiconductor",
-  "actual": 2.59,
+  "actual": 2.89,
   "ventas_ltm": 302970,
-  "capital_ltm": 116970.46069264914,
-  "roic_actual": 1.4192004160206801,
+  "capital_ltm": 104770.46069264914,
+  "roic_actual": 1.5844592586466064,
   "marginal_ultimo": {
    "desde": "Jan '25",
    "hasta": "Jan '26",
    "dventas": 85441.0,
-   "dcapital": 77008.0,
-   "ratio": 1.11
+   "dcapital": 45548.0,
+   "ratio": 1.88
   },
   "marginal_3a": {
    "desde": "Jan '23",
    "hasta": "Jan '26",
    "dventas": 188964.0,
-   "dcapital": 127161.0,
-   "ratio": 1.49
+   "dcapital": 55951.0,
+   "ratio": 3.38
   },
   "sector": 1.21,
   "usada": [
@@ -445,7 +457,8 @@
    1.1916
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": "sin los impuestos diferidos activos y, en los cierres anuales, sin los títulos de deuda y las inversiones en acciones que el importador dejó dentro de otros activos (10-K y 10-Q)"
  },
  "NVO": {
   "industria": "Drugs (Pharmaceutical)",
@@ -470,14 +483,15 @@
   "sector": 1.11,
   "usada": [
    0.57,
-   0.76
+   1.1
   ],
   "rendimiento_capital_nuevo": [
    0.1778,
-   0.2371
+   0.3432
   ],
   "con_id": true,
-  "vida_id": 10
+  "vida_id": 10,
+  "ajuste": null
  },
  "ONON": {
   "industria": "Shoe",
@@ -509,7 +523,8 @@
    0.2668
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "PLTR": {
   "industria": "Software (System & Application)",
@@ -565,15 +580,16 @@
   },
   "sector": null,
   "usada": [
-   1.42,
-   1.42
+   2.4752,
+   2.4752
   ],
   "rendimiento_capital_nuevo": [
-   0.2095,
-   0.2095
+   0.3651,
+   0.3651
   ],
   "con_id": true,
-  "vida_id": 3
+  "vida_id": 3,
+  "ajuste": null
  },
  "SHAK": {
   "industria": "Restaurant/Dining",
@@ -597,47 +613,49 @@
   },
   "sector": 1.51,
   "usada": [
-   1.51,
-   1.51
+   1.9,
+   1.7
   ],
   "rendimiento_capital_nuevo": [
-   0.1078,
-   0.1078
+   0.1356,
+   0.1214
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  },
  "UBER": {
   "industria": "Transportation",
-  "actual": 1.75,
+  "actual": 2.58,
   "ventas_ltm": 55227,
-  "capital_ltm": 31546.339969919623,
-  "roic_actual": 0.17731917048212834,
+  "capital_ltm": 21384.339969919623,
+  "roic_actual": 0.2615825806679963,
   "marginal_ultimo": {
    "desde": "Dec '24",
    "hasta": "Dec '25",
    "dventas": 8039.0,
-   "dcapital": -4455.7,
+   "dcapital": -473.7,
    "ratio": null
   },
   "marginal_3a": {
    "desde": "Dec '22",
    "hasta": "Dec '25",
    "dventas": 20140.0,
-   "dcapital": 9092.0,
-   "ratio": 2.22
+   "dcapital": 3412.0,
+   "ratio": 5.9
   },
   "sector": 1.98,
   "usada": [
-   1.11,
-   1.11
+   2.2,
+   2
   ],
   "rendimiento_capital_nuevo": [
-   0.1772,
-   0.1772
+   0.3513,
+   0.3193
   ],
   "con_id": true,
-  "vida_id": 3
+  "vida_id": 3,
+  "ajuste": "sin los impuestos diferidos activos (liberación de la reserva de valuación en 2024-2025; 10-K y 10-Q)"
  },
  "ZTS": {
   "industria": "Drugs (Pharmaceutical)",
@@ -661,14 +679,15 @@
   },
   "sector": 1.11,
   "usada": [
-   0.91,
-   0.91
+   1.11,
+   1.11
   ],
   "rendimiento_capital_nuevo": [
-   0.2649,
-   0.2649
+   0.3231,
+   0.3231
   ],
   "con_id": false,
-  "vida_id": 0
+  "vida_id": 0,
+  "ajuste": null
  }
 }

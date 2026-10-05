@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "Sales-to-capital se mantiene alto (4,0x-4,5x) porque Duolingo es un negocio liviano en capital (CapEx/Revenue ~2%) -- una app movil sin datacenters propios; converge al promedio de la industria de software en el largo plazo.",
+  "after": "Ventas/capital 1,79 en los años 1-5: el de Duolingo con I+D capitalizado (1,79): una app liviana en capital. Igual en los años 6-10.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,4% (ROIC actual 36,6%; industria 29,3%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,35 (bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica), reapalancada) × ERP 5,21% = Ke 12,3%; Kd después de impuestos 5,3%; peso del patrimonio 99%; WACC inicial 12,2% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 4,
+  "after": 1.79,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Duolingo es un negocio extremadamente liviano en capital: CapEx/Revenue ronda apenas 2% (vs. ~35% de MSFT en su ciclo de datacenters de IA) -- es una app movil, no requiere infraestructura fisica propia significativa. 4,0x es sustancialmente mas alto que el 1,3x de MSFT, reflejando que cada dolar de crecimiento de Duolingo necesita mucho menos capital reinvertido, consistente con comparables de software por suscripcion sin capex pesado.",
+  "after": "1,79x: el de Duolingo con I+D capitalizado (1,79): una app liviana en capital.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 4.5,
+  "after": 1.79,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Asume una leve mejora adicional de eficiencia de capital en la segunda mitad del horizonte de proyeccion, a medida que la base de usuarios y la infraestructura de producto (incluida la IA conversacional de Duolingo Max) ya esten construidas y escalen sin requerir el mismo nivel de inversion marginal -- direccionalmente razonable, mismo caveat que para MSFT: es el supuesto mas dificil de anclar a un dato historico concreto.",
+  "after": "1,79x: el de Duolingo con I+D capitalizado (1,79): una app liviana en capital.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Igual en los tres escenarios: beta de industria \"Software (Internet)\", sin deuda calificada — costo de deuda directo del 7% dado que el interés real pagado es prácticamente nulo.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,35 (bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica), reapalancada) × ERP 5,21% = Ke 12,3%; Kd después de impuestos 5,3%; peso del patrimonio 99%; WACC inicial 12,2% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
+ }
+}
