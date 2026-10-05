@@ -89,7 +89,7 @@
   "texto": "El margen operativo GAAP de los últimos doce meses es 17,8% (US$1.979 millones), pero incluye US$134,5 millones de devolución de aranceles IEEPA (una vez, en el 2T26) y excluye como gasto normal US$24,8 millones de la disputa por poderes con el fundador Chip Wilson y US$15,2 millones de la transición del CEO; normalizado, es ~17,0% ([lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm), [lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm)). El margen va hacia abajo: fue 23,7% en 2024 y 19,9% en 2025, y la guía de 2026 implica ~13% sin la devolución de aranceles (BPA de US$9,48-9,73 menos US$0,86 de la devolución). En el 2T26, sin la devolución, el margen bruto bajó 360 puntos básicos (aranceles, rebajas y más ocupación por tiendas nuevas) y los gastos de venta y administración subieron a 41,7% de las ventas ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)). Los segmentos siguen siendo muy rentables: en 2025 Américas ganó 32,6% de sus ventas, China continental 40,0% y el resto del mundo 23,0%, antes de US$1.397 millones de costos corporativos."
  },
  "reinversion": {
-  "texto": "lululemon reinvierte en tiendas, centros de distribución y tecnología: el capex fue US$681 millones en 2025 (~6% de las ventas) y abre ~40-45 tiendas por año (825 al 2-ago-2026). No tiene deuda financiera; los arrendamientos (VP de US$1.717 millones con los compromisos del 10-K) son su única deuda. Con capital invertido de ~US$5.100 millones (patrimonio + arrendamientos − caja) rota ~2,2 veces las ventas; se usa 1,8 porque la expansión internacional exige tiendas propias.",
+  "texto": "lululemon reinvierte en tiendas, centros de distribución y tecnología: el capex fue US$681 millones en 2025 (~6% de las ventas) y abre ~40-45 tiendas por año (825 al 2-ago-2026). No tiene deuda financiera; los arrendamientos (VP de US$2.044 millones con los compromisos del 10-Q al 2-ago-2026) son su única deuda. Con capital invertido de ~US$5.450 millones (patrimonio + arrendamientos − caja) rota ~2,0 veces las ventas; se usa 1,8 (el sector Apparel en EE.UU. rota 1,77) porque la expansión internacional exige tiendas propias. Con el margen objetivo, el capital nuevo rinde ~25%, cerca de su ROIC actual (27%).",
   "tabla": {
    "cols": [
     "Concepto",
@@ -127,7 +127,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,03 (desde el 3-oct-2026; antes 1,15). Regla de la cartera (prompt v4, paso 2): bottom-up de Apparel (Damodaran, ene-2026: 0,79 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,16 = 0,88 + 0,15 por moda = 1,03. La de regresión queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
+  "texto": "Beta bottom-up (Damodaran, 5-oct-2026): la desapalancada de Apparel en EE.UU., corregida por caja (0,79, enero de 2026), reapalancada con la D/E de mercado de lululemon (arrendamientos incluidos, ~0,19) da ~0,90. Tabla de EE.UU. porque 70% de las ventas está en Norteamérica. Ya no se suma la prima de 0,15 por moda (antes 1,03): el riesgo de que la marca pierda el favor del consumidor está en las historias Conservadora y Disrupción, y sumarlo a la tasa lo contaría dos veces. La regresión semanal contra el S&P 500 da 1,20 a cinco años y 1,14 a dos, por encima de la bottom-up; Damodaran prefiere la del sector porque su error de estimación es menor."
  },
  "historias": [
   {
@@ -390,11 +390,11 @@
   ],
   [
    "Reinversión: tiendas y tecnología para crecer afuera.",
-   "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10, entre la industria (1,5) y la rotación propia (~2,2). Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+   "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10, entre la industria (1,77 en EE.UU.) y la rotación propia (2,04); el capital nuevo rinde ~25%, cerca del ROIC actual (27%). Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
   ],
   [
-   "Descuento y largo plazo: beta de la propia acción y una ventaja que se desvanece.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 1-oct-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, sin deuda financiera; los arrendamientos pesan ~14%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene 28 años y gana muy por encima de su costo de capital, pero la ventaja se desvanece (comparables de Américas −12%, rebajas, ROIC de la hoja de 52% en 2024 a 27% LTM), así que se usa el punto medio entre el costo de capital terminal y el ROIC de la industria (15,8%, menor que el actual). El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   "Descuento y largo plazo: beta del sector y una ventaja que se desvanece.",
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, sin deuda financiera; los arrendamientos pesan ~14%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene 28 años y gana muy por encima de su costo de capital, pero la ventaja se desvanece (comparables de Américas −12%, rebajas, ROIC de la hoja de 52% en 2024 a 27% LTM), así que se usa el punto medio entre el costo de capital terminal y el ROIC de la industria (15,8%, menor que el actual). El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
   ],
   [
    "Acciones, opciones y caja.",

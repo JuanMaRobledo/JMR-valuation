@@ -47,8 +47,10 @@ REGLA = {
             "La D/E alta (recapitalización con deuda) explica que la beta reapalancada supere a la del sector."),
     "EPAM": ([], None, "El riesgo de la entrega desde Europa del Este va en la prima de mercado ponderada por operaciones, no en la beta."),
     "INTU": ([], None, ""),
-    "LULU": ([("moda", 0.15)], None, ""),
-    "ONON": ([("moda", 0.15)], None, ""),
+    # 5-oct-2026 (scripts/revisar_beta_s2c.py): sin prima por moda, que ya está en las historias; la hoja usa
+    # «Single Business(US)» y reapalanca sola la beta del sector corregida por caja.
+    "LULU": ([], None, ""),
+    "ONON": ([], None, ""),
     "PAGS": ([("empresa pequeña", 0.15)], 0.97,
              "Banco digital: se parte de la beta del patrimonio del sector financiero (0,97), no de la desapalancada; "
              "el riesgo de Brasil va en la prima de mercado."),
