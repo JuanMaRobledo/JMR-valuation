@@ -1,0 +1,17 @@
+{
+ "fecha": "2026-10-05",
+ "fuentes": {
+  "etapas": "Damodaran, The Corporate Life Cycle, láminas 'Measures & Determinants' (pages.stern.nyu.edu/~adamodar/pptfiles/CLC/Ch3.pdf): crecimiento de ventas, margen operativo, reinversión y flujo de caja libre por etapa.",
+  "precio_por_etapa": "Damodaran, 'Pricing across the Life Cycle' (pages.stern.nyu.edu/~adamodar/pdfiles/country/CorpLifeCycleShort2023.pdf, lámina 43): crecimiento joven y alto se valoran por ventas y márgenes (EV/ventas); crecimiento maduro por crecimiento de utilidades (PEG, P/E futuro, pares: empresas de crecimiento del sector); madura estable por estabilidad de utilidades (P/E, EV/EBITDA, pares: otras maduras del sector); declive por valor en libros o de liquidación.",
+  "sector": "Damodaran, 'Choosing the right multiple' (pages.stern.nyu.edu/~adamodar/pdfiles/eqnotes/relchoic.pdf, lámina 104): manufactura cíclica P/E normalizado; empresas de crecimiento PEG; crecimiento joven con pérdidas, múltiplos de ventas; infraestructura EV/EBITDA; REIT P/CFE; servicios financieros P/BV; comercio minorista múltiplos de ventas.",
+  "regla_del_modelo": "Prompt de valoración v4, paso 8: más peso al DCF y a múltiplos de flujo cuando las utilidades son volátiles o negativas; más peso a P/E y EV/EBITDA cuando son estables y maduras."
+ },
+ "mapeo": {
+  "Crecimiento": "Crecimiento alto o transición a crecimiento maduro con utilidades que todavía no llegan a su nivel estable (margen en expansión fuerte o recién positivo): Damodaran las valora por ventas y márgenes; el modelo no tiene EV/ventas, así que pesa más el DCF y el EV/FCFF.",
+  "Software": "Igual que Crecimiento (mismos pesos en la tabla de la hoja); solo cambia la etiqueta.",
+  "Madura": "Crecimiento maduro y madura estable, y también declive mientras haya utilidades: utilidades positivas y estables que se valoran por P/E (futuro) y EV/EBITDA.",
+  "Biotech/Farma": "Farmacéuticas cuyas utilidades dependen de patentes que vencen o de un portafolio en desarrollo: utilidades en cambio, más peso al DCF y al flujo.",
+  "Financiera": "Servicios financieros con balance de banco (Damodaran: P/BV); el modelo pesa P/E y P/FCFE y no usa múltiplos de empresa (EV).",
+  "Hyper-Crecimiento / Pre-Rentable": "Crecimiento joven o alto con pérdidas (Damodaran: múltiplos de ventas); ninguna de la cartera."
+ }
+}

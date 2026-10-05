@@ -123,7 +123,7 @@ Sensibilidad del DCF Base (US$24,24; cada fila es un DCF completo con un solo su
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 15,9% | 29,0% | 9,4% | = costo de capital | US$24,24 | US$24,24 |
+| Sin ventaja defendible | 15,9% | 29,0% | 9,0% | = costo de capital | US$24,24 | US$24,24 |
 
 Fuentes de ventaja: Marcas jóvenes (Alani Nu 2018; CELSIUS masiva desde 2021) en una categoría de barreras bajas; la distribución es un contrato de ~17 años con PepsiCo, no un activo propio. Ninguna marca cumple la regla de 20 años que superó un ciclo.. Evidencia: ROIC normalizado sobre todo el capital (con el preferente de PepsiCo): ~62% (2023), ~35% (2024), ~13,5% (2025) y 15,9% (LTM jun-2026, revisión desde cero del 5-oct-2026, con el costo legal como recurrente): por encima del costo de capital, pero en caída a medida que se compró crecimiento (Alani Nu US$2.055,6M; Rockstar y capitanía US$935,8M).. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
