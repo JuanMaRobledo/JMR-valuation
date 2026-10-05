@@ -227,7 +227,8 @@
    0.3636
   ],
   "con_id": true,
-  "vida_id": 3
+  "vida_id": 3,
+  "ajuste": null
  },
  "EPAM": {
   "industria": "Computer Services",
@@ -556,7 +557,8 @@
    1.3942
   ],
   "con_id": true,
-  "vida_id": 3
+  "vida_id": 3,
+  "ajuste": null
  },
  "PYPL": {
   "industria": "Financial Svcs. (Non-bank & Insurance)",
