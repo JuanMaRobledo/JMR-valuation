@@ -117,7 +117,7 @@ Sensibilidad del DCF Base (US$26,38; cada fila es un DCF completo con un solo su
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Ventaja durable | 23,2% | 18,4% | 9,4% | 18,4% | US$26,38 | US$17,19 |
+| Ventaja durable | 23,2% | 18,4% | 9,0% | 18,4% | US$26,38 | US$17,19 |
 
 Fuentes de ventaja: Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior. Evidencia: ROIC 15-22% en 2021-2026. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 

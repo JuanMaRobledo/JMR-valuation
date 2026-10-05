@@ -17,10 +17,6 @@ generator: "Claude Code — prompt de research fundamental v5 (análisis desde c
 
 Fecha del informe: 5 de octubre de 2026. Corte de información: 30 de septiembre de 2026. Última información financiera: 10-Q del segundo trimestre de 2026 (trimestre cerrado el 30 de junio, publicado el 6 de agosto de 2026). Cotización de referencia: cierre del 30 de septiembre de 2026 en el Nasdaq, usada solo en la sección 12. Hoja del Modelo JMR: [Modelo JMR - CELH (desde cero 2026-10-05)](https://docs.google.com/spreadsheets/d/1tHDLsh4yBF9NQkRLNqfTU6GPM5trOWsB5xIjpALLOIw/edit), construida desde la plantilla maestra; reemplaza a la valoración del 1 de octubre de 2026. Cifras en millones de dólares salvo indicación.
 
-<!-- JMR-NOTA-REVISION-2026-10-05 -->
-> **Actualización del 5 de octubre de 2026.** Las tablas de auditoría y de supuestos de este informe se actualizaron con la hoja de cálculo; las demás tablas y el texto conservan la fecha del informe. Tras la revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa beta 0,62 (bottom-up de Beverage (Soft) en EE.UU.), costo de capital inicial 7,35% y terminal 8,99% con la prima de mercado madura de Damodaran de octubre de 2026 (3,70%, calculada con la tasa del 30-sep; antes 4,09%), y ventas/capital 1,8 en los años 1-5 y 1,6 en los 6-10. DCF Base US$24,24 por acción y DCF esperado US$21,55 ('Escenarios e historias' H11 y H10), con un precio de referencia de US$27,35 ('Input sheet' D1). Las cifras vigentes están en la sección de historias Damodaran y en la valoración.
-<!-- /JMR-NOTA-REVISION-2026-10-05 -->
-
 ## 1. Resumen ejecutivo
 
 Celsius Holdings vende bebidas energéticas en lata a través de tres marcas —CELSIUS, Alani Nu y Rockstar— y en dos años pasó de ser una sola marca en hipercrecimiento a un portafolio que factura US$3.047 millones en los últimos doce meses y que, según la propia empresa, concentra cerca de una de cada cinco latas vendidas en la categoría en Estados Unidos ([Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)). El cliente final paga por energía, sabor y una propuesta de «bebida funcional sin azúcar»; el cliente que factura es sobre todo PepsiCo, que distribuye las tres marcas como capitán de la categoría y compró ~60% de las ventas del primer semestre de 2026 ([Celsius, 10-Q del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm)). El problema económico que merece examinarse es que el crecimiento de 2025 (+85,5%) fue casi todo comprado y que, debajo, las dos marcas grandes van en direcciones opuestas.
@@ -156,8 +152,8 @@ Hallazgos prioritarios de la construcción desde cero: (1) el importador repetí
 | Margen año 1 / objetivo (Base) | 19,6% / 20,1% (20% + 0,09 pp de arrendamientos) | Supuesto del analista | Input B28; «Escenarios e historias» D5 | Normalizado del 2T26 / LTM | Alta; razonable |
 | Crecimiento por historia | Base 4,8% compuesto (año 1 5,9%) | Supuesto por marca | reference/damodaran/CELH.json; «Escenarios e historias» | Coherente con la desaceleración de la categoría y la guía | Alta; frágil en Alani Nu |
 | Impuestos | 20,1% → 25% | Dato (1S26) y supuesto marginal | Input B24/B25 | 41,7 / 207,1 = 20,1% en el 1S26 | Media; verificado |
-| Ventas/capital | 1,80x (años 1-5) / 1,60x (años 6-10) | Entrada manual con las referencias de Damodaran (empresa, marginal, sector); activo | Input sheet B32:B33 | Revisión del 5-oct-2026: bajo el ROIC de la industria (29%); el capital nuevo rinde ~27% y ~24% | Media; documentado |
-| WACC / Ke | 7,35% / 7,62% | Cálculo de la hoja | Cost of capital worksheet: rf 5,29%, beta 0,62 (Beverage (Soft) en EE.UU., «Single Business(US)»), prima por regiones 3,74% (Damodaran, octubre de 2026: 3,70% madura), Kd 6,5% | Revisión del 5-oct-2026: recalculado por la hoja con la prima de mercado de octubre de 2026 | Alta; beta bottom-up sin primas por riesgos diversificables (revisión del 5-oct-2026; antes 1,0) |
+| Ventas/capital | 1,8 (años 1-5) y 1,6 (6-10) | Supuesto | Input B32/B33 | Rinde ~27% y ~24% sobre el capital nuevo, bajo el ROIC de la industria (29%) | Media; documentado |
+| WACC / Ke | 7,35% / 7,62% | Cálculo de la hoja | Cost of capital worksheet: rf 5,29%, beta 0,62 (Beverage (Soft) en EE.UU., «Single Business(US)»), prima por regiones 3,74% (Damodaran, octubre de 2026: 3,70% madura), Kd 6,5% | Tasas comunes de la cartera (30-sep-2026); 96% de las ventas en Norteamérica | Alta; beta bottom-up sin primas por riesgos diversificables (revisión del 5-oct-2026; antes 1,0) |
 | Crecimiento y ROIC terminales | 5,29% / = costo de capital (8,99%) | Regla del modelo y veredicto de ventaja | 'Valuation output' M4, M14; Input B49 = No | Sin ventaja defendible: el crecimiento posterior no suma valor | Alta; verificado |
 | Acciones | 255,1M | Dato + ajuste con nota | Income Statement L27 (253,0) + 2,149 RSU/PSU; Input B22 | 10-Q del 2T26 | Media; verificado |
 | Opciones | 2,313M a US$6,28 | Dato | Input B38-B42 (10-K 2025) | Valor ~US$50M restado | Baja |
@@ -165,7 +161,7 @@ Hallazgos prioritarios de la construcción desde cero: (1) el importador repetí
 | Deuda y arrendamientos | US$694,75M + VP arrendamientos US$17,4M | Dato + ajuste; conversor | Input B16; Operating lease converter | Nominal del 10-Q; compromisos del 10-K 2025 | Media; verificado |
 | Recompras | No proyectadas | Regla de la plantilla | 'Financials Multiples' fila 31 | Acciones constantes en los múltiplos | Baja |
 | Probabilidad de fracaso | 0% | Supuesto | 'Valuation output' B24 | Caja neta casi nula y préstamo a 2032 | Baja |
-| Pesos de métodos y MOS | DCF 60% / múltiplos 40% («Crecimiento»); MOS 35% sobre el esperado | Regla del modelo | Resumen G3/G4 | Utilidades GAAP volátiles: más peso al DCF | Media |
+| Pesos de métodos y MOS | DCF 40% / múltiplos 60% («Madura»); MOS 35% sobre el esperado | Ciclo de vida de Damodaran (5-oct-2026; antes «Crecimiento», 60%/40%) | Resumen G3/G4 | Crecimiento orgánico bajo (Base 4,8%) y margen normalizado estable: se valora por P/E futuro y EV/EBITDA sobre utilidades normalizadas | Media |
 | Otros ingresos / EBIT proyectado | −3% | Supuesto escrito a mano | 'Financials Multiples' E11/E50/E90 | LTM −18,6 / 601,9 | Media; corregido (antes +8% por defecto) |
 
 Soporte económico de los supuestos materiales:
@@ -195,11 +191,11 @@ Resultados declarados por el modelo (hoja vigente, 30-sep-2026; US$ por acción)
 | Método | Base | Conservadora | Optimista | Disrupción |
 |---|---:|---:|---:|---:|
 | DCF de la historia hoy | 24,24 | 16,53 | 36,12 | 7,31 |
-| Múltiplos consolidados hoy (precio relativo) | 49,15 | 39,34 | 60,63 | No aplica (solo tres casos auxiliares) |
-| Ponderado DCF 60% + múltiplos 40% hoy | 34,20 | 25,65 | 45,93 | No aplica |
+| Múltiplos consolidados hoy (precio relativo) | 52,22 | 38,92 | 67,85 | No aplica (solo tres casos auxiliares) |
+| Ponderado DCF 40% + múltiplos 60% hoy | 41,02 | 29,96 | 55,16 | No aplica |
 | DCF Base hoy (valor intrínseco principal) y DCF esperado (complemento) | 24,24 y 21,55 | | | |
 
-Las partes con mejor soporte son los datos de partida (conciliados con la SEC), el margen normalizado y el tratamiento de las preferentes; las más frágiles son el crecimiento de Alani Nu y la recuperación de CELSIUS, que dependen de datos de consumo que cambian cada cuatro semanas. La beta (0,62) es la bottom-up del sector: los riesgos propios de Celsius (una categoría, un distribuidor) están en las historias Conservadora y Disrupción, no en la tasa, así que el valor esperado, y no solo la Base, es la lectura completa del riesgo. Antes de interpretar los múltiplos conviene recordar que valen 103% más que el DCF Base hoy por razones de ventaja competitiva, no de crecimiento (sección 12).
+Las partes con mejor soporte son los datos de partida (conciliados con la SEC), el margen normalizado y el tratamiento de las preferentes; las más frágiles son el crecimiento de Alani Nu y la recuperación de CELSIUS, que dependen de datos de consumo que cambian cada cuatro semanas. La beta (0,62) es la bottom-up del sector: los riesgos propios de Celsius (una categoría, un distribuidor) están en las historias Conservadora y Disrupción, no en la tasa, así que el valor esperado, y no solo la Base, es la lectura completa del riesgo. Antes de interpretar los múltiplos conviene recordar que valen 115% más que el DCF Base hoy por razones de ventaja competitiva, no de crecimiento (sección 12).
 
 ## 6. Ventaja competitiva
 
@@ -378,7 +374,7 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 
 **Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$3.047 millones. Con el crecimiento de la Base llegan a US$3.852 millones en el año 5 y a US$4.838 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 19,6% en el año 1 a 20,1% al final, y se descuentan impuestos (20,1% al principio y 25,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$505 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (+US$94 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$412 millones el primer año. Cada flujo se trae a hoy con el costo de capital (7,35% al principio, 8,99% al final): los diez años suman US$3.436 millones. Después del año 10 se supone que la empresa crece 5,29% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 9,0%; esa perpetuidad vale hoy US$4.014 millones, 54% del total. Flujos más terminal dan el valor de las operaciones, US$7.450 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$631 millones, menos deuda por US$712 millones (incluye los arrendamientos capitalizados), menos opciones por US$50 millones, menos acciones preferentes por US$1.135 millones. Queda un patrimonio de US$6.184 millones que, repartido entre 255,1 millones de acciones, da US$24,24 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
 
-**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 22,42× (peso 25% dentro de los múltiplos); EV/FCFF 30,10× (peso 38% dentro de los múltiplos); P/E 33,55× (peso 12% dentro de los múltiplos); P/FCFE 34,44× (peso 12% dentro de los múltiplos); P/OCF 33,03× (peso 12% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (7,6%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 22,42× (peso 33% dentro de los múltiplos); EV/FCFF 30,10× (peso 17% dentro de los múltiplos); P/E 33,55× (peso 33% dentro de los múltiplos); P/FCFE 34,44× (peso 8% dentro de los múltiplos); P/OCF 33,03× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (7,6%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
 Sensibilidad del DCF Base (US$24,24; cada fila es un DCF completo con un solo supuesto cambiado):
 
@@ -441,7 +437,7 @@ Sensibilidad del DCF Base (US$24,24; cada fila es un DCF completo con un solo su
 
 | Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
 |---|---:|---:|---:|---:|---:|---:|
-| Sin ventaja defendible | 15,9% | 29,0% | 9,4% | = costo de capital | US$24,24 | US$24,24 |
+| Sin ventaja defendible | 15,9% | 29,0% | 9,0% | = costo de capital | US$24,24 | US$24,24 |
 
 Fuentes de ventaja: Marcas jóvenes (Alani Nu 2018; CELSIUS masiva desde 2021) en una categoría de barreras bajas; la distribución es un contrato de ~17 años con PepsiCo, no un activo propio. Ninguna marca cumple la regla de 20 años que superó un ciclo.. Evidencia: ROIC normalizado sobre todo el capital (con el preferente de PepsiCo): ~62% (2023), ~35% (2024), ~13,5% (2025) y 15,9% (LTM jun-2026, revisión desde cero del 5-oct-2026, con el costo legal como recurrente): por encima del costo de capital, pero en caída a medida que se compró crecimiento (Alani Nu US$2.055,6M; Rockstar y capitanía US$935,8M).. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
 
@@ -704,7 +700,7 @@ La decisión (comprar, mantener o vender) la registras tú con el selector «Mi 
 
 ### Valor por acción en dos horizontes
 
-Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Crecimiento»: DCF 60% y múltiplos 40% (EV/EBITDA 10%, EV/FCFF 15%, P/E 5%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 7,62%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$7,31) y no se inventa para ellos.
+Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 7,62%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$7,31) y no se inventa para ellos.
 
 **Valor intrínseco principal: DCF Base al presente, US$24,24 por acción.** Complemento: DCF esperado por probabilidades US$21,55. Múltiplos y ponderados son lecturas secundarias.
 
@@ -712,27 +708,27 @@ Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden B
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
-| DCF de las historias al presente | — | 60% | — | US$24,24 | US$16,53 | US$36,12 |
-| EV/EBITDA | 22,4× / 18,2× / 24,2× | 10% | 25% | US$48,63 | US$33,31 | US$63,35 |
-| EV/FCFF | 30,1× / 26,8× / 33,7× | 15% | 37% | US$41,11 | US$38,08 | US$46,64 |
-| P/E | 33,5× / 26,8× / 39,8× | 5% | 12% | US$59,09 | US$41,26 | US$83,01 |
-| P/FCFE | 34,4× / 28,4× / 38,4× | 5% | 12% | US$59,78 | US$48,29 | US$72,24 |
-| P/OCF | 33,0× / 26,2× / 38,6× | 5% | 12% | US$53,71 | US$44,25 | US$63,18 |
-| **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$49,15 | US$39,34 | US$60,63 |
-| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$34,20 | US$25,65 | US$45,93 |
+| DCF de las historias al presente | — | 40% | — | US$24,24 | US$16,53 | US$36,12 |
+| EV/EBITDA | 22,4× / 18,2× / 24,2× | 20% | 33% | US$48,63 | US$33,31 | US$63,35 |
+| EV/FCFF | 30,1× / 26,8× / 33,7× | 10% | 17% | US$41,11 | US$38,08 | US$46,64 |
+| P/E | 33,5× / 26,8× / 39,8× | 20% | 33% | US$59,09 | US$41,26 | US$83,01 |
+| P/FCFE | 34,4× / 28,4× / 38,4× | 5% | 8% | US$59,78 | US$48,29 | US$72,24 |
+| P/OCF | 33,0× / 26,2× / 38,6× | 5% | 8% | US$53,71 | US$44,25 | US$63,18 |
+| **Ponderado de múltiplos solos al presente** | — | 60% | 100% | US$52,22 | US$38,92 | US$67,85 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$41,02 | US$29,96 | US$55,16 |
 
 **Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 (la hoja no proyecta dividendos: precio objetivo exdividendo = total).
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
-| DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$30,21 | US$20,60 | US$45,02 |
-| EV/EBITDA | 22,4× / 18,2× / 24,2× | 10% | 25% | US$60,18 | US$37,22 | US$85,46 |
-| EV/FCFF | 30,1× / 26,8× / 33,7× | 15% | 37% | US$52,30 | US$41,81 | US$69,56 |
-| P/E | 33,5× / 26,8× / 39,8× | 5% | 12% | US$72,39 | US$45,96 | US$110,67 |
-| P/FCFE | 34,4× / 28,4× / 38,4× | 5% | 12% | US$68,47 | US$48,20 | US$93,56 |
-| P/OCF | 33,0× / 26,2× / 38,6× | 5% | 12% | US$67,54 | US$49,06 | US$91,33 |
-| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 40% | 100% | US$60,71 | US$42,89 | US$84,39 |
-| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$42,41 | US$29,51 | US$60,77 |
+| DCF capitalizado a FY+3 antes de distribuciones | — | 40% | — | US$30,21 | US$20,60 | US$45,02 |
+| EV/EBITDA | 22,4× / 18,2× / 24,2× | 20% | 33% | US$60,18 | US$37,22 | US$85,46 |
+| EV/FCFF | 30,1× / 26,8× / 33,7× | 10% | 17% | US$52,30 | US$41,81 | US$69,56 |
+| P/E | 33,5× / 26,8× / 39,8× | 20% | 33% | US$72,39 | US$45,96 | US$110,67 |
+| P/FCFE | 34,4× / 28,4× / 38,4× | 5% | 8% | US$68,47 | US$48,20 | US$93,56 |
+| P/OCF | 33,0× / 26,2× / 38,6× | 5% | 8% | US$67,54 | US$49,06 | US$91,33 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 60% | 100% | US$64,24 | US$42,80 | US$92,38 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$50,63 | US$33,92 | US$73,43 |
 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 
@@ -756,7 +752,7 @@ Detalle del valor presente por horizonte (Ke 7,62%; consolidado por método: Pro
 | P/OCF | Conservador | US$49,81 | US$43,59 | US$39,36 | US$44,25 | OK |
 | P/OCF | Optimista | US$52,44 | US$63,83 | US$73,27 | US$63,18 | OK |
 
-Múltiplos consolidados hoy: US$49,15 / US$39,34 / US$60,63 · DCF de las historias hoy: US$24,24 / US$16,53 / US$36,12 · Ponderado hoy: US$34,20 / US$25,65 / US$45,93 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
+Múltiplos consolidados hoy: US$52,22 / US$38,92 / US$67,85 · DCF de las historias hoy: US$24,24 / US$16,53 / US$36,12 · Ponderado hoy: US$41,02 / US$29,96 / US$55,16 (Base / Conservador / Optimista). Chequeo VP a 3 años < FY+3 sin descontar: conservador OK, base OK, optimista OK.
 
 ### Fuentes de esta sección
 
