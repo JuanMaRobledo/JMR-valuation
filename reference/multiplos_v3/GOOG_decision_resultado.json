@@ -82,21 +82,21 @@
    "B_peers": "META 17,4x, MSFT 19,7x, AMZN 16,5x, AAPL 28,8x, NFLX 20,1x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 12.34,
-    "Base": 14.3,
-    "Optimista": 14.41
+    "Conservador": 13.42,
+    "Base": 16.02,
+    "Optimista": 16.98
    },
    "mercado": 19.01,
    "lambda": 0.25,
-   "conservador": 16.28,
-   "base": 17.83,
-   "optimista": 19.83,
-   "factor_cons": 0.913,
-   "factor_opt": 1.112,
+   "conservador": 16.52,
+   "base": 18.26,
+   "optimista": 20.63,
+   "factor_cons": 0.905,
+   "factor_opt": 1.13,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    14.3,
+    16.02,
     19.73
    ],
    "antes": {
@@ -148,21 +148,21 @@
    "B_peers": "META 44,7x, MSFT 55,2x, AAPL 35,3x, NFLX 25,0x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 21.04,
-    "Base": 28.54,
-    "Optimista": 40.65
+    "Conservador": 22.88,
+    "Base": 31.98,
+    "Optimista": 47.91
    },
    "mercado": 35.63,
    "lambda": 0.25,
-   "conservador": 26.92,
-   "base": 33.86,
-   "optimista": 44.01,
-   "factor_cons": 0.795,
-   "factor_opt": 1.3,
+   "conservador": 27.35,
+   "base": 34.72,
+   "optimista": 45.98,
+   "factor_cons": 0.788,
+   "factor_opt": 1.324,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    28.54,
+    31.22,
     40.03
    ],
    "antes": {
@@ -188,21 +188,21 @@
    "B_peers": "META 27,8x, MSFT 28,4x, AMZN 19,8x, AAPL 37,7x, NFLX 22,1x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 14.81,
-    "Base": 19.34,
-    "Optimista": 26.08
+    "Conservador": 16.0,
+    "Base": 21.38,
+    "Optimista": 29.87
    },
    "mercado": 25.91,
    "lambda": 0.25,
-   "conservador": 20.25,
-   "base": 24.27,
-   "optimista": 27.76,
-   "factor_cons": 0.834,
-   "factor_opt": 1.144,
+   "conservador": 20.53,
+   "base": 24.78,
+   "optimista": 28.74,
+   "factor_cons": 0.829,
+   "factor_opt": 1.16,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    19.34,
+    21.38,
     27.83
    ],
    "antes": {
@@ -254,21 +254,21 @@
    "B_peers": "META 45,9x, MSFT 56,4x, AAPL 35,2x, NFLX 26,2x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 18.64,
-    "Base": 24.35,
-    "Optimista": 32.71
+    "Conservador": 20.14,
+    "Base": 26.92,
+    "Optimista": 37.47
    },
    "mercado": 34.58,
    "lambda": 0.25,
-   "conservador": 25.69,
-   "base": 32.02,
-   "optimista": 40.89,
-   "factor_cons": 0.802,
-   "factor_opt": 1.277,
+   "conservador": 26.01,
+   "base": 32.67,
+   "optimista": 42.24,
+   "factor_cons": 0.796,
+   "factor_opt": 1.293,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    24.35,
+    26.92,
     40.55
    ],
    "antes": {
@@ -320,21 +320,21 @@
    "B_peers": "META 14,4x, MSFT 20,7x, AMZN 17,9x, AAPL 32,8x, NFLX 24,5x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 11.69,
-    "Base": 15.53,
-    "Optimista": 19.95
+    "Conservador": 12.63,
+    "Base": 17.17,
+    "Optimista": 22.85
    },
    "mercado": 19.61,
    "lambda": 0.25,
-   "conservador": 15.8,
-   "base": 18.59,
-   "optimista": 22.8,
-   "factor_cons": 0.85,
-   "factor_opt": 1.226,
-   "opt_tope_historico": null,
+   "conservador": 16.04,
+   "base": 19.0,
+   "optimista": 23.03,
+   "factor_cons": 0.844,
+   "factor_opt": 1.242,
+   "opt_tope_historico": 23.592086655432002,
    "base_en_rango": true,
    "rango": [
-    15.53,
+    17.17,
     20.66
    ],
    "antes": {
@@ -347,21 +347,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   152.3706754196806,
-   299.67620605461786,
-   392.8300025049975
+   159.27707862380592,
+   330.8623963347827,
+   436.5134207715721
   ],
   "multiplos_hoy": [
-   219.67673309928438,
-   276.50497951554803,
-   325.41319351111906
+   224.37415064745176,
+   284.7341023871879,
+   339.43450586126386
   ],
   "ponderado_hoy": [
-   192.75431002744284,
-   285.77347013117594,
-   352.3799171086704
+   198.3353218379934,
+   303.18541996622577,
+   378.26607182538714
   ],
-  "brecha_base": -0.0773208752344079,
+  "brecha_base": -0.13941836382312844,
   "fila_origen": 40
  }
 }
