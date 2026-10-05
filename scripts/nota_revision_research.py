@@ -5,7 +5,7 @@ Las tablas de auditoría y de supuestos del research son la instantánea de la h
 revisión con criterio Damodaran (scripts/revisar_beta_s2c.py) pueden mostrar una beta, un WACC o un ventas/capital
 anteriores. Esta nota, al inicio del informe (antes de la primera sección), deja las cifras vigentes y remite a la sección
 de historias Damodaran y a la valoración, que el flujo de regeneración sí mantiene al día. Es idempotente: reemplaza la
-nota si ya está. Escribe el HTML del research en Modelo-JMR-datos/analisis y, si existe, el .md de origen en data/.
+nota si ya está. Las cifras se leen de la hoja de cálculo (scripts/valores_hoja.py). Escribe el HTML del research en Modelo-JMR-datos/analisis y, si existe, el .md de origen en data/.
 
 Uso: PYTHONPATH=.:scripts python scripts/nota_revision_research.py [TICKER ...]
 """
@@ -58,21 +58,22 @@ def pct(x: float) -> str:
 
 
 def nota(tk: str) -> str:
-    r = json.loads((_ROOT / "reference" / "damodaran" / f"{tk}_resultado.json").read_text())
-    a = r["historias"][0]
-    d = a["detalle"]
+    import valores_hoja  # cifras leídas de la hoja de cálculo, no de copias intermedias
+
+    v = valores_hoja.leer(tk)
     b0, s0, txt = ANTES[tk]
-    beta = f"beta {es(r['beta_hoja'])} ({txt}" + (f"; antes {es(b0)})" if b0 is not None else ")")
-    s2c = f"ventas/capital {es(d['s2c'], 1)} en los años 1-5 y {es(d['s2c2'], 1)} en los 6-10"
+    beta = f"beta {es(v['beta'])} ({txt}" + (f"; antes {es(b0)})" if b0 is not None else ")")
+    s2c = f"ventas/capital {es(v['s1'], 1)} en los años 1-5 y {es(v['s2'], 1)} en los 6-10"
     if s0:
         s2c += f" (antes {es(s0[0])})" if s0[0] == s0[1] else f" (antes {es(s0[0])} y {es(s0[1])})"
+    tasa = "costo del patrimonio" if v["fin"] else "costo de capital"
     return (f"<strong>Actualización del 5 de octubre de 2026.</strong> Las tablas de auditoría y de supuestos de este informe "
-            f"son la instantánea de la hoja a la fecha del informe y pueden mostrar una beta, un costo de capital o un "
-            f"ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta del negocio sin primas por riesgos "
-            f"diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el "
-            f"marginal y el del sector), la hoja usa {beta}, costo de capital inicial {pct(d['wacc0'])} y terminal "
-            f"{pct(d['tasaTerminal'])}, y {s2c}. DCF Base US${es(a['valor_beta_hoja'])} por acción y DCF esperado "
-            f"US${es(r['valor_esperado_beta_hoja'])}, con un precio de referencia de US${es(r['precio'])}. Las cifras vigentes están en la sección de historias Damodaran y en la "
+            f"se actualizaron con la hoja de cálculo; las demás tablas y el texto conservan la fecha del informe. Tras la "
+            f"revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las "
+            f"historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa {beta}, "
+            f"{tasa} inicial {pct(v['w0'])} y terminal {pct(v['wT'])}, y {s2c}. DCF Base US${es(v['base'])} por acción y DCF "
+            f"esperado US${es(v['ve'])} ('Escenarios e historias' H11 y H10), con un precio de referencia de "
+            f"US${es(v['precio'])} ('Input sheet' D1). Las cifras vigentes están en la sección de historias Damodaran y en la "
             f"valoración.")
 
 
