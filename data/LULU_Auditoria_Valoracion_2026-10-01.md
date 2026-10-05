@@ -15,13 +15,13 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 | Concepto | Antes | Después |
 |---|---:|---:|
-| DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$176,18 |
-| **DCF Base (valor intrínseco principal)** | US$172,25 | US$176,18 |
-| DCF Conservadora | US$108,35 | US$106,71 |
-| DCF Disrupción | US$71,34 | US$72,56 |
-| DCF Optimista | US$229,97 | US$248,71 |
-| DCF esperado por probabilidades (complemento) | US$148,45 | US$155,86 |
-| Precio con MOS sobre el esperado | US$103,91 | US$101,31 |
+| DCF técnico anterior (caso Base de la hoja) | US$167,44 | US$193,14 |
+| **DCF Base (valor intrínseco principal)** | US$172,25 | US$193,14 |
+| DCF Conservadora | US$108,35 | US$111,81 |
+| DCF Disrupción | US$71,34 | US$75,45 |
+| DCF Optimista | US$229,97 | US$273,51 |
+| DCF esperado por probabilidades (complemento) | US$148,45 | US$169,03 |
+| Precio con MOS sobre el esperado | US$103,91 | US$109,87 |
 
 ## Hallazgos y correcciones
 
@@ -69,6 +69,6 @@ Réplica de la auditoría verificada en ADBE: estados financieros contra la SEC 
 
 ## Dictamen
 
-El valor intrínseco principal es el DCF Base: US$176,18 (antes US$172,25). El DCF esperado de las cuatro historias, complementario, es US$155,86 (antes US$148,45); precio con margen de seguridad sobre el esperado US$101,31. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
+El valor intrínseco principal es el DCF Base: US$193,14 (antes US$172,25). El DCF esperado de las cuatro historias, complementario, es US$169,03 (antes US$148,45); precio con margen de seguridad sobre el esperado US$109,87. Las correcciones son de datos reportados y de definición (caja con valores negociables, inversiones no operativas, deuda al último trimestre, I+D alineado, capital invertido operativo); no se movieron probabilidades ni supuestos de las historias para acercar el valor a un precio. Esta auditoría no emite una decisión de comprar, mantener ni vender.
 
 Fuentes: SEC EDGAR, API XBRL companyfacts (10-Q y 10-K de la empresa); informes semestrales en 6-K para emisores extranjeros; BLS, IPC-U (deflactor de tamaño de las tasas base); hoja nativa del Modelo JMR leída el 1-oct-2026.
