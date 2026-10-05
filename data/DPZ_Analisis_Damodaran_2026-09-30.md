@@ -93,13 +93,13 @@ Sensibilidad del DCF Base (US$320,53; cada fila es un DCF completo con un solo s
 
 **Reinversión y retorno.** Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Ventaja durable: marca probada de más de 60 años y escala logística en reparto, con ROIC de 65-78% en 2021-2026. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 5,37 | ventas LTM 5.027,8 / capital invertido 937,0 millones |
-| Marginal, último año | — | Δventas 233,6 / Δcapital -35,1 millones (Dec '24 → Dec '25): el capital o las ventas no crecieron (recompras, venta de negocios o caída de ventas), no hay inversión que medir |
-| Marginal, últimos tres años | 67,13 | Δventas 402,8 / Δcapital 6,0 millones (Jan '23 → Dec '25) |
+| Marginal, últimos tres años | no significativa | Δventas 402,8 / Δcapital 6,0 millones (Jan '23 → Dec '25; capital 967,9 → 973,9): el capital casi no cambió o bajó (recompras, deterioros, moneda), el cociente sería ruido |
+| Marginal, últimos cinco años | 6,75 | Δventas 822,6 / Δcapital 121,9 millones (Jan '21 → Dec '25; capital 852,0 → 973,9) |
 | Sector (Damodaran, enero de 2026) | 1,51 | Restaurant/Dining |
 | Usado en la hoja | 2,64 / 2,64 | años 1-5 / 6-10; rinde ~41% / ~41% sobre el capital nuevo (ROIC actual 83,0%) |
 

@@ -93,13 +93,13 @@ Sensibilidad del DCF Base (US$99,20; cada fila es un DCF completo con un solo su
 
 **Reinversión y retorno.** Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un ventas/capital de 0,91 (años 1-5) y 0,91 (años 6-10): con margen objetivo de 36,4% e impuesto marginal de 20%, cada dólar de capital nuevo rinde ~26% y ~26%, sin superar el mayor entre su ROIC actual (26,4%) y el de su industria (17,0%) (Damodaran, Investment Valuation cap. 11, p. 45; revisión del 4-oct-2026). Antes 1,91 y 1,91, que implicaban ~56% y ~56% sobre el capital nuevo. En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Ventaja durable: patentes que se renuevan, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%. El ROIC después del año 10 es 16,9%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 0,89 | ventas LTM 9.517,0 / capital invertido 10.742,0 millones |
-| Marginal, último año | 0,32 | Δventas 211,0 / Δcapital 656,0 millones (Dec '24 → Dec '25) |
-| Marginal, últimos tres años | 1,03 | Δventas 1.387,0 / Δcapital 1.345,0 millones (Dec '22 → Dec '25) |
+| Marginal, últimos tres años | 1,03 | Δventas 1.387,0 / Δcapital 1.347,0 millones (Dec '22 → Dec '25; capital 8.910,0 → 10.257,0) |
+| Marginal, últimos cinco años | 1,02 | Δventas 2.792,0 / Δcapital 2.730,0 millones (Dec '20 → Dec '25; capital 7.527,0 → 10.257,0) |
 | Sector (Damodaran, enero de 2026) | 1,11 | Drugs (Pharmaceutical) |
 | Usado en la hoja | 0,91 / 0,91 | años 1-5 / 6-10; rinde ~26% / ~26% sobre el capital nuevo (ROIC actual 26,4%) |
 

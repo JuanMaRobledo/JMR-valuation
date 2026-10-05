@@ -93,13 +93,13 @@ Sensibilidad del DCF Base (US$200,23; cada fila es un DCF completo con un solo s
 
 **Reinversión y retorno.** Como fabless, NVIDIA casi no invierte en activos fijos; su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un sales-to-capital de 3 y 2,5. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: señal de que genera más caja de la que puede reinvertir. Ventaja durable: ecosistema CUDA (costos de cambio) y escala en cómputo acelerado, con ROIC de 13-111%. El ROIC después del año 10 es 27,2%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 2,59 | ventas LTM 302.970,0 / capital invertido 116.970,5 millones |
-| Marginal, último año | 1,11 | Δventas 85.441,0 / Δcapital 77.008,0 millones (Jan '25 → Jan '26) |
-| Marginal, últimos tres años | 1,49 | Δventas 188.964,0 / Δcapital 127.161,0 millones (Jan '23 → Jan '26) |
+| Marginal, últimos tres años | 1,49 | Δventas 188.964,0 / Δcapital 127.161,0 millones (Jan '23 → Jan '26; capital 30.567,0 → 157.728,0) |
+| Marginal, últimos cinco años | 1,49 | Δventas 199.263,0 / Δcapital 134.085,0 millones (Jan '21 → Jan '26; capital 23.643,0 → 157.728,0) |
 | Sector (Damodaran, enero de 2026) | 1,21 | Semiconductor |
 | Usado en la hoja | 2,92 / 2,44 | años 1-5 / 6-10; rinde ~142% / ~119% sobre el capital nuevo (ROIC actual 141,9%) |
 

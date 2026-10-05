@@ -94,13 +94,13 @@ Sensibilidad del DCF Base (US$16,84; cada fila es un DCF completo con un solo su
 
 **Reinversión y retorno.** Todo el crecimiento de Shacks propios se financia con caja: capex de US$135-203 millones al año. La hoja usa un sales-to-capital de 1,51 con los arrendamientos incluidos: entre 2023 y 2025 las ventas subieron US$545 millones con US$147 millones de capex neto y ~US$208 millones de locales arrendados nuevos (1,54), y el promedio de Restaurant/Dining según Damodaran es 1,51. El valor anterior (0,90) exigía un 70% más de capital por dólar de ventas que la historia. Con margen bajo, el retorno sobre el capital nuevo todavía apenas supera el costo de capital. Tiene convertibles de US$250 millones al 0% con vencimiento en 2028. Sin ventaja defendible: su ROIC está por debajo del costo de capital. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 1,36 | ventas LTM 1.552,3 / capital invertido 1.139,3 millones |
-| Marginal, último año | 1,88 | Δventas 192,7 / Δcapital 102,3 millones (Dec '24 → Dec '25) |
-| Marginal, últimos tres años | 2,31 | Δventas 544,8 / Δcapital 236,1 millones (Dec '22 → Dec '25) |
+| Marginal, últimos tres años | 2,31 | Δventas 544,8 / Δcapital 236,0 millones (Dec '22 → Dec '25; capital 780,4 → 1.016,4) |
+| Marginal, últimos cinco años | 2,19 | Δventas 922,4 / Δcapital 422,1 millones (Dec '20 → Dec '25; capital 594,3 → 1.016,4) |
 | Sector (Damodaran, enero de 2026) | 1,51 | Restaurant/Dining |
 | Usado en la hoja | 1,51 / 1,51 | años 1-5 / 6-10; rinde ~11% / ~11% sobre el capital nuevo (ROIC actual 4,7%) |
 

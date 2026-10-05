@@ -92,13 +92,13 @@ Sensibilidad del DCF Base (US$104,83; cada fila es un DCF completo con un solo s
 
 **Reinversión y retorno.** Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 1,79 en ambas etapas: entre 2023 y 2025 las ventas subieron US$668 millones con ~US$373 millones de reinversión, casi toda I+D capitalizado neto (la hoja capitaliza el I+D). El valor anterior (~3) era 66% más generoso que esa historia; el promedio de Software (Internet) según Damodaran es 1,35. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Sin ventaja defendible: marca y hábito de uso con costos de cambio bajos; cualquier app o asistente de IA puede enseñar idiomas. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está por encima de todas las referencias: supone que la empresa crecerá con menos capital del que necesitó hasta ahora y del que necesita su sector. Lo sostiene solo si el ROIC lo respalda (control de la p. 45).
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está por encima de todas las referencias: supone que la empresa crecerá con menos capital del que necesitó hasta ahora y del que necesita su sector. Lo sostiene solo si el ROIC lo respalda (control de la p. 45).
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 1,70 | ventas LTM 1.145,0 / capital invertido 672,7 millones (con I+D capitalizado a 3 años) |
-| Marginal, último año | 0,92 | Δventas 289,6 / Δcapital 316,1 millones (Dec '24 → Dec '25) |
-| Marginal, últimos tres años | 1,50 | Δventas 668,1 / Δcapital 446,7 millones (Dec '22 → Dec '25) |
+| Marginal, últimos tres años | 1,11 | Δventas 668,1 / Δcapital 602,7 millones (Dec '22 → Dec '25; capital 194,6 → 797,3) |
+| Marginal, últimos cinco años | 1,27 | Δventas 875,9 / Δcapital 691,3 millones (Dec '20 → Dec '25; capital 106,0 → 797,3) |
 | Sector (Damodaran, enero de 2026) | 1,35 | Software (Internet) |
 | Usado en la hoja | 1,79 / 1,79 | años 1-5 / 6-10; rinde ~36% / ~36% sobre el capital nuevo (ROIC actual 37,0%) |
 

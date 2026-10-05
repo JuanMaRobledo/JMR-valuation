@@ -101,13 +101,13 @@ Sensibilidad del DCF Base (US$171,39; cada fila es un DCF completo con un solo s
 | Inventarios (US$M) | 1.442 | 1.701 | 1.711 |
 | ROIC de la hoja | 52% | 36% | 27% |
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 2,04 | ventas LTM 11.094,0 / capital invertido 5.445,1 millones |
-| Marginal, último año | 0,39 | Δventas 514,5 / Δcapital 1.312,7 millones (Feb '25 → Feb '26) |
-| Marginal, últimos tres años | 1,43 | Δventas 2.992,1 / Δcapital 2.096,7 millones (Jan '23 → Feb '26) |
+| Marginal, últimos tres años | 1,43 | Δventas 2.992,1 / Δcapital 2.096,7 millones (Jan '23 → Feb '26; capital 2.856,3 → 4.953,0) |
+| Marginal, últimos cinco años | 2,30 | Δventas 6.700,7 / Δcapital 2.912,3 millones (Jan '21 → Feb '26; capital 2.040,7 → 4.953,0) |
 | Sector (Damodaran, enero de 2026) | 1,77 | Apparel |
 | Usado en la hoja | 1,80 / 1,80 | años 1-5 / 6-10; rinde ~25% / ~25% sobre el capital nuevo (ROIC actual 26,7%) |
 

@@ -100,13 +100,13 @@ Sensibilidad del DCF Base (US$31,90; cada fila es un DCF completo con un solo su
 | Inventarios | 419 | 420 | 473 |
 | Flujo operativo (después de intereses) | 495 | 338 | 501 |
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está por debajo de todas las referencias: es prudente (más reinversión por dólar de crecimiento); viene del control de la p. 45, que no deja que el capital nuevo rinda más que el ROIC actual o el de su industria.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está por debajo de todas las referencias: es prudente (más reinversión por dólar de crecimiento); viene del control de la p. 45, que no deja que el capital nuevo rinda más que el ROIC actual o el de su industria.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 2,59 | ventas LTM 4.060,3 / capital invertido 1.570,3 millones |
-| Marginal, último año | 1,89 | Δventas 1.001,2 / Δcapital 530,0 millones (Dec '24 → Dec '25) |
-| Marginal, últimos tres años | 3,86 | Δventas 2.355,5 / Δcapital 610,0 millones (Dec '22 → Dec '25) |
+| Marginal, últimos tres años | 3,86 | Δventas 2.355,5 / Δcapital 610,0 millones (Dec '22 → Dec '25; capital 822,4 → 1.432,4) |
+| Marginal, últimos cinco años | — | sin años suficientes en la hoja |
 | Sector (Damodaran, enero de 2026) | 2,62 | Shoe |
 | Usado en la hoja | 2,30 / 2,10 | años 1-5 / 6-10; rinde ~29% / ~27% sobre el capital nuevo (ROIC actual 28,5%) |
 

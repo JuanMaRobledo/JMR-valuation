@@ -104,13 +104,13 @@ Sensibilidad del DCF Base (US$30,62; cada fila es un DCF completo con un solo su
 | Inventarios (US$M) | 7.489 | 7.501 | 7.846 |
 | ROIC normalizado (con arrendamientos, cálculo propio) | ~20% | ~16% | ~15% |
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está por debajo de todas las referencias: es prudente (más reinversión por dólar de crecimiento); viene del control de la p. 45, que no deja que el capital nuevo rinda más que el ROIC actual o el de su industria.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 2,61 | ventas LTM 45.891,0 / capital invertido 17.608,5 millones |
-| Marginal, último año | 0,05 | Δventas 89,0 / Δcapital 1.796,0 millones (May '25 → May '26) |
-| Marginal, últimos tres años | — | Δventas -4.819,0 / Δcapital 1.829,0 millones (May '23 → May '26): el capital o las ventas no crecieron (recompras, venta de negocios o caída de ventas), no hay inversión que medir |
+| Marginal, últimos tres años | no significativa | Δventas -4.819,0 / Δcapital 1.829,0 millones (May '23 → May '26; capital 15.042,0 → 16.871,0): el capital casi no cambió o bajó (recompras, deterioros, moneda), el cociente sería ruido |
+| Marginal, últimos cinco años | 0,36 | Δventas 1.860,0 / Δcapital 5.236,0 millones (May '21 → May '26; capital 11.635,0 → 16.871,0) |
 | Sector (Damodaran, enero de 2026) | 2,62 | Shoe |
 | Usado en la hoja | 2,10 / 2,10 | años 1-5 / 6-10; rinde ~18% / ~18% sobre el capital nuevo (ROIC actual 14,7%) |
 
