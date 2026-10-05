@@ -19,11 +19,17 @@ Cambios:
   NKE   ventas/capital 2,1 (Shoe global) → 2,6: el propio de Nike (2,61 con arrendamientos) y el del sector en EE.UU.
         (2,62). Al margen objetivo (11,6%) el capital nuevo rinde ~22,6%, lo mismo que rendiría el capital actual con
         ese margen; el ROIC actual (14,7%) está deprimido por el margen de un año malo, no por más capital por venta.
+  CELH  beta 1,0 (0,62 + 0,38 por categoría única y distribuidor, escrita a mano) → «Single Business(US)»: Beverage
+        (Soft) 0,58 → ~0,62 reapalancada (96% de las ventas en Norteamérica). Ventas/capital 1,8/1,6 se mantiene: rinde
+        27%/24% frente a 29% de la industria; el actual (1,0) y el marginal (0,6) incluyen la compra de Alani Nu.
+  CMG   beta 0,95 (0,85 + 0,10 por un solo concepto, escrita a mano) → «Single Business(US)»: Restaurant/Dining 0,78 →
+        ~0,86 reapalancada (regresión 0,89-1,00). Ventas/capital 1,51 (el del sector) se mantiene: rinde ~21%, entre el
+        ROIC de la industria (18,4%) y el actual (23-25%); Chipotle no franquicia, así que el sector es comparable.
   Se mantienen: beta de NKE (Shoe global 0,89 → 1,01; regresión 0,98-1,04) y ventas/capital de ADBE (1,23 ≈ 1,20 actual con
   I+D capitalizado; rinde 37% = ROIC actual), LULU (1,8: entre el sector 1,77 y el actual 2,04; rinde 25% frente a 27%)
   y ONON (2,3/2,1: rinde 29%/27% frente a 28,5% actual).
 
-Respaldo de cada celda en reference/revision_dcf_2026-10-05/beta_s2c_respaldo.json y nota en la celda. Después hay que
+Respaldo de cada celda en reference/revision_dcf_2026-10-05/beta_s2c_respaldo.json (CELH, CMG, DPZ y SHAK: _<TICKER>.json) y nota en la celda. Después hay que
 regenerar cada empresa: damodaran_stories, build_story_sheet, ancla C de múltiplos (multiples_anchors --solo-justificado),
 apply_multiples_v3 y regenerar_cartera.sh.
 
@@ -43,6 +49,11 @@ for p in (str(_ROOT), str(_ROOT / "scripts")):
 import model_steps as ms  # noqa: E402
 
 OUT = _ROOT / "reference" / "revision_dcf_2026-10-05" / "beta_s2c_respaldo.json"
+PRIMERA_TANDA = ("ADBE", "LULU", "NKE", "ONON")  # el respaldo va por celda: la segunda tanda usa un archivo por empresa
+
+
+def respaldo(tk: str) -> Path:
+    return OUT if tk in PRIMERA_TANDA else OUT.with_name(f"beta_s2c_respaldo_{tk}.json")
 CC, IS = "Cost of capital worksheet", "Input sheet"
 NOTA_BETA = ("Beta bottom-up (Damodaran, 5-oct-2026): beta desapalancada de {ind} en EE.UU. corregida por caja ({bu}, ene-2026), "
              "reapalancada por la hoja con la D/E de mercado (arrendamientos incluidos). Tabla de EE.UU. porque la mayoría de "
@@ -53,6 +64,9 @@ CAMBIOS = {
     "LULU": {CC: {"B22": "Single Business(US)"}},
     "ONON": {CC: {"B22": "Single Business(US)"}},
     "NKE": {IS: {"B32": 2.6, "B33": 2.6}},
+    # Segunda tanda (5-oct-2026), una empresa a la vez
+    "CELH": {CC: {"B22": "Single Business(US)"}},
+    "CMG": {CC: {"B22": "Single Business(US)"}},
 }
 NOTAS = {
     "ADBE": {CC: {"B22": NOTA_BETA.format(ind="Software (System & Application)", bu="1,25", reg="1,39 (5 años) y 0,97 (2 años)",
@@ -69,6 +83,18 @@ NOTAS = {
                      "(20,9%); el ROIC actual (14,7%) está deprimido por el margen, no por más capital por venta. Antes 2,1 "
                      "(Shoe global), que suponía 24% más capital por dólar de ventas nuevas que el que Nike usa.")
                  for c in ("B32", "B33")}},
+    "CELH": {CC: {"B22": NOTA_BETA.format(
+        ind="Beverage (Soft)", bu="0,58", reg="1,55 (5 años) y 0,83 (2 años); Monster 0,49 y 0,36",
+        extra="Celsius vende 96% en Norteamérica. La dependencia de un distribuidor (~60% de las ventas) y la categoría "
+              "única son riesgos propios, diversificables: van en las historias (Conservadora: pérdida de espacio en "
+              "anaquel; Disrupción: la categoría pierde favor), no en la tasa. Fabricación tercerizada: el apalancamiento "
+              "operativo no es mayor que el del sector. ",
+        antes="1,0 escrita a mano = ~0,62 bottom-up + ~0,38 por categoría única y distribuidor")}},
+    "CMG": {CC: {"B22": NOTA_BETA.format(
+        ind="Restaurant/Dining", bu="0,78", reg="1,00 (5 años) y 0,89 (2 años)",
+        extra="Chipotle vende 100% en Norteamérica. Tener un solo concepto es un riesgo propio y diversificable: va en las "
+              "historias (Conservadora: el concepto pierde tráfico), no en la tasa. ",
+        antes="0,95 escrita a mano = 0,85 bottom-up + 0,10 por un solo concepto de restaurante")}},
 }
 
 
@@ -87,7 +113,7 @@ def main(argv: list[str]) -> int:
             print(tk, hoja, {c: (a[0][0] if a and a[0] else "") for c, a in zip(upd, antes)}, "→", upd)
             if apply:
                 ms.write_with_backup(sh, hoja, upd, f"Revisión de beta y ventas/capital con criterio Damodaran ({tk}, 5-oct-2026)",
-                                     OUT)
+                                     respaldo(tk))
                 sh.worksheet(hoja).update_notes(NOTAS[tk][hoja])
         if apply:
             v = sh.values_batch_get([f"'{CC}'!B24", f"'{IS}'!B36"],

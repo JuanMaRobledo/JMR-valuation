@@ -1390,7 +1390,7 @@ def render(r: dict) -> tuple[str, str]:
     ms = sorted({x["margen"] for x in r["inverso"]})
     bs = []
     for x in r["inverso"]:
-        if x["beta"] not in bs:
+        if all(abs(x["beta"] - y) >= 0.02 for y in bs):  # la propuesta casi igual a la de la hoja no agrega una fila
             bs.append(x["beta"])
 
     def gi_txt(x):

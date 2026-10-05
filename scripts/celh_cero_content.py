@@ -86,8 +86,9 @@ CUALITATIVO = {
     "B49": ("Cuatro historias activas: Base (45%), Conservadora (25%), Disrupción (15%) y Optimista (15%); 'Valuation output' "
             "calcula las cuatro con la estructura de Damodaran."),
     "A50": "Riesgo en el descuento",
-    "B50": ("Beta 1,0: la del sector (0,62 reapalancada) corresponde a refrescos diversificados; Celsius depende de una categoría "
-            "y de un distribuidor. Prima de mercado por regiones (4,13%). Regresión: 0,83 (2 años) y 1,55 (5 años)."),
+    "B50": ("Beta 0,62 bottom-up: Beverage (Soft) en EE.UU. 0,58 reapalancada con la D/E de mercado (~11%). La categoría única "
+            "y el distribuidor son riesgos propios y diversificables: están en las historias, no en la tasa (revisión del "
+            "5-oct-2026; antes 1,0). Prima de mercado por regiones (4,13%). Regresión: 0,83 (2 años) y 1,55 (5 años)."),
 }
 
 ESTADISTICAS = {
@@ -122,7 +123,7 @@ STORIES = {
     "G12": "Tasa efectiva del 1S26 (20,1%) que converge a la marginal de 25%.",
     "G13": "1,8 en los años 1-5 y 1,6 en los años 6-10: el capital nuevo rinde ~27% y ~24%, bajo el ROIC de la industria (29%).",
     "G14": "ROIC normalizado ~15,9% con el preferente en el capital; terminal = costo de capital (sin ventaja defendible).",
-    "G15": "Ke 9,42% (rf 5,29% + beta 1,0 × ERP por regiones 4,13%); Kd 6,5% (SOFR + 2,25%); WACC ~9,0%.",
+    "G15": "Ke 7,86% (rf 5,29% + beta 0,62 × ERP por regiones 4,13%); Kd 6,5% (SOFR + 2,25%); WACC ~7,6%.",
 }
 
 SUPUESTOS_RECOMENDADOS = {
@@ -181,7 +182,7 @@ TESIS_ROWS: list[list] = [
     ["Sales-to-Capital (años 1-5)", f"={INP}!B32", f"={INP}!B32", f"={INP}!B32",
      "1,8 (1,6 en los años 6-10): ~27% y ~24% sobre el capital nuevo, bajo el ROIC de la industria (29%)."],
     ["Costo de capital (WACC)", f"={COC}!B14", f"={COC}!B14", f"={COC}!B14",
-     "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,0 × ERP por regiones 4,13% (Damodaran, sep-2026) = Ke 9,42%; Kd 6,5%."],
+     "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,62 × ERP por regiones 4,13% (Damodaran, sep-2026) = Ke 7,86%; Kd 6,5%."],
     ["Referencia: margen base normalizado (B6)", f"={VO}!B6", f"={VO}!B6", f"={VO}!B6",
      "EBIT GAAP LTM US$160,3M + US$441,6M de cargos de una vez = US$601,9M (+ arrendamientos); el litigio queda como costo."],
     [],
@@ -205,7 +206,7 @@ TESIS_ROWS: list[list] = [
     [7, "Input sheet!B17 / B18", "I+D Yes · arrendamientos No", "No · Yes", "I+D inmaterial; arrendamientos como deuda (Damodaran)."],
     [8, "Input sheet!B22 / B24 / B38-B42", "253,0M · tasa LTM 8,8% · sin opciones", "255,1M (con RSU) · 20,1% · 2,313M opciones a US$6,28", "10-Q 2T26 y 10-K 2025."],
     [9, "Input sheet!B76", "Sin preferentes", "US$1.135M (liquidación)", "Series A y B de PepsiCo (10-Q 2T26)."],
-    [10, "Cost of capital worksheet", "Beta del sector · rating · país de registro", "Beta 1,0 · Kd 6,5% directo · prima por regiones", "Riesgo propio; deuda real a tasa variable; ventas por región del 10-K."],
+    [10, "Cost of capital worksheet", "Beta del sector · rating · país de registro", "Beta del sector en EE.UU. · Kd 6,5% directo · prima por regiones", "96% de las ventas en Norteamérica; deuda real a tasa variable; ventas por región del 10-K."],
     [11, "Input sheet!B4 / D1 · Trailing L3", "Fecha y precio de la corrida", "30-sep-2026 · US$27,35", "Fecha de corte común de la cartera."],
     [12, "Descuento de múltiplos fila 38 / 43", "DCF de 'Valuation output' · MOS sobre el ponderado", "Historias · MOS sobre el esperado", "Presentación vigente."],
     [],

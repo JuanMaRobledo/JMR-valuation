@@ -13,24 +13,24 @@ currency: "USD"
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$21,02 por acción** (historia «Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría»).
+**Valor intrínseco principal · DCF Base hoy: US$23,06 por acción** (historia «Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría»).
 
-**Complemento · DCF esperado por probabilidades: US$18,70 por acción.**
+**Complemento · DCF esperado por probabilidades: US$20,52 por acción.**
 
 | Historia activa | Probabilidad | DCF hoy por acción |
 |---|---:|---:|
-| Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría | 45% | US$21,02 |
-| Conservadora · CELSIUS sigue cediendo y las promociones se quedan | 25% | US$14,33 |
-| Disrupción · Deterioro de los fundamentales: la regulación de la cafeína alcanza a Alani Nu y la moda pasa | 15% | US$6,34 |
-| Optimista · Plataforma multimarca con PepsiCo y exterior | 15% | US$31,38 |
-| DCF esperado (complemento) | 100% | US$18,70 |
-| Precio con margen de seguridad (35% sobre el esperado) | | US$12,15 |
+| Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría | 45% | US$23,06 |
+| Conservadora · CELSIUS sigue cediendo y las promociones se quedan | 25% | US$15,74 |
+| Disrupción · Deterioro de los fundamentales: la regulación de la cafeína alcanza a Alani Nu y la moda pasa | 15% | US$7,00 |
+| Optimista · Plataforma multimarca con PepsiCo y exterior | 15% | US$34,37 |
+| DCF esperado (complemento) | 100% | US$20,52 |
+| Precio con margen de seguridad (35% sobre el esperado) | | US$13,34 |
 
 'Valuation output' calcula las cuatro historias con la estructura de Damodaran (Base B35, Conservadora B86, Optimista B137, Disrupción B190) y «Escenarios e historias» las resume; el motor del Modelo JMR las reproduce al centavo.
 
-Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos al presente US$35,00 / US$28,67 / US$41,74 y a 3 años sin descontar US$44,80 / US$32,27 / US$60,38; ponderado DCF + múltiplos (60%/40%, categoría «Crecimiento») al presente US$26,61 / US$20,06 / US$35,53 y a 3 años sin descontar US$34,44 / US$24,17 / US$48,82, con el DCF capitalizado a FY+3 (US$27,54 / US$18,77 / US$41,11). Ninguno es valor intrínseco; las dos tablas completas están en «Resultados».
+Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos al presente US$45,54 / US$36,63 / US$55,70 y a 3 años sin descontar US$56,52 / US$40,10 / US$77,93; ponderado DCF + múltiplos (60%/40%, categoría «Crecimiento») al presente US$32,05 / US$24,10 / US$42,90 y a 3 años sin descontar US$39,97 / US$27,89 / US$57,05, con el DCF capitalizado a FY+3 (US$28,93 / US$19,75 / US$43,12). Ninguno es valor intrínseco; las dos tablas completas están en «Resultados».
 
-**Qué cambió frente a la valoración del 1-oct-2026** (DCF Base US$23,83 y esperado US$20,77 en la app tras las revisiones del 3-4 oct): el acuerdo legal de 2026 ya no se suma al EBIT normalizado (los litigios se repiten), el margen objetivo de la Base baja de 21% a 20%, la Base crece menos (4,8% compuesto frente a 5,9%) porque la categoría se desaceleró y la marca CELSIUS cae también al consumidor, Alani Nu se valoró por su precio total (US$2.055,6 millones), los múltiplos se acercan más al justificado (λ = 0,75) y el porcentaje de otros ingresos sobre el EBIT proyectado pasa de +8% por defecto a −3%.
+**Qué cambió frente a la valoración del 1-oct-2026** (DCF Base US$23,83 y esperado US$20,77 en la app tras las revisiones del 3-4 oct): el acuerdo legal de 2026 ya no se suma al EBIT normalizado (los litigios se repiten), el margen objetivo de la Base baja de 21% a 20%, la Base crece menos (4,8% compuesto frente a 5,9%) porque la categoría se desaceleró y la marca CELSIUS cae también al consumidor, Alani Nu se valoró por su precio total (US$2.055,6 millones), los múltiplos se acercan más al justificado (λ = 0,75) y el porcentaje de otros ingresos sobre el EBIT proyectado pasa de +8% por defecto a −3%. En la revisión de betas del 5-oct-2026 la beta pasó de 1,0 (escrita a mano) a la bottom-up del sector (0,62): el DCF Base subió de US$21,02 a US$23,06 y el esperado de US$18,70 a US$20,52.
 
 ## 2. Historia y visión externa
 
@@ -71,40 +71,40 @@ Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos a
 | ROIC después del año 10 | = costo de capital (9,38%) | Input B49 = No | Sin ventaja defendible | Marcas jóvenes; distribución por contrato | ROIC actual 15,9% |
 | Otros ingresos / EBIT (múltiplos) | −3% | 'Financials Multiples' E11/E50/E90 | Costo financiero neto LTM (−18,6 / 601,9) | Préstamo vigente hasta 2032 | Intereses podrían bajar con amortizaciones |
 
-**Costo de capital.** Tasa libre de riesgo 5,29% (UST 10 años al 30-sep-2026); prima de mercado ponderada por regiones 4,13% (Damodaran, septiembre de 2026: 4,09% madura, EE.UU. sin prima país, ventas 2025 por región del 10-K); beta usada 1,00 frente a la de regresión semanal de 0,83 (dos años) y 1,55 (cinco años) y la bottom-up de Beverage (Soft) de 0,58 desapalancada (~0,63 reapalancada); Ke 9,42%; Kd 6,5% antes de impuestos (SOFR + 2,25%), 4,88% después; peso del patrimonio 90,2%; WACC inicial 8,98% y terminal 9,38%. La beta 1,0 suma a la del sector un ajuste por riesgo propio no diversificable (una sola categoría discrecional y un distribuidor con ~60% de las ventas); la moda y la regulación no están en la tasa sino en las historias. Efecto en el DCF Base: US$23,03 con la beta del sector, US$21,02 con la usada y US$18,37 con la regresión a cinco años.
+**Costo de capital.** Tasa libre de riesgo 5,29% (UST 10 años al 30-sep-2026); prima de mercado ponderada por regiones 4,13% (Damodaran, septiembre de 2026: 4,09% madura, EE.UU. sin prima país, ventas 2025 por región del 10-K); beta usada 0,62, la bottom-up de Beverage (Soft) en EE.UU. (0,58 desapalancada y corregida por caja, reapalancada por la hoja con la D/E de mercado; «Single Business(US)» porque 96% de las ventas está en Norteamérica), frente a la de regresión semanal de 0,83 (dos años) y 1,55 (cinco años); Ke 7,86%; Kd 6,5% antes de impuestos (SOFR + 2,25%), 4,88% después; peso del patrimonio 90,2%; WACC inicial 7,57% y terminal 9,38%. La categoría única, el distribuidor con ~60% de las ventas, la moda y la regulación son riesgos propios y diversificables: están en las historias Conservadora y Disrupción, no en la tasa (prompt v4: no contar el mismo riesgo en flujos, probabilidades y tasa). Hasta la revisión del 5-oct-2026 la hoja usaba 1,0 (0,62 + 0,38 por esos riesgos), que los contaba dos veces. Efecto en el DCF Base: US$23,06 con la beta usada, US$21,02 con la anterior (1,0) y US$18,37 con la regresión a cinco años.
 
 ## 5. Historias, probabilidades y valor esperado
 
-| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 1,00) |
+| Historia | Probabilidad | Crecimiento por segmento (años 1-5) | CAGR de ingresos del grupo (años 1–5) | Margen objetivo | Sales-to-capital | Crecimiento terminal | Valor/acción (beta 0,62) |
 |---|---:|---|---:|---:|---:|---:|---:|
-| **Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría** | 45% | Celsius: -3%, 2%, 3%, 3%, 3%; Alani Nu: 12%, 10%, 8%, 6%, 5%; Rockstar: 27%, -8%, -6%, -5%, -4% | 4,8% | 20,1% | 1,8 | 5,29% | US$21,02 |
-| **Conservadora · CELSIUS sigue cediendo y las promociones se quedan** | 25% | Celsius: -6%, -4%, -3%, -2%, -1%; Alani Nu: 8%, 5%, 4%, 3%, 3%; Rockstar: 22%, -12%, -10%, -8%, -6% | 0,7% | 17,1% | 1,8 | 5,29% | US$14,33 |
-| **Disrupción · Deterioro de los fundamentales: La regulación de la cafeína alcanza a Alani Nu y la moda pasa** | 15% | Celsius: -10%, -8%, -6%, -4%, -3%; Alani Nu: -5%, -15%, -10%, -6%, -4%; Rockstar: 18%, -15%, -12%, -10%, -8% | −7,1% | 12,1% | 1,8 | 0,00% | US$6,34 |
-| **Optimista · Plataforma multimarca con PepsiCo y exterior** | 15% | Celsius: 2%, 7%, 7%, 6%, 5%; Alani Nu: 22%, 15%, 12%, 9%, 7%; Rockstar: 30%, 0%, 0%, 0%, 0% | 9,2% | 23,6% | 1,8 | 5,29% | US$31,38 |
-| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$18,70** |
+| **Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría** | 45% | Celsius: -3%, 2%, 3%, 3%, 3%; Alani Nu: 12%, 10%, 8%, 6%, 5%; Rockstar: 27%, -8%, -6%, -5%, -4% | 4,8% | 20,1% | 1,8 | 5,29% | US$23,06 |
+| **Conservadora · CELSIUS sigue cediendo y las promociones se quedan** | 25% | Celsius: -6%, -4%, -3%, -2%, -1%; Alani Nu: 8%, 5%, 4%, 3%, 3%; Rockstar: 22%, -12%, -10%, -8%, -6% | 0,7% | 17,1% | 1,8 | 5,29% | US$15,74 |
+| **Disrupción · Deterioro de los fundamentales: La regulación de la cafeína alcanza a Alani Nu y la moda pasa** | 15% | Celsius: -10%, -8%, -6%, -4%, -3%; Alani Nu: -5%, -15%, -10%, -6%, -4%; Rockstar: 18%, -15%, -12%, -10%, -8% | −7,1% | 12,1% | 1,8 | 0,00% | US$7,00 |
+| **Optimista · Plataforma multimarca con PepsiCo y exterior** | 15% | Celsius: 2%, 7%, 7%, 6%, 5%; Alani Nu: 22%, 15%, 12%, 9%, 7%; Rockstar: 30%, 0%, 0%, 0%, 0% | 9,2% | 23,6% | 1,8 | 5,29% | US$34,37 |
+| **DCF esperado (complemento)** | 100% |  |  |  |  |  | **US$20,52** |
 
-DCF esperado = 0,45 × 21,02 + 0,25 × 14,33 + 0,15 × 6,34 + 0,15 × 31,38 = US$18,70. Las probabilidades son juicio del analista: la Base es la extrapolación prudente de lo observado; la Conservadora es lo que muestran hoy la facturación de CELSIUS y los datos de julio; la Disrupción refleja que la categoría ya vio marcas desplomarse y que la marca que crece está bajo investigación; la Optimista exige que se cumplan a la vez la recuperación de CELSIUS, el exterior y el margen bruto. La Disrupción se estabiliza sin recuperación (crecimiento terminal 0%) y en las cuatro historias el ROIC terminal es el costo de capital.
+DCF esperado = 0,45 × 23,06 + 0,25 × 15,74 + 0,15 × 7,00 + 0,15 × 34,37 = US$20,52. Las probabilidades son juicio del analista: la Base es la extrapolación prudente de lo observado; la Conservadora es lo que muestran hoy la facturación de CELSIUS y los datos de julio; la Disrupción refleja que la categoría ya vio marcas desplomarse y que la marca que crece está bajo investigación; la Optimista exige que se cumplan a la vez la recuperación de CELSIUS, el exterior y el margen bruto. La Disrupción se estabiliza sin recuperación (crecimiento terminal 0%) y en las cuatro historias el ROIC terminal es el costo de capital.
 
 Puente de los cuatro DCF (US$ millones):
 
 | Historia | VP FCFF años 1–10 | VP terminal | Activos operativos | Patrimonio, tras caja y deuda | DCF/acción |
 |---|---:|---:|---:|---:|---:|
-| Base | 3.203,43 | 3.425,34 | 6.628,78 | 5.362,64 | 21,02 |
-| Conservadora | 2.654,39 | 2.266,92 | 4.921,30 | 3.655,17 | 14,33 |
-| Disrupción | 2.092,11 | 791,30 | 2.883,41 | 1.617,27 | 6,34 |
-| Optimista | 4.138,14 | 5.134,54 | 9.272,69 | 8.006,55 | 31,38 |
+| Base | 3.397,57 | 3.751,67 | 7.149,24 | 5.883,10 | 23,06 |
+| Conservadora | 2.798,70 | 2.482,88 | 5.281,58 | 4.015,45 | 15,74 |
+| Disrupción | 2.185,93 | 866,68 | 3.052,61 | 1.786,47 | 7,00 |
+| Optimista | 4.410,87 | 5.623,70 | 10.034,57 | 8.768,44 | 34,37 |
 
-Ejemplo Base: Ejemplo Base: (3.203,43 + 3.425,34 + 631 − 712 − 50 − 1.135) / 255,1 = US$21,02 por acción. El terminal representa 51,7% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
+Ejemplo Base: Ejemplo Base: (3.397,57 + 3.751,67 + 631 − 712 − 50 − 1.135) / 255,1 = US$23,06 por acción. El terminal representa 52,5% del valor operativo de la Base: el resultado depende materialmente del crecimiento perpetuo, del WACC terminal y de la duración del retorno excedente.
 
 Sensibilidad crecimiento × margen del DCF Base (crecimiento constante en los años 1-5; US$ por acción):
 
 | Crecimiento \ Margen | 16,1% | 18,1% | 20,1% | 22,1% | 24,1% |
 |---|---:|---:|---:|---:|---:|
-| 0,8% | 13,24 | 15,20 | 17,16 | 19,12 | 21,08 |
-| 2,8% | 14,62 | 16,84 | 19,05 | 21,27 | 23,48 |
-| 4,8% | 16,14 | 18,64 | 21,14 | 23,64 | 26,14 |
-| 6,8% | 17,81 | 20,62 | 23,44 | 26,26 | 29,07 |
-| 8,8% | 19,63 | 22,80 | 25,97 | 29,14 | 32,31 |
+| 0,8% | 14,57 | 16,70 | 18,82 | 20,95 | 23,07 |
+| 2,8% | 16,10 | 18,50 | 20,90 | 23,31 | 25,71 |
+| 4,8% | 17,77 | 20,49 | 23,20 | 25,91 | 28,63 |
+| 6,8% | 19,61 | 22,67 | 25,73 | 28,79 | 31,85 |
+| 8,8% | 21,63 | 25,08 | 28,52 | 31,96 | 35,40 |
 
 **Pre-mortem.** (1) Alani Nu fue una moda: el consumo pasa de +56% a negativo en 2027 cuando deja de ganar puntos de venta; (2) CELSIUS no vuelve a crecer y su participación baja de 9,5% a ~7%; (3) Texas u otros estados imponen límites de edad o advertencias a las bebidas con 200 mg de cafeína; (4) el aluminio y las promociones dejan el margen bruto en 45-46%; (5) PepsiCo prioriza marcas propias o renegocia la capitanía. Evidencia en contra de la Base: tres trimestres de caída en la facturación de CELSIUS, −7,2% al consumidor en julio y una categoría que pasó de +15% a +7%.
 
@@ -114,11 +114,11 @@ Sensibilidad crecimiento × margen del DCF Base (crecimiento constante en los a�
 
 | Método | Ancla historia | Ancla peers (ajustada) | Ancla justificado Base/Cons/Opt | Base | Conservador | Optimista | Antes (J19/J8/J30) |
 |---|---|---|---|---:|---:|---:|---|
-| EV/EBITDA | mediana Dec '24 (etapa actual) = 32,6x | 21,6x (n=5: MNST 27,5x, KO 23,4x, PEP 11,4x, FIZZ 11,5x, COCO 21,6x) × 0,80 = 17,3x | 16,0x / 15,2x / 17,3x | **18,3x** | 15,1x | 19,3x | 32,6x / —x / —x |
-| EV/FCFF | mediana Dec '24 (etapa actual) = 24,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF) | 23,7x (n=5: MNST 38,8x, KO 25,7x, PEP 21,1x, FIZZ 17,2x, COCO 23,7x) × 0,80 = 18,9x | 24,5x / 20,2x / 29,3x | **23,8x** | 21,5x | 26,0x | 26,2x / —x / —x |
-| P/E | mediana Dec '24 (etapa actual) = 43,2x | 25,7x (n=5: MNST 39,8x, KO 25,7x, PEP 16,5x, FIZZ 16,3x, COCO 30,9x) × 0,80 = 20,6x | 20,6x / 17,1x / 24,7x | **23,4x** | 19,3x | 26,5x | 42,7x / —x / —x |
-| P/FCFE | mediana Dec '24 (etapa actual) = 25,9x | 25,8x (n=5: MNST 40,4x, KO 25,8x, PEP 18,5x, FIZZ 17,5x, COCO 26,0x) × 0,80 = 20,6x | 23,0x / 19,2x / 27,2x | **23,1x** | 19,6x | 24,6x | 23,5x / —x / —x |
-| P/OCF | mediana Dec '24 (etapa actual) = 23,5x | 22,6x (n=5: MNST 37,6x, KO 22,6x, PEP 12,8x, FIZZ 15,2x, COCO 24,6x) × 0,80 = 18,0x | 22,4x / 17,4x / 28,0x | **22,0x** | 18,0x | 24,5x | 24,2x / —x / —x |
+| EV/EBITDA | mediana Dec '24 (etapa actual) = 32,6x | 21,6x (n=5: MNST 27,5x, KO 23,4x, PEP 11,4x, FIZZ 11,5x, COCO 21,6x) × 0,80 = 17,3x | 19,8x / 18,0x / 22,3x | **21,1x** | 17,2x | 22,6x | 32,6x / —x / —x |
+| EV/FCFF | mediana Dec '24 (etapa actual) = 24,2x (EV/FCF × 1,09 = FCF después de intereses ÷ FCFF) | 23,7x (n=5: MNST 38,8x, KO 25,7x, PEP 21,1x, FIZZ 17,2x, COCO 23,7x) × 0,80 = 18,9x | 30,2x / 24,0x / 37,7x | **28,0x** | 25,1x | 31,1x | 26,2x / —x / —x |
+| P/E | mediana Dec '24 (etapa actual) = 43,2x | 25,7x (n=5: MNST 39,8x, KO 25,7x, PEP 16,5x, FIZZ 16,3x, COCO 30,9x) × 0,80 = 20,6x | 31,3x / 24,0x / 41,3x | **31,5x** | 25,3x | 36,9x | 42,7x / —x / —x |
+| P/FCFE | mediana Dec '24 (etapa actual) = 25,9x | 25,8x (n=5: MNST 40,4x, KO 25,8x, PEP 18,5x, FIZZ 17,5x, COCO 26,0x) × 0,80 = 20,6x | 35,1x / 27,0x / 45,6x | **32,1x** | 26,6x | 35,4x | 23,5x / —x / —x |
+| P/OCF | mediana Dec '24 (etapa actual) = 23,5x | 22,6x (n=5: MNST 37,6x, KO 22,6x, PEP 12,8x, FIZZ 15,2x, COCO 24,6x) × 0,80 = 18,0x | 34,1x / 24,4x / 46,9x | **30,8x** | 24,5x | 35,6x | 24,2x / —x / —x |
 
 Regla: Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado, dentro del rango de las tres anclas; Conservador y Optimista = Base × la dispersión promedio de las anclas (P25/mediana y P75/mediana de historia y peers; justificado Conservador/Base y Optimista/Base). Múltiplo justificado: g = punto medio entre el crecimiento de los años 4-10 del escenario y el de perpetuidad; EV/FCFF = (1+g)/(WACC−g), P/FCFE = (1+g)/(Ke−g), P/E = (1 − g/ROE)(1+g)/(Ke−g), EV/EBITDA y P/OCF convertidos con FCFF/EBITDA y FCFE/OCF de FY+3.
 
@@ -126,7 +126,7 @@ Regla: Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado
 
 **Por método.** EV/FCFF (peso 15%) es el más consistente con el DCF porque usa el mismo flujo operativo y casi no lo afectan la estructura de capital ni las preferentes. EV/EBITDA (10%) ignora la reinversión y la compensación en acciones. P/E (5%) depende del costo financiero y de que la utilidad no repita cargos de una vez; con las preferentes, la utilidad del accionista común es menor que la neta. P/FCFE (5%) tiene un salto en FY+1 porque la plantilla proyecta endeudamiento neto proporcional al crecimiento de ventas medido desde el cierre de 2025 (+24% hasta FY+1); por eso su VP a 1 año es mayor que a 2 y 3 años. P/OCF (5%) ignora la compensación en acciones y el capex.
 
-**Chequeo de independencia (6.4).** Los múltiplos consolidados Base hoy (US$35,00) están 67% por encima del DCF Base (US$21,02), fuera del ±25%. No se movió ningún múltiplo para acercarlos. La diferencia es de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos, y el propio múltiplo justificado supone que el ROE de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10. Para esta empresa el DCF es más confiable.
+**Chequeo de independencia (6.4).** Los múltiplos consolidados Base hoy (US$45,54) están 97% por encima del DCF Base (US$23,06), fuera del ±25%. No se movió ningún múltiplo para acercarlos. La diferencia es de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos, y el propio múltiplo justificado supone que el ROE de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10. Para esta empresa el DCF es más confiable.
 
 ## 7. Resultados
 
@@ -134,77 +134,77 @@ Regla: Regla: Base = (1 − λ) × promedio(historia, peers) + λ × justificado
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
-| DCF de las historias al presente | — | 60% | — | US$21,02 | US$14,33 | US$31,38 |
-| EV/EBITDA | 18,3× / 15,1× / 19,3× | 10% | 25% | US$37,57 | US$26,15 | US$47,89 |
-| EV/FCFF | 23,8× / 21,5× / 26,0× | 15% | 37% | US$30,51 | US$28,79 | US$33,72 |
-| P/E | 23,4× / 19,3× / 26,5× | 5% | 12% | US$39,89 | US$28,80 | US$53,56 |
-| P/FCFE | 23,1× / 19,6× / 24,6× | 5% | 12% | US$38,83 | US$32,43 | US$44,71 |
-| P/OCF | 22,0× / 18,0× / 24,5× | 5% | 12% | US$34,60 | US$29,43 | US$38,75 |
-| **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$35,00 | US$28,67 | US$41,74 |
-| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$26,61 | US$20,06 | US$35,53 |
+| DCF de las historias al presente | — | 60% | — | US$23,06 | US$15,74 | US$34,37 |
+| EV/EBITDA | 21,1× / 17,2× / 22,6× | 10% | 25% | US$45,22 | US$31,11 | US$58,47 |
+| EV/FCFF | 28,0× / 25,1× / 31,1× | 15% | 37% | US$37,80 | US$35,21 | US$42,52 |
+| P/E | 31,5× / 25,3× / 36,9× | 5% | 12% | US$55,18 | US$38,78 | US$76,75 |
+| P/FCFE | 32,1× / 26,6× / 35,4× | 5% | 12% | US$55,49 | US$45,13 | US$66,37 |
+| P/OCF | 30,8× / 24,5× / 35,6× | 5% | 12% | US$49,81 | US$41,30 | US$57,98 |
+| **Ponderado de múltiplos solos al presente** | — | 40% | 100% | US$45,54 | US$36,63 | US$55,70 |
+| **Ponderado DCF + múltiplos al presente** | — | 100% | — | US$32,05 | US$24,10 | US$42,90 |
 
 **Tabla 2 · Valor por acción a 3 años sin descontar (FY+3).** Precio al cierre de FY+3 (la hoja no proyecta dividendos: precio objetivo exdividendo = total).
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
-| DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$27,54 | US$18,77 | US$41,11 |
-| EV/EBITDA | 18,3× / 15,1× / 19,3× | 10% | 25% | US$48,12 | US$30,14 | US$67,01 |
-| EV/FCFF | 23,8× / 21,5× / 26,0× | 15% | 37% | US$40,24 | US$32,58 | US$52,43 |
-| P/E | 23,4× / 19,3× / 26,5× | 5% | 12% | US$50,51 | US$33,12 | US$73,87 |
-| P/FCFE | 23,1× / 19,6× / 24,6× | 5% | 12% | US$45,91 | US$33,36 | US$59,86 |
-| P/OCF | 22,0× / 18,0× / 24,5× | 5% | 12% | US$44,99 | US$33,68 | US$58,01 |
-| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 40% | 100% | US$44,80 | US$32,27 | US$60,38 |
-| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$34,44 | US$24,17 | US$48,82 |
+| DCF capitalizado a FY+3 antes de distribuciones | — | 60% | — | US$28,93 | US$19,75 | US$43,12 |
+| EV/EBITDA | 21,1× / 17,2× / 22,6× | 10% | 25% | US$56,23 | US$34,90 | US$79,30 |
+| EV/FCFF | 28,0× / 25,1× / 31,1× | 15% | 37% | US$48,34 | US$38,81 | US$63,83 |
+| P/E | 31,5× / 25,3× / 36,9× | 5% | 12% | US$67,90 | US$43,38 | US$102,79 |
+| P/FCFE | 32,1× / 26,6× / 35,4× | 5% | 12% | US$63,84 | US$45,23 | US$86,35 |
+| P/OCF | 30,8× / 24,5× / 35,6× | 5% | 12% | US$62,92 | US$45,98 | US$84,20 |
+| **Ponderado de múltiplos solos a 3 años sin descontar** | — | 40% | 100% | US$56,52 | US$40,10 | US$77,93 |
+| **Ponderado DCF + múltiplos a 3 años sin descontar** | — | 100% | — | US$39,97 | US$27,89 | US$57,05 |
 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 
-Detalle del valor presente por horizonte (Ke 9,42%; consolidado por método: Promedio 1-3 años; cada dividendo descontado en su año de pago):
+Detalle del valor presente por horizonte (Ke 7,86%; consolidado por método: Promedio 1-3 años; cada dividendo descontado en su año de pago):
 
 | Método | Escenario | VP 1 año | VP 2 años | VP 3 años | Consolidado hoy | VP3 < FY+3 |
 |---|---|---:|---:|---:|---:|---|
-| EV/EBITDA | Base | US$38,27 | US$37,70 | US$36,73 | US$37,57 | OK |
-| EV/EBITDA | Conservador | US$29,69 | US$25,76 | US$23,00 | US$26,15 | OK |
-| EV/EBITDA | Optimista | US$43,72 | US$48,79 | US$51,15 | US$47,89 | OK |
-| EV/FCFF | Base | US$30,52 | US$30,31 | US$30,71 | US$30,51 | OK |
-| EV/FCFF | Conservador | US$33,28 | US$28,22 | US$24,87 | US$28,79 | OK |
-| EV/FCFF | Optimista | US$26,90 | US$34,23 | US$40,02 | US$33,72 | OK |
-| P/E | Base | US$41,15 | US$39,97 | US$38,55 | US$39,89 | OK |
-| P/E | Conservador | US$32,76 | US$28,37 | US$25,28 | US$28,80 | OK |
-| P/E | Optimista | US$49,83 | US$54,45 | US$56,38 | US$53,56 | OK |
-| P/FCFE | Base | US$46,26 | US$35,18 | US$35,04 | US$38,83 | OK |
-| P/FCFE | Conservador | US$43,20 | US$28,62 | US$25,47 | US$32,43 | OK |
-| P/FCFE | Optimista | US$47,03 | US$41,41 | US$45,69 | US$44,71 | OK |
-| P/OCF | Base | US$35,07 | US$34,40 | US$34,34 | US$34,60 | OK |
-| P/OCF | Conservador | US$33,63 | US$28,95 | US$25,71 | US$29,43 | OK |
-| P/OCF | Optimista | US$32,76 | US$39,22 | US$44,28 | US$38,75 | OK |
+| EV/EBITDA | Base | US$45,46 | US$45,38 | US$44,81 | US$45,22 | OK |
+| EV/EBITDA | Conservador | US$34,83 | US$30,68 | US$27,81 | US$31,11 | OK |
+| EV/EBITDA | Optimista | US$52,71 | US$59,51 | US$63,19 | US$58,47 | OK |
+| EV/FCFF | Base | US$37,34 | US$37,55 | US$38,53 | US$37,80 | OK |
+| EV/FCFF | Conservador | US$40,13 | US$34,57 | US$30,93 | US$35,21 | OK |
+| EV/FCFF | Optimista | US$33,63 | US$43,08 | US$50,87 | US$42,52 | OK |
+| P/E | Base | US$56,12 | US$55,30 | US$54,11 | US$55,18 | OK |
+| P/E | Conservador | US$43,53 | US$38,25 | US$34,57 | US$38,78 | OK |
+| P/E | Optimista | US$70,35 | US$77,98 | US$81,91 | US$76,75 | OK |
+| P/FCFE | Base | US$65,26 | US$50,35 | US$50,88 | US$55,49 | OK |
+| P/FCFE | Conservador | US$59,41 | US$39,93 | US$36,05 | US$45,13 | OK |
+| P/FCFE | Optimista | US$68,82 | US$61,49 | US$68,81 | US$66,37 | OK |
+| P/OCF | Base | US$49,76 | US$49,52 | US$50,14 | US$49,81 | OK |
+| P/OCF | Conservador | US$46,58 | US$40,68 | US$36,64 | US$41,30 | OK |
+| P/OCF | Optimista | US$48,24 | US$58,59 | US$67,10 | US$57,98 | OK |
 
-Ke de descuento de los múltiplos: 9,42%. Chequeo VP a 3 años < FY+3 sin descontar: OK en los tres casos. MOS 35% sobre el DCF esperado: US$12,15.
+Ke de descuento de los múltiplos: 7,86%. Chequeo VP a 3 años < FY+3 sin descontar: OK en los tres casos. MOS 35% sobre el DCF esperado: US$13,34.
 
 ## 8. DCF frente a múltiplos
 
-Los múltiplos dicen cuánto pagaría el mercado si Celsius se valorara como sus peers; el DCF dice cuánto valen sus flujos con la historia Base y sin una ventaja duradera. Coca-Cola y Monster tienen marcas de décadas y retornos excedentes persistentes; Celsius tiene marcas jóvenes, un distribuidor que no le pertenece y una marca original que cede participación. Que los múltiplos valgan 67% más que el DCF hoy no indica que el DCF esté mal: indica que el mercado paga, en promedio, por ventajas que este análisis no le reconoce a Celsius. Si la marca Alani Nu demostrara durabilidad (un ciclo completo sin perder participación), el ROIC terminal podría subir hacia el de la industria y la brecha se cerraría desde el DCF. Para Celsius el DCF es la lectura más confiable; los múltiplos sirven como referencia del precio relativo.
+Los múltiplos dicen cuánto pagaría el mercado si Celsius se valorara como sus peers; el DCF dice cuánto valen sus flujos con la historia Base y sin una ventaja duradera. Coca-Cola y Monster tienen marcas de décadas y retornos excedentes persistentes; Celsius tiene marcas jóvenes, un distribuidor que no le pertenece y una marca original que cede participación. Que los múltiplos valgan 97% más que el DCF hoy no indica que el DCF esté mal: indica que el mercado paga, en promedio, por ventajas que este análisis no le reconoce a Celsius. Si la marca Alani Nu demostrara durabilidad (un ciclo completo sin perder participación), el ROIC terminal podría subir hacia el de la industria y la brecha se cerraría desde el DCF. Para Celsius el DCF es la lectura más confiable; los múltiplos sirven como referencia del precio relativo.
 
-Crecimiento implícito (paso 6.5): cada múltiplo Base frente al múltiplo que implica el DCF en FY+3 (US$27,54 por acción), ambos por la misma fórmula:
+Crecimiento implícito (paso 6.5): cada múltiplo Base frente al múltiplo que implica el DCF en FY+3 (US$28,93 por acción), ambos por la misma fórmula:
 
 | Múltiplo Base FY+3 | Múltiplo | Múltiplo que implica el DCF | Diferencia de valor | Crecimiento implícito | Crecimiento implícito del DCF | Diferencia | Lectura |
 |---|---:|---:|---:|---:|---:|---:|---|
-| EV/EBITDA | 18,3x | 9,6x | +75% | 5,4% | 2,2% | +3,2 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 75% por encima del DCF en FY+3. |
-| EV/FCFF | 23,8x | 14,6x | +46% | 4,7% | 2,2% | +2,6 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 46% por encima del DCF en FY+3. |
-| P/E | 23,4x | 12,8x | +83% | 5,5% | 1,8% | +3,7 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 83% por encima del DCF en FY+3. |
-| P/FCFE | 23,1x | 13,8x | +67% | 4,9% | 2,1% | +2,8 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 67% por encima del DCF en FY+3. |
-| P/OCF | 22,0x | 13,5x | +63% | 4,8% | 2,1% | +2,7 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 63% por encima del DCF en FY+3. |
+| EV/EBITDA | 21,1x | 10,0x | +94% | 5,1% | 1,7% | +3,4 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 94% por encima del DCF en FY+3. |
+| EV/FCFF | 28,0x | 15,3x | +67% | 4,6% | 1,7% | +2,9 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 67% por encima del DCF en FY+3. |
+| P/E | 31,5x | 13,4x | +135% | 4,9% | 0,4% | +4,4 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 135% por encima del DCF en FY+3. |
+| P/FCFE | 32,1x | 14,6x | +121% | 4,6% | 0,9% | +3,7 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 121% por encima del DCF en FY+3. |
+| P/OCF | 30,8x | 14,1x | +117% | 4,6% | 0,9% | +3,6 pp | Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 117% por encima del DCF en FY+3. |
 
 ## 9. Sensibilidad
 
-| Supuesto (DCF Base de la historia, US$21,02) | Bajo | Alto |
+| Supuesto (DCF Base de la historia, US$23,06) | Bajo | Alto |
 |---|---:|---:|
-| Crecimiento años 1-5 ±2 pp | US$18,96 | US$23,29 |
-| Margen objetivo ±3 pp | US$17,32 | US$24,71 |
-| WACC ±1 pp | US$18,10 (+1 pp) | US$24,67 (−1 pp) |
-| Beta: regresión a 5 años (1,55) / sector (0,63) | US$18,37 | US$23,03 |
-| Ventas/capital ±20% | US$20,36 | US$21,46 |
-| Acciones +5% | US$20,02 | — |
-| Múltiplos ±20% (ponderado DCF + múltiplos Base hoy, US$26,61) | US$23,60 | US$29,62 |
+| Crecimiento años 1-5 ±2 pp | US$20,79 | US$25,55 |
+| Margen objetivo ±2 pp | US$20,38 | US$25,73 |
+| WACC ±1 pp | US$19,86 (+1 pp) | US$27,07 (−1 pp) |
+| Beta: regresión a 5 años (1,55) / anterior (1,0) | US$18,37 | US$21,02 |
+| Ventas/capital ±20% | US$22,35 | US$23,53 |
+| Acciones +5% | US$21,96 | — |
+| Múltiplos ±20% (ponderado DCF + múltiplos Base hoy, US$32,05) | US$28,19 | US$35,91 |
 
 El valor es más sensible al costo de capital y al margen que al crecimiento: con el ROIC terminal igual al costo de capital, crecer más solo suma valor durante los diez años explícitos.
 
@@ -222,7 +222,7 @@ Respaldo de cada celda en `reference/backups/celh_desde_cero_2026-10-05.json` (r
 | 6 | Input B15 | =L35 | =L35 + 1.759,975 | Capital invertido con el preferente |
 | 7 | Input B16-B18, B22, B24, B38-B42, B76 | Valores de la plantilla | Deuda nominal, I+D No, arrendamientos Yes, RSU, tasa 20,1%, opciones, preferentes 1.135 | 10-Q y 10-K |
 | 8 | Operating lease converter | Datos de otra empresa | Gasto y compromisos del 10-K 2025 | Arrendamientos como deuda |
-| 9 | Cost of capital | Beta del sector, rating, país de registro | Beta 1,0, Kd 6,5%, prima por regiones (ventas 2025) | Riesgo propio; deuda real; criterio de Damodaran |
+| 9 | Cost of capital | Beta del sector, rating, país de registro | «Single Business(US)» (beta 0,62), Kd 6,5%, prima por regiones (ventas 2025) | 96% de las ventas en Norteamérica; riesgos propios en las historias (revisión del 5-oct-2026; antes beta 1,0 escrita a mano); deuda real; criterio de Damodaran |
 | 10 | Input B27-B33, B49 | Valores automáticos | Historia Base; ROIC terminal = costo de capital | Supuestos anclados |
 | 11 | «Escenarios e historias» | Vacía | Cuatro DCF por fórmulas | Contrato de escenarios |
 | 12 | 'Financials Multiples' E11/E50/E90 | Promedio 2023-2025 (+8%) | −3% | Costo financiero neto LTM |
@@ -231,7 +231,7 @@ Respaldo de cada celda en `reference/backups/celh_desde_cero_2026-10-05.json` (r
 | 15 | Fila 38 y 43 de «Descuento de múltiplos» | DCF de 'Valuation output' y MOS sobre el ponderado | Historias y MOS sobre el esperado | Presentación vigente |
 | 16 | Textos (Cualitativo, Estadísticas, Stories to Numbers, Supuestos Recomendados, Tesis) | Plantilla con datos de otra empresa | Contenido de CELH | Paso 10 |
 
-Controles: fórmula única verificada (`apply_canonical_formulas.py` en seco: 0 celdas pendientes); el motor del Modelo JMR reproduce el DCF de la hoja (US$21,02) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado; el escaneo de integridad (`integridad_hojas.py`) da 0 hallazgos y el control de consistencia de la app 16 de 16. Datos enlazados con ajuste y nota: B13, B15, B16, B22 de la Input sheet. Supuestos escritos a mano: B24, B27-B33, B49, B76, beta, Kd, E11/E50/E90 y J8/J19/J30.
+Controles: fórmula única verificada (`apply_canonical_formulas.py` en seco: 0 celdas pendientes); el motor del Modelo JMR reproduce el DCF de la hoja (US$23,06) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado; el escaneo de integridad (`integridad_hojas.py`) da 0 hallazgos y el control de consistencia de la app 16 de 16. Datos enlazados con ajuste y nota: B13, B15, B16, B22 de la Input sheet. Supuestos escritos a mano: B24, B27-B33, B49, B76, beta, Kd, E11/E50/E90 y J8/J19/J30.
 
 ## 11. El precio al final
 
@@ -241,11 +241,11 @@ DCF inverso: crecimiento anual de ingresos de los años 1-5 que justifica el pre
 
 |  | Margen 17,1% | Margen 20,1% | Margen 23,6% |
 |---|---:|---:|---:|
-| Beta 0,63 (sector) | 12,0% (26%) | 8,0% (48%) | 4,4% (70%) |
-| Beta 1,00 (usada) | 14,0% (20%) | 9,8% (38%) | 6,1% (60%) |
+| Beta 0,62 (usada: bottom-up del sector) | 12,0% (26%) | 8,0% (48%) | 4,4% (70%) |
+| Beta 1,00 (anterior) | 14,0% (20%) | 9,8% (38%) | 6,1% (60%) |
 | Beta 1,55 (regresión a 5 años) | 16,9% (13%) | 12,5% (24%) | 8,6% (45%) |
 
-Frente al DCF Base (US$21,02), el precio está 30% por encima; frente al esperado (US$18,70), 46% por encima. Con la beta y el margen de la Base, el precio pide crecer ~9,8% anual en los años 1-5, frente al 4,8% de la Base: una historia cercana a la Optimista. Los cinco múltiplos Base implican entre 2,6 y 3,7 pp más de crecimiento perpetuo que el DCF en FY+3. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera (ROIC terminal mayor que el costo de capital), por una recuperación de CELSIUS más rápida o por la opción de nuevas compras. Los internos compraron acciones en septiembre a US$27-28; es una señal de confianza, no una evidencia sobre el margen ni sobre la participación.
+Frente al DCF Base (US$23,06), el precio está 19% por encima; frente al esperado (US$20,52), 33% por encima. Con la beta y el margen de la Base, el precio pide crecer ~8,0% anual en los años 1-5, frente al 4,8% de la Base: una historia cercana a la Optimista. Los cinco múltiplos Base implican entre 2,9 y 4,4 pp más de crecimiento perpetuo que el DCF en FY+3. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como ventaja duradera (ROIC terminal mayor que el costo de capital), por una recuperación de CELSIUS más rápida o por la opción de nuevas compras. Los internos compraron acciones en septiembre a US$27-28; es una señal de confianza, no una evidencia sobre el margen ni sobre la participación.
 
 ## 12. Registro de decisión
 
@@ -254,9 +254,9 @@ Frente al DCF Base (US$21,02), el precio está 30% por encima; frente al esperad
 | Fecha | 2026-09-30 (corte); análisis del 2026-10-05 | |
 | Historia en una frase | Portafolio de tres marcas distribuido por PepsiCo: Alani Nu crece, CELSIUS cede y el margen se queda en ~20% | |
 | Probabilidades | Base 45% / Conservadora 25% / Disrupción 15% / Optimista 15% | |
-| DCF Base hoy | US$21,02 | |
-| DCF esperado | US$18,70 | |
-| Rango | US$6,34 a US$31,38 | |
+| DCF Base hoy | US$23,06 | |
+| DCF esperado | US$20,52 | |
+| Rango | US$7,00 a US$34,37 | |
 | Confianza | Media: el margen normalizado está documentado; la duración de Alani Nu, su riesgo regulatorio y la recuperación de CELSIUS no | |
 | Qué cambiaría la opinión | Consumo de CELSIUS y de Alani Nu, margen bruto, investigación de Texas | |
 | Revisión | Resultados del 3T26 (noviembre de 2026) | |
@@ -295,7 +295,7 @@ La decisión (comprar, mantener o vender) la registra el usuario en la app.
 | Pre-mortem e indicadores | Sí |
 | Cuadre con la SEC (ventas, EBIT, caja, deuda, arrendamientos, acciones, preferentes, opciones, minoritarios) | Sí |
 | Ninguna celda con error en las pestañas de la valoración (escaneo de integridad: 0 hallazgos) | Sí |
-| Motor = hoja (US$21,02) y pestaña de historias = motor (esperado US$18,70) | Sí |
+| Motor = hoja (US$23,06) y pestaña de historias = motor (esperado US$20,52) | Sí |
 | Múltiplos con tres anclas, independientes del DCF; chequeo de crecimiento implícito aplicado | Sí |
 | Chequeo VP a 3 años < FY+3 | Sí |
 | Fórmula única (0 celdas pendientes frente a la maestra) | Sí |

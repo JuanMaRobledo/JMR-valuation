@@ -827,7 +827,7 @@
  "Cualitativo!B30": {
   "before": "",
   "after": "La categoría pasó de +15,2% (52 semanas a abril, Circana) a +7,1% (13 semanas al 25-jul-2026, NielsenIQ). Margen bruto de 48,1% (51,5% un año antes) por promociones, mezcla y aluminio; más de la mitad de las ventas pasa por un solo distribuidor.",
-  "reason": "Cifras verificadas (categoría Circana; compras de internos)"
+  "reason": "Contenido cualitativo CELH desde cero (5-oct-2026)"
  },
  "Cualitativo!A32": {
   "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
@@ -897,7 +897,7 @@
  "Cualitativo!B42": {
   "before": "",
   "after": "El CEO y dos directores compran ~US$1,8M en acciones",
-  "reason": "Cifras verificadas (categoría Circana; compras de internos)"
+  "reason": "Contenido cualitativo CELH desde cero (5-oct-2026)"
  },
  "Cualitativo!D42": {
   "before": "Ver sección detallada abajo",
@@ -942,7 +942,7 @@
  "Cualitativo!B48": {
   "before": "",
   "after": "Se restan por su valor de liquidación (US$1.135M), no por el contable (US$1.760M): no se convierten antes de ago-2031/2032 y solo por encima de US$25 (Serie A) y US$51,75 (Serie B). Se incluyen en el capital invertido.",
-  "reason": "Términos de conversión precisados"
+  "reason": "Contenido cualitativo CELH desde cero (5-oct-2026)"
  },
  "Cualitativo!A49": {
   "before": "Acuerdo Comercial con Disney",
@@ -961,7 +961,7 @@
  },
  "Cualitativo!B50": {
   "before": "",
-  "after": "Beta 1,0: la del sector (0,62 reapalancada) corresponde a refrescos diversificados; Celsius depende de una categoría y de un distribuidor. Prima de mercado por regiones (4,13%). Regresión: 0,83 (2 años) y 1,55 (5 años).",
+  "after": "Beta 0,62 bottom-up: Beverage (Soft) en EE.UU. 0,58 reapalancada con la D/E de mercado (~11%). La categoría única y el distribuidor son riesgos propios y diversificables: están en las historias, no en la tasa (revisión del 5-oct-2026; antes 1,0). Prima de mercado por regiones (4,13%). Regresión: 0,83 (2 años) y 1,55 (5 años).",
   "reason": "Contenido cualitativo CELH desde cero (5-oct-2026)"
  },
  "Estadísticas!B4": {
@@ -1226,7 +1226,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "Cost of capital close to median company",
-  "after": "Ke 9,42% (rf 5,29% + beta 1,0 × ERP por regiones 4,13%); Kd 6,5% (SOFR + 2,25%); WACC ~9,0%.",
+  "after": "Ke 7,86% (rf 5,29% + beta 0,62 × ERP por regiones 4,13%); Kd 6,5% (SOFR + 2,25%); WACC ~7,6%.",
   "reason": "Historia CELH"
  },
  "Supuestos Recomendados!C6": {

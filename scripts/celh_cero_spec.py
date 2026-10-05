@@ -65,7 +65,7 @@ SPEC = {
          "Improbable salvo en la Optimista"],
     ],
     "tasas_base_nota": (
-        "Con ventas LTM de US$3.047 millones (US$2.156 millones de 2015) Celsius está en el tramo de US$2.000-3.000 "
+        "Con ventas LTM de US$3.047 millones (~US$2.150 millones de 2015) Celsius está en el tramo de US$2.000-3.000 "
         "millones de The Base Rate Book: mediana real de crecimiento a 5 años de 5,1% y media de 6,2% (más ~2,5% de "
         "inflación para compararlas con cifras nominales). La Base ({cagrA} nominal) queda algo por debajo de la mitad de "
         "la distribución: el crecimiento orgánico de la marca original es negativo y el de Alani Nu se modera."),
@@ -131,14 +131,15 @@ SPEC = {
         },
     },
     "riesgo": {
-        "beta_propuesta": 1.0,
+        "beta_propuesta": None,
         "texto": (
             "La beta desapalancada de Beverage (Soft) es 0,58 corregida por caja (Damodaran, enero de 2026); reapalancada con "
             "la deuda de Celsius (D/E de mercado ~10%) da ~0,62. La regresión semanal contra el S&P 500 da 0,83 a dos años y "
-            "1,55 a cinco; Monster, 0,36 y 0,49 (cálculo propio, 30-sep-2026). Se usa 1,0: el sector es sobre todo refrescos "
-            "diversificados (Coca-Cola, PepsiCo, con betas de regresión de 0,1-0,35), mientras Celsius vende una sola categoría "
-            "discrecional y depende de un distribuidor que concentra ~60% de las ventas. La moda y la regulación de la cafeína "
-            "no se cuentan en la tasa: están en las historias Conservadora y Disrupción."),
+            "1,55 a cinco; Monster, 0,36 y 0,49 (cálculo propio, 30-sep-2026). Se usa la bottom-up (~0,62, tabla de EE.UU. porque "
+            "Celsius vende 96% en Norteamérica). La categoría única, la dependencia de un distribuidor que concentra ~60% de las "
+            "ventas, la moda y la regulación de la cafeína son riesgos propios y diversificables: están en las historias "
+            "Conservadora y Disrupción, no en la tasa. La fabricación es tercerizada, así que el apalancamiento operativo no es "
+            "mayor que el del sector. Hasta el 5-oct-2026 se usaba 1,0 (0,62 + 0,38 por esos riesgos), que los contaba dos veces."),
     },
     "historias": [
         {
@@ -281,7 +282,7 @@ SPEC = {
          "(29%) y por encima del ROIC actual (~15%), que está deprimido por lo pagado por Alani Nu y la capitanía. La intensidad "
          "orgánica (capex ≈ depreciación) permitiría un ventas/capital más alto; se usa uno más prudente porque Celsius ya mostró "
          "que compra crecimiento. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."],
-        ["Descuento y largo plazo: beta de mercado y sin ventaja duradera.",
+        ["Descuento y largo plazo: beta del sector y sin ventaja duradera.",
          "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran "
          "a septiembre ponderada por regiones, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. "
          "Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): las marcas son jóvenes, "

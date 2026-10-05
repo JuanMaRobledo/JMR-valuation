@@ -154,21 +154,16 @@ def step_datos() -> None:
 def step_costo() -> None:
     sh = ms.open_sheet(SHEET_ID)
     ms.write_with_backup(sh, "Cost of capital worksheet", {
-        "B22": "Direct Input",
-        "B23": 1.0,           # bottom-up Beverage (Soft) 0,58 → 0,62 reapalancada + ajuste por categoría única y distribuidor
+        "B22": "Single Business(US)",  # bottom-up Beverage (Soft) 0,58 → 0,62 reapalancada (revisión del 5-oct-2026)
         "B26": "Operating regions",
         "H22": "", "H23": 13.0, "H24": "", "H25": "", "H26": "", "H27": "", "H28": "",
         "H29": 2422.5, "H30": 72.5, "H31": "", "H32": 7.3,   # ventas 2025 por región (10-K 2025)
         "B33": 5.75,          # préstamo a plazo con vencimiento en 2032
         "B34": "Direct Input",
         "B35": 0.065,         # SOFR + 2,25% tras la enmienda del 15-jul-2026; intereses del 2T26 anualizados ≈ 6,7%
-    }, "Costo de capital CELH desde cero: beta 1,0, prima por regiones, Kd real", BACKUP_PATH)
+    }, "Costo de capital CELH desde cero: beta bottom-up, prima por regiones, Kd real", BACKUP_PATH)
     sh.worksheet("Cost of capital worksheet").update_notes({
-        "B23": ("Beta 1,0 (5-oct-2026). Bottom-up: Beverage (Soft) 0,58 desapalancada y corregida por caja (Damodaran, ene-2026), "
-                "0,62 reapalancada con D/E de mercado ~10%. Ajuste por riesgo propio no diversificable en la tasa: una sola "
-                "categoría discrecional (refrescos diversificados como KO o PEP tienen betas de regresión de 0,1-0,35) y un "
-                "distribuidor con ~60% de las ventas (PepsiCo, 1S26). La moda y la regulación NO se cuentan acá: están en las "
-                "historias. Regresión semanal contra el S&P 500: 0,83 (2 años) y 1,55 (5 años); Monster 0,36 y 0,49."),
+        "B23": "No se usa: la beta sale de «Single Business(US)» (ver nota de B22). Hasta el 5-oct-2026 se usaba 1,0 escrita a mano.",
         "B35": "SOFR + 2,25% (segunda enmienda del crédito, 8-K del 15-jul-2026). Intereses del 2T26: 11,566 / 694,75 × 4 ≈ 6,7%.",
     })
 
