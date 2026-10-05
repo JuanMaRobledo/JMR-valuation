@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$109,60 por acción.** Complemento: DCF esperado por probabilidades US$103,97; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$57,40–US$142,11; precio con MOS 35% sobre el esperado: US$67,58; precio de referencia US$142,40. Cada escenario es un DCF completo con la estructura de Damodaran, calculado en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción; B35 es el DCF Base) y resumido en «Escenarios e historias»; el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son esas historias, y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$109,60 por acción.** Complemento: DCF esperado por probabilidades US$106,58; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$57,40–US$142,11; precio con MOS 35% sobre el esperado: US$69,28; precio de referencia US$142,40. Cada escenario es un DCF completo con la estructura de Damodaran, calculado en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción; B35 es el DCF Base) y resumido en «Escenarios e historias»; el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son esas historias, y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
-| **Base · La audiencia crece y la monetización se recupera en parte** (valor principal) | 40% | US$109,60 | US$43,84 |
+| **Base · La audiencia crece y la monetización se recupera en parte** (valor principal) | 45% | US$109,60 | US$49,32 |
 | Conservadora · La monetización se estanca | 30% | US$86,56 | US$25,97 |
-| Disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas | 10% | US$57,40 | US$5,74 |
+| Disrupción · Deterioro de los fundamentales: La IA generalista comoditiza los idiomas | 5% | US$57,40 | US$2,87 |
 | Optimista · La IA sube el ingreso por usuario | 20% | US$142,11 | US$28,42 |
-| **DCF esperado (complemento)** | 100% | **US$103,97** | |
+| **DCF esperado (complemento)** | 100% | **US$106,58** | |
 
 Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco principal) da US$125,77 por acción y los múltiplos, US$121,75 hoy: 3% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el valor intrínseco principal es el DCF Base de las historias y los múltiplos son precio relativo.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$109,60 | US$102,02 | US$106,57 | US$67,58 | US$152,73 |
-| Conservador | US$86,56 | US$86,37 | US$86,49 | US$67,58 | US$120,61 |
-| Optimista | US$142,11 | US$119,17 | US$132,94 | US$67,58 | US$197,16 |
+| Base | US$109,60 | US$102,02 | US$106,57 | US$69,28 | US$152,73 |
+| Conservador | US$86,56 | US$86,37 | US$86,49 | US$69,28 | US$120,61 |
+| Optimista | US$142,11 | US$119,17 | US$132,94 | US$69,28 | US$197,16 |
 
 ## 2. Datos
 
@@ -81,7 +81,7 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$102,02 f
 
 Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Software»: DCF 60% y múltiplos 40% (EV/EBITDA 10%, EV/FCFF 15%, P/E 5%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 11,80%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$57,40) y no se inventa para ellos.
 
-**Valor intrínseco principal: DCF Base al presente, US$109,60 por acción.** Complemento: DCF esperado por probabilidades US$103,97. Múltiplos y ponderados son lecturas secundarias.
+**Valor intrínseco principal: DCF Base al presente, US$109,60 por acción.** Complemento: DCF esperado por probabilidades US$106,58. Múltiplos y ponderados son lecturas secundarias.
 
 **Tabla 1 · Valor por acción descontado al presente (2026-09-30).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 

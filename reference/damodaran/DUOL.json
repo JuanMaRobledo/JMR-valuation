@@ -11,7 +11,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,35: la bottom-up de Software (Internet) de la tabla global de Damodaran (62% de las ventas fuera de Norteamérica), reapalancada. La de la tabla de EE.UU. da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60; la tabla muestra el DCF Base con la beta de la hoja y con la de EE.UU.: la diferencia es menor que la que producen las historias."
+  "texto": "La hoja usa una beta de 1,35: la bottom-up de Software (Internet) de la tabla global de Damodaran (62% de las ventas fuera de Norteamérica), reapalancada. La de la tabla de EE.UU. da 1,61, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,61; la tabla muestra el DCF Base con la beta de la hoja y con la de EE.UU.: la diferencia es menor que la que producen las historias."
  },
  "historias": [
   {
@@ -346,7 +346,7 @@
   ],
   [
    "Descuento.",
-   "La beta de la hoja es {beta}, la bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica); la de EE.UU. da {betabu}, pero sale de solo 29 empresas muy dispersas, y la de Software (System & Application) 1,25. El rango razonable es 1,25-1,60. El costo de capital va de {wacc0} a {waccT}; un punto más de tasa lleva la Base a {s_k_hi}. La diferencia que produce la beta es menor que la que producen las historias: el riesgo de Duolingo está en la monetización, no en la tasa. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+   "La beta de la hoja es {beta}, la bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica); la de EE.UU. da {betabu}, pero sale de solo 29 empresas muy dispersas, y la de Software (System & Application) 1,25. El rango razonable es 1,25-1,61. El costo de capital va de {wacc0} a {waccT}; un punto más de tasa lleva la Base a {s_k_hi}. La diferencia que produce la beta es menor que la que producen las historias: el riesgo de Duolingo está en la monetización, no en la tasa. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
   ],
   [
    "Probabilidades y lectura del resultado.",

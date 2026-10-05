@@ -91,7 +91,7 @@
  "historias": [
   {
    "nombre": "Base · La audiencia crece y la monetización se recupera en parte",
-   "prob": 0.4,
+   "prob": 0.45,
    "margen": 0.27084310616012697,
    "crec": {
     "Suscripciones": [
@@ -475,7 +475,7 @@
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
-   "prob": 0.1,
+   "prob": 0.05,
    "margen": 0.15084310616012692,
    "crec": {
     "Suscripciones": [
@@ -861,8 +861,8 @@
    "valor_beta_prop": 134.49417837429655
   }
  ],
- "valor_esperado_beta_hoja": 103.9710021406882,
- "valor_esperado_beta_prop": 99.05399445005756,
+ "valor_esperado_beta_hoja": 106.58073468703147,
+ "valor_esperado_beta_prop": 101.47650990933832,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
