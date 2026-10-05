@@ -43,22 +43,22 @@
    "B_peers": "MDT 12,9x, SYK 15,9x, ABT 17,3x, EW 23,3x, ISRG 33,8x, ZBH 9,8x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 12.06,
-    "Base": 12.67,
-    "Optimista": 13.51
+    "Conservador": 13.11,
+    "Base": 13.97,
+    "Optimista": 15.07
    },
    "mercado": 12.0,
    "lambda": 0.0,
-   "conservador": 11.09,
+   "conservador": 11.04,
    "base": 12.0,
-   "optimista": 13.51,
-   "factor_cons": 0.925,
-   "factor_opt": 1.126,
+   "optimista": 13.56,
+   "factor_cons": 0.92,
+   "factor_opt": 1.13,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     10.3,
-    13.69
+    13.97
    ],
    "antes": {
     "J8": 14.92,
@@ -95,22 +95,22 @@
    "B_peers": "MDT 20,1x, SYK 23,8x, ABT 26,3x, EW 32,5x, ISRG 43,9x, ZBH 15,1x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 23.72,
-    "Base": 27.62,
-    "Optimista": 30.99
+    "Conservador": 25.79,
+    "Base": 30.45,
+    "Optimista": 34.58
    },
    "mercado": 18.19,
    "lambda": 0.0,
-   "conservador": 16.35,
+   "conservador": 16.28,
    "base": 18.19,
-   "optimista": 20.35,
-   "factor_cons": 0.899,
-   "factor_opt": 1.119,
+   "optimista": 20.43,
+   "factor_cons": 0.895,
+   "factor_opt": 1.124,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     16.44,
-    27.62
+    30.45
    ],
    "antes": {
     "J8": 22.13,
@@ -162,21 +162,21 @@
    "B_peers": "MDT 21,5x, SYK 28,9x, ABT 32,7x, EW 52,4x, ISRG 47,3x, ZBH 22,2x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 13.9,
-    "Base": 15.94,
-    "Optimista": 17.88
+    "Conservador": 15.03,
+    "Base": 17.44,
+    "Optimista": 19.74
    },
    "mercado": 20.79,
    "lambda": 0.0,
-   "conservador": 18.35,
+   "conservador": 18.28,
    "base": 20.79,
-   "optimista": 24.54,
-   "factor_cons": 0.882,
-   "factor_opt": 1.18,
+   "optimista": 24.61,
+   "factor_cons": 0.879,
+   "factor_opt": 1.184,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    15.94,
+    17.44,
     23.65
    ],
    "antes": {
@@ -219,22 +219,22 @@
    "B_peers": "MDT 18,2x, SYK 22,7x, ABT 23,7x, EW 35,4x, ISRG 45,8x, ZBH 12,4x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 20.71,
-    "Base": 23.64,
-    "Optimista": 26.08
+    "Conservador": 22.4,
+    "Base": 25.86,
+    "Optimista": 28.79
    },
    "mercado": 15.95,
    "lambda": 0.0,
-   "conservador": 14.39,
+   "conservador": 14.34,
    "base": 15.95,
-   "optimista": 18.62,
-   "factor_cons": 0.903,
-   "factor_opt": 1.168,
+   "optimista": 18.67,
+   "factor_cons": 0.899,
+   "factor_opt": 1.171,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     14.33,
-    23.64
+    25.86
    ],
    "antes": {
     "J8": 19.08,
@@ -271,22 +271,22 @@
    "B_peers": "MDT 13,9x, SYK 19,4x, ABT 18,5x, EW 29,5x, ISRG 39,8x, ZBH 10,0x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 17.97,
-    "Base": 22.42,
-    "Optimista": 25.98
+    "Conservador": 19.44,
+    "Base": 24.52,
+    "Optimista": 28.68
    },
    "mercado": 12.72,
    "lambda": 0.0,
-   "conservador": 11.01,
+   "conservador": 10.97,
    "base": 12.72,
-   "optimista": 15.2,
-   "factor_cons": 0.865,
-   "factor_opt": 1.195,
+   "optimista": 15.25,
+   "factor_cons": 0.862,
+   "factor_opt": 1.199,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     11.39,
-    22.42
+    24.52
    ],
    "antes": {
     "J8": 15.75,
@@ -298,21 +298,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   27.247848275833025,
-   34.11129588046385,
-   41.01569448545954
+   28.933861493440602,
+   36.2338392234145,
+   43.56200333745712
   ],
   "multiplos_hoy": [
-   27.81761516108497,
-   31.75636810369839,
-   37.87828713616287
+   27.879957824135506,
+   31.981959107206922,
+   38.29801652685158
   ],
   "ponderado_hoy": [
-   27.475755029933804,
-   33.16932476975767,
-   39.760731545740875
+   28.512300025718567,
+   34.533087176931474,
+   41.45640861321491
   ],
-  "brecha_base": -0.06903659670444151,
+  "brecha_base": -0.11734555893983178,
   "fila_origen": 40
  }
 }
