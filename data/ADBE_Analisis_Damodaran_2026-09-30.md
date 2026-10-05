@@ -97,13 +97,13 @@ Sensibilidad del DCF Base (US$401,23; cada fila es un DCF completo con un solo s
 
 **Reinversión y retorno.** Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un ventas/capital de 1,23 (años 1-5) y 1,23 (años 6-10): con margen objetivo de 40,1% e impuesto marginal de 25%, cada dólar de capital nuevo rinde ~37% y ~37%, sin superar el mayor entre su ROIC actual (37,0%) y el de su industria (20,6%) (Damodaran, Investment Valuation cap. 11, p. 45; revisión del 4-oct-2026). Antes 3,77 y 4,21, que implicaban ~113% y ~126% sobre el capital nuevo. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Ventaja durable: costos de cambio y estándar de la industria creativa y documental, con ROIC en alza (38% → 59%). El ROIC después del año 10 es 29,3%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 1,20 | ventas LTM 25.970,0 / capital invertido 21.620,8 millones (con I+D capitalizado a 3 años) |
-| Marginal, último año | — | Δventas 2.264,0 / Δcapital -125,0 millones (Nov '24 → Nov '25): el capital o las ventas no crecieron (recompras, venta de negocios o caída de ventas), no hay inversión que medir |
-| Marginal, últimos tres años | 13,33 | Δventas 6.163,0 / Δcapital 462,3 millones (Dec '22 → Nov '25) |
+| Marginal, últimos tres años | no significativa | Δventas 6.163,0 / Δcapital 1.769,3 millones (Dec '22 → Nov '25; capital 17.910,7 → 19.680,0): el capital casi no cambió o bajó (recompras, deterioros, moneda), el cociente sería ruido |
+| Marginal, últimos cinco años | 2,87 | Δventas 10.901,0 / Δcapital 3.804,6 millones (Nov '20 → Nov '25; capital 15.875,4 → 19.680,0) |
 | Sector (Damodaran, enero de 2026) | 1,54 | Software (System & Application) |
 | Usado en la hoja | 1,23 / 1,23 | años 1-5 / 6-10; rinde ~37% / ~37% sobre el capital nuevo (ROIC actual 37,0%) |
 

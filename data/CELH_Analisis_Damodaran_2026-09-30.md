@@ -99,13 +99,13 @@ Sensibilidad del DCF Base (US$23,83; cada fila es un DCF completo con un solo su
 | Alani Nu (abr-2025) | US$1.278,8M netos de caja + contingente | ~1.433 LTM | ~20% antes de impuestos con margen ~18%: por encima del costo de capital |
 | Rockstar y capitanía (ago-2025) | US$935,8M en preferentes (incluye el pago implícito a PepsiCo por US$598,8M) | ~189 LTM (~266 anualizado) | Bajo por sí solo: se justifica por la distribución de PepsiCo |
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está por encima de todas las referencias: supone que la empresa crecerá con menos capital del que necesitó hasta ahora y del que necesita su sector. Lo sostiene solo si el ROIC lo respalda (control de la p. 45).
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está por encima de todas las referencias: supone que la empresa crecerá con menos capital del que necesitó hasta ahora y del que necesita su sector. Lo sostiene solo si el ROIC lo respalda (control de la p. 45).
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 1,00 | ventas LTM 3.047,3 / capital invertido 3.040,5 millones |
-| Marginal, último año | 0,60 | Δventas 1.159,7 / Δcapital 1.946,9 millones (Dec '24 → Dec '25) |
-| Marginal, últimos tres años | 0,91 | Δventas 1.861,7 / Δcapital 2.047,1 millones (Dec '22 → Dec '25) |
+| Marginal, últimos tres años | 0,62 | Δventas 1.861,7 / Δcapital 2.982,5 millones (Dec '22 → Dec '25; capital 250,7 → 3.233,2) |
+| Marginal, últimos cinco años | 0,75 | Δventas 2.384,6 / Δcapital 3.171,6 millones (Dec '20 → Dec '25; capital 61,6 → 3.233,2) |
 | Sector (Damodaran, enero de 2026) | 1,54 | Beverage (Soft) |
 | Usado en la hoja | 1,83 / 1,70 | años 1-5 / 6-10; rinde ~29% / ~27% sobre el capital nuevo (ROIC actual 16,5%) |
 

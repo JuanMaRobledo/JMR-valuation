@@ -93,13 +93,13 @@ Sensibilidad del DCF Base (US$20,76; cada fila es un DCF completo con un solo su
 
 **Reinversión y retorno.** Crecer exige capital: campus, hospitales-escuela y compras de plazas (con earn-outs). El capex fue US$49-73 millones al año (~10% de las ventas) y sus ventas son solo ~0,5 veces su capital invertido, porque crece comprando plazas (intangibles de US$1.076 millones). La hoja usa un ventas/capital de 0,75 (años 1-5) y 0,75 (años 6-10): con margen objetivo de 33,0% e impuesto marginal de 34%, cada dólar de capital nuevo rinde ~16% y ~16%, sin superar el mayor entre su ROIC actual (14,9%) y el de su industria (15,9%) (Damodaran, Investment Valuation cap. 11, p. 45; revisión del 4-oct-2026). Antes 0,75 y 0,75, que implicaban ~16% y ~16% sobre el capital nuevo. El valor anterior (1,5 y 1,2) implicaba ~42% sobre el capital nuevo, incoherente con el ROIC de 14,8% del valor terminal (revisión del 4-oct-2026). Si el crecimiento viene de comprar plazas, cada punto cuesta más. Ventaja durable: licencias reguladas de Medicina con plazas limitadas, con ROIC por encima del costo de capital desde 2022 (12-16%). El ROIC después del año 10 es 14,8%, el promedio de su industria según Damodaran (15,9%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión.
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está dentro del rango de las referencias.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. El usado está dentro del rango de las referencias.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
 | Empresa hoy | 0,51 | ventas LTM 723,1 / capital invertido 1.416,2 millones |
-| Marginal, último año | 0,25 | Δventas 47,8 / Δcapital 188,4 millones (Dec '24 → Dec '25) |
-| Marginal, últimos tres años | 0,64 | Δventas 210,5 / Δcapital 329,5 millones (Dec '22 → Dec '25) |
+| Marginal, últimos tres años | 0,64 | Δventas 210,5 / Δcapital 329,3 millones (Dec '22 → Dec '25; capital 1.000,0 → 1.329,3) |
+| Marginal, últimos cinco años | 0,62 | Δventas 428,4 / Δcapital 689,6 millones (Dec '20 → Dec '25; capital 639,7 → 1.329,3) |
 | Sector (Damodaran, enero de 2026) | 1,63 | Education |
 | Usado en la hoja | 0,75 / 0,75 | años 1-5 / 6-10; rinde ~16% / ~16% sobre el capital nuevo (ROIC actual 14,9%) |
 
