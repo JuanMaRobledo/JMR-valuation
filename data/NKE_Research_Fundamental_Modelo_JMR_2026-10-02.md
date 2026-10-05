@@ -187,13 +187,13 @@ La hoja de este informe se construyó desde la plantilla maestra auditada y se c
 | Crecimiento año 1 (Base) | −6,6% | Entrada manual con fuente; activo | Input sheet B27; guía de FY2027 | Elección razonable documentada | Alta |
 | Crecimiento años 2-5 (Base) | ~3,4% anual | Entrada manual; activo | Input sheet B29; historia Base por región | Elección razonable documentada | Alta |
 | Margen año 1 y objetivo | 6,0% y 11,6% en 6 años | Entrada manual con fuente; activo | Input sheet B28/B30/B31; guía FY2027 y Pace | Elección razonable documentada | Alta |
-| Ventas/capital | 2,1 (años 1-10) | Entrada manual con referencia sectorial; activo | Input sheet B32/B33; Damodaran Shoe global (2,12) | Elección razonable; Nike rota ~2,6 | Media |
+| Ventas/capital | 2,60x (años 1-10) | Entrada manual con las referencias de Damodaran (empresa, marginal, sector); activo | Input sheet B32:B33 | Revisión del 5-oct-2026: el de Nike hoy (2,61) y el del sector en EE.UU. (2,62); el capital nuevo rinde ~23% | Media |
 | Tasa efectiva proyectada | 25% desde el año 1 | Entrada manual con fuente | Input sheet B24; LTM 20,7% (dato histórico), guía FY2027 ~25% | Elección razonable | Media |
-| Tasa libre de riesgo | 5,24% | Referencia de mercado | Input sheet B35; UST 10 años al 1-oct-2026 | Conciliado | Media |
-| ERP | 4,09% | Referencia de mercado | Cost of capital worksheet B27; Damodaran sep-2026 | Conciliado | Media |
-| Beta | 1,01 | Bottom-up de la industria; activo | Cost of capital worksheet B22-B24; Shoe global 0,89 desapalancada | Conciliado con la regresión (0,98 a 2 años, 1,04 a 5 años) | Media |
+| Tasa libre de riesgo | 5,29% | Referencia de mercado | Input sheet B35; UST 10 años al 1-oct-2026 | Conciliado | Media |
+| ERP | 5,10% | Referencia de mercado | Cost of capital worksheet B27; Damodaran sep-2026 | Conciliado | Media |
+| Beta | 1,01 | Bottom-up del sector; activo | Cost of capital worksheet B22:B24 | Revisión del 5-oct-2026: bottom-up de Shoe, tabla global; sin primas por riesgos diversificables (van en las historias) | Media |
 | Costo de la deuda | 6,02% | Rating real | Cost of capital worksheet B34-B38; A2/A | Conciliado | Baja |
-| WACC | 8,65% (terminal 9,33%) | Cálculo derivado | Cost of capital worksheet B14; Valuation output M14 | Conciliado | Alta |
+| WACC | 9,57% (terminal 9,38%) | Cálculo derivado; activo | Cost of capital worksheet B14: beta 1,01, ERP 5,10%, rf 5,29% | Revisión del 5-oct-2026: recalculado por la hoja con la beta y el precio de corte (30-sep-2026) | Alta |
 | ROIC después del año 10 | 12,3% | Criterio de ventaja documentado | Input sheet B49/B50 | Ventaja que se desvanece (sección 6) | Alta |
 | Probabilidad de fracaso | 0% | Valor predeterminado | Input sheet B52 = No | Razonable con calificación A | Baja |
 | Múltiplos objetivo (Base) | EV/EBITDA 14,2×, EV/FCFF 22,9×, P/E 17,6×, P/FCFE 21,1×, P/OCF 18,7× | Entrada manual con protocolo de tres anclas | EVEBITDA/EVFCFF/PE/PFCFE/POCF J19 | Elección razonable documentada | Media (secundarios) |

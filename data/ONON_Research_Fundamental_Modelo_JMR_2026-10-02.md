@@ -172,13 +172,13 @@ La hoja de este informe se construyó desde la plantilla maestra auditada. Como 
 | Crecimiento año 1 (Base) | +17,5% (US$) | Entrada manual con fuente | Input sheet B27; guía 2026 | Elección razonable documentada | Alta |
 | Crecimiento años 2-5 (Base) | ~14% anual | Entrada manual | Input sheet B29; historia Base por canal | Algo por debajo de la meta 2029 | Alta |
 | Margen año 1 y objetivo | 14% y 16,5% en 5 años | Entrada manual con fuente | Input sheet B28/B30/B31 | Coherente con la meta de EBITDA ajustado | Alta |
-| Ventas/capital | 2,3 (años 1-5) y 2,1 (6-10) | Entrada manual | Input sheet B32/B33 | Rotación propia ~2,6 | Media |
+| Ventas/capital | 2,30x (años 1-5) / 2,10x (años 6-10) | Entrada manual con las referencias de Damodaran (empresa, marginal, sector); activo | Input sheet B32:B33 | Revisión del 5-oct-2026: cerca del de hoy (2,59); el capital nuevo rinde ~29% y ~27% | Media |
 | Tasa de impuestos | 20% → 23% | Entrada manual | Input sheet B24/B25 | LTM 7,9% no recurrente | Media |
-| Tasa libre de riesgo | 5,24% | Referencia de mercado | Input sheet B35 | Conciliado | Media |
-| ERP | 4,09% | Referencia de mercado | Cost of capital worksheet B27 | Conciliado | Media |
-| Beta | 1,30 | Entrada manual documentada | Cost of capital worksheet B23 | Industria ~0,95-1,05; regresión 1,58-1,80 | Alta |
+| Tasa libre de riesgo | 5,29% | Referencia de mercado | Input sheet B35 | Conciliado | Media |
+| ERP | 5,02% | Referencia de mercado | Cost of capital worksheet B27 | Conciliado | Media |
+| Beta | 1,05 | Bottom-up del sector; activo | Cost of capital worksheet B22:B24 | Revisión del 5-oct-2026: bottom-up de Shoe en EE.UU.; sin primas por riesgos diversificables (van en las historias) | Alta |
 | Costo de los arrendamientos | 6,0% | Entrada manual | Cost of capital worksheet B35 | Razonable | Baja |
-| WACC | 10,18% (terminal 9,33%) | Cálculo derivado | Cost of capital worksheet B14 | Conciliado | Alta |
+| WACC | 10,20% (terminal 9,38%) | Cálculo derivado; activo | Cost of capital worksheet B14: beta 1,05, ERP 5,02%, rf 5,29% | Revisión del 5-oct-2026: recalculado por la hoja con la beta y el precio de corte (30-sep-2026) | Alta |
 | ROIC después del año 10 | = costo de capital | Criterio de ventaja | Input sheet B49 = No | Sin ventaja defendible probada | Alta |
 | Múltiplos objetivo (Base) | EV/EBITDA 25,8×, EV/FCFF 34,8×, P/E 32,4×, P/FCFE 33,0×, P/OCF 29,7× | Protocolo de tres anclas | J19 de cada pestaña | Documentado | Media |
 | Ponderación de métodos | «Crecimiento» (DCF 60%) | Valor de tabla | Resumen de Valoración G3 | Razonable | Baja |
