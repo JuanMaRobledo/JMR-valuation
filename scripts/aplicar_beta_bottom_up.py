@@ -12,8 +12,11 @@ Regla única:
   Excepciones documentadas en la ficha de historias (reference/damodaran/<T>.json):
     - financieras y redes de pagos (PAGS, PYPL): la beta desapalancada de Financial Services no sirve; se parte de la
       beta del patrimonio del sector (0,97);
-    - GOOG: mezcla de sectores por ingresos (Advertising + Software), 1,07;
-    - CELH: 1,0 por categoría única y distribuidor que concentra >50% de las ventas.
+    - GOOG: mezcla de sectores por ingresos (Advertising + Software), 1,07.
+  Revisión del 5-oct-2026 (scripts/revisar_beta_s2c.py): sin primas por moda, concepto único, distribuidor ni tamaño,
+  que son riesgos diversificables ya contados en las historias (prompt v4: no contar el mismo riesgo en flujos,
+  probabilidades y tasa). ADBE, CELH, CMG, DPZ, LULU, ONON y SHAK usan «Single Business(US)» en la hoja, que reapalanca
+  sola la beta del sector; este script no las toca.
   Las hojas con «Single Business(Global)» ya calculan la beta bottom-up del sector global y no se cambian.
 
 Escribe 'Cost of capital worksheet'!B23 (con B22 = "Direct Input"), deja respaldo y nota en la celda y actualiza el
@@ -42,9 +45,9 @@ CC = "Cost of capital worksheet"
 # ticker -> (primas [(motivo, valor)], beta de partida fija o None = bottom-up del sector, comentario)
 REGLA = {
     "BSX": ([], None, ""),
-    "CMG": ([("un solo concepto de restaurante", 0.10)], None, ""),
-    "DPZ": ([("un solo concepto (pizza a domicilio)", 0.10)], None,
-            "La D/E alta (recapitalización con deuda) explica que la beta reapalancada supere a la del sector."),
+    # 5-oct-2026 (scripts/revisar_beta_s2c.py): sin primas por riesgos diversificables; la hoja usa «Single Business(US)».
+    "CMG": ([], None, ""),
+    "DPZ": ([], None, "La D/E alta (recapitalización con deuda) explica que la beta reapalancada supere a la del sector."),
     "EPAM": ([], None, "El riesgo de la entrega desde Europa del Este va en la prima de mercado ponderada por operaciones, no en la beta."),
     "INTU": ([], None, ""),
     # 5-oct-2026 (scripts/revisar_beta_s2c.py): sin prima por moda, que ya está en las historias; la hoja usa
@@ -58,10 +61,10 @@ REGLA = {
     "ZTS": ([], None, ""),
     "NVDA": ([], None, ""),
     "PLTR": ([], None, ""),
-    "SHAK": ([("un solo concepto", 0.10), ("empresa pequeña", 0.15)], None,
-             "Se fijó 1,25 el 3-oct-2026 (la regla da 1,23; la diferencia cubre los márgenes finos)."),
+    "SHAK": ([], None, "Los arrendamientos como deuda ya suben la beta reapalancada por el costo fijo del alquiler."),
 }
-FIJA = {"SHAK": 1.25}  # ya aplicada y regenerada
+FIJA: dict[str, float] = {}  # 5-oct-2026: SHAK ya no usa 1,25 fija
+HOJA_US = {"ADBE", "CELH", "CMG", "DPZ", "LULU", "ONON", "SHAK"}  # «Single Business(US)» en la hoja: no se pasan a Direct Input
 
 
 def es(x, nd=2):
@@ -76,6 +79,9 @@ def main(argv: list[str]) -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     resumen = {}
     for tk in pedidos:
+        if tk in HOJA_US:
+            print(f"{tk:5s} usa «Single Business(US)» en la hoja (revisión del 5-oct-2026): no se cambia", flush=True)
+            continue
         primas, fija, extra = REGLA[tk]
         sid = re.search(r"/d/([^/]+)", json.loads(next(DATOS.glob(f"{tk}-*.json")).read_text())["hojaGoogle"]).group(1)
         sh = gc.open_by_key(sid)

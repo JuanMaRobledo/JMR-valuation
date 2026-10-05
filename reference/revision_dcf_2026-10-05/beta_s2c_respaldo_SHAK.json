@@ -1,0 +1,47 @@
+{
+ "Cost of capital worksheet!B22": {
+  "before": "Direct Input",
+  "after": "Single Business(US)",
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (SHAK, 5-oct-2026)"
+ },
+ "Input sheet!B32": {
+  "before": 1.51,
+  "after": 1.9,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (SHAK, 5-oct-2026)"
+ },
+ "Input sheet!B33": {
+  "before": 1.51,
+  "after": 1.7,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (SHAK, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta 1,6 (Direct Input), ERP maduro, deuda = convertibles de US$248M (el alquiler ya está en el EBIT).",
+  "after": "Beta ~0,98 bottom-up (Restaurant/Dining en EE.UU., «Single Business(US)», reapalancada con la D/E de mercado incluidos los arrendamientos), ERP por regiones 4,14%; deuda = convertibles de US$248M + arrendamientos capitalizados.",
+  "reason": "Textos de beta al día (SHAK, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Beta 1,6 (Direct Input), ERP maduro, convertibles como deuda (Ba1/BB+).",
+  "after": "Beta ~0,98 bottom-up (Restaurant/Dining EE.UU.), ERP 4,14%; convertibles (Ba1/BB+) y arrendamientos como deuda.",
+  "reason": "Textos de beta al día (SHAK, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 1.4,
+  "after": 1.9,
+  "reason": "Recomendación de ventas/capital al día (SHAK, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "1,4x: capex de construcción de Shacks nuevos.",
+  "after": "1,9x: marginal de 2025 con arrendamientos (2,31 en tres años); los locales nuevos usan menos capital que la base actual (1,36).",
+  "reason": "Recomendación de ventas/capital al día (SHAK, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 1.6,
+  "after": 1.7,
+  "reason": "Recomendación de ventas/capital al día (SHAK, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "1,6x: mayor peso de licencias (sin capex propio).",
+  "after": "1,7x: hacia el sector (1,51) y con más peso de licencias.",
+  "reason": "Recomendación de ventas/capital al día (SHAK, 5-oct-2026)"
+ }
+}

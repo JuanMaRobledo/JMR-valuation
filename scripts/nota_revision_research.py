@@ -1,0 +1,95 @@
+#!/usr/bin/env python
+"""Nota de actualización en el research de la app tras la revisión de betas y ventas/capital (5-oct-2026).
+
+Las tablas de auditoría y de supuestos del research son la instantánea de la hoja a la fecha del informe; después de la
+revisión con criterio Damodaran (scripts/revisar_beta_s2c.py) pueden mostrar una beta, un WACC o un ventas/capital
+anteriores. Esta nota, al inicio del informe (antes de la primera sección), deja las cifras vigentes y remite a la sección
+de historias Damodaran y a la valoración, que el flujo de regeneración sí mantiene al día. Es idempotente: reemplaza la
+nota si ya está. Escribe el HTML del research en Modelo-JMR-datos/analisis y, si existe, el .md de origen en data/.
+
+Uso: PYTHONPATH=.:scripts python scripts/nota_revision_research.py [TICKER ...]
+"""
+from __future__ import annotations
+
+import datetime as dt
+import glob
+import json
+import re
+import sys
+from pathlib import Path
+
+_ROOT = Path(__file__).resolve().parents[1]
+DATOS = _ROOT.parent / "Modelo-JMR-datos"
+INI, FIN = "<!-- JMR-NOTA-REVISION-2026-10-05 -->", "<!-- /JMR-NOTA-REVISION-2026-10-05 -->"
+
+# ticker -> (beta antes, ventas/capital antes o None si no cambió, texto de la beta)
+ANTES = {
+    "ADBE": (1.39, None, "bottom-up de Software en EE.UU."),
+    "LULU": (1.03, None, "bottom-up de Apparel en EE.UU., sin la prima por moda"),
+    "NKE": (None, (2.1, 2.1), "bottom-up de Shoe global, sin cambio"),
+    "ONON": (1.20, None, "bottom-up de Shoe en EE.UU., sin la prima por moda"),
+    "CMG": (0.95, None, "bottom-up de Restaurant/Dining en EE.UU., sin la prima por un solo concepto"),
+    "DPZ": (1.17, (2.6415, 2.6415), "bottom-up de Restaurant/Dining en EE.UU. reapalancada con su D/E alta, sin la prima "
+                                    "por un solo concepto"),
+    "SHAK": (1.25, (1.51, 1.51), "bottom-up de Restaurant/Dining en EE.UU. reapalancada con los arrendamientos, sin primas "
+                                 "por tamaño, concepto ni márgenes finos"),
+}
+
+
+def es(x: float, nd: int = 2) -> str:
+    return f"{x:,.{nd}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def pct(x: float) -> str:
+    return es(x * 100) + "%"
+
+
+def nota(tk: str) -> str:
+    r = json.loads((_ROOT / "reference" / "damodaran" / f"{tk}_resultado.json").read_text())
+    a = r["historias"][0]
+    d = a["detalle"]
+    b0, s0, txt = ANTES[tk]
+    beta = f"beta {es(r['beta_hoja'])} ({txt}" + (f"; antes {es(b0)})" if b0 is not None else ")")
+    s2c = f"ventas/capital {es(d['s2c'], 1)} en los años 1-5 y {es(d['s2c2'], 1)} en los 6-10"
+    if s0:
+        s2c += f" (antes {es(s0[0])})" if s0[0] == s0[1] else f" (antes {es(s0[0])} y {es(s0[1])})"
+    return (f"<strong>Actualización del 5 de octubre de 2026.</strong> Las tablas de auditoría y de supuestos de este informe "
+            f"son la instantánea de la hoja a la fecha del informe y pueden mostrar una beta, un costo de capital o un "
+            f"ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta bottom-up del sector, sin primas por "
+            f"riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el "
+            f"marginal y el del sector), la hoja usa {beta}, costo de capital inicial {pct(d['wacc0'])} y terminal "
+            f"{pct(d['tasaTerminal'])}, y {s2c}. DCF Base US${es(a['valor_beta_hoja'])} por acción y DCF esperado "
+            f"US${es(r['valor_esperado_beta_hoja'])}. Las cifras vigentes están en la sección de historias Damodaran y en la "
+            f"valoración.")
+
+
+def con_nota_html(h: str, n: str) -> str:
+    h = re.sub(re.escape(INI) + r".*?" + re.escape(FIN) + r"\n?", "", h, flags=re.S)
+    i = h.index("<h2")
+    return h[:i] + f"{INI}\n<blockquote>\n<p>{n}</p>\n</blockquote>\n{FIN}\n" + h[i:]
+
+
+def con_nota_md(m: str, n: str) -> str:
+    m = re.sub(re.escape(INI) + r".*?" + re.escape(FIN) + r"\n\n?", "", m, flags=re.S)
+    i = re.search(r"^## ", m, flags=re.M).start()
+    md = re.sub(r"</?strong>", "**", n)
+    return m[:i] + f"{INI}\n> {md}\n{FIN}\n\n" + m[i:]
+
+
+def main(argv: list[str]) -> int:
+    for tk in [a for a in argv if not a.startswith("--")] or list(ANTES):
+        n = nota(tk)
+        p = Path(glob.glob(str(DATOS / "analisis" / f"{tk}-research-*.json"))[0])
+        j = json.loads(p.read_text())
+        j["html"] = con_nota_html(j["html"], n)
+        j["updatedAt"] = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+        p.write_text(json.dumps(j, ensure_ascii=False, indent=2) + "\n")
+        md = _ROOT / "data" / str(j.get("sourceName") or "")
+        if j.get("sourceName") and md.is_file():
+            md.write_text(con_nota_md(md.read_text(), n))
+        print(f"{tk}: nota en {p.name}" + (f" y {md.name}" if j.get("sourceName") and md.is_file() else ""))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

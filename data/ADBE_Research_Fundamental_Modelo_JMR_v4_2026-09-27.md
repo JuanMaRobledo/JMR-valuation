@@ -15,6 +15,10 @@ generator: "Claude (Modelo JMR)"
 
 > Alcance: análisis fundamental cualitativo con fines informativos; no constituye asesoramiento financiero ni recomendación de compra o venta.
 
+<!-- JMR-NOTA-REVISION-2026-10-05 -->
+> **Actualización del 5 de octubre de 2026.** Las tablas de auditoría y de supuestos de este informe son la instantánea de la hoja a la fecha del informe y pueden mostrar una beta, un costo de capital o un ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta bottom-up del sector, sin primas por riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa beta 1,31 (bottom-up de Software en EE.UU.; antes 1,39), costo de capital inicial 11,42% y terminal 9,38%, y ventas/capital 1,2 en los años 1-5 y 1,2 en los 6-10. DCF Base US$410,48 por acción y DCF esperado US$326,24. Las cifras vigentes están en la sección de historias Damodaran y en la valoración.
+<!-- /JMR-NOTA-REVISION-2026-10-05 -->
+
 ## 1. Resumen ejecutivo
 
 Adobe Inc. es el líder global en software de creatividad digital (Creative Cloud), gestión documental (Acrobat/Document Cloud) y experiencia de cliente empresarial (Digital Experience/GenStudio), operando un modelo casi enteramente de suscripción con un ingreso recurrente anualizado (ARR, por sus siglas en inglés) de aproximadamente US$27.500 millones. La compañía reestructuró su reporte de segmentos durante 2026, y ahora divide su negocio por grupos de clientes (Creative & Marketing Professionals; Business Professionals & Consumers) en lugar de por las antiguas líneas de producto (Digital Media, Digital Experience, Publishing & Advertising).

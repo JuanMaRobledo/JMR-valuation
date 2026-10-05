@@ -115,8 +115,9 @@ def check(sh) -> dict:
     for (name, b), v in zip(BLOCKS.items(), vr[:-1]):
         x = (v.get("values") or [[None]])[0][0]
         y = eh[b["i"] - 5] if len(eh) > b["i"] - 5 else None
+        # el motor pone piso 0 al valor por acción (responsabilidad limitada); 'Valuation output' puede mostrar un negativo
         out[name] = {"valuation_output": x, "historias": y,
-                     "dif": (x - y) if isinstance(x, (int, float)) and isinstance(y, (int, float)) else None}
+                     "dif": (max(0.0, x) - y) if isinstance(x, (int, float)) and isinstance(y, (int, float)) else None}
     return out
 
 

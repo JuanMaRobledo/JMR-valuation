@@ -9,7 +9,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,25 (desde el 3-oct-2026; antes 1,60, la beta de regresión de la acción). Sigue el prompt v4: se parte de la bottom-up de Restaurant/Dining (0,78 desapalancada y corregida por caja), que reapalancada con la deuda, incluidos los arrendamientos, da 0,98, y se le suma una prima explícita de ~0,27 por riesgo propio: cadena pequeña, un solo concepto, márgenes finos y consumo discrecional. La regresión (1,60) queda como referencia. El efecto de cada beta en el DCF Base está en la tabla. Aun con la beta del sector el DCF sigue muy por debajo del precio: el retorno sobre el capital nuevo, con los arrendamientos, apenas supera el costo de capital, y el valor depende del margen."
+  "texto": "La hoja usa la beta bottom-up de Restaurant/Dining en EE.UU. (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja), reapalancada por la hoja con la deuda, incluidos los arrendamientos: ~0,98. Shake Shack vende 97% en Norteamérica. Cadena pequeña, un solo concepto y márgenes finos son riesgos propios: están en las historias (la Conservadora no alcanza el margen objetivo), no en la tasa; el costo fijo del alquiler ya entra en la beta por los arrendamientos como deuda (hasta el 5-oct-2026 se sumaban ~0,27 y la beta era 1,25). La regresión semanal contra el S&P 500 da 1,55 a dos años y 1,54 a cinco (CAVA 1,63-1,85, Sweetgreen 1,67-1,71, Wingstop 1,15-1,39, Chipotle 0,89-1,00) y queda como referencia: con ella el valor sería menor. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {
@@ -280,7 +280,7 @@
   ],
   [
    "Capital por dólar de ventas: corregido con la historia.",
-   "Cada Shack propio se paga con caja y además se alquila el local. Hasta el 1-oct-2026 el modelo pedía US$1,11 de capital por dólar de ventas nuevas (ventas/capital de 0,90). La historia dice otra cosa: entre 2023 y 2025 las ventas subieron US$545 millones con US$147 millones de capex neto y ~US$208 millones de locales arrendados nuevos, es decir, ~US$0,65 por dólar (1,54), y el promedio de restaurantes según Damodaran es 1,51. El modelo usa ahora {s2c1}×: ~US${cap1} de capital por dólar de ventas nuevas, con los arrendamientos dentro (~US${arr_vp} millones de valor presente). Ese solo cambio llevó la Base de US$2,90 a {vA}. Sigue siendo un supuesto sensible: un ventas/capital 20% menor la deja en {s_s_lo} y uno 20% mayor en {s_s_hi}."
+   "Cada Shack propio se paga con caja y además se alquila el local. Hasta el 1-oct-2026 el modelo pedía US$1,11 de capital por dólar de ventas nuevas (ventas/capital de 0,90) y hasta el 5-oct-2026 usaba el promedio de restaurantes según Damodaran (1,51). Lo observado dice que los locales nuevos usan menos: con los arrendamientos, el capital invertido subió US$236 millones entre 2022 y 2025 mientras las ventas subían US$545 millones (2,31), y US$102 millones en 2025 con US$193 millones más de ventas (1,88); la base actual (1,36) está cargada de locales en maduración. El modelo usa ahora {s2c1}× en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas, con los arrendamientos dentro, ~US${arr_vp} millones de valor presente) y {s2c2}× en los años 6-10, hacia el sector. Con el margen objetivo el capital nuevo rinde ~13,6% y luego ~12%: más que el ROIC actual (~5%) y menos que el de la industria (18,4%). Sigue siendo un supuesto sensible: un ventas/capital 20% menor deja la Base en {s_s_lo} y uno 20% mayor en {s_s_hi}."
   ],
   [
    "Margen: la variable que manda.",
@@ -292,7 +292,7 @@
   ],
   [
    "Descuento y ROIC terminal.",
-   "La hoja usa una beta de {beta}; la bottom-up de restaurantes reapalancada con la deuda (incluidos los arrendamientos) da {betabu}. Una cadena pequeña con márgenes finos tiene más riesgo que el promedio del sector, así que algo entre ambas es razonable; con la beta de la hoja la Base queda del lado prudente. El costo de capital va de {wacc0} a {waccT}; un punto menos lleva la Base a {s_k_lo}. Como el ROIC actual (~5%) está por debajo del costo de capital, no hay ventaja demostrada: el ROIC terminal es el costo de capital ({roicT}). El valor terminal explica {terminal} del valor operativo: casi todo el valor depende de la perpetuidad."
+   "La hoja usa una beta de {beta}: la bottom-up de restaurantes en EE.UU. reapalancada con la deuda, incluidos los arrendamientos, que ya suben la beta por el costo fijo del alquiler. Cadena pequeña, un solo concepto y márgenes finos son riesgos propios que están en las historias, no en la tasa; la regresión (1,54-1,55) queda como referencia. El costo de capital va de {wacc0} a {waccT}; un punto menos lleva la Base a {s_k_lo}. Como el ROIC actual (~5%) está por debajo del costo de capital, no hay ventaja demostrada: el ROIC terminal es el costo de capital ({roicT}). El valor terminal explica {terminal} del valor operativo: casi todo el valor depende de la perpetuidad."
   ],
   [
    "Probabilidades y lectura del resultado.",

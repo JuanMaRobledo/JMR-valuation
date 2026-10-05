@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-"""Revisión de betas y ventas/capital con criterio Damodaran (5-oct-2026): ADBE, LULU, NKE y ONON.
+"""Revisión de betas y ventas/capital con criterio Damodaran (5-oct-2026): ADBE, LULU, NKE y ONON; después, una a una,
+CELH, CMG, DPZ y SHAK.
 
 Criterios (Investment Valuation, cap. 8 y cap. 11, p. 44-46):
   - Beta bottom-up = beta desapalancada del negocio, corregida por caja, reapalancada con la D/E de mercado de la empresa
@@ -25,11 +26,19 @@ Cambios:
   CMG   beta 0,95 (0,85 + 0,10 por un solo concepto, escrita a mano) → «Single Business(US)»: Restaurant/Dining 0,78 →
         ~0,86 reapalancada (regresión 0,89-1,00). Ventas/capital 1,51 (el del sector) se mantiene: rinde ~21%, entre el
         ROIC de la industria (18,4%) y el actual (23-25%); Chipotle no franquicia, así que el sector es comparable.
+  DPZ   beta 1,17 (1,07 + 0,10 por un solo concepto, escrita a mano) → «Single Business(US)»: Restaurant/Dining 0,78 →
+        ~1,07 reapalancada con la D/E alta (~0,48). Ventas/capital 2,64 → 5,4 (años 1-5, el propio: franquiciadora, el sector
+        no es comparable) y 3,4 (años 6-10, punto medio hacia el sector): el capital nuevo rinde ~84% → ~53%, frente a un ROIC
+        actual de ~81% y un terminal de 18,4%.
+  SHAK  beta 1,25 (0,98 + ~0,27 por cadena pequeña, un solo concepto y márgenes finos, escrita a mano) → «Single
+        Business(US)»: Restaurant/Dining 0,78 → ~0,98 reapalancada con los arrendamientos. Regresión 1,54-1,55 como
+        referencia. Ventas/capital 1,51 → 1,9 (años 1-5, marginal del último año) y 1,7 (años 6-10): rinde ~13,6% → ~12%.
   Se mantienen: beta de NKE (Shoe global 0,89 → 1,01; regresión 0,98-1,04) y ventas/capital de ADBE (1,23 ≈ 1,20 actual con
   I+D capitalizado; rinde 37% = ROIC actual), LULU (1,8: entre el sector 1,77 y el actual 2,04; rinde 25% frente a 27%)
   y ONON (2,3/2,1: rinde 29%/27% frente a 28,5% actual).
 
-Respaldo de cada celda en reference/revision_dcf_2026-10-05/beta_s2c_respaldo.json (CELH, CMG, DPZ y SHAK: _<TICKER>.json) y nota en la celda. Después hay que
+Respaldo de cada celda en reference/revision_dcf_2026-10-05/beta_s2c_respaldo.json (CELH, CMG, DPZ y SHAK:
+beta_s2c_respaldo_<TICKER>.json) y nota en la celda. Después hay que
 regenerar cada empresa: damodaran_stories, build_story_sheet, ancla C de múltiplos (multiples_anchors --solo-justificado),
 apply_multiples_v3 y regenerar_cartera.sh.
 
@@ -67,6 +76,8 @@ CAMBIOS = {
     # Segunda tanda (5-oct-2026), una empresa a la vez
     "CELH": {CC: {"B22": "Single Business(US)"}},
     "CMG": {CC: {"B22": "Single Business(US)"}},
+    "DPZ": {CC: {"B22": "Single Business(US)"}, IS: {"B32": 5.4, "B33": 3.4}},
+    "SHAK": {CC: {"B22": "Single Business(US)"}, IS: {"B32": 1.9, "B33": 1.7}},
 }
 NOTAS = {
     "ADBE": {CC: {"B22": NOTA_BETA.format(ind="Software (System & Application)", bu="1,25", reg="1,39 (5 años) y 0,97 (2 años)",
@@ -95,6 +106,36 @@ NOTAS = {
         extra="Chipotle vende 100% en Norteamérica. Tener un solo concepto es un riesgo propio y diversificable: va en las "
               "historias (Conservadora: el concepto pierde tráfico), no en la tasa. ",
         antes="0,95 escrita a mano = 0,85 bottom-up + 0,10 por un solo concepto de restaurante")}},
+    "DPZ": {CC: {"B22": NOTA_BETA.format(
+        ind="Restaurant/Dining", bu="0,78", reg="0,77 (5 años) y 0,63 (2 años)",
+        extra="Domino's vende 93% en Norteamérica. La D/E de mercado alta (~0,48, deuda titulizada) explica que la beta "
+              "reapalancada (~1,07) supere a la del sector. Un solo concepto (pizza a domicilio) es un riesgo propio y "
+              "diversificable: va en las historias, no en la tasa. ",
+        antes="1,17 escrita a mano = 1,07 bottom-up + 0,10 por un solo concepto")},
+            IS: {"B32": ("Ventas/capital 5,4 en los años 1-5 (Damodaran, 5-oct-2026): el de Domino's hoy (5,37, ventas LTM / "
+                         "capital invertido con arrendamientos). Es franquiciadora: las tiendas las pagan los franquiciados y en "
+                         "tres años las ventas crecieron US$403M con US$6M de capital; el sector (1,51) es de operadores con "
+                         "locales propios y no es comparable. Con el margen objetivo (20,3%) y un impuesto de 23% el capital "
+                         "nuevo rinde ~84%, igual al ROIC actual (~81-83%). Antes 2,6415 (3 ajustado por arrendamientos), que "
+                         "suponía el doble del capital que Domino's usa por dólar de ventas."),
+                 "B33": ("Ventas/capital 3,4 en los años 6-10 (Damodaran, 5-oct-2026): punto medio entre el de Domino's (5,37) y "
+                         "el del sector (1,51), para que el rendimiento del capital nuevo baje gradualmente (~84% → ~53%) hacia "
+                         "el ROIC terminal de la industria (18,4%). Antes 2,6415.")}},
+    "SHAK": {CC: {"B22": NOTA_BETA.format(
+        ind="Restaurant/Dining", bu="0,78", reg="1,54 (5 años) y 1,55 (2 años); CAVA 1,63-1,85, Sweetgreen 1,67-1,71, "
+                                              "Wingstop 1,15-1,39, Chipotle 0,89-1,00",
+        extra="Shake Shack vende 97% en Norteamérica. Los arrendamientos entran como deuda, así que el costo fijo del "
+              "alquiler ya sube la beta reapalancada (~0,98). Cadena pequeña, un solo concepto y márgenes finos son riesgos "
+              "propios: van en las historias (la Conservadora no alcanza el margen objetivo), no en la tasa; la prima por "
+              "tamaño no es parte del criterio de Damodaran. ",
+        antes="1,25 escrita a mano = 0,98 bottom-up + ~0,27 por cadena pequeña, un solo concepto y márgenes finos")},
+             IS: {"B32": ("Ventas/capital 1,9 en los años 1-5 (Damodaran, 5-oct-2026): el marginal del último año (1,88; 2,31 en "
+                          "tres años), con arrendamientos. Los locales nuevos (formatos más chicos, ventanilla) usan menos capital "
+                          "por venta que la base actual (1,36), cargada de locales en maduración. Con el margen objetivo (9,5%) y "
+                          "un impuesto de 25% el capital nuevo rinde ~13,6%: más que el ROIC actual (4,6%), menos que el de la "
+                          "industria (18,4%). Antes 1,51 (el del sector)."),
+                  "B33": ("Ventas/capital 1,7 en los años 6-10 (Damodaran, 5-oct-2026): baja hacia el del sector (1,51); el capital "
+                          "nuevo rinde ~12%. Antes 1,51.")}},
 }
 
 

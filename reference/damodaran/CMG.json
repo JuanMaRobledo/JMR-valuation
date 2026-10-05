@@ -8,7 +8,7 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 0,95 (desde el 3-oct-2026; antes 1,10). Regla de la cartera (prompt v4, paso 2): bottom-up de Restaurant/Dining (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,12 = 0,85 + 0,10 por un solo concepto de restaurante = 0,95. La de regresión queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
+  "texto": "La hoja usa la beta bottom-up de Restaurant/Dining en EE.UU. (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja), reapalancada por la hoja con la D/E de mercado, arrendamientos incluidos (~0,13): ~0,86. Chipotle vende 100% en Norteamérica. Tener un solo concepto es un riesgo propio y diversificable: está en la historia Conservadora, no en la tasa (hasta el 5-oct-2026 se sumaban 0,10 y la beta era 0,95). La regresión semanal contra el S&P 500 da 0,89 a dos años y 1,00 a cinco (McDonald's 0,31-0,48; Yum 0,39-0,52), y queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
  },
  "historias": [
   {
@@ -220,7 +220,7 @@
    "Nuevo brote o tráfico negativo atribuido al caso"
   ]
  ],
- "precio_lectura": "El precio de referencia de la valoración (US$31,90, hoja de Google al 30 de septiembre de 2026; cierre de ese día US$31,76) queda 38% por encima del DCF Base (US$23,05) y por encima de la historia Optimista (US$30,76), la más optimista. Con los arrendamientos como deuda (márgenes en base ajustada, +1,3 pp), el DCF inverso pide 8-15% de crecimiento anual en los años 1-5 con márgenes de 16-20%, algo que lograron 13-37% de las empresas de este tamaño; con el margen objetivo de la hoja (18,3% ajustado) y su beta pide 11,8%, bastante más que el 8% de la hoja. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda financiera, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).",
+ "precio_lectura": "Con los arrendamientos como deuda (márgenes en base ajustada, +1,3 pp), el precio de referencia ({precio}, hoja de Google al 30 de septiembre de 2026) queda incluso por encima de la historia Optimista ({vD}), la más optimista. El DCF inverso pide 9-14% de crecimiento anual en los años 1-5 con márgenes de 16-20%, algo que lograron 13-32% de las empresas de este tamaño; con el margen objetivo de la hoja (18,3% ajustado) y su beta pide 11,7%, bastante más que el {cagrA} de la Base. ¿Qué sabe el mercado que yo no? Paga por la calidad del negocio (retornos por local, sin deuda financiera, recompras) y por una pista de aperturas de muchos años. Es un argumento de duración: si crees que crecerá 7-8% durante quince años y no cinco, el valor cierra buena parte de la brecha. El brote de agosto pesó en la acción: cayó 9,7% el 4 de agosto (de US$37,46 a US$33,82) y terminó septiembre cerca de US$32, por debajo del salto posterior a los resultados (US$38,52 el 30 de julio).",
  "frase": "Cadena de restaurantes propios con gran economía unitaria y tráfico débil",
  "confianza": "Media: las aperturas son predecibles; el tráfico y el margen no",
  "cambiaria": "Comparables y tráfico de los próximos dos trimestres; margen operativo",
@@ -283,7 +283,7 @@
   ],
   [
    "Descuento, terminal y el peso de la perpetuidad.",
-   "El costo de capital va de {wacc0} a {waccT}, con beta {beta}. La bottom-up de restaurantes reapalancada con la deuda por arrendamientos da {betabu}, menor; la de la hoja es prudente y defendible para una cadena con ~US$5.000 millones de pasivo por alquileres. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo: la mayor parte del valor de Chipotle está más allá del año 10, lo que es lógico para un negocio que todavía abre locales pero hace al resultado muy sensible a la tasa (un punto más la lleva a {s_k_hi}; uno menos, a {s_k_lo})."
+   "El costo de capital va de {wacc0} a {waccT}, con beta {beta}: la bottom-up de restaurantes en EE.UU. reapalancada con una D/E que incluye ~US$5.000 millones de pasivo por alquileres. Un solo concepto es un riesgo propio que está en la historia Conservadora, no en la tasa; la regresión (0,89-1,00) queda como referencia. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo: la mayor parte del valor de Chipotle está más allá del año 10, lo que es lógico para un negocio que todavía abre locales pero hace al resultado muy sensible a la tasa (un punto más la lleva a {s_k_hi}; uno menos, a {s_k_lo})."
   ],
   [
    "Probabilidades y lectura del resultado.",
