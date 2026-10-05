@@ -29,7 +29,7 @@ CELLS = {
     ],
     "ADBE": [("B22", f"{IS}!L27", "Acciones del estado de resultados (sin ajuste).")],
 }
-SHEETS = {"CMG": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU", "CELH": "1E_s_A35yIAZRGatTIElusnMZs5NIvFJ9CUlGlqf7-j8",
+SHEETS = {"CMG": "1VUVN1cCm3Hj8bLrmsCZFYBCDIq3DncxHGHH_jbW8ZtU", "CELH": "1tHDLsh4yBF9NQkRLNqfTU6GPM5trOWsB5xIjpALLOIw",
           "SHAK": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM", "ADBE": "19WcSOKymo4gR6lnKiLB1gAitYFFwfI3xl08E4BDzLDw"}
 
 

@@ -192,7 +192,10 @@ def compute(tk: str) -> dict:
         dcf = ((rec.get("descuentoMultiples") or {}).get("dcfHoy") or {}).get("base")
     inp = engine_inputs(cell, grid["Financials Multiples"], price)
     m_base = inp["dcfFinanciero"]["roeBase"] if inp.get("dcfFinanciero") else cell("Input sheet", "B30")
-    g_ref = st.mean([x for x in grid["Valuation output"][3][2:7] if isinstance(x, (int, float))])
+    g_vo = [x for x in grid["Valuation output"][3][2:7] if isinstance(x, (int, float))]
+    # Hoja nueva: 'Valuation output' toma el crecimiento de «Escenarios e historias», que se arma con este resultado;
+    # en la primera pasada (pestaña vacía) la referencia sale de la Input sheet (B27 y B29).
+    g_ref = st.mean(g_vo) if g_vo else (cell("Input sheet", "B27") + 4 * cell("Input sheet", "B29")) / 5
     s2c = cell("Input sheet", "B32")
     wacc0 = cell("Input sheet", "B36")
     inp["salesToCapital"] = s2c
@@ -332,7 +335,9 @@ def compute(tk: str) -> dict:
         beta_rows.append((f"Bottom-up del sector ({industria}, reapalancada)", beta_bu))
     if spec.get("riesgo", {}).get("beta_propuesta"):
         beta_rows.append(("Propuesta (sector ajustado por riesgo propio)", beta_prop))
-    bv = run_exact(grid, [{"wacc": wacc_for(b)} for _, b in beta_rows])
+    # Cada beta con la trayectoria completa de la historia Base (crecimiento año a año, margen, ROIC y terminal): así la
+    # fila de la beta de la hoja reproduce el DCF Base (antes usaba un crecimiento constante en los años 2-5).
+    bv = run_exact(grid, [{**kA, "wacc": wacc_for(b)} for _, b in beta_rows])
     betas_tab = [{"enfoque": n, "beta": b, "ke": rf + b * erp, "wacc": wacc_for(b), "dcf_base": v}
                  for (n, b), v in zip(beta_rows, bv)]
 
@@ -360,7 +365,7 @@ def compute(tk: str) -> dict:
                                    "salesToCapital2", "wacc", "costoPatrimonio", "taxEffective", "convergenceYear",
                                    "terminalWacc", "roicTerminal")}
     sup["salesToCapital"] = s2c
-    sin_exceso = None if financiero else run_exact(grid, [{"roic": 0}])[0]
+    sin_exceso = None if financiero else run_exact(grid, [{**kA, "roic": 0}])[0]
 
     seg_rev0 = {k: v * scale for k, v in segs.items()}
     return {"ticker": tk, "fecha": spec.get("fecha") or dt.date.today().isoformat(), "spec": spec,

@@ -99,8 +99,8 @@
   "industria": "Beverage (Soft)",
   "actual": 1.0,
   "ventas_ltm": 3047.3,
-  "capital_ltm": 3040.4626937984167,
-  "roic_actual": 0.16537511460610863,
+  "capital_ltm": 3040.4286937984166,
+  "roic_actual": 0.15891228346450575,
   "marginal_ultimo": {
    "desde": "Dec '24",
    "hasta": "Dec '25",
@@ -117,12 +117,12 @@
   },
   "sector": 1.54,
   "usada": [
-   1.83,
-   1.7
+   1.8,
+   1.6
   ],
   "rendimiento_capital_nuevo": [
-   0.2896,
-   0.269
+   0.2713,
+   0.2412
   ],
   "con_id": false,
   "vida_id": 0
