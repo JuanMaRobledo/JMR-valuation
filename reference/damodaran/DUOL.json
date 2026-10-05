@@ -11,12 +11,12 @@
  },
  "riesgo": {
   "beta_propuesta": null,
-  "texto": "La hoja usa una beta de 1,35. La beta bottom-up de Software (Internet) da 1,60, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,60, y la diferencia en valor (US$115,03 frente a US$109,77) es menor que la que producen las historias."
+  "texto": "La hoja usa una beta de 1,35: la bottom-up de Software (Internet) de la tabla global de Damodaran (62% de las ventas fuera de Norteamérica), reapalancada. La de la tabla de EE.UU. da 1,61, pero sale de solo 29 empresas con una dispersión muy alta del resultado operativo; la de Software (System & Application), 1,25. El rango razonable es 1,25-1,61; la tabla muestra el DCF Base con la beta de la hoja y con la de EE.UU.: la diferencia es menor que la que producen las historias."
  },
  "historias": [
   {
    "nombre": "Base · La audiencia crece y la monetización se recupera en parte",
-   "prob": 0.4,
+   "prob": 0.45,
    "margen": 0.27,
    "crec": {
     "Suscripciones": [
@@ -90,7 +90,7 @@
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
-   "prob": 0.1,
+   "prob": 0.05,
    "margen": 0.15,
    "crec": {
     "Suscripciones": [
@@ -254,7 +254,7 @@
  "reinversion": {
   "texto": "Capital físico mínimo (capex de US$18 millones en 2025) y cobros por adelantado (ingresos diferidos de US$505 millones). La hoja usa un sales-to-capital de 1,79 en ambas etapas: entre 2023 y 2025 las ventas subieron US$668 millones con ~US$373 millones de reinversión, casi toda I+D capitalizado neto (la hoja capitaliza el I+D). El valor anterior (~3) era 66% más generoso que esa historia; el promedio de Software (Internet) según Damodaran es 1,35. La reinversión real está en I+D y marketing, que el contable trata como gasto; y la empresa tiene US$1.181 millones de caja y recompras por US$400 millones anunciadas. Sin ventaja defendible: marca y hábito de uso con costos de cambio bajos; cualquier app o asistente de IA puede enseñar idiomas. El ROIC después del año 10 es igual al costo de capital, el supuesto por defecto de Damodaran: el crecimiento posterior no suma valor."
  },
- "prob_texto": "Base (40%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. Conservadora (30%) prolonga la brecha actual entre usuarios y reservas. Disrupción (10%) es el riesgo de sustitución por asistentes generalistas. Optimista (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
+ "prob_texto": "Base (45%) es la lectura central: la audiencia sigue creciendo y la monetización se recupera en parte. Conservadora (30%) prolonga la brecha actual entre usuarios y reservas (la guía del 3T26 es +8,9% de reservas). Disrupción (5%) es el riesgo de sustitución por asistentes generalistas; bajó de 10% a 5% el 5-oct-2026 porque los usuarios activos diarios aceleraron a ~27% interanual en agosto (dato preliminar que la empresa divulgó en un 8-K del 18-ago-2026), lo contrario de lo que mostraría una sustitución. Optimista (20%) necesita que la IA suba el precio o la conversión (Max, Video Call). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
   "Las reservas siguen en ~8-10%: los usuarios nuevos (atraídos por campañas como la recuperación de rachas) pagan menos.",
   "Los asistentes de IA generalistas ofrecen práctica conversacional gratis y erosionan el valor de Max.",
@@ -272,7 +272,7 @@
   ],
   [
    "Usuarios activos diarios",
-   "58,7 M (+23%)",
+   "58,7 M (+23%, 2T26); ~+27% en agosto (preliminar)",
    "≥ +15% con reservas acelerando",
    "Desaceleración bajo +10%"
   ],
@@ -316,6 +316,10 @@
   [
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ],
+  [
+   "Duolingo, 8-K del 18-ago-2026 (usuarios activos diarios de agosto, dato preliminar)",
+   "https://www.sec.gov/Archives/edgar/data/1562088/000162828026057818/duol-20260818.htm"
   ]
  ],
  "arrendamientos": {
@@ -342,11 +346,11 @@
   ],
   [
    "Descuento.",
-   "La beta de la hoja es {beta}; la bottom-up de Software (Internet) da {betabu}, pero sale de solo 29 empresas muy dispersas, y la de Software (System & Application) 1,25. El rango razonable es 1,25-1,60. El costo de capital va de {wacc0} a {waccT}; un punto más de tasa lleva la Base a {s_k_hi}. La diferencia que produce la beta es menor que la que producen las historias: el riesgo de Duolingo está en la monetización, no en la tasa. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+   "La beta de la hoja es {beta}, la bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica); la de EE.UU. da {betabu}, pero sale de solo 29 empresas muy dispersas, y la de Software (System & Application) 1,25. El rango razonable es 1,25-1,61. El costo de capital va de {wacc0} a {waccT}; un punto más de tasa lleva la Base a {s_k_hi}. La diferencia que produce la beta es menor que la que producen las historias: el riesgo de Duolingo está en la monetización, no en la tasa. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
   ],
   [
    "Probabilidades y lectura del resultado.",
-   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga más de lo que vale la Base, algo entre la Base y la Optimista ({vD}). La evidencia en contra de la Base es la brecha más grande en años entre usuarios y reservas, y la guía del 3T (+8,9% de reservas) no muestra recuperación. La empresa tiene US$1.181 millones de caja y anunció recompras por US$400 millones; la caja está en el puente al patrimonio, las recompras no."
+   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga más de lo que vale la Base, algo entre la Base y la Optimista ({vD}). La evidencia en contra de la Base es la brecha más grande en años entre usuarios y reservas, y la guía del 3T (+8,9% de reservas) no muestra recuperación. A favor: en agosto los usuarios activos diarios crecían ~27% (8-K del 18-ago-2026, dato preliminar), más que el 23% del 2T26; por eso la Disrupción bajó de 10% a 5% y la Base subió de 40% a 45% (regla: mover 5-10 pp por trimestre con los indicadores). Que esos usuarios paguen es lo que separa la Base de la Conservadora. La empresa tiene US$1.181 millones de caja y anunció recompras por US$400 millones; la caja está en el puente al patrimonio, las recompras no."
   ]
  ]
 }

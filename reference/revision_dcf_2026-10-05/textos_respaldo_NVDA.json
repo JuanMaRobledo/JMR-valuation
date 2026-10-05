@@ -11,7 +11,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "13,4%: beta observado ~1,90 (Directo, muy por encima del beta de industria 'Semiconductor' de Damodaran, que promedia fabricantes mucho más diversificados y de menor crecimiento) x ERP de mercado maduro de EE.UU., calificación real Aa1/AA, deuda financiera neta negativa (posición de caja neta).",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,51 (bottom-up de Semiconductor en EE.UU., sin deuda relevante) × ERP 4,55% = Ke 12,2%; Kd después de impuestos 5,2%; peso del patrimonio 99%; WACC inicial 12,1% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,51 (bottom-up de Semiconductor en EE.UU., sin deuda relevante) × ERP 4,16% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,6%; Kd después de impuestos 5,2%; peso del patrimonio 99%; WACC inicial 11,5% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Beta observado ~1,90 (Direct Input; la canasta de industria 'Semiconductor' de Damodaran promedia fabricantes mucho más diversificados y de menor crecimiento, subestimando el riesgo idiosincrático específico de Nvidia) x ERP de mercado maduro de EE.UU. Costo de deuda con calificación real Aa1/AA (no el A1/A+ genérico de la plantilla), vencimiento promedio 10 años. Posición de caja neta positiva.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,51 (bottom-up de Semiconductor en EE.UU., sin deuda relevante) × ERP 4,55% = Ke 12,2%; Kd después de impuestos 5,2%; peso del patrimonio 99%; WACC inicial 12,1% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,51 (bottom-up de Semiconductor en EE.UU., sin deuda relevante) × ERP 4,16% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,6%; Kd después de impuestos 5,2%; peso del patrimonio 99%; WACC inicial 11,5% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (NVDA, 5-oct-2026)"
  }
 }

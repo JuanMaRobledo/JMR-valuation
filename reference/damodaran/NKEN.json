@@ -407,8 +407,8 @@
    "https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/"
   ],
   [
-   "Damodaran, ERP implícita de septiembre de 2026",
-   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+   "Damodaran, ERP implícita de octubre de 2026 (con la tasa y los precios del 30-sep)",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
   ],
   [
    "Damodaran, Betas by Sector (global), enero de 2026",
@@ -442,7 +442,7 @@
   ],
   [
    "Descuento y largo plazo: beta de la industria y una ventaja que se desvanece.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 1-oct-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 1-oct-2026, prima de mercado {erp} de Damodaran de octubre, beta {beta}, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
   ],
   [
    "Acciones, opciones y deuda.",

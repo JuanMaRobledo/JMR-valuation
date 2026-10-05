@@ -15,6 +15,10 @@ generator: "Claude (Modelo JMR)"
 
 > Alcance: análisis fundamental cualitativo con fines informativos; no constituye asesoramiento financiero ni recomendación de compra o venta.
 
+<!-- JMR-NOTA-REVISION-2026-10-05 -->
+> **Actualización del 5 de octubre de 2026.** Las tablas de auditoría y de supuestos de este informe se actualizaron con la hoja de cálculo; las demás tablas y el texto conservan la fecha del informe. Tras la revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa beta 1,51 (bottom-up de Semiconductor en EE.UU., sin cambio), costo de capital inicial 11,53% y terminal 8,99% con la prima de mercado madura de Damodaran de octubre de 2026 (3,70%, calculada con la tasa del 30-sep; antes 4,09%), y ventas/capital 2,9 en los años 1-5 y 2,4 en los 6-10. DCF Base US$222,09 por acción y DCF esperado US$201,88 ('Escenarios e historias' H11 y H10), con un precio de referencia de US$228,38 ('Input sheet' D1). Las cifras vigentes están en la sección de historias Damodaran y en la valoración.
+<!-- /JMR-NOTA-REVISION-2026-10-05 -->
+
 ## 1. Resumen ejecutivo
 
 NVIDIA Corporation diseña unidades de procesamiento gráfico (GPU, por sus siglas en inglés) y sistemas completos de cómputo acelerado, bajo un modelo fabless (no fabrica sus propios chips: la fundición taiwanesa TSMC los produce). La compañía pasó, en poco más de una década, de ser un proveedor de tarjetas gráficas para videojuegos a convertirse en el proveedor dominante de la infraestructura de cómputo que entrena e infiere los modelos de inteligencia artificial (IA) generativa a nivel mundial, con una participación de mercado en aceleradores de IA estimada entre 80% y 95% según distintas fuentes de mercado ["NVIDIA Commands Over 80 Percent of the AI GPU Market Share in 2026 Amid Growing Rivalry", Oreate AI Guides, 2026](https://learn.oreateai.com/learn/nvidia-commands-over-80-percent-of-the-ai-gpu-market-share-in-2026-amid-growing-rivalry).

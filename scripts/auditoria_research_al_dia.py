@@ -104,6 +104,9 @@ def transformar(tk: str, hdr: list[str], row: list[str], v: dict) -> list[str] |
             out[1] = pct(v["rf"])
         elif n == "erp":
             out[1] = pct(v["erp"])
+        elif n.startswith("wacc / ke"):
+            out[1] = f"{pct(v['w0'])} / {pct(v['ke'])}"
+            out[4] = f"{REV}: recalculado por la hoja con la prima de mercado de octubre de 2026"
         elif n.startswith("wacc terminal"):
             out[1] = pct(v["wT"])
             if v["fin"]:
@@ -188,7 +191,7 @@ def en_md(tk: str, m: str, v: dict) -> tuple[str, int]:
 
 def main(argv: list[str]) -> int:
     apply = "--apply" in argv
-    tks = [a for a in argv if not a.startswith("--")] or [t for t in sorted(BETA) if t != "CELH"]  # CELH: research del 5-oct
+    tks = [a for a in argv if not a.startswith("--")] or sorted(BETA)
     for tk in tks:
         v = valores(tk)
         p = Path(glob.glob(str(DATOS / "analisis" / f"{tk}-research-*.json"))[0])

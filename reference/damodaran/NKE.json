@@ -101,7 +101,7 @@
   }
  },
  "margenes": {
-  "texto": "El margen operativo GAAP de los últimos doce meses es 8,2% (US$3.758 millones), pero incluye un beneficio de una vez de US$986 millones por la devolución de los aranceles IEEPA que la Corte Suprema declaró ilegales (reconocido en el 4T FY26) y US$385 millones de indemnizaciones por despidos ([NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)). Sin ambos, el margen normalizado es 6,9%. La guía de FY2027 (BPA ajustado US$1,15-1,35 con impuestos de ~25%) implica un margen operativo de ~6% sobre ventas ~8% menores. Entre FY2017 y FY2024 Nike ganó 12-16% (salvo 8,3% en la pandemia); Deckers ganó 23% y Lululemon 20% en su último ejercicio fiscal, con marcas más chicas y sin la carga de los mayoristas. El margen bruto del 1T FY27 subió 60 puntos básicos a 42,8% por menores costos de logística ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm))."
+  "texto": "El margen operativo GAAP de los últimos doce meses es 8,2% (US$3.758 millones), pero incluye un beneficio de una vez de US$986 millones por la devolución de los aranceles IEEPA que la Corte Suprema declaró ilegales (reconocido en el 4T FY26) y US$385 millones de indemnizaciones por despidos ([NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)). Sin ambos, el margen normalizado es 6,9%. La guía de FY2027 (BPA ajustado US$1,15-1,35 con impuestos de ~25%) implica un margen operativo de ~6% sobre ventas ~8% menores. Entre FY2017 y FY2024 Nike ganó 12-16% (salvo 8,3% en la pandemia); Deckers ganó 23% y Lululemon 20% en su último ejercicio fiscal, con marcas más chicas y sin la carga de los mayoristas. El margen bruto del 1T FY27 subió 60 puntos básicos a 42,8% por menores costos de logística ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)). El 1-oct-2026 Nike amplió el programa Pace: cargos antes de impuestos de ~US$1.000 millones, sobre todo indemnizaciones, ~US$300 millones en FY2027 y el resto hasta FY2031, además de los ~US$300 millones de FY2026 ([NIKE, 8-K del 1-oct-2026, punto 2.05](https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/nke-20261001.htm)). Son costos de reestructuración que no entran en el margen normalizado de la Base, pero sí salen de la caja: después de impuestos y a valor presente equivalen a ~US$0,4-0,5 por acción, dentro del rango de las historias."
  },
  "reinversion": {
   "texto": "Nike reinvierte poco en activos: fabrica con terceros y el capex de FY2026 fue US$684 millones (1,5% de las ventas), algo menos que la depreciación más la amortización de los arrendamientos. Con el capital invertido de ~US$17.600 millones (patrimonio más deuda y arrendamientos, menos caja) rota su capital ~2,6 veces, igual que el sector Shoe en EE.UU. (2,62); se usa 2,6 (antes 2,1, el promedio global, que suponía 24% más capital por dólar de ventas nuevas del que Nike usa). Con el margen objetivo (11,6%) el capital nuevo rinde ~22,6%, lo mismo que el capital actual a ese margen y cerca del ROIC de la industria (20,9%): el ROIC de hoy (~15%) está deprimido por el margen, no por más capital por venta. La vuelta a crecer con los mayoristas pide inventario y cuentas por cobrar, pero en la misma proporción que hoy. Pace también cuesta: ~US$1.000 millones de cargos a FY2031.",
@@ -407,8 +407,8 @@
    "https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/"
   ],
   [
-   "Damodaran, ERP implícita de septiembre de 2026",
-   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+   "Damodaran, ERP implícita de octubre de 2026 (con la tasa y los precios del 30-sep)",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
   ],
   [
    "Damodaran, Betas by Sector (global), enero de 2026",
@@ -442,7 +442,7 @@
   ],
   [
    "Descuento y largo plazo: beta de la industria y una ventaja que se desvanece.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran de octubre, beta {beta}, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
   ],
   [
    "Acciones, opciones y deuda.",

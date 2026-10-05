@@ -325,8 +325,8 @@
    "https://www.sec.gov/Archives/edgar/data/1858985/000095010326004606/dp244091_ex9901.htm"
   ],
   [
-   "Damodaran, ERP implícita de septiembre de 2026",
-   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPSept26.xlsx"
+   "Damodaran, ERP implícita de octubre de 2026 (con la tasa y los precios del 30-sep)",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
   ],
   [
    "Damodaran, Betas by Sector (global), enero de 2026",
@@ -352,7 +352,7 @@
   ],
   [
    "Descuento y largo plazo: beta del sector y sin ventaja defendible.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran a septiembre, beta {beta}, sin deuda bancaria; los arrendamientos pesan ~6%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): On gana hoy muy por encima de su costo de capital, pero su marca tiene 16 años y no atravesó todavía un ciclo de moda completo, así que no cuenta como ventaja probada. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran de octubre, beta {beta}, sin deuda bancaria; los arrendamientos pesan ~6%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): On gana hoy muy por encima de su costo de capital, pero su marca tiene 16 años y no atravesó todavía un ciclo de moda completo, así que no cuenta como ventaja probada. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
   ],
   [
    "Acciones, moneda y caja.",

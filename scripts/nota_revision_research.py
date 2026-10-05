@@ -44,6 +44,10 @@ ANTES = {
     "PYPL": (None, (1.42, 1.42), "patrimonio de Financial Svcs. en EE.UU., sin cambio"),
     "GOOG": (None, (1.1537, 1.12), "por ingresos (Advertising y Software), sin cambio"),
     "ZTS": (None, (0.91, 0.91), "bottom-up de Drugs (Pharmaceutical), sin cambio"),
+    "CELH": (None, None, "bottom-up de Beverage (Soft) en EE.UU."),
+    "NVDA": (None, None, "bottom-up de Semiconductor en EE.UU., sin cambio"),
+    "PLTR": (None, None, "bottom-up de Software (System & Application) en EE.UU., sin cambio"),
+    "DUOL": (None, None, "bottom-up de Software (Internet) en la tabla global, sin cambio"),
     "SHAK": (1.25, (1.51, 1.51), "bottom-up de Restaurant/Dining en EE.UU. reapalancada con los arrendamientos, sin primas "
                                  "por tamaño, concepto ni márgenes finos"),
 }
@@ -71,7 +75,8 @@ def nota(tk: str) -> str:
             f"se actualizaron con la hoja de cálculo; las demás tablas y el texto conservan la fecha del informe. Tras la "
             f"revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las "
             f"historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa {beta}, "
-            f"{tasa} inicial {pct(v['w0'])} y terminal {pct(v['wT'])}, y {s2c}. DCF Base US${es(v['base'])} por acción y DCF "
+            f"{tasa} inicial {pct(v['w0'])} y terminal {pct(v['wT'])} con la prima de mercado madura de Damodaran de octubre de "
+            f"2026 (3,70%, calculada con la tasa del 30-sep; antes 4,09%), y {s2c}. DCF Base US${es(v['base'])} por acción y DCF "
             f"esperado US${es(v['ve'])} ('Escenarios e historias' H11 y H10), con un precio de referencia de "
             f"US${es(v['precio'])} ('Input sheet' D1). Las cifras vigentes están en la sección de historias Damodaran y en la "
             f"valoración.")

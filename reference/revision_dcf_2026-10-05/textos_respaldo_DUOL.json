@@ -6,12 +6,12 @@
  },
  "Stories to Numbers!G14": {
   "before": "Strong competitive edges",
-  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,4% (ROIC actual 36,6%; industria 29,3%).",
+  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,0% (ROIC actual 36,6%; industria 29,3%).",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Stories to Numbers!G15": {
   "before": "Cost of capital close to median company",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,35 (bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica), reapalancada) × ERP 5,21% = Ke 12,3%; Kd después de impuestos 5,3%; peso del patrimonio 99%; WACC inicial 12,2% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,35 (bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica), reapalancada) × ERP 4,82% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,8%; Kd después de impuestos 5,3%; peso del patrimonio 99%; WACC inicial 11,7% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Igual en los tres escenarios: beta de industria \"Software (Internet)\", sin deuda calificada — costo de deuda directo del 7% dado que el interés real pagado es prácticamente nulo.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,35 (bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica), reapalancada) × ERP 5,21% = Ke 12,3%; Kd después de impuestos 5,3%; peso del patrimonio 99%; WACC inicial 12,2% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,35 (bottom-up de Software (Internet) en la tabla global (62% de las ventas fuera de Norteamérica), reapalancada) × ERP 4,82% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,8%; Kd después de impuestos 5,3%; peso del patrimonio 99%; WACC inicial 11,7% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  }
 }

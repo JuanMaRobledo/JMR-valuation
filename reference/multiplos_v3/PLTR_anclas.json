@@ -3,7 +3,7 @@
  "empresa": "Palantir Technologies Inc. (NASDAQ:PLTR)",
  "sheet_id": "1Y6kXnRlrAKK3C20tQtIfDd2IXYG0eKEi10wyR8TXFLA",
  "fecha": "2026-09-29",
- "ke": 0.1089223837215511,
+ "ke": 0.10404738372155109,
  "categoria": "Crecimiento",
  "metodos": {
   "EV/EBITDA": {
@@ -65,8 +65,8 @@
     "p75": 48.03
    },
    "justificado": {
-    "Conservador": 27.79,
-    "Base": 76.04,
+    "Conservador": 31.97,
+    "Base": null,
     "Optimista": null
    },
    "actual_J": {
@@ -124,8 +124,8 @@
     "p75": 111.93
    },
    "justificado": {
-    "Conservador": 31.36,
-    "Base": 91.22,
+    "Conservador": 36.08,
+    "Base": null,
     "Optimista": null
    },
    "actual_J": {
@@ -193,8 +193,8 @@
     "p75": 104.25
    },
    "justificado": {
-    "Conservador": 24.09,
-    "Base": 55.35,
+    "Conservador": 27.39,
+    "Base": null,
     "Optimista": null
    },
    "actual_J": {
@@ -252,8 +252,8 @@
     "p75": 93.77
    },
    "justificado": {
-    "Conservador": 26.34,
-    "Base": 59.09,
+    "Conservador": 29.93,
+    "Base": null,
     "Optimista": null
    },
    "actual_J": {
@@ -311,8 +311,8 @@
     "p75": 128.23
    },
    "justificado": {
-    "Conservador": 26.07,
-    "Base": 58.53,
+    "Conservador": 29.64,
+    "Base": null,
     "Optimista": null
    },
    "actual_J": {
@@ -327,42 +327,42 @@
    "g": 0.0683563173887207,
    "g_años_4_10": 0.0838126347774414,
    "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.10242071925883932,
-   "ke": 0.1089223837215511,
+   "wacc_4_10": 0.0979651507168968,
+   "ke": 0.10404738372155109,
    "roe_fy3": 0.8029759544109194,
    "fcff_ebitda": 0.8860564169001146,
    "fcfe_ocf": 0.9900775713340005,
    "multiplos": {
-    "EV/FCFF": 31.36283799909857,
-    "P/FCFE": 26.336206932741035,
-    "P/E": 24.094239274780254,
-    "EV/EBITDA": 27.78924386130004,
-    "P/OCF": 26.074887798117913
+    "EV/FCFF": 36.08235101827063,
+    "P/FCFE": 29.933437892439603,
+    "P/E": 27.385242557484332,
+    "EV/EBITDA": 31.970998656581074,
+    "P/OCF": 29.636425490223747
    }
   },
   "Base": {
    "g": 0.09046691690611951,
    "g_años_4_10": 0.128033833812239,
    "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.10242071925883932,
-   "ke": 0.1089223837215511,
+   "wacc_4_10": 0.0979651507168968,
+   "ke": 0.10404738372155109,
    "roe_fy3": 1.4287449593364765,
    "fcff_ebitda": 0.8335711328509731,
    "fcfe_ocf": 0.9906149817916793,
    "multiplos": {
-    "EV/FCFF": 91.22343541659855,
-    "P/FCFE": 59.08639038023804,
-    "P/E": 55.345090343530316,
-    "EV/EBITDA": 76.04122240277162,
-    "P/OCF": 58.53186353065556
+    "EV/FCFF": null,
+    "P/FCFE": null,
+    "P/E": null,
+    "EV/EBITDA": null,
+    "P/OCF": null
    }
   },
   "Optimista": {
    "g": 0.11037551750985734,
    "g_años_4_10": 0.16785103501971468,
    "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.10242071925883932,
-   "ke": 0.1089223837215511,
+   "wacc_4_10": 0.0979651507168968,
+   "ke": 0.10404738372155109,
    "roe_fy3": 2.053311377798751,
    "fcff_ebitda": 0.7967292861260548,
    "fcfe_ocf": 0.990933470578764,

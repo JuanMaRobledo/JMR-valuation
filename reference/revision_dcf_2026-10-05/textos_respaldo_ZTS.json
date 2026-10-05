@@ -11,7 +11,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "Beta 0,9 (Direct Input), ERP maduro, deuda Baa2/BBB a 8 años.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,11 (bottom-up de Drugs (Pharmaceutical), reapalancada) × ERP 5,07% = Ke 10,9%; Kd después de impuestos 5,1%; peso del patrimonio 80%; WACC inicial 9,8% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,11 (bottom-up de Drugs (Pharmaceutical), reapalancada) × ERP 4,68% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,5%; Kd después de impuestos 5,1%; peso del patrimonio 80%; WACC inicial 9,4% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Beta 0,9 (Direct Input), ERP maduro, deuda Baa2/BBB a 8 años (US$9.042M).",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,11 (bottom-up de Drugs (Pharmaceutical), reapalancada) × ERP 5,07% = Ke 10,9%; Kd después de impuestos 5,1%; peso del patrimonio 80%; WACC inicial 9,8% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,11 (bottom-up de Drugs (Pharmaceutical), reapalancada) × ERP 4,68% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,5%; Kd después de impuestos 5,1%; peso del patrimonio 80%; WACC inicial 9,4% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
  }
 }

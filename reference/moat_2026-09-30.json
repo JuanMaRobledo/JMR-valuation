@@ -1,6 +1,6 @@
 {
  "fecha": "2026-09-30",
- "regla": "Criterio Damodaran para el ROIC después del año 10 (30-sep-2026). Tres preguntas con la evidencia de la sección 6: (1) ¿gana hoy por encima de su costo de capital de forma sostenida (al menos los últimos 3 años, con plusvalía y arrendamientos cuando son materiales)? (2) ¿tiene una ventaja competitiva identificable (costos de cambio, efectos de red, escala o costo, licencias o regulación, patentes, marca probada de 20 años o más que superó un ciclo o una crisis)? (3) ¿la ventaja se desvanece de forma visible hoy (ROIC en caída por competencia, pérdida de participación, precios a la baja)? Si (1) o (2) fallan: sin ventaja defendible → ROIC terminal = costo de capital (supuesto por defecto de Damodaran). Si (1) y (2) se cumplen y (3) no: ventaja durable → promedio de la industria (Damodaran), sin superar el ROIC actual ni bajar del costo de capital terminal. Si (3) se cumple: ventaja que se desvanece → punto medio entre el costo de capital terminal y ese valor (convención del modelo para 'ser más conservador'). La probabilidad de perder la ventaja en el futuro va a las historias (las de erosión usan el costo de capital), no a este valor. Fuente: Damodaran, Investment Valuation (3.ª ed.), cap. 12, y hoja Ginzu (B48-B50). Consistencia de definiciones (4-oct-2026): si el modelo capitaliza el I+D, el ROIC de la industria se lleva a la misma base antes de aplicar la regla (ROC de Damodaran × margen ajustado por I+D / margen sin ajustar × capital / (capital + activo de I+D), con la vida del I+D del modelo); el ROIC actual de la empresa ya está en esa base. Damodaran, Investment Valuation, cap. 9 (I+D como gasto de capital). Tasas comunes (4-oct-2026): Treasury 10 años del 30-sep-2026 (5,29%) + prima madura implícita de septiembre (4,09%); costo de capital terminal 9,38% en mercados desarrollados y con prima país en Brasil (AFYA 11,11%, PAGS 12,30%).",
+ "regla": "Criterio Damodaran para el ROIC después del año 10 (30-sep-2026). Tres preguntas con la evidencia de la sección 6: (1) ¿gana hoy por encima de su costo de capital de forma sostenida (al menos los últimos 3 años, con plusvalía y arrendamientos cuando son materiales)? (2) ¿tiene una ventaja competitiva identificable (costos de cambio, efectos de red, escala o costo, licencias o regulación, patentes, marca probada de 20 años o más que superó un ciclo o una crisis)? (3) ¿la ventaja se desvanece de forma visible hoy (ROIC en caída por competencia, pérdida de participación, precios a la baja)? Si (1) o (2) fallan: sin ventaja defendible → ROIC terminal = costo de capital (supuesto por defecto de Damodaran). Si (1) y (2) se cumplen y (3) no: ventaja durable → promedio de la industria (Damodaran), sin superar el ROIC actual ni bajar del costo de capital terminal. Si (3) se cumple: ventaja que se desvanece → punto medio entre el costo de capital terminal y ese valor (convención del modelo para 'ser más conservador'). La probabilidad de perder la ventaja en el futuro va a las historias (las de erosión usan el costo de capital), no a este valor. Fuente: Damodaran, Investment Valuation (3.ª ed.), cap. 12, y hoja Ginzu (B48-B50). Consistencia de definiciones (4-oct-2026): si el modelo capitaliza el I+D, el ROIC de la industria se lleva a la misma base antes de aplicar la regla (ROC de Damodaran × margen ajustado por I+D / margen sin ajustar × capital / (capital + activo de I+D), con la vida del I+D del modelo); el ROIC actual de la empresa ya está en esa base. Damodaran, Investment Valuation, cap. 9 (I+D como gasto de capital). Tasas comunes (5-oct-2026): Treasury 10 años del 30-sep-2026 (5,29%) + prima madura implícita de Damodaran de octubre de 2026 (3,70%, calculada con la tasa y los precios del 30-sep; antes 4,09% de septiembre); costo de capital terminal 8,99% en mercados desarrollados (antes 9,38%) y con prima país en Brasil (AFYA 10,72%, PAGS 11,91%). Los ROIC terminales de punto medio se recalcularon con 8,99%.",
  "empresas": {
   "MSFT": {
    "fuentes": "Costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn)",
@@ -9,7 +9,7 @@
    "roic_actual": 0.254,
    "roic_industria": 0.2056,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.2056,
    "roic_terminal_antes": 0.258,
    "ventaja": "ventaja durable",
@@ -18,7 +18,8 @@
    "roic_industria_sin_ajuste": 0.2932,
    "roic_terminal_antes_2026_10_04": 0.254,
    "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 3 años: 29,32% × (margen después de impuestos ajustado por I+D 32,62% / sin ajuste 31,17%) × capital/(capital + activo de I+D) [0,649/(0,649 + 2,0 × 15,98%)] = 20,56%.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0848
+   "costo_capital_terminal_antes_2026_10_04": 0.0848,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "GOOG": {
    "fuentes": "Escala y efectos de red en búsqueda, YouTube y Android; datos",
@@ -27,14 +28,15 @@
    "roic_actual": 0.3182,
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.293,
    "roic_terminal_antes": 0.286,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): escala y efectos de red en búsqueda, YouTube y Android, sin erosión visible (Search +17%, ROIC estable 24-31%). El riesgo de IA y antimonopolio queda en las historias B y D, no en el nivel del moat.",
    "ventaja": "ventaja durable",
    "referencia": 0.293,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "INTU": {
    "fuentes": "Costos de cambio y datos del cliente (QuickBooks, TurboTax), escala en pyme",
@@ -43,13 +45,14 @@
    "roic_actual": 0.2256,
    "roic_industria": 0.2932,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.226,
    "roic_terminal_antes": 0.232,
    "ventaja": "ventaja durable",
    "referencia": 0.2256,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "NVDA": {
    "fuentes": "Ecosistema CUDA (costos de cambio) y escala en cómputo acelerado",
@@ -58,13 +61,14 @@
    "roic_actual": 1.4082,
    "roic_industria": 0.2723,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.272,
    "roic_terminal_antes": 0.272,
    "ventaja": "ventaja durable",
    "referencia": 0.2723,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "DPZ": {
    "fuentes": "Marca probada (más de 60 años, se recuperó de la crisis de 2008-2010) y densidad y escala logística en reparto; franquicias con muy poco capital",
@@ -73,14 +77,15 @@
    "roic_actual": 0.8124,
    "roic_industria": 0.1836,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.184,
    "roic_terminal_antes": 0.184,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): dos fuentes estructurales (marca probada y escala logística), ROIC 65-78% en cada uno de los últimos 5 años y sin erosión visible (ventas mismas tiendas planas, no negativas).",
    "ventaja": "ventaja durable",
    "referencia": 0.1836,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "ADBE": {
    "fuentes": "Costos de cambio y estándar de la industria creativa y documental",
@@ -89,7 +94,7 @@
    "roic_actual": 0.3686,
    "roic_industria": 0.2056,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.2056,
    "roic_terminal_antes": 0.293,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): costos de cambio y estándar de la industria, ROIC en alza (38% → 59%) y ingresos creciendo ~10%: sin erosión visible hoy. Figma, Canva y la IA quedan en las historias de erosión (B y C, 50%).",
@@ -99,7 +104,8 @@
    "roic_industria_sin_ajuste": 0.2932,
    "roic_terminal_antes_2026_10_04": 0.293,
    "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 3 años: 29,32% × (margen después de impuestos ajustado por I+D 32,62% / sin ajuste 31,17%) × capital/(capital + activo de I+D) [0,649/(0,649 + 2,0 × 15,98%)] = 20,56%.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0922
+   "costo_capital_terminal_antes_2026_10_04": 0.0922,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "NVO": {
    "fuentes": "Patentes y escala de manufactura en diabetes y obesidad",
@@ -108,7 +114,7 @@
    "roic_actual": 0.2524,
    "roic_industria": 0.0919,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.092,
    "roic_terminal_antes": 0.169,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): patentes y escala (ancho por fuentes), pero con erosión visible: pérdida de participación frente a Lilly, recortes de precio y ROIC de 87% a 36% → estrecho. Revisión del 4-oct-2026: con el ROIC de la industria medido como el del modelo (I+D capitalizado) la referencia es 9,19%, igual al costo de capital terminal (9,2%); el punto medio de la regla queda en el costo de capital, el supuesto por defecto de Damodaran. Las patentes de la semaglutida vencen en 2031-2033 y se modelan en los años 6-10.",
@@ -119,7 +125,8 @@
    "roic_terminal_antes_2026_10_04": 0.131,
    "ajuste_rd": "ROIC de Drugs (Pharmaceutical) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 5 años: 16,95% × (margen después de impuestos ajustado por I+D 26,36% / sin ajuste 28,66%) × capital invertido/(capital + activo de I+D) [0,901/(0,901+3,0×0,2094)] = 9,19%.",
    "costo_capital_terminal_antes_2026_10_04": 0.092,
-   "nota_rd_vida": "Desde el 4-oct-2026 el I+D se amortiza en 10 años (antes 5); el ROIC terminal sigue en el costo de capital."
+   "nota_rd_vida": "Desde el 4-oct-2026 el I+D se amortiza en 10 años (antes 5); el ROIC terminal sigue en el costo de capital.",
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "ZTS": {
    "fuentes": "Cartera de patentes que se renueva, relación con veterinarios (costos de cambio) y escala en salud animal",
@@ -128,14 +135,15 @@
    "roic_actual": 0.2635,
    "roic_industria": 0.1695,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.169,
    "roic_terminal_antes": 0.169,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): dos o más fuentes estructurales, ROIC estable 26-29% y sin erosión visible. Los genéricos y la erosión de franquicias quedan en las historias B y D.",
    "ventaja": "ventaja durable",
    "referencia": 0.1695,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "CMG": {
    "fuentes": "Marca probada (30 años; se recuperó de la crisis de seguridad alimentaria de 2015-2018) con economía por local superior",
@@ -144,14 +152,15 @@
    "roic_actual": 0.2324,
    "roic_industria": 0.1836,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.184,
    "roic_terminal_antes": 0.184,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): la marca cuenta como fuente estructural porque está probada (30 años y una crisis superada, ROIC 15-22%); una sola fuente → estrecho.",
    "ventaja": "ventaja durable",
    "referencia": 0.1836,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "NKE": {
    "fuentes": "Marca global de más de 50 años, escala en marketing deportivo y contratos con atletas, y la red de distribución más grande del sector",
@@ -160,14 +169,16 @@
    "roic_actual": 0.152,
    "roic_industria": 0.2093,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
-   "roic_terminal": 0.123,
+   "costo_capital_terminal": 0.0899,
+   "roic_terminal": 0.121,
    "roic_terminal_antes": null,
    "nota": "Hoja nueva desde cero (2-oct-2026): (1) gana sobre su costo de capital, (2) marca probada que superó crisis (1998, 2016-2017) y (3) la ventaja se desvanece de forma visible → punto medio entre el costo de capital terminal (9,33%) y el ROIC actual (15,2%, menor que el de la industria): 12,3%.",
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.152,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin el reembolso de aranceles IEEPA ni las indemnizaciones de FY2026, balance al 31-ago-2026 y arrendamientos como deuda.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0933
+   "costo_capital_terminal_antes_2026_10_04": 0.0933,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938,
+   "roic_terminal_antes_2026_10_05": 0.123
   },
   "LULU": {
    "fuentes": "Marca premium de 28 años en ropa deportiva técnica, con comunidad propia y venta directa (tiendas propias y e-commerce)",
@@ -176,14 +187,16 @@
    "roic_actual": 0.266,
    "roic_industria": 0.1577,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
-   "roic_terminal": 0.126,
+   "costo_capital_terminal": 0.0899,
+   "roic_terminal": 0.124,
    "roic_terminal_antes": null,
    "nota": "Hoja nueva desde cero (2-oct-2026): (1) gana muy por encima de su costo de capital, (2) marca probada de 28 años y (3) la ventaja se desvanece de forma visible → punto medio entre el costo de capital terminal (9,33%) y el ROIC de la industria (15,8%, menor que el actual): 12,6%.",
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.1577,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin la devolución de aranceles IEEPA ni los costos de la disputa por poderes y de la transición del CEO; balance al 2-ago-2026; arrendamientos como deuda.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0933
+   "costo_capital_terminal_antes_2026_10_04": 0.0933,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938,
+   "roic_terminal_antes_2026_10_05": 0.126
   },
   "AFYA": {
    "fuentes": "Licencias reguladas de Medicina (plazas limitadas)",
@@ -192,13 +205,14 @@
    "roic_actual": 0.1487,
    "roic_industria": 0.1594,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.1111,
+   "costo_capital_terminal": 0.1072,
    "roic_terminal": 0.148,
    "roic_terminal_antes": 0.148,
    "ventaja": "ventaja durable",
    "referencia": 0.1487,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: capital invertido operativo (patrimonio + deuda − caja − activos no operativos) con el balance del último 10-Q y el I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.11
+   "costo_capital_terminal_antes_2026_10_04": 0.11,
+   "costo_capital_terminal_antes_2026_10_05": 0.1111
   },
   "PYPL": {
    "fuentes": "Red de dos lados (comercios y usuarios) y marca en el checkout",
@@ -207,30 +221,32 @@
    "roic_actual": 0.2092,
    "roic_industria": null,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.15,
    "roic_terminal_antes": 0.152,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): red de dos lados (fuente fuerte), pero con erosión visible: el checkout de marca pierde participación frente a Apple Pay y las billeteras nativas → estrecho.",
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.2092,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0905
+   "costo_capital_terminal_antes_2026_10_04": 0.0905,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "DUOL": {
    "fuentes": "Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos",
    "evidencia": "ROIC por encima del costo de capital en 2021-2026 (serie volátil)",
-   "amenaza": "IA generalista (Disrupción, 10%) y costos de cambio bajos",
+   "amenaza": "IA generalista (Disrupción, 5% desde el 5-oct-2026) y costos de cambio bajos",
    "roic_actual": 0.3658,
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "nota": "Revisión del 30-sep-2026 (criterio corregido): marca joven y producto fácil de sustituir (costos de cambio bajos): no cuenta como fuente estructural.",
    "ventaja": "sin ventaja defendible",
    "referencia": 0.293,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0922
+   "costo_capital_terminal_antes_2026_10_04": 0.0922,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "ONON": {
    "fuentes": "Marca y tecnología (CloudTec, LightSpray) de 16 años, con venta directa creciente; sin historia de un ciclo completo",
@@ -239,14 +255,15 @@
    "roic_actual": 0.285,
    "roic_industria": 0.2093,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "nota": "Hoja nueva desde cero (2-oct-2026): gana muy por encima de su costo de capital, pero la marca (16 años) no cumple el criterio de marca probada de 20 años que superó un ciclo → sin ventaja defendible: ROIC terminal = costo de capital.",
    "ventaja": "sin ventaja defendible",
    "referencia": 0.285,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): estados NIIF en francos convertidos a dólares al tipo de cada período; arrendamientos NIIF 16 en el balance; acciones económicas Clase A + Clase B/10.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0933
+   "costo_capital_terminal_antes_2026_10_04": 0.0933,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "BSX": {
    "fuentes": "Patentes y relación con médicos, pero el crecimiento se compra",
@@ -255,13 +272,14 @@
    "roic_actual": 0.0979,
    "roic_industria": 0.1698,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
    "referencia": 0.0979,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "UBER": {
    "fuentes": "Efectos de red de dos lados",
@@ -270,13 +288,14 @@
    "roic_actual": 0.1794,
    "roic_industria": 0.13,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
    "referencia": 0.13,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0922
+   "costo_capital_terminal_antes_2026_10_04": 0.0922,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "PLTR": {
    "fuentes": "Costos de cambio: plataformas integradas en los procesos de defensa, inteligencia y grandes empresas (Gotham, Foundry, AIP)",
@@ -285,7 +304,7 @@
    "roic_actual": 1.5003,
    "roic_industria": 0.2056,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": 0.2056,
    "roic_terminal_antes": null,
    "ventaja": "ventaja durable",
@@ -294,7 +313,8 @@
    "roic_industria_sin_ajuste": 0.2932,
    "roic_terminal_antes_2026_10_04": 0.293,
    "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo, con I+D capitalizado a 3 años: 29,32% × (margen después de impuestos ajustado por I+D 32,62% / sin ajuste 31,17%) × capital/(capital + activo de I+D) [0,649/(0,649 + 2,0 × 15,98%)] = 20,56%.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0923
+   "costo_capital_terminal_antes_2026_10_04": 0.0923,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "EPAM": {
    "fuentes": "Servicios de ingeniería con costos de cambio moderados",
@@ -303,13 +323,15 @@
    "roic_actual": 0.1514,
    "roic_industria": 0.2635,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
-   "roic_terminal": 0.12,
+   "costo_capital_terminal": 0.0899,
+   "roic_terminal": 0.121,
    "roic_terminal_antes": 0.117,
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.1514,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938,
+   "roic_terminal_antes_2026_10_05": 0.12
   },
   "PAGS": {
    "fuentes": "Ninguna durable frente a Pix y bancos digitales",
@@ -318,13 +340,14 @@
    "roic_actual": 0.1513,
    "roic_industria": null,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.123,
+   "costo_capital_terminal": 0.1191,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
    "referencia": 0.1513,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: capital invertido operativo (patrimonio + deuda − caja − activos no operativos) con el balance del último 10-Q y el I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.12
+   "costo_capital_terminal_antes_2026_10_04": 0.12,
+   "costo_capital_terminal_antes_2026_10_05": 0.123
   },
   "CELH": {
    "fuentes": "Marcas jóvenes (Alani Nu 2018; CELSIUS masiva desde 2021) en una categoría de barreras bajas; la distribución es un contrato de ~17 años con PepsiCo, no un activo propio. Ninguna marca cumple la regla de 20 años que superó un ciclo.",
@@ -333,13 +356,14 @@
    "roic_actual": 0.1589,
    "roic_industria": 0.2903,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
    "referencia": 0.1589,
    "nota_rd": "Hoja nueva desde cero (5-oct-2026, reemplaza a la del 1-oct): EBIT normalizado sin partidas de una vez salvo los costos legales, capital invertido con el preferente de PepsiCo (contable), arrendamientos como deuda. Veredicto: falla la pregunta 2 (sin ventaja identificable) → B49 = No, ROIC terminal = costo de capital.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0938
+   "costo_capital_terminal_antes_2026_10_04": 0.0938,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "SHAK": {
    "fuentes": "Marca sin economía unitaria probada",
@@ -348,13 +372,14 @@
    "roic_actual": 0.0461,
    "roic_industria": 0.1836,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
    "referencia": 0.09,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
-   "costo_capital_terminal_antes_2026_10_04": 0.09
+   "costo_capital_terminal_antes_2026_10_04": 0.09,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "CELHN": {
    "fuentes": "Marcas jóvenes (Alani Nu 2018; Celsius masiva desde 2021) en una categoría de barreras bajas; la distribución es un contrato con PepsiCo, no un activo propio",
@@ -363,13 +388,14 @@
    "roic_actual": 0.1654,
    "roic_industria": 0.2903,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "ventaja": "sin ventaja defendible",
    "referencia": 0.1654,
    "nota_rd": "Hoja nueva desde cero (1-oct-2026): EBIT normalizado sin partidas de una vez, capital invertido con el preferente de PepsiCo (contable), arrendamientos como deuda.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0938
+   "costo_capital_terminal_antes_2026_10_04": 0.0938,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   },
   "NKEN": {
    "fuentes": "Marca global de más de 50 años, escala en marketing deportivo y contratos con atletas, y la red de distribución más grande del sector",
@@ -378,14 +404,16 @@
    "roic_actual": 0.152,
    "roic_industria": 0.2093,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
-   "roic_terminal": 0.123,
+   "costo_capital_terminal": 0.0899,
+   "roic_terminal": 0.121,
    "roic_terminal_antes": null,
    "nota": "Hoja nueva desde cero (2-oct-2026): (1) gana sobre su costo de capital, (2) marca probada que superó crisis (1998, 2016-2017) y (3) la ventaja se desvanece de forma visible → punto medio entre el costo de capital terminal (9,33%) y el ROIC actual (15,2%, menor que el de la industria): 12,3%.",
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.152,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin el reembolso de aranceles IEEPA ni las indemnizaciones de FY2026, balance al 31-ago-2026 y arrendamientos como deuda.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0933
+   "costo_capital_terminal_antes_2026_10_04": 0.0933,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938,
+   "roic_terminal_antes_2026_10_05": 0.123
   },
   "LULUN": {
    "fuentes": "Marca premium de 28 años en ropa deportiva técnica, con comunidad propia y venta directa (tiendas propias y e-commerce)",
@@ -394,14 +422,16 @@
    "roic_actual": 0.266,
    "roic_industria": 0.1577,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
-   "roic_terminal": 0.126,
+   "costo_capital_terminal": 0.0899,
+   "roic_terminal": 0.124,
    "roic_terminal_antes": null,
    "nota": "Hoja nueva desde cero (2-oct-2026): (1) gana muy por encima de su costo de capital, (2) marca probada de 28 años y (3) la ventaja se desvanece de forma visible → punto medio entre el costo de capital terminal (9,33%) y el ROIC de la industria (15,8%, menor que el actual): 12,6%.",
    "ventaja": "ventaja que se desvanece",
    "referencia": 0.1577,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): EBIT normalizado sin la devolución de aranceles IEEPA ni los costos de la disputa por poderes y de la transición del CEO; balance al 2-ago-2026; arrendamientos como deuda.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0933
+   "costo_capital_terminal_antes_2026_10_04": 0.0933,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938,
+   "roic_terminal_antes_2026_10_05": 0.126
   },
   "ONONN": {
    "fuentes": "Marca y tecnología (CloudTec, LightSpray) de 16 años, con venta directa creciente; sin historia de un ciclo completo",
@@ -410,14 +440,15 @@
    "roic_actual": 0.285,
    "roic_industria": 0.2093,
    "industria_proxy": null,
-   "costo_capital_terminal": 0.0938,
+   "costo_capital_terminal": 0.0899,
    "roic_terminal": null,
    "roic_terminal_antes": null,
    "nota": "Hoja nueva desde cero (2-oct-2026): gana muy por encima de su costo de capital, pero la marca (16 años) no cumple el criterio de marca probada de 20 años que superó un ciclo → sin ventaja defendible: ROIC terminal = costo de capital.",
    "ventaja": "sin ventaja defendible",
    "referencia": 0.285,
    "nota_rd": "Hoja nueva desde cero (2-oct-2026): estados NIIF en francos convertidos a dólares al tipo de cada período; arrendamientos NIIF 16 en el balance; acciones económicas Clase A + Clase B/10.",
-   "costo_capital_terminal_antes_2026_10_04": 0.0933
+   "costo_capital_terminal_antes_2026_10_04": 0.0933,
+   "costo_capital_terminal_antes_2026_10_05": 0.0938
   }
  }
 }

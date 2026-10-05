@@ -1,0 +1,12 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Beta ~0,86 bottom-up (Restaurant/Dining EE.UU.), ERP 4,09%; arrendamientos como deuda, sin deuda financiera.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,86 (bottom-up de Restaurant/Dining en EE.UU., reapalancada con los alquileres) × ERP 3,70% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 8,5%; Kd después de impuestos 4,6%; peso del patrimonio 88%; WACC inicial 8,0% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (CMG, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta ~0,86 bottom-up (Restaurant/Dining en EE.UU., «Single Business(US)», reapalancada con la D/E de mercado); ERP por regiones 4,09%. Sin deuda financiera: el pasivo por arrendamientos (~US$5.287M a valor de mercado) entra como deuda y el alquiler sale del EBIT (revisión del 5-oct-2026).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,86 (bottom-up de Restaurant/Dining en EE.UU., reapalancada con los alquileres) × ERP 3,70% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 8,5%; Kd después de impuestos 4,6%; peso del patrimonio 88%; WACC inicial 8,0% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (CMG, 5-oct-2026)"
+ }
+}

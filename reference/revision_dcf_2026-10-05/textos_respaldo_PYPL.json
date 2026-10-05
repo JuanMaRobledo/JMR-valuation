@@ -11,7 +11,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "9,2%: beta 1,29 (entre las redes V/MA ~0,7 y el fintech ~1,7-2,7), rating A3/A-, ERP de 4,09% (sep-2026).",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,97 (beta del patrimonio de Financial Svcs. (Non-bank & Insurance) en EE.UU.) × ERP 4,87% = Ke 10,0%; Kd después de impuestos 4,6%; peso del patrimonio 79%; WACC inicial 8,9% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,97 (beta del patrimonio de Financial Svcs. (Non-bank & Insurance) en EE.UU.) × ERP 4,48% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,6%; Kd después de impuestos 4,6%; peso del patrimonio 79%; WACC inicial 8,6% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Tasa libre de riesgo 4,96% (UST 10 años, 22-sep-2026) + beta 1,29 (regresión de 5 años; beta desapalancada implícita 1,07, entre redes V/MA ~0,7 y fintech XYZ/AFRM/Adyen ~1,7-2,7) x ERP 4,32% (Damodaran, 1-sep-2026) = Ke 10,5%. Kd 5,85% (rating A3/A-). D/(D+E) 22%.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,97 (beta del patrimonio de Financial Svcs. (Non-bank & Insurance) en EE.UU.) × ERP 4,87% = Ke 10,0%; Kd después de impuestos 4,6%; peso del patrimonio 79%; WACC inicial 8,9% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,97 (beta del patrimonio de Financial Svcs. (Non-bank & Insurance) en EE.UU.) × ERP 4,48% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,6%; Kd después de impuestos 4,6%; peso del patrimonio 79%; WACC inicial 8,6% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (PYPL, 5-oct-2026)"
  }
 }

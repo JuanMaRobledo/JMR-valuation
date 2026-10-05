@@ -1,0 +1,17 @@
+{
+ "Country equity risk premiums!B2": {
+  "before": 0.0409,
+  "after": 0.037,
+  "reason": "Prima de mercado de octubre (PAGS)"
+ },
+ "Input sheet!B47": {
+  "before": 0.123,
+  "after": 0.1191,
+  "reason": "Terminal con la prima de octubre (PAGS)"
+ },
+ "DCF FCFE financiero!B4": {
+  "before": 0.123,
+  "after": 0.1191,
+  "reason": "Terminal con la prima de octubre (PAGS)"
+ }
+}

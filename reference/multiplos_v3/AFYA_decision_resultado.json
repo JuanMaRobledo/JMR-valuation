@@ -43,22 +43,22 @@
     "CRUZ3.SA"
    ],
    "C": {
-    "Conservador": 11.01,
-    "Base": 11.9,
-    "Optimista": 12.52
+    "Conservador": 11.62,
+    "Base": 12.64,
+    "Optimista": 13.35
    },
    "mercado": 6.07,
    "lambda": 0.25,
-   "conservador": 6.86,
-   "base": 7.52,
-   "optimista": 7.88,
-   "factor_cons": 0.912,
-   "factor_opt": 1.047,
+   "conservador": 7.02,
+   "base": 7.71,
+   "optimista": 8.08,
+   "factor_cons": 0.91,
+   "factor_opt": 1.048,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     5.68,
-    11.9
+    12.64
    ],
    "antes": {
     "J8": 6.83,
@@ -96,22 +96,22 @@
     "CRUZ3.SA"
    ],
    "C": {
-    "Conservador": 17.66,
-    "Base": 19.8,
-    "Optimista": 21.19
+    "Conservador": 18.62,
+    "Base": 21.02,
+    "Optimista": 22.59
    },
    "mercado": 8.06,
    "lambda": 0.25,
-   "conservador": 10.01,
-   "base": 11.0,
-   "optimista": 11.38,
-   "factor_cons": 0.91,
-   "factor_opt": 1.035,
+   "conservador": 10.26,
+   "base": 11.3,
+   "optimista": 11.71,
+   "factor_cons": 0.908,
+   "factor_opt": 1.036,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     6.22,
-    19.8
+    21.02
    ],
    "antes": {
     "J8": 12.28,
@@ -139,17 +139,17 @@
     "YDUQ3.SA"
    ],
    "C": {
-    "Conservador": 8.11,
-    "Base": 8.77,
-    "Optimista": 9.27
+    "Conservador": 8.53,
+    "Base": 9.26,
+    "Optimista": 9.81
    },
    "mercado": 8.86,
    "lambda": 0.25,
-   "conservador": 8.09,
-   "base": 8.84,
-   "optimista": 10.57,
-   "factor_cons": 0.915,
-   "factor_opt": 1.196,
+   "conservador": 8.19,
+   "base": 8.96,
+   "optimista": 10.73,
+   "factor_cons": 0.914,
+   "factor_opt": 1.197,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
@@ -192,22 +192,22 @@
     "CRUZ3.SA"
    ],
    "C": {
-    "Conservador": 11.71,
-    "Base": 12.65,
-    "Optimista": 13.22
+    "Conservador": 12.32,
+    "Base": 13.36,
+    "Optimista": 13.99
    },
    "mercado": 7.78,
    "lambda": 0.25,
-   "conservador": 7.52,
-   "base": 9.0,
-   "optimista": 9.61,
-   "factor_cons": 0.836,
-   "factor_opt": 1.068,
+   "conservador": 7.66,
+   "base": 9.17,
+   "optimista": 9.81,
+   "factor_cons": 0.835,
+   "factor_opt": 1.069,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     4.84,
-    12.65
+    13.36
    ],
    "antes": {
     "J8": 7.42,
@@ -245,22 +245,22 @@
     "CRUZ3.SA"
    ],
    "C": {
-    "Conservador": 8.34,
-    "Base": 10.24,
-    "Optimista": 11.2
+    "Conservador": 8.78,
+    "Base": 10.82,
+    "Optimista": 11.86
    },
    "mercado": 5.14,
    "lambda": 0.25,
-   "conservador": 5.19,
-   "base": 6.42,
-   "optimista": 7.39,
-   "factor_cons": 0.808,
-   "factor_opt": 1.152,
+   "conservador": 5.3,
+   "base": 6.56,
+   "optimista": 7.56,
+   "factor_cons": 0.807,
+   "factor_opt": 1.153,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     3.15,
-    10.24
+    10.82
    ],
    "antes": {
     "J8": 5.18,
@@ -272,21 +272,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   18.22614280764287,
-   22.887792852101406,
-   26.52678442157591
+   19.39512899824988,
+   24.37520058504103,
+   28.256701301049315
   ],
   "multiplos_hoy": [
-   13.296436998547275,
-   15.736959998150281,
-   18.043846185529876
+   13.692532521059912,
+   16.231185044043972,
+   18.6213524536196
   ],
   "ponderado_hoy": [
-   15.268319322185512,
-   18.59729313973073,
-   21.43702147994829
+   15.973571111935897,
+   19.488791260442795,
+   22.475491992591486
   ],
-  "brecha_base": -0.31242998834178026,
+  "brecha_base": -0.3341107086517684,
   "fila_origen": 56
  }
 }

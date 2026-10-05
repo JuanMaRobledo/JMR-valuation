@@ -1,0 +1,12 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Costo de capital por encima de la mediana: beta 1,20 y ERP por regiones 5,04%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,20 (regresión de Uber; «Transportation» no describe la plataforma) × ERP 4,65% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,9%; Kd después de impuestos 4,6%; peso del patrimonio 91%; WACC inicial 10,3% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (UBER, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta 1,20 (regresión de Uber, 1,21 a 2 años y 1,28 a 5; la de «Transportation», 0,76-0,80, es de logística con activos y no describe a la plataforma). ERP por regiones 5,04%. Costo de deuda vía Synthetic Rating: cobertura de intereses 5,57x → A3/A- → spread 0,89%. Pérdidas fiscales reconocidas (Input B62-B63).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,20 (regresión de Uber; «Transportation» no describe la plataforma) × ERP 4,65% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,9%; Kd después de impuestos 4,6%; peso del patrimonio 91%; WACC inicial 10,3% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (UBER, 5-oct-2026)"
+ }
+}

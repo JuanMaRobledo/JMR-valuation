@@ -6,12 +6,12 @@
  },
  "Stories to Numbers!G14": {
   "before": "ROIC GAAP moderado (goodwill de US$18.640M); el ROIC orgánico es mucho mayor.",
-  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,4% (ROIC actual 9,8%; industria 17,0%).",
+  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,0% (ROIC actual 9,8%; industria 17,0%).",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (BSX, 5-oct-2026)"
  },
  "Stories to Numbers!G15": {
   "before": "Beta 1,0 (Direct Input), ERP de mercado maduro, deuda A3/A- a 8 años.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Healthcare Products en EE.UU., reapalancada) × ERP 4,74% = Ke 9,9%; Kd después de impuestos 5,0%; peso del patrimonio 86%; WACC inicial 9,2% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Healthcare Products en EE.UU., reapalancada) × ERP 4,35% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,6%; Kd después de impuestos 5,0%; peso del patrimonio 86%; WACC inicial 8,9% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (BSX, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Beta 1,0 (Direct Input), ERP maduro de EE.UU., deuda A3/A- a 8 años; deuda US$11.436M + arrendamientos.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Healthcare Products en EE.UU., reapalancada) × ERP 4,74% = Ke 9,9%; Kd después de impuestos 5,0%; peso del patrimonio 86%; WACC inicial 9,2% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Healthcare Products en EE.UU., reapalancada) × ERP 4,35% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,6%; Kd después de impuestos 5,0%; peso del patrimonio 86%; WACC inicial 8,9% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (BSX, 5-oct-2026)"
  }
 }
