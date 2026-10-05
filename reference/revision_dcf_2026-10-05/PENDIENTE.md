@@ -1,6 +1,6 @@
 # Revisión Damodaran de la cartera (5-oct-2026): estado
 
-Rama de trabajo: `ccr-45889b63-8puxn5` en `JuanMaRobledo/JMR-valuation` y `JuanMaRobledo/Modelo-JMR-datos` (sin PR todavía).
+Rama de trabajo: `ccr-45889b63-8puxn5` en `JuanMaRobledo/JMR-valuation` y `JuanMaRobledo/Modelo-JMR-datos`.
 
 ## Criterio aplicado
 - Beta: bottom-up del sector, sin primas por riesgos diversificables (concepto único, distribuidor, tamaño, moda: van en las
@@ -18,9 +18,9 @@ EPAM (3,27/2,83), PYPL (2,48), GOOG (años 6-10 1,43), MSFT (tabla EE.UU.; años
 ZTS (1,11). Notas y textos al día (`scripts/revisar_beta_s2c.py`, `scripts/textos_tasa_s2c.py`). Sin cambios de supuestos:
 NVDA, PLTR, DUOL.
 
-## Ya regener## Estado: terminada (5-oct-2026)
+## Estado: terminada (5-oct-2026)
 Las 22 empresas regeneradas: consistencia 16/16, integridad 0 hallazgos, fórmula única 0 celdas pendientes; nota de
 actualización en el research; informes subidos a Drive (52/52). Para regenerar una empresa: `bash scripts/regenerar_una.sh <T>`.
 
-GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT`, `SEC_EDGAR_USER_AGENT`, Chromium (Playwright) y los repos hermanos
+Requisitos: `GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT`, `SEC_EDGAR_USER_AGENT`, Chromium (Playwright) y los repos hermanos
 `Modelo-JMR` y `Modelo-JMR-datos` junto a `JMR-valuation`.
