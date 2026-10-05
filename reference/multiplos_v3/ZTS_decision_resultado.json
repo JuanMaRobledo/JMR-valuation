@@ -47,22 +47,22 @@
     "NEOG"
    ],
    "C": {
-    "Conservador": 12.88,
-    "Base": 13.67,
-    "Optimista": 13.82
+    "Conservador": 13.19,
+    "Base": 14.29,
+    "Optimista": 14.63
    },
    "mercado": 12.32,
    "lambda": 0.25,
-   "conservador": 11.8,
-   "base": 12.66,
-   "optimista": 13.91,
-   "factor_cons": 0.932,
-   "factor_opt": 1.099,
+   "conservador": 11.86,
+   "base": 12.81,
+   "optimista": 14.14,
+   "factor_cons": 0.926,
+   "factor_opt": 1.103,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     12.04,
-    13.67
+    14.29
    ],
    "antes": {
     "J8": null,
@@ -91,8 +91,8 @@
    ],
    "C": {
     "Conservador": 21.09,
-    "Base": 24.54,
-    "Optimista": 26.16
+    "Base": 24.53,
+    "Optimista": 26.15
    },
    "mercado": 20.85,
    "lambda": 0.25,
@@ -105,7 +105,7 @@
    "base_en_rango": true,
    "rango": [
     19.5,
-    24.54
+    24.53
    ],
    "antes": {
     "J8": null,
@@ -224,22 +224,22 @@
     "NEOG"
    ],
    "C": {
-    "Conservador": 13.75,
-    "Base": 17.07,
-    "Optimista": 18.7
+    "Conservador": 13.81,
+    "Base": 17.13,
+    "Optimista": 18.75
    },
    "mercado": 15.03,
    "lambda": 0.25,
-   "conservador": 13.8,
-   "base": 15.54,
-   "optimista": 17.44,
+   "conservador": 13.82,
+   "base": 15.56,
+   "optimista": 17.45,
    "factor_cons": 0.888,
    "factor_opt": 1.122,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     14.38,
-    17.07
+    17.13
    ],
    "antes": {
     "J8": null,
@@ -251,21 +251,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   55.000809930020864,
-   99.19934269052119,
-   114.38693028274268
+   56.05555346611343,
+   101.03293711324262,
+   116.63191282020243
   ],
   "multiplos_hoy": [
-   79.28367082523435,
-   96.2819692381291,
-   110.28008492694522
+   79.8531493437586,
+   97.91592305277835,
+   112.78048084014345
   ],
   "ponderado_hoy": [
-   69.57052646714894,
-   97.44891861908593,
-   111.9228230692642
+   70.33411099270052,
+   99.16272867696405,
+   114.32105363216704
   ],
-  "brecha_base": -0.029409201444949296,
+  "brecha_base": -0.030851464379092253,
   "fila_origen": 40
  }
 }
