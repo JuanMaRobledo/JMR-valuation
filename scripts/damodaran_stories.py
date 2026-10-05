@@ -1051,21 +1051,25 @@ def tabla_s2c(r: dict, W) -> None:
     def m_(k):
         mm = x.get(k)
         if not mm:
-            return "—", "sin datos suficientes"
-        det = (f"Δventas {mn(mm['dventas'], 1)} / Δcapital {mn(mm['dcapital'], 1)} millones ({mm['desde']} → {mm['hasta']})")
-        return (es(mm["ratio"], 2) if mm.get("ratio") else "—"), (det if mm.get("ratio") else det + ": el capital o las ventas no crecieron (recompras, venta de negocios o caída de ventas), no hay inversión que medir")
-    m1, m3 = m_("marginal_ultimo"), m_("marginal_3a")
+            return "—", "sin años suficientes en la hoja"
+        det = (f"Δventas {mn(mm['dventas'], 1)} / Δcapital {mn(mm['dcapital'], 1)} millones ({mm['desde']} → {mm['hasta']}; "
+               f"capital {mn(mm['capital_inicial'], 1)} → {mn(mm['capital_final'], 1)})")
+        if mm.get("ratio"):
+            return es(mm["ratio"], 2), det
+        return "no significativa", det + ": el capital casi no cambió o bajó (recompras, deterioros, moneda), el cociente sería ruido"
+    m1, m3 = m_("marginal_3a"), m_("marginal_5a")
     s1, s2 = x["usada"]
     r1, r2 = x["rendimiento_capital_nuevo"]
     rows = [["Empresa hoy", es(x["actual"], 2), f"ventas LTM {mn(x['ventas_ltm'], 1)} / capital invertido {mn(x['capital_ltm'], 1)} millones"
              + (" (con I+D capitalizado a " + str(x["vida_id"]) + " años)" if x.get("con_id") else "")],
-            ["Marginal, último año", m1[0], m1[1]],
-            ["Marginal, últimos tres años", m3[0], m3[1]],
+            ["Marginal, últimos tres años", m1[0], m1[1]],
+            ["Marginal, últimos cinco años", m3[0], m3[1]],
             ["Sector (Damodaran, enero de 2026)", es(x["sector"], 2) if x.get("sector") else "—",
              (x.get("industria") or "") + ("" if x.get("sector") else ": no comparable (el capital de una financiera es otra cosa)")],
             ["Usado en la hoja", f"{es(s1, 2)} / {es(s2, 2)}",
              f"años 1-5 / 6-10; rinde ~{pct(r1, 0)} / ~{pct(r2, 0)} sobre el capital nuevo (ROIC actual {pct(x['roic_actual'], 1)})"]]
-    refs = [v for v in (x.get("actual"), (x.get("marginal_3a") or {}).get("ratio"), x.get("sector")) if v]
+    refs = [v for v in (x.get("actual"), (x.get("marginal_3a") or {}).get("ratio"), (x.get("marginal_5a") or {}).get("ratio"),
+                        x.get("sector")) if v]
     if refs and min(s1, s2) > max(refs) * 1.05:
         lect = ("El usado está por encima de todas las referencias: supone que la empresa crecerá con menos capital del que "
                 "necesitó hasta ahora y del que necesita su sector. Lo sostiene solo si el ROIC lo respalda (control de la p. 45).")
@@ -1076,8 +1080,9 @@ def tabla_s2c(r: dict, W) -> None:
         lect = "El usado está dentro del rango de las referencias."
     W.p("**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, "
         "el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital "
-        "nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal "
-        "es volátil: recompras de acciones y adquisiciones mueven el capital contable. " + lect)
+        "nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El capital "
+        "de cada cierre se arma como el del modelo (patrimonio, incluido el preferente, + deuda y arrendamientos − caja e "
+        "inversiones, + I+D capitalizado). El marginal es volátil: recompras, deterioros y moneda mueven el capital contable. " + lect)
     W.tab(["Referencia", "Ventas/capital", "Detalle"], rows, ["l", "r", "l"])
 
 

@@ -1,0 +1,93 @@
+[
+ {
+  "hoja": "Balance Sheet",
+  "celda": "E14",
+  "antes": 0,
+  "despues": 11891,
+  "motivo": "Inversiones a largo plazo 2019 de Uber = «Investments» + «Equity method investments» del balance (10-K 2020); el importador las dejaba dentro de «Other Long-Term Assets» (2025 ya separadas: 9.178 + 287 = 9.465)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "E15",
+  "antes": 15867,
+  "despues": 3976,
+  "motivo": "Se le resta lo que pasó a inversiones a largo plazo; el total de activos no cambia."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "F14",
+  "antes": 0,
+  "despues": 10131,
+  "motivo": "Inversiones a largo plazo 2020 de Uber = «Investments» + «Equity method investments» del balance (10-K 2021); el importador las dejaba dentro de «Other Long-Term Assets» (2025 ya separadas: 9.178 + 287 = 9.465)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "F15",
+  "antes": 13883,
+  "despues": 3752,
+  "motivo": "Se le resta lo que pasó a inversiones a largo plazo; el total de activos no cambia."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "G14",
+  "antes": 0,
+  "despues": 12606,
+  "motivo": "Inversiones a largo plazo 2021 de Uber = «Investments» + «Equity method investments» del balance (10-K 2022); el importador las dejaba dentro de «Other Long-Term Assets» (2025 ya separadas: 9.178 + 287 = 9.465)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "G15",
+  "antes": 17270,
+  "despues": 4664,
+  "motivo": "Se le resta lo que pasó a inversiones a largo plazo; el total de activos no cambia."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "H14",
+  "antes": 0,
+  "despues": 5271,
+  "motivo": "Inversiones a largo plazo 2022 de Uber = «Investments» + «Equity method investments» del balance (10-K 2023); el importador las dejaba dentro de «Other Long-Term Assets» (2025 ya separadas: 9.178 + 287 = 9.465)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "H15",
+  "antes": 10641,
+  "despues": 5370,
+  "motivo": "Se le resta lo que pasó a inversiones a largo plazo; el total de activos no cambia."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "I14",
+  "antes": 0,
+  "despues": 6454,
+  "motivo": "Inversiones a largo plazo 2023 de Uber = «Investments» + «Equity method investments» del balance (10-K 2024); el importador las dejaba dentro de «Other Long-Term Assets» (2025 ya separadas: 9.178 + 287 = 9.465)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "I15",
+  "antes": 15753,
+  "despues": 9299,
+  "motivo": "Se le resta lo que pasó a inversiones a largo plazo; el total de activos no cambia."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "J11",
+  "antes": 0,
+  "despues": 1952,
+  "motivo": "PP&E neto 2024 de Uber: 1.952 (balance del 10-K 2025, columna 2024); el importador lo dejaba en 0 dentro de «Other Long-Term Assets»."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "J14",
+  "antes": 0,
+  "despues": 8762,
+  "motivo": "Inversiones a largo plazo 2024 de Uber = «Investments» + «Equity method investments» del balance (10-K 2025); el importador las dejaba dentro de «Other Long-Term Assets» (2025 ya separadas: 9.178 + 287 = 9.465)."
+ },
+ {
+  "hoja": "Balance Sheet",
+  "celda": "J15",
+  "antes": 29808,
+  "despues": 19094,
+  "motivo": "Se le resta lo que pasó a inversiones a largo plazo y a PP&E; el total de activos no cambia."
+ }
+]

@@ -4,9 +4,10 @@
 Para cada empresa, las tres referencias con las que Damodaran elige el ventas/capital, más la usada en la hoja:
   - actual: ingresos LTM / capital invertido (el de 'Valuation output' B41: patrimonio + deuda − caja − no operativos,
     con arrendamientos e I+D capitalizado cuando la hoja los convierte);
-  - marginal: Δingresos / Δcapital invertido del último año y de los últimos tres años (cierres anuales), con el capital
-    de cada cierre armado igual que B41 desde el balance de la hoja (I+D capitalizado con su historia y su vida). Sin
-    ratio cuando el capital o las ventas no crecieron (no hay inversión que medir);
+  - marginal: Δingresos / Δcapital invertido de los últimos tres y cinco años (cierres anuales), con el capital de cada
+    cierre armado igual que B41 desde el balance de la hoja (I+D capitalizado: el gasto del año entero más los anteriores
+    en proporción a su vida). «No significativa» cuando el capital casi no cambió (menos de 10% del inicial) o cuando
+    ventas o capital bajaron: el cociente sería ruido (recompras, deterioros, conversión de moneda);
   - sector: «Sales/ Invested Capital (LTM)» de la base de capex de Damodaran (enero de 2026) para su industria;
   - usada: Input B32 (años 1-5) y B33 (años 6-10), con el rendimiento que implica sobre el capital nuevo.
 Salida: reference/ventas_capital_2026-10-04.json (la lee scripts/damodaran_stories.py para el análisis).
@@ -65,41 +66,56 @@ def main(argv) -> int:
         rev = fila(IS, "Total Revenues")
         rd = fila(IS, "Research & Development Expenses")
         eq = fila(BS, "Total Shareholders' Equity")
+        ta, tl = fila(BS, "Total Assets"), fila(BS, "Total Liabilities")
         deuda = [fila(BS, n) for n in ("Short-Term Debt", "Current Portion of Leases", "Long-Term Debt", "Leases")]
         caja = fila(BS, "Total Cash and Cash Equivalents", "Cash and Cash Equivalents")
         lti = fila(BS, "Long-Term Investments")
         con_rd = str(inp.get(17, "")).strip().lower() == "yes"
         vida = int(v[6][0][0]) if con_rd and v[6] and isinstance(v[6][0][0], (int, float)) else 0
 
-        def ic(j):  # capital invertido del cierre de la columna j, como B41
-            base = num(eq, j) + sum(num(x, j) for x in deuda) - num(caja, j) - num(lti, j)
-            if vida:
-                base += sum(num(rd, j - k) * (vida - k) / vida for k in range(1, vida) if j - k >= 1)
+        rd_cols = [j for j in range(1, 12) if isinstance((rd or [None] * 12)[j] if rd and j < len(rd) else None, (int, float))
+                   and rd[j] > 0]
+
+        def rd_v(j):  # I+D del año j; antes del primer año con dato, se repite el primero (como el conversor sin historia)
+            if not rd_cols:
+                return 0.0
+            return num(rd, max(j, rd_cols[0]))
+
+        def ic(j):  # capital invertido del cierre j, armado como B41: patrimonio + deuda − caja − no operativos (+ I+D)
+            # patrimonio = activos − pasivos: incluye el preferente que el balance deja entre ambos (CELH: PepsiCo)
+            patr = num(ta, j) - num(tl, j) if ta and tl and num(ta, j) else num(eq, j)
+            base = patr + sum(num(x, j) for x in deuda) - num(caja, j) - num(lti, j)
+            if vida:  # activo de I+D: el gasto del año entero (100% sin amortizar) y los anteriores en proporción
+                base += sum(rd_v(j - k) * (vida - k) / vida for k in range(0, vida))
             return base
 
         cols = [j for j in range(1, 11) if j < len(hdr) and re.match(r"[A-Z][a-z]{2} '\d\d", str(hdr[j]))]
         k_ult = cols[-1]
         marg = {}
-        for n in (1, 3):  # del cierre de hace n años al último cierre anual (mismo armado del capital en ambos)
+        for n in (3, 5):  # del cierre de hace n años al último cierre anual (mismo armado del capital en ambos)
             j0 = k_ult - n
-            if j0 < 1 or j0 not in cols:
+            if j0 < 1 or j0 not in cols or not num(rev, j0):
                 marg[n] = None
                 continue
-            dr, di = num(rev, k_ult) - num(rev, j0), ic(k_ult) - ic(j0)
+            c0, c1 = ic(j0), ic(k_ult)
+            dr, di = num(rev, k_ult) - num(rev, j0), c1 - c0
+            # no significativo si el capital casi no cambió (< 10% del inicial) o si ventas o capital bajaron
+            signif = dr > 0 and di > 0 and di >= 0.10 * abs(c0)
             marg[n] = {"desde": str(hdr[j0]), "hasta": str(hdr[k_ult]), "dventas": round(dr, 1), "dcapital": round(di, 1),
-                       "ratio": round(dr / di, 2) if di > 0 and dr > 0 else None}
+                       "capital_inicial": round(c0, 1), "capital_final": round(c1, 1),
+                       "ratio": round(dr / di, 2) if signif else None}
         ind = rjs.get("industria")
         s1, s2, m_obj, t_mg = inp.get(32), inp.get(33), inp.get(30), inp.get(25)
         u = (m_obj or 0) * (1 - (t_mg or 0))
         res[tk] = {"industria": ind, "actual": round(rev_ltm / ic_ltm, 2) if ic_ltm else None,
                    "ventas_ltm": rev_ltm, "capital_ltm": ic_ltm, "roic_actual": roic0,
-                   "marginal_ultimo": marg[1], "marginal_3a": marg[3],
+                   "marginal_3a": marg[3], "marginal_5a": marg[5],
                    "sector": None if ind in NO_COMPARABLE else sector.get(ind),
                    "usada": [s1, s2], "rendimiento_capital_nuevo": [round(u * s1, 4), round(u * s2, 4)],
-                   "con_id": con_rd, "vida_id": vida}
+                   "con_id": con_rd, "vida_id": vida, "capital_balance_ltm": round(ic(11), 1)}
         r_ = res[tk]
-        print(f"{tk:5s} actual {r_['actual']} | marginal 1a {(marg[1] or {}).get('ratio')} 3a {(marg[3] or {}).get('ratio')} | "
-              f"sector {r_['sector']} | usada {s1:.2f}/{s2:.2f}")
+        print(f"{tk:5s} actual {r_['actual']} | marginal 3a {(marg[3] or {}).get('ratio')} 5a {(marg[5] or {}).get('ratio')} | "
+              f"sector {r_['sector']} | usada {s1:.2f}/{s2:.2f} | capital B41 {ic_ltm:,.0f} vs balance {ic(11):,.0f}")
         time.sleep(4)
     OUT.write_text(json.dumps(res, ensure_ascii=False, indent=1))
     return 0
