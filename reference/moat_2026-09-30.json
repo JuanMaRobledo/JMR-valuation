@@ -235,7 +235,7 @@
    "fuentes": "Marca y hábito (rachas, gamificación) con escala de usuarios; costos de cambio bajos",
    "evidencia": "ROIC por encima del costo de capital en 2021-2026 (serie volátil)",
    "amenaza": "IA generalista (Disrupción, 5% desde el 5-oct-2026) y costos de cambio bajos",
-   "roic_actual": 0.3658,
+   "roic_actual": 0.5334,
    "roic_industria": 0.293,
    "industria_proxy": "Software (System & Application)",
    "costo_capital_terminal": 0.0899,
@@ -246,7 +246,9 @@
    "referencia": 0.293,
    "nota_rd": "ROIC actual del modelo al 1-oct-2026: EBIT y capital ajustados por arrendamientos (Damodaran), capital operativo sin activos no operativos, balance del último 10-Q e I+D alineado al LTM.",
    "costo_capital_terminal_antes_2026_10_04": 0.0922,
-   "costo_capital_terminal_antes_2026_10_05": 0.0938
+   "costo_capital_terminal_antes_2026_10_05": 0.0938,
+   "roic_actual_antes_2026_10_05": 0.3658,
+   "nota_dta": "5-oct-2026: ROIC actual sin los impuestos diferidos activos de la liberación de la reserva de valuación (US$206 millones); antes 36,6%."
   },
   "ONON": {
    "fuentes": "Marca y tecnología (CloudTec, LightSpray) de 16 años, con venta directa creciente; sin historia de un ciclo completo",

@@ -30,6 +30,21 @@ implícita de Damodaran de septiembre (4,09%), calculada el 1-sep con una tasa d
   base del modelo con I+D capitalizado). Corregido; mismo error en PLTR (decía 29,3%) y en NVO (decía 13,1%; la hoja usa
   el costo de capital). Se anotó el cambio de segmentos desde FY2027 (8-K del 2-sep-2026), que no cambia el valor.
 
+## Ciclo de vida (Damodaran) y flujo de caja de DUOL
+
+- **Clasificación** (Damodaran, *The Corporate Life Cycle*, 2024: crecimiento de ventas, márgenes y reinversión o flujo
+  libre). DUOL está en crecimiento alto que pasa a crecimiento maduro: ventas +39% en 2025 y +18% en el 2T26, márgenes en
+  alza, se autofinancia y recompra acciones. Tipo «Crecimiento» (antes «Software», con los mismos pesos). BSX es madura: US$21.000
+  millones de ventas que crecen ~6-7%, márgenes estables, flujo libre alto y recompras. Tipo «Madura» (antes «Crecimiento»):
+  DCF 40% y múltiplos 60% en el precio relativo; el DCF no cambia.
+- **Flujo de caja de DUOL.** El capital invertido de la hoja incluía US$206 millones de impuestos diferidos activos de la
+  liberación de la reserva de valuación (3T25), que no son capital operativo (mismo criterio que UBER y NVDA). Sin ellos, el
+  ventas/capital es 2,45 hoy y 3,0-3,2 en el marginal: los prepagos (ingresos diferidos de US$158 millones en 2022 a US$505
+  millones) financian el crecimiento. Se usa 3,0 (años 1-5) y 2,45 (6-10), con un rendimiento sobre el capital nuevo de ~61%
+  y ~50% frente a un ROIC actual de ~53%. El flujo reportado (US$388 millones de flujo operativo en 2025) suma de vuelta US$137
+  millones de compensación en acciones e incluye US$45 millones de intereses: Damodaran trata las acciones entregadas como un gasto.
+  DCF Base 109,60 → 113,36; esperado 106,58 → 110,01 (`scripts/tipo_y_s2c_duol_bsx.py`).
+
 ## Efecto (frente a main antes de este cambio)
 
 | Empresa | DCF Base (antes → ahora) | Esperado (antes → ahora) | Precio de corte |

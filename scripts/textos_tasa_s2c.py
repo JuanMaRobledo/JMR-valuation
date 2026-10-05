@@ -42,7 +42,8 @@ BETA = {
 S2C = {
     "BSX": ("entre el de hoy (0,60, con el crédito mercantil de las compras) y el del sector (1,48); la Base crece sin compras",
             "un poco menor: parte del crecimiento posterior puede venir de compras"),
-    "DUOL": ("el de Duolingo con I+D capitalizado (1,79): una app liviana en capital", "igual"),
+    "DUOL": ("el marginal de tres años con I+D capitalizado y sin los impuestos diferidos activos (3,04): los clientes prepagan y "
+             "financian el crecimiento", "el de hoy (2,45), camino al del sector (1,35)"),
     "EPAM": ("servicios profesionales con poco capital fijo: entre el de hoy (1,95) y el del sector (5,19)",
              "algo menor por compras pequeñas y plataformas de IA"),
     "GOOG": ("carga el pico de capex de IA (marginal 0,44-0,65)", "la capacidad ya está construida; cerca del sector (1,35)"),

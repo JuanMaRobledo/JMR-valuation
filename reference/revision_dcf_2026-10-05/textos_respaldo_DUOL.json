@@ -1,12 +1,12 @@
 {
  "Stories to Numbers!G13": {
   "before": "Sales-to-capital se mantiene alto (4,0x-4,5x) porque Duolingo es un negocio liviano en capital (CapEx/Revenue ~2%) -- una app movil sin datacenters propios; converge al promedio de la industria de software en el largo plazo.",
-  "after": "Ventas/capital 1,79 en los años 1-5: el de Duolingo con I+D capitalizado (1,79): una app liviana en capital. Igual en los años 6-10.",
+  "after": "Ventas/capital 3,00 en los años 1-5: el marginal de tres años con I+D capitalizado y sin los impuestos diferidos activos (3,04): los clientes prepagan y financian el crecimiento. 2,45 en los años 6-10: el de hoy (2,45), camino al del sector (1,35).",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Stories to Numbers!G14": {
   "before": "Strong competitive edges",
-  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,0% (ROIC actual 36,6%; industria 29,3%).",
+  "after": "Sin ventaja defendible: ROIC después del año 10 de 9,0% (ROIC actual 53,3%; industria 29,3%).",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Stories to Numbers!G15": {
@@ -16,22 +16,22 @@
  },
  "Supuestos Recomendados!C11": {
   "before": 4,
-  "after": 1.79,
+  "after": 3,
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Supuestos Recomendados!D11": {
   "before": "Duolingo es un negocio extremadamente liviano en capital: CapEx/Revenue ronda apenas 2% (vs. ~35% de MSFT en su ciclo de datacenters de IA) -- es una app movil, no requiere infraestructura fisica propia significativa. 4,0x es sustancialmente mas alto que el 1,3x de MSFT, reflejando que cada dolar de crecimiento de Duolingo necesita mucho menos capital reinvertido, consistente con comparables de software por suscripcion sin capex pesado.",
-  "after": "1,79x: el de Duolingo con I+D capitalizado (1,79): una app liviana en capital.",
+  "after": "3,00x: el marginal de tres años con I+D capitalizado y sin los impuestos diferidos activos (3,04): los clientes prepagan y financian el crecimiento.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Supuestos Recomendados!C12": {
   "before": 4.5,
-  "after": 1.79,
+  "after": 2.45,
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Supuestos Recomendados!D12": {
   "before": "Asume una leve mejora adicional de eficiencia de capital en la segunda mitad del horizonte de proyeccion, a medida que la base de usuarios y la infraestructura de producto (incluida la IA conversacional de Duolingo Max) ya esten construidas y escalen sin requerir el mismo nivel de inversion marginal -- direccionalmente razonable, mismo caveat que para MSFT: es el supuesto mas dificil de anclar a un dato historico concreto.",
-  "after": "1,79x: el de Duolingo con I+D capitalizado (1,79): una app liviana en capital.",
+  "after": "2,45x: el de hoy (2,45), camino al del sector (1,35).",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (DUOL, 5-oct-2026)"
  },
  "Tesis de Inversión y Supuestos!F21": {
