@@ -58,6 +58,20 @@
  {
   "hoja": "Income Statement",
   "fila": "Basic EPS",
+  "celda": "I23",
+  "columna": "Dec '23",
+  "hoja_valor": 0.96,
+  "sec": 0.79,
+  "fecha_sec": "2023-12-31",
+  "etiquetas": [
+   "EarningsPerShareBasic"
+  ],
+  "nota": "básico copiado del diluido",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Basic EPS",
   "celda": "J23",
   "columna": "Dec '24",
   "hoja_valor": 0.61,
@@ -206,5 +220,181 @@
   ],
   "nota": "posible ajuste por split o cambio de clase (la hoja ajustada no se toca)",
   "se_corrige": false
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "B40",
+  "columna": "Dec '16",
+  "hoja_valor": 149,
+  "sec": 1.6188,
+  "fecha_sec": "2016-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "C40",
+  "columna": "Dec '17",
+  "hoja_valor": 1286.2,
+  "sec": 2.4395,
+  "fecha_sec": "2017-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "D40",
+  "columna": "Dec '18",
+  "hoja_valor": -661,
+  "sec": -6.4434,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "E40",
+  "columna": "Dec '19",
+  "hoja_valor": 1020,
+  "sec": 15.3475,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "F40",
+  "columna": "Dec '20",
+  "hoja_valor": 1825,
+  "sec": 20.157,
+  "fecha_sec": "2020-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "G40",
+  "columna": "Dec '21",
+  "hoja_valor": -608,
+  "sec": -26.993,
+  "fecha_sec": "2021-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "H40",
+  "columna": "Dec '22",
+  "hoja_valor": 443,
+  "sec": 636.672,
+  "fecha_sec": "2022-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "I40",
+  "columna": "Dec '23",
+  "hoja_valor": 2896,
+  "sec": 103.054,
+  "fecha_sec": "2023-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "J40",
+  "columna": "Dec '24",
+  "hoja_valor": 481,
+  "sec": 134.209,
+  "fecha_sec": "2024-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "K40",
+  "columna": "Dec '25",
+  "hoja_valor": -2216,
+  "sec": -350.203,
+  "fecha_sec": "2025-12-31",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
+ },
+ {
+  "hoja": "Cash Flow Statement",
+  "fila": "Net Change in Cash",
+  "celda": "L40",
+  "columna": "LTM",
+  "hoja_valor": -14,
+  "sec": 17.896,
+  "fecha_sec": "2026-06-30",
+  "etiquetas": [
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "CashAndCashEquivalentsPeriodIncreaseDecrease",
+   "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect"
+  ],
+  "nota": "valor de relleno de la plantilla",
+  "se_corrige": true
  }
 ]

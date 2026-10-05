@@ -2,29 +2,30 @@
  "decision": {
   "ticker": "CELH",
   "etapa_desde": "Dec '24",
-  "etapa_motivo": "A: hasta 2023 Celsius fue una marca única en hipercrecimiento (ventas +102% en 2023, utilidades negativas en 2021-2022): sus múltiplos de 44-136× no describen a la empresa de FY+3. Desde 2024 (ventas +3%) es una marca de bebidas energéticas que madura y, desde 2025, un portafolio de tres marcas distribuido por PepsiCo. Se usa FY2024 como etapa actual.",
+  "etapa_motivo": "A: hasta 2023 Celsius fue una marca única en hipercrecimiento (ventas +102% en 2023; utilidades negativas en 2021-2022): sus múltiplos de 44-1.300× no describen a la empresa de FY+3. Desde 2024 (ventas +3%) es una marca que madura y, desde 2025, un portafolio de tres marcas distribuido por PepsiCo. La etapa actual empieza en FY2024.",
   "historia_excluir": {
    "*": [
     "Dec '25",
     "LTM"
    ]
   },
-  "historia_motivo": "FY2025 y LTM se excluyen en todos los métodos: la utilidad y el EBITDA incluyen US$327,5 millones (2025) y US$412,8 millones (LTM) de terminación de distribuidores y otros cargos de una vez (comunicados del 4T25 y 2T26), y el flujo de caja incluye los reembolsos de PepsiCo por esas terminaciones (ingresos diferidos +US$329,6 millones LTM). Con un solo cierre representativo (FY2024), el ancla A es débil y pesa menos (ver λ).",
+  "historia_motivo": "FY2025 y LTM se excluyen en todos los métodos: la utilidad y el EBITDA incluyen US$327,5 millones (2025) y US$412,7 millones (LTM) de terminación de distribuidores y otros cargos de una vez (comunicados del 4T25 y del 2T26), y el flujo de caja incluye los reembolsos de PepsiCo por esas terminaciones, registrados como ingreso diferido (US$356,1 millones). Queda un solo cierre representativo (FY2024): el ancla A es débil y pesa menos (ver λ).",
   "peers_excluir": {
    "*": [
     "KDP"
    ]
   },
-  "peers_motivo": "B: bebidas con marca y datos de yfinance al 1-oct-2026: Monster, Coca-Cola, PepsiCo, National Beverage y Vita Coco. Se excluye Keurig Dr Pepper: su compra de JDE Peet's (crecimiento de ingresos de 76%) distorsiona sus múltiplos.",
-  "ajuste_peers": -0.15,
-  "ajuste_motivo": "Ajuste −15%: crecimiento a FY+3 parecido a la mediana (Base ~5,5% frente a ~6-7% de Coca-Cola y PepsiCo; Monster crece más), 0%; margen operativo menor (21% objetivo frente a 29% de Monster y 35% de Coca-Cola), −5%; riesgo propio mayor (una sola categoría, un distribuidor que concentra más de 40% de las ventas, investigación del fiscal de Texas y demandas colectivas), −10%.",
-  "lambda": 0.5,
-  "lambda_motivo": "λ = 0,5: la Celsius de FY+3 (portafolio de tres marcas, crecimiento de un dígito medio, margen ~21%) es distinta de la de FY2024 y el ancla A tiene un solo cierre. Chequeo de crecimiento implícito (1-oct-2026): con λ = 0,5 los múltiplos valen ~30-60% más que el DCF en FY+3. Se probó λ = 0,75 y la brecha creció, porque el justificado (C) supone que el retorno de FY+3 dura para siempre, mientras el DCF lleva el ROIC al costo de capital después del año 10 (sin ventaja defendible). La diferencia no es de crecimiento sino de ventaja competitiva: los peers (Coca-Cola, Monster) cotizan con retornos excedentes duraderos. Se deja λ = 0,5 y la diferencia se explica; el DCF manda.",
+  "peers_motivo": "B: bebidas con marca y datos de yfinance al 5-oct-2026 (precios del 2-oct): Monster, Coca-Cola, PepsiCo, National Beverage y Vita Coco. Se excluye Keurig Dr Pepper: la compra de JDE Peet's (ingresos +76%, ROE 5%) distorsiona sus múltiplos.",
+  "ajuste_peers": -0.2,
+  "ajuste_motivo": "Ajuste −20%: crecimiento a FY+3 algo menor que la mediana (Base ~5% frente a ~6,5% de Coca-Cola y PepsiCo; Monster y Vita Coco crecen 20-28%), −5%; margen operativo menor (20% objetivo frente a una mediana de 29%), −5%; ROIC y riesgo propio (ROIC ~16% sobre el capital, una sola categoría, PepsiCo con ~60% de las ventas, investigación del fiscal de Texas y demandas por la cafeína de Alani Nu), −10%.",
+  "lambda": 0.75,
+  "lambda_motivo": "λ = 0,75 (chequeo de crecimiento implícito del 5-oct-2026, paso 6.5): con λ = 0,5 los cinco múltiplos Base implicaban bastante más crecimiento que el DCF (alertas en los cinco). La evidencia no sostiene más crecimiento en el DCF: la marca CELSIUS cae, la categoría se desaceleró a ~5-7% y el crecimiento reciente fue comprado (Alani Nu, Rockstar). Por eso se acerca el Base al justificado, que usa los supuestos de las historias, y el ancla A (un solo cierre, FY2024, de otra etapa) queda solo como referencia del Optimista. La brecha que queda es de ventaja competitiva: el justificado supone que el ROE de FY+3 dura para siempre y el DCF lleva el ROIC al costo de capital después del año 10.",
   "fuentes": [
    "[Celsius Holdings, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)",
-   "[Celsius Holdings, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm)"
+   "[Celsius Holdings, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm)",
+   "[Celsius Holdings, 10-Q del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm)"
   ],
-  "evaluacion": "Lectura del 1-oct-2026: el DCF Base de las historias da ~US$24,0 por acción y los múltiplos consolidados ~US$38 hoy, ~60% más. La diferencia es la ventaja competitiva: los múltiplos usan peers con marcas y retornos duraderos (Coca-Cola, Monster), mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos son precio relativo y dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers."
+  "evaluacion": "Lectura del 5-oct-2026 (análisis desde cero): los múltiplos son precio relativo y salen de tres anclas; valen más que el DCF Base de las historias porque los peers (Coca-Cola, Monster) cotizan con marcas y retornos duraderos, mientras el DCF supone que Celsius no conserva retornos excedentes después del año 10. El DCF es el valor intrínseco; los múltiplos dicen cuánto pagaría el mercado si Celsius se pareciera a esos peers."
  },
  "resultado": {
   "EV/EBITDA": {
@@ -72,36 +73,36 @@
      "> 2,5x la mediana (44.1x)"
     ]
    ],
-   "B_mediana": 22.02,
-   "B_ajustada": 18.71,
+   "B_mediana": 21.58,
+   "B_ajustada": 17.26,
    "B_n": 5,
    "B_regresion": null,
-   "B_peers": "MNST 27,0x, KO 23,6x, PEP 11,3x, FIZZ 11,3x, COCO 22,0x",
+   "B_peers": "MNST 27,5x, KO 23,4x, PEP 11,4x, FIZZ 11,5x, COCO 21,6x",
    "B_excluidos": [
     "KDP"
    ],
    "C": {
-    "Conservador": 15.57,
-    "Base": 16.7,
-    "Optimista": 18.38
+    "Conservador": 15.21,
+    "Base": 16.04,
+    "Optimista": 17.33
    },
-   "mercado": 25.67,
-   "lambda": 0.5,
-   "conservador": 17.28,
-   "base": 21.18,
-   "optimista": 22.39,
-   "factor_cons": 0.816,
-   "factor_opt": 1.057,
+   "mercado": 24.94,
+   "lambda": 0.75,
+   "conservador": 15.12,
+   "base": 18.27,
+   "optimista": 19.28,
+   "factor_cons": 0.828,
+   "factor_opt": 1.056,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    16.7,
+    16.04,
     32.62
    ],
    "antes": {
-    "J8": 18.36,
-    "J19": 22.78,
-    "J30": 25.87
+    "J8": null,
+    "J19": 32.615950920245396,
+    "J30": null
    },
    "nota": ""
   },
@@ -145,36 +146,36 @@
      "> 2,5x la mediana (73.4x)"
     ]
    ],
-   "B_mediana": 24.17,
-   "B_ajustada": 20.54,
+   "B_mediana": 23.69,
+   "B_ajustada": 18.95,
    "B_n": 5,
    "B_regresion": null,
-   "B_peers": "MNST 38,0x, KO 25,8x, PEP 21,0x, FIZZ 16,8x, COCO 24,2x",
+   "B_peers": "MNST 38,8x, KO 25,7x, PEP 21,1x, FIZZ 17,2x, COCO 23,7x",
    "B_excluidos": [
     "KDP"
    ],
    "C": {
-    "Conservador": 21.36,
-    "Base": 26.42,
-    "Optimista": 31.04
+    "Conservador": 20.23,
+    "Base": 24.5,
+    "Optimista": 29.28
    },
-   "mercado": 22.35,
-   "lambda": 0.5,
-   "conservador": 21.78,
-   "base": 24.39,
-   "optimista": 26.35,
-   "factor_cons": 0.893,
-   "factor_opt": 1.081,
+   "mercado": 21.56,
+   "lambda": 0.75,
+   "conservador": 21.51,
+   "base": 23.76,
+   "optimista": 25.97,
+   "factor_cons": 0.905,
+   "factor_opt": 1.093,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    20.54,
-    26.42
+    18.95,
+    24.5
    ],
    "antes": {
-    "J8": 23.19,
-    "J19": 25.14,
-    "J30": 28.54
+    "J8": null,
+    "J19": 26.179242424242396,
+    "J30": null
    },
    "nota": ""
   },
@@ -209,7 +210,7 @@
     ]
    ],
    "B_mediana": 25.72,
-   "B_ajustada": 21.86,
+   "B_ajustada": 20.58,
    "B_n": 5,
    "B_regresion": null,
    "B_peers": "MNST 39,8x, KO 25,7x, PEP 16,5x, FIZZ 16,3x, COCO 30,9x",
@@ -217,27 +218,27 @@
     "KDP"
    ],
    "C": {
-    "Conservador": 18.27,
-    "Base": 22.39,
-    "Optimista": 26.22
+    "Conservador": 17.1,
+    "Base": 20.59,
+    "Optimista": 24.67
    },
-   "mercado": 32.52,
-   "lambda": 0.5,
-   "conservador": 22.5,
-   "base": 27.46,
-   "optimista": 30.87,
-   "factor_cons": 0.819,
-   "factor_opt": 1.124,
+   "mercado": 31.88,
+   "lambda": 0.75,
+   "conservador": 19.29,
+   "base": 23.41,
+   "optimista": 26.54,
+   "factor_cons": 0.824,
+   "factor_opt": 1.133,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    21.86,
+    20.58,
     43.18
    ],
    "antes": {
-    "J8": 23.51,
-    "J19": 27.8,
-    "J30": 32.83
+    "J8": null,
+    "J19": 42.68896551724138,
+    "J30": null
    },
    "nota": ""
   },
@@ -282,7 +283,7 @@
     ]
    ],
    "B_mediana": 25.78,
-   "B_ajustada": 21.91,
+   "B_ajustada": 20.62,
    "B_n": 5,
    "B_regresion": null,
    "B_peers": "MNST 40,4x, KO 25,8x, PEP 18,5x, FIZZ 17,5x, COCO 26,0x",
@@ -290,27 +291,27 @@
     "KDP"
    ],
    "C": {
-    "Conservador": 20.24,
-    "Base": 24.73,
-    "Optimista": 28.74
+    "Conservador": 19.21,
+    "Base": 23.04,
+    "Optimista": 27.23
    },
-   "mercado": 23.88,
-   "lambda": 0.5,
-   "conservador": 20.56,
-   "base": 24.3,
-   "optimista": 25.7,
-   "factor_cons": 0.846,
-   "factor_opt": 1.057,
+   "mercado": 23.24,
+   "lambda": 0.75,
+   "conservador": 19.65,
+   "base": 23.09,
+   "optimista": 24.56,
+   "factor_cons": 0.851,
+   "factor_opt": 1.064,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    21.91,
+    20.62,
     25.85
    ],
    "antes": {
-    "J8": 21.81,
-    "J19": 25.04,
-    "J30": 27.88
+    "J8": null,
+    "J19": 23.515321192715643,
+    "J30": null
    },
    "nota": ""
   },
@@ -355,7 +356,7 @@
     ]
    ],
    "B_mediana": 22.55,
-   "B_ajustada": 19.17,
+   "B_ajustada": 18.04,
    "B_n": 5,
    "B_regresion": null,
    "B_peers": "MNST 37,6x, KO 22,6x, PEP 12,8x, FIZZ 15,2x, COCO 24,6x",
@@ -363,48 +364,48 @@
     "KDP"
    ],
    "C": {
-    "Conservador": 18.78,
-    "Base": 24.37,
-    "Optimista": 29.38
+    "Conservador": 17.39,
+    "Base": 22.4,
+    "Optimista": 28.02
    },
-   "mercado": 21.35,
-   "lambda": 0.5,
-   "conservador": 18.62,
-   "base": 22.86,
-   "optimista": 25.12,
-   "factor_cons": 0.815,
-   "factor_opt": 1.099,
+   "mercado": 20.79,
+   "lambda": 0.75,
+   "conservador": 17.96,
+   "base": 22.0,
+   "optimista": 24.5,
+   "factor_cons": 0.816,
+   "factor_opt": 1.114,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    19.17,
-    24.37
+    18.04,
+    23.54
    ],
    "antes": {
-    "J8": 19.94,
-    "J19": 23.55,
-    "J30": 27.22
+    "J8": null,
+    "J19": 24.20766523269454,
+    "J30": null
    },
    "nota": ""
   }
  },
  "hoja": {
   "dcf_hoy": [
-   16.600452758793313,
-   23.826373762020364,
-   32.1237054684824
+   14.325616182836178,
+   21.017678564629602,
+   31.379912069107437
   ],
   "multiplos_hoy": [
-   33.281083371251654,
-   41.83914736402329,
-   48.156658759604966
+   28.6658522489234,
+   34.99966085983393,
+   41.74302410147489
   ],
   "ponderado_hoy": [
-   23.27270500377665,
-   31.03148320282154,
-   38.536886784931426
+   20.06171060927107,
+   26.61047148271134,
+   35.52515688205442
   ],
-  "brecha_base": 0.7560014705517457,
-  "fila_origen": 53
+  "brecha_base": 0.6652486501879631,
+  "fila_origen": 55
  }
 }

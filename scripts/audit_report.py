@@ -35,6 +35,10 @@ TIPO = {"RD": "Conversor de I+D alineado al LTM", "BALANCE": "Balance del últim
         "S2C": "Ventas/capital contrastado con la historia y la industria", "ACCIONES": "Acciones: dilución y estructura de capital",
         "C46": "Margen objetivo Base de la hoja enlazado al de Input sheet"}
 BASE = "7361ae29c73368ed2ccedade461d02df9243e5eb"  # Modelo-JMR-datos antes de la auditoría (merge del PR #17)
+# Valoraciones rehechas desde cero después de la auditoría: «antes» es la valoración que reemplazan y la fecha es la de la
+# nueva hoja (CELH: segunda valoración desde cero del 5-oct-2026; antes = Modelo-JMR-datos en el merge del PR #49).
+BASE_TK = {"CELH": "16f05e5be5315876864fffe5a63c78be3ead4467"}
+FECHA_TK = {"CELH": "2026-10-05"}
 NIIF = ("AFYA", "NVO", "ONON", "PAGS")
 
 
@@ -74,8 +78,9 @@ def cambios(tk: str) -> list[dict]:
     p = AUD / f"{tk}.json"
     if p.exists():
         for c in json.loads(p.read_text())["cambios"]:
-            tipo = ("Flujos LTM" if c["hoja"] == "Cash Flow Statement" else "EPS básico" if c["hoja"] == "Income Statement"
-                    else "Capital invertido operativo" if c["celda"] == "B41" else "Estados financieros")
+            tipo = c.get("tipo") or (
+                "Flujos LTM" if c["hoja"] == "Cash Flow Statement" else "EPS básico" if c["hoja"] == "Income Statement"
+                else "Capital invertido operativo" if c["celda"] == "B41" else "Estados financieros")
             out.append({**c, "tipo": tipo})
     return out
 
@@ -85,7 +90,7 @@ def antes_despues(datos: Path, tk: str):
     new = json.loads(Path(f).read_text())
     rel = str(Path(f).relative_to(datos))
     try:
-        old = json.loads(subprocess.check_output(["git", "-C", str(datos), "show", f"{BASE}:{rel}"]))
+        old = json.loads(subprocess.check_output(["git", "-C", str(datos), "show", f"{BASE_TK.get(tk, BASE)}:{rel}"]))
     except subprocess.CalledProcessError:
         old = new
     return old, new
@@ -141,7 +146,7 @@ def build(datos: Path, tk: str, sh) -> dict:
         salvedades.append("La API XBRL de la SEC solo publica hasta mar-2026 para PayPal: se conservaron los flujos LTM a jun-2026 de la hoja.")
     salvedades.append("No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la "
                       "coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.")
-    return {"ticker": tk, "fecha": FECHA, "cambios": cs, "checks": checks, "orden": orden, "salvedades": salvedades,
+    return {"ticker": tk, "fecha": FECHA_TK.get(tk, FECHA), "cambios": cs, "checks": checks, "orden": orden, "salvedades": salvedades,
             "arrendamientos": ls,
             "antes": {"dcfTecnico": dcf0, "valorEsperado": ve0.get("valor"), "precioMOS": old.get("precioMOS"),
                       "historias": {k: v.get("valor") for k, v in h0.items()}},

@@ -1,158 +1,366 @@
 {
  "ticker": "CELH",
- "fecha": "2026-10-01",
+ "fecha": "2026-10-05",
  "cambios": [
   {
    "hoja": "Balance Sheet",
+   "celda": "L6",
+   "fila": "Cuentas por cobrar",
+   "antes": 755.5,
+   "despues": 735.336,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L9",
+   "fila": "Otros activos corrientes",
+   "antes": 656.8,
+   "despues": 509.391,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L10",
+   "fila": "Activos corrientes",
+   "antes": 1811.2,
+   "despues": 1875.961,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L11",
+   "fila": "Propiedad, planta y equipo",
+   "antes": 87.9,
+   "despues": 108.748,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L12",
+   "fila": "Intangibles",
+   "antes": 111.9,
+   "despues": 99.529,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L13",
+   "fila": "Plusvalía",
+   "antes": 917.6,
+   "despues": 919.66,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L15",
+   "fila": "Otros activos de largo plazo",
+   "antes": 2191.1,
+   "despues": 2164.253,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L16",
+   "fila": "Activos totales",
+   "antes": 5119.6,
+   "despues": 5168.151,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L18",
+   "fila": "Cuentas por pagar",
+   "antes": 137.9,
+   "despues": 202.101,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L22",
+   "fila": "Ingresos diferidos corrientes",
+   "antes": 27,
+   "despues": 31.46,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L23",
+   "fila": "Otros pasivos corrientes",
+   "antes": 906.8,
+   "despues": 803.074,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L24",
+   "fila": "Pasivos corrientes",
+   "antes": 1078.7,
+   "despues": 1043.635,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
    "celda": "L25",
+   "fila": "Deuda de largo plazo",
    "antes": 669.9,
-   "despues": 668,
-   "motivo": "Deuda de largo plazo al 30-jun-2026 (10-Q 2T26); antes 669,9, el cierre de 2025.",
-   "tipo": "Balance del último 10-Q"
+   "despues": 667.85,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L27",
+   "fila": "Otros pasivos de largo plazo",
+   "antes": 415.8,
+   "despues": 483.347,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L28",
+   "fila": "Pasivos de largo plazo",
+   "antes": 1099.5,
+   "despues": 1164.957,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L29",
+   "fila": "Pasivos totales",
+   "antes": 2178.2,
+   "despues": 2208.592,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L31",
+   "fila": "Capital pagado",
+   "antes": 1050.5,
+   "despues": 1069.452,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L32",
+   "fila": "Otro resultado integral",
+   "antes": 3.2,
+   "despues": 0.335,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "L33",
+   "fila": "Utilidades retenidas",
+   "antes": 175.9,
+   "despues": 313.165,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
   },
   {
    "hoja": "Balance Sheet",
    "celda": "L34",
+   "fila": "Patrimonio de los accionistas",
    "antes": 1181.5,
-   "despues": 1200,
-   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.181,5, el cierre de 2025.",
-   "tipo": "Balance del último 10-Q"
+   "despues": 1199.584,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
   },
   {
    "hoja": "Balance Sheet",
    "celda": "L35",
+   "fila": "Patrimonio total",
    "antes": 1181.5,
-   "despues": 1200,
-   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.181,5, el cierre de 2025.",
-   "tipo": "Balance del último 10-Q"
+   "despues": 1199.584,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B16",
-   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
-   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
-   "motivo": "Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda.",
-   "tipo": "Deuda de balance sin arrendamientos operativos"
+   "hoja": "Balance Sheet",
+   "celda": "L36",
+   "fila": "Pasivos y patrimonio",
+   "antes": 5119.6,
+   "despues": 5168.151,
+   "tipo": "Balance del último 10-Q",
+   "motivo": "Saldo al 30-jun-2026 (10-Q del 2T26); el importador repetía el de dic-2025."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "E5",
-   "antes": 295,
-   "despues": 5.7,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "B27",
+   "fila": "Shares Outstanding",
+   "antes": 40,
+   "despues": 120,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "B8",
-   "antes": 287,
-   "despues": 5.012,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "C27",
+   "fila": "Shares Outstanding",
+   "antes": 45.7,
+   "despues": 137.1,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "B9",
-   "antes": 235,
-   "despues": 5.189,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "D27",
+   "fila": "Shares Outstanding",
+   "antes": 57,
+   "despues": 171,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "B10",
-   "antes": 194,
-   "despues": 4.008,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "E27",
+   "fila": "Shares Outstanding",
+   "antes": 68.9,
+   "despues": 206.7,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "B11",
-   "antes": 151,
-   "despues": 3.699,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "F27",
+   "fila": "Shares Outstanding",
+   "antes": 72.3,
+   "despues": 216.9,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "B12",
-   "antes": 98,
-   "despues": 0.68,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "G27",
+   "fila": "Shares Outstanding",
+   "antes": 74.9,
+   "despues": 224.7,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Operating lease converter",
-   "celda": "B13",
-   "antes": 605,
-   "despues": 2.018,
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "H27",
+   "fila": "Shares Outstanding",
+   "antes": 76.4,
+   "despues": 229.2,
+   "tipo": "Split 3 por 1 (15-nov-2023)",
+   "motivo": "Acciones de 2016-2022 sin ajustar por el split en el XBRL: ×3 (también BPA ÷3 y promedios ponderados, filas 23-26)."
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B18",
-   "antes": "No",
-   "despues": "Yes",
-   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Income Statement",
+   "celda": "I23",
+   "fila": "Basic EPS",
+   "antes": 0.96,
+   "despues": 0.79,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Basic EPS Dec '23: SEC XBRL (EarningsPerShareBasic) al 2023-12-31; antes 0.96."
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B28",
-   "antes": 0.12,
-   "despues": 0.120929,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 2.8 / ventas 3047.3).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Cash Flow Statement",
+   "celda": "B40",
+   "fila": "Net Change in Cash",
+   "antes": 149,
+   "despues": 1.62,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '16: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2016-12-31; antes 149."
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B30",
-   "antes": 0.17,
-   "despues": 0.170929,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 2.8 / ventas 3047.3).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Cash Flow Statement",
+   "celda": "C40",
+   "fila": "Net Change in Cash",
+   "antes": 1286.2,
+   "despues": 2.44,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '17: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2017-12-31; antes 1286.2."
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B32",
-   "antes": 2.5,
-   "despues": 2.4652,
-   "motivo": "Ventas/capital con el capital arrendado: 1/(1/2.5 + 0.0056), con VP de arrendamientos 17.2 / ventas 3047.3.",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Cash Flow Statement",
+   "celda": "D40",
+   "fila": "Net Change in Cash",
+   "antes": -661,
+   "despues": -6.44,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '18: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2018-12-31; antes -661."
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B33",
-   "antes": 2,
-   "despues": 1.9777,
-   "motivo": "Ventas/capital con el capital arrendado: 1/(1/2 + 0.0056), con VP de arrendamientos 17.2 / ventas 3047.3.",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Cash Flow Statement",
+   "celda": "E40",
+   "fila": "Net Change in Cash",
+   "antes": 1020,
+   "despues": 15.35,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '19: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2019-12-31; antes 1020."
   },
   {
-   "hoja": "Valuation output",
-   "celda": "C45",
-   "antes": 0.11,
-   "despues": 0.110929,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 2.8 / ventas 3047.3).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Cash Flow Statement",
+   "celda": "F40",
+   "fila": "Net Change in Cash",
+   "antes": 1825,
+   "despues": 20.16,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '20: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2020-12-31; antes 1825."
   },
   {
-   "hoja": "Valuation output",
-   "celda": "C47",
-   "antes": 0.21,
-   "despues": 0.210929,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 2.8 / ventas 3047.3).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "hoja": "Cash Flow Statement",
+   "celda": "G40",
+   "fila": "Net Change in Cash",
+   "antes": -608,
+   "despues": -26.99,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '21: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2021-12-31; antes -608."
   },
   {
-   "hoja": "Valuation output",
-   "celda": "C46",
-   "antes": 0.17,
-   "despues": "='Input sheet'!B30",
-   "motivo": "Margen objetivo Base enlazado a 'Input sheet'!B30: el valor escrito a mano no seguía a B30 (ajuste por arrendamientos de Damodaran y revisiones del 30-sep-2026), y el DCF de la hoja mezclaba un margen inicial ajustado con un objetivo sin ajustar.",
-   "tipo": "Margen objetivo Base de la hoja enlazado al de Input sheet"
+   "hoja": "Cash Flow Statement",
+   "celda": "H40",
+   "fila": "Net Change in Cash",
+   "antes": 443,
+   "despues": 636.67,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '22: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2022-12-31; antes 443."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "I40",
+   "fila": "Net Change in Cash",
+   "antes": 2896,
+   "despues": 103.05,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '23: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2023-12-31; antes 2896."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "J40",
+   "fila": "Net Change in Cash",
+   "antes": 481,
+   "despues": 134.21,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '24: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2024-12-31; antes 481."
+  },
+  {
+   "hoja": "Cash Flow Statement",
+   "celda": "K40",
+   "fila": "Net Change in Cash",
+   "antes": -2216,
+   "despues": -350.2,
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash Dec '25: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2025-12-31; antes -2216."
   },
   {
    "hoja": "Cash Flow Statement",
@@ -160,17 +368,116 @@
    "fila": "Net Change in Cash",
    "antes": -14,
    "despues": 17.9,
-   "motivo": "LTM = ejercicio -350.2 + acumulado al 2026-06-30 93.1 − acumulado del año anterior -275.0 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
-   "tipo": "Flujos LTM"
+   "tipo": "Estados contra la SEC (XBRL)",
+   "motivo": "Net Change in Cash LTM: SEC XBRL (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect) al 2026-06-30; antes -14."
   },
   {
-   "hoja": "Valuation output",
-   "celda": "B41",
-   "fila": "Invested capital",
-   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
-   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
-   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
-   "tipo": "Capital invertido operativo"
+   "hoja": "Input sheet",
+   "celda": "B13",
+   "fila": "EBIT (DCF)",
+   "antes": "='Income Statement'!L12",
+   "despues": "='Income Statement'!L12+441,6",
+   "tipo": "Dato enlazado + ajuste con nota",
+   "motivo": "EBIT GAAP LTM + 441,6 de partidas de una vez (terminación de distribuidores, integración, inventario); el acuerdo legal de 24,6 queda como costo recurrente."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B15",
+   "fila": "Patrimonio (DCF)",
+   "antes": "='Balance Sheet'!L35",
+   "despues": "='Balance Sheet'!L35+1759,975",
+   "tipo": "Dato enlazado + ajuste con nota",
+   "motivo": "Patrimonio + 1.759,975 del preferente en mezzanine (capital invertido que financió Rockstar y la capitanía)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B16",
+   "fila": "Deuda (DCF)",
+   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25+19,9",
+   "tipo": "Dato enlazado + ajuste con nota",
+   "motivo": "Préstamo a plazo a valor nominal (694,75; 10-Q 2T26); arrendamientos por el conversor."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B22",
+   "fila": "Acciones (DCF)",
+   "antes": "='Income Statement'!L27",
+   "despues": "='Income Statement'!L27+2,149",
+   "tipo": "Dato enlazado + ajuste con nota",
+   "motivo": "Acciones en circulación + 2,149 millones de RSU/PSU sin consolidar (10-Q 2T26)."
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B76",
+   "fila": "Preferentes separadas",
+   "antes": "",
+   "despues": 1135,
+   "tipo": "Dato enlazado + ajuste con nota",
+   "motivo": "Series A y B de PepsiCo a valor de liquidación (550 + 585)."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "fila": "Gasto 2025",
+   "antes": 295,
+   "despues": 5.7,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "fila": "Compromiso",
+   "antes": 287,
+   "despues": 5.012,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "fila": "Compromiso",
+   "antes": 235,
+   "despues": 5.189,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "fila": "Compromiso",
+   "antes": 194,
+   "despues": 4.008,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "fila": "Compromiso",
+   "antes": 151,
+   "despues": 3.699,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "fila": "Compromiso",
+   "antes": 98,
+   "despues": 0.68,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "fila": "Compromiso",
+   "antes": 605,
+   "despues": 2.018,
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)",
+   "motivo": "Gasto 2025 y compromisos al 31-dic-2025 (10-K 2025); la plantilla traía los de otra empresa."
   }
  ],
  "checks": {
@@ -196,17 +503,6 @@
   "efecto_por_accion": 0.0
  },
  "antes": {
-  "dcfTecnico": 18.117212149776176,
-  "valorEsperado": 18.533945248170696,
-  "precioMOS": 12.047064411310952,
-  "historias": {
-   "A": 22.22477131878745,
-   "B": 15.482025069761846,
-   "C": 8.9415023066515,
-   "D": 28.84102600241345
-  }
- },
- "despues": {
   "dcfTecnico": 23.82637376,
   "valorEsperado": 20.765260378563354,
   "precioMOS": 13.497419246066181,
@@ -215,6 +511,17 @@
    "B": 16.600452758793313,
    "C": 7.164821171223355,
    "D": 32.1237054684824
+  }
+ },
+ "despues": {
+  "dcfTecnico": 21.01767856,
+  "valorEsperado": 18.69712843229433,
+  "precioMOS": 12.153133480991317,
+  "historias": {
+   "A": 21.017678564629602,
+   "B": 14.325616182836178,
+   "C": 6.338548147572339,
+   "D": 31.379912069107437
   }
  },
  "tramo_tasas_base": "$2,000-3,000 Mn"
