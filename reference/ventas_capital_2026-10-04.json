@@ -199,36 +199,36 @@
  },
  "DUOL": {
   "industria": "Software (Internet)",
-  "actual": 1.7,
+  "actual": 2.45,
   "ventas_ltm": 1145,
-  "capital_ltm": 672.6961243532253,
-  "roic_actual": 0.37002856868283374,
+  "capital_ltm": 466.6961243532253,
+  "roic_actual": 0.5333594411093019,
   "marginal_ultimo": {
    "desde": "Dec '24",
    "hasta": "Dec '25",
    "dventas": 289.6,
-   "dcapital": 316.1,
-   "ratio": 0.92
+   "dcapital": 89.5,
+   "ratio": 3.23
   },
   "marginal_3a": {
    "desde": "Dec '22",
    "hasta": "Dec '25",
    "dventas": 668.1,
-   "dcapital": 446.7,
-   "ratio": 1.5
+   "dcapital": 220.0,
+   "ratio": 3.04
   },
   "sector": 1.35,
   "usada": [
-   1.79,
-   1.79
+   3,
+   2.45
   ],
   "rendimiento_capital_nuevo": [
-   0.3636,
-   0.3636
+   0.6094,
+   0.4977
   ],
   "con_id": true,
   "vida_id": 3,
-  "ajuste": null
+  "ajuste": "sin los impuestos diferidos activos (liberación de la reserva de valuación en el 3T25: US$227 millones al cierre de 2025 y US$206 millones al 30-jun-2026; 10-K y 10-Q)"
  },
  "EPAM": {
   "industria": "Computer Services",

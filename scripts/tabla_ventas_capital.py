@@ -34,6 +34,9 @@ NO_COMPARABLE = {"Financial Svcs. (Non-bank & Insurance)"}  # el capital de una 
 AJUSTES = {
     "UBER": {"nota": "sin los impuestos diferidos activos (liberación de la reserva de valuación en 2024-2025; 10-K y 10-Q)",
              "excluir": {"Dec '22": 0.0, "Dec '23": 170.0, "Dec '24": 6171.0, "Dec '25": 10951.0, "LTM": 10162.0}},
+    "DUOL": {"nota": "sin los impuestos diferidos activos (liberación de la reserva de valuación en el 3T25: US$227 millones al "
+                     "cierre de 2025 y US$206 millones al 30-jun-2026; 10-K y 10-Q)",
+             "excluir": {"Dec '22": 0.6, "Dec '23": 0.8, "Dec '24": 0.7, "Dec '25": 227.3, "LTM": 206.0}},
     "NVDA": {"nota": "sin los impuestos diferidos activos y, en los cierres anuales, sin los títulos de deuda y las "
                      "inversiones en acciones que el importador dejó dentro de otros activos (10-K y 10-Q)",
              "excluir": {"Jan '23": 13050.0 + 300.0 + 3400.0, "Jan '24": 25720.0 + 1550.0 + 6100.0,
