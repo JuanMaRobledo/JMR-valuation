@@ -173,7 +173,7 @@
  ],
  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$50.000 millones: crecer 13,0% anual cinco años (Base) lo logró ~10% de las empresas de ese tamaño; 17,5% (Optimista), ~3%. Microsoft es la excepción que confirma la regla: hace cinco años que crece a doble dígito con más de US$150.000 millones de ventas. Aun así, la visión externa pide no extrapolar el 17,8% de FY26.",
  "crecimiento": {
-  "texto": "Ingresos de US$245.122 millones (FY24, +15,7%), US$281.724 millones (FY25, +14,9%) y US$331.839 millones (FY26, +17,8%). En FY25: Productivity US$120.810 millones (+12%), Intelligent Cloud US$106.265 millones (+20%) y More Personal Computing US$54.649 millones (+5%). En FY26, según los trimestres publicados, ~+16%, ~+30% y ~−1%. La división FY26 de las historias aplica esos crecimientos a FY25 (estimación propia).",
+  "texto": "Ingresos de US$245.122 millones (FY24, +15,7%), US$281.724 millones (FY25, +14,9%) y US$331.839 millones (FY26, +17,8%). En FY25: Productivity US$120.810 millones (+12%), Intelligent Cloud US$106.265 millones (+20%) y More Personal Computing US$54.649 millones (+5%). En FY26, según los trimestres publicados, ~+16%, ~+30% y ~−1%. La división FY26 de las historias aplica esos crecimientos a FY25 (estimación propia). Desde FY2027 Microsoft reporta dos segmentos, Agents and Infra y Devices and Consumer (8-K del 2-sep-2026); es un cambio de presentación, así que las historias conservan los tres segmentos de FY2026 con los que se midió el crecimiento.",
   "tabla": {
    "cols": [
     "US$ millones",
@@ -225,7 +225,7 @@
   "texto": "El margen operativo subió a 46,8% pese al capex porque la depreciación todavía no refleja toda la inversión. La hoja supone 46,3% el próximo año y 45% de objetivo. La depreciación de los centros de datos de IA (vidas útiles de 5-6 años) y los márgenes menores de la infraestructura de IA frente al software empujan hacia abajo; Copilot y el precio de Microsoft 365 empujan hacia arriba. Las historias van de 37% a 48%."
  },
  "reinversion": {
-  "texto": "La hoja usa un ventas/capital de 0,62 (años 1-5) y 0,94 (años 6-10): los años 1-5 cargan el capex de IA; en los 6-10 la capacidad madura sin volver a un modelo liviano. Con margen objetivo de 46,2% e impuesto marginal de 21%, el capital nuevo rinde ~23% y ~34% (revisión del 5-oct-2026: se quitó el tope de la auditoría del 4-oct, que lo comparaba con un ROIC actual cargado de crédito mercantil). En la historia Optimista se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Ventaja durable: costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn), con ROIC de 30-72% en 2021-2026. El ROIC después del año 10 es 25,4%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "La hoja usa un ventas/capital de 0,62 (años 1-5) y 0,94 (años 6-10): los años 1-5 cargan el capex de IA; en los 6-10 la capacidad madura sin volver a un modelo liviano. Con margen objetivo de 46,2% e impuesto marginal de 21%, el capital nuevo rinde ~23% y ~34% (revisión del 5-oct-2026: se quitó el tope de la auditoría del 4-oct, que lo comparaba con un ROIC actual cargado de crédito mercantil). En la historia Optimista se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Ventaja durable: costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn), con ROIC de 30-72% en 2021-2026. El ROIC después del año 10 es 20,6%: el promedio de Software (System & Application) según Damodaran (29,3%) llevado a la base del modelo, que capitaliza el I+D a 3 años; queda por debajo de su ROIC actual (25,4%). Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
  },
  "prob_texto": "Base (45%) es la continuación de FY24-FY26 con desaceleración gradual. Conservadora (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. Disrupción (10%) es una corrección de la demanda de cómputo. Optimista (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -297,6 +297,10 @@
   [
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ],
+  [
+   "Microsoft, 8-K del 2-sep-2026 (nuevos segmentos desde FY2027)",
+   "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
   ]
  ],
  "arrendamientos": {
@@ -318,7 +322,7 @@
   ],
   [
    "Reinversión: el cambio de régimen.",
-   "Este es el punto donde Microsoft dejó de ser una empresa de software puro. El capex pasó de US$44.477 millones (FY24) a US$115.948 millones (FY26), y el flujo libre cayó a menos de la mitad. La hoja usa un ventas/capital de {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital, cuando antes bastaba una fracción. La Optimista lo baja a {s2cD}× porque crecer más exige todavía más centros de datos. El valor depende de que el retorno de ese capital supere el costo de capital de ~10%, y la evidencia aún es incompleta: la demanda está concentrada en pocos clientes (OpenAI). Después del año 10 la Base conserva un ROIC de {roicT}, limitado a su ROIC actual: costos de cambio y efectos de red en Office, Azure y Windows sostuvieron un ROIC de 30-72% en 2021-2026. Si el capex no rinde y el ROIC terminal cae al costo de capital, la Base vale {s_roic}: es el riesgo central de la tesis."
+   "Este es el punto donde Microsoft dejó de ser una empresa de software puro. El capex pasó de US$44.477 millones (FY24) a US$115.948 millones (FY26), y el flujo libre cayó a menos de la mitad. La hoja usa un ventas/capital de {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital, cuando antes bastaba una fracción. La Optimista lo baja a {s2cD}× porque crecer más exige todavía más centros de datos. El valor depende de que el retorno de ese capital supere el costo de capital de ~10%, y la evidencia aún es incompleta: la demanda está concentrada en pocos clientes (OpenAI). Después del año 10 la Base conserva un ROIC de {roicT}, el promedio de su industria en la base del modelo (con I+D capitalizado), por debajo de su ROIC actual (25,4%): costos de cambio y efectos de red en Office, Azure y Windows sostuvieron un ROIC de 30-72% en 2021-2026. Si el capex no rinde y el ROIC terminal cae al costo de capital, la Base vale {s_roic}: es el riesgo central de la tesis."
   ],
   [
    "Descuento y terminal.",
