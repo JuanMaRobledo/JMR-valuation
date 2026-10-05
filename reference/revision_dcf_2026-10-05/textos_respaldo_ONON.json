@@ -1,0 +1,7 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Ke 10,56% (rf 5,24% + beta 1,30 × ERP 4,09%); arrendamientos al 6%; WACC ~10,2%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,05 (bottom-up de Shoe en EE.UU., reapalancada) × ERP 4,63% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 94%; WACC inicial 9,8% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (ONON, 5-oct-2026)"
+ }
+}

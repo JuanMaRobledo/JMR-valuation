@@ -1,0 +1,12 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "WACC 10,1%: rf 5,29% + beta 1,13 (Education global 0,74 reapalancada) × ERP 7,33% (4,09% maduro + 3,24% Brasil) = Ke 13,6%. Terminal 11% (se mantiene el riesgo país).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,13 (bottom-up de Education en la tabla global, reapalancada) × ERP 6,94% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 13,1%; Kd después de impuestos 5,7%; peso del patrimonio 56%; WACC inicial 9,9% y terminal 10,7%.",
+  "reason": "Texto de tasa al día (AFYA, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,13 (Damodaran Education global, 0,74 desapalancada, reapalancada con la D/E de mercado) × ERP 7,33% (4,09% maduro + 3,24% de prima país de Brasil) = Ke 13,6%. Kd después de impuestos 5,7%; peso del patrimonio 56%; WACC inicial 10,1%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,13 (bottom-up de Education en la tabla global, reapalancada) × ERP 6,94% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 13,1%; Kd después de impuestos 5,7%; peso del patrimonio 56%; WACC inicial 9,9% y terminal 10,7%.",
+  "reason": "Texto de tasa al día (AFYA, 5-oct-2026)"
+ }
+}

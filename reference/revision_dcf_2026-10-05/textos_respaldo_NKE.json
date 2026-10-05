@@ -1,0 +1,7 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Ke 9,37% (rf 5,24% + beta 1,01 × ERP 4,09%); Kd 6,02% (A2/A); WACC ~8,65%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,01 (bottom-up de Shoe en la tabla global, reapalancada) × ERP 4,71% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,0%; Kd después de impuestos 4,5%; peso del patrimonio 85%; WACC inicial 9,2% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (NKE, 5-oct-2026)"
+ }
+}

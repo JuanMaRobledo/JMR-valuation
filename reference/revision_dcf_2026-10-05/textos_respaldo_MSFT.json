@@ -11,7 +11,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "Cost of capital close to median company",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,27 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,96% = Ke 11,6%; Kd después de impuestos 4,1%; peso del patrimonio 98%; WACC inicial 11,4% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,27 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,57% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,1%; Kd después de impuestos 4,1%; peso del patrimonio 98%; WACC inicial 10,9% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (MSFT, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {

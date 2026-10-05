@@ -1,0 +1,12 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,31 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,63% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,4%; Kd después de impuestos 4,5%; peso del patrimonio 94%; WACC inicial 10,9% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (ADBE, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta de industria Software (Single Business Global). Costo de deuda vía Synthetic Rating: cobertura de intereses real de 29,9x → rating estimado Aaa/AAA → spread mínimo (0,40%) — Adobe tiene deuda real pero muy poco apalancada frente a su generación de caja.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,31 (bottom-up de Software (System & Application) en EE.UU., reapalancada) × ERP 4,63% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 11,4%; Kd después de impuestos 4,5%; peso del patrimonio 94%; WACC inicial 10,9% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (ADBE, 5-oct-2026)"
+ }
+}

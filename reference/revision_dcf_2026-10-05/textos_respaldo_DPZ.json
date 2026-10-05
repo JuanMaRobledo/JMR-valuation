@@ -1,0 +1,12 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Beta ~1,07 bottom-up (Restaurant/Dining EE.UU.), ERP 4,21%, deuda titulizada Baa2/BBB a 5 años.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,07 (bottom-up de Restaurant/Dining en EE.UU., reapalancada con su D/E alta) × ERP 3,82% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,4%; Kd después de impuestos 4,9%; peso del patrimonio 68%; WACC inicial 7,9% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (DPZ, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta ~1,07 bottom-up (Restaurant/Dining en EE.UU., «Single Business(US)», reapalancada con la D/E de mercado ~0,48), ERP por regiones 4,21%, deuda titulizada Baa2/BBB a 5 años (US$4.817M al cierre 2025).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,07 (bottom-up de Restaurant/Dining en EE.UU., reapalancada con su D/E alta) × ERP 3,82% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,4%; Kd después de impuestos 4,9%; peso del patrimonio 68%; WACC inicial 7,9% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (DPZ, 5-oct-2026)"
+ }
+}

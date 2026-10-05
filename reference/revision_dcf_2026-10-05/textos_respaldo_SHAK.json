@@ -1,0 +1,12 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Beta ~0,98 bottom-up (Restaurant/Dining EE.UU.), ERP 4,14%; convertibles (Ba1/BB+) y arrendamientos como deuda.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,99 (bottom-up de Restaurant/Dining en EE.UU., reapalancada con los alquileres) × ERP 3,75% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,0%; Kd después de impuestos 5,0%; peso del patrimonio 74%; WACC inicial 8,0% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (SHAK, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta ~0,98 bottom-up (Restaurant/Dining en EE.UU., «Single Business(US)», reapalancada con la D/E de mercado incluidos los arrendamientos), ERP por regiones 4,14%; deuda = convertibles de US$248M + arrendamientos capitalizados.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,99 (bottom-up de Restaurant/Dining en EE.UU., reapalancada con los alquileres) × ERP 3,75% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,0%; Kd después de impuestos 5,0%; peso del patrimonio 74%; WACC inicial 8,0% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (SHAK, 5-oct-2026)"
+ }
+}

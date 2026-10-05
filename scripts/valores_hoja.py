@@ -27,7 +27,7 @@ import model_steps as ms  # noqa: E402
 
 RANGOS = ["'Input sheet'!B35", "'Cost of capital worksheet'!B28", "'Cost of capital worksheet'!C58", "'Input sheet'!B36",
           "'Valuation output'!M14", "'Input sheet'!B32:B33", "'Escenarios e historias'!D5", "'Input sheet'!B25",
-          "'Escenarios e historias'!H5:H11", "'Input sheet'!D1"]
+          "'Escenarios e historias'!H5:H11", "'Input sheet'!D1", "'Cost of capital worksheet'!B63"]
 RANGOS_FIN = ["'DCF FCFE financiero'!B4", "'DCF FCFE financiero'!B6"]
 
 
@@ -58,9 +58,9 @@ def leer(tk: str, intentos: int = 4) -> dict:
     d = {"rf": v[0][0][0], "erp": v[1][0][0], "beta": v[2][0][-1], "w0": v[3][0][0], "wT": v[4][0][0],
          "s1": v[5][0][0], "s2": v[5][1][0] if len(v[5]) > 1 else v[5][0][0], "margen": v[6][0][0], "t": v[7][0][0],
          "vA": h[0], "vB": h[1], "vC": h[2], "vD": h[3], "ve": h[5], "base": h[6], "precio": _num(v[9][0][0]),
-         "fin": tk == "PAGS"}
+         "fin": tk == "PAGS", "ke": v[10][0][0]}
     if d["fin"]:
-        d["wT"], d["w0"] = v[10][0][0], v[11][0][0]
+        d["wT"], d["w0"] = v[11][0][0], v[12][0][0]
     u = (d["margen"] or 0) * (1 - (d["t"] or 0))
     d["r1"], d["r2"] = u * (d["s1"] or 0), u * (d["s2"] or 0)
     return d

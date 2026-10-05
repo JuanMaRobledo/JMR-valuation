@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import sys
+import time
 from pathlib import Path
 
 _ROOT = Path(__file__).resolve().parent.parent
@@ -57,6 +58,22 @@ S2C = {
 }
 
 
+# 5-oct-2026: el resto de la cartera, solo los textos de tasa (G15 y F21), con la prima de mercado de octubre
+BETA.update({
+    "ADBE": "bottom-up de Software (System & Application) en EE.UU., reapalancada",
+    "AFYA": "bottom-up de Education en la tabla global, reapalancada",
+    "CELH": "bottom-up de Beverage (Soft) en EE.UU., reapalancada",
+    "CMG": "bottom-up de Restaurant/Dining en EE.UU., reapalancada con los alquileres",
+    "DPZ": "bottom-up de Restaurant/Dining en EE.UU., reapalancada con su D/E alta",
+    "LULU": "bottom-up de Apparel en EE.UU., reapalancada",
+    "NKE": "bottom-up de Shoe en la tabla global, reapalancada",
+    "ONON": "bottom-up de Shoe en EE.UU., reapalancada",
+    "PAGS": "patrimonio de Financial Svcs. en la tabla global",
+    "SHAK": "bottom-up de Restaurant/Dining en EE.UU., reapalancada con los alquileres",
+    "UBER": "regresión de Uber; «Transportation» no describe la plataforma",
+})
+
+
 def es(x: float, nd: int = 2) -> str:
     return f"{x:.{nd}f}".replace(".", ",")
 
@@ -70,6 +87,21 @@ def main(argv: list[str]) -> int:
     moat = json.loads((_ROOT / "reference" / "moat_2026-09-30.json").read_text())
     moat = moat.get("empresas", moat)
     for tk in [a for a in argv if not a.startswith("--")]:
+        for intento in range(4):  # cuota de lecturas de Google (60 por minuto)
+            try:
+                _uno(tk, apply, moat)
+                break
+            except Exception as e:
+                if intento == 3:
+                    raise
+                print(f"  {tk}: {type(e).__name__}; reintento en 70 s")
+                time.sleep(70)
+        time.sleep(3)
+    return 0
+
+
+def _uno(tk: str, apply: bool, moat: dict) -> None:
+    if True:
         sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())["sheet_id"]
         sh = ms.open_sheet(sid)
         rg = ["'Input sheet'!B35", "'Cost of capital worksheet'!C58", "'Cost of capital worksheet'!B28",
@@ -83,8 +115,24 @@ def main(argv: list[str]) -> int:
         f21 = (v[7] or [[""]])[0][0] if v[7] else ""
         wt, roict = v[8][0][0], v[9][0][0]
         m = moat.get(tk, {})
-        tasa = (f"rf {pct(rf, 2)} (UST 10 años, 30-sep-2026) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} = Ke {pct(ke)}; "
-                f"Kd después de impuestos {pct(kd)}; peso del patrimonio {pct(we, 0)}; WACC inicial {pct(w0)} y terminal {pct(wt)}.")
+        tasa = (f"rf {pct(rf, 2)} (UST 10 años, 30-sep-2026) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} (Damodaran, "
+                f"oct-2026: 3,70% madura + riesgo país por regiones) = Ke {pct(ke)}; Kd después de impuestos {pct(kd)}; peso del "
+                f"patrimonio {pct(we, 0)}; WACC inicial {pct(w0)} y terminal {pct(wt)}.")
+        if tk == "PAGS":  # financiera: se descuenta el FCFE al costo del patrimonio
+            fin = sh.values_get("'DCF FCFE financiero'!B4", params={"valueRenderOption": "UNFORMATTED_VALUE"})["values"][0][0]
+            tasa = (f"rf {pct(rf, 2)} (UST 10 años, 30-sep-2026) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} (Damodaran, "
+                    f"oct-2026: 3,70% madura + 3,24% de Brasil) = Ke {pct(ke)}, que converge a {pct(fin)} en el año 10; sin deuda "
+                    f"financiera (fondeo operativo).")
+        if tk not in S2C:  # solo los textos de tasa
+            upd = {"Stories to Numbers": {"G15": tasa}}
+            if isinstance(f21, str) and f21.strip():
+                upd["Tesis de Inversión y Supuestos"] = {"F21": tasa}
+            print(f"##### {tk}\n  G15 {tasa}")
+            if apply:
+                for hoja, celdas in upd.items():
+                    ms.write_with_backup(sh, hoja, celdas, f"Texto de tasa al día ({tk}, 5-oct-2026)",
+                                         OUT / f"textos_respaldo_{tk}.json")
+            return
         r1, r2 = S2C[tk]
         g13 = (f"Ventas/capital {es(s1)} en los años 1-5: {r1}. " +
                (f"{es(s2)} en los años 6-10: {r2}." if r2 != "igual" else f"Igual en los años 6-10."))
@@ -102,7 +150,6 @@ def main(argv: list[str]) -> int:
             for hoja, celdas in upd.items():
                 ms.write_with_backup(sh, hoja, celdas, f"Textos de tasa, ventas/capital y ventaja al día ({tk}, 5-oct-2026)",
                                      OUT / f"textos_respaldo_{tk}.json")
-    return 0
 
 
 if __name__ == "__main__":

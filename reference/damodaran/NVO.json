@@ -329,6 +329,12 @@
    "~40%",
    "≥ 40%",
    "≤ 36%"
+  ],
+  [
+   "Denecimig (hemofilia A) en la FDA",
+   "Revisión extendida por la remediación de la planta (2-oct-2026); lanzamiento previsto en el 1S27",
+   "Aprobación sin nuevos retrasos",
+   "Otro retraso o carta de respuesta completa"
   ]
  ],
  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
@@ -360,6 +366,10 @@
   [
    "Damodaran, Betas by Sector (US), enero 2026",
    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+  ],
+  [
+   "Novo Nordisk, actualización de la solicitud de denecimig (Form 6-K, 2-oct-2026)",
+   "https://www.sec.gov/Archives/edgar/data/353278/000117184326006374/f6k_100226.htm"
   ]
  ],
  "justificacion": [

@@ -6,12 +6,12 @@
  },
  "Stories to Numbers!G14": {
   "before": "ROIC actual ~24% (basis ajustado por I+D); converge al costo de capital después del año 10.",
-  "after": "Ventaja que se desvanece: ROIC después del año 10 de 9,4% (ROIC actual 25,2%; industria 9,2%).",
+  "after": "Ventaja que se desvanece: ROIC después del año 10 de 9,0% (ROIC actual 25,2%; industria 9,2%).",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (NVO, 5-oct-2026)"
  },
  "Stories to Numbers!G15": {
   "before": "9,0%: rf 5,11% (UST, 23-sep-2026) + beta desapalancada 1,00 de farma global (relevered 1,09) x ERP 4,09% = Ke 9,55%; Kd 5,66% (AA); D/(D+E) 10% a valor de mercado.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,99 (bottom-up de Drugs (Pharmaceutical) en EE.UU., reapalancada) × ERP 4,93% = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 90%; WACC inicial 9,6% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,99 (bottom-up de Drugs (Pharmaceutical) en EE.UU., reapalancada) × ERP 4,54% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,8%; Kd después de impuestos 4,6%; peso del patrimonio 90%; WACC inicial 9,3% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (NVO, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "rf 5,11% (UST 10 años, 23-sep-2026) + beta 1,09 (Damodaran Drugs (Pharmaceutical) global desapalancada 1,00, D/E 11% a mercado) x ERP 4,09% (Damodaran, 1-sep-2026; Dinamarca Aaa sin prima país) = Ke 9,55%. Kd 5,66% (AA). D/(D+E) 10%.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,99 (bottom-up de Drugs (Pharmaceutical) en EE.UU., reapalancada) × ERP 4,93% = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 90%; WACC inicial 9,6% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,99 (bottom-up de Drugs (Pharmaceutical) en EE.UU., reapalancada) × ERP 4,54% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,8%; Kd después de impuestos 4,6%; peso del patrimonio 90%; WACC inicial 9,3% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (NVO, 5-oct-2026)"
  }
 }

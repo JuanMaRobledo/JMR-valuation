@@ -11,7 +11,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "Beta 1,3 (Direct Input), ERP maduro; sin deuda financiera material.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Computer Services, reapalancada) × ERP 5,05% = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 97%; WACC inicial 10,1% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Computer Services, reapalancada) × ERP 4,66% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,9%; Kd después de impuestos 4,6%; peso del patrimonio 97%; WACC inicial 9,7% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Beta 1,3 (Direct Input), ERP maduro; caja neta de ~US$680M.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Computer Services, reapalancada) × ERP 5,05% = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 97%; WACC inicial 10,1% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Computer Services, reapalancada) × ERP 4,66% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 9,9%; Kd después de impuestos 4,6%; peso del patrimonio 97%; WACC inicial 9,7% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
  }
 }

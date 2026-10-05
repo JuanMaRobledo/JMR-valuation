@@ -1,0 +1,7 @@
+{
+ "Stories to Numbers!G15": {
+  "before": "Ke 7,86% (rf 5,29% + beta 0,62 × ERP por regiones 4,13%); Kd 6,5% (SOFR + 2,25%); WACC ~7,6%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,62 (bottom-up de Beverage (Soft) en EE.UU., reapalancada) × ERP 3,74% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 7,6%; Kd después de impuestos 4,9%; peso del patrimonio 90%; WACC inicial 7,4% y terminal 9,0%.",
+  "reason": "Texto de tasa al día (CELH, 5-oct-2026)"
+ }
+}

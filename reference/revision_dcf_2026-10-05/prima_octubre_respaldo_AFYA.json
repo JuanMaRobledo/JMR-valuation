@@ -1,0 +1,12 @@
+{
+ "Country equity risk premiums!B2": {
+  "before": 0.0409,
+  "after": 0.037,
+  "reason": "Prima de mercado de octubre (AFYA)"
+ },
+ "Input sheet!B47": {
+  "before": 0.1111,
+  "after": 0.1072,
+  "reason": "Terminal con la prima de octubre (AFYA)"
+ }
+}

@@ -11,7 +11,7 @@
  },
  "Stories to Numbers!G15": {
   "before": "Cost of capital close to median company",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,25 (bottom-up de Software (System & Application) en EE.UU., sin deuda) × ERP 4,48% = Ke 10,9%; Kd después de impuestos 4,5%; peso del patrimonio 100%; WACC inicial 10,9% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,25 (bottom-up de Software (System & Application) en EE.UU., sin deuda) × ERP 4,09% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,4%; Kd después de impuestos 4,5%; peso del patrimonio 100%; WACC inicial 10,4% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
  },
  "Supuestos Recomendados!C11": {
@@ -36,7 +36,7 @@
  },
  "Tesis de Inversión y Supuestos!F21": {
   "before": "Mejora gradual de eficiencia a medida que madura la plataforma.",
-  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,25 (bottom-up de Software (System & Application) en EE.UU., sin deuda) × ERP 4,48% = Ke 10,9%; Kd después de impuestos 4,5%; peso del patrimonio 100%; WACC inicial 10,9% y terminal 9,4%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,25 (bottom-up de Software (System & Application) en EE.UU., sin deuda) × ERP 4,09% (Damodaran, oct-2026: 3,70% madura + riesgo país por regiones) = Ke 10,4%; Kd después de impuestos 4,5%; peso del patrimonio 100%; WACC inicial 10,4% y terminal 9,0%.",
   "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
  }
 }
