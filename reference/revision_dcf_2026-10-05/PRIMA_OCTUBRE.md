@@ -74,3 +74,10 @@ implícita de Damodaran de septiembre (4,09%), calculada el 1-sep con una tasa d
 
 Controles: 22 de 22 con consistencia 16/16 e integridad 0 hallazgos; fórmula única en seco 0 celdas; hoja = app =
 resultado en las 22; 52/52 archivos subidos a Drive.
+
+## Tipo de empresa por ciclo de vida y sector (las 22)
+
+Clasificación completa con fuentes de Damodaran, mapeo y evidencia en
+`reference/ciclo_de_vida/CLASIFICACION_2026-10-05.md` (`scripts/ciclo_de_vida.py`). Cambian CELH y CMG («Crecimiento» →
+«Madura»), INTU y MSFT («Software» → «Madura»), NVDA y UBER («Madura» → «Crecimiento») y NVO («Madura» →
+«Biotech/Farma»). Solo cambia el ponderado DCF + múltiplos; el DCF de las 22 no cambia.
