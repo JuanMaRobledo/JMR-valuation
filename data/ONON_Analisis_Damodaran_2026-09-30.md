@@ -100,7 +100,7 @@ Sensibilidad del DCF Base (US$33,10; cada fila es un DCF completo con un solo su
 | Inventarios | 419 | 420 | 473 |
 | Flujo operativo (después de intereses) | 495 | 338 | 501 |
 
-**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está por debajo de todas las referencias: es prudente (más reinversión por dólar de crecimiento); viene del control de la p. 45, que no deja que el capital nuevo rinda más que el ROIC actual o el de su industria.
+**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, el marginal de los últimos años y el promedio del sector, y comprueba que el rendimiento que implica sobre el capital nuevo sea creíble frente a lo que gana la empresa o su sector (Investment Valuation, cap. 11, p. 44-46). El marginal es volátil: recompras de acciones y adquisiciones mueven el capital contable. El usado está por debajo de todas las referencias: es prudente (más reinversión por dólar de crecimiento); la nota de la hoja (Input sheet B32-B33) explica por qué.
 
 | Referencia | Ventas/capital | Detalle |
 |---|---:|---|
