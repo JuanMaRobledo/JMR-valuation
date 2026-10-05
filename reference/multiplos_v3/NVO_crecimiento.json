@@ -1,12 +1,12 @@
 {
- "fecha": "2026-10-04",
+ "fecha": "2026-10-05",
  "umbral": 0.02,
- "precio": 37.32,
- "dcfHoy": 31.208248509017942,
+ "precio": 37.91,
+ "dcfHoy": 31.782461113011024,
  "dcfInverso": {
-  "gImplicito": 0.0474520058183695,
+  "gImplicito": 0.04546728519098242,
   "gDcf": 0.008592382717690871,
-  "dif": 0.03885962310067863,
+  "dif": 0.036874902473291546,
   "lectura": "El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador."
  },
  "gDcf": {
@@ -15,8 +15,8 @@
   "puntoMedio": 0.01321149381715192
  },
  "parametros": {
-  "ke": 0.10638271675674763,
-  "wacc": 0.09751681972438761,
+  "ke": 0.10193178894591692,
+  "wacc": 0.09520773225619633,
   "roe": 0.486084715140515,
   "fcffEbitda": 0.643612387881397,
   "fcfeOcf": 0.6925394001162021
@@ -24,61 +24,61 @@
  "multiplos": [
   {
    "metodo": "EV/EBITDA",
-   "multiplo": 10.36,
-   "multiploDcf": 7.491337270810547,
-   "gImplicito": 0.03332195387644463,
-   "gDcf": 0.010684638737493696,
-   "dif": 0.022637315138950932,
-   "difValor": 0.347054057491452,
+   "multiplo": 10.42,
+   "multiploDcf": 7.542236455068497,
+   "gImplicito": 0.031495335340005974,
+   "gDcf": 0.00909702128323842,
+   "dif": 0.02239831405676755,
+   "difValor": 0.3460243217710901,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 35% por encima del DCF en FY+3."
   },
   {
    "metodo": "EV/FCFF",
-   "multiplo": 19.16,
-   "multiploDcf": 11.639516907793,
-   "gImplicito": 0.04307650128567791,
-   "gDcf": 0.010684638737493696,
-   "dif": 0.032391862548184214,
-   "difValor": 0.5855820679775352,
+   "multiplo": 19.24,
+   "multiploDcf": 11.718600507202105,
+   "gImplicito": 0.04109667829096924,
+   "gDcf": 0.00909702128323842,
+   "dif": 0.03199965700773082,
+   "difValor": 0.5820691343979565,
    "aplica": true,
-   "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 59% por encima del DCF en FY+3."
+   "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 58% por encima del DCF en FY+3."
   },
   {
    "metodo": "P/E",
-   "multiplo": 15.45,
-   "multiploDcf": 9.452787412341422,
-   "gImplicito": 0.045007416457172905,
-   "gDcf": 0.0006687039267394472,
-   "dif": 0.044338712530433456,
-   "difValor": 0.5268993981314554,
+   "multiplo": 15.58,
+   "multiploDcf": 9.522876466420263,
+   "gImplicito": 0.040729909270349175,
+   "gDcf": -0.003460057249167474,
+   "dif": 0.04418996651951665,
+   "difValor": 0.5289060974512783,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 53% por encima del DCF en FY+3."
   },
   {
    "metodo": "P/FCFE",
-   "multiplo": 17.51,
-   "multiploDcf": 10.205300296344738,
-   "gImplicito": 0.046610554857409565,
-   "gDcf": 0.007645272199580449,
-   "dif": 0.038965282657829114,
-   "difValor": 0.5944491738078919,
+   "multiplo": 17.65,
+   "multiploDcf": 10.28096896561233,
+   "gImplicito": 0.042846974525224325,
+   "gDcf": 0.004251191445389695,
+   "dif": 0.038595783079834634,
+   "difValor": 0.5960142325542805,
    "aplica": true,
-   "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 59% por encima del DCF en FY+3."
+   "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 60% por encima del DCF en FY+3."
   },
   {
    "metodo": "P/OCF",
-   "multiplo": 11.74,
-   "multiploDcf": 7.067572545236285,
-   "gImplicito": 0.04475302081912684,
-   "gDcf": 0.007645272199580449,
-   "dif": 0.03710774861954639,
-   "difValor": 0.5490481616078258,
+   "multiplo": 11.84,
+   "multiploDcf": 7.1199760800584535,
+   "gImplicito": 0.041039805627795224,
+   "gDcf": 0.004251191445389695,
+   "dif": 0.03678861418240553,
+   "difValor": 0.5512466436266201,
    "aplica": true,
    "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 55% por encima del DCF en FY+3."
   }
  ],
- "dcfFy3": 42.265454565222335,
+ "dcfFy3": 42.525718506135334,
  "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
  "alertas": 5
 }

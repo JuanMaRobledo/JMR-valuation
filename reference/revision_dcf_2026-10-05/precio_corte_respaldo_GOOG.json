@@ -1,0 +1,17 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 340.74,
+  "reason": "Precio y fecha de corte (GOOG)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (GOOG)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 341.08,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (GOOG)"
+ }
+}

@@ -15,6 +15,10 @@ generator: "Claude (Modelo JMR)"
 
 > Alcance: análisis fundamental cualitativo con fines informativos; no constituye asesoramiento financiero ni recomendación de compra o venta.
 
+<!-- JMR-NOTA-REVISION-2026-10-05 -->
+> **Actualización del 5 de octubre de 2026.** Las tablas de auditoría y de supuestos de este informe son la instantánea de la hoja a la fecha del informe y pueden mostrar una beta, un costo de capital o un ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa beta 1,07 (por ingresos (Advertising y Software), sin cambio), costo de capital inicial 10,59% y terminal 9,38%, y ventas/capital 1,2 en los años 1-5 y 1,4 en los 6-10 (antes 1,15 y 1,12). DCF Base US$299,68 por acción y DCF esperado US$255,10, con un precio de referencia de US$340,74. Las cifras vigentes están en la sección de historias Damodaran y en la valoración.
+<!-- /JMR-NOTA-REVISION-2026-10-05 -->
+
 ## 1. Resumen ejecutivo
 
 Alphabet Inc. es la matriz de Google y de un conjunto de negocios más pequeños agrupados como "Other Bets" (Waymo, Verily, Calico, entre otros). El grueso del negocio se organiza en tres segmentos reportados: Google Services (Búsqueda, YouTube, Android, Play, dispositivos, publicidad de red), Google Cloud (infraestructura, plataforma y colaboración empresarial) y Other Bets. En el año fiscal 2025 la compañía facturó US$402.800M, con Google Services creciendo ~12% interanual y Google Cloud acelerando a ~36% ["Alphabet Announces Fourth Quarter and Fiscal Year 2025 Results", Alphabet Investor Relations, 3 de febrero de 2026](https://abc.xyz/investor/). Other Bets representó apenas el 0,38% de los ingresos consolidados, un recordatorio de que Alphabet sigue siendo, en la práctica, un negocio de publicidad digital y de nube en transición.

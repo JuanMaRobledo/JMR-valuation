@@ -68,22 +68,22 @@
     "FOUR"
    ],
    "C": {
-    "Conservador": 7.62,
-    "Base": 8.98,
-    "Optimista": 10.22
+    "Conservador": 10.04,
+    "Base": 12.38,
+    "Optimista": 14.77
    },
    "mercado": 9.72,
    "lambda": 0.25,
-   "conservador": 7.19,
-   "base": 9.53,
-   "optimista": 11.51,
-   "factor_cons": 0.754,
-   "factor_opt": 1.207,
-   "opt_tope_historico": null,
+   "conservador": 7.7,
+   "base": 10.38,
+   "optimista": 12.11,
+   "factor_cons": 0.742,
+   "factor_opt": 1.226,
+   "opt_tope_historico": 12.724637243618087,
    "base_en_rango": true,
    "rango": [
     7.59,
-    11.84
+    12.38
    ],
    "antes": {
     "J8": null,
@@ -121,22 +121,22 @@
     "STNE"
    ],
    "C": {
-    "Conservador": 11.4,
-    "Base": 13.18,
-    "Optimista": 14.87
+    "Conservador": 15.01,
+    "Base": 18.16,
+    "Optimista": 21.48
    },
    "mercado": 6.78,
    "lambda": 0.25,
-   "conservador": 6.01,
-   "base": 8.38,
-   "optimista": 10.33,
-   "factor_cons": 0.717,
-   "factor_opt": 1.233,
-   "opt_tope_historico": null,
+   "conservador": 6.78,
+   "base": 9.62,
+   "optimista": 10.38,
+   "factor_cons": 0.704,
+   "factor_opt": 1.251,
+   "opt_tope_historico": 12.038424283847649,
    "base_en_rango": true,
    "rango": [
     6.46,
-    13.18
+    18.16
    ],
    "antes": {
     "J8": null,
@@ -174,22 +174,22 @@
     "STNE"
    ],
    "C": {
-    "Conservador": 5.69,
-    "Base": 6.12,
-    "Optimista": 6.01
+    "Conservador": 7.49,
+    "Base": 8.43,
+    "Optimista": 8.69
    },
    "mercado": 3.77,
    "lambda": 0.25,
-   "conservador": 3.67,
-   "base": 4.36,
-   "optimista": 5.01,
-   "factor_cons": 0.843,
-   "factor_opt": 1.198,
-   "opt_tope_historico": 5.219673897393123,
+   "conservador": 4.09,
+   "base": 4.93,
+   "optimista": 5.08,
+   "factor_cons": 0.829,
+   "factor_opt": 1.214,
+   "opt_tope_historico": 5.991893726053802,
    "base_en_rango": true,
    "rango": [
     3.22,
-    6.12
+    8.43
    ],
    "antes": {
     "J8": null,
@@ -201,21 +201,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   9.59406768091548,
-   10.834134468441604,
-   11.68556519346497
+   10.605260832820905,
+   12.06066468474228,
+   13.098102523001721
   ],
   "multiplos_hoy": [
-   7.2976227708762185,
-   10.756525982792233,
-   13.419562429257368
+   8.180669167738797,
+   12.255323304415946,
+   14.516977213064953
   ],
   "ponderado_hoy": [
-   8.216200734891922,
-   10.78756937705198,
-   12.725963534940407
+   9.15050583377164,
+   12.177459856546477,
+   13.949427337039658
   ],
-  "brecha_base": -0.007163330478815344,
+  "brecha_base": 0.01613995785157063,
   "fila_origen": 40
  }
 }

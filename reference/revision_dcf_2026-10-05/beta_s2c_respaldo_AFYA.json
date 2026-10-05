@@ -1,0 +1,42 @@
+{
+ "Input sheet!B32": {
+  "before": 0.75,
+  "after": 1.5,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (AFYA, 5-oct-2026)"
+ },
+ "Input sheet!B33": {
+  "before": 0.75,
+  "after": 1.2,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (AFYA, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "rf 5,18% (UST 10 años, 25-sep-2026) + beta 1,20 (Damodaran Education global desapalancada 0,74, D/E 72% a mercado) x ERP 7,33% (4,09% maduro + 3,24% de prima país de Brasil) = Ke 14,0%. Kd 8,7% en US$ (rf 5,18% + 2,13% soberano + 1,38% Ba1). D/(D+E) 42%. Terminal 11%.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,13 (Damodaran Education global, 0,74 desapalancada, reapalancada con la D/E de mercado) × ERP 7,33% (4,09% maduro + 3,24% de prima país de Brasil) = Ke 13,6%. Kd después de impuestos 5,7%; peso del patrimonio 56%; WACC inicial 10,1%.",
+  "reason": "Textos de beta y ventas/capital al día (AFYA, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "11,2%: rf 5,18% (UST) + beta 1,20 (Education global 0,74 reapalancada con D/E de mercado 72%) x ERP 7,33% (4,09% maduro + 3,24% Brasil) = Ke 14%; Kd 8,7% en US$. Terminal 11% (se mantiene el riesgo país).",
+  "after": "WACC 10,1%: rf 5,29% + beta 1,13 (Education global 0,74 reapalancada) × ERP 7,33% (4,09% maduro + 3,24% Brasil) = Ke 13,6%. Terminal 11% (se mantiene el riesgo país).",
+  "reason": "Textos de beta y ventas/capital al día (AFYA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 1.5,
+  "after": 1.5,
+  "reason": "Recomendación de ventas/capital (AFYA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Crecimiento orgánico (guía sin compras): con 1,5x el FCFF del Año 1 (~US$190M) coincide con el FCFF real LTM. El marginal histórico (0,7x) incluye R$4.400M de compras.",
+  "after": "1,5x: crecimiento orgánico (sin compras); con 1,5 el FCFF del año 1 (~US$190M) coincide con el FCFF real LTM. El marginal histórico (0,25-0,64) incluye R$4.400M de compras.",
+  "reason": "Recomendación de ventas/capital (AFYA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 1.2,
+  "after": 1.2,
+  "reason": "Textos de beta y ventas/capital al día (AFYA, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Despues del año 5 el crecimiento requiere plazas nuevas (compradas o construidas).",
+  "after": "1,2x: después del año 5 crecer exige plazas nuevas (compradas o construidas); cerca del sector Education global (1,16).",
+  "reason": "Recomendación de ventas/capital (AFYA, 5-oct-2026)"
+ }
+}

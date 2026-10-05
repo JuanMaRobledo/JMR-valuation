@@ -1,0 +1,17 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 299.61,
+  "reason": "Precio y fecha de corte (DPZ)"
+ },
+ "Input sheet!B4": {
+  "before": 46290,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (DPZ)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 292.14,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (DPZ)"
+ }
+}

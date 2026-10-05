@@ -43,17 +43,17 @@
    "B_peers": "MDT 12,9x, SYK 15,9x, ABT 17,3x, EW 23,3x, ISRG 33,8x, ZBH 9,8x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 10.91,
-    "Base": 10.59,
-    "Optimista": 10.73
+    "Conservador": 12.06,
+    "Base": 12.67,
+    "Optimista": 13.51
    },
    "mercado": 12.0,
    "lambda": 0.0,
-   "conservador": 11.4,
+   "conservador": 11.09,
    "base": 12.0,
-   "optimista": 13.3,
-   "factor_cons": 0.951,
-   "factor_opt": 1.109,
+   "optimista": 13.51,
+   "factor_cons": 0.925,
+   "factor_opt": 1.126,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
@@ -95,9 +95,9 @@
    "B_peers": "MDT 20,1x, SYK 23,8x, ABT 26,3x, EW 32,5x, ISRG 43,9x, ZBH 15,1x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 23.77,
-    "Base": 27.68,
-    "Optimista": 31.07
+    "Conservador": 23.72,
+    "Base": 27.62,
+    "Optimista": 30.99
    },
    "mercado": 18.19,
    "lambda": 0.0,
@@ -110,7 +110,7 @@
    "base_en_rango": true,
    "rango": [
     16.44,
-    27.68
+    27.62
    ],
    "antes": {
     "J8": 22.13,
@@ -271,22 +271,22 @@
    "B_peers": "MDT 13,9x, SYK 19,4x, ABT 18,5x, EW 29,5x, ISRG 39,8x, ZBH 10,0x",
    "B_excluidos": [],
    "C": {
-    "Conservador": 17.73,
-    "Base": 22.22,
-    "Optimista": 25.96
+    "Conservador": 17.97,
+    "Base": 22.42,
+    "Optimista": 25.98
    },
    "mercado": 12.72,
    "lambda": 0.0,
-   "conservador": 10.99,
+   "conservador": 11.01,
    "base": 12.72,
-   "optimista": 15.25,
-   "factor_cons": 0.864,
-   "factor_opt": 1.198,
+   "optimista": 15.2,
+   "factor_cons": 0.865,
+   "factor_opt": 1.195,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
     11.39,
-    22.22
+    22.42
    ],
    "antes": {
     "J8": 15.75,
@@ -298,21 +298,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   25.565472262605063,
-   31.605126151595677,
-   37.863589893433755
+   27.247848275833025,
+   34.11129588046385,
+   41.01569448545954
   ],
   "multiplos_hoy": [
-   26.26155839259175,
-   28.351838912133545,
-   32.6200666936331
+   27.81761516108497,
+   31.75636810369839,
+   37.87828713616287
   ],
   "ponderado_hoy": [
-   25.84390671459974,
-   30.303811255810828,
-   35.7661806135135
+   27.475755029933804,
+   33.16932476975767,
+   39.760731545740875
   ],
-  "brecha_base": -0.10293542964699987,
+  "brecha_base": -0.06903659670444151,
   "fila_origen": 40
  }
 }

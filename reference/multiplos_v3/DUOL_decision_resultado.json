@@ -137,7 +137,7 @@
     "MTCH"
    ],
    "C": {
-    "Conservador": 19.09,
+    "Conservador": 19.1,
     "Base": 24.08,
     "Optimista": 28.3
    },
@@ -203,20 +203,20 @@
    ],
    "C": {
     "Conservador": 7.75,
-    "Base": 9.35,
-    "Optimista": 11.76
+    "Base": 9.34,
+    "Optimista": 11.75
    },
    "mercado": 27.26,
    "lambda": 0.15,
-   "conservador": 21.31,
+   "conservador": 21.32,
    "base": 24.57,
    "optimista": 29.2,
-   "factor_cons": 0.867,
+   "factor_cons": 0.868,
    "factor_opt": 1.188,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    9.35,
+    9.34,
     27.26
    ],
    "antes": {
@@ -256,21 +256,21 @@
     "MTCH"
    ],
    "C": {
-    "Conservador": 15.44,
-    "Base": 18.59,
-    "Optimista": 21.04
+    "Conservador": 15.43,
+    "Base": 18.57,
+    "Optimista": 21.02
    },
    "mercado": 23.72,
    "lambda": 0.15,
    "conservador": 19.76,
-   "base": 22.95,
+   "base": 22.94,
    "optimista": 24.82,
    "factor_cons": 0.861,
    "factor_opt": 1.082,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    18.59,
+    18.57,
     26.85
    ],
    "antes": {
@@ -311,8 +311,8 @@
    ],
    "C": {
     "Conservador": 12.95,
-    "Base": 15.01,
-    "Optimista": 16.67
+    "Base": 15.0,
+    "Optimista": 16.66
    },
    "mercado": 22.71,
    "lambda": 0.15,
@@ -324,7 +324,7 @@
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    15.01,
+    15.0,
     25.85
    ],
    "antes": {
@@ -337,21 +337,21 @@
  },
  "hoja": {
   "dcf_hoy": [
-   83.33747384441402,
-   104.83037251043251,
-   135.23531088386213
+   83.34125557499652,
+   104.83583956121736,
+   135.24312426147657
   ],
   "multiplos_hoy": [
-   85.30618676185483,
-   100.10114845564713,
-   116.21660436644143
+   85.30310377600254,
+   100.09283773974093,
+   116.20812972686814
   ],
   "ponderado_hoy": [
-   84.12495901139036,
-   102.93868288851837,
-   127.62782827689387
+   84.12599485539894,
+   102.9386388326268,
+   127.62912644763321
   ],
-  "brecha_base": -0.045113109316813005,
+  "brecha_base": -0.04524217902320338,
   "fila_origen": 50
  }
 }

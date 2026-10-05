@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "2,0x: capex neto de depreciación bajo; I+D va como gasto.",
+  "after": "Ventas/capital 1,11 en los años 1-5: el del sector (1,11); el de hoy (0,89) incluye el crédito mercantil de las compras. Igual en los años 6-10.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "ROIC alto (>20%) incluso con goodwill.",
+  "after": "Ventaja durable: ROIC después del año 10 de 16,9% (ROIC actual 26,4%; industria 17,0%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Beta 0,9 (Direct Input), ERP maduro, deuda Baa2/BBB a 8 años.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,11 (bottom-up de Drugs (Pharmaceutical), reapalancada) × ERP 5,07% = Ke 10,9%; Kd después de impuestos 5,1%; peso del patrimonio 80%; WACC inicial 9,8% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 2,
+  "after": 1.11,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "2,0x: capex de US$521M LTM con D&A de ~US$480M.",
+  "after": "1,11x: el del sector (1,11); el de hoy (0,89) incluye el crédito mercantil de las compras.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 2,
+  "after": 1.11,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "2,0x.",
+  "after": "1,11x: el del sector (1,11); el de hoy (0,89) incluye el crédito mercantil de las compras.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta 0,9 (Direct Input), ERP maduro, deuda Baa2/BBB a 8 años (US$9.042M).",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,11 (bottom-up de Drugs (Pharmaceutical), reapalancada) × ERP 5,07% = Ke 10,9%; Kd después de impuestos 5,1%; peso del patrimonio 80%; WACC inicial 9,8% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (ZTS, 5-oct-2026)"
+ }
+}

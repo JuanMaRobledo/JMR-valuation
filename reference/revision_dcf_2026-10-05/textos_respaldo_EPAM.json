@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "3,5x / 3,0x: servicios profesionales, poco capital fijo; el capital es talento y capital de trabajo.",
+  "after": "Ventas/capital 3,27 en los años 1-5: servicios profesionales con poco capital fijo: entre el de hoy (1,95) y el del sector (5,19). 2,83 en los años 6-10: algo menor por compras pequeñas y plataformas de IA.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "ROIC operativo alto (poco capital), menor con el goodwill de las compras recientes.",
+  "after": "Ventaja que se desvanece: ROIC después del año 10 de 12,0% (ROIC actual 15,1%; industria 26,4%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Beta 1,3 (Direct Input), ERP maduro; sin deuda financiera material.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Computer Services, reapalancada) × ERP 5,05% = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 97%; WACC inicial 10,1% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 3.5,
+  "after": 3.2705,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "3,5x: bajo capex (US$56M LTM).",
+  "after": "3,27x: servicios profesionales con poco capital fijo: entre el de hoy (1,95) y el del sector (5,19).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 3,
+  "after": 2.8298,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "3,0x: más inversión en adquisiciones pequeñas y plataformas de IA.",
+  "after": "2,83x: algo menor por compras pequeñas y plataformas de IA.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta 1,3 (Direct Input), ERP maduro; caja neta de ~US$680M.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 0,98 (bottom-up de Computer Services, reapalancada) × ERP 5,05% = Ke 10,2%; Kd después de impuestos 4,6%; peso del patrimonio 97%; WACC inicial 10,1% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (EPAM, 5-oct-2026)"
+ }
+}

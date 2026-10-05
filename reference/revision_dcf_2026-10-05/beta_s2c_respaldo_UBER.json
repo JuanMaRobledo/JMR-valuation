@@ -1,0 +1,72 @@
+{
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (UBER, 5-oct-2026)"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 1.2,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (UBER, 5-oct-2026)"
+ },
+ "Input sheet!B32": {
+  "before": 1.11,
+  "after": 2.2,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (UBER, 5-oct-2026)"
+ },
+ "Input sheet!B33": {
+  "before": 1.11,
+  "after": 2.0,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (UBER, 5-oct-2026)"
+ },
+ "Input sheet!B62": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (UBER, 5-oct-2026)"
+ },
+ "Input sheet!B63": {
+  "before": "=474,8+256,6",
+  "after": "=(3177+1641-1312)/0,25",
+  "reason": "NOL como fórmula con su composición (UBER, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta de industria \"Transportation\" (menor que software). Costo de deuda vía Synthetic Rating (no Direct Input): cobertura de intereses real 5,57x → rating estimado A3/A- → spread 0,89% — Uber tiene deuda real con calificación crediticia, a diferencia de una empresa sin deuda relevante.",
+  "after": "Beta 1,20 (regresión de Uber, 1,21 a 2 años y 1,28 a 5; la de «Transportation», 0,76-0,80, es de logística con activos y no describe a la plataforma). ERP por regiones 5,04%. Costo de deuda vía Synthetic Rating: cobertura de intereses 5,57x → A3/A- → spread 0,89%. Pérdidas fiscales reconocidas (Input B62-B63).",
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Sales-to-capital más bajo que un software puro (3,0x-3,5x) porque Uber está invirtiendo activamente USD 10.000M+ en flota propia de vehículos autónomos, aumentando la intensidad de capital frente a su histórico modelo asset-light de conductores independientes.",
+  "after": "Ventas/capital 2,2 (años 1-5) y 2,0 (6-10): sin los US$10.162M de impuestos diferidos, Uber vende 2,58 por dólar de capital; se baja por las flotas autónomas (Rivian, Lucid, Nuro). Delivery Hero no entra: la Base crece de forma orgánica.",
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "Sin ventaja defendible demostrada: ROIC terminal = costo de capital (efectos de red reales, pero rentable solo desde 2024).",
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Costo de capital por encima de la mediana: beta 1,20 y ERP por regiones 5,04%.",
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 3,
+  "after": 2.2,
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Mas bajo que un software puro (4,0x) porque Uber esta invirtiendo activamente USD 10.000M+ en flota propia de vehiculos autonomos (Lucid, Nuro, Rivian), lo que aumenta la intensidad de capital futura frente a su modelo historico asset-light de conductores independientes.",
+  "after": "2,2x: 2,58 sin los impuestos diferidos, menos el capital de las flotas autónomas (~US$3.000M a cargo de Uber en cinco años).",
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 3.5,
+  "after": 2.0,
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Asume una leve mejora de eficiencia de capital en la segunda mitad del horizonte, a medida que la inversion inicial en la flota de AV ya este realizada y el negocio escale sobre esa base sin requerir el mismo nivel de inversion marginal -- sigue por debajo de un software puro dado el perfil mas intensivo en capital de la estrategia de AV.",
+  "after": "2,0x: hacia el del sector en EE.UU. (1,98) cuando las flotas autónomas pesen más.",
+  "reason": "Textos de beta, ventas/capital y NOL al día (UBER, 5-oct-2026)"
+ }
+}

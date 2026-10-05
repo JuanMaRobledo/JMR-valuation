@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "Negocio de software asset-light: capex LTM inferior a 1% de ventas, con una eficiencia moderada por SBC y compromisos de infraestructura cloud.",
+  "after": "Ventas/capital 3,47 en los años 1-5: software liviano en capital: entre el de hoy (3,23) y el marginal (3,0-7,8). 3,84 en los años 6-10: eficiencia algo mayor al madurar.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "Ventaja durable: ROIC después del año 10 de 20,6% (ROIC actual 150,0%; industria 20,6%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,25 (bottom-up de Software (System & Application) en EE.UU., sin deuda) × ERP 4,48% = Ke 10,9%; Kd después de impuestos 4,5%; peso del patrimonio 100%; WACC inicial 10,9% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "4,00x",
+  "after": 3.468,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Asset-light y capex LTM inferior a 1% de ventas; se modera por SBC y compromisos cloud.",
+  "after": "3,47x: software liviano en capital: entre el de hoy (3,23) y el marginal (3,0-7,8).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "4,50x",
+  "after": 3.8377,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Mejora gradual de eficiencia tras la fase de expansión acelerada.",
+  "after": "3,84x: eficiencia algo mayor al madurar.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Mejora gradual de eficiencia a medida que madura la plataforma.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,25 (bottom-up de Software (System & Application) en EE.UU., sin deuda) × ERP 4,48% = Ke 10,9%; Kd después de impuestos 4,5%; peso del patrimonio 100%; WACC inicial 10,9% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (PLTR, 5-oct-2026)"
+ }
+}

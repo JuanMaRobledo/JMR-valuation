@@ -1,0 +1,42 @@
+{
+ "Stories to Numbers!G13": {
+  "before": "2,5x: negocio de software/servicios, requiere relativamente poco capital nuevo por dólar de ingreso incremental frente a un negocio intensivo en activos físicos.",
+  "after": "Ventas/capital 1,15 en los años 1-5: carga el pico de capex de IA (marginal 0,44-0,65). 1,43 en los años 6-10: la capacidad ya está construida; cerca del sector (1,35).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Stories to Numbers!G14": {
+  "before": "ROIC muy por encima del costo de capital: el negocio de Búsqueda/YouTube genera retornos excepcionales sobre el capital operativo.",
+  "after": "Ventaja durable: ROIC después del año 10 de 29,3% (ROIC actual 31,8%; industria 29,3%).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Stories to Numbers!G15": {
+  "before": "9,6%: beta observado ~1,05 (Directo, no la canasta de industria 'Software (Internet)' de Damodaran, dominada por empresas mucho más chicas y de un solo producto) x ERP de mercado maduro de EE.UU., calificación real Aa2/AA, deuda financiera neta casi nula.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,07 (por ingresos: Advertising (~82%) y Software (~18%) en EE.UU., reapalancada) × ERP 5,07% = Ke 10,7%; Kd después de impuestos 4,9%; peso del patrimonio 98%; WACC inicial 10,6% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": 2.5,
+  "after": 1.1537,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "Negocio de software/servicios: relativamente poco capital nuevo por dólar de ingreso incremental.",
+  "after": "1,15x: carga el pico de capex de IA (marginal 0,44-0,65).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": 2,
+  "after": 1.4283,
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "Años 6-10: algo más de intensidad de capital por la maduración de Cloud e infraestructura de IA propia.",
+  "after": "1,43x: la capacidad ya está construida; cerca del sector (1,35).",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ },
+ "Tesis de Inversión y Supuestos!F21": {
+  "before": "Beta observado ~1,05 (Direct Input; la canasta de industria 'Software (Internet)' de Damodaran da 1,34 desapalancada, sobreestimando el riesgo de una empresa tan diversificada y estable como Alphabet) x ERP de mercado maduro de EE.UU. Costo de deuda con calificación real Aa2/AA (no el A1/A+ genérico de la plantilla), vencimiento promedio 10 años. Deuda financiera neta prácticamente nula.",
+  "after": "rf 5,29% (UST 10 años, 30-sep-2026) + beta 1,07 (por ingresos: Advertising (~82%) y Software (~18%) en EE.UU., reapalancada) × ERP 5,07% = Ke 10,7%; Kd después de impuestos 4,9%; peso del patrimonio 98%; WACC inicial 10,6% y terminal 9,4%.",
+  "reason": "Textos de tasa, ventas/capital y ventaja al día (GOOG, 5-oct-2026)"
+ }
+}

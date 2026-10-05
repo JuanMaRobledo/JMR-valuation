@@ -29,6 +29,18 @@ SECTOR = _ROOT / "reference" / "damodaran_ventas_capital_sector_2026-01.json"
 OUT = _ROOT / "reference" / "ventas_capital_2026-10-04.json"
 NO_COMPARABLE = {"Financial Svcs. (Non-bank & Insurance)"}  # el capital de una financiera no es comparable
 
+# Ajustes documentados (5-oct-2026): partidas no operativas que el balance de la hoja deja dentro del capital invertido.
+# Se restan del capital de cada cierre (columna del Income Statement) y del LTM; montos en US$ millones, fuente SEC (XBRL).
+AJUSTES = {
+    "UBER": {"nota": "sin los impuestos diferidos activos (liberación de la reserva de valuación en 2024-2025; 10-K y 10-Q)",
+             "excluir": {"Dec '22": 0.0, "Dec '23": 170.0, "Dec '24": 6171.0, "Dec '25": 10951.0, "LTM": 10162.0}},
+    "NVDA": {"nota": "sin los impuestos diferidos activos y, en los cierres anuales, sin los títulos de deuda y las "
+                     "inversiones en acciones que el importador dejó dentro de otros activos (10-K y 10-Q)",
+             "excluir": {"Jan '23": 13050.0 + 300.0 + 3400.0, "Jan '24": 25720.0 + 1550.0 + 6100.0,
+                         "Jan '25": 42110.0 + 3390.0 + 11000.0, "Jan '26": 39520.0 + 22250.0 + 12890.0 + 13300.0,
+                         "LTM": 12200.0}},
+}
+
 
 def fila(g, *nombres):
     for n in nombres:
@@ -71,8 +83,10 @@ def main(argv) -> int:
         con_rd = str(inp.get(17, "")).strip().lower() == "yes"
         vida = int(v[6][0][0]) if con_rd and v[6] and isinstance(v[6][0][0], (int, float)) else 0
 
+        aj = AJUSTES.get(tk, {}).get("excluir", {})
+
         def ic(j):  # capital invertido del cierre de la columna j, como B41
-            base = num(eq, j) + sum(num(x, j) for x in deuda) - num(caja, j) - num(lti, j)
+            base = num(eq, j) + sum(num(x, j) for x in deuda) - num(caja, j) - num(lti, j) - aj.get(str(hdr[j]), 0.0)
             if vida:
                 base += sum(num(rd, j - k) * (vida - k) / vida for k in range(1, vida) if j - k >= 1)
             return base
@@ -88,6 +102,9 @@ def main(argv) -> int:
             dr, di = num(rev, k_ult) - num(rev, j0), ic(k_ult) - ic(j0)
             marg[n] = {"desde": str(hdr[j0]), "hasta": str(hdr[k_ult]), "dventas": round(dr, 1), "dcapital": round(di, 1),
                        "ratio": round(dr / di, 2) if di > 0 and dr > 0 else None}
+        if aj.get("LTM"):
+            roic0 = roic0 * ic_ltm / (ic_ltm - aj["LTM"])
+            ic_ltm = ic_ltm - aj["LTM"]
         ind = rjs.get("industria")
         s1, s2, m_obj, t_mg = inp.get(32), inp.get(33), inp.get(30), inp.get(25)
         u = (m_obj or 0) * (1 - (t_mg or 0))
@@ -96,7 +113,7 @@ def main(argv) -> int:
                    "marginal_ultimo": marg[1], "marginal_3a": marg[3],
                    "sector": None if ind in NO_COMPARABLE else sector.get(ind),
                    "usada": [s1, s2], "rendimiento_capital_nuevo": [round(u * s1, 4), round(u * s2, 4)],
-                   "con_id": con_rd, "vida_id": vida}
+                   "con_id": con_rd, "vida_id": vida, "ajuste": AJUSTES.get(tk, {}).get("nota")}
         r_ = res[tk]
         print(f"{tk:5s} actual {r_['actual']} | marginal 1a {(marg[1] or {}).get('ratio')} 3a {(marg[3] or {}).get('ratio')} | "
               f"sector {r_['sector']} | usada {s1:.2f}/{s2:.2f}")

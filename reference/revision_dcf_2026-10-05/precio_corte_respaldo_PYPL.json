@@ -1,0 +1,22 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 52.53,
+  "reason": "Precio y fecha de corte (PYPL)"
+ },
+ "Input sheet!B4": {
+  "before": 46287,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (PYPL)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 52.89,
+  "after": 52.53,
+  "reason": "Precio de corte (PYPL)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 52.51,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (PYPL)"
+ }
+}

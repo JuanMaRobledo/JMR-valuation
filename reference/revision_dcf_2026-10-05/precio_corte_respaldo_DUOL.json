@@ -1,0 +1,17 @@
+{
+ "Input sheet!D1": {
+  "before": "=GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\")",
+  "after": 142.4,
+  "reason": "Precio y fecha de corte (DUOL)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (DUOL)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 153.92,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (DUOL)"
+ }
+}

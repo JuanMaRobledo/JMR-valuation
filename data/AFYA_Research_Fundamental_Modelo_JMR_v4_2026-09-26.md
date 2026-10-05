@@ -15,6 +15,10 @@ generator: "Claude (Modelo JMR)"
 
 > Alcance: análisis fundamental cualitativo con fines informativos; no constituye asesoramiento financiero ni recomendación de compra o venta.
 
+<!-- JMR-NOTA-REVISION-2026-10-05 -->
+> **Actualización del 5 de octubre de 2026.** Las tablas de auditoría y de supuestos de este informe son la instantánea de la hoja a la fecha del informe y pueden mostrar una beta, un costo de capital o un ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa beta 1,13 (bottom-up de Education global, sin cambio), costo de capital inicial 10,13% y terminal 11,11%, y ventas/capital 1,5 en los años 1-5 y 1,2 en los 6-10 (antes 0,75). DCF Base US$22,89 por acción y DCF esperado US$20,13, con un precio de referencia de US$12,04. Las cifras vigentes están en la sección de historias Damodaran y en la valoración.
+<!-- /JMR-NOTA-REVISION-2026-10-05 -->
+
 ## 1. Resumen ejecutivo
 
 Afya Limited es el mayor grupo de educación médica de Brasil, con un modelo de negocio construido sobre plazas reguladas de grado en Medicina (el activo más escaso y de mayor barrera de entrada del sistema educativo brasileño), complementado por educación médica continua (posgrado, residencia médica preparatoria) y una unidad de soluciones digitales para médicos y estudiantes (contenido, herramientas clínicas y suscripciones). La compañía cotiza en Nasdaq bajo el ticker AFYA y reporta sus estados financieros bajo normas IFRS, en reales brasileños, con conversión a dólares para el mercado estadounidense.

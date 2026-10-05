@@ -3,7 +3,7 @@
  "empresa": "PagSeguro Digital Ltd. (NYSE:PAGS)",
  "sheet_id": "1Q17gaT8w8fGx-3uRn7eCS_HsF0q-HZucEtgXGtVEIQY",
  "fecha": "2026-09-29",
- "ke": 0.134996,
+ "ke": 0.113006,
  "categoria": "Financiera",
  "metodos": {
   "EV/EBITDA": {
@@ -42,9 +42,9 @@
     "p75": 13.41
    },
    "justificado": {
-    "Conservador": 2.95,
-    "Base": 1.81,
-    "Optimista": 0.69
+    "Conservador": 3.45,
+    "Base": 2.18,
+    "Optimista": 0.86
    },
    "actual_J": {
     "J8": null,
@@ -93,9 +93,9 @@
     "p75": 16.93
    },
    "justificado": {
-    "Conservador": 12.12,
-    "Base": 14.12,
-    "Optimista": 16.08
+    "Conservador": 14.17,
+    "Base": 16.96,
+    "Optimista": 19.83
    },
    "actual_J": {
     "J8": null,
@@ -139,9 +139,9 @@
     "p75": 23.41
    },
    "justificado": {
-    "Conservador": 7.62,
-    "Base": 8.98,
-    "Optimista": 10.22
+    "Conservador": 10.04,
+    "Base": 12.38,
+    "Optimista": 14.77
    },
    "actual_J": {
     "J8": null,
@@ -190,9 +190,9 @@
     "p75": 10.19
    },
    "justificado": {
-    "Conservador": 11.4,
-    "Base": 13.18,
-    "Optimista": 14.87
+    "Conservador": 15.01,
+    "Base": 18.16,
+    "Optimista": 21.48
    },
    "actual_J": {
     "J8": null,
@@ -241,9 +241,9 @@
     "p75": 6.97
    },
    "justificado": {
-    "Conservador": 5.69,
-    "Base": 6.12,
-    "Optimista": 6.01
+    "Conservador": 7.49,
+    "Base": 8.43,
+    "Optimista": 8.69
    },
    "actual_J": {
     "J8": null,
@@ -257,51 +257,51 @@
    "g": 0.0435,
    "g_años_4_10": 0.0341,
    "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.12962747233502828,
-   "ke": 0.134996,
+   "wacc_4_10": 0.11711835700783879,
+   "ke": 0.113006,
    "roe_fy3": 0.1312284798636201,
    "fcff_ebitda": 0.2434436416195536,
    "fcfe_ocf": 0.4990470068583913,
    "multiplos": {
-    "EV/FCFF": 12.11576250538129,
-    "P/FCFE": 11.404870158258285,
-    "P/E": 7.624350469240913,
-    "EV/EBITDA": 2.9495053453076676,
-    "P/OCF": 5.691566316087385
+    "EV/FCFF": 14.174453796746503,
+    "P/FCFE": 15.013092394901161,
+    "P/E": 10.036508654413527,
+    "EV/EBITDA": 3.4506806502480765,
+    "P/OCF": 7.492238823363902
    }
   },
   "Base": {
    "g": 0.05492857142857143,
    "g_años_4_10": 0.05695714285714286,
    "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.12962747233502828,
-   "ke": 0.134996,
+   "wacc_4_10": 0.11711835700783879,
+   "ke": 0.113006,
    "roe_fy3": 0.17257759999999997,
    "fcff_ebitda": 0.1283131873420672,
    "fcfe_ocf": 0.46422154766665863,
    "multiplos": {
-    "EV/FCFF": 14.12241088727164,
-    "P/FCFE": 13.175502076820965,
-    "P/E": 8.981959537499804,
-    "EV/EBITDA": 1.8120915539001354,
-    "P/OCF": 6.1163519653871035
+    "EV/FCFF": 16.96305207683913,
+    "P/FCFE": 18.164174919196544,
+    "P/E": 12.382821026859686,
+    "EV/EBITDA": 2.1765832790287014,
+    "P/OCF": 8.432201393077323
    }
   },
   "Optimista": {
    "g": 0.0635,
    "g_años_4_10": 0.0741,
    "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.12962747233502828,
-   "ke": 0.134996,
+   "wacc_4_10": 0.11711835700783879,
+   "ke": 0.113006,
    "roe_fy3": 0.20308708558211258,
    "fcff_ebitda": 0.04310743108247397,
    "fcfe_ocf": 0.4043005657822355,
    "multiplos": {
-    "EV/FCFF": 16.082574495088558,
-    "P/FCFE": 14.874958039610606,
-    "P/E": 10.22394917408938,
-    "EV/EBITDA": 0.6932784716757836,
-    "P/OCF": 6.0139539514015805
+    "EV/FCFF": 19.83462491856139,
+    "P/FCFE": 21.48224457641498,
+    "P/E": 14.765310672457773,
+    "EV/EBITDA": 0.8550197267236058,
+    "P/OCF": 8.685283636516937
    }
   }
  },
@@ -406,6 +406,6 @@
    "error_cashflow": ""
   }
  ],
- "justificado_recalculado": "2026-10-04",
+ "justificado_recalculado": "2026-10-05",
  "historia_actualizada": "2026-10-04"
 }

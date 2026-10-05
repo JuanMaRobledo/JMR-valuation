@@ -1,0 +1,22 @@
+{
+ "Input sheet!D1": {
+  "before": "=GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\")",
+  "after": 239.94,
+  "reason": "Precio y fecha de corte (ADBE)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (ADBE)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 252.16,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (ADBE)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 265.6,
+  "after": 239.94,
+  "reason": "Precio de corte (ADBE)"
+ }
+}

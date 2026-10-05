@@ -31,6 +31,19 @@ ANTES = {
     "CMG": (0.95, None, "bottom-up de Restaurant/Dining en EE.UU., sin la prima por un solo concepto"),
     "DPZ": (1.17, (2.6415, 2.6415), "bottom-up de Restaurant/Dining en EE.UU. reapalancada con su D/E alta, sin la prima "
                                     "por un solo concepto"),
+    "UBER": (0.80, (1.11, 1.11), "regresión de Uber; la de Transportation es de logística con activos y no describe a la "
+                                 "plataforma; pérdidas fiscales reconocidas"),
+    "PAGS": (1.12, None, "patrimonio de Financial Svcs. en la tabla global porque vende 100% en Brasil, sin la prima por "
+                         "tamaño; el riesgo de Brasil va en la prima de mercado"),
+    "AFYA": (None, (0.75, 0.75), "bottom-up de Education global, sin cambio"),
+    "MSFT": (1.36, (0.6246, 0.70), "bottom-up de Software (System & Application) en EE.UU., porque vende 51% allí"),
+    "NVO": (1.09, (0.57, 0.76), "bottom-up de Drugs (Pharmaceutical) en EE.UU., porque vende 56% en Norteamérica"),
+    "INTU": (None, (1.18, 1.18), "bottom-up de Software (System & Application) en EE.UU., sin cambio"),
+    "BSX": (None, (0.86, 0.86), "bottom-up de Healthcare Products en EE.UU., sin cambio"),
+    "EPAM": (None, (2.65, 2.65), "bottom-up de Computer Services, sin cambio"),
+    "PYPL": (None, (1.42, 1.42), "patrimonio de Financial Svcs. en EE.UU., sin cambio"),
+    "GOOG": (None, (1.1537, 1.12), "por ingresos (Advertising y Software), sin cambio"),
+    "ZTS": (None, (0.91, 0.91), "bottom-up de Drugs (Pharmaceutical), sin cambio"),
     "SHAK": (1.25, (1.51, 1.51), "bottom-up de Restaurant/Dining en EE.UU. reapalancada con los arrendamientos, sin primas "
                                  "por tamaño, concepto ni márgenes finos"),
 }
@@ -55,11 +68,11 @@ def nota(tk: str) -> str:
         s2c += f" (antes {es(s0[0])})" if s0[0] == s0[1] else f" (antes {es(s0[0])} y {es(s0[1])})"
     return (f"<strong>Actualización del 5 de octubre de 2026.</strong> Las tablas de auditoría y de supuestos de este informe "
             f"son la instantánea de la hoja a la fecha del informe y pueden mostrar una beta, un costo de capital o un "
-            f"ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta bottom-up del sector, sin primas por "
-            f"riesgos diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el "
+            f"ventas/capital anteriores. Tras la revisión con criterio Damodaran (beta del negocio sin primas por riesgos "
+            f"diversificables, que ya están en las historias; ventas/capital contrastado con el de la empresa, el "
             f"marginal y el del sector), la hoja usa {beta}, costo de capital inicial {pct(d['wacc0'])} y terminal "
             f"{pct(d['tasaTerminal'])}, y {s2c}. DCF Base US${es(a['valor_beta_hoja'])} por acción y DCF esperado "
-            f"US${es(r['valor_esperado_beta_hoja'])}. Las cifras vigentes están en la sección de historias Damodaran y en la "
+            f"US${es(r['valor_esperado_beta_hoja'])}, con un precio de referencia de US${es(r['precio'])}. Las cifras vigentes están en la sección de historias Damodaran y en la "
             f"valoración.")
 
 

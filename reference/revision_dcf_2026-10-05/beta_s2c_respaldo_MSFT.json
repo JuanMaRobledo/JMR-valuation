@@ -1,0 +1,12 @@
+{
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(US)",
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (MSFT, 5-oct-2026)"
+ },
+ "Input sheet!B33": {
+  "before": 0.7,
+  "after": 0.9411,
+  "reason": "Revisión de beta y ventas/capital con criterio Damodaran (MSFT, 5-oct-2026)"
+ }
+}

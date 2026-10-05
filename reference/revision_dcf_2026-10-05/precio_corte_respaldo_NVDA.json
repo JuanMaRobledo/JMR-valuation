@@ -1,0 +1,17 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 228.38,
+  "reason": "Precio y fecha de corte (NVDA)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Precio y fecha de corte (NVDA)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 225.07,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio de corte (NVDA)"
+ }
+}

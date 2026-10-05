@@ -1063,7 +1063,8 @@ def tabla_s2c(r: dict, W) -> None:
     s1, s2 = x["usada"]
     r1, r2 = x["rendimiento_capital_nuevo"]
     rows = [["Empresa hoy", es(x["actual"], 2), f"ventas LTM {mn(x['ventas_ltm'], 1)} / capital invertido {mn(x['capital_ltm'], 1)} millones"
-             + (" (con I+D capitalizado a " + str(x["vida_id"]) + " años)" if x.get("con_id") else "")],
+             + (" (con I+D capitalizado a " + str(x["vida_id"]) + " años)" if x.get("con_id") else "")
+             + (f"; {x['ajuste']}" if x.get("ajuste") else "")],
             ["Marginal, último año", m1[0], m1[1]],
             ["Marginal, últimos tres años", m3[0], m3[1]],
             ["Sector (Damodaran, enero de 2026)", es(x["sector"], 2) if x.get("sector") else "—",
@@ -1076,7 +1077,7 @@ def tabla_s2c(r: dict, W) -> None:
                 "necesitó hasta ahora y del que necesita su sector. Lo sostiene solo si el ROIC lo respalda (control de la p. 45).")
     elif refs and max(s1, s2) < min(refs) * 0.95:
         lect = ("El usado está por debajo de todas las referencias: es prudente (más reinversión por dólar de crecimiento); "
-                "viene del control de la p. 45, que no deja que el capital nuevo rinda más que el ROIC actual o el de su industria.")
+                "la nota de la hoja (Input sheet B32-B33) explica por qué.")
     else:
         lect = "El usado está dentro del rango de las referencias."
     W.p("**Ventas/capital: las referencias de Damodaran.** Damodaran elige el ventas/capital mirando el de la empresa hoy, "
