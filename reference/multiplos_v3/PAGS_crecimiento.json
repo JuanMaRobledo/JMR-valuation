@@ -1,13 +1,13 @@
 {
  "fecha": "2026-10-06",
  "umbral": 0.02,
- "precio": 8.9,
+ "precio": 10.725,
  "dcfHoy": 15.972354954477444,
  "dcfInverso": {
-  "gImplicito": null,
+  "gImplicito": -0.1638038565267263,
   "gDcf": 0.057999999999999996,
-  "dif": null,
-  "lectura": "Ningún crecimiento entre −20% y 80% justifica el precio con estos márgenes."
+  "dif": -0.2218038565267263,
+  "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
  },
  "gDcf": {
   "anios4a10": 0.05695714285714286,

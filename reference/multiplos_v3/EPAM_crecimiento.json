@@ -1,12 +1,12 @@
 {
  "fecha": "2026-10-06",
  "umbral": 0.02,
- "precio": 108.36,
+ "precio": 108.57,
  "dcfHoy": 190.88931093137154,
  "dcfInverso": {
-  "gImplicito": -0.07432236442848034,
+  "gImplicito": -0.07383505233939797,
   "gDcf": 0.05540075364990678,
-  "dif": -0.1297231180783871,
+  "dif": -0.12923580598930473,
   "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
  },
  "gDcf": {

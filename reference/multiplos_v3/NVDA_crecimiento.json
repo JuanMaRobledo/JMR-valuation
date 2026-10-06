@@ -1,12 +1,12 @@
 {
  "fecha": "2026-10-06",
  "umbral": 0.02,
- "precio": 228.38,
+ "precio": 241.71001,
  "dcfHoy": 222.0943086888792,
  "dcfInverso": {
-  "gImplicito": 0.23675491118434533,
+  "gImplicito": 0.24766849017336778,
   "gDcf": 0.179369600512541,
-  "dif": 0.05738531067180433,
+  "dif": 0.06829888966082678,
   "lectura": "El precio supone más crecimiento que el DCF: mercado optimista o DCF conservador."
  },
  "gDcf": {
