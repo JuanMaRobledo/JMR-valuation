@@ -15,11 +15,14 @@ Primero pregunta solo lo indispensable y elige el modo según lo que pidió el u
 A, B y C en ese orden.
 
 ## A. Posiciones (compras y ventas)
-1. Descarga la hoja «Seguimiento de cartera» (Drive, id `1P3yzgr-RXJU6fFGuVPw0_JLQMwh_khGWuAZsZmft7kM`) como .xlsx con el
-   conector de Google Drive (`download_file_content`, exportMimeType xlsx) y guárdala en el scratchpad. Si la cuenta de
-   servicio ya tiene acceso de lector, omite la descarga.
-2. `python3 scripts/posiciones_cartera.py --xlsx <archivo>` → `reference/cartera_compras_<hoy>.json`. Revisa la lista
-   (empresas sin posición, cantidades).
+1. Fuente principal: la app Cartera. Si existen `CARTERA_URL` y `CARTERA_EXPORT_TOKEN` en el entorno,
+   `python3 scripts/posiciones_cartera.py --app` lee `GET <CARTERA_URL>/api/export` (solo lectura) y escribe
+   `reference/cartera_compras_<hoy>.json`. Si no existen, pide al usuario el JSON del menú «Exportar cartera → Cartera
+   completa (JSON)» del panel de la app y corre `python3 scripts/posiciones_cartera.py --json <archivo>`.
+   Respaldo, solo si la app no está disponible: descarga la hoja «Seguimiento de cartera» (Drive, id
+   `1P3yzgr-RXJU6fFGuVPw0_JLQMwh_khGWuAZsZmft7kM`) como .xlsx con el conector de Google Drive (`download_file_content`,
+   exportMimeType xlsx) y corre `python3 scripts/posiciones_cartera.py --xlsx <archivo>`.
+2. Revisa la lista que imprime (empresas sin posición, cantidades, costo promedio) y la línea «fuente» del JSON.
 3. `python3 scripts/posicion_cartera.py --apply <tickers>` (bloque «Mi posición», 'Resumen de Valoración'!A50:E60).
 4. `bash scripts/regenerar_cartera.sh <tickers>` (la app guarda el campo `posicion`).
 Si el usuario compró una empresa que no está en las 22, avísale y ofrece un análisis nuevo (habilidad analisis-nuevo).

@@ -3,7 +3,7 @@
 
 La fecha y el precio del análisis (B4, C25) son los del corte y los escribe scripts/aplicar_corte.py; este script solo
 escribe la posición. 'Resumen de Valoración'!A50:E60 («Mi posición en cartera»): acciones, costo promedio de compra y primera compra
-   (el reference/cartera_compras_<fecha>.json más reciente, de scripts/posiciones_cartera.py) y la ganancia potencial sobre
+   (el reference/cartera_compras_<fecha>.json más reciente, de scripts/posiciones_cartera.py: app Cartera o Drive) y la ganancia potencial sobre
    ese costo hasta el precio del análisis, el DCF Base, el DCF esperado y el precio con MOS (fórmulas vivas).
 Respaldo en reference/revision_dcf_2026-10-05/posicion_respaldo_<T>.json.
 
@@ -30,10 +30,11 @@ RS = "Resumen de Valoración"
 HOY = ("=IFERROR(GOOGLEFINANCE(IFERROR(REGEXEXTRACT('Input sheet'!A1;\"\\(([^)]+)\\)\");'Input sheet'!A1);\"price\");\"\")")
 
 
-def bloque(c: dict, fecha: str = "") -> dict:
+def bloque(c: dict, fecha: str = "", fuente: str = "") -> dict:
     b = {f"{col}{r}": "" for r in range(50, 61) for col in "ABCDE"}
     b["A50"] = "MI POSICIÓN EN CARTERA"
-    b["B50"] = f"Fuente: «Seguimiento de cartera» (Google Drive), posiciones al {fecha}"
+    origen = "app Cartera" if fuente.startswith("app Cartera") else "«Seguimiento de cartera» (Google Drive)"
+    b["B50"] = f"Fuente: {origen}, posiciones al {fecha}"
     if not c["en_cartera"]:
         b["A51"] = f"Sin posición en cartera ({c['nota']})."
         return b
@@ -69,7 +70,7 @@ def main(argv: list[str]) -> int:
     for tk in [a for a in argv if not a.startswith("--")] or sorted(datos):
         sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())["sheet_id"]
         sh = ms.open_sheet(sid)
-        b = bloque(datos[tk], compras["fecha"])
+        b = bloque(datos[tk], compras["fecha"], compras.get("fuente", ""))
         print(f"{tk:5s} posición: "
               + (f"{datos[tk]['cantidad']:g} acc. a US${datos[tk]['costo_promedio']}" if datos[tk]["en_cartera"] else "no"))
         if not apply:
