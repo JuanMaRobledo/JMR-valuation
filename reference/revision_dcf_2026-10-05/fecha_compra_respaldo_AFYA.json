@@ -1,0 +1,22 @@
+{
+ "Input sheet!B23": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "=D1",
+  "reason": "Precio del modelo = D1 (AFYA)"
+ },
+ "Resumen de Valoración!B3": {
+  "before": "='Input sheet'!B23",
+  "after": "=C25",
+  "reason": "Precio del análisis = C25 (AFYA)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;2;25)",
+  "reason": "Fecha del análisis = primera compra (AFYA)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 12.04,
+  "after": 13.75,
+  "reason": "Precio del análisis (AFYA)"
+ }
+}

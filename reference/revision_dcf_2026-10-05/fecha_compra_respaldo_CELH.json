@@ -1,0 +1,12 @@
+{
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;3;6)",
+  "reason": "Fecha del análisis = primera compra (CELH)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 28.45,
+  "after": 42.0,
+  "reason": "Precio del análisis (CELH)"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "Input sheet!B23": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "=D1",
+  "reason": "Precio del modelo = D1 (MSFT)"
+ },
+ "Resumen de Valoración!B3": {
+  "before": "='Input sheet'!B23",
+  "after": "=C25",
+  "reason": "Precio del análisis = C25 (MSFT)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;4;7)",
+  "reason": "Fecha del análisis = primera compra (MSFT)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 512.9,
+  "after": 370.14,
+  "reason": "Precio del análisis (MSFT)"
+ }
+}

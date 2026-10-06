@@ -1,0 +1,22 @@
+{
+ "Tesis de Inversión y Supuestos!A2": {
+  "before": "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "after": "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Input sheet'!D1;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "reason": "Textos con el precio de mercado (GOOG)"
+ },
+ "Tesis de Inversión y Supuestos!B29": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "='Input sheet'!D1",
+  "reason": "Textos con el precio de mercado (GOOG)"
+ },
+ "Tesis de Inversión y Supuestos!A34": {
+  "before": "=\"A US$\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\", Alphabet cotiza por ENCIMA de su DCF Base (US$\"&TEXT('Valuation output'!B35;\"0.00\")&\", \"&TEXT('Valuation output'!B35/'Resumen de Valoración'!C25-1;\"+0%;-0%\")&\") y del precio objetivo ponderado Base (US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\"): el caso Base de este modelo, deliberadamente conservador (sin apostar a una aceleración adicional de Cloud/IA), no justifica el precio actual por sí solo. El escenario Optimista (US$\"&TEXT('Valuation output'!B137;\"0.00\")&\") sí se acerca al precio de mercado: la tesis alcista necesita que Google Cloud y la monetización de IA generativa aceleren más rápido que el caso Base, no solo que se sostengan.\"",
+  "after": "=\"A US$\"&TEXT('Input sheet'!D1;\"0.00\")&\", Alphabet cotiza por ENCIMA de su DCF Base (US$\"&TEXT('Valuation output'!B35;\"0.00\")&\", \"&TEXT('Valuation output'!B35/'Input sheet'!D1-1;\"+0%;-0%\")&\") y del precio objetivo ponderado Base (US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\"): el caso Base de este modelo, deliberadamente conservador (sin apostar a una aceleración adicional de Cloud/IA), no justifica el precio actual por sí solo. El escenario Optimista (US$\"&TEXT('Valuation output'!B137;\"0.00\")&\") sí se acerca al precio de mercado: la tesis alcista necesita que Google Cloud y la monetización de IA generativa aceleren más rápido que el caso Base, no solo que se sostengan.\"",
+  "reason": "Textos con el precio de mercado (GOOG)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 345.71,
+  "after": 340.74,
+  "reason": "Precio del análisis (GOOG)"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "Input sheet!B23": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "=D1",
+  "reason": "Precio del modelo = D1 (NVO)"
+ },
+ "Resumen de Valoración!B3": {
+  "before": "='Input sheet'!B23",
+  "after": "=C25",
+  "reason": "Precio del análisis = C25 (NVO)"
+ },
+ "Tesis de Inversión y Supuestos!D29": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "='Input sheet'!D1",
+  "reason": "Textos con el precio de mercado (NVO)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;2;25)",
+  "reason": "Fecha del análisis = primera compra (NVO)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 37.91,
+  "after": 38.0,
+  "reason": "Precio del análisis (NVO)"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "Input sheet!B23": {
+  "before": "=LET(hist;GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(([^)]+)\\)\");\"close\";B4-7;B4);INDEX(hist;ROWS(hist);2))",
+  "after": "=D1",
+  "reason": "Precio del modelo = D1 (UBER)"
+ },
+ "Resumen de Valoración!B3": {
+  "before": "='Input sheet'!B23",
+  "after": "=C25",
+  "reason": "Precio del análisis = C25 (UBER)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;1;20)",
+  "reason": "Fecha del análisis = primera compra (UBER)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": "=$B$3",
+  "after": 83.4396,
+  "reason": "Precio del análisis (UBER)"
+ }
+}

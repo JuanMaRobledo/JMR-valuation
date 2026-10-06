@@ -1,0 +1,22 @@
+{
+ "Tesis de Inversión y Supuestos!A2": {
+  "before": "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "after": "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Input sheet'!D1;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "reason": "Textos con el precio de mercado (INTU)"
+ },
+ "Tesis de Inversión y Supuestos!B29": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "='Input sheet'!D1",
+  "reason": "Textos con el precio de mercado (INTU)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;7;29)",
+  "reason": "Fecha del análisis = primera compra (INTU)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 275.79,
+  "after": 331.2895,
+  "reason": "Precio del análisis (INTU)"
+ }
+}

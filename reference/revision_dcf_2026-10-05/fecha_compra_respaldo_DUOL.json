@@ -1,0 +1,32 @@
+{
+ "Input sheet!B23": {
+  "before": "=IF(OR(A1=\"\";NOT(ISNUMBER(B4)));\"\";IFERROR(LET(h;GOOGLEFINANCE(IFERROR(REGEXEXTRACT(A1;\"\\(([^)]+)\\)\");A1);\"close\";B4-7;B4);INDEX(h;ROWS(h);2));\"\"))",
+  "after": "=D1",
+  "reason": "Precio del modelo = D1 (DUOL)"
+ },
+ "Input sheet!A23": {
+  "before": "Cierre histórico a la fecha del análisis =",
+  "after": "Precio de mercado del corte (cierre del 30-sep-2026) =",
+  "reason": "Etiqueta del precio del corte (DUOL)"
+ },
+ "Input sheet!C23": {
+  "before": "=IF(OR(A1=\"\";NOT(ISNUMBER(B4)));\"\";IFERROR(LET(h;GOOGLEFINANCE(IFERROR(REGEXEXTRACT(A1;\"\\(([^)]+)\\)\");A1);\"close\";B4-7;B4);INDEX(h;ROWS(h);1));\"\"))",
+  "after": "=DATE(2026;9;30)",
+  "reason": "Etiqueta del precio del corte (DUOL)"
+ },
+ "Resumen de Valoración!B3": {
+  "before": "='Input sheet'!B23",
+  "after": "=C25",
+  "reason": "Precio del análisis = C25 (DUOL)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;2;17)",
+  "reason": "Fecha del análisis = primera compra (DUOL)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": "=$B$3",
+  "after": 113.37,
+  "reason": "Precio del análisis (DUOL)"
+ }
+}

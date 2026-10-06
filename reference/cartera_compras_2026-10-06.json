@@ -1,0 +1,289 @@
+{
+ "fecha": "2026-10-06",
+ "fuente": "Google Drive, 'Seguimiento de cartera' (pestañas Transacciones y Posiciones, actualizada el 25-sep-2026; precios al 5-oct-2026)",
+ "empresas": {
+  "ADBE": {
+   "en_cartera": true,
+   "primera_compra": "2025-12-03",
+   "precio_primera_compra": 324.63,
+   "cantidad": 7.98426,
+   "costo_promedio": 264.13,
+   "compras": [
+    "2025-12-03",
+    "2026-01-09",
+    "2026-01-14",
+    "2026-01-22",
+    "2026-02-20",
+    "2026-03-13",
+    "2026-07-01"
+   ],
+   "cuentas": [
+    "Hapi",
+    "Interactive Brokers"
+   ]
+  },
+  "AFYA": {
+   "en_cartera": true,
+   "primera_compra": "2026-02-25",
+   "precio_primera_compra": 13.75,
+   "cantidad": 20,
+   "costo_promedio": 13.7664,
+   "compras": [
+    "2026-02-25"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "BSX": {
+   "en_cartera": true,
+   "primera_compra": "2026-08-07",
+   "precio_primera_compra": 49.5025,
+   "cantidad": 12,
+   "costo_promedio": 49.5621,
+   "compras": [
+    "2026-08-07"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "CELH": {
+   "en_cartera": true,
+   "primera_compra": "2026-03-06",
+   "precio_primera_compra": 42.0,
+   "cantidad": 30,
+   "costo_promedio": 32.9525,
+   "compras": [
+    "2026-03-06",
+    "2026-03-23",
+    "2026-03-25",
+    "2026-07-09",
+    "2026-08-06"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "CMG": {
+   "en_cartera": true,
+   "primera_compra": "2026-03-27",
+   "precio_primera_compra": 30.915,
+   "cantidad": 10,
+   "costo_promedio": 30.9502,
+   "compras": [
+    "2026-03-27"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "DPZ": {
+   "en_cartera": true,
+   "primera_compra": "2026-07-29",
+   "precio_primera_compra": 363.6595,
+   "cantidad": 1,
+   "costo_promedio": 364.01,
+   "compras": [
+    "2026-07-29"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "DUOL": {
+   "en_cartera": true,
+   "primera_compra": "2026-02-17",
+   "precio_primera_compra": 113.37,
+   "cantidad": 7.44245,
+   "costo_promedio": 107.9321,
+   "compras": [
+    "2026-02-17",
+    "2026-02-20",
+    "2026-02-27"
+   ],
+   "cuentas": [
+    "Hapi",
+    "Interactive Brokers"
+   ]
+  },
+  "EPAM": {
+   "en_cartera": true,
+   "primera_compra": "2026-04-07",
+   "precio_primera_compra": 135.93,
+   "cantidad": 4,
+   "costo_promedio": 110.6103,
+   "compras": [
+    "2026-04-07",
+    "2026-07-01"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "GOOG": {
+   "en_cartera": false,
+   "nota": "sin posición al 5-oct-2026 (última operación 2026-01-08 venta)"
+  },
+  "INTU": {
+   "en_cartera": true,
+   "primera_compra": "2026-07-29",
+   "precio_primera_compra": 331.2895,
+   "cantidad": 1,
+   "costo_promedio": 331.64,
+   "compras": [
+    "2026-07-29"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "LULU": {
+   "en_cartera": true,
+   "primera_compra": "2026-03-06",
+   "precio_primera_compra": 170.0414,
+   "cantidad": 4,
+   "costo_promedio": 145.0537,
+   "compras": [
+    "2026-03-06",
+    "2026-03-27",
+    "2026-08-07"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "MSFT": {
+   "en_cartera": true,
+   "primera_compra": "2026-04-07",
+   "precio_primera_compra": 370.14,
+   "cantidad": 2,
+   "costo_promedio": 363.1798,
+   "compras": [
+    "2026-04-07",
+    "2026-06-25"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "NKE": {
+   "en_cartera": true,
+   "primera_compra": "2026-04-01",
+   "precio_primera_compra": 47.29,
+   "cantidad": 8,
+   "costo_promedio": 47.3322,
+   "compras": [
+    "2026-04-01"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "NVDA": {
+   "en_cartera": false,
+   "nota": "sin posición al 5-oct-2026 (sin operaciones)"
+  },
+  "NVO": {
+   "en_cartera": true,
+   "primera_compra": "2026-02-25",
+   "precio_primera_compra": 38.0,
+   "cantidad": 20.4,
+   "costo_promedio": 37.9943,
+   "compras": [
+    "2026-02-25",
+    "2026-03-11",
+    "2026-03-13",
+    "2026-03-23"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "ONON": {
+   "en_cartera": true,
+   "primera_compra": "2026-08-12",
+   "precio_primera_compra": 30.745,
+   "cantidad": 15,
+   "costo_promedio": 30.7686,
+   "compras": [
+    "2026-08-12"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "PAGS": {
+   "en_cartera": true,
+   "primera_compra": "2026-04-07",
+   "precio_primera_compra": 10.34,
+   "cantidad": 20,
+   "costo_promedio": 10.3559,
+   "compras": [
+    "2026-04-07"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "PLTR": {
+   "en_cartera": false,
+   "nota": "sin posición al 5-oct-2026 (última operación 2026-08-07 compra)"
+  },
+  "PYPL": {
+   "en_cartera": true,
+   "primera_compra": "2026-02-25",
+   "precio_primera_compra": 47.6785,
+   "cantidad": 11,
+   "costo_promedio": 46.9476,
+   "compras": [
+    "2026-02-25",
+    "2026-03-06",
+    "2026-03-13"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "SHAK": {
+   "en_cartera": true,
+   "primera_compra": "2026-07-10",
+   "precio_primera_compra": 59.1897,
+   "cantidad": 6,
+   "costo_promedio": 59.2482,
+   "compras": [
+    "2026-07-10"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "UBER": {
+   "en_cartera": true,
+   "primera_compra": "2026-01-20",
+   "precio_primera_compra": 83.4396,
+   "cantidad": 6,
+   "costo_promedio": 76.5181,
+   "compras": [
+    "2026-01-20",
+    "2026-07-24"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  },
+  "ZTS": {
+   "en_cartera": true,
+   "primera_compra": "2026-08-07",
+   "precio_primera_compra": 72.52,
+   "cantidad": 5,
+   "costo_promedio": 72.5903,
+   "compras": [
+    "2026-08-07"
+   ],
+   "cuentas": [
+    "Interactive Brokers"
+   ]
+  }
+ }
+}
