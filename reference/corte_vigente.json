@@ -1,0 +1,53 @@
+{
+ "fecha_corte": "2026-09-30",
+ "fecha_corte_es": "30-sep-2026",
+ "rf": 0.0529,
+ "rf_fecha": "2026-09-30",
+ "rf_fuente": "FRED DGS10 (Treasury a 10 años)",
+ "erp_madura": 0.037,
+ "erp_mes": "octubre de 2026",
+ "erp_mes_corto": "oct-2026",
+ "erp_archivo": "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx",
+ "erp_rf_damodaran": 0.0529,
+ "costo_capital_terminal": 0.0899,
+ "terminal_brasil": {
+  "AFYA": 0.1072,
+  "PAGS": 0.1191
+ },
+ "spread_brasil": {
+  "AFYA": 0.0173,
+  "PAGS": 0.0292
+ },
+ "obtenido": "2026-10-06T11:31:18",
+ "avisos": [],
+ "cierres": {
+  "ADBE": 239.94,
+  "AFYA": 12.04,
+  "BSX": 43.65,
+  "CELH": 27.35,
+  "CMG": 31.95,
+  "DPZ": 299.61,
+  "DUOL": 142.4,
+  "EPAM": 108.36,
+  "GOOG": 340.74,
+  "INTU": 275.71,
+  "LULU": 95.86,
+  "MSFT": 512.9,
+  "NKE": 35.15,
+  "NVDA": 228.38,
+  "NVO": 37.91,
+  "ONON": 30.2,
+  "PAGS": 8.9,
+  "PLTR": 187.05,
+  "PYPL": 52.53,
+  "SHAK": 58.68,
+  "UBER": 68.51,
+  "ZTS": 69.83
+ },
+ "excepciones": {
+  "LULU": "2026-10-01",
+  "NKE": "2026-10-01",
+  "ONON": "2026-10-01",
+  "nota": "Cierre del 1-oct-2026 (su corte documentado); el próximo corte las alinea con el resto."
+ }
+}

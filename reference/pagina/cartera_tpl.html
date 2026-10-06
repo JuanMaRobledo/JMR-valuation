@@ -1,0 +1,190 @@
+<title>Cartera Modelo JMR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Libro de valoraciones: encabezado con los parámetros comunes, luego una fila por empresa con cifras, rango de historias y enlaces */
+:root {
+  --bg: #f4f6f8;
+  --panel: #ffffff;
+  --ink: #17212b;
+  --muted: #5b6876;
+  --line: #d9dfe5;
+  --accent: #1d5f8a;
+  --good: #1f7a4d;
+  --warn: #a0640c;
+  --bad: #b23b3b;
+  --track: #e6ebf0;
+  --f-disp: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-num: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f151b; --panel: #161e26; --ink: #e5ebf0; --muted: #98a5b2; --line: #26313c;
+    --accent: #6fb2dc; --good: #5cc28f; --warn: #e0a53f; --bad: #ec7d7d; --track: #22303c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f151b; --panel: #161e26; --ink: #e5ebf0; --muted: #98a5b2; --line: #26313c;
+  --accent: #6fb2dc; --good: #5cc28f; --warn: #e0a53f; --bad: #ec7d7d; --track: #22303c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; display: grid; gap: 24px; }
+header { display: grid; gap: 10px; }
+.eyebrow { font-family: var(--f-num); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--f-disp); font-weight: 700; font-size: clamp(30px, 5vw, 44px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 68ch; margin: 0; }
+.params { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 14px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+.param { display: grid; gap: 2px; min-width: 0; }
+.param b { font-family: var(--f-num); font-weight: 500; font-size: 17px; font-variant-numeric: tabular-nums; }
+.param span { font-size: 12px; color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 500 13px var(--f-body); padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+.chip:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+label.sort { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+select { font: 14px var(--f-body); padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--muted); }
+.legend i { display: inline-block; vertical-align: middle; margin-right: 6px; }
+.k-base { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+.k-ve { width: 9px; height: 9px; background: var(--ink); transform: rotate(45deg); }
+.k-px { width: 2px; height: 14px; background: var(--warn); }
+.list { display: grid; gap: 10px; }
+.row { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 2fr); gap: 14px 24px; }
+.id { display: grid; gap: 4px; min-width: 0; }
+.id .tk { font-family: var(--f-disp); font-weight: 700; font-size: 22px; letter-spacing: .02em; }
+.id .nm { font-weight: 600; }
+.id .fr { color: var(--muted); font-size: 13.5px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 4px; font-size: 13.5px; }
+.links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.links a:hover { border-bottom-color: var(--accent); }
+.nums { display: grid; gap: 12px; min-width: 0; }
+.figs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.fig { display: grid; gap: 1px; min-width: 0; }
+.fig span { font-size: 11.5px; color: var(--muted); letter-spacing: .03em; text-transform: uppercase; }
+.fig b { font-family: var(--f-num); font-weight: 500; font-size: 15.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pill { justify-self: start; font: 500 12.5px var(--f-num); padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; }
+.pill.good { color: var(--good); } .pill.warn { color: var(--warn); } .pill.bad { color: var(--bad); }
+.bar { position: relative; height: 26px; }
+.bar .tr { position: absolute; left: 0; right: 0; top: 11px; height: 4px; background: var(--track); border-radius: 2px; }
+.bar .rg { position: absolute; top: 9px; height: 8px; background: color-mix(in srgb, var(--accent) 28%, transparent); border-radius: 4px; }
+.bar .mb { position: absolute; top: 8px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--accent); }
+.bar .mv { position: absolute; top: 9px; width: 8px; height: 8px; margin-left: -4px; background: var(--ink); transform: rotate(45deg); }
+.bar .mp { position: absolute; top: 4px; width: 2px; height: 18px; margin-left: -1px; background: var(--warn); }
+.meta { font-size: 12.5px; color: var(--muted); font-family: var(--f-num); font-variant-numeric: tabular-nums; }
+footer { font-size: 13px; color: var(--muted); display: grid; gap: 6px; max-width: 80ch; }
+@media (max-width: 760px) {
+  .row { grid-template-columns: minmax(0, 1fr); }
+  .figs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: no-preference) { .chip, .links a { transition: background .15s, border-color .15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Modelo JMR · valoraciones con criterio Damodaran</div>
+    <h1>Cartera Modelo JMR</h1>
+    <p class="lede">Las 22 valoraciones al corte del 30 de septiembre de 2026, leídas de sus hojas de cálculo. El DCF Base es el valor intrínseco principal; el esperado pondera las cuatro historias por su probabilidad. Cada fila enlaza a sus documentos en Drive y a la hoja.</p>
+    <div class="params" aria-label="Parámetros comunes">
+      <div class="param"><b>30-sep-2026</b><span>Corte y precios</span></div>
+      <div class="param"><b>5,29%</b><span>Tasa libre (UST 10 años)</span></div>
+      <div class="param"><b>3,70%</b><span>Prima madura, Damodaran oct-2026</span></div>
+      <div class="param"><b>8,99%</b><span>Costo de capital terminal</span></div>
+      <div class="param"><b id="n-emp">22</b><span>Empresas</span></div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="chips" role="group" aria-label="Filtrar">
+      <button class="chip" id="f-todas" aria-pressed="true" data-f="todas">Todas</button>
+      <button class="chip" id="f-bajo" aria-pressed="false" data-f="bajo">Precio bajo el DCF Base</button>
+      <button class="chip" id="f-sobre" aria-pressed="false" data-f="sobre">Precio sobre el DCF Base</button>
+    </div>
+    <label class="sort" for="orden">Ordenar
+      <select id="orden">
+        <option value="desc">Descuento frente al DCF Base</option>
+        <option value="tk">Ticker</option>
+        <option value="mos">Distancia al precio con MOS</option>
+      </select>
+    </label>
+  </div>
+  <div class="legend"><span><i class="k-base"></i>DCF Base</span><span><i class="k-ve"></i>DCF esperado</span><span><i class="k-px"></i>Precio de corte</span><span>Banda: rango de las cuatro historias</span></div>
+
+  <div class="list" id="lista"></div>
+
+  <footer>
+    <span>«DCF Base anterior»: el de la versión publicada antes de esta actualización (rama principal del repositorio).</span>
+    <span>Precio sobre o bajo el DCF Base: precio de corte ÷ DCF Base − 1. Precio con MOS: el esperado menos el margen de seguridad de cada empresa.</span>
+    <span>Fuente: hojas de cálculo del Modelo JMR (Input sheet, Cost of capital worksheet y Escenarios e historias). Precios: cierre del día del corte.</span>
+  </footer>
+</div>
+
+<script>
+const DATA = /*DATA*/[];
+const fmt = (x, d = 2) => x == null ? "—" : x.toLocaleString("es-ES", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (x, d = 1) => x == null ? "—" : (x * 100).toLocaleString("es-ES", { minimumFractionDigits: d, maximumFractionDigits: d }) + "%";
+let filtro = "todas", orden = "desc";
+try { orden = localStorage.getItem("jmr-orden") || orden; } catch (e) {}
+document.getElementById("orden").value = orden;
+
+function fila(r) {
+  const gap = r.precio / r.base - 1;
+  const cls = gap <= -0.15 ? "good" : gap <= 0.15 ? "warn" : "bad";
+  const txt = gap < 0 ? `${pct(-gap, 0)} bajo el DCF Base` : `${pct(gap, 0)} sobre el DCF Base`;
+  const lo = Math.min(r.min, r.precio) * 0.9, hi = Math.max(r.max, r.precio) * 1.06;
+  const x = v => ((v - lo) / (hi - lo) * 100).toFixed(2) + "%";
+  const links = r.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.lab}</a>`).join("")
+    + (r.hoja ? `<a href="${r.hoja}" target="_blank" rel="noopener">Hoja de cálculo</a>` : "");
+  return `<article class="row">
+    <div class="id">
+      <div class="tk">${r.t}</div>
+      <div class="nm">${r.nombre}</div>
+      <div class="fr">${r.frase}</div>
+      <nav class="links" aria-label="Documentos de ${r.t}">${links}</nav>
+    </div>
+    <div class="nums">
+      <div class="figs">
+        <div class="fig"><span>Precio</span><b>${fmt(r.precio)}</b></div>
+        <div class="fig"><span>DCF Base</span><b>${fmt(r.base)}</b></div>
+        <div class="fig"><span>Esperado</span><b>${fmt(r.ve)}</b></div>
+        <div class="fig"><span>Con MOS</span><b>${fmt(r.mos)}</b></div>
+        <div class="fig"><span>Historias</span><b>${fmt(r.min, 0)}–${fmt(r.max, 0)}</b></div>
+      </div>
+      <span class="pill ${cls}">${txt}</span>
+      <div class="bar" role="img" aria-label="Rango de historias de ${fmt(r.min)} a ${fmt(r.max)}; DCF Base ${fmt(r.base)}; esperado ${fmt(r.ve)}; precio ${fmt(r.precio)}">
+        <div class="tr"></div>
+        <div class="rg" style="left:${x(r.min)};width:calc(${x(r.max)} - ${x(r.min)})"></div>
+        <div class="mb" style="left:${x(r.base)}"></div>
+        <div class="mv" style="left:${x(r.ve)}"></div>
+        <div class="mp" style="left:${x(r.precio)}"></div>
+      </div>
+      ${r.pos ? `<div class="meta">Tu posición: ${fmt(r.pos.acciones, 2)} acc. a ${fmt(r.pos.costoPromedio)} · hoy ${fmt(r.pos.precioHoyHoja)} (${pct(r.pos.precioHoyHoja / r.pos.costoPromedio - 1)}) · hasta el DCF Base: ${pct(r.base / r.pos.precioHoyHoja - 1)} desde hoy, ${pct(r.base / r.pos.costoPromedio - 1)} desde tu compra</div>` : ""}
+      <div class="meta">beta ${fmt(r.beta)} · ${r.fin ? "Ke" : "WACC"} ${pct(r.w0, 2)} → ${pct(r.wT, 2)} · DCF Base anterior ${fmt(r.antes)} (${r.base >= r.antes ? "+" : "−"}${pct(Math.abs(r.base / r.antes - 1), 1)}) · US$ por acción</div>
+    </div>
+  </article>`;
+}
+function pinta() {
+  let rows = DATA.slice();
+  if (filtro === "bajo") rows = rows.filter(r => r.precio < r.base);
+  if (filtro === "sobre") rows = rows.filter(r => r.precio >= r.base);
+  if (orden === "tk") rows.sort((a, b) => a.t.localeCompare(b.t));
+  else if (orden === "mos") rows.sort((a, b) => (a.precio / a.mos) - (b.precio / b.mos));
+  else rows.sort((a, b) => (a.precio / a.base) - (b.precio / b.base));
+  document.getElementById("lista").innerHTML = rows.map(fila).join("");
+  document.getElementById("n-emp").textContent = DATA.length;
+}
+document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+  filtro = b.dataset.f;
+  document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === b)));
+  pinta();
+}));
+document.getElementById("orden").addEventListener("change", e => {
+  orden = e.target.value;
+  try { localStorage.setItem("jmr-orden", orden); } catch (err) {}
+  pinta();
+});
+pinta();
+</script>

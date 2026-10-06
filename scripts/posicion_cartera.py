@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 """Fecha del análisis real y bloque «Mi posición» en el Resumen (6-oct-2026).
 
-1. 'Input sheet'!B4 vuelve a la fecha real del análisis (el corte de la valoración: 30-sep-2026; LULU, NKE y ONON
-   1-oct-2026) y 'Resumen de Valoración'!C25 al precio de ese día ('Input sheet'!D1). B23 sigue = D1 y B3 = C25.
-2. 'Resumen de Valoración'!A50:E60 («Mi posición en cartera»): acciones, costo promedio de compra y primera compra
-   (reference/cartera_compras_2026-10-06.json, hoja «Seguimiento de cartera» de Drive) y la ganancia potencial sobre
+La fecha y el precio del análisis (B4, C25) son los del corte y los escribe scripts/aplicar_corte.py; este script solo
+escribe la posición. 'Resumen de Valoración'!A50:E60 («Mi posición en cartera»): acciones, costo promedio de compra y primera compra
+   (el reference/cartera_compras_<fecha>.json más reciente, de scripts/posiciones_cartera.py) y la ganancia potencial sobre
    ese costo hasta el precio del análisis, el DCF Base, el DCF esperado y el precio con MOS (fórmulas vivas).
 Respaldo en reference/revision_dcf_2026-10-05/posicion_respaldo_<T>.json.
 
@@ -31,10 +30,10 @@ RS = "Resumen de Valoración"
 HOY = ("=IFERROR(GOOGLEFINANCE(IFERROR(REGEXEXTRACT('Input sheet'!A1;\"\\(([^)]+)\\)\");'Input sheet'!A1);\"price\");\"\")")
 
 
-def bloque(c: dict) -> dict:
+def bloque(c: dict, fecha: str = "") -> dict:
     b = {f"{col}{r}": "" for r in range(50, 61) for col in "ABCDE"}
     b["A50"] = "MI POSICIÓN EN CARTERA"
-    b["B50"] = "Fuente: «Seguimiento de cartera» (Google Drive), posiciones al 5-oct-2026"
+    b["B50"] = f"Fuente: «Seguimiento de cartera» (Google Drive), posiciones al {fecha}"
     if not c["en_cartera"]:
         b["A51"] = f"Sin posición en cartera ({c['nota']})."
         return b
@@ -64,25 +63,18 @@ def bloque(c: dict) -> dict:
 
 def main(argv: list[str]) -> int:
     apply = "--apply" in argv
-    datos = json.loads((_ROOT / "reference" / "cartera_compras_2026-10-06.json").read_text())["empresas"]
+    archivo = sorted((_ROOT / "reference").glob("cartera_compras_*.json"))[-1]  # el más reciente (posiciones_cartera.py)
+    compras = json.loads(archivo.read_text())
+    datos = compras["empresas"]
     for tk in [a for a in argv if not a.startswith("--")] or sorted(datos):
         sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())["sheet_id"]
         sh = ms.open_sheet(sid)
-        d1 = sh.values_get("'Input sheet'!D1", params={"valueRenderOption": "UNFORMATTED_VALUE"})["values"][0][0]
-        y, m, d = CORTE.get(tk, (2026, 9, 30))
-        b = bloque(datos[tk])
-        print(f"{tk:5s} B4 = {y}-{m:02d}-{d:02d} | C25 = {d1} | posición: "
+        b = bloque(datos[tk], compras["fecha"])
+        print(f"{tk:5s} posición: "
               + (f"{datos[tk]['cantidad']:g} acc. a US${datos[tk]['costo_promedio']}" if datos[tk]["en_cartera"] else "no"))
         if not apply:
             continue
         bk = OUT / f"posicion_respaldo_{tk}.json"
-        ms.write_with_backup(sh, "Input sheet", {"B4": f"=DATE({y};{m};{d})"}, f"Fecha real del análisis ({tk})", bk)
-        sh.worksheet("Input sheet").update_notes({"B4": f"Fecha real del análisis: corte de la valoración ({d:02d}-{m:02d}-{y}). "
-                                                        "El costo de compra de la posición está en 'Resumen de Valoración'!A50:E60. "
-                                                        "Cambio del 6-oct-2026."})
-        ms.write_with_backup(sh, RS, {"C25": float(d1)}, f"Precio del análisis = cierre del corte ({tk})", bk)
-        sh.worksheet(RS).update_notes({"C25": "Precio del análisis = cierre del día del análisis (corte de la valoración, = "
-                                              "'Input sheet'!D1). Cambio del 6-oct-2026."})
         ms.write_with_backup(sh, RS, b, f"Bloque «Mi posición» ({tk})", bk)
         ws = sh.worksheet(RS)
         ws.format("A50", {"textFormat": {"bold": True}})

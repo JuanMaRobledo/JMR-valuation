@@ -864,6 +864,9 @@ def _cifras(r: dict) -> dict:
          "terminal": pct(dA["pvTerminal"] / (dA["pvFlujos"] + dA["pvTerminal"])), "margenY1": pct(dA.get("margenY1")),
          "s2c1": es(dA.get("s2c") or 0, 2), "s2c2": es(dA.get("s2c2") or 0, 2),
          "cap1": es(1 / dA["s2c"], 2) if dA.get("s2c") else "—", "cap2": es(1 / dA["s2c2"], 2) if dA.get("s2c2") else "—"}
+    corte = json.loads((_ROOT / "reference" / "corte_vigente.json").read_text())  # corte vigente (datos_mercado.py)
+    d["fecha_corte"] = corte["fecha_corte_es"]  # fecha de la tasa libre de riesgo y de la prima
+    d["mes_erp"] = corte["erp_mes"].split(" de ")[0]
     for k, h in H.items():
         d[f"m{k}"] = pct(h["margen"], 1)
         d[f"mrep{k}"] = pct(h.get("margen_reportado", h["margen"]), 1)

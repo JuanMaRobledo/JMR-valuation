@@ -18,7 +18,7 @@ mkdir -p .cache/js
 [ -s .cache/js/xlsx.full.min.js ] || curl -fsS -o .cache/js/xlsx.full.min.js https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js
 [ -s .cache/js/marked.min.js ] || curl -fsS -o .cache/js/marked.min.js https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js
 export PYTHONPATH=.:scripts SHEETJS_PATH=$PWD/.cache/js/xlsx.full.min.js MARKED_PATH=$PWD/.cache/js/marked.min.js
-export JMR_FECHA=${JMR_FECHA:-2026-09-30}
+export JMR_FECHA=${JMR_FECHA:-$(python3 -c "import json;print(json.load(open('reference/corte_vigente.json'))['fecha_corte'])")}
 [ -z "${CHROMIUM_PATH:-}" ] && CHROMIUM_PATH=$(ls -d /opt/pw-browsers/chromium-*/chrome-linux/chrome 2>/dev/null | head -1) && export CHROMIUM_PATH
 
 reintentar() {  # reintentar <segundos> <comando...>: hasta 3 intentos con 60 s de espera

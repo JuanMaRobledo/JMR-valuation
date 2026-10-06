@@ -352,7 +352,7 @@
   ],
   [
    "Descuento y largo plazo: beta del sector y sin ventaja defendible.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran de octubre, beta {beta}, sin deuda bancaria; los arrendamientos pesan ~6%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): On gana hoy muy por encima de su costo de capital, pero su marca tiene 16 años y no atravesó todavía un ciclo de moda completo, así que no cuenta como ventaja probada. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de Damodaran de {mes_erp}, beta {beta}, sin deuda bancaria; los arrendamientos pesan ~6%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): On gana hoy muy por encima de su costo de capital, pero su marca tiene 16 años y no atravesó todavía un ciclo de moda completo, así que no cuenta como ventaja probada. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
   ],
   [
    "Acciones, moneda y caja.",

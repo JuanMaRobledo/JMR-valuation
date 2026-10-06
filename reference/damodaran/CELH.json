@@ -416,7 +416,7 @@
   ],
   [
    "Descuento y largo plazo: beta del sector y sin ventaja duradera.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran de octubre ponderada por regiones, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): las marcas son jóvenes, la categoría tiene barreras bajas y la distribución es un contrato con PepsiCo, no un activo propio. Por eso el crecimiento posterior no suma valor y el terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}; con un ROIC terminal igual al de la industria el valor subiría, pero eso exigiría una ventaja que hoy no está probada."
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de Damodaran de {mes_erp} ponderada por regiones, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): las marcas son jóvenes, la categoría tiene barreras bajas y la distribución es un contrato con PepsiCo, no un activo propio. Por eso el crecimiento posterior no suma valor y el terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}; con un ROIC terminal igual al de la industria el valor subiría, pero eso exigiría una ventaja que hoy no está probada."
   ],
   [
    "Acciones y preferentes: el derecho de PepsiCo va por su valor de liquidación.",

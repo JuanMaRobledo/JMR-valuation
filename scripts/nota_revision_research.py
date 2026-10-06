@@ -62,24 +62,32 @@ def pct(x: float) -> str:
 
 
 def nota(tk: str) -> str:
+    """Nota de actualización con las cifras de la hoja y el corte vigente (reference/corte_vigente.json). En el corte del
+    30-sep-2026 conserva los «antes» de la revisión del 5-oct-2026; en cortes posteriores solo da las cifras vigentes."""
     import valores_hoja  # cifras leídas de la hoja de cálculo, no de copias intermedias
 
+    c = json.loads((_ROOT / "reference" / "corte_vigente.json").read_text())
     v = valores_hoja.leer(tk)
-    b0, s0, txt = ANTES[tk]
-    beta = f"beta {es(v['beta'])} ({txt}" + (f"; antes {es(b0)})" if b0 is not None else ")")
+    historico = c["fecha_corte"] == "2026-09-30"
+    b0, s0, txt = ANTES.get(tk, (None, None, "bottom-up del sector"))
+    beta = f"beta {es(v['beta'])} ({txt}" + (f"; antes {es(b0)})" if (b0 is not None and historico) else ")")
     s2c = f"ventas/capital {es(v['s1'], 1)} en los años 1-5 y {es(v['s2'], 1)} en los 6-10"
-    if s0:
+    if s0 and historico:
         s2c += f" (antes {es(s0[0])})" if s0[0] == s0[1] else f" (antes {es(s0[0])} y {es(s0[1])})"
     tasa = "costo del patrimonio" if v["fin"] else "costo de capital"
-    return (f"<strong>Actualización del 5 de octubre de 2026.</strong> Las tablas de auditoría y de supuestos de este informe "
-            f"se actualizaron con la hoja de cálculo; las demás tablas y el texto conservan la fecha del informe. Tras la "
-            f"revisión con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya están en las "
-            f"historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja usa {beta}, "
-            f"{tasa} inicial {pct(v['w0'])} y terminal {pct(v['wT'])} con la prima de mercado madura de Damodaran de octubre de "
-            f"2026 (3,70%, calculada con la tasa del 30-sep; antes 4,09%), y {s2c}. DCF Base US${es(v['base'])} por acción y DCF "
-            f"esperado US${es(v['ve'])} ('Escenarios e historias' H11 y H10), con un precio de referencia de "
-            f"US${es(v['precio'])} ('Input sheet' D1). Las cifras vigentes están en la sección de historias Damodaran y en la "
-            f"valoración.")
+    hoy = dt.date.today()
+    meses = ["", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
+             "noviembre", "diciembre"]
+    antes_erp = "; antes 4,09%" if historico else ""
+    return (f"<strong>Actualización del {hoy.day} de {meses[hoy.month]} de {hoy.year}.</strong> Las tablas de auditoría y "
+            f"de supuestos de este informe se actualizaron con la hoja de cálculo; las demás tablas y el texto conservan la "
+            f"fecha del informe. Con criterio Damodaran (beta del negocio sin primas por riesgos diversificables, que ya "
+            f"están en las historias; ventas/capital contrastado con el de la empresa, el marginal y el del sector), la hoja "
+            f"usa {beta}, {tasa} inicial {pct(v['w0'])} y terminal {pct(v['wT'])} con la prima de mercado madura de "
+            f"Damodaran de {c['erp_mes']} ({pct(c['erp_madura'])}, calculada con la tasa del {c['fecha_corte_es']}"
+            f"{antes_erp}), y {s2c}. DCF Base US${es(v['base'])} por acción y DCF esperado US${es(v['ve'])} ('Escenarios "
+            f"e historias' H11 y H10), con un precio de referencia de US${es(v['precio'])} ('Input sheet' D1). Las cifras "
+            f"vigentes están en la sección de historias Damodaran y en la valoración.")
 
 
 def con_nota_html(h: str, n: str) -> str:
@@ -96,7 +104,8 @@ def con_nota_md(m: str, n: str) -> str:
 
 
 def main(argv: list[str]) -> int:
-    for tk in [a for a in argv if not a.startswith("--")] or list(ANTES):
+    todas = sorted(json.loads((_ROOT / "reference" / "cartera_drive.json").read_text())["empresas"])
+    for tk in [a for a in argv if not a.startswith("--")] or todas:
         n = nota(tk)
         p = Path(glob.glob(str(DATOS / "analisis" / f"{tk}-research-*.json"))[0])
         j = json.loads(p.read_text())
