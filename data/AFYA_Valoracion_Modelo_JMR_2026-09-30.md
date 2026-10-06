@@ -36,7 +36,7 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - AFYA](https://docs.google.com/spreadsheets/d/1_CXhy_5n-V4rwfOSl8xI8455hywS5W92VBed_FCylvQ/edit).
-- Análisis del 25 de feb de 2026. Precio de referencia de la hoja: US$12,04.
+- Análisis del 30 de sept de 2026. Precio de referencia de la hoja: US$12,04.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
