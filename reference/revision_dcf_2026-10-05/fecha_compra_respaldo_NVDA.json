@@ -18,5 +18,10 @@
   "before": 210.96,
   "after": 228.38,
   "reason": "Precio del análisis (NVDA)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;9;30)",
+  "reason": "Fecha del análisis = corte (NVDA, sin posición)"
  }
 }

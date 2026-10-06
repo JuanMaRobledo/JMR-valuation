@@ -18,5 +18,10 @@
   "before": 345.71,
   "after": 340.74,
   "reason": "Precio del análisis (GOOG)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;9;30)",
+  "reason": "Fecha del análisis = corte (GOOG, sin posición)"
  }
 }

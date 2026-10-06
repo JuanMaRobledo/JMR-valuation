@@ -36,7 +36,7 @@ Lectura del 30-sep-2026: el DCF Base de las historias (valor intrínseco princip
 ## 2. Datos
 
 - Hoja del modelo: [NVO_Modelo_JMR_Valoracion_2026-09-24](https://docs.google.com/spreadsheets/d/1_w85o-Cv_4GzFB4nq5fGqrMSVoYf-Ltafuol3ir5TMw/edit).
-- Análisis del 30 de sept de 2026. Precio de referencia de la hoja: US$37,91.
+- Análisis del 25 de feb de 2026. Precio de referencia de la hoja: US$37,91.
 - Peers: datos de mercado de yfinance consultados el 2026-09-29 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 
