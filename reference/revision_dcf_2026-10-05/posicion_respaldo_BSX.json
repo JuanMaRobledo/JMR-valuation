@@ -16,7 +16,7 @@
  },
  "Resumen de Valoración!B50": {
   "before": "",
-  "after": "Fuente: «Seguimiento de cartera» (Google Drive), posiciones al 5-oct-2026",
+  "after": "Fuente: app Cartera, posiciones al 2026-10-06",
   "reason": "Bloque «Mi posición» (BSX)"
  },
  "Resumen de Valoración!C50": {
@@ -56,7 +56,7 @@
  },
  "Resumen de Valoración!B52": {
   "before": "",
-  "after": 49.5621,
+  "after": 49.5642,
   "reason": "Bloque «Mi posición» (BSX)"
  },
  "Resumen de Valoración!C52": {
@@ -76,12 +76,12 @@
  },
  "Resumen de Valoración!B53": {
   "before": "",
-  "after": "=DATE(2026;8;7)",
+  "after": "=DATE(2026;8;6)",
   "reason": "Bloque «Mi posición» (BSX)"
  },
  "Resumen de Valoración!C53": {
   "before": "",
-  "after": "Compras: 2026-08-07",
+  "after": "Compras: 2026-08-06, 2026-08-07",
   "reason": "Bloque «Mi posición» (BSX)"
  },
  "Resumen de Valoración!D53": {

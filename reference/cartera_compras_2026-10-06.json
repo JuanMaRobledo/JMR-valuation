@@ -1,13 +1,13 @@
 {
  "fecha": "2026-10-06",
- "fuente": "«Seguimiento de cartera» (Drive, descargada 2026-10-06)",
+ "fuente": "app Cartera (GET /api/export, generado 2026-10-06 13:35 UTC)",
  "empresas": {
   "ADBE": {
    "en_cartera": true,
    "primera_compra": "2025-12-03",
    "precio_primera_compra": 324.63,
    "cantidad": 7.98426,
-   "costo_promedio": 264.13,
+   "costo_promedio": 264.1042,
    "compras": [
     "2025-12-03",
     "2026-01-09",
@@ -26,8 +26,8 @@
    "en_cartera": true,
    "primera_compra": "2026-02-25",
    "precio_primera_compra": 13.75,
-   "cantidad": 20.0,
-   "costo_promedio": 13.7664,
+   "cantidad": 20,
+   "costo_promedio": 13.7665,
    "compras": [
     "2026-02-25"
    ],
@@ -37,11 +37,12 @@
   },
   "BSX": {
    "en_cartera": true,
-   "primera_compra": "2026-08-07",
-   "precio_primera_compra": 49.5025,
-   "cantidad": 12.0,
-   "costo_promedio": 49.5621,
+   "primera_compra": "2026-08-06",
+   "precio_primera_compra": 49.39,
+   "cantidad": 12,
+   "costo_promedio": 49.5642,
    "compras": [
+    "2026-08-06",
     "2026-08-07"
    ],
    "cuentas": [
@@ -51,9 +52,9 @@
   "CELH": {
    "en_cartera": true,
    "primera_compra": "2026-03-06",
-   "precio_primera_compra": 42.0,
-   "cantidad": 30.0,
-   "costo_promedio": 32.9525,
+   "precio_primera_compra": 42,
+   "cantidad": 30,
+   "costo_promedio": 32.9467,
    "compras": [
     "2026-03-06",
     "2026-03-23",
@@ -68,9 +69,9 @@
   "CMG": {
    "en_cartera": true,
    "primera_compra": "2026-03-27",
-   "precio_primera_compra": 30.915,
-   "cantidad": 10.0,
-   "costo_promedio": 30.9502,
+   "precio_primera_compra": 30.91,
+   "cantidad": 10,
+   "costo_promedio": 30.945,
    "compras": [
     "2026-03-27"
    ],
@@ -81,8 +82,8 @@
   "DPZ": {
    "en_cartera": true,
    "primera_compra": "2026-07-29",
-   "precio_primera_compra": 363.6595,
-   "cantidad": 1.0,
+   "precio_primera_compra": 363.66,
+   "cantidad": 1,
    "costo_promedio": 364.01,
    "compras": [
     "2026-07-29"
@@ -96,7 +97,7 @@
    "primera_compra": "2026-02-17",
    "precio_primera_compra": 113.37,
    "cantidad": 7.44245,
-   "costo_promedio": 107.9321,
+   "costo_promedio": 106.3442,
    "compras": [
     "2026-02-17",
     "2026-02-20",
@@ -111,8 +112,8 @@
    "en_cartera": true,
    "primera_compra": "2026-04-07",
    "precio_primera_compra": 135.93,
-   "cantidad": 4.0,
-   "costo_promedio": 110.6103,
+   "cantidad": 4,
+   "costo_promedio": 110.61,
    "compras": [
     "2026-04-07",
     "2026-07-01"
@@ -123,13 +124,13 @@
   },
   "GOOG": {
    "en_cartera": false,
-   "nota": "sin posición al 2026-10-06 (última operación 2026-01-08 venta)"
+   "nota": "sin posición al 2026-10-06 (posición cerrada)"
   },
   "INTU": {
    "en_cartera": true,
    "primera_compra": "2026-07-29",
-   "precio_primera_compra": 331.2895,
-   "cantidad": 1.0,
+   "precio_primera_compra": 331.29,
+   "cantidad": 1,
    "costo_promedio": 331.64,
    "compras": [
     "2026-07-29"
@@ -141,9 +142,9 @@
   "LULU": {
    "en_cartera": true,
    "primera_compra": "2026-03-06",
-   "precio_primera_compra": 170.0414,
-   "cantidad": 4.0,
-   "costo_promedio": 145.0537,
+   "precio_primera_compra": 170.04,
+   "cantidad": 4,
+   "costo_promedio": 145.0535,
    "compras": [
     "2026-03-06",
     "2026-03-27",
@@ -157,8 +158,8 @@
    "en_cartera": true,
    "primera_compra": "2026-04-07",
    "precio_primera_compra": 370.14,
-   "cantidad": 2.0,
-   "costo_promedio": 363.1798,
+   "cantidad": 2,
+   "costo_promedio": 363.18,
    "compras": [
     "2026-04-07",
     "2026-06-25"
@@ -171,8 +172,8 @@
    "en_cartera": true,
    "primera_compra": "2026-04-01",
    "precio_primera_compra": 47.29,
-   "cantidad": 8.0,
-   "costo_promedio": 47.3322,
+   "cantidad": 8,
+   "costo_promedio": 47.3325,
    "compras": [
     "2026-04-01"
    ],
@@ -186,12 +187,12 @@
   },
   "NVO": {
    "en_cartera": true,
-   "primera_compra": "2026-02-25",
-   "precio_primera_compra": 38.0,
+   "primera_compra": "2026-02-02",
+   "precio_primera_compra": 38,
    "cantidad": 20.4,
-   "costo_promedio": 37.9943,
+   "costo_promedio": 37.9929,
    "compras": [
-    "2026-02-25",
+    "2026-02-02",
     "2026-03-11",
     "2026-03-13",
     "2026-03-23"
@@ -204,8 +205,8 @@
    "en_cartera": true,
    "primera_compra": "2026-08-12",
    "precio_primera_compra": 30.745,
-   "cantidad": 15.0,
-   "costo_promedio": 30.7686,
+   "cantidad": 15,
+   "costo_promedio": 30.7683,
    "compras": [
     "2026-08-12"
    ],
@@ -217,8 +218,8 @@
    "en_cartera": true,
    "primera_compra": "2026-04-07",
    "precio_primera_compra": 10.34,
-   "cantidad": 20.0,
-   "costo_promedio": 10.3559,
+   "cantidad": 20,
+   "costo_promedio": 10.356,
    "compras": [
     "2026-04-07"
    ],
@@ -228,14 +229,14 @@
   },
   "PLTR": {
    "en_cartera": false,
-   "nota": "sin posición al 2026-10-06 (última operación 2026-08-07 compra)"
+   "nota": "sin posición al 2026-10-06 (posición cerrada)"
   },
   "PYPL": {
    "en_cartera": true,
    "primera_compra": "2026-02-25",
-   "precio_primera_compra": 47.6785,
-   "cantidad": 11.0,
-   "costo_promedio": 46.9476,
+   "precio_primera_compra": 47.68,
+   "cantidad": 11,
+   "costo_promedio": 46.767,
    "compras": [
     "2026-02-25",
     "2026-03-06",
@@ -248,9 +249,9 @@
   "SHAK": {
    "en_cartera": true,
    "primera_compra": "2026-07-10",
-   "precio_primera_compra": 59.1897,
-   "cantidad": 6.0,
-   "costo_promedio": 59.2482,
+   "precio_primera_compra": 59.19,
+   "cantidad": 6,
+   "costo_promedio": 59.2483,
    "compras": [
     "2026-07-10"
    ],
@@ -261,9 +262,9 @@
   "UBER": {
    "en_cartera": true,
    "primera_compra": "2026-01-20",
-   "precio_primera_compra": 83.4396,
-   "cantidad": 6.0,
-   "costo_promedio": 76.5181,
+   "precio_primera_compra": 83.44,
+   "cantidad": 6,
+   "costo_promedio": 77.0281,
    "compras": [
     "2026-01-20",
     "2026-07-24"
@@ -276,8 +277,8 @@
    "en_cartera": true,
    "primera_compra": "2026-08-07",
    "precio_primera_compra": 72.52,
-   "cantidad": 5.0,
-   "costo_promedio": 72.5903,
+   "cantidad": 5,
+   "costo_promedio": 72.59,
    "compras": [
     "2026-08-07"
    ],
