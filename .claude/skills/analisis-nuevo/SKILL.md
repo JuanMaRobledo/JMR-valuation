@@ -40,7 +40,7 @@ recientes y qué scripts usar; el contenido y los criterios están en los prompt
   sin impuestos diferidos de una liberación de reserva, ROIC terminal con la regla de `reference/moat_2026-09-30.json`).
 - Tipo de empresa por ciclo de vida y sector: `reference/ciclo_de_vida/` y `scripts/ciclo_de_vida.py` (agrega la empresa a C).
 - `bash scripts/regenerar_una.sh <T>`: historias → hoja → múltiplos (tres anclas) → app → sección Damodaran.
-- Posición: si el usuario la tiene en cartera, habilidad actualizar-cartera, modo A.
+- Posición: si el usuario la tiene en cartera, habilidad actualizar-cartera, modo A (lee las posiciones de la app Cartera).
 
 ## 4. Documentos, controles y entrega
 - Research v5 y valoración v4 en `data/<T>_*_<fecha>.md` (las cifras salen de la hoja: `scripts/valores_hoja.py`),
