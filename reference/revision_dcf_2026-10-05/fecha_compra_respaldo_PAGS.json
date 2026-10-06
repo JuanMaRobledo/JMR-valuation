@@ -1,0 +1,27 @@
+{
+ "Tesis de Inversión y Supuestos!A2": {
+  "before": "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "after": "=\"Metodología Damodaran (NYU Stern) | Precio al día del análisis: US$\"&TEXT('Input sheet'!D1;\"0.00\")&\" | WACC: \"&TEXT('Cost of capital worksheet'!B14;\"0.00%\")",
+  "reason": "Textos con el precio de mercado (PAGS)"
+ },
+ "Tesis de Inversión y Supuestos!B29": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "='Input sheet'!D1",
+  "reason": "Textos con el precio de mercado (PAGS)"
+ },
+ "Tesis de Inversión y Supuestos!A34": {
+  "before": "=\"A US$\"&TEXT('Resumen de Valoración'!C25;\"0.00\")&\", PagBank cotiza \"&IF('Valuation output'!B35>'Resumen de Valoración'!C25;\"por DEBAJO\";\"por ENCIMA\")&\" de su DCF Base (US$\"&TEXT('Valuation output'!B35;\"0.00\")&\", \"&TEXT('Valuation output'!B35/'Resumen de Valoración'!C25-1;\"+0%;-0%\")&\") y \"&IF('Resumen de Valoración'!D12>'Resumen de Valoración'!C25;\"por DEBAJO\";\"por ENCIMA\")&\" del precio objetivo ponderado Base (US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\"). El mercado valora a PagBank por debajo de su patrimonio: el caso Base solo exige que mantenga el ROAE y el crecimiento nominal.\"",
+  "after": "=\"A US$\"&TEXT('Input sheet'!D1;\"0.00\")&\", PagBank cotiza \"&IF('Valuation output'!B35>'Input sheet'!D1;\"por DEBAJO\";\"por ENCIMA\")&\" de su DCF Base (US$\"&TEXT('Valuation output'!B35;\"0.00\")&\", \"&TEXT('Valuation output'!B35/'Input sheet'!D1-1;\"+0%;-0%\")&\") y \"&IF('Resumen de Valoración'!D12>'Input sheet'!D1;\"por DEBAJO\";\"por ENCIMA\")&\" del precio objetivo ponderado Base (US$\"&TEXT('Resumen de Valoración'!D12;\"0.00\")&\"). El mercado valora a PagBank por debajo de su patrimonio: el caso Base solo exige que mantenga el ROAE y el crecimiento nominal.\"",
+  "reason": "Textos con el precio de mercado (PAGS)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;4;7)",
+  "reason": "Fecha del análisis = primera compra (PAGS)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 9.05,
+  "after": 10.34,
+  "reason": "Precio del análisis (PAGS)"
+ }
+}

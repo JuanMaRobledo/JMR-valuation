@@ -1,0 +1,22 @@
+{
+ "Input sheet!B23": {
+  "before": "='Resumen de Valoración'!C25",
+  "after": "=D1",
+  "reason": "Precio del modelo = D1 (ADBE)"
+ },
+ "Resumen de Valoración!B3": {
+  "before": "='Input sheet'!B23",
+  "after": "=C25",
+  "reason": "Precio del análisis = C25 (ADBE)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2025;12;3)",
+  "reason": "Fecha del análisis = primera compra (ADBE)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 239.94,
+  "after": 324.63,
+  "reason": "Precio del análisis (ADBE)"
+ }
+}

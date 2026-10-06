@@ -1,0 +1,12 @@
+{
+ "Input sheet!B4": {
+  "before": 46296,
+  "after": "=DATE(2026;3;6)",
+  "reason": "Fecha del análisis = primera compra (LULU)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 95.86,
+  "after": 170.0414,
+  "reason": "Precio del análisis (LULU)"
+ }
+}
