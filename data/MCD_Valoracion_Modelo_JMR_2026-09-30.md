@@ -14,24 +14,24 @@ generator: "Claude Code — prompt de valoración v3 (pasos 6, 7, 8, 10 y 11 sob
 
 ## 1. Resumen
 
-**Valor intrínseco principal · DCF Base hoy: US$224,12 por acción.** Complemento: DCF esperado por probabilidades US$203,96; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$75,44–US$253,34; precio con MOS 35% sobre el esperado: US$132,57; precio de referencia US$230,94. Cada escenario es un DCF completo con la estructura de Damodaran, calculado en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción; B35 es el DCF Base) y resumido en «Escenarios e historias»; el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son esas historias, y los múltiplos y el ponderado son lecturas secundarias.
+**Valor intrínseco principal · DCF Base hoy: US$224,12 por acción.** Complemento: DCF esperado por probabilidades US$203,42; rango de los cuatro escenarios (Base, Conservadora, Disrupción y Optimista) US$70,07–US$253,34; precio con MOS 35% sobre el esperado: US$132,22; precio de referencia US$230,94. Cada escenario es un DCF completo con la estructura de Damodaran, calculado en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción; B35 es el DCF Base) y resumido en «Escenarios e historias»; el detalle y la justificación de los supuestos están en la sección «Valor con criterio Damodaran» del análisis fundamental. Los casos Conservador/Base/Optimista de abajo son esas historias, y los múltiplos y el ponderado son lecturas secundarias.
 
 
 | Escenario | Probabilidad | DCF hoy por acción | Aporte al esperado |
 |---|---:|---:|---:|
 | **Base · Refranquiciamiento a 98% y comparables de 2-3%** (valor principal) | 50% | US$224,12 | US$112,06 |
 | Conservadora · El tráfico de EE.UU. no vuelve y el valor cuesta margen | 25% | US$185,42 | US$46,35 |
-| Disrupción · Deterioro de los fundamentales: Los franquiciados pierden rentabilidad y la renta deja de crecer | 10% | US$75,44 | US$7,54 |
+| Disrupción · Deterioro de los fundamentales: Los franquiciados pierden rentabilidad y la renta deja de crecer | 10% | US$70,07 | US$7,01 |
 | Optimista · NEXT recupera el tráfico y la escala se nota en el margen | 15% | US$253,34 | US$38,00 |
-| **DCF esperado (complemento)** | 100% | **US$203,96** | |
+| **DCF esperado (complemento)** | 100% | **US$203,42** | |
 
 Lectura del 6-oct-2026 (análisis desde cero): los múltiplos consolidados Base hoy (US$279,64) valen 25% más que el DCF Base (US$224,12), en el límite del ±25%. No se movió ningún múltiplo para acercarlos. La causa es de crecimiento del BPA: la historia de cinco años (P/E 25,6×) se formó cuando el BPA crecía ~8-10% al año, y la Base del DCF supone ingresos casi planos por el refranquiciamiento y un margen que sube poco a poco. El chequeo de crecimiento implícito no da alertas (los cinco múltiplos Base difieren menos de 1 pp del que implica el DCF en FY+3). El DCF es la lectura más confiable; los múltiplos son precio relativo.
 
 | Escenario | DCF de la historia hoy | Múltiplos consolidados hoy (secundario) | Mezcla auxiliar hoy | Compra con MOS sobre el valor esperado | Precio objetivo FY+3 ponderado (secundario) |
 |---|---:|---:|---:|---:|---:|
-| Base | US$224,12 | US$279,64 | US$257,43 | US$132,57 | US$307,67 |
-| Conservador | US$185,42 | US$251,29 | US$224,94 | US$132,57 | US$263,70 |
-| Optimista | US$253,34 | US$301,64 | US$282,32 | US$132,57 | US$341,89 |
+| Base | US$224,12 | US$279,64 | US$257,43 | US$132,22 | US$307,67 |
+| Conservador | US$185,42 | US$251,29 | US$224,94 | US$132,22 | US$263,70 |
+| Optimista | US$253,34 | US$301,64 | US$282,32 | US$132,22 | US$341,89 |
 
 ## 2. Datos
 
@@ -79,9 +79,9 @@ Chequeo de independencia: los múltiplos consolidados hoy (Base) dan US$279,64 f
 
 ### Valor por acción en dos horizontes
 
-Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 8,69%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$75,44) y no se inventa para ellos.
+Moneda: US$ por acción. Fecha de valoración: 2026-09-30. Escenarios en orden Base, Conservador y Optimista. Categoría de empresa «Madura»: DCF 40% y múltiplos 60% (EV/EBITDA 20%, EV/FCFF 10%, P/E 20%, P/FCFE 5%, P/OCF 5%). Costo del patrimonio (Ke) 8,69%. Los múltiplos tienen solo tres escenarios auxiliares; la Disrupción existe solo en el DCF (US$70,07) y no se inventa para ellos.
 
-**Valor intrínseco principal: DCF Base al presente, US$224,12 por acción.** Complemento: DCF esperado por probabilidades US$203,96. Múltiplos y ponderados son lecturas secundarias.
+**Valor intrínseco principal: DCF Base al presente, US$224,12 por acción.** Complemento: DCF esperado por probabilidades US$203,42. Múltiplos y ponderados son lecturas secundarias.
 
 **Tabla 1 · Valor por acción descontado al presente (2026-09-30).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 

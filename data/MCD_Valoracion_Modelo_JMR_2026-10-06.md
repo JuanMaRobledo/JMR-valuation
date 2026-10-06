@@ -15,16 +15,16 @@ currency: "USD"
 
 **Valor intrínseco principal · DCF Base hoy: US$224,12 por acción** (historia «Base · Refranquiciamiento a 98% y comparables de 2-3%»).
 
-**Complemento · DCF esperado por probabilidades: US$203,96 por acción.**
+**Complemento · DCF esperado por probabilidades: US$203,42 por acción.**
 
 | Historia activa | Probabilidad | DCF hoy por acción |
 |---|---:|---:|
 | Base · Refranquiciamiento a 98% y comparables de 2-3% | 50% | US$224,12 |
 | Conservadora · El tráfico de EE.UU. no vuelve y el valor cuesta margen | 25% | US$185,42 |
-| Disrupción · Deterioro de los fundamentales: los franquiciados pierden rentabilidad y la renta deja de crecer | 10% | US$75,44 |
+| Disrupción · Deterioro de los fundamentales: los franquiciados pierden rentabilidad y la renta deja de crecer | 10% | US$70,07 |
 | Optimista · NEXT recupera el tráfico y la escala se nota en el margen | 15% | US$253,34 |
-| DCF esperado (complemento) | 100% | US$203,96 |
-| Precio con margen de seguridad (35% sobre el esperado) | | US$132,57 |
+| DCF esperado (complemento) | 100% | US$203,42 |
+| Precio con margen de seguridad (35% sobre el esperado) | | US$132,22 |
 
 'Valuation output' calcula las cuatro historias con la estructura de Damodaran (Base B35, Conservadora B86, Optimista B137, Disrupción B190) y «Escenarios e historias» las resume; el motor del Modelo JMR las reproduce al centavo (diferencia 0,00 en las cuatro).
 
@@ -66,7 +66,7 @@ Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos a
 | Margen año 1 | 49,7% | Input B28 | LTM 46,2% + 3,48 pp de arrendamientos | Guía 2026 «mid-to-high 40%» | Reestructuración recurrente |
 | Margen objetivo | 55,5% (52% + 3,48 pp de arrendamientos) | «Escenarios e historias» D5 | Tramo bajo-medio de la guía a 2030 | Mezcla de 98% y gasto general de 1,9% | Amortización del apoyo de rentas |
 | Convergencia | 5 años | Input B31 | La guía llega a 2030 | — | — |
-| Ventas/capital | 0,5 (años 1-10) | Input B32/B33 | Rendimiento del capital nuevo ~21% = ROIC actual | Modelo de renta con inmuebles propios | En los años 1-2 libera ~US$2.600 M por la caída de ingresos |
+| Ventas/capital | 0,5 (años 1-10) | Input B32/B33 | Rendimiento del capital nuevo ~21% = ROIC actual | Modelo de renta con inmuebles propios | En los años 1-2 libera ~US$2.600 M por la caída de ingresos (~US$1.000 M más que lo cobrado al ritmo de 2015-2018); la Disrupción usa 1,70 en los años 1-5 |
 | Tasa efectiva → marginal | 22% → 25% | Input B24/B25 | Guía 2026: 21-23% | — | — |
 | ROIC después del año 10 | 18,4% (promedio de Restaurant/Dining) | Input B49 = Yes / B50 | Ventaja durable | ROIC ~21% sostenido, marca de 70 años | Tráfico débil en EE.UU. |
 
@@ -78,11 +78,11 @@ Precio relativo (secundario; Base / Conservador / Optimista): múltiplos solos a
 |---|---:|---|---:|---:|---:|---:|---:|---:|
 | **Base · Refranquiciamiento a 98% y comparables de 2-3%** | 50% | Franquicias 7%, 6,5%, 5%, 5%, 5%; propios −15%, −30%, −10%, 3%, 3%; otros 8%, 7%, 6%, 5%, 5% | 1,0% | 55,5% | 0,5 | 18,4% | 5,29% | US$224,12 |
 | **Conservadora · El tráfico de EE.UU. no vuelve y el valor cuesta margen** | 25% | Franquicias 5%, 5%, 3,5%, 3,5%, 3,5%; propios −15%, −30%, −10%, 1%, 1%; otros 5%, 4%, 4%, 3%, 3% | −0,4% | 51,5% | 0,5 | 18,4% | 5,29% | US$185,42 |
-| **Disrupción · Deterioro de los fundamentales: los franquiciados pierden rentabilidad y la renta deja de crecer** | 10% | Franquicias 3%, 2%, 0,5%, 0%, 0%; propios −17%, −30%, −12%, −2%, −2%; otros 2%, 0%, 0%, 0%, 0% | −3,1% | 46,5% | 0,5 | = costo de capital (8,99%) | 0,00% | US$75,44 |
+| **Disrupción · Deterioro de los fundamentales: los franquiciados pierden rentabilidad y la renta deja de crecer** | 10% | Franquicias 3%, 2%, 0,5%, 0%, 0%; propios −17%, −30%, −12%, −2%, −2%; otros 2%, 0%, 0%, 0%, 0% | −3,1% | 46,5% | 1,7 (años 1-5) / 0,5 | = costo de capital (8,99%) | 0,00% | US$70,07 |
 | **Optimista · NEXT recupera el tráfico y la escala se nota en el margen** | 15% | Franquicias 8%, 8%, 6,5%, 6,5%, 6%; propios −15%, −30%, −10%, 4%, 4%; otros 10%, 9%, 8%, 7%, 6% | 2,1% | 58,0% | 0,5 | 18,4% | 5,29% | US$253,34 |
-| **DCF esperado (complemento)** | 100% | | | | | | | **US$203,96** |
+| **DCF esperado (complemento)** | 100% | | | | | | | **US$203,42** |
 
-DCF esperado = 0,50 × 224,12 + 0,25 × 185,42 + 0,10 × 75,44 + 0,15 × 253,34 = US$203,96. Las probabilidades son juicio del analista: la Base extrapola las ventas del sistema de los últimos años con comparables algo menores que la guía; la Conservadora es lo que hoy muestran EE.UU. y la reacción del mercado al plan NEXT; la Disrupción pesa 10% porque el negocio superó crisis peores, pero el GLP-1 y el costo laboral son amenazas nuevas; la Optimista exige a la vez tráfico positivo y el tope de la guía. Los márgenes de la tabla están en base ajustada por arrendamientos (reportados: 52%, 48%, 43% y 54,5%). La Disrupción se estabiliza sin recuperación (crecimiento terminal 0%) y su ROIC terminal es el costo de capital.
+DCF esperado = 0,50 × 224,12 + 0,25 × 185,42 + 0,10 × 70,07 + 0,15 × 253,34 = US$203,42. Las probabilidades son juicio del analista: la Base extrapola las ventas del sistema de los últimos años con comparables algo menores que la guía; la Conservadora es lo que hoy muestran EE.UU. y la reacción del mercado al plan NEXT; la Disrupción pesa 10% porque el negocio superó crisis peores, pero el GLP-1 y el costo laboral son amenazas nuevas; la Optimista exige a la vez tráfico positivo y el tope de la guía. Los márgenes de la tabla están en base ajustada por arrendamientos (reportados: 52%, 48%, 43% y 54,5%). La Disrupción se estabiliza sin recuperación (crecimiento terminal 0%) y su ROIC terminal es el costo de capital.
 
 Puente de los cuatro DCF (US$ millones):
 
@@ -90,7 +90,7 @@ Puente de los cuatro DCF (US$ millones):
 |---|---:|---:|---:|---:|---:|
 | Base | 69.627,03 | 141.137,98 | 210.765,01 | 158.846,77 | 224,12 |
 | Conservadora | 64.998,33 | 118.337,48 | 183.335,81 | 131.417,57 | 185,42 |
-| Disrupción | 64.522,20 | 40.861,76 | 105.383,97 | 53.465,73 | 75,44 |
+| Disrupción | 60.722,95 | 40.861,76 | 101.584,72 | 49.666,48 | 70,07 |
 | Optimista | 72.783,98 | 158.694,87 | 231.478,85 | 179.560,61 | 253,34 |
 
 Ejemplo Base: (69.627,03 + 141.137,98 + 822 − 52.212 − 528) / 708,8 = US$224,12 por acción (la deuda incluye US$10.020 millones de arrendamientos capitalizados). El terminal representa 67,0% del valor operativo: el resultado depende materialmente del WACC terminal, del crecimiento perpetuo y de la duración del retorno excedente.
@@ -235,6 +235,7 @@ Respaldo de cada celda en `reference/backups/mcd_desde_cero_2026-10-06.json` (re
 | 14 | Filas 38 y 43 de «Descuento de múltiplos» | DCF de 'Valuation output' y MOS sobre el ponderado | Historias y MOS sobre el esperado | Presentación vigente |
 | 15 | Textos (Cualitativo, Estadísticas, Stories to Numbers, Supuestos Recomendados, Supuestos de los Múltiplos, Tesis) | Plantilla | Contenido de MCD con fórmulas vivas | Paso 10 |
 | 16 | BPA básico 2016-2022 y cambio neto de caja 2016-LTM (18 celdas) | BPA copiado del diluido; serie de relleno de la plantilla | XBRL de la SEC | `auditar_estados_sec.py` + `aplicar_cambios_celdas.py` (6-oct-2026); no cambian el DCF |
+| 17 | «Escenarios e historias» E7 (ventas/capital años 1-5 de la Disrupción) | ='Input sheet'!B32 (0,5): libera ~US$6.000 M en los años 1-5 | 1,70: libera ~US$1.770 M = US$0,35 por dólar de venta propia perdida (lo cobrado en el refranquiciamiento de 2015-2018, XBRL de la SEC) | Aviso de liberación de capital de `damodaran_stories.py`; Disrupción US$75,44 → US$70,07, esperado US$203,96 → US$203,42 |
 
 Controles: fórmula única verificada (`apply_canonical_formulas.py` en seco: 0 celdas pendientes); el motor reproduce el DCF de la hoja (US$224,12) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado (diferencia 0,00); el escaneo de integridad (`integridad_hojas.py`) da 0 hallazgos (la fecha de valoración fija al corte se reconoce como entrada desde el 6-oct-2026) y la consistencia de la app 16 de 16. Sin celdas con error en las pestañas de la valoración. Datos enlazados con ajuste y nota: B22 de la Input sheet (+RSU). Supuestos escritos a mano: B24, B27-B33, B49/B50, opciones, beta (enfoque), regiones, rating, J8/J19/J30.
 
@@ -249,7 +250,7 @@ DCF inverso: crecimiento anual de ingresos de los años 1-5 que justifica el pre
 | Beta 0,79 (usada: bottom-up global) | 3,7% (62%) | 2,1% (71%) | 1,2% (74%) |
 | Beta 0,93 (bottom-up de EE.UU.) | 4,3% (58%) | 2,7% (68%) | 1,8% (72%) |
 
-Frente al DCF Base (US$224,12), el precio está 3% por encima; frente al esperado (US$203,96), 13% por encima; el precio con margen de seguridad (US$132,57) queda 43% por debajo del precio. Con la beta y el margen de la Base, el precio pide crecer ~2,1% anual en los años 1-5 frente al 1,0% de la Base: una historia entre la Base y la Optimista, alcanzable para ~71% de las empresas de su tamaño. ¿Qué sabe el mercado que yo no? Puede estar pagando por la estabilidad de un flujo de renta y regalías indexado a ventas, con pagos mínimos contractuales de US$31.451 millones, más de lo que la tasa del modelo reconoce, o por un ROIC terminal mayor que el promedio de la industria. En sentido contrario, la caída de ~24% de la acción en 2026 (de US$305,63 al cierre de 2025 a US$230,94) ya descuenta buena parte de la Conservadora.
+Frente al DCF Base (US$224,12), el precio está 3% por encima; frente al esperado (US$203,42), 14% por encima; el precio con margen de seguridad (US$132,22) queda 43% por debajo del precio. Con la beta y el margen de la Base, el precio pide crecer ~2,1% anual en los años 1-5 frente al 1,0% de la Base: una historia entre la Base y la Optimista, alcanzable para ~71% de las empresas de su tamaño. ¿Qué sabe el mercado que yo no? Puede estar pagando por la estabilidad de un flujo de renta y regalías indexado a ventas, con pagos mínimos contractuales de US$31.451 millones, más de lo que la tasa del modelo reconoce, o por un ROIC terminal mayor que el promedio de la industria. En sentido contrario, la caída de ~24% de la acción en 2026 (de US$305,63 al cierre de 2025 a US$230,94) ya descuenta buena parte de la Conservadora.
 
 ## 12. Registro de decisión
 
@@ -259,8 +260,8 @@ Frente al DCF Base (US$224,12), el precio está 3% por encima; frente al esperad
 | Historia en una frase | Arrendador y franquiciador de ~50.000 locales: refranquicia a 98%, las ventas del sistema crecen ~5% y el margen sube a ~52% | |
 | Probabilidades | Base 50% / Conservadora 25% / Disrupción 10% / Optimista 15% | |
 | DCF Base hoy | US$224,12 | |
-| DCF esperado | US$203,96 | |
-| Rango | US$75,44 a US$253,34 | |
+| DCF esperado | US$203,42 | |
+| Rango | US$70,07 a US$253,34 | |
 | Confianza | Media-alta: el modelo de renta y regalías es estable y está documentado; el tráfico de EE.UU. y el costo real del plan NEXT no | |
 | Qué cambiaría la opinión | Comparables y tráfico de EE.UU., ritmo del refranquiciamiento, amortización del apoyo de rentas | |
 | Revisión | Resultados del 3T26 (fines de octubre o noviembre de 2026) | |
@@ -297,10 +298,10 @@ La decisión (comprar, mantener o vender) la registra el usuario en la app.
 | Pre-mortem e indicadores | Sí |
 | Cuadre con la SEC (ingresos, EBIT, D&A, caja, deuda, arrendamientos, acciones, opciones, RSU, minoritarios) | Sí |
 | Ninguna celda con error en las pestañas de la valoración; auditoría de estados contra la SEC aplicada | Sí |
-| Motor = hoja (US$224,12) y pestaña de historias = motor (esperado US$203,96) | Sí |
+| Motor = hoja (US$224,12) y pestaña de historias = motor (esperado US$203,42) | Sí |
 | Múltiplos con tres anclas, independientes del DCF; chequeo de crecimiento implícito aplicado | Sí (0 alertas) |
 | Chequeo VP a 3 años < FY+3 | Sí |
 | Fórmula única (0 celdas pendientes frente a la maestra) | Sí |
 | Dos tablas de horizontes (presente y FY+3): métodos, múltiplos solos y DCF + múltiplos; reproducen la hoja y la app | Sí |
 | El precio no aparece antes de la sección 11 (salvo la referencia de la hoja en «Datos») | Sí |
-| Estado | Verificado, con salvedades: reparto de IOM por región estimado por número de locales; arrendamientos financieros al 30-jun-2026 no publicados (se usa dic-2025); la liberación de capital del refranquiciamiento en los años 1-2 depende del ventas/capital; ingresos de 2018-2019 reexpresados en la SEC (se informan, no se corrigen) |
+| Estado | Verificado, con salvedades: reparto de IOM por región estimado por número de locales; arrendamientos financieros al 30-jun-2026 no publicados (se usa dic-2025); la liberación de capital del refranquiciamiento en los años 1-2 depende del ventas/capital (Base ~US$1.000 M por encima de lo cobrado al ritmo de 2015-2018; Disrupción acotada con 1,70 en los años 1-5); ingresos de 2018-2019 reexpresados en la SEC (se informan, no se corrigen) |

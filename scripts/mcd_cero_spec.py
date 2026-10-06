@@ -122,9 +122,15 @@ SPEC = {
             "arrendamientos capitalizados es ~US$50.400 millones y el ROIC después de impuestos ~21%. La hoja usa un "
             "ventas/capital de 0,5: con el margen objetivo de 55,5% (base ajustada) y un impuesto de 25%, cada dólar nuevo rinde "
             "~21%, igual al ROIC actual; un ventas/capital de 1,0 implicaría ~42%, el doble del actual, sin evidencia. En los "
-            "años 1-2 el refranquiciamiento reduce los ingresos y la fórmula libera ~US$2.600 millones de capital: es del orden "
-            "de lo que cobra la empresa por vender los restaurantes (equipos y derechos) y compensa el apoyo de capital del plan "
-            "NEXT, que no se modela aparte. No hay compras relevantes."),
+            "años 1-2 el refranquiciamiento reduce los ingresos y la fórmula libera ~US$2.600 millones de capital en la Base. La "
+            "referencia es el refranquiciamiento de 2015-2018: las ventas de restaurantes propios bajaron US$8.156 millones y la "
+            "empresa cobró US$2.823 millones por locales y propiedades (~US$0,35 por dólar de venta, XBRL de la SEC). Vender "
+            "~US$4.600 millones de ventas propias daría ~US$1.600 millones: la Base libera ~US$1.000 millones de más en el año 1, "
+            "pero se deja porque en los años 1-5 su reinversión neta acumulada (~US$6.000 millones) supera la que sale de la "
+            "guía (capex de ~US$15.800 millones más ~US$1.750 millones de apoyo de capital del plan NEXT, menos ~US$11.300 "
+            "millones de D&A y ~US$1.600 millones por la venta de locales: ~US$4.700 millones). En la Disrupción, donde los ingresos caen cinco años, la fórmula liberaría ~US$6.000 "
+            "millones; esa historia usa un ventas/capital de 1,70 en los años 1-5 para liberar solo lo que se cobraría por los "
+            "locales a ese mismo US$0,35 por dólar (~US$1.770 millones). No hay compras relevantes."),
         "tabla": {
             "cols": ["Partida", "Valor", "Fuente", "Lectura"],
             "align": ["l", "r", "l", "l"],
@@ -179,6 +185,13 @@ SPEC = {
             "nombre": "Disrupción · Deterioro de los fundamentales",
             "descripcion": "Los franquiciados pierden rentabilidad y la renta deja de crecer",
             "roic_terminal": "costo_capital", "terminal": "estabilizacion",
+            # Liberación de capital (aviso de coherencia, 6-oct-2026): con el ventas/capital de la hoja (0,5) la caída de
+            # ingresos liberaría ~US$6.000 M en los años 1-5, ~US$2 por dólar de ingreso perdido. En el refranquiciamiento
+            # de 2015-2018 McDonald's cobró US$0,35 por dólar de venta de restaurantes propios que dejó de tener (US$2.823 M
+            # por locales y propiedades frente a una caída de US$8.156 M, XBRL de la SEC), y con franquiciados en
+            # problemas no cobraría más. Ventas/capital de 1,70 (base ajustada, con arrendamientos) en los años 1-5: libera
+            # ~US$1.770 M = 0,35 × ~US$5.060 M de ventas propias que se venden o cierran. Los años 6-10 usan los de la hoja.
+            "s2c": 1 / (1 / 1.70 - 10020.405 / 27702),
             "crec": {"Franquicias": [0.03, 0.02, 0.005, 0.0, 0.0],
                      "Restaurantes propios": [-0.17, -0.30, -0.12, -0.02, -0.02],
                      "Otros": [0.02, 0.0, 0.0, 0.0, 0.0]},
@@ -287,8 +300,11 @@ SPEC = {
          "6-10. Con el margen objetivo y un impuesto de 25%, el capital nuevo rinde ~21%, igual al ROIC actual con "
          "arrendamientos: los terrenos y edificios que McDonald's compra o arrienda son el núcleo de su modelo de renta. Un "
          "ventas/capital mayor supondría que la renta crece sin comprar inmuebles, algo que el historial no muestra. En los "
-         "años 1-2 la caída de ingresos libera capital, del orden de lo que se cobra por los restaurantes vendidos. Con ±20% en "
-         "el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."],
+         "años 1-2 la caída de ingresos libera capital (~US$2.600 millones en la Base), algo más que lo que se cobraría por "
+         "los restaurantes vendidos al ritmo de 2015-2018 (~US$0,35 por dólar de venta propia, ~US$1.600 millones), "
+         "compensado por una reinversión acumulada de los años 1-5 mayor que la de la guía de capex. La Disrupción, con "
+         "ingresos que caen cinco años, usa un ventas/capital de {s2cC} en los años 1-5 para liberar solo eso (~US$1.770 "
+         "millones y no ~US$6.000). Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."],
         ["Descuento y largo plazo: beta del sector y una ventaja durable.",
          "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de "
          "Damodaran de octubre ponderada por regiones, beta {beta}, costo de la deuda 7,13% antes de impuestos con la "

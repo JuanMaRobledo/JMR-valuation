@@ -469,6 +469,7 @@
    "descripcion": "Los franquiciados pierden rentabilidad y la renta deja de crecer",
    "roic_terminal": "costo_capital",
    "terminal": "estabilizacion",
+   "s2c": 1.7,
    "crec": {
     "Franquicias": [
      0.03,
@@ -495,6 +496,7 @@
    "tesis_que": "El tráfico cae varios años: los medicamentos para bajar de peso (GLP-1) reducen la frecuencia, el costo laboral sube por ley en más estados y las cadenas de pollo y los delivery ganan participación. La venta por local deja de crecer en términos nominales, el flujo de los franquiciados se comprime y McDonald's tiene que ampliar el apoyo de rentas y cerrar locales. El margen baja a 43%, la renta se estabiliza sin recuperación y el ROIC después del año 10 es el costo de capital.",
    "tesis_contraste": "Comparables globales negativas cuatro trimestres seguidos, cierres netos en EE.UU. o más apoyo de rentas que el anunciado.",
    "margen_reportado": 0.43,
+   "s2c_reportado": 4.4147393652093125,
    "cagr": -0.03146673526836674,
    "rev5": 23609.339195724457,
    "mix5": {
@@ -522,12 +524,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 75.43516160398241,
-    "pvFlujos": 64522.20216977242,
+    "v": 70.07477579286704,
+    "pvFlujos": 60722.95368074305,
     "pvTerminal": 40861.76459046839,
     "valorTerminal": 90773.99017579886,
-    "activosOperativos": 105383.96676024082,
-    "patrimonio": 53465.726879084985,
+    "activosOperativos": 101584.71827121144,
+    "patrimonio": 49666.478390055614,
     "ingresos": [
      27702,
      26537.852023968524,
@@ -560,11 +562,11 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -4247.555069732523,
-     -1206.8999747494454,
-     -203.31849091220647,
-     -199.25212109395943,
-     -158.73188429867878,
+     -1249.280902862507,
+     -354.97058080866043,
+     -59.79955615064896,
+     -58.60356502763513,
+     -46.68584832314082,
      -118.64871442633739,
      -78.89971621287259,
      -39.38355012698594,
@@ -573,11 +575,11 @@
     ],
     "flujo": [
      null,
-     14535.218785344161,
-     10425.696001002012,
-     9074.503571651143,
-     8913.325812622574,
-     8717.453764326807,
+     11536.944618474145,
+     9573.766607061227,
+     8930.984636889585,
+     8772.67725655625,
+     8605.407728351269,
      8582.984304921847,
      8456.445237679989,
      8337.50838771138,
@@ -637,17 +639,17 @@
     "nol0": 0,
     "impuestoEf": 0.22,
     "impuestoMarg": 0.25,
-    "s2c": 0.5,
+    "s2c": 1.7,
     "s2c2": 0.5,
     "rezago0": false,
     "convergencia": 5,
     "wacc0": 0.08017910621191003,
     "margenY1": 0.497
    },
-   "valor_bruto": 75.43516160398241,
-   "valor_bruto_prop": 72.0199205380324,
-   "valor_beta_hoja": 75.43516160398241,
-   "valor_beta_prop": 72.0199205380324
+   "valor_bruto": 70.07477579286704,
+   "valor_bruto_prop": 66.69374906579577,
+   "valor_beta_hoja": 70.07477579286704,
+   "valor_beta_prop": 66.69374906579577
   },
   {
    "id": "D",
@@ -836,8 +838,8 @@
    "valor_beta_prop": 244.31498871931745
   }
  ],
- "valor_esperado_beta_hoja": 203.9584989900141,
- "valor_esperado_beta_prop": 196.4875103938703,
+ "valor_esperado_beta_hoja": 203.42246040890257,
+ "valor_esperado_beta_prop": 195.95489324664663,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",

@@ -860,8 +860,11 @@ def avisos_coherencia(r: dict) -> list[str]:
     1. Liberación de capital: con ventas/capital, una caída de ingresos da reinversión NEGATIVA (la empresa «libera»
        capital). Damodaran la admite solo si el capital realmente sale (venta de activos, menos capital de trabajo); en
        un refranquiciamiento o una desinversión hay que compararla con lo que se cobra por lo vendido.
+       La reinversión es Δingresos / ventas/capital: SUBIR el ventas/capital de esos años reduce lo liberado (MCD,
+       Disrupción: 1,70 para liberar ~US$0,35 por dólar de venta propia perdida, lo cobrado en 2015-2018).
     2. Rendimiento del capital nuevo: margen objetivo × (1 − impuesto marginal) × ventas/capital frente al ROIC
        terminal; si lo duplica, el ventas/capital supone crecer casi sin invertir (Investment Valuation, cap. 11).
+       Solo si la historia invierte en los años 1-5 (alguna reinversión positiva).
     """
     out = []
     for h in r.get("historias", []):
@@ -873,10 +876,11 @@ def avisos_coherencia(r: dict) -> list[str]:
             total = -sum(x for _, x in neg)
             out.append(f"{h['id']} libera capital en {len(neg)} año(s) (US${total:,.0f} M, hasta {max(-x / nopat[i] for i, x in neg):.0%} "
                        "del NOPAT): justificar con lo que se cobra por los activos que salen (refranquiciamiento, ventas) o "
-                       "bajar el ventas/capital de esos años")
+                       "subir el ventas/capital propio de la historia (menos capital por dólar de ingreso perdido)")
         m, s2c, tm = (d.get("margen") or [None])[-1], d.get("s2c"), d.get("impuestoMarg")
         rt = h.get("roic_terminal_usado") or d.get("roicTerminal")
-        if all(isinstance(x, (int, float)) for x in (m, s2c, tm, rt)) and rt > 0:
+        invierte = any(isinstance(x, (int, float)) and x > 0 for x in reinv[1:6])  # sin capital nuevo no hay rendimiento que medir
+        if invierte and all(isinstance(x, (int, float)) for x in (m, s2c, tm, rt)) and rt > 0:
             rn = m * (1 - tm) * s2c
             if rn > 2 * rt:
                 out.append(f"{h['id']}: el capital nuevo rinde {rn:.0%} (margen × (1 − t) × ventas/capital), más del doble del "
