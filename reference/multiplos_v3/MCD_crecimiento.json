@@ -1,0 +1,84 @@
+{
+ "fecha": "2026-10-06",
+ "umbral": 0.02,
+ "precio": 230.94,
+ "dcfHoy": 224.11800264767598,
+ "dcfInverso": {
+  "gImplicito": -0.03383794444420646,
+  "gDcf": 0.01051144685137979,
+  "dif": -0.04434939129558625,
+  "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
+ },
+ "gDcf": {
+  "anios4a10": 0.04898126121571398,
+  "perpetuidad": 0.0529,
+  "puntoMedio": 0.05094063060785699
+ },
+ "parametros": {
+  "ke": 0.08691839670920425,
+  "wacc": 0.08434520354966289,
+  "roe": null,
+  "fcffEbitda": 0.5267743557816236,
+  "fcfeOcf": 0.7825445234217023
+ },
+ "multiplos": [
+  {
+   "metodo": "EV/EBITDA",
+   "multiplo": 16.69,
+   "multiploDcf": 14.003520508783218,
+   "gImplicito": 0.05116795244321804,
+   "gDcf": 0.045033871510712295,
+   "dif": 0.006134080932505746,
+   "difValor": 0.16204926296748878,
+   "aplica": true,
+   "lectura": "Coherente con el DCF."
+  },
+  {
+   "metodo": "EV/FCFF",
+   "multiplo": 27.35,
+   "multiploDcf": 26.58352737768509,
+   "gImplicito": 0.0460966954879464,
+   "gDcf": 0.045033871510712295,
+   "dif": 0.0010628239772341036,
+   "difValor": -0.019369084230488,
+   "aplica": true,
+   "lectura": "Coherente con el DCF."
+  },
+  {
+   "metodo": "P/E",
+   "multiplo": 21.86,
+   "multiploDcf": 19.05732356416866,
+   "gImplicito": null,
+   "gDcf": null,
+   "dif": null,
+   "difValor": 0.1339926800520821,
+   "aplica": true,
+   "lectura": "Coherente con el DCF."
+  },
+  {
+   "metodo": "P/FCFE",
+   "multiplo": 26.35,
+   "multiploDcf": 23.32520915931427,
+   "gImplicito": 0.04717732187522969,
+   "gDcf": 0.04223559913938287,
+   "dif": 0.004941722735846817,
+   "difValor": 0.11815165838755837,
+   "aplica": true,
+   "lectura": "Coherente con el DCF."
+  },
+  {
+   "metodo": "P/OCF",
+   "multiplo": 20.62,
+   "multiploDcf": 18.253014685287113,
+   "gImplicito": 0.04717723239015427,
+   "gDcf": 0.04223559913938288,
+   "dif": 0.004941633250771391,
+   "difValor": 0.1181492528517567,
+   "aplica": true,
+   "lectura": "Coherente con el DCF."
+  }
+ ],
+ "dcfFy3": 287.78460774982403,
+ "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
+ "alertas": 0
+}

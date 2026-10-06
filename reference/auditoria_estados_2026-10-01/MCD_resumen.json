@@ -1,0 +1,50 @@
+{
+ "ticker": "MCD",
+ "fecha": "2026-10-01",
+ "cambios": [],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "Yes",
+  "arrendamientos": 2329,
+  "acciones": 708.764,
+  "efecto_por_accion": 3.286002110716684
+ },
+ "antes": {
+  "dcfTecnico": 224.1180026,
+  "valorEsperado": 203.9584989900141,
+  "precioMOS": 132.57302434350916,
+  "historias": {
+   "A": 224.11800264767598,
+   "B": 185.41794687154749,
+   "C": 75.43516160398241,
+   "D": 253.34329858594
+  }
+ },
+ "despues": {
+  "dcfTecnico": 224.1180026,
+  "valorEsperado": 203.9584989900141,
+  "precioMOS": 132.57302434350916,
+  "historias": {
+   "A": 224.11800264767598,
+   "B": 185.41794687154749,
+   "C": 75.43516160398241,
+   "D": 253.34329858594
+  }
+ },
+ "tramo_tasas_base": "$12,000-25,000 Mn"
+}

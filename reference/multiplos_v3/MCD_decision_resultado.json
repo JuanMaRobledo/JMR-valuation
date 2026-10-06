@@ -1,0 +1,266 @@
+{
+ "decision": {
+  "ticker": "MCD",
+  "etapa_desde": null,
+  "etapa_motivo": "A: McDonald's es un franquiciador maduro desde hace décadas; no hubo cambio de etapa del negocio, así que A usa la mediana de los últimos cinco cierres (FY2021-FY2025) y el LTM. El LTM (P/E 18,9×, EV/EBITDA 13,7×) es el más bajo de la década: refleja la caída de la acción en 2026 (tráfico débil en EE.UU. y el plan NEXT), no un cambio de etapa.",
+  "peers_excluir": {
+   "*": [
+    "WEN",
+    "PZZA",
+    "CMG"
+   ]
+  },
+  "peers_motivo": "B: franquiciadores de comida rápida con datos de yfinance al 6-oct-2026 (precios del 2-oct): Yum! Brands, Restaurant Brands International y Domino's. Se excluyen Wendy's (seis trimestres de comparables negativas, −7% en el 2T26; P/OCF 3×), Papa John's (ingresos −8,8%, reestructuración) y Chipotle (opera sus locales: otro modelo de negocio).",
+  "ajuste_peers": 0.05,
+  "ajuste_motivo": "Ajuste +5%: crecimiento de los ingresos reportados a FY+3 menor que la mediana por el refranquiciamiento (~1-4% frente a 4-12%), −5%, aunque las ventas del sistema crecen parecido (~5%); margen operativo mayor (~50% frente a 19-33%), +5%; riesgo menor (calificación Baa1/BBB+ frente a grado especulativo de Yum! y RBI, beta ~0,8, propiedad de los inmuebles), +5%.",
+  "lambda": 0.25,
+  "lambda_motivo": "λ = 0,25: la empresa de FY+3 se parece a la de hoy (franquiciador maduro), así que el Base se apoya sobre todo en la historia y en los peers. P/E no tiene justificado: el patrimonio contable es negativo (−US$1.023 millones por US$80.527 millones de recompras acumuladas), así que el ROE no tiene sentido y el Base de P/E es el promedio de A y B.",
+  "fuentes": [
+   "[McDonald's, 10-Q del 2T26, 7-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm)",
+   "[McDonald's, 10-K 2025, 24-feb-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm)",
+   "[Restaurant Dive, ventas comparables de 18 cadenas, 27-ago-2026](https://www.restaurantdive.com/news/tracking-same-store-sales-18-major-restaurant-chains/742371/)"
+  ],
+  "evaluacion": "Lectura del 6-oct-2026 (análisis desde cero): los múltiplos consolidados Base hoy (US$279,64) valen 25% más que el DCF Base (US$224,12), en el límite del ±25%. No se movió ningún múltiplo para acercarlos. La causa es de crecimiento del BPA: la historia de cinco años (P/E 25,6×) se formó cuando el BPA crecía ~8-10% al año, y la Base del DCF supone ingresos casi planos por el refranquiciamiento y un margen que sube poco a poco. El chequeo de crecimiento implícito no da alertas (los cinco múltiplos Base difieren menos de 1 pp del que implica el DCF en FY+3). El DCF es la lectura más confiable; los múltiplos son precio relativo."
+ },
+ "resultado": {
+  "EV/EBITDA": {
+   "aplica": true,
+   "hoja": "EVEBITDA",
+   "A": 18.3,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 18,3x",
+   "A_p25": 15.9,
+   "A_p75": 18.81,
+   "A_max": 21.48,
+   "A_excluidos": [],
+   "B_mediana": 14.45,
+   "B_ajustada": 15.17,
+   "B_n": 3,
+   "B_regresion": null,
+   "B_peers": "YUM 16,3x, QSR 13,8x, DPZ 14,5x",
+   "B_excluidos": [
+    "CMG",
+    "PZZA",
+    "WEN"
+   ],
+   "C": {
+    "Conservador": 15.72,
+    "Base": 16.57,
+    "Optimista": 17.0
+   },
+   "mercado": 16.73,
+   "lambda": 0.25,
+   "conservador": 15.56,
+   "base": 16.69,
+   "optimista": 17.36,
+   "factor_cons": 0.932,
+   "factor_opt": 1.04,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    15.17,
+    18.3
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 17.850968475877192,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "EV/FCFF": {
+   "aplica": true,
+   "hoja": "EVFCFF",
+   "A": 31.05,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 31,0x (EV/FCF × 0,87 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 28.32,
+   "A_p75": 35.69,
+   "A_max": 45.28,
+   "A_excluidos": [],
+   "B_mediana": 19.92,
+   "B_ajustada": 20.92,
+   "B_n": 3,
+   "B_regresion": null,
+   "B_peers": "YUM 24,0x, QSR 19,9x, DPZ 18,3x",
+   "B_excluidos": [
+    "CMG",
+    "PZZA",
+    "WEN"
+   ],
+   "C": {
+    "Conservador": 27.48,
+    "Base": 31.46,
+    "Optimista": 34.89
+   },
+   "mercado": 25.98,
+   "lambda": 0.25,
+   "conservador": 25.02,
+   "base": 27.35,
+   "optimista": 30.65,
+   "factor_cons": 0.915,
+   "factor_opt": 1.121,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    20.92,
+    31.46
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 27.2781777602366,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/E": {
+   "aplica": true,
+   "hoja": "PE",
+   "A": 25.61,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 25,6x",
+   "A_p25": 24.31,
+   "A_p75": 26.86,
+   "A_max": 34.01,
+   "A_excluidos": [],
+   "B_mediana": 17.25,
+   "B_ajustada": 18.11,
+   "B_n": 3,
+   "B_regresion": null,
+   "B_peers": "YUM 17,3x, QSR 17,6x, DPZ 16,9x",
+   "B_excluidos": [
+    "CMG",
+    "PZZA",
+    "WEN"
+   ],
+   "C": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "mercado": 21.86,
+   "lambda": 0.25,
+   "conservador": 21.18,
+   "base": 21.86,
+   "optimista": 22.52,
+   "factor_cons": 0.969,
+   "factor_opt": 1.03,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    18.11,
+    25.61
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 25.44954286756658,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/FCFE": {
+   "aplica": true,
+   "hoja": "PFCFE",
+   "A": 30.2,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 30,2x",
+   "A_p25": 27.38,
+   "A_p75": 33.92,
+   "A_max": 37.96,
+   "A_excluidos": [],
+   "B_mediana": 19.61,
+   "B_ajustada": 20.59,
+   "B_n": 3,
+   "B_regresion": null,
+   "B_peers": "YUM 22,3x, QSR 19,6x, DPZ 15,0x",
+   "B_excluidos": [
+    "CMG",
+    "PZZA",
+    "WEN"
+   ],
+   "C": {
+    "Conservador": 25.74,
+    "Base": 29.21,
+    "Optimista": 32.15
+   },
+   "mercado": 25.4,
+   "lambda": 0.25,
+   "conservador": 23.47,
+   "base": 26.35,
+   "optimista": 28.91,
+   "factor_cons": 0.891,
+   "factor_opt": 1.097,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    20.59,
+    30.2
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 22.53224923728285,
+    "J30": null
+   },
+   "nota": ""
+  },
+  "P/OCF": {
+   "aplica": true,
+   "hoja": "POCF",
+   "A": 22.1,
+   "A_desc": "mediana de los últimos 5 cierres + LTM depurados = 22,1x",
+   "A_p25": 19.31,
+   "A_p75": 23.94,
+   "A_max": 26.45,
+   "A_excluidos": [],
+   "B_mediana": 16.81,
+   "B_ajustada": 17.65,
+   "B_n": 3,
+   "B_regresion": null,
+   "B_peers": "YUM 17,9x, QSR 16,8x, DPZ 12,6x",
+   "B_excluidos": [
+    "CMG",
+    "PZZA",
+    "WEN"
+   ],
+   "C": {
+    "Conservador": 19.16,
+    "Base": 22.86,
+    "Optimista": 26.41
+   },
+   "mercado": 19.88,
+   "lambda": 0.25,
+   "conservador": 17.79,
+   "base": 20.62,
+   "optimista": 22.49,
+   "factor_cons": 0.863,
+   "factor_opt": 1.091,
+   "opt_tope_historico": null,
+   "base_en_rango": true,
+   "rango": [
+    17.65,
+    22.86
+   ],
+   "antes": {
+    "J8": null,
+    "J19": 19.22835970843945,
+    "J30": null
+   },
+   "nota": ""
+  }
+ },
+ "hoja": {
+  "dcf_hoy": [
+   185.41794687154749,
+   224.11800264767598,
+   253.34329858594
+  ],
+  "multiplos_hoy": [
+   251.2908225852371,
+   279.63777909954183,
+   301.64044960207696
+  ],
+  "ponderado_hoy": [
+   224.94167229976122,
+   257.42986851879544,
+   282.32158919562215
+  ],
+  "brecha_base": 0.24772564361616922,
+  "fila_origen": 54
+ }
+}

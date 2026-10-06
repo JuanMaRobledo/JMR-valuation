@@ -1,0 +1,1740 @@
+{
+ "Income Statement!D8": {
+  "before": 2200.2,
+  "after": 1985.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!D9": {
+  "before": 1482,
+  "after": 1482,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!D11": {
+  "before": 8520.4,
+  "after": 8735.2,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!D28": {
+  "before": 10304.6,
+  "after": 10304.6,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!E8": {
+  "before": 2229.4,
+  "after": 1966.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!E9": {
+  "before": 1617.9,
+  "after": 1617.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!E11": {
+  "before": 8159.4,
+  "after": 8421.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!E28": {
+  "before": 10687.7,
+  "after": 10687.7,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!F8": {
+  "before": 0,
+  "after": 2245.0,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!F9": {
+  "before": 300.6,
+  "after": 1751.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!F11": {
+  "before": 11583.2,
+  "after": 7887.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!F28": {
+  "before": 7624.6,
+  "after": 9075.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!G8": {
+  "before": 0,
+  "after": 2377.8,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!G9": {
+  "before": 329.7,
+  "after": 1868.1,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!G11": {
+  "before": 12537.2,
+  "after": 8621.0,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!G28": {
+  "before": 10685.7,
+  "after": 12224.1,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!H8": {
+  "before": 2863,
+  "after": 2492.6,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!H9": {
+  "before": 370.4,
+  "after": 1871,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!H11": {
+  "before": 10578.2,
+  "after": 9448.0,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!H28": {
+  "before": 9741.4,
+  "after": 11242,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I8": {
+  "before": 2817,
+  "after": 2435.3,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I9": {
+  "before": 381.7,
+  "after": 1978,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I11": {
+  "before": 10648.3,
+  "after": 9433.7,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I28": {
+  "before": 12028.4,
+  "after": 13624.7,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J8": {
+  "before": 2858,
+  "after": 2411,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J9": {
+  "before": 447,
+  "after": 2097,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J11": {
+  "before": 10903,
+  "after": 9700,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J28": {
+  "before": 12159,
+  "after": 13809,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K8": {
+  "before": 3039,
+  "after": 2582,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K9": {
+  "before": 457,
+  "after": 2199,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K11": {
+  "before": 10996,
+  "after": 9711,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K28": {
+  "before": 12850,
+  "after": 14592,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L8": {
+  "before": 3232,
+  "after": 2766,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L9": {
+  "before": 466,
+  "after": 2266,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L11": {
+  "before": 11199,
+  "after": 9865,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L28": {
+  "before": 13271,
+  "after": 15071,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I23": {
+  "before": 11564659.29,
+  "after": 11.63,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J23": {
+  "before": 11390774.35,
+  "after": 11.45,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K23": {
+  "before": 11952819.65,
+  "after": 12.0,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L23": {
+  "before": 12265494.14,
+  "after": 12.35,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I24": {
+  "before": 11564659.29,
+  "after": 11.56,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J24": {
+  "before": 11390774.35,
+  "after": 11.39,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K24": {
+  "before": 11952819.65,
+  "after": 11.95,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L24": {
+  "before": 12265494.14,
+  "after": 12.31,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I25": {
+  "before": 0,
+  "after": 727.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J25": {
+  "before": 0,
+  "after": 718.3,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K25": {
+  "before": 0,
+  "after": 713.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L25": {
+  "before": 0,
+  "after": 709.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I26": {
+  "before": 0,
+  "after": 732.3,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J26": {
+  "before": 0,
+  "after": 721.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K26": {
+  "before": 0,
+  "after": 716.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L26": {
+  "before": 0,
+  "after": 712.3,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!I27": {
+  "before": 0,
+  "after": 732.3,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!J27": {
+  "before": 0,
+  "after": 721.9,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!K27": {
+  "before": 0,
+  "after": 716.4,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Income Statement!L27": {
+  "before": 707.6,
+  "after": 707.6,
+  "reason": "D&A total (no solo la corporativa), SG&A sin su D&A, SG&A 2020-21, BPA y acciones 2023-LTM"
+ },
+ "Cash Flow Statement!F4": {
+  "before": 300.6,
+  "after": 1751.4,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!F6": {
+  "before": 1322.8,
+  "after": -128.0,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!F38": {
+  "before": 3390.3,
+  "after": 4841.1,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!F39": {
+  "before": 4301.9,
+  "after": 5752.7,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!G4": {
+  "before": 329.7,
+  "after": 1868.1,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!G6": {
+  "before": 1204.9,
+  "after": -333.5,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!G38": {
+  "before": 5834.9,
+  "after": 7373.3,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!G39": {
+  "before": 6850.1,
+  "after": 8388.5,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!H4": {
+  "before": 370.4,
+  "after": 1871,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!H6": {
+  "before": 1187.6,
+  "after": -313.0,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!H38": {
+  "before": 4648.6,
+  "after": 6149.2,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!H39": {
+  "before": 5868.7,
+  "after": 7369.3,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!I4": {
+  "before": 381.7,
+  "after": 1978,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!I6": {
+  "before": 756.1,
+  "after": -840.2,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!I38": {
+  "before": 6493.1,
+  "after": 8089.4,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!I39": {
+  "before": 7398.2,
+  "after": 8994.5,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!J4": {
+  "before": 447,
+  "after": 2097,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!J6": {
+  "before": 907,
+  "after": -743,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!J38": {
+  "before": 5895,
+  "after": 7545,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!J39": {
+  "before": 6982.5,
+  "after": 8632.5,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!K4": {
+  "before": 457,
+  "after": 2199,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!K6": {
+  "before": 1505,
+  "after": -237,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!K38": {
+  "before": 5655,
+  "after": 7397,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!K39": {
+  "before": 6830.6,
+  "after": 8572.6,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!L4": {
+  "before": 466,
+  "after": 2266,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!L6": {
+  "before": 2058,
+  "after": 258,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!L38": {
+  "before": 5667,
+  "after": 7467,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Cash Flow Statement!L39": {
+  "before": 6939.7,
+  "after": 8739.7,
+  "reason": "D&A total en el flujo (2020-LTM); otros ajustes compensan para conservar el flujo operativo"
+ },
+ "Balance Sheet!L3": {
+  "before": 822,
+  "after": 822,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L5": {
+  "before": 822,
+  "after": 822,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L9": {
+  "before": 3389,
+  "after": 3523,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L10": {
+  "before": 4163,
+  "after": 4345,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L11": {
+  "before": 28241,
+  "after": 28479,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L13": {
+  "before": 3354,
+  "after": 3347,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L15": {
+  "before": 23757,
+  "after": 23749,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L16": {
+  "before": 59515,
+  "after": 59920,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L18": {
+  "before": 1149,
+  "after": 1114,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L20": {
+  "before": 725,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L23": {
+  "before": 2487,
+  "after": 2904,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L24": {
+  "before": 4361,
+  "after": 4018,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L25": {
+  "before": 39973,
+  "after": 39863,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L26": {
+  "before": 2329,
+  "after": 2329,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L27": {
+  "before": 14643,
+  "after": 14731,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L28": {
+  "before": 56945,
+  "after": 56923,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L29": {
+  "before": 61306,
+  "after": 60941,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L31": {
+  "before": 9641,
+  "after": 9841,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L32": {
+  "before": -2414,
+  "after": -2340,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L33": {
+  "before": 70282,
+  "after": 71987,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L34": {
+  "before": -1791,
+  "after": -1023,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L35": {
+  "before": -1791,
+  "after": -1023,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!L36": {
+  "before": 59515,
+  "after": 59920,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!K20": {
+  "before": 725,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!K23": {
+  "before": 2487,
+  "after": 3212,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!E26": {
+  "before": 12757.8,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!E27": {
+  "before": 5224.2,
+  "after": 17982.0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!F26": {
+  "before": 13321.3,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!F27": {
+  "before": 5752.4,
+  "after": 19073.7,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!G26": {
+  "before": 13020.9,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!G27": {
+  "before": 5791.7,
+  "after": 18812.6,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!H26": {
+  "before": 12134.4,
+  "after": 0,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!H27": {
+  "before": 4599,
+  "after": 16733.4,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!I26": {
+  "before": 0,
+  "after": 1575.5,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Balance Sheet!I27": {
+  "before": 16841.6,
+  "after": 15266.1,
+  "reason": "LTM = balance al 30-jun-2026 (10-Q 2T26); deuda corriente dentro del LP; arrendamientos comparables"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 230.94,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B20": {
+  "before": "='Balance Sheet'!L14",
+  "after": 0,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B22": {
+  "before": "='Income Statement'!L27",
+  "after": "='Income Statement'!L27+1,164",
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B24": {
+  "before": "='Income Statement'!L29",
+  "after": 0.22,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B38": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B39": {
+  "before": "",
+  "after": 8.8,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B40": {
+  "before": "",
+  "after": 228.19,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B41": {
+  "before": 7,
+  "after": 5.3,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Input sheet!B42": {
+  "before": 0.45,
+  "after": 0.18,
+  "reason": "Datos base MCD desde cero (10-Q 2T26, 10-K 2025)"
+ },
+ "Operating lease converter!E5": {
+  "before": 295,
+  "after": 1631,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B8": {
+  "before": 287,
+  "after": 1200,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B9": {
+  "before": 235,
+  "after": 1166,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B10": {
+  "before": 194,
+  "after": 1115,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B11": {
+  "before": 151,
+  "after": 1076,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B12": {
+  "before": 98,
+  "after": 1029,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Operating lease converter!B13": {
+  "before": 605,
+  "after": 10977,
+  "reason": "Arrendamientos operativos: gasto de renta 2025 y compromisos al 31-dic-2025 (10-K 2025, nota de arrendamientos)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.0409,
+  "after": 0.037,
+  "reason": "Prima madura de octubre de 2026 (3,70%), como el resto de la cartera"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Operating regions",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H22": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H23": {
+  "before": 3360,
+  "after": "",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H24": {
+  "before": "",
+  "after": 1346.1,
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H25": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H26": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H27": {
+  "before": "",
+  "after": 777.9,
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H28": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H29": {
+  "before": 14120,
+  "after": 12726.7,
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H30": {
+  "before": "",
+  "after": 9607.3,
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H31": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!H32": {
+  "before": "",
+  "after": 2427,
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 12,
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Actual rating",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Cost of capital worksheet!B36": {
+  "before": "A1/A+",
+  "after": "Baa1/BBB+",
+  "reason": "Costo de capital MCD desde cero: beta bottom-up global, prima por regiones, rating real"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": -0.0087,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.497,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.0146,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.5548,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 0.5,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 0.5,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B49": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Input sheet!B50": {
+  "before": 0.2,
+  "after": 0.184,
+  "reason": "Supuestos Base MCD desde cero (6-oct-2026) = historia Base"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa MCD (madura estable)"
+ },
+ "Descuento de múltiplos!A38": {
+  "before": "DCF · valor intrínseco (valor presente)",
+  "after": "DCF activo hoy · escenarios de las historias",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!C38": {
+  "before": "='Valuation output'!B86",
+  "after": "='Escenarios e historias'!H6",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!D38": {
+  "before": "='Valuation output'!B35",
+  "after": "='Escenarios e historias'!H5",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!E38": {
+  "before": "='Valuation output'!B137",
+  "after": "='Escenarios e historias'!H8",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!A43": {
+  "before": "Compra con MOS sobre el ponderado (secundario)",
+  "after": "Precio con MOS sobre el valor esperado",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!C43": {
+  "before": "=IFERROR(C40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!D43": {
+  "before": "=IFERROR(D40*(1-$B$43);\"\")",
+  "after": "='Escenarios e historias'!H14",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!E43": {
+  "before": "=IFERROR(E40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 257.49,
+  "after": 230.94,
+  "reason": "Precio al día del análisis = cierre del 30-sep-2026"
+ },
+ "Trailing Valuation!L3": {
+  "before": 233.04,
+  "after": "='Input sheet'!D1",
+  "reason": "Precio LTM = precio de corte"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "McDonald's Corporation",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Chris Kempczinski (presidente del directorio y CEO). CFO: Ian Borden. Skye Anderson, presidenta de McDonald's USA desde el 4-ago-2026 (reemplaza a Joe Erlinger).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Restaurantes de comida rápida, franquiciador (Damodaran: Restaurant/Dining)",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://corporate.mcdonalds.com  |  IR: https://investor.mcdonalds.com",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A12": {
+  "before": "Visión General de la Empresa",
+  "after": "Visión General de la Empresa",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Mayor cadena de comida rápida del mundo: más de 46.000 locales en más de 100 países, ~95% operados por franquiciados. Ingresos LTM a jun-2026 de US$27.702M (61,6% rentas, regalías y cuotas de franquicias) sobre ventas del sistema de ~US$139.400M (2025). Es dueña o arrendataria de largo plazo del terreno y el edificio de casi todos los locales.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "EE.UU.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "13.769 locales (95% franquiciados) y ingresos de US$10.825M en 2025. Comparables +0,8% en el 2T26 (ticket y mezcla, tráfico negativo) y guía de 3T26 levemente negativa.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "International Operated Markets",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "10.918 locales en Francia, Canadá, Reino Unido, Alemania, Australia, Italia, España, Polonia y otros (89% franquiciados); ingresos de US$13.633M en 2025 y comparables +1,5% en el 2T26.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Developmental Licensed y corporativo",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "~99% licenciados: China y Japón (afiliadas con participación), Latinoamérica, Medio Oriente y otros; regalías y cuotas por US$2.427M en 2025; comparables +1,9% en el 2T26 (Japón positivo, China negativo).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Modelo de ingresos",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Franquicias: renta (~US$10.442M en 2025) y regalías (~US$6.018M) sobre la venta de cada local; restaurantes propios (US$9.690M en 2025) con margen de ~15%; otros ingresos (tecnología cobrada a franquiciados, licencias).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Renta y regalías indexadas a ventas",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "~90% del margen de restaurantes viene de franquicias; la renta tiene mínimos contractuales (US$31.451M de pagos mínimos futuros) y la regalía crece con la venta del sistema.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Escala, marca y datos",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "~220 millones de usuarios activos de fidelización y US$40.000M de ventas a miembros en 12 meses; 17 productos que venden más de US$1.000M al año; ~2.600 aperturas previstas en 2026.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Margen y caja",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Margen operativo no GAAP de 46,9% en el 2T26, guía de «low-to-mid 50%» a 2030 con refranquiciamiento a ~98%; dividendo de US$7,44 anual (49 años seguidos de aumentos) y recompras de US$1.251M en el 1S26.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Tráfico de EE.UU.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Comparables de +0,8% en el 2T26 con tráfico negativo; el CEO admitió que cambiar ofertas digitales por el menú de precios fijos fue un mal canje y solo 60-65% del sistema adoptó los precios sugeridos.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Costo del plan NEXT",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "US$8.500M de apoyo a franquiciados hasta 2036 (US$5.000M a 2030) en rentas y capital; la acción cayó 4,8% el 23-sep-2026. El apoyo de rentas se amortiza ~10 años contra el resultado.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Competencia por valor y costo laboral",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Burger King (+8,5%) y Taco Bell (+7%) ganaron comparables en el 2T26 mientras McDonald's creció +0,8%; salarios mínimos de comida rápida y medicamentos GLP-1 presionan la frecuencia y la economía del franquiciado.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-Q del 2T26 de McDonald's (7-ago-2026) y 10-K 2025 (24-feb-2026), SEC EDGAR; comunicado e información complementaria del 2T26 (8-K del 4-ago-2026); 8-K del nombramiento de Skye Anderson (4-ago-2026); 8-K del Investor Day (23-sep-2026) y su transcripción (Stock Analysis); Restaurant Dive (comparables de 18 cadenas, 27-ago-2026; plan NEXT, 28-sep-2026); Damodaran (betas, márgenes, ROIC y ventas/capital por industria, ene-2026; ERP oct-2026); UST 10 años y precio de cierre del 30-sep-2026.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 1 de julio de 2026 – 30 de septiembre de 2026",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T26: ingresos +4%, comparables globales +1,3% (EE.UU. +0,8%)",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ingresos US$7.099M; EBIT US$3.338M; BPA diluido US$3,32 (+6%); ventas del sistema +5% (+4% a moneda constante).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "Margen 2026 «mid-to-high 40%»; capex US$3.700-3.900M; ~2.600 aperturas",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Gasto general ~2,2% de las ventas del sistema; tasa efectiva 21-23%; conversión de flujo libre «low-to-mid 80%» (anexo 99.2).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Gestión",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Skye Anderson reemplaza a Joe Erlinger al frente de EE.UU.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "8-K del 4-ago-2026; Erlinger asesora la transición hasta comienzos de 2027.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Investor Day",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Plan NEXT: margen «low-to-mid 50%» a 2030 y US$8.500M de apoyo",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Refranquiciamiento a ~98% a fines de 2028; gasto general 1,9% a 2030; +1,5 pp de participación en pollo y bebidas (8-K del 23-sep-2026).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Mercado",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "La acción cae 4,8% el día del Investor Day",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Peor día desde marzo de 2020; recortes de precio objetivo de JPMorgan, TD Cowen, Evercore y BMO (24-sep-2026).",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "Refranquiciamiento",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "Baja los ingresos reportados en los años 1-2 (las ventas de restaurantes propios caen ~50% hasta 2028) y sube el margen; las ventas del sistema siguen creciendo ~5%.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "Arrendamientos",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "Operativos capitalizados con el conversor (VP US$10.020M a la tasa de la deuda): EBIT +US$963M y margen +3,48 pp; los financieros (US$2.329M) ya están en la deuda.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Historias",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Cuatro historias activas: Base (50%), Conservadora (25%), Disrupción (10%) y Optimista (15%); 'Valuation output' calcula las cuatro con la estructura de Damodaran.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Riesgo en el descuento",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "Beta 0,79 bottom-up: Restaurant/Dining global 0,66 reapalancada con la D/E de mercado (~25%). Prima de mercado 3,70% (oct-2026) ponderada por regiones: 4,33%. Kd 7,13% con la calificación Baa1/BBB+.",
+  "reason": "Contenido cualitativo MCD desde cero (6-oct-2026)"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 150000,
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B12",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Valuation output'!B42",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Income Statement'!L16",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K27/'Income Statement'!F27)^(1/5)-1",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadísticas MCD (fórmulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "McDonald's: arrendador y franquiciador que refranquicia a 98% mientras defiende el tráfico de EE.UU.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "McDonald's cobra renta y regalías sobre ~US$139.400M de ventas del sistema y reporta US$27.702M de ingresos LTM con un margen operativo de ~46%. La historia Base: las ventas del sistema crecen ~5% (aperturas ~2,5% y comparables de 2-3%), el refranquiciamiento a ~98% baja los ingresos reportados dos años y sube el margen a 52% en cinco años, y el capital nuevo (inmuebles) rinde lo mismo que hoy (~21%). Con una marca probada y escala sin par, el ROIC después del año 10 es el promedio de la industria (18,4%).",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 −0,9% (franquicias +7%, restaurantes propios −15% por refranquiciamiento, otros +8%); CAGR 1-5 ~1,0%.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 49,7% (LTM con arrendamientos); objetivo 55,5% (52% reportado + 3,48 pp) en 5 años: mezcla y gasto general.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva 22% (guía 21-23%) que converge a la marginal de 25%.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "0,5 en los años 1-10: el capital nuevo rinde ~21%, igual al ROIC actual con arrendamientos.",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC con arrendamientos ~21%; terminal 18,4% (promedio de Restaurant/Dining, ventaja durable).",
+  "reason": "Historia MCD"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Ke 8,69% (rf 5,29% + beta 0,79 × ERP por regiones 4,33%); Kd 7,13% (Baa1/BBB+); WACC 8,02%.",
+  "reason": "Historia MCD"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": -0.0087,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Suma por fuente: franquicias +7%, restaurantes propios −15% (refranquiciamiento), otros +8%.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.497,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Margen LTM en base ajustada por arrendamientos (12.805 + 963) / 27.702.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.0146,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Años 2-5 de la Base: −4,7% (2028, fin del refranquiciamiento), +1,6%, +4,6%, +4,6%.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.5548,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "52% reportado (tramo bajo-medio de la guía «low-to-mid 50%» a 2030) + 3,48 pp de arrendamientos.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "La guía llega a 2030; la mejora es de mezcla y gasto general.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 0.5,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Rendimiento sobre el capital nuevo ~21% (55,5% × 75% × 0,5) = ROIC actual con arrendamientos.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 0.5,
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Igual que los años 1-5: el modelo de renta exige inmuebles por cada local nuevo.",
+  "reason": "Recomendaciones MCD"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Chequeo de independencia (2026-10-06): múltiplos consolidados hoy (Base) 279,64 frente a DCF hoy 224,12 (+25%). Lectura del 6-oct-2026 (análisis desde cero): pendiente del chequeo de crecimiento implícito.",
+  "after": "Evaluación MCD (6-oct-2026, desde cero): los múltiplos Base salen de tres anclas (historia de cinco cierres, peers Yum!, RBI y Domino's con +5% y el justificado, λ = 0,25; P/E sin justificado por el patrimonio negativo). Los consolidados hoy valen ~25% más que el DCF Base: la historia de cinco años (P/E 25,6×) se formó con más crecimiento del BPA que el que hoy muestra el negocio. El chequeo de crecimiento implícito no da alertas (los cinco Base cuentan la historia del DCF en FY+3). El DCF es el valor intrínseco; los múltiplos son precio relativo.",
+  "reason": "Evaluación de múltiplos MCD"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ],
+   [],
+   [],
+   [
+    "ORIGEN DE LOS MÚLTIPLOS (prompt de valoración v3, 2026-10-06)"
+   ],
+   [
+    "Método",
+    "Aplica",
+    "A · historia",
+    "B · peers (ajustada)",
+    "C · justificado (Cons/Base/Opt)",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "EV/EBITDA",
+    "Sí",
+    "mediana de los últimos 5 cierres + LTM depurados = 18,3x",
+    "mediana 14,4x (n=3: YUM 16,3x, QSR 13,8x, DPZ 14,5x) × 1,05 = 15,2x",
+    "15,7x / 16,6x / 17,0x",
+    15.56,
+    16.69,
+    17.36
+   ],
+   [
+    "EV/FCFF",
+    "Sí",
+    "mediana de los últimos 5 cierres + LTM depurados = 31,0x (EV/FCF × 0,87 = FCF después de intereses ÷ FCFF)",
+    "mediana 19,9x (n=3: YUM 24,0x, QSR 19,9x, DPZ 18,3x) × 1,05 = 20,9x",
+    "27,5x / 31,5x / 34,9x",
+    25.02,
+    27.35,
+    30.65
+   ],
+   [
+    "P/E",
+    "Sí",
+    "mediana de los últimos 5 cierres + LTM depurados = 25,6x",
+    "mediana 17,2x (n=3: YUM 17,3x, QSR 17,6x, DPZ 16,9x) × 1,05 = 18,1x",
+    "— / — / —",
+    21.18,
+    21.86,
+    22.52
+   ],
+   [
+    "P/FCFE",
+    "Sí",
+    "mediana de los últimos 5 cierres + LTM depurados = 30,2x",
+    "mediana 19,6x (n=3: YUM 22,3x, QSR 19,6x, DPZ 15,0x) × 1,05 = 20,6x",
+    "25,7x / 29,2x / 32,1x",
+    23.47,
+    26.35,
+    28.91
+   ],
+   [
+    "P/OCF",
+    "Sí",
+    "mediana de los últimos 5 cierres + LTM depurados = 22,1x",
+    "mediana 16,8x (n=3: YUM 17,9x, QSR 16,8x, DPZ 12,6x) × 1,05 = 17,6x",
+    "19,2x / 22,9x / 26,4x",
+    17.79,
+    20.62,
+    22.49
+   ],
+   [
+    "Criterios: A: McDonald's es un franquiciador maduro desde hace décadas; no hubo cambio de etapa del negocio, así que A usa la mediana de los últimos cinco cierres (FY2021-FY2025) y el LTM. El LTM (P/E 18,9×, EV/EBITDA 13,7×) es el más bajo de la década: refleja la caída de la acción en 2026 (tráfico débil en EE.UU. y el plan NEXT), no un cambio de etapa. B: franquiciadores de comida rápida con datos de yfinance al 6-oct-2026 (precios del 2-oct): Yum! Brands, Restaurant Brands International y Domino's. Se excluyen Wendy's (seis trimestres de comparables negativas, −7% en el 2T26; P/OCF 3×), Papa John's (ingresos −8,8%, reestructuración) y Chipotle (opera sus locales: otro modelo de negocio). Ajuste +5%: crecimiento de los ingresos reportados a FY+3 menor que la mediana por el refranquiciamiento (~1-4% frente a 4-12%), −5%, aunque las ventas del sistema crecen parecido (~5%); margen operativo mayor (~50% frente a 19-33%), +5%; riesgo menor (calificación Baa1/BBB+ frente a grado especulativo de Yum! y RBI, beta ~0,8, propiedad de los inmuebles), +5%. λ = 0,25: la empresa de FY+3 se parece a la de hoy (franquiciador maduro), así que el Base se apoya sobre todo en la historia y en los peers. P/E no tiene justificado: el patrimonio contable es negativo (−US$1.023 millones por US$80.527 millones de recompras acumuladas), así que el ROE no tiene sentido y el Base de P/E es el promedio de A y B."
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}
