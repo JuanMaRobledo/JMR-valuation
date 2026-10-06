@@ -854,6 +854,36 @@ def _justifica_multiplos(r: dict, W) -> None:
         "resultado de Disrupción. La tabla por método está en la valoración vigente.")
 
 
+def avisos_coherencia(r: dict) -> list[str]:
+    """Controles de coherencia económica de cada historia (criterio Damodaran, 6-oct-2026, aprendidos con MCD):
+
+    1. Liberación de capital: con ventas/capital, una caída de ingresos da reinversión NEGATIVA (la empresa «libera»
+       capital). Damodaran la admite solo si el capital realmente sale (venta de activos, menos capital de trabajo); en
+       un refranquiciamiento o una desinversión hay que compararla con lo que se cobra por lo vendido.
+    2. Rendimiento del capital nuevo: margen objetivo × (1 − impuesto marginal) × ventas/capital frente al ROIC
+       terminal; si lo duplica, el ventas/capital supone crecer casi sin invertir (Investment Valuation, cap. 11).
+    """
+    out = []
+    for h in r.get("historias", []):
+        d = h.get("detalle") or {}
+        reinv, nopat = d.get("reinversion") or [], d.get("nopat") or []
+        neg = [(i, x) for i, x in enumerate(reinv) if isinstance(x, (int, float)) and x < 0
+               and i < len(nopat) and isinstance(nopat[i], (int, float)) and nopat[i] > 0 and -x > 0.10 * nopat[i]]
+        if neg:
+            total = -sum(x for _, x in neg)
+            out.append(f"{h['id']} libera capital en {len(neg)} año(s) (US${total:,.0f} M, hasta {max(-x / nopat[i] for i, x in neg):.0%} "
+                       "del NOPAT): justificar con lo que se cobra por los activos que salen (refranquiciamiento, ventas) o "
+                       "bajar el ventas/capital de esos años")
+        m, s2c, tm = (d.get("margen") or [None])[-1], d.get("s2c"), d.get("impuestoMarg")
+        rt = h.get("roic_terminal_usado") or d.get("roicTerminal")
+        if all(isinstance(x, (int, float)) for x in (m, s2c, tm, rt)) and rt > 0:
+            rn = m * (1 - tm) * s2c
+            if rn > 2 * rt:
+                out.append(f"{h['id']}: el capital nuevo rinde {rn:.0%} (margen × (1 − t) × ventas/capital), más del doble del "
+                           f"ROIC terminal ({rt:.0%}): revisar el ventas/capital")
+    return out
+
+
 def _cifras(r: dict) -> dict:
     """Cifras vigentes para la prosa propia de una ficha (spec["justificacion"]): {clave} se sustituye al redactar."""
     H = {h["id"]: h for h in r["historias"]}
@@ -1483,6 +1513,8 @@ def main(tickers):
             print(f"{tk:5s} AVISO: {que} da {ref:.2f} y la hoja (VO B35 o FCFE financiero B42) {r['dcf_base']:.2f}"
                   + (" (con --offline, el DCF de la hoja guardado puede ser anterior: correr sin --offline)" if offline else ""),
                   flush=True)
+        for aviso in avisos_coherencia(r):
+            print(f"{tk:5s} AVISO: {aviso}", flush=True)
         print(f"{tk:5s} DCF {r['dcf_base']:.2f} | VE {r['valor_esperado_beta_hoja']:.2f} / {r['valor_esperado_beta_prop']:.2f} | "
               f"beta {r['beta_hoja']:.2f}→{r['beta_prop']:.2f} | " +
               " ".join(f"{h['id']}:{h['valor_beta_hoja']:.1f}" for h in r["historias"]), flush=True)

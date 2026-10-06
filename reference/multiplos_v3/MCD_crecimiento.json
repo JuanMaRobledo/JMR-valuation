@@ -4,10 +4,10 @@
  "precio": 230.94,
  "dcfHoy": 224.11800264767598,
  "dcfInverso": {
-  "gImplicito": -0.03383794444420646,
+  "gImplicito": 0.02102561479535548,
   "gDcf": 0.01051144685137979,
-  "dif": -0.04434939129558625,
-  "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
+  "dif": 0.01051416794397569,
+  "lectura": "Coherente: el precio supone un crecimiento parecido al del DCF."
  },
  "gDcf": {
   "anios4a10": 0.04898126121571398,

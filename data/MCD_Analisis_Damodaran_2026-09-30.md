@@ -11,6 +11,8 @@ analysis_date: "2026-09-30"
 
 **Complemento · DCF esperado por probabilidades: US$203,96.** Los cuatro escenarios DCF activos son Base, Conservadora, Disrupción y Optimista; su rango es US$75,44–253,34. El MOS 35% se aplica al esperado: US$132,57. La hoja calcula las cuatro en 'Valuation output'. Los múltiplos individuales, consolidados y ponderados son lecturas secundarias con sus propios supuestos.
 
+**Auditoría, 2026-10-01:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las historias y sus textos. Sin correcciones de datos. DCF esperado US$203,96 → US$203,96. La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.
+
 Esta sección sigue el orden de Damodaran y Mauboussin para no anclarse en el precio: historia, visión externa, piezas del valor, historias cuantificadas y, recién al final, el precio. Cada historia es un DCF completo con el motor del Modelo JMR, que reproduce la hoja (bloque Base de 'Valuation output': US$224,12 por acción): solo cambian el crecimiento de cada año, el margen objetivo, la reinversión, el crecimiento terminal y el ROIC después del año 10 de la historia; la tasa de descuento es la misma en todas, porque el riesgo va en los flujos. El valor esperado es el promedio de las historias ponderado por su probabilidad. La hoja calcula estos cuatro DCF en 'Valuation output' (bloques Base, Conservador, Optimista y Disrupción) y los resume en «Escenarios e historias». Los múltiplos son precio relativo y se comentan en otras secciones.
 
 
@@ -57,6 +59,8 @@ Cada párrafo explica un supuesto material de la tesis Base —el valor intríns
 **Probabilidades y lectura del resultado.** Con 50% para la Base, 25% para la Conservadora, 10% para la Disrupción y 15% para la Optimista, el DCF esperado es US$203,96 frente a un DCF Base de US$224,12. El esperado queda por debajo de la Base porque las historias desfavorables pesan 35% y en ellas el margen cae más de lo que sube en la Optimista. Con el margen de seguridad de 35%, el precio de compra con margen es US$132,57.
 
 **Del supuesto al valor: cómo se calcula la Base.** Se parte de ventas de los últimos doce meses por US$27.702 millones. Con el crecimiento de la Base llegan a US$29.098 millones en el año 5 y a US$37.166 millones en el año 10. A esas ventas se les aplica el margen operativo, que pasa de 49,7% en el año 1 a 55,5% al final, y se descuentan impuestos (22,0% al principio y 25,0% a largo plazo): el resultado es el beneficio operativo después de impuestos (NOPAT), US$10.645 millones el primer año. Crecer no es gratis: cada dólar de ventas nuevas exige capital, y esa reinversión (−US$2.591 millones el primer año) se resta del NOPAT. Lo que queda es el flujo de caja libre de la empresa (FCFF), US$13.237 millones el primer año. Cada flujo se trae a hoy con el costo de capital (8,02% al principio, 8,99% al final): los diez años suman US$69.627 millones. Después del año 10 se supone que la empresa crece 5,29% para siempre y reinvierte lo justo para ese crecimiento con un retorno de 18,4%; esa perpetuidad vale hoy US$141.138 millones, 67% del total. Flujos más terminal dan el valor de las operaciones, US$210.765 millones. Para llegar al accionista se suma y se resta lo que no es operativo: más caja por US$822 millones, menos deuda por US$52.212 millones (incluye los arrendamientos capitalizados), menos opciones por US$528 millones. Queda un patrimonio de US$158.847 millones que, repartido entre 708,8 millones de acciones, da US$224,12 por acción. Las otras tres historias siguen exactamente el mismo camino con sus propios supuestos; el DCF esperado es su promedio ponderado por probabilidad.
+
+**Múltiplos (lectura secundaria).** Caso Base de los múltiplos: EV/EBITDA 16,69× (peso 33% dentro de los múltiplos); EV/FCFF 27,35× (peso 17% dentro de los múltiplos); P/E 21,86× (peso 33% dentro de los múltiplos); P/FCFE 26,35× (peso 8% dentro de los múltiplos); P/OCF 20,62× (peso 8% dentro de los múltiplos). Cada múltiplo se elige con tres anclas documentadas en la hoja (historia depurada de la empresa, peers ajustados y múltiplo justificado por crecimiento, riesgo y retorno); el precio resultante a FY+1..FY+3, más dividendos, se trae a hoy con el costo del patrimonio (8,7%). Son precio relativo, no valor intrínseco: si el mercado entero está caro, también lo estará el múltiplo. Solo hay tres casos auxiliares (Conservador, Base y Optimista); no se inventa un resultado de Disrupción. La tabla por método está en la valoración vigente.
 
 Sensibilidad del DCF Base (US$224,12; cada fila es un DCF completo con un solo supuesto cambiado):
 
@@ -109,6 +113,15 @@ Sensibilidad del DCF Base (US$224,12; cada fila es un DCF completo con un solo s
 | Bottom-up del sector (Restaurant/Dining, reapalancada) | 0,93 | 9,3% | 8,5% | US$216,02 |
 
 
+### Ventaja competitiva y ROIC terminal: comprobación
+
+| Ventaja (criterio Damodaran) | ROIC actual (modelo) | ROIC de la industria (Damodaran) | Costo de capital terminal | ROIC terminal usado | DCF Base de la hoja | DCF con ROIC terminal = costo de capital |
+|---|---:|---:|---:|---:|---:|---:|
+| Ventaja durable | 21,3% | 18,4% | 9,0% | 18,4% | US$224,12 | US$140,01 |
+
+Fuentes de ventaja: Marca probada (70 años; superó las crisis de 2002-2003 y 2014-2015 y la pandemia), ubicaciones e inmuebles propios y escala en compras, publicidad y tecnología. Evidencia: ROIC con arrendamientos ~21% (LTM jun-2026) y ROIC de la hoja de 22-33% en cada año desde 2017. Criterio (Damodaran, *Investment Valuation*, cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.
+
+
 ### De dónde sale el cálculo: de la historia al valor por acción
 
 El valor intrínseco principal es el DCF Base: US$224,12 por acción, un DCF completo de diez años más valor terminal con la trayectoria central defendida. Como complemento se ejecutan otros tres DCF completos (Conservadora, Disrupción y Optimista) y se ponderan las cuatro historias por sus probabilidades: el DCF esperado es US$203,96. Cada historia tiene su propia trayectoria de ventas, margen objetivo, crecimiento terminal y retorno terminal. Ninguna cifra se obtiene mezclando el DCF con múltiplos. «Base» y «esperado» son conceptos distintos: la Base es la historia central; el esperado, un promedio de desenlaces con pesos subjetivos.
@@ -124,7 +137,7 @@ El valor intrínseco principal es el DCF Base: US$224,12 por acción, un DCF com
 | Descuento | WACC 8,02% → 8,99% | Tasa libre de riesgo 5,29%, beta 0,79, ERP 4,33%. Constante en años 1–5 y converge linealmente en los años 6–10. Es la misma en las cuatro historias. |
 | Ventas/capital | 0,50x en años 1–5; 0,50x en años 6–10 | Input sheet B32/B33: hipótesis del analista, no datos reportados. |
 | Crecimiento perpetuo | Base/Conservadora/Optimista: 5,29%; Disrupción: 0,00% | Terminal de la hoja (Valuation output M4, igual a la tasa libre de riesgo) en las historias que no lo cambian. Disrupción se estabiliza sin recuperarse: parte de su crecimiento del año 5 (−0,4%) y converge a 0,00% en el año 10 (piso de 0% nominal: el negocio residual deja de achicarse, lo que en términos reales sigue siendo contracción). Es criterio del analista (Damodaran, *The Stable Growth Rate*: el crecimiento estable puede ser menor que la economía), no guía de la empresa. |
-| ROIC terminal | Base/Conservadora/Optimista: 18,40%; Disrupción: 8,99% (= WACC terminal) | Criterio de ventaja competitiva (sin clasificar). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
+| ROIC terminal | Base/Conservadora/Optimista: 18,40%; Disrupción: 8,99% (= WACC terminal) | Criterio de ventaja competitiva (ventaja durable). Las historias de erosión igualan el retorno al costo de capital: una ventaja que se pierde no deja retornos excedentes para siempre. |
 | Puente al patrimonio | Caja 822; deuda 52.212; opciones 528; acciones 708,8 millones | Valuation output B29/B27/B30/B28/B32/B34. Acciones fijas: no se proyecta recompra ni dilución. |
 
 

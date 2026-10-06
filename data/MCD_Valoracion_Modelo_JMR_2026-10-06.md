@@ -195,7 +195,7 @@ Crecimiento implícito (paso 6.5): cada múltiplo Base frente al múltiplo que i
 | P/FCFE | 26,4x | 23,3x | +12% | 4,7% | 4,2% | +0,5 pp | Coherente con el DCF |
 | P/OCF | 20,6x | 18,3x | +12% | 4,7% | 4,2% | +0,5 pp | Coherente con el DCF |
 
-**Salvedad del DCF inverso de `implied_growth.py`.** Ese script (pestaña «Crecimiento implícito» y campo de la app) informa −3,4% como crecimiento que justifica el precio. El número no es confiable para MCD: calibra el motor con el crecimiento del año 2 de la hoja ('Valuation output'!D4 = −4,7%, el año del refranquiciamiento) como si fuera el de los años 2-5, y con esa calibración la función de valor tiene dos raíces. El DCF inverso del motor de historias, que usa la trayectoria completa, da 2,1% con el margen Base (sección 11). Se deja documentado y no se corrige el script porque lo usan las 22 valoraciones de la cartera.
+**DCF inverso de `implied_growth.py` (corregido el 6-oct-2026).** La primera corrida informó −3,4%: el script calibraba el motor con el crecimiento del año 2 de la hoja ('Valuation output'!D4 = −4,7%, el año del refranquiciamiento) como si fuera el de los años 2-5. Desde la corrección calibra con la trayectoria real de los años 1-5 y da 2,1%, igual que el motor de historias (sección 11). El efecto en el resto de la cartera, medido sin escribir, está en `reference/revision_dcf_2026-10-06/implied_growth_calibracion.json`.
 
 ## 9. Sensibilidad
 
@@ -234,8 +234,9 @@ Respaldo de cada celda en `reference/backups/mcd_desde_cero_2026-10-06.json` (re
 | 13 | Input D1, B4; Resumen C25 | Precio y fecha de la corrida (14-sep) | US$230,94 al 30-sep-2026 | Fecha de corte |
 | 14 | Filas 38 y 43 de «Descuento de múltiplos» | DCF de 'Valuation output' y MOS sobre el ponderado | Historias y MOS sobre el esperado | Presentación vigente |
 | 15 | Textos (Cualitativo, Estadísticas, Stories to Numbers, Supuestos Recomendados, Supuestos de los Múltiplos, Tesis) | Plantilla | Contenido de MCD con fórmulas vivas | Paso 10 |
+| 16 | BPA básico 2016-2022 y cambio neto de caja 2016-LTM (18 celdas) | BPA copiado del diluido; serie de relleno de la plantilla | XBRL de la SEC | `auditar_estados_sec.py` + `aplicar_cambios_celdas.py` (6-oct-2026); no cambian el DCF |
 
-Controles: fórmula única verificada (`apply_canonical_formulas.py` en seco: 0 celdas pendientes); el motor reproduce el DCF de la hoja (US$224,12) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado (diferencia 0,00); el escaneo de integridad (`integridad_hojas.py`) da un hallazgo esperado: la fecha de valoración (Input B4) es un número fijo, como en las demás hojas desde cero. Sin celdas con error en las pestañas de la valoración. Datos enlazados con ajuste y nota: B22 de la Input sheet (+RSU). Supuestos escritos a mano: B24, B27-B33, B49/B50, opciones, beta (enfoque), regiones, rating, J8/J19/J30.
+Controles: fórmula única verificada (`apply_canonical_formulas.py` en seco: 0 celdas pendientes); el motor reproduce el DCF de la hoja (US$224,12) y la pestaña «Escenarios e historias» reproduce las cuatro historias y el esperado (diferencia 0,00); el escaneo de integridad (`integridad_hojas.py`) da 0 hallazgos (la fecha de valoración fija al corte se reconoce como entrada desde el 6-oct-2026) y la consistencia de la app 16 de 16. Sin celdas con error en las pestañas de la valoración. Datos enlazados con ajuste y nota: B22 de la Input sheet (+RSU). Supuestos escritos a mano: B24, B27-B33, B49/B50, opciones, beta (enfoque), regiones, rating, J8/J19/J30.
 
 ## 11. El precio al final
 
@@ -295,11 +296,11 @@ La decisión (comprar, mantener o vender) la registra el usuario en la app.
 | Cuatro historias activas con probabilidades y valor esperado | Sí |
 | Pre-mortem e indicadores | Sí |
 | Cuadre con la SEC (ingresos, EBIT, D&A, caja, deuda, arrendamientos, acciones, opciones, RSU, minoritarios) | Sí |
-| Ninguna celda con error en las pestañas de la valoración | Sí |
+| Ninguna celda con error en las pestañas de la valoración; auditoría de estados contra la SEC aplicada | Sí |
 | Motor = hoja (US$224,12) y pestaña de historias = motor (esperado US$203,96) | Sí |
 | Múltiplos con tres anclas, independientes del DCF; chequeo de crecimiento implícito aplicado | Sí (0 alertas) |
 | Chequeo VP a 3 años < FY+3 | Sí |
 | Fórmula única (0 celdas pendientes frente a la maestra) | Sí |
 | Dos tablas de horizontes (presente y FY+3): métodos, múltiplos solos y DCF + múltiplos; reproducen la hoja y la app | Sí |
 | El precio no aparece antes de la sección 11 (salvo la referencia de la hoja en «Datos») | Sí |
-| Estado | Verificado, con salvedades: reparto de IOM por región estimado por número de locales; arrendamientos financieros al 30-jun-2026 no publicados (se usa dic-2025); la liberación de capital del refranquiciamiento en los años 1-2 depende del ventas/capital; el DCF inverso de `implied_growth.py` no es confiable para MCD (ver 8) |
+| Estado | Verificado, con salvedades: reparto de IOM por región estimado por número de locales; arrendamientos financieros al 30-jun-2026 no publicados (se usa dic-2025); la liberación de capital del refranquiciamiento en los años 1-2 depende del ventas/capital; ingresos de 2018-2019 reexpresados en la SEC (se informan, no se corrigen) |

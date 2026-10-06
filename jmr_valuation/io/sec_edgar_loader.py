@@ -170,7 +170,11 @@ _TAGS: dict[str, list[str]] = {
                                "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
     "intangibles_net": ["FiniteLivedIntangibleAssetsNet", "IntangibleAssetsNetExcludingGoodwill"],
     "long_term_investments": ["LongTermInvestments"],
-    "lease_liability_noncurrent": ["OperatingLeaseLiabilityNoncurrent", "FinanceLeaseLiabilityNoncurrent"],
+    # Solo arrendamientos FINANCIEROS (6-oct-2026, MCD): son deuda y entran en 'Balance Sheet'!L26 y en la deuda de la
+    # Input sheet. Los OPERATIVOS se capitalizan con el conversor de Damodaran ('Input sheet'!B18 = Yes,
+    # scripts/apply_lease_conversion.py); mezclar ambos tags en una fila dejaba operativos en unos años y financieros en
+    # otros (MCD: 12.758 en 2019 y 1.770 en 2024), así que la deuda histórica de los múltiplos EV no era comparable.
+    "lease_liability_noncurrent": ["FinanceLeaseLiabilityNoncurrent"],
     "unearned_revenue_current": ["ContractWithCustomerLiabilityCurrent", "DeferredRevenueCurrent"],
     "interest_investment_income": ["InvestmentIncomeInterestAndDividend", "InvestmentIncomeInterest",
                                     "InvestmentIncomeNet"],
@@ -224,6 +228,7 @@ def _concept_rows(gaap: dict, key: str, units: tuple[str, ...] = ("USD",),
     de cierre con el mismo criterio que _dedupe_by_end (ante dos filas para
     el mismo 'end', gana la reportada en la presentacion mas antigua)."""
     combined: list[dict] = []
+    per_tag: list[list[dict]] = []
     for source in (gaap, extra) if extra is not None else (gaap,):
         for tag in _TAGS[key]:
             node = source.get(tag)
@@ -232,9 +237,43 @@ def _concept_rows(gaap: dict, key: str, units: tuple[str, ...] = ("USD",),
             for unit in units:
                 candidate_rows = node.get("units", {}).get(unit)
                 if candidate_rows:
+                    if unit == "shares":
+                        candidate_rows = [_shares_in_units(r) for r in candidate_rows]
                     combined.extend(candidate_rows)
+                    per_tag.append(candidate_rows)
                     break
-    return _dedupe_by_period(combined) if combined else None
+    if not combined:
+        return None
+    if key in _MAX_ACROSS_TAGS:
+        return _max_by_period(per_tag)
+    return _dedupe_by_period(combined)
+
+
+# Conceptos en los que varios tags conviven para el MISMO período con alcances distintos: se toma el mayor (el total).
+# MCD reporta 'DepreciationDepletionAndAmortization' solo para la D&A corporativa incluida en el SG&A (US$457M en
+# 2025) y 'DepreciationAndAmortization' para el total del flujo de caja (US$2.199M); con el primer tag ganando por
+# orden, el EBITDA y el EV/EBITDA históricos quedaban mal (6-oct-2026).
+_MAX_ACROSS_TAGS = {"da"}
+
+
+def _max_by_period(per_tag: list[list[dict]]) -> list[dict]:
+    best: dict[tuple, dict] = {}
+    for tag_rows in per_tag:
+        for r in _dedupe_by_period(tag_rows):
+            k = (r.get("start"), r["end"])
+            if k not in best or (r.get("val") or 0) > (best[k].get("val") or 0):
+                best[k] = r
+    return sorted(best.values(), key=lambda r: (r["end"], r.get("start") or ""))
+
+
+def _shares_in_units(row: dict) -> dict:
+    """Algunas empresas etiquetan las acciones EN MILLONES aunque la unidad diga 'shares' (MCD desde 2023: 717,9 en
+    lugar de 717.900.000). Ninguna cotizada tiene menos de 100.000 acciones: un valor positivo menor se lleva a
+    unidades. Sin esto las acciones quedaban en 0 y el BPA en millones (6-oct-2026)."""
+    v = row.get("val")
+    if isinstance(v, (int, float)) and 0 < v < 100_000:
+        return {**row, "val": v * 1_000_000}
+    return row
 
 
 def _raw_rows(gaap: dict, key: str) -> list[dict]:
@@ -925,6 +964,17 @@ def load_annual_series_from_sec_edgar(
     shares_by_end = _shares_outstanding_by_end(shares_rows, diluted_rows)
     lt_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("long_term_debt"))}
     cur_debt_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_debt"))}
+    # Vencimientos corrientes ya incluidos en la deuda de largo plazo (6-oct-2026, MCD): algunas empresas los clasifican
+    # como largo plazo porque los respalda una línea de crédito; entonces 'LongTermDebtNoncurrent' = 'LongTermDebt'
+    # (total) y sumar 'LongTermDebtCurrent' los contaba dos veces.
+    _ltd_total = {r["end"]: r["val"] for r in _annual_instant_rows(
+        (gaap.get("LongTermDebt", {}).get("units", {}) or {}).get("USD"))}
+    _ltd_nc = {r["end"]: r["val"] for r in _annual_instant_rows(
+        (gaap.get("LongTermDebtNoncurrent", {}).get("units", {}) or {}).get("USD"))}
+    for _end, _cur in list(cur_debt_by_end.items()):
+        _tot, _nc = _ltd_total.get(_end), _ltd_nc.get(_end)
+        if _cur and _tot and _nc and abs(_tot - _nc) < 0.5 * abs(_cur):  # el total no suma el corriente
+            cur_debt_by_end[_end] = 0.0
     cash_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("cash"))}
     current_assets_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_assets"))}
     current_liabilities_by_end = {r["end"]: r["val"] for r in _annual_instant_rows(rows("current_liabilities"))}

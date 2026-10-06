@@ -45,7 +45,7 @@ Lectura del 6-oct-2026 (análisis desde cero): los múltiplos consolidados Base 
 | Supuesto | Conservador | Base | Optimista | Celda |
 |---|---:|---:|---:|---|
 | Crecimiento año 1 | -2,2% | -0,9% | -0,2% | Input B27; Valuation output C55/C106 |
-| Crecimiento años 2-5 | -5,9% | 1,5% | -3,6% | Input B29 |
+| Crecimiento años 2-5 (compuesto) | 0,0% | 1,5% | 2,7% | Valuation output D:G (filas 55, 4 y 106) |
 | Margen EBIT objetivo | 51,5% | 55,5% | 58,0% | Input B30; Valuation output C45/C47 |
 | Año de convergencia del margen | 5 | 5 | 5 | Input B31 |
 | Sales-to-capital años 1-5 / 6-10 | — | 0,50 / 0,50 | — | Input B32/B33 |
@@ -141,7 +141,7 @@ En la lectura de Damodaran, el DCF estima el valor intrínseco a partir de flujo
 
 ### 6.1 Coherencia del crecimiento (criterio Damodaran)
 
-DCF inverso: con el resto de supuestos del escenario Base, el precio de US$230,94 supone que los ingresos crecen -3,4% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 1,1% (−4,4 pp). El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto.
+DCF inverso: con el resto de supuestos del escenario Base, el precio de US$230,94 supone que los ingresos crecen 2,1% al año en los años 1-5 (luego convergen a la perpetuidad); el DCF supone 1,1% (+1,1 pp). Coherente: el precio supone un crecimiento parecido al del DCF.
 
 Cada múltiplo Base se compara con el múltiplo que implica el DCF llevado a FY+3 (US$287,78 por acción, con la misma métrica FY+3, deuda neta, acciones y dividendos de la hoja). Los dos pasan por la misma fórmula de crecimiento perpetuo (Ke 8,7%, WACC de los años 4-10 8,4%, ROE de FY+3 — y conversión a caja de FY+3), así que el sesgo de la fórmula (supone el ROE de FY+3 para siempre) se cancela:
 

@@ -7,6 +7,11 @@ queda sin cambios como referencia.
 Fecha de corte: 30-sep-2026 (la de las tasas comunes de la cartera). Último reporte: 10-Q del 2T26.
 
 Pasos: refresh | fix | datos | costo | supuestos | presentacion | content   (--step all corre todos)
+
+Desde el 6-oct-2026 el importador de la SEC corrige solo la D&A total, las acciones etiquetadas en millones, los
+arrendamientos financieros y la deuda corriente incluida en el largo plazo; el paso fix queda como registro de esta
+corrida (con el importador nuevo solo hacen falta el SG&A de 2020-2021 y el balance LTM). El flujo general está en
+scripts/desde_cero.sh.
 Uso:
     SEC_EDGAR_USER_AGENT="JMR Valuation <email>" PYTHONPATH=.:scripts python scripts/run_mcd_cero.py --step refresh
 """
@@ -21,12 +26,6 @@ _ROOT = Path(__file__).resolve().parent.parent
 for p in (str(_ROOT), str(_ROOT / "scripts")):
     if p not in sys.path:
         sys.path.insert(0, p)
-
-import gspread  # noqa: E402
-
-# Reintento con espera exponencial ante el límite de 60 lecturas por minuto de la API de Sheets.
-_authorize = gspread.authorize
-gspread.authorize = lambda creds, **kw: _authorize(creds, http_client=gspread.BackOffHTTPClient, **kw)
 
 import model_steps as ms  # noqa: E402
 import refresh_native_model as rnm  # noqa: E402

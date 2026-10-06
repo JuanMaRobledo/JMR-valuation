@@ -727,3 +727,34 @@ def test_da_falls_back_to_depreciation_for_years_before_combined_tag():
     annual = {r["end"]: r["val"] for r in _annual_rows(_da_rows(rows))}
 
     assert annual == {"2021-05-31": 744 * M, "2022-05-31": 717 * M, "2023-05-31": 703 * M, "2024-05-31": 796 * M}
+
+
+# --- Reglas del 6-oct-2026 (análisis desde cero de MCD) ---------------------------------------------------------------
+def _fact(val, end, start=None, filed="2026-02-24", form="10-K", fp="FY"):
+    r = {"val": val, "end": end, "filed": filed, "form": form, "fp": fp}
+    if start:
+        r["start"] = start
+    return r
+
+
+def test_da_toma_el_total_cuando_conviven_tags_de_distinto_alcance():
+    from jmr_valuation.io.sec_edgar_loader import _concept_rows
+    gaap = {
+        "DepreciationDepletionAndAmortization": {"units": {"USD": [_fact(457e6, "2025-12-31", "2025-01-01")]}},
+        "DepreciationAndAmortization": {"units": {"USD": [_fact(2199e6, "2025-12-31", "2025-01-01")]}},
+    }
+    rows = _concept_rows(gaap, "da")
+    assert [r["val"] for r in rows] == [2199e6]
+
+
+def test_acciones_etiquetadas_en_millones_se_llevan_a_unidades():
+    from jmr_valuation.io.sec_edgar_loader import _concept_rows
+    gaap = {"WeightedAverageNumberOfDilutedSharesOutstanding": {"units": {"shares": [
+        _fact(741.3e6, "2022-12-31", "2022-01-01"), _fact(732.3, "2023-12-31", "2023-01-01")]}}}
+    vals = [r["val"] for r in _concept_rows(gaap, "diluted_shares_avg", units=("shares",))]
+    assert vals == [741.3e6, 732.3e6]
+
+
+def test_arrendamientos_de_balance_son_solo_financieros():
+    from jmr_valuation.io.sec_edgar_loader import _TAGS
+    assert _TAGS["lease_liability_noncurrent"] == ["FinanceLeaseLiabilityNoncurrent"]

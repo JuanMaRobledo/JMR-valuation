@@ -100,7 +100,7 @@ def lectura_multiplo(gi, gd, dv):
             "(a este nivel de múltiplo la fórmula de crecimiento casi no distingue la diferencia).")
 
 
-def run(tk: str, client) -> dict:
+def run(tk: str, client, escribir: bool = True) -> dict:
     anc = json.loads((MV / f"{tk}_anclas.json").read_text())
     res = json.loads((MV / f"{tk}_decision_resultado.json").read_text())["resultado"]
     recs = glob.glob(str(DATOS / f"{tk}-*.json"))
@@ -138,8 +138,13 @@ def run(tk: str, client) -> dict:
     # Calibración (2-oct-2026): el motor no reproduce exactamente el DCF de la hoja cuando esta usa trayectorias por
     # región, fracción de año o costos restados aparte (NKE con Pace). Se busca el crecimiento que lleva el motor al
     # precio escalado por motor/hoja en la Base, así el DCF inverso responde a la hoja y no al sesgo del motor.
+    # 6-oct-2026 (MCD): el motor se calibra con la TRAYECTORIA real de los años 1-5 de la hoja ('Valuation output'!C4:G4).
+    # Antes usaba el crecimiento del año 2 (D4) como si fuera el de los años 2-5; con historias de crecimiento desigual
+    # (refranquiciamiento de MCD: −0,9%, −4,7%, +1,6%, +4,6%, +4,6%) el factor de calibración salía muy lejos de 1 y el
+    # DCF inverso encontraba otra raíz (−3,4% en lugar de ~2%).
+    inp_cal = dict(inp, crecimientoAnios=g15) if len(g15) == 5 else inp
     eng0 = None if inp.get("dcfFinanciero") else node(
-        "runDCF(inp, inp.growthBase, inp.marginBase, inp.growthY1Base, inp.marginY1Base)", inp=inp)
+        "runDCF(inp, inp.growthBase, inp.marginBase, inp.growthY1Base, inp.marginY1Base)", inp=inp_cal)
     k = (eng0 / dcf_hoy) if (isinstance(eng0, (int, float)) and eng0 > 0 and dcf_hoy) else 1.0
     g_imp = node("crecimientoImplicitoDCF(inp, m, g, d, p)", inp=inp, m=inp["marginBase"], g=g_ref, d=dcf_hoy, p=price * k)
 
@@ -189,6 +194,9 @@ def run(tk: str, client) -> dict:
         "dcfFy3": dcf_fy3, "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
         "alertas": sum(1 for x in metodos if x["lectura"].startswith("Revisar")),
     }
+
+    if not escribir:  # --sin-escribir: solo calcula (p. ej. para medir el efecto de un cambio en toda la cartera)
+        return out
 
     # --- pestaña de la hoja ---
     try:
@@ -249,13 +257,14 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("tickers", nargs="*")
     ap.add_argument("--todos", action="store_true")
+    ap.add_argument("--sin-escribir", action="store_true", help="calcula e imprime sin tocar hoja, JSON ni app")
     a = ap.parse_args()
     tickers = a.tickers or sorted(p.name.split("_")[0] for p in MV.glob("*_decision_resultado.json"))
     client = get_gspread_client()
     for tk in tickers:
         for intento in range(3):
             try:
-                o = run(tk, client)
+                o = run(tk, client, escribir=not a.sin_escribir)
                 break
             except Exception as exc:  # noqa: BLE001
                 if intento == 2:

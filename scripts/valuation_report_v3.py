@@ -257,7 +257,17 @@ def main():
     w("| Supuesto | Conservador | Base | Optimista | Celda |")
     w("|---|---:|---:|---:|---|")
     w(f"| Crecimiento año 1 | {pct(cell('Valuation output', 'C55'))} | {pct(c_('B27'))} | {pct(cell('Valuation output', 'C106'))} | Input B27; Valuation output C55/C106 |")
-    w(f"| Crecimiento años 2-5 | {pct(cell('Valuation output', 'D55'))} | {pct(c_('B29'))} | {pct(cell('Valuation output', 'D106'))} | Input B29 |")
+    def _cagr25(row: int):
+        # 6-oct-2026: tasa compuesta de los años 2-5 de cada bloque (D:G de 'Valuation output'), no solo el año 2. Con
+        # historias de crecimiento desigual (refranquiciamiento de MCD) el año 2 no representa los años 2-5.
+        gs = [cell('Valuation output', f"{c}{row}") for c in "DEFG"]
+        if not all(isinstance(g, (int, float)) for g in gs):
+            return None
+        f = 1.0
+        for g in gs:
+            f *= 1 + g
+        return f ** 0.25 - 1
+    w(f"| Crecimiento años 2-5 (compuesto) | {pct(_cagr25(55))} | {pct(_cagr25(4))} | {pct(_cagr25(106))} | Valuation output D:G (filas 55, 4 y 106) |")
     w(f"| Margen EBIT objetivo | {pct(cell('Valuation output', 'C45'))} | {pct(c_('B30'))} | {pct(cell('Valuation output', 'C47'))} | Input B30; Valuation output C45/C47 |")
     w(f"| Año de convergencia del margen | {c_('B31')} | {c_('B31')} | {c_('B31')} | Input B31 |")
     w(f"| Sales-to-capital años 1-5 / 6-10 | — | {es(c_('B32'))} / {es(c_('B33'))} | — | Input B32/B33 |")
