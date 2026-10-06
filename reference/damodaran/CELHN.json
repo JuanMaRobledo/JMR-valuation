@@ -390,7 +390,7 @@
   ],
   [
    "Descuento y largo plazo: beta de mercado y sin ventaja duradera.",
-   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran de octubre, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): Celsius gana hoy ~16,5% sobre todo su capital, pero sus marcas son jóvenes, la categoría tiene barreras bajas y la distribución es un contrato con PepsiCo, no un activo propio. Por eso el crecimiento después del año 10 no suma valor y el terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de Damodaran de {mes_erp}, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): Celsius gana hoy ~16,5% sobre todo su capital, pero sus marcas son jóvenes, la categoría tiene barreras bajas y la distribución es un contrato con PepsiCo, no un activo propio. Por eso el crecimiento después del año 10 no suma valor y el terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
   ],
   [
    "Acciones y preferentes: el derecho de PepsiCo va por su valor de liquidación.",

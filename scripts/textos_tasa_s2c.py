@@ -85,6 +85,8 @@ def pct(x: float, nd: int = 1) -> str:
 
 def main(argv: list[str]) -> int:
     apply = "--apply" in argv
+    global CORTE
+    CORTE = json.loads((_ROOT / "reference" / "corte_vigente.json").read_text())
     moat = json.loads((_ROOT / "reference" / "moat_2026-09-30.json").read_text())
     moat = moat.get("empresas", moat)
     for tk in [a for a in argv if not a.startswith("--")]:
@@ -116,13 +118,13 @@ def _uno(tk: str, apply: bool, moat: dict) -> None:
         f21 = (v[7] or [[""]])[0][0] if v[7] else ""
         wt, roict = v[8][0][0], v[9][0][0]
         m = moat.get(tk, {})
-        tasa = (f"rf {pct(rf, 2)} (UST 10 años, 30-sep-2026) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} (Damodaran, "
-                f"oct-2026: 3,70% madura + riesgo país por regiones) = Ke {pct(ke)}; Kd después de impuestos {pct(kd)}; peso del "
+        tasa = (f"rf {pct(rf, 2)} (UST 10 años, {CORTE['fecha_corte_es']}) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} (Damodaran, "
+                f"{CORTE['erp_mes_corto']}: {pct(CORTE['erp_madura'], 2)} madura + riesgo país por regiones) = Ke {pct(ke)}; Kd después de impuestos {pct(kd)}; peso del "
                 f"patrimonio {pct(we, 0)}; WACC inicial {pct(w0)} y terminal {pct(wt)}.")
         if tk == "PAGS":  # financiera: se descuenta el FCFE al costo del patrimonio
             fin = sh.values_get("'DCF FCFE financiero'!B4", params={"valueRenderOption": "UNFORMATTED_VALUE"})["values"][0][0]
-            tasa = (f"rf {pct(rf, 2)} (UST 10 años, 30-sep-2026) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} (Damodaran, "
-                    f"oct-2026: 3,70% madura + 3,24% de Brasil) = Ke {pct(ke)}, que converge a {pct(fin)} en el año 10; sin deuda "
+            tasa = (f"rf {pct(rf, 2)} (UST 10 años, {CORTE['fecha_corte_es']}) + beta {es(beta)} ({BETA[tk]}) × ERP {pct(erp, 2)} (Damodaran, "
+                    f"{CORTE['erp_mes_corto']}: {pct(CORTE['erp_madura'], 2)} madura + {pct(erp - CORTE['erp_madura'], 2)} de Brasil) = Ke {pct(ke)}, que converge a {pct(fin)} en el año 10; sin deuda "
                     f"financiera (fondeo operativo).")
         if tk not in S2C:  # solo los textos de tasa
             upd = {"Stories to Numbers": {"G15": tasa}}
