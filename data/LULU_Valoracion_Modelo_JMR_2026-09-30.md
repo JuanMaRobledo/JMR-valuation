@@ -36,7 +36,7 @@ Lectura del 2-oct-2026: el DCF Base de las historias da ~US$171,6 por acción y 
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - LULU (desde cero 2026-10-02)](https://docs.google.com/spreadsheets/d/1wuEhOhrjlL5t-oSO9sRd7Py0Vw-47rv_4AAwaS8-ZJw/edit).
-- Análisis del 06 de mar de 2026. Precio de referencia de la hoja: US$95,86.
+- Análisis del 01 de oct de 2026. Precio de referencia de la hoja: US$95,86.
 - Peers: datos de mercado de yfinance consultados el 2026-10-02 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 

@@ -1,0 +1,287 @@
+{
+ "Input sheet!B4": {
+  "before": "=DATE(2026;9;30)",
+  "after": "=DATE(2026;9;30)",
+  "reason": "Fecha real del análisis (NVDA)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 228.38,
+  "after": 228.38,
+  "reason": "Precio del análisis = cierre del corte (NVDA)"
+ },
+ "Resumen de Valoración!A50": {
+  "before": "",
+  "after": "MI POSICIÓN EN CARTERA",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B50": {
+  "before": "",
+  "after": "Fuente: «Seguimiento de cartera» (Google Drive), posiciones al 5-oct-2026",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C50": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D50": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A51": {
+  "before": "",
+  "after": "Sin posición en cartera (sin posición al 5-oct-2026 (sin operaciones)).",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A54": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B54": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C54": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D54": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A55": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B55": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C55": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D55": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A56": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B56": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C56": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D56": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A57": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B57": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C57": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D57": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A58": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B58": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C58": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D58": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E50": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E54": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E55": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E56": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E57": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E58": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A59": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B59": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C59": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D59": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E59": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!A60": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!B60": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!C60": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!D60": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ },
+ "Resumen de Valoración!E60": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (NVDA)"
+ }
+}

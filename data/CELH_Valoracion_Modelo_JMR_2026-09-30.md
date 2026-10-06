@@ -36,7 +36,7 @@ Lectura del 5-oct-2026 (análisis desde cero): los múltiplos son precio relativ
 ## 2. Datos
 
 - Hoja del modelo: [Modelo JMR - CELH (desde cero 2026-10-05)](https://docs.google.com/spreadsheets/d/1tHDLsh4yBF9NQkRLNqfTU6GPM5trOWsB5xIjpALLOIw/edit).
-- Análisis del 06 de mar de 2026. Precio de referencia de la hoja: US$27,35.
+- Análisis del 30 de sept de 2026. Precio de referencia de la hoja: US$27,35.
 - Peers: datos de mercado de yfinance consultados el 2026-10-05 (P/E trailing, EV/EBITDA, y P/FCF, EV/FCF y P/OCF con flujo operativo y capex de los últimos cuatro trimestres, la misma definición que 'Trailing Valuation').
 - Estados financieros y conciliación: los de la valoración vigente (SEC EDGAR vía `refresh_native_model.py`); esta actualización no los modificó.
 

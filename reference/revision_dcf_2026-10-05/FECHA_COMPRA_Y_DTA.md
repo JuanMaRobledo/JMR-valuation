@@ -1,12 +1,22 @@
-# Fecha del análisis = primera compra · impuestos diferidos · 6-oct-2026
+# Fecha del análisis, posición en cartera e impuestos diferidos · 6-oct-2026
 
-## Fecha y precio del análisis
+## Fecha del análisis y posición en cartera
 
-Fuente: hoja «Seguimiento de cartera» de Google Drive (pestañas Transacciones y Posiciones; IBKR y Hapi), en `reference/cartera_compras_2026-10-06.json`. Script: `scripts/fecha_compra_cartera.py`.
+Primero (6-oct-2026, mañana) la fecha y el precio del análisis se pusieron en la primera compra. A pedido del usuario se
+revirtió el mismo día: la fecha y el precio del análisis son los REALES (el corte de la valoración: 30-sep-2026; LULU, NKE y
+ONON 1-oct-2026) y la posición va aparte (`scripts/posicion_cartera.py`).
 
-- 'Input sheet'!B4 (fecha del análisis que muestra la app) = primera compra de la posición vigente; 'Resumen de Valoración'!C25 (precio al día del análisis) = precio promedio de las órdenes de ese día. B3 = C25, como en la maestra.
-- La valoración no cambia: el precio de mercado del modelo ('Input sheet'!B23, que alimenta el peso del patrimonio en el costo de capital, las opciones y precio/valor) queda fijo en el cierre del 30-sep-2026 (D1). En DUOL, PLTR y UBER B23 era un GOOGLEFINANCE a la fecha de B4 y en ADBE, AFYA, MSFT, NVO y PYPL apuntaba a C25: ahora es =D1 en todas (mismo valor). Los textos de 'Tesis de Inversión y Supuestos' que usaban C25 como precio de mercado apuntan a D1.
-- Verificación: DCF Base, esperado, costo de capital y precio de mercado iguales en las 22 antes y después.
+- 'Input sheet'!B4 = fecha del corte; 'Resumen de Valoración'!C25 = B3 = 'Input sheet'!D1 (cierre de ese día). B23 (precio de
+  mercado del modelo: peso del patrimonio, opciones, precio/valor) = D1 en las 22; en DUOL, PLTR y UBER era un GOOGLEFINANCE a
+  la fecha de B4 y en ADBE, AFYA, MSFT, NVO y PYPL apuntaba a C25.
+- 'Resumen de Valoración'!A50:E60 «Mi posición en cartera» (fuente: hoja «Seguimiento de cartera» de Drive, IBKR y Hapi,
+  `reference/cartera_compras_2026-10-06.json`): acciones, costo promedio, primera compra; precio de hoy (GOOGLEFINANCE en vivo)
+  y del análisis con la ganancia sobre el costo; y la ganancia potencial hasta el DCF Base, el DCF esperado y el ponderado,
+  desde el precio de hoy y desde el precio de compra, en % y en US$ de la posición.
+- App (Modelo-JMR, visor): sección «Tu posición», con el precio en vivo si hay clave de mercado; el registro guardado lleva el
+  campo `posicion`.
+- Verificación: DCF Base, esperado, costo de capital y precio de mercado iguales en las 22; consistencia 16/16; integridad 0
+  hallazgos; fórmula única 0 celdas.
 
 | Empresa | Primera compra | Precio ese día | Costo promedio de la posición | Acciones | Otras compras |
 |---|---|---:|---:|---:|---|

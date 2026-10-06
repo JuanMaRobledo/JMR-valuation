@@ -1,0 +1,287 @@
+{
+ "Input sheet!B4": {
+  "before": "=DATE(2025;12;3)",
+  "after": "=DATE(2026;9;30)",
+  "reason": "Fecha real del análisis (ADBE)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 324.63,
+  "after": 239.94,
+  "reason": "Precio del análisis = cierre del corte (ADBE)"
+ },
+ "Resumen de Valoración!A50": {
+  "before": "",
+  "after": "MI POSICIÓN EN CARTERA",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B50": {
+  "before": "",
+  "after": "Fuente: «Seguimiento de cartera» (Google Drive), posiciones al 5-oct-2026",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C50": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D50": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A51": {
+  "before": "",
+  "after": "Acciones",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B51": {
+  "before": "",
+  "after": 7.98426,
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A52": {
+  "before": "",
+  "after": "Costo promedio de compra (US$)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B52": {
+  "before": "",
+  "after": 264.13,
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A53": {
+  "before": "",
+  "after": "Primera compra",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B53": {
+  "before": "",
+  "after": "=DATE(2025;12;3)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C53": {
+  "before": "",
+  "after": "Compras: 2025-12-03, 2026-01-09, 2026-01-14, 2026-01-22, 2026-02-20, 2026-03-13, 2026-07-01",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A54": {
+  "before": "",
+  "after": "Precio",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B54": {
+  "before": "",
+  "after": "US$ por acción",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C54": {
+  "before": "",
+  "after": "Ganancia sobre tu costo",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D54": {
+  "before": "",
+  "after": "Posición (US$)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A55": {
+  "before": "",
+  "after": "Precio de hoy (GOOGLEFINANCE, en vivo)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B55": {
+  "before": "",
+  "after": "=IFERROR(GOOGLEFINANCE(IFERROR(REGEXEXTRACT('Input sheet'!A1;\"\\(([^)]+)\\)\");'Input sheet'!A1);\"price\");\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C55": {
+  "before": "",
+  "after": "=IFERROR(B55/$B$52-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D55": {
+  "before": "",
+  "after": "=IFERROR((B55-$B$52)*$B$51;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A56": {
+  "before": "",
+  "after": "Precio del análisis (cierre del corte)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B56": {
+  "before": "",
+  "after": "='Input sheet'!D1",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C56": {
+  "before": "",
+  "after": "=IFERROR(B56/$B$52-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D56": {
+  "before": "",
+  "after": "=IFERROR((B56-$B$52)*$B$51;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A57": {
+  "before": "",
+  "after": "Ganancia potencial hasta el valor",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B57": {
+  "before": "",
+  "after": "Valor por acción",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C57": {
+  "before": "",
+  "after": "Desde el precio de hoy",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D57": {
+  "before": "",
+  "after": "Desde tu precio de compra",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A58": {
+  "before": "",
+  "after": "DCF Base hoy (valor intrínseco)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B58": {
+  "before": "",
+  "after": "=D32",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C58": {
+  "before": "",
+  "after": "=IFERROR(B58/$B$55-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D58": {
+  "before": "",
+  "after": "=IFERROR(B58/$B$52-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E50": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E51": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E52": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E53": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E54": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E55": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E56": {
+  "before": "",
+  "after": "",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E57": {
+  "before": "",
+  "after": "Posición (US$, desde tu costo)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E58": {
+  "before": "",
+  "after": "=IFERROR((B58-$B$52)*$B$51;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A59": {
+  "before": "",
+  "after": "DCF esperado de las historias",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B59": {
+  "before": "",
+  "after": "=D38",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C59": {
+  "before": "",
+  "after": "=IFERROR(B59/$B$55-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D59": {
+  "before": "",
+  "after": "=IFERROR(B59/$B$52-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E59": {
+  "before": "",
+  "after": "=IFERROR((B59-$B$52)*$B$51;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!A60": {
+  "before": "",
+  "after": "Ponderado DCF + múltiplos Base hoy (secundario)",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!B60": {
+  "before": "",
+  "after": "=D34",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!C60": {
+  "before": "",
+  "after": "=IFERROR(B60/$B$55-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!D60": {
+  "before": "",
+  "after": "=IFERROR(B60/$B$52-1;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ },
+ "Resumen de Valoración!E60": {
+  "before": "",
+  "after": "=IFERROR((B60-$B$52)*$B$51;\"\")",
+  "reason": "Bloque «Mi posición» (ADBE)"
+ }
+}
