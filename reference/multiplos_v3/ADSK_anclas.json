@@ -1,0 +1,479 @@
+{
+ "fcf_a_fcff": 1.0158571703472044,
+ "empresa": "Autodesk, Inc. (NASDAQ:ADSK)",
+ "sheet_id": "1m-od4YZ7pQNvcQ8oFi78cKv72vQCr2S9Ak3jNDSnNfs",
+ "fecha": "2026-10-07",
+ "ke": 0.12117472555867889,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Jan '17": -49.38,
+     "Jan '18": -64.26,
+     "Jan '19": 477.17,
+     "Jan '20": 92.52,
+     "Jan '21": 80.76,
+     "Jan '22": 72.65,
+     "Jan '23": 40.92,
+     "Jan '24": 43.19,
+     "Jan '25": 43.89,
+     "Jan '26": 30.38,
+     "LTM": 19.18
+    },
+    "mediana_5a": 43.19,
+    "mediana_10a": 43.89,
+    "p25": 38.29,
+    "p75": 74.67,
+    "min": 19.18,
+    "max": 92.52,
+    "ultimo_cierre": 30.38,
+    "ltm": 19.18,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '17",
+      -49.38,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '18",
+      -64.26,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '19",
+      477.17,
+      "> 2,5x la mediana (43.9x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 20.17,
+    "p25": 16.58,
+    "p75": 37.94
+   },
+   "justificado": {
+    "Conservador": 11.46,
+    "Base": 12.38,
+    "Optimista": 13.35
+   },
+   "actual_J": {
+    "J8": 18.08,
+    "J19": 19.32,
+    "J30": 22.14
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Jan '17": 189.95,
+     "Jan '18": -517.03,
+     "Jan '19": 108.02,
+     "Jan '20": 31.95,
+     "Jan '21": 45.17,
+     "Jan '22": 37.7,
+     "Jan '23": 22.95,
+     "Jan '24": 42.69,
+     "Jan '25": 42.97,
+     "Jan '26": 22.36,
+     "LTM": 15.15
+    },
+    "mediana_5a": 37.7,
+    "mediana_10a": 37.7,
+    "p25": 22.8,
+    "p75": 42.76,
+    "min": 15.15,
+    "max": 45.17,
+    "ultimo_cierre": 22.36,
+    "ltm": 15.15,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Jan '18",
+      -517.03,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '17",
+      189.95,
+      "> 2,5x la mediana (40.2x)"
+     ],
+     [
+      "Jan '19",
+      108.02,
+      "> 2,5x la mediana (40.2x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 19.47,
+    "p25": 17.48,
+    "p75": 26.29
+   },
+   "justificado": {
+    "Conservador": 19.79,
+    "Base": 23.85,
+    "Optimista": 26.68
+   },
+   "actual_J": {
+    "J8": 19.39,
+    "J19": 21.96,
+    "J30": 23.72
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Jan '17": -31.16,
+     "Jan '18": -44.81,
+     "Jan '19": -397.84,
+     "Jan '20": 205.05,
+     "Jan '21": 51.0,
+     "Jan '22": 111.51,
+     "Jan '23": 56.92,
+     "Jan '24": 60.58,
+     "Jan '25": 60.81,
+     "Jan '26": 48.35,
+     "LTM": 27.36
+    },
+    "mediana_5a": 60.58,
+    "mediana_10a": 58.75,
+    "p25": 49.67,
+    "p75": 60.69,
+    "min": 27.36,
+    "max": 111.51,
+    "ultimo_cierre": 48.35,
+    "ltm": 27.36,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Jan '17",
+      -31.16,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '18",
+      -44.81,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '19",
+      -397.84,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '20",
+      205.05,
+      "> 2,5x la mediana (58.7x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 35.11,
+    "p25": 20.28,
+    "p75": 65.64
+   },
+   "justificado": {
+    "Conservador": 13.66,
+    "Base": 15.72,
+    "Optimista": 17.1
+   },
+   "actual_J": {
+    "J8": 23.59,
+    "J19": 26.53,
+    "J30": 32.3
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Jan '17": 191.24,
+     "Jan '18": -506.82,
+     "Jan '19": 104.15,
+     "Jan '20": 31.71,
+     "Jan '21": 45.26,
+     "Jan '22": 36.94,
+     "Jan '23": 22.78,
+     "Jan '24": 42.37,
+     "Jan '25": 42.52,
+     "Jan '26": 22.25,
+     "LTM": 15.39
+    },
+    "mediana_5a": 36.94,
+    "mediana_10a": 36.94,
+    "p25": 22.65,
+    "p75": 42.41,
+    "min": 15.39,
+    "max": 45.26,
+    "ultimo_cierre": 22.25,
+    "ltm": 15.39,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Jan '18",
+      -506.82,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Jan '17",
+      191.24,
+      "> 2,5x la mediana (39.7x)"
+     ],
+     [
+      "Jan '19",
+      104.15,
+      "> 2,5x la mediana (39.7x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 19.15,
+    "p25": 17.65,
+    "p75": 27.59
+   },
+   "justificado": {
+    "Conservador": 14.89,
+    "Base": 17.11,
+    "Optimista": 18.55
+   },
+   "actual_J": {
+    "J8": 18.17,
+    "J19": 19.92,
+    "J30": 21.18
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Jan '17": 105.59,
+     "Jan '18": 28044.27,
+     "Jan '19": 85.64,
+     "Jan '20": 30.52,
+     "Jan '21": 42.39,
+     "Jan '22": 35.59,
+     "Jan '23": 22.34,
+     "Jan '24": 41.37,
+     "Jan '25": 41.46,
+     "Jan '26": 21.86,
+     "LTM": 15.08
+    },
+    "mediana_5a": 35.59,
+    "mediana_10a": 38.48,
+    "p25": 22.34,
+    "p75": 41.46,
+    "min": 15.08,
+    "max": 85.64,
+    "ultimo_cierre": 21.86,
+    "ltm": 15.08,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Jan '17",
+      105.59,
+      "> 2,5x la mediana (41.4x)"
+     ],
+     [
+      "Jan '18",
+      28044.27,
+      "> 2,5x la mediana (41.4x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 17.99,
+    "p25": 16.88,
+    "p75": 25.89
+   },
+   "justificado": {
+    "Conservador": 17.08,
+    "Base": 21.42,
+    "Optimista": 23.89
+   },
+   "actual_J": {
+    "J8": 18.07,
+    "J19": 20.46,
+    "J30": 22.07
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.05059811824541577,
+   "g_años_4_10": 0.048296236490831534,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.10369327874902502,
+   "ke": 0.12117472555867889,
+   "roe_fy3": 0.6148410702613921,
+   "fcff_ebitda": 0.579019611209363,
+   "fcfe_ocf": 1.1472238363270413,
+   "multiplos": {
+    "EV/FCFF": 19.78707867685981,
+    "P/FCFE": 14.885925496279587,
+    "P/E": 13.660893768758537,
+    "EV/EBITDA": 11.457106602444444,
+    "P/OCF": 17.077488555120382
+   }
+  },
+  "Base": {
+   "g": 0.05928009860810429,
+   "g_años_4_10": 0.06566019721620858,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.10369327874902502,
+   "ke": 0.12117472555867889,
+   "roe_fy3": 0.7276711449478298,
+   "fcff_ebitda": 0.5191675624253715,
+   "fcfe_ocf": 1.2516597152031914,
+   "multiplos": {
+    "EV/FCFF": 23.850579833442758,
+    "P/FCFE": 17.11424966587137,
+    "P/E": 15.720028643311368,
+    "EV/EBITDA": 12.3824473945602,
+    "P/OCF": 21.421216862700874
+   }
+  },
+  "Optimista": {
+   "g": 0.06381635641631342,
+   "g_años_4_10": 0.07473271283262685,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.10369327874902502,
+   "ke": 0.12117472555867889,
+   "roe_fy3": 0.8176908152873656,
+   "fcff_ebitda": 0.5003031832455769,
+   "fcfe_ocf": 1.2883113610524224,
+   "multiplos": {
+    "EV/FCFF": 26.67749400368468,
+    "P/FCFE": 18.546837581380395,
+    "P/E": 17.099356974578065,
+    "EV/EBITDA": 13.346835171058235,
+    "P/OCF": 23.894101567686395
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "PTC",
+   "nombre": "PTC Inc.",
+   "precio": 140.3000030517578,
+   "precio_actual": 193.0,
+   "fecha_precio": "2026-09-30",
+   "pe": 13.555555853923185,
+   "ev_ebitda": 12.910261243114787,
+   "crec_ingresos": -0.068,
+   "margen_operativo": 0.28232,
+   "roe": 0.35053003,
+   "p_ocf": 15.953905799630023,
+   "p_fcf": 16.292209425717974,
+   "ev_fcf": 17.609099232491793,
+   "ocf_ttm": 955321000.0,
+   "fcf_ttm": 935484000.0,
+   "interest_ttm": 65320000.0,
+   "ev_fcff": 16.688532950099578
+  },
+  {
+   "ticker": "BSY",
+   "nombre": "Bentley Systems, Incorporated",
+   "precio": 31.950000762939453,
+   "precio_actual": 35.97,
+   "fecha_precio": "2026-09-30",
+   "pe": 35.10989136800302,
+   "ev_ebitda": 23.658520696452182,
+   "crec_ingresos": 0.128,
+   "margen_operativo": 0.25,
+   "roe": 0.24517,
+   "p_ocf": 18.458873863730496,
+   "p_fcf": 19.36186082667512,
+   "ev_fcf": 22.197543337572835,
+   "ocf_ttm": 522885000.0,
+   "fcf_ttm": 498499000.0,
+   "interest_ttm": 26906000.0,
+   "ev_fcff": 21.289759004865875
+  },
+  {
+   "ticker": "DASTY",
+   "nombre": "Dassault Systemes SA",
+   "precio": 22.920000076293945,
+   "precio_actual": 24.12,
+   "fecha_precio": "2026-09-30",
+   "pe": 20.283186152093883,
+   "ev_ebitda": 16.678332520255733,
+   "crec_ingresos": 0.022,
+   "margen_operativo": 0.23403,
+   "roe": 0.15088001,
+   "p_ocf": 17.51562572493487,
+   "p_fcf": 18.94221285158837,
+   "ev_fcf": 17.658934763538056,
+   "ocf_ttm": 1719500000.0,
+   "fcf_ttm": 1590000000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 17.658934763538056
+  },
+  {
+   "ticker": "CDNS",
+   "nombre": "Cadence Design Systems, Inc.",
+   "precio": 330.19000244140625,
+   "precio_actual": 359.55,
+   "fecha_precio": "2026-09-30",
+   "pe": 65.64413262526611,
+   "ev_ebitda": 42.69757049247391,
+   "crec_ingresos": 0.242,
+   "margen_operativo": 0.28575,
+   "roe": 0.23229,
+   "p_ocf": 49.02344016241276,
+   "p_fcf": 54.394282778918864,
+   "ev_fcf": 55.0639684391969,
+   "ocf_ttm": 1854868000.0,
+   "fcf_ttm": 1671720000.0,
+   "interest_ttm": 125224000.0,
+   "ev_fcff": 51.98751608800336
+  },
+  {
+   "ticker": "SNPS",
+   "nombre": "Synopsys, Inc.",
+   "precio": 434.94000244140625,
+   "precio_actual": 505.17,
+   "fecha_precio": "2026-09-30",
+   "pe": 76.84452755231307,
+   "ev_ebitda": 43.64442724977102,
+   "crec_ingresos": 0.424,
+   "margen_operativo": 0.14521,
+   "roe": 0.03661,
+   "p_ocf": 28.366497257776896,
+   "p_fcf": 30.334556142073943,
+   "ev_fcf": 32.966920215959576,
+   "ocf_ttm": 2938341000.0,
+   "fcf_ttm": 2747706000.0,
+   "interest_ttm": 624065000.0,
+   "ev_fcff": 27.95165227196177
+  },
+  {
+   "ticker": "TRMB",
+   "nombre": "Trimble Inc.",
+   "precio": 57.11000061035156,
+   "precio_actual": 60.95,
+   "fecha_precio": "2026-09-30",
+   "pe": null,
+   "ev_ebitda": 16.545604754096733,
+   "crec_ingresos": 0.11,
+   "margen_operativo": 0.15134,
+   "roe": -0.01939,
+   "p_ocf": 16.664873745246137,
+   "p_fcf": 17.225327395972304,
+   "ev_fcf": 18.835598191470947,
+   "ocf_ttm": 799100000.0,
+   "fcf_ttm": 773100000.0,
+   "interest_ttm": 79800000.0,
+   "ev_fcff": 17.415464074076162
+  }
+ ]
+}

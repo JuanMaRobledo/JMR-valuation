@@ -1,0 +1,1202 @@
+{
+ "ticker": "ADSK",
+ "fecha": "2026-09-30",
+ "mos": 0.35,
+ "tg_hoja": 0.0529,
+ "segmentos_ltm": {
+  "AECO": 3895.0,
+  "AutoCAD y AutoCAD LT": 1910.0,
+  "Manufactura, M&E y otros": 1985.0,
+  "MaintainX": 90.0
+ },
+ "supuestos": {
+  "growthY1Cons": 0.07990998286802031,
+  "growthY1Base": 0.11070947525380714,
+  "growthY1Opt": 0.12799749048223363,
+  "growthCons": 0.06894914797834262,
+  "growthBase": 0.10257807209831782,
+  "growthOpt": 0.11835615005785383,
+  "marginY1Cons": 0.2824,
+  "marginY1Base": 0.2824,
+  "marginY1Opt": 0.2824,
+  "marginCons": 0.3024172588832487,
+  "marginBase": 0.34241725888324875,
+  "marginOpt": 0.38241725888324873,
+  "salesToCapital2": 1.2053,
+  "wacc": 0.11403823781079378,
+  "costoPatrimonio": 0.12117472555867889,
+  "taxEffective": 0.22,
+  "convergenceYear": 5,
+  "terminalWacc": 0.08990000000000001,
+  "roicTerminal": 0.179,
+  "salesToCapital": 1.2053
+ },
+ "financiero": false,
+ "dcf_sin_exceso": 133.02015804498726,
+ "precio": 231.28,
+ "dcf_base": 192.58196859773707,
+ "g_ref": 0.09231557341012078,
+ "m_base": 0.3424,
+ "s2c": 1.2053,
+ "wacc": 0.11403823781079378,
+ "beta_hoja": 1.430355931522468,
+ "beta_bu": 1.343359684379689,
+ "beta_prop": 1.343359684379689,
+ "industria": "Software (System & Application)",
+ "bu_sector": 1.25,
+ "rf": 0.0529,
+ "erp": 0.04773268251211249,
+ "tasas_base": {
+  "tramo": "$4,500-7,000 Mn",
+  "ventas_2015": 5575.538718729476,
+  "<(25)": 0.2,
+  "(25)-(20)": 0.2,
+  "(20)-(15)": 0.6,
+  "(15)-(10)": 1.9,
+  "(10)-(5)": 4.5,
+  "(5)-0": 15.6,
+  "0-5": 33.2,
+  "5-10": 23.1,
+  "10-15": 10.5,
+  "15-20": 5.6,
+  "20-25": 2.2,
+  "25-30": 1.1,
+  "30-35": 0.6,
+  "35-40": 0.3,
+  "40-45": 0.2,
+  ">45": 0.3,
+  "Mean": 5.0,
+  "Median": 4.1,
+  "StDev": 8.7,
+  "bins": [
+   "<(25)",
+   "(25)-(20)",
+   "(20)-(15)",
+   "(15)-(10)",
+   "(10)-(5)",
+   "(5)-0",
+   "0-5",
+   "5-10",
+   "10-15",
+   "15-20",
+   "20-25",
+   "25-30",
+   "30-35",
+   "35-40",
+   "40-45",
+   ">45"
+  ],
+  "fuente": "Mauboussin & Callahan, The Base Rate Book (Credit Suisse, sep-2016), Exhibit 4, 1950-2015; CAGR de ventas a 5 años; distribución en % de observaciones"
+ },
+ "historias": [
+  {
+   "id": "A",
+   "tesis": "base",
+   "prob": 0.45,
+   "margen": 0.34241725888324875,
+   "nombre": "Base · Sistema de registro del diseño y la obra que crece a doble dígito bajo",
+   "crec": {
+    "AECO": [
+     0.12,
+     0.11,
+     0.1,
+     0.09,
+     0.08
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.09,
+     0.08,
+     0.07,
+     0.06,
+     0.05
+    ],
+    "Manufactura, M&E y otros": [
+     0.092489,
+     0.090191,
+     0.080463,
+     0.073049,
+     0.063198
+    ],
+    "MaintainX": [
+     0.55,
+     0.4,
+     0.32,
+     0.25,
+     0.2
+    ]
+   },
+   "tesis_que": "La facturación orgánica sigue en ~10-11% y el ingreso en ~11% el primer año, sin el empujón del nuevo modelo de transacción ni del dólar; AECO crece por encima del promedio con la construcción y la nube; AutoCAD crece con el precio; Fusion sostiene la manufactura. MaintainX crece 55% el primer año y se modera a 20%. El margen llega a 34% en la base del modelo (~31% GAAP) en cinco años: termina la reorganización, la compensación en acciones baja a ~8% y MaintainX deja de restar. La IA se cobra dentro de la suscripción y por consumo ([The Motley Fool, transcripción de la llamada del 2T FY27, 27-ago-2026](https://www.fool.com/earnings/call-transcripts/2026/08/31/autodesk-adsk-q2-2027-earnings-call-transcript/)).",
+   "tesis_contraste": "Facturación orgánica ≥ 9% en FY28, retención neta ≥ 100% y margen no GAAP ≥ 40% en FY28-FY29.",
+   "crec_detalle": {
+    "AECO": [
+     0.12,
+     0.11,
+     0.1,
+     0.09,
+     0.08
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.09,
+     0.08,
+     0.07,
+     0.06,
+     0.05
+    ],
+    "Manufactura": [
+     0.1,
+     0.1,
+     0.09,
+     0.08,
+     0.07
+    ],
+    "M&E y otros": [
+     0.07,
+     0.06,
+     0.05,
+     0.05,
+     0.04
+    ],
+    "MaintainX": [
+     0.55,
+     0.4,
+     0.32,
+     0.25,
+     0.2
+    ]
+   },
+   "margen_reportado": 0.34,
+   "cagr": 0.09223147151859101,
+   "rev5": 12248.972175703011,
+   "mix5": {
+    "AECO": 0.5119078081765768,
+    "AutoCAD y AutoCAD LT": 0.2186064212498971,
+    "Manufactura, M&E y otros": 0.2379162646220763,
+    "MaintainX": 0.03156950595144987
+   },
+   "tasa_base": 0.3593906015841095,
+   "anios": [
+    0.11070947525380714,
+    0.10257807209831804,
+    0.09267615698715748,
+    0.0829605538102518,
+    0.07265360890106964
+   ],
+   "anios6a10": [
+    0.06870288712085572,
+    0.06475216534064179,
+    0.06080144356042787,
+    0.05685072178021394,
+    0.052900000000000016
+   ],
+   "anios6a10_propios": false,
+   "terminal_growth": 0.0529,
+   "terminal_propio": false,
+   "roic_terminal_usado": 0.179,
+   "detalle": {
+    "v": 192.58196859773722,
+    "pvFlujos": 13483.088369135616,
+    "pvTerminal": 30715.699245798834,
+    "valorTerminal": 84704.09481230198,
+    "activosOperativos": 44198.78761493447,
+    "patrimonio": 41292.07763294663,
+    "ingresos": [
+     7880,
+     8752.390665,
+     9650.194025667017,
+     10544.536922146262,
+     11419.317544880165,
+     12248.972175703011,
+     13090.511928436837,
+     13938.150921220622,
+     14785.610617793942,
+     15626.183253376721,
+     16452.80834748035,
+     17323.16190906206
+    ],
+    "utilidad": null,
+    "nopat": [
+     null,
+     1927.9065965608802,
+     2306.371134672681,
+     2618.8420035728814,
+     2943.018143959169,
+     3271.5223917022986,
+     3469.3909220212904,
+     3665.405516041262,
+     3857.890373098965,
+     4045.110176340009,
+     4225.294151456741
+    ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
+    "reinversion": [
+     null,
+     744.8795824002456,
+     742.0085426692488,
+     725.7783313149444,
+     688.3386964430815,
+     698.1994132032078,
+     703.2597633649585,
+     703.1110068641167,
+     697.3970261202847,
+     685.8251838576526,
+     722.1053360837211
+    ],
+    "flujo": [
+     null,
+     1183.0270141606347,
+     1564.3625920034322,
+     1893.063672257937,
+     2254.6794475160873,
+     2573.322978499091,
+     2766.131158656332,
+     2962.2945091771453,
+     3160.49334697868,
+     3359.2849924823563,
+     3503.1888153730197
+    ],
+    "tasa": [
+     null,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.10921059024863503,
+     0.10438294268647627,
+     0.09955529512431752,
+     0.09472764756215876,
+     0.08990000000000001
+    ],
+    "crecimiento": [
+     null,
+     0.11070947525380714,
+     0.10257807209831804,
+     0.09267615698715748,
+     0.0829605538102518,
+     0.07265360890106964,
+     0.06870288712085572,
+     0.06475216534064179,
+     0.06080144356042787,
+     0.05685072178021394,
+     0.052900000000000016
+    ],
+    "margen": [
+     null,
+     0.2824,
+     0.30640690355329947,
+     0.31841035532994927,
+     0.330413807106599,
+     0.34241725888324875,
+     0.34241725888324875,
+     0.34241725888324875,
+     0.34241725888324875,
+     0.34241725888324875,
+     0.34241725888324875
+    ],
+    "tasaTerminal": 0.08990000000000001,
+    "gTerminal": 0.0529,
+    "roicTerminal": 0.179,
+    "caja": 1625,
+    "deuda": 4733.709981987839,
+    "minoritarios": 0,
+    "noOperativos": 202,
+    "opciones": 0,
+    "preferentes": 0,
+    "acciones": 214.413,
+    "probFracaso": 0,
+    "nol0": 0,
+    "impuestoEf": 0.22,
+    "impuestoMarg": 0.25,
+    "s2c": 1.2053,
+    "s2c2": 1.2053,
+    "rezago0": false,
+    "convergencia": 5,
+    "wacc0": 0.11403823781079378,
+    "margenY1": 0.2824
+   },
+   "valor_bruto": 192.58196859773722,
+   "valor_bruto_prop": 197.0922359866659,
+   "valor_beta_hoja": 192.58196859773722,
+   "valor_beta_prop": 197.0922359866659
+  },
+  {
+   "id": "B",
+   "tesis": "conservadora",
+   "prob": 0.25,
+   "margen": 0.3024172588832487,
+   "nombre": "Conservadora · Crecimiento de un dígito y margen que se queda donde está",
+   "crec": {
+    "AECO": [
+     0.09,
+     0.08,
+     0.07,
+     0.06,
+     0.05
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.06,
+     0.04,
+     0.03,
+     0.03,
+     0.02
+    ],
+    "Manufactura, M&E y otros": [
+     0.062489,
+     0.060197,
+     0.050476,
+     0.043064,
+     0.035478
+    ],
+    "MaintainX": [
+     0.45,
+     0.3,
+     0.25,
+     0.2,
+     0.15
+    ]
+   },
+   "tesis_que": "La reorganización comercial cuesta más clientes nuevos de lo previsto (Europa occidental ya va atrasada, [The Motley Fool, transcripción de la llamada del 2T FY27, 27-ago-2026](https://www.fool.com/earnings/call-transcripts/2026/08/31/autodesk-adsk-q2-2027-earnings-call-transcript/)), la construcción se enfría con tasas altas y la IA presiona el precio por puesto en AutoCAD LT y en los clientes chicos. Autodesk conserva su base instalada, pero crece a un dígito y la mejora de margen se gasta en IA (cómputo que comprime el margen bruto) y en integrar MaintainX: el margen se queda en 30% en la base del modelo (~27% GAAP).",
+   "tesis_contraste": "Facturación orgánica < 8% en FY28, retención neta < 100% o margen no GAAP ≤ 39% en FY28.",
+   "crec_detalle": {
+    "AECO": [
+     0.09,
+     0.08,
+     0.07,
+     0.06,
+     0.05
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.06,
+     0.04,
+     0.03,
+     0.03,
+     0.02
+    ],
+    "Manufactura": [
+     0.07,
+     0.07,
+     0.06,
+     0.05,
+     0.04
+    ],
+    "M&E y otros": [
+     0.04,
+     0.03,
+     0.02,
+     0.02,
+     0.02
+    ],
+    "MaintainX": [
+     0.45,
+     0.3,
+     0.25,
+     0.2,
+     0.15
+    ]
+   },
+   "margen_reportado": 0.3,
+   "cagr": 0.06047018120590919,
+   "rev5": 10568.62587041833,
+   "mix5": {
+    "AECO": 0.5166758151430202,
+    "AutoCAD y AutoCAD LT": 0.21559002796092097,
+    "Manufactura, M&E y otros": 0.2400440623096737,
+    "MaintainX": 0.027690094586385088
+   },
+   "tasa_base": 0.535477996792763,
+   "anios": [
+    0.07990998286802031,
+    0.06894914797834262,
+    0.05929887517125754,
+    0.052200557489603394,
+    0.042391032648739335
+   ],
+   "anios6a10": [
+    0.04449282611899147,
+    0.0465946195892436,
+    0.048696413059495736,
+    0.05079820652974787,
+    0.0529
+   ],
+   "anios6a10_propios": false,
+   "terminal_growth": 0.0529,
+   "terminal_propio": false,
+   "roic_terminal_usado": 0.179,
+   "detalle": {
+    "v": 142.52301142388882,
+    "pvFlujos": 11363.576131399712,
+    "pvTerminal": 22101.92029901839,
+    "valorTerminal": 60950.04178679268,
+    "activosOperativos": 33465.49643041811,
+    "patrimonio": 30558.786448430274,
+    "ingresos": [
+     7880,
+     8509.690665,
+     9096.426585911006,
+     9635.83445053345,
+     10138.830380728823,
+     10568.62587041833,
+     11038.853903587526,
+     11553.205101926424,
+     12115.804749730907,
+     12731.265901681838,
+     13404.749867880806,
+     14113.8611358917
+    ],
+    "utilidad": null,
+    "nopat": [
+     null,
+     1874.44658216088,
+     2060.498761007175,
+     2212.773766696053,
+     2359.9422393466425,
+     2492.98519539771,
+     2583.875112581346,
+     2683.3064588087445,
+     2791.989687722639,
+     2910.7168292918973,
+     3040.3707832950777
+    ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
+    "reinversion": [
+     null,
+     486.79658251970915,
+     447.52996318131943,
+     417.32011133773597,
+     356.58797783913235,
+     390.13360422234825,
+     426.7412248725612,
+     466.77146586284204,
+     510.6290151422308,
+     558.7687432166001,
+     588.327609732759
+    ],
+    "flujo": [
+     null,
+     1387.649999641171,
+     1612.9687978258553,
+     1795.453655358317,
+     2003.3542615075103,
+     2102.8515911753616,
+     2157.1338877087846,
+     2216.5349929459026,
+     2281.360672580408,
+     2351.9480860752974,
+     2452.0431735623188
+    ],
+    "tasa": [
+     null,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.10921059024863503,
+     0.10438294268647627,
+     0.09955529512431752,
+     0.09472764756215876,
+     0.08990000000000001
+    ],
+    "crecimiento": [
+     null,
+     0.07990998286802031,
+     0.06894914797834262,
+     0.05929887517125754,
+     0.052200557489603394,
+     0.042391032648739335,
+     0.04449282611899147,
+     0.0465946195892436,
+     0.048696413059495736,
+     0.05079820652974787,
+     0.0529
+    ],
+    "margen": [
+     null,
+     0.2824,
+     0.29040690355329946,
+     0.29441035532994925,
+     0.298413807106599,
+     0.3024172588832487,
+     0.3024172588832487,
+     0.3024172588832487,
+     0.3024172588832487,
+     0.3024172588832487,
+     0.3024172588832487
+    ],
+    "tasaTerminal": 0.08990000000000001,
+    "gTerminal": 0.0529,
+    "roicTerminal": 0.179,
+    "caja": 1625,
+    "deuda": 4733.709981987839,
+    "minoritarios": 0,
+    "noOperativos": 202,
+    "opciones": 0,
+    "preferentes": 0,
+    "acciones": 214.413,
+    "probFracaso": 0,
+    "nol0": 0,
+    "impuestoEf": 0.22,
+    "impuestoMarg": 0.25,
+    "s2c": 1.2053,
+    "s2c2": 1.2053,
+    "rezago0": false,
+    "convergencia": 5,
+    "wacc0": 0.11403823781079378,
+    "margenY1": 0.2824
+   },
+   "valor_bruto": 142.52301142388882,
+   "valor_bruto_prop": 145.83789994236557,
+   "valor_beta_hoja": 142.52301142388882,
+   "valor_beta_prop": 145.83789994236557
+  },
+  {
+   "id": "C",
+   "tesis": "disrupción",
+   "prob": 0.15,
+   "margen": 0.24241725888324872,
+   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "descripcion": "La IA abarata el diseño y los clientes compran menos puestos",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion",
+   "s2c": 0.8766010917465881,
+   "crec": {
+    "AECO": [
+     0.06,
+     0.03,
+     0.01,
+     0.0,
+     0.0
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.02,
+     -0.03,
+     -0.05,
+     -0.06,
+     -0.06
+    ],
+    "Manufactura, M&E y otros": [
+     0.029985,
+     -0.002154,
+     -0.011693,
+     -0.018992,
+     -0.018708
+    ],
+    "MaintainX": [
+     0.35,
+     0.15,
+     0.1,
+     0.05,
+     0.05
+    ]
+   },
+   "tesis_que": "Herramientas de diseño generativo y agentes que producen planos y modelos a partir de texto reducen el número de dibujantes y modeladores que necesitan los estudios; AutoCAD LT, el producto más expuesto, pierde puestos; los formatos abiertos (IFC, USD) y los nuevos competidores bajan los costos de cambio; MaintainX no despega. Las ventas dejan de crecer en cinco años, el margen baja a 24% en la base del modelo porque Autodesk sigue gastando en I+D y en IA para defenderse (ventas/capital de 0,9: el capital nuevo rinde ~16%, no el 32% de la Base), y la ventaja desaparece: después del año 10 el ROIC es el costo de capital.",
+   "tesis_contraste": "Retención neta < 95% dos trimestres seguidos o caída interanual de suscripciones de AutoCAD LT.",
+   "crec_detalle": {
+    "AECO": [
+     0.06,
+     0.03,
+     0.01,
+     0.0,
+     0.0
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.02,
+     -0.03,
+     -0.05,
+     -0.06,
+     -0.06
+    ],
+    "Manufactura": [
+     0.04,
+     0.01,
+     0.0,
+     -0.01,
+     -0.01
+    ],
+    "M&E y otros": [
+     0.0,
+     -0.04,
+     -0.05,
+     -0.05,
+     -0.05
+    ],
+    "MaintainX": [
+     0.35,
+     0.15,
+     0.1,
+     0.05,
+     0.05
+    ]
+   },
+   "margen_reportado": 0.24,
+   "s2c_reportado": 0.9,
+   "cagr": 0.002821595353155848,
+   "rev5": 7991.799987911027,
+   "mix5": {
+    "AECO": 0.5374366996793034,
+    "AutoCAD y AutoCAD LT": 0.1984906160163602,
+    "Manufactura, M&E y otros": 0.2428695143042957,
+    "MaintainX": 0.021203170000040614
+   },
+   "tasa_base": 0.8401966224981535,
+   "anios": [
+    0.046055866116751165,
+    0.009612625292069854,
+    -0.007431327625639805,
+    -0.016745607472148594,
+    -0.016029048323239592
+   ],
+   "anios6a10": [
+    -0.012823238658591673,
+    -0.009617428993943754,
+    -0.006411619329295836,
+    -0.0032058096646479174,
+    8.673617379884035e-19
+   ],
+   "anios6a10_propios": false,
+   "terminal_growth": 0.0,
+   "terminal_propio": true,
+   "roic_terminal_usado": 0.0,
+   "detalle": {
+    "v": 57.755592933489226,
+    "pvFlujos": 9615.1323489935,
+    "pvTerminal": 5675.127580642559,
+    "valorTerminal": 15650.190504076063,
+    "activosOperativos": 15290.259929636064,
+    "patrimonio": 12383.549947648225,
+    "ingresos": [
+     7880,
+     8242.920225,
+     8322.156328435349,
+     8260.311658206954,
+     8121.9877215810075,
+     7991.799987911027,
+     7889.319229354313,
+     7813.444261855443,
+     7763.3474315977555,
+     7738.45961737152,
+     7738.45961737152,
+     7738.45961737152
+    ],
+    "utilidad": null,
+    "nopat": [
+     null,
+     1815.6845238011997,
+     1729.3223207090664,
+     1664.949055172037,
+     1586.4091359746385,
+     1511.1331923578055,
+     1480.280527935072,
+     1454.6793526241627,
+     1434.0606859441928,
+     1418.2077433269696,
+     1406.9521263164381
+    ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
+    "reinversion": [
+     null,
+     90.39014915835271,
+     -70.55052841101512,
+     -157.79576129701434,
+     -148.5142271618527,
+     -116.90694835038929,
+     -62.95110553295471,
+     -41.563785163600386,
+     -20.6486469976235,
+     0,
+     0
+    ],
+    "flujo": [
+     null,
+     1725.294374642847,
+     1799.8728491200816,
+     1822.7448164690513,
+     1734.9233631364912,
+     1628.0401407081947,
+     1543.2316334680268,
+     1496.243137787763,
+     1454.7093329418162,
+     1418.2077433269696,
+     1406.9521263164381
+    ],
+    "tasa": [
+     null,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.10921059024863503,
+     0.10438294268647627,
+     0.09955529512431752,
+     0.09472764756215876,
+     0.08990000000000001
+    ],
+    "crecimiento": [
+     null,
+     0.046055866116751165,
+     0.009612625292069854,
+     -0.007431327625639805,
+     -0.016745607472148594,
+     -0.016029048323239592,
+     -0.012823238658591673,
+     -0.009617428993943754,
+     -0.006411619329295836,
+     -0.0032058096646479174,
+     8.673617379884035e-19
+    ],
+    "margen": [
+     null,
+     0.2824,
+     0.2664069035532995,
+     0.2584103553299492,
+     0.250413807106599,
+     0.24241725888324872,
+     0.24241725888324872,
+     0.24241725888324872,
+     0.24241725888324872,
+     0.24241725888324872,
+     0.24241725888324872
+    ],
+    "tasaTerminal": 0.08990000000000001,
+    "gTerminal": 0,
+    "roicTerminal": 0.08990000000000001,
+    "caja": 1625,
+    "deuda": 4733.709981987839,
+    "minoritarios": 0,
+    "noOperativos": 202,
+    "opciones": 0,
+    "preferentes": 0,
+    "acciones": 214.413,
+    "probFracaso": 0,
+    "nol0": 0,
+    "impuestoEf": 0.22,
+    "impuestoMarg": 0.25,
+    "s2c": 0.8766010917465881,
+    "s2c2": 1.2053,
+    "rezago0": false,
+    "convergencia": 5,
+    "wacc0": 0.11403823781079378,
+    "margenY1": 0.2824
+   },
+   "valor_bruto": 57.755592933489226,
+   "valor_bruto_prop": 59.01237252476104,
+   "valor_beta_hoja": 57.755592933489226,
+   "valor_beta_prop": 59.01237252476104
+  },
+  {
+   "id": "D",
+   "tesis": "optimista",
+   "prob": 0.15,
+   "margen": 0.38241725888324873,
+   "nombre": "Optimista · Plataforma de datos del ciclo de vida que cobra por la IA",
+   "crec": {
+    "AECO": [
+     0.14,
+     0.13,
+     0.12,
+     0.11,
+     0.1
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.1,
+     0.09,
+     0.08,
+     0.07,
+     0.06
+    ],
+    "Manufactura, M&E y otros": [
+     0.109985,
+     0.100255,
+     0.090523,
+     0.083091,
+     0.073239
+    ],
+    "MaintainX": [
+     0.6,
+     0.45,
+     0.35,
+     0.28,
+     0.22
+    ]
+   },
+   "tesis_que": "Los datos de proyectos que Autodesk guarda (diseño, obra y operación) se vuelven la ventaja de sus modelos de IA: los asistentes y los modelos 3D propios se cobran por consumo (Flex, cuyo mínimo bajó de US$300 a US$99) y suben el ingreso por cliente; la construcción y la manufactura en la nube sostienen doble dígito y MaintainX conecta la operación con el diseño. El margen llega a 38% en la base del modelo (~35% GAAP), como Adobe.",
+   "tesis_contraste": "Facturación orgánica ≥ 12% en FY28, ingresos por consumo visibles y margen no GAAP ≥ 42%.",
+   "crec_detalle": {
+    "AECO": [
+     0.14,
+     0.13,
+     0.12,
+     0.11,
+     0.1
+    ],
+    "AutoCAD y AutoCAD LT": [
+     0.1,
+     0.09,
+     0.08,
+     0.07,
+     0.06
+    ],
+    "Manufactura": [
+     0.12,
+     0.11,
+     0.1,
+     0.09,
+     0.08
+    ],
+    "M&E y otros": [
+     0.08,
+     0.07,
+     0.06,
+     0.06,
+     0.05
+    ],
+    "MaintainX": [
+     0.6,
+     0.45,
+     0.35,
+     0.28,
+     0.22
+    ]
+   },
+   "margen_reportado": 0.38,
+   "cagr": 0.10835258581239149,
+   "rev5": 13180.015216695854,
+   "mix5": {
+    "AECO": 0.5206052360689275,
+    "AutoCAD y AutoCAD LT": 0.2128384253067084,
+    "Manufactura, M&E y otros": 0.23315851618161035,
+    "MaintainX": 0.033397822442753695
+   },
+   "tasa_base": 0.28491105354675134,
+   "anios": [
+    0.12799749048223363,
+    0.11835615005785383,
+    0.10842749329557066,
+    0.09891402946750216,
+    0.08850498678696206
+   ],
+   "anios6a10": [
+    0.08138398942956965,
+    0.07426299207217724,
+    0.06714199471478483,
+    0.060020997357392414,
+    0.0529
+   ],
+   "anios6a10_propios": false,
+   "terminal_growth": 0.0529,
+   "terminal_propio": false,
+   "roic_terminal_usado": 0.179,
+   "detalle": {
+    "v": 236.72185637743576,
+    "pvFlujos": 15641.170993617883,
+    "pvTerminal": 38021.782379825076,
+    "valorTerminal": 104851.94017108096,
+    "activosOperativos": 53662.95337344298,
+    "patrimonio": 50756.24339145514,
+    "ingresos": [
+     7880,
+     8888.620225,
+     9940.643094157374,
+     11018.482106602783,
+     12108.364570382437,
+     13180.015216695854,
+     14252.657435772995,
+     15311.102421933265,
+     16339.120379824239,
+     17319.810680963787,
+     18236.02866598677,
+     19200.71458241747
+    ],
+    "utilidad": null,
+    "nopat": [
+     null,
+     1957.9141542012,
+     2499.8469282663,
+     2942.8170511884664,
+     3422.8260313938267,
+     3931.406927142502,
+     4218.657733814062,
+     4496.816500743467,
+     4761.251560700448,
+     5007.286260893185,
+     5230.329071522256
+    ],
+    "patrimonioContable": null,
+    "utilidadTerminal": null,
+    "reinversion": [
+     null,
+     872.8307219425652,
+     894.2495747493645,
+     904.2416525177576,
+     889.1152794436384,
+     889.9379565893478,
+     878.1589530907406,
+     852.9145921272494,
+     813.6483042724201,
+     760.1576246768307,
+     800.3699630222342
+    ],
+    "flujo": [
+     null,
+     1085.0834322586347,
+     1605.5973535169355,
+     2038.5753986707086,
+     2533.7107519501883,
+     3041.468970553154,
+     3340.498780723322,
+     3643.901908616218,
+     3947.6032564280276,
+     4247.128636216354,
+     4429.959108500021
+    ],
+    "tasa": [
+     null,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.11403823781079378,
+     0.10921059024863503,
+     0.10438294268647627,
+     0.09955529512431752,
+     0.09472764756215876,
+     0.08990000000000001
+    ],
+    "crecimiento": [
+     null,
+     0.12799749048223363,
+     0.11835615005785383,
+     0.10842749329557066,
+     0.09891402946750216,
+     0.08850498678696206,
+     0.08138398942956965,
+     0.07426299207217724,
+     0.06714199471478483,
+     0.060020997357392414,
+     0.0529
+    ],
+    "margen": [
+     null,
+     0.2824,
+     0.3224069035532995,
+     0.34241035532994923,
+     0.362413807106599,
+     0.38241725888324873,
+     0.38241725888324873,
+     0.38241725888324873,
+     0.38241725888324873,
+     0.38241725888324873,
+     0.38241725888324873
+    ],
+    "tasaTerminal": 0.08990000000000001,
+    "gTerminal": 0.0529,
+    "roicTerminal": 0.179,
+    "caja": 1625,
+    "deuda": 4733.709981987839,
+    "minoritarios": 0,
+    "noOperativos": 202,
+    "opciones": 0,
+    "preferentes": 0,
+    "acciones": 214.413,
+    "probFracaso": 0,
+    "nol0": 0,
+    "impuestoEf": 0.22,
+    "impuestoMarg": 0.25,
+    "s2c": 1.2053,
+    "s2c2": 1.2053,
+    "rezago0": false,
+    "convergencia": 5,
+    "wacc0": 0.11403823781079378,
+    "margenY1": 0.2824
+   },
+   "valor_bruto": 236.72185637743576,
+   "valor_bruto_prop": 242.26741806028062,
+   "valor_beta_hoja": 236.72185637743576,
+   "valor_beta_prop": 242.26741806028062
+  }
+ ],
+ "valor_esperado_beta_hoja": 166.4642561215927,
+ "valor_esperado_beta_prop": 170.3429497673473,
+ "betas": [
+  {
+   "enfoque": "Hoja (regresión o la cargada en el libro)",
+   "beta": 1.430355931522468,
+   "ke": 0.12117472555867889,
+   "wacc": 0.11403823781079378,
+   "dcf_base": 192.58196859773722
+  },
+  {
+   "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
+   "beta": 1.343359684379689,
+   "ke": 0.11702216131406733,
+   "wacc": 0.11026175005177745,
+   "dcf_base": 197.0922359866659
+  }
+ ],
+ "sensibilidad": {
+  "g": [
+   0.05231557341012078,
+   0.07231557341012078,
+   0.09231557341012078,
+   0.11231557341012079,
+   0.1323155734101208
+  ],
+  "m": [
+   0.3024,
+   0.32239999999999996,
+   0.3424,
+   0.3624,
+   0.38239999999999996
+  ],
+  "v": [
+   [
+    138.7676982014745,
+    148.57860660289103,
+    158.38951500430753,
+    168.20042340572408,
+    178.01133180714052
+   ],
+   [
+    154.43315378730583,
+    165.52448249943393,
+    176.61581121156198,
+    187.70713992369005,
+    198.7984686358181
+   ],
+   [
+    171.8171976517965,
+    184.3359466169721,
+    196.85469558214774,
+    209.37344454732334,
+    221.89219351249903
+   ],
+   [
+    191.08958699720637,
+    205.19721644489246,
+    219.30484589257867,
+    233.41247534026482,
+    247.52010478795088
+   ],
+   [
+    212.43404322077137,
+    228.3076571577101,
+    244.18127109464885,
+    260.0548850315876,
+    275.9284989685263
+   ]
+  ],
+  "referencia_constante": 196.85469558214774,
+  "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
+ },
+ "inverso": [
+  {
+   "beta": 1.430355931522468,
+   "margen": 0.3024172588832487,
+   "g": 0.14842284156179153,
+   "tasa_base": 0.15881203272023775
+  },
+  {
+   "beta": 1.430355931522468,
+   "margen": 0.34241725888324875,
+   "g": 0.12218799174820083,
+   "tasa_base": 0.2209914781233121
+  },
+  {
+   "beta": 1.430355931522468,
+   "margen": 0.38241725888324873,
+   "g": 0.0998755286145262,
+   "tasa_base": 0.32407505780088897
+  },
+  {
+   "beta": 1.343359684379689,
+   "margen": 0.3024172588832487,
+   "g": 0.14391214391040863,
+   "tasa_base": 0.16828449778814186
+  },
+  {
+   "beta": 1.343359684379689,
+   "margen": 0.34241725888324875,
+   "g": 0.11783187657540062,
+   "tasa_base": 0.24111673022164912
+  },
+  {
+   "beta": 1.343359684379689,
+   "margen": 0.38241725888324873,
+   "g": 0.09564462110736127,
+   "tasa_base": 0.3436218504839909
+  }
+ ],
+ "ingresos_ltm": 7880,
+ "sens_base": {
+  "base": 192.58196859773722,
+  "casos": [
+   {
+    "supuesto": "margen",
+    "cambio": -0.02,
+    "valor": 180.42543555340913
+   },
+   {
+    "supuesto": "margen",
+    "cambio": 0.02,
+    "valor": 204.73850164206516
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": -0.02,
+    "valor": 172.9159971061831
+   },
+   {
+    "supuesto": "crecimiento",
+    "cambio": 0.02,
+    "valor": 214.3977873533829
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": -0.01,
+    "valor": 267.56581349702446
+   },
+   {
+    "supuesto": "tasa",
+    "cambio": 0.01,
+    "valor": 149.35321722660737
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": -0.005,
+    "valor": 178.35324828314054
+   },
+   {
+    "supuesto": "terminal",
+    "cambio": 0.005,
+    "valor": 211.13953806676975
+   },
+   {
+    "supuesto": "acciones",
+    "cambio": 0.05,
+    "valor": 183.41139866451164
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 0.8,
+    "valor": 187.70371227164904
+   },
+   {
+    "supuesto": "s2c",
+    "cambio": 1.2,
+    "valor": 195.83413948179603
+   },
+   {
+    "supuesto": "roic_cc",
+    "cambio": 0,
+    "valor": 133.02015804498726
+   }
+  ]
+ },
+ "rd_vida": 3,
+ "rd_ltm": 1721,
+ "motor_tecnico": 209.73121637711813
+}

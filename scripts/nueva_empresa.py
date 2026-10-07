@@ -39,8 +39,14 @@ IS = "'Input sheet'"
 
 def semilla_historias(sh) -> bool:
     if TAB in [w.title for w in sh.worksheets()]:
-        return False
-    ws = sh.add_worksheet(TAB, rows=130, cols=14)
+        # 7-oct-2026 (ADSK): la maestra ya trae la pestaña con solo el resumen (H5:H8) y sin supuestos; vacía, el DCF de
+        # la hoja da #DIV/0! y el motor no puede leerla. Se siembra si D5 (margen de la Base) está vacía.
+        ws = sh.worksheet(TAB)
+        d5 = ws.get("D5")
+        if d5 and d5[0] and d5[0][0] not in ("", None):
+            return False
+    else:
+        ws = sh.add_worksheet(TAB, rows=130, cols=14)
     data = [{"range": "A1", "values": [["Semilla provisional (scripts/nueva_empresa.py): build_story_sheet.py reemplaza esta pestaña"]]}]
     for i in range(5, 9):
         data.append({"range": f"D{i}:G{i}", "values": [[f"={IS}!B30", f"={IS}!B32", f"={IS}!B33",

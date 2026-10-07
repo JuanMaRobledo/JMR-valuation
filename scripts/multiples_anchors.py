@@ -97,13 +97,36 @@ def history_anchor(labels, values):
     }
 
 
-def peer_multiples(ticker):
+def _cierre(t, fecha: str | None):
+    """Cierre sin ajustar del día `fecha` (o del último día hábil anterior) para llevar los múltiplos al corte."""
+    if not fecha:
+        return None
+    import datetime as _dt
+    d = _dt.date.fromisoformat(fecha)
+    h = t.history(start=str(d - _dt.timedelta(days=7)), end=str(d + _dt.timedelta(days=1)), auto_adjust=False)
+    return float(h["Close"].iloc[-1]) if len(h) else None
+
+
+def peer_multiples(ticker, fecha_precio: str | None = None):
+    """Múltiplos de un peer con yfinance. Con `fecha_precio` (7-oct-2026, ADSK: PTC subió 37% el 5-oct-2026 por la oferta
+    de Schneider Electric, después del corte) los múltiplos se llevan al cierre de esa fecha: los de precio por
+    cierre/precio actual y los de EV por (EV − capitalización + capitalización al cierre)/EV. Las métricas (utilidad,
+    EBITDA, flujos) son las últimas publicadas."""
     import yfinance as yf
     t = yf.Ticker(ticker)
     info = t.info
     mcap, ev = info.get("marketCap"), info.get("enterpriseValue")
-    out = {"ticker": ticker, "nombre": info.get("shortName"), "precio": info.get("currentPrice"),
-           "pe": info.get("trailingPE"), "ev_ebitda": info.get("enterpriseToEbitda"),
+    precio = info.get("currentPrice")
+    cierre = _cierre(t, fecha_precio)
+    r_p = cierre / precio if cierre and precio else 1.0
+    r_ev = 1.0
+    if mcap and ev and r_p != 1.0:
+        r_ev = (ev - mcap + mcap * r_p) / ev
+        mcap, ev = mcap * r_p, ev - info.get("marketCap") + mcap * r_p
+    mult = lambda v, r: v * r if isinstance(v, (int, float)) else v  # noqa: E731
+    out = {"ticker": ticker, "nombre": info.get("shortName"), "precio": cierre or precio,
+           "precio_actual": precio, "fecha_precio": fecha_precio if cierre else None,
+           "pe": mult(info.get("trailingPE"), r_p), "ev_ebitda": mult(info.get("enterpriseToEbitda"), r_ev),
            "crec_ingresos": info.get("revenueGrowth"), "margen_operativo": info.get("operatingMargins"),
            "roe": info.get("returnOnEquity")}
     try:
@@ -226,6 +249,8 @@ def main():
     ap.add_argument("--sheet-id", required=True)
     ap.add_argument("--peers", nargs="+", required=True)
     ap.add_argument("--out", required=True)
+    # Precio de los peers al corte vigente (reference/corte_vigente.json); "hoy" usa el precio actual de yfinance.
+    ap.add_argument("--fecha-precio", default=json.loads((_ROOT / "reference" / "corte_vigente.json").read_text())["fecha_corte"])
     a = ap.parse_args()
     c = get_gspread_client()
     sh = c.open_by_key(a.sheet_id)
@@ -255,7 +280,7 @@ def main():
     peers = []
     for p in a.peers:
         try:
-            peers.append(peer_multiples(p))
+            peers.append(peer_multiples(p, None if a.fecha_precio == "hoy" else a.fecha_precio))
         except Exception as exc:  # noqa: BLE001
             peers.append({"ticker": p, "error": str(exc)[:80]})
     anchors["peers"] = peers

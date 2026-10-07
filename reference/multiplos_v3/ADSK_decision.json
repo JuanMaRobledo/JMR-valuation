@@ -1,0 +1,23 @@
+{
+ "ticker": "ADSK",
+ "etapa_desde": "Jan '26",
+ "etapa_motivo": "A: los cierres de FY2021-FY2025 (P/E 51-61×, EV/EBITDA 41-81×) se formaron con tasas de 1,5-4% y el auge del software por suscripción; con el Treasury a 10 años en 5,29% (30-sep-2026) y la re-valoración del software de diseño de 2026 por el temor a la IA (Autodesk −27% desde su máximo; PTC, Bentley y Dassault también cayeron, Trefis, 10-sep-2026), esos cierres no describen lo que pagaría el mercado en FY+3. El prompt v4 (6.2.A) pide usar solo la etapa actual cuando hay una re-valoración del sector: A = cierre de FY2026 (ene-2026) y LTM. Los cierres de FY2017-FY2019 (pérdidas de la transición a suscripción) ya estaban excluidos.",
+ "peers_excluir": {
+  "*": [
+   "SNPS",
+   "CDNS",
+   "TRMB"
+  ]
+ },
+ "peers_motivo": "B: software de diseño e ingeniería: PTC, Bentley Systems y Dassault Systèmes (ADR), con las métricas de yfinance del 7-oct-2026 y los múltiplos llevados al cierre del 30-sep-2026 (fecha de corte): PTC subió 37% el 5-oct-2026 por la oferta de Schneider Electric (US$22.600 millones en efectivo, 42% de prima), un hecho posterior al corte que no entra en el ancla. Se excluyen Synopsys (la compra de Ansys infla el crecimiento a 42% y deja el ROE en 4%: múltiplos de 50-86×), Cadence (diseño de chips, otro mercado final con el ciclo de la IA: P/E 70×) y Trimble (hardware y utilidad negativa en los últimos doce meses). PTC crece −7% por la venta de Kepware y ThingWorx, no por dificultades: se conserva.",
+ "ajuste_peers": 0.05,
+ "ajuste_motivo": "Ajuste +5%: crecimiento a FY+3 algo mayor que la mediana (Base ~9-10% frente a ~8% de PTC orgánico, ~11% de Bentley y ~3-5% de Dassault), +5%; margen operativo GAAP mayor y en alza (26% LTM, ~31% objetivo, frente a 23-28%), +5%; riesgo algo mayor (beta 1,43, integración de MaintainX y exposición de AutoCAD LT a la IA), −5%.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la empresa de FY+3 se parece a la de hoy (suscripción madura que crece ~9-10%), así que el Base se apoya sobre todo en la etapa actual y en los peers; el justificado C usa los supuestos de las historias y queda como el piso del rango.",
+ "fuentes": [
+  "[Autodesk, 10-Q del 2T FY27, 28-ago-2026](https://www.sec.gov/Archives/edgar/data/769397/000076939726000061/adsk-20260731.htm)",
+  "[Autodesk, comunicado del 2T FY27, 27-ago-2026](https://www.sec.gov/Archives/edgar/data/769397/000076939726000059/q227pressrelease.htm)",
+  "[Trefis, caída de la acción tras la guía, 10-sep-2026](https://www.trefis.com/stock/adsk/articles/614900/why-did-autodesk-stock-drop-so-soon-after-raising-its-forecast/2026-09-10)"
+ ],
+ "evaluacion": "Lectura del 7-oct-2026 (análisis desde cero, peers al cierre del 30-sep-2026): los múltiplos son precio relativo y salen de tres anclas (etapa actual, peers ajustados y justificado); los consolidados Base hoy valen ~8% menos que el DCF Base y no se movió ninguno para acercarlo. El chequeo de crecimiento implícito (paso 6.5) marca tres alertas en sentido contrario al habitual: EV/FCFF (20,1×), P/FCFE (18,8×) y P/OCF (19,2×) valen 27-41% menos que lo que implica el DCF en FY+3 (26-32×). La causa es de definición, no de historia: el flujo de caja de los peers suma la compensación en acciones (9-11% de las ventas en Autodesk), que el DCF trata como costo, y el justificado (17-24×) tampoco cierra la brecha, así que subir λ no la corrige. La evidencia (facturación orgánica ~10-11%, RPO corriente +12%) sostiene el crecimiento del DCF; no se cambia ni el DCF ni los múltiplos. El DCF es el valor intrínseco; EV/EBITDA y P/E, coherentes con el DCF, son los múltiplos más confiables para Autodesk."
+}

@@ -465,6 +465,24 @@
    "ventaja": "ventaja durable",
    "referencia": 0.1836,
    "nota": "Análisis desde cero del 6-oct-2026: dos fuentes estructurales (marca probada e inmuebles) y sin erosión visible del ROIC; la presión de 2026 es de ejecución y del ciclo del consumidor."
+  },
+  "ADSK": {
+   "fuentes": "Costos de cambio y estándares de archivo (DWG, Revit), datos de proyectos y red de revendedores y desarrolladores",
+   "evidencia": "ROIC por encima del costo de capital desde FY2021; 97% de ingresos recurrentes; retención neta en el extremo alto de 100-110% (10-Q 2T FY27)",
+   "amenaza": "IA generativa que reduzca puestos y formatos abiertos (Conservadora y Disrupción, 40%)",
+   "roic_actual": 0.179,
+   "roic_industria": 0.2056,
+   "industria_proxy": null,
+   "costo_capital_terminal": 0.0899,
+   "roic_terminal": 0.179,
+   "roic_terminal_antes": null,
+   "ventaja": "ventaja durable",
+   "referencia": 0.2056,
+   "roic_industria_sin_ajuste": 0.2932,
+   "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo con I+D capitalizado a 3 años (mismo cálculo que ADBE y MSFT): 20,56%.",
+   "nota_rd": "ROIC actual del modelo ('Valuation output'!B42): capital invertido operativo pro forma con la compra de MaintainX (patrimonio + deuda − caja − no operativos + activo de I+D + arrendamientos) = 9.601; NOPAT ajustado LTM con la pérdida estimada de MaintainX.",
+   "nota": "Análisis desde cero del 7-oct-2026: (1) sí, (2) sí, (3) no hay erosión visible (ingresos +16%, retención estable): ventaja durable. La referencia de la industria (20,56%) se topa en el ROIC actual pro forma (17,9%), deprimido por los US$3.530M pagados por MaintainX."
   }
- }
+ },
+ "corte": "2026-09-30"
 }

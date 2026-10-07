@@ -8,7 +8,7 @@ Damodaran pone precio en esa etapa y en ese sector. Fuentes y mapeo: reference/c
 El tipo solo cambia los pesos del precio relativo (ponderado DCF + múltiplos); el DCF no cambia.
 Respaldo en reference/revision_dcf_2026-10-05/ciclo_respaldo_<T>.json.
 
-Uso: PYTHONPATH=.:scripts python scripts/ciclo_de_vida.py [--apply]
+Uso: PYTHONPATH=.:scripts python scripts/ciclo_de_vida.py [--apply] [TICKER ...]
 """
 from __future__ import annotations
 
@@ -27,6 +27,11 @@ import model_steps as ms  # noqa: E402
 OUT = _ROOT / "reference" / "revision_dcf_2026-10-05"
 # ticker: (etapa de Damodaran, sector de Damodaran, tipo, evidencia)
 C = {
+    "ADSK": ("Crecimiento maduro", "Software (System & Application)", "Madura",
+             "Ventas +12%, +12%, +18% en FY2024-FY2026 (+16% en el 2T FY27 con ~2 pp del nuevo modelo de transacción y ~2 pp "
+             "de moneda); Base ~10%; margen GAAP 20-22% en FY2024-FY2026 y 26% LTM, en expansión moderada hacia ~31%; flujo "
+             "libre de 33% de las ventas en FY2026; recompras de ~50% del flujo libre: utilidades positivas y estables, se "
+             "valora por P/E futuro y EV/EBITDA (7-oct-2026)."),
     "ADBE": ("Madura estable (final del crecimiento maduro)", "Software (System & Application)", "Madura",
              "Ventas +10-11% en FY2023-FY2025 y 8,1% en la Base; margen operativo estable (31-37%, objetivo 40%); flujo libre "
              "estable (36-42% de las ventas); devuelve 37-47% de las ventas en recompras."),
@@ -102,7 +107,10 @@ C = {
 
 
 def main(argv: list[str]) -> int:
+    solo = [a.upper() for a in argv if not a.startswith("--")]
     for tk, (etapa, sector, tipo, ev) in C.items():
+        if solo and tk not in solo:
+            continue
         sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())["sheet_id"]
         for i in range(4):
             try:
