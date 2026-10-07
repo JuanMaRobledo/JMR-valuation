@@ -15,7 +15,7 @@ isolation: "OK"
 
 ## 1. Resumen ejecutivo
 
-Shake Shack combina una marca fuerte y expansión rápida con una pregunta todavía abierta: si la escala puede transformarse en margen operativo, flujo libre y retorno sobre capital. La valoración reconstruida desde la plantilla maestra arroja un **DCF Base de US$24,68 por acción** y un DCF esperado de US$20,23, frente a un precio de análisis de US$58,68 y un precio actual de la hoja cercano a US$64,40.
+Shake Shack combina una marca fuerte y expansión rápida con una pregunta todavía abierta: si la escala puede transformarse en margen operativo, flujo libre y retorno sobre capital. La valoración reconstruida desde la plantilla maestra arroja un **DCF Base de US$24,68 por acción** y un DCF esperado de US$20,23, frente a un precio de análisis de US$58,68 y un precio actual de la hoja cercano a US$64,25.
 
 ## 2. Negocio
 
