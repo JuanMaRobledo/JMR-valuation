@@ -123,3 +123,30 @@ Después de excluir años con denominadores negativos/casi cero y outliers docum
 La traducción de esas anclas históricas a la métrica Base de FY+3 produce valores presentes muy altos (desde ~US$134 por acción usando el mínimo histórico combinado), precisamente porque SHAK recibió durante años múltiplos elevados. Esta cifra **no es valor intrínseco** y no entra al ponderado.
 
 **Barato frente a su historia no equivale a infravalorado intrínsecamente.**
+
+
+## Auditoría de reinversión y unit economics · 7-oct-2026
+
+Se auditó si el DCF estaba penalizando excesivamente a SHAK por tratar la expansión como reinversión. La conclusión es **no cambiar el DCF Base**.
+
+La evidencia operativa es favorable: el net build cost por nuevo Shack bajó de ~US$2,6 M en 2023 a ~US$2,4 M en 2024 y ~US$1,9 M en 2025. La compañía mantiene un objetivo de cash-on-cash de al menos 30–33% para nuevas unidades, medido con el beneficio operativo del Shack en su tercer año sobre el net build cost y excluyendo pre-opening. En 2024 el AUV company-operated fue ~US$3,9 M con restaurant-level margin de 21,4%; en 2025 el AUV fue ~US$4,0 M y el margen restaurant-level ~22,6%.
+
+Sin embargo, esos retornos de unidad no equivalen al ROIC consolidado. El capital corporativo también incluye leases, pipeline de aperturas futuras, tecnología, remodels/mantenimiento y G&A. En la propia hoja, el Sales/Capital observado de SHAK es ~1,36x y Restaurant/Dining ~1,51x, mientras la Base ya usa **1,90x en años 1–5 y 1,70x en años 6–10**. Por tanto, el DCF ya concede una mejora significativa de eficiencia.
+
+Sensibilidad, manteniendo crecimiento, margen, WACC y terminal sin cambios:
+
+| Sales/Capital 1–5 | Sales/Capital 6–10 | DCF Base |
+|---:|---:|---:|
+| 1,36x | 1,36x | US$18,60 |
+| 1,51x | 1,51x | US$21,00 |
+| 1,70x | 1,60x | US$22,96 |
+| **1,90x** | **1,70x** | **US$24,68** |
+| 2,00x | 1,80x | US$25,62 |
+| 2,10x | 1,90x | US$26,47 |
+| 2,30x | 2,00x | US$27,64 |
+
+Esto demuestra que el tratamiento de reinversión **no explica la gran brecha** entre el DCF y el precio de mercado. Incluso un supuesto favorable de 2,10x/1,90x solo eleva el DCF a ~US$26,47.
+
+El FCF reportado sí está deprimido por growth capex: SHAK invirtió US$165,8 M en PP&E en 2025 y US$104,9 M en 1S26, mientras aceleraba su pipeline. Pero el DCF JMR **no resta mecánicamente todo ese capex**; modela la reinversión como Δ ingresos / Sales-to-Capital. Por ello no existe una doble penalización del growth capex.
+
+**Decisión:** mantener Sales/Capital Base en 1,90x / 1,70x. Solo se revisará al alza si varias cohortes prueban net build cost ≤US$1,9 M, ventas maduras compatibles con >2,1x ventas/net build, margen restaurant-level ≥22–23%, G&A/ventas decreciente y ROIC incremental corporativo claramente superior al WACC después de leases y tecnología.
