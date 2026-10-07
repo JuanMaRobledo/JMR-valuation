@@ -7,8 +7,7 @@ description: Hace una valoración nueva del Modelo JMR (criterio Damodaran) de u
 
 Prompts que mandan: `Modelo-JMR/docs/prompts/valoracion-modelo-jmr-v4.md` (pasos 1-11) y
 `research-fundamental-jmr-v5.md`. Léelos completos antes de empezar. Este archivo dice de dónde salen los datos más
-recientes y qué scripts usar; el contenido y los criterios están en los prompts. Ejemplo completo y probado:
-`scripts/run_celh_cero.py` (+ `celh_cero_spec.py`, `celh_cero_content.py`).
+recientes y qué scripts usar; el contenido y los criterios están en los prompts. Los scripts específicos de empresas anteriores son **referencia de implementación, nunca fuente de datos ni semilla**. Para una empresa nueva no se copia ningún `run_<ticker>_cero.py`, spec, content, JSON, texto o supuesto de otro ticker; se crea un expediente propio a partir de la plantilla maestra.
 
 ## 1. Datos más recientes (antes de abrir la hoja)
 1. Corte de mercado: `python3 scripts/datos_mercado.py`. Si el corte que devuelve es más nuevo que
@@ -22,6 +21,7 @@ recientes y qué scripts usar; el contenido y los criterios están en los prompt
    márgenes, ROIC, ventas/capital: la tabla de EE.UU. si la mayoría de las ventas está en Norteamérica, global si no).
 
 ## 2. Hoja desde la plantilla maestra
+0. **Firewall de contexto obligatorio:** fija ticker, nombre, moneda, fecha de corte y sheet ID objetivo. No abras ni uses como entrada una hoja/JSON/research/spec/content de otra empresa, salvo comparables declarados. La plantilla maestra es inmutable y la copia nueva es el único contenedor de escritura.
 1. `python3 scripts/reset_from_master.py --new "Modelo JMR - <T>"`. Si la cuenta de servicio no puede crear archivos, pide
    al usuario «Archivo > Hacer una copia» de la plantilla maestra (19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g), que la
    comparta como editor con jmr-valuation-bot@jmr-valuation-508617.iam.gserviceaccount.com, y corre
@@ -43,6 +43,7 @@ recientes y qué scripts usar; el contenido y los criterios están en los prompt
 - Posición: si el usuario la tiene en cartera, habilidad actualizar-cartera, modo A (lee las posiciones de la app Cartera).
 
 ## 4. Documentos, controles y entrega
+- Antes de publicar, realiza control anti-contaminación: ticker/nombre/sheet ID coherentes; ningún ticker ajeno en textos, notas o JSON salvo peers/fuentes explícitos; ninguna cifra o supuesto heredado de otra valoración. Reporta `AISLAMIENTO = OK`. Si no puede demostrarse, no publiques.
 - Research v5 y valoración v4 en `data/<T>_*_<fecha>.md` (las cifras salen de la hoja: `scripts/valores_hoja.py`),
   insertados en la app (`insert_damodaran_section.py`, `insert_scenarios_table.py`, `insert_research_horizons_app.py`).
 - Controles: `consistencia_app.py <T>` 16/16, `integridad_hojas.py <T>` 0 hallazgos, `apply_canonical_formulas.py` en seco
