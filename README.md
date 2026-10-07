@@ -115,3 +115,27 @@ Si cambian las historias (`reference/damodaran/<T>.json`), antes se corre
 `data/<T>_Analisis_Damodaran_*.md`. Desde el 2-oct-2026 los bloques Base, Conservador, Optimista y Disrupción de
 'Valuation output' calculan las cuatro historias, así que el DCF de la hoja (B35) es el DCF Base y ya no hay un caso
 técnico aparte (salvo las financieras, como PAGS, que usan 'DCF FCFE financiero').
+
+## Valoración desde cero de una empresa nueva (6-oct-2026)
+
+Flujo usado con CELH, NKE, LULU, ONON y MCD, ahora en un solo script por fases (`scripts/desde_cero.sh`):
+
+1. Copiar la plantilla maestra `Modelo_JMR_Plantilla_Maestra` (`19PRUFiYsNavUcN6WwHBVlp-VRMozp3rNSE2R1zt7N-g`) con el
+   conector de Drive en la carpeta de la empresa (la cuenta de servicio no puede crear archivos). La «Plantilla maestra
+   reutilizable (vigente)» de la carpeta NVIDIA es la hoja de NVDA: no usarla como plantilla.
+2. `desde_cero.sh datos T SHEET_ID "PEERS" "Industria"`: importador de la SEC, `nueva_empresa.py` (anclas, pestaña de
+   historias semilla y registro en la app), `auditar_estados_sec.py` + `aplicar_cambios_celdas.py` y el conversor de
+   arrendamientos (`apply_lease_conversion.py`, con `--gasto=T:US$M` si el gasto no está etiquetado).
+3. Juicio del analista en `scripts/run_<t>_cero.py` (datos con enlace + ajuste, costo de capital, supuestos Base,
+   textos) y en la ficha de historias `scripts/<t>_cero_spec.py`.
+4. `desde_cero.sh historias T "PEERS"`: historias, pestaña «Escenarios e historias», anclas, decisión de múltiplos,
+   crecimiento implícito, fórmula única e integridad. `damodaran_stories.py` avisa si una historia libera capital por
+   caída de ingresos o si el capital nuevo rinde más del doble del ROIC terminal.
+5. Informes (valoración v4 de 14 secciones y research v5 de 18) y `desde_cero.sh app T research.md`
+   (`research_md_a_app.py` + `regenerar_cartera.sh`); subida a Drive con `subir_drive.py`.
+
+Correcciones del 6-oct-2026 a partir de MCD: el importador toma la D&A total cuando conviven etiquetas de distinto
+alcance, lleva a unidades las acciones etiquetadas en millones, deja en «Leases» solo los arrendamientos financieros y no
+suma la deuda corriente que ya está dentro del largo plazo; `implied_growth.py` calibra el DCF inverso con la trayectoria
+real de los años 1-5 (`--sin-escribir` para medir sin tocar nada; efecto en la cartera en
+`reference/revision_dcf_2026-10-06/implied_growth_calibracion.json`); el cliente de Sheets reintenta solo ante el 429.

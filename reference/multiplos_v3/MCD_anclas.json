@@ -1,0 +1,387 @@
+{
+ "fcf_a_fcff": 0.8721863558293698,
+ "empresa": "MCDONALDS CORP (NYSE:MCD)",
+ "sheet_id": "1D44qNMrcbmbDbWuGO4EdFJdWdg9xE6cYg_pDCwLb30M",
+ "fecha": "2026-10-06",
+ "ke": 0.08691839670920425,
+ "categoria": "Madura",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "Dec '16": 13.99,
+     "Dec '17": 15.34,
+     "Dec '18": 16.47,
+     "Dec '19": 17.26,
+     "Dec '20": 21.48,
+     "Dec '21": 19.02,
+     "Dec '22": 20.34,
+     "Dec '23": 18.6,
+     "Dec '24": 17.99,
+     "Dec '25": 17.85,
+     "LTM": 13.69
+    },
+    "mediana_5a": 18.6,
+    "mediana_10a": 17.92,
+    "p25": 15.9,
+    "p75": 18.81,
+    "min": 13.69,
+    "max": 21.48,
+    "ultimo_cierre": 17.85,
+    "ltm": 13.69,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 14.14,
+    "p25": 11.52,
+    "p75": 15.86
+   },
+   "justificado": {
+    "Conservador": 15.72,
+    "Base": 16.57,
+    "Optimista": 17.0
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 17.850968475877192,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "Dec '16": 30.57,
+     "Dec '17": 45.28,
+     "Dec '18": 40.17,
+     "Dec '19": 32.2,
+     "Dec '20": 42.16,
+     "Dec '21": 32.73,
+     "Dec '22": 41.67,
+     "Dec '23": 34.94,
+     "Dec '24": 37.23,
+     "Dec '25": 36.25,
+     "LTM": 26.58
+    },
+    "mediana_5a": 36.25,
+    "mediana_10a": 36.74,
+    "p25": 32.46,
+    "p75": 40.92,
+    "min": 26.58,
+    "max": 45.28,
+    "ultimo_cierre": 36.25,
+    "ltm": 26.58,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 21.98,
+    "p25": 18.68,
+    "p75": 26.94
+   },
+   "justificado": {
+    "Conservador": 27.48,
+    "Base": 31.46,
+    "Optimista": 34.89
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 27.2781777602366,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "Dec '16": 22.37,
+     "Dec '17": 27.02,
+     "Dec '18": 23.55,
+     "Dec '19": 25.08,
+     "Dec '20": 34.01,
+     "Dec '21": 26.7,
+     "Dec '22": 31.64,
+     "Dec '23": 25.65,
+     "Dec '24": 25.45,
+     "Dec '25": 25.58,
+     "LTM": 18.93
+    },
+    "mediana_5a": 25.65,
+    "mediana_10a": 25.61,
+    "p25": 24.31,
+    "p75": 26.86,
+    "min": 18.93,
+    "max": 34.01,
+    "ultimo_cierre": 25.58,
+    "ltm": 18.93,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 17.4,
+    "p25": 16.95,
+    "p75": 22.71
+   },
+   "justificado": {
+    "Conservador": null,
+    "Base": null,
+    "Optimista": null
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 25.44954286756658,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "Dec '16": 24.73,
+     "Dec '17": 37.96,
+     "Dec '18": 33.02,
+     "Dec '19": 26.39,
+     "Dec '20": 34.81,
+     "Dec '21": 28.38,
+     "Dec '22": 35.6,
+     "Dec '23": 29.93,
+     "Dec '24": 31.37,
+     "Dec '25": 30.47,
+     "LTM": 21.25
+    },
+    "mediana_5a": 30.47,
+    "mediana_10a": 30.92,
+    "p25": 27.38,
+    "p75": 33.91,
+    "min": 21.25,
+    "max": 37.96,
+    "ultimo_cierre": 30.47,
+    "ltm": 21.25,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 20.94,
+    "p25": 16.19,
+    "p75": 24.23
+   },
+   "justificado": {
+    "Conservador": 25.74,
+    "Base": 29.21,
+    "Optimista": 32.15
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 22.53224923728285,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "Dec '16": 17.3,
+     "Dec '17": 25.29,
+     "Dec '18": 20.02,
+     "Dec '19": 18.61,
+     "Dec '20": 25.69,
+     "Dec '21": 22.05,
+     "Dec '22": 26.45,
+     "Dec '23": 22.59,
+     "Dec '24": 22.15,
+     "Dec '25": 20.75,
+     "LTM": 14.53
+    },
+    "mediana_5a": 22.15,
+    "mediana_10a": 22.1,
+    "p25": 19.32,
+    "p75": 23.94,
+    "min": 14.53,
+    "max": 26.45,
+    "ultimo_cierre": 20.75,
+    "ltm": 14.53,
+    "regimen_bajo_actual": false,
+    "excluidos": []
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 14.71,
+    "p25": 8.24,
+    "p75": 16.8
+   },
+   "justificado": {
+    "Conservador": 19.16,
+    "Base": 22.86,
+    "Optimista": 26.41
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 19.22835970843945,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.046277121823558705,
+   "g_años_4_10": 0.03965424364711741,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.08434520354966289,
+   "ke": 0.08691839670920425,
+   "roe_fy3": null,
+   "fcff_ebitda": 0.5720075705017409,
+   "fcfe_ocf": 0.7444261615657646,
+   "multiplos": {
+    "EV/FCFF": 27.484366807642466,
+    "P/FCFE": 25.744200317719432,
+    "P/E": null,
+    "EV/EBITDA": 15.721265884418255,
+    "P/OCF": 19.164656225100014
+   }
+  },
+  "Base": {
+   "g": 0.05094063060785699,
+   "g_años_4_10": 0.04898126121571398,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.08434520354966289,
+   "ke": 0.08691839670920425,
+   "roe_fy3": null,
+   "fcff_ebitda": 0.5267743557816236,
+   "fcfe_ocf": 0.7825445234217023,
+   "multiplos": {
+    "EV/FCFF": 31.46098087943529,
+    "P/FCFE": 29.210836149399018,
+    "P/E": null,
+    "EV/EBITDA": 16.572837935022502,
+    "P/OCF": 22.85877985328089
+   }
+  },
+  "Optimista": {
+   "g": 0.05413454602182226,
+   "g_años_4_10": 0.055369092043644506,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.08434520354966289,
+   "ke": 0.08691839670920425,
+   "roe_fy3": null,
+   "fcff_ebitda": 0.48721561769416843,
+   "fcfe_ocf": 0.8212138407872239,
+   "multiplos": {
+    "EV/FCFF": 34.89280380774184,
+    "P/FCFE": 32.15407964347345,
+    "P/E": null,
+    "EV/EBITDA": 17.000318960270373,
+    "P/OCF": 26.405375240995124
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "YUM",
+   "nombre": "Yum! Brands, Inc.",
+   "precio": 136.97,
+   "pe": 17.25063,
+   "ev_ebitda": 16.333,
+   "crec_ingresos": 0.122,
+   "margen_operativo": 0.32779998,
+   "roe": null,
+   "p_ocf": 17.944916186269804,
+   "p_fcf": 22.262811444907683,
+   "ev_fcf": 29.84530273734366,
+   "ocf_ttm": 2083000000.0,
+   "fcf_ttm": 1679000000.0,
+   "interest_ttm": 513000000.0,
+   "ev_fcff": 24.042117046256003
+  },
+  {
+   "ticker": "QSR",
+   "nombre": "Restaurant Brands International",
+   "precio": 69.87,
+   "pe": 17.555277,
+   "ev_ebitda": 13.838,
+   "crec_ingresos": 0.046,
+   "margen_operativo": 0.27738002,
+   "roe": 0.34792998,
+   "p_ocf": 16.811037042016807,
+   "p_fcf": 19.612876549019607,
+   "ev_fcf": 24.792724078431373,
+   "ocf_ttm": 1904000000.0,
+   "fcf_ttm": 1632000000.0,
+   "interest_ttm": 505000000.0,
+   "ev_fcff": 19.92256121322534
+  },
+  {
+   "ticker": "DPZ",
+   "nombre": "Domino's Pizza Inc",
+   "precio": 297.27,
+   "pe": 16.852041,
+   "ev_ebitda": 14.452,
+   "crec_ingresos": 0.043,
+   "margen_operativo": 0.19084999,
+   "roe": null,
+   "p_ocf": 12.643538203020038,
+   "p_fcf": 15.0492099591412,
+   "ev_fcf": 22.636425188608506,
+   "ocf_ttm": 777805000.0,
+   "fcf_ttm": 653470000.0,
+   "interest_ttm": 198023000.0,
+   "ev_fcff": 18.26407649153607
+  },
+  {
+   "ticker": "WEN",
+   "nombre": "Wendy's Company (The)",
+   "precio": 6.1,
+   "pe": 9.242424,
+   "ev_ebitda": 10.743,
+   "crec_ingresos": 0.017,
+   "margen_operativo": 0.14292,
+   "roe": 1.08042,
+   "p_ocf": 3.244386463296252,
+   "p_fcf": 4.402695899703228,
+   "ev_fcf": 18.54147949851614,
+   "ocf_ttm": 358492000.0,
+   "fcf_ttm": 264176000.0,
+   "interest_ttm": 132001000.0,
+   "ev_fcff": 13.293862458064622
+  },
+  {
+   "ticker": "PZZA",
+   "nombre": "Papa John's International, Inc.",
+   "precio": 19.54,
+   "pe": 24.425001,
+   "ev_ebitda": 7.968,
+   "crec_ingresos": -0.088,
+   "margen_operativo": 0.057439998,
+   "roe": null,
+   "p_ocf": 6.772540843291046,
+   "p_fcf": 26.10330271059893,
+   "ev_fcf": 63.37805421197857,
+   "ocf_ttm": 94985000.0,
+   "fcf_ttm": 24644000.0,
+   "interest_ttm": 39305000.0,
+   "ev_fcff": 28.043633543077064
+  },
+  {
+   "ticker": "CMG",
+   "nombre": "Chipotle Mexican Grill, Inc.",
+   "precio": 30.85,
+   "pe": 28.302752,
+   "ev_ebitda": 19.244,
+   "crec_ingresos": 0.093,
+   "margen_operativo": 0.16108,
+   "roe": 0.49560001,
+   "p_ocf": 16.772370207520687,
+   "p_fcf": 24.88114578023372,
+   "ev_fcf": 27.903061977010616,
+   "ocf_ttm": 2327527000.0,
+   "fcf_ttm": 1568985000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 27.903061977010616
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+[
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "D3",
+  "columna": "Dec '18",
+  "hoja_valor": 21025.2,
+  "sec": 21257.9,
+  "fecha_sec": "2018-12-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ },
+ {
+  "hoja": "Income Statement",
+  "fila": "Total Revenues",
+  "celda": "E3",
+  "columna": "Dec '19",
+  "hoja_valor": 21076.5,
+  "sec": 21364.4,
+  "fecha_sec": "2019-12-31",
+  "etiquetas": [
+   "Revenues",
+   "RevenueFromContractWithCustomerExcludingAssessedTax"
+  ],
+  "se_corrige": false
+ }
+]

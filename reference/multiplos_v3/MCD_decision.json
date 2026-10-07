@@ -1,0 +1,23 @@
+{
+ "ticker": "MCD",
+ "etapa_desde": null,
+ "etapa_motivo": "A: McDonald's es un franquiciador maduro desde hace décadas; no hubo cambio de etapa del negocio, así que A usa la mediana de los últimos cinco cierres (FY2021-FY2025) y el LTM. El LTM (P/E 18,9×, EV/EBITDA 13,7×) es el más bajo de la década: refleja la caída de la acción en 2026 (tráfico débil en EE.UU. y el plan NEXT), no un cambio de etapa.",
+ "peers_excluir": {
+  "*": [
+   "WEN",
+   "PZZA",
+   "CMG"
+  ]
+ },
+ "peers_motivo": "B: franquiciadores de comida rápida con datos de yfinance al 6-oct-2026 (precios del 2-oct): Yum! Brands, Restaurant Brands International y Domino's. Se excluyen Wendy's (seis trimestres de comparables negativas, −7% en el 2T26; P/OCF 3×), Papa John's (ingresos −8,8%, reestructuración) y Chipotle (opera sus locales: otro modelo de negocio).",
+ "ajuste_peers": 0.05,
+ "ajuste_motivo": "Ajuste +5%: crecimiento de los ingresos reportados a FY+3 menor que la mediana por el refranquiciamiento (~1-4% frente a 4-12%), −5%, aunque las ventas del sistema crecen parecido (~5%); margen operativo mayor (~50% frente a 19-33%), +5%; riesgo menor (calificación Baa1/BBB+ frente a grado especulativo de Yum! y RBI, beta ~0,8, propiedad de los inmuebles), +5%.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la empresa de FY+3 se parece a la de hoy (franquiciador maduro), así que el Base se apoya sobre todo en la historia y en los peers. P/E no tiene justificado: el patrimonio contable es negativo (−US$1.023 millones por US$80.527 millones de recompras acumuladas), así que el ROE no tiene sentido y el Base de P/E es el promedio de A y B.",
+ "fuentes": [
+  "[McDonald's, 10-Q del 2T26, 7-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm)",
+  "[McDonald's, 10-K 2025, 24-feb-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm)",
+  "[Restaurant Dive, ventas comparables de 18 cadenas, 27-ago-2026](https://www.restaurantdive.com/news/tracking-same-store-sales-18-major-restaurant-chains/742371/)"
+ ],
+ "evaluacion": "Lectura del 6-oct-2026 (análisis desde cero): los múltiplos consolidados Base hoy (US$279,64) valen 25% más que el DCF Base (US$224,12), en el límite del ±25%. No se movió ningún múltiplo para acercarlos. La causa es de crecimiento del BPA: la historia de cinco años (P/E 25,6×) se formó cuando el BPA crecía ~8-10% al año, y la Base del DCF supone ingresos casi planos por el refranquiciamiento y un margen que sube poco a poco. El chequeo de crecimiento implícito no da alertas (los cinco múltiplos Base difieren menos de 1 pp del que implica el DCF en FY+3). El DCF es la lectura más confiable; los múltiplos son precio relativo."
+}

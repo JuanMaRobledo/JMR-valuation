@@ -28,14 +28,15 @@ _ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 
-TODAS = "ADBE AFYA BSX CELH CMG DPZ DUOL EPAM GOOG INTU LULU MSFT NKE NVDA NVO ONON PAGS PLTR PYPL SHAK UBER ZTS".split()
+TODAS = "ADBE AFYA BSX CELH CMG DPZ DUOL EPAM GOOG INTU LULU MCD MSFT NKE NVDA NVO ONON PAGS PLTR PYPL SHAK UBER ZTS".split()
 TABS = ["Input sheet", "Valuation output", "Cost of capital worksheet", "Operating lease converter", "R& D converter",
         "Descuento de múltiplos", "Resumen de Valoración", "Escenarios e historias", "EVEBITDA", "EVFCFF", "PE", "PFCFE", "POCF"]
 ERR = re.compile(r"^#(REF!|VALUE!|DIV/0!|N/A|NAME\?|ERROR!|NUM!|NULL!)")
 # Celdas que son entradas del analista por diseño (supuestos de escenarios técnicos y datos con respaldo documentado).
 # «Escenarios e historias» E5:E8 = ventas/capital propio de cada historia (spec); 'Valuation output' filas 96-98 = referencia
-# histórica que no alimenta el DCF; A1 = rótulo; 'Input sheet'!D1 = precio fijado a la fecha de la valoración (hojas nuevas).
-ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|98|106)|A1)$|^Input sheet!(?:B(?:15|16|19|20|22|24)|D1)$"
+# histórica que no alimenta el DCF; A1 = rótulo; 'Input sheet'!D1 = precio fijado a la fecha de la valoración (hojas nuevas)
+# y B4 = esa fecha (scripts/fijar_precio_corte.py; desde el 6-oct-2026 no se informa como número suelto).
+ENTRADAS = re.compile(r"^Valuation output!(?:[B-G](?:45|47|55|57|96|98|106)|A1)$|^Input sheet!(?:B(?:4|15|16|19|20|22|24)|D1)$"
                       r"|^Escenarios e historias!E[5-8]$")
 
 
