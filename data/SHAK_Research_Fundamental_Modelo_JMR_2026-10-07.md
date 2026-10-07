@@ -103,3 +103,18 @@ SHAK cotiza actualmente en una zona de múltiplos históricamente baja después 
 Esta lectura no modifica las historias ni el DCF. La tensión central queda explícita: **compresión de valoración relativa** frente a una **generación intrínseca de caja todavía insuficiente** en el escenario Base. Si la mejora de margen y ROIC se materializa, la reversión de múltiplos podría amplificar el retorno; si no, una media histórica elevada puede ser una referencia engañosa.
 
 **Barato frente a su historia no equivale a infravalorado intrínsecamente.**
+
+
+## Reinversión, maintenance capex y economía de nuevas unidades
+
+La expansión de SHAK requiere separar dos conceptos que el FCF reportado mezcla: el capital necesario para **mantener** la red existente y el capital destinado a **crear nuevas unidades**. La empresa no desglosa maintenance capex con precisión suficiente para construir owner earnings exactos, pero sí ofrece información valiosa sobre la economía de las aperturas.
+
+El net build cost medio bajó de ~US$2,6 M por Shack en 2023 a ~US$2,4 M en 2024 y ~US$1,9 M en 2025. La compañía define el cash-on-cash de nuevas unidades como el restaurant-level operating profit del tercer año dividido por el net build cost y mantiene un objetivo de al menos 30–33%. Esto es una señal favorable: las economics de una unidad madura pueden ser mucho mejores que el ROIC consolidado.
+
+No obstante, el cash-on-cash de restaurante no incluye toda la economía corporativa. Restaurant-level profit excluye G&A, pre-opening y D&A; además, el capital económico incluye leases, tecnología, pipeline y remodelaciones. En 1S26 SHAK gastó US$104,9 M en capex mientras abría 33 Shacks company-operated y sostenía un pipeline mayor, y el restaurant-level margin fue 22,2% (23,0% en 2T26).
+
+Por eso el modelo no sustituye la reinversión por el capex reportado. Usa Δ ingresos / Sales-to-Capital. El ratio observado de SHAK en la hoja es ~1,36x y Restaurant/Dining ~1,51x; la Base ya supone 1,90x en años 1–5 y 1,70x después. Esa Base ya incorpora una mejora material por menores build costs y escala.
+
+La sensibilidad confirma que la reinversión no es la causa principal del DCF bajo. Con 2,10x/1,90x —un supuesto favorable cercano a la eficiencia implícita de AUV/net build— el DCF Base subiría solo de US$24,68 a ~US$26,47. Con 1,51x/1,51x bajaría a ~US$21,00.
+
+**Conclusión:** las nuevas unidades parecen tener economics atractivas, pero todavía falta demostrar que esos retornos sobreviven al nivel corporativo después de leases, tecnología, G&A y el costo de sostener una red mucho mayor. El supuesto Base 1,90x/1,70x se mantiene. La variable que más puede elevar el valor intrínseco sigue siendo la conversión de restaurant-level profitability en **margen operativo corporativo y ROIC incremental**, más que un simple reclasificado del capex.
