@@ -22,7 +22,7 @@ sys.path.insert(0, str(_ROOT))
 import regen_saved_valuations as rg  # noqa: E402
 
 DATOS = _ROOT.parent / "Modelo-JMR-datos"
-CONSERVAR = ("analisisFundamental", "hojaGoogle", "precioReferenciaFuente", "precioReferenciaConsultadoAt")
+CONSERVAR = ("analisisFundamental", "hojaGoogle", "precioReferenciaFuente", "precioReferenciaConsultadoAt", "multiplesHistoricos")
 
 
 def main(tk: str, sid: str | None = None) -> None:
