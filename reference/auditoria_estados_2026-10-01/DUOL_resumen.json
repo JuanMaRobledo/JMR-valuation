@@ -1,7 +1,95 @@
 {
  "ticker": "DUOL",
- "fecha": "2026-10-07",
+ "fecha": "2026-10-01",
  "cambios": [
+  {
+   "hoja": "Operating lease converter",
+   "celda": "E5",
+   "antes": 295,
+   "despues": 12.1,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B8",
+   "antes": 287,
+   "despues": 13.931,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B9",
+   "antes": 235,
+   "despues": 15.969,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B10",
+   "antes": 194,
+   "despues": 14.606,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B11",
+   "antes": 151,
+   "despues": 15.053,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B12",
+   "antes": 98,
+   "despues": 14.217,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Operating lease converter",
+   "celda": "B13",
+   "antes": 605,
+   "despues": 64.042,
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B18",
+   "antes": "No",
+   "despues": "Yes",
+   "motivo": "Conversor de arrendamientos (Damodaran): gasto y compromisos del 10-K al 2025-12-31 (SEC XBRL).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B30",
+   "antes": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+   "despues": "=(MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19)))+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C45",
+   "antes": "='Escenarios e historias'!$D$6",
+   "despues": "=('Escenarios e historias'!$D$6)+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C47",
+   "antes": "='Escenarios e historias'!$D$8",
+   "despues": "=('Escenarios e historias'!$D$8)+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+  },
   {
    "hoja": "Balance Sheet",
    "celda": "L3:L36",
@@ -11,44 +99,44 @@
    "tipo": "Balance del último 10-Q"
   },
   {
+   "hoja": "R& D converter",
+   "celda": "B12:B14",
+   "antes": "ejercicios 2025, 2024 y 2023",
+   "despues": "12 meses a junio: 273,3 · 206,6 · 179,8",
+   "motivo": "Los ejercicios se solapaban seis meses con el LTM (XBRL semestral de los 10-Q)",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
    "hoja": "Balance Sheet",
-   "celda": "J4:K5, J9:K9, L4",
-   "antes": "0",
-   "despues": "91,9 · 104,1 · 133,0",
-   "motivo": "Inversiones de corto plazo (bonos al vencimiento) dentro de otros activos corrientes",
-   "tipo": "Inversiones de corto plazo separadas"
+   "celda": "J4:K5, J9:K9",
+   "antes": "inversiones de corto plazo en 0",
+   "despues": "91,9 y 104,1 separadas de otros activos corrientes",
+   "motivo": "Bonos al vencimiento de corto plazo (XBRL, 10-K 2025)",
+   "tipo": "Estados financieros"
   },
   {
    "hoja": "Income Statement",
    "celda": "L8, L11",
-   "antes": "307,6 · 14,7",
-   "despues": "338,1 · −15,8",
+   "antes": "SG&A 307,6 · otros 14,7",
+   "despues": "SG&A 338,1 · otros −15,8",
    "motivo": "SG&A LTM; EBIT sin cambio",
    "tipo": "Flujos LTM"
   },
   {
    "hoja": "Income Statement",
    "celda": "I23:L27",
-   "antes": "promedio básico 0; acciones 48,3",
+   "antes": "promedio básico 0; acciones LTM 48,3",
    "despues": "41,5-46,7; 46,724 en circulación",
-   "motivo": "10-K 2025 y 10-Q 2T26",
-   "tipo": "Acciones y BPA"
-  },
-  {
-   "hoja": "R& D converter",
-   "celda": "B12:B14",
-   "antes": "ejercicios 2025, 2024, 2023",
-   "despues": "12 meses a junio: 273,3 · 206,6 · 179,8",
-   "motivo": "Alineado al LTM (XBRL semestral)",
-   "tipo": "Conversor de I+D alineado al LTM"
+   "motivo": "10-K 2025 y balance del 10-Q 2T26",
+   "tipo": "EPS básico"
   },
   {
    "hoja": "Input sheet",
-   "celda": "B18 y conversor",
-   "antes": "No",
-   "despues": "Yes (VP 105,1)",
-   "motivo": "Arrendamientos operativos como deuda",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
+   "celda": "B22, B24, B38:B42, B62:B63",
+   "antes": "plantilla",
+   "despues": "49,52M de acciones; 24%; opciones 0,6M a US$21,09; pérdidas fiscales US$111,2M",
+   "motivo": "Carta del 2T26 y 10-K 2025",
+   "tipo": "Estados financieros"
   }
  ],
  "checks": {
@@ -64,13 +152,13 @@
   "D"
  ],
  "salvedades": [
-  "Hoja nueva desde cero (7-oct-2026, 1eqWEqHU…): estados contrastados con el 10-K 2025 y el 10-Q 2T26; no se auditaron las fuentes de los múltiplos de peers ni la década histórica importada más allá de 2023-LTM; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
  ],
  "arrendamientos": {
-  "incluye_operativos": true,
+  "incluye_operativos": false,
   "conversor": "Yes",
   "arrendamientos": 0,
-  "acciones": 49.524,
+  "acciones": 49.523999999999994,
   "efecto_por_accion": 0.0
  },
  "antes": {
@@ -85,7 +173,7 @@
   }
  },
  "despues": {
-  "dcfTecnico": 107.46298088898017,
+  "dcfTecnico": 107.4629809,
   "valorEsperado": 100.86529467896352,
   "precioMOS": 65.5624415413263,
   "historias": {
@@ -95,7 +183,5 @@
    "D": 138.54370108566764
   }
  },
- "tramo_tasas_base": "$700-1,250 Mn",
- "hoja_anterior": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
- "hoja": "1eqWEqHU6TeIr8frOUt1vS54_YifnbBSCNvvIXhWbdC4"
+ "tramo_tasas_base": "$700-1,250 Mn"
 }

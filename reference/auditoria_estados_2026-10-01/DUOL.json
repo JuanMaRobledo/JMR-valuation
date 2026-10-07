@@ -2,23 +2,56 @@
  "ticker": "DUOL",
  "cierre_fiscal": "2025-12-31",
  "fecha_ltm": "2026-06-30",
+ "hoja": "1eqWEqHU6TeIr8frOUt1vS54_YifnbBSCNvvIXhWbdC4",
+ "nota": "Hoja nueva desde cero (7-oct-2026). El registro de la hoja anterior (1k-ms7Yt…) está en reference/backups/duol_desde_cero_2026-10-07/DUOL_auditoria_hoja_anterior.json; las celdas de esta lista y su respaldo, en reference/backups/duol_desde_cero_2026-10-07.json.",
  "cambios": [
   {
-   "hoja": "Cash Flow Statement",
-   "celda": "L40",
-   "fila": "Net Change in Cash",
-   "antes": -14,
-   "despues": 204.7,
-   "motivo": "LTM = ejercicio 250.6 + acumulado al 2026-06-30 144.5 − acumulado del año anterior 190.4 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14."
+   "hoja": "Balance Sheet",
+   "celda": "L3:L36",
+   "antes": "partidas del 31-dic-2025",
+   "despues": "balance al 30-jun-2026",
+   "motivo": "10-Q 2T26: el importador repetía el cierre anual",
+   "tipo": "Balance del último 10-Q"
   },
   {
-   "hoja": "Valuation output",
-   "celda": "B41",
-   "fila": "Invested capital",
-   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
-   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
-   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20)."
+   "hoja": "R& D converter",
+   "celda": "B12:B14",
+   "antes": "ejercicios 2025, 2024 y 2023",
+   "despues": "12 meses a junio: 273,3 · 206,6 · 179,8",
+   "motivo": "Los ejercicios se solapaban seis meses con el LTM (XBRL semestral de los 10-Q)",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "J4:K5, J9:K9",
+   "antes": "inversiones de corto plazo en 0",
+   "despues": "91,9 y 104,1 separadas de otros activos corrientes",
+   "motivo": "Bonos al vencimiento de corto plazo (XBRL, 10-K 2025)",
+   "tipo": "Estados financieros"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L8, L11",
+   "antes": "SG&A 307,6 · otros 14,7",
+   "despues": "SG&A 338,1 · otros −15,8",
+   "motivo": "SG&A LTM; EBIT sin cambio",
+   "tipo": "Flujos LTM"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "I23:L27",
+   "antes": "promedio básico 0; acciones LTM 48,3",
+   "despues": "41,5-46,7; 46,724 en circulación",
+   "motivo": "10-K 2025 y balance del 10-Q 2T26",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B22, B24, B38:B42, B62:B63",
+   "antes": "plantilla",
+   "despues": "49,52M de acciones; 24%; opciones 0,6M a US$21,09; pérdidas fiscales US$111,2M",
+   "motivo": "Carta del 2T26 y 10-K 2025",
+   "tipo": "Estados financieros"
   }
- ],
- "notas": []
+ ]
 }
