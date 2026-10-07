@@ -25,7 +25,7 @@ from pathlib import Path
 _ROOT = Path(__file__).resolve().parents[1]
 DATOS = _ROOT.parent / "Modelo-JMR-datos"
 CAMPOS = ("precio", "fecha", "zonas", "objetivoPonderado", "valorPresentePonderado", "descuentoMultiples", "metodos",
-          "hojas", "cagr", "mos", "hojaGoogle", "valorEsperado")
+          "hojas", "cagr", "mos", "hojaGoogle", "valorEsperado", "multiplesHistoricos")
 
 
 def md_a_html(md: str) -> str:
