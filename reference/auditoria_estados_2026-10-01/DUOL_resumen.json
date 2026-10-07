@@ -3,94 +3,6 @@
  "fecha": "2026-10-01",
  "cambios": [
   {
-   "hoja": "R& D converter",
-   "celda": "B12",
-   "antes": "='Income Statement'!K10",
-   "despues": "='Income Statement'!J10+144,06-106,025",
-   "motivo": "I+D de los 12 meses a jun-2025 = 2024 (235,3) + 1S25 (144,06) − 1S24 (106,025) = 273,3 (10-Q 2T25 y 2T24). Antes el ejercicio 2025, que se solapa con el LTM.",
-   "tipo": "Conversor de I+D alineado al LTM"
-  },
-  {
-   "hoja": "R& D converter",
-   "celda": "B13",
-   "antes": "='Income Statement'!J10",
-   "despues": "='Income Statement'!I10+106,025-93,791",
-   "motivo": "12 meses a jun-2024 = 2023 + 1S24 − 1S23 (10-Q). Antes el ejercicio 2024.",
-   "tipo": "Conversor de I+D alineado al LTM"
-  },
-  {
-   "hoja": "R& D converter",
-   "celda": "B14",
-   "antes": "='Income Statement'!I10",
-   "despues": "='Income Statement'!H10+93,791-63,998",
-   "motivo": "12 meses a jun-2023 = 2022 + 1S23 − 1S22 (10-Q). Antes el ejercicio 2023.",
-   "tipo": "Conversor de I+D alineado al LTM"
-  },
-  {
-   "hoja": "Balance Sheet",
-   "celda": "L4",
-   "antes": 0,
-   "despues": 133,
-   "motivo": "Inversiones mantenidas al vencimiento de corto plazo al 30-jun-2026 (10-Q 2T26); antes 0.",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Balance Sheet",
-   "celda": "L5",
-   "antes": 1180.9,
-   "despues": 1313.9,
-   "motivo": "Caja 1.180,9 + inversiones de corto plazo 133 al 30-jun-2026 (10-Q).",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Balance Sheet",
-   "celda": "L14",
-   "antes": 135.1,
-   "despues": 103,
-   "motivo": "Inversiones de largo plazo al 30-jun-2026 (10-Q); antes 135,1, el cierre de 2025.",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Balance Sheet",
-   "celda": "L26",
-   "antes": 93.8,
-   "despues": 86,
-   "motivo": "Arrendamientos de largo plazo al 30-jun-2026 (10-Q); antes 93,8.",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Balance Sheet",
-   "celda": "L34",
-   "antes": 1347,
-   "despues": 1410,
-   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.347, el cierre de 2025.",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Balance Sheet",
-   "celda": "L35",
-   "antes": 1347,
-   "despues": 1410,
-   "motivo": "Patrimonio al 30-jun-2026 (10-Q); antes 1.347, el cierre de 2025.",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Input sheet",
-   "celda": "B20",
-   "antes": "='Balance Sheet'!L14+'Balance Sheet'!L15",
-   "despues": "='Balance Sheet'!L14",
-   "motivo": "Activos no operativos = inversiones de largo plazo. Antes sumaba «Other Long-Term Assets» (320,8), que no son inversiones.",
-   "tipo": "Balance del último 10-Q"
-  },
-  {
-   "hoja": "Input sheet",
-   "celda": "B16",
-   "antes": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
-   "despues": "='Balance Sheet'!L20+'Balance Sheet'!L25",
-   "motivo": "Deuda de balance sin arrendamientos operativos porque entran por el conversor de arrendamientos (B18 = Yes, criterio Damodaran: VP de los compromisos como deuda y EBIT + gasto − depreciación); así no se cuentan dos veces. Los arrendamientos financieros siguen en esta deuda.",
-   "tipo": "Deuda de balance sin arrendamientos operativos"
-  },
-  {
    "hoja": "Operating lease converter",
    "celda": "E5",
    "antes": 295,
@@ -156,77 +68,75 @@
   },
   {
    "hoja": "Input sheet",
-   "celda": "B28",
-   "antes": 0.2,
-   "despues": 0.200944,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
-  },
-  {
-   "hoja": "Input sheet",
    "celda": "B30",
-   "antes": 0.27,
-   "despues": 0.270944,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145).",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
-  },
-  {
-   "hoja": "Input sheet",
-   "celda": "B32",
-   "antes": 4,
-   "despues": 2.9707,
-   "motivo": "Ventas/capital con el capital arrendado: 1/(1/4 + 0.0866), con VP de arrendamientos 99.2 / ventas 1145.",
-   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
-  },
-  {
-   "hoja": "Input sheet",
-   "celda": "B33",
-   "antes": 4.5,
-   "despues": 3.2379,
-   "motivo": "Ventas/capital con el capital arrendado: 1/(1/4.5 + 0.0866), con VP de arrendamientos 99.2 / ventas 1145.",
+   "antes": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+   "despues": "=(MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19)))+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145).",
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
    "hoja": "Valuation output",
    "celda": "C45",
-   "antes": "=B6",
-   "despues": "=(B6)+0,000944",
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145).",
+   "antes": "='Escenarios e historias'!$D$6",
+   "despues": "=('Escenarios e historias'!$D$6)+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145).",
    "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B32",
-   "antes": 2.9707,
-   "despues": 1.79,
-   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
-   "tipo": "Ventas/capital contrastado con la historia y la industria"
+   "hoja": "Valuation output",
+   "celda": "C47",
+   "antes": "='Escenarios e historias'!$D$8",
+   "despues": "=('Escenarios e historias'!$D$8)+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145).",
+   "tipo": "Arrendamientos como deuda (conversor, Damodaran)"
   },
   {
-   "hoja": "Input sheet",
-   "celda": "B33",
-   "antes": 3.2379,
-   "despues": 1.79,
-   "motivo": "Ventas/capital revisado (1-oct-2026): historia 2023-2025 1,79 (con I+D capitalizado neto) e industria Software (Internet) 1,35. El valor anterior quedaba fuera de ese rango por más de 10%; se lleva al borde más cercano. Incluye el capital arrendado (criterio Damodaran).",
-   "tipo": "Ventas/capital contrastado con la historia y la industria"
+   "hoja": "Balance Sheet",
+   "celda": "L3:L36",
+   "antes": "partidas del 31-dic-2025",
+   "despues": "balance al 30-jun-2026",
+   "motivo": "10-Q 2T26: el importador repetía el cierre anual",
+   "tipo": "Balance del último 10-Q"
   },
   {
-   "hoja": "Cash Flow Statement",
-   "celda": "L40",
-   "fila": "Net Change in Cash",
-   "antes": -14,
-   "despues": 204.7,
-   "motivo": "LTM = ejercicio 250.6 + acumulado al 2026-06-30 144.5 − acumulado del año anterior 190.4 (CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect). Antes -14.",
+   "hoja": "R& D converter",
+   "celda": "B12:B14",
+   "antes": "ejercicios 2025, 2024 y 2023",
+   "despues": "12 meses a junio: 273,3 · 206,6 · 179,8",
+   "motivo": "Los ejercicios se solapaban seis meses con el LTM (XBRL semestral de los 10-Q)",
+   "tipo": "Conversor de I+D alineado al LTM"
+  },
+  {
+   "hoja": "Balance Sheet",
+   "celda": "J4:K5, J9:K9",
+   "antes": "inversiones de corto plazo en 0",
+   "despues": "91,9 y 104,1 separadas de otros activos corrientes",
+   "motivo": "Bonos al vencimiento de corto plazo (XBRL, 10-K 2025)",
+   "tipo": "Estados financieros"
+  },
+  {
+   "hoja": "Income Statement",
+   "celda": "L8, L11",
+   "antes": "SG&A 307,6 · otros 14,7",
+   "despues": "SG&A 338,1 · otros −15,8",
+   "motivo": "SG&A LTM; EBIT sin cambio",
    "tipo": "Flujos LTM"
   },
   {
-   "hoja": "Valuation output",
-   "celda": "B41",
-   "fila": "Invested capital",
-   "antes": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19))",
-   "despues": "=IF('Input sheet'!$B$18=\"Yes\";IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'Operating lease converter'!$F$34);IF('Input sheet'!$B$17=\"Yes\";'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20+'R& D converter'!$D$36;'Input sheet'!$B$15+'Input sheet'!$B$16-'Input sheet'!$B$19-'Input sheet'!$B$20))",
-   "motivo": "Capital invertido operativo: se restan los activos no operativos (Input B20).",
-   "tipo": "Capital invertido operativo"
+   "hoja": "Income Statement",
+   "celda": "I23:L27",
+   "antes": "promedio básico 0; acciones LTM 48,3",
+   "despues": "41,5-46,7; 46,724 en circulación",
+   "motivo": "10-K 2025 y balance del 10-Q 2T26",
+   "tipo": "EPS básico"
+  },
+  {
+   "hoja": "Input sheet",
+   "celda": "B22, B24, B38:B42, B62:B63",
+   "antes": "plantilla",
+   "despues": "49,52M de acciones; 24%; opciones 0,6M a US$21,09; pérdidas fiscales US$111,2M",
+   "motivo": "Carta del 2T26 y 10-K 2025",
+   "tipo": "Estados financieros"
   }
  ],
  "checks": {
@@ -247,22 +157,11 @@
  "arrendamientos": {
   "incluye_operativos": false,
   "conversor": "Yes",
-  "arrendamientos": 86,
-  "acciones": 50.03,
+  "arrendamientos": 0,
+  "acciones": 49.523999999999994,
   "efecto_por_accion": 0.0
  },
  "antes": {
-  "dcfTecnico": 125.7706161,
-  "valorEsperado": 118.84854247980292,
-  "precioMOS": 77.2515526118719,
-  "historias": {
-   "A": 125.64255490364278,
-   "B": 98.98884151855442,
-   "C": 64.28022998862306,
-   "D": 162.33422531958587
-  }
- },
- "despues": {
   "dcfTecnico": 113.3599361,
   "valorEsperado": 110.00766512347082,
   "precioMOS": 71.50498233025603,
@@ -271,6 +170,17 @@
    "B": 88.8585076787132,
    "C": 57.24922615215114,
    "D": 147.3784012907113
+  }
+ },
+ "despues": {
+  "dcfTecnico": 107.4629809,
+  "valorEsperado": 100.86529467896352,
+  "precioMOS": 65.5624415413263,
+  "historias": {
+   "A": 107.46298088898017,
+   "B": 79.6979066701521,
+   "C": 48.73736394250897,
+   "D": 138.54370108566764
   }
  },
  "tramo_tasas_base": "$700-1,250 Mn"

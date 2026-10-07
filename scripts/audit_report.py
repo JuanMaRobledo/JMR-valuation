@@ -37,7 +37,8 @@ TIPO = {"RD": "Conversor de I+D alineado al LTM", "BALANCE": "Balance del últim
 BASE = "7361ae29c73368ed2ccedade461d02df9243e5eb"  # Modelo-JMR-datos antes de la auditoría (merge del PR #17)
 # Valoraciones rehechas desde cero después de la auditoría: «antes» es la valoración que reemplazan y la fecha es la de la
 # nueva hoja (CELH: segunda valoración desde cero del 5-oct-2026; antes = Modelo-JMR-datos en el merge del PR #49).
-BASE_TK = {"CELH": "16f05e5be5315876864fffe5a63c78be3ead4467"}
+BASE_TK = {"CELH": "16f05e5be5315876864fffe5a63c78be3ead4467",
+           "DUOL": "2709e982040e932ce7cec5181b822f4d178220fe"}  # DUOL desde cero (7-oct-2026): antes = valoración del 30-sep-2026
 FECHA_TK = {"CELH": "2026-10-05"}
 NIIF = ("AFYA", "NVO", "ONON", "PAGS")
 

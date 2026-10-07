@@ -199,32 +199,32 @@
  },
  "DUOL": {
   "industria": "Software (Internet)",
-  "actual": 2.45,
+  "actual": 2.38,
   "ventas_ltm": 1145,
-  "capital_ltm": 466.6961243532253,
-  "roic_actual": 0.5333594411093019,
+  "capital_ltm": 480.74562236105965,
+  "roic_actual": 0.43453982334662133,
   "marginal_ultimo": {
    "desde": "Dec '24",
    "hasta": "Dec '25",
    "dventas": 289.6,
-   "dcapital": 89.5,
-   "ratio": 3.23
+   "dcapital": 38.2,
+   "ratio": 7.58
   },
   "marginal_3a": {
    "desde": "Dec '22",
    "hasta": "Dec '25",
    "dventas": 668.1,
-   "dcapital": 220.0,
-   "ratio": 3.04
+   "dcapital": 45.6,
+   "ratio": 14.64
   },
   "sector": 1.35,
   "usada": [
-   3,
-   2.45
+   2.25,
+   2
   ],
   "rendimiento_capital_nuevo": [
-   0.6094,
-   0.4977
+   0.4732,
+   0.4206
   ],
   "con_id": true,
   "vida_id": 3,
