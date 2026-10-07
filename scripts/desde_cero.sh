@@ -64,6 +64,8 @@ historias)
   echo "== 7. Crecimiento implícito y recálculo de las historias"
   python3 scripts/implied_growth.py "$T" || exit 1
   python3 scripts/damodaran_stories.py "$T" || exit 1
+  echo "== 7b. Múltiplos históricos normalizados (lectura independiente; no afecta DCF ni ponderado)"
+  python3 scripts/historical_multiples.py "$T" --sheet-id "$SID" --write-sheet || exit 1
   echo "== 8. Controles: fórmula única (0 pendientes) e integridad"
   echo "[[\"$T\",\"$SID\"]]" > /tmp/${T}_targets.json
   python3 scripts/apply_canonical_formulas.py --targets /tmp/${T}_targets.json
