@@ -94,3 +94,12 @@ SHAK es una historia de crecimiento creíble pero creación de valor todavía no
 - Shake Shack Investor Relations, resultados y guía 2T26.
 - Aswath Damodaran, Restaurant/Dining beta, ERP y metodología de capitalización de leases.
 - Mauboussin & Callahan, The Base Rate Book.
+
+
+## Valoración frente a su propia historia
+
+SHAK cotiza actualmente en una zona de múltiplos históricamente baja después de depurar años no interpretables. EV/EBITDA ronda 19,25x frente a una mediana fiscal depurada de 41,40x; P/E 67,70x frente a 98,28x; y P/OCF 14,03x frente a 23,50x. En los tres casos el múltiplo actual está incluso por debajo del mínimo fiscal válido de la muestra depurada.
+
+Esta lectura no modifica las historias ni el DCF. La tensión central queda explícita: **compresión de valoración relativa** frente a una **generación intrínseca de caja todavía insuficiente** en el escenario Base. Si la mejora de margen y ROIC se materializa, la reversión de múltiplos podría amplificar el retorno; si no, una media histórica elevada puede ser una referencia engañosa.
+
+**Barato frente a su historia no equivale a infravalorado intrínsecamente.**
