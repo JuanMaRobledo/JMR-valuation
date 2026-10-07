@@ -41,6 +41,11 @@ for T in $TICKERS; do
     done
   fi
   [ $ok = 1 ] && { reintentar 600 python3 scripts/valuation_report_v3.py --ticker $T --saved $V --out data/ | tail -1 | cut -c1-120 || ok=0; }
+  # Módulo aditivo: solo se recalcula si el ticker ya optó por múltiplos históricos normalizados.
+  # No modifica DCF, escenarios, múltiplos vigentes ni ponderaciones.
+  if [ $ok = 1 ] && [ -s "reference/historical_multiples/$T.json" ]; then
+    reintentar 600 python3 scripts/historical_multiples.py "$T" --write-sheet --patch-app | tail -1 || ok=0
+  fi
   [ $ok = 1 ] || FALLAS+=("$T")
   python3 -c "import time;time.sleep(20)"
 done
