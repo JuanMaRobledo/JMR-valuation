@@ -139,3 +139,26 @@ alcance, lleva a unidades las acciones etiquetadas en millones, deja en «Leases
 suma la deuda corriente que ya está dentro del largo plazo; `implied_growth.py` calibra el DCF inverso con la trayectoria
 real de los años 1-5 (`--sin-escribir` para medir sin tocar nada; efecto en la cartera en
 `reference/revision_dcf_2026-10-06/implied_growth_calibracion.json`); el cliente de Sheets reintenta solo ante el 429.
+
+### Screener europeo (selección propia)
+
+`python scripts/refresh_europe_screener.py --json-out ../Modelo-JMR/docs/screener/resultados.json`
+
+Agrega 60 cotizaciones locales de 11 países europeos al JSON existente, conservando
+los campos y resultados estadounidenses. No replica un índice ni cubre toda Europa.
+La selección versionada está en `jmr_valuation/screener/europe.py`. Roche usa ROP.SW
+tras el cambio de certificado de marzo de 2026:
+https://www.roche.com/investors/updates/inv-update-2026-03-16
+
+La fuente europea es Yahoo Finance (timeseries anual y chart). Su historia parcial
+normalmente cubre cuatro FY: no se asigna puntaje JMR, CAGR 5a ni medianas históricas.
+ROIC y márgenes son del último FY; los múltiplos usan sus resultados anuales y una
+capitalización aproximada con acciones al cierre FY. No son ratios LTM. Los importes
+se mantienen en moneda local, se normaliza GBp/GBX a GBP y se omiten múltiplos cuando
+las monedas no coinciden, hay clases/certificados pendientes de validar o un split
+posterior al último FY. Los faltantes no se sustituyen por cero. Financieras excluidas.
+
+El refresco falla sin escribir el JSON si más del 20% de los símbolos da error o
+menos del 80% tiene precio. El workflow del sitio ejecuta esta ampliación después
+del screener estadounidense y antes de publicar. Pruebas aisladas sin dependencias:
+`python -m unittest discover -s tests -p test_europe_screener.py -v`.
