@@ -1,474 +1,476 @@
 {
- "fcf_a_fcff": 1.3740266901130342,
- "empresa": "Shake Shack Inc. (NYSE:SHAK)",
- "sheet_id": "1RcwUptYoVjCfHvdqED5wXCsjteCds61g4HMKA_T8GCM",
- "fecha": "2026-09-29",
- "ke": 0.08993076303760114,
- "categoria": "Crecimiento",
- "metodos": {
-  "EV/EBITDA": {
-   "hoja": "EVEBITDA",
-   "historia": {
-    "serie": {
-     "—": "",
-     "Dec '19": 32.79,
-     "Dec '20": 675.15,
-     "Dec '21": 69.66,
-     "Dec '22": 44.2,
-     "Dec '23": 38.59,
-     "Dec '24": 59.3,
-     "Dec '25": 22.8,
-     "LTM": 17.09
+  "fcf_a_fcff": 1.3740266901130342,
+  "empresa": "Shake Shack Inc. (NYSE:SHAK)",
+  "sheet_id": "1j6U5KtzbnRDyI6mQDgJD4pNq15flN9k8RvdXGfUrG1o",
+  "fecha": "2026-09-30",
+  "ke": 0.08993076303760114,
+  "categoria": "Crecimiento",
+  "metodos": {
+    "EV/EBITDA": {
+      "hoja": "EVEBITDA",
+      "historia": {
+        "serie": {
+          "—": "",
+          "Dec '19": 32.79,
+          "Dec '20": 675.15,
+          "Dec '21": 69.66,
+          "Dec '22": 44.2,
+          "Dec '23": 38.59,
+          "Dec '24": 59.3,
+          "Dec '25": 22.8,
+          "LTM": 17.09
+        },
+        "mediana_5a": 44.2,
+        "mediana_10a": 41.39,
+        "p25": 27.8,
+        "p75": 51.75,
+        "min": 17.09,
+        "max": 69.66,
+        "ultimo_cierre": 22.8,
+        "ltm": 17.09,
+        "regimen_bajo_actual": true,
+        "excluidos": [
+          [
+            "Dec '20",
+            675.15,
+            "> 2,5x la mediana (41.4x)"
+          ]
+        ]
+      },
+      "peers": {
+        "n": 5,
+        "mediana": 19.63,
+        "p25": 16.74,
+        "p75": 19.82
+      },
+      "justificado": {
+        "Conservador": 2.63,
+        "Base": 0.36,
+        "Optimista": 1.03
+      },
+      "actual_J": {
+        "J8": 17.47,
+        "J19": 18.01,
+        "J30": 30.11
+      }
     },
-    "mediana_5a": 44.2,
-    "mediana_10a": 41.39,
-    "p25": 27.8,
-    "p75": 51.75,
-    "min": 17.09,
-    "max": 69.66,
-    "ultimo_cierre": 22.8,
-    "ltm": 17.09,
-    "regimen_bajo_actual": true,
-    "excluidos": [
-     [
-      "Dec '20",
-      675.15,
-      "> 2,5x la mediana (41.4x)"
-     ]
-    ]
-   },
-   "peers": {
-    "n": 5,
-    "mediana": 19.63,
-    "p25": 16.74,
-    "p75": 19.82
-   },
-   "justificado": {
-    "Conservador": 2.63,
-    "Base": 0.36,
-    "Optimista": 1.03
-   },
-   "actual_J": {
-    "J8": null,
-    "J19": 15,
-    "J30": null
-   }
-  },
-  "EV/FCFF": {
-   "hoja": "EVFCFF",
-   "historia": {
-    "serie": {
-     "—": "",
-     "Dec '19": -130.58,
-     "Dec '20": -104.36,
-     "Dec '21": -69.66,
-     "Dec '22": -30.83,
-     "Dec '23": -267.9,
-     "Dec '24": 175.24,
-     "Dec '25": 68.24,
-     "LTM": -246.52
+    "EV/FCFF": {
+      "hoja": "EVFCFF",
+      "historia": {
+        "serie": {
+          "—": "",
+          "Dec '19": -130.58,
+          "Dec '20": -104.36,
+          "Dec '21": -69.66,
+          "Dec '22": -30.83,
+          "Dec '23": -267.9,
+          "Dec '24": 175.24,
+          "Dec '25": 68.24,
+          "LTM": -246.52
+        },
+        "mediana_5a": 121.74,
+        "mediana_10a": 121.74,
+        "p25": 94.99,
+        "p75": 148.49,
+        "min": 68.24,
+        "max": 175.24,
+        "ultimo_cierre": 68.24,
+        "ltm": null,
+        "regimen_bajo_actual": false,
+        "excluidos": [
+          [
+            "Dec '19",
+            -130.58,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '20",
+            -104.36,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '21",
+            -69.66,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '22",
+            -30.83,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '23",
+            -267.9,
+            "métrica negativa o ~0"
+          ],
+          [
+            "LTM",
+            -246.52,
+            "métrica negativa o ~0"
+          ]
+        ]
+      },
+      "peers": {
+        "n": 5,
+        "mediana": 28.73,
+        "p25": 28.04,
+        "p75": 53.82
+      },
+      "justificado": {
+        "Conservador": 36.51,
+        "Base": 54.49,
+        "Optimista": 78.06
+      },
+      "actual_J": {
+        "J8": 44.78,
+        "J19": 47.62,
+        "J30": 61.55
+      }
     },
-    "mediana_5a": 121.74,
-    "mediana_10a": 121.74,
-    "p25": 94.99,
-    "p75": 148.49,
-    "min": 68.24,
-    "max": 175.24,
-    "ultimo_cierre": 68.24,
-    "ltm": null,
-    "regimen_bajo_actual": false,
-    "excluidos": [
-     [
-      "Dec '19",
-      -130.58,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '20",
-      -104.36,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '21",
-      -69.66,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '22",
-      -30.83,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '23",
-      -267.9,
-      "métrica negativa o ~0"
-     ],
-     [
-      "LTM",
-      -246.52,
-      "métrica negativa o ~0"
-     ]
-    ]
-   },
-   "peers": {
-    "n": 5,
-    "mediana": 28.73,
-    "p25": 28.04,
-    "p75": 53.82
-   },
-   "justificado": {
-    "Conservador": 36.51,
-    "Base": 54.49,
-    "Optimista": 78.06
-   },
-   "actual_J": {
-    "J8": null,
-    "J19": 30,
-    "J30": null
-   }
-  },
-  "P/E": {
-   "hoja": "PE",
-   "historia": {
-    "serie": {
-     "—": "",
-     "Dec '19": 98.28,
-     "Dec '20": -74.44,
-     "Dec '21": -318.68,
-     "Dec '22": -69.75,
-     "Dec '23": 158.21,
-     "Dec '24": 550.12,
-     "Dec '25": 74.47,
-     "LTM": 58.47
+    "P/E": {
+      "hoja": "PE",
+      "historia": {
+        "serie": {
+          "—": "",
+          "Dec '19": 98.28,
+          "Dec '20": -74.44,
+          "Dec '21": -318.68,
+          "Dec '22": -69.75,
+          "Dec '23": 158.21,
+          "Dec '24": 550.12,
+          "Dec '25": 74.47,
+          "LTM": 58.47
+        },
+        "mediana_5a": 98.28,
+        "mediana_10a": 98.28,
+        "p25": 70.47,
+        "p75": 113.26,
+        "min": 58.47,
+        "max": 158.21,
+        "ultimo_cierre": 74.47,
+        "ltm": 58.47,
+        "regimen_bajo_actual": false,
+        "excluidos": [
+          [
+            "Dec '20",
+            -74.44,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '21",
+            -318.68,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '22",
+            -69.75,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '24",
+            550.12,
+            "> 2,5x la mediana (98.3x)"
+          ]
+        ]
+      },
+      "peers": {
+        "n": 6,
+        "mediana": 41.22,
+        "p25": 26.64,
+        "p75": 84.4
+      },
+      "justificado": {
+        "Conservador": 20.4,
+        "Base": 30.57,
+        "Optimista": 42.13
+      },
+      "actual_J": {
+        "J8": 39.37,
+        "J19": 46.63,
+        "J30": 57.82
+      }
     },
-    "mediana_5a": 98.28,
-    "mediana_10a": 98.28,
-    "p25": 70.47,
-    "p75": 113.26,
-    "min": 58.47,
-    "max": 158.21,
-    "ultimo_cierre": 74.47,
-    "ltm": 58.47,
-    "regimen_bajo_actual": false,
-    "excluidos": [
-     [
-      "Dec '20",
-      -74.44,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '21",
-      -318.68,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '22",
-      -69.75,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '24",
-      550.12,
-      "> 2,5x la mediana (98.3x)"
-     ]
-    ]
-   },
-   "peers": {
-    "n": 6,
-    "mediana": 41.22,
-    "p25": 26.64,
-    "p75": 84.4
-   },
-   "justificado": {
-    "Conservador": 20.4,
-    "Base": 30.57,
-    "Optimista": 42.13
-   },
-   "actual_J": {
-    "J8": null,
-    "J19": 35,
-    "J30": null
-   }
-  },
-  "P/FCFE": {
-   "hoja": "PFCFE",
-   "historia": {
-    "serie": {
-     "—": "",
-     "Dec '19": -116.65,
-     "Dec '20": -99.32,
-     "Dec '21": -63.6,
-     "Dec '22": -25.35,
-     "Dec '23": -238.13,
-     "Dec '24": 163.47,
-     "Dec '25": 60.05,
-     "LTM": -198.46
+    "P/FCFE": {
+      "hoja": "PFCFE",
+      "historia": {
+        "serie": {
+          "—": "",
+          "Dec '19": -116.65,
+          "Dec '20": -99.32,
+          "Dec '21": -63.6,
+          "Dec '22": -25.35,
+          "Dec '23": -238.13,
+          "Dec '24": 163.47,
+          "Dec '25": 60.05,
+          "LTM": -198.46
+        },
+        "mediana_5a": 111.76,
+        "mediana_10a": 111.76,
+        "p25": 85.91,
+        "p75": 137.61,
+        "min": 60.05,
+        "max": 163.47,
+        "ultimo_cierre": 60.05,
+        "ltm": null,
+        "regimen_bajo_actual": false,
+        "excluidos": [
+          [
+            "Dec '19",
+            -116.65,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '20",
+            -99.32,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '21",
+            -63.6,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '22",
+            -25.35,
+            "métrica negativa o ~0"
+          ],
+          [
+            "Dec '23",
+            -238.13,
+            "métrica negativa o ~0"
+          ],
+          [
+            "LTM",
+            -198.46,
+            "métrica negativa o ~0"
+          ]
+        ]
+      },
+      "peers": {
+        "n": 5,
+        "mediana": 25.77,
+        "p25": 25.71,
+        "p75": 70.32
+      },
+      "justificado": {
+        "Conservador": 30.31,
+        "Base": 41.83,
+        "Optimista": 54.54
+      },
+      "actual_J": {
+        "J8": 39.96,
+        "J19": 41.73,
+        "J30": 53
+      }
     },
-    "mediana_5a": 111.76,
-    "mediana_10a": 111.76,
-    "p25": 85.91,
-    "p75": 137.61,
-    "min": 60.05,
-    "max": 163.47,
-    "ultimo_cierre": 60.05,
-    "ltm": null,
-    "regimen_bajo_actual": false,
-    "excluidos": [
-     [
-      "Dec '19",
-      -116.65,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '20",
-      -99.32,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '21",
-      -63.6,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '22",
-      -25.35,
-      "métrica negativa o ~0"
-     ],
-     [
-      "Dec '23",
-      -238.13,
-      "métrica negativa o ~0"
-     ],
-     [
-      "LTM",
-      -198.46,
-      "métrica negativa o ~0"
-     ]
-    ]
-   },
-   "peers": {
-    "n": 5,
-    "mediana": 25.77,
-    "p25": 25.71,
-    "p75": 70.32
-   },
-   "justificado": {
-    "Conservador": 30.31,
-    "Base": 41.83,
-    "Optimista": 54.54
-   },
-   "actual_J": {
-    "J8": null,
-    "J19": 30,
-    "J30": null
-   }
+    "P/OCF": {
+      "hoja": "POCF",
+      "historia": {
+        "serie": {
+          "—": "",
+          "Dec '19": 21.54,
+          "Dec '20": 84.18,
+          "Dec '21": 46.94,
+          "Dec '22": 21.75,
+          "Dec '23": 25.24,
+          "Dec '24": 34.09,
+          "Dec '25": 15.26,
+          "LTM": 12.12
+        },
+        "mediana_5a": 25.24,
+        "mediana_10a": 23.49,
+        "p25": 18.4,
+        "p75": 29.66,
+        "min": 12.12,
+        "max": 46.94,
+        "ultimo_cierre": 15.26,
+        "ltm": 12.12,
+        "regimen_bajo_actual": false,
+        "excluidos": [
+          [
+            "Dec '20",
+            84.18,
+            "> 2,5x la mediana (23.5x)"
+          ]
+        ]
+      },
+      "peers": {
+        "n": 5,
+        "mediana": 17.33,
+        "p25": 15.62,
+        "p75": 18.27
+      },
+      "justificado": {
+        "Conservador": 6.12,
+        "Base": 8.34,
+        "Optimista": 13.01
+      },
+      "actual_J": {
+        "J8": 13.04,
+        "J19": 15.15,
+        "J30": 18.6
+      }
+    }
   },
-  "P/OCF": {
-   "hoja": "POCF",
-   "historia": {
-    "serie": {
-     "—": "",
-     "Dec '19": 21.54,
-     "Dec '20": 84.18,
-     "Dec '21": 46.94,
-     "Dec '22": 21.75,
-     "Dec '23": 25.24,
-     "Dec '24": 34.09,
-     "Dec '25": 15.26,
-     "LTM": 12.12
+  "justificado": {
+    "Conservador": {
+      "g": 0.05512202969681407,
+      "g_años_4_10": 0.05734405939362813,
+      "g_perpetuidad": 0.0529,
+      "wacc_4_10": 0.08401769052578845,
+      "ke": 0.08993076303760114,
+      "roe_fy3": 0.16863442174198442,
+      "fcff_ebitda": 0.07210027907559058,
+      "fcfe_ocf": 0.20178766536373635,
+      "multiplos": {
+        "EV/FCFF": 36.51489529662591,
+        "P/FCFE": 30.31199151566014,
+        "P/E": 20.40382164597448,
+        "EV/EBITDA": 2.6327341413026977,
+        "P/OCF": 6.116586000470444
+      }
     },
-    "mediana_5a": 25.24,
-    "mediana_10a": 23.49,
-    "p25": 18.4,
-    "p75": 29.66,
-    "min": 12.12,
-    "max": 46.94,
-    "ultimo_cierre": 15.26,
-    "ltm": 12.12,
-    "regimen_bajo_actual": false,
-    "excluidos": [
-     [
-      "Dec '20",
-      84.18,
-      "> 2,5x la mediana (23.5x)"
-     ]
-    ]
-   },
-   "peers": {
-    "n": 5,
-    "mediana": 17.33,
-    "p25": 15.62,
-    "p75": 18.27
-   },
-   "justificado": {
-    "Conservador": 6.12,
-    "Base": 8.34,
-    "Optimista": 13.01
-   },
-   "actual_J": {
-    "J8": null,
-    "J19": 12,
-    "J30": null
-   }
-  }
- },
- "justificado": {
-  "Conservador": {
-   "g": 0.05512202969681407,
-   "g_años_4_10": 0.05734405939362813,
-   "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.08401769052578845,
-   "ke": 0.08993076303760114,
-   "roe_fy3": 0.16863442174198442,
-   "fcff_ebitda": 0.07210027907559058,
-   "fcfe_ocf": 0.20178766536373635,
-   "multiplos": {
-    "EV/FCFF": 36.51489529662591,
-    "P/FCFE": 30.31199151566014,
-    "P/E": 20.40382164597448,
-    "EV/EBITDA": 2.6327341413026977,
-    "P/OCF": 6.116586000470444
-   }
+    "Base": {
+      "g": 0.06448283179435088,
+      "g_años_4_10": 0.07606566358870177,
+      "g_perpetuidad": 0.0529,
+      "wacc_4_10": 0.08401769052578845,
+      "ke": 0.08993076303760114,
+      "roe_fy3": 0.2395292863777802,
+      "fcff_ebitda": 0.0066818812343891025,
+      "fcfe_ocf": 0.19940591857707549,
+      "multiplos": {
+        "EV/FCFF": 54.49145276291516,
+        "P/FCFE": 41.82983762488322,
+        "P/E": 30.56897502081641,
+        "EV/EBITDA": 0.36410541565112303,
+        "P/OCF": 8.341117195519752
+      }
+    },
+    "Optimista": {
+      "g": 0.07030648901245289,
+      "g_años_4_10": 0.08771297802490577,
+      "g_perpetuidad": 0.0529,
+      "wacc_4_10": 0.08401769052578845,
+      "ke": 0.08993076303760114,
+      "roe_fy3": 0.30887144038825437,
+      "fcff_ebitda": 0.01316814104694538,
+      "fcfe_ocf": 0.23845174034964287,
+      "multiplos": {
+        "EV/FCFF": 78.06073654241528,
+        "P/FCFE": 54.5399278282024,
+        "P/E": 42.12534255034871,
+        "EV/EBITDA": 1.027914789018968,
+        "P/OCF": 13.00514070917878
+      }
+    }
   },
-  "Base": {
-   "g": 0.06448283179435088,
-   "g_años_4_10": 0.07606566358870177,
-   "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.08401769052578845,
-   "ke": 0.08993076303760114,
-   "roe_fy3": 0.2395292863777802,
-   "fcff_ebitda": 0.0066818812343891025,
-   "fcfe_ocf": 0.19940591857707549,
-   "multiplos": {
-    "EV/FCFF": 54.49145276291516,
-    "P/FCFE": 41.82983762488322,
-    "P/E": 30.56897502081641,
-    "EV/EBITDA": 0.36410541565112303,
-    "P/OCF": 8.341117195519752
-   }
-  },
-  "Optimista": {
-   "g": 0.07030648901245289,
-   "g_años_4_10": 0.08771297802490577,
-   "g_perpetuidad": 0.0529,
-   "wacc_4_10": 0.08401769052578845,
-   "ke": 0.08993076303760114,
-   "roe_fy3": 0.30887144038825437,
-   "fcff_ebitda": 0.01316814104694538,
-   "fcfe_ocf": 0.23845174034964287,
-   "multiplos": {
-    "EV/FCFF": 78.06073654241528,
-    "P/FCFE": 54.5399278282024,
-    "P/E": 42.12534255034871,
-    "EV/EBITDA": 1.027914789018968,
-    "P/OCF": 13.00514070917878
-   }
-  }
- },
- "peers": [
-  {
-   "ticker": "CMG",
-   "nombre": "Chipotle Mexican Grill, Inc.",
-   "precio": 31.88,
-   "pe": 29.518517,
-   "ev_ebitda": 19.816,
-   "crec_ingresos": 0.093,
-   "margen_operativo": 0.16108,
-   "roe": 0.49560001,
-   "p_ocf": 17.332355104795777,
-   "p_fcf": 25.71186115864715,
-   "ev_fcf": 28.73377735542405,
-   "ocf_ttm": 2327527000.0,
-   "fcf_ttm": 1568985000.0,
-   "interest_ttm": 0.0,
-   "ev_fcff": 28.73377735542405
-  },
-  {
-   "ticker": "CAVA",
-   "nombre": "CAVA Group, Inc.",
-   "precio": 53.14,
-   "pe": 94.89285,
-   "ev_ebitda": 38.038,
-   "crec_ingresos": 0.313,
-   "margen_operativo": 0.0762,
-   "roe": 0.083229996,
-   "p_ocf": 28.15449831946114,
-   "p_fcf": 126.61828305658683,
-   "ev_fcf": 124.63805605646445,
-   "ocf_ttm": 220465000.0,
-   "fcf_ttm": 49022000.0,
-   "interest_ttm": 0.0,
-   "ev_fcff": 124.63805605646445
-  },
-  {
-   "ticker": "WING",
-   "nombre": "Wingstop Inc.",
-   "precio": 108.62,
-   "pe": 25.678488,
-   "ev_ebitda": 16.743,
-   "crec_ingresos": 0.064,
-   "margen_operativo": 0.29759002,
-   "roe": null,
-   "p_ocf": 15.616049986806692,
-   "p_fcf": 23.028976543651844,
-   "ev_fcf": 30.494117764253584,
-   "ocf_ttm": 189490000.0,
-   "fcf_ttm": 128494000.0,
-   "interest_ttm": 37982000.0,
-   "ev_fcff": 24.721240420649163
-  },
-  {
-   "ticker": "TXRH",
-   "nombre": "Texas Roadhouse, Inc.",
-   "precio": 157.21,
-   "pe": 25.193913,
-   "ev_ebitda": 15.913,
-   "crec_ingresos": 0.111,
-   "margen_operativo": 0.08509,
-   "roe": 0.27714002,
-   "p_ocf": 12.84604924101908,
-   "p_fcf": 25.77372079373603,
-   "ev_fcf": 28.03746194287998,
-   "ocf_ttm": 803314000.0,
-   "fcf_ttm": 400385000.0,
-   "interest_ttm": 0.0,
-   "ev_fcff": 28.03746194287998
-  },
-  {
-   "ticker": "BROS",
-   "nombre": "Dutch Bros Inc.",
-   "precio": 38.1,
-   "pe": 52.916664,
-   "ev_ebitda": 19.627,
-   "crec_ingresos": 0.325,
-   "margen_operativo": 0.12876001,
-   "roe": 0.14562,
-   "p_ocf": 18.273609113555757,
-   "p_fcf": 70.31729396538118,
-   "ev_fcf": 66.51763817540906,
-   "ocf_ttm": 365697000.0,
-   "fcf_ttm": 95035000.0,
-   "interest_ttm": 28372000.0,
-   "ev_fcff": 53.82344849946632
-  },
-  {
-   "ticker": "SG",
-   "nombre": "Sweetgreen, Inc.",
-   "precio": 8.74,
-   "pe": 97.11111,
-   "ev_ebitda": -21.083,
-   "crec_ingresos": 0.038,
-   "margen_operativo": -0.12589,
-   "roe": 0.03069,
-   "p_ocf": null,
-   "p_fcf": null,
-   "ev_fcf": null,
-   "ocf_ttm": -27636000.0,
-   "fcf_ttm": -123662000.0,
-   "interest_ttm": 104000.0,
-   "ev_fcff": null
-  }
- ],
- "justificado_recalculado": "2026-10-05",
- "historia_actualizada": "2026-10-04"
+  "peers": [
+    {
+      "ticker": "CMG",
+      "nombre": "Chipotle Mexican Grill, Inc.",
+      "precio": 31.88,
+      "pe": 29.518517,
+      "ev_ebitda": 19.816,
+      "crec_ingresos": 0.093,
+      "margen_operativo": 0.16108,
+      "roe": 0.49560001,
+      "p_ocf": 17.332355104795777,
+      "p_fcf": 25.71186115864715,
+      "ev_fcf": 28.73377735542405,
+      "ocf_ttm": 2327527000,
+      "fcf_ttm": 1568985000,
+      "interest_ttm": 0,
+      "ev_fcff": 28.73377735542405
+    },
+    {
+      "ticker": "CAVA",
+      "nombre": "CAVA Group, Inc.",
+      "precio": 53.14,
+      "pe": 94.89285,
+      "ev_ebitda": 38.038,
+      "crec_ingresos": 0.313,
+      "margen_operativo": 0.0762,
+      "roe": 0.083229996,
+      "p_ocf": 28.15449831946114,
+      "p_fcf": 126.61828305658683,
+      "ev_fcf": 124.63805605646445,
+      "ocf_ttm": 220465000,
+      "fcf_ttm": 49022000,
+      "interest_ttm": 0,
+      "ev_fcff": 124.63805605646445
+    },
+    {
+      "ticker": "WING",
+      "nombre": "Wingstop Inc.",
+      "precio": 108.62,
+      "pe": 25.678488,
+      "ev_ebitda": 16.743,
+      "crec_ingresos": 0.064,
+      "margen_operativo": 0.29759002,
+      "roe": null,
+      "p_ocf": 15.616049986806692,
+      "p_fcf": 23.028976543651844,
+      "ev_fcf": 30.494117764253584,
+      "ocf_ttm": 189490000,
+      "fcf_ttm": 128494000,
+      "interest_ttm": 37982000,
+      "ev_fcff": 24.721240420649163
+    },
+    {
+      "ticker": "TXRH",
+      "nombre": "Texas Roadhouse, Inc.",
+      "precio": 157.21,
+      "pe": 25.193913,
+      "ev_ebitda": 15.913,
+      "crec_ingresos": 0.111,
+      "margen_operativo": 0.08509,
+      "roe": 0.27714002,
+      "p_ocf": 12.84604924101908,
+      "p_fcf": 25.77372079373603,
+      "ev_fcf": 28.03746194287998,
+      "ocf_ttm": 803314000,
+      "fcf_ttm": 400385000,
+      "interest_ttm": 0,
+      "ev_fcff": 28.03746194287998
+    },
+    {
+      "ticker": "BROS",
+      "nombre": "Dutch Bros Inc.",
+      "precio": 38.1,
+      "pe": 52.916664,
+      "ev_ebitda": 19.627,
+      "crec_ingresos": 0.325,
+      "margen_operativo": 0.12876001,
+      "roe": 0.14562,
+      "p_ocf": 18.273609113555757,
+      "p_fcf": 70.31729396538118,
+      "ev_fcf": 66.51763817540906,
+      "ocf_ttm": 365697000,
+      "fcf_ttm": 95035000,
+      "interest_ttm": 28372000,
+      "ev_fcff": 53.82344849946632
+    },
+    {
+      "ticker": "SG",
+      "nombre": "Sweetgreen, Inc.",
+      "precio": 8.74,
+      "pe": 97.11111,
+      "ev_ebitda": -21.083,
+      "crec_ingresos": 0.038,
+      "margen_operativo": -0.12589,
+      "roe": 0.03069,
+      "p_ocf": null,
+      "p_fcf": null,
+      "ev_fcf": null,
+      "ocf_ttm": -27636000,
+      "fcf_ttm": -123662000,
+      "interest_ttm": 104000,
+      "ev_fcff": null
+    }
+  ],
+  "justificado_recalculado": "2026-10-05",
+  "historia_actualizada": "2026-10-04",
+  "actualizado": "2026-10-07",
+  "aislamiento": "OK"
 }
