@@ -1,0 +1,334 @@
+"""Ficha de historias de DUOL desde cero (7-oct-2026): escribe reference/damodaran/DUOL.json.
+
+Valoración desde cero de Duolingo con los prompts vigentes (valoración v4, research v5). Las cifras de las historias
+(crecimiento por fuente de ingresos, margen, probabilidades) son juicio del analista con la evidencia citada; los valores
+por acción los calcula scripts/damodaran_stories.py con el motor que reproduce la hoja.
+Márgenes: base del modelo (I+D capitalizado a 3 años, sin el ajuste de arrendamientos, que suma damodaran_stories.py).
+Uso: python scripts/duol_cero_spec.py
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+_ROOT = Path(__file__).resolve().parent.parent
+OUT = _ROOT / "reference" / "damodaran" / "DUOL.json"
+
+E = "https://www.sec.gov/Archives/edgar/data/1562088/"
+Q2 = f"[Duolingo, carta a los accionistas del 2T26, 5-ago-2026]({E}000162828026053299/q2fy26duolingo6-30x26share.htm)"
+Q1 = f"[Duolingo, carta a los accionistas del 1T26, 4-may-2026]({E}000162828026029790/q1fy26duolingo3-31x26share.htm)"
+Q4 = f"[Duolingo, carta a los accionistas del 4T25, 26-feb-2026]({E}000162828026012246/q4fy25duolingo12-31x25shar.htm)"
+TENQ = f"[Duolingo, 10-Q del 2T26, 6-ago-2026]({E}000162828026053603/duol-20260630.htm)"
+TENK = f"[Duolingo, 10-K 2025, 27-feb-2026]({E}000162828026012494/duol-20251231.htm)"
+REC = f"[Duolingo, 8-K del programa de recompra, 26-feb-2026]({E}000162828026012246/duol-20260226.htm)"
+DAU8K = f"[Duolingo, 8-K (Reg FD) del 18-ago-2026]({E}000162828026057818/duol-20260818.htm)"
+CALL = ("[The Motley Fool, transcripción de la llamada del 2T26, 5-ago-2026]"
+        "(https://www.fool.com/earnings/call-transcripts/2026/08/12/duolingo-duol-q2-2026-earnings-call-transcript/)")
+EVR = ("[TIKR, mejora de Evercore ISI a Outperform, 29-sep-2026]"
+       "(https://www.tikr.com/blog/duolingo-duol-stock-evercore-upgrade-survey-data-daus)")
+CAIDA = ("[Yahoo Finance/Reuters, caída tras la guía de 2026, 26-feb-2026]"
+         "(https://finance.yahoo.com/news/duolingo-prioritizes-user-growth-over-210210779.html)")
+
+SPEC = {
+    "ticker": "DUOL",
+    "empresa": "Duolingo, Inc.",
+    "fecha": "2026-09-30",
+    "industria_damodaran": "Software (Internet)",
+    "historia": (
+        "En cinco a diez años Duolingo sigue siendo la aplicación de aprendizaje más usada del mundo: un producto gratuito "
+        "con publicidad que convierte a una fracción de su audiencia en suscriptores (Super y Max) y que extiende el hábito "
+        "diario de los idiomas a ajedrez, matemáticas y música. El crecimiento sale de la audiencia (usuarios activos "
+        "diarios +23% en el 2T26) más que del ingreso por usuario: en 2026 la empresa eligió quitar fricción y regalar "
+        "funciones de IA (Video Call dentro de Super) para crecer en usuarios, y aceptó reservas de solo ~11% y un margen "
+        "menor. La historia central es que esa audiencia más grande se monetiza de nuevo a partir de 2027 con suscripciones, "
+        "planes más baratos con publicidad y avisos propios, y que el margen operativo GAAP sube de ~10% en 2026 a ~24% "
+        "(28% en la base del modelo, con el I+D como inversión) a medida que la compensación en acciones baja de ~15% de "
+        "las ventas y el costo de la IA sigue cayendo. Reinvierte poco capital físico: los suscriptores pagan por adelantado "
+        "y el capital nuevo es sobre todo I+D. El riesgo es de producto y de sustitución (asistentes de IA generalistas que "
+        "enseñan idiomas gratis, tiendas de aplicaciones que cobran 15-30%), no financiero: no tiene deuda y guarda "
+        "US$1.417 millones en caja e inversiones."),
+    "filtro": [
+        ["Los ingresos crecen ~11% anual compuesto en cinco años",
+         "Sí",
+         f"Sí: guía de reservas 2026 +10,9% con ~5 pp sacrificados a propósito por quitar fricción; usuarios activos diarios "
+         f"+23% en el 2T26 y suscriptores pagos +17% ({Q2}; {Q4})",
+         "Probable si la audiencia nueva paga como la de antes; la Base exige que las reservas vuelvan a crecer más que en 2026"],
+        ["El margen GAAP llega a ~24% (28% en la base del modelo)",
+         "Sí",
+         f"Sí: margen bruto 72,6% y EBITDA ajustado de 29,5% en 2025; la compensación en acciones (~15% de las ventas en 2026) "
+         f"es la brecha principal con un margen GAAP alto ({Q2}; {Q4})",
+         "Probable a cinco años si la compensación en acciones baja a ~10% de las ventas; no hay meta GAAP de la gerencia"],
+        ["La estrategia de 2026 lleva a 100 millones de usuarios activos diarios en 2028",
+         "Sí",
+         f"Plausible: 58,7 millones en el 2T26 y +27,4% el 17-ago-2026 según una pantalla mostrada por error ({DAU8K}); "
+         "exige ~+28% anual durante 2,5 años",
+         "Posible, no probable: la Base no la necesita"],
+        ["Los asistentes de IA generalistas reemplazan a Duolingo",
+         "Sí",
+         f"Débil hoy: la retención de usuarios actuales está en máximos (84%) y el crecimiento de usuarios se aceleró en 2026 ({Q2})",
+         "Posible a diez años; no se observa en las métricas de uso de 2026"],
+    ],
+    "tasas_base_nota": (
+        "Con ventas LTM de US$1.145 millones (~US$810 millones de 2015) Duolingo está en el tramo de US$700-1.250 millones de "
+        "The Base Rate Book: media real de crecimiento a 5 años de 7,9% y mediana de 6,4% (más ~2,5% de inflación para "
+        "compararlas con cifras nominales). La Base ({cagrA} nominal) queda en el tercio alto: solo ~{tbA} de las empresas de su "
+        "tamaño creció a ese ritmo. La sostienen una audiencia que todavía crece más de 20% al año, la conversión a suscriptor "
+        "(~9% de los usuarios activos mensuales) y la recurrencia de las suscripciones, que son 86% de los ingresos."),
+    "segmentos": {"Suscripciones": 980.72, "Publicidad": 82.906, "Duolingo English Test": 41.358,
+                  "Compras en la app y otros": 40.018},
+    "crecimiento": {
+        "texto": (
+            "Las ventas LTM (julio 2025-junio 2026) suman US$1.145 millones (cálculo propio: 2025 + 1S26 − 1S25, "
+            f"{TENK}; {TENQ}): suscripciones US$980,7 millones (86%), publicidad US$82,9 millones, Duolingo English Test "
+            "US$41,4 millones y compras dentro de la aplicación y otros US$40,0 millones. Todo el crecimiento es orgánico: las "
+            "compras (NextBeat en 2025, estudios de animación antes) son chicas. El ingreso reportado va detrás de las "
+            "reservas porque las suscripciones anuales se reconocen en doce meses: en el 2T26 el ingreso creció 18% pero las "
+            f"reservas 8% (6% en moneda constante), y la guía del 3T26 es +11,1% de ingreso y +8,9% de reservas ({Q2}). Por "
+            "eso el año 1 del modelo (julio 2026-junio 2027) converge a las reservas: ~11%. La audiencia crece mucho más rápido "
+            "(usuarios activos diarios +23%, suscriptores +17%) porque la empresa decidió en febrero de 2026 resignar más de "
+            f"US$50 millones de reservas (~5 pp de crecimiento) quitando fricción a los usuarios gratuitos ({Q4}). La "
+            "publicidad (+2% en el 2T26) y las compras dentro de la aplicación (−23%) sufren directamente esa decisión; el "
+            "Duolingo English Test está estancado (~US$42 millones al año desde 2023). El dólar débil sumó ~2 pp en 2026."),
+        "tabla": {
+            "cols": ["US$ millones", "2023", "2024", "2025", "LTM jun-26 (cálculo propio)", "2T26 interanual"],
+            "align": ["l", "r", "r", "r", "r", "r"],
+            "rows": [
+                ["Suscripciones", "404,7", "607,5", "873,4", "980,7", "+22%"],
+                ["Publicidad", "49,9", "54,9", "79,7", "82,9", "+2%"],
+                ["Duolingo English Test", "41,2", "45,6", "42,0", "41,4", "0%"],
+                ["Compras en la app y otros", "35,4", "39,9", "42,4", "40,0", "−16%"],
+                ["Total ingresos", "531,1", "748,0", "1.037,6", "1.145,0", "+18%"],
+                ["Reservas totales", "—", "870,6", "1.158,4", "1.216,3", "+8%"],
+                ["Usuarios activos diarios (millones, trimestre)", "—", "40,5 (4T)", "52,7 (4T)", "58,7 (2T26)", "+23%"],
+            ],
+        },
+    },
+    "margenes": {
+        "texto": (
+            "El margen operativo GAAP LTM es 13,7% (EBIT de US$157 millones). Incluye la compensación en acciones (US$145 "
+            "millones LTM, 12,7% de las ventas), que es un costo económico y que la gerencia espera en ~15% de las ventas en "
+            f"2026 ({Q2}). El EBITDA ajustado (que la excluye) fue 29,5% en 2025 y la guía de 2026 es 26,5%: con ~15% de "
+            "compensación en acciones y ~1,5% de depreciación, el margen GAAP de 2026 queda en ~10%. Con el I+D tratado como "
+            "inversión (Damodaran: se suma el I+D del año, US$337 millones, y se resta la amortización del activo de I+D a "
+            "tres años, US$220 millones, con el conversor alineado a períodos de 12 meses a junio) el margen LTM es 24,0%, que es la base del modelo; el año 1 baja a 18,5% en esa base (~9,5% GAAP) por "
+            "la inversión deliberada de 2026. No hay partidas de una vez materiales: el deterioro de software y los costos de "
+            "compras suman menos de US$1 millón en el 2T26. El comparable maduro es Match Group: misma economía de aplicación "
+            "con suscripción cobrada por las tiendas de Apple y Google (margen bruto ~70%) y margen operativo GAAP de ~25-29%. "
+            "Duolingo gasta más en I+D (29% de las ventas frente a ~13%), así que el objetivo de la Base (~24% GAAP, 28% en "
+            "la base del modelo) queda en el extremo bajo de Match: supone que la compensación en acciones baja a ~10% y que "
+            f"el costo de la IA sigue cayendo (el costo de una videollamada bajó de US$0,30 a menos de US$0,01, {CALL})."),
+    },
+    "reinversion": {
+        "texto": (
+            "El crecimiento orgánico casi no pide capital físico (capex y software capitalizado de ~US$25-30 millones al año, "
+            "~2% de las ventas) y libera capital de trabajo: los ingresos diferidos (US$505 millones al 30-jun-2026) financian "
+            "a la empresa porque los suscriptores pagan el año por adelantado. La reinversión real es el I+D (29% de las "
+            "ventas), que el modelo trata como inversión con vida de tres años. Con ese criterio y sin los impuestos diferidos "
+            "de la liberación de la reserva de valuación (US$206 millones, un activo fiscal y no operativo), el capital "
+            "invertido es ~US$481 millones: ventas/capital 2,38 hoy, 7,6 marginal del último año y 14,6 de los últimos tres "
+            "(los prepagos crecen más que el capital), frente a 1,35 del sector (Software (Internet), Damodaran). La hoja usa "
+            "2,25 en los años 1-5 (algo menos que el de hoy, con el capital arrendado) y 2,0 en los años 6-10: el capital nuevo rinde ~47% y "
+            "luego ~42% con el margen objetivo y un impuesto de 25%, cerca del ROIC actual (43%) y muy por debajo del "
+            "marginal, porque el capital de trabajo negativo no crece para siempre al ritmo de las suscripciones. No hay "
+            "compras relevantes que medir."),
+    },
+    "riesgo": {
+        "beta_propuesta": None,
+        "texto": (
+            "La hoja usa la beta bottom-up de Software (Internet) de la tabla global de Damodaran (enero de 2026), "
+            "desapalancada 1,34 y reapalancada con la deuda de mercado de Duolingo (solo arrendamientos, D/E ~1,5%). Se usa la "
+            "global porque el 62% de las ventas de 2025 está fuera de EE.UU. (10-K 2025); la de EE.UU. (1,59 desapalancada, de "
+            "solo 29 empresas) se informa como sensibilidad. La prima de mercado (4,82%) pondera la madura de 3,70% por las "
+            "ventas: EE.UU. sin prima país y el resto del mundo con 1,80%. La sustitución por la IA, la dependencia de Apple y "
+            "Google (83% de los ingresos se cobra por sus tiendas) y la concentración en una sola aplicación son riesgos "
+            "propios y diversificables: van en las historias Conservadora y Disrupción, no en la tasa."),
+    },
+    "historias": [
+        {
+            "id": "A", "tesis": "base", "prob": 0.45, "margen": 0.28,
+            "nombre": "Base · La audiencia que creció en 2026 vuelve a pagar desde 2027",
+            "crec": {"Suscripciones": [0.13, 0.13, 0.12, 0.11, 0.10],
+                     "Publicidad": [0.04, 0.12, 0.12, 0.10, 0.09],
+                     "Duolingo English Test": [0.0, 0.02, 0.02, 0.02, 0.02],
+                     "Compras en la app y otros": [-0.10, 0.04, 0.05, 0.05, 0.05]},
+            "tesis_que": (
+                "Los usuarios activos diarios siguen creciendo ~20% en 2026-2027 y la conversión a suscriptor se mantiene: "
+                "las reservas pasan de +11% en 2026 a ~13% en 2027 cuando la empresa deja atrás la comparación con la "
+                "fricción que quitó, y el ingreso converge a ese ritmo. Super con Video Call, el plan más barato con "
+                "publicidad (Super Lite) y los avisos propios sostienen el ingreso por usuario sin frenar la audiencia. El "
+                "margen GAAP vuelve de ~10% en 2026 a ~24% en cinco años (28% en la base del modelo): la compensación en "
+                f"acciones baja a ~10% de las ventas y el costo de la IA sigue cayendo ({Q2}; {CALL})."),
+            "tesis_contraste": "Reservas ≥ +12% en 2027, suscriptores pagos ≥ +12% y EBITDA ajustado ≥ 28% en 2027.",
+        },
+        {
+            "id": "B", "tesis": "conservadora", "prob": 0.25, "margen": 0.23,
+            "nombre": "Conservadora · Más usuarios que pagan menos",
+            "crec": {"Suscripciones": [0.10, 0.08, 0.07, 0.06, 0.05],
+                     "Publicidad": [0.02, 0.06, 0.06, 0.05, 0.05],
+                     "Duolingo English Test": [-0.03, -0.03, -0.03, -0.03, -0.03],
+                     "Compras en la app y otros": [-0.12, -0.05, 0.0, 0.0, 0.0]},
+            "tesis_que": (
+                "La audiencia sigue creciendo, pero llega de países con menor ingreso (India, Indonesia, China) y de usuarios "
+                "que no pagan: las funciones de IA regaladas dentro de Super y los planes más baratos bajan el ingreso por "
+                "suscriptor, y las reservas se quedan en un dígito alto. El margen GAAP sube solo a ~19% (23% en la base del "
+                "modelo) porque la compensación en acciones y el costo de servir más conversación con IA no bajan tanto."),
+            "tesis_contraste": "Reservas < +9% en 2027 con usuarios activos diarios > +20%, o ingreso por suscriptor en caída.",
+        },
+        {
+            "id": "C", "tesis": "disrupción", "prob": 0.10, "margen": 0.14,
+            "nombre": "Disrupción · Deterioro de los fundamentales",
+            "descripcion": "Los asistentes de IA enseñan idiomas gratis y el hábito se rompe",
+            "roic_terminal": "costo_capital", "terminal": "estabilizacion", "s2c": 10.0,
+            # Con ingresos en caída, los ingresos diferidos bajan (salida de caja) mientras se achica el activo de I+D:
+            # el capital neto casi no se libera. Ventas/capital propio de 10 en los años 1-5 (libera ~1/4 de lo que
+            # liberaría con el 2,25 de la hoja).
+            "crec": {"Suscripciones": [0.06, 0.0, -0.04, -0.05, -0.05],
+                     "Publicidad": [0.0, -0.05, -0.05, -0.05, -0.05],
+                     "Duolingo English Test": [-0.08, -0.10, -0.10, -0.10, -0.10],
+                     "Compras en la app y otros": [-0.15, -0.10, -0.08, -0.05, -0.05]},
+            "tesis_que": (
+                "Los asistentes de voz de OpenAI, Google y Apple, integrados al teléfono, practican conversación en cualquier "
+                "idioma sin costo; el aprendizaje casual migra a ellos y el juego de las rachas pierde fuerza cuando la "
+                "novedad se agota. Los usuarios activos diarios dejan de crecer en 2028, los suscriptores se van y las "
+                "pruebas de inglés con IA presionan al Duolingo English Test. Las ventas caen desde el año 3 y el margen baja "
+                "a ~10% GAAP (14% en la base del modelo) porque Duolingo sigue gastando en I+D y en marketing para "
+                "defenderse; sin ventaja, después del año 10 el ROIC es el costo de capital. Usa un ventas/capital propio de 10 en los "
+                "años 1-5: cuando las suscripciones caen, los ingresos diferidos se achican (es caja que sale) mientras se "
+                "reduce el activo de I+D, así que la caída de ingresos casi no libera capital."),
+            "tesis_contraste": "Usuarios activos diarios con crecimiento < 5% dos trimestres seguidos o suscriptores pagos en caída.",
+        },
+        {
+            "id": "D", "tesis": "optimista", "prob": 0.20, "margen": 0.32,
+            "nombre": "Optimista · Cien millones de usuarios diarios que se monetizan",
+            "crec": {"Suscripciones": [0.15, 0.19, 0.17, 0.15, 0.13],
+                     "Publicidad": [0.08, 0.18, 0.16, 0.14, 0.12],
+                     "Duolingo English Test": [0.02, 0.04, 0.04, 0.04, 0.04],
+                     "Compras en la app y otros": [0.0, 0.10, 0.10, 0.08, 0.08]},
+            "tesis_que": (
+                "La meta de 100 millones de usuarios activos diarios en 2028 se cumple y la monetización vuelve con fuerza: "
+                "Max se fusiona con Super sin perder ingresos, ajedrez y matemáticas suman suscriptores, la publicidad propia "
+                "se profesionaliza y el precio sube con la IA que enseña mejor. Las reservas vuelven a crecer cerca de 20% "
+                "(lo que la gerencia dijo que podía lograr con la estrategia anterior) y el margen GAAP llega a ~28% (32% en "
+                f"la base del modelo) ({Q4}; {EVR})."),
+            "tesis_contraste": "Usuarios activos diarios ≥ +25% en el 4T26 y reservas ≥ +16% en 2027.",
+        },
+    ],
+    "prob_texto": (
+        "La Base pesa 45%: extrapola lo que ya se ve (audiencia +23%, suscriptores +17%, retención en máximos) con una "
+        "monetización que vuelve al ritmo de las reservas sin la fricción que se quitó, sin necesitar la meta de 100 "
+        "millones. La Conservadora pesa 25% porque la brecha entre usuarios (+23%) y reservas (+8%) del 2T26 es real y "
+        "todavía no hay evidencia de que la audiencia nueva pague como la anterior. La Disrupción pesa 10%: la amenaza de "
+        "la IA generalista es la razón principal de la caída de la acción, pero las métricas de uso de 2026 (retención y "
+        "usuarios en aceleración) van en sentido contrario. La Optimista pesa 20% porque la gerencia creció las reservas más de "
+        "30% en 2024 y 2025, estima que con la estrategia anterior podía crecer ~20% en 2026, y la audiencia se está acelerando. Son juicio del analista, no frecuencias "
+        "publicadas."),
+    "premortem": [
+        "La audiencia nueva no paga: los usuarios activos diarios crecen más de 20% pero las reservas de 2027 se quedan en un dígito y el ingreso por usuario sigue cayendo.",
+        "Un asistente de IA gratuito integrado al teléfono (OpenAI, Google, Apple) se vuelve la forma por defecto de practicar idiomas y la retención baja de 84%.",
+        "La compensación en acciones no baja de ~15% de las ventas y el margen GAAP se queda cerca de 10%, aunque el EBITDA ajustado suba.",
+        "Apple o Google cambian las reglas de sus tiendas (comisiones, pagos externos) o una caída del ranking en las tiendas frena la adquisición orgánica.",
+        "Una reorganización del producto (fusión de Max y Super, Super Lite) canibaliza suscripciones de mayor precio más de lo previsto.",
+    ],
+    "contra": (
+        f"las reservas crecieron solo 8% en el 2T26 y la guía del 3T26 es +8,9% ({Q2}); la publicidad y las compras dentro de "
+        "la aplicación caen o no crecen; la compensación en acciones sube a ~15% de las ventas y la dilución bruta es de "
+        "3,5-4% al año; la mejora de usuarios incluye un evento de una vez (la recuperación de rachas de junio)."),
+    "indicadores": [
+        ["Usuarios activos diarios (crecimiento interanual)", "58,7 M, +23% (2T26); +27,4% el 17-ago-2026", "≥ +20%", "≤ +12%"],
+        ["Reservas totales (crecimiento interanual)", "+8% (2T26); guía 2026 +10,9%", "≥ +13% en 2027", "≤ +8% en 2027"],
+        ["Suscriptores pagos", "12,7 M, +17% (2T26)", "≥ +15%", "≤ +8%"],
+        ["Retención de usuarios actuales (CURR)", "84%, récord (2T26)", "≥ 84%", "< 82%"],
+        ["EBITDA ajustado / ventas", "25,9% (2T26); guía 2026 26,5%", "≥ 28% en 2027", "≤ 24% en 2027"],
+        ["Compensación en acciones / ventas", "~15% (guía 2026)", "≤ 12% en 2027", "≥ 15% en 2027"],
+        ["Margen bruto", "72,6% (2T26)", "≥ 72%", "≤ 69%"],
+        ["Acciones diluidas totales", "50,7 M (30-jun-2026); recompras de US$71,9M", "Estables o en baja", "Suben > 2% al año"],
+    ],
+    "margenes_inverso": [0.24, 0.28, 0.32],
+    "precio_lectura": (
+        "El precio del corte pide más que la Base: con su margen y su beta, el DCF inverso exige crecer en los años 1-5 más "
+        "que el {cagrA} anual de la Base (ver la tabla). ¿Qué sabe el mercado que yo no? Puede estar pagando por la "
+        "Optimista: la aceleración de usuarios de agosto (+27,4%) y la mejora de Evercore ISI del 29-sep-2026, que valora a "
+        f"20 veces el EBITDA de 2028 ({EVR}), apuntan a una monetización de la audiencia más rápida que la de la Base. "
+        "También puede estar usando el EBITDA ajustado, que no descuenta la compensación en acciones (~15% de las ventas), "
+        "mientras el DCF de la hoja sí la trata como costo. En sentido contrario, la acción cayó ~51% en doce meses por las "
+        f"reservas y la amenaza de la IA ({CAIDA}); esa lectura pesimista se parece más a la Conservadora que a la Base."),
+    "frase": "La audiencia crece más de 20% y vuelve a pagar desde 2027: ingresos ~11% anual y margen GAAP de ~10% a ~24%",
+    "confianza": ("Media-baja: la audiencia y la retención están documentadas; la monetización de 2027, la caída de la "
+                  "compensación en acciones y el efecto de la IA generalista no"),
+    "cambiaria": "Las reservas de 2027, el ingreso por usuario, la compensación en acciones / ventas y la retención (CURR)",
+    "revision": "Resultados del 3T26 (principios de noviembre de 2026)",
+    "fuentes": [
+        ["Duolingo, carta a los accionistas del 2T26 (5-ago-2026)", f"{E}000162828026053299/q2fy26duolingo6-30x26share.htm"],
+        ["Duolingo, 10-Q del 2T26 (6-ago-2026)", f"{E}000162828026053603/duol-20260630.htm"],
+        ["Duolingo, carta a los accionistas del 1T26 (4-may-2026)", f"{E}000162828026029790/q1fy26duolingo3-31x26share.htm"],
+        ["Duolingo, carta a los accionistas del 4T25 y guía 2026 (26-feb-2026)", f"{E}000162828026012246/q4fy25duolingo12-31x25shar.htm"],
+        ["Duolingo, 10-K 2025 (27-feb-2026)", f"{E}000162828026012494/duol-20251231.htm"],
+        ["Duolingo, 8-K del programa de recompra de US$400M (26-feb-2026)", f"{E}000162828026012246/duol-20260226.htm"],
+        ["Duolingo, 8-K del cambio de CFO (12-ene-2026)", f"{E}000162828026001730/duol-20260108.htm"],
+        ["Duolingo, 8-K de la nueva consejera (10-ago-2026)", f"{E}000162828026055015/duol-20260810.htm"],
+        ["Duolingo, 8-K (Reg FD) sobre los usuarios de agosto (18-ago-2026)", f"{E}000162828026057818/duol-20260818.htm"],
+        ["The Motley Fool, transcripción de la llamada del 2T26 (5-ago-2026)", "https://www.fool.com/earnings/call-transcripts/2026/08/12/duolingo-duol-q2-2026-earnings-call-transcript/"],
+        ["Yahoo Finance/Reuters, caída tras la guía de 2026 (26-feb-2026)", "https://finance.yahoo.com/news/duolingo-prioritizes-user-growth-over-210210779.html"],
+        ["TIKR, mejora de Evercore ISI (29-sep-2026)", "https://www.tikr.com/blog/duolingo-duol-stock-evercore-upgrade-survey-data-daus"],
+        ["Damodaran, ERP implícita de octubre de 2026", "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"],
+        ["Damodaran, betas por industria (enero de 2026)", "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"],
+        ["Mauboussin y Callahan, The Base Rate Book (2016)", "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"],
+    ],
+    "arrendamientos": {
+        "vp": 105.06128902772627, "ajuste_ebit": 0.42652344136374687, "margen_pp": 0.00037250955577619816,
+        "capital_ventas": 0.09175658430369107, "cierre": "2025-12-31",
+        "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo",
+    },
+    "justificacion": [
+        ["Crecimiento: las reservas mandan, no el ingreso reportado.",
+         "La Base crece {g1A} el primer año y {cagrA} compuesto en cinco años. El primer año (julio 2026-junio 2027) es el "
+         "ritmo de las reservas de hoy (+10,9% en 2026, +8,9% guiado para el 3T26), porque el ingreso de las suscripciones "
+         "anuales se reconoce con un año de rezago; el +16% de ingresos de 2026 no se repite. Desde el año 2 las "
+         "suscripciones crecen 13% y bajan a 10%: la audiencia crece ~20% y la Base supone que el ingreso por usuario cae "
+         "menos que en 2026, cuando se quitaron ~5 pp de reservas a propósito. La visión externa dice que ~{tbA} de las "
+         "empresas de su tamaño logró ese crecimiento: es exigente y lo sostiene la audiencia. Sensibilidad: ±2 puntos de "
+         "crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Lo cambiaría una reserva de un dígito en 2027 "
+         "(hacia la Conservadora, {cagrB}) o reservas de nuevo cerca de 20% (hacia la Optimista, {cagrD})."],
+        ["Margen: la compensación en acciones es el costo que decide.",
+         "La Base parte de {margenY1} el primer año (~9,5% GAAP: guía de EBITDA ajustado de 26,5% para 2026 menos ~15% de "
+         "compensación en acciones y ~1,5% de depreciación, llevado a la base del modelo con el I+D capitalizado) y llega a "
+         "{mA} en {conv} años (~24% GAAP). Es el extremo bajo de Match Group, el comparable maduro con la misma economía de "
+         "tiendas de aplicaciones, porque Duolingo gasta el doble en I+D. Supone que la compensación en acciones baja de ~15% "
+         "a ~10% de las ventas; si se quedara en 15%, el margen GAAP de largo plazo rondaría 19%, el de la Conservadora "
+         "({mB}). Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Optimista llega a {mD} y la Disrupción baja a {mC}."],
+        ["Reinversión: los suscriptores financian el crecimiento.",
+         "El ventas/capital es {s2c1} en los años 1-5 y {s2c2} en los años 6-10 (~US${cap1} de capital por dólar de ventas "
+         "nuevas, con el activo de I+D y los arrendamientos). Es cercano al de hoy (2,38) y no al marginal (7,6 a 14,6), inflado por "
+         "los prepagos de los suscriptores, que no pueden crecer para siempre más que las ventas. El capital nuevo rinde ~47% "
+         "con el margen objetivo, cerca del ROIC actual (43%) y muy por encima del costo de capital. Con ±20% en el "
+         "ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."],
+        ["Descuento y largo plazo: beta del sector y sin ventaja defendible.",
+         "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de "
+         "Damodaran a {mes_erp} ponderada por regiones, beta {beta}) y el terminal {waccT}. Después del año 10 el crecimiento "
+         "es {tgA} y el ROIC terminal es {roicT}: Duolingo gana hoy muy por encima de su costo de capital, pero su ventaja "
+         "(marca de 14 años y hábito de las rachas) no pasa el criterio de Damodaran: los costos de cambio son bajos, no hay "
+         "efectos de red entre usuarios y la marca no tiene veinte años ni superó una crisis. El terminal pesa {terminal} del "
+         "valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."],
+        ["Acciones, caja y dilución.",
+         "Se usan {acciones} millones de acciones (46,7 millones A y B al 30-jun-2026 más 2,8 millones de RSU); las 0,6 "
+         "millones de opciones se restan por su valor y las 0,6 millones de unidades del fundador sujetas a metas de precio no "
+         f"cumplidas no se cuentan ({Q2}). La caja e inversiones de corto plazo (US$1.314 millones) se suman y las de largo plazo "
+         "(US$103 millones) van como activo no operativo; no hay deuda financiera. La compensación en acciones futura ya está "
+         "en el margen (como costo); por eso no se resta además la dilución futura. Una dilución adicional de 5% llevaría el "
+         "DCF Base a {s_acc}. Las recompras (US$400 millones autorizados) no se modelan como valor: a precio justo no crean "
+         "ni destruyen valor."],
+        ["Probabilidades y lectura del resultado.",
+         "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es "
+         "{ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."],
+    ],
+}
+
+
+def main() -> int:
+    OUT.write_text(json.dumps(SPEC, ensure_ascii=False, indent=1))
+    print("escrito", OUT)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

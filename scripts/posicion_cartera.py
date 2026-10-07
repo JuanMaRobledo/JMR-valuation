@@ -51,8 +51,10 @@ def bloque(c: dict, fecha: str = "", fuente: str = "") -> dict:
         "A57": "Ganancia potencial hasta el valor", "B57": "Valor por acción", "C57": "Desde el precio de hoy",
         "D57": "Desde tu precio de compra", "E57": "Posición (US$, desde tu costo)",
     })
+    # 7-oct-2026 (DUOL desde cero): el esperado se lee de la pestaña de historias; la maestra no trae la fila 38 del
+    # Resumen («Valor esperado de historias») que tenían las hojas viejas, y =D38 quedaba vacío (−100%).
     for r, (lab, f) in enumerate([("DCF Base hoy (valor intrínseco)", "=D32"),
-                                   ("DCF esperado de las historias", "=D38"),
+                                   ("DCF esperado de las historias", "='Escenarios e historias'!H10"),
                                    ("Ponderado DCF + múltiplos Base hoy (secundario)", "=D34")], start=58):
         b[f"A{r}"] = lab
         b[f"B{r}"] = f

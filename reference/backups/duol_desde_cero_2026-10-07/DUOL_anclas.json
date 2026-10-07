@@ -1,0 +1,454 @@
+{
+ "fcf_a_fcff": 1.3047444188025639,
+ "empresa": "Duolingo, Inc. (NASDAQ:DUOL)",
+ "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "fecha": "2026-09-29",
+ "ke": 0.1179582531859302,
+ "categoria": "Software",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '20": 0,
+     "Dec '21": -34.17,
+     "Dec '22": -36.9,
+     "Dec '23": -1584.2,
+     "Dec '24": 198.09,
+     "Dec '25": 50.23,
+     "LTM": 35.9
+    },
+    "mediana_5a": 50.23,
+    "mediana_10a": 50.23,
+    "p25": 39.48,
+    "p75": 46.64,
+    "min": 35.9,
+    "max": 50.23,
+    "ultimo_cierre": 50.23,
+    "ltm": 35.9,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '20",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -34.17,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -36.9,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '23",
+      -1584.2,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '24",
+      198.09,
+      "> 2,5x la mediana (50.2x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 25.76,
+    "p25": 12.69,
+    "p75": 32.38
+   },
+   "justificado": {
+    "Conservador": 15.65,
+    "Base": 19.04,
+    "Optimista": 22.21
+   },
+   "actual_J": {
+    "J8": 33.98,
+    "J19": 38.51,
+    "J30": 41.5
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '20": 0,
+     "Dec '21": 349.67,
+     "Dec '22": 46.26,
+     "Dec '23": 65.31,
+     "Dec '24": 53.18,
+     "Dec '25": 20.38,
+     "LTM": 15.22
+    },
+    "mediana_5a": 49.72,
+    "mediana_10a": 49.72,
+    "p25": 20.38,
+    "p75": 53.18,
+    "min": 15.22,
+    "max": 65.31,
+    "ultimo_cierre": 20.38,
+    "ltm": 15.22,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '20",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      349.67,
+      "> 2,5x la mediana (49.7x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 17.15,
+    "p25": 8.45,
+    "p75": 24.95
+   },
+   "justificado": {
+    "Conservador": 20.85,
+    "Base": 26.9,
+    "Optimista": 32.25
+   },
+   "actual_J": {
+    "J8": 22.83,
+    "J19": 26.29,
+    "J30": 28.1
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '20": 0,
+     "Dec '21": -41.29,
+     "Dec '22": -47.11,
+     "Dec '23": 648.14,
+     "Dec '24": 172.46,
+     "Dec '25": 20.48,
+     "LTM": 18.11
+    },
+    "mediana_5a": 96.47,
+    "mediana_10a": 96.47,
+    "p25": 19.29,
+    "p75": 96.47,
+    "min": 18.11,
+    "max": 172.46,
+    "ultimo_cierre": 20.48,
+    "ltm": 18.11,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '20",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      -41.29,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -47.11,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '23",
+      648.14,
+      "> 2,5x la mediana (96.5x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 27.26,
+    "p25": 22.11,
+    "p75": 33.73
+   },
+   "justificado": {
+    "Conservador": 8.39,
+    "Base": 10.29,
+    "Optimista": 13.1
+   },
+   "actual_J": {
+    "J8": 20.66,
+    "J19": 25.74,
+    "J30": 28.79
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '20": 0,
+     "Dec '21": 443.39,
+     "Dec '22": 58.41,
+     "Dec '23": 70.14,
+     "Dec '24": 55.86,
+     "Dec '25": 22.93,
+     "LTM": 18.23
+    },
+    "mediana_5a": 57.13,
+    "mediana_10a": 57.13,
+    "p25": 22.93,
+    "p75": 58.41,
+    "min": 18.23,
+    "max": 70.14,
+    "ultimo_cierre": 22.93,
+    "ltm": 18.23,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '20",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      443.39,
+      "> 2,5x la mediana (57.1x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 17.22,
+    "p25": 8.2,
+    "p75": 27.15
+   },
+   "justificado": {
+    "Conservador": 16.72,
+    "Base": 20.45,
+    "Optimista": 23.44
+   },
+   "actual_J": {
+    "J8": 22.89,
+    "J19": 25.82,
+    "J30": 27.28
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '20": 0,
+     "Dec '21": 269.89,
+     "Dec '22": 52.32,
+     "Dec '23": 68.68,
+     "Dec '24": 53.49,
+     "Dec '25": 21.86,
+     "LTM": 17.27
+    },
+    "mediana_5a": 52.91,
+    "mediana_10a": 52.91,
+    "p25": 21.86,
+    "p75": 53.49,
+    "min": 17.27,
+    "max": 68.68,
+    "ultimo_cierre": 21.86,
+    "ltm": 17.27,
+    "regimen_bajo_actual": true,
+    "excluidos": [
+     [
+      "Dec '20",
+      0,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '21",
+      269.89,
+      "> 2,5x la mediana (52.9x)"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 6,
+    "mediana": 16.16,
+    "p25": 7.78,
+    "p75": 26.55
+   },
+   "justificado": {
+    "Conservador": 14.44,
+    "Base": 17.53,
+    "Optimista": 20.14
+   },
+   "actual_J": {
+    "J8": 21.8,
+    "J19": 24.89,
+    "J30": 26.67
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.054863746746976416,
+   "g_años_4_10": 0.05682749349395283,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.10546104892303973,
+   "ke": 0.1179582531859302,
+   "roe_fy3": 0.11018581918379139,
+   "fcff_ebitda": 0.7505353646903445,
+   "fcfe_ocf": 0.863884023190032,
+   "multiplos": {
+    "EV/FCFF": 20.848221177413166,
+    "P/FCFE": 16.718789103574256,
+    "P/E": 8.394166043281782,
+    "EV/EBITDA": 15.647327284534754,
+    "P/OCF": 14.443094793661396
+   }
+  },
+  "Base": {
+   "g": 0.06583872701323726,
+   "g_años_4_10": 0.0787774540264745,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.10546104892303973,
+   "ke": 0.1179582531859302,
+   "roe_fy3": 0.1324838295078217,
+   "fcff_ebitda": 0.7077957612770182,
+   "fcfe_ocf": 0.8571490315344962,
+   "multiplos": {
+    "EV/FCFF": 26.89995627816933,
+    "P/FCFE": 20.449892876648285,
+    "P/E": 10.287181551368379,
+    "EV/EBITDA": 19.039675032225365,
+    "P/OCF": 17.52860587420327
+   }
+  },
+  "Optimista": {
+   "g": 0.07221788828832643,
+   "g_años_4_10": 0.09153577657665286,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.10546104892303973,
+   "ke": 0.1179582531859302,
+   "roe_fy3": 0.1637705979176723,
+   "fcff_ebitda": 0.6886116361222506,
+   "fcfe_ocf": 0.8591799969619979,
+   "multiplos": {
+    "EV/FCFF": 32.253788984453266,
+    "P/FCFE": 23.44139341014521,
+    "P/E": 13.104446777834598,
+    "EV/EBITDA": 22.210334403726186,
+    "P/OCF": 20.140376318913557
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "SPOT",
+   "nombre": "Spotify Technology S.A.",
+   "precio": 493.66,
+   "pe": 27.258972,
+   "ev_ebitda": 35.397,
+   "crec_ingresos": 0.139,
+   "margen_operativo": 0.13712,
+   "roe": 0.44484,
+   "p_ocf": 30.413154732993707,
+   "p_fcf": 31.064798697275787,
+   "ev_fcf": 29.069390986225894,
+   "ocf_ttm": 3337000000.0,
+   "fcf_ttm": 3267000000.0,
+   "interest_ttm": 30000000.0,
+   "ev_fcff": 28.860029887865803
+  },
+  {
+   "ticker": "NFLX",
+   "nombre": "Netflix, Inc.",
+   "precio": 70.3,
+   "pe": 22.106918,
+   "ev_ebitda": 20.085,
+   "crec_ingresos": 0.134,
+   "margen_operativo": 0.33381,
+   "roe": 0.49541,
+   "p_ocf": 24.453182612772228,
+   "p_fcf": 26.248640076470554,
+   "ev_fcf": 26.52404747092563,
+   "ocf_ttm": 11970833000.0,
+   "fcf_ttm": 11152005000.0,
+   "interest_ttm": 847451000.0,
+   "ev_fcff": 25.021911598092462
+  },
+  {
+   "ticker": "MTCH",
+   "nombre": "Match Group, Inc.",
+   "precio": 40.13,
+   "pe": 14.230497,
+   "ev_ebitda": 10.223,
+   "crec_ingresos": -0.012,
+   "margen_operativo": 0.28771,
+   "roe": null,
+   "p_ocf": 7.751599105678939,
+   "p_fcf": 8.200931541700323,
+   "ev_fcf": 10.647815127022202,
+   "ocf_ttm": 1207620000.0,
+   "fcf_ttm": 1141454000.0,
+   "interest_ttm": 165041000.0,
+   "ev_fcff": 9.55625366876002
+  },
+  {
+   "ticker": "PINS",
+   "nombre": "Pinterest, Inc.",
+   "precio": 18.54,
+   "pe": 54.529415,
+   "ev_ebitda": 32.688,
+   "crec_ingresos": 0.182,
+   "margen_operativo": -0.03464,
+   "roe": 0.06461,
+   "p_ocf": 7.871986996287974,
+   "p_fcf": 8.200102242729638,
+   "ev_fcf": 8.081478083479901,
+   "ocf_ttm": 1333773000.0,
+   "fcf_ttm": 1280404000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 8.081478083479901
+  },
+  {
+   "ticker": "BMBL",
+   "nombre": "Bumble Inc.",
+   "precio": 2.57,
+   "pe": null,
+   "ev_ebitda": 2.88,
+   "crec_ingresos": -0.152,
+   "margen_operativo": 0.28136,
+   "roe": -0.76918,
+   "p_ocf": 1.4762371624484043,
+   "p_fcf": 1.5439424090338771,
+   "ev_fcf": 2.9233671267252195,
+   "ocf_ttm": 266737000.0,
+   "fcf_ttm": 255040000.0,
+   "interest_ttm": 41960000.0,
+   "ev_fcff": 2.587111597829753
+  },
+  {
+   "ticker": "RDDT",
+   "nombre": "Reddit, Inc.",
+   "precio": 145.36,
+   "pe": 33.72622,
+   "ev_ebitda": 31.442,
+   "crec_ingresos": 0.611,
+   "margen_operativo": 0.28788,
+   "roe": 0.30712,
+   "p_ocf": 27.2555239661045,
+   "p_fcf": 27.454753172093625,
+   "ev_fcf": 24.739892433998364,
+   "ocf_ttm": 1026095000.0,
+   "fcf_ttm": 1018649000.0,
+   "interest_ttm": 0.0,
+   "ev_fcff": 24.739892433998364
+  }
+ ],
+ "justificado_recalculado": "2026-10-05",
+ "historia_actualizada": "2026-10-04"
+}

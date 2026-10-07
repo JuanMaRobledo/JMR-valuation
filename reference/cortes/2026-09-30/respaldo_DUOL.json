@@ -1,0 +1,27 @@
+{
+ "Input sheet!D1": {
+  "before": 142.4,
+  "after": 142.4,
+  "reason": "Corte 2026-09-30 (DUOL)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;9;30)",
+  "reason": "Corte 2026-09-30 (DUOL)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0529,
+  "after": 0.0529,
+  "reason": "Corte 2026-09-30 (DUOL)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 142.4,
+  "after": 142.4,
+  "reason": "Corte 2026-09-30 (DUOL)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.037,
+  "after": 0.037,
+  "reason": "Corte 2026-09-30 (DUOL)"
+ }
+}

@@ -1,6 +1,6 @@
 {
  "ticker": "DUOL_LEASECONV",
- "sheet_id": "1k-ms7Yt54Or8wgUFD2LIuH1nvmgEmiJh_h_2hQwbL10",
+ "sheet_id": "1eqWEqHU6TeIr8frOUt1vS54_YifnbBSCNvvIXhWbdC4",
  "fecha": "2026-10-01",
  "cambios": [
   {
@@ -61,45 +61,31 @@
   },
   {
    "hoja": "Input sheet",
-   "celda": "B28",
-   "antes": 0.2,
-   "despues": 0.200944,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145)."
-  },
-  {
-   "hoja": "Input sheet",
    "celda": "B30",
-   "antes": 0.27,
-   "despues": 0.270944,
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145)."
-  },
-  {
-   "hoja": "Input sheet",
-   "celda": "B32",
-   "antes": 4,
-   "despues": 2.9707,
-   "motivo": "Ventas/capital con el capital arrendado: 1/(1/4 + 0.0866), con VP de arrendamientos 99.2 / ventas 1145."
-  },
-  {
-   "hoja": "Input sheet",
-   "celda": "B33",
-   "antes": 4.5,
-   "despues": 3.2379,
-   "motivo": "Ventas/capital con el capital arrendado: 1/(1/4.5 + 0.0866), con VP de arrendamientos 99.2 / ventas 1145."
+   "antes": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+   "despues": "=(MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19)))+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145)."
   },
   {
    "hoja": "Valuation output",
    "celda": "C45",
-   "antes": "=B6",
-   "despues": "=(B6)+0,000944",
-   "motivo": "Margen en base ajustada por arrendamientos: + 0.09 pp (ajuste del EBIT 1.1 / ventas 1145)."
+   "antes": "='Escenarios e historias'!$D$6",
+   "despues": "=('Escenarios e historias'!$D$6)+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145)."
+  },
+  {
+   "hoja": "Valuation output",
+   "celda": "C47",
+   "antes": "='Escenarios e historias'!$D$8",
+   "despues": "=('Escenarios e historias'!$D$8)+0,000373",
+   "motivo": "Margen en base ajustada por arrendamientos: + 0.04 pp (ajuste del EBIT 0.4 / ventas 1145)."
   }
  ],
- "vp_arrendamientos": 99.1767170216973,
- "ajuste_ebit": 1.0803647753669665,
+ "vp_arrendamientos": 105.06128902772627,
+ "ajuste_ebit": 0.42652344136374687,
  "ventas": 1145,
- "margen_pp": 0.0009435500221545559,
- "capital_ventas": 0.08661722010628585,
+ "margen_pp": 0.00037250955577619816,
+ "capital_ventas": 0.09175658430369107,
  "datos_sec": {
   "cierre": "2025-12-31",
   "gasto": 12.071,

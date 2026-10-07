@@ -1,18 +1,18 @@
 {
  "ticker": "DUOL",
  "etapa_desde": "Dec '25",
- "etapa_motivo": "A: Duolingo salió a bolsa en 2021 y hasta 2023 tuvo utilidades cercanas a cero, con múltiplos de 50-650x que reflejan hipercrecimiento; tras la desaceleración de usuarios de 2025 el mercado la re-valoró, así que A usa solo el cierre FY25 y el LTM.",
+ "etapa_motivo": "A: Duolingo salió a bolsa en 2021 y hasta 2023 tuvo resultado operativo negativo o casi nulo, con múltiplos de 45-650× que reflejan hipercrecimiento con tasas de 1,5-4%. En 2025-2026 cambió de etapa: el crecimiento de las reservas bajó de 33% (2025) a ~11% (guía 2026), la gerencia eligió crecer en usuarios antes que monetizar y la acción cayó ~51% en doce meses con el Treasury a 10 años en 5,29%. El prompt v4 (6.2.A) pide usar solo la etapa actual: A = cierre de 2025 y LTM (al precio del corte, US$142,40).",
  "historia_excluir": {
   "P/E": [
    "Dec '25",
    "LTM"
   ]
  },
- "historia_motivo": "El P/E del FY25 y del LTM se excluye: la utilidad incluye un beneficio tributario único de US$222,7 millones por la liberación de la reserva de valuación de impuestos diferidos (10-Q del 3T25 y 10-K FY2025); sin él, el P/E real es mucho más alto y los años anteriores no son representativos, así que el P/E se ancla en peers y fundamentales.",
+ "historia_motivo": "El P/E de 2025 y del LTM se excluye: la utilidad incluye el beneficio fiscal único de US$256,7 millones por la liberación de la reserva de valuación de los impuestos diferidos (3T25; 10-K 2025). Sin él, la utilidad LTM sería ~US$154 millones y el P/E ~45×; los cierres anteriores son de otra etapa. El P/E se ancla en los peers y en el justificado.",
  "peers_excluir": {
   "*": [
-   "BMBL",
-   "MTCH"
+   "MTCH",
+   "COUR"
   ],
   "P/E": [
    "PINS"
@@ -21,17 +21,20 @@
    "PINS"
   ]
  },
- "peers_motivo": "B: suscripción de consumo y plataformas digitales con datos de yfinance al 29-sep-2026: Spotify, Netflix, Reddit y Pinterest. Se excluyen Bumble (ingresos −15%, acción en dificultades) y Match (ingresos en baja): están en otra etapa. Pinterest se excluye de P/E y EV/EBITDA porque su margen operativo GAAP es negativo.",
- "ajuste_peers": 0.0,
- "ajuste_motivo": "Ajuste 0%: Duolingo crece más que Spotify y Netflix (Base 19% el año 1 y 16% en los años 2-5, frente a ~13-14%), lo que justificaría una prima de ~10%, pero tiene una desaceleración reciente de usuarios, menor escala y riesgo de sustitución por asistentes de IA para aprender idiomas, que justifican un descuento similar.",
- "lambda": 0.15,
- "lambda_motivo": "λ = 0,15: el múltiplo justificado es inestable para Duolingo porque su crecimiento de largo plazo (g ≈ 8-10%) queda a solo 2-3 puntos del WACC y del Ke; en el Optimista no se puede calcular. Por eso pesa poco.",
+ "peers_motivo": "B: suscripción de consumo y plataformas digitales con datos de yfinance del 7-oct-2026 llevados al cierre del 30-sep-2026: Spotify, Netflix, Reddit y Pinterest. Se excluyen Match Group (ingresos −1%: otra etapa, aunque sirve como comparable maduro de margen en el DCF) y Coursera (crecimiento de 60% inflado por la fusión con Udemy y margen GAAP negativo: múltiplos de 35-134× sobre flujos). Pinterest se excluye de P/E y EV/EBITDA porque su margen operativo GAAP es negativo; se conserva en los múltiplos de flujo.",
+ "ajuste_peers": -0.1,
+ "ajuste_motivo": "Ajuste −10%: crecimiento a FY+3 parecido a la mediana (Base ~11-12% frente a ~13-14% de Spotify y Netflix y 60% de Reddit), 0%; margen operativo GAAP menor (~10% en 2026 y ~24% objetivo frente a 29-33% de Netflix y Reddit) por una compensación en acciones de ~15% de las ventas, −5%; riesgo de sustitución por la IA generalista y dependencia de una sola aplicación (beta 1,35), −5%.",
+ "lambda": 0.5,
+ "lambda_motivo": "λ = 0,5 (subido desde 0,25 tras el chequeo de crecimiento implícito, paso 6.5): con λ = 0,25 el EV/EBITDA Base (29,0×) valía 71% más que el que implica el DCF en FY+3 (15,2×), y el precio del corte pide crecer ~18% anual en los años 1-5 frente al ~11% de la Base. La evidencia (reservas +10,9% en 2026, +8,9% en el 3T26) no sostiene subir el crecimiento del DCF: el cierre de 2025 (EV/EBITDA 49×) y los peers de crecimiento alto (Reddit +61%) cuentan otra historia. Por eso el Base se acerca a la mitad del camino al justificado C (supuestos de las historias; sin ventaja, ROIC terminal = costo de capital) y la historia queda como tope del Optimista.",
  "notas": {
-  "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
+  "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones de ~13-15% de las ventas: su EV/EBITDA es mayor que el de un comparable con el mismo EBITDA ajustado.",
+  "P/FCFE": "El flujo de caja libre suma la compensación en acciones (US$145 millones LTM) y los prepagos de los suscriptores: los múltiplos de flujo sobreestiman la caja económica.",
+  "P/OCF": "El flujo operativo suma la compensación en acciones y los prepagos de los suscriptores: con cautela."
  },
- "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$125,77 por acción y los múltiplos, US$121,75 hoy: 3% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.",
  "fuentes": [
-  "[Duolingo, Form 10-Q del 3T25 (30-sep-2025)](https://www.sec.gov/Archives/edgar/data/1562088/000162828025049743/duol-20250930.htm): liberación de la reserva de valuación, beneficio tributario único de US$222,7 millones.",
-  "[Duolingo, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): beneficio tributario de US$231,7 millones en 2025."
- ]
+  "[Duolingo, 10-K 2025, 27-feb-2026](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): liberación de la reserva de valuación, beneficio fiscal único de US$256,7 millones.",
+  "[Duolingo, carta a los accionistas del 2T26, 5-ago-2026](https://www.sec.gov/Archives/edgar/data/1562088/000162828026053299/q2fy26duolingo6-30x26share.htm)",
+  "[Duolingo, carta a los accionistas del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012246/q4fy25duolingo12-31x25shar.htm)"
+ ],
+ "evaluacion": "Lectura del 7-oct-2026 (análisis desde cero, peers al cierre del 30-sep-2026): los múltiplos son precio relativo y salen de tres anclas (etapa actual, peers ajustados −10% y justificado, λ = 0,5); los consolidados Base hoy valen ~8% menos que el DCF Base y no se movió ninguno para acercarlo. El chequeo de crecimiento implícito (paso 6.5) deja tres alertas que se explican y no se corrigen: el EV/EBITDA Base (24,2×, frente a 14,9× que implica el DCF en FY+3) da un valor ~48% mayor que el DCF llevado a FY+3 porque el mercado (cierre de 2025 a 49× y peers de crecimiento alto) paga por una monetización más rápida que la de la Base, y subir λ más lo convertiría en un eco del DCF; P/FCFE (21,1×) y P/OCF (19,9×) dan valores ~25-26% menores que lo que implica el DCF (28,6× y 26,5×) por definición: el flujo de caja suma la compensación en acciones (~13-15% de las ventas), que el DCF trata como costo. P/E y EV/FCFF son coherentes con el DCF. El DCF es el valor intrínseco; P/E y EV/FCFF son los múltiplos más confiables para Duolingo."
 }

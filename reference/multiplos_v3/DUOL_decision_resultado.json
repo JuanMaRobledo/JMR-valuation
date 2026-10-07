@@ -2,18 +2,18 @@
  "decision": {
   "ticker": "DUOL",
   "etapa_desde": "Dec '25",
-  "etapa_motivo": "A: Duolingo salió a bolsa en 2021 y hasta 2023 tuvo utilidades cercanas a cero, con múltiplos de 50-650x que reflejan hipercrecimiento; tras la desaceleración de usuarios de 2025 el mercado la re-valoró, así que A usa solo el cierre FY25 y el LTM.",
+  "etapa_motivo": "A: Duolingo salió a bolsa en 2021 y hasta 2023 tuvo resultado operativo negativo o casi nulo, con múltiplos de 45-650× que reflejan hipercrecimiento con tasas de 1,5-4%. En 2025-2026 cambió de etapa: el crecimiento de las reservas bajó de 33% (2025) a ~11% (guía 2026), la gerencia eligió crecer en usuarios antes que monetizar y la acción cayó ~51% en doce meses con el Treasury a 10 años en 5,29%. El prompt v4 (6.2.A) pide usar solo la etapa actual: A = cierre de 2025 y LTM (al precio del corte, US$142,40).",
   "historia_excluir": {
    "P/E": [
     "Dec '25",
     "LTM"
    ]
   },
-  "historia_motivo": "El P/E del FY25 y del LTM se excluye: la utilidad incluye un beneficio tributario único de US$222,7 millones por la liberación de la reserva de valuación de impuestos diferidos (10-Q del 3T25 y 10-K FY2025); sin él, el P/E real es mucho más alto y los años anteriores no son representativos, así que el P/E se ancla en peers y fundamentales.",
+  "historia_motivo": "El P/E de 2025 y del LTM se excluye: la utilidad incluye el beneficio fiscal único de US$256,7 millones por la liberación de la reserva de valuación de los impuestos diferidos (3T25; 10-K 2025). Sin él, la utilidad LTM sería ~US$154 millones y el P/E ~45×; los cierres anteriores son de otra etapa. El P/E se ancla en los peers y en el justificado.",
   "peers_excluir": {
    "*": [
-    "BMBL",
-    "MTCH"
+    "MTCH",
+    "COUR"
    ],
    "P/E": [
     "PINS"
@@ -22,29 +22,32 @@
     "PINS"
    ]
   },
-  "peers_motivo": "B: suscripción de consumo y plataformas digitales con datos de yfinance al 29-sep-2026: Spotify, Netflix, Reddit y Pinterest. Se excluyen Bumble (ingresos −15%, acción en dificultades) y Match (ingresos en baja): están en otra etapa. Pinterest se excluye de P/E y EV/EBITDA porque su margen operativo GAAP es negativo.",
-  "ajuste_peers": 0.0,
-  "ajuste_motivo": "Ajuste 0%: Duolingo crece más que Spotify y Netflix (Base 19% el año 1 y 16% en los años 2-5, frente a ~13-14%), lo que justificaría una prima de ~10%, pero tiene una desaceleración reciente de usuarios, menor escala y riesgo de sustitución por asistentes de IA para aprender idiomas, que justifican un descuento similar.",
-  "lambda": 0.15,
-  "lambda_motivo": "λ = 0,15: el múltiplo justificado es inestable para Duolingo porque su crecimiento de largo plazo (g ≈ 8-10%) queda a solo 2-3 puntos del WACC y del Ke; en el Optimista no se puede calcular. Por eso pesa poco.",
+  "peers_motivo": "B: suscripción de consumo y plataformas digitales con datos de yfinance del 7-oct-2026 llevados al cierre del 30-sep-2026: Spotify, Netflix, Reddit y Pinterest. Se excluyen Match Group (ingresos −1%: otra etapa, aunque sirve como comparable maduro de margen en el DCF) y Coursera (crecimiento de 60% inflado por la fusión con Udemy y margen GAAP negativo: múltiplos de 35-134× sobre flujos). Pinterest se excluye de P/E y EV/EBITDA porque su margen operativo GAAP es negativo; se conserva en los múltiplos de flujo.",
+  "ajuste_peers": -0.1,
+  "ajuste_motivo": "Ajuste −10%: crecimiento a FY+3 parecido a la mediana (Base ~11-12% frente a ~13-14% de Spotify y Netflix y 60% de Reddit), 0%; margen operativo GAAP menor (~10% en 2026 y ~24% objetivo frente a 29-33% de Netflix y Reddit) por una compensación en acciones de ~15% de las ventas, −5%; riesgo de sustitución por la IA generalista y dependencia de una sola aplicación (beta 1,35), −5%.",
+  "lambda": 0.5,
+  "lambda_motivo": "λ = 0,5 (subido desde 0,25 tras el chequeo de crecimiento implícito, paso 6.5): con λ = 0,25 el EV/EBITDA Base (29,0×) valía 71% más que el que implica el DCF en FY+3 (15,2×), y el precio del corte pide crecer ~18% anual en los años 1-5 frente al ~11% de la Base. La evidencia (reservas +10,9% en 2026, +8,9% en el 3T26) no sostiene subir el crecimiento del DCF: el cierre de 2025 (EV/EBITDA 49×) y los peers de crecimiento alto (Reddit +61%) cuentan otra historia. Por eso el Base se acerca a la mitad del camino al justificado C (supuestos de las historias; sin ventaja, ROIC terminal = costo de capital) y la historia queda como tope del Optimista.",
   "notas": {
-   "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
+   "EV/EBITDA": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones de ~13-15% de las ventas: su EV/EBITDA es mayor que el de un comparable con el mismo EBITDA ajustado.",
+   "P/FCFE": "El flujo de caja libre suma la compensación en acciones (US$145 millones LTM) y los prepagos de los suscriptores: los múltiplos de flujo sobreestiman la caja económica.",
+   "P/OCF": "El flujo operativo suma la compensación en acciones y los prepagos de los suscriptores: con cautela."
   },
-  "evaluacion": "Lectura del 30-sep-2026: el DCF (valor intrínseco) da US$125,77 por acción y los múltiplos, US$121,75 hoy: 3% por debajo del DCF, dentro del rango de ±25%. Ambos métodos cuentan una historia parecida; el DCF manda y los múltiplos son precio relativo.",
   "fuentes": [
-   "[Duolingo, Form 10-Q del 3T25 (30-sep-2025)](https://www.sec.gov/Archives/edgar/data/1562088/000162828025049743/duol-20250930.htm): liberación de la reserva de valuación, beneficio tributario único de US$222,7 millones.",
-   "[Duolingo, Form 10-K FY2025](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): beneficio tributario de US$231,7 millones en 2025."
-  ]
+   "[Duolingo, 10-K 2025, 27-feb-2026](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012494/duol-20251231.htm): liberación de la reserva de valuación, beneficio fiscal único de US$256,7 millones.",
+   "[Duolingo, carta a los accionistas del 2T26, 5-ago-2026](https://www.sec.gov/Archives/edgar/data/1562088/000162828026053299/q2fy26duolingo6-30x26share.htm)",
+   "[Duolingo, carta a los accionistas del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1562088/000162828026012246/q4fy25duolingo12-31x25shar.htm)"
+  ],
+  "evaluacion": "Lectura del 7-oct-2026 (análisis desde cero, peers al cierre del 30-sep-2026): los múltiplos son precio relativo y salen de tres anclas (etapa actual, peers ajustados −10% y justificado, λ = 0,5); los consolidados Base hoy valen ~8% menos que el DCF Base y no se movió ninguno para acercarlo. El chequeo de crecimiento implícito (paso 6.5) deja tres alertas que se explican y no se corrigen: el EV/EBITDA Base (24,2×, frente a 14,9× que implica el DCF en FY+3) da un valor ~48% mayor que el DCF llevado a FY+3 porque el mercado (cierre de 2025 a 49× y peers de crecimiento alto) paga por una monetización más rápida que la de la Base, y subir λ más lo convertiría en un eco del DCF; P/FCFE (21,1×) y P/OCF (19,9×) dan valores ~25-26% menores que lo que implica el DCF (28,6× y 26,5×) por definición: el flujo de caja suma la compensación en acciones (~13-15% de las ventas), que el DCF trata como costo. P/E y EV/FCFF son coherentes con el DCF. El DCF es el valor intrínseco; P/E y EV/FCFF son los múltiplos más confiables para Duolingo."
  },
  "resultado": {
   "EV/EBITDA": {
    "aplica": true,
    "hoja": "EVEBITDA",
-   "A": 43.06,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 43,1x",
-   "A_p25": 39.48,
-   "A_p75": 46.65,
-   "A_max": 50.23,
+   "A": 39.89,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 39,9x",
+   "A_p25": 35.39,
+   "A_p75": 44.4,
+   "A_max": 48.91,
    "A_excluidos": [
     [
      "Dec '20",
@@ -53,68 +56,68 @@
     ],
     [
      "Dec '21",
-     -34.17,
+     -33.67,
      "métrica negativa o ~0"
     ],
     [
      "Dec '22",
-     -36.9,
+     -36.51,
      "métrica negativa o ~0"
     ],
     [
      "Dec '23",
-     -1584.2,
+     -1580.79,
      "métrica negativa o ~0"
     ],
     [
      "Dec '24",
-     198.09,
-     "> 2,5x la mediana (50.2x)"
+     196.1,
+     "> 2,5x la mediana (48.9x)"
     ]
    ],
-   "B_mediana": 31.44,
-   "B_ajustada": 31.44,
+   "B_mediana": 30.87,
+   "B_ajustada": 27.78,
    "B_n": 3,
    "B_regresion": null,
-   "B_peers": "SPOT 35,4x, NFLX 20,1x, RDDT 31,4x",
+   "B_peers": "SPOT 34,1x, NFLX 20,2x, RDDT 30,9x",
    "B_excluidos": [
-    "BMBL",
+    "COUR",
     "MTCH",
     "PINS"
    ],
    "C": {
-    "Conservador": 15.65,
-    "Base": 19.04,
-    "Optimista": 22.21
+    "Conservador": 11.86,
+    "Base": 14.48,
+    "Optimista": 17.51
    },
-   "mercado": 37.25,
-   "lambda": 0.15,
-   "conservador": 29.44,
-   "base": 34.52,
-   "optimista": 38.12,
-   "factor_cons": 0.853,
-   "factor_opt": 1.104,
+   "mercado": 33.84,
+   "lambda": 0.5,
+   "conservador": 20.39,
+   "base": 24.16,
+   "optimista": 27.17,
+   "factor_cons": 0.844,
+   "factor_opt": 1.125,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    19.04,
-    43.06
+    14.48,
+    39.89
    ],
    "antes": {
-    "J8": 33.98,
-    "J19": 38.51,
-    "J30": 41.5
+    "J8": null,
+    "J19": 48.90781333333333,
+    "J30": null
    },
-   "nota": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones alta, por eso su múltiplo EV/EBITDA es mayor que el de los peers."
+   "nota": "El EBITDA GAAP de Duolingo descuenta una compensación en acciones de ~13-15% de las ventas: su EV/EBITDA es mayor que el de un comparable con el mismo EBITDA ajustado."
   },
   "EV/FCFF": {
    "aplica": true,
    "hoja": "EVFCFF",
-   "A": 23.22,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 23,2x (EV/FCF × 1,30 = FCF después de intereses ÷ FCFF)",
-   "A_p25": 21.54,
-   "A_p75": 24.91,
-   "A_max": 65.31,
+   "A": 21.31,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 21,3x (EV/FCF × 1,29 = FCF después de intereses ÷ FCFF)",
+   "A_p25": 19.13,
+   "A_p75": 23.5,
+   "A_max": 65.17,
    "A_excluidos": [
     [
      "Dec '20",
@@ -123,41 +126,41 @@
     ],
     [
      "Dec '21",
-     349.67,
-     "> 2,5x la mediana (49.7x)"
+     344.48,
+     "> 2,5x la mediana (49.2x)"
     ]
    ],
-   "B_mediana": 24.88,
-   "B_ajustada": 24.88,
+   "B_mediana": 24.7,
+   "B_ajustada": 22.23,
    "B_n": 4,
    "B_regresion": null,
-   "B_peers": "SPOT 28,9x, NFLX 25,0x, PINS 8,1x, RDDT 24,7x",
+   "B_peers": "SPOT 27,8x, NFLX 25,1x, RDDT 24,3x, PINS 8,3x",
    "B_excluidos": [
-    "BMBL",
+    "COUR",
     "MTCH"
    ],
    "C": {
-    "Conservador": 20.85,
-    "Base": 26.9,
-    "Optimista": 32.25
+    "Conservador": 19.64,
+    "Base": 27.03,
+    "Optimista": 35.54
    },
-   "mercado": 24.05,
-   "lambda": 0.15,
-   "conservador": 20.64,
-   "base": 24.48,
-   "optimista": 27.05,
-   "factor_cons": 0.843,
-   "factor_opt": 1.105,
+   "mercado": 21.77,
+   "lambda": 0.5,
+   "conservador": 19.89,
+   "base": 24.4,
+   "optimista": 28.15,
+   "factor_cons": 0.815,
+   "factor_opt": 1.154,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    23.22,
-    26.9
+    21.31,
+    27.03
    ],
    "antes": {
-    "J8": 22.83,
-    "J19": 26.29,
-    "J30": 28.1
+    "J8": null,
+    "J19": 20.328864439519272,
+    "J30": null
    },
    "nota": ""
   },
@@ -165,7 +168,7 @@
    "aplica": true,
    "hoja": "PE",
    "A": null,
-   "A_desc": "sin historia representativa (El P/E del FY25 y del LTM se excluye: la utilidad incluye un beneficio tributario único de US$222,7 millones por la liberación de la reserva de valuación de impuestos diferidos (10-Q del 3T25 y 10-K FY2025); sin él, el P/E real es mucho más alto y los años anteriores no son representativos, así que el P/E se ancla en peers y fundamentales.)",
+   "A_desc": "sin historia representativa (El P/E de 2025 y del LTM se excluye: la utilidad incluye el beneficio fiscal único de US$256,7 millones por la liberación de la reserva de valuación de los impuestos diferidos (3T25; 10-K 2025). Sin él, la utilidad LTM sería ~US$154 millones y el P/E ~45×; los cierres anteriores son de otra etapa. El P/E se ancla en los peers y en el justificado.)",
    "A_p25": null,
    "A_p75": null,
    "A_max": 172.46,
@@ -191,48 +194,48 @@
      "> 2,5x la mediana (96.5x)"
     ]
    ],
-   "B_mediana": 27.26,
-   "B_ajustada": 27.26,
+   "B_mediana": 28.01,
+   "B_ajustada": 25.21,
    "B_n": 3,
    "B_regresion": null,
-   "B_peers": "SPOT 27,3x, NFLX 22,1x, RDDT 33,7x",
+   "B_peers": "SPOT 28,0x, NFLX 21,9x, RDDT 33,1x",
    "B_excluidos": [
-    "BMBL",
+    "COUR",
     "MTCH",
     "PINS"
    ],
    "C": {
-    "Conservador": 8.39,
-    "Base": 10.29,
-    "Optimista": 13.1
+    "Conservador": 11.45,
+    "Base": 14.81,
+    "Optimista": 18.66
    },
-   "mercado": 27.26,
-   "lambda": 0.15,
-   "conservador": 21.26,
-   "base": 24.71,
-   "optimista": 29.55,
-   "factor_cons": 0.86,
-   "factor_opt": 1.196,
+   "mercado": 25.21,
+   "lambda": 0.5,
+   "conservador": 16.65,
+   "base": 20.01,
+   "optimista": 23.52,
+   "factor_cons": 0.832,
+   "factor_opt": 1.176,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    10.29,
-    27.26
+    14.81,
+    25.21
    ],
    "antes": {
-    "J8": 20.66,
-    "J19": 25.74,
-    "J30": 28.79
+    "J8": null,
+    "J19": 20.47005554213958,
+    "J30": null
    },
    "nota": ""
   },
   "P/FCFE": {
    "aplica": true,
    "hoja": "PFCFE",
-   "A": 20.58,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 20,6x",
-   "A_p25": 19.41,
-   "A_p75": 21.75,
+   "A": 19.62,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,6x",
+   "A_p25": 17.96,
+   "A_p75": 21.27,
    "A_max": 70.14,
    "A_excluidos": [
     [
@@ -246,47 +249,47 @@
      "> 2,5x la mediana (57.1x)"
     ]
    ],
-   "B_mediana": 26.85,
-   "B_ajustada": 26.85,
+   "B_mediana": 26.44,
+   "B_ajustada": 23.8,
    "B_n": 4,
    "B_regresion": null,
-   "B_peers": "SPOT 31,1x, NFLX 26,2x, PINS 8,2x, RDDT 27,5x",
+   "B_peers": "SPOT 30,7x, NFLX 26,0x, RDDT 26,9x, PINS 8,4x",
    "B_excluidos": [
-    "BMBL",
+    "COUR",
     "MTCH"
    ],
    "C": {
-    "Conservador": 16.72,
-    "Base": 20.45,
-    "Optimista": 23.44
+    "Conservador": 15.87,
+    "Base": 20.44,
+    "Optimista": 25.03
    },
-   "mercado": 23.72,
-   "lambda": 0.15,
-   "conservador": 19.9,
-   "base": 23.23,
-   "optimista": 25.23,
-   "factor_cons": 0.857,
-   "factor_opt": 1.086,
+   "mercado": 21.71,
+   "lambda": 0.5,
+   "conservador": 17.62,
+   "base": 21.07,
+   "optimista": 23.62,
+   "factor_cons": 0.836,
+   "factor_opt": 1.121,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    20.45,
-    26.85
+    19.62,
+    23.8
    ],
    "antes": {
-    "J8": 22.89,
-    "J19": 25.82,
-    "J30": 27.28
+    "J8": null,
+    "J19": 18.146466462866385,
+    "J30": null
    },
-   "nota": ""
+   "nota": "El flujo de caja libre suma la compensación en acciones (US$145 millones LTM) y los prepagos de los suscriptores: los múltiplos de flujo sobreestiman la caja económica."
   },
   "P/OCF": {
    "aplica": true,
    "hoja": "POCF",
-   "A": 19.56,
-   "A_desc": "mediana Dec '25, LTM (etapa actual) = 19,6x",
-   "A_p25": 18.42,
-   "A_p75": 20.71,
+   "A": 18.66,
+   "A_desc": "mediana Dec '25, LTM (etapa actual) = 18,7x",
+   "A_p25": 17.06,
+   "A_p75": 20.26,
    "A_max": 68.68,
    "A_excluidos": [
     [
@@ -300,58 +303,58 @@
      "> 2,5x la mediana (52.9x)"
     ]
    ],
-   "B_mediana": 25.85,
-   "B_ajustada": 25.85,
+   "B_mediana": 25.46,
+   "B_ajustada": 22.91,
    "B_n": 4,
    "B_regresion": null,
-   "B_peers": "SPOT 30,4x, NFLX 24,5x, PINS 7,9x, RDDT 27,3x",
+   "B_peers": "SPOT 30,0x, NFLX 24,2x, RDDT 26,7x, PINS 8,0x",
    "B_excluidos": [
-    "BMBL",
+    "COUR",
     "MTCH"
    ],
    "C": {
-    "Conservador": 14.44,
-    "Base": 17.53,
-    "Optimista": 20.14
+    "Conservador": 14.67,
+    "Base": 18.93,
+    "Optimista": 23.21
    },
-   "mercado": 22.71,
-   "lambda": 0.15,
-   "conservador": 18.65,
-   "base": 21.93,
-   "optimista": 24.07,
-   "factor_cons": 0.85,
-   "factor_opt": 1.097,
+   "mercado": 20.78,
+   "lambda": 0.5,
+   "conservador": 16.42,
+   "base": 19.86,
+   "optimista": 22.46,
+   "factor_cons": 0.827,
+   "factor_opt": 1.131,
    "opt_tope_historico": null,
    "base_en_rango": true,
    "rango": [
-    17.53,
-    25.85
+    18.66,
+    22.91
    ],
    "antes": {
-    "J8": 21.8,
-    "J19": 24.89,
-    "J30": 26.67
+    "J8": null,
+    "J19": 17.469560450431135,
+    "J30": null
    },
-   "nota": ""
+   "nota": "El flujo operativo suma la compensación en acciones y los prepagos de los suscriptores: con cautela."
   }
  },
  "hoja": {
   "dcf_hoy": [
-   88.8585076787132,
-   113.35993612023786,
-   147.3784012907113
+   79.6979066701521,
+   107.46298088898018,
+   138.54370108566764
   ],
   "multiplos_hoy": [
-   90.79755759297659,
-   111.53150905553287,
-   134.779181276634
+   78.81097114948254,
+   98.51412142488948,
+   116.9653917666579
   ],
   "ponderado_hoy": [
-   89.63412764441856,
-   112.62856529435587,
-   142.33871328508042
+   79.34313246188428,
+   103.88343710334391,
+   129.91237735806374
   ],
-  "brecha_base": -0.016129393922431623,
-  "fila_origen": 50
+  "brecha_base": -0.0832738808291178,
+  "fila_origen": 54
  }
 }

@@ -1289,8 +1289,9 @@ def render(r: dict) -> tuple[str, str]:
         a = json.loads(aud_p.read_text())
         tipos = sorted({c["tipo"] for c in a["cambios"]})
         p(f"**Auditoría, {a['fecha']}:** se contrastaron los estados de la hoja con la SEC (último 10-Q) y se verificaron las "
-          f"historias y sus textos. " + (f"Correcciones: {', '.join(t_.lower() for t_ in tipos)} ({len(a['cambios'])} celdas, con "
-          "respaldo). " if a["cambios"] else "Sin correcciones de datos. ") +
+          f"historias y sus textos. " + (f"Correcciones: {', '.join(t_.lower() for t_ in tipos)} ({len(a['cambios'])} "
+          f"{'cambios' if any(':' in str(c_.get('celda', '')) or ',' in str(c_.get('celda', '')) for c_ in a['cambios']) else 'celdas'}, "
+          "con respaldo). " if a["cambios"] else "Sin correcciones de datos. ") +
           f"DCF esperado {usd(a['antes']['valorEsperado'])} → {usd(a['despues']['valorEsperado'])}. " +
           ("Salvedades abiertas: " + " ".join(a["salvedades"][:-1]) + " " if len(a["salvedades"]) > 1 else "") +
           "La coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos.")
