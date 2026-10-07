@@ -106,3 +106,20 @@ Controles: DCF Base reproducido por la hoja; cuatro historias activas; múltiplo
 - Shake Shack, resultados 2T26 y guía 2026.
 - Aswath Damodaran, datos de Restaurant/Dining y ERP.
 - Mauboussin & Callahan, The Base Rate Book.
+
+
+## Lectura adicional · múltiplos históricos normalizados
+
+Esta capa es **independiente** y no modifica el DCF, los escenarios, los múltiplos de salida vigentes ni el ponderado principal.
+
+| Método | Actual | Mínimo fiscal válido | Mediana histórica depurada | Actual vs mediana |
+|---|---:|---:|---:|---:|
+| EV/EBITDA | 19,25x | 22,80x | 41,40x | −53,5% |
+| P/E | 67,70x | 74,47x | 98,28x | −31,1% |
+| P/OCF | 14,03x | 15,26x | 23,50x | −40,3% |
+
+Después de excluir años con denominadores negativos/casi cero y outliers documentados, SHAK está por debajo del mínimo fiscal válido en los tres métodos aplicables. Esto confirma que la **valoración relativa frente a su propia historia es baja**.
+
+La traducción de esas anclas históricas a la métrica Base de FY+3 produce valores presentes muy altos (desde ~US$134 por acción usando el mínimo histórico combinado), precisamente porque SHAK recibió durante años múltiplos elevados. Esta cifra **no es valor intrínseco** y no entra al ponderado.
+
+**Barato frente a su historia no equivale a infravalorado intrínsecamente.**
