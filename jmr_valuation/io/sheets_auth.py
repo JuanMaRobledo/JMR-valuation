@@ -33,7 +33,10 @@ class SheetsAuthError(RuntimeError):
 
 
 def get_gspread_client(credentials_path: str | Path | None = None) -> gspread.Client:
-    """Busca la credencial en este orden: 1) `credentials_path` explicito,
+    """Con BackOffHTTPClient (6-oct-2026): ante el 429 de la cuota de 60 lecturas por minuto de la API de Sheets el
+    cliente espera y reintenta solo, en lugar de abortar a mitad de un paso que escribe en la hoja.
+
+    Busca la credencial en este orden: 1) `credentials_path` explicito,
     2) el JSON completo en la variable de entorno GOOGLE_SERVICE_ACCOUNT_JSON_CONTENT
     (para corridas programadas/sin sesion, donde no hay un archivo local
     persistente -- ver una Cloud Environment con esta variable seteada en vez
@@ -50,7 +53,7 @@ def get_gspread_client(credentials_path: str | Path | None = None) -> gspread.Cl
                 "tiene que ser el contenido completo del archivo de la service account, en una sola linea."
             ) from exc
         credentials = Credentials.from_service_account_info(info, scopes=_SCOPES)
-        return gspread.authorize(credentials)
+        return gspread.authorize(credentials, http_client=gspread.BackOffHTTPClient)
 
     path = Path(credentials_path or os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON", ""))
     if not path or not path.exists():
@@ -62,7 +65,7 @@ def get_gspread_client(credentials_path: str | Path | None = None) -> gspread.Cl
         )
 
     credentials = Credentials.from_service_account_file(str(path), scopes=_SCOPES)
-    return gspread.authorize(credentials)
+    return gspread.authorize(credentials, http_client=gspread.BackOffHTTPClient)
 
 
 def open_target_sheet(client: gspread.Client, sheet_id: str | None = None) -> gspread.Spreadsheet:

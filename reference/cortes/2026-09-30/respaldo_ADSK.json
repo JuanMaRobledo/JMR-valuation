@@ -1,0 +1,32 @@
+{
+ "Input sheet!D1": {
+  "before": 209,
+  "after": 209.0,
+  "reason": "Corte 2026-09-30 (ADSK)"
+ },
+ "Input sheet!B4": {
+  "before": 46295,
+  "after": "=DATE(2026;9;30)",
+  "reason": "Corte 2026-09-30 (ADSK)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0529,
+  "after": 0.0529,
+  "reason": "Corte 2026-09-30 (ADSK)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 228.93,
+  "after": 209.0,
+  "reason": "Corte 2026-09-30 (ADSK)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.037,
+  "after": 0.037,
+  "reason": "Corte 2026-09-30 (ADSK)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 231.28,
+  "after": "='Input sheet'!D1",
+  "reason": "Corte 2026-09-30 (ADSK)"
+ }
+}

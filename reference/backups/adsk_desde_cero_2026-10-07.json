@@ -1,0 +1,1295 @@
+{
+ "Balance Sheet!L3": {
+  "before": 4098,
+  "after": 4098,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L4": {
+  "before": 0,
+  "after": 57,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L5": {
+  "before": 4098,
+  "after": 4155,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L6": {
+  "before": 1439,
+  "after": 684,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L8": {
+  "before": 1439,
+  "after": 684,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L9": {
+  "before": 1254,
+  "after": 831,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L10": {
+  "before": 5670,
+  "after": 5670,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L11": {
+  "before": 124,
+  "after": 124,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L12": {
+  "before": 467,
+  "after": 423,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L13": {
+  "before": 4295,
+  "after": 4331,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L14": {
+  "before": 0,
+  "after": 202,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L15": {
+  "before": 2642,
+  "after": 2233,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L16": {
+  "before": 12983,
+  "after": 12983,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L18": {
+  "before": 422,
+  "after": 457,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L20": {
+  "before": 0,
+  "after": 1493,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L22": {
+  "before": 4406,
+  "after": 4036,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L23": {
+  "before": 980,
+  "after": 642,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L24": {
+  "before": 6628,
+  "after": 6628,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L25": {
+  "before": 2500,
+  "after": 1985,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L26": {
+  "before": 0,
+  "after": 0,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L27": {
+  "before": 1114,
+  "after": 987,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L28": {
+  "before": 3614,
+  "after": 2972,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L29": {
+  "before": 9422,
+  "after": 9600,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L31": {
+  "before": 4709,
+  "after": 4846,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L32": {
+  "before": -232,
+  "after": -233,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L33": {
+  "before": -1432,
+  "after": -1230,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L34": {
+  "before": 3383,
+  "after": 3383,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L35": {
+  "before": 3383,
+  "after": 3383,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Balance Sheet!L36": {
+  "before": 12983,
+  "after": 12983,
+  "reason": "LTM = balance al 31-jul-2026 (10-Q 2T FY27); el importador repetía partidas del 31-ene-2026"
+ },
+ "Income Statement!L8": {
+  "before": 3066,
+  "after": 3161,
+  "reason": "LTM jul-2026: SG&A = M&S + G&A de los 12 meses (el importador repetía el anual); otros gastos compensan para no mover el EBIT (2.041)"
+ },
+ "Income Statement!L11": {
+  "before": 79,
+  "after": -16,
+  "reason": "LTM jul-2026: SG&A = M&S + G&A de los 12 meses (el importador repetía el anual); otros gastos compensan para no mover el EBIT (2.041)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": 46295,
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 209.0,
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B12": {
+  "before": "='Income Statement'!L3",
+  "after": "='Income Statement'!L3+90",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B13": {
+  "before": "='Income Statement'!L12",
+  "after": "='Income Statement'!L12-80",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B16": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26",
+  "after": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26+1000+22",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "Yes",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B19": {
+  "before": "='Balance Sheet'!L5",
+  "after": "='Balance Sheet'!L5-3530+1000",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B22": {
+  "before": "='Income Statement'!L27",
+  "after": "='Income Statement'!L27+5,413",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Input sheet!B38": {
+  "before": "No",
+  "after": "No",
+  "reason": "Datos base ADSK desde cero (10-Q 2T FY27, 10-K FY26, 8-K de MaintainX)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Single Business(Global)",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Operating regions",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H22": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H23": {
+  "before": 3360,
+  "after": 1324,
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H24": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H25": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H26": {
+  "before": "",
+  "after": 324,
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H27": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H28": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H29": {
+  "before": 14120,
+  "after": 3085,
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H30": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H31": {
+  "before": "",
+  "after": 3057,
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!H32": {
+  "before": "",
+  "after": "",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!B33": {
+  "before": 3,
+  "after": 3.7,
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": 0.0565,
+  "reason": "Costo de capital ADSK desde cero: beta bottom-up global, prima por regiones, Kd de mercado"
+ },
+ "Operating lease converter!E5": {
+  "before": 295,
+  "after": 58.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Operating lease converter!B8": {
+  "before": 287,
+  "after": 60.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Operating lease converter!B9": {
+  "before": 235,
+  "after": 61.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Operating lease converter!B10": {
+  "before": 194,
+  "after": 56.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Operating lease converter!B11": {
+  "before": 151,
+  "after": 37.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Operating lease converter!B12": {
+  "before": 98,
+  "after": 30.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Operating lease converter!B13": {
+  "before": 605,
+  "after": 31.0,
+  "reason": "Arrendamientos operativos: gasto FY26 y compromisos al 31-ene-2026 (10-K FY26, nota de arrendamientos; SEC XBRL)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Arrendamientos operativos como deuda (conversor; US GAAP)"
+ },
+ "Input sheet!B27": {
+  "before": "='Income Statement'!L4",
+  "after": 0.1107,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B28": {
+  "before": "='Valuation output'!B6-0,02",
+  "after": 0.2824,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B29": {
+  "before": "=B27",
+  "after": 0.0877,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": 0.3424,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B31": {
+  "before": 5,
+  "after": 5,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B32": {
+  "before": "=K28",
+  "after": 1.2053,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B33": {
+  "before": "=B32",
+  "after": 1.2053,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B49": {
+  "before": "No",
+  "after": "Yes",
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Input sheet!B50": {
+  "before": 0.2,
+  "after": 0.179,
+  "reason": "Supuestos Base ADSK desde cero (7-oct-2026) = historia Base"
+ },
+ "Resumen de Valoración!G3": {
+  "before": "Genérico",
+  "after": "Madura",
+  "reason": "Tipo de empresa ADSK (ciclo de vida)"
+ },
+ "Financials Multiples!E11": {
+  "before": "=AVERAGE(B11:D11)",
+  "after": -0.06,
+  "reason": "Otros ingresos / EBIT proyectado = −6% (costo financiero neto pro forma)"
+ },
+ "Financials Multiples!E50": {
+  "before": "=AVERAGE(B50:D50)",
+  "after": -0.06,
+  "reason": "Otros ingresos / EBIT proyectado = −6% (costo financiero neto pro forma)"
+ },
+ "Financials Multiples!E90": {
+  "before": "=AVERAGE(B90:D90)",
+  "after": -0.06,
+  "reason": "Otros ingresos / EBIT proyectado = −6% (costo financiero neto pro forma)"
+ },
+ "Descuento de múltiplos!A38": {
+  "before": "DCF · valor intrínseco (valor presente)",
+  "after": "DCF activo hoy · escenarios de las historias",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!C38": {
+  "before": "='Valuation output'!B86",
+  "after": "='Escenarios e historias'!H6",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!D38": {
+  "before": "='Valuation output'!B35",
+  "after": "='Escenarios e historias'!H5",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!E38": {
+  "before": "='Valuation output'!B137",
+  "after": "='Escenarios e historias'!H8",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!A43": {
+  "before": "Compra con MOS sobre el ponderado (secundario)",
+  "after": "Precio con MOS sobre el valor esperado",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!C43": {
+  "before": "=IFERROR(C40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!D43": {
+  "before": "=IFERROR(D40*(1-$B$43);\"\")",
+  "after": "='Escenarios e historias'!H14",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Descuento de múltiplos!E43": {
+  "before": "=IFERROR(E40*(1-$B$43);\"\")",
+  "after": "",
+  "reason": "DCF activo = historias; MOS sobre el esperado (presentación vigente)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 209,
+  "after": 209.0,
+  "reason": "Precio al día del análisis = cierre del 30-sep-2026"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Autodesk, Inc.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "Andrew Anagnost (presidente y CEO desde 2017). CFO: Janesh Moorjani. Presidente del directorio: Stacy J. Smith.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Software de diseño, ingeniería, construcción y manufactura (Damodaran: Software (System & Application))",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://www.autodesk.com  |  IR: https://investors.autodesk.com",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A12": {
+  "before": "Visión General de la Empresa",
+  "after": "Visión General de la Empresa",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Software de diseño y gestión de proyectos para arquitectura, ingeniería, construcción y operación (AECO), manufactura y medios. Ventas LTM a jul-2026 de US$7.790M (97% recurrentes), margen operativo GAAP de 26,2% y ~14.300 empleados (31-ene-2026). Vende por suscripción, directo y a través de revendedores.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "AECO",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "US$3.895M LTM (50%): Revit, Civil 3D, Autodesk Construction Cloud, Forma y Tandem. +17% en el 2T FY27 (+15% en moneda constante) con la construcción creciendo más de 20%.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "AutoCAD y AutoCAD LT",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "US$1.910M LTM (25%): la herramienta de dibujo estándar (formato DWG). +14% en el 2T FY27 (+11% en moneda constante), sobre todo por precio.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Manufactura, M&E y otros",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Manufactura US$1.488M LTM (Fusion, Inventor; +15% en el 2T FY27); medios y entretenimiento (Maya, 3ds Max, Flow) y otros US$497M.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "MaintainX (desde ago-2026)",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Software de mantenimiento y operación de activos comprado el 3-ago-2026 por US$3.530M netos de caja; ARR de más de US$135M a dic-2026 creciendo más de 50%; sin utilidades. Aporta ~US$60M de ingresos en el 2S FY27.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "Sistema de registro con costos de cambio",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "DWG y Revit son el estándar de intercambio de planos y modelos; los clientes guardan años de proyectos en ellos. Ingresos 97% recurrentes y retención neta en el extremo alto de 100-110%.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Precio y margen",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Fin de los descuentos plurianuales, nuevo modelo de transacción y compensación en acciones en baja (11% → 9% de las ventas): meta de 41% de margen no GAAP en FY29 frente a ~39% en FY27.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "Caja y recompras",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Flujo libre de US$2.409M en FY26 y guía de US$2.725-2.750M en FY27; recompra ~50% del flujo libre (US$901M en el 1S FY27).",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "IA y puestos",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "El mercado teme que la IA generativa reduzca los puestos que compran los estudios y constructoras; la acción cayó 16,6% del 1 al 9-sep-2026 junto con PTC y Bentley pese a subir la guía.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "MaintainX",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "~26 veces el ARR por un negocio sin utilidades, financiado con caja, papel comercial y bonos: diluye el margen de FY27 y necesita crecer más de 40% varios años para rendir su costo de capital.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Reorganización comercial",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Plan de enero de 2026 (~1.000 empleados, US$135-160M de cargos) que cierra la optimización de ventas; Europa occidental va atrasada en productividad comercial.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: 10-Q del 2T FY27 de Autodesk (28-ago-2026) y 10-K FY26 (3-mar-2026), SEC EDGAR; comunicados del 4T FY26 (26-feb-2026), 1T FY27 (28-may-2026) y 2T FY27 (27-ago-2026); 8-K de la reestructuración (22-ene-2026), de MaintainX (28-may y 3-ago-2026), del préstamo puente (15-jun-2026), del papel comercial (13-jul-2026) y de los bonos 2029/2033 (10-sep-2026); transcripción de la llamada del 2T FY27 (The Motley Fool); Trefis (10-sep-2026); Damodaran (betas, márgenes, ROIC y ventas/capital por industria, ene-2026; ERP oct-2026); UST 10 años y cierre del 30-sep-2026.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 1 de julio de 2026 – 30 de septiembre de 2026",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T FY27: ingresos +16% (+14% en moneda constante) a US$2.046M",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Margen GAAP 29% y no GAAP 41%; BPA diluido US$2,33; flujo libre US$561M; RPO corriente +12% (comunicado del 27-ago-2026).",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Guía",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "FY27: ingresos US$8.295-8.345M, margen no GAAP ~39%, flujo libre US$2.725-2.750M",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Incluye MaintainX (~US$60M de ingresos en el 2S); el nuevo modelo de transacción suma ~1,5 pp al crecimiento de FY27 y no se repite en FY28.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "MaintainX",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Cierre de la compra el 3-ago-2026",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "US$3.530M netos de caja: préstamo de US$1.000M (4,58%), papel comercial y caja (10-Q 2T FY27, nota 19; 8-K del 3-ago-2026).",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "Deuda",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Bonos por US$1.000M (5,050% 2029 y 5,650% 2033)",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "Colocados el 8-sep-2026 para repagar el préstamo puente (8-K del 10-sep-2026); deuda nominal pro forma US$4.500M.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Mercado",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "La acción cae 16,6% del 1 al 9-sep-2026",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Con PTC (−15,7%) y Bentley (−10,1%): temor a la IA y crecimiento de FY28 sin el nuevo modelo de transacción (Trefis, 10-sep-2026).",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "MaintainX pro forma",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "Ventas LTM +US$90M y EBIT −US$80M (estimaciones), caja −US$3.530M y deuda +US$1.000M: el valor de la compra vuelve por sus ventas en las historias.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "I+D y arrendamientos",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "I+D capitalizado a 3 años (EBIT +US$221M; margen base 27,7%); arrendamientos operativos con el conversor (VP US$234M; +0,24 pp de margen).",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Historias",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Cuatro historias activas: Base (45%), Conservadora (25%), Disrupción (15%) y Optimista (15%); 'Valuation output' calcula las cuatro con la estructura de Damodaran.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Riesgo en el descuento",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "Beta 1,43 bottom-up: Software (System & Application) global 1,33 reapalancada con la D/E de mercado (~9%). Prima 3,70% (oct-2026) ponderada por regiones: 4,77%. Kd 5,65% (bonos 2033). WACC 11,40%.",
+  "reason": "Contenido cualitativo ADSK desde cero (7-oct-2026)"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L6",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 14300,
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "='Income Statement'!L30",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B12",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "='Márgenes'!L9",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='Valuation output'!B42",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "='Eficiencia de capital'!L3",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L13",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Trailing Valuation'!L18",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "='Trailing Valuation'!L19",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "='Trailing Valuation'!L21",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "='Trailing Valuation'!L16",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "='Trailing Valuation'!L20",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L5",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "='Input sheet'!B13/'Input sheet'!B14",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!F3)^(1/5)-1",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "=('Income Statement'!K3/'Income Statement'!B3)^(1/9)-1",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K27/'Income Statement'!F27)^(1/5)-1",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadísticas ADSK (fórmulas vivas)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Autodesk: sistema de registro del diseño y la obra que crece ~10% sin el impulso contable de FY27",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Autodesk cobra suscripciones por el software donde estudios, constructoras y fabricantes guardan sus modelos y planos: US$7.790M de ventas LTM, 97% recurrentes, con un margen GAAP de 26%. La historia Base: el crecimiento orgánico baja de ~14% reportado a ~11% el primer año (sin el nuevo modelo de transacción ni el dólar) y a ~7% en el año 5; MaintainX crece de 55% a 20%; el margen sube a ~31% GAAP (34% con el I+D como inversión) cuando terminan la reorganización y la dilución de la compra. Costos de cambio y estándares de archivo sostienen una ventaja durable: el ROIC después del año 10 es 17,9% (el de la industria topado en el actual).",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Año 1 11,1% (AECO +12%, AutoCAD +9%, manufactura +10%, M&E +7%, MaintainX +55%); CAGR 1-5 ~9,2%.",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Año 1 28,2% (guía FY27 en base del modelo + arrendamientos); objetivo 34,2% en 5 años (meta de 41% no GAAP − compensación en acciones).",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva LTM 22% que converge a la marginal de 25%.",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "1,205 en los años 1-10 (1,25 sin arrendamientos): el capital nuevo rinde ~31%, con compras recurrentes.",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROIC actual pro forma 17,9%; terminal 17,9% (industria 20,6% topada en el actual: ventaja durable).",
+  "reason": "Historia ADSK"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Ke 12,12% (rf 5,29% + beta 1,43 × ERP por regiones 4,77%); Kd 5,65%; WACC 11,40%; terminal 8,99%.",
+  "reason": "Historia ADSK"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.1107,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Suma por familia: AECO +12%, AutoCAD +9%, manufactura +10%, M&E y otros +7%, MaintainX +55%.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": 0.2824,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Guía FY27 25-27% GAAP en la base del modelo (I+D capitalizado) + 0,24 pp de arrendamientos.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.0877,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Años 2-5 de la Base: 10,3%, 9,3%, 8,3% y 7,3%.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": 0.3424,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "34% en la base del modelo (~31% GAAP) + 0,24 pp de arrendamientos.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": 5,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "La meta de margen de la gerencia es a FY29-FY30.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": 1.2053,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Rendimiento sobre el capital nuevo ~31% (34,2% × 75% × 1,205), entre el ROIC actual y el orgánico.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": 1.2053,
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Igual que los años 1-5: I+D y compras recurrentes.",
+  "reason": "Recomendaciones ADSK"
+ },
+ "Supuestos de los Múltiplos!A12": {
+  "before": "Chequeo de independencia (2026-10-07): múltiplos consolidados hoy (Base) 182,35 frente a DCF hoy 192,58 (−5%). Lectura del 7-oct-2026 (análisis desde cero): los múltiplos son precio relativo y salen de tres anclas (etapa actual, peers ajustados y justificado); no se movió ninguno para acercarlo al DCF. El DCF es el valor intrínseco; los múltiplos dicen cuánto pagaría el mercado si Autodesk cotizara como sus peers del software de diseño en FY+3.",
+  "after": "Evaluación ADSK (7-oct-2026, desde cero): los múltiplos Base salen de tres anclas (etapa actual desde FY2026 por la re-valoración del software con tasas de 5,3%, peers PTC, Bentley y Dassault al cierre del 30-sep-2026 con +5% y el justificado, λ = 0,25). Los consolidados hoy valen ~8% menos que el DCF Base: no se movió ningún múltiplo para acercarlos. El chequeo de crecimiento implícito marca EV/FCFF, P/FCFE y P/OCF por debajo del DCF en FY+3: el flujo de caja de los peers suma la compensación en acciones, que el DCF trata como costo, y el justificado tampoco cierra la brecha. EV/EBITDA y P/E son coherentes con el DCF. El DCF es el valor intrínseco; los múltiplos son precio relativo.",
+  "reason": "Evaluación de múltiplos ADSK"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ],
+   [],
+   [],
+   [
+    "ORIGEN DE LOS MÚLTIPLOS (prompt de valoración v3, 2026-10-07)"
+   ],
+   [
+    "Método",
+    "Aplica",
+    "A · historia",
+    "B · peers (ajustada)",
+    "C · justificado (Cons/Base/Opt)",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "EV/EBITDA",
+    "Sí",
+    "mediana Jan '26, LTM (etapa actual) = 24,8x",
+    "mediana 17,6x (n=3: PTC 17,4x, BSY 26,3x, DASTY 17,6x) × 1,05 = 18,5x",
+    "11,5x / 12,4x / 13,3x",
+    18.08,
+    19.32,
+    22.14
+   ],
+   [
+    "EV/FCFF",
+    "Sí",
+    "mediana Jan '26, LTM (etapa actual) = 19,1x",
+    "mediana 22,5x (n=3: PTC 22,5x, BSY 23,6x, DASTY 18,7x) × 1,05 = 23,6x",
+    "19,8x / 23,9x / 26,7x",
+    19.39,
+    21.96,
+    23.72
+   ],
+   [
+    "P/E",
+    "Sí",
+    "mediana Jan '26, LTM (etapa actual) = 37,9x",
+    "mediana 21,4x (n=3: PTC 18,6x, BSY 39,5x, DASTY 21,3x) × 1,05 = 22,4x",
+    "13,7x / 15,7x / 17,1x",
+    23.59,
+    26.53,
+    32.3
+   ],
+   [
+    "P/FCFE",
+    "Sí",
+    "mediana Jan '26, LTM (etapa actual) = 18,8x",
+    "mediana 21,8x (n=3: PTC 22,4x, BSY 21,8x, DASTY 19,9x) × 1,05 = 22,9x",
+    "14,9x / 17,1x / 18,6x",
+    18.17,
+    19.92,
+    21.18
+   ],
+   [
+    "P/OCF",
+    "Sí",
+    "mediana Jan '26, LTM (etapa actual) = 18,5x",
+    "mediana 20,8x (n=3: PTC 21,9x, BSY 20,8x, DASTY 18,4x) × 1,05 = 21,8x",
+    "17,1x / 21,4x / 23,9x",
+    18.07,
+    20.46,
+    22.07
+   ],
+   [
+    "Criterios: A: los cierres de FY2021-FY2025 (P/E 51-61×, EV/EBITDA 41-81×) se formaron con tasas de 1,5-4% y el auge del software por suscripción; con el Treasury a 10 años en 5,29% (30-sep-2026) y la re-valoración del software de diseño de 2026 por el temor a la IA (Autodesk −27% desde su máximo; PTC, Bentley y Dassault también cayeron, Trefis, 10-sep-2026), esos cierres no describen lo que pagaría el mercado en FY+3. El prompt v4 (6.2.A) pide usar solo la etapa actual cuando hay una re-valoración del sector: A = cierre de FY2026 (ene-2026) y LTM. Los cierres de FY2017-FY2019 (pérdidas de la transición a suscripción) ya estaban excluidos. B: software de diseño e ingeniería con datos de yfinance al 7-oct-2026: PTC, Bentley Systems y Dassault Systèmes (ADR). Se excluyen Synopsys (la compra de Ansys infla el crecimiento a 42% y deja el ROE en 4%: múltiplos de 50-86×), Cadence (diseño de chips, otro mercado final con el ciclo de la IA: P/E 70×) y Trimble (hardware y utilidad negativa en los últimos doce meses). PTC crece −7% por la venta de Kepware y ThingWorx, no por dificultades: se conserva. Ajuste +5%: crecimiento a FY+3 algo mayor que la mediana (Base ~9-10% frente a ~8% de PTC orgánico, ~11% de Bentley y ~3-5% de Dassault), +5%; margen operativo GAAP mayor y en alza (26% LTM, ~31% objetivo, frente a 23-28%), +5%; riesgo algo mayor (beta 1,43, integración de MaintainX y exposición de AutoCAD LT a la IA), −5%. λ = 0,25: la empresa de FY+3 se parece a la de hoy (suscripción madura que crece ~9-10%), así que el Base se apoya sobre todo en la etapa actual y en los peers; el justificado C usa los supuestos de las historias y queda como el piso del rango."
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

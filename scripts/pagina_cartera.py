@@ -69,7 +69,9 @@ def main(argv: list[str]) -> int:
     for viejo, nuevo in (("30-sep-2026</b><span>Corte", f"{corte['fecha_corte_es']}</b><span>Corte"),
                          ("<b>5,29%</b>", f"<b>{es(corte['rf'] * 100)}%</b>"),
                          ("<b>3,70%</b><span>Prima madura, Damodaran oct-2026", f"<b>{es(corte['erp_madura'] * 100)}%</b><span>Prima madura, Damodaran {corte['erp_mes_corto']}"),
-                         ("<b>8,99%</b>", f"<b>{es(corte['costo_capital_terminal'] * 100)}%</b>")):
+                         ("<b>8,99%</b>", f"<b>{es(corte['costo_capital_terminal'] * 100)}%</b>"),
+                         ("Las 22 valoraciones", f"Las {len(rows)} valoraciones"),  # 7-oct-2026: MCD y ADSK suman 24
+                         ('<b id="n-emp">22</b>', f'<b id="n-emp">{len(rows)}</b>')):
         tpl = tpl.replace(viejo, nuevo)
     Path(a.out).write_text(tpl.replace("/*DATA*/[]", json.dumps(rows, ensure_ascii=False)))
     print("escrito", a.out, len(rows))

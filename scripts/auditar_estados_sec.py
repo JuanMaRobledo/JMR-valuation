@@ -11,6 +11,8 @@ del importador ya validados:
   - patrimonio total con minoritarios;
   - cambio neto de caja (el importador lo traía con otra escala);
   - columna LTM del balance que repite el cierre anual (se lleva al último 10-Q).
+Informa además (6-oct-2026, MCD): D&A de la hoja menor que la D&A total del flujo de caja y filas de SG&A o D&A en 0
+entre años con dato (partidas no etiquetadas en el XBRL).
 Las demás diferencias se informan, pero no se escriben: pueden ser definiciones distintas y requieren revisión.
 
 Sin --apply escribe el informe reference/auditoria_estados_2026-10-03/<T>_diagnostico.json y la lista de cambios
@@ -49,6 +51,11 @@ FILAS = {
     "Net Income Attributable to Common Shareholders": (IS, ["NetIncomeLoss"], "flujo", "USD", False),
     "Basic EPS": (IS, ["EarningsPerShareBasic"], "flujo", "USD/shares", True),
     "Diluted EPS": (IS, ["EarningsPerShareDiluted"], "flujo", "USD/shares", True),
+    # 6-oct-2026 (MCD): D&A total del flujo de caja. Si la hoja trae menos, el importador tomó una D&A parcial (MCD: la
+    # corporativa incluida en el SG&A) y el EBITDA y el EV/EBITDA históricos quedan mal. Se informa; no se corrige solo
+    # porque hay que compensar «Other Operating Expenses» y el flujo (ver scripts/run_mcd_cero.py, paso fix).
+    "Depreciation & Amortization Expenses": (IS, ["DepreciationAndAmortization", "DepreciationDepletionAndAmortization",
+                                                  "DepreciationAmortizationAndAccretionNet"], "flujo", "USD", False),
     "Cash and Cash Equivalents": (BS, ["CashAndCashEquivalentsAtCarryingValue"], "saldo", "USD", False),
     "Total Assets": (BS, ["Assets"], "saldo", "USD", True),
     "Total Liabilities": (BS, ["Liabilities"], "saldo", "USD", True),
@@ -215,6 +222,22 @@ def main(argv: list[str]) -> int:
                                 cambios.append({"hoja": CF, "celda": f"{chr(65 + j)}{ro + 1}", "antes": oa,
                                                 "despues": round(oa - (sv - cn), 2),
                                                 "motivo": "Compensa el cambio de la utilidad para que el flujo operativo siga igual al reportado."})
+        # 6-oct-2026 (MCD): filas de gasto en 0 entre años con dato = partida no etiquetada en el XBRL de esos años (MCD
+        # 2020-2021: SG&A partido en dos líneas propias). Se informa para completarla a mano con el 10-K y su nota.
+        for lab in ("Selling, General & Administrative Expenses", "Depreciation & Amortization Expenses"):
+            r = next((r for r in grids[IS] if r and r[0] == lab), None)
+            if not r:
+                continue
+            vals = [(j, h, r[j] if j < len(r) else None) for j, h in cols if h != "LTM"]
+            con = [k for k, (_, _, v) in enumerate(vals) if isinstance(v, (int, float)) and v != 0]
+            if len(con) >= 2:
+                for k in range(con[0] + 1, con[-1]):
+                    j, h, v = vals[k]
+                    if v in (0, None, ""):
+                        diag.append({"hoja": IS, "fila": lab, "celda": f"{chr(65 + j)}{grids[IS].index(r) + 1}", "columna": h,
+                                     "hoja_valor": v, "sec": None, "fecha_sec": None, "etiquetas": [],
+                                     "nota": "en 0 entre años con dato: no etiquetado en el XBRL; completar con el 10-K",
+                                     "se_corrige": False})
         desfase = any(d["fila"] == "Total Revenues" and d["columna"] == "LTM" for d in diag)
         if desfase:
             for d in diag:

@@ -19,7 +19,7 @@ VO B27 y 'Cost of capital worksheet'!B46 suman C29, VO B41 suma F34). Este scrip
 Bajo NIIF 16 (AFYA, NVO, ONON, PAGS) el EBIT ya excluye el costo financiero de los arrendamientos y su pasivo es
 deuda: no se cambian. Respaldo en reference/revision_dcf_2026-09-30/<T>_LEASECONV.json y nota en cada celda.
 
-Uso: python scripts/apply_lease_conversion.py [--dry-run] TICKER ...
+Uso: python scripts/apply_lease_conversion.py [--dry-run] [--gasto=TK:US$M] TICKER ...
 """
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
 OUT = _ROOT / "reference" / "revision_dcf_2026-09-30"
 REF = _ROOT / "reference" / "damodaran"
 IS, VO, OL = "Input sheet", "Valuation output", "Operating lease converter"
-GASTO = ["OperatingLeaseCost", "OperatingLeasePayments"]
+GASTO = ["OperatingLeaseCost", "OperatingLeasePayments", "OperatingLeaseExpense", "LeaseAndRentalExpense"]
 PAGOS = {"y1": ["LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths", "LesseeOperatingLeaseLiabilityPaymentsDueNextRollingTwelveMonths"],
          "y2": ["LesseeOperatingLeaseLiabilityPaymentsDueYearTwo", "LesseeOperatingLeaseLiabilityPaymentsDueInRollingYearTwo"],
          "y3": ["LesseeOperatingLeaseLiabilityPaymentsDueYearThree", "LesseeOperatingLeaseLiabilityPaymentsDueInRollingYearThree"],
@@ -82,6 +82,15 @@ def main(argv):
     gc = get_gspread_client()
     for tk in [a for a in argv if not a.startswith("--")]:
         d = datos(tk)
+        # 6-oct-2026 (MCD): si el gasto del ejercicio no está etiquetado en el XBRL (MCD lo publica solo en la tabla de
+        # «rent expense» del 10-K: US$1.631M en 2025) se pasa a mano con --gasto=TK:valor (US$ millones) y se cita.
+        manual = dict(a.split("=", 1)[1].split(":") for a in argv if a.startswith("--gasto="))
+        if manual.get(tk):
+            d["gasto"] = float(manual[tk])  # US$ millones, como el resto de datos()
+        if d["gasto"] is None:
+            print(f"{tk}: gasto de arrendamientos operativos no etiquetado en el XBRL; páselo con --gasto={tk}:<US$ millones> "
+                  "(tabla de gasto de arrendamientos o «rent expense» del 10-K)")
+            continue
         sid = json.loads((_ROOT / "reference" / "multiplos_v3" / f"{tk}_anclas.json").read_text())["sheet_id"]
         sh = gc.open_by_key(sid)
         rng = [f"'{OL}'!E5", f"'{OL}'!B8:B13", f"'{IS}'!B18", f"'{IS}'!B28", f"'{IS}'!B30", f"'{IS}'!B32", f"'{IS}'!B33",
