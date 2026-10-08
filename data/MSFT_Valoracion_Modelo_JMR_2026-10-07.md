@@ -6,28 +6,52 @@ analysis_date: 2026-10-07
 information_cutoff: 2026-10-07
 valuation_cutoff: 2026-09-30
 sheet_id: 1wIgB2zfjmPk_DdnaFsoJfKHMiIR_p4795ebvbGSOi1E
+verified_at: 2026-10-08
 ---
 
 # Microsoft (MSFT) · Valoración desde cero · 7-oct-2026
+
+**Tabla de contenidos**
+
+- [1. Resumen](#seccion-1)
+- [2. Historia y visión externa](#seccion-2)
+- [3. Datos y conciliación](#seccion-3)
+- [4. Supuestos y costo de capital](#seccion-4)
+- [5. Historias, probabilidades y esperado](#seccion-5)
+- [6. Múltiplos independientes](#seccion-6)
+- [7. Resultados en ambos horizontes](#seccion-7)
+- [8. DCF frente a múltiplos](#seccion-8)
+- [9. Sensibilidad](#seccion-9)
+- [10. Log de ejecución y ajustes](#seccion-10)
+- [11. Precio al final y expectativas implícitas](#seccion-11)
+- [12. Registro de decisión](#seccion-12)
+- [13. Fuentes](#seccion-13)
+- [14. Control de calidad](#seccion-14)
+
+<a id="seccion-1"></a>
 
 ## 1. Resumen
 
 **DCF Base hoy: US$570,73 por acción.** DCF esperado por probabilidades: **US$500,25**. Rango condicionado a las cuatro historias: US$130,36–US$821,72. MOS35% sobre esperado: US$325,16; no es una certeza ni una decisión de compra.
 
-Lectura secundaria: múltiplos solos Base al presente US$342,13; combinado DCF/múltiplos US$479,29. La distancia conel DCF refleja mercado enterprise comparado y coste de infraestructura, no se corrigió para forzar coincidencia.
+Lectura secundaria: múltiplos solos Base al presente US$342,13; combinado DCF/múltiplos US$479,29. La distancia con el DCF refleja mercado enterprise comparado y coste de infraestructura, no se corrigió para forzar coincidencia.
+
+<a id="seccion-2"></a>
 
 ## 2. Historia y visión externa
 
-La historia es posible porque existen demanda Azure, distribución Microsoft 365 y contratos enterprise. Es plausible si el crecimiento pierde velocidad y el capital obtiene utilización; es probable solo de forma condicional: 50% Base,25% Conservadora,10% Disrupción y 15% Optimista son juicio del analista. No proceden de una curva estadística ni se ajustaron mirando el precio.
+La historia es posible porque existen demanda Azure, distribución Microsoft 365 y contratos enterprise. Es plausible si el crecimiento pierde velocidad y el capital obtiene utilización; es probable solo de forma condicional: 50% Base, 25% Conservadora, 10% Disrupción y 15% Optimista son juicio del analista. No proceden de una curva estadística ni se ajustaron mirando el precio.
 
-Visión externa: grupo>$50.000M en dólares 2015, ventas equivalentes 234.794,6M. Base Rate Book 1950–2015: mediana CAGR real 1,5%, media 1,0%; con inflación comparativa 2,5%, mediana nominal≈4%. Las observaciones de megacaps con crecimiento sostenido alto son escasas. La interpolación de histogramas es aproximada; cambian composición, época y supervivencia. Microsoft es excepcional, pero ese hecho no convierte 16–20% CAGR en resultado seguro.
+Visión externa: grupo>$50.000 M en dólares 2015, ventas equivalentes 234.794,6 M. Base Rate Book 1950–2015: mediana CAGR real 1,5%, media 1,0%; con inflación comparativa 2,5%, mediana nominal≈4%. Las observaciones de megacaps con crecimiento sostenido alto son escasas. La interpolación de histogramas es aproximada; cambian composición, época y supervivencia. Microsoft es excepcional, pero ese hecho no convierte 16–20% CAGR en resultado seguro.
 
 | Historia | Ventas año 5 USD M | CAGR nominal | Fracción histórica con crecimiento≥historia |
 | --- | --- | --- | --- |
-| A | 705.118 | 16,3% | 5,0% |
-| B | 512.218 | 9,1% | 21,9% |
-| C | 361.978 | 1,8% | 64,6% |
-| D | 838.222 | 20,4% | 2,0% |
+| Base | 705.118 | 16,3% | 5,0% |
+| Conservadora | 512.218 | 9,1% | 21,9% |
+| Disrupción | 361.978 | 1,8% | 64,6% |
+| Optimista | 838.222 | 20,4% | 2,0% |
+
+<a id="seccion-3"></a>
 
 ## 3. Datos y conciliación
 
@@ -35,9 +59,9 @@ Visión externa: grupo>$50.000M en dólares 2015, ventas equivalentes 234.794,6M
 
 Conciliación FY 2026: ventas 331.839; EBIT 155.237; NI 133.749; OCF 182.935; capex pagado en efectivo 115.948; FCF efectivo 66.987. Balance: activos 758.376=pasivos 315.989+patrimonio 442.387. Caja 20.935+inversiones CP 55.908=76.843. Deuda bancaria 40.294 más finance leases 66.594=106.888; operativo se agrega una sola vez por el conversor, VP 20.482,09. Inversiones LP 36.348+equity method 12.000=48.348 no operativos a valor contable, no a una valoración privada inventada.
 
-La línea completa del flujo de caja “depreciación, amortización y otros” es 38.534, frente a 39.000 aproximados del tag parcial. Se usa la definición reportada con esta salvedad; el componente “otros” impide llamarla D&A pura. El signo de gasto por intereses se auditó: 3.051 positivo como gasto bruto; interest/ingreso de inversiones 3.301 no se suma al costo de la deuda. Los leases corrientes 4.290 y no corrientes 62.304 aparecen separados, excluidos de sus respectivas líneas residuales. Se corrigieron estos datos para diez años.
+La línea completa del flujo de caja “depreciación, amortización y otros” es 38.534, frente a 39.000 aproximados del tag parcial. Se usa la definición reportada con esta salvedad; el componente “otros” impide llamarla D&A pura. El sig no de gasto por intereses se auditó: 3.051 positivo como gasto bruto; interest/ingreso de inversiones 3.301 no se suma al costo de la deuda. Los leases corrientes 4.290 y no corrientes 62.304 aparecen separados, excluidos de sus respectivas líneas residuales. Se corrigieron estos datos para diez años.
 
-Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5, supuesto conservador de dilución plena. NI usa acciones medias diluidas 7.453 para EPS; ese promedio no sustituye al denominador del DCF. SBC 12.405 continúa siendo costo en EBIT; no se añade como beneficio económico al DCF. sin recompras automáticas. Ningún balance posterior no publicado se infiere.
+Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5, supuesto conservador de dilución plena. NI usa acciones medias diluidas 7.453 para EPS; ese promedio no sustituye al denominador del DCF. SBC 12.405 continúa siendo costo en EBIT; no se añade como beneficio económico al DCF. Sin recompras automáticas. Ningún balance posterior no publicado se infiere.
 
 | FY junio | Ventas | Crecimiento | EBIT | Margen EBIT | NI GAAP | D&A y otros | OCF | Capex efectivo | FCF efectivo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -53,33 +77,35 @@ Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5,
 | 2026 | 331.839 | 17,8% | 155.237 | 46,8% | 133.749 | 38.534 | 182.935 | 115.948 | 66.987 |
 
 
-Las series históricas conservan cifras originalmente reportadas por cada ejercicio, salvo los tags suplementarios conciliados. FY2017 usa ingresos 89.950 y NI 21.204 anteriores a ASC 606; los comparativos reexpresados posteriores son 96.571 y 25.489. Por ello, el 22,7% de variación FY2018 frente al FY2017 original no mide crecimiento comparable ni orgánico. Con ingresos FY2017 reexpresados, FY2018 crece 14,3%. Las anclas de la etapa actual empiezan en FY2021 y esta diferencia no cambia el DCF FY2026.
+Las series históricas conservan cifras originalmente reportadas por cada ejercicio, salvo los tags suplementarios conciliados. FY 2017 usa ingresos 89.950 y NI 21.204 anteriores a ASC 606; los comparativos reexpresados posteriores son 96.571 y 25.489. Por ello, el 22,7% de variación FY 2018 frente al FY 2017 original no mide crecimiento comparable ni orgánico. Con ingresos FY 2017 reexpresados, FY 2018 crece 14,3%. Las anclas de la etapa actual empiezan en FY 2021 y esta diferencia no cambia el DCF FY 2026.
+
+<a id="seccion-4"></a>
 
 ## 4. Supuestos y costo de capital
 
 | Historia | Prob. | CAGR1–5 | Margen ajustado objetivo | S/C1–5; 6–10 | g terminal | ROIC terminal | DCF hoy/acción |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| A · Base · IA rentable con inversión sostenida | 50% | 16,3% | 50,0% | 0,60; 1,05 | 5,29% | 20,00% | US$570,73 |
-| B · Conservadora · Adopción más lenta y capacidad cara | 25% | 9,1% | 43,0% | 0,60; 1,05 | 5,29% | 14,49% | US$314,36 |
-| C · Tesis de disrupción · Deterioro de los fundamentales | 10% | 1,8% | 30,0% | 0,55; 1,05 | 0,00% | 8,99% | US$130,36 |
-| D · Optimista · Monetización de agentes y utilización superior | 15% | 20,4% | 54,0% | 0,70; 1,05 | 5,29% | 24,00% | US$821,72 |
+| Base · IA rentable con inversión sostenida | 50% | 16,3% | 50,0% | 0,60; 1,05 | 5,29% | 20,00% | US$570,73 |
+| Conservadora · Adopción más lenta y capacidad cara | 25% | 9,1% | 43,0% | 0,60; 1,05 | 5,29% | 14,49% | US$314,36 |
+| Disrupción · Deterioro de los fundamentales | 10% | 1,8% | 30,0% | 0,55; 1,05 | 0,00% | 8,99% | US$130,36 |
+| Optimista · Monetización de agentes y utilización superior | 15% | 20,4% | 54,0% | 0,70; 1,05 | 5,29% | 24,00% | US$821,72 |
 
 
-El crecimiento se construye por productos reexpresados: Azure 101.938, Microsoft 365 cloud 100.299, licencias/industria/soporte 65.890 y dispositivos/consumidor 63.712; total 331.839. Son cuatro cubetas económicas del nuevo perímetro, no cuatro segmentos reportables. Base Azure 40%,33%,27%,22%,18%; Microsoft 365: 18%,17%,15%,13%,11%; resto 7%,7%,6%,5%,4%; consumidor 1,5%,2%,2,5%,2,5%,2,5%. La desaceleración reconoce escala y competencia; Copilot está dentro Microsoft 365 y no se duplica. Forecast de adquisición 0 y FX 0: no se atribuye todo el crecimiento histórico a orgánico puro porque Microsoft no ofrece conciliación completa para las cuatro cubetas. La guía Q1 Azure 44–45% CC soporta el arranque, no un 40% perpetuo.
+El crecimiento se construye por productos reexpresados: Azure 101.938, Microsoft 365 cloud 100.299, licencias/industria/soporte 65.890 y dispositivos/consumidor 63.712; total 331.839. Son cuatro cubetas económicas del nuevo perímetro, no cuatro segmentos reportables. Base Azure 40%, 33%, 27%, 22%, 18%; Microsoft 365: 18%, 17%, 15%, 13%, 11%; resto 7%, 7%, 6%, 5%, 4%; consumidor 1,5%, 2%, 2,5%, 2,5%, 2,5%. La desaceleración reconoce escala y competencia; Copilot está dentro Microsoft 365 y no se duplica. proyección de adquisición 0 y FX 0: no se atribuye todo el crecimiento histórico a orgánico puro porque Microsoft no ofrece conciliación completa para las cuatro cubetas. La guía Q1 Azure 44–45% CC soporta el arranque, no un 40% perpetuo.
 
-Margen inicial 49% ajustado y objetivo Base 50% en 5 años. El EBIT GAAP46,78% se convierte a aproximadamente 49,76% con I+D neta capitalizada y leases; 49% implica una caída coherente con guía de margen FY 27. Microsoft ya es el comparable maduro de su propio negocio: margen GAAP promedio 5 años 44,18% y actual 46,78%. No se usa el margen de software ligero 33% para toda Azure. Objetivos B43%,C30%,D54% son cambios de economía, no±2 pp arbitrarios. Revise si cloud margins caen con utilización alta; margen no puede mejorar solo por extender depreciación.
+Margen inicial 49% ajustado y objetivo Base 50% en 5 años. El EBIT GAAP 46,78% se convierte a aproximadamente 49,76% con I+D neta capitalizada y leases; 49% implica una caída coherente con guía de margen FY2027. Microsoft ya es el comparable maduro de su propio negocio: margen GAAP promedio 5 años 44,18% y actual 46,78%. No se usa el margen de software ligero 33% para toda Azure. Objetivos B43%, C30%, D54% son cambios de economía, no±2 pp arbitrarios. Revise si cloud margins caen con utilización alta; margen no puede mejorar solo por extender depreciación.
 
-Ventas/capital Base 0,60 x años 1–5,1,05 x años 6–10. Hoy ventas/capital operativo ajustado=0,65 x; sector US 1,538 x. El capital contable creció fuertemente, con grandes inversiones aún sin generar ingresos; la eficiencia marginal a 1/3 años queda por debajo de la de software ligero y exige separar el efecto de inversiones financieras y de leases. El escenario usa como ancla adicional el desembolso real: capex pagado en efectivo 115.948+nuevos finance leases 24.608−D&A/otros 38.534=102.022 antes de I+D neta y capital de trabajo. Δventas FY 2026=50.115, eficiencia económica aproximada 0,491 x antes de esos ajustes.0,60 x supone recuperación gradual, no normalización instantánea a 1,538. Comparación marginal verificable: Δventas/Δcapital de **0,42× a un año** y **0,39× a tres años**. El proxy comparable suma patrimonio, deuda bancaria, finance leases, operating leases reconocidos y activo I+D de tres años; resta caja/negociables e inversiones LP. Capital FY2023/FY2025/FY2026: 214.964,67 /406.919,33 /525.066,33 millones. Se mantienen dentro del proxy las inversiones bajo equity method para evitar un cambio de clasificación entre años; en el DCF actual sí se restan 12.000 como no operativos. Para esta comparación los operating leases usan saldo GAAP (15.137/22.861/21.925), mientras el DCF actual usa el VP del conversor 20.482,09. No se presenta el proxy como ROIC de cohortes de IA.
+Ventas/capital Base 0,60 x años 1–5,1,05 x años 6–10. Hoy ventas/capital operativo ajustado=0,65 x; sector US 1,538 x. El capital contable creció fuertemente, con grandes inversiones aún sin generar ingresos; la eficiencia marginal a 1/3 años queda por debajo de la de software ligero y exige separar el efecto de inversiones financieras y de leases. El escenario usa como ancla adicional el desembolso real: capex pagado en efectivo 115.948+nuevos finance leases 24.608−D&A/otros 38.534=102.022 antes de I+D neta y capital de trabajo. Δventas FY 2026=50.115, eficiencia económica aproximada 0,491 x antes de esos ajustes.0,60 x supone recuperación gradual, no normalización instantánea a 1,538. Comparación marginal verificable: Δventas/Δcapital de **0,42× a un año** y **0,39× a tres años**. El proxy comparable suma patrimonio, deuda bancaria, finance leases, operating leases reconocidos y activo I+D de tres años; resta caja/negociables e inversiones LP. Capital FY 2023/FY 2025/FY 2026: 214.964,67 /406.919,33 /525.066,33 millones. Se mantienen dentro del proxy las inversiones bajo equity method para evitar un cambio de clasificación entre años; en el DCF actual sí se restan 12.000 como no operativos. Para esta comparación los operating leases usan saldo GAAP (15.137/22.861/21.925), mientras el DCF actual usa el VP del conversor 20.482,09. No se presenta el proxy como ROIC de cohortes de IA.
 
-El 10-K informa además **US$329.100M de leases aún no iniciados**, principalmente datacenters. No se suman a la deuda reconocida ni se duplican como reinversión ya realizada, pero su despliegue exige demanda y utilización. El supuesto de ventas/capital y la sensibilidad de eficiencia deben absorber ese riesgo de capital futuro.
+El 10-K informa además **US$329.100 M de leases aún no iniciados**, principalmente datacenters. No se suman a la deuda reconocida ni se duplican como reinversión ya realizada, pero su despliegue exige demanda y utilización. El supuesto de ventas/capital y la sensibilidad de eficiencia deben absorber ese riesgo de capital futuro.
 
 La mejora tardía es una hipótesis de utilización; capital nuevo implica retorno 22,5% en primera etapa y 39,4% en la segunda (margen 50%×75%×S/C), frente a ROIC actual ajustado 25,8% y sector ajustado 29,3%. La segunda etapa es exigente; el DCF cae al reducir la eficiencia 20% y no se oculta esa sensibilidad.
 
-I+D amortizada en 3 años: software/IA se renueva rápidamente; 5 años es contraste, no un dato de Microsoft. La maestra duplica FY 2026 en K/L cuando LTM es anual: el año−1 del conversor apunta a J(FY 2025), año−2 a I y año−3 a H. Esto evita inflar el activo intangible con el mismo FY 26 dos veces. Ajuste EBIT I+D≈5.831, gasto 35.562 menos amortización 29.731; activo 67.057,3. US GAAP operating leases: EBIT+gasto 6.968−depreciación modelada≈2.926=+4.042. No se agregan los pasivos operativos GAAP del balance además del VP del conversor.
+I+D amortizada en 3 años: software/IA se renueva rápidamente; 5 años es contraste, no un dato de Microsoft. La maestra duplica FY 2026 en K/L cuando LTM es anual: el año−1 del conversor apunta a J(FY 2025), año−2 a I y año−3 a H. Esto evita inflar el activo intangible con el mismo FY2026 dos veces. Ajuste EBIT I+D≈5.831, gasto 35.562 menos amortización 29.731; activo 67.057,3. US GAAP operating leases: EBIT+gasto 6.968−depreciación modelada≈2.926=+4.042. No se agregan los pasivos operativos GAAP del balance además del VP del conversor.
 
-Riesgo: 51,47% ventas US; tabla US para beta unlevered 1,248199 y apalancada 1,275. Beta global reapalancada 1,360 y regresión semanal 5 años 1,152 (n=259,R²=44,7%) son contrastes. La regresión utiliza precios simples contra S&P500, no retorno total; no la hago pasar por la beta Yahoo 2 años. Treasury 5,29%, ERP 3,70%, Ke=10,01%, Kd 5,70%; equity 97,22% y debt 2,78%. WACC inicial 9,85% converge a 8,99%. Vencimiento de la deuda 7 años es aproximación del modelo, no plazo de cada contrato. Para 48,53% ventas fuera US no hay países: CRP 0 es limitación; sensibilidad ERP+50 pb, no una geografía inventada.
+Riesgo: 51,47% ventas US; tabla US para beta unlevered 1,248199 y apalancada 1,275. Beta global reapalancada 1,360 y regresión semanal 5 años 1,152 (n=259, R²=44,7%) son contrastes. La regresión utiliza precios simples contra S&P500, no retorno total; no la hago pasar por la beta Yahoo 2 años. Treasury 5,29%, ERP 3,70%, Ke=10,01%, Kd 5,70%; equity 97,22% y debt 2,78%. WACC inicial 9,85% converge a 8,99%. Vencimiento de la deuda 7 años es aproximación del modelo, no plazo de cada contrato. Para 48,53% ventas fuera US no hay países: CRP 0 es limitación; sensibilidad ERP+50 pb, no una geografía inventada.
 
-Terminal: g Base/B/D5,29% por regla Ginzu igual Rf, claramente agresivo para una empresa que será enorme; prueba 3% abajo. C0% nominal desde año 3, sin recuperación; no supone liquidación ni liberación de capital. ROIC Base 20% reconoce ventaja enterprise: referencia ajustada US 29,318%, normalizada 10 años 22,952%. Se elige 20% debajo de ambas por mezcla Azure y amenaza agentes. B14,495%=punto medio entre 20% y 8,99%, ventaja que se erosiona; C8,99%=WACC por pérdida de moat; D24% exige productividad superior, por encima de la normalizada y debajo de la ajustada actual. No perpetuar ROIC actual 25,8% sin prueba. Retorno=costo del capital en C no implica que todo Microsoft desaparezca.
+Terminal: g Base/Conservadora/Optimista 5,29% por regla Ginzu igual Rf, claramente agresivo para una empresa que será enorme; prueba 3% abajo. C0% nominal desde año 3, sin recuperación; no supone liquidación ni liberación de capital. ROIC Base 20% reconoce ventaja enterprise: referencia ajustada US 29,318%, normalizada 10 años 22,952%. Se elige 20% debajo de ambas por mezcla Azure y amenaza agentes. B14,495%=punto medio entre 20% y 8,99%, ventaja durable con menores retornos por mezcla de capital; C8,99%=WACC por pérdida de moat; Optimista 24% exige productividad superior, por encima de la normalizada y debajo de la ajustada actual. No perpetuar ROIC actual 25,8% sin prueba. Retorno=costo del capital en C no implica que todo Microsoft desaparezca.
 
 Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a ganancias de inversiones privadas. NOL no añadido como ahorro separado porque rentabilidad positiva y riesgo de duplicar tasa efectiva; preferentes/minoritarios/opciones convencionales 0. Se incluyen 78 millones de RSU cubre la dilución existente; nuevas adjudicaciones se deben compensar económicamente en precios/márgenes o someter a la prueba+5% acciones. Inversiones no operativas book 48.348: la diferencia con fair value es una incertidumbre separada; incrementos de valoración OpenAI/Anthropic no se proyectan como utilidad operativa.
 
@@ -90,26 +116,28 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | Input B16/B19 | 106.888 /76.843 | Balance deuda cash; operativo por conversor |
 | Input B20 | 48.348 | Balance L14+12.000 equity method; nota SEC |
 | Input B22 | 7.503,5 | Income L27+78RSU, supuesto declarado |
-| Input B24/B25 | 20%/25% | Guía FY 27/marginal; juicio |
+| Input B24/B25 | 20%/25% | Guía FY2027/marginal; juicio |
 | Input B28/B31 | 49%/5 años | Margen inicial ajustado/convergencia |
-| Input B32/B33 | 0,60/1,05 | Supuestos Base; por historia E5: E8/F5: F8 |
+| Input B32/B33 | 0,60/1,05 | Supuestos Base; por historia E5:E8/F5:F8 |
 | Cost Capital B22/B27/B35 | US /3,70% /5,70% | Beta sector/ERP corte/Kd |
 | Input B35/B47 | 5,29%/8,99% | Corte común y madurez |
-| RD F7; B12: B14 | 3 años; FY 25/24/23 | Vida útil juicio; gasto SEC correcto |
-| Historias B5: B8 | 50/25/10/15% | Juicio, suman 100% |
-| Historias D5: D8 | 50/43/30/54% | Márgenes ajustados propios |
-| Historias G5: G8 | 20/14,495/8,99/24% | Ventaja durable/erosión/pérdida/superior |
-| Múltiplos J8/J19/J30 | Ver anclas | Regla A/B/C independiente; lambda 15% |
+| RD F7; B12:B14 | 3 años; FY 25/24/23 | Vida útil juicio; gasto SEC correcto |
+| Historias B5:B8 | 50/25/10/15% | Juicio, suman 100% |
+| Historias D5:D8 | 50/43/30/54% | Márgenes ajustados propios |
+| Historias G5:G8 | 20/14,495/8,99/24% | Ventaja durable/menores rentas durables/pérdida/superior |
+| Múltiplos J8/J19/J30 | Ver anclas | Regla Base/Conservadora/C independiente; lambda 15% |
 | FM E11/E50/E90 | −0,5% EBIT | otros ingresos normalizados, excluye gains |
-| Input D12 | 1 año | FY 26/FY 25; evita 0 en I26, nota |
+| Input D12 | 1 año | FY2026/FY 25; evita 0 en I26, nota |
 | Input D1/B4 | Ver precio al final /30-sep 2026 | Común congelado; no GOOGLEFINANCE en modelo |
 
+
+<a id="seccion-5"></a>
 
 ## 5. Historias, probabilidades y esperado
 
 El esperado=0,50×DCF A+0,25×DCF B+0,10×DCF C+0,15×DCF D=US$500,25. Es complementariedad de historias; los pesos de métodos son otra dimensión. Base no se sustituye por el esperado. Cada narrativa dispone de crecimiento y margen propios, reinversión y ROIC terminal; deuda/caja/impuestos/margen inicial son comunes.
 
-### Trayectoria A · Base · IA rentable con inversión sostenida
+### Trayectoria Base · IA rentable con inversión sostenida
 
 | Año | g ventas | Ventas USD M | Margen ajustado | NOPAT USD M | Reinversión USD M | FCFF USD M | WACC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -124,7 +152,7 @@ El esperado=0,50×DCF A+0,25×DCF B+0,10×DCF C+0,15×DCF D=US$500,25. Es comple
 | 9 | 6,71% | 989.364 | 50,0% | 375.958 | 49.845 | 326.113 | 9,16% |
 | 10 | 5,29% | 1.041.702 | 50,0% | 390.638 | 52.482 | 338.156 | 8,99% |
 
-### Trayectoria B · Conservadora · Adopción más lenta y capacidad cara
+### Trayectoria Conservadora · Adopción más lenta y capacidad cara
 
 | Año | g ventas | Ventas USD M | Margen ajustado | NOPAT USD M | Reinversión USD M | FCFF USD M | WACC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -139,7 +167,7 @@ El esperado=0,50×DCF A+0,25×DCF B+0,10×DCF C+0,15×DCF D=US$500,25. Es comple
 | 9 | 5,42% | 637.504 | 43,0% | 208.336 | 32.118 | 176.218 | 9,16% |
 | 10 | 5,29% | 671.228 | 43,0% | 216.471 | 33.817 | 182.654 | 8,99% |
 
-### Trayectoria C · Tesis de disrupción · Deterioro de los fundamentales
+### Trayectoria Disrupción · Deterioro de los fundamentales
 
 | Año | g ventas | Ventas USD M | Margen ajustado | NOPAT USD M | Reinversión USD M | FCFF USD M | WACC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -154,7 +182,7 @@ El esperado=0,50×DCF A+0,25×DCF B+0,10×DCF C+0,15×DCF D=US$500,25. Es comple
 | 9 | 0,00% | 361.978 | 30,0% | 82.531 | 0 | 82.531 | 9,16% |
 | 10 | 0,00% | 361.978 | 30,0% | 81.445 | 0 | 81.445 | 8,99% |
 
-### Trayectoria D · Optimista · Monetización de agentes y utilización superior
+### Trayectoria Optimista · Monetización de agentes y utilización superior
 
 | Año | g ventas | Ventas USD M | Margen ajustado | NOPAT USD M | Reinversión USD M | FCFF USD M | WACC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -192,15 +220,17 @@ La matriz siguiente mantiene crecimiento constante 1–5 para aislar la sensibil
 
 | Indicador trimestral | Umbral de revisión (juicio) | Respuesta |
 | --- | --- | --- |
-| Azure CCgrowth | <25% dos trimestres con oferta suficiente | Desplazar probabilidad de A/D hacia B |
+| Azure CCgrowth | <25% dos trimestres con oferta suficiente | Desplazar probabilidad de Base/Optimista hacia B |
 | Microsoft 365 cloud | <10% dos trimestres | Revisar seats/ARPU y margen |
 | Copilot monetización | Seats crecen pero margen cloud baja 2 pp | Separar subsidio de utilidad sostenible |
 | RPO excluyendo OpenAI/current RPO | Crecimiento<15% y plazo mayor | Rebajar crecimiento temprano |
-| Capex en efectivo+finance leases+opexleases | >45% ventas sin mejora de utilización | Reducir ventas/capital |
+| Capex en efectivo+finance leases+gasto operativo de leases | >45% ventas sin mejora de utilización | Reducir ventas/capital |
 | OCF-capex | Caída 2FYpese ingresos creciendo | Revisar la eficiencia prevista |
 | ROIC incremental ajustado | <WACC durante 3 años maduros | Acercar retorno terminal al costo |
 | Dilución real | Shares plenamente diluidas crecen>1% anual | Aplicar prueba de acciones; no recompra automática |
 
+
+<a id="seccion-6"></a>
 
 ## 6. Múltiplos independientes
 
@@ -213,18 +243,20 @@ La matriz siguiente mantiene crecimiento constante 1–5 para aislar la sensibil
 | P/OCF | 26,54× | 8,64× → 7,78× (n=3) | 20,77× | 17,70× | 14,17× | 19,77× |
 
 
-A: historia de MSFT desde FY 2021 más LTM; distribución depurada 10 años para rangos, FY 2018 tributario no es ancla actual. B: CRM,INTU,ADBE; todos GAAP rentables y FCF positivo; n=3 por método, misma fecha 30-sep. Son comparables de software empresarial, no replicas de Azure. ORCL se excluye del ancla de FCF por el ciclo de infraestructura; Amazon/Google no entran numéricamente por sus mezclas retail/publicidad. Datos no provienen de sus modelos JMR.
+A: historia de MSFT desde FY 2021 más LTM; distribución depurada 10 años para rangos, FY 2018 tributario no es ancla actual. B: CRM, INTU, ADBE; todos GAAP rentables y FCF positivo; n=3 por método, misma fecha 30-sep. Son comparables de software empresarial, no replicas de Azure. ORCL se excluye del ancla de FCF por el ciclo de infraestructura; Amazon/Google no entran numéricamente por sus mezclas retail/publicidad. Datos no provienen de sus modelos JMR.
 
-Ajuste B−10%: mayor crecimiento MSFT+15%, margen/moat+5%, menor conversión de infraestructura−25%, concentración IA−5%. Son ajustes de juicio, no estimación causal. λ15%: C se deriva de supuestos FY+3 y Gordon, nunca del valor DCF; si g≥Ke/WACC−1 pp no se calcula. C Optimista no es interpretable en los cinco métodos; el caso se fija con dispersiones A/B y tope histórico, no con C forzado. Anclas actuales Gordon pueden ser muy inestables.
+Ajuste B−10%: mayor crecimiento MSFT+15%, margen/moat+5%, menor conversión de infraestructura−25%, concentración IA−5%. Son ajustes de juicio, no estimación causal. λ15%: C se deriva de supuestos FY+3 y Gordon, nunca del valor DCF; si g≥Ke/WACC−1 pp no se calcula. C Optimista no es interpretable en los cinco métodos; el caso se fija con dispersiones Base/Conservadora y tope histórico, no con C forzado. Anclas actuales Gordon pueden ser muy inestables.
 
-EV/EBITDA16,47× privilegia una métrica antes de inversión: relativamente alta por rentabilidad pero no refleja GPU depreciation/capex por sísola. EV/FCFF29,13× confronta la reinversión necesaria; A usa EV/FCF como proxy 1,0, porque otros ingresos ganancias hacen espuria la conversión net interest. Peer FCFF=FCF+intereses después de impuestos 21%, no confundirlo con OCF. P/E25,86× usa utilidad proyectada normalizada y no repite gain OpenAI/Anthropic. P/FCFE27,81× incorpora el endeudamiento marginal de maestra; sensible a financiación. P/OCF 17,70× tiene menor capex explícito pero la NWC se en laza a reinversión DCF, así que no es una caja sin coste decrecimiento.
+EV/EBITDA 16,47× privilegia una métrica antes de inversión: relativamente alta por rentabilidad pero no refleja GPU depreciation/capex por sí sola. EV/FCFF 29,13× confronta la reinversión necesaria; A usa EV/FCF como proxy 1,0, porque otros ingresos ganancias hacen espuria la conversión net interest. Peer FCFF=FCF+intereses después de impuestos 21%, no confundirlo con OCF. P/E 25,86× usa utilidad proyectada normalizada y no repite gain OpenAI/Anthropic. P/FCFE 27,81× incorpora el endeudamiento marginal de maestra; sensible a financiación. P/OCF 17,70× tiene menor capex explícito pero la NWC se enlaza a reinversión DCF, así que no es una caja sin coste de crecimiento.
+
+<a id="seccion-7"></a>
 
 ## 7. Resultados en ambos horizontes
 
 | DCF Base: puente en USD millones | Importe |
 | --- | --- |
 | VPFCFF años 1–10 | 1.012.544,92 |
-| VPterminal | 3.272.115,95 |
+| VP terminal | 3.272.115,95 |
 | Valor activos operativos | 4.284.660,87 |
 | −deuda bancaria y finance/operating leases | 127.370,09 |
 | +caja y negociables | 76.843,00 |
@@ -250,7 +282,7 @@ Moneda: US$ por acción. Fecha de valoración: 30-sep-2026. Escenarios en orden 
 
 **Valor intrínseco principal: DCF Base al presente, US$570,73 por acción.** Complemento: DCF esperado por probabilidades US$500,25. Múltiplos y ponderados son lecturas secundarias.
 
-**Tabla 1 · Valor por acción descontado al presente (30-sep-2026).** Cada método usa el promedio simple de los VP a 1, 2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
+**Tabla 1 · Valor por acción descontado al presente (30-sep-2026).** Cada método usa el promedio simple de los VP a 1,2 y 3 años (criterio vigente de la hoja); cada dividendo se descuenta en su año de pago.
 
 | Método | Múltiplo aplicado (× Base / Cons. / Opt.) | Peso original | Peso entre múltiplos | Base | Conservador | Optimista |
 |---|---|---:|---:|---:|---:|---:|
@@ -281,13 +313,17 @@ Moneda: US$ por acción. Fecha de valoración: 30-sep-2026. Escenarios en orden 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 
 
-Para EV/FCFF y P/FCFE el valor Conservador al presente puede superar Base: la Base crece más y requiere mayor capital, dejando menos FCFF temprano. Los múltiplos aplicados sí crecen ordenadamente; no se fuerza un orden de precios que cambiaría la economía. Un flujo no interpretable se excluiría; las métricas modeladas son positivas. Se mantiene categoría Software: 60% DCF; 10% EV/EBITDA; 15% EV/FCFF; 5% P/E; 5% P/FCFE; 5% P/OCF. Entre múltiplos,25%,37,5%,12,5%,12,5%,12,5%.
+Para EV/FCFF y P/FCFE el valor Conservador al presente puede superar Base: la Base crece más y requiere mayor capital, dejando menos FCFF temprano. Los múltiplos aplicados sí crecen ordenadamente; no se fuerza un orden de precios que cambiaría la economía. Un flujo no interpretable se excluiría; las métricas modeladas son positivas. Se mantiene categoría Software: 60% DCF; 10% EV/EBITDA; 15% EV/FCFF; 5% P/E; 5% P/FCFE; 5% P/OCF. Entre múltiplos, 25%, 37,5%, 12,5%, 12,5%, 12,5%.
 
 MOS sobre el esperado se preserva; 311,54 sobre el combinado Base presente es solo lectura secundaria y no reemplaza 325,16. Múltiplos históricos normalizados son una tercera comparación, no alteran pesos/DCF. En Base el VP 3 es menor que FY+3 para los cinco métodos; cada dividendo se descontó en su año, sin duplicación.
 
+<a id="seccion-8"></a>
+
 ## 8. DCF frente a múltiplos
 
-El consolidado Base 342,13 está 40,05% por debajo del DCF 570,73. No se movieron anclas para eliminar la brecha. Peers de aplicaciones tienen una valoración baja y flujos mucho más ligeros; Microsoft conserva distribución/moat, pero gasta más por dólar crecido. En DCF,76,4% del valor operativo está en el terminal; ROIC 20% y g 5,29% sostienen gran parte del resultado. DCF es principal porque explicita reinversión, aunque no lo considero más preciso que la evidencia permite. La brecha es una razón para confianza moderada, no para escoger el resultado más alto.
+El consolidado Base 342,13 está 40,05% por debajo del DCF 570,73. No se movieron anclas para eliminar la brecha. Peers de aplicaciones tienen una valoración baja y flujos mucho más ligeros; Microsoft conserva distribución/moat, pero gasta más por dólar crecido. En DCF, 76,4% del valor operativo está en el terminal; ROIC 20% y g 5,29% sostienen gran parte del resultado. DCF es principal porque explicita reinversión, aunque no lo considero más preciso que la evidencia permite. La brecha es una razón para confianza moderada, no para escoger el resultado más alto.
+
+<a id="seccion-9"></a>
 
 ## 9. Sensibilidad
 
@@ -321,13 +357,17 @@ Los shocks crecimiento±2 pp y WACC±1 pp se aplican a la trayectoria real; el s
 ERP +50 pb en la etapa inicial, transmitido por beta y peso del patrimonio, con terminal intacto: DCF Base **US$549,66**. Es un estrés de prima de riesgo, no un cálculo regional sin datos de países.
 
 
+<a id="seccion-10"></a>
+
 ## 10. Log de ejecución y ajustes
 
-Copia nueva de maestra vigente; importador SEC genérico; tags custom D&A y contexts finance leases auditados con 10-K. Scripts genéricos refresh_native_model, build_story_sheet(block de productos),multiples_anchors,apply_multiples_v3(decide/origin),historical_multiples,horizon_tables y motor JavaScript. Al no haber credencial service account se registraron operaciones en un adaptador y se aplicaron a la misma hoja con export nativo recalculado. No se reemplazó el DCF por una fórmula propia.
+Copia nueva de maestra vigente; importador SEC genérico; tags custom D&A y contexts finance leases auditados con 10-K. Scripts genéricos refresh_native_model, build_story_sheet(block de productos), multiples_anchors, apply_multiples_v3(decide/origin), historical_multiples, horizon_tables y motor JavaScript. Al no haber credencial service account se registraron operaciones en un adaptador y se aplicaron a la misma hoja con export nativo recalculado. No se reemplazó el DCF por una fórmula propia.
 
-Datos/especificidades:     caja e inversiones de corto plazo sumados una vez; expense interest bruto L15; finance leases corrientes/no corrientes; I+D: años previos correctos; 78RSU; equity method 12.000; tiempo FY 26/FY 25=1 para evitar 0 en I26. Supuestos se escriben explícitamente con notas. No se cambian las fórmulas de DCF/múltiplos/contrato maestro.
+Datos/especificidades:      caja e inversiones de corto plazo sumados una vez; expense interest bruto L15; finance leases corrientes/no corrientes; I+D: años previos correctos; 78RSU; equity method 12.000; tiempo FY2026/FY 25=1 para evitar 0 en I26. Supuestos se escriben explícitamente con notas. No se cambian las fórmulas de DCF/múltiplos/contrato maestro.
 
 Correcciones de consistencia genéricas: el lector de app toma ROIC terminal y g de cada historia desde G/J, sin imponer costo capital por fila. run_exact toma la trayectoria anual completa del bloque Base al ejecutar sin overrides: antes repetía el año 2 en 2–5; los casos explícitos por historia ya eran exactos. Ambas correcciones leen datos, no alteran la matemática del modelo.
+
+<a id="seccion-11"></a>
 
 ## 11. Precio al final y expectativas implícitas
 
@@ -341,7 +381,7 @@ Precio congelado 30-sep-2026: **US$512,90**. Cierre reciente 7-oct-2026: **US$52
 | 1,360 | 52,0% | 12,76% | 9,9% |
 
 
-El inverso mantiene un crecimiento constante 1–5 y converge después: no puede confundirse con la Base por segmentos. A margen 47% y beta US, el precio necesita crecimiento 14,55%; a margen 52%,12,40%. Con beta Global,14,92%/12,76%. No se calibraron márgenes para igualar el precio. Qué podría saber el mercado: mayor utilización, precios Copilot y moat persistente; también puede estar capitalizando ganancias contables como permanentes. El DCF no observa esos resultados por anticipado.
+El inverso mantiene un crecimiento constante 1–5 y converge después: no puede confundirse con la Base por segmentos. A margen 47% y beta US, el precio necesita crecimiento 14,55%; a margen 52%, 12,40%. Con beta Global, 14,92%/12,76%. No se calibraron márgenes para igualar el precio. Qué podría saber el mercado: mayor utilización, precios Copilot y moat persistente; también puede estar capitalizando ganancias contables como permanentes. El DCF no observa esos resultados por anticipado.
 
 Los múltiplos están materialmente por debajo del DCF capitalizado FY+3 en tres de cinco lecturas; P/E y EV/EBITDA están cerca. Cada múltiplo Gordon implica también expectativas de g; no se traduce el resultado a un CAGR de ventas DCF por identidad matemática inexistente. El detalle de crecimiento implícito de cada método se conserva en anclas y se comprueba contra el DCF con la misma métrica, no se cambia el ancla para resolver la distancia.
 
@@ -357,16 +397,20 @@ Las dos columnas de crecimiento usan la misma fórmula de múltiplo justificado 
 
 Chequeo DCF inverso al margen Base 50%: crecimiento constante años 1–5 de **13,22%**, frente al promedio aritmético de la trayectoria Base de 16,30% y CAGR compuesto de 16,27%. Es una hipótesis uniforme alternativa, no el crecimiento exacto por segmentos. Se mantiene el resto de supuestos; no se eligen anclas para coincidir con el precio.
 
+<a id="seccion-12"></a>
+
 ## 12. Registro de decisión
 
-Historia: crecimiento de IA real, captura enterprise duradera y capital costoso antes de caja. Probabilidades 50/25/10/15%; esperado 500,25; rango 130,36–821,72. Confianza moderada en negocio y estados; baja/moderada en infraestructura/terminal. Revisar tras Q1FY27 y cada trimestre, o antes si se activa un umbral del panel. **Decisión comprar/mantener/vender: pendiente del usuario en la app.** No se asigna ni se altera su posición.
+Historia: crecimiento de IA real, captura enterprise duradera y capital costoso antes de caja. Probabilidades 50/25/10/15%; esperado 500,25; rango 130,36–821,72. Confianza moderada en negocio y estados; baja/moderada en infraestructura/terminal. Revisar tras Q1 FY2027 y cada trimestre, o antes si se activa un umbral del panel. **Decisión comprar/mantener/vender: pendiente del usuario en la app.** No se asigna ni se altera su posición.
+
+<a id="seccion-13"></a>
 
 ## 13. Fuentes
 
 - [SEC 10-K FY 2026, presentado 29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm): estados, deuda, I+D, leases, premios e inversiones.
 - [SEC 8-K y reclasificación de segmentos, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm): nueva taxonomía y comparativos FY 2025/26.
-- [Resultados Microsoft Q4/FY 2026, 29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast): nube, adopción y métricas comerciales.
-- [Conference call Q4/FY 2026, 29-jul-2026](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4): guía FY 2027, inversión y cambios de vida útil/clasificación.
+- [Resultados Microsoft Q4/FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast): nube, adopción y métricas comerciales.
+- [Conference call Q4/FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4): guía FY 2027, inversión y cambios de vida útil/clasificación.
 - [Dividendo anunciado, 15-sep-2026](https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/): US$0,98 trimestral, pago 10-dic y ex/registro 19-nov.
 - [Acuerdo Microsoft/OpenAI, 27-abr-2026](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/): límites de exclusividad y derechos; antecedente fuera de ventana 90 d.
 - [SEC companyfacts MSFT, consulta 7-oct-2026](https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json): series auditadas y tags regulatorios.
@@ -374,9 +418,13 @@ Historia: crecimiento de IA real, captura enterprise duradera y capital costoso 
 - [Damodaran roc.xls, enero 2026](https://pages.stern.nyu.edu/~adamodar/pc/datasets/roc.xls): ROC sectorial ajustado I+D/leases 29,318%, normalizado 22,952%.
 - [Damodaran betas.xls, enero 2026](https://pages.stern.nyu.edu/~adamodar/pc/datasets/betas.xls): beta bottom-up; tablas US/global de la maestra vigente.
 - [Damodaran ERP Oct 26.xlsx, publicado 1-oct-2026, precios 30-sep](https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx) y [FRED DGS10](https://fred.stlouisfed.org/series/DGS10): corte común Treasury 5,29%/ERP 3,70%; no mezclado con octubre 7.
-- [The Base Rate Book, Mauboussin/Callahan,26-sep-2016, Exhibit 4](https://josephnoko.com/wp-content/uploads/2024/04/The-Base-Rate-Book-Michael-Mauboussin.pdf): distribución 1950–2015; tabla común del repositorio, no probabilidad de MSFT.
+- [The Base Rate Book, Mauboussin/Callahan, 26-sep-2016, Exhibit 4](https://josephnoko.com/wp-content/uploads/2024/04/The-Base-Rate-Book-Michael-Mauboussin.pdf): distribución 1950–2015; tabla común del repositorio, no probabilidad de MSFT.
 - [Yahoo histórico MSFT](https://finance.yahoo.com/quote/MSFT/history/) y [Stock Analysis](https://stockanalysis.com/stocks/msft/history/), consulta 7-oct-2026: precio del corte y cierre reciente; regresión semanal contra^GSPC.
 - Peers separados: [SEC CRM](https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json), [SEC INTU](https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json), [SEC ADBE](https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json); hechos presentados hasta 30-sep y cierres de ese día. Cifras GAAP y deuda contable; no sus valoraciones guardadas.
+
+Control 8-oct 2026: recuperadas inversiones CP 2017/18 y añadida Ratios auditados MSFT para sig no de cobertura. DCF actual y anclas FY 2021–26 no cambian. Históricos importados se conservanconproxiesyheterogeneidaddeclarados. Estado: corregido con salvedades de datos no divulgados y sig no de presentación canónica.
+
+<a id="seccion-14"></a>
 
 ## 14. Control de calidad
 
@@ -387,7 +435,7 @@ Historia: crecimiento de IA real, captura enterprise duradera y capital costoso 
 | Fórmula única de cálculo | Sí | Dry canonical 0 pendientes; Input datos/supuestos con notas |
 | Cuatro DCF y esperado | Sí | Motor y hoja coinciden<0,00001; probabilidades 100% |
 | Ambos horizontes y pesos | Sí | horizon_tables; individual, múltiplos solos y combinados; 60/40 |
-| Independencia de múltiplos | Sí | A/B/C propios; brecha 40%; C Optimista no disponible |
+| Independencia de múltiplos | Sí | Base/Conservadora/C propios; brecha 40%; C Optimista no disponible |
 | Beta y ROC ajustado | Sí | US/global; regresión contrastada; ROC referencia ajustada |
 | Pre-mortem e indicadores | Sí | 4 fallos/8 métricas con umbrales |
 | Orgánico/comprado FX exacto histórico | No | No conciliación completa por cubeta; proyección M&A0/FX 0 |
