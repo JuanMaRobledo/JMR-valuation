@@ -6,37 +6,15 @@ analysis_date: 2026-10-07
 information_cutoff: 2026-10-07
 valuation_cutoff: 2026-09-30
 sheet_id: 1wIgB2zfjmPk_DdnaFsoJfKHMiIR_p4795ebvbGSOi1E
-verified_at: 2026-10-08
 ---
 
 # Microsoft (MSFT) · Valoración desde cero · 7-oct-2026
-
-**Tabla de contenidos**
-
-- [1. Resumen](#seccion-1)
-- [2. Historia y visión externa](#seccion-2)
-- [3. Datos y conciliación](#seccion-3)
-- [4. Supuestos y costo de capital](#seccion-4)
-- [5. Historias, probabilidades y esperado](#seccion-5)
-- [6. Múltiplos independientes](#seccion-6)
-- [7. Resultados en ambos horizontes](#seccion-7)
-- [8. DCF frente a múltiplos](#seccion-8)
-- [9. Sensibilidad](#seccion-9)
-- [10. Log de ejecución y ajustes](#seccion-10)
-- [11. Precio al final y expectativas implícitas](#seccion-11)
-- [12. Registro de decisión](#seccion-12)
-- [13. Fuentes](#seccion-13)
-- [14. Control de calidad](#seccion-14)
-
-<a id="seccion-1"></a>
 
 ## 1. Resumen
 
 **DCF Base hoy: US$570,73 por acción.** DCF esperado por probabilidades: **US$500,25**. Rango condicionado a las cuatro historias: US$130,36–US$821,72. MOS35% sobre esperado: US$325,16; no es una certeza ni una decisión de compra.
 
-Lectura secundaria: múltiplos solos Base al presente US$342,13; combinado DCF/múltiplos US$479,29. La distancia con el DCF refleja mercado enterprise comparado y coste de infraestructura, no se corrigió para forzar coincidencia.
-
-<a id="seccion-2"></a>
+Lectura secundaria: múltiplos solos Base al presente US$342,13; combinado DCF/múltiplos US$479,29. La distancia conel DCF refleja mercado enterprise comparado y coste de infraestructura, no se corrigió para forzar coincidencia.
 
 ## 2. Historia y visión externa
 
@@ -51,17 +29,15 @@ Visión externa: grupo>$50.000 M en dólares 2015, ventas equivalentes 234.794,6
 | Disrupción | 361.978 | 1,8% | 64,6% |
 | Optimista | 838.222 | 20,4% | 2,0% |
 
-<a id="seccion-3"></a>
-
 ## 3. Datos y conciliación
 
 [Hoja nueva MSFT](https://docs.google.com/spreadsheets/d/1wIgB2zfjmPk_DdnaFsoJfKHMiIR_p4795ebvbGSOi1E/edit). Fecha de redacción 7-oct-2026; corte de valoración 30-sep-2026; FY termina 30-jun. LTM=FY 2026 porque todavía no hay un 10-Q FY 2027 publicado. Moneda USD; magnitudes en millones y acciones en millones. La antigua valoración no sirve como entrada.
 
 Conciliación FY 2026: ventas 331.839; EBIT 155.237; NI 133.749; OCF 182.935; capex pagado en efectivo 115.948; FCF efectivo 66.987. Balance: activos 758.376=pasivos 315.989+patrimonio 442.387. Caja 20.935+inversiones CP 55.908=76.843. Deuda bancaria 40.294 más finance leases 66.594=106.888; operativo se agrega una sola vez por el conversor, VP 20.482,09. Inversiones LP 36.348+equity method 12.000=48.348 no operativos a valor contable, no a una valoración privada inventada.
 
-La línea completa del flujo de caja “depreciación, amortización y otros” es 38.534, frente a 39.000 aproximados del tag parcial. Se usa la definición reportada con esta salvedad; el componente “otros” impide llamarla D&A pura. El sig no de gasto por intereses se auditó: 3.051 positivo como gasto bruto; interest/ingreso de inversiones 3.301 no se suma al costo de la deuda. Los leases corrientes 4.290 y no corrientes 62.304 aparecen separados, excluidos de sus respectivas líneas residuales. Se corrigieron estos datos para diez años.
+La línea completa del flujo de caja “depreciación, amortización y otros” es 38.534, frente a 39.000 aproximados del tag parcial. Se usa la definición reportada con esta salvedad; el componente “otros” impide llamarla D&A pura. El signo de gasto por intereses se auditó: 3.051 positivo como gasto bruto; interest/ingreso de inversiones 3.301 no se suma al costo de la deuda. Los leases corrientes 4.290 y no corrientes 62.304 aparecen separados, excluidos de sus respectivas líneas residuales. Se corrigieron estos datos para diez años.
 
-Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5, supuesto conservador de dilución plena. NI usa acciones medias diluidas 7.453 para EPS; ese promedio no sustituye al denominador del DCF. SBC 12.405 continúa siendo costo en EBIT; no se añade como beneficio económico al DCF. Sin recompras automáticas. Ningún balance posterior no publicado se infiere.
+Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5, supuesto conservador de dilución plena. NI usa acciones medias diluidas 7.453 para EPS; ese promedio no sustituye al denominador del DCF. SBC 12.405 continúa siendo costo en EBIT; no se añade como beneficio económico al DCF. sin recompras automáticas. Ningún balance posterior no publicado se infiere.
 
 | FY junio | Ventas | Crecimiento | EBIT | Margen EBIT | NI GAAP | D&A y otros | OCF | Capex efectivo | FCF efectivo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -78,8 +54,6 @@ Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5,
 
 
 Las series históricas conservan cifras originalmente reportadas por cada ejercicio, salvo los tags suplementarios conciliados. FY 2017 usa ingresos 89.950 y NI 21.204 anteriores a ASC 606; los comparativos reexpresados posteriores son 96.571 y 25.489. Por ello, el 22,7% de variación FY 2018 frente al FY 2017 original no mide crecimiento comparable ni orgánico. Con ingresos FY 2017 reexpresados, FY 2018 crece 14,3%. Las anclas de la etapa actual empiezan en FY 2021 y esta diferencia no cambia el DCF FY 2026.
-
-<a id="seccion-4"></a>
 
 ## 4. Supuestos y costo de capital
 
@@ -130,8 +104,6 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | Input D12 | 1 año | FY2026/FY 25; evita 0 en I26, nota |
 | Input D1/B4 | Ver precio al final /30-sep 2026 | Común congelado; no GOOGLEFINANCE en modelo |
 
-
-<a id="seccion-5"></a>
 
 ## 5. Historias, probabilidades y esperado
 
@@ -230,8 +202,6 @@ La matriz siguiente mantiene crecimiento constante 1–5 para aislar la sensibil
 | Dilución real | Shares plenamente diluidas crecen>1% anual | Aplicar prueba de acciones; no recompra automática |
 
 
-<a id="seccion-6"></a>
-
 ## 6. Múltiplos independientes
 
 | Método | A histórica | B peers; ajuste−10% | C justificado Base | Base | Conservador | Optimista |
@@ -247,9 +217,7 @@ A: historia de MSFT desde FY 2021 más LTM; distribución depurada 10 años para
 
 Ajuste B−10%: mayor crecimiento MSFT+15%, margen/moat+5%, menor conversión de infraestructura−25%, concentración IA−5%. Son ajustes de juicio, no estimación causal. λ15%: C se deriva de supuestos FY+3 y Gordon, nunca del valor DCF; si g≥Ke/WACC−1 pp no se calcula. C Optimista no es interpretable en los cinco métodos; el caso se fija con dispersiones Base/Conservadora y tope histórico, no con C forzado. Anclas actuales Gordon pueden ser muy inestables.
 
-EV/EBITDA 16,47× privilegia una métrica antes de inversión: relativamente alta por rentabilidad pero no refleja GPU depreciation/capex por sí sola. EV/FCFF 29,13× confronta la reinversión necesaria; A usa EV/FCF como proxy 1,0, porque otros ingresos ganancias hacen espuria la conversión net interest. Peer FCFF=FCF+intereses después de impuestos 21%, no confundirlo con OCF. P/E 25,86× usa utilidad proyectada normalizada y no repite gain OpenAI/Anthropic. P/FCFE 27,81× incorpora el endeudamiento marginal de maestra; sensible a financiación. P/OCF 17,70× tiene menor capex explícito pero la NWC se enlaza a reinversión DCF, así que no es una caja sin coste de crecimiento.
-
-<a id="seccion-7"></a>
+EV/EBITDA16,47× privilegia una métrica antes de inversión: relativamente alta por rentabilidad pero no refleja GPU depreciation/capex por sísola. EV/FCFF29,13× confronta la reinversión necesaria; A usa EV/FCF como proxy 1,0, porque otros ingresos ganancias hacen espuria la conversión net interest. Peer FCFF=FCF+intereses después de impuestos 21%, no confundirlo con OCF. P/E25,86× usa utilidad proyectada normalizada y no repite gain OpenAI/Anthropic. P/FCFE27,81× incorpora el endeudamiento marginal de maestra; sensible a financiación. P/OCF 17,70× tiene menor capex explícito pero la NWC se en laza a reinversión DCF, así que no es una caja sin coste decrecimiento.
 
 ## 7. Resultados en ambos horizontes
 
@@ -317,13 +285,9 @@ Para EV/FCFF y P/FCFE el valor Conservador al presente puede superar Base: la Ba
 
 MOS sobre el esperado se preserva; 311,54 sobre el combinado Base presente es solo lectura secundaria y no reemplaza 325,16. Múltiplos históricos normalizados son una tercera comparación, no alteran pesos/DCF. En Base el VP 3 es menor que FY+3 para los cinco métodos; cada dividendo se descontó en su año, sin duplicación.
 
-<a id="seccion-8"></a>
-
 ## 8. DCF frente a múltiplos
 
 El consolidado Base 342,13 está 40,05% por debajo del DCF 570,73. No se movieron anclas para eliminar la brecha. Peers de aplicaciones tienen una valoración baja y flujos mucho más ligeros; Microsoft conserva distribución/moat, pero gasta más por dólar crecido. En DCF, 76,4% del valor operativo está en el terminal; ROIC 20% y g 5,29% sostienen gran parte del resultado. DCF es principal porque explicita reinversión, aunque no lo considero más preciso que la evidencia permite. La brecha es una razón para confianza moderada, no para escoger el resultado más alto.
-
-<a id="seccion-9"></a>
 
 ## 9. Sensibilidad
 
@@ -357,8 +321,6 @@ Los shocks crecimiento±2 pp y WACC±1 pp se aplican a la trayectoria real; el s
 ERP +50 pb en la etapa inicial, transmitido por beta y peso del patrimonio, con terminal intacto: DCF Base **US$549,66**. Es un estrés de prima de riesgo, no un cálculo regional sin datos de países.
 
 
-<a id="seccion-10"></a>
-
 ## 10. Log de ejecución y ajustes
 
 Copia nueva de maestra vigente; importador SEC genérico; tags custom D&A y contexts finance leases auditados con 10-K. Scripts genéricos refresh_native_model, build_story_sheet(block de productos), multiples_anchors, apply_multiples_v3(decide/origin), historical_multiples, horizon_tables y motor JavaScript. Al no haber credencial service account se registraron operaciones en un adaptador y se aplicaron a la misma hoja con export nativo recalculado. No se reemplazó el DCF por una fórmula propia.
@@ -366,8 +328,6 @@ Copia nueva de maestra vigente; importador SEC genérico; tags custom D&A y cont
 Datos/especificidades:      caja e inversiones de corto plazo sumados una vez; expense interest bruto L15; finance leases corrientes/no corrientes; I+D: años previos correctos; 78RSU; equity method 12.000; tiempo FY2026/FY 25=1 para evitar 0 en I26. Supuestos se escriben explícitamente con notas. No se cambian las fórmulas de DCF/múltiplos/contrato maestro.
 
 Correcciones de consistencia genéricas: el lector de app toma ROIC terminal y g de cada historia desde G/J, sin imponer costo capital por fila. run_exact toma la trayectoria anual completa del bloque Base al ejecutar sin overrides: antes repetía el año 2 en 2–5; los casos explícitos por historia ya eran exactos. Ambas correcciones leen datos, no alteran la matemática del modelo.
-
-<a id="seccion-11"></a>
 
 ## 11. Precio al final y expectativas implícitas
 
@@ -397,13 +357,9 @@ Las dos columnas de crecimiento usan la misma fórmula de múltiplo justificado 
 
 Chequeo DCF inverso al margen Base 50%: crecimiento constante años 1–5 de **13,22%**, frente al promedio aritmético de la trayectoria Base de 16,30% y CAGR compuesto de 16,27%. Es una hipótesis uniforme alternativa, no el crecimiento exacto por segmentos. Se mantiene el resto de supuestos; no se eligen anclas para coincidir con el precio.
 
-<a id="seccion-12"></a>
-
 ## 12. Registro de decisión
 
 Historia: crecimiento de IA real, captura enterprise duradera y capital costoso antes de caja. Probabilidades 50/25/10/15%; esperado 500,25; rango 130,36–821,72. Confianza moderada en negocio y estados; baja/moderada en infraestructura/terminal. Revisar tras Q1 FY2027 y cada trimestre, o antes si se activa un umbral del panel. **Decisión comprar/mantener/vender: pendiente del usuario en la app.** No se asigna ni se altera su posición.
-
-<a id="seccion-13"></a>
 
 ## 13. Fuentes
 
@@ -422,9 +378,7 @@ Historia: crecimiento de IA real, captura enterprise duradera y capital costoso 
 - [Yahoo histórico MSFT](https://finance.yahoo.com/quote/MSFT/history/) y [Stock Analysis](https://stockanalysis.com/stocks/msft/history/), consulta 7-oct-2026: precio del corte y cierre reciente; regresión semanal contra^GSPC.
 - Peers separados: [SEC CRM](https://data.sec.gov/api/xbrl/companyfacts/CIK0001108524.json), [SEC INTU](https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json), [SEC ADBE](https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json); hechos presentados hasta 30-sep y cierres de ese día. Cifras GAAP y deuda contable; no sus valoraciones guardadas.
 
-Control 8-oct 2026: recuperadas inversiones CP 2017/18 y añadida Ratios auditados MSFT para sig no de cobertura. DCF actual y anclas FY 2021–26 no cambian. Históricos importados se conservanconproxiesyheterogeneidaddeclarados. Estado: corregido con salvedades de datos no divulgados y sig no de presentación canónica.
-
-<a id="seccion-14"></a>
+Control 8-oct 2026: recuperadas inversiones CP 2017/18 y añadida Ratios auditados MSFT para signo de cobertura. DCF actual y anclas FY 2021–26 no cambian. Históricos importados se conservanconproxiesyheterogeneidaddeclarados. Estado: corregido con salvedades de datos no divulgados y signo de presentación canónica.
 
 ## 14. Control de calidad
 

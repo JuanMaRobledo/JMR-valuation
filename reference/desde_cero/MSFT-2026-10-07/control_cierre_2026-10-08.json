@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "nativeDCF": true,
+    "nativeExpected": true,
+    "fullHistoryCash": true,
+    "positiveCoverage": true,
+    "noNativeErrors": true,
+    "fullFour": true,
+    "weighted": true,
+    "allExpectedFieldsFresh": true,
+    "allMosFresh": true,
+    "sourceLink": true,
+    "htmlFresh": true,
+    "sections18": true,
+    "requiredHeadings": true,
+    "requiredRatioHeaders": true,
+    "noOldAudits": true,
+    "underGitHubLimit": true,
+    "savedViewMos": true,
+    "savedViewDCF": true,
+    "savedViewZones": true,
+    "render18": true,
+    "tableShape": true,
+    "linkedMultiples": true
+  },
+  "ticker": "MSFT",
+  "sheet_id": "1wIgB2zfjmPk_DdnaFsoJfKHMiIR_p4795ebvbGSOi1E",
+  "control": "2026-10-08",
+  "market_cut": "2026-09-30",
+  "information_cut": "2026-10-07"
+}

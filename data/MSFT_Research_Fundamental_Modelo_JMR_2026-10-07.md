@@ -7,33 +7,9 @@ analysis_date: 2026-10-07
 information_cutoff: 2026-10-07
 valuation_cutoff: 2026-09-30
 sheet_id: 1wIgB2zfjmPk_DdnaFsoJfKHMiIR_p4795ebvbGSOi1E
-verified_at: 2026-10-08
 ---
 
 # Microsoft (MSFT) · Research fundamental · 7-oct-2026
-
-**Tabla de contenidos**
-
-- [1. Resumen ejecutivo](#seccion-1)
-- [2. Modelo de negocio](#seccion-2)
-- [3. Segmentos y geografía](#seccion-3)
-- [4. Industria y crecimiento](#seccion-4)
-- [5. Calidad del negocio](#seccion-5)
-- [6. Ventaja competitiva](#seccion-6)
-- [7. Competencia](#seccion-7)
-- [8. Gestión y asignación de capital](#seccion-8)
-- [9. Catalizadores](#seccion-9)
-- [10. Riesgos](#seccion-10)
-- [11. Bulls say / Bears say](#seccion-11)
-- [12. Valor con criterio Damodaran](#seccion-12)
-- [13. Filosofías de inversión](#seccion-13)
-- [14. Noticias y eventos recientes](#seccion-14)
-- [15. Qué vigilar](#seccion-15)
-- [16. Preguntas abiertas](#seccion-16)
-- [17. Fuentes](#seccion-17)
-- [18. Control de calidad final](#seccion-18)
-
-<a id="seccion-1"></a>
 
 ## 1. Resumen ejecutivo
 
@@ -53,8 +29,6 @@ La escala financiera facilita invertir, pero la nube exige capital que el antigu
 La tesis se debilitaría si crecen los usuarios pero no la contribución económica, o si las inversiones maduras dejan de cubrir su costo de capital. Las variables decisivas son utilización, conversión de caja y renovación empresarial.
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
-
-<a id="seccion-2"></a>
 
 ## 2. Modelo de negocio
 
@@ -78,7 +52,6 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 | Capital | Centros, GPU/redes, finance/operating leases e I+D | La capacidad se paga/compromete antes de consumo |
 | Distribución y switching | Suite instalada, identidad, APIs, datos y partners | Integración protege, pero agentes multiplataforma reducen exclusividad |
 
-
 La propuesta de valor es resolver tareas empresariales dentro de un entorno integrado. Los ingresos combinan usuarios, precio, mezcla, consumo, licencias y publicidad; aumentar usuarios no demuestra por sí solo mejora de economía por unidad. Contratos largos y RPO dan visibilidad, pero su reconocimiento depende de prestación y consumo. No se publica una tasa homogénea de renovación o churn del grupo.
 
 El poder de precios procede de integración y costos de migración; también debe contrastarse con descuentos, optimización de cargas y soluciones alternativas. El costo de ventas incluye infraestructura, energía y servicio; I+D y ventas/administración sostienen el desarrollo y la distribución. GPU, modelos, ubicaciones, partners y regulación condicionan capacidad y costos.
@@ -86,8 +59,6 @@ El poder de precios procede de integración y costos de migración; también deb
 No existe una unidad pública homogénea para todo el grupo. usuarios de pago y consumo son aproximaciones de demanda; Microsoft no publica margen contribución por seat Copilot ni ROI por cohorte GPU. Dividir ingresos Azure por capex grupo daría una unidad falsa. Contratos RPO no aseguran el beneficio: importan fechas, coste del servicio y dependencia de clientes.
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
-
-<a id="seccion-3"></a>
 
 ## 3. Segmentos y geografía
 
@@ -97,12 +68,9 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 | Devices and Consumer | 63.712 | 1,22% frente a 62.941 M FY2025 reexpresados | 29,62% | 19,20% | Crecimiento bajo; mezcla de negocios de consumo | [SEC, 2-sep-2026, diapositiva 15](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) |
 | Total | 331.839 | 17,79% | 46,78% | 100% | Demanda e inversión crecientes | [SEC, 2-sep-2026, diapositiva 15](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) |
 
-
 El 8-K de 2-sep reexpresados FY 2025/26; por eso no se encadena directamente el crecimiento de tres segmentos antiguos con dos nuevos. Products FY2026: Azure 101.938, M365 100.299, licencias/industria/soporte 65.890, consumer 63.712. Cuatro cubetas económicas para historias, dos reportables para estados. US 170.794 M=51,47%; resto 161.045 M=48,53%. No se inventa desglose país de esta cifra; afecta ERP y divisas.
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
-
-<a id="seccion-4"></a>
 
 ## 4. Industria y crecimiento
 
@@ -126,8 +94,6 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 
 [acuerdo Microsoft/OpenAI, 27-abr-2026](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/).
 
-<a id="seccion-5"></a>
-
 ## 5. Calidad del negocio
 
 ### Análisis financiero histórico
@@ -142,7 +108,6 @@ La línea completa del flujo de caja “depreciación, amortización y otros” 
 
 Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5, supuesto conservador de dilución plena. NI usa acciones medias diluidas 7.453 para EPS; ese promedio no sustituye al denominador del DCF. SBC 12.405 continúa siendo costo en EBIT; no se añade como beneficio económico al DCF. Sin recompras automáticas. Ningún balance posterior no publicado se infiere.
 
-
 | FY junio | Ventas | Crecimiento | EBIT | Margen EBIT | NI GAAP | D&A y otros | OCF | Capex efectivo | FCF efectivo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2017 | 89.950 | — | 22.326 | 24,8% | 21.204 | 8.778 | 39.507 | 8.129 | 31.378 |
@@ -155,7 +120,6 @@ Acciones: portada 24-jul-2026≈7.425,5 más 78 premios no consolidados=7.503,5,
 | 2024 | 245.122 | 15,7% | 109.433 | 44,6% | 88.136 | 20.958 | 118.548 | 44.477 | 74.071 |
 | 2025 | 281.724 | 14,9% | 128.528 | 45,6% | 101.832 | 29.433 | 136.162 | 64.551 | 71.611 |
 | 2026 | 331.839 | 17,8% | 155.237 | 46,8% | 133.749 | 38.534 | 182.935 | 115.948 | 66.987 |
-
 
 Comparabilidad FY2018: el crecimiento de 22,7% de la tabla usa FY2017 originalmente publicado (89.950 M). Frente al FY2017 reexpresado bajo ASC606 (96.571 M), el crecimiento comparable es 14,3%, usado en los promedios de ratios. Estas bases no se mezclan.
 
@@ -249,7 +213,6 @@ Estado: **corregido con salvedades**. Datos iniciales conciliados; crecimiento, 
 | MOS | 35% sobre esperado | Política activa | Resumen; 30-sep 2026 | Base primero no cambia MOS | Alta: disciplina |
 | Caja histórica/cobertura | CP 2017 125.318 M; 2018 121.822 M;+50,88×FY2026 | Datos corregidos y definición | Balance B4:C5, B9:C9; Ratios auditados MSFT; 8-oct 2026 | Datos recuperados; sig no canónico declarado | Media: ratios históricos; DCF intacto |
 
-
 | Supuesto activo y escenario | Historia empresarial que presupone | Evidencia favorable | Evidencia contraria | Justificación documentada o faltante | Qué debe comprobarse |
 | --- | --- | --- | --- | --- | --- |
 | Crecimiento por historia | Adopción convertida en demanda pagada | Azure FY2026+40,4%; M365 cloud+18,5% | Escala y agentes limitan ritmo | Trayectorias documentadas; no consenso | Renovación, ARPU, consumo, concentración |
@@ -264,6 +227,18 @@ Estado: **corregido con salvedades**. Datos iniciales conciliados; crecimiento, 
 
 Las fuentes iniciales tienen mejor respaldo que utilización y etapa estable. Calidad empresarial puede explicar rentas superiores al costo, pero no fija su duración. La tabla histórica es contraste documental y no crea valor nuevo fuera de sección 12.
 
+Resultados ya declarados en la hoja, sin recalcular valor fuera de la sección 12. El DCF es principal y los múltiplos son lectura secundaria; no existe caso relativo de Disrupción en esas tres proyecciones auxiliares. Fuente: hoja MSFT vigente y tablas de horizontes, control 8-oct2026. El esperado complementario declarado es US$500,25.
+
+| Método y horizonte | Base | Conservadora | Disrupción | Optimista |
+| --- | --- | --- | --- | --- |
+| DCF intrínseco al presente | US$570,73 | US$314,36 | US$130,36 | US$821,72 |
+| EV/EBITDA relativo al presente | US$519,39 | US$378,37 | No calculado | US$643,07 |
+| EV/FCFF relativo al presente | US$188,78 | US$247,19 | No calculado | US$235,69 |
+| P/E relativo al presente | US$534,22 | US$342,12 | No calculado | US$633,36 |
+| P/FCFE relativo al presente | US$249,24 | US$270,26 | No calculado | US$315,95 |
+| P/OCF relativo al presente | US$348,50 | US$314,17 | No calculado | US$408,50 |
+| Consolidado de múltiplos al presente | US$342,13 | US$303,11 | No calculado | US$418,88 |
+
 | Múltiplo histórico | Período y definición | n | Mínimo | P25 | Mediana 5A | Media 5A | Mediana 10A | Máximo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | EV/EBITDA | FY 2017–2026; cierres junio | 10 | 14,45× | 18,46× | 23,38× | 21,35× | 20,93× | 25,46× |
@@ -276,14 +251,11 @@ Los ratios de cotización histórica se conservan como observaciones importadas 
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
 
-<a id="seccion-6"></a>
-
 ## 6. Ventaja competitiva
 
 Distribución Microsoft 365, identidad, seguridad y datos permite empaquetar agentes donde el cliente ya trabaja. Switching costs de workflows, gobernanza y skills del partner son fuentes de moat. Azure ofrece integración con ecosistema enterprise y capacidad global; contratos largos favorecen recurrencia.
 
 El contraargumento es distinto para cada fuente: agentes pueden usar herramientas MSFT sin mantener el mismo número de licencias; modelos no exclusivos reducen apropiación; costo energético/GPU puede quedarse con beneficio. Durable no significa invulnerable: productividad y cloud reciben duración larga pero ROIC terminal inferior al actual; en Disrupción no hay excedente terminal. Medir renewals, pricing, retención y retornos de infraestructura, no solo cuota.
-
 
 | Fuente de ventaja | Evidencia observable | Evidencia cuantitativa | Duración probable | Amenaza de erosión | Veredicto |
 | --- | --- | --- | --- | --- | --- |
@@ -299,8 +271,6 @@ El contraargumento es distinto para cada fuente: agentes pueden usar herramienta
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
 
 [acuerdo Microsoft/OpenAI, 27-abr-2026](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/).
-
-<a id="seccion-7"></a>
 
 ## 7. Competencia
 
@@ -324,8 +294,6 @@ Se compara por tareas del cliente; posiciones son juicios de solapamiento, sin c
 | Desarrollo interno | Capas de automatización | Alternativa para grandes clientes | Personalización/ahorro propio | Costo equipo y cumplimiento | Menor dependencia de suite | [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm) |
 
 CRM/INTU/ADBE son referencias cuantitativas separadas de software rentable; sus cifras SEC y precios no importan ninguna valoración guardada. Ajustes por economía de MSFT se explican en sección 12.
-
-<a id="seccion-8"></a>
 
 ## 8. Gestión y asignación de capital
 
@@ -352,8 +320,6 @@ Recomprar no implica crear valor sin examinar precio pagado y economía independ
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
 
-<a id="seccion-9"></a>
-
 ## 9. Catalizadores
 
 Importan por la evidencia que aportan; signos condicionales y ventanas sin fechas de resultados inventadas.
@@ -366,8 +332,6 @@ Importan por la evidencia que aportan; signos condicionales y ventanas sin fecha
 | Organización | Neutral inicial | FY 2027 | Transparencia/ejecución | Puente comparable de segmentos | Desde FY 2027;[reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) |
 | Productividad modelos | Positivo condicional | Continuo | Inferencia cuesta menos | Margen cash sin sacrificar precio | Trimestral;[SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm) |
 | Acuerdos/regulación | Mixto | Evento | Redistribuye acceso | Anuncio oficial y efecto contractual | Ventana abierta;[acuerdo Microsoft/OpenAI, 27-abr-2026](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/) |
-
-<a id="seccion-10"></a>
 
 ## 10. Riesgos
 
@@ -383,7 +347,6 @@ Importan por la evidencia que aportan; signos condicionales y ventanas sin fecha
 | Valor privado y financiero | Gains book no son caja operativa recurrente | Normalización NI/bridge |
 | Retorno terminal excesivo | Extrapolar un moat infinito sobre empresa grande | Base/Optimista |
 
-
 ### FODA de síntesis
 
 | FODA | Síntesis |
@@ -392,7 +355,6 @@ Importan por la evidencia que aportan; signos condicionales y ventanas sin fecha
 | Oportunidades | Agentes útiles y mayor consumo cloud; software integrado |
 | Debilidades | Capital intensivo, disclosure ROI limitado, dependencia de infraestructura y partners |
 | Amenazas | Multicloud, agentes abiertos, regulación, monetización inferior al coste |
-
 
 ### Escenarios cualitativos de largo plazo
 
@@ -405,8 +367,6 @@ Importan por la evidencia que aportan; signos condicionales y ventanas sin fecha
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
 
-<a id="seccion-11"></a>
-
 ## 11. Bulls say / Bears say
 
 | Cinco argumentos alcistas | Cinco argumentos bajistas |
@@ -416,7 +376,6 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 | Márgenes base altos y OCF financian proyectos | Capex en efectivo más leases consumen economía antesde ingresos |
 | Ecosistema enterprise genera switching costs | Modelos no exclusivos debilitan diferenciación IA |
 | coste de inferencia y utilización pueden mejorar | Contabilidad puede hacer visible mejora antes de caja real |
-
 
 ### Síntesis final
 
@@ -432,8 +391,6 @@ Negocio de calidad con ventaja empresarial durable bajo mayor intensidad de capi
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
 
-<a id="seccion-12"></a>
-
 ## 12. Valor con criterio Damodaran
 
 **DCF Base al presente: US$570,73; esperado complementario: US$500,25.** El precio queda al final de esta sección; el análisis se escribió desde el negocio.
@@ -441,7 +398,6 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 ### La historia en un párrafo
 
 La historia es posible porque existen demanda Azure, distribución Microsoft 365 y contratos enterprise. Es plausible si el crecimiento pierde velocidad y el capital obtiene utilización; es probable solo de forma condicional: 50% Base, 25% Conservadora, 10% Disrupción y 15% Optimista son juicio del analista. No proceden de una curva estadística ni se ajustaron mirando el precio.
-
 
 | Afirmación | Posible | Plausible | Probable y prueba pendiente |
 | --- | --- | --- | --- |
@@ -461,11 +417,9 @@ Visión externa: grupo>$50.000 M en dólares 2015, ventas equivalentes 234.794,6
 | Disrupción | 361.978 | 1,8% | 64,6% |
 | Optimista | 838.222 | 20,4% | 2,0% |
 
-
 ### Piezas del valor
 
 El crecimiento se construye por productos reexpresados: Azure 101.938, Microsoft 365 cloud 100.299, licencias/industria/soporte 65.890 y dispositivos/consumidor 63.712; total 331.839. Son cuatro cubetas económicas del nuevo perímetro, no cuatro segmentos reportables. Base Azure 40%, 33%, 27%, 22%, 18%; Microsoft 365: 18%, 17%, 15%, 13%, 11%; resto 7%, 7%, 6%, 5%, 4%; consumidor 1,5%, 2%, 2,5%, 2,5%, 2,5%. La desaceleración reconoce escala y competencia; Copilot está dentro Microsoft 365 y no se duplica. proyección de adquisición 0 y FX 0: no se atribuye todo el crecimiento histórico a orgánico puro porque Microsoft no ofrece conciliación completa para las cuatro cubetas. La guía Q1 Azure 44–45% CC soporta el arranque, no un 40% perpetuo.
-
 
 | Historia | Producto/cubeta económica | Año 1 | Año 2 | Año 3 | Año 4 | Año 5 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -502,7 +456,6 @@ Terminal: g Base/Conservadora/Optimista 5,29% por regla Ginzu igual Rf, claramen
 
 Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a ganancias de inversiones privadas. NOL no añadido como ahorro separado porque rentabilidad positiva y riesgo de duplicar tasa efectiva; preferentes/minoritarios/opciones convencionales 0. Se incluyen 78 millones de RSU cubre la dilución existente; nuevas adjudicaciones se deben compensar económicamente en precios/márgenes o someter a la prueba+5% acciones. Inversiones no operativas book 48.348: la diferencia con fair value es una incertidumbre separada; incrementos de valoración OpenAI/Anthropic no se proyectan como utilidad operativa.
 
-
 | Entrada / celda | Valor | Clasificación / fuente |
 | --- | --- | --- |
 | Input B12/B13 | 331.839 /155.237 | Enlaces a Income Statement L3/L12, SEC |
@@ -524,14 +477,12 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | Input D12 | 1 año | FY2026/FY 25; evita 0 en I26, nota |
 | Input D1/B4 | Ver precio al final /30-sep 2026 | Común congelado; no GOOGLEFINANCE en modelo |
 
-
 | Historia | Prob. | CAGR1–5 | Margen ajustado objetivo | S/C1–5; 6–10 | g terminal | ROIC terminal | DCF hoy/acción |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Base · IA rentable con inversión sostenida | 50% | 16,3% | 50,0% | 0,60; 1,05 | 5,29% | 20,00% | US$570,73 |
 | Conservadora · Adopción más lenta y capacidad cara | 25% | 9,1% | 43,0% | 0,60; 1,05 | 5,29% | 14,49% | US$314,36 |
 | Disrupción · Deterioro de los fundamentales | 10% | 1,8% | 30,0% | 0,55; 1,05 | 0,00% | 8,99% | US$130,36 |
 | Optimista · Monetización de agentes y utilización superior | 15% | 20,4% | 54,0% | 0,70; 1,05 | 5,29% | 24,00% | US$821,72 |
-
 
 ### Historias cuantificadas y valor esperado
 
@@ -595,8 +546,6 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | 9 | 7,74% | 1.289.843 | 54,0% | 529.351 | 64.984 | 464.368 | 9,16% |
 | 10 | 5,29% | 1.358.076 | 54,0% | 550.021 | 68.421 | 481.599 | 8,99% |
 
-
-
 | DCF Base: puente en USD millones | Importe |
 | --- | --- |
 | VPFCFF años 1–10 | 1.012.544,92 |
@@ -610,7 +559,6 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | Acciones millones | 7.503,50 |
 | DCF por acción | US$570,73 |
 
-
 ### Pre-mortem
 
 | Fallo de tesis | Mecanismo | Observación que obliga a revisar |
@@ -619,7 +567,6 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | Agentes comoditizan seats | Clientes compran ejecución y no licencias de usuario | M365 crecimiento cloud<10% y ARPU/nuevos seats no compensa |
 | OpenAI diversifica nube | Ventajas de contrato no equivalen a exclusividad comercial | RPO excluyendo OpenAI frena; duración RPO crece sin facturación |
 | Ganancia contable oculta economía | Depreciación 25 años/lease operativo eleva margen o reduce capex reportado | Cash ROI no mejora pese expansión margen GAAP |
-
 
 ### Indicadores y actualización de probabilidades
 
@@ -634,7 +581,6 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | ROIC incremental ajustado | <WACC durante 3 años maduros | Acercar retorno terminal al costo |
 | Dilución real | Shares plenamente diluidas crecen>1% anual | Aplicar prueba de acciones; no recompra automática |
 
-
 ### Comparación relativa independiente
 
 | Método | A histórica | B peers; ajuste−10% | C justificado Base | Base | Conservador | Optimista |
@@ -645,7 +591,6 @@ Impuesto 20% primeros 5 años, luego 25% marginal; anclado a guía FY 2027, no a
 | P/FCFE | 42,55× | 8,82× → 7,93× (n=3) | 42,39× | 27,81× | 22,78× | 32,56× |
 | P/OCF | 26,54× | 8,64× → 7,78× (n=3) | 20,77× | 17,70× | 14,17× | 19,77× |
 
-
 Peers CRM/INTU/ADBE, n=3, datos SEC y cierres 30-sep; A historia MSFTFY2021–26 más LTM; B ajustado−10% por crecimiento+15/margen+5/conversión de infraestructura−25/riesgo−5; λ15%. C usa g medio entre años 4–10 y terminal, y ROE/FCFF/EBITDA de FY+3. En Optimista g no deja spread≥1 pp, por lo que no se calcula C: dispersiones Base/Conservadora, no un DCF convertido en ratio. La rentabilidad de aplicaciones no sustituye a Azure; ORCL excluido de FCF por fase de infraestructura. Sesgo estilo y n pequeño declarado.
 
 | Método | Base: × / VP por acción | Conservador: × / VP por acción | Optimista: × / VP por acción |
@@ -655,7 +600,6 @@ Peers CRM/INTU/ADBE, n=3, datos SEC y cierres 30-sep; A historia MSFTFY2021–26
 | P/E | 25,86× / US$534,22 | 19,66× / US$342,12 | 28,07× / US$633,36 |
 | P/FCFE | 27,81× / US$249,24 | 22,78× / US$270,26 | 32,56× / US$315,95 |
 | P/OCF | 17,70× / US$348,50 | 14,17× / US$314,17 | 19,77× / US$408,50 |
-
 
 ### Valor por acción en dos horizontes
 
@@ -693,7 +637,6 @@ Moneda: US$ por acción. Fecha de valoración: 30-sep-2026. Escenarios en orden 
 
 Fórmulas. Peso entre múltiplos = peso del método ÷ suma de los pesos de los múltiplos aplicables; ponderado de múltiplos solos = suma(peso entre múltiplos × valor del método); ponderado DCF + múltiplos = peso DCF × DCF + suma(peso original × valor del método), con pesos que suman 100%. Estos pesos son de métodos y no son las probabilidades de las cuatro historias. Al presente: VP_n = Precio FY+n ÷ (1 + Ke)^n + suma(Dividendo FY+t ÷ (1 + Ke)^t), t = 1..n. En FY+3 el DCF es el DCF de las historias de hoy × (1 + Ke)^3: riqueza capitalizada antes de distribuciones, no un nuevo DCF ni un precio exdividendo; no se mezcla DCF presente con múltiplos futuros. Mostrar ambas lecturas no cambia las anclas de los múltiplos ni la política de MOS (sobre el DCF esperado).
 
-
 ### Contraste con la propia historia de cotización
 
 Anclas históricas aplicadas a métricas Base FY+3 y descontadas con Ke; precio relativo independiente, no nuevo DCF.
@@ -705,7 +648,6 @@ Anclas históricas aplicadas a métricas Base FY+3 y descontadas con Ke; precio 
 | P/E | 20,78×; US$463,98 | 26,50×; US$588,79 | 35,18×; US$777,92 | 31,38×; US$695,16 | 34,41×; US$761,24 |
 | P/FCFE | 16,93×; US$197,16 | 27,43×; US$312,59 | 42,55×; US$478,94 | 41,97×; US$472,52 | 35,18×; US$397,88 |
 | P/OCF | 13,45×; US$312,89 | 17,84×; US$411,49 | 27,16×; US$620,65 | 24,15×; US$553,13 | 23,46×; US$537,59 |
-
 
 | Consolidado histórico al presente | US$/acción |
 | --- | --- |
@@ -734,7 +676,6 @@ Proxies FCF efectivo limitan comparabilidad coninfra actual. No se usan para dir
 | ventas/capital × 1,20 | US$584,84 |
 | ROIC terminal = WACC | US$378,67 |
 
-
 | Prueba adicional Base | DCF hoy |
 | --- | --- |
 | Margen objetivo 47% (−3 pp) | US$534,04 |
@@ -742,7 +683,6 @@ Proxies FCF efectivo limitan comparabilidad coninfra actual. No se usan para dir
 | Beta regresión semanal 1,152 | US$586,37 |
 | Beta global bottom-up 1,360 | US$560,28 |
 | g terminal 3%, resto constante | US$422,50 |
-
 
 Terminal pesa 76,4% del valor operativo. Quitar retornos excedentes lleva la Base a US$378,67; g terminal 3% da US$422,50. Por eso el Moat y la economía de capacidad importan más que un punto de ingresos. En EV/FCFF/P/FCFE Conservadora puede superar Base en VP por reinversión menor; no se altera el orden económico para que los precios sean monótonos. Múltiplos consolidados Base 342,13,40,05% debajo de DCF Base; no se ajustaron para igualarlos.
 
@@ -756,7 +696,6 @@ Corte común 30-sep-2026 **US$512,90**; cierre 7-oct **US$529,76**solo referenci
 | 1,275 | 52,0% | 12,40% | 10,6% |
 | 1,360 | 47,0% | 14,92% | 6,9% |
 | 1,360 | 52,0% | 12,76% | 9,9% |
-
 
 El inverso usa g constante 1–5 y varios márgenes/betas, no es la trayectoria segmentada del Base. “¿Qué sabe el mercado que yo no?”: potencial de precios Copilot, utilización ya asegurada y ROIC más alto; no hay prueba pública por cohorte. El poder de la distribución por sí solo no determina el retorno de cada GPU.
 
@@ -782,8 +721,6 @@ Regla de revisión: tras resultados o hechos materiales, mover entre 5 y 10 punt
 
 50% Base, 25% Conservadora, 10% Disrupción, 15% Optimista; esperado 500,25, rango 130,36–821,72. Confianza moderada por contabilidad conciliada y demostración de demanda, limitada por terminal/infra. Revisar Q1 FY2027 y trimestralmente; mover probabilidades si se activan umbral de utilización, retorno o M365. Comprar/mantener/venderlo registra el usuario; no se deduce automáticamente del DCF.
 
-
-
 | Campo | Registro del analista | Estimación del lector |
 | --- | --- | --- |
 | Fecha | 7-oct 2026; control 8-oct; mercado 30-sep | Pendiente |
@@ -795,8 +732,6 @@ Regla de revisión: tras resultados o hechos materiales, mover entre 5 y 10 punt
 | Cambio de tesis | Renovación, costo por tarea, uso, ROI | Pendiente |
 | Revisión | Q1 FY2027 y trimestral; fecha no confirmada | Pendiente |
 | Decisión | Usuario registra en app; no recomendación | Pendiente |
-
-<a id="seccion-13"></a>
 
 ## 13. Filosofías de inversión
 
@@ -874,8 +809,6 @@ Evaluaciones independientes del analista usando esos marcos; no opiniones actual
 
 Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), [reclasificación SEC, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm) y [resultados Microsoft FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast). Consulta 7-oct-2026; comprobación final 8-oct-2026, sin incorporar hechos posteriores al 7-oct-2026.
 
-<a id="seccion-14"></a>
-
 ## 14. Noticias y eventos recientes
 
 Ventana 9-jul–7-oct 2026. Se revisó registro SEC y los dos 8-K de MSFT en ventana: 29-jul(items 2.02/9.01) y 2-sep(items 7.01/9.01), con anexos de resultados/segmentos. También las comunicaciones oficiales de dividendos y del calendario de resultados. No apareció otro 8-K entre 10-K de 29-jul y corte en registro consultado; no equivale a revisar cada noticia menor.
@@ -888,8 +821,6 @@ Ventana 9-jul–7-oct 2026. Se revisó registro SEC y los dos 8-K de MSFT en ven
 | 7-oct 2026 | Anuncio de resultados Q1 FY2027 para 28-oct-2026 tras el cierre | Próxima comprobación de demanda, margen y capital | Neutral: calendario | No altera supuestos; fija seguimiento | [Microsoft, 7-oct-2026](https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/) |
 
 A 7-oct no se identificó 10-Q FY2027 publicado; LTM=FY 2026. Acuerdo OpenAI 27-abr queda fuera de 90 d y se usa como antecedente, no evento reciente. Consulta 7-oct; comprobación 8-oct sin hechos posteriores.
-
-<a id="seccion-15"></a>
 
 ## 15. Qué vigilar
 
@@ -910,8 +841,6 @@ Umbrales de revisión del analista, no guidance; mismo perímetro de leases, mon
 
 Microsoft anunció el 7-oct-2026 que publicará Q1 FY2027 el **28-oct-2026 después del cierre**. Fuente: [anuncio oficial, 7-oct-2026](https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/). Revisar trimestralmente; el precio aislado no cambia historia.
 
-<a id="seccion-16"></a>
-
 ## 16. Preguntas abiertas
 
 Se resolvieron con fuentes públicas perímetro de segmentos(8-K de 2-sep), caja y finance leases(10-K/SEC), dividendo(15-sep) y límite OpenAI(27-abr). Las preguntas siguientes requieren desgloses ausentes de esas fuentes y no se sustituyen por cifras privadas.
@@ -929,14 +858,11 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 
 [acuerdo Microsoft/OpenAI, 27-abr-2026](https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/).
 
-<a id="seccion-17"></a>
-
 ## 17. Fuentes
 
 ### Fuentes primarias
 
 - [SEC DEF14A,21-oct-2025](https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm): gobierno e incentivos FY2025; consulta 8-oct-2026, disponible antes del corte.
-
 - [SEC 10-K FY 2026, presentado 29-jul-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm): estados, deuda, I+D, leases, premios e inversiones.
 - [SEC 8-K y reclasificación de segmentos, 2-sep-2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm): nueva taxonomía y comparativos FY 2025/26.
 - [Resultados Microsoft Q4/FY 2026,29-jul-2026](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast): nube, adopción y métricas comerciales.
@@ -956,14 +882,11 @@ Fuentes y perímetro: [SEC 10-K FY 2026,29-jul-2026](https://www.sec.gov/Archive
 - [The Base Rate Book, Mauboussin/Callahan, 26-sep-2016, Exhibit 4](https://josephnoko.com/wp-content/uploads/2024/04/The-Base-Rate-Book-Michael-Mauboussin.pdf): distribución 1950–2015; tabla común del repositorio, no probabilidad de MSFT.
 - [Yahoo histórico MSFT](https://finance.yahoo.com/quote/MSFT/history/) y [Stock Analysis](https://stockanalysis.com/stocks/msft/history/), consulta 7-oct-2026: precio del corte y cierre reciente; regresión semanal contra^GSPC.
 
-
 Consultadas 7-oct 2026; comprobación 8-oct 2026 sin hechos posteriores al corte. Series históricas con año y fecha SEC; precios observados/regresión no reemplazan contabilidad. FY 2017 original limita comparabilidad con cierres posteriores.
-
-<a id="seccion-18"></a>
 
 ## 18. Control de calidad final
 
-Estado: **corregido con salvedades**. Motor reproduce hoja; fuentes iniciales conciliadas, no prueba retornos futuros. Sig no de cobertura canónica declarado y pestaña suplementaria Ratios auditados MSFT. Gobierno contrastado con proxy FY2025; detalle FY2026, países y ROI por cohorte con límites.
+Estado: **corregido con salvedades**. Motor reproduce hoja; fuentes iniciales conciliadas, no prueba retornos futuros. Signo de cobertura canónica declarado y pestaña suplementaria Ratios auditados MSFT. Gobierno contrastado con proxy FY2025; detalle FY2026, países y ROI por cohorte con límites.
 
 | Sección | ¿Presente y completa? | Comprobación |
 | --- | --- | --- |
@@ -971,7 +894,7 @@ Estado: **corregido con salvedades**. Motor reproduce hoja; fuentes iniciales co
 | 2. Negocio | Sí | Siete dimensiones y límites unitarios |
 | 3. Segmentos/geografía | Sí | Dos reportables/cuatro cubetas; US/resto |
 | 4. Industria | Sí | Porter literal, cinco filas |
-| 5. Finanzas | Sí | Tres estados 10FY/LTM; ratios 3/5/10A; audit; sig no declarado |
+| 5. Finanzas | Sí | Tres estados 10FY/LTM; ratios 3/5/10A; audit; signo declarado |
 | 6. Ventaja | Sí | Seis fuentes y durable condicional |
 | 7. Competencia | Sí | Cuatro rivales y sustitutos separados |
 | 8. Gestión/capital | Cobertura completa con limitación | Seis usos; limitación: proxy FY2025 revisada en gobierno/incentivos; términos FY2026 no identificados al corte |
@@ -987,17 +910,10 @@ Estado: **corregido con salvedades**. Motor reproduce hoja; fuentes iniciales co
 | 18. Control | Sí | 18 comprobaciones y ocho confirmaciones |
 
 1. Fuera de sección 12 no calculé valoración, objetivo ni múltiplo justo; históricos son contraste documental. Precio observado aparece solo al final de sección 12; no emití recomendación.
-
 2. Cifras materiales proceden de hoja, fuentes regulatorias o referencias citadas y fechadas; límites de comparabilidad declarados.
-
 3. Datos, previsiones y supuestos se distinguen por atribución/contexto; probabilidades y umbrales son juicio.
-
 4. Cinco marcos independientes, no opiniones atribuidas ni citas inventadas.
-
 5. Bulls/Bears tienen cinco argumentos fuertes y comparables por lado.
-
 6. Eventos materiales fechados y fuentes oficiales; 8-K revisados sin rumores.
-
 7. Incertidumbres y datos faltantes declarados; encabezados literales sustantivos `### Las 5 fuerzas de Porter` y `### Síntesis final`.
-
 8. El documento no está envuelto en bloques de código y no contiene texto antes de los metadatos ni después de esta confirmación.
