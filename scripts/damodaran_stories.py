@@ -86,6 +86,8 @@ def run_exact(grid, cases):
           "const celda=(h,a)=>{const g=G.grid[h];if(!g)return null;const m=a.match(/^([A-Z]+)(\\d+)$/);const r=g[+m[2]-1];"
           "if(!r)return null;const v=r[col(m[1])];return (v===undefined||v==='')?null:v;};"
           "const base=c.insumosDesdeHoja(celda);"
+          "const path=Array.from({length:10},(_,n)=>celda('Valuation output',String.fromCharCode(67+n)+'4'));"
+          "if(path.every(v=>typeof v==='number'&&Number.isFinite(v)))base.crecimientoAnios=path;"
           "const out=G.cases.map(k=>{const i=JSON.parse(JSON.stringify(base));"
           "if(k.anios)i.crecimientoAnios=k.anios;else if(k.g!=null)i.crecimientoAnios=[k.g,k.g,k.g,k.g,k.g];"
           "if(k.wacc!=null)i.wacc=k.wacc;if(k.s2c!=null)i.salesToCapital=k.s2c;if(k.roic!=null)i.roicTerminal=k.roic;"

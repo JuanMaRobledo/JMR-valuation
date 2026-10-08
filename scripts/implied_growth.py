@@ -142,7 +142,11 @@ def run(tk: str, client, escribir: bool = True) -> dict:
     # Antes usaba el crecimiento del año 2 (D4) como si fuera el de los años 2-5; con historias de crecimiento desigual
     # (refranquiciamiento de MCD: −0,9%, −4,7%, +1,6%, +4,6%, +4,6%) el factor de calibración salía muy lejos de 1 y el
     # DCF inverso encontraba otra raíz (−3,4% en lugar de ~2%).
-    inp_cal = dict(inp, crecimientoAnios=g15) if len(g15) == 5 else inp
+    # Use the full native path when available, including the years 6-10 slowdown.
+    # The inverse solver still replaces years 1-5 with its constant-growth hypothesis.
+    g10 = grid["Valuation output"][3][2:12]
+    calibration_path = g10 if len(g10) == 10 and all(isinstance(x, (int, float)) for x in g10) else g15
+    inp_cal = dict(inp, crecimientoAnios=calibration_path) if len(calibration_path) >= 5 else inp
     eng0 = None if inp.get("dcfFinanciero") else node(
         "runDCF(inp, inp.growthBase, inp.marginBase, inp.growthY1Base, inp.marginY1Base)", inp=inp_cal)
     k = (eng0 / dcf_hoy) if (isinstance(eng0, (int, float)) and eng0 > 0 and dcf_hoy) else 1.0

@@ -1,0 +1,133 @@
+{
+ "MSFT": {
+  "sheet_id": "1wIgB2zfjmPk_DdnaFsoJfKHMiIR_p4795ebvbGSOi1E",
+  "pestanas_faltantes": [],
+  "desviaciones": {
+   "Input sheet": 15,
+   "Financials Multiples": 3,
+   "Resumen de Valoración": 1
+  },
+  "detalle": {
+   "Input sheet": [
+    {
+     "celda": "D1",
+     "tipo": "valor",
+     "maestra": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF(A1=\"\"\"\",\"\"\"\",GOOGLEFINANCE(REGEXEXTRACT(A1,\"\"\\(.*?:(.*?)\\)\"\"),\"\"price\"\"))\"),\"  \")",
+     "empresa": 512.9
+    },
+    {
+     "celda": "D12",
+     "tipo": "valor",
+     "maestra": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF('Income Statement'!L2=\"\"LTM\"\",\"\"\"\",IFERROR((VALUE(RIGHT('Income Statement'!L2,2))-VALUE(RIGHT('Income Statement'!K2,2)))+(MATCH(IF(LEFT('Income Statement'!L2,3)=\"\"LTM\"\",MID('Income Statement'!L2,5,3),LEFT('Income Statement'!L2,3)),SPLIT(\"\"Jan Feb Mar A\"&\"pr May Jun Jul Aug Sep Oct Nov Dec\"\",\"\" \"\"),0)-MATCH(LEFT('Income Statement'!K2,3),SPLIT(\"\"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\"\",\"\" \"\"),0))/12,NA()))\"),\"\")",
+     "empresa": 1.0
+    },
+    {
+     "celda": "B14",
+     "tipo": "formula",
+     "maestra": "='Income Statement'!L16",
+     "empresa": "='Income Statement'!L15"
+    },
+    {
+     "celda": "B20",
+     "tipo": "formula",
+     "maestra": "='Balance Sheet'!L14",
+     "empresa": "='Balance Sheet'!L14+12000"
+    },
+    {
+     "celda": "B22",
+     "tipo": "formula",
+     "maestra": "='Income Statement'!L27",
+     "empresa": "='Income Statement'!L27+78"
+    },
+    {
+     "celda": "B23",
+     "tipo": "formula",
+     "maestra": "='Input sheet'!D1",
+     "empresa": "=D1"
+    },
+    {
+     "celda": "B24",
+     "tipo": "valor",
+     "maestra": "='Income Statement'!L29",
+     "empresa": 0.2
+    },
+    {
+     "celda": "B27",
+     "tipo": "formula",
+     "maestra": "='Income Statement'!L4",
+     "empresa": "='Escenarios e historias'!C29"
+    },
+    {
+     "celda": "B28",
+     "tipo": "valor",
+     "maestra": "='Valuation output'!B6-0.02",
+     "empresa": 0.49
+    },
+    {
+     "celda": "B29",
+     "tipo": "formula",
+     "maestra": "=B27",
+     "empresa": "=AVERAGE('Escenarios e historias'!D29:G29)"
+    },
+    {
+     "celda": "B30",
+     "tipo": "valor",
+     "maestra": "=MAX(J27, B28,AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+     "empresa": 0.5
+    },
+    {
+     "celda": "B32",
+     "tipo": "valor",
+     "maestra": "=K28",
+     "empresa": 0.6
+    },
+    {
+     "celda": "B33",
+     "tipo": "valor",
+     "maestra": "=B32",
+     "empresa": 1.05
+    },
+    {
+     "celda": "B47",
+     "tipo": "valor",
+     "maestra": "=B36",
+     "empresa": 0.0899
+    },
+    {
+     "celda": "B63",
+     "tipo": "valor",
+     "maestra": "=474.8+256.6",
+     "empresa": 0.0
+    }
+   ],
+   "Financials Multiples": [
+    {
+     "celda": "E11",
+     "tipo": "valor",
+     "maestra": "=AVERAGE(B11:D11)",
+     "empresa": -0.005
+    },
+    {
+     "celda": "E50",
+     "tipo": "valor",
+     "maestra": "=AVERAGE(B50:D50)",
+     "empresa": -0.005
+    },
+    {
+     "celda": "E90",
+     "tipo": "valor",
+     "maestra": "=AVERAGE(B90:D90)",
+     "empresa": -0.005
+    }
+   ],
+   "Resumen de Valoración": [
+    {
+     "celda": "C25",
+     "tipo": "valor",
+     "maestra": "='Input sheet'!D1",
+     "empresa": 512.9
+    }
+   ]
+  }
+ }
+}

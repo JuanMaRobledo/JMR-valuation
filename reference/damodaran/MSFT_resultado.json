@@ -1,50 +1,302 @@
 {
  "ticker": "MSFT",
- "fecha": "2026-09-30",
+ "fecha": "2026-10-07",
+ "spec": {
+  "ticker": "MSFT",
+  "fecha": "2026-10-07",
+  "fecha_corte": "2026-09-30",
+  "empresa": "Microsoft Corporation",
+  "industria_damodaran": "Software (System & Application)",
+  "segmentos": {
+   "Azure": 101938,
+   "Microsoft 365 cloud": 100299,
+   "Licencias, industria y soporte": 65890,
+   "Dispositivos y consumidor": 63712
+  },
+  "historias": [
+   {
+    "id": "A",
+    "tesis": "base",
+    "nombre": "A · Base · IA rentable con inversión sostenida",
+    "prob": 0.5,
+    "margen": 0.5,
+    "s2c": 0.6,
+    "crec": {
+     "Azure": [
+      0.4,
+      0.33,
+      0.27,
+      0.22,
+      0.18
+     ],
+     "Microsoft 365 cloud": [
+      0.18,
+      0.17,
+      0.15,
+      0.13,
+      0.11
+     ],
+     "Licencias, industria y soporte": [
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.04
+     ],
+     "Dispositivos y consumidor": [
+      0.015,
+      0.02,
+      0.025,
+      0.025,
+      0.025
+     ]
+    },
+    "roic_terminal": 0.2
+   },
+   {
+    "id": "B",
+    "tesis": "conservadora",
+    "nombre": "B · Conservadora · Adopción más lenta y capacidad cara",
+    "prob": 0.25,
+    "margen": 0.43,
+    "s2c": 0.6,
+    "crec": {
+     "Azure": [
+      0.25,
+      0.2,
+      0.16,
+      0.12,
+      0.09
+     ],
+     "Microsoft 365 cloud": [
+      0.13,
+      0.11,
+      0.09,
+      0.07,
+      0.06
+     ],
+     "Licencias, industria y soporte": [
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.02
+     ],
+     "Dispositivos y consumidor": [
+      0,
+      0.005,
+      0.01,
+      0.01,
+      0.01
+     ]
+    },
+    "roic_terminal": 0.14495
+   },
+   {
+    "id": "C",
+    "tesis": "disrupción",
+    "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
+    "prob": 0.1,
+    "margen": 0.3,
+    "s2c": 0.55,
+    "crec": {
+     "Azure": [
+      0.12,
+      0.04,
+      0,
+      0,
+      0
+     ],
+     "Microsoft 365 cloud": [
+      0.1,
+      0.03,
+      0,
+      0,
+      0
+     ],
+     "Licencias, industria y soporte": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "Dispositivos y consumidor": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion",
+    "terminal_propio": true
+   },
+   {
+    "id": "D",
+    "tesis": "optimista",
+    "nombre": "D · Optimista · Monetización de agentes y utilización superior",
+    "prob": 0.15,
+    "margen": 0.54,
+    "s2c": 0.7,
+    "crec": {
+     "Azure": [
+      0.45,
+      0.38,
+      0.32,
+      0.28,
+      0.25
+     ],
+     "Microsoft 365 cloud": [
+      0.22,
+      0.2,
+      0.18,
+      0.17,
+      0.15
+     ],
+     "Licencias, industria y soporte": [
+      0.1,
+      0.09,
+      0.08,
+      0.07,
+      0.06
+     ],
+     "Dispositivos y consumidor": [
+      0.04,
+      0.04,
+      0.04,
+      0.04,
+      0.04
+     ]
+    },
+    "roic_terminal": 0.24
+   }
+  ],
+  "historia": "Microsoft convierte la distribución de Microsoft 365 y Azure en demanda de agentes y cómputo, pero debe invertir antes de cobrar; el resultado depende del uso y precio del capital instalado, no solo de los ingresos de IA.",
+  "filtro": {
+   "posible": "Azure mantiene40% mientras la oferta es restricción; nube y distribución ya existen.",
+   "plausible": "El crecimiento de Azure se desacelera hacia18%, Microsoft365 hacia11%; licencias/consumo aportan poco. MargenGAAP no mantiene expansiónautomática.",
+   "probable": "Base50%, conservadora25%, disrupción10%, optimista15% son juicio condicional, no frecuencias observadas."
+  },
+  "prob_texto": "A (50%) reconoce crecimiento probado pero mucha inversión. B (25%) captura saturación y menor ROI. C (10%) representa commoditización y pérdida de diferenciación, sin recuperación. D (15%) exige utilización y precios superiores. No son probabilidades estadísticas.",
+  "tasas_base_nota": "The Base Rate Book2016: tamaño en dólares2015 deflactado conIPC común. La excepcionalidad deAzure no autoriza aplicar crecimiento dehiperescalador a todoMSFT.",
+  "crecimiento": {
+   "texto": "FY2026 ventas+17.8%; Azure restated+40.4% yMicrosoft365cloud+18.5%. PrimerañoBase porsegmento; orgánicoenmonedacorriente, acquisitionsforecast0 y moneda0. No doblecontar Copilot dentroM365."
+  },
+  "margenes": {
+   "texto": "MargenactualGAAP46.78%; guíaFY27baja<1pp. Inicial49% yobjetivo50% sonajustadosporI+D/leases. Base noproyectabeneficiosderevalorizarOpenAIoAnthropic. B43%,C30%,D54% reflejan economías distintas; no ajustesuniformes."
+  },
+  "reinversion": {
+   "texto": "Ventas/capital.60 años1-5 implica infraestructura/financiaciónantesdecrecimiento; 1.05años6-10 suponeutilización. EficienciadeD.70 aúninferiorsector1.538. I+D3añosporrenovaciónrápidaIA. Leasesincluidos enestructura; sinrecompraautomática.",
+   "s2c": 0.6
+  },
+  "riesgo": {
+   "texto": "US51.47%ventas; betaUSsector1.248199corregidaporcajareapalancada. Global1.33095sensibilidad. ERPmadura3.70% yRf5.29% mismocorte30sep. SinpaísesderevenuefueraUS, CRP0limitaciónexplícita; prueba+0.5ppERP. Kd5.70%AAA.",
+   "beta_propuesta": 1.359535362386038
+  },
+  "contra": "CapexCY2026previsto175bntrascambiodeclasificación:laeficiencianopuedesubirsolo portraspasarfinance aoperatinglease. OpenAIpuedeusarcualquiernube; M365puedeperdercaptura frenteagentesindependientes.",
+  "precio_lectura": "Elpreciosepresentasolodespuésdehistorias:DCF inversomuestraexpectativasimplícitas; nocambiar los supuestosparaigualarlo.",
+  "margenes_inverso": [
+   0.47,
+   0.52
+  ],
+  "premortem": [
+   {
+    "riesgo": "Utilización de capacidad menor que diseñada",
+    "mecanismo": "El costo fijo de centros y GPU crece más rápido que consumo facturable",
+    "senal": "Capex/ventas sube dos años y conversiónOCF-capex cae"
+   },
+   {
+    "riesgo": "IA reduce el precio por usuario",
+    "mecanismo": "Agentes externos sustituyen seats y licencias",
+    "senal": "M365 growth<10% mientrasAzure price/mixdebilita"
+   },
+   {
+    "riesgo": "OpenAI diversifica suministro",
+    "mecanismo": "Menos exclusividad y más capital comprometido que volumen",
+    "senal": "RPOexOpenAI sedesacelera y plazoRPOsube"
+   },
+   {
+    "riesgo": "Contabilidad mejora margen sin caja",
+    "mecanismo": "Vida útil25años yreclasificaciónleases disminuyenD&A/capexcontable",
+    "senal": "MargenGAAPsubepero cashreturnoncapitalcae"
+   }
+  ],
+  "indicadores": [
+   "Azure CCgrowth y demanda fueraOpenAI",
+   "Copilot paidseats yARPU/netretention",
+   "RPOexOpenAI ycurrentRPO",
+   "Capexcash + newfinanceleases +opexleases",
+   "Margencloud yEBITajustado",
+   "OCF-capex despuésSBC/principalleases",
+   "Microsoft365crecimientocloudcomercial",
+   "Retornoincrementalcapital3años"
+  ],
+  "fuentes": [
+   {
+    "nombre": "SEC 10-K FY2026,29-jul2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+   },
+   {
+    "nombre": "SEC8-Krestatement,2-sep2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm"
+   },
+   {
+    "nombre": "MicrosoftQ4FY26earnings",
+    "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
+   },
+   {
+    "nombre": "DamodaranERP Oct26",
+    "url": "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+   }
+  ]
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
-  "Productivity and Business Processes": 140116.46745027124,
-  "Intelligent Cloud": 138116.23236889692,
-  "More Personal Computing": 53606.30018083183
+  "Azure": 101938.0,
+  "Microsoft 365 cloud": 100299.0,
+  "Licencias, industria y soporte": 65890.0,
+  "Dispositivos y consumidor": 63712.0
  },
  "supuestos": {
-  "growthY1Cons": 0.11391199517781803,
-  "growthY1Base": 0.1631675708257987,
-  "growthY1Opt": 0.20820072332730555,
-  "growthCons": 0.08626651803590946,
-  "growthBase": 0.14050583123239702,
-  "growthOpt": 0.19683806416367955,
-  "marginY1Cons": 0.475057,
-  "marginY1Base": 0.475057,
-  "marginY1Opt": 0.475057,
-  "marginCons": 0.41205670192792015,
-  "marginBase": 0.46205670192792014,
-  "marginOpt": 0.4920567019279201,
-  "salesToCapital2": 0.9411,
-  "wacc": 0.10943646107790402,
-  "costoPatrimonio": 0.1110734066551164,
-  "taxEffective": 0.19396265985271252,
-  "convergenceYear": 7,
-  "terminalWacc": 0.08990000000000001,
-  "roicTerminal": 0.2056,
-  "salesToCapital": 0.6246
+  "growthY1Cons": 0.1220473483,
+  "growthY1Base": 0.1940609754,
+  "growthY1Opt": 0.2322673345,
+  "growthCons": 0.1082514029,
+  "growthBase": 0.1853538043,
+  "growthOpt": 0.2196409126,
+  "marginY1Cons": 0.49,
+  "marginY1Base": 0.49,
+  "marginY1Opt": 0.49,
+  "marginCons": 0.43,
+  "marginBase": 0.5,
+  "marginOpt": 0.54,
+  "salesToCapital2": 1.05,
+  "wacc": 0.09847938596,
+  "costoPatrimonio": 0.1000752691,
+  "taxEffective": 0.2,
+  "convergenceYear": 5,
+  "terminalWacc": 0.0899,
+  "roicTerminal": 0.2,
+  "salesToCapital": 0.6
  },
  "financiero": false,
- "dcf_sin_exceso": 300.4906882587061,
+ "dcf_sin_exceso": 378.67189362574226,
  "precio": 512.9,
- "dcf_base": 450.5248458465595,
- "g_ref": 0.12987662454772742,
- "m_base": 0.462057,
- "s2c": 0.6246,
- "wacc": 0.10943646107790402,
- "beta_hoja": 1.2719504558044528,
- "beta_bu": 1.2737853002548643,
- "beta_prop": 1.2737853002548643,
+ "dcf_base": 570.7312305,
+ "g_ref": 0.16298445708,
+ "m_base": 0.5,
+ "s2c": 0.6,
+ "wacc": 0.09847938596,
+ "beta_hoja": 1.275007272,
+ "beta_bu": 1.276846525995551,
+ "beta_prop": 1.359535362386038,
  "industria": "Software (System & Application)",
  "bu_sector": 1.25,
  "rf": 0.0529,
- "erp": 0.04573559165740011,
+ "erp": 0.037,
  "tasas_base": {
   "tramo": ">$50,000 Mn",
   "ventas_2015": 234794.5676249328,
@@ -89,926 +341,952 @@
  },
  "historias": [
   {
-   "nombre": "Base · Azure y Copilot sostienen el doble dígito",
-   "prob": 0.45,
-   "margen": 0.46205670192792014,
-   "crec": {
-    "Productivity and Business Processes": [
-     0.14,
-     0.12,
-     0.11,
-     0.1,
-     0.09
-    ],
-    "Intelligent Cloud": [
-     0.25,
-     0.2,
-     0.17,
-     0.15,
-     0.13
-    ],
-    "More Personal Computing": [
-     0,
-     0.01,
-     0.02,
-     0.02,
-     0.02
-    ]
-   },
    "id": "A",
    "tesis": "base",
-   "margen_reportado": 0.45,
-   "cagr": 0.1296865894094794,
-   "rev5": 610544.4562339513,
-   "mix5": {
-    "Productivity and Business Processes": 0.3899751405467818,
-    "Intelligent Cloud": 0.5159181840724713,
-    "More Personal Computing": 0.09410667538074706
+   "nombre": "A · Base · IA rentable con inversión sostenida",
+   "prob": 0.5,
+   "margen": 0.5,
+   "s2c": 0.6,
+   "crec": {
+    "Azure": [
+     0.4,
+     0.33,
+     0.27,
+     0.22,
+     0.18
+    ],
+    "Microsoft 365 cloud": [
+     0.18,
+     0.17,
+     0.15,
+     0.13,
+     0.11
+    ],
+    "Licencias, industria y soporte": [
+     0.07,
+     0.07,
+     0.06,
+     0.05,
+     0.04
+    ],
+    "Dispositivos y consumidor": [
+     0.015,
+     0.02,
+     0.025,
+     0.025,
+     0.025
+    ]
    },
-   "tasa_base": 0.09643877482672882,
+   "roic_terminal": 0.2,
+   "cagr": 0.1626978817535607,
+   "rev5": 705118.0501527549,
+   "mix5": {
+    "Azure": 0.49215229193349014,
+    "Microsoft 365 cloud": 0.2832708609391888,
+    "Licencias, industria y soporte": 0.1238379443524431,
+    "Dispositivos y consumidor": 0.10073890277487807
+   },
+   "tasa_base": 0.050222965545014986,
    "anios": [
-    0.1631675708257987,
-    0.14050583123239702,
-    0.12716799001684986,
-    0.11552135905470307,
-    0.10302037160888844
+    0.19406097535250533,
+    0.1853538042984484,
+    0.1664846885170823,
+    0.14496504620808293,
+    0.1240577709908437
    ],
    "anios6a10": [
-    0.09299629728711076,
-    0.08297222296533308,
-    0.0729481486435554,
-    0.06292407432177771,
-    0.05290000000000002
+    0.10982621679267496,
+    0.09559466259450622,
+    0.08136310839633748,
+    0.06713155419816874,
+    0.0529
    ],
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.2,
    "detalle": {
-    "v": 450.52484584655963,
-    "pvFlujos": 861244.3265396531,
-    "pvTerminal": 2499270.516185332,
-    "valorTerminal": 6694915.470109984,
-    "activosOperativos": 3360514.8427249845,
-    "patrimonio": 3346048.0301023982,
+    "v": 570.7312305111147,
+    "pvFlujos": 1012544.9196830605,
+    "pvTerminal": 3272115.9541570903,
+    "valorTerminal": 8176034.264289723,
+    "activosOperativos": 4284660.87384015,
+    "patrimonio": 4282481.78814015,
     "ingresos": [
      331839,
-     385984.36353526224,
-     440217.417376492,
-     496198.98151466914,
-     553520.5622208032,
-     610544.4562339513,
-     667322.8299928812,
-     722692.0886329076,
-     775411.1385380225,
-     824203.1666493234,
-     867803.5141650726,
-     913710.3200644049
+     396236,
+     469679.85,
+     547874.35353,
+     627296.9845057,
+     705118.0501527549,
+     782558.4979932596,
+     857366.9135693887,
+     927124.9506935682,
+     989364.289569528,
+     1041701.6604877559,
+     1096807.678327558
     ],
     "utilidad": null,
     "nopat": [
      null,
-     147798.69333329724,
-     167247.2951506205,
-     187773.00708074242,
-     208636.20146260163,
-     229216.01934380352,
-     248540.33529145858,
-     267013.6897763073,
-     285342.65991055954,
-     302076.08710068377,
-     316769.7994444923
+     155324.512,
+     185617.47671999998,
+     217396.543480704,
+     249915.11862707086,
+     282047.22006110195,
+     309110.60670733755,
+     334373.09629206156,
+     356943.10601702373,
+     375958.4300364206,
+     390638.12268290843
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     86828.45635803675,
-     89627.8644543342,
-     91773.26401878656,
-     91296.66028361836,
-     90903.57630312182,
-     58834.617617709526,
-     56018.5420307246,
-     51845.7423348219,
-     46329.133477578536,
-     48779.94463854242
+     122406.41666666663,
+     130324.17254999999,
+     132371.05162616665,
+     129701.77607842488,
+     129067.41306750783,
+     71246.1100725039,
+     66436.22583255194,
+     59275.56083424737,
+     49845.11516021709,
+     52481.92175219257
     ],
     "flujo": [
      null,
-     60970.236975260486,
-     77619.43069628632,
-     95999.74306195586,
-     117339.54117898327,
-     138312.4430406817,
-     189705.71767374905,
-     210995.1477455827,
-     233496.91757573764,
-     255746.95362310525,
-     267989.8548059499
+     32918.09533333336,
+     55293.30416999999,
+     85025.49185453734,
+     120213.34254864597,
+     152979.8069935941,
+     237864.49663483363,
+     267936.8704595096,
+     297667.54518277635,
+     326113.3148762035,
+     338156.2009307159
     ],
     "tasa": [
      null,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10552916886232322,
-     0.10162187664674242,
-     0.09771458443116163,
-     0.09380729221558083,
-     0.08990000000000004
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.096763508768,
+     0.09504763157599999,
+     0.09333175438399999,
+     0.09161587719199998,
+     0.08989999999999998
     ],
     "crecimiento": [
      null,
-     0.1631675708257987,
-     0.14050583123239702,
-     0.12716799001684986,
-     0.11552135905470307,
-     0.10302037160888844,
-     0.09299629728711076,
-     0.08297222296533308,
-     0.0729481486435554,
-     0.06292407432177771,
-     0.05290000000000002
+     0.19406097535250533,
+     0.1853538042984484,
+     0.1664846885170823,
+     0.14496504620808293,
+     0.1240577709908437,
+     0.10982621679267496,
+     0.09559466259450622,
+     0.08136310839633748,
+     0.06713155419816874,
+     0.0529
     ],
     "margen": [
      null,
-     0.475057,
-     0.4713426291222629,
-     0.46948544368339434,
-     0.4676282582445258,
-     0.46577107280565727,
-     0.4639138873667887,
-     0.46205670192792014,
-     0.46205670192792014,
-     0.46205670192792014,
-     0.46205670192792014
+     0.49,
+     0.494,
+     0.496,
+     0.498,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
     ],
-    "tasaTerminal": 0.08990000000000001,
+    "tasaTerminal": 0.0899,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.2,
     "caja": 76843,
-    "deuda": 127657.81262258638,
+    "deuda": 127370.0857,
     "minoritarios": 0,
-    "noOperativos": 36348,
+    "noOperativos": 48348,
     "opciones": 0,
     "preferentes": 0,
-    "acciones": 7427,
+    "acciones": 7503.5,
     "probFracaso": 0,
     "nol0": 0,
-    "impuestoEf": 0.19396265985271252,
-    "impuestoMarg": 0.21,
-    "s2c": 0.6246,
-    "s2c2": 0.9411,
+    "impuestoEf": 0.2,
+    "impuestoMarg": 0.25,
+    "s2c": 0.6,
+    "s2c2": 1.05,
     "rezago0": false,
-    "convergencia": 7,
-    "wacc0": 0.10943646107790402,
-    "margenY1": 0.475057
+    "convergencia": 5,
+    "wacc0": 0.09847938596,
+    "margenY1": 0.49
    },
-   "valor_bruto": 450.52484584655963,
-   "valor_bruto_prop": 450.3057629395324,
-   "valor_beta_hoja": 450.52484584655963,
-   "valor_beta_prop": 450.3057629395324
+   "valor_bruto": 570.7312305111147,
+   "valor_bruto_prop": 560.2796660525078,
+   "valor_beta_hoja": 570.7312305111147,
+   "valor_beta_prop": 560.2796660525078
   },
   {
-   "nombre": "Conservadora · El capex de IA rinde menos de lo esperado",
+   "id": "B",
+   "tesis": "conservadora",
+   "nombre": "B · Conservadora · Adopción más lenta y capacidad cara",
    "prob": 0.25,
-   "margen": 0.41205670192792015,
+   "margen": 0.43,
+   "s2c": 0.6,
    "crec": {
-    "Productivity and Business Processes": [
-     0.1,
-     0.08,
+    "Azure": [
+     0.25,
+     0.2,
+     0.16,
+     0.12,
+     0.09
+    ],
+    "Microsoft 365 cloud": [
+     0.13,
+     0.11,
+     0.09,
      0.07,
-     0.06,
      0.06
     ],
-    "Intelligent Cloud": [
-     0.18,
-     0.12,
-     0.1,
-     0.08,
-     0.08
+    "Licencias, industria y soporte": [
+     0.03,
+     0.03,
+     0.02,
+     0.02,
+     0.02
     ],
-    "More Personal Computing": [
-     -0.02,
+    "Dispositivos y consumidor": [
      0,
-     0,
+     0.005,
+     0.01,
      0.01,
      0.01
     ]
    },
-   "roic_terminal": "costo_capital",
-   "id": "B",
-   "tesis": "conservadora",
-   "margen_reportado": 0.4,
-   "cagr": 0.08014774766420296,
-   "rev5": 487913.9641784892,
+   "roic_terminal": 0.14495,
+   "cagr": 0.09070039754627102,
+   "rev5": 512217.93754249264,
    "mix5": {
-    "Productivity and Business Processes": 0.4101643218354745,
-    "Intelligent Cloud": 0.48000051251517173,
-    "More Personal Computing": 0.10983516564935378
+    "Azure": 0.42274170470267186,
+    "Microsoft 365 cloud": 0.30364027989984665,
+    "Licencias, industria y soporte": 0.14482371679272568,
+    "Dispositivos y consumidor": 0.12879429860475586
    },
-   "tasa_base": 0.254600612894994,
+   "tasa_base": 0.21893265629360395,
    "anios": [
-    0.11391199517781803,
-    0.08626651803590946,
-    0.07447950053571817,
-    0.06321961939550858,
-    0.06367127623945801
+    0.12204734826225971,
+    0.1082514029483932,
+    0.09166694285746346,
+    0.07315961646313274,
+    0.05955474963379914
    ],
    "anios6a10": [
-    0.061517020991566404,
-    0.0593627657436748,
-    0.057208510495783196,
-    0.05505425524789159,
-    0.05289999999999999
+    0.058223799707039316,
+    0.05689284978027949,
+    0.05556189985351966,
+    0.054230949926759836,
+    0.05290000000000001
    ],
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.0,
+   "roic_terminal_usado": 0.14495,
    "detalle": {
-    "v": 221.6741527102754,
-    "pvFlujos": 743739.7607413455,
-    "pvTerminal": 917100.9840604565,
-    "valorTerminal": 2456682.2703173677,
-    "activosOperativos": 1660840.7448018019,
-    "patrimonio": 1646373.9321792154,
+    "v": 314.35921655110076,
+    "pvFlujos": 795388.8779978327,
+    "pvTerminal": 1565584.5890933522,
+    "valorTerminal": 3911925.3178693033,
+    "activosOperativos": 2360973.4670911846,
+    "patrimonio": 2358794.3813911844,
     "ingresos": [
      331839,
-     369639.44256781193,
-     401526.9502068716,
-     431432.4769099096,
-     458707.4738950156,
-     487913.9641784891,
-     517928.97775493556,
-     548674.6743332627,
-     580063.5351986276,
-     611998.5011254472,
-     644373.2218349833,
-     678460.5652700539
+     372339.07,
+     412645.2967,
+     450471.229533,
+     483427.5319133101,
+     512217.93754249276,
+     542041.2121443197,
+     572879.481401567,
+     604709.7537753371,
+     637503.7381525508,
+     671227.6859008207,
+     706735.630484974
     ],
     "utilidad": null,
     "nopat": [
      null,
-     141539.99948492722,
-     147924.51197155062,
-     155812.08475708263,
-     162334.83153920062,
-     169131.38882984663,
-     175079.1228149468,
-     180782.69258905598,
-     190358.3551389457,
-     200029.53946930706,
-     209759.46063399315
+     145956.91544,
+     153834.16660976,
+     163611.1505663856,
+     170939.97528454644,
+     176202.9705146175,
+     184131.39976542536,
+     192143.77806208556,
+     200219.39947501413,
+     208336.22162825358,
+     216470.92870301462
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     51052.68594149804,
-     47879.48559564195,
-     43667.94265947171,
-     46760.311052631296,
-     48054.77677945317,
-     32669.957048482793,
-     33353.374631138984,
-     33933.65840699139,
-     34400.93582991829,
-     36220.745335321
+     67177.0445,
+     63043.22138833329,
+     54927.17063385023,
+     47984.009381971075,
+     49705.45766971152,
+     29369.78024499746,
+     30314.545117876314,
+     31232.366073536796,
+     32118.04547454275,
+     33817.09008014605
     ],
     "flujo": [
      null,
-     90487.31354342918,
-     100045.02637590867,
-     112144.14209761092,
-     115574.52048656932,
-     121076.61205039347,
-     142409.16576646402,
-     147429.317957917,
-     156424.69673195432,
-     165628.60363938875,
-     173538.71529867215
+     78779.87094000001,
+     90790.94522142671,
+     108683.97993253535,
+     122955.96590257536,
+     126497.51284490598,
+     154761.6195204279,
+     161829.23294420925,
+     168987.03340147733,
+     176218.17615371084,
+     182653.83862286858
     ],
     "tasa": [
      null,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10552916886232322,
-     0.10162187664674242,
-     0.09771458443116163,
-     0.09380729221558083,
-     0.08990000000000004
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.096763508768,
+     0.09504763157599999,
+     0.09333175438399999,
+     0.09161587719199998,
+     0.08989999999999998
     ],
     "crecimiento": [
      null,
-     0.11391199517781803,
-     0.08626651803590946,
-     0.07447950053571817,
-     0.06321961939550858,
-     0.06367127623945801,
-     0.061517020991566404,
-     0.0593627657436748,
-     0.057208510495783196,
-     0.05505425524789159,
-     0.05289999999999999
+     0.12204734826225971,
+     0.1082514029483932,
+     0.09166694285746346,
+     0.07315961646313274,
+     0.05955474963379914,
+     0.058223799707039316,
+     0.05689284978027949,
+     0.05556189985351966,
+     0.054230949926759836,
+     0.05290000000000001
     ],
     "margen": [
      null,
-     0.475057,
-     0.45705691483654864,
-     0.44805687225482294,
-     0.4390568296730972,
-     0.4300567870913715,
-     0.42105674450964586,
-     0.41205670192792015,
-     0.41205670192792015,
-     0.41205670192792015,
-     0.41205670192792015
+     0.49,
+     0.46599999999999997,
+     0.454,
+     0.442,
+     0.43,
+     0.43,
+     0.43,
+     0.43,
+     0.43,
+     0.43
     ],
-    "tasaTerminal": 0.08990000000000001,
+    "tasaTerminal": 0.0899,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.08990000000000001,
+    "roicTerminal": 0.14495,
     "caja": 76843,
-    "deuda": 127657.81262258638,
+    "deuda": 127370.0857,
     "minoritarios": 0,
-    "noOperativos": 36348,
+    "noOperativos": 48348,
     "opciones": 0,
     "preferentes": 0,
-    "acciones": 7427,
+    "acciones": 7503.5,
     "probFracaso": 0,
     "nol0": 0,
-    "impuestoEf": 0.19396265985271252,
-    "impuestoMarg": 0.21,
-    "s2c": 0.6246,
-    "s2c2": 0.9411,
+    "impuestoEf": 0.2,
+    "impuestoMarg": 0.25,
+    "s2c": 0.6,
+    "s2c2": 1.05,
     "rezago0": false,
-    "convergencia": 7,
-    "wacc0": 0.10943646107790402,
-    "margenY1": 0.475057
+    "convergencia": 5,
+    "wacc0": 0.09847938596,
+    "margenY1": 0.49
    },
-   "valor_bruto": 221.6741527102754,
-   "valor_bruto_prop": 221.57576475674855,
-   "valor_beta_hoja": 221.6741527102754,
-   "valor_beta_prop": 221.57576475674855
+   "valor_bruto": 314.35921655110076,
+   "valor_bruto_prop": 308.9492799202755,
+   "valor_beta_hoja": 314.35921655110076,
+   "valor_beta_prop": 308.9492799202755
   },
   {
-   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "id": "C",
+   "tesis": "disrupción",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
-   "margen": 0.38205670192792013,
+   "margen": 0.3,
+   "s2c": 0.55,
    "crec": {
-    "Productivity and Business Processes": [
-     0.08,
-     0.06,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Intelligent Cloud": [
-     0.1,
+    "Azure": [
+     0.12,
      0.04,
-     0.05,
-     0.06,
-     0.06
+     0,
+     0,
+     0
     ],
-    "More Personal Computing": [
-     -0.03,
-     -0.02,
+    "Microsoft 365 cloud": [
+     0.1,
+     0.03,
+     0,
+     0,
+     0
+    ],
+    "Licencias, industria y soporte": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Dispositivos y consumidor": [
+     0,
+     0,
      0,
      0,
      0
     ]
    },
-   "id": "C",
-   "tesis": "disrupción",
-   "descripcion": "La demanda de cómputo para IA se corrige",
    "roic_terminal": "costo_capital",
    "terminal": "estabilizacion",
-   "margen_reportado": 0.37,
-   "cagr": 0.049771056719973394,
-   "rev5": 423058.47464160883,
+   "terminal_propio": true,
+   "cagr": 0.017538817555759367,
+   "rev5": 361978.1494,
    "mix5": {
-    "Productivity and Business Processes": 0.4389209376811484,
-    "Intelligent Cloud": 0.4406272760851221,
-    "More Personal Computing": 0.12045178623372947
+    "Azure": 0.3280236185438657,
+    "Microsoft 365 cloud": 0.3139381954086536,
+    "Licencias, industria y soporte": 0.18202756191006705,
+    "Dispositivos y consumidor": 0.17601062413741375
    },
-   "tasa_base": 0.44355681430418087,
+   "tasa_base": 0.6460229919457372,
    "anios": [
-    0.07055455093429774,
-    0.03973716956166795,
-    0.043101989510378136,
-    0.04769301655831959,
-    0.04804463355497912
+    0.06708813611419995,
+    0.022244159625887994,
+    0.0,
+    0.0,
+    0.0
    ],
    "anios6a10": [
-    0.04804463355497912,
-    0.04804463355497912,
-    0.04804463355497912,
-    0.04804463355497912,
-    0.04804463355497912
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.04804463355497912,
-   "terminal_propio": true,
+   "terminal_growth": 0.0,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 184.17970551592322,
-    "pvFlujos": 679713.969012913,
-    "pvTerminal": 702655.5164764355,
-    "valorTerminal": 1882236.9395195835,
-    "activosOperativos": 1382369.4854893482,
-    "patrimonio": 1367902.6728667617,
+    "v": 130.36132794097279,
+    "pvFlujos": 617775.8961836726,
+    "pvTerminal": 362569.4137214169,
+    "valorTerminal": 905951.9868186874,
+    "activosOperativos": 980345.3099050892,
+    "patrimonio": 978166.2242050893,
     "ingresos": [
      331839,
-     355251.75162748643,
-     369368.4507189874,
-     385288.9658073418,
-     403664.5588333292,
-     423058.4746416088,
-     443384.1640280933,
-     464686.3937129038,
-     487012.081216825,
-     510410.39819573506,
-     534932.8787397002,
-     560633.5328752592
+     354101.46,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494,
+     361978.1494
     ],
     "utilidad": null,
     "nopat": [
      null,
-     136030.75579021688,
-     133525.23535472248,
-     135154.44995765376,
-     137277.6038397711,
-     139342.60059553612,
-     140726.91275919037,
-     141962.20373435796,
-     148185.92430879315,
-     154679.9881490372,
-     161456.00620923733
+     138807.77232000002,
+     119887.16308128,
+     108883.02733952,
+     97878.89159776,
+     86874.75585599999,
+     85788.82140779999,
+     84702.88695959999,
+     83616.95251139998,
+     82531.01806319998,
+     81445.08361499998
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     22601.1833037159,
-     25489.137189168126,
-     29419.77749917929,
-     31050.137381171295,
-     32541.929853481433,
-     22635.45817108756,
-     23722.970464266513,
-     24862.731887057766,
-     26057.252729747237,
-     27309.16388859737
+     14321.253454545405,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
     ],
     "flujo": [
      null,
-     113429.57248650098,
-     108036.09816555434,
-     105734.67245847447,
-     106227.4664585998,
-     106800.67074205469,
-     118091.4545881028,
-     118239.23327009144,
-     123323.19242173538,
-     128622.73541928997,
-     134146.84232063996
+     124486.51886545461,
+     119887.16308128,
+     108883.02733952,
+     97878.89159776,
+     86874.75585599999,
+     85788.82140779999,
+     84702.88695959999,
+     83616.95251139998,
+     82531.01806319998,
+     81445.08361499998
     ],
     "tasa": [
      null,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10552916886232322,
-     0.10162187664674242,
-     0.09771458443116163,
-     0.09380729221558083,
-     0.08990000000000004
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.096763508768,
+     0.09504763157599999,
+     0.09333175438399999,
+     0.09161587719199998,
+     0.08989999999999998
     ],
     "crecimiento": [
      null,
-     0.07055455093429774,
-     0.03973716956166795,
-     0.043101989510378136,
-     0.04769301655831959,
-     0.04804463355497912,
-     0.04804463355497912,
-     0.04804463355497912,
-     0.04804463355497912,
-     0.04804463355497912,
-     0.04804463355497912
+     0.06708813611419995,
+     0.022244159625887994,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
     ],
     "margen": [
      null,
-     0.475057,
-     0.44848548626512,
-     0.43519972939768004,
-     0.4219139725302401,
-     0.4086282156628001,
-     0.3953424587953601,
-     0.38205670192792013,
-     0.38205670192792013,
-     0.38205670192792013,
-     0.38205670192792013
+     0.49,
+     0.414,
+     0.376,
+     0.33799999999999997,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3,
+     0.3
     ],
-    "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.04804463355497912,
-    "roicTerminal": 0.08990000000000001,
+    "tasaTerminal": 0.0899,
+    "gTerminal": 0,
+    "roicTerminal": 0.0899,
     "caja": 76843,
-    "deuda": 127657.81262258638,
+    "deuda": 127370.0857,
     "minoritarios": 0,
-    "noOperativos": 36348,
+    "noOperativos": 48348,
     "opciones": 0,
     "preferentes": 0,
-    "acciones": 7427,
+    "acciones": 7503.5,
     "probFracaso": 0,
     "nol0": 0,
-    "impuestoEf": 0.19396265985271252,
-    "impuestoMarg": 0.21,
-    "s2c": 0.6246,
-    "s2c2": 0.9411,
+    "impuestoEf": 0.2,
+    "impuestoMarg": 0.25,
+    "s2c": 0.55,
+    "s2c2": 1.05,
     "rezago0": false,
-    "convergencia": 7,
-    "wacc0": 0.10943646107790402,
-    "margenY1": 0.475057
+    "convergencia": 5,
+    "wacc0": 0.09847938596,
+    "margenY1": 0.49
    },
-   "valor_bruto": 184.17970551592322,
-   "valor_bruto_prop": 184.10148136481047,
-   "valor_beta_hoja": 184.17970551592322,
-   "valor_beta_prop": 184.10148136481047
+   "valor_bruto": 130.36132794097279,
+   "valor_bruto_prop": 128.55044882805305,
+   "valor_beta_hoja": 130.36132794097279,
+   "valor_beta_prop": 128.55044882805305
   },
   {
-   "nombre": "Optimista · Microsoft gana la plataforma empresarial de IA",
-   "prob": 0.2,
-   "margen": 0.4920567019279201,
-   "s2c": 0.5782831447318479,
-   "crec": {
-    "Productivity and Business Processes": [
-     0.17,
-     0.16,
-     0.15,
-     0.13,
-     0.12
-    ],
-    "Intelligent Cloud": [
-     0.32,
-     0.28,
-     0.24,
-     0.2,
-     0.17
-    ],
-    "More Personal Computing": [
-     0.02,
-     0.03,
-     0.03,
-     0.03,
-     0.03
-    ]
-   },
    "id": "D",
    "tesis": "optimista",
-   "margen_reportado": 0.48,
-   "s2c_reportado": 0.6,
-   "cagr": 0.1754328395571163,
-   "rev5": 744588.8455053816,
-   "mix5": {
-    "Productivity and Business Processes": 0.3717156200278294,
-    "Intelligent Cloud": 0.5456333293164747,
-    "More Personal Computing": 0.08265105065569592
+   "nombre": "D · Optimista · Monetización de agentes y utilización superior",
+   "prob": 0.15,
+   "margen": 0.54,
+   "s2c": 0.7,
+   "crec": {
+    "Azure": [
+     0.45,
+     0.38,
+     0.32,
+     0.28,
+     0.25
+    ],
+    "Microsoft 365 cloud": [
+     0.22,
+     0.2,
+     0.18,
+     0.17,
+     0.15
+    ],
+    "Licencias, industria y soporte": [
+     0.1,
+     0.09,
+     0.08,
+     0.07,
+     0.06
+    ],
+    "Dispositivos y consumidor": [
+     0.04,
+     0.04,
+     0.04,
+     0.04,
+     0.04
+    ]
    },
-   "tasa_base": 0.0328008938037265,
+   "roic_terminal": 0.24,
+   "cagr": 0.20361152927028026,
+   "rev5": 838222.1284585089,
+   "mix5": {
+    "Azure": 0.5139465905633441,
+    "Microsoft 365 cloud": 0.2781277147843512,
+    "Licencias, industria y soporte": 0.1154497421738612,
+    "Dispositivos y consumidor": 0.09247595247844348
+   },
+   "tasa_base": 0.01983869653567108,
    "anios": [
-    0.20820072332730555,
-    0.19683806416367955,
-    0.1796850494729314,
-    0.15553569063897288,
-    0.13832212232497398
+    0.23226733446038583,
+    0.21964091258619534,
+    0.20207447616880936,
+    0.18963042213080428,
+    0.17530704062208025
    ],
    "anios6a10": [
-    0.12123769785997919,
-    0.1041532733949844,
-    0.0870688489299896,
-    0.06998442446499481,
-    0.052900000000000016
+    0.1508256324976642,
+    0.12634422437324816,
+    0.10186281624883212,
+    0.07738140812441607,
+    0.05290000000000002
    ],
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.24,
    "detalle": {
-    "v": 589.6132531905099,
-    "pvFlujos": 931126.7300069819,
-    "pvTerminal": 3462397.7140615224,
-    "valorTerminal": 9274890.360777976,
-    "activosOperativos": 4393524.444068504,
-    "patrimonio": 4379057.631445917,
+    "v": 821.7202491766097,
+    "pvFlujos": 1284663.0216412002,
+    "pvTerminal": 4883293.953755491,
+    "valorTerminal": 12201883.810926504,
+    "activosOperativos": 6167956.975396691,
+    "patrimonio": 6165777.889696691,
     "ingresos": [
      331839,
-     400928.11982820975,
-     479846.0348039783,
-     566067.193307121,
-     654110.845166209,
-     744588.8455053815,
-     834861.0829866736,
-     921814.5976098173,
-     1002075.9335505656,
-     1072205.6410303244,
-     1128925.3194408284,
-     1188645.4688392482
+     408914.36,
+     498728.68319999997,
+     599509.020608,
+     713194.1692571201,
+     838222.1284585089,
+     964647.5111568018,
+     1086525.1527474923,
+     1197201.6647315444,
+     1289842.8153573663,
+     1358075.500289771,
+     1429917.6942550999
     ],
     "utilidad": null,
     "nopat": [
      null,
-     153520.8620588889,
-     185618.19412109244,
-     220079.07651631866,
-     255589.63980086165,
-     292400.8626681404,
-     328173.9765611695,
-     362696.76869040413,
-     392694.82635591755,
-     418485.1326323965,
-     438841.26283151243
+     160294.42912,
+     203481.3027456,
+     249395.752572928,
+     302394.32776501897,
+     362111.95949407585,
+     411518.62825949164,
+     457644.39433724375,
+     497796.4521953762,
+     529351.4914226632,
+     550020.5776173573
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     136469.33287734518,
-     149098.51564690485,
-     152250.0744854221,
-     156459.68789411528,
-     156103.8710944129,
-     92395.6164309252,
-     85284.59881069847,
-     74518.86885533818,
-     60269.555212521525,
-     63457.81468326402
+     128306.17599999999,
+     143971.91058285718,
+     162407.35521302876,
+     178611.37028769823,
+     180607.68956898997,
+     116073.94437208616,
+     105406.20188957347,
+     88229.66726268752,
+     64983.50945943301,
+     68421.137109837
     ],
     "flujo": [
      null,
-     17051.52918154371,
-     36519.67847418759,
-     67829.00203089655,
-     99129.95190674637,
-     136296.9915737275,
-     235778.36013024428,
-     277412.16987970565,
-     318175.95750057936,
-     358215.57741987496,
-     375383.4481482484
+     31988.253119999994,
+     59509.39216274282,
+     86988.39735989925,
+     123782.95747732074,
+     181504.2699250859,
+     295444.6838874055,
+     352238.19244767027,
+     409566.7849326887,
+     464367.9819632302,
+     481599.4405075202
     ],
     "tasa": [
      null,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10943646107790402,
-     0.10552916886232322,
-     0.10162187664674242,
-     0.09771458443116163,
-     0.09380729221558083,
-     0.08990000000000004
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.09847938596,
+     0.096763508768,
+     0.09504763157599999,
+     0.09333175438399999,
+     0.09161587719199998,
+     0.08989999999999998
     ],
     "crecimiento": [
      null,
-     0.20820072332730555,
-     0.19683806416367955,
-     0.1796850494729314,
-     0.15553569063897288,
-     0.13832212232497398,
-     0.12123769785997919,
-     0.1041532733949844,
-     0.0870688489299896,
-     0.06998442446499481,
-     0.052900000000000016
+     0.23226733446038583,
+     0.21964091258619534,
+     0.20207447616880936,
+     0.18963042213080428,
+     0.17530704062208025,
+     0.1508256324976642,
+     0.12634422437324816,
+     0.10186281624883212,
+     0.07738140812441607,
+     0.05290000000000002
     ],
     "margen": [
      null,
-     0.475057,
-     0.47991405769369144,
-     0.4823425865405372,
-     0.48477111538738293,
-     0.4871996442342287,
-     0.48962817308107437,
-     0.4920567019279201,
-     0.4920567019279201,
-     0.4920567019279201,
-     0.4920567019279201
+     0.49,
+     0.51,
+     0.52,
+     0.53,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54
     ],
-    "tasaTerminal": 0.08990000000000001,
+    "tasaTerminal": 0.0899,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.24,
     "caja": 76843,
-    "deuda": 127657.81262258638,
+    "deuda": 127370.0857,
     "minoritarios": 0,
-    "noOperativos": 36348,
+    "noOperativos": 48348,
     "opciones": 0,
     "preferentes": 0,
-    "acciones": 7427,
+    "acciones": 7503.5,
     "probFracaso": 0,
     "nol0": 0,
-    "impuestoEf": 0.19396265985271252,
-    "impuestoMarg": 0.21,
-    "s2c": 0.5782831447318479,
-    "s2c2": 0.9411,
+    "impuestoEf": 0.2,
+    "impuestoMarg": 0.25,
+    "s2c": 0.7,
+    "s2c2": 1.05,
     "rezago0": false,
-    "convergencia": 7,
-    "wacc0": 0.10943646107790402,
-    "margenY1": 0.475057
+    "convergencia": 5,
+    "wacc0": 0.09847938596,
+    "margenY1": 0.49
    },
-   "valor_bruto": 589.6132531905099,
-   "valor_bruto_prop": 589.3174644998493,
-   "valor_beta_hoja": 589.6132531905099,
-   "valor_beta_prop": 589.3174644998493
+   "valor_bruto": 821.7202491766097,
+   "valor_bruto_prop": 806.5041887344782,
+   "valor_beta_hoja": 821.7202491766097,
+   "valor_beta_prop": 806.5041887344782
   }
  ],
- "valor_esperado_beta_hoja": 394.49533999821494,
- "valor_esperado_beta_prop": 394.30517554842766,
+ "valor_esperado_beta_hoja": 500.2495895639213,
+ "valor_esperado_beta_prop": 491.2078261992998,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
-   "beta": 1.2719504558044528,
-   "ke": 0.1110734066551164,
-   "wacc": 0.10943646107790402,
-   "dcf_base": 450.52484584655963
+   "beta": 1.275007272,
+   "ke": 0.100075269064,
+   "wacc": 0.09847938596,
+   "dcf_base": 570.7312305111147
   },
   {
    "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
-   "beta": 1.2737853002548643,
-   "ke": 0.11115732435165526,
-   "wacc": 0.10951840504100845,
-   "dcf_base": 450.3057629395324
+   "beta": 1.276846525995551,
+   "ke": 0.10014332146183538,
+   "wacc": 0.09854554384127273,
+   "dcf_base": 570.5014296115324
+  },
+  {
+   "enfoque": "Propuesta (sector ajustado por riesgo propio)",
+   "beta": 1.359535362386038,
+   "ke": 0.10320280840828341,
+   "wacc": 0.10151985746719676,
+   "dcf_base": 560.2796660525078
   }
  ],
  "sensibilidad": {
   "g": [
-   0.08987662454772741,
-   0.10987662454772741,
-   0.12987662454772742,
-   0.1498766245477274,
-   0.16987662454772742
+   0.12298445708,
+   0.14298445708000002,
+   0.16298445708,
+   0.18298445708,
+   0.20298445708
   ],
   "m": [
-   0.422057,
-   0.442057,
-   0.462057,
-   0.482057,
-   0.502057
+   0.46,
+   0.48,
+   0.5,
+   0.52,
+   0.54
   ],
   "v": [
    [
-    347.77500040329204,
-    363.92832678254763,
-    380.08165316180333,
-    396.234979541059,
-    412.3883059203145
+    448.5732227466159,
+    469.1235730800547,
+    489.67392341349364,
+    510.22427374693257,
+    530.7746240803714
    ],
    [
-    383.1803171391347,
-    401.427613319801,
-    419.6749095004675,
-    437.92220568113396,
-    456.1695018618003
+    495.07888822568225,
+    518.1909668212103,
+    541.3030454167383,
+    564.4151240122665,
+    587.5272026077944
    ],
    [
-    422.4412677642574,
-    443.0193888906727,
-    463.597510017088,
-    484.17563114350327,
-    504.75375226991855
+    546.5856816175275,
+    572.5393328473648,
+    598.4929840772019,
+    624.4466353070393,
+    650.4002865368764
    ],
    [
-    465.9353859851688,
-    489.1040262661726,
-    512.2726665471766,
-    535.4413068281805,
-    558.6099471091842
+    603.572176145744,
+    632.6733967478195,
+    661.7746173498952,
+    690.8758379519707,
+    719.9770585540465
    ],
    [
-    514.0709328528741,
-    540.1144530672327,
-    566.1579732815916,
-    592.2014934959503,
-    618.245013710309
+    666.5550182670718,
+    699.1379912643639,
+    731.7209642616561,
+    764.3039372589483,
+    796.8869102562404
    ]
   ],
-  "referencia_constante": 463.597510017088,
+  "referencia_constante": 598.4929840772019,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
-   "beta": 1.2719504558044528,
-   "margen": 0.41205670192792015,
-   "g": 0.17464773460881167,
-   "tasa_base": 0.03349317154766366
+   "beta": 1.275007272,
+   "margen": 0.47,
+   "g": 0.14546088982315764,
+   "tasa_base": 0.0743547542475793
   },
   {
-   "beta": 1.2719504558044528,
-   "margen": 0.46205670192792014,
-   "g": 0.15012165430356073,
-   "tasa_base": 0.06782968397501496
+   "beta": 1.275007272,
+   "margen": 0.52,
+   "g": 0.12402188313661189,
+   "tasa_base": 0.10630603499825178
   },
   {
-   "beta": 1.2719504558044528,
-   "margen": 0.4920567019279201,
-   "g": 0.13712723310731822,
-   "tasa_base": 0.08602187364975449
+   "beta": 1.359535362386038,
+   "margen": 0.47,
+   "g": 0.1491819245406389,
+   "tasa_base": 0.06914530564310555
   },
   {
-   "beta": 1.2737853002548643,
-   "margen": 0.41205670192792015,
-   "g": 0.17475028111236346,
-   "tasa_base": 0.03334960644269115
-  },
-  {
-   "beta": 1.2737853002548643,
-   "margen": 0.46205670192792014,
-   "g": 0.15022083787301443,
-   "tasa_base": 0.06769082697777978
-  },
-  {
-   "beta": 1.2737853002548643,
-   "margen": 0.4920567019279201,
-   "g": 0.13722470233920692,
-   "tasa_base": 0.08588541672511031
+   "beta": 1.359535362386038,
+   "margen": 0.52,
+   "g": 0.1276372219671772,
+   "tasa_base": 0.09930788924595191
   }
  ],
  "ingresos_ltm": 331839,
  "sens_base": {
-  "base": 450.52484584655963,
+  "base": 570.7312305111147,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 430.8115822219811
+    "valor": 546.2713200094839
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 470.23810947113816
+    "valor": 595.1911410127454
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 408.380258887243
+    "valor": 516.8701688035391
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 497.236583484672
+    "valor": 630.346006802975
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 625.6979322775994
+    "valor": 798.0503836846286
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 349.9608972141206
+    "valor": 440.3321717411802
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 415.000067364506
+    "valor": 525.0230051008309
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 496.9416656838874
+    "valor": 630.3786811378492
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 429.0712817586282
+    "valor": 543.5535528677284
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 435.3169493408124
+    "valor": 549.5661086947872
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 460.6634435170578
+    "valor": 584.841311722
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 300.4906882587061
+    "valor": 378.67189362574226
    }
   ]
  },
- "rd_vida": 3,
+ "rd_vida": 3.0,
  "rd_ltm": 35562,
- "motor_tecnico": 498.5981537833909
+ "motor_tecnico": 570.7312305311792
 }

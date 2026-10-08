@@ -85,7 +85,7 @@ def build(cell, rec: dict) -> dict:
                        "pond": _num(cell(SHEET, f"{c}50"))}
         d["div"][s] = _num(cell("EVEBITDA", f"H{drow}")) or 0.0
     ve = rec.get("valorEsperado") or {}
-    dis = next((h for h in ve.get("historias", []) if str(h.get("nombre", "")).startswith("Disrup")), None)
+    dis = next((h for h in ve.get("historias", []) if str(h.get("id", "")).upper() == "C" or "disrup" in str(h.get("nombre", "")).lower()), None)
     d["disrupcion"] = dis.get("valor") if dis else None
     d["esperado"] = ve.get("valor")
     # control de cierre: la hoja y la valoración guardada (app) deben coincidir

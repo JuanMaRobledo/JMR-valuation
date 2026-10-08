@@ -1,336 +1,251 @@
 {
  "ticker": "MSFT",
+ "fecha": "2026-10-07",
+ "fecha_corte": "2026-09-30",
  "empresa": "Microsoft Corporation",
- "fecha": "2026-09-30",
  "industria_damodaran": "Software (System & Application)",
  "segmentos": {
-  "Productivity and Business Processes": 140100,
-  "Intelligent Cloud": 138100,
-  "More Personal Computing": 53600
- },
- "riesgo": {
-  "beta_propuesta": null,
-  "texto": "La hoja usa la beta bottom-up de Software (System & Application) en EE.UU. (Damodaran, ene-2026: 1,25 desapalancada y corregida por caja), reapalancada por la hoja con la D/E de mercado: ~1,27. Tabla de EE.UU. porque Microsoft vende 51% allí; hasta el 5-oct-2026 usaba la global (1,33 → 1,36). La regresión semanal contra el S&P 500 da 1,13 a dos años y 1,15 a cinco y queda como referencia. El riesgo real está en el retorno del capex, no en la tasa."
+  "Azure": 101938,
+  "Microsoft 365 cloud": 100299,
+  "Licencias, industria y soporte": 65890,
+  "Dispositivos y consumidor": 63712
  },
  "historias": [
   {
-   "nombre": "Base · Azure y Copilot sostienen el doble dígito",
-   "prob": 0.45,
-   "margen": 0.45,
+   "id": "A",
+   "tesis": "base",
+   "nombre": "A · Base · IA rentable con inversión sostenida",
+   "prob": 0.5,
+   "margen": 0.5,
+   "s2c": 0.6,
    "crec": {
-    "Productivity and Business Processes": [
-     0.14,
-     0.12,
-     0.11,
-     0.1,
-     0.09
+    "Azure": [
+     0.4,
+     0.33,
+     0.27,
+     0.22,
+     0.18
     ],
-    "Intelligent Cloud": [
-     0.25,
-     0.2,
+    "Microsoft 365 cloud": [
+     0.18,
      0.17,
      0.15,
-     0.13
+     0.13,
+     0.11
     ],
-    "More Personal Computing": [
-     0,
-     0.01,
+    "Licencias, industria y soporte": [
+     0.07,
+     0.07,
+     0.06,
+     0.05,
+     0.04
+    ],
+    "Dispositivos y consumidor": [
+     0.015,
+     0.02,
+     0.025,
+     0.025,
+     0.025
+    ]
+   },
+   "roic_terminal": 0.2
+  },
+  {
+   "id": "B",
+   "tesis": "conservadora",
+   "nombre": "B · Conservadora · Adopción más lenta y capacidad cara",
+   "prob": 0.25,
+   "margen": 0.43,
+   "s2c": 0.6,
+   "crec": {
+    "Azure": [
+     0.25,
+     0.2,
+     0.16,
+     0.12,
+     0.09
+    ],
+    "Microsoft 365 cloud": [
+     0.13,
+     0.11,
+     0.09,
+     0.07,
+     0.06
+    ],
+    "Licencias, industria y soporte": [
+     0.03,
+     0.03,
      0.02,
      0.02,
      0.02
-    ]
-   },
-   "id": "A",
-   "tesis": "base"
-  },
-  {
-   "nombre": "Conservadora · El capex de IA rinde menos de lo esperado",
-   "prob": 0.25,
-   "margen": 0.4,
-   "crec": {
-    "Productivity and Business Processes": [
-     0.1,
-     0.08,
-     0.07,
-     0.06,
-     0.06
     ],
-    "Intelligent Cloud": [
-     0.18,
-     0.12,
-     0.1,
-     0.08,
-     0.08
-    ],
-    "More Personal Computing": [
-     -0.02,
+    "Dispositivos y consumidor": [
      0,
-     0,
+     0.005,
+     0.01,
      0.01,
      0.01
     ]
    },
-   "roic_terminal": "costo_capital",
-   "id": "B",
-   "tesis": "conservadora"
+   "roic_terminal": 0.14495
   },
   {
-   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "id": "C",
+   "tesis": "disrupción",
+   "nombre": "C · Tesis de disrupción · Deterioro de los fundamentales",
    "prob": 0.1,
-   "margen": 0.37,
+   "margen": 0.3,
+   "s2c": 0.55,
    "crec": {
-    "Productivity and Business Processes": [
-     0.08,
-     0.06,
-     0.05,
-     0.05,
-     0.05
-    ],
-    "Intelligent Cloud": [
-     0.1,
+    "Azure": [
+     0.12,
      0.04,
-     0.05,
-     0.06,
-     0.06
+     0,
+     0,
+     0
     ],
-    "More Personal Computing": [
-     -0.03,
-     -0.02,
+    "Microsoft 365 cloud": [
+     0.1,
+     0.03,
+     0,
+     0,
+     0
+    ],
+    "Licencias, industria y soporte": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "Dispositivos y consumidor": [
+     0,
+     0,
      0,
      0,
      0
     ]
    },
-   "id": "C",
-   "tesis": "disrupción",
-   "descripcion": "La demanda de cómputo para IA se corrige",
    "roic_terminal": "costo_capital",
-   "terminal": "estabilizacion"
+   "terminal": "estabilizacion",
+   "terminal_propio": true
   },
   {
-   "nombre": "Optimista · Microsoft gana la plataforma empresarial de IA",
-   "prob": 0.2,
-   "margen": 0.48,
-   "s2c": 0.6,
+   "id": "D",
+   "tesis": "optimista",
+   "nombre": "D · Optimista · Monetización de agentes y utilización superior",
+   "prob": 0.15,
+   "margen": 0.54,
+   "s2c": 0.7,
    "crec": {
-    "Productivity and Business Processes": [
-     0.17,
-     0.16,
-     0.15,
-     0.13,
-     0.12
-    ],
-    "Intelligent Cloud": [
+    "Azure": [
+     0.45,
+     0.38,
      0.32,
      0.28,
-     0.24,
-     0.2,
-     0.17
+     0.25
     ],
-    "More Personal Computing": [
-     0.02,
-     0.03,
-     0.03,
-     0.03,
-     0.03
+    "Microsoft 365 cloud": [
+     0.22,
+     0.2,
+     0.18,
+     0.17,
+     0.15
+    ],
+    "Licencias, industria y soporte": [
+     0.1,
+     0.09,
+     0.08,
+     0.07,
+     0.06
+    ],
+    "Dispositivos y consumidor": [
+     0.04,
+     0.04,
+     0.04,
+     0.04,
+     0.04
     ]
    },
-   "id": "D",
-   "tesis": "optimista"
+   "roic_terminal": 0.24
   }
  ],
- "margenes_inverso": [
-  0.4,
-  0.45,
-  0.48
- ],
- "historia": "Microsoft vende el software y la infraestructura sobre los que operan casi todas las empresas: Microsoft 365, Dynamics y LinkedIn (Productivity and Business Processes, margen ~58%), Azure y servidores (Intelligent Cloud, ~42%) y Windows, Xbox y dispositivos (More Personal Computing). En FY2026 (cerrado en junio) facturó US$331.839 millones (+17,8%) con margen operativo de 46,8%, impulsada por Azure (~+30%) y la adopción de Copilot. El cambio de régimen está en el capital: el capex pasó de US$44.477 millones (FY24) a US$115.948 millones (FY26) y el flujo libre de la hoja cayó de US$73.144 millones a US$30.557 millones. La historia de cinco años es si esa inversión en IA rinde como rindió la nube en 2015-2022 o si Microsoft está sobreinvirtiendo en capacidad con demanda concentrada en pocos clientes (OpenAI).",
- "filtro": [
-  [
-   "Los ingresos crecen ~13% anual cinco años",
-   "Sí",
-   "Sí: +15-18% anual en FY24-FY26",
-   "Probable, desacelerando"
-  ],
-  [
-   "Azure sigue creciendo más de 20% anual",
-   "Sí",
-   "Sí: ~30% en FY26 con capacidad limitada por oferta",
-   "Probable 2-3 años"
-  ],
-  [
-   "El capex de IA rinde por encima del costo de capital",
-   "Sí",
-   "Sí si la demanda de inferencia sigue; hoy depende en parte de OpenAI",
-   "Incierto"
-  ],
-  [
-   "El margen operativo se mantiene en ~45%",
-   "Sí",
-   "Sí: 44,6% → 46,8%, pero la depreciación del capex crece rápido",
-   "Probable"
-  ]
- ],
- "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$50.000 millones: crecer 13,0% anual cinco años (Base) lo logró ~10% de las empresas de ese tamaño; 17,5% (Optimista), ~3%. Microsoft es la excepción que confirma la regla: hace cinco años que crece a doble dígito con más de US$150.000 millones de ventas. Aun así, la visión externa pide no extrapolar el 17,8% de FY26.",
+ "historia": "Microsoft convierte la distribución de Microsoft 365 y Azure en demanda de agentes y cómputo, pero debe invertir antes de cobrar; el resultado depende del uso y precio del capital instalado, no solo de los ingresos de IA.",
+ "filtro": {
+  "posible": "Azure mantiene40% mientras la oferta es restricción; nube y distribución ya existen.",
+  "plausible": "El crecimiento de Azure se desacelera hacia18%, Microsoft365 hacia11%; licencias/consumo aportan poco. MargenGAAP no mantiene expansiónautomática.",
+  "probable": "Base50%, conservadora25%, disrupción10%, optimista15% son juicio condicional, no frecuencias observadas."
+ },
+ "prob_texto": "A (50%) reconoce crecimiento probado pero mucha inversión. B (25%) captura saturación y menor ROI. C (10%) representa commoditización y pérdida de diferenciación, sin recuperación. D (15%) exige utilización y precios superiores. No son probabilidades estadísticas.",
+ "tasas_base_nota": "The Base Rate Book2016: tamaño en dólares2015 deflactado conIPC común. La excepcionalidad deAzure no autoriza aplicar crecimiento dehiperescalador a todoMSFT.",
  "crecimiento": {
-  "texto": "Ingresos de US$245.122 millones (FY24, +15,7%), US$281.724 millones (FY25, +14,9%) y US$331.839 millones (FY26, +17,8%). En FY25: Productivity US$120.810 millones (+12%), Intelligent Cloud US$106.265 millones (+20%) y More Personal Computing US$54.649 millones (+5%). En FY26, según los trimestres publicados, ~+16%, ~+30% y ~−1%. La división FY26 de las historias aplica esos crecimientos a FY25 (estimación propia). Desde FY2027 Microsoft reporta dos segmentos, Agents and Infra y Devices and Consumer (8-K del 2-sep-2026); es un cambio de presentación, así que las historias conservan los tres segmentos de FY2026 con los que se midió el crecimiento.",
-  "tabla": {
-   "cols": [
-    "US$ millones",
-    "FY24",
-    "FY25",
-    "FY26"
-   ],
-   "align": [
-    "l",
-    "r",
-    "r",
-    "r"
-   ],
-   "rows": [
-    [
-     "Ingresos",
-     "245.122",
-     "281.724",
-     "331.839"
-    ],
-    [
-     "Crecimiento",
-     "+15,7%",
-     "+14,9%",
-     "+17,8%"
-    ],
-    [
-     "Margen operativo",
-     "44,6%",
-     "45,6%",
-     "46,8%"
-    ],
-    [
-     "Capex",
-     "44.477",
-     "64.551",
-     "115.948"
-    ],
-    [
-     "FCFF (hoja)",
-     "73.144",
-     "66.125",
-     "30.557"
-    ]
-   ]
-  }
+  "texto": "FY2026 ventas+17.8%; Azure restated+40.4% yMicrosoft365cloud+18.5%. PrimerañoBase porsegmento; orgánicoenmonedacorriente, acquisitionsforecast0 y moneda0. No doblecontar Copilot dentroM365."
  },
  "margenes": {
-  "texto": "El margen operativo subió a 46,8% pese al capex porque la depreciación todavía no refleja toda la inversión. La hoja supone 46,3% el próximo año y 45% de objetivo. La depreciación de los centros de datos de IA (vidas útiles de 5-6 años) y los márgenes menores de la infraestructura de IA frente al software empujan hacia abajo; Copilot y el precio de Microsoft 365 empujan hacia arriba. Las historias van de 37% a 48%."
+  "texto": "MargenactualGAAP46.78%; guíaFY27baja<1pp. Inicial49% yobjetivo50% sonajustadosporI+D/leases. Base noproyectabeneficiosderevalorizarOpenAIoAnthropic. B43%,C30%,D54% reflejan economías distintas; no ajustesuniformes."
  },
  "reinversion": {
-  "texto": "La hoja usa un ventas/capital de 0,62 (años 1-5) y 0,94 (años 6-10): los años 1-5 cargan el capex de IA; en los 6-10 la capacidad madura sin volver a un modelo liviano. Con margen objetivo de 46,2% e impuesto marginal de 21%, el capital nuevo rinde ~23% y ~34% (revisión del 5-oct-2026: se quitó el tope de la auditoría del 4-oct, que lo comparaba con un ROIC actual cargado de crédito mercantil). En la historia Optimista se baja a 0,6. El valor depende de que el retorno de ese capital (ROIC incremental) supere el costo de capital de ~10%. Ventaja durable: costos de cambio y efectos de red (Office, Azure, Windows, LinkedIn), con ROIC de 30-72% en 2021-2026. El ROIC después del año 10 es 20,6%: el promedio de Software (System & Application) según Damodaran (29,3%) llevado a la base del modelo, que capitaliza el I+D a 3 años; queda por debajo de su ROIC actual (25,4%). Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "Ventas/capital.60 años1-5 implica infraestructura/financiaciónantesdecrecimiento; 1.05años6-10 suponeutilización. EficienciadeD.70 aúninferiorsector1.538. I+D3añosporrenovaciónrápidaIA. Leasesincluidos enestructura; sinrecompraautomática.",
+  "s2c": 0.6
  },
- "prob_texto": "Base (45%) es la continuación de FY24-FY26 con desaceleración gradual. Conservadora (25%) es un capex que rinde menos: precios de cómputo en baja y menor dependencia de OpenAI. Disrupción (10%) es una corrección de la demanda de cómputo. Optimista (20%) es Microsoft como plataforma empresarial de IA (Copilot en cada asiento, Azure como infraestructura dominante). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
+ "riesgo": {
+  "texto": "US51.47%ventas; betaUSsector1.248199corregidaporcajareapalancada. Global1.33095sensibilidad. ERPmadura3.70% yRf5.29% mismocorte30sep. SinpaísesderevenuefueraUS, CRP0limitaciónexplícita; prueba+0.5ppERP. Kd5.70%AAA.",
+  "beta_propuesta": 1.359535362386038
+ },
+ "contra": "CapexCY2026previsto175bntrascambiodeclasificación:laeficiencianopuedesubirsolo portraspasarfinance aoperatinglease. OpenAIpuedeusarcualquiernube; M365puedeperdercaptura frenteagentesindependientes.",
+ "precio_lectura": "Elpreciosepresentasolodespuésdehistorias:DCF inversomuestraexpectativasimplícitas; nocambiar los supuestosparaigualarlo.",
+ "margenes_inverso": [
+  0.47,
+  0.52
+ ],
  "premortem": [
-  "OpenAI diversifica proveedores de cómputo y Azure pierde su cliente de IA más grande.",
-  "Copilot no convence: la adopción pagada se estanca y Microsoft 365 crece solo por precio.",
-  "Exceso de capacidad de centros de datos en 2028: precios de GPU en la nube bajan y hay deterioro de activos.",
-  "Falta energía o chips y Microsoft no puede entregar la capacidad vendida.",
-  "Regulación (competencia en la nube y en IA) limita la venta atada de productos."
+  {
+   "riesgo": "Utilización de capacidad menor que diseñada",
+   "mecanismo": "El costo fijo de centros y GPU crece más rápido que consumo facturable",
+   "senal": "Capex/ventas sube dos años y conversiónOCF-capex cae"
+  },
+  {
+   "riesgo": "IA reduce el precio por usuario",
+   "mecanismo": "Agentes externos sustituyen seats y licencias",
+   "senal": "M365 growth<10% mientrasAzure price/mixdebilita"
+  },
+  {
+   "riesgo": "OpenAI diversifica suministro",
+   "mecanismo": "Menos exclusividad y más capital comprometido que volumen",
+   "senal": "RPOexOpenAI sedesacelera y plazoRPOsube"
+  },
+  {
+   "riesgo": "Contabilidad mejora margen sin caja",
+   "mecanismo": "Vida útil25años yreclasificaciónleases disminuyenD&A/capexcontable",
+   "senal": "MargenGAAPsubepero cashreturnoncapitalcae"
+  }
  ],
- "contra": "el FCFF cayó a menos de la mitad en dos años mientras el capex se triplicó; si el crecimiento de Azure baja a ~20% antes de que el capex se modere, la historia Conservadora se vuelve la central.",
  "indicadores": [
-  [
-   "Azure y otros servicios de nube (interanual)",
-   "~+30% (FY26)",
-   "≥ +25%",
-   "≤ +18%"
-  ],
-  [
-   "Microsoft 365 comercial / Copilot",
-   "En alza",
-   "ARPU creciendo ≥ 8%",
-   "Asientos de Copilot estancados"
-  ],
-  [
-   "Capex / ingresos",
-   "~35% (FY26)",
-   "Estable o bajando con ingresos creciendo",
-   "Sube sin aceleración de Azure"
-  ],
-  [
-   "Margen operativo",
-   "46,8%",
-   "≥ 45%",
-   "≤ 42%"
-  ],
-  [
-   "Dependencia de OpenAI",
-   "Alta",
-   "Base de clientes de IA diversificada",
-   "Pérdida de cargas de OpenAI"
-  ]
+  "Azure CCgrowth y demanda fueraOpenAI",
+  "Copilot paidseats yARPU/netretention",
+  "RPOexOpenAI ycurrentRPO",
+  "Capexcash + newfinanceleases +opexleases",
+  "Margencloud yEBITajustado",
+  "OCF-capex despuésSBC/principalleases",
+  "Microsoft365crecimientocloudcomercial",
+  "Retornoincrementalcapital3años"
  ],
- "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
- "frase": "Plataforma de software empresarial que apuesta su capital a la infraestructura de IA",
- "confianza": "Media: el negocio es excepcional; el retorno del capex de IA no está probado",
- "cambiaria": "Crecimiento de Azure frente al capex; adopción pagada de Copilot",
- "revision": "Resultados del 1T FY27 (oct-2026)",
  "fuentes": [
-  [
-   "Microsoft, resultados del 4T FY2026",
-   "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
-  ],
-  [
-   "Microsoft, ingresos por segmento del 4T FY2025",
-   "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/segment-revenues"
-  ],
-  [
-   "Digital Applied, resultados FY26 Q4 y ARR de Copilot",
-   "https://www.digitalapplied.com/blog/microsoft-fy26-q4-earnings-copilot-arr"
-  ],
-  [
-   "CNBC, resultados de AWS del 2T 2026",
-   "https://www.cnbc.com/2026/07/30/aws-earnings-q2-2026.html"
-  ],
-  [
-   "Mauboussin & Callahan, The Base Rate Book (2016)",
-   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
-  ],
-  [
-   "Damodaran, Betas by Sector (US), enero 2026",
-   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
-  ],
-  [
-   "Microsoft, 8-K del 2-sep-2026 (nuevos segmentos desde FY2027)",
-   "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
-  ]
- ],
- "arrendamientos": {
-  "vp": 20769.81262258639,
-  "ajuste_ebit": 4000.8839110590875,
-  "margen_pp": 0.01205670192792013,
-  "capital_ventas": 0.06259002896762102,
-  "cierre": "2026-06-30",
-  "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
- },
- "justificacion": [
-  [
-   "Crecimiento: doble dígito, con la nube y Copilot.",
-   "Microsoft facturó US$331.839 millones en FY2026 (+17,8%), impulsada por Azure (~+30%). La Base desacelera cada segmento: Productivity (Microsoft 365, Dynamics, LinkedIn) de 14% a 9%, Intelligent Cloud (Azure) de 25% a 13% y More Personal Computing (Windows, Xbox) casi plano. El total es {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de este tamaño lo lograron, pero Microsoft lleva cinco años creciendo a doble dígito con más de US$150.000 millones de ventas: es la excepción que confirma la regla. Aun así no extrapolamos el 17,8% de FY26. La Conservadora ({cagrB}) es un capex que rinde menos; la Disrupción ({cagrC}), una corrección de la demanda de cómputo para IA; la Optimista ({cagrD}), Microsoft como plataforma empresarial de IA. Si Azure baja a ~18% de crecimiento, la Base se cae."
-  ],
-  [
-   "Margen: el capex todavía no está en la depreciación.",
-   "El margen operativo subió a 46,8% pese al capex, porque la depreciación todavía no refleja toda la inversión (los centros de datos se deprecian en 5-6 años). La Base usa 45% en base reportada ({mA} en el modelo, que capitaliza I+D con vida de {rd_vida} años y trata los arrendamientos como deuda): un poco menos que hoy, porque la depreciación de la IA y su menor margen frente al software empujan hacia abajo, y Copilot y el precio de Microsoft 365 empujan hacia arriba. El rango va de {mC} a {mD}. Por la escala de Microsoft, el margen mueve menos el valor que el crecimiento o la tasa: dos puntos llevan la Base a {s_m_lo} o {s_m_hi}."
-  ],
-  [
-   "Reinversión: el cambio de régimen.",
-   "Este es el punto donde Microsoft dejó de ser una empresa de software puro. El capex pasó de US$44.477 millones (FY24) a US$115.948 millones (FY26), y el flujo libre cayó a menos de la mitad. La hoja usa un ventas/capital de {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital, cuando antes bastaba una fracción. La Optimista lo baja a {s2cD}× porque crecer más exige todavía más centros de datos. El valor depende de que el retorno de ese capital supere el costo de capital de ~10%, y la evidencia aún es incompleta: la demanda está concentrada en pocos clientes (OpenAI). Después del año 10 la Base conserva un ROIC de {roicT}, el promedio de su industria en la base del modelo (con I+D capitalizado), por debajo de su ROIC actual (25,4%): costos de cambio y efectos de red en Office, Azure y Windows sostuvieron un ROIC de 30-72% en 2021-2026. Si el capex no rinde y el ROIC terminal cae al costo de capital, la Base vale {s_roic}: es el riesgo central de la tesis."
-  ],
-  [
-   "Descuento y terminal.",
-   "La hoja usa una beta de {beta}, la bottom-up de software en EE.UU. reapalancada; la regresión (1,13-1,15) queda como referencia. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA}, igual a la tasa libre de riesgo, y el terminal explica {terminal} del valor operativo: tres cuartas partes del valor están más allá del año 10. Por eso la tasa pesa tanto: un punto más lleva la Base a {s_k_hi}, uno menos a {s_k_lo}."
-  ],
-  [
-   "Probabilidades y lectura del resultado.",
-   "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo entre la Base y la Optimista ({vD}). La evidencia en contra de la Base es que el flujo libre cayó a la mitad mientras el capex se triplicaba; si Azure baja a ~20% antes de que el capex se modere, la Conservadora se vuelve la central. Las acciones se fijan en {acciones} millones."
-  ]
+  {
+   "nombre": "SEC 10-K FY2026,29-jul2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+  },
+  {
+   "nombre": "SEC8-Krestatement,2-sep2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm"
+  },
+  {
+   "nombre": "MicrosoftQ4FY26earnings",
+   "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
+  },
+  {
+   "nombre": "DamodaranERP Oct26",
+   "url": "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+  }
  ]
 }

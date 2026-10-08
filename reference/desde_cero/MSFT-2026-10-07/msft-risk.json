@@ -1,0 +1,11 @@
+{
+ "ticker": "MSFT",
+ "corte": "2026-09-30",
+ "beta_regresion": 1.151787846030462,
+ "n": 259,
+ "r2": 0.4470873041279116,
+ "ventana": "2021-09-30 / 2026-09-25, semanal; ^GSPC price-only; simpleOLSsinbetaajustado",
+ "beta_global": 1.359535362386038,
+ "bu_global": 1.33095025,
+ "source": "YahooFinancechartMSFT/GSPC"
+}
