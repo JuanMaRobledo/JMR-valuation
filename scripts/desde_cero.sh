@@ -17,6 +17,13 @@ cd "$(dirname "$0")/.."
 export PYTHONPATH=.:scripts SEC_EDGAR_USER_AGENT="${SEC_EDGAR_USER_AGENT:-JMR Valuation juan0804@gmail.com}"
 FASE=$1; T=$(echo "$2" | tr a-z A-Z)
 
+# Local Colombian securities have their own collector, templates and workspace.
+# Never send them through SEC or seed a US valuation with industrial defaults.
+if [[ "$T" == *.CL ]]; then
+  echo "Acción local colombiana: usa scripts/colombia_datos.py con --web-repo y --output. El flujo SEC/EEUU no se ejecutó."
+  exit 2
+fi
+
 case "$FASE" in
 datos)
   SID=$3; PEERS=$4; IND=$5

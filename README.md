@@ -162,3 +162,19 @@ El refresco falla sin escribir el JSON si más del 20% de los símbolos da error
 menos del 80% tiene precio. El workflow del sitio ejecuta esta ampliación después
 del screener estadounidense y antes de publicar. Pruebas aisladas sin dependencias:
 `python -m unittest discover -s tests -p test_europe_screener.py -v`.
+# Acciones colombianas: entrada independiente
+
+Para acciones locales BVC usa el módulo Colombia de `JuanMaRobledo/Modelo-JMR`:
+
+```bash
+python3 scripts/colombia_datos.py ECOPETROL.CL \
+  --web-repo /ruta/Modelo-JMR --output /ruta/trabajo
+```
+
+El descargador usa el mismo contrato que la app, crea un expediente nuevo por
+ejecución y descarga precio COP, observaciones financieras, CSV y prompts
+propios. No usa SEC EDGAR, `CompanyInputs` de EEUU, el script histórico de
+otra empresa, las carpetas compartidas de valoraciones ni publicación
+automática. La cobertura del proveedor es parcial; la conciliación contra
+reportes oficiales, los derechos por clase y la rama de valoración deben
+validarse antes de calcular. El comando `desde_cero.sh` rechaza tickers `.CL`.
