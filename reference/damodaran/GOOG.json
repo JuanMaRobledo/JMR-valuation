@@ -41,7 +41,8 @@
     ]
    },
    "id": "A",
-   "tesis": "base"
+   "tesis": "base",
+   "roic_terminal": 0.2837744000520741
   },
   {
    "nombre": "Conservadora · La IA conversacional erosiona Search",
@@ -136,7 +137,8 @@
     ]
    },
    "id": "D",
-   "tesis": "optimista"
+   "tesis": "optimista",
+   "roic_terminal": 0.2837744000520741
   }
  ],
  "margenes_inverso": [
@@ -232,7 +234,7 @@
   "texto": "El margen operativo subió de 27,4% (2023) a ~33% y fue 34% en el 2T26, con Cloud ya rentable. La hoja supone 32,5% el próximo año y 35% de objetivo (antes 33,5%). Dos fuerzas se cruzan: la escala de Cloud sube el margen, y la depreciación del capex de IA y el costo de servir respuestas generativas en Search lo bajan. Las historias van de 27% (remedios y guerra de precios) a 37% (plataforma de IA dominante)."
  },
  "reinversion": {
-  "texto": "Esta es la pieza que más cambió. El capex se triplicó en dos años (US$91.447 millones en 2025) y el FCFF cayó de US$71.236 millones a US$14.612 millones. Con un capex 2026 de US$195-205 mil millones, la hoja pasó a un sales-to-capital de 1,2 (años 1-5) y 1,5 (años 6-10), antes 2,5 y 2: la reinversión anterior (~US$14.000 millones al año) era una fracción del gasto real. En la historia Optimista se baja a 1,0 porque crecer tanto en Cloud exige aún más centros de datos. El valor depende de que ese capital rinda por encima del costo de capital: la demanda de Cloud (+82%) es la mejor evidencia a favor. Ventaja durable: escala y efectos de red en búsqueda, YouTube y Android, con ROIC estable de 24-31% y la Búsqueda todavía creciendo. El ROIC después del año 10 es 29,3%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión. La hoja usa un ventas/capital de 1,15 (años 1-5) y 1,43 (años 6-10): los años 1-5 cargan el pico de capex de IA; en los 6-10 la capacidad ya está construida, cerca del sector (1,35). Con margen objetivo de 35,3% e impuesto marginal de 16%, el capital nuevo rinde ~34% y ~42% (revisión del 5-oct-2026: se quitó el tope de la auditoría del 4-oct, que lo comparaba con un ROIC actual cargado de crédito mercantil)."
+  "texto": "La Base usa ventas/capital 1.1537× en años 1–5 y un ancla de 1.4283× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 33.27% y el terminal de Base 28.38%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Alphabet: referencia compuesta de publicidad (82%) y software/nube (18%), consistente con la mezcla usada para beta. Capital sectorial por unidad de ingreso = margen ajustado después de impuestos / ROIC ajustado. ROIC compuesto = (0,82×0,0969+0,18×0,3262)/(0,82×0,0969/0,2772+0,18×0,3262/0,2931842949) = 28.3774%. Es un proxy de capital sectorial por mezcla, no ROIC de capital observado por segmento. No se utiliza Software (Internet) 3,43% como referencia terminal de Alphabet. Mantiene beta compuesta 1,07 y la industria del selector solo para otras comparaciones. Fuentes NYU roc.html y margin.html, ene-2026."
  },
  "prob_texto": "Base (40%) es lo que muestra 2026: Search sigue creciendo y Cloud se vuelve un segundo motor que desacelera con la escala. Conservadora (25%) es la erosión de la Búsqueda por la IA conversacional (competencia de OpenAI, cambios en el comportamiento). Disrupción (15%) combina remedios antimonopolio más duros y una guerra de precios en IA que baja márgenes. Optimista (20%) es Alphabet como plataforma dominante de IA (modelos, chips y nube). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -336,5 +338,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA}, cerca del precio ({precio}); el esperado, {ve}, es menor porque la Conservadora y la Disrupción suman 40% y en ambas la ventaja se pierde. La evidencia en contra de la Base es el capex: crece más rápido que los ingresos y el flujo libre cayó ~80% en 2025. Si la demanda de IA se enfría, la Base se sostiene en ingresos pero no en retorno sobre el capital. Los dos juicios antimonopolio siguen en apelación. Las acciones se fijan en {acciones} millones; las recompras no se modelan. En 2026 Alphabet emitió US$19.063 millones en acciones preferentes convertibles (6,25%; 19 millones a US$1.000 de liquidación, según el 10-Q del 2T26): se restan del patrimonio como un derecho separado de US$19.000 millones, sin sumarlas a las acciones. Es un tratamiento provisional hasta modelar la conversión de 2029 y los capped calls."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.2837744000520741,
+  "motivo": "Alphabet: referencia compuesta de publicidad (82%) y software/nube (18%), consistente con la mezcla usada para beta. Capital sectorial por unidad de ingreso = margen ajustado después de impuestos / ROIC ajustado. ROIC compuesto = (0,82×0,0969+0,18×0,3262)/(0,82×0,0969/0,2772+0,18×0,3262/0,2931842949) = 28.3774%. Es un proxy de capital sectorial por mezcla, no ROIC de capital observado por segmento. No se utiliza Software (Internet) 3,43% como referencia terminal de Alphabet. Mantiene beta compuesta 1,07 y la industria del selector solo para otras comparaciones. Fuentes NYU roc.html y margin.html, ene-2026.",
+  "convergencia": true,
+  "g3": false
+ }
 }

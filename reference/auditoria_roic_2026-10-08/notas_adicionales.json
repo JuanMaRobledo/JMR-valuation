@@ -1,0 +1,92 @@
+{
+  "LULU": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": null,
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "MCD": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": null,
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "CELH": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": null,
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "INTU": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 1,54 (Damodaran, 5-oct-2026): el del sector Software (System & Application) en EE.UU. La Base crece de forma orgánica (QuickBooks, nómina, pagos, TurboTax, Credit Karma) y Intuit no compra desde Mailchimp (2021). El capital actual (ventas 1,08 veces el capital) carga ~US$14.000M de crédito mercantil de Credit Karma y Mailchimp, y el capex orgánico es mínimo (US$175M en FY26 frente a US$8.838M de flujo operativo): el ventas/capital orgánico es mucho mayor. El del sector, que ya incluye empresas que compran, es una referencia prudente. Con el margen objetivo (32,2%) y un impuesto de 23% el capital nuevo rinde ~38%. Antes 1,18; antes de la auditoría 1,88 (la auditoría del 4-oct topaba el rendimiento en el ROIC de la industria, 29,3%).",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "UBER": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 2,0 en los años 6-10 (Damodaran, 5-oct-2026): baja hacia el del sector en EE.UU. (1,98); el capital nuevo rinde ~32% antes del ROIC terminal = costo de capital. Antes 1,11.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "GOOG": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 1,43 (años 6-10). Damodaran (Investment Valuation, cap. 11): el ventas/capital se elige con el de la empresa hoy, el marginal y el del sector, y el rendimiento del capital nuevo debe ser creíble frente al ROIC de la industria. La auditoría del 4-oct-2026 lo había topado con el ROIC actual, que incluye el crédito mercantil de compras pasadas y subestima lo que rinde el crecimiento orgánico; se quita el tope (revisión del 5-oct-2026). Alphabet: hoy 1,22, marginal 0,44-0,65 por el pico de capex de IA, sector Software (Internet) 1,35. Los años 1-5 (1,15) cargan ese capex; en los 6-10 la capacidad ya está construida. El capital nuevo rinde ~42%, frente al ROIC terminal de 29,3% (industria). Antes 1,12.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "ZTS": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 1,11 (el del sector Drugs (Pharmaceutical)). Damodaran (Investment Valuation, cap. 11): el ventas/capital se elige con el de la empresa hoy, el marginal y el del sector, y el rendimiento del capital nuevo debe ser creíble frente al ROIC de la industria. La auditoría del 4-oct-2026 lo había topado con el ROIC actual, que incluye el crédito mercantil de compras pasadas y subestima lo que rinde el crecimiento orgánico; se quita el tope (revisión del 5-oct-2026). Zoetis: hoy 0,89 (con el crédito mercantil de las compras), marginal 0,32 (último año) y 1,03 (tres años); capex de US$521M LTM con D&A de ~US$480M. El capital nuevo rinde ~32%; no se vuelve al 1,91 anterior a la auditoría porque implicaba ~55%, muy por encima de su industria (17%). Antes 0,91.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "PLTR": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Revisión 1-oct-2026: antes 4.5, ahora 3.8377. Ventas/capital con el capital arrendado: 1/(1/4.5 + 0.0384), con VP de arrendamientos 236.1 / ventas 6155.9.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "DPZ": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 3,4 en los años 6-10 (Damodaran, 5-oct-2026): punto medio entre el de Domino's (5,37) y el del sector (1,51), para que el rendimiento del capital nuevo baje gradualmente (~84% → ~53%) hacia el ROIC terminal de la industria (18,4%). Antes 2,6415.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "AFYA": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 1,2 en los años 6-10 (Damodaran, 5-oct-2026; valor del analista anterior a la auditoría del 4-oct): cuando las plazas autorizadas maduran, crecer exige plazas nuevas, compradas o construidas; queda cerca del sector Education en la tabla global (1,16). Antes 0,75.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "EPAM": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 2,83 (años 6-10). Damodaran (Investment Valuation, cap. 11): el ventas/capital se elige con el de la empresa hoy, el marginal y el del sector, y el rendimiento del capital nuevo debe ser creíble frente al ROIC de la industria. La auditoría del 4-oct-2026 lo había topado con el ROIC actual, que incluye el crédito mercantil de compras pasadas y subestima lo que rinde el crecimiento orgánico; se quita el tope (revisión del 5-oct-2026). Rinde ~28%. Valor del analista, con el capital arrendado. Antes 2,65.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "ONON": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": null,
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "NVDA": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Revisión 1-oct-2026: antes 2.5, ahora 2.4436. Ventas/capital con el capital arrendado: 1/(1/2.5 + 0.0092), con VP de arrendamientos 2798.0 / ventas 302970.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "ADBE": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Auditoría SEC 04-Oct-2026: antes 4.206, ahora 1.23. Ventas/capital de ADBE (años 6-10): con margen objetivo de 40.1% e impuesto marginal de 25%, 4.21 implicaba 126% de rendimiento sobre el capital nuevo, frente a un ROIC actual de 37.0% y de su industria de 20.6%. Damodaran (Investment Valuation cap. 11, p. 45): bajar ventas/capital hasta que el rendimiento converja; se lleva al techo de 37.0% (el mayor de los dos): 1.23.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  },
+  "NKE": {
+    "sheet": "Input sheet",
+    "cell": "B33",
+    "before": "Ventas/capital 2,6 (Damodaran, 5-oct-2026): el de Nike hoy (2,61, ventas LTM / capital invertido con arrendamientos) y el del sector Shoe en EE.UU. (2,62). Con el margen objetivo (11,6%) y el impuesto de 25% el capital nuevo rinde ~22,6%, lo mismo que el capital actual a ese margen y cerca del ROIC de la industria (20,9%); el ROIC actual (14,7%) está deprimido por el margen, no por más capital por venta. Antes 2,1 (Shoe global), que suponía 24% más capital por dólar de ventas nuevas que el que Nike usa.",
+    "after": "Revisión 8-oct-2026: este valor es el ancla de productividad del capital nuevo al comienzo de la transición. Con B78=Yes, en años 6–10 se interpola la intensidad (1/ventas-capital) hacia margen después de impuestos / ROIC terminal propio de cada historia. No es una razón constante durante toda la segunda etapa ni el ROIC medio del capital instalado."
+  }
+}

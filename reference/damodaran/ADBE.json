@@ -37,7 +37,8 @@
    "tesis": "base",
    "tesis_titulo": "Adobe monetiza la IA y conserva su posición",
    "tesis_que": "Adobe mantiene el papel de sus herramientas en los flujos profesionales y cobra las funciones de IA mediante suscripciones, créditos o planes superiores. La IA ayuda a defender la retención y el gasto por cliente, pero no provoca una aceleración permanente. La competencia limita el crecimiento sin deshacer la ventaja comercial.",
-   "tesis_contraste": "La confirmarían renovaciones y precio realizado estables, monetización de IA que aporte ventas y márgenes compatibles con el coste de cómputo. Perdería fuerza si el crecimiento solo se sostiene con descuentos, si empeora la retención o si la IA aumenta el coste sin elevar el gasto del cliente."
+   "tesis_contraste": "La confirmarían renovaciones y precio realizado estables, monetización de IA que aporte ventas y márgenes compatibles con el coste de cómputo. Perdería fuerza si el crecimiento solo se sostiene con descuentos, si empeora la retención o si la IA aumenta el coste sin elevar el gasto del cliente.",
+   "roic_terminal": 0.2931842949283384
   },
   {
    "nombre": "Conservadora · Erosión gradual frente a Figma y Canva",
@@ -119,7 +120,8 @@
    "tesis": "optimista",
    "tesis_titulo": "La IA amplía el mercado y Adobe captura el crecimiento",
    "tesis_que": "La IA permite que más personas y empresas creen y distribuyan contenido, aumenta el volumen de trabajo y el gasto por cliente, y Adobe captura una parte relevante de esa expansión con Firefly, Acrobat y GenStudio. Los ingresos adicionales compensan el coste de cómputo y sostienen la ventaja competitiva.",
-   "tesis_contraste": "La confirmarían expansión de clientes y gasto, monetización de IA que aporte crecimiento adicional y mejora de margen con retención sólida. Se debilitaría si el ARR de IA solo sustituye ingresos existentes o si aumenta su uso sin una contribución económica suficiente."
+   "tesis_contraste": "La confirmarían expansión de clientes y gasto, monetización de IA que aporte crecimiento adicional y mejora de margen con retención sólida. Se debilitaría si el ARR de IA solo sustituye ingresos existentes o si aumenta su uso sin una contribución económica suficiente.",
+   "roic_terminal": 0.2931842949283384
   }
  ],
  "margenes_inverso": [
@@ -208,7 +210,7 @@
   "texto": "El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado)."
  },
  "reinversion": {
-  "texto": "Adobe casi no necesita capital para crecer: el capex de FY25 fue US$179 millones (~0,8% de las ventas) y el FCFF, ~US$8.700 millones. La hoja usa un ventas/capital de 1,23 (años 1-5) y 1,23 (años 6-10): con margen objetivo de 40,1% e impuesto marginal de 25%, cada dólar de capital nuevo rinde ~37% y ~37%, sin superar el mayor entre su ROIC actual (37,0%) y el de su industria (20,6%) (Damodaran, Investment Valuation cap. 11, p. 45; revisión del 4-oct-2026). Antes 3,77 y 4,21, que implicaban ~113% y ~126% sobre el capital nuevo. El riesgo está en las compras: si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma por US$20.000 millones), la reinversión real sería mucho mayor que la del DCF. Ventaja durable: costos de cambio y estándar de la industria creativa y documental, con ROIC en alza (38% → 59%). El ROIC después del año 10 es 20,6%, el promedio de su industria según Damodaran llevado a la base con I+D capitalizado. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "La Base usa ventas/capital 1.2300× en años 1–5 y un ancla de 1.2300× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 37.00% y el terminal de Base 29.32%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html"
  },
  "prob_texto": "Base (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. Conservadora (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. Disrupción (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. Optimista (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -318,7 +320,7 @@
   ],
   [
    "Reinversión y ventas/capital: una hipótesis todavía incompleta.",
-   "El modelo usa {s2c1}× en los años 1-5 y {s2c2}× en los años 6-10, con el capital arrendado y el I+D capitalizado: cada dólar de ventas nuevas exige ~US${cap1} de capital. Es el ventas/capital de Adobe hoy (1,20 con I+D capitalizado) y rinde ~37% sobre el capital nuevo con el margen objetivo, igual a su ROIC actual (37%) y por encima del de su industria (20,6%): el capital nuevo rinde lo mismo que el existente, ni más ni menos (Damodaran, Investment Valuation, cap. 11, p. 44-46). El marginal de tres años (13×) no sirve de referencia porque las recompras reducen el capital contable. El del sector (1,54) no incluye el I+D capitalizado. Si para defenderse de la IA Adobe vuelve a comprar (como intentó con Figma), la reinversión real sería mayor. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}. En Disrupción, la reinversión negativa supone recuperar capital al contraerse las ventas, un beneficio que puede exagerarse si los intangibles no son recuperables."
+   "La Base usa {s2c1}× durante los años 1–5; {s2c2}× es el ancla inicial de la transición de años 6–10. La intensidad de capital converge al retorno terminal, calculado con el ROIC sectorial ya ajustado por I+D y arrendamientos de 29,32%, sin segunda capitalización. La vida de I+D de tres años de Adobe es una convención; no constituye una homogeneización exacta con el sector. Se distingue el rendimiento del capital nuevo del ROIC medio ajustado. Con ±20% en el ancla de ventas/capital, el DCF Base va de {s_s_lo} a {s_s_hi}. En contracción, recuperar capital exige que los activos económicos sean recuperables; es un supuesto revisable."
   ],
   [
    "I+D: por qué la vida útil importa.",
@@ -336,5 +338,11 @@
    "Fuentes y alcance.",
    "Punto de partida contable: [Adobe 10-Q, cierre 28-ago-2026](https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm). Límite conceptual del crecimiento perpetuo: [Damodaran, The Stable Growth Rate](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/valquestions/stablegrowthrate.htm), revisado 1-oct-2026. Los porcentajes de escenarios y elecciones de capital son hipótesis del modelo. Esta ampliación explica la selección y sus límites; no declara resueltos los controles económicos pendientes."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.2931842949283384,
+  "motivo": "Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+  "convergencia": true,
+  "g3": false
+ }
 }

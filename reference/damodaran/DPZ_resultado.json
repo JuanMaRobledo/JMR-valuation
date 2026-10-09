@@ -1,6 +1,305 @@
 {
  "ticker": "DPZ",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "DPZ",
+  "empresa": "Domino's Pizza, Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Restaurant/Dining",
+  "segmentos": {
+   "Cadena de suministro": 2960,
+   "Regalías, tiendas propias y fondo de publicidad": 1980
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usa la beta bottom-up de Restaurant/Dining en EE.UU. (Damodaran, ene-2026: 0,78 desapalancada y corregida por caja), reapalancada por la hoja con la D/E de mercado (~0,48, deuda titulizada y arrendamientos): ~1,07. Domino's vende 93% en Norteamérica. La D/E alta explica que la beta reapalancada supere a la del sector. Tener un solo concepto (pizza a domicilio) es un riesgo propio y diversificable: está en las historias, no en la tasa (hasta el 5-oct-2026 se sumaban 0,10 y la beta era 1,17). La regresión semanal contra el S&P 500 da 0,63 a dos años y 0,77 a cinco, y queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
+  },
+  "historias": [
+   {
+    "nombre": "Base · Crece por tiendas con ventas mismas tiendas bajas",
+    "prob": 0.5,
+    "margen": 0.2,
+    "crec": {
+     "Cadena de suministro": [
+      0.04,
+      0.04,
+      0.045,
+      0.045,
+      0.045
+     ],
+     "Regalías, tiendas propias y fondo de publicidad": [
+      0.04,
+      0.045,
+      0.05,
+      0.05,
+      0.05
+     ]
+    },
+    "id": "A",
+    "tesis": "base"
+   },
+   {
+    "nombre": "Conservadora · Los agregadores erosionan la ventaja",
+    "prob": 0.25,
+    "margen": 0.185,
+    "crec": {
+     "Cadena de suministro": [
+      0.02,
+      0.02,
+      0.025,
+      0.025,
+      0.025
+     ],
+     "Regalías, tiendas propias y fondo de publicidad": [
+      0.025,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.05,
+    "margen": 0.17,
+    "crec": {
+     "Cadena de suministro": [
+      0,
+      0,
+      0.01,
+      0.01,
+      0.01
+     ],
+     "Regalías, tiendas propias y fondo de publicidad": [
+      0,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "El sistema de franquicias se debilita",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · Agregadores e internacional aceleran",
+    "prob": 0.2,
+    "margen": 0.21,
+    "crec": {
+     "Cadena de suministro": [
+      0.06,
+      0.06,
+      0.06,
+      0.055,
+      0.055
+     ],
+     "Regalías, tiendas propias y fondo de publicidad": [
+      0.07,
+      0.07,
+      0.07,
+      0.065,
+      0.06
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista"
+   }
+  ],
+  "margenes_inverso": [
+   0.19,
+   0.2,
+   0.21
+  ],
+  "historia": "Domino's es la mayor cadena de pizza del mundo y casi todas sus tiendas son franquiciadas. Gana dinero de dos formas: regalías sobre las ventas del sistema (alto margen, casi sin capital) y la venta de insumos a los franquiciados de EE.UU. y Canadá (~60% de los ingresos, margen bajo). Es un negocio de muy poco capital, con retornos altísimos y patrimonio negativo por recompras con deuda titulizada (~US$4.900 millones). Su ventaja histórica fue la conveniencia del delivery propio; los agregadores (DoorDash, Uber Eats) la estrecharon y en el 2T26 las ventas mismas tiendas fueron +0,1% en EE.UU. y −0,1% internacional, con ventas minoristas globales de +3% por aperturas. La historia de cinco años es la de un compuesto maduro que crece por tiendas nuevas; la pregunta es si las ventas por tienda vuelven a crecer.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~4,5% anual cinco años",
+    "Sí",
+    "Sí: +5% en 2024 y 2025, +3,9% en el 1S26",
+    "Probable"
+   ],
+   [
+    "Las ventas mismas tiendas de EE.UU. vuelven a +3%",
+    "Sí",
+    "Poco: planas en 2026 pese a promociones y a entrar en Uber Eats/DoorDash",
+    "Baja-media"
+   ],
+   [
+    "El margen operativo llega a 20%",
+    "Sí",
+    "Sí: 18,3% → 19,3% en dos años con escala en regalías",
+    "Probable"
+   ],
+   [
+    "La deuda titulizada se vuelve un problema",
+    "Sí",
+    "Poco: flujo estable y refinanciaciones ordenadas",
+    "Baja salvo recesión fuerte"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 4,5% anual cinco años (Base) lo logró ~67% de las empresas de ese tamaño; 6,2% (Optimista), ~56%. La hoja es realista y cercana a la mediana nominal (~6,6%). Domino's no necesita crecer mucho para valer lo que dice el DCF; su valor depende más de la duración y de los márgenes que del crecimiento.",
+  "crecimiento": {
+   "texto": "Ingresos de US$4.479 millones (2023, −1,3%), US$4.706 millones (2024, +5,1%) y US$4.940 millones (2025, +5,0%); US$2.345 millones en el 1S26 (+3,9%). En el 2T26, las ventas minoristas globales sin efecto cambiario crecieron 3,0%, con ventas mismas tiendas de +0,1% en EE.UU. y −0,1% internacional: el crecimiento viene de tiendas nuevas. La división de las historias entre cadena de suministro (~60%) y el resto (~40%) es una aproximación con el peso del costo de suministro del 1S26.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "4.479",
+      "4.706",
+      "4.940"
+     ],
+     [
+      "Crecimiento",
+      "−1,3%",
+      "+5,1%",
+      "+5,0%"
+     ],
+     [
+      "Margen operativo",
+      "18,3%",
+      "18,7%",
+      "19,3%"
+     ],
+     [
+      "FCFF (hoja)",
+      "664",
+      "642",
+      "737"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo sube lento (18,3% → 19,3%) porque la cadena de suministro diluye el margen de las regalías. La hoja supone 19% el próximo año y 20% de objetivo, un paso pequeño y creíble. El riesgo está en la rentabilidad de los franquiciados: si sus márgenes caen, Domino's tiene que subsidiar promociones o bajar el precio de los insumos. Las historias van de 17% a 21%."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 5.4000× en años 1–5 y un ancla de 3.4000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 83.01% y el terminal de Base 18.40%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 83.0121%; ROIC terminal Base 0.184. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
+  },
+  "prob_texto": "Base (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. Conservadora (25%) es el riesgo de que los agregadores sigan quitando pedidos. Disrupción (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). Optimista (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "Las ventas mismas tiendas de EE.UU. son negativas varios trimestres: los agregadores hacen irrelevante la logística propia.",
+   "Grandes franquiciados internacionales (como Domino's Pizza Enterprises o Jubilant) cierran tiendas o reducen aperturas.",
+   "La inflación de insumos y salarios comprime a los franquiciados y frena la apertura de tiendas.",
+   "Una recesión con tasas altas encarece la refinanciación de la deuda titulizada.",
+   "Las promociones permanentes bajan el ticket y el margen del sistema."
+  ],
+  "contra": "las ventas mismas tiendas están planas en EE.UU. y levemente negativas afuera pese a promociones y a la entrada en agregadores. Si esto sigue en 2027, Conservadora gana peso.",
+  "indicadores": [
+   [
+    "Ventas mismas tiendas EE.UU.",
+    "+0,1% (2T26)",
+    "≥ +2%",
+    "Negativas dos trimestres"
+   ],
+   [
+    "Ventas mismas tiendas internacionales",
+    "−0,1%",
+    "≥ +2%",
+    "≤ −2%"
+   ],
+   [
+    "Aperturas netas globales",
+    "Positivas",
+    "≥ 700 al año",
+    "Cierres netos internacionales"
+   ],
+   [
+    "Margen operativo",
+    "19,3% (2025)",
+    "≥ 19,5%",
+    "≤ 18%"
+   ],
+   [
+    "Deuda / EBITDA",
+    "~4,5x",
+    "≤ 5x",
+    "> 5,5x"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Compuesto de franquicias maduro que crece por tiendas nuevas, con ventas por tienda planas",
+  "confianza": "Media-alta en el negocio; media en el crecimiento por tienda",
+  "cambiaria": "Ventas mismas tiendas en EE.UU. y aperturas internacionales netas",
+  "revision": "Resultados del 3T26 (oct-2026)",
+  "fuentes": [
+   [
+    "Domino's, Form 10-Q del 2T 2026",
+    "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000035/dpz-20260614.htm"
+   ],
+   [
+    "Domino's, Form 10-Q del 1T 2026",
+    "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000025/dpz-20260322.htm"
+   ],
+   [
+    "Domino's, Form 10-K 2025",
+    "https://www.sec.gov/Archives/edgar/data/1286681/000119312526062321/dpz-20251228.htm"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 230.93849958907037,
+   "ajuste_ebit": 14.258250068488266,
+   "margen_pp": 0.002886285438965236,
+   "capital_ventas": 0.046748684127342184,
+   "cierre": "2026-06-14",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-06-14",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: tiendas nuevas, ventas por tienda planas.",
+    "Domino's es casi todo franquicia: gana regalías sobre las ventas del sistema (margen alto, casi sin capital) y vende insumos a los franquiciados de EE.UU. y Canadá (~60% de los ingresos, margen bajo). En el 2T26 las ventas minoristas globales crecieron 3% sin efecto cambiario, pero las ventas mismas tiendas fueron +0,1% en EE.UU. y −0,1% internacional: todo el crecimiento viene de tiendas nuevas. La Base supone exactamente eso: 4-5% al año en ambas partes del negocio, {cagrA} compuesto, cerca de la mediana nominal de empresas de su tamaño (~{tbA} lo lograron). No pedimos más porque los agregadores (DoorDash, Uber Eats) estrecharon la ventaja del delivery propio y la entrada de Domino's en esas plataformas todavía no movió las ventas por tienda. La Conservadora ({cagrB}) es que los agregadores sigan quitando pedidos; la Disrupción ({cagrC}), un sistema de franquicias que se debilita con cierres internacionales; la Optimista ({cagrD}), que agregadores e internacional aceleren. Domino's no necesita crecer mucho para valer lo que dice el DCF: su valor depende más de la duración de los retornos que del crecimiento."
+   ],
+   [
+    "Margen: un paso pequeño y creíble.",
+    "El margen sube despacio (18,3% → 19,3%) porque la cadena de suministro, que vende insumos casi al costo, diluye el margen de las regalías. La Base usa {mA}, apenas un punto más, porque no hay un motor evidente para más: el riesgo está en la rentabilidad de los franquiciados, y si sus márgenes caen Domino's tiene que subsidiar promociones o bajar el precio de los insumos. El rango va de {mC} a {mD}. Aun así el margen pesa: dos puntos llevan la Base a {s_m_lo} o {s_m_hi}, porque cada punto se aplica sobre todas las ventas del sistema y casi no hay capital que lo diluya. Lo invalidaría un margen por debajo de 18%."
+   ],
+   [
+    "Reinversión: el capital lo ponen los franquiciados.",
+    "Domino's casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa el ventas/capital de Domino's hoy, {s2c1}× en los años 1-5 (cada dólar de ventas nuevas exige ~US${cap1}; en tres años las ventas crecieron US$403 millones con US$6 millones de capital), y {s2c2}× en los años 6-10, a mitad de camino hacia el sector (1,51), que es de operadores con locales propios. Con el margen objetivo el capital nuevo rinde ~84% y luego ~53%, frente a un ROIC actual altísimo (~81% en el modelo, 65-78% en 2021-2026). El flujo libre (~US$670 millones en 2025) va a dividendos y recompras financiadas en parte con deuda titulizada (~US$4.900 millones), por eso el patrimonio contable es negativo. Después del año 10 la Base no conserva ese 81%: usa {roicT}, el promedio de la industria, porque Damodaran limita el ROIC terminal de una ventaja duradera al de su sector; suponer que un ROIC de 80% dura para siempre sería extrapolar. Si la ventaja desapareciera (ROIC terminal igual al costo de capital) la Base caería a {s_roic}; por eso la Conservadora y la Disrupción usan el costo de capital."
+   ],
+   [
+    "Descuento: una empresa muy apalancada.",
+    "El costo de capital empieza bajo ({wacc0}) porque la deuda pesa mucho en la estructura y es más barata que el patrimonio, y converge a {waccT}. La beta es {beta}: la bottom-up de restaurantes en EE.UU. reapalancada con la deuda de Domino's, alta porque el patrimonio está muy apalancado; la regresión (0,63-0,77) queda como referencia. Es el punto donde más se apoya el valor: un punto más de tasa lleva la Base a {s_k_hi}; uno menos, a {s_k_lo}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo. La refinanciación de la deuda titulizada con tasas altas es un riesgo que no está en la tasa y que conviene vigilar (deuda/EBITDA ~4,5×; por encima de 5,5× cambiaría la lectura)."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}, más que en otras empresas, porque es la continuación de lo que se ve desde 2024; la Conservadora {pB}, los agregadores; la Disrupción {pC}; la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}. La distancia entre la Base y la Conservadora ({vB}) es grande porque la Conservadora además pierde el ROIC excedente: no solo crece menos, sino que su crecimiento deja de crear valor. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.184,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 83.0121%; ROIC terminal Base 0.184. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -27,12 +326,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.184,
-  "salesToCapital": 5.4
+  "salesToCapital": 5.4,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 235.03244896010239,
- "precio": 299.61,
- "dcf_base": 381.2947329118326,
+ "dcf_sin_exceso": 209.09109350360941,
+ "precio": 304.3145,
+ "dcf_base": 371.31034600665726,
  "g_ref": 0.0446101410616274,
  "m_base": 0.202886,
  "s2c": 5.4,
@@ -136,12 +436,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.184,
    "detalle": {
-    "v": 381.29473291183297,
-    "pvFlujos": 6077.861700919584,
+    "v": 371.3103460066576,
+    "pvFlujos": 5747.378494358278,
     "pvTerminal": 11462.449427871623,
     "valorTerminal": 25347.348757832384,
-    "activosOperativos": 17540.311128791203,
-    "patrimonio": 12620.855659381672,
+    "activosOperativos": 17209.8279222299,
+    "patrimonio": 12290.372452820367,
     "ingresos": [
      5027.81,
      5228.9224,
@@ -179,11 +479,11 @@
      49.66839424066654,
      52.0099358582468,
      55.81713962621523,
-     95.19027252215037,
-     102.26881760976138,
-     109.93733338481033,
-     118.25199690087335,
-     124.50752753692969
+     131.74352734521605,
+     180.47121511660797,
+     235.48782345235466,
+     297.5259732854655,
+     359.4182448961409
     ],
     "flujo": [
      null,
@@ -192,11 +492,11 @@
      836.5557530626031,
      885.2116634984211,
      935.2437316870787,
-     940.6842979353331,
-     981.6514865315934,
-     1025.5186521494124,
-     1072.51136790474,
-     1125.6428894931253
+     904.1310431122674,
+     903.4490890247469,
+     899.9681620818681,
+     893.2373915201478,
+     890.7321721339141
     ],
     "tasa": [
      null,
@@ -258,10 +558,10 @@
     "wacc0": 0.07947179420092113,
     "margenY1": 0.192886
    },
-   "valor_bruto": 381.29473291183297,
-   "valor_bruto_prop": 381.61700502901135,
-   "valor_beta_hoja": 381.29473291183297,
-   "valor_beta_prop": 381.61700502901135
+   "valor_bruto": 371.3103460066576,
+   "valor_bruto_prop": 371.62593032025546,
+   "valor_beta_hoja": 371.3103460066576,
+   "valor_beta_prop": 371.62593032025546
   },
   {
    "nombre": "Conservadora · Los agregadores erosionan la ventaja",
@@ -313,12 +613,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 175.59601987927175,
-    "pvFlujos": 5352.923144875317,
+    "v": 155.92345333782038,
+    "pvFlujos": 4701.761192353277,
     "pvTerminal": 5378.76058253811,
     "valorTerminal": 11894.25708949807,
-    "activosOperativos": 10731.683727413427,
-    "patrimonio": 5812.2282580038955,
+    "activosOperativos": 10080.521774891386,
+    "patrimonio": 5161.066305481854,
     "ingresos": [
      5027.81,
      5138.442175506073,
@@ -356,11 +656,11 @@
      27.047800222936797,
      27.784866575592517,
      33.996855478395545,
-     64.68648699057667,
-     76.39159369618697,
-     89.32463426609796,
-     103.73222924583469,
-     109.21966417293922
+     123.35172811149579,
+     214.47115565497515,
+     330.6636758743342,
+     476.11081899686366,
+     597.593503689284
     ],
     "flujo": [
      null,
@@ -369,11 +669,11 @@
      774.4815437977811,
      791.0728880251615,
      802.5452707143851,
-     796.3437634056397,
-     814.2781131440571,
-     836.5918378407816,
-     863.5942628613947,
-     906.3503921912709
+     737.6785222847207,
+     676.1985511852689,
+     595.2527962325454,
+     491.2156731103657,
+     417.9765526749261
     ],
     "tasa": [
      null,
@@ -435,10 +735,10 @@
     "wacc0": 0.07947179420092113,
     "margenY1": 0.192886
    },
-   "valor_bruto": 175.59601987927175,
-   "valor_bruto_prop": 175.7789740978299,
-   "valor_beta_hoja": 175.59601987927175,
-   "valor_beta_prop": 175.7789740978299
+   "valor_bruto": 155.92345333782038,
+   "valor_bruto_prop": 156.09318187066543,
+   "valor_beta_hoja": 155.92345333782038,
+   "valor_beta_prop": 156.09318187066543
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -492,12 +792,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 106.84143208957009,
-    "pvFlujos": 4758.945559774947,
+    "v": 103.87632098561748,
+    "pvFlujos": 4660.800382234116,
     "pvTerminal": 3696.961311799356,
     "valorTerminal": 8175.230634957904,
-    "activosOperativos": 8455.906871574301,
-    "patrimonio": 3536.45140216477,
+    "activosOperativos": 8357.76169403347,
+    "patrimonio": 3438.3062246239388,
     "ingresos": [
      5027.81,
      5027.81,
@@ -535,11 +835,11 @@
      9.441558463930185,
      9.535974048569388,
      9.6313337890551,
-     15.449792495737176,
-     15.604290420694591,
-     15.760333324901694,
-     15.917936658150692,
-     16.077116024732064
+     28.096146348767796,
+     41.05932341777488,
+     54.18744660962563,
+     67.48160345103007,
+     80.94287757384052
     ],
     "flujo": [
      null,
@@ -548,11 +848,11 @@
      710.9182114481035,
      701.9387566306865,
      692.7086208957762,
-     691.8974477346694,
-     696.7801470707303,
-     701.6913106487389,
-     706.6310194836008,
-     711.5993533640952
+     679.2510938816388,
+     671.3251140736501,
+     663.2641973640149,
+     655.0673526907213,
+     646.7335918149868
     ],
     "tasa": [
      null,
@@ -614,10 +914,10 @@
     "wacc0": 0.07947179420092113,
     "margenY1": 0.192886
    },
-   "valor_bruto": 106.84143208957009,
-   "valor_bruto_prop": 106.9794194057364,
-   "valor_beta_hoja": 106.84143208957009,
-   "valor_beta_prop": 106.9794194057364
+   "valor_bruto": 103.87632098561748,
+   "valor_bruto_prop": 104.01232888731865,
+   "valor_beta_hoja": 103.87632098561748,
+   "valor_beta_prop": 104.01232888731865
   },
   {
    "nombre": "Optimista · Agregadores e internacional aceleran",
@@ -668,12 +968,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.184,
    "detalle": {
-    "v": 456.4093818384346,
-    "pvFlujos": 6735.171433003601,
+    "v": 444.2465114081227,
+    "pvFlujos": 6332.580421760277,
     "pvTerminal": 13291.43457525812,
     "valorTerminal": 29391.85291860749,
-    "activosOperativos": 20026.60600826172,
-    "patrimonio": 15107.150538852187,
+    "activosOperativos": 19624.014997018392,
+    "patrimonio": 14704.55952760886,
     "ingresos": [
      5027.81,
      5349.630551012146,
@@ -711,11 +1011,11 @@
      66.26102452788304,
      67.76812614546037,
      70.59222123372247,
-     116.67218393404737,
-     121.28975126728567,
-     125.96177364759944,
-     130.67963575945055,
-     137.59258849112592
+     164.832908962235,
+     220.99965433318584,
+     280.6277819839711,
+     343.7119649115052,
+     416.7681713452235
     ],
     "flujo": [
      null,
@@ -724,11 +1024,11 @@
      903.0442947411304,
      978.8418183041092,
      1056.911549719053,
-     1070.834590567629,
-     1128.4204085387034,
-     1188.1651958974503,
-     1250.0857458040966,
-     1312.0358335792157
+     1022.6738655394413,
+     1028.7105054728033,
+     1033.4991875610785,
+     1037.053416652042,
+     1032.8602507251182
     ],
     "tasa": [
      null,
@@ -790,28 +1090,28 @@
     "wacc0": 0.07947179420092113,
     "margenY1": 0.192886
    },
-   "valor_bruto": 456.4093818384346,
-   "valor_bruto_prop": 456.7808867662218,
-   "valor_beta_hoja": 456.4093818384346,
-   "valor_beta_prop": 456.7808867662218
+   "valor_bruto": 444.2465114081227,
+   "valor_bruto_prop": 444.60988263241984,
+   "valor_beta_hoja": 444.2465114081227,
+   "valor_beta_prop": 444.60988263241984
   }
  ],
- "valor_esperado_beta_hoja": 331.1703193978999,
- "valor_esperado_beta_prop": 331.45839436249435,
+ "valor_esperado_beta_hoja": 318.6791546686893,
+ "valor_esperado_beta_prop": 318.958853598644,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.0676286377991688,
    "ke": 0.0937198516538742,
    "wacc": 0.07947179420092113,
-   "dcf_base": 381.29473291183297
+   "dcf_base": 371.3103460066576
   },
   {
    "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
    "beta": 1.0635280793632624,
    "ke": 0.0935630703713893,
    "wacc": 0.07936529058401504,
-   "dcf_base": 381.61700502901135
+   "dcf_base": 371.62593032025546
   }
  ],
  "sensibilidad": {
@@ -831,149 +1131,149 @@
   ],
   "v": [
    [
-    198.12874307530566,
-    236.05151877894994,
-    273.97429448259413,
-    311.89707018623824,
-    349.8198458898826
+    193.42247461235937,
+    230.3313714546795,
+    267.24026829699955,
+    304.14916513931956,
+    341.05806198163975
    ],
    [
-    237.94705373930844,
-    281.03702835549933,
-    324.1270029716902,
-    367.2169775878811,
-    410.306952204072
+    232.22706000677573,
+    274.0850443763129,
+    315.9430287458501,
+    357.8010131153872,
+    399.6589974849244
    ],
    [
-    282.29889401593204,
-    331.17470768062196,
-    380.0505213453117,
-    428.92633501000154,
-    477.80214867469147
+    275.3944407413767,
+    322.78344118167934,
+    370.1724416219818,
+    417.5614420622844,
+    464.950442502587
    ],
    [
-    331.64221274127283,
-    386.9858795834496,
-    442.32954642562635,
-    497.67321326780296,
-    553.0168801099796
+    323.35965393854093,
+    376.9200481259373,
+    430.48044231333364,
+    484.04083650073005,
+    537.6012306881265
    ],
    [
-    386.473585679064,
-    449.0358864310798,
-    511.5981871830957,
-    574.1604879351115,
-    636.7227886871276
+    376.5939293705835,
+    437.0294135613058,
+    497.464897752028,
+    557.9003819427502,
+    618.3358661334727
    ]
   ],
-  "referencia_constante": 380.0505213453117,
+  "referencia_constante": 370.1724416219818,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.0676286377991688,
    "margen": 0.19288628543896524,
-   "g": 0.023422270361593056,
-   "tasa_base": 0.796543861358612
+   "g": 0.02838601528546121,
+   "tasa_base": 0.7708035443130129
   },
   {
    "beta": 1.0676286377991688,
    "margen": 0.20288628543896525,
-   "g": 0.015106340219285586,
-   "tasa_base": 0.8204937401684576
+   "g": 0.020027204207830995,
+   "tasa_base": 0.8063216518814468
   },
   {
    "beta": 1.0676286377991688,
    "margen": 0.21288628543896523,
-   "g": 0.007266011697001697,
-   "tasa_base": 0.8430738863126352
+   "g": 0.012139672947166225,
+   "tasa_base": 0.8290377419121613
   },
   {
    "beta": 1.0635280793632624,
    "margen": 0.19288628543896524,
-   "g": 0.02331487320979088,
-   "tasa_base": 0.7968531651558023
+   "g": 0.028277091846616496,
+   "tasa_base": 0.7714854050401807
   },
   {
    "beta": 1.0635280793632624,
    "margen": 0.20288628543896525,
-   "g": 0.01499995717147995,
-   "tasa_base": 0.8208001233461378
+   "g": 0.01991929349078847,
+   "tasa_base": 0.8066324347465293
   },
   {
    "beta": 1.0635280793632624,
    "margen": 0.21288628543896523,
-   "g": 0.0071605751261321965,
-   "tasa_base": 0.8433775436367393
+   "g": 0.012032709568211009,
+   "tasa_base": 0.8293457964435524
   }
  ],
  "ingresos_ltm": 5027.81,
  "sens_base": {
-  "base": 381.29473291183297,
+  "base": 371.3103460066576,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 332.2463293079739
+    "valor": 323.76473055397827
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 430.34313651569215
+    "valor": 418.8559614593368
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 325.18053941725196
+    "valor": 316.90389609340986
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 443.7860891899478
+    "valor": 431.815356283733
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 564.8751996857468
+    "valor": 554.0565571624584
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 275.12659569977444
+    "valor": 265.90410701452345
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 345.85994657011605
+    "valor": 336.77753532724364
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 427.3731974671336
+    "valor": 416.4703481475881
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 363.13784086841235
+    "valor": 353.62890095872154
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 377.6137364748707
+    "valor": 368.94444166583355
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 383.7487305364745
+    "valor": 372.8876155672069
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 235.03244896010239
+    "valor": 209.09109350360941
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 371.4148571116268
+ "motor_tecnico": 371.31034600665726
 }

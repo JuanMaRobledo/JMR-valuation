@@ -1,6 +1,343 @@
 {
  "ticker": "UBER",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "UBER",
+  "empresa": "Uber Technologies, Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Transportation",
+  "segmentos": {
+   "Movilidad": 29500,
+   "Delivery": 21000,
+   "Freight": 4727
+  },
+  "riesgo": {
+   "beta_propuesta": 1.2,
+   "texto": "La hoja usa una beta de 1,20, la regresión semanal de Uber contra el S&P 500 del período rentable (1,21 a dos años, error estándar 0,20; 1,28 a cinco, 0,14). La bottom-up de «Transportation» (0,71 desapalancada y corregida por caja; 0,76-0,80 reapalancada) es de logística con activos (FedEx, UPS, C.H. Robinson) y queda 3-4 errores estándar por debajo: no describe a una plataforma de viajes y entregas de consumo discrecional. Los comparables puros dan más (desapalancadas con caja: Lyft ~1,8, DoorDash ~1,75, Instacart ~0,85), pero son más chicos y menos diversificados. Hasta el 5-oct-2026 la hoja usaba 0,80 (Transportation global). El efecto de cada beta en el DCF Base está en la tabla."
+  },
+  "historias": [
+   {
+    "nombre": "Base · Plataforma madura que escala márgenes",
+    "prob": 0.45,
+    "margen": 0.22,
+    "crec": {
+     "Movilidad": [
+      0.13,
+      0.12,
+      0.11,
+      0.1,
+      0.09
+     ],
+     "Delivery": [
+      0.15,
+      0.14,
+      0.12,
+      0.11,
+      0.1
+     ],
+     "Freight": [
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+     ]
+    },
+    "id": "A",
+    "tesis": "base"
+   },
+   {
+    "nombre": "Conservadora · Robotaxis y regulación presionan la movilidad",
+    "prob": 0.25,
+    "margen": 0.16,
+    "crec": {
+     "Movilidad": [
+      0.1,
+      0.07,
+      0.05,
+      0.04,
+      0.03
+     ],
+     "Delivery": [
+      0.12,
+      0.1,
+      0.09,
+      0.08,
+      0.07
+     ],
+     "Freight": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.1,
+    "margen": 0.1,
+    "crec": {
+     "Movilidad": [
+      0.05,
+      0,
+      -0.05,
+      -0.05,
+      -0.03
+     ],
+     "Delivery": [
+      0.1,
+      0.08,
+      0.06,
+      0.05,
+      0.05
+     ],
+     "Freight": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Waymo y Tesla desintermedian a Uber",
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · Uber es la red de los vehículos autónomos",
+    "prob": 0.2,
+    "margen": 0.26,
+    "crec": {
+     "Movilidad": [
+      0.16,
+      0.16,
+      0.15,
+      0.14,
+      0.13
+     ],
+     "Delivery": [
+      0.17,
+      0.16,
+      0.14,
+      0.12,
+      0.11
+     ],
+     "Freight": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista"
+   }
+  ],
+  "margenes_inverso": [
+   0.16,
+   0.22,
+   0.26
+  ],
+  "historia": "Uber es una plataforma que coordina demanda y oferta local: viajes (Movilidad), comida y comercio (Delivery) y carga (Freight). Su producto no es el auto ni la comida, sino la liquidez de la red: encontrar, fijar precio, pagar y completar una transacción local en minutos. Tras años de pérdidas, la escala convirtió esa red en un negocio muy rentable: margen operativo GAAP de −22% (2021) a 10,7% (2025) y 12,1% LTM, flujo libre LTM de US$10.116 millones, y en el 2T26 Movilidad ganó 30,1% sobre ingresos y Delivery 20,1%. La historia de cinco años tiene dos preguntas: si los vehículos autónomos (Waymo, Tesla, los socios de Uber) refuerzan la red o la desintermedian, y si la expansión más intensiva en capital (oferta por Delivery Hero por ~US$13.700 millones, flotas autónomas con Rivian, Nuro y Lucid) crea valor.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~11% anual cinco años",
+    "Sí",
+    "Sí: +17-18% anual en 2023-2025 y reservas +22% en Movilidad",
+    "Probable"
+   ],
+   [
+    "El margen operativo llega a 22-26%",
+    "Sí",
+    "Sí en los segmentos (Movilidad 30%); falta absorber costos corporativos",
+    "Media"
+   ],
+   [
+    "Los robotaxis desintermedian a Uber",
+    "Sí",
+    "Posible en ciudades donde Waymo o Tesla operan su propia app",
+    "Media-baja a cinco años"
+   ],
+   [
+    "Delivery Hero crea valor al precio ofrecido",
+    "Sí",
+    "Incierto: mercados competidos y precio alto",
+    "Incierto"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$25.000 millones: crecer 10,9% anual cinco años (Base) lo logró ~19% de las empresas de ese tamaño; 13,8% (Optimista), ~12%. Uber está hoy en ese grupo, pero la tasa base recuerda que las plataformas grandes desaceleran; la hoja (11,4%) ya supone un resultado del quintil superior.",
+  "crecimiento": {
+   "texto": "Ingresos de US$37.281 millones (2023, +17,0%), US$43.978 millones (2024, +18,0%) y US$52.017 millones (2025, +18,3%); LTM US$55.227 millones. En el 2T26, Movilidad tuvo resultado de segmento de US$2.215 millones (30,1% de ingresos) y Delivery US$1.055 millones (20,1%). La división LTM de las historias (Movilidad ~53%, Delivery ~38%, Freight ~9%) es una estimación con los pesos del 2T26.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2023",
+     "2024",
+     "2025",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "37.281",
+      "43.978",
+      "52.017",
+      "55.227"
+     ],
+     [
+      "Crecimiento",
+      "+17,0%",
+      "+18,0%",
+      "+18,3%",
+      "—"
+     ],
+     [
+      "Margen operativo GAAP",
+      "3,0%",
+      "6,4%",
+      "10,7%",
+      "12,1%"
+     ],
+     [
+      "FCFF (hoja)",
+      "635",
+      "8.337",
+      "11.935",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen GAAP subió 7-8 puntos por año desde 2023. La hoja suponía 26% de objetivo en cinco años, más que el margen de sus mejores segmentos; tras la revisión del 30-sep-2026 supone 14% el próximo año y 21% de objetivo (margen GAAP de 13,4% en el 2T26). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 2.2000× en años 1–5 y un ancla de 2.0000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 17.73% y el terminal de Base 8.99%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 17.7319%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
+  },
+  "prob_texto": "Base (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. Conservadora (25%) es la presión de los robotaxis y la regulación sobre Movilidad. Disrupción (10%) es la desintermediación por Waymo y Tesla. Optimista (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "Waymo y Tesla operan sus robotaxis con sus propias apps y Uber pierde los viajes urbanos más rentables.",
+   "La compra de Delivery Hero se paga cara y entra en mercados con competencia feroz.",
+   "Regulación laboral (conductores como empleados) en EE.UU. o Europa sube costos.",
+   "Guerra de precios en Delivery con DoorDash y competidores locales.",
+   "Las flotas autónomas propias o de socios exigen capital y bajan el retorno."
+  ],
+  "contra": "la oferta por Delivery Hero y las flotas autónomas cambian el perfil de capital justo cuando el margen mejora; y Waymo ya opera su propia app en varias ciudades.",
+  "indicadores": [
+   [
+    "Reservas brutas (interanual, sin divisas)",
+    "~+20%",
+    "≥ +15%",
+    "≤ +10%"
+   ],
+   [
+    "Margen de segmento de Movilidad",
+    "30,1% (2T26)",
+    "≥ 30%",
+    "≤ 26%"
+   ],
+   [
+    "Margen de segmento de Delivery",
+    "20,1% (2T26)",
+    "≥ 20%",
+    "≤ 16%"
+   ],
+   [
+    "Participación de viajes autónomos en la red de Uber",
+    "Inicial",
+    "Socios crecen dentro de Uber",
+    "Robotaxis crecen fuera de Uber"
+   ],
+   [
+    "Delivery Hero",
+    "Oferta anunciada",
+    "Cierre con precio disciplinado",
+    "Precio más alto o integración difícil"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Red de movilidad y entrega ya rentable que enfrenta a los robotaxis y se vuelve intensiva en capital",
+  "confianza": "Media: la red y los márgenes son sólidos; los autónomos y las compras son inciertos",
+  "cambiaria": "Crecimiento de viajes frente a la expansión de Waymo y Tesla; precio y cierre de Delivery Hero",
+  "revision": "Resultados del 3T26 (nov-2026)",
+  "fuentes": [
+   [
+    "Uber, resultados del 2T 2026",
+    "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx"
+   ],
+   [
+    "Uber, oferta de compra de Delivery Hero",
+    "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx"
+   ],
+   [
+    "Uber y Rivian, hasta 50.000 robotaxis",
+    "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-and-Rivian-Partner-to-Deploy-up-to-50000-Fully-Autonomous-Robotaxis-2026-TViR4R05gi/default.aspx"
+   ],
+   [
+    "Waymo, datos de seguridad (jun-2026)",
+    "https://waymo.com/blog/shorts/safetydata-june26/"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 2543.589704985397,
+   "ajuste_ebit": 158.97919125121692,
+   "margen_pp": 0.0028786497773048854,
+   "capital_ventas": 0.04605699576267762,
+   "cierre": "2026-06-30",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-06-30",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: una red que ya escala.",
+    "Uber coordina demanda y oferta local: viajes (Movilidad), comida y comercio (Delivery) y carga (Freight). Su producto es la liquidez de la red: encontrar, fijar precio, pagar y completar una transacción en minutos. Los ingresos crecieron 17-18% al año en 2023-2025 (US$52.017 millones en 2025). La Base supone Movilidad de 13% a 9%, Delivery de 15% a 10% y Freight 3%: {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de su tamaño lo lograron; Uber ya está en ese grupo, pero las plataformas grandes desaceleran. La Conservadora ({cagrB}) es la presión de los robotaxis y la regulación sobre Movilidad; la Disrupción ({cagrC}), la desintermediación por Waymo y Tesla con sus propias apps; la Optimista ({cagrD}), Uber como la red preferida de los vehículos autónomos. Si las reservas crecen 10% o menos, la Base deja de sostenerse."
+   ],
+   [
+    "Margen: hacia el de sus mejores segmentos, sin superarlo.",
+    "El margen GAAP pasó de −22% en 2021 a 12,1% LTM; en el 2T26 Movilidad ganó 30,1% sobre ingresos y Delivery 20,1%. La hoja suponía 26% de objetivo, más que el de sus mejores segmentos; la revisión del 30-sep-2026 lo bajó a 21% (en el modelo {mA}), un objetivo que la mezcla actual puede alcanzar sin que ningún segmento mejore de forma extraordinaria. Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas. La Conservadora usa {mB}, la Disrupción {mC} y la Optimista {mD}. Dos puntos mueven la Base a {s_m_lo} o {s_m_hi}."
+   ],
+   [
+    "Reinversión: poco capital, con flotas autónomas en camino.",
+    "Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones al año): en tres años las ventas crecieron US$20.140 millones sin capital operativo neto adicional. El capital invertido contable (US$31.546 millones) incluye US$10.162 millones de impuestos diferidos activos que aparecieron al liberar la reserva de valuación en 2024-2025; sin ellos, Uber vende 2,58 por dólar de capital y su ROIC es ~26%. La hoja usa {s2c1}× en los años 1-5 (cada dólar de ventas nuevas exige ~US${cap1}) y {s2c2}× en los años 6-10: algo menos que 2,58 por las flotas autónomas (Uber o sus socios comprarán 10.000 robotaxis de Rivian desde 2028, con opción a 40.000 más, y hay acuerdos con Lucid y Nuro). Delivery Hero no entra: la Base crece de forma orgánica y, si la compra se cierra, hay que sumar a la vez sus ingresos y su precio. Los efectos de red son reales, pero Uber gana por encima del costo de capital solo desde 2024: no alcanza para reconocer una ventaja duradera, así que el ROIC terminal es el costo de capital ({roicT}). Con esa regla, la perpetuidad casi no mueve el valor ({s_tg_lo} y {s_tg_hi}). Las pérdidas fiscales y créditos (US$3.506 millones de ahorro fiscal neto de la reserva, 10-K 2025) reducen los impuestos de los primeros años."
+   ],
+   [
+    "Descuento: la beta de la plataforma, no la del transporte de carga.",
+    "La hoja usa una beta de {beta}: la regresión de Uber, estable entre dos y cinco años. La bottom-up de transporte reapalancada daría {betabu}, pero ese sector es de logística con activos y queda muy por debajo de lo que muestran Uber y sus comparables. El costo de capital empieza en {wacc0} y baja a {waccT}; un punto más lleva la Base a {s_k_hi} y uno menos a {s_k_lo}. El terminal explica {terminal} del valor operativo."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo entre la Conservadora ({vB}) y el esperado. La evidencia en contra de la Base es que la oferta por Delivery Hero y las flotas autónomas cambian el perfil de capital justo cuando el margen mejora, y que Waymo ya opera su propia app en varias ciudades. Las acciones se fijan en {acciones} millones."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.2,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 17.7319%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -28,12 +365,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0,
-  "salesToCapital": 2.2
+  "salesToCapital": 2.2,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 81.55564167821659,
- "precio": 68.51,
- "dcf_base": 81.55564167821659,
+ "dcf_sin_exceso": 75.47881362060862,
+ "precio": 69.2772,
+ "dcf_base": 75.47881362060863,
  "g_ref": 0.10950929019812498,
  "m_base": 0.212879,
  "s2c": 2.2,
@@ -129,8 +467,8 @@
    "anios": [
     0.1290457566045593,
     0.1207185944210949,
-    0.1081986547107221,
-    0.09931270938651027,
+    0.10819865471072188,
+    0.09931270938651049,
     0.09027073586773837
    ],
    "anios6a10": [
@@ -145,17 +483,17 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 81.55564167821659,
-    "pvFlujos": 66577.77117396759,
+    "v": 75.47881362060862,
+    "pvFlujos": 54181.07839741567,
     "pvTerminal": 98181.2551523305,
     "valorTerminal": 252250.10994305892,
-    "activosOperativos": 164759.02632629807,
-    "patrimonio": 166373.01968971177,
+    "activosOperativos": 152362.33354974617,
+    "patrimonio": 153976.32691315986,
     "ingresos": [
      55227,
      62353.81,
      69881.07430000001,
-     77442.11252900002,
+     77442.112529,
      85133.09854487002,
      92818.12599721612,
      100503.15019877319,
@@ -170,7 +508,7 @@
      null,
      8909.05001899,
      10444.279447453324,
-     11086.542543173833,
+     11086.542543173831,
      13209.169831072195,
      15515.38394783947,
      16800.00481100118,
@@ -184,28 +522,28 @@
     "reinversion": [
      null,
      3421.483772727277,
-     3436.835558636369,
-     3495.902734486365,
+     3436.8355586363623,
+     3495.902734486371,
      3493.1942965209532,
      3493.1928188895768,
-     3785.071326743746,
-     3666.294292250008,
-     3483.765835277998,
-     3236.7767766885227,
-     3408.00226817534
+     5843.223646318595,
+     7653.42766462423,
+     9166.713486017301,
+     10276.83394424371,
+     12673.597507823897
     ],
     "flujo": [
      null,
      5487.566246262722,
-     7007.443888816955,
-     7590.639808687469,
+     7007.443888816962,
+     7590.63980868746,
      9715.975534551242,
      12022.191128949893,
-     13014.933484257435,
-     14399.127898674331,
-     15807.364437960721,
-     17219.039034810798,
-     18129.92619975229
+     10956.781164682587,
+     10411.99452630011,
+     10124.416787221418,
+     10178.98186725561,
+     8864.330960103734
     ],
     "tasa": [
      null,
@@ -224,8 +562,8 @@
      null,
      0.1290457566045593,
      0.1207185944210949,
-     0.1081986547107221,
-     0.09931270938651027,
+     0.10819865471072188,
+     0.09931270938651049,
      0.09027073586773837,
      0.0827965886941907,
      0.07532244152064302,
@@ -267,10 +605,10 @@
     "wacc0": 0.1028512524832744,
     "margenY1": 0.142879
    },
-   "valor_bruto": 81.55564167821659,
-   "valor_bruto_prop": 81.55564167821659,
-   "valor_beta_hoja": 81.55564167821659,
-   "valor_beta_prop": 81.55564167821659
+   "valor_bruto": 75.47881362060862,
+   "valor_bruto_prop": 75.47881362060862,
+   "valor_beta_hoja": 75.47881362060862,
+   "valor_beta_prop": 75.47881362060862
   },
   {
    "nombre": "Conservadora · Robotaxis y regulación presionan la movilidad",
@@ -329,12 +667,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 49.799814111581775,
-    "pvFlujos": 45796.8527117021,
+    "v": 47.19537094652937,
+    "pvFlujos": 40483.80428165419,
     "pvTerminal": 54180.47591362634,
     "valorTerminal": 139202.0399899633,
-    "activosOperativos": 99977.32862532843,
-    "patrimonio": 101591.32198874214,
+    "activosOperativos": 94664.28019528053,
+    "patrimonio": 96278.27355869424,
     "ingresos": [
      55227,
      60697.00000000001,
@@ -372,11 +710,11 @@
      1688.337000000002,
      1486.1057399999977,
      1609.323107175177,
-     1917.644756826965,
-     2078.137212187612,
-     2253.127387016997,
-     2444.1693443311888,
-     2573.4659026463123
+     2576.4185487691498,
+     3505.9536276891467,
+     4575.196582351137,
+     5802.778286642584,
+     6993.815096845903
     ],
     "flujo": [
      null,
@@ -385,11 +723,11 @@
      6371.368014909319,
      7224.348149836136,
      7719.815710690692,
-     7843.999279379885,
-     8152.021907135995,
-     8484.758007066246,
-     8844.195569612448,
-     9312.053515244941
+     7185.2254874376995,
+     6724.2054916344605,
+     6162.688811732106,
+     5485.586627301052,
+     4891.70432104535
     ],
     "tasa": [
      null,
@@ -451,10 +789,10 @@
     "wacc0": 0.1028512524832744,
     "margenY1": 0.142879
    },
-   "valor_bruto": 49.799814111581775,
-   "valor_bruto_prop": 49.799814111581775,
-   "valor_beta_hoja": 49.799814111581775,
-   "valor_beta_prop": 49.799814111581775
+   "valor_bruto": 47.19537094652937,
+   "valor_bruto_prop": 47.19537094652937,
+   "valor_beta_hoja": 47.19537094652937,
+   "valor_beta_prop": 47.19537094652937
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -516,12 +854,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 27.7369174688227,
-    "pvFlujos": 33454.50652771966,
+    "v": 27.60403568704758,
+    "pvFlujos": 33183.428490189115,
     "pvTerminal": 21514.645323760113,
     "valorTerminal": 55276.04673503287,
-    "activosOperativos": 54969.15185147978,
-    "patrimonio": 56583.14521489349,
+    "activosOperativos": 54698.07381394923,
+    "patrimonio": 56312.067177362944,
     "ingresos": [
      55227,
      58802,
@@ -559,11 +897,11 @@
      -67.75840909090634,
      249.86730681817951,
      252.13953525032014,
-     279.87566941184195,
-     282.420786104376,
-     284.989047427498,
-     287.5806638524664,
-     290.1958477645203
+     319.9847323301732,
+     363.36839475581735,
+     407.5146352178865,
+     452.4337354294841,
+     498.13610103994716
     ],
     "flujo": [
      null,
@@ -572,11 +910,11 @@
      5470.632681015223,
      4777.018608345755,
      4454.463753714389,
-     4469.528248207217,
-     4510.172977976597,
-     4551.187320368671,
-     4592.574636544694,
-     4634.338318231444
+     4429.419185288886,
+     4429.225369325156,
+     4428.661732578283,
+     4427.721564967676,
+     4426.398064956017
     ],
     "tasa": [
      null,
@@ -638,10 +976,10 @@
     "wacc0": 0.1028512524832744,
     "margenY1": 0.142879
    },
-   "valor_bruto": 27.7369174688227,
-   "valor_bruto_prop": 27.7369174688227,
-   "valor_beta_hoja": 27.7369174688227,
-   "valor_beta_prop": 27.7369174688227
+   "valor_bruto": 27.60403568704758,
+   "valor_bruto_prop": 27.60403568704758,
+   "valor_beta_hoja": 27.60403568704758,
+   "valor_beta_prop": 27.60403568704758
   },
   {
    "nombre": "Optimista · Uber es la red de los vehículos autónomos",
@@ -674,11 +1012,11 @@
    "tesis": "optimista",
    "margen_reportado": 0.26,
    "cagr": 0.13762519442164267,
-   "rev5": 105231.91177953752,
+   "rev5": 105231.9117795375,
    "mix5": {
-    "Movilidad": 0.5588196502520905,
-    "Delivery": 0.3838499939279307,
-    "Freight": 0.05733035581997877
+    "Movilidad": 0.5588196502520906,
+    "Delivery": 0.38384999392793073,
+    "Freight": 0.05733035581997878
    },
    "tasa_base": 0.11553716948320744,
    "anios": [
@@ -700,12 +1038,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 110.3125480647365,
-    "pvFlujos": 85392.66457677328,
+    "v": 100.76989742488819,
+    "pvFlujos": 65925.71452738658,
     "pvTerminal": 138030.2782365871,
     "valorTerminal": 354631.3683465234,
-    "activosOperativos": 223422.94281336037,
-    "patrimonio": 225036.93617677406,
+    "activosOperativos": 203955.99276397366,
+    "patrimonio": 205569.98612738735,
     "ingresos": [
      55227,
      63753.35,
@@ -743,11 +1081,11 @@
      4801.589103977279,
      5025.21562535796,
      4998.1747511262,
-     5322.926872753582,
-     4992.255901634955,
-     4502.514833605703,
-     3858.0840587996936,
-     4062.1767055101955
+     8927.809226254458,
+     11754.135459320765,
+     13650.322040833807,
+     14309.431202477726,
+     17817.45596498344
     ],
     "flujo": [
      null,
@@ -756,11 +1094,11 @@
      8673.396640894338,
      11847.344477934406,
      15749.24241044077,
-     17592.447448193056,
-     20022.044163070874,
-     22480.321467247,
-     24900.174772143833,
-     26217.39401759024
+     13987.56509469218,
+     13260.164605385064,
+     13332.514260018894,
+     14448.8276284658,
+     12462.114758116993
     ],
     "tasa": [
      null,
@@ -822,35 +1160,35 @@
     "wacc0": 0.1028512524832744,
     "margenY1": 0.142879
    },
-   "valor_bruto": 110.3125480647365,
-   "valor_bruto_prop": 110.3125480647365,
-   "valor_beta_hoja": 110.3125480647365,
-   "valor_beta_prop": 110.3125480647365
+   "valor_bruto": 100.76989742488819,
+   "valor_bruto_prop": 100.76989742488819,
+   "valor_beta_hoja": 100.76989742488819,
+   "valor_beta_prop": 100.76989742488819
   }
  ],
- "valor_esperado_beta_hoja": 73.98619364292249,
- "valor_esperado_beta_prop": 73.98619364292249,
+ "valor_esperado_beta_hoja": 68.67869191958862,
+ "valor_esperado_beta_prop": 68.67869191958862,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.2,
    "ke": 0.10875629847329094,
    "wacc": 0.1028512524832744,
-   "dcf_base": 81.55564167821659
+   "dcf_base": 75.47881362060862
   },
   {
    "enfoque": "Bottom-up del sector (Transportation, reapalancada)",
    "beta": 0.7648559116471763,
    "ke": 0.08850168340835476,
    "wacc": 0.084488310511972,
-   "dcf_base": 90.46465669030917
+   "dcf_base": 83.65833538705176
   },
   {
    "enfoque": "Propuesta (sector ajustado por riesgo propio)",
    "beta": 1.2,
    "ke": 0.10875629847329094,
    "wacc": 0.1028512524832744,
-   "dcf_base": 81.55564167821659
+   "dcf_base": 75.47881362060862
   }
  ],
  "sensibilidad": {
@@ -870,149 +1208,149 @@
   ],
   "v": [
    [
-    53.74083294461099,
-    59.79186533789353,
-    65.84289773117607,
-    71.89393012445859,
-    77.94496251774112
+    50.52116193102484,
+    56.00206691550855,
+    61.48297189999226,
+    66.96387688447598,
+    72.44478186895968
    ],
    [
-    58.48741461626404,
-    65.29882835871473,
-    72.11024210116538,
-    78.92165584361605,
-    85.73306958606673
+    54.65170991567237,
+    60.783911287468435,
+    66.9161126592645,
+    73.04831403106054,
+    79.1805154028566
    ],
    [
-    63.721981921558346,
-    71.37826386289593,
-    79.03454580423349,
-    86.69082774557106,
-    94.34710968690862
+    59.17559085563124,
+    66.02681471902685,
+    72.87803858242243,
+    79.72926244581801,
+    86.58048630921363
    ],
    [
-    69.4907450383439,
-    78.08445900859937,
-    86.67817297885485,
-    95.2718869491103,
-    103.86560091936579
+    64.12726763109075,
+    71.77123690275904,
+    79.4152061744273,
+    87.05917544609555,
+    94.70314471776383
    ],
    [
-    75.84357826766221,
-    85.47600947460563,
-    95.10844068154907,
-    104.74087188849249,
-    114.37330309543592
+    69.54370287958434,
+    78.0605755044229,
+    86.57744812926146,
+    95.09432075409998,
+    103.61119337893855
    ]
   ],
-  "referencia_constante": 79.03454580423349,
+  "referencia_constante": 72.87803858242243,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.2,
    "margen": 0.1628786497773049,
-   "g": 0.14111232987505157,
-   "tasa_base": 0.10960903921241232
+   "g": 0.16435368840983633,
+   "tasa_base": 0.07009872970327823
   },
   {
    "beta": 1.2,
    "margen": 0.2228786497773049,
-   "g": 0.06837193282345377,
-   "tasa_base": 0.3612149979910815
+   "g": 0.08715929770850628,
+   "tasa_base": 0.27398334229520727
   },
   {
    "beta": 1.2,
    "margen": 0.2628786497773049,
-   "g": 0.03442160261025837,
-   "tasa_base": 0.5825711509811157
+   "g": 0.0511781274040265,
+   "tasa_base": 0.4733186093257473
   },
   {
    "beta": 1.2,
    "margen": 0.1628786497773049,
-   "g": 0.14111232987505157,
-   "tasa_base": 0.10960903921241232
+   "g": 0.16435368840983633,
+   "tasa_base": 0.07009872970327823
   },
   {
    "beta": 1.2,
    "margen": 0.2228786497773049,
-   "g": 0.06837193282345377,
-   "tasa_base": 0.3612149979910815
+   "g": 0.08715929770850628,
+   "tasa_base": 0.27398334229520727
   },
   {
    "beta": 1.2,
    "margen": 0.2628786497773049,
-   "g": 0.03442160261025837,
-   "tasa_base": 0.5825711509811157
+   "g": 0.0511781274040265,
+   "tasa_base": 0.4733186093257473
   }
  ],
  "ingresos_ltm": 55227,
  "sens_base": {
-  "base": 81.55564167821659,
+  "base": 75.47881362060862,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 74.09761423713624
+    "valor": 68.76665948110275
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 89.01366911929694
+    "valor": 82.1909677601145
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 74.3939386620593
+    "valor": 69.28385516178066
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 89.46340379749614
+    "valor": 82.27312731923747
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 94.54718270733727
+    "valor": 86.85691806910111
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 71.32978003810345
+    "valor": 66.47176946175128
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 80.79542445878317
+    "valor": 75.21309962632971
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 82.32657170766866
+    "valor": 75.74632019862048
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 77.6720396935396
+    "valor": 71.88458440057964
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 78.94287561690949
+    "valor": 73.42483097439772
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 83.297485719088
+    "valor": 76.84813538474924
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 81.55564167821659
+    "valor": 75.47881362060862
    }
   ]
  },
  "rd_vida": 3,
  "rd_ltm": 3741,
- "motor_tecnico": 87.94281844769216
+ "motor_tecnico": 75.47881362060863
 }

@@ -1,6 +1,321 @@
 {
  "ticker": "PLTR",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "PLTR",
+  "empresa": "Palantir Technologies Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Software (System & Application)",
+  "segmentos": {
+   "Gobierno": 3200,
+   "Comercial": 2956
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usaba una beta de regresión de 1,62; tras la revisión usa la bottom-up de Software (System & Application) sin deuda, 1,25. La dependencia de contratos públicos grandes y el gobierno controlado por fundadores (clase F) suben el riesgo, pero ese riesgo está más en los flujos que en la tasa."
+  },
+  "historias": [
+   {
+    "nombre": "Base · Hipercrecimiento que desacelera con la escala",
+    "prob": 0.4,
+    "margen": 0.45,
+    "crec": {
+     "Gobierno": [
+      0.55,
+      0.35,
+      0.25,
+      0.2,
+      0.16
+     ],
+     "Comercial": [
+      0.9,
+      0.5,
+      0.32,
+      0.24,
+      0.18
+     ]
+    },
+    "id": "A",
+    "tesis": "base",
+    "roic_terminal": 0.2931842949283384
+   },
+   {
+    "nombre": "Conservadora · Se normaliza en un software de alta calidad",
+    "prob": 0.3,
+    "margen": 0.38,
+    "crec": {
+     "Gobierno": [
+      0.3,
+      0.18,
+      0.12,
+      0.1,
+      0.08
+     ],
+     "Comercial": [
+      0.5,
+      0.25,
+      0.18,
+      0.14,
+      0.12
+     ]
+    },
+    "id": "B",
+    "tesis": "conservadora",
+    "roic_terminal": 0.2931842949283384
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.1,
+    "margen": 0.3,
+    "crec": {
+     "Gobierno": [
+      0.15,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+     ],
+     "Comercial": [
+      0.25,
+      0.1,
+      0.05,
+      0.05,
+      0.05
+     ]
+    },
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Comoditización y contratos perdidos",
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · Sistema operativo de la IA empresarial",
+    "prob": 0.2,
+    "margen": 0.5,
+    "crec": {
+     "Gobierno": [
+      0.7,
+      0.5,
+      0.35,
+      0.28,
+      0.22
+     ],
+     "Comercial": [
+      1.1,
+      0.7,
+      0.45,
+      0.32,
+      0.25
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista",
+    "roic_terminal": 0.2931842949283384
+   }
+  ],
+  "margenes_inverso": [
+   0.4,
+   0.45,
+   0.5
+  ],
+  "historia": "Palantir vende plataformas (Gotham, Foundry, Apollo y AIP) que integran datos, modelos de IA y decisiones en entornos donde la seguridad y la trazabilidad importan tanto como el algoritmo: defensa, inteligencia y grandes empresas. Pasó de crecer 17% (2023) a 56% (2025) y más en 2026, con U.S. Commercial +149% en un trimestre, margen bruto de ~85%, margen operativo de ~43% LTM y flujo libre de ~55% de las ventas, sin deuda y con US$9.409 millones de caja. La historia de cinco años depende de cuánto de la demanda de IA convierte en contratos duraderos y expansión por cliente, y de si su singularidad resiste a los hiperescaladores, las suites de datos y el desarrollo interno. La acción descuenta mucho más que eso.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~35% anual cinco años",
+    "Sí",
+    "Sí a corto plazo (+56% en 2025, U.S. Commercial +149%); cinco años seguidos casi no tiene precedente",
+    "Baja-media"
+   ],
+   [
+    "El margen operativo llega a 45-50%",
+    "Sí",
+    "Sí: 43% LTM con margen bruto de 85%; el SBC es alto",
+    "Probable"
+   ],
+   [
+    "Los hiperescaladores y las suites de datos comoditizan la plataforma",
+    "Sí",
+    "Posible en comercial; menos en defensa",
+    "Media-baja"
+   ],
+   [
+    "El gobierno de EE.UU. sigue ampliando contratos",
+    "Sí",
+    "Sí: TITAN a producción y contratos sin licitación del Pentágono",
+    "Probable"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 35,3% anual cinco años (Base) lo logró ~1% de las empresas de ese tamaño; 47,1% (Optimista), ~0%. Palantir está hoy en ese 1%, pero la tasa base es implacable: casi ninguna empresa sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. La hoja suponía 48% anual (82% el primer año); tras la revisión del 30-sep-2026 supone ~42% (68% el primer año, coherente con la guía 2026 de US$8.150 millones), entre las historias Base y Optimista.",
+  "crecimiento": {
+   "texto": "Ingresos de US$2.225 millones (2023, +16,7%), US$2.866 millones (2024, +28,8%) y US$4.475 millones (2025, +56,2%); LTM US$6.156 millones. En 2025 EE.UU. fue el 74% (US$3.320 millones), Reino Unido el 10%. En 2026 U.S. Commercial creció 149% en un trimestre. La hoja supone ahora +68% en los próximos doce meses y 35% en los años 2-5 (antes 82% y 40%). En el 2T26 los ingresos crecieron 93% (US$1.940 millones) y la guía 2026 subió a US$8.150-8.158 millones. La división de las historias (Gobierno ~52%, Comercial ~48%) es una aproximación.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2023",
+     "2024",
+     "2025",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "2.225",
+      "2.866",
+      "4.475",
+      "6.156"
+     ],
+     [
+      "Crecimiento",
+      "+16,7%",
+      "+28,8%",
+      "+56,2%",
+      "—"
+     ],
+     [
+      "Margen operativo",
+      "5,4%",
+      "10,8%",
+      "31,6%",
+      "42,8%"
+     ],
+     [
+      "FCFF (hoja)",
+      "229",
+      "327",
+      "1.089",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo saltó de 5% (2023) a 43% LTM por apalancamiento operativo: el costo de servir a un cliente adicional es bajo. La hoja supone 48% el próximo año y 48% de objetivo. La compensación en acciones es alta y es un costo real para el accionista. Las historias van de 30% (comoditización) a 50%."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 3.4680× en años 1–5 y un ancla de 3.8377× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 147.39% y el terminal de Base 29.32%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html"
+  },
+  "prob_texto": "Base (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). Conservadora (30%) es la normalización en un software de alta calidad (~19%). Disrupción (10%) es comoditización con pérdida de contratos. Optimista (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "La adopción comercial es un ciclo de entusiasmo por la IA: los pilotos no se renuevan cuando los retornos no aparecen.",
+   "Los hiperescaladores (Microsoft Fabric, Google, AWS) y Databricks/Snowflake ofrecen lo mismo integrado y más barato.",
+   "Un cambio político o presupuestario en defensa reduce o retrasa contratos grandes.",
+   "La compensación en acciones diluye tanto que el valor por acción no acompaña al del negocio.",
+   "El precio de la acción depende de flujos de inversores minoristas y se corrige sin cambio en el negocio."
+  ],
+  "contra": "no hay evidencia contraria en los resultados: todos los indicadores aceleran. La evidencia contraria es externa: la tasa base y la historia de empresas de software que crecieron así (casi todas desaceleraron más rápido de lo esperado).",
+  "indicadores": [
+   [
+    "Crecimiento de ingresos (interanual)",
+    "> 50%",
+    "≥ 40% en 2027",
+    "< 25%"
+   ],
+   [
+    "U.S. Commercial",
+    "+149% en un trimestre",
+    "≥ +50%",
+    "< +30%"
+   ],
+   [
+    "Valor contractual restante (RDV) comercial",
+    "En alza",
+    "Crece más que ingresos",
+    "Estancado"
+   ],
+   [
+    "Margen operativo (con SBC)",
+    "~43%",
+    "≥ 45%",
+    "< 38%"
+   ],
+   [
+    "Contratos de defensa (TITAN, Maven)",
+    "En producción",
+    "Nuevos programas grandes",
+    "Cancelaciones o protestas"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Plataforma de datos e IA con crecimiento excepcional y un precio que exige aún más",
+  "confianza": "Baja: el crecimiento futuro es muy incierto y la distancia al precio es enorme",
+  "cambiaria": "Crecimiento comercial sostenido por encima de 40% con márgenes en alza durante varios años",
+  "revision": "Resultados del 3T26 (nov-2026)",
+  "fuentes": [
+   [
+    "Palantir, comunicado de resultados del 2T 2026",
+    "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm"
+   ],
+   [
+    "Palantir, Form 10-Q del 2T 2026",
+    "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm"
+   ],
+   [
+    "Palantir, Form 10-K 2025",
+    "https://investors.palantir.com/files/2025%20FY%20PLTR%2010-K.pdf"
+   ],
+   [
+    "U.S. Army, TITAN pasa a producción (sep-2026)",
+    "https://cpeisw.army.mil/2026/09/01/army-announces-move-to-production-for-titan/"
+   ],
+   [
+    "Defense One, contrato sin licitación del Pentágono con Palantir",
+    "https://www.defenseone.com/business/2026/08/pentagon-palantir-no-bid/415400/"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 272.0163578072621,
+   "ajuste_ebit": 27.00552031324826,
+   "margen_pp": 0.004386903694049092,
+   "capital_ventas": 0.04418761612680533,
+   "cierre": "2026-06-30",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-06-30",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: excepcional hoy, la tasa base dice que no dura.",
+    "Palantir vende plataformas (Gotham, Foundry, Apollo, AIP) que integran datos, modelos de IA y decisiones donde la seguridad y la trazabilidad importan: defensa, inteligencia y grandes empresas. Pasó de crecer 17% en 2023 a 56% en 2025 y 93% en el 2T26, con U.S. Commercial +149% en un trimestre; la guía 2026 es de US$8.150 millones. La Base parte de ese ritmo y lo desacelera con la escala: Gobierno de 55% a 16%, Comercial de 90% a 18%; {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de su tamaño lo lograron: Palantir está hoy en ese 1%, pero casi ninguna sostiene esas tasas al multiplicar su tamaño por cuatro o cinco. Por eso la Base desacelera más rápido que la hoja original (48% anual). La Conservadora ({cagrB}) es la normalización en un software de alta calidad; la Disrupción ({cagrC}), la comoditización con contratos perdidos; la Optimista ({cagrD}), Palantir como sistema operativo de la IA empresarial. No hay evidencia contraria en los resultados —todo acelera—; la evidencia contraria es externa: la historia de las empresas de software que crecieron así."
+   ],
+   [
+    "Margen: apalancamiento operativo, con la dilución ya descontada.",
+    "El margen operativo saltó de 5% en 2023 a 43% LTM porque servir a un cliente adicional cuesta poco (margen bruto ~85%). La Base usa {mA} (con el I+D capitalizado y los arrendamientos como deuda). La compensación en acciones es alta y es un costo real para el accionista: desde el 1-oct-2026 el modelo usa {acciones} millones de acciones, que suman a las 2.402,9 millones básicas los 168,9 millones de opciones y acciones restringidas que el 10-Q del 2T26 incluye en las diluidas (antes no se restaban). Eso bajó la Base ~7%. La Conservadora usa {mB}, la Disrupción {mC} y la Optimista {mD}; dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}."
+   ],
+   [
+    "Reinversión y ventaja: casi sin capital y con costos de cambio.",
+    "Palantir casi no necesita capital (capex de US$34 millones en 2025; ventas/capital de {s2c1}×). Su reinversión real son los ingenieros que despliega con los clientes y el I+D; el crecimiento no está limitado por el capital sino por convertir pilotos en contratos. Hasta el 1-oct-2026 se la clasificaba sin ventaja defendible con un ROIC «de 5-12%», pero esa cifra incluía la caja en el capital invertido, contra el criterio de Damodaran (la caja no es capital operativo). Sin la caja, el capital operativo es casi nulo y el ROIC supera con holgura al costo de capital desde 2023: tres años, el plazo que pedía la regla. Con costos de cambio identificables (plataformas integradas en defensa, inteligencia y grandes empresas), pasa a ventaja durable: el ROIC después del año 10 es {roicT}, el promedio de su industria, muy por debajo del actual. Con el ROIC terminal igual al costo de capital, la Base valdría {s_roic}. La salvedad es que la serie es corta: si el ROIC cae con la escala, la clasificación debe revisarse."
+   ],
+   [
+    "Descuento.",
+    "Hasta el 30-sep-2026 la hoja usaba una beta de regresión de 1,62; hoy usa la bottom-up de software sin deuda, {beta}. La dependencia de contratos públicos y el gobierno controlado por los fundadores suben el riesgo, pero ese riesgo está más en los flujos que en la tasa. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}. El precio, {precio}, sigue muy por encima incluso de la Optimista ({vD}). Las dos correcciones del 1-oct-2026 se compensan en parte: la ventaja durable sube el valor y la dilución lo baja, y aun así no cierran la brecha. Para justificar el precio haría falta crecer ~44-50% al año durante cinco años, con un margen de 55-60% y retornos excedentes permanentes: ventas de ~US$40.000 millones en el año 5 y ~US$100.000 millones en el año 10, algo que prácticamente ninguna empresa de su tamaño logró. El antiguo DCF técnico de la hoja ({tecnico}) es más alto porque suponía 48% de crecimiento anual. La distancia con el precio no se explica con supuestos razonables; es la lectura más importante de esta valoración."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.2931842949283384,
+   "motivo": "Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -26,13 +341,14 @@
   "taxEffective": 0.0134,
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
-  "roicTerminal": 0.2056,
-  "salesToCapital": 3.468
+  "roicTerminal": 0.2931842949283384,
+  "salesToCapital": 3.468,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 53.683622561427896,
- "precio": 187.05,
- "dcf_base": 75.3637304556011,
+ "dcf_sin_exceso": 48.027985756276095,
+ "precio": 191.5274,
+ "dcf_base": 78.92095337530566,
  "g_ref": 0.3662226947255397,
  "m_base": 0.484387,
  "s2c": 3.468,
@@ -109,6 +425,7 @@
    },
    "id": "A",
    "tesis": "base",
+   "roic_terminal": 0.2931842949283384,
    "margen_reportado": 0.45,
    "cagr": 0.35310401654348533,
    "rev5": 27922.247016955684,
@@ -134,14 +451,14 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.2931842949283384,
    "detalle": {
-    "v": 75.36373045560113,
-    "pvFlujos": 59736.8761695267,
-    "pvTerminal": 125056.94708280421,
-    "valorTerminal": 323682.0695430577,
-    "activosOperativos": 184793.82325233088,
-    "patrimonio": 193820.2158945236,
+    "v": 78.92095337530567,
+    "pvFlujos": 55943.0751972558,
+    "pvTerminal": 137999.20328830252,
+    "valorTerminal": 357180.2187532602,
+    "activosOperativos": 193942.2784855583,
+    "patrimonio": 202968.671127751,
     "ingresos": [
      6155.941,
      10576.298634243016,
@@ -179,11 +496,11 @@
      1252.2697972569258,
      1179.091741519358,
      1190.2959988802286,
-     1036.433726485662,
-     942.2443527133078,
-     791.6387899022001,
-     588.3391774737461,
-     619.462319962107
+     1987.1847735880926,
+     2564.8633247323232,
+     2702.8513683013953,
+     2349.7313024054415,
+     2763.32701774805
     ],
     "flujo": [
      null,
@@ -192,11 +509,11 @@
      7715.93852578531,
      9646.350860104898,
      11327.194822227384,
-     12642.477691573562,
-     13659.606433526611,
-     14423.37529742692,
-     14874.93950356393,
-     14695.54870754056
+     11691.726644471131,
+     12036.987461507595,
+     12512.162719027723,
+     13113.547378632235,
+     12551.684009754617
     ],
     "tasa": [
      null,
@@ -239,7 +556,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.2931842949283384,
     "caja": 9409.099,
     "deuda": 272.0163578072621,
     "minoritarios": 110.69,
@@ -258,10 +575,10 @@
     "wacc0": 0.10401401375456942,
     "margenY1": 0.484387
    },
-   "valor_bruto": 75.36373045560113,
-   "valor_bruto_prop": 75.3547145817229,
-   "valor_beta_hoja": 75.36373045560113,
-   "valor_beta_prop": 75.3547145817229
+   "valor_bruto": 78.92095337530567,
+   "valor_bruto_prop": 78.91143786791577,
+   "valor_beta_hoja": 78.92095337530567,
+   "valor_beta_prop": 78.91143786791577
   },
   {
    "nombre": "Conservadora · Se normaliza en un software de alta calidad",
@@ -285,6 +602,7 @@
    },
    "id": "B",
    "tesis": "conservadora",
+   "roic_terminal": 0.2931842949283384,
    "margen_reportado": 0.38,
    "cagr": 0.19308682566816526,
    "rev5": 14881.773817546717,
@@ -310,14 +628,14 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.2931842949283384,
    "detalle": {
-    "v": 34.47463092583879,
-    "pvFlujos": 29927.029487956665,
-    "pvTerminal": 49708.33026103004,
-    "valorTerminal": 128658.9476853813,
-    "activosOperativos": 79635.3597489867,
-    "patrimonio": 88661.75239117943,
+    "v": 35.989977671070406,
+    "pvFlujos": 28679.833785337774,
+    "pvTerminal": 54852.69017699537,
+    "valorTerminal": 141973.97818082006,
+    "activosOperativos": 83532.52396233313,
+    "patrimonio": 92558.91660452586,
     "ingresos": [
      6155.941,
      8593.917633853152,
@@ -355,11 +673,11 @@
      422.5468729324844,
      397.48864942862775,
      395.8537774963886,
-     349.0536424295182,
-     332.7207883078052,
-     308.4958941914827,
-     276.4434758088005,
-     291.067335679086
+     609.1686141368073,
+     796.9210493088194,
+     910.0295896924729,
+     942.5016854429902,
+     1098.382578670312
     ],
     "flujo": [
      null,
@@ -368,11 +686,11 @@
      4617.719824417842,
      4989.8911008463565,
      5247.852371652255,
-     5519.617893521528,
-     5699.572466209484,
-     5818.337527770686,
-     5869.986462916759,
-     5796.428352204205
+     5259.502921814238,
+     5235.37220520847,
+     5216.803832269697,
+     5203.928253282569,
+     4989.113109212979
     ],
     "tasa": [
      null,
@@ -415,7 +733,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.2931842949283384,
     "caja": 9409.099,
     "deuda": 272.0163578072621,
     "minoritarios": 110.69,
@@ -434,10 +752,10 @@
     "wacc0": 0.10401401375456942,
     "margenY1": 0.484387
    },
-   "valor_bruto": 34.47463092583879,
-   "valor_bruto_prop": 34.470923541836505,
-   "valor_beta_hoja": 34.47463092583879,
-   "valor_beta_prop": 34.470923541836505
+   "valor_bruto": 35.989977671070406,
+   "valor_bruto_prop": 35.986058867109904,
+   "valor_beta_hoja": 35.989977671070406,
+   "valor_beta_prop": 35.986058867109904
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -491,12 +809,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 14.936727040873619,
-    "pvFlujos": 17320.61592854508,
+    "v": 14.239740240378431,
+    "pvFlujos": 15528.10736599196,
     "pvTerminal": 12067.221222799828,
     "valorTerminal": 31233.31594240427,
-    "activosOperativos": 29387.83715134491,
-    "patrimonio": 38414.22979353765,
+    "activosOperativos": 27595.32858879179,
+    "patrimonio": 36621.72123098453,
     "ingresos": [
      6155.941,
      7374.929316926576,
@@ -534,11 +852,11 @@
      120.0237199063886,
      126.02490590170828,
      132.3261511967937,
-     125.55761184251116,
-     131.83549243463673,
-     138.42726705636855,
-     145.34863040918663,
-     152.616061929646
+     406.92839829324396,
+     690.2895634599412,
+     966.9237146002789,
+     1233.7474569213368,
+     1487.3007591621088
     ],
     "flujo": [
      null,
@@ -547,11 +865,11 @@
      2971.3522494734425,
      2809.457247396252,
      2623.944364487659,
-     2629.7183444424045,
-     2615.455772221577,
-     2593.1926469175605,
-     2562.1645696525884,
-     2521.5507030438253
+     2348.3475579916717,
+     2057.0017011962723,
+     1764.6961993736504,
+     1473.7657431404382,
+     1186.8660058113626
     ],
     "tasa": [
      null,
@@ -613,10 +931,10 @@
     "wacc0": 0.10401401375456942,
     "margenY1": 0.484387
    },
-   "valor_bruto": 14.936727040873619,
-   "valor_bruto_prop": 14.935548637797408,
-   "valor_beta_hoja": 14.936727040873619,
-   "valor_beta_prop": 14.935548637797408
+   "valor_bruto": 14.239740240378431,
+   "valor_bruto_prop": 14.238654449938716,
+   "valor_beta_hoja": 14.239740240378431,
+   "valor_beta_prop": 14.238654449938716
   },
   {
    "nombre": "Optimista · Sistema operativo de la IA empresarial",
@@ -640,6 +958,7 @@
    },
    "id": "D",
    "tesis": "optimista",
+   "roic_terminal": 0.2931842949283384,
    "margen_reportado": 0.5,
    "cagr": 0.4713524972397449,
    "rev5": 42450.03984874021,
@@ -665,14 +984,14 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.2931842949283384,
    "detalle": {
-    "v": 133.6009666742797,
-    "pvFlujos": 97648.50924365208,
-    "pvTerminal": 236919.66340416775,
-    "valorTerminal": 613213.8098280055,
-    "activosOperativos": 334568.1726478198,
-    "patrimonio": 343594.5652900125,
+    "v": 139.93905580781563,
+    "pvFlujos": 89429.75828949432,
+    "pvTerminal": 261438.6929776858,
+    "valorTerminal": 676675.8598834001,
+    "activosOperativos": 350868.4512671801,
+    "patrimonio": 359894.8439093728,
     "ingresos": [
      6155.941,
      11647.488367706304,
@@ -710,11 +1029,11 @@
      2301.3144142445453,
      2350.5189426566626,
      2456.831808149644,
-     2174.975897843715,
-     1959.9822198171134,
-     1564.925324676855,
-     1004.1140814854496,
-     1057.231716396028
+     4437.556416623777,
+     5792.9016099787705,
+     5862.102714942077,
+     4429.454152763934,
+     5235.107062760951
     ],
     "flujo": [
      null,
@@ -723,11 +1042,11 @@
      10587.286919281045,
      14581.994610488071,
      18667.501681088095,
-     21972.755915737704,
-     24726.42433522906,
-     26910.20946088779,
-     28290.97800012863,
-     27956.96815260086
+     19710.175396957642,
+     20893.504945067405,
+     22613.03207062257,
+     24865.637928850145,
+     23779.092806235938
     ],
     "tasa": [
      null,
@@ -770,7 +1089,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.2931842949283384,
     "caja": 9409.099,
     "deuda": 272.0163578072621,
     "minoritarios": 110.69,
@@ -789,28 +1108,28 @@
     "wacc0": 0.10401401375456942,
     "margenY1": 0.484387
    },
-   "valor_bruto": 133.6009666742797,
-   "valor_bruto_prop": 133.58425318194404,
-   "valor_beta_hoja": 133.6009666742797,
-   "valor_beta_prop": 133.58425318194404
+   "valor_bruto": 139.93905580781563,
+   "valor_bruto_prop": 139.92144636208425,
+   "valor_beta_hoja": 139.93905580781563,
+   "valor_beta_prop": 139.92144636208425
   }
  ],
- "valor_esperado_beta_hoja": 68.70174749893539,
- "valor_esperado_beta_prop": 68.69356839540866,
+ "valor_esperado_beta_hoja": 71.77715983704437,
+ "valor_esperado_beta_prop": 71.76854752471,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.25,
    "ke": 0.10404738372155109,
    "wacc": 0.10401401375456942,
-   "dcf_base": 75.36373045560113
+   "dcf_base": 78.92095337530567
   },
   {
    "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
    "beta": 1.2505301172053036,
    "ke": 0.10406907500804474,
    "wacc": 0.10403569278247567,
-   "dcf_base": 75.3547145817229
+   "dcf_base": 78.91143786791577
   }
  ],
  "sensibilidad": {
@@ -830,149 +1149,149 @@
   ],
   "v": [
    [
-    80.72081847153791,
-    84.17123067199559,
-    87.62164287245328,
-    91.07205507291097,
-    94.52246727336865
+    84.39622934273156,
+    87.9875343841288,
+    91.57883942552606,
+    95.17014446692332,
+    98.7614495083206
    ],
    [
-    88.73782521195484,
-    92.5613317599138,
-    96.38483830787276,
-    100.20834485583173,
-    104.03185140379067
+    92.77447637472444,
+    96.75173523191124,
+    100.72899408909808,
+    104.70625294628488,
+    108.68351180347169
    ],
    [
-    97.50568173486604,
-    101.7375948434499,
-    105.96950795203378,
-    110.20142106061763,
-    114.4333341692015
+    101.93337397095296,
+    106.3328441555362,
+    110.73231434011952,
+    115.13178452470278,
+    119.53125470928605
    ],
    [
-    107.08517634822554,
-    111.76367155236356,
-    116.44216675650159,
-    121.12066196063967,
-    125.79915716477765
+    111.93571691917285,
+    116.79657122629942,
+    121.65742553342605,
+    126.5182798405527,
+    131.3791341476793
    ],
    [
-    117.54121495187495,
-    122.70752500305375,
-    127.87383505423257,
-    133.0401451054114,
-    138.20645515659024
+    122.84852351679304,
+    128.21304565815976,
+    133.57756779952652,
+    138.94208994089323,
+    144.30661208226
    ]
   ],
-  "referencia_constante": 105.96950795203378,
+  "referencia_constante": 110.73231434011952,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.25,
    "margen": 0.4043869036940491,
-   "g": 0.5292204933096512,
-   "tasa_base": 0.0016901686096591362
+   "g": 0.5246807980310983,
+   "tasa_base": 0.0017161097255365813
   },
   {
    "beta": 1.25,
    "margen": 0.4543869036940491,
-   "g": 0.5030526527779637,
-   "tasa_base": 0.0018396991269830644
+   "g": 0.49873761949895723,
+   "tasa_base": 0.0018643564600059586
   },
   {
    "beta": 1.25,
    "margen": 0.504386903694049,
-   "g": 0.48004152165626135,
-   "tasa_base": 0.001971191304821364
+   "g": 0.4758882663402211,
+   "tasa_base": 0.0019949241923415944
   },
   {
    "beta": 1.2505301172053036,
    "margen": 0.4043869036940491,
-   "g": 0.5292499469517511,
-   "tasa_base": 0.0016900003031328512
+   "g": 0.5247103854001411,
+   "tasa_base": 0.0017159406548563367
   },
   {
    "beta": 1.2505301172053036,
    "margen": 0.4543869036940491,
-   "g": 0.5030816113419092,
-   "tasa_base": 0.0018395336494748048
+   "g": 0.4987667199265369,
+   "tasa_base": 0.001864190171848361
   },
   {
    "beta": 1.2505301172053036,
    "margen": 0.504386903694049,
-   "g": 0.48007004806862286,
-   "tasa_base": 0.0019710282967507265
+   "g": 0.4759169401601714,
+   "tasa_base": 0.001994760341941878
   }
  ],
  "ingresos_ltm": 6155.941,
  "sens_base": {
-  "base": 75.36373045560113,
+  "base": 78.92095337530567,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 72.3014567100568
+    "valor": 75.71855183135101
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 78.42600420114546
+    "valor": 82.12335491926038
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 68.71331195241551
+    "valor": 71.94577476414575
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 82.64603447577973
+    "valor": 86.55533887721602
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 101.01720844004801
+    "valor": 106.9840857293348
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 60.52397302413475
+    "valor": 62.77214201735024
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 70.12148367765579
+    "valor": 72.6839842089713
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 82.17878128232994
+    "valor": 87.09242991837345
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 71.77498138628677
+    "valor": 75.16281273838635
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 74.72498483929338
+    "valor": 78.37561053340976
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 75.78956086647294
+    "valor": 79.28451526990295
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 53.683622561427896
+    "valor": 48.027985756276095
    }
   ]
  },
  "rd_vida": 3,
  "rd_ltm": 641.239,
- "motor_tecnico": 160.20080508594808
+ "motor_tecnico": 78.92095337530566
 }

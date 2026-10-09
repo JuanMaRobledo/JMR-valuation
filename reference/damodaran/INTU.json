@@ -218,7 +218,7 @@
   "texto": "El margen operativo GAAP subió de 22,3% a 27,4% en dos años; la hoja supone ~32% desde el próximo año, un salto rápido que exige que la compensación en acciones (US$2.056 millones, ~10% de los ingresos) crezca menos que las ventas. Las historias van de 26% (recesión y regulación) a 35% (plataforma financiera de la pyme)."
  },
  "reinversion": {
-  "texto": "Capex mínimo (US$175 millones en FY26) y flujo operativo de US$8.838 millones. La hoja usa un ventas/capital de 1,54 (años 1-5) y 1,54 (años 6-10): el del sector: la Base es orgánica (Intuit no compra desde 2021) y el de hoy (1,08) carga el crédito mercantil de Credit Karma y Mailchimp. Con margen objetivo de 32,2% e impuesto marginal de 23%, el capital nuevo rinde ~38% y ~38% (revisión del 5-oct-2026: se quitó el tope de la auditoría del 4-oct, que lo comparaba con un ROIC actual cargado de crédito mercantil).. El flujo libre va a recompras (US$5.412 millones) y dividendos (US$1.347 millones). Ventaja durable: costos de cambio y datos del cliente en QuickBooks y TurboTax, con ROIC siempre por encima del costo de capital (12-22%). El ROIC después del año 10 es 22,6%, el promedio de su industria según Damodaran (29,3%), limitado a su ROIC actual. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "La Base usa ventas/capital 1.5400× en años 1–5 y un ancla de 1.5400× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 22.57% y el terminal de Base 22.60%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 22.5744%; ROIC terminal Base 0.226. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
  },
  "prob_texto": "Base (45%) es la continuación de FY24-FY26: la pyme crece a doble dígito y el consumidor a un dígito medio. Conservadora (25%) es la sustitución parcial por IA en impuestos y contabilidad simples. Disrupción (10%) combina recesión (Credit Karma) y expansión de la declaración gratuita del Estado. Optimista (20%) es Intuit como plataforma financiera completa de la pyme (pagos, nómina, capital, mid-market). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -317,5 +317,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}; el precio, {precio}, está apenas por encima de la Conservadora ({vB}): el mercado está descontando algo muy cercano a la sustitución por IA de esa historia, o una tasa mucho mayor. Esa distancia merece una explicación antes de cualquier decisión. La compensación en acciones (~10% de los ingresos) diluye, y no está modelada: las acciones se fijan en {acciones} millones."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.226,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 22.5744%; ROIC terminal Base 0.226. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+  "convergencia": true,
+  "g3": false
+ }
 }

@@ -1,6 +1,354 @@
 {
  "ticker": "ADBE",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "ADBE",
+  "empresa": "Adobe Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Software (System & Application)",
+  "segmentos": {
+   "Creative & Marketing Professionals": 17819,
+   "Business Professionals & Consumers": 7263,
+   "Otros": 888
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "Beta bottom-up (Damodaran, 5-oct-2026): la desapalancada de Software (System & Application) en EE.UU., corregida por caja (1,25; 309 empresas, enero de 2026), reapalancada con la D/E de mercado de Adobe (~6%) da 1,31. Se usa la tabla de EE.UU. porque Adobe vende 53% en EE.UU. y 60% en América; antes la hoja usaba la global (1,33 → 1,39), con más software de menor escala. La regresión semanal contra el S&P 500 da 1,39 a cinco años y 0,97 a dos. El riesgo de Adobe no está en la tasa sino en los flujos (precio y retención de Creative Cloud), y eso se trata en las historias."
+  },
+  "historias": [
+   {
+    "nombre": "Base · La IA se cobra dentro de la suscripción",
+    "prob": 0.4,
+    "margen": 0.4,
+    "crec": {
+     "Creative & Marketing Professionals": [
+      0.1,
+      0.08,
+      0.07,
+      0.06,
+      0.06
+     ],
+     "Business Professionals & Consumers": [
+      0.14,
+      0.12,
+      0.1,
+      0.09,
+      0.08
+     ]
+    },
+    "id": "A",
+    "tesis": "base",
+    "tesis_titulo": "Adobe monetiza la IA y conserva su posición",
+    "tesis_que": "Adobe mantiene el papel de sus herramientas en los flujos profesionales y cobra las funciones de IA mediante suscripciones, créditos o planes superiores. La IA ayuda a defender la retención y el gasto por cliente, pero no provoca una aceleración permanente. La competencia limita el crecimiento sin deshacer la ventaja comercial.",
+    "tesis_contraste": "La confirmarían renovaciones y precio realizado estables, monetización de IA que aporte ventas y márgenes compatibles con el coste de cómputo. Perdería fuerza si el crecimiento solo se sostiene con descuentos, si empeora la retención o si la IA aumenta el coste sin elevar el gasto del cliente.",
+    "roic_terminal": 0.2931842949283384
+   },
+   {
+    "nombre": "Conservadora · Erosión gradual frente a Figma y Canva",
+    "prob": 0.35,
+    "margen": 0.37,
+    "crec": {
+     "Creative & Marketing Professionals": [
+      0.08,
+      0.05,
+      0.04,
+      0.03,
+      0.03
+     ],
+     "Business Professionals & Consumers": [
+      0.12,
+      0.09,
+      0.07,
+      0.06,
+      0.05
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "B",
+    "tesis": "conservadora",
+    "tesis_titulo": "Adobe sigue siendo rentable, pero pierde poder de precio",
+    "tesis_que": "Figma, Canva y otras herramientas capturan parte de los nuevos clientes y de los trabajos sencillos. Adobe conserva los flujos profesionales más difíciles de sustituir, pero necesita conceder más valor dentro de sus planes y tiene menos capacidad para subir precios. El negocio crece más lentamente y su ventaja se erosiona de forma gradual.",
+    "tesis_contraste": "La apoyarían una desaceleración persistente, menor gasto por cliente o presión de descuentos con caja todavía sólida. Se debilitaría si Adobe mantiene la retención y monetiza la IA sin sacrificar precios ni margen. No hay una serie comparable verificada de adopción que demuestre que esta erosión ya esté ocurriendo."
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.15,
+    "margen": 0.32,
+    "crec": {
+     "Creative & Marketing Professionals": [
+      0.05,
+      0.01,
+      -0.02,
+      -0.03,
+      -0.03
+     ],
+     "Business Professionals & Consumers": [
+      0.09,
+      0.05,
+      0.03,
+      0.02,
+      0.02
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "La IA generativa comoditiza la creatividad",
+    "terminal": "estabilizacion",
+    "tesis_titulo": "La IA generativa comoditiza la creatividad",
+    "tesis_que": "Para una parte relevante de los usuarios, producir contenido con herramientas de IA más baratas resulta suficiente y reduce la necesidad de pagar por la suite de Adobe. La presión afecta tanto a nuevos clientes como al gasto de la base instalada. Adobe conserva productos útiles y un negocio rentable, pero pierde una parte sustancial de su poder de precio y de sus retornos extraordinarios.",
+    "tesis_contraste": "La apoyarían deterioro sostenido de renovaciones, contracción de ingresos profesionales y necesidad de regalar funcionalidades de IA para retener usuarios. Se debilitaría si las herramientas complementan la suite y Adobe conserva el gasto de sus clientes. Es una hipótesis adversa severa; no es un caso de quiebra ni el peor resultado posible."
+   },
+   {
+    "nombre": "Optimista · La IA amplía el mercado de Adobe",
+    "prob": 0.1,
+    "margen": 0.43,
+    "crec": {
+     "Creative & Marketing Professionals": [
+      0.12,
+      0.12,
+      0.11,
+      0.1,
+      0.09
+     ],
+     "Business Professionals & Consumers": [
+      0.16,
+      0.14,
+      0.12,
+      0.11,
+      0.1
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista",
+    "tesis_titulo": "La IA amplía el mercado y Adobe captura el crecimiento",
+    "tesis_que": "La IA permite que más personas y empresas creen y distribuyan contenido, aumenta el volumen de trabajo y el gasto por cliente, y Adobe captura una parte relevante de esa expansión con Firefly, Acrobat y GenStudio. Los ingresos adicionales compensan el coste de cómputo y sostienen la ventaja competitiva.",
+    "tesis_contraste": "La confirmarían expansión de clientes y gasto, monetización de IA que aporte crecimiento adicional y mejora de margen con retención sólida. Se debilitaría si el ARR de IA solo sustituye ingresos existentes o si aumenta su uso sin una contribución económica suficiente.",
+    "roic_terminal": 0.2931842949283384
+   }
+  ],
+  "margenes_inverso": [
+   0.35,
+   0.38,
+   0.4
+  ],
+  "historia": "Adobe es la suite de referencia de la creatividad profesional y de los documentos (PDF), vendida por suscripción: ~US$27.500 millones de ARR, margen operativo GAAP de ~36% y flujo libre de ~41% de las ventas. Los próximos cinco años dependen de una pregunta: si la IA generativa es una función que Adobe cobra dentro de sus suscripciones (Firefly, Acrobat AI Assistant, GenStudio) o una tecnología que abarata crear contenido y deja entrar a herramientas más baratas (Figma, Canva y los modelos generales de OpenAI o Google). Por ahora los datos apoyan la primera lectura: en el 3T FY26 las ventas crecieron 13%, la guía subió y el ARR «AI-first» pasó de US$650 millones (+150%). Pero la IA todavía es ~2,4% del ARR, y entre equipos de diseño la adopción de Figma (59%) ya supera a la de Adobe (42%). A esto se suma el cambio de CEO del 1-dic-2026.",
+  "filtro": [
+   [
+    "Adobe crece ~8% anual cinco años más",
+    "Sí",
+    "Sí: +10-11% anual en FY23-FY25 y guía FY26 de ~+12%",
+    "Probable, desacelerando"
+   ],
+   [
+    "La IA suma crecimiento sobre la base actual",
+    "Sí",
+    "Sí: ARR AI-first +150%, aunque solo ~2,4% del total",
+    "Incierto"
+   ],
+   [
+    "El margen operativo sube a 40% y se sostiene",
+    "Sí",
+    "Sí: 36,6% en FY25 con capex ~1% de las ventas; la IA encarece el cómputo",
+    "Probable si no hay guerra de precios"
+   ],
+   [
+    "Creative Cloud pierde poder de precio frente a Figma y Canva",
+    "Sí",
+    "Sí: Figma ya supera a Adobe en adopción entre equipos de diseño",
+    "Posible, gradual"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 8,1% anual cinco años (Base) lo logró ~34% de las empresas de ese tamaño; 11,0% (Optimista), ~21%. Adobe tiene razones para estar arriba de la mediana: suscripción con alta retención, subidas de precio y venta cruzada de IA. Aun así, el DCF de la hoja (10,4% anual en los años 1-5) ya supone un resultado del cuartil superior, y la visión externa pide descontar esa confianza.",
+  "crecimiento": {
+   "texto": "Las ventas crecieron 10,8% en FY24 y 10,5% en FY25; la guía FY26 (US$26.576-26.626 millones) implica ~12%. En el 3T FY26, Creative & Marketing Professionals facturó US$4.700 millones (+13%) y Business Professionals & Consumers US$1.900 millones (+16%). La reorganización de segmentos de 2026 no deja comparar series largas por segmento: la división LTM de las historias es una estimación propia con el peso del 3T (≈70% / 28% / 2%).",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "FY23",
+     "FY24",
+     "FY25",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "19.409",
+      "21.505",
+      "23.769",
+      "25.970"
+     ],
+     [
+      "Crecimiento",
+      "+10,2%",
+      "+10,8%",
+      "+10,5%",
+      "—"
+     ],
+     [
+      "Margen operativo GAAP",
+      "34,3%",
+      "31,3%",
+      "36,6%",
+      "35,7%"
+     ],
+     [
+      "FCFF (hoja)",
+      "6.102",
+      "6.749",
+      "8.702",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen de FY24 (31,3%) está deprimido por el cargo de US$1.000 millones por la ruptura del acuerdo con Figma; sin él, la serie va de ~34% a ~36-37%. La hoja supone 38,5% el próximo año y 40% como objetivo. Es alcanzable por escala, pero la IA suma costo de cómputo (entrenar e inferir Firefly) y la competencia empuja a regalar créditos de IA. Por eso las historias van de 32% (comoditización) a 43% (la IA amplía el mercado)."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 1.2300× en años 1–5 y un ancla de 1.2300× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 37.00% y el terminal de Base 29.32%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html"
+  },
+  "prob_texto": "Base (40%) continúa lo que muestran los últimos trimestres: crecimiento de doble dígito bajo que desacelera y margen de 40%. Conservadora (35%) pesa casi lo mismo porque la adopción de Figma crece más rápido que la de Adobe. Disrupción (15%) es la disrupción: poco probable en cinco años por el costo de cambiar flujos profesionales, pero no despreciable. Optimista (10%) exige que la IA agrande el mercado y no solo defienda la base. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "El ARR «AI-first» se estanca antes de llegar a 5% del total y la IA termina regalada dentro de los planes para no perder usuarios.",
+   "Figma y Canva capturan a los nuevos diseñadores y equipos de marketing; Creative Cloud crece solo por precio y la retención cae.",
+   "El nuevo CEO (1-dic-2026) cambia la estrategia o salen ejecutivos clave en medio del giro a la IA.",
+   "Adobe hace una compra grande para defenderse y destruye valor (precio alto, retorno bajo).",
+   "El costo de cómputo de la IA baja el margen a 32-34% en lugar de subirlo a 40%."
+  ],
+  "contra": "la adopción relativa se mueve en contra (Figma 59% frente a 42% de Adobe en equipos de diseño) y el consenso (~40 analistas en «Hold») no cree la guía. Si Creative & Marketing Professionals baja de ~13% a un dígito bajo en 2027, la historia Base pierde peso a favor de Conservadora.",
+  "indicadores": [
+   [
+    "Crecimiento de ingresos (interanual)",
+    "+13% (3T FY26)",
+    "≥ +9% en FY27",
+    "≤ +6%"
+   ],
+   [
+    "ARR «AI-first»",
+    ">US$650M, +150%",
+    "> 5% del ARR total en 2027",
+    "Crece < 60% antes de llegar a 5%"
+   ],
+   [
+    "Creative & Marketing Professionals",
+    "+13%",
+    "≥ +8%",
+    "≤ +4%"
+   ],
+   [
+    "Margen operativo GAAP",
+    "35,7% LTM",
+    "≥ 37%",
+    "≤ 33%"
+   ],
+   [
+    "Adopción Figma frente a Adobe (equipos de diseño)",
+    "59% vs 42%",
+    "Brecha estable o cerrándose",
+    "Brecha y gasto por cliente a favor de Figma"
+   ],
+   [
+    "Transición de CEO",
+    "1-dic-2026",
+    "Sin cambios bruscos de estrategia",
+    "Salida de ejecutivos clave"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Suite creativa y documental por suscripción que defiende su precio con IA frente a Figma y Canva",
+  "confianza": "Media: la base es muy rentable y recurrente; lo incierto es el precio de Creative Cloud en la era de la IA",
+  "cambiaria": "Crecimiento de Creative & Marketing Professionals, peso del ARR «AI-first» y adopción frente a Figma",
+  "revision": "Resultados del 4T FY26 (dic-2026) y primeros meses del nuevo CEO",
+  "fuentes": [
+   [
+    "Adobe, resultados del 3T FY2026 (Form 8-K, ex. 99.1)",
+    "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+   ],
+   [
+    "Adobe, anuncio de Anil Chakravarthy como CEO (sep-2026)",
+    "https://news.adobe.com/news/2026/09/adobe-announces-anil-chakravarthy-to-become-president-and-ceo"
+   ],
+   [
+    "Yahoo Finance, «Adobe Valuation Questioned As Figma AI Credits Challenge Creative Cloud»",
+    "https://finance.yahoo.com/news/adobe-valuation-questioned-figma-ai-031116166.html"
+   ],
+   [
+    "Benzinga, revisiones de analistas tras el 3T FY26",
+    "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61739763/these-analysts-revise-their-forecasts-on-adobe-following-q3-results"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 367.44764994657953,
+   "ajuste_ebit": 22.56672500890342,
+   "margen_pp": 0.0008689536006508825,
+   "capital_ventas": 0.014148927606722353,
+   "cierre": "2026-08-28",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-08-28",
+   "informe": "10-Q"
+  },
+  "notas_historicas": [
+   [
+    "Dictamen de auditoría del 30-sep-2026 (cifras de esa fecha)",
+    "DCF técnico anterior US$536,48, condicionado a ROIC terminal 29,3%; contraste sin retorno excedente terminal US$377,94 (−29,55%). Valor esperado de cuatro historias US$364,33; MOS 35% US$236,81. El ROIC excedente no es incorrecto por definición: requiere evidencia de duración de la ventaja. Falta una serie homogénea que incluya I+D, goodwill y adquisiciones, así como soporte de ventas/capital 4x–4,5x. La coincidencia del cálculo con la hoja no certifica esos supuestos ni el cumplimiento integral de los prompts v4/v5."
+   ],
+   [
+    "Corrección de la historia Disrupción, 30-sep-2026",
+    "La convergencia automática a 4,99% introducía una recuperación no explicada por la tesis. Se sustituye por estabilización nominal del negocio residual: crecimiento años 6–10 de −1,06%, −0,79%, −0,53%, −0,26% y 0%; perpetuidad 0%, margen 32% y ROIC igual a WACC. El 0% es juicio del analista aceptado por el usuario, no una cifra de Adobe. El ingreso del año 10 y terminal es US$26.508,16 millones. La reinversión negativa de algunos años representa liberación de capital y sigue siendo una salvedad económica por validar; no debe interpretarse como recuperación automática de todo el capital intangible. Damodaran, The Stable Growth Rate, consultado 30-sep-2026, permite crecimiento estable menor o negativo, pero no determina el 0% elegido."
+   ]
+  ],
+  "justificacion": [
+   [
+    "Crecimiento: por qué la Base desacelera.",
+    "La trayectoria parte del negocio recurrente y del desglose de clientes conciliado con el último 10-Q, no de aplicar un porcentaje idéntico a todas las ventas. El grupo profesional aumenta 10% en el primer año y termina creciendo 6% en el quinto; documentos y consumidores pasan de 14% a 8%. El mecanismo supuesto es que las funciones de IA sostengan renovaciones y permitan aumentar el ingreso por cliente, mientras la mayor escala y las alternativas competitivas moderan la expansión. Esta elección produce {g1A} consolidado en el primer año y {cagrA} de CAGR a cinco años. El CAGR resume esa trayectoria; no es una tasa constante. Una Base con crecimiento perpetuamente igual al ritmo reciente exigiría demostrar que Adobe puede mantener ganancias de clientes y monetización a una escala mucho mayor. Los porcentajes son juicio del analista, no una guía publicada por Adobe. La contribución de adquisiciones debe separarse antes de calificar todo el crecimiento como orgánico."
+   ],
+   [
+    "Margen: por qué {mA} y qué podría impedirlo.",
+    "El objetivo de {mA} ({mrepA} antes del ajuste por arrendamientos) es un margen operativo ajustado por capitalización de I+D; no se compara directamente con el margen GAAP LTM de 35,70%. La hipótesis de la Base es que la escala de las suscripciones y una mezcla más favorable compensen el cómputo adicional y la inversión comercial de la IA. Por eso se usa una mejora moderada frente al margen ajustado inicial, en vez de extrapolar el máximo de la Optimista. La Conservadora queda en {mB} porque defender clientes puede exigir descuentos y producto adicional sin cobrarlo íntegramente; la Disrupción cae a {mC} por menor poder de precio y costos que no se ajustan tan rápido como las ventas. La Optimista exige {mD} y crecimiento mayor a la vez: solo tiene sentido si la monetización supera los costos incrementales. Ninguno de estos márgenes es una promesa de Adobe. Revisaría la Base si el ingreso por cliente aumenta menos que el costo de prestar funciones de IA."
+   ],
+   [
+    "Reinversión y ventas/capital: una hipótesis todavía incompleta.",
+    "La Base usa {s2c1}× durante los años 1–5; {s2c2}× es el ancla inicial de la transición de años 6–10. La intensidad de capital converge al retorno terminal, calculado con el ROIC sectorial ya ajustado por I+D y arrendamientos de 29,32%, sin segunda capitalización. La vida de I+D de tres años de Adobe es una convención; no constituye una homogeneización exacta con el sector. Se distingue el rendimiento del capital nuevo del ROIC medio ajustado. Con ±20% en el ancla de ventas/capital, el DCF Base va de {s_s_lo} a {s_s_hi}. En contracción, recuperar capital exige que los activos económicos sean recuperables; es un supuesto revisable."
+   ],
+   [
+    "I+D: por qué la vida útil importa.",
+    "Capitalizar I+D reconoce que una parte del gasto genera beneficios durante varios años. La vida útil de tres años es una convención del modelo, no un dato reportado ni evidencia de que todo desarrollo tenga ese plazo. En productos expuestos a cambios rápidos de IA, parte del desarrollo puede quedar obsoleto antes; plataformas e integraciones pueden durar más. La vida elegida modifica tanto la amortización y el EBIT ajustado como el activo económico y el ROIC, por lo que deben evaluarse conjuntamente. La corrección aritmética de I+D no valida su vida útil. Falta contrastar plazos alternativos con la persistencia de los beneficios, conservando definiciones homogéneas."
+   ],
+   [
+    "Descuento y valor terminal: dónde se concentra el juicio.",
+    "Se mantiene el WACC de la hoja, aproximadamente {wacc0} al inicio y {waccT} al final, para que las diferencias entre historias provengan de sus flujos. Esa convergencia supone que el riesgo y la estructura financiera se normalicen; no es una consecuencia automática de ser una empresa grande. Base y Optimista conservan ROIC terminal de {roicT} como ancla sectorial condicionada a una ventaja duradera, mientras Conservadora y Disrupción convergen al costo de capital. El {roicT} no es un ROIC futuro observado de Adobe. El crecimiento terminal de {tgA} en Base, Conservadora y Optimista es exigente y requiere moneda, inflación y crecimiento económico de largo plazo compatibles; la Conservadora incluso vuelve a acelerar desde {g5B} en el año 5, una recuperación que necesita soporte adicional. Disrupción se estabiliza en {tgC} nominal. Como el terminal explica {terminal} del valor operativo de la Base, estos supuestos pesan mucho en {vA} y deben seguir señalados como condicionados, no plenamente auditados."
+   ],
+   [
+    "Acciones y probabilidades: límites del valor por acción.",
+    "Las cuatro historias conservan {acciones} millones de acciones y no proyectan recompras ni dilución adicional. Esta elección facilita compararlas, pero no demuestra que la compensación en acciones carezca de costo. Más acciones, manteniendo el mismo patrimonio, reducen el DCF por acción; una recompra también consume caja y debe modelarse de forma consistente. La Base es la trayectoria central defendida; el esperado de {ve} combina desenlaces distintos y pesos subjetivos. Cambiar esos pesos modifica el esperado y el MOS, sin cambiar por sí solo el DCF de la Base. La política vigente mantiene MOS de {mos} sobre el esperado: {vmos}."
+   ],
+   [
+    "Fuentes y alcance.",
+    "Punto de partida contable: [Adobe 10-Q, cierre 28-ago-2026](https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm). Límite conceptual del crecimiento perpetuo: [Damodaran, The Stable Growth Rate](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/valquestions/stablegrowthrate.htm), revisado 1-oct-2026. Los porcentajes de escenarios y elecciones de capital son hipótesis del modelo. Esta ampliación explica la selección y sus límites; no declara resueltos los controles económicos pendientes."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.2931842949283384,
+   "motivo": "Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -27,13 +375,14 @@
   "taxEffective": 0.21517077901088244,
   "convergenceYear": 3,
   "terminalWacc": 0.08990000000000001,
-  "roicTerminal": 0.2056,
-  "salesToCapital": 1.23
+  "roicTerminal": 0.2931842949283384,
+  "salesToCapital": 1.23,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 316.74906282526445,
- "precio": 239.94,
- "dcf_base": 454.7782892267115,
+ "dcf_sin_exceso": 295.1840130108741,
+ "precio": 239,
+ "dcf_base": 484.92412993819903,
  "g_ref": 0.08117837140969089,
  "m_base": 0.400869,
  "s2c": 1.23,
@@ -113,6 +462,7 @@
    "tesis_titulo": "Adobe monetiza la IA y conserva su posición",
    "tesis_que": "Adobe mantiene el papel de sus herramientas en los flujos profesionales y cobra las funciones de IA mediante suscripciones, créditos o planes superiores. La IA ayuda a defender la retención y el gasto por cliente, pero no provoca una aceleración permanente. La competencia limita el crecimiento sin deshacer la ventaja comercial.",
    "tesis_contraste": "La confirmarían renovaciones y precio realizado estables, monetización de IA que aporte ventas y márgenes compatibles con el coste de cómputo. Perdería fuerza si el crecimiento solo se sostiene con descuentos, si empeora la retención o si la IA aumenta el coste sin elevar el gasto del cliente.",
+   "roic_terminal": 0.2931842949283384,
    "margen_reportado": 0.4,
    "cagr": 0.08106378236260814,
    "rev5": 38346.74798107201,
@@ -139,14 +489,14 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.2931842949283384,
    "detalle": {
-    "v": 454.7782892267115,
-    "pvFlujos": 57597.129203458484,
-    "pvTerminal": 120490.7155060063,
-    "valorTerminal": 322423.635573952,
-    "activosOperativos": 178087.84470946479,
-    "patrimonio": 176999.7101670361,
+    "v": 484.92412993819903,
+    "pvFlujos": 56860.1976256886,
+    "pvTerminal": 132960.40828868715,
+    "valorTerminal": 355791.5483180822,
+    "activosOperativos": 189820.60591437574,
+    "patrimonio": 188732.47137194706,
     "ingresos": [
      25970,
      28768.720000000005,
@@ -184,11 +534,11 @@
      1851.3125560975602,
      1894.3863878634177,
      1943.3992692727356,
-     1986.41412357578,
-     2022.7384941315179,
-     2051.6982569506417,
-     2072.646757978734,
-     2182.28977147581
+     2108.851916527922,
+     2262.6134584850074,
+     2402.240846239251,
+     2525.384311765284,
+     2752.5835601577337
     ],
     "flujo": [
      null,
@@ -197,11 +547,11 @@
      8763.607358136509,
      9436.944855358335,
      10121.011790901272,
-     10716.289524779997,
-     11321.258170662917,
-     11933.628520380755,
-     12550.924205945947,
-     13073.178476467132
+     10593.851731827854,
+     11081.383206309427,
+     11583.085931092146,
+     12098.186652159398,
+     12502.884687785208
     ],
     "tasa": [
      null,
@@ -244,7 +594,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.2931842949283384,
     "caja": 5639,
     "deuda": 6727.134542428695,
     "minoritarios": 0,
@@ -263,10 +613,10 @@
     "wacc0": 0.10926947048927507,
     "margenY1": 0.385869
    },
-   "valor_bruto": 454.7782892267115,
-   "valor_bruto_prop": 454.5668803033634,
-   "valor_beta_hoja": 454.7782892267115,
-   "valor_beta_prop": 454.5668803033634
+   "valor_bruto": 484.92412993819903,
+   "valor_bruto_prop": 484.6970602268773,
+   "valor_beta_hoja": 484.92412993819903,
+   "valor_beta_prop": 484.6970602268773
   },
   {
    "nombre": "Conservadora · Erosión gradual frente a Figma y Canva",
@@ -322,12 +672,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 259.0964846344242,
-    "pvFlujos": 50524.35344623561,
+    "v": 244.09125547697244,
+    "pvFlujos": 44684.3182581554,
     "pvTerminal": 51404.132915910974,
     "valorTerminal": 137553.3986056252,
-    "activosOperativos": 101928.48636214659,
-    "patrimonio": 100840.3518197179,
+    "activosOperativos": 96088.45117406637,
+    "patrimonio": 95000.31663163767,
     "ingresos": [
      25970,
      28267.08,
@@ -365,11 +715,11 @@
      975.3583047804893,
      936.7421689756097,
      1066.1260052489288,
-     1207.5665358038314,
-     1362.979032383595,
-     1534.5425996749107,
-     1724.7477371665973,
-     1815.9868924627133
+     1919.3108544917816,
+     2950.398790064579,
+     4182.850531893898,
+     5644.72846466549,
+     6910.983746070445
     ],
     "flujo": [
      null,
@@ -378,11 +728,11 @@
      8161.393870507458,
      8549.20253339823,
      8755.186083252958,
-     8904.876307790244,
-     9083.558014295344,
-     9292.57274944894,
-     9533.525529827095,
-     9928.76620341126
+     8193.131989102294,
+     7496.13825661436,
+     6644.264817229953,
+     5613.544802328202,
+     4833.769349803529
     ],
     "tasa": [
      null,
@@ -444,10 +794,10 @@
     "wacc0": 0.10926947048927507,
     "margenY1": 0.385869
    },
-   "valor_bruto": 259.0964846344242,
-   "valor_bruto_prop": 258.98562200779634,
-   "valor_beta_hoja": 259.0964846344242,
-   "valor_beta_prop": 258.98562200779634
+   "valor_bruto": 244.09125547697244,
+   "valor_bruto_prop": 243.9879477642165,
+   "valor_beta_hoja": 244.09125547697244,
+   "valor_beta_prop": 243.9879477642165
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -505,12 +855,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 174.8906202920843,
-    "pvFlujos": 42637.882302412545,
+    "v": 175.23631308846907,
+    "pvFlujos": 42772.425938765504,
     "pvTerminal": 26517.681657695346,
     "valorTerminal": 70959.22114132215,
-    "activosOperativos": 69155.56396010789,
-    "patrimonio": 68067.4294176792,
+    "activosOperativos": 69290.10759646085,
+    "patrimonio": 68201.97305403216,
     "ingresos": [
      25970,
      27514.620000000003,
@@ -548,9 +898,9 @@
      -312.46803512195044,
      -296.13311715365853,
      -233.77824299554996,
-     -173.4815161522597,
-     -114.73804388438518,
-     -57.06600840837301,
+     -257.2691964235844,
+     -224.1663399089087,
+     -137.65667425437607,
      0,
      0
     ],
@@ -561,9 +911,9 @@
      7355.8234081008595,
      7242.702260864993,
      7088.620859353872,
-     6895.713619233455,
-     6723.990272416224,
-     6572.00339129602,
+     6979.501299504779,
+     6833.418568440748,
+     6652.594057142023,
      6438.482980618668,
      6379.233980604862
     ],
@@ -627,10 +977,10 @@
     "wacc0": 0.10926947048927507,
     "margenY1": 0.385869
    },
-   "valor_bruto": 174.8906202920843,
-   "valor_bruto_prop": 174.822335450709,
-   "valor_beta_hoja": 174.8906202920843,
-   "valor_beta_prop": 174.822335450709
+   "valor_bruto": 175.23631308846907,
+   "valor_bruto_prop": 175.16786698455107,
+   "valor_beta_hoja": 175.23631308846907,
+   "valor_beta_prop": 175.16786698455107
   },
   {
    "nombre": "Optimista · La IA amplía el mercado de Adobe",
@@ -657,6 +1007,7 @@
    "tesis_titulo": "La IA amplía el mercado y Adobe captura el crecimiento",
    "tesis_que": "La IA permite que más personas y empresas creen y distribuyan contenido, aumenta el volumen de trabajo y el gasto por cliente, y Adobe captura una parte relevante de esa expansión con Firefly, Acrobat y GenStudio. Los ingresos adicionales compensan el coste de cómputo y sostienen la ventaja competitiva.",
    "tesis_contraste": "La confirmarían expansión de clientes y gasto, monetización de IA que aporte crecimiento adicional y mejora de margen con retención sólida. Se debilitaría si el ARR de IA solo sustituye ingresos existentes o si aumenta su uso sin una contribución económica suficiente.",
+   "roic_terminal": 0.2931842949283384,
    "margen_reportado": 0.43,
    "cagr": 0.11004954865604777,
    "rev5": 43770.72826252802,
@@ -683,14 +1034,14 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.2056,
+   "roic_terminal_usado": 0.2931842949283384,
    "detalle": {
-    "v": 566.5806203667365,
-    "pvFlujos": 66314.04385888168,
-    "pvTerminal": 155287.26813028083,
-    "valorTerminal": 415536.46136673825,
-    "activosOperativos": 221601.31198916252,
-    "patrimonio": 220513.17744673384,
+    "v": 604.6241056040913,
+    "pvFlujos": 65049.748926766704,
+    "pvTerminal": 171358.08751677428,
+    "valorTerminal": 458540.70440310123,
+    "activosOperativos": 236407.836443541,
+    "patrimonio": 235319.7019011123,
     "ingresos": [
      25970,
      29270.359999999997,
@@ -728,11 +1079,11 @@
      2979.1664109268363,
      2967.740599258548,
      2966.70578597343,
-     2920.3830403621487,
-     2825.7103759285224,
-     2680.8203061901395,
-     2485.2196468653005,
-     2616.687766184475
+     3157.5703618272432,
+     3270.4746263771767,
+     3293.504729141697,
+     3217.4933748545286,
+     3547.503055004346
     ],
     "flujo": [
      null,
@@ -741,11 +1092,11 @@
      9348.752550481177,
      10599.31797485581,
      11834.740005749913,
-     12972.69544932123,
-     14118.171319648523,
-     15253.973182813152,
-     16361.497096085424,
-     17044.412081406783
+     12735.508127856136,
+     13673.407069199868,
+     14641.288759861594,
+     15629.223368096196,
+     16113.59679258691
     ],
     "tasa": [
      null,
@@ -788,7 +1139,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.2056,
+    "roicTerminal": 0.2931842949283384,
     "caja": 5639,
     "deuda": 6727.134542428695,
     "minoritarios": 0,
@@ -807,28 +1158,28 @@
     "wacc0": 0.10926947048927507,
     "margenY1": 0.385869
    },
-   "valor_bruto": 566.5806203667365,
-   "valor_bruto_prop": 566.3122245046138,
-   "valor_beta_hoja": 566.5806203667365,
-   "valor_beta_prop": 566.3122245046138
+   "valor_bruto": 604.6241056040913,
+   "valor_bruto_prop": 604.3359249550987,
+   "valor_beta_hoja": 604.6241056040913,
+   "valor_beta_prop": 604.3359249550987
   }
  ],
- "valor_esperado_beta_hoja": 355.48674039321935,
- "valor_esperado_beta_prop": 355.3262925921418,
+ "valor_esperado_beta_hoja": 366.1494489158995,
+ "valor_esperado_beta_prop": 365.9833783514192,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.3122665100874735,
    "ke": 0.11363445395092558,
    "wacc": 0.10926947048927507,
-   "dcf_base": 454.7782892267115
+   "dcf_base": 484.92412993819903
   },
   {
    "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
    "beta": 1.314159512218576,
    "ke": 0.11372206607077828,
    "wacc": 0.10935147077116723,
-   "dcf_base": 454.5668803033634
+   "dcf_base": 484.6970602268773
   }
  ],
  "sensibilidad": {
@@ -848,149 +1199,149 @@
   ],
   "v": [
    [
-    338.08457916685154,
-    356.5873429766114,
-    375.09010678637134,
-    393.5928705961312,
-    412.09563440589096
+    360.17918966170015,
+    379.624539850685,
+    399.0698900396699,
+    418.51524022865476,
+    437.96059041763965
    ],
    [
-    374.48717748416743,
-    395.37525665720136,
-    416.2633358302354,
-    437.15141500326945,
-    458.0394941763033
+    399.678958299416,
+    421.62458382401877,
+    443.57020934862174,
+    465.5158348732248,
+    487.4614603978276
    ],
    [
-    414.9347860195492,
-    438.48174350269056,
-    462.02870098583213,
-    485.57565846897364,
-    509.12261595211504
+    443.59600651736986,
+    468.327045788257,
+    493.0580850591443,
+    517.7891243300315,
+    542.5201636009186
    ],
    [
-    459.8298535220065,
-    486.3363125336777,
-    512.8427715453488,
-    539.3492305570201,
-    565.8556895686911
+    492.37048335228866,
+    520.2000625108594,
+    548.0296416694301,
+    575.859220828001,
+    603.6887999865717
    ],
    [
-    509.6081968821556,
-    539.4040742376145,
-    569.1999515930737,
-    598.9958289485327,
-    628.7917063039919
+    546.4790500997099,
+    577.7505719772471,
+    609.0220938547844,
+    640.2936157323217,
+    671.5651376098592
    ]
   ],
-  "referencia_constante": 462.02870098583213,
+  "referencia_constante": 493.0580850591443,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.3122665100874735,
    "margen": 0.35086895360065085,
-   "g": -0.02154423844107428,
-   "tasa_base": 0.8773842994578325
+   "g": -0.03360468160101088,
+   "tasa_base": 0.9020139924492939
   },
   {
    "beta": 1.3122665100874735,
    "margen": 0.3808689536006509,
-   "g": -0.03649688162681736,
-   "tasa_base": 0.9057160084823263
+   "g": -0.04801028047114447,
+   "tasa_base": 0.9204531590030649
   },
   {
    "beta": 1.3122665100874735,
    "margen": 0.4008689536006509,
-   "g": -0.04563464533170697,
-   "tasa_base": 0.9174123460245849
+   "g": -0.05684048894409016,
+   "tasa_base": 0.9317558258484354
   },
   {
    "beta": 1.314159512218576,
    "margen": 0.35086895360065085,
-   "g": -0.021458242683504436,
-   "tasa_base": 0.8770454761730074
+   "g": -0.03352022639135627,
+   "tasa_base": 0.901905889780936
   },
   {
    "beta": 1.314159512218576,
    "margen": 0.3808689536006509,
-   "g": -0.03641285226155627,
-   "tasa_base": 0.905608450894792
+   "g": -0.047927624590042794,
+   "tasa_base": 0.9203473594752548
   },
   {
    "beta": 1.314159512218576,
    "margen": 0.4008689536006509,
-   "g": -0.045551786288072715,
-   "tasa_base": 0.917306286448733
+   "g": -0.056758911812263446,
+   "tasa_base": 0.9316514071196971
   }
  ],
  "ingresos_ltm": 25970,
  "sens_base": {
-  "base": 454.7782892267115,
+  "base": 484.92412993819903,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 431.76429140802264
+    "valor": 460.74567333464535
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 477.7922870454003
+    "valor": 509.10258654175266
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 410.1042335773085
+    "valor": 436.6252865166444
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 504.38228052044315
+    "valor": 538.5776215460706
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 617.1813697902508
+    "valor": 663.2263961298861
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 361.07545115883687
+    "valor": 382.3677718248866
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 421.9612213280911
+    "valor": 445.3053956916673
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 497.6268073698573
+    "valor": 536.8906628924215
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 433.12218021591565
+    "valor": 461.83250470304665
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 447.15577920949346
+    "valor": 479.0031379163548
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 459.85996257152345
+    "valor": 488.87145795276183
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 316.74906282526445
+    "valor": 295.1840130108741
    }
   ]
  },
  "rd_vida": 3,
  "rd_ltm": 4694,
- "motor_tecnico": 489.705984267639
+ "motor_tecnico": 484.92412993819903
 }

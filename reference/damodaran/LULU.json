@@ -89,7 +89,7 @@
   "texto": "El margen operativo GAAP de los últimos doce meses es 17,8% (US$1.979 millones), pero incluye US$134,5 millones de devolución de aranceles IEEPA (una vez, en el 2T26) y excluye como gasto normal US$24,8 millones de la disputa por poderes con el fundador Chip Wilson y US$15,2 millones de la transición del CEO; normalizado, es ~17,0% ([lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm), [lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm)). El margen va hacia abajo: fue 23,7% en 2024 y 19,9% en 2025, y la guía de 2026 implica ~13% sin la devolución de aranceles (BPA de US$9,48-9,73 menos US$0,86 de la devolución). En el 2T26, sin la devolución, el margen bruto bajó 360 puntos básicos (aranceles, rebajas y más ocupación por tiendas nuevas) y los gastos de venta y administración subieron a 41,7% de las ventas ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)). Los segmentos siguen siendo muy rentables: en 2025 Américas ganó 32,6% de sus ventas, China continental 40,0% y el resto del mundo 23,0%, antes de US$1.397 millones de costos corporativos."
  },
  "reinversion": {
-  "texto": "lululemon reinvierte en tiendas, centros de distribución y tecnología: el capex fue US$681 millones en 2025 (~6% de las ventas) y abre ~40-45 tiendas por año (825 al 2-ago-2026). No tiene deuda financiera; los arrendamientos (VP de US$2.044 millones con los compromisos del 10-Q al 2-ago-2026) son su única deuda. Con capital invertido de ~US$5.450 millones (patrimonio + arrendamientos − caja) rota ~2,0 veces las ventas; se usa 1,8 (el sector Apparel en EE.UU. rota 1,77) porque la expansión internacional exige tiendas propias. Con el margen objetivo, el capital nuevo rinde ~25%, cerca de su ROIC actual (27%).",
+  "texto": "La Base usa ventas/capital 1.8000× en años 1–5 y un ancla de 1.8000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 26.68% y el terminal de Base 12.40%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.6842%; ROIC terminal Base 0.124. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
   "tabla": {
    "cols": [
     "Concepto",
@@ -404,5 +404,11 @@
    "Probabilidades y lectura del resultado.",
    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.124,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.6842%; ROIC terminal Base 0.124. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+  "convergencia": true,
+  "g3": true
+ }
 }

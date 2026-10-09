@@ -1,8 +1,457 @@
 {
  "ticker": "MCD",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "MCD",
+  "empresa": "McDonald's Corporation",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Restaurant/Dining",
+  "historia": "En cinco a diez años McDonald's es, todavía más que hoy, un dueño de inmuebles y de una marca que cobra renta y regalías sobre las ventas de ~50.000 restaurantes operados por terceros: el refranquiciamiento lleva la mezcla de ~95% a ~98% de locales franquiciados a fines de 2028, así que los ingresos reportados bajan dos años aunque las ventas del sistema sigan creciendo ~5% (aperturas ~2,5% y comparables de 2-3%). El margen operativo sube de ~46% a ~52% por esa mezcla y por un gasto general que baja de 2,2% a 1,9% de las ventas del sistema, pero no llega al tope de la guía porque el apoyo de rentas a franquiciados (plan NEXT) se amortiza contra el resultado. Reinvierte mucho capital por dólar de ventas nuevas (terrenos y edificios), con un rendimiento parecido al actual (~21% con arrendamientos). El riesgo no es financiero ni de quiebra: es de tráfico en EE.UU., de la salud económica de los franquiciados y del costo de defender el valor percibido frente a Burger King, Taco Bell y Chick-fil-A.",
+  "filtro": [
+   [
+    "Las ventas del sistema crecen ~5% anual (2,5% por aperturas y 2-3% de comparables) hasta 2030",
+    "Sí",
+    "Sí: +4% a moneda constante en el 2T26 con aperturas que aportan ~2,5% ([McDonald's, comunicado del 2T26, 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm); [McDonald's, información complementaria del 2T26 (anexo 99.2), 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm)); la gerencia espera comparables de 3-4% normalizadas ([Stock Analysis, transcripción del Investor Day, 23-sep-2026](https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/))",
+    "Probable con comparables de 2-3%; el 3-4% exige recuperar el tráfico en EE.UU., que fue negativo en el 2T26 y en el 3T26"
+   ],
+   [
+    "El refranquiciamiento lleva la mezcla de ~95% a ~98% a fines de 2028",
+    "Sí",
+    "Sí: meta declarada por el CFO en el Investor Day ([Stock Analysis, transcripción del Investor Day, 23-sep-2026](https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/))",
+    "Probable: la empresa ya opera así en EE.UU. (95%) e IDL (99%); depende de encontrar compradores en los mercados propios de IOM"
+   ],
+   [
+    "El margen operativo llega a 52% o más en 2030",
+    "Sí",
+    "Sí: guía de «low-to-mid 50%» ajustado a 2030 ([McDonald's, 8-K del Investor Day (anexo 99.1), 23-sep-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000076/exhibit991-investorupdate2.htm)); el franquiciado rinde ~84% de margen y pasa a pesar ~77% de los ingresos",
+    "Plausible: el apoyo de rentas (~US$5.000 M a 2030) se amortiza ~10 años contra el resultado y la reestructuración se repite desde 2023"
+   ],
+   [
+    "El plan NEXT recupera el tráfico de EE.UU. y gana 1,5 puntos de participación en pollo y bebidas",
+    "Sí",
+    "Débil: comparables de EE.UU. +0,8% en el 2T26 con tráfico negativo y guía de 3T26 levemente negativa ([McDonald's, comunicado del 2T26, 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm); [Stock Analysis, transcripción del Investor Day, 23-sep-2026](https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/))",
+    "Incierto: la industria espera tráfico plano en los mercados propios; la ganancia tiene que salir de participación"
+   ]
+  ],
+  "tasas_base_nota": "Con ingresos LTM de US$27.702 millones (~US$19.500 millones de 2015) McDonald's está en el tramo de más de US$12.000 millones de The Base Rate Book, donde la mediana real de crecimiento a 5 años es baja (más ~2,5% de inflación para compararla con cifras nominales). La Base ({cagrA} nominal) queda por debajo de la mediana por una razón contable y no de demanda: el refranquiciamiento cambia ventas de restaurantes propios por rentas y regalías, que son ~15% de esas ventas. Las ventas del sistema crecen ~5%.",
+  "segmentos": {
+   "Franquicias": 17073,
+   "Restaurantes propios": 9942,
+   "Otros": 688
+  },
+  "crecimiento": {
+   "texto": "Los ingresos LTM (julio 2025-junio 2026) suman US$27.702 millones: ingresos de franquicias (rentas, regalías y cuotas iniciales) US$17.073 millones, ventas de restaurantes propios US$9.942 millones y otros ingresos (tecnología cobrada a franquiciados y licencias de marca) US$688 millones (cálculo propio: 2025 + 1S26 − 1S25, [McDonald's, 10-K 2025, 24-feb-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm) y [McDonald's, comunicado del 2T26, 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm)). La variable económica es la venta del sistema, US$139.400 millones en 2025 (+5% a moneda constante): McDonald's cobra ~10,4% de renta y ~6% de regalías sobre la venta de los locales franquiciados ([McDonald's, 10-K 2025, 24-feb-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm)). En el 2T26 las ventas del sistema crecieron 4% a moneda constante con comparables de +1,3% (EE.UU. +0,8%, IOM +1,5%, IDL +1,9%) y aperturas que aportan ~2,5% ([McDonald's, comunicado del 2T26, 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm); [McDonald's, información complementaria del 2T26 (anexo 99.2), 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm)). En EE.UU. el comparable salió del ticket y la mezcla, con tráfico negativo, y la gerencia anticipó un 3T26 levemente negativo; la competencia directa se dividió: Burger King +8,5% y Taco Bell +7% frente a Wendy's −7% ([Restaurant Dive, ventas comparables de 18 cadenas, 27-ago-2026](https://www.restaurantdive.com/news/tracking-same-store-sales-18-major-restaurant-chains/742371/)). El refranquiciamiento a ~98% a fines de 2028 ([Stock Analysis, transcripción del Investor Day, 23-sep-2026](https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/)) explica la caída de los ingresos reportados en los años 1-2: los restaurantes propios bajan ~50% y las franquicias suben algo más que las ventas del sistema por las rentas y regalías de los locales vendidos.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2024",
+     "2025",
+     "LTM jun-26 (cálculo propio)",
+     "Variación 2T26",
+     "Peso LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos de franquicias",
+      "15.715",
+      "16.548",
+      "17.073",
+      "+4% (+3% m. c.)",
+      "61,6%"
+     ],
+     [
+      "Ventas de restaurantes propios",
+      "9.782",
+      "9.690",
+      "9.942",
+      "+3%",
+      "35,9%"
+     ],
+     [
+      "Otros ingresos",
+      "423",
+      "647",
+      "688",
+      "+6%",
+      "2,5%"
+     ],
+     [
+      "Total",
+      "25.920",
+      "26.885",
+      "27.702",
+      "+4% (+2% m. c.)",
+      "100%"
+     ],
+     [
+      "Ventas del sistema (no son ingresos)",
+      "~131.000",
+      "139.400",
+      "—",
+      "+5% (+4% m. c.)",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo GAAP LTM es 46,2% (EBIT de US$12.805 millones). Incluye US$219 millones de cargos de reestructuración del programa Accelerating the Organization que este análisis NO excluye: se repiten desde 2023 (US$362, 291 y 229 millones en 2023-2025, [McDonald's, 10-K 2025, 24-feb-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm)) y la empresa sigue reorganizando su estructura. Sin ellos el margen no GAAP del 2T26 fue 46,9% ([McDonald's, información complementaria del 2T26 (anexo 99.2), 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm)). La fuente del margen es la mezcla: los ingresos de franquicias dejan ~84% después de la ocupación (US$16.548 menos US$2.618 millones en 2025), los restaurantes propios ~15% (US$9.690 menos US$8.268 millones) y el gasto general es ~2,2% de las ventas del sistema ([McDonald's, 10-K 2025, 24-feb-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm); [McDonald's, información complementaria del 2T26 (anexo 99.2), 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm)). Con la mezcla de 98% y un gasto general de 1,9% a 2030, la empresa guía un margen ajustado de «low-to-mid 50%» ([McDonald's, 8-K del Investor Day (anexo 99.1), 23-sep-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000076/exhibit991-investorupdate2.htm)). El comparable maduro es el propio modelo de franquicia pura: Domino's opera con márgenes de ~19% porque su ingreso incluye la distribución de insumos, y Yum!, que es casi 100% franquiciada, con ~33%; ninguno es dueño de los inmuebles como McDonald's, cuya renta explica la diferencia. La Base usa 52%: el tramo bajo-medio de la guía, porque el apoyo de rentas del plan NEXT se amortiza ~10 años contra el resultado ([Stock Analysis, transcripción del Investor Day, 23-sep-2026](https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/))."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 0.5000× en años 1–5 y un ancla de 0.5000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 21.32% y el terminal de Base 18.40%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 21.3214%; ROIC terminal Base 0.184. Conservadora mantiene el mismo terminal porque supone presión de tráfico/precio con la ventaja de marca/inmuebles o licencias aún vigente. Disrupción sí pierde la ventaja y converge al costo de capital. Se conserva la regla económica; no se igualan ambos casos.",
+   "tabla": {
+    "cols": [
+     "Partida",
+     "Valor",
+     "Fuente",
+     "Lectura"
+    ],
+    "align": [
+     "l",
+     "r",
+     "l",
+     "l"
+    ],
+    "rows": [
+     [
+      "Capex 2025 / guía 2026",
+      "US$3.365 M / US$3.700-3.900 M",
+      "10-K 2025; anexo 99.2 del 2T26",
+      "~1,5 veces la D&A (US$2.199 M)"
+     ],
+     [
+      "Apoyo NEXT a franquiciados",
+      "US$8.500 M a 2036 (US$5.000 M a 2030)",
+      "8-K del 23-sep-2026",
+      "Rentas (resta ingresos) + capital (capex)"
+     ],
+     [
+      "Capital invertido con arrendamientos",
+      "~US$50.400 M",
+      "Cálculo de la hoja ('Valuation output'!B41)",
+      "ROIC después de impuestos ~21%"
+     ],
+     [
+      "Rendimiento del capital nuevo (Base)",
+      "~21%",
+      "55,5% × 75% × 0,5",
+      "Igual al ROIC actual"
+     ]
+    ]
+   }
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La beta desapalancada de Restaurant/Dining es 0,66 en la tabla global de Damodaran y 0,78 en la de EE.UU. (enero de 2026). La hoja usa la global, reapalancada con la deuda a valor de mercado de McDonald's (D/E ~25%): ~0,79, porque ~60% de las ventas está fuera de EE.UU. La prima de mercado es 3,70% (octubre de 2026) ponderada por las ventas de cada región (EE.UU. y Canadá ~46%, Europa ~43%, Australia ~5%, resto ~9%): 4,33%. El riesgo propio (tráfico, salud de los franquiciados, costo laboral) es diversificable y va en las historias Conservadora y Disrupción, no en la tasa. La calificación real (Baa1/BBB+) fija el costo de la deuda antes de impuestos en 7,13%."
+  },
+  "historias": [
+   {
+    "id": "A",
+    "tesis": "base",
+    "prob": 0.5,
+    "margen": 0.52,
+    "nombre": "Base · Refranquiciamiento a 98% y comparables de 2-3%",
+    "crec": {
+     "Franquicias": [
+      0.07,
+      0.065,
+      0.05,
+      0.05,
+      0.05
+     ],
+     "Restaurantes propios": [
+      -0.15,
+      -0.3,
+      -0.1,
+      0.03,
+      0.03
+     ],
+     "Otros": [
+      0.08,
+      0.07,
+      0.06,
+      0.05,
+      0.05
+     ]
+    },
+    "tesis_que": "Las ventas del sistema crecen ~5% (aperturas ~2,5% y comparables de 2-3%: el valor y el pollo recuperan algo de tráfico, sin volver al 3-4% que pide la gerencia). El refranquiciamiento vende ~60% de los restaurantes propios hasta 2028: esas ventas bajan 15%, 30% y 10% y las franquicias suben 7%, 6,5% y 5%. El apoyo de rentas del plan NEXT resta ~1 punto al crecimiento de las franquicias. El margen pasa de ~46% a 52% en cinco años por mezcla y gasto general.",
+    "tesis_contraste": "Comparables de EE.UU. ≥ 2% desde el 1T27, ventas del sistema ≥ +5% y margen ajustado ≥ 48% en 2027."
+   },
+   {
+    "id": "B",
+    "tesis": "conservadora",
+    "prob": 0.25,
+    "margen": 0.48,
+    "nombre": "Conservadora · El tráfico de EE.UU. no vuelve y el valor cuesta margen",
+    "crec": {
+     "Franquicias": [
+      0.05,
+      0.05,
+      0.035,
+      0.035,
+      0.035
+     ],
+     "Restaurantes propios": [
+      -0.15,
+      -0.3,
+      -0.1,
+      0.01,
+      0.01
+     ],
+     "Otros": [
+      0.05,
+      0.04,
+      0.04,
+      0.03,
+      0.03
+     ]
+    },
+    "tesis_que": "El consumidor de menores ingresos sigue débil y la competencia por precio (Burger King, Taco Bell, Wendy's con descuentos) obliga a sostener el menú de valor; las comparables quedan en 0-1% y las aperturas se moderan a ~2%. El refranquiciamiento ocurre igual, pero parte del apoyo a franquiciados termina siendo renta resignada y el margen se queda en 48%.",
+    "tesis_contraste": "Comparables de EE.UU. ≤ 0% dos trimestres más, ventas del sistema < +3% y margen ajustado ≤ 46%."
+   },
+   {
+    "id": "C",
+    "tesis": "disrupción",
+    "prob": 0.1,
+    "margen": 0.43,
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "descripcion": "Los franquiciados pierden rentabilidad y la renta deja de crecer",
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion",
+    "s2c": 4.4147393652093125,
+    "crec": {
+     "Franquicias": [
+      0.03,
+      0.02,
+      0.005,
+      0.0,
+      0.0
+     ],
+     "Restaurantes propios": [
+      -0.17,
+      -0.3,
+      -0.12,
+      -0.02,
+      -0.02
+     ],
+     "Otros": [
+      0.02,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "tesis_que": "El tráfico cae varios años: los medicamentos para bajar de peso (GLP-1) reducen la frecuencia, el costo laboral sube por ley en más estados y las cadenas de pollo y los delivery ganan participación. La venta por local deja de crecer en términos nominales, el flujo de los franquiciados se comprime y McDonald's tiene que ampliar el apoyo de rentas y cerrar locales. El margen baja a 43%, la renta se estabiliza sin recuperación y el ROIC después del año 10 es el costo de capital.",
+    "tesis_contraste": "Comparables globales negativas cuatro trimestres seguidos, cierres netos en EE.UU. o más apoyo de rentas que el anunciado."
+   },
+   {
+    "id": "D",
+    "tesis": "optimista",
+    "prob": 0.15,
+    "margen": 0.545,
+    "nombre": "Optimista · NEXT recupera el tráfico y la escala se nota en el margen",
+    "crec": {
+     "Franquicias": [
+      0.08,
+      0.08,
+      0.065,
+      0.065,
+      0.06
+     ],
+     "Restaurantes propios": [
+      -0.15,
+      -0.3,
+      -0.1,
+      0.04,
+      0.04
+     ],
+     "Otros": [
+      0.1,
+      0.09,
+      0.08,
+      0.07,
+      0.06
+     ]
+    },
+    "tesis_que": "El plan NEXT cumple: el pollo y las bebidas ganan 1,5 puntos de participación, la fidelización (~220 millones de usuarios activos) sube la frecuencia y las comparables vuelven a 3-4%; con aperturas de ~2,5% las ventas del sistema crecen 6-7%. El margen llega a 54,5%, el tope de la guía ([McDonald's, 8-K del Investor Day (anexo 99.1), 23-sep-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000076/exhibit991-investorupdate2.htm)).",
+    "tesis_contraste": "Comparables de EE.UU. ≥ 3% con tráfico positivo en 2027 y margen ajustado ≥ 50% en 2028."
+   }
+  ],
+  "prob_texto": "La Base pesa 50%: extrapola el crecimiento de las ventas del sistema de los últimos años (~5% a moneda constante) con comparables algo menores que la guía de largo plazo y toma el refranquiciamiento y el margen de la guía con un margen de prudencia. La Conservadora pesa 25% porque es lo que hoy muestran EE.UU. (comparables de +0,8% en el 2T26, 3T26 levemente negativo) y la reacción del mercado al plan NEXT. La Disrupción pesa 10%: el negocio superó crisis peores (2002-2003, 2014-2015, la pandemia), pero el GLP-1 y el costo laboral son amenazas nuevas sobre la frecuencia y la economía del franquiciado. La Optimista pesa 15% porque exige que el tráfico vuelva y que el margen llegue al tope de la guía a la vez. Son juicio del analista, no frecuencias publicadas.",
+  "premortem": [
+   "El valor no recupera el tráfico: los franquiciados no adoptan los precios sugeridos (solo 60-65% lo hizo en el 2T26) y las comparables de EE.UU. siguen en ~0%.",
+   "El apoyo de rentas se vuelve permanente: los US$8.500 millones del plan NEXT no alcanzan y la renta efectiva baja, como en la Conservadora.",
+   "El refranquiciamiento se demora o se vende barato en IOM (Francia, Alemania) y la mejora de margen llega tarde.",
+   "El GLP-1 y la regulación laboral (salario mínimo de comida rápida en California y otros estados) reducen la frecuencia y el flujo del franquiciado.",
+   "Un dólar más fuerte recorta ~1-2 puntos el crecimiento reportado de un negocio con ~60% de ventas fuera de EE.UU."
+  ],
+  "contra": "las comparables de EE.UU. fueron +0,8% en el 2T26 con tráfico negativo y la gerencia espera un 3T26 levemente negativo ([McDonald's, comunicado del 2T26, 4-ago-2026](https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm); [Stock Analysis, transcripción del Investor Day, 23-sep-2026](https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/)); el CEO admitió problemas de ejecución del menú de valor; la industria espera tráfico plano en los mercados propios; y el mercado castigó el plan NEXT (−4,8% el 23-sep-2026, su peor día desde marzo de 2020) porque el efectivo sale antes que el beneficio ([The Crypto Basic, caída de la acción y payback del plan NEXT, 24-sep-2026](https://thecryptobasic.com/2026/09/24/mcdonalds-stock-fell-4-8-amid-investor-day-cfo-puts-next-company-payback-at-5-6-years/)).",
+  "indicadores": [
+   [
+    "Comparables de EE.UU.",
+    "+0,8% (2T26); 3T26 guiado levemente negativo",
+    "≥ +2% desde el 1T27",
+    "≤ 0% dos trimestres más"
+   ],
+   [
+    "Comparables globales",
+    "+1,3% (2T26)",
+    "≥ +3%",
+    "≤ 0%"
+   ],
+   [
+    "Ventas del sistema a moneda constante",
+    "+4% (2T26)",
+    "≥ +5%",
+    "≤ +3%"
+   ],
+   [
+    "Mezcla franquiciada",
+    "~95% (inicio de 2026)",
+    "~98% a fines de 2028",
+    "Se demora o se vende con descuento"
+   ],
+   [
+    "Margen operativo ajustado",
+    "46,9% (2T26)",
+    "≥ 48% en 2027",
+    "≤ 45%"
+   ],
+   [
+    "Gasto general / ventas del sistema",
+    "~2,2% (guía 2026)",
+    "≤ 2,0% en 2028",
+    "≥ 2,3%"
+   ],
+   [
+    "Usuarios activos de fidelización (90 días)",
+    "~220 millones (2T26)",
+    "≥ +10% anual",
+    "Estancamiento"
+   ],
+   [
+    "Acciones en circulación",
+    "707,6 M (30-jun-2026); recompras US$1.251 M en el 1S26",
+    "Bajan ~1% anual",
+    "Suben"
+   ]
+  ],
+  "margenes_inverso": [
+   0.48,
+   0.52,
+   0.545
+  ],
+  "precio_lectura": "El precio pide algo más que la Base: con su margen, el DCF inverso exige un crecimiento de los ingresos de los años 1-5 cercano al {cagrA} de la Base o algo mayor. ¿Qué sabe el mercado que yo no? Puede estar pagando por la estabilidad del flujo (renta y regalías indexadas a ventas, con una beta baja) más de lo que la tasa del modelo reconoce, o por un ROIC terminal mayor que el promedio de la industria. En sentido contrario, el mercado acaba de castigar el plan NEXT: la caída de septiembre descuenta parte de la Conservadora.",
+  "frase": "Arrendador y franquiciador de ~50.000 locales: refranquicia a 98%, las ventas del sistema crecen ~5% y el margen sube a ~52%",
+  "confianza": "Media-alta: el modelo de renta y regalías es estable y está documentado; el tráfico de EE.UU. y el costo real del plan NEXT no",
+  "cambiaria": "Las comparables y el tráfico de EE.UU., el ritmo del refranquiciamiento y la amortización del apoyo de rentas",
+  "revision": "Resultados del 3T26 (fines de octubre o noviembre de 2026)",
+  "fuentes": [
+   [
+    "McDonald's, 10-Q del 2T26 (7-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm"
+   ],
+   [
+    "McDonald's, 10-K 2025 (24-feb-2026)",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm"
+   ],
+   [
+    "McDonald's, comunicado del 2T26 (4-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit991-6302026.htm"
+   ],
+   [
+    "McDonald's, información complementaria del 2T26 (4-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm"
+   ],
+   [
+    "McDonald's, 8-K del Investor Day (23-sep-2026)",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000076/exhibit991-investorupdate2.htm"
+   ],
+   [
+    "McDonald's, 8-K del nombramiento de Skye Anderson (4-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000069/exhibitpressrelease.htm"
+   ],
+   [
+    "Stock Analysis, transcripción del Investor Day (23-sep-2026)",
+    "https://stockanalysis.com/stocks/mcd/transcripts/746101-investor-day-2026/"
+   ],
+   [
+    "Restaurant Dive, ventas comparables de 18 cadenas (27-ago-2026)",
+    "https://www.restaurantdive.com/news/tracking-same-store-sales-18-major-restaurant-chains/742371/"
+   ],
+   [
+    "Restaurant Dive, tres cifras del plan NEXT (28-sep-2026)",
+    "https://www.restaurantdive.com/news/mcdonalds-next-franchisee-rent-relief-store-productivity-investment/831377/"
+   ],
+   [
+    "The Crypto Basic, caída de la acción y payback del plan NEXT (24-sep-2026)",
+    "https://thecryptobasic.com/2026/09/24/mcdonalds-stock-fell-4-8-amid-investor-day-cfo-puts-next-company-payback-at-5-6-years/"
+   ],
+   [
+    "Damodaran, ERP implícita de octubre de 2026",
+    "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+   ],
+   [
+    "Damodaran, betas por industria (enero de 2026)",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ],
+   [
+    "Mauboussin y Callahan, The Base Rate Book (2016)",
+    "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 10020.405,
+   "ajuste_ebit": 962.973,
+   "margen_pp": 0.034761858349577644,
+   "capital_ventas": 0.3617213558587828,
+   "cierre": "2025-12-31",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: las ventas del sistema crecen; los ingresos reportados, no tanto.",
+    "La Base crece {g1A} el primer año y {cagrA} compuesto en cinco años. Detrás hay ventas del sistema que crecen ~5% (aperturas ~2,5%, la guía de la empresa, y comparables de 2-3%) y un cambio de mezcla: el refranquiciamiento a ~98% vende ~60% de los restaurantes propios hasta 2028 y cambia una venta de ~US$4 millones por local por rentas y regalías de ~16% de esa venta. Por eso los ingresos bajan en los años 1-2 y vuelven a ~4,6% desde el año 4. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento; el desvío no es de demanda sino contable. La alternativa de comparables de 3-4% (la guía de largo plazo) exige tráfico positivo en EE.UU., que no se ve en 2026. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que las comparables de EE.UU. sigan en ~0% en 2027 (hacia la Conservadora, {cagrB}) o que vuelvan a 3-4% (hacia la Optimista, {cagrD})."
+   ],
+   [
+    "Margen: la mezcla lo sube; el apoyo a franquiciados lo frena.",
+    "La Base parte de {margenY1} el primer año (el LTM en base ajustada por arrendamientos) y llega a {mA} en {conv} años ({mrepA} en base reportada, +{arr_pp} pp por el ajuste de arrendamientos). Es el tramo bajo-medio de la guía de «low-to-mid 50%» a 2030: la mezcla de franquicias (~84% de margen después de la ocupación) y un gasto general de 1,9% de las ventas del sistema lo justifican, pero el apoyo de rentas del plan NEXT se amortiza ~10 años contra el resultado y los cargos de reestructuración se repiten. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone que el valor y el apoyo cuestan margen de forma permanente; la Disrupción ({mC}), franquiciados débiles; la Optimista ({mD}), el tope de la guía."
+   ],
+   [
+    "Reinversión: mucho capital por dólar de ventas, con el mismo retorno de hoy.",
+    "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10. Con el margen objetivo y un impuesto de 25%, el capital nuevo rinde ~21%, igual al ROIC actual con arrendamientos: los terrenos y edificios que McDonald's compra o arrienda son el núcleo de su modelo de renta. Un ventas/capital mayor supondría que la renta crece sin comprar inmuebles, algo que el historial no muestra. En los años 1-2 la caída de ingresos libera capital (~US$2.600 millones en la Base), algo más que lo que se cobraría por los restaurantes vendidos al ritmo de 2015-2018 (~US$0,35 por dólar de venta propia, ~US$1.600 millones), compensado por una reinversión acumulada de los años 1-5 mayor que la de la guía de capex. La Disrupción, con ingresos que caen cinco años, usa un ventas/capital de {s2cC} en los años 1-5 para liberar solo eso (~US$1.770 millones y no ~US$6.000). Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+   ],
+   [
+    "Descuento y largo plazo: beta del sector y una ventaja durable.",
+    "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al 30-sep-2026, prima de mercado {erp} de Damodaran de octubre ponderada por regiones, beta {beta}, costo de la deuda 7,13% antes de impuestos con la calificación Baa1/BBB+) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el promedio de Restaurant/Dining ({roicT}): la marca tiene 70 años y superó varias crisis, la escala en compras, publicidad e inmuebles no tiene par y el ROIC no se erosiona. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}; con un ROIC terminal igual al costo de capital el DCF Base sería {s_roic}."
+   ],
+   [
+    "Acciones, opciones y deuda.",
+    "Se usan {acciones} millones de acciones (707,6 millones en circulación al 30-jun-2026, portada del 10-Q, más 1,2 millones de RSU); las 8,8 millones de opciones a US$228,19 se restan por su valor. La deuda es la financiera de US$39.863 millones (incluye papel comercial y vencimientos corrientes) más arrendamientos financieros de US$2.329 millones y operativos capitalizados de ~US$10.020 millones. El patrimonio contable negativo (−US$1.023 millones) refleja US$80.527 millones de recompras acumuladas, no insolvencia. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. El esperado queda por debajo de la Base porque las historias desfavorables pesan 35% y en ellas el margen cae más de lo que sube en la Optimista. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.184,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 21.3214%; ROIC terminal Base 0.184. Conservadora mantiene el mismo terminal porque supone presión de tráfico/precio con la ventaja de marca/inmuebles o licencias aún vigente. Disrupción sí pierde la ventaja y converge al costo de capital. Se conserva la regla económica; no se igualan ambos casos.",
+   "convergencia": true,
+   "g3": true
+  }
+ },
  "mos": 0.35,
- "tg_hoja": 0.0529,
+ "tg_hoja": 0.03,
  "segmentos_ltm": {
   "Franquicias": 17072.383712955274,
   "Restaurantes propios": 9941.641121900155,
@@ -28,12 +477,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.184,
-  "salesToCapital": 0.5
+  "salesToCapital": 0.5,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 140.01235252456573,
+ "dcf_sin_exceso": 127.43582260470637,
  "precio": 230.94,
- "dcf_base": 224.11800264767598,
+ "dcf_base": 159.93975662783646,
  "g_ref": 0.01051144685137979,
  "m_base": 0.5548,
  "s2c": 0.5,
@@ -130,84 +580,84 @@
    "tasa_base": 0.7535540714231648,
    "anios": [
     -0.008704833411543822,
-    -0.04718436849665997,
+    -0.047184368496659856,
     0.01639263605093433,
     0.04599628591625371,
     0.046057514197914706
    ],
    "anios6a10": [
-    0.047426011358331764,
-    0.04879450851874882,
-    0.05016300567916588,
-    0.05153150283958294,
-    0.052899999999999996
+    0.04284601135833176,
+    0.03963450851874882,
+    0.03642300567916588,
+    0.033211502839582935,
+    0.029999999999999992
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.184,
    "detalle": {
-    "v": 224.11800264767598,
-    "pvFlujos": 69627.02761695498,
-    "pvTerminal": 141137.98429277824,
-    "valorTerminal": 313536.58188841934,
-    "activosOperativos": 210765.01190973326,
-    "patrimonio": 158846.77202857743,
+    "v": 159.93975662783646,
+    "pvFlujos": 71484.56613392846,
+    "pvTerminal": 93793.21541379919,
+    "valorTerminal": 208360.6642997206,
+    "activosOperativos": 165277.7815477277,
+    "patrimonio": 113359.54166657188,
     "ingresos": [
      27702,
      27460.858704833412,
-     26165.13542846984,
-     26594.050970772154,
-     27817.278542895216,
-     29098.47324433196,
-     30478.49776692776,
-     31965.681085854787,
-     33569.17572770293,
-     35299.04580203751,
-     37166.36532496529,
-     39132.46605065595
+     26165.135428469843,
+     26594.050970772158,
+     27817.27854289522,
+     29098.473244331963,
+     30345.226759468722,
+     31547.94490797025,
+     32697.015884519264,
+     33782.93292041386,
+     34796.42090802628,
+     35840.31353526707
     ],
     "utilidad": null,
     "nopat": [
      null,
      10645.476485515721,
-     10614.716616251457,
-     11028.354804123443,
-     11786.275486526807,
-     12591.324011885628,
-     13087.030439124446,
-     13619.205613515838,
-     14190.64851219258,
-     14804.418570811522,
-     15463.86142183279
+     10614.716616251459,
+     11028.354804123444,
+     11786.275486526809,
+     12591.32401188563,
+     13029.805777180583,
+     13441.226145988358,
+     13821.961658471155,
+     14168.560881455509,
+     14477.79534513807
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -2591.446552727146,
+     -2591.4465527271386,
      857.8310846046297,
      2446.4551442461234,
      2562.3894028734867,
-     2760.049045191605,
-     2974.366637854051,
-     3206.98928369629,
-     3459.7401486691524,
-     3734.639045855569,
-     3932.201451381319
+     2493.5070302735185,
+     2485.685937682126,
+     2443.167468055093,
+     2365.6296685056395,
+     2253.4683534956894,
+     2360.5101106203447
     ],
     "flujo": [
      null,
-     13236.923038242867,
-     9756.885531646827,
-     8581.89965987732,
-     9223.88608365332,
-     9831.274966694024,
-     10112.663801270395,
-     10412.216329819548,
-     10730.908363523427,
-     11069.779524955953,
-     11531.65997045147
+     13236.92303824286,
+     9756.885531646829,
+     8581.899659877321,
+     9223.886083653322,
+     10097.816981612112,
+     10544.119839498457,
+     10998.058677933264,
+     11456.331989965514,
+     11915.09252795982,
+     12117.285234517727
     ],
     "tasa": [
      null,
@@ -225,15 +675,15 @@
     "crecimiento": [
      null,
      -0.008704833411543822,
-     -0.04718436849665997,
+     -0.047184368496659856,
      0.01639263605093433,
      0.04599628591625371,
      0.046057514197914706,
-     0.047426011358331764,
-     0.04879450851874882,
-     0.05016300567916588,
-     0.05153150283958294,
-     0.052899999999999996
+     0.04284601135833176,
+     0.03963450851874882,
+     0.03642300567916588,
+     0.033211502839582935,
+     0.029999999999999992
     ],
     "margen": [
      null,
@@ -249,7 +699,7 @@
      0.5547618583495777
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.184,
     "caja": 822,
     "deuda": 52212.40510489352,
@@ -269,10 +719,10 @@
     "wacc0": 0.08017910621191003,
     "margenY1": 0.497
    },
-   "valor_bruto": 224.11800264767598,
-   "valor_bruto_prop": 216.01524245840483,
-   "valor_beta_hoja": 224.11800264767598,
-   "valor_beta_prop": 216.01524245840483
+   "valor_bruto": 159.93975662783646,
+   "valor_bruto_prop": 153.8463220432302,
+   "valor_beta_hoja": 159.93975662783646,
+   "valor_beta_prop": 153.8463220432302
   },
   {
    "id": "B",
@@ -315,85 +765,85 @@
    },
    "tasa_base": 0.8089566521159876,
    "anios": [
-    -0.021775619968956383,
-    -0.05940945949685894,
+    -0.021775619968956494,
+    -0.05940945949685883,
     0.0038175014221883963,
     0.02964552863879044,
     0.029744725630343805
    ],
    "anios6a10": [
-    0.03437578050427505,
-    0.03900683537820629,
-    0.04363789025213753,
-    0.048268945126068774,
-    0.052900000000000016
+    0.029795780504275043,
+    0.02984683537820628,
+    0.02989789025213752,
+    0.029948945126068757,
+    0.029999999999999995
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.184,
    "detalle": {
-    "v": 185.41794687154749,
-    "pvFlujos": 64998.327923224744,
-    "pvTerminal": 118337.47765439654,
-    "valorTerminal": 262885.49067053094,
-    "activosOperativos": 183335.80557762133,
-    "patrimonio": 131417.5656964655,
+    "v": 132.21859002661014,
+    "pvFlujos": 67010.61332197726,
+    "pvTerminal": 78619.40330079883,
+    "valorTerminal": 174652.19660431892,
+    "activosOperativos": 145630.01662277614,
+    "patrimonio": 93711.77674162031,
     "ingresos": [
      27702,
-     27098.77177561997,
+     27098.771775619967,
      25488.84839140165,
      25586.15210638577,
      26344.667111412076,
      27128.28200646377,
-     28060.837874176043,
-     29155.402357708565,
-     30427.682606051163,
-     31896.394748076083,
-     33583.714030249306,
-     35360.29250244949
+     27936.590342586438,
+     28770.40915557,
+     29630.58369101233,
+     30517.98841602785,
+     31433.528068508684,
+     32376.533910563943
     ],
     "utilidad": null,
     "nopat": [
      null,
-     10505.109866536839,
+     10505.109866536837,
      10022.258513572806,
      10131.413886772114,
      10504.762125601806,
      10892.391790393387,
-     11180.158365440773,
-     11526.212427712297,
-     11935.213957994256,
-     12412.799860989542,
-     12965.711283368939
+     11130.65495838231,
+     11374.010328882367,
+     11622.553075473363,
+     11876.379301174788,
+     12135.585992271856
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -3219.8467684366406,
+     -3219.8467684366333,
      194.60742996823683,
      1517.0300100526147,
      1567.229790103389,
-     1865.1117354245434,
-     2189.128967065044,
-     2544.560496685197,
-     2937.424284049841,
-     3374.6385643464455,
-     3553.156944400369
+     1616.6166722453345,
+     1695.213172724189,
+     1771.4679480516766,
+     1844.977707019508,
+     1915.308813319479,
+     1978.6281509138876
     ],
     "flujo": [
      null,
-     13724.95663497348,
+     13724.95663497347,
      9827.651083604569,
      8614.3838767195,
      8937.532335498418,
-     9027.280054968844,
-     8991.02939837573,
-     8981.6519310271,
-     8997.789673944415,
-     9038.161296643097,
-     9412.55433896857
+     9275.775118148053,
+     9435.441785658122,
+     9602.54238083069,
+     9777.575368453854,
+     9961.070487855308,
+     10156.957841357967
     ],
     "tasa": [
      null,
@@ -410,16 +860,16 @@
     ],
     "crecimiento": [
      null,
-     -0.021775619968956383,
-     -0.05940945949685894,
+     -0.021775619968956494,
+     -0.05940945949685883,
      0.0038175014221883963,
      0.02964552863879044,
      0.029744725630343805,
-     0.03437578050427505,
-     0.03900683537820629,
-     0.04363789025213753,
-     0.048268945126068774,
-     0.052900000000000016
+     0.029795780504275043,
+     0.02984683537820628,
+     0.02989789025213752,
+     0.029948945126068757,
+     0.029999999999999995
     ],
     "margen": [
      null,
@@ -435,7 +885,7 @@
      0.5147618583495777
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.184,
     "caja": 822,
     "deuda": 52212.40510489352,
@@ -455,10 +905,10 @@
     "wacc0": 0.08017910621191003,
     "margenY1": 0.497
    },
-   "valor_bruto": 185.41794687154749,
-   "valor_bruto_prop": 178.52259521186812,
-   "valor_beta_hoja": 185.41794687154749,
-   "valor_beta_prop": 178.52259521186812
+   "valor_bruto": 132.21859002661014,
+   "valor_bruto_prop": 126.98987714101384,
+   "valor_beta_hoja": 132.21859002661014,
+   "valor_beta_prop": 126.98987714101384
   },
   {
    "id": "C",
@@ -524,12 +974,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 70.07477579286704,
-    "pvFlujos": 60722.95368074305,
+    "v": 70.13851600591025,
+    "pvFlujos": 60768.1304491004,
     "pvTerminal": 40861.76459046839,
     "valorTerminal": 90773.99017579886,
-    "activosOperativos": 101584.71827121144,
-    "patrimonio": 49666.478390055614,
+    "activosOperativos": 101629.8950395688,
+    "patrimonio": 49711.65515841297,
     "ingresos": [
      27702,
      26537.852023968524,
@@ -567,9 +1017,9 @@
      -59.79955615064896,
      -58.60356502763513,
      -46.68584832314082,
-     -118.64871442633739,
-     -78.89971621287259,
-     -39.38355012698594,
+     -142.39504415938075,
+     -109.99219116244659,
+     -62.29722413003138,
      0,
      0
     ],
@@ -580,9 +1030,9 @@
      8930.984636889585,
      8772.67725655625,
      8605.407728351269,
-     8582.984304921847,
-     8456.445237679989,
-     8337.50838771138,
+     8606.73063465489,
+     8487.537712629563,
+     8360.422061714426,
      8225.866370538752,
      8160.581716804318
     ],
@@ -646,10 +1096,10 @@
     "wacc0": 0.08017910621191003,
     "margenY1": 0.497
    },
-   "valor_bruto": 70.07477579286704,
-   "valor_bruto_prop": 66.69374906579577,
-   "valor_beta_hoja": 70.07477579286704,
-   "valor_beta_prop": 66.69374906579577
+   "valor_bruto": 70.13851600591025,
+   "valor_bruto_prop": 66.755692398233,
+   "valor_beta_hoja": 70.13851600591025,
+   "valor_beta_prop": 66.755692398233
   },
   {
    "id": "D",
@@ -699,23 +1149,23 @@
     0.056191569619821635
    ],
    "anios6a10": [
-    0.055533255695857306,
-    0.05487494177189298,
-    0.05421662784792865,
-    0.05355831392396432,
-    0.05289999999999999
+    0.050953255695857305,
+    0.045714941771892975,
+    0.040476627847928645,
+    0.035238313923964315,
+    0.02999999999999999
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.184,
    "detalle": {
-    "v": 253.34329858594,
-    "pvFlujos": 72783.97667635784,
-    "pvTerminal": 158694.87288376314,
-    "valorTerminal": 352539.02949312737,
-    "activosOperativos": 231478.84956012102,
-    "patrimonio": 179560.60967896518,
+    "v": 180.70191441883208,
+    "pvFlujos": 74514.72200887925,
+    "pvTerminal": 105478.52954342564,
+    "valorTerminal": 234319.46956999676,
+    "activosOperativos": 179993.25155230492,
+    "patrimonio": 128075.0116711491,
     "ingresos": [
      27702,
      27645.342045265857,
@@ -723,12 +1173,12 @@
      27422.20982799899,
      29076.014110303728,
      30709.840981449775,
-     32415.258433051742,
-     34194.04385208632,
-     36047.92960223063,
-     37978.595932175864,
-     39987.66365698796,
-     42103.011064442624
+     32274.607361356706,
+     33750.03915759183,
+     35116.1269324267,
+     36353.56003706533,
+     37444.16683817729,
+     38567.49184332261
     ],
     "utilidad": null,
     "nopat": [
@@ -738,11 +1188,11 @@
      11692.625967177362,
      12773.191845768726,
      13887.427692079766,
-     14545.882982253594,
-     15225.141049476491,
-     15925.201567753116,
-     16646.017264490372,
-     17387.49164462491
+     14482.767828184096,
+     15027.44480361712,
+     15513.551148388116,
+     15933.764088682223,
+     16281.524812839974
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
@@ -752,12 +1202,12 @@
      1537.645549338049,
      3307.6085646094725,
      3267.6537422920956,
-     3410.834903203933,
-     3557.5708380691503,
-     3707.7715002886252,
-     3861.3326598904678,
-     4018.1354496241984,
-     4230.694814909322
+     3129.532759813861,
+     3080.341839151507,
+     2961.6103098481417,
+     2772.5705666751765,
+     2514.5597754903015,
+     2654.5964368760897
     ],
     "flujo": [
      null,
@@ -765,12 +1215,12 @@
      9483.042235035224,
      8385.01740256789,
      9505.53810347663,
-     10476.592788875832,
-     10988.312144184443,
-     11517.369549187866,
-     12063.868907862648,
-     12627.881814866174,
-     13156.79682971559
+     10757.894932265905,
+     11402.425989032588,
+     12065.834493768978,
+     12740.98058171294,
+     13419.204313191922,
+     13626.928375963886
     ],
     "tasa": [
      null,
@@ -792,11 +1242,11 @@
      0.02884521855067468,
      0.06030893544604665,
      0.056191569619821635,
-     0.055533255695857306,
-     0.05487494177189298,
-     0.05421662784792865,
-     0.05355831392396432,
-     0.05289999999999999
+     0.050953255695857305,
+     0.045714941771892975,
+     0.040476627847928645,
+     0.035238313923964315,
+     0.02999999999999999
     ],
     "margen": [
      null,
@@ -812,7 +1262,7 @@
      0.5797618583495777
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.184,
     "caja": 822,
     "deuda": 52212.40510489352,
@@ -832,28 +1282,28 @@
     "wacc0": 0.08017910621191003,
     "margenY1": 0.497
    },
-   "valor_bruto": 253.34329858594,
-   "valor_bruto_prop": 244.31498871931745,
-   "valor_beta_hoja": 253.34329858594,
-   "valor_beta_prop": 244.31498871931745
+   "valor_bruto": 180.70191441883208,
+   "valor_bruto_prop": 173.94703856259846,
+   "valor_beta_hoja": 180.70191441883208,
+   "valor_beta_prop": 173.94703856259846
   }
  ],
- "valor_esperado_beta_hoja": 203.42246040890257,
- "valor_esperado_beta_prop": 195.95489324664663,
+ "valor_esperado_beta_hoja": 147.1436645839866,
+ "valor_esperado_beta_prop": 141.43825533108162,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 0.7856500449499505,
    "ke": 0.08691839670920425,
    "wacc": 0.08017910621191003,
-   "dcf_base": 224.11800264767598
+   "dcf_base": 159.93975662783646
   },
   {
    "enfoque": "Bottom-up del sector (Restaurant/Dining, reapalancada)",
    "beta": 0.9276151777078614,
    "ke": 0.09306544174035564,
    "wacc": 0.08508757856225699,
-   "dcf_base": 216.01524245840483
+   "dcf_base": 153.8463220432302
   }
  ],
  "sensibilidad": {
@@ -873,149 +1323,149 @@
   ],
   "v": [
    [
-    152.17955379092413,
-    159.80348678592733,
-    167.42741978093053,
-    175.0513527759337,
-    182.67528577093688
+    110.51656825086368,
+    116.30294296235101,
+    122.0893176738384,
+    127.87569238532573,
+    133.66206709681308
    ],
    [
-    173.1798681229206,
-    181.86717954732708,
-    190.55449097173357,
-    199.24180239613997,
-    207.92911382054652
+    125.18197114219747,
+    131.7395358236029,
+    138.2971005050083,
+    144.8546651864137,
+    151.41222986781915
    ],
    [
-    196.52885225220973,
-    206.41017083548925,
-    216.2914894187689,
-    226.17280800204853,
-    236.0541265853281
+    141.37142008100918,
+    148.79100068276102,
+    156.21058128451287,
+    163.63016188626472,
+    171.04974248801656
    ],
    [
-    222.47377142895502,
-    233.6934708816457,
-    244.9131703343364,
-    256.132869787027,
-    267.35256923971775
+    159.241916262406,
+    167.62352284627246,
+    176.0051294301389,
+    184.38673601400532,
+    192.7683425978718
    ],
    [
-    251.28357651083383,
-    264.00097682985813,
-    276.71837714888255,
-    289.4357774679069,
-    302.15317778693134
+    178.96403105748678,
+    188.41762994723823,
+    197.87122883698967,
+    207.3248277267411,
+    216.77842661649257
    ]
   ],
-  "referencia_constante": 216.2914894187689,
+  "referencia_constante": 156.21058128451287,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 0.7856500449499505,
    "margen": 0.5147618583495777,
-   "g": 0.036624288850948594,
-   "tasa_base": 0.6165822362526824
+   "g": 0.09541133017484882,
+   "tasa_base": 0.27486418666213797
   },
   {
    "beta": 0.7856500449499505,
    "margen": 0.5547618583495777,
-   "g": 0.02102561479535537,
-   "tasa_base": 0.7096590777062999
+   "g": 0.07744742800525273,
+   "tasa_base": 0.35067185381783356
   },
   {
    "beta": 0.7856500449499505,
    "margen": 0.5797618583495777,
-   "g": 0.012117777072578106,
-   "tasa_base": 0.7447559583340423
+   "g": 0.06724423272332897,
+   "tasa_base": 0.4126534100626291
   },
   {
    "beta": 0.9276151777078614,
    "margen": 0.5147618583495777,
-   "g": 0.04269910577876057,
-   "tasa_base": 0.5761239555134546
+   "g": 0.10225629871450326,
+   "tasa_base": 0.24597841942479623
   },
   {
    "beta": 0.9276151777078614,
    "margen": 0.5547618583495777,
-   "g": 0.026929473002527682,
-   "tasa_base": 0.6811497098031656
+   "g": 0.08406308968327325,
+   "tasa_base": 0.3227537615365869
   },
   {
    "beta": 0.9276151777078614,
    "margen": 0.5797618583495777,
-   "g": 0.017927546978949264,
-   "tasa_base": 0.7218654649029399
+   "g": 0.07373499100780645,
+   "tasa_base": 0.36942495988800905
   }
  ],
  "ingresos_ltm": 27702,
  "sens_base": {
-  "base": 224.11800264767598,
+  "base": 159.93975662783646,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 213.7388786232719
+    "valor": 152.2145050062124
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 234.49712667208007
+    "valor": 167.6650082494604
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 197.11693620692864
+    "valor": 141.25656519082625
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 254.15313509930286
+    "valor": 180.59637142777652
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 328.9501529870069
+    "valor": 206.65098769941795
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 163.7383077898114
+    "valor": 126.62451900847685
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 204.40503851552802
+    "valor": 152.06105015141557
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 249.94222023579837
+    "valor": 169.24222228357118
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 213.44571680731045
+    "valor": 152.32357774079662
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 219.45724640683545
+    "valor": 157.63777870689776
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 227.225173474903
+    "valor": 161.4744085751289
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 140.01235252456573
+    "valor": 127.43582260470637
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 157.89796090026692
+ "motor_tecnico": 159.93975662783646
 }

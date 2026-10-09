@@ -33,7 +33,8 @@
     ]
    },
    "id": "A",
-   "tesis": "base"
+   "tesis": "base",
+   "roic_terminal": 0.2931842949283384
   },
   {
    "nombre": "Conservadora · Se normaliza en un software de alta calidad",
@@ -56,7 +57,8 @@
     ]
    },
    "id": "B",
-   "tesis": "conservadora"
+   "tesis": "conservadora",
+   "roic_terminal": 0.2931842949283384
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -105,7 +107,8 @@
     ]
    },
    "id": "D",
-   "tesis": "optimista"
+   "tesis": "optimista",
+   "roic_terminal": 0.2931842949283384
   }
  ],
  "margenes_inverso": [
@@ -194,7 +197,7 @@
   "texto": "El margen operativo saltó de 5% (2023) a 43% LTM por apalancamiento operativo: el costo de servir a un cliente adicional es bajo. La hoja supone 48% el próximo año y 48% de objetivo. La compensación en acciones es alta y es un costo real para el accionista. Las historias van de 30% (comoditización) a 50%."
  },
  "reinversion": {
-  "texto": "Casi no necesita capital (capex de US$34 millones en 2025). La hoja usa un sales-to-capital de 4 y 4,5. La reinversión real está en ingenieros desplegados con los clientes (bootcamps) y en I+D; el crecimiento no está limitado por el capital sino por la capacidad de convertir pilotos en contratos. Ventaja durable: costos de cambio en defensa, inteligencia y grandes empresas, y un negocio que casi no necesita capital: sin contar la caja, el ROIC supera al costo de capital desde 2023. La evidencia anterior (ROIC de 5-12%) incluía la caja en el capital, contra el criterio de Damodaran. El ROIC después del año 10 es 20,6%: el promedio de Software (System & Application) según Damodaran (29,3%) llevado a la base del modelo, que capitaliza el I+D; queda por debajo de su ROIC actual. La serie es de solo tres años: si el ROIC cae con la escala, la clasificación debe revisarse."
+  "texto": "La Base usa ventas/capital 3.4680× en años 1–5 y un ancla de 3.8377× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 147.39% y el terminal de Base 29.32%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html"
  },
  "prob_texto": "Base (40%) es un hipercrecimiento que desacelera con la escala (~35% anual). Conservadora (30%) es la normalización en un software de alta calidad (~19%). Disrupción (10%) es comoditización con pérdida de contratos. Optimista (20%) es Palantir como sistema operativo de la IA empresarial, algo por encima de lo que supone la hoja. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -302,5 +305,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}. El precio, {precio}, sigue muy por encima incluso de la Optimista ({vD}). Las dos correcciones del 1-oct-2026 se compensan en parte: la ventaja durable sube el valor y la dilución lo baja, y aun así no cierran la brecha. Para justificar el precio haría falta crecer ~44-50% al año durante cinco años, con un margen de 55-60% y retornos excedentes permanentes: ventas de ~US$40.000 millones en el año 5 y ~US$100.000 millones en el año 10, algo que prácticamente ninguna empresa de su tamaño logró. El antiguo DCF técnico de la hoja ({tecnico}) es más alto porque suponía 48% de crecimiento anual. La distancia con el precio no se explica con supuestos razonables; es la lectura más importante de esta valoración."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.2931842949283384,
+  "motivo": "Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+  "convergencia": true,
+  "g3": false
+ }
 }

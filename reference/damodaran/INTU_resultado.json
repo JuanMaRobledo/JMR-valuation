@@ -1,6 +1,333 @@
 {
  "ticker": "INTU",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "INTU",
+  "empresa": "Intuit Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Software (System & Application)",
+  "segmentos": {
+   "Global Business Solutions": 12650,
+   "Consumer (TurboTax y ProTax)": 6000,
+   "Credit Karma": 2800
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usa la beta bottom-up de Software (System & Application) en EE.UU. (Damodaran, ene-2026: 1,25 desapalancada y corregida por caja), reapalancada con la D/E de mercado (~0,10): 1,34. Intuit vende 100% en Norteamérica. La regresión semanal contra el S&P 500 da 0,46 a dos años y 1,16 a cinco y queda como referencia. El efecto de cada beta en el DCF Base está en la tabla."
+  },
+  "historias": [
+   {
+    "nombre": "Base · La IA es palanca de monetización",
+    "prob": 0.45,
+    "margen": 0.32,
+    "crec": {
+     "Global Business Solutions": [
+      0.14,
+      0.13,
+      0.12,
+      0.11,
+      0.1
+     ],
+     "Consumer (TurboTax y ProTax)": [
+      0.07,
+      0.06,
+      0.06,
+      0.05,
+      0.05
+     ],
+     "Credit Karma": [
+      0.1,
+      0.08,
+      0.07,
+      0.07,
+      0.06
+     ]
+    },
+    "id": "A",
+    "tesis": "base"
+   },
+   {
+    "nombre": "Conservadora · La IA erosiona impuestos y contabilidad básica",
+    "prob": 0.25,
+    "margen": 0.29,
+    "crec": {
+     "Global Business Solutions": [
+      0.1,
+      0.08,
+      0.07,
+      0.06,
+      0.06
+     ],
+     "Consumer (TurboTax y ProTax)": [
+      0.02,
+      0,
+      -0.02,
+      -0.02,
+      -0.02
+     ],
+     "Credit Karma": [
+      0.05,
+      0.04,
+      0.04,
+      0.03,
+      0.03
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.1,
+    "margen": 0.26,
+    "crec": {
+     "Global Business Solutions": [
+      0.06,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+     ],
+     "Consumer (TurboTax y ProTax)": [
+      -0.03,
+      -0.05,
+      -0.03,
+      -0.02,
+      0
+     ],
+     "Credit Karma": [
+      -0.1,
+      0,
+      0.03,
+      0.03,
+      0.03
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Recesión y declaración gratuita del Estado",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · Plataforma financiera de la pyme",
+    "prob": 0.2,
+    "margen": 0.35,
+    "crec": {
+     "Global Business Solutions": [
+      0.17,
+      0.16,
+      0.15,
+      0.14,
+      0.12
+     ],
+     "Consumer (TurboTax y ProTax)": [
+      0.08,
+      0.08,
+      0.07,
+      0.07,
+      0.06
+     ],
+     "Credit Karma": [
+      0.12,
+      0.1,
+      0.1,
+      0.08,
+      0.08
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista"
+   }
+  ],
+  "margenes_inverso": [
+   0.28,
+   0.32,
+   0.35
+  ],
+  "historia": "Intuit es el sistema financiero de la pequeña empresa y del contribuyente estadounidense: QuickBooks, nómina, pagos y Mailchimp para la pyme; TurboTax y Credit Karma para el consumidor. Cobra suscripciones, tarifas por declaración y comisiones, con márgenes de segmento de 73-77% y casi sin capital. En FY2026 (cerrado en julio) facturó US$21.448 millones (+14%), con Global Business Solutions +16% y el Online Ecosystem +19%. El mercado, sin embargo, bajó el múltiplo por miedo a que la IA generativa abarate la contabilidad básica y la preparación de impuestos. La historia de cinco años depende de si Intuit usa la IA para cobrar más a su base (servicios asistidos, mid-market, agentes) o si la IA y la declaración gratuita del Estado le quitan clientes en el extremo simple.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~9-10% anual cinco años",
+    "Sí",
+    "Sí: +13-16% anual en FY24-FY26",
+    "Probable"
+   ],
+   [
+    "La IA sustituye a TurboTax en declaraciones simples",
+    "Sí",
+    "Sí en el extremo gratuito; los asistidos (Live) crecen",
+    "Posible, parcial"
+   ],
+   [
+    "QuickBooks sigue subiendo precio sin perder clientes",
+    "Sí",
+    "Sí: QBO Accounting +23% en FY26 por precio, clientes y mezcla",
+    "Probable"
+   ],
+   [
+    "El margen GAAP llega a 32%",
+    "Sí",
+    "Sí: 22,3% → 27,4% en dos años; SBC de ~10% de los ingresos",
+    "Probable"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$12.000-25.000 millones: crecer 9,8% anual cinco años (Base) lo logró ~26% de las empresas de ese tamaño; 12,2% (Optimista), ~16%. Intuit lleva años en ese grupo, pero la tasa base recuerda que pocas empresas sostienen doble dígito cuando ya facturan más de US$20.000 millones.",
+  "crecimiento": {
+   "texto": "Ingresos de US$16.285 millones (FY24, +13,3%), US$18.831 millones (FY25, +15,6%) y US$21.448 millones (FY26, +13,9%). Global Business Solutions creció 16% y el Online Ecosystem 19%; QuickBooks Online Accounting, 23%. La división de las historias (GBS ~US$12.650 millones, Consumer ~US$6.000 millones, Credit Karma ~US$2.800 millones) es una estimación propia: desde agosto de 2025 Consumer, Credit Karma y ProTax se reportan juntos y desde agosto de 2026 Mailchimp va aparte.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "FY24",
+     "FY25",
+     "FY26"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "16.285",
+      "18.831",
+      "21.448"
+     ],
+     [
+      "Crecimiento",
+      "+13,3%",
+      "+15,6%",
+      "+13,9%"
+     ],
+     [
+      "Margen operativo GAAP",
+      "22,3%",
+      "26,1%",
+      "27,4%"
+     ],
+     [
+      "FCFF (hoja)",
+      "2.974",
+      "3.936",
+      "4.950"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo GAAP subió de 22,3% a 27,4% en dos años; la hoja supone ~32% desde el próximo año, un salto rápido que exige que la compensación en acciones (US$2.056 millones, ~10% de los ingresos) crezca menos que las ventas. Las historias van de 26% (recesión y regulación) a 35% (plataforma financiera de la pyme)."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 1.5400× en años 1–5 y un ancla de 1.5400× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 22.57% y el terminal de Base 22.60%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 22.5744%; ROIC terminal Base 0.226. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
+  },
+  "prob_texto": "Base (45%) es la continuación de FY24-FY26: la pyme crece a doble dígito y el consumidor a un dígito medio. Conservadora (25%) es la sustitución parcial por IA en impuestos y contabilidad simples. Disrupción (10%) combina recesión (Credit Karma) y expansión de la declaración gratuita del Estado. Optimista (20%) es Intuit como plataforma financiera completa de la pyme (pagos, nómina, capital, mid-market). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "Los asistentes de IA preparan declaraciones simples gratis y TurboTax pierde unidades en el extremo bajo.",
+   "Bancos, fintech y ERPs ligeros integran contabilidad y pagos gratis y QuickBooks pierde pymes nuevas.",
+   "Una recesión reduce el crédito al consumidor y Credit Karma cae 20-30%.",
+   "La regulación amplía la declaración gratuita del IRS o de los estados.",
+   "La compensación en acciones sigue en ~10% de los ingresos y diluye el valor por acción."
+  ],
+  "contra": "la compresión del múltiplo muestra que el mercado ya ve riesgo de sustitución, y Credit Karma sigue siendo cíclico. Si las unidades de TurboTax caen en la temporada 2027, Conservadora gana peso.",
+  "indicadores": [
+   [
+    "Online Ecosystem (interanual)",
+    "+19% (FY26)",
+    "≥ +15%",
+    "≤ +10%"
+   ],
+   [
+    "Unidades y precio de TurboTax",
+    "Estables",
+    "Unidades estables y asistido en alza",
+    "Caída de unidades con precio a la baja"
+   ],
+   [
+    "Credit Karma",
+    "Creciendo",
+    "≥ +8%",
+    "Caída anual"
+   ],
+   [
+    "Margen operativo GAAP",
+    "27,4%",
+    "≥ 29% en FY27",
+    "≤ 26%"
+   ],
+   [
+    "SBC / ingresos",
+    "~9,6%",
+    "≤ 8%",
+    "≥ 11%"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Sistema financiero de la pyme y del contribuyente que usa la IA para cobrar más",
+  "confianza": "Media-alta en GBS; media en Consumer por IA y regulación",
+  "cambiaria": "Unidades de TurboTax en la temporada 2027 y crecimiento del Online Ecosystem",
+  "revision": "Resultados del 1T FY27 (nov-2026) y temporada de impuestos 2027",
+  "fuentes": [
+   [
+    "Intuit, Form 10-K FY2026",
+    "https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm"
+   ],
+   [
+    "Intuit, Form 10-Q del 3T FY2026",
+    "https://www.sec.gov/Archives/edgar/data/896878/000089687826000025/intu-20260430.htm"
+   ],
+   [
+    "Intuit, Form 10-K FY2025",
+    "https://www.sec.gov/Archives/edgar/data/896878/000089687825000035/intu-20250731.htm"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 711.9533209951396,
+   "ajuste_ebit": 40.29238271498005,
+   "margen_pp": 0.0018786079221829565,
+   "capital_ventas": 0.033194392064301546,
+   "cierre": "2026-07-31",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: la pyme crece a doble dígito; el consumidor, a un dígito.",
+    "Intuit es el sistema financiero de la pequeña empresa (QuickBooks, nómina, pagos, Mailchimp) y del contribuyente estadounidense (TurboTax, Credit Karma). En FY2026, cerrado en julio, facturó US$21.448 millones (+13,9%): Global Business Solutions +16% y QuickBooks Online +23%. La Base supone que la pyme crece de 14% a 10%, el consumidor de 7% a 5% y Credit Karma de 10% a 6%: {g1A} el primer año y {cagrA} compuesto. Solo ~{tbA} de las empresas de su tamaño lo lograron, pero Intuit lleva años en ese grupo y la Base ya supone que desacelera. El mercado bajó el múltiplo por miedo a que la IA abarate la contabilidad básica y la preparación de impuestos; esa es la Conservadora ({cagrB}), con el consumidor cayendo. La Disrupción ({cagrC}) combina recesión (Credit Karma) y la declaración gratuita del Estado; la Optimista ({cagrD}), Intuit como plataforma financiera completa de la pyme. Si las unidades de TurboTax caen en la temporada 2027, la Conservadora gana peso."
+   ],
+   [
+    "Margen: el salto depende de la compensación en acciones.",
+    "El margen operativo GAAP subió de 22,3% a 27,4% en dos años. La Base supone ~32% ({mA} en el modelo) desde el próximo año, un salto rápido que exige que la compensación en acciones (US$2.056 millones, ~10% de los ingresos) crezca menos que las ventas. Los márgenes de segmento son de 73-77%, así que el espacio existe; la duda es si la empresa lo deja llegar al resultado o lo reinvierte en IA. El rango va de {mC} a {mD}; dos puntos mueven la Base a {s_m_lo} o {s_m_hi}. Un margen GAAP de 26% o menos en FY27 invalidaría la Base."
+   ],
+   [
+    "Reinversión: casi sin capital, con compras grandes.",
+    "El capex es mínimo (US$175 millones en FY26) frente a un flujo operativo de US$8.838 millones. La Base crece de forma orgánica e Intuit no compra desde Mailchimp (2021); el capital actual carga ~US$14.000 millones de crédito mercantil de Credit Karma y Mailchimp, que costaron ~US$20.000 millones. La hoja usa el ventas/capital del software en EE.UU., {s2c1}× (~US${cap1} de capital por dólar de ventas nuevas; el capital nuevo rinde ~38%), una referencia prudente frente al orgánico, que pide mucho menos capital. Hasta el 5-oct-2026 usaba 1,18, que suponía crecer a los precios de esas compras. El flujo libre va a recompras (US$5.412 millones) y dividendos. El ROIC, incluida la plusvalía de esas compras, siempre estuvo por encima del costo de capital (12-22%), y los costos de cambio son reales: una pyme no cambia de contabilidad con facilidad. Por eso la Base conserva un ROIC de {roicT} después del año 10, limitado al actual y por debajo del de la industria. Sin esa ventaja, la Base valdría {s_roic}."
+   ],
+   [
+    "Descuento.",
+    "La hoja usa una beta de {beta}, la bottom-up de software en EE.UU. reapalancada. Credit Karma añade ciclicidad (depende del crédito al consumidor), pero ese riesgo está en la Disrupción (recesión), no en la tasa. El costo de capital va de {wacc0} a {waccT}; un punto más lleva la Base a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}; el precio, {precio}, está apenas por encima de la Conservadora ({vB}): el mercado está descontando algo muy cercano a la sustitución por IA de esa historia, o una tasa mucho mayor. Esa distancia merece una explicación antes de cualquier decisión. La compensación en acciones (~10% de los ingresos) diluye, y no está modelada: las acciones se fijan en {acciones} millones."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.226,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 22.5744%; ROIC terminal Base 0.226. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -28,12 +355,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.226,
-  "salesToCapital": 1.54
+  "salesToCapital": 1.54,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 355.0255966793192,
- "precio": 275.71,
- "dcf_base": 531.7634597091186,
+ "dcf_sin_exceso": 328.52411458436654,
+ "precio": 288.0975,
+ "dcf_base": 526.1669468381389,
  "g_ref": 0.09832578647494464,
  "m_base": 0.321879,
  "s2c": 1.54,
@@ -145,12 +473,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.226,
    "detalle": {
-    "v": 531.7634597091184,
-    "pvFlujos": 40939.842219614264,
+    "v": 526.1669468381386,
+    "pvFlujos": 39444.4539804885,
     "pvTerminal": 102072.56202803776,
     "valorTerminal": 253641.33667167177,
-    "activosOperativos": 143012.40424765198,
-    "patrimonio": 142087.1964342764,
+    "activosOperativos": 141517.0160085262,
+    "patrimonio": 140591.80819515063,
     "ingresos": [
      21448,
      23918.76960372961,
@@ -188,11 +516,11 @@
      1699.488859788941,
      1709.6446395280366,
      1716.9811433987334,
-     1704.1068324815285,
-     1669.5740124547062,
-     1612.339809522141,
-     1531.8314748476678,
-     1612.8653598671078
+     1932.1890807046411,
+     2119.775667154751,
+     2269.245351903117,
+     2369.991642563736,
+     2723.913021209572
     ],
     "flujo": [
      null,
@@ -201,11 +529,11 @@
      5374.566586378407,
      6010.076564556217,
      6653.501188349893,
-     7338.803228776272,
-     8044.705657780085,
-     8763.98986236531,
-     9488.474020338765,
-     10024.267774222946
+     7110.720980553159,
+     7594.504003080041,
+     8107.084319984335,
+     8650.313852622696,
+     8913.220112880483
     ],
     "tasa": [
      null,
@@ -267,10 +595,10 @@
     "wacc0": 0.09761217966174572,
     "margenY1": 0.320273
    },
-   "valor_bruto": 531.7634597091184,
-   "valor_bruto_prop": 531.3837254480516,
-   "valor_beta_hoja": 531.7634597091184,
-   "valor_beta_prop": 531.3837254480516
+   "valor_bruto": 526.1669468381386,
+   "valor_bruto_prop": 525.7914156971339,
+   "valor_beta_hoja": 526.1669468381386,
+   "valor_beta_prop": 525.7914156971339
   },
   {
    "nombre": "Conservadora · La IA erosiona impuestos y contabilidad básica",
@@ -330,12 +658,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 258.18561279793903,
-    "pvFlujos": 33654.64789153726,
+    "v": 242.95230664222512,
+    "pvFlujos": 29584.308486730497,
     "pvTerminal": 36257.75566144761,
     "valorTerminal": 90097.33299491709,
-    "activosOperativos": 69912.40355298486,
-    "patrimonio": 68987.1957396093,
+    "activosOperativos": 65842.0641481781,
+    "patrimonio": 64916.85633480255,
     "ingresos": [
      21448,
      22972.85780885781,
@@ -373,11 +701,11 @@
      610.4986301843619,
      651.501027539735,
      728.0226017589118,
-     811.726405256495,
-     903.6207228357298,
-     1004.8481166730552,
-     1116.7072496146582,
-     1175.7810631192729
+     1267.1278446675117,
+     1921.5823751333155,
+     2709.5975886301317,
+     3652.741104176349,
+     4526.687164432627
     ],
     "flujo": [
      null,
@@ -386,11 +714,11 @@
      5200.6439407753005,
      5263.090330068446,
      5295.899831894116,
-     5479.022395225091,
-     5684.138343876535,
-     5913.1762733372825,
-     6168.335966769612,
-     6517.019997041281
+     5023.6209558140745,
+     4666.176691578949,
+     4208.426801380207,
+     3632.3021122079217,
+     3166.113895727928
     ],
     "tasa": [
      null,
@@ -452,10 +780,10 @@
     "wacc0": 0.09761217966174572,
     "margenY1": 0.320273
    },
-   "valor_bruto": 258.18561279793903,
-   "valor_bruto_prop": 258.0179556076711,
-   "valor_beta_hoja": 258.18561279793903,
-   "valor_beta_prop": 258.0179556076711
+   "valor_bruto": 242.95230664222512,
+   "valor_bruto_prop": 242.7961679682375,
+   "valor_beta_hoja": 242.95230664222512,
+   "valor_beta_prop": 242.7961679682375
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -517,12 +845,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 206.54700405298595,
-    "pvFlujos": 28907.259439732265,
+    "v": 198.3902447213643,
+    "pvFlujos": 26727.773346322952,
     "pvTerminal": 27207.307856601143,
     "valorTerminal": 67607.7664249323,
-    "activosOperativos": 56114.5672963334,
-    "patrimonio": 55189.35948295784,
+    "activosOperativos": 53935.08120292409,
+    "patrimonio": 53009.873389548535,
     "ingresos": [
      21448,
      21746.972121212122,
@@ -560,11 +888,11 @@
      460.8508736172919,
      556.0090107883061,
      576.3113605331525,
-     597.3550389204579,
-     619.1671151398978,
-     641.7756467970652,
-     665.2097160049119,
-     689.4994667930416
+     885.7627660858229,
+     1219.5333797498567,
+     1579.0774871581673,
+     1965.9264720985598,
+     2381.6926290627116
     ],
     "flujo": [
      null,
@@ -573,11 +901,11 @@
      4460.94147690717,
      4311.581124353811,
      4253.617924441141,
-     4423.7150602820675,
-     4600.5628318331865,
-     4784.42743919685,
-     4975.585522118358,
-     5174.324567455636
+     4135.307333116702,
+     4000.1965672232272,
+     3847.125598835748,
+     3674.86876602471,
+     3482.1314051859654
     ],
     "tasa": [
      null,
@@ -639,10 +967,10 @@
     "wacc0": 0.09761217966174572,
     "margenY1": 0.320273
    },
-   "valor_bruto": 206.54700405298595,
-   "valor_bruto_prop": 206.4166163317032,
-   "valor_beta_hoja": 206.54700405298595,
-   "valor_beta_prop": 206.4166163317032
+   "valor_bruto": 198.3902447213643,
+   "valor_bruto_prop": 198.2660036587447,
+   "valor_beta_hoja": 198.3902447213643,
+   "valor_beta_prop": 198.2660036587447
   },
   {
    "nombre": "Optimista · Plataforma financiera de la pyme",
@@ -675,11 +1003,11 @@
    "tesis": "optimista",
    "margen_reportado": 0.35,
    "cagr": 0.1219247044012246,
-   "rev5": 38124.60534596744,
+   "rev5": 38124.605345967444,
    "mix5": {
-    "Global Business Solutions": 0.6611640611149352,
-    "Consumer (TurboTax y ProTax)": 0.2227544197312787,
-    "Credit Karma": 0.11608151915378631
+    "Global Business Solutions": 0.661164061114935,
+    "Consumer (TurboTax y ProTax)": 0.22275441973127866,
+    "Credit Karma": 0.11608151915378628
    },
    "tasa_base": 0.16297774742683213,
    "anios": [
@@ -687,39 +1015,39 @@
     0.13106219155079546,
     0.12348143760016628,
     0.11576753581550614,
-    0.10137784148849716
+    0.10137784148849738
    ],
    "anios6a10": [
-    0.09168227319079772,
-    0.08198670489309828,
-    0.07229113659539885,
-    0.06259556829769941,
-    0.05289999999999998
+    0.0916822731907979,
+    0.08198670489309842,
+    0.07229113659539894,
+    0.06259556829769947,
+    0.05289999999999999
    ],
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
    "roic_terminal_usado": 0.226,
    "detalle": {
-    "v": 654.6776066497497,
-    "pvFlujos": 47463.058216029414,
-    "pvTerminal": 128392.00609415931,
-    "valorTerminal": 319042.83968824794,
-    "activosOperativos": 175855.0643101887,
-    "patrimonio": 174929.85649681312,
+    "v": 646.4451828957098,
+    "pvFlujos": 45263.35458894991,
+    "pvTerminal": 128392.00609415934,
+    "valorTerminal": 319042.839688248,
+    "activosOperativos": 173655.3606831092,
+    "patrimonio": 172730.15286973363,
     "ingresos": [
      21448,
      24414.223403263404,
      27614.005027505827,
      31023.822066200468,
      34615.37349838322,
-     38124.60534596744,
-     41619.95582858777,
-     45032.238864769985,
-     48287.6705957397,
-     51310.26477845214,
-     54024.57778523226,
-     56882.47795007104
+     38124.605345967444,
+     41619.95582858778,
+     45032.23886477,
+     48287.67059573971,
+     51310.264778452154,
+     54024.57778523227,
+     56882.47795007106
     ],
     "utilidad": null,
     "nopat": [
@@ -730,10 +1058,10 @@
      9076.463183859403,
      10179.478843440378,
      11145.561789250616,
-     12094.844449146012,
-     13007.255233531563,
-     13861.894932242585,
-     14637.771782981436
+     12094.844449146016,
+     13007.255233531569,
+     13861.894932242587,
+     14637.77178298144
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
@@ -742,26 +1070,26 @@
      2077.780275482093,
      2214.1669082432727,
      2332.1762546641235,
-     2278.7219789507913,
+     2278.721978950796,
      2269.70810559762,
-     2215.768205313125,
-     2113.9167084218925,
-     1962.7234952678186,
-     1762.5409134935828,
-     1855.7793278173933
+     2581.276409633765,
+     2815.872241289092,
+     2946.6731149287225,
+     2948.240012488567,
+     3426.274899644769
     ],
     "flujo": [
      null,
      3855.4412593768357,
      4761.574974853336,
      5653.745005047122,
-     6797.741204908612,
+     6797.741204908607,
      7909.7707378427585,
-     8929.793583937491,
-     9980.92774072412,
-     11044.531738263744,
-     12099.354018749002,
-     12781.992455164042
+     8564.285379616851,
+     9278.972207856925,
+     10060.582118602846,
+     10913.654919754019,
+     11211.49688333667
     ],
     "tasa": [
      null,
@@ -782,12 +1110,12 @@
      0.13106219155079546,
      0.12348143760016628,
      0.11576753581550614,
-     0.10137784148849716,
-     0.09168227319079772,
-     0.08198670489309828,
-     0.07229113659539885,
-     0.06259556829769941,
-     0.05289999999999998
+     0.10137784148849738,
+     0.0916822731907979,
+     0.08198670489309842,
+     0.07229113659539894,
+     0.06259556829769947,
+     0.05289999999999999
     ],
     "margen": [
      null,
@@ -823,28 +1151,28 @@
     "wacc0": 0.09761217966174572,
     "margenY1": 0.320273
    },
-   "valor_bruto": 654.6776066497497,
-   "valor_bruto_prop": 654.2040112656268,
-   "valor_beta_hoja": 654.6776066497497,
-   "valor_beta_prop": 654.2040112656268
+   "valor_bruto": 646.4451828957098,
+   "valor_bruto_prop": 645.9777557582761,
+   "valor_beta_hoja": 646.4451828957098,
+   "valor_beta_prop": 645.9777557582761
   }
  ],
- "valor_esperado_beta_hoja": 455.43018180383655,
- "valor_esperado_beta_prop": 455.10962923983664,
+ "valor_esperado_beta_hoja": 446.64126378899704,
+ "valor_esperado_beta_prop": 446.3273305732993,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.34,
    "ke": 0.10248,
    "wacc": 0.09761217966174572,
-   "dcf_base": 531.7634597091184
+   "dcf_base": 526.1669468381386
   },
   {
    "enfoque": "Bottom-up del sector (Software (System & Application), reapalancada)",
    "beta": 1.3436161574375947,
    "ke": 0.102613797825191,
    "wacc": 0.09773411739164353,
-   "dcf_base": 531.3837254480516
+   "dcf_base": 525.7914156971339
   }
  ],
  "sensibilidad": {
@@ -864,149 +1192,149 @@
   ],
   "v": [
    [
-    384.3880637929099,
-    410.78212303178003,
-    437.1761822706502,
-    463.5702415095205,
-    489.9643007483907
+    381.481273671481,
+    407.2329794639769,
+    432.9846852564728,
+    458.73639104896887,
+    484.4880968414647
    ],
    [
-    426.6507579983416,
-    456.51015907156363,
-    486.36956014478596,
-    516.2289612180082,
-    546.0883622912302
+    423.1798716459777,
+    452.2719198092649,
+    481.3639679725524,
+    510.4560161358396,
+    539.5480642991271
    ],
    [
-    473.5938472347264,
-    507.317417139724,
-    541.0409870447215,
-    574.764556949719,
-    608.4881268547166
+    469.4711009740436,
+    502.2828421704702,
+    535.0945833668968,
+    567.9063245633232,
+    600.71806575975
    ],
    [
-    525.6778719723093,
-    563.7036768603034,
-    601.7294817482978,
-    639.7552866362921,
-    677.7810915242865
+    520.8044829154843,
+    557.7520596564245,
+    594.6996363973651,
+    631.6472131383056,
+    668.5947898792457
    ],
    [
-    583.4011180373001,
-    626.2096711258388,
-    669.0182242143775,
-    711.8267773029162,
-    754.6353303914548
+    577.6661798539706,
+    619.2054890796078,
+    660.7447983052452,
+    702.2841075308828,
+    743.82341675652
    ]
   ],
-  "referencia_constante": 541.0409870447215,
+  "referencia_constante": 535.0945833668968,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.34,
    "margen": 0.281878607922183,
-   "g": -0.005777224437025718,
-   "tasa_base": 0.8152622642818812
+   "g": 0.003923881077459667,
+   "tasa_base": 0.7770399085548089
   },
   {
    "beta": 1.34,
    "margen": 0.321878607922183,
-   "g": -0.028493595989305065,
-   "tasa_base": 0.8954718028663105
+   "g": -0.01884960991646717,
+   "tasa_base": 0.8667674630708805
   },
   {
    "beta": 1.34,
    "margen": 0.35187860792218295,
-   "g": -0.0432777152803388,
-   "tasa_base": 0.9143954755588336
+   "g": -0.033711752544897056,
+   "tasa_base": 0.9021510432574682
   },
   {
    "beta": 1.3436161574375947,
    "margen": 0.281878607922183,
-   "g": -0.005648629910317947,
-   "tasa_base": 0.8147556018466527
+   "g": 0.004053852445752195,
+   "tasa_base": 0.7765278213637363
   },
   {
    "beta": 1.3436161574375947,
    "margen": 0.321878607922183,
-   "g": -0.02836925585064104,
-   "tasa_base": 0.8953126474888206
+   "g": -0.018723790124320766,
+   "tasa_base": 0.8662717330898237
   },
   {
    "beta": 1.3436161574375947,
    "margen": 0.35187860792218295,
-   "g": -0.043156035336302356,
-   "tasa_base": 0.914239725230467
+   "g": -0.033588547359913484,
+   "tasa_base": 0.9019933406206891
   }
  ],
  "ingresos_ltm": 21448,
  "sens_base": {
-  "base": 531.7634597091184,
+  "base": 526.1669468381386,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 498.81445541779976
+    "valor": 494.07594589050143
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 564.7124640004373
+    "valor": 558.2579477857762
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 478.3002811465406
+    "valor": 473.60170409273826
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 591.1147213812944
+    "valor": 584.4826715558498
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 731.5849002061269
+    "valor": 725.5338563576344
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 416.8738770010452
+    "valor": 411.69335037204104
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 489.97375797627745
+    "valor": 484.8416167238715
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 586.3887259185669
+    "valor": 580.319415005856
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 506.4413901991603
+    "valor": 501.11137794108436
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 522.0654899882585
+    "valor": 518.5220104227433
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 538.2287728563583
+    "valor": 531.2635711150691
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 355.0255966793192
+    "valor": 328.52411458436654
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 565.241590682691
+ "motor_tecnico": 526.1669468381386
 }

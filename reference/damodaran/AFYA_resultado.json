@@ -1,6 +1,341 @@
 {
  "ticker": "AFYA",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "AFYA",
+  "empresa": "Afya Limited",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Education",
+  "segmentos": {
+   "Grado (Medicina)": 640,
+   "Educación continua": 52,
+   "Soluciones para la práctica médica": 31
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usa la beta bottom-up de Education en la tabla global de Damodaran (281 empresas, ene-2026: 0,74 desapalancada y corregida por caja), reapalancada por la hoja con la deuda de Afya (42% de la estructura, arrendamientos incluidos): ~1,10. Tabla global porque Afya vende 100% en Brasil; el riesgo de Brasil va en la prima de mercado (7,33%). La regresión semanal contra el S&P 500 da 0,44 a dos años y 0,72 a cinco y queda como referencia. El riesgo relevante es el país y la moneda, y ya está en la tasa; no conviene sumarlo otra vez recortando los flujos."
+  },
+  "historias": [
+   {
+    "nombre": "Base · La escasez de plazas sostiene precio y margen",
+    "prob": 0.45,
+    "margen": 0.33,
+    "crec": {
+     "Grado (Medicina)": [
+      0.07,
+      0.06,
+      0.06,
+      0.05,
+      0.05
+     ],
+     "Educación continua": [
+      0.06,
+      0.06,
+      0.05,
+      0.05,
+      0.05
+     ],
+     "Soluciones para la práctica médica": [
+      0.05,
+      0.08,
+      0.08,
+      0.08,
+      0.07
+     ]
+    },
+    "id": "A",
+    "tesis": "base"
+   },
+   {
+    "nombre": "Conservadora · Madurez: precio real plano",
+    "prob": 0.3,
+    "margen": 0.3,
+    "crec": {
+     "Grado (Medicina)": [
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.03
+     ],
+     "Educación continua": [
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+     ],
+     "Soluciones para la práctica médica": [
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.02
+     ]
+    },
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.15,
+    "margen": 0.26,
+    "crec": {
+     "Grado (Medicina)": [
+      0.02,
+      0.0,
+      -0.01,
+      0.0,
+      0.01
+     ],
+     "Educación continua": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "Soluciones para la práctica médica": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Se liberan plazas y cae el precio",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · Maduran los campus y crece lo digital",
+    "prob": 0.1,
+    "margen": 0.35,
+    "crec": {
+     "Grado (Medicina)": [
+      0.09,
+      0.08,
+      0.07,
+      0.06,
+      0.06
+     ],
+     "Educación continua": [
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.08
+     ],
+     "Soluciones para la práctica médica": [
+      0.12,
+      0.12,
+      0.1,
+      0.1,
+      0.08
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista"
+   }
+  ],
+  "margenes_inverso": [
+   0.26,
+   0.3,
+   0.33
+  ],
+  "historia": "Afya es el mayor grupo de educación médica de Brasil. Su negocio es la escasez: el Ministerio de Educación limita las plazas de Medicina, y cada plaza autorizada es un flujo de matrículas de seis años con precio alto y demanda que excede la oferta. Por eso el grado en Medicina es ~88% de los ingresos y sostiene márgenes EBIT de ~32%. La educación continua y las soluciones digitales para médicos son pequeñas y crecen poco. En el 1S26 los ingresos crecieron ~7% en reales, en el rango bajo de la guía (7-11%), y el EBITDA ajustado perdió 190 pb por un ciclo de inversión. Sobre todo esto cae la fusión anunciada con Yduqs (sep-2026), que cambia la historia si se cierra: esta sección valora a Afya sola (standalone), que es lo que vuelve a mandar si CADE o las asambleas la frenan.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~6% anual en dólares cinco años",
+    "Sí",
+    "Sí: +7,8% en 2025 y ~+7% en reales en el 1S26; el real puede restar",
+    "Probable en reales; incierto en dólares"
+   ],
+   [
+    "El margen EBIT se mantiene en ~33%",
+    "Sí",
+    "Sí: 30,6% (2024) → 32,8% (2025); el 1S26 muestra compresión por inversión",
+    "Probable"
+   ],
+   [
+    "La regulación libera muchas plazas nuevas de Medicina",
+    "Sí",
+    "Poco: el programa Mais Médicos ya abrió plazas y la política se endureció",
+    "Baja"
+   ],
+   [
+    "La fusión con Yduqs se cierra sin condiciones severas",
+    "Sí",
+    "Sí, pero 17% del mercado de escuelas médicas atrae a CADE",
+    "Incierto"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$325-700 millones: crecer 5,8% anual cinco años (Base) lo logró ~66% de las empresas de ese tamaño; 7,4% (Optimista), ~59%. La hoja no pide nada extraordinario. El riesgo no está en el crecimiento sino en el país (real, tasas, política educativa), que ya entra por el costo del patrimonio de ~14%.",
+  "crecimiento": {
+   "texto": "Ingresos de US$575,9 millones (2023, +27,6% por compras), US$613,9 millones (2024, +6,6%) y US$661,7 millones (2025, +7,8%); LTM US$723,1 millones. En el 1S26 (reales): grado R$1.762 millones (+7%), Medicina R$1.499 millones (+6,5%), educación continua R$143,9 millones (+4,6%) y soluciones para la práctica médica R$85,3 millones (+1,5%). La división LTM en dólares de las historias usa ese peso del 1S26 (≈88% / 7% / 4%).",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2023",
+     "2024",
+     "2025",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "575,9",
+      "613,9",
+      "661,7",
+      "723,1"
+     ],
+     [
+      "Crecimiento",
+      "+27,6%",
+      "+6,6%",
+      "+7,8%",
+      "—"
+     ],
+     [
+      "Margen EBIT",
+      "26,7%",
+      "30,6%",
+      "32,8%",
+      "32,6%"
+     ],
+     [
+      "FCFF (hoja)",
+      "135,4",
+      "181,3",
+      "187,5",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen EBIT subió de 26,7% a 32,8% en dos años al madurar las plazas compradas. La hoja supone 31,5% el próximo año y 33% de objetivo, prácticamente el nivel actual. El piso lo pone la mezcla: más peso de educación continua y digital (menor margen) y la inversión en producto del 2026. Las historias van de 26% (caída de precio) a 35% (campus maduros). Impuestos: la tasa efectiva de ~11% (beneficio de ProUni) se mantiene en los años 1-5 y converge en los años 6-10 a la tasa legal de 34% (IRPJ y CSLL), que es la que rige a perpetuidad: Damodaran (Investment Valuation cap. 10, p. 4) advierte que los beneficios fiscales rara vez son perpetuos. Si ProUni se renovara indefinidamente, el valor subiría ~20%."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 1.5000× en años 1–5 y un ancla de 1.2000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 14.87% y el terminal de Base 14.80%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.8710%; ROIC terminal Base 0.148. Conservadora mantiene el mismo terminal porque supone presión de tráfico/precio con la ventaja de marca/inmuebles o licencias aún vigente. Disrupción sí pierde la ventaja y converge al costo de capital. Se conserva la regla económica; no se igualan ambos casos."
+  },
+  "prob_texto": "Base (45%) es la continuación de 2024-2026: crecimiento de un dígito medio y margen estable. Conservadora (30%) refleja que el precio real de la matrícula no puede subir para siempre y que el 1S26 ya estuvo en el rango bajo de la guía. Disrupción (15%) es el riesgo regulatorio: poco probable, pero es el que rompe la tesis. Optimista (10%) necesita que la madurez de los campus nuevos y lo digital aceleren. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "CADE bloquea o condiciona la fusión y la acción queda atrapada entre el valor de canje y el standalone durante meses.",
+   "Un cambio de política (o una nueva ronda de Mais Médicos) abre plazas y baja el precio de la matrícula.",
+   "El real se deprecia otra vez: el negocio va bien en reales pero el valor en dólares cae.",
+   "La compresión de margen del 1S26 no es temporal: la inversión en producto digital no da retorno.",
+   "La integración con Yduqs (si se cierra) distrae y destruye valor en el negocio más rentable.",
+   "Cambia la ley de ProUni o la reforma tributaria elimina la exención: la tasa sube hacia 34% y el valor cae ~20%."
+  ],
+  "contra": "el crecimiento del 1S26 (~7%) estuvo en el piso de la guía, el EBITDA ajustado perdió 190 pb y educación continua y digital crecen 1-5%. Si 2027 se parece, la historia Conservadora sube de peso.",
+  "indicadores": [
+   [
+    "Ingresos de grado en Medicina (reales)",
+    "+6,5% (1S26)",
+    "≥ +7%",
+    "≤ +4%"
+   ],
+   [
+    "Margen EBITDA ajustado",
+    "−190 pb (1S26)",
+    "Recupera en 2027",
+    "Nueva compresión"
+   ],
+   [
+    "Estado de la fusión con Yduqs (CADE, asambleas)",
+    "Anunciada (sep-2026)",
+    "Aprobada sin remedios severos",
+    "Remedios estructurales o rechazo"
+   ],
+   [
+    "Plazas nuevas de Medicina autorizadas (MEC)",
+    "Política restrictiva",
+    "Sin cambios",
+    "Nueva apertura masiva"
+   ],
+   [
+    "Tipo de cambio R$/US$",
+    "~6,2 (según el modelo)",
+    "Estable o apreciación",
+    "Nueva depreciación fuerte"
+   ],
+   [
+    "Beneficio fiscal de ProUni (tasa efectiva)",
+    "~11% efectiva",
+    "Programa renovado sin cambios",
+    "Recorte o fin del beneficio"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Escasez regulada de plazas de Medicina en Brasil; la fusión con Yduqs está por decidirse",
+  "confianza": "Media: el negocio standalone es claro; la fusión y la moneda dominan el resultado",
+  "cambiaria": "Resolución de CADE y asambleas sobre la fusión; crecimiento de grado y margen en 2027",
+  "revision": "Resultados del 3T26 (nov-2026) y cada hito de la fusión",
+  "fuentes": [
+   [
+    "Afya, resultados del 2T y 1S 2026 (Form 6-K)",
+    "https://www.sec.gov/Archives/edgar/data/0001771007/000129281426004218/ex99-1.htm"
+   ],
+   [
+    "MarketBeat, puntos clave de la llamada del 2T26 de Afya",
+    "https://www.marketbeat.com/instant-alerts/afya-q2-earnings-call-highlights-2026-08-13/"
+   ],
+   [
+    "Dealroom, «Afya and Yduqs merge to form US$2.3B Brazilian education giant»",
+    "https://dealroom.co/news/155883-afya-and-yduqs-merge-to-form-r-9b-brazilian-education-giant/"
+   ],
+   [
+    "StockTitan, Schedule 13D/A de Bertelsmann sobre Afya",
+    "https://www.stocktitan.net/sec-filings/AFYA/schedule-13d-a-afya-ltd-amended-major-shareholder-report-a6e236382a7b.html"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "justificacion": [
+   [
+    "Crecimiento: una escasez regulada, no una apuesta de expansión.",
+    "Afya vive de que el Ministerio de Educación limita las plazas de Medicina en Brasil: cada plaza autorizada es una matrícula de seis años con precio alto y más demanda que oferta, y el grado en Medicina explica ~88% de los ingresos. Por eso la Base no supone un salto, sino que el negocio siga como en 2024-2026: el grado crece 7% el primer año y baja a 5% en el quinto, la educación continua de 6% a 5% y las soluciones digitales para médicos entre 5% y 8%. El resultado es {g1A} el primer año y {cagrA} anual compuesto en cinco años. La evidencia está en el 1S26 (6-K): grado +7% y Medicina +6,5% en reales, en el piso de la guía de 7-11%. Elegimos el piso y no el centro de la guía porque el primer semestre ya mostró que el rango alto no se está cumpliendo; tampoco extrapolamos el +27,6% de 2023, que fue comprado. La visión externa respalda que no es una cifra heroica: ~{tbA} de las empresas de su tamaño crecieron al menos eso en cinco años. La Conservadora ({cagrB}) supone que el precio real de la matrícula deja de subir; la Disrupción ({cagrC}) que el gobierno abre plazas y el precio cae; la Optimista ({cagrD}) que los campus nuevos maduran y lo digital despega. Si en 2027 el grado en Medicina crece 4% o menos en reales, la Base pierde sustento. Un punto que esta valoración deja fuera a propósito: la fusión anunciada con Yduqs (sep-2026). Se valora Afya sola, que es lo que vuelve a importar si CADE o las asambleas la frenan."
+   ],
+   [
+    "Margen: el nivel de hoy, no uno mejor.",
+    "El margen EBIT subió de 26,7% a 32,8% en dos años porque las plazas compradas maduraron: una plaza nueva tiene pocos alumnos los primeros años y los costos del campus ya están. La Base usa {mA} de objetivo, prácticamente el margen actual; no supone una mejora adicional porque la mezcla empuja en contra (educación continua y digital, que crecen más, tienen menos margen) y porque el 1S26 trajo 190 pb menos de EBITDA ajustado por inversión en producto. Si esa compresión fuera permanente, la Conservadora ({mB}) se vuelve más probable; la Disrupción ({mC}) es la caída de precio que traería una apertura masiva de plazas, y la Optimista ({mD}) los campus maduros sin la presión de mezcla. Restar dos puntos al margen objetivo lleva la Base a {s_m_lo}."
+   ],
+   [
+    "Reinversión y retorno: crecer con las plazas que ya tiene cuesta poco capital.",
+    "Afya creció comprando escuelas y plazas de Medicina: por eso hoy vende solo ~0,5 veces su capital, que incluye el sobreprecio de esas compras. La Base no supone compras nuevas: crece con plazas ya autorizadas que maduran, la educación continua y las soluciones digitales, y ese crecimiento orgánico pide poco capital (el capex, de US$49-73 millones al año, apenas supera la depreciación y amortización, que incluye la de intangibles comprados). La hoja usa un ventas/capital de {s2c1}× en los años 1–5: con él, el flujo libre del primer año coincide con el real de los últimos doce meses, así que la reinversión del modelo es la que Afya hace hoy; cada dólar de ventas nuevas exige ~US${cap1} y el capital nuevo rinde ~33% (con la tasa marginal de 34%), más que el ROIC actual, que paga el sobreprecio de las compras. En los años 6–10 usa {s2c2}×, cerca del sector educación en la tabla global (1,16), porque crecer exigirá plazas nuevas. Si Afya vuelve a comprar plazas, hay que sumar a la vez los ingresos y el precio de la compra. Después del año 10 la Base conserva un ROIC de {roicT}: las licencias de Medicina son una barrera real (el regulador decide cuántas plazas hay), y el ROIC ha estado en 12-16% desde 2022. Si el ROIC terminal fuera igual al costo de capital —lo que pasaría si se liberan plazas— la Base caería a {s_roic}. Un ventas/capital 20% menor la deja en {s_s_lo}."
+   ],
+   [
+    "Descuento: el riesgo es Brasil, y ya está en la tasa.",
+    "El costo de capital empieza en {wacc0} y termina en {waccT}. Es alto porque incluye la prima de riesgo país de Brasil: tasa libre de riesgo {rf}, beta {beta} y prima de riesgo {erp}. La beta bottom-up del sector educación reapalancada con la deuda de Afya da {betabu}, casi igual, así que la tasa no es el punto débil. Lo que no hacemos es contar el riesgo dos veces: si el real se deprecia o cambian las tasas, eso ya está en el costo de capital, y las historias no recortan además los flujos por el mismo motivo. Un punto más de tasa lleva la Base a {s_k_hi}; un punto menos, a {s_k_lo}. El crecimiento perpetuo es {tgA}, igual a la tasa libre de riesgo de la hoja, y el valor terminal explica {terminal} del valor operativo de la Base."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA} porque es la continuación de lo que se ve; la Conservadora {pB} porque el precio real de la matrícula no puede subir para siempre y el 1S26 ya estuvo en el piso de la guía; la Disrupción {pC} es el riesgo regulatorio, poco probable pero el único que rompe la tesis; la Optimista {pD} exige que la madurez de los campus y lo digital aceleren. El DCF Base es {vA} y el esperado {ve}; la diferencia entre ambos mide cuánto pesan los desenlaces malos. Las acciones se mantienen en {acciones} millones en todas las historias. La salvedad mayor no está en el modelo sino fuera de él: si la fusión con Yduqs se cierra, el valor relevante pasa a ser el del canje, y esta valoración standalone deja de ser la referencia."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.148,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.8710%; ROIC terminal Base 0.148. Conservadora mantiene el mismo terminal porque supone presión de tráfico/precio con la ventaja de marca/inmuebles o licencias aún vigente. Disrupción sí pierde la ventaja y converge al costo de capital. Se conserva la regla económica; no se igualan ambos casos.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -28,12 +363,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.1072,
   "roicTerminal": 0.148,
-  "salesToCapital": 1.5
+  "salesToCapital": 1.5,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 21.32916051501597,
- "precio": 12.04,
- "dcf_base": 24.37520058504103,
+ "dcf_sin_exceso": 20.075218753296213,
+ "precio": 13.5,
+ "dcf_base": 23.67266569802195,
  "g_ref": 0.05832398343871632,
  "m_base": 0.33,
  "s2c": 1.5,
@@ -144,12 +480,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.148,
    "detalle": {
-    "v": 24.37520058504103,
-    "pvFlujos": 1360.6778885092892,
+    "v": 23.67266569802195,
+    "pvFlujos": 1298.2225370532933,
     "pvTerminal": 1279.077443500859,
     "valorTerminal": 3358.12403621787,
-    "activosOperativos": 2639.755332010148,
-    "patrimonio": 2166.9553320101477,
+    "activosOperativos": 2577.2999805541517,
+    "patrimonio": 2104.4999805541515,
     "ingresos": [
      723.1,
      772.5768423236516,
@@ -187,11 +523,11 @@
      29.721975421447798,
      30.995433393688547,
      32.82929293702038,
-     43.47847900518891,
-     46.08042475995016,
-     48.853791048175594,
-     51.81077164508338,
-     54.55156146510831
+     54.49260711957106,
+     67.11983007851575,
+     78.64333288593063,
+     88.74621705653864,
+     96.3351088143291
     ],
     "flujo": [
      null,
@@ -200,11 +536,11 @@
      221.92511230606678,
      236.01355637417103,
      250.34419545593337,
-     238.64196325973947,
-     234.2404855147907,
-     228.83316603228184,
-     222.31118685381244,
-     214.96821366760867
+     227.62783514535732,
+     213.20108019622512,
+     199.04362419452679,
+     185.3757414423572,
+     173.18466631838788
     ],
     "tasa": [
      null,
@@ -266,10 +602,10 @@
     "wacc0": 0.09882931378892967,
     "margenY1": 0.315
    },
-   "valor_bruto": 24.37520058504103,
-   "valor_bruto_prop": 24.597543807501516,
-   "valor_beta_hoja": 24.37520058504103,
-   "valor_beta_prop": 24.597543807501516
+   "valor_bruto": 23.67266569802195,
+   "valor_bruto_prop": 23.8887341206614,
+   "valor_beta_hoja": 23.67266569802195,
+   "valor_beta_prop": 23.8887341206614
   },
   {
    "nombre": "Conservadora · Madurez: precio real plano",
@@ -300,14 +636,14 @@
    },
    "id": "B",
    "tesis": "conservadora",
-   "cagr": 0.034878621345427296,
-   "rev5": 858.3125015272984,
+   "cagr": 0.03487862134542752,
+   "rev5": 858.3125015272985,
    "mix5": {
-    "Grado (Medicina)": 0.8898748085980391,
+    "Grado (Medicina)": 0.889874808598039,
     "Educación continua": 0.07024316848524254,
-    "Soluciones para la práctica médica": 0.03988202291671839
+    "Soluciones para la práctica médica": 0.039882022916718385
    },
-   "tasa_base": 0.7739656245303088,
+   "tasa_base": 0.7739656245303077,
    "anios": [
     0.04727524204702638,
     0.03845743416360703,
@@ -327,12 +663,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.148,
    "detalle": {
-    "v": 19.39512899824988,
-    "pvFlujos": 1198.8670679997153,
+    "v": 18.93847340005552,
+    "pvFlujos": 1158.270385320237,
     "pvTerminal": 998.1598999447002,
     "valorTerminal": 2620.5956246236237,
-    "activosOperativos": 2197.0269679444145,
-    "patrimonio": 1724.2269679444144,
+    "activosOperativos": 2156.430285264936,
+    "patrimonio": 1683.630285264936,
     "ingresos": [
      723.1,
      757.2847275242048,
@@ -370,11 +706,11 @@
      15.974205848177084,
      16.44904509053822,
      19.602679781197594,
-     28.790463867773234,
-     33.492802467914565,
-     38.690336214849125,
-     44.47500688445018,
-     46.82773474863761
+     34.89727918962467,
+     46.17683453421216,
+     58.02738980851619,
+     70.06395452113334,
+     75.17749848835335
     ],
     "flujo": [
      null,
@@ -383,11 +719,11 @@
      205.49966785461007,
      209.34347734015975,
      210.57098375337804,
-     196.81026196367992,
-     187.9448872517266,
-     178.89026644435933,
-     169.44288218331934,
-     163.4987260505361
+     190.7034466418285,
+     175.26085518542902,
+     159.55321285069226,
+     143.8539345466362,
+     135.14896231082037
     ],
     "tasa": [
      null,
@@ -449,10 +785,10 @@
     "wacc0": 0.09882931378892967,
     "margenY1": 0.315
    },
-   "valor_bruto": 19.39512899824988,
-   "valor_bruto_prop": 19.573644236958444,
-   "valor_beta_hoja": 19.39512899824988,
-   "valor_beta_prop": 19.573644236958444
+   "valor_bruto": 18.93847340005552,
+   "valor_bruto_prop": 19.112894645590924,
+   "valor_beta_hoja": 18.93847340005552,
+   "valor_beta_prop": 19.112894645590924
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -513,12 +849,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 11.823616236671176,
-    "pvFlujos": 1050.8834851494757,
+    "v": 11.730399457752197,
+    "pvFlujos": 1042.5965135035785,
     "pvTerminal": 473.0359982905926,
     "valorTerminal": 1241.921326912124,
-    "activosOperativos": 1523.9194834400678,
-    "patrimonio": 1051.1194834400676,
+    "activosOperativos": 1515.6325117941706,
+    "patrimonio": 1042.8325117941704,
     "ingresos": [
      723.1,
      735.9017704011064,
@@ -556,11 +892,11 @@
      0,
      4.309075917012478,
      4.347262425078573,
-     5.482234171683729,
-     5.53081706589334,
-     5.57983049581812,
-     5.629278276813258,
-     5.679164258045452
+     7.089075370916419,
+     8.471768779540959,
+     9.574532750657966,
+     10.389604355001868,
+     10.909081194185816
     ],
     "flujo": [
      null,
@@ -569,11 +905,11 @@
      183.86016656395486,
      172.3792401781356,
      166.67143755652756,
-     158.02286850304802,
-     150.31408853272387,
-     142.4562700232418,
-     134.4473768444924,
-     126.28534848291754
+     156.41602730381533,
+     147.37313681907625,
+     138.46156776840198,
+     129.6870507663038,
+     121.05543154677717
     ],
     "tasa": [
      null,
@@ -635,10 +971,10 @@
     "wacc0": 0.09882931378892967,
     "margenY1": 0.315
    },
-   "valor_bruto": 11.823616236671176,
-   "valor_bruto_prop": 11.934549835217036,
-   "valor_beta_hoja": 11.823616236671176,
-   "valor_beta_prop": 11.934549835217036
+   "valor_bruto": 11.730399457752197,
+   "valor_bruto_prop": 11.840502700281212,
+   "valor_beta_hoja": 11.730399457752197,
+   "valor_beta_prop": 11.840502700281212
   },
   {
    "nombre": "Optimista · Maduran los campus y crece lo digital",
@@ -678,10 +1014,10 @@
    },
    "tasa_base": 0.5917890324908075,
    "anios": [
-    0.09056708160442595,
-    0.08176136363636388,
+    0.09056708160442617,
+    0.08176136363636366,
     0.07207881566408814,
-    0.06330382121507427,
+    0.0633038212150745,
     0.06242304547455024
    ],
    "anios6a10": [
@@ -696,67 +1032,67 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.148,
    "detalle": {
-    "v": 28.256701301049304,
-    "pvFlujos": 1492.5336143749437,
-    "pvTerminal": 1492.2871312883415,
-    "valorTerminal": 3917.8904373467876,
-    "activosOperativos": 2984.820745663284,
-    "patrimonio": 2512.0207456632834,
+    "v": 27.35695835562975,
+    "pvFlujos": 1412.546466527144,
+    "pvTerminal": 1492.2871312883424,
+    "valorTerminal": 3917.89043734679,
+    "activosOperativos": 2904.8335978154855,
+    "patrimonio": 2432.033597815485,
     "ingresos": [
      723.1,
-     788.5890567081605,
+     788.5890567081606,
      853.0651733333335,
      914.5531007114803,
-     972.4478066906116,
-     1033.1509603492864,
-     1095.6756410137489,
-     1159.8973837962146,
-     1225.6742576117156,
-     1292.8468561778197,
-     1361.2384548696264,
-     1433.2479691322296
+     972.4478066906119,
+     1033.1509603492866,
+     1095.675641013749,
+     1159.8973837962149,
+     1225.674257611716,
+     1292.8468561778204,
+     1361.238454869627,
+     1433.2479691322303
     ],
     "utilidad": null,
     "nopat": [
      null,
-     222.04972370429874,
+     222.04972370429877,
      250.88058132763743,
      274.6863896199333,
-     298.159985379453,
-     323.2367752096795,
-     324.8590621554484,
-     324.9092952516118,
-     323.2666827480595,
-     319.81540535327576,
-     314.44608307488363
+     298.1599853794531,
+     323.23677520967954,
+     324.8590621554485,
+     324.9092952516119,
+     323.2666827480597,
+     319.815405353276,
+     314.44608307488386
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     42.984077750115375,
+     42.9840777501153,
      40.991951585431174,
-     38.59647065275423,
+     38.596470652754384,
      40.46876910578317,
      41.683120442974996,
-     53.51811898538813,
-     54.81406151291746,
-     55.97716547175348,
-     56.99299890983885,
-     60.00792855216939
+     68.54589108163324,
+     82.68668587078943,
+     94.21453178903568,
+     102.84851839379631,
+     112.39322834230643
     ],
     "flujo": [
      null,
-     179.06564595418337,
+     179.06564595418348,
      209.88862974220626,
-     236.0899189671791,
-     257.69121627366985,
-     281.5536547667045,
-     271.34094317006026,
-     270.09523373869433,
-     267.289517276306,
-     262.82240644343693,
-     254.43815452271423
+     236.08991896717893,
+     257.6912162736699,
+     281.55365476670454,
+     256.3131710738153,
+     242.2226093808225,
+     229.052150959024,
+     216.96688695947967,
+     202.05285473257743
     ],
     "tasa": [
      null,
@@ -773,10 +1109,10 @@
     ],
     "crecimiento": [
      null,
-     0.09056708160442595,
-     0.08176136363636388,
+     0.09056708160442617,
+     0.08176136363636366,
      0.07207881566408814,
-     0.06330382121507427,
+     0.0633038212150745,
      0.06242304547455024,
      0.060518436379640196,
      0.05861382728473015,
@@ -818,28 +1154,28 @@
     "wacc0": 0.09882931378892967,
     "margenY1": 0.315
    },
-   "valor_bruto": 28.256701301049304,
-   "valor_bruto_prop": 28.512770773698787,
-   "valor_beta_hoja": 28.256701301049304,
-   "valor_beta_prop": 28.512770773698787
+   "valor_bruto": 27.35695835562975,
+   "valor_bruto_prop": 27.60500539385067,
+   "valor_beta_hoja": 27.35695835562975,
+   "valor_beta_prop": 27.60500539385067
   }
  ],
- "valor_esperado_beta_hoja": 21.386591528349037,
- "valor_esperado_beta_prop": 21.58244753711565,
+ "valor_esperado_beta_hoja": 20.82949733835234,
+ "valor_esperado_beta_prop": 21.020374692402157,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.127565630030716,
    "ke": 0.1311530547241317,
    "wacc": 0.09882931378892967,
-   "dcf_base": 24.37520058504103
+   "dcf_base": 23.67266569802195
   },
   {
    "enfoque": "Bottom-up del sector (Education, reapalancada)",
    "beta": 1.090346605949196,
    "ke": 0.12857005445287417,
    "wacc": 0.09737765906018335,
-   "dcf_base": 24.597543807501516
+   "dcf_base": 23.8887341206614
   }
  ],
  "sensibilidad": {
@@ -859,149 +1195,149 @@
   ],
   "v": [
    [
-    17.066788354119833,
-    18.396578330441884,
-    19.72636830676394,
-    21.056158283086,
-    22.385948259408046
+    16.701718858940012,
+    17.969823193441982,
+    19.237927527943953,
+    20.506031862445926,
+    21.77413619694789
    ],
    [
-    18.976860136088543,
-    20.475384582697064,
-    21.973909029305588,
-    23.472433475914105,
-    24.970957922522626
+    18.52803779848188,
+    19.951401187605438,
+    21.37476457672901,
+    22.798127965852572,
+    24.221491354976138
    ],
    [
-    21.076203047663878,
-    22.76256268810926,
-    24.448922328554655,
-    26.135281969000044,
-    27.82164160944543
+    20.52920347650428,
+    22.124657505611918,
+    23.720111534719553,
+    25.315565563827203,
+    26.911019592934824
    ],
    [
-    23.38273817159468,
-    25.27790608030618,
-    27.173073989017677,
-    29.06824189772918,
-    30.96340980644068
+    22.721192024763948,
+    24.50713812471759,
+    26.293084224671222,
+    28.079030324624856,
+    29.864976424578487
    ],
    [
-    25.915823331046347,
-    28.042798639503026,
-    30.169773947959726,
-    32.29674925641641,
-    34.423724564873105
+    25.12121074154062,
+    27.117742084465263,
+    29.114273427389918,
+    31.110804770314566,
+    33.107336113239214
    ]
   ],
-  "referencia_constante": 24.448922328554655,
+  "referencia_constante": 23.720111534719553,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.127565630030716,
    "margen": 0.26,
-   "g": -0.023897194061366533,
-   "tasa_base": 0.8845442961610037
+   "g": 0.0005670622199862171,
+   "tasa_base": 0.8522514778696181
   },
   {
    "beta": 1.127565630030716,
    "margen": 0.3,
-   "g": -0.05221925489049423,
-   "tasa_base": 0.8963433168583878
+   "g": -0.0286257334877274,
+   "tasa_base": 0.8873777787253364
   },
   {
    "beta": 1.127565630030716,
    "margen": 0.33,
-   "g": -0.07001990987545798,
-   "tasa_base": 0.9031075657526739
+   "g": -0.047045113001149275,
+   "tasa_base": 0.8943771429404367
   },
   {
    "beta": 1.090346605949196,
    "margen": 0.26,
-   "g": -0.025641371476352093,
-   "tasa_base": 0.8862437211610137
+   "g": -0.001238226904287154,
+   "tasa_base": 0.854634459513659
   },
   {
    "beta": 1.090346605949196,
    "margen": 0.3,
-   "g": -0.053860489123257305,
-   "tasa_base": 0.8969669858668377
+   "g": -0.030326564949986812,
+   "tasa_base": 0.888024094680995
   },
   {
    "beta": 1.090346605949196,
    "margen": 0.33,
-   "g": -0.0716018329318891,
-   "tasa_base": 0.9037086965141178
+   "g": -0.048685157238263,
+   "tasa_base": 0.8950003597505399
   }
  ],
  "ingresos_ltm": 723.1,
  "sens_base": {
-  "base": 24.37520058504103,
+  "base": 23.67266569802195,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 22.70377668112382
+    "valor": 22.089047523409427
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 26.046624488958226
+    "valor": 25.256283872634476
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 21.92053874874112
+    "valor": 21.344327364210304
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 27.07667878022438
+    "valor": 26.226715274030376
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 30.00651283079337
+    "valor": 29.24803527872117
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 20.433718164540625
+    "valor": 19.7824587281635
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 23.652754162902717
+    "valor": 23.010350395676994
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 25.22801101105748
+    "valor": 24.46432471978486
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 23.21447674765812
+    "valor": 22.545395902878045
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 23.718076141204875
+    "valor": 23.20210616581284
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 24.81328354759847
+    "valor": 23.986372052828024
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 21.32916051501597
+    "valor": 20.075218753296213
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 24.992877734389833
+ "motor_tecnico": 23.67266569802195
 }

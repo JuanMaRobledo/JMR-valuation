@@ -195,7 +195,7 @@
   "texto": "El margen operativo se mantuvo en 36-38% con ventas planas: es un negocio con poder de precio y costos flexibles. La hoja supone 36% estable. Si la competencia obliga a bajar precios en mascotas, el margen cae rápido porque la mezcla de mascotas es la más rentable. Las historias van de 29% a 38%."
  },
  "reinversion": {
-  "texto": "Capex de US$620-730 millones al año (plantas de biológicos) e I+D de US$722 millones LTM. La hoja usa un ventas/capital de 1,11 (años 1-5) y 1,11 (años 6-10): el del sector; el de hoy (0,89) incluye el crédito mercantil de las compras. Con margen objetivo de 36,4% e impuesto marginal de 20%, el capital nuevo rinde ~32% y ~32% (revisión del 5-oct-2026: se quitó el tope de la auditoría del 4-oct, que lo comparaba con un ROIC actual cargado de crédito mercantil). En los últimos doce meses recompró US$3.644 millones y pagó US$889 millones de dividendos, con deuda en aumento (US$9.042 millones): una apuesta de la gerencia a que el tropiezo es temporal. Ventaja durable: patentes que se renuevan, relación con los veterinarios y escala en salud animal, con ROIC estable de 26-29%. El ROIC después del año 10 es 16,9%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "La Base usa ventas/capital 1.1100× en años 1–5 y un ancla de 1.1100× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 26.40% y el terminal de Base 16.90%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.4017%; ROIC terminal Base 0.169. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
  },
  "prob_texto": "Base (40%) es la tesis de la empresa: 2026 es un año de transición y la cartera nueva devuelve el crecimiento. Conservadora (35%) es una erosión prolongada de dermatología, dolor y parasiticidas: la caída simultánea en varias franquicias y los genéricos de Cerenia y Convenia la hacen casi tan probable como Base. Disrupción (10%) es competencia y genéricos generalizados. Optimista (15%) es una recuperación fuerte con nuevos productos. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -295,5 +295,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA} y la Conservadora {pB}, casi lo mismo, por la caída simultánea de varias franquicias. La Disrupción pesa {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo apenas por encima de la Conservadora ({vB}), es decir, ya descuenta una erosión prolongada. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.169,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.4017%; ROIC terminal Base 0.169. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+  "convergencia": true,
+  "g3": false
+ }
 }

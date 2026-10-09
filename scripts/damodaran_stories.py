@@ -364,7 +364,7 @@ def compute(tk: str) -> dict:
     financiero = bool(inp.get("dcfFinanciero"))
     sup = {k: inp.get(k) for k in ("growthY1Cons", "growthY1Base", "growthY1Opt", "growthCons", "growthBase", "growthOpt",
                                    "marginY1Cons", "marginY1Base", "marginY1Opt", "marginCons", "marginBase", "marginOpt",
-                                   "salesToCapital2", "wacc", "costoPatrimonio", "taxEffective", "convergenceYear",
+                                   "smoothTerminalCapital", "salesToCapital2", "wacc", "costoPatrimonio", "taxEffective", "convergenceYear",
                                    "terminalWacc", "roicTerminal")}
     sup["salesToCapital"] = s2c
     sin_exceso = None if financiero else run_exact(grid, [{**kA, "roic": 0}])[0]
@@ -1381,10 +1381,12 @@ def render(r: dict) -> tuple[str, str]:
             ["l", "r", "r", "r", "r", "r", "r"])
         p(f"Fuentes de ventaja: {moat['fuentes']}. Evidencia: {moat['evidencia']}. Criterio (Damodaran, *Investment Valuation*, "
           "cap. 12): sin ventaja defendible, el ROIC en crecimiento estable es el costo de capital; con una ventaja durable, el "
-          "promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el punto medio entre "
-          "ambos. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del "
+          "promedio de la industria, sin superar el ROIC actual; si la ventaja se desvanece de forma visible, el Modelo JMR adopta como convención el punto medio entre "
+          "ambos; esa cifra no es una regla universal de Damodaran. El riesgo de perder la ventaja va en las historias de erosión, que usan el costo de capital. El ROIC actual del "
           "motor y el histórico GAAP pueden diferir por I+D, arrendamientos y plusvalía.")
 
+    if su.get("smoothTerminalCapital"):
+        p("Transición del capital nuevo: en años 6–10 se interpola la intensidad de capital (1/ventas-capital) desde el ancla de la segunda etapa hasta margen después de impuestos / ROIC terminal. En el año 10, la productividad del capital incremental coincide con el ROIC terminal de cada historia. Esto evita el salto de reinversión al año 11; no obliga al ROIC medio del capital instalado a converger en cinco años. La transición es un supuesto explícito del analista.")
     origen_calculo(r, W)
     cuatro_tesis(r, W)
 

@@ -104,7 +104,7 @@
   "texto": "El margen operativo GAAP de los últimos doce meses es 8,2% (US$3.758 millones), pero incluye un beneficio de una vez de US$986 millones por la devolución de los aranceles IEEPA que la Corte Suprema declaró ilegales (reconocido en el 4T FY26) y US$385 millones de indemnizaciones por despidos ([NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)). Sin ambos, el margen normalizado es 6,9%. La guía de FY2027 (BPA ajustado US$1,15-1,35 con impuestos de ~25%) implica un margen operativo de ~6% sobre ventas ~8% menores. Entre FY2017 y FY2024 Nike ganó 12-16% (salvo 8,3% en la pandemia); Deckers ganó 23% y Lululemon 20% en su último ejercicio fiscal, con marcas más chicas y sin la carga de los mayoristas. El margen bruto del 1T FY27 subió 60 puntos básicos a 42,8% por menores costos de logística ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)). El 1-oct-2026 Nike amplió el programa Pace: cargos antes de impuestos de ~US$1.000 millones, sobre todo indemnizaciones, ~US$300 millones en FY2027 y el resto hasta FY2031, además de los ~US$300 millones de FY2026 ([NIKE, 8-K del 1-oct-2026, punto 2.05](https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/nke-20261001.htm)). Son costos de reestructuración que no entran en el margen normalizado de la Base, pero sí salen de la caja: después de impuestos y a valor presente equivalen a ~US$0,4-0,5 por acción, dentro del rango de las historias."
  },
  "reinversion": {
-  "texto": "Nike reinvierte poco en activos: fabrica con terceros y el capex de FY2026 fue US$684 millones (1,5% de las ventas), algo menos que la depreciación más la amortización de los arrendamientos. Con el capital invertido de ~US$17.600 millones (patrimonio más deuda y arrendamientos, menos caja) rota su capital ~2,6 veces, igual que el sector Shoe en EE.UU. (2,62); se usa 2,6 (antes 2,1, el promedio global, que suponía 24% más capital por dólar de ventas nuevas del que Nike usa). Con el margen objetivo (11,6%) el capital nuevo rinde ~22,6%, lo mismo que el capital actual a ese margen y cerca del ROIC de la industria (20,9%): el ROIC de hoy (~15%) está deprimido por el margen, no por más capital por venta. La vuelta a crecer con los mayoristas pide inventario y cuentas por cobrar, pero en la misma proporción que hoy. Pace también cuesta: ~US$1.000 millones de cargos a FY2031.",
+  "texto": "La Base usa ventas/capital 2.6000× en años 1–5 y un ancla de 2.6000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 14.66% y el terminal de Base 12.10%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.6559%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
   "tabla": {
    "cols": [
     "Concepto",
@@ -452,5 +452,11 @@
    "Probabilidades y lectura del resultado.",
    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.121,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.6559%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+  "convergencia": true,
+  "g3": true
+ }
 }

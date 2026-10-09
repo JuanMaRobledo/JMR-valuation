@@ -1,6 +1,354 @@
 {
  "ticker": "GOOG",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "GOOG",
+  "empresa": "Alphabet Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Software (Internet)",
+  "segmentos": {
+   "Google Services": 364000,
+   "Google Cloud": 80000,
+   "Other Bets": 1866
+  },
+  "riesgo": {
+   "beta_propuesta": 1.07,
+   "texto": "La hoja usa ahora una beta de 1,07 (antes 1,05). La bottom-up de Software (Internet) da 1,61, pero ese grupo (29 empresas pequeñas y volátiles) no representa a Alphabet. Ponderando por ingresos Advertising (1,01, ~82%) y Software System & Application (1,25, ~18%) y reapalancando con la poca deuda sale 1,07, la que ahora usa la hoja: el riesgo de Alphabet está en los flujos (IA, regulación), no en la tasa."
+  },
+  "historias": [
+   {
+    "nombre": "Base · Search resiste y Cloud es el segundo motor",
+    "prob": 0.4,
+    "margen": 0.34,
+    "crec": {
+     "Google Services": [
+      0.1,
+      0.08,
+      0.07,
+      0.06,
+      0.06
+     ],
+     "Google Cloud": [
+      0.45,
+      0.3,
+      0.22,
+      0.18,
+      0.15
+     ],
+     "Other Bets": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+     ]
+    },
+    "id": "A",
+    "tesis": "base",
+    "roic_terminal": 0.2837744000520741
+   },
+   {
+    "nombre": "Conservadora · La IA conversacional erosiona Search",
+    "prob": 0.25,
+    "margen": 0.3,
+    "crec": {
+     "Google Services": [
+      0.06,
+      0.03,
+      0.02,
+      0.02,
+      0.02
+     ],
+     "Google Cloud": [
+      0.35,
+      0.22,
+      0.16,
+      0.13,
+      0.1
+     ],
+     "Other Bets": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.15,
+    "margen": 0.27,
+    "crec": {
+     "Google Services": [
+      0.04,
+      0.01,
+      0,
+      0,
+      0.01
+     ],
+     "Google Cloud": [
+      0.25,
+      0.15,
+      0.1,
+      0.08,
+      0.08
+     ],
+     "Other Bets": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Remedios antimonopolio y guerra de precios en IA",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · Gemini y Cloud dominan la plataforma de IA",
+    "prob": 0.2,
+    "margen": 0.37,
+    "s2c": 1.0,
+    "crec": {
+     "Google Services": [
+      0.13,
+      0.11,
+      0.1,
+      0.09,
+      0.08
+     ],
+     "Google Cloud": [
+      0.55,
+      0.4,
+      0.3,
+      0.25,
+      0.2
+     ],
+     "Other Bets": [
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista",
+    "roic_terminal": 0.2837744000520741
+   }
+  ],
+  "margenes_inverso": [
+   0.3,
+   0.335,
+   0.37
+  ],
+  "historia": "Alphabet tiene dos negocios distintos bajo un mismo techo. Google Services (Búsqueda, YouTube, Android, suscripciones) es una máquina publicitaria madura y enormemente rentable que genera ~80% de los ingresos. Google Cloud (infraestructura, Vertex AI, TPUs, Workspace) es el nuevo motor: creció 82% en el 2T26, hasta US$24.800 millones en el trimestre, empujado por la demanda de cómputo para IA. En medio está la pregunta de la década: ¿la IA conversacional (Gemini, AI Overviews, agentes) refuerza a la Búsqueda o la canibaliza? Y alrededor, el costo: el capex pasó de US$32.000 millones (2023) a US$91.000 millones (2025), el flujo libre se desplomó y dos juicios antimonopolio (búsqueda y ad tech) siguen en apelación.",
+  "filtro": [
+   [
+    "Google Services crece ~7-10% anual cinco años",
+    "Sí",
+    "Sí: +15% en el 2T26 (Search +17%) pese a la IA conversacional",
+    "Probable a corto plazo; incierto después"
+   ],
+   [
+    "Google Cloud sigue creciendo más de 20% anual por años",
+    "Sí",
+    "Sí: +82% en el 2T26 y ganando participación frente a AWS y Azure",
+    "Probable, desacelerando"
+   ],
+   [
+    "El capex de IA rinde por encima del costo de capital",
+    "Sí",
+    "Sí en Cloud (demanda visible); incierto en consumo",
+    "Incierto"
+   ],
+   [
+    "Los remedios antimonopolio rompen el negocio de Search",
+    "Sí",
+    "Poco: los remedios del tribunal de distrito fueron limitados",
+    "Baja-media"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$50.000 millones: crecer 11,7% anual cinco años (Base) lo logró ~13% de las empresas de ese tamaño; 16,1% (Optimista), ~5%. Alphabet es una excepción probada (creció 14-15% en 2024-2025 y 24% en el 2T26 con ~US$450.000 millones de ventas), pero la visión externa recuerda lo raro que es sostenerlo cinco años más.",
+  "crecimiento": {
+   "texto": "Ingresos de US$307.394 millones (2023, +8,7%), US$350.018 millones (2024, +13,9%) y US$402.836 millones (2025, +15,1%); LTM US$445.866 millones. En el 2T26 los ingresos crecieron 24% (US$119.800 millones): Google Services +15% (US$94.500 millones; Search +17%, YouTube +13%) y Google Cloud +82% (US$24.800 millones). Tras la revisión del 30-sep-2026, la hoja supone 18% el próximo año y 11% en los años 2-5 (antes 11% y 7%, muy por debajo del ritmo actual). La división LTM de las historias (Services ~US$364.000 millones, Cloud ~US$80.000 millones) es una estimación propia.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2023",
+     "2024",
+     "2025",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "307.394",
+      "350.018",
+      "402.836",
+      "445.866"
+     ],
+     [
+      "Crecimiento",
+      "+8,7%",
+      "+13,9%",
+      "+15,1%",
+      "—"
+     ],
+     [
+      "Margen operativo",
+      "27,4%",
+      "32,1%",
+      "32,0%",
+      "33,1%"
+     ],
+     [
+      "Capex",
+      "32.251",
+      "52.535",
+      "91.447",
+      "—"
+     ],
+     [
+      "FCFF (hoja)",
+      "59.212",
+      "71.236",
+      "14.612",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo subió de 27,4% (2023) a ~33% y fue 34% en el 2T26, con Cloud ya rentable. La hoja supone 32,5% el próximo año y 35% de objetivo (antes 33,5%). Dos fuerzas se cruzan: la escala de Cloud sube el margen, y la depreciación del capex de IA y el costo de servir respuestas generativas en Search lo bajan. Las historias van de 27% (remedios y guerra de precios) a 37% (plataforma de IA dominante)."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 1.1537× en años 1–5 y un ancla de 1.4283× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 33.27% y el terminal de Base 28.38%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Alphabet: referencia compuesta de publicidad (82%) y software/nube (18%), consistente con la mezcla usada para beta. Capital sectorial por unidad de ingreso = margen ajustado después de impuestos / ROIC ajustado. ROIC compuesto = (0,82×0,0969+0,18×0,3262)/(0,82×0,0969/0,2772+0,18×0,3262/0,2931842949) = 28.3774%. Es un proxy de capital sectorial por mezcla, no ROIC de capital observado por segmento. No se utiliza Software (Internet) 3,43% como referencia terminal de Alphabet. Mantiene beta compuesta 1,07 y la industria del selector solo para otras comparaciones. Fuentes NYU roc.html y margin.html, ene-2026."
+  },
+  "prob_texto": "Base (40%) es lo que muestra 2026: Search sigue creciendo y Cloud se vuelve un segundo motor que desacelera con la escala. Conservadora (25%) es la erosión de la Búsqueda por la IA conversacional (competencia de OpenAI, cambios en el comportamiento). Disrupción (15%) combina remedios antimonopolio más duros y una guerra de precios en IA que baja márgenes. Optimista (20%) es Alphabet como plataforma dominante de IA (modelos, chips y nube). En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "Las respuestas generativas reducen los clics y el precio por consulta: Search deja de crecer aunque las búsquedas suban.",
+   "El capex de IA sobreinvierte: hay exceso de capacidad, precios de cómputo en caída y deterioro de activos.",
+   "Las apelaciones terminan en remedios más duros (fin de acuerdos por defecto con Apple, venta del ad exchange).",
+   "OpenAI, Anthropic, Meta o Microsoft capturan a los usuarios de asistentes y a los desarrolladores.",
+   "La desaceleración de Cloud llega antes: los clientes de IA construyen su propia infraestructura."
+  ],
+  "contra": "el capex crece más rápido que los ingresos y el flujo libre cayó ~80% en 2025. Si la demanda de IA se enfría, la historia Base se sostiene en ingresos pero no en retorno sobre el capital.",
+  "indicadores": [
+   [
+    "Search & other (interanual)",
+    "+17% (2T26)",
+    "≥ +8%",
+    "≤ +3%"
+   ],
+   [
+    "Google Cloud (interanual)",
+    "+82% (2T26)",
+    "≥ +30% en 2027",
+    "≤ +20%"
+   ],
+   [
+    "Margen operativo de Cloud",
+    "En alza",
+    "≥ 25%",
+    "Cae con el capex"
+   ],
+   [
+    "Capex / ingresos",
+    "~23% (2025)",
+    "Baja a ≤ 20% con ingresos creciendo",
+    "Sube sin aceleración de ingresos"
+   ],
+   [
+    "Remedios antimonopolio (búsqueda y ad tech)",
+    "En apelación",
+    "Remedios conductuales",
+    "Desinversiones o fin de acuerdos por defecto"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Máquina publicitaria madura con un segundo motor de IA en la nube, financiado con capex récord",
+  "confianza": "Media: el negocio es excepcional; el retorno del capex de IA y el futuro de Search son inciertos",
+  "cambiaria": "Crecimiento de Search y de Cloud; retorno del capex; remedios antimonopolio",
+  "revision": "Resultados del 3T26 (oct-2026)",
+  "fuentes": [
+   [
+    "Alphabet, resultados del 2T 2026 (Form 8-K, ex. 99.1)",
+    "https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000066/googexhibit991q22026.htm"
+   ],
+   [
+    "Alphabet, proxy statement 2026 (DEF 14A)",
+    "https://www.sec.gov/Archives/edgar/data/0001652044/000130817926000342/goog-20260424.htm"
+   ],
+   [
+    "Synergy Research, participación en la nube de los tres grandes",
+    "https://www.srgresearch.com/articles/cloud-market-share-trends-big-three-together-hold-63-while-oracle-and-the-neoclouds-inch-higher"
+   ],
+   [
+    "Tech Insider, Google Cloud +82% frente a AWS (2026)",
+    "https://tech-insider.org/google-cloud-82-percent-growth-aws-earnings-2026/"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 17148.383776777555,
+   "ajuste_ebit": 1427.4520279028056,
+   "margen_pp": 0.0032015269787398133,
+   "capital_ventas": 0.038460846480282314,
+   "cierre": "2026-06-30",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-06-30",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: una máquina madura y un segundo motor.",
+    "Alphabet son dos negocios. Google Services (Búsqueda, YouTube, Android) genera ~80% de los ingresos y es una máquina publicitaria madura; Google Cloud creció 82% en el 2T26 (US$24.800 millones en el trimestre) por la demanda de cómputo para IA. La Base les da trayectorias distintas: Services de 10% bajando a 6%, Cloud de 45% bajando a 15%. El total es {g1A} el primer año y {cagrA} compuesto. Es una cifra exigente para una empresa de ~US$450.000 millones de ventas —solo ~{tbA} de las empresas de ese tamaño lo lograron—, pero Alphabet es una excepción probada: creció 14-15% en 2024-2025 y 24% en el 2T26. Antes de la revisión del 30-sep-2026 la hoja suponía mucho menos (11% y 7%), por debajo del ritmo real. La Conservadora ({cagrB}) es la Búsqueda erosionada por la IA conversacional; la Disrupción ({cagrC}), remedios antimonopolio y una guerra de precios en IA; la Optimista ({cagrD}), Alphabet como plataforma dominante de IA. Si Search crece 3% o menos, la Base deja de sostenerse."
+   ],
+   [
+    "Margen: escala de Cloud contra depreciación de la IA.",
+    "El margen operativo subió de 27,4% (2023) a ~33% y fue 34% en el 2T26, con Cloud ya rentable. La Base usa {mA}. Se cruzan dos fuerzas: la escala de Cloud sube el margen, y la depreciación del capex de IA y el costo de servir respuestas generativas en la Búsqueda lo bajan. La Base supone que se compensan con una mejora leve; el rango de las historias va de {mC} (remedios y guerra de precios) a {mD}. Dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}."
+   ],
+   [
+    "Reinversión: el supuesto que más cambió.",
+    "El capex se triplicó en dos años (US$91.447 millones en 2025) y el flujo libre cayó de US$71.236 millones a US$14.612 millones; para 2026 la guía es de US$195-205 mil millones. Por eso la hoja pasó a un ventas/capital de {s2c1}× en los años 1–5 y {s2c2}× después: cada dólar de ventas nuevas exige ~US${cap1} de capital, el triple que antes. La versión anterior (2,5 y 2) suponía una reinversión que era una fracción del gasto real. La Optimista usa {s2cD}× porque crecer tanto en Cloud exige aún más centros de datos. Todo depende de que ese capital rinda por encima del costo de capital; la demanda de Cloud (+82%) es la mejor evidencia a favor, y un capex que sube sin que aceleren los ingresos sería la señal en contra. Después del año 10 la Base conserva un ROIC de {roicT}, el promedio de la industria: escala y efectos de red en búsqueda, YouTube y Android sostuvieron un ROIC de 24-31% durante años. Si esa ventaja se perdiera, la Base caería a {s_roic}."
+   ],
+   [
+    "Descuento.",
+    "La beta de la hoja es {beta}. La bottom-up de Software (Internet) da {betabu}, pero ese grupo son 29 empresas pequeñas y volátiles que no representan a Alphabet; ponderando publicidad (~82% de ingresos) y software sale ~1,07, la que usa la hoja. El riesgo de Alphabet está en los flujos —IA y regulación—, no en la tasa. El costo de capital va de {wacc0} a {waccT}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo; un punto más de tasa lleva la Base a {s_k_hi}."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA}, cerca del precio ({precio}); el esperado, {ve}, es menor porque la Conservadora y la Disrupción suman 40% y en ambas la ventaja se pierde. La evidencia en contra de la Base es el capex: crece más rápido que los ingresos y el flujo libre cayó ~80% en 2025. Si la demanda de IA se enfría, la Base se sostiene en ingresos pero no en retorno sobre el capital. Los dos juicios antimonopolio siguen en apelación. Las acciones se fijan en {acciones} millones; las recompras no se modelan. En 2026 Alphabet emitió US$19.063 millones en acciones preferentes convertibles (6,25%; 19 millones a US$1.000 de liquidación, según el 10-Q del 2T26): se restan del patrimonio como un derecho separado de US$19.000 millones, sin sumarlas a las acciones. Es un tratamiento provisional hasta modelar la conversión de 2029 y los capped calls."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.2837744000520741,
+   "motivo": "Alphabet: referencia compuesta de publicidad (82%) y software/nube (18%), consistente con la mezcla usada para beta. Capital sectorial por unidad de ingreso = margen ajustado después de impuestos / ROIC ajustado. ROIC compuesto = (0,82×0,0969+0,18×0,3262)/(0,82×0,0969/0,2772+0,18×0,3262/0,2931842949) = 28.3774%. Es un proxy de capital sectorial por mezcla, no ROIC de capital observado por segmento. No se utiliza Software (Internet) 3,43% como referencia terminal de Alphabet. Mantiene beta compuesta 1,07 y la industria del selector solo para otras comparaciones. Fuentes NYU roc.html y margin.html, ene-2026.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -27,13 +375,14 @@
   "taxEffective": 0.184,
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
-  "roicTerminal": 0.293,
-  "salesToCapital": 1.1537
+  "roicTerminal": 0.2837744000520741,
+  "salesToCapital": 1.1537,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 216.0946121960543,
- "precio": 340.74,
- "dcf_base": 330.8623963347827,
+ "dcf_sin_exceso": 200.70709507869628,
+ "precio": 343.88,
+ "dcf_base": 327.3053524713127,
  "g_ref": 0.11700661727587489,
  "m_base": 0.353201,
  "s2c": 1.1537,
@@ -117,6 +466,7 @@
    },
    "id": "A",
    "tesis": "base",
+   "roic_terminal": 0.2837744000520741,
    "margen_reportado": 0.34,
    "cagr": 0.11668000111116306,
    "rev5": 774190.8739840002,
@@ -143,14 +493,14 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.293,
+   "roic_terminal_usado": 0.2837744000520741,
    "detalle": {
-    "v": 330.8623963347827,
-    "pvFlujos": 988742.5573448727,
-    "pvTerminal": 2819893.523193838,
-    "valorTerminal": 7197379.546202791,
-    "activosOperativos": 3808636.0805387106,
-    "patrimonio": 4046447.1071743923,
+    "v": 327.3053524713127,
+    "pvFlujos": 965438.3414774663,
+    "pvTerminal": 2799695.092611007,
+    "valorTerminal": 7145825.90775987,
+    "activosOperativos": 3765133.4340884723,
+    "patrimonio": 4002944.460724154,
     "ingresos": [
      445866,
      518639.20000000007,
@@ -188,11 +538,11 @@
      53326.43148132099,
      54403.64218080953,
      54462.43487314503,
-     43421.75355280642,
-     42192.02719027638,
-     40275.011483764014,
-     37660.412853139,
-     39652.64869306997
+     47050.580198907504,
+     49384.0752399414,
+     50773.287946295095,
+     50999.21424953704,
+     57536.961317001456
     ],
     "flujo": [
      null,
@@ -201,11 +551,11 @@
      125498.37061705688,
      143091.14846143854,
      162351.61306829524,
-     192367.80315359903,
-     212549.40695139818,
-     233122.067598804,
-     253806.01470279146,
-     268996.0597861648
+     188738.97650749795,
+     205357.35890173318,
+     222623.7911362729,
+     240467.21330639342,
+     251111.7471622333
     ],
     "tasa": [
      null,
@@ -248,7 +598,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.293,
+    "roicTerminal": 0.2837744000520741,
     "caja": 242474,
     "deuda": 117123.97336431839,
     "minoritarios": 0,
@@ -267,10 +617,10 @@
     "wacc0": 0.10181515825241352,
     "margenY1": 0.328201
    },
-   "valor_bruto": 330.8623963347827,
-   "valor_bruto_prop": 330.8623963347827,
-   "valor_beta_hoja": 330.8623963347827,
-   "valor_beta_prop": 330.8623963347827
+   "valor_bruto": 327.3053524713127,
+   "valor_bruto_prop": 327.3053524713127,
+   "valor_beta_hoja": 327.3053524713127,
+   "valor_beta_prop": 327.3053524713127
   },
   {
    "nombre": "Conservadora · La IA conversacional erosiona Search",
@@ -313,8 +663,8 @@
    "tasa_base": 0.33088870064332254,
    "anios": [
     0.1122009751808839,
-    0.07166967202172403,
-    0.05505056459980118,
+    0.07166967202172425,
+    0.055050564599800955,
     0.05033994828681676,
     0.04383276069002928
    ],
@@ -330,16 +680,16 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 159.27707862380592,
-    "pvFlujos": 796423.1325032291,
+    "v": 150.66118775105735,
+    "pvFlujos": 691050.7871295144,
     "pvTerminal": 913724.5124302359,
     "valorTerminal": 2332152.6371609163,
-    "activosOperativos": 1710147.644933465,
-    "patrimonio": 1947958.6715691464,
+    "activosOperativos": 1604775.29955975,
+    "patrimonio": 1842586.3261954314,
     "ingresos": [
      445866,
      495892.6,
-     531433.0599999999,
+     531433.06,
      560688.75,
      588913.79268,
      614727.5100215999,
@@ -354,7 +704,7 @@
     "nopat": [
      null,
      132805.9969254816,
-     137987.75680764983,
+     137987.75680764986,
      143296.49884864653,
      148107.31956454678,
      152091.23688694034,
@@ -368,29 +718,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     30805.634046979252,
-     25358.143364826265,
+     30805.634046979354,
+     25358.143364826163,
      24464.80253098722,
      22374.722494235924,
      24321.730194255102,
-     21358.58953272536,
-     23227.111724220755,
-     25268.555649119575,
-     27502.23426983873,
-     28957.102462713134
+     33976.925764698346,
+     50886.40064722606,
+     70754.5360962049,
+     94020.07450168557,
+     117172.45180531126
     ],
     "flujo": [
      null,
-     102000.36287850235,
-     112629.61344282357,
+     102000.36287850224,
+     112629.6134428237,
      118831.69631765931,
      125732.59707031085,
      127769.50669268525,
-     138610.527585061,
-     145313.9747665666,
-     152605.24563286625,
-     160539.2242729267,
-     170169.6162007558
+     125992.19135308803,
+     117654.68584356131,
+     107119.26518578093,
+     94021.38404107984,
+     81954.26685815767
     ],
     "tasa": [
      null,
@@ -408,8 +758,8 @@
     "crecimiento": [
      null,
      0.1122009751808839,
-     0.07166967202172403,
-     0.05505056459980118,
+     0.07166967202172425,
+     0.055050564599800955,
      0.05033994828681676,
      0.04383276069002928,
      0.04564620855202343,
@@ -452,10 +802,10 @@
     "wacc0": 0.10181515825241352,
     "margenY1": 0.328201
    },
-   "valor_bruto": 159.27707862380592,
-   "valor_bruto_prop": 159.27707862380592,
-   "valor_beta_hoja": 159.27707862380592,
-   "valor_beta_prop": 159.27707862380592
+   "valor_bruto": 150.66118775105735,
+   "valor_bruto_prop": 150.66118775105735,
+   "valor_beta_hoja": 150.66118775105735,
+   "valor_beta_prop": 150.66118775105735
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -517,12 +867,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 128.74239545794893,
-    "pvFlujos": 703314.4621662757,
+    "v": 125.40682340704542,
+    "pvFlujos": 662520.4159837257,
     "pvTerminal": 633394.0076487585,
     "valorTerminal": 1616648.6563561002,
-    "activosOperativos": 1336708.469815034,
-    "patrimonio": 1574519.4964507155,
+    "activosOperativos": 1295914.423632484,
+    "patrimonio": 1533725.4502681654,
     "ingresos": [
      445866,
      480426,
@@ -560,11 +910,11 @@
      8771.77775851603,
      12787.601629539728,
      13149.822744668476,
-     10922.55287033647,
-     11231.944685577837,
-     11550.100321555385,
-     11877.26802192058,
-     12213.703062064871
+     16520.815336996933,
+     22839.226957175266,
+     29598.589558884727,
+     36821.54077857844,
+     44531.7241492188
     ],
     "flujo": [
      null,
@@ -573,11 +923,11 @@
      114250.61523535204,
      107997.6005687411,
      106249.3746653273,
-     112580.98455201094,
-     116512.65035251912,
-     120576.72209219953,
-     124777.54621038999,
-     129119.60914333379
+     106982.72208535047,
+     104905.36808092169,
+     102528.23285487018,
+     99833.27345373214,
+     96801.58805617987
     ],
     "tasa": [
      null,
@@ -639,10 +989,10 @@
     "wacc0": 0.10181515825241352,
     "margenY1": 0.328201
    },
-   "valor_bruto": 128.74239545794893,
-   "valor_bruto_prop": 128.74239545794893,
-   "valor_beta_hoja": 128.74239545794893,
-   "valor_beta_prop": 128.74239545794893
+   "valor_bruto": 125.40682340704542,
+   "valor_bruto_prop": 125.40682340704542,
+   "valor_beta_hoja": 125.40682340704542,
+   "valor_beta_prop": 125.40682340704542
   },
   {
    "nombre": "Optimista · Gemini y Cloud dominan la plataforma de IA",
@@ -674,6 +1024,7 @@
    },
    "id": "D",
    "tesis": "optimista",
+   "roic_terminal": 0.2837744000520741,
    "margen_reportado": 0.37,
    "s2c_reportado": 1.0,
    "cagr": 0.16081645443720016,
@@ -685,8 +1036,8 @@
    },
    "tasa_base": 0.05285696378791974,
    "anios": [
-    0.2064889451090688,
-    0.17825689621967356,
+    0.20648894510906834,
+    0.17825689621967378,
     0.15650983455054046,
     0.1414255956926065,
     0.12320105637047662
@@ -701,17 +1052,17 @@
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
-   "roic_terminal_usado": 0.293,
+   "roic_terminal_usado": 0.2837744000520741,
    "detalle": {
-    "v": 436.51342077157227,
-    "pvFlujos": 1130523.071350579,
-    "pvTerminal": 3970225.0380500695,
-    "valorTerminal": 10133438.105960542,
-    "activosOperativos": 5100748.109400648,
-    "patrimonio": 5338559.136036329,
+    "v": 430.7819826191956,
+    "pvFlujos": 1088865.6475780723,
+    "pvTerminal": 3941786.9732190096,
+    "valorTerminal": 10060853.966004493,
+    "activosOperativos": 5030652.620797081,
+    "patrimonio": 5268463.647432762,
     "ingresos": [
      445866,
-     537932.4,
+     537932.3999999999,
      633822.5599999999,
      733022.024,
      836690.1004000001,
@@ -726,7 +1077,7 @@
     "utilidad": null,
     "nopat": [
      null,
-     144064.7605157184,
+     144064.76051571837,
      179054.99236235593,
      212462.23637873455,
      248654.55877591853,
@@ -741,29 +1092,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     99578.17672272962,
+     99578.17672272974,
      103014.75935583032,
      107655.23837132672,
      107045.69074857737,
      106512.25339786195,
-     69387.53582344111,
-     64748.54281223653,
-     57847.715021969794,
-     48761.077058338014,
-     51340.53803472404
+     76906.31700583616,
+     79014.26785980347,
+     77278.61011897083,
+     70951.0844839883,
+     81008.26593457704
     ],
     "flujo": [
      null,
-     44486.58379298878,
+     44486.58379298863,
      76040.23300652561,
      104806.99800740783,
      141608.86802734114,
      179678.57024042058,
-     249905.60753019422,
-     286947.9419912438,
-     324553.7808599959,
-     361604.5267900371,
-     383216.58984511497
+     242386.82634779916,
+     272682.2169436769,
+     305122.8857629949,
+     339414.51936438686,
+     353548.861945262
     ],
     "tasa": [
      null,
@@ -780,8 +1131,8 @@
     ],
     "crecimiento": [
      null,
-     0.2064889451090688,
-     0.17825689621967356,
+     0.20648894510906834,
+     0.17825689621967378,
      0.15650983455054046,
      0.1414255956926065,
      0.12320105637047662,
@@ -806,7 +1157,7 @@
     ],
     "tasaTerminal": 0.08990000000000001,
     "gTerminal": 0.0529,
-    "roicTerminal": 0.293,
+    "roicTerminal": 0.2837744000520741,
     "caja": 242474,
     "deuda": 117123.97336431839,
     "minoritarios": 0,
@@ -825,35 +1176,35 @@
     "wacc0": 0.10181515825241352,
     "margenY1": 0.328201
    },
-   "valor_bruto": 436.51342077157227,
-   "valor_bruto_prop": 436.51342077157227,
-   "valor_beta_hoja": 436.51342077157227,
-   "valor_beta_prop": 436.51342077157227
+   "valor_bruto": 430.7819826191956,
+   "valor_bruto_prop": 430.7819826191956,
+   "valor_beta_hoja": 430.7819826191956,
+   "valor_beta_prop": 430.7819826191956
   }
  ],
- "valor_esperado_beta_hoja": 278.77827166287136,
- "valor_esperado_beta_prop": 278.77827166287136,
+ "valor_esperado_beta_hoja": 273.55485796118535,
+ "valor_esperado_beta_prop": 273.55485796118535,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.07,
    "ke": 0.10296005661154531,
    "wacc": 0.10181515825241352,
-   "dcf_base": 330.8623963347827
+   "dcf_base": 327.3053524713127
   },
   {
    "enfoque": "Bottom-up del sector (Software (Internet), reapalancada)",
    "beta": 1.6189859123630876,
    "ke": 0.12864441722073877,
    "wacc": 0.12695394337311997,
-   "dcf_base": 288.49792820667653
+   "dcf_base": 285.45264802269475
   },
   {
    "enfoque": "Propuesta (sector ajustado por riesgo propio)",
    "beta": 1.07,
    "ke": 0.10296005661154531,
    "wacc": 0.10181515825241352,
-   "dcf_base": 330.8623963347827
+   "dcf_base": 327.3053524713127
   }
  ],
  "sensibilidad": {
@@ -873,149 +1224,149 @@
   ],
   "v": [
    [
-    257.3675721920524,
-    272.3583624467695,
-    287.34915270148656,
-    302.3399429562036,
-    317.3307332109205
+    255.05161595757738,
+    269.6732993352584,
+    284.2949827129394,
+    298.9166660906204,
+    313.5383494683014
    ],
    [
-    283.6046810692401,
-    300.5434792673832,
-    317.4822774655265,
-    334.42107566366974,
-    351.35987386181296
+    280.91586706930184,
+    297.419942598204,
+    313.9240181271062,
+    330.4280936560085,
+    346.93216918491066
    ],
    [
-    312.7502901559164,
-    331.85868079761826,
-    350.9670714393202,
-    370.07546208102195,
-    389.18385272272377
+    309.6377643536448,
+    328.23620891857263,
+    346.8346534835006,
+    365.43309804842846,
+    384.0315426133564
    ],
    [
-    345.08919995844195,
-    366.61029884877934,
-    388.1313977391167,
-    409.65249662945405,
-    431.17359551979155
+    341.4963241572278,
+    362.4214939285251,
+    383.34666369982256,
+    404.27183347112003,
+    425.1970032424175
    ],
    [
-    380.9293990080998,
-    405.12959147471736,
-    429.3297839413349,
-    453.52997640795263,
-    477.73016887457027
+    376.79321422282857,
+    400.29947161988576,
+    423.80572901694296,
+    447.3119864140003,
+    470.81824381105747
    ]
   ],
-  "referencia_constante": 350.9670714393202,
+  "referencia_constante": 346.8346534835006,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.07,
    "margen": 0.3032015269787398,
-   "g": 0.14088098376075753,
-   "tasa_base": 0.08076662273493945
+   "g": 0.14480295204084304,
+   "tasa_base": 0.07527586714281972
   },
   {
    "beta": 1.07,
    "margen": 0.33820152697873984,
-   "g": 0.11943733855908001,
-   "tasa_base": 0.1218017956703095
+   "g": 0.123556858111596,
+   "tasa_base": 0.10787781958280547
   },
   {
    "beta": 1.07,
    "margen": 0.3732015269787398,
-   "g": 0.10070767257348867,
-   "tasa_base": 0.1851080667016083
+   "g": 0.104941413659008,
+   "tasa_base": 0.170798021832553
   },
   {
    "beta": 1.07,
    "margen": 0.3032015269787398,
-   "g": 0.14088098376075753,
-   "tasa_base": 0.08076662273493945
+   "g": 0.14480295204084304,
+   "tasa_base": 0.07527586714281972
   },
   {
    "beta": 1.07,
    "margen": 0.33820152697873984,
-   "g": 0.11943733855908001,
-   "tasa_base": 0.1218017956703095
+   "g": 0.123556858111596,
+   "tasa_base": 0.10787781958280547
   },
   {
    "beta": 1.07,
    "margen": 0.3732015269787398,
-   "g": 0.10070767257348867,
-   "tasa_base": 0.1851080667016083
+   "g": 0.104941413659008,
+   "tasa_base": 0.170798021832553
   }
  ],
  "ingresos_ltm": 445866,
  "sens_base": {
-  "base": 330.8623963347827,
+  "base": 327.3053524713127,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 312.6017821626203
+    "valor": 309.50529520847317
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 349.12301050694515
+    "valor": 345.10540973415226
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 299.86634779096653
+    "valor": 296.8082104235904
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 365.2690907762132
+    "valor": 361.1445889398491
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 450.93815371054086
+    "valor": 446.39832658961905
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 261.97669916829364
+    "valor": 259.0249740582261
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 303.9830577538399
+    "valor": 300.9418842917892
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 366.0721822488779
+    "valor": 361.87692666418167
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 315.10704412836446
+    "valor": 311.71938330601205
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 324.623671597327
+    "valor": 322.1531646997424
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 335.02154615975314
+    "valor": 330.74014431902623
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 216.0946121960543
+    "valor": 200.70709507869628
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 374.05531966006885
+ "motor_tecnico": 327.3053524713127
 }

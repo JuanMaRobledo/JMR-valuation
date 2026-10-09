@@ -223,7 +223,7 @@
   "texto": "El margen GAAP subió 7-8 puntos por año desde 2023. La hoja suponía 26% de objetivo en cinco años, más que el margen de sus mejores segmentos; tras la revisión del 30-sep-2026 supone 14% el próximo año y 21% de objetivo (margen GAAP de 13,4% en el 2T26). Las fuerzas en contra son los incentivos a conductores, la regulación laboral, el seguro y el costo de flotas autónomas propias. Las historias van de 10% (desintermediación) a 26%."
  },
  "reinversion": {
-  "texto": "Hasta ahora Uber casi no necesitó capital (capex de US$220-340 millones). Sin los US$10.162 millones de impuestos diferidos, vende 2,58 por dólar de capital. La hoja usa 2,2 en los años 1-5 y 2,0 después: algo menos por las flotas autónomas con Rivian, Lucid y Nuro. Delivery Hero no entra porque la Base crece de forma orgánica. Sin ventaja defendible: tiene efectos de red, pero gana por encima del costo de capital solo desde 2024; se revisará con tres años de evidencia. El ROIC después del año 10 es igual al costo de capital."
+  "texto": "La Base usa ventas/capital 2.2000× en años 1–5 y un ancla de 2.0000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 17.73% y el terminal de Base 8.99%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 17.7319%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
  },
  "prob_texto": "Base (45%) es la continuación: crecimiento de doble dígito bajo y margen hacia 22%. Conservadora (25%) es la presión de los robotaxis y la regulación sobre Movilidad. Disrupción (10%) es la desintermediación por Waymo y Tesla. Optimista (20%) es Uber como la red preferida de los vehículos autónomos. En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -327,5 +327,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo entre la Conservadora ({vB}) y el esperado. La evidencia en contra de la Base es que la oferta por Delivery Hero y las flotas autónomas cambian el perfil de capital justo cuando el margen mejora, y que Waymo ya opera su propia app en varias ciudades. Las acciones se fijan en {acciones} millones."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.2,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 17.7319%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+  "convergencia": true,
+  "g3": false
+ }
 }

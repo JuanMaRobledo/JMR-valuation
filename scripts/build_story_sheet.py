@@ -85,7 +85,9 @@ def block_fcff(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
     nopat = ["NOPAT", ""] + [
         f"=IF({c}{R['ebit']}>0;IF({c}{R['ebit']}<{p}{R['nol']};{c}{R['ebit']};{c}{R['ebit']}-({c}{R['ebit']}-{p}{R['nol']})*{c}{R['t']});{c}{R['ebit']})"
         for c, p in ((col(y), col(y - 1)) for y in range(1, 11))] + [f"=M{R['ebit']}*(1-M{R['t']})"]
-    s2c = ["Ventas/capital", ""] + [f"=$E${i}"] * 5 + [f"=$F${i}"] * 5
+    s2c = ["Ventas/capital", ""] + [f"=$E${i}"] * 5 + [
+        f'=IF({IS}!$B$78="Yes";1/((1-({y}-5)/5)/$F${i}+({y}-5)/5*{col(y)}{R["m"]}*(1-{col(y)}{R["t"]})/$G${i});$F${i})'
+        for y in range(6, 11)]
     reinv = ["Reinversión", ""] + [
         f"=IF(AND({IS}!$B$57=\"Yes\";{IS}!$B$58=0);{col(y)}{R['rev']}-{col(y - 1)}{R['rev']};{col(y + 1)}{R['rev']}-{col(y)}{R['rev']})/{col(y)}{R['s2c']}"
         for y in range(1, 11)] + [f"=M{R['nopat']}*M{R['g']}/$G${i}"]

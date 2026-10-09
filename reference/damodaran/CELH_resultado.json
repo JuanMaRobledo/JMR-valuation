@@ -1,6 +1,442 @@
 {
  "ticker": "CELH",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "CELH",
+  "empresa": "Celsius Holdings, Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Beverage (Soft)",
+  "historia": "En cinco a diez años Celsius es un portafolio de bebidas energéticas cuya marca más grande ya no es CELSIUS sino Alani Nu, distribuido en EE.UU. por PepsiCo, con cerca de una de cada cinco latas de la categoría. Crece algo menos que la categoría: Alani Nu sigue ganando consumidoras jóvenes pero se modera cuando termina de llenar la red de PepsiCo y enfrenta el escrutinio sobre la cafeína; CELSIUS deja de caer y crece poco, apoyada en el exterior; Rockstar declina despacio. El margen operativo sostenible es el normalizado de hoy, ~20%, nueve puntos por debajo del de Monster: Celsius no controla su distribución, financia promociones para tres marcas y paga litigios con cierta regularidad. Reinvierte poco en activos porque fabrica con terceros, pero compró su crecimiento reciente (Alani Nu por US$2.056 millones y Rockstar con la capitanía por US$936 millones en preferentes) y ese capital rinde apenas por encima de su costo. El riesgo es de marca, de moda y regulatorio, más que financiero.",
+  "filtro": [
+   [
+    "La categoría de bebidas energéticas en EE.UU. crece más que el consumo (≥5% nominal anual) en los próximos años",
+    "Sí",
+    "Sí, pero desacelera: +7,1% en 13 semanas y +5,0% en tiendas de conveniencia en 4 semanas al 25-jul-2026 ([Monster Beverage, datos NielsenIQ al 25-jul-2026 (8-K, anexo 99.2), 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-2.htm))",
+    "Probable en el rango de 4-7%, no en el +15% de las 52 semanas a abril de 2026"
+   ],
+   [
+    "Alani Nu crece más que la categoría tres años más",
+    "Sí",
+    "Sí: +55,7% al consumidor en el 2T26 y +74% en conveniencia en julio ([Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm); [Monster Beverage, datos NielsenIQ al 25-jul-2026 (8-K, anexo 99.2), 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-2.htm))",
+    "Probable al principio; la facturación crece menos (+21% en el 2T26) y el 4T26 enfrenta una base alta por el llenado de inventario de 2025"
+   ],
+   [
+    "La marca CELSIUS vuelve a crecer en 2027",
+    "Sí",
+    "Débil: −2% al consumidor en el 2T26 y −7,2% en conveniencia en julio; la gerencia admite que recortó demasiadas presentaciones ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html); [Monster Beverage, datos NielsenIQ al 25-jul-2026 (8-K, anexo 99.2), 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-2.htm))",
+    "Incierto: crecimiento bajo si ocurre"
+   ],
+   [
+    "El margen operativo llega a 25% o más",
+    "Sí",
+    "Poco: exige recuperar el margen bruto (48,1%) hacia el de Monster (55,9%) sin su escala ni su red ([Monster Beverage, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-1.htm))",
+    "Improbable salvo en la Optimista"
+   ]
+  ],
+  "tasas_base_nota": "Con ventas LTM de US$3.047 millones (~US$2.150 millones de 2015) Celsius está en el tramo de US$2.000-3.000 millones de The Base Rate Book: mediana real de crecimiento a 5 años de 5,1% y media de 6,2% (más ~2,5% de inflación para compararlas con cifras nominales). La Base ({cagrA} nominal) queda algo por debajo de la mitad de la distribución: el crecimiento orgánico de la marca original es negativo y el de Alani Nu se modera.",
+  "segmentos": {
+   "Celsius": 1425.4,
+   "Alani Nu": 1433.1,
+   "Rockstar": 188.7
+  },
+  "crecimiento": {
+   "texto": "Las ventas LTM (julio 2025-junio 2026) suman US$3.047,3 millones: CELSIUS ~US$1.425 millones, Alani Nu ~US$1.433 millones y Rockstar US$188,7 millones en diez meses (cálculo propio: 2025 + 1S26 − 1S25, [Celsius, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm) y [Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)). El +85,5% de 2025 fue casi todo comprado: Alani Nu aportó US$1.001,9 millones desde abril y Rockstar US$55,6 millones desde fines de agosto; la marca CELSIUS creció 7,5% en 2025, cayó ~4% en el 1S26 y 11,7% en el 2T26. Al consumidor el portafolio vendió +31,0% en el 2T26 (CELSIUS −2%, Alani Nu +55,7%, Rockstar −13%); la facturación crece menos por la poda de presentaciones, el inventario y el paso de Alani Nu a la red de PepsiCo, que sube las bonificaciones que se descuentan del ingreso ([Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)). Los datos de julio confirman la divergencia: en conveniencia CELSIUS −7,2% y Alani Nu +74,2%, con la categoría en +5,0% ([Monster Beverage, datos NielsenIQ al 25-jul-2026 (8-K, anexo 99.2), 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-2.htm)). El crecimiento orgánico del portafolio es, por lo tanto, el de Alani Nu menos el de CELSIUS: la Base lo proyecta por marca.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2024",
+     "2025",
+     "LTM jun-26 (cálculo propio)",
+     "Consumidor 2T26",
+     "Conveniencia jul-26"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "CELSIUS",
+      "1.355,6",
+      "1.457,7",
+      "~1.425,4",
+      "−2%",
+      "−7,2%"
+     ],
+     [
+      "Alani Nu",
+      "— (comprada en abr-25)",
+      "1.001,9 (abr-dic)",
+      "~1.433,1",
+      "+55,7%",
+      "+74,2%"
+     ],
+     [
+      "Rockstar",
+      "—",
+      "55,6 (sep-dic)",
+      "188,7",
+      "−13%",
+      "−12,5%"
+     ],
+     [
+      "Total",
+      "1.355,6",
+      "2.515,3",
+      "3.047,3",
+      "+31,0%",
+      "categoría +5,0%"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo GAAP LTM es 5,3% (EBIT de US$160,3 millones). Lo deprimen partidas de una vez por US$441,6 millones que este análisis excluye: terminación de distribuidores de Alani Nu (US$412,7 millones, reembolsados en su mayor parte por PepsiCo y registrados como ingreso diferido), compras e integración (US$28,1 millones) y el ajuste de inventario de las compras ([Celsius, comunicado del 4T25, 26-feb-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm); [Celsius, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm)). El acuerdo legal de US$24,6 millones del 1T26 NO se excluye: Celsius registró US$54,0 millones de litigios en 2024 y tiene abiertas una investigación del fiscal de Texas y demandas colectivas, así que el costo legal se trata como recurrente. Margen normalizado LTM: 19,8%; el del 2T26, 19,6%. El margen bruto bajó de 51,5% a 48,1% en un año por promociones, mezcla de canal y aluminio, y la gerencia lo espera en ~48% en el 3T26 ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html)). El comparable maduro es Monster: margen bruto 55,9% y operativo 29,2% en el 2T26, con ventas +20,2% ([Monster Beverage, comunicado del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-1.htm)). La brecha de ~8 puntos de margen bruto es en parte estructural (Celsius paga la distribución de PepsiCo y financia tres marcas), así que el objetivo de largo plazo es el normalizado de hoy, 20%, y no el de Monster."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 1.8000× en años 1–5 y un ancla de 1.6000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 15.89% y el terminal de Base 8.99%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 15.8912%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+   "tabla": {
+    "cols": [
+     "Compra",
+     "Precio pagado",
+     "Ventas LTM",
+     "Retorno sobre lo pagado (cálculo propio)"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "l"
+    ],
+    "rows": [
+     [
+      "Alani Nu (abr-2025)",
+      "US$2.055,6M (caja 1.322,4 + acciones 722,0 + contingente)",
+      "~1.433",
+      "~10% después de impuestos con margen ~20%: apenas sobre el costo de capital"
+     ],
+     [
+      "Rockstar y capitanía (ago-2025)",
+      "US$935,8M en preferentes (307,6 Rockstar + 598,8 pago implícito a PepsiCo)",
+      "188,7 (diez meses)",
+      "Bajo por sí solo; se justifica por la distribución de PepsiCo"
+     ]
+    ]
+   }
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La beta desapalancada de Beverage (Soft) es 0,58 corregida por caja (Damodaran, enero de 2026); reapalancada con la deuda de Celsius (D/E de mercado ~10%) da ~0,62. La regresión semanal contra el S&P 500 da 0,83 a dos años y 1,55 a cinco; Monster, 0,36 y 0,49 (cálculo propio, 30-sep-2026). Se usa la bottom-up (~0,62, tabla de EE.UU. porque Celsius vende 96% en Norteamérica). La categoría única, la dependencia de un distribuidor que concentra ~60% de las ventas, la moda y la regulación de la cafeína son riesgos propios y diversificables: están en las historias Conservadora y Disrupción, no en la tasa. La fabricación es tercerizada, así que el apalancamiento operativo no es mayor que el del sector. Hasta el 5-oct-2026 se usaba 1,0 (0,62 + 0,38 por esos riesgos), que los contaba dos veces."
+  },
+  "historias": [
+   {
+    "id": "A",
+    "tesis": "base",
+    "prob": 0.45,
+    "margen": 0.2,
+    "nombre": "Base · Alani Nu sostiene un portafolio que crece algo menos que la categoría",
+    "crec": {
+     "Celsius": [
+      -0.03,
+      0.02,
+      0.03,
+      0.03,
+      0.03
+     ],
+     "Alani Nu": [
+      0.12,
+      0.1,
+      0.08,
+      0.06,
+      0.05
+     ],
+     "Rockstar": [
+      0.27,
+      -0.08,
+      -0.06,
+      -0.05,
+      -0.04
+     ]
+    },
+    "tesis_que": "La categoría crece 4-7% nominal; CELSIUS cae ~3% en el año 1 (3T26 parecido al 2T26 y recuperación al cierre de 2026, como espera la gerencia, [Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html)) y después crece 2-3% con el exterior; Alani Nu factura +12% en el año 1 (por debajo del consumo, por el cambio de canal y la base alta del 4T25) y se modera a 5% en el año 5; Rockstar suma un año completo (+27% por anualización) y luego cae 4-8%. El margen pasa de 19,6% a 20%: la escala en gastos generales compensa promociones más altas. No hay compras nuevas.",
+    "tesis_contraste": "CELSIUS ≥ 0% al consumidor desde el 1T27, Alani Nu ≥ +15% al consumidor en 2027 y margen bruto ≥ 47%."
+   },
+   {
+    "id": "B",
+    "tesis": "conservadora",
+    "prob": 0.25,
+    "margen": 0.17,
+    "nombre": "Conservadora · CELSIUS sigue cediendo y las promociones se quedan",
+    "crec": {
+     "Celsius": [
+      -0.06,
+      -0.04,
+      -0.03,
+      -0.02,
+      -0.01
+     ],
+     "Alani Nu": [
+      0.08,
+      0.05,
+      0.04,
+      0.03,
+      0.03
+     ],
+     "Rockstar": [
+      0.22,
+      -0.12,
+      -0.1,
+      -0.08,
+      -0.06
+     ]
+    },
+    "tesis_que": "CELSIUS pierde participación tres años más frente a Monster, Red Bull y las marcas nuevas (C4, Ghost); Alani Nu madura antes, cuando termina de llenar la red de PepsiCo; para defender espacio la empresa mantiene las promociones y el margen operativo se queda en 17%.",
+    "tesis_contraste": "CELSIUS negativa al consumidor en 2027, participación del portafolio < 19% y margen bruto ≤ 46%."
+   },
+   {
+    "id": "C",
+    "tesis": "disrupción",
+    "prob": 0.15,
+    "margen": 0.12,
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "descripcion": "La regulación de la cafeína alcanza a Alani Nu y la moda pasa",
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion",
+    "crec": {
+     "Celsius": [
+      -0.1,
+      -0.08,
+      -0.06,
+      -0.04,
+      -0.03
+     ],
+     "Alani Nu": [
+      -0.05,
+      -0.15,
+      -0.1,
+      -0.06,
+      -0.04
+     ],
+     "Rockstar": [
+      0.18,
+      -0.15,
+      -0.12,
+      -0.1,
+      -0.08
+     ]
+    },
+    "tesis_que": "La investigación del fiscal de Texas ([14 News, investigación del fiscal de Texas, 4-jun-2026](https://www.14news.com/2026/06/04/state-opens-investigation-into-celsius-over-caffeine-levels-alani-nu-energy-drinks-marketed-teens/)) y las demandas por la seguridad de Alani Nu en adolescentes ([Robbins LLP vía GlobeNewswire, aviso de la demanda colectiva, 10-sep-2026](https://www.globenewswire.com/news-release/2026/09/10/3360012/32719/en/celh-class-action-notice-robbins-llp-reminds-investors-of-the-lead-plaintiff-deadline-in-the-celsius-holdings-inc-class-action-lawsuit.html)) terminan en restricciones de venta por edad o de etiquetado en varios estados; Alani Nu sigue el camino de Bang, la moda se desplaza y las ventas del portafolio caen cinco años. El margen baja a 12% porque el marketing y la estructura no se ajustan al mismo ritmo; el negocio se estabiliza sin recuperación y el ROIC después del año 10 es el costo de capital.",
+    "tesis_contraste": "Alani Nu negativa al consumidor dos trimestres seguidos o una restricción regulatoria por edad."
+   },
+   {
+    "id": "D",
+    "tesis": "optimista",
+    "prob": 0.15,
+    "margen": 0.235,
+    "nombre": "Optimista · Plataforma multimarca con PepsiCo y exterior",
+    "crec": {
+     "Celsius": [
+      0.02,
+      0.07,
+      0.07,
+      0.06,
+      0.05
+     ],
+     "Alani Nu": [
+      0.22,
+      0.15,
+      0.12,
+      0.09,
+      0.07
+     ],
+     "Rockstar": [
+      0.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "tesis_que": "La innovación de 2027 devuelve espacio en refrigeradores a CELSIUS, que vuelve a crecer con la categoría; Alani Nu sostiene doble dígito tres años y el exterior se acerca a la meta de más de 15% de las ventas en cinco años ([Yahoo Finance, resumen de la llamada del 2T26, 6-ago-2026](https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html)); el margen bruto recupera tres puntos y el operativo llega a 23,5%, aún por debajo de Monster.",
+    "tesis_contraste": "Portafolio ≥ 22% de participación, CELSIUS ≥ +5% al consumidor y margen bruto ≥ 50% en 2027."
+   }
+  ],
+  "prob_texto": "La Base pesa 45%: es la extrapolación prudente de lo que ya se ve (Alani Nu crece, CELSIUS cae poco al consumidor) y de la guía de la gerencia, sin suponer que CELSIUS recupera el ritmo de 2022-2024. La Conservadora pesa 25% porque es lo que hoy muestran la facturación de CELSIUS y los datos de julio. La Disrupción pesa 15%: la categoría ya vio marcas desplomarse (Bang, Rockstar) y hay una investigación estatal y demandas abiertas sobre Alani Nu, la marca que sostiene el crecimiento. La Optimista pesa 15% porque exige que se cumplan a la vez la recuperación de CELSIUS, el exterior y el margen bruto. Son juicio del analista, no frecuencias publicadas.",
+  "premortem": [
+   "Alani Nu fue una moda: el consumo pasa de +56% a negativo en 2027 cuando deja de ganar puntos de venta.",
+   "La marca CELSIUS no vuelve a crecer: la poda de presentaciones le quitó espacio que Monster, Red Bull, C4 y Ghost ocuparon, y su participación baja de 9,5% a 7%.",
+   "Texas u otros estados imponen límites de edad o etiquetas de advertencia a las bebidas con 200 mg de cafeína y Alani Nu pierde a su consumidora joven.",
+   "El aluminio y las promociones dejan el margen bruto en 45-46% y el operativo nunca vuelve a 20%.",
+   "PepsiCo prioriza marcas propias o renegocia la capitanía; la dependencia del distribuidor se vuelve un costo."
+  ],
+  "contra": "la facturación de CELSIUS lleva tres trimestres cayendo (−11,7% en el 2T26), los datos de julio la muestran en −7,2% en conveniencia ([Monster Beverage, datos NielsenIQ al 25-jul-2026 (8-K, anexo 99.2), 6-ago-2026](https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-2.htm)) y la categoría se desaceleró de +15,2% (52 semanas a abril) a +7,1% (13 semanas a julio); además el margen bruto bajó 3,4 puntos en un año y la gerencia anticipó más promociones.",
+  "indicadores": [
+   [
+    "Ventas al consumidor de CELSIUS (Circana/Nielsen)",
+    "−2% (2T26); −7,2% en conveniencia (jul-26)",
+    "≥ 0% desde el 1T27",
+    "≤ −8%"
+   ],
+   [
+    "Ventas al consumidor de Alani Nu",
+    "+55,7% (2T26); +74,2% en conveniencia (jul-26)",
+    "≥ +15%",
+    "≤ 0%"
+   ],
+   [
+    "Crecimiento de la categoría en EE.UU.",
+    "+7,1% (13 semanas al 25-jul-26)",
+    "≥ +7%",
+    "≤ +3%"
+   ],
+   [
+    "Participación del portafolio en EE.UU.",
+    "20,1% (2T26)",
+    "≥ 21%",
+    "≤ 18%"
+   ],
+   [
+    "Margen bruto",
+    "48,1% (2T26)",
+    "≥ 50%",
+    "≤ 46%"
+   ],
+   [
+    "EBITDA ajustado / ventas",
+    "22,5% (2T26)",
+    "≥ 24%",
+    "≤ 19%"
+   ],
+   [
+    "Regulación de la cafeína (Texas, otros estados)",
+    "Investigación abierta (jun-2026)",
+    "Cierre sin restricciones",
+    "Restricción por edad o etiquetado obligatorio"
+   ],
+   [
+    "Acciones en circulación",
+    "253,0 M (31-jul-2026); recompras de US$125,5M en el 1S26",
+    "Bajan",
+    "Emisión para compras"
+   ]
+  ],
+  "margenes_inverso": [
+   0.17,
+   0.2,
+   0.235
+  ],
+  "precio_lectura": "El precio pide algo más que la Base: con su margen, el DCF inverso exige crecer en los años 1-5 más que el {cagrA} anual de la Base. ¿Qué sabe el mercado que yo no? Puede estar pagando por la red de PepsiCo como una ventaja duradera (lo que justificaría un ROIC terminal mayor que el costo de capital), por una recuperación de CELSIUS más rápida o por la opción de comprar marcas con éxito. Los directores y el CEO compraron acciones en septiembre a US$27-28 ([Form 4 del CEO, 10-sep-2026](https://www.sec.gov/Archives/edgar/data/1341766/000162828026061406/)): es una señal de confianza, no una evidencia sobre el margen ni sobre la participación, que siguen sin mostrar esa recuperación.",
+  "frase": "Portafolio de tres marcas distribuido por PepsiCo: Alani Nu crece, CELSIUS cede y el margen se queda en ~20%",
+  "confianza": "Media: el margen normalizado está documentado; la duración del crecimiento de Alani Nu, su riesgo regulatorio y la recuperación de CELSIUS no",
+  "cambiaria": "Las ventas al consumidor de CELSIUS y de Alani Nu, el margen bruto y el resultado de la investigación de Texas",
+  "revision": "Resultados del 3T26 (noviembre de 2026)",
+  "fuentes": [
+   [
+    "Celsius, comunicado del 2T26 (6-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000047/ex9912q2026.htm"
+   ],
+   [
+    "Celsius, 10-Q del 2T26 (6-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm"
+   ],
+   [
+    "Celsius, comunicado del 4T25 (26-feb-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000017/ex9914q20251.htm"
+   ],
+   [
+    "Celsius, 10-K 2025 (2-mar-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000024/celh-20251231.htm"
+   ],
+   [
+    "Celsius, 8-K de la segunda enmienda del crédito (15-jul-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000119312526304791/d64754d8k.htm"
+   ],
+   [
+    "Celsius, 8-K de cambios en la gerencia (10-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000119312526342430/d135466dex991.htm"
+   ],
+   [
+    "Celsius, Form 4 del CEO (10-sep-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1341766/000162828026061406/"
+   ],
+   [
+    "Monster Beverage, comunicado del 2T26 (6-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-1.htm"
+   ],
+   [
+    "Monster Beverage, datos NielsenIQ al 25-jul-2026 (6-ago-2026)",
+    "https://www.sec.gov/Archives/edgar/data/865752/000110465926092046/tm2622396d1_ex99-2.htm"
+   ],
+   [
+    "Yahoo Finance, resumen de la llamada del 2T26 (6-ago-2026)",
+    "https://uk.finance.yahoo.com/news/celsius-holdings-inc-celh-q2-190423226.html"
+   ],
+   [
+    "14 News, investigación del fiscal de Texas (4-jun-2026)",
+    "https://www.14news.com/2026/06/04/state-opens-investigation-into-celsius-over-caffeine-levels-alani-nu-energy-drinks-marketed-teens/"
+   ],
+   [
+    "Robbins LLP vía GlobeNewswire, demanda colectiva (10-sep-2026)",
+    "https://www.globenewswire.com/news-release/2026/09/10/3360012/32719/en/celh-class-action-notice-robbins-llp-reminds-investors-of-the-lead-plaintiff-deadline-in-the-celsius-holdings-inc-class-action-lawsuit.html"
+   ],
+   [
+    "Damodaran, ERP implícita de octubre de 2026 (con la tasa y los precios del 30-sep)",
+    "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+   ],
+   [
+    "Damodaran, betas por industria (enero de 2026)",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ],
+   [
+    "Mauboussin y Callahan, The Base Rate Book (2016)",
+    "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 17.354,
+   "ajuste_ebit": 2.808,
+   "margen_pp": 0.0009214714665441538,
+   "capital_ventas": 0.005694877432481212,
+   "cierre": "2025-12-31",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: Alani Nu pone el ritmo; CELSIUS decide el nivel.",
+    "La Base crece {g1A} el primer año y {cagrA} compuesto en cinco años. El primer año incluye ~US$51 millones de Rockstar por anualización (solo tuvo diez meses en el LTM), una caída de 3% de CELSIUS (la gerencia anticipó un 3T26 parecido al 2T26) y +12% de Alani Nu, por debajo de su consumo porque el cambio de canal sube las bonificaciones y el 4T25 tuvo llenado de inventario. Después la categoría, que se desaceleró a ~5-7%, pone el techo. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento. La alternativa de 10% anual supone que CELSIUS vuelve a ganar participación, algo que los datos de julio no muestran. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que CELSIUS siga negativa al consumidor en 2027 (hacia la Conservadora, {cagrB}) o que vuelva a ganar participación (hacia la Optimista, {cagrD})."
+   ],
+   [
+    "Margen: el normalizado de hoy, con los litigios como costo.",
+    "La Base parte de {margenY1} el primer año (el normalizado del 2T26) y llega a {mA} en {conv} años ({mrepA} antes del ajuste de arrendamientos, +{arr_pp} pp). Es el normalizado LTM (19,8%) con un poco de escala: no supone que el margen bruto vuelva a 51%. A diferencia del análisis anterior, el acuerdo legal de 2026 no se excluye: los litigios se repitieron en 2024 y 2026 y hay procesos abiertos. Monster (29,2%) no es el ancla porque Celsius no controla su distribución y sostiene tres marcas. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone promociones altas para siempre; la Disrupción ({mC}), pérdida de escala; la Optimista ({mD}), recuperación del margen bruto."
+   ],
+   [
+    "Reinversión: liviana cuando crece sola; cara cuando compra.",
+    "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10. Con el margen objetivo y un impuesto de 25%, el capital nuevo rinde ~27% y ~24%: por debajo del ROIC de la industria (29%) y por encima del ROIC actual (~15%), que está deprimido por lo pagado por Alani Nu y la capitanía. La intensidad orgánica (capex ≈ depreciación) permitiría un ventas/capital más alto; se usa uno más prudente porque Celsius ya mostró que compra crecimiento. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+   ],
+   [
+    "Descuento y largo plazo: beta del sector y sin ventaja duradera.",
+    "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de Damodaran de {mes_erp} ponderada por regiones, beta {beta}, costo de la deuda 6,5% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es el costo de capital ({roicT}): las marcas son jóvenes, la categoría tiene barreras bajas y la distribución es un contrato con PepsiCo, no un activo propio. Por eso el crecimiento posterior no suma valor y el terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}; con un ROIC terminal igual al de la industria el valor subiría, pero eso exigiría una ventaja que hoy no está probada."
+   ],
+   [
+    "Acciones y preferentes: el derecho de PepsiCo va por su valor de liquidación.",
+    "Se usan {acciones} millones de acciones (253,0 millones en circulación al 31-jul-2026, portada del 10-Q, más 2,1 millones de RSU y PSU sin consolidar); las 2,3 millones de opciones a US$6,28 se restan por su valor. Las preferentes de PepsiCo se restan por su valor de liquidación, US$1.135 millones (Serie A US$550 millones y Serie B US$585 millones), no por el contable de US$1.760 millones: no pueden convertirse antes de ago-2031 (conversión automática, con un requisito de participación de mercado) o ago-2032 (a opción de Celsius), y en ambos casos solo si la acción supera US$25 (Serie A) o US$51,75 (Serie B) ([Celsius, 10-Q del 2T26, 6-ago-2026](https://www.sec.gov/Archives/edgar/data/1341766/000134176626000050/celh-20260630.htm)). Si en 2031-2032 la acción siguiera por encima de US$25, la Serie A se convertiría en 22,0 millones de acciones (~US$602 millones al precio de corte frente a US$550 millones de liquidación): restaría ~US$0,20 más por acción. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}. El 1-oct-2026 se liberó un tercio de las 22,5 millones de acciones entregadas a los vendedores de Alani Nu: no cambia el valor, pero sí la oferta en el mercado."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. El esperado queda por debajo de la Base porque las historias malas pesan 40% y en ellas el margen cae más de lo que sube en la Optimista. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.2,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 15.8912%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -28,12 +464,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0,
-  "salesToCapital": 1.8
+  "salesToCapital": 1.8,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 24.235735326677425,
- "precio": 27.35,
- "dcf_base": 24.235735326677425,
+ "dcf_sin_exceso": 22.701794746027964,
+ "precio": 27.5205,
+ "dcf_base": 22.701794746027964,
  "g_ref": 0.04803938444767404,
  "m_base": 0.201,
  "s2c": 1.8,
@@ -147,12 +584,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 24.235735326677425,
-    "pvFlujos": 3436.35455606924,
+    "v": 22.701794746027964,
+    "pvFlujos": 3044.9711508571118,
     "pvTerminal": 4013.5054391828285,
     "valorTerminal": 8538.084430273053,
-    "activosOperativos": 7449.859995252069,
-    "patrimonio": 6183.7236328664185,
+    "activosOperativos": 7058.47659003994,
+    "patrimonio": 5792.340227654289,
     "ingresos": [
      3047.3,
      3227.4649122801266,
@@ -185,29 +622,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     93.88532537921895,
-     94.62890200260365,
+     93.88532537921897,
+     94.62890200260367,
      82.01663249918208,
-     76.70898179305924,
+     76.70898179305925,
      86.29250713898172,
-     108.87202088176991,
-     121.82533608851656,
-     136.1080302504763,
-     151.91265755497625,
-     159.94883713963475
+     148.54734933990053,
+     208.9092365882775,
+     279.18648408731417,
+     360.5770646255793,
+     428.9720451718537
     ],
     "flujo": [
      null,
      411.548589743498,
-     442.6123819301243,
+     442.61238193012423,
      484.972349759629,
      516.6689607613952,
      532.1728765104,
-     526.6373738693762,
-     533.0711920857465,
-     540.6943764110133,
-     549.5166554648994,
-     569.0603662809632
+     486.96204541124564,
+     445.98729158598553,
+     397.61592257417544,
+     340.85224839429634,
+     300.0371582487442
     ],
     "tasa": [
      null,
@@ -269,10 +706,10 @@
     "wacc0": 0.0735079083717482,
     "margenY1": 0.196
    },
-   "valor_bruto": 24.235735326677425,
-   "valor_bruto_prop": 24.209316953529285,
-   "valor_beta_hoja": 24.235735326677425,
-   "valor_beta_prop": 24.209316953529285
+   "valor_bruto": 22.701794746027964,
+   "valor_bruto_prop": 22.67698196890784,
+   "valor_beta_hoja": 22.701794746027964,
+   "valor_beta_prop": 22.67698196890784
   },
   {
    "id": "B",
@@ -315,8 +752,8 @@
    },
    "tasa_base": 0.8672387616150352,
    "anios": [
-    0.023181281176162027,
-    -0.0012294801718371051,
+    0.023181281176161805,
+    -0.001229480171836994,
     0.0019775677408422343,
     0.0035780231371431714,
     0.009559326798123102
@@ -333,15 +770,15 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 16.526825375943908,
-    "pvFlujos": 2826.7732493322274,
+    "v": 15.684014884835996,
+    "pvFlujos": 2611.7309953365343,
     "pvTerminal": 2656.1660809001355,
     "valorTerminal": 5650.564227009076,
-    "activosOperativos": 5482.939330232362,
-    "patrimonio": 4216.802967846712,
+    "activosOperativos": 5267.89707623667,
+    "patrimonio": 4001.7607138510193,
     "ingresos": [
      3047.3,
-     3117.9403181281186,
+     3117.940318128118,
      3114.1068723300086,
      3120.2652296222636,
      3131.4296108078756,
@@ -371,29 +808,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -2.1296921100611144,
-     3.421309606808336,
-     6.202433992006667,
-     16.6301994416843,
+     -2.129692110060862,
+     3.4213096068083364,
+     6.202433992006668,
+     16.630199441684304,
      32.01313325146733,
-     54.110369082622185,
-     73.47387193166725,
-     94.63193056091882,
-     118.18301332056507,
-     124.43489472522288
+     69.26921268005461,
+     113.76465875280995,
+     170.77907440101055,
+     242.16166317485394,
+     283.8967115668913
     ],
     "flujo": [
      null,
-     490.411617690197,
+     490.41161769019675,
      459.30041213751497,
      444.92973593945874,
      423.5667746658499,
      399.72250701499536,
-     380.10281374944896,
-     366.8808126861699,
-     355.64957533687857,
-     346.0278311953993,
-     358.0285149130295
+     364.9439701520165,
+     326.5900258650272,
+     279.5024314967868,
+     222.04918134111043,
+     198.56669807136103
     ],
     "tasa": [
      null,
@@ -410,8 +847,8 @@
     ],
     "crecimiento": [
      null,
-     0.023181281176162027,
-     -0.0012294801718371051,
+     0.023181281176161805,
+     -0.001229480171836994,
      0.0019775677408422343,
      0.0035780231371431714,
      0.009559326798123102,
@@ -455,10 +892,10 @@
     "wacc0": 0.0735079083717482,
     "margenY1": 0.196
    },
-   "valor_bruto": 16.526825375943908,
-   "valor_bruto_prop": 16.50858833995506,
-   "valor_beta_hoja": 16.526825375943908,
-   "valor_beta_prop": 16.50858833995506
+   "valor_bruto": 15.684014884835996,
+   "valor_bruto_prop": 15.666664938227285,
+   "valor_beta_hoja": 15.684014884835996,
+   "valor_beta_prop": 15.666664938227285
   },
   {
    "id": "C",
@@ -505,8 +942,8 @@
    "tasa_base": 0.9759727451333129,
    "anios": [
     -0.059145773168810756,
-    -0.11867767410273766,
-    -0.08281415011614535,
+    -0.11867767410273755,
+    -0.08281415011614546,
     -0.053300395054937555,
     -0.037878508268338384
    ],
@@ -522,16 +959,16 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 7.307746779508825,
-    "pvFlujos": 2203.531353735091,
+    "v": 7.338262064477485,
+    "pvFlujos": 2211.317298179559,
     "pvTerminal": 927.1692916954573,
     "valorTerminal": 1972.4028816226223,
-    "activosOperativos": 3130.7006454305483,
-    "patrimonio": 1864.5642830448974,
+    "activosOperativos": 3138.4865898750168,
+    "patrimonio": 1872.3502274893658,
     "ingresos": [
      3047.3,
      2867.0650854226833,
-     2526.8084695835523,
+     2526.808469583553,
      2317.5529736687126,
      2194.026484611425,
      2110.920034273118,
@@ -546,7 +983,7 @@
     "nopat": [
      null,
      448.9938606375339,
-     335.0772974250694,
+     335.07729742506945,
      279.5232007791886,
      238.30156380215377,
      203.94918979731807,
@@ -560,27 +997,27 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -189.03145324396164,
-     -116.25305328602204,
-     -68.62582725404864,
+     -189.0314532439614,
+     -116.25305328602231,
+     -68.62582725404866,
      -46.17025018794847,
      -35.53711198756231,
-     -29.075825606084607,
-     -18.943344177138073,
-     -9.328162964760338,
+     -33.13738275817353,
+     -24.07586621983485,
+     -13.001188648518758,
      0,
      0
     ],
     "flujo": [
      null,
-     638.0253138814955,
-     451.33035071109146,
+     638.0253138814953,
+     451.33035071109174,
      348.14902803323724,
      284.47181399010225,
      239.48630178488037,
-     224.41908069593254,
-     207.4764399358568,
-     192.6700625861616,
+     228.48063784802144,
+     212.60896197855357,
+     196.34308826992003,
      179.6359875735633,
      177.31901905787376
     ],
@@ -600,8 +1037,8 @@
     "crecimiento": [
      null,
      -0.059145773168810756,
-     -0.11867767410273766,
-     -0.08281415011614535,
+     -0.11867767410273755,
+     -0.08281415011614546,
      -0.053300395054937555,
      -0.037878508268338384,
      -0.03030280661467071,
@@ -644,10 +1081,10 @@
     "wacc0": 0.0735079083717482,
     "margenY1": 0.196
    },
-   "valor_bruto": 7.307746779508825,
-   "valor_bruto_prop": 7.299287469255572,
-   "valor_beta_hoja": 7.307746779508825,
-   "valor_beta_prop": 7.299287469255572
+   "valor_bruto": 7.338262064477485,
+   "valor_bruto_prop": 7.329773136408774,
+   "valor_beta_hoja": 7.338262064477485,
+   "valor_beta_prop": 7.329773136408774
   },
   {
    "id": "D",
@@ -692,7 +1129,7 @@
    "anios": [
     0.1313993174061434,
     0.10558964497041412,
-    0.09186997326388546,
+    0.09186997326388524,
     0.07269614430735216,
     0.05824896091667209
    ],
@@ -708,25 +1145,25 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0,
    "detalle": {
-    "v": 36.12183277822363,
-    "pvFlujos": 4466.393769173694,
-    "pvTerminal": 6016.192104742939,
-    "valorTerminal": 12798.476772338921,
-    "activosOperativos": 10482.585873916632,
-    "patrimonio": 9216.44951153098,
+    "v": 33.48582093837047,
+    "pvFlujos": 3793.8179842470045,
+    "pvTerminal": 6016.192104742937,
+    "valorTerminal": 12798.476772338918,
+    "activosOperativos": 9810.01008898994,
+    "patrimonio": 8543.873726604288,
     "ingresos": [
      3047.3,
      3447.713139931741,
      3811.7559463369653,
-     4161.941863215398,
-     4464.4989895025155,
-     4724.55141665457,
-     4994.697339296791,
-     5274.946693060695,
-     5565.27756660309,
-     5865.6344403152325,
-     6175.926502207908,
-     6502.633014174706
+     4161.9418632153975,
+     4464.498989502514,
+     4724.551416654568,
+     4994.697339296789,
+     5274.946693060693,
+     5565.277566603088,
+     5865.63444031523,
+     6175.926502207905,
+     6502.633014174703
     ],
     "utilidad": null,
     "nopat": [
@@ -734,41 +1171,41 @@
      539.9256685658704,
      645.5700498573732,
      731.4294578431106,
-     813.082612430812,
-     890.583874666957,
-     929.9588281187225,
-     969.9424009614381,
-     1010.4605365381638,
-     1051.4333564437977,
-     1092.7752510525875
+     813.0826124308117,
+     890.5838746669565,
+     929.9588281187223,
+     969.9424009614377,
+     1010.4605365381633,
+     1051.4333564437973,
+     1092.775251052587
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     202.24600355845797,
-     194.5477315991295,
-     168.08729238173177,
+     202.246003558458,
+     194.547731599129,
+     168.08729238173126,
      144.47357064003023,
-     150.08106813456732,
-     175.1558461024399,
-     181.45679596399702,
-     187.7230460700889,
-     193.9325386829222,
-     204.19156997924858
+     150.08106813456735,
+     256.2079028283664,
+     346.40567539164164,
+     439.055926991496,
+     533.7437896576242,
+     643.0234792066939
     ],
     "flujo": [
      null,
-     337.67966500741244,
-     451.0223182582437,
-     563.3421654613788,
-     668.6090417907817,
-     740.5028065323896,
-     754.8029820162826,
-     788.4856049974411,
-     822.7374904680748,
-     857.5008177608755,
-     888.5836810733389
+     337.6796650074124,
+     451.0223182582442,
+     563.3421654613794,
+     668.6090417907815,
+     740.5028065323892,
+     673.7509252903559,
+     623.5367255697961,
+     571.4046095466673,
+     517.689566786173,
+     449.75177184589313
     ],
     "tasa": [
      null,
@@ -787,7 +1224,7 @@
      null,
      0.1313993174061434,
      0.10558964497041412,
-     0.09186997326388546,
+     0.09186997326388524,
      0.07269614430735216,
      0.05824896091667209,
      0.05717916873333767,
@@ -830,28 +1267,28 @@
     "wacc0": 0.0735079083717482,
     "margenY1": 0.196
    },
-   "valor_bruto": 36.12183277822363,
-   "valor_bruto_prop": 36.083097893041774,
-   "valor_beta_hoja": 36.12183277822363,
-   "valor_beta_prop": 36.083097893041774
+   "valor_bruto": 33.48582093837047,
+   "valor_bruto_prop": 33.449835501553636,
+   "valor_beta_hoja": 33.48582093837047,
+   "valor_beta_prop": 33.449835501553636
   }
  ],
- "valor_esperado_beta_hoja": 21.552224174650686,
- "valor_esperado_beta_prop": 21.528697518421545,
+ "valor_esperado_beta_hoja": 20.260423807348776,
+ "valor_esperado_beta_prop": 20.23824941625971,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 0.6221497284914832,
    "ke": 0.07618590662647641,
    "wacc": 0.0735079083717482,
-   "dcf_base": 24.235735326677425
+   "dcf_base": 22.701794746027964
   },
   {
    "enfoque": "Bottom-up del sector (Beverage (Soft), reapalancada)",
    "beta": 0.6270528133198884,
    "ke": 0.07636941996782716,
    "wacc": 0.07367350911357937,
-   "dcf_base": 24.209316953529285
+   "dcf_base": 22.67698196890784
   }
  ],
  "sensibilidad": {
@@ -871,149 +1308,149 @@
   ],
   "v": [
    [
-    15.313435069601784,
-    17.532244193154874,
-    19.751053316707956,
-    21.96986244026105,
-    24.188671563814143
+    14.559951552736678,
+    16.605973022882644,
+    18.6519944930286,
+    20.698015963174566,
+    22.744037433320525
    ],
    [
-    16.941162216966948,
-    19.451072289463905,
-    21.960982361960866,
-    24.47089243445782,
-    26.980802506954777
+    16.024923177141236,
+    18.324953026341404,
+    20.624982875541573,
+    22.92501272474174,
+    25.22504257394192
    ],
    [
-    18.73015608175902,
-    21.565008648096825,
-    24.399861214434623,
-    27.23471378077242,
-    30.069566347110218
+    17.623757948356953,
+    20.205411525883473,
+    22.787065103409986,
+    25.3687186809365,
+    27.950372258463002
    ],
    [
-    20.696024877258644,
-    23.893049489253734,
-    27.090074101248813,
-    30.28709871324388,
-    33.48412332523896
+    19.368392928657396,
+    22.261840846617297,
+    25.155288764577183,
+    28.04873668253706,
+    30.942184600496955
    ],
    [
-    22.85565154414759,
-    26.455748709819385,
-    30.055845875491176,
-    33.65594304116295,
-    37.256040206834754
+    21.271650844508052,
+    24.509813741954062,
+    27.747976639400058,
+    30.986139536846064,
+    34.224302434292085
    ]
   ],
-  "referencia_constante": 24.399861214434623,
+  "referencia_constante": 22.787065103409986,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 0.6221497284914832,
    "margen": 0.17092147146654416,
-   "g": 0.10888091242393172,
-   "tasa_base": 0.32472069115924723
+   "g": 0.12731797557662394,
+   "tasa_base": 0.23243685861610253
   },
   {
    "beta": 0.6221497284914832,
    "margen": 0.20092147146654415,
-   "g": 0.06996125469206749,
-   "tasa_base": 0.5391471950646095
+   "g": 0.0864487078478553,
+   "tasa_base": 0.44540595177853853
   },
   {
    "beta": 0.6221497284914832,
    "margen": 0.23592147146654413,
-   "g": 0.0349617184935439,
-   "tasa_base": 0.7624442360111899
+   "g": 0.04965714704086388,
+   "tasa_base": 0.6686874018792883
   },
   {
    "beta": 0.6270528133198884,
    "margen": 0.17092147146654416,
-   "g": 0.10910789647581332,
-   "tasa_base": 0.3234995169601243
+   "g": 0.1275631060021668,
+   "tasa_base": 0.23184854559479967
   },
   {
    "beta": 0.6270528133198884,
    "margen": 0.20092147146654415,
-   "g": 0.07017223887139906,
-   "tasa_base": 0.537801116000474
+   "g": 0.08667521993953786,
+   "tasa_base": 0.4441873167252864
   },
   {
    "beta": 0.6270528133198884,
    "margen": 0.23592147146654413,
-   "g": 0.03515993439895848,
-   "tasa_base": 0.7611796185346449
+   "g": 0.04986887300156473,
+   "tasa_base": 0.667336590250017
   }
  ],
  "ingresos_ltm": 3047.3,
  "sens_base": {
-  "base": 24.235735326677425,
+  "base": 22.701794746027964,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 21.441919329971494
+    "valor": 20.14902901994742
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 27.029551323383362
+    "valor": 25.25456047210852
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 21.829758721180145
+    "valor": 20.562461007636145
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 26.889318823924846
+    "valor": 25.044800736387483
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 28.600448372588065
+    "valor": 26.60882934653363
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 20.791123421844524
+    "valor": 19.598752960449243
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 24.018107926491272
+    "valor": 22.62591397541951
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 24.456441135860278
+    "valor": 22.778172897773185
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 23.08165269207374
+    "valor": 21.620756900979014
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 23.523079369612457
+    "valor": 22.211055832193892
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 24.71083929805407
+    "valor": 23.028954021917347
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 24.235735326677425
+    "valor": 22.701794746027964
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 25.139841799436955
+ "motor_tecnico": 22.701794746027964
 }

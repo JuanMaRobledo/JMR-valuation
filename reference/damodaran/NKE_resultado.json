@@ -1,8 +1,470 @@
 {
  "ticker": "NKE",
  "fecha": "2026-10-01",
+ "spec": {
+  "ticker": "NKE",
+  "empresa": "NIKE, Inc.",
+  "fecha": "2026-10-01",
+  "industria_damodaran": "Shoe",
+  "historia": "En cinco a diez años Nike sigue siendo la marca deportiva más grande del mundo, con ventas algo mayores que las de hoy y un margen operativo de dos dígitos bajos, pero ya no la empresa que crecía 6-8% al año con márgenes de 13-15%. La reestructuración de 2024-2027 (vuelta a los mayoristas, limpieza de franquicias clásicas, «Sport Offense» por deporte y el programa Pace de ahorro) devuelve el crecimiento a un dígito bajo-medio desde FY2028, liderado por Norteamérica y por el rendimiento deportivo (running, fútbol, básquet). Gran China y Converse siguen siendo el lastre: competencia local, marcas nuevas (On, Hoka, Anta) y menos poder de precio. El margen se recupera por ahorros de costos y menos descuentos, pero no vuelve al de la era de venta directa porque los mayoristas cobran su parte y la competencia es más intensa. Reinvierte poco capital (diseña y comercializa; fabrica con terceros) y devuelve caja a los accionistas. El riesgo es de marca y de ejecución, no financiero.",
+  "filtro": [
+   [
+    "Nike vuelve a crecer desde FY2028",
+    "Sí",
+    "Sí: Norteamérica ya crece (+2% en el 1T FY27, mayoristas +9%) y el rendimiento deportivo gana tracción ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm))",
+    "Probable; China y Converse todavía caen"
+   ],
+   [
+    "El margen operativo vuelve a ~11%",
+    "Sí",
+    "Sí: fue 12-16% en FY2017-FY2024 salvo la pandemia; Pace promete US$2.500M de ahorros brutos a FY2031",
+    "Probable en el caso central, más lento de lo que promete la gerencia"
+   ],
+   [
+    "Nike recupera los márgenes de 14-15% de FY2021-FY2022",
+    "Sí",
+    "Poco: con más mayoristas, aranceles y competidores que crecen al doble",
+    "Baja"
+   ],
+   [
+    "Gran China vuelve a crecer en dos años",
+    "Sí",
+    "Incierto: −22% en el 1T FY27 (−26% sin efecto cambiario) y la gerencia la está reposicionando",
+    "Baja-media"
+   ]
+  ],
+  "tasas_base_nota": "Nike está en el tramo de ventas de más de US$25.000 millones de dólares de 2015 (mediana de crecimiento real a cinco años 2,0%). En ese grupo pocas empresas crecen rápido; la Base ({cagrA} nominal compuesto en cinco años, con el primer año en caída) está en la parte baja de la distribución, coherente con la guía de la gerencia y con una marca madura.",
+  "segmentos": {
+   "Norteamérica": 20618,
+   "EMEA y APLA": 18633,
+   "Gran China": 5515,
+   "Converse y otros": 1125
+  },
+  "crecimiento": {
+   "texto": "Las ventas de los últimos doce meses (septiembre 2025-agosto 2026) suman US$45.891 millones (cálculo propio: FY2026 menos 1T FY26 más 1T FY27, [NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm) y [NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)). Vienen de US$51.362 millones en FY2024: −10% en FY2025 y plano en FY2026. En el 1T FY27 las ventas cayeron 4% (−5% sin efecto cambiario): Norteamérica +2% con mayoristas +9%, EMEA −5%, Gran China −22%, APLA −2% y Converse −28%; NIKE Direct −8% (digital −13%). En las historias EMEA y APLA se proyectan juntas (US$18.633 millones LTM). Para FY2027 la gerencia espera una caída de un dígito alto, porque está retirando producto de NIKE Sportswear, Jordan y Gran China para limpiar el mercado ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)).",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "FY2025",
+     "FY2026",
+     "LTM ago-26 (cálculo propio)",
+     "1T FY27 vs 1T FY26"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Norteamérica",
+      "19.572",
+      "20.511",
+      "20.618",
+      "+2%"
+     ],
+     [
+      "EMEA",
+      "12.257",
+      "12.572",
+      "12.417",
+      "−5%"
+     ],
+     [
+      "Gran China",
+      "6.586",
+      "5.847",
+      "5.515",
+      "−22%"
+     ],
+     [
+      "APLA",
+      "6.251",
+      "6.243",
+      "6.216",
+      "−2%"
+     ],
+     [
+      "Converse y otros",
+      "1.643",
+      "1.225",
+      "1.125",
+      "−28% (Converse)"
+     ],
+     [
+      "Total",
+      "46.309",
+      "46.398",
+      "45.891",
+      "−4%"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo GAAP de los últimos doce meses es 8,2% (US$3.758 millones), pero incluye un beneficio de una vez de US$986 millones por la devolución de los aranceles IEEPA que la Corte Suprema declaró ilegales (reconocido en el 4T FY26) y US$385 millones de indemnizaciones por despidos ([NIKE, 10-K FY2026, 15-jul-2026](https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm)). Sin ambos, el margen normalizado es 6,9%. La guía de FY2027 (BPA ajustado US$1,15-1,35 con impuestos de ~25%) implica un margen operativo de ~6% sobre ventas ~8% menores. Entre FY2017 y FY2024 Nike ganó 12-16% (salvo 8,3% en la pandemia); Deckers ganó 23% y Lululemon 20% en su último ejercicio fiscal, con marcas más chicas y sin la carga de los mayoristas. El margen bruto del 1T FY27 subió 60 puntos básicos a 42,8% por menores costos de logística ([NIKE, comunicado del 1T FY2027, 1-oct-2026](https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm)). El 1-oct-2026 Nike amplió el programa Pace: cargos antes de impuestos de ~US$1.000 millones, sobre todo indemnizaciones, ~US$300 millones en FY2027 y el resto hasta FY2031, además de los ~US$300 millones de FY2026 ([NIKE, 8-K del 1-oct-2026, punto 2.05](https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/nke-20261001.htm)). Son costos de reestructuración que no entran en el margen normalizado de la Base, pero sí salen de la caja: después de impuestos y a valor presente equivalen a ~US$0,4-0,5 por acción, dentro del rango de las historias."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 2.6000× en años 1–5 y un ancla de 2.6000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 14.66% y el terminal de Base 12.10%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.6559%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+   "tabla": {
+    "cols": [
+     "Concepto",
+     "FY2025",
+     "FY2026",
+     "LTM ago-26"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Capex (US$M)",
+      "430",
+      "684",
+      "~700"
+     ],
+     [
+      "Depreciación y amortización (US$M)",
+      "775",
+      "747",
+      "~747"
+     ],
+     [
+      "Inventarios (US$M)",
+      "7.489",
+      "7.501",
+      "7.846"
+     ],
+     [
+      "ROIC normalizado (con arrendamientos, cálculo propio)",
+      "~20%",
+      "~16%",
+      "~15%"
+     ]
+    ]
+   }
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usa la beta desapalancada del sector Shoe global (0,89, corregida por caja; Damodaran, enero de 2026; tabla global porque Nike vende 56% fuera de Norteamérica) reapalancada con la deuda y los arrendamientos de Nike: 1,01. La regresión contra el S&P 500 da 0,98 a dos años y 1,04 a cinco años, así que las tres miradas coinciden. El riesgo de Nike está en el margen y en la marca, no en la beta."
+  },
+  "historias": [
+   {
+    "id": "A",
+    "tesis": "base",
+    "nombre": "Base · Reestructuración que devuelve a Nike a crecer poco con margen de 11%",
+    "prob": 0.45,
+    "margen": 0.11,
+    "crec": {
+     "Norteamérica": [
+      -0.02,
+      0.04,
+      0.045,
+      0.04,
+      0.035
+     ],
+     "EMEA y APLA": [
+      -0.07,
+      0.023,
+      0.038,
+      0.038,
+      0.033
+     ],
+     "Gran China": [
+      -0.2,
+      -0.03,
+      0.03,
+      0.04,
+      0.04
+     ],
+     "Converse y otros": [
+      -0.2,
+      -0.05,
+      0.0,
+      0.01,
+      0.01
+     ]
+    },
+    "tesis_que": "Se cumple la guía de FY2027 (caída de un dígito alto mientras se limpia el mercado) y desde FY2028 Nike crece 3-4%: Norteamérica con los mayoristas y el rendimiento deportivo, EMEA y APLA con la economía, Gran China se estabiliza en dos años y Converse deja de caer. El margen operativo sube de ~6% a 11% en seis años con los ahorros de Pace (US$2.500 millones brutos, buena parte reinvertidos en marketing) y menos descuentos, sin volver a los márgenes de la era de venta directa.",
+    "tesis_contraste": "Ventas de FY2028 ≥ FY2027, margen bruto ≥ 43% y Norteamérica creciendo."
+   },
+   {
+    "id": "B",
+    "tesis": "conservadora",
+    "nombre": "Conservadora · Recuperación a medias, la marca pierde participación",
+    "prob": 0.25,
+    "margen": 0.085,
+    "roic_terminal": "costo_capital",
+    "crec": {
+     "Norteamérica": [
+      -0.04,
+      0.01,
+      0.025,
+      0.025,
+      0.025
+     ],
+     "EMEA y APLA": [
+      -0.09,
+      -0.007,
+      0.017,
+      0.022,
+      0.022
+     ],
+     "Gran China": [
+      -0.25,
+      -0.08,
+      -0.02,
+      0.0,
+      0.01
+     ],
+     "Converse y otros": [
+      -0.25,
+      -0.1,
+      -0.05,
+      -0.02,
+      0.0
+     ]
+    },
+    "tesis_que": "On, Hoka, Adidas y las marcas chinas siguen ganando participación; Nike vuelve a crecer solo con la inflación desde FY2029 y Gran China no se recupera. Los ahorros de Pace se van en marketing y precios, y el margen se queda en 8,5%. La ventaja de marca se erosiona: después del año 10 Nike gana su costo de capital.",
+    "tesis_contraste": "Ventas de FY2028 por debajo de FY2027 y margen bruto ≤ 42%."
+   },
+   {
+    "id": "C",
+    "tesis": "disrupción",
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "descripcion": "Nike pierde relevancia como Adidas en 2015-2016, pero sin recuperación",
+    "prob": 0.1,
+    "margen": 0.06,
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion",
+    "crec": {
+     "Norteamérica": [
+      -0.06,
+      -0.03,
+      -0.01,
+      0.0,
+      0.01
+     ],
+     "EMEA y APLA": [
+      -0.113,
+      -0.047,
+      -0.017,
+      0.0,
+      0.0
+     ],
+     "Gran China": [
+      -0.3,
+      -0.15,
+      -0.08,
+      -0.04,
+      -0.02
+     ],
+     "Converse y otros": [
+      -0.3,
+      -0.15,
+      -0.1,
+      -0.05,
+      -0.03
+     ]
+    },
+    "tesis_que": "La pérdida de atletas (Mbappé se fue a On en septiembre de 2026, [Bloomberg Línea, Mbappé cambia Nike por On, sep-2026](https://www.bloomberglinea.com/mercados/mbappe-cambia-nike-por-on-acciones-precios-objetivo-y-la-apuesta-por-el-futbol/)), la salida del índice S&P 100 y la competencia de marcas más ágiles se vuelven una pérdida estructural de relevancia: las ventas caen tres años más, Gran China se achica a la mitad del pico y el margen se queda en 6% porque los gastos de marketing no se pueden recortar sin perder más terreno.",
+    "tesis_contraste": "Norteamérica vuelve a caer dos trimestres seguidos o margen bruto ≤ 40%."
+   },
+   {
+    "id": "D",
+    "tesis": "optimista",
+    "nombre": "Optimista · Vuelve la Nike de márgenes históricos",
+    "prob": 0.2,
+    "margen": 0.135,
+    "crec": {
+     "Norteamérica": [
+      0.0,
+      0.06,
+      0.06,
+      0.05,
+      0.045
+     ],
+     "EMEA y APLA": [
+      -0.043,
+      0.05,
+      0.053,
+      0.048,
+      0.043
+     ],
+     "Gran China": [
+      -0.15,
+      0.03,
+      0.06,
+      0.06,
+      0.05
+     ],
+     "Converse y otros": [
+      -0.15,
+      0.0,
+      0.03,
+      0.03,
+      0.03
+     ]
+    },
+    "tesis_que": "La «Sport Offense» funciona como en 2017-2021: la innovación en running y básquet recupera participación, los mayoristas vuelven a pedir, los Juegos Olímpicos de Los Ángeles 2028 impulsan la marca y Gran China vuelve a crecer desde FY2029. Pace entrega sus ahorros y el margen vuelve a 13,5%, el promedio de FY2017-FY2024.",
+    "tesis_contraste": "Crecimiento de un dígito medio en FY2028 con margen bruto ≥ 45%."
+   }
+  ],
+  "prob_texto": "La Base pesa 45%: es lo que dice la guía de FY2027, más una recuperación modesta, en línea con lo que Nike ya muestra en Norteamérica. La Conservadora pesa 25% porque la competencia es real y Gran China y Converse siguen en caída. La Disrupción pesa 10%: la marca tiene más de 50 años, escala y presupuesto de marketing, pero perdió atletas y participación. La Optimista pesa 20% porque Nike ya salió de crisis parecidas (1998, 2016-2017) con la innovación. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas.",
+  "premortem": [
+   "La limpieza de NIKE Sportswear y Jordan dura dos años más y las ventas caen también en FY2028.",
+   "Gran China se reduce a la mitad del pico por Anta, Li-Ning y el nacionalismo de consumo; Nike sigue invirtiendo sin retorno.",
+   "On, Hoka y Adidas siguen quitando participación en running, la categoría que Nike eligió para volver.",
+   "Los ahorros de Pace se van en marketing y descuentos, y el margen no supera 8%.",
+   "Nuevos aranceles (sección 232 o 301) reemplazan a los IEEPA y quitan 1-2 puntos de margen bruto."
+  ],
+  "contra": "la guía de FY2027 vuelve a mostrar caída de ventas de un dígito alto, Gran China cae 22% y la gerencia anunció más despidos: la recuperación lleva dos años de retraso y la marca perdió atletas emblemáticos ([Tradingpedia, 18-sep-2026](https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/)).",
+  "indicadores": [
+   [
+    "Crecimiento de Norteamérica",
+    "+2% (1T FY27)",
+    "≥ +4%",
+    "≤ −3%"
+   ],
+   [
+    "Ventas de Gran China (sin efecto cambiario)",
+    "−26% (1T FY27)",
+    "≥ 0%",
+    "≤ −15% en FY2028"
+   ],
+   [
+    "Margen bruto",
+    "42,8% (1T FY27)",
+    "≥ 44%",
+    "≤ 41%"
+   ],
+   [
+    "Gasto operativo (overhead)",
+    "US$2.658M (−6%)",
+    "Baja con Pace",
+    "Sube"
+   ],
+   [
+    "NIKE Direct digital",
+    "−13% (1T FY27)",
+    "≥ 0%",
+    "≤ −10% en FY2028"
+   ],
+   [
+    "Inventarios / ventas",
+    "17% (ago-26)",
+    "≤ 16%",
+    "≥ 19%"
+   ],
+   [
+    "Pedidos de mayoristas (futuros)",
+    "Norteamérica mayoristas +9%",
+    "Crecen",
+    "Caen"
+   ],
+   [
+    "Converse",
+    "−28% (1T FY27)",
+    "≥ −5%",
+    "≤ −20% en FY2028"
+   ]
+  ],
+  "margenes_inverso": [
+   0.085,
+   0.11,
+   0.135
+  ],
+  "precio_lectura": "El precio de US$35,15 queda cerca de lo que vale la Base: el mercado ya descuenta una reestructuración larga y un margen que no vuelve a los niveles históricos. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la pérdida de atletas y de participación en running; o puede estar descontando que Pace no entregue sus ahorros. Ninguna de esas lecturas es extrema.",
+  "frase": "La marca deportiva más grande del mundo en medio de una reestructuración que devuelve el crecimiento lento con margen de dos dígitos bajos",
+  "confianza": "Media: el margen normalizado y la caja están bien documentados; la duración de la caída y la recuperación de China no",
+  "cambiaria": "El crecimiento de Norteamérica, el margen bruto, Gran China y la ejecución de Pace",
+  "revision": "Resultados del 2T FY2027 (diciembre de 2026)",
+  "fuentes": [
+   [
+    "NIKE, comunicado del 1T FY2027 (1-oct-2026)",
+    "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000184/q1fy27exhibit991er.htm"
+   ],
+   [
+    "NIKE, 10-K FY2026 (15-jul-2026)",
+    "https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm"
+   ],
+   [
+    "NIKE, comunicado del 3T FY2026",
+    "https://www.sec.gov/Archives/edgar/data/320187/000032018726000026/q3fy26exhibit991er.htm"
+   ],
+   [
+    "NIKE, 8-K de la junta anual (8-sep-2026)",
+    "https://www.sec.gov/Archives/edgar/data/320187/000032018726000143/nke-20260908.htm"
+   ],
+   [
+    "Bloomberg Línea, Mbappé cambia Nike por On (sep-2026)",
+    "https://www.bloomberglinea.com/mercados/mbappe-cambia-nike-por-on-acciones-precios-objetivo-y-la-apuesta-por-el-futbol/"
+   ],
+   [
+    "Tradingpedia, recorte de precio objetivo y salida de Mbappé (18-sep-2026)",
+    "https://www.tradingpedia.com/2026/09/18/nke-slips-as-analyst-cuts-target-mbappe-leaves-for-on/"
+   ],
+   [
+    "Damodaran, ERP implícita de octubre de 2026 (con la tasa y los precios del 30-sep)",
+    "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+   ],
+   [
+    "Damodaran, Betas by Sector (global), enero de 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ],
+   [
+    "Mauboussin y Callahan, The Base Rate Book (2016)",
+    "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 2868.58,
+   "ajuste_ebit": 283.2,
+   "margen_pp": 0.006171144668889324,
+   "capital_ventas": 0.06250855287529145,
+   "cierre": "2026-05-31",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: un año más de caída y después un dígito bajo-medio.",
+    "La Base cae {g1A} el primer año, en línea con la guía de FY2027 (caída de un dígito alto: Nike retira producto de NIKE Sportswear, Jordan y Gran China), y crece {cagrA} compuesto en cinco años. Desde el año 2 el crecimiento es de 3-4,5%: Norteamérica con los mayoristas (+9% en el 1T FY27), EMEA y APLA con la economía, Gran China se estabiliza y Converse deja de caer. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que las ventas de FY2028 sigan cayendo (hacia la Conservadora, {cagrB}) o que Gran China vuelva a crecer pronto (hacia la Optimista, {cagrD})."
+   ],
+   [
+    "Margen: de ~6% a 11%, sin volver a la era de venta directa.",
+    "La Base parte de {margenY1} el primer año (la guía de FY2027) y llega a {mA} en {conv} años ({mrepA} antes del ajuste de arrendamientos, +{arr_pp} pp). Supone que Pace entrega buena parte de sus US$2.500 millones de ahorros brutos y que bajan los descuentos, pero que el margen no vuelve al 12-16% de FY2017-FY2024: más ventas por mayoristas, aranceles y competencia más intensa. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone que los ahorros se reinvierten en precio; la Disrupción ({mC}), pérdida de escala; la Optimista ({mD}), la vuelta al promedio histórico."
+   ],
+   [
+    "Reinversión: liviana, con la rotación propia de Nike.",
+    "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10: el de Nike hoy (2,61, con arrendamientos) y el del sector Shoe en EE.UU. (2,62). Con el margen objetivo el capital nuevo rinde ~22,6%, lo que rendiría el capital actual a ese margen; antes se usaba 2,1 (promedio global), más conservador que la rotación que Nike sostuvo durante años. Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+   ],
+   [
+    "Descuento y largo plazo: beta de la industria y una ventaja que se desvanece.",
+    "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de Damodaran de {mes_erp}, beta {beta}, deuda con calificación A2/A+ al 6,0% antes de impuestos) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene más de 50 años y gana sobre su costo de capital, pero la ventaja se desvanece (ROIC de 47% en FY2022 a ~15% hoy), así que se usa el punto medio entre el costo de capital terminal y el ROIC actual. El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   ],
+   [
+    "Acciones, opciones y deuda.",
+    "Se usan {acciones} millones de acciones (1.483,5 millones en circulación al 8-jul-2026 más 12,5 millones de RSU sin consolidar); las 76,8 millones de opciones a US$96,44 se restan por su valor (casi nulo con la acción a US$35). La deuda es US$7.893 millones a valor nominal más ~US$2.869 millones de arrendamientos; la caja e inversiones suman US$8.368 millones al 31-ago-2026. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.121,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.6559%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+   "convergencia": true,
+   "g3": true
+  }
+ },
  "mos": 0.35,
- "tg_hoja": 0.0529,
+ "tg_hoja": 0.03,
  "segmentos_ltm": {
   "Norteamérica": 20618.0,
   "EMEA y APLA": 18633.0,
@@ -29,12 +491,13 @@
   "convergenceYear": 6,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.121,
-  "salesToCapital": 2.6
+  "salesToCapital": 2.6,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 27.895677879064856,
- "precio": 35.15,
- "dcf_base": 34.279119667880785,
+ "dcf_sin_exceso": 25.94819147210186,
+ "precio": 34.205,
+ "dcf_base": 28.389736021053437,
  "g_ref": 0.014073037481356642,
  "m_base": 0.116,
  "s2c": 2.6,
@@ -145,23 +608,23 @@
     0.03422197858188736
    ],
    "anios6a10": [
-    0.03795758286550989,
-    0.04169318714913242,
-    0.04542879143275495,
-    0.049164395716377485,
-    0.052900000000000016
+    0.03337758286550989,
+    0.03253318714913242,
+    0.03168879143275495,
+    0.03084439571637748,
+    0.030000000000000006
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.121,
    "detalle": {
-    "v": 34.279119667880785,
-    "pvFlujos": 18311.76948153307,
-    "pvTerminal": 35536.71165863287,
-    "valorTerminal": 85391.37808108746,
-    "activosOperativos": 53848.48114016595,
-    "patrimonio": 51281.563023149654,
+    "v": 28.389736021053437,
+    "pvFlujos": 18178.70153521177,
+    "pvTerminal": 26859.261669300467,
+    "valorTerminal": 64540.28133537022,
+    "activosOperativos": 45037.96320451224,
+    "patrimonio": 42471.04508749594,
     "ingresos": [
      45891,
      42846.33,
@@ -169,12 +632,12 @@
      45623.404117059996,
      47385.88851101228,
      49007.527372719844,
-     50867.7346540036,
-     52988.57263478538,
-     55395.779449330425,
-     58119.27947119447,
-     61193.78935522066,
-     64430.940812111825
+     50643.280178636545,
+     52290.867490534074,
+     53947.90188427944,
+     55611.892318066464,
+     57280.24908760846,
+     58998.65656023672
     ],
     "utilidad": null,
     "nopat": [
@@ -184,11 +647,11 @@
      3014.0727476226666,
      3463.224782403518,
      3925.8443004708924,
-     4432.022221101695,
-     4616.807353015201,
-     4826.543331340537,
-     5063.837417624807,
-     5331.714417017159
+     4412.465871104611,
+     4556.017449078417,
+     4700.3921357862555,
+     4845.3728908445955,
+     4990.734077569934
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
@@ -198,12 +661,12 @@
      672.1725565615382,
      677.8786130585705,
      623.7072545029094,
-     715.4643389552914,
-     815.7069156852986,
-     925.8487748250179,
-     1047.5000084092496,
-     1182.5038015485327,
-     1245.0582526504486
+     629.1356945833468,
+     744.2252776162103,
+     859.6642439989372,
+     974.9113632749614,
+     1089.4008334762239,
+     1237.372085347919
     ],
     "flujo": [
      null,
@@ -211,12 +674,12 @@
      1918.374291579007,
      2336.194134564096,
      2839.5175279006085,
-     3210.3799615156013,
-     3616.3153054163968,
-     3690.9585781901833,
-     3779.0433229312875,
-     3881.3336160762747,
-     4086.65616436671
+     3296.7086058875457,
+     3668.240593488401,
+     3696.3532050794793,
+     3725.480772511294,
+     3755.9720573683717,
+     3753.361992222015
     ],
     "tasa": [
      null,
@@ -238,11 +701,11 @@
      0.039831761945499755,
      0.038631146186069776,
      0.03422197858188736,
-     0.03795758286550989,
-     0.04169318714913242,
-     0.04542879143275495,
-     0.049164395716377485,
-     0.052900000000000016
+     0.03337758286550989,
+     0.03253318714913242,
+     0.03168879143275495,
+     0.03084439571637748,
+     0.030000000000000006
     ],
     "margen": [
      null,
@@ -258,7 +721,7 @@
      0.11617114466888932
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.121,
     "caja": 8368,
     "deuda": 10756.54963513377,
@@ -278,10 +741,10 @@
     "wacc0": 0.09236553995657287,
     "margenY1": 0.06
    },
-   "valor_bruto": 34.279119667880785,
-   "valor_bruto_prop": 33.295724857839424,
-   "valor_beta_hoja": 34.279119667880785,
-   "valor_beta_prop": 33.295724857839424
+   "valor_bruto": 28.389736021053437,
+   "valor_bruto_prop": 27.585497024039498,
+   "valor_beta_hoja": 28.389736021053437,
+   "valor_beta_prop": 27.585497024039498
   },
   {
    "id": "B",
@@ -340,23 +803,23 @@
     0.02206300379464743
    ],
    "anios6a10": [
-    0.028230403035717944,
-    0.03439780227678846,
-    0.04056520151785897,
-    0.04673260075892949,
-    0.0529
+    0.023650403035717943,
+    0.025237802276788457,
+    0.02682520151785897,
+    0.028412600758929485,
+    0.03
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 19.76254742140578,
-    "pvFlujos": 14290.778715826416,
-    "pvTerminal": 17840.910343612926,
-    "valorTerminal": 42870.03071912378,
-    "activosOperativos": 32131.689059439348,
-    "patrimonio": 29564.77094242305,
+    "v": 18.69442852595325,
+    "pvFlujos": 14200.469205337884,
+    "pvTerminal": 16333.31398650447,
+    "valorTerminal": 39247.418369389256,
+    "activosOperativos": 30533.783191842358,
+    "patrimonio": 27966.865074826062,
     "ingresos": [
      45891,
      41729.31,
@@ -364,12 +827,12 @@
      42065.214902429994,
      42939.78020114346,
      43887.16073466262,
-     45126.11297029548,
-     46678.35208176772,
-     48571.868840486204,
-     50841.758595123734,
-     53531.28762480578,
-     56363.092740158005
+     44925.109774130724,
+     46058.92081187326,
+     47294.460644346866,
+     48638.2192727436,
+     50097.365850925904,
+     51600.28682645368
     ],
     "utilidad": null,
     "nopat": [
@@ -379,11 +842,11 @@
      2384.642507828686,
      2601.531159401532,
      2829.930380789173,
-     3085.649530469589,
-     3191.7890929141467,
-     3321.264660670714,
-     3476.47599607258,
-     3660.3815762648196
+     3071.9052618622545,
+     3149.4333994741605,
+     3233.9175850821302,
+     3325.8015943143505,
+     3425.5756421437814
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
@@ -393,12 +856,12 @@
      258.4381970884603,
      336.3712687359489,
      364.37712827659897,
-     476.520090628023,
-     597.0150428739389,
-     728.2756764301862,
-     873.0345210144346,
-     1034.4342421854021,
-     1089.1558135970095
+     399.2111690261943,
+     521.341325372782,
+     661.0275160259914,
+     819.9735376033617,
+     1000.1089884526956,
+     1143.128690370561
     ],
     "flujo": [
      null,
@@ -406,12 +869,12 @@
      1926.8281498953131,
      2048.2712390927372,
      2237.154031124933,
-     2353.41029016115,
-     2488.63448759565,
-     2463.5134164839606,
-     2448.2301396562793,
-     2442.041753887178,
-     2571.22576266781
+     2430.7192117629784,
+     2550.5639364894723,
+     2488.4058834481693,
+     2413.9440474787684,
+     2325.692605861655,
+     2282.4469517732205
     ],
     "tasa": [
      null,
@@ -433,11 +896,11 @@
      0.0162330548344507,
      0.020790700837782783,
      0.02206300379464743,
-     0.028230403035717944,
-     0.03439780227678846,
-     0.04056520151785897,
-     0.04673260075892949,
-     0.0529
+     0.023650403035717943,
+     0.025237802276788457,
+     0.02682520151785897,
+     0.028412600758929485,
+     0.03
     ],
     "margen": [
      null,
@@ -453,7 +916,7 @@
      0.09117114466888933
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.08990000000000001,
     "caja": 8368,
     "deuda": 10756.54963513377,
@@ -473,10 +936,10 @@
     "wacc0": 0.09236553995657287,
     "margenY1": 0.06
    },
-   "valor_bruto": 19.76254742140578,
-   "valor_bruto_prop": 19.214220267935413,
-   "valor_beta_hoja": 19.76254742140578,
-   "valor_beta_prop": 19.214220267935413
+   "valor_bruto": 18.69442852595325,
+   "valor_bruto_prop": 18.17894279261181,
+   "valor_beta_hoja": 18.69442852595325,
+   "valor_beta_prop": 18.17894279261181
   },
   {
    "id": "C",
@@ -530,85 +993,85 @@
    },
    "tasa_base": 0.8794382052637583,
    "anios": [
-    -0.11624521147937494,
-    -0.05068051388004424,
+    -0.11624521147937517,
+    -0.05068051388004402,
     -0.020394497476771467,
-    -0.004000404548998748,
-    0.0029544190526618053
+    -0.00400040454899897,
+    0.0029544190526620273
    ],
    "anios6a10": [
-    0.0029544190526618053,
-    0.0029544190526618053,
-    0.0029544190526618053,
-    0.0029544190526618053,
-    0.0029544190526618053
+    0.0029544190526620273,
+    0.0029544190526620273,
+    0.0029544190526620273,
+    0.0029544190526620273,
+    0.0029544190526620273
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0029544190526618053,
+   "terminal_growth": 0.0029544190526620273,
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 12.562027225248155,
-    "pvFlujos": 12549.549063579507,
-    "pvTerminal": 8810.16178240803,
-    "valorTerminal": 21169.990711124046,
-    "activosOperativos": 21359.710845987538,
-    "patrimonio": 18792.79272897124,
+    "v": 12.544286874886085,
+    "pvFlujos": 12523.009499437834,
+    "pvTerminal": 8810.161782408044,
+    "valorTerminal": 21169.99071112408,
+    "activosOperativos": 21333.17128184588,
+    "patrimonio": 18766.253164829584,
     "ingresos": [
      45891,
-     40556.391,
+     40556.390999999996,
      38500.972263,
      37715.764281329,
-     37564.885966329006,
-     37675.86838113899,
-     37787.17868450981,
-     37898.81784516166,
-     38010.786834676765,
-     38123.0866275078,
-     38235.71820098638,
-     38348.68253533159
+     37564.885966329,
+     37675.868381139,
+     37787.178684509825,
+     37898.817845161684,
+     38010.7868346768,
+     38123.086627507844,
+     38235.71820098644,
+     38348.68253533165
     ],
     "utilidad": null,
     "nopat": [
      null,
-     1825.037595,
+     1825.0375949999998,
      1791.942519266967,
      1784.4904317889836,
-     1806.3290413690784,
-     1840.728598592531,
-     1875.3156505214022,
-     1880.8561188090573,
-     1886.4129559617822,
-     1891.9862103400637,
-     1897.5759304472658
+     1806.329041369078,
+     1840.7285985925312,
+     1875.3156505214029,
+     1880.8561188090587,
+     1886.412955961784,
+     1891.986210340066,
+     1897.5759304472688
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -790.545668076923,
+     -790.5456680769203,
      -302.00306987346266,
-     -58.03012115384403,
-     42.68554415768729,
-     42.811655142622136,
-     42.93813871225071,
-     43.06499596734704,
-     43.19222801193693,
-     43.319835953300824,
-     43.447820902001695
+     -58.03012115384682,
+     42.68554415769288,
+     42.811655142624936,
+     46.67635810585545,
+     50.56352328775579,
+     54.47324968051749,
+     58.405636665212064,
+     62.3607840131962
     ],
     "flujo": [
      null,
-     2615.583263076923,
+     2615.58326307692,
      2093.9455891404295,
-     1842.5205529428276,
-     1763.6434972113911,
-     1797.9169434499088,
-     1832.3775118091514,
-     1837.7911228417104,
-     1843.2207279498452,
-     1848.666374386763,
-     1854.1281095452641
+     1842.5205529428304,
+     1763.643497211385,
+     1797.9169434499063,
+     1828.6392924155475,
+     1830.292595521303,
+     1831.9397062812666,
+     1833.580573674854,
+     1835.2151464340725
     ],
     "tasa": [
      null,
@@ -625,16 +1088,16 @@
     ],
     "crecimiento": [
      null,
-     -0.11624521147937494,
-     -0.05068051388004424,
+     -0.11624521147937517,
+     -0.05068051388004402,
      -0.020394497476771467,
-     -0.004000404548998748,
-     0.0029544190526618053,
-     0.0029544190526618053,
-     0.0029544190526618053,
-     0.0029544190526618053,
-     0.0029544190526618053,
-     0.0029544190526618053
+     -0.00400040454899897,
+     0.0029544190526620273,
+     0.0029544190526620273,
+     0.0029544190526620273,
+     0.0029544190526620273,
+     0.0029544190526620273,
+     0.0029544190526620273
     ],
     "margen": [
      null,
@@ -650,7 +1113,7 @@
      0.06617114466888932
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0029544190526618053,
+    "gTerminal": 0.0029544190526620273,
     "roicTerminal": 0.08990000000000001,
     "caja": 8368,
     "deuda": 10756.54963513377,
@@ -670,10 +1133,10 @@
     "wacc0": 0.09236553995657287,
     "margenY1": 0.06
    },
-   "valor_bruto": 12.562027225248155,
-   "valor_bruto_prop": 12.235105111006009,
-   "valor_beta_hoja": 12.562027225248155,
-   "valor_beta_prop": 12.235105111006009
+   "valor_bruto": 12.544286874886085,
+   "valor_bruto_prop": 12.217885457442383,
+   "valor_beta_hoja": 12.544286874886085,
+   "valor_beta_prop": 12.217885457442383
   },
   {
    "id": "D",
@@ -725,84 +1188,84 @@
    "tasa_base": 0.5985495780367679,
    "anios": [
     -0.03916277701510096,
-    0.05146534269764702,
+    0.05146534269764724,
     0.056554347089028845,
     0.049837719833952576,
     0.044428006943193044
    ],
    "anios6a10": [
-    0.046122405554554435,
-    0.04781680416591583,
-    0.04951120277727722,
-    0.05120560138863861,
-    0.0529
+    0.041542405554554435,
+    0.038656804165915826,
+    0.03577120277727722,
+    0.03288560138863861,
+    0.03
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.121,
    "detalle": {
-    "v": 46.074756233032645,
-    "pvFlujos": 23231.997395465747,
-    "pvTerminal": 48262.75604616738,
-    "valorTerminal": 115970.86664523746,
-    "activosOperativos": 71494.75344163313,
-    "patrimonio": 68927.83532461684,
+    "v": 37.73188667796382,
+    "pvFlujos": 22529.692352291677,
+    "pvTerminal": 36484.128234958494,
+    "valorTerminal": 87667.9310679381,
+    "activosOperativos": 59013.82058725018,
+    "patrimonio": 56446.90247023388,
     "ingresos": [
      45891,
      44093.781,
-     46363.08255,
-     48985.11641264999,
-     51426.4229204572,
-     53711.19639503085,
-     56188.48597798278,
-     58875.23980837128,
-     61790.22374508438,
-     64954.22931188997,
-     68390.30804248895,
-     72008.15533793661
+     46363.08255000001,
+     48985.11641265,
+     51426.422920457204,
+     53711.19639503086,
+     55942.488698493544,
+     58105.046528665174,
+     60183.53393042518,
+     62162.70563742076,
+     64027.58680654338,
+     65948.41441073969
     ],
     "utilidad": null,
     "nopat": [
      null,
      1984.2201449999998,
-     3027.1748349904274,
-     3695.3969776768486,
+     3027.174834990428,
+     3695.396977676849,
      4401.3598387605325,
-     5141.878395851498,
-     5949.1446620427505,
-     6233.613747302351,
-     6542.247461580261,
-     6877.247177283773,
-     7241.053552962085
+     5141.878395851499,
+     5923.098873894554,
+     6152.066947118053,
+     6372.133781382798,
+     6581.685232912432,
+     6779.135789899805
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     872.8082884615371,
+     872.8082884615399,
      1008.4745625576901,
      938.9640414643088,
      878.7590286821741,
-     952.8036857507434,
-     1033.3668578417312,
-     1121.1476679665766,
-     1216.9252180021485,
-     1321.568742538069,
-     1391.4797290183308
+     858.189347485649,
+     1043.8620344463868,
+     1207.1446058585855,
+     1343.586061680912,
+     1448.9106256405053,
+     1680.7774685702013
     ],
     "flujo": [
      null,
-     1111.4118565384626,
-     2018.7002724327372,
+     1111.41185653846,
+     2018.7002724327376,
      2756.43293621254,
      3522.6008100783583,
-     4189.074710100755,
-     4915.7778042010195,
-     5112.466079335774,
-     5325.322243578113,
-     5555.678434745704,
-     5849.573823943754
+     4283.68904836585,
+     4879.236839448167,
+     4944.922341259467,
+     5028.547719701885,
+     5132.774607271927,
+     5098.358321329603
     ],
     "tasa": [
      null,
@@ -820,15 +1283,15 @@
     "crecimiento": [
      null,
      -0.03916277701510096,
-     0.05146534269764702,
+     0.05146534269764724,
      0.056554347089028845,
      0.049837719833952576,
      0.044428006943193044,
-     0.046122405554554435,
-     0.04781680416591583,
-     0.04951120277727722,
-     0.05120560138863861,
-     0.0529
+     0.041542405554554435,
+     0.038656804165915826,
+     0.03577120277727722,
+     0.03288560138863861,
+     0.03
     ],
     "margen": [
      null,
@@ -844,7 +1307,7 @@
      0.14117114466888933
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.121,
     "caja": 8368,
     "deuda": 10756.54963513377,
@@ -864,28 +1327,28 @@
     "wacc0": 0.09236553995657287,
     "margenY1": 0.06
    },
-   "valor_bruto": 46.074756233032645,
-   "valor_bruto_prop": 44.74374638094417,
-   "valor_beta_hoja": 46.074756233032645,
-   "valor_beta_prop": 44.74374638094417
+   "valor_bruto": 37.73188667796382,
+   "valor_bruto_prop": 36.654117815416036,
+   "valor_beta_hoja": 37.73188667796382,
+   "valor_beta_prop": 36.654117815416036
   }
  ],
- "valor_esperado_beta_hoja": 30.837394675029145,
- "valor_esperado_beta_prop": 29.958891040301033,
+ "valor_esperado_beta_hoja": 26.249794364043733,
+ "valor_esperado_beta_prop": 25.510821467798174,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.0092684977637554,
    "ke": 0.10043872583654054,
    "wacc": 0.09236553995657287,
-   "dcf_base": 34.279119667880785
+   "dcf_base": 28.389736021053437
   },
   {
    "enfoque": "Bottom-up del sector (Shoe, reapalancada)",
    "beta": 1.1291646640747577,
    "ke": 0.10608609419465329,
    "wacc": 0.09718321114111947,
-   "dcf_base": 33.295724857839424
+   "dcf_base": 27.585497024039498
   }
  ],
  "sensibilidad": {
@@ -905,149 +1368,149 @@
   ],
   "v": [
    [
-    19.207849693363077,
-    23.922966470964806,
-    28.63808324856653,
-    33.35320002616826,
-    38.06831680376998
+    16.74160095186368,
+    20.592885552528614,
+    24.44417015319354,
+    28.29545475385847,
+    32.14673935452338
    ],
    [
-    20.721401135839407,
-    26.090803931798774,
-    31.460206727758145,
-    36.829609523717515,
-    42.19901231967689
+    17.872179835757983,
+    22.231997639431977,
+    26.591815443105983,
+    30.95163324677998,
+    35.31145105045398
    ],
    [
-    22.391169452885098,
-    28.494787819334856,
-    34.598406185784626,
-    40.7020245522344,
-    46.80564291868415
+    19.10801103342295,
+    24.03533484492899,
+    28.962658656435032,
+    33.889982467941074,
+    38.817306279447116
    ],
    [
-    24.233614828639364,
-    31.15973922792281,
-    38.08586362720626,
-    45.011988026489696,
-    51.938112425773156
+    20.459846800291917,
+    26.019488447474867,
+    31.579130094657835,
+    37.1387717418408,
+    42.69841338902376
    ],
    [
-    26.26663797491223,
-    34.1126460368089,
-    41.95865409870558,
-    49.804662160602255,
-    57.650670222498924
+    21.939354555112725,
+    28.202443164492028,
+    34.465531773871334,
+    40.728620383250636,
+    46.99170899262993
    ]
   ],
-  "referencia_constante": 34.598406185784626,
+  "referencia_constante": 28.962658656435032,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.0092684977637554,
    "margen": 0.09117114466888933,
-   "g": 0.07350281855159768,
-   "tasa_base": 0.32776162304358325
+   "g": 0.11549807151901981,
+   "tasa_base": 0.17139698110114826
   },
   {
    "beta": 1.0092684977637554,
    "margen": 0.11617114466888932,
-   "g": 0.017063249648835543,
-   "tasa_base": 0.6778105564959606
+   "g": 0.05199336697609913,
+   "tasa_base": 0.4680032473158338
   },
   {
    "beta": 1.0092684977637554,
    "margen": 0.14117114466888933,
-   "g": -0.02260919460562466,
-   "tasa_base": 0.8468151690199612
+   "g": 0.008069867960556767,
+   "tasa_base": 0.7161223624880283
   },
   {
    "beta": 1.1291646640747577,
    "margen": 0.09117114466888933,
-   "g": 0.08022222129072143,
-   "tasa_base": 0.29909555892758843
+   "g": 0.12311608394602172,
+   "tasa_base": 0.1438197761154013
   },
   {
    "beta": 1.1291646640747577,
    "margen": 0.11617114466888932,
-   "g": 0.023049902718314974,
-   "tasa_base": 0.6523074144199782
+   "g": 0.05863820608717607,
+   "tasa_base": 0.42467889631161215
   },
   {
    "beta": 1.1291646640747577,
    "margen": 0.14117114466888933,
-   "g": -0.01706279502771485,
-   "tasa_base": 0.8231875068180653
+   "g": 0.014150304940857006,
+   "tasa_base": 0.6902197009519492
   }
  ],
  "ingresos_ltm": 45891,
  "sens_base": {
-  "base": 34.279119667880785,
+  "base": 28.389736021053437,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 28.024109487389698
+    "valor": 23.369395099757387
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 40.534129848371876
+    "valor": 33.41007694234949
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 31.053010703149326
+    "valor": 25.962799244757495
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 37.865007161483234
+    "valor": 31.068977241818487
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 46.86790250490931
+    "valor": 34.70763412777926
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 26.98807227736927
+    "valor": 23.88266522450321
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 32.662237609561984
+    "valor": 27.74991858835492
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 36.36170003123546
+    "valor": 29.13793744037798
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 32.64678063607694
+    "valor": 27.037843829574705
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 33.46089779497423
+    "valor": 27.892080000542272
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 34.824600916485146
+    "valor": 28.72150670139422
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 27.895677879064856
+    "valor": 25.94819147210186
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 32.98491776537146
+ "motor_tecnico": 28.389736021053437
 }

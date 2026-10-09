@@ -1,6 +1,340 @@
 {
  "ticker": "EPAM",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "EPAM",
+  "empresa": "EPAM Systems, Inc.",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Computer Services",
+  "segmentos": {
+   "Norteamérica": 3200,
+   "Europa": 2250,
+   "Otros mercados": 167
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usa una beta de 0,98 (desde el 3-oct-2026; antes 1,30). Regla de la cartera (prompt v4, paso 2): bottom-up de Computer Services (Damodaran, ene-2026: 0,96 desapalancada y corregida por caja) reapalancada con la D/E de mercado 0,03 = 0,98 = 0,98. La de regresión queda como referencia. El riesgo de la entrega desde Europa del Este va en la prima de mercado ponderada por operaciones, no en la beta. El efecto de cada beta en el DCF Base está en la tabla."
+  },
+  "historias": [
+   {
+    "nombre": "Base · La IA compensa lo que quita: crecimiento moderado",
+    "prob": 0.45,
+    "margen": 0.12,
+    "crec": {
+     "Norteamérica": [
+      0.04,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+     ],
+     "Europa": [
+      0.08,
+      0.07,
+      0.06,
+      0.06,
+      0.06
+     ],
+     "Otros mercados": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+     ]
+    },
+    "id": "A",
+    "tesis": "base"
+   },
+   {
+    "nombre": "Conservadora · Deflación de horas por IA",
+    "prob": 0.3,
+    "margen": 0.1,
+    "crec": {
+     "Norteamérica": [
+      0,
+      0.01,
+      0.02,
+      0.02,
+      0.02
+     ],
+     "Europa": [
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+     ],
+     "Otros mercados": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.1,
+    "margen": 0.08,
+    "crec": {
+     "Norteamérica": [
+      -0.05,
+      -0.04,
+      -0.02,
+      0,
+      0.01
+     ],
+     "Europa": [
+      0,
+      -0.02,
+      0,
+      0.01,
+      0.01
+     ],
+     "Otros mercados": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Los servicios se comoditizan",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · La IA crea demanda de ingeniería",
+    "prob": 0.15,
+    "margen": 0.14,
+    "crec": {
+     "Norteamérica": [
+      0.08,
+      0.09,
+      0.09,
+      0.08,
+      0.08
+     ],
+     "Europa": [
+      0.1,
+      0.1,
+      0.09,
+      0.08,
+      0.08
+     ],
+     "Otros mercados": [
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.08
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista"
+   }
+  ],
+  "margenes_inverso": [
+   0.09,
+   0.105,
+   0.125
+  ],
+  "historia": "EPAM vende ingeniería de software, datos, nube e IA a grandes empresas, con equipos en Europa Central y del Este, Asia y América Latina, y cobra casi todo por tiempo y materiales. Fue una de las mejores historias de crecimiento de servicios de TI hasta 2021 (la acción llegó a US$668). Después vinieron la guerra en Ucrania (reubicación de miles de ingenieros), la caída del gasto discrecional y la IA generativa, que amenaza con reducir las horas de programación que EPAM factura. Los ingresos se estancaron en 2023-2024, repuntaron en 2025 con compras (+15,4%) y en el 1S26 crecen 6% (4,5% en el 2T). La historia de cinco años es si la IA es una deflación de horas o una nueva ola de proyectos de ingeniería (datos, agentes, modernización) en la que EPAM está bien posicionada.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~5% anual cinco años",
+    "Sí",
+    "Sí: +6% en el 1S26 con Europa +10%",
+    "Probable"
+   ],
+   [
+    "La IA reduce las horas facturables netas",
+    "Sí",
+    "Sí: la programación rutinaria se automatiza; EPAM está en el segmento de mayor valor",
+    "Posible, gradual"
+   ],
+   [
+    "El margen GAAP sube de ~10% a 12,5%",
+    "Sí",
+    "Poco: el margen cae desde 2021 (compresión de tarifas y reubicación)",
+    "Media-baja"
+   ],
+   [
+    "EPAM vuelve a crecer a doble dígito orgánico",
+    "Sí",
+    "Solo si la IA genera una ola de proyectos grandes",
+    "Baja"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de US$3.000-4.500 millones: crecer 5,5% anual cinco años (Base) lo logró ~60% de las empresas de ese tamaño; 8,6% (Optimista), ~42%. La hoja (5%) es modesta. El valor de EPAM depende menos del crecimiento que del margen, que la hoja espera recuperar (de ~10% a 12,5%).",
+  "crecimiento": {
+   "texto": "Ingresos de US$4.691 millones (2023, −2,8%), US$4.728 millones (2024, +0,8%) y US$5.457 millones (2025, +15,4% con compras como Neoris y First Derivative); LTM US$5.617 millones. En el 2T26 facturó US$1.414,8 millones (+4,5%), con Europa +10%. La división de las historias (Norteamérica ~57%, Europa ~40%, otros ~3%) es una aproximación: la empresa reporta por geografía de clientes y la diferencia entre el total y Europa la calcula el informe.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2023",
+     "2024",
+     "2025",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "4.691",
+      "4.728",
+      "5.457",
+      "5.617"
+     ],
+     [
+      "Crecimiento",
+      "−2,8%",
+      "+0,8%",
+      "+15,4%",
+      "—"
+     ],
+     [
+      "Margen operativo GAAP",
+      "10,7%",
+      "11,5%",
+      "9,5%",
+      "10,0%"
+     ],
+     [
+      "FCFF (hoja)",
+      "437",
+      "513",
+      "527",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo GAAP pasó de ~14% en 2021 a 9,5% en 2025 y 10,0% LTM: menos utilización, tarifas presionadas, reubicación desde Ucrania y Belarús y costos de integración. La hoja supone 10,5% el próximo año y 12,5% de objetivo. Es la pieza más frágil: si la IA baja las horas, el margen difícilmente sube. Las historias van de 8% a 14%."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 3.2705× en años 1–5 y un ancla de 2.8298× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 15.16% y el terminal de Base 12.10%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 15.1573%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas."
+  },
+  "prob_texto": "Base (45%) es lo que muestra 2026: un dígito medio con Europa más fuerte. Conservadora (30%) es la deflación de horas por IA, el riesgo que el mercado más teme. Disrupción (10%) es la comoditización con ingresos en caída. Optimista (15%) supone que la IA dispara proyectos de datos y modernización. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "Los clientes usan IA para producir el mismo software con 20-30% menos horas y renegocian contratos.",
+   "La competencia de India (TCS, Infosys) y de las consultoras con IA baja las tarifas.",
+   "El margen sigue cayendo por baja utilización y costos de reubicación.",
+   "Un nuevo shock geopolítico en Europa del Este afecta la entrega.",
+   "Las compras recientes no se integran bien y generan deterioro."
+  ],
+  "contra": "el margen cae desde 2021 y el crecimiento orgánico es de un dígito bajo en Norteamérica; si 2027 no muestra recuperación, la historia Conservadora se vuelve la central.",
+  "indicadores": [
+   [
+    "Crecimiento de ingresos (orgánico, sin divisas)",
+    "+4,5% (2T26)",
+    "≥ +6%",
+    "Negativo dos trimestres"
+   ],
+   [
+    "Margen operativo GAAP",
+    "10,0% LTM",
+    "≥ 11%",
+    "< 9%"
+   ],
+   [
+    "Norteamérica (interanual)",
+    "Bajo un dígito",
+    "≥ +5%",
+    "Negativo"
+   ],
+   [
+    "Utilización de ingenieros",
+    "Estable",
+    "En alza",
+    "En baja"
+   ],
+   [
+    "Ingresos de proyectos de IA y datos",
+    "En aumento",
+    "Más de 20% de los ingresos",
+    "Estancados"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Ingeniería de software de alta calidad frente a la deflación de horas por IA",
+  "confianza": "Media-baja: el efecto neto de la IA sobre las horas facturables es el gran desconocido",
+  "cambiaria": "Crecimiento orgánico en Norteamérica y margen operativo en 2027",
+  "revision": "Resultados del 3T26 (nov-2026)",
+  "fuentes": [
+   [
+    "EPAM, Form 10-Q del 2T 2026",
+    "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000046/epam-20260630.htm"
+   ],
+   [
+    "EPAM, Form 10-Q del 1T 2026",
+    "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000029/epam-20260331.htm"
+   ],
+   [
+    "EPAM, Form 10-K 2025",
+    "https://www.sec.gov/Archives/edgar/data/1352010/000135201026000015/epam-20251231.htm"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 120.76185907441949,
+   "ajuste_ebit": 31.7836281851161,
+   "margen_pp": 0.005658772621844874,
+   "capital_ventas": 0.021500500128976,
+   "cierre": "2026-06-30",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-06-30",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: modesto, porque la pregunta es la IA.",
+    "EPAM vende ingeniería de software, datos, nube e IA a grandes empresas y cobra casi todo por tiempo y materiales: gana por hora facturada. Fue una de las mejores historias de servicios de TI hasta 2021; después vinieron la guerra en Ucrania (reubicación de miles de ingenieros), la caída del gasto discrecional y la IA generativa, que puede reducir las horas que EPAM factura. Los ingresos se estancaron en 2023-2024, saltaron 15,4% en 2025 por compras (Neoris, First Derivative) y en el 2T26 crecieron 4,5%, con Europa +10%. La Base sigue lo que se ve: Norteamérica de 4% a 5%, Europa de 8% bajando a 6%; {g1A} el primer año y {cagrA} compuesto, una cifra que lograron ~{tbA} de las empresas de su tamaño. No extrapolamos 2025 porque fue comprado. La Conservadora ({cagrB}) es la deflación de horas: los clientes producen el mismo software con menos horas; la Disrupción ({cagrC}), la comoditización con ingresos en caída; la Optimista ({cagrD}), que la IA dispare proyectos de datos y modernización. Dos trimestres de crecimiento orgánico negativo invalidarían la Base."
+   ],
+   [
+    "Margen: la pieza más frágil.",
+    "El margen operativo GAAP pasó de ~14% en 2021 a 9,5% en 2025 y 10,0% LTM: menos utilización de ingenieros, tarifas presionadas, costos de reubicación y de integración. La Base supone que se recupera a 12% (en el modelo {mA}, con el ajuste por arrendamientos). Es la apuesta más discutible de la Base, porque si la IA reduce las horas difícilmente sube el margen: una empresa que cobra por hora gana menos si cada proyecto necesita menos horas, salvo que suba la tarifa. Por eso el margen pesa más que el crecimiento: dos puntos de margen mueven la Base a {s_m_lo} o {s_m_hi}, más que dos puntos de crecimiento. Lo invalidaría un margen GAAP por debajo de 9%. El rango de las historias va de {mC} a {mD}."
+   ],
+   [
+    "Reinversión: personas, no fábricas.",
+    "EPAM casi no necesita capital físico (capex de ~US$30-40 millones al año) y tiene caja neta de ~US$680 millones. La hoja usa un ventas/capital de {s2c1}× y {s2c2}×: ~US${cap1} de capital por dólar de ventas nuevas. La reinversión real es en personas (formación en IA) y en compras; en los últimos doce meses recompró US$715 millones (las acciones bajaron de 57 a 52 millones). El ROIC cayó de 47% a ~15% en cinco años: la ventaja existe —costos de cambio moderados con clientes grandes— pero se está desvaneciendo. Por eso el ROIC después del año 10 es {roicT}, el punto medio entre el costo de capital y la industria, limitado al ROIC actual. Si la ventaja desapareciera del todo, la Base valdría {s_roic}; la Conservadora y la Disrupción ya usan el costo de capital."
+   ],
+   [
+    "Descuento: la beta de regresión cuenta la guerra.",
+    "La hoja usa una beta de {beta}; la bottom-up de servicios de computación da {betabu}, con la que el DCF técnico sube de forma notable. La diferencia refleja que la regresión de EPAM incorpora el shock geopolítico de 2022. El criterio de Damodaran prefiere la bottom-up, pero la entrega desde Europa del Este justifica algo por encima del sector, así que la Base se queda con la de la hoja, del lado prudente. El costo de capital va de {wacc0} a {waccT}; un punto menos lleva la Base a {s_k_lo}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}; la Conservadora {pB}, el riesgo que el mercado más teme; la Disrupción {pC}; la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado valora algo más cercano a la Conservadora ({vB}). La evidencia en contra de la Base es que el margen cae desde 2021 y Norteamérica crece a un dígito bajo; si 2027 no muestra recuperación, la Conservadora se vuelve la central. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.121,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 15.1573%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -28,12 +362,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.121,
-  "salesToCapital": 3.2705
+  "salesToCapital": 3.2705,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 160.2194483359966,
- "precio": 108.36,
- "dcf_base": 190.88931093137154,
+ "dcf_sin_exceso": 151.5157407651158,
+ "precio": 108.57,
+ "dcf_base": 185.55519627877027,
  "g_ref": 0.05540075364990678,
  "m_base": 0.130658,
  "s2c": 3.2705,
@@ -130,40 +465,40 @@
     0.056320099697347414,
     0.0581909882275613,
     0.05414119828130959,
-    0.05416421460933818,
-    0.054187267433977615
+    0.05416421460933796,
+    0.05418726743397784
    ],
    "anios6a10": [
-    0.05392981394718209,
-    0.053672360460386564,
-    0.05341490697359104,
-    0.053157453486795514,
-    0.05289999999999999
+    0.05392981394718227,
+    0.0536723604603867,
+    0.053414906973591136,
+    0.05315745348679557,
+    0.0529
    ],
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
    "roic_terminal_usado": 0.121,
    "detalle": {
-    "v": 190.88931093137154,
-    "pvFlujos": 3316.3036818481814,
-    "pvTerminal": 5889.145366718361,
-    "valorTerminal": 14592.052081967873,
-    "activosOperativos": 9205.449048566541,
-    "patrimonio": 9849.888444058772,
+    "v": 185.55519627877032,
+    "pvFlujos": 3041.0633657739554,
+    "pvTerminal": 5889.145366718364,
+    "valorTerminal": 14592.05208196788,
+    "activosOperativos": 8930.208732492318,
+    "patrimonio": 9574.648127984548,
     "ingresos": [
      5616.7,
      5933.033103970091,
      6278.282163476946,
      6618.195882955761,
-     6976.6652650868145,
+     6976.665265086814,
      7354.7116916034165,
-     7751.349924766753,
-     8167.383171983425,
-     8603.643184332592,
-     9060.990946720738,
-     9540.317367802265,
-     10045.000156559005
+     7751.349924766754,
+     8167.383171983426,
+     8603.643184332595,
+     9060.990946720742,
+     9540.317367802269,
+     10045.000156559008
     ],
     "utilidad": null,
     "nopat": [
@@ -171,13 +506,13 @@
      480.6511602821195,
      536.2001290130495,
      579.7669388327129,
-     626.4931989039956,
+     626.4931989039954,
      676.5951387254493,
-     718.5188488312947,
+     718.5188488312948,
      762.8102241480246,
-     809.5883290032125,
-     858.9773318918055,
-     911.1066738542859
+     809.5883290032127,
+     858.977331891806,
+     911.1066738542863
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
@@ -185,27 +520,27 @@
      null,
      105.56461076497624,
      103.93325775227473,
-     109.60690479469618,
-     115.59285323852681,
-     121.2775518004393,
-     147.01860457158526,
-     154.16637654575112,
-     161.61840497142776,
-     169.38526435844472,
-     178.34574484300646
+     109.6069047946959,
+     115.5928532385271,
+     121.27755180043957,
+     181.35802853669847,
+     227.19548596504146,
+     278.04729889323664,
+     334.30614944740137,
+     398.3268020404274
     ],
     "flujo": [
      null,
      375.0865495171433,
      432.2668712607748,
-     470.1600340380167,
-     510.90034566546876,
-     555.31758692501,
-     571.5002442597095,
-     608.6438476022736,
-     647.9699240317848,
-     689.5920675333608,
-     732.7609290112794
+     470.160034038017,
+     510.90034566546836,
+     555.3175869250097,
+     537.1608202945963,
+     535.6147381829832,
+     531.5410301099761,
+     524.6711824444046,
+     512.7798718138589
     ],
     "tasa": [
      null,
@@ -225,13 +560,13 @@
      0.056320099697347414,
      0.0581909882275613,
      0.05414119828130959,
-     0.05416421460933818,
-     0.054187267433977615,
-     0.05392981394718209,
-     0.053672360460386564,
-     0.05341490697359104,
-     0.053157453486795514,
-     0.05289999999999999
+     0.05416421460933796,
+     0.05418726743397784,
+     0.05392981394718227,
+     0.0536723604603867,
+     0.053414906973591136,
+     0.05315745348679557,
+     0.0529
     ],
     "margen": [
      null,
@@ -267,10 +602,10 @@
     "wacc0": 0.09716242381360192,
     "margenY1": 0.110658
    },
-   "valor_bruto": 190.88931093137154,
-   "valor_bruto_prop": 190.88913501300783,
-   "valor_beta_hoja": 190.88931093137154,
-   "valor_beta_prop": 190.88913501300783
+   "valor_bruto": 185.55519627877032,
+   "valor_bruto_prop": 185.5550261522578,
+   "valor_beta_hoja": 185.55519627877032,
+   "valor_beta_prop": 185.5550261522578
   },
   {
    "nombre": "Conservadora · Deflación de horas por IA",
@@ -313,8 +648,8 @@
    "tasa_base": 0.8036678649020356,
    "anios": [
     0.016022787965106033,
-    0.01790783248642036,
-    0.023573986091027788,
+    0.01790783248642014,
+    0.02357398609102801,
     0.023613274884269675,
     0.023652282042194273
    ],
@@ -330,16 +665,16 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 120.5908223460421,
-    "pvFlujos": 2684.7875118699153,
+    "v": 115.70102200950373,
+    "pvFlujos": 2432.4738145045358,
     "pvTerminal": 2893.2595256936293,
     "valorTerminal": 7168.882928949806,
-    "activosOperativos": 5578.047037563543,
-    "patrimonio": 6222.486433055773,
+    "activosOperativos": 5325.733340198163,
+    "patrimonio": 5970.172735690393,
     "ingresos": [
      5616.7,
      5706.695193163611,
-     5808.889734733845,
+     5808.889734733844,
      5945.828420544775,
      6086.228901453802,
      6230.182104004341,
@@ -354,7 +689,7 @@
     "nopat": [
      null,
      462.314910081161,
-     462.0899059851848,
+     462.08990598518477,
      468.63093865046227,
      475.24181016391975,
      481.92195198143907,
@@ -368,29 +703,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     31.247375499230674,
-     41.87087167434034,
+     31.247375499230394,
+     41.87087167434063,
      42.92936276074806,
      44.01565587847105,
      56.19989178990351,
-     80.12690341727892,
-     96.68669608349019,
-     114.96304618146789,
-     135.33736128655707,
-     142.49670769861595
+     103.41830577238989,
+     153.6144813590363,
+     217.77612037180575,
+     298.7254708844764,
+     360.18036560114376
     ],
     "flujo": [
      null,
-     431.0675345819303,
-     420.2190343108445,
+     431.0675345819306,
+     420.21903431084417,
      425.7015758897142,
      431.22615428544873,
      425.72206019153555,
-     419.79415659019344,
-     424.82247081493944,
-     432.10929769664347,
-     441.7433116005451,
-     469.60565274642875
+     396.5027542350825,
+     367.8946855393933,
+     329.29622350630564,
+     278.3552020026258,
+     251.92199484390096
     ],
     "tasa": [
      null,
@@ -408,8 +743,8 @@
     "crecimiento": [
      null,
      0.016022787965106033,
-     0.01790783248642036,
-     0.023573986091027788,
+     0.01790783248642014,
+     0.02357398609102801,
      0.023613274884269675,
      0.023652282042194273,
      0.02950182563375542,
@@ -452,10 +787,10 @@
     "wacc0": 0.09716242381360192,
     "margenY1": 0.110658
    },
-   "valor_bruto": 120.5908223460421,
-   "valor_bruto_prop": 120.59072391764344,
-   "valor_beta_hoja": 120.5908223460421,
-   "valor_beta_prop": 120.59072391764344
+   "valor_bruto": 115.70102200950373,
+   "valor_bruto_prop": 115.70092891902483,
+   "valor_beta_hoja": 115.70102200950373,
+   "valor_beta_prop": 115.70092891902483
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -500,8 +835,8 @@
    "tasa_base": 0.8967348782964929,
    "anios": [
     -0.028484956382410664,
-    -0.030529595015576172,
-    -0.011032814153939419,
+    -0.030529595015576283,
+    -0.011032814153939197,
     0.00421442376499237,
     0.009682151896373226
    ],
@@ -517,16 +852,16 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 88.71021209567863,
-    "pvFlujos": 2290.4217753682856,
+    "v": 88.19873558047065,
+    "pvFlujos": 2264.0295871835533,
     "pvTerminal": 1642.5857732765023,
     "valorTerminal": 4069.9788611443964,
-    "activosOperativos": 3933.0075486447868,
-    "patrimonio": 4577.446944137017,
+    "activosOperativos": 3906.615360460055,
+    "patrimonio": 4551.054755952286,
     "ingresos": [
      5616.7,
      5456.708545486914,
-     5290.117443475165,
+     5290.117443475164,
      5231.75256086879,
      5253.801383193875,
      5304.669486219334,
@@ -541,7 +876,7 @@
     "nopat": [
      null,
      442.062811339214,
-     389.83905984720496,
+     389.8390598472049,
      366.387799554896,
      348.70096738967766,
      332.6600005709371,
@@ -555,29 +890,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -50.93750252614254,
-     -17.845859228367075,
+     -50.937502526142815,
+     -17.8458592283668,
      6.741728275519028,
      15.553616580174063,
      15.704209058441142,
-     18.325640330969758,
-     18.50307196425277,
-     18.682221517560045,
-     18.86310562405485,
-     19.045741077944136
+     21.950470849554137,
+     25.9342793473961,
+     30.10560597008354,
+     34.468797002528504,
+     39.02827585356034
     ],
     "flujo": [
      null,
-     493.0003138653566,
-     407.68491907557205,
+     493.0003138653568,
+     407.6849190755717,
      359.64607127937694,
      333.1473508095036,
      316.9557915124959,
-     320.11527847813585,
-     325.79952363915527,
-     331.5638313427221,
-     337.4092190799822,
-     343.33671653970214
+     316.4904479595515,
+     318.3683162560119,
+     320.1404468901986,
+     321.8035277015086,
+     323.3541817640859
     ],
     "tasa": [
      null,
@@ -595,8 +930,8 @@
     "crecimiento": [
      null,
      -0.028484956382410664,
-     -0.030529595015576172,
-     -0.011032814153939419,
+     -0.030529595015576283,
+     -0.011032814153939197,
      0.00421442376499237,
      0.009682151896373226,
      0.009682151896373226,
@@ -639,10 +974,10 @@
     "wacc0": 0.09716242381360192,
     "margenY1": 0.110658
    },
-   "valor_bruto": 88.71021209567863,
-   "valor_bruto_prop": 88.71014823121423,
-   "valor_beta_hoja": 88.71021209567863,
-   "valor_beta_prop": 88.71014823121423
+   "valor_bruto": 88.19873558047065,
+   "valor_bruto_prop": 88.19867227016589,
+   "valor_beta_hoja": 88.19873558047065,
+   "valor_beta_prop": 88.19867227016589
   },
   {
    "nombre": "Optimista · La IA crea demanda de ingeniería",
@@ -687,39 +1022,39 @@
     0.09375471253534395,
     0.08970858884141086,
     0.08000000000000007,
-    0.0800000000000003
+    0.08000000000000007
    ],
    "anios6a10": [
-    0.07458000000000023,
-    0.06916000000000017,
-    0.0637400000000001,
-    0.058320000000000045,
-    0.05289999999999999
+    0.07458000000000006,
+    0.06916000000000005,
+    0.06374000000000005,
+    0.05832000000000003,
+    0.052900000000000016
    ],
    "anios6a10_propios": false,
    "terminal_growth": 0.0529,
    "terminal_propio": false,
    "roic_terminal_usado": 0.121,
    "detalle": {
-    "v": 252.26928764900495,
-    "pvFlujos": 4094.2473347205805,
-    "pvTerminal": 8278.408512475848,
-    "valorTerminal": 20512.138968844505,
-    "activosOperativos": 12372.655847196425,
-    "patrimonio": 13017.095242688656,
+    "v": 243.40908165636023,
+    "pvFlujos": 3637.0607055001174,
+    "pvTerminal": 8278.408512475842,
+    "valorTerminal": 20512.13896884449,
+    "activosOperativos": 11915.469217975957,
+    "patrimonio": 12559.908613468187,
     "ingresos": [
      5616.7,
      6111.033596581806,
      6683.971794723162,
      7283.581472283569,
      7866.267990066255,
-     8495.569429271558,
-     9129.168997306633,
-     9760.54232516036,
-     10382.679292966084,
-     10988.197149331867,
-     11569.472778531523,
-     12181.49788851584
+     8495.569429271556,
+     9129.16899730663,
+     9760.542325160357,
+     10382.679292966079,
+     10988.19714933186,
+     11569.472778531515,
+     12181.497888515833
     ],
     "utilidad": null,
     "nopat": [
@@ -728,12 +1063,12 @@
      609.994960317028,
      702.04374135029,
      798.5203941165901,
-     905.9402313808564,
-     980.9252228529654,
-     1056.6991453383284,
-     1132.4919409008494,
-     1207.4698132845367,
-     1280.748355650088
+     905.9402313808562,
+     980.9252228529651,
+     1056.699145338328,
+     1132.4919409008485,
+     1207.4698132845358,
+     1280.748355650087
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
@@ -742,26 +1077,26 @@
      175.18367165306717,
      183.33884040984782,
      178.16435339632648,
-     192.41750166803325,
-     193.73171320442597,
-     223.1158837563529,
-     219.85192162192504,
-     213.9790290358975,
-     205.41226560168764,
-     216.2785744520168
+     192.4175016680327,
+     193.73171320442543,
+     290.62624157121655,
+     354.5690158619649,
+     413.09704959785006,
+     463.3975150889457,
+     559.9304794536332
     ],
     "flujo": [
      null,
      319.8877930172681,
      426.6561199071802,
      523.8793879539635,
-     606.1028924485568,
-     712.2085181764304,
-     757.8093390966125,
-     836.8472237164034,
-     918.5129118649519,
-     1002.0575476828491,
-     1064.4697811980711
+     606.1028924485573,
+     712.2085181764307,
+     690.2989812817486,
+     702.1301294763631,
+     719.3948913029984,
+     744.0722981955901,
+     720.8178761964538
     ],
     "tasa": [
      null,
@@ -782,12 +1117,12 @@
      0.09375471253534395,
      0.08970858884141086,
      0.08000000000000007,
-     0.0800000000000003,
-     0.07458000000000023,
-     0.06916000000000017,
-     0.0637400000000001,
-     0.058320000000000045,
-     0.05289999999999999
+     0.08000000000000007,
+     0.07458000000000006,
+     0.06916000000000005,
+     0.06374000000000005,
+     0.05832000000000003,
+     0.052900000000000016
     ],
     "margen": [
      null,
@@ -823,28 +1158,28 @@
     "wacc0": 0.09716242381360192,
     "margenY1": 0.110658
    },
-   "valor_bruto": 252.26928764900495,
-   "valor_bruto_prop": 252.26904443829346,
-   "valor_beta_hoja": 252.26928764900495,
-   "valor_beta_prop": 252.26904443829346
+   "valor_bruto": 243.40908165636023,
+   "valor_bruto_prop": 243.40884802891267,
+   "valor_beta_hoja": 243.40908165636023,
+   "valor_beta_prop": 243.40884802891267
   }
  ],
- "valor_esperado_beta_hoja": 168.78885097984843,
- "valor_esperado_beta_prop": 168.788699420012,
+ "valor_esperado_beta_hoja": 163.54138073479888,
+ "valor_esperado_beta_prop": 163.54123487557695,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 0.98,
    "ke": 0.09856257556400697,
    "wacc": 0.09716242381360192,
-   "dcf_base": 190.88931093137154
+   "dcf_base": 185.55519627877032
   },
   {
    "enfoque": "Bottom-up del sector (Computer Services, reapalancada)",
    "beta": 0.9800038662591696,
    "ke": 0.098562755710284,
    "wacc": 0.09716259915251042,
-   "dcf_base": 190.88913501300783
+   "dcf_base": 185.5550261522578
   }
  ],
  "sensibilidad": {
@@ -864,149 +1199,149 @@
   ],
   "v": [
    [
-    121.50497769569742,
-    143.39378049660607,
-    165.28258329751466,
-    187.17138609842328,
-    209.06018889933193
+    119.68941389743966,
+    140.5066961589565,
+    161.32397842047337,
+    182.14126068199022,
+    202.9585429435071
    ],
    [
-    131.21025278799846,
-    156.01744008628836,
-    180.82462738457832,
-    205.63181468286825,
-    230.43900198115816
+    129.01629573355748,
+    152.52708323592628,
+    176.03787073829506,
+    199.54865824066385,
+    223.05944574303265
    ],
    [
-    141.9425584408767,
-    170.01123705469675,
-    198.07991566851683,
-    226.1485942823368,
-    254.21727289615689
+    139.30787050916865,
+    165.81809075138048,
+    192.3283109935923,
+    218.83853123580406,
+    245.3487514780159
    ],
    [
-    153.80431398882695,
-    185.51219632410445,
-    217.220078659382,
-    248.92796099465943,
-    280.63584332993696
+    150.65833164930032,
+    180.50360228239177,
+    210.34887291548327,
+    240.19414354857466,
+    270.03941418166613
    ],
    [
-    166.90647642081052,
-    202.66878482630847,
-    238.43109323180644,
-    274.19340163730436,
-    309.9557100428023
+    163.16954807755266,
+    196.7175656126047,
+    230.26558314765666,
+    263.8136006827087,
+    297.3616182177607
    ]
   ],
-  "referencia_constante": 198.07991566851683,
+  "referencia_constante": 192.3283109935923,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 0.98,
    "margen": 0.09565877262184487,
-   "g": -0.026302324617773765,
-   "tasa_base": 0.9369637202171526
+   "g": -0.022248817398740017,
+   "tasa_base": 0.9280765941083713
   },
   {
    "beta": 0.98,
    "margen": 0.11065877262184487,
-   "g": -0.05437383114278843,
-   "tasa_base": 0.9577366350456634
+   "g": -0.05038661481480061,
+   "tasa_base": 0.9547860949629525
   },
   {
    "beta": 0.98,
    "margen": 0.1306587726218449,
-   "g": -0.08412926551013195,
-   "tasa_base": 0.976103950273445
+   "g": -0.08039397178652324,
+   "tasa_base": 0.9748339504074179
   },
   {
    "beta": 0.9800038662591696,
    "margen": 0.09565877262184487,
-   "g": -0.026302114531564114,
-   "tasa_base": 0.9369635647533575
+   "g": -0.022248602983880927,
+   "tasa_base": 0.9280759765935771
   },
   {
    "beta": 0.9800038662591696,
    "margen": 0.11065877262184487,
-   "g": -0.054373632992113896,
-   "tasa_base": 0.9577364884141644
+   "g": -0.050386412362868616,
+   "tasa_base": 0.9547859451485228
   },
   {
    "beta": 0.9800038662591696,
    "margen": 0.1306587726218449,
-   "g": -0.08412907881408876,
-   "tasa_base": 0.9761038867967902
+   "g": -0.08039378096164468,
+   "tasa_base": 0.9748338855269593
   }
  ],
  "ingresos_ltm": 5616.7,
  "sens_base": {
-  "base": 190.88931093137154,
+  "base": 185.55519627877032,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 162.86830918143767
+    "valor": 159.08448801307455
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 218.91031268130547
+    "valor": 212.02590454446604
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 174.4763511579925
+    "valor": 170.038030641998
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 209.0896921483234
+    "valor": 202.71598577696875
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 251.42562326756786
+    "valor": 245.6520795837516
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 155.7842302578871
+    "valor": 150.85189945860083
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 183.00935903343006
+    "valor": 178.15034245057268
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 201.0071479382226
+    "valor": 195.18921091485703
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 181.79934374416337
+    "valor": 176.7192345512098
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 186.9603268610605
+    "valor": 182.7277832507216
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 193.5086336449122
+    "valor": 187.44013829746945
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 160.2194483359966
+    "valor": 151.5157407651158
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 193.17582950475506
+ "motor_tecnico": 185.55519627877027
 }

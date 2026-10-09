@@ -82,7 +82,9 @@ def plan(sh) -> list[dict]:
                      "values": [[f"={EH}!{c}{b['g']}" for c in cols]]})
         data.append({"range": f"{q}!{b['target']}", "values": [[f"={EH}!$D${i}"]]})
         data.append({"range": f"{q}!C{b['s2c']}:L{b['s2c']}",
-                     "values": [[f"={EH}!$E${i}"] * 5 + [f"={EH}!$F${i}"] * 5]})
+                     "values": [[f"={EH}!$E${i}"] * 5 + [
+                         f'=IF({IS}!$B$78="Yes";1/((1-({y}-5)/5)/{EH}!$F${i}+({y}-5)/5*{COLS[y-1]}{b["growth"]+2}*(1-{COLS[y-1]}{b["growth"]+4})/$M${b["roic"]});{EH}!$F${i})'
+                         for y in range(6, 11)]]})
         data.append({"range": f"{q}!M{b['roic']}", "values": [[f"={EH}!$G${i}"]]})
     for name in ("Base", "Conservador", "Optimista"):
         r = {"Base": 2, "Conservador": 53, "Optimista": 104}[name]

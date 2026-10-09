@@ -1,0 +1,370 @@
+[
+  {
+    "ticker": "LULU",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 191.61807566970825,
+      "esperado": 168.00662981947923,
+      "roic": 0.124
+    },
+    "despues": {
+      "base": 158.4332135916115,
+      "esperado": 143.62006725610965,
+      "precioMOS": 93.35304371647128,
+      "roic": 0.124
+    },
+    "criterio": {
+      "roicBase": 0.124,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.6842%; ROIC terminal Base 0.124. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+      "convergencia": true,
+      "g3": true
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "MCD",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 224.11800264767598,
+      "esperado": 203.42246040890257,
+      "roic": 0.184
+    },
+    "despues": {
+      "base": 159.93975662783646,
+      "esperado": 147.1436645839866,
+      "precioMOS": 95.6433819795913,
+      "roic": 0.184
+    },
+    "criterio": {
+      "roicBase": 0.184,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 21.3214%; ROIC terminal Base 0.184. Conservadora mantiene el mismo terminal porque supone presión de tráfico/precio con la ventaja de marca/inmuebles o licencias aún vigente. Disrupción sí pierde la ventaja y converge al costo de capital. Se conserva la regla económica; no se igualan ambos casos.",
+      "convergencia": true,
+      "g3": true
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "PAGS",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 12.255330414290382,
+      "esperado": 11.677890153346361,
+      "roic": "costo_capital"
+    },
+    "despues": {
+      "base": 12.255330414290382,
+      "esperado": 11.677890153346361,
+      "precioMOS": 7.590628599675135,
+      "roic": 0.2
+    },
+    "criterio": {
+      "roicBase": 0.2,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 16.2413%; ROIC terminal Base no aplica: ROE/Ke. Financiera: ROIC de la plantilla FCFF es inactivo. El motor activo usa ROE terminal = Ke 11,91% y crecimiento estable USD de 3%; caja y depósitos operativos no se tratan como activos/deuda industriales.",
+      "convergencia": false,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "CELH",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 24.235735326677425,
+      "esperado": 21.552224174650686,
+      "roic": "costo_capital"
+    },
+    "despues": {
+      "base": 22.701794746027964,
+      "esperado": 20.260423807348776,
+      "precioMOS": 13.169275474776708,
+      "roic": 0.2
+    },
+    "criterio": {
+      "roicBase": 0.2,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 15.8912%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "INTU",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 531.7634597091184,
+      "esperado": 455.43018180383655,
+      "roic": 0.226
+    },
+    "despues": {
+      "base": 526.1669468381389,
+      "esperado": 446.64126378899704,
+      "precioMOS": 290.31682146284817,
+      "roic": 0.226
+    },
+    "criterio": {
+      "roicBase": 0.226,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 22.5744%; ROIC terminal Base 0.226. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "UBER",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 81.55564167821659,
+      "esperado": 73.98619364292249,
+      "roic": "costo_capital"
+    },
+    "despues": {
+      "base": 75.47881362060863,
+      "esperado": 68.67869191958862,
+      "precioMOS": 44.64114974773261,
+      "roic": 0.2
+    },
+    "criterio": {
+      "roicBase": 0.2,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 17.7319%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "GOOG",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 330.8623963347827,
+      "esperado": 278.77827166287136,
+      "roic": 0.293
+    },
+    "despues": {
+      "base": 327.3053524713127,
+      "esperado": 273.55485796118535,
+      "precioMOS": 177.81065767477048,
+      "roic": 0.2837744000520741
+    },
+    "criterio": {
+      "roicBase": 0.2837744000520741,
+      "motivo": "Alphabet: referencia compuesta de publicidad (82%) y software/nube (18%), consistente con la mezcla usada para beta. Capital sectorial por unidad de ingreso = margen ajustado después de impuestos / ROIC ajustado. ROIC compuesto = (0,82×0,0969+0,18×0,3262)/(0,82×0,0969/0,2772+0,18×0,3262/0,2931842949) = 28.3774%. Es un proxy de capital sectorial por mezcla, no ROIC de capital observado por segmento. No se utiliza Software (Internet) 3,43% como referencia terminal de Alphabet. Mantiene beta compuesta 1,07 y la industria del selector solo para otras comparaciones. Fuentes NYU roc.html y margin.html, ene-2026.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "ZTS",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 112.58374556198625,
+      "esperado": 89.61457703267497,
+      "roic": 0.169
+    },
+    "despues": {
+      "base": 110.49330369524306,
+      "esperado": 86.84086493889936,
+      "precioMOS": 56.44656221028458,
+      "roic": 0.169
+    },
+    "criterio": {
+      "roicBase": 0.169,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.4017%; ROIC terminal Base 0.169. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "PLTR",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 75.36373045560113,
+      "esperado": 68.70174749893539,
+      "roic": 0.2056
+    },
+    "despues": {
+      "base": 78.92095337530566,
+      "esperado": 71.77715983704437,
+      "precioMOS": 46.65515389407883,
+      "roic": 0.2931842949283384
+    },
+    "criterio": {
+      "roicBase": 0.2931842949283384,
+      "motivo": "Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "DPZ",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 381.29473291183297,
+      "esperado": 331.1703193978999,
+      "roic": 0.184
+    },
+    "despues": {
+      "base": 371.31034600665726,
+      "esperado": 318.6791546686893,
+      "precioMOS": 207.1414505346479,
+      "roic": 0.184
+    },
+    "criterio": {
+      "roicBase": 0.184,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 83.0121%; ROIC terminal Base 0.184. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "AFYA",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 24.37520058504103,
+      "esperado": 21.386591528349037,
+      "roic": 0.148
+    },
+    "despues": {
+      "base": 23.67266569802195,
+      "esperado": 20.82949733835234,
+      "precioMOS": 13.539173269929021,
+      "roic": 0.148
+    },
+    "criterio": {
+      "roicBase": 0.148,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.8710%; ROIC terminal Base 0.148. Conservadora mantiene el mismo terminal porque supone presión de tráfico/precio con la ventaja de marca/inmuebles o licencias aún vigente. Disrupción sí pierde la ventaja y converge al costo de capital. Se conserva la regla económica; no se igualan ambos casos.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "EPAM",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 190.88931093137154,
+      "esperado": 168.78885097984843,
+      "roic": 0.121
+    },
+    "despues": {
+      "base": 185.55519627877027,
+      "esperado": 163.54138073479888,
+      "precioMOS": 106.30189747761925,
+      "roic": 0.121
+    },
+    "criterio": {
+      "roicBase": 0.121,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 15.1573%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "ONON",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 34.90118445394271,
+      "esperado": 32.21976965244784,
+      "roic": "costo_capital"
+    },
+    "despues": {
+      "base": 32.37033013053928,
+      "esperado": 29.958936004650564,
+      "precioMOS": 19.47330840302287,
+      "roic": 0.2
+    },
+    "criterio": {
+      "roicBase": 0.2,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 28.5245%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "NVDA",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 222.0943086888792,
+      "esperado": 201.88152245318616,
+      "roic": 0.272
+    },
+    "despues": {
+      "base": 219.02687665897795,
+      "esperado": 198.7393292888475,
+      "precioMOS": 129.18056403775088,
+      "roic": 0.272
+    },
+    "criterio": {
+      "roicBase": 0.272,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 141.9200%; ROIC terminal Base 0.272. Se mantiene 27,2% terminal por CUDA, costos de cambio y modelo fabless. Conservadora representa un ciclo de demanda, no la desaparición permanente del ecosistema; Disrupción elimina retornos excedentes. Referencia sectorial puntual 27,23%; 20,53% normalizado es sensibilidad, no una cifra comparable automáticamente ni cambio aprobado por error aritmético.",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "ADBE",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 454.7782892267115,
+      "esperado": 355.48674039321935,
+      "roic": 0.2056
+    },
+    "despues": {
+      "base": 484.92412993819903,
+      "esperado": 366.1494489158995,
+      "precioMOS": 237.99714179533467,
+      "roic": 0.2931842949283384
+    },
+    "criterio": {
+      "roicBase": 0.2931842949283384,
+      "motivo": "Referencia publicada Software (System & Application), EE.UU., ene-2026: ROIC después de impuestos ajustado por arrendamientos e I+D 29,3184%. Se elimina la segunda capitalización de I+D del cálculo anterior de 20,56%. Se usa como referencia sectorial, no como una reconstrucción exacta a 3 años. La vida de I+D de la empresa sigue siendo 3 años; esa diferencia de definición se explicita. Hipótesis de persistencia de ventaja en esta historia, no garantía. Fuente: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+      "convergencia": true,
+      "g3": false
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  },
+  {
+    "ticker": "NKE",
+    "fecha": "2026-10-09T02:00:36+00:00",
+    "estado": "corregido y verificado",
+    "antes": {
+      "base": 34.279119667880785,
+      "esperado": 30.837394675029145,
+      "roic": 0.121
+    },
+    "despues": {
+      "base": 28.389736021053437,
+      "esperado": 26.249794364043733,
+      "precioMOS": 17.06236633662843,
+      "roic": 0.121
+    },
+    "criterio": {
+      "roicBase": 0.121,
+      "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 14.6559%; ROIC terminal Base 0.121. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+      "convergencia": true,
+      "g3": true
+    },
+    "verificacion": "Cuatro DCF y esperado hoja/motor coinciden a menos de 0,000001 USD por acción."
+  }
+]

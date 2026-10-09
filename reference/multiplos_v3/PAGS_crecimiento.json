@@ -1,84 +1,79 @@
 {
- "fecha": "2026-10-06",
- "umbral": 0.02,
- "precio": 10.725,
- "dcfHoy": 15.972354954477444,
- "dcfInverso": {
-  "gImplicito": -0.1638038565267263,
-  "gDcf": 0.057999999999999996,
-  "dif": -0.2218038565267263,
-  "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
- },
- "gDcf": {
-  "anios4a10": 0.05695714285714286,
-  "perpetuidad": 0.0529,
-  "puntoMedio": 0.05492857142857143
- },
- "parametros": {
-  "ke": 0.10980799999999999,
-  "wacc": 0.11362817478788625,
-  "roe": 0.17257759999999997,
-  "fcffEbitda": 0.1283131873420672,
-  "fcfeOcf": 0.46422154766665863
- },
- "multiplos": [
-  {
-   "metodo": "EV/EBITDA",
-   "multiplo": 2.6981807272290896,
-   "multiploDcf": null,
-   "gImplicito": null,
-   "gDcf": null,
-   "dif": null,
-   "difValor": null,
-   "aplica": false,
-   "lectura": "No aplica: PagSeguro es una entidad financiera (PagBank): la deuda es materia prima del negocio, no financiación, y el valor empres"
+  "fecha": "2026-09-30",
+  "precio": 10.725,
+  "dcfHoy": 12.255330414290382,
+  "dcfFy3": 16.752073813629103,
+  "umbral": 0.02,
+  "dcfInverso": {
+    "gImplicito": null,
+    "gDcf": 0.057999999999999996,
+    "dif": null,
+    "lectura": "Ningún crecimiento entre −20% y 80% justifica el precio con estos márgenes."
   },
-  {
-   "metodo": "EV/FCFF",
-   "multiplo": 2.250419377439696,
-   "multiploDcf": null,
-   "gImplicito": null,
-   "gDcf": null,
-   "dif": null,
-   "difValor": null,
-   "aplica": false,
-   "lectura": "No aplica: Igual que EV/EBITDA: para una financiera el FCFF no se puede separar de la financiación; peso 0%."
+  "parametros": {
+    "ke": 0.10980799999999999,
+    "wacc": 0.11362817478788625,
+    "roe": 0.17257759999999997,
+    "fcffEbitda": 0.12831318734206734,
+    "fcfeOcf": 0.19280655458234616
   },
-  {
-   "metodo": "P/E",
-   "multiplo": 10.56,
-   "multiploDcf": 9.153980002780116,
-   "gImplicito": 0.028493037906633604,
-   "gDcf": 0.0011901505624004522,
-   "dif": 0.02730288734423315,
-   "difValor": 0.14211998086943356,
-   "aplica": true,
-   "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 14% por encima del DCF en FY+3."
-  },
-  {
-   "metodo": "P/FCFE",
-   "multiplo": 9.89,
-   "multiploDcf": 14.733049198966706,
-   "gImplicito": 0.007897256198347101,
-   "gDcf": 0.03926808202447567,
-   "dif": -0.031370825826128566,
-   "difValor": -0.3041584203477846,
-   "aplica": true,
-   "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 30% por debajo del DCF en FY+3."
-  },
-  {
-   "metodo": "P/OCF",
-   "multiplo": 5.06,
-   "multiploDcf": 6.839398900993349,
-   "gImplicito": 0.016546572497974858,
-   "gDcf": 0.03926808202447567,
-   "dif": -0.02272150952650081,
-   "difValor": -0.24072931827259358,
-   "aplica": true,
-   "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 24% por debajo del DCF en FY+3."
-  }
- ],
- "dcfFy3": 16.752073813629103,
- "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
- "alertas": 3
+  "multiplos": [
+    {
+      "metodo": "EV/EBITDA",
+      "multiplo": 2.6981807272290896,
+      "multiploDcf": null,
+      "gImplicito": null,
+      "gDcf": null,
+      "dif": null,
+      "difValor": null,
+      "aplica": false,
+      "lectura": "No aplica: peso cero en la categoría financiera."
+    },
+    {
+      "metodo": "EV/FCFF",
+      "multiplo": 2.250419377439696,
+      "multiploDcf": null,
+      "gImplicito": null,
+      "gDcf": null,
+      "dif": null,
+      "difValor": null,
+      "aplica": false,
+      "lectura": "No aplica: peso cero en la categoría financiera."
+    },
+    {
+      "metodo": "P/E",
+      "multiplo": 10.56,
+      "multiploDcf": 9.133800852346178,
+      "gImplicito": 0.028493037906633604,
+      "gDcf": 0.0006837759653757293,
+      "dif": 0.027809261941257876,
+      "difValor": 0.14447817145226538,
+      "aplica": true,
+      "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 14% por encima del DCF en FY+3."
+    },
+    {
+      "metodo": "P/FCFE",
+      "multiplo": 9.89,
+      "multiploDcf": 35.414397370100154,
+      "gImplicito": 0.007897256198347101,
+      "gDcf": 0.07933082393361085,
+      "dif": -0.07143356773526374,
+      "difValor": -0.6668823807923032,
+      "aplica": true,
+      "lectura": "Revisar: el múltiplo supone menos crecimiento que el DCF. En valor, 67% por debajo del DCF en FY+3."
+    },
+    {
+      "metodo": "P/OCF",
+      "multiplo": 5.06,
+      "multiploDcf": null,
+      "gImplicito": null,
+      "gDcf": null,
+      "dif": null,
+      "difValor": null,
+      "aplica": false,
+      "lectura": "No aplica: peso cero en la categoría financiera."
+    }
+  ],
+  "metodo": "DCF inverso completo sin calibración; múltiplos frente al DCF capitalizado FY+3",
+  "nota": "Crecimiento constante en años 1–5 para el DCF inverso. Las proyecciones de múltiplos conservan sus métricas propias; PagBank usa FCFE financiero para el DCF y trata los múltiplos de flujo bancario con cautela."
 }

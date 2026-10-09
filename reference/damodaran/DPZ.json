@@ -189,7 +189,7 @@
   "texto": "El margen operativo sube lento (18,3% → 19,3%) porque la cadena de suministro diluye el margen de las regalías. La hoja supone 19% el próximo año y 20% de objetivo, un paso pequeño y creíble. El riesgo está en la rentabilidad de los franquiciados: si sus márgenes caen, Domino's tiene que subsidiar promociones o bajar el precio de los insumos. Las historias van de 17% a 21%."
  },
  "reinversion": {
-  "texto": "Casi no necesita capital: capex de ~US$105-120 millones al año (~2,5% de las ventas); las tiendas las pagan los franquiciados. La hoja usa un sales-to-capital de 3. El flujo libre (~US$670 millones en 2025) va a dividendos (US$237 millones) y recompras (US$358 millones). Con tan poco capital, el ROIC actual es ~99%. Ventaja durable: marca probada de más de 60 años y escala logística en reparto, con ROIC de 65-78% en 2021-2026. El ROIC después del año 10 es 18,4%, el promedio de su industria según Damodaran. Es el criterio de Damodaran para ventajas sostenibles; el riesgo de perderla está en las historias de erosión."
+  "texto": "La Base usa ventas/capital 5.4000× en años 1–5 y un ancla de 3.4000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 83.01% y el terminal de Base 18.40%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 83.0121%; ROIC terminal Base 0.184. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia."
  },
  "prob_texto": "Base (50%) es la continuación de 2024-2026: crecimiento de tiendas y ventas por tienda planas. Conservadora (25%) es el riesgo de que los agregadores sigan quitando pedidos. Disrupción (5%) es un problema en el sistema de franquicias (cierres internacionales, franquiciados en dificultades). Optimista (20%) supone que la entrada en los agregadores y el ritmo de aperturas internacionales sumen crecimiento. En las historias de erosión (Conservadora y Disrupción) el ROIC después del año 10 es el costo de capital.",
  "premortem": [
@@ -289,5 +289,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA}, más que en otras empresas, porque es la continuación de lo que se ve desde 2024; la Conservadora {pB}, los agregadores; la Disrupción {pC}; la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}. La distancia entre la Base y la Conservadora ({vB}) es grande porque la Conservadora además pierde el ROIC excedente: no solo crece menos, sino que su crecimiento deja de crear valor. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.184,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 83.0121%; ROIC terminal Base 0.184. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+  "convergencia": true,
+  "g3": false
+ }
 }

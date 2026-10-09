@@ -1,84 +1,79 @@
 {
- "fecha": "2026-10-06",
- "umbral": 0.02,
- "precio": 92.69,
- "dcfHoy": 191.61807566970825,
- "dcfInverso": {
-  "gImplicito": -0.15511940923687462,
-  "gDcf": 0.018084264730725108,
-  "dif": -0.17320367396759973,
-  "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
- },
- "gDcf": {
-  "anios4a10": 0.0468783154194478,
-  "perpetuidad": 0.0529,
-  "puntoMedio": 0.0498891577097239
- },
- "parametros": {
-  "ke": 0.09113773458581496,
-  "wacc": 0.08631493754338114,
-  "roe": 0.2704807162016013,
-  "fcffEbitda": 0.4326585371027596,
-  "fcfeOcf": 0.5864004978029946
- },
- "multiplos": [
-  {
-   "metodo": "EV/EBITDA",
-   "multiplo": 10.78,
-   "multiploDcf": 12.315319511355602,
-   "gImplicito": 0.04439772137603327,
-   "gDcf": 0.04944607646409545,
-   "dif": -0.00504835508806218,
-   "difValor": -0.18829399708605432,
-   "aplica": true,
-   "lectura": "Coherente con el DCF."
+  "fecha": "2026-09-30",
+  "precio": 92.69,
+  "dcfHoy": 158.4332135916115,
+  "dcfFy3": 205.8187597230656,
+  "umbral": 0.02,
+  "dcfInverso": {
+    "gImplicito": -0.11727328899661299,
+    "gDcf": 0.018084264730725108,
+    "dif": -0.1353575537273381,
+    "lectura": "El precio supone menos crecimiento que el DCF: posible oportunidad si el DCF es correcto."
   },
-  {
-   "metodo": "EV/FCFF",
-   "multiplo": 24.47,
-   "multiploDcf": 28.464293328922857,
-   "gImplicito": 0.04366417438894922,
-   "gDcf": 0.04944607646409545,
-   "dif": -0.005781902075146228,
-   "difValor": -0.2032189747476798,
-   "aplica": true,
-   "lectura": "Coherente con el DCF."
+  "parametros": {
+    "ke": 0.09113773458581496,
+    "wacc": 0.08631493754338114,
+    "roe": 0.2704807162016013,
+    "fcffEbitda": 0.48069712273285625,
+    "fcfeOcf": 0.6110790856992302
   },
-  {
-   "metodo": "P/E",
-   "multiplo": 17.7,
-   "multiploDcf": 22.8775077067175,
-   "gImplicito": 0.04128810358572169,
-   "gDcf": 0.054305569837902336,
-   "dif": -0.013017466252180643,
-   "difValor": -0.22631432466733392,
-   "aplica": true,
-   "lectura": "Coherente con el DCF."
-  },
-  {
-   "metodo": "P/FCFE",
-   "multiplo": 22.29,
-   "multiploDcf": 29.105194324651865,
-   "gImplicito": 0.044287681576548533,
-   "gDcf": 0.054893566127073995,
-   "dif": -0.010605884550525461,
-   "difValor": -0.23415732080783447,
-   "aplica": true,
-   "lectura": "Coherente con el DCF."
-  },
-  {
-   "metodo": "P/OCF",
-   "multiplo": 13.75,
-   "multiploDcf": 17.06730044062875,
-   "gImplicito": 0.046507026143287306,
-   "gDcf": 0.054893566127073995,
-   "dif": -0.00838653998378669,
-   "difValor": -0.1943658548795396,
-   "aplica": true,
-   "lectura": "Coherente con el DCF."
-  }
- ],
- "dcfFy3": 248.9288311510209,
- "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
- "alertas": 0
+  "multiplos": [
+    {
+      "metodo": "EV/EBITDA",
+      "multiplo": 10.78,
+      "multiploDcf": 10.0776312656254,
+      "gImplicito": 0.03994227880233013,
+      "gDcf": 0.03685744335949146,
+      "dif": 0.0030848354428386696,
+      "difValor": 0.06574449229939061,
+      "aplica": true,
+      "lectura": "Coherente con el DCF."
+    },
+    {
+      "metodo": "EV/FCFF",
+      "multiplo": 24.47,
+      "multiploDcf": 20.96461740468117,
+      "gImplicito": 0.04366417438894922,
+      "gDcf": 0.03685744335949146,
+      "dif": 0.006806731029457759,
+      "difValor": 0.15772522429465985,
+      "aplica": true,
+      "lectura": "Coherente con el DCF."
+    },
+    {
+      "metodo": "P/E",
+      "multiplo": 17.7,
+      "multiploDcf": 18.915527944189115,
+      "gImplicito": 0.04128810358572169,
+      "gDcf": 0.04509925743384615,
+      "dif": -0.0038111538481244572,
+      "difValor": -0.06426085213035415,
+      "aplica": true,
+      "lectura": "Coherente con el DCF."
+    },
+    {
+      "metodo": "P/FCFE",
+      "multiplo": 22.29,
+      "multiploDcf": 21.714931363526944,
+      "gImplicito": 0.044287681576548533,
+      "gDcf": 0.04310158967639912,
+      "dif": 0.0011860919001494136,
+      "difValor": 0.026482636617445543,
+      "aplica": true,
+      "lectura": "Coherente con el DCF."
+    },
+    {
+      "metodo": "P/OCF",
+      "multiplo": 13.75,
+      "multiploDcf": 13.269540403645584,
+      "gImplicito": 0.04470867133480896,
+      "gDcf": 0.04310158967639912,
+      "dif": 0.0016070816584098369,
+      "difValor": 0.03620770439211429,
+      "aplica": true,
+      "lectura": "Coherente con el DCF."
+    }
+  ],
+  "metodo": "DCF inverso completo sin calibración; múltiplos frente al DCF capitalizado FY+3",
+  "nota": "Crecimiento constante en años 1–5 para el DCF inverso. Las proyecciones de múltiplos conservan sus métricas propias; PagBank usa FCFE financiero para el DCF y trata los múltiplos de flujo bancario con cautela."
 }

@@ -1,8 +1,422 @@
 {
  "ticker": "LULU",
  "fecha": "2026-10-01",
+ "spec": {
+  "ticker": "LULU",
+  "empresa": "lululemon athletica inc.",
+  "fecha": "2026-10-01",
+  "industria_damodaran": "Apparel",
+  "historia": "En cinco a diez años lululemon sigue siendo una marca premium de ropa deportiva con márgenes altos para la industria, pero ya no la que crecía 15-25% al año. Américas, que hoy es casi el 70% de las ventas, deja de caer después de 2026 y crece con la economía, porque la marca perdió la novedad frente a Alo Yoga, Vuori y otras marcas de nicho y debe volver a ganarse al cliente con producto y menos rebajas. El crecimiento viene de China continental y del resto del mundo, donde la marca todavía es joven y abre tiendas. El margen operativo se recupera desde ~13% (2026, con aranceles y menos ventas a precio lleno) hacia ~17%, por debajo del 20-24% de 2022-2025 porque los aranceles, el fin de la exención de minimis y la competencia llegaron para quedarse. Reinvierte en tiendas y tecnología, no tiene deuda financiera y recompra acciones. El riesgo es de marca y de moda: una sola marca, en una categoría donde el gusto cambia rápido.",
+  "filtro": [
+   [
+    "Américas deja de caer en 2027",
+    "Sí",
+    "Sí: la caída de 2026 se explica por menos tráfico y conversión, y la nueva CEO (ex-Nike) tiene un plan de producto y precio lleno ([lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm))",
+    "Probable, pero sin volver a crecer doble dígito"
+   ],
+   [
+    "China continental y el resto del mundo crecen 6-8% al año",
+    "Sí",
+    "Sí: +29% y +16% en 2025; +4% y +5% en el 2T26 con 25 tiendas nuevas en un año ([lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm))",
+    "Probable, desacelerando"
+   ],
+   [
+    "El margen operativo vuelve a ~17%",
+    "Sí",
+    "Sí: fue 20-24% en 2022-2025 y el margen de producto en Américas sigue siendo muy alto",
+    "Probable en el caso central"
+   ],
+   [
+    "El margen vuelve a 22% o más",
+    "Sí",
+    "Poco: aranceles, fin de la exención de minimis y más inversión en marca",
+    "Baja"
+   ]
+  ],
+  "tasas_base_nota": "lululemon está en el tramo de ventas de US$7.000-12.000 millones de dólares de 2015 (mediana de crecimiento real a cinco años 3,5%). La Base ({cagrA} nominal compuesto en cinco años, con el primer año en caída) está en la parte baja de la distribución de ese tramo, coherente con una marca que pasó de crecer a estabilizarse.",
+  "segmentos": {
+   "Américas": 7652.2,
+   "China continental": 1879.3,
+   "Resto del mundo": 1562.5
+  },
+  "crecimiento": {
+   "texto": "Las ventas de los últimos doce meses (agosto 2025-julio 2026) suman US$11.094 millones (cálculo propio: 2025 menos 1S25 más 1S26, [lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm) y [lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm)): Américas US$7.652 millones, China continental US$1.879 millones y resto del mundo US$1.563 millones. En 2025 las ventas crecieron 5% (comparables +2%: Américas −3%, China +20%, resto del mundo +9%). En el 2T26 cayeron 4%: Américas −8% (comparables −12% por menos tráfico, menor conversión y menor ticket), China continental +4% y resto del mundo +5%. La guía de 2026 es una caída de 5% a 7% (US$10.350-10.500 millones) y la del 3T26, de 10% a 11% ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)).",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "2024",
+     "2025",
+     "LTM jul-26 (cálculo propio)",
+     "2T26 vs 2T25"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Américas",
+      "7.928",
+      "7.847",
+      "7.652",
+      "−8%"
+     ],
+     [
+      "China continental",
+      "1.361",
+      "1.755",
+      "1.879",
+      "+4%"
+     ],
+     [
+      "Resto del mundo",
+      "1.299",
+      "1.501",
+      "1.563",
+      "+5%"
+     ],
+     [
+      "Total",
+      "10.588",
+      "11.103",
+      "11.094",
+      "−4%"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo GAAP de los últimos doce meses es 17,8% (US$1.979 millones), pero incluye US$134,5 millones de devolución de aranceles IEEPA (una vez, en el 2T26) y excluye como gasto normal US$24,8 millones de la disputa por poderes con el fundador Chip Wilson y US$15,2 millones de la transición del CEO; normalizado, es ~17,0% ([lululemon, 10-Q del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm), [lululemon, 10-K 2025, 17-mar-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm)). El margen va hacia abajo: fue 23,7% en 2024 y 19,9% en 2025, y la guía de 2026 implica ~13% sin la devolución de aranceles (BPA de US$9,48-9,73 menos US$0,86 de la devolución). En el 2T26, sin la devolución, el margen bruto bajó 360 puntos básicos (aranceles, rebajas y más ocupación por tiendas nuevas) y los gastos de venta y administración subieron a 41,7% de las ventas ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)). Los segmentos siguen siendo muy rentables: en 2025 Américas ganó 32,6% de sus ventas, China continental 40,0% y el resto del mundo 23,0%, antes de US$1.397 millones de costos corporativos."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 1.8000× en años 1–5 y un ancla de 1.8000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 26.68% y el terminal de Base 12.40%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.6842%; ROIC terminal Base 0.124. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+   "tabla": {
+    "cols": [
+     "Concepto",
+     "2024",
+     "2025",
+     "LTM jul-26"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Tiendas propias",
+      "767",
+      "811",
+      "825"
+     ],
+     [
+      "Inventarios (US$M)",
+      "1.442",
+      "1.701",
+      "1.711"
+     ],
+     [
+      "ROIC de la hoja",
+      "52%",
+      "36%",
+      "27%"
+     ]
+    ]
+   }
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "Beta bottom-up (Damodaran, 5-oct-2026): la desapalancada de Apparel en EE.UU., corregida por caja (0,79, enero de 2026), reapalancada con la D/E de mercado de lululemon (arrendamientos incluidos, ~0,19) da ~0,90. Tabla de EE.UU. porque 70% de las ventas está en Norteamérica. Ya no se suma la prima de 0,15 por moda (antes 1,03): el riesgo de que la marca pierda el favor del consumidor está en las historias Conservadora y Disrupción, y sumarlo a la tasa lo contaría dos veces. La regresión semanal contra el S&P 500 da 1,20 a cinco años y 1,14 a dos, por encima de la bottom-up; Damodaran prefiere la del sector porque su error de estimación es menor."
+  },
+  "historias": [
+   {
+    "id": "A",
+    "tesis": "base",
+    "nombre": "Base · Américas se estabiliza y crece lo internacional",
+    "prob": 0.45,
+    "margen": 0.17,
+    "crec": {
+     "Américas": [
+      -0.11,
+      0,
+      0.02,
+      0.03,
+      0.03
+     ],
+     "China continental": [
+      0.03,
+      0.08,
+      0.08,
+      0.07,
+      0.06
+     ],
+     "Resto del mundo": [
+      0.04,
+      0.08,
+      0.08,
+      0.07,
+      0.06
+     ]
+    },
+    "tesis_que": "Se cumple la guía de 2026 y Américas cae ~11% en los próximos doce meses; después se estabiliza y crece 2-3% con la nueva CEO, más producto nuevo y menos rebajas. China continental y el resto del mundo crecen 6-8% con tiendas nuevas. El margen operativo sube de ~12,5% a 17% en cinco años con más ventas a precio lleno y disciplina de gastos, sin volver al 20-24% de 2022-2025 por los aranceles y la inversión en marca.",
+    "tesis_contraste": "Comparables de Américas ≥ 0% en 2027 y margen bruto (sin devoluciones de aranceles) ≥ 56%."
+   },
+   {
+    "id": "B",
+    "tesis": "conservadora",
+    "nombre": "Conservadora · Pérdida de participación frente a Alo y Vuori",
+    "prob": 0.3,
+    "margen": 0.135,
+    "roic_terminal": "costo_capital",
+    "crec": {
+     "Américas": [
+      -0.13,
+      -0.05,
+      -0.02,
+      0,
+      0.01
+     ],
+     "China continental": [
+      0,
+      0.04,
+      0.05,
+      0.04,
+      0.04
+     ],
+     "Resto del mundo": [
+      0.02,
+      0.05,
+      0.05,
+      0.05,
+      0.04
+     ]
+    },
+    "tesis_que": "Las marcas de nicho (Alo Yoga, Vuori) y las grandes (Nike, Adidas) siguen quitando clientes en Américas tres años más; el crecimiento internacional se desacelera a un dígito bajo y las rebajas se vuelven permanentes. El margen se queda en 13,5% y la ventaja de marca se erosiona: después del año 10 lululemon gana su costo de capital.",
+    "tesis_contraste": "Comparables de Américas negativos en 2027 y margen operativo ≤ 14% en 2027."
+   },
+   {
+    "id": "C",
+    "tesis": "disrupción",
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "descripcion": "la moda pasa y la marca se vuelve una más",
+    "prob": 0.1,
+    "margen": 0.1,
+    "roic_terminal": "costo_capital",
+    "terminal": "estabilizacion",
+    "crec": {
+     "Américas": [
+      -0.15,
+      -0.1,
+      -0.06,
+      -0.03,
+      0
+     ],
+     "China continental": [
+      -0.05,
+      -0.03,
+      0,
+      0.02,
+      0.02
+     ],
+     "Resto del mundo": [
+      -0.02,
+      0,
+      0.02,
+      0.02,
+      0.02
+     ]
+    },
+    "tesis_que": "lululemon sigue el camino de las marcas de moda que perdieron el favor del consumidor (Under Armour, Gap): Américas cae cuatro años, China se estanca con la competencia local y las rebajas y el costo de las tiendas llevan el margen a 10%.",
+    "tesis_contraste": "Comparables de Américas ≤ −10% en 2027 o margen bruto ≤ 52%."
+   },
+   {
+    "id": "D",
+    "tesis": "optimista",
+    "nombre": "Optimista · La nueva CEO recupera la marca",
+    "prob": 0.15,
+    "margen": 0.21,
+    "crec": {
+     "Américas": [
+      -0.08,
+      0.04,
+      0.05,
+      0.05,
+      0.05
+     ],
+     "China continental": [
+      0.06,
+      0.12,
+      0.12,
+      0.1,
+      0.09
+     ],
+     "Resto del mundo": [
+      0.06,
+      0.12,
+      0.11,
+      0.1,
+      0.09
+     ]
+    },
+    "tesis_que": "Heidi O'Neill (ex-presidenta de consumidor, producto y marca de Nike) recupera la innovación de producto: Américas vuelve a crecer en 2027, la expansión internacional mantiene doble dígito y el margen vuelve a 21%, cerca del promedio de 2022-2025.",
+    "tesis_contraste": "Comparables de Américas ≥ +3% en 2027 con margen bruto ≥ 58%."
+   }
+  ],
+  "prob_texto": "La Base pesa 45%: es la guía de 2026 más una estabilización de Américas que ya muestran marcas comparables. La Conservadora pesa 30% porque la caída de Américas lleva más de un año y la competencia de nicho sigue creciendo. La Disrupción pesa 10%: la marca sigue siendo muy rentable, pero ya hubo marcas de moda deportiva que no se recuperaron. La Optimista pesa 15% porque exige a la vez un cambio de producto exitoso y volver a márgenes de 20%. Son juicio del analista, no frecuencias publicadas; el lector debe poner las suyas.",
+  "premortem": [
+   "Américas sigue cayendo en 2027: el consumidor ya no paga US$100 por un pantalón de yoga cuando hay alternativas iguales.",
+   "La nueva CEO cambia el equipo y el producto, y la transición cuesta dos años de ventas.",
+   "Los aranceles nuevos (secciones 232 y 301) y el fin de la exención de minimis quitan 2-3 puntos de margen para siempre.",
+   "China continental se desacelera por la competencia local y la marca deja de abrir tiendas rentables.",
+   "La disputa con el fundador vuelve y distrae al directorio y a la gerencia."
+  ],
+  "contra": "la guía del 3T26 prevé una caída de ventas de 10% a 11%, los comparables de Américas cayeron 12% en el 2T26 y los gastos de venta y administración subieron a 41,7% de las ventas ([lululemon, comunicado del 2T26, 3-sep-2026](https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm)).",
+  "indicadores": [
+   [
+    "Comparables de Américas",
+    "−12% (2T26)",
+    "≥ 0%",
+    "≤ −8% en 2027"
+   ],
+   [
+    "Ventas de China continental (moneda constante)",
+    "−2% (2T26)",
+    "≥ +6%",
+    "≤ 0%"
+   ],
+   [
+    "Margen bruto sin devoluciones de aranceles",
+    "~54,9% (2T26)",
+    "≥ 57%",
+    "≤ 53%"
+   ],
+   [
+    "Gastos de venta y administración / ventas",
+    "41,7% (2T26)",
+    "≤ 38%",
+    "≥ 42%"
+   ],
+   [
+    "Inventario por unidades",
+    "−7% (2T26)",
+    "Estable con ventas en alza",
+    "Sube con ventas en baja"
+   ],
+   [
+    "Tiendas nuevas internacionales",
+    "25 en un año",
+    "Se mantienen",
+    "Se frenan"
+   ],
+   [
+    "Rebajas (markdowns)",
+    "En alza en 2026",
+    "En baja",
+    "En alza"
+   ],
+   [
+    "Recompras",
+    "US$330M en el 2T26",
+    "Continúan",
+    "Se suspenden"
+   ]
+  ],
+  "margenes_inverso": [
+   0.135,
+   0.17,
+   0.21
+  ],
+  "precio_lectura": "El precio de US$95,86 queda muy por debajo de la Base y cerca de la Disrupción: el mercado descuenta que el margen no se recupera y que Américas sigue cayendo. ¿Qué sabe el mercado que yo no? Puede estar pesando más la Conservadora por la competencia de Alo y Vuori, o puede desconfiar del cambio de CEO en medio de la caída. El DCF inverso de la tabla es elocuente: con un margen de ~15% el precio supone que las ventas caen ~8% al año durante cinco años, y con el margen de la Base ni una caída de 10% anual lo justifica. El precio no apuesta contra el crecimiento sino contra el margen: descuenta que la rentabilidad de 2022-2025 no vuelve.",
+  "frase": "Marca premium de ropa deportiva que deja de crecer en Américas y se apoya en lo internacional; margen que baja de ~20% a ~17%",
+  "confianza": "Media: el margen normalizado y la caja están bien documentados; la estabilización de Américas y el efecto de la nueva CEO no",
+  "cambiaria": "Los comparables de Américas, el margen bruto y la ejecución de la nueva CEO",
+  "revision": "Resultados del 3T26 (diciembre de 2026)",
+  "fuentes": [
+   [
+    "lululemon, comunicado del 2T26 (3-sep-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+   ],
+   [
+    "lululemon, 10-Q del 2T26 (3-sep-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm"
+   ],
+   [
+    "lululemon, 10-K 2025 (17-mar-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000020/lulu-20260201.htm"
+   ],
+   [
+    "lululemon, 10-Q del 1T26 (4-jun-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000078/lulu-20260503.htm"
+   ],
+   [
+    "lululemon, nombramiento de Heidi O'Neill como CEO (22-abr-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000070/lulu-20260421xex991.htm"
+   ],
+   [
+    "lululemon, 8-K del acuerdo de cooperación con Chip Wilson (27-may-2026)",
+    "https://www.sec.gov/Archives/edgar/data/1397187/000121390026061531/ea0292191-8k_lululemon.htm"
+   ],
+   [
+    "Damodaran, ERP implícita de octubre de 2026 (con la tasa y los precios del 30-sep)",
+    "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+   ],
+   [
+    "Damodaran, Betas by Sector (global), enero de 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ],
+   [
+    "Mauboussin y Callahan, The Base Rate Book (2016)",
+    "https://www.credit-suisse.com/media/assets/corporate/docs/about-us/research/publications/the-base-rate-book-integrating-the-past-to-better-anticipate-the-future.pdf"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 2043.6716069208549,
+   "ajuste_ebit": 191.39291329702075,
+   "margen_pp": 0.017251930169192423,
+   "capital_ventas": 0.18421413438983728,
+   "cierre": "2026-08-02",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-08-02",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: un año más de caída en Américas y crecimiento internacional.",
+    "La Base cae {g1A} el primer año, en línea con la guía de 2026 (ventas −5% a −7%; 3T26 −10% a −11%), y crece {cagrA} compuesto en cinco años. Desde el año 2 Américas se estabiliza (0-3%) y China continental y el resto del mundo crecen 6-8% con tiendas nuevas. La visión externa dice que ~{tbA} de las empresas de su tamaño lograron al menos ese crecimiento. Sensibilidad: ±2 puntos de crecimiento en los años 1-5 llevan el DCF Base a {s_g_lo} y {s_g_hi}. Obligaría a revisarlo que los comparables de Américas sigan negativos en 2027 (hacia la Conservadora, {cagrB}) o que vuelvan a crecer pronto (hacia la Optimista, {cagrD})."
+   ],
+   [
+    "Margen: de ~12,5% a 17%, sin volver al 20-24% de 2022-2025.",
+    "La Base parte de {margenY1} el primer año (la guía de 2026 sin la devolución de aranceles) y llega a {mA} en {conv} años ({mrepA} antes del ajuste de arrendamientos, +{arr_pp} pp). Supone más ventas a precio lleno y control de gastos, pero que los aranceles y el fin de la exención de minimis restan margen para siempre. Sensibilidad: ±2 puntos de margen dan {s_m_lo} y {s_m_hi}. La Conservadora ({mB}) supone rebajas permanentes; la Disrupción ({mC}), pérdida de escala; la Optimista ({mD}), la vuelta al promedio histórico."
+   ],
+   [
+    "Reinversión: tiendas y tecnología para crecer afuera.",
+    "El ventas/capital es {s2c1} en los años 1-5 (~US${cap1} de capital por dólar de ventas nuevas) y {s2c2} en los años 6-10, entre la industria (1,77 en EE.UU.) y la rotación propia (2,04); el capital nuevo rinde ~25%, cerca del ROIC actual (27%). Con ±20% en el ventas/capital el DCF Base va de {s_s_lo} a {s_s_hi}."
+   ],
+   [
+    "Descuento y largo plazo: beta del sector y una ventaja que se desvanece.",
+    "El costo de capital inicial es {wacc0} (tasa libre de riesgo {rf} al {fecha_corte}, prima de mercado {erp} de Damodaran de {mes_erp}, beta {beta}, sin deuda financiera; los arrendamientos pesan ~14%) y el terminal {waccT}. Después del año 10 el crecimiento es {tgA} y el ROIC terminal es {roicT}: la marca tiene 28 años y gana muy por encima de su costo de capital, pero la ventaja se desvanece (comparables de Américas −12%, rebajas, ROIC de la hoja de 52% en 2024 a 27% LTM), así que se usa el punto medio entre el costo de capital terminal y el ROIC de la industria (15,8%, menor que el actual). El terminal pesa {terminal} del valor operativo. ±1 punto de tasa da {s_k_lo} y {s_k_hi}."
+   ],
+   [
+    "Acciones, opciones y caja.",
+    "Se usan {acciones} millones de acciones (105,6 millones comunes y 5,1 millones intercambiables al 28-ago-2026, más 1,0 millón de RSU y PSU sin consolidar); las 1,5 millones de opciones a US$258,81 valen poco con la acción a US$96. La caja es US$1.390 millones al 2-ago-2026 y no hay deuda financiera. Una dilución adicional de 5% llevaría el DCF Base a {s_acc}."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.124,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 26.6842%; ROIC terminal Base 0.124. El punto medio entre costo de capital y referencia limitada por ROIC actual es una regla prudencial del protocolo JMR, no una fórmula universal atribuida a Damodaran. El valor vigente de B50 y las historias son la única cifra activa; las cifras históricas se sustituyen en las notas.",
+   "convergencia": true,
+   "g3": true
+  }
+ },
  "mos": 0.35,
- "tg_hoja": 0.0529,
+ "tg_hoja": 0.03,
  "segmentos_ltm": {
   "Américas": 7652.2,
   "China continental": 1879.3,
@@ -28,12 +442,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.124,
-  "salesToCapital": 1.8
+  "salesToCapital": 1.8,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 155.25061180767293,
- "precio": 95.86,
- "dcf_base": 191.61807566970825,
+ "dcf_sin_exceso": 144.4522663908477,
+ "precio": 92.69,
+ "dcf_base": 158.4332135916115,
  "g_ref": 0.018084264730725108,
  "m_base": 0.187261,
  "s2c": 1.8,
@@ -131,83 +546,83 @@
    "anios": [
     -0.0651580133405445,
     0.027466064714023464,
-    0.04165279534030231,
-    0.04496661144169911,
+    0.04165279534030253,
+    0.04496661144169889,
     0.041493865498145155
    ],
    "anios6a10": [
-    0.043775092398516124,
-    0.046056319298887094,
-    0.048337546199258064,
-    0.05061877309962903,
-    0.0529
+    0.039195092398516124,
+    0.03689631929888709,
+    0.03459754619925806,
+    0.03229877309962903,
+    0.03
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.124,
    "detalle": {
-    "v": 191.61807566970825,
-    "pvFlujos": 7683.066798520059,
-    "pvTerminal": 14401.475584534299,
-    "valorTerminal": 32713.653675073725,
-    "activosOperativos": 22084.54238305436,
-    "patrimonio": 21414.66128261958,
+    "v": 158.4332135916115,
+    "pvFlujos": 7605.266303970209,
+    "pvTerminal": 10770.635447822293,
+    "valorTerminal": 24466.023348254348,
+    "activosOperativos": 18375.901751792502,
+    "patrimonio": 17706.020651357725,
     "ingresos": [
      11094,
      10371.136999999999,
      10655.991320000003,
-     11099.843145600002,
+     11099.843145600003,
      11598.965479392004,
      12080.251392911525,
-     12609.06551383353,
-     13189.792661199232,
-     13827.354873318585,
-     14527.278612219148,
-     15295.77165080554,
-     16104.917971133153
+     12553.737962453994,
+     13016.924686711258,
+     13467.278339932012,
+     13902.254907303026,
+     14319.322554522118,
+     14748.902231157781
     ],
     "utilidad": null,
     "nopat": [
      null,
      927.5187839799,
      1130.495828864624,
-     1270.0317393423304,
+     1270.0317393423306,
      1423.745417435676,
      1583.435273176231,
-     1652.7502985665901,
-     1728.869894038704,
-     1812.4392224143062,
-     1904.1826721705638,
-     2004.913935528387
+     1645.498165015443,
+     1706.210990717586,
+     1765.241704294619,
+     1822.2568455676333,
+     1876.9245509346626
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     158.2524000000022,
-     246.5843475555549,
-     277.29018544000104,
+     158.25240000000224,
+     246.58434755555595,
+     277.2901854400001,
      267.3810630664007,
-     293.7856227344471,
-     322.6261929809455,
-     354.2012289551965,
-     388.84652161142384,
-     426.94057699243984,
-     449.5257335153403
+     263.04809419026043,
+     303.7846787593729,
+     340.5395411070259,
+     372.5411752529474,
+     399.03572302668186,
+     454.0946494196763
     ],
     "flujo": [
      null,
      769.2663839798978,
-     883.911481309069,
-     992.7415539023293,
+     883.911481309068,
+     992.7415539023306,
      1156.3643543692754,
-     1289.649650441784,
-     1330.1241055856447,
-     1374.6686650835074,
-     1423.5927008028823,
-     1477.242095178124,
-     1555.3882020130466
+     1320.3871789859706,
+     1341.7134862560702,
+     1365.67144961056,
+     1392.7005290416716,
+     1423.2211225409515,
+     1422.8299015149864
     ],
     "tasa": [
      null,
@@ -226,14 +641,14 @@
      null,
      -0.0651580133405445,
      0.027466064714023464,
-     0.04165279534030231,
-     0.04496661144169911,
+     0.04165279534030253,
+     0.04496661144169889,
      0.041493865498145155,
-     0.043775092398516124,
-     0.046056319298887094,
-     0.048337546199258064,
-     0.05061877309962903,
-     0.0529
+     0.039195092398516124,
+     0.03689631929888709,
+     0.03459754619925806,
+     0.03229877309962903,
+     0.03
     ],
     "margen": [
      null,
@@ -249,7 +664,7 @@
      0.18725193016919245
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.124,
     "caja": 1389.737,
     "deuda": 2043.6716069208549,
@@ -269,10 +684,10 @@
     "wacc0": 0.083626140700917,
     "margenY1": 0.127761
    },
-   "valor_bruto": 191.61807566970825,
-   "valor_bruto_prop": 191.82765252598819,
-   "valor_beta_hoja": 191.61807566970825,
-   "valor_beta_prop": 191.82765252598819
+   "valor_bruto": 158.4332135916115,
+   "valor_bruto_prop": 158.60318784266738,
+   "valor_beta_hoja": 158.4332135916115,
+   "valor_beta_prop": 158.60318784266738
   },
   {
    "id": "B",
@@ -323,23 +738,23 @@
     0.021729775068154877
    ],
    "anios6a10": [
-    0.027963820054523903,
-    0.03419786504089293,
-    0.04043191002726195,
-    0.04666595501363097,
-    0.052899999999999996
+    0.023383820054523902,
+    0.025037865040892927,
+    0.026691910027261952,
+    0.028345955013630977,
+    0.030000000000000002
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 111.8076494719925,
-    "pvFlujos": 6200.10265057455,
-    "pvTerminal": 6965.06593190169,
-    "valorTerminal": 15821.486720775816,
-    "activosOperativos": 13165.16858247624,
-    "patrimonio": 12495.287482041465,
+    "v": 105.80815854489043,
+    "pvFlujos": 6118.21758521567,
+    "pvTerminal": 6376.465889720425,
+    "valorTerminal": 14484.4530383572,
+    "activosOperativos": 12494.683474936095,
+    "patrimonio": 11824.80237450132,
     "ingresos": [
      11094,
      10130.464,
@@ -347,12 +762,12 @@
      10007.357409,
      10177.300701749999,
      10398.451156800002,
-     10689.231573794512,
-     11054.780472545988,
-     11501.7463619831,
-     12038.486340289597,
-     12675.322267690915,
-     13345.846815651765
+     10641.60666749637,
+     10908.049779055409,
+     11199.20646233085,
+     11516.658664900446,
+     11862.15842484746,
+     12218.023177592884
     ],
     "utilidad": null,
     "nopat": [
@@ -362,26 +777,26 @@
      997.9225793743014,
      1049.7643545159592,
      1108.2289815750105,
-     1139.2192973949823,
-     1178.1781651792767,
-     1225.8141587498899,
-     1283.017947137184,
-     1350.889596540741
+     1134.1436086593687,
+     1162.5401432699732,
+     1193.5705601772156,
+     1227.403457581593,
+     1264.225561309041
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -98.89511111111156,
-     30.50256055555615,
+     -98.89511111111158,
+     30.502560555556155,
      94.41294041666576,
-     122.86136391666837,
-     161.54467610806122,
-     203.08272152859797,
-     248.31438302061744,
-     298.18887683694305,
-     353.7977374451768,
-     372.5136377560274
+     122.86136391666838,
+     135.0863948313155,
+     181.59276383106993,
+     235.11859886968114,
+     296.34847609152433,
+     366.0605305362263,
+     421.8772729618616
     ],
     "flujo": [
      null,
@@ -389,12 +804,12 @@
      927.8207164013593,
      903.5096389576357,
      926.9029905992909,
-     946.6843054669492,
-     936.1365758663843,
-     929.8637821586592,
-     927.6252819129468,
-     929.2202096920071,
-     978.3759587847136
+     973.142586743695,
+     952.5508448282988,
+     927.4215444002921,
+     897.2220840856912,
+     861.3429270453669,
+     842.3482883471795
     ],
     "tasa": [
      null,
@@ -416,11 +831,11 @@
      0.005516691222087644,
      0.01698183504440065,
      0.021729775068154877,
-     0.027963820054523903,
-     0.03419786504089293,
-     0.04043191002726195,
-     0.04666595501363097,
-     0.052899999999999996
+     0.023383820054523902,
+     0.025037865040892927,
+     0.026691910027261952,
+     0.028345955013630977,
+     0.030000000000000002
     ],
     "margen": [
      null,
@@ -436,7 +851,7 @@
      0.15225193016919242
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.08990000000000001,
     "caja": 1389.737,
     "deuda": 2043.6716069208549,
@@ -456,10 +871,10 @@
     "wacc0": 0.083626140700917,
     "margenY1": 0.127761
    },
-   "valor_bruto": 111.8076494719925,
-   "valor_bruto_prop": 111.92250585771173,
-   "valor_beta_hoja": 111.8076494719925,
-   "valor_beta_prop": 111.92250585771173
+   "valor_bruto": 105.80815854489043,
+   "valor_bruto_prop": 105.9158008664867,
+   "valor_beta_hoja": 105.80815854489043,
+   "valor_beta_prop": 105.9158008664867
   },
   {
    "id": "C",
@@ -523,12 +938,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 75.44625269649282,
-    "pvFlujos": 5412.527679068977,
+    "v": 75.11512722485217,
+    "pvFlujos": 5375.5220897348345,
     "pvTerminal": 3689.000283967747,
     "valorTerminal": 8379.743935862247,
-    "activosOperativos": 9101.527963036724,
-    "patrimonio": 8431.646862601947,
+    "activosOperativos": 9064.52237370258,
+    "patrimonio": 8394.641273267804,
     "ingresos": [
      11094,
      9820.955,
@@ -561,29 +976,29 @@
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     -391.10947222222217,
-     -178.11721111111183,
-     -55.11550644444368,
+     -391.1094722222222,
+     -178.11721111111186,
+     -55.11550644444369,
      37.32803276666649,
      37.61641353620184,
-     37.907022214953436,
-     38.199876014816454,
-     38.49499228065724,
-     38.79238849134203,
-     39.092082260771754
+     42.784541280981394,
+     48.0302774916527,
+     53.35451285160605,
+     58.75814717429603,
+     64.2420894911513
     ],
     "flujo": [
      null,
-     1269.4239944507221,
+     1269.4239944507224,
      966.6443669985727,
      802.9711677915908,
      689.2972441534403,
      681.7277732499404,
-     686.994516908573,
-     692.301949226014,
-     697.6503845458242,
-     703.0401396400509,
-     708.4715337279898
+     682.1169978425451,
+     682.4715477491778,
+     682.7908639748754,
+     683.074380957097,
+     683.3215264976103
     ],
     "tasa": [
      null,
@@ -645,10 +1060,10 @@
     "wacc0": 0.083626140700917,
     "margenY1": 0.127761
    },
-   "valor_bruto": 75.44625269649282,
-   "valor_bruto_prop": 75.51755293696496,
-   "valor_beta_hoja": 75.44625269649282,
-   "valor_beta_prop": 75.51755293696496
+   "valor_bruto": 75.11512722485217,
+   "valor_bruto_prop": 75.18604589407614,
+   "valor_beta_hoja": 75.11512722485217,
+   "valor_beta_prop": 75.18604589407614
   },
   {
    "id": "D",
@@ -698,23 +1113,23 @@
     0.06532558540298417
    ],
    "anios6a10": [
-    0.06284046832238734,
-    0.060355351241790506,
-    0.057870234161193676,
-    0.055385117080596846,
-    0.052900000000000016
+    0.058260468322387335,
+    0.051195351241790504,
+    0.044130234161193674,
+    0.03706511708059684,
+    0.03000000000000001
    ],
    "anios6a10_propios": false,
-   "terminal_growth": 0.0529,
+   "terminal_growth": 0.03,
    "terminal_propio": false,
    "roic_terminal_usado": 0.124,
    "detalle": {
-    "v": 271.27717104575646,
-    "pvFlujos": 9883.797352288788,
-    "pvTerminal": 21103.20655270659,
-    "valorTerminal": 47936.96219158047,
-    "activosOperativos": 30987.003904995378,
-    "patrimonio": 30317.1228045606,
+    "v": 220.47440569288085,
+    "pvFlujos": 9520.402792429142,
+    "pvTerminal": 15789.036465024918,
+    "valorTerminal": 35865.56584067133,
+    "activosOperativos": 25309.43925745406,
+    "patrimonio": 24639.558157019284,
     "ingresos": [
      11094,
      10688.332,
@@ -722,12 +1137,12 @@
      12245.593763200004,
      13085.767829120003,
      13940.603273004805,
-     14816.637311377031,
-     15710.90066052741,
-     16620.094160635384,
-     17540.600021612718,
-     18468.49776275603,
-     19445.48129440582
+     14752.78934838667,
+     15508.06358087347,
+     16192.438058084097,
+     16792.612670527298,
+     17296.391050643117,
+     17815.282782162412
     ],
     "utilidad": null,
     "nopat": [
@@ -737,39 +1152,39 @@
      1606.8532292155655,
      1899.3680679777967,
      2217.620301059312,
-     2356.976599339113,
-     2499.2327498609056,
-     2643.8639343186805,
-     2790.294647866088,
-     2937.901234738204
+     2346.8198983602615,
+     2466.9661673580376,
+     2575.833961991291,
+     2671.307549372676,
+     2751.446775853856
     ],
     "patrimonioContable": null,
     "utilidadTerminal": null,
     "reinversion": [
      null,
-     399.6655111111128,
-     465.47991288888926,
-     466.76336995555477,
-     474.90857993600105,
-     486.68557687345935,
-     496.81297175021024,
-     505.1075000599859,
-     511.39214498740733,
-     515.4987450796175,
-     542.7686286943289
+     399.66551111111283,
+     465.4799128888893,
+     466.7633699555548,
+     474.9085799360011,
+     451.21448632325865,
+     529.461741495923,
+     579.3112600376918,
+     595.3411072987398,
+     573.0026431889418,
+     665.6726070614196
     ],
     "flujo": [
      null,
      556.2208781452873,
-     872.534559768219,
-     1140.0898592600108,
-     1424.4594880417958,
-     1730.9347241858527,
-     1860.1636275889027,
-     1994.1252498009198,
-     2132.471789331273,
-     2274.7959027864704,
-     2395.132606043875
+     872.5345597682189,
+     1140.0898592600106,
+     1424.4594880417956,
+     1766.4058147360536,
+     1817.3581568643385,
+     1887.654907320346,
+     1980.4928546925512,
+     2098.304906183734,
+     2085.7741687924363
     ],
     "tasa": [
      null,
@@ -791,11 +1206,11 @@
      0.0734470266280638,
      0.06861031667119799,
      0.06532558540298417,
-     0.06284046832238734,
-     0.060355351241790506,
-     0.057870234161193676,
-     0.055385117080596846,
-     0.052900000000000016
+     0.058260468322387335,
+     0.051195351241790504,
+     0.044130234161193674,
+     0.03706511708059684,
+     0.03000000000000001
     ],
     "margen": [
      null,
@@ -811,7 +1226,7 @@
      0.22725193016919243
     ],
     "tasaTerminal": 0.08990000000000001,
-    "gTerminal": 0.0529,
+    "gTerminal": 0.03,
     "roicTerminal": 0.124,
     "caja": 1389.737,
     "deuda": 2043.6716069208549,
@@ -831,28 +1246,28 @@
     "wacc0": 0.083626140700917,
     "margenY1": 0.127761
    },
-   "valor_bruto": 271.27717104575646,
-   "valor_bruto_prop": 271.5800032175511,
-   "valor_beta_hoja": 271.27717104575646,
-   "valor_beta_prop": 271.5800032175511
+   "valor_bruto": 220.47440569288085,
+   "valor_bruto_prop": 220.7167664596442,
+   "valor_beta_hoja": 220.47440569288085,
+   "valor_beta_prop": 220.7167664596442
   }
  ],
- "valor_esperado_beta_hoja": 168.00662981947923,
- "valor_esperado_beta_prop": 168.18795117033739,
+ "valor_esperado_beta_hoja": 143.62006725610965,
+ "valor_esperado_beta_prop": 143.77229434750058,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 0.9082447447244645,
    "ke": 0.09113773458581496,
    "wacc": 0.083626140700917,
-   "dcf_base": 191.61807566970825
+   "dcf_base": 158.4332135916115
   },
   {
    "enfoque": "Bottom-up del sector (Apparel, reapalancada)",
    "beta": 0.9030283287691115,
    "ke": 0.0909181198509667,
    "wacc": 0.08344170908408227,
-   "dcf_base": 191.82765252598819
+   "dcf_base": 158.60318784266738
   }
  ],
  "sensibilidad": {
@@ -872,50 +1287,50 @@
   ],
   "v": [
    [
-    127.58222549180779,
-    143.60063524903563,
-    159.61904500626343,
-    175.63745476349123,
-    191.65586452071906
+    109.93720174711584,
+    122.9905862603377,
+    136.0439707735595,
+    149.0973552867813,
+    162.15073980000312
    ],
    [
-    138.93358002161727,
-    157.14845031901837,
-    175.36332061641946,
-    193.57819091382058,
-    211.79306121122167
+    118.51659221433636,
+    133.27188599632143,
+    148.02717977830648,
+    162.7824735602915,
+    177.5377673422765
    ],
    [
-    151.5077442184123,
-    172.185032680643,
-    192.86232114287367,
-    213.53960960510432,
-    234.2168980673351
+    127.94558632695787,
+    144.59837145572385,
+    161.25115658448988,
+    177.90394171325585,
+    194.55672684202185
    ],
    [
-    165.43189128407772,
-    188.86519600971508,
-    212.29850073535238,
-    235.7318054609897,
-    259.1651101866271
+    138.30907223494168,
+    157.07418088457572,
+    175.83928953420966,
+    194.60439818384367,
+    213.36950683347766
    ],
    [
-    180.84422506441658,
-    207.35717409916106,
-    233.87012313390548,
-    260.38307216864985,
-    286.89602120339435
+    149.69903244782844,
+    170.81211817153493,
+    191.92520389524142,
+    213.03828961894794,
+    234.15137534265446
    ]
   ],
-  "referencia_constante": 192.86232114287367,
+  "referencia_constante": 161.25115658448988,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 0.9082447447244645,
    "margen": 0.15225193016919242,
-   "g": -0.0984625093004145,
-   "tasa_base": 0.9757927542781906
+   "g": -0.07608331731644552,
+   "tasa_base": 0.9654983259655648
   },
   {
    "beta": 0.9082447447244645,
@@ -932,8 +1347,8 @@
   {
    "beta": 0.9030283287691115,
    "margen": 0.15225193016919242,
-   "g": -0.09869162025983585,
-   "tasa_base": 0.9758981453195245
+   "g": -0.07633664777795818,
+   "tasa_base": 0.9656148579778607
   },
   {
    "beta": 0.9030283287691115,
@@ -950,71 +1365,71 @@
  ],
  "ingresos_ltm": 11094,
  "sens_base": {
-  "base": 191.61807566970825,
+  "base": 158.4332135916115,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 170.35368746278093
+    "valor": 141.42203856084024
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 212.88246387663546
+    "valor": 175.4443886223828
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 173.60089154335523
+    "valor": 144.8861322653682
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 211.63466059718178
+    "valor": 173.38345349604137
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 260.0465841087851
+    "valor": 192.46980608447697
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 151.98422606370355
+    "valor": 134.14758315551848
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 182.4606735519085
+    "valor": 154.8057072494931
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 203.42733652322758
+    "valor": 162.67795583504335
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 182.49340539972212
+    "valor": 150.8887748491538
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 187.2099541720519
+    "valor": 155.68415628263418
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 194.5568233348124
+    "valor": 160.26591846426308
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 155.25061180767293
+    "valor": 144.4522663908477
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 182.99203118607815
+ "motor_tecnico": 158.4332135916115
 }

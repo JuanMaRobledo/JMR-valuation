@@ -88,7 +88,7 @@
   "texto": "El resultado operativo NIIF de los últimos doce meses es CHF 444 millones, 13,8% de las ventas (14,1% en el 1S26); ya descuenta los pagos en acciones (~2% de las ventas) y la depreciación de los derechos de uso. El margen bruto subió de 59,6% en 2023 a 62,8% en 2025 y 65,4% en el 2T26 por más venta directa y precio lleno, aun absorbiendo los aranceles de EE.UU. ([On, comunicado del 2T26, 11-ago-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000018/a26q2-ex993xpressrelease.htm)). La guía de 2026 es EBITDA ajustado de 19,5-20% y la meta de 2029, ≥ 22% con margen bruto ≥ 65% ([On, Investor Day 2026, 22-sep-2026](https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm)). Comparables: Deckers ganó 23% y Birkenstock ~29% en su último ejercicio, con margen bruto parecido pero menos inversión en crecimiento; Nike ~7% normalizado."
  },
  "reinversion": {
-  "texto": "On fabrica con terceros: el capex fue CHF 79 millones en 2025 (2,6% de las ventas). El capital invertido (patrimonio + arrendamientos − caja) es ~US$1.570 millones al 30-jun-2026: rota ~2,6 veces las ventas. Se usa 2,3 en los años 1-5 (más tiendas propias, ropa y nuevas categorías) y el promedio de Shoe (2,1) en los años 6-10.",
+  "texto": "La Base usa ventas/capital 2.3000× en años 1–5 y un ancla de 2.1000× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 28.52% y el terminal de Base 8.99%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 28.5245%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
   "tabla": {
    "cols": [
     "Concepto (CHF millones)",
@@ -362,5 +362,11 @@
    "Probabilidades y lectura del resultado.",
    "Con {pA} para la Base, {pB} para la Conservadora, {pC} para la Disrupción y {pD} para la Optimista, el DCF esperado es {ve} frente a un DCF Base de {vA}. Con el margen de seguridad de {mos}, el precio de compra con margen es {vmos}."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.2,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 28.5245%; ROIC terminal Base 0.08990000000000001. El ROIC terminal es rendimiento sostenible del capital nuevo; el ROIC promedio contable de los activos existentes puede diferir. Retornos excedentes requieren persistencia de ventaja por historia.",
+  "convergencia": true,
+  "g3": false
+ }
 }

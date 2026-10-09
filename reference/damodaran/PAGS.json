@@ -285,5 +285,11 @@
    "Probabilidades y lectura del resultado.",
    "La Base pesa {pA}, la Conservadora {pB}, la Disrupción {pC} y la Optimista {pD}. Las cuatro historias están cerca ({vC} a {vD}) porque, con el ROE convergiendo al costo del patrimonio, ninguna crea mucho valor por crecer: la diferencia está en cuánto rinde el capital que ya tiene. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga menos que la Disrupción, es decir, descuenta un ROE o un riesgo país peor que el de cualquier historia, o desconfía de la calidad de la cartera de crédito. Las acciones se fijan en {acciones} millones; el real frente al dólar es un riesgo que este DCF en dólares no aísla."
   ]
- ]
+ ],
+ "revision_roic_2026_10_08": {
+  "roicBase": 0.2,
+  "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 16.2413%; ROIC terminal Base no aplica: ROE/Ke. Financiera: ROIC de la plantilla FCFF es inactivo. El motor activo usa ROE terminal = Ke 11,91% y crecimiento estable USD de 3%; caja y depósitos operativos no se tratan como activos/deuda industriales.",
+  "convergencia": false,
+  "g3": false
+ }
 }

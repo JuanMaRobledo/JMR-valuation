@@ -1,6 +1,318 @@
 {
  "ticker": "NVDA",
  "fecha": "2026-09-30",
+ "spec": {
+  "ticker": "NVDA",
+  "empresa": "NVIDIA Corporation",
+  "fecha": "2026-09-30",
+  "industria_damodaran": "Semiconductor",
+  "segmentos": {
+   "Data Center": 278000,
+   "Gaming, visualización y automotriz": 24970
+  },
+  "riesgo": {
+   "beta_propuesta": null,
+   "texto": "La hoja usaba una beta de regresión de 1,90 (costo del patrimonio 13,5%). Tras la revisión del 30-sep-2026 usa la bottom-up de Semiconductor (66 empresas, 1,50 desapalancada y corregida por caja; 1,51 sin deuda relevante), con costo del patrimonio de 11,7%: el DCF Base pasó de US$162,65 a US$178,38. La ciclicidad del negocio se modela en las historias (Conservadora y Disrupción), no en la tasa."
+  },
+  "historias": [
+   {
+    "nombre": "Base · Ciclo de IA largo que desacelera con la escala",
+    "prob": 0.4,
+    "margen": 0.58,
+    "crec": {
+     "Data Center": [
+      0.5,
+      0.2,
+      0.1,
+      0.08,
+      0.06
+     ],
+     "Gaming, visualización y automotriz": [
+      0.1,
+      0.08,
+      0.07,
+      0.06,
+      0.06
+     ]
+    },
+    "id": "A",
+    "tesis": "base"
+   },
+   {
+    "nombre": "Conservadora · Ciclo de semiconductores: el capex se corrige",
+    "prob": 0.3,
+    "margen": 0.5,
+    "crec": {
+     "Data Center": [
+      0.35,
+      -0.1,
+      0,
+      0.08,
+      0.08
+     ],
+     "Gaming, visualización y automotriz": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+     ]
+    },
+    "id": "B",
+    "tesis": "conservadora"
+   },
+   {
+    "nombre": "Disrupción · Deterioro de los fundamentales",
+    "prob": 0.1,
+    "margen": 0.4,
+    "crec": {
+     "Data Center": [
+      0.25,
+      -0.25,
+      -0.1,
+      0.05,
+      0.05
+     ],
+     "Gaming, visualización y automotriz": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "roic_terminal": "costo_capital",
+    "id": "C",
+    "tesis": "disrupción",
+    "descripcion": "Chips propios de los clientes y corrección fuerte",
+    "terminal": "estabilizacion"
+   },
+   {
+    "nombre": "Optimista · La IA es infraestructura permanente",
+    "prob": 0.2,
+    "margen": 0.6,
+    "crec": {
+     "Data Center": [
+      0.6,
+      0.3,
+      0.2,
+      0.15,
+      0.12
+     ],
+     "Gaming, visualización y automotriz": [
+      0.12,
+      0.12,
+      0.1,
+      0.1,
+      0.08
+     ]
+    },
+    "id": "D",
+    "tesis": "optimista"
+   }
+  ],
+  "margenes_inverso": [
+   0.5,
+   0.58,
+   0.62
+  ],
+  "historia": "NVIDIA pasó de vender tarjetas gráficas a ser el proveedor dominante de la infraestructura de IA: GPUs, sistemas completos, redes (Mellanox) y CUDA, el software que es estándar de la industria desde hace casi veinte años. Diseña pero no fabrica (TSMC produce sus chips). Los números son de otro planeta: ingresos de US$60.922 millones (FY24), US$130.497 millones (FY25) y US$215.938 millones (FY26), margen operativo de ~60% y, en el 2T FY27, US$96.220 millones en un trimestre, más de 90% de Data Center (+117%). La historia de cinco años no es si NVIDIA es buena empresa, sino cuánto dura el ciclo de inversión en IA de los hiperescaladores, si la inferencia sostiene la demanda cuando el entrenamiento madure y cuánto terreno ceden sus márgenes frente a los chips propios de Google, Amazon y Microsoft y frente a AMD.",
+  "filtro": [
+   [
+    "Los ingresos crecen ~50% el próximo año",
+    "Sí",
+    "Sí: la empresa habla de crecimiento limitado por la oferta y guía muy alta",
+    "Probable"
+   ],
+   [
+    "La demanda de IA sigue creciendo cinco años sin corrección",
+    "Sí",
+    "Posible con la inferencia y la IA soberana, pero los semiconductores siempre fueron cíclicos",
+    "Incierto"
+   ],
+   [
+    "El margen operativo se mantiene en ~58-60%",
+    "Sí",
+    "Sí mientras domine CUDA; los chips propios de los clientes presionan",
+    "Media"
+   ],
+   [
+    "Los chips propios de los clientes (TPU, Trainium) reemplazan a NVIDIA",
+    "Sí",
+    "Parcialmente: ganan en inferencia interna, no en el mercado abierto",
+    "Baja a cinco años"
+   ]
+  ],
+  "tasas_base_nota": "En dólares de 2015 la empresa está en el tramo de más de US$50.000 millones: crecer 17,1% anual cinco años (Base) lo logró ~4% de las empresas de ese tamaño; 25,3% (Optimista), ~1%. NVIDIA ya rompió todas las tasas base en 2024-2026, pero la visión externa es clara: sostener crecimientos así desde US$300.000 millones de ventas casi no tiene precedentes, y en semiconductores los ciclos de sobreinversión terminan en correcciones.",
+  "crecimiento": {
+   "texto": "Ingresos de US$60.922 millones (FY24, +126%), US$130.497 millones (FY25, +114%) y US$215.938 millones (FY26, +65%); LTM US$302.970 millones. En el 2T FY27 (jul-2026) facturó US$96.220 millones, con Data Center en US$89.000 millones (+117%). La hoja supone +50% el próximo año y 14% en los años 2-5. Cada historia se valora con su crecimiento año a año por segmentos; el CAGR a cinco años es descriptivo y no reemplaza la trayectoria de flujos.",
+   "tabla": {
+    "cols": [
+     "US$ millones",
+     "FY24",
+     "FY25",
+     "FY26",
+     "LTM"
+    ],
+    "align": [
+     "l",
+     "r",
+     "r",
+     "r",
+     "r"
+    ],
+    "rows": [
+     [
+      "Ingresos",
+      "60.922",
+      "130.497",
+      "215.938",
+      "302.970"
+     ],
+     [
+      "Crecimiento",
+      "+126%",
+      "+114%",
+      "+65%",
+      "—"
+     ],
+     [
+      "Margen operativo",
+      "54,1%",
+      "62,4%",
+      "60,4%",
+      "65,2%"
+     ],
+     [
+      "FCFF (hoja)",
+      "17.211",
+      "46.706",
+      "83.173",
+      "—"
+     ]
+    ]
+   }
+  },
+  "margenes": {
+   "texto": "El margen operativo (54-65%) es de monopolio temporal: precio altísimo por escasez, poco capital (fabless) y software propio. La hoja supone 60% el próximo año y 58% de objetivo. Las fuerzas en contra son la competencia (AMD MI400, TPU, Trainium) y el poder de negociación de cinco clientes enormes; a favor, la escala y el ecosistema CUDA. Las historias van de 40% (corrección fuerte) a 60%."
+  },
+  "reinversion": {
+   "texto": "La Base usa ventas/capital 2.9191× en años 1–5 y un ancla de 2.4436× al comienzo de la segunda etapa. En años 6–10 la intensidad de capital converge gradualmente a margen después de impuestos / ROIC terminal. El capital instalado y el capital incremental pueden rendir distinto: no se impone al primero el ROIC del segundo. El ROIC medio actual ajustado es 141.92% y el terminal de Base 27.20%. El ROIC terminal es una hipótesis de persistencia; en las historias de pérdida de ventaja se iguala al costo de capital. Revisión 8-oct-2026: ROIC actual ajustado del modelo 141.9200%; ROIC terminal Base 0.272. Se mantiene 27,2% terminal por CUDA, costos de cambio y modelo fabless. Conservadora representa un ciclo de demanda, no la desaparición permanente del ecosistema; Disrupción elimina retornos excedentes. Referencia sectorial puntual 27,23%; 20,53% normalizado es sensibilidad, no una cifra comparable automáticamente ni cambio aprobado por error aritmético."
+  },
+  "prob_texto": "Base (40%) es un ciclo de IA largo que desacelera con la escala. Conservadora (30%) es la historia clásica de semiconductores: sobreinversión y corrección en 2028. Disrupción (10%) combina corrección fuerte y pérdida de participación frente a chips propios. Optimista (20%) trata la IA como infraestructura permanente (inferencia masiva, IA soberana, robótica). En las historias de erosión (Disrupción) el ROIC después del año 10 es el costo de capital.",
+  "premortem": [
+   "Los hiperescaladores recortan capex en 2028 porque la monetización de la IA no alcanza para pagar la inversión.",
+   "Los chips propios (TPU, Trainium, Maia) y AMD capturan la inferencia, que es la mayor parte de la demanda futura.",
+   "Controles de exportación más duros o un conflicto en Taiwán cortan ventas o producción.",
+   "Los clientes negocian precios a la baja y el margen cae de ~60% a ~45%.",
+   "Aparecen métodos de IA mucho más eficientes que reducen la necesidad de cómputo."
+  ],
+  "contra": "la concentración de clientes (pocos hiperescaladores) y la historia de los semiconductores: todos los ciclos de escasez terminaron en exceso de capacidad. Una desaceleración del capex de los hiperescaladores sube el peso de Conservadora.",
+  "indicadores": [
+   [
+    "Data Center (interanual)",
+    "+117% (2T FY27)",
+    "≥ +30% en FY28",
+    "Caída trimestral secuencial"
+   ],
+   [
+    "Capex de los hiperescaladores",
+    "Récord",
+    "Sigue creciendo en 2027-2028",
+    "Recortes anunciados"
+   ],
+   [
+    "Margen bruto",
+    "~70-75%",
+    "≥ 70%",
+    "≤ 65%"
+   ],
+   [
+    "Participación de chips propios y AMD en inferencia",
+    "Creciendo",
+    "NVIDIA ≥ 70% del mercado abierto",
+    "Pérdida de clientes grandes"
+   ],
+   [
+    "Restricciones de exportación",
+    "Vigentes para China",
+    "Sin nuevas restricciones",
+    "Nuevas restricciones o problemas en Taiwán"
+   ]
+  ],
+  "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero las métricas operativas y los supuestos de reinversión si el mercado exige una historia distinta.",
+  "frase": "Proveedor dominante de la infraestructura de IA en la cima de un ciclo de inversión",
+  "confianza": "Baja: el valor depende de la duración del ciclo, que nadie puede prever",
+  "cambiaria": "Capex de los hiperescaladores y participación de NVIDIA en inferencia",
+  "revision": "Resultados del 3T FY27 (nov-2026)",
+  "fuentes": [
+   [
+    "NVIDIA, resultados del 4T y año FY2026",
+    "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026"
+   ],
+   [
+    "NVIDIA, Form 10-K FY2026",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+   ],
+   [
+    "Investing.com, presentación del 2T FY27",
+    "https://www.investing.com/news/company-news/nvidia-q2-fy27-slides-revenue-doubles-to-96b-data-center-surges-93CH-4878041"
+   ],
+   [
+    "CNBC, resultados del 2T FY27",
+    "https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html"
+   ],
+   [
+    "IBTimes, NVIDIA frente a AMD en centros de datos (2026)",
+    "https://www.ibtimes.com.au/nvidia-vs-amd-2026-ai-chip-showdown-who-dominates-data-centers-blackwell-mi400-battle-1866177"
+   ],
+   [
+    "Mauboussin & Callahan, The Base Rate Book (2016)",
+    "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+   ],
+   [
+    "Damodaran, Betas by Sector (US), enero 2026",
+    "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html"
+   ]
+  ],
+  "arrendamientos": {
+   "vp": 5224.64012341325,
+   "ajuste_ebit": 156.0327160533409,
+   "margen_pp": 0.000515010450055586,
+   "capital_ventas": 0.017244744111341883,
+   "cierre": "2026-07-26",
+   "criterio": "Damodaran: arrendamientos operativos como deuda; EBIT + gasto − depreciación del activo; compromisos y gasto LTM del 10-Q al 2026-07-26",
+   "informe": "10-Q"
+  },
+  "justificacion": [
+   [
+    "Crecimiento: cuánto dura el ciclo.",
+    "NVIDIA pasó de vender tarjetas gráficas a ser el proveedor dominante de la infraestructura de IA: GPUs, sistemas completos, redes y CUDA, el software estándar de la industria. Los ingresos fueron US$60.922 millones en FY24, US$130.497 millones en FY25 y US$215.938 millones en FY26, y en el 2T FY27 facturó US$96.220 millones en un solo trimestre (Data Center +117%). La pregunta no es si es buena empresa, sino cuánto dura el ciclo de inversión de los hiperescaladores. La Base supone que Data Center crece 50% el primer año y luego se desacelera rápido (20%, 10%, 8%, 6%): {g1A} el primer año y {cagrA} compuesto. La desaceleración es deliberada: sostener crecimientos así desde US$300.000 millones de ventas casi no tiene precedentes (~{tbA} de las empresas de ese tamaño lo lograron), y en semiconductores todos los ciclos de escasez terminaron en exceso de capacidad. La Conservadora ({cagrB}) es justamente eso: una corrección del capex en el año 2; la Disrupción ({cagrC}), corrección fuerte más chips propios de los clientes; la Optimista ({cagrD}), la IA como infraestructura permanente. Una caída secuencial de Data Center sería la primera señal contra la Base."
+   ],
+   [
+    "Margen: de monopolio temporal.",
+    "El margen operativo de 54-65% es el de un monopolio temporal: precio altísimo por escasez, poco capital (NVIDIA diseña pero no fabrica) y software propio. La Base usa {mA}, apenas por debajo del actual, porque CUDA y la escala sostienen el precio mientras la escasez dure. Las fuerzas en contra son la competencia (AMD, los TPU de Google, Trainium de Amazon) y el poder de negociación de cinco clientes enormes. La Conservadora baja a {mB}, la Disrupción a {mC}. Curiosamente, el margen es de los supuestos que menos mueven la Base (dos puntos: {s_m_lo} o {s_m_hi}), porque lo que domina el valor es cuánto dura el crecimiento. Un margen bruto por debajo de 65% invalidaría la Base."
+   ],
+   [
+    "Reinversión: genera más caja de la que puede usar.",
+    "Como no fabrica, NVIDIA casi no invierte en activos fijos: su reinversión es I+D (US$18.497 millones en FY26), compromisos de capacidad con TSMC y capital de trabajo. La hoja usa un ventas/capital de {s2c1}× y {s2c2}×, y el supuesto casi no mueve el valor. En 2026 la empresa subió el dividendo 25 veces y aprobó recompras por US$80.000 millones: genera más caja de la que puede reinvertir. El ROIC actual es altísimo; después del año 10 la Base usa {roicT}, el promedio de semiconductores, no el actual, porque Damodaran limita el retorno de una ventaja duradera al de su industria. La ventaja (los costos de cambio de CUDA) es real; si se perdiera, la Base valdría {s_roic}."
+   ],
+   [
+    "Descuento: la ciclicidad va en las historias.",
+    "Hasta el 30-sep-2026 la hoja usaba una beta de regresión de 1,90; hoy usa la bottom-up de semiconductores, {beta}, con un costo de capital de {wacc0} que converge a {waccT}. La ciclicidad del negocio no se sumó a la tasa: está en la Conservadora y la Disrupción, que es donde Damodaran recomienda ponerla. Un punto más de tasa lleva la Base a {s_k_hi}. El crecimiento perpetuo es {tgA} y el terminal explica {terminal} del valor operativo."
+   ],
+   [
+    "Probabilidades y lectura del resultado.",
+    "La Base pesa {pA}, la Conservadora {pB} —alta, porque es la historia clásica del sector—, la Disrupción {pC} y la Optimista {pD}. El DCF Base es {vA} y el esperado {ve}, frente a un precio de {precio}: el mercado paga algo entre la Base y la Optimista. El antiguo DCF técnico de la hoja ({tecnico}) es más alto que la Base porque suponía un crecimiento más largo; la Base se apoya en la visión externa. Las acciones se fijan en {acciones} millones; las recompras no se modelan."
+   ]
+  ],
+  "revision_roic_2026_10_08": {
+   "roicBase": 0.272,
+   "motivo": "Revisión 8-oct-2026: ROIC actual ajustado del modelo 141.9200%; ROIC terminal Base 0.272. Se mantiene 27,2% terminal por CUDA, costos de cambio y modelo fabless. Conservadora representa un ciclo de demanda, no la desaparición permanente del ecosistema; Disrupción elimina retornos excedentes. Referencia sectorial puntual 27,23%; 20,53% normalizado es sensibilidad, no una cifra comparable automáticamente ni cambio aprobado por error aritmético.",
+   "convergencia": true,
+   "g3": false
+  }
+ },
  "mos": 0.35,
  "tg_hoja": 0.0529,
  "segmentos_ltm": {
@@ -27,12 +339,13 @@
   "convergenceYear": 5,
   "terminalWacc": 0.08990000000000001,
   "roicTerminal": 0.272,
-  "salesToCapital": 2.9191
+  "salesToCapital": 2.9191,
+  "smoothTerminalCapital": true
  },
  "financiero": false,
- "dcf_sin_exceso": 150.83028359765908,
- "precio": 228.38,
- "dcf_base": 222.0943086888792,
+ "dcf_sin_exceso": 139.71127762466242,
+ "precio": 241.71001,
+ "dcf_base": 219.02687665897795,
  "g_ref": 0.179369600512541,
  "m_base": 0.580515,
  "s2c": 2.9191,
@@ -136,12 +449,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.272,
    "detalle": {
-    "v": 222.0943086888792,
-    "pvFlujos": 1728707.268792645,
+    "v": 219.02687665897795,
+    "pvFlujos": 1654782.1568720252,
     "pvTerminal": 3511752.0313019925,
     "valorTerminal": 9760710.092237065,
-    "activosOperativos": 5240459.300094638,
-    "patrimonio": 5352472.839401989,
+    "activosOperativos": 5166534.188174018,
+    "patrimonio": 5278547.727481369,
     "ingresos": [
      302970,
      444467,
@@ -179,11 +492,11 @@
      15737.60813675449,
      12910.56525186531,
      13361.316120025429,
-     16486.734075123248,
-     16996.132162444792,
-     17486.378429096283,
-     17954.289707912303,
-     18904.071633460866
+     27627.543090147436,
+     39969.74099241596,
+     52946.25950982492,
+     66506.76513288372,
+     82815.05728754273
     ],
     "flujo": [
      null,
@@ -192,11 +505,11 @@
      271893.70822359476,
      295308.39203458163,
      311114.99735356105,
-     327038.3171646663,
-     346208.06504898967,
-     366008.4857580266,
-     386420.16104903416,
-     406912.48001515283
+     315897.50814964215,
+     323234.45621901855,
+     330548.604677298,
+     337867.6856240627,
+     343001.494361071
     ],
     "tasa": [
      null,
@@ -258,10 +571,10 @@
     "wacc0": 0.11528664561946814,
     "margenY1": 0.600515
    },
-   "valor_bruto": 222.0943086888792,
-   "valor_bruto_prop": 222.10071990476663,
-   "valor_beta_hoja": 222.0943086888792,
-   "valor_beta_prop": 222.10071990476663
+   "valor_bruto": 219.02687665897795,
+   "valor_bruto_prop": 219.03318935107563,
+   "valor_beta_hoja": 219.02687665897795,
+   "valor_beta_prop": 219.03318935107563
   },
   {
    "nombre": "Conservadora · Ciclo de semiconductores: el capex se corrige",
@@ -312,12 +625,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.272,
    "detalle": {
-    "v": 132.83134422537853,
-    "pvFlujos": 1087076.137403864,
+    "v": 131.0945122263638,
+    "pvFlujos": 1045218.4862276093,
     "pvTerminal": 2002145.7191204077,
     "valorTerminal": 5564847.333341588,
-    "activosOperativos": 3089221.856524272,
-    "patrimonio": 3201235.3958316226,
+    "activosOperativos": 3047364.205348017,
+    "patrimonio": 3159377.744655368,
     "ingresos": [
      302970,
      401518.5,
@@ -355,11 +668,11 @@
      9751.942315268421,
      10517.244203050612,
      10610.940773497447,
-     12670.627313027282,
-     12539.490044366465,
-     12275.094562353042,
-     11872.342490091747,
-     12500.389407817567
+     19703.569865691832,
+     26462.052744969278,
+     32721.913930610084,
+     38244.545065166625,
+     47215.12537019626
     ],
     "flujo": [
      null,
@@ -368,11 +681,11 @@
      156631.7732354879,
      162149.22960273185,
      168321.05738188367,
-     179299.13032251486,
-     192465.8942141602,
-     205634.32139983127,
-     218672.57306435835,
-     230269.25332740758
+     172266.1877698503,
+     178543.33151355735,
+     185187.50203157423,
+     192300.37048928346,
+     195554.51736502888
     ],
     "tasa": [
      null,
@@ -434,10 +747,10 @@
     "wacc0": 0.11528664561946814,
     "margenY1": 0.600515
    },
-   "valor_bruto": 132.83134422537853,
-   "valor_bruto_prop": 132.83500929704408,
-   "valor_beta_hoja": 132.83134422537853,
-   "valor_beta_prop": 132.83500929704408
+   "valor_bruto": 131.0945122263638,
+   "valor_bruto_prop": 131.09812166035985,
+   "valor_beta_hoja": 131.0945122263638,
+   "valor_beta_prop": 131.09812166035985
   },
   {
    "nombre": "Disrupción · Deterioro de los fundamentales",
@@ -491,12 +804,12 @@
    "terminal_propio": true,
    "roic_terminal_usado": 0.0,
    "detalle": {
-    "v": 54.891212915156096,
-    "pvFlujos": 712511.1697835944,
+    "v": 52.33887414602626,
+    "pvFlujos": 650999.8054475653,
     "pvTerminal": 498353.5221643167,
     "valorTerminal": 1385144.5688457922,
-    "activosOperativos": 1210864.6919479112,
-    "patrimonio": 1322878.231255262,
+    "activosOperativos": 1149353.327611882,
+    "patrimonio": 1261366.8669192328,
     "ingresos": [
      302970,
      372470,
@@ -534,11 +847,11 @@
      4017.719502586414,
      4218.605477715734,
      4410.119262610798,
-     5507.450629477348,
-     5757.474652995432,
-     6018.849120946311,
-     6292.089314169799,
-     6577.733905924085
+     14473.93855611761,
+     24507.068414174395,
+     35423.945865592665,
+     47284.25207752303,
+     60151.27102242158
     ],
     "flujo": [
      null,
@@ -547,11 +860,11 @@
      100675.70499339425,
      96096.9235853252,
      90937.02228588451,
-     94180.07791921972,
-     98468.02226050741,
-     102951.19167504563,
-     107638.47445724289,
-     112539.16356839695
+     85213.58999257945,
+     79718.42849932844,
+     73546.09493039927,
+     66646.31169388967,
+     58965.626451899465
     ],
     "tasa": [
      null,
@@ -613,10 +926,10 @@
     "wacc0": 0.11528664561946814,
     "margenY1": 0.600515
    },
-   "valor_bruto": 54.891212915156096,
-   "valor_bruto_prop": 54.892410446544474,
-   "valor_beta_hoja": 54.891212915156096,
-   "valor_beta_prop": 54.892410446544474
+   "valor_bruto": 52.33887414602626,
+   "valor_bruto_prop": 52.33998963789319,
+   "valor_beta_hoja": 52.33887414602626,
+   "valor_beta_prop": 52.33998963789319
   },
   {
    "nombre": "Optimista · La IA es infraestructura permanente",
@@ -667,12 +980,12 @@
    "terminal_propio": false,
    "roic_terminal_usado": 0.272,
    "detalle": {
-    "v": 338.5263720925266,
-    "pvFlujos": 2363488.1165354154,
+    "v": 332.8316877137227,
+    "pvFlujos": 2226246.2230062406,
     "pvTerminal": 5682983.911587126,
     "valorTerminal": 15795522.555527268,
-    "activosOperativos": 8046472.028122541,
-    "patrimonio": 8158485.567429892,
+    "activosOperativos": 7909230.134593366,
+    "patrimonio": 8021243.673900717,
     "ingresos": [
      302970,
      472766.4,
@@ -710,11 +1023,11 @@
      36836.237360830346,
      33842.125731355656,
      33661.02713999679,
-     38919.12333857042,
-     36474.94054648478,
-     32853.19160115702,
-     28087.32627369822,
-     29573.145833576833
+     66392.72073772096,
+     87979.23537153743,
+     102449.15395607435,
+     107432.76575547335,
+     134017.61684972444
     ],
     "flujo": [
      null,
@@ -723,11 +1036,11 @@
      330344.8299733172,
      387547.6191290491,
      437531.22278531746,
-     481871.15156920283,
-     532333.1678158783,
-     580972.1129147194,
-     626302.1287404692,
-     659515.545718882
+     454397.5541700523,
+     480828.8729908256,
+     511376.1505598021,
+     546956.6892586942,
+     555071.0747027344
     ],
     "tasa": [
      null,
@@ -789,28 +1102,28 @@
     "wacc0": 0.11528664561946814,
     "margenY1": 0.600515
    },
-   "valor_bruto": 338.5263720925266,
-   "valor_bruto_prop": 338.5365039667438,
-   "valor_beta_hoja": 338.5263720925266,
-   "valor_beta_prop": 338.5365039667438
+   "valor_bruto": 332.8316877137227,
+   "valor_bruto_prop": 332.84163808824445,
+   "valor_beta_hoja": 332.8316877137227,
+   "valor_beta_prop": 332.84163808824445
   }
  ],
- "valor_esperado_beta_hoja": 201.88152245318616,
- "valor_esperado_beta_prop": 201.8873325890231,
+ "valor_esperado_beta_hoja": 198.7393292888475,
+ "valor_esperado_beta_prop": 198.74503881997643,
  "betas": [
   {
    "enfoque": "Hoja (regresión o la cargada en el libro)",
    "beta": 1.51,
    "ke": 0.11578338296777937,
    "wacc": 0.11528664561946814,
-   "dcf_base": 222.0943086888792
+   "dcf_base": 219.02687665897795
   },
   {
    "enfoque": "Bottom-up del sector (Semiconductor, reapalancada)",
    "beta": 1.5098723528158353,
    "ke": 0.11577806714872865,
    "wacc": 0.11528137112712325,
-   "dcf_base": 222.10071990476663
+   "dcf_base": 219.03318935107563
   }
  ],
  "sensibilidad": {
@@ -830,149 +1143,149 @@
   ],
   "v": [
    [
-    199.97120756925935,
-    206.8539004042786,
-    213.73659323929778,
-    220.61928607431696,
-    227.50197890933615
+    196.62660090688132,
+    203.3453325495324,
+    210.06406419218348,
+    216.7827958348345,
+    223.50152747748558
    ],
    [
-    222.46520457800102,
-    230.2001344852831,
-    237.93506439256512,
-    245.6699942998472,
-    253.4049242071293
+    218.5441537075967,
+    226.08686331109314,
+    233.6295729145896,
+    241.172282518086,
+    248.71499212158253
    ],
    [
-    247.3507513177015,
-    256.03026597969966,
-    264.7097806416979,
-    273.3892953036961,
-    282.06880996569424
+    242.77199766366812,
+    251.22704933216315,
+    259.6821010006582,
+    268.1371526691532,
+    276.59220433764824
    ],
    [
-    274.84855472735325,
-    284.57355530026956,
-    294.2985558731859,
-    304.02355644610213,
-    313.7485570190184
+    269.5214890563182,
+    278.9853419642307,
+    288.44919487214327,
+    297.91304778005576,
+    307.3769006879682
    ],
    [
-    305.19631138839543,
-    316.07691158436796,
-    326.9575117803404,
-    337.838111976313,
-    348.7187121722854
+    299.02010822660634,
+    309.59793326671473,
+    320.1757583068232,
+    330.75358334693163,
+    341.33140838704
    ]
   ],
-  "referencia_constante": 264.7097806416979,
+  "referencia_constante": 259.6821010006582,
   "criterio": "DCF completo sin factor de calibración; crecimiento constante en años 1–5"
  },
  "inverso": [
   {
    "beta": 1.51,
    "margen": 0.5005150104500555,
-   "g": 0.17803128789341105,
-   "tasa_base": 0.031605607569030914
+   "g": 0.19240952732105387,
+   "tasa_base": 0.024991617432315212
   },
   {
    "beta": 1.51,
    "margen": 0.5805150104500555,
-   "g": 0.15171365302347184,
-   "tasa_base": 0.06560088576713939
+   "g": 0.16578896451075387,
+   "tasa_base": 0.04589544968494457
   },
   {
    "beta": 1.51,
    "margen": 0.6205150104500555,
-   "g": 0.14008205258058848,
-   "tasa_base": 0.08188512638717611
+   "g": 0.15401256109860817,
+   "tasa_base": 0.062382414461948546
   },
   {
    "beta": 1.5098723528158353,
    "margen": 0.5005150104500555,
-   "g": 0.17802561609289053,
-   "tasa_base": 0.03160821659727035
+   "g": 0.19240375527629883,
+   "tasa_base": 0.024994272572902532
   },
   {
    "beta": 1.5098723528158353,
    "margen": 0.5805150104500555,
-   "g": 0.15170810980877325,
-   "tasa_base": 0.06560864626771744
+   "g": 0.16578332187755584,
+   "tasa_base": 0.0459033493714218
   },
   {
    "beta": 1.5098723528158353,
    "margen": 0.6205150104500555,
-   "g": 0.14007656566001997,
-   "tasa_base": 0.08189280807597202
+   "g": 0.15400697527107432,
+   "tasa_base": 0.062390234620495935
   }
  ],
  "ingresos_ltm": 302970,
  "sens_base": {
-  "base": 222.0943086888792,
+  "base": 219.02687665897795,
   "casos": [
    {
     "supuesto": "margen",
     "cambio": -0.02,
-    "valor": 215.1021570256492
+    "valor": 212.17167027737756
    },
    {
     "supuesto": "margen",
     "cambio": 0.02,
-    "valor": 229.08646035210924
+    "valor": 225.8820830405784
    },
    {
     "supuesto": "crecimiento",
     "cambio": -0.02,
-    "valor": 200.1717899342041
+    "valor": 197.59738716401998
    },
    {
     "supuesto": "crecimiento",
     "cambio": 0.02,
-    "valor": 246.35661423790103
+    "valor": 242.72192727865976
    },
    {
     "supuesto": "tasa",
     "cambio": -0.01,
-    "valor": 298.52835625564364
+    "valor": 295.2131407754174
    },
    {
     "supuesto": "tasa",
     "cambio": 0.01,
-    "valor": 177.95929492369464
+    "valor": 175.1187643422109
    },
    {
     "supuesto": "terminal",
     "cambio": -0.005,
-    "valor": 205.1089163320798
+    "valor": 202.30925017414827
    },
    {
     "supuesto": "terminal",
     "cambio": 0.005,
-    "valor": 244.2600990824174
+    "valor": 240.92003059070058
    },
    {
     "supuesto": "acciones",
     "cambio": 0.05,
-    "valor": 211.51838922750403
+    "valor": 208.59702538950282
    },
    {
     "supuesto": "s2c",
     "cambio": 0.8,
-    "valor": 220.99408983143343
+    "valor": 218.1535346890106
    },
    {
     "supuesto": "s2c",
     "cambio": 1.2,
-    "valor": 222.82778792717636
+    "valor": 219.6091046389562
    },
    {
     "supuesto": "roic_cc",
     "cambio": 0,
-    "valor": 150.83028359765908
+    "valor": 139.71127762466242
    }
   ]
  },
  "rd_vida": null,
  "rd_ltm": null,
- "motor_tecnico": 348.2000561080782
+ "motor_tecnico": 219.02687665897795
 }
