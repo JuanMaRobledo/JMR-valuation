@@ -29,6 +29,7 @@ from pathlib import Path
 
 from jmr_valuation.io.sheets_auth import get_gspread_client
 from audit_master_formulas import MASTER_ID, TABS, grid_of, cells, norm
+from financieras import FINANCIERAS
 
 _ROOT = Path(__file__).resolve().parent.parent
 EH = "'Escenarios e historias'"
@@ -85,7 +86,7 @@ def keep(tab: str, addr: str, cur, tk: str) -> bool:
         return True
     if tab == "Financials Multiples" and addr in ("E11", "E50", "E90"):
         return True  # % de EBIT proyectado de otros ingresos/intereses: supuesto con valor por defecto (promedio 3 años)
-    if tk == "PAGS" and tab in ("Financials Multiples", "Valuation output"):
+    if tk in FINANCIERAS and tab in ("Financials Multiples", "Valuation output"):
         return True
     return False
 

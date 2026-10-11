@@ -1,0 +1,533 @@
+{
+ "ticker": "NU",
+ "emisor": "Nu Holdings Ltd. (Islas Caimán), CIK 0001691493, acciones clase A NYSE: NU",
+ "moneda": "USD, miles en la fuente; aquí en US$ millones",
+ "normas": "NIIF (IFRS), estados consolidados",
+ "fuentes": {
+  "FY2025_FY2024_FY2023": "20-F 2025, presentado 2026-04-08, acc. 0001292814-26-002166 (R2 resultados, R4 balance, R6 flujos)",
+  "FY2023_FY2022_FY2021": "20-F 2023, presentado 2024-04-19, acc. 0001292814-24-001464 (R2, R4, R6)",
+  "FY2021_balance": "SEC companyfacts ifrs-full (20-F 2022): Equity, Assets, CashAndCashEquivalents, DepositsFromCustomers, Borrowings",
+  "1S26_1S25_balance_jun26": "6-K estados intermedios 2T26 (nufs2q26_6k.htm), presentado 2026-08-13, acc. 0001292814-26-004225, no auditados (revisión KPMG)",
+  "nota_2023": "Balance 2023 del 20-F 2023 (activos 43.498,4); el 20-F 2024 lo reexpresa a 43.345,2 al quitar el activo y pasivo espejo de custodia cripto (153,3): se usa la cifra reexpresada"
+ },
+ "periodos": [
+  "2021",
+  "2022",
+  "2023",
+  "2024",
+  "2025",
+  "1S25",
+  "1S26"
+ ],
+ "resultados": {
+  "ingresos_intereses": [
+   1046.746,
+   3555.213,
+   6439.712,
+   9631.043,
+   13434.683,
+   5860.879,
+   9035.886
+  ],
+  "comisiones": [
+   651.277,
+   1237.018,
+   1589.264,
+   1886.032,
+   2340.058,
+   1055.28,
+   1445.289
+  ],
+  "ingresos_totales": [
+   1698.023,
+   4792.231,
+   8028.976,
+   11517.075,
+   15774.741,
+   6916.159,
+   10481.175
+  ],
+  "gasto_intereses": [
+   367.344,
+   1547.903,
+   2036.925,
+   2834.859,
+   4578.68,
+   1926.193,
+   2825.834
+  ],
+  "gasto_transaccional": [
+   117.119,
+   176.427,
+   215.93,
+   260.324,
+   366.183,
+   136.799,
+   243.702
+  ],
+  "perdida_credito_esperada": [
+   480.643,
+   1404.911,
+   2285.218,
+   3168.983,
+   4204.876,
+   1985.736,
+   3200.228
+  ],
+  "costo_servicios_total": [
+   965.106,
+   3129.241,
+   4538.073,
+   6264.166,
+   9149.739,
+   4048.728,
+   6269.764
+  ],
+  "utilidad_bruta": [
+   732.917,
+   1662.99,
+   3490.903,
+   5252.909,
+   6625.002,
+   2867.431,
+   4211.411
+  ],
+  "soporte_clientes": [
+   190.509,
+   335.363,
+   488.082,
+   604.643,
+   651.76,
+   312.909,
+   431.12
+  ],
+  "gastos_generales": [
+   628.901,
+   1333.267,
+   1042.29,
+   1256.086,
+   1420.46,
+   631.076,
+   1091.83
+  ],
+  "marketing": [
+   79.574,
+   152.997,
+   171.022,
+   246.396,
+   302.822,
+   111.444,
+   166.322
+  ],
+  "otros_gastos_netos": [
+   4.097,
+   150.264,
+   250.431,
+   350.586,
+   377.852,
+   135.412,
+   325.822
+  ],
+  "gastos_operativos_total": [
+   903.081,
+   1971.891,
+   1951.825,
+   2457.711,
+   2752.894,
+   1190.841,
+   2015.094
+  ],
+  "asociadas": [
+   0,
+   0,
+   0,
+   0,
+   -3.689,
+   -2.155,
+   -5.698
+  ],
+  "utilidad_antes_impuestos": [
+   -170.164,
+   -308.901,
+   1539.078,
+   2795.198,
+   3868.419,
+   1674.435,
+   2190.619
+  ],
+  "impuestos": [
+   -4.83,
+   55.733,
+   508.548,
+   823.086,
+   996.747,
+   480.24,
+   258.099
+  ],
+  "utilidad_neta": [
+   -165.334,
+   -364.634,
+   1030.53,
+   1972.112,
+   2871.672,
+   1194.195,
+   1932.52
+  ],
+  "utilidad_controladora": [
+   -164.993,
+   -364.578,
+   1030.53,
+   1972.112,
+   2868.892,
+   1194.041,
+   1932.255
+  ],
+  "bpa_basico": [
+   -0.103,
+   -0.078,
+   0.2175,
+   0.4115,
+   0.5936,
+   0.2476,
+   0.3979
+  ],
+  "bpa_diluido": [
+   -0.103,
+   -0.078,
+   0.2121,
+   0.4034,
+   0.5846,
+   0.2439,
+   0.3936
+  ],
+  "acciones_basicas_prom_millones": [
+   1602.126,
+   4676.977,
+   4738.841,
+   4792.081,
+   4832.944,
+   4821.579,
+   4856.663
+  ],
+  "acciones_diluidas_prom_millones": [
+   1602.126,
+   4676.977,
+   4857.579,
+   4888.918,
+   4907.352,
+   4897.849,
+   4908.841
+  ],
+  "nota_2022": "G&A 2022 incluye US$355,6 M de terminación del CSA (contingent share award), partida de una vez"
+ },
+ "flujos": {
+  "dya": [
+   17.339,
+   35.581,
+   62.895,
+   77.128,
+   97.968,
+   44.392,
+   76.734
+  ],
+  "pagos_en_acciones": [
+   157.324,
+   253.203,
+   212.551,
+   272.382,
+   271.845,
+   134.836,
+   216.826
+  ],
+  "flujo_operativo": [
+   -2924.318,
+   755.573,
+   1266.189,
+   2399.044,
+   3500.464,
+   3640.032,
+   -1242.048
+  ],
+  "capex_ppe": [
+   6.025,
+   20.001,
+   20.243,
+   5.418,
+   7.215,
+   4.394,
+   16.226
+  ],
+  "capex_intangibles": [
+   22.473,
+   94.305,
+   156.76,
+   169.572,
+   333.554,
+   148.499,
+   84.248
+  ],
+  "adquisiciones": [
+   114.486,
+   10.346,
+   0,
+   5.637,
+   1.539,
+   0,
+   0
+  ],
+  "recompras": [
+   4.607,
+   0,
+   0,
+   0,
+   0,
+   0,
+   500.393
+  ],
+  "dividendos": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "nota": "El flujo operativo de un banco incluye la variación de cartera y depósitos: no es un flujo libre del accionista"
+ },
+ "balance": {
+  "fechas": [
+   "2021-12-31",
+   "2022-12-31",
+   "2023-12-31",
+   "2024-12-31",
+   "2025-12-31",
+   "2026-06-30"
+  ],
+  "caja": [
+   2705.675,
+   4172.316,
+   5923.44,
+   9185.742,
+   15003.643,
+   13551.611
+  ],
+  "titulos": [
+   null,
+   10039.0,
+   9278.739,
+   11464.177,
+   16358.503,
+   19181.364
+  ],
+  "tarjetas_credito": [
+   null,
+   8233.072,
+   12414.133,
+   12259.276,
+   18267.904,
+   21494.406
+  ],
+  "prestamos": [
+   1194.8,
+   1673.44,
+   3202.334,
+   5321.885,
+   9421.458,
+   11317.422
+  ],
+  "depositos_banco_central": [
+   null,
+   2778.019,
+   7447.483,
+   6743.336,
+   9537.788,
+   9149.128
+  ],
+  "impuestos_diferidos_activo": [
+   null,
+   811.05,
+   1537.835,
+   1818.339,
+   2510.967,
+   3649.091
+  ],
+  "ppe": [
+   null,
+   27.482,
+   39.294,
+   25.879,
+   27.55,
+   50.665
+  ],
+  "intangibles": [
+   72.3,
+   182.164,
+   295.881,
+   347.616,
+   601.669,
+   747.101
+  ],
+  "plusvalia": [
+   401.9,
+   397.397,
+   397.538,
+   414.287,
+   409.371,
+   409.371
+  ],
+  "activos_totales": [
+   19858.7,
+   29934.872,
+   43345.2,
+   49931.214,
+   74893.877,
+   82753.414
+  ],
+  "depositos": [
+   9667.3,
+   15808.541,
+   23691.13,
+   28855.065,
+   41925.101,
+   45328.419
+  ],
+  "por_pagar_red": [
+   null,
+   7054.783,
+   9755.285,
+   9333.541,
+   13633.949,
+   15541.657
+  ],
+  "prestamos_financiacion": [
+   147.2,
+   585.568,
+   1136.344,
+   1730.357,
+   4398.216,
+   4682.252
+  ],
+  "arrendamientos": [
+   null,
+   20.353,
+   36.942,
+   26.197,
+   29.197,
+   66.433
+  ],
+  "pasivos_totales": [
+   15416.2,
+   25044.089,
+   36938.8,
+   42284.138,
+   63572.315,
+   69501.693
+  ],
+  "prima_emision": [
+   null,
+   4963.774,
+   4972.922,
+   5053.776,
+   5062.464,
+   4566.905
+  ],
+  "otro_resultado_integral": [
+   null,
+   -137.651,
+   156.43,
+   -828.167,
+   -184.3,
+   186.449
+  ],
+  "utilidades_retenidas": [
+   null,
+   64.577,
+   1276.949,
+   3420.596,
+   6412.7,
+   8496.232
+  ],
+  "patrimonio_controladora": [
+   4441.0,
+   4890.783,
+   6406.385,
+   7646.289,
+   11290.948,
+   13249.67
+  ],
+  "patrimonio_total": [
+   4442.5,
+   4890.783,
+   6406.385,
+   7647.076,
+   11321.562,
+   13251.721
+  ],
+  "acciones_en_circulacion_millones": [
+   4609.988545,
+   4694.787854,
+   4765.937154,
+   4818.65864,
+   4855.673632,
+   4830.688659
+  ],
+  "nota_titulos": "Títulos = VR con cambios en resultados + VR con cambios en ORI + costo amortizado (sin derivados)",
+  "nota_acciones": "Acciones emitidas y en circulación (clase A + B, netas de tesorería) de la nota de patrimonio: 20-F 2023 (2021-2023), 6-K 2T25 (dic-24), 6-K 2T26 (dic-25 y jun-26)"
+ },
+ "capital_regulatorio_jun26": {
+  "conglomerado_prudencial_brasil": {
+   "capital_regulatorio": 5597.604,
+   "tier1": 4785.757,
+   "cet1": 4262.877,
+   "at1": 522.881,
+   "tier2": 811.847,
+   "apr": 35710.139,
+   "minimo_requerido": 3749.565,
+   "exceso": 1848.04,
+   "cet1_ratio": 0.119,
+   "tier1_ratio": 0.134,
+   "car": 0.157,
+   "dic25": {
+    "cet1_ratio": 0.13,
+    "tier1_ratio": 0.144,
+    "car": 0.166,
+    "apr": 31141.647
+   }
+  },
+  "mexico": {
+   "capital_regulatorio": 427.572,
+   "ratio": 0.149,
+   "minimo": 0.105
+  },
+  "colombia": {
+   "capital_regulatorio": 179.741,
+   "ratio": 0.153,
+   "minimo": 0.105
+  },
+  "fuente": "6-K 2T26, nota 34 (gestión de capital)"
+ },
+ "recompras_2026": {
+  "programa": "US$1.000 M, 4-jun-2026 a 3-jun-2027 (6-K 4-jun-2026)",
+  "ejecutado_30jun26": {
+   "acciones": 40659600,
+   "costo_musd": 500.393
+  }
+ },
+ "gerencial_2T26": {
+  "ingresos": 5875.7,
+  "utilidad_bruta": 2441.1,
+  "utilidad_neta": 1061.1,
+  "roe_trimestral_anualizado": 0.33,
+  "eficiencia": 0.195,
+  "nim_ajustado_riesgo": 0.124,
+  "npl_15_90": 0.048,
+  "npl_90": 0.069,
+  "cartera_credito": 39400,
+  "depositos": 45300,
+  "clientes_millones": 138.9,
+  "actividad": 0.835,
+  "arpac_usd": 17.1,
+  "fuente": "6-K comunicado 2T26 (nupr2q26_6k.htm), 2026-08-13"
+ }
+}

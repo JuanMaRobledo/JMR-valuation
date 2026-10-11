@@ -1,0 +1,451 @@
+{
+ "fcf_a_fcff": 0.9997941606631495,
+ "empresa": "Nu Holdings Ltd. (NYSE:NU)",
+ "sheet_id": "1FIghcohETa7UiyRciIKiDCmFeEjN7XwlaN4TBCeWO6Q",
+ "fecha": "2026-10-11",
+ "ke": 0.10928606721199999,
+ "categoria": "Financiera",
+ "metodos": {
+  "EV/EBITDA": {
+   "hoja": "EVEBITDA",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -266.25,
+     "Dec '22": -20.13,
+     "Dec '23": 16.02,
+     "Dec '24": 10.8,
+     "Dec '25": 13.69,
+     "LTM": 7.34
+    },
+    "mediana_5a": 13.69,
+    "mediana_10a": 13.69,
+    "p25": 9.94,
+    "p75": 14.27,
+    "min": 7.34,
+    "max": 16.02,
+    "ultimo_cierre": 13.69,
+    "ltm": 7.34,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      -266.25,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -20.13,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 0,
+    "mediana": null,
+    "p25": null,
+    "p75": null
+   },
+   "justificado": {
+    "Conservador": -98.8,
+    "Base": -301.41,
+    "Optimista": -539.83
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 10.802642133481879,
+    "J30": null
+   }
+  },
+  "EV/FCFF": {
+   "hoja": "EVFCFF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -13.78,
+     "Dec '22": 8.58,
+     "Dec '23": 23.57,
+     "Dec '24": 13.95,
+     "Dec '25": 17.2,
+     "LTM": -19.86
+    },
+    "mediana_5a": 15.58,
+    "mediana_10a": 15.58,
+    "p25": 12.61,
+    "p75": 18.79,
+    "min": 8.58,
+    "max": 23.57,
+    "ultimo_cierre": 17.2,
+    "ltm": null,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      -13.78,
+      "métrica negativa o ~0"
+     ],
+     [
+      "LTM",
+      -19.86,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 2.38,
+    "p25": 2.32,
+    "p75": 2.84
+   },
+   "justificado": {
+    "Conservador": 28.07,
+    "Base": 47.31,
+    "Optimista": 71.44
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 0.4974091283006251,
+    "J30": null
+   }
+  },
+  "P/E": {
+   "hoja": "PE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -93.8,
+     "Dec '22": -50.88,
+     "Dec '23": 39.67,
+     "Dec '24": 25.9,
+     "Dec '25": 28.37,
+     "LTM": 17.11
+    },
+    "mediana_5a": 28.37,
+    "mediana_10a": 28.37,
+    "p25": 23.7,
+    "p75": 31.2,
+    "min": 17.11,
+    "max": 39.67,
+    "ultimo_cierre": 28.37,
+    "ltm": 17.11,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      -93.8,
+      "métrica negativa o ~0"
+     ],
+     [
+      "Dec '22",
+      -50.88,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 7,
+    "mediana": 12.4,
+    "p25": 11.15,
+    "p75": 15.59
+   },
+   "justificado": {
+    "Conservador": 17.86,
+    "Base": 27.69,
+    "Optimista": 36.6
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 25.313996247654785,
+    "J30": null
+   }
+  },
+  "P/FCFE": {
+   "hoja": "PFCFE",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -14.64,
+     "Dec '22": 29.8,
+     "Dec '23": 36.45,
+     "Dec '24": 22.45,
+     "Dec '25": 25.73,
+     "LTM": -36.62
+    },
+    "mediana_5a": 27.76,
+    "mediana_10a": 27.76,
+    "p25": 24.91,
+    "p75": 31.46,
+    "min": 22.45,
+    "max": 36.45,
+    "ultimo_cierre": 25.73,
+    "ltm": null,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      -14.64,
+      "métrica negativa o ~0"
+     ],
+     [
+      "LTM",
+      -36.62,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 1.62,
+    "p25": 0.63,
+    "p75": 3.99
+   },
+   "justificado": {
+    "Conservador": 22.15,
+    "Base": 32.77,
+    "Optimista": 42.9
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 1.6614498247932739,
+    "J30": null
+   }
+  },
+  "P/OCF": {
+   "hoja": "POCF",
+   "historia": {
+    "serie": {
+     "—": "",
+     "Dec '21": -14.79,
+     "Dec '22": 25.29,
+     "Dec '23": 31.35,
+     "Dec '24": 20.81,
+     "Dec '25": 23.22,
+     "LTM": -44.26
+    },
+    "mediana_5a": 24.25,
+    "mediana_10a": 24.25,
+    "p25": 22.62,
+    "p75": 26.8,
+    "min": 20.81,
+    "max": 31.35,
+    "ultimo_cierre": 23.22,
+    "ltm": null,
+    "regimen_bajo_actual": false,
+    "excluidos": [
+     [
+      "Dec '21",
+      -14.79,
+      "métrica negativa o ~0"
+     ],
+     [
+      "LTM",
+      -44.26,
+      "métrica negativa o ~0"
+     ]
+    ]
+   },
+   "peers": {
+    "n": 5,
+    "mediana": 1.17,
+    "p25": 0.59,
+    "p75": 2.56
+   },
+   "justificado": {
+    "Conservador": -2.18,
+    "Base": -1.88,
+    "Optimista": -1.94
+   },
+   "actual_J": {
+    "J8": null,
+    "J19": 1.709628688509923,
+    "J30": null
+   }
+  }
+ },
+ "justificado": {
+  "Conservador": {
+   "g": 0.0613729847635221,
+   "g_años_4_10": 0.0698459695270442,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.09918914805936786,
+   "ke": 0.10928606721199999,
+   "roe_fy3": 0.31641260831011764,
+   "fcff_ebitda": -3.520315871322644,
+   "fcfe_ocf": -0.09838514526095564,
+   "multiplos": {
+    "EV/FCFF": 28.066649079657363,
+    "P/FCFE": 22.152049722637702,
+    "P/E": 17.85532647456872,
+    "EV/EBITDA": -98.80347020996089,
+    "P/OCF": -2.1794326297896225
+   }
+  },
+  "Base": {
+   "g": 0.07643429971710039,
+   "g_años_4_10": 0.09996859943420076,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.09918914805936786,
+   "ke": 0.10928606721199999,
+   "roe_fy3": 0.4937510640443418,
+   "fcff_ebitda": -6.371517674086327,
+   "fcfe_ocf": -0.05724710064806854,
+   "multiplos": {
+    "EV/FCFF": 47.305711887238004,
+    "P/FCFE": 32.76640442205194,
+    "P/E": 27.694056515127887,
+    "EV/EBITDA": -301.4091793747726,
+    "P/OCF": -1.8757816518245256
+   }
+  },
+  "Optimista": {
+   "g": 0.08401484067485125,
+   "g_años_4_10": 0.1151296813497025,
+   "g_perpetuidad": 0.0529,
+   "wacc_4_10": 0.09918914805936786,
+   "ke": 0.10928606721199999,
+   "roe_fy3": 0.5728827439244064,
+   "fcff_ebitda": -7.556673606096276,
+   "fcfe_ocf": -0.045187133866422965,
+   "multiplos": {
+    "EV/FCFF": 71.4375169295006,
+    "P/FCFE": 42.895220739735294,
+    "P/E": 36.604517843931234,
+    "EV/EBITDA": -539.8299986662131,
+    "P/OCF": -1.9383120817961814
+   }
+  }
+ },
+ "peers": [
+  {
+   "ticker": "ITUB",
+   "nombre": "Itau Unibanco Banco Holding SA",
+   "precio": 8.529999732971191,
+   "precio_actual": 10.16,
+   "fecha_precio": "2026-09-30",
+   "pe": 10.935897072025453,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.175,
+   "margen_operativo": 0.39073002,
+   "roe": 0.21476,
+   "p_ocf": 0.5913297055855724,
+   "p_fcf": 0.6290041226048698,
+   "ev_fcf": 4.923980919441715,
+   "ocf_ttm": 158994000000.0,
+   "fcf_ttm": 149471000000.0,
+   "interest_ttm": 212430000000.0,
+   "ev_fcff": 2.3196152676705384
+  },
+  {
+   "ticker": "BBD",
+   "nombre": "Banco Bradesco Sa",
+   "precio": 3.5199999809265137,
+   "precio_actual": 4.3,
+   "fecha_precio": "2026-09-30",
+   "pe": 11.354838859402856,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.072,
+   "margen_operativo": 0.34515,
+   "roe": 0.13763,
+   "p_ocf": 2.560317531776856,
+   "p_fcf": 11.197090205087733,
+   "ev_fcf": 179.3427127894191,
+   "ocf_ttm": 14558313000.0,
+   "fcf_ttm": 3328892000.0,
+   "interest_ttm": 218576140000.0,
+   "ev_fcff": 3.3920386886783636
+  },
+  {
+   "ticker": "BSBR",
+   "nombre": "Banco Santander Brasil SA",
+   "precio": 5.570000171661377,
+   "precio_actual": 5.81,
+   "fecha_precio": "2026-09-30",
+   "pe": 16.878787817948453,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.288,
+   "margen_operativo": 0.33218,
+   "roe": 0.11151,
+   "p_ocf": 0.5561830487207242,
+   "p_fcf": 0.619061391211996,
+   "ev_fcf": 5.020561827189451,
+   "ocf_ttm": 37493455000.0,
+   "fcf_ttm": 33685228000.0,
+   "interest_ttm": 108094798000.0,
+   "ev_fcff": 1.420209956799716
+  },
+  {
+   "ticker": "INTR",
+   "nombre": "Inter & Co. Inc.",
+   "precio": 5.340000152587891,
+   "precio_actual": 7.68,
+   "fecha_precio": "2026-09-30",
+   "pe": 8.215385117563109,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.238,
+   "margen_operativo": 0.29732,
+   "roe": 0.16198999,
+   "p_ocf": 1.170552889947531,
+   "p_fcf": 1.6207664684108014,
+   "ev_fcf": 11.341481049233545,
+   "ocf_ttm": 2014161000.0,
+   "fcf_ttm": 1454671000.0,
+   "interest_ttm": 6937077000.0,
+   "ev_fcff": 2.3789782818991534
+  },
+  {
+   "ticker": "BAP",
+   "nombre": "Credicorp Ltd.",
+   "precio": 379.8699951171875,
+   "precio_actual": 381.21,
+   "fecha_precio": "2026-09-30",
+   "pe": 14.307721006614834,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.12,
+   "margen_operativo": 0.49401,
+   "roe": 0.2041,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "error_cashflow": ""
+  },
+  {
+   "ticker": "SOFI",
+   "nombre": "SoFi Technologies, Inc.",
+   "precio": 15.720000267028809,
+   "precio_actual": 15.8,
+   "fecha_precio": "2026-09-30",
+   "pe": 31.440000534057617,
+   "ev_ebitda": null,
+   "crec_ingresos": 0.426,
+   "margen_operativo": 0.16956,
+   "roe": 0.07095,
+   "p_ocf": null,
+   "p_fcf": null,
+   "ev_fcf": null,
+   "ocf_ttm": -8502490000.0,
+   "fcf_ttm": -8799784000.0,
+   "interest_ttm": 1276930000.0,
+   "ev_fcff": null
+  },
+  {
+   "ticker": "COF",
+   "nombre": "Capital One Financial Corporati",
+   "precio": 193.07000732421875,
+   "precio_actual": 199.26,
+   "fecha_precio": "2026-09-30",
+   "pe": 12.400129056976146,
+   "ev_ebitda": null,
+   "crec_ingresos": 11.11,
+   "margen_operativo": 0.33629,
+   "roe": 0.09031,
+   "p_ocf": 3.7659138810546757,
+   "p_fcf": 3.987930486748987,
+   "ev_fcf": 4.094627280526974,
+   "ocf_ttm": 31452000000.0,
+   "fcf_ttm": 29701000000.0,
+   "interest_ttm": 16677000000.0,
+   "ev_fcff": 2.836435466297251
+  }
+ ],
+ "justificado_recalculado": "2026-10-11"
+}

@@ -1,0 +1,380 @@
+{
+ "ticker": "NU",
+ "empresa": "Nu Holdings Ltd.",
+ "fecha": "2026-09-30",
+ "industria_damodaran": "Financial Svcs. (Non-bank & Insurance)",
+ "segmentos": {
+  "Brasil": 17584.3,
+  "México": 1400.9,
+  "Colombia y otros (EE.UU., Nu Global)": 354.6
+ },
+ "riesgo": {
+  "beta_propuesta": 0.82,
+  "texto": "La hoja usa una beta de 0,82: la del patrimonio de «Financial Svcs. (Non-bank & Insurance)» en la tabla global de Damodaran (ene-2026), sin desapalancar ni reapalancar, porque en un banco los depósitos son materia prima y la razón deuda/patrimonio no mide riesgo financiero. Tabla global porque más del 98% de los ingresos de clientes está fuera de EE.UU. (Brasil 90,9%, México 7,2%, Colombia y otros 1,8% en el 1S26). El riesgo país va en la prima de mercado ponderada por esos ingresos (6,88%), no en la beta: Ke = 5,29% + 0,82 × 6,88% = 10,93%. Referencias: la beta del patrimonio de Bank (Money Center) global es 0,70 y la regresión de NU contra el S&P 500 (Yahoo, 5 años mensual) 0,955; son sensibilidades. No se suman primas por riesgos propios (concentración en Brasil, crédito no garantizado, regulación): van en las historias Conservadora y Disrupción."
+ },
+ "historias": [
+  {
+   "nombre": "Base · Líder digital de Brasil que escala México",
+   "prob": 0.45,
+   "margen": 0.32,
+   "crec": {
+    "Brasil": [
+     0.24,
+     0.19,
+     0.15,
+     0.12,
+     0.1
+    ],
+    "México": [
+     0.5,
+     0.45,
+     0.38,
+     0.32,
+     0.26
+    ],
+    "Colombia y otros (EE.UU., Nu Global)": [
+     0.6,
+     0.5,
+     0.4,
+     0.35,
+     0.3
+    ]
+   },
+   "id": "A",
+   "tesis": "base"
+  },
+  {
+   "nombre": "Conservadora · Crédito, impuestos y competencia comprimen el retorno",
+   "prob": 0.25,
+   "margen": 0.24,
+   "crec": {
+    "Brasil": [
+     0.15,
+     0.12,
+     0.1,
+     0.08,
+     0.07
+    ],
+    "México": [
+     0.3,
+     0.25,
+     0.2,
+     0.18,
+     0.15
+    ],
+    "Colombia y otros (EE.UU., Nu Global)": [
+     0.3,
+     0.25,
+     0.2,
+     0.15,
+     0.12
+    ]
+   },
+   "id": "B",
+   "tesis": "conservadora",
+   "roic_terminal": "costo_capital"
+  },
+  {
+   "nombre": "Disrupción · Deterioro de los fundamentales",
+   "prob": 0.1,
+   "margen": 0.15,
+   "crec": {
+    "Brasil": [
+     0.03,
+     0.02,
+     0.04,
+     0.05,
+     0.05
+    ],
+    "México": [
+     0.12,
+     0.1,
+     0.1,
+     0.08,
+     0.08
+    ],
+    "Colombia y otros (EE.UU., Nu Global)": [
+     0.1,
+     0.1,
+     0.08,
+     0.08,
+     0.08
+    ]
+   },
+   "id": "C",
+   "tesis": "disrupción",
+   "descripcion": "Ciclo de crédito y regulación en Brasil",
+   "roic_terminal": "costo_capital",
+   "terminal": "estabilizacion"
+  },
+  {
+   "nombre": "Optimista · Banco digital de América Latina con opción global",
+   "prob": 0.2,
+   "margen": 0.35,
+   "crec": {
+    "Brasil": [
+     0.27,
+     0.22,
+     0.18,
+     0.14,
+     0.12
+    ],
+    "México": [
+     0.6,
+     0.5,
+     0.42,
+     0.35,
+     0.3
+    ],
+    "Colombia y otros (EE.UU., Nu Global)": [
+     0.8,
+     0.65,
+     0.5,
+     0.4,
+     0.35
+    ]
+   },
+   "id": "D",
+   "tesis": "optimista"
+  }
+ ],
+ "margenes_inverso": [
+  0.24,
+  0.32,
+  0.35
+ ],
+ "historia": "Nu Holdings (Nubank) es el banco digital más grande de América Latina: 138,9 millones de clientes al 2T26 (casi 118 millones en Brasil, 15,8 en México y más de 5 en Colombia), 83,5% activos cada mes y un costo de servir de ~US$1 por cliente activo al mes frente a un ingreso de ~US$17 (ARPAC). Gana con tres motores: crédito no garantizado (tarjetas US$26.000 millones y préstamos personales US$10.300 millones de una cartera de US$39.400 millones), rendimiento de los depósitos (US$45.300 millones, a 88% de la tasa interbancaria) y comisiones. En los últimos doce meses a jun-2026 facturó US$19.340 millones (NIIF) y ganó US$3.607 millones, un ROE de ~30% sobre el patrimonio medio (33% anualizado en el 2T26). La historia de cinco a diez años: Brasil madura (ya tiene a la mayoría de los adultos; crece por profundización: más productos por cliente, clientes de mayor ingreso con Ultravioleta y Croma, pymes y crédito garantizado), México y Colombia replican el modelo con licencia bancaria (México operó como banco desde el 6-ago-2026) y EE.UU. y Nu Global son opciones de bajo peso. El riesgo central es el crédito: la mora de 90 días es 6,9% y la empresa se expande a propósito a segmentos de más riesgo; a eso se suman impuestos más altos en Brasil (CSLL de 9% a 15% para instituciones de pago en 2028) y la competencia de Itaú, Mercado Pago, Inter y PicPay.",
+ "filtro": [
+  [
+   "Los ingresos crecen ~19% anual cinco años (en dólares)",
+   "Sí",
+   "Sí: +37% en 2025 y +52% interanual en 1S26 en dólares; la guía y el consenso esperan +45% en 2026 y +24% en 2027",
+   "Probable"
+  ],
+  [
+   "El ROE promedia ~32% sobre el patrimonio inicial cinco años",
+   "Sí",
+   "Sí: 30,8% (2024) y 37,6% (2025) sobre el patrimonio de inicio; 33% anualizado en el 2T26; baja por impuestos y expansión",
+   "Probable"
+  ],
+  [
+   "México llega a 60-70% del tamaño de Brasil en el largo plazo",
+   "Sí",
+   "Plausible: caso base de la gerencia (llamada del 2T26); hoy es 7% de los ingresos",
+   "Posible a 10+ años"
+  ],
+  [
+   "Un ciclo de crédito en Brasil eleva la mora y baja el ROE a ~15%",
+   "Sí",
+   "Sí: la mora 90+ subió a 6,9% y la expansión a segmentos de más riesgo es deliberada",
+   "Baja-media"
+  ]
+ ],
+ "tasas_base_nota": "Con US$19.340 millones de ingresos UDM (US$13.684 millones en dólares de 2015), NU está en el tramo de US$12.000-25.000 millones de The Base Rate Book: la media de ese tramo crece 3,3% real anual a cinco años (mediana 2,9%) y crecer 18,8% nominal (Base) lo logra ~6% de las empresas; la Optimista (22%), ~4%. Se aparta de la tasa base con evidencia específica: el crecimiento de 2024-2026 es orgánico (sin adquisiciones materiales), México y Colombia están en la fase de adquisición de clientes, el consenso espera +45% en 2026 y +24% en 2027, y la cifra en dólares incluye ~4% de inflación brasileña. En un banco el valor depende sobre todo del ROE frente al costo del patrimonio (10,9%), no solo del crecimiento.",
+ "crecimiento": {
+  "texto": "Ingresos NIIF (intereses y ganancias sobre instrumentos financieros + comisiones), en dólares: US$1.698 millones en 2021, 4.792 (2022), 8.029 (2023), 11.517 (2024, +43%) y 15.775 (2025, +37%); UDM a jun-2026 US$19.340 millones (1S26 +52% en dólares; +39% FXN en el 2T26). Todo orgánico: las compras (Easynvest 2021, Olivia 2022) son pequeñas. La división por país sale de la nota 34 del 6-K del 2T26 (ingresos de clientes del 1S26: Brasil 90,9%, México 7,2%, otros 1,8%) y se aplica a los ingresos totales: es una estimación propia porque el rendimiento de tesorería no se reparte por país. En el modelo bancario el crecimiento de los ingresos es también el del patrimonio necesario.",
+  "tabla": {
+   "cols": [
+    "US$ millones",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "UDM jun-26"
+   ],
+   "align": [
+    "l",
+    "r",
+    "r",
+    "r",
+    "r",
+    "r"
+   ],
+   "rows": [
+    [
+     "Ingresos totales NIIF",
+     "4.792",
+     "8.029",
+     "11.517",
+     "15.775",
+     "19.340"
+    ],
+    [
+     "Crecimiento",
+     "+182%",
+     "+68%",
+     "+43%",
+     "+37%",
+     "—"
+    ],
+    [
+     "Utilidad neta (controladora)",
+     "−365",
+     "1.031",
+     "1.972",
+     "2.869",
+     "3.607"
+    ],
+    [
+     "Patrimonio de la controladora (cierre)",
+     "4.891",
+     "6.406",
+     "7.646",
+     "11.291",
+     "13.250"
+    ],
+    [
+     "ROE sobre patrimonio de inicio",
+     "—",
+     "21,1%",
+     "30,8%",
+     "37,5%",
+     "—"
+    ]
+   ]
+  }
+ },
+ "margenes": {
+  "texto": "En un banco la rentabilidad relevante es el ROE, no el margen operativo. Siguiendo a Damodaran, la utilidad de cada año es ROE × patrimonio contable del año anterior: parte del patrimonio de la controladora de US$13.250 millones al 30-jun-2026 y de 4.882,9 millones de acciones diluidas. ROE Base de 32% en los años 1-5: hoy es ~36% sobre el patrimonio de inicio (30% sobre el promedio), y baja por la contribución social (CSLL de las instituciones de pago de 9% a 12% en 2026-2027 y 15% desde 2028; de 15% a 17,5% y 20% en las financieras), el costo de México, Colombia y EE.UU. y un patrimonio que crece con las utilidades retenidas. 24% en la Conservadora, 15% en la Disrupción y 35% en la Optimista. En los años 6-10 el ROE converge al terminal: con ventaja durable (Base y Optimista) el ROE de la industria de Damodaran, 18,8%; en las historias de erosión, el costo del patrimonio. Son supuestos del analista."
+ },
+ "reinversion": {
+  "texto": "La reinversión es el aumento del patrimonio contable que exige crecer (patrimonio del año anterior × crecimiento): un banco que presta más necesita más capital regulatorio. El FCFE es utilidad menos esa retención y se descuenta al Ke de {wacc0} (beta {beta}), que se mantiene en {waccT} en el año 10 porque el riesgo de Brasil es estructural. Con ROE terminal de 18,8%, el valor terminal es patrimonio₁₀ × (ROE − g)/(Ke − g). No se suma la caja ni los títulos ni se restan los depósitos: ya están en la utilidad. Capital: CET1 del conglomerado de Brasil 11,9% (13,0% en dic-25) con exceso de US$1.848 millones sobre el mínimo; México 14,9% y Colombia 15,3%. El patrimonio consolidado (US$13.250 millones) supera al capital regulatorio por los impuestos diferidos (US$3.649 millones), intangibles y plusvalía y el capital fuera de las entidades reguladas; no se agrega un valor por exceso de capital no cuantificado. La recompra de US$1.000 millones (500 ejecutados al 30-jun-2026) es una forma de distribuir FCFE, no un valor adicional."
+ },
+ "prob_texto": "Base (45%) es lo que muestran 2025-2026: Brasil profundiza, México crece como banco y el ROE baja de ~36% a ~32% por impuestos e inversión. Conservadora (25%) es la erosión gradual: la mora, la CSLL y la competencia llevan el ROE a ~24% y la ventaja se pierde (ROE terminal = Ke). Disrupción (10%) es un ciclo de crédito en Brasil o una regulación de tasas (tope al rotativo, crédito vía Pix) que baja el ROE a ~15% y el crecimiento a un dígito. Optimista (20%) es que México y Colombia replican a Brasil y el ROE se sostiene en ~35%. En las historias de erosión el ROE después del año 10 es el costo del patrimonio.",
+ "premortem": [
+  "Un ciclo de crédito en Brasil (desempleo, tasas altas) lleva la mora 90+ por encima de 8% y la pérdida esperada consume el margen.",
+  "El gobierno topa las tasas de la tarjeta o del crédito personal, o el crédito vía Pix desplaza a la tarjeta.",
+  "La CSLL y otros impuestos a las fintechs bajan la utilidad neta más de lo previsto.",
+  "México no alcanza escala rentable y el capital invertido allí rinde menos que el Ke.",
+  "Una compra grande (como la especulación sobre Monzo de sep-2026) destruye valor por acción o diluye.",
+  "El real y el peso se deprecian y el valor en dólares cae aunque el negocio vaya bien en moneda local."
+ ],
+ "contra": "la mora 90+ sube (6,9%) y el crecimiento depende de segmentos de más riesgo; si el ROE cae debajo de 25% dos trimestres seguidos, la Conservadora pasa a ser la historia central.",
+ "indicadores": [
+  [
+   "ROE (anualizado)",
+   "33% (2T26)",
+   "≥ 30%",
+   "< 25%"
+  ],
+  [
+   "Mora 15-90 días",
+   "4,8%",
+   "≤ 5%",
+   "> 5,5%"
+  ],
+  [
+   "Mora 90+ días",
+   "6,9%",
+   "≤ 7%",
+   "> 8%"
+  ],
+  [
+   "NIM ajustado por riesgo",
+   "12,4%",
+   "≥ 11%",
+   "< 9%"
+  ],
+  [
+   "Clientes en México (millones)",
+   "16 (jul-26)",
+   "≥ 20 en 2027",
+   "Estancado"
+  ],
+  [
+   "Índice de eficiencia",
+   "19,5%",
+   "≤ 22%",
+   "> 28%"
+  ],
+  [
+   "CET1 del conglomerado de Brasil",
+   "11,9%",
+   "≥ 11%",
+   "< 10%"
+  ],
+  [
+   "Costo de los depósitos (% de la interbancaria)",
+   "88%",
+   "≤ 90%",
+   "> 100%"
+  ]
+ ],
+ "precio_lectura": "La comparación es condicional a las historias y a su probabilidad. La diferencia frente al precio no constituye una recomendación. Revisar primero el ROE, la mora y la reinversión de capital si el mercado exige una historia distinta.",
+ "frase": "El banco digital dominante de Brasil que replica su modelo en México: el valor depende de cuánto tiempo sostenga un ROE muy superior al costo del patrimonio",
+ "confianza": "Media: el ROE es alto y verificable, pero crédito, país y regulación dominan el resultado",
+ "cambiaria": "ROE, mora 90+, NIM ajustado por riesgo, CSLL y escala de México",
+ "revision": "Resultados del 3T26 (nov-2026) e Investor Day del 8-dic-2026",
+ "fuentes": [
+  [
+   "Nu Holdings, estados financieros intermedios del 2T26 (6-K, 13-ago-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426004225/nufs2q26_6k.htm"
+  ],
+  [
+   "Nu Holdings, comunicado de resultados del 2T26 (6-K, 13-ago-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426004222/nupr2q26_6k.htm"
+  ],
+  [
+   "Nu Holdings, Form 20-F 2025 (8-abr-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426002166/nuform20f_2025.htm"
+  ],
+  [
+   "Nu Holdings, Form 20-F 2023 (19-abr-2024)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281424001464/nuform20f_2023.htm"
+  ],
+  [
+   "Nu Holdings, 6-K programa de recompra de US$1.000 millones (4-jun-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426003326/nu20260604_6k.htm"
+  ],
+  [
+   "Nu Holdings, 6-K inicio de operaciones en EE.UU. y Nu Global (10-sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426004518/nu20260909_6k.htm"
+  ],
+  [
+   "Nu Holdings, 6-K declaración sobre Monzo (30-sep-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426004752/nu20260930_6k.htm"
+  ],
+  [
+   "Nu Holdings, 6-K compra de Banco Porto Real (20-jul-2026)",
+   "https://www.sec.gov/Archives/edgar/data/1691493/000129281426003814/nu20260720_6k.htm"
+  ],
+  [
+   "Damodaran, Betas, ROE y costo del capital por industria (global), enero 2026",
+   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datacurrent.html"
+  ],
+  [
+   "Damodaran, prima de riesgo implícita, octubre 2026 (ERPOct26.xlsx)",
+   "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPOct26.xlsx"
+  ],
+  [
+   "Mauboussin & Callahan, The Base Rate Book (2016)",
+   "https://sorfis.com/wp-content/uploads/2021/09/The-Base-Rate-Book-Integrating-the-Past-to-Better-Anticipate-the-Future-September-2016.pdf"
+  ],
+  [
+   "Zacks / Yahoo Finance, resumen de la llamada del 2T26 (ago-2026)",
+   "https://finance.yahoo.com/markets/stocks/articles/nu-q2-earnings-call-focuses-140000993.html"
+  ]
+ ],
+ "justificacion": [
+  [
+   "Qué se valora: un banco, no una fintech de pagos.",
+   "Nu toma depósitos (US$45.300 millones), presta (US$39.400 millones de cartera) y tiene licencias bancarias en México y en proceso en Brasil (compra de Banco Porto Real). Por eso se valora con un DCF de flujos al accionista (FCFE) como una financiera: la deuda y los depósitos son materia prima del negocio, no financiamiento que haya que restar, y lo que importa es cuánto rinde el patrimonio (ROE) frente a su costo. Evidencia: estados NIIF del 2T26 y 20-F 2025. Si Nu dejara de captar depósitos y se fondeara con deuda de mercado, habría que revisar el enfoque."
+  ],
+  [
+   "Crecimiento: Brasil profundiza, México escala.",
+   "Base: Brasil 24% el año 1 bajando a 10% en el año 5 (en dólares, con ~4% de inflación brasileña), México de 50% a 26% y Colombia y otros de 60% a 30%: el grupo crece 26,5% el año 1 y 18,8% anual cinco años (CAGR). Por qué: Brasil ya tiene a la mayoría de los adultos y crece por productos por cliente (ARPAC US$17, cohortes viejas ~US$25); México tiene 16 millones de clientes (16,5% de los adultos, como Brasil en 2020) y licencia bancaria desde ago-2026. Alternativa descartada: el consenso (+45% en 2026, +24% en 2027) es más alto el año 1 porque incluye el salto del NIM y la apreciación del real, que no se extrapolan. Obligaría a cambiarlo: dos trimestres con cartera creciendo menos de 15% en Brasil."
+  ],
+  [
+   "ROE: el supuesto central.",
+   "Base 32% en los años 1-5 frente a ~36% sobre el patrimonio de inicio hoy. La diferencia la explican la CSLL (de 9% a 15% para instituciones de pago en 2028), la inversión en México, Colombia y EE.UU. y la acumulación de patrimonio. Con ventaja durable (costo de servir de ~US$1, escala y datos de crédito propios, primera relación bancaria) el ROE converge en los años 6-10 al de la industria (18,8%), no al Ke: Itaú, con décadas de ventaja en Brasil, gana 21-22%. Sensibilidad: cada ±2 pp de ROE en los años 1-5 se ve en la tabla de sensibilidad. Obligaría a cambiarlo: ROE < 25% dos trimestres o una regulación que tope las tasas."
+  ],
+  [
+   "Descuento: Brasil cuesta caro.",
+   "Ke de 10,93% = Treasury 5,29% + beta 0,82 × prima de 6,88% (madura 3,70% + riesgo país de Brasil 3,24%, México 2,46% y Colombia 2,85%, ponderados por ingresos). Se mantiene en el año 10 porque el riesgo soberano de Brasil es estructural. Con la beta de regresión (0,955) el Ke sube a 11,86%; con la de bancos globales (0,70), baja a 10,10%. El crecimiento estable en dólares es la tasa libre (5,29%), el tope de Damodaran."
+  ],
+  [
+   "Probabilidades y lectura del resultado.",
+   "Base 45%, Conservadora 25%, Disrupción 10% y Optimista 20%: el sesgo a la baja (35% en historias de erosión) refleja que el crédito no garantizado en Brasil ya tuvo ciclos duros (2015-2016) y que la mora 90+ está subiendo. El DCF Base es el valor intrínseco principal; el esperado es el complemento. Las probabilidades son juicio del analista y se mueven 5-10 pp por trimestre según los indicadores."
+  ]
+ ]
+}

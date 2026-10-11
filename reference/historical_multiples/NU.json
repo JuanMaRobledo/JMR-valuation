@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "ticker": "NU",
+  "fecha": "2026-10-11",
+  "sheet_id": "1FIghcohETa7UiyRciIKiDCmFeEjN7XwlaN4TBCeWO6Q",
+  "independiente": true,
+  "afecta_dcf": false,
+  "afecta_ponderado": false,
+  "precio_actual": 12.66,
+  "precio_analisis": 12.66,
+  "ke": 0.10928606721199999,
+  "regla": {
+    "historia": "Solo cierres fiscales positivos y válidos; LTM se excluye de las estadísticas históricas. Se respetan las exclusiones/outliers documentados por multiples_anchors.py.",
+    "estadisticas": "Mínimo válido, P25, mediana 5A, promedio 5A y mediana histórica depurada.",
+    "valoracion": "Cada ancla histórica se aplica a la métrica Base de FY+3 y luego se trae a valor presente con Ke. No entra al DCF ni al ponderado principal."
+  },
+  "pesos_relativos": {
+    "P/E": 1.0
+  },
+  "metodos": [
+    {
+      "nombre": "EV/EBITDA",
+      "aplica": false,
+      "peso_original": 0.0,
+      "actual": 7.335580465478427,
+      "estadisticas": {
+        "n": 3,
+        "periodos_validos": [
+          "Dec '23",
+          "Dec '24",
+          "Dec '25"
+        ],
+        "min": 10.8,
+        "p25": 12.245000000000001,
+        "mediana_5a": 13.69,
+        "promedio_5a": 13.503333333333334,
+        "mediana_10a": 13.69,
+        "max": 16.02
+      },
+      "descuento_vs_mediana": -0.4641650500015758,
+      "percentil_actual": 0.0,
+      "precios": {},
+      "excluidos": [
+        [
+          "Dec '21",
+          -266.25,
+          "métrica negativa o ~0"
+        ],
+        [
+          "Dec '22",
+          -20.13,
+          "métrica negativa o ~0"
+        ]
+      ]
+    },
+    {
+      "nombre": "EV/FCFF",
+      "aplica": false,
+      "peso_original": 0.0,
+      "actual": null,
+      "estadisticas": {
+        "n": 4,
+        "periodos_validos": [
+          "Dec '22",
+          "Dec '23",
+          "Dec '24",
+          "Dec '25"
+        ],
+        "min": 8.58,
+        "p25": 12.6075,
+        "mediana_5a": 15.575,
+        "promedio_5a": 15.825,
+        "mediana_10a": 15.575,
+        "max": 23.57
+      },
+      "descuento_vs_mediana": null,
+      "percentil_actual": null,
+      "precios": {},
+      "excluidos": [
+        [
+          "Dec '21",
+          -13.78,
+          "métrica negativa o ~0"
+        ],
+        [
+          "LTM",
+          -19.86,
+          "métrica negativa o ~0"
+        ]
+      ]
+    },
+    {
+      "nombre": "P/E",
+      "aplica": true,
+      "peso_original": 0.6,
+      "actual": 16.954455572677933,
+      "estadisticas": {
+        "n": 3,
+        "periodos_validos": [
+          "Dec '23",
+          "Dec '24",
+          "Dec '25"
+        ],
+        "min": 25.9,
+        "p25": 27.134999999999998,
+        "mediana_5a": 28.37,
+        "promedio_5a": 31.313333333333333,
+        "mediana_10a": 28.37,
+        "max": 39.67
+      },
+      "descuento_vs_mediana": -0.40238083987740814,
+      "percentil_actual": 0.0,
+      "precios": {
+        "min": {
+          "multiplo": 25.9,
+          "fy3": 34.52270001099466,
+          "vp": 25.291470434085955
+        },
+        "p25": {
+          "multiplo": 27.134999999999998,
+          "fy3": 36.168859644723554,
+          "vp": 26.497453676792368
+        },
+        "mediana_5a": {
+          "multiplo": 28.37,
+          "fy3": 37.81501927845245,
+          "vp": 27.703436919498785
+        },
+        "promedio_5a": {
+          "multiplo": 31.313333333333333,
+          "fy3": 41.738255328607956,
+          "vp": 30.57761560589491
+        },
+        "mediana_10a": {
+          "multiplo": 28.37,
+          "fy3": 37.81501927845245,
+          "vp": 27.703436919498785
+        }
+      },
+      "excluidos": [
+        [
+          "Dec '21",
+          -93.8,
+          "métrica negativa o ~0"
+        ],
+        [
+          "Dec '22",
+          -50.88,
+          "métrica negativa o ~0"
+        ]
+      ]
+    },
+    {
+      "nombre": "P/FCFE",
+      "aplica": false,
+      "peso_original": 0.0,
+      "actual": null,
+      "estadisticas": {
+        "n": 4,
+        "periodos_validos": [
+          "Dec '22",
+          "Dec '23",
+          "Dec '24",
+          "Dec '25"
+        ],
+        "min": 22.45,
+        "p25": 24.91,
+        "mediana_5a": 27.765,
+        "promedio_5a": 28.6075,
+        "mediana_10a": 27.765,
+        "max": 36.45
+      },
+      "descuento_vs_mediana": null,
+      "percentil_actual": null,
+      "precios": {},
+      "excluidos": [
+        [
+          "Dec '21",
+          -14.64,
+          "métrica negativa o ~0"
+        ],
+        [
+          "LTM",
+          -36.62,
+          "métrica negativa o ~0"
+        ]
+      ]
+    },
+    {
+      "nombre": "P/OCF",
+      "aplica": false,
+      "peso_original": 0.0,
+      "actual": null,
+      "estadisticas": {
+        "n": 4,
+        "periodos_validos": [
+          "Dec '22",
+          "Dec '23",
+          "Dec '24",
+          "Dec '25"
+        ],
+        "min": 20.81,
+        "p25": 22.6175,
+        "mediana_5a": 24.255,
+        "promedio_5a": 25.1675,
+        "mediana_10a": 24.255,
+        "max": 31.35
+      },
+      "descuento_vs_mediana": null,
+      "percentil_actual": null,
+      "precios": {},
+      "excluidos": [
+        [
+          "Dec '21",
+          -14.79,
+          "métrica negativa o ~0"
+        ],
+        [
+          "LTM",
+          -44.26,
+          "métrica negativa o ~0"
+        ]
+      ]
+    }
+  ],
+  "consolidado_vp": {
+    "min": 25.291470434085955,
+    "p25": 26.497453676792368,
+    "mediana_5a": 27.703436919498785,
+    "promedio_5a": 30.57761560589491,
+    "mediana_10a": 27.703436919498785
+  },
+  "nota": "Barato frente a su propia historia no equivale a infravalorado intrínsecamente. Esta capa es una lectura histórica independiente."
+}

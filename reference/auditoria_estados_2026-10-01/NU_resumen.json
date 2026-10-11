@@ -1,0 +1,51 @@
+{
+ "ticker": "NU",
+ "fecha": "2026-10-01",
+ "cambios": [],
+ "checks": {
+  "probabilidades_suman_100": true,
+  "orden_severidad_C_B_A_D": true,
+  "valor_esperado_igual_suma": true,
+  "mos_sobre_esperado": true
+ },
+ "orden": [
+  "C",
+  "B",
+  "A",
+  "D"
+ ],
+ "salvedades": [
+  "Arrendamientos operativos: la deuda del DCF incluye 66,4 millones de arrendamientos operativos mientras el EBIT ya descuenta el alquiler (conversor de arrendamientos desactivado). Con el criterio de Damodaran o se convierten (deuda y EBIT ajustado) o se excluyen; excluirlos subiría el DCF en ~US$0,01 por acción. Es una decisión de método pendiente; no se cambió en esta auditoría.",
+  "No se auditaron en esta ronda las fuentes de los múltiplos de peers ni la década histórica importada; la coincidencia de la hoja con el motor verifica la aritmética, no la validez económica de los supuestos."
+ ],
+ "arrendamientos": {
+  "incluye_operativos": true,
+  "conversor": "No",
+  "arrendamientos": 66.433,
+  "acciones": 4882.866659,
+  "efecto_por_accion": 0.013605327492929191
+ },
+ "antes": {
+  "dcfTecnico": 12.87879101,
+  "valorEsperado": 10.409582551787162,
+  "precioMOS": 6.766228658661656,
+  "historias": {
+   "A": 12.87879101292889,
+   "B": 5.02755339521064,
+   "C": 3.290829991900617,
+   "D": 15.140776239882202
+  }
+ },
+ "despues": {
+  "dcfTecnico": 12.87879101,
+  "valorEsperado": 10.409582551787162,
+  "precioMOS": 6.766228658661656,
+  "historias": {
+   "A": 12.87879101292889,
+   "B": 5.02755339521064,
+   "C": 3.290829991900617,
+   "D": 15.140776239882202
+  }
+ },
+ "tramo_tasas_base": "$12,000-25,000 Mn"
+}

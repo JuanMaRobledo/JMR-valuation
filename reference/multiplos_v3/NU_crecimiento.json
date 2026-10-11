@@ -1,0 +1,84 @@
+{
+ "fecha": "2026-10-11",
+ "umbral": 0.02,
+ "precio": 16.12,
+ "dcfHoy": -30.90730493809173,
+ "dcfInverso": {
+  "gImplicito": null,
+  "gDcf": 0.18940218350320975,
+  "dif": null,
+  "lectura": "Ningún crecimiento entre −20% y 80% justifica el precio con estos márgenes."
+ },
+ "gDcf": {
+  "anios4a10": 0.09996859943420076,
+  "perpetuidad": 0.0529,
+  "puntoMedio": 0.07643429971710039
+ },
+ "parametros": {
+  "ke": 0.10928606721199999,
+  "wacc": 0.09918914805936786,
+  "roe": 0.4937510640443418,
+  "fcffEbitda": -6.371517674086327,
+  "fcfeOcf": -0.05724710064806854
+ },
+ "multiplos": [
+  {
+   "metodo": "EV/EBITDA",
+   "multiplo": 10.802642133481879,
+   "multiploDcf": null,
+   "gImplicito": null,
+   "gDcf": null,
+   "dif": null,
+   "difValor": null,
+   "aplica": false,
+   "lectura": "No aplica: NU es un banco: los depósitos (US$45.300 M) y el fondeo son materia prima del negocio y el valor empresa no tiene sentid"
+  },
+  {
+   "metodo": "EV/FCFF",
+   "multiplo": 0.4974091283006251,
+   "multiploDcf": null,
+   "gImplicito": null,
+   "gDcf": null,
+   "dif": null,
+   "difValor": null,
+   "aplica": false,
+   "lectura": "No aplica: Igual que EV/EBITDA: en un banco el FCFF no se separa de la financiación; peso 0%."
+  },
+  {
+   "metodo": "P/E",
+   "multiplo": 23.32,
+   "multiploDcf": 13.18866327302622,
+   "gImplicito": 0.06990218511158122,
+   "gDcf": 0.03650607921763029,
+   "dif": 0.03339610589395093,
+   "difValor": 0.7681852601161361,
+   "aplica": true,
+   "lectura": "Revisar: el múltiplo supone más crecimiento que el DCF. En valor, 77% por encima del DCF en FY+3."
+  },
+  {
+   "metodo": "P/FCFE",
+   "multiplo": 1.6614498247932739,
+   "multiploDcf": null,
+   "gImplicito": null,
+   "gDcf": null,
+   "dif": null,
+   "difValor": null,
+   "aplica": false,
+   "lectura": "No aplica: El flujo de caja contable de NU y de los peers incluye la variación de cartera y depósitos (flujo operativo de −US$1.382"
+  },
+  {
+   "metodo": "P/OCF",
+   "multiplo": 1.709628688509923,
+   "multiploDcf": null,
+   "gImplicito": null,
+   "gDcf": null,
+   "dif": null,
+   "difValor": null,
+   "aplica": false,
+   "lectura": "No aplica: Mismo motivo que P/FCFE: el flujo operativo de un banco incluye préstamos y depósitos y no mide la generación del accion"
+  }
+ ],
+ "dcfFy3": 17.579469718946225,
+ "metodo": "v2: múltiplo frente al múltiplo que implica el DCF en FY+3, ambos por la misma fórmula",
+ "alertas": 1
+}

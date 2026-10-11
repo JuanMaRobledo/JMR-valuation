@@ -1,0 +1,32 @@
+{
+ "Input sheet!D1": {
+  "before": "=IF(A1=\"\";\"\";GOOGLEFINANCE(REGEXEXTRACT(A1;\"\\(.*?:(.*?)\\)\");\"price\"))",
+  "after": 12.66,
+  "reason": "Corte 2026-09-30 (NU)"
+ },
+ "Input sheet!B4": {
+  "before": 46279,
+  "after": "=DATE(2026;9;30)",
+  "reason": "Corte 2026-09-30 (NU)"
+ },
+ "Input sheet!B35": {
+  "before": 0.0529,
+  "after": 0.0529,
+  "reason": "Corte 2026-09-30 (NU)"
+ },
+ "Resumen de Valoración!C25": {
+  "before": 14.41,
+  "after": 12.66,
+  "reason": "Corte 2026-09-30 (NU)"
+ },
+ "Country equity risk premiums!B2": {
+  "before": 0.037,
+  "after": 0.037,
+  "reason": "Corte 2026-09-30 (NU)"
+ },
+ "Trailing Valuation!L3": {
+  "before": 16.12,
+  "after": "='Input sheet'!D1",
+  "reason": "Corte 2026-09-30 (NU)"
+ }
+}

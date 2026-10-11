@@ -78,6 +78,11 @@ C = {
              "Ventas +126%, +114%, +65%; Base 17,1% (46,7% el primer año); margen de 16% (2023, fondo del ciclo) a ~60%; "
              "semiconductores es manufactura cíclica (Damodaran: P/E normalizado), así que las utilidades de hoy no son una base "
              "estable: más peso al DCF (antes «Madura»)."),
+    "NU": ("Crecimiento alto que pasa a crecimiento maduro (banco digital)", "Financial Svcs. (Non-bank & Insurance)",
+           "Financiera",
+           "Ingresos +68%, +43%, +37% (2023-2025, NIIF en dólares); Base ~15% anual cinco años; utilidad positiva y en alza "
+           "(ROE 21% → 38% sobre el patrimonio de inicio); balance de banco (depósitos US$45.300 M, CET1 11,9%): Damodaran "
+           "pone precio a los bancos con P/BV y flujo al accionista, no con múltiplos de EV."),
     "NVO": ("Transición a declive (patentes y precio)", "Drugs (Pharmaceutical)", "Biotech/Farma",
             "Ventas +31%, +25%, +6% y +2% en el 1S26; Base 0,8% (−3,4% el primer año); margen en baja (44% → 40%); flujo libre "
             "de 38% a 19% de las ventas; genéricos de semaglutida fuera de EE.UU. desde 2026: utilidades en cambio que dependen "

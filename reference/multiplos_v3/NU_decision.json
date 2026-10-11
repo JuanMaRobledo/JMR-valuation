@@ -1,0 +1,35 @@
+{
+ "ticker": "NU",
+ "etapa_desde": "Dec '24",
+ "etapa_motivo": "A: NU fue rentable por primera vez en 2023 (P/E de 39,7x sobre una utilidad que recién arrancaba y crecimiento de ingresos de +68%); desde 2024 la utilidad está en régimen (ROE 31-38% sobre el patrimonio de inicio). Se usan 2024, 2025 y el UDM; 2021-2022 son pérdidas. Historia corta: tres lecturas, no diez años.",
+ "historia_excluir": {
+  "*": [
+   "—"
+  ]
+ },
+ "historia_motivo": "Solo cierres con utilidad positiva y en la etapa actual.",
+ "no_aplica": {
+  "EV/EBITDA": "NU es un banco: los depósitos (US$45.300 M) y el fondeo son materia prima del negocio y el valor empresa no tiene sentido; peso 0% en la categoría Financiera.",
+  "EV/FCFF": "Igual que EV/EBITDA: en un banco el FCFF no se separa de la financiación; peso 0%.",
+  "P/FCFE": "El flujo de caja contable de NU y de los peers incluye la variación de cartera y depósitos (flujo operativo de −US$1.382 M UDM en NU; P/FCF de 0,6x en Itaú y Santander Brasil): no hay un denominador comparable. El FCFE del banco (utilidad − aumento del patrimonio) ya está en el DCF.",
+  "P/OCF": "Mismo motivo que P/FCFE: el flujo operativo de un banco incluye préstamos y depósitos y no mide la generación del accionista."
+ },
+ "peers_excluir": {
+  "P/E": [
+   "SOFI"
+  ]
+ },
+ "peers_motivo": "B: bancos de Brasil y América Latina (Itaú, Bradesco, Santander Brasil, Inter, Credicorp) y un emisor de tarjetas de EE.UU. (Capital One), con precios al 30-sep-2026 (yfinance). Se excluye SoFi en P/E: ROE de 7% y P/E de 31x por una utilidad todavía deprimida.",
+ "ajuste_peers": 0.5,
+ "ajuste_motivo": "Ajuste +50% sobre la mediana: NU tiene ROE de ~30% frente a una mediana de ~16% de los peers (Itaú 21%, Bradesco 14%, Santander Brasil 11%, Inter 16%, Credicorp 20%, Capital One 9%) y crece ~15% anual en FY+3 frente a 5-10%; con un Ke de ~11% y g de ~5%, el P/E justificado de Damodaran ((1 − g/ROE)(1 + g)/(Ke − g)) es ~50-60% mayor con ese ROE. Riesgo: el mismo país (Brasil) que Itaú, Bradesco, Santander e Inter.",
+ "lambda": 0.25,
+ "lambda_motivo": "λ = 0,25: la NU de FY+3 en la historia Base gana un ROE parecido al de hoy (32%) con menor crecimiento; el justificado se calcula con el ROE de FY+3 sobre el patrimonio de hoy y sobrestima el P/E, así que pesa poco.",
+ "fuentes": [
+  "[Nu Holdings, comunicado del 2T26 (6-K)](https://www.sec.gov/Archives/edgar/data/1691493/000129281426004222/nupr2q26_6k.htm)",
+  "[Damodaran, Price/Book y P/E por industria, ene-2026](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datacurrent.html)"
+ ],
+ "evaluacion": "Lectura del 30-sep-2026: el DCF Base da US$12,88 por acción y el P/E (único múltiplo aplicable) US$20,55 hoy: 60% por encima, fuera de ±25%. El chequeo de crecimiento implícito confirma la causa: el P/E Base de 23,3x en FY+3 equivale a un crecimiento perpetuo de 7,0% con el ROE de FY+3, mientras el DCF implica 13,2x (3,7%), porque lleva el ROE de 32% al de la industria (18,8%) en los años 6-10 y el crecimiento a 5,29%. Los anclas del P/E (historia de 2024-2025 cuando el mercado pagaba 26-28x, peers bancarios con +50% por ROE y el justificado con el ROE de FY+3) suponen que NU conserva un ROE de ~30% por mucho más tiempo. Para un banco, el DCF (ROE frente al Ke con una convergencia explícita) es más confiable: el P/E de mercado de hoy (17,1x UDM; 14,6x la utilidad Base del año 1) está más cerca del DCF que el ancla histórica. No se movió ningún múltiplo para acercarlo al DCF; la brecha se informa.",
+ "notas": {
+  "P/E": "Único múltiplo aplicable al banco (Damodaran usa P/BV y P/E en financieras; la plantilla no tiene P/BV, que se informa aparte como lectura: el P/BV justificado de la Base es (ROE − g)/(Ke − g))."
+ }
+}
