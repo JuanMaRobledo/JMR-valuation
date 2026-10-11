@@ -127,9 +127,11 @@ def block_fcfe(h: dict, i: int, r0: int, segs: dict, rev_ltm: float) -> list[lis
         (_propios_6a10(h) or [f"=$G{R['g']}-($G{R['g']}-$M${R['g']})*({y}-5)/5" for y in range(6, 11)]) + [tg]
     # Damodaran (bancos): utilidad = ROE × patrimonio contable del año anterior; crecer exige aumentar el patrimonio al
     # mismo ritmo (reinversión patrimonial) y en perpetuidad el ROE es el Ke terminal.
+    # ROE después del año 10 de la historia (G{i}): el Ke terminal si no hay ventaja (o la historia la pierde) o el ROE
+    # terminal de 'DCF FCFE financiero'!B11 (criterio de ventaja durable, 11-oct-2026).
     ni = ["Utilidad neta", f"={F}!B3"] + [f"={col(y)}{R['roe']}*{col(y - 1)}{R['bv']}" for y in range(1, 11)] + \
-        [f"={F}!B4*L{R['bv']}"]
-    roe = ["ROE", ""] + [f"=$D${i}"] * 5 + [f"=$D${i}+({F}!$B$4-$D${i})*({y}-5)/5" for y in range(6, 11)]
+        [f"=$G${i}*L{R['bv']}"]
+    roe = ["ROE", ""] + [f"=$D${i}"] * 5 + [f"=$D${i}+($G${i}-$D${i})*({y}-5)/5" for y in range(6, 11)] + [f"=$G${i}"]
     reinv = ["Reinversión patrimonial", ""] + [f"={col(y - 1)}{R['bv']}*MAX(0;{col(y)}{R['g']})" for y in range(1, 11)] + \
         [f"=L{R['bv']}*M{R['g']}"]
     bv = ["Patrimonio contable al cierre", f"={F}!B12"] + [f"={col(y - 1)}{R['bv']}+{col(y)}{R['reinv']}" for y in range(1, 11)]
@@ -176,7 +178,7 @@ def build(tk: str, gc) -> None:
     put(2, ["Cuatro DCF completos (Base, Conservadora, Disrupción y Optimista) con probabilidades del analista. "
             "Supuestos vinculados al modelo; crecimiento por segmento y probabilidades son entradas del analista."])
     put(4, ["Escenario / historia", "Probabilidad", "CAGR ingresos 1–5", "ROE objetivo" if fin else "Margen objetivo",
-            "Ventas/capital 1–5", "Ventas/capital 6–10", "ROIC terminal", "DCF hoy por acción", "Aporte al esperado",
+            "Ventas/capital 1–5", "Ventas/capital 6–10", "ROE terminal" if fin else "ROIC terminal", "DCF hoy por acción", "Aporte al esperado",
             "Crecimiento terminal"])
     blocks = []
     for k, h in enumerate(hs):
@@ -185,12 +187,18 @@ def build(tk: str, gc) -> None:
         blocks.append((h, R))
         for j, row in enumerate(rows):
             put(r0 + j, row)
-        roic = ("" if fin else (f"={VO}!M14" if h.get("roic_terminal") == "costo_capital" else
-                                f"=IF({IS}!B49=\"Yes\";{IS}!B50;{VO}!M14)"))
+        F_ = "'DCF FCFE financiero'"
+        roic = ((f"={F_}!B4" if h.get("roic_terminal") == "costo_capital" else
+                 ("=" + n(h["roic_terminal"]) if isinstance(h.get("roic_terminal"), (int, float)) else
+                  f"=IF(N({F_}!B11)>0;{F_}!B11;{F_}!B4)")) if fin else
+                (f"={VO}!M14" if h.get("roic_terminal") == "costo_capital" else
+                 f"=IF({IS}!B49=\"Yes\";{IS}!B50;{VO}!M14)"))
         s2 = h.get("s2c")
         put(i, [h["nombre"] + (f": {h['descripcion']}" if h.get("descripcion") else ""), h["prob"],
                 f"=(G{R['rev']}/B{R['rev']})^(1/5)-1", h["margen"],
-                "" if fin else (s2 if s2 else f"={IS}!$B$32"), "" if fin else f"={IS}!$B$33", roic,
+                # Financieras: ventas/capital de la Input sheet solo para el FCFF técnico de 'Valuation output' (sin él da
+                # #DIV/0!); el DCF del banco es el FCFE y no lo usa.
+                (s2 if s2 and not fin else f"={IS}!$B$32"), f"={IS}!$B$33", roic,
                 f"=MAX(0;B{R['ps']})", f"=B{i}*H{i}", f"=M{R['g']}"])  # responsabilidad limitada: patrimonio ≥ 0
     put(10, ["DCF esperado por probabilidades · complemento", "=SUM(B5:B8)"] + [""] * 5 + ["=IF(ABS(B10-1)<0,00000001;SUMPRODUCT(B5:B8;H5:H8);NA())"])
     put(11, ["DCF Base · valor intrínseco principal"] + [""] * 6 + ["=H5"])

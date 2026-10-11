@@ -91,6 +91,8 @@ def run_exact(grid, cases):
           "const out=G.cases.map(k=>{const i=JSON.parse(JSON.stringify(base));"
           "if(k.anios)i.crecimientoAnios=k.anios;else if(k.g!=null)i.crecimientoAnios=[k.g,k.g,k.g,k.g,k.g];"
           "if(k.wacc!=null)i.wacc=k.wacc;if(k.s2c!=null)i.salesToCapital=k.s2c;if(k.roic!=null)i.roicTerminal=k.roic;"
+          "if(k.roic!=null&&i.dcfFinanciero)i.dcfFinanciero.terminalRoe=k.roic;"  # financieras: ROE después del año 10 (0 = Ke)
+
           "if(k.tg!=null){if(i.dcfFinanciero)i.dcfFinanciero.terminalGrowth=k.tg;else i.terminalGrowth=k.tg;}"
           "if(k.dk!=null){if(i.dcfFinanciero){i.costoPatrimonio+=k.dk;i.dcfFinanciero.terminalKe+=k.dk;}"
           "else{const t=typeof i.terminalWacc==='number'?i.terminalWacc:i.riskFreeRate+i.matureMarketERP;i.wacc+=k.dk;i.terminalWacc=t+k.dk;}}"
@@ -105,7 +107,7 @@ def run_exact(grid, cases):
           "return {v:d.valuePerShare,pvFlujos:pv,pvTerminal:d.terminalValue*disc[10],valorTerminal:d.terminalValue,"
           "activosOperativos:d.valueOpAssets,patrimonio:d.equityValue,ingresos:d.revenue||null,utilidad:d.netIncome||null,"
           "nopat:d.ebit1t||null,patrimonioContable:d.bookEquity||null,utilidadTerminal:d.terminalNetIncome||null,reinversion:d.reinvestment,flujo:fl,tasa:d.wacc,crecimiento:d.growth,margen:d.margin||d.roe,"
-          "tasaTerminal:wT,gTerminal:gT,roicTerminal:f?null:(i.roicTerminal>0?i.roicTerminal:wT),"
+          "tasaTerminal:wT,gTerminal:gT,roicTerminal:f?null:(i.roicTerminal>0?i.roicTerminal:wT),roeTerminal:f?(d.terminalRoe??wT):null,"
           "caja:i.cash,deuda:i.debt,minoritarios:i.minorityInterests||0,noOperativos:i.nonOperatingAssets||0,"
           "opciones:i.optionsValue||0,preferentes:i.preferredStock||0,acciones:i.shares0,probFracaso:i.probFailure||0,nol0:i.nol0||0,"
           "impuestoEf:i.taxEffective,impuestoMarg:i.taxMarginal,s2c:i.salesToCapital,s2c2:i.salesToCapital2,"
@@ -299,7 +301,9 @@ def compute(tk: str) -> dict:
         historias.append({**h, "cagr": cagr, "rev5": rev5, "mix5": {k: v / rev5 for k, v in revs.items()},
                           "tasa_base": frac_at_least(br, cagr), "anios": anios, "anios6a10": a610, "anios6a10_propios": bool(propio610),
                           "terminal_growth": tg_uso, "terminal_propio": tg is not None and abs(tg - tg_hoja) > 1e-9,
-                          "roic_terminal_usado": roic if roic is not None else inp.get("roicTerminal", 0)})
+                          "roic_terminal_usado": roic if roic is not None else (
+                              ((inp.get("dcfFinanciero") or {}).get("terminalRoe") or 0) if inp.get("dcfFinanciero")
+                              else inp.get("roicTerminal", 0))})
         # Cada historia es un DCF completo con la estructura de la hoja (crecimiento año a año, convergencia del
         # margen, impuestos, sales-to-capital por tramo, deuda y caja): el valor esperado es su promedio ponderado.
         tray = anios + a610 if propio610 else anios
@@ -333,10 +337,14 @@ def compute(tk: str) -> dict:
 
     # beta: DCF Base con cada beta
     beta_rows = [("Hoja (regresión o la cargada en el libro)", beta_hoja)]
-    if beta_bu:
+    # Financieras: la beta del sector es la del patrimonio (sin desapalancar ni reapalancar: los depósitos no son deuda
+    # financiera); la fila «reapalancada» con la beta desapalancada no describe a un banco (11-oct-2026, NU).
+    if beta_bu and not inp.get("dcfFinanciero"):
         beta_rows.append((f"Bottom-up del sector ({industria}, reapalancada)", beta_bu))
     if spec.get("riesgo", {}).get("beta_propuesta"):
-        beta_rows.append(("Propuesta (sector ajustado por riesgo propio)", beta_prop))
+        beta_rows.append(("Bottom-up del sector (beta del patrimonio, sin reapalancar)" if inp.get("dcfFinanciero") and
+                          (inp["dcfFinanciero"].get("terminalRoe") or 0) > 0 else
+                          "Propuesta (sector ajustado por riesgo propio)", beta_prop))
     # Cada beta con la trayectoria completa de la historia Base (crecimiento año a año, margen, ROIC y terminal): así la
     # fila de la beta de la hoja reproduce el DCF Base (antes usaba un crecimiento constante en los años 2-5).
     bv = run_exact(grid, [{**kA, "wacc": wacc_for(b)} for _, b in beta_rows])
@@ -367,7 +375,9 @@ def compute(tk: str) -> dict:
                                    "smoothTerminalCapital", "salesToCapital2", "wacc", "costoPatrimonio", "taxEffective", "convergenceYear",
                                    "terminalWacc", "roicTerminal")}
     sup["salesToCapital"] = s2c
-    sin_exceso = None if financiero else run_exact(grid, [{**kA, "roic": 0}])[0]
+    # Financieras con ROE terminal > Ke ('DCF FCFE financiero'!B11): también se informa el DCF sin rendimientos en exceso.
+    sin_exceso = (run_exact(grid, [{**kA, "roic": 0}])[0] if (inp.get("dcfFinanciero") or {}).get("terminalRoe")
+                  else None) if financiero else run_exact(grid, [{**kA, "roic": 0}])[0]
 
     seg_rev0 = {k: v * scale for k, v in segs.items()}
     return {"ticker": tk, "fecha": spec.get("fecha") or dt.date.today().isoformat(), "spec": spec,
@@ -472,7 +482,7 @@ def origen_calculo(r: dict, W) -> None:
     rows = []
     if fin:
         rows += [["Utilidad neta base", f"US${mn(dA['utilidad'][0])} millones", "«DCF FCFE financiero» B3: utilidad LTM del año base."],
-                 ["ROE objetivo", agrupa(hs, lambda h: pct(h["margen"], 1)), "Años 1–5 al ROE de la historia; converge al Ke terminal en los años 6–10."],
+                 ["ROE objetivo", agrupa(hs, lambda h: pct(h["margen"], 1)), "Años 1–5 al ROE de la historia; converge en los años 6–10 a su ROE terminal: " + agrupa(hs, lambda h: pct(h["detalle"].get("roeTerminal") or h["detalle"]["tasaTerminal"], 1)) + " (el Ke terminal si no hay ventaja o la historia la pierde)."],
                  ["Descuento", f"Ke {pct(dA['tasa'][1], 2)} → {pct(dA['tasaTerminal'], 2)}",
                   f"Costo del patrimonio de la hoja; tasa libre de riesgo {pct(r['rf'], 2)}, beta {es(r['beta_hoja'])}, ERP {pct(r['erp'], 2)}. Igual en las cuatro historias."]]
     else:
@@ -541,8 +551,13 @@ def origen_calculo(r: dict, W) -> None:
         W.p(f"Utilidadₜ = ROEₜ × patrimonio contableₜ₋₁ (Damodaran, bancos). Reinversión patrimonial = patrimonioₜ₋₁ × crecimientoₜ "
             f"(crecer exige más capital); FCFE = utilidad − reinversión. En la Base, año 1: utilidad US${mn(dA['utilidad'][1], 2)} millones, "
             f"reinversión US${mn(dA['reinversion'][1], 2)} millones y FCFE US${mn(dA['flujo'][1], 2)} millones. Se descuenta al costo del "
-            "patrimonio; en perpetuidad el ROE es el Ke terminal, utilidad₁₁ = Ke terminal × patrimonio₁₀, FCFE₁₁ = utilidad₁₁ × "
-            "(1 − g / Ke terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g) = patrimonio₁₀. No se resta deuda.")
+            + ("patrimonio; en perpetuidad el ROE es el Ke terminal, utilidad₁₁ = Ke terminal × patrimonio₁₀, FCFE₁₁ = utilidad₁₁ × "
+               "(1 − g / Ke terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g) = patrimonio₁₀. No se resta deuda."
+               if (dA.get("roeTerminal") or dA["tasaTerminal"]) <= dA["tasaTerminal"] + 1e-9 else
+               f"patrimonio; en perpetuidad el ROE es el terminal de la historia ({pct(dA['roeTerminal'], 1)} en la Base, por ventaja "
+               f"durable; Ke terminal {pct(dA['tasaTerminal'], 2)}): utilidad₁₁ = ROE terminal × patrimonio₁₀, FCFE₁₁ = utilidad₁₁ × "
+               "(1 − g / ROE terminal) y valor terminal = FCFE₁₁ / (Ke terminal − g) = patrimonio₁₀ × (ROE − g)/(Ke − g). "
+               "No se resta deuda."))
 
     trayectorias(r, W, f"{3 if fin else 4}. Trayectoria anual de cada historia")
 
@@ -968,11 +983,14 @@ def calculo_en_prosa(r: dict, W) -> None:
         u = d["utilidad"]
         W.p(f"**Del supuesto al valor: cómo se calcula la Base.** El punto de partida es la utilidad del último año, {_um(u[0])} "
             f"millones. Cada año es el ROE de la Base por el patrimonio contable del año anterior: {_um(u[5])} millones en el año 5 "
-            f"y {_um(u[10])} millones en el año 10, cuando el ROE ya bajó al costo del patrimonio. No toda esa utilidad se puede "
+            f"y {_um(u[10])} millones en el año 10, cuando el ROE ya bajó a " + (
+                "su nivel terminal" if (d.get("roeTerminal") or d["tasaTerminal"]) > d["tasaTerminal"] + 1e-9
+                else "al costo del patrimonio") + ". No toda esa utilidad se puede "
             "repartir: para crecer, un banco o una financiera tiene que aumentar su patrimonio al mismo ritmo, y esa parte se "
             "retiene. Lo que queda es el flujo del accionista (FCFE): "
-            f"{_um(d['flujo'][1])} millones el primer año. Esos flujos se traen a hoy con el costo del patrimonio, que empieza en "
-            f"{pct(d['tasa'][1], 2)} y baja a {pct(d['tasaTerminal'], 2)}; suman {_um(d['pvFlujos'])} millones. Después del año 10 se "
+            f"{_um(d['flujo'][1])} millones el primer año. Esos flujos se traen a hoy con el costo del patrimonio, " + (
+                f"constante en {pct(d['tasa'][1], 2)}" if abs(d['tasa'][1] - d['tasaTerminal']) < 1e-9 else
+                f"que empieza en {pct(d['tasa'][1], 2)} y llega a {pct(d['tasaTerminal'], 2)}") + f"; suman {_um(d['pvFlujos'])} millones. Después del año 10 se "
             f"supone un crecimiento perpetuo de {pct(d['gTerminal'], 2)}: el valor de esa perpetuidad, traído a hoy, es "
             f"{_um(d['pvTerminal'])} millones. La suma es el valor del patrimonio, {_um(d['patrimonio'])} millones; dividido "
             f"entre {es(d['acciones'], 1)} millones de acciones da {usd(A['valor_beta_hoja'])} por acción. Aquí no se resta deuda: "
@@ -1072,13 +1090,18 @@ def exceso(h: dict, W, nd: int) -> None:
         pv += v
         z = lambda x: 0.0 if abs(x) < 0.05 else x  # noqa: E731
         rows.append([str(y), es(bv[y - 1], nd), pct(roe), es(ni, nd), pct(ke), es(costo, nd), es(z(ex), nd), es(z(v), nd)])
-    rows.append(["Terminal", es(bv[10], nd), pct(d["tasaTerminal"]), es(d["tasaTerminal"] * bv[10], nd), pct(d["tasaTerminal"]),
-                 es(d["tasaTerminal"] * bv[10], nd), es(0, nd), "0"])
-    valor = (bv[0] + pv) / d["acciones"]
+    kt, g, rt = d["tasaTerminal"], d["gTerminal"], d.get("roeTerminal") or d["tasaTerminal"]
+    ex_t = (rt - kt) * bv[10]  # rendimiento en exceso perpetuo (ROE terminal > Ke: ventaja durable)
+    pv_t = ex_t / (kt - g) / _acum(d["tasa"], 10) if abs(ex_t) > 1e-9 else 0.0
+    rows.append(["Terminal", es(bv[10], nd), pct(rt), es(rt * bv[10], nd), pct(kt), es(kt * bv[10], nd), es(ex_t, nd),
+                 es(pv_t, nd) if pv_t else "0"])
+    valor = (bv[0] + pv + pv_t) / d["acciones"]
+    perp = ("En perpetuidad el ROE es el costo del patrimonio: no hay rendimiento en exceso y crecer no suma valor." if not pv_t else
+            f"En perpetuidad el ROE es {pct(rt)} frente a un Ke de {pct(kt)} (ventaja durable): el rendimiento en exceso del año 11, "
+            f"{es(ex_t, nd)}, crece a {pct(g, 2)} y su valor al año 10, (ROE − Ke) × patrimonio₁₀ / (Ke − g), traído a hoy es {es(pv_t, nd)}.")
     W.p(f"Modelo de rendimientos en exceso (Damodaran, bancos): patrimonio contable de hoy {es(bv[0], nd)} + VP de los "
-        f"rendimientos en exceso {es(pv, nd)} = {es(bv[0] + pv, nd)} millones; entre {es(d['acciones'], 2)} millones de acciones da "
-        f"{usd(valor)} por acción, igual que el FCFE ({usd(d['v'])}). En perpetuidad el ROE es el costo del patrimonio: no hay "
-        "rendimiento en exceso y crecer no suma valor.")
+        f"rendimientos en exceso {es(pv + pv_t, nd)} = {es(bv[0] + pv + pv_t, nd)} millones; entre {es(d['acciones'], 2)} millones de acciones da "
+        f"{usd(valor)} por acción, igual que el FCFE ({usd(d['v'])}). " + perp)
     W.tab(["Año", "Patrimonio inicial", "ROE", "Utilidad", "Ke", "Costo del patrimonio", "Rendimiento en exceso", "VP"], rows,
           ["l"] + ["r"] * 7)
 
@@ -1400,13 +1423,13 @@ def render(r: dict) -> tuple[str, str]:
         crec = "; ".join(f"{k}: " + ", ".join(es(x * 100, 0) + "%" for x in h["crec"].get(k, [0] * 5)) for k in segs) if len(segs) > 1 else \
             ", ".join(es(x * 100, 0) + "%" for x in h["crec"][segs[0]])
         rows.append([f"**{nombre(h)}**", pct(h["prob"], 0), crec, pct(h["cagr"]), pct(h["margen"], 1),
-                     es(h.get("s2c", r["s2c"]), 1)] + ([roic_txt(h)] if con_roic else []) + [pct(h["terminal_growth"], 2)] +
+                     ("Patrimonio × crecimiento" if r.get("financiero") else es(h.get("s2c", r["s2c"]), 1))] + ([roic_txt(h)] if con_roic else []) + [pct(h["terminal_growth"], 2)] +
                     [usd(h["valor_beta_hoja"]) + (f" (DCF bruto {usd(h['valor_bruto'])})" if h.get("valor_bruto", 0) < 0 else "")] +
                     ([] if same else [usd(h["valor_beta_prop"])]))
     rows.append(["**DCF esperado (complemento)**", "100%", "", "", "", ""] + ([""] if con_roic else []) + [""] + [f"**{usd(r['valor_esperado_beta_hoja'])}**"] +
                 ([] if same else [f"**{usd(r['valor_esperado_beta_prop'])}**"]))
     tab(["Historia", "Probabilidad", "Crecimiento por segmento (años 1-5)", "CAGR de ingresos del grupo (años 1–5)",
-         "Margen objetivo", "Sales-to-capital"] + (["ROIC después del año 10"] if con_roic else []) + ["Crecimiento terminal"] +
+         "Margen objetivo", "Sales-to-capital"] + ([("ROE" if r.get("financiero") else "ROIC") + " después del año 10"] if con_roic else []) + ["Crecimiento terminal"] +
         [f"Valor/acción (beta {es(r['beta_hoja'])})"] +
         ([] if same else [f"Valor/acción (beta {es(r['beta_prop'])})"]), rows,
         ["l", "r", "l", "r", "r", "r"] + (["r"] if con_roic else []) + ["r", "r"] + ([] if same else ["r"]))

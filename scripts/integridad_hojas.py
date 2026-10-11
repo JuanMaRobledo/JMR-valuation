@@ -27,8 +27,10 @@ from pathlib import Path
 _ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 from jmr_valuation.io.sheets_auth import get_gspread_client  # noqa: E402
+sys.path.insert(0, str(_ROOT / "scripts"))
+from financieras import FINANCIERAS  # noqa: E402
 
-TODAS = "ADBE AFYA BSX CELH CMG DPZ DUOL EPAM GOOG INTU LULU MCD MSFT NKE NVDA NVO ONON PAGS PLTR PYPL SHAK UBER ZTS".split()
+TODAS = "ADBE AFYA BSX CELH CMG DPZ DUOL EPAM GOOG INTU LULU MCD MSFT NKE NU NVDA NVO ONON PAGS PLTR PYPL SHAK UBER ZTS".split()
 TABS = ["Input sheet", "Valuation output", "Cost of capital worksheet", "Operating lease converter", "R& D converter",
         "Descuento de múltiplos", "Resumen de Valoración", "Escenarios e historias", "EVEBITDA", "EVFCFF", "PE", "PFCFE", "POCF"]
 ERR = re.compile(r"^#(REF!|VALUE!|DIV/0!|N/A|NAME\?|ERROR!|NUM!|NULL!)")
@@ -129,7 +131,7 @@ def main(argv: list[str]) -> int:
                         hallazgos[t].append(f"error {tab}!{col(j)}{i + 1} = {c}")
         vo, inp = x["Valuation output"], x["Input sheet"]
         # 3. C46: margen objetivo del bloque Base = el de la historia Base (2-oct-2026; PAGS conserva la Input sheet)
-        ok46 = ("='Input sheet'!B30",) if t == "PAGS" else ("='Escenarios e historias'!$D$5",)
+        ok46 = ("='Input sheet'!B30",) if t in FINANCIERAS else ("='Escenarios e historias'!$D$5",)  # banco: FCFF técnico
         if formula(vo, "C46") not in ok46:
             hallazgos[t].append(f"Valuation output!C46 no está enlazado a {ok46[0][1:]} ({formula(vo, 'C46')})")
         # 4. preferentes

@@ -1,0 +1,1321 @@
+{
+ "Balance Sheet!L3": {
+  "before": 13551611000,
+  "after": 13551.611,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L4": {
+  "before": 16358.5,
+  "after": 19181.364,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L5": {
+  "before": 13551627358.5,
+  "after": 32732.975000000002,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L6": {
+  "before": 27689.4,
+  "after": 32811.828,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L8": {
+  "before": 27689.4,
+  "after": 32811.828,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L11": {
+  "before": 27.6,
+  "after": 50.665,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L12": {
+  "before": 601.7,
+  "after": 747.101,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L13": {
+  "before": 409.4,
+  "after": 409.371,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L16": {
+  "before": 74893.9,
+  "after": 82753.414,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L20": {
+  "before": 0,
+  "after": 0,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L25": {
+  "before": 4398.2,
+  "after": 4682.252,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L29": {
+  "before": 63572.3,
+  "after": 69501.693,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L31": {
+  "before": 5062.5,
+  "after": 4566.905,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L32": {
+  "before": -184.3,
+  "after": 186.449,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L33": {
+  "before": 6412.7,
+  "after": 8496.232,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L34": {
+  "before": 11321.6,
+  "after": 13249.67,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L35": {
+  "before": 11321.6,
+  "after": 13251.721,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L36": {
+  "before": 74893.9,
+  "after": 82753.414,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!G4": {
+  "before": 0,
+  "after": "",
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!H26": {
+  "before": "",
+  "after": 20.353,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!I26": {
+  "before": "",
+  "after": 36.942,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!J26": {
+  "before": "",
+  "after": 26.197,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!K26": {
+  "before": "",
+  "after": 29.197,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!L26": {
+  "before": "",
+  "after": 66.433,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!G34": {
+  "before": 4442.5,
+  "after": 4441.0,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!H34": {
+  "before": 4890.8,
+  "after": 4890.783,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!I34": {
+  "before": 6406.4,
+  "after": 6406.385,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!J34": {
+  "before": 7647.1,
+  "after": 7646.289,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Balance Sheet!K34": {
+  "before": 11321.6,
+  "after": 11290.948,
+  "reason": "NU: balance UDM al 30-jun-2026 y patrimonio de la controladora"
+ },
+ "Income Statement!L27": {
+  "before": 4830688659,
+  "after": 4830.688659,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Income Statement!G22": {
+  "before": -165.3,
+  "after": -164.993,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Income Statement!H22": {
+  "before": -364.6,
+  "after": -364.578,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Income Statement!I22": {
+  "before": 1030.5,
+  "after": 1030.53,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Income Statement!J22": {
+  "before": 1972.1,
+  "after": 1972.112,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Income Statement!K22": {
+  "before": 2871.7,
+  "after": 2868.892,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Income Statement!L22": {
+  "before": 3610,
+  "after": 3607.1059999999998,
+  "reason": "NU: utilidad de la controladora y acciones en millones"
+ },
+ "Cash Flow Statement!B40": {
+  "before": 149,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!C40": {
+  "before": 1286.2,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!D40": {
+  "before": -661,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!E40": {
+  "before": 1020,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!F40": {
+  "before": 1825,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!G40": {
+  "before": -608,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!H40": {
+  "before": 443,
+  "after": "",
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!I40": {
+  "before": 2896,
+  "after": 1514.401,
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!J40": {
+  "before": 481,
+  "after": 2796.158,
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!K40": {
+  "before": -2216,
+  "after": 5448.386,
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Cash Flow Statement!L40": {
+  "before": -14,
+  "after": -73.649,
+  "reason": "NU: cambio de caja de los 20-F y del 6-K (sin relleno)"
+ },
+ "Input sheet!B17": {
+  "before": "Yes",
+  "after": "No",
+  "reason": "NU: banco (sin I+D capitalizable, NIIF 16, minoritarios, acciones diluidas, margen técnico)"
+ },
+ "Input sheet!B18": {
+  "before": "No",
+  "after": "No",
+  "reason": "NU: banco (sin I+D capitalizable, NIIF 16, minoritarios, acciones diluidas, margen técnico)"
+ },
+ "Input sheet!B38": {
+  "before": "No",
+  "after": "No",
+  "reason": "NU: banco (sin I+D capitalizable, NIIF 16, minoritarios, acciones diluidas, margen técnico)"
+ },
+ "Input sheet!B21": {
+  "before": 0,
+  "after": "='Balance Sheet'!L35-'Balance Sheet'!L34",
+  "reason": "NU: banco (sin I+D capitalizable, NIIF 16, minoritarios, acciones diluidas, margen técnico)"
+ },
+ "Input sheet!B22": {
+  "before": "='Income Statement'!L27",
+  "after": "='Income Statement'!L27+52,178",
+  "reason": "NU: banco (sin I+D capitalizable, NIIF 16, minoritarios, acciones diluidas, margen técnico)"
+ },
+ "Input sheet!B30": {
+  "before": "=MAX(J27; B28;AVERAGE('Crecimiento y Márgenes'!E16:E19))",
+  "after": "='Income Statement'!L13",
+  "reason": "NU: banco (sin I+D capitalizable, NIIF 16, minoritarios, acciones diluidas, margen técnico)"
+ },
+ "Cost of capital worksheet!B22": {
+  "before": "Single Business(Global)",
+  "after": "Direct Input",
+  "reason": "NU: beta del patrimonio de Financial Svcs. (global), prima por países, Kd"
+ },
+ "Cost of capital worksheet!B23": {
+  "before": 1.2,
+  "after": 0.82,
+  "reason": "NU: beta del patrimonio de Financial Svcs. (global), prima por países, Kd"
+ },
+ "Cost of capital worksheet!B26": {
+  "before": "Country of Incorporation",
+  "after": "Will Input",
+  "reason": "NU: beta del patrimonio de Financial Svcs. (global), prima por países, Kd"
+ },
+ "Cost of capital worksheet!B27": {
+  "before": 0.06,
+  "after": "='Country equity risk premiums'!D31*0,909230+'Country equity risk premiums'!D120*0,072436+'Country equity risk premiums'!D44*0,018334",
+  "reason": "NU: beta del patrimonio de Financial Svcs. (global), prima por países, Kd"
+ },
+ "Cost of capital worksheet!B34": {
+  "before": "Actual rating",
+  "after": "Direct Input",
+  "reason": "NU: beta del patrimonio de Financial Svcs. (global), prima por países, Kd"
+ },
+ "Cost of capital worksheet!B35": {
+  "before": 0.04,
+  "after": "='Input sheet'!B35+'Country equity risk premiums'!C31",
+  "reason": "NU: beta del patrimonio de Financial Svcs. (global), prima por países, Kd"
+ },
+ "Descuento de múltiplos!C38": {
+  "before": "='Valuation output'!B86",
+  "after": "='Escenarios e historias'!H6",
+  "reason": "NU (banco): DCF de hoy = FCFE de las historias"
+ },
+ "Descuento de múltiplos!D38": {
+  "before": "='Valuation output'!B35",
+  "after": "='Escenarios e historias'!H5",
+  "reason": "NU (banco): DCF de hoy = FCFE de las historias"
+ },
+ "Descuento de múltiplos!E38": {
+  "before": "='Valuation output'!B137",
+  "after": "='Escenarios e historias'!H8",
+  "reason": "NU (banco): DCF de hoy = FCFE de las historias"
+ },
+ "Financials Multiples!E15": {
+  "before": "=E12-E13",
+  "after": "='Escenarios e historias'!C54",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!E29": {
+  "before": "=E15+E20+E21-E22+E28",
+  "after": "='Escenarios e historias'!C57",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!F15": {
+  "before": "=F12-F13",
+  "after": "='Escenarios e historias'!D54",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!F29": {
+  "before": "=F15+F20+F21-F22+F28",
+  "after": "='Escenarios e historias'!D57",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!G15": {
+  "before": "=G12-G13",
+  "after": "='Escenarios e historias'!E54",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!G29": {
+  "before": "=G15+G20+G21-G22+G28",
+  "after": "='Escenarios e historias'!E57",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!H15": {
+  "before": "=H12-H13",
+  "after": "='Escenarios e historias'!F54",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!H29": {
+  "before": "=H15+H20+H21-H22+H28",
+  "after": "='Escenarios e historias'!F57",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!E54": {
+  "before": "=E51-E52",
+  "after": "='Escenarios e historias'!C30",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!E68": {
+  "before": "=E54+E59+E60-E61+E67",
+  "after": "='Escenarios e historias'!C33",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!F54": {
+  "before": "=F51-F52",
+  "after": "='Escenarios e historias'!D30",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!F68": {
+  "before": "=F54+F59+F60-F61+F67",
+  "after": "='Escenarios e historias'!D33",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!G54": {
+  "before": "=G51-G52",
+  "after": "='Escenarios e historias'!E30",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!G68": {
+  "before": "=G54+G59+G60-G61+G67",
+  "after": "='Escenarios e historias'!E33",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!H54": {
+  "before": "=H51-H52",
+  "after": "='Escenarios e historias'!F30",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!H68": {
+  "before": "=H54+H59+H60-H61+H67",
+  "after": "='Escenarios e historias'!F33",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!E94": {
+  "before": "=E91-E92",
+  "after": "='Escenarios e historias'!C102",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!E108": {
+  "before": "=E94+E99+E100-E101+E107",
+  "after": "='Escenarios e historias'!C105",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!F94": {
+  "before": "=F91-F92",
+  "after": "='Escenarios e historias'!D102",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!F108": {
+  "before": "=F94+F99+F100-F101+F107",
+  "after": "='Escenarios e historias'!D105",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!G94": {
+  "before": "=G91-G92",
+  "after": "='Escenarios e historias'!E102",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!G108": {
+  "before": "=G94+G99+G100-G101+G107",
+  "after": "='Escenarios e historias'!E105",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!H94": {
+  "before": "=H91-H92",
+  "after": "='Escenarios e historias'!F102",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Financials Multiples!H108": {
+  "before": "=H94+H99+H100-H101+H107",
+  "after": "='Escenarios e historias'!F105",
+  "reason": "NU (banco): utilidad y FCFE de las historias FCFE"
+ },
+ "Valuation output!C45": {
+  "before": "='Escenarios e historias'!$D$6",
+  "after": "='Input sheet'!B30",
+  "reason": "NU (banco): margen técnico del FCFF de referencia (no es el ROE)"
+ },
+ "Valuation output!C46": {
+  "before": "='Escenarios e historias'!$D$5",
+  "after": "='Input sheet'!B30",
+  "reason": "NU (banco): margen técnico del FCFF de referencia (no es el ROE)"
+ },
+ "Valuation output!C47": {
+  "before": "='Escenarios e historias'!$D$8",
+  "after": "='Input sheet'!B30",
+  "reason": "NU (banco): margen técnico del FCFF de referencia (no es el ROE)"
+ },
+ "Valuation output!C48": {
+  "before": "='Escenarios e historias'!$D$7",
+  "after": "='Input sheet'!B30",
+  "reason": "NU (banco): margen técnico del FCFF de referencia (no es el ROE)"
+ },
+ "Input sheet!D12": {
+  "before": "=IF('Income Statement'!L2=\"LTM\";\"\";IFERROR((VALUE(RIGHT('Income Statement'!L2;2))-VALUE(RIGHT('Income Statement'!K2;2)))+(MATCH(IF(LEFT('Income Statement'!L2;3)=\"LTM\";MID('Income Statement'!L2;5;3);LEFT('Income Statement'!L2;3));SPLIT(\"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\";\" \");0)-MATCH(LEFT('Income Statement'!K2;3);SPLIT(\"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\";\" \");0))/12;NA()))",
+  "after": "=IF('Income Statement'!L3='Income Statement'!K3;1;0,5)",
+  "reason": "NU: años desde el último cierre anual (fórmula de las demás hojas)"
+ },
+ "Cualitativo!B5": {
+  "before": "",
+  "after": "Nu Holdings Ltd. (Islas Caimán; operación principal en Brasil). Acciones clase A en la NYSE (NU).",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B6": {
+  "before": "",
+  "after": "David Vélez (fundador, presidente del directorio y CEO; 74,3% del voto). CFO: Rob Livingston desde el 13-jul-2026.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B7": {
+  "before": "",
+  "after": "Banco digital (Damodaran: Financial Svcs. (Non-bank & Insurance), tabla global)",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B8": {
+  "before": "",
+  "after": "https://international.nubank.com.br  |  IR: https://www.investidores.nu",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B11": {
+  "before": "",
+  "after": "Descripción",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A12": {
+  "before": "Visión General de la Empresa",
+  "after": "Visión General de la Empresa",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B12": {
+  "before": "",
+  "after": "Banco digital más grande de América Latina: 138,9 millones de clientes al 2T26 (83,5% activos), sin sucursales. Ingresos NIIF UDM a jun-2026 de US$19.340M y utilidad de la controladora de US$3.607M (ROE ~29% sobre el patrimonio medio). 10.027 empleados a dic-2025.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A13": {
+  "before": "Medios Digitales\n(Digital Media)",
+  "after": "Brasil",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B13": {
+  "before": "",
+  "after": "~118 millones de clientes (86% activos), 90,9% de los ingresos de clientes del 1S26 (US$7.577M, +53% en dólares). Tarjetas, préstamos, cuenta con rendimiento (100% del CDI), inversiones, seguros y pymes (6,8 millones).",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A14": {
+  "before": "Experiencia Digital\n(Digital Experience)",
+  "after": "México",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B14": {
+  "before": "",
+  "after": "15,8 millones de clientes al 2T26 (16 millones en julio), 7,2% de los ingresos de clientes (US$604M, +87%). Opera como banco múltiple desde el 6-ago-2026 (autorización de la CNBV del 9-jul-2026).",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A15": {
+  "before": "Publicación y Publicidad\n(Publishing & Advertising)",
+  "after": "Colombia, EE.UU. y Nu Global",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B15": {
+  "before": "",
+  "after": "Colombia: más de 5 millones de clientes. EE.UU.: cuentas y tarjeta desde el 10-sep-2026 con Lead Bank (licencia nacional con aprobación condicional de la OCC). Nu Global: cuenta multimoneda con stablecoins. 1,8% de los ingresos.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A16": {
+  "before": "Estrategia de Distribución\ny Comercialización",
+  "after": "Fondeo y distribución",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B16": {
+  "before": "",
+  "after": "Depósitos de US$45.328M al 30-jun-2026 a 88% de la tasa interbancaria; adquisición orgánica de clientes (marketing 1,8% de los ingresos); costo de servir ~US$1 por cliente activo al mes.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B21": {
+  "before": "",
+  "after": "Argumento",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A22": {
+  "before": "Estándar de la Industria y Dominio",
+  "after": "ROE alto con crecimiento",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B22": {
+  "before": "",
+  "after": "ROE de 18% (2023) a 29% (UDM) sobre el patrimonio medio mientras el patrimonio crecía 48% en 2025; utilidad trimestral récord de US$1.061M en el 2T26 (ROE anualizado 33%).",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A23": {
+  "before": "Innovación y Foso Económico (Moat)",
+  "after": "Ventaja de costos y datos",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B23": {
+  "before": "",
+  "after": "Costo de servir de ~US$1 frente a un ingreso de ~US$17 por cliente activo; eficiencia de 19,5%; modelos de crédito propios (NuFormer); la mora de clientes con Nu como banco principal es ~la mitad del promedio.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A24": {
+  "before": "Expansión del Ecosistema Creativo",
+  "after": "México como segundo motor",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B24": {
+  "before": "",
+  "after": "Banco desde ago-2026; ARPAC de US$12,3 frente a US$5,6 en Brasil a la misma edad; la gerencia plantea un México de 60-70% del tamaño de Brasil en el largo plazo.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B27": {
+  "before": "",
+  "after": "Riesgo",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A28": {
+  "before": "Intensificación de la Competencia",
+  "after": "Ciclo de crédito en Brasil",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B28": {
+  "before": "",
+  "after": "Mora 90+ de 6,9% en el 2T26 (+35 pb) y expansión deliberada a segmentos de más riesgo; la pérdida esperada consume 28% de los ingresos.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A29": {
+  "before": "Incertidumbre en Experiencia Digital",
+  "after": "Impuestos y regulación",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B29": {
+  "before": "",
+  "after": "La CSLL de las instituciones de pago sube de 9% a 12% (2026-2027) y 15% (2028); riesgo de topes a tasas de tarjeta y crédito personal y de crédito vía Pix que sustituya a la tarjeta.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A30": {
+  "before": "Disrupción por IA Generativa y Desaceleración",
+  "after": "Competencia y gobierno",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B30": {
+  "before": "",
+  "after": "Itaú, Bradesco, Mercado Pago, Inter y PicPay digitalizan; el fundador controla el voto y aprueba compras grandes (reportes sobre Monzo en sep-2026, desmentidos por la empresa).",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A32": {
+  "before": "Fuente / Fuente original: Análisis de Morningstar – 12 de junio de 2026",
+  "after": "Fuentes: Nu Holdings, Form 20-F 2025 (8-abr-2026) y 20-F 2023 (19-abr-2024); 6-K de estados financieros y comunicado del 2T26 (13-ago-2026); 6-K del 1-jun (CFO), 4-jun (recompra), 10-jul (banco en México), 20-jul (Banco Porto Real), 2-sep (Investor Day), 10-sep (EE.UU. y Nu Global) y 30-sep-2026 (Monzo), SEC EDGAR; resumen de la llamada del 2T26 (Zacks/Yahoo Finance, ago-2026); Damodaran (betas, ROE y costo del capital por industria, ene-2026; ERP oct-2026); UST 10 años y precio de cierre del 30-sep-2026.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A35": {
+  "before": "Periodo del Reporte: 23 de junio de 2026 – 21 de julio de 2026",
+  "after": "Periodo del Reporte: 1 de julio de 2026 – 30 de septiembre de 2026",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A38": {
+  "before": "Categoría / Tema",
+  "after": "Categoría / Tema",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B38": {
+  "before": "",
+  "after": "Titular",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!D38": {
+  "before": "Detalle Corto",
+  "after": "Detalle Corto",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A39": {
+  "before": "M&A / Estratégico",
+  "after": "Resultados",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B39": {
+  "before": "",
+  "after": "2T26: utilidad récord de US$1.061M, ROE 33%",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!D39": {
+  "before": "Ver sección detallada abajo",
+  "after": "Ingresos gerenciales US$5.876M (+39% FXN); NIM ajustado 12,4%; mora 15-90 4,8% y 90+ 6,9%; depósitos US$45.300M.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A40": {
+  "before": "Análisis de Wall St.",
+  "after": "Regulatorio",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B40": {
+  "before": "",
+  "after": "Nubank México empieza a operar como banco (6-ago-2026)",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!D40": {
+  "before": "Ver sección detallada abajo",
+  "after": "Autorización de la CNBV del 9-jul-2026; compra de Banco Porto Real para la licencia bancaria en Brasil (20-jul-2026).",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A41": {
+  "before": "Alianzas / Clientes",
+  "after": "Estrategia",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B41": {
+  "before": "",
+  "after": "Lanzamiento en EE.UU. y de Nu Global (10-sep-2026)",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!D41": {
+  "before": "Ver sección detallada abajo",
+  "after": "Cuenta con 3,50% APY y tarjeta con 1,5% de reembolso vía Lead Bank; Nu Global con USDC y EURC.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A42": {
+  "before": "Ciberseguridad",
+  "after": "M&A / Capital",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B42": {
+  "before": "",
+  "after": "Nu desmiente que persiga a Monzo (30-sep-2026)",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!D42": {
+  "before": "Ver sección detallada abajo",
+  "after": "La acción cayó ~10% el 28-sep tras reportes de una compra de hasta £10.000M; marco de asignación de capital sin cambios.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A43": {
+  "before": "Análisis de Wall St.",
+  "after": "Gestión",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B43": {
+  "before": "",
+  "after": "Investor Day el 8-dic-2026; nuevo CFO desde el 13-jul",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!D43": {
+  "before": "Ver sección detallada abajo",
+  "after": "Rob Livingston (ex-Visa) reemplaza a Guilherme Lago; primer Investor Day en Nueva York.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B46": {
+  "before": "",
+  "after": "Análisis e impacto en la valoración",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A47": {
+  "before": "Adquisición de Topaz Labs",
+  "after": "Rama financiera (FCFE)",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B47": {
+  "before": "",
+  "after": "NU se valora como banco: utilidad = ROE × patrimonio contable, reinversión = aumento del patrimonio, descuento al Ke (10,93%); no se restan depósitos ni se suma caja. Pestaña «DCF FCFE financiero».",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A48": {
+  "before": "Degradación de Morgan Stanley y BofA",
+  "after": "ROE y ventaja",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B48": {
+  "before": "",
+  "after": "ROE Base de 32% en los años 1-5 y de 18,8% (industria, Damodaran) después del año 10 por ventaja durable; las historias de erosión llevan el ROE al Ke.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A49": {
+  "before": "Acuerdo Comercial con Disney",
+  "after": "Historias",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B49": {
+  "before": "",
+  "after": "Cuatro historias activas: Base (45%), Conservadora (25%), Disrupción (10%) y Optimista (20%), calculadas en «Escenarios e historias» y en «DCF FCFE financiero».",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!A50": {
+  "before": "Boletín de Ciberseguridad",
+  "after": "Riesgo en el descuento",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Cualitativo!B50": {
+  "before": "",
+  "after": "Beta 0,82: la del patrimonio de Financial Svcs. (global, ene-2026), sin reapalancar. Prima por países ponderada por ingresos (Brasil 90,9%, México 7,2%, Colombia 1,8%): 6,88%. Regresión 0,955 y Bank (Money Center) 0,70 como sensibilidad.",
+  "reason": "Contenido cualitativo NU desde cero (11-oct-2026)"
+ },
+ "Estadísticas!B4": {
+  "before": "",
+  "after": "='Trailing Valuation'!L5",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B5": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B6": {
+  "before": "",
+  "after": "='Input sheet'!B22",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B7": {
+  "before": "",
+  "after": "='Income Statement'!L3",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B8": {
+  "before": "",
+  "after": 10027,
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B12": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B13": {
+  "before": "",
+  "after": "='Income Statement'!L13",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B14": {
+  "before": "",
+  "after": "='Income Statement'!L19/'Income Statement'!L3",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B15": {
+  "before": "",
+  "after": "='Income Statement'!L22/'Income Statement'!L3",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B16": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B20": {
+  "before": "=IFERROR(('Income Statement'!L12*(1-'Income Statement'!L29))/(('Balance Sheet'!L16+'Balance Sheet'!K16)/2);\"\")",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B21": {
+  "before": "",
+  "after": "='DCF FCFE financiero'!B10",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B22": {
+  "before": "='Eficiencia de capital'!L7",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!B23": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E4": {
+  "before": "",
+  "after": "='Input sheet'!D1/('Income Statement'!L22/'Income Statement'!L26)",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E5": {
+  "before": "",
+  "after": "='Input sheet'!D1*'Income Statement'!L27/'Balance Sheet'!L34",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E6": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E7": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E8": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E9": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E12": {
+  "before": "",
+  "after": "='Resumen de Valoración'!D12",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E13": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E14": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E15": {
+  "before": "=IFERROR('Trailing Valuation'!L6/'Financials Multiples'!E43;\"\")",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E16": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E17": {
+  "before": "=IFERROR('Trailing Valuation'!L5/('Financials Multiples'!E65-'Financials Multiples'!E60);\"\")",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E20": {
+  "before": "",
+  "after": "='Balance Sheet'!L3",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E21": {
+  "before": "='Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26-'Balance Sheet'!L5",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E22": {
+  "before": "=IFERROR(('Balance Sheet'!L20+'Balance Sheet'!L21+'Balance Sheet'!L25+'Balance Sheet'!L26)/'Balance Sheet'!L35;\"\")",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!E23": {
+  "before": "",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H4": {
+  "before": 0.091,
+  "after": "=('Income Statement'!K3/'Income Statement'!H3)^(1/3)-1",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H5": {
+  "before": 0.098,
+  "after": "=('Income Statement'!K3/'Income Statement'!G3)^(1/4)-1",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H6": {
+  "before": 0.157,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H7": {
+  "before": 0.139,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H8": {
+  "before": 0.118,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H9": {
+  "before": 0.224,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H10": {
+  "before": 0.109,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H11": {
+  "before": -0.03,
+  "after": "=('Income Statement'!K27/'Income Statement'!G27)^(1/4)-1",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H12": {
+  "before": 0.103,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H13": {
+  "before": 0.075,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H14": {
+  "before": 0.12,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H15": {
+  "before": 0.13,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H18": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H19": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H20": {
+  "before": "—",
+  "after": 0,
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H21": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H22": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H23": {
+  "before": "—",
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Estadísticas!H24": {
+  "before": -0.279,
+  "after": "—",
+  "reason": "Estadísticas NU (fórmulas vivas; sin números de ejemplo)"
+ },
+ "Stories to Numbers!A3": {
+  "before": "[Escribe aquí el titulo de tu historia de inversion]",
+  "after": "Nu Holdings: el banco digital dominante de Brasil que replica su modelo en México",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!A4": {
+  "before": "[Cuenta tu historia sobre la empresa. Enfocala en sus negocios y conectala con las tres palancas de valor: flujos de caja, crecimiento y riesgo.]",
+  "after": "Nu tiene 139 millones de clientes y gana un ROE de ~30% con un costo de servir de ~US$1 por cliente. La historia Base: Brasil madura y crece por productos por cliente, México se vuelve un segundo mercado con licencia bancaria y el ROE baja de ~36% sobre el patrimonio de inicio a 32% (CSLL, inversión internacional) y a 18,8% después del año 10 por ventaja durable. El banco debe retener patrimonio al ritmo del crecimiento; el riesgo central es el crédito no garantizado en Brasil. Valor por FCFE (pestaña «DCF FCFE financiero»): las filas de abajo son la plantilla industrial y quedan como referencia técnica.",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!G10": {
+  "before": "Disruption platform in multiple businesses",
+  "after": "Base año 1 +26,5% (Brasil +24%, México +50%, Colombia y otros +60%); CAGR de 5 años 18,8%.",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!G11": {
+  "before": "Margins improve, aided by cloud business & continued economies of scale.",
+  "after": "Banco: la rentabilidad relevante es el ROE (32% en años 1-5; 18,8% después del año 10), no el margen EBIT.",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!G12": {
+  "before": "Global/US marginal tax rate over time",
+  "after": "Tasa efectiva contable UDM 17,7% (con impuestos diferidos); la gerencial del 2T26 es ~35%; la CSLL sube a 2028.",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!G13": {
+  "before": "Maintained at Amazon's current level",
+  "after": "No aplica a un banco: la reinversión es el aumento del patrimonio (patrimonio × crecimiento).",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!G14": {
+  "before": "Strong competitive edges",
+  "after": "ROE terminal 18,8% (Financial Svcs., Damodaran ene-2026) por ventaja durable; Ke 10,93%.",
+  "reason": "Historia NU"
+ },
+ "Stories to Numbers!G15": {
+  "before": "Cost of capital close to median company",
+  "after": "Ke 10,93% = rf 5,29% + beta 0,82 × prima por países 6,88%; el FCFE se descuenta al Ke, no al WACC.",
+  "reason": "Historia NU"
+ },
+ "Supuestos Recomendados!C6": {
+  "before": "",
+  "after": 0.265,
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D6": {
+  "before": "",
+  "after": "Año 1 de la historia Base: Brasil +24%, México +50%, Colombia y otros +60% (FCFE, no FCFF).",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!C7": {
+  "before": "",
+  "after": "No aplica",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D7": {
+  "before": "",
+  "after": "Banco: la rentabilidad es el ROE (32% en años 1-5), no el margen operativo del FCFF.",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!C8": {
+  "before": "",
+  "after": 0.18,
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D8": {
+  "before": "",
+  "after": "Años 2-5 de la Base: 22,0%, 18,1%, 15,2% y 13,0%.",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!C9": {
+  "before": "",
+  "after": "No aplica",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D9": {
+  "before": "",
+  "after": "ROE de largo plazo 18,8% (industria, Damodaran) en la pestaña «DCF FCFE financiero».",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!C10": {
+  "before": "",
+  "after": "No aplica",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D10": {
+  "before": "",
+  "after": "El ROE converge linealmente en los años 6-10.",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!C11": {
+  "before": "",
+  "after": "No aplica",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D11": {
+  "before": "",
+  "after": "Reinversión = patrimonio del año anterior × crecimiento (regulación de capital).",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!C12": {
+  "before": "",
+  "after": "No aplica",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Supuestos Recomendados!D12": {
+  "before": "",
+  "after": "Ídem.",
+  "reason": "Recomendaciones NU (banco)"
+ },
+ "Tesis de Inversión y Supuestos!A1:H120": {
+  "before": [
+   [
+    "[TICKER] ([Nombre completo de la empresa]) — Tesis de Inversión: De la Historia a los Números"
+   ],
+   [
+    "Metodología Damodaran (NYU Stern) | Precio al día del análisis: [$XX,XX] ([mes-año]) | WACC: [X,XX%]"
+   ],
+   [],
+   [
+    "1. LA HISTORIA"
+   ],
+   [
+    "[Un párrafo con la tensión central de la tesis: qué mejora/deterioro ya está demostrado en los datos reales (últimos trimestres/años) vs. cuál es la apuesta o el riesgo hacia adelante. Específico a esta empresa — no genérico.]"
+   ],
+   [],
+   [
+    "Caso alcista (Bull)",
+    "",
+    "",
+    "Caso bajista (Bear)"
+   ],
+   [
+    "[Argumento alcista #1, con un dato real citado — cifra y período.]",
+    "",
+    "",
+    "[Argumento bajista #1, con un dato real citado — cifra y período.]"
+   ],
+   [
+    "[Argumento alcista #2, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #2, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #3, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #3, con dato real.]"
+   ],
+   [
+    "[Argumento alcista #4, con dato real.]",
+    "",
+    "",
+    "[Argumento bajista #4, con dato real.]"
+   ],
+   [],
+   [
+    "2. DE LA HISTORIA A LOS NÚMEROS — LOS TRES ESCENARIOS"
+   ],
+   [
+    "Supuesto",
+    "Conservador",
+    "Base",
+    "Optimista",
+    "Justificación (dato real)"
+   ],
+   [
+    "Crecimiento Ingresos — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla cada valor a un dato real: crecimiento reciente reportado, guía de la empresa, o tesis de riesgo/upside concreta — no un número arbitrario.]"
+   ],
+   [
+    "Crecimiento Ingresos — Años 2-5",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Justificación.]"
+   ],
+   [
+    "Margen Operativo — Año 1",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Debe compararse contra el nivel actual AJUSTADO de 'Valuation output'!B6 (con R&D capitalizado si aplica), no el margen GAAP crudo.]"
+   ],
+   [
+    "Margen Objetivo (convergencia)",
+    "[X%]",
+    "[X%]",
+    "[X%]",
+    "[Ancla en comparables de negocio maduro del mismo tipo de modelo, no en el promedio de una industria genérica que puede estar distorsionado.]"
+   ],
+   [
+    "Años de convergencia de margen",
+    "[N]",
+    "[N]",
+    "[N]",
+    "[Más corto si la mejora de margen YA está en marcha y demostrada en los últimos resultados; más largo si es una promesa todavía no evidenciada.]"
+   ],
+   [
+    "Sales-to-Capital (años 1-5 / 6-10)",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[X,Xx]",
+    "[Más bajo (más intensivo en capital) si la empresa está invirtiendo fuerte en activos propios; más alto (asset-light) si el modelo es de plataforma/software puro.]"
+   ],
+   [
+    "Costo de Capital (WACC)",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[X,XX%]",
+    "[De 'Cost of capital worksheet'. Verificar Direct Input vs. Synthetic Rating según si la empresa tiene deuda real con cobertura de intereses relevante.]"
+   ],
+   [],
+   [
+    "3. RESULTADO DEL DCF POR ESCENARIO"
+   ],
+   [
+    "Escenario",
+    "Valor DCF hoy / acción",
+    "Precio objetivo ponderado (3 años)",
+    "DCF vs. precio del análisis",
+    "Ponderado vs. precio del análisis"
+   ],
+   [
+    "Conservador",
+    "='Valuation output'!B86",
+    "='Resumen de Valoración'!C12",
+    "=B25/'Resumen de Valoración'!$C$25-1",
+    "=C25/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Base",
+    "='Valuation output'!B35",
+    "='Resumen de Valoración'!D12",
+    "=B26/'Resumen de Valoración'!$C$25-1",
+    "=C26/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "Optimista",
+    "='Valuation output'!B137",
+    "='Resumen de Valoración'!E12",
+    "=B27/'Resumen de Valoración'!$C$25-1",
+    "=C27/'Resumen de Valoración'!$C$25-1"
+   ],
+   [
+    "*Precio Objetivo Ponderado combina el DCF ([XX]%) con 5 múltiplos de mercado derivados de forma consistente con cada escenario del DCF, usando la ponderación de la categoría \"[categoría elegida en Resumen de Valoración!G3]\" — justificar por qué esa categoría calza con el perfil de la empresa."
+   ],
+   [],
+   [
+    "4. AJUSTES METODOLÓGICOS APLICADOS (sobre la plantilla ya corregida)"
+   ],
+   [
+    "#",
+    "Ajuste",
+    "Razón"
+   ],
+   [
+    1,
+    "[Ej.: Costo de deuda de \"Direct Input\" a \"Synthetic Rating\".]",
+    "[Razón basada en un dato real de la empresa — p. ej. cobertura de intereses.]"
+   ],
+   [
+    2,
+    "[Ej.: Categoría de ponderación en Resumen de Valoración!G3.]",
+    "[Razón — perfil de rentabilidad/madurez de la empresa.]"
+   ],
+   [
+    3,
+    "[Cualquier supuesto de crecimiento/margen recalibrado desde el valor heredado de la plantilla.]",
+    "[Razón basada en dato real.]"
+   ],
+   [],
+   [
+    "5. CONCLUSIÓN"
+   ],
+   [
+    "[Un párrafo: al precio actual, qué sugiere el modelo en cada escenario (margen de seguridad/potencial), y cuál es la variable clave a monitorear hacia adelante — la que decidiría entre el caso bull y el caso bear.]"
+   ],
+   [],
+   [],
+   [
+    "ORIGEN DE LOS MÚLTIPLOS (prompt de valoración v3, 2026-10-11)"
+   ],
+   [
+    "Método",
+    "Aplica",
+    "A · historia",
+    "B · peers (ajustada)",
+    "C · justificado (Cons/Base/Opt)",
+    "Conservador",
+    "Base",
+    "Optimista"
+   ],
+   [
+    "EV/EBITDA",
+    "No"
+   ],
+   [
+    "EV/FCFF",
+    "No"
+   ],
+   [
+    "P/E",
+    "Sí",
+    "mediana Dec '24, Dec '25, LTM (etapa actual) = 25,9x",
+    "mediana 11,9x (n=6: ITUB 10,9x, BBD 11,4x, BSBR 16,9x, INTR 8,2x, BAP 14,3x, COF 12,4x) × 1,50 = 17,8x",
+    "17,9x / 27,7x / 36,6x",
+    18.69,
+    23.32,
+    27.47
+   ],
+   [
+    "P/FCFE",
+    "No"
+   ],
+   [
+    "P/OCF",
+    "No"
+   ],
+   [
+    "Criterios: A: NU fue rentable por primera vez en 2023 (P/E de 39,7x sobre una utilidad que recién arrancaba y crecimiento de ingresos de +68%); desde 2024 la utilidad está en régimen (ROE 31-38% sobre el patrimonio de inicio). Se usan 2024, 2025 y el UDM; 2021-2022 son pérdidas. Historia corta: tres lecturas, no diez años. Solo cierres con utilidad positiva y en la etapa actual. B: bancos de Brasil y América Latina (Itaú, Bradesco, Santander Brasil, Inter, Credicorp) y un emisor de tarjetas de EE.UU. (Capital One), con precios al 30-sep-2026 (yfinance). Se excluye SoFi en P/E: ROE de 7% y P/E de 31x por una utilidad todavía deprimida. Ajuste +50% sobre la mediana: NU tiene ROE de ~30% frente a una mediana de ~16% de los peers (Itaú 21%, Bradesco 14%, Santander Brasil 11%, Inter 16%, Credicorp 20%, Capital One 9%) y crece ~15% anual en FY+3 frente a 5-10%; con un Ke de ~11% y g de ~5%, el P/E justificado de Damodaran ((1 − g/ROE)(1 + g)/(Ke − g)) es ~50-60% mayor con ese ROE. Riesgo: el mismo país (Brasil) que Itaú, Bradesco, Santander e Inter. λ = 0,25: la NU de FY+3 en la historia Base gana un ROE parecido al de hoy (32%) con menor crecimiento; el justificado se calcula con el ROE de FY+3 sobre el patrimonio de hoy y sobrestima el P/E, así que pesa poco."
+   ]
+  ],
+  "reason": "Plantilla de placeholders reemplazada"
+ }
+}

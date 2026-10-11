@@ -497,6 +497,21 @@
    "ajuste_rd": "ROIC de Software (System & Application) de Damodaran (ene-2026) llevado a la base del modelo con I+D capitalizado a 3 años (mismo cálculo que ADBE y MSFT): 20,56%.",
    "nota_rd": "ROIC actual del modelo ('Valuation output'!B42): capital invertido operativo pro forma con la compra de MaintainX (patrimonio + deuda − caja − no operativos + activo de I+D + arrendamientos) = 9.601; NOPAT ajustado LTM con la pérdida estimada de MaintainX.",
    "nota": "Análisis desde cero del 7-oct-2026: (1) sí, (2) sí, (3) no hay erosión visible (ingresos +16%, retención estable): ventaja durable. La referencia de la industria (20,56%) se topa en el ROIC actual pro forma (17,9%), deprimido por los US$3.530M pagados por MaintainX."
+  },
+  "NU": {
+   "fuentes": "Costo de servir ~US$1 por cliente activo al mes frente a ~US$17 de ingreso (escala digital sin sucursales), 118 M de clientes en Brasil con relación bancaria principal, datos propios de crédito (NuFormer) y costo de depósitos de 88% de la tasa interbancaria",
+   "evidencia": "ROE sobre el patrimonio de inicio 21,1% (2023), 30,8% (2024), 37,5% (2025); ~30% sobre el patrimonio medio UDM a jun-2026, todo por encima del Ke de 10,9%",
+   "amenaza": "Mora 90+ en alza (6,9%), CSLL más alta desde 2026-2028, competencia de Itaú, Mercado Pago, Inter y PicPay; regulación de tasas",
+   "roic_actual": 0.294,
+   "roic_industria": 0.1883,
+   "industria_proxy": null,
+   "costo_capital_terminal": 0.1093,
+   "roic_terminal": 0.1883,
+   "roic_terminal_antes": null,
+   "ventaja": "ventaja durable",
+   "referencia": 0.1883,
+   "nota_rd": "Banco: se mide el ROE (utilidad de la controladora / patrimonio de la controladora), no el ROIC del FCFF. ROE de la industria = Financial Svcs. (Non-bank & Insurance), tabla global de Damodaran, ene-2026. El ROE terminal vive en 'DCF FCFE financiero'!B11 (no en 'Input sheet'!B50, que es del FCFF técnico).",
+   "financiero": true
   }
  },
  "corte": "2026-09-30",
